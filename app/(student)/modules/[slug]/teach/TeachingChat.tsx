@@ -48,7 +48,7 @@ export default function TeachingChat({ mod }: Props) {
     }
 
     try {
-      const res = await fetch('/api/teach', {
+      const res = await fetch('/vine-app/api/teach', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -98,7 +98,7 @@ export default function TeachingChat({ mod }: Props) {
   const handleEnd = async () => {
     setLoadingSummary(true)
     try {
-      const res = await fetch('/api/teach', {
+      const res = await fetch('/vine-app/api/teach', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

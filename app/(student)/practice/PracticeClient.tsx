@@ -25,7 +25,7 @@ export default function PracticeClient({ cards }: Props) {
   const card = cards[index]
 
   const handleRate = async (rating: Rating) => {
-    await fetch('/api/practice', {
+    await fetch('/vine-app/api/practice', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ wordId: card.wordId, moduleSlug: card.moduleSlug, rating }),

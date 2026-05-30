@@ -19,7 +19,7 @@ export default function VocabSection({ vocab, moduleSlug }: Props) {
 
     if (next.size === vocab.length && !viewed) {
       setViewed(true)
-      fetch('/api/progress', {
+      fetch('/vine-app/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'vocab_viewed', data: { moduleSlug } }),
