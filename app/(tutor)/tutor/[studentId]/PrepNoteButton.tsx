@@ -17,7 +17,7 @@ export default function PrepNoteButton(props: Props) {
   const handleGenerate = async () => {
     setLoading(true)
     try {
-      const res = await fetch('/api/tutor/prep-note', {
+      const res = await fetch('/vine-app/api/tutor/prep-note', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(props),

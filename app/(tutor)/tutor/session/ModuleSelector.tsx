@@ -7,7 +7,7 @@ export default function ModuleSelector({ currentSlug }: { currentSlug: string })
   const router = useRouter()
 
   async function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    await fetch('/api/tutor/session', {
+    await fetch('/vine-app/api/tutor/session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ moduleSlug: e.target.value }),

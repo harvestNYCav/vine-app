@@ -181,7 +181,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   }
 
   async function persistProgress() {
-    await fetch('/api/math/progress', {
+    await fetch('/vine-app/api/math/progress', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -197,7 +197,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   }
 
   async function persistSession(record: MathSessionRecord) {
-    await fetch('/api/math/session', {
+    await fetch('/vine-app/api/math/session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(record),
@@ -208,7 +208,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     setLbLoading(true)
     setLbData(null)
     try {
-      const res = await fetch(`/api/math/leaderboard?type=${type}`)
+      const res = await fetch(`/vine-app/api/math/leaderboard?type=${type}`)
       if (res.ok) setLbData(await res.json())
     } finally {
       setLbLoading(false)

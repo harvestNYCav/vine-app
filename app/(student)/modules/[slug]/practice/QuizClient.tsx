@@ -41,7 +41,7 @@ export default function QuizClient({ mod }: Props) {
         correct: newResults[i]?.correct ?? false,
       }))
 
-      await fetch('/api/progress', {
+      await fetch('/vine-app/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

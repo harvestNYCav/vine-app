@@ -16,7 +16,7 @@ export default function AttendanceToggle({ sessionDate, studentId, initialPresen
     const next = !present
     setPresent(next)
     setLoading(true)
-    await fetch('/api/tutor/attendance', {
+    await fetch('/vine-app/api/tutor/attendance', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sessionDate, studentId, present: next }),

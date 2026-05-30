@@ -8,7 +8,7 @@ export default function HomeworkButton({ initialAssigned }: { initialAssigned: b
 
   async function handleClick() {
     setLoading(true)
-    await fetch('/api/tutor/session/homework', { method: 'POST' })
+    await fetch('/vine-app/api/tutor/session/homework', { method: 'POST' })
     setAssigned(true)
     setLoading(false)
   }
