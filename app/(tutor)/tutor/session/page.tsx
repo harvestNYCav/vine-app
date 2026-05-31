@@ -19,27 +19,31 @@ const STEPS = [
 
 export default async function SessionPage() {
   const session = await getSession()
-  const db = getDb()
+  const db = await getDb()
   const today = todayString()
 
-  let row = db.prepare('SELECT * FROM sessions WHERE date = ?').get(today) as {
-    id: string; date: string; module_slug: string; tutor_id: string; homework_assigned: number; created_at: number
-  } | undefined
+  let rowResult = await db.execute({ sql: 'SELECT * FROM sessions WHERE date = ?', args: [today] })
+  let rawRow = rowResult.rows[0]
 
-  if (!row) {
+  if (!rawRow) {
     const id = randomUUID()
-    db.prepare('INSERT INTO sessions (id, date, module_slug, tutor_id, homework_assigned, created_at) VALUES (?, ?, ?, ?, 0, ?)').run(
-      id, today, ALL_MODULES[0].slug, session!.userId, Date.now()
-    )
-    row = db.prepare('SELECT * FROM sessions WHERE id = ?').get(id) as typeof row
+    await db.execute({
+      sql: 'INSERT INTO sessions (id, date, module_slug, tutor_id, homework_assigned, created_at) VALUES (?, ?, ?, ?, 0, ?)',
+      args: [id, today, ALL_MODULES[0].slug, session!.userId, Date.now()],
+    })
+    rowResult = await db.execute({ sql: 'SELECT * FROM sessions WHERE id = ?', args: [id] })
+    rawRow = rowResult.rows[0]
   }
 
-  const prevRow = db.prepare('SELECT * FROM sessions WHERE date < ? ORDER BY date DESC LIMIT 1').get(today) as {
-    module_slug: string
-  } | undefined
+  const prevResult = await db.execute({
+    sql: 'SELECT * FROM sessions WHERE date < ? ORDER BY date DESC LIMIT 1',
+    args: [today],
+  })
+  const prevRow = prevResult.rows[0]
 
-  const currentModule = getModule(row!.module_slug) ?? ALL_MODULES[0]
-  const previousModule = prevRow ? getModule(prevRow.module_slug) : null
+  const currentModule = getModule(rawRow.module_slug as string) ?? ALL_MODULES[0]
+  const previousModule = prevRow ? getModule(prevRow.module_slug as string) : null
+  const homeworkAssigned = Number(rawRow.homework_assigned) === 1
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6 space-y-6">
@@ -143,7 +147,7 @@ export default async function SessionPage() {
             </a>
             <p className="text-xs text-gray-400 mt-1">10–15 minutes · Share this link with students</p>
           </div>
-          <HomeworkButton initialAssigned={row!.homework_assigned === 1} />
+          <HomeworkButton initialAssigned={homeworkAssigned} />
         </div>
       </div>
 

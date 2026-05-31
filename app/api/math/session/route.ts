@@ -9,12 +9,13 @@ export async function GET() {
   const session = await getSession()
   if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-  const db = getDb()
-  const sessions = db.prepare(
-    'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30'
-  ).all(session.userId)
+  const db = await getDb()
+  const result = await db.execute({
+    sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30',
+    args: [session.userId],
+  })
 
-  return NextResponse.json(sessions)
+  return NextResponse.json(result.rows)
 }
 
 export async function POST(req: NextRequest) {
@@ -41,21 +42,24 @@ export async function POST(req: NextRequest) {
 
   const accuracy = Math.min(100, Math.max(0, Math.round(totalProblems ? correct / totalProblems * 100 : 0)))
 
-  const db = getDb()
-  db.prepare(`
-    INSERT OR IGNORE INTO math_sessions (id, user_id, session_type, started_at, ended_at, total_problems, correct, accuracy, current_skill)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `).run(
-    randomUUID(),
-    session.userId,      // always from auth token, never from body
-    body.session_type,
-    startedAt,
-    endedAt,
-    totalProblems,
-    correct,
-    accuracy,
-    typeof body.current_skill === 'string' ? body.current_skill.slice(0, 64) : '',
-  )
+  const db = await getDb()
+  await db.execute({
+    sql: `
+      INSERT OR IGNORE INTO math_sessions (id, user_id, session_type, started_at, ended_at, total_problems, correct, accuracy, current_skill)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `,
+    args: [
+      randomUUID(),
+      session.userId,
+      body.session_type,
+      startedAt,
+      endedAt,
+      totalProblems,
+      correct,
+      accuracy,
+      typeof body.current_skill === 'string' ? body.current_skill.slice(0, 64) : '',
+    ],
+  })
 
   return NextResponse.json({ ok: true })
 }

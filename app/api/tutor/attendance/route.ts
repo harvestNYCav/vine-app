@@ -8,14 +8,18 @@ export async function GET() {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const db = getDb()
-  const sessions = db.prepare('SELECT * FROM sessions ORDER BY date ASC').all() as Array<{
-    id: string; date: string; module_slug: string; tutor_id: string; homework_assigned: number; created_at: number
-  }>
-  const students = db.prepare("SELECT id, name FROM users WHERE role = 'student' ORDER BY name").all() as Array<{ id: string; name: string }>
-  const attendance = db.prepare('SELECT * FROM attendance').all() as Array<{ session_date: string; student_id: string; present: number }>
+  const db = await getDb()
+  const [sessionsResult, studentsResult, attendanceResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM sessions ORDER BY date ASC', args: [] }),
+    db.execute({ sql: "SELECT id, name FROM users WHERE role = 'student' ORDER BY name", args: [] }),
+    db.execute({ sql: 'SELECT * FROM attendance', args: [] }),
+  ])
 
-  return NextResponse.json({ sessions, students, attendance })
+  return NextResponse.json({
+    sessions: sessionsResult.rows,
+    students: studentsResult.rows,
+    attendance: attendanceResult.rows,
+  })
 }
 
 export async function POST(req: NextRequest) {
@@ -29,10 +33,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
   }
 
-  const db = getDb()
-  db.prepare('INSERT OR REPLACE INTO attendance (session_date, student_id, present) VALUES (?, ?, ?)').run(
-    sessionDate, studentId, present ? 1 : 0
-  )
+  const db = await getDb()
+  await db.execute({
+    sql: 'INSERT OR REPLACE INTO attendance (session_date, student_id, present) VALUES (?, ?, ?)',
+    args: [sessionDate, studentId, present ? 1 : 0],
+  })
 
   return NextResponse.json({ ok: true })
 }

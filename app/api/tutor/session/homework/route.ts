@@ -8,11 +8,14 @@ export async function POST() {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const db = getDb()
+  const db = await getDb()
   const today = new Date().toISOString().slice(0, 10)
 
-  const result = db.prepare('UPDATE sessions SET homework_assigned = 1 WHERE date = ?').run(today)
-  if (result.changes === 0) {
+  const result = await db.execute({
+    sql: 'UPDATE sessions SET homework_assigned = 1 WHERE date = ?',
+    args: [today],
+  })
+  if (result.rowsAffected === 0) {
     return NextResponse.json({ error: 'No session for today' }, { status: 404 })
   }
 
