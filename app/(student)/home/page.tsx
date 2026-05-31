@@ -23,19 +23,23 @@ function getStreak(activityLog: Array<{ date: string }>): number {
 
 export default async function HomePage() {
   const session = await getSession()
-  const db = getDb()
+  const db = await getDb()
 
-  const moduleProgress = db.prepare('SELECT * FROM module_progress WHERE user_id = ?').all(session!.userId) as Array<{
-    module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number
-  }>
-  const activityLog = db.prepare('SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30').all(session!.userId) as Array<{ date: string }>
-  const vocabMastered = db.prepare('SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3').get(session!.userId) as { count: number }
-  const teachSessions = db.prepare('SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?').get(session!.userId) as { count: number }
+  const [mpResult, alResult, vmResult, tsResult, mathResult, msResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT COUNT(*) as count FROM math_sessions WHERE user_id = ?', args: [session!.userId] }),
+  ])
 
-  const mathProgressRow = db.prepare('SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?').get(session!.userId) as {
-    total_problems: number; total_correct: number; diagnostic_done: number
-  } | undefined
-  const mathSessions = db.prepare('SELECT COUNT(*) as count FROM math_sessions WHERE user_id = ?').get(session!.userId) as { count: number }
+  type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number }
+  const moduleProgress = mpResult.rows as unknown as ModuleProgressRow[]
+  const activityLog = alResult.rows as unknown as Array<{ date: string }>
+  const vocabMastered = vmResult.rows[0] as unknown as { count: number }
+  const teachSessions = tsResult.rows[0] as unknown as { count: number }
+  const mathProgressRow = mathResult.rows[0] as unknown as { total_problems: number; total_correct: number; diagnostic_done: number } | undefined
 
   const streak = getStreak(activityLog)
   const completedModules = moduleProgress.filter(m => m.practice_completed_at).length
@@ -97,14 +101,14 @@ export default async function HomePage() {
       </div>
 
       {/* Math Practice Banner */}
-      {mathProgressRow && mathProgressRow.total_problems > 0 && (
+      {mathProgressRow && Number(mathProgressRow.total_problems) > 0 && (
         <Link href="/practice?mode=math" className="block mb-4">
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">➕</span>
               <div>
                 <p className="font-semibold text-sm text-gray-800">Math Practice</p>
-                <p className="text-xs text-gray-500">{mathProgressRow.total_problems} problems · {mathProgressRow.total_problems ? Math.round(mathProgressRow.total_correct / mathProgressRow.total_problems * 100) : 0}% accuracy</p>
+                <p className="text-xs text-gray-500">{Number(mathProgressRow.total_problems)} problems · {Number(mathProgressRow.total_problems) ? Math.round(Number(mathProgressRow.total_correct) / Number(mathProgressRow.total_problems) * 100) : 0}% accuracy</p>
               </div>
             </div>
             <span className="text-gray-300 text-lg">→</span>

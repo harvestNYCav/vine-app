@@ -15,38 +15,44 @@ function mathMasteryColor(v: number) {
 export default async function StudentDetailPage({ params }: { params: Promise<{ studentId: string }> }) {
   const { studentId } = await params
   await getSession()
-  const db = getDb()
+  const db = await getDb()
 
-  const student = db.prepare("SELECT * FROM users WHERE id = ? AND role = 'student'").get(studentId) as {
-    id: string; name: string; last_active: number
-  } | undefined
-  if (!student) notFound()
+  const studentResult = await db.execute({
+    sql: "SELECT * FROM users WHERE id = ? AND role = 'student'",
+    args: [studentId],
+  })
+  const rawStudent = studentResult.rows[0]
+  if (!rawStudent) notFound()
 
-  const moduleProgress = db.prepare('SELECT * FROM module_progress WHERE user_id = ?').all(studentId) as Array<{
-    module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number; practice_score: number | null
-  }>
-  const vocabProgress = db.prepare('SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5').all(studentId) as Array<{
-    word_id: string; module_slug: string; correct_count: number; incorrect_count: number
-  }>
-  const teachingSessions = db.prepare('SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 5').all(studentId) as Array<{
-    id: string; module_slug: string; started_at: number; phrases_taught: string
-  }>
-  const lastActivity = db.prepare('SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1').get(studentId) as { date: string } | undefined
+  const student = { id: rawStudent.id as string, name: rawStudent.name as string, last_active: rawStudent.last_active as number }
 
-  const mathRow = db.prepare('SELECT * FROM math_progress WHERE user_id = ?').get(studentId) as {
-    skill_mastery: string; current_skill: string | null; diagnostic_done: number
-    total_problems: number; total_correct: number; skill_attempt_counts: string
-  } | undefined
-  const mathMastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery) : {}
-  const mathCounts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts) : {}
-  const mathTotal = mathRow?.total_problems ?? 0
-  const mathCorrect = mathRow?.total_correct ?? 0
-  const mathCurrentSkill = mathRow?.current_skill ?? null
-  const mathDiagDone = mathRow?.diagnostic_done === 1
+  const [mpResult, vpResult, tsResult, laResult, mathResult, mathSessionResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
+    db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5', args: [studentId] }),
+    db.execute({ sql: 'SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 5', args: [studentId] }),
+    db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [studentId] }),
+    db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [studentId] }),
+    db.execute({ sql: 'SELECT session_type, COUNT(*) as count FROM math_sessions WHERE user_id = ? GROUP BY session_type', args: [studentId] }),
+  ])
 
-  const mathSessionCounts = db.prepare(
-    'SELECT session_type, COUNT(*) as count FROM math_sessions WHERE user_id = ? GROUP BY session_type'
-  ).all(studentId) as Array<{ session_type: string; count: number }>
+  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number; practice_score: number | null }
+  type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
+  type TeachingSessionRow = { id: string; module_slug: string; started_at: number; phrases_taught: string }
+  type MathSessionCountRow = { session_type: string; count: number }
+
+  const moduleProgress = mpResult.rows as unknown as ModProgressRow[]
+  const vocabProgress = vpResult.rows as unknown as VocabProgressRow[]
+  const teachingSessions = tsResult.rows as unknown as TeachingSessionRow[]
+  const lastActivity = laResult.rows[0] as unknown as { date: string } | undefined
+  const mathRow = mathResult.rows[0]
+  const mathSessionCounts = mathSessionResult.rows as unknown as MathSessionCountRow[]
+
+  const mathMastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
+  const mathCounts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts as string) : {}
+  const mathTotal = mathRow ? Number(mathRow.total_problems) : 0
+  const mathCorrect = mathRow ? Number(mathRow.total_correct) : 0
+  const mathCurrentSkill = mathRow?.current_skill as string | null ?? null
+  const mathDiagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
 
   const completedModules = moduleProgress.filter(m => m.practice_completed_at).map(m => {
     const mod = ALL_MODULES.find(mm => mm.slug === m.module_slug)
@@ -60,12 +66,11 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
   const daysSince = lastActivity ? Math.floor((Date.now() - new Date(lastActivity.date).getTime()) / 86400000) : null
 
-  // Struggling words: enrich with vocab data
   const strugglingWords = vocabProgress.flatMap(row => {
     const mod = ALL_MODULES.find(m => m.slug === row.module_slug)
     const vocab = mod?.vocab.find(v => `${row.module_slug}:${v.id}` === row.word_id)
     if (!vocab) return []
-    return [{ ...vocab, correctCount: row.correct_count, incorrectCount: row.incorrect_count }]
+    return [{ ...vocab, correctCount: Number(row.correct_count), incorrectCount: Number(row.incorrect_count) }]
   }).filter(w => w.incorrectCount > 0)
 
   return (
@@ -192,7 +197,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                     if (!row) return null
                     return (
                       <div key={key} className="flex items-center gap-1.5 bg-gray-50 rounded-lg px-2.5 py-1.5">
-                        <span className="text-sm font-bold text-green-700">{row.count}</span>
+                        <span className="text-sm font-bold text-green-700">{Number(row.count)}</span>
                         <span className="text-xs text-gray-500">{label}</span>
                       </div>
                     )
@@ -235,7 +240,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                 </div>
               </div>
             ))}
-
           </>
         )}
       </div>
@@ -251,7 +255,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
               return (
                 <div key={s.id} className="bg-white rounded-xl p-3 border border-gray-100">
                   <p className="font-medium text-sm text-gray-700">{mod?.titleEn}</p>
-                  <p className="text-xs text-gray-400">{new Date(s.started_at).toLocaleDateString()}</p>
+                  <p className="text-xs text-gray-400">{new Date(Number(s.started_at)).toLocaleDateString()}</p>
                   {phrases.length > 0 && (
                     <div className="flex flex-wrap gap-1 mt-1">
                       {phrases.slice(0, 3).map((p, i) => (

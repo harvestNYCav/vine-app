@@ -30,28 +30,24 @@ export default async function ProgressPage({
   const isMath = mode === 'math'
 
   const session = await getSession()
-  const db = getDb()
+  const db = await getDb()
 
   if (isMath) {
-    const mathRow = db.prepare('SELECT * FROM math_progress WHERE user_id = ?').get(session!.userId) as {
-      skill_mastery: string; current_skill: string | null; diagnostic_done: number
-      total_problems: number; total_correct: number
-      mistake_profile: string; skill_attempt_counts: string
-    } | undefined
+    const [mathResult, sessionsResult] = await Promise.all([
+      db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
+      db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session!.userId] }),
+    ])
 
-    const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery) : {}
-    const profile: Record<string, number> = mathRow ? JSON.parse(mathRow.mistake_profile) : {}
-    const counts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts) : {}
-    const currentSkill = mathRow?.current_skill ?? null
-    const totalProblems = mathRow?.total_problems ?? 0
-    const totalCorrect = mathRow?.total_correct ?? 0
+    const mathRow = mathResult.rows[0]
+    const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
+    const profile: Record<string, number> = mathRow ? JSON.parse(mathRow.mistake_profile as string) : {}
+    const counts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts as string) : {}
+    const currentSkill = mathRow?.current_skill as string | null ?? null
+    const totalProblems = mathRow ? Number(mathRow.total_problems) : 0
+    const totalCorrect = mathRow ? Number(mathRow.total_correct) : 0
 
-    const recentSessions = db.prepare(
-      'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10'
-    ).all(session!.userId) as Array<{
-      id: string; session_type: string; started_at: number; ended_at: number
-      total_problems: number; correct: number; accuracy: number; current_skill: string
-    }>
+    type MathSessionRow = { id: string; session_type: string; started_at: number; ended_at: number; total_problems: number; correct: number; accuracy: number; current_skill: string }
+    const recentSessions = sessionsResult.rows as unknown as MathSessionRow[]
 
     const groups = [
       { label: 'Addition & Subtraction', ops: ['addition', 'subtraction', 'mixed'] },
@@ -81,7 +77,7 @@ export default async function ProgressPage({
           </div>
         </div>
 
-        {/* Skill mastery — always show all skills */}
+        {/* Skill mastery */}
         <div className="mb-6">
           <h3 className="font-bold text-gray-700 mb-3">Skill Mastery</h3>
           {groups.map(g => {
@@ -122,69 +118,69 @@ export default async function ProgressPage({
         </div>
 
         {totalProblems > 0 && (<>
-
-            {/* Mistake profile */}
-            {totalMistakes > 0 && (
-              <div className="mb-6">
-                <h3 className="font-bold text-gray-700 mb-3">Mistake Profile</h3>
-                <div className="grid grid-cols-2 gap-3">
-                  {Object.entries(profile).filter(([, v]) => v > 0).map(([k, v]) => (
-                    <div key={k} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-                      <p className="text-2xl font-bold text-red-500">{v}</p>
-                      <p className="text-xs text-gray-500 mt-0.5">{k.replace(/_/g, ' ')}</p>
-                    </div>
-                  ))}
-                </div>
+          {totalMistakes > 0 && (
+            <div className="mb-6">
+              <h3 className="font-bold text-gray-700 mb-3">Mistake Profile</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {Object.entries(profile).filter(([, v]) => v > 0).map(([k, v]) => (
+                  <div key={k} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                    <p className="text-2xl font-bold text-red-500">{v}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{k.replace(/_/g, ' ')}</p>
+                  </div>
+                ))}
               </div>
-            )}
+            </div>
+          )}
 
-            {/* Recent sessions */}
-            {recentSessions.length > 0 && (
-              <div>
-                <h3 className="font-bold text-gray-700 mb-3">Recent Sessions</h3>
-                <div className="space-y-2">
-                  {recentSessions.map(s => {
-                    const d = new Date(s.started_at)
-                    const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-                    const duration = s.ended_at - s.started_at
-                    return (
-                      <div key={s.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex justify-between items-center">
-                        <div>
-                          <p className="text-sm font-semibold text-gray-700">{SESSION_LABELS[s.session_type] || s.session_type}</p>
-                          <p className="text-xs text-gray-400 mt-0.5">{s.total_problems} problems · {fmtTime(duration)} · {dateStr}</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-base font-bold text-green-700">{s.accuracy}%</p>
-                          <p className="text-xs text-gray-400">{s.correct}/{s.total_problems}</p>
-                        </div>
+          {recentSessions.length > 0 && (
+            <div>
+              <h3 className="font-bold text-gray-700 mb-3">Recent Sessions</h3>
+              <div className="space-y-2">
+                {recentSessions.map(s => {
+                  const d = new Date(Number(s.started_at))
+                  const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+                  const duration = Number(s.ended_at) - Number(s.started_at)
+                  return (
+                    <div key={s.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex justify-between items-center">
+                      <div>
+                        <p className="text-sm font-semibold text-gray-700">{SESSION_LABELS[s.session_type] || s.session_type}</p>
+                        <p className="text-xs text-gray-400 mt-0.5">{Number(s.total_problems)} problems · {fmtTime(duration)} · {dateStr}</p>
                       </div>
-                    )
-                  })}
-                </div>
+                      <div className="text-right">
+                        <p className="text-base font-bold text-green-700">{Number(s.accuracy)}%</p>
+                        <p className="text-xs text-gray-400">{Number(s.correct)}/{Number(s.total_problems)}</p>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
-            )}
-          </>
-        )}
+            </div>
+          )}
+        </>)}
       </div>
     )
   }
 
   // ESL mode
-  const moduleProgress = db.prepare('SELECT * FROM module_progress WHERE user_id = ?').all(session!.userId) as Array<{
-    module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number; practice_score: number | null
-  }>
-  const vocabProgress = db.prepare('SELECT * FROM vocab_progress WHERE user_id = ?').all(session!.userId) as Array<{
-    word_id: string; correct_count: number; incorrect_count: number
-  }>
-  const teachingSessions = db.prepare('SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10').all(session!.userId) as Array<{
-    id: string; module_slug: string; started_at: number; phrases_taught: string; encouragement: string
-  }>
-  const activityLog = db.prepare('SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 7').all(session!.userId) as Array<{
-    date: string; activity_type: string; count: number
-  }>
+  const [mpResult, vpResult, tsResult, alResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ?', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 7', args: [session!.userId] }),
+  ])
+
+  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number; practice_score: number | null }
+  type VocabProgressRow = { word_id: string; correct_count: number; incorrect_count: number }
+  type TeachingSessionRow = { id: string; module_slug: string; started_at: number; phrases_taught: string; encouragement: string }
+  type ActivityRow = { date: string; activity_type: string; count: number }
+
+  const moduleProgress = mpResult.rows as unknown as ModProgressRow[]
+  const vocabProgress = vpResult.rows as unknown as VocabProgressRow[]
+  const teachingSessions = tsResult.rows as unknown as TeachingSessionRow[]
+  const activityLog = alResult.rows as unknown as ActivityRow[]
 
   const totalVocab = ALL_MODULES.reduce((sum, m) => sum + m.vocab.length, 0)
-  const masteredWords = vocabProgress.filter(v => v.correct_count >= 3).length
+  const masteredWords = vocabProgress.filter(v => Number(v.correct_count) >= 3).length
   const practicedWords = vocabProgress.length
   const completedModules = moduleProgress.filter(m => m.practice_completed_at).length
   const totalTeachSessions = teachingSessions.length
@@ -193,7 +189,7 @@ export default async function ProgressPage({
     const d = new Date(Date.now() - i * 86400000)
     const date = d.toISOString().split('T')[0]
     const dayLog = activityLog.filter(a => a.date === date)
-    const total = dayLog.reduce((s, a) => s + a.count, 0)
+    const total = dayLog.reduce((s, a) => s + Number(a.count), 0)
     const day = d.toLocaleDateString('en', { weekday: 'short' })
     return { date, day, total }
   }).reverse()
@@ -288,7 +284,7 @@ export default async function ProgressPage({
               return (
                 <div key={session.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
                   <p className="font-medium text-gray-700">🎓 {mod?.titleEn || session.module_slug}</p>
-                  <p className="text-xs text-gray-400 mb-2">{new Date(session.started_at).toLocaleDateString()}</p>
+                  <p className="text-xs text-gray-400 mb-2">{new Date(Number(session.started_at)).toLocaleDateString()}</p>
                   {phrases.length > 0 && (
                     <div className="flex flex-wrap gap-1">
                       {phrases.slice(0, 3).map((p, i) => (

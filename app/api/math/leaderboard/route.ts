@@ -12,47 +12,47 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid type' }, { status: 400 })
   }
   const isTimed = type === 'practice_5' || type === 'practice_10'
-  const db = getDb()
+  const db = await getDb()
 
   if (isTimed) {
-    // Rank by most problems correct
-    const rows = db.prepare(`
-      SELECT ms.user_id, u.name, ms.correct, ms.accuracy, ms.total_problems, ms.started_at
-      FROM math_sessions ms
-      JOIN users u ON u.id = ms.user_id
-      WHERE ms.session_type = ?
-      ORDER BY ms.correct DESC, ms.accuracy DESC
-      LIMIT 20
-    `).all(type) as Array<{
-      user_id: string; name: string; correct: number; accuracy: number; total_problems: number; started_at: number
-    }>
-
-    return NextResponse.json({ type, isTimed, currentUserId: session.userId, rows })
+    const result = await db.execute({
+      sql: `
+        SELECT ms.user_id, u.name, ms.correct, ms.accuracy, ms.total_problems, ms.started_at
+        FROM math_sessions ms
+        JOIN users u ON u.id = ms.user_id
+        WHERE ms.session_type = ?
+        ORDER BY ms.correct DESC, ms.accuracy DESC
+        LIMIT 20
+      `,
+      args: [type],
+    })
+    return NextResponse.json({ type, isTimed, currentUserId: session.userId, rows: result.rows })
   } else {
-    // Rank by fastest completion time
-    const rows = db.prepare(`
-      SELECT ms.user_id, u.name, ms.correct, ms.total_problems, ms.accuracy,
-             (ms.ended_at - ms.started_at) as duration_ms
-      FROM math_sessions ms
-      JOIN users u ON u.id = ms.user_id
-      WHERE ms.session_type = ? AND ms.ended_at > ms.started_at AND ms.total_problems = ms.correct
-      ORDER BY duration_ms ASC
-      LIMIT 20
-    `).all(type) as Array<{
-      user_id: string; name: string; correct: number; total_problems: number; accuracy: number; duration_ms: number
-    }>
-
-    // Also include sessions that weren't perfect, ranked after the perfect ones
-    const imperfect = db.prepare(`
-      SELECT ms.user_id, u.name, ms.correct, ms.total_problems, ms.accuracy,
-             (ms.ended_at - ms.started_at) as duration_ms
-      FROM math_sessions ms
-      JOIN users u ON u.id = ms.user_id
-      WHERE ms.session_type = ? AND ms.ended_at > ms.started_at AND ms.total_problems > ms.correct
-      ORDER BY ms.correct DESC, duration_ms ASC
-      LIMIT 20
-    `).all(type) as typeof rows
-
-    return NextResponse.json({ type, isTimed, currentUserId: session.userId, rows: [...rows, ...imperfect].slice(0, 20) })
+    const perfectResult = await db.execute({
+      sql: `
+        SELECT ms.user_id, u.name, ms.correct, ms.total_problems, ms.accuracy,
+               (ms.ended_at - ms.started_at) as duration_ms
+        FROM math_sessions ms
+        JOIN users u ON u.id = ms.user_id
+        WHERE ms.session_type = ? AND ms.ended_at > ms.started_at AND ms.total_problems = ms.correct
+        ORDER BY duration_ms ASC
+        LIMIT 20
+      `,
+      args: [type],
+    })
+    const imperfectResult = await db.execute({
+      sql: `
+        SELECT ms.user_id, u.name, ms.correct, ms.total_problems, ms.accuracy,
+               (ms.ended_at - ms.started_at) as duration_ms
+        FROM math_sessions ms
+        JOIN users u ON u.id = ms.user_id
+        WHERE ms.session_type = ? AND ms.ended_at > ms.started_at AND ms.total_problems > ms.correct
+        ORDER BY ms.correct DESC, duration_ms ASC
+        LIMIT 20
+      `,
+      args: [type],
+    })
+    const rows = [...perfectResult.rows, ...imperfectResult.rows].slice(0, 20)
+    return NextResponse.json({ type, isTimed, currentUserId: session.userId, rows })
   }
 }

@@ -15,9 +15,12 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
   if (!mod) notFound()
 
   const session = await getSession()
-  const db = getDb()
-  const progress = db.prepare('SELECT * FROM module_progress WHERE user_id = ? AND module_slug = ?')
-    .get(session!.userId, slug) as { practice_completed_at: number | null; teach_session_count: number } | undefined
+  const db = await getDb()
+  const progressResult = await db.execute({
+    sql: 'SELECT * FROM module_progress WHERE user_id = ? AND module_slug = ?',
+    args: [session!.userId, slug],
+  })
+  const progress = progressResult.rows[0] as unknown as { practice_completed_at: number | null; teach_session_count: number } | undefined
 
   const canTeach = !!progress?.practice_completed_at || !!progress
 

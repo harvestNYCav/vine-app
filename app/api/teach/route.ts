@@ -15,10 +15,9 @@ export async function POST(req: NextRequest) {
   if (!mod) return NextResponse.json({ error: 'Module not found' }, { status: 404 })
 
   const client = getClient()
-  const db = getDb()
+  const db = await getDb()
   const today = new Date().toISOString().split('T')[0]
 
-  // Summarize completed session
   if (action === 'summarize') {
     const summaryPrompt = buildSummaryPrompt(messages)
     const result = await client.messages.create({
@@ -34,36 +33,38 @@ export async function POST(req: NextRequest) {
       summary = { phrases: ['Great teaching session!'], encouragement: 'You did a wonderful job teaching today!' }
     }
 
-    // Save session to DB
     const id = sessionId || randomUUID()
-    db.prepare(`
-      INSERT INTO teaching_sessions (id, user_id, module_slug, started_at, ended_at, message_count, phrases_taught, encouragement, transcript)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-      ON CONFLICT(id) DO UPDATE SET ended_at = excluded.ended_at, message_count = excluded.message_count,
-        phrases_taught = excluded.phrases_taught, encouragement = excluded.encouragement, transcript = excluded.transcript
-    `).run(id, session.userId, moduleSlug, Date.now() - messages.length * 15000, Date.now(), messages.length, JSON.stringify(summary.phrases), summary.encouragement, JSON.stringify(messages))
+    await db.execute({
+      sql: `
+        INSERT INTO teaching_sessions (id, user_id, module_slug, started_at, ended_at, message_count, phrases_taught, encouragement, transcript)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(id) DO UPDATE SET ended_at = excluded.ended_at, message_count = excluded.message_count,
+          phrases_taught = excluded.phrases_taught, encouragement = excluded.encouragement, transcript = excluded.transcript
+      `,
+      args: [id, session.userId, moduleSlug, Date.now() - messages.length * 15000, Date.now(), messages.length, JSON.stringify(summary.phrases), summary.encouragement, JSON.stringify(messages)],
+    })
 
-    db.prepare(`
-      UPDATE module_progress SET teach_session_count = teach_session_count + 1
-      WHERE user_id = ? AND module_slug = ?
-    `).run(session.userId, moduleSlug)
+    await db.execute({
+      sql: `
+        INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count)
+        VALUES (?, ?, NULL, NULL, NULL, 1)
+        ON CONFLICT(user_id, module_slug) DO UPDATE SET teach_session_count = teach_session_count + 1
+      `,
+      args: [session.userId, moduleSlug],
+    })
 
-    db.prepare(`
-      INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count)
-      VALUES (?, ?, NULL, NULL, NULL, 1)
-      ON CONFLICT(user_id, module_slug) DO UPDATE SET teach_session_count = teach_session_count + 1
-    `).run(session.userId, moduleSlug)
-
-    db.prepare(`
-      INSERT INTO activity_log (user_id, date, activity_type, count)
-      VALUES (?, ?, 'teach', 1)
-      ON CONFLICT(user_id, date, activity_type) DO UPDATE SET count = count + 1
-    `).run(session.userId, today)
+    await db.execute({
+      sql: `
+        INSERT INTO activity_log (user_id, date, activity_type, count)
+        VALUES (?, ?, 'teach', 1)
+        ON CONFLICT(user_id, date, activity_type) DO UPDATE SET count = count + 1
+      `,
+      args: [session.userId, today],
+    })
 
     return NextResponse.json(summary)
   }
 
-  // Stream teaching conversation
   const systemPrompt = buildTeachingSystemPrompt(mod.titleEn, mod.teachingScenario)
 
   const stream = await client.messages.stream({

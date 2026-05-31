@@ -19,14 +19,16 @@ export default async function ModulesPage({
   const isMath = mode === 'math'
 
   const session = await getSession()
-  const db = getDb()
+  const db = await getDb()
 
   if (isMath) {
-    const mathRow = db.prepare('SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?').get(session!.userId) as {
-      skill_mastery: string; diagnostic_done: number
-    } | undefined
-    const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery) : {}
-    const diagDone = mathRow?.diagnostic_done === 1
+    const mathResult = await db.execute({
+      sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
+      args: [session!.userId],
+    })
+    const mathRow = mathResult.rows[0]
+    const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
+    const diagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
 
     return (
       <div className="max-w-lg mx-auto w-full px-4 py-6">
@@ -83,9 +85,12 @@ export default async function ModulesPage({
   }
 
   // ESL mode
-  const moduleProgress = db.prepare('SELECT * FROM module_progress WHERE user_id = ?').all(session!.userId) as Array<{
-    module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number
-  }>
+  const mpResult = await db.execute({
+    sql: 'SELECT * FROM module_progress WHERE user_id = ?',
+    args: [session!.userId],
+  })
+  type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number }
+  const moduleProgress = mpResult.rows as unknown as ModuleProgressRow[]
 
   const getStatus = (slug: string) => {
     const p = moduleProgress.find(m => m.module_slug === slug)

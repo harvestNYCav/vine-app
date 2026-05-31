@@ -31,14 +31,16 @@ export default async function SkillPage({
   if (!skill || !lesson) notFound()
 
   const session = await getSession()
-  const db = getDb()
+  const db = await getDb()
 
-  const mathRow = db.prepare('SELECT skill_mastery, skill_attempt_counts FROM math_progress WHERE user_id = ?').get(session!.userId) as {
-    skill_mastery: string; skill_attempt_counts: string
-  } | undefined
+  const mathResult = await db.execute({
+    sql: 'SELECT skill_mastery, skill_attempt_counts FROM math_progress WHERE user_id = ?',
+    args: [session!.userId],
+  })
+  const mathRow = mathResult.rows[0]
 
-  const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery) : {}
-  const counts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts) : {}
+  const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
+  const counts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts as string) : {}
 
   const m = mastery[tag] ?? 0
   const pct = Math.round(m * 100)

@@ -10,16 +10,9 @@ export async function GET() {
   const session = await getSession()
   if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-  const db = getDb()
-  const row = db.prepare('SELECT * FROM math_progress WHERE user_id = ?').get(session.userId) as {
-    skill_mastery: string
-    current_skill: string | null
-    diagnostic_done: number
-    total_problems: number
-    total_correct: number
-    mistake_profile: string
-    skill_attempt_counts: string
-  } | undefined
+  const db = await getDb()
+  const result = await db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session.userId] })
+  const row = result.rows[0]
 
   if (!row) {
     return NextResponse.json({
@@ -34,13 +27,13 @@ export async function GET() {
   }
 
   return NextResponse.json({
-    skill_mastery: JSON.parse(row.skill_mastery),
-    current_skill: row.current_skill,
-    diagnostic_done: row.diagnostic_done === 1,
-    total_problems: row.total_problems,
-    total_correct: row.total_correct,
-    mistake_profile: JSON.parse(row.mistake_profile),
-    skill_attempt_counts: JSON.parse(row.skill_attempt_counts),
+    skill_mastery: JSON.parse(row.skill_mastery as string),
+    current_skill: row.current_skill as string | null,
+    diagnostic_done: Number(row.diagnostic_done) === 1,
+    total_problems: Number(row.total_problems),
+    total_correct: Number(row.total_correct),
+    mistake_profile: JSON.parse(row.mistake_profile as string),
+    skill_attempt_counts: JSON.parse(row.skill_attempt_counts as string),
   })
 }
 
@@ -50,7 +43,6 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json()
 
-  // Validate numeric totals
   const totalProblems = Number(body.total_problems) || 0
   const totalCorrect = Number(body.total_correct) || 0
   if (totalProblems < 0 || totalCorrect < 0) {
@@ -63,7 +55,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'total_problems out of range' }, { status: 400 })
   }
 
-  // Sanitize skill_mastery: only keep known skill tags, clamp values to [0, 1]
   const rawMastery = body.skill_mastery && typeof body.skill_mastery === 'object' ? body.skill_mastery : {}
   const skillMastery: Record<string, number> = {}
   for (const tag of VALID_SKILL_TAGS) {
@@ -72,7 +63,6 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Sanitize skill_attempt_counts: only known tags, non-negative integers
   const rawCounts = body.skill_attempt_counts && typeof body.skill_attempt_counts === 'object' ? body.skill_attempt_counts : {}
   const skillAttemptCounts: Record<string, number> = {}
   for (const tag of VALID_SKILL_TAGS) {
@@ -81,7 +71,6 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Sanitize mistake_profile: only known keys, non-negative numbers
   const VALID_MISTAKE_KEYS = new Set(['carry_error', 'borrow_error', 'arithmetic_fact_error', 'sign_error'])
   const rawProfile = body.mistake_profile && typeof body.mistake_profile === 'object' ? body.mistake_profile : {}
   const mistakeProfile: Record<string, number> = {}
@@ -93,30 +82,33 @@ export async function POST(req: NextRequest) {
     ? body.current_skill
     : null
 
-  const db = getDb()
-  db.prepare(`
-    INSERT INTO math_progress (user_id, skill_mastery, current_skill, diagnostic_done, total_problems, total_correct, mistake_profile, skill_attempt_counts, updated_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ON CONFLICT(user_id) DO UPDATE SET
-      skill_mastery = excluded.skill_mastery,
-      current_skill = excluded.current_skill,
-      diagnostic_done = excluded.diagnostic_done,
-      total_problems = excluded.total_problems,
-      total_correct = excluded.total_correct,
-      mistake_profile = excluded.mistake_profile,
-      skill_attempt_counts = excluded.skill_attempt_counts,
-      updated_at = excluded.updated_at
-  `).run(
-    session.userId,
-    JSON.stringify(skillMastery),
-    currentSkill,
-    body.diagnostic_done ? 1 : 0,
-    totalProblems,
-    totalCorrect,
-    JSON.stringify(mistakeProfile),
-    JSON.stringify(skillAttemptCounts),
-    Date.now(),
-  )
+  const db = await getDb()
+  await db.execute({
+    sql: `
+      INSERT INTO math_progress (user_id, skill_mastery, current_skill, diagnostic_done, total_problems, total_correct, mistake_profile, skill_attempt_counts, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(user_id) DO UPDATE SET
+        skill_mastery = excluded.skill_mastery,
+        current_skill = excluded.current_skill,
+        diagnostic_done = excluded.diagnostic_done,
+        total_problems = excluded.total_problems,
+        total_correct = excluded.total_correct,
+        mistake_profile = excluded.mistake_profile,
+        skill_attempt_counts = excluded.skill_attempt_counts,
+        updated_at = excluded.updated_at
+    `,
+    args: [
+      session.userId,
+      JSON.stringify(skillMastery),
+      currentSkill,
+      body.diagnostic_done ? 1 : 0,
+      totalProblems,
+      totalCorrect,
+      JSON.stringify(mistakeProfile),
+      JSON.stringify(skillAttemptCounts),
+      Date.now(),
+    ],
+  })
 
   return NextResponse.json({ ok: true })
 }

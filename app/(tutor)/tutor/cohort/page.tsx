@@ -6,34 +6,41 @@ import AttendanceToggle from './AttendanceToggle'
 
 export default async function CohortPage() {
   await getSession()
-  const db = getDb()
+  const db = await getDb()
 
-  const sessions = db.prepare('SELECT * FROM sessions ORDER BY date ASC').all() as Array<{
-    id: string; date: string; module_slug: string
-  }>
-  const students = db.prepare("SELECT id, name FROM users WHERE role = 'student' ORDER BY name").all() as Array<{
-    id: string; name: string
-  }>
-  const attendanceRows = db.prepare('SELECT * FROM attendance').all() as Array<{
-    session_date: string; student_id: string; present: number
-  }>
-  const strugglingVocab = db.prepare(`
-    SELECT word_id, module_slug, user_id, correct_count, incorrect_count
-    FROM vocab_progress
-    WHERE incorrect_count > correct_count OR (correct_count < 2 AND repetitions > 1)
-    ORDER BY incorrect_count DESC
-  `).all() as Array<{ word_id: string; module_slug: string; user_id: string; correct_count: number; incorrect_count: number }>
+  const [sessionsResult, studentsResult, attendanceResult, strugglingResult, allModuleProgressResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM sessions ORDER BY date ASC', args: [] }),
+    db.execute({ sql: "SELECT id, name FROM users WHERE role = 'student' ORDER BY name", args: [] }),
+    db.execute({ sql: 'SELECT * FROM attendance', args: [] }),
+    db.execute({
+      sql: `SELECT word_id, module_slug, user_id, correct_count, incorrect_count
+            FROM vocab_progress
+            WHERE incorrect_count > correct_count OR (correct_count < 2 AND repetitions > 1)
+            ORDER BY incorrect_count DESC`,
+      args: [],
+    }),
+    db.execute({ sql: 'SELECT * FROM module_progress', args: [] }),
+  ])
+
+  type SessionRow = { id: string; date: string; module_slug: string }
+  type StudentRow = { id: string; name: string }
+  type AttendanceRow = { session_date: string; student_id: string; present: number }
+  type StrugglingRow = { word_id: string; module_slug: string; user_id: string; correct_count: number; incorrect_count: number }
+  type ModProgressRow = { user_id: string; module_slug: string; practice_completed_at: number | null }
+
+  const sessions = sessionsResult.rows as unknown as SessionRow[]
+  const students = studentsResult.rows as unknown as StudentRow[]
+  const attendanceRows = attendanceResult.rows as unknown as AttendanceRow[]
+  const strugglingVocab = strugglingResult.rows as unknown as StrugglingRow[]
+  const allModuleProgressRows = allModuleProgressResult.rows as unknown as ModProgressRow[]
 
   // Index attendance for fast lookup
   const attendanceMap = new Map<string, boolean>()
   for (const row of attendanceRows) {
-    attendanceMap.set(`${row.session_date}:${row.student_id}`, row.present === 1)
+    attendanceMap.set(`${row.session_date}:${row.student_id}`, Number(row.present) === 1)
   }
 
   // Index all module progress per student (including incomplete)
-  const allModuleProgressRows = db.prepare('SELECT * FROM module_progress').all() as Array<{
-    user_id: string; module_slug: string; practice_completed_at: number | null
-  }>
   const moduleProgressByStudent = new Map<string, Array<{ module_slug: string; practice_completed_at: number | null }>>()
   for (const row of allModuleProgressRows) {
     if (!moduleProgressByStudent.has(row.user_id)) moduleProgressByStudent.set(row.user_id, [])

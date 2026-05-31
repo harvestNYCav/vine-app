@@ -1,28 +1,31 @@
-import Database from 'better-sqlite3'
-import path from 'path'
-import fs from 'fs'
+import { createClient, type Client } from '@libsql/client'
 
-const DATA_DIR = path.join(process.cwd(), 'data')
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true })
-}
+let client: Client | null = null
+let initialized = false
 
-const DB_PATH = path.join(DATA_DIR, 'vine.db')
-
-let db: Database.Database
-
-function getDb(): Database.Database {
-  if (!db) {
-    db = new Database(DB_PATH)
-    db.pragma('journal_mode = WAL')
-    db.pragma('foreign_keys = ON')
-    initSchema(db)
+export async function getDb(): Promise<Client> {
+  if (!client) {
+    const url = process.env.TURSO_DATABASE_URL ?? localFileUrl()
+    client = createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN })
   }
-  return db
+  if (!initialized) {
+    await initSchema(client)
+    initialized = true
+  }
+  return client
 }
 
-function initSchema(db: Database.Database) {
-  db.exec(`
+function localFileUrl(): string {
+  // Local dev / Railway only — Vercel's filesystem is read-only, set TURSO_DATABASE_URL there
+  const { mkdirSync, existsSync } = require('fs') as typeof import('fs')
+  const { join } = require('path') as typeof import('path')
+  const dir = join(process.cwd(), 'data')
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true })
+  return `file:${join(dir, 'vine.db')}`
+}
+
+async function initSchema(db: Client): Promise<void> {
+  await db.executeMultiple(`
     CREATE TABLE IF NOT EXISTS users (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
