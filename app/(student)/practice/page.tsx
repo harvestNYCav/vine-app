@@ -49,8 +49,16 @@ export default async function PracticePage({
       skill_attempt_counts: {},
     }
 
-    type MathSessionRow = { id: string; session_type: string; started_at: number; ended_at: number; total_problems: number; correct: number; accuracy: number; current_skill: string }
-    const initialHistory = historyResult.rows as unknown as MathSessionRow[]
+    const initialHistory = historyResult.rows.map(row => ({
+      id: String(row.id),
+      session_type: String(row.session_type),
+      started_at: Number(row.started_at),
+      ended_at: Number(row.ended_at),
+      total_problems: Number(row.total_problems),
+      correct: Number(row.correct),
+      accuracy: Number(row.accuracy),
+      current_skill: String(row.current_skill),
+    }))
 
     return (
       <div className="max-w-lg mx-auto w-full px-4 py-6">
