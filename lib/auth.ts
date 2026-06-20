@@ -1,5 +1,6 @@
 import { SignJWT, jwtVerify } from 'jose'
 import { cookies } from 'next/headers'
+import type { Role } from '@/types'
 
 const SECRET = new TextEncoder().encode(
   process.env.JWT_SECRET || 'vine-app-dev-secret-change-in-production'
@@ -10,7 +11,7 @@ const COOKIE_NAME = 'vine_session'
 export interface SessionPayload {
   userId: string
   name: string
-  role: 'student' | 'tutor'
+  role: Role
 }
 
 export async function createSession(payload: SessionPayload): Promise<string> {

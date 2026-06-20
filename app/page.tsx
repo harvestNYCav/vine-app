@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation'
 export default async function LandingPage() {
   const session = await getSession()
   if (session) {
-    redirect(session.role === 'tutor' ? '/tutor' : '/home')
+    redirect(session.role === 'tutor' ? '/tutor' : session.role === 'admin' ? '/admin' : '/home')
   }
 
   return (
@@ -37,6 +37,13 @@ export default async function LandingPage() {
           <button className="w-full bg-amber-600 text-white text-xl font-semibold py-5 px-6 rounded-2xl shadow-md active:scale-95 transition-transform hover:bg-amber-700">
             I&apos;m a Tutor
             <span className="block text-sm font-normal opacity-80 mt-0.5">Soy tutor/tutora</span>
+          </button>
+        </Link>
+
+        <Link href="/login?role=admin" className="block">
+          <button className="w-full bg-slate-700 text-white text-xl font-semibold py-5 px-6 rounded-2xl shadow-md active:scale-95 transition-transform hover:bg-slate-800">
+            Admin
+            <span className="block text-sm font-normal opacity-80 mt-0.5">Program dashboard</span>
           </button>
         </Link>
       </div>

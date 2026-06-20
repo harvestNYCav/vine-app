@@ -2,6 +2,7 @@ import type { Module } from '@/types'
 
 const module: Module = {
   slug: 'sentence-structure',
+  track: 'ela',
   titleEn: 'Building Sentences',
   titleEs: 'Construir Oraciones',
   descriptionEn: 'Learn how to build longer, clearer sentences using "because" and "I want".',

@@ -2,6 +2,7 @@ import type { Module } from '@/types'
 
 const module: Module = {
   slug: 'buying-groceries',
+  track: 'esl',
   titleEn: 'Buying Groceries',
   titleEs: 'Comprar Comida',
   descriptionEn: 'Learn how to shop for food at a supermarket in New York.',

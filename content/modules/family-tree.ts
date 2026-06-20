@@ -2,6 +2,7 @@ import type { Module } from '@/types'
 
 const module: Module = {
   slug: 'family-tree',
+  track: 'esl',
   titleEn: 'Family',
   titleEs: 'La Familia',
   descriptionEn: 'Learn how to talk about your family members in English.',

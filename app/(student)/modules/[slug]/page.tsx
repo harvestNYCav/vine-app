@@ -4,9 +4,11 @@ import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import Link from 'next/link'
 import VocabSection from './VocabSection'
+import { getStudentTracks } from '@/lib/tracks'
 
 const MODULE_EMOJIS: Record<string, string> = {
-  Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬'
+  Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
+  BookOpen: '📚', Pencil: '✏️',
 }
 
 export default async function ModuleDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -16,6 +18,9 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
 
   const session = await getSession()
   const db = await getDb()
+  const tracks = await getStudentTracks(db, session!.userId)
+  if (!tracks.includes(mod.track)) notFound()
+
   const progressResult = await db.execute({
     sql: 'SELECT * FROM module_progress WHERE user_id = ? AND module_slug = ?',
     args: [session!.userId, slug],
@@ -28,7 +33,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
-        <Link href="/modules" className="text-gray-400 hover:text-gray-600 text-2xl">←</Link>
+        <Link href={mod.track === 'ela' ? '/modules?mode=ela' : '/modules'} className="text-gray-400 hover:text-gray-600 text-2xl">←</Link>
         <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl">
           {MODULE_EMOJIS[mod.icon]}
         </div>

@@ -1,0 +1,92 @@
+import type { Module } from '@/types'
+
+const module: Module = {
+  slug: 'main-idea',
+  track: 'ela',
+  titleEn: 'Main Idea',
+  titleEs: 'Idea principal',
+  descriptionEn: 'Find what a paragraph is mostly about and use details as evidence.',
+  descriptionEs: 'Encuentra de qué trata principalmente un párrafo y usa detalles como evidencia.',
+  icon: 'BookOpen',
+  vocab: [
+    {
+      id: 'main-idea',
+      en: 'main idea',
+      es: 'idea principal',
+      pronunciation: 'mayn eye-DEE-uh',
+      exampleEn: 'The main idea is what the story is mostly about.',
+      exampleEs: 'La idea principal es de qué trata principalmente la historia.',
+    },
+    {
+      id: 'detail',
+      en: 'detail',
+      es: 'detalle',
+      pronunciation: 'DEE-tayl',
+      exampleEn: 'A detail tells more about the main idea.',
+      exampleEs: 'Un detalle dice más sobre la idea principal.',
+    },
+    {
+      id: 'evidence',
+      en: 'evidence',
+      es: 'evidencia',
+      pronunciation: 'EH-vuh-dens',
+      exampleEn: 'Use evidence from the text to prove your answer.',
+      exampleEs: 'Usa evidencia del texto para probar tu respuesta.',
+    },
+    {
+      id: 'summarize',
+      en: 'summarize',
+      es: 'resumir',
+      pronunciation: 'SUH-muh-ryz',
+      exampleEn: 'Summarize the paragraph in one sentence.',
+      exampleEs: 'Resume el párrafo en una oración.',
+    },
+    {
+      id: 'paragraph',
+      en: 'paragraph',
+      es: 'párrafo',
+      pronunciation: 'PAIR-uh-graf',
+      exampleEn: 'A paragraph has sentences about one topic.',
+      exampleEs: 'Un párrafo tiene oraciones sobre un tema.',
+    },
+  ],
+  quiz: [
+    {
+      id: 'q1',
+      type: 'multiple-choice',
+      promptEn: 'The main idea tells:',
+      promptEs: 'La idea principal dice:',
+      answer: 'what the text is mostly about',
+      options: ['what the text is mostly about', 'one small fact', 'the author name', 'a spelling rule'],
+    },
+    {
+      id: 'q2',
+      type: 'multiple-choice',
+      promptEn: 'Which word means a fact from the text that supports an answer?',
+      promptEs: '¿Qué palabra significa un hecho del texto que apoya una respuesta?',
+      answer: 'evidence',
+      options: ['evidence', 'paragraph', 'title', 'question'],
+    },
+    {
+      id: 'q3',
+      type: 'multiple-choice',
+      promptEn: 'A detail should:',
+      promptEs: 'Un detalle debe:',
+      answer: 'support the main idea',
+      options: ['support the main idea', 'change the topic', 'be unrelated', 'repeat the title only'],
+    },
+    {
+      id: 'q4',
+      type: 'multiple-choice',
+      promptEn: 'To summarize means to:',
+      promptEs: 'Resumir significa:',
+      answer: 'tell the most important points briefly',
+      options: ['tell the most important points briefly', 'copy every sentence', 'guess without reading', 'list only names'],
+    },
+  ],
+  teachingScenario: 'You are a student reading a short paragraph. You can find facts, but you need help explaining the main idea and choosing evidence that supports it.',
+  homeworkUrl: 'https://www.khanacademy.org/ela/cc-2nd-reading-vocab',
+  homeworkLabel: 'Khan Academy ELA – Reading and vocabulary',
+}
+
+export default module

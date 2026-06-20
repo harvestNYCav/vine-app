@@ -1,11 +1,13 @@
 import { getSession } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
+import TutorLogoutButton from './TutorLogoutButton'
 
 export default async function TutorLayout({ children }: { children: React.ReactNode }) {
   const session = await getSession()
   if (!session) redirect('/')
-  if (session.role !== 'tutor') redirect('/home')
+  if (session.role === 'student') redirect('/home')
+  if (session.role === 'admin') redirect('/admin')
 
   return (
     <div className="min-h-screen bg-amber-50">
@@ -18,9 +20,7 @@ export default async function TutorLayout({ children }: { children: React.ReactN
         <nav className="flex items-center gap-3">
           <Link href="/tutor/session" className="text-amber-200 text-xs hover:text-white">Session</Link>
           <Link href="/tutor/cohort" className="text-amber-200 text-xs hover:text-white">Cohort</Link>
-          <form action="/api/auth/logout" method="POST">
-            <button type="submit" className="text-amber-200 text-xs hover:text-white">Exit</button>
-          </form>
+          <TutorLogoutButton />
         </nav>
       </header>
       {children}

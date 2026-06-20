@@ -16,9 +16,18 @@ async function seed() {
   const carlosId = randomUUID()
   const sarahId = randomUUID()
 
-  await db.execute({ sql: 'INSERT INTO users VALUES (?, ?, ?, ?, NULL, ?, ?)', args: [mariaId, 'Maria', pinHash, 'student', now - 2 * 86400000, now - 86400000] })
-  await db.execute({ sql: 'INSERT INTO users VALUES (?, ?, ?, ?, NULL, ?, ?)', args: [carlosId, 'Carlos', pinHash, 'student', now - 5 * 86400000, now - 3 * 86400000] })
-  await db.execute({ sql: 'INSERT INTO users VALUES (?, ?, ?, ?, NULL, ?, ?)', args: [sarahId, 'Sarah', pinHash, 'tutor', now - 7 * 86400000, now] })
+  await db.execute({
+    sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+    args: [mariaId, 'Maria', pinHash, 'student', now - 2 * 86400000, now - 86400000],
+  })
+  await db.execute({
+    sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+    args: [carlosId, 'Carlos', pinHash, 'student', now - 5 * 86400000, now - 3 * 86400000],
+  })
+  await db.execute({
+    sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+    args: [sarahId, 'Sarah', pinHash, 'tutor', now - 7 * 86400000, now],
+  })
 
   const mariaModules = ['introducing-yourself', 'buying-groceries', 'navigating-subway']
   for (const slug of mariaModules) {

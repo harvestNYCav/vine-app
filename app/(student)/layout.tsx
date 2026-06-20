@@ -5,7 +5,8 @@ import BottomNav from './BottomNav'
 export default async function StudentLayout({ children }: { children: React.ReactNode }) {
   const session = await getSession()
   if (!session) redirect('/')
-  if (session.role !== 'student') redirect('/tutor')
+  if (session.role === 'tutor') redirect('/tutor')
+  if (session.role === 'admin') redirect('/admin')
 
   return (
     <div className="min-h-screen flex flex-col bg-amber-50 pb-20">

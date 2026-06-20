@@ -8,6 +8,7 @@ export default function LogoutButton() {
   const handleLogout = async () => {
     await fetch('/vine-app/api/auth/logout', { method: 'POST' })
     router.push('/')
+    router.refresh()
   }
 
   return (
