@@ -1,16 +1,25 @@
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
-import { SKILLS } from '@/lib/math'
+import { getSkillLabel, SKILLS } from '@/lib/math'
 import ModeToggle from '../ModeToggle'
+import LangToggle from '../LangToggle'
 import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import { getStudentSettings } from '@/lib/student-settings'
 import { redirect } from 'next/navigation'
+import { Suspense } from 'react'
 import type { Track } from '@/types'
 
 const SESSION_LABELS: Record<string, string> = {
   practice_5: '5 min', practice_10: '10 min',
   flat_10: '10 Q', flat_25: '25 Q',
   custom: 'Custom', diagnostic: 'Diagnostic',
+}
+
+const SESSION_LABELS_ES: Record<string, string> = {
+  practice_5: '5 min', practice_10: '10 min',
+  flat_10: '10 preg.', flat_25: '25 preg.',
+  custom: 'Personalizada', diagnostic: 'Diagnóstico',
 }
 
 function masteryColor(v: number) {
@@ -27,9 +36,9 @@ function fmtTime(ms: number) {
 export default async function ProgressPage({
   searchParams,
 }: {
-  searchParams: Promise<{ mode?: string }>
+  searchParams: Promise<{ mode?: string; lang?: string }>
 }) {
-  const { mode } = await searchParams
+  const { mode, lang } = await searchParams
 
   const session = await getSession()
   const db = await getDb()
@@ -40,10 +49,13 @@ export default async function ProgressPage({
   if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
 
   if (currentMode === 'math') {
-    const [mathResult, sessionsResult] = await Promise.all([
+    const [mathResult, sessionsResult, settings] = await Promise.all([
       db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
       db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session!.userId] }),
+      getStudentSettings(db, session!.userId),
     ])
+    const canUseSpanish = settings.mathSpanishEnabled
+    const isSpanish = canUseSpanish && lang === 'es'
 
     const mathRow = mathResult.rows[0]
     const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
@@ -57,36 +69,43 @@ export default async function ProgressPage({
     const recentSessions = sessionsResult.rows as unknown as MathSessionRow[]
 
     const groups = [
-      { label: 'Addition & Subtraction', ops: ['addition', 'subtraction', 'mixed'] },
-      { label: 'Multiplication & Division', ops: ['multiplication', 'division'] },
+      { label: isSpanish ? 'Suma y resta' : 'Addition & Subtraction', ops: ['addition', 'subtraction', 'mixed'] },
+      { label: isSpanish ? 'Multiplicación y división' : 'Multiplication & Division', ops: ['multiplication', 'division'] },
     ]
     const totalMistakes = Object.values(profile).reduce((a, b) => a + b, 0)
 
     return (
       <div className="max-w-lg mx-auto w-full px-4 py-6">
         <div className="flex justify-between items-center mb-1">
-          <h1 className="text-2xl font-bold text-green-800">Progress</h1>
-          <ModeToggle currentMode="math" availableTracks={tracks} />
+          <h1 className="text-2xl font-bold text-green-800">{isSpanish ? 'Progreso' : 'Progress'}</h1>
+          <div className="flex items-center gap-2">
+            {canUseSpanish && (
+              <Suspense>
+                <LangToggle currentLang={isSpanish ? 'es' : 'en'} />
+              </Suspense>
+            )}
+            <ModeToggle currentMode="math" availableTracks={tracks} />
+          </div>
         </div>
-        <p className="text-gray-500 text-sm mb-6">Math arithmetic</p>
+        <p className="text-gray-500 text-sm mb-6">{isSpanish ? 'Aritmética' : 'Math arithmetic'}</p>
 
         {/* Overall stats */}
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
             <p className="text-3xl font-bold text-green-700">{totalProblems}</p>
-            <p className="text-sm text-gray-600 mt-0.5">Problems solved</p>
+            <p className="text-sm text-gray-600 mt-0.5">{isSpanish ? 'Problemas resueltos' : 'Problems solved'}</p>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
             <p className="text-3xl font-bold text-blue-600">
               {totalProblems ? Math.round(totalCorrect / totalProblems * 100) : 0}%
             </p>
-            <p className="text-sm text-gray-600 mt-0.5">Overall accuracy</p>
+            <p className="text-sm text-gray-600 mt-0.5">{isSpanish ? 'Precisión general' : 'Overall accuracy'}</p>
           </div>
         </div>
 
         {/* Skill mastery */}
         <div className="mb-6">
-          <h3 className="font-bold text-gray-700 mb-3">Skill Mastery</h3>
+          <h3 className="font-bold text-gray-700 mb-3">{isSpanish ? 'Dominio de habilidades' : 'Skill Mastery'}</h3>
           {groups.map(g => {
             const skills = SKILLS.filter(s => g.ops.includes(s.operation))
             return (
@@ -100,9 +119,9 @@ export default async function ProgressPage({
                       <div key={s.tag}>
                         <div className="flex justify-between items-center mb-1">
                           <span className={`text-sm flex items-center gap-1.5 ${pct === 0 ? 'text-gray-400' : 'text-gray-700'}`}>
-                            {s.label}
+                            {getSkillLabel(s, isSpanish)}
                             {s.tag === currentSkill && (
-                              <span className="bg-green-100 text-green-700 text-xs font-semibold px-1.5 py-0.5 rounded-full">current</span>
+                              <span className="bg-green-100 text-green-700 text-xs font-semibold px-1.5 py-0.5 rounded-full">{isSpanish ? 'actual' : 'current'}</span>
                             )}
                           </span>
                           <span className={`text-sm font-bold ${pct === 0 ? 'text-gray-300' : 'text-green-700'}`}>{pct}%</span>
@@ -113,7 +132,7 @@ export default async function ProgressPage({
                           )}
                         </div>
                         {count > 0 && (
-                          <p className="text-xs text-gray-400 mt-0.5">{count} problems practiced</p>
+                          <p className="text-xs text-gray-400 mt-0.5">{isSpanish ? `${count} problemas practicados` : `${count} problems practiced`}</p>
                         )}
                       </div>
                     )
@@ -127,7 +146,7 @@ export default async function ProgressPage({
         {totalProblems > 0 && (<>
           {totalMistakes > 0 && (
             <div className="mb-6">
-              <h3 className="font-bold text-gray-700 mb-3">Mistake Profile</h3>
+              <h3 className="font-bold text-gray-700 mb-3">{isSpanish ? 'Errores frecuentes' : 'Mistake Profile'}</h3>
               <div className="grid grid-cols-2 gap-3">
                 {Object.entries(profile).filter(([, v]) => v > 0).map(([k, v]) => (
                   <div key={k} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
@@ -141,7 +160,7 @@ export default async function ProgressPage({
 
           {recentSessions.length > 0 && (
             <div>
-              <h3 className="font-bold text-gray-700 mb-3">Recent Sessions</h3>
+              <h3 className="font-bold text-gray-700 mb-3">{isSpanish ? 'Sesiones recientes' : 'Recent Sessions'}</h3>
               <div className="space-y-2">
                 {recentSessions.map(s => {
                   const d = new Date(Number(s.started_at))
@@ -150,8 +169,10 @@ export default async function ProgressPage({
                   return (
                     <div key={s.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex justify-between items-center">
                       <div>
-                        <p className="text-sm font-semibold text-gray-700">{SESSION_LABELS[s.session_type] || s.session_type}</p>
-                        <p className="text-xs text-gray-400 mt-0.5">{Number(s.total_problems)} problems · {fmtTime(duration)} · {dateStr}</p>
+                        <p className="text-sm font-semibold text-gray-700">{(isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[s.session_type] || s.session_type}</p>
+                        <p className="text-xs text-gray-400 mt-0.5">
+                          {isSpanish ? `${Number(s.total_problems)} problemas` : `${Number(s.total_problems)} problems`} · {fmtTime(duration)} · {dateStr}
+                        </p>
                       </div>
                       <div className="text-right">
                         <p className="text-base font-bold text-green-700">{Number(s.accuracy)}%</p>

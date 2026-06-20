@@ -1,6 +1,7 @@
 export interface Skill {
   tag: string
   label: string
+  labelEs: string
   operation: 'addition' | 'subtraction' | 'multiplication' | 'division' | 'mixed'
   digits: number
   carries: number
@@ -22,21 +23,25 @@ export interface MathProblem {
 }
 
 export const SKILLS: Skill[] = [
-  { tag: '1_digit_addition',                label: '1-digit addition',                 operation: 'addition',       digits: 1, carries: 0, borrows: 0, difficulty: 0.05 },
-  { tag: '1_digit_subtraction',             label: '1-digit subtraction',              operation: 'subtraction',    digits: 1, carries: 0, borrows: 0, difficulty: 0.08 },
-  { tag: '2_digit_addition_no_carry',       label: '2-digit addition (no carry)',       operation: 'addition',       digits: 2, carries: 0, borrows: 0, difficulty: 0.18 },
-  { tag: '2_digit_subtraction_no_borrow',   label: '2-digit subtraction (no borrow)',  operation: 'subtraction',    digits: 2, carries: 0, borrows: 0, difficulty: 0.22 },
-  { tag: '2_digit_addition_with_carry',     label: '2-digit addition (with carry)',     operation: 'addition',       digits: 2, carries: 1, borrows: 0, difficulty: 0.38 },
-  { tag: '2_digit_subtraction_with_borrow', label: '2-digit subtraction (with borrow)', operation: 'subtraction',   digits: 2, carries: 0, borrows: 1, difficulty: 0.45 },
-  { tag: '3_digit_addition',                label: '3-digit addition',                 operation: 'addition',       digits: 3, carries: 1, borrows: 0, difficulty: 0.62 },
-  { tag: '3_digit_subtraction',             label: '3-digit subtraction',              operation: 'subtraction',    digits: 3, carries: 0, borrows: 1, difficulty: 0.68 },
-  { tag: '3_digit_mixed',                   label: '3-digit mixed +/−',                operation: 'mixed',          digits: 3, carries: 1, borrows: 1, difficulty: 0.82 },
-  { tag: 'multiplication_basic',            label: 'Multiplication (×2–9)',            operation: 'multiplication', digits: 1, carries: 0, borrows: 0, difficulty: 0.35 },
-  { tag: 'multiplication_tables',           label: 'Times tables (×1–12)',             operation: 'multiplication', digits: 1, carries: 0, borrows: 0, difficulty: 0.50 },
-  { tag: 'multiplication_2x1',              label: '2-digit × 1-digit',               operation: 'multiplication', digits: 2, carries: 0, borrows: 0, difficulty: 0.62 },
-  { tag: 'division_basic',                  label: 'Division (÷2–9)',                  operation: 'division',       digits: 1, carries: 0, borrows: 0, difficulty: 0.42 },
-  { tag: 'division_2digit',                 label: '2-digit ÷ 1-digit',               operation: 'division',       digits: 2, carries: 0, borrows: 0, difficulty: 0.65 },
+  { tag: '1_digit_addition',                label: '1-digit addition',                 labelEs: 'Suma de 1 dígito',                               operation: 'addition',       digits: 1, carries: 0, borrows: 0, difficulty: 0.05 },
+  { tag: '1_digit_subtraction',             label: '1-digit subtraction',              labelEs: 'Resta de 1 dígito',                              operation: 'subtraction',    digits: 1, carries: 0, borrows: 0, difficulty: 0.08 },
+  { tag: '2_digit_addition_no_carry',       label: '2-digit addition (no carry)',       labelEs: 'Suma de 2 dígitos (sin llevar)',                 operation: 'addition',       digits: 2, carries: 0, borrows: 0, difficulty: 0.18 },
+  { tag: '2_digit_subtraction_no_borrow',   label: '2-digit subtraction (no borrow)',  labelEs: 'Resta de 2 dígitos (sin pedir prestado)',        operation: 'subtraction',    digits: 2, carries: 0, borrows: 0, difficulty: 0.22 },
+  { tag: '2_digit_addition_with_carry',     label: '2-digit addition (with carry)',     labelEs: 'Suma de 2 dígitos (llevando)',                   operation: 'addition',       digits: 2, carries: 1, borrows: 0, difficulty: 0.38 },
+  { tag: '2_digit_subtraction_with_borrow', label: '2-digit subtraction (with borrow)', labelEs: 'Resta de 2 dígitos (pidiendo prestado)',         operation: 'subtraction',   digits: 2, carries: 0, borrows: 1, difficulty: 0.45 },
+  { tag: '3_digit_addition',                label: '3-digit addition',                 labelEs: 'Suma de 3 dígitos',                              operation: 'addition',       digits: 3, carries: 1, borrows: 0, difficulty: 0.62 },
+  { tag: '3_digit_subtraction',             label: '3-digit subtraction',              labelEs: 'Resta de 3 dígitos',                             operation: 'subtraction',    digits: 3, carries: 0, borrows: 1, difficulty: 0.68 },
+  { tag: '3_digit_mixed',                   label: '3-digit mixed +/−',                labelEs: 'Mixto de 3 dígitos +/−',                         operation: 'mixed',          digits: 3, carries: 1, borrows: 1, difficulty: 0.82 },
+  { tag: 'multiplication_basic',            label: 'Multiplication (×2–9)',            labelEs: 'Multiplicación (×2–9)',                          operation: 'multiplication', digits: 1, carries: 0, borrows: 0, difficulty: 0.35 },
+  { tag: 'multiplication_tables',           label: 'Times tables (×1–12)',             labelEs: 'Tablas de multiplicar (×1–12)',                  operation: 'multiplication', digits: 1, carries: 0, borrows: 0, difficulty: 0.50 },
+  { tag: 'multiplication_2x1',              label: '2-digit × 1-digit',                labelEs: '2 dígitos × 1 dígito',                           operation: 'multiplication', digits: 2, carries: 0, borrows: 0, difficulty: 0.62 },
+  { tag: 'division_basic',                  label: 'Division (÷2–9)',                  labelEs: 'División (÷2–9)',                                operation: 'division',       digits: 1, carries: 0, borrows: 0, difficulty: 0.42 },
+  { tag: 'division_2digit',                 label: '2-digit ÷ 1-digit',                labelEs: '2 dígitos ÷ 1 dígito',                           operation: 'division',       digits: 2, carries: 0, borrows: 0, difficulty: 0.65 },
 ]
+
+export function getSkillLabel(skill: Skill, isSpanish: boolean): string {
+  return isSpanish ? skill.labelEs : skill.label
+}
 
 export const OP_SYM: Record<ResolvedOperation, string> = {
   addition: '+',

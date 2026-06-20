@@ -4,16 +4,19 @@ import { ALL_MODULES } from '@/content/modules'
 import PracticeClient from './PracticeClient'
 import MathClient from '../math/MathClient'
 import ModeToggle from '../ModeToggle'
+import LangToggle from '../LangToggle'
 import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import { getStudentSettings } from '@/lib/student-settings'
 import { redirect } from 'next/navigation'
+import { Suspense } from 'react'
 import type { Track } from '@/types'
 
 export default async function PracticePage({
   searchParams,
 }: {
-  searchParams: Promise<{ mode?: string; skill?: string }>
+  searchParams: Promise<{ mode?: string; skill?: string; lang?: string }>
 }) {
-  const { mode, skill } = await searchParams
+  const { mode, skill, lang } = await searchParams
 
   const session = await getSession()
   const db = await getDb()
@@ -24,10 +27,13 @@ export default async function PracticePage({
   if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
 
   if (currentMode === 'math') {
-    const [rowResult, historyResult] = await Promise.all([
+    const [rowResult, historyResult, settings] = await Promise.all([
       db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
       db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [session!.userId] }),
+      getStudentSettings(db, session!.userId),
     ])
+    const canUseSpanish = settings.mathSpanishEnabled
+    const isSpanish = canUseSpanish && lang === 'es'
 
     const row = rowResult.rows[0]
     const initialProgress = row ? {
@@ -63,15 +69,23 @@ export default async function PracticePage({
       <div className="max-w-lg mx-auto w-full px-4 py-6">
         <div className="flex justify-between items-center mb-6">
           <div>
-            <h1 className="text-2xl font-bold text-green-800">Practice</h1>
-            <p className="text-gray-500 text-sm">Math arithmetic</p>
+            <h1 className="text-2xl font-bold text-green-800">{isSpanish ? 'Práctica' : 'Practice'}</h1>
+            <p className="text-gray-500 text-sm">{isSpanish ? 'Aritmética' : 'Math arithmetic'}</p>
           </div>
-          <ModeToggle currentMode="math" availableTracks={tracks} />
+          <div className="flex items-center gap-2">
+            {canUseSpanish && (
+              <Suspense>
+                <LangToggle currentLang={isSpanish ? 'es' : 'en'} />
+              </Suspense>
+            )}
+            <ModeToggle currentMode="math" availableTracks={tracks} />
+          </div>
         </div>
         <MathClient
           initialProgress={initialProgress}
           initialHistory={initialHistory}
           initialSkillFocus={skill || null}
+          isSpanish={isSpanish}
         />
       </div>
     )

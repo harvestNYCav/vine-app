@@ -5,7 +5,7 @@ import {
   SKILLS, MathProblem, MistakeType, OP_SYM,
   generateProblem, classifyMistake, updateMastery,
   getSkillByTag, getNextSkill, selectNextProblem,
-  MASTERY_THRESHOLD, MIN_ATTEMPTS,
+  getSkillLabel, MASTERY_THRESHOLD, MIN_ATTEMPTS,
 } from '@/lib/math'
 
 type Screen = 'home' | 'diag-intro' | 'problem' | 'results' | 'skill-selector' | 'history' | 'leaderboard'
@@ -42,6 +42,7 @@ interface Props {
   initialProgress: InitialProgress
   initialHistory: MathSessionRecord[]
   initialSkillFocus?: string | null
+  isSpanish?: boolean
 }
 
 interface LeaderboardRow {
@@ -83,6 +84,12 @@ const SESSION_LABELS: Record<string, string> = {
   custom: 'Custom', diagnostic: 'Diagnostic',
 }
 
+const SESSION_LABELS_ES: Record<string, string> = {
+  practice_5: '5 min', practice_10: '10 min',
+  flat_10: '10 preg.', flat_25: '25 preg.',
+  custom: 'Personalizada', diagnostic: 'Diagnóstico',
+}
+
 const LB_TABS: Array<{ key: SessionType; label: string }> = [
   { key: 'practice_5', label: '5 min' },
   { key: 'practice_10', label: '10 min' },
@@ -90,7 +97,7 @@ const LB_TABS: Array<{ key: SessionType; label: string }> = [
   { key: 'flat_25', label: '25 Q' },
 ]
 
-export default function MathClient({ initialProgress, initialHistory, initialSkillFocus }: Props) {
+export default function MathClient({ initialProgress, initialHistory, initialSkillFocus, isSpanish = false }: Props) {
   // ── display state ──────────────────────────────────────────────────────
   const [screen, setScreen] = useState<Screen>('home')
   const [currentProblem, setCurrentProblem] = useState<MathProblem | null>(null)
@@ -169,12 +176,12 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     const correct = problems.filter(p => p.isCorrect).length
     let rightLabel = ''
     if (type === 'diagnostic') {
-      rightLabel = `Tier ${diagSkillIndexRef.current + 1}`
+      rightLabel = `${isSpanish ? 'Nivel' : 'Tier'} ${diagSkillIndexRef.current + 1}`
     } else if (isCountMode(type)) {
       rightLabel = `${total} / ${questionTargetRef.current}`
     } else {
       const rem = Math.max(0, Math.round((sessionDurationRef.current - (Date.now() - sessionStartRef.current)) / 1000))
-      rightLabel = `${Math.floor(rem / 60)}:${(rem % 60).toString().padStart(2, '0')} left`
+      rightLabel = `${Math.floor(rem / 60)}:${(rem % 60).toString().padStart(2, '0')} ${isSpanish ? 'restante' : 'left'}`
     }
     setStatsDisplay({ total, correct, rightLabel })
   }
@@ -339,7 +346,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     }
 
     setAnswerState(isCorrect ? 'correct' : 'incorrect')
-    setFeedbackMsg(isCorrect ? '✓ Correct!' : `✗ Answer: ${problem.answer}`)
+    setFeedbackMsg(isCorrect ? (isSpanish ? '✓ ¡Correcto!' : '✓ Correct!') : `✗ ${isSpanish ? 'Respuesta' : 'Answer'}: ${problem.answer}`)
     updateStatsDisplay(sessionProblemsRef.current, sessionTypeRef.current)
 
     const type = sessionTypeRef.current
@@ -480,28 +487,36 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
 
   if (screen === 'diag-intro') return (
     <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-      <h2 className="text-xl font-bold text-green-800">Diagnostic Assessment</h2>
-      <p className="text-gray-400 text-sm mt-1">~2 minutes · Finds your starting point</p>
+      <h2 className="text-xl font-bold text-green-800">{isSpanish ? 'Evaluación diagnóstica' : 'Diagnostic Assessment'}</h2>
+      <p className="text-gray-400 text-sm mt-1">
+        {isSpanish ? '~2 minutos · Encuentra tu nivel inicial' : '~2 minutes · Finds your starting point'}
+      </p>
       <p className="text-gray-600 text-sm mt-4">
-        You'll work through problems at increasing difficulty. We stop when you miss more than 20% in a tier.
+        {isSpanish
+          ? 'Resolverás problemas cada vez más difíciles. Nos detenemos cuando fallas más del 20% en un nivel.'
+          : 'You\'ll work through problems at increasing difficulty. We stop when you miss more than 20% in a tier.'}
       </p>
       <ul className="mt-4 space-y-1">
-        {['1-digit addition & subtraction', '2-digit (no carry/borrow)', '2-digit (with carry/borrow)', '3-digit problems'].map(t => (
+        {(isSpanish
+          ? ['Suma y resta de 1 dígito', '2 dígitos (sin llevar/prestar)', '2 dígitos (llevando/prestando)', 'Problemas de 3 dígitos']
+          : ['1-digit addition & subtraction', '2-digit (no carry/borrow)', '2-digit (with carry/borrow)', '3-digit problems']
+        ).map(t => (
           <li key={t} className="text-sm text-gray-500 flex items-center gap-2">
             <span className="text-green-600 font-bold">→</span> {t}
           </li>
         ))}
       </ul>
       <div className="flex gap-3 mt-8">
-        <button onClick={goHome} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">Back</button>
-        <button onClick={startDiagnostic} className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl">Begin</button>
+        <button onClick={goHome} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">{isSpanish ? 'Volver' : 'Back'}</button>
+        <button onClick={startDiagnostic} className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl">{isSpanish ? 'Empezar' : 'Begin'}</button>
       </div>
     </div>
   )
 
   if (screen === 'problem' && currentProblem) {
     const [a, b] = currentProblem.operands
-    const skillLabel = getSkillByTag(currentProblem.skill_tag)?.label ?? currentProblem.skill_tag
+    const skillObj = getSkillByTag(currentProblem.skill_tag)
+    const skillLabel = skillObj ? getSkillLabel(skillObj, isSpanish) : currentProblem.skill_tag
     const skillMastery = masteryRef.current[currentProblem.skill_tag]
     const type = sessionTypeRef.current
     const showTimer = type !== 'diagnostic'
@@ -521,7 +536,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
           )}
           {type === 'diagnostic' && (
             <span className="bg-gray-100 text-gray-500 text-xs font-semibold px-3 py-1 rounded-full ml-auto">
-              Diagnostic {diagSkillIndexRef.current + 1}/{SKILLS.length}
+              {isSpanish ? 'Diagnóstico' : 'Diagnostic'} {diagSkillIndexRef.current + 1}/{SKILLS.length}
             </span>
           )}
         </div>
@@ -560,7 +575,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
           {feedbackMsg}
         </div>
         <div className="flex justify-between text-xs text-gray-400">
-          <span>{statsDisplay.total > 0 ? `${statsDisplay.correct}/${statsDisplay.total} correct` : 'Answer to begin'}</span>
+          <span>{statsDisplay.total > 0 ? `${statsDisplay.correct}/${statsDisplay.total} ${isSpanish ? 'correctas' : 'correct'}` : (isSpanish ? 'Responde para empezar' : 'Answer to begin')}</span>
           <span>{statsDisplay.rightLabel}</span>
         </div>
       </div>
@@ -574,10 +589,14 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     return (
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
         <h2 className="text-xl font-bold text-green-800">
-          {isDiagnostic ? 'Diagnostic Complete!' : 'Session Complete'}
+          {isDiagnostic ? (isSpanish ? '¡Diagnóstico completo!' : 'Diagnostic Complete!') : (isSpanish ? 'Sesión completa' : 'Session Complete')}
         </h2>
         <div className="grid grid-cols-3 gap-3 mt-5">
-          {[{ val: total, lbl: 'Problems' }, { val: `${accuracy}%`, lbl: 'Accuracy' }, { val: correct, lbl: 'Correct' }].map(({ val, lbl }) => (
+          {[
+            { val: total, lbl: isSpanish ? 'Problemas' : 'Problems' },
+            { val: `${accuracy}%`, lbl: isSpanish ? 'Precisión' : 'Accuracy' },
+            { val: correct, lbl: isSpanish ? 'Correctas' : 'Correct' },
+          ].map(({ val, lbl }) => (
             <div key={lbl} className="bg-gray-50 rounded-2xl p-3 text-center">
               <p className="text-2xl font-bold text-green-700">{val}</p>
               <p className="text-xs text-gray-500 mt-0.5">{lbl}</p>
@@ -587,21 +606,23 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
         {skillObj && (
           <div className="bg-green-50 rounded-2xl p-4 mt-5 border border-green-100">
             <div className="flex justify-between items-center">
-              <span className="text-sm font-semibold text-green-800">{skillObj.label}</span>
+              <span className="text-sm font-semibold text-green-800">{getSkillLabel(skillObj, isSpanish)}</span>
               <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">
-                {Math.round(m * 100)}% mastery
+                {Math.round(m * 100)}% {isSpanish ? 'dominio' : 'mastery'}
               </span>
             </div>
             <div className="w-full bg-green-200 rounded-full h-2 mt-3">
               <div className="bg-green-600 h-2 rounded-full transition-all" style={{ width: `${m * 100}%` }} />
             </div>
             {isDiagnostic && (
-              <p className="text-xs text-green-700 mt-2">Placement complete — start practicing when ready.</p>
+              <p className="text-xs text-green-700 mt-2">
+                {isSpanish ? 'Ubicación completa. Empieza a practicar cuando estés listo.' : 'Placement complete — start practicing when ready.'}
+              </p>
             )}
           </div>
         )}
         <div className="flex gap-3 mt-6">
-          <button onClick={goHome} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">Home</button>
+          <button onClick={goHome} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">{isSpanish ? 'Inicio' : 'Home'}</button>
           <button
             onClick={() => {
               if (isDiagnostic) startPractice('practice_5')
@@ -610,7 +631,11 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             }}
             className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl active:scale-95 transition-transform"
           >
-            {isDiagnostic ? 'Start Practice' : sessionType === 'custom' ? 'Same Skills Again' : 'Again'}
+            {isDiagnostic
+              ? (isSpanish ? 'Empezar práctica' : 'Start Practice')
+              : sessionType === 'custom'
+                ? (isSpanish ? 'Mismas habilidades' : 'Same Skills Again')
+                : (isSpanish ? 'Otra vez' : 'Again')}
           </button>
         </div>
       </div>
@@ -620,8 +645,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   if (screen === 'skill-selector') return (
     <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
       <div className="flex justify-between items-center mb-5">
-        <h2 className="text-lg font-bold text-green-800">Review Skills</h2>
-        <button onClick={goHome} className="text-sm text-gray-400 hover:text-gray-600">← Back</button>
+        <h2 className="text-lg font-bold text-green-800">{isSpanish ? 'Repasar habilidades' : 'Review Skills'}</h2>
+        <button onClick={goHome} className="text-sm text-gray-400 hover:text-gray-600">← {isSpanish ? 'Volver' : 'Back'}</button>
       </div>
       <div className="divide-y divide-gray-100">
         {SKILLS.map(s => (
@@ -635,12 +660,12 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
               }}
               className="w-4 h-4 accent-green-700"
             />
-            <span className="text-sm text-gray-700">{s.label}</span>
+            <span className="text-sm text-gray-700">{getSkillLabel(s, isSpanish)}</span>
           </label>
         ))}
       </div>
       <div className="mt-5">
-        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Questions</p>
+        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">{isSpanish ? 'Preguntas' : 'Questions'}</p>
         <div className="flex gap-2">
           {[10, 25].map(n => (
             <button
@@ -660,7 +685,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
         disabled={selectedSkills.length === 0}
         className="w-full bg-green-700 text-white font-semibold py-4 rounded-2xl mt-5 disabled:opacity-40 active:scale-95 transition-transform"
       >
-        Start Practice
+        {isSpanish ? 'Empezar práctica' : 'Start Practice'}
       </button>
     </div>
   )
@@ -668,11 +693,11 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   if (screen === 'history') return (
     <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
       <div className="flex justify-between items-center mb-5">
-        <h2 className="text-lg font-bold text-green-800">Session History</h2>
-        <button onClick={goHome} className="text-sm text-gray-400 hover:text-gray-600">← Back</button>
+        <h2 className="text-lg font-bold text-green-800">{isSpanish ? 'Historial de sesiones' : 'Session History'}</h2>
+        <button onClick={goHome} className="text-sm text-gray-400 hover:text-gray-600">← {isSpanish ? 'Volver' : 'Back'}</button>
       </div>
       {historyList.length === 0 ? (
-        <p className="text-sm text-gray-400">No sessions yet.</p>
+        <p className="text-sm text-gray-400">{isSpanish ? 'Todavía no hay sesiones.' : 'No sessions yet.'}</p>
       ) : (
         <div className="divide-y divide-gray-100">
           {historyList.slice(0, 30).map(s => {
@@ -682,8 +707,10 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             return (
               <div key={s.id} className="flex justify-between items-center py-3">
                 <div>
-                  <p className="text-sm font-semibold text-gray-700">{SESSION_LABELS[s.session_type] || s.session_type}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{s.total_problems} problems · {fmtTime(duration)} · {dateStr}</p>
+                  <p className="text-sm font-semibold text-gray-700">{(isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[s.session_type] || s.session_type}</p>
+                  <p className="text-xs text-gray-400 mt-0.5">
+                    {isSpanish ? `${s.total_problems} problemas` : `${s.total_problems} problems`} · {fmtTime(duration)} · {dateStr}
+                  </p>
                 </div>
                 <div className="text-right">
                   <p className="text-base font-bold text-green-700">{s.accuracy}%</p>
@@ -700,8 +727,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   if (screen === 'leaderboard') return (
     <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-bold text-green-800">Leaderboard</h2>
-        <button onClick={goHome} className="text-sm text-gray-400 hover:text-gray-600">← Back</button>
+        <h2 className="text-lg font-bold text-green-800">{isSpanish ? 'Clasificación' : 'Leaderboard'}</h2>
+        <button onClick={goHome} className="text-sm text-gray-400 hover:text-gray-600">← {isSpanish ? 'Volver' : 'Back'}</button>
       </div>
 
       {/* Tabs */}
@@ -722,19 +749,19 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
         ))}
       </div>
 
-      {lbLoading && <p className="text-sm text-gray-400">Loading...</p>}
+      {lbLoading && <p className="text-sm text-gray-400">{isSpanish ? 'Cargando...' : 'Loading...'}</p>}
       {lbData && !lbLoading && (
         lbData.rows.length === 0 ? (
-          <p className="text-sm text-gray-400">No sessions yet for this mode. Be the first!</p>
+          <p className="text-sm text-gray-400">{isSpanish ? 'Todavía no hay sesiones en este modo. Sé el primero.' : 'No sessions yet for this mode. Be the first!'}</p>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="text-left">
                   <th className="pb-2 text-xs text-gray-400 font-semibold w-8">#</th>
-                  <th className="pb-2 text-xs text-gray-400 font-semibold">Player</th>
+                  <th className="pb-2 text-xs text-gray-400 font-semibold">{isSpanish ? 'Jugador' : 'Player'}</th>
                   <th className="pb-2 text-xs text-gray-400 font-semibold text-right">
-                    {lbData.isTimed ? 'Score' : 'Time'}
+                    {lbData.isTimed ? (isSpanish ? 'Puntos' : 'Score') : (isSpanish ? 'Tiempo' : 'Time')}
                   </th>
                   <th className="pb-2 text-xs text-gray-400 font-semibold text-right">Acc.</th>
                 </tr>
@@ -747,7 +774,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
                       <td className="py-2 text-gray-400 font-bold">{i + 1}</td>
                       <td className="py-2 text-gray-700">
                         {row.name}
-                        {isMe && <span className="ml-1.5 bg-green-100 text-green-700 text-xs font-semibold px-1.5 py-0.5 rounded-full">you</span>}
+                        {isMe && <span className="ml-1.5 bg-green-100 text-green-700 text-xs font-semibold px-1.5 py-0.5 rounded-full">{isSpanish ? 'tú' : 'you'}</span>}
                       </td>
                       <td className="py-2 text-right font-semibold text-gray-700">
                         {lbData.isTimed ? row.correct : fmtTime(row.duration_ms ?? 0)}
@@ -775,15 +802,15 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       {!diagDoneRef.current ? (
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
           <p className="text-sm text-gray-600 mb-4">
-            Start with a quick diagnostic (~2 min) to find your current level.
+            {isSpanish ? 'Empieza con un diagnóstico rápido (~2 min) para encontrar tu nivel actual.' : 'Start with a quick diagnostic (~2 min) to find your current level.'}
           </p>
           <button
             onClick={() => setScreen('diag-intro')}
             className="w-full bg-green-700 text-white font-semibold py-4 rounded-2xl active:scale-95 transition-transform"
           >
-            Start Diagnostic
+            {isSpanish ? 'Empezar diagnóstico' : 'Start Diagnostic'}
           </button>
-          <p className="text-center text-xs text-gray-400 mt-2">Sets your starting level</p>
+          <p className="text-center text-xs text-gray-400 mt-2">{isSpanish ? 'Define tu nivel inicial' : 'Sets your starting level'}</p>
         </div>
       ) : (
         <>
@@ -791,7 +818,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
           {skill && (
             <div className="bg-green-50 rounded-2xl p-4 border border-green-100 mb-5">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm font-semibold text-green-800">{skill.label}</span>
+                <span className="text-sm font-semibold text-green-800">{getSkillLabel(skill, isSpanish)}</span>
                 <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">
                   {Math.round(mastery * 100)}%
                 </span>
@@ -804,11 +831,11 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
 
           {/* Timed */}
           <div className="mb-3">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Timed</p>
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{isSpanish ? 'Con tiempo' : 'Timed'}</p>
             <div className="flex gap-2">
               {(['practice_5', 'practice_10'] as SessionType[]).map(t => (
                 <button key={t} onClick={() => startPractice(t)} className="flex-1 bg-green-700 text-white font-semibold py-3.5 rounded-2xl active:scale-95 transition-transform">
-                  {SESSION_LABELS[t]}
+                  {(isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[t]}
                 </button>
               ))}
             </div>
@@ -816,26 +843,26 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
 
           {/* Question count */}
           <div className="mb-5">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Questions</p>
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{isSpanish ? 'Preguntas' : 'Questions'}</p>
             <div className="flex gap-2">
               {(['flat_10', 'flat_25'] as SessionType[]).map(t => (
                 <button key={t} onClick={() => startPractice(t)} className="flex-1 bg-green-700 text-white font-semibold py-3.5 rounded-2xl active:scale-95 transition-transform">
-                  {SESSION_LABELS[t]}
+                  {(isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[t]}
                 </button>
               ))}
             </div>
           </div>
 
           <button onClick={() => setScreen('skill-selector')} className="w-full bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl mb-3">
-            Review specific skills →
+            {isSpanish ? 'Repasar habilidades específicas →' : 'Review specific skills →'}
           </button>
 
           <div className="flex gap-2 mb-3">
-            <a href="/vine-app/progress?mode=math" className="flex-1">
-              <span className="block text-center bg-gray-100 text-gray-700 text-sm font-medium py-2.5 rounded-2xl">Progress</span>
+            <a href={`/vine-app/progress?mode=math${isSpanish ? '&lang=es' : ''}`} className="flex-1">
+              <span className="block text-center bg-gray-100 text-gray-700 text-sm font-medium py-2.5 rounded-2xl">{isSpanish ? 'Progreso' : 'Progress'}</span>
             </a>
             <button onClick={() => setScreen('history')} className="flex-1 bg-gray-100 text-gray-700 text-sm font-medium py-2.5 rounded-2xl">
-              History
+              {isSpanish ? 'Historial' : 'History'}
             </button>
             <button
               onClick={() => {
@@ -844,14 +871,14 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
               }}
               className="flex-1 bg-gray-100 text-gray-700 text-sm font-medium py-2.5 rounded-2xl"
             >
-              Rankings
+              {isSpanish ? 'Ranking' : 'Rankings'}
             </button>
           </div>
           <button
             onClick={() => setScreen('diag-intro')}
             className="w-full text-center text-xs text-gray-400 hover:text-gray-600 py-1 mb-4"
           >
-            Retake diagnostic →
+            {isSpanish ? 'Repetir diagnóstico →' : 'Retake diagnostic →'}
           </button>
 
           {/* Skill overview */}
@@ -860,14 +887,14 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             if (!topSkills.length) return null
             return (
               <div>
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">Skills Overview</p>
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">{isSpanish ? 'Resumen de habilidades' : 'Skills Overview'}</p>
                 <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 space-y-3">
                   {topSkills.map(s => {
                     const pct = Math.round((masteryRef.current[s.tag] ?? 0) * 100)
                     return (
                       <div key={s.tag}>
                         <div className="flex justify-between items-center mb-1">
-                          <span className="text-sm text-gray-700">{s.label}</span>
+                          <span className="text-sm text-gray-700">{getSkillLabel(s, isSpanish)}</span>
                           <span className="text-sm font-bold text-green-700">{pct}%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-1.5">

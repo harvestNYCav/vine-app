@@ -1,11 +1,14 @@
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
-import { SKILLS } from '@/lib/math'
+import { getSkillLabel, SKILLS } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
 import ModeToggle from '../ModeToggle'
+import LangToggle from '../LangToggle'
 import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import { getStudentSettings } from '@/lib/student-settings'
 import { redirect } from 'next/navigation'
+import { Suspense } from 'react'
 import type { Track } from '@/types'
 
 const MODULE_EMOJIS: Record<string, string> = {
@@ -16,9 +19,9 @@ const MODULE_EMOJIS: Record<string, string> = {
 export default async function ModulesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ mode?: string }>
+  searchParams: Promise<{ mode?: string; lang?: string }>
 }) {
-  const { mode } = await searchParams
+  const { mode, lang } = await searchParams
 
   const session = await getSession()
   const db = await getDb()
@@ -29,26 +32,40 @@ export default async function ModulesPage({
   if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
 
   if (currentMode === 'math') {
-    const mathResult = await db.execute({
-      sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
-      args: [session!.userId],
-    })
+    const [mathResult, settings] = await Promise.all([
+      db.execute({
+        sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
+        args: [session!.userId],
+      }),
+      getStudentSettings(db, session!.userId),
+    ])
     const mathRow = mathResult.rows[0]
     const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
     const diagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
+    const canUseSpanish = settings.mathSpanishEnabled
+    const isSpanish = canUseSpanish && lang === 'es'
 
     return (
       <div className="max-w-lg mx-auto w-full px-4 py-6">
         <div className="flex justify-between items-center mb-1">
-          <h1 className="text-2xl font-bold text-green-800">Skills</h1>
-          <ModeToggle currentMode="math" availableTracks={tracks} />
+          <h1 className="text-2xl font-bold text-green-800">{isSpanish ? 'Habilidades' : 'Skills'}</h1>
+          <div className="flex items-center gap-2">
+            {canUseSpanish && (
+              <Suspense>
+                <LangToggle currentLang={isSpanish ? 'es' : 'en'} />
+              </Suspense>
+            )}
+            <ModeToggle currentMode="math" availableTracks={tracks} />
+          </div>
         </div>
-        <p className="text-gray-500 text-sm mb-6">Math skill lessons</p>
+        <p className="text-gray-500 text-sm mb-6">{isSpanish ? 'Lecciones de habilidades matemáticas' : 'Math skill lessons'}</p>
 
         {!diagDone && (
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-5">
-            <p className="text-sm text-amber-800 font-medium">Complete the diagnostic first</p>
-            <p className="text-xs text-amber-700 mt-0.5">Go to Practice → Math to find your starting level.</p>
+            <p className="text-sm text-amber-800 font-medium">{isSpanish ? 'Completa el diagnóstico primero' : 'Complete the diagnostic first'}</p>
+            <p className="text-xs text-amber-700 mt-0.5">
+              {isSpanish ? 'Ve a Práctica → Matemáticas para encontrar tu nivel inicial.' : 'Go to Practice → Math to find your starting level.'}
+            </p>
           </div>
         )}
 
@@ -58,13 +75,13 @@ export default async function ModulesPage({
             const pct = Math.round(m * 100)
             const lesson = SKILL_LESSONS[skill.tag]
             return (
-              <a key={skill.tag} href={`/vine-app/skills/${skill.tag}`}>
+              <a key={skill.tag} href={`/vine-app/skills/${skill.tag}${isSpanish ? '?lang=es' : ''}`}>
                 <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl flex-shrink-0">
                     {lesson?.emoji ?? '🔢'}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-gray-800 text-sm">{skill.label}</p>
+                    <p className="font-semibold text-gray-800 text-sm">{getSkillLabel(skill, isSpanish)}</p>
                     {pct > 0 && (
                       <div className="flex items-center gap-2 mt-1.5">
                         <div className="flex-1 bg-gray-100 rounded-full h-1.5">
@@ -78,9 +95,9 @@ export default async function ModulesPage({
                     )}
                   </div>
                   <div className="flex-shrink-0">
-                    {pct >= 85 && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">Mastered ✓</span>}
-                    {pct > 0 && pct < 85 && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full font-medium">In progress</span>}
-                    {pct === 0 && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Start →</span>}
+                    {pct >= 85 && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">{isSpanish ? 'Dominado ✓' : 'Mastered ✓'}</span>}
+                    {pct > 0 && pct < 85 && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full font-medium">{isSpanish ? 'En progreso' : 'In progress'}</span>}
+                    {pct === 0 && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">{isSpanish ? 'Empezar →' : 'Start →'}</span>}
                   </div>
                 </div>
               </a>

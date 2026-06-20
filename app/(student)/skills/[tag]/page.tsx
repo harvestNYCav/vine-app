@@ -1,11 +1,12 @@
 import { notFound } from 'next/navigation'
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
-import { getSkillByTag } from '@/lib/math'
+import { getSkillByTag, getSkillLabel } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
 import LangToggle from '../../LangToggle'
 import { Suspense } from 'react'
 import { getStudentTracks } from '@/lib/tracks'
+import { getStudentSettings } from '@/lib/student-settings'
 
 function LangToggleWrapper({ currentLang }: { currentLang: 'en' | 'es' }) {
   return (
@@ -24,7 +25,6 @@ export default async function SkillPage({
 }) {
   const { tag } = await params
   const { lang } = await searchParams
-  const isSpanish = lang === 'es'
 
   const skill = getSkillByTag(tag)
   const lesson = SKILL_LESSONS[tag]
@@ -32,8 +32,13 @@ export default async function SkillPage({
 
   const session = await getSession()
   const db = await getDb()
-  const tracks = await getStudentTracks(db, session!.userId)
+  const [tracks, settings] = await Promise.all([
+    getStudentTracks(db, session!.userId),
+    getStudentSettings(db, session!.userId),
+  ])
   if (!tracks.includes('math')) notFound()
+  const canUseSpanish = settings.mathSpanishEnabled
+  const isSpanish = canUseSpanish && lang === 'es'
 
   const mathResult = await db.execute({
     sql: 'SELECT skill_mastery, skill_attempt_counts FROM math_progress WHERE user_id = ?',
@@ -52,15 +57,15 @@ export default async function SkillPage({
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
-        <a href="/vine-app/modules?mode=math" className="text-gray-400 hover:text-gray-600 text-2xl">←</a>
+        <a href={`/vine-app/modules?mode=math${isSpanish ? '&lang=es' : ''}`} className="text-gray-400 hover:text-gray-600 text-2xl">←</a>
         <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl">
           {lesson.emoji}
         </div>
         <div className="flex-1">
-          <h1 className="text-xl font-bold text-green-800">{skill.label}</h1>
-          <p className="text-gray-500 text-sm">Math · Arithmetic</p>
+          <h1 className="text-xl font-bold text-green-800">{getSkillLabel(skill, isSpanish)}</h1>
+          <p className="text-gray-500 text-sm">{isSpanish ? 'Matemáticas · Aritmética' : 'Math · Arithmetic'}</p>
         </div>
-        <LangToggleWrapper currentLang={isSpanish ? 'es' : 'en'} />
+        {canUseSpanish && <LangToggleWrapper currentLang={isSpanish ? 'es' : 'en'} />}
       </div>
 
       {/* Mastery progress (if started) */}
@@ -120,7 +125,7 @@ export default async function SkillPage({
       </div>
 
       {/* Practice button */}
-      <a href={`/vine-app/practice?mode=math&skill=${tag}`} className="block">
+      <a href={`/vine-app/practice?mode=math&skill=${tag}${isSpanish ? '&lang=es' : ''}`} className="block">
         <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow active:scale-95 transition-transform">
           {isSpanish ? 'Practicar esta habilidad 📝' : 'Practice this skill 📝'}
         </button>
