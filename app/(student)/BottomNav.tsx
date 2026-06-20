@@ -23,11 +23,16 @@ function BottomNavInner() {
   const normalizedPathname = pathname.startsWith(BASE_PATH)
     ? pathname.slice(BASE_PATH.length) || '/'
     : pathname
+  const activeMode = mode === 'math' || normalizedPathname.startsWith('/skills') || normalizedPathname === '/math'
+    ? 'math'
+    : mode === 'ela'
+    ? 'ela'
+    : null
 
   const buildHref = (href: string) => {
     if (href === '/home') return withBasePath(href)
     const params = new URLSearchParams()
-    if (mode === 'math' || mode === 'ela') params.set('mode', mode)
+    if (activeMode) params.set('mode', activeMode)
     const qs = params.toString()
     return withBasePath(qs ? `${href}?${qs}` : href)
   }
