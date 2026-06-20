@@ -6,6 +6,7 @@ import { getSkillByTag } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
 import LangToggle from '../../LangToggle'
 import { Suspense } from 'react'
+import { getStudentTracks } from '@/lib/tracks'
 
 function LangToggleWrapper({ currentLang }: { currentLang: 'en' | 'es' }) {
   return (
@@ -32,6 +33,8 @@ export default async function SkillPage({
 
   const session = await getSession()
   const db = await getDb()
+  const tracks = await getStudentTracks(db, session!.userId)
+  if (!tracks.includes('math')) notFound()
 
   const mathResult = await db.execute({
     sql: 'SELECT skill_mastery, skill_attempt_counts FROM math_progress WHERE user_id = ?',

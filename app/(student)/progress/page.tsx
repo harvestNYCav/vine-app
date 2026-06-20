@@ -3,6 +3,9 @@ import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import { SKILLS } from '@/lib/math'
 import ModeToggle from '../ModeToggle'
+import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import { redirect } from 'next/navigation'
+import type { Track } from '@/types'
 
 const SESSION_LABELS: Record<string, string> = {
   practice_5: '5 min', practice_10: '10 min',
@@ -27,12 +30,16 @@ export default async function ProgressPage({
   searchParams: Promise<{ mode?: string }>
 }) {
   const { mode } = await searchParams
-  const isMath = mode === 'math'
 
   const session = await getSession()
   const db = await getDb()
+  const tracks = await getStudentTracks(db, session!.userId)
+  if (tracks.length === 0) redirect('/tracks')
 
-  if (isMath) {
+  const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
+  if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
+
+  if (currentMode === 'math') {
     const [mathResult, sessionsResult] = await Promise.all([
       db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
       db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session!.userId] }),
@@ -59,7 +66,7 @@ export default async function ProgressPage({
       <div className="max-w-lg mx-auto w-full px-4 py-6">
         <div className="flex justify-between items-center mb-1">
           <h1 className="text-2xl font-bold text-green-800">Progress</h1>
-          <ModeToggle currentMode="math" />
+          <ModeToggle currentMode="math" availableTracks={tracks} />
         </div>
         <p className="text-gray-500 text-sm mb-6">Math arithmetic</p>
 
@@ -161,7 +168,9 @@ export default async function ProgressPage({
     )
   }
 
-  // ESL mode
+  // English modes
+  const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode)
+  const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
   const [mpResult, vpResult, tsResult, alResult] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ?', args: [session!.userId] }),
@@ -174,12 +183,12 @@ export default async function ProgressPage({
   type TeachingSessionRow = { id: string; module_slug: string; started_at: number; phrases_taught: string; encouragement: string }
   type ActivityRow = { date: string; activity_type: string; count: number }
 
-  const moduleProgress = mpResult.rows as unknown as ModProgressRow[]
-  const vocabProgress = vpResult.rows as unknown as VocabProgressRow[]
-  const teachingSessions = tsResult.rows as unknown as TeachingSessionRow[]
+  const moduleProgress = (mpResult.rows as unknown as ModProgressRow[]).filter(row => visibleModuleSlugs.has(row.module_slug))
+  const vocabProgress = (vpResult.rows as unknown as VocabProgressRow[]).filter(row => visibleModuleSlugs.has(row.word_id.split(':')[0]))
+  const teachingSessions = (tsResult.rows as unknown as TeachingSessionRow[]).filter(row => visibleModuleSlugs.has(row.module_slug))
   const activityLog = alResult.rows as unknown as ActivityRow[]
 
-  const totalVocab = ALL_MODULES.reduce((sum, m) => sum + m.vocab.length, 0)
+  const totalVocab = visibleModules.reduce((sum, m) => sum + m.vocab.length, 0)
   const masteredWords = vocabProgress.filter(v => Number(v.correct_count) >= 3).length
   const practicedWords = vocabProgress.length
   const completedModules = moduleProgress.filter(m => m.practice_completed_at).length
@@ -200,14 +209,14 @@ export default async function ProgressPage({
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       <div className="flex justify-between items-center mb-1">
         <h1 className="text-2xl font-bold text-green-800">Progress</h1>
-        <ModeToggle currentMode="esl" />
+        <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
-      <p className="text-gray-500 text-sm mb-6">Tu progreso</p>
+      <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA progress' : 'Tu progreso'}</p>
 
       {/* Overview Stats */}
       <div className="grid grid-cols-2 gap-3 mb-6">
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-          <p className="text-3xl font-bold text-green-700">{completedModules}/{ALL_MODULES.length}</p>
+          <p className="text-3xl font-bold text-green-700">{completedModules}/{visibleModules.length}</p>
           <p className="text-sm text-gray-600 mt-0.5">Lessons completed</p>
           <p className="text-xs text-gray-400">Lecciones</p>
         </div>
@@ -248,7 +257,7 @@ export default async function ProgressPage({
       <div className="mb-6">
         <h3 className="font-bold text-gray-700 mb-3">Lessons / Lecciones</h3>
         <div className="space-y-3">
-          {ALL_MODULES.map(mod => {
+          {visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
             const steps = [!!p?.vocab_viewed_at, !!p?.practice_completed_at, (p?.teach_session_count ?? 0) > 0]
             const completed = steps.filter(Boolean).length
@@ -279,7 +288,7 @@ export default async function ProgressPage({
           <h3 className="font-bold text-gray-700 mb-3">Teaching Sessions / Sesiones de enseñanza</h3>
           <div className="space-y-3">
             {teachingSessions.slice(0, 3).map(session => {
-              const mod = ALL_MODULES.find(m => m.slug === session.module_slug)
+              const mod = visibleModules.find(m => m.slug === session.module_slug)
               const phrases = JSON.parse(session.phrases_taught) as string[]
               return (
                 <div key={session.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">

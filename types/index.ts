@@ -1,10 +1,11 @@
-export type Role = 'student' | 'tutor'
+export type Role = 'student' | 'tutor' | 'admin'
+export type Track = 'ela' | 'esl' | 'math'
 
 export interface User {
   id: string
   name: string
+  email: string | null
   role: Role
-  tutorId: string | null
   createdAt: number
   lastActive: number
 }
@@ -31,6 +32,7 @@ export interface QuizQuestion {
 
 export interface Module {
   slug: string
+  track: Exclude<Track, 'math'>
   titleEn: string
   titleEs: string
   descriptionEn: string

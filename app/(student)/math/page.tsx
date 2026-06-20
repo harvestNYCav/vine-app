@@ -1,10 +1,14 @@
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import MathClient from './MathClient'
+import { getStudentTracks } from '@/lib/tracks'
+import { notFound } from 'next/navigation'
 
 export default async function MathPage() {
   const session = await getSession()
   const db = await getDb()
+  const tracks = await getStudentTracks(db, session!.userId)
+  if (!tracks.includes('math')) notFound()
 
   const [rowResult, historyResult] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),

@@ -2,6 +2,7 @@ import type { Module } from '@/types'
 
 const module: Module = {
   slug: 'introducing-yourself',
+  track: 'esl',
   titleEn: 'Introducing Yourself',
   titleEs: 'Presentarte',
   descriptionEn: 'Learn how to meet new people and share basic information about yourself.',

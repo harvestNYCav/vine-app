@@ -289,6 +289,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     timerIntervalRef.current = setInterval(() => {
       const elapsed = Date.now() - sessionStartRef.current
       setTimerWidth(Math.max(0, (1 - elapsed / sessionDurationRef.current) * 100))
+      updateStatsDisplay(sessionProblemsRef.current, type)
       if (elapsed >= sessionDurationRef.current) {
         clearInterval(timerIntervalRef.current!)
         timerIntervalRef.current = null

@@ -5,9 +5,13 @@ import { ALL_MODULES } from '@/content/modules'
 import { SKILLS } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
 import ModeToggle from '../ModeToggle'
+import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import { redirect } from 'next/navigation'
+import type { Track } from '@/types'
 
 const MODULE_EMOJIS: Record<string, string> = {
-  Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬'
+  Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
+  BookOpen: '📚', Pencil: '✏️',
 }
 
 export default async function ModulesPage({
@@ -16,12 +20,16 @@ export default async function ModulesPage({
   searchParams: Promise<{ mode?: string }>
 }) {
   const { mode } = await searchParams
-  const isMath = mode === 'math'
 
   const session = await getSession()
   const db = await getDb()
+  const tracks = await getStudentTracks(db, session!.userId)
+  if (tracks.length === 0) redirect('/tracks')
 
-  if (isMath) {
+  const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
+  if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
+
+  if (currentMode === 'math') {
     const mathResult = await db.execute({
       sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
       args: [session!.userId],
@@ -34,7 +42,7 @@ export default async function ModulesPage({
       <div className="max-w-lg mx-auto w-full px-4 py-6">
         <div className="flex justify-between items-center mb-1">
           <h1 className="text-2xl font-bold text-green-800">Skills</h1>
-          <ModeToggle currentMode="math" />
+          <ModeToggle currentMode="math" availableTracks={tracks} />
         </div>
         <p className="text-gray-500 text-sm mb-6">Math skill lessons</p>
 
@@ -84,7 +92,8 @@ export default async function ModulesPage({
     )
   }
 
-  // ESL mode
+  // English modes
+  const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode)
   const mpResult = await db.execute({
     sql: 'SELECT * FROM module_progress WHERE user_id = ?',
     args: [session!.userId],
@@ -105,12 +114,12 @@ export default async function ModulesPage({
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       <div className="flex justify-between items-center mb-1">
         <h1 className="text-2xl font-bold text-green-800">Lessons</h1>
-        <ModeToggle currentMode="esl" />
+        <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
-      <p className="text-gray-500 text-sm mb-6">Lecciones</p>
+      <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'Lecciones'}</p>
 
       <div className="space-y-3">
-        {ALL_MODULES.map(mod => {
+        {visibleModules.map(mod => {
           const status = getStatus(mod.slug)
           return (
             <Link key={mod.slug} href={`/modules/${mod.slug}`}>

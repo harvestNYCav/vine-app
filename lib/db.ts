@@ -29,11 +29,34 @@ async function initSchema(db: Client): Promise<void> {
     CREATE TABLE IF NOT EXISTS users (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
+      email TEXT,
       pin_hash TEXT NOT NULL,
-      role TEXT NOT NULL CHECK(role IN ('student', 'tutor')),
-      tutor_id TEXT,
+      role TEXT NOT NULL CHECK(role IN ('student', 'tutor', 'admin')),
       created_at INTEGER NOT NULL,
-      last_active INTEGER NOT NULL
+      last_active INTEGER NOT NULL,
+      CHECK(role != 'admin' OR email IS NOT NULL)
+    );
+
+    CREATE TABLE IF NOT EXISTS user_tracks (
+      user_id TEXT NOT NULL,
+      track TEXT NOT NULL CHECK(track IN ('ela', 'esl', 'math')),
+      created_at INTEGER NOT NULL,
+      PRIMARY KEY (user_id, track)
+    );
+
+    CREATE TABLE IF NOT EXISTS student_tutors (
+      student_id TEXT NOT NULL,
+      tutor_id TEXT NOT NULL,
+      created_at INTEGER NOT NULL,
+      PRIMARY KEY (student_id, tutor_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS admin_email_verifications (
+      email TEXT PRIMARY KEY,
+      code_hash TEXT NOT NULL,
+      expires_at INTEGER NOT NULL,
+      attempts INTEGER NOT NULL DEFAULT 0,
+      created_at INTEGER NOT NULL
     );
 
     CREATE TABLE IF NOT EXISTS vocab_progress (

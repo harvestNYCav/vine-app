@@ -3,6 +3,8 @@ import getDb from '@/lib/db'
 import Link from 'next/link'
 import { ALL_MODULES } from '@/content/modules'
 import LogoutButton from '../LogoutButton'
+import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
+import { redirect } from 'next/navigation'
 
 function getStreak(activityLog: Array<{ date: string }>): number {
   if (!activityLog.length) return 0
@@ -25,6 +27,12 @@ export default async function HomePage() {
   const session = await getSession()
   const db = await getDb()
 
+  const tracks = await getStudentTracks(db, session!.userId)
+  if (tracks.length === 0) redirect('/tracks')
+  const visibleModules = filterModulesByTracks(ALL_MODULES, tracks)
+  const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
+  const hasMath = tracks.includes('math')
+
   const [mpResult, alResult, vmResult, tsResult, mathResult, msResult] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
     db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session!.userId] }),
@@ -42,7 +50,7 @@ export default async function HomePage() {
   const mathProgressRow = mathResult.rows[0] as unknown as { total_problems: number; total_correct: number; diagnostic_done: number } | undefined
 
   const streak = getStreak(activityLog)
-  const completedModules = moduleProgress.filter(m => m.practice_completed_at).length
+  const completedModules = moduleProgress.filter(m => m.practice_completed_at && visibleModuleSlugs.has(m.module_slug)).length
 
   const getModuleStatus = (slug: string) => {
     const p = moduleProgress.find(m => m.module_slug === slug)
@@ -101,14 +109,18 @@ export default async function HomePage() {
       </div>
 
       {/* Math Practice Banner */}
-      {mathProgressRow && Number(mathProgressRow.total_problems) > 0 && (
+      {hasMath && (
         <Link href="/practice?mode=math" className="block mb-4">
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">➕</span>
               <div>
                 <p className="font-semibold text-sm text-gray-800">Math Practice</p>
-                <p className="text-xs text-gray-500">{Number(mathProgressRow.total_problems)} problems · {Number(mathProgressRow.total_problems) ? Math.round(Number(mathProgressRow.total_correct) / Number(mathProgressRow.total_problems) * 100) : 0}% accuracy</p>
+                <p className="text-xs text-gray-500">
+                  {mathProgressRow && Number(mathProgressRow.total_problems) > 0
+                    ? `${Number(mathProgressRow.total_problems)} problems · ${Math.round(Number(mathProgressRow.total_correct) / Number(mathProgressRow.total_problems) * 100)}% accuracy`
+                    : 'Find your starting level'}
+                </p>
               </div>
             </div>
             <span className="text-gray-300 text-lg">→</span>
@@ -117,7 +129,8 @@ export default async function HomePage() {
       )}
 
       {/* Teaching Mode Banner */}
-      <Link href="/modules" className="block mb-6">
+      {visibleModules.length > 0 && (
+      <Link href={tracks.includes('esl') ? '/modules' : '/modules?mode=ela'} className="block mb-6">
         <div className="bg-gradient-to-r from-green-700 to-emerald-600 rounded-2xl p-4 shadow-md text-white">
           <div className="flex items-center gap-3">
             <span className="text-3xl">🎓</span>
@@ -129,6 +142,7 @@ export default async function HomePage() {
           </div>
         </div>
       </Link>
+      )}
 
       {/* Modules Grid */}
       <div className="mb-4">
@@ -136,7 +150,7 @@ export default async function HomePage() {
           Lessons / Lecciones
         </h2>
         <div className="grid grid-cols-2 gap-3">
-          {ALL_MODULES.map(mod => {
+          {visibleModules.map(mod => {
             const status = getModuleStatus(mod.slug)
             return (
               <Link key={mod.slug} href={`/modules/${mod.slug}`}>
@@ -147,6 +161,8 @@ export default async function HomePage() {
                     mod.icon === 'ShoppingCart' ? '🛒' :
                     mod.icon === 'Users' ? '👨‍👩‍👧' :
                     mod.icon === 'Shirt' ? '👕' :
+                    mod.icon === 'BookOpen' ? '📚' :
+                    mod.icon === 'Pencil' ? '✏️' :
                     '💬'
                   }</div>
                   <p className="font-semibold text-sm text-gray-800 leading-tight">{mod.titleEn}</p>

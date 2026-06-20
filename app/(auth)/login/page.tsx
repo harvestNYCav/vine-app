@@ -7,17 +7,58 @@ import { Suspense } from 'react'
 function LoginForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const role = (searchParams.get('role') || 'student') as 'student' | 'tutor'
+  const role = (searchParams.get('role') || 'student') as 'student' | 'tutor' | 'admin'
 
   const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [emailCode, setEmailCode] = useState('')
+  const [devCode, setDevCode] = useState('')
   const [pin, setPin] = useState('')
-  const [step, setStep] = useState<'name' | 'pin'>('name')
+  const [step, setStep] = useState<'name' | 'email' | 'code' | 'pin'>('name')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
 
   const handleNameSubmit = () => {
     if (name.trim().length < 2) {
       setError('Please enter your name / Por favor ingresa tu nombre')
+      return
+    }
+    setError('')
+    setStep(role === 'admin' ? 'email' : 'pin')
+  }
+
+  const requestAdminCode = async () => {
+    if (!email.includes('@')) {
+      setError('Please enter a valid email')
+      return
+    }
+    setLoading(true)
+    setError('')
+    setDevCode('')
+    try {
+      const res = await fetch('/vine-app/api/auth/admin-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name.trim(), email: email.trim() }),
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        setError(data.error || 'Could not send verification code')
+        setLoading(false)
+        return
+      }
+      setDevCode(data.devCode || '')
+      setStep('code')
+    } catch {
+      setError('Connection error. Please try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const handleCodeSubmit = () => {
+    if (!/^\d{6}$/.test(emailCode)) {
+      setError('Enter the 6-digit verification code')
       return
     }
     setError('')
@@ -48,7 +89,7 @@ function LoginForm() {
       const res = await fetch('/vine-app/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name.trim(), pin, role }),
+        body: JSON.stringify({ name: name.trim(), pin, role, email: email.trim(), emailCode }),
       })
       const data = await res.json()
       if (!res.ok) {
@@ -57,7 +98,15 @@ function LoginForm() {
         setLoading(false)
         return
       }
-      router.push(role === 'tutor' ? '/tutor' : '/home')
+      if (data.needsTrackSelection) {
+        router.push('/tracks')
+      } else if (role === 'tutor') {
+        router.push('/tutor')
+      } else if (role === 'admin') {
+        router.push('/admin')
+      } else {
+        router.push('/home')
+      }
     } catch {
       setError('Connection error. Please try again.')
       setPin('')
@@ -77,7 +126,7 @@ function LoginForm() {
           </div>
           <h1 className="text-2xl font-bold text-green-800">Vine</h1>
           <p className="text-sm text-gray-500 mt-1">
-            {role === 'tutor' ? 'Tutor Login' : 'Student Login / Acceso estudiante'}
+            {role === 'tutor' ? 'Tutor Login' : role === 'admin' ? 'Admin Login' : 'Student Login / Acceso estudiante'}
           </p>
         </div>
 
@@ -113,6 +162,84 @@ function LoginForm() {
           </div>
         )}
 
+        {step === 'email' && (
+          <div className="space-y-4">
+            <p className="text-center text-gray-700 font-medium">
+              Hello, {name}
+            </p>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Admin email
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                onKeyDown={e => e.key === 'Enter' && requestAdminCode()}
+                placeholder="you@example.com"
+                className="w-full border-2 border-green-200 rounded-xl px-4 py-3 text-lg focus:outline-none focus:border-green-500 bg-white"
+                autoFocus
+              />
+            </div>
+            {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+            <button
+              onClick={requestAdminCode}
+              disabled={loading}
+              className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform disabled:opacity-60"
+            >
+              {loading ? 'Sending...' : 'Send verification code'}
+            </button>
+            <button
+              onClick={() => { setStep('name'); setEmail(''); setError('') }}
+              className="w-full text-gray-500 text-sm py-2"
+            >
+              ← Change name
+            </button>
+          </div>
+        )}
+
+        {step === 'code' && (
+          <div className="space-y-4">
+            <p className="text-center text-gray-700 font-medium">
+              Check {email}
+            </p>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Verification code
+              </label>
+              <input
+                type="text"
+                inputMode="numeric"
+                value={emailCode}
+                onChange={e => setEmailCode(e.target.value.replace(/\D/g, '').slice(0, 6))}
+                onKeyDown={e => e.key === 'Enter' && handleCodeSubmit()}
+                placeholder="123456"
+                className="w-full border-2 border-green-200 rounded-xl px-4 py-3 text-lg text-center tracking-widest focus:outline-none focus:border-green-500 bg-white"
+                autoFocus
+              />
+            </div>
+            {devCode && (
+              <p className="text-center text-xs text-amber-700 bg-amber-100 rounded-xl px-3 py-2">
+                Dev code: {devCode}
+              </p>
+            )}
+            {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+            <button
+              onClick={handleCodeSubmit}
+              className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform"
+            >
+              Continue
+            </button>
+            <button
+              onClick={requestAdminCode}
+              disabled={loading}
+              className="w-full text-gray-500 text-sm py-2 disabled:opacity-60"
+            >
+              {loading ? 'Sending...' : 'Send a new code'}
+            </button>
+          </div>
+        )}
+
         {step === 'pin' && (
           <div className="space-y-4">
             <p className="text-center text-gray-700 font-medium">
@@ -122,7 +249,9 @@ function LoginForm() {
               Enter your 4-digit PIN / Ingresa tu PIN de 4 dígitos
             </p>
             <p className="text-center text-xs text-gray-400">
-              (New? We&apos;ll create your account / ¿Nuevo? Crearemos tu cuenta)
+              {role === 'admin'
+                ? `Email verified: ${email}`
+                : `(New? We'll create your account / ¿Nuevo? Crearemos tu cuenta)`}
             </p>
 
             {/* PIN Dots */}
@@ -165,10 +294,14 @@ function LoginForm() {
             </div>
 
             <button
-              onClick={() => { setStep('name'); setPin(''); setError('') }}
+              onClick={() => {
+                setStep(role === 'admin' ? 'code' : 'name')
+                setPin('')
+                setError('')
+              }}
               className="w-full text-gray-500 text-sm py-2"
             >
-              ← Change name / Cambiar nombre
+              {role === 'admin' ? '← Change verification code' : '← Change name / Cambiar nombre'}
             </button>
           </div>
         )}
