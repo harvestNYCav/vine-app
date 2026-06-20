@@ -20,6 +20,7 @@ function BottomNavInner() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const mode = searchParams.get('mode')
+  const lang = searchParams.get('lang')
   const normalizedPathname = pathname.startsWith(BASE_PATH)
     ? pathname.slice(BASE_PATH.length) || '/'
     : pathname
@@ -33,6 +34,7 @@ function BottomNavInner() {
     if (href === '/home') return withBasePath(href)
     const params = new URLSearchParams()
     if (activeMode) params.set('mode', activeMode)
+    if (activeMode === 'math' && lang === 'es') params.set('lang', 'es')
     const qs = params.toString()
     return withBasePath(qs ? `${href}?${qs}` : href)
   }

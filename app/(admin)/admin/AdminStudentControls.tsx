@@ -14,16 +14,19 @@ export default function AdminStudentControls({
   studentId,
   initialTutorIds,
   initialTracks,
+  initialMathSpanishEnabled,
   tutors,
 }: {
   studentId: string
   initialTutorIds: string[]
   initialTracks: Track[]
+  initialMathSpanishEnabled: boolean
   tutors: TutorOption[]
 }) {
   const router = useRouter()
   const [tutorIds, setTutorIds] = useState<string[]>(initialTutorIds)
   const [tracks, setTracks] = useState<Track[]>(initialTracks)
+  const [mathSpanishEnabled, setMathSpanishEnabled] = useState(initialMathSpanishEnabled)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState('')
 
@@ -55,7 +58,7 @@ export default function AdminStudentControls({
     const res = await fetch('/vine-app/api/admin/students', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ studentId, tutorIds, tracks }),
+      body: JSON.stringify({ studentId, tutorIds, tracks, mathSpanishEnabled }),
     })
     if (!res.ok) {
       const data = await res.json().catch(() => ({}))
@@ -115,6 +118,19 @@ export default function AdminStudentControls({
           })}
         </div>
       </div>
+
+      <label className="flex items-center gap-2 text-xs font-medium text-gray-600">
+        <input
+          type="checkbox"
+          checked={mathSpanishEnabled}
+          onChange={e => {
+            setMathSpanishEnabled(e.target.checked)
+            setMessage('')
+          }}
+          className="w-4 h-4 accent-slate-800"
+        />
+        Enable Spanish toggle for math
+      </label>
 
       <div className="flex items-center gap-3">
         <button

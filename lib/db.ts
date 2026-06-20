@@ -51,6 +51,12 @@ async function initSchema(db: Client): Promise<void> {
       PRIMARY KEY (student_id, tutor_id)
     );
 
+    CREATE TABLE IF NOT EXISTS student_settings (
+      user_id TEXT PRIMARY KEY,
+      math_spanish_enabled INTEGER NOT NULL DEFAULT 0,
+      updated_at INTEGER NOT NULL
+    );
+
     CREATE TABLE IF NOT EXISTS admin_email_verifications (
       email TEXT PRIMARY KEY,
       code_hash TEXT NOT NULL,

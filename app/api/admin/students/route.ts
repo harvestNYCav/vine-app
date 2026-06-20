@@ -3,6 +3,7 @@ import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { normalizeTracks, setStudentTracks } from '@/lib/tracks'
 import { setStudentTutorIds } from '@/lib/tutors'
+import { setStudentSettings } from '@/lib/student-settings'
 
 export async function PATCH(req: NextRequest) {
   const session = await getSession()
@@ -10,7 +11,7 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const { studentId, tutorIds: rawTutorIds, tracks: rawTracks } = await req.json()
+  const { studentId, tutorIds: rawTutorIds, tracks: rawTracks, mathSpanishEnabled } = await req.json()
   const tracks = normalizeTracks(rawTracks)
   const tutorIds = Array.isArray(rawTutorIds)
     ? [...new Set(rawTutorIds.filter((id): id is string => typeof id === 'string' && id.length > 0))]
@@ -40,6 +41,9 @@ export async function PATCH(req: NextRequest) {
 
   await setStudentTutorIds(db, studentId, tutorIds)
   await setStudentTracks(db, studentId, tracks)
+  await setStudentSettings(db, studentId, {
+    mathSpanishEnabled: Boolean(mathSpanishEnabled),
+  })
 
   return NextResponse.json({ ok: true })
 }

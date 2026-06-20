@@ -2,6 +2,7 @@ import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import { getStudentTracks } from '@/lib/tracks'
 import { getStudentTutorIds } from '@/lib/tutors'
+import { getStudentSettings } from '@/lib/student-settings'
 import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 
@@ -34,9 +35,10 @@ export default async function AdminPage() {
   const tutorNameById = new Map(tutors.map(tutor => [tutor.id, tutor.name]))
 
   const studentData = await Promise.all(students.map(async student => {
-    const [tracks, tutorIds, modulesResult, vocabResult, teachingResult, mathResult] = await Promise.all([
+    const [tracks, tutorIds, settings, modulesResult, vocabResult, teachingResult, mathResult] = await Promise.all([
       getStudentTracks(db, student.id),
       getStudentTutorIds(db, student.id),
+      getStudentSettings(db, student.id),
       db.execute({ sql: 'SELECT module_slug, practice_completed_at FROM module_progress WHERE user_id = ?', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [student.id] }),
@@ -55,6 +57,7 @@ export default async function AdminPage() {
       ...student,
       tracks,
       tutorIds,
+      settings,
       completedLessons,
       totalLessons: chosenEnglishModules.length,
       vocabMastered: Number(vocabResult.rows[0]?.count ?? 0),
@@ -151,6 +154,7 @@ export default async function AdminPage() {
                 studentId={student.id}
                 initialTutorIds={student.tutorIds}
                 initialTracks={student.tracks}
+                initialMathSpanishEnabled={student.settings.mathSpanishEnabled}
                 tutors={tutors}
               />
             </div>

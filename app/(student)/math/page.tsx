@@ -2,13 +2,23 @@ import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import MathClient from './MathClient'
 import { getStudentTracks } from '@/lib/tracks'
+import { getStudentSettings } from '@/lib/student-settings'
 import { notFound } from 'next/navigation'
 
-export default async function MathPage() {
+export default async function MathPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string }>
+}) {
+  const { lang } = await searchParams
   const session = await getSession()
   const db = await getDb()
-  const tracks = await getStudentTracks(db, session!.userId)
+  const [tracks, settings] = await Promise.all([
+    getStudentTracks(db, session!.userId),
+    getStudentSettings(db, session!.userId),
+  ])
   if (!tracks.includes('math')) notFound()
+  const isSpanish = settings.mathSpanishEnabled && lang === 'es'
 
   const [rowResult, historyResult] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
@@ -48,7 +58,7 @@ export default async function MathPage() {
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
-      <MathClient initialProgress={initialProgress} initialHistory={initialHistory} />
+      <MathClient initialProgress={initialProgress} initialHistory={initialHistory} isSpanish={isSpanish} />
     </div>
   )
 }
