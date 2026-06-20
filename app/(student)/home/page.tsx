@@ -1,6 +1,5 @@
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
-import Link from 'next/link'
 import { ALL_MODULES } from '@/content/modules'
 import LogoutButton from '../LogoutButton'
 import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
@@ -110,7 +109,7 @@ export default async function HomePage() {
 
       {/* Math Practice Banner */}
       {hasMath && (
-        <Link href="/practice?mode=math" className="block mb-4">
+        <a href="/vine-app/practice?mode=math" className="block mb-4">
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">➕</span>
@@ -125,12 +124,12 @@ export default async function HomePage() {
             </div>
             <span className="text-gray-300 text-lg">→</span>
           </div>
-        </Link>
+        </a>
       )}
 
       {/* Teaching Mode Banner */}
       {visibleModules.length > 0 && (
-      <Link href={tracks.includes('esl') ? '/modules' : '/modules?mode=ela'} className="block mb-6">
+      <a href={tracks.includes('esl') ? '/vine-app/modules' : '/vine-app/modules?mode=ela'} className="block mb-6">
         <div className="bg-gradient-to-r from-green-700 to-emerald-600 rounded-2xl p-4 shadow-md text-white">
           <div className="flex items-center gap-3">
             <span className="text-3xl">🎓</span>
@@ -141,7 +140,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </Link>
+      </a>
       )}
 
       {/* Modules Grid */}
@@ -153,7 +152,7 @@ export default async function HomePage() {
           {visibleModules.map(mod => {
             const status = getModuleStatus(mod.slug)
             return (
-              <Link key={mod.slug} href={`/modules/${mod.slug}`}>
+              <a key={mod.slug} href={`/vine-app/modules/${mod.slug}`}>
                 <div className={`rounded-2xl p-4 border-2 ${statusColors[status]} shadow-sm hover:shadow-md transition-shadow`}>
                   <div className="text-2xl mb-2">{
                     mod.icon === 'Hand' ? '👋' :
@@ -172,7 +171,7 @@ export default async function HomePage() {
                   {status === 'started' && <p className="text-xs text-yellow-600 mt-1 font-medium">In progress</p>}
                   {status === 'not-started' && <p className="text-xs text-gray-400 mt-1">Not started</p>}
                 </div>
-              </Link>
+              </a>
             )
           })}
         </div>

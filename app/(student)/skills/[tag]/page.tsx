@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
-import Link from 'next/link'
 import { getSkillByTag } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
 import LangToggle from '../../LangToggle'
@@ -53,7 +52,7 @@ export default async function SkillPage({
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
-        <Link href="/modules?mode=math" className="text-gray-400 hover:text-gray-600 text-2xl">←</Link>
+        <a href="/vine-app/modules?mode=math" className="text-gray-400 hover:text-gray-600 text-2xl">←</a>
         <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl">
           {lesson.emoji}
         </div>
@@ -97,13 +96,16 @@ export default async function SkillPage({
         <h2 className="font-bold text-gray-700 mb-4">
           {isSpanish ? 'Ejemplo' : 'Example'}
         </h2>
-        <div className="text-center py-2">
-          <p className="text-4xl font-bold text-gray-800">{lesson.exampleA}</p>
-          <p className="text-4xl font-bold text-gray-800">
-            <span className="text-gray-400 font-normal">{lesson.exampleOp}</span> {lesson.exampleB}
-          </p>
-          <div className="border-t-2 border-gray-300 my-3 mx-auto w-24" />
-          <p className="text-4xl font-bold text-green-700">{lesson.exampleAnswer}</p>
+        <div className="py-2">
+          <div className="mx-auto grid w-max grid-cols-[1.25ch_minmax(3ch,auto)] items-baseline gap-x-3 text-4xl font-bold tabular-nums">
+            <div />
+            <div className="text-right text-gray-800">{lesson.exampleA}</div>
+            <div className="text-right text-gray-400 font-normal">{lesson.exampleOp}</div>
+            <div className="text-right text-gray-800">{lesson.exampleB}</div>
+            <div className="col-span-2 border-t-2 border-gray-300 my-3" />
+            <div />
+            <div className="text-right text-green-700">{lesson.exampleAnswer}</div>
+          </div>
         </div>
       </div>
 
@@ -118,11 +120,11 @@ export default async function SkillPage({
       </div>
 
       {/* Practice button */}
-      <Link href={`/practice?mode=math&skill=${tag}`} className="block">
+      <a href={`/vine-app/practice?mode=math&skill=${tag}`} className="block">
         <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow active:scale-95 transition-transform">
           {isSpanish ? 'Practicar esta habilidad 📝' : 'Practice this skill 📝'}
         </button>
-      </Link>
+      </a>
     </div>
   )
 }

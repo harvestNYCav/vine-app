@@ -4,7 +4,6 @@ import { ALL_MODULES } from '@/content/modules'
 import PracticeClient from './PracticeClient'
 import MathClient from '../math/MathClient'
 import ModeToggle from '../ModeToggle'
-import Link from 'next/link'
 import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
 import { redirect } from 'next/navigation'
 import type { Track } from '@/types'
@@ -112,11 +111,11 @@ export default async function PracticePage({
           <h2 className="text-xl font-bold text-green-800 mb-2">All caught up!</h2>
           <p className="text-gray-500 mb-1">No words to review right now.</p>
           <p className="text-gray-400 text-sm mb-8">¡Al día! No hay palabras para repasar ahora.</p>
-          <Link href={currentMode === 'ela' ? '/modules?mode=ela' : '/modules'}>
+          <a href={currentMode === 'ela' ? '/vine-app/modules?mode=ela' : '/vine-app/modules'}>
             <button className="bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors">
               Go learn something new →
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     )

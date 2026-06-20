@@ -1,6 +1,5 @@
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
-import Link from 'next/link'
 import { ALL_MODULES } from '@/content/modules'
 import { SKILLS } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
@@ -59,7 +58,7 @@ export default async function ModulesPage({
             const pct = Math.round(m * 100)
             const lesson = SKILL_LESSONS[skill.tag]
             return (
-              <Link key={skill.tag} href={`/skills/${skill.tag}`}>
+              <a key={skill.tag} href={`/vine-app/skills/${skill.tag}`}>
                 <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl flex-shrink-0">
                     {lesson?.emoji ?? '🔢'}
@@ -84,7 +83,7 @@ export default async function ModulesPage({
                     {pct === 0 && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Start →</span>}
                   </div>
                 </div>
-              </Link>
+              </a>
             )
           })}
         </div>
@@ -122,7 +121,7 @@ export default async function ModulesPage({
         {visibleModules.map(mod => {
           const status = getStatus(mod.slug)
           return (
-            <Link key={mod.slug} href={`/modules/${mod.slug}`}>
+            <a key={mod.slug} href={`/vine-app/modules/${mod.slug}`}>
               <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl flex-shrink-0">
                   {MODULE_EMOJIS[mod.icon]}
@@ -139,7 +138,7 @@ export default async function ModulesPage({
                   {status === 'not-started' && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Start →</span>}
                 </div>
               </div>
-            </Link>
+            </a>
           )
         })}
       </div>

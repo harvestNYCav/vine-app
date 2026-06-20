@@ -2,7 +2,6 @@ import { getModule } from '@/content/modules'
 import { notFound } from 'next/navigation'
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
-import Link from 'next/link'
 import VocabSection from './VocabSection'
 import { getStudentTracks } from '@/lib/tracks'
 
@@ -33,7 +32,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
-        <Link href={mod.track === 'ela' ? '/modules?mode=ela' : '/modules'} className="text-gray-400 hover:text-gray-600 text-2xl">←</Link>
+        <a href={mod.track === 'ela' ? '/vine-app/modules?mode=ela' : '/vine-app/modules'} className="text-gray-400 hover:text-gray-600 text-2xl">←</a>
         <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl">
           {MODULE_EMOJIS[mod.icon]}
         </div>
@@ -48,14 +47,14 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
 
       {/* Action Buttons */}
       <div className="space-y-3 mt-6">
-        <Link href={`/modules/${slug}/practice`} className="block">
+        <a href={`/vine-app/modules/${slug}/practice`} className="block">
           <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-green-800 active:scale-95 transition-transform">
             Practice Quiz 📝
             <span className="block text-sm font-normal opacity-80 mt-0.5">Cuestionario</span>
           </button>
-        </Link>
+        </a>
 
-        <Link href={`/modules/${slug}/teach`} className="block">
+        <a href={`/vine-app/modules/${slug}/teach`} className="block">
           <button className={`w-full text-lg font-semibold py-4 rounded-2xl shadow active:scale-95 transition-transform ${
             canTeach
               ? 'bg-purple-600 text-white hover:bg-purple-700'
@@ -66,7 +65,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
               {canTeach ? '¡Enséñale a Carlos!' : 'Practice first to unlock / Practica primero'}
             </span>
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   )

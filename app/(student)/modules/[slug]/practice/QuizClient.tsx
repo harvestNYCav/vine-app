@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { Module, QuizQuestion } from '@/types'
-import Link from 'next/link'
 
 interface Props {
   mod: Module
@@ -79,17 +78,17 @@ export default function QuizClient({ mod }: Props) {
         </div>
 
         <div className="space-y-3">
-          <Link href={`/modules/${mod.slug}/teach`} className="block">
+          <a href={`/vine-app/modules/${mod.slug}/teach`} className="block">
             <button className="w-full bg-purple-600 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-purple-700 active:scale-95 transition-transform">
               🎓 Now teach Carlos!
               <span className="block text-sm font-normal opacity-80 mt-0.5">¡Ahora enséñale a Carlos!</span>
             </button>
-          </Link>
-          <Link href={`/modules/${mod.slug}`} className="block">
+          </a>
+          <a href={`/vine-app/modules/${mod.slug}`} className="block">
             <button className="w-full bg-gray-100 text-gray-700 text-base font-medium py-3 rounded-2xl">
               ← Back to lesson / Regresar
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     )

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
 import {
   SKILLS, MathProblem, MistakeType, OP_SYM,
   generateProblem, classifyMistake, updateMastery,
@@ -526,11 +525,13 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             </span>
           )}
         </div>
-        <div className="text-center py-6 mb-5">
-          <p className="text-5xl font-bold text-gray-800 leading-tight">{a}</p>
-          <p className="text-5xl font-bold text-gray-800 leading-tight">
-            <span className="text-gray-400 font-normal">{OP_SYM[currentProblem.operation]}</span> {b}
-          </p>
+        <div className="py-6 mb-5">
+          <div className="mx-auto grid w-max grid-cols-[1.25ch_minmax(3ch,auto)] items-baseline gap-x-3 text-5xl font-bold leading-tight tabular-nums">
+            <div />
+            <div className="text-right text-gray-800">{a}</div>
+            <div className="text-right text-gray-400 font-normal">{OP_SYM[currentProblem.operation]}</div>
+            <div className="text-right text-gray-800">{b}</div>
+          </div>
         </div>
         <div className="flex gap-3 mb-4">
           <input
@@ -830,9 +831,9 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
           </button>
 
           <div className="flex gap-2 mb-3">
-            <Link href="/progress?mode=math" className="flex-1">
+            <a href="/vine-app/progress?mode=math" className="flex-1">
               <span className="block text-center bg-gray-100 text-gray-700 text-sm font-medium py-2.5 rounded-2xl">Progress</span>
-            </Link>
+            </a>
             <button onClick={() => setScreen('history')} className="flex-1 bg-gray-100 text-gray-700 text-sm font-medium py-2.5 rounded-2xl">
               History
             </button>
