@@ -31,11 +31,11 @@ export default function VocabSection({ vocab, moduleSlug }: Props) {
     <div>
       <div className="flex justify-between items-center mb-3">
         <h2 className="font-bold text-gray-700">
-          Vocabulary / Vocabulario
+          Vocabulary
         </h2>
         <span className="text-sm text-gray-400">{flipped.size}/{vocab.length} flipped</span>
       </div>
-      <p className="text-xs text-gray-400 mb-3">Tap a card to see the translation / Toca para ver la traducción</p>
+      <p className="text-xs text-gray-400 mb-3">Tap a card to see the translation</p>
 
       <div className="space-y-2">
         {vocab.map(item => (
@@ -69,7 +69,6 @@ export default function VocabSection({ vocab, moduleSlug }: Props) {
           <p className="text-yellow-700 font-medium text-sm">
             🌟 Great! You reviewed all {vocab.length} words!
           </p>
-          <p className="text-yellow-600 text-xs mt-0.5">¡Excelente! Revisaste todas las palabras.</p>
         </div>
       )}
     </div>

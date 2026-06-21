@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
+import { localDateKey } from '@/lib/dates'
 
 export async function GET() {
   const session = await getSession()
@@ -29,7 +30,7 @@ export async function POST(req: NextRequest) {
   const body = await req.json()
   const { type, data } = body
   const db = await getDb()
-  const today = new Date().toISOString().split('T')[0]
+  const today = localDateKey()
 
   if (type === 'vocab_viewed') {
     const { moduleSlug } = data

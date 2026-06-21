@@ -46,13 +46,12 @@ export default function PracticeClient({ cards }: Props) {
       <div className="text-center py-8">
         <div className="text-5xl mb-4">🌟</div>
         <h2 className="text-xl font-bold text-green-800 mb-2">Review complete!</h2>
-        <p className="text-gray-500 mb-1">You reviewed {reviewed} words today.</p>
-        <p className="text-gray-400 text-sm mb-8">Repasaste {reviewed} palabras hoy.</p>
+        <p className="text-gray-500 mb-8">You reviewed {reviewed} words today.</p>
         <button
           onClick={() => router.push('/home')}
           className="bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors"
         >
-          Back home / Inicio
+          Back home
         </button>
       </div>
     )
@@ -82,7 +81,7 @@ export default function PracticeClient({ cards }: Props) {
           <>
             <p className="text-3xl font-bold mb-2">{card.en}</p>
             <p className="text-gray-400 text-sm">{card.pronunciation}</p>
-            <p className="text-gray-300 text-xs mt-4">Tap to flip / Toca para voltear</p>
+            <p className="text-gray-300 text-xs mt-4">Tap to flip</p>
           </>
         ) : (
           <>
@@ -96,7 +95,7 @@ export default function PracticeClient({ cards }: Props) {
       {/* Rating Buttons */}
       {flipped && (
         <div>
-          <p className="text-center text-sm text-gray-500 mb-3">How well do you know this? / ¿Qué tan bien lo sabes?</p>
+          <p className="text-center text-sm text-gray-500 mb-3">How well do you know this?</p>
           <div className="grid grid-cols-3 gap-3">
             <button
               onClick={() => handleRate('hard')}
@@ -104,7 +103,6 @@ export default function PracticeClient({ cards }: Props) {
             >
               <span className="block text-xl">😅</span>
               Hard
-              <span className="block text-xs opacity-70">Difícil</span>
             </button>
             <button
               onClick={() => handleRate('ok')}
@@ -112,7 +110,6 @@ export default function PracticeClient({ cards }: Props) {
             >
               <span className="block text-xl">🙂</span>
               OK
-              <span className="block text-xs opacity-70">Bien</span>
             </button>
             <button
               onClick={() => handleRate('easy')}
@@ -120,7 +117,6 @@ export default function PracticeClient({ cards }: Props) {
             >
               <span className="block text-xl">😄</span>
               Easy
-              <span className="block text-xs opacity-70">Fácil</span>
             </button>
           </div>
         </div>

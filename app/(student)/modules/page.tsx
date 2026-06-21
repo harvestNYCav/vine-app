@@ -132,7 +132,7 @@ export default async function ModulesPage({
         <h1 className="text-2xl font-bold text-green-800">Lessons</h1>
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
-      <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'Lecciones'}</p>
+      <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'ESL'}</p>
 
       <div className="space-y-3">
         {visibleModules.map(mod => {
@@ -145,8 +145,7 @@ export default async function ModulesPage({
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-semibold text-gray-800">{mod.titleEn}</p>
-                  <p className="text-sm text-gray-500">{mod.titleEs}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{mod.vocab.length} words / palabras</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{mod.vocab.length} words</p>
                 </div>
                 <div className="text-right flex-shrink-0">
                   {status === 'taught' && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">Taught ✓</span>}

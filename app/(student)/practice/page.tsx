@@ -123,8 +123,7 @@ export default async function PracticePage({
         <div className="text-center py-8">
           <div className="text-5xl mb-4">✅</div>
           <h2 className="text-xl font-bold text-green-800 mb-2">All caught up!</h2>
-          <p className="text-gray-500 mb-1">No words to review right now.</p>
-          <p className="text-gray-400 text-sm mb-8">¡Al día! No hay palabras para repasar ahora.</p>
+          <p className="text-gray-500 mb-8">No words to review right now.</p>
           <a href={currentMode === 'ela' ? '/vine-app/modules?mode=ela' : '/vine-app/modules'}>
             <button className="bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors">
               Go learn something new →
@@ -140,7 +139,7 @@ export default async function PracticePage({
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-2xl font-bold text-green-800">Practice</h1>
-          <p className="text-gray-500 text-sm">Repaso · {cards.length} words due / palabras</p>
+          <p className="text-gray-500 text-sm">{cards.length} words due</p>
         </div>
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>

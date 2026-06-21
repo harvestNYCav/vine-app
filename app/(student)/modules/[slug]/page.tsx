@@ -38,7 +38,6 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
         </div>
         <div>
           <h1 className="text-xl font-bold text-green-800">{mod.titleEn}</h1>
-          <p className="text-gray-500 text-sm">{mod.titleEs}</p>
         </div>
       </div>
 
@@ -50,7 +49,6 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
         <a href={`/vine-app/modules/${slug}/practice`} className="block">
           <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-green-800 active:scale-95 transition-transform">
             Practice Quiz 📝
-            <span className="block text-sm font-normal opacity-80 mt-0.5">Cuestionario</span>
           </button>
         </a>
 
@@ -62,7 +60,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
           }`}>
             🎓 Teach It to Carlos!
             <span className="block text-sm font-normal opacity-80 mt-0.5">
-              {canTeach ? '¡Enséñale a Carlos!' : 'Practice first to unlock / Practica primero'}
+              {canTeach ? 'Ready to teach' : 'Practice first to unlock'}
             </span>
           </button>
         </a>
