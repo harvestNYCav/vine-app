@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { randomUUID } from 'crypto'
+import { localDateKey } from '@/lib/dates'
 
 const VALID_SESSION_TYPES = new Set(['diagnostic', 'practice_5', 'practice_10', 'flat_10', 'flat_25', 'custom'])
 
@@ -60,6 +61,17 @@ export async function POST(req: NextRequest) {
       typeof body.current_skill === 'string' ? body.current_skill.slice(0, 64) : '',
     ],
   })
+
+  if (totalProblems > 0) {
+    await db.execute({
+      sql: `
+        INSERT INTO activity_log (user_id, date, activity_type, count)
+        VALUES (?, ?, 'practice', 1)
+        ON CONFLICT(user_id, date, activity_type) DO UPDATE SET count = count + 1
+      `,
+      args: [session.userId, localDateKey(endedAt || Date.now())],
+    })
+  }
 
   return NextResponse.json({ ok: true })
 }

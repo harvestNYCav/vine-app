@@ -4,6 +4,7 @@ import { getClient, buildTeachingSystemPrompt, buildSummaryPrompt } from '@/lib/
 import { getModule } from '@/content/modules'
 import getDb from '@/lib/db'
 import { randomUUID } from 'crypto'
+import { localDateKey } from '@/lib/dates'
 
 export async function POST(req: NextRequest) {
   const session = await getSession()
@@ -16,7 +17,7 @@ export async function POST(req: NextRequest) {
 
   const client = getClient()
   const db = await getDb()
-  const today = new Date().toISOString().split('T')[0]
+  const today = localDateKey()
 
   if (action === 'summarize') {
     const summaryPrompt = buildSummaryPrompt(messages)

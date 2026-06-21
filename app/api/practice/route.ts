@@ -5,6 +5,7 @@ import { getNextReviewAt } from '@/lib/spaced-repetition'
 import type { Rating } from '@/lib/spaced-repetition'
 import { ALL_MODULES } from '@/content/modules'
 import { randomUUID } from 'crypto'
+import { localDateKey } from '@/lib/dates'
 
 export async function GET() {
   const session = await getSession()
@@ -42,7 +43,7 @@ export async function POST(req: NextRequest) {
 
   const { wordId, moduleSlug, rating } = await req.json() as { wordId: string; moduleSlug: string; rating: Rating }
   const db = await getDb()
-  const today = new Date().toISOString().split('T')[0]
+  const today = localDateKey()
   const nextReviewAt = getNextReviewAt(rating)
 
   const existingResult = await db.execute({

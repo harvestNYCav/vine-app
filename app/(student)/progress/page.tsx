@@ -232,35 +232,31 @@ export default async function ProgressPage({
         <h1 className="text-2xl font-bold text-green-800">Progress</h1>
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
-      <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA progress' : 'Tu progreso'}</p>
+      <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA progress' : 'ESL progress'}</p>
 
       {/* Overview Stats */}
       <div className="grid grid-cols-2 gap-3 mb-6">
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
           <p className="text-3xl font-bold text-green-700">{completedModules}/{visibleModules.length}</p>
           <p className="text-sm text-gray-600 mt-0.5">Lessons completed</p>
-          <p className="text-xs text-gray-400">Lecciones</p>
         </div>
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
           <p className="text-3xl font-bold text-blue-600">{masteredWords}/{totalVocab}</p>
           <p className="text-sm text-gray-600 mt-0.5">Words mastered</p>
-          <p className="text-xs text-gray-400">Palabras dominadas</p>
         </div>
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
           <p className="text-3xl font-bold text-purple-600">{totalTeachSessions}</p>
           <p className="text-sm text-gray-600 mt-0.5">Teaching sessions</p>
-          <p className="text-xs text-gray-400">Sesiones de enseñanza</p>
         </div>
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
           <p className="text-3xl font-bold text-orange-500">{practicedWords}</p>
           <p className="text-sm text-gray-600 mt-0.5">Words practiced</p>
-          <p className="text-xs text-gray-400">Palabras practicadas</p>
         </div>
       </div>
 
       {/* Activity this week */}
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 mb-6">
-        <h3 className="font-bold text-gray-700 mb-3">This week / Esta semana</h3>
+        <h3 className="font-bold text-gray-700 mb-3">This week</h3>
         <div className="flex items-end gap-2 h-16">
           {last7.map(day => (
             <div key={day.date} className="flex-1 flex flex-col items-center gap-1">
@@ -276,7 +272,7 @@ export default async function ProgressPage({
 
       {/* Module Progress */}
       <div className="mb-6">
-        <h3 className="font-bold text-gray-700 mb-3">Lessons / Lecciones</h3>
+        <h3 className="font-bold text-gray-700 mb-3">Lessons</h3>
         <div className="space-y-3">
           {visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
@@ -306,7 +302,7 @@ export default async function ProgressPage({
       {/* Recent Teaching Sessions */}
       {teachingSessions.length > 0 && (
         <div>
-          <h3 className="font-bold text-gray-700 mb-3">Teaching Sessions / Sesiones de enseñanza</h3>
+          <h3 className="font-bold text-gray-700 mb-3">Teaching Sessions</h3>
           <div className="space-y-3">
             {teachingSessions.slice(0, 3).map(session => {
               const mod = visibleModules.find(m => m.slug === session.module_slug)

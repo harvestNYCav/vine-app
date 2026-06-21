@@ -69,24 +69,20 @@ export default function QuizClient({ mod }: Props) {
         <h2 className="text-2xl font-bold text-green-800 mb-2">
           {isPerfect ? 'Perfect!' : isGood ? 'Well done!' : 'Keep going!'}
         </h2>
-        <p className="text-gray-500 mb-1">
-          {isPerfect ? '¡Perfecto!' : isGood ? '¡Bien hecho!' : '¡Sigue adelante!'}
-        </p>
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 my-6">
           <p className="text-5xl font-bold text-green-700 mb-1">{pct}%</p>
-          <p className="text-gray-500">{correct}/{mod.quiz.length} correct / correctas</p>
+          <p className="text-gray-500">{correct}/{mod.quiz.length} correct</p>
         </div>
 
         <div className="space-y-3">
           <a href={`/vine-app/modules/${mod.slug}/teach`} className="block">
             <button className="w-full bg-purple-600 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-purple-700 active:scale-95 transition-transform">
               🎓 Now teach Carlos!
-              <span className="block text-sm font-normal opacity-80 mt-0.5">¡Ahora enséñale a Carlos!</span>
             </button>
           </a>
           <a href={`/vine-app/modules/${mod.slug}`} className="block">
             <button className="w-full bg-gray-100 text-gray-700 text-base font-medium py-3 rounded-2xl">
-              ← Back to lesson / Regresar
+              ← Back to lesson
             </button>
           </a>
         </div>
@@ -101,7 +97,6 @@ export default function QuizClient({ mod }: Props) {
         <button onClick={() => router.back()} className="text-gray-400 text-2xl">←</button>
         <div className="flex-1">
           <h1 className="font-bold text-green-800">{mod.titleEn} — Quiz</h1>
-          <p className="text-xs text-gray-500">{mod.titleEs}</p>
         </div>
         <span className="text-sm text-gray-400">{currentIndex + 1}/{mod.quiz.length}</span>
       </div>
@@ -117,7 +112,6 @@ export default function QuizClient({ mod }: Props) {
       {/* Question */}
       <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 mb-5">
         <p className="font-semibold text-gray-800 text-lg mb-1">{question.promptEn}</p>
-        <p className="text-gray-400 text-sm">{question.promptEs}</p>
       </div>
 
       {/* Options */}
@@ -150,7 +144,7 @@ export default function QuizClient({ mod }: Props) {
       {isAnswered && (
         <div className={`rounded-2xl p-4 mb-4 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
           <p className={`font-semibold ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-            {isCorrect ? '✓ Correct! / ¡Correcto!' : `✗ The answer is: "${question.answer}"`}
+            {isCorrect ? '✓ Correct!' : `✗ The answer is: "${question.answer}"`}
           </p>
         </div>
       )}

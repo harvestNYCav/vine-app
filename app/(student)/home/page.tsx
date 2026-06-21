@@ -4,12 +4,13 @@ import { ALL_MODULES } from '@/content/modules'
 import LogoutButton from '../LogoutButton'
 import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
 import { redirect } from 'next/navigation'
+import { localDateKey } from '@/lib/dates'
 
 function getStreak(activityLog: Array<{ date: string }>): number {
   if (!activityLog.length) return 0
   const dates = [...new Set(activityLog.map(a => a.date))].sort().reverse()
-  const today = new Date().toISOString().split('T')[0]
-  const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0]
+  const today = localDateKey()
+  const yesterday = localDateKey(Date.now() - 86400000)
   if (dates[0] !== today && dates[0] !== yesterday) return 0
   let streak = 1
   for (let i = 1; i < dates.length; i++) {
@@ -38,12 +39,17 @@ export default async function HomePage() {
     db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [session!.userId] }),
     db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [session!.userId] }),
     db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT COUNT(*) as count FROM math_sessions WHERE user_id = ?', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT started_at FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [session!.userId] }),
   ])
 
   type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number }
   const moduleProgress = mpResult.rows as unknown as ModuleProgressRow[]
-  const activityLog = alResult.rows as unknown as Array<{ date: string }>
+  type MathSessionRow = { started_at: number }
+  const mathSessions = msResult.rows as unknown as MathSessionRow[]
+  const activityLog = [
+    ...(alResult.rows as unknown as Array<{ date: string }>),
+    ...mathSessions.map(row => ({ date: localDateKey(Number(row.started_at)) })),
+  ]
   const vocabMastered = vmResult.rows[0] as unknown as { count: number }
   const teachSessions = tsResult.rows[0] as unknown as { count: number }
   const mathProgressRow = mathResult.rows[0] as unknown as { total_problems: number; total_correct: number; diagnostic_done: number } | undefined
@@ -69,14 +75,13 @@ export default async function HomePage() {
 
   const hour = new Date().getHours()
   const greeting = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening'
-  const greetingEs = hour < 12 ? 'Buenos días' : hour < 17 ? 'Buenas tardes' : 'Buenas noches'
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex justify-between items-start mb-6">
         <div>
-          <p className="text-gray-500 text-sm">{greeting} / {greetingEs}</p>
+          <p className="text-gray-500 text-sm">{greeting}</p>
           <h1 className="text-2xl font-bold text-green-800">{session!.name} 👋</h1>
         </div>
         <div className="flex items-center gap-2">
@@ -93,17 +98,14 @@ export default async function HomePage() {
         <div className="bg-white rounded-2xl p-3 text-center shadow-sm border border-gray-100">
           <p className="text-2xl font-bold text-green-700">{completedModules}</p>
           <p className="text-xs text-gray-500 mt-0.5">Lessons done</p>
-          <p className="text-xs text-gray-400">Lecciones</p>
         </div>
         <div className="bg-white rounded-2xl p-3 text-center shadow-sm border border-gray-100">
           <p className="text-2xl font-bold text-blue-600">{vocabMastered.count}</p>
           <p className="text-xs text-gray-500 mt-0.5">Words learned</p>
-          <p className="text-xs text-gray-400">Palabras</p>
         </div>
         <div className="bg-white rounded-2xl p-3 text-center shadow-sm border border-gray-100">
           <p className="text-2xl font-bold text-purple-600">{teachSessions.count}</p>
           <p className="text-xs text-gray-500 mt-0.5">Times taught</p>
-          <p className="text-xs text-gray-400">Enseñado</p>
         </div>
       </div>
 
@@ -135,7 +137,6 @@ export default async function HomePage() {
             <span className="text-3xl">🎓</span>
             <div>
               <p className="font-bold text-lg">Become the Teacher!</p>
-              <p className="text-green-100 text-sm">¡Conviértete en el maestro!</p>
               <p className="text-green-200 text-xs mt-0.5">Teach Carlos English with AI</p>
             </div>
           </div>
@@ -146,7 +147,7 @@ export default async function HomePage() {
       {/* Modules Grid */}
       <div className="mb-4">
         <h2 className="font-bold text-gray-700 mb-3">
-          Lessons / Lecciones
+          Lessons
         </h2>
         <div className="grid grid-cols-2 gap-3">
           {visibleModules.map(mod => {

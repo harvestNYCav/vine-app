@@ -126,10 +126,9 @@ export default function TeachingChat({ mod }: Props) {
         <div className="w-full max-w-sm text-center">
           <div className="text-6xl mb-4">🎉</div>
           <h2 className="text-2xl font-bold text-green-800 mb-1">Amazing Teacher!</h2>
-          <p className="text-gray-500 mb-6">¡Qué buen maestro/maestra!</p>
 
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 mb-5 text-left">
-            <p className="font-bold text-gray-700 mb-3">Phrases you taught today / Frases que enseñaste:</p>
+            <p className="font-bold text-gray-700 mb-3">Phrases you taught today:</p>
             <ul className="space-y-2">
               {summary.phrases.map((phrase, i) => (
                 <li key={i} className="flex items-start gap-2">
@@ -154,7 +153,7 @@ export default function TeachingChat({ mod }: Props) {
               }}
               className="w-full bg-purple-600 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-purple-700 active:scale-95 transition-transform"
             >
-              Teach again! / ¡Enseña de nuevo!
+              Teach again!
             </button>
             <button
               onClick={() => router.push(`/modules/${mod.slug}`)}
@@ -175,21 +174,17 @@ export default function TeachingChat({ mod }: Props) {
         <div className="w-full max-w-sm text-center">
           <div className="text-6xl mb-4">🎓</div>
           <h2 className="text-2xl font-bold text-green-800 mb-2">You are the Teacher!</h2>
-          <p className="text-gray-500 mb-6">¡Tú eres el maestro!</p>
 
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 mb-6 text-left">
             <p className="font-bold text-gray-700 mb-2">Meet Carlos 👋</p>
             <p className="text-gray-600 text-sm leading-relaxed">
               Carlos is a Spanish speaker who just moved to New York. He wants to learn English and YOU are going to help him!
             </p>
-            <p className="text-gray-500 text-sm mt-2 italic">
-              Carlos es hispanohablante y quiere aprender inglés. ¡Tú vas a enseñarle sobre {mod.titleEs}!
-            </p>
           </div>
 
           <div className="bg-purple-50 border border-purple-200 rounded-2xl p-4 mb-6">
-            <p className="text-purple-700 text-sm font-medium">Today&apos;s topic / Tema de hoy:</p>
-            <p className="text-purple-800 font-bold">{mod.titleEn} — {mod.titleEs}</p>
+            <p className="text-purple-700 text-sm font-medium">Today&apos;s topic:</p>
+            <p className="text-purple-800 font-bold">{mod.titleEn}</p>
             <p className="text-purple-600 text-xs mt-1">{mod.teachingScenario}</p>
           </div>
 
@@ -199,7 +194,6 @@ export default function TeachingChat({ mod }: Props) {
             className="w-full bg-purple-600 text-white text-xl font-semibold py-5 rounded-2xl shadow-md hover:bg-purple-700 active:scale-95 transition-transform"
           >
             Start Teaching! 🚀
-            <span className="block text-sm font-normal opacity-80 mt-0.5">¡Empezar a enseñar!</span>
           </button>
 
           <button onClick={() => router.back()} className="mt-4 text-gray-400 text-sm">
