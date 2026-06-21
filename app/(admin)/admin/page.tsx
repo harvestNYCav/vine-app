@@ -5,6 +5,7 @@ import { getStudentTutorIds } from '@/lib/tutors'
 import { getStudentSettings } from '@/lib/student-settings'
 import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
+import AdminAllowlistControls from './AdminAllowlistControls'
 
 function formatLastActive(value: number) {
   if (!value) return 'No activity yet'
@@ -16,9 +17,10 @@ function formatLastActive(value: number) {
 
 export default async function AdminPage() {
   const db = await getDb()
-  const [studentsResult, tutorsResult] = await Promise.all([
+  const [studentsResult, tutorsResult, adminAllowlistResult] = await Promise.all([
     db.execute({ sql: "SELECT id, name, last_active FROM users WHERE role = 'student' ORDER BY name", args: [] }),
     db.execute({ sql: "SELECT id, name FROM users WHERE role = 'tutor' ORDER BY name", args: [] }),
+    db.execute({ sql: 'SELECT email, created_at FROM admin_email_allowlist ORDER BY created_at DESC', args: [] }),
   ])
 
   type StudentRow = { id: string; name: string; last_active: number }
@@ -31,6 +33,10 @@ export default async function AdminPage() {
   const tutors: TutorRow[] = tutorsResult.rows.map(row => ({
     id: String(row.id),
     name: String(row.name),
+  }))
+  const adminAllowlist = adminAllowlistResult.rows.map(row => ({
+    email: String(row.email),
+    createdAt: Number(row.created_at),
   }))
   const tutorNameById = new Map(tutors.map(tutor => [tutor.id, tutor.name]))
 
@@ -78,6 +84,8 @@ export default async function AdminPage() {
         <p className="text-sm text-slate-500">Program overview</p>
         <h1 className="text-2xl font-bold text-slate-900">Students</h1>
       </div>
+
+      <AdminAllowlistControls initialEmails={adminAllowlist} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         <div className="bg-white border border-slate-200 rounded-lg p-4">

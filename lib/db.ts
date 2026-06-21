@@ -65,6 +65,12 @@ async function initSchema(db: Client): Promise<void> {
       created_at INTEGER NOT NULL
     );
 
+    CREATE TABLE IF NOT EXISTS admin_email_allowlist (
+      email TEXT PRIMARY KEY,
+      created_by TEXT NOT NULL,
+      created_at INTEGER NOT NULL
+    );
+
     CREATE TABLE IF NOT EXISTS vocab_progress (
       id TEXT PRIMARY KEY,
       user_id TEXT NOT NULL,

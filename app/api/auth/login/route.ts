@@ -51,6 +51,7 @@ export async function POST(req: NextRequest) {
   const rawUser = userResult.rows[0]
 
   let user: { id: string; name: string; email: string | null; pin_hash: string; role: Role; created_at: number; last_active: number } | undefined
+  let createdAdmin = false
 
   if (!rawUser) {
     if (role === 'admin') {
@@ -60,7 +61,26 @@ export async function POST(req: NextRequest) {
       })
       const adminCount = Number(adminResult.rows[0]?.count ?? 0)
       if (adminCount > 0) {
-        return NextResponse.json({ error: 'Admin account not found' }, { status: 404 })
+        const adminWithEmailResult = await db.execute({
+          sql: "SELECT name FROM users WHERE role = 'admin' AND LOWER(email) = LOWER(?)",
+          args: [normalizedEmail],
+        })
+        const adminWithEmail = adminWithEmailResult.rows[0]
+        if (adminWithEmail) {
+          return NextResponse.json({
+            error: `This email already belongs to an admin account. Sign in with the admin name "${adminWithEmail.name}".`,
+          }, { status: 409 })
+        }
+
+        const allowlistResult = await db.execute({
+          sql: 'SELECT email FROM admin_email_allowlist WHERE email = ?',
+          args: [normalizedEmail],
+        })
+        if (!allowlistResult.rows[0]) {
+          return NextResponse.json({
+            error: 'This email is not approved for admin signup. Ask an existing admin to approve it first.',
+          }, { status: 403 })
+        }
       }
     }
     const pinHash = await bcrypt.hash(pin, 10)
@@ -71,6 +91,7 @@ export async function POST(req: NextRequest) {
       args: [id, normalizedName, role === 'admin' ? normalizedEmail : null, pinHash, role, now, now],
     })
     user = { id, name: normalizedName, email: role === 'admin' ? normalizedEmail : null, pin_hash: pinHash, role, created_at: now, last_active: now }
+    createdAdmin = role === 'admin'
   } else {
     const userEmail = rawUser.email ? String(rawUser.email).toLowerCase() : null
     if (role === 'admin' && userEmail !== normalizedEmail) {
@@ -93,7 +114,12 @@ export async function POST(req: NextRequest) {
   }
 
   if (role === 'admin') {
-    await db.execute({ sql: 'DELETE FROM admin_email_verifications WHERE email = ?', args: [normalizedEmail] })
+    await Promise.all([
+      db.execute({ sql: 'DELETE FROM admin_email_verifications WHERE email = ?', args: [normalizedEmail] }),
+      createdAdmin
+        ? db.execute({ sql: 'DELETE FROM admin_email_allowlist WHERE email = ?', args: [normalizedEmail] })
+        : Promise.resolve(),
+    ])
   }
 
   const tracks = user.role === 'student' ? await getStudentTracks(db, user.id) : []

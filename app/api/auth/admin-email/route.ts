@@ -25,13 +25,32 @@ export async function POST(req: NextRequest) {
   const admin = adminResult.rows[0]
 
   if (!admin) {
+    const adminWithEmailResult = await db.execute({
+      sql: "SELECT name FROM users WHERE role = 'admin' AND LOWER(email) = LOWER(?)",
+      args: [normalizedEmail],
+    })
+    const adminWithEmail = adminWithEmailResult.rows[0]
+    if (adminWithEmail) {
+      return NextResponse.json({
+        error: `This email already belongs to an admin account. Sign in with the admin name "${adminWithEmail.name}".`,
+      }, { status: 409 })
+    }
+
     const countResult = await db.execute({
       sql: "SELECT COUNT(*) as count FROM users WHERE role = 'admin'",
       args: [],
     })
     const adminCount = Number(countResult.rows[0]?.count ?? 0)
     if (adminCount > 0) {
-      return NextResponse.json({ error: 'Admin account not found' }, { status: 404 })
+      const allowlistResult = await db.execute({
+        sql: 'SELECT email FROM admin_email_allowlist WHERE email = ?',
+        args: [normalizedEmail],
+      })
+      if (!allowlistResult.rows[0]) {
+        return NextResponse.json({
+          error: 'This email is not approved for admin signup. Ask an existing admin to approve it first.',
+        }, { status: 403 })
+      }
     }
   } else if (admin.email && String(admin.email).toLowerCase() !== normalizedEmail) {
     return NextResponse.json({ error: 'Email does not match this admin account' }, { status: 401 })
