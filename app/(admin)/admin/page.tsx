@@ -6,6 +6,7 @@ import { getStudentSettings } from '@/lib/student-settings'
 import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
+import AdminDangerZoneControls from './AdminDangerZoneControls'
 
 function formatLastActive(value: number) {
   if (!value) return 'No activity yet'
@@ -39,6 +40,10 @@ export default async function AdminPage() {
     createdAt: Number(row.created_at),
   }))
   const tutorNameById = new Map(tutors.map(tutor => [tutor.id, tutor.name]))
+  const resettableProfiles = [
+    ...students.map(student => ({ id: student.id, name: student.name, role: 'student' as const })),
+    ...tutors.map(tutor => ({ id: tutor.id, name: tutor.name, role: 'tutor' as const })),
+  ]
 
   const studentData = await Promise.all(students.map(async student => {
     const [tracks, tutorIds, settings, modulesResult, vocabResult, teachingResult, mathResult] = await Promise.all([
@@ -86,6 +91,7 @@ export default async function AdminPage() {
       </div>
 
       <AdminAllowlistControls initialEmails={adminAllowlist} />
+      <AdminDangerZoneControls profiles={resettableProfiles} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         <div className="bg-white border border-slate-200 rounded-lg p-4">
