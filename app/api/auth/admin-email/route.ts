@@ -3,8 +3,9 @@ import bcrypt from 'bcryptjs'
 import getDb from '@/lib/db'
 import {
   createVerificationCode,
-  EmailConfigError,
   EmailDeliveryError,
+  isEmailConfigError,
+  isEmailDeliveryError,
   isValidEmail,
   normalizeEmail,
   sendAdminVerificationEmail,
@@ -15,9 +16,15 @@ function summarizeEmailDeliveryError(error: EmailDeliveryError): string {
   const resendMessage =
     details && typeof details === 'object' && 'message' in details
       ? String((details as { message?: unknown }).message ?? '')
+      : details && typeof details === 'object' && 'error' in details
+        ? String((details as { error?: unknown }).error ?? '')
       : typeof details === 'string'
         ? details
         : ''
+
+  if (error.status === 0) {
+    return `${resendMessage || error.message} Check that the Vercel function can reach api.resend.com.`
+  }
 
   if (/domain|sender|from/i.test(resendMessage)) {
     return `${resendMessage} Check that ADMIN_EMAIL_FROM uses a verified Resend sender.`
@@ -31,6 +38,7 @@ function summarizeEmailDeliveryError(error: EmailDeliveryError): string {
 }
 
 export async function POST(req: NextRequest) {
+  let phase = 'reading the request'
   try {
     const { name, email } = await req.json()
     const normalizedName = typeof name === 'string' ? name.trim() : ''
@@ -40,7 +48,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Enter a valid name and email' }, { status: 400 })
     }
 
+    phase = 'opening the database'
     const db = await getDb()
+    phase = 'checking the admin account'
     const adminResult = await db.execute({
       sql: 'SELECT id, email FROM users WHERE LOWER(name) = LOWER(?) AND role = ?',
       args: [normalizedName, 'admin'],
@@ -83,6 +93,7 @@ export async function POST(req: NextRequest) {
     const codeHash = await bcrypt.hash(code, 10)
     const now = Date.now()
 
+    phase = 'saving the verification code'
     await db.execute({
       sql: `
         INSERT INTO admin_email_verifications (email, code_hash, expires_at, attempts, created_at)
@@ -96,15 +107,17 @@ export async function POST(req: NextRequest) {
       args: [normalizedEmail, codeHash, now + 10 * 60 * 1000, now],
     })
 
+    phase = 'sending the verification email'
     const delivery = await sendAdminVerificationEmail(normalizedEmail, code)
     return NextResponse.json({ ok: true, ...delivery })
   } catch (error) {
-    if (error instanceof EmailConfigError) {
+    if (isEmailConfigError(error)) {
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
 
-    if (error instanceof EmailDeliveryError) {
+    if (isEmailDeliveryError(error)) {
       console.error('Admin email delivery failed:', {
+        phase,
         status: error.status,
         details: error.details,
       })
@@ -113,7 +126,9 @@ export async function POST(req: NextRequest) {
       }, { status: 502 })
     }
 
-    console.error('Admin email verification failed:', error)
-    return NextResponse.json({ error: 'Could not send verification email. Please try again or contact an admin.' }, { status: 500 })
+    console.error('Admin email verification failed:', { phase, error })
+    return NextResponse.json({
+      error: `Could not send verification email while ${phase}. Please try again or contact an admin.`,
+    }, { status: 500 })
   }
 }
