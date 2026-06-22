@@ -156,6 +156,7 @@ async function initSchema(db: Client): Promise<void> {
     );
   `)
   await ensureColumn(db, 'users', 'email', 'TEXT')
+  await ensureUsersTableSupportsAdminRole(db)
   await seedDefaultAdminAllowlistIfEmpty(db)
 }
 
@@ -165,6 +166,38 @@ async function ensureColumn(db: Client, table: string, column: string, definitio
   if (!hasColumn) {
     await db.execute({ sql: `ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`, args: [] })
   }
+}
+
+async function ensureUsersTableSupportsAdminRole(db: Client): Promise<void> {
+  const result = await db.execute({
+    sql: "SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'users'",
+    args: [],
+  })
+  const tableSql = String(result.rows[0]?.sql ?? '')
+  const roleCheck = tableSql.match(/CHECK\s*\(\s*role\s+IN\s*\(([^)]*)\)\s*\)/i)
+  if (!roleCheck || /['"]admin['"]/i.test(roleCheck[1])) return
+
+  await db.executeMultiple(`
+    DROP TABLE IF EXISTS users_schema_migration;
+
+    CREATE TABLE users_schema_migration (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      email TEXT,
+      pin_hash TEXT NOT NULL,
+      role TEXT NOT NULL CHECK(role IN ('student', 'tutor', 'admin')),
+      created_at INTEGER NOT NULL,
+      last_active INTEGER NOT NULL,
+      CHECK(role != 'admin' OR email IS NOT NULL)
+    );
+
+    INSERT INTO users_schema_migration (id, name, email, pin_hash, role, created_at, last_active)
+    SELECT id, name, email, pin_hash, role, created_at, last_active
+    FROM users;
+
+    DROP TABLE users;
+    ALTER TABLE users_schema_migration RENAME TO users;
+  `)
 }
 
 export default getDb
