@@ -7,6 +7,7 @@ import type { Track } from '@/types'
 
 export default function TrackSelectionClient({ initialTracks }: { initialTracks: Track[] }) {
   const router = useRouter()
+  const isSetup = initialTracks.length === 0
   const [selected, setSelected] = useState<Track[]>(initialTracks)
   const [error, setError] = useState('')
   const [saving, setSaving] = useState(false)
@@ -38,15 +39,18 @@ export default function TrackSelectionClient({ initialTracks }: { initialTracks:
       setSaving(false)
       return
     }
-    router.push(data.nextPath || '/home')
+    router.push(isSetup ? data.nextPath || '/home' : '/home')
     router.refresh()
   }
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-8">
       <div className="mb-6">
-        <p className="text-gray-500 text-sm">Student setup</p>
-        <h1 className="text-2xl font-bold text-green-800">Choose your tracks</h1>
+        <p className="text-gray-500 text-sm">{isSetup ? 'Student setup' : 'Student settings'}</p>
+        <h1 className="text-2xl font-bold text-green-800">{isSetup ? 'Choose your tracks' : 'Update your tracks'}</h1>
+        <p className="text-sm text-gray-500 mt-2">
+          {isSetup ? 'Pick one or more tracks to get started.' : 'Add or remove tracks. Your lessons and practice will update right away.'}
+        </p>
       </div>
 
       <div className="space-y-3">
@@ -85,8 +89,17 @@ export default function TrackSelectionClient({ initialTracks }: { initialTracks:
         disabled={saving}
         className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-green-800 active:scale-95 transition-transform mt-6 disabled:opacity-60"
       >
-        {saving ? 'Saving...' : 'Start learning'}
+        {saving ? 'Saving...' : isSetup ? 'Start learning' : 'Save tracks'}
       </button>
+
+      {!isSetup && (
+        <a
+          href="/vine-app/home"
+          className="block text-center text-gray-500 text-sm py-4"
+        >
+          Back home
+        </a>
+      )}
     </div>
   )
 }

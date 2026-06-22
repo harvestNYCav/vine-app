@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { href: '/modules', label: 'Learn', labelEs: 'Aprender', emoji: '📖' },
   { href: '/practice', label: 'Practice', labelEs: 'Practicar', emoji: '🔄' },
   { href: '/progress', label: 'Progress', labelEs: 'Progreso', emoji: '⭐' },
+  { href: '/tracks', label: 'Tracks', labelEs: 'Rutas', emoji: '🧭' },
 ]
 
 function withBasePath(href: string) {
@@ -31,7 +32,7 @@ function BottomNavInner() {
     : null
 
   const buildHref = (href: string) => {
-    if (href === '/home') return withBasePath(href)
+    if (href === '/home' || href === '/tracks') return withBasePath(href)
     const params = new URLSearchParams()
     if (activeMode) params.set('mode', activeMode)
     if (activeMode === 'math' && lang === 'es') params.set('lang', 'es')
