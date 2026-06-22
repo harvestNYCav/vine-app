@@ -5,6 +5,7 @@ import LogoutButton from '../LogoutButton'
 import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
 import { redirect } from 'next/navigation'
 import { localDateKey } from '@/lib/dates'
+import HomeGreeting from './HomeGreeting'
 
 function getStreak(activityLog: Array<{ date: string }>): number {
   if (!activityLog.length) return 0
@@ -73,15 +74,12 @@ export default async function HomePage() {
     taught: 'bg-emerald-100 border-emerald-400',
   }
 
-  const hour = new Date().getHours()
-  const greeting = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening'
-
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex justify-between items-start mb-6">
         <div>
-          <p className="text-gray-500 text-sm">{greeting}</p>
+          <HomeGreeting />
           <h1 className="text-2xl font-bold text-green-800">{session!.name} 👋</h1>
         </div>
         <div className="flex items-center gap-2">
