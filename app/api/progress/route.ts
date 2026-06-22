@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { localDateKey } from '@/lib/dates'
+import { getModule } from '@/content/modules'
+import { getStudentTracks } from '@/lib/tracks'
 
 export async function GET() {
   const session = await getSession()
@@ -25,15 +27,33 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   const session = await getSession()
-  if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (!session || session.role !== 'student') return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-  const body = await req.json()
+  let body: { type?: unknown; data?: unknown }
+  try {
+    body = await req.json()
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
+  }
   const { type, data } = body
   const db = await getDb()
   const today = localDateKey()
 
   if (type === 'vocab_viewed') {
-    const { moduleSlug } = data
+    if (!data || typeof data !== 'object') {
+      return NextResponse.json({ error: 'Invalid data' }, { status: 400 })
+    }
+    const { moduleSlug } = data as { moduleSlug?: unknown }
+    if (typeof moduleSlug !== 'string') {
+      return NextResponse.json({ error: 'Invalid module' }, { status: 400 })
+    }
+    const mod = getModule(moduleSlug)
+    if (!mod) return NextResponse.json({ error: 'Module not found' }, { status: 404 })
+    const tracks = await getStudentTracks(db, session.userId)
+    if (!tracks.includes(mod.track)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+    }
+
     await db.execute({
       sql: `
         INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count)
@@ -53,7 +73,44 @@ export async function POST(req: NextRequest) {
   }
 
   if (type === 'practice_completed') {
-    const { moduleSlug, score, wordResults } = data
+    if (!data || typeof data !== 'object') {
+      return NextResponse.json({ error: 'Invalid data' }, { status: 400 })
+    }
+    const { moduleSlug, answers } = data as { moduleSlug?: unknown; answers?: unknown }
+    if (typeof moduleSlug !== 'string' || !Array.isArray(answers)) {
+      return NextResponse.json({ error: 'Invalid practice results' }, { status: 400 })
+    }
+    const mod = getModule(moduleSlug)
+    if (!mod) return NextResponse.json({ error: 'Module not found' }, { status: 404 })
+    const tracks = await getStudentTracks(db, session.userId)
+    if (!tracks.includes(mod.track)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+    }
+
+    const answerByQuestionId = new Map(
+      answers
+        .filter((item): item is { questionId: string; answer: unknown } =>
+          !!item &&
+          typeof item === 'object' &&
+          typeof (item as { questionId?: unknown }).questionId === 'string' &&
+          'answer' in item
+        )
+        .map(item => [item.questionId, item.answer])
+    )
+    if (answerByQuestionId.size !== mod.quiz.length) {
+      return NextResponse.json({ error: 'Every quiz question must be answered' }, { status: 400 })
+    }
+
+    const graded = mod.quiz.map(question => ({
+      questionId: question.id,
+      correct: String(answerByQuestionId.get(question.id) ?? '') === question.answer,
+    }))
+    const score = Math.round((graded.filter(result => result.correct).length / mod.quiz.length) * 100)
+    const wordResults = mod.vocab.slice(0, mod.quiz.length).map((vocab, index) => ({
+      wordId: `${mod.slug}:${vocab.id}`,
+      correct: graded[index]?.correct ?? false,
+    }))
+
     await db.execute({
       sql: `
         INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count)
@@ -96,6 +153,10 @@ export async function POST(req: NextRequest) {
         })
       }
     }
+  }
+
+  if (type !== 'vocab_viewed' && type !== 'practice_completed') {
+    return NextResponse.json({ error: 'Invalid progress type' }, { status: 400 })
   }
 
   return NextResponse.json({ ok: true })
