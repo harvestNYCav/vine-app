@@ -1,4 +1,6 @@
 import type { Client } from '@libsql/client'
+import bcrypt from 'bcryptjs'
+import { randomUUID } from 'crypto'
 import { normalizeEmail } from './email-verification'
 
 export const DEFAULT_ADMIN_EMAIL_ALLOWLIST = [
@@ -8,6 +10,13 @@ export const DEFAULT_ADMIN_EMAIL_ALLOWLIST = [
   'shichengrao@gmail.com',
   'VineAdmin@harvest-nyc.com',
   'aldowiloto@gmail.com',
+]
+
+const TEST_ACCOUNT_PIN = '1234'
+const TEST_STUDENTS = [
+  { name: 'TestStudentELA', track: 'ela' },
+  { name: 'TestStudentESL', track: 'esl' },
+  { name: 'TestStudentMath', track: 'math' },
 ]
 
 export async function seedDefaultAdminAllowlist(db: Client, createdBy = 'system'): Promise<void> {
@@ -22,6 +31,28 @@ export async function seedDefaultAdminAllowlist(db: Client, createdBy = 'system'
     `,
     args: [normalizeEmail(email), createdBy, now],
   })))
+}
+
+async function seedTestAccounts(db: Client): Promise<void> {
+  const now = Date.now()
+  const pinHash = await bcrypt.hash(TEST_ACCOUNT_PIN, 10)
+  const tutorId = randomUUID()
+  const studentRows = TEST_STUDENTS.map(student => ({ ...student, id: randomUUID() }))
+
+  await db.batch([
+    {
+      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+      args: [tutorId, 'TestTutor', pinHash, 'tutor', now, now],
+    },
+    ...studentRows.map(student => ({
+      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+      args: [student.id, student.name, pinHash, 'student', now, now],
+    })),
+    ...studentRows.map(student => ({
+      sql: 'INSERT INTO user_tracks (user_id, track, created_at) VALUES (?, ?, ?)',
+      args: [student.id, student.track, now],
+    })),
+  ])
 }
 
 export async function deleteUserProfile(db: Client, userId: string, role: 'student' | 'tutor'): Promise<void> {
@@ -70,4 +101,5 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM users', args: [] },
   ])
   await seedDefaultAdminAllowlist(db)
+  await seedTestAccounts(db)
 }
