@@ -3,10 +3,32 @@ import bcrypt from 'bcryptjs'
 import getDb from '@/lib/db'
 import {
   createVerificationCode,
+  EmailConfigError,
+  EmailDeliveryError,
   isValidEmail,
   normalizeEmail,
   sendAdminVerificationEmail,
 } from '@/lib/email-verification'
+
+function summarizeEmailDeliveryError(error: EmailDeliveryError): string {
+  const details = error.details
+  const resendMessage =
+    details && typeof details === 'object' && 'message' in details
+      ? String((details as { message?: unknown }).message ?? '')
+      : typeof details === 'string'
+        ? details
+        : ''
+
+  if (/domain|sender|from/i.test(resendMessage)) {
+    return `${resendMessage} Check that ADMIN_EMAIL_FROM uses a verified Resend sender.`
+  }
+
+  if (/api key|authorization|permission/i.test(resendMessage)) {
+    return `${resendMessage} Check the RESEND_API_KEY value in Vercel.`
+  }
+
+  return resendMessage || 'Resend rejected the verification email. Check the Vercel function logs for details.'
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -77,12 +99,20 @@ export async function POST(req: NextRequest) {
     const delivery = await sendAdminVerificationEmail(normalizedEmail, code)
     return NextResponse.json({ ok: true, ...delivery })
   } catch (error) {
-    const message = error instanceof Error ? error.message : ''
-    if (message === 'Email delivery is not configured') {
-      return NextResponse.json({
-        error: 'Admin email delivery is not configured. Set RESEND_API_KEY in production to send verification codes.',
-      }, { status: 500 })
+    if (error instanceof EmailConfigError) {
+      return NextResponse.json({ error: error.message }, { status: 500 })
     }
+
+    if (error instanceof EmailDeliveryError) {
+      console.error('Admin email delivery failed:', {
+        status: error.status,
+        details: error.details,
+      })
+      return NextResponse.json({
+        error: summarizeEmailDeliveryError(error),
+      }, { status: 502 })
+    }
+
     console.error('Admin email verification failed:', error)
     return NextResponse.json({ error: 'Could not send verification email. Please try again or contact an admin.' }, { status: 500 })
   }
