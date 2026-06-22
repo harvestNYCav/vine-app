@@ -1,4 +1,5 @@
 import { createClient, type Client } from '@libsql/client'
+import { seedDefaultAdminAllowlistIfEmpty } from './admin-allowlist'
 
 let client: Client | null = null
 let initialized = false
@@ -154,6 +155,7 @@ async function initSchema(db: Client): Promise<void> {
       current_skill TEXT NOT NULL DEFAULT ''
     );
   `)
+  await seedDefaultAdminAllowlistIfEmpty(db)
 }
 
 export default getDb
