@@ -4,6 +4,7 @@ export class EmailConfigError extends Error {
   constructor(message: string) {
     super(message)
     this.name = 'EmailConfigError'
+    Object.setPrototypeOf(this, EmailConfigError.prototype)
   }
 }
 
@@ -16,7 +17,24 @@ export class EmailDeliveryError extends Error {
     this.name = 'EmailDeliveryError'
     this.status = status
     this.details = details
+    Object.setPrototypeOf(this, EmailDeliveryError.prototype)
   }
+}
+
+export function isEmailConfigError(error: unknown): error is EmailConfigError {
+  return error instanceof EmailConfigError || (error instanceof Error && error.name === 'EmailConfigError')
+}
+
+export function isEmailDeliveryError(error: unknown): error is EmailDeliveryError {
+  return (
+    error instanceof EmailDeliveryError ||
+    (
+      error instanceof Error &&
+      error.name === 'EmailDeliveryError' &&
+      'status' in error &&
+      'details' in error
+    )
+  )
 }
 
 export function normalizeEmail(email: unknown): string {
@@ -50,19 +68,28 @@ export async function sendAdminVerificationEmail(email: string, code: string): P
     }
   }
 
-  const response = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      from: from || 'Vine <onboarding@resend.dev>',
-      to: [email],
-      subject: 'Your Vine admin verification code',
-      text: `Your Vine admin verification code is ${code}. It expires in 10 minutes.`,
-    }),
-  })
+  let response: Response
+  try {
+    response = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: from || 'Vine <onboarding@resend.dev>',
+        to: [email],
+        subject: 'Your Vine admin verification code',
+        text: `Your Vine admin verification code is ${code}. It expires in 10 minutes.`,
+      }),
+    })
+  } catch (error) {
+    throw new EmailDeliveryError(
+      'Could not reach the Resend API.',
+      0,
+      error instanceof Error ? error.message : String(error)
+    )
+  }
 
   if (!response.ok) {
     const bodyText = await response.text()
