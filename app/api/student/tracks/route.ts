@@ -20,7 +20,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const { tracks: rawTracks } = await req.json()
+  const { tracks: rawTracks, studentId } = await req.json()
+  if (typeof studentId === 'string' && studentId !== session.userId) {
+    return NextResponse.json({ error: 'Students can only change their own tracks' }, { status: 403 })
+  }
+
   const tracks = normalizeTracks(rawTracks)
   if (tracks.length === 0) {
     return NextResponse.json({ error: 'Choose at least one track' }, { status: 400 })

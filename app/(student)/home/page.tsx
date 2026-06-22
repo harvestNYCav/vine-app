@@ -107,6 +107,18 @@ export default async function HomePage() {
         </div>
       </div>
 
+      <a href="/vine-app/tracks" className="block mb-4">
+        <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
+          <div>
+            <p className="text-xs uppercase text-gray-400 font-semibold">Tracks</p>
+            <p className="text-sm font-semibold text-gray-800 mt-1">
+              {tracks.map(track => track.toUpperCase()).join(' · ')}
+            </p>
+          </div>
+          <span className="text-gray-300 text-lg">→</span>
+        </div>
+      </a>
+
       {/* Math Practice Banner */}
       {hasMath && (
         <a href="/vine-app/practice?mode=math" className="block mb-4">
