@@ -93,7 +93,7 @@ export default function AdminDangerZoneControls({ profiles }: { profiles: Profil
 
         <div className="rounded-lg border border-red-200 p-3">
           <p className="text-sm font-semibold text-slate-800">Full database reset</p>
-          <p className="mt-1 text-xs text-slate-500">Deletes every user and all progress, then restores the default admin email allowlist.</p>
+          <p className="mt-1 text-xs text-slate-500">Deletes every user and all progress, then restores the default admin email allowlist and test accounts.</p>
           <button
             type="button"
             onClick={() => {
@@ -135,7 +135,9 @@ export default function AdminDangerZoneControls({ profiles }: { profiles: Profil
       {resetOpen && (
         <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-4">
           <p className="font-semibold text-red-800">Reset the entire database?</p>
-          <p className="mt-1 text-sm text-red-700">This deletes all admins, tutors, students, progress, attendance, sessions, and verification codes.</p>
+          <p className="mt-1 text-sm text-red-700">
+            This deletes all admins, tutors, students, progress, attendance, sessions, and verification codes. It then creates TestStudentELA, TestStudentESL, TestStudentMath, and TestTutor with PIN 1234.
+          </p>
           <label className="mt-3 block text-xs font-semibold text-red-800">
             Type RESET to confirm
             <input
