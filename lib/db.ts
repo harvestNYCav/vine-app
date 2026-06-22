@@ -155,7 +155,16 @@ async function initSchema(db: Client): Promise<void> {
       current_skill TEXT NOT NULL DEFAULT ''
     );
   `)
+  await ensureColumn(db, 'users', 'email', 'TEXT')
   await seedDefaultAdminAllowlistIfEmpty(db)
+}
+
+async function ensureColumn(db: Client, table: string, column: string, definition: string): Promise<void> {
+  const result = await db.execute({ sql: `PRAGMA table_info(${table})`, args: [] })
+  const hasColumn = result.rows.some(row => String(row.name) === column)
+  if (!hasColumn) {
+    await db.execute({ sql: `ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`, args: [] })
+  }
 }
 
 export default getDb
