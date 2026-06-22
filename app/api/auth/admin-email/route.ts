@@ -87,6 +87,16 @@ export async function POST(req: NextRequest) {
       }
     } else if (admin.email && String(admin.email).toLowerCase() !== normalizedEmail) {
       return NextResponse.json({ error: 'Email does not match this admin account' }, { status: 401 })
+    } else if (!admin.email) {
+      const allowlistResult = await db.execute({
+        sql: 'SELECT email FROM admin_email_allowlist WHERE email = ?',
+        args: [normalizedEmail],
+      })
+      if (!allowlistResult.rows[0]) {
+        return NextResponse.json({
+          error: 'This email is not approved for admin signup. Ask an existing admin to approve it first.',
+        }, { status: 403 })
+      }
     }
 
     const code = createVerificationCode()
