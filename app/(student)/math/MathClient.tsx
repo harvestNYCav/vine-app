@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 import {
   SKILLS, MathProblem, MistakeType, OP_SYM,
-  generateProblem, classifyMistake, updateMastery,
-  getSkillByTag, getNextSkill, selectNextProblem,
+  classifyMistake, updateMastery,
+  getSkillByTag, getNextSkill,
   getSkillLabel, MASTERY_THRESHOLD, MIN_ATTEMPTS,
 } from '@/lib/math'
 
@@ -12,6 +12,8 @@ type Screen = 'home' | 'diag-intro' | 'problem' | 'results' | 'skill-selector' |
 type SessionType = 'diagnostic' | 'practice_5' | 'practice_10' | 'flat_10' | 'flat_25' | 'custom'
 
 interface Attempt {
+  problemId: string
+  userAnswer: number
   isCorrect: boolean
   skill_tag: string
   mistakeType: MistakeType | null
@@ -136,9 +138,12 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   const sessionDurationRef = useRef(0)
   const questionTargetRef = useRef(0)
   const mistakeQueueRef = useRef<Array<{ skill_tag: string }>>([])
-  const recentOperandsRef = useRef<string[]>([])
   const pinnedTagsRef = useRef<string[] | null>(null)
   const customQCountRef = useRef(10)
+  const mathAttemptIdRef = useRef<string | null>(null)
+  const plannedProblemsRef = useRef<MathProblem[]>([])
+  const plannedProblemIndexRef = useRef(0)
+  const finishStartedRef = useRef(false)
 
   const diagSkillIndexRef = useRef(0)
   const diagTierRef = useRef<boolean[]>([])
@@ -159,7 +164,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       didAutoStart.current = true
       pinnedTagsRef.current = [initialSkillFocus]
       setSelectedSkills([initialSkillFocus])
-      startPractice('custom')
+      void startPractice('custom')
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -186,28 +191,86 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     setStatsDisplay({ total, correct, rightLabel })
   }
 
-  async function persistProgress() {
-    await fetch('/vine-app/api/math/progress', {
+  async function beginMathAttempt(type: SessionType): Promise<boolean> {
+    try {
+      const res = await fetch('/vine-app/api/math/attempt', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'start',
+          sessionType: type,
+          currentSkill: currentSkillRef.current,
+          skillMastery: masteryRef.current,
+          skillAttemptCounts: skillCountsRef.current,
+          selectedSkills: pinnedTagsRef.current,
+          customCount: customQCountRef.current,
+        }),
+      })
+      if (!res.ok) throw new Error(`Attempt start failed: ${res.status}`)
+      const data = await res.json() as {
+        attemptId: string
+        startedAt: number
+        problems: MathProblem[]
+      }
+      mathAttemptIdRef.current = data.attemptId
+      plannedProblemsRef.current = data.problems
+      plannedProblemIndexRef.current = 0
+      sessionStartRef.current = data.startedAt
+      finishStartedRef.current = false
+      return true
+    } catch (err) {
+      console.warn('Failed to start math attempt:', err)
+      return false
+    }
+  }
+
+  async function finishMathAttempt(localRecord: MathSessionRecord) {
+    const attemptId = mathAttemptIdRef.current
+    if (!attemptId) return
+
+    try {
+      const res = await fetch('/vine-app/api/math/attempt', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        skill_mastery: masteryRef.current,
-        current_skill: currentSkillRef.current,
-        diagnostic_done: diagDoneRef.current,
-        total_problems: totalProblemsRef.current,
-        total_correct: totalCorrectRef.current,
-        mistake_profile: mistakeProfileRef.current,
-        skill_attempt_counts: skillCountsRef.current,
+        action: 'finish',
+        attemptId,
+        answers: sessionProblemsRef.current.map(problem => ({
+          problemId: problem.problemId,
+          answer: problem.userAnswer,
+        })),
       }),
-    }).catch(err => console.warn('Failed to save math progress:', err))
-  }
+      })
+      if (!res.ok) throw new Error(`Attempt finish failed: ${res.status}`)
 
-  async function persistSession(record: MathSessionRecord) {
-    await fetch('/vine-app/api/math/session', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(record),
-    }).catch(err => console.warn('Failed to save math session:', err))
+      const data = await res.json() as {
+        record: MathSessionRecord
+        progress: InitialProgress
+      }
+      masteryRef.current = data.progress.skill_mastery
+      currentSkillRef.current = data.progress.current_skill
+      diagDoneRef.current = data.progress.diagnostic_done
+      totalProblemsRef.current = data.progress.total_problems
+      totalCorrectRef.current = data.progress.total_correct
+      mistakeProfileRef.current = data.progress.mistake_profile
+      skillCountsRef.current = data.progress.skill_attempt_counts
+
+      const currentSkill = data.record.current_skill || currentSkillRef.current
+      const mastery = currentSkill ? (masteryRef.current[currentSkill] ?? 0) : 0
+      setHistoryList(prev => [data.record, ...prev.filter(record => record.id !== data.record.id)])
+      setResultData({
+        total: data.record.total_problems,
+        correct: data.record.correct,
+        accuracy: data.record.accuracy,
+        isDiagnostic: data.record.session_type === 'diagnostic',
+        sessionType: data.record.session_type as SessionType,
+        currentSkill,
+        mastery,
+      })
+    } catch (err) {
+      console.warn('Failed to finish math attempt:', err)
+      setHistoryList(prev => [localRecord, ...prev])
+    }
   }
 
   async function loadLeaderboard(type: SessionType) {
@@ -223,6 +286,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
 
   // ── session end ────────────────────────────────────────────────────────
   function endSession() {
+    if (finishStartedRef.current) return
+    finishStartedRef.current = true
     clearTimers()
     const problems = sessionProblemsRef.current
     const total = problems.length
@@ -247,8 +312,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     setResultData({ total, correct, accuracy, isDiagnostic: type === 'diagnostic', sessionType: type, currentSkill, mastery })
     setScreen('results')
 
-    persistSession(record)
-    persistProgress()
+    void finishMathAttempt(record)
   }
 
   // ── problem loading ────────────────────────────────────────────────────
@@ -259,23 +323,12 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     if (answerInputRef.current) answerInputRef.current.value = ''
 
     const type = sessionTypeRef.current
-    let problem: MathProblem
-    if (type === 'diagnostic') {
-      problem = generateProblem(SKILLS[diagSkillIndexRef.current], recentOperandsRef.current)
-    } else {
-      problem = selectNextProblem(
-        currentSkillRef.current || SKILLS[0].tag,
-        masteryRef.current,
-        mistakeQueueRef.current,
-        recentOperandsRef.current,
-        pinnedTagsRef.current,
-      )
+    const problem = plannedProblemsRef.current[plannedProblemIndexRef.current]
+    if (!problem) {
+      endSession()
+      return
     }
-
-    recentOperandsRef.current = [
-      ...recentOperandsRef.current.slice(-19),
-      `${problem.operands[0]},${problem.operands[1]}`,
-    ]
+    plannedProblemIndexRef.current += 1
     currentProblemRef.current = problem
     setCurrentProblem(problem)
     updateStatsDisplay(sessionProblemsRef.current, type)
@@ -326,7 +379,13 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     const isCorrect = userAnswer === problem.answer
     const mistakeType = isCorrect ? null : classifyMistake(problem, userAnswer)
 
-    sessionProblemsRef.current = [...sessionProblemsRef.current, { isCorrect, skill_tag: problem.skill_tag, mistakeType }]
+    sessionProblemsRef.current = [...sessionProblemsRef.current, {
+      problemId: problem.id,
+      userAnswer,
+      isCorrect,
+      skill_tag: problem.skill_tag,
+      mistakeType,
+    }]
     totalProblemsRef.current++
     if (isCorrect) totalCorrectRef.current++
 
@@ -404,7 +463,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   }
 
   // ── session starters ──────────────────────────────────────────────────
-  function startDiagnostic() {
+  async function startDiagnostic() {
     clearTimers()
     sessionTypeRef.current = 'diagnostic'
     lastSessionTypeRef.current = 'diagnostic'
@@ -416,14 +475,15 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     sessionDurationRef.current = 15 * 60 * 1000
     questionTargetRef.current = 0
     mistakeQueueRef.current = []
-    recentOperandsRef.current = []
     pinnedTagsRef.current = null
+    const started = await beginMathAttempt('diagnostic')
+    if (!started) return
     setTimerWidth(0)
     setScreen('problem')
     advanceToNextProblem()
   }
 
-  function startPractice(type: SessionType) {
+  async function startPractice(type: SessionType) {
     clearTimers()
     sessionTypeRef.current = type
     lastSessionTypeRef.current = type
@@ -437,7 +497,6 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       type === 'flat_25' ? 25 :
       type === 'custom' ? customQCountRef.current : 0
     mistakeQueueRef.current = []
-    recentOperandsRef.current = []
     if (type !== 'custom') pinnedTagsRef.current = null
 
     const tag = currentSkillRef.current
@@ -454,6 +513,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       }
     }
 
+    const started = await beginMathAttempt(type)
+    if (!started) return
     setTimerWidth(type === 'diagnostic' || isCountMode(type) ? 0 : 100)
     setScreen('problem')
     advanceToNextProblem()
@@ -462,7 +523,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   function startCustomSession() {
     if (selectedSkills.length === 0) return
     pinnedTagsRef.current = selectedSkills
-    startPractice('custom')
+    void startPractice('custom')
   }
 
   function goHome() {
@@ -508,7 +569,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       </ul>
       <div className="flex gap-3 mt-8">
         <button onClick={goHome} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">{isSpanish ? 'Volver' : 'Back'}</button>
-        <button onClick={startDiagnostic} className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl">{isSpanish ? 'Empezar' : 'Begin'}</button>
+        <button onClick={() => void startDiagnostic()} className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl">{isSpanish ? 'Empezar' : 'Begin'}</button>
       </div>
     </div>
   )
@@ -625,9 +686,9 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
           <button onClick={goHome} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">{isSpanish ? 'Inicio' : 'Home'}</button>
           <button
             onClick={() => {
-              if (isDiagnostic) startPractice('practice_5')
-              else if (sessionType === 'custom') startPractice('custom')
-              else startPractice(lastType || 'practice_5')
+              if (isDiagnostic) void startPractice('practice_5')
+              else if (sessionType === 'custom') void startPractice('custom')
+              else void startPractice(lastType || 'practice_5')
             }}
             className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl active:scale-95 transition-transform"
           >
@@ -834,7 +895,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{isSpanish ? 'Con tiempo' : 'Timed'}</p>
             <div className="flex gap-2">
               {(['practice_5', 'practice_10'] as SessionType[]).map(t => (
-                <button key={t} onClick={() => startPractice(t)} className="flex-1 bg-green-700 text-white font-semibold py-3.5 rounded-2xl active:scale-95 transition-transform">
+                <button key={t} onClick={() => void startPractice(t)} className="flex-1 bg-green-700 text-white font-semibold py-3.5 rounded-2xl active:scale-95 transition-transform">
                   {(isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[t]}
                 </button>
               ))}
@@ -846,7 +907,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{isSpanish ? 'Preguntas' : 'Questions'}</p>
             <div className="flex gap-2">
               {(['flat_10', 'flat_25'] as SessionType[]).map(t => (
-                <button key={t} onClick={() => startPractice(t)} className="flex-1 bg-green-700 text-white font-semibold py-3.5 rounded-2xl active:scale-95 transition-transform">
+                <button key={t} onClick={() => void startPractice(t)} className="flex-1 bg-green-700 text-white font-semibold py-3.5 rounded-2xl active:scale-95 transition-transform">
                   {(isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[t]}
                 </button>
               ))}

@@ -12,7 +12,7 @@ export default function QuizClient({ mod }: Props) {
   const router = useRouter()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState<string | null>(null)
-  const [results, setResults] = useState<Array<{ questionId: string; correct: boolean }>>([])
+  const [results, setResults] = useState<Array<{ questionId: string; answer: string; correct: boolean }>>([])
   const [done, setDone] = useState(false)
   const [saving, setSaving] = useState(false)
 
@@ -26,31 +26,30 @@ export default function QuizClient({ mod }: Props) {
   }
 
   const handleNext = async () => {
-    const newResults = [...results, { questionId: question.id, correct: selected === question.answer }]
+    if (selected === null) return
+    const newResults = [...results, { questionId: question.id, answer: selected, correct: selected === question.answer }]
     setResults(newResults)
 
     if (currentIndex + 1 >= mod.quiz.length) {
       // Quiz complete
       setSaving(true)
-      const score = Math.round((newResults.filter(r => r.correct).length / mod.quiz.length) * 100)
+      setDone(true)
 
-      // Map quiz results to vocab word IDs
-      const wordResults = mod.vocab.slice(0, mod.quiz.length).map((v, i) => ({
-        wordId: `${mod.slug}:${v.id}`,
-        correct: newResults[i]?.correct ?? false,
-      }))
-
-      await fetch('/vine-app/api/progress', {
+      fetch('/vine-app/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'practice_completed',
-          data: { moduleSlug: mod.slug, score, wordResults },
+          data: {
+            moduleSlug: mod.slug,
+            answers: newResults.map(result => ({
+              questionId: result.questionId,
+              answer: result.answer,
+            })),
+          },
         }),
-      })
-
-      setSaving(false)
-      setDone(true)
+      }).catch(err => console.warn('Failed to save quiz progress:', err))
+        .finally(() => setSaving(false))
     } else {
       setCurrentIndex(prev => prev + 1)
       setSelected(null)
