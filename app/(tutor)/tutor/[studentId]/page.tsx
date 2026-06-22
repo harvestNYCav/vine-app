@@ -3,6 +3,7 @@ import getDb from '@/lib/db'
 import { notFound } from 'next/navigation'
 import { ALL_MODULES } from '@/content/modules'
 import { SKILLS } from '@/lib/math'
+import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
 import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
 
@@ -26,7 +27,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
   const student = { id: rawStudent.id as string, name: rawStudent.name as string, last_active: rawStudent.last_active as number }
 
-  const [mpResult, vpResult, tsResult, laResult, mathResult, mathSessionResult] = await Promise.all([
+  const [tracks, mpResult, vpResult, tsResult, laResult, mathResult, mathSessionResult] = await Promise.all([
+    getStudentTracks(db, studentId),
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 5', args: [studentId] }),
@@ -46,6 +48,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const lastActivity = laResult.rows[0] as unknown as { date: string } | undefined
   const mathRow = mathResult.rows[0]
   const mathSessionCounts = mathSessionResult.rows as unknown as MathSessionCountRow[]
+  const visibleModules = filterModulesByTracks(ALL_MODULES, tracks)
+  const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
 
   const mathMastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
   const mathCounts: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_attempt_counts as string) : {}
@@ -54,12 +58,12 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const mathCurrentSkill = mathRow?.current_skill as string | null ?? null
   const mathDiagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
 
-  const completedModules = moduleProgress.filter(m => m.practice_completed_at).map(m => {
+  const completedModules = moduleProgress.filter(m => m.practice_completed_at && visibleModuleSlugs.has(m.module_slug)).map(m => {
     const mod = ALL_MODULES.find(mm => mm.slug === m.module_slug)
     return mod?.titleEn || m.module_slug
   })
 
-  const teachTopics = teachingSessions.map(s => {
+  const teachTopics = teachingSessions.filter(s => visibleModuleSlugs.has(s.module_slug)).map(s => {
     const mod = ALL_MODULES.find(mm => mm.slug === s.module_slug)
     return mod?.titleEn || s.module_slug
   })
@@ -68,6 +72,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
   const strugglingWords = vocabProgress.flatMap(row => {
     const mod = ALL_MODULES.find(m => m.slug === row.module_slug)
+    if (!mod || !visibleModuleSlugs.has(mod.slug)) return []
     const vocab = mod?.vocab.find(v => `${row.module_slug}:${v.id}` === row.word_id)
     if (!vocab) return []
     return [{ ...vocab, correctCount: Number(row.correct_count), incorrectCount: Number(row.incorrect_count) }]
@@ -111,7 +116,11 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       <div className="mb-6">
         <h3 className="font-bold text-gray-700 mb-3">Lessons / Lecciones</h3>
         <div className="space-y-2">
-          {ALL_MODULES.map(mod => {
+          {visibleModules.length === 0 ? (
+            <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 text-center">
+              <p className="text-sm text-gray-400">No English lessons assigned</p>
+            </div>
+          ) : visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
             const steps = [!!p?.vocab_viewed_at, !!p?.practice_completed_at, (p?.teach_session_count ?? 0) > 0]
             const completed = steps.filter(Boolean).length
