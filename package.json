@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
     "test": "node --test tests/smoke.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "node -e \"require('fs').rmSync('.next/dev',{recursive:true,force:true})\" && tsc --noEmit"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
