@@ -55,3 +55,13 @@ dist/
 build/
 coverage/
 .turbo/
+
+# Local maintainer metadata
+.vscode/
+.settings/
+*.iml
+.classpath
+.project
+.claude/
+credentials/
+tokens/
