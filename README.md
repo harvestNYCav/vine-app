@@ -36,3 +36,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 =======
 vine-app
+
+
+## Maintenance
+
+- `docs/MAINTENANCE_AUDIT.md` records the current audit status, verification commands, and backlog.
+- `docs/ARCHITECTURE.md` maps the maintainer-facing project structure when present.
+- `docs/DEPENDENCIES.md` records dependency update guidance when present.
