@@ -42,3 +42,16 @@ next-env.d.ts
 
 # vine app data
 /data/
+
+# RepoHealthChecker maintenance
+.env
+.env.*
+!.env.example
+.idea/
+node_modules/
+.next/
+.nuxt/
+dist/
+build/
+coverage/
+.turbo/
