@@ -18,7 +18,7 @@ export default async function TutorLayout({ children }: { children: React.ReactN
           <p className="text-amber-100 text-xs">Tutor: {session.name}</p>
         </div>
         <nav className="flex items-center gap-3">
-          <Link href="/tutor/session" className="text-amber-200 text-xs hover:text-white">Session</Link>
+          <Link href="/tutor/lessons" className="text-amber-200 text-xs hover:text-white">Lessons</Link>
           <Link href="/tutor/cohort" className="text-amber-200 text-xs hover:text-white">Cohort</Link>
           <TutorLogoutButton />
         </nav>

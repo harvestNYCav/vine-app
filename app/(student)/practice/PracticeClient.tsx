@@ -80,7 +80,6 @@ export default function PracticeClient({ cards }: Props) {
         {!flipped ? (
           <>
             <p className="text-3xl font-bold mb-2">{card.en}</p>
-            <p className="text-gray-400 text-sm">{card.pronunciation}</p>
             <p className="text-gray-300 text-xs mt-4">Tap to flip</p>
           </>
         ) : (

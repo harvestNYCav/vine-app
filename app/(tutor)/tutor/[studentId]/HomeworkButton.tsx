@@ -2,13 +2,17 @@
 
 import { useState } from 'react'
 
-export default function HomeworkButton({ initialAssigned }: { initialAssigned: boolean }) {
+export default function HomeworkButton({ studentId, initialAssigned }: { studentId: string; initialAssigned: boolean }) {
   const [assigned, setAssigned] = useState(initialAssigned)
   const [loading, setLoading] = useState(false)
 
   async function handleClick() {
     setLoading(true)
-    await fetch('/vine-app/api/tutor/session/homework', { method: 'POST' })
+    await fetch('/vine-app/api/tutor/session/homework', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ studentId }),
+    })
     setAssigned(true)
     setLoading(false)
   }

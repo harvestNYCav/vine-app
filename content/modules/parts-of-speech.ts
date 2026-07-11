@@ -13,7 +13,6 @@ const module: Module = {
       id: 'noun',
       en: 'noun',
       es: 'sustantivo',
-      pronunciation: 'nown',
       exampleEn: 'A noun names a person, place, thing, or idea.',
       exampleEs: 'Un sustantivo nombra una persona, lugar, cosa o idea.',
     },
@@ -21,7 +20,6 @@ const module: Module = {
       id: 'verb',
       en: 'verb',
       es: 'verbo',
-      pronunciation: 'vurb',
       exampleEn: 'A verb shows action or being.',
       exampleEs: 'Un verbo muestra acción o estado.',
     },
@@ -29,7 +27,6 @@ const module: Module = {
       id: 'adjective',
       en: 'adjective',
       es: 'adjetivo',
-      pronunciation: 'AJ-ik-tiv',
       exampleEn: 'An adjective describes a noun.',
       exampleEs: 'Un adjetivo describe un sustantivo.',
     },
@@ -37,7 +34,6 @@ const module: Module = {
       id: 'adverb',
       en: 'adverb',
       es: 'adverbio',
-      pronunciation: 'AD-vurb',
       exampleEn: 'An adverb describes a verb, often telling how.',
       exampleEs: 'Un adverbio describe un verbo, muchas veces diciendo cómo.',
     },
@@ -45,7 +41,6 @@ const module: Module = {
       id: 'sentence',
       en: 'sentence',
       es: 'oración',
-      pronunciation: 'SEN-tens',
       exampleEn: 'A sentence shares a complete thought.',
       exampleEs: 'Una oración comparte una idea completa.',
     },
@@ -84,9 +79,17 @@ const module: Module = {
       options: ['quickly', 'table', 'green', 'teacher'],
     },
   ],
-  teachingScenario: 'You are a student writing sentences for school. You know the words, but you need help naming each part of speech and making the sentence complete.',
-  homeworkUrl: 'https://www.khanacademy.org/humanities/grammar',
-  homeworkLabel: 'Khan Academy Grammar',
+  teachingScenarios: [
+    {
+      label: 'Part 1: Naming parts of speech',
+      text: 'You are a student writing sentences for school. You know the words, but you need help naming each part of speech and making the sentence complete.',
+    },
+  ],
+  worksheet: [
+    { id: 'w1', promptEn: 'A ____ shows action or being.', promptEs: 'Un verbo muestra acción o estado. (A ____ shows action or being.)', answer: 'verb' },
+    { id: 'w2', promptEn: 'A ____ names a person, place, thing, or idea.', promptEs: 'Un sustantivo nombra una persona, lugar, cosa o idea. (A ____ names a person, place, thing, or idea.)', answer: 'noun' },
+    { id: 'w3', promptEn: 'An ____ describes a noun.', promptEs: 'Un adjetivo describe un sustantivo. (An ____ describes a noun.)', answer: 'adjective' },
+  ],
 }
 
 export default module

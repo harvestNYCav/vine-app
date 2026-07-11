@@ -4,6 +4,7 @@ import { getSession } from '@/lib/auth'
 import { localDateKey } from '@/lib/dates'
 import { getModule } from '@/content/modules'
 import { getStudentTracks } from '@/lib/tracks'
+import { getMatchingItems } from '@/lib/worksheet'
 
 export async function GET() {
   const session = await getSession()
@@ -153,6 +154,71 @@ export async function POST(req: NextRequest) {
         })
       }
     }
+  }
+
+  if (type === 'homework_completed') {
+    if (!data || typeof data !== 'object') {
+      return NextResponse.json({ error: 'Invalid data' }, { status: 400 })
+    }
+    const { moduleSlug, matchingAnswers, fillInBlankAnswers } = data as {
+      moduleSlug?: unknown
+      matchingAnswers?: unknown
+      fillInBlankAnswers?: unknown
+    }
+    if (typeof moduleSlug !== 'string' || !Array.isArray(matchingAnswers) || !Array.isArray(fillInBlankAnswers)) {
+      return NextResponse.json({ error: 'Invalid homework results' }, { status: 400 })
+    }
+    const mod = getModule(moduleSlug)
+    if (!mod) return NextResponse.json({ error: 'Module not found' }, { status: 404 })
+    const tracks = await getStudentTracks(db, session.userId)
+    if (!tracks.includes(mod.track)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+    }
+
+    const matchingItems = getMatchingItems(mod)
+    const matchingByVocabId = new Map(
+      matchingAnswers
+        .filter((item): item is { vocabId: string; selectedEs: unknown } =>
+          !!item && typeof item === 'object' && typeof (item as { vocabId?: unknown }).vocabId === 'string'
+        )
+        .map(item => [item.vocabId, item.selectedEs])
+    )
+    const matchingCorrect = matchingItems.filter(
+      vocab => String(matchingByVocabId.get(vocab.id) ?? '') === vocab.es
+    ).length
+
+    const fillInByQuestionId = new Map(
+      fillInBlankAnswers
+        .filter((item): item is { questionId: string; answer: unknown } =>
+          !!item && typeof item === 'object' && typeof (item as { questionId?: unknown }).questionId === 'string'
+        )
+        .map(item => [item.questionId, item.answer])
+    )
+    const fillInBlankCorrect = mod.worksheet.filter(
+      question => String(fillInByQuestionId.get(question.id) ?? '').trim().toLowerCase() === question.answer.trim().toLowerCase()
+    ).length
+
+    const total = matchingItems.length + mod.worksheet.length
+    const score = total > 0 ? Math.round(((matchingCorrect + fillInBlankCorrect) / total) * 100) : 0
+
+    await db.execute({
+      sql: `
+        INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count, homework_completed_at, homework_score)
+        VALUES (?, ?, NULL, NULL, NULL, 0, ?, ?)
+        ON CONFLICT(user_id, module_slug) DO UPDATE SET homework_completed_at = ?, homework_score = ?
+      `,
+      args: [session.userId, moduleSlug, Date.now(), score, Date.now(), score],
+    })
+    await db.execute({
+      sql: `
+        INSERT INTO activity_log (user_id, date, activity_type, count)
+        VALUES (?, ?, 'module', 1)
+        ON CONFLICT(user_id, date, activity_type) DO UPDATE SET count = count + 1
+      `,
+      args: [session.userId, today],
+    })
+
+    return NextResponse.json({ ok: true, score })
   }
 
   if (type !== 'vocab_viewed' && type !== 'practice_completed') {
