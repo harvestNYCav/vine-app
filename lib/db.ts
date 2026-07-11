@@ -164,6 +164,14 @@ async function initSchema(db: Client): Promise<void> {
       finished_at INTEGER,
       problems TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS tutor_notes (
+      id TEXT PRIMARY KEY,
+      student_id TEXT NOT NULL,
+      tutor_id TEXT NOT NULL,
+      body TEXT NOT NULL,
+      created_at INTEGER NOT NULL
+    );
   `)
   await ensureColumn(db, 'users', 'email', 'TEXT')
   await ensureUsersTableSupportsAdminRole(db)

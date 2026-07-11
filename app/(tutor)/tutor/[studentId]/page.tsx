@@ -58,16 +58,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const mathCurrentSkill = mathRow?.current_skill as string | null ?? null
   const mathDiagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
 
-  const completedModules = moduleProgress.filter(m => m.practice_completed_at && visibleModuleSlugs.has(m.module_slug)).map(m => {
-    const mod = ALL_MODULES.find(mm => mm.slug === m.module_slug)
-    return mod?.titleEn || m.module_slug
-  })
-
-  const teachTopics = teachingSessions.filter(s => visibleModuleSlugs.has(s.module_slug)).map(s => {
-    const mod = ALL_MODULES.find(mm => mm.slug === s.module_slug)
-    return mod?.titleEn || s.module_slug
-  })
-
   const daysSince = lastActivity ? Math.floor((Date.now() - new Date(lastActivity.date).getTime()) / 86400000) : null
 
   const strugglingWords = vocabProgress.flatMap(row => {
@@ -97,19 +87,13 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Saturday Prep Note */}
+      {/* Tutor Notes */}
       <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 mb-6">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xl">📋</span>
-          <h3 className="font-bold text-amber-800">Saturday Prep Note</h3>
+          <h3 className="font-bold text-amber-800">Tutor Notes</h3>
         </div>
-        <PrepNoteButton
-          studentName={student.name}
-          modulesCompleted={completedModules}
-          strugglingWords={strugglingWords.map(w => w.en)}
-          teachSessions={teachTopics}
-          daysSinceLastVisit={daysSince}
-        />
+        <PrepNoteButton studentId={studentId} />
       </div>
 
       {/* Module Progress */}
