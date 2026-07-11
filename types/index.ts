@@ -14,7 +14,6 @@ export interface VocabItem {
   id: string
   en: string
   es: string
-  pronunciation: string
   exampleEn: string
   exampleEs: string
 }
@@ -30,6 +29,18 @@ export interface QuizQuestion {
   options?: string[]
 }
 
+export interface TeachingScenario {
+  label: string
+  text: string
+}
+
+export interface FillInBlankItem {
+  id: string
+  promptEn: string
+  promptEs: string
+  answer: string
+}
+
 export interface Module {
   slug: string
   track: Exclude<Track, 'math'>
@@ -40,9 +51,8 @@ export interface Module {
   icon: string
   vocab: VocabItem[]
   quiz: QuizQuestion[]
-  teachingScenario: string
-  homeworkUrl: string
-  homeworkLabel: string
+  teachingScenarios: TeachingScenario[]
+  worksheet: FillInBlankItem[]
 }
 
 export interface VocabProgress {
@@ -63,6 +73,8 @@ export interface ModuleProgress {
   practiceCompletedAt: number | null
   practiceScore: number | null
   teachSessionCount: number
+  homeworkCompletedAt: number | null
+  homeworkScore: number | null
 }
 
 export interface TeachingSession {

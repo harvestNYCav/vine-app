@@ -22,11 +22,11 @@ export default async function CohortPage() {
     db.execute({ sql: 'SELECT * FROM module_progress', args: [] }),
   ])
 
-  type SessionRow = { id: string; date: string; module_slug: string }
+  type SessionRow = { id: string; student_id: string; date: string; module_slug: string }
   type StudentRow = { id: string; name: string }
   type AttendanceRow = { session_date: string; student_id: string; present: number }
   type StrugglingRow = { word_id: string; module_slug: string; user_id: string; correct_count: number; incorrect_count: number }
-  type ModProgressRow = { user_id: string; module_slug: string; practice_completed_at: number | null }
+  type ModProgressRow = { user_id: string; module_slug: string; homework_completed_at: number | null }
 
   const sessions = sessionsResult.rows as unknown as SessionRow[]
   const students = studentsResult.rows as unknown as StudentRow[]
@@ -40,17 +40,25 @@ export default async function CohortPage() {
     attendanceMap.set(`${row.session_date}:${row.student_id}`, Number(row.present) === 1)
   }
 
+  // Each student can be on a different module on the same date, so index sessions
+  // per (student, date) rather than assuming one shared module per date.
+  const uniqueDates = [...new Set(sessions.map(s => s.date))].sort()
+  const sessionByStudentDate = new Map<string, SessionRow>()
+  for (const s of sessions) {
+    sessionByStudentDate.set(`${s.student_id}:${s.date}`, s)
+  }
+
   // Index all module progress per student (including incomplete)
-  const moduleProgressByStudent = new Map<string, Array<{ module_slug: string; practice_completed_at: number | null }>>()
+  const moduleProgressByStudent = new Map<string, Array<{ module_slug: string; homework_completed_at: number | null }>>()
   for (const row of allModuleProgressRows) {
     if (!moduleProgressByStudent.has(row.user_id)) moduleProgressByStudent.set(row.user_id, [])
     moduleProgressByStudent.get(row.user_id)!.push(row)
   }
 
-  // Index completed modules per student (practice_completed_at set)
+  // Index completed modules per student (homework_completed_at set)
   const completedMap = new Map<string, Set<string>>()
   for (const row of allModuleProgressRows) {
-    if (!row.practice_completed_at) continue
+    if (!row.homework_completed_at) continue
     if (!completedMap.has(row.user_id)) completedMap.set(row.user_id, new Set())
     completedMap.get(row.user_id)!.add(row.module_slug)
   }
@@ -77,6 +85,10 @@ export default async function CohortPage() {
 
   const iconMap: Record<string, string> = {
     Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
+    BookOpen: '📚', Pencil: '✏️',
+    Smile: '😊', Tag: '🏷️', Clock: '🕐', Repeat: '🔁', PersonStanding: '🧍', Package: '📦',
+    MousePointer2: '👉', Heart: '❤️', XCircle: '🚫', HelpCircle: '❓', Key: '🔑', Home: '🏠',
+    Calendar: '📅', Utensils: '🍽️', HeartPulse: '🚑',
   }
 
   return (
@@ -85,7 +97,7 @@ export default async function CohortPage() {
         <Link href="/tutor" className="text-gray-400 hover:text-gray-600 text-2xl">←</Link>
         <div>
           <h1 className="text-2xl font-bold text-amber-800">Cohort Overview</h1>
-          <p className="text-gray-500 text-sm">{students.length} students · {sessions.length} sessions recorded</p>
+          <p className="text-gray-500 text-sm">{students.length} students · {sessions.length} student-sessions recorded</p>
         </div>
       </div>
 
@@ -95,7 +107,7 @@ export default async function CohortPage() {
         {sessions.length === 0 ? (
           <div className="bg-amber-50 rounded-xl p-6 text-center text-sm text-amber-700">
             No sessions recorded yet —{' '}
-            <Link href="/tutor/session" className="underline font-medium">start one on the Session Guide page</Link>.
+            <Link href="/tutor/lessons" className="underline font-medium">assign a lesson from the Lesson Library</Link>.
           </div>
         ) : (
           <div className="overflow-x-auto">
@@ -103,27 +115,26 @@ export default async function CohortPage() {
               <thead>
                 <tr>
                   <th className="text-left text-xs text-gray-500 font-medium pb-2 pr-3 min-w-[100px]">Student</th>
-                  {sessions.map(s => {
-                    const mod = getModule(s.module_slug)
-                    return (
-                      <th key={s.date} className="text-center text-xs text-gray-500 font-medium pb-2 px-1 min-w-[56px]">
-                        <div>{s.date.slice(5)}</div>
-                        <div className="text-gray-400 font-normal">{mod?.titleEn.split(' ')[0]}</div>
-                      </th>
-                    )
-                  })}
+                  {uniqueDates.map(date => (
+                    <th key={date} className="text-center text-xs text-gray-500 font-medium pb-2 px-1 min-w-[56px]">
+                      {date.slice(5)}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
                 {students.map(student => (
                   <tr key={student.id} className="border-t border-gray-100">
                     <td className="py-2 pr-3 text-gray-700 font-medium text-sm">{student.name}</td>
-                    {sessions.map(s => {
-                      const present = attendanceMap.get(`${s.date}:${student.id}`) ?? false
+                    {uniqueDates.map(date => {
+                      const s = sessionByStudentDate.get(`${student.id}:${date}`)
+                      const mod = s ? getModule(s.module_slug) : null
+                      const present = attendanceMap.get(`${date}:${student.id}`) ?? false
                       return (
-                        <td key={s.date} className="py-2 px-1 text-center">
+                        <td key={date} className="py-2 px-1 text-center">
+                          <div className="text-[10px] text-gray-400 mb-0.5 truncate max-w-[56px]">{mod?.titleEn.split(' ')[0] ?? '—'}</div>
                           <AttendanceToggle
-                            sessionDate={s.date}
+                            sessionDate={date}
                             studentId={student.id}
                             initialPresent={present}
                           />
@@ -161,7 +172,7 @@ export default async function CohortPage() {
                         <span
                           key={r.module_slug}
                           title={mod.titleEn}
-                          className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${r.practice_completed_at ? 'bg-green-100' : 'bg-gray-100'}`}
+                          className={`w-7 h-7 rounded-full flex items-center justify-center text-sm ${r.homework_completed_at ? 'bg-green-100' : 'bg-gray-100'}`}
                         >
                           {iconMap[mod.icon] ?? '📚'}
                         </span>

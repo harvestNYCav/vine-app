@@ -13,7 +13,6 @@ const module: Module = {
       id: 'main-idea',
       en: 'main idea',
       es: 'idea principal',
-      pronunciation: 'mayn eye-DEE-uh',
       exampleEn: 'The main idea is what the story is mostly about.',
       exampleEs: 'La idea principal es de qué trata principalmente la historia.',
     },
@@ -21,7 +20,6 @@ const module: Module = {
       id: 'detail',
       en: 'detail',
       es: 'detalle',
-      pronunciation: 'DEE-tayl',
       exampleEn: 'A detail tells more about the main idea.',
       exampleEs: 'Un detalle dice más sobre la idea principal.',
     },
@@ -29,7 +27,6 @@ const module: Module = {
       id: 'evidence',
       en: 'evidence',
       es: 'evidencia',
-      pronunciation: 'EH-vuh-dens',
       exampleEn: 'Use evidence from the text to prove your answer.',
       exampleEs: 'Usa evidencia del texto para probar tu respuesta.',
     },
@@ -37,7 +34,6 @@ const module: Module = {
       id: 'summarize',
       en: 'summarize',
       es: 'resumir',
-      pronunciation: 'SUH-muh-ryz',
       exampleEn: 'Summarize the paragraph in one sentence.',
       exampleEs: 'Resume el párrafo en una oración.',
     },
@@ -45,7 +41,6 @@ const module: Module = {
       id: 'paragraph',
       en: 'paragraph',
       es: 'párrafo',
-      pronunciation: 'PAIR-uh-graf',
       exampleEn: 'A paragraph has sentences about one topic.',
       exampleEs: 'Un párrafo tiene oraciones sobre un tema.',
     },
@@ -84,9 +79,17 @@ const module: Module = {
       options: ['tell the most important points briefly', 'copy every sentence', 'guess without reading', 'list only names'],
     },
   ],
-  teachingScenario: 'You are a student reading a short paragraph. You can find facts, but you need help explaining the main idea and choosing evidence that supports it.',
-  homeworkUrl: 'https://www.khanacademy.org/ela/cc-2nd-reading-vocab',
-  homeworkLabel: 'Khan Academy ELA – Reading and vocabulary',
+  teachingScenarios: [
+    {
+      label: 'Part 1: Finding the main idea',
+      text: 'You are a student reading a short paragraph. You can find facts, but you need help explaining the main idea and choosing evidence that supports it.',
+    },
+  ],
+  worksheet: [
+    { id: 'w1', promptEn: 'The ____ idea is what the text is mostly about.', promptEs: 'La idea principal es de qué trata principalmente el texto. (The ____ idea is what the text is mostly about.)', answer: 'main' },
+    { id: 'w2', promptEn: 'Use ____ from the text to prove your answer.', promptEs: 'Usa evidencia del texto para probar tu respuesta. (Use ____ from the text to prove your answer.)', answer: 'evidence' },
+    { id: 'w3', promptEn: 'A ____ has sentences about one topic.', promptEs: 'Un párrafo tiene oraciones sobre un tema. (A ____ has sentences about one topic.)', answer: 'paragraph' },
+  ],
 }
 
 export default module
