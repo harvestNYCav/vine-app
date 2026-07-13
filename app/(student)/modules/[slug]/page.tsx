@@ -92,6 +92,15 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
             </span>
           </button>
         </a>
+
+        <a href={`/vine-app/modules/${slug}/study`} className="block">
+          <button className="w-full bg-purple-600 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-purple-700 active:scale-95 transition-transform">
+            🎯 Study & Play
+            <span className="block text-sm font-normal opacity-80 mt-0.5">
+              Flashcards + matching game
+            </span>
+          </button>
+        </a>
       </div>
     </div>
   )
