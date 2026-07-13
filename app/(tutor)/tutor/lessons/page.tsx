@@ -38,7 +38,9 @@ export default function LessonsLibraryPage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-gray-800 text-sm">{i + 1}. {mod.titleEn}</p>
-                    <p className="text-xs text-gray-400 mt-0.5">{mod.titleEs} · {mod.vocab.length} words</p>
+                    <p className="text-xs text-gray-400 mt-0.5">
+                      {mod.track === 'esl' && `${mod.titleEs} · `}{mod.vocab.length} words
+                    </p>
                   </div>
                   <span className="text-gray-300 text-lg flex-shrink-0">→</span>
                 </div>

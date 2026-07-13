@@ -143,7 +143,7 @@ export default async function PracticePage({
         </div>
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
-      <PracticeClient cards={cards} />
+      <PracticeClient cards={cards} isEsl={currentMode === 'esl'} />
     </div>
   )
 }

@@ -10,6 +10,7 @@ export default async function MatchingGamePage({ params }: { params: Promise<{ s
   const { slug } = await params
   const mod = getModule(slug)
   if (!mod) notFound()
+  if (mod.track !== 'esl') notFound()
 
   const session = await getSession()
   const db = await getDb()

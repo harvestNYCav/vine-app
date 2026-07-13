@@ -13,9 +13,9 @@ export interface User {
 export interface VocabItem {
   id: string
   en: string
-  es: string
+  es?: string
   exampleEn: string
-  exampleEs: string
+  exampleEs?: string
 }
 
 export type QuestionType = 'multiple-choice' | 'fill-in-the-blank'
@@ -24,7 +24,7 @@ export interface QuizQuestion {
   id: string
   type: QuestionType
   promptEn: string
-  promptEs: string
+  promptEs?: string
   answer: string
   options?: string[]
 }
@@ -37,7 +37,7 @@ export interface TeachingScenario {
 export interface FillInBlankItem {
   id: string
   promptEn: string
-  promptEs: string
+  promptEs?: string
   answer: string
 }
 
@@ -45,9 +45,9 @@ export interface Module {
   slug: string
   track: Exclude<Track, 'math'>
   titleEn: string
-  titleEs: string
+  titleEs?: string
   descriptionEn: string
-  descriptionEs: string
+  descriptionEs?: string
   icon: string
   vocab: VocabItem[]
   quiz: QuizQuestion[]

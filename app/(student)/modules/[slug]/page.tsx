@@ -67,7 +67,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
         </div>
         <div>
           <h1 className="text-xl font-bold text-green-800">{mod.titleEn}</h1>
-          <p className="text-sm text-gray-500">{mod.titleEs}</p>
+          {mod.track === 'esl' && <p className="text-sm text-gray-500">{mod.titleEs}</p>}
         </div>
       </div>
 

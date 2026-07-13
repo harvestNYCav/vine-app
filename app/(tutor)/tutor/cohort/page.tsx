@@ -211,7 +211,7 @@ export default async function CohortPage() {
                         <div key={wordId} className="bg-white rounded-lg p-2.5 border border-red-50 flex items-center justify-between gap-3">
                           <div>
                             <span className="text-sm font-medium text-gray-800">{vocab?.en ?? rawId}</span>
-                            {vocab && <span className="text-xs text-gray-400 ml-2">{vocab.es}</span>}
+                            {vocab && mod?.track === 'esl' && <span className="text-xs text-gray-400 ml-2">{vocab.es}</span>}
                           </div>
                           <span className="text-xs text-red-500 flex-shrink-0">
                             {studentCount} student{studentCount !== 1 ? 's' : ''} struggling

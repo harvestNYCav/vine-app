@@ -34,7 +34,7 @@ function resolveDuplicateEsCollisions(rounds: VocabItem[][]): VocabItem[][] {
   for (let r = 0; r < rounds.length; r++) {
     const seen = new Set<string>()
     for (let i = 0; i < rounds[r].length; i++) {
-      const key = normalize(rounds[r][i].es)
+      const key = normalize(rounds[r][i].es ?? '')
       if (!seen.has(key)) {
         seen.add(key)
         continue
@@ -44,13 +44,13 @@ function resolveDuplicateEsCollisions(rounds: VocabItem[][]): VocabItem[][] {
       for (let other = 0; other < rounds.length; other++) {
         if (other === r) continue
         const swapIdx = rounds[other].findIndex(
-          item => !rounds[r].some(ri => normalize(ri.es) === normalize(item.es))
+          item => !rounds[r].some(ri => normalize(ri.es ?? '') === normalize(item.es ?? ''))
         )
         if (swapIdx !== -1) {
           const tmp = rounds[other][swapIdx]
           rounds[other][swapIdx] = rounds[r][i]
           rounds[r][i] = tmp
-          seen.add(normalize(rounds[r][i].es))
+          seen.add(normalize(rounds[r][i].es ?? ''))
           break
         }
       }

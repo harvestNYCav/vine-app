@@ -39,7 +39,7 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
           </div>
           <div>
             <h1 className="text-xl font-bold text-gray-800">{mod.titleEn}</h1>
-            <p className="text-sm text-gray-500">{mod.titleEs}</p>
+            {mod.track === 'esl' && <p className="text-sm text-gray-500">{mod.titleEs}</p>}
           </div>
         </div>
         <p className="text-sm text-gray-600 mb-5">{mod.descriptionEn}</p>

@@ -46,20 +46,24 @@ export default async function StudyHubPage({ params }: { params: Promise<{ slug:
             <span className="text-3xl">🗂️</span>
             <div>
               <p className="font-bold text-gray-800">Flashcards</p>
-              <p className="text-sm text-gray-500">{mod.vocab.length} words · flip, browse, rate</p>
+              <p className="text-sm text-gray-500">
+                {mod.vocab.length} words · {mod.track === 'esl' ? 'flip, browse, rate' : 'browse, rate'}
+              </p>
             </div>
           </div>
         </a>
 
-        <a href={`/vine-app/modules/${slug}/study/match`} className="block">
-          <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:border-green-300 active:scale-95 transition-transform flex items-center gap-4">
-            <span className="text-3xl">🧩</span>
-            <div>
-              <p className="font-bold text-gray-800">Matching Game</p>
-              <p className="text-sm text-gray-500">{rounds} round{rounds === 1 ? '' : 's'} · beat your best time</p>
+        {mod.track === 'esl' && (
+          <a href={`/vine-app/modules/${slug}/study/match`} className="block">
+            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:border-green-300 active:scale-95 transition-transform flex items-center gap-4">
+              <span className="text-3xl">🧩</span>
+              <div>
+                <p className="font-bold text-gray-800">Matching Game</p>
+                <p className="text-sm text-gray-500">{rounds} round{rounds === 1 ? '' : 's'} · beat your best time</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        )}
       </div>
     </div>
   )

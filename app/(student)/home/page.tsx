@@ -159,7 +159,7 @@ export default async function HomePage() {
                 <div className={`rounded-2xl p-4 border-2 ${statusColors[status]} shadow-sm hover:shadow-md transition-shadow`}>
                   <div className="text-2xl mb-2">{MODULE_EMOJIS[mod.icon] ?? '💬'}</div>
                   <p className="font-semibold text-sm text-gray-800 leading-tight">{mod.titleEn}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{mod.titleEs}</p>
+                  {mod.track === 'esl' && <p className="text-xs text-gray-500 mt-0.5">{mod.titleEs}</p>}
                   {status === 'homework-done' && <p className="text-xs text-emerald-600 mt-1 font-medium">✓ Homework done</p>}
                   {status === 'reviewed' && <p className="text-xs text-yellow-600 mt-1 font-medium">Reviewed</p>}
                   {status === 'not-started' && <p className="text-xs text-gray-400 mt-1">Not started</p>}
