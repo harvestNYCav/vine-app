@@ -56,10 +56,10 @@ export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 text-center">
         {slide.type === 'title' && (
           <>
-            <p className="text-2xl md:text-3xl text-amber-300 mb-3">{mod.titleEs}</p>
+            {mod.track === 'esl' && <p className="text-2xl md:text-3xl text-amber-300 mb-3">{mod.titleEs}</p>}
             <h1 className="text-5xl md:text-7xl font-bold mb-6">{mod.titleEn}</h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">{mod.descriptionEn}</p>
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-2">{mod.descriptionEs}</p>
+            {mod.track === 'esl' && <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-2">{mod.descriptionEs}</p>}
           </>
         )}
 
@@ -70,9 +70,9 @@ export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
               {slide.items.map(item => (
                 <div key={item.id} className="border-b border-gray-700 pb-4">
                   <p className="text-3xl md:text-4xl font-bold">{item.en}</p>
-                  <p className="text-2xl md:text-3xl text-amber-300 mt-1">{item.es}</p>
+                  {mod.track === 'esl' && <p className="text-2xl md:text-3xl text-amber-300 mt-1">{item.es}</p>}
                   <p className="text-base md:text-lg text-gray-400 mt-2 italic">{item.exampleEn}</p>
-                  <p className="text-base md:text-lg text-gray-500 italic">{item.exampleEs}</p>
+                  {mod.track === 'esl' && <p className="text-base md:text-lg text-gray-500 italic">{item.exampleEs}</p>}
                 </div>
               ))}
             </div>

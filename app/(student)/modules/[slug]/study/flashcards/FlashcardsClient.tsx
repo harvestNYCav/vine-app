@@ -11,6 +11,7 @@ interface Props {
 }
 
 export default function FlashcardsClient({ mod }: Props) {
+  const isEsl = mod.track === 'esl'
   const [cards] = useState(() => toStudyCards(mod))
   const [order, setOrder] = useState(() => cards.map((_, i) => i))
   const [position, setPosition] = useState(0)
@@ -69,14 +70,19 @@ export default function FlashcardsClient({ mod }: Props) {
 
       {/* Card */}
       <button
-        onClick={() => setFlipped(!flipped)}
+        onClick={() => { if (isEsl) setFlipped(!flipped) }}
         className={`w-full rounded-3xl p-8 text-center shadow-md border-2 transition-all min-h-[200px] flex flex-col items-center justify-center mb-6 ${
-          flipped
+          isEsl && flipped
             ? 'bg-green-700 border-green-700 text-white'
             : 'bg-white border-gray-200 text-gray-800 hover:border-green-300'
         }`}
       >
-        {!flipped ? (
+        {!isEsl ? (
+          <>
+            <p className="text-3xl font-bold mb-2">{card.en}</p>
+            <p className="text-gray-500 text-sm italic mt-2">&ldquo;{card.exampleEn}&rdquo;</p>
+          </>
+        ) : !flipped ? (
           <>
             <p className="text-3xl font-bold mb-2">{card.en}</p>
             <p className="text-gray-300 text-xs mt-4">Tap to flip</p>
@@ -106,8 +112,8 @@ export default function FlashcardsClient({ mod }: Props) {
         </button>
       </div>
 
-      {/* Rating Buttons — optional, only shown once flipped */}
-      {flipped && (
+      {/* Rating Buttons — optional, shown once flipped (ESL) or always (no flip step otherwise) */}
+      {(!isEsl || flipped) && (
         <div>
           <p className="text-center text-sm text-gray-500 mb-3">How well do you know this? (optional)</p>
           <div className="grid grid-cols-3 gap-3">

@@ -72,7 +72,7 @@ export default async function TutorDashboardPage() {
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       <h1 className="text-2xl font-bold text-amber-800 mb-1">Your Students</h1>
-      <p className="text-gray-500 text-sm mb-2">Tus estudiantes · {students.length} enrolled</p>
+      <p className="text-gray-500 text-sm mb-2">{students.length} enrolled</p>
       <Link href="/tutor/cohort" className="text-amber-700 text-sm underline block mb-6">View cohort overview →</Link>
 
       {students.length === 0 && (

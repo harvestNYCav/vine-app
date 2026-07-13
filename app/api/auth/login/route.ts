@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
       }
       const valid = await bcrypt.compare(pin, user.pin_hash)
       if (!valid) {
-        return NextResponse.json({ error: 'Wrong PIN / PIN incorrecto' }, { status: 401 })
+        return NextResponse.json({ error: 'Wrong PIN' }, { status: 401 })
       }
       phase = 'updating the account'
       if (attachedAdminEmail) {

@@ -75,7 +75,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     if (!mod || !visibleModuleSlugs.has(mod.slug)) return []
     const vocab = mod?.vocab.find(v => `${row.module_slug}:${v.id}` === row.word_id)
     if (!vocab) return []
-    return [{ ...vocab, correctCount: Number(row.correct_count), incorrectCount: Number(row.incorrect_count) }]
+    return [{ ...vocab, track: mod.track, correctCount: Number(row.correct_count), incorrectCount: Number(row.incorrect_count) }]
   }).filter(w => w.incorrectCount > 0)
 
   return (
@@ -105,7 +105,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
           {todayModule ? (
             <>
               <p className="font-semibold text-gray-800">{todayModule.titleEn}</p>
-              <p className="text-sm text-gray-500 mb-2">{todayModule.titleEs}</p>
+              {todayModule.track === 'esl' && <p className="text-sm text-gray-500 mb-2">{todayModule.titleEs}</p>}
               <HomeworkButton studentId={studentId} initialAssigned={homeworkAssigned} />
             </>
           ) : (
@@ -117,7 +117,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
           {nextModule ? (
             <>
               <p className="font-semibold text-gray-800">{nextModule.titleEn}</p>
-              <p className="text-sm text-gray-500">{nextModule.titleEs}</p>
+              {nextModule.track === 'esl' && <p className="text-sm text-gray-500">{nextModule.titleEs}</p>}
             </>
           ) : (
             <p className="text-sm text-gray-400">Not planned yet</p>
@@ -139,7 +139,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
       {/* Module Progress */}
       <div className="mb-6">
-        <h3 className="font-bold text-gray-700 mb-3">Lessons / Lecciones</h3>
+        <h3 className="font-bold text-gray-700 mb-3">Lessons</h3>
         <div className="space-y-2">
           {visibleModules.length === 0 ? (
             <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 text-center">
@@ -174,13 +174,13 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       {/* Struggling Words */}
       {strugglingWords.length > 0 && (
         <div className="mb-6">
-          <h3 className="font-bold text-gray-700 mb-3">⚠️ Needs practice / Necesita practicar</h3>
+          <h3 className="font-bold text-gray-700 mb-3">⚠️ Needs practice</h3>
           <div className="space-y-2">
             {strugglingWords.map(w => (
               <div key={w.id} className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 flex justify-between items-center">
                 <div>
                   <p className="font-medium text-gray-800">{w.en}</p>
-                  <p className="text-sm text-gray-500">{w.es}</p>
+                  {w.track === 'esl' && <p className="text-sm text-gray-500">{w.es}</p>}
                 </div>
                 <div className="text-right">
                   <p className="text-xs text-red-500">{w.incorrectCount} missed</p>

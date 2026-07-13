@@ -21,13 +21,14 @@ function shuffle<T>(arr: T[]): T[] {
 export default function WorksheetClient({ mod }: Props) {
   const router = useRouter()
   const [matchingItems] = useState(() => getMatchingItems(mod))
-  const [shuffledEs] = useState(() => shuffle(matchingItems.map(v => v.es)))
+  const [shuffledEs] = useState(() => shuffle(matchingItems.map(v => v.es ?? '')))
+  const hasMatching = matchingItems.length > 0
   const [matching, setMatching] = useState<Record<string, string>>({})
   const [fillIn, setFillIn] = useState<Record<string, string>>({})
   const [submitting, setSubmitting] = useState(false)
   const [score, setScore] = useState<number | null>(null)
 
-  const allMatched = matchingItems.every(v => matching[v.id])
+  const allMatched = !hasMatching || matchingItems.every(v => matching[v.id])
   const allFilled = mod.worksheet.every(q => fillIn[q.id]?.trim())
   const canSubmit = allMatched && allFilled && !submitting
 
@@ -87,37 +88,39 @@ export default function WorksheetClient({ mod }: Props) {
       </p>
 
       {/* Matching */}
-      <section>
-        <h2 className="font-bold text-gray-700 mb-1">1. Matching</h2>
-        <p className="text-xs text-gray-400 mb-3">Match each English word to its Spanish translation.</p>
-        <div className="space-y-3">
-          {matchingItems.map(item => (
-            <div key={item.id} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3">
-              <p className="font-medium text-gray-800 flex-1">{item.en}</p>
-              <select
-                value={matching[item.id] ?? ''}
-                onChange={e => setMatching(prev => ({ ...prev, [item.id]: e.target.value }))}
-                className="flex-1 border border-gray-200 rounded-lg px-2 py-1.5 text-sm text-gray-700"
-              >
-                <option value="">Select...</option>
-                {shuffledEs.map(es => (
-                  <option key={es} value={es}>{es}</option>
-                ))}
-              </select>
-            </div>
-          ))}
-        </div>
-      </section>
+      {hasMatching && (
+        <section>
+          <h2 className="font-bold text-gray-700 mb-1">1. Matching</h2>
+          <p className="text-xs text-gray-400 mb-3">Match each English word to its Spanish translation.</p>
+          <div className="space-y-3">
+            {matchingItems.map(item => (
+              <div key={item.id} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3">
+                <p className="font-medium text-gray-800 flex-1">{item.en}</p>
+                <select
+                  value={matching[item.id] ?? ''}
+                  onChange={e => setMatching(prev => ({ ...prev, [item.id]: e.target.value }))}
+                  className="flex-1 border border-gray-200 rounded-lg px-2 py-1.5 text-sm text-gray-700"
+                >
+                  <option value="">Select...</option>
+                  {shuffledEs.map(es => (
+                    <option key={es} value={es}>{es}</option>
+                  ))}
+                </select>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Fill in the Blank */}
       <section>
-        <h2 className="font-bold text-gray-700 mb-1">2. Fill in the Blank</h2>
+        <h2 className="font-bold text-gray-700 mb-1">{hasMatching ? '2.' : '1.'} Fill in the Blank</h2>
         <p className="text-xs text-gray-400 mb-3">Write the missing word in English.</p>
         <div className="space-y-3">
           {mod.worksheet.map(q => (
             <div key={q.id} className="bg-white rounded-xl border border-gray-100 p-3">
               <p className="font-medium text-gray-800">{q.promptEn}</p>
-              <p className="text-xs text-gray-400 mt-0.5">{q.promptEs}</p>
+              {q.promptEs && <p className="text-xs text-gray-400 mt-0.5">{q.promptEs}</p>}
               <input
                 type="text"
                 value={fillIn[q.id] ?? ''}
