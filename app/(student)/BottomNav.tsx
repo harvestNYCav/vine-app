@@ -6,11 +6,11 @@ import { usePathname, useSearchParams } from 'next/navigation'
 const BASE_PATH = '/vine-app'
 
 const NAV_ITEMS = [
-  { href: '/home', label: 'Home', labelEs: 'Inicio', emoji: '🏠' },
-  { href: '/modules', label: 'Learn', labelEs: 'Aprender', emoji: '📖' },
-  { href: '/practice', label: 'Practice', labelEs: 'Practicar', emoji: '🔄' },
-  { href: '/progress', label: 'Progress', labelEs: 'Progreso', emoji: '⭐' },
-  { href: '/tracks', label: 'Tracks', labelEs: 'Rutas', emoji: '🧭' },
+  { href: '/home', label: 'Home', emoji: '🏠' },
+  { href: '/modules', label: 'Learn', emoji: '📖' },
+  { href: '/practice', label: 'Practice', emoji: '🔄' },
+  { href: '/progress', label: 'Progress', emoji: '⭐' },
+  { href: '/tracks', label: 'Tracks', emoji: '🧭' },
 ]
 
 function withBasePath(href: string) {

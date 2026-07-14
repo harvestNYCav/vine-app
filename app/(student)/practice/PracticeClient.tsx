@@ -11,11 +11,12 @@ interface Card extends VocabItem {
 
 interface Props {
   cards: Card[]
+  isEsl: boolean
 }
 
 type Rating = 'hard' | 'ok' | 'easy'
 
-export default function PracticeClient({ cards }: Props) {
+export default function PracticeClient({ cards, isEsl }: Props) {
   const router = useRouter()
   const [index, setIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -70,17 +71,21 @@ export default function PracticeClient({ cards }: Props) {
 
       {/* Card */}
       <button
-        onClick={() => setFlipped(!flipped)}
+        onClick={() => { if (isEsl) setFlipped(!flipped) }}
         className={`w-full rounded-3xl p-8 text-center shadow-md border-2 transition-all min-h-[200px] flex flex-col items-center justify-center mb-6 ${
-          flipped
+          isEsl && flipped
             ? 'bg-green-700 border-green-700 text-white'
             : 'bg-white border-gray-200 text-gray-800 hover:border-green-300'
         }`}
       >
-        {!flipped ? (
+        {!isEsl ? (
           <>
             <p className="text-3xl font-bold mb-2">{card.en}</p>
-            <p className="text-gray-400 text-sm">{card.pronunciation}</p>
+            <p className="text-gray-500 text-sm italic mt-2">&ldquo;{card.exampleEn}&rdquo;</p>
+          </>
+        ) : !flipped ? (
+          <>
+            <p className="text-3xl font-bold mb-2">{card.en}</p>
             <p className="text-gray-300 text-xs mt-4">Tap to flip</p>
           </>
         ) : (
@@ -93,7 +98,7 @@ export default function PracticeClient({ cards }: Props) {
       </button>
 
       {/* Rating Buttons */}
-      {flipped && (
+      {(!isEsl || flipped) && (
         <div>
           <p className="text-center text-sm text-gray-500 mb-3">How well do you know this?</p>
           <div className="grid grid-cols-3 gap-3">
