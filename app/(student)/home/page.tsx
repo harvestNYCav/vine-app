@@ -6,6 +6,7 @@ import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
 import { redirect } from 'next/navigation'
 import { localDateKey } from '@/lib/dates'
 import HomeGreeting from './HomeGreeting'
+import { MATH_EXAMS } from '@/content/math-exams'
 
 function getStreak(activityLog: Array<{ date: string }>): number {
   if (!activityLog.length) return 0
@@ -34,13 +35,14 @@ export default async function HomePage() {
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
   const hasMath = tracks.includes('math')
 
-  const [mpResult, alResult, vmResult, tsResult, mathResult, msResult] = await Promise.all([
+  const [mpResult, alResult, vmResult, tsResult, mathResult, msResult, examProgressResult] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
     db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session!.userId] }),
     db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [session!.userId] }),
     db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [session!.userId] }),
     db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
     db.execute({ sql: 'SELECT started_at FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [session!.userId] }),
+    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM math_exam_section_progress WHERE user_id = ?', args: [session!.userId] }),
   ])
 
   type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number }
@@ -54,6 +56,10 @@ export default async function HomePage() {
   const vocabMastered = vmResult.rows[0] as unknown as { count: number }
   const teachSessions = tsResult.rows[0] as unknown as { count: number }
   const mathProgressRow = mathResult.rows[0] as unknown as { total_problems: number; total_correct: number; diagnostic_done: number } | undefined
+  type ExamProgressRow = { exam_id: string; section_slug: string; completed_at: number | null }
+  const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
+  const currentExam = MATH_EXAMS[0]
+  const completedExamSections = examProgress.filter(row => row.exam_id === currentExam.id && row.completed_at).length
 
   const streak = getStreak(activityLog)
   const completedModules = moduleProgress.filter(m => m.practice_completed_at && visibleModuleSlugs.has(m.module_slug)).length
@@ -121,22 +127,36 @@ export default async function HomePage() {
 
       {/* Math Practice Banner */}
       {hasMath && (
-        <a href="/vine-app/practice?mode=math" className="block mb-4">
-          <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">➕</span>
-              <div>
-                <p className="font-semibold text-sm text-gray-800">Math Practice</p>
-                <p className="text-xs text-gray-500">
-                  {mathProgressRow && Number(mathProgressRow.total_problems) > 0
-                    ? `${Number(mathProgressRow.total_problems)} problems · ${Math.round(Number(mathProgressRow.total_correct) / Number(mathProgressRow.total_problems) * 100)}% accuracy`
-                    : 'Find your starting level'}
-                </p>
+        <div className="mb-4 space-y-3">
+          <a href="/vine-app/practice?mode=math" className="block">
+            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">➕</span>
+                <div>
+                  <p className="font-semibold text-sm text-gray-800">Math Practice</p>
+                  <p className="text-xs text-gray-500">
+                    {mathProgressRow && Number(mathProgressRow.total_problems) > 0
+                      ? `${Number(mathProgressRow.total_problems)} problems · ${Math.round(Number(mathProgressRow.total_correct) / Number(mathProgressRow.total_problems) * 100)}% accuracy`
+                      : 'Find your starting level'}
+                  </p>
+                </div>
               </div>
+              <span className="text-gray-300 text-lg">→</span>
             </div>
-            <span className="text-gray-300 text-lg">→</span>
-          </div>
-        </a>
+          </a>
+          <a href={`/vine-app/math/exams/${currentExam.slug}`} className="block">
+            <div className="flex items-center justify-between rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-4 shadow-sm">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🗽</span>
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">New York Grade 3 Math</p>
+                  <p className="text-xs text-gray-500">{completedExamSections}/{currentExam.sections.length} exam sections completed</p>
+                </div>
+              </div>
+              <span className="text-gray-300 text-lg">→</span>
+            </div>
+          </a>
+        </div>
       )}
 
       {/* Teaching Mode Banner */}

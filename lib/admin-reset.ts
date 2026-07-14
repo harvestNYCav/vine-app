@@ -42,6 +42,9 @@ export async function deleteUserProfile(db: Client, userId: string, role: 'stude
     { sql: 'DELETE FROM activity_log WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM math_progress WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM math_sessions WHERE user_id = ?', args: [userId] },
+    { sql: 'DELETE FROM math_attempts WHERE user_id = ?', args: [userId] },
+    { sql: 'DELETE FROM math_exam_attempts WHERE user_id = ?', args: [userId] },
+    { sql: 'DELETE FROM math_exam_section_progress WHERE user_id = ?', args: [userId] },
   ]
 
   if (role === 'student') {
@@ -65,6 +68,9 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM attendance', args: [] },
     { sql: 'DELETE FROM sessions', args: [] },
     { sql: 'DELETE FROM math_sessions', args: [] },
+    { sql: 'DELETE FROM math_attempts', args: [] },
+    { sql: 'DELETE FROM math_exam_attempts', args: [] },
+    { sql: 'DELETE FROM math_exam_section_progress', args: [] },
     { sql: 'DELETE FROM math_progress', args: [] },
     { sql: 'DELETE FROM activity_log', args: [] },
     { sql: 'DELETE FROM teaching_sessions', args: [] },

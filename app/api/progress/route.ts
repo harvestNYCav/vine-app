@@ -10,11 +10,12 @@ export async function GET() {
   if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const db = await getDb()
-  const [mp, vp, ts, al] = await Promise.all([
+  const [mp, vp, ts, al, examProgress] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ?', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session.userId] }),
+    db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
   ])
 
   return NextResponse.json({
@@ -22,6 +23,7 @@ export async function GET() {
     vocabProgress: vp.rows,
     teachingSessions: ts.rows,
     activityLog: al.rows,
+    mathExamProgress: examProgress.rows,
   })
 }
 
