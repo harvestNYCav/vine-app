@@ -117,11 +117,13 @@ async function initSchema(db: Client): Promise<void> {
 
     CREATE TABLE IF NOT EXISTS sessions (
       id TEXT PRIMARY KEY,
-      date TEXT NOT NULL UNIQUE,
+      student_id TEXT NOT NULL,
+      date TEXT NOT NULL,
       module_slug TEXT NOT NULL,
       tutor_id TEXT NOT NULL,
       homework_assigned INTEGER NOT NULL DEFAULT 0,
-      created_at INTEGER NOT NULL
+      created_at INTEGER NOT NULL,
+      UNIQUE(student_id, date)
     );
 
     CREATE TABLE IF NOT EXISTS attendance (
@@ -193,9 +195,20 @@ async function initSchema(db: Client): Promise<void> {
       updated_at INTEGER NOT NULL,
       PRIMARY KEY (user_id, exam_id, section_slug)
     );
+
+    CREATE TABLE IF NOT EXISTS tutor_notes (
+      id TEXT PRIMARY KEY,
+      student_id TEXT NOT NULL,
+      tutor_id TEXT NOT NULL,
+      body TEXT NOT NULL,
+      created_at INTEGER NOT NULL
+    );
   `)
   await ensureColumn(db, 'users', 'email', 'TEXT')
+  await ensureColumn(db, 'module_progress', 'homework_completed_at', 'INTEGER')
+  await ensureColumn(db, 'module_progress', 'homework_score', 'INTEGER')
   await ensureUsersTableSupportsAdminRole(db)
+  await ensureSessionsTableSupportsStudentId(db)
   await seedDefaultAdminAllowlistIfEmpty(db)
 }
 
@@ -236,6 +249,30 @@ async function ensureUsersTableSupportsAdminRole(db: Client): Promise<void> {
 
     DROP TABLE users;
     ALTER TABLE users_schema_migration RENAME TO users;
+  `)
+}
+
+async function ensureSessionsTableSupportsStudentId(db: Client): Promise<void> {
+  const result = await db.execute({ sql: 'PRAGMA table_info(sessions)', args: [] })
+  const hasStudentId = result.rows.some(row => String(row.name) === 'student_id')
+  if (hasStudentId) return
+
+  // Old schema was one shared row per date (cohort-wide); the tutoring model is
+  // actually per-student, so the handful of existing rows can't be attributed to
+  // one student and are dropped rather than migrated.
+  await db.executeMultiple(`
+    DROP TABLE IF EXISTS sessions;
+
+    CREATE TABLE sessions (
+      id TEXT PRIMARY KEY,
+      student_id TEXT NOT NULL,
+      date TEXT NOT NULL,
+      module_slug TEXT NOT NULL,
+      tutor_id TEXT NOT NULL,
+      homework_assigned INTEGER NOT NULL DEFAULT 0,
+      created_at INTEGER NOT NULL,
+      UNIQUE(student_id, date)
+    );
   `)
 }
 

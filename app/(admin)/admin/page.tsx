@@ -46,21 +46,21 @@ export default async function AdminPage() {
   ]
 
   const studentData = await Promise.all(students.map(async student => {
-    const [tracks, tutorIds, settings, modulesResult, vocabResult, teachingResult, mathResult, examProgressResult] = await Promise.all([
+    const [tracks, tutorIds, settings, modulesResult, vocabResult, reviewedResult, mathResult, examProgressResult] = await Promise.all([
       getStudentTracks(db, student.id),
       getStudentTutorIds(db, student.id),
       getStudentSettings(db, student.id),
-      db.execute({ sql: 'SELECT module_slug, practice_completed_at FROM module_progress WHERE user_id = ?', args: [student.id] }),
+      db.execute({ sql: 'SELECT module_slug, homework_completed_at FROM module_progress WHERE user_id = ?', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [student.id] }),
-      db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [student.id] }),
+      db.execute({ sql: 'SELECT COUNT(*) as count FROM module_progress WHERE user_id = ? AND vocab_viewed_at IS NOT NULL', args: [student.id] }),
       db.execute({ sql: 'SELECT total_problems, total_correct FROM math_progress WHERE user_id = ?', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM math_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
     ])
-    type ModuleProgressRow = { module_slug: string; practice_completed_at: number | null }
+    type ModuleProgressRow = { module_slug: string; homework_completed_at: number | null }
     const moduleRows = modulesResult.rows as unknown as ModuleProgressRow[]
     const chosenEnglishModules = ALL_MODULES.filter(mod => tracks.includes(mod.track))
     const chosenSlugs = new Set(chosenEnglishModules.map(mod => mod.slug))
-    const completedLessons = moduleRows.filter(row => row.practice_completed_at && chosenSlugs.has(row.module_slug)).length
+    const completedLessons = moduleRows.filter(row => row.homework_completed_at && chosenSlugs.has(row.module_slug)).length
     const mathRow = mathResult.rows[0] as unknown as { total_problems: number; total_correct: number } | undefined
     const mathProblems = mathRow ? Number(mathRow.total_problems) : 0
     const mathCorrect = mathRow ? Number(mathRow.total_correct) : 0
@@ -73,7 +73,7 @@ export default async function AdminPage() {
       completedLessons,
       totalLessons: chosenEnglishModules.length,
       vocabMastered: Number(vocabResult.rows[0]?.count ?? 0),
-      teachSessions: Number(teachingResult.rows[0]?.count ?? 0),
+      reviewedModules: Number(reviewedResult.rows[0]?.count ?? 0),
       mathProblems,
       mathAccuracy: mathProblems ? Math.round(mathCorrect / mathProblems * 100) : 0,
       examSectionsCompleted: Number(examProgressResult.rows[0]?.count ?? 0),
@@ -156,8 +156,8 @@ export default async function AdminPage() {
                     <p className="text-xs text-slate-500">Words mastered</p>
                   </div>
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-purple-700">{student.teachSessions}</p>
-                    <p className="text-xs text-slate-500">Teaching sessions</p>
+                    <p className="text-xl font-bold text-purple-700">{student.reviewedModules}</p>
+                    <p className="text-xs text-slate-500">Lessons reviewed</p>
                   </div>
                   <div className="bg-slate-50 rounded-lg p-3">
                     <p className="text-xl font-bold text-amber-700">{student.mathProblems}</p>

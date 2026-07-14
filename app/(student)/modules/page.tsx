@@ -7,6 +7,7 @@ import ModeToggle from '../ModeToggle'
 import LangToggle from '../LangToggle'
 import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
 import { getStudentSettings } from '@/lib/student-settings'
+import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import type { Track } from '@/types'
@@ -16,6 +17,9 @@ import Link from 'next/link'
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
   BookOpen: '📚', Pencil: '✏️',
+  Smile: '😊', Tag: '🏷️', Clock: '🕐', Repeat: '🔁', PersonStanding: '🧍', Package: '📦',
+  MousePointer2: '👉', Heart: '❤️', XCircle: '🚫', HelpCircle: '❓', Key: '🔑', Home: '🏠',
+  Calendar: '📅', Utensils: '🍽️', HeartPulse: '🚑',
 }
 
 export default async function ModulesPage({
@@ -161,20 +165,20 @@ export default async function ModulesPage({
   }
 
   // English modes
-  const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode)
+  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session!.userId)
+  const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode && taughtSlugs.has(mod.slug))
   const mpResult = await db.execute({
     sql: 'SELECT * FROM module_progress WHERE user_id = ?',
     args: [session!.userId],
   })
-  type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number }
+  type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null }
   const moduleProgress = mpResult.rows as unknown as ModuleProgressRow[]
 
   const getStatus = (slug: string) => {
     const p = moduleProgress.find(m => m.module_slug === slug)
     if (!p) return 'not-started'
-    if (p.teach_session_count > 0) return 'taught'
-    if (p.practice_completed_at) return 'practiced'
-    if (p.vocab_viewed_at) return 'started'
+    if (p.homework_completed_at) return 'homework-done'
+    if (p.vocab_viewed_at) return 'reviewed'
     return 'not-started'
   }
 
@@ -185,6 +189,13 @@ export default async function ModulesPage({
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'ESL'}</p>
+
+      {visibleModules.length === 0 && (
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center">
+          <p className="text-amber-700 font-medium">No lessons taught yet.</p>
+          <p className="text-amber-600 text-sm mt-1">Check back after your next Saturday session!</p>
+        </div>
+      )}
 
       <div className="space-y-3">
         {visibleModules.map(mod => {
@@ -200,9 +211,8 @@ export default async function ModulesPage({
                   <p className="text-xs text-gray-400 mt-0.5">{mod.vocab.length} words</p>
                 </div>
                 <div className="text-right flex-shrink-0">
-                  {status === 'taught' && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">Taught ✓</span>}
-                  {status === 'practiced' && <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Done ✓</span>}
-                  {status === 'started' && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full font-medium">Started</span>}
+                  {status === 'homework-done' && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">Homework done ✓</span>}
+                  {status === 'reviewed' && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full font-medium">Reviewed</span>}
                   {status === 'not-started' && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Start →</span>}
                 </div>
               </div>

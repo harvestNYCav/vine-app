@@ -13,10 +13,9 @@ export interface User {
 export interface VocabItem {
   id: string
   en: string
-  es: string
-  pronunciation: string
+  es?: string
   exampleEn: string
-  exampleEs: string
+  exampleEs?: string
 }
 
 export type QuestionType = 'multiple-choice' | 'fill-in-the-blank'
@@ -25,24 +24,42 @@ export interface QuizQuestion {
   id: string
   type: QuestionType
   promptEn: string
-  promptEs: string
+  promptEs?: string
   answer: string
   options?: string[]
+}
+
+export interface DialogueLine {
+  speaker: 'tutor' | 'student'
+  en: string
+  es?: string
+}
+
+export interface TeachingScenario {
+  label: string
+  text: string
+  script?: DialogueLine[]
+}
+
+export interface FillInBlankItem {
+  id: string
+  promptEn: string
+  promptEs?: string
+  answer: string
 }
 
 export interface Module {
   slug: string
   track: Exclude<Track, 'math'>
   titleEn: string
-  titleEs: string
+  titleEs?: string
   descriptionEn: string
-  descriptionEs: string
+  descriptionEs?: string
   icon: string
   vocab: VocabItem[]
   quiz: QuizQuestion[]
-  teachingScenario: string
-  homeworkUrl: string
-  homeworkLabel: string
+  teachingScenarios: TeachingScenario[]
+  worksheet: FillInBlankItem[]
 }
 
 export interface VocabProgress {
@@ -63,6 +80,8 @@ export interface ModuleProgress {
   practiceCompletedAt: number | null
   practiceScore: number | null
   teachSessionCount: number
+  homeworkCompletedAt: number | null
+  homeworkScore: number | null
 }
 
 export interface TeachingSession {

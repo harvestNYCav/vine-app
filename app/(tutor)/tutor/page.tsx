@@ -27,15 +27,15 @@ export default async function TutorDashboardPage() {
   const students = studentsResult.rows as unknown as StudentRow[]
 
   const studentData = await Promise.all(students.map(async student => {
-    const [cm, vm, ts, la] = await Promise.all([
-      db.execute({ sql: 'SELECT COUNT(*) as count FROM module_progress WHERE user_id = ? AND practice_completed_at IS NOT NULL', args: [student.id] }),
+    const [cm, vm, rv, la] = await Promise.all([
+      db.execute({ sql: 'SELECT COUNT(*) as count FROM module_progress WHERE user_id = ? AND homework_completed_at IS NOT NULL', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [student.id] }),
-      db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [student.id] }),
+      db.execute({ sql: 'SELECT COUNT(*) as count FROM module_progress WHERE user_id = ? AND vocab_viewed_at IS NOT NULL', args: [student.id] }),
       db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [student.id] }),
     ])
     const completedModules = cm.rows[0] as unknown as { count: number }
     const vocabMastered = vm.rows[0] as unknown as { count: number }
-    const teachSessions = ts.rows[0] as unknown as { count: number }
+    const reviewedModules = rv.rows[0] as unknown as { count: number }
     const lastActivity = la.rows[0] as unknown as { date: string } | undefined
     const daysSince = lastActivity ? Math.floor((Date.now() - new Date(lastActivity.date).getTime()) / 86400000) : null
 
@@ -43,7 +43,7 @@ export default async function TutorDashboardPage() {
       ...student,
       completedModules: Number(completedModules.count),
       vocabMastered: Number(vocabMastered.count),
-      teachSessions: Number(teachSessions.count),
+      reviewedModules: Number(reviewedModules.count),
       daysSince,
       lastActivityDate: lastActivity?.date,
     }
@@ -72,7 +72,7 @@ export default async function TutorDashboardPage() {
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       <h1 className="text-2xl font-bold text-amber-800 mb-1">Your Students</h1>
-      <p className="text-gray-500 text-sm mb-2">Tus estudiantes · {students.length} enrolled</p>
+      <p className="text-gray-500 text-sm mb-2">{students.length} enrolled</p>
       <Link href="/tutor/cohort" className="text-amber-700 text-sm underline block mb-6">View cohort overview →</Link>
 
       {students.length === 0 && (
@@ -148,8 +148,8 @@ export default async function TutorDashboardPage() {
                   <span className="text-xs text-gray-500">{student.vocabMastered} words</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <span className="text-xs text-purple-500">🎓</span>
-                  <span className="text-xs text-gray-500">{student.teachSessions} taught</span>
+                  <span className="text-xs text-purple-500">📖</span>
+                  <span className="text-xs text-gray-500">{student.reviewedModules} reviewed</span>
                 </div>
               </div>
             </div>

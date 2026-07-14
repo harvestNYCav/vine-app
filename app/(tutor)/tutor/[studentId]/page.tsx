@@ -1,12 +1,14 @@
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { notFound } from 'next/navigation'
-import { ALL_MODULES } from '@/content/modules'
+import { ALL_MODULES, getModule } from '@/content/modules'
 import { SKILLS } from '@/lib/math'
 import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
+import { todayString, nextSaturday } from '@/lib/scheduling'
 import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
 import { MATH_EXAMS } from '@/content/math-exams'
+import HomeworkButton from './HomeworkButton'
 
 function mathMasteryColor(v: number) {
   if (v >= 0.75) return 'bg-green-500'
@@ -28,26 +30,34 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
   const student = { id: rawStudent.id as string, name: rawStudent.name as string, last_active: rawStudent.last_active as number }
 
-  const [tracks, mpResult, vpResult, tsResult, laResult, mathResult, mathSessionResult, examProgressResult] = await Promise.all([
+  const today = todayString()
+  const nextDate = nextSaturday()
+
+  const [tracks, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, nextSessionResult, examProgressResult] = await Promise.all([
     getStudentTracks(db, studentId),
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5', args: [studentId] }),
-    db.execute({ sql: 'SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 5', args: [studentId] }),
     db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT session_type, COUNT(*) as count FROM math_sessions WHERE user_id = ? GROUP BY session_type', args: [studentId] }),
+    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?', args: [studentId, today] }),
+    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?', args: [studentId, nextDate] }),
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
 
-  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number; practice_score: number | null }
+  const todaySessionRow = todaySessionResult.rows[0] as unknown as { module_slug: string; homework_assigned: number | bigint } | undefined
+  const nextSessionRow = nextSessionResult.rows[0] as unknown as { module_slug: string } | undefined
+  const todayModule = todaySessionRow ? getModule(String(todaySessionRow.module_slug)) : null
+  const nextModule = nextSessionRow ? getModule(String(nextSessionRow.module_slug)) : null
+  const homeworkAssigned = todaySessionRow ? Number(todaySessionRow.homework_assigned) === 1 : false
+
+  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
-  type TeachingSessionRow = { id: string; module_slug: string; started_at: number; phrases_taught: string }
   type MathSessionCountRow = { session_type: string; count: number }
   type ExamProgressRow = { exam_id: string; section_slug: string; attempts: number; best_points: number; best_possible: number }
 
   const moduleProgress = mpResult.rows as unknown as ModProgressRow[]
   const vocabProgress = vpResult.rows as unknown as VocabProgressRow[]
-  const teachingSessions = tsResult.rows as unknown as TeachingSessionRow[]
   const lastActivity = laResult.rows[0] as unknown as { date: string } | undefined
   const mathRow = mathResult.rows[0]
   const mathSessionCounts = mathSessionResult.rows as unknown as MathSessionCountRow[]
@@ -62,16 +72,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const mathCurrentSkill = mathRow?.current_skill as string | null ?? null
   const mathDiagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
 
-  const completedModules = moduleProgress.filter(m => m.practice_completed_at && visibleModuleSlugs.has(m.module_slug)).map(m => {
-    const mod = ALL_MODULES.find(mm => mm.slug === m.module_slug)
-    return mod?.titleEn || m.module_slug
-  })
-
-  const teachTopics = teachingSessions.filter(s => visibleModuleSlugs.has(s.module_slug)).map(s => {
-    const mod = ALL_MODULES.find(mm => mm.slug === s.module_slug)
-    return mod?.titleEn || s.module_slug
-  })
-
   const daysSince = lastActivity ? Math.floor((Date.now() - new Date(lastActivity.date).getTime()) / 86400000) : null
 
   const strugglingWords = vocabProgress.flatMap(row => {
@@ -79,7 +79,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     if (!mod || !visibleModuleSlugs.has(mod.slug)) return []
     const vocab = mod?.vocab.find(v => `${row.module_slug}:${v.id}` === row.word_id)
     if (!vocab) return []
-    return [{ ...vocab, correctCount: Number(row.correct_count), incorrectCount: Number(row.incorrect_count) }]
+    return [{ ...vocab, track: mod.track, correctCount: Number(row.correct_count), incorrectCount: Number(row.incorrect_count) }]
   }).filter(w => w.incorrectCount > 0)
 
   return (
@@ -101,24 +101,49 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Saturday Prep Note */}
+      {/* Current Lesson */}
+      <div className="bg-white rounded-2xl p-4 shadow-sm border border-amber-100 mb-6 space-y-4">
+        <h3 className="font-bold text-gray-700">Current Lesson</h3>
+        <div>
+          <p className="text-xs text-amber-600 font-medium uppercase tracking-wide mb-0.5">Today</p>
+          {todayModule ? (
+            <>
+              <p className="font-semibold text-gray-800">{todayModule.titleEn}</p>
+              {todayModule.track === 'esl' && <p className="text-sm text-gray-500 mb-2">{todayModule.titleEs}</p>}
+              <HomeworkButton studentId={studentId} initialAssigned={homeworkAssigned} />
+            </>
+          ) : (
+            <p className="text-sm text-gray-400">No lesson assigned yet</p>
+          )}
+        </div>
+        <div>
+          <p className="text-xs text-amber-600 font-medium uppercase tracking-wide mb-0.5">Next Session · {nextDate}</p>
+          {nextModule ? (
+            <>
+              <p className="font-semibold text-gray-800">{nextModule.titleEn}</p>
+              {nextModule.track === 'esl' && <p className="text-sm text-gray-500">{nextModule.titleEs}</p>}
+            </>
+          ) : (
+            <p className="text-sm text-gray-400">Not planned yet</p>
+          )}
+        </div>
+        <Link href="/tutor/lessons" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">
+          📚 Browse Lessons to Assign →
+        </Link>
+      </div>
+
+      {/* Tutor Notes */}
       <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 mb-6">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xl">📋</span>
-          <h3 className="font-bold text-amber-800">Saturday Prep Note</h3>
+          <h3 className="font-bold text-amber-800">Tutor Notes</h3>
         </div>
-        <PrepNoteButton
-          studentName={student.name}
-          modulesCompleted={completedModules}
-          strugglingWords={strugglingWords.map(w => w.en)}
-          teachSessions={teachTopics}
-          daysSinceLastVisit={daysSince}
-        />
+        <PrepNoteButton studentId={studentId} />
       </div>
 
       {/* Module Progress */}
       <div className="mb-6">
-        <h3 className="font-bold text-gray-700 mb-3">Lessons / Lecciones</h3>
+        <h3 className="font-bold text-gray-700 mb-3">Lessons</h3>
         <div className="space-y-2">
           {visibleModules.length === 0 ? (
             <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 text-center">
@@ -126,24 +151,23 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
             </div>
           ) : visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
-            const steps = [!!p?.vocab_viewed_at, !!p?.practice_completed_at, (p?.teach_session_count ?? 0) > 0]
+            const steps = [!!p?.vocab_viewed_at, !!p?.homework_completed_at]
             const completed = steps.filter(Boolean).length
             return (
               <div key={mod.slug} className="bg-white rounded-xl p-3 border border-gray-100 flex items-center gap-3">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-gray-700">{mod.titleEn}</p>
                   <div className="flex gap-2 mt-1">
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'text-gray-300'}`}>Vocab</span>
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.practice_completed_at ? 'bg-green-100 text-green-600' : 'text-gray-300'}`}>Quiz{p?.practice_score ? ` ${p.practice_score}%` : ''}</span>
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${(p?.teach_session_count ?? 0) > 0 ? 'bg-purple-100 text-purple-600' : 'text-gray-300'}`}>🎓</span>
+                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'text-gray-300'}`}>📖 Reviewed</span>
+                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.homework_completed_at ? 'bg-green-100 text-green-600' : 'text-gray-300'}`}>📓 Homework{p?.homework_score ? ` ${p.homework_score}%` : ''}</span>
                   </div>
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center flex-shrink-0 text-xs font-bold"
                   style={{
-                    borderColor: completed === 3 ? '#10b981' : completed > 0 ? '#f59e0b' : '#e5e7eb',
-                    color: completed === 3 ? '#10b981' : completed > 0 ? '#f59e0b' : '#9ca3af'
+                    borderColor: completed === 2 ? '#10b981' : completed > 0 ? '#f59e0b' : '#e5e7eb',
+                    color: completed === 2 ? '#10b981' : completed > 0 ? '#f59e0b' : '#9ca3af'
                   }}>
-                  {completed}/3
+                  {completed}/2
                 </div>
               </div>
             )
@@ -154,13 +178,13 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       {/* Struggling Words */}
       {strugglingWords.length > 0 && (
         <div className="mb-6">
-          <h3 className="font-bold text-gray-700 mb-3">⚠️ Needs practice / Necesita practicar</h3>
+          <h3 className="font-bold text-gray-700 mb-3">⚠️ Needs practice</h3>
           <div className="space-y-2">
             {strugglingWords.map(w => (
               <div key={w.id} className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 flex justify-between items-center">
                 <div>
                   <p className="font-medium text-gray-800">{w.en}</p>
-                  <p className="text-sm text-gray-500">{w.es}</p>
+                  {w.track === 'esl' && <p className="text-sm text-gray-500">{w.es}</p>}
                 </div>
                 <div className="text-right">
                   <p className="text-xs text-red-500">{w.incorrectCount} missed</p>
@@ -287,32 +311,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
           </>
         )}
       </div>
-
-      {/* Teaching Sessions */}
-      {teachingSessions.length > 0 && (
-        <div>
-          <h3 className="font-bold text-gray-700 mb-3">🎓 Teaching Sessions</h3>
-          <div className="space-y-2">
-            {teachingSessions.map(s => {
-              const mod = ALL_MODULES.find(mm => mm.slug === s.module_slug)
-              const phrases = JSON.parse(s.phrases_taught) as string[]
-              return (
-                <div key={s.id} className="bg-white rounded-xl p-3 border border-gray-100">
-                  <p className="font-medium text-sm text-gray-700">{mod?.titleEn}</p>
-                  <p className="text-xs text-gray-400">{new Date(Number(s.started_at)).toLocaleDateString()}</p>
-                  {phrases.length > 0 && (
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {phrases.slice(0, 3).map((p, i) => (
-                        <span key={i} className="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded-full">{p}</span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
     </div>
   )
 }

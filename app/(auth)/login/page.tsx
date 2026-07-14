@@ -20,7 +20,7 @@ function LoginForm() {
 
   const handleNameSubmit = () => {
     if (name.trim().length < 2) {
-      setError('Please enter your name / Por favor ingresa tu nombre')
+      setError('Please enter your name')
       return
     }
     setError('')
@@ -126,7 +126,7 @@ function LoginForm() {
           </div>
           <h1 className="text-2xl font-bold text-green-800">Vine</h1>
           <p className="text-sm text-gray-500 mt-1">
-            {role === 'tutor' ? 'Tutor Login' : role === 'admin' ? 'Admin Login' : 'Student Login / Acceso estudiante'}
+            {role === 'tutor' ? 'Tutor Login' : role === 'admin' ? 'Admin Login' : 'Student Login'}
           </p>
         </div>
 
@@ -134,7 +134,7 @@ function LoginForm() {
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Your name / Tu nombre
+                Your name
               </label>
               <input
                 type="text"
@@ -151,13 +151,13 @@ function LoginForm() {
               onClick={handleNameSubmit}
               className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform"
             >
-              Continue / Continuar
+              Continue
             </button>
             <button
               onClick={() => router.back()}
               className="w-full text-gray-500 text-sm py-2"
             >
-              ← Go back / Regresar
+              ← Go back
             </button>
           </div>
         )}
@@ -246,12 +246,12 @@ function LoginForm() {
               Hello, {name}! 👋
             </p>
             <p className="text-center text-gray-500 text-sm">
-              Enter your 4-digit PIN / Ingresa tu PIN de 4 dígitos
+              Enter your 4-digit PIN
             </p>
             <p className="text-center text-xs text-gray-400">
               {role === 'admin'
                 ? `Email verified: ${email}`
-                : `(New? We'll create your account / ¿Nuevo? Crearemos tu cuenta)`}
+                : `(New? We'll create your account)`}
             </p>
 
             {/* PIN Dots */}
@@ -301,7 +301,7 @@ function LoginForm() {
               }}
               className="w-full text-gray-500 text-sm py-2"
             >
-              {role === 'admin' ? '← Change verification code' : '← Change name / Cambiar nombre'}
+              {role === 'admin' ? '← Change verification code' : '← Change name'}
             </button>
           </div>
         )}
