@@ -1,6 +1,6 @@
 # Maintenance Audit
 
-- Source: `/Users/shichengrao/Projects/vine-app`
+- Source: repository root
 - Category: **useful for the future**
 - Maintenance branch: `codex/repo-health-audit-20260629`
 - Generated: 2026-06-29 05:08:12 UTC
