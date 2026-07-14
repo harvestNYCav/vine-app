@@ -25,7 +25,7 @@ function BottomNavInner() {
   const normalizedPathname = pathname.startsWith(BASE_PATH)
     ? pathname.slice(BASE_PATH.length) || '/'
     : pathname
-  const activeMode = mode === 'math' || normalizedPathname.startsWith('/skills') || normalizedPathname === '/math'
+  const activeMode = mode === 'math' || normalizedPathname.startsWith('/skills') || normalizedPathname.startsWith('/math')
     ? 'math'
     : mode === 'ela'
     ? 'ela'
@@ -44,7 +44,9 @@ function BottomNavInner() {
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
       <div className="flex justify-around items-center py-2 max-w-lg mx-auto">
         {NAV_ITEMS.map(item => {
-          const active = normalizedPathname === item.href || normalizedPathname.startsWith(item.href + '/')
+          const active = normalizedPathname === item.href ||
+            normalizedPathname.startsWith(item.href + '/') ||
+            (item.href === '/modules' && normalizedPathname.startsWith('/math/exams'))
           return (
             <a
               key={item.href}

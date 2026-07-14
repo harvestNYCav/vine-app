@@ -9,6 +9,8 @@ import { getStudentSettings } from '@/lib/student-settings'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import type { Track } from '@/types'
+import { MATH_EXAMS } from '@/content/math-exams'
+import Link from 'next/link'
 
 const SESSION_LABELS: Record<string, string> = {
   practice_5: '5 min', practice_10: '10 min',
@@ -49,10 +51,11 @@ export default async function ProgressPage({
   if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
 
   if (currentMode === 'math') {
-    const [mathResult, sessionsResult, settings] = await Promise.all([
+    const [mathResult, sessionsResult, settings, examProgressResult] = await Promise.all([
       db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
       db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session!.userId] }),
       getStudentSettings(db, session!.userId),
+      db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [session!.userId] }),
     ])
     const canUseSpanish = settings.mathSpanishEnabled
     const isSpanish = canUseSpanish && lang === 'es'
@@ -64,6 +67,15 @@ export default async function ProgressPage({
     const currentSkill = mathRow?.current_skill as string | null ?? null
     const totalProblems = mathRow ? Number(mathRow.total_problems) : 0
     const totalCorrect = mathRow ? Number(mathRow.total_correct) : 0
+    type ExamProgressRow = {
+      exam_id: string
+      section_slug: string
+      attempts: number
+      best_points: number
+      best_possible: number
+      completed_at: number | null
+    }
+    const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
 
     type MathSessionRow = { id: string; session_type: string; started_at: number; ended_at: number; total_problems: number; correct: number; accuracy: number; current_skill: string }
     const recentSessions = sessionsResult.rows as unknown as MathSessionRow[]
@@ -87,7 +99,7 @@ export default async function ProgressPage({
             <ModeToggle currentMode="math" availableTracks={tracks} />
           </div>
         </div>
-        <p className="text-gray-500 text-sm mb-6">{isSpanish ? 'Aritmética' : 'Math arithmetic'}</p>
+        <p className="text-gray-500 text-sm mb-6">{isSpanish ? 'Aritmética y práctica del examen estatal' : 'Arithmetic and state exam practice'}</p>
 
         {/* Overall stats */}
         <div className="grid grid-cols-2 gap-3 mb-6">
@@ -100,6 +112,53 @@ export default async function ProgressPage({
               {totalProblems ? Math.round(totalCorrect / totalProblems * 100) : 0}%
             </p>
             <p className="text-sm text-gray-600 mt-0.5">{isSpanish ? 'Precisión general' : 'Overall accuracy'}</p>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="font-bold text-gray-700">{isSpanish ? 'Lecciones del examen de Nueva York' : 'New York Exam Lessons'}</h3>
+          <p className="mb-3 mt-1 text-xs text-gray-500">
+            {isSpanish
+              ? 'Puntuaciones de práctica; las respuestas escritas incluyen autoevaluación.'
+              : 'Practice scores; written responses include learner self-assessment.'}
+          </p>
+          <div className="space-y-3">
+            {MATH_EXAMS.flatMap(exam => exam.sections.map(section => {
+              const row = examProgress.find(item => item.exam_id === exam.id && item.section_slug === section.slug)
+              const percentage = row?.best_possible
+                ? Math.round(Number(row.best_points) / Number(row.best_possible) * 100)
+                : 0
+              return (
+                <Link
+                  key={`${exam.id}:${section.slug}`}
+                  href={`/math/exams/${exam.slug}/${section.slug}${isSpanish ? '?lang=es' : ''}`}
+                  className="block"
+                >
+                  <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-xl">{section.emoji}</div>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center justify-between gap-3">
+                          <p className="truncate text-sm font-semibold text-gray-700">{isSpanish ? section.title.es : section.title.en}</p>
+                          <span className={`text-sm font-bold ${percentage ? 'text-blue-700' : 'text-gray-300'}`}>{percentage}%</span>
+                        </div>
+                        <div className="mt-2 h-2 overflow-hidden rounded-full bg-gray-100">
+                          <div className="h-full rounded-full bg-blue-600" style={{ width: `${percentage}%` }} />
+                        </div>
+                        {row && (
+                          <p className="mt-1 text-xs text-gray-400">
+                            {Number(row.attempts)}{' '}
+                            {Number(row.attempts) === 1
+                              ? (isSpanish ? 'intento' : 'attempt')
+                              : (isSpanish ? 'intentos' : 'attempts')}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              )
+            }))}
           </div>
         </div>
 

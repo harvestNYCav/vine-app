@@ -10,6 +10,8 @@ import { getStudentSettings } from '@/lib/student-settings'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import type { Track } from '@/types'
+import { MATH_EXAMS } from '@/content/math-exams'
+import Link from 'next/link'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -32,18 +34,24 @@ export default async function ModulesPage({
   if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
 
   if (currentMode === 'math') {
-    const [mathResult, settings] = await Promise.all([
+    const [mathResult, settings, examProgressResult] = await Promise.all([
       db.execute({
         sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
         args: [session!.userId],
       }),
       getStudentSettings(db, session!.userId),
+      db.execute({
+        sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?',
+        args: [session!.userId],
+      }),
     ])
     const mathRow = mathResult.rows[0]
     const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
     const diagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
     const canUseSpanish = settings.mathSpanishEnabled
     const isSpanish = canUseSpanish && lang === 'es'
+    type ExamProgressRow = { exam_id: string; section_slug: string; completed_at: number | null }
+    const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
 
     return (
       <div className="max-w-lg mx-auto w-full px-4 py-6">
@@ -69,6 +77,50 @@ export default async function ModulesPage({
           </div>
         )}
 
+        <section className="mb-8">
+          <div className="mb-3 flex items-end justify-between">
+            <div>
+              <h2 className="font-bold text-gray-800">{isSpanish ? 'Lecciones del examen de Nueva York' : 'New York exam lessons'}</h2>
+              <p className="mt-0.5 text-xs text-gray-500">{isSpanish ? 'Aprende y practica con preguntas oficiales publicadas' : 'Learn, then practice with official released questions'}</p>
+            </div>
+            <span className="rounded-full bg-blue-100 px-2 py-1 text-[11px] font-bold text-blue-700">NYSED</span>
+          </div>
+          <div className="space-y-3">
+            {MATH_EXAMS.map(exam => {
+              const completed = examProgress.filter(row => row.exam_id === exam.id && row.completed_at).length
+              return (
+                <Link key={exam.id} href={`/math/exams/${exam.slug}${isSpanish ? '?lang=es' : ''}`} className="block">
+                  <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100 text-2xl">🗽</div>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-semibold text-gray-800">{isSpanish ? exam.title.es : exam.title.en}</p>
+                        <p className="mt-0.5 text-xs text-gray-500">
+                          {exam.sections.length} {isSpanish ? 'áreas de aprendizaje' : 'learning sections'} · {exam.standardsFramework}
+                        </p>
+                      </div>
+                      <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                        completed > 0 ? 'bg-green-100 text-green-700' : 'bg-white text-gray-500'
+                      }`}>
+                        {completed}/{exam.sections.length}
+                      </span>
+                    </div>
+                    {completed > 0 && (
+                      <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-blue-100">
+                        <div className="h-full rounded-full bg-blue-600" style={{ width: `${completed / exam.sections.length * 100}%` }} />
+                      </div>
+                    )}
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+
+        <div className="mb-3">
+          <h2 className="font-bold text-gray-800">{isSpanish ? 'Habilidades aritméticas' : 'Arithmetic skills'}</h2>
+          <p className="mt-0.5 text-xs text-gray-500">{isSpanish ? 'Práctica adaptativa generada' : 'Generated adaptive practice'}</p>
+        </div>
         <div className="space-y-3">
           {SKILLS.map(skill => {
             const m = mastery[skill.tag] ?? 0

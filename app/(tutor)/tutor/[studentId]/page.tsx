@@ -6,6 +6,7 @@ import { SKILLS } from '@/lib/math'
 import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
 import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
+import { MATH_EXAMS } from '@/content/math-exams'
 
 function mathMasteryColor(v: number) {
   if (v >= 0.75) return 'bg-green-500'
@@ -27,7 +28,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
   const student = { id: rawStudent.id as string, name: rawStudent.name as string, last_active: rawStudent.last_active as number }
 
-  const [tracks, mpResult, vpResult, tsResult, laResult, mathResult, mathSessionResult] = await Promise.all([
+  const [tracks, mpResult, vpResult, tsResult, laResult, mathResult, mathSessionResult, examProgressResult] = await Promise.all([
     getStudentTracks(db, studentId),
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5', args: [studentId] }),
@@ -35,12 +36,14 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT session_type, COUNT(*) as count FROM math_sessions WHERE user_id = ? GROUP BY session_type', args: [studentId] }),
+    db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
 
   type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; teach_session_count: number; practice_score: number | null }
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
   type TeachingSessionRow = { id: string; module_slug: string; started_at: number; phrases_taught: string }
   type MathSessionCountRow = { session_type: string; count: number }
+  type ExamProgressRow = { exam_id: string; section_slug: string; attempts: number; best_points: number; best_possible: number }
 
   const moduleProgress = mpResult.rows as unknown as ModProgressRow[]
   const vocabProgress = vpResult.rows as unknown as VocabProgressRow[]
@@ -48,6 +51,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const lastActivity = laResult.rows[0] as unknown as { date: string } | undefined
   const mathRow = mathResult.rows[0]
   const mathSessionCounts = mathSessionResult.rows as unknown as MathSessionCountRow[]
+  const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
   const visibleModules = filterModulesByTracks(ALL_MODULES, tracks)
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
 
@@ -171,6 +175,37 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       {/* Math Progress */}
       <div className="mb-6">
         <h3 className="font-bold text-gray-700 mb-3">➕ Math Progress</h3>
+        {tracks.includes('math') && (
+          <div className="mb-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">New York exam lessons</p>
+            <p className="mb-2 mt-1 text-[11px] leading-relaxed text-gray-400">Practice scores; written responses include learner self-assessment.</p>
+            <div className="space-y-2">
+              {MATH_EXAMS.flatMap(exam => exam.sections.map(section => {
+                const row = examProgress.find(item => item.exam_id === exam.id && item.section_slug === section.slug)
+                const percentage = row?.best_possible
+                  ? Math.round(Number(row.best_points) / Number(row.best_possible) * 100)
+                  : 0
+                return (
+                  <div key={`${exam.id}:${section.slug}`} className="rounded-xl border border-gray-100 bg-white p-3">
+                    <div className="flex items-center gap-2">
+                      <span>{section.emoji}</span>
+                      <span className="flex-1 text-xs font-medium text-gray-700">{section.title.en}</span>
+                      <span className={`text-xs font-bold ${percentage ? 'text-blue-700' : 'text-gray-300'}`}>{percentage}%</span>
+                    </div>
+                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-100">
+                      <div className="h-full rounded-full bg-blue-600" style={{ width: `${percentage}%` }} />
+                    </div>
+                    {row && (
+                      <p className="mt-1 text-[11px] text-gray-400">
+                        {Number(row.attempts)} {Number(row.attempts) === 1 ? 'attempt' : 'attempts'}
+                      </p>
+                    )}
+                  </div>
+                )
+              }))}
+            </div>
+          </div>
+        )}
         {!mathDiagDone ? (
           <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 text-center">
             <p className="text-sm text-gray-400">Diagnostic not yet taken</p>

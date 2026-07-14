@@ -164,6 +164,35 @@ async function initSchema(db: Client): Promise<void> {
       finished_at INTEGER,
       problems TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS math_exam_attempts (
+      id TEXT PRIMARY KEY,
+      user_id TEXT NOT NULL,
+      exam_id TEXT NOT NULL,
+      section_slug TEXT NOT NULL,
+      language TEXT NOT NULL CHECK(language IN ('en', 'es')),
+      started_at INTEGER NOT NULL,
+      expires_at INTEGER NOT NULL,
+      finished_at INTEGER,
+      question_ids TEXT NOT NULL,
+      responses TEXT NOT NULL DEFAULT '[]',
+      points_earned INTEGER,
+      points_possible INTEGER
+    );
+
+    CREATE TABLE IF NOT EXISTS math_exam_section_progress (
+      user_id TEXT NOT NULL,
+      exam_id TEXT NOT NULL,
+      section_slug TEXT NOT NULL,
+      attempts INTEGER NOT NULL DEFAULT 0,
+      best_points INTEGER NOT NULL DEFAULT 0,
+      best_possible INTEGER NOT NULL DEFAULT 0,
+      latest_points INTEGER NOT NULL DEFAULT 0,
+      latest_possible INTEGER NOT NULL DEFAULT 0,
+      completed_at INTEGER,
+      updated_at INTEGER NOT NULL,
+      PRIMARY KEY (user_id, exam_id, section_slug)
+    );
   `)
   await ensureColumn(db, 'users', 'email', 'TEXT')
   await ensureUsersTableSupportsAdminRole(db)

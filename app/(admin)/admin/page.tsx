@@ -46,7 +46,7 @@ export default async function AdminPage() {
   ]
 
   const studentData = await Promise.all(students.map(async student => {
-    const [tracks, tutorIds, settings, modulesResult, vocabResult, teachingResult, mathResult] = await Promise.all([
+    const [tracks, tutorIds, settings, modulesResult, vocabResult, teachingResult, mathResult, examProgressResult] = await Promise.all([
       getStudentTracks(db, student.id),
       getStudentTutorIds(db, student.id),
       getStudentSettings(db, student.id),
@@ -54,6 +54,7 @@ export default async function AdminPage() {
       db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM teaching_sessions WHERE user_id = ?', args: [student.id] }),
       db.execute({ sql: 'SELECT total_problems, total_correct FROM math_progress WHERE user_id = ?', args: [student.id] }),
+      db.execute({ sql: 'SELECT COUNT(*) as count FROM math_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
     ])
     type ModuleProgressRow = { module_slug: string; practice_completed_at: number | null }
     const moduleRows = modulesResult.rows as unknown as ModuleProgressRow[]
@@ -75,6 +76,7 @@ export default async function AdminPage() {
       teachSessions: Number(teachingResult.rows[0]?.count ?? 0),
       mathProblems,
       mathAccuracy: mathProblems ? Math.round(mathCorrect / mathProblems * 100) : 0,
+      examSectionsCompleted: Number(examProgressResult.rows[0]?.count ?? 0),
     }
   }))
 
@@ -160,6 +162,7 @@ export default async function AdminPage() {
                   <div className="bg-slate-50 rounded-lg p-3">
                     <p className="text-xl font-bold text-amber-700">{student.mathProblems}</p>
                     <p className="text-xs text-slate-500">Math problems · {student.mathAccuracy}%</p>
+                    <p className="mt-0.5 text-xs text-blue-600">{student.examSectionsCompleted} NY exam sections</p>
                   </div>
                 </div>
               </div>
