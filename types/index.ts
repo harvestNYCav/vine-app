@@ -29,9 +29,16 @@ export interface QuizQuestion {
   options?: string[]
 }
 
+export interface DialogueLine {
+  speaker: 'tutor' | 'student'
+  en: string
+  es?: string
+}
+
 export interface TeachingScenario {
   label: string
   text: string
+  script?: DialogueLine[]
 }
 
 export interface FillInBlankItem {
