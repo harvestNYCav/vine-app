@@ -2,10 +2,14 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Module, VocabItem, TeachingScenario } from '@/types'
+import { shuffle } from '@/lib/study'
 
 type Slide =
   | { type: 'title' }
   | { type: 'vocab'; items: VocabItem[]; part: number; total: number }
+  | { type: 'pronunciation'; items: VocabItem[] }
+  | { type: 'matching'; enItems: VocabItem[]; esItems: VocabItem[] }
+  | { type: 'transcription'; items: VocabItem[] }
   | { type: 'scenario'; scenario: TeachingScenario; index: number; total: number }
   | { type: 'wrapup' }
 
@@ -17,6 +21,11 @@ function buildSlides(mod: Module): Slide[] {
     chunks.push(mod.vocab.slice(i, i + chunkSize))
   }
   chunks.forEach((items, i) => slides.push({ type: 'vocab', items, part: i + 1, total: chunks.length }))
+  if (mod.track === 'esl') {
+    slides.push({ type: 'pronunciation', items: mod.vocab })
+    slides.push({ type: 'matching', enItems: mod.vocab, esItems: shuffle(mod.vocab) })
+    slides.push({ type: 'transcription', items: mod.vocab })
+  }
   mod.teachingScenarios.forEach((scenario, i) =>
     slides.push({ type: 'scenario', scenario, index: i + 1, total: mod.teachingScenarios.length })
   )
@@ -79,11 +88,78 @@ export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
           </div>
         )}
 
+        {slide.type === 'pronunciation' && (
+          <div className="w-full max-w-3xl">
+            <p className="text-amber-300 text-lg mb-2">Pronunciation Practice</p>
+            <p className="text-gray-400 mb-6">Tutor: say each word and sentence first, then have the student repeat it aloud.</p>
+            <div className="space-y-6 text-left">
+              {slide.items.map(item => (
+                <div key={item.id} className="border-b border-gray-700 pb-4">
+                  <p className="text-3xl md:text-4xl font-bold">{item.en}</p>
+                  <p className="text-2xl md:text-3xl text-amber-300 mt-1">{item.es}</p>
+                  <p className="text-base md:text-lg text-gray-400 mt-2 italic">{item.exampleEn}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {slide.type === 'matching' && (
+          <div className="w-full max-w-3xl">
+            <p className="text-amber-300 text-lg mb-2">Matching Practice</p>
+            <p className="text-gray-400 mb-6">Student: draw a line matching each English word to its Spanish translation.</p>
+            <div className="grid grid-cols-2 gap-x-8">
+              <div className="space-y-3 text-left">
+                {slide.enItems.map(item => (
+                  <p key={item.id} className="text-xl md:text-2xl font-semibold">{item.en}</p>
+                ))}
+              </div>
+              <div className="space-y-3 text-left">
+                {slide.esItems.map(item => (
+                  <p key={item.id} className="text-xl md:text-2xl text-amber-300">{item.es}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {slide.type === 'transcription' && (
+          <div className="w-full max-w-3xl">
+            <p className="text-amber-300 text-lg mb-2">Transcription Practice</p>
+            <p className="text-gray-400 mb-6">Student: copy each word and example sentence into your notebook, then read it aloud.</p>
+            <div className="space-y-6 text-left">
+              {slide.items.map(item => (
+                <div key={item.id} className="border-b border-gray-700 pb-4">
+                  <p className="text-2xl md:text-3xl font-bold">{item.en}</p>
+                  <p className="text-lg text-amber-300">{item.es}</p>
+                  <p className="text-base text-gray-400 mt-2 italic">{item.exampleEn}</p>
+                  <p className="text-base text-gray-500 italic">{item.exampleEs}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {slide.type === 'scenario' && (
           <div className="w-full max-w-2xl">
             <p className="text-amber-300 text-lg mb-6">Role-Play {slide.index}/{slide.total}</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{slide.scenario.label}</h2>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">{slide.scenario.text}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{slide.scenario.label}</h2>
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-8">{slide.scenario.text}</p>
+
+            {slide.scenario.script && (
+              <div className="text-left space-y-4">
+                {slide.scenario.script.map((line, i) => (
+                  <div key={i} className={line.speaker === 'tutor' ? 'text-amber-300' : 'text-white'}>
+                    <span className="font-semibold uppercase text-sm tracking-wide mr-2">
+                      {line.speaker === 'tutor' ? 'Tutor' : 'Student'}:
+                    </span>
+                    <span className="text-lg md:text-xl">{line.en}</span>
+                    {line.es && <span className="block text-sm text-gray-500 italic">{line.es}</span>}
+                  </div>
+                ))}
+                <p className="text-gray-400 italic pt-4">Now swap roles and read it again.</p>
+              </div>
+            )}
           </div>
         )}
 
