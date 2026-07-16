@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "ef047fa3986775c1d270e45ec4a3f935e0e05f79d707467a2879cf7187ed2e91",
+  "crops": {
+    "8": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        265.467
+      ]
+    },
+    "9": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        265.467,
+        584.0,
+        460.367
+      ]
+    },
+    "10": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        460.367,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        267.867
+      ]
+    },
+    "12": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        267.867,
+        584.0,
+        464.667
+      ]
+    },
+    "13": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        464.667,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        254.667
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        254.667,
+        584.0,
+        451.967
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        451.967,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        308.667
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        308.667,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.267
+      ]
+    },
+    "30": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        270.267,
+        584.0,
+        467.567
+      ]
+    },
+    "31": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        467.567,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        266.667
+      ]
+    },
+    "33": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        266.667,
+        584.0,
+        463.967
+      ]
+    },
+    "34": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        463.967,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "8": {
+      "width": 1136,
+      "height": 339
+    },
+    "9": {
+      "width": 998,
+      "height": 307
+    },
+    "10": {
+      "width": 1103,
+      "height": 430
+    },
+    "11": {
+      "width": 1131,
+      "height": 338
+    },
+    "12": {
+      "width": 919,
+      "height": 307
+    },
+    "13": {
+      "width": 821,
+      "height": 307
+    },
+    "14": {
+      "width": 732,
+      "height": 404
+    },
+    "22": {
+      "width": 966,
+      "height": 308
+    },
+    "23": {
+      "width": 959,
+      "height": 307
+    },
+    "24": {
+      "width": 844,
+      "height": 308
+    },
+    "25": {
+      "width": 1081,
+      "height": 431
+    },
+    "26": {
+      "width": 1086,
+      "height": 370
+    },
+    "29": {
+      "width": 699,
+      "height": 306
+    },
+    "30": {
+      "width": 757,
+      "height": 305
+    },
+    "31": {
+      "width": 1119,
+      "height": 403
+    },
+    "32": {
+      "width": 1088,
+      "height": 339
+    },
+    "33": {
+      "width": 1118,
+      "height": 339
+    },
+    "34": {
+      "width": 849,
+      "height": 307
+    },
+    "35": {
+      "width": 1008,
+      "height": 308
+    }
+  },
+  "altText": {
+    "8": "Question 8. Based on information in the article, what can the reader conclude is the most likely reason Yo-Yo 8 was able to play a public recital when he was only five years old? A Yo-Yo realized that he enjoyed performing for an audience’s reaction. B Yo-Yo was ready to perform because of his father’s teaching. C Yo-Yo had finally found an instrument that he enjoyed playing. D Yo-Yo knew he would perform the music well because of his excellent memory.",
+    "9": "Question 9. Which statement best describes the relationship between Yo-Yo Ma and his parents? A __ They support Yo-Yo’s early desire to become a cello player. B They all enjoy listening to different types of music. C__ They hope Yo-Yo’s choice of instrument will be the piano. They are all talented enough to become famous musicians. D Y S",
+    "10": "Question 10. Which detail from the article best shows how Yo-Yo connects with people when he performs? “Yo-Yo Ma has been playing the cello since he was a young boy. He gave his first concert A atthe age of five.” (paragraph 1) “Yo-Yo Ma rocks his cello from side to side. He draws the bow across its strings.” B (paragraph 2) c “He throws his head back. His eyes close, his glasses reflecting the bright lights of the stage.” (paragraph 2) “The audience grows quiet. Soon they are drawn into a story he tells using his cello” D (paragraph 3)",
+    "11": "Question 11. Which detail from paragraph 6 best supports the meaning of the phrase “as natural as breathing” 11 in the same paragraph? A “surrounded by music” B “trained as an opera singer” C “played piano and violin” D “records of classical music”",
+    "12": "Question 12. Why are paragraphs 6 and 7 important to the article? A They suggest that Yo-Yo’s musical talents come naturally to him. B___ They show how Yo-Yos parents greatly influence his passion for music. C __ They explain why Yo-Yo has more interest in the cello than the violin. D They describe how Yo-Yo quickly learns to play because of his teacher.",
+    "13": "Question 13. Which central idea is supported by details in paragraphs 12 and 13? 13 A Family members are necessary for success. B Learning something new can prove challenging. C Small problems rarely cause people to feel stress. D Breaking large tasks into smaller parts helps learners.",
+    "14": "Question 14. Read this claim from paragraph 15. 14 Dr. Ma said Yo-Yo played “like a shining star.” Which phrase from paragraph 15 best supports this claim? A “had a good memory” B “concentrated better than most” C “could play three Bach suites by heart” D “gave his first public recital at the University of Paris”",
+    "22": "Question 22. Which statement best expresses First Woman’s relationship with the First People? 22 A She hopes her people will not become discouraged. B She is focused on bringing new types of light to her people. C She believes her people should be happy with the light they have. D She is frustrated that her efforts are not appreciated by her people.",
+    "23": "Question 23. Which phrase best supports the meaning of “illuminate” as used in paragraph 1? A __ “too far away to bring heat” (paragraph 1) B “They would give more light” (paragraph 3) C “They flicker on and off” (paragraph 4) D “the people brought her a slab of quartz” (paragraph 6)",
+    "24": "Question 24. How does the narrator mainly develop the character of First Woman? 24 A by describing her actions B by referring to her visit to Fire Mountain C by sharing her thoughts D by showing her working with First Man",
+    "25": "Question 25. Which sentence best represents the turning point in the story? 25 “Eventually, First Woman had an idea for a different way to send light to Earth.” A (paragraph 6) “On the rim, they placed bird feathers—cardinal, lark, and eagle—to fly it through the B sky and spread the rays of heat and light in the four directions.” (paragraph 7) “At that moment, two ancient, wise men stepped forward and offered to help.” C (paragraph 11) “Once the Sun and the Moon were following their paths through the sky, the people D returned to where First Woman had carved the wheels.” (paragraph 12)",
+    "26": "Question 26. Which detail best expresses a theme of being determined? 26 “So First Woman sent Glowworm, Fox Fire, Lightning Beetle, and Firefly to the four A corners.” (paragraph 3) B “She consulted Fire Man on his glowing mountain.” (paragraph 4) C “It took a lot of hard work and a lot of help . . .” (paragraph 6) “. . . they worked with their flint knives, chisels, and stone hammers to shape the stars.” D (paragraph 13)",
+    "29": "Question 29. What is the meaning of the word “bask” in paragraph 1? 29 A to enjoy B to hide C to ignore D to swim",
+    "30": "Question 30. Paragraph 10 is important to the article because it 30 A describes why a biologist “loves to look at turtles” B questions why turtles are rarely “all the same shape” C suggests that some turtles have round “dome shells” D states that various shells are better for “different turtles”",
+    "31": "Question 31. According to scientists, turtles have existed on this planet for more than 220 million years. How 31 does the author support this idea in the article? A by explaining that turtles belong to “the same family as snakes and lizards” (paragraph 3) B by referring to a “fossil and other clues” that show how shells have changed (paragraph 4) by explaining that it is possible to “see from the ridges how much the turtle has grown” C (paragraph 7) by referring to the “flat shape and leathery shell” that help alligator snapping turtles swim D quickly (paragraph 11)",
+    "32": "Question 32. Which phrase from paragraph 14 best supports the meaning of the word “camouflage” in the 32 same paragraph? A “a lighter color on their plastron” B “looking down into the water” C “blends in with the dark water” D “predators swimming below”",
+    "33": "Question 33. According to information in the section “What Shape Is Your Shell?”, how do some turtles catch 33 their prey? A by making holes in the sand B by remaining still and using their tongues C by pulling their legs into their shells D by having brown shells and yellow on their bellies",
+    "34": "Question 34. The diagram helps the reader better understand the article by showing A __ the location of different parts of a turtle’s shell B__ the size of the scutes found on a turtle’s shell C__ how the bridges connect the shell to the plastron D how the turtle is able to avoid different predators",
+    "35": "Question 35. Which detail would be most important to include in a summary of the article? 35 A Turtle muscles attach to shells in the same way human muscles attach to bones. B Different parts of the turtle shell work together to form a protective barrier. C Keratin can be found in both turtle shells and human hair and nails. D Scutes protect the turtle’s bones and provide color to the shell."
+  }
+}

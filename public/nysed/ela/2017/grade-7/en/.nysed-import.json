@@ -1,0 +1,404 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        245.25
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        245.25,
+        584.0,
+        439.65
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        439.65,
+        584.0,
+        703.373
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        281.25
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        281.25,
+        584.0,
+        475.65
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        475.65,
+        584.0,
+        703.373
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        703.373
+      ]
+    },
+    "8": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        257.4
+      ]
+    },
+    "9": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        257.4,
+        584.0,
+        527.85
+      ]
+    },
+    "10": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        527.85,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        256.95
+      ]
+    },
+    "12": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        256.95,
+        584.0,
+        515.25
+      ]
+    },
+    "13": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        515.25,
+        584.0,
+        706.6
+      ]
+    },
+    "14": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.373
+      ]
+    },
+    "29": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        311.85
+      ]
+    },
+    "30": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        311.85,
+        584.0,
+        703.373
+      ]
+    },
+    "31": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        299.7
+      ]
+    },
+    "32": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        299.7,
+        584.0,
+        494.1
+      ]
+    },
+    "33": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        494.1,
+        584.0,
+        703.373
+      ]
+    },
+    "34": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        245.25
+      ]
+    },
+    "35": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        245.25,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        257.4
+      ]
+    },
+    "37": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        257.4,
+        584.0,
+        551.7
+      ]
+    },
+    "38": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        551.7,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        245.25
+      ]
+    },
+    "40": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        245.25,
+        584.0,
+        439.65
+      ]
+    },
+    "41": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        439.65,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 862,
+      "height": 293
+    },
+    "2": {
+      "width": 1000,
+      "height": 293
+    },
+    "3": {
+      "width": 1004,
+      "height": 293
+    },
+    "4": {
+      "width": 1162,
+      "height": 405
+    },
+    "5": {
+      "width": 696,
+      "height": 287
+    },
+    "6": {
+      "width": 1149,
+      "height": 320
+    },
+    "7": {
+      "width": 1170,
+      "height": 405
+    },
+    "8": {
+      "width": 1135,
+      "height": 320
+    },
+    "9": {
+      "width": 1171,
+      "height": 453
+    },
+    "10": {
+      "width": 696,
+      "height": 287
+    },
+    "11": {
+      "width": 1150,
+      "height": 320
+    },
+    "12": {
+      "width": 1146,
+      "height": 430
+    },
+    "13": {
+      "width": 952,
+      "height": 294
+    },
+    "14": {
+      "width": 998,
+      "height": 293
+    },
+    "29": {
+      "width": 1166,
+      "height": 426
+    },
+    "30": {
+      "width": 817,
+      "height": 399
+    },
+    "31": {
+      "width": 1062,
+      "height": 400
+    },
+    "32": {
+      "width": 715,
+      "height": 287
+    },
+    "33": {
+      "width": 1111,
+      "height": 320
+    },
+    "34": {
+      "width": 951,
+      "height": 293
+    },
+    "35": {
+      "width": 1167,
+      "height": 320
+    },
+    "36": {
+      "width": 1072,
+      "height": 320
+    },
+    "37": {
+      "width": 1155,
+      "height": 509
+    },
+    "38": {
+      "width": 929,
+      "height": 293
+    },
+    "39": {
+      "width": 827,
+      "height": 293
+    },
+    "40": {
+      "width": 883,
+      "height": 293
+    },
+    "41": {
+      "width": 1133,
+      "height": 373
+    },
+    "42": {
+      "width": 977,
+      "height": 293
+    }
+  },
+  "altText": {
+    "1": "Question 1. According to the article, why do some parrotfishes make a cocoon? A to attract other fishes to their hiding place B_ to show other fishes they are asleep C to create a safe place for their eggs D to hide themselves from predators",
+    "2": "Question 2. W hy are some diurnal fishes harder to see in the evening than in the daytime? A The movement on the reef blurs their shapes. B Their predators can only detect outlines. C The light casts shadows that hide them. D Their skin color changes to blend in.",
+    "3": "Question 3. What statement best summarizes the information in lines 1 through 9? A Daytime fish who live in the coral reef generally feeding at dusk. B Fish have the natural ability to become less visible at night in the coral reef. C Predatory fish hide in the coral reef so they can feed on the diurnal fish. D Fish in the coral reef have remarkably better vision during the day.",
+    "4": "Question 4. Which sentence from the article best explains why some fishes may be dangerous to humans? A “Though twilight predators are not very good at distinguishing colors, they can detect shape, outlines, and movement well.” (lines 25 and 26) B “Many predators that have been quietly waiting in the background all day become more active at dusk and dawn.” (lines 28 and 29) C “The crepuscular hunters have ingenious ways of picking off their prey.” (lines 29 and 30) D “By thrusting out its lower jaw, its mouth becomes big enough to swallow almost any prey.” (lines 31 and 32)",
+    "5": "Question 5. W hat does the phrase “zero in on” in line 40 mean? A to locate B to look C to threaten D to smell",
+    "6": "Question 6. T he author develops a central idea about how fishes adapt to their environments by focusing mostly on the A light in the water B depth of the reef C currents in the water D shape of the reef",
+    "7": "Question 7. Which detail is most important to include in a summary of the article? A “Because fishes don’t have eyelids to close, it’s impossible to tell whether or not most fishes are really sleeping.” (lines 15 and 16) B “Many predators that have been quietly waiting in the background all day become more a ctive at dusk and dawn.” (lines 28 and 29) C “It has been rumored that giant groupers (which may weigh up to 1,000 pounds) have been known to swallow divers whole!” (lines 32 and 33) D “Many daytime fishes move into deeper water, rise to the surface, or spawn during outgoing tides . . .” (lines 49 and 50)",
+    "8": "Question 8. H ow does the author support the claim that “gracious living had been a long time coming” (line 4)? A by describing the excitement caused by new improvements in refrigerators B by describing the menus recommended by refrigerator manufacturers C by tracing the development of various methods for keeping food cool D by explaining the relationship between temperature and food safety",
+    "9": "Question 9. R ead this sentence about pond ice from lines 20 through 22. T hen it was hauled from home to home on a horse-drawn cart, packed in sawdust, and put in the family’s icehouse, where, she says, it lasted for months. Based on the information in lines 8 through 10, which was most likely the reason for packing pond ice in sawdust? A to keep the ice from chipping B to prevent the ice from melting C to keep the ice from becoming slimy D to prevent the ice from becoming polluted",
+    "10": "Question 10. W hat is the meaning of the word “hoist” in line 26? A lift B sell C carve D locate",
+    "11": "Question 11. According to the article, what improvements were made to resolve a safety issue in the older refrigerators? A lining the cabinets with zinc B attaching an overflow pipe C using sawdust as insulation D changing the type of coolant",
+    "12": "Question 12. Which quotation from the article best supports the conclusion that advances in refrigeration improved life for the average person? A “To stock the box, city people bought ice, and country dwellers harvested it.” (line 17) B “When commercial icehouses opened in the early 1800s, they were considered a business with a future.” (lines 26 and 27) C “All of a sudden, the middle class could have things that seemed high class a few years before.” (lines 47 and 48) D “Today, while the mechanics have remained much the same, the refrigerator has gotten ever fancier.” (lines 51 and 52)",
+    "13": "Question 13. How do lines 50 through 53 develop a central idea of the article? A by showing that some people considered refrigerators unnecessary B by explaining that refrigerators have improved very little over the years C by comparing refrigerators sold in the past with refrigerators sold today D by showing that refrigerators gained widespread acceptance over time",
+    "14": "Question 14. Which detail would be most important to include in a summary of the article? A Refrigeration was essential for making jelled salads. B “Summer complaint” was another name for food poisoning. C Modern refrigerators include icemakers and defrost systems. D Refrigerators gained popularity after they became small and affordable.",
+    "29": "Question 29. Read these sentences from lines 13 and 14. “ It has everything you need.” And except for the tools, rocks, plants, fish, accessories, electrical power to the site, and the hole itself, it did. Why does the author most likely include this description of the pond-building kit? A to maintain a humorous tone B to introduce the main conflict C to express the narrator’s disappointment D to demonstrate the parents’ support of their son",
+    "30": "Question 30. Read this sentence from line 38. I approached the task like a starving man at a banquet. What is the main purpose of the comparison in this sentence? A to describe the narrator’s lack of attention to detail B to emphasize the depth of the narrator’s enthusiasm C to show that the narrator feels weak from excitement D to show that the narrator is overcome by the job at hand",
+    "31": "Question 31. Read line 46. A t this rate, I figured, I’ll be basking in tranquillity in no time at all. What meaning does the phrase “basking in tranquillity” convey to the reader? A The narrator expects positive recognition around town for his efforts. B The narrator believes the vision of peaceful relaxation shown in the video. C The narrator is unaccustomed to such difficult work and will soon need a rest. D The narrator is comparing himself to a groundhog that is sitting in the sunshine.",
+    "32": "Question 32. Which lines best reveal an overall theme of the story? A lines 25 through 28 B lines 38 through 40 C lines 47 and 48 D lines 63 and 64",
+    "33": "Question 33. I n lines 63 through 73, how does the narrator’s description of the location and history of Melville, Kansas, contribute to the plot? A It demonstrates that the new pond is better than other ponds. B It reveals the foolishness of the narrator’s attempt to create a new pond. C It emphasizes the importance of the new pond to the narrator. D It explains the town’s need for a new pond.",
+    "34": "Question 34. W hich lines from the story reveal a change in the narrator’s point of view? A lines 49 through 53 B lines 54 through 57 C lines 59 through 62 D lines 74 through 77",
+    "35": "Question 35. H ow does the narrator’s reaction to his pond first filling with water differ from his outlook at the end of the story? A He is excited at first but then becomes disappointed. B He is worried at first but then feels satisfied. C He is scared at first and later becomes angry. D He is happy at first and later feels proud.",
+    "36": "Question 36. Which words from lines 1 through 8 best help the reader understand the meaning of “suppressing” (line 5)? A “now understand the importance of fire” B “a lightning fire poses no danger” C “have not been allowed to burn” D “carefully planned burns”",
+    "37": "Question 37. Read this sentence from lines 6 and 7. T he best answer to these problems appears to be to fight fire with fire. Which evidence from the article best supports this claim? A “But prescribed burning is more likely to be planned for less extreme conditions so the fires can be better controlled.” (lines 10 and 11) B “A prescribed fire should burn away heavy undergrowth of brush to remove potential fuel for wildfire.” (lines 17 and 18) C “When the brush and deadwood on the forest floor burn, they release nutrients that can nourish the trees, grasses, and other forest plants.” (lines 22 and 23) D “In recent years, more and more people have moved into the countryside, often right on the borders of National Forest lands.” (lines 33 and 34)",
+    "38": "Question 38. How do fires benefit wildlife? A Fires help remove older trees that crowd forests. B The possibility of fire limits where cattle are allowed to graze. C The possibility of fire limits how close people can live to forests. D Fires help create conditions that cause more food to become available.",
+    "39": "Question 39. W hat is the meaning of “prone” (line 44) as used in the article? A likely B useful C starting D existing",
+    "40": "Question 40. W hat have managers of public lands learned from Native Americans? A how fire helps maintain grassland areas B the importance of protecting natural habitats C how planned fires can be used to prevent large fires D the role of cattle management in protecting grassland areas",
+    "41": "Question 41. Which sentence best expresses the central idea of the article? A “Managers of some public lands now understand the importance of fire in the cycles of nature.” (lines 1 and 2) B “How do land managers decide where to burn?” (line 32) C “Unfortunately, many of the forests have gone so long without fire that even prescribed burning would be dangerous.” (lines 47 and 48) D “Not everyone is happy with prescribed burning.” (line 59)",
+    "42": "Question 42. H ow do lines 59 through 69 contribute to the discussion of prescribed burns? A by describing how attitudes have changed with time B by showing that the benefits outweigh the costs C by proving that conflicting opinions are wrong D by exposing the self-interest of opponents"
+  }
+}

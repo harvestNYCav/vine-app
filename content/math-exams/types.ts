@@ -1,3 +1,5 @@
+import type { GradeLevel } from '@/lib/grade-levels'
+
 export type MathExamLanguage = 'en' | 'es'
 
 export type MathExamQuestionType =
@@ -6,6 +8,7 @@ export type MathExamQuestionType =
   | 'constructed-response'
 
 export type MathExamChoice = 'A' | 'B' | 'C' | 'D'
+export type MathExamQuestionNumberKind = 'official' | 'release-ordinal'
 
 export interface LocalizedText {
   en: string
@@ -20,7 +23,7 @@ export interface MathExamQuestionImageVariant {
 
 export interface MathExamQuestionImage {
   en: MathExamQuestionImageVariant
-  es: MathExamQuestionImageVariant
+  es?: MathExamQuestionImageVariant
   alt: LocalizedText
 }
 
@@ -50,7 +53,8 @@ export interface MathExamQuestionRecord {
   examId: string
   sectionSlug: string
   number: number
-  session: 1 | 2
+  numberKind?: MathExamQuestionNumberKind
+  session: 1 | 2 | null
   sourcePage: number
   type: MathExamQuestionType
   points: 1 | 2 | 3
@@ -85,12 +89,16 @@ export interface MathExamDefinition {
   id: string
   slug: string
   year: number
-  grade: number
+  grade: GradeLevel
   standardsFramework: 'CCLS' | 'NGLS'
+  supportedLanguages: MathExamLanguage[]
   title: LocalizedText
   description: LocalizedText
   sourceTitle: LocalizedText
-  sourceUrl: LocalizedText
+  sourceUrl: {
+    en: string
+    es?: string
+  }
   accessedAt: string
   sections: MathExamSectionDefinition[]
 }

@@ -7,7 +7,9 @@ import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
 import { todayString, nextSaturday } from '@/lib/scheduling'
 import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
-import { MATH_EXAMS } from '@/content/math-exams'
+import { getMathExamsForGrade } from '@/content/math-exams'
+import { getElaExamsForGrade } from '@/content/ela-exams'
+import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
 
 function mathMasteryColor(v: number) {
@@ -33,8 +35,9 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const today = todayString()
   const nextDate = nextSaturday()
 
-  const [tracks, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, nextSessionResult, examProgressResult] = await Promise.all([
+  const [tracks, settings, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, nextSessionResult, examProgressResult, elaExamProgressResult] = await Promise.all([
     getStudentTracks(db, studentId),
+    getStudentSettings(db, studentId),
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5', args: [studentId] }),
     db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [studentId] }),
@@ -43,6 +46,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?', args: [studentId, today] }),
     db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?', args: [studentId, nextDate] }),
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
+    db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
 
   const todaySessionRow = todaySessionResult.rows[0] as unknown as { module_slug: string; homework_assigned: number | bigint } | undefined
@@ -62,6 +66,9 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const mathRow = mathResult.rows[0]
   const mathSessionCounts = mathSessionResult.rows as unknown as MathSessionCountRow[]
   const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
+  const assignedExams = getMathExamsForGrade(settings.gradeLevel)
+  const elaExamProgress = elaExamProgressResult.rows as unknown as ExamProgressRow[]
+  const assignedElaExams = getElaExamsForGrade(settings.gradeLevel)
   const visibleModules = filterModulesByTracks(ALL_MODULES, tracks)
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
 
@@ -196,15 +203,51 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         </div>
       )}
 
+      {tracks.includes('ela') && (
+        <div className="mb-6">
+          <h3 className="mb-3 font-bold text-gray-700">📖 ELA Exam Progress</h3>
+          <p className="mb-2 text-[11px] leading-relaxed text-gray-400">
+            {settings.gradeLevel ? `Grade ${settings.gradeLevel} · released multiple-choice practice` : 'Grade not assigned'}
+          </p>
+          <div className="space-y-2">
+            {assignedElaExams.flatMap(exam => exam.sections.map(section => {
+              const row = elaExamProgress.find(item => item.exam_id === exam.id && item.section_slug === section.slug)
+              const percentage = row?.best_possible
+                ? Math.round(Number(row.best_points) / Number(row.best_possible) * 100)
+                : 0
+              return (
+                <div key={`${exam.id}:${section.slug}`} className="rounded-xl border border-gray-100 bg-white p-3">
+                  <div className="flex items-center gap-2">
+                    <span>{section.emoji}</span>
+                    <span className="flex-1 text-xs font-medium text-gray-700">{exam.year} · {section.title}</span>
+                    <span className={`text-xs font-bold ${percentage ? 'text-purple-700' : 'text-gray-300'}`}>{percentage}%</span>
+                  </div>
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-100">
+                    <div className="h-full rounded-full bg-purple-600" style={{ width: `${percentage}%` }} />
+                  </div>
+                  {row && (
+                    <p className="mt-1 text-[11px] text-gray-400">
+                      {Number(row.attempts)} {Number(row.attempts) === 1 ? 'attempt' : 'attempts'}
+                    </p>
+                  )}
+                </div>
+              )
+            }))}
+          </div>
+        </div>
+      )}
+
       {/* Math Progress */}
       <div className="mb-6">
         <h3 className="font-bold text-gray-700 mb-3">➕ Math Progress</h3>
         {tracks.includes('math') && (
           <div className="mb-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">New York exam lessons</p>
-            <p className="mb-2 mt-1 text-[11px] leading-relaxed text-gray-400">Practice scores; written responses include learner self-assessment.</p>
+            <p className="mb-2 mt-1 text-[11px] leading-relaxed text-gray-400">
+              {settings.gradeLevel ? `Grade ${settings.gradeLevel} · automatically graded multiple choice` : 'Grade not assigned'}
+            </p>
             <div className="space-y-2">
-              {MATH_EXAMS.flatMap(exam => exam.sections.map(section => {
+              {assignedExams.flatMap(exam => exam.sections.map(section => {
                 const row = examProgress.find(item => item.exam_id === exam.id && item.section_slug === section.slug)
                 const percentage = row?.best_possible
                   ? Math.round(Number(row.best_points) / Number(row.best_possible) * 100)
@@ -213,7 +256,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                   <div key={`${exam.id}:${section.slug}`} className="rounded-xl border border-gray-100 bg-white p-3">
                     <div className="flex items-center gap-2">
                       <span>{section.emoji}</span>
-                      <span className="flex-1 text-xs font-medium text-gray-700">{section.title.en}</span>
+                      <span className="flex-1 text-xs font-medium text-gray-700">{exam.year} · {section.title.en}</span>
                       <span className={`text-xs font-bold ${percentage ? 'text-blue-700' : 'text-gray-300'}`}>{percentage}%</span>
                     </div>
                     <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-100">

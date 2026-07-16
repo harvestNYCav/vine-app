@@ -8,6 +8,7 @@ import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
 import LangToggle from '../../../LangToggle'
 import NYSEDAttribution from '../NYSEDAttribution'
+import { studentCanAccessMathExam } from '@/lib/math-exam-access'
 
 type ProgressRow = {
   section_slug: string
@@ -38,9 +39,9 @@ export default async function MathExamPage({
       args: [session!.userId, exam.id],
     }),
   ])
-  if (!tracks.includes('math')) notFound()
+  if (!studentCanAccessMathExam(tracks, settings, exam)) notFound()
 
-  const canUseSpanish = settings.mathSpanishEnabled
+  const canUseSpanish = settings.mathSpanishEnabled && exam.supportedLanguages.includes('es')
   const isSpanish = canUseSpanish && lang === 'es'
   const progress = progressResult.rows as unknown as ProgressRow[]
   const completedCount = progress.filter(item => item.completed_at).length
@@ -87,8 +88,8 @@ export default async function MathExamPage({
 
       <p className="mb-3 text-xs leading-relaxed text-gray-500">
         {isSpanish
-          ? 'Las puntuaciones de práctica incluyen la autoevaluación del estudiante en las respuestas escritas.'
-          : 'Practice scores include learner self-assessment on written responses.'}
+          ? 'Todas las preguntas de esta colección son de opción múltiple y se califican automáticamente.'
+          : 'Every question in this collection is multiple choice and graded automatically.'}
       </p>
 
       <div className="space-y-3">

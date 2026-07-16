@@ -1,0 +1,348 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        519.119
+      ]
+    },
+    "3": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        519.119,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "5": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        507.119
+      ]
+    },
+    "6": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        507.119,
+        584.0,
+        702.372
+      ]
+    },
+    "13": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "14": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "16": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        477.143
+      ]
+    },
+    "17": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        477.143,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        318.243
+      ]
+    },
+    "19": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        318.243,
+        584.0,
+        702.372
+      ]
+    },
+    "20": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        261.267
+      ]
+    },
+    "21": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        261.267,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        318.243
+      ]
+    },
+    "23": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        318.243,
+        584.0,
+        519.119
+      ]
+    },
+    "24": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        519.119,
+        584.0,
+        702.372
+      ]
+    },
+    "26": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        324.267
+      ]
+    },
+    "27": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        324.267,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "29": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        471.119
+      ]
+    },
+    "30": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        471.119,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 751,
+      "height": 319
+    },
+    "2": {
+      "width": 1114,
+      "height": 447
+    },
+    "3": {
+      "width": 921,
+      "height": 318
+    },
+    "4": {
+      "width": 894,
+      "height": 429
+    },
+    "5": {
+      "width": 1053,
+      "height": 318
+    },
+    "6": {
+      "width": 1070,
+      "height": 403
+    },
+    "13": {
+      "width": 982,
+      "height": 319
+    },
+    "14": {
+      "width": 1105,
+      "height": 570
+    },
+    "15": {
+      "width": 1050,
+      "height": 319
+    },
+    "16": {
+      "width": 1115,
+      "height": 356
+    },
+    "17": {
+      "width": 849,
+      "height": 318
+    },
+    "18": {
+      "width": 1022,
+      "height": 467
+    },
+    "19": {
+      "width": 1078,
+      "height": 318
+    },
+    "20": {
+      "width": 869,
+      "height": 319
+    },
+    "21": {
+      "width": 1104,
+      "height": 488
+    },
+    "22": {
+      "width": 954,
+      "height": 467
+    },
+    "23": {
+      "width": 1073,
+      "height": 318
+    },
+    "24": {
+      "width": 1025,
+      "height": 318
+    },
+    "26": {
+      "width": 986,
+      "height": 467
+    },
+    "27": {
+      "width": 1130,
+      "height": 527
+    },
+    "28": {
+      "width": 913,
+      "height": 319
+    },
+    "29": {
+      "width": 1116,
+      "height": 356
+    },
+    "30": {
+      "width": 1121,
+      "height": 319
+    },
+    "31": {
+      "width": 947,
+      "height": 319
+    }
+  },
+  "altText": {
+    "1": "Question 1. What claim does Mr. Wheeler make in paragraph 1? A The girls can win the game if they have a plan. B__ The girls will easily win the game. C the girls should work harder during practice. D The girls are too tired to play well.",
+    "2": "Question 2. Which sentence from the story best supports a theme about believing in yourself? A “The vital thing is not to concede a goal!” (paragraph 4) “Besides, you have to remember, in this game it’s what goes on inside your B head that matters.” (paragraph 6) “ “Mega talent—a rising soccer superstar; she wrote beside Tyra’s name.” Cc (paragraph 15) “Alicia fed the ball back to Tyra, jumped the sprawling defender, and ran D free” (paragraph 21)",
+    "3": "Question 3. What does the reader learn about Tyra in paragraphs 6 through 8? 3 A Tyra knows the team needs more practice. B Tyra is a strong leader for her team. C Tyra likes to talk to the team a lot. D Tyra feels angry with her team.",
+    "4": "Question 4. __ Read this sentence from paragraph 7 of the story. The whole team turned to her, hanging on every word. The phrase “hanging on every word” shows that the team is A __ Starting to doubt their ability to win the game B___ ready to end the game so they can relax C listening carefully to what Tyra is saying D ___ not understanding what Tyra plans to do",
+    "5": "Question 5. Where does the reader first learn about a change that leads to the team’s win? 5 A paragraph 13 B paragraph 17 C paragraph 18 D paragraph 20",
+    "6": "Question 6. Which detail would be most important to include in a summary of the story? 6 Mr. Wheeler tells the Fernbridge team to not let the other team score a A goal. Fernbridge must make it through the next forty-five minutes to win the B game. C Natalie gets the ball away from the other team and passes it to Tyra. D Tyra makes the decision to shoot the ball and scores a goal for her team.",
+    "13": "Question 13. What do the details in paragraphs 1 and 8 reveal about Spider Woman? 13 A She knows what others need. B She knows about many things. C She is an encouraging person. D She is a very careful person.",
+    "14": "Question 14. _ Itis said that it is important to be prepared in case of a problem. Which sentence best shows how this idea is shown in the story? “Tell them to catch my brothers and hunt the animals of the forest now, A __ before they return to the Great Spirit in the hard time to come.” (paragraph 4) “The next morning Little Owl woke to hear her mother calling, ‘Little Owl, go fetch some water? ” (paragraph 5) “She slipped the shell into her pocket, picked up the water jar, and walked Cc back to the house? (paragraph 7) “She expected to find broken bits of eggshell; instead, her eyes fell upon a D handful of dark, purple-red kernels of corn” (paragraph 12)",
+    "15": "Question 15. How are paragraph 4 and paragraph 10 related? A __ by telling how the first dream causes Little Owl to have another dream B__ by using dialogue to make a point about Little Owl’s people C__ bycomparing how Little Owl feels after each of her dreams D _ by telling how Little Owl can solve a problem by warning her people",
+    "16": "Question 16. Which detail from the story best supports the fish’s claim that Little Owl is a good 16 daughter? A Little Owl eats only a little cake and berries before going to bed. B Little Owl gets out of bed when her mother tells her to go get water. C Little Owl weaves a basket and her mother checks the work. D Little Owl goes to the marsh to gather twigs for basket-making.",
+    "17": "Question 17. What does the reader learn about Little Owl in paragraph 6? 17 A She forgets what she is doing easily. B She notices the things around her. C She enjoys collecting things for herself. D She dislikes doing chores in the morning.",
+    "18": "Question 18. 1g Read this sentence from paragraph 7. Suddenly her dream came rushing back to her, and she lost her grip on the handle of the jar. What does the phrase “rushing back to her” mean as used in the sentence? A __ Little Owl remembers events from her dream. B The dream causes Little Owl to feel upset. C The jar of water is too heavy for Little Owl. D Little Owl must hurry home with the water.",
+    "19": "Question 19. How do Little Owl’s actions in the story support a theme of listening to nature? 19 A She follows directions to weave a good basket. B She works hard collecting water for her family. C She gathers things from the marsh to share. D She plans to tell someone about her dreams.",
+    "20": "Question 20. What does “out of the question” mean as used in paragraph 1? 20 A a confusing action B an important goal C extremely interesting D completely impossible",
+    "21": "Question 21. Which sentence from the article best expresses a claim the author makes? 21 “A lot of good science starts with simply paying attention and thinking A about what you’ve seen.” (paragraph 2) “If you’ve ever watched bits of ash rising with the smoke from a fire, you’ve B seen it too.” (paragraph 3) “And the king of France wouldn’t allow it until one more experiment was C made.” (paragraph 6) “D’Arlandes leaned out, staring down at the crowd as they stared up at D him.” (paragraph 11)",
+    "22": "Question 22. Read this sentence from paragraph 9. 22 He ran a science museum and invented an early type of gas mask to protect workers in sewers. What does the word “ran” mean as it is used in the sentence? A moved at a fast speed B was a candidate for a position C was in charge of something D passed quickly in a direction",
+    "23": "Question 23. Which detail would be most important to include in a summary of the article? 23 A Étienne was a responsible and successful student when he was younger. B Joseph experienced failure both in school and at business. C Joseph and Étienne discovered that bags filled with hot air will rise up. D Joseph and Étienne chose to avoid riding in their own balloon.",
+    "24": "Question 24. Based on the article, how does making a deal with D’Arlandes help Rozier? 24 A D’Arlandes convinces the king to let them fly in a balloon. B D’Arlandes gathers a large crowd to watch the balloon flight. C D’Arlandes is skilled at using straw to keep a fire going. D D’Arlandes is familiar with the streets and buildings in the city.",
+    "26": "Question 26. Read this sentence from paragraph 1. Roofs covered in plants, or “green roofs,’ are sprouting up all over, from schools to city skyscrapers. What does the word “sprouting” suggest? A __ Rooftop gardens are good for all types of buildings. B._ More green rooftops are being built than ever before. C__ Buildings with green roofs can be easily seen. D Plants grow better when they are on a roof.",
+    "27": "Question 27. Many people believe you can turn trash into treasure. Which detail from the article 27 best supports this idea? “Architects are finding all sorts of new ways to build buildings that are A easier on the environment.” (paragraph 2) “Builders have found many creative ways to re-use old materials.” B (paragraph 10) “When it rains, the soil and plants soak up rainwater, which means less C water runs off into drains.” (paragraph 12) “City planners like green buildings because they save money.” D (paragraph 13)",
+    "28": "Question 28. How is paragraph 4 organized? 28 A by describing in order the steps for making a wall B by stating an idea about thick walls and giving examples C by sharing a reason for thick walls and the effects they have D by comparing and contrasting different kinds of walls",
+    "29": "Question 29. Based on the section “Sun Power,” how do big windows make a building better for 29 the environment? A Windows can be covered by shades. B Windows can be made from recycled glass. C Windows are placed where solar panels could be. D Windows allow in light and heat.",
+    "30": "Question 30. How does the section “A Better Home for All” support a central idea of the article? 30 A by describing how green roofs on buildings save energy B by explaining how soil helps plants in different weather conditions C by stating that roofs that are dark become very hot from the sun D by sharing that green buildings help city planners save money",
+    "31": "Question 31. The diagram supports the information in the article by showing that A __ wind power causes flags to move B__ buildings can be built to help the environment C__aschool bus can be powered by the sun D _ solar panels change sunlight into electricity"
+  }
+}

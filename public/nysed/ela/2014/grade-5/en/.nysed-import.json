@@ -1,0 +1,305 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
+  "crops": {
+    "1": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        69.711,
+        575.0,
+        199.81
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        241.41
+      ]
+    },
+    "3": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        221.81
+      ]
+    },
+    "4": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        225.21
+      ]
+    },
+    "5": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        69.711,
+        575.0,
+        266.41
+      ]
+    },
+    "6": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        194.71
+      ]
+    },
+    "7": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        66.392,
+        575.0,
+        195.891
+      ]
+    },
+    "8": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        206.51
+      ]
+    },
+    "9": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        69.711,
+        575.0,
+        196.11
+      ]
+    },
+    "10": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        65.209,
+        575.0,
+        192.308
+      ]
+    },
+    "11": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        64.209,
+        575.0,
+        190.708
+      ]
+    },
+    "12": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        262.46
+      ]
+    },
+    "13": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        188.61
+      ]
+    },
+    "14": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        195.81
+      ]
+    },
+    "15": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        202.71
+      ]
+    },
+    "16": {
+      "sourcePage": 38,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        197.01
+      ]
+    },
+    "17": {
+      "sourcePage": 39,
+      "box": [
+        28.0,
+        65.01,
+        575.0,
+        193.909
+      ]
+    },
+    "18": {
+      "sourcePage": 41,
+      "box": [
+        28.0,
+        66.01,
+        575.0,
+        248.509
+      ]
+    },
+    "19": {
+      "sourcePage": 43,
+      "box": [
+        28.0,
+        66.21,
+        575.0,
+        208.209
+      ]
+    },
+    "20": {
+      "sourcePage": 45,
+      "box": [
+        28.0,
+        65.21,
+        575.0,
+        191.809
+      ]
+    },
+    "21": {
+      "sourcePage": 46,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        198.16
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 1117,
+      "height": 289
+    },
+    "2": {
+      "width": 1098,
+      "height": 390
+    },
+    "3": {
+      "width": 1064,
+      "height": 347
+    },
+    "4": {
+      "width": 1068,
+      "height": 354
+    },
+    "5": {
+      "width": 1062,
+      "height": 437
+    },
+    "6": {
+      "width": 958,
+      "height": 286
+    },
+    "7": {
+      "width": 683,
+      "height": 287
+    },
+    "8": {
+      "width": 990,
+      "height": 313
+    },
+    "9": {
+      "width": 1000,
+      "height": 281
+    },
+    "10": {
+      "width": 1045,
+      "height": 282
+    },
+    "11": {
+      "width": 851,
+      "height": 281
+    },
+    "12": {
+      "width": 886,
+      "height": 437
+    },
+    "13": {
+      "width": 862,
+      "height": 273
+    },
+    "14": {
+      "width": 1054,
+      "height": 289
+    },
+    "15": {
+      "width": 1094,
+      "height": 304
+    },
+    "16": {
+      "width": 834,
+      "height": 292
+    },
+    "17": {
+      "width": 771,
+      "height": 287
+    },
+    "18": {
+      "width": 970,
+      "height": 405
+    },
+    "19": {
+      "width": 1010,
+      "height": 315
+    },
+    "20": {
+      "width": 950,
+      "height": 281
+    },
+    "21": {
+      "width": 1018,
+      "height": 294
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which information helps the reader understand the meaning of “cherish” in paragraph 6? A Kincaid’s memories are of happy times. B Kincaid’s memories are about outdoor activities. C Kincaid’s memories are about learning new things. D Kincaid’s memories are of people she will likely see again.",
+    "2": "Question 2. Based on paragraphs 12 through 19, which sentence best explains the difference in the characters’ reactions to the objects in the trunk? A The objects seem ragged to one character, while to the other character, they seem new. B The objects seem to be costly to one character, while to the other character, they seem to be inexpensive. C The objects are familiar reminders to one character, while to the other character, they are exciting discoveries. D The objects are family treasures to one character, while to the other character, they are personal belongings.",
+    "3": "Question 3. In paragraph 19, what does the narrator mean when she says, “her laughter floated through the house sweet as the taste of jellybeans”? A The laughter reminds Kincaid of the candy Grandma Talley keeps at her house. B The sound of Grandma Talley’s laughter gives Kincaid a light and pleasant feeling. C The sound of Grandma Talley’s laughter can be enjoyed by others inside the house. D The laughter reminds Kincaid of how kind and thoughtful Grandma Talley has always been.",
+    "4": "Question 4. Which detail best shows what Grandma Talley thinks about change? A “You still frettin’ about moving out of state ’cause of your mama’s job?” (paragraph 1) B “I know, Kincaid, but things work out, most times better than we expect.” (paragraph 3) C “I’ve taught you the way my grandma taught me, like her grandmother before her, passing on our stories to those coming after us.” (paragraph 21) D “ ‘This was taken from my wedding dress when I married your Grandpa Wilford,’ she said touching a patch of satin the color of ecru.” (paragraph 24)",
+    "5": "Question 5. Read Grandma Talley’s words from paragraph 26 of the story. “Remember, Kincaid, we take our loved ones in our hearts wherever we go. I won’t be more than a heartbeat away.” When Grandma Talley says she “won’t be more than a heartbeat away,” she means she won’t seem far because A Kincaid can always think about her B she and Kincaid are blood relatives C she will be thinking of Kincaid all the time D Kincaid can always call her on the telephone",
+    "6": "Question 6. Which words from the story best show Grandma Talley’s sense of humor? A “Scat, get away from here now, causing trouble,” (paragraph 9) B “Grandma Talley smiled warmly, dragging out an old trunk.” (paragraph 12) C “Yes, still wet behind the ears,” (paragraph 16) D “She smiled, hugging me tightly.” (paragraph 26)",
+    "7": "Question 7. Which paragraph best expresses a theme of the story? A paragraph 10 B paragraph 13 C paragraph 20 D paragraph 23",
+    "8": "Question 8. The word “collide” comes from a Latin word meaning “strike together.” Based on this information, what is the meaning of “collide” in paragraph 2? A bump into with force B hit with an object C injure by bruising D swing against",
+    "9": "Question 9. Which paragraph does the photograph of the racers best help the reader understand? A paragraph 1 B paragraph 2 C paragraph 3 D paragraph 4",
+    "10": "Question 10. The information in paragraphs 7 and 8 best supports the idea that manufacturers develop A equipment to introduce a new sport B equipment when there is an existing need C products when the old ones are not safe D products when the old ones are not purchased",
+    "11": "Question 11. As they are used in paragraph 10, what do the words “trick out” mean? A The rider adds fancy trim and wheels. B The rider spends a large amount of money. C The rider adds parts to improve performance. D The rider makes changes that create a unique appearance.",
+    "12": "Question 12. Read these sentences from paragraphs 2 and 11. You have to be an outstanding rider for BMX racing. If you want to race, a good rule is to buy the best bike you can afford. What can the reader conclude from these sentences? A Tricks and expensive gear make BMX racing appealing. B BMX racers need practice and money to be successful. C Skill and good equipment are important in BMX racing. D BMX racers will win with the right preparation and tools.",
+    "13": "Question 13. Which of these is more important to BMX racing than to freestyle BMX? A danger B difficulty C expense D speed",
+    "14": "Question 14. Based on the information in the passage, how would freestyle BMX best prepare a rider for BMX racing? A by helping the rider develop more skills B by helping the rider stay in good condition C by helping the rider escape serious injury D by helping the rider avoid harmful crashes",
+    "15": "Question 15. In paragraph 7, what does the author’s use of the phrase “picked up the pace and flashed me a playful smile” indicate? A Anna and Supphatra need to hurry to finish their shopping. B Anna has difficulty keeping up with Supphatra in the unfamiliar place. C Supphatra enjoys the time she spends shopping with Anna. D Supphatra expects that Anna will be surprised by what happens next.",
+    "16": "Question 16. Which word best describes how Supphatra is feeling in paragraph 12? A confident B confused C disappointed D friendly",
+    "17": "Question 17. How does paragraph 14 fit into the structure of the story? A It resolves the conflict that is presented in paragraph 13. B It explains a problem that is solved in paragraph 15. C It introduces the feelings of the narrator. D It adds mystery to the events.",
+    "18": "Question 18. Read this sentence from paragraph 15 of the story. Timidly, I scooped a little onto my plate, followed by some curried meats and vegetables. What does the word “timidly” suggest? A unhappiness B uncertainty C friendliness D bravery",
+    "19": "Question 19. Which sentence best supports the theme of the story? A “Since our family moved to Bangkok six months ago, I had learned many things.” (paragraph 4) B “I’ve never been very brave when it comes to trying new foods.” (paragraph 6) C “She closed her eyes and smiled contentedly.” (paragraph 8) D “My heart thumped wildly in my chest.” (paragraph 15)",
+    "20": "Question 20. Why does the author most likely include both paragraphs 16 and 17? A to contrast for the reader Anna’s earlier fears and her enjoyment of the food B to explain to the reader why Supphatra’s family thinks Anna is funny C to help the reader understand the different flavors in Thai dishes D to show the reader how delicious Thai food is",
+    "21": "Question 21. What does the narrator’s description in paragraph 18 most likely suggest about Anna? A She is relieved that the dinner has ended. B She accepts that her friend is different from her. C She is determined to try unusual foods. D She is curious about her friend’s actions."
+  }
+}

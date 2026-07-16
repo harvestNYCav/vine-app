@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "5f8f99c872399ab5a4b33c2c11078ae9bda1891bd26befb7d47e0cc1b15087c2",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        238.95
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        238.95,
+        584.0,
+        431.1
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        431.1,
+        584.0,
+        706.6
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        274.05
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        274.05,
+        584.0,
+        454.05
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        454.05,
+        584.0,
+        706.6
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        49.5,
+        584.0,
+        706.6
+      ]
+    },
+    "8": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        310.95
+      ]
+    },
+    "9": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        310.95,
+        584.0,
+        551.25
+      ]
+    },
+    "10": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        551.25,
+        584.0,
+        706.6
+      ]
+    },
+    "11": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        263.25
+      ]
+    },
+    "12": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        263.25,
+        584.0,
+        532.35
+      ]
+    },
+    "13": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        532.35,
+        584.0,
+        706.6
+      ]
+    },
+    "14": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        706.6
+      ]
+    },
+    "15": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        263.25
+      ]
+    },
+    "16": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        263.25,
+        584.0,
+        479.25
+      ]
+    },
+    "17": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        479.25,
+        584.0,
+        706.6
+      ]
+    },
+    "18": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        279.9
+      ]
+    },
+    "19": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        279.9,
+        584.0,
+        479.25
+      ]
+    },
+    "20": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        479.25,
+        584.0,
+        706.6
+      ]
+    },
+    "21": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        49.05,
+        584.0,
+        706.6
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 686,
+      "height": 330
+    },
+    "2": {
+      "width": 889,
+      "height": 335
+    },
+    "3": {
+      "width": 795,
+      "height": 335
+    },
+    "4": {
+      "width": 981,
+      "height": 445
+    },
+    "5": {
+      "width": 1093,
+      "height": 335
+    },
+    "6": {
+      "width": 785,
+      "height": 330
+    },
+    "7": {
+      "width": 931,
+      "height": 335
+    },
+    "8": {
+      "width": 1072,
+      "height": 498
+    },
+    "9": {
+      "width": 1030,
+      "height": 462
+    },
+    "10": {
+      "width": 819,
+      "height": 335
+    },
+    "11": {
+      "width": 1020,
+      "height": 372
+    },
+    "12": {
+      "width": 832,
+      "height": 461
+    },
+    "13": {
+      "width": 813,
+      "height": 335
+    },
+    "14": {
+      "width": 962,
+      "height": 335
+    },
+    "15": {
+      "width": 620,
+      "height": 335
+    },
+    "16": {
+      "width": 1116,
+      "height": 335
+    },
+    "17": {
+      "width": 1002,
+      "height": 350
+    },
+    "18": {
+      "width": 1100,
+      "height": 372
+    },
+    "19": {
+      "width": 654,
+      "height": 330
+    },
+    "20": {
+      "width": 925,
+      "height": 335
+    },
+    "21": {
+      "width": 839,
+      "height": 335
+    }
+  },
+  "altText": {
+    "1": "Question 1. What does paragraph 4 most reveal about the mother? A _ Sheis tireless. B She is responsible. C She has a hard time relaxing. D She has devotion for animals.",
+    "2": "Question 2. The personification of the sky as “sulky” in paragraph 9 suggests the sky is A _ unpredictable B northern C snowy D gloomy",
+    "3": "Question 3. What does paragraph 9 mainly reveal about the narrator? A _ She thinks of nature as calming. B She is attached to familiar things and is close to her family. C She loves language and has a vivid imagination. D _ She pays attention to yearly patterns.",
+    "4": "Question 4. Which idea would be most important to include in a summary of the story? A “We had to sell our wheat this month and not hold it over; that is, we did if I was going to the university that fall” (paragraph 2) B “It might go higher along toward Christmas, but we couldn't wait for that.” (paragraph 2) Cc “She stood there untying her bandanna and I watched her as though I didn’t know her face better than my own.” (paragraph 14) D “I took off my apron and was running across to the barn for the pickup before Dad had taken his hat from behind the door” (paragraph 17)",
+    "5": "Question 5. In paragraph 19, what does the phrase “like a monument” mainly suggest about the elevator? A __Itisa beautiful building. B It is a landmark. C It was designed by an architect. D _Itisan old building.",
+    "6": "Question 6. B What is the best definition of “spoiled” as used in paragraph 21? A decreased the value of B made greedy by giving too much C took away an opportunity D made unfit for use",
+    "7": "Question 7. How does the author mainly develop the narrator’s point of view in the story? A __by exaggerating how harsh the winter months are B___ by using elements of humor C__byshowing how the narrator interacts with her family D _bysharing the narrator's thoughts",
+    "8": "Question 8. Read this sentence from paragraph 1. Mr. Baum’s stories were pure fantasy, so when he walked down the street in his finely tailored suit, children clamored in his wake. What is the effect of the author's word choices in this sentence? A ___Itindicates how much children admired Baum and his stories. B_ It hints that Baum was a serious person who told silly stories. C_ It suggests that children moved aside when Baum was near. D _Itshows how rarely Baum told his stories to others.",
+    "9": "Question 9. Read this sentence from paragraph 2. Unlike stories told by parents, Baum’s were not merely lectures in disguise. Based on this sentence, what is the author’s point of view about Baum’s stories? A They are good at providing a strong moral. B They are more entertaining than educational. C They are different from children’s stories of today. D They are enjoyed more by children than by adults.",
+    "10": "Question 10. How does paragraph 3 develop a central idea in the article? A _bylisting characters that appeared in Baum’s books B_ by describing the work for which Baum is best known C _ byexplaining that other authors continued Baum’s work D __byemphasizing that many books Baum wrote were forgotten",
+    "11": "Question 11. In paragraph 4, what inference can be drawn from the information about Baum’s early childhood? A __ Baum’s health problems affected how he felt about his family. B __Baum’s older siblings influenced his approach toward education. Cc Baum’s home education affected how he felt about other children. D___Baum’s constant reading of fairy tales influenced his later writing.",
+    "12": "Question 12. Read this sentence from paragraph 6. No road to success was ever more winding than Baum’s. How does this sentence contribute to the structure of the article? A __ It summarizes the first five paragraphs of the article. B__It contrasts the first half of the article with the second half. C__Itserves as the topic sentence for the remainder of the article. D__Itgives the cause for the events in the remainder of the article.",
+    "13": "Question 13. Which sentence states a central idea of the article? A ___ Baum was devoted to his wife and family. B Baum wrote a play and acted in the starring role. C Baum lived for several years in a small prairie town. D Baum had to overcome many difficulties throughout his life.",
+    "14": "Question 14. What benefit did Baum’s stories offer to listeners, readers, and to Baum himself? A They offered an entertaining distraction from the harsh realities of life. B They offered a chance to invent new and exciting characters and places. C They offered an exciting way to learn about the world around them. D They offered a new perspective on how adults and children should behave.",
+    "15": "Question 15. What does paragraph 2 most reveal about Eliza? A _ She has a strong imagination. B_ She seldom misspells a word. Cc She thinks her father knows best. D She gets easily distracted.",
+    "16": "Question 16. In paragraph 12, how does the description of the nightmare mainly affect the tone of the story? A __It suggests that Eliza doubts she will win the bee. B__It suggests that the bee seems unreal to Eliza. C It suggests that Eliza is unwilling to compete in the bee. D__It suggests that the bee is stressful for Eliza.",
+    "17": "Question 17. Which quotation best expresses a central idea of the story? “She wants to win with a word so difficult her father will have to admit that he was wrong, that the letters are already guiding her” (paragraph 1) B “Eliza finds herself bracing for the next blow, but none comes.” (paragraph 10) C “The judge's voice is ever neutral, revealing nothing” (paragraph 21) D ‘Eliza wants to see herself through the judge’s eyes.” (paragraph 22)",
+    "18": "Question 18. The ideas in paragraphs 22 and 26 mostly contribute to the reader’s understanding of Eliza by revealing A her inability to understand the judges B_ her discomfort standing in front of the audience C _ her concern about impressing her father D her difficulty with spelling the assigned word correctly",
+    "19": "Question 19. What does paragraph 31 mainly reveal about Eliza? A her patience B her intelligence Cc her confidence D _ her enthusiasm",
+    "20": "Question 20. Which detail would be most important to include in a summary of the story? A _ Eliza knows that difficult words follow easy words at spelling bees. B_ Eliza gets a word that means a kind of fabric with a twill weave. C Eliza empties her mind and sees the letters come up as images. D Eliza is one of seventeen spellers in this round of the spelling bee.",
+    "21": "Question 21. How does the point of view most influence the tone of the story? A The descriptions of the contestants competing builds suspense. B The references to unusual words add humor. C __ Eliza’s distant observations of her father develop conflict. D Eliza's interior monologue creates a sense of strangeness."
+  }
+}

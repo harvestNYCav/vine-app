@@ -5,6 +5,7 @@ import getDb from '@/lib/db'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
 import ExamPracticeClient from './ExamPracticeClient'
+import { studentCanAccessMathExam } from '@/lib/math-exam-access'
 
 export default async function MathExamPracticePage({
   params,
@@ -24,8 +25,8 @@ export default async function MathExamPracticePage({
     getStudentTracks(db, session!.userId),
     getStudentSettings(db, session!.userId),
   ])
-  if (!tracks.includes('math')) notFound()
-  const isSpanish = settings.mathSpanishEnabled && lang === 'es'
+  if (!studentCanAccessMathExam(tracks, settings, exam)) notFound()
+  const isSpanish = settings.mathSpanishEnabled && exam.supportedLanguages.includes('es') && lang === 'es'
 
   return <ExamPracticeClient exam={exam} section={section} isSpanish={isSpanish} />
 }

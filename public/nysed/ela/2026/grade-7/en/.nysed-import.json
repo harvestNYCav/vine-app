@@ -1,0 +1,488 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "95c3b143f0ea3ac37f3c03c0abcca455dabfbc40d05cf8c78f7cfd46fc2bcf44",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "3": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        319.05
+      ]
+    },
+    "5": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        319.05,
+        584.0,
+        702.372
+      ]
+    },
+    "6": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        306.9
+      ]
+    },
+    "7": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        306.9,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "16": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        493.65
+      ]
+    },
+    "17": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        493.65,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        236.25
+      ]
+    },
+    "19": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        236.25,
+        584.0,
+        436.95
+      ]
+    },
+    "20": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        436.95,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        234.9
+      ]
+    },
+    "23": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        234.9,
+        584.0,
+        418.95
+      ]
+    },
+    "24": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        418.95,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        234.9
+      ]
+    },
+    "26": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        234.9,
+        584.0,
+        447.75
+      ]
+    },
+    "27": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        447.75,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        234.45
+      ]
+    },
+    "30": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        234.45,
+        584.0,
+        418.5
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        418.5,
+        584.0,
+        706.6
+      ]
+    },
+    "32": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        236.7
+      ]
+    },
+    "33": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        236.7,
+        584.0,
+        449.55
+      ]
+    },
+    "34": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        449.55,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        306.45
+      ]
+    },
+    "37": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        306.45,
+        584.0,
+        490.5
+      ]
+    },
+    "38": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        490.5,
+        584.0,
+        706.6
+      ]
+    },
+    "39": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        234.9
+      ]
+    },
+    "40": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        234.9,
+        584.0,
+        418.95
+      ]
+    },
+    "41": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        418.95,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        706.6
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1100,
+      "height": 344
+    },
+    "2": {
+      "width": 1115,
+      "height": 343
+    },
+    "3": {
+      "width": 785,
+      "height": 313
+    },
+    "4": {
+      "width": 1115,
+      "height": 501
+    },
+    "5": {
+      "width": 1098,
+      "height": 313
+    },
+    "6": {
+      "width": 1108,
+      "height": 469
+    },
+    "7": {
+      "width": 908,
+      "height": 314
+    },
+    "15": {
+      "width": 1122,
+      "height": 346
+    },
+    "16": {
+      "width": 981,
+      "height": 441
+    },
+    "17": {
+      "width": 898,
+      "height": 313
+    },
+    "18": {
+      "width": 845,
+      "height": 314
+    },
+    "19": {
+      "width": 1129,
+      "height": 345
+    },
+    "20": {
+      "width": 1114,
+      "height": 437
+    },
+    "21": {
+      "width": 877,
+      "height": 314
+    },
+    "22": {
+      "width": 757,
+      "height": 312
+    },
+    "23": {
+      "width": 785,
+      "height": 314
+    },
+    "24": {
+      "width": 807,
+      "height": 314
+    },
+    "25": {
+      "width": 1004,
+      "height": 314
+    },
+    "26": {
+      "width": 1109,
+      "height": 378
+    },
+    "27": {
+      "width": 1028,
+      "height": 314
+    },
+    "29": {
+      "width": 1109,
+      "height": 315
+    },
+    "30": {
+      "width": 1042,
+      "height": 314
+    },
+    "31": {
+      "width": 681,
+      "height": 315
+    },
+    "32": {
+      "width": 755,
+      "height": 314
+    },
+    "33": {
+      "width": 1112,
+      "height": 375
+    },
+    "34": {
+      "width": 1127,
+      "height": 312
+    },
+    "35": {
+      "width": 1115,
+      "height": 687
+    },
+    "36": {
+      "width": 1055,
+      "height": 475
+    },
+    "37": {
+      "width": 897,
+      "height": 315
+    },
+    "38": {
+      "width": 1075,
+      "height": 315
+    },
+    "39": {
+      "width": 988,
+      "height": 314
+    },
+    "40": {
+      "width": 1033,
+      "height": 314
+    },
+    "41": {
+      "width": 835,
+      "height": 314
+    },
+    "42": {
+      "width": 1128,
+      "height": 315
+    }
+  },
+  "altText": {
+    "1": "Question 1. How do paragraphs 1 and 2 develop the character of the narrator? A __ They emphasize the narrator's enthusiasm for learning from Grandmother Five Baskets. B They highlight how much the narrator's life has changed since her time with Grandmother Five Baskets. C__ They suggest that the narrator and Grandmother Five Baskets rely on each other. D They reveal how similar the narrator and Grandmother Five Baskets are.",
+    "2": "Question 2. What is the importance of paragraph 8 in the story? 2 A It describes the steps of basketmaking. B It reveals the traits that make a good basketmaker. It gives information about the lessons that Grandmother Five Baskets wants the narrator C to learn. D It provides details about the history between Grandmother Five Baskets and the narrator.",
+    "3": "Question 3. Which important idea does the author develop in paragraph 11? 3 A Basketmaking can be a useful skill to have. B People choose to learn new things at different ages. C It is a good idea to accept help when it is offered. D Young people should show respect to those who are older.",
+    "4": "Question 4. Some people say that the best way to gain a skill is by participating rather than simply hearing 4 about it or watching someone else. Which detail from the story best shows how this idea is represented? “She told me what I should look for, as we walked along the rutted red road toward the A stand of loblolly pine trees . . .” (paragraph 3) “Anna, this is a good time to gather the pine straw, since there was a heavy rain several B nights ago.” (paragraph 4) “Listening to all the talk among my womenfolk from the time I was small made me eager C for my chance to begin . . .” (paragraph 12) “I learned to rinse it well, and dry it carefully on old window screens laid on rocks in the D sun.” (paragraph 13)",
+    "5": "Question 5. In paragraph 15, what does the phrase “a little lopsided, but mine” suggest about the narrator? 5 A She is proud of what she has created. B She is concerned about her basket’s appearance. C She understands the lessons Grandmother Five Baskets teaches. D She questions Grandmother Five Baskets’ basketmaking process.",
+    "6": "Question 6. Which detail most clearly shows that Grandmother Five Baskets is confident in the narrator’s 6 abilities? “Grandmother Five Baskets moved slowly through the woods, stopping now and again, A each time calling me back to look at one plant or another . . .” (paragraph 6) “Little one, you will find yourself tested now that you have decided to learn these B lessons.” (paragraph 8) “During the next few days, Grandmother Five Baskets showed me how to clean the pine C straw we had collected . . .” (paragraph 13) “Do not judge this first basket too harshly, for your skills will improve with each one you D complete.” (paragraph 16)",
+    "7": "Question 7. The author develops the character of Grandmother Five Baskets by showing A __ the steps of her basketmaking process B what she thinks about how the narrator makes a basket C__ howshe guides the narrator D__howshe feels about her role in the community",
+    "15": "Question 15. How do the events in the section “A Happy Accident” contribute to the development of a central 15 idea of the article? A by describing what made Perkin want to aim for a higher income B by showing how Perkin began focusing on a new use for his discovery C by telling how Perkin learned about the importance of fashion to the public D by detailing when Perkin realized he was more a businessman than a scientist",
+    "16": "Question 16. Read this sentence from paragraph 7. These dyes could vary in shade (so you wouldn't always know what exact color they would turn cloth), and they could fade or rub off. How does this sentence best help the reader understand Perkin’s actions? A __ It shows that Perkin began to notice and follow cultural trends. B__It shows that Perkin saw an opportunity to work with his family. C__ It shows that Perkin identified a problem that needed a solution. D__It shows that Perkin recognized a way to impress the royal class.",
+    "17": "Question 17. Which part of the article best reflects the author’s opinion of the topic? 17 A the title “Miraculous Mauve” B the heading “Young Science, Young Scientist” C the details about quinine in paragraph 4 D the information about using natural materials as dyes in paragraph 7",
+    "18": "Question 18. As used in paragraph 9, what does the phrase “mauve mania” suggest? A __ People became obsessed with wearing the color. B The dye required an investment of a large sum of money. C_ The dye caused illness because of its chemical content. D__ People became angry that only royalty could wear the color.",
+    "19": "Question 19. Prominent or famous people often influence the culture in which they live. How do the details in paragraphs 9 and 10 develop this idea? A __ by describing the details of the royal fashions B___ by mentioning the building of a new factory C__bysuggesting that dye-making quickly became very profitable D _ byillustrating why people from all classes wanted to use the new color",
+    "20": "Question 20. Which detail would be most important to include in a summary of the article? 20 “. . . a teenager named William Henry Perkin found himself captivated by this fascinating A science.” (paragraph 3) “. . . Young Perkin realized that this chemical would make a great dye for fabrics.” B (paragraph 6) “Perkin himself kept inventing, making more new colors, including Britannia Violet and C Perkin’s Green . . .” (paragraph 11) “Today, the Perkin Medal, named in his honor, is presented each year to a scientist in the D United States . . .” (paragraph 14)",
+    "21": "Question 21. How does the author develop the discovery of a purple dye in the article? 21 A by telling stories about moments in Perkin’s life B by describing the many benefits of the color mauve C by sharing the series of steps that led to a new color D by naming people who helped Perkin’s efforts along the way",
+    "22": "Question 22. As used in paragraph 2, what does the word “irritated” mean? 22 A injured B distracted C annoyed D offended",
+    "23": "Question 23. Which idea best expresses a theme of paragraph 2? 23 A Animals react negatively when they encounter humans. B Familiar surroundings can bring calm to living creatures. C Humans have a positive influence when they enter nature. D People can have a negative effect on animal happiness.",
+    "24": "Question 24. What is the definition of “good-tempered” as used in paragraph 3? 24 A having a pleasant nature B being organized and ready C experiencing strong emotions D showing anger through actions",
+    "25": "Question 25. How do Alice’s actions in paragraphs 12 through 14 affect the resolution of the story? 25 A She shares her opinion about the situation with Carl and Bob. B She works with Carl and Bob to execute a plan for the two colonies. C She allows Carl and Bob the opportunity to learn from the experience. D She ensures that the bees are unable to sting Carl and Bob.",
+    "26": "Question 26. Which sentence shows a change in the direction of the story? A “They failed to recognize them? (paragraph 2) “Alice gently blew a little smoke across the entrance, driving in the guards; then she blew B a stronger puff” (paragraph 5) C “Here’s something wrong!” (paragraph 10) “Carl uncovered the weak colony again, while Bob pried off the bottom from the D queenless one.” (paragraph 14)",
+    "27": "Question 27. Which detail best supports Alice’s claim in paragraph 16? A __ “Instead of a crowded mass of bees, only a little cluster showed . . ” (paragraph 8) B “The queen must have perished in the winter” (paragraph 11) C “... alittle disturbance as the bees from the two colonies mixed” (paragraph 15) D “Then all was quiet; a contented hum arose within.” (paragraph 15)",
+    "29": "Question 29. Which detail from paragraph 1 best develops Chengli’s claim that the journey is long and dull? A “Three weeks on the road” B “Hour after hour, it was all the same” C “..sometimes a farmer could be seen walking behind his ox...” D “The caravan did not at these villages . ..”",
+    "30": "Question 30. What effect does the phrase “and now this” in paragraph 3 have on the tone of the story? A __Itcreates a fearful tone. B__It creates a surprised tone. C__ It develops a determined tone. D__It develops a hopeless tone.",
+    "31": "Question 31. Which theme is developed in paragraphs 1 through 6? A__Itis difficult to be patient. B Hard work is sometimes a test of endurance. C Nature is beautiful. D People can find joy in bad situations.",
+    "32": "Question 32. What do the details in paragraph 9 reveal about Chengli? 32 A He desires better working conditions. B He prefers the company of animals over people. C He cares about the well-being of the animals. D He is eager to impress the people with whom he works.",
+    "33": "Question 33. What are the different ways Chengli and Fourth Brother view their roles in the caravan in 33 paragraphs 6 through 10? A Chengli feels ignored, while Fourth Brother feels undervalued. Chengli is assigned to the animals he prefers, while Fourth Brother is assigned to B creatures he dislikes. C Chengli believes he has been rewarded, while Fourth Brother feels he has been punished. D Chengli shows care for the animals, while Fourth Brother shows disregard for them.",
+    "34": "Question 34. What character trait is best illustrated by Chengli’s thoughts and actions in paragraphs 9 and 10? 34 A an ability to adapt B shyness C playfulness D a desire for freedom",
+    "35": "Question 35. President Barack Obama said in his farewell address in 2017, “If you're walking down the right path, and you're willing to keep walking, eventually you'll make progress.” Which detail best shows how this idea is represented in the story? “He moved back along the line of camels assigned to his care, checking each load until he A came to Fourth Brother, who was checking on his own assigned animals, the donkeys” (paragraph 6) “As the day wore on, however, the rain slackened and finally stopped. Master chose a B resting spot on well-drained land, and the call came down the line to settle for the night” (paragraph 8) “The warmth of early spring made their thick, wooly fur begin to loosen and fall out, but when Chengli first tried to brush it, the camel turned and aimed a mouthful of stinking Cc spit at him. Within the first week, however, hed learned how to keep the animals calm” (paragraph 9) “Uncle Tao often made his way to the end of the line to see that Chengli was learning the D finer points of caring for the camels, quietly teaching the boy whatever he needed to understand” (paragraph 10)",
+    "36": "Question 36. Read this sentence from paragraph 3. Areas of the United States with especially colorful fall displays attract thousands of leaf peepers. Which phrase helps the reader to understand the meaning of “leaf peepers” as used in the sentence? A “These tourists flock to the region . ..” (paragraph 1) B “Being in the Northeast during autumn . . ” (paragraph 2) C ‘Lee studies leaf color ..” (paragraph 3) D_ = “The chemical chlorophyll, which gives leaves their green color . .” (paragraph 4)",
+    "37": "Question 37. Which statement best expresses the author's belief in paragraph 6? A What people enjoy now will change over time. B__ Scientists should avoid trying to make predictions. C__ There is much for scientists to learn now and in the future. D The behavior of trees is too complex for people to fully comprehend.",
+    "38": "Question 38. How does the section “Food factory” contribute to the article’s organization? A __ Itexplains the cause of leaf color change in some plants. B___ It provides a counterargument in the debate as to why leaves change color. C__Itintroduces the idea that color change may be harmful to trees. D __ It presents a problem that scientists are attempting to solve through experimentation.",
+    "39": "Question 39. What does the phrase “work like a sunscreen” mean as it is used in paragraph 13? A Certain chemicals cause tree leaves to change color when the seasons change. B The same chemical can be used by people and plants for sun protection. C Leaves are drying up from the heat of the sun when they turn red. D The color red may shield plants from environmental damage.",
+    "40": "Question 40. What is the relationship between the author’s ideas in paragraphs 20 and 21? A The author cites ongoing studies, then proposes reader action. B The author details current research, then challenges its results. C__ The author introduces new ideas, then summarizes the supporting evidence. D The author recalls old disagreements, then invites the reader to make a judgment.",
+    "41": "Question 41. Which claim is most strongly supported with evidence in the article? 41 A People enjoy viewing the changes in leaf color in the fall. B Red leaf color may have different benefits for plants. C Red leaf color discourages insects from eating the leaves. D Humans may affect how leaf color changes in the future.",
+    "42": "Question 42. How do the references to scientists David Lee and Bill Hoch support a central idea of the article? A __ Bothscientists agree that leaf color change is a beautiful sight. B__ Eachscientist rejects the other’s ideas about leaf color change. C___ These scientists contribute different ideas to the study of leaf color change. D These scientists want to create new species of plants to study leaf color change."
+  }
+}

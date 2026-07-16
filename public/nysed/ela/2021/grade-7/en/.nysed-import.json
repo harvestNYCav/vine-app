@@ -1,0 +1,404 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "1a23c13ebab53166bbff3443bc8396c28151f9ddf3cd8cd097aa36aab52520aa",
+  "crops": {
+    "1": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        342.243
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        342.243,
+        584.0,
+        702.372
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "7": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        702.372
+      ]
+    },
+    "8": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "9": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "10": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "12": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        519.119
+      ]
+    },
+    "13": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        519.119,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "16": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "17": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "19": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        510.243
+      ]
+    },
+    "20": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        510.243,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "23": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        702.372
+      ]
+    },
+    "24": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        330.243
+      ]
+    },
+    "25": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        330.243,
+        584.0,
+        702.372
+      ]
+    },
+    "26": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        319.204
+      ]
+    },
+    "27": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        319.204,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 841,
+      "height": 327
+    },
+    "2": {
+      "width": 813,
+      "height": 327
+    },
+    "3": {
+      "width": 970,
+      "height": 328
+    },
+    "4": {
+      "width": 1071,
+      "height": 511
+    },
+    "5": {
+      "width": 964,
+      "height": 427
+    },
+    "6": {
+      "width": 1087,
+      "height": 328
+    },
+    "7": {
+      "width": 940,
+      "height": 442
+    },
+    "8": {
+      "width": 1043,
+      "height": 328
+    },
+    "9": {
+      "width": 994,
+      "height": 327
+    },
+    "10": {
+      "width": 1109,
+      "height": 364
+    },
+    "11": {
+      "width": 935,
+      "height": 443
+    },
+    "12": {
+      "width": 916,
+      "height": 354
+    },
+    "13": {
+      "width": 920,
+      "height": 354
+    },
+    "14": {
+      "width": 805,
+      "height": 328
+    },
+    "15": {
+      "width": 1059,
+      "height": 328
+    },
+    "16": {
+      "width": 961,
+      "height": 327
+    },
+    "17": {
+      "width": 786,
+      "height": 328
+    },
+    "18": {
+      "width": 956,
+      "height": 421
+    },
+    "19": {
+      "width": 923,
+      "height": 327
+    },
+    "20": {
+      "width": 934,
+      "height": 327
+    },
+    "21": {
+      "width": 876,
+      "height": 328
+    },
+    "22": {
+      "width": 867,
+      "height": 328
+    },
+    "23": {
+      "width": 1093,
+      "height": 491
+    },
+    "24": {
+      "width": 1049,
+      "height": 491
+    },
+    "25": {
+      "width": 831,
+      "height": 327
+    },
+    "26": {
+      "width": 1052,
+      "height": 460
+    },
+    "27": {
+      "width": 1068,
+      "height": 421
+    },
+    "28": {
+      "width": 1113,
+      "height": 391
+    }
+  },
+  "altText": {
+    "1": "Question 1. What is the best definition of “shimmies” as it is used in paragraph 1? A skids B stuns Cc shakes D _ sputters",
+    "2": "Question 2. In paragraph 2, the phrase “in a giant tangle” suggests that the girls A are playing a game B enjoy being crowded together C feel confused about their destination D are concerned about their safety",
+    "3": "Question 3. What does the description of the setting in paragraph 6 reveal about the narrator? A __ She sees beauty where others may not. B She uses her imagination to rise above her surroundings. C She wants to take over her grandfather's business someday. D She appreciates McGunn’s ability to make junk seem appealing.",
+    "4": "Question 4. Which sentence demonstrates how Grandpa Gus’s character is revealed in the setting of the story? “Old Glory inches toward the gates of McGunn’s Iron and Metal, a junkyard A that Gus knows so well, he could walk through it blindfolded and never once bump his shin on anything” (paragraph 5) B ““Got yourselves a real beauty queen there, Mick says as he points to the El Camino attached to the winch on the back of Old Glory.’ (paragraph 8) Cc “It’s a shell of what it used to be, missing its hood, and its engine, and all its doors.” (paragraph 9) D “He'll take your old grills or your rusted patio furniture or even clean out the contents of your grandparents’ shed .. .” (paragraph 10)",
+    "5": "Question 5. What do the actions described in paragraph 11 reveal about the narrator? A It shows she has learned from her grandfather how to fix broken items and sell them for extra cash. B It shows she is surprised at her grandfather's strength, hauling heavy items for people. It shows she admires her grandfather because he knows his way around C ; Willow Grove. D It shows she is proud of her grandfather's ability to earn people’s respect by doing such an ordinary task.",
+    "6": "Question 6. In paragraph 12, what does the phrase “the burden of useless stuff lifted off of them” suggest? A They are relieved of possessions they do not need. B They have removed a heavy load they had been carrying. Cc They have found someone who understands their problems. D They are able to get out from under something that is crushing them.",
+    "7": "Question 7. Which idea best supports a theme of the story? A “Our voices sound like a whole playground as we squeal and squirm.” (paragraph 3) B “But that makes it the perfect car for Gus, who’s a trash hauler? (paragraph 10) Cc “It's amazing, I think, his ability to take something broken and worthless and turn it into a fold of green bills in his pocket.” (paragraph 11) D “And that, in my mind, is another special power that belongs to Gus” (paragraph 12)",
+    "8": "Question 8. Which phrase best describes how the article develops the idea presented in paragraph 2? A __ by providing counterarguments B_ by offering solutions to the problem C by discussing personal experiences D by introducing research results",
+    "9": "Question 9. The use of quotation marks around the word “relaxing” in paragraph 4 suggests that A some activities hinder true relaxation B deep sleep helps one experience true relaxation C teens do not value activities that give true relaxation D blue light helps one experience true relaxation",
+    "10": "Question 10. Which statement best describes how the section “Hello, Night Owl!” supports a central idea of the article? A__ It describes an important cause and effect relationship. B It creates an effective comparison and contrast between ideas. C It provides evidence that disproves a popular theory. D It presents a counterargument to the initial claim.",
+    "11": "Question 11. Which idea would be most important to include in a summary of the article? A “Screens for television, games, computers, tablets, e-readers, and cell phones give off blue light.” (paragraph 4) B “Caffeine from sodas and energy drinks makes matters worse.” (paragraph 6) c “For one thing, lack of sleep makes it harder to pay attention.” (paragraph 10) D “One study found that the more sleep people got, the more likely people were to find them attractive.” (paragraph 17)",
+    "12": "Question 12. Which claim from the article is most strongly supported with evidence? A “Even without modern technology, though, teens shift their circadian rhythm,’ (paragraph 7) B “The rest of the world doesn't shift, however.” (paragraph 9) C “Lack of sleep could hurt mental health” (paragraph 12) D “Lots of issues remain for sleep researchers to explore.” (paragraph 20)",
+    "13": "Question 13. Which sentence from the article best shows the author's point of view? A “Blame your brain, at least in part.” (paragraph 1) B “And that’s a serious public health problem? (paragraph 9) C — “Crankiness can result, especially if you don't feel well?” (paragraph 14) D “And you can't easily change your body’s natural circadian rhythm.” (paragraph 21)",
+    "14": "Question 14. Which paragraph best summarizes a central idea from the article? A _ paragraph 1 B_sparagraph 3 C paragraph 20 D paragraph 21",
+    "15": "Question 15. What does the phrase “collect his thoughts” tell the reader about Ohkwa’ri in paragraph 1? A He is memorizing a speech. B He is expecting an argument. Cc He is hesitant to express disagreement. D He is preparing to say something important.",
+    "16": "Question 16. How does the forest setting shape the actions that are described in paragraph 11? A The setting causes a person to move quickly. B The setting requires a person to be very careful. C The setting requires a person to be extremely quiet. D_ The setting causes a person to behave nervously.",
+    "17": "Question 17. Which important idea does the author develop in paragraph 13? A __ Respecting privacy is a problem in the community. B Sharing helps people in the community. C Acquiring wealth is valued in the community. D Hiding useful objects prevents loss for the community.",
+    "18": "Question 18. Which quotation best supports a central idea of the story? A “He could help his uncle finish hollowing the bowl by blowing on the coal through the thin hollow branch of a sumac.” (paragraph 5) B “Now I only have to smooth the inside and this cup will be ready to use” (paragraph 6) Cc “Tt was useful, but it was better to have something that was useful and beautiful” (paragraph 12) D “It would be a good way to learn, a good way to make myself tougher and stronger. (paragraph 17)",
+    "19": "Question 19. Which detail would be most important to include in a summary of the story? A Ohkwarri helps his uncle Big Tree make a fine drinking cup. B — Ohkwarri keeps his personal things under his bed in a box. Cc Ohkwa’ri blows on the coal through a sumac branch. Ds Ohkwa’ri knows how to safely obtain water from a river.",
+    "20": "Question 20. Which paragraph best shows a change in the direction of the plot of the story? A paragraph 6 B paragraph 7 C paragraph 12 D paragraph 15",
+    "21": "Question 21. How does the author most develop Ohkwa’ri’s point of view in the story? A__ bycontrasting him with his uncle B by showing how he imitates his uncle C _byrevealing his thoughts about growing up D by describing his impatience to live on his own",
+    "22": "Question 22. Paragraph 2 mainly contributes to a central idea of the article because it A __ shows that Napoleon III was an unpopular leader B_ gives the exact number of purposes for the gift C describes the loyalty of the French people D explains both reasons for the gift",
+    "23": "Question 23. Read this sentence from paragraph 3. Bartholdi wrote that the seed for the Statue of Liberty was sown at the party that night. The words “the seed for the Statue of Liberty was sown’ refer to the A timetable for building the statue B first ideas about the project C plan for funding the project D design for the statue",
+    "24": "Question 24. Read this sentence from paragraph 6. He hoped to drum up enthusiasm for the project as well as find an appealing location to display the work. The use of the phrase “drum up” shows that Bartholdi needed to A___ discover the best place for exhibiting the completed project B reduce the cost of the project C create a widespread public demand for the project D teach the public about the reason for the project",
+    "25": "Question 25. Why was Bedloe’s Island selected for the site of the Statue of Liberty? A The local people already knew about the history of the island. B The island was close to a populated city. C The size of the island would make the statue stand out. D The island was located in a busy harbor.",
+    "26": "Question 26. Which evidence from paragraph 11 best supports the author’s claim that the fund-raising efforts for the Statue of Liberty were “creative? “Though the original goal of completing the statue for the hundredth A birthday... seemed unlikely, the group still did its best to meet that deadline.” B “Appeals for donations for the statue appeared in the French press...” C = “Banquets and balls were held in several French cities.” D “Bartholdi came up with just enough money to begin work on Lady Liberty”",
+    "27": "Question 27. Which event showed a change in the attitude of Americans towards the construction of the Statue of Liberty? A President Ulysses S. Grant met with Bartholdi to discuss the project. B People from the United States agreed to support the Franco-American Union, Cc Americans wanted to hear more about the design of the statue from Bartholdi. D Americans learned that the statue was to be a symbol of freedom and democracy.",
+    "28": "Question 28. Which statement best describes a major contribution of Bartholdi toward making the Statue of Liberty a reality? A He met with some of the most famous people in America. B He planned for a monument that would be extremely large. C He remained committed to the project over a long period of time. D He drew sketches to show the way the monument would look when completed."
+  }
+}

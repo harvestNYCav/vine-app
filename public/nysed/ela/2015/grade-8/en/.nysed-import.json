@@ -1,0 +1,305 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "cc13c14fff655fd57a5ce44c66c6f976d633c213efa4c6e19fa2cd6d354abb69",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        78.496,
+        575.0,
+        201.14
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        322.226,
+        575.0,
+        448.55
+      ]
+    },
+    "3": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        76.496,
+        575.0,
+        208.35
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        314.228,
+        575.0,
+        437.78
+      ]
+    },
+    "5": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        239.55
+      ]
+    },
+    "6": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        345.336,
+        575.0,
+        480.35
+      ]
+    },
+    "7": {
+      "sourcePage": 10,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        202.45
+      ]
+    },
+    "8": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        251.65
+      ]
+    },
+    "9": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        357.436,
+        575.0,
+        482.05
+      ]
+    },
+    "10": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        202.45
+      ]
+    },
+    "11": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        308.236,
+        575.0,
+        484.45
+      ]
+    },
+    "12": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        254.65
+      ]
+    },
+    "13": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        373.936,
+        575.0,
+        501.35
+      ]
+    },
+    "14": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        77.575,
+        575.0,
+        204.989
+      ]
+    },
+    "15": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        257.05
+      ]
+    },
+    "16": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        362.836,
+        575.0,
+        504.35
+      ]
+    },
+    "17": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        76.496,
+        575.0,
+        218.05
+      ]
+    },
+    "18": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        323.836,
+        575.0,
+        483.25
+      ]
+    },
+    "19": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        268.45
+      ]
+    },
+    "20": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        374.236,
+        575.0,
+        502.45
+      ]
+    },
+    "21": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        204.25
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 1094,
+      "height": 265
+    },
+    "2": {
+      "width": 1094,
+      "height": 272
+    },
+    "3": {
+      "width": 1094,
+      "height": 285
+    },
+    "4": {
+      "width": 1094,
+      "height": 267
+    },
+    "5": {
+      "width": 1094,
+      "height": 352
+    },
+    "6": {
+      "width": 1094,
+      "height": 292
+    },
+    "7": {
+      "width": 1094,
+      "height": 270
+    },
+    "8": {
+      "width": 1094,
+      "height": 379
+    },
+    "9": {
+      "width": 1094,
+      "height": 269
+    },
+    "10": {
+      "width": 1094,
+      "height": 270
+    },
+    "11": {
+      "width": 1094,
+      "height": 383
+    },
+    "12": {
+      "width": 1094,
+      "height": 386
+    },
+    "13": {
+      "width": 1094,
+      "height": 275
+    },
+    "14": {
+      "width": 1095,
+      "height": 275
+    },
+    "15": {
+      "width": 1094,
+      "height": 391
+    },
+    "16": {
+      "width": 1094,
+      "height": 306
+    },
+    "17": {
+      "width": 1094,
+      "height": 306
+    },
+    "18": {
+      "width": 1094,
+      "height": 346
+    },
+    "19": {
+      "width": 1094,
+      "height": 416
+    },
+    "20": {
+      "width": 1094,
+      "height": 276
+    },
+    "21": {
+      "width": 1094,
+      "height": 274
+    }
+  },
+  "altText": {
+    "1": "Question 1. The author compares flies to fighter pilots in lines 10 and 11 to show that flies are A complicated B forceful C skillful D mysterious",
+    "2": "Question 2. The sentences in lines 18 through 21 develop a key concept of the article by A demonstrating how carefully a fly must target its landing place B revealing the difficulty of conducting research on how a fly lands C illustrating the complexity of the process a fly’s brain must control D explaining how rapidly the fly’s landing occurs after it makes a loop",
+    "3": "Question 3. What information best develops the view that bees are “the ‘Einsteins’ of the insect world” (line 23)? A the discussion about the larger brain sizes of bees B the list of intellectual feats that bees can accomplish C the reasons that researchers are interested in studying bees D the information about the complex colonies that bees live in",
+    "4": "Question 4. Which central idea of the article is most supported by lines 34 through 40? A Social insects develop larger brains. B Brain structures have changed little over time. C Bee colonies can help us understand social systems. D Insect brains can help us understand the human brain.",
+    "5": "Question 5. Which evidence from the article best supports the claim in lines 41 and 42? A “Larger brains usually utilize the same circuits over and over again.” (line 31) B “The idea of life in a group is firmly rooted in their brains—which is what makes bees so interesting to brain researchers.” (lines 35 and 36) C “We, too, are social creatures, after all, and scientists suspect that certain neuronal circuits have changed very little over the course of evolution.” (lines 36 through 38) D “It’s likely they need to possess greater thinking capacity in order to compete with rivals in the swarm.” (lines 49 and 50)",
+    "6": "Question 6. What is the most likely reason for including information about the Smithsonian laboratory in Panama? A to emphasize the results of a major study about bees B to illustrate why biologists should conduct bee research C to point out that biologists still know very little about locust brains D to provide evidence that other countries are performing studies of locust brains",
+    "7": "Question 7. Lines 58 through 69 suggest that the author believes A the study of moths will reveal changes in insect brains B the study of moths can provide ways to enhance technology C moth research will teach scientists more about the human brain D scientists should develop more advanced methods of moth research",
+    "8": "Question 8. Read this sentence from lines 4 through 6. In Garwood, New Jersey, a child picked up his favorite Golden Books and stood outside of his parents’ apartment building, waiting for the school bus. Which line or lines best explain the reason for the narrator’s action in this sentence? A lines 6 through 8 B line 10 C lines 12 through 14 D line 23",
+    "9": "Question 9. Which lines reveal a detail about a tradition of the narrator’s family? A lines 30 through 32 B lines 36 and 37 C lines 39 and 40 D lines 43 through 45",
+    "10": "Question 10. The details in lines 38 through 49 develop a theme of the passage by showing A how experiences can be more exciting than stories B that memories can be both powerful and detailed C that the past can feel more intense than the present D how spending time with family is important",
+    "11": "Question 11. Read lines 48 and 49. Wow! And then both horse and rider surfaced, though for the life of me, I can’t recall how they got out of the pool. The purpose of these lines is most likely to A emphasize the narrator’s amazement with the outcome B imply that the narrator has an imperfect memory C highlight the anxiety that the narrator experienced D show the seriousness of the situation",
+    "12": "Question 12. Read lines 50 and 51. So two months later, when Sister Mary gave us the essay assignment, it was easy . . . as easy as falling into a pool. These lines mean that the narrator A has a vivid memory of the previous summer’s events B is comparing his achievement with that of the horse C is fondly remembering the horse’s splash D has a strong feeling of excitement",
+    "13": "Question 13. What do lines 61 through 71 reveal about the narrator? A He currently writes books for children. B He is reminded of his childhood when he reads. C He imitates the style of the authors he admires. D He continues to have many of the same literary influences.",
+    "14": "Question 14. The author develops a theme of the passage mostly by describing A how he was different from other children in his class B the types of stories he wrote when he was younger C the books he liked to read when he was younger D how people and events inspired him to write",
+    "15": "Question 15. Which evidence supports the claim that Americans “appreciated natural landscapes” (line 4)? A “The area was considered to lack any real estate value—it included swamps, bluffs, and rock outcroppings as well as two reservoirs that supplied city water.” (lines 6 through 8) B “Vaux designed more than 40 bridges so that these various paths would never have to cross on the same level.” (lines 27 and 28) C “The construction of Central Park was one of the most massive public works projects to take place in 19th-century New York.” (lines 41 and 42) D “There are also quiet places to walk, sit and read a book, or watch birds.” (lines 71 and 72)",
+    "16": "Question 16. How does the information regarding the competition contribute to the reader’s understanding of Vaux and Olmsted? A Vaux had different ideas from Olmsted regarding the appearance of the park. B Vaux and Olmsted carefully considered suggestions made by the committee. C Vaux and Olmsted’s collaboration benefited from their distinct abilities. D Vaux was more concerned about details than Olmsted.",
+    "17": "Question 17. Which evidence supports the idea that Olmsted and Vaux wanted their park to appeal to all New Yorkers? A They excluded some designs common to European parks. B They decided to put the park in the middle of Manhattan. C They hired thousands of local residents to build the park. D They included lights so the park could be used at night.",
+    "18": "Question 18. Read this sentence from line 68 of the article. Today, Central Park stands as one of Olmsted’s greatest legacies. The author uses the word “legacies” in this sentence to mean A accomplishments benefiting future users B financial investments with the goal of benefiting everyone C complicated models to copy and build D old projects worthy of recognition",
+    "19": "Question 19. Read these sentences from lines 37 through 40 of the article. Olmsted and Vaux had created their design for the recreation of all people, not just the wealthy. The park was to be a place where all New Yorkers could enjoy nature. Its ultimate design would retain this feeling. Lines 37 through 40 relate to lines 68 through 72 by showing that the A role of the park has changed over time B park is now used throughout the year C park designers achieved their goal D size of the park is increasing",
+    "20": "Question 20. Which phrase from the article helps readers understand the meaning of “pastoral” (line 20)? A “grand public park” (line 2) B “formal locations” (line 22) C “rural feeling” (line 25) D “world-famous site” (line 73)",
+    "21": "Question 21. Based on evidence from the article, which claim is most accurate? A Olmsted and Vaux were hired based on their reputations. B The scale and design of the project made Central Park remarkable for its time. C Americans had a greater appreciation of nature than did Europeans. D Central Park today hosts a greater array of activities than it did in the past."
+  }
+}

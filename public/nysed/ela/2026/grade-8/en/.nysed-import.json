@@ -1,0 +1,488 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        240.267
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        240.267,
+        584.0,
+        423.167
+      ]
+    },
+    "3": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        423.167,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "5": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        511.943
+      ]
+    },
+    "6": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        511.943,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        241.467
+      ]
+    },
+    "16": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        241.467,
+        584.0,
+        425.567
+      ]
+    },
+    "17": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        425.567,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        282.243
+      ]
+    },
+    "19": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        282.243,
+        584.0,
+        468.143
+      ]
+    },
+    "20": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        468.143,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        241.467
+      ]
+    },
+    "23": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        241.467,
+        584.0,
+        425.567
+      ]
+    },
+    "24": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        425.567,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "26": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        442.343
+      ]
+    },
+    "27": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        442.343,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "30": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        442.343
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        442.343,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        241.467
+      ]
+    },
+    "33": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        241.467,
+        584.0,
+        497.567
+      ]
+    },
+    "34": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        497.567,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        241.467
+      ]
+    },
+    "37": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        241.467,
+        584.0,
+        442.343
+      ]
+    },
+    "38": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        442.343,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        300.267
+      ]
+    },
+    "40": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        300.267,
+        584.0,
+        485.567
+      ]
+    },
+    "41": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        485.567,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 37,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 752,
+      "height": 308
+    },
+    "2": {
+      "width": 839,
+      "height": 307
+    },
+    "3": {
+      "width": 912,
+      "height": 308
+    },
+    "4": {
+      "width": 1094,
+      "height": 339
+    },
+    "5": {
+      "width": 1110,
+      "height": 462
+    },
+    "6": {
+      "width": 1099,
+      "height": 337
+    },
+    "7": {
+      "width": 993,
+      "height": 308
+    },
+    "15": {
+      "width": 760,
+      "height": 308
+    },
+    "16": {
+      "width": 935,
+      "height": 307
+    },
+    "17": {
+      "width": 1131,
+      "height": 462
+    },
+    "18": {
+      "width": 1116,
+      "height": 401
+    },
+    "19": {
+      "width": 911,
+      "height": 308
+    },
+    "20": {
+      "width": 1085,
+      "height": 341
+    },
+    "21": {
+      "width": 1083,
+      "height": 308
+    },
+    "22": {
+      "width": 791,
+      "height": 308
+    },
+    "23": {
+      "width": 893,
+      "height": 307
+    },
+    "24": {
+      "width": 1002,
+      "height": 435
+    },
+    "25": {
+      "width": 1107,
+      "height": 341
+    },
+    "26": {
+      "width": 955,
+      "height": 307
+    },
+    "27": {
+      "width": 699,
+      "height": 308
+    },
+    "29": {
+      "width": 1141,
+      "height": 339
+    },
+    "30": {
+      "width": 946,
+      "height": 306
+    },
+    "31": {
+      "width": 717,
+      "height": 307
+    },
+    "32": {
+      "width": 843,
+      "height": 308
+    },
+    "33": {
+      "width": 1113,
+      "height": 467
+    },
+    "34": {
+      "width": 580,
+      "height": 404
+    },
+    "35": {
+      "width": 1107,
+      "height": 371
+    },
+    "36": {
+      "width": 985,
+      "height": 308
+    },
+    "37": {
+      "width": 1125,
+      "height": 338
+    },
+    "38": {
+      "width": 746,
+      "height": 307
+    },
+    "39": {
+      "width": 953,
+      "height": 436
+    },
+    "40": {
+      "width": 915,
+      "height": 307
+    },
+    "41": {
+      "width": 1085,
+      "height": 430
+    },
+    "42": {
+      "width": 1115,
+      "height": 463
+    }
+  },
+  "altText": {
+    "1": "Question 1. Based on paragraph 1, what does the word “obscured” mean? 1 A denied entry to B raised high above C existed far away from D limited the visibility of",
+    "2": "Question 2. What idea do paragraphs 7 through 9 mainly contribute to the story? A The narrator can find things that will help him. B__ The Mississippi River is slowly losing water. C__ The narrator knows his geography well. D The United States offers opportunities for travel.",
+    "3": "Question 3. What does the phrase “keep your eyes peeled” mean as used in paragraph 9? 3 A to gaze longingly B to view positively C to look carefully D to glance casually",
+    "4": "Question 4. The details in paragraphs 14 through 16 help convey a theme of the story by showing how the A feels at home on the island B___ seems out of touch with nature C feels lonely on the island D__longs to return home",
+    "5": "Question 5. The idiom “One man’s trash is another man’s treasure” means that what seems like waste to one person may be valuable to another. Which sentence from the story supports this idea? “It was slow going, but using my hands, I fashioned a lean-to from willow whips— A slender, limber branches torn from the trees that grew along the river” (paragraph 5) “I found a set of canisters, a bookshelf, a wicker wastebasket, a brass antelope, and a B chipped yellow flowerpot.” (paragraph 14) c “When you're the only person for miles around, Fitch is as good a name as any.” (paragraph 17) D “A soft clink-clink sound from my bedroom told me that the thief had found the money.” (paragraph 27)",
+    "6": "Question 6. Which detail shows a change in the direction of the story? 6 A “All and all, I assured myself, this is a pretty nice place to be.” (paragraph 10) “I dragged a chest of drawers to my hideout, and a picnic cooler that still contained ice.” B (paragraph 14) C “Enough’s enough! I said to myself.” (paragraph 21) D “His masked eyes glowed like smoldering coals.” (paragraph 31)",
+    "7": "Question 7. Which element does the author use to develop the narrator’s viewpoint in the story? 7 A conflict between the characters B flashback to the narrator’s past C dialogue between the characters D description of the narrator’s thoughts",
+    "15": "Question 15. In paragraph 5, the phrase “spirit of competitiveness” refers to 15 A an expectation that her plans will succeed B an interest in working cooperatively C a desire to be the best she could D a belief that patience is important",
+    "16": "Question 16. According to paragraphs 6 and 7, Roxie can best be described as a person who 16 A cared about her work and was constantly learning B appreciated the support of other scientists at the museum C decided to devote her life to preparing and studying birds D preferred taxidermy to her job of preparing specimens",
+    "17": "Question 17. Advancements in one field of science often lead to advancements in other scientific fields. Which detail from the article best supports this idea? “To find the subtle differences in the families’ feathers, Roxie carefully examined them A and drew precise pen-and-ink line drawings . .” (paragraph 9) “Examining the downy portion of the feather under the microscope, Roxie discovered B little branches, called barbs.” (paragraph 10) c “Her findings assisted engineers in building safer aircraft by designing jet engines and windscreens more resilient to bird strikes” (paragraph 11) D “The key to what had killed the owl was Roxie’s discovery that the magpie had eaten bugs that had been sprayed with an insecticide . .” (paragraph 12)",
+    "18": "Question 18. Which detail from the article best expresses a central idea of always gaining more knowledge? 18 A “Over time, Roxie’s research improved aviation safety.” (paragraph 11) “As an expert in her field, Roxie assisted the Fish and Wildlife Department in discovering B what killed birds of prey.” (paragraph 12) “Roxie never wrote a book on her feather science because she felt she’d never finished C learning all there was to learn.” (paragraph 13) “Only by using Roxie’s methods of examining microscopic barbules in the sample were D the researchers able to learn that a black vulture had fed on the deer. . . .” (paragraph 14)",
+    "19": "Question 19. What is the best way paragraph 12 connects to paragraph 14? A __ by describing how Roxie’s research was used to solve a mystery B___ by comparing the feeding habits of different types of animals C __ bysuggesting that DNA analysis is superior to Roxie’s method D _ byexplaining that aircraft are frequently struck by birds during flights",
+    "20": "Question 20. What does paragraph 14 reveal about the author's viewpoint? The author wants to persuade readers to visit a museum to see bird samples. P Pp The author wants to demonstrate that Roxie’s feather research is still important today. P' Y- The author wants to inform readers about the danger birds face from airplanes. 8 Pp. The author wants to prove that Roxie’s method of analysis is better than other kinds of D analysis.",
+    "21": "Question 21. Which claim by the author is most strongly supported with evidence throughout the article? 21 A Roxie wished to increase her understanding of the natural world. B Roxie thought the work she was doing with feathers was important. C Roxie believed that scientists should be receptive to new information. D Roxie wanted students to keep studying despite natural limits to knowledge.",
+    "22": "Question 22. Paragraphs 1 through 6 most develop Torix’s viewpoint by 22 A showing how he analyzes a problem and devises a solution B revealing what he has learned by observing the legate C demonstrating how he interacts with other characters D presenting the close family relationships in his life",
+    "23": "Question 23. How does Gaius’s attitude toward Torix change in paragraphs 5 through 7? A __ It shifts from annoyed to appreciative. B__It shifts from anxious to relaxed. C__Itshifts from distracted to thoughtful. D __Itshifts from critical to proud.",
+    "24": "Question 24. Read this sentence from paragraph 9. The legate’s face bore the soft expression of a young boy being cared for by a doting mother. What does the phrase “bore the soft expression” suggest about the legate? A _He wishes to be reunited with his mother. B __ He becomes uninterested rather quickly. C He appears to be relaxed and pleased. D = _ He has a carefree and childlike personality.",
+    "25": "Question 25. What change in plot occurs in paragraph 12? 25 A Gaius buys goods from the local shops, which increases sales for the owners. B Gaius’s leg wound heals, so the Roman doctor does not return to the fort. C Gaius makes visits to see Torix and Grandfather, and becomes friendly with them. Gaius has the cobbler make him new boots, because the old ones were ruined during his D injury.",
+    "26": "Question 26. What is the reason Torix wants to build a relationship with Gaius? 26 A Torix thinks he can gain valuable experience in caring for Gaius’s wounds. B Torix believes Gaius may solve his problem with the soldiers. C Torix wants to encourage Gaius to spend money on Dere Street. D Torix hopes Gaius will ask him to care for the three-legged dog, Tribus.",
+    "27": "Question 27. Which sentence best states a theme of the story? A __ Pets provide trustworthy companionship. B___ Big problems often require complex solutions. C Adults can learn important lessons from children. D Friendship can be a very powerful tool.",
+    "29": "Question 29. The description in paragraphs 1 and 2 of the difference between Greta’s and other people's attitude about the fog shows that A __ Greta behaves in ways that cause problems for her parents B Greta does not care that the fog hinders people's work routines C __ Greta is attracted to the fog in a special and mysterious way D __ Greta is not concerned with other people’s opinions of her",
+    "30": "Question 30. The author’s word choice in paragraph 3 creates a tone of A__ boredom, because Greta does not foresee anything interesting happening B__ peacefulness, because the pasture is quiet and daily life is predictable C__ suspense, because there is a hint of something unexpected to come D contrast, because Greta realizes she is different from other children",
+    "31": "Question 31. What idea does paragraph 5 most contribute to the story? 31 A Greta’s attachment to the area and its history B the isolation of the land where Greta lives C the beauty of the landscape where Greta lives D Greta’s curiosity about historical activities",
+    "32": "Question 32. In paragraph 8, Greta’s reaction when she finds Rosie suggests that 32 A she is amused by Rosie’s independent spirit B she is happy to have found Rosie at all in the fog C she is surprised at how far from home Rosie had wandered D she is pleased that the search for Rosie brought her to this place",
+    "33": "Question 33. Which detail best supports a theme in the story? “The men who fished dreaded it for it either kept them on shore altogether and cut down A __ their meager earnings, or it made their hours on the sea more dangerous than ever” (paragraph 1) “Years before, a number of villages had dotted the shore on either side. Now, only a few B were left and those were dwindling in size . .” (paragraph 4) “Greta knew every stone, every curve of it for miles up over the high pastures and then c down again toward the sea.” (paragraph 5) “Fog had always seemed to her like the magic spell in the old fairy tales—a spell that D caught you up and kept you as safe...” (paragraph 12)",
+    "34": "Question 34. Read this sentence from paragraph 12. She caught her breath and stared. This sentence suggests that Greta is A __ frustrated by Rosie's behavior B__ stunned by the vision before her C__ worried about what she might find D__ exhausted by her journey to find Rosie",
+    "35": "Question 35. Which detail from the story best foreshadows Greta’s discovery? 35 A “. . . she began to sense that she was looking for something within the fog.” (paragraph 3) B “And then there was the day when old Rosie was particularly stubborn.” (paragraph 6) “Rosie isn’t at the bars with the other cows. . . . You’d best go look for her . . .” C (paragraph 7) “It was the most exciting thing that had ever happened to her in her whole life.” D (paragraph 13)",
+    "36": "Question 36. What does the phrase “paving the way,” as used in paragraph 2, show about Seager? 36 A She wants to be the first to discover new forms of life. B She is trying to find out what is in the atmosphere of hot planets. C She is creating opportunities for future exploration. D She wants to learn more about exoplanets and their atmospheres.",
+    "37": "Question 37. How does the information in paragraphs 1 through 3 contribute to the understanding of the rest 37 of the article? A It explains the type of work Seager does as an astrophysicist. B It identifies the different teams that Seager works with. C It indicates that there may be life outside of our planet. D It explains how to identify a planet outside our solar system.",
+    "38": "Question 38. In paragraph 5, what is the meaning of the word “adversity”? 38 A results from actions B difficulties in life C large work assignments D opponents of an individual",
+    "39": "Question 39. Read this sentence from paragraph 5. 39 Sports are helpful that way, because you can fail there—your skill and commitment have a consequence. What does this sentence reveal about Seager’s beliefs? A Commitment to a project is necessary. B Making mistakes in an activity is upsetting. C Consequences keep individuals from trying. D Failure is an essential part of learning.",
+    "40": "Question 40. Which idea best expresses a central idea of paragraph 6? 40 A Success can be found by completing goals gradually. B People usually find that it is easier to pay attention to many little tasks. C People with big ideas can finish projects more quickly. D Completing a large goal is a good way to find success.",
+    "41": "Question 41. Which detail best shows how scientists determine if there could be life on an exoplanet? 41 “We can basically look for what life does here. It uses chemistry to store and release A energy.” (paragraph 11) “Signs of life won’t necessarily indicate if it is microbes, plants, or intelligent life.” B (paragraph 12) “For that I have a core team that has different branches focused on different things . . .” C (paragraph 13) “We have partnered up and are helping choose their instruments. It would be a small D rocket . . .” (paragraph 13)",
+    "42": "Question 42. In the article “In Defense of Curiosity,” Eleanor Roosevelt wrote, “In its simplest form, curiosity 42 will help you to an all-around education.” How does Sara Seager represent this idea? Seager is a professor who spends part of each day teaching and training students to be A scientists. Seager spends most of her time studying and researching in order to learn about B exoplanets. Seager’s team uses different techniques and scientific methods to study exoplanets and C atmospheres. Seager’s unique thinking and interests have driven her to learn about many different D topics."
+  }
+}

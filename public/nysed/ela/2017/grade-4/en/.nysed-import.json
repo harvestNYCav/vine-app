@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "9eb521cae46a5c9841ff303ee4b6a2b715894c264c9f468cba1e82c3b264c55c",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        310.95
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        310.95,
+        584.0,
+        503.1
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        503.1,
+        584.0,
+        706.6
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        251.1
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        251.1,
+        584.0,
+        443.25
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        443.25,
+        584.0,
+        706.6
+      ]
+    },
+    "19": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        245.25
+      ]
+    },
+    "20": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        245.25,
+        584.0,
+        439.2
+      ]
+    },
+    "21": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        439.2,
+        584.0,
+        706.6
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        256.95
+      ]
+    },
+    "23": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        256.95,
+        584.0,
+        451.35
+      ]
+    },
+    "24": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        451.35,
+        584.0,
+        706.6
+      ]
+    },
+    "25": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        245.25
+      ]
+    },
+    "26": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        245.25,
+        584.0,
+        439.2
+      ]
+    },
+    "27": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        439.2,
+        584.0,
+        706.6
+      ]
+    },
+    "28": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        311.85
+      ]
+    },
+    "29": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        311.85,
+        584.0,
+        702.372
+      ]
+    },
+    "30": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        317.25
+      ]
+    },
+    "31": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        317.25,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1150,
+      "height": 487
+    },
+    "2": {
+      "width": 1159,
+      "height": 329
+    },
+    "3": {
+      "width": 1154,
+      "height": 401
+    },
+    "4": {
+      "width": 953,
+      "height": 293
+    },
+    "5": {
+      "width": 948,
+      "height": 294
+    },
+    "6": {
+      "width": 820,
+      "height": 294
+    },
+    "19": {
+      "width": 707,
+      "height": 293
+    },
+    "20": {
+      "width": 1072,
+      "height": 293
+    },
+    "21": {
+      "width": 1151,
+      "height": 320
+    },
+    "22": {
+      "width": 1088,
+      "height": 320
+    },
+    "23": {
+      "width": 876,
+      "height": 293
+    },
+    "24": {
+      "width": 1170,
+      "height": 488
+    },
+    "25": {
+      "width": 1174,
+      "height": 293
+    },
+    "26": {
+      "width": 1128,
+      "height": 293
+    },
+    "27": {
+      "width": 1122,
+      "height": 403
+    },
+    "28": {
+      "width": 1052,
+      "height": 427
+    },
+    "29": {
+      "width": 860,
+      "height": 294
+    },
+    "30": {
+      "width": 1166,
+      "height": 454
+    },
+    "31": {
+      "width": 1062,
+      "height": 321
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which sentence from the article best explains why stunt performers are willing to do such a dangerous job? A “For the stunt performers, this is the day’s work.” (paragraph 4) B “But performers enjoy the thrill of their work and push themselves hard to do more spectacular stunts.” (paragraph 5) C “They work hard to make it look as if someone else is doing the stunt.” (paragraph 7) D “This means filming in remote places such as deserts, jungles, and mountains.” (paragraph 12)",
+    "2": "Question 2. Based on paragraphs 10 through 12, what must stunt actors do to train for their jobs? A They must work to get their bodies ready for action and in good shape. B They must live in far off places. C They must learn to be either a gymnast or a martial artist. D They must become specialists in horse riding, working with explosives, and scuba diving.",
+    "3": "Question 3. Based on the article, why do some stunt actors spend long periods of time away from home? A They need to live in different parts of the world to be able to help the actors. B They need to hike and climb in deserts, jungles, and mountains to help them stay in shape. C They need to travel to the different places where movies and television shows are filmed. D They need to go to different places to learn new skills from experts.",
+    "4": "Question 4. _ Based on the article, music helps circus performers by A calming their fears when they are in front of an audience B reminding them of home when they are performing in new places C letting them know when to begin and end parts of their shows D allowing them to relax during difficult stunts",
+    "5": "Question 5. How do paragraphs 15 through 19 support the author’s main points? A They show that stunt performing has too many dangers. B They give details about how stunt performers train their bodies. C They show how stunt performing is something everyone can do. D They give details about the types of danger stunt performers face.",
+    "6": "Question 6. Which paragraph best supports a main idea of the article? A paragraph 7 B paragraph 10 C paragraph 13 D paragraph 19",
+    "19": "Question 19. yg What does paragraph 3 reveal about Ms. Snoops? A She rarely gets great ideas. B She is an organized person. C She sometimes forgets things. D She wishes Ali were her daughter.",
+    "20": "Question 20. 9 Which detail best reveals what Ali wants to be when she grows up? A Ali thinks of things starting with “M” to try to help Ms. Snoops remember. B Ali collects old objects to show to Ms. Snoops. C Ms. Snoops explains to Ali that making things up is what writers do. D Ms. Snoops thanks Ali for bringing her treasures.",
+    "21": "Question 21. According to the story, what does the phrase “fill in the holes myself” (paragraph 16) mean? A rely on memory to finish a true story B find evidence for the most likely explanation for a story C ask someone questions to figure out the whole story D create details to complete an unfinished story",
+    "22": "Question 22. Which sentence expresses something important that Ali and Ms. Snoops have in common? A They both like old-fashioned fruit preserves. B The icy-blue stone is a mystery to both of them. C They both enjoy making up stories. D Shirley the doll means a lot to both of them.",
+    "23": "Question 23. Which theme is best supported by paragraph 21? A Childhood toys should be kept forever. B Important lessons can be learned from the past. C Nothing brings more joy than to talk with a friend. D Something that seems worthless may be special to someone.",
+    "24": "Question 24. Which detail would be most important to include in a summary of the story? A “Ms. Snoops went to her desk and brought back a sheet of paper marked with a big handwritten ‘M.” (paragraph 3) B “Maybe you were thinking of baking your delicious orange muffins. You haven't made those in a while.” (paragraph 4) C “I would bet dollars to doughnuts this was one of Pug’s stones. He collected unusual ones.” (paragraph 12) D “All these treasures you've shown me have brought back my memories, and I am so grateful.” (paragraph 24)",
+    "25": "Question 25. In paragraph 2, the details about Larry Greene are important because they suggest why A coaches need running experience B his book is full of good ideas for running C young people need special training D his advice about training can be trusted",
+    "26": "Question 26. Based on the article, what is the main reason it is helpful to join a team or a club? A You can have fun running with people. B You can improve by working with a coach. C You can learn to change your time goals. D You can learn to run far without getting tired.",
+    "27": "Question 27. Why is the text box “Fun Run” included in the article? A It provides ideas for training that add to suggestions given in the article. B It gives an opinion about training that is different from the rest of the article. C It suggests that a silly approach to running is better than the article’s serious approach. D It provides evidence to support the article’s claim that people can become better runners.",
+    "28": "Question 28. Read this sentence from paragraph 1. 28 A s your body becomes more conditioned to the exercise, you’ll get the endurance to go even farther and faster. Which paragraph best supports this claim? A paragraph 2 B paragraph 3 C paragraph 5 D paragraph 6",
+    "29": "Question 29. B ased on paragraph 6, what does it mean to run “efficiently”? 29 A to stretch and cool down correctly B to use correct speed and form C to train with another person D to avoid any danger",
+    "30": "Question 30. Which sentence best expresses the main idea of the article? 30 A “If your school participates in the President’s Challenge, chances are you have taken the Physical Fitness Test.” (paragraph 1) B “ ‘But to perform your best in the mile run, and to feel good doing it, you really need to prepare properly,’ says Larry Greene.” (paragraph 2) C “ To train for a mile run, start by running a short distance, such as one-quarter mile.” (paragraph 5) D “ ‘Don’t push yourself when running becomes painful,’ Greene says.” (paragraph 6)",
+    "31": "Question 31. B ased on information in the text box “First Place Finish!” what can the reader 31 conclude about racing? A Running in races can encourage people to work hard. B C ompeting in races is something every runner must try. C T raining three days a week is necessary to win races. D W inning championship races requires joining a program."
+  }
+}

@@ -29,6 +29,12 @@ async function seedTestAccounts(db: Client): Promise<void> {
       sql: 'INSERT INTO user_tracks (user_id, track, created_at) VALUES (?, ?, ?)',
       args: [student.id, student.track, now],
     })),
+    ...studentRows
+      .filter(student => student.track === 'math' || student.track === 'ela')
+      .map(student => ({
+        sql: 'INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, updated_at) VALUES (?, 0, 3, ?)',
+        args: [student.id, now],
+      })),
   ])
 }
 
@@ -45,6 +51,8 @@ export async function deleteUserProfile(db: Client, userId: string, role: 'stude
     { sql: 'DELETE FROM math_attempts WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM math_exam_attempts WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM math_exam_section_progress WHERE user_id = ?', args: [userId] },
+    { sql: 'DELETE FROM ela_exam_attempts WHERE user_id = ?', args: [userId] },
+    { sql: 'DELETE FROM ela_exam_section_progress WHERE user_id = ?', args: [userId] },
   ]
 
   if (role === 'student') {
@@ -71,6 +79,8 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM math_attempts', args: [] },
     { sql: 'DELETE FROM math_exam_attempts', args: [] },
     { sql: 'DELETE FROM math_exam_section_progress', args: [] },
+    { sql: 'DELETE FROM ela_exam_attempts', args: [] },
+    { sql: 'DELETE FROM ela_exam_section_progress', args: [] },
     { sql: 'DELETE FROM math_progress', args: [] },
     { sql: 'DELETE FROM activity_log', args: [] },
     { sql: 'DELETE FROM teaching_sessions', args: [] },

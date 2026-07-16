@@ -1,0 +1,95 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "e4e50659dbad011e1baafece07d3393e15b1225775069bd29b92d9e492a65e41",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        187.71
+      ]
+    },
+    "2": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        65.774,
+        575.0,
+        196.41
+      ]
+    },
+    "3": {
+      "sourcePage": 10,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        195.21
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        248.61
+      ]
+    },
+    "5": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        247.41
+      ]
+    },
+    "6": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        65.79,
+        575.0,
+        242.346
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 976,
+      "height": 271
+    },
+    "2": {
+      "width": 976,
+      "height": 290
+    },
+    "3": {
+      "width": 976,
+      "height": 288
+    },
+    "4": {
+      "width": 1040,
+      "height": 406
+    },
+    "5": {
+      "width": 1040,
+      "height": 404
+    },
+    "6": {
+      "width": 1080,
+      "height": 392
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which detail about Mlaika helps explain the strange sounds she was making? A She was an African elephant. B She lived in Kenya. C She lived near a highway. D She was ten years old.",
+    "2": "Question 2. Which paragraph in the article shows how people are most like the animals? A paragraph 2 B paragraph 3 C paragraph 5 D paragraph 7",
+    "3": "Question 3. Which detail best supports the article’s main idea? A Parrots copy human sounds. B People copy sounds and noises. C Mlaika is one of the elephants that copy sounds. D Dr. Joyce H. Poole studies mammals that copy sounds.",
+    "4": "Question 4. Read the sentence from paragraph 7. When they are kept outside of their natural environment, they may copy unusual sounds. What is the meaning of “environment” in this sentence? A the work a person or animal does B the place a person or animal lives C the family a person or animal has D the noise a person or animal makes",
+    "5": "Question 5. Read the sentence from the article. It turned out that Mlaika was copying the sounds of the trucks driving by. (paragraph 3) How does paragraph 7 support this sentence? A It gives a new example of Mlaika copying sounds. B It shows how Mlaika enjoyed studying the trucks. C It gives a possible reason for Mlaika copying sounds. D It shows how Mlaika learned to make the truck sounds.",
+    "6": "Question 6. Read the sentence from paragraph 6. Dr. Poole says that elephants, too, need to form bonds with their family and friends. Which action in the article best shows the forming of a “bond”? A imitating a truck B talking on television C learning to chirp D studying animal sounds"
+  }
+}

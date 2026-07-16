@@ -8,7 +8,7 @@ export default function NYSEDAttribution({
   isSpanish: boolean
 }) {
   const sourceTitle = isSpanish ? exam.sourceTitle.es : exam.sourceTitle.en
-  const sourceUrl = isSpanish ? exam.sourceUrl.es : exam.sourceUrl.en
+  const sourceUrl = isSpanish ? (exam.sourceUrl.es ?? exam.sourceUrl.en) : exam.sourceUrl.en
   const accessDate = /^\d{4}-\d{2}-\d{2}$/.test(exam.accessedAt)
     ? new Date(`${exam.accessedAt}T00:00:00Z`)
     : new Date(exam.accessedAt)

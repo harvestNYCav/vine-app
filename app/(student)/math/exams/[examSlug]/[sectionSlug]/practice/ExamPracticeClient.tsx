@@ -13,19 +13,14 @@ import NYSEDAttribution from '../../../NYSEDAttribution'
 type Screen = 'intro' | 'question' | 'results'
 
 type CheckedFeedback = {
-  correct: boolean | null
-  awardedPoints: number | null
-  pointsPossible: number
-  correctAnswer: string | null
+  correct: boolean
+  correctAnswer: string
   explanation: string
-  criteria: string[]
-  requiresSelfAssessment: boolean
 }
 
 type SavedResponse = {
   questionId: string
   answer: string
-  selfScore?: number
 }
 
 type FinalResult = {
@@ -50,7 +45,6 @@ export default function ExamPracticeClient({
   const [answer, setAnswer] = useState('')
   const [checkedAnswer, setCheckedAnswer] = useState<string | null>(null)
   const [feedback, setFeedback] = useState<CheckedFeedback | null>(null)
-  const [selfScore, setSelfScore] = useState<number | null>(null)
   const [responses, setResponses] = useState<SavedResponse[]>([])
   const [result, setResult] = useState<FinalResult | null>(null)
   const [loading, setLoading] = useState(false)
@@ -81,7 +75,6 @@ export default function ExamPracticeClient({
       setAnswer('')
       setCheckedAnswer(null)
       setFeedback(null)
-      setSelfScore(null)
       setResponses([])
       setResult(null)
       setScreen('question')
@@ -112,7 +105,6 @@ export default function ExamPracticeClient({
       if (!response.ok) throw new Error(data.error || 'Unable to check this answer')
       setCheckedAnswer(submittedAnswer)
       setFeedback(data)
-      if (!data.requiresSelfAssessment) setSelfScore(data.awardedPoints)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unable to check this answer')
     } finally {
@@ -142,13 +134,12 @@ export default function ExamPracticeClient({
   }
 
   function continueFromFeedback() {
-    if (loading || !question || !feedback || checkedAnswer === null || selfScore === null) return
+    if (loading || !question || !feedback || checkedAnswer === null) return
     const completedResponses = [
       ...responses.filter(item => item.questionId !== question.id),
       {
         questionId: question.id,
         answer: checkedAnswer,
-        ...(feedback.requiresSelfAssessment ? { selfScore } : {}),
       },
     ]
     setResponses(completedResponses)
@@ -162,7 +153,6 @@ export default function ExamPracticeClient({
     setAnswer('')
     setCheckedAnswer(null)
     setFeedback(null)
-    setSelfScore(null)
     setError('')
   }
 
@@ -180,8 +170,8 @@ export default function ExamPracticeClient({
           <h1 className="mt-1 text-2xl font-bold text-green-800">{isSpanish ? section.title.es : section.title.en}</h1>
           <p className="mt-2 text-sm leading-relaxed text-gray-600">
             {isSpanish
-              ? `${section.questionIds.length} preguntas del examen de 2026. Las preguntas de opción múltiple y respuesta corta se califican automáticamente. Las respuestas escritas, cuando se incluyen, tienen una guía para que califiques tu propio trabajo.`
-              : `${section.questionIds.length} questions from the 2026 test. Multiple-choice and short answers are graded automatically. Written responses, when included, have a guide so you can score your own work.`}
+              ? `${section.questionIds.length} preguntas de opción múltiple del examen de ${exam.year}, calificadas automáticamente.`
+              : `${section.questionIds.length} multiple-choice questions from the ${exam.year} test, graded automatically.`}
           </p>
           <button
             type="button"
@@ -215,13 +205,6 @@ export default function ExamPracticeClient({
               <p className="text-xs text-blue-700">{isSpanish ? 'Puntos' : 'Points'}</p>
             </div>
           </div>
-          {questions.some(item => item.type === 'constructed-response') && (
-            <p className="mt-3 text-xs leading-relaxed text-gray-500">
-              {isSpanish
-                ? 'Los puntos de las respuestas escritas incluyen tu propia evaluación con la guía mostrada.'
-                : 'Written-response points include your own assessment using the guide shown.'}
-            </p>
-          )}
           <div className="mt-6 flex gap-3">
             <Link href={sectionHref} className="flex-1 rounded-2xl bg-gray-100 py-3 font-medium text-gray-700">
               {isSpanish ? 'Lección' : 'Lesson'}
@@ -238,7 +221,7 @@ export default function ExamPracticeClient({
   }
 
   if (!question) return null
-  const questionImage = isSpanish ? question.image.es : question.image.en
+  const questionImage = isSpanish ? (question.image.es ?? question.image.en) : question.image.en
   const questionAlt = isSpanish ? question.image.alt.es : question.image.alt.en
 
   return (
@@ -265,51 +248,28 @@ export default function ExamPracticeClient({
         </div>
 
         <div className="mt-5">
-          {question.type === 'multiple-choice' ? (
-            <fieldset>
-              <legend className="mb-2 text-sm font-semibold text-gray-700">{isSpanish ? 'Elige tu respuesta' : 'Choose your answer'}</legend>
-              <div className="grid grid-cols-4 gap-2">
-                {(['A', 'B', 'C', 'D'] as const).map(choice => (
-                  <button
-                    key={choice}
-                    type="button"
-                    disabled={loading || !!feedback}
-                    onClick={() => setAnswer(choice)}
-                    aria-pressed={answer === choice}
-                    className={`rounded-xl border-2 py-3 text-lg font-bold transition-colors ${
-                      answer === choice
-                        ? 'border-green-600 bg-green-50 text-green-800'
-                        : 'border-gray-200 bg-white text-gray-600 hover:border-green-300'
-                    } disabled:cursor-default`}
-                  >
-                    {choice}
-                  </button>
-                ))}
-              </div>
-            </fieldset>
-          ) : question.type === 'short-answer' ? (
-            <label className="block">
-              <span className="mb-2 block text-sm font-semibold text-gray-700">{isSpanish ? 'Tu respuesta' : 'Your answer'}</span>
-              <input
-                type="text"
-                value={answer}
-                disabled={loading || !!feedback}
-                onChange={event => setAnswer(event.target.value)}
-                className="w-full rounded-2xl border-2 border-gray-200 bg-gray-50 px-4 py-3 text-lg font-semibold outline-none focus:border-green-500 focus:bg-white"
-              />
-            </label>
-          ) : (
-            <label className="block">
-              <span className="mb-2 block text-sm font-semibold text-gray-700">{isSpanish ? 'Muestra y explica tu trabajo' : 'Show and explain your work'}</span>
-              <textarea
-                value={answer}
-                disabled={loading || !!feedback}
-                onChange={event => setAnswer(event.target.value)}
-                rows={5}
-                className="w-full resize-y rounded-2xl border-2 border-gray-200 bg-gray-50 px-4 py-3 text-sm leading-relaxed outline-none focus:border-green-500 focus:bg-white"
-              />
-            </label>
-          )}
+          <fieldset>
+            <legend className="mb-2 text-sm font-semibold text-gray-700">{isSpanish ? 'Elige tu respuesta' : 'Choose your answer'}</legend>
+            <div className="grid grid-cols-4 gap-2">
+              {(['A', 'B', 'C', 'D'] as const).map(choice => (
+                <button
+                  key={choice}
+                  type="button"
+                  disabled={loading || !!feedback}
+                  onClick={() => setAnswer(choice)}
+                  aria-pressed={answer === choice}
+                  aria-label={isSpanish ? `Opción ${choice}` : `Choice ${choice}`}
+                  className={`rounded-xl border-2 py-3 text-lg font-bold transition-colors ${
+                    answer === choice
+                      ? 'border-green-600 bg-green-50 text-green-800'
+                      : 'border-gray-200 bg-white text-gray-600 hover:border-green-300'
+                  } disabled:cursor-default`}
+                >
+                  {choice}
+                </button>
+              ))}
+            </div>
+          </fieldset>
         </div>
 
         {!feedback ? (
@@ -323,62 +283,19 @@ export default function ExamPracticeClient({
           </button>
         ) : (
           <div className={`mt-4 rounded-2xl border p-4 ${
-            feedback.requiresSelfAssessment
-              ? 'border-blue-200 bg-blue-50'
-              : feedback.correct
-                ? 'border-green-200 bg-green-50'
-                : 'border-red-200 bg-red-50'
+            feedback.correct ? 'border-green-200 bg-green-50' : 'border-red-200 bg-red-50'
           }`}>
-            <p className={`font-bold ${
-              feedback.requiresSelfAssessment ? 'text-blue-800' : feedback.correct ? 'text-green-800' : 'text-red-700'
-            }`}>
-              {feedback.requiresSelfAssessment
-                ? (isSpanish ? 'Compara tu trabajo' : 'Compare your work')
-                : feedback.correct
-                  ? (isSpanish ? 'Correcto!' : 'Correct!')
-                  : (isSpanish ? `La respuesta correcta es ${feedback.correctAnswer}.` : `The correct answer is ${feedback.correctAnswer}.`)}
+            <p className={`font-bold ${feedback.correct ? 'text-green-800' : 'text-red-700'}`}>
+              {feedback.correct
+                ? (isSpanish ? 'Correcto!' : 'Correct!')
+                : (isSpanish ? `La respuesta correcta es ${feedback.correctAnswer}.` : `The correct answer is ${feedback.correctAnswer}.`)}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
-
-            {feedback.requiresSelfAssessment && (
-              <>
-                <p className="mt-4 text-sm font-bold text-blue-900">{isSpanish ? 'Una respuesta fuerte incluye:' : 'A strong response includes:'}</p>
-                <ul className="mt-2 space-y-1.5">
-                  {feedback.criteria.map((criterion, index) => (
-                    <li key={index} className="flex gap-2 text-sm text-blue-900">
-                      <span aria-hidden="true">□</span>
-                      <span>{criterion}</span>
-                    </li>
-                  ))}
-                </ul>
-                <fieldset className="mt-4">
-                  <legend className="text-sm font-bold text-blue-900">{isSpanish ? '¿Cuántos puntos obtuvo tu respuesta?' : 'How many points did your response earn?'}</legend>
-                  <div className="mt-2 flex gap-2">
-                    {Array.from({ length: question.points + 1 }, (_, value) => (
-                      <button
-                        key={value}
-                        type="button"
-                        disabled={loading}
-                        onClick={() => setSelfScore(value)}
-                        aria-pressed={selfScore === value}
-                        className={`flex-1 rounded-xl border-2 py-2 font-bold ${
-                          selfScore === value
-                            ? 'border-blue-600 bg-white text-blue-800'
-                            : 'border-blue-200 bg-blue-100/50 text-blue-600'
-                        }`}
-                      >
-                        {value}
-                      </button>
-                    ))}
-                  </div>
-                </fieldset>
-              </>
-            )}
 
             <button
               type="button"
               onClick={continueFromFeedback}
-              disabled={loading || selfScore === null}
+              disabled={loading}
               className="mt-4 w-full rounded-2xl bg-green-700 py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50"
             >
               {loading

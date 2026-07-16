@@ -1,0 +1,404 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
+  "crops": {
+    "8": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        263.767
+      ]
+    },
+    "9": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        263.767,
+        584.0,
+        458.167
+      ]
+    },
+    "10": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        458.167,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        291.843
+      ]
+    },
+    "12": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        291.843,
+        584.0,
+        486.243
+      ]
+    },
+    "13": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        486.243,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "16": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        500.643
+      ]
+    },
+    "17": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        500.643,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "19": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        446.167
+      ]
+    },
+    "20": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        446.167,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        263.767
+      ]
+    },
+    "30": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        263.767,
+        584.0,
+        470.167
+      ]
+    },
+    "31": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        470.167,
+        584.0,
+        700.373
+      ]
+    },
+    "32": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        263.767
+      ]
+    },
+    "33": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        263.767,
+        584.0,
+        458.167
+      ]
+    },
+    "34": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        458.167,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "37": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        446.167
+      ]
+    },
+    "38": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        446.167,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "40": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        500.643
+      ]
+    },
+    "41": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        500.643,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "8": {
+      "width": 1151,
+      "height": 314
+    },
+    "9": {
+      "width": 902,
+      "height": 287
+    },
+    "10": {
+      "width": 1024,
+      "height": 287
+    },
+    "11": {
+      "width": 735,
+      "height": 394
+    },
+    "12": {
+      "width": 836,
+      "height": 286
+    },
+    "13": {
+      "width": 1139,
+      "height": 423
+    },
+    "14": {
+      "width": 1151,
+      "height": 367
+    },
+    "15": {
+      "width": 938,
+      "height": 394
+    },
+    "16": {
+      "width": 1111,
+      "height": 313
+    },
+    "17": {
+      "width": 858,
+      "height": 286
+    },
+    "18": {
+      "width": 1077,
+      "height": 287
+    },
+    "19": {
+      "width": 850,
+      "height": 287
+    },
+    "20": {
+      "width": 666,
+      "height": 287
+    },
+    "21": {
+      "width": 855,
+      "height": 287
+    },
+    "29": {
+      "width": 1151,
+      "height": 314
+    },
+    "30": {
+      "width": 1074,
+      "height": 313
+    },
+    "31": {
+      "width": 1092,
+      "height": 286
+    },
+    "32": {
+      "width": 1108,
+      "height": 314
+    },
+    "33": {
+      "width": 712,
+      "height": 287
+    },
+    "34": {
+      "width": 1027,
+      "height": 287
+    },
+    "35": {
+      "width": 997,
+      "height": 287
+    },
+    "36": {
+      "width": 993,
+      "height": 287
+    },
+    "37": {
+      "width": 963,
+      "height": 287
+    },
+    "38": {
+      "width": 881,
+      "height": 287
+    },
+    "39": {
+      "width": 916,
+      "height": 394
+    },
+    "40": {
+      "width": 1168,
+      "height": 286
+    },
+    "41": {
+      "width": 1020,
+      "height": 286
+    },
+    "42": {
+      "width": 1165,
+      "height": 399
+    }
+  },
+  "altText": {
+    "8": "Question 8. I n line 3, what does the simile “like clouds across the sky” help the reader understand about the horses in Euphemia’s sketches? A They are drawn sloppily. B They look like they are in motion. C They are getting tangled up with each other. D They look like they are trotting through fog.",
+    "9": "Question 9. H ow do lines 14 through 16 contribute to the development of the plot? A They establish Marisa’s problem. B They emphasize Marisa’s hopefulness. C They contrast Marisa’s artistic abilities with Euphemia’s. D They illustrate Marisa’s determination to not let Luke bother her.",
+    "10": "Question 10. Which phrase best conveys the tone in lines 1 through 30? A “They’re always running wild and free. . .” (lines 2 and 3) B “He also calls me Messy.” (lines 8 and 9) C “Next I roughed in most of the body. . .” (lines 17 and 18) D “I scratched a big X through my earless, macaroni‑legged horse, . . .” (line 26)",
+    "11": "Question 11. Read this sentence from line 32. I brooded about it all through dinner. What effect does the word “brooded” have in the story? A It shows Marisa’s anxiety about her abilities. B It reveals Marisa’s motives for drawing. C It emphasizes how Marisa is growing as a character. D It indicates Marisa has a major decision to make.",
+    "12": "Question 12. H ow do lines 36 through 38 help convey the theme of the story? A They show that some situations take time to change. B They prove that practice can help natural talents to develop. C They suggest that inspiration may come in unexpected ways. D They demonstrate that new ideas will eventually be accepted.",
+    "13": "Question 13. Which sentence best explains why Marisa’s final horse drawing was different than her first tries? A “Everything looked special in that light, even the scraggly horses next door.” (lines 37 and 38) B “I noticed the curves of their muscles, the shadows on their faces, the shine along their backs.” (lines 42 through 44) C “An idea began to take shape in my mind, and just then the cinnamon horse turned its head toward me and nodded three times.” (lines 49 and 50) D “I choose a deep brown, pulling it across my paper in the shape of the chocolate horse.” (line 52)",
+    "14": "Question 14. H ow does Marisa change while watching her neighbors’ horses? A She realizes that Euphemia’s horses do not look realistic, so she decides to try to draw better pictures than her friend. B She decides to try a different way of drawing and is proud of her work. C She realizes she can never be an artist like Euphemia but wants to draw like her anyway. D She finally learns that drawing horses is easier with proper lighting and art supplies.",
+    "15": "Question 15. Read line 15 of the story. “ You call this one only fair?” he asked. “It is a gem for the king.” What does this line suggest about the father? A He has not looked at the pearl as closely as Ramón has. B He does not think that Ramón is correct about the pearl. C He is testing Ramón’s confidence in judging the pearl’s value. D He is teaching Ramón about the pearl’s quality.",
+    "16": "Question 16. Which detail from the story best supports the idea that Ramón is becoming an expert at judging pearls? A “ ‘For this one,’ he said, ‘what is your notation?’ ” (lines 11 and 12) B “ ‘For a poor king,’ I said.” (line 16) C “ ‘With a little care the flaw can be peeled away,’ he said.” (lines 19 and 20) D “I would like to go today.” (line 29)",
+    "17": "Question 17. W hy is the father reluctant to bring Ramón on a pearl‑diving trip? A He is concerned for Ramón’s safety. B He needs Ramón to evaluate more pearls. C He thinks Ramón is still too young to sail. D He is unsure Ramón is ready to dive.",
+    "18": "Question 18. I n line 55, why does Ramón suggest that he will “stay on deck while the others dive”? A His father needs him to help with other jobs on the boat. B He realizes that his father will never actually let him go. C His father has convinced him that it is too dangerous. D He is trying to gradually change his father’s mind.",
+    "19": "Question 19. How does line 57 best contribute to the development of the story? A by signaling a turning point B by providing a solution to the problem C by comparing the characters’ actions D by introducing a new conflict",
+    "20": "Question 20. How does the father change during the story? A He becomes concerned about a diver’s health. B He begins to acknowledge Ramón’s maturity. C He becomes frustrated by Ramón’s persistence. D He stops worrying about his family business.",
+    "21": "Question 21. T he author develops Ramón’s point of view in the story mostly by A describing Ramón’s fear of pearl diving B including Ramón’s analysis of the pearl C describing how Ramón feels about his father D including dialogue between Ramón and his father",
+    "29": "Question 29. I n lines 4 through 12, the author explains why scientists are trying to find a way to produce spider silk using goats by showing A possible uses for spider silk B the popularity of spider silk C how easy spider silk is to use D how quickly spider silk can be developed",
+    "30": "Question 30. Which statement b est explains an advantage of using goats rather than spiders for the production of silk? A Goats produce stronger silk than spiders do. B Scientists can insert genes into goats but not into spiders. C Spider proteins in goat milk can be spun into silk. D Goats are bigger than spiders and are much easier to raise.",
+    "31": "Question 31. W hat did Jeffrey Turner discover about using Nubian goats for possible silk production? A Nubian goats already make a similar substance. B Nubian goats have high amounts of protein in their milk. C Nubian goats and spiders both prefer living in large groups. D Nubian goats and spiders have body parts that are similar.",
+    "32": "Question 32. I n the process described in lines 35 through 47, which step allows the threads to become strong enough for surgical procedures? A The silk proteins are turned into clumps. B The silk is stretched repeatedly. C Salt is added to the goat’s milk. D Water is added to thin the clumps.",
+    "33": "Question 33. W hy are lines 55 through 59 important to the article? A They suggest that the goats are unusual. B They explain how the goats are kept busy. C They explain that the goats are treated well. D They suggest that the goats are like humans.",
+    "34": "Question 34. Which statement b est expresses a central idea of the article? A Nubian goats produce better quality silk than spiders. B Spider silk is a complex substance that takes effort to make. C Nubian goats have been genetically altered to produce spider silk. D Spider silk contains proteins that are similar to proteins in other living things.",
+    "35": "Question 35. Which detail is most important to include in a summary of the article? A Scientists have made an attempt to gather silk from spiders living on farms. B Spider silk has qualities that can be used in many products. C A scientist started a company to research goat silk. D Machines spin spider silk into thin threads.",
+    "36": "Question 36. How does Nina’s attitude toward Ms. Charlemagne change? A Nina becomes less interested after noticing Ms. Charlemagne’s bracelets. B Nina becomes more fascinated after learning Ms. Charlemagne’s name. C Nina becomes less surprised after hearing Ms. Charlemagne’s viewpoints. D Nina becomes more suspicious after hearing Ms. Charlemagne’s assignment.",
+    "37": "Question 37. H ow do lines 34 through 39 contribute to the development of the story? A by suggesting that Ms. Charlemagne is not qualified to teach art B by introducing Nina to a new way to think about art C by showing that Ms. Charlemagne does not understand how artists work D by describing the way Nina usually completes art assignments",
+    "38": "Question 38. W hy does the author use the word “chirped” in line 43 of the story? A to reveal that Ms. Charlemagne has creative ideas B to imply that Ms. Charlemagne is new at teaching art C to demonstrate that Ms. Charlemagne has a cheerful outlook D to show that Ms. Charlemagne easily relates to the art students",
+    "39": "Question 39. Read this sentence from line 54. I c ould change that number, at least here if not in real life. How does this sentence best contribute to the development of the story? A by signaling a change in Nina’s thinking B by emphasizing the importance of the setting C by revealing Nina’s strong feelings D by suggesting a new plot development",
+    "40": "Question 40. Which quotation best supports a theme of the story? A “Still, I knew she liked the picture and felt proud to see it up on the wall.” (lines 8 and 9) B “I had never seen anything like them.” (line 18) C “Imagine being descended from a medieval French king!” (lines 30 and 31) D “I was the lord of my own picture, wasn’t I?” (line 56)",
+    "41": "Question 41. B ased on details in the story, what can readers conclude about Ms. Charlemagne? A She is a respected artist. B She has a famous relative. C She has a unique personality. D She is a popular substitute teacher.",
+    "42": "Question 42. H ow do the details in the story help develop a theme? A Nina’s thoughts about her mother help develop the theme that being honest will make you feel better. B Nina’s interaction with Isobel helps develop the theme that experiencing a new situation is easier with a friend. C Nina’s drawing helps develop the theme that expressing yourself can help you work through your struggles. D Nina’s description of Ms. Charlemagne helps develop the theme that judging others by their appearance is not a good idea."
+  }
+}

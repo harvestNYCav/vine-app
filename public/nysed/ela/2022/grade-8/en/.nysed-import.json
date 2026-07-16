@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "0a8bd6f3a5ba827221eb9515e7477a013b60aa7790e03da096038029c78a9c2d",
+  "crops": {
+    "8": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "9": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "10": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "12": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        455.85
+      ]
+    },
+    "13": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        455.85,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        263.7
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        263.7,
+        584.0,
+        464.85
+      ]
+    },
+    "27": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        464.85,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        263.7
+      ]
+    },
+    "30": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        263.7,
+        584.0,
+        455.85
+      ]
+    },
+    "31": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        455.85,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        245.7
+      ]
+    },
+    "33": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        245.7,
+        584.0,
+        706.6
+      ]
+    },
+    "34": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        407.7
+      ]
+    },
+    "35": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        407.7,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "8": {
+      "width": 1031,
+      "height": 334
+    },
+    "9": {
+      "width": 1069,
+      "height": 333
+    },
+    "10": {
+      "width": 614,
+      "height": 334
+    },
+    "11": {
+      "width": 1020,
+      "height": 329
+    },
+    "12": {
+      "width": 731,
+      "height": 333
+    },
+    "13": {
+      "width": 1009,
+      "height": 334
+    },
+    "14": {
+      "width": 943,
+      "height": 405
+    },
+    "22": {
+      "width": 917,
+      "height": 334
+    },
+    "23": {
+      "width": 839,
+      "height": 333
+    },
+    "24": {
+      "width": 805,
+      "height": 334
+    },
+    "25": {
+      "width": 1001,
+      "height": 371
+    },
+    "26": {
+      "width": 872,
+      "height": 334
+    },
+    "27": {
+      "width": 975,
+      "height": 410
+    },
+    "28": {
+      "width": 965,
+      "height": 334
+    },
+    "29": {
+      "width": 1071,
+      "height": 371
+    },
+    "30": {
+      "width": 1044,
+      "height": 325
+    },
+    "31": {
+      "width": 974,
+      "height": 370
+    },
+    "32": {
+      "width": 1020,
+      "height": 334
+    },
+    "33": {
+      "width": 970,
+      "height": 335
+    },
+    "34": {
+      "width": 1079,
+      "height": 687
+    },
+    "35": {
+      "width": 976,
+      "height": 411
+    }
+  },
+  "altText": {
+    "8": "Question 8. Which detail bbeesstt reflects the narrator’s point of view of her mother and her beadwork? 8 A comparing the mother to an artist arranging paints upon a palette B describing the mother drawing a blade to trim the buckskin C mentioning the mother making moccasins for her daughter D describing the mother picking up the tiny beads one at a time",
+    "9": "Question 9. What similarity is shared between the events in paragraph 3 and the events in paragraph 4? 9 A Both paragraphs emphasize the value of honoring family traditions. B Both paragraphs describe the ability to use tools with precision. C Both paragraphs demonstrate how teachers inspire others. D Both paragraphs highlight the joys of friendship and play.",
+    "10": "Question 10. The central idea of paragraph 4 is A children enjoy eating sweet things B the narrator is a leader among her friends Cc children are able to make their own fun D the setting has many natural resources",
+    "11": "Question 11. What does the narrator’s frequent use of the word “we” in paragraphs 4 and 5 suggest? 11 A youthfulness B dependence C companionship D remembrance",
+    "12": "Question 12. What is the meaning of “discourse” as used in paragraph 6? 12 A brief remark B spoken story C response to someone D disagreement between people",
+    "13": "Question 13. How do paragraphs 8 and 9 contrast with the paragraphs right before and after them? A They provide a look at the narrator’s imagination. B They demonstrate the narrator’s desire for independence. C They emphasize the narrator’s physical abilities. D They focus attention on the narrator’s selfish nature.",
+    "14": "Question 14. Which sentence best expresses a central idea of the passage? A The narrator is interested in her mother’s beadwork on small moccasins. B After beadwork lessons with her mother, the narrator loves to play outdoors. C The narrator’s friends try to help her catch her shadow while playing. D When running through the fields, the narrator and her friends make lots of noise.",
+    "22": "Question 22. What does the phrase “cold, white light” in paragraph 3 suggest about Chibi? 22 A She prefers to be outdoors during the day. B She demands fast responses from humans. C She struggles to survive outside in the winter. D She is indifferent to the feelings of humans.",
+    "23": "Question 23. What is the meaning of the word “subtle” as it is used in paragraph 5? 23 A environmental B slight C powerful D rapid",
+    "24": "Question 24. How does the narrator’s point of view shift in paragraphs 7 and 8? A He grows concerned the landlady will discover the cat. B He starts to think about keeping the cat. Cc He becomes worried for the safety of the cat. D He begins to feel affection toward the cat.",
+    "25": "Question 25. In paragraph 8, why does the narrator say he “had begun little by little to understand 25 cat lovers”? A He realizes that most cats are probably like Chibi. B He decides to buy a cat calendar to celebrate Chibi. C He feels a sense of contentment when Chibi visits. D He is in awe of the boy who runs around outside with Chibi.",
+    "26": "Question 26. Which activity first leads Chibi to engage with the narrator and his wife? 26 A sleeping on the sofa B staying away from the landlady C wanting to play ball D being called by a nickname",
+    "27": "Question 27. Which quotation best expresses a central idea of the story? A “The cat’s name was Chibi, which means ‘little one.’ ” (paragraph 1) B “The cat’s manner of rejection was like cold, white light” (paragraph 3) Cc “Having played to her heart’s content, Chibi would come inside and rest for a while.” (paragraph 7) D “But, though I had started to think of her as the best cat around, she was not really our cat.” (paragraph 8)",
+    "28": "Question 28. Which statement would be mmoosstt important to include in a summary of the story? 28 A Chibi looks especially slim and tiny for a cat. B Chibi grows comfortable with the narrator and his wife. C Chibi avoids being touched by humans. D Chibi rarely makes a sound except for the tinkling of her bell.",
+    "29": "Question 29. In paragraph 1, what does the phrase “lurches along its tracks—then takes a heart-stopping 29 plunge” suggest about the Cyclone roller coaster? A It moves at an unexpected rate of speed. B It provides a thrilling experience for riders. C It appeals to some visitors but not others. D It presents a safety hazard for riders.",
+    "30": "Question 30. Why was George Ferris’s wheel considered an “engineering marvel” (paragraph 4)? A It became the most popular attraction at the exposition. B It was the fastest ride in the Midway section of the exposition. C It gave people the opportunity to see the capabilities of new technology. D It was something that other amusement park owners tried to bring to their parks.",
+    "31": "Question 31. How did Tilyou’s visit to the World’s Columbian Exposition affect the property at 31 Coney Island? A Tilyou was motivated to build a park with amusement rides. B Tilyou brought George Ferris’s giant wheel to Coney Island. C Tilyou created multiple attractions based on different themes. D Tilyou decided to construct an electric railway to Coney Island.",
+    "32": "Question 32. the use of quotation marks around the word “spaceship” in paragraph 6 suggests that A __ the spaceship is a form of transportation for the ride B the vehicle that the visitors ride looks like a spaceship C the park has an old spaceship converted into a ride D the spaceship resembles a similar attraction at another park",
+    "33": "Question 33. Based on paragraphs 10 and 11, what is the author’s point of view? A Newer amusement parks offer families more fun than Coney Island. B Coney Island should be modernized in order to keep attracting visitors. C__Ithas cost too much money to restore Coney Island after recent difficulties. Y Y D Coney Island remains an exciting destination for visitors after many years.",
+    "34": "Question 34. Read this sentence from paragraph 11. And from New Jersey’s Wildwood Park to California’s Pacific Park and Florida’s ‘Walt Disney World, other amusement and theme parks have taken their cues from Coney Island. Which quotation best supports this claim? “The inspiration for amusement parks such as Coney Island sprang from an A __ exciting event in 1893—the World’s Columbian Exposition in Chicago” (paragraph 2) B “When he was unable to buy Ferris’s wheel, he had his own version built” (paragraph 6) Cc “Attractions that are so familiar today—roller coasters, water rides, fun houses, Tunnels of Love—all got their start there” (paragraph 9) D “They have grown to epic proportions in their efforts to offer a world full of fun.” (paragraph 11)",
+    "35": "Question 35. Which statement expresses a central idea developed throughout the article? A The Coney Island amusement park was initially separated by different types of entertainment. B The World’s Columbian Exposition had many elements that were later used in the Coney Island amusement park. Cc The Coney Island amusement park was influenced by previous attractions and eventually impacted the modern amusement park. D The invention of the electric railway was important to the popularity of the Coney Island amusement park."
+  }
+}

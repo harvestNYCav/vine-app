@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "fc717fd5fac384d19205f9800fbd743ebe9ac872467b84de5f55701da6e2a57d",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        463.419
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        463.419,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        272.643
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        272.643,
+        584.0,
+        483.819
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        483.819,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        58.367,
+        584.0,
+        271.243
+      ]
+    },
+    "23": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        271.243,
+        584.0,
+        465.243
+      ]
+    },
+    "24": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        465.243,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "26": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        474.243
+      ]
+    },
+    "27": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        474.243,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "30": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "32": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        510.243
+      ]
+    },
+    "33": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        510.243,
+        584.0,
+        697.373
+      ]
+    },
+    "34": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "35": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 666,
+      "height": 328
+    },
+    "2": {
+      "width": 770,
+      "height": 327
+    },
+    "3": {
+      "width": 1137,
+      "height": 490
+    },
+    "4": {
+      "width": 725,
+      "height": 328
+    },
+    "5": {
+      "width": 871,
+      "height": 327
+    },
+    "6": {
+      "width": 923,
+      "height": 328
+    },
+    "7": {
+      "width": 692,
+      "height": 327
+    },
+    "22": {
+      "width": 959,
+      "height": 379
+    },
+    "23": {
+      "width": 894,
+      "height": 327
+    },
+    "24": {
+      "width": 1082,
+      "height": 327
+    },
+    "25": {
+      "width": 1067,
+      "height": 365
+    },
+    "26": {
+      "width": 791,
+      "height": 327
+    },
+    "27": {
+      "width": 715,
+      "height": 327
+    },
+    "28": {
+      "width": 836,
+      "height": 328
+    },
+    "29": {
+      "width": 1125,
+      "height": 355
+    },
+    "30": {
+      "width": 1083,
+      "height": 487
+    },
+    "31": {
+      "width": 1059,
+      "height": 365
+    },
+    "32": {
+      "width": 1004,
+      "height": 410
+    },
+    "33": {
+      "width": 834,
+      "height": 327
+    },
+    "34": {
+      "width": 927,
+      "height": 328
+    },
+    "35": {
+      "width": 996,
+      "height": 401
+    }
+  },
+  "altText": {
+    "1": "Question 1. What does paragraph 5 reveal about Paige? A _ She fears going out on the lake. B She wants to avoid her grandparents. Cc She prefers the outdoors to coming inside. D _ She wants to play with the neighborhood girls.",
+    "2": "Question 2. How do paragraphs 8 through 10 develop the plot of the story? A They give background information about Paige. B_ They illustrate Paige's internal conflict. C They explain why Paige admires her Grandpa. D They show how Paige and her brothers are alike.",
+    "3": "Question 3. Read the sentence from paragraph 14 below. Across from the kitchenette stood the bathroom, which contributed to the monster’s bad case of morning breath. What does the metaphor mean in the sentence? A __ The RV had a rotten smell. B People slept poorly inside the RV. C __ The RV wasa cramped place. D__ People made a mess inside the RV.",
+    "4": "Question 4. Which detail signals a change in the direction of the story? A __ Grandpa loans Paige a fishing pole. B_ Paige warns her family about the heat. Cc Grandpa and Grandma arrive in their RV. D Paige and the girls beat the boys in a water fight.",
+    "5": "Question 5. How does the author most develop Grandpa's point of view in the story? A __ by having the narrator describe Grandpa B__bysharing Grandpa's thoughts with the reader C by including dialogue between Grandpa and the kids D by showing how Grandpa acts with Paige’s brothers",
+    "6": "Question 6. Which detail would be most important to include in a summary of the story? A_ Paige loses a lot of fishing poles. B Grandpa owns many different hats. C Paige enjoys water-skiing and tubing. D Grandpa wants to take the kids fishing.",
+    "7": "Question 7. Which sentence best expresses the theme of the story? A People usually change as they grow older. B Sometimes people are embarrassed by family. Cc People often cherish their childhood memories. D__ Sometimes people make choices to please others.",
+    "22": "Question 22. How do paragraphs 3 and 4 contribute to the story? A They help show Rakhee'’s kindness and ease around creatures in the outdoors. B They help the reader understand Rakhee’s concern of whether her grandmother will remember her. C they provide evidence for Rakhee’s love of singing Indian songs as a child. D They give the reader insight into Rakhee’s memories of her grandmother.",
+    "23": "Question 23. Which important idea does the author develop in paragraphs 7 through 9? A __ Rakhee has lived a very exciting life. B Rakhee wishes she had grown up in India. Cc Rakhee has much to learn about her family’s culture. D _ Rakhee’s family is typical of Indian families.",
+    "24": "Question 24. Which statement best describes how the narrator reacts to the events in paragraphs 8 and 9? A __ She becomes more appreciative of her mother. B_ She is uneasy about the change in her mother. C She becomes confused by her mother. D She admires the change in her mother.",
+    "25": "Question 25. In paragraph 9, what is the meaning of the phrase “it streamed down her back in a lustrous river”? A her long hair was flowing and shiny B her long hair was damp from being in a bun Cc her long hair seemed heavier than normal D her long hair moved steadily in one direction",
+    "26": "Question 26. What does paragraph 9 most reveal about the narrator’s mother? A that she is more talkative when she is in India B that she follows customary traditions when she is in India Cc that she is more self-conscious when she is in India D that she visits many people when she is in India",
+    "27": "Question 27. Which statement best states a theme of the story? A Families can be surprising. B Beauty can be found in most things. C Traveling to new places can be tiring. D___Newexperiences can change how we see the world.",
+    "28": "Question 28. How does the author most develop Rakhee’s point of view? A__ bycomparing Rakhee’s experience to her mother’s B by having Rakhee describe her impressions of India C__ by showing Rakhee’s alarm during the scene with the elephant D by including Rakhee’s reaction to Amma’s changed appearance",
+    "29": "Question 29. How is the idea “Lightning begins inside thunderstorms” (paragraph 2) developed in the article? A __ bycomparing a lightning bolt to a small spark B by describing how lightning occurs in different types of weather C__byexplaining how air at different temperatures creates a charge in clouds D by providing examples of how much electricity is produced by electrons jumping through air",
+    "30": "Question 30. Read this quotation from paragraph 6. Between 1,500 and 2,000 thunderstorms are crackling and booming around the world at this very moment... Why does the author use the words “crackling and booming” instead of “occurring”? A to help the reader experience the speed of lightning B_ to help the reader imagine the sounds of thunderstorms C tobe clear about the electrical nature of lightning D tobe accurate about how common thunderstorms are",
+    "31": "Question 31. How does the illustration support the author’s claims in the section “Lightning around the World”? A _ byhighlighting the size of lightning strikes in particular areas B by providing evidence of why lightning strikes in some areas YP 8 'Yy 48 8 C.__ byillustrating which areas are more affected by lightning strikes y 8 D __byshowing the limited areas in the world where lightning strikes occur y s 8) 8",
+    "32": "Question 32. How does the section “Lightning Safety” connect to the section “What is Lightning?” A “Lightning Safety” summarizes the effects of lightning described in “What is Lightning?” B “Lightning Safety” contrasts different types of lightning described in “What is Lightning?” Cc “Lightning Safety” elaborates on the cause of the powerful lightning described in “What is Lightning?” D “Lightning Safety” describes ways to avoid the powerful lightning explained in “What is Lightning?”",
+    "33": "Question 33. Which sentence best expresses a central idea in the article? A Lightning strikes are only about as thick as a pencil. B__Lightning strikes are uncommon far out over the ocean. C Lightning strikes are due to unstable weather conditions. D Lightning strikes are able to travel through pipes in a building.",
+    "34": "Question 34. What does paragraph 9 suggest about the author's point of view in the article? A __ Theauthor has great respect for lightning. B The author has difficulty understanding lightning. C the author believes that lightning can be useful. D The author believes that it is impossible to avoid lightning.",
+    "35": "Question 35. Which idea would be most important to include in a summary of the article? A “The farther away lightning strikes, the deeper the sound of the thunder . .” (paragraph 5) B “Lightning zaps the remote mountain village of Kifuka, in central Africa, nearly every day.’ (paragraph 6) Cc “Because of its unpredictability and power, lightning can be extremely dangerous.” (paragraph 8) D “You're safe inside the car because electricity will travel over the metal surface instead of through the interior” (paragraph 9)"
+  }
+}

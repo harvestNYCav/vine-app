@@ -1,0 +1,180 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "5372fb817cc7cb16ec10650319a7eab745c59d0b49597eadc8f9205f962c1a0a",
+  "crops": {
+    "1": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        462.243
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        462.243,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        462.243
+      ]
+    },
+    "6": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        462.243,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "8": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        462.243
+      ]
+    },
+    "9": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        462.243,
+        584.0,
+        702.372
+      ]
+    },
+    "10": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "11": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        474.243
+      ]
+    },
+    "12": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        474.243,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 981,
+      "height": 329
+    },
+    "2": {
+      "width": 810,
+      "height": 321
+    },
+    "3": {
+      "width": 1044,
+      "height": 392
+    },
+    "4": {
+      "width": 928,
+      "height": 329
+    },
+    "5": {
+      "width": 898,
+      "height": 327
+    },
+    "6": {
+      "width": 968,
+      "height": 329
+    },
+    "7": {
+      "width": 662,
+      "height": 322
+    },
+    "8": {
+      "width": 874,
+      "height": 327
+    },
+    "9": {
+      "width": 890,
+      "height": 322
+    },
+    "10": {
+      "width": 1073,
+      "height": 364
+    },
+    "11": {
+      "width": 852,
+      "height": 327
+    },
+    "12": {
+      "width": 1082,
+      "height": 327
+    }
+  },
+  "altText": {
+    "1": "Question 1. In paragraph 3, what is mmoosstt lliikkeellyy the narrator’s point of view of Stephanie? 1 A Stephanie likes to talk with many people on the bus. B Sometimes Stephanie acts younger than she really is. C Stephanie likes to stay friends with people for a long time. D Sometimes Stephanie acts in a mean way toward a friend.",
+    "2": "Question 2. What does the phrase “left out” mean as used in paragraph 7? A watched B alone C troubled D careful",
+    "3": "Question 3. Which quotation best shows how Rosa and Stephanie usually act with each other? A “Rosa and Stephanie did everything together.” (paragraph 2) “She walked away to join Toni and Vanessa, and Rosa was left B : » standing alone.” (paragraph 5) Cc “Rosa tried not to check the mirror to see if Stephanie had noticed” (paragraph 7) D “But Rosa walked past her and slid into the empty seat next to Kiara.” (paragraph 8)",
+    "4": "Question 4. In paragraphs 16 through 20, the reader can see that Rosa changes from 4 A trying to avoid someone to making new friends B feeling sad about something to having a good time C wanting to upset her friend to wanting to include her D having a good time to feeling angry at someone",
+    "5": "Question 5. In paragraph 21, what does the phrase “Stephanie brightened” mean? 5 A She became smarter. B She moved into the sunlight. C She changed into dressy clothes. D She became happier.",
+    "6": "Question 6. Which sentence bbeesstt supports the central message of the story? 6 A Stephanie makes room for Rosa to sit next to her on the bus. B Stephanie tells Rosa that she is going to the pool with someone else. C Rosa tells Stephanie that she has plans with Kiara. D Rosa asks Stephanie if she wants to go to the pool with her and Kiara.",
+    "7": "Question 7. What question does paragraph 3 help to answer? 7 A How do ears take in sounds? B What do eardrums do? C How do noises travel? D What do sounds feel like?",
+    "8": "Question 8. Which sentence explains why there are no sounds in outer space? A __ Sound waves cannot travel fast enough to be heard in space. B Sound waves cannot bounce off things in space. C There is no air in space for sound waves to travel through. D There are no people or animals in space to hear sound waves.",
+    "9": "Question 9. What happens right after sound waves cause the eardrum to vibrate? A The brain makes sense of what is heard. B Nerve hairs send signals to the brain. C Sound waves travel through the ear canal. D Some sound waves cause lower sounds.",
+    "10": "Question 10. Which phrase from the passage best explains the meaning of “silence” as it is used in paragraph 7? A “There are no sounds” (paragraph 7) B “Because there is no air” (paragraph 7) C “sound waves bounce back” (paragraph 8) D “clap your hands in an empty room” (paragraph 8)",
+    "11": "Question 11. Which sentence best states the main idea of the passage? A Some noises are loud and others are quiet. B Sound waves do not travel through all things the same way. C Vibrations create sound waves that let us hear noises. D There is no air or sound in outer space.",
+    "12": "Question 12. Based on the passage, what does the author most likely think about how people hear? A Learning how people understand sounds is very interesting. B__Itis strange that all sounds do not return to where they start. C _Itis hard to find out how people make sense of sounds. D The fact that there is no sound in space is a problem."
+  }
+}

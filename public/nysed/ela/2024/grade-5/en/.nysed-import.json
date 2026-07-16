@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "69e11b3841c5c70bac9ff5c3ec9017bd06e37e3651742c253378f198148bc034",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        259.038
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        259.038,
+        584.0,
+        459.914
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        459.914,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        247.038
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        247.038,
+        584.0,
+        495.914
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        495.914,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        251.862
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        251.862,
+        584.0,
+        500.738
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        500.738,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        271.038
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        271.038,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        247.038
+      ]
+    },
+    "30": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        247.038,
+        584.0,
+        443.138
+      ]
+    },
+    "31": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        443.138,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "33": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        507.914
+      ]
+    },
+    "34": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        507.914,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1131,
+      "height": 337
+    },
+    "2": {
+      "width": 755,
+      "height": 305
+    },
+    "3": {
+      "width": 1055,
+      "height": 304
+    },
+    "4": {
+      "width": 736,
+      "height": 306
+    },
+    "5": {
+      "width": 1113,
+      "height": 429
+    },
+    "6": {
+      "width": 909,
+      "height": 305
+    },
+    "7": {
+      "width": 1082,
+      "height": 337
+    },
+    "22": {
+      "width": 1103,
+      "height": 306
+    },
+    "23": {
+      "width": 1116,
+      "height": 429
+    },
+    "24": {
+      "width": 1008,
+      "height": 304
+    },
+    "25": {
+      "width": 1127,
+      "height": 337
+    },
+    "26": {
+      "width": 1056,
+      "height": 306
+    },
+    "29": {
+      "width": 1084,
+      "height": 306
+    },
+    "30": {
+      "width": 903,
+      "height": 305
+    },
+    "31": {
+      "width": 1069,
+      "height": 402
+    },
+    "32": {
+      "width": 949,
+      "height": 434
+    },
+    "33": {
+      "width": 1077,
+      "height": 306
+    },
+    "34": {
+      "width": 603,
+      "height": 305
+    },
+    "35": {
+      "width": 1117,
+      "height": 363
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which detail from paragraph 3 best helps the reader understand the meaning of the phrase “well 1 turned-out”? A sound of drumming hooves B pranced down the ramp C his shabby winter coat D feverishly he pawed the ground",
+    "2": "Question 2. How do paragraphs 3 and 11 develop an idea in the story? A __ They show how Tom changes his mind about Chancey. B They explain the cause and effect of Chancey’s arrival. C__ They reveal why Tom wanted to train Chancey himself. D__ They compare how Chancey looked at different times.",
+    "3": "Question 3. Paragraphs 14 and 18 are important to understanding Chancey because they show that he 3 A can be a calm and friendly animal B is confused about his new home C will be easy to train and care for D understands that Tom has to leave",
+    "4": "Question 4. Tom and Nick are similar in the story because they both 4 A are eager to clip Chancey and make him look his best B learn about Chancey from the man who drove him C know how to make Chancey feel appreciated D show confidence in the effort to help Chancey",
+    "5": "Question 5. How does paragraph 19 help the reader understand the story? 5 It explains the reason why Tom spends time at the stable by suggesting that his mother A does not like horses. It reveals more about Tom’s character by describing how important spending time at the B stable is to him. It shows a resolution to Tom’s problem by showing that he only leaves the stable once C Chancey is comfortable. It tells the effect of Chancey coming to the stable by explaining that Tom no longer wants D to spend time at home.",
+    "6": "Question 6. Which sentence best expresses a theme of the story? 6 A Patience and hard work teach responsibility. B Giving advice to others in unexpected situations is not always helpful. C Situations that seem difficult at first may be better than they appear. D Being kind to others helps them realize their mistakes.",
+    "7": "Question 7. Scientists who have studied horses believe that they are able to understand the moods of the people around them. How does this idea best connect to the details in the story? A ___ The workers at the stable are frightened by how poorly Chancey behaves. B Chancey is relaxed and comfortable when Tom brushes him and speaks nicely to him. C_— Chancey is nervous and upset during his trip to the stable in a trailer. D_ Nick is confident Chancey will behave better once the horse has time to be alone.",
+    "22": "Question 22. How do the details in paragraph 2 support a central idea of the article? A They highlight the idea that certain animals in a city may be helpful to people. B__They show that the city is large enough to support many different kinds of birds. C They explain how different species use city spaces like they do in a natural environment. D__ They compare the homes of animals living in a city with their shelters in the wild.",
+    "23": "Question 23. Which detail from the article best explains why wildlife can survive in urban areas? “A frog darts from a drainpipe to snatch the dragonfly. From the rooftops, a hawk swoops A d » lown to grab the frog” (paragraph 1) “Wild animals need food, water, space to hunt or hide, and a place to raise young. A city B offers all of these.” (paragraph 1) “These insects can live for two months without food, and haven't changed much since scurrying around with dinosaurs millions of years ago.’ (paragraph 3) “These marvelous little wrigglers gobble up dead leaves, food scraps, and garbage, and turn them into rich soil.” (paragraph 3)",
+    "24": "Question 24. What is the meaning of the word “interacts” as it is used in paragraph 4 of the article? 24 A understands well B remains hidden C changes places D comes close",
+    "25": "Question 25. Scientists have found that ants eat a great deal of the food thrown away by people. How does this 25 idea mainly connect to the details in the article? A Like birds, ants will likely be able to find safe places to live in cities. B Like earthworms and bats, ants are good additions to a city environment. C Like cockroaches, ants will likely survive in a city even during very difficult times. D Like butterflies and bears, ants are only attracted to city spaces during certain seasons.",
+    "26": "Question 26. What is the main claim the author makes about people and wildlife? 26 A People should consider city spaces and rural spaces as homes for wildlife. B People should take time to learn about the wildlife in the places where they live. C People should work with local groups to protect wildlife in their neighborhoods. D People should be prepared to encounter dangerous animals in urban environments.",
+    "29": "Question 29. Which sentence best describes the narrator’s point of view? A __ The narrator shares Larry’s thoughts, showing how important lobster fishing is to him. B The narrator shares Larry’s dialogue, showing why he believes his lobsters can be sold. C __ The narrator shares the thoughts of Larry’s father, showing how carefully he prepares. D The narrator shares the feelings of Larry’s father, showing his pride about the lobsters.",
+    "30": "Question 30. How do paragraphs 1 and 5 mainly contribute to the structure of the story? 30 A by telling the reader the causes of later events B by giving the reader a broader understanding of the setting C by describing to the reader the different types of fishing D by entertaining the reader with descriptions of animal behavior",
+    "31": "Question 31. Read this sentence from paragraph 8. “There must be lobsters down there, for sure,” Larry says. Which detail from the story best supports the reason Larry feels certain about the lobsters? A __ the suggestion in paragraph 2 that Larry looks for lobsters each spring B__ the reference in paragraph 6 to Larry steering the lobster boat by himself C__ the claim in paragraph 6 about the types of places where lobsters usually hide D _ the indication in paragraph 9 about why the lobster trap buoys are important",
+    "32": "Question 32. Read this excerpt from paragraph 9. 32 . . . the yellow buoy with black and white stripes floats on top to mark where the trap is. According to this excerpt, buoys are used to A attract lobsters to the traps B show locations where lobsters may be C help lobster fishers find their traps D allow lobster fishers to find their way home",
+    "33": "Question 33. Which detail best supports a theme of the story? A “But winter storms are hard on boats and traps . .” (paragraph 2) B “Every lobsterman uses different colors so that he can tell his buoys . .” (paragraph 3) C “They pass rocky islands where seals bask in the sun . .” (paragraph 5) D “All day long they drop the traps over the side of the boat . .” (paragraph 10)",
+    "34": "Question 34. Paragraphs 13 and 14 suggest that Larry 34 A prefers eating food he catches himself B enjoys relaxing while on a boat C fishes with his father to earn money D feels proud of his ability to catch lobsters",
+    "35": "Question 35. Which detail would be most important to include in a summary of the story? 35 A the description of what Larry and his father wear when they go out fishing on the boat B the description of what Larry and his father see on the beaches while they are on the boat the description of the kelp in the cove that Larry and his father see while fishing on the C boat the description of Larry and his father setting traps then returning to shore all day in the D boat"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "f423c705395638759cdcea8e0fdd4a65f5c1b1b3df3e9073d7b9e64ac1661bd3",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        277.467
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        277.467,
+        584.0,
+        479.567
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        479.567,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        300.267
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        300.267,
+        584.0,
+        558.767
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        558.767,
+        584.0,
+        702.372
+      ]
+    },
+    "19": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        259.467
+      ]
+    },
+    "20": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        259.467,
+        584.0,
+        457.967
+      ]
+    },
+    "21": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        457.967,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        337.467
+      ]
+    },
+    "23": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        337.467,
+        584.0,
+        702.372
+      ]
+    },
+    "26": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        253.467
+      ]
+    },
+    "27": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        253.467,
+        584.0,
+        456.767
+      ]
+    },
+    "28": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        456.767,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        313.467
+      ]
+    },
+    "30": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        313.467,
+        584.0,
+        513.167
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        513.167,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1133,
+      "height": 357
+    },
+    "2": {
+      "width": 860,
+      "height": 317
+    },
+    "3": {
+      "width": 1103,
+      "height": 318
+    },
+    "4": {
+      "width": 1129,
+      "height": 395
+    },
+    "5": {
+      "width": 1101,
+      "height": 447
+    },
+    "6": {
+      "width": 1054,
+      "height": 318
+    },
+    "19": {
+      "width": 881,
+      "height": 319
+    },
+    "20": {
+      "width": 974,
+      "height": 318
+    },
+    "21": {
+      "width": 1136,
+      "height": 357
+    },
+    "22": {
+      "width": 1112,
+      "height": 486
+    },
+    "23": {
+      "width": 1118,
+      "height": 318
+    },
+    "26": {
+      "width": 875,
+      "height": 318
+    },
+    "27": {
+      "width": 855,
+      "height": 318
+    },
+    "28": {
+      "width": 1113,
+      "height": 404
+    },
+    "29": {
+      "width": 1088,
+      "height": 447
+    },
+    "30": {
+      "width": 989,
+      "height": 317
+    },
+    "31": {
+      "width": 1058,
+      "height": 318
+    }
+  },
+  "altText": {
+    "1": "Question 1. In paragraph 7, what does Sylvie mean when she says, “Sounds more stellar, doesn’t 1 it?” A She wants people to think the event will be amazing. B She wants people to be sure art is part of the event. C She wants people to bring their own paint to the event. D She wants people to know the event will help animals.",
+    "2": "Question 2. What do the details in paragraphs 2 and 9 show about Sylvie? 2 A She likes playing on the swings. B She cares about animals. C She knows a lot about the town. D She is a talented artist.",
+    "3": "Question 3. Based on paragraph 14, why does Sammy make a confused face in paragraph 15? 3 A He is surprised that Sylvie thinks it is getting late. B He is disappointed that Sylvie was ready before him. C He is worried his parents did not pack everything. D He is not sure why they need a booth for the dog.",
+    "4": "Question 4. “Preparation is the key to success” is a common saying that means when you plan 4 for an event, it is more likely to go well. Which paragraph best shows how this idea is demonstrated in the story? A paragraph 1 B paragraph 3 C paragraph 11 D paragraph 15",
+    "5": "Question 5. Which detail best expresses a central idea of the story? A “‘Hmm: Sammy tilted his head. ‘I have a few ideas too? ” (paragraph 3) “Then we can sell the paintings. We can donate the money to the Sea View B Animal Shelter” (paragraph 9) “Sylvie looked around. A balloon arch spelled ‘Happy Make a Difference c Day’ from streetlight to streetlight” (paragraph 19) “Sylvie nodded. She squeezed in a few warm-up stretches and reached for D i » er megaphone.” (paragraph 26)",
+    "6": "Question 6. By the end of the story, how does Sylvie most likely feel about the Paint Out? 6 A She is relieved that the planning and work are finished. B She is upset because she did most of the work. C She is concerned that they did not raise enough money. D She is proud that the event was a huge success.",
+    "19": "Question 19. How does the graphic support the information in paragraph 2? 19 A by showing what raccoons look like B by explaining that raccoons have good hearing C by explaining that raccoons can see at night D by showing where some raccoons live",
+    "20": "Question 20. Which sentence best explains why raccoons mostly come out at night? 20 A Raccoons find their food when it is dark. B Raccoons spend most of their time alone. C Raccoons hide during the day to keep safe. D Raccoons have black masks and tail rings.",
+    "21": "Question 21. In which section would the reader find information about what raccoons do during 21 the winter? A “Flexible Fingers” B “Eating Almost Anything” C “Night and Day” D “Many Different Dens”",
+    "22": "Question 22. Animals learn to do things a certain way because of their habitat. Which sentence from the passage best connects to this idea? “Raccoon paws have five fingers, just like a person’s hands do” A (paragraph 2) B “Exactly what a raccoon eats depends on where it lives.” (paragraph 4) “They use the many nerves on the bottoms of their paws to feel their food.” Cc (paragraph 5) “In this home range, they have many hiding places that they use as dens.” D (paragraph 8)",
+    "23": "Question 23. Which detail from the passage best shows what the author thinks about raccoons? A __ ‘Raccoons are very smart and quick.” (paragraph 3) B “Raccoons living near people also eat pet food . .” (paragraph 4) C “Raccoons often dip their food in water . .” (paragraph 5) D “Raccoons can sometimes spread diseases to people.” (paragraph 11)",
+    "26": "Question 26. Why is the information in paragraph 3 important to the story? 26 A It shows the cause of a problem in the story. B It gives details about the setting. C It gives a hint about how the story will end. D It introduces a new character.",
+    "27": "Question 27. Which meaning of the word “spread” is used in paragraph 5? 27 A scattered around B grew slowly C became known D shared freely",
+    "28": "Question 28. 2g Which detail from the story best tells why Marta begins crying? A __ “It went to Marta’s stomach . .” (paragraph 2) B “They were in such a hurry to run to the cookhouse that they knocked over Marta’ table . .” (paragraph 3) “But the dogs, too, were chasing. Leaping into the air, they barked to each Cc » other. A game!” (paragraph 7) D “Ruined homework! Broken glasses!” (paragraph 10)",
+    "29": "Question 29. Which detail from the story best tells what Grandmother believes? 29 “Grandmother’s big moon tortillas were the best in the world!” A (paragraph 1) “When we have a problem we must choose what we will be.” B (paragraph 16) C “When the eagle is high up, it sees how small the earth is.” (paragraph 19) “Grandmother wound some tape around the arm of the glasses.” D (paragraph 20)",
+    "30": "Question 30. What does Marta most likely think about Grandmother’s healing song? 30 A It reminds her of a story. B It helps her make a choice. C It makes her want to dance. D It teaches her about animals.",
+    "31": "Question 31. Which detail would be most important to include in a summary of the story? A Marta’s stomach makes loud noises. B The tortillas are in the cookhouse. C The tortillas bubble and turn brown. D Marta decides to be like an eagle."
+  }
+}

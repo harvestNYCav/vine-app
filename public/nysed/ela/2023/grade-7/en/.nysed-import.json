@@ -1,0 +1,376 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
+  "crops": {
+    "15": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        248.85
+      ]
+    },
+    "16": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        248.85,
+        584.0,
+        513.0
+      ]
+    },
+    "17": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        513.0,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "19": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        454.5
+      ]
+    },
+    "20": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        454.5,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        248.85
+      ]
+    },
+    "23": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        248.85,
+        584.0,
+        446.85
+      ]
+    },
+    "24": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        446.85,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        288.0
+      ]
+    },
+    "26": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        288.0,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "30": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "31": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "33": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        464.85
+      ]
+    },
+    "34": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        464.85,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "37": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "38": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "40": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        472.05
+      ]
+    },
+    "41": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        472.05,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "15": {
+      "width": 912,
+      "height": 319
+    },
+    "16": {
+      "width": 1112,
+      "height": 481
+    },
+    "17": {
+      "width": 1097,
+      "height": 412
+    },
+    "18": {
+      "width": 1085,
+      "height": 319
+    },
+    "19": {
+      "width": 1093,
+      "height": 318
+    },
+    "20": {
+      "width": 1090,
+      "height": 413
+    },
+    "21": {
+      "width": 1086,
+      "height": 369
+    },
+    "22": {
+      "width": 920,
+      "height": 319
+    },
+    "23": {
+      "width": 1097,
+      "height": 318
+    },
+    "24": {
+      "width": 1088,
+      "height": 350
+    },
+    "25": {
+      "width": 1103,
+      "height": 412
+    },
+    "26": {
+      "width": 749,
+      "height": 318
+    },
+    "29": {
+      "width": 798,
+      "height": 319
+    },
+    "30": {
+      "width": 993,
+      "height": 318
+    },
+    "31": {
+      "width": 1051,
+      "height": 318
+    },
+    "32": {
+      "width": 782,
+      "height": 313
+    },
+    "33": {
+      "width": 1129,
+      "height": 350
+    },
+    "34": {
+      "width": 919,
+      "height": 318
+    },
+    "35": {
+      "width": 896,
+      "height": 319
+    },
+    "36": {
+      "width": 811,
+      "height": 319
+    },
+    "37": {
+      "width": 798,
+      "height": 318
+    },
+    "38": {
+      "width": 969,
+      "height": 318
+    },
+    "39": {
+      "width": 1009,
+      "height": 319
+    },
+    "40": {
+      "width": 1113,
+      "height": 372
+    },
+    "41": {
+      "width": 903,
+      "height": 319
+    },
+    "42": {
+      "width": 1108,
+      "height": 391
+    }
+  },
+  "altText": {
+    "15": "Question 15. What do the details in paragraphs 5 through 9 mainly reveal about Kareem? 15 A He wishes to visit more museums. B He prefers listening to jazz music. C He enjoys playing competitive games. D He desires to learn more about his heritage.",
+    "16": "Question 16. Which quotation best represents the idea that the opinion of classmates can have a major effect on teenagers? A “Size implies maturity. Yes, I was the size of an adult (actually, bigger than most!), but I was still just a kid” (paragraph 1) “As a card-carrying Good Boy, I wanted to meet adults’ expectations and get their praise, B__ but as a Regular Kid, I wanted to be like my peers and get their friendship. . .” (paragraph 1) Cc “Weekends, I hung out with my only close friend left in the projects, Norbert.” (paragraph 5) D “And back and forth wed go, trying to one-up the other in a cultural heritage version of rock, paper, scissors.” (paragraph 9)",
+    "17": "Question 17. Which statement best describes the importance of Norbert in Kareem’s life? 17 “We would shut ourselves in my room to play chess and talk about our plans for the A future.” (paragraph 5) “. . . both of us had started to take an interest in finding out more about our ethnic B origins.” (paragraph 6) “And back and forth we’d go, trying to one-up the other in a cultural heritage version of C rock, paper, scissors.” (paragraph 9) “. . . I had a friend in whom I could confide any thought or feeling, knowing he would D never make fun of me.” (paragraph 9)",
+    "18": "Question 18. In paragraph 10, what does Kareem mean when he says, “I didn’t have an aggressive nature”? 18 A He believes he needs to change the way he plays basketball. B He understands he may not be a strong player because of his age. C He discovers the other players know more ways to score in basketball. D He realizes he needs to practice more if he wants to improve as a player.",
+    "19": "Question 19. What does paragraph 14 show about the relationship between Kareem and Coach Donahue? 19 A Kareem and Coach Donahue understand the importance of studying. B Kareem is beginning to understand and appreciate Coach Donahue’s personality. C Kareem expected Coach Donahue’s decision to have him play varsity. D Kareem is worried that Coach Donahue is disappointed by his performance as a player.",
+    "20": "Question 20. Which quotation best expresses a central idea in the article? A “The scary thing about being so tall when you're so young is that people automatically treat you as if youre older” (paragraph 1) “My refuge from the explosive turmoil outside, and the implosive turmoil I had started to feel inside, was basketball.” (paragraph 4) Cc “We even took the subway to the Metropolitan Museum of Art to find out more about Filipino and African cultures” (paragraph 9) D “T hurried away on a mission to tell anyone who would listen that I would be playing varsity that afternoon” (paragraph 15)",
+    "21": "Question 21. How is Kareem and Norbert'’s friendship developed in the article? A The authors describe the various interests that Kareem and Norbert have. B The authors use cause and effect to describe how Kareem and Norbert became friends. Cc The authors present a problem Kareem and Norbert encounter and describe how they solve it. D The authors compare and contrast the friendship of Kareem and Norbert to the friendships of other students.",
+    "22": "Question 22. How do lines 1 through 8 develop the speaker’s point of view? 22 A by revealing why the speaker dislikes being around people B by explaining why the speaker moved away from the sea C by showing how the speaker knows the reason for feeling discontented D by suggesting the speaker is happiest when moving from place to place",
+    "23": "Question 23. How do lines 1 through 16 (the first two stanzas) contribute to the structure of the poem? A They introduce the conflict the speaker feels about her opportunities in different places. B_ They contrast the speaker’s experiences and feelings about living in different places. C They compare phases in the speaker’s life when she wanted to be in a different place. D They show the causes and effects of the speaker deciding to live in a different place.",
+    "24": "Question 24. The repetition of the phrase “once again” in lines 19, 23, 25, and 27 affects the meaning of the poem by A indicating the main places the speaker wishes to revisit B emphasizing how strongly the speaker wishes to return to the sea C __ illustrating some of the speaker’s most cherished memories D revealing the speaker’s concern about some features of the sea",
+    "25": "Question 25. Which lines best support a theme of the poem? A “Searching my heart for its true sorrow, / This is the thing I find to be: / That I am weary of words and people, / Sick of the city, wanting the sea;” (lines 1-4) B “If I could hear the green piles groaning / Under the windy, wooden piers, / See once again the bobbing barrels, / And the black sticks that fence the weirs;” (lines 17-20) Cc “If I could see the weedy mussels / Crusting the wrecked and rotting hulls, / Hear once again the hungry crying / Overhead, of the wheeling gulls.” (lines 21-24) D “Feel once again the shanty straining / Under the turning of the tide, / Fear once again the rising freshet, / Dread the bell in the fog outside; (lines 25-28)",
+    "26": "Question 26. Which phrase best states the speaker’s problem in the poem? A “Wanting the loud sound and the soft sound” (line 7) B “Crusting the wrecked and rotting hulls, (line 22) C “Fear once again the rising freshet; (line 27) D = “Iam too long away from the water;” (line 35)",
+    "29": "Question 29. How does paragraph 4 develop a theme in the story? 29 A by identifying the mother’s opinion about Haydn B by describing the crates where the mother keeps her music C by showing the value of music in the mother’s life D by explaining the importance of the concert for the mother",
+    "30": "Question 30. Which quotation shows a change in the direction of the story? A “...she landed in Takoma Park, at Ahimsa House.” (paragraph 2) B “But he loved hearing stories about the people who lived there: (paragraph 3) C = “When Josh was five, he discovered the cello” (paragraph 4) D “The next day, Mom signed him up for cello lessons . . ” (paragraph 5)",
+    "31": "Question 31. In paragraph 6, how does the narrator’s question to Josh affect the resolution of the story? 31 A by giving Josh an opportunity to express his feelings B by letting the narrator share a memory with her brother C by revealing how Josh has grown in his ability to play the cello D by allowing the narrator to make dinner while her brother is occupied",
+    "32": "Question 32. In paragraph 8, the word “wilted” most likely means that Josh is 32 A confused B frustrated C sad D tired",
+    "33": "Question 33. People often use food as a way to create a sense of community. Which phrase from the story best supports this idea? A “Everyone took turns cooking” (paragraph 1) B = “Cottage Cheese Contraption, invented by an old woman” (paragraph 2) C = “when Mom served chai lattes at the Sunflower Café” (paragraph 3) D “fried it all into a delicious hot mush, while Josh ‘talked’ to me” (paragraph 9)",
+    "34": "Question 34. In paragraph 9, why is the word “talked” in quotation marks? 34 A Josh does not wish to have a discussion with the narrator. B Josh communicates with the narrator by using the cello as his voice. C Josh only pretends to communicate with the narrator. D Josh does not want the narrator to share his feelings with their mother.",
+    "35": "Question 35. How does the author best develop the narrator’s point of view in the story? 35 A by sharing the narrator’s memories B by describing the narrator’s opinions C through the narrator’s reactions to events D through the narrator’s dialogue",
+    "36": "Question 36. Which word best defines the phrase “family myth” in paragraph 1? 36 A fantasy B background C promise D knowledge",
+    "37": "Question 37. What does the word “footnote” mean as it is used in paragraph 2? 37 A a reference to an idea B a small but important role C an accomplishment of a goal D an explanation or definition of an event",
+    "38": "Question 38. How does paragraph 3 contribute to the organization of the article? 38 A It introduces the distrust that existed in Liz Bedell’s family. B It foreshadows that Liz Bedell and her family will be surprised by the truth. C It establishes the position Liz Bedell’s grandfather had in the family. D It shows how little Liz Bedell knew about her past.",
+    "39": "Question 39. How does paragraph 10 contribute to the development of a central idea in the article? 39 A by demonstrating Liz Bedell’s experience in different states B by identifying important people that Liz Bedell knows C by revealing the effect of Liz Bedell’s grandfather’s influence on her D by showing how Liz Bedell chose to honor her great-great aunt’s legacy",
+    "40": "Question 40. In paragraph 12, Grace Bedell supports her argument that Lincoln should grow a beard. Which 40 statement does not support the argument? A “I have got 4 brother’s and part of them will vote for you any way . . .” “. . . if you will let your whiskers grow I will try and get the rest of them to vote for B you . . .” C “. . . you would look a great deal better for your face is so thin . . .” D “All the ladies like whiskers and they would tease their husband’s to vote for you . . .”",
+    "41": "Question 41. In paragraph 15, what does the word “flustered” suggest? 4401 A Grace Bedell became shy around the large crowd. B Meeting Abraham Lincoln was worrisome for Grace Bedell. C Grace Bedell lost interest in the candidate by the time of the meeting. D Receiving a kiss from Abraham Lincoln made Grace Bedell nervous.",
+    "42": "Question 42. Which quotation best reveals the author's purpose for writing the article? A “... she dismissed as ‘family myth’ a story her grandfather often told about his Aunt Grace Bedell” (paragraph 1) B “Her grandfather encouraged her to pursue a lifelong interest in politics.” (paragraph 8) Cc “As to the whiskers, having never worn any, do you not think people would call it a piece of silly affectation . . . ?” (paragraph 14) D “He explained that this Lincoln exhibition was the first time, to his knowledge, that the two letters had been displayed together.” (paragraph 16)"
+  }
+}

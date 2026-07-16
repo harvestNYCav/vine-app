@@ -3,6 +3,7 @@ import { seedDefaultAdminAllowlistIfEmpty } from './admin-allowlist'
 
 let client: Client | null = null
 let initialized = false
+let initialization: Promise<void> | null = null
 
 export async function getDb(): Promise<Client> {
   if (!client) {
@@ -10,8 +11,15 @@ export async function getDb(): Promise<Client> {
     client = createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN })
   }
   if (!initialized) {
-    await initSchema(client)
-    initialized = true
+    initialization ??= initSchema(client)
+      .then(() => {
+        initialized = true
+      })
+      .catch(error => {
+        initialization = null
+        throw error
+      })
+    await initialization
   }
   return client
 }
@@ -55,7 +63,13 @@ async function initSchema(db: Client): Promise<void> {
     CREATE TABLE IF NOT EXISTS student_settings (
       user_id TEXT PRIMARY KEY,
       math_spanish_enabled INTEGER NOT NULL DEFAULT 0,
+      grade_level INTEGER CHECK(grade_level BETWEEN 3 AND 8),
       updated_at INTEGER NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS schema_migrations (
+      name TEXT PRIMARY KEY,
+      applied_at INTEGER NOT NULL
     );
 
     CREATE TABLE IF NOT EXISTS admin_email_verifications (
@@ -196,6 +210,34 @@ async function initSchema(db: Client): Promise<void> {
       PRIMARY KEY (user_id, exam_id, section_slug)
     );
 
+    CREATE TABLE IF NOT EXISTS ela_exam_attempts (
+      id TEXT PRIMARY KEY,
+      user_id TEXT NOT NULL,
+      exam_id TEXT NOT NULL,
+      section_slug TEXT NOT NULL,
+      started_at INTEGER NOT NULL,
+      expires_at INTEGER NOT NULL,
+      finished_at INTEGER,
+      question_ids TEXT NOT NULL,
+      responses TEXT NOT NULL DEFAULT '[]',
+      points_earned INTEGER,
+      points_possible INTEGER
+    );
+
+    CREATE TABLE IF NOT EXISTS ela_exam_section_progress (
+      user_id TEXT NOT NULL,
+      exam_id TEXT NOT NULL,
+      section_slug TEXT NOT NULL,
+      attempts INTEGER NOT NULL DEFAULT 0,
+      best_points INTEGER NOT NULL DEFAULT 0,
+      best_possible INTEGER NOT NULL DEFAULT 0,
+      latest_points INTEGER NOT NULL DEFAULT 0,
+      latest_possible INTEGER NOT NULL DEFAULT 0,
+      completed_at INTEGER,
+      updated_at INTEGER NOT NULL,
+      PRIMARY KEY (user_id, exam_id, section_slug)
+    );
+
     CREATE TABLE IF NOT EXISTS tutor_notes (
       id TEXT PRIMARY KEY,
       student_id TEXT NOT NULL,
@@ -207,17 +249,73 @@ async function initSchema(db: Client): Promise<void> {
   await ensureColumn(db, 'users', 'email', 'TEXT')
   await ensureColumn(db, 'module_progress', 'homework_completed_at', 'INTEGER')
   await ensureColumn(db, 'module_progress', 'homework_score', 'INTEGER')
+  await ensureColumn(
+    db,
+    'student_settings',
+    'grade_level',
+    'INTEGER CHECK(grade_level BETWEEN 3 AND 8)',
+  )
+  await backfillExistingMathStudentGradeLevels(db)
   await ensureUsersTableSupportsAdminRole(db)
   await ensureSessionsTableSupportsStudentId(db)
   await seedDefaultAdminAllowlistIfEmpty(db)
 }
 
-async function ensureColumn(db: Client, table: string, column: string, definition: string): Promise<void> {
+async function ensureColumn(db: Client, table: string, column: string, definition: string): Promise<boolean> {
   const result = await db.execute({ sql: `PRAGMA table_info(${table})`, args: [] })
   const hasColumn = result.rows.some(row => String(row.name) === column)
   if (!hasColumn) {
-    await db.execute({ sql: `ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`, args: [] })
+    try {
+      await db.execute({ sql: `ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`, args: [] })
+    } catch (error) {
+      // Separate server instances can both observe a missing column before
+      // either ALTER commits. Treat the losing ALTER as successful only after
+      // the database confirms that the other instance added the column.
+      const afterRace = await db.execute({ sql: `PRAGMA table_info(${table})`, args: [] })
+      const addedByAnotherInstance = afterRace.rows.some(row => String(row.name) === column)
+      if (!addedByAnotherInstance) throw error
+    }
+    return true
   }
+  return false
+}
+
+async function backfillExistingMathStudentGradeLevels(db: Client): Promise<void> {
+  const migrationName = '2026-07-15-student-grade-level'
+  const existing = await db.execute({
+    sql: 'SELECT 1 FROM schema_migrations WHERE name = ?',
+    args: [migrationName],
+  })
+  if (existing.rows.length > 0) return
+
+  const now = Date.now()
+  await db.batch([
+    {
+      sql: `
+        INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, updated_at)
+        SELECT user_id, 0, 3, ?
+        FROM user_tracks
+        WHERE track = 'math'
+          AND user_id NOT IN (SELECT user_id FROM user_tracks WHERE track = 'ela')
+        ON CONFLICT(user_id) DO NOTHING
+      `,
+      args: [now],
+    },
+    {
+      sql: `
+        UPDATE student_settings
+        SET grade_level = 3, updated_at = ?
+        WHERE grade_level IS NULL
+          AND user_id IN (SELECT user_id FROM user_tracks WHERE track = 'math')
+          AND user_id NOT IN (SELECT user_id FROM user_tracks WHERE track = 'ela')
+      `,
+      args: [now],
+    },
+    {
+      sql: 'INSERT INTO schema_migrations (name, applied_at) VALUES (?, ?) ON CONFLICT(name) DO NOTHING',
+      args: [migrationName, now],
+    },
+  ], 'write')
 }
 
 async function ensureUsersTableSupportsAdminRole(db: Client): Promise<void> {

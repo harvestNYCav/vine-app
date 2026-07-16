@@ -1,0 +1,404 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
+  "crops": {
+    "1": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        330.243
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        330.243,
+        584.0,
+        524.643
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        524.643,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        446.167
+      ]
+    },
+    "6": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        446.167,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.771
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        251.771,
+        584.0,
+        518.177
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        518.177,
+        584.0,
+        704.62
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        263.767
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        263.767,
+        584.0,
+        458.167
+      ]
+    },
+    "27": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        458.167,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "30": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        446.167
+      ]
+    },
+    "31": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        446.167,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        366.249
+      ]
+    },
+    "33": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        366.249,
+        584.0,
+        702.372
+      ]
+    },
+    "34": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "35": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "37": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        458.167
+      ]
+    },
+    "38": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        458.167,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "40": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        702.372
+      ]
+    },
+    "41": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        251.767
+      ]
+    },
+    "42": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        251.767,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1170,
+      "height": 447
+    },
+    "2": {
+      "width": 860,
+      "height": 286
+    },
+    "3": {
+      "width": 909,
+      "height": 286
+    },
+    "4": {
+      "width": 712,
+      "height": 281
+    },
+    "5": {
+      "width": 706,
+      "height": 287
+    },
+    "6": {
+      "width": 1131,
+      "height": 367
+    },
+    "7": {
+      "width": 1151,
+      "height": 564
+    },
+    "22": {
+      "width": 1160,
+      "height": 287
+    },
+    "23": {
+      "width": 869,
+      "height": 394
+    },
+    "24": {
+      "width": 1120,
+      "height": 414
+    },
+    "25": {
+      "width": 1108,
+      "height": 319
+    },
+    "26": {
+      "width": 1162,
+      "height": 287
+    },
+    "27": {
+      "width": 1145,
+      "height": 399
+    },
+    "28": {
+      "width": 1119,
+      "height": 532
+    },
+    "29": {
+      "width": 835,
+      "height": 287
+    },
+    "30": {
+      "width": 874,
+      "height": 287
+    },
+    "31": {
+      "width": 739,
+      "height": 281
+    },
+    "32": {
+      "width": 1159,
+      "height": 532
+    },
+    "33": {
+      "width": 1162,
+      "height": 503
+    },
+    "34": {
+      "width": 1057,
+      "height": 287
+    },
+    "35": {
+      "width": 1052,
+      "height": 314
+    },
+    "36": {
+      "width": 1030,
+      "height": 287
+    },
+    "37": {
+      "width": 1157,
+      "height": 314
+    },
+    "38": {
+      "width": 1047,
+      "height": 287
+    },
+    "39": {
+      "width": 934,
+      "height": 287
+    },
+    "40": {
+      "width": 1171,
+      "height": 692
+    },
+    "41": {
+      "width": 1126,
+      "height": 287
+    },
+    "42": {
+      "width": 1162,
+      "height": 426
+    }
+  },
+  "altText": {
+    "1": "Question 1. Read these words from lines 18 and 19. M r. Scully’s shades were drawn; the house had a pinched look as though it felt the cold. The use of the words “pinched look” contributes to the tone of the story by making the house seem A tense B angry C uncertain D disappointed",
+    "2": "Question 2. L ines 20 through 24 contribute to the development of the plot by A showing that Ned and Mr. Scully are friends B describing the challenges of dealing with heavy snow C suggesting that Mr. Scully has been neglecting the cat D describing weather conditions that can be dangerous for the cat",
+    "3": "Question 3. I n lines 31 through 36, Ned keeps his distance from the cat because he A envisions the cat being sick from licking ice or snow B believes the cat will make him late to school C imagines the cat will become panicked D remembers the cat is deaf and unlikely to respond",
+    "4": "Question 4. L ines 37 through 42 in the story reveal that Ned feels A isolated B confused C relieved D confident",
+    "5": "Question 5. Ned’s decision to leave the cat causes A the cat to become more afraid B Ned to be left behind by the other children C the cat to go hungry for the rest of the day D Ned to be distracted from his work during school",
+    "6": "Question 6. Which quotation best supports a central theme of the story? A “He ate breakfast hastily, too preoccupied to read the story on the cereal box.” (line 11) B “Twice, his glance passed over the icebox.” (line 28) C “. . . but try as he might, the image of the unmoving animal on the ragged old quilt persisted.” (lines 55 and 56) D “Ned read the lines several times before copying them down in his copybook.” (line 61)",
+    "7": "Question 7. Which quotation from the story best shows how the cat has impacted Ned’s life? A “He was going to be late to school if he didn’t get a move on, but he kept looking hard all over the yard as though he could make the cat appear out of snow and gray sky.” (lines 26 through 28) B “The third time, he saw that the motionless mound on top of it was not only the quilt but the cat, joined into one shape by a dusting of snow.” (lines 29 and 30) C “It was odd to think that Billy, huffing and puffing, had gone past Mr. Scully’s place, thinking his own thoughts, while he, Ned, only a few yards away, had been searching for the cat.” (lines 39 through 41) D “It was this that had made his hours in school so hard ever since he and Mr. Scully had seen the cat last autumn, this drawing away of his attention from everything that was going on around him.” (lines 62 through 64)",
+    "22": "Question 22. How do lines 1 through 7 mainly establish the tone of the article? A They create curiosity by inviting the reader to provide an opinion on the two condiments. B They create interest by describing loyal fans supporting their favorite condiment. C They create humor by personifying two condiments in an imagined contest. D They create tension by analyzing the popularity of two condiments.",
+    "23": "Question 23. Read lines 25 and 26 from the article. C hilies have since taken the culinary world by storm. Which detail best supports the author’s claim? A Chili peppers come in many varieties. B Chili peppers are used in many different countries. C Chili peppers are related to tomatoes and eggplants. D Chili peppers were mistakenly thought to resemble black pepper.",
+    "24": "Question 24. R ead this sentence from lines 37 and 38 of the article. A s a consequence, the consumption of wasabi launches an airborne assault on the consumer’s sinuses. What does the phrase “airborne assault” add to the author’s description? A It explains the effect of experiencing the molecules in wasabi. B It suggests a painful experience that makes wasabi undesirable. C It warns that direct contact with wasabi causes injury. D It cautions that wasabi causes an intense repeated attack occurring over time.",
+    "25": "Question 25. W hat is the role of the section “Powerful Punches” in the development of the article? A It describes the physical differences between wasabi and chili peppers. B It explains the best ways to experience the heat from wasabi and chili peppers. C It describes why wasabi and chili peppers are both enjoyable and painful to consume. D It provides a scientific explanation for the effects of consuming wasabi and chili peppers.",
+    "26": "Question 26. T he Scoville scale determines the strength of the heat in chili peppers by A counting the number of sips of chili pepper juice a human subject can consume B recording the amount of capsaicin present in specific amounts of chili pepper juice C measuring how much chili pepper juice must be weakened for it to no longer cause pain D comparing descriptions of the heat a human subject feels while drinking chili pepper juice",
+    "27": "Question 27. W hat is the result of being unable to use the Scoville scale to measure the heat strength of wasabi? A Chromatography is used to compare the heat strengths of wasabi and chili peppers. B Comparing the heat strengths of wasabi and chili peppers using a scientific method is impossible. C A new scale will be developed to compare the degree of pain caused by wasabi and chili peppers. D Experts now rely on a scale based on measuring consumer pain responses to wasabi and chili peppers.",
+    "28": "Question 28. R ead this sentence from lines 71 and 72 of the article. W asabi and chili peppers are like pungent apples and oranges. Which evidence from the article best supports this statement? A “They get our attention by purposely causing us pain.” (lines 3 and 4) B “After separation, the amounts of each component are quantified.” (lines 62 and 63) C “If two chili peppers have the same amount of capsaicin, it can be assumed that those peppers are equally ‘hot.’ ” (lines 65 and 66) D “There’s no way to know if equal amounts of capsaicin and allyl isothiocyanate cause equal degrees of pain.” (lines 67 and 68)",
+    "29": "Question 29. W hich statement expresses a central idea of the article? A Very few people use echolocation in their daily lives. B Echolocation is a technique that can be utilized by humans. C Echolocation has been studied by scientists for many years. D Some animals are known for using echolocation to find food.",
+    "30": "Question 30. H ow do lines 1–5 contribute to the understanding of the text? A by showing the widespread use of echolocation by animals B by giving examples to explain how echolocation works C by presenting the characteristics of animals that use echolocation D by describing how each species uses echolocation differently",
+    "31": "Question 31. I n people who are blind, the visual cortex seems to help A activate the optic nerve where images are formed B increase the amount of light reaching the brain C create images in the brain based on sounds D make echoes of sounds from clicks",
+    "32": "Question 32. Read this sentence from lines 17 and 18. B en says every object in his life talks to him in ways that no one else can hear or understand. Which quotation best supports this claim? A “He can find the pole and the backboard on a basketball goal, and tell which is which by the distinctive echo each makes.” (lines 26 and 27) B “Even though he can’t see the goal he’s aiming for, he can sink a basket.” (lines 27 and 28) C “In school, Ben recognizes his classmates by their voices.” (line 41) D “With the help of Braille books and a talking laptop computer, Ben attends the same classes as sighted students.” (lines 41 through 43)",
+    "33": "Question 33. Read Daniel Kish’s claim from line 46. “ I have mental images that are very rich, very complex.” Which quotation from the article best supports this claim? A “. . . Kish of Long Beach, Calif., also uses echolocation, and has become an expert on it. . . .” (lines 19 and 20) B “He was raised to believe he could do pretty much anything. . . .” (lines 44 and 45) C “. . . Kish varies the pace and volume of his clicks as he walks along. . . .” (lines 48 and 49) D “. . . what he can tell you about an object’s qualities is sometimes astonishingly thorough.” (lines 49 and 50)",
+    "34": "Question 34. H ow do lines 51 through 53 develop a key concept of the article? A by using a comparison to suggest the echolocation potential of humans B by demonstrating that humans use echolocation more effectively than animals do C by describing why using echolocation benefits bats and dolphins in unique ways D by showing that scientists need more time to study echolocation techniques",
+    "35": "Question 35. E cholocation used by humans is distinct from echolocation used by animals because animals can A create louder clicking noises B distinguish among more sounds C see objects that are farther away D locate objects that are smaller in size",
+    "36": "Question 36. Lines 1 through 11 b est support the idea that the author A is fearful the chicks will be vulnerable to predators B is unsure about what she can expect the chicks to understand C wants the chicks to explore the yard she has set up for their needs D has not planned how she will teach the chicks to adjust to a new environment",
+    "37": "Question 37. B ased on lines 12 through 18, which statement best describes the exchange between Gretchen and the author? A Gretchen proves a point, and the author feels embarrassed. B Gretchen gives the author advice, and the author learns from it. C Gretchen comforts the author, and the author feels more confident. D Gretchen shares her personal experiences, and the author criticizes them.",
+    "38": "Question 38. W hat do lines 23 through 31 indicate about the developmental strategy of chickens? A Chickens are adapted to food availability and pressure from predators. B Chickens are born ready and require no further maturing. C Chickens have a faster growth rate than other birds. D Baby chickens spend no time with their parents.",
+    "39": "Question 39. L ines 49 through 59 develop the key idea that chickens raised by humans A are curious about the activities of their caregivers B become a nuisance to the other projects of their owners C grow to prefer the company of people over other chickens D develop their intelligence more than chickens raised by hens",
+    "40": "Question 40. Read lines 36 through 42 from the passage. I n scientific experiments, researchers have trained days-old chicks to find hidden food using both distant and nearby landmarks as cues. Italian researchers demonstrated that at the tender age of fifteen days, after just a week’s training to find hidden food in the middle of their cage, chicks can correctly calculate the center of a given environment—even in the absence of distinctive landmarks. Even more astonishing, they can do it in spaces they have never seen before, whether the area be circular, square, or triangular. How do these lines relate to lines 59 through 64? A Lines 36 through 42 express an opinion, and lines 59 through 64 provide support. B Lines 36 through 42 identify why something happens, and lines 59 through 64 describe what happens. C Lines 36 through 42 present facts, and lines 59 through 64 support the facts with a personal experience. D Lines 36 through 42 provide a comparison, and lines 59 through 64 provide evidence for the comparison.",
+    "41": "Question 41. Which claim do lines 65 through 72 support? A The chickens stay where they do as a direct result of what the author has taught them. B The chickens do what they do because of their interactions with their environment. C The chickens stay where they do because they are unfamiliar with other areas. D The chickens do what they do as a result of trial and error.",
+    "42": "Question 42. H ow does the author’s attitude toward the chickens change from the beginning of the passage to the end? A It varies from fear for their safety to gratitude for winning over the author’s father-in-law. B It shifts from being uncertain about their abilities to being amazed at their complex ways. C As she observes the behavior of the chickens, she realizes their learning keeps pace with the risks they take. D As she gains confidence in her ability to raise her chickens, she comes to appreciate their self-sufficiency."
+  }
+}

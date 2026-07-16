@@ -10,7 +10,8 @@ import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import type { Track } from '@/types'
-import { MATH_EXAMS } from '@/content/math-exams'
+import { getMathExamsForGrade } from '@/content/math-exams'
+import { getElaExamsForGrade } from '@/content/ela-exams'
 import Link from 'next/link'
 
 const SESSION_LABELS: Record<string, string> = {
@@ -44,8 +45,11 @@ export default async function ProgressPage({
   const { mode, lang } = await searchParams
 
   const session = await getSession()
+  if (!session) redirect('/')
+  if (session.role === 'tutor') redirect('/tutor')
+  if (session.role === 'admin') redirect('/admin')
   const db = await getDb()
-  const tracks = await getStudentTracks(db, session!.userId)
+  const tracks = await getStudentTracks(db, session.userId)
   if (tracks.length === 0) redirect('/tracks')
 
   const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
@@ -53,13 +57,14 @@ export default async function ProgressPage({
 
   if (currentMode === 'math') {
     const [mathResult, sessionsResult, settings, examProgressResult] = await Promise.all([
-      db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
-      db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session!.userId] }),
-      getStudentSettings(db, session!.userId),
-      db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [session!.userId] }),
+      db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [session.userId] }),
+      db.execute({ sql: 'SELECT * FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 10', args: [session.userId] }),
+      getStudentSettings(db, session.userId),
+      db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
     ])
     const canUseSpanish = settings.mathSpanishEnabled
     const isSpanish = canUseSpanish && lang === 'es'
+    const assignedExams = getMathExamsForGrade(settings.gradeLevel)
 
     const mathRow = mathResult.rows[0]
     const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
@@ -120,19 +125,30 @@ export default async function ProgressPage({
           <h3 className="font-bold text-gray-700">{isSpanish ? 'Lecciones del examen de Nueva York' : 'New York Exam Lessons'}</h3>
           <p className="mb-3 mt-1 text-xs text-gray-500">
             {isSpanish
-              ? 'Puntuaciones de práctica; las respuestas escritas incluyen autoevaluación.'
-              : 'Practice scores; written responses include learner self-assessment.'}
+              ? 'Puntuaciones de preguntas de opción múltiple calificadas automáticamente.'
+              : 'Scores from automatically graded multiple-choice practice.'}
           </p>
+          {settings.gradeLevel === null && (
+            <div className="mb-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+              {isSpanish ? 'Un administrador debe asignar tu grado para mostrar el progreso del examen.' : 'An admin needs to assign your grade before state-exam progress can be shown.'}
+            </div>
+          )}
           <div className="space-y-3">
-            {MATH_EXAMS.flatMap(exam => exam.sections.map(section => {
+            {settings.gradeLevel !== null && assignedExams.length === 0 && (
+              <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+                {isSpanish ? `No hay exámenes publicados para el grado ${settings.gradeLevel}.` : `No released exams are available for Grade ${settings.gradeLevel}.`}
+              </div>
+            )}
+            {assignedExams.flatMap(exam => exam.sections.map(section => {
               const row = examProgress.find(item => item.exam_id === exam.id && item.section_slug === section.slug)
+              const useSpanish = isSpanish && exam.supportedLanguages.includes('es')
               const percentage = row?.best_possible
                 ? Math.round(Number(row.best_points) / Number(row.best_possible) * 100)
                 : 0
               return (
                 <Link
                   key={`${exam.id}:${section.slug}`}
-                  href={`/math/exams/${exam.slug}/${section.slug}${isSpanish ? '?lang=es' : ''}`}
+                  href={`/math/exams/${exam.slug}/${section.slug}${useSpanish ? '?lang=es' : ''}`}
                   className="block"
                 >
                   <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
@@ -140,7 +156,7 @@ export default async function ProgressPage({
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-xl">{section.emoji}</div>
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center justify-between gap-3">
-                          <p className="truncate text-sm font-semibold text-gray-700">{isSpanish ? section.title.es : section.title.en}</p>
+                          <p className="truncate text-sm font-semibold text-gray-700">{exam.year} · {useSpanish ? section.title.es : section.title.en}</p>
                           <span className={`text-sm font-bold ${percentage ? 'text-blue-700' : 'text-gray-300'}`}>{percentage}%</span>
                         </div>
                         <div className="mt-2 h-2 overflow-hidden rounded-full bg-gray-100">
@@ -250,22 +266,34 @@ export default async function ProgressPage({
   }
 
   // English modes
-  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session!.userId)
+  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session.userId)
   const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode && taughtSlugs.has(mod.slug))
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
-  const [mpResult, vpResult, alResult] = await Promise.all([
-    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ?', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 7', args: [session!.userId] }),
+  const [mpResult, vpResult, alResult, settings, elaExamProgressResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 7', args: [session.userId] }),
+    getStudentSettings(db, session.userId),
+    db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
   ])
 
   type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
   type VocabProgressRow = { word_id: string; correct_count: number; incorrect_count: number }
   type ActivityRow = { date: string; activity_type: string; count: number }
+  type ElaExamProgressRow = {
+    exam_id: string
+    section_slug: string
+    attempts: number
+    best_points: number
+    best_possible: number
+    completed_at: number | null
+  }
 
   const moduleProgress = (mpResult.rows as unknown as ModProgressRow[]).filter(row => visibleModuleSlugs.has(row.module_slug))
   const vocabProgress = (vpResult.rows as unknown as VocabProgressRow[]).filter(row => visibleModuleSlugs.has(row.word_id.split(':')[0]))
   const activityLog = alResult.rows as unknown as ActivityRow[]
+  const elaExamProgress = elaExamProgressResult.rows as unknown as ElaExamProgressRow[]
+  const assignedElaExams = currentMode === 'ela' ? getElaExamsForGrade(settings.gradeLevel) : []
 
   const totalVocab = visibleModules.reduce((sum, m) => sum + m.vocab.length, 0)
   const masteredWords = vocabProgress.filter(v => Number(v.correct_count) >= 3).length
@@ -291,6 +319,55 @@ export default async function ProgressPage({
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA progress' : 'ESL progress'}</p>
+
+      {currentMode === 'ela' && (
+        <section className="mb-6">
+          <h2 className="font-bold text-gray-700">New York ELA exam lessons</h2>
+          <p className="mb-3 mt-1 text-xs text-gray-500">Best scores from released multiple-choice practice for your assigned grade.</p>
+          {settings.gradeLevel === null ? (
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+              An admin needs to assign your grade before state-exam progress can be shown.
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {assignedElaExams.length === 0 && (
+                <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+                  No released ELA exams are available for Grade {settings.gradeLevel}.
+                </div>
+              )}
+              {assignedElaExams.flatMap(exam => exam.sections.map(section => {
+                const row = elaExamProgress.find(item => item.exam_id === exam.id && item.section_slug === section.slug)
+                const percentage = row?.best_possible
+                  ? Math.round(Number(row.best_points) / Number(row.best_possible) * 100)
+                  : 0
+                return (
+                  <Link key={`${exam.id}:${section.slug}`} href={`/ela/exams/${exam.slug}/${section.slug}`} className="block">
+                    <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-50 text-xl">{section.emoji}</div>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center justify-between gap-3">
+                            <p className="truncate text-sm font-semibold text-gray-700">{exam.year} · {section.title}</p>
+                            <span className={`text-sm font-bold ${percentage ? 'text-purple-700' : 'text-gray-300'}`}>{percentage}%</span>
+                          </div>
+                          <div className="mt-2 h-2 overflow-hidden rounded-full bg-gray-100">
+                            <div className="h-full rounded-full bg-purple-600" style={{ width: `${percentage}%` }} />
+                          </div>
+                          {row && (
+                            <p className="mt-1 text-xs text-gray-400">
+                              {Number(row.attempts)} {Number(row.attempts) === 1 ? 'attempt' : 'attempts'}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                )
+              }))}
+            </div>
+          )}
+        </section>
+      )}
 
       {/* Overview Stats */}
       <div className="grid grid-cols-2 gap-3 mb-6">

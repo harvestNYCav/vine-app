@@ -1,0 +1,309 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "e1787392509748c02633c2318e17d1967f8e3277bc8ee0dc607197e4189d94a5",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        443.7
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        443.7,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        311.85
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        311.85,
+        584.0,
+        504.0
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        504.0,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        51.3,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        51.1,
+        584.0,
+        275.976
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        275.976,
+        584.0,
+        476.738
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        476.738,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        263.7
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        263.7,
+        584.0,
+        455.85
+      ]
+    },
+    "27": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        455.85,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "30": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        443.7
+      ]
+    },
+    "31": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        443.7,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        273.6
+      ]
+    },
+    "33": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        273.6,
+        584.0,
+        479.7
+      ]
+    },
+    "34": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        479.7,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1100,
+      "height": 371
+    },
+    "2": {
+      "width": 709,
+      "height": 333
+    },
+    "3": {
+      "width": 697,
+      "height": 461
+    },
+    "4": {
+      "width": 996,
+      "height": 461
+    },
+    "5": {
+      "width": 883,
+      "height": 333
+    },
+    "6": {
+      "width": 862,
+      "height": 333
+    },
+    "7": {
+      "width": 807,
+      "height": 334
+    },
+    "22": {
+      "width": 1066,
+      "height": 371
+    },
+    "23": {
+      "width": 912,
+      "height": 334
+    },
+    "24": {
+      "width": 1077,
+      "height": 334
+    },
+    "25": {
+      "width": 1113,
+      "height": 371
+    },
+    "26": {
+      "width": 896,
+      "height": 332
+    },
+    "27": {
+      "width": 726,
+      "height": 331
+    },
+    "28": {
+      "width": 908,
+      "height": 334
+    },
+    "29": {
+      "width": 963,
+      "height": 334
+    },
+    "30": {
+      "width": 1099,
+      "height": 333
+    },
+    "31": {
+      "width": 853,
+      "height": 334
+    },
+    "32": {
+      "width": 984,
+      "height": 411
+    },
+    "33": {
+      "width": 1002,
+      "height": 368
+    },
+    "34": {
+      "width": 1035,
+      "height": 391
+    },
+    "35": {
+      "width": 968,
+      "height": 334
+    }
+  },
+  "altText": {
+    "1": "Question 1. In paragraph 2, what does the sentence “They look just like fleecy rainbows” suggest about the flowers? A The flowers are colorful and fuzzy. B_ The flowers are wet and fluffy. C The flowers are striped and shaggy. D The flowers are transparent and puffy.",
+    "2": "Question 2. What does the word “welt” mean as used in paragraph 9? A _ itch B ) skin C - gnat D bump",
+    "3": "Question 3. Read this sentence from paragraph 14. His smile faded as he went on. What does the sentence suggest about Professor Raglin? A Heis suffering from the bad smell. B He regrets having to study the plant. Cc He dislikes the plant he is talking about. D He is about to deliver disappointing news.",
+    "4": "Question 4. Read this sentence from paragraph 15. “At least they’re not poison,” Wendy said after Professor Raglin had left. What does the sentence suggest about Wendy? A __ Wendy looks for the positive side of situations. B Wendy does not like people to give her bad news. C Wendy challenges people who do not agree with her. D Wendy encourages people to learn to love the flowers.",
+    "5": "Question 5. How does the setting of the story affect what happens to the Woolly-Puff? A __ Alack of space causes the flower to be shipped away. B_ Aneed for compost causes the plant to be valued. C_ A problem with insects causes the flower to be kept. D A lack of pets causes the plant to be adopted.",
+    "6": "Question 6. What does the phrase “smell funny” mean as it is used in paragraph 15? A The flowers made the children laugh. B__ The scent of the flowers was unusual. C The flowers caused the children to be itchy. D The stems of the flowers were strange.",
+    "7": "Question 7. Which statement best states a theme of the story? A _ Friends should support each other in difficult situations. B Following the rules can sometimes get you in trouble. C It may take courage to speak up when you have a good idea. D The smallest things can cause big problems.",
+    "22": "Question 22. In paragraph 2, what does the phrase “made her want to dance along with the leaves” most suggest about Mrs. Majeska? A She is ready to move along quickly to get home. B She remembers the words to a song in her head. Cc She likes the fall weather because it causes change. D _ She is happy because she is enjoying her day.",
+    "23": "Question 23. How do paragraphs 3 and 4 foreshadow the ending of the story? A__ byemphasizing that a single glove is of little use B by emphasizing that nobody cares about a lost glove C __byshowing that Mrs. Majeska is careful when picking up the glove D by showing that Mrs. Majeska is worried about the owner of the glove",
+    "24": "Question 24. Based on paragraphs 5 and 6, which sentence best contrasts Mrs. Majeska and the children? A Mrs. Majeska wants to clean the glove but the children do not. B_ Mrs. Majeska is sorry for the glove owner but the children are not. C Mrs. Majeska is happy to see the glove while the children are not. D_— Mrs. Majeska understands the value of the glove while the children do not.",
+    "25": "Question 25. Mrs. Majeska’s actions in paragraphs 7 and 8 most contribute to the development of the central idea by showing that she A ___ iscontent that the gloves are back together B considers taking the gloves home for herself C thinks she is silly for worrying about the gloves D cleans off the gloves to make them easy to find",
+    "26": "Question 26. What can the reader infer about Mrs. Majeska in paragraph 9? A She is nervous that the gloves will not be found by their owner. B_ She is concerned about what the boy and the two ladies think of her. C She is scared by the boy who is riding on the bike. D She is upset by the old ladies who walk past her.",
+    "27": "Question 27. Which word best describes Mrs. Majeska in paragraph 10? A proud B restless C © stubborn D regretful",
+    "28": "Question 28. What does the point of view in paragraph 11 help the reader to understand? A ___anowner’s joy in finding the gloves B Mrs. Majeska’s concern that a puppy might chew the gloves C a housewife’s eagerness to put the gloves to use Ds Mrs. Majeska’s surprise that someone took the gloves",
+    "29": "Question 29. Which sentence best describes a main idea of the article? A John Roebling and his son formed an uncomfortable working relationship. B John Roebling was an inspired engineer who designed modern bridges. C John Roebling came to the United States to build bridges. D John Roebling was a popular student and successful businessman.",
+    "30": "Question 30. What does the phrase “snatching up” (paragraph 3) suggest about John Roebling’s iron cables? A They sold quickly. B They were inexpensive. C They lasted a long time. D They pulled a lot of weight.",
+    "31": "Question 31. Which paragraph does the photo of the Brooklyn Bridge best support? A paragraph 3 B paragraph 4 C paragraph 7 D paragraph 8",
+    "32": "Question 32. Which sentence best describes how John Roebling influenced his son Washington? A Washington learned why it was important to use science to improve his military skills. B Washington applied what his father taught him about the different types of iron cables. C Washington learned the reasons suspension bridges needed to be improved. D Washington applied what his father taught him and built bridges when he was a soldier.",
+    "33": "Question 33. What do paragraphs 7 and 10 most contribute to the article? A They introduce different opinions about the bridge. B They outline the long process involved in planning, paying for, and constructing the bridge. C They highlight the concerns people had about the appearance of the bridge. D we describe the disagreements people had about where the bridge should be uilt.",
+    "34": "Question 34. What effect did the winter of 1866-67 have on the construction of the Brooklyn Bridge? A The weather caused people to go to Brooklyn because they thought it was safer there. B The weather caused ferry service to , making more people decide the bridge was a good idea. C The weather made more people go to New York to find work and to shop. D The weather made more people want to leave the area, making the mayor decide the bridge was necessary.",
+    "35": "Question 35. Which detail from the article would be most important to include in a summary? A John Roebling graduated from a technical school in Germany. B John Roebling bought a large plot of farm land in Pennsylvania. Cc John Roebling had a son who was promoted to colonel in the Civil War. D John Roebling made the first iron cable used in the United States."
+  },
+  "elaStemHeadText": {
+    "22": "In paragraph 2, what does the phrase “made her want to dance along with the leaves” most suggest about Mrs. Majeska?"
+  }
+}

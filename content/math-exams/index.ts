@@ -1,6 +1,12 @@
-import { GRADE_3_2026_EXAM } from './2026-grade-3/exam'
+import type { GradeLevel } from '@/lib/grade-levels'
+import { MATH_EXAMS } from './catalog-runtime'
 
-export const MATH_EXAMS = [GRADE_3_2026_EXAM]
+export { MATH_EXAMS }
+
+export function getMathExamsForGrade(grade: GradeLevel | null) {
+  if (grade === null) return []
+  return MATH_EXAMS.filter(exam => exam.grade === grade)
+}
 
 export function getMathExamBySlug(slug: string) {
   return MATH_EXAMS.find(exam => exam.slug === slug)

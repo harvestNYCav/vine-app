@@ -7,6 +7,8 @@ import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
+import { getMathExamsForGrade } from '@/content/math-exams'
+import { getElaExamsForGrade } from '@/content/ela-exams'
 
 function formatLastActive(value: number) {
   if (!value) return 'No activity yet'
@@ -46,7 +48,7 @@ export default async function AdminPage() {
   ]
 
   const studentData = await Promise.all(students.map(async student => {
-    const [tracks, tutorIds, settings, modulesResult, vocabResult, reviewedResult, mathResult, examProgressResult] = await Promise.all([
+    const [tracks, tutorIds, settings, modulesResult, vocabResult, reviewedResult, mathResult, examProgressResult, elaExamProgressResult] = await Promise.all([
       getStudentTracks(db, student.id),
       getStudentTutorIds(db, student.id),
       getStudentSettings(db, student.id),
@@ -54,7 +56,8 @@ export default async function AdminPage() {
       db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM module_progress WHERE user_id = ? AND vocab_viewed_at IS NOT NULL', args: [student.id] }),
       db.execute({ sql: 'SELECT total_problems, total_correct FROM math_progress WHERE user_id = ?', args: [student.id] }),
-      db.execute({ sql: 'SELECT COUNT(*) as count FROM math_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
+      db.execute({ sql: 'SELECT exam_id FROM math_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
+      db.execute({ sql: 'SELECT exam_id, section_slug FROM ela_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
     ])
     type ModuleProgressRow = { module_slug: string; homework_completed_at: number | null }
     const moduleRows = modulesResult.rows as unknown as ModuleProgressRow[]
@@ -76,7 +79,18 @@ export default async function AdminPage() {
       reviewedModules: Number(reviewedResult.rows[0]?.count ?? 0),
       mathProblems,
       mathAccuracy: mathProblems ? Math.round(mathCorrect / mathProblems * 100) : 0,
-      examSectionsCompleted: Number(examProgressResult.rows[0]?.count ?? 0),
+      examSectionsCompleted: (() => {
+        const assignedExamIds = new Set(getMathExamsForGrade(settings.gradeLevel).map(exam => exam.id))
+        return examProgressResult.rows.filter(row => assignedExamIds.has(String(row.exam_id))).length
+      })(),
+      elaExamSectionsCompleted: (() => {
+        const assignedSectionKeys = new Set(getElaExamsForGrade(settings.gradeLevel).flatMap(exam =>
+          exam.sections.map(section => `${exam.id}:${section.slug}`)
+        ))
+        return elaExamProgressResult.rows.filter(row =>
+          assignedSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
+        ).length
+      })(),
     }
   }))
 
@@ -136,6 +150,9 @@ export default async function AdminPage() {
                           : 'Unassigned'
                       }
                     </p>
+                    <p className="mt-1 text-xs font-semibold text-slate-600">
+                      Grade level: {student.settings.gradeLevel ? `Grade ${student.settings.gradeLevel}` : 'Not assigned'}
+                    </p>
                   </div>
                   <div className="flex gap-1">
                     {student.tracks.length === 0 ? (
@@ -162,7 +179,8 @@ export default async function AdminPage() {
                   <div className="bg-slate-50 rounded-lg p-3">
                     <p className="text-xl font-bold text-amber-700">{student.mathProblems}</p>
                     <p className="text-xs text-slate-500">Math problems · {student.mathAccuracy}%</p>
-                    <p className="mt-0.5 text-xs text-blue-600">{student.examSectionsCompleted} NY exam sections</p>
+                    <p className="mt-0.5 text-xs text-blue-600">{student.examSectionsCompleted} Math exam sections</p>
+                    <p className="mt-0.5 text-xs text-purple-600">{student.elaExamSectionsCompleted} ELA exam sections</p>
                   </div>
                 </div>
               </div>
@@ -172,6 +190,7 @@ export default async function AdminPage() {
                 initialTutorIds={student.tutorIds}
                 initialTracks={student.tracks}
                 initialMathSpanishEnabled={student.settings.mathSpanishEnabled}
+                initialGradeLevel={student.settings.gradeLevel}
                 tutors={tutors}
               />
             </div>
