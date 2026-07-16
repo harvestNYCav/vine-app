@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "e85617d445f9cd4e7d5c37a5138ee5efcf068cf48030397b88185e0a7a2e6d9e",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        486.243
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        486.243,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        462.243
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        462.243,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "8": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "9": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        462.243
+      ]
+    },
+    "10": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        462.243,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        342.243
+      ]
+    },
+    "12": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        342.243,
+        584.0,
+        702.372
+      ]
+    },
+    "13": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        282.243
+      ]
+    },
+    "14": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        282.243,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "23": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "24": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        330.243
+      ]
+    },
+    "26": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        330.243,
+        584.0,
+        531.119
+      ]
+    },
+    "27": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        531.119,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 927,
+      "height": 328
+    },
+    "2": {
+      "width": 951,
+      "height": 399
+    },
+    "3": {
+      "width": 967,
+      "height": 327
+    },
+    "4": {
+      "width": 854,
+      "height": 328
+    },
+    "5": {
+      "width": 825,
+      "height": 327
+    },
+    "6": {
+      "width": 904,
+      "height": 328
+    },
+    "7": {
+      "width": 760,
+      "height": 455
+    },
+    "8": {
+      "width": 884,
+      "height": 328
+    },
+    "9": {
+      "width": 983,
+      "height": 327
+    },
+    "10": {
+      "width": 1007,
+      "height": 364
+    },
+    "11": {
+      "width": 1100,
+      "height": 528
+    },
+    "12": {
+      "width": 829,
+      "height": 327
+    },
+    "13": {
+      "width": 973,
+      "height": 386
+    },
+    "14": {
+      "width": 964,
+      "height": 398
+    },
+    "22": {
+      "width": 772,
+      "height": 323
+    },
+    "23": {
+      "width": 665,
+      "height": 322
+    },
+    "24": {
+      "width": 683,
+      "height": 328
+    },
+    "25": {
+      "width": 1111,
+      "height": 486
+    },
+    "26": {
+      "width": 1093,
+      "height": 327
+    },
+    "27": {
+      "width": 847,
+      "height": 328
+    },
+    "28": {
+      "width": 921,
+      "height": 328
+    }
+  },
+  "altText": {
+    "1": "Question 1. How does paragraph 9 contribute to the development of a theme in the story? A __bysuggesting that Aven often observes herself B__by describing the care Aven puts into her appearance C __ by showing Aven is worried about what people think D by illustrating how Aven prepares herself for a performance",
+    "2": "Question 2. How does paragraph 13 mmaaiinnllyy develop the character of the narrator? 2 A by informing the reader that the guitar belonged to the narrator’s mother B by telling the reader that the narrator found the guitar in a storage closet C by informing the reader that the narrator’s parents were watching her by telling the reader about the type of shoes the narrator wears D while performing",
+    "3": "Question 3. What is the effect of the narrator’s repetition of the word “me” in paragraph 14? 3 A She thinks the audience is impressed with her ability to play the guitar. B She hopes people will notice the objects which belong to her mother. C She thinks it is remarkable that she is performing in front of an audience. D She hopes that people appreciate how much she practiced during the week.",
+    "4": "Question 4. What does the word “insignificant” mean as it is used in paragraph 15? 4 A talentless B brave C unimportant D accepted",
+    "5": "Question 5. Which phrase from paragraph 15 bbeesstt conveys a theme of the story? 5 A “the fireworks exploded” B “the lights of the city” C “millions of people” D “the light was in me”",
+    "6": "Question 6. Which detail bbeesstt represents how Aven changes at the end of the story? 6 A “. . . plucked at a string with one not quite steady toe.” (paragraph 13) B “. . . I saw that all their eyes were on me . . .” (paragraph 14) C “. . . arms around each other, swaying to the music.” (paragraph 14) D “I felt as big as the giant saguaro . . .” (paragraph 15)",
+    "7": "Question 7. Read this phrase from paragraph 15. 7 II ffeelltt lliikkee II wwaass sshhiinniinngg .. .. .. Which sentence bbeesstt represents the meaning of this phrase? A Aven feels proud of who she is. B Aven is looking forward to more performances. C Aven understands she is more important than others. D Aven is relieved the audience enjoyed her performance.",
+    "8": "Question 8. Which statement represents a central claim of the article? A __ Environments often influence career choices. B__Bats are misunderstood creatures who need protecting. C_ Photographs can help people overcome their fears of the unknown. D Bats often travel a great distance when they migrate.",
+    "9": "Question 9. What does the information presented in the last two lines of paragraph 3 illustrate? A People forced the bats to leave the cave. B__Bats had already migrated to another place. C People enjoyed using the cave for activities. D Bats left the cave because of the amount of garbage.",
+    "10": "Question 10. Why does the author use words like “Misguided” (paragraph 3) and “misunderstand” 10 (paragraph 4) in the article? A to suggest that bats have been the victims of myths B to emphasize why a solution to bat removal is needed C to explain why many bats travel great distances every year D to indicate that books do not always give accurate information about bats",
+    "11": "Question 11. Read this sentence from paragraph 3. 11 ““EEvveerryywwhheerree II wweenntt,, ppeeooppllee wweerree kkiilllliinngg bbaattss iinn llaarrggee nnuummbbeerrss jjuusstt oouutt ooff iiggnnoorraannccee,,”” ssaayyss MMeerrlliinn.. Which quotation from the article bbeesstt explains the cause of the “ignorance” described by Merlin? A “. . . Merlin figured out that the books were wrong.” (paragraph 1) B “Many people are afraid of bats.” (paragraph 3) C “What he found shocked him.” (paragraph 3) D “Bats fly at night and spend the day in dark places.” (paragraph 5)",
+    "12": "Question 12. What is the main way paragraph 5 helps develop ideas in the article? A __byexplaining the habits of bats during daytime hours B__by describing the stress bats often experience C _ by explaining why Merlin is interested in bat photographs D _ by describing how Merlin helps people better understand bats",
+    "13": "Question 13. Which detail would be mmoosstt important to include in a summary of the article? 13 Merlin Tuttle studied bats and helped educate the public about A their importance. B Farmers told Merlin Tuttle that bats were bad for their fruit trees and crops. Merlin Tuttle earned a degree in advanced mammalogy when he was C in college. D People told Merlin Tuttle they were afraid of bats when he talked to them.",
+    "14": "Question 14. How does the author develop an important idea in the article? 14 by describing Merlin’s discovery of gray bat migration, which shows how A ideas can change by referring to traditional photographs of bats, which make bats appear to B be threatening by describing Merlin’s effort to inform people about bats, which shows the C importance of education by referring to caves where bats live, which indicates that ideas may D sometimes be based on fear",
+    "22": "Question 22. What does the word “brittle” mean as it is used in paragraph 3? 22 A very valuable B cold to the touch C easily broken D hard to read",
+    "23": "Question 23. How does Milo respond to the discovery of the map? 23 A with slight nervousness B with intense curiosity C with extreme astonishment D with mild amusement",
+    "24": "Question 24. How does the plot change in paragraphs 8 through 10? 24 A Someone arrives in search of Milo. B Milo hides the wallet in the shed. C Someone arrives in search of the wallet. D A guest departs because of the snow.",
+    "25": "Question 25. Read this quotation from paragraph 10. 25 SSttiillll,, wwhheenn tthhee ddaarrkk sshhaaddooww sswwuunngg iittsseellff bbaacckk uupp ooffff tthhee ttrraacckkss,, ssoommeetthhiinngg mmaaddee MMiilloo eeddggee ddeeeeppeerr iinnttoo tthhee sshheedd aanndd ttuucckk hhiimmsseellff aass ffaarr bbeehhiinndd tthhee wwiinncchh aass hhee ccoouulldd.. What effect does this quotation have on the tone of the story? A It adds to the mysterious tone. B It introduces a judging tone. C It creates a discouraged tone. D It establishes a concerned tone.",
+    "26": "Question 26. How do Milo’s actions in paragraphs 9 through 11 contribute to the development of the plot? 26 A by revealing his intention to keep the wallet B by showing that he fears the guest in the pavilion C by suggesting that he knows there are more maps D by emphasizing his preference for being alone",
+    "27": "Question 27. The author mainly develops Milo’s point of view by A _ expressing Milo’s opinion about where the map leads B revealing Milo’s thoughts about his discovery and the guest Cc commenting on Milo’s decision to keep the wallet D _ explaining Milo’s unwillingness to communicate with the guest",
+    "28": "Question 28. Which detail would be mmoosstt important to include in a summary of the story? 28 A Milo notices that the paper has a watermark. B Milo turns the map so that the compass rose points north. C Milo sees that the guest is wearing a heavy coat. D Milo hides in the shed until the person outside leaves."
+  }
+}

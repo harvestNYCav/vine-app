@@ -8,6 +8,7 @@ export const GRADE_3_2026_EXAM: MathExamDefinition = {
   year: 2026,
   grade: 3,
   standardsFramework: 'NGLS',
+  supportedLanguages: ['en', 'es'],
   title: {
     en: 'New York Grade 3 Math',
     es: 'Matemáticas de Nueva York - Grado 3',

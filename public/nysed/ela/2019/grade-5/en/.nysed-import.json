@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "f3ba908fe5f371a53c6f8e4c60e1e042d48d4edf4f90756a5a247ae3a810d504",
+  "crops": {
+    "8": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        330.243
+      ]
+    },
+    "9": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        330.243,
+        584.0,
+        702.372
+      ]
+    },
+    "10": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "11": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        495.119
+      ]
+    },
+    "12": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        495.119,
+        584.0,
+        702.372
+      ]
+    },
+    "13": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "14": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "16": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "17": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "19": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        483.119
+      ]
+    },
+    "20": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        483.119,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "30": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        510.243
+      ]
+    },
+    "31": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        510.243,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "33": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        495.119
+      ]
+    },
+    "34": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        495.119,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "8": {
+      "width": 1115,
+      "height": 491
+    },
+    "9": {
+      "width": 842,
+      "height": 322
+    },
+    "10": {
+      "width": 930,
+      "height": 400
+    },
+    "11": {
+      "width": 994,
+      "height": 327
+    },
+    "12": {
+      "width": 979,
+      "height": 405
+    },
+    "13": {
+      "width": 966,
+      "height": 400
+    },
+    "14": {
+      "width": 937,
+      "height": 404
+    },
+    "15": {
+      "width": 840,
+      "height": 328
+    },
+    "16": {
+      "width": 965,
+      "height": 322
+    },
+    "17": {
+      "width": 870,
+      "height": 328
+    },
+    "18": {
+      "width": 847,
+      "height": 328
+    },
+    "19": {
+      "width": 971,
+      "height": 381
+    },
+    "20": {
+      "width": 620,
+      "height": 327
+    },
+    "21": {
+      "width": 949,
+      "height": 399
+    },
+    "29": {
+      "width": 752,
+      "height": 328
+    },
+    "30": {
+      "width": 849,
+      "height": 454
+    },
+    "31": {
+      "width": 977,
+      "height": 327
+    },
+    "32": {
+      "width": 761,
+      "height": 328
+    },
+    "33": {
+      "width": 908,
+      "height": 404
+    },
+    "34": {
+      "width": 671,
+      "height": 328
+    },
+    "35": {
+      "width": 1019,
+      "height": 365
+    }
+  },
+  "altText": {
+    "8": "Question 8. Read this sentence from paragraph 1 of the article. 8 In the days when farmers worked with ox and sled and cut the dark with lantern light, there lived a boy who loved snow more than anything in the world. How does the author’s word choice in the sentence affect the meaning of the passage? A by suggesting that the ideas in the passage are made up B by showing that the subject of the passage became famous C by suggesting that the topic of the passage is familiar D by showing that the events in the passage happened long ago",
+    "9": "Question 9. What is the meaning of the word “pelted” as it is used in paragraph 3? 9 A created B found C saved D threw",
+    "10": "Question 10. Which quotation best supports a main idea of the article? 10 A “He expected to find whole flakes that were the same . . .” (paragraph 4) B “ ‘Fussing with snow is just foolishness,’ his father said.” (paragraph 6) C “Even so his first pictures were failures . . .” (paragraph 7) “ ‘Now everyone can see the great beauty in a tiny crystal,’ he said.” D (paragraph 7)",
+    "11": "Question 11. What does the information in paragraph 9 suggest about the author’s point of view? A The author believes that Bentley could have been more careful. B The author respects Bentley’s many different interests. C The author admires Bentley’s dedication. D_ The author questions the methods Bentley used.",
+    "12": "Question 12. Which statement is true based on the information in paragraphs 6 and 11? 12 Bentley’s work with snow required expensive equipment that he was willing A to spend all his money on. Bentley was thought to be foolish throughout his life because of his interest B in snow. Bentley’s parents thought he should do something with his life other than C taking pictures of snow. Bentley became less interested in studying snow than in publishing pictures D and giving speeches.",
+    "13": "Question 13. What does the reader learn about Bentley from paragraphs 10 and 11? 13 A He was more interested in sharing his work than in making money from it. B He worked hard to develop a way of making photographs of snowflakes. C He wanted to find out if all snowflakes were different from each other. He was able to follow his interests because of the help he got from his D family.",
+    "14": "Question 14. Which sentence best describes how the article is organized? A The reasons for Willie Bentley’s experiments with snow are presented, followed by their eventual conclusions. B The events of Willie Bentley’s life and his study of snow are described as they happened over time. Cc The different problems of photographing snow are explained and then Willie Bentley’s solutions are described. The important ideas about snow in Willie Bentley’s discoveries are D ; presented, followed by details and examples.",
+    "15": "Question 15. How do paragraphs 1 and 23 relate to each other? A They show the change in Gregor’s life during the story. B They show what Gregor has learned in the story. C They show how MacTavish changes in the story. D They show the growth of MacTavish’s fortune during the story.",
+    "16": "Question 16. What does the phrase “marched back” in paragraph 14 suggest about MacTavish? 16 A He is confused. B He is worried. C He is determined. D He is excited.",
+    "17": "Question 17. Howare Gregor and the man who sold the sheep to him similar? A They are both unskilled at selling things to people. B_ They both try to trick someone in order to make money. C They are both concerned with helping their family and neighbors. D They both believe that animals can have special qualities.",
+    "18": "Question 18. Which of Gregor’s actions shows how he is different from MacTavish? 18 A Gregor cheats another person. B Gregor buys a sickly sheep. C Gregor shares his wealth. D Gregor moves to a big house.",
+    "19": "Question 19. Which sentence is true about Gregor and MacTavish? 19 MacTavish has a plan for how the sheep will make him rich, but Gregor A does not. B MacTavish wants to own big houses and many jewels, but Gregor does not. C Gregor wants to move away to another land, but MacTavish does not. D Gregor is generous with his family and his neighbors, but MacTavish is not.",
+    "20": "Question 20. Which sentence expresses a theme of the story? 20 A Big loss can come from being greedy. B Family can make hard times seem easier. C Wealth may come from hard work. D Appreciating others can lead to happiness.",
+    "21": "Question 21. Which detail would be most important to include in a summary of the story? A ___ Gregor goes to the market and talks to many farmers about their sheep. B _ Gregor’s mother is asleep when Gregor takes money to buy the sheep. Cc MacTavish lives at another one of his houses after he buys the sheep from Gregor. D MacTavish goes to buy Gregor’s sheep after he hears rumors about the animal.",
+    "29": "Question 29. What idea is developed in paragraphs 4 through 7? 29 A Wangari and her mother want to plant more trees. B Mugumo trees are important to people and animals. C Mugumo trees can provide shade to many people. D Wangari and her mother think education is important.",
+    "30": "Question 30. Read this sentence from paragraph 8 of the article. 30 Her mind was like a seed rooted in rich soil, ready to grow. What does the sentence help the reader to understand about Wangari? A She likes to think about plants. B She wants to keep learning. C She imagines ways to help others. D She believes in working together.",
+    "31": "Question 31. How are the details in paragraphs 13 and 14 organized? A asa description of how animal habitats changed Basan explanation of the solution to a problem in the environment C —asacomparison of the village before and after the government sold the land D asa description of how a problem was caused in the area and its effects",
+    "32": "Question 32. Paragraphs 17 and 18 explain that Wangari spread her idea by 32 A sharing it with women around the country B giving it the name Green Belt Movement C watching the land in Kenya turn green again D planting trees herself everywhere she went",
+    "33": "Question 33. Which sentence most likely expresses Wangari’s point of view? 33 People can make the changes they want by working together with A determination. B People change their traditions and customs with each generation. C People cannot rely on the government to help them in a time of need. People in other countries do not need to work as hard on the same D problem.",
+    "34": "Question 34. How does the title of the article support a main idea? 34 A It describes advice Wangari followed. B It describes how Wangari solved a problem. C It explains how Wangari felt about trees. D It explains which values Wangari’s village held.",
+    "35": "Question 35. Based on the information in the article, where did Wangari most likely get her idea for 35 planting trees across Kenya? A from the school she attended in the capital city B from the government of her country C from the women of the village where she grew up D from what her mother taught her as a girl"
+  }
+}

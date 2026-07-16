@@ -1,22 +1,12 @@
 import { getMathExamById } from '@/content/math-exams'
-import { BASE_TEN_QUESTIONS } from '@/content/math-exams/2026-grade-3/base-ten'
-import { FRACTIONS_QUESTIONS } from '@/content/math-exams/2026-grade-3/fractions'
-import { GEOMETRY_QUESTIONS } from '@/content/math-exams/2026-grade-3/geometry'
-import { MEASUREMENT_DATA_QUESTIONS } from '@/content/math-exams/2026-grade-3/measurement-data'
-import { OPERATIONS_ALGEBRA_QUESTIONS } from '@/content/math-exams/2026-grade-3/operations-algebra'
+import { MATH_EXAM_QUESTIONS } from '@/content/math-exams/catalog-runtime'
 import type {
   MathExamLanguage,
   MathExamQuestionRecord,
   PublicMathExamQuestion,
 } from '@/content/math-exams/types'
 
-const QUESTION_RECORDS: MathExamQuestionRecord[] = [
-  ...OPERATIONS_ALGEBRA_QUESTIONS,
-  ...MEASUREMENT_DATA_QUESTIONS,
-  ...FRACTIONS_QUESTIONS,
-  ...BASE_TEN_QUESTIONS,
-  ...GEOMETRY_QUESTIONS,
-]
+const QUESTION_RECORDS: MathExamQuestionRecord[] = MATH_EXAM_QUESTIONS
 
 const QUESTIONS_BY_ID = new Map(QUESTION_RECORDS.map(question => [question.id, question]))
 

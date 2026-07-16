@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "a082aae7f5d841e26b0ccbcee86654a05591d0a1637add04511c2d1e414210da",
+  "crops": {
+    "15": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "16": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        495.119
+      ]
+    },
+    "17": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        495.119,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "19": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "20": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "23": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        483.119
+      ]
+    },
+    "24": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        483.119,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "26": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        507.119
+      ]
+    },
+    "27": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        507.119,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "30": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        318.243
+      ]
+    },
+    "32": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        318.243,
+        584.0,
+        702.372
+      ]
+    },
+    "33": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "34": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        471.119
+      ]
+    },
+    "35": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        471.119,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "15": {
+      "width": 976,
+      "height": 328
+    },
+    "16": {
+      "width": 974,
+      "height": 404
+    },
+    "17": {
+      "width": 798,
+      "height": 328
+    },
+    "18": {
+      "width": 714,
+      "height": 323
+    },
+    "19": {
+      "width": 820,
+      "height": 327
+    },
+    "20": {
+      "width": 938,
+      "height": 328
+    },
+    "21": {
+      "width": 945,
+      "height": 486
+    },
+    "22": {
+      "width": 1034,
+      "height": 328
+    },
+    "23": {
+      "width": 960,
+      "height": 386
+    },
+    "24": {
+      "width": 952,
+      "height": 454
+    },
+    "25": {
+      "width": 971,
+      "height": 405
+    },
+    "26": {
+      "width": 1054,
+      "height": 364
+    },
+    "27": {
+      "width": 979,
+      "height": 381
+    },
+    "28": {
+      "width": 900,
+      "height": 323
+    },
+    "29": {
+      "width": 1107,
+      "height": 365
+    },
+    "30": {
+      "width": 1095,
+      "height": 522
+    },
+    "31": {
+      "width": 529,
+      "height": 455
+    },
+    "32": {
+      "width": 953,
+      "height": 398
+    },
+    "33": {
+      "width": 932,
+      "height": 328
+    },
+    "34": {
+      "width": 1077,
+      "height": 364
+    },
+    "35": {
+      "width": 957,
+      "height": 404
+    }
+  },
+  "altText": {
+    "15": "Question 15. As used in paragraph 2, what does the phrase “fading into the background” mean? 15 A disappearing from view B losing its importance in people’s minds C moving farther and farther from the city D remaining important only to those who value nature",
+    "16": "Question 16. Which claim from the article is least supported? 16 “New York didn’t seem to need the river anymore, except as a sewer. And A that’s what it became.” (paragraph 2) “Industry on the river had made some New Yorkers filthy rich.” B (paragraph 3) C “But it had just made the river filthy.” (paragraph 3) “But now there were other dreamers in the valley, with their own dreams of D wealth.” (paragraph 6)",
+    "17": "Question 17. What is the role of paragraph 7 in the organization of the article? 17 A It compares the two groups of dreamers. B It concludes the part of the article about industry. C It introduces the part of the article about activists. D It transitions to the part of the article where change occurs.",
+    "18": "Question 18. What does “unblemished” mean as used in paragraph 11? 18 A unaware B unknown C unharmed D unstable",
+    "19": "Question 19. How does the idea expressed in paragraph 15 relate to the article? A There are two main ways that the river can be fixed. B_ the river is able to move in two different directions. C People who benefit from the river must also protect it. D Opposing groups can each get what they want from the river.",
+    "20": "Question 20. Which sentence is most important to include in a summary of the article? A One company colored the river red and yellow with excess car paint. B The Hudson River became polluted in the effort to gain wealth. C The Mahicans have a saying about taking care of the river. D The author has dreamed of returning to the Hudson River for fifty years.",
+    "21": "Question 21. Which quotation best expresses the author’s point of view in the article? 21 “In less than 300 years it had grown from a tiny Dutch outpost in the A wilderness to the business capital of the world.” (paragraph 1) “In 1963, Con Edison, New York City’s power company, proposed a plan B for constructing the largest hydroelectric pumping station ever built.” (paragraph 8) “More and more people joined the movement as they realized how much C difference each of us can make.” (paragraph 12) “It’s now my turn to help in keeping the river of dreams flowing, for all D those dreamers yet to come.” (paragraph 17)",
+    "22": "Question 22. In paragraph 1, what does the phrase “clattering nerve center of the restaurant” suggest? 22 A messiness, chaos B energy, core C tension, anxiety D greatness, stability",
+    "23": "Question 23. Which quotation best expresses a central idea of the story? 23 “I started experimenting with being a vegetarian when I turned A fourteen . . .” (paragraph 5) B “. . . I decided early on that this is the work I want to do . . .” (paragraph 6) “It hardly seems fair that I have to walk away from all of that . . .” C (paragraph 8) D “. . . just in case I ever want to do anything else with my life.” (paragraph 8)",
+    "24": "Question 24. Read this sentence from paragraph 9. 24 She’s the queen of all reasons people can do anything they want in life. What does this sentence suggest about Julia Child? A Her famous kitchen became part of a cooking museum. B She was successful in a career that interested her. C She always remained calm in the kitchen. D Her cooking style created unique flavor combinations.",
+    "25": "Question 25. In paragraph 11, what does the one-word statement “Somehow” reveal? 25 A It illustrates the narrator’s enthusiasm about her future plans. It shows the narrator has some questions about whether she will succeed or B not. It shows the narrator does not have every detail of her future plans figured C out just yet. It demonstrates the narrator’s lack of knowledge about how difficult her D goals are to achieve.",
+    "26": "Question 26. What does the statement “I know I’m going to have to pay my dues” (paragraph 11) show 26 about the narrator’s attitude toward her plans? A She thinks the price of fame might be too high. B She realizes success depends on more than setting a goal. C She is highly motivated by the idea of becoming famous. D She thinks becoming a celebrity chef requires only money.",
+    "27": "Question 27. Which sentence would be most important to include in a summary of the story? A When the narrator’s mother makes her do homework, the narrator rolls her eyes. B When the narrator’s mother wanted to invest in a restaurant, Pia wanted to buy the old bank building. C The narrator admires celebrity chefs. D The narrator lives in California.",
+    "28": "Question 28. The author develops the narrator’s point of view mainly through the use of A __ internal monologue B conflict between characters Cc limited dialogue D flashback",
+    "29": "Question 29. As it relates to the information in the article, what does “With a Few Flat Tires Along the Way” 29 in the title suggest? A Women rode bicycles along rough and unpaved roads. B Women encountered resistance to their efforts. C Women had a difficult time learning to ride bicycles. D Women were unused to dealing with mechanical issues.",
+    "30": "Question 30. Read this sentence from paragraph 2. 30 “At sixteen years of age, I was enwrapped in the long skirts that impeded every footstep,” remembered Frances Willard, who in 1895 wrote a best-selling account of how she learned to ride a bicycle at age 53. Which word from the sentence best helps the reader understand the meaning of “impeded”? A enwrapped B every C footstep D remembered",
+    "31": "Question 31. Read this sentence from paragraph 3. 31 But the bicycle changed that. How does the sentence develop an idea? A It marks a transition. B It introduces an example. C It refines a previous statement. D It provides evidence for a claim.",
+    "32": "Question 32. What do the details in paragraph 3 reveal about the author’s point of view? A The author thinks that clothing restrictions were less of a burden than the necessity of hard work. B The author thinks that all women were treated unfairly regardless of economic status. Cc The author thinks that poor women had more freedom of dress even though they had to work hard. D The author thinks that the contrast between two classes of women had an effect on their advancement.",
+    "33": "Question 33. What idea about women riding bicycles is emphasized in paragraphs 6 and 7? 33 A Riding bicycles offered more than just freedom of movement. B Riding bicycles was a simple way to participate in a political movement. C Riding bicycles changed women’s fashion. D Riding bicycles was a popular subject in magazines.",
+    "34": "Question 34. A distinction the author makes between Elizabeth Cady Stanton and Frances Willard is that 34 only A Stanton wrote in favor of women riding bicycles B Willard was actually known to ride a bicycle C Stanton was actually criticized for riding a bicycle D Willard was a true spokeswoman for the bicycle",
+    "35": "Question 35. Which quotation best expresses the central idea of the article? A “Young girls could play outside, but when they matured, their freedom of movement was greatly restricted” (paragraph 2) B “Suddenly, women were leaving their homes to cycle and socialize on country roads and city streets.” (paragraph 3) Cc “Thanks to the wheel, women were starting to be seen and heard in public life” (paragraph 3) D “Tt was not a stretch for some cyclists to see the possibility of a larger role for women in the world” (paragraph 4)"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
+  "crops": {
+    "1": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        207.11
+      ]
+    },
+    "2": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        435.21
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        69.645,
+        575.0,
+        209.61
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        210.21
+      ]
+    },
+    "5": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        192.81
+      ]
+    },
+    "6": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        65.79,
+        575.0,
+        192.808
+      ]
+    },
+    "7": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        221.71
+      ]
+    },
+    "8": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        66.392,
+        575.0,
+        306.174
+      ]
+    },
+    "9": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        67.028,
+        575.0,
+        252.629
+      ]
+    },
+    "10": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        66.164,
+        575.0,
+        279.61
+      ]
+    },
+    "11": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        185.809
+      ]
+    },
+    "12": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        67.694,
+        575.0,
+        186.009
+      ]
+    },
+    "13": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        68.553,
+        575.0,
+        201.409
+      ]
+    },
+    "14": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        187.911
+      ]
+    },
+    "15": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        214.609
+      ]
+    },
+    "16": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        203.71
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 992,
+      "height": 314
+    },
+    "2": {
+      "width": 840,
+      "height": 821
+    },
+    "3": {
+      "width": 1104,
+      "height": 311
+    },
+    "4": {
+      "width": 1084,
+      "height": 321
+    },
+    "5": {
+      "width": 832,
+      "height": 282
+    },
+    "6": {
+      "width": 767,
+      "height": 282
+    },
+    "7": {
+      "width": 1094,
+      "height": 346
+    },
+    "8": {
+      "width": 1023,
+      "height": 532
+    },
+    "9": {
+      "width": 1094,
+      "height": 412
+    },
+    "10": {
+      "width": 868,
+      "height": 474
+    },
+    "11": {
+      "width": 794,
+      "height": 267
+    },
+    "12": {
+      "width": 695,
+      "height": 263
+    },
+    "13": {
+      "width": 1052,
+      "height": 296
+    },
+    "14": {
+      "width": 930,
+      "height": 272
+    },
+    "15": {
+      "width": 1012,
+      "height": 331
+    },
+    "16": {
+      "width": 1060,
+      "height": 307
+    }
+  },
+  "altText": {
+    "1": "Question 1. The first illustration best helps the reader understand the information in which paragraph? A paragraph 2 B paragraph 4 C paragraph 5 D paragraph 7",
+    "2": "Question 2. Read the chart below. SUGARING STEPS 1. Syrup makers tap trees. 2. 3. Syrup makers collect sap in buckets. Which statement best completes the chart? A Syrup makers store syrup in tanks. B Syrup makers boil sap in large pans. C Syrup makers put spouts into drilled holes. D Syrup makers pour sap into gathering tanks.",
+    "3": "Question 3. According to the Filtering section, why do syrup makers remove minerals from maple syrup? A Minerals make the syrup grainy. B Minerals change the syrup’s taste. C Minerals change the syrup’s color. D Minerals the syrup from flowing.",
+    "4": "Question 4. Which section of the article contains information about the process of turning sap into syrup? A Tapping the Trees B In the Sugarhouse C Filtering D Color Grading",
+    "5": "Question 5. Which sentence best states what the reader learns in paragraph 8? A The otters are fun-loving animals. B Maggie has been hoping to see the otters. C Maggie makes friends with a mother otter. D The otters are seen next to the floating logs.",
+    "6": "Question 6. What do paragraphs 16 and 17 show about otters and gulls? A Gulls and otters compete for the same food. B Otters watch to see if gulls are nearby. C Gulls and otters avoid each other. D Gulls sometimes tease otters.",
+    "7": "Question 7. Which detail from the story best shows why Maggie believes the otter trusts her? A “Swiftly, a young brown otter swam toward the still figure on the edge of the cliff.” (paragraph 6) B “Two otters wrestled, tumbling over and over.” (paragraph 8) C “The otter was gone.” (paragraph 17) D “And when he had eaten, he twisted in the water and chased his tail.” (paragraph 31)",
+    "8": "Question 8. Read paragraphs 26 and 27 from the story. When Friday afternoon came, she burst into the house and grabbed her fishing pole. “What a girl for fishing!” her mother said. Which sentence best explains what causes Maggie’s mother to say this? A “Maggie sat down near the edge of the low, rocky cliff and baited her hook.” (paragraph 1) B “A fish flopped up over the rocks.” (paragraph 11) C “Each day after school, all the following week, Maggie fished and watched.” (paragraph 24) D “Mom, I forgot to fish.” (paragraph 34)",
+    "9": "Question 9. Which sentence best describes a main idea of the story? A “Maggie sat down near the edge of the low, rocky cliff and baited her hook. The beach was empty. Not even Barnaby was in sight.” (paragraph 1) B “A small herd of otters rocked with the roll of the waves, cradled in blankets of kelp, forepaws folded on their chests.” (paragraph 5) C “Maggie waited. And there he was again. This time with a mussel in one paw and a rock in the other.” (paragraph 18) D “ ‘A tame otter,’ Maggie said. ‘He’s really friendly. He’s as playful as a puppy, and he trusts me.’ ” (paragraph 38)",
+    "10": "Question 10. Read paragraph 3 from the passage. Teachers say snowshoes are improving their students’: • hearts and lungs, • muscles, • and spirits. What does “improving their students’ . . . spirits” most likely mean? A The students study harder. B The students can walk farther. C The students are more curious. D The students are much happier.",
+    "11": "Question 11. Which paragraph explains how snowshoeing affects the body? A paragraph 9 B paragraph 11 C paragraph 13 D paragraph 15",
+    "12": "Question 12. In paragraph 15, the word “hike” most closely means A a planned walk B a relay race C an indoor activity D an outdoor class",
+    "13": "Question 13. Which statement from the passage is explained by the information in paragraph 17? A “Snowshoes are huge.” (paragraph 14) B “Then they hit the slopes and trails nearby.” (paragraph 15) C “It’s not unusual to see animal signs.” (paragraph 15) D “The rabbit that made them had something in common with the kids.” (paragraph 16)",
+    "14": "Question 14. How do the details in paragraph 18 support a main idea of the passage? A The details show ways that kids observe the weather. B The details give examples of kids enjoying the snow. C The details give evidence that the kids get lots of exercise. D The details show why the kids are learning about nature.",
+    "15": "Question 15. How does the information in the section titled “Snowshoe Smarts” add to the information in the rest of the passage? A The section gives instructions on how to be a good trail-breaker. B The section gives suggestions for people who want to go snowshoeing. C The section gives explanations for some of the words used in the passage. D The section gives details about the snowshoeing program at the elementary school.",
+    "16": "Question 16. Which statement about snowshoes is made clearer by the photograph at the end of the passage? A Students must lift their feet up when walking in snowshoes. B Students study winter wildlife while wearing snowshoes. C Walking in snowshoes takes a lot of energy. D Snowshoes are very large and flat."
+  }
+}

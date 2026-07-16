@@ -1,0 +1,376 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "5e037c48bd40d85ee1ce5994b53d3b004d3aa14b5c73014599c80511c3deb27b",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.4,
+        583.265,
+        246.15
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        246.15,
+        583.265,
+        485.55
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        485.55,
+        583.265,
+        700.748
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        262.8
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        262.8,
+        584.0,
+        462.15
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        462.15,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "23": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        449.1
+      ]
+    },
+    "24": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        449.1,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        298.8
+      ]
+    },
+    "26": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        298.8,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        262.8
+      ]
+    },
+    "30": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        262.8,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        274.05
+      ]
+    },
+    "32": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        274.05,
+        584.0,
+        484.65
+      ]
+    },
+    "33": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        484.65,
+        584.0,
+        706.6
+      ]
+    },
+    "34": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        299.7
+      ]
+    },
+    "35": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        299.7,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        248.4
+      ]
+    },
+    "37": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        248.4,
+        584.0,
+        445.5
+      ]
+    },
+    "38": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        445.5,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        248.4
+      ]
+    },
+    "40": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        248.4,
+        584.0,
+        499.5
+      ]
+    },
+    "41": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        499.5,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 766,
+      "height": 316
+    },
+    "2": {
+      "width": 1077,
+      "height": 417
+    },
+    "3": {
+      "width": 984,
+      "height": 317
+    },
+    "4": {
+      "width": 1127,
+      "height": 345
+    },
+    "5": {
+      "width": 981,
+      "height": 314
+    },
+    "6": {
+      "width": 1093,
+      "height": 374
+    },
+    "7": {
+      "width": 1074,
+      "height": 440
+    },
+    "22": {
+      "width": 933,
+      "height": 314
+    },
+    "23": {
+      "width": 943,
+      "height": 313
+    },
+    "24": {
+      "width": 1135,
+      "height": 433
+    },
+    "25": {
+      "width": 1073,
+      "height": 437
+    },
+    "26": {
+      "width": 1115,
+      "height": 500
+    },
+    "29": {
+      "width": 1100,
+      "height": 344
+    },
+    "30": {
+      "width": 1140,
+      "height": 505
+    },
+    "31": {
+      "width": 1106,
+      "height": 372
+    },
+    "32": {
+      "width": 1066,
+      "height": 347
+    },
+    "33": {
+      "width": 1099,
+      "height": 471
+    },
+    "34": {
+      "width": 1101,
+      "height": 407
+    },
+    "35": {
+      "width": 1108,
+      "height": 437
+    },
+    "36": {
+      "width": 795,
+      "height": 312
+    },
+    "37": {
+      "width": 986,
+      "height": 313
+    },
+    "38": {
+      "width": 1076,
+      "height": 314
+    },
+    "39": {
+      "width": 1036,
+      "height": 314
+    },
+    "40": {
+      "width": 1115,
+      "height": 437
+    },
+    "41": {
+      "width": 1112,
+      "height": 407
+    },
+    "42": {
+      "width": 1111,
+      "height": 314
+    }
+  },
+  "altText": {
+    "1": "Question 1. What do the details in paragraph 3 reveal about SwiftBot? A He has been taught to perform certain actions. B He is learning to use his voice to communicate. C He has been able to play basketball since he was created. D He is able to teach other robots how to play basketball.",
+    "2": "Question 2. Read this sentence from paragraph 4. I couldn't wait to see what he'd do next. How does this sentence develop the narrator's viewpoint? A It shows that the narrator is interested in creating a team of basketball-playing robots. B It shows that the narrator believes SwiftBot is unable to perform at the expected level. C It shows that the narrator is unaware of what SwiftBot is programmed to do. D It shows that the narrator does not know which action SwiftBot will perform.",
+    "3": "Question 3. What does the phrase \"eyes wide\" as used in paragraph 6 reveal about the narrator? A He is impressed by SwiftBot's ability. B He is concerned the ball will hit him. C He is confused by SwiftBot's action. D He is disappointed he is unable to the ball.",
+    "4": "Question 4. In paragraph 9, why does the narrator say, “I put a bit of backspin on the ball as it left my fingers, wishing for the hundredth time that I could engineer a way for SwiftBot to do the same”? A __ The narrator would like to give SwiftBot as many human-like abilities as possible. B The narrator regrets the limited effort that originally went into SwiftBot’s design. C The narrator realizes that SwiftBot requires many more hours of programming. D The narrator is questioning SwiftBot’s ability to compete with humans.",
+    "5": "Question 5. As used in paragraph 11, what does the word “tracked” suggest about the narrator? 5 A He believes he will win the game. B He is paying close attention. C He has doubts about his basketball skills. D He is clumsy in his movements.",
+    "6": "Question 6. Which sentence reveals the difficulty the narrator has in teaching SwiftBot to play a sport? “Inside his lightweight, carbon-fiber exterior was an array of integrated circuits, servos, optical sensors, wires, and batteries.” (paragraph 1) “He dribbled the ball against the floor, keeping it close to his body for better control” B (paragraph 3) C “I was tired of hammering out the dents in his outer casing” (paragraph 7) D “His arms dropped to his sides and he came to a halt.” (paragraph 14)",
+    "7": "Question 7. Which sentence best supports a theme of machines having advantages over humans? “His silver-metallic body was about my height, roughly five feet ten inches, and A mimicked your basic humanoid design: two arms, two legs, one head, and so on.” (paragraph 1) “He landed easily back onto the floor, the springs in his feet doubling as shock B absorbers.” (paragraph 7) “Leather smacked against a carbon-fiber palm as SwiftBot batted the ball back at me” c (paragraph 10) D ‘“SwiftBot didn’t have to worry about getting dehydrated, but I did” (paragraph 15)",
+    "22": "Question 22. Which sentence states a central idea of the section “The Mother of Invention”? A Corvids have a special way of thinking that helps them survive. B Animals that are scavengers help to clean our ecosystems. C__ Ravens identify food then learn how to get it. D —_ Corvids can survive among humans all around the world.",
+    "23": "Question 23. What does the phrase “behavioral flexibility” mean as it is used in paragraph 6? 23 A ability to travel to different places B ability to learn different ways of moving C ability to solve new problems D ability to squeeze into small spaces",
+    "24": "Question 24. Which statement represents an important distinction the author makes between corvids and blue 24 whales in the section “Big Brains”? A Corvids are more intelligent than blue whales because they are very large birds. Blue whales should be smarter than they are because they are so much larger than B corvids. A blue whale’s brain, which can weigh over 16 pounds, is much larger than a corvid’s C brain. When comparing brain size to body size, a corvid’s brain-to-body ratio is greater than a D blue whale’s.",
+    "25": "Question 25. Which sentence from the article best supports the claim in paragraph 2? “As scavengers, they help clean ecosystems by consuming what others don't want” A (paragraph 3) “The raven has to think, be patient, and wait for an opportunity to sneak in and steal B food from the hungry wolves.” (paragraph 4) c “Animal intelligence largely depends on a rule that scientists call the ‘brain-to-body ratio: ” (paragraph 8) D “The same rule of convergent evolution can be applied to the similarities between the human brain and the corvid brain” (paragraph 13)",
+    "26": "Question 26. “Necessity is the mother of invention” is a very old proverb. It means that when we need 26 something, we use our intelligence to invent ways to get it. Which detail from the article shows that this can apply to corvids? “A scavenger must first identify a food source and then problem-solve to figure out how A to obtain that food—without getting into trouble.” (paragraph 4) “. . . animals with larger brains compared to the rest of their bodies are generally more B intelligent.” (paragraph 8) “But animals from both groups seem to approach problems in the same manner and C remember information in much the same ways.” (paragraph 13) “. . . understanding the corvid brain may actually tell us about the intelligence of alien life D forms.” (paragraph 14)",
+    "29": "Question 29. What effect does the phrase “daring us to scale it” in paragraph 1 have on the story? 29 A It suggests that the new land poses a great challenge for the immigrants. B It suggests that the narrator will successfully adjust to the unfamiliar environment. It suggests that the immigrants will have to physically climb beyond where the train can C reach. D It suggests that there will be fighting between the immigrants and the other inhabitants.",
+    "30": "Question 30. Which sentence best shows that Ichiro comes to believe that moving to the new land will result in a positive change to his life? “T felt an indescribable disgust and joy all at once urging me to join the boy in his chase, A __ scurrying after the slippery pig and running toward that great wall of chickens.” (paragraph 8) “I looked up at cages teetering above to see the face of the pig’s young owner, a mixture of B relief and gratitude and comedy glowing in his features.” (paragraph 8) “The boy spoke in a language I could not understand, and yet, I was sure from that c moment on that I would soon understand everything” (paragraph 9) “Over the years, I have thought from time to time that I had caught a glimpse of that very D boy again, but of course, it would never be the same boy.’ (paragraph 9)",
+    "31": "Question 31. How do the actions of the piglet’s young owner in paragraphs 8 and 9 affect the plot? A __ They cause the narrator to believe that his purpose in this new land is to help others. B They cause the narrator to have to choose between his old culture and a new one in Brazil. C They make the narrator feel hopeful that he will be able to adjust in a new country. D ihey make the narrator feel disappointed with the new surroundings when he arrives in Brazil.",
+    "32": "Question 32. What is the effect of the author’s use of the verbs “stumbled,” “clutched,” and “lumbered” in paragraph 3? A ___ These verbs show that the family is moving with difficulty from the ship to the land. B___ These verbs suggest how much baggage the family has brought along on the trip. C___ These verbs demonstrate the variety of reactions the family members have to Brazil. D__These verbs indicate the excitement the family feels at arriving at their destination.",
+    "33": "Question 33. Some researchers believe that humans are more likely to remember pleasant and positive experiences than negative ones. Which statement best reflects this idea in the story? A Ichiro remembers not feeling seasick while on the boat, but he becomes nauseous when the train stops at the marketplace in Brazil. B Ichiro has a stronger emotional reaction to helping a stranger catch a piglet than to the difficulties he has when arriving in Brazil. Cc Ichiro can more accurately describe the experience of seeing the vendors in the marketplace than he can the experience of helping the boy catch a piglet. D Ichiro is very affected by the young boy that he meets upon leaving the train, and so he makes an intentional effort to meet with the boy several times over the years.",
+    "34": "Question 34. How do Ichiro and his father see their arrival in Brazil differently? A __ Ichiro does not understand why they left Japan, while his father knows of their reasons. Ichiro sees the need to help others, while his father is focused on achieving his own B goals. Ichiro is focused on the immediate difficulties, while his father sees Brazil as better than c expected. D Ichiro is eager to explore Brazil, while his father struggles with adjusting to the new country.",
+    "35": "Question 35. How does the final paragraph contribute to a central idea in the story? It reveals that seeing someone after a long time apart causes both people to remember A the good times they shared together. It shows that the pleasant memories of significant life events often become stronger than B the negative details. c It demonstrates how older people often realize that past struggles were worth the difficulty when they result in new friendships. It illustrates that memories can fade unless efforts are made to stay connected with those D who shared those experiences.",
+    "36": "Question 36. What is the meaning of the word “intact” as used in paragraph 3? 36 A perfectly preserved B completely finished C in a shady place D in a delicate condition",
+    "37": "Question 37. How do the events in paragraphs 1 and 2 relate to the information in paragraph 7? 37 A Paragraph 7 gives historical context for the discovery in paragraphs 1 and 2. B Paragraph 7 describes the ancestors of the cowboys in paragraphs 1 and 2. C Paragraph 7 provides additional details about the land in paragraphs 1 and 2. D Paragraph 7 shows a different culture than that in paragraphs 1 and 2.",
+    "38": "Question 38. As used in paragraph 7, what does the word “adept” suggest about the Ancestral Puebloans? A They think architecture is more important than farming. B They have a range of skills necessary for their survival. C Farming the land takes up a majority of their time. D Being physically strong is one of their most valuable traits.",
+    "39": "Question 39. How do the details in paragraphs 8 through 10 help develop a central idea of the article? A __ They describe the progress made by the Ancestral Puebloans in architecture. B__ They illustrate how the unpredictable weather affected the ability to build homes. C__ They explain why the Ancestral Puebloans were forced to leave their territory. D They show how little effort was put into the early housing structures.",
+    "40": "Question 40. Which sentence best shows the author’s viewpoint? 40 “Wetherill and Mason had discovered a large cliff dwelling that had been abandoned A hundreds of years ago by ancient Pueblo people.” (paragraph 3) “Builders filled in the spaces where the stone bricks fit together with smaller stones, mud, B and wood pieces.” (paragraph 4) “For about 700 years, Mesa Verde was a thriving community of many thousands of C Native American people now referred to as Ancestral Puebloans.” (paragraph 7) “We do know that these people settled the area that is now the home of the modern D Pueblo tribes, including the Hopi, Zuni, Acoma, and Laguna.” (paragraph 11)",
+    "41": "Question 41. Which detail best expresses a central idea of the section “A National Park”? 41 “Over the next 15 months, the Wetherill family found and explored 182 different cliff A dwellings in Mesa Verde.” (paragraph 14) B “Many looters and treasure seekers began visiting the area, too.” (paragraph 15) “. . . the U.S. government would own, protect, and preserve Mesa Verde and all of its C treasures.” (paragraph 16) “. . . more than 600,000 visitors enjoy the amazing sites at Mesa Verde National Park each D year.” (paragraph 17)",
+    "42": "Question 42. How does the author develop a connection between the cowboys and the Pueblo cliff dwelling? 42 A by recounting the cowboys’ journey in order to introduce the setting B by detailing the path to the site to show the difficulty of getting there C by describing the weather to emphasize the unpredictability of the environment D by explaining the cowboys’ skills to compare them to the ancient people"
+  }
+}

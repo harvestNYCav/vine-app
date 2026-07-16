@@ -1,0 +1,404 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "c66ca7e9ecdb3551374f4d7a19e4623c050efb7cc982c978fd2bacdb923724f6",
+  "crops": {
+    "1": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        60.75,
+        584.0,
+        207.45
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        207.45,
+        584.0,
+        354.15
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        354.15,
+        584.0,
+        500.4
+      ]
+    },
+    "4": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        500.4,
+        584.0,
+        707.2
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "6": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        391.5
+      ]
+    },
+    "7": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        391.5,
+        584.0,
+        707.2
+      ]
+    },
+    "22": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        246.6
+      ]
+    },
+    "23": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        246.6,
+        584.0,
+        405.0
+      ]
+    },
+    "24": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        405.0,
+        584.0,
+        707.2
+      ]
+    },
+    "25": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "26": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        415.35
+      ]
+    },
+    "27": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        415.35,
+        584.0,
+        707.2
+      ]
+    },
+    "28": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        707.2
+      ]
+    },
+    "29": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        208.8
+      ]
+    },
+    "30": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        208.8,
+        584.0,
+        431.1
+      ]
+    },
+    "31": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        431.1,
+        584.0,
+        707.2
+      ]
+    },
+    "32": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "33": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        431.1
+      ]
+    },
+    "34": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        431.1,
+        584.0,
+        707.2
+      ]
+    },
+    "35": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        707.2
+      ]
+    },
+    "36": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "37": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        343.35
+      ]
+    },
+    "38": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        343.35,
+        584.0,
+        489.6
+      ]
+    },
+    "39": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        489.6,
+        584.0,
+        707.2
+      ]
+    },
+    "40": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "41": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        391.05
+      ]
+    },
+    "42": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        391.05,
+        584.0,
+        707.2
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1029,
+      "height": 303
+    },
+    "2": {
+      "width": 1100,
+      "height": 300
+    },
+    "3": {
+      "width": 1065,
+      "height": 302
+    },
+    "4": {
+      "width": 1196,
+      "height": 455
+    },
+    "5": {
+      "width": 1049,
+      "height": 297
+    },
+    "6": {
+      "width": 1139,
+      "height": 410
+    },
+    "7": {
+      "width": 1195,
+      "height": 695
+    },
+    "22": {
+      "width": 1131,
+      "height": 407
+    },
+    "23": {
+      "width": 1094,
+      "height": 323
+    },
+    "24": {
+      "width": 1194,
+      "height": 670
+    },
+    "25": {
+      "width": 748,
+      "height": 299
+    },
+    "26": {
+      "width": 1150,
+      "height": 470
+    },
+    "27": {
+      "width": 1195,
+      "height": 641
+    },
+    "28": {
+      "width": 1160,
+      "height": 1454
+    },
+    "29": {
+      "width": 1154,
+      "height": 324
+    },
+    "30": {
+      "width": 1107,
+      "height": 465
+    },
+    "31": {
+      "width": 1196,
+      "height": 613
+    },
+    "32": {
+      "width": 869,
+      "height": 302
+    },
+    "33": {
+      "width": 1171,
+      "height": 490
+    },
+    "34": {
+      "width": 1197,
+      "height": 609
+    },
+    "35": {
+      "width": 1155,
+      "height": 307
+    },
+    "36": {
+      "width": 948,
+      "height": 302
+    },
+    "37": {
+      "width": 1044,
+      "height": 300
+    },
+    "38": {
+      "width": 799,
+      "height": 298
+    },
+    "39": {
+      "width": 1196,
+      "height": 477
+    },
+    "40": {
+      "width": 1018,
+      "height": 307
+    },
+    "41": {
+      "width": 1146,
+      "height": 417
+    },
+    "42": {
+      "width": 1196,
+      "height": 696
+    }
+  },
+  "altText": {
+    "1": "Question 1. According to the narrator, what makes playing basketball appealing? A She likes the feeling of knowing exactly what to do when she plays basketball. B She feels the skills needed for playing basketball are simple to master. C She thinks that when she plays basketball she is likely to succeed. D She gets to be like her brothers when she plays basketball.",
+    "2": "Question 2. According to the narrator, why is basketball “as good as Shakespeare” (lines 16 and 17)? A It connects her to important people. B It helps her to understand her life. C It has the power to strongly affect her. D It helps her deal with disappointments in life.",
+    "3": "Question 3. 2 Based on lines 20 through 29, what can readers conclude about the narrator's father? A He thinks boys and girls should pursue different activities. B He believes that siblings should support one another. C He values sports more than he values education. D He wishes that all of his children were boys.",
+    "4": "Question 4. What does the narrator discover in lines 30 through 36 that affects the plot of the story? A Watching basketball gives her the same feeling as studying. B She wants other people to pay more attention to her. C She is jealous of the opportunity her brother has. D Her passion for basketball is overwhelming.",
+    "5": "Question 5. How does the incident described in lines 53 through 59 affect the story? A It shows how the narrator and her family attempt to compromise. B It escalates the conflict so that the father is forced to make a choice. C It reveals the influence the mother and brother have on the father’s behavior. D It demonstrates the father’s beliefs and his realization that his beliefs are wrong.",
+    "6": "Question 6. How does the structure of the story contribute to its meaning? A The narrator describes how she differs from her brothers, which leads to a conflict with her father. B_ The narrator expresses her point of view, which provides background for the conflict with her father. C The narrator describes her frustration with life at home and school, which leads to problems with her father. D The narrator begins with a reflection on rules, which leads to an improvement in her relationship with her father.",
+    "7": "Question 7. How does the basketball game setting relate to a theme of the story? A by showing where the narrator feels the most alive B_ by showing how the narrator utilizes her knowledge C by showing how the narrator differs from other girls D by showing why the narrator supports her brother",
+    "22": "Question 22. Read these sentences from line 3. My friends were fond of practical jokes. I do not care to know people who are not. These statements impact the story by explaining A why the narrator laughs so hard at dinner B_ the narrator’s presence at the dinner C the narrator’s reason for suspicion D why the guests embraced him",
+    "23": "Question 23. What does the phrase “as a dog scents game” in line 14 of the story suggest about the narrator’s actions? A He is enjoying the laughter of the other guests. B He feels on the verge of finding the prankster. C He feels left out of the dinner conversation. D He is alert to some hidden plan.",
+    "24": "Question 24. Read lines 14 and 15 of the story. I did not let a word, or a meaning, or a gesture escape me. This sentence suggests that the narrator A feels anxious about his current situation Bis highly critical of his friends’ interactions C feels defenseless against the coming events D is too distracted to join his friends’ conversation",
+    "25": "Question 25. How do lines 25 through 33 build suspense? A They suggest that someone is looking in the window. B_ They extend the narrator’s search for deceit. C They indicate unusual details about the room. D They reveal the narrator’s fear of the dark.",
+    "26": "Question 26. Which words reveal the irony of the narrator's situation? A “I thought: ‘Here are people who have more than their share of amusement, and apparently without reason. They must have planned some good joke.” (lines 9 through 11) B “The hour struck for retiring; and the whole household came to escort me to my room.” (line 17) C “However, the night was advancing; and I ended by coming to the conclusion that I was foolish.” (lines 35 and 36) D “The precautions I had taken in closing the shutters and going to sleep in the middle of the room had only brought about the practical joke I had been trying to avoid.” (lines 68 and 69)",
+    "27": "Question 27. What effect does the point of view of the story have on the reader? A The point of view increases suspense by limiting the reader to the narrator’s understanding of events. B The point of view creates humor by showing how the narrator's friends misunderstand him. C The point of view raises the reader’s sympathy for the questions the narrator faces. D The point of view adds to the reader’s mistrust of what the narrator reports.",
+    "28": "Question 28. 2g Which detail best expresses a theme of the story? A “One autumn I went to spend the hunting season with some friends . . .” (line 1) B “Assuredly I am to be the victim...” (line 11) C ‘I heard persons moving about outside my door.” (line 23) D “For at least another hour I remained awake, starting at the slightest sound.” (line 51)",
+    "29": "Question 29. Which words from the article provide the best clue to the meaning of the word “tedious” in line 3? A “Confession Time” (line 1) B “head flat on desk” (lines 1 and 2) C “takes an eternity to tick by” (line 4) D “You begin to wish you had your cell phone” (lines 4 and 5)",
+    "30": "Question 30. Read this sentence from line 6 of the article. Boredom is the enemy of fun. Which quotation best helps the reader understand this sentence? A “If fun is the big drop of a roller coaster, boredom is waiting in line.” (line 7) B “If we want to figure out the future of fun, we have to first figure out how to end boredom.” (line 8) C “Imagine that: a world where each second is interesting and nothing is dull.” (line 9) D “That sounds like science fiction, but new psychological research hints that being bored—even in class—may one day be a thing of the past.” (lines 9 through 11)",
+    "31": "Question 31. Lines 19 through 26 connect modern entertainment to boredom by suggesting that it causes us to A want more challenging games to play B_ misunderstand the role of fun in our lives C develop expectations for high levels of excitement D avoid adapting to new technological innovations",
+    "32": "Question 32. How does Professor Eastwood’s work differ from previous research? A by attempting to create a new definition for boredom B by failing to look into a connection to brain activity C by focusing on the human attention system D by using data from earlier studies on boredom",
+    "33": "Question 33. Read lines 9 through 11 of the article. That sounds like science fiction, but new psychological research hints that being bored—even in class—may one day be a thing of the past. Which quotation provides the best evidence to support this claim? A “... less than one in 20 adults were bored at work.” (lines 15 and 16) B “... our brains adapt really quickly to certain levels of stimulation . . .” (lines 23 and 24) C “... anything the attention system in your brain locks onto will be automatically sucked up into your conscious awareness . . .” (lines 43 and 44) D “Each of us has the ability to make every situation interesting; all we need to do is change the way we look at it...” (lines 61 and 62)",
+    "34": "Question 34. ©The final sentence in lines 68 and 69 best contributes to the article by A suggesting that the author often fell asleep in classes B connecting the information to the incident described at the beginning C encouraging students to stay awake and avoid boredom in class D emphasizing that teenagers are often more bored than other groups",
+    "35": "Question 35. Which sentence states a central idea that is supported throughout the article? A Modern entertainment decreases boredom. B_ Boredom is present in teenagers more than in adults. C Everyone experiences boredom occasionally. D People have the ability to control their boredom.",
+    "36": "Question 36. How was CATIA essential to the success of Gehry’s plan for the museum? A It helped him find less expensive materials. B It allowed him to work earlier ideas into his design. C It suggested unique materials to use for construction. D It allowed him to add less-common shapes into his design.",
+    "37": "Question 37. What do lines 25 through 30 contribute to the development of ideas in the article? A They explain a way of thinking that allowed an obstacle to be overcome. B They show how preferences in the shapes of buildings have changed. C They describe a step in the building process. D They illustrate how different artists work.",
+    "38": "Question 38. 3g The phrase “waved a magic wand” (line 40) suggests that the A museum fulfilled the city’s wishes B project’s success amazed many people C project succeeded in part because of luck D museum resembled a creation from a fairy tale",
+    "39": "Question 39. According to the article, what quality is the author referring to by comparing the Bilbao museum to the Eiffel Tower and the Pyramids (lines 67 through 69)? A the impact of its height B the ability to generate revenue C the effort needed to construct it D the widespread amazement felt about it",
+    "40": "Question 40. 49 Which phrase has the strongest connection to the photo? A “... someone must have waved a magic wand.” (line 40) B “... blossoming like silver petals . . .” (line 48) C “... connecting the urban fabric of a fairly dense city . . .” (lines 52 and 53) D ‘Tm trying to get more liquid . . .” (line 83)",
+    "41": "Question 41. Which sentence best supports the central idea of the article? A “Three architects from Austria, Japan, and the United States were invited to submit proposals.” (lines 12 and 13) B “Gehry already had used CATIA for parts of several other buildings, including Fred and Ginger in Prague.” (lines 22 and 23) C “Instead more than a million came to marvel at the titanium-clad miracle.” (lines 64 and 65) D “However, he admits feeling pleased when people on the streets of Bilbao come up and give him a hug.” (lines 79 and 80)",
+    "42": "Question 42. Which information would be most important to include in a summary of the article? A “Shipyards sat idle; steel mills, silent.” (lines 3 and 4) B “Their master plan included a first-class museum, so original that it would attract worldwide attention and rescue their town from its slow decline.” (lines 6 through 8) C “You find his fish motif appearing here and there throughout the museum.” (lines 55 and 56) D “At seventy Gehry finds his creativity is speeding up.” (line 81)"
+  }
+}

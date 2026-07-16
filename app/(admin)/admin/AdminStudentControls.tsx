@@ -3,7 +3,8 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { TRACKS } from '@/lib/tracks'
-import type { Track } from '@/types'
+import { GRADE_LEVELS } from '@/lib/grade-levels'
+import type { GradeLevel, Track } from '@/types'
 
 interface TutorOption {
   id: string
@@ -15,18 +16,21 @@ export default function AdminStudentControls({
   initialTutorIds,
   initialTracks,
   initialMathSpanishEnabled,
+  initialGradeLevel,
   tutors,
 }: {
   studentId: string
   initialTutorIds: string[]
   initialTracks: Track[]
   initialMathSpanishEnabled: boolean
+  initialGradeLevel: GradeLevel | null
   tutors: TutorOption[]
 }) {
   const router = useRouter()
   const [tutorIds, setTutorIds] = useState<string[]>(initialTutorIds)
   const [tracks, setTracks] = useState<Track[]>(initialTracks)
   const [mathSpanishEnabled, setMathSpanishEnabled] = useState(initialMathSpanishEnabled)
+  const [gradeLevel, setGradeLevel] = useState<GradeLevel | null>(initialGradeLevel)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState('')
 
@@ -53,12 +57,16 @@ export default function AdminStudentControls({
       setMessage('Choose at least one track.')
       return
     }
+    if ((tracks.includes('math') || tracks.includes('ela')) && gradeLevel === null) {
+      setMessage('Choose a grade level for the Math or ELA track.')
+      return
+    }
     setSaving(true)
     setMessage('')
     const res = await fetch('/vine-app/api/admin/students', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ studentId, tutorIds, tracks, mathSpanishEnabled }),
+      body: JSON.stringify({ studentId, tutorIds, tracks, mathSpanishEnabled, gradeLevel }),
     })
     if (!res.ok) {
       const data = await res.json().catch(() => ({}))
@@ -118,6 +126,26 @@ export default function AdminStudentControls({
           })}
         </div>
       </div>
+
+      <label className="block text-xs font-medium text-gray-600">
+        <span className="block mb-1">Student grade level</span>
+        <select
+          value={gradeLevel ?? ''}
+          onChange={event => {
+            setGradeLevel(event.target.value === '' ? null : Number(event.target.value) as GradeLevel)
+            setMessage('')
+          }}
+          className="w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-slate-700"
+        >
+          <option value="">Not assigned</option>
+          {GRADE_LEVELS.map(grade => (
+            <option key={grade} value={grade}>Grade {grade}</option>
+          ))}
+        </select>
+        {(tracks.includes('math') || tracks.includes('ela')) && gradeLevel === null && (
+          <span className="mt-1 block text-amber-700">Required for the Math or ELA track</span>
+        )}
+      </label>
 
       <label className="flex items-center gap-2 text-xs font-medium text-gray-600">
         <input

@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "ee05ce5ade536c4937131cbf89b240cf7c50fa7a061a8b52f2d2d67b46fdb80d",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        471.119
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        471.119,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        330.243
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        330.243,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        253.467
+      ]
+    },
+    "30": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        253.467,
+        584.0,
+        490.343
+      ]
+    },
+    "31": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        490.343,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "33": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        471.119
+      ]
+    },
+    "34": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        471.119,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 817,
+      "height": 313
+    },
+    "2": {
+      "width": 1004,
+      "height": 312
+    },
+    "3": {
+      "width": 1134,
+      "height": 376
+    },
+    "4": {
+      "width": 810,
+      "height": 313
+    },
+    "5": {
+      "width": 944,
+      "height": 312
+    },
+    "6": {
+      "width": 1092,
+      "height": 406
+    },
+    "7": {
+      "width": 1111,
+      "height": 313
+    },
+    "22": {
+      "width": 1033,
+      "height": 307
+    },
+    "23": {
+      "width": 1133,
+      "height": 344
+    },
+    "24": {
+      "width": 1023,
+      "height": 312
+    },
+    "25": {
+      "width": 1052,
+      "height": 470
+    },
+    "26": {
+      "width": 961,
+      "height": 312
+    },
+    "29": {
+      "width": 916,
+      "height": 313
+    },
+    "30": {
+      "width": 853,
+      "height": 403
+    },
+    "31": {
+      "width": 867,
+      "height": 312
+    },
+    "32": {
+      "width": 1045,
+      "height": 335
+    },
+    "33": {
+      "width": 1028,
+      "height": 312
+    },
+    "34": {
+      "width": 1049,
+      "height": 312
+    },
+    "35": {
+      "width": 1075,
+      "height": 313
+    }
+  },
+  "altText": {
+    "1": "Question 1. How does Miss Delicious’s message in paragraph 11 affect Brianna? 1 A It teaches her the value of leadership. B It inspires her to become class president. C It makes her want to have a career as a chef. D It changes her mind about taking on responsibilities.",
+    "2": "Question 2. What is the meaning of “obvious” as the narrator uses it in paragraph 16 of the story? 2 A easy to see and understand B interesting to other people C supported by friends and family D something everyone expects to happen",
+    "3": "Question 3. Which evidence best supports Brianna’s claim in paragraph 4 about making good things happen? A “Think about what you want, decide how you plan to get it, then write it down...” (paragraph 6) B “... She didn't think any of her success would have been possible had it not been for the skills ..” (paragraph 9) Cc “... the election wasn't just for each fifth-grade class to have its own president” (paragraph 19) D = “And I could just see me making my acceptance speech . . ” (paragraph 23)",
+    "4": "Question 4. Which theme is supported by details in paragraphs 20 through 23? A Family helps each other overcome challenges. B___Leaders need to be able to communicate their ideas. C Success is often better than people think it will be. D Reaching one goal can give you the confidence to set others.",
+    "5": "Question 5. How are paragraphs 24 through 26 important to the story? A They give background information about the main character in the story. B They introduce a second problem that Brianna faces in the story. C They provide a resolution to the main conflict in the story. D They reveal the effect of Brianna’s careful planning in the story.",
+    "6": "Question 6. How is Jasmine Moon most likely similar to Brianna in the story? 6 Jasmine Moon wears her hair in a way that covers her face, showing that she is most A likely shy and quiet like Brianna. Jasmine Moon gets along with her teacher quickly when she arrives at school, showing B that she is most likely kind and friendly like Brianna. Jasmine Moon is new to the school and decides to run for class president, showing that C she is most likely confident and determined like Brianna. Jasmine Moon is interested in being active and participating in social events, showing D that she is most likely eager and curious like Brianna.",
+    "7": "Question 7. How does Brianna’s point of view influence how events in the story are described? 7 A Brianna talks in detail about her aunt and her idol, making her seem wise and curious. B Brianna talks in detail about the work she does, making her seem lonely and quiet. C Brianna does everything for herself, making her aims in the story seem selfish and smug. D Brianna is sure of herself, making her aims in the story seem reasonable and achievable.",
+    "22": "Question 22. What is the best meaning of the word “values” as it is used in paragraph 4 of the article? 22 A appreciates B enjoys C expects D collects",
+    "23": "Question 23. What is the main way the phrase “a prickly situation” in paragraph 6 helps the reader understand the article? A __ by showing that some commodities were often difficult to find B by highlighting the idea that objects often had different values C by providing a reason why a common money system was necessary D by indicating that some commodities were rarely useful to all people",
+    "24": "Question 24. How do the details in paragraphs 5 through 8 help develop a central idea of the article? A __ by comparing money in ancient cultures with the money that people use today B__ by showing how different people tried to develop effective systems of money C _byexplaining why different objects were often considered to be valuable D by describing how the process of making coins has changed very little over time",
+    "25": "Question 25. Read this sentence from paragraph 3 of the article. 25 Ancient people needed something with a value everyone agreed on— money. Which detail from the article describes the most important feature of money? A “A deal was final when both people agreed that it was a fair trade.” (paragraph 1) B “Everyone valued barley, so the grain was used for trade.” (paragraph 4) C “It had to be valuable to everyone, easy to carry, and hard to destroy.” (paragraph 7) “Heavy strings of coins could now be exchanged for a single sheet of paper.” D (paragraph 10)",
+    "26": "Question 26. What is most likely the author’s opinion about bartering? 26 A Bartering is useful in some situations and will likely continue in the future. B Bartering is still an option when people live in smaller communities. C Bartering is now mainly used by children as a way to exchange food. D Bartering will likely increase as people use less physical money.",
+    "29": "Question 29. What is the main way paragraph 1 connects with paragraph 4? A They both show how Benny appreciates nature. B_ They both describe events that Benny hopes for in the future. C They both show the artistic skills that will help Benny achieve his goal. D They both reveal why Benny wants to win the flag design contest.",
+    "30": "Question 30. Read this sentence from paragraph 2. The blue sky was a roof that covered Benny’s Alaska at night. Which word best describes the tone in this sentence? A anxious B scheerful C peaceful D serious",
+    "31": "Question 31. Which meaning of the word “grand” is used in paragraph 4 of the story? 31 A exciting B expensive C decorative D large",
+    "32": "Question 32. Why are paragraphs 9 through 12 important to the story? A They show how Benny enjoys playing winter sports with his classmates. B They describe how Benny appreciates the flowers that arrive in the spring. C They suggest that the contest is less important to the teacher and to other students. D They refer to the time between the start of the contest and the day the winner is announced.",
+    "33": "Question 33. Which sentence best expresses a central idea of the story? 33 A Benny believes his physical strength will help him find success as he grows up. B Benny observes his surroundings quite closely and finds them to be meaningful. C Benny is surprised that winning the contest makes him feel proud and confident. D Benny wonders if other students with greater talent deserved to win the contest.",
+    "34": "Question 34. Which detail from the story best shows how Benny is different than other students? 34 A the suggestion that Benny would be “strong himself” (paragraph 1) B the statement that Benny desires to “win the contest” (paragraph 4) C the description of Benny sitting “quietly, thinking and thinking” (paragraph 5) D the indication that Benny believes other designs are “better than his” (paragraph 8)",
+    "35": "Question 35. How is the setting most important to the story? A The fishing village where Benny lives makes him eager to become a fisherman. B_ The school that Benny attends encourages him to participate in the flag contest. C The different seasons allow Benny to play different games outside with his classmates. D The scenery that Benny pays attention to inspires him to make a special flag design."
+  }
+}

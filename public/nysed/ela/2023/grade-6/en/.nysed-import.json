@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "b39dd1e1e8f7a50fc2a5b7eb4e9c377bbee9c42a27d1981d2ba93af5cfb67145",
+  "crops": {
+    "1": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        500.85
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        500.85,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        288.0
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        288.0,
+        584.0,
+        488.7
+      ]
+    },
+    "6": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        488.7,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        275.85
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        275.85,
+        584.0,
+        488.7
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        488.7,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        299.7
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        299.7,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        293.85
+      ]
+    },
+    "30": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        293.85,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        288.0
+      ]
+    },
+    "32": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        288.0,
+        584.0,
+        488.7
+      ]
+    },
+    "33": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        488.7,
+        584.0,
+        702.372
+      ]
+    },
+    "34": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "35": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1068,
+      "height": 319
+    },
+    "2": {
+      "width": 940,
+      "height": 446
+    },
+    "3": {
+      "width": 742,
+      "height": 318
+    },
+    "4": {
+      "width": 1106,
+      "height": 412
+    },
+    "5": {
+      "width": 963,
+      "height": 312
+    },
+    "6": {
+      "width": 869,
+      "height": 318
+    },
+    "7": {
+      "width": 924,
+      "height": 320
+    },
+    "22": {
+      "width": 1057,
+      "height": 382
+    },
+    "23": {
+      "width": 1130,
+      "height": 350
+    },
+    "24": {
+      "width": 1113,
+      "height": 391
+    },
+    "25": {
+      "width": 924,
+      "height": 447
+    },
+    "26": {
+      "width": 1088,
+      "height": 412
+    },
+    "29": {
+      "width": 1020,
+      "height": 415
+    },
+    "30": {
+      "width": 1007,
+      "height": 441
+    },
+    "31": {
+      "width": 1128,
+      "height": 400
+    },
+    "32": {
+      "width": 970,
+      "height": 318
+    },
+    "33": {
+      "width": 826,
+      "height": 318
+    },
+    "34": {
+      "width": 1083,
+      "height": 319
+    },
+    "35": {
+      "width": 1110,
+      "height": 411
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which statement best supports a central claim of the story? 1 A Carrots are necessary for wild horses to perform the tasks they are given. B Treats given to some wild horses may result in rude and aggressive behavior. C Wild horses can learn to trust people if they are treated with patience and kindness. D People should avoid naming wild horses until they learn the behavior of the animals.",
+    "2": "Question 2. Read this phrase from paragraph 5. ... hooves kicking puffs of dust and tail streaming behind him like a banner. The author most likely uses this phrase to A highlight Ranger's speed B_ show Ranger's refusal to be tamed C __ illustrate Ranger’s desire for freedom D _ indicate Ranger's distance from the corral",
+    "3": "Question 3. Paragraphs 5 and 6 fit in the overall structure of the story by 3 A expanding the setting B introducing the conflict C foreshadowing a resolution D describing a relationship",
+    "4": "Question 4. Which quotation best supports a theme of the story? A “It was dusk by the time we hauled him home, so I tossed him some hay, showed him where the water tank was, and then left him to settle in” (paragraph 2) B “If hed managed to get out of his safe corral, how on earth could I catch him again?” (paragraph 4) Cc “Ranger galloped into view along the edge of the cornfield, hooves kicking puffs of dust and tail streaming behind him like a banner? (paragraph 5) D “T spent the next few weeks letting him get used to the sound of my voice, the rhythm of my movements.” (paragraph 10)",
+    "5": "Question 5. What is the most likely meaning of the word “skeptical” as used in paragraph 10? 5 A afraid of B cautious about C unaware of D worried about",
+    "6": "Question 6. What do the details in paragraphs 11 through 14 indicate about Ranger? 6 A He is ready to begin his training. B His curiosity is overcoming his lack of trust. C He is excited to try different foods. D His desire for companionship is growing.",
+    "7": "Question 7. How does the author mainly develop the narrator’s point of view in the story? 7 A by sharing the narrator’s thoughts about Ranger B by showing how the narrator tries to make Ranger feel at home C by describing the narrator’s reaction when Ranger escapes D by indicating why the narrator believes Ranger will like carrots",
+    "22": "Question 22. Hummingbirds have eyes on the sides of their heads, allowing them to see frontwards and 22 sideways. Which phrase from paragraph 10 best suggests why this feature is useful for hummingbirds? A “most at home in the air” B “they can also go backward” C “move from flower to flower” D “they can hover in midair”",
+    "23": "Question 23. The section “Where in the World” mainly contributes to the reader’s understanding of the article by A letting the reader know where hummingbirds are often found B indicating why some hummingbirds prefer cooler climates C explaining to the reader how hummingbirds interact with people D emphasizing that some hummingbirds often travel alone",
+    "24": "Question 24. Which detail from the article does the information in the table support? A _ “For their size, they produce more feathers than any other bird” (paragraph 3) B “The birds raise their families in the wilderness, but also in busy city parks and backyard gardens.” (paragraph 5) Cc “It normally feeds every 10 minutes—sometimes more often—downing about 60 meals a day!” (paragraph 7) D “A hummingbird feeds mostly on nectar—the sweet liquid formed inside flowers.” (paragraph 9)",
+    "25": "Question 25. Read this detail from paragraph 12 of the article. A hummer can make sudden stops—even on a narrow perch—with grace.... This detail suggests that hammingbirds are A skilled at flying B unsure when landing C easily observed D rarely distracted",
+    "26": "Question 26. Which detail from the article would be most important to include in a summary? “Stand between a hummingbird and the sun—with the light to your back—and you'll witness the flash as the bird faces the sun.” (paragraph 3) B “Hummingbirds live where flowers bloom—but only in the western half of the world?” (paragraph 4) Cc “Ruby-throated and rufous hummers fly more than 3200 kilometres (2000 miles) from their nesting sites in the north to their winter homes in the south.’ (paragraph 6) D “They're surprisingly good right away, but they have to work to improve their landing skills.” (paragraph 13)",
+    "29": "Question 29. Read this sentence from paragraph 4. 29 To us, the kitchen was a mysterious place. What is the main way the author develops this idea? A by contrasting the restaurant kitchen with the kitchen in his home B by referring to the sizes of the sink and refrigerator in the restaurant kitchen C by describing objects in the restaurant kitchen with which he was unfamiliar D by explaining the purpose of the raised planks of wood in the restaurant kitchen",
+    "30": "Question 30. Read this sentence from paragraph 9. Life in a Chinese restaurant gave us access to some strange snacks, most of which we grew to like. Which statement best represents the meaning of this sentence? A __ Theauthor learns to enjoy unfamiliar food available in the restaurant. B_ The author ignores the restaurant food he finds unpleasant. C The author prefers restaurant snacks he has had before. D The author looks for different snacks in the restaurant.",
+    "31": "Question 31. Many restaurant owners must be creative to be successful. Which quotation from the article best 31 supports this idea? “. . . planks of wood, raised off the ground an inch or two, served to give his legs and feet A some spring . . .” (paragraph 4) B “. . . now and then, he’d make a batch of Jah-Don . . .” (paragraph 7) C “If he tasted a candy he liked, he’d try to duplicate it . . .” (paragraph 8) “Sometimes, Dad would get a sugar cane or two at the produce market . . .” D (paragraph 10)",
+    "32": "Question 32. How does the author best help the reader understand his father’s point of view? A by describing his father striding “the length of the four woks” (paragraph 4) B by describing his father taking out “several rods” of pork (paragraph 5) C _ by claiming that “There was nothing he wouldn't try: (paragraph 8) D by claiming he offered “a sugar cane or two” as a snack (paragraph 10)",
+    "33": "Question 33. What is the meaning of the phrase “to spin stories” in paragraph 11? 33 A to tell lies B to invent humorous tales C to warn others D to create feelings of excitement",
+    "34": "Question 34. In the article, the main way the author represents his childhood experiences is by describing 34 A the size of the kitchen in the restaurant B the various types of food he ate at the restaurant C the different people who worked at the restaurant D the attempts of his father to make candy in the restaurant",
+    "35": "Question 35. Which claim by the author is most strongly supported by evidence in the article? A “The rice room . . . was the generic name for an area in the back of our father’s restaurant.” (paragraph 1) B “From the time of my birth . .. the cafe at 710 Webster Street was my home away from home.’ (paragraph 2) Cc “,. nothing rivaled the satisfaction of working the plum around, getting down to the plum seed” (paragraph 9) D “,..a tall, spindly man with rimless glasses and thinning hair who liked to spin stories to us.’ (paragraph 11)"
+  }
+}

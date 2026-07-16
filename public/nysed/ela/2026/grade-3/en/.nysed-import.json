@@ -1,0 +1,348 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "eb18b321db0dbf11639b772b8538553c7821bd1dd14ae9d8a2fd947445e1dbba",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        359.1
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        359.1,
+        584.0,
+        560.25
+      ]
+    },
+    "3": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        560.25,
+        584.0,
+        706.6
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        251.1
+      ]
+    },
+    "5": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        251.1,
+        584.0,
+        452.25
+      ]
+    },
+    "6": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        452.25,
+        584.0,
+        706.6
+      ]
+    },
+    "13": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        323.1
+      ]
+    },
+    "14": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        323.1,
+        584.0,
+        706.6
+      ]
+    },
+    "15": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        318.6
+      ]
+    },
+    "16": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        318.6,
+        584.0,
+        519.75
+      ]
+    },
+    "17": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        519.75,
+        584.0,
+        706.6
+      ]
+    },
+    "18": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        251.1
+      ]
+    },
+    "19": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        251.1,
+        584.0,
+        706.6
+      ]
+    },
+    "20": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        274.95
+      ]
+    },
+    "21": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        274.95,
+        584.0,
+        500.4
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        500.4,
+        584.0,
+        706.6
+      ]
+    },
+    "23": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        251.1
+      ]
+    },
+    "24": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        251.1,
+        584.0,
+        706.6
+      ]
+    },
+    "26": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        287.1
+      ]
+    },
+    "27": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        287.1,
+        584.0,
+        524.25
+      ]
+    },
+    "28": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        524.25,
+        584.0,
+        706.6
+      ]
+    },
+    "29": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "30": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1109,
+      "height": 573
+    },
+    "2": {
+      "width": 1111,
+      "height": 327
+    },
+    "3": {
+      "width": 802,
+      "height": 317
+    },
+    "4": {
+      "width": 1066,
+      "height": 326
+    },
+    "5": {
+      "width": 1076,
+      "height": 327
+    },
+    "6": {
+      "width": 1061,
+      "height": 327
+    },
+    "13": {
+      "width": 1087,
+      "height": 496
+    },
+    "14": {
+      "width": 855,
+      "height": 327
+    },
+    "15": {
+      "width": 1140,
+      "height": 474
+    },
+    "16": {
+      "width": 828,
+      "height": 325
+    },
+    "17": {
+      "width": 915,
+      "height": 326
+    },
+    "18": {
+      "width": 971,
+      "height": 326
+    },
+    "19": {
+      "width": 1120,
+      "height": 365
+    },
+    "20": {
+      "width": 1097,
+      "height": 370
+    },
+    "21": {
+      "width": 1109,
+      "height": 365
+    },
+    "22": {
+      "width": 780,
+      "height": 328
+    },
+    "23": {
+      "width": 733,
+      "height": 326
+    },
+    "24": {
+      "width": 1088,
+      "height": 497
+    },
+    "26": {
+      "width": 1080,
+      "height": 404
+    },
+    "27": {
+      "width": 1072,
+      "height": 412
+    },
+    "28": {
+      "width": 673,
+      "height": 327
+    },
+    "29": {
+      "width": 907,
+      "height": 324
+    },
+    "30": {
+      "width": 916,
+      "height": 324
+    },
+    "31": {
+      "width": 1141,
+      "height": 526
+    }
+  },
+  "altText": {
+    "1": "Question 1. The expression “actions speak louder than words” means that people are often judged more by what they do than what they say. Which sentence from the story best supports this idea? “Little Shaq had been asking for a kitten for as long as he could remember.” A (paragraph 5) B “We lost, but the rec center is having a really cool event next week.” (paragraph 9) “He wasn't good at remembering to take out the trash, and Mom did have Cc to tell him every morning to make his bed” (paragraph 16) “In all the excitement about the pet fair, Little Shaq had forgotten to tell his D P » parents the big news.” (paragraph 18)",
+    "2": "Question 2. Which detail from paragraph 7 best supports the idea that Little Shaq is nervous? A The food sits untouched. B The meatballs make a mess. C His mom feels unhappy. D His father catches his eye.",
+    "3": "Question 3. What does “glanced” mean as it is used in paragraph 17? A __ looked for something B__ reached over C picked an object up D _ turned away",
+    "4": "Question 4. How do the details in paragraphs 18 through 21 support a theme of the story? A ___ They show that pet fairs are big events. B _ They show that hard work can be rewarded. C They show that instructions should be followed. D They show that families should talk to each other.",
+    "5": "Question 5. What does paragraph 24 show about Little Shaq? A Heis thankful because his parents are laughing at a joke he told. B__Heis pleased because his brother and sister agree with him. C = Heis excited because his brother and sister are proud of him. D He is happy because his parents have agreed to think about his question.",
+    "6": "Question 6. Which detail would be most important to include in a summary of the story? A Little Shaq will take care of Flopsy. B Barry hasa fish named Louie. C__ Tater makes a mess at dinner. D Malia is ina school play.",
+    "13": "Question 13. Which sentence from the passage best shows a cause-and-effect relationship? “Under the roots of an old pine tree, there is scuffling and snuffling” A (paragraph 1) “Porcupette backs down the tree and wanders over to the nearby stream.” B (paragraph 6) “Beavers are the biggest rodents in North America, but porcupines aren't Cc far behind” (paragraph 7) “The mountain lion slinks away, batting at his mouth where sharp quills D » dangle.” (paragraph 11)",
+    "14": "Question 14. Why is the picture important to understanding paragraph 2? A __ It compares a baby porcupine’ size to its mother. B__It suggests that porcupines should fear big animals. C __Itincludes where porcupines go to find food at night. D__It shows what a baby porcupine'’s body looks like.",
+    "15": "Question 15. Read this sentence from paragraph 12. Soon she is fast asleep, dreaming of more adventures in her prickly porcupine world. What does the phrase “prickly porcupine world” mean as it is used in this sentence? A anangry world B a world full of excitement Cc a scary world D _ aworld full of plants",
+    "16": "Question 16. What does the author most likely think about Porcupette? A __ Porcupette needs help from her mother. B ___ Porcupette should be more careful. C__~Porcupette is able to survive on her own. D___ Porcupette is safe with other animals.",
+    "17": "Question 17. Which sentence best states a central idea of the passage? A __ Porcupines are awake at night and sleep during the day. B___Porcupines drink their mother’s milk when they are babies. C__~Porcupines use their quills to stay safe from enemies. D__ Porcupines weigh more than baby black bears at birth.",
+    "18": "Question 18. 1g How does the author mainly organize the information in the passage? A __ by telling Porcupette’s problem and the solution B by telling, in order, how Porcupette spends her night C__ by comparing Porcupette’s nights to her days D by describing how some other animals affect Porcupette",
+    "19": "Question 19. Sometimes different animals can peacefully share the same community. How does the passage support this idea? A __ by describing how Porcupette is not afraid of raccoons at night B _ byexplaining how the owl causes Porcupette to raise her quills C__byshowing how Porcupette senses the odor of a mountain lion D by telling how the mountain lion is unable to attack Porcupette",
+    "20": "Question 20. 9 Which quote best supports a central idea of the story? A _ “This field trip to the zoo might be our last!” (paragraph 2) B “ ‘Remember when the new principal came?’ asked Jamie.” (paragraph 15) C_ “‘Thope so; said Jamie. “We have to save the zoo: ” (paragraph 22) “J think the city should use the money to make the library bigger” D (paragraph 25)",
+    "21": "Question 21. How does Jamie support her claim that she and her friends can help save the zoo, even if they are not old enough to vote? A __ byraising money B__ by making posters and fliers C __ byspeaking at the town meeting D __ byexplaining what is wrong with the city",
+    "22": "Question 22. In paragraph 31, what does “Jamie’s heart sank” mean? A _ Jamie felt pain in her chest. B _ Jamie felt excited she could vote. C Jamie was sad the zoo lost the vote. D _ Jamie was tired of reading the newspaper.",
+    "23": "Question 23. Paragraph 32 shows that Jamie's mother believes A __ the campaign to save the zoo was a bad idea B___ the zoo animals will be fine at the preserve C__ the city will make the library bigger D __ the newspaper should only be read by adults",
+    "24": "Question 24. How does Jamie change from the beginning of the story to the end of the story? First, she is excited to save the zoo by campaigning. After, she is thankful the animals will go to a wildlife preserve. First, she is disappointed that the zoo might be closing. After, she is sad B that the animals will be so far away. First, she is sad that she cannot vote to save the zoo. After, she is angry at Cc her city for not voting the way she wanted. First, she is happy that her friend wants to help her. After, she is worried D that she did not do enough for the zoo.",
+    "26": "Question 26. How does the author use paragraphs 5 and 10 to develop Vikram? A __ by describing how he is more interested in taking pictures than in a shell by describing how he is a good brother who enjoys spending time with B family C __ by explaining why he and his brother argue all the time by explaining the different kinds of activities he enjoys doing while on D vacation",
+    "27": "Question 27. Which sentence best supports a theme of the story? “Back at the cottage, Sabeel ran to his room to admire the shell.” A (paragraph 7) “This time, Sabeel tucked the shell under his pillow, where no one could B see it? (paragraph 11) Cc ‘Thave to return a gift” (paragraph 25) D “With the next wave, he was gone.’ (paragraph 26)",
+    "28": "Question 28. 2g What claim does Sabeel make in paragraph 9? A _ that Vikram has stolen the shell B that Vikram does not like him C _ that he has lost the shell D _ that he wants to go to the arcade",
+    "29": "Question 29. What do the details in paragraph 22 show about the hermit crab? 29 A It needs water. B It senses danger. C It likes the name Sandy. D It wants to live at Sabeel’s house.",
+    "30": "Question 30. What does the word “washed” mean as it is used in paragraph 25? 30 A cleaned with soap B felt worn out C became equal to something D carried by flowing water",
+    "31": "Question 31. How does knowing the shell is a hermit crab change Dadi’s thoughts on what Sabeel should do? First, Dadi tells Sabeel the shell is a gift from the sea. After, Dadi thinks A Sabeel needs to return the crab to its home. First, Dadi thinks the shell is very beautiful. After, Dadi thinks Sabeel B should buy a new shell at the boardwalk. First, Dadi wants Sabeel to share his shell with his siblings. After, Dadi Cc thinks Sabeel should treasure his gift on his own. First, Dadi likes the pink inside of the shell. After, Dadi thinks Sabeel D should find a shell the same color as the crab."
+  }
+}

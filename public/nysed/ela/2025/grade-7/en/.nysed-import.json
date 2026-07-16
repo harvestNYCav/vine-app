@@ -1,0 +1,376 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.267
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        294.267,
+        584.0,
+        550.367
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        550.367,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        313.467
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        313.467,
+        584.0,
+        510.767
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        510.767,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        255.867
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        255.867,
+        584.0,
+        454.367
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        454.367,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.267
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        258.267,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.267
+      ]
+    },
+    "30": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        258.267,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        266.667
+      ]
+    },
+    "32": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        266.667,
+        584.0,
+        463.967
+      ]
+    },
+    "33": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        463.967,
+        584.0,
+        702.372
+      ]
+    },
+    "34": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        255.867
+      ]
+    },
+    "35": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        255.867,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        254.667
+      ]
+    },
+    "37": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        254.667,
+        584.0,
+        455.567
+      ]
+    },
+    "38": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        455.567,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        296.667
+      ]
+    },
+    "40": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        296.667,
+        584.0,
+        545.567
+      ]
+    },
+    "41": {
+      "sourcePage": 35,
+      "box": [
+        28.0,
+        545.567,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 36,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1103,
+      "height": 401
+    },
+    "2": {
+      "width": 969,
+      "height": 434
+    },
+    "3": {
+      "width": 778,
+      "height": 306
+    },
+    "4": {
+      "width": 973,
+      "height": 434
+    },
+    "5": {
+      "width": 923,
+      "height": 307
+    },
+    "6": {
+      "width": 1123,
+      "height": 369
+    },
+    "7": {
+      "width": 1078,
+      "height": 308
+    },
+    "22": {
+      "width": 875,
+      "height": 308
+    },
+    "23": {
+      "width": 1075,
+      "height": 307
+    },
+    "24": {
+      "width": 1102,
+      "height": 339
+    },
+    "25": {
+      "width": 891,
+      "height": 308
+    },
+    "26": {
+      "width": 894,
+      "height": 307
+    },
+    "29": {
+      "width": 789,
+      "height": 308
+    },
+    "30": {
+      "width": 1003,
+      "height": 530
+    },
+    "31": {
+      "width": 1103,
+      "height": 339
+    },
+    "32": {
+      "width": 1050,
+      "height": 307
+    },
+    "33": {
+      "width": 1115,
+      "height": 430
+    },
+    "34": {
+      "width": 1107,
+      "height": 308
+    },
+    "35": {
+      "width": 1121,
+      "height": 424
+    },
+    "36": {
+      "width": 794,
+      "height": 308
+    },
+    "37": {
+      "width": 875,
+      "height": 307
+    },
+    "38": {
+      "width": 1121,
+      "height": 338
+    },
+    "39": {
+      "width": 1109,
+      "height": 401
+    },
+    "40": {
+      "width": 1114,
+      "height": 431
+    },
+    "41": {
+      "width": 911,
+      "height": 308
+    },
+    "42": {
+      "width": 1003,
+      "height": 308
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which idea would be most important to include in a summary of the story? 1 “Today began our adventure at the Columbian Exposition, the largest world’s fair in A history!” (paragraph 1) B “Father insisted on staying late, footsore and dusty as we were.” (paragraph 3) “Father decreed that we spend all day in the Manufactures and Liberal Arts Building, by C far the biggest of the Great Buildings.” (paragraph 4) “At dusk, we watched the lights come on again like thousands of candles lit all at once.” D (paragraph 5)",
+    "2": "Question 2. Read this sentence from paragraph 5. The lights’ reflections were magical—like being surrounded by floating fireflies. What is the effect of the author’s word choice in the sentence? A __Itcreates a tone of surprise. B__It creates a tone of adventure. C It creates a tone of wonderment. D__It creates a tone of confusion.",
+    "3": "Question 3. What does the word “replica” mean as it is used in paragraph 7? 3 A a building B an exit C a copy D an animal",
+    "4": "Question 4. Read this sentence from paragraph 8. The Ferris Wheel began operating today, but Father said we can’t ride it until we’ve toured all the important exhibits. What does this sentence suggest about the father’s attitude? A He values education more than amusement. B _-He dislikes amusement attractions like the Ferris Wheel. C_—_He is unconvinced of the safety of the Ferris Wheel. Ds He thinks the attractions will be less crowded later in the week.",
+    "5": "Question 5. The events from Friday, June 23 cause a change in the narrator's attitude from A fascinated to weary, because of all the walking the family has done B interested to excited, because the amusements are fun C pleased to uncertain, because of the foreign surroundings D _ tired to energized, because the buildings are unusual",
+    "6": "Question 6. Journaling can be a helpful way to keep track of past events and memories. Which sentence best 6 supports this idea? A “Today we moved on to Transportation, the second-largest building.” (paragraph 6) “I was more impressed by the sparkly diamonds from the Cape Colony and lovely Aztec B turquoise from Mexico.” (paragraph 7) C “We agree it’s the best of all!” (paragraph 13) D “I’d never remember everything without it!” (paragraph 14)",
+    "7": "Question 7. Which of the following sentences supports the narrator’s claim that her trip is an adventure? 7 A She will learn about new advancements in technology. B She will have a unique opportunity to experience things from all around the world. C She will spend an entire week with her family on a vacation. D She will record her experiences in a journal that was given to her.",
+    "22": "Question 22. How is the strength of spider silk mostly introduced in paragraph 1? 22 A through a story about the author’s interest in popular movies B through a comparison to a fictional character’s superhero abilities C through details of the material’s use in everyday objects D through reference to the myths surrounding the material’s benefits",
+    "23": "Question 23. What does the phrase “on a smaller scale,’ as used in paragraph 2, suggest about spider silk? A __ Spider silk could be used to perform tasks requiring precision. B The simpler uses for spider silk require limited skill. C___ Some uses for spider silk are less important than others. D Spider silk is most useful for large-scale projects.",
+    "24": "Question 24. For the project at the American Museum of Natural History described in paragraph 3, to what 24 does the phrase “reel in the silk” refer? A the effort it took to collect such a great amount of silk B the length of time it took the spiders to produce the silk C how difficult it was to find the necessary spiders D how important it was to hire dedicated workers",
+    "25": "Question 25. The details in paragraph 7 mainly contribute to the article by showing A __ the differences between production of silk by silkworms and spiders B the impressive design of silkworm cocoons C__ the metamorphosis of silkworms into moths D _ the reason that silkworms are a good alternative to spiders",
+    "26": "Question 26. How does the author present the challenge of raising spiders domestically? 26 A through descriptions of how spiders find food together B through comparisons of the behavior of male and female spiders C through situations that show why spiders cannot be kept together D through explanations about why female spiders are special",
+    "29": "Question 29. What do the details in paragraphs 1 and 2 reveal about Subhash? 29 A He is quiet and considerate. B He is nervous and excitable. C He feels passionate about nature. D He feels lonely when at home.",
+    "30": "Question 30. Read these sentences from paragraph 5. When they were old enough, when they were permitted to leave the house, they were told not to lose sight of one another. Together they wandered down the winding lanes of the enclave, behind the ponds and across the lowland, to the playing field where they sometimes met up with other boys. What is the main way this change in setting affects Subhash and Udayan? A__ They get into trouble when they wander too far from home. B__They realize they like the quieter areas of their community. C_ They enjoy exploring new territory together. D They prefer being with other children when exploring.",
+    "31": "Question 31. In paragraph 8, Subhash and Udayan respond differently to the same situation. What does this show the reader about the characters? A ___ The boys’ parents expect different behavior from them. B__The boys demonstrate different personalities. C__ The boys’ parents give them different responsibilities. D__The boys display different levels of maturity.",
+    "32": "Question 32. As used in paragraph 9, what does the word “indistinguishable” show about the brothers? A One brother is considered as intelligent as the other. B They are both tired of playing the game of chess. C One brother acts the same way as the other. D__ They both sound the same when talking.",
+    "33": "Question 33. Which statement best reflects the idea of growing up? “Eventually they were allowed to leave the enclave, and to enter the greater city.” A (paragraph 6) “Sitting over the chessboard they were mirror images: one leg bent, the other splayed out, B chins propped on their knees.” (paragraph 9) c “It became his mission to obey them, given that it wasn’t possible to surprise or impress them. That was what Udayan did.” (paragraph 11) “Subhash had listened. He had watched through the window, he had not gone out.” D (paragraph 14)",
+    "34": "Question 34. What difference between Subhash and Udayan is revealed by the information in paragraph 16? 34 A Udayan pays more attention to detail, while Subhash is unobservant. B Udayan has a more creative personality, while Subhash is carefree. C Subhash dislikes getting dirty, while Udayan likes creating a mess. D Subhash acts as his parents want, while Udayan acts as he wants.",
+    "35": "Question 35. Which statement best represents the importance of paragraphs 17 and 18 to the story? The boys’ father continues to be upset about the footprints in the cement, and he A complains to visitors. The boys’ father understands that the footprints represent an experience in the journey of B growing up. Subhash realizes that the footprints represent a division between himself and Udayan, c which he accepts. D Subhash feels guilty that he did not Udayan from making the footprints in the cement.",
+    "36": "Question 36. What is the definition of “pioneered” as it is used in paragraph 1? 36 A traveled around the world B trained extensively C danced professionally D developed something new",
+    "37": "Question 37. What does the reader learn about Katherine Dunham from paragraph 5? 37 A She struggles with a career in anthropology. B She blends cultural influences into modern dance. C She wants dance to return to traditional methods. D She leaves dancing in order to become an actor.",
+    "38": "Question 38. Based on paragraph 5, what does the word “signature” suggest about Katherine Dunham’s dance 38 L’Ag’Ya? A It is a dance that is performed in a musical. B It is a dance that is identified as Dunham’s. C It is a dance that requires Dunham’s style of dress. D It is a dance that includes cultural references.",
+    "39": "Question 39. Which sentence best supports a central idea of the article? “They laid the foundation for generations of dancers and choreographers to come.” A (paragraph 2) B “I wanted it to be fraught with inner meaning, with excitement and surge.” (paragraph 3) “Katherine Dunham started dancing in her late teens, but she didn’t think it would turn c into a career” (paragraph 4) D “Primus worked to make African dance an accepted and important art form among American audiences.” (paragraph 8)",
+    "40": "Question 40. Which sentence best supports the claim made by the author in paragraph 1? “Graham's techniques are still taught today, and her approach to movement has inspired many young dancers to make their careers on the stage.” (paragraph 3) “Dunham spent 18 months in Jamaica, Martinique, Trinidad, and Haiti, gaining the trust B of her subjects so she could learn and perform their ritual dances.’ (paragraph 4) “She received a scholarship to the New Dance Group, which offered dance lessons to professionals and children.” (paragraph 7) “The all-female group was known for avant-garde performances minimalistic in both D movement and stage design.” (paragraph 9)",
+    "41": "Question 41. How are the accomplishments of Martha Graham represented in the article? 41 A Graham expands the changes to dance that Katherine Dunham starts. B Graham influences people’s understanding of dance. C Graham believes dancers should be trained similarly to athletes. D Graham emphasizes the need for dancers to have freedom.",
+    "42": "Question 42. What is the primary structure the author uses to organize information in the article? 42 A cause and effect B problem and solution C chronological sequence D compare and contrast"
+  }
+}

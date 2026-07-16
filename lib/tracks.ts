@@ -23,7 +23,7 @@ export const TRACKS: Array<{
     id: 'math',
     label: 'Math',
     shortLabel: 'Math',
-    description: 'Common Core arithmetic practice and skill lessons.',
+    description: 'Arithmetic practice and New York State standards-based lessons.',
   },
 ]
 

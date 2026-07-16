@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "51c010b6a243968e9cf51fad449869e4a9b269b18e231572b598dbe68e4b6d3b",
+  "crops": {
+    "15": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "16": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "17": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "19": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        519.119
+      ]
+    },
+    "20": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        519.119,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "23": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "24": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "26": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        510.243
+      ]
+    },
+    "27": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        510.243,
+        584.0,
+        702.372
+      ]
+    },
+    "28": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "30": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        702.372
+      ]
+    },
+    "31": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        330.243
+      ]
+    },
+    "32": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        330.243,
+        584.0,
+        702.372
+      ]
+    },
+    "33": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        319.204
+      ]
+    },
+    "34": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        319.204,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "15": {
+      "width": 1043,
+      "height": 328
+    },
+    "16": {
+      "width": 994,
+      "height": 327
+    },
+    "17": {
+      "width": 1109,
+      "height": 364
+    },
+    "18": {
+      "width": 935,
+      "height": 443
+    },
+    "19": {
+      "width": 916,
+      "height": 354
+    },
+    "20": {
+      "width": 920,
+      "height": 354
+    },
+    "21": {
+      "width": 805,
+      "height": 328
+    },
+    "22": {
+      "width": 1059,
+      "height": 328
+    },
+    "23": {
+      "width": 961,
+      "height": 327
+    },
+    "24": {
+      "width": 786,
+      "height": 328
+    },
+    "25": {
+      "width": 956,
+      "height": 421
+    },
+    "26": {
+      "width": 923,
+      "height": 327
+    },
+    "27": {
+      "width": 934,
+      "height": 327
+    },
+    "28": {
+      "width": 876,
+      "height": 328
+    },
+    "29": {
+      "width": 867,
+      "height": 328
+    },
+    "30": {
+      "width": 1093,
+      "height": 491
+    },
+    "31": {
+      "width": 1049,
+      "height": 491
+    },
+    "32": {
+      "width": 831,
+      "height": 327
+    },
+    "33": {
+      "width": 1052,
+      "height": 460
+    },
+    "34": {
+      "width": 1068,
+      "height": 421
+    },
+    "35": {
+      "width": 1113,
+      "height": 391
+    }
+  },
+  "altText": {
+    "15": "Question 15. Which phrase best describes how the article develops the idea presented in paragraph 2? A __ by providing counterarguments B__by offering solutions to the problem C by discussing personal experiences D by introducing research results",
+    "16": "Question 16. The use of quotation marks around the word “relaxing” in paragraph 4 suggests that A some activities hinder true relaxation B deep sleep helps one experience true relaxation C _ teens do not value activities that give true relaxation D blue light helps one experience true relaxation",
+    "17": "Question 17. Which statement best describes how the section “Hello, Night Owl!” supports a central idea of the article? A It describes an important cause and effect relationship. B It creates an effective comparison and contrast between ideas. C It provides evidence that disproves a popular theory. D It presents a counterargument to the initial claim.",
+    "18": "Question 18. Which idea would be most important to include in a summary of the article? A “Screens for television, games, computers, tablets, e-readers, and cell phones give off blue light.” (paragraph 4) B “Caffeine from sodas and energy drinks makes matters worse.” (paragraph 6) c “For one thing, lack of sleep makes it harder to pay attention.” (paragraph 10) D “One study found that the more sleep people got, the more likely people were to find them attractive.” (paragraph 17)",
+    "19": "Question 19. Which claim from the article is most strongly supported with evidence? A “Even without modern technology, though, teens shift their circadian rhythm.’ (paragraph 7) B “The rest of the world doesn't shift, however.” (paragraph 9) C “Lack of sleep could hurt mental health” (paragraph 12) D “Lots of issues remain for sleep researchers to explore.” (paragraph 20)",
+    "20": "Question 20. Which sentence from the article best shows the author's point of view? A “Blame your brain, at least in part.” (paragraph 1) B “And that’s a serious public health problem? (paragraph 9) C “Crankiness can result, especially if you don't feel well? (paragraph 14) D “And you can't easily change your body’s natural circadian rhythm.” (paragraph 21)",
+    "21": "Question 21. Which paragraph best summarizes a central idea from the article? A paragraph 1 B_ sparagraph 3 C paragraph 20 D paragraph 21",
+    "22": "Question 22. What does the phrase “collect his thoughts” tell the reader about Ohkwa’ri in paragraph 1? A He is memorizing a speech. B He is expecting an argument. Cc He is hesitant to express disagreement. D He is preparing to say something important.",
+    "23": "Question 23. How does the forest setting shape the actions that are described in paragraph 11? A The setting causes a person to move quickly. B The setting requires a person to be very careful. C The setting requires a person to be extremely quiet. D_ The setting causes a person to behave nervously.",
+    "24": "Question 24. Which important idea does the author develop in paragraph 13? A __ Respecting privacy is a problem in the community. B Sharing helps people in the community. C Acquiring wealth is valued in the community. D Hiding useful objects prevents loss for the community.",
+    "25": "Question 25. Which quotation best supports a central idea of the story? A “He could help his uncle finish hollowing the bowl by blowing on the coal through the thin hollow branch of a sumac.” (paragraph 5) B “Now I only have to smooth the inside and this cup will be ready to use.” (paragraph 6) Cc “Tt was useful, but it was better to have something that was useful and beautiful” (paragraph 12) D “It would be a good way to learn, a good way to make myself tougher and stronger.’ (paragraph 17)",
+    "26": "Question 26. Which detail would be most important to include in a summary of the story? A Ohkwarri helps his uncle Big Tree make a fine drinking cup. B — Ohkwarri keeps his personal things under his bed in a box. Cc Ohkwa’ri blows on the coal through a sumac branch. D — Ohkwa’ri knows how to safely obtain water from a river.",
+    "27": "Question 27. Which paragraph best shows a change in the direction of the plot of the story? A paragraph 6 B paragraph 7 C paragraph 12 D paragraph 15",
+    "28": "Question 28. How does the author most develop Ohkwa’ri’s point of view in the story? A__ bycontrasting him with his uncle B_ by showing how he imitates his uncle C _byrevealing his thoughts about growing up D by describing his impatience to live on his own",
+    "29": "Question 29. Paragraph 2 mainly contributes to a central idea of the article because it A __ shows that Napoleon III was an unpopular leader B gives the exact number of purposes for the gift C describes the loyalty of the French people D _ explains both reasons for the gift",
+    "30": "Question 30. Read this sentence from paragraph 3. Bartholdi wrote that the seed for the Statue of Liberty was sown at the party that night. The words “the seed for the Statue of Liberty was sown’ refer to the A timetable for building the statue B first ideas about the project C plan for funding the project D design for the statue",
+    "31": "Question 31. Read this sentence from paragraph 6. He hoped to drum up enthusiasm for the project as well as find an appealing location to display the work. The use of the phrase “drum up” shows that Bartholdi needed to A___ discover the best place for exhibiting the completed project B reduce the cost of the project C create a widespread public demand for the project D teach the public about the reason for the project",
+    "32": "Question 32. Why was Bedloe’s Island selected for the site of the Statue of Liberty? A The local people already knew about the history of the island. B The island was close to a populated city. C The size of the island would make the statue stand out. D The island was located in a busy harbor.",
+    "33": "Question 33. Which evidence from paragraph 11 best supports the author’s claim that the fund-raising efforts for the Statue of Liberty were “creative”? “Though the original goal of completing the statue for the hundredth A birthday... seemed unlikely, the group still did its best to meet that deadline.” B “Appeals for donations for the statue appeared in the French press...” C — “Banquets and balls were held in several French cities.” D “Bartholdi came up with just enough money to begin work on Lady Liberty”",
+    "34": "Question 34. Which event showed a change in the attitude of Americans towards the construction of the Statue of Liberty? A President Ulysses S. Grant met with Bartholdi to discuss the project. B People from the United States agreed to support the Franco-American Union. Cc Americans wanted to hear more about the design of the statue from Bartholdi. D Americans learned that the statue was to be a symbol of freedom and democracy.",
+    "35": "Question 35. Which statement best describes a major contribution of Bartholdi toward making the Statue of Liberty a reality? A He met with some of the most famous people in America. B He planned for a monument that would be extremely large. C He remained committed to the project over a long period of time. D He drew sketches to show the way the monument would look when completed."
+  }
+}

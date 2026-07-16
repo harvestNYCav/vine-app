@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "734c8ac722ece5fe182bcd36652c8ae8617124eccf03b6de16ae71c3244907ea",
+  "crops": {
+    "8": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        252.267
+      ]
+    },
+    "9": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        252.267,
+        584.0,
+        454.367
+      ]
+    },
+    "10": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        454.367,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        257.067
+      ]
+    },
+    "12": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        257.067,
+        584.0,
+        456.767
+      ]
+    },
+    "13": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        456.767,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        254.667
+      ]
+    },
+    "23": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        254.667,
+        584.0,
+        523.967
+      ]
+    },
+    "24": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        523.967,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        271.467
+      ]
+    },
+    "26": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        271.467,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        297.867
+      ]
+    },
+    "30": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        297.867,
+        584.0,
+        538.367
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        538.367,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        254.667
+      ]
+    },
+    "33": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        254.667,
+        584.0,
+        451.967
+      ]
+    },
+    "34": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        451.967,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "8": {
+      "width": 1087,
+      "height": 308
+    },
+    "9": {
+      "width": 1070,
+      "height": 307
+    },
+    "10": {
+      "width": 1109,
+      "height": 400
+    },
+    "11": {
+      "width": 822,
+      "height": 308
+    },
+    "12": {
+      "width": 949,
+      "height": 307
+    },
+    "13": {
+      "width": 658,
+      "height": 307
+    },
+    "14": {
+      "width": 1109,
+      "height": 431
+    },
+    "22": {
+      "width": 748,
+      "height": 308
+    },
+    "23": {
+      "width": 989,
+      "height": 466
+    },
+    "24": {
+      "width": 1075,
+      "height": 339
+    },
+    "25": {
+      "width": 1119,
+      "height": 339
+    },
+    "26": {
+      "width": 765,
+      "height": 307
+    },
+    "29": {
+      "width": 971,
+      "height": 404
+    },
+    "30": {
+      "width": 933,
+      "height": 404
+    },
+    "31": {
+      "width": 928,
+      "height": 308
+    },
+    "32": {
+      "width": 915,
+      "height": 308
+    },
+    "33": {
+      "width": 834,
+      "height": 307
+    },
+    "34": {
+      "width": 1062,
+      "height": 308
+    },
+    "35": {
+      "width": 951,
+      "height": 404
+    }
+  },
+  "altText": {
+    "8": "Question 8. How does the author introduce the idea that the Purple code finally began to be understood? 8 A by indicating that many mathematicians were working on the messages B by explaining how a person noticed something interesting about the symbols C by indicating that the messages were created by a special machine D by explaining how a system was used to obtain signals from other countries",
+    "9": "Question 9. What is the purpose for including the information in paragraphs 5 through 7 in the article? 9 A to illustrate the relationship between different countries B to indicate a common naming method for codes C to indicate the importance of understanding secret messages D to illustrate the reasons why a global conflict occurred",
+    "10": "Question 10. Which claim by the author is best supported by evidence in the article? A “Many cryptanalysts were people who studied how languages worked” (paragraph 4) “... Grotjan was one of just a few women working at the highest levels of code breaking” B (paragraph 5) “The United States had not entered the war, but relations with Japan were becoming C more and more strained” (paragraph 7) “... the United States used a complex system to intercept the communications and break D » the codes” (paragraph 7)",
+    "11": "Question 11. What does the information in paragraphs 8 and 9 mainly illustrate? 11 A how coded messages were created using a special machine B why understanding coded messages was a difficult process C why cryptanalysts made guesses about coded messages D how coded messages were translated into a different language",
+    "12": "Question 12. How does paragraph 11 strengthen the author’s central claim? 12 A by explaining the value of decoded messages to the U.S. government B by referring to the places where coded messages originated C by describing how U.S. agencies built a cipher machine D by indicating the name given to messages obtained from cipher machines",
+    "13": "Question 13. What is the purpose of the illustration in the article? 13 A to show a device used to read coded messages B to explain how messages were coded C to show an example of a coded message D to explain why some messages were coded",
+    "14": "Question 14. Which detail from the article best reveals the importance of Grotjan’s discovery? “Their cries of “That’s it! ‘Whoopee!’ ‘Hooray!’ broke the silence of the room, which was A usually as quiet as a library.’ (paragraph 3) “Each symbol stood for a letter, but the letter it stood for changed as the machine moved B forward.” (paragraph 9) “... the SIS and U.S. Navy built a Purple cipher machine just like the decoding machines c used in Japanese embassies.” (paragraph 11) D “,.. Magic contributed enormously to the defeat of the enemy, greatly shortened the war, and saved many thousands of lives.” (paragraph 12)",
+    "22": "Question 22. What important idea do the authors develop in paragraph 3? A___ Classrooms should continue to be updated. B Some modern schools have a connection to the past. C Older buildings often lacked necessary conveniences. D —_ Methods of teaching can change over the years.",
+    "23": "Question 23. Read this sentence from paragraph 4. In Honeoye Falls, New York, there is a one-room schoolhouse where kids today can experience what it was like to be students in the late 19th century. Why is this detail important to the article? A __ Ithighlights the general popularity of historical attractions. B__It indicates that students are often interested in the history of education. C__It suggests the importance of preserving historical buildings. D It shows that a connection can be made with students from another time.",
+    "24": "Question 24. Traditions allow people to both honor the past and celebrate the present. Which detail from paragraph 6 best represents this idea? A “There are more than 500 varieties of lilacs and more than 1,200 lilac bushes . . ” B “It was beautifully landscaped with trees and shrubs. .” C_ “The park’s collection of lilacs originally started with 20 varieties in 1892” D “Since 1898, Rochester has held a Lilac Festival every May.”",
+    "25": "Question 25. In paragraph 9, what is the main way the authors indicate the importance of the Montauk Point 25 Lighthouse? A by referring to its status as the oldest lighthouse in the state B by describing how the lighthouse still provides assistance to ships C by explaining that the lighthouse now uses an automatic beacon D by mentioning the house attached to the lighthouse where families lived",
+    "26": "Question 26. How do the authors develop the idea of “legacy” in the article? 26 A by explaining the history that inspired traditions B by providing a chronological sequence of events C by contrasting various celebrations in the state D by referring to the dates when festivals began",
+    "29": "Question 29. Read this claim from paragraph 2. 29 Every lichen is a tiny team . . . Which detail from the article best supports this claim? A “lichen on a tree looks like a gray-green, mossy stain” (paragraph 1) B “the loose leaves or decaying logs from which they grew” (paragraph 9) C “the spores of a fungus and another that looked like an alga” (paragraph 10) D “makes food for both itself and the fungus” (paragraph 13)",
+    "30": "Question 30. Read the sentence from paragraph 4. “Plenty of people can draw,” he said, “but you . . . have observation.” Which detail from the article best supports this claim? A __ Theauthor highlights Potter’s ability to grow fungi in her kitchen. B The author refers to Potter’s attention to detail in her drawings. C__ The author explains that Potter enjoyed drawing from nature. D__ The author provides evidence that Potter contributed to science.",
+    "31": "Question 31. What is the most important way Charles McIntosh influenced Potter’s career? 31 A He provided Potter with different types of fungi to study. B He was familiar with the scientific names of fungi. C He was interested in the fungi paintings Potter made. D He enjoyed collecting fungi while he worked.",
+    "32": "Question 32. In paragraph 8, what does the phrase “the fungus starred the ground” mean? A The fungi were bright. B The fungi were tall. C The fungi were hidden. D The fungi were plentiful.",
+    "33": "Question 33. What do the details in paragraph 9 most reveal about Beatrix Potter? A __ She was curious about the world. B She was a famous artist. C__ She enjoyed outdoor adventures. D She thought nature should be left alone.",
+    "34": "Question 34. Which statement best describes how Potter responded when people doubted her findings? 34 A She argued with botanists until they agreed to listen to her. B She decided to write more papers for scientists about lichens. C She put her drawings of mushrooms on display for others to see. D She chose to spend more of her time working on stories for children.",
+    "35": "Question 35. Read the sentence from paragraph 10. 35 Potter also looked at lichens, which scientists grouped with the fungi. Which statement best represents the meaning of this sentence? A Scientists believed lichens and fungi were related. B Scientists had shown little interest in examining lichens. C Scientists wondered if lichens could live separately from algae. D Scientists had discovered algae makes food for itself and its partner."
+  }
+}

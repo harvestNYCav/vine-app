@@ -27,7 +27,7 @@ function BottomNavInner() {
     : pathname
   const activeMode = mode === 'math' || normalizedPathname.startsWith('/skills') || normalizedPathname.startsWith('/math')
     ? 'math'
-    : mode === 'ela'
+    : mode === 'ela' || normalizedPathname.startsWith('/ela/exams')
     ? 'ela'
     : null
 
@@ -46,7 +46,9 @@ function BottomNavInner() {
         {NAV_ITEMS.map(item => {
           const active = normalizedPathname === item.href ||
             normalizedPathname.startsWith(item.href + '/') ||
-            (item.href === '/modules' && normalizedPathname.startsWith('/math/exams'))
+            (item.href === '/modules' && (
+              normalizedPathname.startsWith('/math/exams') || normalizedPathname.startsWith('/ela/exams')
+            ))
           return (
             <a
               key={item.href}

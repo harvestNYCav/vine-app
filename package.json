@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
-    "test": "node --test tests/smoke.test.mjs && tsx --test tests/math-exams.test.ts",
+    "test": "node --test tests/smoke.test.mjs && node --conditions=react-server --import tsx --test tests/math-exams.test.ts tests/math-exam-access.test.ts tests/ela-exams.test.ts tests/ela-exam-access.test.ts tests/student-grade-settings.test.ts",
     "typecheck": "node -e \"const fs=require('fs');['.next/dev','.next/types'].forEach(path=>fs.rmSync(path,{recursive:true,force:true}))\" && tsc --noEmit"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
-    "bcryptjs": "^3.0.3",
     "@libsql/client": "^0.14.0",
+    "bcryptjs": "^3.0.3",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "jose": "^6.2.2",
@@ -20,6 +20,7 @@
     "next": "16.2.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {

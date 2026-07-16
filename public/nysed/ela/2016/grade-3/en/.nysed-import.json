@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        275.4
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        275.4,
+        584.0,
+        422.1
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        422.1,
+        584.0,
+        707.2
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        248.85
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        248.85,
+        584.0,
+        395.55
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        395.55,
+        584.0,
+        707.2
+      ]
+    },
+    "13": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "14": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        343.35
+      ]
+    },
+    "15": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        343.35,
+        584.0,
+        707.2
+      ]
+    },
+    "16": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "17": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        343.35
+      ]
+    },
+    "18": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        343.35,
+        584.0,
+        707.2
+      ]
+    },
+    "25": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "26": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        343.35
+      ]
+    },
+    "27": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        343.35,
+        584.0,
+        539.55
+      ]
+    },
+    "28": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        539.55,
+        584.0,
+        707.2
+      ]
+    },
+    "29": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        208.8
+      ]
+    },
+    "30": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        208.8,
+        584.0,
+        383.4
+      ]
+    },
+    "31": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        383.4,
+        584.0,
+        707.2
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 900,
+      "height": 458
+    },
+    "2": {
+      "width": 671,
+      "height": 300
+    },
+    "3": {
+      "width": 1195,
+      "height": 628
+    },
+    "4": {
+      "width": 1078,
+      "height": 405
+    },
+    "5": {
+      "width": 950,
+      "height": 298
+    },
+    "6": {
+      "width": 1195,
+      "height": 690
+    },
+    "13": {
+      "width": 1062,
+      "height": 305
+    },
+    "14": {
+      "width": 933,
+      "height": 303
+    },
+    "15": {
+      "width": 1196,
+      "height": 801
+    },
+    "16": {
+      "width": 1131,
+      "height": 296
+    },
+    "17": {
+      "width": 797,
+      "height": 300
+    },
+    "18": {
+      "width": 1160,
+      "height": 802
+    },
+    "25": {
+      "width": 811,
+      "height": 303
+    },
+    "26": {
+      "width": 929,
+      "height": 301
+    },
+    "27": {
+      "width": 713,
+      "height": 407
+    },
+    "28": {
+      "width": 1196,
+      "height": 366
+    },
+    "29": {
+      "width": 1084,
+      "height": 321
+    },
+    "30": {
+      "width": 1162,
+      "height": 359
+    },
+    "31": {
+      "width": 1195,
+      "height": 713
+    }
+  },
+  "altText": {
+    "1": "Question 1. Read these sentences from paragraphs 13 and 17 of the story. She wrote: The Case of the Big Stink. Inez wrote: Plan 1: Sniff out the stink. Which best describes why these lines are important to the story? A They show how the girls record their information. B They provide proof that Inez has the best ideas. C They give a clue that the story is about a dog. D They show that Inez wants to be a writer.",
+    "2": "Question 2. 3 In the story, which two items smell the same? A the curtains and the garbage can B the slippers and the counter C the table and the lamps D the sofa and the pillow",
+    "3": "Question 3. ‘In paragraphs 27 and 28, why does Izzy think the clue is important? A It shows why the smelly things are in the house. B It shows a way to connect all of the smelly things. C It shows that the girls need to look for more things that smell the same. D It shows that the girls have become good at finding the things that smell.",
+    "4": "Question 4. Read the sentence from paragraph 45 of the story. “Check out the area behind these bushes,” said Izzy. Which best describes the meaning of “check out” as it is used in the sentence? A search B write on C sit next to D stay away from",
+    "5": "Question 5. Which best describes the main idea of the story? A Three girls write in their notebook about a smelly dog. B Three girls try to discover where a bad smell comes from. C Three girls discover that some parts of the house are smelly. D Three girls help look for things in the house that smell the same.",
+    "6": "Question 6. Why do the girls most likely call themselves the “Private I's”? A because they want to keep a big secret B_ because they keep their information in a notebook C because they are all important and because of their ideas D because they are solving a mystery and because of their names",
+    "13": "Question 13. Which detail would be most important to include in a summary of the story? A Mary Jane is bringing her art project to school that day. B Mary Jane notices that her art leftovers are gone from the table. C Mary Jane thanks her mother for cleaning the table. D Mary Jane plans to eat some eggs and bacon for breakfast.",
+    "14": "Question 14. Why is paragraph 17 important to the rest of the story? A It introduces Smokey’s favorite piece of furniture. B It introduces a conflict between Josh and his mother. C It suggests that Josh knows where Smokey hides. D It gives the information that helps Mary Jane solve the problem.",
+    "15": "Question 15. Read these sentences from paragraph 19. She hopped out of her seat and ran into the next room. With a grunt, she slowly pulled out the heavy chair. Which words give the best clue for why Mary Jane grunts? A “hopped out” B “ran into” C “she slowly” D “heavy chair”",
+    "16": "Question 16. Which items suggest that Smokey has been taking things for a long period of time? A Mary Jane’s hair ribbons B bits of tissue paper C Josh’s piece of bacon D broken ice pop sticks",
+    "17": "Question 17. What does paragraph 22 mostly show about Mary Jane? A She is very creative. B She is an excellent student. C She enjoys art class. D She spends a lot of time on her assignments.",
+    "18": "Question 18. 1g What did Mary Jane make for her art project? A a sheet of glass with colored tissue paper B a fancy window with ice pop sticks and colored tissue paper C a tiny home with ice pop sticks and colored tissue paper D a bed frame with ice pop sticks",
+    "25": "Question 25. In paragraph 4, the word “vehicle” means something that A leads to questions B takes years to create C moves people and goods D encourages people to invent",
+    "26": "Question 26. Why was Nicolas Joseph Cugnot’s invention able to move by itself? A It used steam. B It had wheels. C It was very large. D It was very strong.",
+    "27": "Question 27. Read this sentence from paragraph 11. Yet they had drawbacks, too. The word “drawbacks” shows that the electric car A was not quickly accepted by the public B changed the way that people traveled C did not provide a perfect solution D used batteries for power",
+    "28": "Question 28. 2g How do paragraphs 10 through 15 support a main idea of the passage? A by discussing how several inventors improved cars B by listing the names of countries to show how far apart they are C by describing the condition of the streets to show the need for better roads D by showing that drivers had to be stopped because their cars were going too fast",
+    "29": "Question 29. The first gas-powered cars were an improvement on the electric car because the gas-powered cars A did not cost much B did not smell bad C were able to travel farther D made less noise when driven",
+    "30": "Question 30. How are paragraphs 14 through 17 connected? A They show a problem that existed and explain how Henry Ford solved it. B They describe the order of steps to move a Model T from the factory to the roads. C They compare the number of parts in a Model T to the number of parts in other cars. D They explain the effect of typical earnings on the people who worked for Henry Ford.",
+    "31": "Question 31. The headings divide the passage by the A uses for automobiles B changes in automobiles C inventors of automobiles D popularity of automobiles"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "9040c839cdaa09ef0946561edae9f21e30aea6897fe46ae31a4711f61f34654a",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        282.243
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        282.243,
+        584.0,
+        498.243
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        498.243,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        282.243
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        282.243,
+        584.0,
+        483.119
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        483.119,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "8": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "9": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "10": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "12": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        531.119
+      ]
+    },
+    "13": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        531.119,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "30": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "31": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "33": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "34": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 966,
+      "height": 381
+    },
+    "2": {
+      "width": 1032,
+      "height": 364
+    },
+    "3": {
+      "width": 655,
+      "height": 328
+    },
+    "4": {
+      "width": 972,
+      "height": 386
+    },
+    "5": {
+      "width": 770,
+      "height": 328
+    },
+    "6": {
+      "width": 833,
+      "height": 327
+    },
+    "7": {
+      "width": 901,
+      "height": 328
+    },
+    "8": {
+      "width": 902,
+      "height": 328
+    },
+    "9": {
+      "width": 866,
+      "height": 327
+    },
+    "10": {
+      "width": 972,
+      "height": 405
+    },
+    "11": {
+      "width": 968,
+      "height": 405
+    },
+    "12": {
+      "width": 968,
+      "height": 404
+    },
+    "13": {
+      "width": 1052,
+      "height": 328
+    },
+    "14": {
+      "width": 1106,
+      "height": 365
+    },
+    "29": {
+      "width": 695,
+      "height": 328
+    },
+    "30": {
+      "width": 872,
+      "height": 322
+    },
+    "31": {
+      "width": 930,
+      "height": 323
+    },
+    "32": {
+      "width": 938,
+      "height": 328
+    },
+    "33": {
+      "width": 858,
+      "height": 327
+    },
+    "34": {
+      "width": 933,
+      "height": 328
+    },
+    "35": {
+      "width": 912,
+      "height": 328
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which statement best expresses a theme of the story? A itis wise to work in secret if a dream is not supported by relatives. B Working with new people can be scary, but will become easier over time. Cc Beautiful objects can bring happiness, but they are often not worth the price. D Determination and creative thinking can help people overcome challenges.",
+    "2": "Question 2. In paragraph 1, what does the phrase “like a flame” help the reader to understand about 2 the cloth? A its size and how much it weighs B its color and how it moves C its temperature and its direction D its pattern and its use",
+    "3": "Question 3. What do the details in paragraph 3 show about Sali? 3 A She is thoughtful and creative. B She is greedy and demanding. C She is careful and ambitious. D She is strange and secretive.",
+    "4": "Question 4. What does paragraph 13 reveal about Sali’s point of view? 4 Sali is worried that all of her work will be wasted if she cannot complete A her project. Sali is eager to learn new skills so that she can take care of herself like B a grownup. Sali is delighted to keep her secret and surprise her family with her C new dlokibani. D Sali is unsure and does not have a detailed plan to have the dlokibani made.",
+    "5": "Question 5. What can the reader infer about the shopkeeper and the tailor? A They are clever and proud. B They are tense and distracted. C They are silly and foolish. D They are fair and generous.",
+    "6": "Question 6. How do paragraphs 7 and 17 contribute to the structure of the story? A They foreshadow an important choice Sali makes later. B They explain why Sali wants a new dress. C They show the actions Sali takes to solve her problem. D they provide details about the shopkeeper and the tailor.",
+    "7": "Question 7. Which quotation best supports a theme of the story? A “‘Why do you stand so long at the door?’ he asked.” (paragraph 6) B “*You’ve worked well for this cloth, Sali,’ he said.” (paragraph 11) C “Sali rushed straight home with her treasure.’ (paragraph 12) D “Then he started cutting the billows of orange fabric” (paragraph 19)",
+    "8": "Question 8. Which sentence bbeesstt represents a conflict between Guthrie and her father? 8 A Guthrie’s father is concerned when she begins flying at a young age. B Guthrie’s father thinks free-fall parachuting is too dangerous for her. C Guthrie’s father is worried about her becoming a race car driver. D Guthrie’s father insists she has to take private parachuting lessons.",
+    "9": "Question 9. Paragraphs 10 and 11 are important to the article because they 9 A describe to the reader how Guthrie drove around Long Island B inform the reader that Guthrie joined a local sports car club C explain to the reader how Guthrie began to win auto races D tell the reader that Guthrie was helped by a driver in Connecticut",
+    "10": "Question 10. Which quotation best reveals the author’s point of view? A “Tt was no surprise that Janet Guthrie excelled at one of the most dangerous sports on Earth. (paragraph 1) B “... the pro taught her how to pull the rip cord that opened the chute, how to absorb the shock after landing . .” (paragraph 7) “She flew whenever she could break away from her classes at the University of Michigan” (paragraph 8) D “To get into top physical shape for Vollstedt’s test, Guthrie did exercises...” (paragraph 19)",
+    "11": "Question 11. Which detail from the article represents Guthrie’s biggest challenge? A “Before long she taught herself how to take apart and rebuild its engine ..” (paragraph 12) B “.. finishing in some of the country’s most celebrated long-distance competitions.” (paragraph 14) Cc “..a secret test at the Ontario Motor Speedway near Los Angeles.” (paragraph 18) D “One day she lost her balance, landed hard on her left foot, and fell. .” (paragraph 19)",
+    "12": "Question 12. Which detail from the article bbeesstt represents Janet Guthrie? 12 “She had always loved adventure and daring new experiences.” A (paragraph 1) “Excited by her success, Guthrie attended a driving school in Connecticut.” B (paragraph 11) “In 1973, she won the North Atlantic Road Racing Championship.” C (paragraph 14) “Broken ankle and all, Guthrie stepped into an unfamiliar car.” D (paragraph 20)",
+    "13": "Question 13. In paragraph 20, what does Guthrie mean when she says, “It was like going to the moon”? A She thinks driving a fast car is quite exciting. B She believes racing can often be dangerous. C She thinks the speed of the car is frightening. D _ She believes racing is similar to space flight.",
+    "14": "Question 14. Which idea from the article does the title “ ‘Janet Guthrie: Lady in the Fast Lane’ from Profiles 14 in Sports Courage” bbeesstt support? A Guthrie was a hard worker and saved money to achieve her goals. B Guthrie was famous for participating in a race with a broken foot. C Guthrie was fearless at trying thrilling and challenging new activities. D Guthrie was determined to become a commercial pilot like her father.",
+    "29": "Question 29. What does “brewing” mean as it is used in paragraph 1? 29 A being studied B separating C developing D being encouraged",
+    "30": "Question 30. What is the meaning of the phrase “sops up” as it is used in paragraph 5? 30 A pushes back B takes in C dries off D cools down",
+    "31": "Question 31. Why is wind direction an important factor in the creation of lake-effect snow? A The wind direction can increase the amount of water taken into the air. B The wind direction can decrease the temperature of the air. Cc The wind direction can cause the water in a lake to become rough. D The wind direction can turn the water in a lake into ice.",
+    "32": "Question 32. What is the purpose of the information in paragraph 7? 32 A to explain how lake-effect snow is beneficial for an area B to provide details about how lake-effect snow is removed from streets C to compare how lake-effect snow impacts different cities near large lakes D to describe life in a place where lake-effect snow is common",
+    "33": "Question 33. The diagram adds new information to the article by showing that A lake-effect snow forms when cold air moves over warm water B heat and moisture rise up over the lake water to help form snow C clouds increase in size as lake-effect snow forms D__huge amounts of moisture fall to the ground in the form of snow",
+    "34": "Question 34. Which detail would be mmoosstt important to include in a summary of the article? 34 A People who live in areas with lake-effect snow rarely have days off. B Cold air and warm water are needed to form lake-effect snow. C Buffalo is a city that is used to dealing with lake-effect snow. D Lake Erie produces less lake-effect snow at certain times of the year.",
+    "35": "Question 35. Which sentence bbeesstt states a central idea of the article? 35 A Lake-effect snow is common in certain areas of the country. B Lake-effect snow can occur only for a short period of time each year. C Lake-effect snow requires a special set of conditions in order to occur. D Lake-effect snow can cause damage to power lines and trees."
+  }
+}

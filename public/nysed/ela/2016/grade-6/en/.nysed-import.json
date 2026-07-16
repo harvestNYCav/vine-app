@@ -1,0 +1,404 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+  "crops": {
+    "1": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        265.5
+      ]
+    },
+    "2": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        265.5,
+        584.0,
+        491.4
+      ]
+    },
+    "3": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        491.4,
+        584.0,
+        707.2
+      ]
+    },
+    "4": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        343.35
+      ]
+    },
+    "6": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        343.35,
+        584.0,
+        707.2
+      ]
+    },
+    "7": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        707.2
+      ]
+    },
+    "22": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "23": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        419.4
+      ]
+    },
+    "24": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        419.4,
+        584.0,
+        707.2
+      ]
+    },
+    "25": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        275.4
+      ]
+    },
+    "26": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        275.4,
+        584.0,
+        422.1
+      ]
+    },
+    "27": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        422.1,
+        584.0,
+        707.2
+      ]
+    },
+    "28": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        707.2
+      ]
+    },
+    "29": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "30": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        343.35
+      ]
+    },
+    "31": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        343.35,
+        584.0,
+        489.6
+      ]
+    },
+    "32": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        489.6,
+        584.0,
+        707.2
+      ]
+    },
+    "33": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        208.8
+      ]
+    },
+    "34": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        208.8,
+        584.0,
+        391.5
+      ]
+    },
+    "35": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        391.5,
+        584.0,
+        707.2
+      ]
+    },
+    "36": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "37": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        355.05
+      ]
+    },
+    "38": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        355.05,
+        584.0,
+        501.75
+      ]
+    },
+    "39": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        501.75,
+        584.0,
+        707.2
+      ]
+    },
+    "40": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        49.95,
+        584.0,
+        196.65
+      ]
+    },
+    "41": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        196.65,
+        584.0,
+        355.05
+      ]
+    },
+    "42": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        355.05,
+        584.0,
+        707.2
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1170,
+      "height": 432
+    },
+    "2": {
+      "width": 1170,
+      "height": 455
+    },
+    "3": {
+      "width": 1196,
+      "height": 478
+    },
+    "4": {
+      "width": 1021,
+      "height": 303
+    },
+    "5": {
+      "width": 972,
+      "height": 301
+    },
+    "6": {
+      "width": 1196,
+      "height": 809
+    },
+    "7": {
+      "width": 1171,
+      "height": 1453
+    },
+    "22": {
+      "width": 578,
+      "height": 297
+    },
+    "23": {
+      "width": 1104,
+      "height": 464
+    },
+    "24": {
+      "width": 1195,
+      "height": 634
+    },
+    "25": {
+      "width": 1130,
+      "height": 466
+    },
+    "26": {
+      "width": 1157,
+      "height": 294
+    },
+    "27": {
+      "width": 1192,
+      "height": 632
+    },
+    "28": {
+      "width": 1150,
+      "height": 1453
+    },
+    "29": {
+      "width": 793,
+      "height": 298
+    },
+    "30": {
+      "width": 1003,
+      "height": 300
+    },
+    "31": {
+      "width": 1036,
+      "height": 303
+    },
+    "32": {
+      "width": 1196,
+      "height": 477
+    },
+    "33": {
+      "width": 1107,
+      "height": 337
+    },
+    "34": {
+      "width": 1155,
+      "height": 382
+    },
+    "35": {
+      "width": 1187,
+      "height": 696
+    },
+    "36": {
+      "width": 1030,
+      "height": 298
+    },
+    "37": {
+      "width": 1055,
+      "height": 327
+    },
+    "38": {
+      "width": 938,
+      "height": 301
+    },
+    "39": {
+      "width": 1195,
+      "height": 450
+    },
+    "40": {
+      "width": 1047,
+      "height": 306
+    },
+    "41": {
+      "width": 1159,
+      "height": 329
+    },
+    "42": {
+      "width": 1195,
+      "height": 775
+    }
+  },
+  "altText": {
+    "1": "Question 1. Read this sentence from lines 10 and 11 of the story. I kicked and soared and pranced and whirled, stepped and twirled and spun and flew, tripped and skipped and skimmed and sailed, all over that stage. The author most likely includes this description of Kathleen’s dancing to A emphasize that the dance ends quickly B demonstrate Kathleen's desire for recognition C provide an image of a spirited performance D demonstrate Kathleen’s skills as a dancer",
+    "2": "Question 2. Read this sentence from lines 11 through 14 of the story. I hardly knew where I was, and I was completely oblivious to the audience, the strange hall, even the adjudicator, though I knew she must be out there somewhere in the blur of humanity beyond the stage, watching carefully and taking notes. What is the meaning of the phrase “oblivious to” as it is used in this sentence? A unaware of B confused by C scornful of D afraid of",
+    "3": "Question 3. What do lines 10 through 17 mostly show about Kathleen? A Her confidence in her abilities helps her to remember her routine. B Her delight in dancing allows her to briefly forget her concerns. C She tries to ignore the unfamiliar setting and the audience. D She avoids people who are critical about her appearance.",
+    "4": "Question 4. _ Lines 36 through 42 mainly develop a central idea of the story by revealing A the importance of being able to communicate effectively B_ that Kathleen has lost interest in the conversation because of her success C that Kathleen’s success is meaningful only if she can share it with her family D the significance of the support of family members even when they are absent",
+    "5": "Question 5. Which detail from the story best shows why Polly is important to Kathleen? A Polly can best describe Kathleen’s dance to her mam. B_ Polly allows Kathleen to receive praise from her teacher. C Polly made Kathleen’s dress using her own curtain fabric. D Polly inspired Kathleen to participate in the dance recital.",
+    "6": "Question 6. _ Read this sentence from lines 49 through 51 of the story. I kept on smiling, and at the same time I was trying to look around Mrs. Maguire’s bulk to see if I could catch a glimpse of Polly’s flying figure and wide smile. This sentence suggests that Kathleen A is surprised by her teacher’s presence B_ hopes to avoid chatting after her performance C is trying to be polite even though she is distracted D feels uncomfortable due to her teacher’s compliments",
+    "7": "Question 7. How does the author establish the point of view differently in lines 1 through 32 as compared to lines 33 through 61? A by portraying the narrator’s actions rather than sharing only the narrator’s feelings B_ by describing the narrator’s inner thoughts rather than sharing the inner thoughts of all the characters C by revealing the narrator’s intentions through description instead of using description to share the opinions of all the characters D by revealing the narrator’s thoughts only through description instead of through both description and dialogue",
+    "22": "Question 22. What does most of the poem describe? A the sounds of evening B animals preparing for nightfall C creatures hunting for food at night D the way the weather changes at sunset",
+    "23": "Question 23. Read lines 1 through 3 of the poem. Oh, pleasant eventide! Clouds on the western side Grow grey and greyer hiding the warm sun: Which words best describe the tone that the poet creates at the beginning of the poem? A concern for warmth B_ surprised alarm at day’s end C enthusiasm for the time of day D disapproval of the weather pattern",
+    "24": "Question 24. Read lines 6 and 7 of the poem. Then read this dictionary entry for “screen.” screen v. 1, to provide with a means to exclude insects 2. to shelter or conceal from view 3. to separate or sort 4. to use a method to determine suitability for a task Which definition best matches the meaning of “screened” as it is used in lines 6 and 7? A definition 1 B definition 2 C definition 3 D definition 4",
+    "25": "Question 25. Which lines provide the best evidence that events in nature are repeated over many years? A “The very squirrel leaps from bough to bough But lazily; pauses; and settles now Where once he stored his food.” (lines 8 through 10) B “Nibbling his fill he stops from time to time And listens where he sits.” (lines 19 and 20) C “Hark! that’s the nightingale, Telling the selfsame tale Her song told when this ancient earth was young:” (lines 31 through 33) D “Through all the hours of night until the dawn They sleep, forgetting fear.” (lines 44 and 45)",
+    "26": "Question 26. Which lines of the poem best demonstrate a gradual change that occurs during the evening? A lines 11 through 13 B lines 16 through 20 C lines 44 and 45 D lines 54 and 55",
+    "27": "Question 27. Which word best describes most of the evening activity mentioned in the poem? A busy B lonely C strained D cooperative",
+    "28": "Question 28. 2g Which lines best show that the night is different from the evening? A lines 1 through 5 B lines 11 through 15 C lines 26 through 30 D lines 56 through 60",
+    "29": "Question 29. Lines 6 through 14 are important to the article because they A show the potential effects of reading over time B highlight the value of scientific research C emphasize the challenges beginning readers face D provide examples of the problems scientists face",
+    "30": "Question 30. Why is it important for parents to encourage reading at a young age? A Children are more likely than adults to follow stories all the way through. B Children are more likely than adults to use technology for information. C Children have longer attention spans than college students and older adults. D Children can more easily grasp new ideas and abilities than adults.",
+    "31": "Question 31. What is the meaning of the word “simulate” as it is used in line 34 of the article? A to expect B to illustrate C to remember D to imitate",
+    "32": "Question 32. How do lines 45 through 53 illustrate possible ways to prevent brain disease? A by including the positive effects of certain activities on the brain B_ by describing how harmful substances form in the brain C by emphasizing the importance of brain scans for older adults D by proving that brain-based activities should be enjoyed by adults",
+    "33": "Question 33. How does the author support John Stein’s claim that “Reading exercises the whole brain” (line 26)? A by describing how other physical functions in the body work B_ by explaining which parts of the brain connect to senses C by explaining how functions of the brain are triggered D by describing a new method of creating pathways",
+    "34": "Question 34. Which statement best conveys the central idea of the article? A ‘Tm a novelist—I’ve written five books for teenagers—and it’s obviously in my interest to encourage people to read.” (lines 1 and 2) B “But there’s increasing evidence that reading for pleasure isn’t just another leisure pursuit, or merely a way of improving literacy skills and factual knowledge.” (lines 3 and 4) C “When we ‘get lost’ in a good book, we're doing more than simply following a story.” (line 28) D “As the old saying goes: ‘You're never alone with a book.” (lines 36 and 37)",
+    "35": "Question 35. What is the author’s main purpose for writing the article? A to encourage teens to read books that she has written B_ to convince people that reading is a worthwhile activity C to demonstrate why reading is a good form of entertainment D to show the negative effects of playing games instead of reading",
+    "36": "Question 36. How do lines 18 through 21 build on the idea introduced in lines 10 through 13? A by showing a relationship between DNA and plant growth B_ by showing how changes in DNA can help weeds as well as crops C by showing that weeds continue to resist farmers’ attempts to kill them D by showing how glyphosate is a long-term solution to the problem of weeds",
+    "37": "Question 37. What is the meaning of the phrase “impossibly improbable” as it is used in lines 21 through 23? A usually certain B highly unlikely C extremely slow D rarely noteworthy",
+    "38": "Question 38. Which conclusion is best supported by lines 27 through 32? A The DNA of weeds evolves rapidly. B Changes to the DNA of plants can occur by chance. C Greater quantities of glyphosate are required to kill weeds. D Plants evolve more quickly in some parts of the world than in others.",
+    "39": "Question 39. Which statement best describes the main idea of the section titled “Winning the lottery”? A Farmers used glyphosate for many years on millions of hectares of crops. B_ The odds of any one person winning the lottery are tiny. C Many people expected glyphosate to work forever. D Several kinds of weeds developed a resistance to glyphosate.",
+    "40": "Question 40. __ The section titled “Copy that” relates to the section titled “Winning the lottery” by A providing evidence to support an opinion B_ introducing new ways to solve a problem C providing an example to explain a main idea D describing events in the order that they take place",
+    "41": "Question 41. _ Lines 49 through 53 support which of the following claims? A The use of glyphosate should be stopped because the herbicide has proven to be a failure. B_ The only way to prevent weeds from resisting herbicides is to change the DNA of weeds. C Blocking sunlight from reaching the soil is the best way to prevent weed seeds from sprouting. D Fighting weeds is especially difficult because of their ability to evolve to resist threats.",
+    "42": "Question 42. What is the most likely reason the author describes the seed destructor in lines 64 through 67? A to support the idea that farmers need to use a variety of methods to fight weeds B_ to show how technology is the solution to uncontrollable weed growth C to explain why mechanical methods to fight weeds are better than herbicides D to describe how scientists have found the best way to protect desirable crops"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "b953e7edaf153661766717c8a68af12c1c51fd733f21b9ecb324bba9a1db1655",
+  "crops": {
+    "1": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        78.135,
+        575.0,
+        201.14
+      ]
+    },
+    "2": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        307.726,
+        575.0,
+        430.57
+      ]
+    },
+    "3": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        211.52
+      ]
+    },
+    "4": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        318.306,
+        575.0,
+        440.95
+      ]
+    },
+    "5": {
+      "sourcePage": 10,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        249.75
+      ]
+    },
+    "6": {
+      "sourcePage": 10,
+      "box": [
+        28.0,
+        354.536,
+        575.0,
+        622.05
+      ]
+    },
+    "7": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        78.296,
+        575.0,
+        201.14
+      ]
+    },
+    "8": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        75.496,
+        575.0,
+        196.85
+      ]
+    },
+    "9": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        302.636,
+        575.0,
+        422.309
+      ]
+    },
+    "10": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        528.095,
+        575.0,
+        649.449
+      ]
+    },
+    "11": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        75.496,
+        575.0,
+        196.85
+      ]
+    },
+    "12": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        302.636,
+        575.0,
+        423.99
+      ]
+    },
+    "13": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        224.07
+      ]
+    },
+    "14": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        329.856,
+        575.0,
+        451.21
+      ]
+    },
+    "15": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        73.575,
+        575.0,
+        194.929
+      ]
+    },
+    "16": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        300.716,
+        575.0,
+        422.069
+      ]
+    },
+    "17": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        526.855,
+        575.0,
+        649.209
+      ]
+    },
+    "18": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        264.35
+      ]
+    },
+    "19": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        370.136,
+        575.0,
+        491.49
+      ]
+    },
+    "20": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        239.05
+      ]
+    },
+    "21": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        344.836,
+        575.0,
+        516.55
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 1094,
+      "height": 265
+    },
+    "2": {
+      "width": 1094,
+      "height": 265
+    },
+    "3": {
+      "width": 1094,
+      "height": 290
+    },
+    "4": {
+      "width": 1094,
+      "height": 265
+    },
+    "5": {
+      "width": 1094,
+      "height": 375
+    },
+    "6": {
+      "width": 1094,
+      "height": 586
+    },
+    "7": {
+      "width": 1094,
+      "height": 265
+    },
+    "8": {
+      "width": 1094,
+      "height": 261
+    },
+    "9": {
+      "width": 1094,
+      "height": 261
+    },
+    "10": {
+      "width": 1094,
+      "height": 261
+    },
+    "11": {
+      "width": 1094,
+      "height": 261
+    },
+    "12": {
+      "width": 1094,
+      "height": 261
+    },
+    "13": {
+      "width": 1094,
+      "height": 318
+    },
+    "14": {
+      "width": 1094,
+      "height": 261
+    },
+    "15": {
+      "width": 1095,
+      "height": 261
+    },
+    "16": {
+      "width": 1095,
+      "height": 262
+    },
+    "17": {
+      "width": 1095,
+      "height": 263
+    },
+    "18": {
+      "width": 1094,
+      "height": 407
+    },
+    "19": {
+      "width": 1094,
+      "height": 261
+    },
+    "20": {
+      "width": 1094,
+      "height": 351
+    },
+    "21": {
+      "width": 1094,
+      "height": 374
+    }
+  },
+  "altText": {
+    "1": "Question 1. How do lines 1 through 3 most contribute to the article? A by demonstrating that the school day starts too early for many students B by describing a common and familiar experience for readers to relate to C by showing the technology around sleep issues for teenagers and adults D by asking readers to compare their morning routine to the one described in the article",
+    "2": "Question 2. The authors use the phrase “impaired concentration” in line 35 to mean that drivers are A irritated B injured C unconcerned D unfocused",
+    "3": "Question 3. The information presented by Jodi Mindell in lines 16 through 21 and lines 37 through 45 best supports the claim that A a lack of sleep affects the body and the mind B the body does most of its growing during sleep C a lack of sleep can lead to more arguments between people D researchers hope to understand the sleep habits of other species",
+    "4": "Question 4. How does the section “Taking a Toll” relate to the section “So Why Don’t Teens Sleep More”? A Both sections show how a situation has changed over time. B Both sections compare problems at home and school. C The first section describes effects, while the second section describes causes. D The first section describes a problem, while the second section describes solutions.",
+    "5": "Question 5. Which lines best support the authors’ idea that people do not take sleep deprivation seriously? A “On average, American teens get two hours less than the average 9.2 hours of sleep they need each night to function at their best.” (lines 8 and 9) B “You never brag about how much sleep you got. You only brag if you didn’t get very much.” (lines 14 and 15) C “So we kind of look at it [the need for sleep] in a backwards way.” (line 21) D “Many school districts are starting to pay attention to sleep researchers and are shifting their start times to later morning for middle school and high school students.” (lines 65 and 66)",
+    "6": "Question 6. Which evidence best supports the idea that teenagers could be happier and more successful in school if they got more sleep? A “Did you know that if you need an alarm clock to wake up in the morning, you’re probably sleep-deprived? Most teens don’t get enough sleep, according to Cornell University psychologist Dr. James B. Maas. ‘Almost all teenagers, as they approach puberty, become walking zombies because they are getting far too little sleep,’ Maas says.” (lines 4 through 7) B “Wolfson’s research into high school students and sleep revealed that kids who received C, D, and F grades in school usually slept 25 minutes less and went to bed 40 minutes later than kids who received A’s and B’s. Lack of sleep also makes people more likely to feel down or depressed.” (lines 28 through 31) C “They naturally fall asleep later at night than younger children, while needing to wake up earlier in the morning for school. When you go to bed late and wake up early, there just isn’t enough time for sleep.” (lines 62 through 64) D “Those extra two hours of sleep on Saturday and Sunday mornings can really help.” (lines 71 and 72)",
+    "7": "Question 7. Which evidence from the article supports the “Tips for a Good Night’s Sleep” section? A Amy Wolfson’s research into high school students in lines 28 through 31 B Mark Mahowald’s comments about safety in lines 33 and 34 C the National Sleep Foundation’s survey for teenagers in lines 51 through 59 D the authors’ remarks about sleep on the weekends in lines 71 through 78",
+    "8": "Question 8. The author demonstrates that Jim Simmons is qualified for Project Sea Hunt by A describing his previous work with animals B giving examples of his training techniques C explaining his choice of birds for the program D establishing his relationship with the government",
+    "9": "Question 9. The author uses the phrase “nose to beak” in line 24 to show that pigeons are A replacing people on rescue missions B using their senses to find people C working alongside people D being compared to people",
+    "10": "Question 10. Which evidence best shows that teaching animals is challenging? A Project Sea Hunt was halted after six years. B Most pigeons were not able to complete the training. C The trained birds did not find any missing people. D Jim Simmons had to switch from mammals to birds.",
+    "11": "Question 11. Jim Simmons used the pigeons in several official search and rescue missions because he A needed to determine the limits of their endurance B wanted to test their ability to work with humans C wanted to assess what they had learned in their training D planned to save many people with their skills",
+    "12": "Question 12. Which detail best suggests that Project Sea Hunt was a partial success? A The pigeons were selected for their good health and quick learning ability. B The project made scientists aware of the need for search and rescue missions. C The project helped allow helicopter pilots to concentrate on flying while searching. D The pigeons found objects that matched the colors they had been trained to identify.",
+    "13": "Question 13. Which detail would be most important to include in a summary of the article? A “He once trained bottlenose dolphins, pilot whales, and gooney birds.” (lines 7 and 8) B “These objects are often used by people to get help when they are stranded in the ocean.” (lines 14 and 15) C “. . . the pigeons could see objects from as far away as 2000 feet.” (lines 25 and 26) D “. . . the pilot was notified in the cockpit by a flashing light and could begin a closer search.” (lines 32 and 33)",
+    "14": "Question 14. The author conveys the purpose of the article by A describing pigeons’ searching abilities B indicating how few pigeons graduate training C telling how long the training takes D showing the success of the missions",
+    "15": "Question 15. How does the arrival of electricity propel the main events of the plot? A The arrival of electricity brings electrical poles to Grimes Lake Road. B The arrival of electricity makes it cheaper for Ruby to clothe her growing family. C The arrival of electricity forces Ruby to update the technology she uses for sewing. D The arrival of electricity causes Ruby to consider buying an electric sewing machine.",
+    "16": "Question 16. How do lines 11 through 18 help develop the plot of the passage? A They illustrate Ruby’s passion for her hobby. B They emphasize Ruby’s generosity toward children. C They prove the economic value of an electric sewing machine. D They demonstrate the benefits of an electric sewing machine.",
+    "17": "Question 17. The author most likely includes the event described in lines 23 through 34 to show that A metal sewing machines are still in use but no longer practical B the value of an object is not always related to its price C any object can be purchased for the right price D metal sewing machines can still be located",
+    "18": "Question 18. Read lines 31 through 33. I told him about Ruby—how she lives by herself and sews to keep busy, how she charges only six dollars to make a dress because the people she sews for don’t have a lot of money, how a lot of times she doesn’t charge a dime, how sewing is her ministry. The word “ministry” is connected to A Ruby’s purpose in life B what people expect of Ruby C why Ruby chooses to treat her customers fairly D Ruby’s desire to share the profits from her sewing",
+    "19": "Question 19. Which statement best shows how the author reveals the narrator’s opinion of Ruby? A by telling about the purchase of the first sewing machine in lines 8 through 10 B by including the explanation given to the man in lines 31 through 33 C by quoting Ruby’s words when she sees the replacement machine in line 39 D by describing Ruby’s reaction to the sewing machine in line 41",
+    "20": "Question 20. Which detail shows the main reward Ruby receives for her efforts? A “Her family would fall asleep under Ruby-made quilts, lulled to sleep by the Singer hum.” (lines 15 and 16) B “The Singer stitched maternity clothes, baby dresses, baptismal gowns and quilts for the cribs.” (lines 17 and 18) C “When Ruby heard the hum, she clapped her hands.” (line 41) D “Rachael called to say ‘Thank you’ and ‘I love you’ and ‘When can I see you again?’ ” (lines 48 and 49)",
+    "21": "Question 21. Read this sentence from lines 54 and 55. I’m grateful, too, for a woman who sews way into the night, who dispenses love one stitch at a time. The phrase “dispenses love one stitch at a time” mainly suggests that Ruby A is obsessed with her interest in sewing B approaches her sewing in a tender and patient way C shows her kindness for others through her sewing D divides her attention between sewing and her family"
+  }
+}

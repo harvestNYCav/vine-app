@@ -1,0 +1,180 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "d99f0e8d07cf840b77418fd20a6c7dcd9014dc48880717013957bf96c71e8082",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        241.243
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        241.243,
+        584.0,
+        469.243
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        469.243,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        445.067
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        445.067,
+        584.0,
+        702.372
+      ]
+    },
+    "19": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "20": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        438.243
+      ]
+    },
+    "21": {
+      "sourcePage": 16,
+      "box": [
+        28.0,
+        438.243,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        438.243
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        438.243,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 854,
+      "height": 321
+    },
+    "2": {
+      "width": 962,
+      "height": 428
+    },
+    "3": {
+      "width": 1111,
+      "height": 518
+    },
+    "4": {
+      "width": 850,
+      "height": 325
+    },
+    "5": {
+      "width": 857,
+      "height": 328
+    },
+    "6": {
+      "width": 756,
+      "height": 328
+    },
+    "19": {
+      "width": 1058,
+      "height": 328
+    },
+    "20": {
+      "width": 1103,
+      "height": 328
+    },
+    "21": {
+      "width": 798,
+      "height": 449
+    },
+    "22": {
+      "width": 936,
+      "height": 328
+    },
+    "23": {
+      "width": 747,
+      "height": 328
+    },
+    "24": {
+      "width": 730,
+      "height": 327
+    }
+  },
+  "altText": {
+    "1": "Question 1. What does the word “assistant” mean as it is used in paragraph 2? A shelper B leader C neighbor D friend",
+    "2": "Question 2. Which sentence from the passage shows a cause and effect relationship? A “But there is one parrot who speaks more than a hundred words and actually understands their meanings.’ (paragraph 1) B “Teaching Alex to speak words that he understands has let Irene talk to him directly.’ (paragraph 3) Cc “In this way, Irene is finding out what sorts of things Alex’s brain can do? (paragraph 3) D “He can also make comparisons, such as bigger or smaller and same or different, between objects.” (paragraph 4)",
+    "3": "Question 3. Read this sentence from paragraph 4. Alex can identify over forty kinds of objects, five different shapes, five materials, and seven colors, and he can use his knowledge to solve problems and answer questions. What is the best meaning of the word “identify” as used in this sentence? A feel B_lookat C pick up D _ recognize",
+    "4": "Question 4. How does the photograph add to the information in the passage? A It shows one way that Irene works with Alex. B__It shows that Irene does not talk with Alex. C It shows that Alex is able to count objects. D _ It shows the few objects that Alex cannot name.",
+    "5": "Question 5. Which part of the passage best shows how Alex feels about Irene? A paragraph 9 B paragraph 10 C paragraph 17 D paragraph 18",
+    "6": "Question 6. Which detail best supports the main idea of the passage? A Irene’ parrot is named Alex. B Alex can find a green object when asked. C Irene sometimes puts Alex on her shoulder. D Alex has a croaky parrot voice.",
+    "19": "Question 19. In paragraph 1, what does Stella mean when she says, “I feel like a spider in a web”? A _ Stella is untangling the strings. B Stella is confused by the strings. C Stella is surrounded by the tangled strings. D _ Stella is winding the strings around her spool.",
+    "20": "Question 20. In paragraphs 6 through 8, what do you know as the reader that Robby does not know? A __ Stella wishes she could trade her kite for a jellyfish kite. B Stella has to run to make her kite fly. C Paper plate kites are easier to fly than other kites. D Paper plate kites are easier to make than shark kites.",
+    "21": "Question 21. Read this sentence from paragraph 8. If she could catch a tiny breeze, her kite would fly. What does “catch” mean as it is used in the sentence? A _ and hold a moving object B __ bring in while hunting or fishing Cc get an illness D find and use",
+    "22": "Question 22. What happens after Stella trips over the shark’s fin and falls into the dirt? A Stella tries to fly her kite again. B Stella takes Robby’s paper plate home with her. C Stella’s kite points downward and refuses to fly. D _ Stella points at a kite shaped like a monster truck.",
+    "23": "Question 23. What do the details in paragraph 17 show about Robby? A _ Heisat the park most weekends. B He isa thoughtful friend to Stella. C He is better at flying kites than Stella. D He is creative with paper plates.",
+    "24": "Question 24. What happens because Stella cannot fly her shark kite? A Stella tries to fix her kite. B Stella notices a pink jellyfish kite. C Stella gets into the car with her mother. D _ Stella tries the paper plate kite."
+  }
+}

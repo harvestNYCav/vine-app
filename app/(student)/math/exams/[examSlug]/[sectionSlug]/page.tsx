@@ -8,6 +8,7 @@ import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
 import LangToggle from '../../../../LangToggle'
 import NYSEDAttribution from '../../NYSEDAttribution'
+import { studentCanAccessMathExam } from '@/lib/math-exam-access'
 
 export default async function MathExamSectionPage({
   params,
@@ -34,9 +35,9 @@ export default async function MathExamSectionPage({
       args: [session!.userId, exam.id, section.slug],
     }),
   ])
-  if (!tracks.includes('math')) notFound()
+  if (!studentCanAccessMathExam(tracks, settings, exam)) notFound()
 
-  const canUseSpanish = settings.mathSpanishEnabled
+  const canUseSpanish = settings.mathSpanishEnabled && exam.supportedLanguages.includes('es')
   const isSpanish = canUseSpanish && lang === 'es'
   const progress = progressResult.rows[0]
   const bestPercentage = progress && Number(progress.best_possible)
@@ -59,7 +60,7 @@ export default async function MathExamSectionPage({
         <div className="min-w-0 flex-1">
           <h1 className="text-xl font-bold text-green-800">{isSpanish ? section.title.es : section.title.en}</h1>
           <p className="text-sm text-gray-500">
-            {isSpanish ? 'Matemáticas de Nueva York - Grado 3' : 'New York Grade 3 Math'}
+            {isSpanish ? `Matemáticas de Nueva York - Grado ${exam.grade}` : `New York Grade ${exam.grade} Math`}
           </p>
         </div>
         {canUseSpanish && (
@@ -82,9 +83,7 @@ export default async function MathExamSectionPage({
               : (isSpanish ? 'intentos completados' : 'completed attempts')}
           </p>
           <p className="mt-1 text-xs text-green-700">
-            {isSpanish
-              ? 'Las respuestas escritas, cuando se incluyen, usan la autoevaluación del estudiante.'
-              : 'Written responses, when included, use learner self-assessment.'}
+            {isSpanish ? 'Las preguntas de opción múltiple se califican automáticamente.' : 'Multiple-choice questions are graded automatically.'}
           </p>
         </div>
       )}

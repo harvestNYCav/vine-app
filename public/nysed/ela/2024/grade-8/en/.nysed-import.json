@@ -1,0 +1,376 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "452bfde106eb2a5d73eb7ba0fe367664297075ecfb360c53f284c9102e913c22",
+  "crops": {
+    "15": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        250.662
+      ]
+    },
+    "16": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        250.662,
+        584.0,
+        446.762
+      ]
+    },
+    "17": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        446.762,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "19": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        503.138
+      ]
+    },
+    "20": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        503.138,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        515.862
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        515.862,
+        584.0,
+        706.532
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "30": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        543.914
+      ]
+    },
+    "31": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        543.914,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        251.862
+      ]
+    },
+    "33": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        251.862,
+        584.0,
+        459.962
+      ]
+    },
+    "34": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        459.962,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        253.062
+      ]
+    },
+    "37": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        253.062,
+        584.0,
+        461.162
+      ]
+    },
+    "38": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        461.162,
+        584.0,
+        702.372
+      ]
+    },
+    "39": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        253.062
+      ]
+    },
+    "40": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        253.062,
+        584.0,
+        465.938
+      ]
+    },
+    "41": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        465.938,
+        584.0,
+        702.372
+      ]
+    },
+    "42": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "15": {
+      "width": 1061,
+      "height": 306
+    },
+    "16": {
+      "width": 1097,
+      "height": 305
+    },
+    "17": {
+      "width": 915,
+      "height": 305
+    },
+    "18": {
+      "width": 1123,
+      "height": 429
+    },
+    "19": {
+      "width": 752,
+      "height": 306
+    },
+    "20": {
+      "width": 1113,
+      "height": 335
+    },
+    "21": {
+      "width": 875,
+      "height": 306
+    },
+    "22": {
+      "width": 980,
+      "height": 434
+    },
+    "23": {
+      "width": 1101,
+      "height": 337
+    },
+    "24": {
+      "width": 1112,
+      "height": 424
+    },
+    "25": {
+      "width": 1118,
+      "height": 429
+    },
+    "26": {
+      "width": 1067,
+      "height": 306
+    },
+    "29": {
+      "width": 1116,
+      "height": 429
+    },
+    "30": {
+      "width": 1105,
+      "height": 402
+    },
+    "31": {
+      "width": 736,
+      "height": 305
+    },
+    "32": {
+      "width": 1003,
+      "height": 306
+    },
+    "33": {
+      "width": 1037,
+      "height": 337
+    },
+    "34": {
+      "width": 1109,
+      "height": 306
+    },
+    "35": {
+      "width": 1135,
+      "height": 337
+    },
+    "36": {
+      "width": 1023,
+      "height": 306
+    },
+    "37": {
+      "width": 1131,
+      "height": 338
+    },
+    "38": {
+      "width": 880,
+      "height": 305
+    },
+    "39": {
+      "width": 792,
+      "height": 304
+    },
+    "40": {
+      "width": 1100,
+      "height": 339
+    },
+    "41": {
+      "width": 1079,
+      "height": 370
+    },
+    "42": {
+      "width": 1025,
+      "height": 306
+    }
+  },
+  "altText": {
+    "15": "Question 15. What tone does the phrase “I studied it obsessively” in paragraph 1 establish in the article? 15 A It creates curiosity by encouraging readers to consider becoming beekeepers. B It creates interest by showing the passion the author has for beekeeping. C It creates seriousness by showing readers how compelling beekeeping can become. D It creates suspense by suggesting how long the process is to become a beekeeper.",
+    "16": "Question 16. Paragraphs 2 through 4 develop the idea presented in paragraph 1 by 16 A explaining the reasons why the author finds beekeeping to be so complicated B detailing a range of things about beekeeping that attracted the author to the hobby C describing the steps the author followed to select the equipment for and build a beehive D summarizing the experience that led the author to become a successful beekeeper",
+    "17": "Question 17. Paragraph 7 contributes to a central idea of the article by demonstrating that 17 A bees prefer the climate of southern states B beekeeping requires learned knowledge and skills C bees need several days to adjust to a new hive D beekeeping is easier in areas that are hot and dry",
+    "18": "Question 18. Which sentence from the article best reveals the author’s enthusiasm for beekeeping as a hobby? “I wanted my hives to have a bit more style, and I had a can left over from painting the outside of my house.” (paragraph 3) “Once I received the bees I proceeded to install them into my freshly painted hive” B (paragraph 6) “Once I achieved that level of success and tasted the result, the honey, all of the setbacks and lessons were worth it” (paragraph 9) “T have never been too successful, but I have always harvested enough honey for myself and my friends” (paragraph 10)",
+    "19": "Question 19. In the author’s first two years of beekeeping, he was unable to 19 A get the bees to colonize his hive B maintain a positive attitude C keep the bees alive all year D harvest any honey",
+    "20": "Question 20. How does the author’s attitude toward beekeeping change over the course of the article? It shifts from excitement about the arrival of the beehive to defeat because of the dead A bees. B__It varies from confusion about how to proceed to contentment with the new hobby. C__Itshifts from eagerness to set up the apiary to embarrassment for his failures. D It varies from strong interest in the new project to satisfaction with his accomplishments.",
+    "21": "Question 21. Which statement best expresses a central idea of the article? 21 A Beekeeping is challenging, yet it yields rewards. B Few farmers are able to become successful beekeepers. C Beekeeping requires the purchase of special, expensive equipment. D Some farmers specialize in growing and selling bee colonies.",
+    "22": "Question 22. Read this sentence from paragraph 7. 22 Dawn showed a mean gray sea heading up into leaden gray clouds and a wind that moaned through the stays and rigging. What tone does this sentence create in the excerpt? A a tone of threat and danger B a tone of distrust and sadness C a tone of curiosity and confusion D a tone of reflection and longing",
+    "23": "Question 23. In paragraph 9, what is the effect of the phrase “slamming, rising, heeling, skidding, slamming 23 down again”? A It imitates the disorder of David’s thoughts during the storm. B It shows the persistent force of the storm on David and the Frog. C It emphasizes the repetitive nature of the waters along the Baja coast. D It illustrates the conditions in which the Frog was intended to sail.",
+    "24": "Question 24. Which detail best shows David's attitude toward his situation? “The storm might be days getting to him, might not come at all, and he didn’t have much A food and fishing wasn’t going that well” (paragraph 2) “,.. he brought her around, up into the wind until she was tacking northwest and B making a solid six knots.’ (paragraph 4) “More than once he was knocked off his feet by a wall of water . . . but he never let go of c the helm, rose and took it again and again . . ” (paragraph 8) “Tt was then that he saw the ship—a small, older ship, coming out of the dusk, aiming D almost at him but slightly off his bow, running with the wind and sea” (paragraph 11)",
+    "25": "Question 25. Which detail from the excerpt best supports the idea that David is an experienced sailor? 25 “He thought of turning and going back into the bay to ride it out but decided against it.” A (paragraph 2) “. . . he worked the helm, let her ease up . . . kept the speed between five and six knots, did B not run from the storm but into it, used it, rolled with it, absorbed it.” (paragraph 7) “. . . at one point he snarled, growled at the wind and sea—the helm in his gut, his arms C aching, his legs on fire . . .” (paragraph 9) “He came about and let the Frog sail closer, came up into the wind and stopped about D thirty yards away, rising and settling on the waves and swells.” (paragraph 14)",
+    "26": "Question 26. How does paragraph 16 contribute to a theme of the excerpt? 26 A by revealing that David’s family and friends are people who tend to think negatively B by including the name of David’s hometown to show where his trip began C by emphasizing that David has persevered and survived despite the dangerous storm D by including details about the location of the young man as he spoke to David",
+    "29": "Question 29. Which idea would be most important to include in a summary of the article? “The Serengeti is about the size of Vermont, so the scientists could not study the entire A area. Instead, they surveyed three regions . .” (paragraph 5) “The scientists looked at four possible causes: lions, parasites, illegal hunters (called B » poachers), and poor food supply.’ (paragraph 6) “To find out if lions had been killing more giraffes in recent years, the team looked at calf c survival rates and long-term records . . ” (paragraph 7) D “When the food supply is short, the environment supports fewer giraffes and the females have fewer calves” (paragraph 10)",
+    "30": "Question 30. Read this quotation from paragraph 11. “The Serengeti is one of Earth’s natural wonders,” she says. What is the effect of Dr. Strauss’s word choice in this quotation? A __ It indicates that Dr. Strauss considers this area a marvel. B__It suggests that Dr. Strauss wants to study the ecology of the area. C__ It shows that Dr. Strauss wants to strengthen the reputation of Tanzania. D___It demonstrates that Dr. Strauss considers the giraffe population level critical to the area.",
+    "31": "Question 31. What is the meaning of “rebound” as used in paragraph 12? 31 A return to a location B recover from a challenge C replace with something new D reveal a problem",
+    "32": "Question 32. Which sentence states a central idea of the article? 32 A Researchers are determining the reasons for changes in the giraffe population. B Environmentalists are distributing books to increase understanding of giraffes. C Adult giraffes are better equipped than calves to handle threats in the wild. D Giraffes are more challenging to study than other wild animals in Africa.",
+    "33": "Question 33. How does the author emphasize the significance of a food source to the Serengeti giraffe 33 population? A by describing the wide variety of foods the giraffes can choose from B by describing positive changes in the environment where the giraffes live C by explaining that female giraffes need plenty of food to sustain reproduction D by explaining that the giraffes have recently adapted to new diets",
+    "34": "Question 34. What benefit does Dr. Strauss’s research team offer to Tanzanians and the future of the giraffes? 34 A a chance to invent new methods for counting and keeping track of giraffe populations B a way to analyze nutrition sources for giraffes in challenging environments C a solution for keeping poachers out of protected giraffe environments D a new viewpoint on how to support endangered giraffe populations",
+    "35": "Question 35. Protecting Earth’s plants and animals is important to keep the environment balanced and healthy. 35 How do the details in the article support this idea? A by describing how scientific study influences diversity in the environment B by suggesting that one change can impact other parts of the environment C by arguing that the environment must be free of human influences to improve D by explaining how the environment will continue to naturally maintain animal variety",
+    "36": "Question 36. How do the details in paragraphs 1 through 3 help develop a central idea in the article? A They explain the events that strengthened the American army. B They establish the situation that made it easier to assist the war effort. C They explain the importance of religion to some people during the war. D They establish the reason the British located their headquarters in Philadelphia.",
+    "37": "Question 37. As used in paragraph 6, what does the phrase “sounds from the room pulled Lydia from her bed” 37 suggest about Lydia? A She senses the men must be discussing something very important. B She hopes the officers will meeting at her home in Philadelphia. C She worries that one of the buttonmold messages has been discovered. D She wonders if the officers are beginning to question her neutrality as a Quaker.",
+    "38": "Question 38. What important idea does the author develop in paragraphs 5 through 7? 38 A Lydia’s dedication to her family B Lydia’s willingness to risk her safety C Lydia’s tendency to do what she is asked D Lydia’s attitude about sharing her home",
+    "39": "Question 39. What is a motivation for Lydia’s actions in paragraphs 12 and 13? 39 A She wants to visit her son at White Marsh. B She believes Captain Craig knows her son. C She receives a message from her son. D She worries for her son’s life.",
+    "40": "Question 40. What is the effect of the phrase “In a soft, hushed voice” as used in paragraph 13? A The reader realizes that Lydia's trip has taken a toll on her physically. B The reader is reminded of the dangers at every point in a mission such as this. C__ The reader is informed about how women were expected to address leaders in the army. D The reader understands that Lydia has doubts as to whether she should have made the trip.",
+    "41": "Question 41. Which quotation most directly causes the events in paragraph 16? 41 A “When the officers arrived, Lydia let them in and went to bed.” (paragraph 6) B “She recognized him as a friend, Captain Charles Craig.” (paragraph 12) “When the British arrived at White Marsh, General Howe found the American troops C armed with cannons.” (paragraph 14) “Sternly, he asked if any of the others in her family were awake on the night of the D officer’s last meeting.” (paragraph 18)",
+    "42": "Question 42. How does the event in paragraph 20 relate to the details in paragraph 2? 42 A It shows that the British continue to hold a mistaken belief about the Darraghs. B It presents evidence that the British will lose against the American troops. C It suggests that the British believe they can learn something from Lydia Darragh. D It provides support for the idea that the British still plan to attack White Marsh."
+  }
+}

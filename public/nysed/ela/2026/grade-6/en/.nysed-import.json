@@ -1,0 +1,390 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "af7b7da4a4c7f75ad3e82f0f42cad7f4c068d693315ff1356bef1723cdd19ce1",
+  "crops": {
+    "1": {
+      "sourcePage": 6,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "2": {
+      "sourcePage": 6,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        438.243
+      ]
+    },
+    "3": {
+      "sourcePage": 6,
+      "box": [
+        28.0,
+        438.243,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "5": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        450.243
+      ]
+    },
+    "6": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        450.243,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        306.243
+      ]
+    },
+    "16": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        306.243,
+        584.0,
+        702.372
+      ]
+    },
+    "17": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        345.267
+      ]
+    },
+    "18": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        345.267,
+        584.0,
+        702.372
+      ]
+    },
+    "19": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "20": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        507.119
+      ]
+    },
+    "21": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        507.119,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        252.267
+      ]
+    },
+    "23": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        252.267,
+        584.0,
+        447.167
+      ]
+    },
+    "24": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        447.167,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        253.467
+      ]
+    },
+    "26": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        253.467,
+        584.0,
+        478.343
+      ]
+    },
+    "27": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        478.343,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "30": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        490.343
+      ]
+    },
+    "31": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        490.343,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        246.243
+      ]
+    },
+    "33": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        246.243,
+        584.0,
+        483.119
+      ]
+    },
+    "34": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        483.119,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 1118,
+      "height": 308
+    },
+    "2": {
+      "width": 937,
+      "height": 308
+    },
+    "3": {
+      "width": 899,
+      "height": 307
+    },
+    "4": {
+      "width": 903,
+      "height": 308
+    },
+    "5": {
+      "width": 1118,
+      "height": 339
+    },
+    "6": {
+      "width": 1003,
+      "height": 307
+    },
+    "7": {
+      "width": 979,
+      "height": 308
+    },
+    "15": {
+      "width": 968,
+      "height": 436
+    },
+    "16": {
+      "width": 1066,
+      "height": 428
+    },
+    "17": {
+      "width": 1093,
+      "height": 528
+    },
+    "18": {
+      "width": 1115,
+      "height": 463
+    },
+    "19": {
+      "width": 979,
+      "height": 308
+    },
+    "20": {
+      "width": 1118,
+      "height": 430
+    },
+    "21": {
+      "width": 1135,
+      "height": 369
+    },
+    "22": {
+      "width": 800,
+      "height": 308
+    },
+    "23": {
+      "width": 1018,
+      "height": 307
+    },
+    "24": {
+      "width": 977,
+      "height": 435
+    },
+    "25": {
+      "width": 893,
+      "height": 308
+    },
+    "26": {
+      "width": 1056,
+      "height": 371
+    },
+    "27": {
+      "width": 892,
+      "height": 307
+    },
+    "29": {
+      "width": 992,
+      "height": 405
+    },
+    "30": {
+      "width": 736,
+      "height": 307
+    },
+    "31": {
+      "width": 999,
+      "height": 307
+    },
+    "32": {
+      "width": 1040,
+      "height": 308
+    },
+    "33": {
+      "width": 1118,
+      "height": 401
+    },
+    "34": {
+      "width": 670,
+      "height": 307
+    },
+    "35": {
+      "width": 861,
+      "height": 308
+    }
+  },
+  "altText": {
+    "1": "Question 1. In paragraphs 3 through 5, how does the narrator’s opinion affect the description of the theater? A The narrator believes the theater is confusing and is glad to have a guided tour. B__The narrator believes the theater is boring, so she considers sliding down the banister. C The narrator believes the theater is unwelcoming because children are forbidden. D The narrator believes the theater is grand, so she describes its structures and elegance.",
+    "2": "Question 2. As used in paragraph 11, what does the word “awed” suggest about Aunt Sally? 2 A She is distracted by the activity in the theater. B She is amazed by the magnificence of the place. C She is bothered by the patterns on the wallpaper. D She is embarrassed by the comments of the narrator.",
+    "3": "Question 3. What do the details in paragraphs 10 through 12 reveal about the narrator? A __ She is from a small town that is less busy than San Francisco. B___ She wishes she had dressed more nicely for the theater. C __ She often visits the city of San Francisco. D She admires all the objects in the theater.",
+    "4": "Question 4. What is the meaning of the word “dispatched” as it is used in paragraph 14? 4 A made to leave the theater B ordered to speak quietly C asked to join the performance D told to listen carefully",
+    "5": "Question 5. Music can be a powerful force for some people. How do the details in paragraphs 15 through 18 5 support this idea in the story? A by showing the audience’s reaction to Caruso’s appearance B by telling where Caruso stands during the performance C by describing the narrator’s reaction to Caruso’s singing D by highlighting how Caruso walks to the center of the stage",
+    "6": "Question 6. Which detail represents a turning point in the direction of the story? A The cashier gives pieces of paper to the narrator, Aunt Sally, and Mr. Steinberg. B__ The theater guide leads the guests to the foot of a wide, fancy staircase. C Mr. Caruso walks onto the stage and begins to sing. D Mr Steinberg leads the narrator and Aunt Sally to their seats.",
+    "7": "Question 7. Which detail would be most important to include in a summary of the story? A The narrator and Aunt Sally attend an opera rehearsal with Mr. Steinberg. B The narrator wonders if Aunt Sally also wants to slide down the banister. C Aunt Sally tells the narrator to think about past guests of the opera house. D_ Aunt Sally and Mr. Steinberg sit on either side of the narrator in the balcony.",
+    "15": "Question 15. Read this sentence from paragraph 5. When a baby elephant first arrives at the orphanage nursery, one of the biggest problems it faces is grief. What does the use of the word “grief” in the article show about baby elephants? A They have strong emotions. B They are unable to be cared for by humans. C They have difficulty bonding with caretakers. D___ They must learn to drink from a bottle.",
+    "16": "Question 16. Which sentence best supports the author's indication that raising baby elephants is a great responsibility? “They've been rescuing orphan elephants and successfully reintroducing them to the A wild for more than 25 years.’ (paragraph 2) “When a baby elephant first arrives at the orphanage nursery, one of the biggest problems it faces is grief” (paragraph 5) “They spend every hour—waking and sleeping—with the little orphans, forming a Cc lifelong friendship.” (paragraph 5) D “Sometimes they have to teach a baby how to drink from a bottle” (paragraph 6)",
+    "17": "Question 17. Read this sentence from paragraph 5. 17 Elephants are highly intelligent, loving family members. Which detail from the article best supports this claim? “. . . healthy elephants can live 70 years or longer, and their development is remarkably A similar to ours.” (paragraph 3) “. . . a baby elephant will stand under its mother and rest its trunk on her body as it B nurses with its mouth.” (paragraph 6) “. . . it’s ready to move from the nursery to Tsavo National Park, where it will eventually C be released into the wild elephant community.” (paragraph 9) “. . . previously released orphans welcome and befriend the newcomers and help teach D them proper elephant behavior.” (paragraph 10)",
+    "18": "Question 18. Which sentence from the article best shows that orphaned elephants often form long-term relationships with human keepers? “It has to be taught how to behave and communicate—even how to use its trunk, which A babies sometimes trip over while walking” (paragraph 4) “As they get more comfortable, the babies begin to wind their trunks around the keepers B instead.” (paragraph 6) c “Not only is the mud fun to play in, but the babies learn that a nice coating of gooey mud can cool them off on a hot day’ (paragraph 8) D “Tt never forgets its human family, though, and will often visit, helping to welcome the newest orphans.” (paragraph 11)",
+    "19": "Question 19. How does paragraph 11 provide support for a central idea of the article? 19 A by identifying the age that is appropriate for orphan elephants to be released B by describing the way older elephants will welcome new orphans into a herd C by explaining why elephants are returned to the same stockade each night D by showing that baby elephants make strong connections when cared for",
+    "20": "Question 20. In the article, what is the main way the author develops the role of the caretakers? 20 by comparing the way elephants are treated in different parts of the world to the way they A are treated in Kenya by providing examples of the activities that orphaned elephants experience while living B at the Wildlife Trust by describing how orphan elephants are moved from the Wildlife Trust to Tsavo National C Park when they are a year old by explaining how the Wildlife Trust started its mission of saving orphaned elephants D several years before",
+    "21": "Question 21. According to a well-known science professor, “Empathy is the ability to share and understand the 21 feelings of another.” How does the author develop this idea in the article? A by describing the process that orphaned elephants must go through to find a new herd B by including detailed descriptions of the activities of baby elephants at a national park by describing how caretakers imitate elephant behaviors to help baby elephants C experience love D by including information about the daily physical needs of rescued orphaned elephants",
+    "22": "Question 22. How is John Muir first introduced in paragraph 1 of the article? 22 A with a story about his life B with a listing of his accomplishments C with an example that shows the impact of his work D with a comparison between him and other conservationists",
+    "23": "Question 23. What is the main way paragraphs 2 and 3 contribute to the organization of the article? 23 A by providing biographical information about Muir B by giving examples of what inspired Muir to study nature C by sharing stories that come from Muir’s writings D by highlighting Muir’s opinions about the importance of nature",
+    "24": "Question 24. Read this sentence from paragraph 5. Often, he carried “only a tin cup, a handful of tea, a loaf of bread” and a journal. What can the reader conclude about Muir from this sentence? A He was often poorly prepared for his trips. B _He usually preferred to be by himself. C He chose to live as simply as possible. D He made sacrifices to study nature.",
+    "25": "Question 25. In paragraph 6, what is the main effect of the author’s word choice? 25 A to emphasize the number of glaciers found in Yosemite B to indicate the importance of the lectures Muir gave about Yosemite C to highlight the great size of some natural features in Yosemite D to illustrate the popularity of the articles Muir wrote about Yosemite",
+    "26": "Question 26. Which detail best expresses a central idea of the article? 26 A “His love of nature and his writings inspired others to take action . . .” (paragraph 1) “. . . he became restless and decided to explore the world and study nature . . .” B (paragraph 3) C “From there, he headed eastward to see the wilderness . . .” (paragraph 4) “. . . newspaper articles gave him a large audience interested in learning . . .” D (paragraph 6)",
+    "27": "Question 27. How did Muir’s experience at a carriage factory most affect his life? 27 A It gave him a reason to leave college and explore the world. B It taught him about the hardships associated with certain jobs. C It showed him the importance of choosing to live in different places. D It made him think carefully about how he wanted to spend his time.",
+    "29": "Question 29. Read this sentence from paragraph 7. 29 Pretty soon Audie Brayburn was considered an Honorary Swamp Critter. Which important idea does the author develop in this sentence? A Audie has not told many people that he went to the swamp. B Audie seems to belong in his surroundings in the swamp. C Audie becomes interested in other animals in the swamp. D Audie does not remember how to get out of the swamp.",
+    "30": "Question 30. The author’s word choice in paragraph 9 affects the story by A __ introducing an anxious tone B__ introducing an excited tone C creating a playful tone D creating an impatient tone",
+    "31": "Question 31. In paragraph 11, the phrase “keeping the beautiful bird within earshot” suggests that 31 A Audie needs to hear the woodpecker to locate it B Audie hopes that hunters will leave the woodpecker alone C Audie wants to avoid frightening the woodpecker D Audie thinks that the song of the woodpecker is pleasant",
+    "32": "Question 32. How does paragraph 12 relate to paragraph 16? 32 A Paragraph 12 introduces a new setting that is further described in paragraph 16. B Paragraph 12 describes a decision that the main character regrets in paragraph 16. C Paragraph 12 mentions an event that is described in a flashback in paragraph 16. D Paragraph 12 foreshadows an event that begins to occur in paragraph 16.",
+    "33": "Question 33. Which sentence best shows the rising action in the story? “From the time he was fifteen until he turned twenty, he worked for a bakery in southeast A Houston, (paragraph 2) “He had never seen so many old trees, including dead trees that were still standing, B perfect trees for woodpecker nests.” (paragraph 5) C “Only one creature on the entire planet made that sound, only one” (paragraph 10) D “Then he waved the photo in the air until it dried, and slipped it into the ammo can” (paragraph 16)",
+    "34": "Question 34. Which statement best expresses a theme of the story? A __ Being alone in nature can relieve stress. B__ Trying a new activity is often rewarding. C Certain locations are potentially dangerous. D___ Some people are driven by their interests.",
+    "35": "Question 35. How does the author mainly convey Audie’s character in the story? 35 A by allowing the reader to understand the reasons for his tools B by describing his choices and actions to the reader C by helping the reader understand some of his childhood interests D by sharing his thoughts and concerns with the reader"
+  }
+}

@@ -7,7 +7,9 @@ import { redirect } from 'next/navigation'
 import { localDateKey } from '@/lib/dates'
 import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import HomeGreeting from './HomeGreeting'
-import { MATH_EXAMS } from '@/content/math-exams'
+import { getMathExamsForGrade } from '@/content/math-exams'
+import { getElaExamsForGrade } from '@/content/ela-exams'
+import { getStudentSettings } from '@/lib/student-settings'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -36,22 +38,28 @@ function getStreak(activityLog: Array<{ date: string }>): number {
 
 export default async function HomePage() {
   const session = await getSession()
+  if (!session) redirect('/')
+  if (session.role === 'tutor') redirect('/tutor')
+  if (session.role === 'admin') redirect('/admin')
   const db = await getDb()
 
-  const tracks = await getStudentTracks(db, session!.userId)
+  const tracks = await getStudentTracks(db, session.userId)
   if (tracks.length === 0) redirect('/tracks')
-  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session!.userId)
+  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session.userId)
   const visibleModules = filterModulesByTracks(ALL_MODULES, tracks).filter(mod => taughtSlugs.has(mod.slug))
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
   const hasMath = tracks.includes('math')
+  const hasEla = tracks.includes('ela')
+  const settings = await getStudentSettings(db, session.userId)
 
-  const [mpResult, alResult, vmResult, mathResult, msResult, examProgressResult] = await Promise.all([
-    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT started_at FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [session!.userId] }),
-    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM math_exam_section_progress WHERE user_id = ?', args: [session!.userId] }),
+  const [mpResult, alResult, vmResult, mathResult, msResult, examProgressResult, elaExamProgressResult] = await Promise.all([
+    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session.userId] }),
+    db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [session.userId] }),
+    db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT started_at FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [session.userId] }),
+    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM math_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM ela_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
   ])
 
   type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null }
@@ -66,8 +74,22 @@ export default async function HomePage() {
   const mathProgressRow = mathResult.rows[0] as unknown as { total_problems: number; total_correct: number; diagnostic_done: number } | undefined
   type ExamProgressRow = { exam_id: string; section_slug: string; completed_at: number | null }
   const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
-  const currentExam = MATH_EXAMS[0]
-  const completedExamSections = examProgress.filter(row => row.exam_id === currentExam.id && row.completed_at).length
+  const currentExam = getMathExamsForGrade(settings.gradeLevel)[0]
+  const completedExamSections = currentExam
+    ? examProgress.filter(row => row.exam_id === currentExam.id && row.completed_at).length
+    : 0
+  const elaExamProgress = elaExamProgressResult.rows as unknown as ExamProgressRow[]
+  const currentElaExam = getElaExamsForGrade(settings.gradeLevel)[0]
+  const completedElaExamSections = currentElaExam
+    ? (() => {
+        const sectionSlugs = new Set(currentElaExam.sections.map(section => section.slug))
+        return elaExamProgress.filter(row =>
+          row.exam_id === currentElaExam.id
+          && sectionSlugs.has(row.section_slug)
+          && row.completed_at
+        ).length
+      })()
+    : 0
 
   const streak = getStreak(activityLog)
   const completedModules = moduleProgress.filter(m => m.homework_completed_at && visibleModuleSlugs.has(m.module_slug)).length
@@ -93,7 +115,7 @@ export default async function HomePage() {
       <div className="flex justify-between items-start mb-6">
         <div>
           <HomeGreeting />
-          <h1 className="text-2xl font-bold text-green-800">{session!.name} 👋</h1>
+          <h1 className="text-2xl font-bold text-green-800">{session.name} 👋</h1>
         </div>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1 bg-orange-100 px-3 py-1.5 rounded-full">
@@ -151,18 +173,65 @@ export default async function HomePage() {
               <span className="text-gray-300 text-lg">→</span>
             </div>
           </a>
-          <a href={`/vine-app/math/exams/${currentExam.slug}`} className="block">
-            <div className="flex items-center justify-between rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-4 shadow-sm">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🗽</span>
-                <div>
-                  <p className="text-sm font-semibold text-gray-800">New York Grade 3 Math</p>
-                  <p className="text-xs text-gray-500">{completedExamSections}/{currentExam.sections.length} exam sections completed</p>
+          {currentExam ? (
+            <a href={`/vine-app/math/exams/${currentExam.slug}`} className="block">
+              <div className="flex items-center justify-between rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-4 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🗽</span>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-800">New York Grade {currentExam.grade} Math · {currentExam.year}</p>
+                    <p className="text-xs text-gray-500">{completedExamSections}/{currentExam.sections.length} exam sections completed</p>
+                  </div>
                 </div>
+                <span className="text-gray-300 text-lg">→</span>
               </div>
-              <span className="text-gray-300 text-lg">→</span>
+            </a>
+          ) : (
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
+              <p className="text-sm font-semibold text-amber-800">
+                {settings.gradeLevel === null
+                  ? 'Your math grade has not been assigned yet.'
+                  : `No Grade ${settings.gradeLevel} NYSED releases are available.`}
+              </p>
+              <p className="mt-1 text-xs text-amber-700">
+                {settings.gradeLevel === null
+                  ? 'Ask an admin to choose Grade 3–8 so your NYSED lessons can appear.'
+                  : 'Please check back after the catalog is updated.'}
+              </p>
             </div>
-          </a>
+          )}
+        </div>
+      )}
+
+      {hasEla && (
+        <div className="mb-4">
+          {currentElaExam ? (
+            <a href={`/vine-app/ela/exams/${currentElaExam.slug}`} className="block">
+              <div className="flex items-center justify-between rounded-2xl border border-purple-100 bg-gradient-to-r from-purple-50 to-white p-4 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">📖</span>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-800">New York Grade {currentElaExam.grade} ELA · {currentElaExam.year}</p>
+                    <p className="text-xs text-gray-500">{completedElaExamSections}/{currentElaExam.sections.length} passage lessons completed</p>
+                  </div>
+                </div>
+                <span className="text-gray-300 text-lg">→</span>
+              </div>
+            </a>
+          ) : (
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
+              <p className="text-sm font-semibold text-amber-800">
+                {settings.gradeLevel === null
+                  ? 'Your ELA grade has not been assigned yet.'
+                  : `No Grade ${settings.gradeLevel} NYSED ELA releases are available.`}
+              </p>
+              <p className="mt-1 text-xs text-amber-700">
+                {settings.gradeLevel === null
+                  ? 'Ask an admin to choose Grade 3–8 so your NYSED ELA lessons can appear.'
+                  : 'Please check back after the catalog is updated.'}
+              </p>
+            </div>
+          )}
         </div>
       )}
 

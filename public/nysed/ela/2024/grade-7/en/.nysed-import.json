@@ -1,0 +1,376 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "10462cd9a66abc6cfbefe0a17f9bcd830342700ce9d8428244c6c04cb55d94ea",
+  "crops": {
+    "15": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        251.862
+      ]
+    },
+    "16": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        251.862,
+        584.0,
+        452.738
+      ]
+    },
+    "17": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        452.738,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        278.262
+      ]
+    },
+    "19": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        278.262,
+        584.0,
+        474.362
+      ]
+    },
+    "20": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        474.362,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        319.038
+      ]
+    },
+    "23": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        319.038,
+        584.0,
+        567.914
+      ]
+    },
+    "24": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        567.914,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        263.862
+      ]
+    },
+    "26": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        263.862,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "30": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        499.538
+      ]
+    },
+    "31": {
+      "sourcePage": 27,
+      "box": [
+        28.0,
+        499.538,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        263.862
+      ]
+    },
+    "33": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        263.862,
+        584.0,
+        452.738
+      ]
+    },
+    "34": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        452.738,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    },
+    "36": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        243.462
+      ]
+    },
+    "37": {
+      "sourcePage": 32,
+      "box": [
+        28.0,
+        243.462,
+        584.0,
+        702.372
+      ]
+    },
+    "38": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        350.938
+      ]
+    },
+    "39": {
+      "sourcePage": 33,
+      "box": [
+        28.0,
+        350.938,
+        584.0,
+        702.372
+      ]
+    },
+    "40": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        307.038
+      ]
+    },
+    "41": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        307.038,
+        584.0,
+        543.914
+      ]
+    },
+    "42": {
+      "sourcePage": 34,
+      "box": [
+        28.0,
+        543.914,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "15": {
+      "width": 978,
+      "height": 306
+    },
+    "16": {
+      "width": 855,
+      "height": 305
+    },
+    "17": {
+      "width": 768,
+      "height": 305
+    },
+    "18": {
+      "width": 1107,
+      "height": 366
+    },
+    "19": {
+      "width": 880,
+      "height": 306
+    },
+    "20": {
+      "width": 956,
+      "height": 306
+    },
+    "21": {
+      "width": 968,
+      "height": 306
+    },
+    "22": {
+      "width": 1111,
+      "height": 466
+    },
+    "23": {
+      "width": 1115,
+      "height": 429
+    },
+    "24": {
+      "width": 792,
+      "height": 299
+    },
+    "25": {
+      "width": 1110,
+      "height": 337
+    },
+    "26": {
+      "width": 800,
+      "height": 304
+    },
+    "29": {
+      "width": 975,
+      "height": 434
+    },
+    "30": {
+      "width": 627,
+      "height": 306
+    },
+    "31": {
+      "width": 793,
+      "height": 305
+    },
+    "32": {
+      "width": 1102,
+      "height": 336
+    },
+    "33": {
+      "width": 1086,
+      "height": 306
+    },
+    "34": {
+      "width": 805,
+      "height": 304
+    },
+    "35": {
+      "width": 883,
+      "height": 306
+    },
+    "36": {
+      "width": 950,
+      "height": 306
+    },
+    "37": {
+      "width": 1112,
+      "height": 429
+    },
+    "38": {
+      "width": 1115,
+      "height": 526
+    },
+    "39": {
+      "width": 1093,
+      "height": 305
+    },
+    "40": {
+      "width": 1104,
+      "height": 429
+    },
+    "41": {
+      "width": 1075,
+      "height": 402
+    },
+    "42": {
+      "width": 1045,
+      "height": 305
+    }
+  },
+  "altText": {
+    "15": "Question 15. Which statement best expresses a central idea of paragraph 2? 15 A Sticks and rudder pedals were used in both cockpits of the airplane. B People learned how to fly airplanes by observing the actions of the pilot. C Metal tailskids would create friction to slow the airplanes as they landed. D Pilots maneuvered their airplanes by using vertical sticks and rudder pedals.",
+    "16": "Question 16. What do the details in paragraph 7 most reveal about Bessie Coleman? 16 A her preference for planes made in France B her desire to share her knowledge with others C her desire to travel throughout the United States D her dissatisfaction with performing as a barnstormer",
+    "17": "Question 17. What is the main way paragraph 3 connects with paragraph 8? 17 A by referring to the altitude to which Coleman flew B by describing Coleman’s popularity with crowds C by indicating the types of planes Coleman flew D by demonstrating Coleman’s skills as a pilot",
+    "18": "Question 18. How do paragraphs 8 and 9 develop a central idea in the article? 18 by referring to the thousands of people watching the first female African-American A aviator B by indicating that Coleman was prohibited from flying the plane without another pilot by illustrating how the first female African-American pilot flew in loops while tilting the C plane D by describing how Coleman wanted to fly a type of plane with which she was unfamiliar",
+    "19": "Question 19. The tone of paragraph 9 can best be described as A ___ anxious, due to the dangerous jump of the stuntman B___ tense, because of the height to which the airplane flew C__ delighted, due to the reaction of the crowd to the stuntman D enthusiastic, because people were excited for the opportunity to fly",
+    "20": "Question 20. Which statement best describes why Coleman goes to flight school in France? A __ She knows there are more aircraft manufacturers in France. B__ She is denied the opportunity to train as a pilot in the United States. C__ She believes flying is more popular in France than in the United States. D She knows she will be able to learn by observing her instructors in France.",
+    "21": "Question 21. Which sentence would be most important to include in a summary of the article? 21 A Coleman first takes flying lessons in a twenty-seven-foot biplane. B Coleman claims flying in France is as popular as driving cars in America. C Coleman is described by newspapers as a careful but skilled pilot. D Coleman is the first African-American woman to perform a solo flight.",
+    "22": "Question 22. Read this phrase from paragraph 8. 22 . . . and as for shoes, they imprisoned freedom-loving feet accustomed to the feel of warm earth. How does the use of personification in this phrase mainly add to the reader’s understanding of the narrator? A by emphasizing the narrator’s preference for being outside B by illustrating how the narrator feels about school C by showing how the narrator is different than Little Man D by highlighting the narrator’s desire to help Papa",
+    "23": "Question 23. Which detail would be most important to include in a summary of the story? 23 “Always meticulously neat, six-year-old Little Man never allowed dirt or tears or stains to A mar anything he owned.” (paragraph 1) “If I hadn’t known the cause of it, I could have forgotten very easily that he was, at twelve, B bigger than I . . .” (paragraph 5) “An ancient oak tree on the slope, visible even now, was the official dividing mark C between Logan land and the beginning of a dense forest.” (paragraph 10) “. . . for the past three years there had not been enough money from the cotton to pay D both and live on too.” (paragraph 11)",
+    "24": "Question 24. How does the narrator mainly develop each brother’s viewpoint? 24 A by indicating their feelings about school B through descriptions of their personalities C by indicating her disagreements with them D through descriptions of their appearances",
+    "25": "Question 25. Siblings may be very different but still completely understand each other. How do the details in the story best support this idea? A __ The narrator describes the traits of each brother as they walk to school. B The narrator and her brothers understand the importance of the land to their family. C The narrator realizes why her oldest brother is feeling unhappy. D The narrator and her brothers respect their father’s decision to work in other states.",
+    "26": "Question 26. What do the details in the story reveal about Papa? 26 A He prefers working on the railroad to growing cotton. B He was not surprised when the price of cotton changed. C He is determined to keep the land his father purchased. D He was not able to talk to his other children about the land.",
+    "29": "Question 29. Read these sentences from paragraph 6. 29 “You decide too quickly. Such snap judgments make you unworthy. You are dismissed.” Which important idea does the author develop in these sentences? A It is best to lead by example. B Make sure to tell the truth when you speak. C Try to have all of the information before making a choice. D Go with your first instinct when making a statement.",
+    "30": "Question 30. What does paragraph 8 reveal about Persephone? 30 A She struggles at her school. B She becomes frustrated easily. C She wants to have more choices. D She thinks carefully before acting.",
+    "31": "Question 31. What is the best definition of “settle” as it is used in paragraph 8? 31 A to agree to something less B to separate materials C to become quiet D to find a place to stay",
+    "32": "Question 32. Which detail would be most important to include in a summary of the story? “,.. shed received twelve years of strict training and guidance in history and philosophy A and psychology . .” (paragraph 1) B “The students who select the wisest answer will become Deciders.” (paragraph 2) C ‘Lee's face flushed, and his lips trembled. He ran out of the room . ..” (paragraph 6) D “The Proctor sat at a red table. Behind him there was an exit.” (paragraph 10)",
+    "33": "Question 33. Which sentence from the story best describes Persephone’s perspective about the RPS exam? 33 A “Persephone’s mind raced and she felt a flush across her skin.” (paragraph 3) B “Persephone thought about protesting, but something held her back.” (paragraph 4) C “Persephone knew it couldn’t be that easy.” (paragraph 8) D “Persephone watched them go into the room one by one.” (paragraph 10)",
+    "34": "Question 34. What does the word “equality” mean as it is used in paragraph 12? 34 A agreement B fairness C intelligence D tolerance",
+    "35": "Question 35. How does Persephone change from the beginning to the end of the story? 35 A At first she is afraid of the test, but then she succeeds at it. B At first she is uncertain about the test, but then she understands it. C At first she is suspicious of the test, but then she cares about it. D At first she is angry at the test, but then she finds it amusing.",
+    "36": "Question 36. According to paragraph 3, the calls of prairie dogs are “distinctive” because they 36 A are understood by other animals B tend to be short C convey important information D are unique sounds",
+    "37": "Question 37. Which claim by the author is most strongly supported with evidence? “Prairie dogs got their name because people thought their calls sounded a little like a A aoe’ » og’s bark” (paragraph 1) “It's hard for humans to hear the differences between the calls, though, because they only B last about half a second . . ” (paragraph 3) “The prairie dogs watched regular dogs the same way they watched coyotes, but not as c intensely.’ (paragraph 7) “Slobodchikoff also thinks prairie dogs pay attention to the order of the sounds ..” D (paragraph 11)",
+    "38": "Question 38. Read this sentence from paragraph 9. 38 At first Slobodchikoff couldn’t believe it. Which statement provides the best support for this claim? Prairie dogs have almost the same response to coyotes as they do to the regular dogs A they encounter. Prairie dogs have similar reactions to airborne predators, although they have a variety of B responses to land animals. Prairie dogs have unique responses to people wearing different colors as well as to C various types of dogs. Prairie dogs have alarm calls they use to warn their colonies, although their calls provoke D little response.",
+    "39": "Question 39. How does paragraph 5 relate to paragraph 10? 39 A by explaining that prairie dog alarms appear to contain specific details B by indicating the similarity of prairie dog alarm calls about airborne predators C by explaining that prairie dogs may make a continuous sound when they communicate D by indicating that prairie dog calls distinguish between land animals and birds",
+    "40": "Question 40. Which statement best represents a central idea of the article? “Actually, maybe they should’ve been called prairie watchdogs because they bark to alert A the colony ..” (paragraph 1) “After all, prairie dogs are just rodents, like mice and rats, and aren't supposed to be that B smart? (paragraph 9) “Although the calls are a single sound, or at least a continuous one, they seem to carry a lot of information” (paragraph 10) “Besides studying alarm calls, he has also recorded the little noises, the chitter- chattering .. ” (paragraph 11)",
+    "41": "Question 41. Read this phrase from paragraph 11. They chitter-chatter, but they don’t chatter-chitter. What does this phrase suggest about prairie dogs? A___ The noises prairie dogs make to each other consist of predictable patterns. B_ Prairie dogs are unable to reverse the order of the sounds they make to each other. C__ The noises prairie dogs make to each other are less important than their alarm calls. D Prairie dogs usually ignore the sounds that are unrelated to the presence of predators.",
+    "42": "Question 42. The main reason spectrograms are important to Slobodchikoff’s research is because they A ___ Suggest to researchers that prairie dogs respond to different clothes B help researchers analyze prairie dog alarm calls from several miles away C __ enable researchers to hear slowed-down prairie dog alarm calls D___ allow researchers to compare many prairie dog alarm calls"
+  }
+}

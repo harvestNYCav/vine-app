@@ -5,26 +5,45 @@ import { localDateKey } from '@/lib/dates'
 import { getModule } from '@/content/modules'
 import { getStudentTracks } from '@/lib/tracks'
 import { getMatchingItems } from '@/lib/worksheet'
+import { getStudentSettings } from '@/lib/student-settings'
+import { getMathExamsForGrade } from '@/content/math-exams'
+import { getElaExamsForGrade } from '@/content/ela-exams'
 
 export async function GET() {
   const session = await getSession()
   if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const db = await getDb()
-  const [mp, vp, ts, al, examProgress] = await Promise.all([
+  const [mp, vp, ts, al, mathExamProgress, elaExamProgress, tracks, settings] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ?', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM teaching_sessions WHERE user_id = ? ORDER BY started_at DESC', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session.userId] }),
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
+    getStudentTracks(db, session.userId),
+    getStudentSettings(db, session.userId),
   ])
+  const assignedMathExamIds = new Set(
+    tracks.includes('math') ? getMathExamsForGrade(settings.gradeLevel).map(exam => exam.id) : [],
+  )
+  const assignedElaSectionKeys = new Set(
+    tracks.includes('ela')
+      ? getElaExamsForGrade(settings.gradeLevel).flatMap(exam =>
+          exam.sections.map(section => `${exam.id}:${section.slug}`)
+        )
+      : [],
+  )
 
   return NextResponse.json({
     moduleProgress: mp.rows,
     vocabProgress: vp.rows,
     teachingSessions: ts.rows,
     activityLog: al.rows,
-    mathExamProgress: examProgress.rows,
+    mathExamProgress: mathExamProgress.rows.filter(row => assignedMathExamIds.has(String(row.exam_id))),
+    elaExamProgress: elaExamProgress.rows.filter(row =>
+      assignedElaSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
+    ),
   })
 }
 

@@ -11,7 +11,8 @@ import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import type { Track } from '@/types'
-import { MATH_EXAMS } from '@/content/math-exams'
+import { getMathExamsForGrade } from '@/content/math-exams'
+import { getElaExamsForGrade } from '@/content/ela-exams'
 import Link from 'next/link'
 
 const MODULE_EMOJIS: Record<string, string> = {
@@ -30,8 +31,11 @@ export default async function ModulesPage({
   const { mode, lang } = await searchParams
 
   const session = await getSession()
+  if (!session) redirect('/')
+  if (session.role === 'tutor') redirect('/tutor')
+  if (session.role === 'admin') redirect('/admin')
   const db = await getDb()
-  const tracks = await getStudentTracks(db, session!.userId)
+  const tracks = await getStudentTracks(db, session.userId)
   if (tracks.length === 0) redirect('/tracks')
 
   const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
@@ -41,12 +45,12 @@ export default async function ModulesPage({
     const [mathResult, settings, examProgressResult] = await Promise.all([
       db.execute({
         sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
-        args: [session!.userId],
+        args: [session.userId],
       }),
-      getStudentSettings(db, session!.userId),
+      getStudentSettings(db, session.userId),
       db.execute({
         sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?',
-        args: [session!.userId],
+        args: [session.userId],
       }),
     ])
     const mathRow = mathResult.rows[0]
@@ -54,6 +58,7 @@ export default async function ModulesPage({
     const diagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
     const canUseSpanish = settings.mathSpanishEnabled
     const isSpanish = canUseSpanish && lang === 'es'
+    const assignedExams = getMathExamsForGrade(settings.gradeLevel)
     type ExamProgressRow = { exam_id: string; section_slug: string; completed_at: number | null }
     const examProgress = examProgressResult.rows as unknown as ExamProgressRow[]
 
@@ -84,23 +89,43 @@ export default async function ModulesPage({
         <section className="mb-8">
           <div className="mb-3 flex items-end justify-between">
             <div>
-              <h2 className="font-bold text-gray-800">{isSpanish ? 'Lecciones del examen de Nueva York' : 'New York exam lessons'}</h2>
+              <h2 className="font-bold text-gray-800">
+                {isSpanish ? 'Lecciones del examen de Nueva York' : 'New York exam lessons'}
+                {settings.gradeLevel ? ` · ${isSpanish ? 'Grado' : 'Grade'} ${settings.gradeLevel}` : ''}
+              </h2>
               <p className="mt-0.5 text-xs text-gray-500">{isSpanish ? 'Aprende y practica con preguntas oficiales publicadas' : 'Learn, then practice with official released questions'}</p>
             </div>
             <span className="rounded-full bg-blue-100 px-2 py-1 text-[11px] font-bold text-blue-700">NYSED</span>
           </div>
+          {settings.gradeLevel === null ? (
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+              <p className="text-sm font-semibold text-amber-800">
+                {isSpanish ? 'Un administrador debe asignar tu grado.' : 'An admin needs to assign your grade.'}
+              </p>
+              <p className="mt-1 text-xs text-amber-700">
+                {isSpanish ? 'Las lecciones del examen aparecerán aquí después de la asignación.' : 'Your state-exam lessons will appear here after that.'}
+              </p>
+            </div>
+          ) : (
           <div className="space-y-3">
-            {MATH_EXAMS.map(exam => {
+            {assignedExams.length === 0 && (
+              <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+                {isSpanish ? `No hay exámenes publicados para el grado ${settings.gradeLevel}.` : `No released exams are available for Grade ${settings.gradeLevel}.`}
+              </div>
+            )}
+            {assignedExams.map(exam => {
               const completed = examProgress.filter(row => row.exam_id === exam.id && row.completed_at).length
+              const useSpanish = isSpanish && exam.supportedLanguages.includes('es')
               return (
-                <Link key={exam.id} href={`/math/exams/${exam.slug}${isSpanish ? '?lang=es' : ''}`} className="block">
+                <Link key={exam.id} href={`/math/exams/${exam.slug}${useSpanish ? '?lang=es' : ''}`} className="block">
                   <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50 p-4 shadow-sm transition-shadow hover:shadow-md">
                     <div className="flex items-center gap-4">
                       <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100 text-2xl">🗽</div>
                       <div className="min-w-0 flex-1">
-                        <p className="font-semibold text-gray-800">{isSpanish ? exam.title.es : exam.title.en}</p>
+                        <p className="font-semibold text-gray-800">{useSpanish ? exam.title.es : exam.title.en}</p>
                         <p className="mt-0.5 text-xs text-gray-500">
-                          {exam.sections.length} {isSpanish ? 'áreas de aprendizaje' : 'learning sections'} · {exam.standardsFramework}
+                          {exam.year} · {exam.sections.length} {useSpanish ? 'áreas de aprendizaje' : 'learning sections'} · {exam.standardsFramework}
+                          {isSpanish && !useSpanish ? ' · Solo en inglés' : ''}
                         </p>
                       </div>
                       <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
@@ -119,6 +144,7 @@ export default async function ModulesPage({
               )
             })}
           </div>
+          )}
         </section>
 
         <div className="mb-3">
@@ -165,14 +191,24 @@ export default async function ModulesPage({
   }
 
   // English modes
-  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session!.userId)
+  const [taughtSlugs, settings, mpResult, elaExamProgressResult] = await Promise.all([
+    getTaughtModuleSlugsForStudent(db, session.userId),
+    getStudentSettings(db, session.userId),
+    db.execute({
+      sql: 'SELECT * FROM module_progress WHERE user_id = ?',
+      args: [session.userId],
+    }),
+    db.execute({
+      sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?',
+      args: [session.userId],
+    }),
+  ])
   const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode && taughtSlugs.has(mod.slug))
-  const mpResult = await db.execute({
-    sql: 'SELECT * FROM module_progress WHERE user_id = ?',
-    args: [session!.userId],
-  })
   type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null }
+  type ElaExamProgressRow = { exam_id: string; section_slug: string; completed_at: number | null }
   const moduleProgress = mpResult.rows as unknown as ModuleProgressRow[]
+  const elaExamProgress = elaExamProgressResult.rows as unknown as ElaExamProgressRow[]
+  const assignedElaExams = currentMode === 'ela' ? getElaExamsForGrade(settings.gradeLevel) : []
 
   const getStatus = (slug: string) => {
     const p = moduleProgress.find(m => m.module_slug === slug)
@@ -190,14 +226,85 @@ export default async function ModulesPage({
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'ESL'}</p>
 
-      {visibleModules.length === 0 && (
+      {currentMode === 'ela' && (
+        <section className="mb-8">
+          <div className="mb-3 flex items-end justify-between">
+            <div>
+              <h2 className="font-bold text-gray-800">
+                New York ELA exam lessons
+                {settings.gradeLevel ? ` · Grade ${settings.gradeLevel}` : ''}
+              </h2>
+              <p className="mt-0.5 text-xs text-gray-500">Read the official passage, learn a strategy, then answer released multiple-choice questions</p>
+            </div>
+            <span className="rounded-full bg-purple-100 px-2 py-1 text-[11px] font-bold text-purple-700">NYSED</span>
+          </div>
+
+          {settings.gradeLevel === null ? (
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+              <p className="text-sm font-semibold text-amber-800">An admin needs to assign your grade.</p>
+              <p className="mt-1 text-xs text-amber-700">Your Grade 3–8 state-exam lessons will appear here after that.</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {assignedElaExams.length === 0 && (
+                <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+                  No released ELA exams are available for Grade {settings.gradeLevel}.
+                </div>
+              )}
+              {assignedElaExams.map(exam => {
+                const sectionSlugs = new Set(exam.sections.map(section => section.slug))
+                const completed = elaExamProgress.filter(row =>
+                  row.exam_id === exam.id
+                  && sectionSlugs.has(row.section_slug)
+                  && row.completed_at
+                ).length
+                return (
+                  <Link key={exam.id} href={`/ela/exams/${exam.slug}`} className="block">
+                    <div className="rounded-2xl border border-purple-100 bg-gradient-to-br from-white to-purple-50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                      <div className="flex items-center gap-4">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-purple-100 text-2xl">📖</div>
+                        <div className="min-w-0 flex-1">
+                          <p className="font-semibold text-gray-800">{exam.title}</p>
+                          <p className="mt-0.5 text-xs text-gray-500">
+                            {exam.year} · {exam.sections.length} passage lessons · {exam.standardsFramework}
+                          </p>
+                        </div>
+                        <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                          completed > 0 ? 'bg-green-100 text-green-700' : 'bg-white text-gray-500'
+                        }`}>
+                          {completed}/{exam.sections.length}
+                        </span>
+                      </div>
+                      {completed > 0 && (
+                        <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-purple-100">
+                          <div className="h-full rounded-full bg-purple-600" style={{ width: `${completed / exam.sections.length * 100}%` }} />
+                        </div>
+                      )}
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+          )}
+        </section>
+      )}
+
+      {visibleModules.length === 0 && currentMode !== 'ela' && (
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center">
           <p className="text-amber-700 font-medium">No lessons taught yet.</p>
           <p className="text-amber-600 text-sm mt-1">Check back after your next Saturday session!</p>
         </div>
       )}
 
-      <div className="space-y-3">
+      {visibleModules.length > 0 && (
+      <section>
+        {currentMode === 'ela' && (
+          <div className="mb-3">
+            <h2 className="font-bold text-gray-800">Tutor lessons</h2>
+            <p className="mt-0.5 text-xs text-gray-500">Lessons assigned in your tutoring sessions</p>
+          </div>
+        )}
+        <div className="space-y-3">
         {visibleModules.map(mod => {
           const status = getStatus(mod.slug)
           return (
@@ -219,7 +326,9 @@ export default async function ModulesPage({
             </a>
           )
         })}
-      </div>
+        </div>
+      </section>
+      )}
     </div>
   )
 }

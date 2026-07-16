@@ -34,14 +34,26 @@ This document captures the maintainer-facing structure of the repository. It is 
 
 ## Released Math Exam Lessons
 
-- `content/math-exams/` is the typed catalog for released public-exam courses, sections, question metadata, and private grading definitions.
-- `public/nysed/` contains the bilingual question crops displayed by the catalog. Asset URLs include the app's `/vine-app` base path.
+- `content/math-exams/generated/catalog.json` is the schema-versioned generated registry for 78 year/grade releases and 1,839 multiple-choice questions. `catalog-builder.ts` validates it and adds grade-aware, Vine-authored domain lessons. The answer-bearing runtime is marked `server-only`.
+- `public/nysed/math/` contains official question crops. Spanish assets exist only for years with a direct NYSED Spanish release. Asset URLs include the app's `/vine-app` base path.
 - `lib/math-exams.ts` resolves catalog entries and is the boundary that removes grading data before questions reach the browser.
 - `app/(student)/math/exams/` contains the course overview, original lessons, practice runner, and the NYSED attribution/disclaimer shown anywhere released questions are used.
-- `app/api/math/exam-attempt/route.ts` creates expiring attempts, checks one answer at a time, grades completed sections, and records progress. Correct answers and self-assessment criteria stay on the server until an answer is submitted.
+- `app/api/math/exam-attempt/route.ts` creates expiring attempts, enforces the student's admin-assigned grade and language access, checks multiple-choice answers, and records progress. Correct answers stay on the server until an answer is submitted.
 - `math_exam_attempts` stores individual practice runs; `math_exam_section_progress` stores per-student attempts and best/latest section scores.
+- `student_settings.grade_level` is the admin-managed Grade 3–8 assignment used by listings, direct routes, APIs, and reporting.
 
-To add another exam, define its course in `content/math-exams`, add each section's question records and bilingual assets, register the exam and question arrays, then extend the catalog tests. Do not derive learner feedback from restricted scoring-guide text.
+To refresh or extend the public releases, run `scripts/import_nysed_math_mc.py`, review its generated contact sheets/validation output, and extend the catalog tests when the expected official inventory changes. Do not derive learner feedback from restricted scoring-guide text.
+
+## Released ELA Exam Lessons
+
+- `content/ela-exams/generated/catalog.json` is the schema-versioned registry for 78 English year/grade releases and 1,583 released multiple-choice questions. The server-only runtime validates the official inventory and adds Grade 3–8 Vine-authored reading lessons.
+- ELA sections are organized by official passage or passage set. The catalog stores the official booklet URL and physical PDF page range; the passage itself remains in the NYSED PDF so its original third-party source and permission credits stay with it.
+- `public/nysed/ela/` contains tightly bounded question-and-choice WebP crops only. It does not contain copied passage pages, answer annotations, scoring rubrics, or sample responses.
+- `app/(student)/ela/exams/` contains grade-filtered release overviews, passage-linked lessons, and the multiple-choice practice runner. Every view that uses released questions includes the source, independent/non-endorsement, noncommercial educational-use, and third-party-rights notice.
+- `app/api/ela/exam-attempt/route.ts` keeps answer keys server-side, rechecks the ELA track and exact admin-assigned grade at start/check/finish, and records best/latest section scores.
+- `ela_exam_attempts` stores individual practice runs; `ela_exam_section_progress` stores per-student section progress independently from Math.
+
+Rebuild the ELA catalog and crops with `scripts/import_nysed_ela_mc.py`. The importer must match the pinned official release/count matrix, reject answer metadata in student assets, verify every passage page reference, and reproduce the same output offline before generated content is committed.
 
 ## Maintenance Notes
 - Keep generated output, editor metadata, virtual environments, local credentials, and machine-specific assistant settings out of Git.

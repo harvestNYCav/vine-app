@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "e29f1fa7fa2b1bccba6a4701743ab5337414d2b820a04171090a2866d8dcb8d8",
+  "crops": {
+    "8": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "9": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "10": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "12": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        471.119
+      ]
+    },
+    "13": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        471.119,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        282.243
+      ]
+    },
+    "16": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        282.243,
+        584.0,
+        483.119
+      ]
+    },
+    "17": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        483.119,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "19": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        495.119
+      ]
+    },
+    "20": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        495.119,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "30": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        522.243
+      ]
+    },
+    "31": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        522.243,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "33": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "34": {
+      "sourcePage": 25,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 26,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "8": {
+      "width": 851,
+      "height": 328
+    },
+    "9": {
+      "width": 825,
+      "height": 327
+    },
+    "10": {
+      "width": 876,
+      "height": 328
+    },
+    "11": {
+      "width": 1097,
+      "height": 365
+    },
+    "12": {
+      "width": 843,
+      "height": 327
+    },
+    "13": {
+      "width": 951,
+      "height": 404
+    },
+    "14": {
+      "width": 1109,
+      "height": 365
+    },
+    "15": {
+      "width": 965,
+      "height": 394
+    },
+    "16": {
+      "width": 683,
+      "height": 328
+    },
+    "17": {
+      "width": 816,
+      "height": 327
+    },
+    "18": {
+      "width": 961,
+      "height": 405
+    },
+    "19": {
+      "width": 709,
+      "height": 327
+    },
+    "20": {
+      "width": 877,
+      "height": 328
+    },
+    "21": {
+      "width": 1105,
+      "height": 365
+    },
+    "29": {
+      "width": 1102,
+      "height": 405
+    },
+    "30": {
+      "width": 953,
+      "height": 399
+    },
+    "31": {
+      "width": 974,
+      "height": 398
+    },
+    "32": {
+      "width": 843,
+      "height": 328
+    },
+    "33": {
+      "width": 963,
+      "height": 327
+    },
+    "34": {
+      "width": 1100,
+      "height": 435
+    },
+    "35": {
+      "width": 955,
+      "height": 328
+    }
+  },
+  "altText": {
+    "8": "Question 8. How do paragraphs 2 and 3 develop a central idea in the article? A They state that William was not able to attend school. B They show how William learned things on his own. C they explain that others did not care about William’s questions. D They give examples of the types of books William read.",
+    "9": "Question 9. What does the phrase “pore over” mean as it is used in paragraph 3? 9 A write about B glance at C examine D copy",
+    "10": "Question 10. Paragraph 6 develops the author’s central claim by showing that William 10 A was distracted by so many objects in the junkyard B was resourceful in finding what he needed C was able to make use of his limited time in school D was excited to look for new projects",
+    "11": "Question 11. Which sentence best describes the relationship between William and the people who doubted 11 him? A William was inspired and delighted by them. B William ignored and then convinced them. C William was concerned and worried about them. D William listened to and then got help from them.",
+    "12": "Question 12. In paragraph 14, what does the word “marvel” suggest? A They are amazed by what William has done. B They are curious to see what will happen to the bulb. C they are worried that William’s experiment may be dangerous. D They are ready to have more lights in the house.",
+    "13": "Question 13. Which quotation shows an effect of success on William’s life? A “Shoppers, farmers, and traders could see William’ s tower from the local market. (paragraph 10) B “From the top of the tower he explained that, by using the power of wind, his machine could create electricity” (paragraph 11) Cc “William knew this was his moment—his moment to show everyone he wasn’t crazy ...” (paragraph 12) D “The story of the boy with only an eighth-grade education who'd built ‘electric wind’ spread across the Internet.” (paragraph 16)",
+    "14": "Question 14. Based on the information in the article, which of the following is most likely the author’s point 14 of view? A Access to formal schooling is important for success. B Science education is needed to help people flourish. C Curiosity and persistence can lead to change. D Families are the best support system.",
+    "15": "Question 15. What role do paragraphs 1 through 3 mainly play in the story? A They clarify the emotions that the two architects are feeling. B_ They foreshadow the surprise at the ending. C They set the scene and explain the process for picking a new design. D They set a humorous tone by describing the two architects sitting in school desks.",
+    "16": "Question 16. In paragraph 6, “markedly” means doing something in 16 A an obvious way B a careful way C a respectful way D an enthusiastic way",
+    "17": "Question 17. How does the word choice in paragraphs 9 and 11 affect the story? 17 A It describes how similar the design is to the Capitol building. B It shows why the design is practical for a school. C It conveys how impressive Mr. Kowalski’s design is. D It explains what classical architecture looks like.",
+    "18": "Question 18. How do paragraphs 4 and 5 connect to what the reader learns in paragraph 18? A They reveal that Mr. Kowalski thinks Holling’s father is a better architect than he is. B They support the idea that Mr. Kowalski is guilty of stealing Mr. Hoodhood’s plans. C They show that Mr. Kowalski hopes Holling likes his plan for the school. D They provide information about how Mr. Kowalski’s and Mr. Hoodhood’s designs are different.",
+    "19": "Question 19. What do paragraphs 15 through 18 reveal about Holling? 19 A He disobeys his father easily. B He did not know he was being deceived. C He is unconcerned with the opinions of others. D He is a dishonest person.",
+    "20": "Question 20. How does the author develop Holling’s point of view in the story? 20 A by explaining how his father sees the competition B by describing Mr. Kowalski’s plans for the school building C by describing his observations until he realizes what has happened D by explaining the architectural review process",
+    "21": "Question 21. Which detail about Mr. Kowalski and Mr. Hoodhood would be most important to include in a summary of the story? A They have model buildings under sheets on the table. B They are competing to design a new school. Cc They must meet with the school board at a school. D They have to wait to hear who has been chosen.",
+    "29": "Question 29. How does paragraph 3 relate to the other paragraphs in the section “Unlikely in the Extreme”? 29 Paragraph 3 introduces a problem, and the other paragraphs explain the A solution to the problem. Paragraph 3 explains an idea, and the other paragraphs describe how the B idea was disproved. Paragraph 3 presents an argument, and the other paragraphs give evidence C to support the argument. Paragraph 3 sets up a comparison, and the other paragraphs give details D about the comparison.",
+    "30": "Question 30. What role does paragraph 8 play in the organization of the article? 30 A It shows techniques that scientists use to study remote regions. B It explains how the environment on Jupiter might support life. C It describes the activities of scientists interested in extreme environments. It introduces the connection between activities on Earth and research in D outer space.",
+    "31": "Question 31. How does paragraph 10 develop a central idea in the article? 31 A It explains how life in an extreme environment could be possible. It describes scientific research on the possibility of life in an extreme B environment. C It provides clues to the possible existence of life in an extreme environment. It presents questions to be answered about the possibility of life in an D extreme environment.",
+    "32": "Question 32. How did scientists address the concern described in paragraph 14? A They removed an ice core from the lake to study it. B They applied chemicals to melt ice and keep the borehole open. C they obtained a water sample with clean technology. D They found sediment at the bottom of the lake.",
+    "33": "Question 33. What is the meaning of the word “contaminate” as used in paragraphs 14 and 16? 33 A color B replace C freeze D pollute",
+    "34": "Question 34. According to the information in this article, which sentence describes how life was discovered 34 beneath Antarctica? Scientists found proof of water beneath Antarctic ice, then they drilled to A get samples of the water to look for life. Scientists saw signs of ice that may cover water on other planets, so they B drilled for water beneath Antarctic ice. Scientists knew that there were life forms in the deep parts of the ocean, so C they concluded that there was life in the water beneath Antarctic ice. Scientists found microbes on the surface of Antarctic ice, then they drilled D into the ice to look for microbes beneath the surface.",
+    "35": "Question 35. Which sentence best shows the author’s point of view on the topic of the article? A ___ The amount of water below the ice in Antarctica is surprising. B Astronomers are excited about signs of ice and water on other planets. Cc Antarctica is one of the most important scientific environments on Earth. D_ The formation of very flat ice at the Vostok station is an important clue."
+  }
+}

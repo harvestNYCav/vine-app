@@ -1,0 +1,291 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "9ff46890d4d9fb734f966d5727a704853b96f1279a435912c0248a5928102a04",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        77.496,
+        575.0,
+        192.65
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        295.436,
+        575.0,
+        409.85
+      ]
+    },
+    "3": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        76.496,
+        575.0,
+        219.15
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        324.997,
+        575.0,
+        440.35
+      ]
+    },
+    "5": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        77.594,
+        575.0,
+        192.75
+      ]
+    },
+    "6": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        298.619,
+        575.0,
+        418.65
+      ]
+    },
+    "7": {
+      "sourcePage": 10,
+      "box": [
+        28.0,
+        77.573,
+        575.0,
+        224.01
+      ]
+    },
+    "8": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        77.581,
+        575.0,
+        211.52
+      ]
+    },
+    "9": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        317.389,
+        575.0,
+        503.05
+      ]
+    },
+    "10": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        77.609,
+        575.0,
+        194.05
+      ]
+    },
+    "11": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        299.971,
+        575.0,
+        445.85
+      ]
+    },
+    "12": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        77.585,
+        575.0,
+        211.52
+      ]
+    },
+    "13": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        317.435,
+        575.0,
+        433.7
+      ]
+    },
+    "14": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        77.592,
+        575.0,
+        195.25
+      ]
+    },
+    "15": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        301.119,
+        575.0,
+        434.05
+      ]
+    },
+    "16": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        77.948,
+        575.0,
+        227.84
+      ]
+    },
+    "17": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        333.483,
+        575.0,
+        459.85
+      ]
+    },
+    "18": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        77.589,
+        575.0,
+        194.65
+      ]
+    },
+    "19": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        300.515,
+        575.0,
+        417.85
+      ]
+    },
+    "20": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        77.484,
+        575.0,
+        197.05
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 1094,
+      "height": 248
+    },
+    "2": {
+      "width": 1102,
+      "height": 245
+    },
+    "3": {
+      "width": 1094,
+      "height": 309
+    },
+    "4": {
+      "width": 1094,
+      "height": 248
+    },
+    "5": {
+      "width": 1094,
+      "height": 248
+    },
+    "6": {
+      "width": 1094,
+      "height": 258
+    },
+    "7": {
+      "width": 1094,
+      "height": 317
+    },
+    "8": {
+      "width": 1094,
+      "height": 290
+    },
+    "9": {
+      "width": 1094,
+      "height": 405
+    },
+    "10": {
+      "width": 1094,
+      "height": 251
+    },
+    "11": {
+      "width": 1094,
+      "height": 315
+    },
+    "12": {
+      "width": 1094,
+      "height": 290
+    },
+    "13": {
+      "width": 1094,
+      "height": 250
+    },
+    "14": {
+      "width": 1094,
+      "height": 254
+    },
+    "15": {
+      "width": 1094,
+      "height": 287
+    },
+    "16": {
+      "width": 1094,
+      "height": 325
+    },
+    "17": {
+      "width": 1094,
+      "height": 273
+    },
+    "18": {
+      "width": 1094,
+      "height": 252
+    },
+    "19": {
+      "width": 1094,
+      "height": 252
+    },
+    "20": {
+      "width": 1094,
+      "height": 258
+    }
+  },
+  "altText": {
+    "1": "Question 1. 00 What does the word “terrain” mean as it is used in paragraph 5? A bodies of water B plant life C surface features of the land D area with small amounts of rain",
+    "2": "Question 2. 00 Which detail best reflects the main goal of the Haughton Mars Project? A “Now I have some idea of what it’s like to be on the Red Planet.” (paragraph 1) B “That means people can work there only during the summer months . . .” (paragraph 5) C “Others test how well their robot rovers collect rock and soil samples.” (paragraph 6) D “Recent robot missions there found possible signs of frozen water.” (paragraph 10)",
+    "3": "Question 3. 00 Which sentence best supports the main idea of paragraphs 3 through 5? A “It is about 900 miles from the North Pole.” (paragraph 1) B “It lets them figure out what they would need to make human explorations of Mars successful and safe.” (paragraph 8) C “Scientists have been studying Mars for decades.” (paragraph 10) D “NASA officials have said that they hope to put astronauts on the Red Planet by 2030.” (paragraph 11)",
+    "4": "Question 4. Which evidence best supports the point the author makes in paragraph 11? A Scientists are practicing tasks they might perform on Mars. B Scientists work on the island during the summer months. C Scientists have gathered on the island since 1997. D Scientists are limiting phone and Internet use.",
+    "5": "Question 5. The main reason no one lives on Devon Island is because the island A is difficult to reach B has no Internet service C is cold most of the year D has continuous sunlight all summer",
+    "6": "Question 6. How have recent robot missions to Mars affected future exploration by humans? A The missions determined when humans can safely travel to Mars. B The missions suggested that humans will be able to survive on Mars. C The missions discovered proof of life on Mars that only humans can confirm. D The missions raised new questions about life on Mars that humans may answer.",
+    "7": "Question 7. Why does the author quote Dr. Pascal Lee throughout the article? A Dr. Lee is the scientist on the island who has the most information about Mars. B Dr. Lee was hired by NASA to be the next scientist to explore Mars. C Dr. Lee started the Haughton Mars Project and has remained involved since its beginning. D Dr. Lee lives at the research site on Devon Island and conducts experiments throughout the year.",
+    "8": "Question 8. How does paragraph 14 relate to paragraph 4? A Paragraph 14 explains the effect of the event in paragraph 4. B Paragraph 14 gives a solution to the problem introduced in paragraph 4. C Paragraph 14 provides further details that summarize the event in paragraph 4. D Paragraph 14 provides further details that contrast the information in paragraph 4.",
+    "9": "Question 9. Which sentence from the story best shows how Seema feels about going to America without Raju? A “I stood near the acacia tree growing at the edge of an abandoned lot and watched Raju’s back as the dust rising from his shoes covered my white blouse and my beige pinafore.” (paragraph 2) B “Raju was my cousin, and I wanted to tell him that everything would be fine—but how could I?” (paragraph 3) C “Why had Kaka and Kaki told Uma and Raju, and why had Pappa told me?” (paragraph 21) D “Raju and I went to school together and were in the same class.” (paragraph 22)",
+    "10": "Question 10. What does paragraph 23 of the story suggest about Seema? A She does not want to spoil her father’s mood. B She does not have to convince her mother to stay. C She is upset that her father’s laboratory job keeps him busy. D She is scared to be away from her mother.",
+    "11": "Question 11. Which detail would be most important to include in a summary of the story? A “School was over, and I would never wear this uniform again.” (paragraph 2) B “I never could understand how Pappa could forget his lunch while working with tiny bugs that he could only see under a microscope.” (paragraph 5) C “When I went to bed, I wondered how I could leave the rest of my family and go to America.” (paragraph 22) D “The next morning I was tired and groggy.” (paragraph 24)",
+    "12": "Question 12. Which detail from the story best demonstrates the relationship among all the members of Seema’s family? A Seema goes to the same school as her cousin. B Seema spends most of her time with her cousin. C The members of Seema’s family visit each other. D The members of Seema’s family live in the same house.",
+    "13": "Question 13. Which sentence best expresses a theme of the story? A Families often work together to accept change. B Change provides new opportunities. C Change can be difficult to accept. D It is impossible to avoid change.",
+    "14": "Question 14. Why do scientists want to create robots that imitate human facial expressions? A to encourage people to buy robots to do their tasks B to encourage people to pay more attention to robotic work C to help create a better connection between robots and people D to help establish a reason for robots and people to work together",
+    "15": "Question 15. Which evidence best supports the idea that robots could be in every household by the year 2025? A Robots can perform daily tasks. B Robots can work in many places. C Robots can show human emotions. D Robots can replace human workers.",
+    "16": "Question 16. Which evidence best supports the idea that Nao will be a popular invention? A Nao is able to talk and walk. B Nao has a number of different uses. C Nao is the first robot to pick up toys. D Nao has been praised by robotic experts.",
+    "17": "Question 17. Based on the article, which statement best explains what Nexi, Nao, and RIBA have in common? A They interact and communicate with humans. B They have many possible military applications. C They can perform medical services that pose difficulties to people. D They are designed to imitate human emotions and facial expressions.",
+    "18": "Question 18. What does the expression “making a splash” (paragraph 10) mean? A getting soaked B swimming along C creating excitement D cleaning up",
+    "19": "Question 19. Which detail best shows that robots can perform tasks that are difficult for humans? A “They’re in more places than you might know.” (paragraph 1) B “Some homes have robots that vacuum floors or mow the lawn.” (paragraph 1) C “You might be living or working with one of them one day!” (paragraph 2) D “It can also locate submerged ships or oil and gas pipelines.” (paragraph 10)",
+    "20": "Question 20. Which detail would be most important to include in a summary of the article? A A robotic penguin was designed by engineers in Germany. B Because Nexi can raise its eyebrows, it can express feelings and emotions. C Nao is a two-foot-tall robot that can be programmed to perform several tasks. D Because some new robots act like humans in many ways, they will work well with people."
+  }
+}

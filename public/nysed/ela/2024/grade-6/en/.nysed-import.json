@@ -1,0 +1,278 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "bbca99ab7905cc388417360ea69d905bf85fbe8231a561f6007cbe5ba77c9bdf",
+  "crops": {
+    "15": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        247.038
+      ]
+    },
+    "16": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        247.038,
+        584.0,
+        483.914
+      ]
+    },
+    "17": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        483.914,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        265.062
+      ]
+    },
+    "19": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        265.062,
+        584.0,
+        453.938
+      ]
+    },
+    "20": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        453.938,
+        584.0,
+        702.372
+      ]
+    },
+    "21": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        253.062
+      ]
+    },
+    "23": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        253.062,
+        584.0,
+        489.938
+      ]
+    },
+    "24": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        489.938,
+        584.0,
+        702.372
+      ]
+    },
+    "25": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        250.662
+      ]
+    },
+    "26": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        250.662,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        247.038
+      ]
+    },
+    "30": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        247.038,
+        584.0,
+        483.914
+      ]
+    },
+    "31": {
+      "sourcePage": 28,
+      "box": [
+        28.0,
+        483.914,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        250.662
+      ]
+    },
+    "33": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        250.662,
+        584.0,
+        444.362
+      ]
+    },
+    "34": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        444.362,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        58.162,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "15": {
+      "width": 863,
+      "height": 306
+    },
+    "16": {
+      "width": 981,
+      "height": 401
+    },
+    "17": {
+      "width": 1109,
+      "height": 429
+    },
+    "18": {
+      "width": 1019,
+      "height": 336
+    },
+    "19": {
+      "width": 960,
+      "height": 306
+    },
+    "20": {
+      "width": 1133,
+      "height": 305
+    },
+    "21": {
+      "width": 1105,
+      "height": 337
+    },
+    "22": {
+      "width": 1040,
+      "height": 306
+    },
+    "23": {
+      "width": 1113,
+      "height": 401
+    },
+    "24": {
+      "width": 1112,
+      "height": 305
+    },
+    "25": {
+      "width": 892,
+      "height": 306
+    },
+    "26": {
+      "width": 1014,
+      "height": 305
+    },
+    "29": {
+      "width": 1005,
+      "height": 306
+    },
+    "30": {
+      "width": 1086,
+      "height": 399
+    },
+    "31": {
+      "width": 933,
+      "height": 434
+    },
+    "32": {
+      "width": 764,
+      "height": 306
+    },
+    "33": {
+      "width": 896,
+      "height": 305
+    },
+    "34": {
+      "width": 1132,
+      "height": 431
+    },
+    "35": {
+      "width": 1129,
+      "height": 338
+    }
+  },
+  "altText": {
+    "15": "Question 15. What is the meaning of the word “parched” as it is used in paragraph 4? 15 A difficult B dry C dangerous D dusty",
+    "16": "Question 16. Read this sentence from paragraph 8. Their orange-and-black wings color the sky like an explosion of confetti. What is the author’s main purpose for using this sentence? A __ to describe a feeling of excitement while watching butterflies B__ to indicate the direction the butterflies will go as they travel C__ todescribe the large number of butterflies taking flight D__ to indicate the distance the butterflies will need to travel",
+    "17": "Question 17. Which sentence from the article best supports the author’s central claim? “The sun—its rise and fall over a day and the whirling of the Earth around it for a year— A powers these events.” (paragraph 2) “Like the region’s other hoofed animals—wildebeests and gazelles—zebras must stay on B the move for fresh grass and water.” (paragraph 16) “Sometimes, herds will come together by the thousands to find better feeding grounds.” c (paragraph 17) “The timing of their travels is driven by rainfall, which fuels the growth of new grass and D » refills water holes. (paragraph 19)",
+    "18": "Question 18. Which detail from the article represents the author’s belief? A “They are some of nature's most thrilling dramas.” (paragraph 2) “,.. forgetting the location of a lifesaving water hole would be a deadly mistake” B (paragraph 3) C_ “.. these jellyfish undertake a major journey every single day.’ (paragraph 12) D “Human babies can take a year or more to take their first steps.” (paragraph 21)",
+    "19": "Question 19. According to the article, zebras and wildebeests are similar because both animals A _ walk right after birth B migrate for the same reasons C__ live in small groups D __ eat the same type of grass",
+    "20": "Question 20. The main way the different “Motive to Move” sections help the reader understand migration is by A __ explaining why animals search for watering holes B __ referring to areas where there is a lack of grass C_— explaining why animals travel to different places D _ referring to seasons that change from dry to rainy",
+    "21": "Question 21. Which phrase from the article best helps the reader understand the claim in paragraph 22 that 21 “being in a rush is a way of life” for wildebeests? A the reference to the wildebeest being “a favorite snack” (paragraph 22) B the indication that wildebeests follow “the seasonal rains” (paragraph 22) C the explanation that plant eaters like the wildebeest “stay on the move” (paragraph 23) D the claim that wildebeests would “starve if they didn’t migrate” (paragraph 23)",
+    "22": "Question 22. According to the article, what was the main effect of Franklin’s study of static electricity? 22 A the ability to generate static electricity to study it B the understanding that static electricity resembled lightning C the realization that lightning was larger than static electricity D the creation of a tool to prevent lightning from harming people",
+    "23": "Question 23. Working with electricity can sometimes be dangerous. Which detail in the article best supports this idea? A __ the claim that sharks “can sense electric signals” (paragraph 2) B___ the statement that “Lightning often hit tall buildings” (paragraph 8) the claim that a battery uses “metal and chemicals to create electrical energy” c (paragraph 10) the statement that many objects used for light “were smelly and caused fires” D (paragraph 12)",
+    "24": "Question 24. In paragraph 14, how does the author demonstrate how the demand for electricity “caught on”? 24 A by highlighting important scientists who studied electricity B by including dates and descriptions of major discoveries C by suggesting that people began to appreciate and use electricity D by indicating that certain inventions helped people remain safe",
+    "25": "Question 25. What is most likely the author’s opinion about electricity? 25 A Electricity should continue to be studied by scientists and inventors. B Electricity was made popular as the result of the electric motor. C Electricity was not useful until energy could travel longer distances. D Electricity is an important and essential part of people’s lives.",
+    "26": "Question 26. How does the author organize information to develop a central idea in the article? 26 A by contrasting the different scientists who studied electricity B by providing details about the development of electricity in chronological order C by explaining how electricity helped solve a variety of problems D by using a cause and effect structure to highlight the significance of electricity",
+    "29": "Question 29. In paragraph 2, the author uses the phrase “in a foreign tongue” to indicate that Mate 29 A only responds to the commands of Charlie B dislikes being patted by the townspeople C does not want to his walk with Charlie D does not care what the townspeople say",
+    "30": "Question 30. Which detail signals a change in the direction of the story? 30 the indication that Mate listened “with his head cocked to one side and one ear raised” A (paragraph 2) the statement that “Mate would bark loudly, acting as the Fast and Able’s foghorn” B (paragraph 3) C the indication that “Charlie fell to the bottom of the boat unconscious” (paragraph 4) the statement that “Mate leaped into the cold water and dog-paddled to the beach” D (paragraph 5)",
+    "31": "Question 31. Read this sentence from paragraph 5. Mate whimpered and frantically licked his master’s face, but the old seaman did not move. The words “whimpered” and “frantically” affect the tone of the story by A __ Creating a sense of sorrow B__ establishing a feeling of hopelessness C creating a sense of anxiety D _ establishing a feeling of confusion",
+    "32": "Question 32. How does paragraph 8 best help advance the plot of the story? 32 A by showing that Jake knows Charlie’s dog B by demonstrating how Mate responds to Jake’s voice C by having Jake realize Charlie may be in trouble D by illustrating the trust Jake inspires in Mate",
+    "33": "Question 33. What do the details in paragraphs 9 through 11 mainly reveal about Mate? 33 A He is popular in the town. B He cares deeply about his master. C He knows how to save lives. D He responds quickly to commands.",
+    "34": "Question 34. Which detail best shows how the author indicates the close friendship of Charlie and Mate to the reader? “Sailing in each other’s company provided a perfect afternoon for Charlie and Mate,’ A (paragraph 3) “Mate either slept on the sun-warmed deck or joined Charlie in the cockpit, B (paragraph 3) C_ “The cold seawater flew off Mate’s furry coat and splashed over Charlie,” (paragraph 10) D “Charlie softly whispered, ‘Shipshape!’ to Mate, then a little louder, ‘Hardtack!’ ” (paragraph 11)",
+    "35": "Question 35. A common saying is that “Dogs are man’s best friend.” Which detail from the story best supports 35 this idea? A Mate responds to words Charlie teaches him. B Mate walks with Charlie when they are in town. C Mate sleeps in the boat when Charlie is sailing. D Mate leaves the boat to get help for Charlie."
+  }
+}

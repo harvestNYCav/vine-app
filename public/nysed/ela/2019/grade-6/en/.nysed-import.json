@@ -1,0 +1,306 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "67f316ecaf723d7aa9bc073b59f61bccfa9087542188d8fb704636feae01b404",
+  "crops": {
+    "1": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "2": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        459.119
+      ]
+    },
+    "3": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        459.119,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "5": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        462.243
+      ]
+    },
+    "6": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        462.243,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "8": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        270.243
+      ]
+    },
+    "9": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        270.243,
+        584.0,
+        474.243
+      ]
+    },
+    "10": {
+      "sourcePage": 17,
+      "box": [
+        28.0,
+        474.243,
+        584.0,
+        702.372
+      ]
+    },
+    "11": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        258.243
+      ]
+    },
+    "12": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        258.243,
+        584.0,
+        483.119
+      ]
+    },
+    "13": {
+      "sourcePage": 18,
+      "box": [
+        28.0,
+        483.119,
+        584.0,
+        702.372
+      ]
+    },
+    "14": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    },
+    "29": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "30": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        534.243
+      ]
+    },
+    "31": {
+      "sourcePage": 22,
+      "box": [
+        28.0,
+        534.243,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        294.243
+      ]
+    },
+    "33": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        294.243,
+        584.0,
+        534.243
+      ]
+    },
+    "34": {
+      "sourcePage": 23,
+      "box": [
+        28.0,
+        534.243,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 24,
+      "box": [
+        28.0,
+        57.367,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 766,
+      "height": 328
+    },
+    "2": {
+      "width": 834,
+      "height": 327
+    },
+    "3": {
+      "width": 767,
+      "height": 328
+    },
+    "4": {
+      "width": 976,
+      "height": 323
+    },
+    "5": {
+      "width": 793,
+      "height": 327
+    },
+    "6": {
+      "width": 961,
+      "height": 404
+    },
+    "7": {
+      "width": 976,
+      "height": 381
+    },
+    "8": {
+      "width": 1103,
+      "height": 365
+    },
+    "9": {
+      "width": 869,
+      "height": 327
+    },
+    "10": {
+      "width": 1083,
+      "height": 364
+    },
+    "11": {
+      "width": 821,
+      "height": 328
+    },
+    "12": {
+      "width": 962,
+      "height": 393
+    },
+    "13": {
+      "width": 1048,
+      "height": 487
+    },
+    "14": {
+      "width": 943,
+      "height": 405
+    },
+    "29": {
+      "width": 1048,
+      "height": 405
+    },
+    "30": {
+      "width": 963,
+      "height": 398
+    },
+    "31": {
+      "width": 928,
+      "height": 328
+    },
+    "32": {
+      "width": 977,
+      "height": 405
+    },
+    "33": {
+      "width": 972,
+      "height": 404
+    },
+    "34": {
+      "width": 862,
+      "height": 328
+    },
+    "35": {
+      "width": 966,
+      "height": 328
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which important idea is developed in paragraph 6? 1 A Uncle Nigel has been at the museum a long time. B Uncle Nigel is afraid he may lose his job. C Uncle Nigel has a plan to attract visitors to the museum. D Uncle Nigel is hoping to start a new job soon.",
+    "2": "Question 2. What does the phrase “on a short fuse” mean as used in paragraph 8? 2 A hard to please B hard to find C easy to upset D easy to frighten",
+    "3": "Question 3. How does paragraph 9 contribute to the structure of the story? 3 A It changes the setting of the story. B It establishes the conflict in the story. C It states the theme of the story. D It foreshadows events in the story.",
+    "4": "Question 4. How does the language in paragraph 12 contribute to the overall tone of the story? 4 A It introduces a threatening tone. B It highlights the sorrowful tone. C It stresses the mysterious tone. D It creates a worried tone.",
+    "5": "Question 5. What do paragraphs 10 and 13 indicate about Addison? 5 A He is uncertain whether his uncle’s story is true. B He is curious to see what his uncle has found. C He knows that his uncle’s discovery will save the museum. D He wishes he had gone with his uncle on the dig.",
+    "6": "Question 6. Which sentence from the story signals a turning point? A “Addison and Molly weren’t sure how to respond.’ (paragraph 7) B “J just returned from a dig in the jungles of Bolivia and found the most improbable relic” (paragraph 9) “Instead, they locked it away in a secret chamber and hid three keys across the Incan Empire.’ (paragraph 12) D “The wind howled so fiercely it could be heard even in the basement.” (paragraph 17)",
+    "7": "Question 7. Which quotation is most important to include in a summary of the story? 7 A “. . . Addison and Molly knew the wooded grounds by heart.” (paragraph 2) B “ ‘Uncle Nigel, we’re here!’ Molly called.” (paragraph 5) “As Uncle Nigel talked, Addison’s eyes darted to the shadowy corners of the C office . . .” (paragraph 11) D “I’m pretty sure it is Atahualpa’s first key.” (paragraph 19)",
+    "8": "Question 8. In paragraph 4, what does the phrase “woman with the most statues in her honor” show about 8 Sacagawea? A that she was a charming person B that she had been fearless C that she is a famous person D that she died long ago",
+    "9": "Question 9. How is the author’s pride in her ability to read introduced in the article? 9 A through a story from her childhood B by contrasting her family with other families C through examples of the books she finished D by comparing herself with other readers",
+    "10": "Question 10. How do the details about Sacagawea in paragraphs 5 and 6 contribute to the development of 10 the article? A by helping readers see the difficulties in Sacagawea’s life B by explaining the mystery surrounding Sacagawea’s life C by creating curiosity for readers about where Sacagawea traveled D by describing how Sacagawea played an important role in history",
+    "11": "Question 11. Which is the best definition of “crucial” as it is used in paragraph 6? 11 A heroic B fantastic C important D urgent",
+    "12": "Question 12. Based on the article, the author’s relationship to Sacagawea is developed through 12 A a comparison of the author’s life to that of Sacagawea B explanations that show how the author is similar to Sacagawea C examples of the research that the author did on the life of Sacagawea a chronological sequence of events that explained Sacagawea’s life to the D author",
+    "13": "Question 13. Read this sentence from paragraph 13. 13 We’re cousins of the Shoshone woman with the baby on her back who explored America by canoe, horseback, and on foot to map it for the first time. What does this sentence suggest about Sacagawea? A how long she participated in the expedition B how remarkable her accomplishment was C how familiar she was with the areas being explored D how she felt about her leadership abilities",
+    "14": "Question 14. Which sentence best expresses a central idea of the article? A “Our family owned only an encyclopedia and a well-used dictionary” (paragraph 2) B “The presence of a mother and child was a sign that the expedition was a peaceful one and helped keep it safe from Indian attack.” (paragraph 5) Cc “My father said he didn’t know, but he’d wondered himself if we had a common ancestor.” (paragraph 9) D “We explored tiny libraries on American Indian reservations.” (paragraph 10)",
+    "29": "Question 29. What do paragraphs 5 through 7 show about the author’s purpose for writing the article? A The author wants to convince readers that school was the only way to advance in Ancient Egypt. B The author wants to describe to readers what school was like for students in Ancient Egypt. Cc The author wants to explain to readers why students had to write on limestone in Ancient Egypt. D The author wants to entertain readers with interesting stories about life in Ancient Egypt.",
+    "30": "Question 30. How does the author develop ideas in paragraph 6? 30 by explaining why Ancient Egyptian brushes had to be made out of reed A plants by describing the process of making Ancient Egyptian ink from beginning B to end by presenting the problem that Ancient Egyptian ink came only in red and C black and offering a solution by comparing and contrasting Ancient Egyptian writing tools to art tools D that are familiar to modern readers",
+    "31": "Question 31. What does the information in paragraph 8 illustrate about becoming a scribe? 31 A It can lead to a successful future. B It gives the opportunity to write on papyrus paper. C It requires memorization of hundreds of signs. D It means leaving home at a young age to attend school.",
+    "32": "Question 32. Which quotation best expresses a central idea of the article? A “Scribes were very important people in Ancient Egypt because they were almost the only ones who could read and write.’ (paragraph 2) B “Although records tell us that there were a few female scribes, most were men.” (paragraph 2) Cc “Scribal students used writing tools somewhat like the parts of a water color set you might have.” (paragraph 6) D “They wrote letters home and sent bills for work they'd done” (paragraph 9)",
+    "33": "Question 33. Which quotation from the article is best supported by the photograph? A “This was a kind of shorthand script used for everyday writing.” (paragraph 4) B “Students memorized the hieroglyphic signs and practiced writing them on pieces of stone, pottery, or wood.” (paragraph 5) Cc “They wrote poetry and stories and put down words of wisdom and advice for their children” (paragraph 9) D “Parents were happy to pay the high price to send a child to scribal school.” (paragraph 10)",
+    "34": "Question 34. In the father’s letter, the phrase “Mingling with the crocodiles” suggests 34 A the low pay of some types of work B the foolishness of avoiding work C the presence of danger in other jobs D the need to try hard in any job",
+    "35": "Question 35. Which sentence would be most important to include in a summary of the article? 35 A Egyptians used hieratic for everyday writing. B Students made ink from red and black disks. C Scribes wrote important things on papyrus. D Children studied for years to become scribes."
+  }
+}

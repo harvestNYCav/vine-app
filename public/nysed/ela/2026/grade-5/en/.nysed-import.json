@@ -1,0 +1,390 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "2": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        488.7
+      ]
+    },
+    "3": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        488.7,
+        584.0,
+        702.372
+      ]
+    },
+    "4": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "5": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        495.9
+      ]
+    },
+    "6": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        495.9,
+        584.0,
+        702.372
+      ]
+    },
+    "7": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "15": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "16": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        512.55
+      ]
+    },
+    "17": {
+      "sourcePage": 13,
+      "box": [
+        28.0,
+        512.55,
+        584.0,
+        702.372
+      ]
+    },
+    "18": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        310.95
+      ]
+    },
+    "19": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        310.95,
+        584.0,
+        524.25
+      ]
+    },
+    "20": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        524.25,
+        584.0,
+        706.6
+      ]
+    },
+    "21": {
+      "sourcePage": 15,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    },
+    "22": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        335.7
+      ]
+    },
+    "23": {
+      "sourcePage": 19,
+      "box": [
+        28.0,
+        335.7,
+        584.0,
+        702.372
+      ]
+    },
+    "24": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        251.1
+      ]
+    },
+    "25": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        251.1,
+        584.0,
+        524.25
+      ]
+    },
+    "26": {
+      "sourcePage": 20,
+      "box": [
+        28.0,
+        524.25,
+        584.0,
+        706.6
+      ]
+    },
+    "27": {
+      "sourcePage": 21,
+      "box": [
+        28.0,
+        50.4,
+        584.0,
+        706.6
+      ]
+    },
+    "29": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        252.0
+      ]
+    },
+    "30": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        252.0,
+        584.0,
+        452.7
+      ]
+    },
+    "31": {
+      "sourcePage": 29,
+      "box": [
+        28.0,
+        452.7,
+        584.0,
+        702.372
+      ]
+    },
+    "32": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        245.7
+      ]
+    },
+    "33": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        245.7,
+        584.0,
+        441.9
+      ]
+    },
+    "34": {
+      "sourcePage": 30,
+      "box": [
+        28.0,
+        441.9,
+        584.0,
+        702.372
+      ]
+    },
+    "35": {
+      "sourcePage": 31,
+      "box": [
+        28.0,
+        50.85,
+        584.0,
+        702.372
+      ]
+    }
+  },
+  "selectableFooterMask": "selectable-footer-lane-v1",
+  "outputs": {
+    "1": {
+      "width": 803,
+      "height": 314
+    },
+    "2": {
+      "width": 1131,
+      "height": 405
+    },
+    "3": {
+      "width": 798,
+      "height": 314
+    },
+    "4": {
+      "width": 735,
+      "height": 314
+    },
+    "5": {
+      "width": 932,
+      "height": 410
+    },
+    "6": {
+      "width": 1047,
+      "height": 313
+    },
+    "7": {
+      "width": 828,
+      "height": 314
+    },
+    "15": {
+      "width": 999,
+      "height": 314
+    },
+    "16": {
+      "width": 928,
+      "height": 441
+    },
+    "17": {
+      "width": 996,
+      "height": 314
+    },
+    "18": {
+      "width": 956,
+      "height": 444
+    },
+    "19": {
+      "width": 1078,
+      "height": 348
+    },
+    "20": {
+      "width": 1119,
+      "height": 347
+    },
+    "21": {
+      "width": 1105,
+      "height": 314
+    },
+    "22": {
+      "width": 1123,
+      "height": 506
+    },
+    "23": {
+      "width": 1115,
+      "height": 469
+    },
+    "24": {
+      "width": 1076,
+      "height": 315
+    },
+    "25": {
+      "width": 1077,
+      "height": 471
+    },
+    "26": {
+      "width": 1019,
+      "height": 316
+    },
+    "27": {
+      "width": 1145,
+      "height": 407
+    },
+    "29": {
+      "width": 725,
+      "height": 314
+    },
+    "30": {
+      "width": 766,
+      "height": 313
+    },
+    "31": {
+      "width": 951,
+      "height": 313
+    },
+    "32": {
+      "width": 666,
+      "height": 312
+    },
+    "33": {
+      "width": 939,
+      "height": 314
+    },
+    "34": {
+      "width": 661,
+      "height": 314
+    },
+    "35": {
+      "width": 1112,
+      "height": 500
+    }
+  },
+  "altText": {
+    "1": "Question 1. What is the main way paragraphs 8 through 11 develop the story? 1 A by introducing Edie’s mother B by suggesting a possible conflict C by introducing Edie’s character D by describing the drive to school",
+    "2": "Question 2. Which detail from the story best supports the narrator’s claim that she feels different from others 2 in school? “I don’t know what to say to that, so we are silent as we make our way up the stairs . . .” A (paragraph 15) “Like we don’t belong in certain areas just because no one was expecting us.” B (paragraph 15) C “A new kid in school is always exciting around here . . .” (paragraph 16) D “But the looks are curious more than anything else.” (paragraph 16)",
+    "3": "Question 3. In paragraphs 12 through 17, how does the setting affect the plot? 3 A by showing why Edie feels confident B by introducing the characters Edie and Alberta C by describing why Alberta is nervous D by demonstrating why Edie and Alberta are friends",
+    "4": "Question 4. Which theme is best supported in paragraphs 16 and 17? A Unfamiliar situations are often difficult for people. B Communication between friends is sometimes silent. C Friendship helps people during difficult times. D___ Some people appear confident wherever they are.",
+    "5": "Question 5. Read this sentence from paragraph 17. 5 My stomach flutters and I feel those jitters settling in, right on time. Which statement best describes the narrator’s feelings in this sentence? A She is used to feeling uneasy when going to school. B She is concerned about how the students will treat Edie. C She is worried about having to attend a new school. D She is upset that Edie is receiving most of the attention.",
+    "6": "Question 6. Which detail would be most important to include in a summary of the story? 6 A “Normally I’d ride my bike, but Ms. Whitman offered to drive us . . .” (paragraph 2) B “It sounds like an entire cabinet of dishes just fell . . .” (paragraph 5) C “Edie chews and swallows the last of her doughnut . . .” (paragraph 14) D “How is the new girl more comfortable than I am . . .” (paragraph 17)",
+    "7": "Question 7. The narrator mainly helps the reader understand Edie by describing A__ Edie’s response to the students who look at her B_ whya pair of jeans is important to Edie C__Edie’s decision to wear combat boots at school D__ how Edie takes sips of her mother’s coffee",
+    "15": "Question 15. In paragraph 8, why does the author refer to spores as being like “mushroom seeds”? 15 A to explain that spores can grow into mushrooms B to emphasize the small size of most spores C to describe how spores are moved by wind D to explain that mushrooms grow underground",
+    "16": "Question 16. Read this claim from paragraph 2. ..- Mueller knows that mushrooms are here-today, gone-tomorrow treasures. How do the details in paragraph 9 support this claim? A__ by referring to the time mushrooms spend underground B__ by describing how mushrooms swell with water C_ _ byreferring to some mushrooms that grow through cement D __ by describing what happens after mushrooms release their spores",
+    "17": "Question 17. Which detail best represents a central idea of the article? A “But fungi are all around, even when we don't see them.” (paragraph 6) B “‘Asingle strand is too small to see.” (paragraph 7) C “The color will help him identify the mushroom.” (paragraph 8) D “Unlike plant seeds, spores aren't packed with their own food.” (paragraph 10)",
+    "18": "Question 18. Read this sentence from paragraph 12. “We wouldn't even be able to walk around the Earth because of all the dead trees.” What purpose does this sentence serve in the article? A _ tohighlight an important role that fungi play B___ to explain why fungi burst out of the ground C___ to describe how fungi spread over large areas D to indicate a typical place where fungi are found",
+    "19": "Question 19. In the section titled “How Fungi Function,’ the author best develops the idea that fungi and 19 plants help each other by A __ describing the way fungi filter water in the soil B__ showing how fungi spores help fruit to develop C describing how fungi roots create food for insects D__ showing how fungi and trees share their food",
+    "20": "Question 20. As used in paragraph 14, what does the phrase “like a living internet” suggest about hyphae and tree roots? A Hyphae help provide trees with minerals. B Hyphae and trees are connected in a vast system. C __ Trees need hyphae to grow to larger sizes. D __ Trees and hyphae require each other to survive.",
+    "21": "Question 21. In the article, what do both the author and the scientist agree is the main importance of fungi? 21 A their method of reproducing by releasing millions of spores B the number of forms they take as well as the chitin in their cell walls C their designation as a life form that is separate from plants and animals D their role as decomposers as well as their partnerships with other life forms",
+    "22": "Question 22. Which detail from the article best supports the claim in paragraph 2 that members of Venturing Crew 115 enjoy going to places that are difficult to reach? “After the holidays, the Venturers get to work on their sleds. Those snowmobiles aren't A going to take care of themselves, after all.” (paragraph 8) “The crew conducts training exercises on a snow-covered airfield. It’s nice and flat and B __ wide open—perfect for beginners and those who need to brush up on their skills.” (paragraph 9) “They start by hauling the snowmobiles and camping gear as far as they can into the c wilderness until the road ends.’ (paragraph 10) “The crew spends several weeks taking classes on proper winter clothing and how to stay warm in the cold environment” (paragraph 16)",
+    "23": "Question 23. Which statement best describes how the word choice in paragraphs 4 and 5 reflects the tone of the whole article? The explanation that the Venturers go “to the same spot” in paragraph 4 reflects the A comfortable tone of the article. The description of the natural “thick, high brush” in paragraph 4 reflects the peaceful B tone of the article. c The explanation that there is “12 feet of snow” in paragraph 5 reflects the anxious tone of the article. D The description of the Venturers’ wild campsite as a “paradise” in paragraph 5 reflects the positive tone of the article.",
+    "24": "Question 24. How are the details in paragraph 12 connected to the details in paragraph 14? A __ byshowing the first and last steps in the process of building the Venturers’ shelter B__ by describing the problem with shelter building and the solution the Venturers found C__ bycontrasting different methods the Venturers have used to build their shelter D _ byexplaining how the Venturers’ process of building a shelter has changed over time",
+    "25": "Question 25. Which detail from the article most likely reveals the author’s opinion about the Venturers’ campsite? “When they get to their spot—about 5,000 feet above sea level—they begin setting up A camp,’ (paragraph 11) “As the fire burns, the platform drops deeper and deeper into the snow, at the rate of B about 1 foot per hour? (paragraph 12) Cc “It’s like a miniature coliseum, and it’s the perfect winter shelter—protected from the wind and warmed by the fire” (paragraph 14) “They are usually able to get back to the same spot the very next weekend for another D three nights” ree nights.’ (paragraph 17)",
+    "26": "Question 26. Which sentence best states a central idea of the article? A __ Places where it is difficult to camp often make excellent spots for snowmobiling. B Venturing Crew 115 has to work hard to enjoy being at Snowcamp. C Snowmobiling can sometimes be dangerous for people with a lack of training. D Participating in Snowcamp requires special clothing to protect against the cold.",
+    "27": "Question 27. Washington State law requires that all people aged 12 through 16 must pass a Snowmobile Safety Course before they drive a snowmobile. How does this idea connect with the details in the article? A __ Itexplains that Snowcamp is attended by relatively few people because of the strict rules. B It shows that the Venturers do the same amount of work as other people to learn snowmobiling. c It supports the idea that people in Washington State take pride in its snowmobiling opportunities. D__ It supports the idea that snowmobiling can be dangerous and requires practice and skill.",
+    "29": "Question 29. Paragraphs 1 and 3 contribute to the story by 29 A foreshadowing events that will happen later B providing details that develop the main character C explaining the problem that the characters will solve D describing events that happened at an earlier time",
+    "30": "Question 30. The word “modestly” in paragraph 4 suggests that the narrator A does not want to point out her own talents B does not feel that Tyler is being honest C__ gets teased by the others in her group D gets help from her family on her project",
+    "31": "Question 31. What does the phrase “going live” mean as it is used in paragraph 8 of the story? 31 A making the content available to all B announcing the project to the school C requesting feedback from others D accessing the new computer system",
+    "32": "Question 32. What is the narrator’s opinion about the club’s name? 32 A It should be decided by the leader. B It should be a secret to students. C It should be more exciting. D It should be easier to understand.",
+    "33": "Question 33. How are the narrator and Rosie similar? 33 A __ They both get annoyed at the computers the Intranet Club uses. B They are both interested in telling the school about the Intranet Club. C__ They both take their responsibilities in the Intranet Club seriously. D They are both worried that the Intranet Club interferes with their sports.",
+    "34": "Question 34. Which sentence best states a theme of the story? 34 A Working together can make people feel closer. B Completing a task can cause a feeling of pride. C Asking for help can be difficult. D Trying something new can be frightening.",
+    "35": "Question 35. This story takes place at a time years ago when computers were not common in classrooms and very few students were taught programming skills. How does this information help develop an important idea about the characters in the story? A Students in the Intranet Club are all patient people who work well with others because they have to share the few computers available to them. Students in the Intranet Club are all exceptional because they try an activity that is new, B difficult, and unknown by other students at their school. c Students in the Intranet Club are all very mature because they choose to work with computers knowing that it will help them in their future careers. D Students in the Intranet Club are persuasive people because they are able to convince their schools to try new technology before it is widely accepted."
+  }
+}

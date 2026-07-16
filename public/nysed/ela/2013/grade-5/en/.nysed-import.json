@@ -1,0 +1,95 @@
+{
+  "scriptVersion": "ela-2",
+  "dpi": 160,
+  "sourcePdfSha256": "656e83cc8e0d59fb17ef905519f4206a6d589e38e03d603c2ba2bb73cf48be05",
+  "crops": {
+    "1": {
+      "sourcePage": 7,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        222.129
+      ]
+    },
+    "2": {
+      "sourcePage": 8,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        178.305
+      ]
+    },
+    "3": {
+      "sourcePage": 9,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        190.306
+      ]
+    },
+    "4": {
+      "sourcePage": 11,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        193.305
+      ]
+    },
+    "5": {
+      "sourcePage": 12,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        242.346
+      ]
+    },
+    "6": {
+      "sourcePage": 14,
+      "box": [
+        28.0,
+        65.711,
+        575.0,
+        193.941
+      ]
+    }
+  },
+  "outputs": {
+    "1": {
+      "width": 1052,
+      "height": 347
+    },
+    "2": {
+      "width": 1012,
+      "height": 250
+    },
+    "3": {
+      "width": 1028,
+      "height": 277
+    },
+    "4": {
+      "width": 1104,
+      "height": 283
+    },
+    "5": {
+      "width": 1108,
+      "height": 392
+    },
+    "6": {
+      "width": 1096,
+      "height": 285
+    }
+  },
+  "altText": {
+    "1": "Question 1. Which of the following best summarizes the main idea of the passage? A “Researchers use wind tunnels to learn more about how an aircraft will fly.” (paragraph 1) B “Special instruments are often used to measure the force of the air on the object.” (paragraph 2) C “NASA engineers tested ideas for the design of Ares in wind tunnels.” (paragraph 6) D “Long after the first design work is finished, NASA can still use wind tunnels.” (paragraph 7)",
+    "2": "Question 2. Which key detail helps the reader understand the importance of using wind tunnels? A Wind tunnels can move air more than 4,000 miles per hour. B Wind tunnels are design tools that help make safer aircraft vehicles. C Wind tunnels can create different atmospheres. D Wind tunnels are large tubes that show how air moves.",
+    "3": "Question 3. The statement that “NASA also works with others that need to use wind tunnels” most strongly suggests that A many different groups are developing space shuttles B NASA hopes to buy vehicles made by other agencies C NASA has the largest wind tunnels in existence D many companies do not have their own wind tunnels",
+    "4": "Question 4. The most important feature of a wind tunnel used to test vehicles that can land on Mars is the ability to test how A gravity affects vehicles B a thin atmosphere affects vehicles C high-speed winds affect vehicles D freezing temperatures affect vehicles",
+    "5": "Question 5. Which sentence from the passage best explains why NASA uses wind tunnels to test spacecraft models? A “These vehicles are made to operate in space.” (paragraph 5) B “Spacecraft and rockets have to travel through the atmosphere to get to space.” (paragraph 5) C “They needed to know what would happen to different designs when the spacecraft came back through the atmosphere.\" (paragraph 6) D “Some are only a few inches square, and some are large enough to test a full-size airplane.” (paragraph 9)",
+    "6": "Question 6. Which sentence from the passage best explains how a wind tunnel works? A “NASA uses wind tunnels to test scale models of aircraft and spacecraft.” (paragraph 1) B “The object to be tested is fastened in the tunnel so that it will not move.” (paragraph 2) C “The air moving around the still object shows what would happen if the object were moving through the air.” (paragraph 2) D “Smoke or dye can be placed in the air and can be seen as it moves.” (paragraph 2)"
+  }
+}
