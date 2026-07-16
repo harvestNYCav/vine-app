@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generatedAt": "2026-06-30T00:00:00Z",
   "accessedAt": "2026-07-15",
   "sourceUpdatedAt": "2026-06-30",
@@ -28,7 +28,14 @@
               "pageStart": 4,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-3/en/passage-1-6.webp",
+            "width": 1090,
+            "height": 3021,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g3-stimulus-13-19",
@@ -42,7 +49,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-3/en/passage-13-19.webp",
+            "width": 1091,
+            "height": 3288,
+            "alt": "Official passage for Questions 13-19. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g3-stimulus-20-24",
@@ -56,7 +70,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-3/en/passage-20-24.webp",
+            "width": 1088,
+            "height": 3579,
+            "alt": "Official passage for Questions 20-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g3-stimulus-26-31",
@@ -70,7 +91,14 @@
               "pageStart": 25,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-3/en/passage-26-31.webp",
+            "width": 1087,
+            "height": 3629,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -507,7 +535,14 @@
               "pageStart": 4,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-4/en/passage-1-6.webp",
+            "width": 1086,
+            "height": 3402,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g4-stimulus-13-19",
@@ -521,7 +556,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-4/en/passage-13-19.webp",
+            "width": 1087,
+            "height": 3138,
+            "alt": "Official passage for Questions 13-19. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g4-stimulus-20-24",
@@ -535,7 +577,14 @@
               "pageStart": 15,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-4/en/passage-20-24.webp",
+            "width": 1085,
+            "height": 4324,
+            "alt": "Official passage for Questions 20-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         },
         {
           "id": "nysed-ela-2026-g4-stimulus-26-31",
@@ -549,7 +598,14 @@
               "pageStart": 26,
               "pageEnd": 29
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-4/en/passage-26-31.webp",
+            "width": 1087,
+            "height": 4135,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         }
       ],
       "questions": [
@@ -986,7 +1042,14 @@
               "pageStart": 4,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-5/en/passage-1-7.webp",
+            "width": 1093,
+            "height": 2988,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g5-stimulus-15-21",
@@ -1000,7 +1063,14 @@
               "pageStart": 10,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-5/en/passage-15-21.webp",
+            "width": 1083,
+            "height": 3235,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g5-stimulus-22-27",
@@ -1014,7 +1084,14 @@
               "pageStart": 16,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-5/en/passage-22-27.webp",
+            "width": 1088,
+            "height": 3666,
+            "alt": "Official passage for Questions 22-27. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g5-stimulus-29-35",
@@ -1028,7 +1105,14 @@
               "pageStart": 27,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-5/en/passage-29-35.webp",
+            "width": 1088,
+            "height": 2111,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -1516,7 +1600,14 @@
               "pageStart": 4,
               "pageEnd": 5
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-6/en/passage-1-7.webp",
+            "width": 1087,
+            "height": 2629,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2026-g6-stimulus-15-21",
@@ -1530,7 +1621,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-6/en/passage-15-21.webp",
+            "width": 1086,
+            "height": 2527,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2026-g6-stimulus-22-27",
@@ -1544,7 +1642,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-6/en/passage-22-27.webp",
+            "width": 1086,
+            "height": 3001,
+            "alt": "Official passage for Questions 22-27. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g6-stimulus-29-35",
@@ -1558,7 +1663,14 @@
               "pageStart": 24,
               "pageEnd": 25
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-6/en/passage-29-35.webp",
+            "width": 1088,
+            "height": 2648,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -2046,7 +2158,14 @@
               "pageStart": 4,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-7/en/passage-1-7.webp",
+            "width": 1088,
+            "height": 2679,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g7-stimulus-15-21",
@@ -2060,7 +2179,14 @@
               "pageStart": 10,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-7/en/passage-15-21.webp",
+            "width": 1089,
+            "height": 2731,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g7-stimulus-22-27",
@@ -2074,7 +2200,14 @@
               "pageStart": 16,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-7/en/passage-22-27.webp",
+            "width": 1088,
+            "height": 2778,
+            "alt": "Official passage for Questions 22-27. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g7-stimulus-29-35",
@@ -2088,7 +2221,14 @@
               "pageStart": 26,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-7/en/passage-29-35.webp",
+            "width": 1088,
+            "height": 2780,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g7-stimulus-36-42",
@@ -2102,7 +2242,14 @@
               "pageStart": 32,
               "pageEnd": 33
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-7/en/passage-36-42.webp",
+            "width": 1087,
+            "height": 2686,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -2709,7 +2856,14 @@
               "pageStart": 4,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-8/en/passage-1-7.webp",
+            "width": 1084,
+            "height": 3392,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g8-stimulus-15-21",
@@ -2723,7 +2877,14 @@
               "pageStart": 10,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-8/en/passage-15-21.webp",
+            "width": 1089,
+            "height": 3117,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g8-stimulus-22-27",
@@ -2737,7 +2898,14 @@
               "pageStart": 16,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-8/en/passage-22-27.webp",
+            "width": 1088,
+            "height": 3228,
+            "alt": "Official passage for Questions 22-27. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g8-stimulus-29-35",
@@ -2751,7 +2919,14 @@
               "pageStart": 26,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-8/en/passage-29-35.webp",
+            "width": 1090,
+            "height": 2827,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2026-g8-stimulus-36-42",
@@ -2765,7 +2940,14 @@
               "pageStart": 32,
               "pageEnd": 34
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2026/grade-8/en/passage-36-42.webp",
+            "width": 1088,
+            "height": 2876,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -3372,7 +3554,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-3/en/passage-1-6.webp",
+            "width": 1086,
+            "height": 3387,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g3-stimulus-19-23",
@@ -3386,7 +3575,14 @@
               "pageStart": 14,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-3/en/passage-19-23.webp",
+            "width": 1084,
+            "height": 3314,
+            "alt": "Official passage for Questions 19-23. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         },
         {
           "id": "nysed-ela-2025-g3-stimulus-26-31",
@@ -3400,7 +3596,14 @@
               "pageStart": 25,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-3/en/passage-26-31.webp",
+            "width": 1084,
+            "height": 3064,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -3718,7 +3921,14 @@
               "pageStart": 9,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-4/en/passage-1-6.webp",
+            "width": 1087,
+            "height": 3988,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         },
         {
           "id": "nysed-ela-2025-g4-stimulus-19-23",
@@ -3732,7 +3942,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-4/en/passage-19-23.webp",
+            "width": 1085,
+            "height": 3133,
+            "alt": "Official passage for Questions 19-23. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g4-stimulus-26-31",
@@ -3746,7 +3963,14 @@
               "pageStart": 25,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-4/en/passage-26-31.webp",
+            "width": 1088,
+            "height": 3109,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -4064,7 +4288,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-5/en/passage-8-14.webp",
+            "width": 1086,
+            "height": 3446,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g5-stimulus-22-26",
@@ -4078,7 +4309,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-5/en/passage-22-26.webp",
+            "width": 1088,
+            "height": 2211,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2025-g5-stimulus-29-35",
@@ -4092,7 +4330,14 @@
               "pageStart": 25,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-5/en/passage-29-35.webp",
+            "width": 1087,
+            "height": 2760,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -4444,7 +4689,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-6/en/passage-8-14.webp",
+            "width": 1089,
+            "height": 2772,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g6-stimulus-22-26",
@@ -4458,7 +4710,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-6/en/passage-22-26.webp",
+            "width": 1088,
+            "height": 3432,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g6-stimulus-29-35",
@@ -4472,7 +4731,14 @@
               "pageStart": 26,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-6/en/passage-29-35.webp",
+            "width": 1086,
+            "height": 3271,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -4824,7 +5090,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-7/en/passage-1-7.webp",
+            "width": 1085,
+            "height": 3049,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g7-stimulus-22-26",
@@ -4838,7 +5111,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-7/en/passage-22-26.webp",
+            "width": 1087,
+            "height": 2343,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2025-g7-stimulus-29-35",
@@ -4852,7 +5132,14 @@
               "pageStart": 25,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-7/en/passage-29-35.webp",
+            "width": 1087,
+            "height": 2950,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g7-stimulus-36-42",
@@ -4866,7 +5153,14 @@
               "pageStart": 31,
               "pageEnd": 33
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-7/en/passage-36-42.webp",
+            "width": 1086,
+            "height": 2826,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -5337,7 +5631,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-8/en/passage-1-7.webp",
+            "width": 1087,
+            "height": 2844,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g8-stimulus-22-26",
@@ -5351,7 +5652,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-8/en/passage-22-26.webp",
+            "width": 1086,
+            "height": 2949,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2025-g8-stimulus-29-35",
@@ -5365,7 +5673,14 @@
               "pageStart": 26,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-8/en/passage-29-35.webp",
+            "width": 1088,
+            "height": 2449,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2025-g8-stimulus-36-42",
@@ -5379,7 +5694,14 @@
               "pageStart": 31,
               "pageEnd": 33
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2025/grade-8/en/passage-36-42.webp",
+            "width": 1085,
+            "height": 3152,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -5850,7 +6172,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-3/en/passage-13-18.webp",
+            "width": 1089,
+            "height": 3989,
+            "alt": "Official passage for Questions 13-18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g3-stimulus-19-23",
@@ -5864,7 +6193,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-3/en/passage-19-23.webp",
+            "width": 1086,
+            "height": 3549,
+            "alt": "Official passage for Questions 19-23. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g3-stimulus-26-31",
@@ -5878,7 +6214,14 @@
               "pageStart": 24,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-3/en/passage-26-31.webp",
+            "width": 1086,
+            "height": 2846,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -6196,7 +6539,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-4/en/passage-1-6.webp",
+            "width": 1086,
+            "height": 2887,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g4-stimulus-19-23",
@@ -6210,7 +6560,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-4/en/passage-19-23.webp",
+            "width": 1086,
+            "height": 2748,
+            "alt": "Official passage for Questions 19-23. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2024-g4-stimulus-26-31",
@@ -6224,7 +6581,14 @@
               "pageStart": 24,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-4/en/passage-26-31.webp",
+            "width": 1086,
+            "height": 3670,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -6542,7 +6906,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-5/en/passage-1-7.webp",
+            "width": 1086,
+            "height": 3251,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g5-stimulus-22-26",
@@ -6556,7 +6927,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-5/en/passage-22-26.webp",
+            "width": 1087,
+            "height": 2056,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2024-g5-stimulus-29-35",
@@ -6570,7 +6948,14 @@
               "pageStart": 24,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-5/en/passage-29-35.webp",
+            "width": 1086,
+            "height": 2752,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -6922,7 +7307,14 @@
               "pageStart": 9,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-6/en/passage-15-21.webp",
+            "width": 1086,
+            "height": 4633,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         },
         {
           "id": "nysed-ela-2024-g6-stimulus-22-26",
@@ -6936,7 +7328,14 @@
               "pageStart": 16,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-6/en/passage-22-26.webp",
+            "width": 1083,
+            "height": 3627,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g6-stimulus-29-35",
@@ -6950,7 +7349,14 @@
               "pageStart": 26,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-6/en/passage-29-35.webp",
+            "width": 1084,
+            "height": 2439,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -7302,7 +7708,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-7/en/passage-15-21.webp",
+            "width": 1086,
+            "height": 3047,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g7-stimulus-22-26",
@@ -7316,7 +7729,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-7/en/passage-22-26.webp",
+            "width": 1087,
+            "height": 2889,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g7-stimulus-29-35",
@@ -7330,7 +7750,14 @@
               "pageStart": 25,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-7/en/passage-29-35.webp",
+            "width": 1086,
+            "height": 2186,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2024-g7-stimulus-36-42",
@@ -7344,7 +7771,14 @@
               "pageStart": 30,
               "pageEnd": 31
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-7/en/passage-36-42.webp",
+            "width": 1088,
+            "height": 2061,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -7815,7 +8249,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-8/en/passage-15-21.webp",
+            "width": 1086,
+            "height": 2107,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2024-g8-stimulus-22-26",
@@ -7829,7 +8270,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-8/en/passage-22-26.webp",
+            "width": 1087,
+            "height": 2896,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2024-g8-stimulus-29-35",
@@ -7843,7 +8291,14 @@
               "pageStart": 24,
               "pageEnd": 25
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-8/en/passage-29-35.webp",
+            "width": 1086,
+            "height": 2519,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2024-g8-stimulus-36-42",
@@ -7857,7 +8312,14 @@
               "pageStart": 29,
               "pageEnd": 30
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2024/grade-8/en/passage-36-42.webp",
+            "width": 1087,
+            "height": 2714,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -8328,7 +8790,14 @@
               "pageStart": 9,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-3/en/passage-1-6.webp",
+            "width": 1086,
+            "height": 4361,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         },
         {
           "id": "nysed-ela-2023-g3-stimulus-19-23",
@@ -8342,7 +8811,14 @@
               "pageStart": 15,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-3/en/passage-19-23.webp",
+            "width": 1082,
+            "height": 4278,
+            "alt": "Official passage for Questions 19-23. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         },
         {
           "id": "nysed-ela-2023-g3-stimulus-26-31",
@@ -8356,7 +8832,14 @@
               "pageStart": 26,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-3/en/passage-26-31.webp",
+            "width": 1087,
+            "height": 3998,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -8674,7 +9157,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-4/en/passage-1-6.webp",
+            "width": 1088,
+            "height": 3812,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2023-g4-stimulus-19-23",
@@ -8688,7 +9178,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-4/en/passage-19-23.webp",
+            "width": 1083,
+            "height": 2363,
+            "alt": "Official passage for Questions 19-23. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g4-stimulus-26-31",
@@ -8702,7 +9199,14 @@
               "pageStart": 23,
               "pageEnd": 25
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-4/en/passage-26-31.webp",
+            "width": 1084,
+            "height": 2848,
+            "alt": "Official passage for Questions 26-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -9020,7 +9524,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-5/en/passage-1-7.webp",
+            "width": 1087,
+            "height": 2846,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2023-g5-stimulus-22-26",
@@ -9034,7 +9545,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-5/en/passage-22-26.webp",
+            "width": 1084,
+            "height": 2352,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g5-stimulus-29-35",
@@ -9048,7 +9566,14 @@
               "pageStart": 24,
               "pageEnd": 25
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-5/en/passage-29-35.webp",
+            "width": 1090,
+            "height": 2577,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -9400,7 +9925,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-6/en/passage-1-7.webp",
+            "width": 1088,
+            "height": 2432,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g6-stimulus-22-26",
@@ -9414,7 +9946,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-6/en/passage-22-26.webp",
+            "width": 1088,
+            "height": 3241,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2023-g6-stimulus-29-35",
@@ -9428,7 +9967,14 @@
               "pageStart": 24,
               "pageEnd": 25
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-6/en/passage-29-35.webp",
+            "width": 1086,
+            "height": 2375,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -9780,7 +10326,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-7/en/passage-15-21.webp",
+            "width": 1087,
+            "height": 2797,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g7-stimulus-22-26",
@@ -9794,7 +10347,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-7/en/passage-22-26.webp",
+            "width": 990,
+            "height": 2378,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g7-stimulus-29-35",
@@ -9808,7 +10368,14 @@
               "pageStart": 23,
               "pageEnd": 24
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-7/en/passage-29-35.webp",
+            "width": 1088,
+            "height": 2186,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g7-stimulus-36-42",
@@ -9822,7 +10389,14 @@
               "pageStart": 28,
               "pageEnd": 29
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-7/en/passage-36-42.webp",
+            "width": 1088,
+            "height": 2536,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -10293,7 +10867,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-8/en/passage-1-7.webp",
+            "width": 1088,
+            "height": 3344,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2023-g8-stimulus-22-26",
@@ -10307,7 +10888,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-8/en/passage-22-26.webp",
+            "width": 1086,
+            "height": 2568,
+            "alt": "Official passage for Questions 22-26. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2023-g8-stimulus-29-35",
@@ -10321,7 +10909,14 @@
               "pageStart": 24,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-8/en/passage-29-35.webp",
+            "width": 1085,
+            "height": 2728,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2023-g8-stimulus-36-42",
@@ -10335,7 +10930,14 @@
               "pageStart": 30,
               "pageEnd": 31
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2023/grade-8/en/passage-36-42.webp",
+            "width": 1086,
+            "height": 2702,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -10806,7 +11408,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-3/en/passage-1-6.webp",
+            "width": 1033,
+            "height": 2474,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2022-g3-stimulus-7-12",
@@ -10820,7 +11429,14 @@
               "pageStart": 13,
               "pageEnd": 14
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-3/en/passage-7-12.webp",
+            "width": 1033,
+            "height": 2480,
+            "alt": "Official passage for Questions 7-12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -11053,7 +11669,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-4/en/passage-1-6.webp",
+            "width": 1031,
+            "height": 2750,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2022-g4-stimulus-19-24",
@@ -11067,7 +11690,14 @@
               "pageStart": 13,
               "pageEnd": 14
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-4/en/passage-19-24.webp",
+            "width": 1031,
+            "height": 2297,
+            "alt": "Official passage for Questions 19-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -11300,7 +11930,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-5/en/passage-1-7.webp",
+            "width": 1031,
+            "height": 3029,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2022-g5-stimulus-8-14",
@@ -11314,7 +11951,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-5/en/passage-8-14.webp",
+            "width": 1039,
+            "height": 3290,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2022-g5-stimulus-29-35",
@@ -11328,7 +11972,14 @@
               "pageStart": 21,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-5/en/passage-29-35.webp",
+            "width": 1029,
+            "height": 2256,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -11714,7 +12365,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-6/en/passage-1-7.webp",
+            "width": 1062,
+            "height": 2866,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2022-g6-stimulus-8-14",
@@ -11728,7 +12386,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-6/en/passage-8-14.webp",
+            "width": 1028,
+            "height": 2300,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2022-g6-stimulus-22-28",
@@ -11742,7 +12407,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-6/en/passage-22-28.webp",
+            "width": 1030,
+            "height": 2234,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -12128,7 +12800,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-7/en/passage-1-7.webp",
+            "width": 1030,
+            "height": 2942,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2022-g7-stimulus-8-14",
@@ -12142,7 +12821,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-7/en/passage-8-14.webp",
+            "width": 1068,
+            "height": 2787,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2022-g7-stimulus-29-35",
@@ -12156,7 +12842,14 @@
               "pageStart": 21,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-7/en/passage-29-35.webp",
+            "width": 1031,
+            "height": 3847,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -12542,7 +13235,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-8/en/passage-8-14.webp",
+            "width": 1030,
+            "height": 3245,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2022-g8-stimulus-22-28",
@@ -12556,7 +13256,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-8/en/passage-22-28.webp",
+            "width": 1036,
+            "height": 2739,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2022-g8-stimulus-29-35",
@@ -12570,7 +13277,14 @@
               "pageStart": 20,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2022/grade-8/en/passage-29-35.webp",
+            "width": 1066,
+            "height": 2781,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -12956,7 +13670,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-3/en/passage-1-6.webp",
+            "width": 1033,
+            "height": 2802,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2021-g3-stimulus-7-12",
@@ -12970,7 +13691,14 @@
               "pageStart": 13,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-3/en/passage-7-12.webp",
+            "width": 1037,
+            "height": 3530,
+            "alt": "Official passage for Questions 7-12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g3-stimulus-13-18",
@@ -12984,7 +13712,14 @@
               "pageStart": 18,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-3/en/passage-13-18.webp",
+            "width": 1029,
+            "height": 4277,
+            "alt": "Official passage for Questions 13-18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 4
+          }
         }
       ],
       "questions": [
@@ -13319,7 +14054,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-4/en/passage-1-6.webp",
+            "width": 1035,
+            "height": 3365,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g4-stimulus-7-12",
@@ -13333,7 +14075,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-4/en/passage-7-12.webp",
+            "width": 1033,
+            "height": 3470,
+            "alt": "Official passage for Questions 7-12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g4-stimulus-13-18",
@@ -13347,7 +14096,14 @@
               "pageStart": 19,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-4/en/passage-13-18.webp",
+            "width": 1054,
+            "height": 2846,
+            "alt": "Official passage for Questions 13-18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -13682,7 +14438,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-5/en/passage-1-7.webp",
+            "width": 1030,
+            "height": 2646,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2021-g5-stimulus-8-14",
@@ -13696,7 +14459,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-5/en/passage-8-14.webp",
+            "width": 1031,
+            "height": 2384,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2021-g5-stimulus-15-21",
@@ -13710,7 +14480,14 @@
               "pageStart": 19,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-5/en/passage-15-21.webp",
+            "width": 1031,
+            "height": 3461,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g5-stimulus-22-28",
@@ -13724,7 +14501,14 @@
               "pageStart": 25,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-5/en/passage-22-28.webp",
+            "width": 1029,
+            "height": 2484,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -14229,7 +15013,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-6/en/passage-1-7.webp",
+            "width": 1030,
+            "height": 3007,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g6-stimulus-8-14",
@@ -14243,7 +15034,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-6/en/passage-8-14.webp",
+            "width": 1033,
+            "height": 3597,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g6-stimulus-15-21",
@@ -14257,7 +15055,14 @@
               "pageStart": 21,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-6/en/passage-15-21.webp",
+            "width": 1046,
+            "height": 3163,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g6-stimulus-22-28",
@@ -14271,7 +15076,14 @@
               "pageStart": 27,
               "pageEnd": 29
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-6/en/passage-22-28.webp",
+            "width": 1064,
+            "height": 2909,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -14776,7 +15588,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-7/en/passage-1-7.webp",
+            "width": 1030,
+            "height": 2591,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2021-g7-stimulus-8-14",
@@ -14790,7 +15609,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-7/en/passage-8-14.webp",
+            "width": 1084,
+            "height": 3336,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g7-stimulus-15-21",
@@ -14804,7 +15630,14 @@
               "pageStart": 20,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-7/en/passage-15-21.webp",
+            "width": 1073,
+            "height": 3222,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g7-stimulus-22-28",
@@ -14818,7 +15651,14 @@
               "pageStart": 26,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-7/en/passage-22-28.webp",
+            "width": 1032,
+            "height": 3198,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -15323,7 +16163,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-8/en/passage-1-7.webp",
+            "width": 1065,
+            "height": 3098,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2021-g8-stimulus-8-14",
@@ -15337,7 +16184,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-8/en/passage-8-14.webp",
+            "width": 1030,
+            "height": 2475,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2021-g8-stimulus-15-21",
@@ -15351,7 +16205,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-8/en/passage-15-21.webp",
+            "width": 1031,
+            "height": 2616,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2021-g8-stimulus-22-28",
@@ -15365,7 +16226,14 @@
               "pageStart": 25,
               "pageEnd": 27
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2021/grade-8/en/passage-22-28.webp",
+            "width": 1042,
+            "height": 3369,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -15870,7 +16738,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-3/en/passage-1-6.webp",
+            "width": 1033,
+            "height": 2802,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2019-g3-stimulus-7-12",
@@ -15884,7 +16759,14 @@
               "pageStart": 13,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-3/en/passage-7-12.webp",
+            "width": 1037,
+            "height": 3530,
+            "alt": "Official passage for Questions 7-12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -16117,7 +16999,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-4/en/passage-13-18.webp",
+            "width": 1028,
+            "height": 3019,
+            "alt": "Official passage for Questions 13-18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2019-g4-stimulus-19-24",
@@ -16131,7 +17020,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-4/en/passage-19-24.webp",
+            "width": 1035,
+            "height": 2986,
+            "alt": "Official passage for Questions 19-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -16364,7 +17260,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-5/en/passage-8-14.webp",
+            "width": 1031,
+            "height": 2384,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2019-g5-stimulus-15-21",
@@ -16378,7 +17281,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-5/en/passage-15-21.webp",
+            "width": 1031,
+            "height": 3461,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2019-g5-stimulus-29-35",
@@ -16392,7 +17302,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-5/en/passage-29-35.webp",
+            "width": 1029,
+            "height": 2484,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -16778,7 +17695,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-6/en/passage-1-7.webp",
+            "width": 1032,
+            "height": 3113,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2019-g6-stimulus-8-14",
@@ -16792,7 +17716,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-6/en/passage-8-14.webp",
+            "width": 1028,
+            "height": 2705,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2019-g6-stimulus-29-35",
@@ -16806,7 +17737,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-6/en/passage-29-35.webp",
+            "width": 1030,
+            "height": 2704,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -17192,7 +18130,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-7/en/passage-8-14.webp",
+            "width": 1078,
+            "height": 3472,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2019-g7-stimulus-15-21",
@@ -17206,7 +18151,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-7/en/passage-15-21.webp",
+            "width": 1064,
+            "height": 3098,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2019-g7-stimulus-29-35",
@@ -17220,7 +18172,14 @@
               "pageStart": 21,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-7/en/passage-29-35.webp",
+            "width": 1031,
+            "height": 3507,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -17606,7 +18565,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-8/en/passage-15-21.webp",
+            "width": 1030,
+            "height": 2475,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2019-g8-stimulus-22-28",
@@ -17620,7 +18586,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-8/en/passage-22-28.webp",
+            "width": 1032,
+            "height": 2616,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2019-g8-stimulus-29-35",
@@ -17634,7 +18607,14 @@
               "pageStart": 19,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2019/grade-8/en/passage-29-35.webp",
+            "width": 1043,
+            "height": 3369,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -18020,7 +19000,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-3/en/passage-1-6.webp",
+            "width": 1033,
+            "height": 3460,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g3-stimulus-19-24",
@@ -18034,7 +19021,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-3/en/passage-19-24.webp",
+            "width": 1030,
+            "height": 2586,
+            "alt": "Official passage for Questions 19-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -18267,7 +19261,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-4/en/passage-7-12.webp",
+            "width": 1035,
+            "height": 3477,
+            "alt": "Official passage for Questions 7-12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g4-stimulus-19-24",
@@ -18281,7 +19282,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-4/en/passage-19-24.webp",
+            "width": 1040,
+            "height": 2842,
+            "alt": "Official passage for Questions 19-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -18514,7 +19522,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-5/en/passage-1-7.webp",
+            "width": 1040,
+            "height": 3041,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g5-stimulus-22-28",
@@ -18528,7 +19543,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-5/en/passage-22-28.webp",
+            "width": 1032,
+            "height": 2176,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2018-g5-stimulus-29-35",
@@ -18542,7 +19564,14 @@
               "pageStart": 20,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-5/en/passage-29-35.webp",
+            "width": 1074,
+            "height": 3098,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -18928,7 +19957,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-6/en/passage-1-7.webp",
+            "width": 1028,
+            "height": 3006,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g6-stimulus-22-28",
@@ -18942,7 +19978,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-6/en/passage-22-28.webp",
+            "width": 1053,
+            "height": 3163,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g6-stimulus-29-35",
@@ -18956,7 +19999,14 @@
               "pageStart": 21,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-6/en/passage-29-35.webp",
+            "width": 1065,
+            "height": 2907,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -19342,7 +20392,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-7/en/passage-15-21.webp",
+            "width": 1084,
+            "height": 3336,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g7-stimulus-22-28",
@@ -19356,7 +20413,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-7/en/passage-22-28.webp",
+            "width": 1073,
+            "height": 3222,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g7-stimulus-29-35",
@@ -19370,7 +20434,14 @@
               "pageStart": 21,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-7/en/passage-29-35.webp",
+            "width": 1032,
+            "height": 3198,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -19756,7 +20827,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-8/en/passage-1-7.webp",
+            "width": 1032,
+            "height": 3226,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g8-stimulus-8-14",
@@ -19770,7 +20848,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-8/en/passage-8-14.webp",
+            "width": 1083,
+            "height": 3099,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2018-g8-stimulus-15-21",
@@ -19784,7 +20869,14 @@
               "pageStart": 21,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2018/grade-8/en/passage-15-21.webp",
+            "width": 1030,
+            "height": 3723,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -20170,7 +21262,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-3/en/passage-7-12.webp",
+            "width": 1124,
+            "height": 2689,
+            "alt": "Official passage for Questions 7-12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g3-stimulus-19-24",
@@ -20184,7 +21283,14 @@
               "pageStart": 13,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-3/en/passage-19-24.webp",
+            "width": 1116,
+            "height": 3060,
+            "alt": "Official passage for Questions 19-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g3-stimulus-25-31",
@@ -20198,7 +21304,14 @@
               "pageStart": 22,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-3/en/passage-25-31.webp",
+            "width": 1125,
+            "height": 2605,
+            "alt": "Official passage for Questions 25-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -20550,7 +21663,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-4/en/passage-1-6.webp",
+            "width": 1116,
+            "height": 3326,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g4-stimulus-19-24",
@@ -20564,7 +21684,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-4/en/passage-19-24.webp",
+            "width": 1116,
+            "height": 3469,
+            "alt": "Official passage for Questions 19-24. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g4-stimulus-25-31",
@@ -20578,7 +21705,14 @@
               "pageStart": 23,
               "pageEnd": 24
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-4/en/passage-25-31.webp",
+            "width": 1116,
+            "height": 2628,
+            "alt": "Official passage for Questions 25-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -20930,7 +22064,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-5/en/passage-1-7.webp",
+            "width": 1113,
+            "height": 2939,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g5-stimulus-8-14",
@@ -20944,7 +22085,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-5/en/passage-8-14.webp",
+            "width": 1116,
+            "height": 2391,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g5-stimulus-29-35",
@@ -20958,7 +22106,14 @@
               "pageStart": 20,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-5/en/passage-29-35.webp",
+            "width": 1114,
+            "height": 2843,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g5-stimulus-36-42",
@@ -20972,7 +22127,14 @@
               "pageStart": 30,
               "pageEnd": 31
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-5/en/passage-36-42.webp",
+            "width": 1113,
+            "height": 2798,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -21477,7 +22639,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-6/en/passage-8-14.webp",
+            "width": 1116,
+            "height": 2360,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g6-stimulus-15-21",
@@ -21491,7 +22660,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-6/en/passage-15-21.webp",
+            "width": 1068,
+            "height": 2738,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g6-stimulus-29-35",
@@ -21505,7 +22681,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-6/en/passage-29-35.webp",
+            "width": 1073,
+            "height": 2346,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g6-stimulus-36-42",
@@ -21519,7 +22702,14 @@
               "pageStart": 29,
               "pageEnd": 30
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-6/en/passage-36-42.webp",
+            "width": 1094,
+            "height": 2394,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -22024,7 +23214,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-7/en/passage-1-7.webp",
+            "width": 1105,
+            "height": 2745,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g7-stimulus-8-14",
@@ -22038,7 +23235,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-7/en/passage-8-14.webp",
+            "width": 1073,
+            "height": 2302,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g7-stimulus-29-35",
@@ -22052,7 +23256,14 @@
               "pageStart": 20,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-7/en/passage-29-35.webp",
+            "width": 1104,
+            "height": 3207,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g7-stimulus-36-42",
@@ -22066,7 +23277,14 @@
               "pageStart": 30,
               "pageEnd": 31
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-7/en/passage-36-42.webp",
+            "width": 1070,
+            "height": 2635,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -22571,7 +23789,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-8/en/passage-1-7.webp",
+            "width": 1069,
+            "height": 2581,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g8-stimulus-22-28",
@@ -22585,7 +23810,14 @@
               "pageStart": 14,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-8/en/passage-22-28.webp",
+            "width": 1074,
+            "height": 2971,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2017-g8-stimulus-29-35",
@@ -22599,7 +23831,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-8/en/passage-29-35.webp",
+            "width": 1067,
+            "height": 2529,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2017-g8-stimulus-36-42",
@@ -22613,7 +23852,14 @@
               "pageStart": 29,
               "pageEnd": 30
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2017/grade-8/en/passage-36-42.webp",
+            "width": 1072,
+            "height": 2755,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -23118,7 +24364,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-3/en/passage-1-6.webp",
+            "width": 1115,
+            "height": 3712,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2016-g3-stimulus-13-18",
@@ -23132,7 +24385,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-3/en/passage-13-18.webp",
+            "width": 1115,
+            "height": 2815,
+            "alt": "Official passage for Questions 13-18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g3-stimulus-25-31",
@@ -23146,7 +24406,14 @@
               "pageStart": 22,
               "pageEnd": 23
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-3/en/passage-25-31.webp",
+            "width": 1120,
+            "height": 2608,
+            "alt": "Official passage for Questions 25-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -23498,7 +24765,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-4/en/passage-1-6.webp",
+            "width": 1117,
+            "height": 3399,
+            "alt": "Official passage for Questions 1-6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2016-g4-stimulus-13-18",
@@ -23512,7 +24786,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-4/en/passage-13-18.webp",
+            "width": 1121,
+            "height": 2838,
+            "alt": "Official passage for Questions 13-18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g4-stimulus-25-31",
@@ -23526,7 +24807,14 @@
               "pageStart": 22,
               "pageEnd": 24
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-4/en/passage-25-31.webp",
+            "width": 1116,
+            "height": 2902,
+            "alt": "Official passage for Questions 25-31. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -23878,7 +25166,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-5/en/passage-1-7.webp",
+            "width": 1121,
+            "height": 2147,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g5-stimulus-8-14",
@@ -23892,7 +25187,14 @@
               "pageStart": 13,
               "pageEnd": 14
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-5/en/passage-8-14.webp",
+            "width": 1123,
+            "height": 2647,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g5-stimulus-15-21",
@@ -23906,7 +25208,14 @@
               "pageStart": 17,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-5/en/passage-15-21.webp",
+            "width": 1122,
+            "height": 2135,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g5-stimulus-36-42",
@@ -23920,7 +25229,14 @@
               "pageStart": 25,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-5/en/passage-36-42.webp",
+            "width": 1125,
+            "height": 2625,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -24425,7 +25741,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-6/en/passage-1-7.webp",
+            "width": 1123,
+            "height": 2697,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g6-stimulus-22-28",
@@ -24439,7 +25762,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-6/en/passage-22-28.webp",
+            "width": 856,
+            "height": 2325,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g6-stimulus-29-35",
@@ -24453,7 +25783,14 @@
               "pageStart": 19,
               "pageEnd": 20
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-6/en/passage-29-35.webp",
+            "width": 1117,
+            "height": 2559,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g6-stimulus-36-42",
@@ -24467,7 +25804,14 @@
               "pageStart": 27,
               "pageEnd": 29
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-6/en/passage-36-42.webp",
+            "width": 1079,
+            "height": 3010,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -24972,7 +26316,14 @@
               "pageStart": 9,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-7/en/passage-1-7.webp",
+            "width": 1107,
+            "height": 2976,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2016-g7-stimulus-8-14",
@@ -24986,7 +26337,14 @@
               "pageStart": 14,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-7/en/passage-8-14.webp",
+            "width": 1111,
+            "height": 2264,
+            "alt": "Official passage for Questions 8-14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g7-stimulus-15-21",
@@ -25000,7 +26358,14 @@
               "pageStart": 19,
               "pageEnd": 20
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-7/en/passage-15-21.webp",
+            "width": 1105,
+            "height": 2556,
+            "alt": "Official passage for Questions 15-21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g7-stimulus-36-42",
@@ -25014,7 +26379,14 @@
               "pageStart": 27,
               "pageEnd": 28
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-7/en/passage-36-42.webp",
+            "width": 1115,
+            "height": 2367,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -25519,7 +26891,14 @@
               "pageStart": 9,
               "pageEnd": 10
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-8/en/passage-1-7.webp",
+            "width": 1080,
+            "height": 2371,
+            "alt": "Official passage for Questions 1-7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2016-g8-stimulus-22-28",
@@ -25533,7 +26912,14 @@
               "pageStart": 13,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-8/en/passage-22-28.webp",
+            "width": 1074,
+            "height": 2891,
+            "alt": "Official passage for Questions 22-28. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2016-g8-stimulus-29-35",
@@ -25547,7 +26933,14 @@
               "pageStart": 19,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-8/en/passage-29-35.webp",
+            "width": 1092,
+            "height": 2899,
+            "alt": "Official passage for Questions 29-35. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2016-g8-stimulus-36-42",
@@ -25561,7 +26954,14 @@
               "pageStart": 29,
               "pageEnd": 31
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2016/grade-8/en/passage-36-42.webp",
+            "width": 1077,
+            "height": 3153,
+            "alt": "Official passage for Questions 36-42. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -26066,7 +27466,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-3/en/passage-1-6.webp",
+            "width": 1076,
+            "height": 2698,
+            "alt": "Official passage for Questions 1–6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g3-stimulus-7-11",
@@ -26080,7 +27487,14 @@
               "pageStart": 10,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-3/en/passage-7-11.webp",
+            "width": 1099,
+            "height": 2596,
+            "alt": "Official passage for Questions 7–11. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g3-stimulus-12-18",
@@ -26094,7 +27508,14 @@
               "pageStart": 15,
               "pageEnd": 16
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-3/en/passage-12-18.webp",
+            "width": 1109,
+            "height": 2297,
+            "alt": "Official passage for Questions 12–18. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -26429,7 +27850,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-4/en/passage-1-6.webp",
+            "width": 1083,
+            "height": 2729,
+            "alt": "Official passage for Questions 1–6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g4-stimulus-7-12",
@@ -26443,7 +27871,14 @@
               "pageStart": 10,
               "pageEnd": 11
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-4/en/passage-7-12.webp",
+            "width": 1088,
+            "height": 2193,
+            "alt": "Official passage for Questions 7–12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g4-stimulus-13-19",
@@ -26457,7 +27892,14 @@
               "pageStart": 15,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-4/en/passage-13-19.webp",
+            "width": 1128,
+            "height": 3541,
+            "alt": "Official passage for Questions 13–19. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -26809,7 +28251,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-5/en/passage-1-7.webp",
+            "width": 1088,
+            "height": 1917,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g5-stimulus-8-13",
@@ -26823,7 +28272,14 @@
               "pageStart": 11,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-5/en/passage-8-13.webp",
+            "width": 1097,
+            "height": 2630,
+            "alt": "Official passage for Questions 8–13. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g5-stimulus-14-20",
@@ -26837,7 +28293,14 @@
               "pageStart": 16,
               "pageEnd": 17
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-5/en/passage-14-20.webp",
+            "width": 1092,
+            "height": 2523,
+            "alt": "Official passage for Questions 14–20. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -27206,7 +28669,14 @@
               "pageStart": 5,
               "pageEnd": 7
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-6/en/passage-1-7.webp",
+            "width": 1110,
+            "height": 3419,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2015-g6-stimulus-8-14",
@@ -27220,7 +28690,14 @@
               "pageStart": 12,
               "pageEnd": 13
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-6/en/passage-8-14.webp",
+            "width": 1098,
+            "height": 1847,
+            "alt": "Official passage for Questions 8–14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g6-stimulus-15-21",
@@ -27234,7 +28711,14 @@
               "pageStart": 17,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-6/en/passage-15-21.webp",
+            "width": 1088,
+            "height": 2323,
+            "alt": "Official passage for Questions 15–21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -27620,7 +29104,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-7/en/passage-1-7.webp",
+            "width": 1107,
+            "height": 2696,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g7-stimulus-8-14",
@@ -27634,7 +29125,14 @@
               "pageStart": 10,
               "pageEnd": 12
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-7/en/passage-8-14.webp",
+            "width": 1105,
+            "height": 3035,
+            "alt": "Official passage for Questions 8–14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2015-g7-stimulus-15-21",
@@ -27648,7 +29146,14 @@
               "pageStart": 16,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-7/en/passage-15-21.webp",
+            "width": 1106,
+            "height": 3608,
+            "alt": "Official passage for Questions 15–21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -28034,7 +29539,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-8/en/passage-1-7.webp",
+            "width": 1074,
+            "height": 2560,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2015-g8-stimulus-8-14",
@@ -28048,7 +29560,14 @@
               "pageStart": 11,
               "pageEnd": 13
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-8/en/passage-8-14.webp",
+            "width": 1085,
+            "height": 3077,
+            "alt": "Official passage for Questions 8–14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2015-g8-stimulus-15-21",
@@ -28062,7 +29581,14 @@
               "pageStart": 18,
               "pageEnd": 20
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2015/grade-8/en/passage-15-21.webp",
+            "width": 1116,
+            "height": 2938,
+            "alt": "Official passage for Questions 15–21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -28448,7 +29974,14 @@
               "pageStart": 6,
               "pageEnd": 7
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-3/en/passage-1-4.webp",
+            "width": 1104,
+            "height": 2743,
+            "alt": "Official passage for Questions 1–4. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2014-g3-stimulus-5-9",
@@ -28462,7 +29995,14 @@
               "pageStart": 13,
               "pageEnd": 15
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-3/en/passage-5-9.webp",
+            "width": 1109,
+            "height": 3357,
+            "alt": "Official passage for Questions 5–9. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2014-g3-stimulus-10-16",
@@ -28476,7 +30016,14 @@
               "pageStart": 22,
               "pageEnd": 24
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-3/en/passage-10-16.webp",
+            "width": 1090,
+            "height": 4050,
+            "alt": "Official passage for Questions 10–16. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -28777,7 +30324,14 @@
               "pageStart": 6,
               "pageEnd": 7
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-4/en/passage-1-5.webp",
+            "width": 1094,
+            "height": 2799,
+            "alt": "Official passage for Questions 1–5. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2014-g4-stimulus-6-11",
@@ -28791,7 +30345,14 @@
               "pageStart": 16,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-4/en/passage-6-11.webp",
+            "width": 1083,
+            "height": 3073,
+            "alt": "Official passage for Questions 6–11. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2014-g4-stimulus-12-17",
@@ -28805,7 +30366,14 @@
               "pageStart": 25,
               "pageEnd": 26
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-4/en/passage-12-17.webp",
+            "width": 1112,
+            "height": 2777,
+            "alt": "Official passage for Questions 12–17. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -29123,7 +30691,14 @@
               "pageStart": 6,
               "pageEnd": 8
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-5/en/passage-1-7.webp",
+            "width": 1095,
+            "height": 2987,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2014-g5-stimulus-8-14",
@@ -29137,7 +30712,14 @@
               "pageStart": 20,
               "pageEnd": 21
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-5/en/passage-8-14.webp",
+            "width": 1098,
+            "height": 2176,
+            "alt": "Official passage for Questions 8–14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2014-g5-stimulus-15-21",
@@ -29151,7 +30733,14 @@
               "pageStart": 33,
               "pageEnd": 35
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-5/en/passage-15-21.webp",
+            "width": 1102,
+            "height": 2873,
+            "alt": "Official passage for Questions 15–21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -29537,7 +31126,14 @@
               "pageStart": 6,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-6/en/passage-1-6.webp",
+            "width": 1116,
+            "height": 1465,
+            "alt": "Official passage for Questions 1–6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 1
+          }
         },
         {
           "id": "nysed-ela-2014-g6-stimulus-7-13",
@@ -29551,7 +31147,14 @@
               "pageStart": 17,
               "pageEnd": 18
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-6/en/passage-7-13.webp",
+            "width": 1098,
+            "height": 2549,
+            "alt": "Official passage for Questions 7–13. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2014-g6-stimulus-14-19",
@@ -29565,7 +31168,14 @@
               "pageStart": 28,
               "pageEnd": 29
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-6/en/passage-14-19.webp",
+            "width": 1089,
+            "height": 2009,
+            "alt": "Official passage for Questions 14–19. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -29917,7 +31527,14 @@
               "pageStart": 6,
               "pageEnd": 7
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-7/en/passage-1-7.webp",
+            "width": 1134,
+            "height": 2903,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2014-g7-stimulus-8-12",
@@ -29931,7 +31548,14 @@
               "pageStart": 21,
               "pageEnd": 22
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-7/en/passage-8-12.webp",
+            "width": 1100,
+            "height": 1878,
+            "alt": "Official passage for Questions 8–12. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         },
         {
           "id": "nysed-ela-2014-g7-stimulus-13-19",
@@ -29945,7 +31569,14 @@
               "pageStart": 28,
               "pageEnd": 29
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-7/en/passage-13-19.webp",
+            "width": 1119,
+            "height": 2569,
+            "alt": "Official passage for Questions 13–19. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -30297,7 +31928,14 @@
               "pageStart": 6,
               "pageEnd": 8
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-8/en/passage-1-7.webp",
+            "width": 1115,
+            "height": 3518,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2014-g8-stimulus-8-14",
@@ -30311,7 +31949,14 @@
               "pageStart": 23,
               "pageEnd": 25
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-8/en/passage-8-14.webp",
+            "width": 1113,
+            "height": 3074,
+            "alt": "Official passage for Questions 8–14. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         },
         {
           "id": "nysed-ela-2014-g8-stimulus-15-21",
@@ -30325,7 +31970,14 @@
               "pageStart": 34,
               "pageEnd": 36
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2014/grade-8/en/passage-15-21.webp",
+            "width": 1098,
+            "height": 4151,
+            "alt": "Official passage for Questions 15–21. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -30711,7 +32363,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2013/grade-3/en/passage-1-6.webp",
+            "width": 1088,
+            "height": 1707,
+            "alt": "Official passage for Questions 1–6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -30854,7 +32513,14 @@
               "pageStart": 5,
               "pageEnd": 7
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2013/grade-4/en/passage-1-5.webp",
+            "width": 1085,
+            "height": 3130,
+            "alt": "Official passage for Questions 1–5. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 3
+          }
         }
       ],
       "questions": [
@@ -30968,7 +32634,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2013/grade-5/en/passage-1-6.webp",
+            "width": 1098,
+            "height": 2328,
+            "alt": "Official passage for Questions 1–6. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -31099,7 +32772,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2013/grade-6/en/passage-1-5.webp",
+            "width": 1111,
+            "height": 2704,
+            "alt": "Official passage for Questions 1–5. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -31213,7 +32893,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2013/grade-7/en/passage-1-7.webp",
+            "width": 1118,
+            "height": 2762,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [
@@ -31361,7 +33048,14 @@
               "pageStart": 5,
               "pageEnd": 6
             }
-          ]
+          ],
+          "passage": {
+            "src": "/vine-app/nysed/ela/2013/grade-8/en/passage-1-7.webp",
+            "width": 1082,
+            "height": 2814,
+            "alt": "Official passage for Questions 1–7. The complete released passage is shown with its original title, byline, illustrations, line or paragraph numbers, and source credits; PDF page breaks are removed.",
+            "pageCount": 2
+          }
         }
       ],
       "questions": [

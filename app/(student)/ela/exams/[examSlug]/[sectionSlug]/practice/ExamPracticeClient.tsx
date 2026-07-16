@@ -8,8 +8,8 @@ import type {
   ElaExamSectionDefinition,
   PublicElaExamQuestion,
 } from '@/content/ela-exams/types'
+import CollapsiblePassage from '../../../CollapsiblePassage'
 import NYSEDAttribution from '../../../NYSEDAttribution'
-import OfficialPassageLinks from '../../../OfficialPassageLinks'
 
 type Screen = 'intro' | 'question' | 'results'
 
@@ -49,7 +49,6 @@ export default function ExamPracticeClient({
   const [result, setResult] = useState<FinalResult | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const [passageConfirmed, setPassageConfirmed] = useState(false)
 
   const question = questions[questionIndex]
   const sectionHref = `/ela/exams/${exam.slug}/${section.slug}`
@@ -182,23 +181,13 @@ export default function ExamPracticeClient({
           </p>
 
           <div className="mt-5">
-            <OfficialPassageLinks references={section.passageReferences} />
+            <CollapsiblePassage passage={section.passage} passageLabel={section.passageLabel} />
           </div>
-
-          <label className="mt-5 flex gap-3 rounded-xl bg-amber-50 p-3 text-sm leading-relaxed text-amber-900">
-            <input
-              type="checkbox"
-              checked={passageConfirmed}
-              onChange={event => setPassageConfirmed(event.target.checked)}
-              className="mt-1 h-4 w-4 flex-shrink-0 accent-green-700"
-            />
-            <span>I have opened the official passage and will keep it available while answering.</span>
-          </label>
 
           <button
             type="button"
             onClick={() => void startAttempt()}
-            disabled={loading || !passageConfirmed}
+            disabled={loading}
             className="mt-5 w-full rounded-2xl bg-green-700 py-4 text-lg font-semibold text-white shadow disabled:cursor-not-allowed disabled:opacity-60"
           >
             {loading ? 'Preparing…' : 'Begin practice'}
@@ -271,13 +260,16 @@ export default function ExamPracticeClient({
       </div>
 
       <div className="mb-4">
-        <OfficialPassageLinks references={section.passageReferences} compact />
+        <CollapsiblePassage
+          passage={section.passage}
+          passageLabel={section.passageLabel}
+          compact
+        />
       </div>
 
       <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
         <p className="mb-3 text-xs font-medium leading-relaxed text-gray-500">
-          Read the linked passage in the official PDF, then answer. The image below contains only the
-          released question and answer choices.
+          Open the passage above whenever you need it, then choose the best answer below.
         </p>
         <div className="overflow-hidden rounded-xl border border-gray-100 bg-white">
           <Image

@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "67f316ecaf723d7aa9bc073b59f61bccfa9087542188d8fb704636feae01b404",
+  "passages": {
+    "nysed-ela-2019-g6-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2019-g6-stimulus-8-14": {
+      "filename": "passage-8-14.webp",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "questionStart": 8,
+      "questionEnd": 14
+    },
+    "nysed-ela-2019-g6-stimulus-29-35": {
+      "filename": "passage-29-35.webp",
+      "pageStart": 20,
+      "pageEnd": 21,
+      "questionStart": 29,
+      "questionEnd": 35
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2019-g6-stimulus-1-7": {
+      "width": 1032,
+      "height": 3113,
+      "pageCount": 3
+    },
+    "nysed-ela-2019-g6-stimulus-29-35": {
+      "width": 1030,
+      "height": 2704,
+      "pageCount": 2
+    },
+    "nysed-ela-2019-g6-stimulus-8-14": {
+      "width": 1028,
+      "height": 2705,
+      "pageCount": 2
+    }
+  }
+}

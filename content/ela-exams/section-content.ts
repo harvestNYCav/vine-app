@@ -1,6 +1,7 @@
 import type { GradeLevel } from '@/lib/grade-levels'
 import type {
   ElaExamSectionDefinition,
+  ElaPassageAsset,
   ElaPassageReference,
   ElaSkill,
   ElaWorkedExample,
@@ -25,6 +26,7 @@ type SectionInput = {
   passageLabel: string
   questionStart: number
   questionEnd: number
+  passage: ElaPassageAsset
   passageReferences: ElaPassageReference[]
   skills: ElaSkill[]
   standards: string[]
@@ -279,6 +281,7 @@ export function buildElaExamSection(
     passageLabel: input.passageLabel,
     questionStart: input.questionStart,
     questionEnd: input.questionEnd,
+    passage: input.passage,
     passageReferences: input.passageReferences,
     focusSkill,
     skills: input.skills,

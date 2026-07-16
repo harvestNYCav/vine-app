@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
+  "passages": {
+    "nysed-ela-2014-g6-stimulus-1-6": {
+      "filename": "passage-1-6.webp",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "questionStart": 1,
+      "questionEnd": 6
+    },
+    "nysed-ela-2014-g6-stimulus-7-13": {
+      "filename": "passage-7-13.webp",
+      "pageStart": 17,
+      "pageEnd": 18,
+      "questionStart": 7,
+      "questionEnd": 13
+    },
+    "nysed-ela-2014-g6-stimulus-14-19": {
+      "filename": "passage-14-19.webp",
+      "pageStart": 28,
+      "pageEnd": 29,
+      "questionStart": 14,
+      "questionEnd": 19
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2014-g6-stimulus-1-6": {
+      "width": 1116,
+      "height": 1465,
+      "pageCount": 1
+    },
+    "nysed-ela-2014-g6-stimulus-14-19": {
+      "width": 1089,
+      "height": 2009,
+      "pageCount": 2
+    },
+    "nysed-ela-2014-g6-stimulus-7-13": {
+      "width": 1098,
+      "height": 2549,
+      "pageCount": 2
+    }
+  }
+}

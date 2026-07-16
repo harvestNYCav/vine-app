@@ -6,6 +6,7 @@ import type {
   ElaExamDefinition,
   ElaExamQuestionNumberKind,
   ElaExamQuestionRecord,
+  ElaPassageAsset,
   ElaPassageReference,
   ElaQuestionImage,
   ElaSkill,
@@ -19,6 +20,7 @@ export type RawElaStimulus = {
   label: string
   questionStart: number
   questionEnd: number
+  passage: ElaPassageAsset
   references: RawElaPassageReference[]
 }
 
@@ -52,7 +54,7 @@ export type RawElaExam = {
 }
 
 export type RawElaExamCatalog = {
-  schemaVersion: 1
+  schemaVersion: 2
   generatedAt: string
   accessedAt: string
   sourceUpdatedAt: string
@@ -137,6 +139,22 @@ function validImage(value: Omit<ElaQuestionImage, 'alt'> | undefined) {
     && value.height > 0
 }
 
+function validPassageAsset(value: ElaPassageAsset | undefined) {
+  return !!value
+    && typeof value.src === 'string'
+    && value.src.startsWith('/vine-app/nysed/ela/')
+    && Number.isInteger(value.width)
+    && value.width >= 420
+    && Number.isInteger(value.height)
+    && value.height >= 260
+    && value.height <= 16_000
+    && safeAlt(value.alt)
+    && value.alt.length <= 600
+    && Number.isInteger(value.pageCount)
+    && value.pageCount >= 1
+    && value.pageCount <= 4
+}
+
 function expectedSkillForStandard(standard: string): ElaSkill | null {
   const ccls = standard.match(CCLS_STANDARD_PATTERN)
   if (ccls) {
@@ -212,6 +230,7 @@ function validateRawExam(exam: RawElaExam) {
   invariant(Array.isArray(exam.stimuli) && exam.stimuli.length > 0, `${exam.id} needs passage stimuli`)
 
   const stimuliById = new Map<string, RawElaStimulus>()
+  const passagePaths = new Set<string>()
   let priorQuestionEnd = 0
   for (const stimulus of exam.stimuli) {
     invariant(Number.isInteger(stimulus.questionStart) && stimulus.questionStart > 0, `${stimulus.id} has a bad question start`)
@@ -231,6 +250,16 @@ function validateRawExam(exam: RawElaExam) {
       invariant(!referenceKeys.has(key), `${stimulus.id} repeats a passage reference`)
       referenceKeys.add(key)
     }
+    invariant(validPassageAsset(stimulus.passage), `${stimulus.id} needs a valid local passage image`)
+    const expectedPassagePath = `/vine-app/nysed/ela/${exam.year}/grade-${exam.grade}/en/passage-${stimulus.questionStart}-${stimulus.questionEnd}.webp`
+    invariant(stimulus.passage.src === expectedPassagePath, `${stimulus.id} has the wrong passage image path`)
+    invariant(!passagePaths.has(stimulus.passage.src), `${exam.id} repeats a passage image path`)
+    passagePaths.add(stimulus.passage.src)
+    const referencedPageCount = stimulus.references.reduce(
+      (total, reference) => total + reference.pageEnd - reference.pageStart + 1,
+      0,
+    )
+    invariant(stimulus.passage.pageCount === referencedPageCount, `${stimulus.id} has the wrong joined page count`)
     stimuliById.set(stimulus.id, stimulus)
     priorQuestionEnd = stimulus.questionEnd
   }
@@ -305,7 +334,7 @@ function dominantSkill(questions: RawElaQuestion[]) {
 
 export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
   invariant(rawCatalog && typeof rawCatalog === 'object', 'missing catalog')
-  invariant(rawCatalog.schemaVersion === 1, 'unsupported schema version')
+  invariant(rawCatalog.schemaVersion === 2, 'unsupported schema version')
   invariant(typeof rawCatalog.generatedAt === 'string' && !Number.isNaN(Date.parse(rawCatalog.generatedAt)), 'bad generatedAt')
   invariant(validDateOnly(rawCatalog.accessedAt), 'bad accessedAt')
   invariant(validDateOnly(rawCatalog.sourceUpdatedAt), 'bad sourceUpdatedAt')
@@ -375,6 +404,7 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
         passageLabel: stimulus.label,
         questionStart: stimulus.questionStart,
         questionEnd: stimulus.questionEnd,
+        passage: stimulus.passage,
         passageReferences: stimulus.references,
         skills,
         standards,

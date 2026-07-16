@@ -1,0 +1,58 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "5e037c48bd40d85ee1ce5994b53d3b004d3aa14b5c73014599c80511c3deb27b",
+  "passages": {
+    "nysed-ela-2025-g8-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2025-g8-stimulus-22-26": {
+      "filename": "passage-22-26.webp",
+      "pageStart": 15,
+      "pageEnd": 17,
+      "questionStart": 22,
+      "questionEnd": 26
+    },
+    "nysed-ela-2025-g8-stimulus-29-35": {
+      "filename": "passage-29-35.webp",
+      "pageStart": 26,
+      "pageEnd": 27,
+      "questionStart": 29,
+      "questionEnd": 35
+    },
+    "nysed-ela-2025-g8-stimulus-36-42": {
+      "filename": "passage-36-42.webp",
+      "pageStart": 31,
+      "pageEnd": 33,
+      "questionStart": 36,
+      "questionEnd": 42
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2025-g8-stimulus-1-7": {
+      "width": 1087,
+      "height": 2844,
+      "pageCount": 3
+    },
+    "nysed-ela-2025-g8-stimulus-22-26": {
+      "width": 1086,
+      "height": 2949,
+      "pageCount": 3
+    },
+    "nysed-ela-2025-g8-stimulus-29-35": {
+      "width": 1088,
+      "height": 2449,
+      "pageCount": 2
+    },
+    "nysed-ela-2025-g8-stimulus-36-42": {
+      "width": 1085,
+      "height": 3152,
+      "pageCount": 3
+    }
+  }
+}

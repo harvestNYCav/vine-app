@@ -6,8 +6,8 @@ import getDb from '@/lib/db'
 import { studentCanAccessElaExam } from '@/lib/ela-exam-access'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
+import CollapsiblePassage from '../../CollapsiblePassage'
 import NYSEDAttribution from '../../NYSEDAttribution'
-import OfficialPassageLinks from '../../OfficialPassageLinks'
 
 export default async function ElaExamSectionPage({
   params,
@@ -17,7 +17,7 @@ export default async function ElaExamSectionPage({
   const { examSlug, sectionSlug } = await params
   const exam = getElaExamBySlug(examSlug)
   const section = exam?.sections.find(item => item.slug === sectionSlug)
-  if (!exam || !section || section.passageReferences.length === 0) notFound()
+  if (!exam || !section || !section.passage) notFound()
 
   const session = await getSession()
   if (!session || session.role !== 'student') notFound()
@@ -80,7 +80,7 @@ export default async function ElaExamSectionPage({
       )}
 
       <div className="mb-4">
-        <OfficialPassageLinks references={section.passageReferences} />
+        <CollapsiblePassage passage={section.passage} passageLabel={section.passageLabel} />
       </div>
 
       <section className="mb-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
@@ -126,7 +126,7 @@ export default async function ElaExamSectionPage({
       </section>
 
       <p className="mb-3 text-center text-xs leading-relaxed text-gray-500">
-        Read the linked official passage before you begin. Practice shows only the question and choices.
+        The passage stays available in a collapsible reader with every practice question.
       </p>
       <Link href={`/ela/exams/${exam.slug}/${section.slug}/practice`} className="block">
         <span className="block w-full rounded-2xl bg-green-700 py-4 text-center text-lg font-semibold text-white shadow transition-transform active:scale-95">

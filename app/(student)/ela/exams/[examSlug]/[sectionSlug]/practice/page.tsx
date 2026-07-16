@@ -15,7 +15,7 @@ export default async function ElaExamPracticePage({
   const { examSlug, sectionSlug } = await params
   const exam = getElaExamBySlug(examSlug)
   const section = exam?.sections.find(item => item.slug === sectionSlug)
-  if (!exam || !section || section.passageReferences.length === 0) notFound()
+  if (!exam || !section || !section.passage) notFound()
 
   const session = await getSession()
   if (!session || session.role !== 'student') notFound()

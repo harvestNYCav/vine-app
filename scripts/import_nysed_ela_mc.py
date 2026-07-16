@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Build the app's NYSED released-ELA multiple-choice catalog.
 
-The official ELA booklets contain third-party passages licensed for the test.
-This importer intentionally keeps those passages in NYSED's PDFs: the app
-stores only tightly cropped question-and-choice images and exact page links to
-the official passage.  All release URLs are discovered from NYSED's index.
+The importer stores tightly cropped question-and-choice images plus one local,
+page-break-free passage image per stimulus. Passage images retain the original
+line or paragraph numbers, illustrations, bylines, and source credits. All
+release URLs are discovered from NYSED's index.
 
 Typical full import::
 
@@ -58,6 +58,10 @@ from import_nysed_math_mc import (  # type: ignore
 from nysed_ela_image_validation import (  # type: ignore
     ElaImageValidationError,
     validate_ela_question_image,
+)
+from nysed_ela_passages import (  # type: ignore
+    PASSAGE_SCRIPT_VERSION,
+    render_passage_assets,
 )
 
 
@@ -536,6 +540,17 @@ def import_legacy_release(
         )
         stimulus_by_passage[passage_index] = stimulus_id
 
+    passage_images = render_passage_assets(
+        pdf_path,
+        stimuli,
+        output_directory,
+        public_directory,
+        dpi=dpi,
+        force=force_render,
+    )
+    for stimulus in stimuli:
+        stimulus["passage"] = dataclasses.asdict(passage_images[str(stimulus["id"])])
+
     questions: list[dict[str, Any]] = []
     for number, item in numbered:
         question: dict[str, Any] = {
@@ -602,6 +617,23 @@ def validate_exam(exam: dict[str, Any]) -> None:
                 or int(reference["pageEnd"]) < int(reference["pageStart"])
             ):
                 raise ImportFailure(f"Invalid passage reference in {exam['id']}")
+        passage = stimulus.get("passage", {})
+        expected_passage_src = (
+            f"{APP_PUBLIC_PREFIX}/{year}/grade-{grade}/en/"
+            f"passage-{start}-{end}.webp"
+        )
+        referenced_page_count = sum(
+            int(reference["pageEnd"]) - int(reference["pageStart"]) + 1
+            for reference in stimulus["references"]
+        )
+        if (
+            passage.get("src") != expected_passage_src
+            or int(passage.get("width", 0)) < 420
+            or not 260 <= int(passage.get("height", 0)) <= 16_000
+            or int(passage.get("pageCount", 0)) != referenced_page_count
+            or len(re.sub(r"[^A-Za-z0-9]", "", str(passage.get("alt", "")))) < 24
+        ):
+            raise ImportFailure(f"Invalid local passage image in {stimulus['id']}")
 
     expected_framework_prefix = "NGLS." if year >= 2023 else "CCSS."
     numbers: list[int] = []
@@ -679,7 +711,8 @@ def validate_asset_tree(
     if unsafe_links:
         raise ImportFailure(f"ELA asset tree contains a symlink: {unsafe_links[0]}")
     expected_files: set[Path] = set()
-    expected_by_directory: dict[Path, set[str]] = defaultdict(set)
+    expected_questions_by_directory: dict[Path, set[str]] = defaultdict(set)
+    expected_passages_by_directory: dict[Path, set[str]] = defaultdict(set)
     prefix = f"{APP_PUBLIC_PREFIX}/"
     for exam in exams:
         year = int(exam["year"])
@@ -718,9 +751,46 @@ def validate_asset_tree(
             except Exception as exc:
                 raise ImportFailure(f"Unreadable generated ELA asset {path}: {exc}") from exc
             expected_files.add(relative)
-            expected_by_directory[relative.parent].add(relative.name)
+            expected_questions_by_directory[relative.parent].add(relative.name)
 
-    for directory, expected_names in expected_by_directory.items():
+        for stimulus in exam["stimuli"]:
+            passage = stimulus["passage"]
+            src = str(passage["src"])
+            if not src.startswith(prefix):
+                raise ImportFailure(f"Passage URL is outside the ELA prefix: {src}")
+            relative = Path(src[len(prefix) :])
+            expected_relative = Path(
+                str(year),
+                f"grade-{grade}",
+                "en",
+                f"passage-{int(stimulus['questionStart'])}-{int(stimulus['questionEnd'])}.webp",
+            )
+            if relative != expected_relative or relative.is_absolute() or ".." in relative.parts:
+                raise ImportFailure(f"Catalog/passage path mismatch in {stimulus['id']}: {src}")
+            path = asset_root / relative
+            if not path.is_file() or path.is_symlink():
+                raise ImportFailure(f"Missing or unsafe generated ELA passage asset: {path}")
+            try:
+                with Image.open(path) as image:
+                    image.load()
+                    if (
+                        image.format != "WEBP"
+                        or image.width != int(passage["width"])
+                        or image.height != int(passage["height"])
+                    ):
+                        raise ImportFailure(
+                            f"Catalog/passage dimension mismatch for {stimulus['id']}: "
+                            f"catalog={passage['width']}x{passage['height']}, "
+                            f"file={image.width}x{image.height}"
+                        )
+            except ImportFailure:
+                raise
+            except Exception as exc:
+                raise ImportFailure(f"Unreadable generated ELA passage asset {path}: {exc}") from exc
+            expected_files.add(relative)
+            expected_passages_by_directory[relative.parent].add(relative.name)
+
+    for directory, expected_question_names in expected_questions_by_directory.items():
         manifest_path = asset_root / directory / ".nysed-import.json"
         if not manifest_path.is_file() or manifest_path.is_symlink():
             raise ImportFailure(f"Missing or unsafe ELA render manifest: {manifest_path}")
@@ -732,16 +802,43 @@ def validate_asset_tree(
             raise ImportFailure(f"Stale ELA render manifest version: {manifest_path}")
         crop_names = {f"q{int(number):02d}.webp" for number in manifest.get("crops", {})}
         output_names = {f"q{int(number):02d}.webp" for number in manifest.get("outputs", {})}
-        if crop_names != expected_names or output_names != expected_names:
+        if crop_names != expected_question_names or output_names != expected_question_names:
             raise ImportFailure(f"ELA render-manifest parity failed: {manifest_path}")
-        encoded = json.dumps(manifest, ensure_ascii=False)
+        passage_manifest_path = asset_root / directory / ".nysed-passages.json"
+        if not passage_manifest_path.is_file() or passage_manifest_path.is_symlink():
+            raise ImportFailure(f"Missing or unsafe ELA passage manifest: {passage_manifest_path}")
+        try:
+            passage_manifest = json.loads(passage_manifest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ImportFailure(f"Unreadable ELA passage manifest: {passage_manifest_path}") from exc
+        expected_passage_names = expected_passages_by_directory[directory]
+        if passage_manifest.get("passageScriptVersion") != PASSAGE_SCRIPT_VERSION:
+            raise ImportFailure(f"Stale ELA passage manifest version: {passage_manifest_path}")
+        passage_names = {
+            str(value.get("filename"))
+            for value in passage_manifest.get("passages", {}).values()
+            if isinstance(value, dict)
+        }
+        passage_output_ids = set(passage_manifest.get("passageOutputs", {}))
+        expected_passage_ids = {
+            str(stimulus["id"])
+            for exam in exams
+            if Path(str(exam["year"]), f"grade-{int(exam['grade'])}", "en") == directory
+            for stimulus in exam["stimuli"]
+        }
+        if (
+            passage_names != expected_passage_names
+            or passage_output_ids != expected_passage_ids
+        ):
+            raise ImportFailure(f"ELA passage-manifest parity failed: {passage_manifest_path}")
+        encoded = json.dumps([manifest, passage_manifest], ensure_ascii=False)
         if str(REPO_ROOT) in encoded or str(Path.home()) in encoded or "file://" in encoded:
-            raise ImportFailure(f"ELA render manifest leaks a local path: {manifest_path}")
+            raise ImportFailure(f"ELA render manifest leaks a local path: {directory}")
 
     if require_exact:
         actual_files = {
             path.relative_to(asset_root)
-            for path in asset_root.rglob("q*.webp")
+            for path in asset_root.rglob("*.webp")
             if path.is_file()
         }
         if actual_files != expected_files:
@@ -754,6 +851,14 @@ def validate_asset_tree(
         if len(manifests) != len(exams):
             raise ImportFailure(
                 f"Staged ELA manifest count mismatch: expected {len(exams)}, got {len(manifests)}"
+            )
+        passage_manifests = [
+            path for path in asset_root.rglob(".nysed-passages.json") if path.is_file()
+        ]
+        if len(passage_manifests) != len(exams):
+            raise ImportFailure(
+                "Staged ELA passage manifest count mismatch: "
+                f"expected {len(exams)}, got {len(passage_manifests)}"
             )
 
 
@@ -877,10 +982,10 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=textwrap.dedent(
             """
-            Copyright boundary:
-              * passage pages stay in official NYSED PDFs and are never copied;
-              * local WebPs contain only a released question and choices A–D;
-              * every crop is rejected if printed key/rationale text leaks.
+            Educational-use boundary:
+              * local passage WebPs retain original numbering, bylines, visuals, and credits;
+              * question WebPs contain only a released question and choices A–D;
+              * every question crop is rejected if printed key/rationale text leaks.
 
             Publish safety:
               * subset/sample imports use cache-local assets and cannot touch production;
@@ -1048,7 +1153,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     generated_at = deterministic_timestamp(index_html)
     catalog = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "generatedAt": generated_at,
         "accessedAt": os.environ.get("NYSED_ACCESSED_AT", IMPORT_ACCESSED_AT),
         "sourceUpdatedAt": generated_at.split("T", 1)[0],

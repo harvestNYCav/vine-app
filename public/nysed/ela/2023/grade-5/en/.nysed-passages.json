@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "ee05ce5ade536c4937131cbf89b240cf7c50fa7a061a8b52f2d2d67b46fdb80d",
+  "passages": {
+    "nysed-ela-2023-g5-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2023-g5-stimulus-22-26": {
+      "filename": "passage-22-26.webp",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "questionStart": 22,
+      "questionEnd": 26
+    },
+    "nysed-ela-2023-g5-stimulus-29-35": {
+      "filename": "passage-29-35.webp",
+      "pageStart": 24,
+      "pageEnd": 25,
+      "questionStart": 29,
+      "questionEnd": 35
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2023-g5-stimulus-1-7": {
+      "width": 1087,
+      "height": 2846,
+      "pageCount": 3
+    },
+    "nysed-ela-2023-g5-stimulus-22-26": {
+      "width": 1084,
+      "height": 2352,
+      "pageCount": 2
+    },
+    "nysed-ela-2023-g5-stimulus-29-35": {
+      "width": 1090,
+      "height": 2577,
+      "pageCount": 2
+    }
+  }
+}

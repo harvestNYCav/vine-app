@@ -1,0 +1,58 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+  "passages": {
+    "nysed-ela-2016-g6-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2016-g6-stimulus-22-28": {
+      "filename": "passage-22-28.webp",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "questionStart": 22,
+      "questionEnd": 28
+    },
+    "nysed-ela-2016-g6-stimulus-29-35": {
+      "filename": "passage-29-35.webp",
+      "pageStart": 19,
+      "pageEnd": 20,
+      "questionStart": 29,
+      "questionEnd": 35
+    },
+    "nysed-ela-2016-g6-stimulus-36-42": {
+      "filename": "passage-36-42.webp",
+      "pageStart": 27,
+      "pageEnd": 29,
+      "questionStart": 36,
+      "questionEnd": 42
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2016-g6-stimulus-1-7": {
+      "width": 1123,
+      "height": 2697,
+      "pageCount": 2
+    },
+    "nysed-ela-2016-g6-stimulus-22-28": {
+      "width": 856,
+      "height": 2325,
+      "pageCount": 2
+    },
+    "nysed-ela-2016-g6-stimulus-29-35": {
+      "width": 1117,
+      "height": 2559,
+      "pageCount": 2
+    },
+    "nysed-ela-2016-g6-stimulus-36-42": {
+      "width": 1079,
+      "height": 3010,
+      "pageCount": 3
+    }
+  }
+}

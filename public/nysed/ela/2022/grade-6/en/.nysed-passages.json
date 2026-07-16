@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "e85617d445f9cd4e7d5c37a5138ee5efcf068cf48030397b88185e0a7a2e6d9e",
+  "passages": {
+    "nysed-ela-2022-g6-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2022-g6-stimulus-8-14": {
+      "filename": "passage-8-14.webp",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "questionStart": 8,
+      "questionEnd": 14
+    },
+    "nysed-ela-2022-g6-stimulus-22-28": {
+      "filename": "passage-22-28.webp",
+      "pageStart": 20,
+      "pageEnd": 21,
+      "questionStart": 22,
+      "questionEnd": 28
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2022-g6-stimulus-1-7": {
+      "width": 1062,
+      "height": 2866,
+      "pageCount": 3
+    },
+    "nysed-ela-2022-g6-stimulus-22-28": {
+      "width": 1030,
+      "height": 2234,
+      "pageCount": 2
+    },
+    "nysed-ela-2022-g6-stimulus-8-14": {
+      "width": 1028,
+      "height": 2300,
+      "pageCount": 2
+    }
+  }
+}
