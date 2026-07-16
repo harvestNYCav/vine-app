@@ -22,8 +22,9 @@ export default function NYSEDAttribution({ exam }: { exam: ElaExamDefinition }) 
         NYSED.
       </p>
       <p className="mt-2">
-        Reading passages and other third-party works retain their own rights. Their source and permission
-        credits remain in the official booklet, which students must open to read the passages.
+        Reading passages and other third-party works retain their own rights. Vine reproduces the
+        released passage pages for noncommercial educational practice. Source and permission credits
+        remain available in the official NYSED booklet linked below.
       </p>
       <p className="mt-2">
         Source:{' '}

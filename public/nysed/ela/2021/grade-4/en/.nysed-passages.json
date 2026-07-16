@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "1e590bb1a0c7665e80d530c7a80eaba46976620676aebf22e8f2d22a43243b03",
+  "passages": {
+    "nysed-ela-2021-g4-stimulus-1-6": {
+      "filename": "passage-1-6.webp",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "questionStart": 1,
+      "questionEnd": 6
+    },
+    "nysed-ela-2021-g4-stimulus-7-12": {
+      "filename": "passage-7-12.webp",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "questionStart": 7,
+      "questionEnd": 12
+    },
+    "nysed-ela-2021-g4-stimulus-13-18": {
+      "filename": "passage-13-18.webp",
+      "pageStart": 19,
+      "pageEnd": 21,
+      "questionStart": 13,
+      "questionEnd": 18
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2021-g4-stimulus-1-6": {
+      "width": 1035,
+      "height": 3365,
+      "pageCount": 3
+    },
+    "nysed-ela-2021-g4-stimulus-13-18": {
+      "width": 1054,
+      "height": 2846,
+      "pageCount": 3
+    },
+    "nysed-ela-2021-g4-stimulus-7-12": {
+      "width": 1033,
+      "height": 3470,
+      "pageCount": 3
+    }
+  }
+}

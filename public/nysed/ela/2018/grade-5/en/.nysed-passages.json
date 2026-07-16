@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "e1787392509748c02633c2318e17d1967f8e3277bc8ee0dc607197e4189d94a5",
+  "passages": {
+    "nysed-ela-2018-g5-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2018-g5-stimulus-22-28": {
+      "filename": "passage-22-28.webp",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "questionStart": 22,
+      "questionEnd": 28
+    },
+    "nysed-ela-2018-g5-stimulus-29-35": {
+      "filename": "passage-29-35.webp",
+      "pageStart": 20,
+      "pageEnd": 22,
+      "questionStart": 29,
+      "questionEnd": 35
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2018-g5-stimulus-1-7": {
+      "width": 1040,
+      "height": 3041,
+      "pageCount": 3
+    },
+    "nysed-ela-2018-g5-stimulus-22-28": {
+      "width": 1032,
+      "height": 2176,
+      "pageCount": 2
+    },
+    "nysed-ela-2018-g5-stimulus-29-35": {
+      "width": 1074,
+      "height": 3098,
+      "pageCount": 3
+    }
+  }
+}

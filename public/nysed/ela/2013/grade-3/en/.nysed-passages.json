@@ -1,0 +1,22 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "e4e50659dbad011e1baafece07d3393e15b1225775069bd29b92d9e492a65e41",
+  "passages": {
+    "nysed-ela-2013-g3-stimulus-1-6": {
+      "filename": "passage-1-6.webp",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "questionStart": 1,
+      "questionEnd": 6
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2013-g3-stimulus-1-6": {
+      "width": 1088,
+      "height": 1707,
+      "pageCount": 2
+    }
+  }
+}

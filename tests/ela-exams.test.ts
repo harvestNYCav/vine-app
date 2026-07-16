@@ -108,6 +108,21 @@ test('catalog validation rejects leaked keys, wrong-grade standards, and unsafe 
   externalPassage.exams[0].stimuli[0].references[0].sourceUrl = 'https://example.com/passage.pdf'
   assert.throws(() => buildElaExamCatalog(externalPassage), /official passage PDF URL/)
 
+  const missingPassage = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const stimulusWithoutPassage = missingPassage.exams[0].stimuli[0] as unknown as {
+    passage?: unknown
+  }
+  delete stimulusWithoutPassage.passage
+  assert.throws(() => buildElaExamCatalog(missingPassage), /valid local passage image/)
+
+  const wrongPassagePath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  wrongPassagePath.exams[0].stimuli[0].passage.src = '/vine-app/nysed/ela/wrong.webp'
+  assert.throws(() => buildElaExamCatalog(wrongPassagePath), /wrong passage image path/)
+
+  const wrongPageCount = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  wrongPageCount.exams[0].stimuli[0].passage.pageCount += 1
+  assert.throws(() => buildElaExamCatalog(wrongPageCount), /wrong joined page count/)
+
   const localPath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
   localPath.exams[0].description = '/Users/example/private/vine-app'
   assert.throws(() => buildElaExamCatalog(localPath), /local filesystem path/)
@@ -144,6 +159,7 @@ test('Vine-authored strategy lessons are complete and grade-specific for all fou
 })
 
 test('each practice section stays on one passage stimulus and exposes official page references', () => {
+  const passagePaths = new Set<string>()
   for (const exam of ELA_EXAMS) {
     assert.equal(exam.standardsFramework, exam.year <= 2022 ? 'CCLS' : 'NGLS')
     assert.match(exam.accessedAt, /^\d{4}-\d{2}-\d{2}$/)
@@ -162,6 +178,15 @@ test('each practice section stays on one passage stimulus and exposes official p
       assert.ok(section.skills.includes(section.focusSkill))
       assert.ok(section.standards.length > 0)
       assert.match(section.workedExample.prompt, /^Vine example:/)
+      assert.equal(
+        section.passage.src,
+        `/vine-app/nysed/ela/${exam.year}/grade-${exam.grade}/en/passage-${section.questionStart}-${section.questionEnd}.webp`,
+      )
+      assert.ok(section.passage.width >= 420)
+      assert.ok(section.passage.height >= 260 && section.passage.height <= 16_000)
+      assert.match(section.passage.alt, /PDF page breaks are removed/)
+      assert.ok(!passagePaths.has(section.passage.src), `${section.stimulusId} repeats a passage asset`)
+      passagePaths.add(section.passage.src)
       const match = getElaExamSection(exam.id, section.slug)
       assert.equal(match?.section, section)
       const sectionQuestions = getElaExamSectionQuestions(exam.id, section.slug)
@@ -179,8 +204,16 @@ test('each practice section stays on one passage stimulus and exposes official p
         assert.ok(Number.isInteger(reference.pageStart) && reference.pageStart > 0)
         assert.ok(reference.pageEnd >= reference.pageStart)
       }
+      assert.equal(
+        section.passage.pageCount,
+        section.passageReferences.reduce(
+          (total, reference) => total + reference.pageEnd - reference.pageStart + 1,
+          0,
+        ),
+      )
     }
   }
+  assert.equal(passagePaths.size, 242)
 })
 
 test('active ELA questions are one-point multiple choice with server-only keys', () => {
@@ -210,9 +243,15 @@ test('active ELA questions are one-point multiple choice with server-only keys',
   }
 })
 
-test('all 1,583 question WebPs exist with exact dimensions and no orphaned ELA assets', () => {
-  const paths = ELA_EXAM_QUESTIONS.map(question => question.image.src)
-  assert.equal(paths.length, 1_583)
+test('all question and passage WebPs exist with exact dimensions and no orphaned ELA assets', () => {
+  const questionPaths = ELA_EXAM_QUESTIONS.map(question => question.image.src)
+  const passageAssets = ELA_EXAMS.flatMap(exam => exam.sections.map(section => section.passage))
+  const passagePaths = passageAssets.map(passage => passage.src)
+  const paths = [...questionPaths, ...passagePaths]
+  assert.equal(questionPaths.length, 1_583)
+  assert.equal(passagePaths.length, 242)
+  assert.equal(new Set(questionPaths).size, questionPaths.length)
+  assert.equal(new Set(passagePaths).size, passagePaths.length)
   assert.equal(new Set(paths).size, paths.length)
 
   for (const question of ELA_EXAM_QUESTIONS) {
@@ -224,6 +263,17 @@ test('all 1,583 question WebPs exist with exact dimensions and no orphaned ELA a
     assert.deepEqual(webpDimensions(localPath), {
       width: image.width,
       height: image.height,
+    }, `${localPath} dimensions must match the generated catalog`)
+  }
+
+  for (const passage of passageAssets) {
+    assert.ok(passage.src.startsWith('/vine-app/nysed/ela/'))
+    const localPath = join(root, 'public', passage.src.replace('/vine-app/', ''))
+    assert.ok(existsSync(localPath), `${localPath} should exist`)
+    assert.ok(statSync(localPath).size > 1_000, `${localPath} should not be empty`)
+    assert.deepEqual(webpDimensions(localPath), {
+      width: passage.width,
+      height: passage.height,
     }, `${localPath} dimensions must match the generated catalog`)
   }
 

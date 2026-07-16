@@ -7,7 +7,6 @@ import { studentCanAccessElaExam } from '@/lib/ela-exam-access'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
 import NYSEDAttribution from '../NYSEDAttribution'
-import { formatPdfPageRange } from '../OfficialPassageLinks'
 
 type ProgressRow = {
   section_slug: string
@@ -24,7 +23,7 @@ export default async function ElaExamPage({
 }) {
   const { examSlug } = await params
   const exam = getElaExamBySlug(examSlug)
-  if (!exam || exam.sections.some(section => section.passageReferences.length === 0)) notFound()
+  if (!exam || exam.sections.some(section => !section.passage)) notFound()
 
   const session = await getSession()
   if (!session || session.role !== 'student') notFound()
@@ -79,11 +78,10 @@ export default async function ElaExamPage({
       </div>
 
       <div className="mb-5 rounded-2xl border border-blue-200 bg-blue-50 p-4">
-        <p className="text-sm font-bold text-blue-900">Use the official booklet with Vine</p>
+        <p className="text-sm font-bold text-blue-900">Read every passage in Vine</p>
         <p className="mt-1 text-sm leading-relaxed text-blue-900">
-          Each section links to the exact PDF pages for its passage. Read the passage in the official
-          booklet first, then return here for the multiple-choice questions. Vine displays only each
-          question and its answer choices.
+          Each section includes its complete passage alongside the multiple-choice questions. Open or
+          collapse the passage whenever you need it; no separate booklet is required.
         </p>
         <a
           href={exam.sourceUrl}
@@ -91,7 +89,7 @@ export default async function ElaExamPage({
           rel="noreferrer"
           className="mt-3 inline-flex rounded-xl bg-white px-3 py-2 text-sm font-semibold text-blue-800 underline decoration-blue-300 underline-offset-2 shadow-sm"
         >
-          Open the complete official booklet <span className="ml-1" aria-hidden="true">↗</span>
+          Optional: view the official NYSED booklet <span className="ml-1" aria-hidden="true">↗</span>
         </a>
       </div>
 
@@ -123,7 +121,7 @@ export default async function ElaExamPage({
                       {section.questionIds.length} released questions · {section.passageLabel}
                     </p>
                     <p className="mt-1 text-[11px] font-semibold text-blue-700">
-                      {section.passageReferences.map(formatPdfPageRange).join(' · ')}
+                      Passage included · Collapsible reader
                     </p>
                   </div>
                   <div className="flex-shrink-0 text-right">

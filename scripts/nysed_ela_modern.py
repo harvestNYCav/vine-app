@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Import modern NYSED ELA released multiple-choice questions.
 
-This module owns the 2016-2019 and 2021-2026 English releases.  It deliberately
-stores only question-and-choice crops.  Reading passages remain in the official
-NYSED PDF and are represented by exact, one-based physical PDF page ranges.
+This module owns the 2016-2019 and 2021-2026 English releases. It stores
+question-and-choice crops and page-break-free passage images rendered from the
+exact, one-based physical PDF page ranges.
 
 The main importer owns archive discovery and calls :func:`import_modern_release`.
 """
@@ -89,6 +89,11 @@ except ModuleNotFoundError:  # pragma: no cover - permits direct script imports.
         ElaInventoryError,
         load_modern_mc_inventory,
     )
+
+try:
+    from scripts.nysed_ela_passages import render_passage_assets
+except ModuleNotFoundError:  # pragma: no cover - permits direct script imports.
+    from nysed_ela_passages import render_passage_assets  # type: ignore[no-redef]
 
 
 MODERN_YEARS = (2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026)
@@ -1307,6 +1312,16 @@ def _import_modern_pdf(
         map_items,
         marker_source_pages,
     )
+    passage_images = render_passage_assets(
+        pdf_path,
+        stimuli,
+        output_directory,
+        public_directory,
+        dpi=dpi,
+        force=force_render,
+    )
+    for stimulus in stimuli:
+        stimulus["passage"] = dataclasses.asdict(passage_images[str(stimulus["id"])])
 
     questions: list[dict[str, Any]] = []
     for item in map_items:
@@ -1435,3 +1450,19 @@ def validate_modern_exam(exam: dict[str, Any]) -> None:
         for reference in stimulus["references"]:
             if int(reference["pageStart"]) < 1 or int(reference["pageEnd"]) < int(reference["pageStart"]):
                 raise ImportFailure(f"Invalid ELA passage PDF pages in {stimulus['id']}")
+        passage = stimulus.get("passage", {})
+        expected_src = (
+            f"/vine-app/nysed/ela/{year}/grade-{grade}/en/"
+            f"passage-{start}-{end}.webp"
+        )
+        page_count = sum(
+            int(reference["pageEnd"]) - int(reference["pageStart"]) + 1
+            for reference in stimulus["references"]
+        )
+        if (
+            passage.get("src") != expected_src
+            or int(passage.get("width", 0)) < 420
+            or not 260 <= int(passage.get("height", 0)) <= 16_000
+            or int(passage.get("pageCount", 0)) != page_count
+        ):
+            raise ImportFailure(f"Invalid local ELA passage image in {stimulus['id']}")

@@ -26,6 +26,15 @@ export interface ElaPassageReference {
   pageEnd: number
 }
 
+export interface ElaPassageAsset {
+  src: string
+  width: number
+  height: number
+  alt: string
+  /** Number of physical booklet pages joined into this continuous image. */
+  pageCount: number
+}
+
 export interface ElaChoiceGrading {
   mode: 'choice'
   correct: ElaExamChoice
@@ -64,6 +73,7 @@ export interface ElaExamSectionDefinition {
   passageLabel: string
   questionStart: number
   questionEnd: number
+  passage: ElaPassageAsset
   passageReferences: ElaPassageReference[]
   focusSkill: ElaSkill
   skills: ElaSkill[]

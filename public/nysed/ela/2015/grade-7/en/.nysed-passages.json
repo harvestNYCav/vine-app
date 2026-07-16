@@ -1,0 +1,46 @@
+{
+  "passageScriptVersion": "ela-passage-1",
+  "passageDpi": 160,
+  "passageEncoding": "smallest-of-lossless-and-webp-q90",
+  "passageSourcePdfSha256": "9ac337956a3980544004e316c733fee236cae6afa964df2af4602f7fcdeb24cd",
+  "passages": {
+    "nysed-ela-2015-g7-stimulus-1-7": {
+      "filename": "passage-1-7.webp",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "questionStart": 1,
+      "questionEnd": 7
+    },
+    "nysed-ela-2015-g7-stimulus-8-14": {
+      "filename": "passage-8-14.webp",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "questionStart": 8,
+      "questionEnd": 14
+    },
+    "nysed-ela-2015-g7-stimulus-15-21": {
+      "filename": "passage-15-21.webp",
+      "pageStart": 16,
+      "pageEnd": 18,
+      "questionStart": 15,
+      "questionEnd": 21
+    }
+  },
+  "passageOutputs": {
+    "nysed-ela-2015-g7-stimulus-1-7": {
+      "width": 1107,
+      "height": 2696,
+      "pageCount": 2
+    },
+    "nysed-ela-2015-g7-stimulus-15-21": {
+      "width": 1106,
+      "height": 3608,
+      "pageCount": 3
+    },
+    "nysed-ela-2015-g7-stimulus-8-14": {
+      "width": 1105,
+      "height": 3035,
+      "pageCount": 3
+    }
+  }
+}
