@@ -184,6 +184,12 @@ EXACT_REPLACEMENTS: dict[str, tuple[tuple[str, str], ...]] = {
         ("5 As I gota little older", "5 As I got a little older"),
         ("work!!!” T couldn't believe it", "work!!!” I couldn’t believe it"),
         ("to pick what theyd study", "to pick what they’d study"),
+        ("I wasn't drawing", "I wasn’t drawing"),
+        ("“best athlete’ —but", "“best athlete”—but"),
+        ("I'd\nhave turtles", "I’d\nhave turtles"),
+        ("Or Id fill", "Or I’d fill"),
+        ("there wasn't one", "there wasn’t one"),
+        ("I'd always known", "I’d always known"),
     ),
     "nysed-ela-2016-g5-stimulus-8-14": (
         (
@@ -423,7 +429,7 @@ EXACT_REPLACEMENTS: dict[str, tuple[tuple[str, str], ...]] = {
         ("lowa State University", "Iowa State University"),
         ("25 toa lottery", "25 to a lottery"),
         ("' 1 hectare equals", "¹ 1 hectare equals"),
-        ("Culpepper’ says", "Culpepper² says"),
+        ("grow. Culpepper’ says", "grow,” Culpepper² says"),
         ("\n‘These weeds", "\nThese weeds"),
         ("halfa million", "half a million"),
         ("weeds wont be", "weeds won’t be"),
@@ -520,14 +526,27 @@ EXACT_REPLACEMENTS: dict[str, tuple[tuple[str, str], ...]] = {
         ("*valet:", "² valet:"),
     ),
     "nysed-ela-2016-g5-stimulus-36-42": (
+        ("e\nTwo Days With No Phone", "Two Days With No Phone"),
+        ("I'm itching", "I’m itching"),
+        ("I don't know... maybe", "I don’t know . . . maybe"),
+        ("It probably won't", "It probably won’t"),
+        ("they don't spend", "they don’t spend"),
+        ("they don't wake", "they don’t wake"),
+        ("That's because", "That’s because"),
+        ("\n11 ‘These were", "\n11 These were"),
         ("13 “T think I’m going", "13 “I think I’m going"),
+        ("isolated” Kenny", "isolated,” Kenny"),
+        ("“I don't know", "“I don’t know"),
         ("he explained. “T felt less", "he explained. “I felt less"),
         ("Said Kenny, “T felt", "Said Kenny, “I felt"),
         ("“I think Pll be", "“I think I’ll be"),
         (
-            "without\nit. Said the teen, “It was a reality check.”",
-            "without\nit,” said the teen. “It was a reality check.”",
+            "life with no phone wasn't easy, he admitted “it had benefits.”",
+            "life with no phone wasn’t easy, he admitted, “it had benefits.”",
         ),
+        ("involved”\n", "involved.”\n"),
+        ("should try it?”", "should try it.”"),
+        ("Kenny doesnt", "Kenny doesn’t"),
     ),
     "nysed-ela-2017-g5-stimulus-1-7": (
         ("6 “Look at this place” Todd’s", "6 “Look at this place,” Todd’s"),
@@ -624,6 +643,9 @@ EXACT_REPLACEMENTS: dict[str, tuple[tuple[str, str], ...]] = {
     "nysed-ela-2018-g5-stimulus-1-7": (
         ("case the Woolly-Pufts\nproved", "case the Woolly-Puffs\nproved"),
         ("but Pll have to", "but I’ll have to"),
+        ("“Poor Woolly-Puff” Wendy", "“Poor Woolly-Puff,” Wendy"),
+        ("18 “We're going", "18 “We’re going"),
+        ("they’ re avoiding", "they’re avoiding"),
         (
             "22 “Sorry; Mayor Murphy said firmly.",
             "22 “Sorry,” Mayor Murphy said firmly.",
@@ -685,6 +707,9 @@ EXACT_REPLACEMENTS: dict[str, tuple[tuple[str, str], ...]] = {
     ),
     "nysed-ela-2018-g8-stimulus-15-21": (
         ("“T did it?’", "“I did it?”"),
+    ),
+    "nysed-ela-2019-g6-stimulus-1-7": (
+        ("use in a musuem", "use in a museum"),
     ),
     "nysed-ela-2019-g6-stimulus-29-35": (
         ("9 The Egyptians wrote as many different kinds of things as we do. ‘They wrote", "9 The Egyptians wrote as many different kinds of things as we do. They wrote"),
@@ -1044,6 +1069,10 @@ EXACT_REPLACEMENTS: dict[str, tuple[tuple[str, str], ...]] = {
         ),
     ),
     "nysed-ela-2026-g5-stimulus-22-27": (
+        (
+            "the Wild on a Snowmobile\nby Aaron Derr",
+            "the Wild on a Snowmobile”\nby Aaron Derr",
+        ),
         (
             "Know Before You Go\n"
             "WHERE:\n"

@@ -105,7 +105,12 @@
     "nysed-2016-g3-mc-q27": {
       "inputHash": "f336e4ffcfcbb5c7bddef460c19f24ae67ea32357950d360d2b72d0daa793706",
       "description": {
-        "en": "Question 27. a7 Which situation could be represented by the expression 6 x 2? Choices: A: Rocco hiked six miles each day for two days; B: Rocco had six baseballs and gave away two of them; C: Rocco had a total of six tennis balls in two cans; D: Rocco biked six miles and then continued for two more miles."
+        "en": "Question 27. Which situation could be represented by the expression 6 × 2? Choices: A: Rocco hiked six miles each day for two days; B: Rocco had six baseballs and gave away two of them; C: Rocco had a total of six tennis balls in two cans; D: Rocco biked six miles and then continued for two more miles."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Which situation could be represented by the expression 6 × 2?"
+        ]
       }
     },
     "nysed-2016-g3-mc-q31": {

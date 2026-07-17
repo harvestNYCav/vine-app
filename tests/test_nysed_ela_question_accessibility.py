@@ -65,6 +65,77 @@ class ElaQuestionAccessibilityTextTests(unittest.TestCase):
         self.assertNotIn("B: B:", repaired)
         self.assertNotIn("D: D:", repaired)
 
+    def test_reviewed_feedback_repairs_match_the_exact_question_artifacts(self) -> None:
+        choices = (
+            " Choices: A: the first complete response B: the second complete response "
+            "C: the third complete response D: the fourth complete response"
+        )
+        cases = (
+            (
+                "nysed-ela-2021-g4-mc-q14",
+                14,
+                "Question 14. What does the phrase suggest? Choices: A: comfort "
+                "B: disappointment C: sa feeling of anger D: clear thinking",
+                "C: a feeling of anger",
+            ),
+            (
+                "nysed-ela-2017-g4-mc-q19",
+                19,
+                "Question 19. yg What does paragraph 3 reveal?" + choices,
+                "Question 19. What",
+            ),
+            (
+                "nysed-ela-2016-g4-mc-q26",
+                26,
+                "Question 26. paragraph 7, what does the word show?" + choices,
+                "Question 26. In paragraph 7",
+            ),
+            (
+                "nysed-ela-2017-g5-mc-q38",
+                38,
+                "Question 38. 3g Which evidence best supports the claim?" + choices,
+                "Question 38. Which",
+            ),
+            (
+                "nysed-ela-2016-g5-mc-q21",
+                21,
+                "Question 21. oN Which statement best summarizes the event?" + choices,
+                "Question 21. Which",
+            ),
+            (
+                "nysed-ela-2016-g5-mc-q38",
+                38,
+                "Question 38. 3g How does the author organize the passage?" + choices,
+                "Question 38. How",
+            ),
+            (
+                "nysed-ela-2016-g7-mc-q38",
+                38,
+                "Question 38. 3g Read this sentence from the article." + choices,
+                "Question 38. Read",
+            ),
+            (
+                "nysed-ela-2016-g8-mc-q38",
+                38,
+                "Question 38. 3g The phrase suggests that the speaker" + choices,
+                "Question 38. The",
+            ),
+        )
+
+        for question_id, number, raw, expected in cases:
+            with self.subTest(question_id=question_id):
+                repaired = _apply_reviewed_question_repairs(
+                    question_id=question_id,
+                    number=number,
+                    value=raw,
+                )
+                self.assertIn(expected, repaired)
+                validate_ela_question_accessibility_text(
+                    repaired,
+                    question_id=question_id,
+                    number=number,
+                )
+
     def test_catalog_projection_does_not_duplicate_choices_separator(self) -> None:
         source = valid_alt()
 
@@ -158,6 +229,10 @@ class ElaQuestionAccessibilityTextTests(unittest.TestCase):
             "Tt",
             "Pp",
             "c",
+            "3g",
+            "oN",
+            "yg",
+            "sa feeling",
             "GO ON",
             "H ow",
             "Th e",

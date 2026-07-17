@@ -91,15 +91,26 @@ class VerifiedChoiceLabelTests(unittest.TestCase):
 
 
 class AccessibilityChromeCleanupTests(unittest.TestCase):
-    def test_preserves_stop_inside_question_content(self) -> None:
+    def test_preserves_go_on_inside_question_content(self) -> None:
         value = clean_alt_text(
-            "3 Which detail shows that the ferry will stop running?\n"
-            "A The weather changes.\nB The bridge opens.",
-            3,
+            "6 The class used five identical buses to go on a field trip.\n"
+            "A 20\nB 24\nC 25\nD 32",
+            6,
             "en",
         )
 
-        self.assertIn("will stop running", value)
+        self.assertIn("to go on a field trip", value)
+
+    def test_preserves_stop_inside_question_content(self) -> None:
+        value = clean_alt_text(
+            "14 The bus should arrive at her stop before 8:20, and the spinner will stop on blue.\n"
+            "A 3/10\nB 1/3\nC 7/20\nD 13/20",
+            14,
+            "en",
+        )
+
+        self.assertIn("her stop before 8:20", value)
+        self.assertIn("will stop on blue", value)
 
     def test_removes_only_standalone_booklet_chrome(self) -> None:
         value = clean_alt_text(

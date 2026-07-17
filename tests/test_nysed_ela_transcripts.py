@@ -257,6 +257,57 @@ class TranscriptReviewManifestTests(unittest.TestCase):
                 expected_count,
             )
 
+    def test_source_verified_transcript_feedback_corrections_are_preserved(self) -> None:
+        passages: dict[str, str] = {}
+        for path in sorted(DEFAULT_SIDECAR_ROOT.glob("????-grade-[3-8].json")):
+            sidecar = json.loads(path.read_text(encoding="utf-8"))
+            passages.update(
+                (passage["stimulusId"], str(passage["text"]))
+                for passage in sidecar["passages"]
+            )
+
+        expected_fragments = {
+            "nysed-ela-2016-g5-stimulus-1-7": (
+                "like “brainiest” or “best athlete”—but",
+                "Or I’d fill squirt guns",
+            ),
+            "nysed-ela-2016-g5-stimulus-36-42": (
+                "Two Days With No Phone\nby Sarah Jane Brian",
+                "11 These were the rules",
+                "life with no phone wasn’t easy, he admitted, “it had benefits.”",
+                "Everybody in the world should try it.”",
+                "without\nit. Said the teen, “It was a reality check.”",
+            ),
+            "nysed-ela-2018-g5-stimulus-1-7": (
+                "“Poor Woolly-Puff,” Wendy said.",
+                "It’s as if they’re avoiding us.",
+            ),
+            "nysed-ela-2016-g6-stimulus-36-42": (
+                "you can watch it grow,” Culpepper² says.",
+            ),
+            "nysed-ela-2019-g6-stimulus-1-7": (
+                "a person who chooses items for use in a museum",
+            ),
+            "nysed-ela-2026-g5-stimulus-22-27": (
+                "the Wild on a Snowmobile”\nby Aaron Derr",
+            ),
+        }
+        rejected_fragments = {
+            "nysed-ela-2016-g5-stimulus-36-42": ("e\nTwo Days", "try it?”"),
+            "nysed-ela-2018-g5-stimulus-1-7": ("they’ re",),
+            "nysed-ela-2016-g6-stimulus-36-42": ("grow. Culpepper",),
+            "nysed-ela-2019-g6-stimulus-1-7": ("musuem",),
+        }
+
+        for stimulus_id, fragments in expected_fragments.items():
+            with self.subTest(stimulus_id=stimulus_id):
+                for fragment in fragments:
+                    self.assertIn(fragment, passages[stimulus_id])
+        for stimulus_id, fragments in rejected_fragments.items():
+            with self.subTest(stimulus_id=stimulus_id):
+                for fragment in fragments:
+                    self.assertNotIn(fragment, passages[stimulus_id])
+
     def test_all_reviewed_transcripts_pass_text_validation(self) -> None:
         reviews = load_review_manifest()
         seen: set[str] = set()

@@ -174,8 +174,8 @@ EXPECTED_MC_COUNTS: dict[int, tuple[int, int, int, int, int, int]] = {
 }
 EXPECTED_GRAND_TOTAL = 1583
 EXPECTED_LEGACY_TOTAL = 269
-EXPECTED_OFFICIAL_RATIONALE_TOTAL = 147
-EXPECTED_CORRECTED_OFFICIAL_RATIONALE_TOTAL = 2
+EXPECTED_OFFICIAL_RATIONALE_TOTAL = 145
+EXPECTED_CORRECTED_OFFICIAL_RATIONALE_TOTAL = 4
 EXPECTED_VINE_EXPLANATION_TOTAL = 1434
 CORRECTED_OFFICIAL_RATIONALES: dict[tuple[int, int, int], str] = {
     (2013, 4, 2): (
@@ -192,10 +192,27 @@ CORRECTED_OFFICIAL_RATIONALES: dict[tuple[int, int, int], str] = {
         "the correct way to walk in snowshoes (paragraph 14) and before the passage says they "
         "are ready for the \u201cslopes and trails nearby\u201d (paragraph 15)."
     ),
+    (2013, 6, 5): (
+        "Students who choose \u201cC\u201d recognize that lines 9 through 14 introduce how the "
+        "project differs from an ordinary road. The passage says the South Pole Traverse "
+        "\u201cwill not be a typical thoroughfare\u201d and describes it as a path of groomed snow and ice "
+        "marked by green flags, and says it will cross floating ice, crevasses, deep snow, "
+        "mountains, and frozen nothingness. These details establish the project's unique "
+        "nature and set up ideas developed later in the article."
+    ),
+    (2014, 7, 15): (
+        "Students who choose \u201cA\u201d understand the connotation of \u201cleftovers\u201d in context. "
+        "Calling the material in the Kuiper Belt \u201cplanetary leftovers\u201d makes it sound like "
+        "material remaining after the planets formed\u2014something left over from an earlier "
+        "process. The phrase conveys the sense of choice A without claiming that the objects "
+        "were previously used parts of planets."
+    ),
 }
 CORRECTED_OFFICIAL_RATIONALE_SOURCE_SHA256: dict[tuple[int, int, int], str] = {
     (2013, 4, 2): "2fcb8e31eb5a52497b543826a7ee2709b40aeb6a3ef92503de55147525a1b474",
     (2014, 3, 12): "f3ef27d7feb33bcc3ace8afb059e062862ada599350a2490d73c2a5be0b30e95",
+    (2013, 6, 5): "bee43bb7a176ec80a5d2f81fded49a8185ab884393ea330d1e2a6c72880f6cc7",
+    (2014, 7, 15): "be7c3a1a90488aaa763d056d3ddb1febe13064f1af4ec32e9ccf0746936315c3",
 }
 
 
