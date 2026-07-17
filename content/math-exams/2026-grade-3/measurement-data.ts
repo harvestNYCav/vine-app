@@ -32,6 +32,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The picture starts at 10 liters. Adding 5 liters gives 10 + 5 = 15 liters, so B is correct.',
         es: 'La imagen comienza con 10 litros. Al sumar 5 litros, 10 + 5 = 15 litros, por lo que B es correcta.',
@@ -68,6 +69,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'A difference is found with subtraction: 81 - 59 = 22 kilograms, so B is correct.',
         es: 'Una diferencia se encuentra con una resta: 81 - 59 = 22 kilogramos, por lo que B es correcta.',
@@ -104,6 +106,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The rectangle has 9 squares in each of 7 rows. Its area is 9 × 7, which is also 7 rows of 9, so D is correct.',
         es: 'El rectángulo tiene 9 cuadrados en cada una de 7 filas. Su área es 9 × 7, que también son 7 filas de 9, por lo que D es correcta.',
@@ -140,6 +143,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Break the shaded L into two rectangles: 2 × 6 = 12 and 2 × 3 = 6. Then 12 + 6 = 18 square units, so B is correct.',
         es: 'Divide la L sombreada en dos rectángulos: 2 × 6 = 12 y 2 × 3 = 6. Luego, 12 + 6 = 18 unidades cuadradas, por lo que B es correcta.',
@@ -176,6 +180,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'A square with side length 6 feet has area 6 × 6 = 36 square feet, so D is correct.',
         es: 'Un cuadrado con lados de 6 pies tiene un área de 6 × 6 = 36 pies cuadrados, por lo que D es correcta.',
@@ -212,6 +217,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'A',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The gray part is 5 × 4 and the white part is 5 × 6. Add those two areas, so A is correct.',
         es: 'La parte gris mide 5 × 4 y la parte blanca mide 5 × 6. Se suman las dos áreas, por lo que A es correcta.',
@@ -248,6 +254,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Each unit square covers exactly 1 square unit, so covering 18 square units requires 18 unit squares. C is correct.',
         es: 'Cada cuadrado unitario cubre exactamente 1 unidad cuadrada, por lo que cubrir 18 unidades cuadradas requiere 18 cuadrados unitarios. C es correcta.',
@@ -284,6 +291,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Split the garden into a 3-by-8 rectangle and a 5-by-5 rectangle. Their areas are 24 and 25, and 24 + 25 = 49 square feet, so C is correct.',
         es: 'Divide el jardín en un rectángulo de 3 por 8 y otro de 5 por 5. Sus áreas son 24 y 25, y 24 + 25 = 49 pies cuadrados, por lo que C es correcta.',
@@ -319,6 +327,7 @@ export const MEASUREMENT_DATA_QUESTIONS: MathExamQuestionRecord[] = [
     },
     grading: {
       mode: 'self-assessed',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Add the elapsed time in two steps: 5:39 p.m. + 30 minutes = 6:09 p.m., then 6:09 p.m. + 8 minutes = 6:17 p.m.',
         es: 'Suma el tiempo transcurrido en dos pasos: 5:39 p. m. + 30 minutos = 6:09 p. m.; luego, 6:09 p. m. + 8 minutos = 6:17 p. m.',

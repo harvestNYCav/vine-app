@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2022-grade-6-mc-v1",
+  "questions": {
+    "nysed-2022-g6-mc-q1": {
+      "inputHash": "f10908d8b2fa28f81d9b88ae9aa41ca2d5fd094f158bcb75c5f2193a170839f9",
+      "explanation": {
+        "text": {
+          "en": "Substitute each choice into 3m − 4 < 11. For m = 4, 3(4) − 4 = 8 and 8 < 11 is true; m = 5 gives 11 < 11, which is false, and larger choices also fail, so choice A works.",
+          "es": "Se sustituye cada opción en 3m − 4 < 11. Para m = 4, 3(4) − 4 = 8 y 8 < 11 es verdadero; m = 5 da 11 < 11, que es falso, y los valores mayores también fallan, así que funciona la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q2": {
+      "inputHash": "6ef531cfc76a321f1e311b8c0ea3d1bff4efed2cad7533ed9b629b6a88f08c3d",
+      "explanation": {
+        "text": {
+          "en": "The table shows 3 beehives pollinate 8 acres. Since 18 = 6 × 3, multiply the acres by the same factor: 6 × 8 = 48 acres, choice D.",
+          "es": "La tabla muestra que 3 colmenas polinizan 8 acres. Como 18 = 6 × 3, se multiplican los acres por el mismo factor: 6 × 8 = 48 acres, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q3": {
+      "inputHash": "b0d8ed94d1df7e36b52c87d66f8ebac33b61e183023fccca5affaceda9cfd4ba",
+      "explanation": {
+        "text": {
+          "en": "The prism has dimensions 8 cm, 3 cm, and 5 cm. Its surface area is 2(8 × 3) + 2(8 × 5) + 2(3 × 5) = 48 + 80 + 30 = 158 square centimeters, choice C.",
+          "es": "El prisma tiene dimensiones de 8 cm, 3 cm y 5 cm. Su área superficial es 2(8 × 3) + 2(8 × 5) + 2(3 × 5) = 48 + 80 + 30 = 158 centímetros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q4": {
+      "inputHash": "022909d8836a5bddaa4707223a23d6d1c9d0a29ffe6ecdf761cb309e1a66f9af",
+      "explanation": {
+        "text": {
+          "en": "Each month costs $120, so the total cost equals the monthly cost multiplied by the number of months. Therefore d = 120 × m, which is choice A.",
+          "es": "Cada mes cuesta $120, así que el costo total es el costo mensual multiplicado por la cantidad de meses. Por lo tanto, d = 120 × m, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q5": {
+      "inputHash": "a72fffed73edd1239c2a653e61575458f3360e61db2fe63ae80c192ac0954737",
+      "explanation": {
+        "text": {
+          "en": "There are 6 large envelopes and 6 + 11 = 17 envelopes altogether. The ratio of large envelopes to the total is therefore 6:17, choice C.",
+          "es": "Hay 6 sobres grandes y 6 + 11 = 17 sobres en total. Por lo tanto, la razón de sobres grandes al total es 6:17, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q11": {
+      "inputHash": "ac771038213ef40b23fc5cc1126b52d033cf707f452902ae92e1661cbab3c01e",
+      "explanation": {
+        "text": {
+          "en": "Substitute x = 7 into 3x^2 − 2x + 3. This gives 3(7^2) − 2(7) + 3 = 147 − 14 + 3 = 136, choice C.",
+          "es": "Se sustituye x = 7 en 3x^2 − 2x + 3. Se obtiene 3(7^2) − 2(7) + 3 = 147 − 14 + 3 = 136, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q12": {
+      "inputHash": "a18d67b8b629cfb7f7cd7b7f322d74f53479c989d34d673d45c569d389d8b09d",
+      "explanation": {
+        "text": {
+          "en": "The diagonal divides the 8-by-14 rectangle into two equal triangles. The shaded half has area 1/2 × 8 × 14 = 56 square centimeters, choice C.",
+          "es": "La diagonal divide el rectángulo de 8 por 14 en dos triángulos iguales. La mitad sombreada tiene un área de 1/2 × 8 × 14 = 56 centímetros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q15": {
+      "inputHash": "936ff1a408d20fdc84fbfb49270362602ddaeefaad429e62900d4b8aaada52b0",
+      "explanation": {
+        "text": {
+          "en": "Ten students represent 20%, or 0.20, of the club. Dividing the part by the percent gives 10 ÷ 0.20 = 50 students in all, choice C.",
+          "es": "Diez estudiantes representan el 20%, o 0.20, del club. Al dividir la parte entre el porcentaje se obtiene 10 ÷ 0.20 = 50 estudiantes en total, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q16": {
+      "inputHash": "26982f524a3b0a03be94fe50a16829279f2ee3c5db34905131be13a2787b9860",
+      "explanation": {
+        "text": {
+          "en": "Add 8 to both sides of 4x − 8 = 4 to get 4x = 12. Dividing by 4 gives x = 3, which is choice B.",
+          "es": "Se suma 8 a ambos lados de 4x − 8 = 4 para obtener 4x = 12. Al dividir entre 4 se obtiene x = 3, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q17": {
+      "inputHash": "05d8004301c8f97f82af931e5dd79b60005e186e088cc126fad9075f5ed34329",
+      "explanation": {
+        "text": {
+          "en": "One mile is 1,760 yards, so 1/4 mile is 1,760 ÷ 4 = 440 yards. At $20 per yard, the fence costs 440 × $20 = $8,800, choice B.",
+          "es": "Una milla tiene 1,760 yardas, así que 1/4 de milla es 1,760 ÷ 4 = 440 yardas. A $20 por yarda, la cerca cuesta 440 × $20 = $8,800, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q22": {
+      "inputHash": "980376b0b66cf79739ec687ff8d25212692c6085a96b929157aa4a8e2d476489",
+      "explanation": {
+        "text": {
+          "en": "Sharing 3/4 gallon equally among 5 containers means divide by 5. Thus 3/4 ÷ 5 = 3/4 × 1/5 = 3/20 gallon per container, choice A.",
+          "es": "Repartir 3/4 de galón por igual entre 5 recipientes significa dividir entre 5. Así, 3/4 ÷ 5 = 3/4 × 1/5 = 3/20 de galón por recipiente, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q23": {
+      "inputHash": "76d4e79ad4f122242e624a9dd87e5270d59e2250b06252e3fa87aa4ec6bc1479",
+      "explanation": {
+        "text": {
+          "en": "A parallelogram's area is base × perpendicular height, not the slanted side. Using 4.25 cm and 2.8 cm gives 4.25 × 2.8 = 11.9 square centimeters, choice C.",
+          "es": "El área de un paralelogramo es base × altura perpendicular, no el lado inclinado. Con 4.25 cm y 2.8 cm se obtiene 4.25 × 2.8 = 11.9 centímetros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q26": {
+      "inputHash": "6526144c8576718602ce8e317441bfc4e085578e2d417e9e315695948621d25f",
+      "explanation": {
+        "text": {
+          "en": "The value −1/2 is halfway between −1 and 0 on the number line. Point R is at that halfway mark, so choice B represents −1/2.",
+          "es": "El valor −1/2 está a la mitad entre −1 y 0 en la recta numérica. El punto R está en esa marca intermedia, así que la opción B representa −1/2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q27": {
+      "inputHash": "9519ea41fd598050eb31874b44b053d1fc1f29fba40482b828dda397cc9d8f00",
+      "explanation": {
+        "text": {
+          "en": "The unit price is total cost divided by the 96 pencils. Calculating $11.52 ÷ 96 gives $0.12 per pencil, choice A.",
+          "es": "El precio unitario es el costo total dividido entre los 96 lápices. Al calcular $11.52 ÷ 96 se obtiene $0.12 por lápiz, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q28": {
+      "inputHash": "00cb27a6206a3b6b6452559fd2b7b385fae93b40f95ea2703c119ba0f2453eb6",
+      "explanation": {
+        "text": {
+          "en": "The given points use x-values −2 and 2 and y-values −5 and 4. The missing corner must combine the unused pair x = 2 and y = −5, giving (2, −5), choice B.",
+          "es": "Los puntos dados usan los valores x de −2 y 2 y los valores y de −5 y 4. El vértice faltante debe combinar x = 2 con y = −5, dando (2, −5), la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q32": {
+      "inputHash": "abd247dee4e682122fcb985e4ad88ea4aefc3aeb6c4c435b9e4abaff03bac33b",
+      "explanation": {
+        "text": {
+          "en": "The difference between 5 ratio parts and 3 ratio parts is 2 parts, and those 2 parts equal 12 tiles. One part is 12 ÷ 2 = 6, so the 3 red parts contain 3 × 6 = 18 tiles, choice A.",
+          "es": "La diferencia entre 5 partes y 3 partes de la razón es 2 partes, y esas 2 partes equivalen a 12 fichas. Una parte vale 12 ÷ 2 = 6, así que las 3 partes rojas contienen 3 × 6 = 18 fichas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q33": {
+      "inputHash": "9b81b574a6a3c78ccd37d920c6336e9b8d91c40c52509e6f6ec96615b59799c3",
+      "explanation": {
+        "text": {
+          "en": "The folded prism has dimensions 23, 8, and 36 inches. Its surface area is 2(23 × 8 + 23 × 36 + 8 × 36) = 2(184 + 828 + 288) = 2,600 square inches, choice D.",
+          "es": "El prisma plegado tiene dimensiones de 23, 8 y 36 pulgadas. Su área superficial es 2(23 × 8 + 23 × 36 + 8 × 36) = 2(184 + 828 + 288) = 2,600 pulgadas cuadradas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q34": {
+      "inputHash": "5ba21969f420894e50ad970957c5fb267c505cfe9ef5a2371b1efa5050eb0db5",
+      "explanation": {
+        "text": {
+          "en": "Compute each unit price: apples cost $4.05 ÷ 3 = $1.35, grapes $4.80 ÷ 2 = $2.40, oranges $7.50 ÷ 5 = $1.50, and peaches $4.65 ÷ 3 = $1.55. Therefore peaches, choice D, match.",
+          "es": "Se calcula cada precio unitario: manzanas $4.05 ÷ 3 = $1.35, uvas $4.80 ÷ 2 = $2.40, naranjas $7.50 ÷ 5 = $1.50 y duraznos $4.65 ÷ 3 = $1.55. Por lo tanto, corresponden los duraznos, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q35": {
+      "inputHash": "21373390ccd1cc601021dbe7e37e2d5eb9b8d2d44a583beb06b1486ff6d9958c",
+      "explanation": {
+        "text": {
+          "en": "To move from −20°F to 0°F, add the opposite of −20. Since −20 + 20 = 0, the required change is an increase of 20°F, choice D.",
+          "es": "Para pasar de −20°F a 0°F se suma el opuesto de −20. Como −20 + 20 = 0, el cambio necesario es un aumento de 20°F, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q36": {
+      "inputHash": "83f73beea959fc96b49c69be21dad3dbad12a8025e260291afd39fa14fcd224d",
+      "explanation": {
+        "text": {
+          "en": "The shaded triangle uses the wall's 12-foot bottom as its base and the 8-foot height of the wall as its perpendicular height. Its area is 1/2 × 12 × 8 = 48 square feet, choice C.",
+          "es": "El triángulo sombreado usa la base inferior de 12 pies y la altura perpendicular de 8 pies de la pared. Su área es 1/2 × 12 × 8 = 48 pies cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q37": {
+      "inputHash": "fd8799da596e73dd6ff57eeb6a2855e3a443f72d43438b1841af141f62c3393a",
+      "explanation": {
+        "text": {
+          "en": "If 45% walked, then 100% − 45% = 55% rode a bus. Calculating 0.55 × 640 = 352 students gives choice B.",
+          "es": "Si el 45% caminó, entonces 100% − 45% = 55% fue en autobús. Al calcular 0.55 × 640 = 352 estudiantes se obtiene la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g6-mc-q38": {
+      "inputHash": "f7353fc0c0fec6ad2bf4db450ab94ad0acbb8d6035560fd23228326815f925df",
+      "explanation": {
+        "text": {
+          "en": "Three times Josh's c coins is 3c. Nick has 4 fewer than that amount, so subtract 4 to get 3c − 4, which is choice A.",
+          "es": "Tres veces las c monedas de Josh es 3c. Nick tiene 4 menos que esa cantidad, así que se resta 4 para obtener 3c − 4, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

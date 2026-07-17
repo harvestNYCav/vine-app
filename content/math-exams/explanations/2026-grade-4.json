@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2026-grade-4-mc-v1",
+  "questions": {
+    "nysed-2026-g4-mc-q1": {
+      "inputHash": "1a5515ee09f5070d6b48d8f29bf28cea5e6872ea0e2b96d2d02b06cecfb8c4c4",
+      "explanation": {
+        "text": {
+          "en": "The digits in 860,327 represent 800,000 + 60,000 + 300 + 20 + 7. This is the expanded form in choice B.",
+          "es": "Los dígitos de 860,327 representan 800,000 + 60,000 + 300 + 20 + 7. Esta es la forma desarrollada de la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q2": {
+      "inputHash": "e6437a84aa36e2adad179e6a7c097074b7a8b65327dd62c6ba13b8c161388a76",
+      "explanation": {
+        "text": {
+          "en": "One pound is 8/8 pound. After using 3/8 and 4/8, the remainder is 8/8 − 3/8 − 4/8 = 1/8 pound.",
+          "es": "Una libra es 8/8 de libra. Después de usar 3/8 y 4/8, queda 8/8 − 3/8 − 4/8 = 1/8 de libra."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q3": {
+      "inputHash": "3d71bc5e9c4dcb652173d0eb4062c64b7a177292ad6f264401ddfd3d2d89d237",
+      "explanation": {
+        "text": {
+          "en": "Triangle A has a vertical side meeting a horizontal side, and triangle D does also. Those pairs form 90° angles, so A and D are right triangles.",
+          "es": "El triángulo A tiene un lado vertical que se encuentra con uno horizontal, y el triángulo D también. Esos pares forman ángulos de 90°, así que A y D son triángulos rectángulos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q4": {
+      "inputHash": "0181324ed4f81a055c93699f432e6015ba3bedbc1e833e43119c2e8e49cdb6e7",
+      "explanation": {
+        "text": {
+          "en": "Use the distributive property: 35 × 12 = 35(10 + 2) = 350 + 70 = 420.",
+          "es": "Usamos la propiedad distributiva: 35 × 12 = 35(10 + 2) = 350 + 70 = 420."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q5": {
+      "inputHash": "165305433bdc15ce1deaa8f2a1799a3c634afd17a347cbcf6ccffcab28f6f318",
+      "explanation": {
+        "text": {
+          "en": "The right side is 4/8 = 1/2. Of the choices, 5/12 is less than 1/2 because 5 × 2 = 10 < 12 × 1 = 12.",
+          "es": "El lado derecho es 4/8 = 1/2. Entre las opciones, 5/12 es menor que 1/2 porque 5 × 2 = 10 < 12 × 1 = 12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q6": {
+      "inputHash": "d600ef689aff5e026f69a99d83a73aa09700421829b0b4df5da5d035f5d208a2",
+      "explanation": {
+        "text": {
+          "en": "The number 8 is a multiple of 4 because 8 = 4 × 2. It is not a factor of 36 because 36 ÷ 8 is not a whole number.",
+          "es": "El número 8 es múltiplo de 4 porque 8 = 4 × 2. No es factor de 36 porque 36 ÷ 8 no es un número entero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q7": {
+      "inputHash": "0bbf9533b92bc011de6bbe99ed4159a61a62a7573eb58d8b2b8f9d25ddefdc21",
+      "explanation": {
+        "text": {
+          "en": "The plot shows distances 1 1/2, 1 1/2, 1 3/4, 2 1/4, and 3 miles. Their sum is 3 + 1 3/4 + 2 1/4 + 3 = 10 miles.",
+          "es": "La gráfica muestra 1 1/2, 1 1/2, 1 3/4, 2 1/4 y 3 millas. Su suma es 3 + 1 3/4 + 2 1/4 + 3 = 10 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q9": {
+      "inputHash": "b00c640b8a4088bb78e991bb9e90c485921234621d48f745980fde32de8e7d2b",
+      "explanation": {
+        "text": {
+          "en": "Compare the hundred-thousands and ten-thousands digits. Since 369,254 has 369 thousand and 368,459 has 368 thousand, 369,254 > 368,459.",
+          "es": "Comparamos los dígitos de las centenas y decenas de millar. Como 369,254 tiene 369 mil y 368,459 tiene 368 mil, 369,254 > 368,459."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q10": {
+      "inputHash": "f8a5bdae9614b96badab9974c46cd67ef7dd74201c37f115cb09f71e11d79bd2",
+      "explanation": {
+        "text": {
+          "en": "Model D has 8 of its 12 equal parts shaded. The fraction 8/12 simplifies by dividing by 4 to 2/3.",
+          "es": "El modelo D tiene 8 de sus 12 partes iguales sombreadas. La fracción 8/12 se simplifica al dividir entre 4 y da 2/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q11": {
+      "inputHash": "dbe8cd76ad13cd3cf21cf2569c0d55df04768823ac3c77f30039f9bb6a9d29a6",
+      "explanation": {
+        "text": {
+          "en": "The rule in 81, 27, 9 is divide by 3. Pattern B follows it because 54 ÷ 3 = 18 and 18 ÷ 3 = 6.",
+          "es": "La regla de 81, 27, 9 es dividir entre 3. El patrón B la sigue porque 54 ÷ 3 = 18 y 18 ÷ 3 = 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q12": {
+      "inputHash": "8b4f7dfac64f62ea7ace572b8ceab9f24b787bcdc1bf1e03c49e118489b2b44a",
+      "explanation": {
+        "text": {
+          "en": "A square, a rectangle, and the slanted figure each have two pairs of opposite parallel sides. Therefore figures X, Y, and Z are all parallelograms.",
+          "es": "Un cuadrado, un rectángulo y la figura inclinada tienen dos pares de lados opuestos paralelos. Por lo tanto, las figuras X, Y y Z son paralelogramos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q13": {
+      "inputHash": "f23783f8e9b90d8f4ec529e43b51723e3cd5fd52654752d503c2d41a5c9b1924",
+      "explanation": {
+        "text": {
+          "en": "Since 4 × 910 = 3,640, subtracting from 3,642 leaves 2. Thus 3,642 ÷ 4 = 910 remainder 2.",
+          "es": "Como 4 × 910 = 3,640, al restarlo de 3,642 quedan 2. Entonces, 3,642 ÷ 4 = 910 con residuo 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q15": {
+      "inputHash": "6fa8c507ec788c9c5c1812ffb1d67df0fd84f30707140329b41be51b20a18329",
+      "explanation": {
+        "text": {
+          "en": "This year’s sales are 3 times last year’s 15 books. Therefore 15 × 3 = 45 books.",
+          "es": "Las ventas de este año son 3 veces los 15 libros del año pasado. Por lo tanto, 15 × 3 = 45 libros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q16": {
+      "inputHash": "e9571b4430d63c5262609007761a3c3ead1e301f040bde681876d5d5889b9417",
+      "explanation": {
+        "text": {
+          "en": "Simplify 4/6 to 2/3. For 4/6 > n/3, the numerator n must be less than 2; among the choices, n = 1 works because 1/3 < 2/3.",
+          "es": "Simplificamos 4/6 a 2/3. Para que 4/6 > n/3, n debe ser menor que 2; entre las opciones, n = 1 funciona porque 1/3 < 2/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q17": {
+      "inputHash": "2793baa943dc16e15c9e16fe13c78b0c70dd15076df68f5df670df3782b2ce34",
+      "explanation": {
+        "text": {
+          "en": "Ten tens equal 10 × 10 = 100. That value is one hundred.",
+          "es": "Diez decenas equivalen a 10 × 10 = 100. Ese valor es una centena."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q18": {
+      "inputHash": "c1e7227372e083eaeb296756700a11a50210ef9214579e27b6369a62295bbbca",
+      "explanation": {
+        "text": {
+          "en": "A full circle is 360°, so a 23° turn is 23 out of 360 equal degrees. The fraction is 23/360.",
+          "es": "Un círculo completo mide 360°, así que un giro de 23° representa 23 de 360 grados iguales. La fracción es 23/360."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q19": {
+      "inputHash": "e6a1b0e2a605635fb1160db866f702f5c4a7001237dfd8af7c6c55fb2b1e0c00",
+      "explanation": {
+        "text": {
+          "en": "Matteo completed 252 + 155 = 407 pieces, leaving 750 − 407 = 343. The closest listed number to 343 is 350.",
+          "es": "Matteo completó 252 + 155 = 407 piezas, por lo que faltan 750 − 407 = 343. El número dado más cercano a 343 es 350."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q20": {
+      "inputHash": "4f5d28f33bf019ef92eaad9fa0d12543c372ccad4a6adb6c48c093bbbf1e9692",
+      "explanation": {
+        "text": {
+          "en": "Figures J and M are rotated rectangles, and K is a square, which is also a rectangle. Figure L has a slanted bottom that does not make four right angles, so only J, K, and M are rectangles.",
+          "es": "Las figuras J y M son rectángulos girados y K es un cuadrado, que también es rectángulo. La figura L tiene un lado inferior inclinado y no forma cuatro ángulos rectos, así que solo J, K y M son rectángulos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q21": {
+      "inputHash": "2b6d53fdb34d9c5333e690c7845d66c430ab7d54c9dfa97f04d6e6b9bebcdea9",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 9 × 5/12 multiplies the whole number by the numerator: 9 × 5/12 = 45/12 = 45 × 1/12.",
+          "es": "Multiplicar 9 × 5/12 multiplica el entero por el numerador: 9 × 5/12 = 45/12 = 45 × 1/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q23": {
+      "inputHash": "94399a1ebec156f69faee082874e768a5b4e45a7af31eb92cd82b39532554781",
+      "explanation": {
+        "text": {
+          "en": "Jen’s 12 points are 4 times Kim’s points. Therefore Kim scores 12 ÷ 4 = 3 points.",
+          "es": "Los 12 puntos de Jen son 4 veces los puntos de Kim. Por lo tanto, Kim obtiene 12 ÷ 4 = 3 puntos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q24": {
+      "inputHash": "84f1641580a5bf9500db05fcff37b81a1679f3bd9df44bc306c8aae2b6950b9c",
+      "explanation": {
+        "text": {
+          "en": "Each circle has 4 of 5 equal parts shaded, or 4/5. With two circles, the total shaded value is represented by 2 × 4/5.",
+          "es": "Cada círculo tiene 4 de 5 partes iguales sombreadas, o 4/5. Con dos círculos, el valor sombreado total se representa con 2 × 4/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q25": {
+      "inputHash": "e3ae3ae6c95e2683189d4289cf00e3be191e7903ba2a02beac05c886e704f8e0",
+      "explanation": {
+        "text": {
+          "en": "Break apart the multiplication: 10,317 × 3 = 10,000 × 3 + 317 × 3 = 30,000 + 951 = 30,951.",
+          "es": "Descomponemos la multiplicación: 10,317 × 3 = 10,000 × 3 + 317 × 3 = 30,000 + 951 = 30,951."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q26": {
+      "inputHash": "7132d03e5c5812dfbbfe17169707abbdaf0533e2c08d1ecbcde751012914ed95",
+      "explanation": {
+        "text": {
+          "en": "Borrow one whole: 8 3/10 = 7 13/10. Then 7 13/10 − 3 7/10 = 4 6/10.",
+          "es": "Pedimos prestado un entero: 8 3/10 = 7 13/10. Luego, 7 13/10 − 3 7/10 = 4 6/10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q28": {
+      "inputHash": "cbe54729564b67ebab210b40da657882a6489b431f27fc18bffddee8002ce4e9",
+      "explanation": {
+        "text": {
+          "en": "Ray BD points up and left while ray BC points right, making angle DBC greater than 90° but less than 180°. Therefore angle DBC is obtuse.",
+          "es": "El rayo BD apunta hacia arriba y a la izquierda, mientras que BC apunta a la derecha, formando un ángulo DBC mayor que 90° y menor que 180°. Por lo tanto, DBC es obtuso."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q29": {
+      "inputHash": "83fbead90cba78a467e26727952691b77b4a3c78c41cf81d0cf51a0a1ade276a",
+      "explanation": {
+        "text": {
+          "en": "Since 8 × 364 = 2,912, subtracting from 2,913 leaves 1. Thus 2,913 ÷ 8 = 364 remainder 1.",
+          "es": "Como 8 × 364 = 2,912, al restarlo de 2,913 queda 1. Entonces, 2,913 ÷ 8 = 364 con residuo 1."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q30": {
+      "inputHash": "e8c8933f3380f72c1b6daa09c0c3cebbee3b4e49dcb975008832c82cb21c0a23",
+      "explanation": {
+        "text": {
+          "en": "The first three circles each show 8/8, and the last shows 3/8. Their sum is 8/8 + 8/8 + 8/8 + 3/8 = 27/8.",
+          "es": "Los primeros tres círculos muestran 8/8 cada uno y el último muestra 3/8. Su suma es 8/8 + 8/8 + 8/8 + 3/8 = 27/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q31": {
+      "inputHash": "e554fc58cccf0570bea4805010bbb0a41e8f6cfa0f3050b7d8be6ecef6fc11bf",
+      "explanation": {
+        "text": {
+          "en": "Multiply numerator and denominator of 3/5 by 2: 3/5 = 6/10.",
+          "es": "Multiplicamos el numerador y el denominador de 3/5 por 2: 3/5 = 6/10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q32": {
+      "inputHash": "dea0127164a6b2f4e4959e4404b816f499fd503519d91b3d29ab4c954b80a879",
+      "explanation": {
+        "text": {
+          "en": "The region labeled C combines side lengths 50 and 8. Therefore C = 50 × 8 = 400.",
+          "es": "La región marcada C combina las longitudes 50 y 8. Por lo tanto, C = 50 × 8 = 400."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q33": {
+      "inputHash": "2021fede0fc33c5df09b9a5ef053ec2b51d53abdb6131ac71d4ba40c61699470",
+      "explanation": {
+        "text": {
+          "en": "The equation 28 = 4 × 7 shows that four groups of 7 make 28. Thus four times as many as 7 is 28.",
+          "es": "La ecuación 28 = 4 × 7 muestra que cuatro grupos de 7 forman 28. Por lo tanto, cuatro veces 7 es 28."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q34": {
+      "inputHash": "c438725e6bd3fc0ebee6b2fed76b6df481bec010dcac174eabd554ad4c993086",
+      "explanation": {
+        "text": {
+          "en": "Segment BC is horizontal and segment CD is vertical, and they meet at C. Because they form a 90° angle, BC and CD are perpendicular.",
+          "es": "El segmento BC es horizontal y CD es vertical, y se encuentran en C. BC y CD son perpendiculares porque forman un ángulo de 90°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g4-mc-q35": {
+      "inputHash": "6abc9ad0c1be46bb60ec319eadbf9c469b5ce7b5f9993110f50bba6deaeb4d99",
+      "explanation": {
+        "text": {
+          "en": "Check by multiplication: 3,844 × 7 = 26,908. Therefore 26,908 ÷ 7 = 3,844.",
+          "es": "Comprobamos con una multiplicación: 3,844 × 7 = 26,908. Por lo tanto, 26,908 ÷ 7 = 3,844."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

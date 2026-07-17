@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2016-grade-6-mc-v1",
+  "questions": {
+    "nysed-2016-g6-mc-q11": {
+      "inputHash": "12aa806a1827c3f57e0ee3670eac332929a38e7b39ebc814d106aa3fc0abe177",
+      "explanation": {
+        "text": {
+          "en": "The coupon subtracts $2.50 from every original price, so d = p − 2.50. For example, $3.00 becomes $0.50 and $6.00 becomes $3.50, exactly the pairs in table A.",
+          "es": "El cupón resta $2.50 de cada precio original, así que d = p − 2.50. Por ejemplo, $3.00 se convierte en $0.50 y $6.00 en $3.50, exactamente los pares de la tabla A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q12": {
+      "inputHash": "3c69450667c7ed996820da035bf0688fe36cc0e692a95780dffa0b4f75fb509c",
+      "explanation": {
+        "text": {
+          "en": "Apply the distributive property: 4(2x − 6) = 4(2x) − 4(6) = 8x − 24. Therefore, the two expressions in choice C have the same value for every x.",
+          "es": "Aplica la propiedad distributiva: 4(2x − 6) = 4(2x) − 4(6) = 8x − 24. Por lo tanto, las dos expresiones de la opción C tienen el mismo valor para todo x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q13": {
+      "inputHash": "1d1c5075279028cc74ff07796310058d1566561262b027bf3ee6bc6fd156db14",
+      "explanation": {
+        "text": {
+          "en": "Divide the total paint by the amount for each container: (2/3) ÷ (1/8) = (2/3)(8) = 16/3 = 5 1/3. Five containers are full and a sixth is partially filled, so 6 containers have paint.",
+          "es": "Divide la pintura total entre la cantidad para cada recipiente: (2/3) ÷ (1/8) = (2/3)(8) = 16/3 = 5 1/3. Cinco recipientes quedan llenos y un sexto queda parcialmente lleno, así que 6 recipientes tienen pintura."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q14": {
+      "inputHash": "d9d60893d984080aff84dff5118efd6fc135c0549f53951564ab91e47a74723b",
+      "explanation": {
+        "text": {
+          "en": "Both points have x-coordinate 1, so they lie on the vertical line x = 1. Point F has y = 0.5 above the x-axis, while G has y = −0.5 below it; plane A shows those locations.",
+          "es": "Ambos puntos tienen coordenada x igual a 1, así que están en la recta vertical x = 1. F tiene y = 0.5 sobre el eje x y G tiene y = −0.5 debajo; el plano A muestra esas ubicaciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q15": {
+      "inputHash": "39d1b853e9cd765f6b18d27eebd4986267afc14f31c4a6e1a69e70860503bef9",
+      "explanation": {
+        "text": {
+          "en": "Twice last year’s soup is 2 × 32 = 64 one-cup servings. Since 1 gallon contains 16 cups, 64 ÷ 16 = 4 gallons, which is choice C.",
+          "es": "El doble de la sopa del año pasado es 2 × 32 = 64 porciones de una taza. Como 1 galón contiene 16 tazas, 64 ÷ 16 = 4 galones, que corresponde a la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q16": {
+      "inputHash": "1470d89d93b128027deed6820c6e3f38d52798bc1a875dfbde26ec501c84451e",
+      "explanation": {
+        "text": {
+          "en": "The greatest listed book weight is 3.2 pounds. Every listed weight is therefore less than 3.3 pounds, so w < 3.3 describes any book on the shelf.",
+          "es": "El mayor peso de los libros es 3.2 libras. Por lo tanto, todos los pesos son menores que 3.3 libras, así que w < 3.3 describe cualquier libro del estante."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q17": {
+      "inputHash": "88c0ceca6fe1daef74f669d62f6ae8e79cdd2f3252b11e6f3f29ddcca7869db7",
+      "explanation": {
+        "text": {
+          "en": "Use the triangle area formula with base b: (1/2)b(6/5) = 2/5. This simplifies to (3/5)b = 2/5, and multiplying by 5/3 gives b = 2/3 foot.",
+          "es": "Usa la fórmula del área del triángulo con base b: (1/2)b(6/5) = 2/5. Esto se simplifica a (3/5)b = 2/5, y al multiplicar por 5/3 se obtiene b = 2/3 de pie."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q18": {
+      "inputHash": "35f372eab9de5984ab3eb49ce9295ebfb00a77e9bd2f4626fec2e68db22ff04d",
+      "explanation": {
+        "text": {
+          "en": "The opposite of −1/2 is 1/2, so M belongs halfway between 0 and 1. The opposite of 5/2 is −5/2, so N belongs halfway between −3 and −2; number line B shows both.",
+          "es": "El opuesto de −1/2 es 1/2, así que M va a mitad de camino entre 0 y 1. El opuesto de 5/2 es −5/2, así que N va entre −3 y −2; la recta B muestra ambos puntos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q19": {
+      "inputHash": "c229f3c0595770e6472dd7d4b5baf40af202db8ecd6f45d8f8f442eb6169da1c",
+      "explanation": {
+        "text": {
+          "en": "The moon weight is one sixth of the Earth weight. Multiplying e by 1/6 gives m = (1/6)e, which is equivalently written m = e/6.",
+          "es": "El peso en la Luna es una sexta parte del peso en la Tierra. Al multiplicar e por 1/6 se obtiene m = (1/6)e, que también se escribe m = e/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q20": {
+      "inputHash": "7dcb485cf331e8f68abe5464fa95fbebee9c91eda344238e8b0c1624f342862a",
+      "explanation": {
+        "text": {
+          "en": "Each table pair has games-won to games-played ratio 6/10 = 3/5. The ratio 18/30 also simplifies to 3/5, so 18:30 can be added to the table.",
+          "es": "Cada par de la tabla tiene la razón de juegos ganados a juegos jugados 6/10 = 3/5. La razón 18/30 también se simplifica a 3/5, así que 18:30 puede incluirse en la tabla."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q21": {
+      "inputHash": "643c290666eb4296568e60999d19868b456f72cb9fa2ff441603d98aed6aeb48",
+      "explanation": {
+        "text": {
+          "en": "The output increases by 2 whenever x increases by 1, so the rule has coefficient 2. Substitution confirms y = 2x + 3: x = 1 gives 5 and x = 4 gives 11.",
+          "es": "El valor de salida aumenta 2 cuando x aumenta 1, así que la regla tiene coeficiente 2. La sustitución confirma y = 2x + 3: x = 1 da 5 y x = 4 da 11."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q22": {
+      "inputHash": "afeff3d103c6d178660dfdabdfdbde46db874d5f557953e184da400d09525211",
+      "explanation": {
+        "text": {
+          "en": "The square of y is y², and the quotient of 28 and 7 is 28/7. Decreasing the first quantity by the second gives y² − 28/7, which is choice B.",
+          "es": "El cuadrado de y es y² y el cociente de 28 y 7 es 28/7. Disminuir la primera cantidad por la segunda da y² − 28/7, que es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q27": {
+      "inputHash": "b924017e8b27bc950475e7076848ea27b2cd142aa3f9a9444000eaed30083209",
+      "explanation": {
+        "text": {
+          "en": "The unit rate compares 1 cup of sugar with 5 cups of water: 1 ÷ 5 = 1/5. Therefore, the recipe uses 1/5 cup of sugar per cup of water.",
+          "es": "La tasa unitaria compara 1 taza de azúcar con 5 tazas de agua: 1 ÷ 5 = 1/5. Por lo tanto, la receta usa 1/5 de taza de azúcar por cada taza de agua."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q28": {
+      "inputHash": "927f13d06bcf2d788e465c508611fcfd5103b2876be9fac3d97e8d04932f5610",
+      "explanation": {
+        "text": {
+          "en": "First find the price per stamp: $8.28 ÷ 18 = $0.46. At that same rate, 12 stamps cost 12 × $0.46 = $5.52.",
+          "es": "Primero calcula el precio por estampilla: $8.28 ÷ 18 = $0.46. A esa misma tasa, 12 estampillas cuestan 12 × $0.46 = $5.52."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q29": {
+      "inputHash": "ebb01352c14204e53bc2df7cc1e5f19742302bd51fc12cdc9ea055ac7030bfcf",
+      "explanation": {
+        "text": {
+          "en": "Solve 3.5x = 49 by dividing both sides by 3.5: x = 49 ÷ 3.5 = 14. John’s hourly rate is therefore $14.00.",
+          "es": "Resuelve 3.5x = 49 dividiendo ambos lados entre 3.5: x = 49 ÷ 3.5 = 14. Por lo tanto, la tarifa por hora de John es $14.00."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q30": {
+      "inputHash": "39d95c22c29cbb62af40db7b4c5b8e36f76b09d97151c6bd023174ecbdf19155",
+      "explanation": {
+        "text": {
+          "en": "The rectangle has area 4 × 1 1/6 = 4 × 7/6 = 14/3 square feet. A diagonal divides it into two equal triangles, so one sail has area (14/3) ÷ 2 = 7/3 = 2 1/3 square feet.",
+          "es": "El rectángulo tiene un área de 4 × 1 1/6 = 4 × 7/6 = 14/3 pies cuadrados. La diagonal lo divide en dos triángulos iguales, así que un velamen tiene (14/3) ÷ 2 = 7/3 = 2 1/3 pies cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q34": {
+      "inputHash": "ef30dcd278722586f98e40ad7aeb25e8027098d2d8a544efd8a21eb710a4f6f9",
+      "explanation": {
+        "text": {
+          "en": "The constant lifting-force rate is 1,875 ÷ 125 = 15 pounds per square foot. Thus x = 5,625 ÷ 15 = 375 square feet and y = 420 × 15 = 6,300 pounds.",
+          "es": "La tasa constante de fuerza de sustentación es 1,875 ÷ 125 = 15 libras por pie cuadrado. Entonces x = 5,625 ÷ 15 = 375 pies cuadrados y y = 420 × 15 = 6,300 libras."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q36": {
+      "inputHash": "3a62e23b2fd155b63022c8042bfc35023ea492d81752a0ac50f0f476640c4ed9",
+      "explanation": {
+        "text": {
+          "en": "The pears-to-apples ratio is 3:9. Dividing both parts by their common factor 3 gives 1:3, so there is one pear for every three apples.",
+          "es": "La razón de peras a manzanas es 3:9. Al dividir ambas partes entre el factor común 3 se obtiene 1:3, es decir, una pera por cada tres manzanas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q37": {
+      "inputHash": "b6cfe04a893894ed959d8b4e3dad2b33bbc62a5527b19616ab6780dae892bcb0",
+      "explanation": {
+        "text": {
+          "en": "Sea level is defined as 0 kilometers. The ocean floor is at −5 kilometers, and the summit is 10 kilometers above it, so −5 + 10 = 5; the summit is at 5 kilometers.",
+          "es": "El nivel del mar se define como 0 kilómetros. El fondo oceánico está a −5 kilómetros y la cumbre está 10 kilómetros más arriba, así que −5 + 10 = 5; la cumbre está a 5 kilómetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q38": {
+      "inputHash": "c2886fa8a51050eb588c37961582759f9d278cbf1a4636ad6251ab02e22513f2",
+      "explanation": {
+        "text": {
+          "en": "The total cost rises by $3 for each additional hour, so the hourly rate is 3. The $5 entrance fee is the value when h = 0, giving c = 3h + 5.",
+          "es": "El costo total aumenta $3 por cada hora adicional, así que la tarifa por hora es 3. La entrada de $5 es el valor cuando h = 0, lo que da c = 3h + 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q39": {
+      "inputHash": "30e47099e851acba334672fdb55b9aaf4da28811c4b6cb97fb248f8be00fae85",
+      "explanation": {
+        "text": {
+          "en": "Convert the bag to ounces: 28 × 16 = 448 ounces. Dividing by 8 ounces per serving gives 448 ÷ 8 = 56 servings.",
+          "es": "Convierte la bolsa a onzas: 28 × 16 = 448 onzas. Al dividir entre 8 onzas por porción se obtiene 448 ÷ 8 = 56 porciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q40": {
+      "inputHash": "5c801b35892ac5ad12295bc546c90f0ab8fc4b410f6253e8a4e7a7b1211d8e94",
+      "explanation": {
+        "text": {
+          "en": "Five less than −20 is −20 − 5 = −25. Since −25 is smaller than −20, point B is located to the left of point A.",
+          "es": "Cinco menos que −20 es −20 − 5 = −25. Como −25 es menor que −20, el punto B está a la izquierda del punto A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q41": {
+      "inputHash": "c5f2ad819a9690512ce72d9822450a14c009105f8477da4d378667a552a911a6",
+      "explanation": {
+        "text": {
+          "en": "Each hour earns $9.25, so multiplying the number of hours h by 9.25 gives the total dollars earned: d = 9.25h.",
+          "es": "Cada hora produce $9.25, así que al multiplicar el número de horas h por 9.25 se obtienen los dólares totales: d = 9.25h."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q42": {
+      "inputHash": "f1af14e33dd92509122e4f7991f21f8804c37fcdc3096e471c815265b0b9937d",
+      "explanation": {
+        "text": {
+          "en": "A rectangle’s opposite vertices share coordinates. The missing vertex must have x = 30 like (30, 13) and y = 3 like (5, 3), so its coordinates are (30, 3).",
+          "es": "Los vértices opuestos de un rectángulo comparten coordenadas. El vértice faltante debe tener x = 30 como (30, 13) y y = 3 como (5, 3), así que sus coordenadas son (30, 3)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q43": {
+      "inputHash": "0e81d72a2ed06e3cd22099085a6de073c570ae96f4c350c6b451ffc12e24c146",
+      "explanation": {
+        "text": {
+          "en": "There were 4,400 + 17,600 = 22,000 total votes. The fraction in favor is 4,400/22,000 = 0.20, and 0.20 × 100% = 20%.",
+          "es": "Hubo 4,400 + 17,600 = 22,000 votos en total. La fracción a favor es 4,400/22,000 = 0.20, y 0.20 × 100% = 20%."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q44": {
+      "inputHash": "21effc342ec9577bb2ee4e53533330c467ce9b32f8262888fa57bf4931a237af",
+      "explanation": {
+        "text": {
+          "en": "The quotient is 3 1/2 ÷ 3/4 = 7/2 × 4/3 = 14/3 = 4 2/3. This means 4 complete bows can be made, with enough ribbon left for 2/3 of another bow.",
+          "es": "El cociente es 3 1/2 ÷ 3/4 = 7/2 × 4/3 = 14/3 = 4 2/3. Esto significa que se pueden hacer 4 lazos completos y queda cinta suficiente para 2/3 de otro lazo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q45": {
+      "inputHash": "d643032b3bec16bf7f147618aca961d12aff448ab292627ae72387b7e46cfb05",
+      "explanation": {
+        "text": {
+          "en": "The net contains 4 equilateral triangles. Each has area (1/2)(5)(4.33) = 10.825 square centimeters, so the total surface area is 4 × 10.825 = 43.3 square centimeters.",
+          "es": "La red contiene 4 triángulos equiláteros. Cada uno tiene un área de (1/2)(5)(4.33) = 10.825 centímetros cuadrados, así que el área total es 4 × 10.825 = 43.3 centímetros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q46": {
+      "inputHash": "b8d4b7b8eb7f1f4482aad691112dea01857f39eb51741fadb786d18bc6871f1f",
+      "explanation": {
+        "text": {
+          "en": "At $0.40 per pound, p pounds of bananas cost 0.40p dollars. The change from a $20 bill is the amount paid minus that cost, or 20 − 0.40p.",
+          "es": "A $0.40 por libra, p libras de bananas cuestan 0.40p dólares. El cambio de un billete de $20 es el monto pagado menos ese costo, es decir, 20 − 0.40p."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q47": {
+      "inputHash": "d82fe7dff58df87b9c47b5e23da9bf45bb1ce4e7a42162e7894f3e0f64fcc2a3",
+      "explanation": {
+        "text": {
+          "en": "The weight-to-mass ratio is 196/20 = 9.8 = 98/10 newtons per kilogram. Using that rate, x = 1,078 ÷ 9.8 = 110 kilograms.",
+          "es": "La razón de peso a masa es 196/20 = 9.8 = 98/10 newtons por kilogramo. Usando esa tasa, x = 1,078 ÷ 9.8 = 110 kilogramos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q48": {
+      "inputHash": "3e9f467dbb632acdebd7f9c4c64290dd9e4dc9dbf16eedee2f51e13c16b54582",
+      "explanation": {
+        "text": {
+          "en": "Subtract 2.9 from both sides of y + 2.9 = 11. This gives y = 11 − 2.9 = 8.1.",
+          "es": "Resta 2.9 de ambos lados de y + 2.9 = 11. Esto da y = 11 − 2.9 = 8.1. Por lo tanto, y es 8.1."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g6-mc-q49": {
+      "inputHash": "323c1051ccc9ccff5ccd1ccda7c5a1892e5a1480bc087a05c649b3ccf3d232ff",
+      "explanation": {
+        "text": {
+          "en": "The humpback rate is 2,240 ÷ 28 = 80 miles per day, so in 32 days they would travel 80 × 32 = 2,560 miles. The difference from 2,368 is 2,560 − 2,368 = 192 miles.",
+          "es": "La tasa de las ballenas jorobadas es 2,240 ÷ 28 = 80 millas por día, así que en 32 días recorrerían 80 × 32 = 2,560 millas. La diferencia con 2,368 es 2,560 − 2,368 = 192 millas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

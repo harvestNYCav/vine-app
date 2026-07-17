@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2025-grade-3-mc-v1",
+  "questions": {
+    "nysed-2025-g3-mc-q5": {
+      "inputHash": "0cafb221fe9c54caa1796afa505fa3b42829d4a9b52d58af0479c630f5984705",
+      "explanation": {
+        "text": {
+          "en": "The water surface lines up closest to the 8-liter mark on the scale. Therefore the amount, rounded to the nearest liter, is 8 liters, choice C.",
+          "es": "La superficie del agua se alinea más cerca de la marca de 8 litros en la escala. Por lo tanto, la cantidad redondeada al litro más cercano es 8 litros, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q6": {
+      "inputHash": "e2b6df64bd62b6471a91a26990e94a36432371aacd7996c5dc0ea74df66bfb76",
+      "explanation": {
+        "text": {
+          "en": "The expression 54 ÷ 6 represents splitting 54 objects into 6 equal groups. Scott's 54 toy cars shared equally among 6 friends is exactly that situation, so choice D matches.",
+          "es": "La expresión 54 ÷ 6 representa repartir 54 objetos en 6 grupos iguales. Los 54 autos de juguete de Scott repartidos por igual entre 6 amigos describen exactamente esa situación, así que corresponde la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q7": {
+      "inputHash": "1e6de966dbe2e5701536b758469c900b687b7f77ab30d70016aa7d7149f3367c",
+      "explanation": {
+        "text": {
+          "en": "A fraction equals 3 when its numerator is three times its denominator. Since 9 ÷ 3 = 3, the fraction 9/3, choice D, is equivalent to 3.",
+          "es": "Una fracción equivale a 3 cuando su numerador es tres veces su denominador. Como 9 ÷ 3 = 3, la fracción 9/3, la opción D, equivale a 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q12": {
+      "inputHash": "100ea1709a0347c46189f8bb1373af665e7b2598a07d03f4c3e2392ec563b23b",
+      "explanation": {
+        "text": {
+          "en": "The rectangle has 7 unit squares in each row and 3 rows. Its area is 7 × 3 = 21 square units, which is choice D.",
+          "es": "El rectángulo tiene 7 cuadrados unitarios en cada fila y 3 filas. Su área es 7 × 3 = 21 unidades cuadradas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q13": {
+      "inputHash": "5982d106684f813b488808abb948a47bc23e05e7c74ac603443b44e245558ceb",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 8 equal parts, so 3/8 is the third mark after 0. The third marked point is B, making choice B correct.",
+          "es": "El intervalo de 0 a 1 está dividido en 8 partes iguales, así que 3/8 está en la tercera marca después de 0. El tercer punto señalado es B, por lo que la opción B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q15": {
+      "inputHash": "a3cb8a1cff6442651d988c2e8571b6c06c31e973868f4ffecc8c68b1dec93d23",
+      "explanation": {
+        "text": {
+          "en": "The Day 3 distance is 198 − 62 − 69 = 67 miles. Since 67 is 3 away from 70 but 7 away from 60, the closest choice is 70, choice B.",
+          "es": "La distancia del tercer día es 198 − 62 − 69 = 67 millas. Como 67 está a 3 de 70 pero a 7 de 60, el valor más cercano es 70, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q17": {
+      "inputHash": "8d2f8dd3c8d55f2f7dae2a4854d3e036cb9afe6cb51fafc84f1685ef2e72afc5",
+      "explanation": {
+        "text": {
+          "en": "Reading 3,958 from right to left gives 8 ones, 5 tens, 9 hundreds, and 3 thousands. Therefore the digit in the tens place is 5, choice B.",
+          "es": "Al leer 3,958 de derecha a izquierda se obtienen 8 unidades, 5 decenas, 9 centenas y 3 millares. Por lo tanto, el dígito en las decenas es 5, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q19": {
+      "inputHash": "a2ef3399d276ffbf595f10119c048f1503d94d7e7bfd399471ebd3a596a8003f",
+      "explanation": {
+        "text": {
+          "en": "Pat drinks 2 × 5 = 10 glasses and Mary drinks 4 × 5 = 20 glasses. Adding their amounts gives g = 10 + 20 = 30, which is the set of equations in choice C.",
+          "es": "Pat bebe 2 × 5 = 10 vasos y Mary bebe 4 × 5 = 20 vasos. Al sumar sus cantidades se obtiene g = 10 + 20 = 30, el conjunto de ecuaciones de la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q20": {
+      "inputHash": "94e4b23d55c51c153904837538c34a951af595aca8e910945c81896926a8afa2",
+      "explanation": {
+        "text": {
+          "en": "The completed L-shape can be split into a vertical rectangle 2 units wide and 9 units tall plus a 3-by-3 extension. Its area is (2 × 9) + (3 × 3) = 18 + 9 = 27 square units, choice C.",
+          "es": "La figura en L completa se puede dividir en un rectángulo vertical de 2 unidades por 9 y una extensión de 3 por 3. Su área es (2 × 9) + (3 × 3) = 18 + 9 = 27 unidades cuadradas, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q24": {
+      "inputHash": "3e6cf4b29477f54d1adc16ac944a0a012d88c8b4dab022f07d6b51a6de9349e1",
+      "explanation": {
+        "text": {
+          "en": "All 12 liters are shared equally among 6 containers, so divide 12 ÷ 6. The result is 2 liters in each container, choice A.",
+          "es": "Los 12 litros se reparten por igual entre 6 recipientes, así que se calcula 12 ÷ 6. El resultado es 2 litros en cada recipiente, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q25": {
+      "inputHash": "cd820b86e421bf4e40f72fc9837038bb0f1a7d2c94860e1e73c2253ec96fa9df",
+      "explanation": {
+        "text": {
+          "en": "The reference fraction is 2/4 = 1/2. In choice B, 3/4 is greater than 1/2 and 2/3 is also greater than 1/2, so both fractions satisfy the condition.",
+          "es": "La fracción de referencia es 2/4 = 1/2. En la opción B, 3/4 es mayor que 1/2 y 2/3 también es mayor que 1/2, así que ambas fracciones cumplen la condición."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q26": {
+      "inputHash": "e2c214cfb44e96b589701a0774eb20777655a9460533d4645bc3f6ebd811d3d7",
+      "explanation": {
+        "text": {
+          "en": "Multiplying both the numerator and denominator of 2/3 by 2 gives 4/6. Because the value does not change, 2/3 = 4/6 is true, which is choice B.",
+          "es": "Al multiplicar el numerador y el denominador de 2/3 por 2 se obtiene 4/6. Como el valor no cambia, 2/3 = 4/6 es verdadero, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q27": {
+      "inputHash": "0f7a134c2fdd6b528a47d67f77d4b4100cda30eb3a152c997f35f0674bd9fc1e",
+      "explanation": {
+        "text": {
+          "en": "The division equation 32 ÷ ? = 8 means that 8 groups of the unknown size make 32. Its related multiplication equation is 8 × ? = 32, choice C, which gives ? = 4.",
+          "es": "La ecuación 32 ÷ ? = 8 significa que 8 grupos del tamaño desconocido forman 32. La multiplicación relacionada es 8 × ? = 32, la opción C, que da ? = 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q28": {
+      "inputHash": "7fd74afdfbc6b2e4cd0de0825f92505afb13ee5b1efa73fb6a0cb6eebdbddfdf",
+      "explanation": {
+        "text": {
+          "en": "Split the playground into a bottom rectangle measuring 9 m by 4 m and an upper-left rectangle measuring 3 m by 3 m because 7 − 4 = 3. The area is (9 × 4) + (3 × 3) = 36 + 9 = 45 square meters, choice C.",
+          "es": "Se divide el patio en un rectángulo inferior de 9 m por 4 m y otro superior izquierdo de 3 m por 3 m porque 7 − 4 = 3. El área es (9 × 4) + (3 × 3) = 36 + 9 = 45 metros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q29": {
+      "inputHash": "ead9ae242ade6bcac82ba8da4432af63b2be671bbfa4fcdeefc12772acd7a85a",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 8 equal parts, and P is at the second mark, so P = 2/8. Simplifying by dividing numerator and denominator by 2 gives 2/8 = 1/4, choice B.",
+          "es": "El intervalo de 0 a 1 está dividido en 8 partes iguales y P está en la segunda marca, así que P = 2/8. Al dividir el numerador y el denominador entre 2 se obtiene 2/8 = 1/4, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g3-mc-q30": {
+      "inputHash": "78563e0173baf883529aacc77365972493c42a81ff7db740d66ec7731efde685",
+      "explanation": {
+        "text": {
+          "en": "Each unit square covers exactly 1 square unit. Covering a rectangle with area 15 square units without gaps or overlaps therefore requires 15 unit squares, choice C.",
+          "es": "Cada cuadrado unitario cubre exactamente 1 unidad cuadrada. Por lo tanto, cubrir un rectángulo de 15 unidades cuadradas sin espacios ni superposiciones requiere 15 cuadrados unitarios, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

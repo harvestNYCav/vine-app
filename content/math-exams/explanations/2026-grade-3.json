@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2026-grade-3-mc-v1",
+  "questions": {
+    "nysed-2026-g3-mc-q1": {
+      "inputHash": "9993241dbb33f14186321c5f6e4b9304a765d772d8fb1ae5cb8f4576a447a346",
+      "explanation": {
+        "text": {
+          "en": "The distance from 0 to 1 is split into 4 equal intervals. The first tick after 0 represents 1/4, so A is correct.",
+          "es": "La distancia de 0 a 1 está dividida en 4 intervalos iguales. La primera marca después de 0 representa 1/4, por lo que A es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q2": {
+      "inputHash": "cd2cc66b0a204fdcab0c1daef77caa6e4dfb9bf717b51bbd00927e816b64053a",
+      "explanation": {
+        "text": {
+          "en": "The number has 3 thousands, 4 hundreds, 0 tens, and 6 ones, so it is written as three thousand four hundred six.",
+          "es": "El número tiene 3 unidades de mil, 4 centenas, 0 decenas y 6 unidades, por lo que se escribe tres mil cuatrocientos seis."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q3": {
+      "inputHash": "121a6cee35c2693edcbc90b523aa31d70c1fb27d90907881d79f4a0d935913a6",
+      "explanation": {
+        "text": {
+          "en": "Divide 54 cookies equally among 9 bags: 54 ÷ 9 = 6 cookies in each bag.",
+          "es": "Divide 54 galletas en partes iguales entre 9 bolsas: 54 ÷ 9 = 6 galletas en cada bolsa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q4": {
+      "inputHash": "02402f99deccbdcc51a98248a98bcad45579af0e30b8b3610c78f44f8c83ca8b",
+      "explanation": {
+        "text": {
+          "en": "The picture starts at 10 liters. Adding 5 liters gives 10 + 5 = 15 liters, so B is correct.",
+          "es": "La imagen comienza con 10 litros. Al sumar 5 litros, 10 + 5 = 15 litros, por lo que B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q5": {
+      "inputHash": "2bb2bb74da8cf3079d592f7035f918ea300eaeb7919d5bc6d0a91b2aac5ce9d5",
+      "explanation": {
+        "text": {
+          "en": "The original model shows 2/3. Choice D shows 4/6, which is equivalent because both the numerator and denominator of 2/3 were multiplied by 2.",
+          "es": "El modelo original muestra 2/3. La opción D muestra 4/6, que es equivalente porque el numerador y el denominador de 2/3 se multiplicaron por 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q6": {
+      "inputHash": "bdaafd757a2dd879829fb0919eb4575c023522a34980817235f1dc0c36fb73fd",
+      "explanation": {
+        "text": {
+          "en": "A difference is found with subtraction: 81 - 59 = 22 kilograms, so B is correct.",
+          "es": "Una diferencia se encuentra con una resta: 81 - 59 = 22 kilogramos, por lo que B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q7": {
+      "inputHash": "761c38af2b93a6f2f762175ea5afb72c7caf8bb98c5c901a8c56e2cf75d6aa9a",
+      "explanation": {
+        "text": {
+          "en": "The pattern adds 6 each time. The next three numbers are 26, 32, and 38, so the seventh number is 38.",
+          "es": "El patrón suma 6 cada vez. Los tres números siguientes son 26, 32 y 38, así que el séptimo número es 38."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q8": {
+      "inputHash": "85eef21b3605b4fe39034a08dadaac295780915f464c3749361c3cdf556a6f51",
+      "explanation": {
+        "text": {
+          "en": "The rectangle has 9 squares in each of 7 rows. Its area is 9 × 7, which is also 7 rows of 9, so D is correct.",
+          "es": "El rectángulo tiene 9 cuadrados en cada una de 7 filas. Su área es 9 × 7, que también son 7 filas de 9, por lo que D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q10": {
+      "inputHash": "a28accd5e585a7ed0101bbe9d53c761439a8108036ae9d3ef76ab5e6122ad5a5",
+      "explanation": {
+        "text": {
+          "en": "Split 5 groups of 6 into 2 groups of 6 and 3 groups of 6: (2 × 6) + (3 × 6) = 12 + 18 = 30.",
+          "es": "Separa 5 grupos de 6 en 2 grupos de 6 y 3 grupos de 6: (2 × 6) + (3 × 6) = 12 + 18 = 30."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q11": {
+      "inputHash": "45d5768d452619b5d2f2bc83634ea720c595032fe4150daa4b41e17a02f1550b",
+      "explanation": {
+        "text": {
+          "en": "Choice B represents 1/8. With the same denominator, 1/8 is less than 2/8 because 1 is less than 2.",
+          "es": "La opción B representa 1/8. Con el mismo denominador, 1/8 es menor que 2/8 porque 1 es menor que 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q12": {
+      "inputHash": "3d6a8e291d4dfefb0860d37f11d251c4ff6a918e75d374600c25aab8bc87d094",
+      "explanation": {
+        "text": {
+          "en": "Four bags with 2 toys in each bag make 4 equal groups of 2, which is represented by 4 × 2.",
+          "es": "Cuatro bolsas con 2 juguetes en cada bolsa forman 4 grupos iguales de 2, lo cual se representa con 4 × 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q14": {
+      "inputHash": "d02417ffd498eee585abdd992a20ba7c2bfb767fdf3d7ea658b1d701874e9672",
+      "explanation": {
+        "text": {
+          "en": "The ones digit is 5, so round the tens place up. The nearest ten is 2,360, which is choice C.",
+          "es": "El dígito de las unidades es 5, así que se redondea la posición de las decenas hacia arriba. La decena más cercana es 2,360, que es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q15": {
+      "inputHash": "a5478f6a018db6b1859f6c365aeed63ead047af555500fa21bf74666382a87a1",
+      "explanation": {
+        "text": {
+          "en": "In choice C, 3/1 equals 3 and 6/2 also equals 3. Both fractions represent the same whole number.",
+          "es": "En la opción C, 3/1 es igual a 3 y 6/2 también es igual a 3. Ambas fracciones representan el mismo número entero. Además, 3/1 = 6/2 = 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q16": {
+      "inputHash": "17ef6aec5acee29503e75b6e6a6d954ce0d28340c929335c4322bbf030b3d8e0",
+      "explanation": {
+        "text": {
+          "en": "Break the shaded L into two rectangles: 2 × 6 = 12 and 2 × 3 = 6. Then 12 + 6 = 18 square units, so B is correct.",
+          "es": "Divide la L sombreada en dos rectángulos: 2 × 6 = 12 y 2 × 3 = 6. Luego, 12 + 6 = 18 unidades cuadradas, por lo que B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q17": {
+      "inputHash": "7324ed47b55a613b7dee129e031554683106baff9e820768fe27cf303916676a",
+      "explanation": {
+        "text": {
+          "en": "Division can be viewed as finding an unknown factor. The value of 28 ÷ 4 is the number that makes 4 × ? = 28 true.",
+          "es": "La división se puede ver como hallar un factor desconocido. El valor de 28 ÷ 4 es el número que hace verdadera la ecuación 4 × ? = 28."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q18": {
+      "inputHash": "ee666b353e0a7322f47405df3a2e294c8d5f4a7d8a8b5fe7ba0e49ef7da0fe25",
+      "explanation": {
+        "text": {
+          "en": "A square with side length 6 feet has area 6 × 6 = 36 square feet, so D is correct.",
+          "es": "Un cuadrado con lados de 6 pies tiene un área de 6 × 6 = 36 pies cuadrados, por lo que D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q19": {
+      "inputHash": "8db5f6d906d364bdb3dbc7294ca24932fe5545176d1d654d9ad3fb052fe6931f",
+      "explanation": {
+        "text": {
+          "en": "To locate 6/8, divide the distance from 0 to 1 into 8 equal intervals and count 6 intervals from 0. Choice C does this.",
+          "es": "Para ubicar 6/8, divide la distancia de 0 a 1 en 8 intervalos iguales y cuenta 6 intervalos desde 0. La opción C hace esto. Así, la opción C representa esos 6 de 8 intervalos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q20": {
+      "inputHash": "62ca7d5c09150ced2a6b6c27d68aacb4485817bbdc4c0c00fdc6a78c975d52fa",
+      "explanation": {
+        "text": {
+          "en": "Nellie made 6 × 2 = 12 bracelets. At 10 beads per bracelet, she used 12 × 10 = 120 beads.",
+          "es": "Nellie hizo 6 × 2 = 12 brazaletes. Con 10 cuentas por brazalete, usó 12 × 10 = 120 cuentas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q22": {
+      "inputHash": "2bb8fe17b2e7342f46da8436ac568466c1da5aaa0e2ebe69bfb33b665bd3c012",
+      "explanation": {
+        "text": {
+          "en": "The number line shows 42 split into 6 equal jumps of 7. That matches placing 42 marbles into 6 groups with 7 marbles in each group.",
+          "es": "La recta numérica muestra 42 dividido en 6 saltos iguales de 7. Eso corresponde a colocar 42 canicas en 6 grupos con 7 canicas en cada grupo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q23": {
+      "inputHash": "24d89ea6cb81c1cc20aba5bc486d4ca281462312225eede5f05a3ee85d75bdce",
+      "explanation": {
+        "text": {
+          "en": "The whole is divided into 8 equal-area parts, so each single part is 1 out of 8, or 1/8. Choice A is correct.",
+          "es": "El entero está dividido en 8 partes de igual área, por lo que cada parte es 1 de 8, o 1/8. La opción A es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q24": {
+      "inputHash": "46c8b532b08fe0bae473ae93e635c049ec915241e488ab9958acb4d53996f08a",
+      "explanation": {
+        "text": {
+          "en": "In 7,461, the digit 6 is in the tens place, so it represents 6 tens, or 60. Choice B is correct.",
+          "es": "En 7,461, el dígito 6 está en la posición de las decenas, por lo que representa 6 decenas, o 60. La opción B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q25": {
+      "inputHash": "fdb458972469fd9119c02b5b9eecbde492ab61ab820f4d1f7ee0e4135c05952b",
+      "explanation": {
+        "text": {
+          "en": "The gray part is 5 × 4 and the white part is 5 × 6. Add those two areas, so A is correct.",
+          "es": "La parte gris mide 5 × 4 y la parte blanca mide 5 × 6. Se suman las dos áreas, por lo que A es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q26": {
+      "inputHash": "817fd8688e1a084c797943777adeb47f72b84421f867414538eb03f6757a6ca5",
+      "explanation": {
+        "text": {
+          "en": "Each unit square covers exactly 1 square unit, so covering 18 square units requires 18 unit squares. C is correct.",
+          "es": "Cada cuadrado unitario cubre exactamente 1 unidad cuadrada, por lo que cubrir 18 unidades cuadradas requiere 18 cuadrados unitarios. C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q27": {
+      "inputHash": "0260e47fa6a38ff84d0efcebeff9290b4c88430b4a9e173903a769c3c3dc5673",
+      "explanation": {
+        "text": {
+          "en": "Both 2/4 and 4/8 are equivalent to 1/2, so the number sentence in choice B is true.",
+          "es": "Tanto 2/4 como 4/8 son equivalentes a 1/2, por lo que la oración numérica de la opción B es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q28": {
+      "inputHash": "79c66ca1cec5fce3652b16bbf141f091a8fc857703fd8df0b8cb58b5acfcad95",
+      "explanation": {
+        "text": {
+          "en": "Split the garden into a 3-by-8 rectangle and a 5-by-5 rectangle. Their areas are 24 and 25, and 24 + 25 = 49 square feet, so C is correct.",
+          "es": "Divide el jardín en un rectángulo de 3 por 8 y otro de 5 por 5. Sus áreas son 24 y 25, y 24 + 25 = 49 pies cuadrados, por lo que C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q29": {
+      "inputHash": "2bb3086f23e7b589a70a66b31b9695160dad79009d18f37d0872f309a9f94c2d",
+      "explanation": {
+        "text": {
+          "en": "If a number divided by 4 equals 8, multiply 8 by 4 to find the number: 8 × 4 = 32.",
+          "es": "Si un número dividido entre 4 es igual a 8, multiplica 8 por 4 para hallar el número: 8 × 4 = 32."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g3-mc-q30": {
+      "inputHash": "bd645500a72ff3af1f4d4002e4e39889b542ebfae70275f1ec64756a802b5671",
+      "explanation": {
+        "text": {
+          "en": "Choice B divides the whole into 4 equal-area squares. Each of those parts is 1/4 of the whole.",
+          "es": "La opción B divide el entero en 4 cuadrados de igual área. Cada una de esas partes es 1/4 del entero. Así, la opción B muestra que cada parte representa un cuarto."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

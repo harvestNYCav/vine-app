@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2022-grade-4-mc-v1",
+  "questions": {
+    "nysed-2022-g4-mc-q1": {
+      "inputHash": "6d3973f312569521736ab6545b8316bcd3fa54f4219df3ec92ec0a28195678ff",
+      "explanation": {
+        "text": {
+          "en": "Each movement is 1 degree, and Julia makes 45 movements. Multiplying 45 × 1° gives a total rotation of 45°, choice B.",
+          "es": "Cada movimiento es de 1 grado y Julia hace 45 movimientos. Al multiplicar 45 × 1° se obtiene un giro total de 45°, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q2": {
+      "inputHash": "1c8b91c0b36222c428ac34e28d5e866830c9a6fe320c5cb9739125b342a63395",
+      "explanation": {
+        "text": {
+          "en": "Perpendicular lines intersect to form four right angles. In choice C, one line is vertical and the other horizontal, so they meet at 90° and are perpendicular.",
+          "es": "Las rectas perpendiculares se cruzan formando cuatro ángulos rectos. En la opción C, una recta es vertical y la otra horizontal, así que se cruzan a 90° y son perpendiculares."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q8": {
+      "inputHash": "3c82226a6e09dc9713d23efbd3a0ff896c3fad49b51f1db05975ef785339aa2c",
+      "explanation": {
+        "text": {
+          "en": "The area of a rectangle is length × width. Using 24 feet and 12 feet gives 24 × 12 = 288 square feet, choice D.",
+          "es": "El área de un rectángulo es largo × ancho. Con 24 pies y 12 pies se obtiene 24 × 12 = 288 pies cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q9": {
+      "inputHash": "a74bcf9a860c3d4b985885ccd1b8c59a90ae214a43ed6393c61d83dee2b814eb",
+      "explanation": {
+        "text": {
+          "en": "In 6,419, the 6 is worth 6,000; in 84,362, the 6 is worth 60. Since 6,000 ÷ 60 = 100, the first value is 100 times greater, choice B.",
+          "es": "En 6,419, el 6 vale 6,000; en 84,362, el 6 vale 60. Como 6,000 ÷ 60 = 100, el primer valor es 100 veces mayor, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q13": {
+      "inputHash": "56a41635a5265ae63747ed00eaf99b3ec8740d3a415adc7da81c22f7690e92f0",
+      "explanation": {
+        "text": {
+          "en": "The phrase “six times as many as eight” means 6 multiplied by 8. Because 6 × 8 = 48, the matching equation is 48 = 6 × 8, choice C.",
+          "es": "La frase «seis veces ocho» significa 6 multiplicado por 8. Como 6 × 8 = 48, la ecuación correspondiente es 48 = 6 × 8, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q14": {
+      "inputHash": "bef374adf76abb98f13481a193a81843a327e092a595ba8a2480ed0dc0bb9c9d",
+      "explanation": {
+        "text": {
+          "en": "The first model shades 3 of 8 equal parts and the second shades 4 of 8. Adding like denominators gives 3/8 + 4/8 = 7/8, choice D.",
+          "es": "El primer modelo sombrea 3 de 8 partes iguales y el segundo sombrea 4 de 8. Al sumar fracciones con el mismo denominador se obtiene 3/8 + 4/8 = 7/8, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q16": {
+      "inputHash": "65906f13c60024529674bd911fe75157f917d1a7c81b3290ad4d970e4cd87142",
+      "explanation": {
+        "text": {
+          "en": "The five plotted distances are 1 1/4, 2, 2, 2 2/4, and 3 miles. Their sum is 1 1/4 + 2 + 2 + 2 1/2 + 3 = 10 3/4 miles, choice D.",
+          "es": "Las cinco distancias marcadas son 1 1/4, 2, 2, 2 2/4 y 3 millas. Su suma es 1 1/4 + 2 + 2 + 2 1/2 + 3 = 10 3/4 millas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q17": {
+      "inputHash": "69a8be86d8b88d42ae88340b706a656104f601464eb23a8bea6acd5d2a577233",
+      "explanation": {
+        "text": {
+          "en": "Numbers from 3,650 through 3,749 round to 3,700 to the nearest hundred. The number 3,614 is below that interval and rounds to 3,600, so choice A could not be the original number.",
+          "es": "Los números de 3,650 a 3,749 se redondean a 3,700 a la centena más cercana. El 3,614 está por debajo de ese intervalo y se redondea a 3,600, así que la opción A no puede ser el número original."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q21": {
+      "inputHash": "bad2f5a0643f21260b0f55e99f4a040b0d4df314e6167303c826684f9efa339e",
+      "explanation": {
+        "text": {
+          "en": "Each fraction in choice A is a unit fraction with denominator greater than 2: 1/3, 1/5, and 1/8. Each part is therefore smaller than 1/2, so only list A contains all fractions below one-half.",
+          "es": "Cada fracción de la opción A es unitaria y tiene denominador mayor que 2: 1/3, 1/5 y 1/8. Cada parte es menor que 1/2, así que solo la lista A contiene fracciones menores que un medio."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q22": {
+      "inputHash": "077638321929078fbc949d678c364879d945423495b1fd1cef8abfb4ee33aa92",
+      "explanation": {
+        "text": {
+          "en": "Measuring the small angle between the rising ray and a rightward horizontal ray gives about 19°. The shown angle uses the opposite horizontal ray, so it is the supplement: 180° − 19° = 161°, choice D.",
+          "es": "Al medir el ángulo pequeño entre el rayo ascendente y un rayo horizontal hacia la derecha se obtienen unos 19°. El ángulo mostrado usa el rayo horizontal opuesto, así que es suplementario: 180° − 19° = 161°, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q23": {
+      "inputHash": "36043a0734f557b3431004e51410a6cdd470549fc1f970412599c3a1f9199b4e",
+      "explanation": {
+        "text": {
+          "en": "Each pan has 5 × 5 = 25 brownies, so 3 pans contain 3 × 25 = 75 brownies. At $2 each, the sale makes 75 × 2 = $150, choice D.",
+          "es": "Cada bandeja tiene 5 × 5 = 25 brownies, así que 3 bandejas contienen 3 × 25 = 75. A $2 cada uno, la venta recauda 75 × 2 = $150, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q24": {
+      "inputHash": "90b4f07bf64cccfc5da0c758c6b4db776605ca7c2b56da8c8ab32a9288bc0f16",
+      "explanation": {
+        "text": {
+          "en": "A complete circle measures 360°. One-fourth of it is 360° ÷ 4 = 90°, so the angle measure is choice C.",
+          "es": "Un círculo completo mide 360°. Una cuarta parte es 360° ÷ 4 = 90°, así que la medida corresponde a la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q27": {
+      "inputHash": "c6f151ec6b5ee9188242e5b5a2677fd318d937633ffb405a75c26fae89b86b63",
+      "explanation": {
+        "text": {
+          "en": "Break the product into place values: 7,800 × 9 = 70,200 and 39 × 9 = 351. Adding gives 70,200 + 351 = 70,551, choice B.",
+          "es": "Se descompone el producto por valor posicional: 7,800 × 9 = 70,200 y 39 × 9 = 351. Al sumar se obtiene 70,200 + 351 = 70,551, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q28": {
+      "inputHash": "41a16a40145f9f28159a06f3acf4d3f379c52fc83d3e75d698d6023b288f8e15",
+      "explanation": {
+        "text": {
+          "en": "A right triangle must contain one 90° angle. Figure C has one vertical side meeting one horizontal side, which forms a right angle, so C is the right triangle.",
+          "es": "Un triángulo rectángulo debe contener un ángulo de 90°. La figura C lo cumple porque un lado vertical se une con uno horizontal y forma un ángulo recto; por eso C es el triángulo rectángulo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q31": {
+      "inputHash": "ef7766858449c7022c88d737b07f50d2c4425a9a693572a02304bebb81b53616",
+      "explanation": {
+        "text": {
+          "en": "The children and Mr. Jonus ate 4/8 + 2/8 = 6/8, so 2/8 remains. The whole pizza is therefore 2/8 + 2/8 + 4/8 = 8/8 = 1, which is choice C.",
+          "es": "Los niños y el Sr. Jonus comieron 4/8 + 2/8 = 6/8, así que quedan 2/8. La pizza completa es 2/8 + 2/8 + 4/8 = 8/8 = 1, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q32": {
+      "inputHash": "91eed5fcf5c4351813a72bc8ed21d1e62500eff1f13d9c1a0d70861e816d8a85",
+      "explanation": {
+        "text": {
+          "en": "Sue has 4 times Matt's 4 pens, and Chris has 2 times Sue's amount. Following both multiplicative comparisons gives 4 × 4 × 2 = 32 pens, the equation in choice C.",
+          "es": "Sue tiene 4 veces los 4 bolígrafos de Matt y Chris tiene 2 veces la cantidad de Sue. Al seguir ambas comparaciones multiplicativas se obtiene 4 × 4 × 2 = 32 bolígrafos, la ecuación de la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q33": {
+      "inputHash": "595a50fc49411b54236b5aea188e7cf129629c066628f03bd97346b4e61a4237",
+      "explanation": {
+        "text": {
+          "en": "The diagram shows a height of 2 inches on Monday and 3 inches on Friday. The growth is 3 − 2 = 1 inch, choice A.",
+          "es": "El diagrama muestra una altura de 2 pulgadas el lunes y 3 pulgadas el viernes. El crecimiento es 3 − 2 = 1 pulgada, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q34": {
+      "inputHash": "cb1b41fb275b08101236482af7c25781645a28e272f4b431763605802f3e7541",
+      "explanation": {
+        "text": {
+          "en": "Aly has 4 times Sam's 12 cards, so multiplication represents the comparison. The equation is 12 × 4 = 48, which is choice D.",
+          "es": "Aly tiene 4 veces las 12 tarjetas de Sam, así que la comparación se representa con multiplicación. La ecuación es 12 × 4 = 48, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q35": {
+      "inputHash": "6c84f03c9ad900665721b6001af5a6c78303925cc1ce41357e4c5bf9ad0408fd",
+      "explanation": {
+        "text": {
+          "en": "Regroup 9 4/10 as 8 14/10 so the fractional parts can be subtracted. Then 8 14/10 − 2 8/10 = 6 6/10, choice B.",
+          "es": "Se reagrupa 9 4/10 como 8 14/10 para poder restar las partes fraccionarias. Luego 8 14/10 − 2 8/10 = 6 6/10, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q36": {
+      "inputHash": "f03f525a9ffc55d64528fe99cf63966311a2b0d46c319077f9330c3510ce9bde",
+      "explanation": {
+        "text": {
+          "en": "Eight rides would require 8 × 4 = 32 tickets, leaving 35 − 32 = 3. A ninth ride would need 36 tickets, so Cam can take only 8 rides and has 3 tickets left, choice A.",
+          "es": "Ocho juegos requieren 8 × 4 = 32 boletos y dejan 35 − 32 = 3. Un noveno juego requeriría 36 boletos, así que Cam solo puede subir a 8 y le quedan 3 boletos, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q37": {
+      "inputHash": "c0565abbff84ecb6ea6ec24555c3556d8cb4a0a7630061af68ed7e29c5745279",
+      "explanation": {
+        "text": {
+          "en": "Packing 268 books equally into 4 boxes requires division. Since 268 ÷ 4 = 67, each box contains 67 books, choice B.",
+          "es": "Empacar 268 libros por igual en 4 cajas requiere división. Como 268 ÷ 4 = 67, cada caja contiene 67 libros, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g4-mc-q38": {
+      "inputHash": "6bceca9c6807746637791fbb44b08080011c9faa11c0f4d39a0146058acf0cd1",
+      "explanation": {
+        "text": {
+          "en": "The whole fourth grade has 6 times the 24 students in Ms. Smyth's class. Therefore the unknown total is given by 24 × 6 = ?, the equation in choice C, and equals 144.",
+          "es": "Todo el cuarto grado tiene 6 veces los 24 estudiantes de la clase de la Sra. Smyth. Por lo tanto, el total desconocido se expresa como 24 × 6 = ?, la opción C, y equivale a 144."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

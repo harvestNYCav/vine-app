@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2017-grade-5-mc-v1",
+  "questions": {
+    "nysed-2017-g5-mc-q1": {
+      "inputHash": "bde9cbf14d73fc77ff29f998a79c3e30e4545ca08f045a41b41c527a0b282054",
+      "explanation": {
+        "text": {
+          "en": "The order of operations begins with the innermost grouping symbols. Since 14 × 2 is inside the innermost parentheses, it must be calculated first.",
+          "es": "El orden de las operaciones comienza con los símbolos de agrupación más internos. Como 14 × 2 está dentro de los paréntesis más internos, se debe calcular primero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q2": {
+      "inputHash": "d53e070accc2438c570e8ed7aeeef4b9f2b3b58f6246ce030766f1e4afe79f31",
+      "explanation": {
+        "text": {
+          "en": "Convert the fractional parts to sixths: 6 1/2 = 6 3/6. Then 6 3/6 − 3 2/6 = 3 1/6 dozen cookies remaining.",
+          "es": "Se convierten las partes fraccionarias a sextos: 6 1/2 = 6 3/6. Luego, 6 3/6 − 3 2/6 = 3 1/6 docenas de galletas restantes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q3": {
+      "inputHash": "120bd70ba36b97f05f5de9676fa0246d9648d7094fd01f9d42ea58aa52353e2a",
+      "explanation": {
+        "text": {
+          "en": "Prism A has a 5 × 3 base and height 2, so its volume is 30 cubic inches. Prism B has the same base but twice the height, so its volume is twice 30, or 60 cubic inches.",
+          "es": "El prisma A tiene una base de 5 × 3 y una altura de 2, así que su volumen es 30 pulgadas cúbicas. El prisma B tiene la misma base pero el doble de altura, por lo tanto su volumen es el doble de 30, es decir, 60 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q4": {
+      "inputHash": "827ba8675137b10322cda1232fb4a3ae3d073bace180a659dbc8e0891e99954c",
+      "explanation": {
+        "text": {
+          "en": "The denominator 100 means hundredths. Therefore, 41/100 is forty-one hundredths, written as the decimal 0.41.",
+          "es": "El denominador 100 significa centésimos. Por lo tanto, 41/100 son cuarenta y un centésimos, que se escriben como el decimal 0.41."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q6": {
+      "inputHash": "b256c0921f77210f1169257368c89843a4ab1cf2ca2c2973fbf71f2516892ce6",
+      "explanation": {
+        "text": {
+          "en": "Evaluate each place-value term: 2 × 100 = 200, 3 × 1 = 3, 4 × 1/10 = 0.4, and 3 × 1/1,000 = 0.003. Their sum is 203.403.",
+          "es": "Se evalúa cada término de valor posicional: 2 × 100 = 200, 3 × 1 = 3, 4 × 1/10 = 0.4 y 3 × 1/1,000 = 0.003. Su suma es 203.403."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q7": {
+      "inputHash": "e6d1fcc54595813319008b48086a4780a7de022debee43d8db45a4f63b25aa25",
+      "explanation": {
+        "text": {
+          "en": "The parentheses show that 36 and 9 are added first, and the 5 outside multiplies that sum. Thus, 5 × (36 + 9) means the sum of 36 and 9, multiplied by 5.",
+          "es": "Los paréntesis muestran que primero se suman 36 y 9, y el 5 de afuera multiplica esa suma. Por lo tanto, 5 × (36 + 9) significa la suma de 36 y 9, multiplicada por 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q8": {
+      "inputHash": "fad45cd0764eb84c36f9f9e23ff6a2d6afff9d4376111e00ceb4044534a65b43",
+      "explanation": {
+        "text": {
+          "en": "The hundreds digit in 653,841 is 8, with value 800. Since 800 is 1/10 of 8,000, the other value must be 8,000. In 748,917, the 8 is in the thousands place and has value 8,000.",
+          "es": "La cifra de las centenas en 653,841 es 8 y vale 800. Como 800 es 1/10 de 8,000, el otro valor debe ser 8,000. En 748,917, el 8 está en los millares y vale 8,000; por lo tanto, esa es la opción correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q9": {
+      "inputHash": "ae31d238cf5e2cce2eb5b94b5e74f824566e42465c61d79bb525133373d52835",
+      "explanation": {
+        "text": {
+          "en": "Multiply layers by cubes per layer: R has 3 × 8 = 24, S has 5 × 5 = 25, T has 6 × 5 = 30, and U has 7 × 4 = 28 cubes. Prism T has the greatest volume.",
+          "es": "Se multiplican los niveles por los cubos de cada nivel: R tiene 3 × 8 = 24, S tiene 5 × 5 = 25, T tiene 6 × 5 = 30 y U tiene 7 × 4 = 28 cubos. El prisma T tiene el mayor volumen."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q12": {
+      "inputHash": "54b81640af8df7e34337f5aae8b879dfac171cd04f344986d282cf597a2009b3",
+      "explanation": {
+        "text": {
+          "en": "The shading covers 8 of 10 columns, representing 0.80, and the X marks cover 4 of 10 rows, representing 0.40. Their overlap models the product 0.80 × 0.40.",
+          "es": "El sombreado cubre 8 de 10 columnas, lo que representa 0.80, y las X cubren 4 de 10 filas, lo que representa 0.40. Su superposición modela el producto 0.80 × 0.40."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q13": {
+      "inputHash": "2edeccda82b5546f8507592acbedb7503e16c5a25101a1bf7806535ac9332c16",
+      "explanation": {
+        "text": {
+          "en": "Dividing 1/5 into 4 equal shares is 1/5 ÷ 4. Multiplying by the reciprocal gives 1/5 × 1/4 = 1/20.",
+          "es": "Dividir 1/5 en 4 partes iguales es 1/5 ÷ 4. Al multiplicar por el recíproco se obtiene 1/5 × 1/4 = 1/20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q14": {
+      "inputHash": "c14a2dee389c6a64120378495efd781c21c2cfa5dc0162515871d87d0a05ab0d",
+      "explanation": {
+        "text": {
+          "en": "Five yards equals 5 × 36 = 180 inches. Since each bracelet uses 18 inches, Mia can make 180 ÷ 18 = 10 bracelets.",
+          "es": "Cinco yardas equivalen a 5 × 36 = 180 pulgadas. Como cada pulsera usa 18 pulgadas, Mia puede hacer 180 ÷ 18 = 10 pulseras."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q15": {
+      "inputHash": "6213eb5e97ae8c0cb45c219be8af01898126ca56bbfe33d24936dfcc21228401",
+      "explanation": {
+        "text": {
+          "en": "The grids to the left of the plus sign show 2.23, and those to the right show 1.90. Adding the modeled decimals gives 2.23 + 1.90 = 4.13.",
+          "es": "Las cuadrículas a la izquierda del signo de suma muestran 2.23 y las de la derecha muestran 1.90. Al sumar los decimales modelados se obtiene 2.23 + 1.90 = 4.13."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q16": {
+      "inputHash": "441e95d5e3c541383190ee8ab4fb1348f35bd0fab8c88580c6d107419bce986d",
+      "explanation": {
+        "text": {
+          "en": "A fraction bar represents division: the numerator is divided by the denominator. Therefore, 3/5 is equivalent to 3 ÷ 5.",
+          "es": "La barra de una fracción representa división: el numerador se divide entre el denominador. Por lo tanto, 3/5 equivale a 3 ÷ 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q17": {
+      "inputHash": "db50d418069c493e11ffde4cff22df89b7f1c70c256e7a78a6e7db958ae69fd8",
+      "explanation": {
+        "text": {
+          "en": "The number of unit cubes needed to fill a three-dimensional box measures the space inside it. Therefore, that measurement is the box's volume.",
+          "es": "El número de cubos unitarios necesarios para llenar una caja tridimensional mide el espacio dentro de ella. Por lo tanto, esa medida es el volumen de la caja."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q21": {
+      "inputHash": "1c75c8dfa32212202f9565c39c78645ee136ad9450e0b2542a6811dac8152130",
+      "explanation": {
+        "text": {
+          "en": "Convert to twentieths: 3/5 = 12/20 and 1/4 = 5/20. Soccer and volleyball account for 17/20, so basketball accounts for 1 − 17/20 = 3/20.",
+          "es": "Se convierte a veinteavos: 3/5 = 12/20 y 1/4 = 5/20. El fútbol y el voleibol representan 17/20, así que el baloncesto representa 1 − 17/20 = 3/20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q22": {
+      "inputHash": "6a102dcb3aa4382985fb8c54b538acc7cd662b54c37f67621391395185ccac3b",
+      "explanation": {
+        "text": {
+          "en": "To round 0.1561 to the nearest tenth, look at the hundredths digit, 5. Since it is at least 5, increase the tenths digit from 1 to 2, giving 0.2.",
+          "es": "Para redondear 0.1561 a la décima más cercana, se mira la cifra de las centésimas, 5. Como es al menos 5, se aumenta la cifra de las décimas de 1 a 2, lo que da 0.2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q23": {
+      "inputHash": "ebb49b89a4d1f2a1676cf83c040140e7fa3c89783fb502a2d008f5090331084e",
+      "explanation": {
+        "text": {
+          "en": "Counting the unit cubes in the figure gives a current volume of 8 cubic units. To reach 12 cubic units, add 12 − 8 = 4 cubes.",
+          "es": "Al contar los cubos unitarios de la figura se obtiene un volumen actual de 8 unidades cúbicas. Para llegar a 12 unidades cúbicas, se agregan 12 − 8 = 4 cubos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q24": {
+      "inputHash": "a8f9444edfe43bd46a70033b342a90ecf310ad0a9e44b04978c82438f0c4476e",
+      "explanation": {
+        "text": {
+          "en": "The decimal moves from 7,320 to 0.07320, which is five places to the left. Dividing by 10⁵ moves the decimal five places left, so the missing operation is ÷ and the exponent is 5.",
+          "es": "El punto decimal pasa de 7,320 a 0.07320, cinco lugares hacia la izquierda. Dividir entre 10⁵ mueve el punto cinco lugares a la izquierda, así que la operación faltante es ÷ y el exponente es 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q25": {
+      "inputHash": "3a1a9dbe2ca94f0589ffae20db791ea8bdc7f5444c1d410859796df6814dd580",
+      "explanation": {
+        "text": {
+          "en": "A square has four right angles, but the pictured rhombus has acute and obtuse angles. The other listed attributes apply to both shapes, so having all right angles is true of only one.",
+          "es": "Un cuadrado tiene cuatro ángulos rectos, pero el rombo mostrado tiene ángulos agudos y obtusos. Los demás atributos indicados corresponden a ambas figuras, así que tener todos los ángulos rectos es verdadero solo para una."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q26": {
+      "inputHash": "e4b811caa2a0841cfcac55101577c56e9c95e1ee72baba1f72b36ed99d2643a0",
+      "explanation": {
+        "text": {
+          "en": "The marks from 0.10 to 0.20 increase by 0.01. Point K lies between 0.12 and 0.13, so its value is less than 0.13.",
+          "es": "Las marcas de 0.10 a 0.20 aumentan en 0.01. El punto K está entre 0.12 y 0.13, así que su valor es menor que 0.13."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q27": {
+      "inputHash": "7f6a87a6c8f55a6dcd472e8bea1fd65e60ebe591052b689eafff7e4e5b4c5273",
+      "explanation": {
+        "text": {
+          "en": "Pablo's 2 yards equal 6 feet. Nick hit the ball 6 feet, while Amalia's 36 inches is 1 yard and Lila's 108 inches is 3 yards, so only Nick matches Pablo.",
+          "es": "Las 2 yardas de Pablo equivalen a 6 pies. Nick golpeó la pelota 6 pies, mientras que las 36 pulgadas de Amalia son 1 yarda y las 108 pulgadas de Lila son 3 yardas, así que solo Nick iguala a Pablo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q28": {
+      "inputHash": "a0c1de1502c256f5f27b17c67dcaa4ac170f93dc8e9136cc43652882d5ce1199",
+      "explanation": {
+        "text": {
+          "en": "The plotted pieces total (1 + 4·4 + 5 + 2·6 + 7)/8 = 41/8 = 5 1/8 feet. Adding the 1 foot left over gives an original length of 6 1/8 feet.",
+          "es": "Las piezas de la gráfica suman (1 + 4·4 + 5 + 2·6 + 7)/8 = 41/8 = 5 1/8 pies. Al sumar el pie que sobró se obtiene una longitud original de 6 1/8 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q29": {
+      "inputHash": "921bf6441e6991fcc0a8b21c8577f7bd71674831725dd4f03a0ba078a4b9535a",
+      "explanation": {
+        "text": {
+          "en": "The product simplifies to (k/3) × 12 = 4k. For it to be greater than 12, 4k > 12, which means k > 3.",
+          "es": "El producto se simplifica a (k/3) × 12 = 4k. Para que sea mayor que 12, se necesita 4k > 12, lo que significa que k > 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q32": {
+      "inputHash": "473eda7e43aba44a3f1a4142fbecb8b9da1ab215244254bb10c93f773e488fe2",
+      "explanation": {
+        "text": {
+          "en": "Ms. Wilson walked 3/4 mile on each of 4 days. Multiplying gives 4 × 3/4 = 12/4 = 3 miles.",
+          "es": "La Sra. Wilson caminó 3/4 de milla cada uno de 4 días. Al multiplicar se obtiene 4 × 3/4 = 12/4 = 3 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q33": {
+      "inputHash": "628b9d1f9dc56fe2d84049d3d34b2a79f59afe0f446488a48afda2c706ca9248",
+      "explanation": {
+        "text": {
+          "en": "The base contains 4 × 3 = 12 unit squares, so one layer has 12 unit cubes. Multiplying by the 2 layers gives (4 × 3) × 2 = 24 cubic units.",
+          "es": "La base contiene 4 × 3 = 12 cuadrados unitarios, así que un nivel tiene 12 cubos unitarios. Al multiplicar por los 2 niveles se obtiene (4 × 3) × 2 = 24 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q36": {
+      "inputHash": "f7cee36a394cb1ab1e5c6df3e1b270f67d62aa7206c477a5351daf60dae0eedd",
+      "explanation": {
+        "text": {
+          "en": "The cube measures 1 unit along each edge. Its volume is 1 × 1 × 1 = 1 cubic unit.",
+          "es": "El cubo mide 1 unidad en cada arista. Su volumen es 1 × 1 × 1 = 1 unidad cúbica."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q37": {
+      "inputHash": "21f34517bcd6b709975e5e1aa09592c9a417766d21ce4b22974a369e3de4e068",
+      "explanation": {
+        "text": {
+          "en": "Sharing 1/2 pound equally among 3 friends is 1/2 ÷ 3. Multiplying by the reciprocal gives 1/2 × 1/3 = 1/6 pound per friend.",
+          "es": "Repartir 1/2 libra por igual entre 3 amigos es 1/2 ÷ 3. Al multiplicar por el recíproco se obtiene 1/2 × 1/3 = 1/6 de libra por amigo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q41": {
+      "inputHash": "8110baad525bdc08c492e37eb4cef4c1bfa996f6fe008ddbd0c22944c15e12e3",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 1/2 by a number greater than 1 makes the product greater than 1/2. Only 5/4 is greater than 1, so 1/2 × 5/4 is the required expression.",
+          "es": "Multiplicar 1/2 por un número mayor que 1 produce un resultado mayor que 1/2. Solo 5/4 es mayor que 1, así que 1/2 × 5/4 es la expresión pedida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q42": {
+      "inputHash": "7268e1f0aa7af65ec9c443c1384ef30c4e98d8c695a2c221cb0723b94f41ae6b",
+      "explanation": {
+        "text": {
+          "en": "Convert 0.4 liter to 400 milliliters. Each student uses 2 × 5 = 10 milliliters, so 22 students use 220 milliliters and 400 − 220 = 180 milliliters remain.",
+          "es": "Se convierte 0.4 litro a 400 mililitros. Cada estudiante usa 2 × 5 = 10 mililitros, así que 22 estudiantes usan 220 mililitros y quedan 400 − 220 = 180 mililitros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q43": {
+      "inputHash": "3c76cccecc83a9066b786768f20364cad3d12963b5e1e838577dcbeff27003a7",
+      "explanation": {
+        "text": {
+          "en": "Dividing by 74 is the same as multiplying by 1/74. Therefore, 1/25 ÷ 74 = 1/25 × 1/74 = 1/1,850.",
+          "es": "Dividir entre 74 equivale a multiplicar por 1/74. Por lo tanto, 1/25 ÷ 74 = 1/25 × 1/74 = 1/1,850."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q44": {
+      "inputHash": "1ab877e9b7dfe0a52146be0040a265980b7f50aa4dcf508fb6212ff09e8f4552",
+      "explanation": {
+        "text": {
+          "en": "A 2-by-2-by-4 solid has volume 2 × 2 × 4 = 16 cubic units. Volume counts unit cubes, so the figure can be filled with 16 cubes of 1 cubic unit each.",
+          "es": "Un sólido de 2 por 2 por 4 tiene un volumen de 2 × 2 × 4 = 16 unidades cúbicas. El volumen cuenta cubos unitarios, así que la figura se puede llenar con 16 cubos de 1 unidad cúbica cada uno."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g5-mc-q45": {
+      "inputHash": "a6f9aab396a4997eb610b7f72722db7a95e19966e65d42b5ee8f862004281e95",
+      "explanation": {
+        "text": {
+          "en": "Addition checks subtraction because it is the inverse operation. If 15.91 − 8.32 = 7.59, then the check is 8.32 + 7.59 = 15.91.",
+          "es": "La suma comprueba la resta porque es la operación inversa. Si 15.91 − 8.32 = 7.59, entonces la comprobación es 8.32 + 7.59 = 15.91."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

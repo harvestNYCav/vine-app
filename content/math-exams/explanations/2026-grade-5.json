@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2026-grade-5-mc-v1",
+  "questions": {
+    "nysed-2026-g5-mc-q1": {
+      "inputHash": "40b56275cd426129c4817cfa8d075f94be40e62a5da2a6de18f9d8cd630c66f3",
+      "explanation": {
+        "text": {
+          "en": "Compare place values from left to right. The tenths digits are 3 and 2, so 44.325 is greater than 44.235.",
+          "es": "Se comparan los valores posicionales de izquierda a derecha. Las décimas son 3 y 2, por lo tanto 44.325 es mayor que 44.235."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q2": {
+      "inputHash": "b57e980a86b0aadd5c1f1ca3dfa9fe541ff6ec9cd48245bb4e588957b566fae7",
+      "explanation": {
+        "text": {
+          "en": "The digits in 43.564 represent 4 tens, 3 ones, 5 tenths, 6 hundredths, and 4 thousandths, giving the expanded expression in choice B.",
+          "es": "Las cifras de 43.564 representan 4 decenas, 3 unidades, 5 décimas, 6 centésimas y 4 milésimas, lo que da la expresión de B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q3": {
+      "inputHash": "8b0386e630cf5b998ba93417ee18f069538b026f5745df052e5622cfc6c5e7c0",
+      "explanation": {
+        "text": {
+          "en": "Volume equals length × width × height. Multiplying the three dimensions gives 7 × 5 × 6 = 210 cubic feet.",
+          "es": "El volumen equivale a largo × ancho × altura. Al multiplicar las dimensiones se obtiene 7 × 5 × 6 = 210 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q4": {
+      "inputHash": "f8ff95630b2f903734d14b87fd72dc229ae6aeb61dc17e83b49ca58c2e51a9b0",
+      "explanation": {
+        "text": {
+          "en": "Use sixths for the fractional parts: 1/3 = 2/6 and 1/2 = 3/6. Therefore, 6 1/3 + 4 1/2 = 10 5/6 hours.",
+          "es": "Se usan sextos: 1/3 = 2/6 y 1/2 = 3/6. Por lo tanto, 6 1/3 + 4 1/2 = 10 5/6 horas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q5": {
+      "inputHash": "dee70deb8a0f5279632c72e99c7a5ab6697f15afc0262e6d775b41a5d28a5aa3",
+      "explanation": {
+        "text": {
+          "en": "Divide the 1,176 prizes equally among 14 baskets. The calculation 1,176 ÷ 14 = 84 gives the number of prizes in each basket.",
+          "es": "Se dividen los 1,176 premios en partes iguales entre 14 canastas. El cálculo 1,176 ÷ 14 = 84 da los premios por canasta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q6": {
+      "inputHash": "d657040b2f49b9b67b4b87fc23adad3ba9cbb10da3abb24e5f920acc360d784d",
+      "explanation": {
+        "text": {
+          "en": "A trapezoid has exactly one pair of parallel sides. Squares, rectangles, and parallelograms each have two pairs, so the figure is a trapezoid.",
+          "es": "Un trapecio tiene exactamente un par de lados paralelos. Los cuadrados, rectángulos y paralelogramos tienen dos pares, así que es un trapecio."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q7": {
+      "inputHash": "a3c6791f8ac91627c90c749149c8c22213e098e598729fc0e334b00a80c299c1",
+      "explanation": {
+        "text": {
+          "en": "The daily distance is the total divided by 7 equal days. Calculating 21.7 ÷ 7 = 3.10 gives the miles walked each day.",
+          "es": "La distancia diaria es el total dividido entre 7 días iguales. Al calcular 21.7 ÷ 7 = 3.10 se obtienen las millas por día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q9": {
+      "inputHash": "340ff2ecf3c5d280e8849a0b6deeb535359f02ac586152caa19358c9046f6da8",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 2/5 by 3/3 does not change its value because 3/3 = 1. Thus, the product equals 2/5.",
+          "es": "Multiplicar 2/5 por 3/3 no cambia su valor porque 3/3 = 1. Por lo tanto, el producto equivale a 2/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q10": {
+      "inputHash": "960114634c34bc1de347a8cc48d93fc9f4268b90bf7a825c6704696a01508a11",
+      "explanation": {
+        "text": {
+          "en": "Convert the feet to inches: 1 ft 7 in. = 19, 2 ft 5 in. = 29, and 1 ft 9 in. = 21. Then 10 + 19 + 29 + 21 + 11 = 90 inches.",
+          "es": "Se convierten los pies a pulgadas: 1 pie 7 pulg. = 19, 2 pies 5 pulg. = 29 y 1 pie 9 pulg. = 21. Luego 10 + 19 + 29 + 21 + 11 = 90."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q11": {
+      "inputHash": "de3abe3bcdc567a0cf3a7df1fc84eb3f3fe134a60f73e4a22b5e3632c1edac2d",
+      "explanation": {
+        "text": {
+          "en": "Rewrite 1/4 as 2/8 so the fractions have a common denominator. Then 7 3/8 − 5 2/8 = 2 1/8 yards remain.",
+          "es": "Se reescribe 1/4 como 2/8 para usar un denominador común. Entonces 7 3/8 − 5 2/8 = 2 1/8 yardas restantes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q12": {
+      "inputHash": "80b73480c5712cb878e7702b2d828090be7c7bddb9c651b32c44635a020fa648",
+      "explanation": {
+        "text": {
+          "en": "The 6 in 786,543 is worth 6,000, and one tenth of 6,000 is 600. In 589,632, the 6 is in the hundreds place and represents 600.",
+          "es": "El 6 de 786,543 vale 6,000, y una décima de 6,000 equivale a 600. En 589,632, el 6 está en las centenas y representa 600."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q13": {
+      "inputHash": "475f91c34876dd3cb08354b48a1f35e48a8d2c94f6ca08c0ef4782da7482d74c",
+      "explanation": {
+        "text": {
+          "en": "Compare the eight table entries with the six marks already plotted. A second mark is missing at 3/4 and at 1 2/4, giving choice D.",
+          "es": "Se comparan los ocho datos con las seis marcas ya trazadas. Falta una segunda marca en 3/4 y en 1 2/4, lo que da la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q15": {
+      "inputHash": "77bb32a5602e99d93f0d5813b674c3fb9139fc9095896461cb13a00afc9e3bb5",
+      "explanation": {
+        "text": {
+          "en": "The figure has 11 vertical stacks, and each stack is 2 cubes high. Therefore, it contains 11 × 2 = 22 unit cubes.",
+          "es": "La figura tiene 11 columnas verticales, cada una de 2 cubos de altura. Por lo tanto, contiene 11 × 2 = 22 cubos unitarios."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q16": {
+      "inputHash": "b7250059ea9a5ed48e854b931b93a64829bae9d9c4a2f2b023709d30a6eceaae",
+      "explanation": {
+        "text": {
+          "en": "Dividing by 1/5 asks how many fifths are in 4. Since each whole has 5 fifths, 4 ÷ 1/5 is found with 4 × 5 = 20.",
+          "es": "Dividir entre 1/5 pregunta cuántos quintos hay en 4. Como cada entero tiene 5 quintos, 4 ÷ 1/5 se calcula con 4 × 5 = 20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q17": {
+      "inputHash": "71e990283dee1c63fd22cf1d9baaeefeea448747509aa8a5b44b3526578026ac",
+      "explanation": {
+        "text": {
+          "en": "Share 5 kilograms equally among 8 batches. Dividing 5 ÷ 8 gives 5/8 kilogram of flour for each batch.",
+          "es": "Se reparten 5 kilogramos por igual entre 8 tandas. Dividir 5 ÷ 8 da 5/8 de kilogramo de harina para cada tanda."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q18": {
+      "inputHash": "c9c4a389db8508c8a723844e6fce0919afce05bb7e3b42e840bed4f1af5869a1",
+      "explanation": {
+        "text": {
+          "en": "Use twelfths as a common denominator: 1/4 = 3/12 and 2/3 = 8/12. Adding gives 3/12 + 8/12 = 11/12.",
+          "es": "Se usan doceavos como denominador común: 1/4 = 3/12 y 2/3 = 8/12. Al sumar se obtiene 3/12 + 8/12 = 11/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q19": {
+      "inputHash": "77cd273e9e615f6ea63d906e78b28b2fbf8a1d7b6848943b95a79fe8277e1e9b",
+      "explanation": {
+        "text": {
+          "en": "For a rectangular prism, V = length × width × height. Solving 90 = length × 3 × 6 gives length = 90 ÷ 18 = 5 inches.",
+          "es": "Para un prisma rectangular, V = largo × ancho × altura. Al resolver 90 = largo × 3 × 6, resulta largo = 90 ÷ 18 = 5 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q20": {
+      "inputHash": "d082ec848da4c0c8a37c26bc25ae06a23ee3d2bec48c76be41444d30a995281b",
+      "explanation": {
+        "text": {
+          "en": "The decimal 0.35 means thirty-five hundredths. Therefore, its fraction form is 35/100, which is choice B.",
+          "es": "El decimal 0.35 significa treinta y cinco centésimas. Por lo tanto, su forma fraccionaria es 35/100, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q21": {
+      "inputHash": "ceb04cfd2710122fcb695d2466e7f6d59c5eec44874e9c63a0fc7fbc7694ed81",
+      "explanation": {
+        "text": {
+          "en": "Multiply the cat's weight by 4 1/2: 8 3/4 × 4 1/2 = 35/4 × 9/2 = 315/8 = 39 3/8 pounds.",
+          "es": "Se multiplica el peso del gato por 4 1/2: 8 3/4 × 4 1/2 = 35/4 × 9/2 = 315/8 = 39 3/8 libras."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q23": {
+      "inputHash": "20f6be99876f00f90d487b2348c4c5c039df8194934c851dcff7694c6ac44051",
+      "explanation": {
+        "text": {
+          "en": "Terry lives 1.78 miles farther than Jamal, so add the distances. Calculating 3.65 + 1.78 = 5.43 miles gives Terry's distance.",
+          "es": "Terry vive 1.78 millas más lejos que Jamal, así que se suman las distancias. El cálculo 3.65 + 1.78 = 5.43 millas da su distancia."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q24": {
+      "inputHash": "895777be2ce7b8a7709bb54ddc6ef5119646e183f6c7c29bc0f0be1cbd851039",
+      "explanation": {
+        "text": {
+          "en": "Dividing 1/3 by 15 is the same as multiplying by 1/15. Thus, 1/3 ÷ 15 = 1/3 × 1/15 = 1/45.",
+          "es": "Dividir 1/3 entre 15 equivale a multiplicar por 1/15. Por lo tanto, 1/3 ÷ 15 = 1/3 × 1/15 = 1/45."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q25": {
+      "inputHash": "b8c03e12e98d061d04e773563b9cd0f39862a8e463e90e8a807fb4ee37852314",
+      "explanation": {
+        "text": {
+          "en": "A rectangle's area is the product of its side lengths. Multiplying 4/12 × 7/8 gives 28/96 square unit, which matches choice D.",
+          "es": "El área de un rectángulo es el producto de sus lados. Al multiplicar 4/12 × 7/8 se obtienen 28/96 de unidad cuadrada, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q26": {
+      "inputHash": "9bc542bc74d92309aa846ec6d9a63c175679f48c69e613996ba07e5b5d04ecb8",
+      "explanation": {
+        "text": {
+          "en": "The hundredths digit in 256.754 is 5, and the next digit is 4. Since 4 is less than 5, the rounded number remains 256.75.",
+          "es": "La cifra de las centésimas en 256.754 es 5 y la siguiente cifra es 4. Ya que 4 es menor que 5, el número redondeado es 256.75."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q28": {
+      "inputHash": "ae5968a9f71b4de9f418e9f31b375f69c1432c90b3fe145dd3eb44f2ba349c1e",
+      "explanation": {
+        "text": {
+          "en": "Convert every amount to cups: 4 pints = 8 cups, 8 fluid ounces = 1 cup, and 16 fluid ounces = 2 cups. Then 3 + 8 + 1 + 2 = 14 cups.",
+          "es": "Se convierte todo a tazas: 4 pintas = 8 tazas, 8 onzas líquidas = 1 taza y 16 onzas líquidas = 2 tazas. Luego 3 + 8 + 1 + 2 = 14 tazas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q29": {
+      "inputHash": "44f71af26fdf13012b5411c3a0f7e8d2aca79093b9b4c65e49596f45c9b6d864",
+      "explanation": {
+        "text": {
+          "en": "Use twelfths and regroup: 5 1/4 = 5 3/12 = 4 15/12, while 2 5/6 = 2 10/12. Subtracting gives 2 5/12.",
+          "es": "Se usan doceavos y se reagrupa: 5 1/4 = 5 3/12 = 4 15/12, mientras 2 5/6 = 2 10/12. Al restar resulta 2 5/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q30": {
+      "inputHash": "4255cd80f1c12119035e622a87f2dab11ad170965734a59302a6f3edc89f9e40",
+      "explanation": {
+        "text": {
+          "en": "The number of 1-inch cubes equals the prism's volume. Multiplying 4 × 6 × 7 = 168 gives the total number of cubes.",
+          "es": "La cantidad de cubos de 1 pulgada equivale al volumen del prisma. Multiplicar 4 × 6 × 7 = 168 da el total de cubos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q31": {
+      "inputHash": "e3039ff104585a55729861a016161345758cd9a067050a2bc6568c8aa218b79f",
+      "explanation": {
+        "text": {
+          "en": "Rewrite 3 1/2 as 3 4/8, then subtract the Monday amount from Wednesday's amount: 4 7/8 − 3 4/8 = 1 3/8 pounds.",
+          "es": "Se reescribe 3 1/2 como 3 4/8 y se resta la cantidad del lunes: 4 7/8 − 3 4/8 = 1 3/8 libras."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q32": {
+      "inputHash": "70eb5044153b90edc256887a6c61f1670a0ff39bcb0315813d49637450b16207",
+      "explanation": {
+        "text": {
+          "en": "Two binders cost 2 × $3.49 = $6.98. Adding the $2.79 pencils gives $6.98 + $2.79 = $9.77 total.",
+          "es": "Dos carpetas cuestan 2 × $3.49 = $6.98. Al sumar los lápices de $2.79 se obtiene $6.98 + $2.79 = $9.77 en total."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q33": {
+      "inputHash": "7b42bf71ca487a10d8c0d2c112b49e9b19ca84a9d7738bb172f7fd8a51fcc549",
+      "explanation": {
+        "text": {
+          "en": "Dividing by 10² = 100 moves the decimal point two places left: 267.354 ÷ 100 = 2.67354. The decimal lies between 2 and 6.",
+          "es": "Dividir entre 10² = 100 mueve el punto decimal dos lugares a la izquierda: 267.354 ÷ 100 = 2.67354. El punto queda entre 2 y 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q34": {
+      "inputHash": "685d10e6be148067b59bde77bf411d91557a1a01cd7b4679cfcf1f592df2236a",
+      "explanation": {
+        "text": {
+          "en": "To find 3/8 of 624, first divide 624 into 8 equal parts and then take 3 parts. This is represented by 3 × (624 ÷ 8).",
+          "es": "Para hallar 3/8 de 624, primero se divide 624 en 8 partes iguales y luego se toman 3 partes. Esto se representa con 3 × (624 ÷ 8)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g5-mc-q35": {
+      "inputHash": "797badfb2e95addcc303f80d2cf62e27d19182a14190a76ee768470e2d52114f",
+      "explanation": {
+        "text": {
+          "en": "Add each plotted weight using its number of marks: 2(1/2) + 3(3/4) + 1(1 1/8) + 4(1 3/8) = 9 7/8 pounds.",
+          "es": "Se suma cada peso según sus marcas: 2(1/2) + 3(3/4) + 1(1 1/8) + 4(1 3/8) = 9 7/8 libras."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

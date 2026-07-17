@@ -6,6 +6,7 @@ import { useState } from 'react'
 import type {
   ElaExamDefinition,
   ElaExamSectionDefinition,
+  ElaExplanationSource,
   PublicElaExamQuestion,
 } from '@/content/ela-exams/types'
 import CollapsiblePassage from '../../../CollapsiblePassage'
@@ -18,6 +19,7 @@ type CheckedFeedback = {
   recordedAnswer: string
   correctAnswer: string
   explanation: string
+  explanationSource: ElaExplanationSource
 }
 
 type SavedResponse = {
@@ -322,7 +324,12 @@ export default function ExamPracticeClient({
             <p className={`font-bold ${feedback.correct ? 'text-green-800' : 'text-red-700'}`}>
               {feedback.correct ? 'Correct!' : `The correct answer is ${feedback.correctAnswer}.`}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
+            <p className="mt-3 text-xs font-bold uppercase tracking-wider text-gray-500">
+              {feedback.explanationSource === 'official-nysed'
+                ? 'Official NYSED rationale'
+                : 'Vine explanation'}
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
             <button
               type="button"
               onClick={continueFromFeedback}

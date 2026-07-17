@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2015-grade-7-mc-v1",
+  "questions": {
+    "nysed-2015-g7-mc-q1": {
+      "inputHash": "5c4cffd61e72aa8a9786c9164cc59d060fa1e0c1b5149c80f1103319e1e47a33",
+      "explanation": {
+        "text": {
+          "en": "A decrease of 15.7 degrees means subtracting from 11.4. The midnight temperature was 11.4 − 15.7 = −4.3°F.",
+          "es": "Una disminución de 15.7 grados significa restar esa cantidad de 11.4. La temperatura a medianoche fue 11.4 − 15.7 = −4.3°F."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q2": {
+      "inputHash": "eb9339a37eb80e82f6576aa6610e9ef1e45dab31f97872c1564fcfb71500f94f",
+      "explanation": {
+        "text": {
+          "en": "The table requires consecutive bar heights of 5, 10, 3, and 7 for the four score intervals. Histogram B represents the data because its bars have exactly those heights.",
+          "es": "La tabla requiere alturas consecutivas de 5, 10, 3 y 7 para los cuatro intervalos de puntaje. El histograma B representa los datos porque sus barras tienen exactamente esas alturas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q3": {
+      "inputHash": "03ba5006a44e3f2abe6c02d4d4acfac434bf69754fd77b1e990c37f6ac0dfefd",
+      "explanation": {
+        "text": {
+          "en": "Starting at −10 feet and increasing altitude by 10 feet gives −10 + 10 = 0 feet. That situation ends exactly at sea level.",
+          "es": "Comenzar a −10 pies y aumentar la altitud 10 pies da −10 + 10 = 0 pies. Esa situación termina exactamente al nivel del mar."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q4": {
+      "inputHash": "1b7f375e06828e425781975265b8c310f622beadefb9236b77950253fb2d5c04",
+      "explanation": {
+        "text": {
+          "en": "There are 15 blue rings and 5 yellow rings, so 15 + 5 = 20 of the 50 rings qualify. The experimental probability is 20/50 = 2/5.",
+          "es": "Hay 15 anillos azules y 5 amarillos, así que 15 + 5 = 20 de los 50 anillos cumplen la condición. La probabilidad experimental es 20/50 = 2/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q5": {
+      "inputHash": "4a892527e7f37a7452debc5906229850e357891b93222a52b298034a661183a8",
+      "explanation": {
+        "text": {
+          "en": "Distribute 2/5 over 15x − 30y to get 6x − 12y. Keeping the remaining +10x gives Step 1 as 6x − 12y + 10x.",
+          "es": "Se distribuye 2/5 sobre 15x − 30y para obtener 6x − 12y. Al conservar el término +10x, el paso 1 queda como 6x − 12y + 10x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q6": {
+      "inputHash": "2079bc96b6145a61175b4f41010551a4c7d1b217cc82926e63055f27eecf8c6f",
+      "explanation": {
+        "text": {
+          "en": "The graph rises $15 for each additional person, so the unit rate is $15 per 1 person. A unit rate appears where x = 1, at the point (1, 15).",
+          "es": "La gráfica aumenta $15 por cada persona adicional, así que la razón unitaria es $15 por 1 persona. La razón unitaria aparece cuando x = 1, en el punto (1, 15)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q7": {
+      "inputHash": "64950b2996ac4fac9c0becfcb58b98afa2843fa5da6faea4006a12747473838b",
+      "explanation": {
+        "text": {
+          "en": "Inside the parentheses, −7/10 + 0.15 = −0.70 + 0.15 = −0.55. Then −0.55 ÷ (−0.125) = 4.4.",
+          "es": "Dentro de los paréntesis, −7/10 + 0.15 = −0.70 + 0.15 = −0.55. Luego, −0.55 ÷ (−0.125) = 4.4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q8": {
+      "inputHash": "f1e2e4db700bd299f595dafd6530c322d1015b9ab72d151e00dc9236f14d05e9",
+      "explanation": {
+        "text": {
+          "en": "The water-to-milk ratio is (1/4) ÷ (1/3). Multiplying by the reciprocal gives 1/4 × 3/1 = 3/4 cup of water per cup of milk.",
+          "es": "La razón de agua a leche es (1/4) ÷ (1/3). Al multiplicar por el recíproco se obtiene 1/4 × 3/1 = 3/4 de taza de agua por taza de leche."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q9": {
+      "inputHash": "2d36af542b3f8712d4d282079030c1e947a5ab75df0750da2b1be3e02c82c7f7",
+      "explanation": {
+        "text": {
+          "en": "A 40% discount leaves 60% of $450, so the sale price is 0.60 × 450 = $270. Increasing that by 40% gives 1.40 × 270 = $378.",
+          "es": "Un descuento del 40% deja el 60% de $450, así que el precio rebajado es 0.60 × 450 = $270. Al aumentarlo un 40% se obtiene 1.40 × 270 = $378."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q10": {
+      "inputHash": "18f9935662eeffdec99c1553fcb893a36a7974f302efcab0839eaf91e707ea05",
+      "explanation": {
+        "text": {
+          "en": "The product of two negative numbers is positive. Multiplying numerators and denominators gives (−1/4)(−3/7) = 3/28.",
+          "es": "El producto de dos números negativos es positivo. Al multiplicar numeradores y denominadores se obtiene (−1/4)(−3/7) = 3/28."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q11": {
+      "inputHash": "e3545e8229781b4996852096cd4072c7a414e0d8b2ea92b66844f94d156bab08",
+      "explanation": {
+        "text": {
+          "en": "The 3 1/2-pound bag is 7/2 pounds, and there are 52/3 three-week periods in a year. Therefore, the yearly amount is represented by 7/2 × 52/3.",
+          "es": "La bolsa de 3 1/2 libras equivale a 7/2 libras, y hay 52/3 períodos de tres semanas en un año. Por lo tanto, la cantidad anual se representa con 7/2 × 52/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q12": {
+      "inputHash": "711cd927dea2234968b6c5f3e729d22a6257a518403d063384bdff0e3995330a",
+      "explanation": {
+        "text": {
+          "en": "Dividing 7 by 8 gives 0.875 because 0.875 × 8 = 7. Thus, 7/8 has decimal form 0.875.",
+          "es": "Al dividir 7 entre 8 se obtiene 0.875 porque 0.875 × 8 = 7. Por lo tanto, la forma decimal de 7/8 es 0.875."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q13": {
+      "inputHash": "37d36276cdcf1e822bda29f8dae26382d6316df545822a2943ed569f5b03ba00",
+      "explanation": {
+        "text": {
+          "en": "First, −1/4 − 1/2 = −3/4. Then (−3/4) ÷ (−4/7) = (−3/4)(−7/4) = 21/16 = 1 5/16; the two negative factors make the result positive.",
+          "es": "Primero, −1/4 − 1/2 = −3/4. Luego, (−3/4) ÷ (−4/7) = (−3/4)(−7/4) = 21/16 = 1 5/16; los dos factores negativos hacen positivo el resultado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q14": {
+      "inputHash": "ab45f3e63bfcb03e32ec1bec4c2179d988059e9f779de89f548bdfdae43eee00",
+      "explanation": {
+        "text": {
+          "en": "Seven of the 20 recorded arrival times are earlier than 8:20: three at 8:19, three at 8:18, and one at 8:17. Therefore, the estimated probability is 7/20 because 7 of 20 observations qualify.",
+          "es": "Siete de las 20 llegadas registradas son anteriores a las 8:20: tres a las 8:19, tres a las 8:18 y una a las 8:17. Por lo tanto, la probabilidad es 7/20 porque cumplen 7 de 20 observaciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q15": {
+      "inputHash": "7982c4351e8f4cd34d57cc38502975104103e9dc93d257d066e791868da23763",
+      "explanation": {
+        "text": {
+          "en": "Use the circumference formula C = 2πr. Substituting 16π gives 16π = 2πr, so r = 8 centimeters.",
+          "es": "Se usa la fórmula de la circunferencia C = 2πr. Al sustituir 16π se obtiene 16π = 2πr, así que r = 8 centímetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q16": {
+      "inputHash": "038e54a3bea04409bac005aebb96850cc51e1d512e32fc4b8023ff4166f107de",
+      "explanation": {
+        "text": {
+          "en": "The commission plan pays 52($115) + 0.095($125,000) = $17,855 per year. The fixed plan pays 52($450) = $23,400, a difference of $23,400 − $17,855 = $5,545.",
+          "es": "El plan con comisión paga 52($115) + 0.095($125,000) = $17,855 al año. El plan fijo paga 52($450) = $23,400, una diferencia de $23,400 − $17,855 = $5,545."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q17": {
+      "inputHash": "7a68477c80b74b69c342a39954aec88d909fb2d36694f019367b6403d7dd50dd",
+      "explanation": {
+        "text": {
+          "en": "Travis's $43 is 120% of Jessica's goal, so Jessica collects 43 ÷ 1.20 = $35.833…. Robin collects 1.35 × 43 = $58.05; together they collect $35.833… + $43 + $58.05 = $136.88 to the nearest cent.",
+          "es": "Los $43 de Travis son el 120% de la meta de Jessica, así que Jessica reúne 43 ÷ 1.20 = $35.833…. Robin reúne 1.35 × 43 = $58.05; juntos reúnen $35.833… + $43 + $58.05 = $136.88 al centavo más cercano."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q18": {
+      "inputHash": "9c1515b3f674795d21bfa141c55ae43560b126e2733dd78e541b754215d9179f",
+      "explanation": {
+        "text": {
+          "en": "Circumference is 2πr, so the difference is 2π(6,371.0 − 1,737.5) = 2π(4,633.5). This is approximately 29,113.1 kilometers.",
+          "es": "La circunferencia es 2πr, así que la diferencia es 2π(6,371.0 − 1,737.5) = 2π(4,633.5). Esto es aproximadamente 29,113.1 kilómetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q19": {
+      "inputHash": "195f9b73816c5f3f8063a794cda3f379c4333843dfcc3649d3b1b93f08572eee",
+      "explanation": {
+        "text": {
+          "en": "Selling for 30% more creates a $10,000 × 0.30 = $3,000 difference. The commission is 25% of that difference: 0.25 × $3,000 = $750.",
+          "es": "Vender por un 30% más crea una diferencia de $10,000 × 0.30 = $3,000. La comisión es el 25% de esa diferencia: 0.25 × $3,000 = $750."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q20": {
+      "inputHash": "c4ff2a8a8487bcc8c422125548795a00236dccda4b4e7e1f2a4b190c2bcfbb58",
+      "explanation": {
+        "text": {
+          "en": "Both terms share a greatest common factor of 8m. Factoring gives 32m + 56mp = 8m(4 + 7p).",
+          "es": "Ambos términos comparten el máximo factor común 8m. Al factorizar se obtiene 32m + 56mp = 8m(4 + 7p)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q21": {
+      "inputHash": "db7c9432e08aec661b76412847794c6470359718e9893de8bbb7374869aa0866",
+      "explanation": {
+        "text": {
+          "en": "Dividing by −41/15 means multiplying by its reciprocal, −15/41. Thus, (−1/2)(−15) ÷ 41 = 15/82, which is the process in statement B.",
+          "es": "Dividir entre −41/15 significa multiplicar por su recíproco, −15/41. Así, (−1/2)(−15) ÷ 41 = 15/82, que es el proceso de la afirmación B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q22": {
+      "inputHash": "073d38e90691e36a764ee5367c2e8bc17eb68eaf361f9fefbe0130c826efa864",
+      "explanation": {
+        "text": {
+          "en": "Eight hours of hourly pay gives 8 × $9 = $72, so 72 + 6d > 155. Then 6d > 83 and d > 13 5/6, making 14 the least whole number of deliveries.",
+          "es": "Ocho horas de salario dan 8 × $9 = $72, así que 72 + 6d > 155. Entonces 6d > 83 y d > 13 5/6, por lo que 14 es la menor cantidad entera de entregas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q23": {
+      "inputHash": "cf001da6acb08eee5a120783413cf8cc385a30d43bb601c363fbaa1b305ed134",
+      "explanation": {
+        "text": {
+          "en": "Malika's sampled masses differ from 1 pound by at most 0.10, while four of Adrian's five differ by 0.12 or more. Therefore, Malika's containers are generally closer to 1 pound.",
+          "es": "Las masas de la muestra de Malika difieren de 1 libra por no más de 0.10, mientras que cuatro de las cinco de Adrian difieren por 0.12 o más. Por lo tanto, los recipientes de Malika suelen estar más cerca de 1 libra."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q24": {
+      "inputHash": "bb10a8d1f044be00960b2cafeac22f3719e4e43a08249539f1a65c7b0129229f",
+      "explanation": {
+        "text": {
+          "en": "Combine like terms: 8c − 3c = 5c and 6 − 2 = 4. The expression simplifies to 5c + 4.",
+          "es": "Se combinan los términos semejantes: 8c − 3c = 5c y 6 − 2 = 4. La expresión se simplifica a 5c + 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q25": {
+      "inputHash": "d5c9339d520e3fc90677478be72267f10147c34c03c5017bcefca284d990a7f8",
+      "explanation": {
+        "text": {
+          "en": "A rhombus has four equal sides, each with length s. Adding the sides gives P = s + s + s + s = 4s.",
+          "es": "Un rombo tiene cuatro lados iguales, cada uno de longitud s. Al sumar los lados se obtiene P = s + s + s + s = 4s."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q26": {
+      "inputHash": "5d47d184e6acb91be827c9bbf47e36a18010aeb5acbbe3202f93995707e3d00f",
+      "explanation": {
+        "text": {
+          "en": "A probability of 1/3 is greater than 0 but less than 1/2. Therefore, scoring is possible but less likely than not, so it is unlikely.",
+          "es": "Una probabilidad de 1/3 es mayor que 0 pero menor que 1/2. Por lo tanto, anotar es posible pero menos probable que no anotar, así que es improbable."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q27": {
+      "inputHash": "ff1b122967d685c06afa4c2b194439c8e9b2e8b999871912eabc2df4119b9f89",
+      "explanation": {
+        "text": {
+          "en": "The trim costs 35 × $1.75 = $61.25. Subtracting from the $100 payment gives $100.00 − $61.25 = $38.75 in change.",
+          "es": "La moldura cuesta 35 × $1.75 = $61.25. Al restar esa cantidad del pago de $100 se obtiene $100.00 − $61.25 = $38.75 de cambio."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g7-mc-q28": {
+      "inputHash": "143a1ed7e4615dbd08bff527e9d00badeaa7bec93ee773fe2b8321b760007c18",
+      "explanation": {
+        "text": {
+          "en": "In 3 weeks the pile grows by 3 × 8 7/12 = 25 3/4 inches. Adding the initial height gives 17 3/4 + 25 3/4 = 43 1/2 inches.",
+          "es": "En 3 semanas la pila crece 3 × 8 7/12 = 25 3/4 pulgadas. Al sumar la altura inicial se obtiene 17 3/4 + 25 3/4 = 43 1/2 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

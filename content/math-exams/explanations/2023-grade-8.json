@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2023-grade-8-mc-v1",
+  "questions": {
+    "nysed-2023-g8-mc-q2": {
+      "inputHash": "69d2b38aae91b1abe754cb721dedd4711610bc163e31f4eaa4d8082f6f074bcb",
+      "explanation": {
+        "text": {
+          "en": "A linear association has points clustered around a straight-line trend. Scatter plot D shows a clear downward linear pattern, unlike the curved or unstructured alternatives.",
+          "es": "Una asociación lineal tiene puntos agrupados alrededor de una tendencia recta. La gráfica D muestra un patrón lineal descendente claro, a diferencia de las alternativas curvas o sin estructura."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q3": {
+      "inputHash": "75acc10978b7e75c21d8f70c7e1bf4be9a0a9e018c3da5659920705a6ce80403",
+      "explanation": {
+        "text": {
+          "en": "A dilation by scale factor 2 about the origin doubles both coordinates. Thus A(−2,3) maps to A′(−4,6).",
+          "es": "Una dilatación de factor 2 con centro en el origen duplica ambas coordenadas. Por lo tanto, A(−2,3) se transforma en A′(−4,6)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q7": {
+      "inputHash": "3645da2ba05937b198c0f57fdacd36708318fda3991b0a75c205081a8afbf9a6",
+      "explanation": {
+        "text": {
+          "en": "Function A, y = (5/4)x, has rate 5/4 = 1.25. Function B's table has rate 1.5/5 = 0.3, so Function A has the greater rate because 1.25 > 0.3.",
+          "es": "La función A, y = (5/4)x, tiene tasa 5/4 = 1.25. La tabla de la función B tiene tasa 1.5/5 = 0.3, así que A tiene la mayor tasa porque 1.25 > 0.3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q8": {
+      "inputHash": "c3403f554209eb8264a30b4890e838bfd5e1d3b0ce76fedb07385d0733483943",
+      "explanation": {
+        "text": {
+          "en": "The coordinate differences are 9 horizontally and −12 vertically. The distance is √(9² + 12²) = √225 = 15 units.",
+          "es": "Las diferencias de coordenadas son 9 horizontalmente y −12 verticalmente. La distancia es √(9² + 12²) = √225 = 15 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q12": {
+      "inputHash": "870ae259a66aed9eb160e0a661071fce767c737a939f96d5420b70e446f47656",
+      "explanation": {
+        "text": {
+          "en": "The rule is y = 2x − 6. Substituting x = 5 gives y = 2(5) − 6 = 4, so 4 is one output value.",
+          "es": "La regla es y = 2x − 6. Al sustituir x = 5 se obtiene y = 2(5) − 6 = 4, así que 4 es uno de los valores de salida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q15": {
+      "inputHash": "a4d78cbba6f6d62698aca835caffae3f434639b7b453f6808978ae519f711093",
+      "explanation": {
+        "text": {
+          "en": "Choice B simplifies by the power rule: (2⁴)⁻¹ = 2⁻⁴ = 1/2⁴ = 1/16.",
+          "es": "La opción B se simplifica con la regla de potencias: (2⁴)⁻¹ = 2⁻⁴ = 1/2⁴ = 1/16."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q16": {
+      "inputHash": "29ff4517078b5624bc05b06b4b89a0dcbc2098a2240ae1f63f05ad7f5f5e86f3",
+      "explanation": {
+        "text": {
+          "en": "A cylinder's volume is πr²h. Substituting r = 4.8 and h = 8.1 gives π(4.8²)(8.1) ≈ 586.3 cubic feet.",
+          "es": "El volumen de un cilindro es πr²h. Al sustituir r = 4.8 y h = 8.1 se obtiene π(4.8²)(8.1) ≈ 586.3 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q19": {
+      "inputHash": "87142d8cfb678e932a04404d080e77fe79ca319800b7f226d7b6a219675740da",
+      "explanation": {
+        "text": {
+          "en": "Reflecting triangle ABC over the y-axis moves it to the left with the correct orientation. Translating that image 2 units up then aligns all vertices with A′B′C′, so this is the required sequence.",
+          "es": "Reflejar el triángulo ABC sobre el eje y lo mueve a la izquierda con la orientación correcta. Luego, trasladar esa imagen 2 unidades hacia arriba alinea todos los vértices con A′B′C′; por lo tanto, esa es la secuencia requerida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q20": {
+      "inputHash": "8d01357e9c9e7f0ccf1b4ade9b353c4867e1cb592c063578090ff0210dc268f7",
+      "explanation": {
+        "text": {
+          "en": "Using (9,0) and (0,−5), the slope is (0 − (−5))/(9 − 0) = 5/9, and the y-intercept is −5. The equation is y = (5/9)x − 5.",
+          "es": "Con (9,0) y (0,−5), la pendiente es (0 − (−5))/(9 − 0) = 5/9 y la intersección con y es −5. La ecuación es y = (5/9)x − 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q22": {
+      "inputHash": "4a5243415a1a850e957d1cf3198e706e44714e7508d76f4df5dbc274c3dd6771",
+      "explanation": {
+        "text": {
+          "en": "The other two angles must total 180° − 34° = 146°. Only 66° + 80° = 146°, so those measures form a triangle with the given angle.",
+          "es": "Los otros dos ángulos deben sumar 180° − 34° = 146°. Solo 66° + 80° = 146°, así que esas medidas forman un triángulo con el ángulo dado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q23": {
+      "inputHash": "5e946864c8536275caee1d748cd4c3948b33cb5cce4a4d7a78c26067b47ff0b8",
+      "explanation": {
+        "text": {
+          "en": "In h = 0.35f + 2, the slope 0.35 is the change in plant height for each additional gram of fertilizer. It represents average plant growth per gram used.",
+          "es": "En h = 0.35f + 2, la pendiente 0.35 es el cambio en la altura de la planta por cada gramo adicional de fertilizante. Representa el crecimiento medio de la planta por gramo usado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q24": {
+      "inputHash": "599706ce9dcca92ce5ede8e4542a4414301bf99b8554d8d7cf72591a6c8b40cf",
+      "explanation": {
+        "text": {
+          "en": "A reflection and a rotation are rigid transformations, so both preserve length. Therefore, segment EF must be congruent to segment CD.",
+          "es": "Una reflexión y una rotación son transformaciones rígidas, así que ambas conservan la longitud. Por lo tanto, el segmento EF debe ser congruente con CD."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q25": {
+      "inputHash": "eff7762a873c53619f443ac30f25cee9f45f795c4b2b9c52a0558e3cda8ce57c",
+      "explanation": {
+        "text": {
+          "en": "The marked angles are alternate interior angles, so 13x + 6 = 11x + 30. Solving gives 2x = 24 and x = 12.",
+          "es": "Los ángulos marcados son alternos internos, así que 13x + 6 = 11x + 30. Al resolver se obtiene 2x = 24 y x = 12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q26": {
+      "inputHash": "3430b7b91b110f381df0ccb5870f001682729cd335ec5a878cd442cdc996d7f8",
+      "explanation": {
+        "text": {
+          "en": "Function A is y = 2n + 3, so its rate is 2 and initial value is 3. Function B is y = 3x + 2, so B has the greater rate, 3, but the smaller initial value, 2.",
+          "es": "La función A es y = 2n + 3, así que su tasa es 2 y su valor inicial 3. La función B es y = 3x + 2, por lo que B tiene la mayor tasa, 3, pero el menor valor inicial, 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q29": {
+      "inputHash": "06e45f87c789a0b3a78c32bebf5281d1f2d7f65126bcf127396c6fdcf819a2b6",
+      "explanation": {
+        "text": {
+          "en": "The image is twice the size of the original and lies below the x-axis with matching x-coordinates. A dilation by factor 2 about the origin followed by reflection over the x-axis produces that result.",
+          "es": "La imagen tiene el doble del tamaño del original y está debajo del eje x con coordenadas x correspondientes. Por lo tanto, una dilatación de factor 2 con centro en el origen seguida de una reflexión sobre el eje x produce ese resultado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q33": {
+      "inputHash": "7b9fef39ab97ed0bdc988a20a09ff590b3b5b803622cb381166873e6e1342ec8",
+      "explanation": {
+        "text": {
+          "en": "The line crosses the y-axis at 1 and rises 1 unit for every 2 units to the right, so its slope is 1/2. Its equation is y = (1/2)x + 1.",
+          "es": "La recta cruza el eje y en 1 y sube 1 unidad por cada 2 hacia la derecha, así que su pendiente es 1/2. Su ecuación es y = (1/2)x + 1."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q34": {
+      "inputHash": "c50205eb3f52ed4bb5ac42ecbf502d3f696a751fd9aba771eb6f23c1183a215b",
+      "explanation": {
+        "text": {
+          "en": "Function A's table changes y by 4 when x changes by 2, so its slope is 2. The graph of Function B has a smaller rise per unit of run, so Function A has the greater rate of change.",
+          "es": "La tabla de la función A cambia y en 4 cuando x cambia en 2, así que su pendiente es 2. La gráfica de B sube menos por unidad horizontal, por lo tanto A tiene la mayor razón de cambio."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q35": {
+      "inputHash": "4d4446b2583033265633d48c6d33befd3b69805ddf0c1fedd76be457f3e323ef",
+      "explanation": {
+        "text": {
+          "en": "Since 50 is not a perfect square, √50 cannot be written as a ratio of integers. Its decimal is nonterminating and nonrepeating, so it is irrational.",
+          "es": "Como 50 no es un cuadrado perfecto, √50 no se puede escribir como razón de enteros. Su decimal no termina ni se repite, así que es irracional."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q36": {
+      "inputHash": "5ac919de96bd9be2cb279a3127ab1ebcf257bfcc929cdceff2d7fedc2cbd551c",
+      "explanation": {
+        "text": {
+          "en": "A graph of y as a function of x must pass the vertical-line test. Graph D is horizontal, so every x has exactly one y; the circles and vertical line fail the test.",
+          "es": "Una gráfica de y como función de x debe pasar la prueba de la recta vertical. La gráfica D es horizontal, así que cada x tiene exactamente un y; los círculos y la recta vertical fallan la prueba."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q37": {
+      "inputHash": "675eb86c1fc1b65be2c04cd5abbbb7bdb6f95bc71a190c6e9e8b449aaf6074a3",
+      "explanation": {
+        "text": {
+          "en": "The diameter is 22, so the radius is 11 centimeters. The volume is πr²h = π(11²)(56) = 6,776π cubic centimeters.",
+          "es": "El diámetro es 22, así que el radio es 11 centímetros. El volumen es πr²h = π(11²)(56) = 6,776π centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g8-mc-q38": {
+      "inputHash": "772c54a463c53a3bc0fb96cb1f246043af940cdc92340f0d04b24e44b9d1369d",
+      "explanation": {
+        "text": {
+          "en": "Reflection over the y-axis changes the sign of the x-coordinate and keeps the y-coordinate. Therefore, C(−4,3) maps to C′(4,3).",
+          "es": "Reflejar sobre el eje y cambia el signo de la coordenada x y conserva la coordenada y. Por lo tanto, C(−4,3) se transforma en C′(4,3)."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

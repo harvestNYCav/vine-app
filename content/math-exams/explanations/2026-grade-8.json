@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2026-grade-8-mc-v1",
+  "questions": {
+    "nysed-2026-g8-mc-q1": {
+      "inputHash": "c3bd2774b1690d28fb1b93b8b4d63c09bf56fc7cc9ed3d116b8d5d24809b6eba",
+      "explanation": {
+        "text": {
+          "en": "Vertex A is at (-2, 3). Translating 4 units left subtracts 4 from x, and translating 2 units up adds 2 to y, so A′ = (-2 - 4, 3 + 2) = (-6, 5), choice D.",
+          "es": "El vértice A está en (-2, 3). Trasladar 4 unidades a la izquierda resta 4 a x, y subir 2 unidades suma 2 a y, así que A′ = (-2 - 4, 3 + 2) = (-6, 5), la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q2": {
+      "inputHash": "82b52d752ede3674be9ac26dcdd287ef68348f30ae254d6401ca250a53a2ae43",
+      "explanation": {
+        "text": {
+          "en": "Store A's unit rate is the coefficient 1.50, or $1.50 per pound. Store B's graph contains (4, 9), so its rate is 9 ÷ 4 = $2.25 per pound, which is $0.75 more; therefore choice B is true.",
+          "es": "La tasa unitaria de la Tienda A es el coeficiente 1.50, o $1.50 por libra. La gráfica de la Tienda B contiene (4, 9), así que su tasa es 9 ÷ 4 = $2.25 por libra, $0.75 más; por eso es verdadera la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q3": {
+      "inputHash": "f97497a42c8f229c3937b04c5b0a1bc3292d8153a143ae788b55003b4c115c99",
+      "explanation": {
+        "text": {
+          "en": "When powers with the same base are divided, subtract the exponents. Thus 12²⁰ ÷ 12⁴ = 12^(20 - 4) = 12¹⁶, which is choice D.",
+          "es": "Al dividir potencias con la misma base, se restan los exponentes. Por lo tanto, 12²⁰ ÷ 12⁴ = 12^(20 - 4) = 12¹⁶, que es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q4": {
+      "inputHash": "f65e86dc2c3a16d2a1a89209a0f1ded49cd9f0d02e69bfcc26f0a5dbe813356b",
+      "explanation": {
+        "text": {
+          "en": "In y = -2x + 29, the slope -2 means ticket sales decrease by about 2 each day. Substituting x = 12 gives y = -2(12) + 29 = 5 tickets, so choice D is the valid prediction.",
+          "es": "En y = -2x + 29, la pendiente -2 significa que las ventas disminuyen aproximadamente 2 entradas por día. Al sustituir x = 12, y = -2(12) + 29 = 5 entradas, así que la opción D es la predicción válida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q5": {
+      "inputHash": "6a720cca41bd47bccd8d1b85e1dbed7caf46f68c0eb8acff1ba6611d37153668",
+      "explanation": {
+        "text": {
+          "en": "Zero and 1/3 are ratios of integers, and √9 = 3, so all three are rational. The decimal expansion of π does not terminate or repeat, so π is irrational, choice B.",
+          "es": "Cero y 1/3 son razones de enteros, y √9 = 3, así que los tres son racionales. La expansión decimal de π no termina ni se repite, por lo que π es irracional, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q6": {
+      "inputHash": "4b7555923525aec259b07dfb282a1edbede5517cfc8ba0a9aa19bd75a51218c5",
+      "explanation": {
+        "text": {
+          "en": "The diameter is 7 cm, so the radius is 3.5 cm. The cylinder's volume is V = πr²h = π(3.5)²(10) = 122.5π ≈ 384.85, which rounds to 385 cubic centimeters, choice C.",
+          "es": "El diámetro es 7 cm, así que el radio es 3.5 cm. El volumen del cilindro es V = πr²h = π(3.5)²(10) = 122.5π ≈ 384.85, que se redondea a 385 centímetros cúbicos, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q7": {
+      "inputHash": "c8a08e40b72e02ca479e0f39173bb6bf00ea1f57452f6bef33938d53f1bd3f6e",
+      "explanation": {
+        "text": {
+          "en": "For a right triangle, the squares of the two shorter sides must add to the square of the longest side. Here 9² + 12² = 81 + 144 = 225 = 15², so choice D proves the triangle is right.",
+          "es": "En un triángulo rectángulo, los cuadrados de los dos lados menores deben sumar el cuadrado del lado mayor. Aquí 9² + 12² = 81 + 144 = 225 = 15², así que la opción D lo demuestra."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q8": {
+      "inputHash": "d59eaeae94559eb7351c549a0dae712eb109d3ec10c4eb530d8a0fd88ac0ec5b",
+      "explanation": {
+        "text": {
+          "en": "The line crosses the y-axis at -3 and rises 3 units while running 6 units right, giving slope 3/6 = 1/2. Its equation is y = (1/2)x - 3, choice A.",
+          "es": "La recta cruza el eje y en -3 y sube 3 unidades al avanzar 6 unidades a la derecha, de modo que la pendiente es 3/6 = 1/2. Su ecuación es y = (1/2)x - 3, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q10": {
+      "inputHash": "a3c97e318305ea382c460b24872b15f88e62ba078ef581d1782de7a3ebce8fd8",
+      "explanation": {
+        "text": {
+          "en": "A 90° counterclockwise rotation sends (x, y) to (-y, x); for example, J(2, 8) becomes (-8, 2). Dilating by 1/2 then sends it to (-4, 1) = P and maps the other vertices likewise, so choice D shows similarity without congruence.",
+          "es": "Una rotación de 90° en sentido antihorario lleva (x, y) a (-y, x); por ejemplo, J(2, 8) pasa a (-8, 2). Una dilatación de 1/2 lo lleva después a (-4, 1) = P y transforma igual los demás vértices, así que la opción D demuestra semejanza sin congruencia."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q11": {
+      "inputHash": "9969333f22403ee3628dfac2939d80f75d035975cd9f8590d68cceee02206216",
+      "explanation": {
+        "text": {
+          "en": "A relation is a function only if every x-value has exactly one y-value. In graph D, a vertical line at a positive x crosses both rays, giving two outputs for the same input, so D is not a function.",
+          "es": "Una relación es función solo si cada valor de x tiene exactamente un valor de y. En la gráfica D, una recta vertical en un x positivo cruza ambos rayos y da dos salidas para la misma entrada, así que D no es una función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q12": {
+      "inputHash": "f5128c837c6b0a05bf779f266cfc22f8b96936865fc3561953cda241731b0337",
+      "explanation": {
+        "text": {
+          "en": "In choice B, distributing on the right gives 2(x - 1) = 2x - 2. Both sides are therefore the identical expression 2x - 2, so every value of x is a solution and there are infinitely many solutions.",
+          "es": "En la opción B, al distribuir en el lado derecho se obtiene 2(x - 1) = 2x - 2. Ambos lados son la misma expresión 2x - 2, así que todo valor de x es solución y hay infinitas soluciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q13": {
+      "inputHash": "233515de412c6eb919c02c87eedfbbb37eefd8c128d4d03f3cfb1eb7b4ca2ecb",
+      "explanation": {
+        "text": {
+          "en": "The sum of any two triangle sides must be greater than the third. Only 5, 7, and 10 satisfy this test because 5 + 7 = 12 > 10, while the two shorter sides in each other choice do not exceed the longest; therefore choice C works.",
+          "es": "La suma de dos lados cualesquiera de un triángulo debe ser mayor que el tercero. Solo 5, 7 y 10 cumplen porque 5 + 7 = 12 > 10, mientras que los dos lados menores de las otras opciones no superan al mayor; por eso funciona la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q14": {
+      "inputHash": "1af44f9614ed5c93aa1be2c7f8353720162a8aa16d5efa8f771449c05b9f50a8",
+      "explanation": {
+        "text": {
+          "en": "A linear function has its variable only to the first power and can be written y = mx + b. Choice A, y = 2x, has constant slope 2, while the other equations contain x² or x³ and are nonlinear.",
+          "es": "Una función lineal tiene la variable solo a la primera potencia y puede escribirse como y = mx + b. La opción A, y = 2x, tiene pendiente constante 2, mientras que las demás contienen x² o x³ y no son lineales."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q15": {
+      "inputHash": "3977fc90321164cd5d0ce288aeb1cc2f89a4a184138cf8adce4b32b67db763a9",
+      "explanation": {
+        "text": {
+          "en": "Multiplying powers with base 5 adds exponents, so 5² · 5⁴ = 5⁶. Also 7⁻² = 1/7², making the product 5⁶/7², which is choice A.",
+          "es": "Al multiplicar potencias de base 5 se suman los exponentes, así que 5² · 5⁴ = 5⁶. Además, 7⁻² = 1/7², por lo que el producto es 5⁶/7², la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q17": {
+      "inputHash": "23d6861a011da76532741f44a156a40deaceb92ab204e7a1d9b2398f10757a3d",
+      "explanation": {
+        "text": {
+          "en": "The third angle is F = 180° - 76° - 65° = 39°. The corresponding sides show a scale factor of 1/2 from ABC to EFG, so FG = 201 ÷ 2 = 100.5 cm; both results appear in choice D.",
+          "es": "El tercer ángulo es F = 180° - 76° - 65° = 39°. Los lados correspondientes muestran un factor de escala de 1/2 de ABC a EFG, así que FG = 201 ÷ 2 = 100.5 cm; ambos resultados aparecen en la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q18": {
+      "inputHash": "353f835087a5ab202805b7337afc3189e4c6ef3736db78253afba40a00a6351e",
+      "explanation": {
+        "text": {
+          "en": "From x = -6 through x = 2 the graph is horizontal, so the function is constant there. To the right of x = 2 the graph rises as x increases, so the function is increasing when x > 2, choice C.",
+          "es": "Desde x = -6 hasta x = 2 la gráfica es horizontal, así que la función es constante allí. A la derecha de x = 2, la gráfica sube cuando x aumenta, por lo que la función es creciente cuando x > 2, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q19": {
+      "inputHash": "1908fc989af927bd96f43568d58a1adb9b1008440e809e1763a4f7a02f535e3e",
+      "explanation": {
+        "text": {
+          "en": "In y = 3x + 30, the coefficient 3 is the amount added for each cup, so the profit is $3 per cup. The y-intercept 30 is the amount raised when no cups are sold, so it represents the $30 donation; this is choice C.",
+          "es": "En y = 3x + 30, el coeficiente 3 es la cantidad sumada por cada taza, así que la ganancia es $3 por taza. La intersección 30 es lo recaudado sin vender tazas, por lo que representa la donación de $30; esta es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q20": {
+      "inputHash": "528d09fa5492cc1b223d4b7c9e3281a7b68bbddc9b24e1d43ae0a2c9796f309d",
+      "explanation": {
+        "text": {
+          "en": "The slope through (0, 9) and (3, 0) is (0 - 9)/(3 - 0) = -3. Because (0, 9) gives a y-intercept of 9, the equation is y = -3x + 9, choice B.",
+          "es": "La pendiente entre (0, 9) y (3, 0) es (0 - 9)/(3 - 0) = -3. Como (0, 9) da una intersección con y de 9, la ecuación es y = -3x + 9, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q21": {
+      "inputHash": "610e4224a8c49a30d253c1550757689482ee5d0bacfbf318239380ba3448b483",
+      "explanation": {
+        "text": {
+          "en": "Distribute and solve: 3x - 2 = 7x + 35, so -37 = 4x. Dividing by 4 gives x = -37/4, which is choice A.",
+          "es": "Se distribuye y se resuelve: 3x - 2 = 7x + 35, de modo que -37 = 4x. Al dividir entre 4 se obtiene x = -37/4, que es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q22": {
+      "inputHash": "f9baf94e9be5c889aa50c67599987690bd1afe8cd0be4b486644609ce7127910",
+      "explanation": {
+        "text": {
+          "en": "Reflecting over the y-axis sends A(-3, 5) to (3, 5). Translating that image 1 unit right and 5 units down gives (4, 0), which is D, and the same sequence maps B and C to E and F; therefore choice D is correct.",
+          "es": "Reflejar sobre el eje y lleva A(-3, 5) a (3, 5). Trasladar esa imagen 1 unidad a la derecha y 5 hacia abajo da (4, 0), que es D, y la misma secuencia lleva B y C a E y F; por eso corresponde la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q23": {
+      "inputHash": "d2ccfdff5a3950811d33e1d173b19de4b75e28ca8b05b28786aa2dee37584b9c",
+      "explanation": {
+        "text": {
+          "en": "The angles labeled (4x - 15)° and 115° are vertical angles, so they are equal. Solving 4x - 15 = 115 gives 4x = 130 and x = 32.5, choice C.",
+          "es": "Los ángulos marcados (4x - 15)° y 115° son ángulos opuestos por el vértice, así que son iguales. Al resolver 4x - 15 = 115 se obtiene 4x = 130 y x = 32.5, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q25": {
+      "inputHash": "99909460c11c31f2747218819b074c4ed4c879242011680472c72626966e41de",
+      "explanation": {
+        "text": {
+          "en": "The clockwise rotation sends A(-2, 3) to X(3, 2), B(-5, 1) to Y(1, 5), and C(-2, 1) to Z(1, 2). Rotations preserve angle measure, so corresponding angles B and Y are congruent, choice B.",
+          "es": "La rotación en sentido horario lleva A(-2, 3) a X(3, 2), B(-5, 1) a Y(1, 5) y C(-2, 1) a Z(1, 2). Las rotaciones conservan los ángulos, así que B e Y son congruentes, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q26": {
+      "inputHash": "e1e222621de30bce52f37c1450419dba5ed596acc0c60c1af23aeae633b27168",
+      "explanation": {
+        "text": {
+          "en": "The line crosses the y-axis at 4. Using the intercepts (0, 4) and (6, 0), its slope is (0 - 4)/(6 - 0) = -4/6 = -2/3, so choice C gives both the correct rate of change and y-intercept.",
+          "es": "La recta cruza el eje y en 4. Con las intersecciones (0, 4) y (6, 0), su pendiente es (0 - 4)/(6 - 0) = -4/6 = -2/3, así que la opción C da la tasa de cambio y la intersección correctas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q27": {
+      "inputHash": "65935766bc218c3b51f3f7a9e88d1339000be815c5ab478b72491bd7a07c5357",
+      "explanation": {
+        "text": {
+          "en": "The hourly charge is the variable rate: Company A charges $49 per hour, while the coefficient of h shows Company B charges $99 per hour. Since $99 - $49 = $50, Company B charges $50 more per hour, choice B.",
+          "es": "El cargo por hora es la tasa variable: la Empresa A cobra $49 por hora, mientras que el coeficiente de h muestra que la Empresa B cobra $99. Como $99 - $49 = $50, la Empresa B cobra $50 más por hora, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q29": {
+      "inputHash": "49153b2d5e912f57784824546addc389c4f5eaef92a265ea9bd936a07aac0be0",
+      "explanation": {
+        "text": {
+          "en": "A translation preserves lengths, so A′B′ has the same length as AB. Points A(-4, 3) and B(-4, -3) differ vertically by |3 - (-3)| = 6 units, making choice B correct.",
+          "es": "Una traslación conserva las longitudes, así que A′B′ mide lo mismo que AB. Los puntos A(-4, 3) y B(-4, -3) difieren verticalmente por |3 - (-3)| = 6 unidades, por lo que corresponde la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q30": {
+      "inputHash": "c549a4683060195a722d44dc5862e64a0f9d2bdacab6154718a2d40ba3b32d1a",
+      "explanation": {
+        "text": {
+          "en": "A function cannot assign two different outputs to the same input. Inputs 1, 2, and 3 are already paired with outputs other than 6, so k must be the unused input 4; therefore choice D makes the relation a function.",
+          "es": "Una función no puede asignar dos salidas distintas a la misma entrada. Las entradas 1, 2 y 3 ya están emparejadas con salidas diferentes de 6, así que k debe ser la entrada nueva 4; por eso la opción D forma una función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q31": {
+      "inputHash": "a8e773f1160a5a9ad2e845a55b112768ca67d87074e00823935cb01b084c30d1",
+      "explanation": {
+        "text": {
+          "en": "Angle 3 and its adjacent acute angle form a linear pair, so that acute angle is 180° - 128° = 52°. Parallel lines make the corresponding angle at line a also 52°, and the three angles below line a sum to 180°: 52° + angle 2 + 79° = 180°, so angle 2 = 49°, choice A.",
+          "es": "El ángulo 3 y su ángulo agudo adyacente forman un par lineal, así que ese ángulo mide 180° - 128° = 52°. Por las paralelas, el ángulo correspondiente en a también mide 52°, y 52° + ángulo 2 + 79° = 180°; entonces el ángulo 2 mide 49°, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q32": {
+      "inputHash": "a155296976e040910c8accf8e1a8f613065d0b3b8b81afc3292055b0a589d366",
+      "explanation": {
+        "text": {
+          "en": "Distributing gives 7 + 2x = 5x - 10 + 2, or 7 + 2x = 5x - 8. Adding 8 and subtracting 2x yields 15 = 3x, so x = 5, choice B.",
+          "es": "Al distribuir se obtiene 7 + 2x = 5x - 10 + 2, o 7 + 2x = 5x - 8. Al sumar 8 y restar 2x queda 15 = 3x, así que x = 5, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q33": {
+      "inputHash": "afa8eb5ef2895aa3bf92d51c736157e0c454e5d3a259935632a9786ae3c0bdf7",
+      "explanation": {
+        "text": {
+          "en": "Solving x³ = 8 means taking the cube root of both sides. Since ∛8 = 2 and 2³ = 8, x = 2, which is choice A.",
+          "es": "Resolver x³ = 8 significa sacar la raíz cúbica de ambos lados. Como ∛8 = 2 y 2³ = 8, x = 2, que es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q34": {
+      "inputHash": "f435230a306c04f1092473e1e9eed57d84ea0d1a73062baae3102af3b42135e7",
+      "explanation": {
+        "text": {
+          "en": "A positive linear association appears when the points generally rise from left to right around a straight-line trend. Plot B qualifies because it has that upward pattern, whereas A trends downward, C is curved, and D has no clear linear trend.",
+          "es": "Una asociación lineal positiva aparece cuando los puntos, en general, suben de izquierda a derecha alrededor de una tendencia recta. La gráfica B cumple porque tiene ese patrón ascendente; A desciende, C es curva y D no muestra una tendencia lineal clara."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q35": {
+      "inputHash": "1be5a7767961ff68772fded44d761dea09f81ad0ca62c052cb4a6f2270c0071e",
+      "explanation": {
+        "text": {
+          "en": "The 12-mile and 16-mile routes form the perpendicular legs of a right triangle. By the Pythagorean theorem, the direct distance is √(12² + 16²) = √400 = 20 miles, choice B.",
+          "es": "Los recorridos de 12 y 16 millas forman los catetos perpendiculares de un triángulo rectángulo. Por el teorema de Pitágoras, la distancia directa es √(12² + 16²) = √400 = 20 millas, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q36": {
+      "inputHash": "e341ef3e244f2b36db161831be16f7d11f387e9ca63d308769369439fbdeda4d",
+      "explanation": {
+        "text": {
+          "en": "Expanding both sides gives 8x + 10 = 10x + 5 - 2x = 8x + 5. Subtracting 8x leaves the false statement 10 = 5, so no value of x works and choice A is true.",
+          "es": "Al desarrollar ambos lados se obtiene 8x + 10 = 10x + 5 - 2x = 8x + 5. Al restar 8x queda la afirmación falsa 10 = 5, así que ningún valor de x funciona y la opción A es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q37": {
+      "inputHash": "bb3d523e99e427f2067aa69cc4d820bdac6b16583f0bd8258ea33617c7d008fe",
+      "explanation": {
+        "text": {
+          "en": "A linear table has a constant rate of change. In table D, x increases by 2 while y always increases by 4, so the slope is consistently 4/2 = 2; the other tables do not have constant first differences.",
+          "es": "Una tabla lineal tiene una tasa de cambio constante. En la tabla D, x aumenta 2 mientras y siempre aumenta 4, así que la pendiente es siempre 4/2 = 2; las otras tablas no tienen primeras diferencias constantes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g8-mc-q38": {
+      "inputHash": "89a78515ff0724bb62157b0dec51d279ae1ce2cf5c66e65797113bf4cbb931ea",
+      "explanation": {
+        "text": {
+          "en": "Because 3² = 9 and 4² = 16, √10 lies just above 3; numerically, √10 ≈ 3.16. Point C is plotted just to the right of 3 at about 3.2, so it is the best approximation, choice C.",
+          "es": "Como 3² = 9 y 4² = 16, √10 está apenas por encima de 3; numéricamente, √10 ≈ 3.16. El punto C está justo a la derecha de 3, cerca de 3.2, así que es la mejor aproximación, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

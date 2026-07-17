@@ -9,6 +9,7 @@ export type MathExamQuestionType =
 
 export type MathExamChoice = 'A' | 'B' | 'C' | 'D'
 export type MathExamQuestionNumberKind = 'official' | 'release-ordinal'
+export type MathExplanationSource = 'official-nysed' | 'vine-authored'
 
 export interface LocalizedText {
   en: string
@@ -29,6 +30,7 @@ export interface MathExamQuestionImage {
 
 interface BaseGrading {
   explanation: LocalizedText
+  explanationSource: MathExplanationSource
 }
 
 export interface ChoiceGrading extends BaseGrading {

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2018-grade-5-mc-v1",
+  "questions": {
+    "nysed-2018-g5-mc-q1": {
+      "inputHash": "6e92e2eb66162e5384cbd3100fe5c2d667a72b707e29a7aa0d09c74e77d35f63",
+      "explanation": {
+        "text": {
+          "en": "Divide the 1,104 photos equally among 48 boards: 1,104 ÷ 48 = 23. This checks because 48 × 23 = 1,104.",
+          "es": "Se dividen las 1,104 fotos por igual entre 48 carteles: 1,104 ÷ 48 = 23. Se comprueba porque 48 × 23 = 1,104."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q2": {
+      "inputHash": "699fc53b2008ed50af32ec7f1859e574fd14d47a9e555a30365401d8410a6d16",
+      "explanation": {
+        "text": {
+          "en": "The first model has 42/100 shaded, and the second has 3/10 = 30/100 shaded. Their sum is 42/100 + 30/100 = 72/100.",
+          "es": "El primer modelo tiene sombreados 42/100 y el segundo tiene 3/10 = 30/100. La suma es 42/100 + 30/100 = 72/100."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q3": {
+      "inputHash": "7146a7d9e02ea4dd430e08a8bd93a29409352d9b2c3b0915ccc8b75ceecaaa13",
+      "explanation": {
+        "text": {
+          "en": "Figure B is 12 cubes long, 2 cubes wide, and 1 cube high. Its volume is 12 × 2 × 1 = 24 cubic centimeters.",
+          "es": "La figura B mide 12 cubos de largo, 2 de ancho y 1 de alto. Su volumen es 12 × 2 × 1 = 24 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q10": {
+      "inputHash": "2121648066594b097472aaaae3849d8959f63f5f0767f9388dd27b18c2f283b8",
+      "explanation": {
+        "text": {
+          "en": "Convert the known parts to fifteenths: 1/3 = 5/15 and 2/5 = 6/15. They total 11/15, leaving 1 − 11/15 = 4/15 of the books as fiction.",
+          "es": "Se convierten las partes conocidas a quinceavos: 1/3 = 5/15 y 2/5 = 6/15. En total son 11/15, por lo que queda 1 − 11/15 = 4/15 de libros de ficción."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q11": {
+      "inputHash": "b55f1788a397e77b3e8c08e2da345be335b1057f3595bc729072f62302242c96",
+      "explanation": {
+        "text": {
+          "en": "The braces divide the shading into 3 equal groups, and each group contains 2 of the fifth-size parts. The model therefore represents 3 × 2/5.",
+          "es": "Las llaves dividen el sombreado en 3 grupos iguales y cada grupo contiene 2 partes de tamaño un quinto. Por lo tanto, el modelo representa 3 × 2/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q13": {
+      "inputHash": "752207cd7d2be23eb5eccada8fbc9c4f01d05ccc6b60aa571e7bda11cd1899c9",
+      "explanation": {
+        "text": {
+          "en": "A rhombus is defined as a quadrilateral with four congruent sides. The other listed shapes do not always have all four sides congruent, so a rhombus is the required shape.",
+          "es": "Un rombo se define como un cuadrilátero con cuatro lados congruentes. Las otras figuras indicadas no siempre tienen los cuatro lados congruentes; por lo tanto, la respuesta es rombo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q14": {
+      "inputHash": "9507af797aff63b47f3243623d88852f05e90edd51880b9a0e1a98792e99e982",
+      "explanation": {
+        "text": {
+          "en": "The factor 1/6 is positive but less than 1. Multiplying 67 by a number less than 1 gives a product less than 67.",
+          "es": "El factor 1/6 es positivo pero menor que 1. Multiplicar 67 por un número menor que 1 da un producto menor que 67."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q17": {
+      "inputHash": "bb40f6e276f584316ec6e14b2e4cbf8a7e9c14680c95e5300bdbc6688dda2b76",
+      "explanation": {
+        "text": {
+          "en": "The box holds 8 × 3 × 5 = 120 unit cubes when full. The pictured bottom layer already has 8 × 3 = 24 cubes, so 120 − 24 = 96 more are needed.",
+          "es": "La caja llena contiene 8 × 3 × 5 = 120 cubos unitarios. La capa inferior mostrada ya tiene 8 × 3 = 24 cubos, así que se necesitan 120 − 24 = 96 más."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q18": {
+      "inputHash": "a105948e05d897bf65fa6fbc89d0a54cbc87e4705812ca0eac4189928816880c",
+      "explanation": {
+        "text": {
+          "en": "Expression A equals 40 + 2 + 0.5 + 0.09 + 0.003 = 42.593. Since 42.593 > 42.537, it is the expression with the greater value.",
+          "es": "La expresión A equivale a 40 + 2 + 0.5 + 0.09 + 0.003 = 42.593. Como 42.593 > 42.537, es la expresión con el valor mayor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q24": {
+      "inputHash": "39909a1603e3b010dcb704d657ea7dae0f4f005ea5372a8e10eed6d2d1871359",
+      "explanation": {
+        "text": {
+          "en": "One pound equals 16 ounces. Multiplying 2,050 × 16 gives 32,800 ounces.",
+          "es": "Una libra equivale a 16 onzas. Al multiplicar 2,050 × 16 se obtienen 32,800 onzas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q25": {
+      "inputHash": "fd3807ec4d2d9bb810deed4767e9a3d8554e5cd4254945692c626d96b1292936",
+      "explanation": {
+        "text": {
+          "en": "The product of 15 and 12 is 15 × 12. Eight more than that product means add 8, giving 15 × 12 + 8.",
+          "es": "El producto de 15 y 12 es 15 × 12. Ocho más que ese producto significa sumar 8, lo que da 15 × 12 + 8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q28": {
+      "inputHash": "fa6e24e2c82494c9fe4639535d7ae0c7ff799b02a85c3ff0a4903786d66df8e9",
+      "explanation": {
+        "text": {
+          "en": "Each layer has volume 18 cubic centimeters, and there are 5 layers. Multiplying gives 18 × 5 = 90 cubic centimeters.",
+          "es": "Cada capa tiene un volumen de 18 centímetros cúbicos y hay 5 capas. Al multiplicar se obtiene 18 × 5 = 90 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q29": {
+      "inputHash": "15f6ae6aa5be307f6e98c3cf62680b419ddb02de8c89f9f3e51589304c53b23d",
+      "explanation": {
+        "text": {
+          "en": "The expression 1/4 ÷ 3 means one-fourth is divided into 3 equal shares. This matches sharing 1/4 of a package of pencils equally among three friends.",
+          "es": "La expresión 1/4 ÷ 3 significa que un cuarto se divide en 3 partes iguales. Esto representa repartir 1/4 de un paquete de lápices por igual entre tres amigos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q30": {
+      "inputHash": "9fe5790ddee3d3f148035d6b437ac162fa0f2ec929d65797ea97701ad5e7500d",
+      "explanation": {
+        "text": {
+          "en": "A prism built from 18 unit cubes must have dimensions whose product is 18. The dimensions 2 × 3 × 3 give exactly 18 cubic centimeters.",
+          "es": "Un prisma construido con 18 cubos unitarios debe tener dimensiones cuyo producto sea 18. Las dimensiones 2 × 3 × 3 dan exactamente 18 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q31": {
+      "inputHash": "f013464dc86d9ffc8bba90aeeaac9600e093a065ab2f1a46d5c50b527ea125f9",
+      "explanation": {
+        "text": {
+          "en": "The number of 1/3-cup servings in 4 cups is 4 ÷ 1/3. Multiplying by the reciprocal gives 4 × 3 = 12 servings.",
+          "es": "El número de porciones de 1/3 de taza en 4 tazas es 4 ÷ 1/3. Al multiplicar por el recíproco se obtiene 4 × 3 = 12 porciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q32": {
+      "inputHash": "aa1ff7344ad72b8c7a2a695f6e5d8a062f3222826e765d3c8cf363f8757d54cf",
+      "explanation": {
+        "text": {
+          "en": "Use fifteenths: 9 2/3 = 9 10/15 and 4 1/5 = 4 3/15. Subtracting gives 9 10/15 − 4 3/15 = 5 7/15.",
+          "es": "Se usan quinceavos: 9 2/3 = 9 10/15 y 4 1/5 = 4 3/15. Al restar se obtiene 9 10/15 − 4 3/15 = 5 7/15."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q33": {
+      "inputHash": "5b53d355f2868aa5ac8a31fe41e48f33c0e986ecac3db424144970b99f6d9f2c",
+      "explanation": {
+        "text": {
+          "en": "A denominator of 100 represents hundredths. Therefore, 73/100 is seventy-three hundredths, written as 0.73.",
+          "es": "Un denominador de 100 representa centésimos. Por lo tanto, 73/100 son setenta y tres centésimos, que se escriben como 0.73."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q34": {
+      "inputHash": "9a1fb587e915331d781ae0624a65ef521d784209d3e36ca4c558832e1fd7fe7c",
+      "explanation": {
+        "text": {
+          "en": "There are 5 circles, and each circle has 5 of 8 equal sectors shaded. The repeated equal groups are represented by 5 × 5/8.",
+          "es": "Hay 5 círculos y cada círculo tiene sombreados 5 de 8 sectores iguales. Los grupos iguales repetidos se representan con 5 × 5/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q35": {
+      "inputHash": "c170a86572a260bcf062b24231f5b98ae0f1a9513914f8b21923f4647e2c2663",
+      "explanation": {
+        "text": {
+          "en": "The two 3-foot-high boxes each have volume 16 × 3 = 48 cubic feet, and the 5-foot-high box has volume 16 × 5 = 80. The total is 48 + 48 + 80 = 176 cubic feet.",
+          "es": "Cada una de las dos cajas de 3 pies de alto tiene un volumen de 16 × 3 = 48 pies cúbicos, y la caja de 5 pies tiene 16 × 5 = 80. El total es 48 + 48 + 80 = 176 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q36": {
+      "inputHash": "5623a65b034c0215443a8818efecd3ff6156b8ed6d757c9cbcd988b5b41c37a5",
+      "explanation": {
+        "text": {
+          "en": "Eight cups equal 8 × 8 = 64 ounces. Lin already drank 37 ounces, so she needs 64 − 37 = 27 more ounces.",
+          "es": "Ocho tazas equivalen a 8 × 8 = 64 onzas. Lin ya bebió 37 onzas, así que necesita 64 − 37 = 27 onzas más."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q37": {
+      "inputHash": "5f7f2ae46077ea3a975d23e6dc2ddb3719e85c34bb11208c6e8001ec242f220b",
+      "explanation": {
+        "text": {
+          "en": "A regular pentagon has five angles of 108°, so all of its angles are obtuse. A triangle or quadrilateral cannot have every angle greater than 90° because its angle sum is too small.",
+          "es": "Un pentágono regular tiene cinco ángulos de 108°, así que todos son obtusos. Un triángulo o cuadrilátero no puede tener todos sus ángulos mayores que 90° porque la suma de sus ángulos es demasiado pequeña."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g5-mc-q38": {
+      "inputHash": "5ee6fb608310e6fc80891162d2d76e83cce3f9d53235433c4a5e2fedcda3064c",
+      "explanation": {
+        "text": {
+          "en": "The shown first column contains 10 cubes. Each other column has 10 − 4 = 6 cubes, so the total volume is 10 + 6 + 6 = 22 cubic units.",
+          "es": "La primera columna mostrada contiene 10 cubos. Cada otra columna tiene 10 − 4 = 6 cubos, así que el volumen total es 10 + 6 + 6 = 22 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

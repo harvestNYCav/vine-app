@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2015-grade-6-mc-v1",
+  "questions": {
+    "nysed-2015-g6-mc-q1": {
+      "inputHash": "8db184ee866e9d7418c02a406a5e1bde6b06f4bb0940f4a56a7c714d24f3dbc6",
+      "explanation": {
+        "text": {
+          "en": "Each small grid interval represents 1/2 unit. Point P is three half-unit intervals left of the y-axis, so its x-coordinate is −3/2 = −1 1/2.",
+          "es": "Cada intervalo pequeño de la cuadrícula representa 1/2 unidad. El punto P está tres medios a la izquierda del eje y, así que su coordenada x es −3/2 = −1 1/2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q2": {
+      "inputHash": "a7142a392a8db8b85875c3478a154348828227ff57866f049cd8a675a2999275",
+      "explanation": {
+        "text": {
+          "en": "The entire workout lasted 10 + 25 + 15 = 50 minutes. The lifting-to-total ratio is 25:50, which simplifies to 1:2.",
+          "es": "El entrenamiento completo duró 10 + 25 + 15 = 50 minutos. La razón entre levantamiento de pesas y tiempo total es 25:50, que se simplifica a 1:2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q3": {
+      "inputHash": "d95129a90aada7796a37f463a77541d1753c859e068a6ed73ae1936a4f73206f",
+      "explanation": {
+        "text": {
+          "en": "A rectangular prism needs four rectangular side faces in a strip and two congruent rectangular bases. Net A works because its six faces fold along the dashed lines to enclose the prism without overlapping.",
+          "es": "Un prisma rectangular necesita cuatro caras laterales rectangulares en una tira y dos bases rectangulares congruentes. La red A funciona porque sus seis caras se pliegan por las líneas punteadas y cierran el prisma sin superponerse."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q4": {
+      "inputHash": "a24034a6c4c1805b1b3cefa79af97708c59f259cb6d00d60876f9ad2c6dbaca2",
+      "explanation": {
+        "text": {
+          "en": "Wyatt's rate is 6 ÷ 2 = 3 miles per hour. At that rate, in 9 hours he hikes 3 × 9 = 27 miles.",
+          "es": "La rapidez de Wyatt es 6 ÷ 2 = 3 millas por hora. A esa rapidez, en 9 horas recorre 3 × 9 = 27 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q5": {
+      "inputHash": "5c3312c370903110c011afec5021c59c582eecece00ce3fbfbf572ecee774b20",
+      "explanation": {
+        "text": {
+          "en": "Divide the 2 cups of cranberry juice equally among 3 gallons of punch. The unit rate is 2 ÷ 3 = 2/3 cup per gallon.",
+          "es": "Se dividen las 2 tazas de jugo de arándano en partes iguales entre 3 galones de ponche. La razón unitaria es 2 ÷ 3 = 2/3 de taza por galón."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q6": {
+      "inputHash": "49e9de079df3db6a1157f28cce01fb2eb440fc7630bc93a022b94248fca228a4",
+      "explanation": {
+        "text": {
+          "en": "Convert 2 3/4 cups to 44/16 cup, then divide by 3/16: 44/16 ÷ 3/16 = 44/3 = 14 2/3. Therefore, Omar can make 14 whole dumplings.",
+          "es": "Se convierten 2 3/4 tazas en 44/16 de taza y se divide entre 3/16: 44/16 ÷ 3/16 = 44/3 = 14 2/3. Por lo tanto, Omar puede hacer 14 empanadillas completas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q7": {
+      "inputHash": "75ac19395fccf4f416a695a7e25f77a5329f56d9521f4e278c5fc76e81e60cc5",
+      "explanation": {
+        "text": {
+          "en": "Subtract 8.63 from both sides of x + 8.63 = 11.001. This gives x = 11.001 − 8.630 = 2.371.",
+          "es": "Se resta 8.63 de ambos lados de x + 8.63 = 11.001. Así se obtiene x = 11.001 − 8.630 = 2.371."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q8": {
+      "inputHash": "e619e4cbca5618f07efc5b097ed411e702786048688e089bb89c4453a06a82ba",
+      "explanation": {
+        "text": {
+          "en": "Thirty seconds is one-half of a minute, so the elevator travels twice 480 feet in one minute. The required expression is 480 × 2, which equals 960 feet per minute.",
+          "es": "Treinta segundos es medio minuto, así que el ascensor recorre dos veces 480 pies en un minuto. La expresión necesaria es 480 × 2, que equivale a 960 pies por minuto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q9": {
+      "inputHash": "51438fc218617d6f9ab06c456932ace08f36873dcaad95bc5db9b637a81c714d",
+      "explanation": {
+        "text": {
+          "en": "A parallelogram's area is base times perpendicular height. The base is 5 1/4 inches and the dashed height is 4 1/5 inches, so the expression is 5 1/4 × 4 1/5.",
+          "es": "El área de un paralelogramo es base por altura perpendicular. La base mide 5 1/4 pulgadas y la altura punteada mide 4 1/5 pulgadas, así que la expresión es 5 1/4 × 4 1/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q10": {
+      "inputHash": "923e631d7bb7be60a2ad9edde42a03b3367bb0f0e14bc8b96c23d49340f634d9",
+      "explanation": {
+        "text": {
+          "en": "Divide by a fraction by multiplying by its reciprocal: 5/6 ÷ 3/7 = 5/6 × 7/3 = 35/18.",
+          "es": "Para dividir entre una fracción, se multiplica por su recíproco: 5/6 ÷ 3/7 = 5/6 × 7/3 = 35/18."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q11": {
+      "inputHash": "b0d5cd8bc3ccbdc72495007e56e9bc40ac1768bc704aa815c14f816e2ad61720",
+      "explanation": {
+        "text": {
+          "en": "From the lot at (8, 4), the post office at (8, 6) is only 2 street blocks away. It is closest because the museum and library are each 3 blocks away, and the theater is farther.",
+          "es": "Desde el estacionamiento en (8, 4), la oficina de correos en (8, 6) está a solo 2 cuadras. Es la más cercana porque el museo y la biblioteca están a 3 cuadras cada uno y el teatro queda más lejos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q12": {
+      "inputHash": "89e157795bc09d056cecab62acc877c722d3237bbfe653b9a777caff078cdc11",
+      "explanation": {
+        "text": {
+          "en": "Divide both sides of 0.3r = 2.1 by 0.3. The result is r = 2.1 ÷ 0.3 = 7.",
+          "es": "Se dividen ambos lados de 0.3r = 2.1 entre 0.3. El resultado es r = 2.1 ÷ 0.3 = 7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q13": {
+      "inputHash": "02b6d8cc1c7ff846368f6a160d468462b656084dd3955171afac5cd9add8e69f",
+      "explanation": {
+        "text": {
+          "en": "The students wash 12 ÷ 3 = 4 cars per hour, so in 8 hours they wash 4 × 8 = 32 cars. At $5 per car, they earn 32 × $5 = $160.",
+          "es": "Los estudiantes lavan 12 ÷ 3 = 4 autos por hora, así que en 8 horas lavan 4 × 8 = 32 autos. A $5 por auto, ganan 32 × $5 = $160."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q14": {
+      "inputHash": "23e6c828d4d590ba131e65a664259b3cf13e2b1437c992e9c62f756c65435e68",
+      "explanation": {
+        "text": {
+          "en": "At step n, Madison's number is 4n and Pedro's is 12n. Since 12n = 3(4n), every Pedro number is three times its corresponding Madison number.",
+          "es": "En el paso n, el número de Madison es 4n y el de Pedro es 12n. Como 12n = 3(4n), cada número de Pedro es tres veces el número correspondiente de Madison."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q15": {
+      "inputHash": "75144a92cddeb9c6da94eb2484fb3bcfc4bbe322032d89adf23485ad01eca319",
+      "explanation": {
+        "text": {
+          "en": "Kelly saves $5 for each of w weeks, so repeated addition is represented by multiplication. Her total savings are 5 × w = 5w dollars.",
+          "es": "Kelly ahorra $5 durante cada una de w semanas, así que la suma repetida se representa con una multiplicación. Su ahorro total es 5 × w = 5w dólares."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q16": {
+      "inputHash": "ad77b411481a3a20b5e166983f9736611f92cc0edc9b26f977cc08cff378d655",
+      "explanation": {
+        "text": {
+          "en": "The prime factorizations are 56 = 2³ × 7 and 92 = 2² × 23. Their greatest shared factor is 2² = 4.",
+          "es": "Las factorizaciones primas son 56 = 2³ × 7 y 92 = 2² × 23. Su mayor factor común es 2² = 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q17": {
+      "inputHash": "ff452fa08ffbf0b802ce8b8cd955f6143ce9b0af76cf2331b857ac370a68fb23",
+      "explanation": {
+        "text": {
+          "en": "Multiply the aquarium's dimensions: 22.9 × 7.5 × 4.6 = 790.05 cubic meters. Rounded to the nearest cubic meter, the volume is 790.",
+          "es": "Se multiplican las dimensiones del acuario: 22.9 × 7.5 × 4.6 = 790.05 metros cúbicos. Redondeado al metro cúbico más cercano, el volumen es 790."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q18": {
+      "inputHash": "ec7cba0f32c56388281c404c86db58bbe9cea4c7abc4bbb58db706919e6bd91a",
+      "explanation": {
+        "text": {
+          "en": "The prism is 5 cubes long, 4 cubes high, and 2 cubes deep, so it contains 5 × 4 × 2 = 40 cubes. Each 2 1/2-inch cube has volume 2.5³ = 15.625, giving 40 × 15.625 = 625 cubic inches.",
+          "es": "El prisma mide 5 cubos de largo, 4 de alto y 2 de profundidad, así que contiene 5 × 4 × 2 = 40 cubos. Cada cubo de 2 1/2 pulgadas tiene volumen 2.5³ = 15.625, y 40 × 15.625 = 625 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q19": {
+      "inputHash": "90bf3ec5dee5ddd806e6f980ebe688024299bf59f363e63980110af4a4246698",
+      "explanation": {
+        "text": {
+          "en": "At 3 meters per hour, the time for a 12-meter change is distance divided by rate. Thus, 12 ÷ 3 = 4 hours.",
+          "es": "A una razón de 3 metros por hora, el tiempo para un cambio de 12 metros es distancia entre rapidez. Por lo tanto, 12 ÷ 3 = 4 horas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q20": {
+      "inputHash": "bba6c3caf6ea922c7a8e14d6d5719d0f587f53cbd5bf5b7435ba219aa3f00475",
+      "explanation": {
+        "text": {
+          "en": "Two cases contain 2 × 12 = 24 packages, so each package costs $48 ÷ 24 = $2. Ordering 180 packages therefore costs 180 × $2 = $360.",
+          "es": "Dos cajas contienen 2 × 12 = 24 paquetes, así que cada paquete cuesta $48 ÷ 24 = $2. Por lo tanto, pedir 180 paquetes cuesta 180 × $2 = $360."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q21": {
+      "inputHash": "c7819aad4f1ee5a7461be13f0bfeee54a8379ec3fadffee4a434717fb1e4dd6f",
+      "explanation": {
+        "text": {
+          "en": "Distribute 9 across y + 3: 9(y + 3) = 9y + 27. By commutativity, this is the same as 27 + 9y.",
+          "es": "Se distribuye 9 sobre y + 3: 9(y + 3) = 9y + 27. Por la propiedad conmutativa, esto equivale a 27 + 9y."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q22": {
+      "inputHash": "a1d65b57675f21e7056cb641bfc6b306effb4e25ce07664cf5259a04be65c2a1",
+      "explanation": {
+        "text": {
+          "en": "Maple's fifth number is 6 + 4(6) = 30, while Oak's fifth number is 4 + 4(8) = 36. The last Oak number is 36 − 30 = 6 greater.",
+          "es": "El quinto número de Maple es 6 + 4(6) = 30, mientras que el quinto de Oak es 4 + 4(8) = 36. El último número de Oak es 36 − 30 = 6 mayor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q23": {
+      "inputHash": "a6e21feae6beaafc62321a35eae1bb5ee501ea9658b4cef776fc0928fb162229",
+      "explanation": {
+        "text": {
+          "en": "Substitute x = 2 into 3x + 2 = 8: 3(2) + 2 = 6 + 2 = 8. Thus, x = 2 satisfies that equation.",
+          "es": "Se sustituye x = 2 en 3x + 2 = 8: 3(2) + 2 = 6 + 2 = 8. Por lo tanto, x = 2 satisface esa ecuación."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q24": {
+      "inputHash": "5c5a80887c19f04760bc6785bf6dfee668e62878de17e295e105a47a053ee97c",
+      "explanation": {
+        "text": {
+          "en": "If 360 is 20% of the audience, then 0.20 × total = 360. Dividing gives total = 360 ÷ 0.20 = 1,800 people.",
+          "es": "Si 360 es el 20% del público, entonces 0.20 × total = 360. Al dividir se obtiene total = 360 ÷ 0.20 = 1,800 personas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q25": {
+      "inputHash": "a8cd722a13ed130547293810979b8ea929beb53a51b736ab135a010e8fe56b34",
+      "explanation": {
+        "text": {
+          "en": "The net has three rectangular faces that wrap around and two congruent triangular ends. It forms the solid in B because those are exactly the faces of a triangular prism.",
+          "es": "La red tiene tres caras rectangulares que forman los lados y dos extremos triangulares congruentes. Forma el sólido B porque esas son exactamente las caras de un prisma triangular."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q26": {
+      "inputHash": "89e645ca254611528fbfe83781c40f232a46ab6644f1eedde45b6d793642d09d",
+      "explanation": {
+        "text": {
+          "en": "Each shaded end is a triangle with base 1.1 inches and height 3.8 inches. Their combined area is 2 × (1/2 × 1.1 × 3.8) = 4.18 square inches.",
+          "es": "Cada extremo sombreado es un triángulo de base 1.1 pulgadas y altura 3.8 pulgadas. Su área total es 2 × (1/2 × 1.1 × 3.8) = 4.18 pulgadas cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q27": {
+      "inputHash": "26194ce80f9360838b5f6d2bb56feda15144e9c912e831a21ee434629f504e0e",
+      "explanation": {
+        "text": {
+          "en": "The expression adds six identical terms g. Repeated addition gives g + g + g + g + g + g = 6g.",
+          "es": "La expresión suma seis términos iguales a g. La suma repetida da g + g + g + g + g + g = 6g."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g6-mc-q28": {
+      "inputHash": "808e16b2f54a210e4e2a7041b1bc1e823967e80c4e77d7ee28fa20dab5e8ee70",
+      "explanation": {
+        "text": {
+          "en": "On a number line, smaller numbers lie farther left. Since −9 < −8, −9 must be plotted to the left of −8.",
+          "es": "En una recta numérica, los números menores quedan más a la izquierda. Como −9 < −8, se debe ubicar −9 a la izquierda de −8."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

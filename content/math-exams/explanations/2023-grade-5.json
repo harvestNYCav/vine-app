@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2023-grade-5-mc-v1",
+  "questions": {
+    "nysed-2023-g5-mc-q1": {
+      "inputHash": "e5555a7ce76b6531d52c9b1d28b638dc593e3229d238648eea6dd041dccb5809",
+      "explanation": {
+        "text": {
+          "en": "Anthony starts with 7/8 of the pizza and eats 3/8. Subtracting like denominators gives 7/8 − 3/8 = 4/8 left.",
+          "es": "Anthony comienza con 7/8 de la pizza y come 3/8. Al restar fracciones con el mismo denominador queda 7/8 − 3/8 = 4/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q2": {
+      "inputHash": "54ad497dfddd89412acf3dfacd9360ff7f1bb54361ff5bad99e0108a4ee409f5",
+      "explanation": {
+        "text": {
+          "en": "Thousandths are three places to the right of the decimal point. Ninety-nine thousandths is 99/1,000 = 0.099.",
+          "es": "Los milésimos están tres lugares a la derecha del punto decimal. Noventa y nueve milésimos es 99/1,000 = 0.099."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q3": {
+      "inputHash": "d0d1227d2f6813acd6e977d49e9110b6a08de1df19aba48ac15cd59ba712a5fd",
+      "explanation": {
+        "text": {
+          "en": "A prism’s volume equals base area times height. With base area 16 square feet and height 6 feet, V = 16 × 6 = 96 cubic feet.",
+          "es": "El volumen de un prisma es el área de la base por la altura. Con base de 16 pies cuadrados y altura de 6 pies, V = 16 × 6 = 96 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q8": {
+      "inputHash": "ce5037075429d6e3fcb9f065516737cbea1c9e974d5ab2a095b5033d7db9c47b",
+      "explanation": {
+        "text": {
+          "en": "Since 10⁴ = 10,000, multiplying gives 32 × 10,000 = 320,000.",
+          "es": "Como 10⁴ = 10,000, al multiplicar se obtiene 32 × 10,000 = 320,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q9": {
+      "inputHash": "38811fbf04d7f4b5855494ce2fe08aec8555788b2b36cc3fccca694e2b10f4e1",
+      "explanation": {
+        "text": {
+          "en": "The length 4/5 covers 4 of 5 columns, and the width 3/10 covers 3 of 10 rows. Model B shades their 4-by-3 overlap, which represents the rectangular area.",
+          "es": "El largo 4/5 cubre 4 de 5 columnas y el ancho 3/10 cubre 3 de 10 filas. El modelo B sombrea la intersección de 4 por 3, que representa el área rectangular."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q10": {
+      "inputHash": "5a5d57f9fac885dcf612ceb13efc2b09140d5741d46afa239da9b6a8b0d38b14",
+      "explanation": {
+        "text": {
+          "en": "Divide the total spaces by the spaces per row: 2,232 ÷ 24 = 93 because 24 × 93 = 2,232.",
+          "es": "Dividimos los espacios totales entre los espacios por fila: 2,232 ÷ 24 = 93 porque 24 × 93 = 2,232."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q11": {
+      "inputHash": "94905a93c1f939fba74be4ddb20f5865d0c1b51c5bfbc353d6fba093e9c28fa2",
+      "explanation": {
+        "text": {
+          "en": "Sharing 20 feet equally among 8 students gives 20 ÷ 8 = 20/8 = 5/2 = 2 1/2 feet per student.",
+          "es": "Repartir 20 pies por igual entre 8 estudiantes da 20 ÷ 8 = 20/8 = 5/2 = 2 1/2 pies por estudiante."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q14": {
+      "inputHash": "26bef224b5571f8292203143f53ed7310ad2354381f010ca2742272426d234c6",
+      "explanation": {
+        "text": {
+          "en": "Dividing 8,642 by 10 moves the decimal one place left, giving 864.2. The digit in the tens place of 864.2 is 6.",
+          "es": "Dividir 8,642 entre 10 mueve el punto decimal un lugar a la izquierda y da 864.2. El dígito en la posición de las decenas es 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q17": {
+      "inputHash": "353c279bb270ac62cefbeef834d69ae9c7596ed570398c079a68debe37a8dc2a",
+      "explanation": {
+        "text": {
+          "en": "The benchmark is 1 1/2 = 3/2. Choice B gives (3/2)(1/2) = 3/4, and 3/4 < 3/2, while the other products are at least 3/2.",
+          "es": "El valor de referencia es 1 1/2 = 3/2. La opción B da (3/2)(1/2) = 3/4, y 3/4 < 3/2, mientras que los otros productos son al menos 3/2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q18": {
+      "inputHash": "5a8432426e3dd407ab854bf834212b766cf07f5c2adf2c1f756bd27e30883d6e",
+      "explanation": {
+        "text": {
+          "en": "Prism A has 3 × 3 × 1 = 9 unit cubes, and Prism B has 3 × 3 × 3 = 27. Their total volume is 9 + 27 = 36 cubic units.",
+          "es": "El prisma A tiene 3 × 3 × 1 = 9 cubos unitarios y el prisma B tiene 3 × 3 × 3 = 27. Su volumen total es 9 + 27 = 36 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q20": {
+      "inputHash": "be0cb79a307a8b3aa39b89769595342169f401f3a8358abc71cb08a20deaccbf",
+      "explanation": {
+        "text": {
+          "en": "Subtract Friday and Saturday from the three-day total: 34 − 11.25 − 9.9 = 22.75 − 9.9 = 12.85 inches on Sunday.",
+          "es": "Restamos el viernes y el sábado del total de tres días: 34 − 11.25 − 9.9 = 22.75 − 9.9 = 12.85 pulgadas el domingo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q21": {
+      "inputHash": "6aa6ccb8f8738c296b1865669af2a56b9fb66ede5caa94f287ec45a52f1084f5",
+      "explanation": {
+        "text": {
+          "en": "Distance equals rate times time: (2 1/2)(3/4) = (5/2)(3/4) = 15/8 = 1 7/8 miles.",
+          "es": "La distancia es la tasa por el tiempo: (2 1/2)(3/4) = (5/2)(3/4) = 15/8 = 1 7/8 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q26": {
+      "inputHash": "8eb3816af7444bd52818453a80f5df446ffb7cf4d1eef8fbe24f392dab4fd765",
+      "explanation": {
+        "text": {
+          "en": "Multiply price per pound by pounds: 4.28 × 3.5 = 4.28 × 3 + 4.28 × 0.5 = 12.84 + 2.14 = $14.98.",
+          "es": "Multiplicamos el precio por libra por las libras: 4.28 × 3.5 = 4.28 × 3 + 4.28 × 0.5 = 12.84 + 2.14 = $14.98."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q29": {
+      "inputHash": "c0f14672d744326cd6bb070de174f0623564ce2786ce866f1151bb775aab7e43",
+      "explanation": {
+        "text": {
+          "en": "The red packages are the remainder: 1 − 4/9 − 1/6 = 18/18 − 8/18 − 3/18 = 7/18.",
+          "es": "Los paquetes rojos son la parte restante: 1 − 4/9 − 1/6 = 18/18 − 8/18 − 3/18 = 7/18."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q31": {
+      "inputHash": "bf23fb674e870d06a73d9d6243865f3cd9b2129a31dfe33933ff2c4abc1c8b1f",
+      "explanation": {
+        "text": {
+          "en": "The prism is 4 cubes wide, 6 cubes deep, and 3 cubes high. Its volume is 4 × 6 × 3 = 72 cubic units.",
+          "es": "El prisma mide 4 cubos de ancho, 6 de profundidad y 3 de alto. Su volumen es 4 × 6 × 3 = 72 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q32": {
+      "inputHash": "2fa68c3f352402315402d2944b16e6fa22dc47dcaa008548818c8593c80eea4d",
+      "explanation": {
+        "text": {
+          "en": "Dividing 210 apples equally among 14 boxes gives 210 ÷ 14 = 15 apples in each box.",
+          "es": "Al dividir 210 manzanas por igual entre 14 cajas se obtiene 210 ÷ 14 = 15 manzanas en cada caja."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q33": {
+      "inputHash": "d968b0a7325b587fa1f0bc76803f2fd4686ea556806bef500d23be66f13c191f",
+      "explanation": {
+        "text": {
+          "en": "Subtract the Sunday difference from Saturday: 3 3/8 − 1 5/6 = 81/24 − 44/24 = 37/24 = 1 13/24 miles.",
+          "es": "Restamos la diferencia del domingo a la distancia del sábado: 3 3/8 − 1 5/6 = 81/24 − 44/24 = 37/24 = 1 13/24 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q34": {
+      "inputHash": "c175496cf4259914ac55ee9969133fce3d8b3e6c5f33b4ad91afc43fd1e39e62",
+      "explanation": {
+        "text": {
+          "en": "A rhombus has four equal sides and both pairs of opposite sides parallel. A square has those same properties, so both are parallelograms with four equal sides.",
+          "es": "Un rombo tiene cuatro lados iguales y ambos pares de lados opuestos paralelos. Un cuadrado tiene esas mismas propiedades, así que ambos son paralelogramos con cuatro lados iguales."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g5-mc-q35": {
+      "inputHash": "fdcf64c76551500ccbb26da5ade132b1afba26dda175648452422dd175197944",
+      "explanation": {
+        "text": {
+          "en": "Each gallon equals 4 quarts. Therefore 13 gallons × 4 quarts per gallon = 52 quarts.",
+          "es": "Cada galón equivale a 4 cuartos. Por lo tanto, 13 galones × 4 cuartos por galón = 52 cuartos."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

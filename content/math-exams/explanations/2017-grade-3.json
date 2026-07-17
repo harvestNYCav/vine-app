@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2017-grade-3-mc-v1",
+  "questions": {
+    "nysed-2017-g3-mc-q1": {
+      "inputHash": "bd015911195b4116e436eb828175cf64f9ab178aa83ebc3dae8c645b416dac53",
+      "explanation": {
+        "text": {
+          "en": "The garden has 6 equal parts, and 5 of those parts contain seeds. The planted fraction is therefore 5/6.",
+          "es": "El jardín tiene 6 partes iguales y 5 de esas partes tienen semillas. Por lo tanto, la fracción plantada es 5/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q2": {
+      "inputHash": "093f52be4741123026dfea0b7fa4c7b2e2e6aed58664714d90b67be89aa1cec8",
+      "explanation": {
+        "text": {
+          "en": "The missing divisor must make 35 ÷ ? = 7. Since 35 ÷ 5 = 7, the missing number is 5.",
+          "es": "El divisor que falta debe hacer que 35 ÷ ? = 7. Como 35 ÷ 5 = 7, el número que falta es 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q5": {
+      "inputHash": "188fbc01dc064b1d66b6d3367b30f8d805be54ecaec502940d47eec45bf77ef6",
+      "explanation": {
+        "text": {
+          "en": "Red, white, and blue total 4 + 9 + 2 = 15 cars. Silver accounts for 6, so black must be 15 − 6 = 9 cars.",
+          "es": "Los autos rojos, blancos y azules suman 4 + 9 + 2 = 15. Hay 6 plateados, así que debe haber 15 − 6 = 9 autos negros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q6": {
+      "inputHash": "e011f33a468f1bf233c6c2165ab08d5e7177bd93e5845ede2ed11432b4a41893",
+      "explanation": {
+        "text": {
+          "en": "Two brushes cost 2 × $9 = $18. Adding the $13 gallon of paint gives $18 + $13 = $31 in all.",
+          "es": "Dos pinceles cuestan 2 × $9 = $18. Al sumar los $13 del galón de pintura, el costo total es $18 + $13 = $31."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q7": {
+      "inputHash": "7608162782309bae08bdf9ecca9d3f7532add18b93f3c37dc8d1caee7a7517b6",
+      "explanation": {
+        "text": {
+          "en": "For 2,396, the tens digit is 9, so 2,300 must round up to 2,400. The table incorrectly lists 2,300.",
+          "es": "En 2,396, el dígito de las decenas es 9, así que se redondea hacia arriba a 2,400. La tabla muestra 2,300 incorrectamente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q8": {
+      "inputHash": "c8fa7cf53ee13868a3586acfa1b4f35087dd9bb48de3f32bf5f37ccaf7166ef2",
+      "explanation": {
+        "text": {
+          "en": "Eight equal groups with 7 marbles in each group contain 8 × 7 = 56 marbles, so none are left over.",
+          "es": "Ocho grupos iguales con 7 canicas en cada grupo contienen 8 × 7 = 56 canicas, así que no sobra ninguna."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q9": {
+      "inputHash": "ddf709981defa336a59faa78f8407518e5a49a9dd7d16afd4097fe283d5d7e2f",
+      "explanation": {
+        "text": {
+          "en": "The mile from 0 to 1 is divided into 8 equal intervals. The school is at the fourth interval, which represents 4/8 mile.",
+          "es": "La milla de 0 a 1 está dividida en 8 intervalos iguales. La escuela está en el cuarto intervalo, que representa 4/8 de milla."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q13": {
+      "inputHash": "8bfaa7b3d90d3b72be6e655ca64c89cff0979f715c30da065e0e8f76526e0921",
+      "explanation": {
+        "text": {
+          "en": "Blue and yellow total 5 + 25 = 30 shirts. There are 45 red shirts, and 45 − 30 = 15 more red shirts.",
+          "es": "Las camisas azules y amarillas suman 5 + 25 = 30. Hay 45 camisas rojas, y 45 − 30 = 15 camisas rojas más."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q16": {
+      "inputHash": "bd63f1931dcb62b78324f006c0e93a11f20586d9321dd6d1b2e53569e60c8263",
+      "explanation": {
+        "text": {
+          "en": "Model D divides one whole into 3 equal sections and shades 2 of them. That shaded amount represents 2/3.",
+          "es": "El modelo D divide un entero en 3 secciones iguales y sombrea 2 de ellas. Esa cantidad sombreada representa 2/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q17": {
+      "inputHash": "c534cc39644e4ce59ff1c683307c5aca35fce399121b36bfe94b41108ee367a0",
+      "explanation": {
+        "text": {
+          "en": "Together they saved 592 + 128 = 720 pennies. After banking 250, they have 720 − 250 = 470, which rounds to 500.",
+          "es": "Juntas ahorraron 592 + 128 = 720 monedas. Después de llevar 250 al banco, quedan 720 − 250 = 470, que se redondea a 500."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q20": {
+      "inputHash": "53be122af2b4f867b44d6e38cb2b3b0f248cf47bd1c1168792a413c8d6aa2f7d",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 4 equal parts. Point P is on the first tick after 0, so it represents 1/4.",
+          "es": "El intervalo de 0 a 1 está dividido en 4 partes iguales. El punto P está en la primera marca después de 0, por lo que representa 1/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q21": {
+      "inputHash": "e9f718e8207ca043f33812eeb8c3cb9008a27fb59d3a19a179dc3c4920326c25",
+      "explanation": {
+        "text": {
+          "en": "Sixteen cups arranged with 8 cups per row make 16 ÷ 8 = 2 rows. The related equation is ? × 8 = 16.",
+          "es": "Dieciséis tazas con 8 tazas por fila forman 16 ÷ 8 = 2 filas. La ecuación relacionada es ? × 8 = 16."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q22": {
+      "inputHash": "c060c8d71ab646c2112b11bbbcbdb3004d41cce874fba341e3a81c797754efbc",
+      "explanation": {
+        "text": {
+          "en": "Divide both the numerator and denominator of 2/8 by 2: 2 ÷ 2 over 8 ÷ 2 equals 1/4.",
+          "es": "Se dividen el numerador y el denominador de 2/8 entre 2: 2 ÷ 2 sobre 8 ÷ 2 es igual a 1/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q23": {
+      "inputHash": "8499f28353a33acbf0f59a2c3353bf604924e69923cf4dbe93530bf47134513a",
+      "explanation": {
+        "text": {
+          "en": "The shaded region is a 3-by-3 block of unit squares. It contains 3 × 3 = 9 squares, so its area is 9 square units.",
+          "es": "La región sombreada es un bloque de 3 por 3 cuadrados unitarios. Contiene 3 × 3 = 9 cuadrados, así que su área es 9 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q24": {
+      "inputHash": "49705c41b701228691c4265b39091dc7841564ea660891187c0b4d53a0974a6f",
+      "explanation": {
+        "text": {
+          "en": "Substituting 8 into pair A gives 4 × 8 = 32 and 32 ÷ 8 = 4. Both equations are true related facts.",
+          "es": "Al sustituir 8 en el par A se obtiene 4 × 8 = 32 y 32 ÷ 8 = 4. Ambas ecuaciones son operaciones relacionadas verdaderas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q25": {
+      "inputHash": "3cecf4ddadaa229d26c0cd9af93562c2282b8251149df194f46ec84f8eca79c4",
+      "explanation": {
+        "text": {
+          "en": "The figure contains 6 equal triangular parts, and 3 are shaded. The shaded portion is therefore 3/6.",
+          "es": "La figura contiene 6 partes triangulares iguales y 3 están sombreadas. Por lo tanto, la parte sombreada representa 3/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q26": {
+      "inputHash": "86aada75f576cb003b9b718aa793ea41a7594e093fdb11e4788cf2d81218c714",
+      "explanation": {
+        "text": {
+          "en": "Each package contains 6 juice boxes, so the number of packages is the total divided by 6: 24 ÷ 6 = 4.",
+          "es": "Cada paquete contiene 6 cajas de jugo, así que el número de paquetes es el total dividido entre 6: 24 ÷ 6 = 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q27": {
+      "inputHash": "e7e063e564388d4cd449724bdb9032bde45f4881cacda1c89084f9ef078ab710",
+      "explanation": {
+        "text": {
+          "en": "The tiled rectangle has 4 rows and 6 columns of unit squares. Its area is found by 4 × 6 = 24 square units.",
+          "es": "El rectángulo tiene 4 filas y 6 columnas de cuadrados unitarios. Su área se calcula con 4 × 6 = 24 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q29": {
+      "inputHash": "bfd2d905f008f136b839947ea81ef88902831d7b48cb9958c1d5aaf32531ebab",
+      "explanation": {
+        "text": {
+          "en": "Since 9 = 5 + 4, the distributive property gives 5 × 9 = (5 × 5) + (5 × 4) = 25 + 20 = 45.",
+          "es": "Como 9 = 5 + 4, la propiedad distributiva da 5 × 9 = (5 × 5) + (5 × 4) = 25 + 20 = 45."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q30": {
+      "inputHash": "e4e192ed9f45d2f14a1954066b6440b7158e11f9736e56cfdaf505755e39d0c1",
+      "explanation": {
+        "text": {
+          "en": "The ones digit of 397 is 7, so rounding to the nearest ten raises 397 to 400. Thus 397 could be the actual count.",
+          "es": "El dígito de las unidades de 397 es 7, así que al redondear a la decena más cercana se obtiene 400. Por eso, 397 puede ser la cantidad real."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q31": {
+      "inputHash": "9e8645954435a9f098530a50d924bf4a75505a7a7b3887331f82d3d560efa2d2",
+      "explanation": {
+        "text": {
+          "en": "The three shows lasted 3 × 30 = 90 minutes. Adding the 90-minute movie gives 90 + 90 = 180 minutes.",
+          "es": "Los tres programas duraron 3 × 30 = 90 minutos. Al sumar la película de 90 minutos, el total es 90 + 90 = 180 minutos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q32": {
+      "inputHash": "2dffa1be4e62cccf38b0db1d6f9453cbe4cd4a56286e360ad854d9f801348923",
+      "explanation": {
+        "text": {
+          "en": "Dividing the 30 players into teams of 5 gives 30 ÷ 5 = 6 teams. Division finds the number of equal groups needed.",
+          "es": "Al dividir los 30 jugadores en equipos de 5 se obtiene 30 ÷ 5 = 6 equipos. La división halla el número de grupos iguales necesarios."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q35": {
+      "inputHash": "d8c037bfcaeeb58ff08ef5d12a1360178ffadf17f6db3a33382661fa9f55fe13",
+      "explanation": {
+        "text": {
+          "en": "From 9:40, 20 minutes reaches 10:00 and 25 more minutes reaches 10:25. Clock C shows 10:25.",
+          "es": "Desde las 9:40, 20 minutos llegan a las 10:00 y 25 minutos más llegan a las 10:25. El reloj C muestra las 10:25."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q36": {
+      "inputHash": "f388a1e23afac5c48a9de01b3bddbe1acfd5781e72967629d71189902c00ceba",
+      "explanation": {
+        "text": {
+          "en": "The missing factor is 36 divided by 4: 36 ÷ 4 = 9. Checking gives 9 × 4 = 36.",
+          "es": "El factor que falta es 36 dividido entre 4: 36 ÷ 4 = 9. La comprobación da 9 × 4 = 36."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q37": {
+      "inputHash": "dbb4c1572b66c03481e7604b1a776bc21a057b3859a9a9c41b432c2aabb3e070",
+      "explanation": {
+        "text": {
+          "en": "The original strip shades 4 of 6 equal parts, or 4/6. Model D shades 2 of 3 equal parts, and 4/6 = 2/3.",
+          "es": "La tira original sombrea 4 de 6 partes iguales, o 4/6. El modelo D sombrea 2 de 3 partes iguales, y 4/6 = 2/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q38": {
+      "inputHash": "335c019aef0bc25939427dcdbe86be1700fb0d18fe1cddb143f961dc9989757b",
+      "explanation": {
+        "text": {
+          "en": "With the same denominator, 3/4 is greater than 1/4 because 3 is greater than 1. Therefore the statement 3/4 < 1/4 is not correct.",
+          "es": "Con el mismo denominador, 3/4 es mayor que 1/4 porque 3 es mayor que 1. Por lo tanto, la afirmación 3/4 < 1/4 no es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q39": {
+      "inputHash": "1fbe184726eb3e8b603e7e881eaebf165fd57f0f8ced9f23bbff93dd1d576d44",
+      "explanation": {
+        "text": {
+          "en": "The rectangular poster is 3 feet wide and 2 feet high. Its area is 3 × 2 = 6 square feet.",
+          "es": "El afiche rectangular mide 3 pies de ancho y 2 pies de alto. Su área es 3 × 2 = 6 pies cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q40": {
+      "inputHash": "51a6d38f8c768d6486f99bfb8a3a7471683897f42d8d9b3f44d50c6d6ea55d1c",
+      "explanation": {
+        "text": {
+          "en": "The 40 miles are shared equally across 5 days, so 40 ÷ 5 = 8 miles each day.",
+          "es": "Las 40 millas se reparten por igual entre 5 días, así que 40 ÷ 5 = 8 millas por día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q41": {
+      "inputHash": "0afba40f309ff593cef263716bcd924d706a5be34c72f05fcdfcb42905b8fc06",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into eighths. Recipe B is at the third tick after 0, which represents 3/8 cup.",
+          "es": "El intervalo de 0 a 1 está dividido en octavos. La receta B está en la tercera marca después de 0, que representa 3/8 de taza."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q43": {
+      "inputHash": "b7e91586839c9b1c26551964134e2432be14e29490039c17ae2c1705963fae7d",
+      "explanation": {
+        "text": {
+          "en": "The wall grid has 9 columns and 8 rows of one-square-foot tiles. Its area is 9 × 8 = 72 square feet.",
+          "es": "La cuadrícula de la pared tiene 9 columnas y 8 filas de cuadrados de un pie. Su área es 9 × 8 = 72 pies cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g3-mc-q44": {
+      "inputHash": "7b3d04b0db410bb80c67384b6382076875c798ae96beeaa55a799c8d19b793bf",
+      "explanation": {
+        "text": {
+          "en": "The first 9 shapes use 9 × 5 = 45 straws. Adding 15 more gives 45 + 15 = 60 straws altogether.",
+          "es": "Las primeras 9 formas usan 9 × 5 = 45 pajillas. Al sumar 15 más, el total es 45 + 15 = 60 pajillas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2026-grade-7-mc-v1",
+  "questions": {
+    "nysed-2026-g7-mc-q1": {
+      "inputHash": "071ec681acc88d884137b6d0f3f9c12afaecb6fb3e4d166655078313b5b1fa96",
+      "explanation": {
+        "text": {
+          "en": "After the $300 gaming system, $540 - $300 = $240 remains for games. At $60 per game, $240 ÷ $60 = 4 games, choice B.",
+          "es": "Después de pagar $300 por el sistema, quedan $540 - $300 = $240 para los juegos. A $60 por juego, $240 ÷ $60 = 4 juegos, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q2": {
+      "inputHash": "3b8432bfc996d06e04865278d8e8ffb6fff0ace07594c3c5806270acacc56c18",
+      "explanation": {
+        "text": {
+          "en": "Jenny's cards sum to -5 + 5 = 0, and Paul's cards sum to 1 + (-1) = 0. Those are the two students named in choice D.",
+          "es": "Las cartas de Jenny suman -5 + 5 = 0, y las de Paul suman 1 + (-1) = 0. Ellos son los dos estudiantes de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q3": {
+      "inputHash": "14d4028b66a91a13e37e7a9c50698a9f9dff5b97fd7e751c3d04af48c45d7584",
+      "explanation": {
+        "text": {
+          "en": "Divide price by pounds to find the constant of proportionality: $11.98 ÷ 2 = $5.99 per pound. The other rows have the same unit rate, so choice B is correct.",
+          "es": "Divide el precio entre las libras para hallar la constante de proporcionalidad: $11.98 ÷ 2 = $5.99 por libra. Las otras filas tienen la misma tasa unitaria, por lo que corresponde la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q4": {
+      "inputHash": "8474a03a5de06caa6eaad111bd3a3c6c13fcf38cbcf39c467c61292b7a16c5e4",
+      "explanation": {
+        "text": {
+          "en": "Dividing by -1/3 means multiplying by its reciprocal, -3: (-5/6) × (-3) = 15/6 = 5/2. This equals 2 1/2, choice D.",
+          "es": "Dividir entre -1/3 equivale a multiplicar por su recíproco, -3: (-5/6) × (-3) = 15/6 = 5/2. Esto equivale a 2 1/2, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q5": {
+      "inputHash": "f6a32db411671b1bc08831559e96a2c16813e7c62d265710afe5b286e9a591ab",
+      "explanation": {
+        "text": {
+          "en": "The hourly rate is total gallons divided by total hours: 3,000 ÷ 2.5 = 1,200 gallons per hour. Therefore the answer is choice C.",
+          "es": "La tasa por hora es el total de galones dividido entre el total de horas: 3,000 ÷ 2.5 = 1,200 galones por hora. Por lo tanto, la respuesta es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q6": {
+      "inputHash": "a82111b21218a24131849b3a76b902c0e5b2336aa5c0f7a2f69c8a8a900101e1",
+      "explanation": {
+        "text": {
+          "en": "Shameka still needs $248 - $100 = $148. Dividing that amount equally over 8 weeks gives $148 ÷ 8 = $18.50 per week, choice B.",
+          "es": "Shameka todavía necesita $248 - $100 = $148. Al dividir esa cantidad en partes iguales durante 8 semanas se obtiene $148 ÷ 8 = $18.50 por semana, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q7": {
+      "inputHash": "c82bbd148be40c69c695092f3f993ee0bf62df0fb80e0a64b9d58c97828984d4",
+      "explanation": {
+        "text": {
+          "en": "The ratio y/x is constant: 0.6 ÷ 2 = 0.3, and the other rows give the same value. Thus the proportional equation is y = 0.3x, choice D.",
+          "es": "La razón y/x es constante: 0.6 ÷ 2 = 0.3, y las otras filas dan el mismo valor. Por lo tanto, la ecuación proporcional es y = 0.3x, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q8": {
+      "inputHash": "15857478b0a309beb2a46e35c3a93af035d490d6bfc6bc4d6105830ef5c363d1",
+      "explanation": {
+        "text": {
+          "en": "Each of the 4 food items can be paired with any of the 3 juices. By the multiplication principle, 4 × 3 = 12 different breakfasts are possible, choice D.",
+          "es": "Cada uno de los 4 alimentos se puede combinar con cualquiera de los 3 jugos. Por el principio de multiplicación, hay 4 × 3 = 12 desayunos diferentes, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q10": {
+      "inputHash": "824d729282dc350087af413c80c9e6edb88976b262e99d0120bdaaf2e8454a7f",
+      "explanation": {
+        "text": {
+          "en": "The work times are 80 minutes, 85 minutes, and 195 minutes, totaling 360 minutes or 6 hours. Her pay is 6 × $15.50 = $93.00, choice C.",
+          "es": "Los tiempos de trabajo son 80, 85 y 195 minutos, para un total de 360 minutos o 6 horas. Su pago es 6 × $15.50 = $93.00, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q11": {
+      "inputHash": "a7e6a65b9d814b1225936e4788044fca731a03bb922c3823a24318560498b080",
+      "explanation": {
+        "text": {
+          "en": "Distribute to get 3(5x + 2) - 2(6x - 7) = 15x + 6 - 12x + 14. Combining like terms gives 3x + 20, choice D.",
+          "es": "Aplica la propiedad distributiva: 3(5x + 2) - 2(6x - 7) = 15x + 6 - 12x + 14. Al combinar términos semejantes se obtiene 3x + 20, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q12": {
+      "inputHash": "eeae40b5c073268512dc7fb90da7d7eda98291456fed593a066897de7b6cb388",
+      "explanation": {
+        "text": {
+          "en": "Using simple interest I = Prt, the rate is r = 144 ÷ (1,200 × 4) = 0.03. Converting to a percent gives 3.0%, choice C.",
+          "es": "Con la fórmula de interés simple I = Prt, la tasa es r = 144 ÷ (1,200 × 4) = 0.03. Al convertirla en porcentaje se obtiene 3.0%, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q13": {
+      "inputHash": "2c85f0161f0c754d493db93a7a2637599c2a61cc04194641354907d8bf979e1e",
+      "explanation": {
+        "text": {
+          "en": "The graph shows that 1 gift bag costs $5 and 5 bags cost $25. The constant rate is $25 ÷ 5 = $5 per bag, choice D.",
+          "es": "La gráfica muestra que 1 bolsa cuesta $5 y que 5 bolsas cuestan $25. La tasa constante es $25 ÷ 5 = $5 por bolsa, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q14": {
+      "inputHash": "1633fd979d562a9f07152f439ea25a3afadc59adcbf06572c5dc217ed3d45b2a",
+      "explanation": {
+        "text": {
+          "en": "With 17 games, each median is the 9th value in order. Team A's 9th value is 3 goals, while Team B's is 2 goals, so Team A has the higher median of 3, choice A.",
+          "es": "Con 17 partidos, cada mediana es el noveno valor ordenado. El noveno valor del equipo A es 3 goles y el del equipo B es 2, así que el equipo A tiene la mediana mayor de 3, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q15": {
+      "inputHash": "d15a745ef2a1d6fde79e0f224e85170c75322ebe8d714238b50978d4d511315b",
+      "explanation": {
+        "text": {
+          "en": "Multiply the numerators and denominators: (-1/5)(3/8) = -3/40. A negative times a positive is negative, so this is choice B.",
+          "es": "Multiplica los numeradores y los denominadores: (-1/5)(3/8) = -3/40. Un número negativo por uno positivo es negativo, por lo que corresponde a la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q17": {
+      "inputHash": "052c171173ded82d69806b55f61e27d946b57cc38c5aafba14e38fac0e101ecb",
+      "explanation": {
+        "text": {
+          "en": "After the 10% discount, the price is $279 × 0.90 = $251.10. Applying tax gives $251.10 × 1.08875 = $273.385125, which rounds to $273.39, choice C.",
+          "es": "Después del descuento del 10%, el precio es $279 × 0.90 = $251.10. Al aplicar el impuesto se obtiene $251.10 × 1.08875 = $273.385125, que se redondea a $273.39, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q18": {
+      "inputHash": "68fbc3a336c2921ed8c4be01bc0ffc993c9a93cc5cfa3a9cf150ac91eec21d0b",
+      "explanation": {
+        "text": {
+          "en": "Seven of the eight full-sun heights are above about 11.05 inches, while every shade height is at most about 11.02 inches. This shifts the full-sun data higher overall, so its average is greater, choice C.",
+          "es": "Siete de las ocho alturas a pleno sol superan aproximadamente 11.05 pulgadas, mientras que todas las alturas a la sombra son como máximo de unas 11.02 pulgadas. Esto desplaza hacia arriba los datos de pleno sol, por lo que su promedio es mayor, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q19": {
+      "inputHash": "a69bf2dae91408db5acd59bbcbb74ae32f0431cdd0bab117b36ea16de4da4b5b",
+      "explanation": {
+        "text": {
+          "en": "A proportional relationship graphs as a straight line through the origin because y = kx gives y = 0 when x = 0. Only graph A is a nonvertical straight line through (0, 0).",
+          "es": "Una relación proporcional se representa con una recta que pasa por el origen porque y = kx da y = 0 cuando x = 0. Solo la gráfica A es una recta no vertical que pasa por (0, 0)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q20": {
+      "inputHash": "1a33998a151f7379656c0870e9baf0322a34a962804c52a5b5a56bf86a471a37",
+      "explanation": {
+        "text": {
+          "en": "First, 12 ÷ (-0.25) = -48, so 4(x + 2) = -48. Dividing by 4 and subtracting 2 gives x + 2 = -12 and x = -14, choice B.",
+          "es": "Primero, 12 ÷ (-0.25) = -48, así que 4(x + 2) = -48. Al dividir entre 4 y restar 2 se obtiene x + 2 = -12 y x = -14, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q21": {
+      "inputHash": "227304faedfb8b6dcdd494dfbbe10e4b0830305a90d85b98ec2257a62d34d968",
+      "explanation": {
+        "text": {
+          "en": "The artist earns $5 for each of x portraits plus a fixed $20, giving 5x + 20. The words “at least $200” mean greater than or equal to, so 5x + 20 ≥ 200, choice C.",
+          "es": "El artista gana $5 por cada uno de x retratos más $20 fijos, lo que da 5x + 20. “Al menos $200” significa mayor o igual que, por lo tanto 5x + 20 ≥ 200, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q22": {
+      "inputHash": "7f61dafb8e9c7e91f349c68887af45be53e1cc1a6b8d4bcefc1ec319f7d91057",
+      "explanation": {
+        "text": {
+          "en": "The actual dimensions are 10.5 ÷ 1.5 = 7 feet and 5.25 ÷ 1.5 = 3.5 feet. The bed's area is 7 × 3.5 = 24.5 square feet, choice A.",
+          "es": "Las dimensiones reales son 10.5 ÷ 1.5 = 7 pies y 5.25 ÷ 1.5 = 3.5 pies. El área de la cama es 7 × 3.5 = 24.5 pies cuadrados, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q23": {
+      "inputHash": "3fb6845fc695e71cc24ac68b664d182cc44bf421b8b653b1d71c6fdb9c71795e",
+      "explanation": {
+        "text": {
+          "en": "Distribute -2: 7 - 2(3x + 6) - 4x = 7 - 6x - 12 - 4x. Combining like terms gives -10x - 5, choice C.",
+          "es": "Distribuye -2: 7 - 2(3x + 6) - 4x = 7 - 6x - 12 - 4x. Al combinar términos semejantes se obtiene -10x - 5, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q25": {
+      "inputHash": "fccc347f96b1c3edaa83c68915fce96fcda7e410017fe80e5556f3ded1142d48",
+      "explanation": {
+        "text": {
+          "en": "The shirt costs (2/5)($20) = $8, leaving $12. The gum costs 10% of $12, or $1.20, so Mateo spends $8 + $1.20 = $9.20 in total, choice B.",
+          "es": "La camisa cuesta (2/5)($20) = $8, por lo que quedan $12. El chicle cuesta el 10% de $12, es decir, $1.20; Mateo gasta en total $8 + $1.20 = $9.20, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q26": {
+      "inputHash": "5e38fcd5608a8d3698a3e92cf342f18d6ce12dea58c92957edf3abfab30f6949",
+      "explanation": {
+        "text": {
+          "en": "Rewrite 0.2 as 1/5, then multiply: (4/5)(1/5)(-5/8) = -20/200 = -1/10. Therefore the value is choice A.",
+          "es": "Escribe 0.2 como 1/5 y luego multiplica: (4/5)(1/5)(-5/8) = -20/200 = -1/10. Por lo tanto, el valor corresponde a la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q27": {
+      "inputHash": "0ec9edf556842e4a14301a9d136e6c611b99512df10746a4763f5b1883674694",
+      "explanation": {
+        "text": {
+          "en": "The number of apples is the x-coordinate, so 1 apple means x = 1. Point Q is at (1, 4), and its y-coordinate shows 4 fluid ounces, making choice B correct.",
+          "es": "El número de manzanas es la coordenada x, así que 1 manzana significa x = 1. El punto Q está en (1, 4), y su coordenada y muestra 4 onzas líquidas, por lo que corresponde la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q29": {
+      "inputHash": "9d62e619ab86e543ee1a91fc52ca7f3190edf437ed3ac8a34f91603d166748d4",
+      "explanation": {
+        "text": {
+          "en": "The four classes raised $153.45, $276.68, $100.36, and $335.25, which total $865.74. Subtracting the $800 trip cost gives $865.74 - $800 = $65.74 extra, choice A.",
+          "es": "Las cuatro clases recaudaron $153.45, $276.68, $100.36 y $335.25, para un total de $865.74. Al restar el costo de $800 resulta $865.74 - $800 = $65.74 de sobra, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q30": {
+      "inputHash": "e3e2d79710db8fa7c63c4296e7ff8209d62d6b70c963ebb6e73b064f6aa2bbff",
+      "explanation": {
+        "text": {
+          "en": "Each dot represents one cat, while the number line gives the measured weight of that cat. Adult cat weights such as 8 to 12 are reasonably measured in pounds, so the axis label is number of pounds, choice D.",
+          "es": "Cada punto representa un gato, mientras que la recta numérica indica el peso medido de ese gato. Los pesos de 8 a 12 para gatos adultos se miden razonablemente en libras, así que la etiqueta es número de libras, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q31": {
+      "inputHash": "e482d8d2b648803ca5e6a913e2baa3383a0d86801810839460ce0d488bac5f9f",
+      "explanation": {
+        "text": {
+          "en": "The first expression equals 5.2 - 1.6 = 3.6, so the missing expression must equal -3.6. Choice D gives -5.2 + 1.6 = -3.6, and 3.6 + (-3.6) = 0.",
+          "es": "La primera expresión equivale a 5.2 - 1.6 = 3.6, así que la expresión faltante debe ser -3.6. La opción D da -5.2 + 1.6 = -3.6, y 3.6 + (-3.6) = 0."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q32": {
+      "inputHash": "61a80d3c0ef440f4427242806b4a35e4424658ace1309b591812ab8c4735b05c",
+      "explanation": {
+        "text": {
+          "en": "Distribute -1/4 to both terms: (-1/4)(12x) = -3x and (-1/4)(-6) = 6/4 = 1 1/2. The result is -3x + 1 1/2, choice C.",
+          "es": "Distribuye -1/4 a ambos términos: (-1/4)(12x) = -3x y (-1/4)(-6) = 6/4 = 1 1/2. El resultado es -3x + 1 1/2, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q33": {
+      "inputHash": "8d3ba4515a6c6e0836a3a7ae53c6d25ac26f52c0a371e24a680b21c2ccca2a75",
+      "explanation": {
+        "text": {
+          "en": "The price per gallon is $9.63 ÷ 3 = $3.21, and the other rows have the same ratio p/g. Therefore total price is p = 3.21g, choice B.",
+          "es": "El precio por galón es $9.63 ÷ 3 = $3.21, y las otras filas tienen la misma razón p/g. Por lo tanto, el precio total es p = 3.21g, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q34": {
+      "inputHash": "16dbc7027232da66ee406b7048c3b0aa9364d7182fb2d52b3b072e2775ef3ce9",
+      "explanation": {
+        "text": {
+          "en": "A negative divided by a negative is positive, so (-45)/(-9) = 45/9 = 5. The equivalent positive fraction is 45/9, choice D.",
+          "es": "Un número negativo dividido entre otro negativo es positivo, por lo que (-45)/(-9) = 45/9 = 5. La fracción positiva equivalente es 45/9, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q35": {
+      "inputHash": "737af966d77af3be97aba559bf988f9646b7a55008c8adcdd3b59399440d5acd",
+      "explanation": {
+        "text": {
+          "en": "Divide the total cost by the 4 equal-price packages: $4.48 ÷ 4 = $1.12 per package. This unit price is choice C.",
+          "es": "Divide el costo total entre los 4 paquetes de igual precio: $4.48 ÷ 4 = $1.12 por paquete. Este precio unitario corresponde a la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q36": {
+      "inputHash": "b2cc8a20bfec278bdf56e95bf63f5e0d4b6800d78b914d65ed31a86cad7bee4c",
+      "explanation": {
+        "text": {
+          "en": "Subtracting a 25% discount leaves 100% - 25% = 75% of the original price. Algebraically, x - 0.25x = 0.75x, choice B.",
+          "es": "Restar un descuento del 25% deja 100% - 25% = 75% del precio original. Algebraicamente, x - 0.25x = 0.75x, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q37": {
+      "inputHash": "c7d566839ab00e114fe862b33089df681c682ce912017224cca45cf2fbea2e11",
+      "explanation": {
+        "text": {
+          "en": "At 1 inch for every 24 feet, the drawing length is 76 4/5 ÷ 24 = 76.8 ÷ 24 = 3.2 inches. This is 3 1/5 inches, choice B.",
+          "es": "Con una escala de 1 pulgada por cada 24 pies, la longitud del dibujo es 76 4/5 ÷ 24 = 76.8 ÷ 24 = 3.2 pulgadas. Esto equivale a 3 1/5 pulgadas, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g7-mc-q38": {
+      "inputHash": "7bf6b1d264e7f157cd47bfb5963175db2cf91479e633bce130c181ae1b62865b",
+      "explanation": {
+        "text": {
+          "en": "The upper whisker ends at 21, but 23 is plotted separately beyond it. Because of that separation, 23 is an outlier, a value unusually far from the other data, choice A.",
+          "es": "El bigote superior termina en 21, pero 23 aparece por separado más allá. Debido a esa separación, 23 es un valor atípico porque está inusualmente alejado de los demás datos, opción A."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

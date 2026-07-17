@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2019-grade-8-mc-v1",
+  "questions": {
+    "nysed-2019-g8-mc-q1": {
+      "inputHash": "28d2ef28e0f3db3e487b936adb17927a6d90a07a5ad07aa5e03c6ff277de6062",
+      "explanation": {
+        "text": {
+          "en": "A linear function graphs as a nonvertical straight line and passes the vertical-line test. Therefore, graph B is the only choice with both properties.",
+          "es": "Una función lineal se representa con una recta no vertical y pasa la prueba de la recta vertical. La gráfica B es la única opción con ambas propiedades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q2": {
+      "inputHash": "b4ebf168e633fe6e7cae5b7a79e1385745f4538eb5ff2cea1efd1579b5cb1025",
+      "explanation": {
+        "text": {
+          "en": "Divide the coefficients and subtract the exponents: (1.6/0.2) × 10^(5−2) = 8 × 10³.",
+          "es": "Se dividen los coeficientes y se restan los exponentes: (1.6/0.2) × 10^(5−2) = 8 × 10³."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q3": {
+      "inputHash": "2c22edc0570110a8430e5934f414ecea8cff4e13cb44e7b20a3f0fb6fec1df7f",
+      "explanation": {
+        "text": {
+          "en": "The cost rises from $4.50 to $9.00 when production rises from 3 to 6 toothbrushes. The rate is $4.50/3 = $1.50 for each additional toothbrush.",
+          "es": "El costo aumenta de $4.50 a $9.00 cuando la producción aumenta de 3 a 6 cepillos. La tasa es $4.50/3 = $1.50 por cada cepillo adicional."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q4": {
+      "inputHash": "79d74ab3762a77289537a8f9a9df37bb6f9aaff7b56525c925499faaccbf4f7d",
+      "explanation": {
+        "text": {
+          "en": "Using V = (1/3)πr²h, the large cone has volume about 27.0 cubic inches and the small cone about 8.2. Their difference is about 27.0 − 8.2 = 18.8 cubic inches.",
+          "es": "Con V = (1/3)πr²h, el cono grande tiene un volumen aproximado de 27.0 pulgadas cúbicas y el pequeño de 8.2. La diferencia es aproximadamente 27.0 − 8.2 = 18.8 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q7": {
+      "inputHash": "7c1719b3c81c6e0d2d6b07f3c3f2c7f80a0cab38c0cbdc7165ae1157a602f393",
+      "explanation": {
+        "text": {
+          "en": "A linear equation has variables only to the first power. Equation C contains the quadratic term 3x², so its graph is not a line.",
+          "es": "Una ecuación lineal tiene variables solo a la primera potencia. La ecuación C contiene el término cuadrático 3x², así que su gráfica no es una recta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q8": {
+      "inputHash": "bae4569c179919de35378a0e2481e714eb9e066eefcae6bfc13ab6744a39df59",
+      "explanation": {
+        "text": {
+          "en": "The line passes through the origin and drops 1 unit for every 4 units moved right, so its slope is −1/4. Its equation is y = −(1/4)x.",
+          "es": "La recta pasa por el origen y baja 1 unidad por cada 4 unidades hacia la derecha, así que su pendiente es −1/4. Su ecuación es y = −(1/4)x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q9": {
+      "inputHash": "56bdbed5acd299503be3501f260c1686056f52f4c68efb93032e79cacbb6eb9c",
+      "explanation": {
+        "text": {
+          "en": "Travel time equals distance divided by speed. Therefore, the hours are represented by (3.39 × 10⁷) ÷ (3.36 × 10⁴).",
+          "es": "El tiempo de viaje es la distancia dividida entre la rapidez. Por lo tanto, las horas se representan con (3.39 × 10⁷) ÷ (3.36 × 10⁴)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q11": {
+      "inputHash": "6e4f93c4ed00eb45a43e4743c2068413fe0cedbcb79ebf18c7b43c0dae64fcb4",
+      "explanation": {
+        "text": {
+          "en": "Reflecting triangle A over the x-axis changes its y-coordinates to negatives while keeping its x-coordinates. Translating that image 6 units left then places its vertices exactly on triangle B, so this is the required sequence.",
+          "es": "Reflejar el triángulo A sobre el eje x cambia sus coordenadas y a negativas y conserva las coordenadas x. Luego, trasladar esa imagen 6 unidades a la izquierda coloca sus vértices exactamente sobre el triángulo B; por lo tanto, esa es la secuencia requerida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q12": {
+      "inputHash": "f13b282592ae9676af243866d18ca2cc8c858557883748c5b6e3ea2809d6cb8b",
+      "explanation": {
+        "text": {
+          "en": "In system B, both equations have the same left side, 7x − 2y, but require it to equal both 9 and 13. That contradiction means the parallel lines never intersect, so there is no solution.",
+          "es": "En el sistema B, ambas ecuaciones tienen el mismo lado izquierdo, 7x − 2y, pero exigen que sea igual a 9 y a 13. Esa contradicción significa que las rectas paralelas no se cruzan, así que no hay solución."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q13": {
+      "inputHash": "6525302f9af6430c7606f39c8f78e672b9462c1dda06c6bcaa4ba3f3cd85f495",
+      "explanation": {
+        "text": {
+          "en": "The graphed line and y = −x + 2 meet at (4, −2). Indeed, the graph contains (4, −2), and substituting x = 4 gives y = −4 + 2 = −2.",
+          "es": "La recta graficada y y = −x + 2 se cruzan en (4, −2). En efecto, la gráfica contiene (4, −2), y al sustituir x = 4 se obtiene y = −4 + 2 = −2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q16": {
+      "inputHash": "2bf2fe6ff9b39317acecd559779a905c82ce11e3e4173be86d35d71bf9e8d0ff",
+      "explanation": {
+        "text": {
+          "en": "Reflecting rectangle ABCD over the y-axis moves it to the left side with the correct orientation. A dilation by scale factor 1/2 about the origin then halves every coordinate, matching A′B′C′D′.",
+          "es": "Reflejar el rectángulo ABCD sobre el eje y lo mueve al lado izquierdo con la orientación correcta. Luego, una dilatación de factor 1/2 con centro en el origen reduce cada coordenada a la mitad; por lo tanto, coincide con A′B′C′D′."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q17": {
+      "inputHash": "8dde3d90dffda6f7d09572e8d4823231e519f27ac12a5b34f3410a0427c11f7b",
+      "explanation": {
+        "text": {
+          "en": "The volume of the rectangular prism is length × width × height. Substituting the interior dimensions gives 15 × 8 × 6 = 720 cubic inches.",
+          "es": "El volumen del prisma rectangular es largo × ancho × alto. Al sustituir las dimensiones interiores se obtiene 15 × 8 × 6 = 720 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q24": {
+      "inputHash": "b6385c36404de3367f36dfde986495183046383c660d2608251308dd531c6b38",
+      "explanation": {
+        "text": {
+          "en": "When y decreases as x increases, the overall direction from left to right slopes downward. Therefore, such data are best modeled by a line with negative slope.",
+          "es": "Cuando y disminuye a medida que x aumenta, la dirección general de izquierda a derecha desciende. Por lo tanto, esos datos se modelan mejor con una recta de pendiente negativa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q25": {
+      "inputHash": "708f8479410801ce8952cf1d7e872bb86ea18c2cc7b05e98a8aa6188fa64b8e3",
+      "explanation": {
+        "text": {
+          "en": "Compare unit rates: A has slope 7, B has 12/4 = 3, C has 8/2 = 4, and D has 18/3 = 6. The greatest rate of change is 7 in relationship A.",
+          "es": "Se comparan las tasas unitarias: A tiene pendiente 7, B tiene 12/4 = 3, C tiene 8/2 = 4 y D tiene 18/3 = 6. La mayor razón de cambio es 7 en la relación A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q29": {
+      "inputHash": "ad887cd501485667cc510d28cfdfe9ea3e3339a57466b6908c3735d73c48d2d2",
+      "explanation": {
+        "text": {
+          "en": "Apply the power rule and then add exponents: (5⁻²)⁵ × 5⁴ = 5⁻¹⁰ × 5⁴ = 5⁻⁶ = 1/5⁶.",
+          "es": "Se aplica la regla de potencias y luego se suman exponentes: (5⁻²)⁵ × 5⁴ = 5⁻¹⁰ × 5⁴ = 5⁻⁶ = 1/5⁶."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q30": {
+      "inputHash": "5bfc26793d468fcf56be9165bf16fd614920c0356b6cf38e50f1a0a10efb176d",
+      "explanation": {
+        "text": {
+          "en": "Function M changes by 10 when x changes by 2, so its slope is 5. Function P, y = 7x + 9, has slope 7; their rates differ by 7 − 5 = 2.",
+          "es": "La función M cambia 10 cuando x cambia 2, así que su pendiente es 5. La función P, y = 7x + 9, tiene pendiente 7; sus razones difieren en 7 − 5 = 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q31": {
+      "inputHash": "fc91039377019947bafb83ebe1c8cb3484ffee2ba33ee34cd9cc31421cc82365",
+      "explanation": {
+        "text": {
+          "en": "The points generally rise from left to right and cluster around a straight-line trend. Therefore, the variables have a positive linear association.",
+          "es": "Los puntos generalmente suben de izquierda a derecha y se agrupan alrededor de una tendencia recta. Por lo tanto, las variables tienen una asociación lineal positiva."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q32": {
+      "inputHash": "28aeab38593cf1bac205313811406c283af301793887137dfdd4c1b522194ead",
+      "explanation": {
+        "text": {
+          "en": "Triangle angles sum to 180°, so 30 + (3x − 9) + 24 = 180. This simplifies to 3x + 45 = 180, giving x = 45.",
+          "es": "Los ángulos de un triángulo suman 180°, así que 30 + (3x − 9) + 24 = 180. Esto se simplifica a 3x + 45 = 180, lo que da x = 45."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q33": {
+      "inputHash": "64d722e40f58d5f923e8f2364402fb46b66d60e7d8e4336ac0abefe601a4d831",
+      "explanation": {
+        "text": {
+          "en": "Between x = 4 and x = 11, the graph moves downward as x increases, so it is decreasing. That portion is curved rather than straight, so it is nonlinear.",
+          "es": "Entre x = 4 y x = 11, la gráfica baja a medida que x aumenta, así que es decreciente. Esa parte es curva y no recta, por lo tanto no es lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q34": {
+      "inputHash": "b9ce7a4f341d9f0aaec8fbc6a5b05c2b75edb6d8d8230de33dccdb51a51e16c5",
+      "explanation": {
+        "text": {
+          "en": "A function cannot assign one input to two different outputs. In set D, x = 6 is paired with both 2 and 4, and x = 9 is paired with both 1 and 5, so it is not a function.",
+          "es": "Una función no puede asignar una entrada a dos salidas diferentes. En el conjunto D, x = 6 se relaciona con 2 y 4, y x = 9 con 1 y 5, así que no es una función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q35": {
+      "inputHash": "7c231f6dd7b845fa29090e9998285c2a0865f6ab7fe095c19e63e4cfab384117",
+      "explanation": {
+        "text": {
+          "en": "The sphere's volume is (4/3)π(6³) = 288π, while the cylinder's is π(6²)(6) = 216π. Their difference is 288π − 216π = 72π cubic inches.",
+          "es": "El volumen de la esfera es (4/3)π(6³) = 288π y el del cilindro es π(6²)(6) = 216π. La diferencia es 288π − 216π = 72π pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q36": {
+      "inputHash": "239650f3bd8d14de710ecddfbcfed7c29377bb6a530f63eb192bcbf94a5a9357",
+      "explanation": {
+        "text": {
+          "en": "A best-fit line should pass through the middle of the point cloud with roughly balanced points above and below it. Therefore, plot C's line follows the trend with the best balance.",
+          "es": "Una recta de mejor ajuste debe pasar por el centro de la nube con aproximadamente la misma cantidad de puntos arriba y abajo. Por lo tanto, la recta de la gráfica C sigue la tendencia con el mejor equilibrio."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q37": {
+      "inputHash": "4a770b96eb4231ddc0fca4f4634cccd66c4c0c04993a806182c2016db8adc388",
+      "explanation": {
+        "text": {
+          "en": "When multiplying powers with the same base, add exponents: 7⁻⁸ × 7³ = 7^(−8+3) = 7⁻⁵.",
+          "es": "Al multiplicar potencias de la misma base, se suman los exponentes: 7⁻⁸ × 7³ = 7^(−8+3) = 7⁻⁵."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q38": {
+      "inputHash": "b89412f24005e8783c3d6a9c1f4dae41409dcec911b64fde45c325f3cbf3ea6d",
+      "explanation": {
+        "text": {
+          "en": "As outside temperature increases, hot-chocolate sales generally decrease, and the points follow a roughly straight downward trend. Therefore, this is a negative linear association.",
+          "es": "A medida que aumenta la temperatura exterior, las ventas de chocolate caliente generalmente disminuyen y los puntos siguen una tendencia descendente aproximadamente recta. Por lo tanto, es una asociación lineal negativa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q39": {
+      "inputHash": "d6aafe19800b439c3ba503b28d34965f69ee508707cbb2a71ee8e105e35ec516",
+      "explanation": {
+        "text": {
+          "en": "The original vertices are A(2,1), B(4,4), and C(−4,2). A dilation by factor 2 about the origin doubles each coordinate, giving A′(4,2), B′(8,8), and C′(−8,4).",
+          "es": "Los vértices originales son A(2,1), B(4,4) y C(−4,2). Una dilatación de factor 2 con centro en el origen duplica cada coordenada y da A′(4,2), B′(8,8) y C′(−8,4)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g8-mc-q40": {
+      "inputHash": "528e28964dd13a9a340a12300685eddda1168e881c5340bc3c011720a4cca9cd",
+      "explanation": {
+        "text": {
+          "en": "The relation already contains the input x = 4 paired with y = 6. Adding (4,2) would pair the same input with a different output, so the relation would no longer be a function.",
+          "es": "La relación ya contiene la entrada x = 4 asociada con y = 6. Agregar (4,2) asociaría la misma entrada con una salida diferente, así que la relación dejaría de ser una función."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

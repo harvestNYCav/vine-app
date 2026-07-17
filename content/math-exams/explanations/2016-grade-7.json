@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2016-grade-7-mc-v1",
+  "questions": {
+    "nysed-2016-g7-mc-q1": {
+      "inputHash": "9b4270a9944acf0cc41328fa5f83d6e706e6f11d20a60ed71bba0441049a9172",
+      "explanation": {
+        "text": {
+          "en": "The drawing height is 1.25 inches and each inch represents 30 feet. Multiplying 1.25 × 30 = 37.5 gives an actual building height of 37.5 feet.",
+          "es": "La altura del dibujo es 1.25 pulgadas y cada pulgada representa 30 pies. Al multiplicar 1.25 × 30 = 37.5 se obtiene una altura real de 37.5 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q2": {
+      "inputHash": "9ba47cefe1757bcd58cf2b12245f2cd38fc221914202f0fb4de2be891350b18a",
+      "explanation": {
+        "text": {
+          "en": "Rewrite −2/5 as −0.4 and −3/4 as −0.75. Then −0.75 − (−0.4) + 0.4 − 0.75 = −0.75 + 0.4 + 0.4 − 0.75 = −0.7.",
+          "es": "Reescribe −2/5 como −0.4 y −3/4 como −0.75. Entonces −0.75 − (−0.4) + 0.4 − 0.75 = −0.75 + 0.4 + 0.4 − 0.75 = −0.7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q7": {
+      "inputHash": "2747a03c00c9bbf8c7cd1ca165bc63f2d6c53ee198e4d501232277dffa1e2952",
+      "explanation": {
+        "text": {
+          "en": "Lehana earns $100(0.025)(3) = $7.50 in simple interest, while Marty earns $100(0.02)(3) = $6.00. The difference is $7.50 − $6.00 = $1.50.",
+          "es": "Lehana gana $100(0.025)(3) = $7.50 de interés simple, mientras que Marty gana $100(0.02)(3) = $6.00. La diferencia es $7.50 − $6.00 = $1.50."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q8": {
+      "inputHash": "01ae95011f83174783707cdbac2d3a242ce2d06a2c85e6e4c382354af4f8cfc4",
+      "explanation": {
+        "text": {
+          "en": "Riding an average of m miles for each of 6 days adds 6m miles to the 18 already ridden. To exceed 80 miles, the total must satisfy 6m + 18 > 80.",
+          "es": "Recorrer un promedio de m millas durante cada uno de 6 días agrega 6m a las 18 millas ya recorridas. Para superar 80 millas, el total debe cumplir 6m + 18 > 80."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q9": {
+      "inputHash": "d133c3e926c0868edb2545794dd05430b247d03277be6d2768a4e52e72924d62",
+      "explanation": {
+        "text": {
+          "en": "Before installation, the 12 speeds total 352, so the mean is 352/12 = 29 1/3 mph and the range is 40 − 20 = 20. Afterward, the total is 330, so the mean is 27.5 mph and the range is 35 − 20 = 15; both decreased.",
+          "es": "Antes de instalar el letrero, las 12 velocidades suman 352, así que la media es 352/12 = 29 1/3 mph y el rango es 40 − 20 = 20. Después suman 330, así que la media es 27.5 mph y el rango es 35 − 20 = 15; ambos disminuyeron."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q10": {
+      "inputHash": "53239634df020273c3f261d2a4e6899569d140b4835b3579df51ee0915a166c2",
+      "explanation": {
+        "text": {
+          "en": "The equation is (−5/8)n = −0.4 = −2/5. Divide by −5/8: n = (−2/5) ÷ (−5/8) = (−2/5)(−8/5) = 16/25.",
+          "es": "La ecuación es (−5/8)n = −0.4 = −2/5. Divide entre −5/8: n = (−2/5) ÷ (−5/8) = (−2/5)(−8/5) = 16/25."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q11": {
+      "inputHash": "0a0f391fadefee4e56ccee312be4045e655ce6905ee6827fbc314399082376d1",
+      "explanation": {
+        "text": {
+          "en": "The four equal sides total 10.5 − 1.7 = 8.8 centimeters. Dividing equally gives h = 8.8 ÷ 4 = 2.2 centimeters.",
+          "es": "Los cuatro lados iguales miden en total 10.5 − 1.7 = 8.8 centímetros. Al dividir en partes iguales se obtiene h = 8.8 ÷ 4 = 2.2 centímetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q12": {
+      "inputHash": "852d5000efa6fbb3a6866a5e97bb76ab849ec869afbd752524e66a9965ff14d6",
+      "explanation": {
+        "text": {
+          "en": "Selecting every tenth student entering school samples students from the population the principal wants to study and avoids choosing only one special-interest group. That systematic sample best represents the entire student body.",
+          "es": "Seleccionar a cada décimo estudiante que entra a la escuela toma alumnos de la población que se quiere estudiar y evita elegir solo un grupo de interés particular. Esa muestra sistemática representa mejor a todo el alumnado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q13": {
+      "inputHash": "ca2f317fb4de849fc951443c4d12493566876214c3b1bf1c738edda49a89fb3c",
+      "explanation": {
+        "text": {
+          "en": "The probability of rolling a 3 is 1/4, and the probability of spinning blue is 1/3. The events are independent, so their joint probability is (1/4)(1/3) = 1/12.",
+          "es": "La probabilidad de obtener 3 es 1/4 y la probabilidad de obtener azul es 1/3. Los sucesos son independientes, así que la probabilidad conjunta es (1/4)(1/3) = 1/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q14": {
+      "inputHash": "a93ef3c6bd8b98d0ee51378a46abe3c39a87678d907cbacce7c627119fd596bd",
+      "explanation": {
+        "text": {
+          "en": "The constant cost per lunch is $74.50 ÷ 10 = $7.45. Multiplying $7.45 by x lunches gives the total cost, so the proportional equation is y = 7.45x.",
+          "es": "El costo constante por almuerzo es $74.50 ÷ 10 = $7.45. Al multiplicar $7.45 por x almuerzos se obtiene el costo total, así que la ecuación proporcional es y = 7.45x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q15": {
+      "inputHash": "4fc53ae07c286746488ee53ccf4130201463b4e1184bd7fe37617900d4edc6e4",
+      "explanation": {
+        "text": {
+          "en": "First subtract inside the numerator: 2/3 − 5/6 = 4/6 − 5/6 = −1/6. Then (−1/6) ÷ (3/4) = (−1/6)(4/3) = −4/18 = −2/9.",
+          "es": "Primero resta en el numerador: 2/3 − 5/6 = 4/6 − 5/6 = −1/6. Luego (−1/6) ÷ (3/4) = (−1/6)(4/3) = −4/18 = −2/9."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q16": {
+      "inputHash": "7564315b8493a63fed9c5e02c023ba80bde88f45fb57ac844cdb5da9552b9d68",
+      "explanation": {
+        "text": {
+          "en": "Compare the event probabilities: tails is 1/2, red marble is 1/10, a number below 6 on the cube is 5/6, and a spinner number above 1 is 3/4. Since 5/6 is greatest, event C is most likely.",
+          "es": "Compara las probabilidades: cruz es 1/2, una canica roja es 1/10, un número menor que 6 en el cubo es 5/6 y un número mayor que 1 en la ruleta es 3/4. El suceso C es el más probable porque 5/6 es la mayor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q20": {
+      "inputHash": "881d92e392b4f1fd40f9ea495393f0583170706b7f47c901e789b932ff71dd51",
+      "explanation": {
+        "text": {
+          "en": "After the 82-kilogram crate, 1,050 − 82 = 968 kilograms remain. Since 968 ÷ 40 = 24.2, only 24 whole 40-kilogram crates can be added without exceeding the limit.",
+          "es": "Después de cargar la caja de 82 kilogramos quedan 1,050 − 82 = 968 kilogramos. Como 968 ÷ 40 = 24.2, solo se pueden agregar 24 cajas completas de 40 kilogramos sin superar el límite."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q21": {
+      "inputHash": "71daa850ad8089da2a16f0f68afbd2eeb8b7fcb9ccec56275221cc33597ce06f",
+      "explanation": {
+        "text": {
+          "en": "Convert −0.35 to −7/20, then divide by multiplying by the reciprocal: (8/15) ÷ (−7/20) = (8/15)(−20/7) = −160/105 = −32/21.",
+          "es": "Convierte −0.35 en −7/20 y divide multiplicando por el recíproco: (8/15) ÷ (−7/20) = (8/15)(−20/7) = −160/105 = −32/21."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q22": {
+      "inputHash": "e9da679895e638ebe37757259d0508504f5d0ae95a4367d26a3686d64ce24c85",
+      "explanation": {
+        "text": {
+          "en": "Convert the mixed numbers: 3 1/2 − 9 3/4 = 3.5 − 9.75 = −6.25. Dividing by −2.5 gives −6.25 ÷ −2.5 = 2.5.",
+          "es": "Convierte los números mixtos: 3 1/2 − 9 3/4 = 3.5 − 9.75 = −6.25. Al dividir entre −2.5 se obtiene −6.25 ÷ −2.5 = 2.5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q27": {
+      "inputHash": "0a9ceae290f381db240265bef2713fc56d85d5eef17620f37600de67dbaa2b52",
+      "explanation": {
+        "text": {
+          "en": "Subtracting a negative is equivalent to adding its opposite: 4 − (−7) = 4 + 7. By the commutative property, 4 + 7 = 7 + 4.",
+          "es": "Restar un número negativo equivale a sumar su opuesto: 4 − (−7) = 4 + 7. Por la propiedad conmutativa, 4 + 7 = 7 + 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q28": {
+      "inputHash": "86ba56dcc079a0897529c65213de4aff01e8e68eb58805e5f948377ba4748555",
+      "explanation": {
+        "text": {
+          "en": "The elevation changes from −90 to −20 feet, an increase of −20 − (−90) = 70 feet. Over 15 seconds, the upward rate is 70/15 = 14/3 = 4 2/3 feet per second.",
+          "es": "La elevación cambia de −90 a −20 pies, un aumento de −20 − (−90) = 70 pies. En 15 segundos, la tasa ascendente es 70/15 = 14/3 = 4 2/3 pies por segundo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q29": {
+      "inputHash": "73b1dfa192a4b866686cb484a00372bc8804bc467a1d42a7fd47fe7a0afaf6c5",
+      "explanation": {
+        "text": {
+          "en": "Distribute 3 to both terms: 3((5/4)n + 1.8) = (15/4)n + 5.4. Since 15/4 = 3.75, the product is 3.75n + 5.4.",
+          "es": "Distribuye 3 a ambos términos: 3((5/4)n + 1.8) = (15/4)n + 5.4. Como 15/4 = 3.75, el producto es 3.75n + 5.4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q33": {
+      "inputHash": "27e435809cf16a60f0d212a1981cbf789dd0278de29da9e1dcbc62f5a518a615",
+      "explanation": {
+        "text": {
+          "en": "Subtract the $6 initial fee from the $24 fare to get $18 in mileage charges. At $3 per mile, the distance is $18 ÷ $3 = 6 miles.",
+          "es": "Resta la tarifa inicial de $6 del total de $24 para obtener $18 de cargos por millaje. A $3 por milla, la distancia es $18 ÷ $3 = 6 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q34": {
+      "inputHash": "9bbdec2ec397fe787d7021be8cb77d2a9d8b395488f5973b9ce544a518dae86d",
+      "explanation": {
+        "text": {
+          "en": "Multiplying the original price by 0.95 keeps 95%, which means a 5% decrease. Multiplying that result by 1.15 then adds 15%, so description C matches 1.15(0.95d).",
+          "es": "Multiplicar el precio original por 0.95 conserva el 95%, lo que significa una disminución del 5%. Multiplicar luego por 1.15 aumenta ese resultado un 15%, así que la descripción C corresponde a 1.15(0.95d)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q35": {
+      "inputHash": "21eb0cc78f5562497294fbc053b3308a566f9f2e89b9c668278139b474dca19f",
+      "explanation": {
+        "text": {
+          "en": "The discounted third shirt costs $49.96(0.50) = $24.98, so the pretax total is $49.96 + $49.96 + $24.98 = $124.90. With tax, $124.90(1.071) = $133.7679; dividing by 3 and rounding gives a mean of $44.59.",
+          "es": "La tercera camisa con descuento cuesta $49.96(0.50) = $24.98, así que el total antes de impuestos es $124.90. Con impuestos, $124.90(1.071) = $133.7679; al dividir entre 3 y redondear se obtiene un promedio de $44.59."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q36": {
+      "inputHash": "f88dddbe2fef6dc15fcdb2768801978face618ce2927e9f3217c6d9d7eb116c3",
+      "explanation": {
+        "text": {
+          "en": "In the sample, 36/120 = 0.30 of the students use company Y. Applying that proportion to 380 students gives 0.30 × 380 = 114 students.",
+          "es": "En la muestra, 36/120 = 0.30 de los estudiantes usan la compañía Y. Al aplicar esa proporción a 380 estudiantes se obtiene 0.30 × 380 = 114 estudiantes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q37": {
+      "inputHash": "2684ca9ed16e532d5e5d0d2e11da0dffea7c8943bc5885e65e54c150f1aacfc4",
+      "explanation": {
+        "text": {
+          "en": "The wall area is 42 × 25.5 = 1,071 square feet. Dividing the total wallpaper cost by the area gives $771.12 ÷ 1,071 = $0.72 per square foot.",
+          "es": "El área de la pared es 42 × 25.5 = 1,071 pies cuadrados. Al dividir el costo total entre el área se obtiene $771.12 ÷ 1,071 = $0.72 por pie cuadrado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q38": {
+      "inputHash": "48c38f436efef825b6c504885a8760346b8fa82f83fb455f494d207b8c944d33",
+      "explanation": {
+        "text": {
+          "en": "After saving 15%, the amount to divide is $850(0.85) = $722.50. The total time is 17.25 + 18.25 + 14.5 = 50 hours, so Shawn receives (14.5/50)($722.50) = $209.525, which rounds to $209.53.",
+          "es": "Después de ahorrar el 15%, quedan $850(0.85) = $722.50 para repartir. El tiempo total es 17.25 + 18.25 + 14.5 = 50 horas, así que Shawn recibe (14.5/50)($722.50) = $209.525, que se redondea a $209.53."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q39": {
+      "inputHash": "a5acfd5c97b23555e12e616eb37d7c941d47f4891e7aa1f95ee0f14c6c0d40ef",
+      "explanation": {
+        "text": {
+          "en": "A proportional line through N has constant ratio y/x = 12/18 = 2/3. For point (7.5, 5), 5/7.5 = 2/3, so that point can lie at K on the same line.",
+          "es": "Una recta proporcional que pasa por N tiene la razón constante y/x = 12/18 = 2/3. Para el punto (7.5, 5), 5/7.5 = 2/3, así que ese punto puede ser K en la misma recta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q40": {
+      "inputHash": "5768ffc4a38aced2fdd7492d39a147516d50f21c140cf55818be5777b18dfcbd",
+      "explanation": {
+        "text": {
+          "en": "Distribute −3 and then combine like terms: −3(4x − 2) − 2x = −12x + 6 − 2x = −14x + 6.",
+          "es": "Distribuye −3 y luego combina términos semejantes: −3(4x − 2) − 2x = −12x + 6 − 2x = −14x + 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q41": {
+      "inputHash": "b5dd0954ff1ab2d6c86d4ac5bc038c8aa8d594166cdf186bff3fc5388e7ab73b",
+      "explanation": {
+        "text": {
+          "en": "The graph passes through the origin and the point (0.7, 0.3). The constant of proportionality is blue/orange = y/x = 0.3/0.7 = 3/7.",
+          "es": "La gráfica pasa por el origen y por el punto (0.7, 0.3). La constante de proporcionalidad es azul/naranja = y/x = 0.3/0.7 = 3/7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q42": {
+      "inputHash": "c7d4fb15db1d7e25e1fc7bee5bd87d06ba57e634b7393b04d26225f5946d5f14",
+      "explanation": {
+        "text": {
+          "en": "The pretax subtotal is 0.75n + 0.55p. The tax is 6.25% of that subtotal, or 0.0625(0.75n + 0.55p), so adding subtotal and tax gives the expression in choice B.",
+          "es": "El subtotal antes de impuestos es 0.75n + 0.55p. El impuesto es el 6.25% de ese subtotal, o 0.0625(0.75n + 0.55p), así que sumar subtotal e impuesto da la expresión de la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q43": {
+      "inputHash": "60da03cbb5fe34d3e02f1b97b261026deb56d2b48ae307d295700e3fe4e49265",
+      "explanation": {
+        "text": {
+          "en": "One day has 24 × 60 = 1,440 minutes. At 1/3 ton each minute, the plant processes (1/3)(1,440) = 480 tons per day.",
+          "es": "Un día tiene 24 × 60 = 1,440 minutos. A una tasa de 1/3 de tonelada por minuto, la planta procesa (1/3)(1,440) = 480 toneladas por día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q44": {
+      "inputHash": "fe56dc346ef37092e28361aeb0efd63ff3ee8cb0184114ba65e7f547e01a2404",
+      "explanation": {
+        "text": {
+          "en": "The rectangle has height 30 and width x + 60. Its perimeter equation is 2(30) + 2(x + 60) = 200, so 60 + 2x + 120 = 200 and x = 10 feet.",
+          "es": "El rectángulo tiene altura 30 y ancho x + 60. Su ecuación de perímetro es 2(30) + 2(x + 60) = 200, así que 60 + 2x + 120 = 200 y x = 10 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g7-mc-q45": {
+      "inputHash": "5b8fcd81a4f23adc8d8d826ec3a1b34dcb4dd9e58c0f514a3854a1d4eca2ab44",
+      "explanation": {
+        "text": {
+          "en": "Attendance increased by 1,520 − 950 = 570 people. Relative to last year, the increase is 570/950 = 0.60, and 0.60 × 100% = 60.0%.",
+          "es": "La asistencia aumentó en 1,520 − 950 = 570 personas. En relación con el año pasado, el aumento es 570/950 = 0.60, y 0.60 × 100% = 60.0%."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

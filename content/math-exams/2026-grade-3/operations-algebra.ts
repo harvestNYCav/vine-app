@@ -28,6 +28,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'A',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Divide 54 cookies equally among 9 bags: 54 ÷ 9 = 6 cookies in each bag.',
         es: 'Divide 54 galletas en partes iguales entre 9 bolsas: 54 ÷ 9 = 6 galletas en cada bolsa.',
@@ -56,6 +57,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The pattern adds 6 each time. The next three numbers are 26, 32, and 38, so the seventh number is 38.',
         es: 'El patrón suma 6 cada vez. Los tres números siguientes son 26, 32 y 38, así que el séptimo número es 38.',
@@ -84,6 +86,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Split 5 groups of 6 into 2 groups of 6 and 3 groups of 6: (2 × 6) + (3 × 6) = 12 + 18 = 30.',
         es: 'Separa 5 grupos de 6 en 2 grupos de 6 y 3 grupos de 6: (2 × 6) + (3 × 6) = 12 + 18 = 30.',
@@ -112,6 +115,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Four bags with 2 toys in each bag make 4 equal groups of 2, which is represented by 4 × 2.',
         es: 'Cuatro bolsas con 2 juguetes en cada bolsa forman 4 grupos iguales de 2, lo cual se representa con 4 × 2.',
@@ -140,6 +144,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'A',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Division can be viewed as finding an unknown factor. The value of 28 ÷ 4 is the number that makes 4 × ? = 28 true.',
         es: 'La división se puede ver como hallar un factor desconocido. El valor de 28 ÷ 4 es el número que hace verdadera la ecuación 4 × ? = 28.',
@@ -169,6 +174,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Nellie made 6 × 2 = 12 bracelets. At 10 beads per bracelet, she used 12 × 10 = 120 beads.',
         es: 'Nellie hizo 6 × 2 = 12 brazaletes. Con 10 cuentas por brazalete, usó 12 × 10 = 120 cuentas.',
@@ -197,6 +203,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The number line shows 42 split into 6 equal jumps of 7. That matches placing 42 marbles into 6 groups with 7 marbles in each group.',
         es: 'La recta numérica muestra 42 dividido en 6 saltos iguales de 7. Eso corresponde a colocar 42 canicas en 6 grupos con 7 canicas en cada grupo.',
@@ -225,6 +232,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'If a number divided by 4 equals 8, multiply 8 by 4 to find the number: 8 × 4 = 32.',
         es: 'Si un número dividido entre 4 es igual a 8, multiplica 8 por 4 para hallar el número: 8 × 4 = 32.',
@@ -252,6 +260,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     },
     grading: {
       mode: 'self-assessed',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Use the inverse relationship between multiplication and division: 45 ÷ 5 = 9. The unknown number is 9, and 9 × 5 = 45 confirms it.',
         es: 'Usa la relación inversa entre la multiplicación y la división: 45 ÷ 5 = 9. El número desconocido es 9, y 9 × 5 = 45 lo confirma.',
@@ -289,6 +298,7 @@ export const OPERATIONS_ALGEBRA_QUESTIONS: MathExamQuestionRecord[] = [
     },
     grading: {
       mode: 'self-assessed',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Three tickets cost 3 × $9 = $27, and two buckets of popcorn cost 2 × $4 = $8. The total is $27 + $8 = $35, so the friend is correct and $5 remains.',
         es: 'Tres entradas cuestan 3 × $9 = $27, y dos contenedores de palomitas de maíz cuestan 2 × $4 = $8. El total es $27 + $8 = $35, así que el amigo está en lo correcto y sobran $5.',

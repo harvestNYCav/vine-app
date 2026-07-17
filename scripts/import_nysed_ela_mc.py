@@ -3,7 +3,9 @@
 
 The importer stores tightly cropped question-and-choice images plus one local,
 page-break-free passage image per stimulus. Passage images retain the original
-line or paragraph numbers, illustrations, bylines, and source credits. All
+line or paragraph numbers, illustrations, bylines, and source credits. It also
+extracts published correct-choice rationales from the 2013–14 annotations and
+loads hash-pinned Vine-authored explanation sidecars for 2015 onward. All
 release URLs are discovered from NYSED's index.
 
 Typical full import::
@@ -37,32 +39,87 @@ import pdfplumber
 from PIL import Image
 
 # The Math importer owns the battle-tested atomic-download, gray-box marker,
-# PDF render, WebP validation, and alt-text helpers.  ELA has its own source
+# PDF render, WebP validation, and alt-text helpers. ELA has its own source
 # discovery and metadata parser, but deliberately shares those low-level bits.
-from import_nysed_math_mc import (  # type: ignore
-    CHOICES,
-    GRADE_RE,
-    ImportFailure,
-    SourceDocument,
-    _ListPageParser,
-    atomic_write_json,
-    context_value,
-    extract_alt_texts,
-    get_pdf,
-    group_word_rows,
-    href_year_grade,
-    load_index,
-    render_question_crops,
-    walk_list_nodes,
-)
-from nysed_ela_image_validation import (  # type: ignore
-    ElaImageValidationError,
-    validate_ela_question_image,
-)
-from nysed_ela_passages import (  # type: ignore
-    PASSAGE_SCRIPT_VERSION,
-    render_passage_assets,
-)
+try:
+    from scripts.import_nysed_math_mc import (
+        CHOICES,
+        GRADE_RE,
+        ImportFailure,
+        SourceDocument,
+        _ListPageParser,
+        atomic_write_json,
+        context_value,
+        extract_alt_texts,
+        get_pdf,
+        group_word_rows,
+        href_year_grade,
+        load_index,
+        render_question_crops,
+        sha256_file,
+        walk_list_nodes,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from import_nysed_math_mc import (  # type: ignore[no-redef]
+        CHOICES,
+        GRADE_RE,
+        ImportFailure,
+        SourceDocument,
+        _ListPageParser,
+        atomic_write_json,
+        context_value,
+        extract_alt_texts,
+        get_pdf,
+        group_word_rows,
+        href_year_grade,
+        load_index,
+        render_question_crops,
+        sha256_file,
+        walk_list_nodes,
+    )
+
+try:
+    from scripts.nysed_ela_explanations import (
+        DEFAULT_EXPLANATIONS_ROOT,
+        ElaExplanationError,
+        QuestionExplanationInput,
+        extract_official_rationale,
+        load_exam_explanations,
+        question_explanation_input_hash,
+        validate_question_explanation,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_ela_explanations import (  # type: ignore[no-redef]
+        DEFAULT_EXPLANATIONS_ROOT,
+        ElaExplanationError,
+        QuestionExplanationInput,
+        extract_official_rationale,
+        load_exam_explanations,
+        question_explanation_input_hash,
+        validate_question_explanation,
+    )
+
+try:
+    from scripts.nysed_ela_image_validation import (
+        ElaImageValidationError,
+        validate_ela_question_image,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_ela_image_validation import (  # type: ignore[no-redef]
+        ElaImageValidationError,
+        validate_ela_question_image,
+    )
+
+try:
+    from scripts.nysed_ela_passages import (
+        PASSAGE_SCRIPT_VERSION,
+        render_passage_assets,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_ela_passages import (  # type: ignore[no-redef]
+        PASSAGE_SCRIPT_VERSION,
+        render_passage_assets,
+    )
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -94,6 +151,8 @@ EXPECTED_MC_COUNTS: dict[int, tuple[int, int, int, int, int, int]] = {
 }
 EXPECTED_GRAND_TOTAL = 1583
 EXPECTED_LEGACY_TOTAL = 269
+EXPECTED_OFFICIAL_RATIONALE_TOTAL = 149
+EXPECTED_VINE_EXPLANATION_TOTAL = 1434
 EXPECTED_LEGACY_GROUP_COUNTS: dict[tuple[int, int], tuple[int, ...]] = {
     (2013, 3): (6,),
     (2013, 4): (5,),
@@ -166,6 +225,7 @@ class LegacyItem:
     secondary_standards: tuple[str, ...]
     crop_box: tuple[float, float, float, float]
     passage_index: int
+    official_rationale: str | None
 
 
 def log(message: str) -> None:
@@ -335,6 +395,15 @@ def parse_legacy_items(
                     f"Answer-key mismatch for {item_code}: suffix={suffix_key}, printed={printed_key}"
                 )
             primary, secondary = normalize_legacy_standards(block_text, grade)
+            official_rationale: str | None = None
+            if year <= 2014:
+                try:
+                    official_rationale = extract_official_rationale(block_text, printed_key)
+                except ElaExplanationError as exc:
+                    raise ImportFailure(
+                        f"Could not extract the official rationale for {year} Grade {grade} "
+                        f"item {item_code}: {exc}"
+                    ) from exc
 
             page = pdf.pages[page_index]
             key_tops: list[float] = []
@@ -372,6 +441,7 @@ def parse_legacy_items(
                     secondary_standards=secondary,
                     crop_box=crop_box,
                     passage_index=passage_index,
+                    official_rationale=official_rationale,
                 )
             )
 
@@ -427,6 +497,137 @@ def exam_copy(year: int, grade: int) -> tuple[str, str, str]:
     )
     source_title = f"{year} NYS Grade {grade} English Language Arts Test Released Questions"
     return title, description, source_title
+
+
+def _explanation_asset_path(asset_root: Path, src: Any, *, label: str) -> Path:
+    prefix = f"{APP_PUBLIC_PREFIX}/"
+    if not isinstance(src, str) or not src.startswith(prefix):
+        raise ImportFailure(f"{label} is outside the ELA asset prefix: {src!r}")
+    relative_text = src[len(prefix) :]
+    relative = Path(relative_text)
+    if (
+        not relative_text
+        or "\\" in relative_text
+        or relative.is_absolute()
+        or ".." in relative.parts
+    ):
+        raise ImportFailure(f"{label} has an unsafe ELA asset path: {src}")
+    path = Path(asset_root) / relative
+    if not path.is_file() or path.is_symlink():
+        raise ImportFailure(f"Missing or unsafe {label}: {path}")
+    return path
+
+
+def build_exam_explanation_input_hashes(
+    exam: dict[str, Any],
+    asset_root: Path,
+) -> dict[str, str]:
+    """Hash the exact question, passage, key, and standards behind each explanation."""
+
+    stimuli = exam.get("stimuli")
+    questions = exam.get("questions")
+    if not isinstance(stimuli, list) or not stimuli:
+        raise ImportFailure(f"Cannot build explanation inputs without stimuli in {exam.get('id')}")
+    if not isinstance(questions, list) or not questions:
+        raise ImportFailure(f"Cannot build explanation inputs without questions in {exam.get('id')}")
+
+    passage_hashes: dict[str, str] = {}
+    for stimulus in stimuli:
+        if not isinstance(stimulus, dict) or not isinstance(stimulus.get("id"), str):
+            raise ImportFailure(f"Malformed stimulus while hashing explanations in {exam.get('id')}")
+        stimulus_id = str(stimulus["id"])
+        if stimulus_id in passage_hashes:
+            raise ImportFailure(f"Duplicate explanation stimulus {stimulus_id}")
+        passage = stimulus.get("passage")
+        if not isinstance(passage, dict):
+            raise ImportFailure(f"Missing passage asset while hashing {stimulus_id}")
+        passage_path = _explanation_asset_path(
+            asset_root,
+            passage.get("src"),
+            label=f"passage image for {stimulus_id}",
+        )
+        passage_hashes[stimulus_id] = sha256_file(passage_path)
+
+    input_hashes: dict[str, str] = {}
+    for question in questions:
+        if not isinstance(question, dict) or not isinstance(question.get("id"), str):
+            raise ImportFailure(f"Malformed question while hashing explanations in {exam.get('id')}")
+        question_id = str(question["id"])
+        if question_id in input_hashes:
+            raise ImportFailure(f"Duplicate explanation question {question_id}")
+        stimulus_id = question.get("stimulusId")
+        if not isinstance(stimulus_id, str) or stimulus_id not in passage_hashes:
+            raise ImportFailure(f"Question {question_id} has no explanation passage input")
+        image = question.get("image")
+        if not isinstance(image, dict):
+            raise ImportFailure(f"Question {question_id} has no explanation image input")
+        question_path = _explanation_asset_path(
+            asset_root,
+            image.get("src"),
+            label=f"question image for {question_id}",
+        )
+        secondary_standards = question.get("secondaryStandards", [])
+        if not isinstance(secondary_standards, list) or not all(
+            isinstance(standard, str) and standard.strip()
+            for standard in secondary_standards
+        ):
+            raise ImportFailure(f"Question {question_id} has invalid explanation standards")
+        try:
+            input_value = QuestionExplanationInput.create(
+                question_id=question_id,
+                alt=str(question.get("alt", "")),
+                correct=str(question.get("correct", "")),
+                primary_standard=str(question.get("primaryStandard", "")),
+                secondary_standards=secondary_standards,
+                question_image_sha256=sha256_file(question_path),
+                passage_image_sha256=passage_hashes[stimulus_id],
+            )
+            input_hashes[question_id] = question_explanation_input_hash(input_value)
+        except (ElaExplanationError, OSError, TypeError, ValueError) as exc:
+            raise ImportFailure(
+                f"Could not hash explanation inputs for {question_id}: {exc}"
+            ) from exc
+    return input_hashes
+
+
+def attach_vine_authored_explanations(
+    exam: dict[str, Any],
+    asset_root: Path,
+    *,
+    explanations_root: Path = DEFAULT_EXPLANATIONS_ROOT,
+) -> None:
+    """Attach an exactly covering, hash-pinned sidecar to a 2015+ exam."""
+
+    year = int(exam.get("year", 0))
+    grade = int(exam.get("grade", 0))
+    exam_id = str(exam.get("id", ""))
+    if year < 2015:
+        raise ImportFailure(f"Official-rationale release {exam_id} must not use an authored sidecar")
+    questions = exam.get("questions")
+    if not isinstance(questions, list) or not all(isinstance(question, dict) for question in questions):
+        raise ImportFailure(f"Malformed question list while attaching explanations in {exam_id}")
+    if any("explanation" in question for question in questions):
+        raise ImportFailure(f"Authored explanations would overwrite existing data in {exam_id}")
+    expected_input_hashes = build_exam_explanation_input_hashes(exam, asset_root)
+    try:
+        explanations = load_exam_explanations(
+            year=year,
+            grade=grade,
+            exam_id=exam_id,
+            expected_input_hashes=expected_input_hashes,
+            root=explanations_root,
+        )
+    except (ElaExplanationError, OSError, TypeError, ValueError) as exc:
+        raise ImportFailure(f"ELA explanation sidecar failed for {exam_id}: {exc}") from exc
+
+    for question in questions:
+        question_id = str(question["id"])
+        explanation = explanations[question_id]
+        if explanation.source != "vine-authored":
+            raise ImportFailure(
+                f"Authored explanation {question_id} has invalid source {explanation.source}"
+            )
+        question["explanation"] = dataclasses.asdict(explanation)
 
 
 def import_legacy_release(
@@ -566,6 +767,13 @@ def import_legacy_release(
             "image": dataclasses.asdict(images[number]),
             "alt": alts[number],
         }
+        if release.year <= 2014:
+            if item.official_rationale is None:
+                raise ImportFailure(f"Missing official rationale for {question['id']}")
+            question["explanation"] = {
+                "text": item.official_rationale,
+                "source": "official-nysed",
+            }
         if item.secondary_standards:
             question["secondaryStandards"] = list(item.secondary_standards)
         questions.append(question)
@@ -584,6 +792,8 @@ def import_legacy_release(
         "stimuli": stimuli,
         "questions": questions,
     }
+    if release.year >= 2015:
+        attach_vine_authored_explanations(exam, asset_root)
     validate_exam(exam)
     return exam
 
@@ -642,6 +852,21 @@ def validate_exam(exam: dict[str, Any]) -> None:
         numbers.append(number)
         if question["correct"] not in CHOICES:
             raise ImportFailure(f"Invalid key in {question['id']}")
+        try:
+            validated_explanation = validate_question_explanation(
+                question.get("explanation"),
+                question_id=str(question["id"]),
+            )
+        except (ElaExplanationError, TypeError, ValueError) as exc:
+            raise ImportFailure(f"Invalid explanation in {question['id']}: {exc}") from exc
+        expected_explanation_source = "official-nysed" if year <= 2014 else "vine-authored"
+        if validated_explanation.source != expected_explanation_source:
+            raise ImportFailure(
+                f"Wrong explanation source in {question['id']}: "
+                f"expected {expected_explanation_source}, got {validated_explanation.source}"
+            )
+        if question["explanation"] != dataclasses.asdict(validated_explanation):
+            raise ImportFailure(f"Explanation is not canonically normalized in {question['id']}")
         if question["stimulusId"] not in stimulus_ids or question["skill"] not in SKILLS:
             raise ImportFailure(f"Invalid stimulus/skill in {question['id']}")
         stimulus = next(value for value in stimuli if value["id"] == question["stimulusId"])
@@ -1084,7 +1309,10 @@ def main(argv: Sequence[str] | None = None) -> int:
             print(json.dumps(dataclasses.asdict(release), ensure_ascii=False))
         return 0
 
-    from nysed_ela_modern import import_modern_release  # type: ignore
+    try:
+        from scripts.nysed_ela_modern import import_modern_release
+    except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+        from nysed_ela_modern import import_modern_release  # type: ignore[no-redef]
 
     def process_key(key: tuple[int, int]) -> dict[str, Any]:
         year, grade = key
@@ -1115,6 +1343,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 tesseract_binary=args.tesseract,
                 script_version=f"ela-{SCRIPT_VERSION}",
             )
+            attach_vine_authored_explanations(exam, asset_root)
         validate_exam(exam)
         log(f"  Generated {len(exam['questions'])} MC questions")
         return exam
@@ -1148,12 +1377,30 @@ def main(argv: Sequence[str] | None = None) -> int:
             f"Full catalog parity failed: expected 78/{EXPECTED_GRAND_TOTAL}, "
             f"got {len(exams)}/{len(question_ids)}"
         )
+    explanation_sources = [
+        str(question.get("explanation", {}).get("source", ""))
+        for exam in exams
+        for question in exam["questions"]
+    ]
+    if is_full:
+        official_count = explanation_sources.count("official-nysed")
+        vine_count = explanation_sources.count("vine-authored")
+        if (
+            official_count != EXPECTED_OFFICIAL_RATIONALE_TOTAL
+            or vine_count != EXPECTED_VINE_EXPLANATION_TOTAL
+            or len(explanation_sources) != official_count + vine_count
+        ):
+            raise ImportFailure(
+                "Full explanation provenance parity failed: "
+                f"expected official/vine={EXPECTED_OFFICIAL_RATIONALE_TOTAL}/"
+                f"{EXPECTED_VINE_EXPLANATION_TOTAL}, got {official_count}/{vine_count}"
+            )
     if failures and not exams:
         raise ImportFailure("All requested exams failed; refusing to write an empty catalog")
 
     generated_at = deterministic_timestamp(index_html)
     catalog = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "generatedAt": generated_at,
         "accessedAt": os.environ.get("NYSED_ACCESSED_AT", IMPORT_ACCESSED_AT),
         "sourceUpdatedAt": generated_at.split("T", 1)[0],

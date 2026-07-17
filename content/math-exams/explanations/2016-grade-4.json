@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2016-grade-4-mc-v1",
+  "questions": {
+    "nysed-2016-g4-mc-q1": {
+      "inputHash": "3545238f1f5e11a2f000aafa2eed81b36e75c1b095ae11040e24351d33bc7ea0",
+      "explanation": {
+        "text": {
+          "en": "The digits in 270,240 represent 2 hundred-thousands, 7 ten-thousands, 2 hundreds, and 4 tens. Thus, 270,240 = 200,000 + 70,000 + 200 + 40.",
+          "es": "Las cifras de 270,240 representan 2 centenas de millar, 7 decenas de millar, 2 centenas y 4 decenas. Por lo tanto, 270,240 = 200,000 + 70,000 + 200 + 40."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q2": {
+      "inputHash": "f8e20fd96f77c05272dcbd12d745f02989305702cceed9cddd342775b519c18c",
+      "explanation": {
+        "text": {
+          "en": "The entire grade has 5 times the 20 students in Mr. Clark's class. Multiplying gives 20 × 5 = n, so n = 100.",
+          "es": "Todo el grado tiene 5 veces los 20 estudiantes de la clase del Sr. Clark. Al multiplicar se obtiene 20 × 5 = n, así que n = 100."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q3": {
+      "inputHash": "be63eb1e7f0a05ff2803ea4e0a084578eb5a524bbcc70a5d76c08a5f652fc8b2",
+      "explanation": {
+        "text": {
+          "en": "The original model has 1 of 3 equal parts shaded, or 1/3. Model A has 4 of 12 equal parts shaded, and 4/12 simplifies to 1/3.",
+          "es": "El modelo original tiene sombreada 1 de 3 partes iguales, o 1/3. El modelo A tiene sombreadas 4 de 12 partes iguales, y 4/12 se simplifica a 1/3; por lo tanto, las fracciones son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q4": {
+      "inputHash": "90cdc67e0b04d1d82a3b5a3287f7dda1cfd91ef874438e251d2dd961db1dfe48",
+      "explanation": {
+        "text": {
+          "en": "Find the missing addend by subtracting: 7 1/8 − 3 2/8. Regroup 7 1/8 as 6 9/8; then 6 9/8 − 3 2/8 = 3 7/8.",
+          "es": "Se encuentra el sumando faltante restando: 7 1/8 − 3 2/8. Se reagrupa 7 1/8 como 6 9/8; entonces 6 9/8 − 3 2/8 = 3 7/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q5": {
+      "inputHash": "8fa1ceb3572f2a5e7126a4113c452919fb0deaa8029ae5066fb47988559548e5",
+      "explanation": {
+        "text": {
+          "en": "Dividing by 10 moves every digit one place to the right. Starting with 30,000 gives 3,000 after the first division and 300 after the second.",
+          "es": "Dividir entre 10 mueve cada cifra un lugar hacia la derecha. Al comenzar con 30,000 se obtiene 3,000 después de la primera división y 300 después de la segunda."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q6": {
+      "inputHash": "9ecef5891fb5f5632f38f5e88bc2a1e0fd8051ae9ce1032be02a0ca6242acca7",
+      "explanation": {
+        "text": {
+          "en": "Comets received 36 votes. Three times 36 is 3 × 36 = 108, and the table shows that Wolves received 108 votes.",
+          "es": "Comets recibió 36 votos. Tres veces 36 es 3 × 36 = 108, y la tabla muestra que Wolves recibió 108 votos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q7": {
+      "inputHash": "69a5a7b76eafdf1e7deacde6705d0d2e2684818384bd588c52956c42c6aee1a5",
+      "explanation": {
+        "text": {
+          "en": "A ray is named with its endpoint first and then a point in its direction. The pictured ray starts at G and passes through K, so its name is ray GK.",
+          "es": "Una semirrecta se nombra primero por su extremo y después por un punto en su dirección. La semirrecta dibujada comienza en G y pasa por K, así que se llama semirrecta GK."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q8": {
+      "inputHash": "ff5246b7f18481dd56c8c5b02968a521b4b5b894e2daddc0a9b55a00455722bf",
+      "explanation": {
+        "text": {
+          "en": "A complete circle measures 360°. An angle of 20° is therefore 20 out of 360 degrees of the circle, so the requested fraction is 20/360.",
+          "es": "Un círculo completo mide 360°. Por lo tanto, un ángulo de 20° ocupa 20 de los 360 grados del círculo, así que la fracción pedida es 20/360."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q9": {
+      "inputHash": "8b0f0ed4c6829d3d9e5f860bc7b255ebfb592bbad0f3a32f12c9956510458961",
+      "explanation": {
+        "text": {
+          "en": "The wood costs 3 × $7 = $21, and the glass costs 4 × $23 = $92. Adding the two costs gives $21 + $92 = $113.",
+          "es": "La madera cuesta 3 × $7 = $21 y el vidrio cuesta 4 × $23 = $92. Al sumar ambos costos se obtiene $21 + $92 = $113."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q13": {
+      "inputHash": "a1ec89b8d38fcf4985fb92b04ec731d477d33276d0f4a1f0a86a31e0aab2e028",
+      "explanation": {
+        "text": {
+          "en": "Each apron uses 2/3 yard, so 14 aprons use 14 × 2/3 = 28/3 yards. Since 28/3 = 9 1/3, Jason needs 9 1/3 yards.",
+          "es": "Cada delantal usa 2/3 de yarda, así que 14 delantales usan 14 × 2/3 = 28/3 yardas. Como 28/3 = 9 1/3, Jason necesita 9 1/3 yardas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q17": {
+      "inputHash": "21d8254d53c2aec07e65bc13f183c61a793ed7994520ac923778bdf59ee4cb67",
+      "explanation": {
+        "text": {
+          "en": "A 45° angle is half of a 90° right angle. Angle A represents half of a right-angle-sized turn, while the other choices are noticeably larger.",
+          "es": "Un ángulo de 45° es la mitad de un ángulo recto de 90°. El ángulo A representa aproximadamente la mitad de un giro de ángulo recto, mientras que las otras opciones son claramente mayores."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q18": {
+      "inputHash": "7afcfc1727749adacde36baea658fb313320a1df178128d1ae9a43a0758f29ce",
+      "explanation": {
+        "text": {
+          "en": "The digit 5 in 24,513 has value 500, while the digit 5 in 357 has value 50. Since 500 = 10 × 50, the first value is 10 times the second.",
+          "es": "La cifra 5 en 24,513 vale 500, mientras que la cifra 5 en 357 vale 50. Como 500 = 10 × 50, el primer valor es 10 veces el segundo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q23": {
+      "inputHash": "47d0965ddb40c50342a22ddab6bb8c2742d75869319685c4857a22a2e488d3f3",
+      "explanation": {
+        "text": {
+          "en": "Multiply the 934 puzzles by $6 each: 934 × 6 = (900 × 6) + (34 × 6) = 5,400 + 204 = $5,604.",
+          "es": "Se multiplican los 934 rompecabezas por $6 cada uno: 934 × 6 = (900 × 6) + (34 × 6) = 5,400 + 204 = $5,604."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q24": {
+      "inputHash": "deb2fc34cfd920eeb4d7288567ac1176e51b722639e50788e61a84e493589225",
+      "explanation": {
+        "text": {
+          "en": "Perpendicular lines intersect to form a 90° angle. In figure B, the vertical and horizontal lines meet at a right angle, so they are perpendicular.",
+          "es": "Las rectas perpendiculares se cruzan para formar un ángulo de 90°. En la figura B, las rectas vertical y horizontal forman un ángulo recto, así que son perpendiculares."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q25": {
+      "inputHash": "a7828206c5c17a3d52bb5c5d95e9fc053368bd40225bbc394d7d8b6d79b057f8",
+      "explanation": {
+        "text": {
+          "en": "Use a common denominator to compare: 2/3 = 8/12 and 3/4 = 9/12. Because 8/12 < 9/12, placing 3/4 in the blank makes the inequality true.",
+          "es": "Se usa un denominador común para comparar: 2/3 = 8/12 y 3/4 = 9/12. Como 8/12 < 9/12, colocar 3/4 en el espacio hace verdadera la desigualdad."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q26": {
+      "inputHash": "5fec49cbaffd6ea4b03e70d8691010f4d56d51dbd95e276cbe7cac59e6fe96c2",
+      "explanation": {
+        "text": {
+          "en": "The fraction 45/360 is the part of a full 360° turn made by a 45° angle, which is 1/8 of a circle. Model C shows an angle of about 45°, or one-eighth of a turn.",
+          "es": "La fracción 45/360 es la parte de un giro completo de 360° que forma un ángulo de 45°, lo que equivale a 1/8 de círculo. El modelo C muestra aproximadamente 45°, o un octavo de giro."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q27": {
+      "inputHash": "e95e76da88912ea967d61d7c26c9d0e5e74058b455f6c0921a3053ffb6b774f1",
+      "explanation": {
+        "text": {
+          "en": "The given pattern adds 15 each time: 5, 20, 35, 50, 65. Choice C also adds 15 each time: 12, 27, 42, 57, 72, so it follows the same rule.",
+          "es": "El patrón dado suma 15 cada vez: 5, 20, 35, 50, 65. La opción C también suma 15 cada vez: 12, 27, 42, 57, 72; por lo tanto, sigue la misma regla."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q28": {
+      "inputHash": "5fff43d51d16cc821fb0517751c19999b1140f16c752f9e0a3ec7099b22c4f04",
+      "explanation": {
+        "text": {
+          "en": "The angle is acute and appears slightly smaller than a 45° angle. Therefore, 42° best matches that size; 36° is too small and 138° and 142° are obtuse.",
+          "es": "El ángulo es agudo y parece un poco menor que un ángulo de 45°. Por lo tanto, 42° se aproxima mejor; 36° es demasiado pequeño y 138° y 142° son obtusos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q29": {
+      "inputHash": "406dca85fa0cc98beee138ca778700cd3810c26561829b0184adbac890941376",
+      "explanation": {
+        "text": {
+          "en": "Logan read 3 times Kailyn's 24 pages, so the unknown number of Logan's pages is found by multiplying. The matching equation is 24 × 3 = ?.",
+          "es": "Logan leyó 3 veces las 24 páginas de Kailyn, así que el número desconocido de páginas se encuentra multiplicando. La ecuación correspondiente es 24 × 3 = ?."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q30": {
+      "inputHash": "1fa7d514c4e9443780cecfa781139dea6bff59f7650ec6072b9395f96861a7df",
+      "explanation": {
+        "text": {
+          "en": "Divide the total money by the price of each shirt: 5,144 ÷ 8 = 643. This can be checked because 643 × 8 = 5,144.",
+          "es": "Se divide el dinero total entre el precio de cada camiseta: 5,144 ÷ 8 = 643. Se puede comprobar porque 643 × 8 = 5,144."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q31": {
+      "inputHash": "901b46ca0cef5913a4fdb0bde0993804bfacb9c6860f5fc36e63920e44052dfc",
+      "explanation": {
+        "text": {
+          "en": "The strips use the same 12 equal parts. The first has 3/12 shaded and the second has 6/12 shaded, so their sum is 3/12 + 6/12 = 9/12.",
+          "es": "Las tiras usan las mismas 12 partes iguales. La primera tiene 3/12 sombreados y la segunda 6/12, así que la suma es 3/12 + 6/12 = 9/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q32": {
+      "inputHash": "3de03e066ca868241d86d959adef074c9d2dbd1588c1fdd4010a1a9e15712c34",
+      "explanation": {
+        "text": {
+          "en": "Use the distributive property: 28 × 42 = 28 × (40 + 2) = 1,120 + 56 = 1,176.",
+          "es": "Se usa la propiedad distributiva: 28 × 42 = 28 × (40 + 2) = 1,120 + 56 = 1,176."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q33": {
+      "inputHash": "8d65e9ebd6b30d45e45d5013f588b77b4527520286281c3cfb1113c3ced12c22",
+      "explanation": {
+        "text": {
+          "en": "Add the plotted lengths in eighths: (1 + 2 + 3 + 4 + 4 + 7 + 7 + 8)/8 = 36/8 feet. Each X contributes one of those lengths.",
+          "es": "Se suman las longitudes de la gráfica en octavos: (1 + 2 + 3 + 4 + 4 + 7 + 7 + 8)/8 = 36/8 pies. Cada X aporta una de esas longitudes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q34": {
+      "inputHash": "a40ffd839b7ccf6381adcaaa26e8fa249427b882fd83119ccbfe80583e78bb61",
+      "explanation": {
+        "text": {
+          "en": "The expression 2 × 4/6 means two groups of four sixths, for a total of 8/6. Model A shows 8 separate one-sixth pieces shaded, arranged as two groups of 4.",
+          "es": "La expresión 2 × 4/6 significa dos grupos de cuatro sextos, para un total de 8/6. El modelo A muestra 8 piezas de un sexto sombreadas, organizadas en dos grupos de 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q38": {
+      "inputHash": "bae31932595a0a77d3606cf6753e29a389c807e7fbfe09142f695659af2c4500",
+      "explanation": {
+        "text": {
+          "en": "Dani's 45 marbles are 5 times Joe's amount, so divide to undo the multiplication: 45 ÷ 5 = 9. Joe has 9 marbles.",
+          "es": "Las 45 canicas de Dani son 5 veces la cantidad de Joe, así que se divide para deshacer la multiplicación: 45 ÷ 5 = 9. Joe tiene 9 canicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g4-mc-q39": {
+      "inputHash": "27ba9977aea3582fd62d14d11feaa474b62c4a56794739d93c77fdc061c8c5d6",
+      "explanation": {
+        "text": {
+          "en": "A quotient of 160 with remainder 2 means the number is 4 × 160 + 2. Calculating gives 640 + 2 = 642.",
+          "es": "Un cociente de 160 con residuo 2 significa que el número es 4 × 160 + 2. Al calcular se obtiene 640 + 2 = 642."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

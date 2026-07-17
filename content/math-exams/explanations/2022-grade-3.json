@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2022-grade-3-mc-v1",
+  "questions": {
+    "nysed-2022-g3-mc-q1": {
+      "inputHash": "5c636f6f30e52e2565db0477618eb494c117cbd2c202db9e13b011cc58032967",
+      "explanation": {
+        "text": {
+          "en": "Mr. Green buys 4 equal packages with 8 cups in each package, so the total is 4 groups of 8. The expression 8 × 4, choice D, gives 32 cups.",
+          "es": "El Sr. Green compra 4 paquetes iguales con 8 vasos en cada uno, así que el total es 4 grupos de 8. La expresión 8 × 4, la opción D, da 32 vasos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q2": {
+      "inputHash": "a1f5a52b30c264b89c25c3eefa8052c8955205688706ca670492e1ad40bd3d70",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 3 equal parts, and M is at the second division point. Therefore M represents 2/3, choice D.",
+          "es": "El intervalo de 0 a 1 está dividido en 3 partes iguales y M está en la segunda marca. Por lo tanto, M representa 2/3, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q3": {
+      "inputHash": "97a3113aa457def4d703c12c1d30dcc692013dd83f8972eb2ebdf9341e3e3070",
+      "explanation": {
+        "text": {
+          "en": "Split the shape into a bottom rectangle measuring 9 cm by 3 cm and a top-left rectangle measuring 5 cm by 2 cm. Their areas add to (9 × 3) + (5 × 2) = 27 + 10 = 37 square centimeters, choice B.",
+          "es": "Se divide la figura en un rectángulo inferior de 9 cm por 3 cm y otro superior izquierdo de 5 cm por 2 cm. Sus áreas suman (9 × 3) + (5 × 2) = 27 + 10 = 37 centímetros cuadrados, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q4": {
+      "inputHash": "48df98518075411fef754b982d0dcabd5209050434ba508db46c30026f41db26",
+      "explanation": {
+        "text": {
+          "en": "There are 3 bags and each has a mass of 9 kilograms, so multiply the equal groups: 3 × 9 = 27 kilograms. This is choice D.",
+          "es": "Hay 3 bolsas y cada una tiene una masa de 9 kilogramos, así que se multiplican los grupos iguales: 3 × 9 = 27 kilogramos. Esta es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q9": {
+      "inputHash": "dc41c4429880f81ce1065588a8b4a3bc3c94432da8ad12b2c692728bc1fbb9c7",
+      "explanation": {
+        "text": {
+          "en": "Break 7 into 3 + 4 and use the distributive property: 5 × 7 = 5 × (3 + 4) = (5 × 3) + (5 × 4). That is choice D, and both expressions equal 35.",
+          "es": "Se descompone 7 en 3 + 4 y se usa la propiedad distributiva: 5 × 7 = 5 × (3 + 4) = (5 × 3) + (5 × 4). Esta es la opción D y ambas expresiones equivalen a 35."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q10": {
+      "inputHash": "c295c09b813e666b4e2416e13b06aad818ca0eaf32fff2e618b150dfd47f64f5",
+      "explanation": {
+        "text": {
+          "en": "The $36 earned over 4 equal weeks must be divided by 4. Since 36 ÷ 4 = 9, Zach earns $9 each week, choice A.",
+          "es": "Los $36 ganados durante 4 semanas iguales se dividen entre 4. Como 36 ÷ 4 = 9, Zach gana $9 por semana, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q11": {
+      "inputHash": "8a25699ebf992f97f92937e48abd9f48f33829ac0a7aa57f29867ea6fb9ccd5a",
+      "explanation": {
+        "text": {
+          "en": "Seventy is 7 tens, so 7 × 70 is 7 × 7 tens. Because 7 × 7 = 49, the product is 49 tens, or 490, choice C.",
+          "es": "Setenta equivale a 7 decenas, así que 7 × 70 es 7 × 7 decenas. Como 7 × 7 = 49, el producto es 49 decenas, es decir, 490, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q12": {
+      "inputHash": "d0fcbad627e352f52b79004a30788e86beec3388c5f62c0b4a3c945eb5cf060a",
+      "explanation": {
+        "text": {
+          "en": "A rectangle with side lengths 1 unit and 2 units has area length × width. Thus 1 × 2 = 2 square units, choice A.",
+          "es": "Un rectángulo con lados de 1 unidad y 2 unidades tiene un área igual a largo × ancho. Por lo tanto, 1 × 2 = 2 unidades cuadradas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q15": {
+      "inputHash": "2ff6d997c50d0e91676e90965680f2a453a30572aa861d6024a813b537db1456",
+      "explanation": {
+        "text": {
+          "en": "The equation is 48 ÷ ? = 8, so the missing divisor must make ? × 8 = 48. Since 6 × 8 = 48, the missing number is 6, choice A.",
+          "es": "La ecuación es 48 ÷ ? = 8, así que el divisor que falta debe cumplir ? × 8 = 48. Como 6 × 8 = 48, el número que falta es 6, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q16": {
+      "inputHash": "f36f9d7da1a71175586bc8393e1988a55cc1d0ceae445cd60e2a97545cad68b9",
+      "explanation": {
+        "text": {
+          "en": "The model shades 2 of 4 equal parts, so it represents 2/4 = 1/2. Figure D shades 4 of 8 equal parts, and 4/8 also equals 1/2, making D equivalent.",
+          "es": "El modelo sombrea 2 de 4 partes iguales, así que representa 2/4 = 1/2. La figura D sombrea 4 de 8 partes iguales, y 4/8 también equivale a 1/2; por eso D es equivalente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q22": {
+      "inputHash": "e73385e80835941accbda1f525d99f139fa1481bf0a3ace09e7cc07dffdb9590",
+      "explanation": {
+        "text": {
+          "en": "Greg first stops at 2/6 mile. Walking another 3/6 mile puts the second stop at 2/6 + 3/6 = 5/6 mile, so the number line must mark 2/6 and 5/6; only choice B does.",
+          "es": "Greg se detiene primero a 2/6 de milla. Al caminar otros 3/6 de milla llega a 2/6 + 3/6 = 5/6 de milla, así que la recta debe marcar 2/6 y 5/6; solo la opción B lo hace."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q26": {
+      "inputHash": "764d9e043fa2ebc4aef21f379853c5247c9d6c197602a273e0e9fe89cc3c32b4",
+      "explanation": {
+        "text": {
+          "en": "Rectangle B is split once halfway across and once halfway down, creating a 2 × 2 grid. All four smaller rectangles have the same width and height, so B has 4 equal parts.",
+          "es": "El rectángulo B está dividido por la mitad a lo ancho y a lo alto, formando una cuadrícula de 2 × 2. Los cuatro rectángulos pequeños tienen el mismo ancho y alto, así que B tiene 4 partes iguales."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q27": {
+      "inputHash": "5abdbfd97deb9b2fdf995329534bca1ff3f9d3132f6b5a91e9cde0564198eb1e",
+      "explanation": {
+        "text": {
+          "en": "There are 4 fish tanks with 10 liters in each tank, so the total is 4 × 10 = 40 liters. This matches choice D.",
+          "es": "Hay 4 peceras con 10 litros en cada una, así que el total es 4 × 10 = 40 litros. Esto corresponde a la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q28": {
+      "inputHash": "4e37ee5ef35237ffc09c8533847dca6546891a6bb6a4f77a19d681e52a5d10c6",
+      "explanation": {
+        "text": {
+          "en": "An array for 3 × 6 must have 3 rows with 6 objects in each row, for 18 objects total. Choice C shows exactly 3 rows and 6 columns.",
+          "es": "Un arreglo para 3 × 6 debe tener 3 filas con 6 objetos en cada fila, para un total de 18 objetos. La opción C muestra exactamente 3 filas y 6 columnas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q29": {
+      "inputHash": "0cfa2b42d69bbef474d66426b419d979220febe53b7e5cc87e75dcb14221166a",
+      "explanation": {
+        "text": {
+          "en": "Adding 3 to each term in choice D gives the next term: 4 + 3 = 7, 7 + 3 = 10, and 10 + 3 = 13. Therefore D follows the add-3 rule.",
+          "es": "Al sumar 3 a cada término de la opción D se obtiene el siguiente: 4 + 3 = 7, 7 + 3 = 10 y 10 + 3 = 13. Por lo tanto, D sigue la regla de sumar 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q30": {
+      "inputHash": "fd20c323a1fb67ed969e901a8f5d3ffddaf0249cd52bd998c66eb614c9376d7c",
+      "explanation": {
+        "text": {
+          "en": "For unit fractions, a larger denominator makes a smaller piece of the same whole. Since sixths are smaller than fourths, 1/6 < 1/4, so choice D is less than 1/4.",
+          "es": "En las fracciones unitarias, un denominador mayor produce una parte menor del mismo entero. Como los sextos son menores que los cuartos, 1/6 < 1/4; por eso la opción D es menor que 1/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q31": {
+      "inputHash": "eb2d018a3b1d466f0cddf4066825368988d202028d5581d63ea3e5b1ad257d8a",
+      "explanation": {
+        "text": {
+          "en": "The 35 gumballs are shared equally among 7 friends, so division finds each friend's share. The expression is 35 ÷ 7, choice B, which gives 5 gumballs per friend.",
+          "es": "Los 35 chicles se reparten por igual entre 7 amigos, así que la división permite hallar la parte de cada uno. La expresión es 35 ÷ 7, la opción B, que da 5 chicles por amigo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q32": {
+      "inputHash": "cad9175291310f13c05ea5656b6c510b0f8dece759891fddd1d782a15068bb67",
+      "explanation": {
+        "text": {
+          "en": "Each unit square has an area of 1 square unit, and only the shaded part is being measured. Counting just the shaded unit squares therefore gives its area, which is the process in choice B.",
+          "es": "Cada cuadrado unitario tiene un área de 1 unidad cuadrada y solo se mide la parte sombreada. Por lo tanto, contar únicamente los cuadrados sombreados da su área, como indica la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g3-mc-q33": {
+      "inputHash": "ecc4f06e8780bbcfb47063c75cd450d2b6d695d717a0fc7da0c493cf20a23300",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 6 equal parts, and the point is at the fourth mark, or 4/6. Dividing numerator and denominator by 2 gives 4/6 = 2/3, choice B.",
+          "es": "El intervalo de 0 a 1 está dividido en 6 partes iguales y el punto está en la cuarta marca, es decir, 4/6. Al dividir el numerador y el denominador entre 2 se obtiene 4/6 = 2/3, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

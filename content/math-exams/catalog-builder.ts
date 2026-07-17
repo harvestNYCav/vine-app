@@ -8,6 +8,7 @@ import type {
   MathExamQuestionImageVariant,
   MathExamQuestionRecord,
   MathExamQuestionNumberKind,
+  MathExplanationSource,
 } from './types'
 import type { GradeLevel } from '@/lib/grade-levels'
 
@@ -26,6 +27,10 @@ type RawQuestion = {
   secondaryStandards?: string[]
   domain: MathDomainCode
   correct: MathExamChoice
+  explanation: {
+    text: LocalizedText
+    source: MathExplanationSource
+  }
   image: RawQuestionImage
   alt?: {
     en: string
@@ -48,7 +53,7 @@ type RawExam = {
 }
 
 export type RawMathExamCatalog = {
-  schemaVersion: 1
+  schemaVersion: 2
   generatedAt: string
   accessedAt: string
   sourceUpdatedAt: string
@@ -63,6 +68,18 @@ const RELEASE_YEARS = new Set([2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2
 const SPANISH_RELEASE_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const STANDARD_PATTERN = /^(CCSS|NGLS)\.Math\.Content\.(?:NY-)?([3-8])\.(OA|NBT|NF|MD|G|RP|NS|EE|F|SP)\.(?:[A-Z]\.)?\d+[a-z]?$/
 const ANSWER_METADATA_PATTERN = /(?:\b(?:Key|Clave)\s*:\s*[A-D]\b|\bAnswer\s+Key\s*:|\b(?:Primary|Aligned)\s+CCLS|\bMeasured(?:\s+CCLS)?\s*:?\s*(?:NY-)?[3-8]\.|\bMap\s+to\s+the\s+Standards|\bScoring\s+Rubric|\bSample\s+Response|\bR[uú]brica\s+de\s+puntuaci[oó]n|\bRespuesta\s+de\s+muestra)/i
+const GENERIC_EXPLANATION_PATTERNS = [
+  /\b(?:official\s+)?(?:nysed\s+)?answer\s+key\b/i,
+  /\baccording\s+to\s+(?:the\s+)?(?:official\s+)?(?:answer|key)\b/i,
+  /\bidentifies\s+choice\s+[A-D]\s+as\s+the\s+correct\s+answer\b/i,
+  /^(?:the\s+)?correct\s+answer\s+is\s+(?:choice\s+)?[A-D][.!]?$/i,
+  /^choice\s+[A-D]\s+is\s+correct[.!]?$/i,
+  /\bclave\s+(?:oficial\s+)?(?:de\s+)?respuestas?\b/i,
+  /\bseg[uú]n\s+(?:la\s+)?(?:respuesta|clave)(?:\s+oficial)?\b/i,
+  /\bidentifica\s+la\s+opci[oó]n\s+[A-D]\s+como\s+la\s+respuesta\s+correcta\b/i,
+  /^(?:la\s+)?respuesta\s+correcta\s+es\s+(?:la\s+)?opci[oó]n\s+[A-D][.!]?$/i,
+  /^(?:la\s+)?opci[oó]n\s+[A-D]\s+es\s+correcta[.!]?$/i,
+]
 
 const DOMAIN_ORDER: MathDomainCode[] = [
   'OA', 'NBT', 'NF', 'MD', 'RP', 'NS', 'EE', 'F', 'G', 'SP',
@@ -89,6 +106,16 @@ function safeAlt(value: unknown) {
   return typeof value === 'string'
     && substantiveAlt(value)
     && !ANSWER_METADATA_PATTERN.test(value)
+}
+
+function substantiveExplanation(value: unknown): value is string {
+  if (!validText(value)) return false
+  const text = value.trim()
+  const wordCount = text.match(/[\p{L}\p{N}]+(?:['’\-][\p{L}\p{N}]+)*/gu)?.length ?? 0
+  return text.length <= 1_600
+    && text.replace(/[^\p{L}\p{N}]/gu, '').length >= 40
+    && wordCount >= 8
+    && GENERIC_EXPLANATION_PATTERNS.every(pattern => !pattern.test(text))
 }
 
 function validateStandard(
@@ -225,6 +252,23 @@ function validateRawExam(exam: RawExam) {
     }
     invariant(DOMAIN_CODES.has(question.domain), `${question.id} has a bad domain`)
     invariant(['A', 'B', 'C', 'D'].includes(question.correct), `${question.id} has a bad answer key`)
+    invariant(
+      question.explanation?.source === 'official-nysed'
+        || question.explanation?.source === 'vine-authored',
+      `${question.id} has a bad explanation source`,
+    )
+    invariant(
+      question.explanation.source === (exam.year <= 2014 ? 'official-nysed' : 'vine-authored'),
+      `${question.id} has an explanation source that does not match its release`,
+    )
+    invariant(
+      substantiveExplanation(question.explanation.text?.en),
+      `${question.id} needs a substantive, question-specific English explanation`,
+    )
+    invariant(
+      substantiveExplanation(question.explanation.text?.es),
+      `${question.id} needs a substantive, question-specific Spanish explanation`,
+    )
     invariant(validImage(question.image?.en), `${question.id} needs an English image`)
     const filename = `q${String(question.number).padStart(2, '0')}.webp`
     invariant(
@@ -247,7 +291,7 @@ function validateRawExam(exam: RawExam) {
 
 export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
   invariant(rawCatalog && typeof rawCatalog === 'object', 'missing catalog')
-  invariant(rawCatalog.schemaVersion === 1, 'unsupported schema version')
+  invariant(rawCatalog.schemaVersion === 2, 'unsupported schema version')
   invariant(typeof rawCatalog.generatedAt === 'string' && !Number.isNaN(Date.parse(rawCatalog.generatedAt)), 'bad generatedAt')
   invariant(validDateOnly(rawCatalog.accessedAt), 'bad accessedAt')
   invariant(validDateOnly(rawCatalog.sourceUpdatedAt), 'bad sourceUpdatedAt')
@@ -259,6 +303,10 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
   const examSlugs = new Set<string>()
   const questionIds = new Set<string>()
   const questions: MathExamQuestionRecord[] = []
+  const explanationSourceCounts: Record<MathExplanationSource, number> = {
+    'official-nysed': 0,
+    'vine-authored': 0,
+  }
 
   const exams = rawCatalog.exams.map(rawExam => {
     validateRawExam(rawExam)
@@ -273,6 +321,7 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
       questionIds.add(rawQuestion.id)
       const sectionDomain = sectionDomainForQuestion(rawExam.grade, rawQuestion.domain)
       const sectionSlug = buildMathExamSection(sectionDomain, rawExam.grade, []).slug
+      explanationSourceCounts[rawQuestion.explanation.source] += 1
       const imageAlt: LocalizedText = {
         en: rawQuestion.alt!.en.trim(),
         es: rawQuestion.alt?.es?.trim()
@@ -300,9 +349,10 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
           mode: 'choice',
           correct: rawQuestion.correct,
           explanation: {
-            en: `The official NYSED answer key identifies choice ${rawQuestion.correct} as the correct answer.`,
-            es: `La clave oficial de respuestas de NYSED identifica la opción ${rawQuestion.correct} como la respuesta correcta.`,
+            en: rawQuestion.explanation.text.en.trim(),
+            es: rawQuestion.explanation.text.es.trim(),
           },
+          explanationSource: rawQuestion.explanation.source,
         },
       })
       const ids = byDomain.get(sectionDomain) ?? []
@@ -329,6 +379,15 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
     }
     return exam
   })
+
+  invariant(
+    explanationSourceCounts['official-nysed'] === 228,
+    'catalog must contain exactly 228 official NYSED rationales',
+  )
+  invariant(
+    explanationSourceCounts['vine-authored'] === 1_611,
+    'catalog must contain exactly 1,611 Vine-authored explanations',
+  )
 
   exams.sort((a, b) => b.year - a.year || a.grade - b.grade)
   return { exams, questions }

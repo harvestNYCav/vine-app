@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2024-grade-7-mc-v1",
+  "questions": {
+    "nysed-2024-g7-mc-q1": {
+      "inputHash": "181fb8e613eba98448cff978e07705dfd7d03f62a061d2b10eda1ff288228caa",
+      "explanation": {
+        "text": {
+          "en": "Divide the total cost by the number of packages: $9.75 ÷ 3 = $3.25 per package, and the other rows give the same unit rate. Therefore the cost per package is $3.25, choice B.",
+          "es": "Divide el costo total entre el número de paquetes: $9.75 ÷ 3 = $3.25 por paquete, y las otras filas dan la misma tasa unitaria. Por lo tanto, el costo por paquete es $3.25, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q4": {
+      "inputHash": "48fa263f069fe8c9a2a9f6aa5ea853079f4d0f33ad872ed835e26e3490fca233",
+      "explanation": {
+        "text": {
+          "en": "If x is the length of each of the first three rows, then 3x + 19 = 61. Subtracting 19 and dividing by 3 gives x = 14 yards, choice A.",
+          "es": "Si x es la longitud de cada una de las primeras tres filas, entonces 3x + 19 = 61. Al restar 19 y dividir entre 3 se obtiene x = 14 yardas, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q5": {
+      "inputHash": "998f967dd736f2e6a655b0af026f30f8ccc4c3caadcb2c7f002c46c05f8bce88",
+      "explanation": {
+        "text": {
+          "en": "The distance between the temperatures is 32 - (-2) = 34 degrees because subtracting a negative adds its opposite. The difference is 34°C, choice B.",
+          "es": "La distancia entre las temperaturas es 32 - (-2) = 34 grados porque restar un número negativo equivale a sumar su opuesto. La diferencia es 34 °C, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q7": {
+      "inputHash": "2432c7ad24e9537c9150c6e7f9b8b9760217d872551eb50ba79c492e358ffb71",
+      "explanation": {
+        "text": {
+          "en": "The point at 5 minutes is separated by a large gap from the rest of the data, which are between 20 and 45 minutes. Thus the distribution appears to have an outlier, choice C.",
+          "es": "El punto de 5 minutos está separado por un gran espacio del resto de los datos, que están entre 20 y 45 minutos. Por lo tanto, la distribución parece tener un valor atípico, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q10": {
+      "inputHash": "78a01fb29477970a2ca8a17c34a08768f48d48c3a3eafd9637bb47f0bbf87299",
+      "explanation": {
+        "text": {
+          "en": "The annual cost is the $24 membership fee plus $4 for each of m movies, so it is 4m + 24. Spending less than $100 is represented by 4m + 24 < 100, choice B.",
+          "es": "El costo anual es la membresía de $24 más $4 por cada una de m películas, así que es 4m + 24. Gastar menos de $100 se representa con 4m + 24 < 100, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q11": {
+      "inputHash": "6c45cf4740c134bc6c90e6674ddaaa684b1ae8c7c91d223a39e8a4de1ab77d3d",
+      "explanation": {
+        "text": {
+          "en": "A 15% discount on n dollars is 0.15n, so the sale price is n - 0.15n. Combining like terms gives 0.85n, making the two equivalent expressions in choice D.",
+          "es": "Un descuento del 15% sobre n dólares es 0.15n, por lo que el precio de oferta es n - 0.15n. Al combinar términos semejantes se obtiene 0.85n; ambas expresiones corresponden a la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q13": {
+      "inputHash": "14f17b671c25639112455df136b9a2a4a54a240b8c3d16ce03e8e93ba1472882",
+      "explanation": {
+        "text": {
+          "en": "Distribute first: 3.6(x - 5) + 2.5(x + 4) = 3.6x - 18 + 2.5x + 10. Combining like terms gives 6.1x - 8, choice B.",
+          "es": "Primero aplica la propiedad distributiva: 3.6(x - 5) + 2.5(x + 4) = 3.6x - 18 + 2.5x + 10. Al combinar términos semejantes se obtiene 6.1x - 8, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q14": {
+      "inputHash": "9849596fa770c1d4275081edc7ea1d2df148c58d637b9e4caf6836617744b2e7",
+      "explanation": {
+        "text": {
+          "en": "The box plot shows a first quartile of 67 and a third quartile of 78. The interquartile range is 78 - 67 = 11, choice C.",
+          "es": "El diagrama de caja muestra un primer cuartil de 67 y un tercer cuartil de 78. El rango intercuartílico es 78 - 67 = 11, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q15": {
+      "inputHash": "cbbcd8628febffc4421a2ad7af95f65b9ba32a28466ab5875bc628d25d5eaeac",
+      "explanation": {
+        "text": {
+          "en": "Using a common denominator of 105, 1/3 - (2/3 + 5/7) - 2 1/5 becomes [35 - (70 + 75) - 231]/105 = -341/105. This is -3 26/105, choice D.",
+          "es": "Con denominador común 105, 1/3 - (2/3 + 5/7) - 2 1/5 se convierte en [35 - (70 + 75) - 231]/105 = -341/105. Esto equivale a -3 26/105, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q17": {
+      "inputHash": "6f2d18385f9be382b262eb117aa33612f9bac0aeaa27726f3c7bb7afbefdb1dd",
+      "explanation": {
+        "text": {
+          "en": "The second movie sold 150 × 1.40 = 210 tickets, so both movies sold 150 + 210 = 360 tickets. Multiplying 360 × $13.50 gives $4,860, choice D.",
+          "es": "La segunda película vendió 150 × 1.40 = 210 boletos, así que entre ambas vendieron 150 + 210 = 360 boletos. Al multiplicar 360 × $13.50 se obtiene $4,860, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q21": {
+      "inputHash": "c5744dbcb83f472d4850b6164920d60f8e35cd76b96fc421791a3918e3db4f73",
+      "explanation": {
+        "text": {
+          "en": "For every row in the table, y ÷ x = 2.25 ÷ 9 = 0.25, and the same ratio holds for the other pairs. Therefore the proportional equation is y = (1/4)x, choice C.",
+          "es": "En cada fila de la tabla, y ÷ x = 2.25 ÷ 9 = 0.25, y la misma razón se mantiene en los otros pares. Por lo tanto, la ecuación proporcional es y = (1/4)x, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q26": {
+      "inputHash": "b9183cb2dd139c54c3928aeefbe329e9af669757df0c5a8241b543c68b6654d2",
+      "explanation": {
+        "text": {
+          "en": "Sugar per batch is total sugar divided by the number of batches: (2 5/8) ÷ (3 1/2) = (21/8) × (2/7) = 3/4 cup. This is choice A.",
+          "es": "El azúcar por tanda es el azúcar total dividido entre el número de tandas: (2 5/8) ÷ (3 1/2) = (21/8) × (2/7) = 3/4 de taza. Esto corresponde a la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q29": {
+      "inputHash": "e8ce8f7565a6cd57acf75faaad44ffae56000d08b989845a024a3cd0a51ddcb7",
+      "explanation": {
+        "text": {
+          "en": "Selling 500 gift cards at $15 each raises 500 × 15 = $7,500. The library receives 35%, so 0.35 × 7,500 = $2,625, choice C.",
+          "es": "Vender 500 tarjetas de regalo a $15 cada una recauda 500 × 15 = $7,500. La biblioteca recibe el 35%, por lo que 0.35 × 7,500 = $2,625, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q30": {
+      "inputHash": "4cfa01f1e9d3c2c7f799a7efec65a8983619d495628523def7c7825156996c2d",
+      "explanation": {
+        "text": {
+          "en": "From 4 - 4x > 16, subtract 4 to get -4x > 12; dividing by -4 reverses the inequality, giving x < -3. An open circle at -3 shaded to the left is graph A.",
+          "es": "De 4 - 4x > 16, resta 4 para obtener -4x > 12; al dividir entre -4 se invierte la desigualdad y resulta x < -3. El círculo abierto en -3 con sombreado hacia la izquierda es la gráfica A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q31": {
+      "inputHash": "831782b2b85dca1155db5c3b6971b29e1f8dda3cae7761c64c8df9db87a41952",
+      "explanation": {
+        "text": {
+          "en": "The product (-7/8)(-3/4) is 21/32. Converting -1 1/2 to -48/32 and adding gives -48/32 + 21/32 = -27/32, choice B.",
+          "es": "El producto (-7/8)(-3/4) es 21/32. Al convertir -1 1/2 en -48/32 y sumar, se obtiene -48/32 + 21/32 = -27/32, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q33": {
+      "inputHash": "9c9a70ec12dba262648d419030efda0e8e8d4fe40f127c1b5d5c54b359714e1a",
+      "explanation": {
+        "text": {
+          "en": "Tiffany starts with 4 batches of cookies and sells all 4 batches, so the remaining number is 4 - 4 = 0. This is the situation in choice D.",
+          "es": "Tiffany comienza con 4 tandas de galletas y vende las 4, por lo que la cantidad restante es 4 - 4 = 0. Esta es la situación de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q34": {
+      "inputHash": "d1818ac3632bc5462ab7bda997dee03816e33ee119f19a2edfbe13395da9e479",
+      "explanation": {
+        "text": {
+          "en": "Cheryl's hourly rate is $23.75 ÷ 2.5 = $9.50. For 5.75 hours, she earns $9.50 × 5.75 = $54.625, which rounds to $54.63, choice B.",
+          "es": "La tarifa por hora de Cheryl es $23.75 ÷ 2.5 = $9.50. Por 5.75 horas gana $9.50 × 5.75 = $54.625, que se redondea a $54.63, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q35": {
+      "inputHash": "8c3a65e03412591deeb711077cce873c7d9c49eb9af096fa127fef36118be0fa",
+      "explanation": {
+        "text": {
+          "en": "Every teenager value is at least 460 minutes, while every adult value is at most 360 minutes. Since each teenager value exceeds every adult value, the teenagers' mean must be greater, choice B.",
+          "es": "Todos los valores de los adolescentes son de al menos 460 minutos, mientras que todos los valores de los adultos son de 360 minutos como máximo. Ya que cada valor adolescente supera a cada valor adulto, la media de los adolescentes debe ser mayor, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q36": {
+      "inputHash": "467f702e987117cca79225ab2e08418ac88e8011c7e80910977fc90faaf1ab40",
+      "explanation": {
+        "text": {
+          "en": "First find the students who play sports: 140 × 3/4 = 105. One seventh of those students are also in art club, and 105 × 1/7 = 15, choice B.",
+          "es": "Primero calcula los estudiantes que practican deportes: 140 × 3/4 = 105. Un séptimo de ellos también pertenece al club de arte, y 105 × 1/7 = 15, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q37": {
+      "inputHash": "e0fe3904e1be1e88b1627702072a5d29b8fbdb78ceb16fa40e45979a0cc94796",
+      "explanation": {
+        "text": {
+          "en": "Combine the coefficients of x: 17(1/3)x - (7/2)x = (17/3 - 7/2)x. Using sixths gives (34/6 - 21/6)x = 13x/6, choice C.",
+          "es": "Combina los coeficientes de x: 17(1/3)x - (7/2)x = (17/3 - 7/2)x. Al usar sextos se obtiene (34/6 - 21/6)x = 13x/6, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g7-mc-q38": {
+      "inputHash": "0819c16413edb954cc5512fd2d55d3a92daf82679982fa68d38050167636ad3d",
+      "explanation": {
+        "text": {
+          "en": "The graph includes the point (6, 21), meaning 6 pounds cost $21. The unit rate is $21 ÷ 6 = $3.50 per pound, choice C.",
+          "es": "La gráfica incluye el punto (6, 21), lo que significa que 6 libras cuestan $21. La tasa unitaria es $21 ÷ 6 = $3.50 por libra, opción C."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

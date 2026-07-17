@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2018-grade-8-mc-v1",
+  "questions": {
+    "nysed-2018-g8-mc-q1": {
+      "inputHash": "61aad1491a38be32b4f76fa7884336f7a569c4a382e6911c5f2b840e7ced5d6c",
+      "explanation": {
+        "text": {
+          "en": "A function assigns exactly one output to each input. In table D, the input x = 3 is paired with y = 0, 1, 2, and 3, so it has multiple outputs and does not represent a function.",
+          "es": "Una función asigna exactamente una salida a cada entrada. En la tabla D, la entrada x = 3 está asociada con y = 0, 1, 2 y 3; como tiene varias salidas, no representa una función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q2": {
+      "inputHash": "f2187dee8d2f9d6fe7af2d9e2e7a57c7bd9ee62337ad65330a69698df6c3afe6",
+      "explanation": {
+        "text": {
+          "en": "Compare the populations by division: (6 × 10^6) ÷ (3 × 10^5) = 2 × 10 = 20. Therefore City Y has 20 times the population of City X, choice B.",
+          "es": "Se comparan las poblaciones mediante una división: (6 × 10^6) ÷ (3 × 10^5) = 2 × 10 = 20. Por lo tanto, la ciudad Y tiene 20 veces la población de X, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q3": {
+      "inputHash": "8ef03070103387987c9acd26f3779768ae433de96aa76b5bf354c18cb103abf5",
+      "explanation": {
+        "text": {
+          "en": "In y = (1/6)x, the variable is only to the first power and its coefficient is constant, so its graph is a straight line. The other equations are cubic, exponential, or quadratic; therefore choice B is linear.",
+          "es": "En y = (1/6)x, la variable está solo a la primera potencia y su coeficiente es constante, así que la gráfica es una recta. Las otras ecuaciones son cúbica, exponencial o cuadrática; por lo tanto, B es lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q4": {
+      "inputHash": "93667baedc17451c6ec5127f932f1574a9f559845d2ef5f2baf49e6015c964f7",
+      "explanation": {
+        "text": {
+          "en": "Add 5x + 2y = -15 and 2x - 2y = -6 to eliminate y: 7x = -21, so x = -3. Substitution gives -15 + 2y = -15, so y = 0 and the solution is (-3, 0), choice A.",
+          "es": "Se suman 5x + 2y = -15 y 2x - 2y = -6 para eliminar y: 7x = -21, así que x = -3. Al sustituir se obtiene -15 + 2y = -15, por lo que y = 0 y la solución es (-3, 0), la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q6": {
+      "inputHash": "55e6b16ef629420f08fab1a90a132f7e12bcde60455989f79ad0b65e95f32999",
+      "explanation": {
+        "text": {
+          "en": "The graph shows 30 revolutions in 2 minutes, a rate of 30 ÷ 2 = 15 revolutions per minute. Twice that rate is 30 per minute, and table D has 660/22 = 720/24 = 30, so D is correct.",
+          "es": "La gráfica muestra 30 revoluciones en 2 minutos, una tasa de 30 ÷ 2 = 15 por minuto. El doble es 30 por minuto, y la tabla D cumple 660/22 = 720/24 = 30; por eso D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q7": {
+      "inputHash": "3eb7dcec1c2b283de88e0ab06dec5228cba75df202267f36dc5822d6b636cffc",
+      "explanation": {
+        "text": {
+          "en": "View the octagon as a 28-by-28 square with four corner right triangles removed. Each triangle has legs 8.2 cm, so the area is 28^2 - 4[1/2(8.2)(8.2)] = 649.52 square centimeters, which rounds to 650, choice C.",
+          "es": "Se considera el octágono como un cuadrado de 28 por 28 al que se quitan cuatro triángulos rectángulos con catetos de 8.2 cm. El área es 28^2 - 4[1/2(8.2)(8.2)] = 649.52 cm², que se redondea a 650, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q8": {
+      "inputHash": "8d5c936ba77745c2651d48449f500c641b10b484b7560b5225ad4134ca17756c",
+      "explanation": {
+        "text": {
+          "en": "The points show a moderate negative trend with a y-intercept near 6. Choice A, y = -(3/4)x + 6, has that direction and passes through the center of the data near (4, 3), so it is the best model.",
+          "es": "Los puntos muestran una tendencia negativa moderada y una intersección con y cercana a 6. La opción A, y = -(3/4)x + 6, tiene esa dirección y pasa por el centro de los datos cerca de (4, 3); por eso es el mejor modelo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q11": {
+      "inputHash": "719e9b49a454febface989e23c00cbe2af917353ac050ef8de48ddcde8d5ee3c",
+      "explanation": {
+        "text": {
+          "en": "Under the 90° clockwise rotation, vertex A maps to W and vertex B maps to X. A rotation preserves lengths, so segment AB corresponds to and is congruent to segment WX, exactly as stated in choice D.",
+          "es": "Con la rotación de 90° en sentido horario, el vértice A se transforma en W y B en X. Una rotación conserva las longitudes, así que el segmento AB corresponde y es congruente con WX, como indica la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q14": {
+      "inputHash": "9c5ca004cc421a9745db9716808df4cb5b02ceb09db75bf90d838fe132d64e0f",
+      "explanation": {
+        "text": {
+          "en": "For choice C, x increases by 2 each time while y increases by 5, so the slope is constantly 5/2. The points therefore lie on one line and have no repeated input with different outputs, making C a linear function.",
+          "es": "En la opción C, x aumenta 2 cada vez mientras y aumenta 5, así que la pendiente es siempre 5/2. Por lo tanto, los puntos están en una recta y no repiten una entrada con salidas distintas; C es una función lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q15": {
+      "inputHash": "4fc1907d17152c88c7161a4fcf0dc664ac42f9142d6dac0bfa88099555374533",
+      "explanation": {
+        "text": {
+          "en": "The interior angles of a triangle must total 180°. Choice D gives 15° + 30° + 135° = 180°, so those measures can form a triangle.",
+          "es": "Los ángulos interiores de un triángulo deben sumar 180°. La opción D da 15° + 30° + 135° = 180°, así que esas medidas pueden formar un triángulo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q16": {
+      "inputHash": "2854d81e0ead84a11d64f75f2cb65c27182449a1e2cca303e0ad5c037e72eca2",
+      "explanation": {
+        "text": {
+          "en": "Use x = 45 in the line-of-best-fit equation y = (4/5)x. Then y = (4/5)(45) = 36 gallons, so the prediction is choice B.",
+          "es": "Se usa x = 45 en la ecuación de la recta de mejor ajuste, y = (4/5)x. Entonces y = (4/5)(45) = 36 galones, así que la predicción es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q19": {
+      "inputHash": "70ca6ebda31e9782e72255a06fea0e099f8bcdb75ad912df22a1420abed58a36",
+      "explanation": {
+        "text": {
+          "en": "Function W has slope -1/16 = -0.0625. Function Z decreases by 0.04 whenever x increases by 1, so its slope is -0.04. Since -0.0625 < -0.04, W's slope is less than Z's, choice B.",
+          "es": "La Función W tiene pendiente -1/16 = -0.0625. La Función Z disminuye 0.04 cuando x aumenta 1, así que su pendiente es -0.04. Como -0.0625 < -0.04, la pendiente de W es menor, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q20": {
+      "inputHash": "21d2336fa5928e9dc8a68fbb43822791e57609643d819551d1f2d1fae9a040e6",
+      "explanation": {
+        "text": {
+          "en": "A dilation centered at the origin with scale factor 0.5 multiplies each coordinate by 0.5. Thus A(6, 4) maps to A'(6 × 0.5, 4 × 0.5) = (3, 2), choice A.",
+          "es": "Una dilatación con centro en el origen y factor 0.5 multiplica cada coordenada por 0.5. Así, A(6, 4) se transforma en A'(6 × 0.5, 4 × 0.5) = (3, 2), la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q23": {
+      "inputHash": "7de47b9554ac7a3a0dc45594a7b1f76a31504f0369db7575467ac233e8b512cb",
+      "explanation": {
+        "text": {
+          "en": "A rotation preserves all angle measures, and a dilation also preserves angle measures while multiplying side lengths by 4. Therefore the corresponding angles of the two triangles are congruent, which is choice D.",
+          "es": "Una rotación conserva todas las medidas angulares, y una dilatación también conserva los ángulos aunque multiplica los lados por 4. Por lo tanto, los ángulos correspondientes son congruentes, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q24": {
+      "inputHash": "7fbe9daae32cc438800e48e1d0fc14cd8c992ed6cd260e34a244de29bdfab482",
+      "explanation": {
+        "text": {
+          "en": "Let t be the ticket price and s the souvenir price: 2t + s = 17.25 and 5t + 2s = 42. Doubling the first equation gives 4t + 2s = 34.50; subtracting it from the second gives t = 7.50, choice B.",
+          "es": "Sean t el precio del boleto y s el del recuerdo: 2t + s = 17.25 y 5t + 2s = 42. Al duplicar la primera se obtiene 4t + 2s = 34.50; al restarla de la segunda resulta t = 7.50, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q26": {
+      "inputHash": "5bceeb67633e0ced67aac02efde9bf36409871a1aeea4df710154a61912b2e49",
+      "explanation": {
+        "text": {
+          "en": "The cylinder volume is π(2^2)(8) = 32π. Subtract the conical indentation, (1/3)π(2^2)(0.7), to get approximately 100.53 - 2.93 = 97.6 cubic inches, choice C.",
+          "es": "El volumen del cilindro es π(2^2)(8) = 32π. Se resta la cavidad cónica, (1/3)π(2^2)(0.7), y se obtiene aproximadamente 100.53 - 2.93 = 97.6 pulgadas cúbicas, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q30": {
+      "inputHash": "aeacd7fe50dd0b3fac223847d116864b71d65758144bae81b46c475c0cb612e7",
+      "explanation": {
+        "text": {
+          "en": "The y-intercepts are 15 for A, -2 for graph B, -3 for C, and 2 for graph D. Since -3 is the least of these values, choice C has the least y-intercept.",
+          "es": "Las intersecciones con el eje y son 15 para A, -2 para la gráfica B, -3 para C y 2 para D. El menor valor es -3; por lo tanto, la opción C tiene la menor intersección."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q31": {
+      "inputHash": "468a4b399b65aeeb01111a5045edbf3810110dbcbf25a67e867abcd8e99e2b45",
+      "explanation": {
+        "text": {
+          "en": "Most points rise from left to right, so average points scored generally increase with age in a roughly linear pattern. One point lies well away from that upward cluster, so choice C correctly describes a positive linear association with one outlier.",
+          "es": "La mayoría de los puntos suben de izquierda a derecha, así que el promedio de puntos generalmente aumenta con la edad siguiendo un patrón casi lineal. Un punto queda lejos de ese grupo; por eso C describe una asociación lineal positiva con un valor atípico."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q32": {
+      "inputHash": "d94eddb85111fa2b880a07d314e1439fb3bb8fe0711cfa246c03d16c1d251826",
+      "explanation": {
+        "text": {
+          "en": "At x = 1, y = 34.99(1) + 49 = $83.99. This includes both one monthly charge and the sign-up fee, so it represents the average total cost for the first month, choice C.",
+          "es": "Cuando x = 1, y = 34.99(1) + 49 = $83.99. Esta cantidad incluye una cuota mensual y el cargo de inscripción, así que representa el costo total promedio del primer mes, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q33": {
+      "inputHash": "e9f4bc0b93e408fc5045c4e903f72521d93420f1cd673b419080523d44d58f62",
+      "explanation": {
+        "text": {
+          "en": "Use V = πr^2h with r = 3.25 and h = 10: V = π(3.25)^2(10) = π(10.5625)(10) = 105.625π cubic centimeters. Therefore choice B is correct.",
+          "es": "Se usa V = πr^2h con r = 3.25 y h = 10: V = π(3.25)^2(10) = π(10.5625)(10) = 105.625π centímetros cúbicos. Por lo tanto, la opción B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q34": {
+      "inputHash": "2f4624ced450f75e61bfed987356d1bafbe80698efe65caa76a64516076c938c",
+      "explanation": {
+        "text": {
+          "en": "Kevin's weekly rate is $46 ÷ 2 = $23 per week. Christy's equation y = 26x has rate $26 per week, and 26 - 23 = 3, so Christy saves $3 more per week, choice A.",
+          "es": "La tasa semanal de Kevin es $46 ÷ 2 = $23. La ecuación y = 26x da una tasa de $26 por semana para Christy, y 26 - 23 = 3; por eso Christy ahorra $3 más por semana, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q35": {
+      "inputHash": "14f680a689c7d8d2766b0d7bc903811f34b1971d5ffe85e1e7b8cd739486d771",
+      "explanation": {
+        "text": {
+          "en": "Use the slope formula with (4, 1) and (x, -6): (-6 - 1)/(x - 4) = 1. Thus -7 = x - 4 and x = -3, which is choice A.",
+          "es": "Se usa la fórmula de la pendiente con (4, 1) y (x, -6): (-6 - 1)/(x - 4) = 1. Entonces -7 = x - 4 y x = -3, que es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q36": {
+      "inputHash": "074e7bb142160ce7b51ad0696422b858b1f7152460d86c246199206fb0eca3b6",
+      "explanation": {
+        "text": {
+          "en": "Angles 1 and 2 form a linear pair, so m∠1 + m∠2 = 180°. The triangle gives m∠2 + m∠3 + m∠4 = 180°; equating and subtracting m∠2 proves m∠1 = m∠3 + m∠4. These are the equations in choice D.",
+          "es": "Los ángulos 1 y 2 forman un par lineal, así que m∠1 + m∠2 = 180°. El triángulo da m∠2 + m∠3 + m∠4 = 180°; al igualar y restar m∠2 se prueba m∠1 = m∠3 + m∠4. Estas son las ecuaciones de D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q37": {
+      "inputHash": "da8bc70bef15b39add2324f48ca8307ee7a437ad5b6bfcf7363d09577a09c67b",
+      "explanation": {
+        "text": {
+          "en": "A vertical plane through the top vertex and base cuts the pyramid in a triangle. That triangle has base 4 and height 10, so its area is (1/2)(4)(10) = 20 square units, choice A.",
+          "es": "Un plano vertical que pasa por el vértice superior y la base corta la pirámide en un triángulo. Ese triángulo tiene base 4 y altura 10, así que su área es (1/2)(4)(10) = 20 unidades cuadradas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q38": {
+      "inputHash": "b1461ed02026f36448637fa6ed4126862ada1c8f38db2799de7fce4e3677941b",
+      "explanation": {
+        "text": {
+          "en": "The table shows 2,996 girls, of whom 1,361 play video games. The fraction 1,361/2,996 ≈ 0.454, or about 45%, so the statement in choice B is true.",
+          "es": "La tabla muestra 2,996 chicas, de las cuales 1,361 juegan videojuegos. La fracción 1,361/2,996 ≈ 0.454, es decir, aproximadamente 45%; por eso la afirmación B es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q39": {
+      "inputHash": "4fbf3b59d2f2469559c2ec7e7ac8433e354b4f9228a56c389199facef0212490",
+      "explanation": {
+        "text": {
+          "en": "Rewrite 3.0 × 10^-5 as 0.3 × 10^-4. Then 5.0 × 10^-4 - 0.3 × 10^-4 = 4.7 × 10^-4 meters, which is choice D.",
+          "es": "Se reescribe 3.0 × 10^-5 como 0.3 × 10^-4. Luego, 5.0 × 10^-4 - 0.3 × 10^-4 = 4.7 × 10^-4 metros, que es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g8-mc-q40": {
+      "inputHash": "18e9be0f5f60d13ad0f136f32e733de4a499599e0c69645cfdabe36cc5088f7d",
+      "explanation": {
+        "text": {
+          "en": "The graph rises as x moves from -4 to -2, then falls until x = 0. It rises again from 0 to 2 before falling, so the increasing intervals are -4 < x < -2 and 0 < x < 2, choice B.",
+          "es": "La gráfica sube cuando x va de -4 a -2 y luego baja hasta x = 0. Vuelve a subir de 0 a 2 antes de bajar; por eso los intervalos crecientes son -4 < x < -2 y 0 < x < 2, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

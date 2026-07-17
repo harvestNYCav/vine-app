@@ -94,7 +94,7 @@ test('catalog contains every official year/grade MC release with exact counts', 
   }
 })
 
-test('runtime catalog validation rejects answer metadata in accessibility text', () => {
+test('runtime catalog validation rejects leaked keys and generic or mismatched explanations', () => {
   const leakedEnglish = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
   leakedEnglish.exams[0].questions[0].alt!.en += ' Key: A'
   assert.throws(
@@ -120,6 +120,37 @@ test('runtime catalog validation rejects answer metadata in accessibility text',
   assert.throws(
     () => buildMathExamCatalog(wrongGrade),
     /standard for the wrong grade/,
+  )
+
+  const genericEnglish = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  const genericEnglishQuestion = genericEnglish.exams[0].questions[0]
+  genericEnglishQuestion.explanation.text.en = `The official NYSED answer key identifies choice ${genericEnglishQuestion.correct} as the correct answer.`
+  assert.throws(
+    () => buildMathExamCatalog(genericEnglish),
+    /substantive, question-specific English explanation/,
+  )
+
+  const genericSpanish = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  const genericSpanishQuestion = genericSpanish.exams[0].questions[0]
+  genericSpanishQuestion.explanation.text.es = `La clave oficial de respuestas de NYSED identifica la opción ${genericSpanishQuestion.correct} como la respuesta correcta.`
+  assert.throws(
+    () => buildMathExamCatalog(genericSpanish),
+    /substantive, question-specific Spanish explanation/,
+  )
+
+  const missingSpanish = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  missingSpanish.exams[0].questions[0].explanation.text.es = ''
+  assert.throws(
+    () => buildMathExamCatalog(missingSpanish),
+    /substantive, question-specific Spanish explanation/,
+  )
+
+  const wrongExplanationSource = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  const modernQuestion = wrongExplanationSource.exams.find(exam => exam.year >= 2015)!.questions[0]
+  modernQuestion.explanation.source = 'official-nysed'
+  assert.throws(
+    () => buildMathExamCatalog(wrongExplanationSource),
+    /explanation source that does not match its release/,
   )
 })
 
@@ -160,6 +191,12 @@ test('learning sections use complete, grade-specific bilingual lessons', () => {
 })
 
 test('active questions are one-point multiple choice and belong to one section', () => {
+  const explanationSourceCounts = {
+    'official-nysed': 0,
+    'vine-authored': 0,
+  }
+  const genericFallback = /(?:official\s+(?:NYSED\s+)?answer\s+key|clave\s+oficial\s+de\s+respuestas)/i
+
   for (const exam of MATH_EXAMS) {
     assert.equal(exam.standardsFramework, exam.year <= 2022 ? 'CCLS' : 'NGLS')
     assert.deepEqual(exam.supportedLanguages, SPANISH_YEARS.has(exam.year) ? ['en', 'es'] : ['en'])
@@ -189,6 +226,22 @@ test('active questions are one-point multiple choice and belong to one section',
     assert.equal(question.type, 'multiple-choice')
     assert.equal(question.points, 1)
     assert.equal(question.grading.mode, 'choice')
+    assert.equal(
+      question.grading.explanationSource,
+      exam.year <= 2014 ? 'official-nysed' : 'vine-authored',
+    )
+    explanationSourceCounts[question.grading.explanationSource] += 1
+    for (const language of ['en', 'es'] as const) {
+      const explanation = question.grading.explanation[language]
+      const wordCount = explanation.match(/[\p{L}\p{N}]+(?:['’\-][\p{L}\p{N}]+)*/gu)?.length ?? 0
+      assert.ok(
+        explanation.replace(/[^\p{L}\p{N}]/gu, '').length >= 40,
+        `${question.id} needs a substantive ${language} explanation`,
+      )
+      assert.ok(wordCount >= 8, `${question.id} needs a complete ${language} explanation`)
+      assert.ok(explanation.length <= 1_600, `${question.id} has an overlong ${language} explanation`)
+      assert.doesNotMatch(explanation, genericFallback)
+    }
     assert.match(question.id, new RegExp(`^nysed-${exam.year}-g${exam.grade}-mc-q\\d+$`))
     assert.equal(getMathExamQuestion(question.id), question)
     if (question.numberKind === 'release-ordinal') assert.equal(question.session, null)
@@ -213,7 +266,15 @@ test('active questions are one-point multiple choice and belong to one section',
 
     const publicQuestion = toPublicMathExamQuestion(question)
     assert.ok(!('grading' in publicQuestion), `${question.id} must not expose its answer key`)
+    assert.ok(!('correct' in publicQuestion), `${question.id} must not expose its answer key`)
+    assert.ok(!('explanation' in publicQuestion), `${question.id} must not expose its explanation`)
+    assert.ok(!('explanationSource' in publicQuestion), `${question.id} must not expose explanation provenance`)
   }
+
+  assert.deepEqual(explanationSourceCounts, {
+    'official-nysed': 228,
+    'vine-authored': 1_611,
+  })
 
   const prerequisiteAlignments = MATH_EXAM_QUESTIONS.flatMap(question => {
     const exam = getMathExamById(question.examId)!

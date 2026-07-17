@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2024-grade-3-mc-v1",
+  "questions": {
+    "nysed-2024-g3-mc-q1": {
+      "inputHash": "75c6ba603eff7bb62a3ba3769d69418f523cb503a300471d21f2019b93b145a3",
+      "explanation": {
+        "text": {
+          "en": "The 40 stickers are separated into rows of 8, so division finds the number of equal rows. The expression is 40 ÷ 8, choice A, which gives 5 rows.",
+          "es": "Los 40 adhesivos se separan en filas de 8, así que la división permite hallar la cantidad de filas iguales. La expresión es 40 ÷ 8, la opción A, que da 5 filas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q2": {
+      "inputHash": "87345b59d3b0c22eb3a303db32dd5e883ffb21344c60d4742ee87503e36255d7",
+      "explanation": {
+        "text": {
+          "en": "A whole number rounds to 300 to the nearest ten when it is from 295 through 304. The number 296 is in that interval and has a ones digit of 6, so it rounds up to 300; this is choice B.",
+          "es": "Un número entero se redondea a 300 a la decena más cercana si está entre 295 y 304. El 296 está en ese intervalo y tiene 6 en las unidades, así que se redondea a 300; es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q4": {
+      "inputHash": "16c158a47ec3e3c1e9fe9e90942bc298497fae23eaaf794f073cbddf4c18a8e0",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 6 equal parts, and P is on the fourth mark after 0. Therefore P represents 4/6, choice B.",
+          "es": "El intervalo de 0 a 1 está dividido en 6 partes iguales y P está en la cuarta marca después de 0. Por lo tanto, P representa 4/6, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q8": {
+      "inputHash": "2477df77d072433e01f9fd68a69c3b979a34b6ab084f9614a1bb3a8d874904a5",
+      "explanation": {
+        "text": {
+          "en": "Nine boxes with 8 books in each box form 9 equal groups of 8. Multiplication gives the total: 9 × 8 = 72 books, so the correct expression is choice D.",
+          "es": "Nueve cajas con 8 libros en cada una forman 9 grupos iguales de 8. La multiplicación da el total: 9 × 8 = 72 libros, así que la expresión correcta es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q9": {
+      "inputHash": "53bc121a229b1f6d461253e61963ccbef6cc4dc9396f6beb297b01a01e2e5811",
+      "explanation": {
+        "text": {
+          "en": "Split the garden into a top rectangle measuring 9 ft by 3 ft and a lower-right rectangle measuring 6 ft by 4 ft. Their areas add to (9 × 3) + (6 × 4) = 27 + 24 = 51 square feet, choice C.",
+          "es": "Se divide el jardín en un rectángulo superior de 9 pies por 3 pies y otro inferior derecho de 6 pies por 4 pies. Sus áreas suman (9 × 3) + (6 × 4) = 27 + 24 = 51 pies cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q12": {
+      "inputHash": "b7e5f6ac3b37bb41b5d42fb48bcfca574b1d9b1bd6b1e59b66d87a2710603127",
+      "explanation": {
+        "text": {
+          "en": "Any whole number can be written as itself over 1 because dividing by 1 does not change its value. Thus 3 = 3/1, which is choice B.",
+          "es": "Cualquier número entero puede escribirse sobre 1 porque dividir entre 1 no cambia su valor. Por lo tanto, 3 = 3/1, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q13": {
+      "inputHash": "6189a716561f66b294266b45b1747e21ff070222ffa9e18c8336e25bc3712e9f",
+      "explanation": {
+        "text": {
+          "en": "Each picture is a 1-foot-by-1-foot square, so its area is 1 square foot. With 100 pictures covering the wall without gaps or overlaps, the wall's area is 100 × 1 = 100 square feet, choice D.",
+          "es": "Cada dibujo es un cuadrado de 1 pie por 1 pie, así que su área es 1 pie cuadrado. Como 100 dibujos cubren la pared sin espacios ni superposiciones, el área es 100 × 1 = 100 pies cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q18": {
+      "inputHash": "74976470f8fd58cc26aba7ce0d1225ffb564b761c682aff2c00b8f146b9e6879",
+      "explanation": {
+        "text": {
+          "en": "Break 4 into 2 + 2 and use the distributive property: 5 × 4 = 5 × (2 + 2) = (5 × 2) + (5 × 2). This is choice B, and both expressions equal 20.",
+          "es": "Se descompone 4 en 2 + 2 y se usa la propiedad distributiva: 5 × 4 = 5 × (2 + 2) = (5 × 2) + (5 × 2). Esta es la opción B y ambas expresiones equivalen a 20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q21": {
+      "inputHash": "47f3a062ff2205069ba734b6571a6096c74e9825afa34f2cfb4c82b905a0bece",
+      "explanation": {
+        "text": {
+          "en": "The whole must be divided into 8 equal sectors with exactly 3 shaded. Model D has 8 equal sectors and shades 3 of them, so it represents 3/8.",
+          "es": "El entero debe estar dividido en 8 sectores iguales con exactamente 3 sombreados. El modelo D tiene 8 sectores iguales y sombrea 3, así que representa 3/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q23": {
+      "inputHash": "5af7c829c90ef3c10cff2aaf4561a7b5dea42d14ffe92f988fdd8087a516be0b",
+      "explanation": {
+        "text": {
+          "en": "The rectangle has 5 rows and 7 columns, so its area is 5 × 7 = 35 square centimeters. Choices A, B, and D each equal 35, but 5 × 7 × 5 × 7 = 1,225, so choice C cannot represent the area.",
+          "es": "El rectángulo tiene 5 filas y 7 columnas, así que su área es 5 × 7 = 35 centímetros cuadrados. Las opciones A, B y D equivalen a 35, pero 5 × 7 × 5 × 7 = 1,225; por eso la opción C no representa el área."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q25": {
+      "inputHash": "e7b489b79c8af789629e565b84fc0e515229ef33be9a37a1a2eab57a97190bd7",
+      "explanation": {
+        "text": {
+          "en": "The unknown factor in ? × 8 = 48 is found by dividing 48 ÷ 8. Since 48 ÷ 8 = 6 and 6 × 8 = 48, the number is 6, choice B.",
+          "es": "El factor desconocido en ? × 8 = 48 se halla al dividir 48 ÷ 8. Como 48 ÷ 8 = 6 y 6 × 8 = 48, el número es 6, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q26": {
+      "inputHash": "7912071d569940be60a9d9480e527feb7a48e67856b49759488794f270ee17f1",
+      "explanation": {
+        "text": {
+          "en": "The two diagonals in square B meet at the center and divide the square into 4 congruent triangles. Congruent parts have equal area, so each triangle is 1/4 of the whole.",
+          "es": "Las dos diagonales del cuadrado B se cruzan en el centro y lo dividen en 4 triángulos congruentes. Las partes congruentes tienen la misma área, así que cada triángulo es 1/4 del entero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q27": {
+      "inputHash": "512b11c985d2e789c1b7d1ace54d8fad3ed184352183ebcb377215ac7664cdd6",
+      "explanation": {
+        "text": {
+          "en": "Each term is 4 greater than the previous one: 1 + 4 = 5, 5 + 4 = 9, and 9 + 4 = 13. Continuing gives 17, 21, and 25, which is choice D.",
+          "es": "Cada término es 4 mayor que el anterior: 1 + 4 = 5, 5 + 4 = 9 y 9 + 4 = 13. Al continuar se obtiene 17, 21 y 25, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q28": {
+      "inputHash": "711cff83a6972c57fe836caf6a4d9bcbf7a1ddf6b37affb802cdb851ab65e2d8",
+      "explanation": {
+        "text": {
+          "en": "Figure C can be split into a 3-by-10 rectangle with 30 unit squares and a bottom row of 6 more. Its total area is 30 + 6 = 36 square feet, so C could represent the floor.",
+          "es": "La figura C se puede dividir en un rectángulo de 3 por 10 con 30 cuadrados unitarios y una fila inferior de 6 más. Su área total es 30 + 6 = 36 pies cuadrados, así que C puede representar el piso."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q29": {
+      "inputHash": "c11ae21f284afd8c8dd562bc172c822e63d1c1c38a60f6dc2a13d57b6eba110c",
+      "explanation": {
+        "text": {
+          "en": "Corn and bean seeds cannot share a hole, so divide each type into groups of 3: 12 ÷ 3 = 4 corn holes and 15 ÷ 3 = 5 bean holes. Then h = 4 + 5 = 9, exactly the equations in choice A.",
+          "es": "Las semillas de maíz y frijol no pueden compartir un hoyo, así que se divide cada tipo en grupos de 3: 12 ÷ 3 = 4 hoyos de maíz y 15 ÷ 3 = 5 de frijol. Luego h = 4 + 5 = 9, las ecuaciones de la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g3-mc-q30": {
+      "inputHash": "34021d628d23e5bd846e6d3d5f07f6c668bf540c6cbbb1523d7b0657b87cb421",
+      "explanation": {
+        "text": {
+          "en": "Simplifying both fractions in choice C gives 2/4 = 1/2 and 3/6 = 1/2. Since both equal the same value, 2/4 and 3/6 are equivalent.",
+          "es": "Al simplificar las dos fracciones de la opción C se obtiene 2/4 = 1/2 y 3/6 = 1/2. Como ambas tienen el mismo valor, 2/4 y 3/6 son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

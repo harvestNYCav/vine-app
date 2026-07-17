@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2018-grade-6-mc-v1",
+  "questions": {
+    "nysed-2018-g6-mc-q1": {
+      "inputHash": "651dc11d608855bd127c76184eb3365d12181b40cf9c711f4bab5e8c91e70a9b",
+      "explanation": {
+        "text": {
+          "en": "Simplify the left side: 12 − 9 + c = 3 + c. To make 3 + c = 12, c must equal 9.",
+          "es": "Se simplifica el lado izquierdo: 12 − 9 + c = 3 + c. Para que 3 + c = 12, c debe ser 9."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q2": {
+      "inputHash": "ec2cd74be00cce42a4f4e473914d60d5a3111ab34a4456853320c820493a95cb",
+      "explanation": {
+        "text": {
+          "en": "If 7 coins are 5% of the collection, then the total is 7 ÷ 0.05 = 140 coins. Indeed, 5% of 140 is 7.",
+          "es": "Si 7 monedas son el 5% de la colección, el total es 7 ÷ 0.05 = 140 monedas. En efecto, el 5% de 140 es 7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q3": {
+      "inputHash": "5996ff96251ae21a7213607ed279bdd2fa21f9218591a4bd7f7d09abbb184a88",
+      "explanation": {
+        "text": {
+          "en": "The common factors of 36 and 90 include 1, 2, 3, 6, 9, and 18. Therefore, the greatest common factor is 18.",
+          "es": "Los factores comunes de 36 y 90 incluyen 1, 2, 3, 6, 9 y 18. Por lo tanto, el mayor de ellos es 18."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q4": {
+      "inputHash": "c75dc8f48df5638052bc2faa6538f1087390a28251efaaa5e530781aeed2c4dc",
+      "explanation": {
+        "text": {
+          "en": "The equation r = j + 3 means Robert is always 3 years older than Julia. Table C has pairs 9 and 6, 15 and 12, and 21 and 18, each with r exactly 3 greater than j.",
+          "es": "La ecuación r = j + 3 significa que Robert siempre tiene 3 años más que Julia. La tabla C contiene los pares 9 y 6, 15 y 12, y 21 y 18, con r exactamente 3 mayor que j en cada caso."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q15": {
+      "inputHash": "86b8d136dc90a4c88da647cf3c383ea2d722a5fd9d90919cdf768dca836c93f2",
+      "explanation": {
+        "text": {
+          "en": "If 24% purchased lunch, then 76% brought lunch. Since 190 is 76% of the grade, the total is 190 ÷ 0.76 = 250 students.",
+          "es": "Si el 24% compró el almuerzo, entonces el 76% lo trajo de casa. Como 190 es el 76% del grado, el total es 190 ÷ 0.76 = 250 estudiantes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q16": {
+      "inputHash": "eccb6cfc8fa1ed6836cd1471e247f177f9bc0ef8b5b34a31d1ee780906d9a7a8",
+      "explanation": {
+        "text": {
+          "en": "The equation d = 4t describes a line through the origin with slope 4, including points (1, 4) and (2, 8). Graph A shows that relationship.",
+          "es": "La ecuación d = 4t describe una recta que pasa por el origen con pendiente 4 e incluye los puntos (1, 4) y (2, 8). La gráfica A muestra esa relación."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q19": {
+      "inputHash": "2252ada081d878a1dcdb413afe6723b5e835a539482ffac0f962e41542258c53",
+      "explanation": {
+        "text": {
+          "en": "The unit rate is 230 ÷ 4 = 57.5 calories per ounce. For 6 ounces, 57.5 × 6 = 345 calories.",
+          "es": "La tasa unitaria es 230 ÷ 4 = 57.5 calorías por onza. Para 6 onzas, 57.5 × 6 = 345 calorías."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q22": {
+      "inputHash": "1b7464436700919cd98af468b225eb55ef5e7b05ebd88a5bb460e9cb315f0d7b",
+      "explanation": {
+        "text": {
+          "en": "Each right triangle has area 1/2 × 4 × 5 = 10 square centimeters. With 12 equal triangles, the total area is 12 × 10 = 120 square centimeters.",
+          "es": "Cada triángulo rectángulo tiene un área de 1/2 × 4 × 5 = 10 centímetros cuadrados. Con 12 triángulos iguales, el área total es 12 × 10 = 120 centímetros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q25": {
+      "inputHash": "7f9cc787b0407607c83a66daa831de21391c4b15bf823ee2902db04b2a528978",
+      "explanation": {
+        "text": {
+          "en": "A time of 150 seconds is 150 ÷ 30 = 5 times as long as 30 seconds. At the same rate, Pat makes 25 × 5 = 125 bounces.",
+          "es": "Un tiempo de 150 segundos es 150 ÷ 30 = 5 veces 30 segundos. A la misma tasa, Pat hace 25 × 5 = 125 rebotes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q26": {
+      "inputHash": "3ebc4bc97d5ac8aa2ca3f85a10a6c7ce81276a3603d79a1f9f98a97626ac22a5",
+      "explanation": {
+        "text": {
+          "en": "Distribute the 5: 5(4x + 3) − 2x = 20x + 15 − 2x. Combining like terms gives 18x + 15.",
+          "es": "Se distribuye el 5: 5(4x + 3) − 2x = 20x + 15 − 2x. Al combinar términos semejantes se obtiene 18x + 15."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q27": {
+      "inputHash": "feab384a1780e95c2121dec7e215b935c639ff551100fa1df851ab6b118a15ee",
+      "explanation": {
+        "text": {
+          "en": "The school is at (2, 4) and the bank at (6, 4), a distance of 4 units. The point (2, 8) is also 4 units from the school, so it could represent the library.",
+          "es": "La escuela está en (2, 4) y el banco en (6, 4), a una distancia de 4 unidades. El punto (2, 8) también está a 4 unidades de la escuela, así que podría representar la biblioteca."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q28": {
+      "inputHash": "632cfb356568ca1db3a0f6bd3abf7bcf17fd7c6960167883b8020397dff1a08b",
+      "explanation": {
+        "text": {
+          "en": "The prism has dimensions 5, 3, and 2 inches. Its surface area is 2(5×3 + 5×2 + 3×2) = 2(15 + 10 + 6) = 62 square inches.",
+          "es": "El prisma tiene dimensiones de 5, 3 y 2 pulgadas. Su área de superficie es 2(5×3 + 5×2 + 3×2) = 2(15 + 10 + 6) = 62 pulgadas cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q29": {
+      "inputHash": "3d74ad5f3a6d02be6b8c3f5919f7e384b7add8f8b4949690bd2a4caab6b9fa76",
+      "explanation": {
+        "text": {
+          "en": "The first expression in choice C is 12x + 16x = 28x. The second is 4(3x + 4x) = 4(7x) = 28x, so the two expressions are equivalent.",
+          "es": "La primera expresión de la opción C es 12x + 16x = 28x. La segunda es 4(3x + 4x) = 4(7x) = 28x, así que las dos expresiones son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q30": {
+      "inputHash": "63cd2672aebb0946f88ecb6f4c2cfbb20df3c86a558cfb81a7517e568516f792",
+      "explanation": {
+        "text": {
+          "en": "Five boxes in 35 minutes means 35 ÷ 5 = 7 minutes per box. Table A keeps that rate with pairs (7,1), (14,2), (21,3), and (28,4).",
+          "es": "Cinco cajas en 35 minutos significan 35 ÷ 5 = 7 minutos por caja. La tabla A mantiene esa tasa con los pares (7,1), (14,2), (21,3) y (28,4)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q31": {
+      "inputHash": "5f55d1d17143c2fe89f82c72b1ff13fdfd2a46089364515511834ff4fa8823c3",
+      "explanation": {
+        "text": {
+          "en": "The boundary has five sides of length x, two sides of length y, and one side of length z. Adding them gives the perimeter 5x + 2y + z.",
+          "es": "El contorno tiene cinco lados de longitud x, dos lados de longitud y y un lado de longitud z. Al sumarlos se obtiene el perímetro 5x + 2y + z."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q32": {
+      "inputHash": "7c7a197f53d4bc7dedf89d9ad1fc99d39e57d6b28cd4d155a067094b574e3f49",
+      "explanation": {
+        "text": {
+          "en": "Positive elevations are above sea level and negative elevations are below it. City P is at 10 feet and City R at −20 feet, so P is above sea level and R is below.",
+          "es": "Las elevaciones positivas están sobre el nivel del mar y las negativas están debajo. La ciudad P está a 10 pies y la ciudad R a −20 pies, así que P está sobre el nivel del mar y R está debajo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q33": {
+      "inputHash": "876acad0cc9e8c64c8b6757e102448202a44d035fe0a1e03c79f190f1f396a82",
+      "explanation": {
+        "text": {
+          "en": "The made-to-attempted ratio is 9 to 15, or 9/15. Dividing numerator and denominator by 3 simplifies it to 3/5.",
+          "es": "La razón de encestes a intentos es 9 a 15, o 9/15. Al dividir el numerador y el denominador entre 3 se simplifica a 3/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q34": {
+      "inputHash": "1af710ec5a23388d907c6519bb1b9b77e48bdca75fbe6ba21f1da0e210580212",
+      "explanation": {
+        "text": {
+          "en": "The inequality x > −25 excludes −25, so it uses an open circle there, and it includes all greater numbers to the right. Number line B shows both features.",
+          "es": "La desigualdad x > −25 excluye −25, así que usa un círculo abierto allí, e incluye todos los números mayores hacia la derecha. La recta numérica B muestra ambas características."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q35": {
+      "inputHash": "8cb1440b7e07a70d9341e48ffc9c59852e22e35cc9d4dac06287bb203a4b4952",
+      "explanation": {
+        "text": {
+          "en": "The horizontal side length is 6 − 2 = 4 units, and the vertical side length is 5 − 2 = 3 units. The perimeter is 2(4 + 3) = 14 units.",
+          "es": "La longitud horizontal es 6 − 2 = 4 unidades y la vertical es 5 − 2 = 3 unidades. El perímetro es 2(4 + 3) = 14 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q36": {
+      "inputHash": "d5243f2ab2d98049674d33fe1482ce53f44fe476681efdc613c8568d9d95080d",
+      "explanation": {
+        "text": {
+          "en": "Carol has 1 5/8 = 13/8 cups. Dividing by 1/3 cup per smoothie gives 13/8 ÷ 1/3 = 39/8 = 4 7/8, so she can make at most 4 whole smoothies.",
+          "es": "Carol tiene 1 5/8 = 13/8 tazas. Al dividir entre 1/3 de taza por batido se obtiene 13/8 ÷ 1/3 = 39/8 = 4 7/8, así que puede hacer como máximo 4 batidos completos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q37": {
+      "inputHash": "7c3cf423a708f9807136a8c8dd4be313dba123e7b188e288cf0a9fca5e5c6be5",
+      "explanation": {
+        "text": {
+          "en": "Combine the constants: 60 − 3y − 9 = 51 − 3y. Factoring out 3 gives 3(17 − y).",
+          "es": "Se combinan las constantes: 60 − 3y − 9 = 51 − 3y. Al factorizar 3 se obtiene 3(17 − y)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g6-mc-q38": {
+      "inputHash": "0dff39a43967eb56d8095a0c4ed7cb77b469587ccad58e8531895ccda1c145c4",
+      "explanation": {
+        "text": {
+          "en": "Divide the $2.00 price by the 5 lemons: $2.00 ÷ 5 = $0.40 per lemon.",
+          "es": "Se divide el precio de $2.00 entre los 5 limones: $2.00 ÷ 5 = $0.40 por limón."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

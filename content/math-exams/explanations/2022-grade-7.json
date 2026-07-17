@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2022-grade-7-mc-v1",
+  "questions": {
+    "nysed-2022-g7-mc-q1": {
+      "inputHash": "a1f36f1552425e1352e0facf8c678a44a8caa30264219e838ba19d714b227913",
+      "explanation": {
+        "text": {
+          "en": "A probability of 0.13 is much closer to 0 than to 1, so rain has a small but nonzero chance. That likelihood is described as unlikely.",
+          "es": "Una probabilidad de 0.13 está mucho más cerca de 0 que de 1, así que hay una posibilidad pequeña pero no nula de lluvia. Por lo tanto, se describe como poco probable."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q2": {
+      "inputHash": "1e1297c96189cb796eede720fa967529e46c7a0734cfbfb297d3a59f66dc920d",
+      "explanation": {
+        "text": {
+          "en": "Store A's discount is 0.20 × $35 = $7.00, while Store B's is 0.15 × $35 = $5.25. Store A's discounted price is therefore $7.00 − $5.25 = $1.75 less.",
+          "es": "El descuento de la tienda A es 0.20 × $35 = $7.00 y el de la tienda B es 0.15 × $35 = $5.25. Por lo tanto, el precio rebajado de A es $7.00 − $5.25 = $1.75 menor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q4": {
+      "inputHash": "e89107a20ffeffc03442a7d4778162bf7aecbac335558c12c933ec71d226dc56",
+      "explanation": {
+        "text": {
+          "en": "Red occurred 15 times in 50 spins. The experimental probability is 15/50, which simplifies to 3/10.",
+          "es": "El rojo salió 15 veces en 50 giros. La probabilidad experimental es 15/50, que se simplifica a 3/10; por lo tanto, esa es la probabilidad pedida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q5": {
+      "inputHash": "a5c3fe920a4c1bcea01f84229ce83f7b8d3821345a96145623ebda77f5c3a707",
+      "explanation": {
+        "text": {
+          "en": "Distribute −3 and combine like terms: −3(2x − 8) + 4x = −6x + 24 + 4x = −2x + 24.",
+          "es": "Se distribuye −3 y se combinan términos semejantes: −3(2x − 8) + 4x = −6x + 24 + 4x = −2x + 24."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q9": {
+      "inputHash": "4485c7140fa251f0996d7da8eabbd6ab8695b366b07661444e019643c8f48565",
+      "explanation": {
+        "text": {
+          "en": "In order, the temperatures are 66, 70, 72, 72, 73, 75, 79, 81. The median is the mean of the fourth and fifth values: (72 + 73)/2 = 72.5°F.",
+          "es": "En orden, las temperaturas son 66, 70, 72, 72, 73, 75, 79 y 81. La mediana es la media del cuarto y quinto valores: (72 + 73)/2 = 72.5°F."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q10": {
+      "inputHash": "61dc592a70abb64d923ed837d2c9ef5cad7777db7c366d3dd5fb1c32f0c46480",
+      "explanation": {
+        "text": {
+          "en": "There are 3 independent choices for size, 3 for flavor, and 3 for topping. The multiplication principle gives 3 × 3 × 3 = 27 combinations.",
+          "es": "Hay 3 opciones independientes de tamaño, 3 de sabor y 3 de cobertura. El principio multiplicativo da 3 × 3 × 3 = 27 combinaciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q11": {
+      "inputHash": "1ef0b5680df14aa92423891def16bdd78c610c4e047c017b49f823e9c4a5f9bf",
+      "explanation": {
+        "text": {
+          "en": "Equal unit prices require ounces divided by cost to remain equal. For 10 ounces at $2.70 and 30 ounces at x dollars, the proportion is 10/2.7 = 30/x.",
+          "es": "Los precios unitarios iguales requieren que la razón onzas/costo permanezca constante. Para 10 onzas a $2.70 y 30 onzas a x dólares, la proporción es 10/2.7 = 30/x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q19": {
+      "inputHash": "6117b29f303a67ef719a20db16a6a8ace92b8c21c0114a3be1519aef3f7b0352",
+      "explanation": {
+        "text": {
+          "en": "Subtracting a number is equivalent to adding its opposite. Therefore, −3/8 − 7/8 has the same value as −3/8 + (−7/8).",
+          "es": "Restar un número equivale a sumar su opuesto. Por lo tanto, −3/8 − 7/8 tiene el mismo valor que −3/8 + (−7/8)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q20": {
+      "inputHash": "dda1700495b3a3776628472dcc4c9782982e7853be44f2fd03fb0724427992ab",
+      "explanation": {
+        "text": {
+          "en": "The chef sold 60% of 150 cups, or 0.60 × 150 = 90 cups. With 1 2/3 = 5/3 cups per serving, 90 ÷ 5/3 = 54 servings were sold.",
+          "es": "El chef vendió el 60% de 150 tazas, es decir, 0.60 × 150 = 90 tazas. Con 1 2/3 = 5/3 tazas por porción, se vendieron 90 ÷ 5/3 = 54 porciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q21": {
+      "inputHash": "668fb2dbfdd52174a67c2e02e9862cd467dbea0afe15fe519f43c8c0b26d1642",
+      "explanation": {
+        "text": {
+          "en": "After decreasing 15°F from 4°F, the temperature is 4 − 15 = −11°F. It must then increase 11°F to reach 0°F.",
+          "es": "Después de disminuir 15°F desde 4°F, la temperatura es 4 − 15 = −11°F. Luego debe aumentar 11°F para llegar a 0°F."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q25": {
+      "inputHash": "d29331f742c1734c866a50ae20d660cb6ee41b127f0bc42e454e04f1aa90d181",
+      "explanation": {
+        "text": {
+          "en": "The lawn mowers used 3/5 of 61.5 gallons. Multiplying gives 61.5 × 3/5 = 36.9 gallons.",
+          "es": "Las cortadoras usaron 3/5 de 61.5 galones. Al multiplicar se obtiene 61.5 × 3/5 = 36.9 galones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q26": {
+      "inputHash": "9309a97f542444f2f64ac7ebd2235527c232ad99ee623d8d9b73b3a43755621d",
+      "explanation": {
+        "text": {
+          "en": "The machine makes 2 1/4 = 9/4 pounds in 1 1/2 = 3/2 hours. Its rate is (9/4) ÷ (3/2) = 3/2 = 1 1/2 pounds per hour.",
+          "es": "La máquina produce 2 1/4 = 9/4 libras en 1 1/2 = 3/2 horas. Su tasa es (9/4) ÷ (3/2) = 3/2 = 1 1/2 libras por hora."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q28": {
+      "inputHash": "7d59be114370e4b958117bd19a3d08cf27041a1d54b47b5fabba4e46848a04af",
+      "explanation": {
+        "text": {
+          "en": "For a proportional relationship, the constant is y/x. Using any row gives 0.750/0.50 = 1.50, and the other rows have the same ratio.",
+          "es": "En una relación proporcional, la constante es y/x. Con cualquier fila se obtiene 0.750/0.50 = 1.50, y las demás filas tienen la misma razón."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q31": {
+      "inputHash": "afa536b0d98d9a83c018550405a51fa4985651986ebbd8173cf7bc20709727ff",
+      "explanation": {
+        "text": {
+          "en": "After the 20% discount, the price is $473 × 0.80 = $378.40. Applying 12% tax gives $378.40 × 1.12 = $423.808, which rounds to $423.81.",
+          "es": "Después del descuento del 20%, el precio es $473 × 0.80 = $378.40. Al aplicar el 12% de impuesto se obtiene $378.40 × 1.12 = $423.808, que se redondea a $423.81."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q32": {
+      "inputHash": "37d6ecc168256baec02b2e9eae07479e6b7ff7e7d01339f27e291f90cd244480",
+      "explanation": {
+        "text": {
+          "en": "Convert the mixed number and evaluate: 12.5 − 31/2 + 1 1/4 = 12.5 − 15.5 + 1.25 = −1.75 = −7/4.",
+          "es": "Se convierte el número mixto y se evalúa: 12.5 − 31/2 + 1 1/4 = 12.5 − 15.5 + 1.25 = −1.75 = −7/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q33": {
+      "inputHash": "f3fc57c555be20f3067d83a17b5c7e8be5633e303f238ee3c31593b30a0dc002",
+      "explanation": {
+        "text": {
+          "en": "On the first map, the actual distance is 2.8 × 25 = 70 miles. At 40 miles per inch, that distance uses 70 ÷ 40 = 1.75 inches.",
+          "es": "En el primer mapa, la distancia real es 2.8 × 25 = 70 millas. A 40 millas por pulgada, esa distancia ocupa 70 ÷ 40 = 1.75 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q34": {
+      "inputHash": "e3201402ea858676dbf460c90667ea1ae2ef71a2584962976597fd90b07c3e9b",
+      "explanation": {
+        "text": {
+          "en": "Katelyn's total money is her $25 savings plus $20 for each of x lawns. To have enough for $75, the total must satisfy 25 + 20x ≥ 75.",
+          "es": "El dinero total de Katelyn es sus $25 ahorrados más $20 por cada uno de x jardines. Para tener al menos $75, el total debe cumplir 25 + 20x ≥ 75."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q35": {
+      "inputHash": "8fb23122e92029c175a410bccd4410da8481d5e7d0df291ec48a43fc85d18127",
+      "explanation": {
+        "text": {
+          "en": "Team A's heights total 550 inches, so its mean is 550/8 = 68.75. Team B's total is 544, giving 544/8 = 68, so Team A has the greater mean.",
+          "es": "Las alturas del equipo A suman 550 pulgadas, así que su media es 550/8 = 68.75. Las del equipo B suman 544 y dan 544/8 = 68, por lo tanto el equipo A tiene la media mayor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q36": {
+      "inputHash": "4486c58f7403bcd06988c4f8c838c722227d9565f7830ba56d9acb3ee5b1309b",
+      "explanation": {
+        "text": {
+          "en": "Apply multiplication and division first: −36 ÷ 9 = −4 and 3(−7) = −21. Then −4 − 21 + 2 = −23.",
+          "es": "Primero se aplican la multiplicación y la división: −36 ÷ 9 = −4 y 3(−7) = −21. Luego, −4 − 21 + 2 = −23."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q37": {
+      "inputHash": "a859d963dad3342b11ef07df77e807111fcccc854341e867560eba4e619fb1c6",
+      "explanation": {
+        "text": {
+          "en": "The unit rate is 1 3/4 ÷ 3 1/2 = (7/4) ÷ (7/2) = 1/2 teaspoon per pound.",
+          "es": "La tasa unitaria es 1 3/4 ÷ 3 1/2 = (7/4) ÷ (7/2) = 1/2 cucharadita por libra."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q38": {
+      "inputHash": "bb48011c9cd1a19acf2daf23cec61c415d2e54880c12f96b7d24a61411a37ebb",
+      "explanation": {
+        "text": {
+          "en": "Each side of a square is one-fourth of its perimeter. Dividing 48v − 16 by 4 gives 12v − 4 feet per side.",
+          "es": "Cada lado de un cuadrado es la cuarta parte de su perímetro. Al dividir 48v − 16 entre 4 se obtiene 12v − 4 pies por lado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q39": {
+      "inputHash": "0b0dcea1dde1cdd56159a7edce9df0988731952f39f73bd667a56c1306fab884",
+      "explanation": {
+        "text": {
+          "en": "In y = 4.3x, multiplying the pounds x by 4.3 gives the total cost y. Therefore, 4.3 represents the cost of 1 pound of apples.",
+          "es": "En y = 4.3x, multiplicar las libras x por 4.3 da el costo total y. Por lo tanto, 4.3 representa el costo de 1 libra de manzanas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g7-mc-q40": {
+      "inputHash": "f9ed371c4b878a344b2ebea5c952701023d6e4a6f7fc25c9ccdca6db6b8e78d8",
+      "explanation": {
+        "text": {
+          "en": "Distribute and combine constants: 2 + 3(2x + 5) = 2 + 6x + 15 = 17 + 6x.",
+          "es": "Se distribuye y se combinan las constantes: 2 + 3(2x + 5) = 2 + 6x + 15 = 17 + 6x."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

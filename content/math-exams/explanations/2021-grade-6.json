@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2021-grade-6-mc-v1",
+  "questions": {
+    "nysed-2021-g6-mc-q1": {
+      "inputHash": "5e8ba56deaa76c3df1338da15af6f062068b043a6c38fe4471409d20153fcd01",
+      "explanation": {
+        "text": {
+          "en": "First simplify 12 − 9 to get 3 + c = 12. Subtracting 3 from both sides gives c = 9, which is choice C.",
+          "es": "Primero se simplifica 12 − 9 para obtener 3 + c = 12. Al restar 3 de ambos lados se obtiene c = 9, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q2": {
+      "inputHash": "2e74b86ce94e91d687f69959ea9695b20b0e78d4c02f9d34c7ca8e57558e7fe5",
+      "explanation": {
+        "text": {
+          "en": "Seven coins represent 5% of the collection, so the whole collection is 7 ÷ 0.05. This equals 140, and checking gives 5% of 140 = 7, so choice D is correct.",
+          "es": "Siete monedas representan el 5% de la colección, así que la colección completa es 7 ÷ 0.05. Esto equivale a 140, y 5% de 140 = 7, por lo que la opción D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q3": {
+      "inputHash": "ddeb852588257eab5462b39bf2ddc95c548e0d0fe6e8ac1e4384383ff581c3f6",
+      "explanation": {
+        "text": {
+          "en": "The factors of 36 include 1, 2, 3, 4, 6, 9, 12, 18, and 36, while 90 is also divisible by 18 but not 36. Therefore their greatest common factor is 18, choice B.",
+          "es": "Los factores de 36 incluyen 1, 2, 3, 4, 6, 9, 12, 18 y 36, mientras que 90 también es divisible entre 18 pero no entre 36. Por lo tanto, el máximo común divisor es 18, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q4": {
+      "inputHash": "ec81cf02ef7688daae1a3cfd9b9b3363c078e53c9f400e9731a735adfb103117",
+      "explanation": {
+        "text": {
+          "en": "The equation r = j + 3 means Robert is always 3 years older than Julia. In table C, 9 = 6 + 3, 15 = 12 + 3, and 21 = 18 + 3, so every row fits.",
+          "es": "La ecuación r = j + 3 significa que Robert siempre tiene 3 años más que Julia. En la tabla C, 9 = 6 + 3, 15 = 12 + 3 y 21 = 18 + 3, así que todas las filas cumplen la relación."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q5": {
+      "inputHash": "485fe681dd5dab9f97781611fcacf44ac2f8ab1d0ce47a6892d448048b6b2430",
+      "explanation": {
+        "text": {
+          "en": "The house area is 30 × 40 = 1,200 square feet, and the backyard area is 80 × 50 = 4,000 square feet. Their total is 1,200 + 4,000 = 5,200, choice D.",
+          "es": "El área de la casa es 30 × 40 = 1,200 pies cuadrados y la del patio es 80 × 50 = 4,000. El total es 1,200 + 4,000 = 5,200 pies cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q6": {
+      "inputHash": "992ef4320a62323788b6080f67d1aabf735545cb24f60bd9c31c54f83a9648b2",
+      "explanation": {
+        "text": {
+          "en": "Because the requested ratio compares rye bagels first to plain bagels second, place 13 before 8. With 13 rye and 8 plain bagels, the ratio is 13:8, choice B.",
+          "es": "Se coloca 13 antes de 8 porque la razón solicitada compara primero los bagels de centeno con los simples. Con 13 de centeno y 8 simples, la razón es 13:8, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q7": {
+      "inputHash": "32fdd7b0955013360caeface6a80b396d156532e5cbe9bf746097552ee762e60",
+      "explanation": {
+        "text": {
+          "en": "The points have the same x-coordinate, so their distance is the vertical difference between 8 and −6. That distance is |8 − (−6)| = 14 units, choice D.",
+          "es": "Los puntos tienen la misma coordenada x, así que su distancia es la diferencia vertical entre 8 y −6. Esa distancia es |8 − (−6)| = 14 unidades, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q8": {
+      "inputHash": "5cd3c0c5e8fa113ee7fc4c955950b7a787efa773a60fdb1af939b54c06371edc",
+      "explanation": {
+        "text": {
+          "en": "Convert 39 1/2 to 39.5, then isolate m by subtracting 7.9 from both sides. Thus m = 39.5 − 7.9 = 31.6, choice B.",
+          "es": "Se convierte 39 1/2 en 39.5 y luego se aísla m restando 7.9 de ambos lados. Así, m = 39.5 − 7.9 = 31.6, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q9": {
+      "inputHash": "1e535a8c6258bec9eaaced8980bed36b14f8fbf116f19201f3c2611a1812a2d8",
+      "explanation": {
+        "text": {
+          "en": "The interval from −2 to −1 is divided into 5 equal parts, so each step is 0.2. Point A is two steps right of −2: −2 + 0.4 = −1.6, choice C.",
+          "es": "El intervalo de −2 a −1 está dividido en 5 partes iguales, así que cada paso vale 0.2. El punto A está dos pasos a la derecha de −2: −2 + 0.4 = −1.6, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q10": {
+      "inputHash": "bc8368547880fe5cd404973049c99c162cfaac2a427db9c707c3b42e1550c8ad",
+      "explanation": {
+        "text": {
+          "en": "For a prism, volume = base area × height, so height = 153 ÷ 25 1/2. Since 25.5 × 6 = 153, the height is 6 feet, choice A.",
+          "es": "En un prisma, volumen = área de la base × altura, así que la altura es 153 ÷ 25 1/2. Como 25.5 × 6 = 153, la altura es 6 pies, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q11": {
+      "inputHash": "04702e359f6204d868f464356cf6879898793e2c7d659375f07c4223a721875f",
+      "explanation": {
+        "text": {
+          "en": "If 24% purchased lunch, then 100% − 24% = 76% brought lunch. Since 190 is 76% of the grade, the total is 190 ÷ 0.76 = 250 students, choice D.",
+          "es": "Si el 24% compró el almuerzo, entonces 100% − 24% = 76% lo llevó de casa. Como 190 es el 76% del grado, el total es 190 ÷ 0.76 = 250 estudiantes, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q12": {
+      "inputHash": "d5c5f959dacb4f0a8be2a909f10dc41bf9ab1fa41d3a81157594c6b1a47b9a4a",
+      "explanation": {
+        "text": {
+          "en": "The equation d = 4t describes a line through the origin with 4 miles for each hour, including points (1, 4) and (2, 8). Only graph A shows that slope and those points.",
+          "es": "La ecuación d = 4t describe una recta que pasa por el origen y avanza 4 millas por hora, con puntos como (1, 4) y (2, 8). Solo la gráfica A muestra esa pendiente y esos puntos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q13": {
+      "inputHash": "996ec6a478ae490c9b046b1bbe86ee63cfac99ef4b2447ec4e7751da8486c2d1",
+      "explanation": {
+        "text": {
+          "en": "Evaluate the exponent first: 3^3 = 27. The numerator is 143 − 35 = 108, and 108 ÷ 27 = 4, so the value is choice A.",
+          "es": "Primero se evalúa el exponente: 3^3 = 27. El numerador es 143 − 35 = 108, y 108 ÷ 27 = 4, así que el valor es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q14": {
+      "inputHash": "84e0e479d8bbb8c70b8d0b1e7342866a424c719d019b7ebc32df619ba4a3d964",
+      "explanation": {
+        "text": {
+          "en": "The unit rate is 230 ÷ 4 = 57.5 calories per ounce. For 6 ounces, 57.5 × 6 = 345 calories, which is choice C.",
+          "es": "La tasa unitaria es 230 ÷ 4 = 57.5 calorías por onza. Para 6 onzas, 57.5 × 6 = 345 calorías, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q15": {
+      "inputHash": "08651dec15097a52e45e9fd7d7a61ce67bbb43e6a4ede810cba5ea40fb9ff68f",
+      "explanation": {
+        "text": {
+          "en": "Divide both sides of 33x = 11 by 33 to isolate x. This gives x = 11/33 = 1/3, choice A.",
+          "es": "Se dividen ambos lados de 33x = 11 entre 33 para aislar x. Esto da x = 11/33 = 1/3, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q16": {
+      "inputHash": "f797bed31b695770898ba79ced88031c4158ee7127e8b7ec956a04e756f48bbe",
+      "explanation": {
+        "text": {
+          "en": "Each right triangle has area 1/2 × 4 × 5 = 10 square centimeters. With 12 equal triangles, the total area is 12 × 10 = 120 square centimeters, choice C.",
+          "es": "Cada triángulo rectángulo tiene un área de 1/2 × 4 × 5 = 10 centímetros cuadrados. Con 12 triángulos iguales, el área total es 12 × 10 = 120 centímetros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q17": {
+      "inputHash": "90d099ab347b457d20e719384709f131034b585514a9628f50762036f8740983",
+      "explanation": {
+        "text": {
+          "en": "The range includes every temperature from the closed endpoint at −52°F through the closed endpoint at 108°F, with no arrows extending beyond them. Number line D shows exactly that interval.",
+          "es": "El rango incluye todas las temperaturas desde el extremo cerrado en −52°F hasta el extremo cerrado en 108°F, sin flechas que se extiendan más allá. La recta D muestra exactamente ese intervalo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q18": {
+      "inputHash": "731a3059d40f7cd17a5e5c2667e010ff1f0e0f586048784c7cd15a57c0074e47",
+      "explanation": {
+        "text": {
+          "en": "The time grows from 30 seconds to 150 seconds by a factor of 150 ÷ 30 = 5. At the same rate, the bounces grow by the same factor: 25 × 5 = 125, choice B.",
+          "es": "El tiempo aumenta de 30 a 150 segundos por un factor de 150 ÷ 30 = 5. A la misma tasa, los rebotes aumentan igual: 25 × 5 = 125, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q19": {
+      "inputHash": "ce71c49f17037a117e7277afe77ae208447e0368b985d3fd8d9833f18a23cac9",
+      "explanation": {
+        "text": {
+          "en": "Distribute 5 to get 5(4x + 3) = 20x + 15. Combining like terms with −2x gives 20x − 2x + 15 = 18x + 15, choice A.",
+          "es": "Se distribuye el 5 para obtener 5(4x + 3) = 20x + 15. Al combinar términos semejantes con −2x resulta 20x − 2x + 15 = 18x + 15, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q20": {
+      "inputHash": "fcd423e5badf12c1994d460e514714c4915c7a604317a4eaff680ae67c406498",
+      "explanation": {
+        "text": {
+          "en": "The school is at (2, 4) and the bank at (6, 4), so their distance is 4 units. The point (2, 8) is also 4 units from (2, 4), making choice B a possible library location.",
+          "es": "La escuela está en (2, 4) y el banco en (6, 4), así que la distancia es 4 unidades. El punto (2, 8) también está a 4 unidades de (2, 4), por lo que la opción B puede ser la biblioteca."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q21": {
+      "inputHash": "b02b0de65c21ba97c99aa5f97523fe8bf30c84d0bbfdc741135c89a5e7b9bdf6",
+      "explanation": {
+        "text": {
+          "en": "The prism has dimensions 5, 3, and 2 inches. Its surface area is 2(5 × 3) + 2(5 × 2) + 2(3 × 2) = 30 + 20 + 12 = 62 square inches, choice D.",
+          "es": "El prisma tiene dimensiones de 5, 3 y 2 pulgadas. Su área superficial es 2(5 × 3) + 2(5 × 2) + 2(3 × 2) = 30 + 20 + 12 = 62 pulgadas cuadradas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q22": {
+      "inputHash": "0c71553ebcf1883f7b25268a9f4d39c9cdae54bd61a4026c8b0980a5215957f7",
+      "explanation": {
+        "text": {
+          "en": "Combining like terms gives 12x + 16x = 28x. Distributing in the other expression gives 4(3x + 4x) = 4(7x) = 28x, so the expressions in choice C are equivalent.",
+          "es": "Al combinar términos semejantes se obtiene 12x + 16x = 28x. Al distribuir en la otra expresión, 4(3x + 4x) = 4(7x) = 28x, así que las expresiones de la opción C son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q23": {
+      "inputHash": "22a2c4b1b0e991800ba83e7b42886f3dcab15b032a7be21aad1f89681f8174ed",
+      "explanation": {
+        "text": {
+          "en": "Filling 5 boxes in 35 minutes means each box takes 35 ÷ 5 = 7 minutes. Table A shows 1, 2, 3, and 4 boxes taking 7, 14, 21, and 28 minutes at that constant rate.",
+          "es": "Llenar 5 cajas en 35 minutos significa que cada caja tarda 35 ÷ 5 = 7 minutos. La tabla A muestra 1, 2, 3 y 4 cajas en 7, 14, 21 y 28 minutos a esa tasa constante."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g6-mc-q24": {
+      "inputHash": "850212500fd17340654a42ecbd21248489eb37e2d6d738b2f42fdf3d68b5afef",
+      "explanation": {
+        "text": {
+          "en": "The boundary contains five sides of length x, two sides of length y, and one side of length z. Adding all boundary lengths gives 5x + 2y + z, choice C.",
+          "es": "El contorno contiene cinco lados de longitud x, dos de longitud y y uno de longitud z. Al sumar todas las longitudes se obtiene 5x + 2y + z, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

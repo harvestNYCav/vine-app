@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2019-grade-3-mc-v1",
+  "questions": {
+    "nysed-2019-g3-mc-q1": {
+      "inputHash": "8f2e40444d66d6da208aa424e3821f9aaf497ae1817ae832596846596e539ad7",
+      "explanation": {
+        "text": {
+          "en": "The array has 3 rows with 4 squares in each row, so it represents 3 equal groups of 4. The product is 3 × 4 = 12, which is choice C.",
+          "es": "El arreglo tiene 3 filas con 4 cuadrados en cada fila, así que representa 3 grupos iguales de 4. El producto es 3 × 4 = 12, que es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q2": {
+      "inputHash": "78351cee15063ea78a6ca1c76e5e37f6914aa5f41967c1caee142f6a7fef4ee7",
+      "explanation": {
+        "text": {
+          "en": "Counting by 2s from 2 produces only even numbers: 2, 4, 6, and so on through 50. Since 11 is odd, Lucy would not count it, so choice A is correct.",
+          "es": "Al contar de 2 en 2 desde 2 se obtienen solo números pares: 2, 4, 6 y así sucesivamente hasta 50. Como 11 es impar, Lucy no lo diría; por eso la opción A es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q3": {
+      "inputHash": "b4697385fa407cbb34afd7ac9d6e7f93f93816568a93750dc65f70a976acfe59",
+      "explanation": {
+        "text": {
+          "en": "Dividing 30 students into 5 equal groups means calculating 30 ÷ 5. This gives 6 students in each group, so the matching expression is choice B.",
+          "es": "Repartir 30 estudiantes en 5 grupos iguales significa calcular 30 ÷ 5. El resultado es 6 estudiantes por grupo, así que la expresión correspondiente es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q6": {
+      "inputHash": "ab687ee970ed86b15d1be668741c07d2f8b6615bf9e6f0966bb95d54af5db956",
+      "explanation": {
+        "text": {
+          "en": "Each basket is worth 2 points, so divide the 18 total points by 2 points per basket. Since 18 ÷ 2 = 9, Jess made 9 baskets, choice C.",
+          "es": "Cada canasta vale 2 puntos, así que se dividen los 18 puntos totales entre 2 puntos por canasta. Como 18 ÷ 2 = 9, Jess hizo 9 canastas, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q7": {
+      "inputHash": "480511b3e43f9034d34685cc790f7f5e8f4e78df960f1e5158a6bf0dbf1d359e",
+      "explanation": {
+        "text": {
+          "en": "The second box has 136 - 58 = 78 books. Adding both boxes gives 136 + 78 = 214 books, so the librarian receives 214 books, choice D.",
+          "es": "La segunda caja tiene 136 - 58 = 78 libros. Al sumar las dos cajas se obtiene 136 + 78 = 214 libros, así que la respuesta es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q8": {
+      "inputHash": "c6561316a794aa76e1dc3e2d4d449dccc6d16f1f6d382c0756346e50504a2d63",
+      "explanation": {
+        "text": {
+          "en": "Multiplying both the numerator and denominator of 1/4 by 2 gives 2/8. Therefore 1/4 = 2/8, so those fractions occupy the same point on a number line, choice B.",
+          "es": "Al multiplicar por 2 el numerador y el denominador de 1/4 se obtiene 2/8. Por lo tanto, 1/4 = 2/8 y ambas fracciones ocupan el mismo punto en la recta, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q15": {
+      "inputHash": "ea899d804ecc805d22cc31d8c7776c3170011f62c022edd3b82655e292c9d147",
+      "explanation": {
+        "text": {
+          "en": "The floor has 10 white rows and 2 gray rows, with 7 unit squares in every row. Its area can be found with (10 × 7) + (2 × 7) = 84 square units, the expression in choice D.",
+          "es": "El piso tiene 10 filas blancas y 2 filas grises, con 7 cuadrados unitarios en cada fila. Su área se calcula con (10 × 7) + (2 × 7) = 84 unidades cuadradas, la expresión de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q16": {
+      "inputHash": "68efc8058defef8f376e75570e8ae68469179b088730abdb506b93c4fbbbbf69",
+      "explanation": {
+        "text": {
+          "en": "Use the distributive property: (5 + 2) × 8 = (5 × 8) + (2 × 8). Reversing each factor order gives (8 × 5) + (8 × 2), which is choice A.",
+          "es": "Se usa la propiedad distributiva: (5 + 2) × 8 = (5 × 8) + (2 × 8). Al invertir el orden de cada par de factores se obtiene (8 × 5) + (8 × 2), la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q21": {
+      "inputHash": "e782223d13f6fa8ccd17a75926f68f714c4a1bac420eac994ddd2d2ad4629943",
+      "explanation": {
+        "text": {
+          "en": "Substitute 7 for the missing number in each equation. Choice B becomes 7 × 7 = 49, which is true, so B is the required equation.",
+          "es": "Se sustituye el número que falta por 7 en cada ecuación. La opción B se convierte en 7 × 7 = 49, que es verdadera; por eso B es la ecuación correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q22": {
+      "inputHash": "7e26c27da2117e4bde4ac9d93199c230b4d35c01d8f848271fb955be56f4e82f",
+      "explanation": {
+        "text": {
+          "en": "Whole numbers from 450 through 549 round to 500 to the nearest hundred. The number 559 is at least 550, so it rounds up to 600 rather than 500; therefore choice D could not be the original number.",
+          "es": "Los números enteros de 450 a 549 se redondean a 500 a la centena más cercana. Como 559 es mayor que 550, se redondea a 600 y no a 500; por lo tanto, la opción D no puede ser el número original."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q23": {
+      "inputHash": "70c297472cbf590931ba74d27cfabc74520c02217c663854d9b7e606828fe024",
+      "explanation": {
+        "text": {
+          "en": "Both 5 and 3 are odd, and their product is 5 × 3 = 15, which is also odd. This verifies every part of the statement in choice D.",
+          "es": "Tanto 5 como 3 son impares, y su producto es 5 × 3 = 15, que también es impar. Esto comprueba todas las partes de la afirmación de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q26": {
+      "inputHash": "4ddc1ab59eaa03d23d4a57ef49694d42b2dcc4b16c7766456657a729430517ea",
+      "explanation": {
+        "text": {
+          "en": "The original rectangle has 1 of its 2 equal parts shaded, so it represents 1/2. Choice C has 2 of 4 equal parts shaded, and 2/4 = 1/2, making C equivalent.",
+          "es": "El rectángulo original tiene sombreada 1 de 2 partes iguales, así que representa 1/2. La opción C tiene sombreadas 2 de 4 partes iguales, y 2/4 = 1/2; por eso C es equivalente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q27": {
+      "inputHash": "9d54c857ce090fbfb3c7f8df818907335e0075196cb59e26fc765d3052bdf8e5",
+      "explanation": {
+        "text": {
+          "en": "Each box holds 9 shirts, so divide the 81 shirts into groups of 9. Since 81 ÷ 9 = 9, the store needs 9 boxes, choice B.",
+          "es": "Cada caja contiene 9 camisas, así que se dividen las 81 camisas en grupos de 9. Como 81 ÷ 9 = 9, la tienda necesita 9 cajas, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q28": {
+      "inputHash": "d116b91bba132ceb7cd683031fb76c1df3bd150c788c06238c0b479811ec41ce",
+      "explanation": {
+        "text": {
+          "en": "The rectangle contains 4 rows of 6 unit squares. Multiplying rows by squares per row gives 4 × 6 = 24 square units, so choice C is correct.",
+          "es": "El rectángulo contiene 4 filas de 6 cuadrados unitarios. Al multiplicar las filas por los cuadrados de cada fila se obtiene 4 × 6 = 24 unidades cuadradas, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q29": {
+      "inputHash": "5c18c55dfaf3fdcd77eb6bc44838975708152182d08470c956767ba61f78d35e",
+      "explanation": {
+        "text": {
+          "en": "The graph shows 45 cans on Wednesday and 20 cans on Friday. The difference is 45 - 20 = 25 cans, so 25 more cans were collected Wednesday, choice C.",
+          "es": "La gráfica muestra 45 latas el miércoles y 20 el viernes. La diferencia es 45 - 20 = 25 latas, así que se recogieron 25 latas más el miércoles, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q30": {
+      "inputHash": "777837feab1f3e15247fb57cac7e136eb86bc63796e4d09f4aafe2d6eb540a61",
+      "explanation": {
+        "text": {
+          "en": "The expression 64 ÷ 8 means splitting 64 items into 8 equal groups. Putting 64 cups equally on 8 tables uses that operation and gives 8 cups per table, so choice D matches.",
+          "es": "La expresión 64 ÷ 8 significa repartir 64 objetos en 8 grupos iguales. Colocar 64 vasos por igual en 8 mesas usa esa operación y da 8 vasos por mesa; por eso corresponde la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q31": {
+      "inputHash": "8a0bd8a0e5542b06f8907b9994cd1f57208fbd8a8f8d10841c7b222ed18e2f63",
+      "explanation": {
+        "text": {
+          "en": "A 5-by-4 rectangle has area 5 × 4 = 20. The extra lower-right rectangle is (6 - 5) × 2 = 2, so the total area is 20 + 2 = 22 square units, choice C.",
+          "es": "Un rectángulo de 5 por 4 tiene área 5 × 4 = 20. El rectángulo adicional de abajo a la derecha mide (6 - 5) × 2 y tiene área 2; por eso el área total es 20 + 2 = 22, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q32": {
+      "inputHash": "63ad79504b4a312c944627348cc47832f3c6b7efe24bad9abbf6a9a47f7eefa3",
+      "explanation": {
+        "text": {
+          "en": "Decompose 9 as 4 + 5 and apply the distributive property: 4 × 9 = 4 × (4 + 5) = (4 × 4) + (4 × 5). This is the expression in choice A.",
+          "es": "Se descompone 9 como 4 + 5 y se aplica la propiedad distributiva: 4 × 9 = 4 × (4 + 5) = (4 × 4) + (4 × 5). Esta es la expresión de la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g3-mc-q33": {
+      "inputHash": "401d858e7aabeaa69579dbff3830264b9af9505f7a187cb11fd753db5dbcad5d",
+      "explanation": {
+        "text": {
+          "en": "After removing the 9 white balls, 30 - 9 = 21 balls remain. They are divided equally among 3 colors, and 21 ÷ 3 = 7, so there are 7 green balls, choice A.",
+          "es": "Después de separar las 9 pelotas blancas quedan 30 - 9 = 21. Se reparten por igual entre 3 colores, y 21 ÷ 3 = 7; por eso hay 7 pelotas verdes, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

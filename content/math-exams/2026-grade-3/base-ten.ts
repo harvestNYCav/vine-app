@@ -28,6 +28,7 @@ export const BASE_TEN_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The number has 3 thousands, 4 hundreds, 0 tens, and 6 ones, so it is written as three thousand four hundred six.',
         es: 'El número tiene 3 unidades de mil, 4 centenas, 0 decenas y 6 unidades, por lo que se escribe tres mil cuatrocientos seis.',
@@ -56,6 +57,7 @@ export const BASE_TEN_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The ones digit is 5, so round the tens place up. The nearest ten is 2,360, which is choice C.',
         es: 'El dígito de las unidades es 5, así que se redondea la posición de las decenas hacia arriba. La decena más cercana es 2,360, que es la opción C.',
@@ -84,6 +86,7 @@ export const BASE_TEN_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'In 7,461, the digit 6 is in the tens place, so it represents 6 tens, or 60. Choice B is correct.',
         es: 'En 7,461, el dígito 6 está en la posición de las decenas, por lo que representa 6 decenas, o 60. La opción B es correcta.',
@@ -112,6 +115,7 @@ export const BASE_TEN_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'exact',
       acceptedAnswers: ['35'],
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'First find 7 × 50 = 350. Since 35 × 10 = 350, the missing number is 35.',
         es: 'Primero calcula 7 × 50 = 350. Como 35 × 10 = 350, el número que falta es 35.',
