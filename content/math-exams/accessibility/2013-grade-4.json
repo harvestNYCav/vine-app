@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2013-grade-4-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2013-g4-mc-q1": {
+      "inputHash": "0396ef51a3e486380f9b8dde732967f91258ed19dc8e87474e92bae02255429e",
+      "description": {
+        "en": "Question 1. Which number is sixteen thousand four hundred seventy-two in standard form? Choices: A: 16,472; B: 16,702; C: 160,472; D: 164,702."
+      }
+    },
+    "nysed-2013-g4-mc-q2": {
+      "inputHash": "39d136a4bf0b166d95fd693cc351e954a36f2b9cba36554c351b40cae2be53d5",
+      "description": {
+        "en": "Question 2. Which figure appears to show two parallel lines? Choices: A: a diagonal line and a vertical line that do not intersect but have different directions; B: a horizontal line and a vertical line that intersect; C: two separate diagonal lines with the same direction; D: a diagonal line and a vertical line that intersect."
+      }
+    },
+    "nysed-2013-g4-mc-q3": {
+      "inputHash": "bd0379301b8a8b98580ad2567e238a8868684db3a40e97a490b63049f146cd68",
+      "description": {
+        "en": "Question 3. Tom shaded 1 of 3 equal sections of a circle to model a fraction. Which figure models an equivalent fraction? Choices: A: a circle divided into 4 equal sections with 1 shaded; B: a circle divided into 4 equal sections with 2 shaded; C: a circle divided into 6 equal sections with 2 shaded; D: a circle divided into 8 equal sections with 3 shaded."
+      }
+    },
+    "nysed-2013-g4-mc-q4": {
+      "inputHash": "796b5d0f0c9689a6115b0db9659699f1469ade7c00f75ba329f24913fc0a2371",
+      "description": {
+        "en": "Question 4. There are 5,280 feet in a mile. What is the total number of feet in 6 miles? Choices: A: 31,280; B: 31,680; C: 33,680; D: 35,280."
+      }
+    },
+    "nysed-2013-g4-mc-q5": {
+      "inputHash": "9a4ed42a94291186ad812426c5613260698643ce22be19272e527a55b8425b4a",
+      "description": {
+        "en": "Question 5. Which number sentence is true? Choices: A: 3/8 < 1/4; B: 1/2 < 3/6; C: 3/5 = 8/10; D: 2/3 = 4/6."
+      }
+    },
+    "nysed-2013-g4-mc-q6": {
+      "inputHash": "f714ebfe4c390bf6611db43fc47fbc8a1a93d72db2e5a1a4330f4ef5474d67ba",
+      "description": {
+        "en": "Question 6. Bradley saw 3 dinosaur skeletons at the museum. To measure the length of each skeleton, he counted the number of his shoe lengths from the head to the tail. The diagram shows Dinosaur X as 23 shoe lengths, Dinosaur Y as 18 shoe lengths, and Dinosaur Z as 21 shoe lengths; the key says one shoe symbol equals 1 shoe length. Bradley’s shoe length is 17 cm long. Which list shows the dinosaur skeletons that were more than 320 centimeters long? Choices: A: Dinosaur X and Dinosaur Y; B: Dinosaur X and Dinosaur Z; C: Dinosaur Y and Dinosaur Z; D: Dinosaur X, Dinosaur Y, and Dinosaur Z."
+      }
+    },
+    "nysed-2013-g4-mc-q7": {
+      "inputHash": "9869ec1190cba10d7cd890b190cd4408d8d862a949ad0ba5452b09ed6a8dc56c",
+      "description": {
+        "en": "Question 7. A model shows 4 equal rectangular bars. Each bar is divided into 8 equal sections, and the top section of each bar is shaded. Which multiplication sentence can be used to calculate the total shaded area shown in the model? Choices: A: 4 × 1/8 = □; B: 8 × 1/4 = □; C: 4 × 1/6 = □; D: 6 × 1/4 = □."
+      }
+    },
+    "nysed-2013-g4-mc-q8": {
+      "inputHash": "723a2135f0659100a201a10d419a5ee764482b1b96fa1068e431e9fff60aeb43",
+      "description": {
+        "en": "Question 8. Rosa wrote a pattern using the rule “subtract 7.” The first two numbers in her pattern were 83 and 76. Which number below is part of Rosa’s pattern? Choices: A: 41; B: 49; C: 57; D: 61."
+      }
+    },
+    "nysed-2013-g4-mc-q9": {
+      "inputHash": "a502fce0adcefed720c8f35ad55d4ceae8a8c0df73e9076cad5d79294e04f10c",
+      "description": {
+        "en": "Question 9. A club’s first meeting was attended by 28 people. The first meeting was attended by 4 times as many people as the second meeting. How many people attended the second meeting? Choices: A: 7; B: 24; C: 32; D: 112."
+      }
+    },
+    "nysed-2013-g4-mc-q10": {
+      "inputHash": "07db997f7eb4c5c42bec7637045468291cfe55c068cb3aec0e2a2919aca0ac5d",
+      "description": {
+        "en": "Question 10. In the number below, how many times greater is the number represented by the digit in the thousands place than the number represented by the digit in the hundreds place? 57,762 Choices: A: 1; B: 10; C: 100; D: 1,000."
+      }
+    },
+    "nysed-2013-g4-mc-q11": {
+      "inputHash": "b677fffb0da67160460864bdf62e09ca5f768e4902be0f1dedeaf695ba277b5e",
+      "description": {
+        "en": "Question 11. Ms. Turner drove 825 miles in March. She drove 3 times as many miles in March as she did in January. She drove 4 times as many miles in February as she did in January. What was the total number of miles Ms. Turner drove in February? Choices: A: 1,100; B: 1,925; C: 5,775; D: 9,900."
+      }
+    }
+  }
+}

@@ -47,8 +47,8 @@
       "inputHash": "7608162782309bae08bdf9ecca9d3f7532add18b93f3c37dc8d1caee7a7517b6",
       "explanation": {
         "text": {
-          "en": "For 2,396, the tens digit is 9, so 2,300 must round up to 2,400. The table incorrectly lists 2,300.",
-          "es": "En 2,396, el dígito de las decenas es 9, así que se redondea hacia arriba a 2,400. La tabla muestra 2,300 incorrectamente."
+          "en": "For 2,396, the tens digit is 9, so 2,396 rounds up to 2,400 when rounded to the nearest hundred. The table incorrectly lists 2,300.",
+          "es": "En 2,396, el dígito de las decenas es 9, así que 2,396 se redondea hacia arriba a 2,400 a la centena más cercana. La tabla muestra 2,300 incorrectamente."
         },
         "source": "vine-authored"
       }

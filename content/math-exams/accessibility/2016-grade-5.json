@@ -1,0 +1,570 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2016-grade-5-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2016-g5-mc-q1": {
+      "inputHash": "a623ebeab1233adf29d81e30c2b6fd51c359dbc5d036ef163606d7dfd702e481",
+      "description": {
+        "en": "Question 1. Pax wants to make fruit punch for a party using this recipe: Fruit Punch—1.25 L orange juice, 2.5 L cranberry juice, and 1 L ginger ale. He will make three times the amount of fruit punch listed in the recipe. What is the total amount of fruit punch, in liters, that Pax will make? Choices: A: 4.53. B: 4.75. C: 12.90. D: 14.25."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1.25 L",
+          "2.5 L",
+          "1 L",
+          "4.53",
+          "4.75",
+          "12.90",
+          "14.25",
+          "A: 4.53",
+          "B: 4.75",
+          "C: 12.90",
+          "D: 14.25"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q2": {
+      "inputHash": "ba557bcd31553685bde8688ce2e992ec0dcfdc2ce1fc426fcb9cbd4e22de9641",
+      "description": {
+        "en": "Question 2. What is the value of the vertical subtraction expression 3 1/4 − 1 7/8? Choices: A: 1 1/4. B: 1 3/8. C: 2 3/8. D: 3 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 1/4 − 1 7/8",
+          "1 1/4",
+          "1 3/8",
+          "2 3/8",
+          "3 1/2",
+          "A: 1 1/4",
+          "B: 1 3/8",
+          "C: 2 3/8",
+          "D: 3 1/2",
+          "3 1/4",
+          "1 7/8"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q3": {
+      "inputHash": "2338f7a2433b52ca683edac53febd61749823edec02b2d81b8226aad0f418f34",
+      "description": {
+        "en": "Question 3. What is the value of the expression 3,972 ÷ 12? Choices: A: 372. B: 336. C: 331. D: 306."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3,972 ÷ 12",
+          "372",
+          "336",
+          "331",
+          "306",
+          "A: 372",
+          "B: 336",
+          "C: 331",
+          "D: 306"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q4": {
+      "inputHash": "fdde34170249b05fa02884f84daed5d5ef3263311d2546c5dcda7544cc55841d",
+      "description": {
+        "en": "Question 4. A sign at the start of Pinecone Trail lists the distances from the sign to three points of interest along the trail: Nature Center, 1 1/2 miles; Giant Boulder, 4 1/4 miles; Lookout Point, 8 3/4 miles. Sage hiked from the start of the trail to Lookout Point. She then hiked back along the trail to Giant Boulder to camp for the night. What was the total distance, in miles, that Sage hiked? Choices: A: 21 3/4. B: 13 1/4. C: 4 1/2. D: 4 1/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/2 miles",
+          "4 1/4 miles",
+          "8 3/4 miles",
+          "21 3/4",
+          "13 1/4",
+          "4 1/2",
+          "4 1/4",
+          "A: 21 3/4",
+          "B: 13 1/4",
+          "C: 4 1/2",
+          "D: 4 1/4",
+          "1 1/2",
+          "8 3/4"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q5": {
+      "inputHash": "78ceaee15fedc05977dbd16f26fe8f3f0d76f3934506d5eff6ffeeccbb8f9040",
+      "description": {
+        "en": "Question 5. Which type of quadrilateral can have exactly 1 pair of parallel sides? Choices: A: rectangle. B: rhombus. C: square. D: trapezoid."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "exactly 1 pair",
+          "rectangle",
+          "rhombus",
+          "square",
+          "trapezoid",
+          "A: rectangle",
+          "B: rhombus",
+          "C: square",
+          "D: trapezoid"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q9": {
+      "inputHash": "f3bb74be0ccd32de9cad94e0d42d0e40d0d097f26560cac0c39f745a7e13600c",
+      "description": {
+        "en": "Question 9. What is the value of the expression 56 ÷ 1/17? Choices: A: 1/952. B: 17/56. C: 3 5/17. D: 952."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "56 ÷ 1/17",
+          "1/952",
+          "17/56",
+          "3 5/17",
+          "952",
+          "A: 1/952",
+          "B: 17/56",
+          "C: 3 5/17",
+          "D: 952",
+          "1/17"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q10": {
+      "inputHash": "9e97f0be4e29ea48496e3a81b7a90b75b47f2fcf85f46ee11a51a12456bf8d5d",
+      "description": {
+        "en": "Question 10. In her math class, Carla used unit cubes to build a right rectangular prism with a volume of 24 cubic units. The height of the prism was two units. Which figure could be the bottom layer of the prism? Each choice is a one-cube-high rectangular array of unit cubes. Choices: A: An array 6 cubes long and 2 cubes deep, containing 12 cubes. B: An array 6 cubes long and 4 cubes deep, containing 24 cubes. C: An array 8 cubes long and 3 cubes deep, containing 24 cubes. D: An array 6 cubes long and 1 cube deep, containing 6 cubes."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "24 cubic units",
+          "two units",
+          "6 cubes long and 2 cubes deep",
+          "12 cubes",
+          "6 cubes long and 4 cubes deep",
+          "24 cubes",
+          "8 cubes long and 3 cubes deep",
+          "6 cubes long and 1 cube deep",
+          "6 cubes",
+          "A: An array 6 cubes long and 2 cubes deep, containing 12 cubes",
+          "B: An array 6 cubes long and 4 cubes deep, containing 24 cubes",
+          "C: An array 8 cubes long and 3 cubes deep, containing 24 cubes",
+          "D: An array 6 cubes long and 1 cube deep, containing 6 cubes"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q13": {
+      "inputHash": "133ea04d57a7282b72edc723854196971aa856bb19fc39a6d4e186c988c052a9",
+      "description": {
+        "en": "Question 13. Bettina spent $75 on 5 shirts that each cost the same price. Three of the shirts were red. Which expression represents the total cost of the red shirts? Choices: A: 75 × 3/5. B: 75 × 5/3. C: 75/5 × 1/3. D: 75/3 × 1/5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$75",
+          "5 shirts",
+          "Three",
+          "75 × 3/5",
+          "75 × 5/3",
+          "75/5 × 1/3",
+          "75/3 × 1/5",
+          "A: 75 × 3/5",
+          "B: 75 × 5/3",
+          "C: 75/5 × 1/3",
+          "D: 75/3 × 1/5",
+          "3/5",
+          "5/3",
+          "75/5",
+          "1/3",
+          "75/3",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q14": {
+      "inputHash": "4e005a4381f376da2b9c2ad5b282434cba78580b2a80d2bcee80be82c2242d36",
+      "description": {
+        "en": "Question 14. The two right rectangular prisms below have different volumes. Each small cube represents 1 cubic foot. The left prism has a 3-by-3 front face and is 3 cubes deep. The right prism has a 2-by-4 front face and is 3 cubes deep. What is the difference in volume, in cubic feet, of the two prisms? Choices: A: 1 B: 3 C: 6 D: 9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 cubic foot",
+          "3-by-3",
+          "3 cubes",
+          "2-by-4",
+          "A: 1",
+          "B: 3",
+          "C: 6",
+          "D: 9"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q15": {
+      "inputHash": "5994f069bfd7d768aa04fd60e5caa92ecb6c3636ef3453cf8ee9d5d9288a26f9",
+      "description": {
+        "en": "Question 15. The line plot shows the weights of ten eggs laid by one hen. It is titled “EGGS LAID BY ONE HEN,” and its horizontal axis is labeled “Weight (ounces).” The axis has five equally spaced tick marks from 1 1/2 through 2 1/2 ounces, representing 1 1/2, 1 3/4, 2, 2 1/4, and 2 1/2. There are 2 X marks at 1 1/2, 4 X marks at 1 3/4, 2 X marks at 2, 1 X mark at 2 1/4, and 1 X mark at 2 1/2. What is the total weight, in ounces, of the four heaviest eggs? Choices: A: 4 B: 7 C: 8 1/2 D: 8 3/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/2",
+          "1 3/4",
+          "2",
+          "2 1/4",
+          "2 1/2",
+          "2 X marks",
+          "4 X marks",
+          "1 X mark",
+          "A: 4",
+          "B: 7",
+          "C: 8 1/2",
+          "D: 8 3/4",
+          "8 1/2",
+          "8 3/4"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q16": {
+      "inputHash": "7dbdccb1cd83913af95d2c6dd50f588273306271a3e534a70c3a0775b8163cf1",
+      "description": {
+        "en": "Question 16. The table below lists the capacity, in quarts, of four different fish tanks at a pet store. The table is titled “FISH TANK CAPACITY” and has columns “Fish Tank” and “Capacity (quarts).” Its rows are: Pacific, 240; Fresh, 15; Tropic, 120; Bahama, 60. Which fish tank has a capacity of 60 gallons? Choices: A: Pacific B: Fresh C: Tropic D: Bahama"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Pacific, 240",
+          "Fresh, 15",
+          "Tropic, 120",
+          "Bahama, 60",
+          "60 gallons",
+          "A: Pacific",
+          "B: Fresh",
+          "C: Tropic",
+          "D: Bahama"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q17": {
+      "inputHash": "49e3127ec87a6c393367ca0fa869e69de1002f02ac003a01ee8fec6d755c013f",
+      "description": {
+        "en": "Question 17. Which number sentence is true? Choices: A: 0.35 > 0.36 B: 0.3 < 0.04 C: 0.3 > 0.20 D: 0.75 < 0.7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.35 > 0.36",
+          "0.3 < 0.04",
+          "0.3 > 0.20",
+          "0.75 < 0.7",
+          "A: 0.35 > 0.36",
+          "B: 0.3 < 0.04",
+          "C: 0.3 > 0.20",
+          "D: 0.75 < 0.7"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q18": {
+      "inputHash": "e412cbe50275c158c58325cf0b77162f9851f0b071e604f0dc3717836406f9ed",
+      "description": {
+        "en": "Question 18. Mr. Hinckley owns 83 acres of land. He divides the land into eight equal sections to sell to eight buyers. Which phrase describes how much land, in acres, each buyer will receive? Choices: A: more than 9 and less than 10 B: more than 10 and less than 11 C: more than 11 and less than 12 D: more than 12 and less than 13"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "83 acres",
+          "eight equal sections",
+          "eight buyers",
+          "more than 9 and less than 10",
+          "more than 10 and less than 11",
+          "more than 11 and less than 12",
+          "more than 12 and less than 13",
+          "A: more than 9 and less than 10",
+          "B: more than 10 and less than 11",
+          "C: more than 11 and less than 12",
+          "D: more than 12 and less than 13"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q23": {
+      "inputHash": "5ff14400b95f4c352ae3b70aa0eb14bd3bdadffe9b9834256e09b23193f0919c",
+      "description": {
+        "en": "Question 23. What is the value of the expression below? 8 + 24 ÷ (2 × 6) − 4. Choices: A: 92 B: 76 C: 11 D: 6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 + 24 ÷ (2 × 6) − 4",
+          "A: 92",
+          "B: 76",
+          "C: 11",
+          "D: 6",
+          "(2 × 6)"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q24": {
+      "inputHash": "cca17fa3e3843574a1bfed1efb758ec4ed3f7b7e4243d50397d211712472dec8",
+      "description": {
+        "en": "Question 24. Parallelograms always belong to which category of shapes? Choices: A: squares B: rectangles C: rhombuses D: quadrilaterals"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A: squares",
+          "B: rectangles",
+          "C: rhombuses",
+          "D: quadrilaterals"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q25": {
+      "inputHash": "188c036f6a54d23ecd6aafa6daac268312f05957e0151873fb84e2d58673c201",
+      "description": {
+        "en": "Question 25. Which decimal best represents the location of point X on the number line below? The horizontal number line has arrows at both ends and runs from a tick labeled 70/100 to a tick labeled 80/100. These labeled ticks and the ticks between them form 10 equal intervals. Point X is on the sixth tick to the right of 70/100. Choices: A: 0.076 B: 0.077 C: 0.76 D: 0.77"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "X",
+          "70/100",
+          "80/100",
+          "10 equal intervals",
+          "sixth tick",
+          "A: 0.076",
+          "B: 0.077",
+          "C: 0.76",
+          "D: 0.77"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q26": {
+      "inputHash": "37d264e8529440c5aeaa28a002af51454d031cb9dcb4539c4fb36a8b20ba9ebf",
+      "description": {
+        "en": "Question 26. What is 1,748 ÷ 38? Choices: A: 41 B: 43 C: 46 D: 48"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,748 ÷ 38",
+          "41",
+          "43",
+          "46",
+          "48",
+          "A: 41",
+          "B: 43",
+          "C: 46",
+          "D: 48"
+        ]
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2016-g5-mc-q27": {
+      "inputHash": "0c06df936d74f9ffa6235106dd9c4215db759f44dc374a34ee44067a583e894b",
+      "description": {
+        "en": "Question 27. The table shows the number of computers donated to a school by each of 4 companies. The table is titled “COMPUTERS DONATED TO A SCHOOL.” Its columns are “Company” and “Number of Computers.” The rows are: Company A, 25; Company B, 40; Company C, 25; Company D, 30. All the donated computers were shared equally by 5 classrooms. Which expression represents the number of computers each classroom received? Choices: A: 120 × 5/4 B: 120 × 1/4 C: 120 × 4/5 D: 120 × 1/5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4",
+          "25",
+          "40",
+          "30",
+          "5",
+          "120 × 5/4",
+          "120 × 1/4",
+          "120 × 4/5",
+          "120 × 1/5",
+          "A: 120 × 5/4",
+          "B: 120 × 1/4",
+          "C: 120 × 4/5",
+          "D: 120 × 1/5",
+          "5/4",
+          "1/4",
+          "4/5",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q28": {
+      "inputHash": "300406f3bb7fabea610026c04b57f5d3fac96eade4a5954a1c594029663efa00",
+      "description": {
+        "en": "Question 28. Which expression is equivalent to 83,120 in expanded form using powers of 10? Choices: A: (8 × 10⁵) + (3 × 10⁴) + (1 × 10³) + (2 × 10²) B: (8 × 10⁴) + (3 × 10³) + (1 × 10³) + (2 × 10²) C: (8 × 10⁴) + (3 × 10³) + (1 × 10²) + (2 × 10¹) D: (8 × 10¹) + (3 × 10¹) + (1 × 10¹) + (2 × 10¹)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "83,120",
+          "10⁵",
+          "10⁴",
+          "10³",
+          "10²",
+          "10¹",
+          "(8 × 10⁵) + (3 × 10⁴) + (1 × 10³) + (2 × 10²)",
+          "(8 × 10⁴) + (3 × 10³) + (1 × 10³) + (2 × 10²)",
+          "(8 × 10⁴) + (3 × 10³) + (1 × 10²) + (2 × 10¹)",
+          "(8 × 10¹) + (3 × 10¹) + (1 × 10¹) + (2 × 10¹)",
+          "A: (8 × 10⁵) + (3 × 10⁴) + (1 × 10³) + (2 × 10²)",
+          "B: (8 × 10⁴) + (3 × 10³) + (1 × 10³) + (2 × 10²)",
+          "C: (8 × 10⁴) + (3 × 10³) + (1 × 10²) + (2 × 10¹)",
+          "D: (8 × 10¹) + (3 × 10¹) + (1 × 10¹) + (2 × 10¹)",
+          "(8 × 10⁵)",
+          "(3 × 10⁴)",
+          "(1 × 10³)",
+          "(2 × 10²)",
+          "(8 × 10⁴)",
+          "(3 × 10³)",
+          "(1 × 10²)",
+          "(2 × 10¹)",
+          "(8 × 10¹)",
+          "(3 × 10¹)",
+          "(1 × 10¹)"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q29": {
+      "inputHash": "1e1e533d958fd0a63b3c11a0ecee65348a1cc1127acf8f61741f984c68db382a",
+      "description": {
+        "en": "Question 29. Which measurement is equivalent to 3 meters? Choices: A: 9 centimeters B: 36 centimeters C: 100 centimeters D: 300 centimeters"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 meters",
+          "9 centimeters",
+          "36 centimeters",
+          "100 centimeters",
+          "300 centimeters",
+          "A: 9 centimeters",
+          "B: 36 centimeters",
+          "C: 100 centimeters",
+          "D: 300 centimeters"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q40": {
+      "inputHash": "245e53c2dd6089b7253d139f41ff4fe258c10ef24c78fb0005e0cca3f611b879",
+      "description": {
+        "en": "Question 40. Which model shows one way to determine the area of a rectangle that is 7/10 meter long and 3/5 meter wide? Each choice is a 1 m by 1 m square grid divided into 10 equal columns and 5 equal rows. Choices: A: The rectangular region formed by the leftmost 7 columns and the top 3 rows is shaded, for a total of 21 shaded small rectangles. B: All 10 columns in the top 3 rows are shaded, for a total of 30 shaded small rectangles. C: The rectangular region formed by the leftmost 6 columns and the top 2 rows is shaded, for a total of 12 shaded small rectangles. D: The leftmost 7 columns in only the top row are shaded, for a total of 7 shaded small rectangles."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7/10 meter",
+          "3/5 meter",
+          "1 m by 1 m",
+          "10 equal columns",
+          "5 equal rows",
+          "leftmost 7 columns",
+          "top 3 rows",
+          "21 shaded small rectangles",
+          "30 shaded small rectangles",
+          "leftmost 6 columns",
+          "top 2 rows",
+          "12 shaded small rectangles",
+          "7 shaded small rectangles",
+          "A: The rectangular region formed by the leftmost 7 columns and the top 3 rows is shaded, for a total of 21 shaded small rectangles",
+          "B: All 10 columns in the top 3 rows are shaded, for a total of 30 shaded small rectangles",
+          "C: The rectangular region formed by the leftmost 6 columns and the top 2 rows is shaded, for a total of 12 shaded small rectangles",
+          "D: The leftmost 7 columns in only the top row are shaded, for a total of 7 shaded small rectangles",
+          "7/10",
+          "3/5"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q41": {
+      "inputHash": "753c580b232f45f54517b66571ee82b3b3acb4ca7369ce502ddccd2eea3709b2",
+      "description": {
+        "en": "Question 41. A swimming pool is shaped like a right rectangular prism. The pool is 36 feet long and 20 feet wide. What is the total amount of water, in cubic feet, needed to fill the pool to a depth of 4 feet? Choices: A: 800 B: 864 C: 2,880 D: 5,760"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "36 feet",
+          "20 feet",
+          "4 feet",
+          "cubic feet",
+          "800",
+          "864",
+          "2,880",
+          "5,760",
+          "A: 800",
+          "B: 864",
+          "C: 2,880",
+          "D: 5,760"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q42": {
+      "inputHash": "8006c294d39f0ab6bbbf1df2c7a00b6b4a107788db3d7a2a54822364dec79fb2",
+      "description": {
+        "en": "Question 42. Kim’s class voted on a location for a field trip. 3/4 of the class voted for the museum. 1/8 of the class voted for the zoo. The rest of the class voted for the nature park. What fraction of the class voted for the nature park? Choices: A: 1/8 B: 1/2 C: 5/8 D: 7/8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4",
+          "1/8",
+          "1/2",
+          "5/8",
+          "7/8",
+          "A: 1/8",
+          "B: 1/2",
+          "C: 5/8",
+          "D: 7/8"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q43": {
+      "inputHash": "edd50539ba891a49299685c1f229ba75323ab078031ae4e51dffda458ad50f62",
+      "description": {
+        "en": "Question 43. Jen determined the masses of 7 rocks. She recorded the mass of each rock on the line plot titled “MASS OF ROCKS.” The horizontal number line, labeled “Mass (kilograms),” has arrows at both ends and tick marks labeled 0, 1/4, 2/4, 3/4, and 1 from left to right. There are 2 X marks above 1/4, 3 X marks above 2/4, and 2 X marks above 3/4. There are no X marks above 0 or 1. What is the total mass, in kilograms, of the 7 rocks? Choices: A: 1 5/8 B: 1 1/2 C: 3 1/4 D: 3 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 rocks",
+          "0",
+          "1/4",
+          "2/4",
+          "3/4",
+          "1",
+          "2 X marks above 1/4",
+          "3 X marks above 2/4",
+          "2 X marks above 3/4",
+          "1 5/8",
+          "1 1/2",
+          "3 1/4",
+          "3 1/2",
+          "A: 1 5/8",
+          "B: 1 1/2",
+          "C: 3 1/4",
+          "D: 3 1/2"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q44": {
+      "inputHash": "1fd262b9467bb0d19378492bac4c0369a699e2641f4795baf7cb1fcbd303ad3c",
+      "description": {
+        "en": "Question 44. To feed his plants, Logan creates a mixture that requires 3/8 cup of plant food for every gallon of water. If he uses 10 1/2 gallons of water, what is the total amount of plant food he needs? Choices: A: 3 15/16 cups. B: 6 3/10 cups. C: 10 3/16 cups. D: 10 7/8 cups."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/8",
+          "10 1/2",
+          "3 15/16",
+          "6 3/10",
+          "10 3/16",
+          "10 7/8",
+          "A: 3 15/16 cups",
+          "B: 6 3/10 cups",
+          "C: 10 3/16 cups",
+          "D: 10 7/8 cups"
+        ]
+      }
+    },
+    "nysed-2016-g5-mc-q45": {
+      "inputHash": "8cfd59f44e7ff7af89b7ff1f066a87cd11bcb0b01d1ed4f3cb6e9a107a8a6588",
+      "description": {
+        "en": "Question 45. Which expression is equivalent to 4 + [4 × (5 − 2)] ÷ 2? Choices: A: 4 + 12 ÷ 2. B: 4 + 18 ÷ 2. C: 8 × 3 ÷ 2. D: 8 × 5 − 1."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 + [4 × (5 − 2)] ÷ 2",
+          "4 + 12 ÷ 2",
+          "4 + 18 ÷ 2",
+          "8 × 3 ÷ 2",
+          "8 × 5 − 1",
+          "A: 4 + 12 ÷ 2",
+          "B: 4 + 18 ÷ 2",
+          "C: 8 × 3 ÷ 2",
+          "D: 8 × 5 − 1",
+          "(5 − 2)"
+        ]
+      }
+    }
+  }
+}

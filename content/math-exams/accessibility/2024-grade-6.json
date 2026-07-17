@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2024-grade-6-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2024-g6-mc-q2": {
+      "inputHash": "1c48f8745dc19a444c1f159467d8b35845d2949e7d5c7ca166742b5a49ebf09d",
+      "description": {
+        "en": "Question 2. Which expression represents 5 more than the product of 2 and y? Choices: A: 2 + y + 5. B: 2y + 5. C: 5 + 2/y. D: 5 + y/2.",
+        "es": "Pregunta 2. ¿Qué expresión representa 5 más que el producto de 2 e y? Opciones: A: 2 + y + 5 B: 2y + 5 C: 5 + 2/y D: 5 + y/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "2",
+          "y",
+          "2 + y + 5",
+          "2y + 5",
+          "5 + 2/y",
+          "5 + y/2",
+          "A: 2 + y + 5",
+          "B: 2y + 5",
+          "C: 5 + 2/y",
+          "D: 5 + y/2"
+        ],
+        "es": [
+          "5",
+          "2",
+          "y",
+          "2 + y + 5",
+          "2y + 5",
+          "5 + 2/y",
+          "5 + y/2",
+          "A: 2 + y + 5",
+          "B: 2y + 5",
+          "C: 5 + 2/y",
+          "D: 5 + y/2"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q3": {
+      "inputHash": "5d84c7de02fb3571fbaf628e8dd792e8122675337cd47ab2b14191254ba71923",
+      "description": {
+        "en": "Question 3. Which value of b makes the inequality 3b > 12 true? Choices: A: 2. B: 3. C: 4. D: 5.",
+        "es": "Pregunta 3. ¿Qué valor de b hace que la desigualdad 3b > 12 sea verdadera? Opciones: A: 2 B: 3 C: 4 D: 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3b > 12",
+          "2",
+          "3",
+          "4",
+          "5",
+          "A: 2",
+          "B: 3",
+          "C: 4",
+          "D: 5"
+        ],
+        "es": [
+          "3b > 12",
+          "2",
+          "3",
+          "4",
+          "5",
+          "A: 2",
+          "B: 3",
+          "C: 4",
+          "D: 5"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q4": {
+      "inputHash": "d797022939ef3b028a5c1bbdf96a0b32c05c175f128508753acafffe504e3981",
+      "description": {
+        "en": "Question 4. A coordinate plane can be used to show the distance, in units, between two locations. Jack’s house is located at (−7, −8). The store is located at (−7, 4). What is the distance, in units, between Jack’s house and the store? Choices: A: 4. B: 8. C: 12. D: 14.",
+        "es": "Pregunta 4. Se puede usar un plano de coordenadas para mostrar la distancia, en unidades, entre dos ubicaciones. A continuación, se muestra la ubicación de la casa de Jack y una tienda. La casa de Jack está ubicada en (−7, −8). La tienda está ubicada en (−7, 4). ¿Qué distancia hay, en unidades, entre la casa de Jack y la tienda? Opciones: A: 4 B: 8 C: 12 D: 14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−7, −8)",
+          "(−7, 4)",
+          "4",
+          "8",
+          "12",
+          "14",
+          "A: 4",
+          "B: 8",
+          "C: 12",
+          "D: 14"
+        ],
+        "es": [
+          "(−7, −8)",
+          "(−7, 4)",
+          "4",
+          "8",
+          "12",
+          "14",
+          "A: 4",
+          "B: 8",
+          "C: 12",
+          "D: 14"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q11": {
+      "inputHash": "0bd92a2045d3fdee92d32c34c22bf17229df3391482f7be2f7da50ff5a25f963",
+      "description": {
+        "en": "Question 11. Which number line represents x ≥ −3? Each choice is a horizontal number line labeled at every integer from −6 through 6, with arrows at both ends. A bold ray indicates the represented values. Choices: A: A closed point at −3 with the bold ray extending left from −3. B: A closed point at −3 with the bold ray extending right from −3. C: An open point at −3 with the bold ray extending left from −3. D: An open point at −3 with the bold ray extending right from −3.",
+        "es": "Pregunta 11. ¿Qué recta numérica representa x ≥ −3? Cada recta está rotulada en todos los enteros desde −6 hasta 6 y tiene flechas en ambos extremos. Opciones: A: Un punto cerrado en −3 y un rayo grueso que se extiende desde −3 hacia la izquierda. B: Un punto cerrado en −3 y un rayo grueso que se extiende desde −3 hacia la derecha. C: Un punto abierto en −3 y un rayo grueso que se extiende desde −3 hacia la izquierda. D: Un punto abierto en −3 y un rayo grueso que se extiende desde −3 hacia la derecha."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x ≥ −3",
+          "−6",
+          "6",
+          "−3",
+          "closed point",
+          "open point",
+          "left",
+          "right",
+          "A: A closed point at −3 with the bold ray extending left from −3",
+          "B: A closed point at −3 with the bold ray extending right from −3",
+          "C: An open point at −3 with the bold ray extending left from −3",
+          "D: An open point at −3 with the bold ray extending right from −3"
+        ],
+        "es": [
+          "x ≥ −3",
+          "−6",
+          "−3",
+          "6",
+          "punto cerrado",
+          "punto abierto",
+          "hacia la izquierda",
+          "hacia la derecha",
+          "A: Un punto cerrado en −3 y un rayo grueso que se extiende desde −3 hacia la izquierda",
+          "B: Un punto cerrado en −3 y un rayo grueso que se extiende desde −3 hacia la derecha",
+          "C: Un punto abierto en −3 y un rayo grueso que se extiende desde −3 hacia la izquierda",
+          "D: Un punto abierto en −3 y un rayo grueso que se extiende desde −3 hacia la derecha"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q14": {
+      "inputHash": "d69885f4a8c57341ed973530ffeb8ac47213bf6bd9c85b809bca3c9b0a6427cc",
+      "description": {
+        "en": "Question 14. What is the value of the expression 8² ÷ 4 × 2³? Choices: A: 16. B: 24. C: 96. D: 128.",
+        "es": "Pregunta 14. ¿Cuál es el valor de la expresión 8² ÷ 4 × 2³? Opciones: A: 16 B: 24 C: 96 D: 128"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8² ÷ 4 × 2³",
+          "16",
+          "24",
+          "96",
+          "128",
+          "A: 16",
+          "B: 24",
+          "C: 96",
+          "D: 128",
+          "8²",
+          "2³"
+        ],
+        "es": [
+          "8² ÷ 4 × 2³",
+          "16",
+          "24",
+          "96",
+          "128",
+          "A: 16",
+          "B: 24",
+          "C: 96",
+          "D: 128",
+          "8²",
+          "2³"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q15": {
+      "inputHash": "a992ebf30c39ecff5bdcd826459b4320f13718d048fdf37a54a0a2efca309f65",
+      "description": {
+        "en": "Question 15. Ben purchases 1 1/4 pounds of nuts and puts them into bags. Each bag holds 1/8 pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts? Choices: A: 5/32. B: 1 1/8. C: 2. D: 10.",
+        "es": "Pregunta 15. Ben compra 1 1/4 libra de frutos secos y los coloca en bolsas. Cada bolsa contiene 1/8 de libra de frutos secos. Él usa todos los frutos secos para llenar por completo cada bolsa. ¿Cuántas bolsas llena Ben con frutos secos? Opciones: A: 5/32 B: 1 1/8 C: 2 D: 10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/4",
+          "1/8",
+          "5/32",
+          "1 1/8",
+          "2",
+          "10",
+          "A: 5/32",
+          "B: 1 1/8",
+          "C: 2",
+          "D: 10"
+        ],
+        "es": [
+          "1 1/4",
+          "1/8",
+          "5/32",
+          "1 1/8",
+          "2",
+          "10",
+          "A: 5/32",
+          "B: 1 1/8",
+          "C: 2",
+          "D: 10"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q18": {
+      "inputHash": "ddc258d1d4ea882087993b1ee92847d88c3291a10968334751e0cdf1dd5f668f",
+      "description": {
+        "en": "Question 18. Which expression represents the opposite of the number −2 1/2? Choices: A: −(2 1/2). B: −(−2 1/2). C: −2(1/2). D: 2(−1/2).",
+        "es": "Pregunta 18. ¿Qué expresión representa el opuesto del número −2 1/2? Opciones: A: −(2 1/2) B: −(−2 1/2) C: −2(1/2) D: 2(−1/2)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−2 1/2",
+          "−(2 1/2)",
+          "−(−2 1/2)",
+          "−2(1/2)",
+          "2(−1/2)",
+          "A: −(2 1/2)",
+          "B: −(−2 1/2)",
+          "C: −2(1/2)",
+          "D: 2(−1/2)",
+          "2 1/2",
+          "(2 1/2)",
+          "(−2 1/2)",
+          "(1/2)",
+          "(−1/2)"
+        ],
+        "es": [
+          "−2 1/2",
+          "−(2 1/2)",
+          "−(−2 1/2)",
+          "−2(1/2)",
+          "2(−1/2)",
+          "A: −(2 1/2)",
+          "B: −(−2 1/2)",
+          "C: −2(1/2)",
+          "D: 2(−1/2)",
+          "2 1/2",
+          "(2 1/2)",
+          "(−2 1/2)",
+          "(1/2)",
+          "(−1/2)"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q20": {
+      "inputHash": "38040fa9e2a30fc8db4af7cf442a11552062e9abc10d0a27fddec2ad56287bbb",
+      "description": {
+        "en": "Question 20. A diagram of a cube has an edge length of 2 1/2 inches, indicated by a dimension line spanning the cube’s bottom front edge. What is the volume, in cubic inches, of the cube? Choices: A: 1 7/8. B: 7 1/2. C: 15 5/8. D: 20 5/6.",
+        "es": "Pregunta 20. A continuación, se muestra el diagrama de un cubo. El dibujo representa un cubo en perspectiva, con una cara frontal cuadrada y las aristas superior, derecha y posterior visibles. La longitud de cada arista del cubo es 2 1/2 pulgadas; esa dimensión está marcada debajo de la arista frontal inferior. ¿Cuál es el volumen, en pulgadas cúbicas, del cubo? Opciones: A: 1 7/8 B: 7 1/2 C: 15 5/8 D: 20 5/6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 1/2",
+          "1 7/8",
+          "7 1/2",
+          "15 5/8",
+          "20 5/6",
+          "A: 1 7/8",
+          "B: 7 1/2",
+          "C: 15 5/8",
+          "D: 20 5/6"
+        ],
+        "es": [
+          "2 1/2 pulgadas",
+          "pulgadas cúbicas",
+          "1 7/8",
+          "7 1/2",
+          "15 5/8",
+          "20 5/6",
+          "A: 1 7/8",
+          "B: 7 1/2",
+          "C: 15 5/8",
+          "D: 20 5/6",
+          "2 1/2"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q22": {
+      "inputHash": "51573480370073a2161e34667d253831edcbc6c13782b1ebc8063cd9d2f087f7",
+      "description": {
+        "en": "Question 22. Tammy and Jacob collect stamps. Tammy has s stamps. Jacob has 4 fewer than 3 times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has? Choices: A: 3 − 4s. B: 3s − 4. C: 4 − 3s. D: 4s − 3.",
+        "es": "Pregunta 22. Tammy y Jacob coleccionan estampillas. Tammy tiene s estampillas. Jacob tiene 4 menos que 3 veces la cantidad de estampillas que tiene Tammy. ¿Qué expresión puede usarse para representar la cantidad de estampillas que tiene Jacob? Opciones: A: 3 − 4s B: 3s − 4 C: 4 − 3s D: 4s − 3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "s",
+          "4",
+          "3",
+          "3 − 4s",
+          "3s − 4",
+          "4 − 3s",
+          "4s − 3",
+          "A: 3 − 4s",
+          "B: 3s − 4",
+          "C: 4 − 3s",
+          "D: 4s − 3"
+        ],
+        "es": [
+          "s",
+          "4",
+          "3",
+          "3 − 4s",
+          "3s − 4",
+          "4 − 3s",
+          "4s − 3",
+          "A: 3 − 4s",
+          "B: 3s − 4",
+          "C: 4 − 3s",
+          "D: 4s − 3"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q23": {
+      "inputHash": "66b098c2540626e8975fa108ed7bec1d584eca2ab056394e1761ef5fbe3f9bcc",
+      "description": {
+        "en": "Question 23. A container holds 6 gallons of liquid. How many pints of liquid does the container hold? Choices: A: 6. B: 8. C: 24. D: 48.",
+        "es": "Pregunta 23. Un contenedor contiene 6 galones de líquido. ¿Cuántas pintas de líquido contiene el contenedor? Opciones: A: 6 B: 8 C: 24 D: 48"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "8",
+          "24",
+          "48",
+          "A: 6",
+          "B: 8",
+          "C: 24",
+          "D: 48"
+        ],
+        "es": [
+          "6 galones",
+          "6",
+          "8",
+          "24",
+          "48",
+          "A: 6",
+          "B: 8",
+          "C: 24",
+          "D: 48"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q26": {
+      "inputHash": "ec2c7df93c26c2595b9034e924a2517f3a3083fabdcde346064c0d391e7f1ee4",
+      "description": {
+        "en": "Question 26. What ordered pair represents the location of a point that is the reflection of the point (−4, 6) over the x-axis? Choices: A: (4, 6). B: (−4, −6). C: (6, −4). D: (−6, 4).",
+        "es": "Pregunta 26. ¿Qué par ordenado representa la ubicación de un punto que es la reflexión del punto (−4, 6) sobre el eje x? Opciones: A: (4, 6) B: (−4, −6) C: (6, −4) D: (−6, 4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−4, 6)",
+          "x-axis",
+          "(4, 6)",
+          "(−4, −6)",
+          "(6, −4)",
+          "(−6, 4)",
+          "A: (4, 6)",
+          "B: (−4, −6)",
+          "C: (6, −4)",
+          "D: (−6, 4)"
+        ],
+        "es": [
+          "(−4, 6)",
+          "eje x",
+          "(4, 6)",
+          "(−4, −6)",
+          "(6, −4)",
+          "(−6, 4)",
+          "A: (4, 6)",
+          "B: (−4, −6)",
+          "C: (6, −4)",
+          "D: (−6, 4)"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q28": {
+      "inputHash": "687ada191495be6d56bc4a727a73f5c2ef138b53d744b583f1ee70609daa5d8c",
+      "description": {
+        "en": "Question 28. An isosceles trapezoid has a horizontal top base measuring 10 cm, a horizontal bottom base measuring 16 cm, and a perpendicular height measuring 15 cm. The height is represented by a dashed vertical segment from the left endpoint of the top base to the bottom base, with a right-angle marker where it meets the bottom base. What is the area, in square centimeters, of the isosceles trapezoid? Choices: A: 120. B: 150. C: 195. D: 240.",
+        "es": "Pregunta 28. A continuación, se muestra un trapecio isósceles. Sus bases horizontales y paralelas miden 10 cm y 16 cm: la base superior mide 10 cm y la inferior mide 16 cm. Un segmento vertical punteado va desde el vértice superior izquierdo hasta la base inferior y forma un ángulo recto con esta; dicho segmento representa una altura de 15 cm. ¿Cuál es el área, en centímetros cuadrados, del trapecio isósceles? Opciones: A: 120 B: 150 C: 195 D: 240"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 cm",
+          "16 cm",
+          "15 cm",
+          "120",
+          "150",
+          "195",
+          "240",
+          "A: 120",
+          "B: 150",
+          "C: 195",
+          "D: 240"
+        ],
+        "es": [
+          "10 cm",
+          "16 cm",
+          "15 cm",
+          "120",
+          "150",
+          "195",
+          "240",
+          "A: 120",
+          "B: 150",
+          "C: 195",
+          "D: 240"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q29": {
+      "inputHash": "486cec108b6db2a84acfe5fcda1bb7a6973aa6e13a8b1836d8469d46accc9cae",
+      "description": {
+        "en": "Question 29. An inequality is given: −9/20 > −21/24. Which statement about the locations of the numbers on a number line is true? Choices: A: −9/20 is to the left of −21/24 and to the right of 0 on a number line. B: −9/20 is to the right of −21/24 and to the left of 0 on a number line. C: −9/20 is to the left of −21/24 and to the left of 0 on a number line. D: −9/20 is to the right of −21/24 and to the right of 0 on a number line.",
+        "es": "Pregunta 29. A continuación, se muestra una desigualdad: −9/20 > −21/24. ¿Qué afirmación sobre las ubicaciones de los números en una recta numérica es verdadera? Opciones: A: −9/20 se encuentra a la izquierda de −21/24 y a la derecha de 0 en la recta numérica. B: −9/20 se encuentra a la derecha de −21/24 y a la izquierda de 0 en la recta numérica. C: −9/20 se encuentra a la izquierda de −21/24 y a la izquierda de 0 en la recta numérica. D: −9/20 se encuentra a la derecha de −21/24 y a la derecha de 0 en la recta numérica."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−9/20 > −21/24",
+          "−9/20",
+          "−21/24",
+          "0",
+          "A: −9/20 is to the left of −21/24 and to the right of 0 on a number line",
+          "B: −9/20 is to the right of −21/24 and to the left of 0 on a number line",
+          "C: −9/20 is to the left of −21/24 and to the left of 0 on a number line",
+          "D: −9/20 is to the right of −21/24 and to the right of 0 on a number line",
+          "9/20",
+          "21/24"
+        ],
+        "es": [
+          "−9/20 > −21/24",
+          "−9/20",
+          "−21/24",
+          "0",
+          "izquierda",
+          "derecha",
+          "A: −9/20 se encuentra a la izquierda de −21/24 y a la derecha de 0 en la recta numérica",
+          "B: −9/20 se encuentra a la derecha de −21/24 y a la izquierda de 0 en la recta numérica",
+          "C: −9/20 se encuentra a la izquierda de −21/24 y a la izquierda de 0 en la recta numérica",
+          "D: −9/20 se encuentra a la derecha de −21/24 y a la derecha de 0 en la recta numérica",
+          "9/20",
+          "21/24"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q31": {
+      "inputHash": "f74bfe40f354ca8407bedc22427ca8301cc70d3d2222f15c46d09de4e7cff354",
+      "description": {
+        "en": "Question 31. There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda? Choices: A: 13. B: 26. C: 52. D: 96.",
+        "es": "Pregunta 31. Hay 104 calorías en una porción de 8 onzas de refresco. ¿Cuántas calorías hay en 1 onza de refresco? Opciones: A: 13 B: 26 C: 52 D: 96"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "104",
+          "8-ounce",
+          "1 ounce",
+          "13",
+          "26",
+          "52",
+          "96",
+          "A: 13",
+          "B: 26",
+          "C: 52",
+          "D: 96"
+        ],
+        "es": [
+          "104 calorías",
+          "8 onzas",
+          "1 onza",
+          "13",
+          "26",
+          "52",
+          "96",
+          "A: 13",
+          "B: 26",
+          "C: 52",
+          "D: 96"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q32": {
+      "inputHash": "4f7680cf82916bc0ff34839f0ba9ed9058bb1b64a59b6ce5cacbbeabc2020e2a",
+      "description": {
+        "en": "Question 32. Jose builds a skateboard ramp in the shape of a right triangular prism. A net shows three rectangles joined side by side, all with a height of 4 ft. From left to right, their widths are 2.5 ft, 6 ft, and 6.5 ft. Two congruent right triangles are attached to the top and bottom edges of the middle rectangle. Each triangle has a 6 ft leg along the middle rectangle, a perpendicular 2.5 ft leg, and a 6.5 ft hypotenuse. Right-angle markers appear between the 2.5 ft and 6 ft legs. What is the surface area, in square feet, of the ramp? Choices: A: 90. B: 75. C: 51. D: 44.",
+        "es": "Pregunta 32. José construye una rampa para patinetas con la forma de un prisma triangular recto. El desarrollo muestra tres rectángulos colocados consecutivamente de izquierda a derecha, todos con una dimensión común de 4 pies. Las otras dimensiones de los rectángulos son, respectivamente, 2.5 pies, 6 pies y 6.5 pies. Al rectángulo central, de 6 pies por 4 pies, se unen dos triángulos rectángulos congruentes, uno arriba y otro abajo. Cada triángulo tiene catetos de 2.5 pies y 6 pies, que forman un ángulo recto, e hipotenusa de 6.5 pies. ¿Cuál es el área de superficie, en pies cuadrados, de la rampa? Opciones: A: 90 B: 75 C: 51 D: 44"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 ft",
+          "2.5 ft",
+          "6 ft",
+          "6.5 ft",
+          "90",
+          "75",
+          "51",
+          "44",
+          "A: 90",
+          "B: 75",
+          "C: 51",
+          "D: 44"
+        ],
+        "es": [
+          "4 pies",
+          "2.5 pies",
+          "6 pies",
+          "6.5 pies",
+          "6 pies por 4 pies",
+          "90",
+          "75",
+          "51",
+          "44",
+          "A: 90",
+          "B: 75",
+          "C: 51",
+          "D: 44"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q33": {
+      "inputHash": "b76a1e6032d1311131532338ee47639d9f2ee411985b7f00995fd22e3db75709",
+      "description": {
+        "en": "Question 33. The number 4 is 16% of what number? Choices: A: 12. B: 20. C: 25. D: 64.",
+        "es": "Pregunta 33. ¿El número 4 es el 16 % de qué número? Opciones: A: 12 B: 20 C: 25 D: 64"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4",
+          "16%",
+          "12",
+          "20",
+          "25",
+          "64",
+          "A: 12",
+          "B: 20",
+          "C: 25",
+          "D: 64"
+        ],
+        "es": [
+          "4",
+          "16 %",
+          "12",
+          "20",
+          "25",
+          "64",
+          "A: 12",
+          "B: 20",
+          "C: 25",
+          "D: 64"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q34": {
+      "inputHash": "115956c7ceb3f0eb72ed99512d89375d5ab5515be6735bc025747b5c74c045e0",
+      "description": {
+        "en": "Question 34. A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates? Choices: A: 6 B: 15 C: 54 D: 63",
+        "es": "Pregunta 34. Una máquina produce chocolates a un ritmo constante. En 42 minutos, la máquina produce 7 libras de chocolates. ¿Cuánto tiempo, en minutos, le llevará a la máquina producir 9 libras de chocolates? Opciones: A: 6 B: 15 C: 54 D: 63"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "42 minutes",
+          "7 pounds",
+          "9 pounds",
+          "A: 6",
+          "B: 15",
+          "C: 54",
+          "D: 63"
+        ],
+        "es": [
+          "42 minutos",
+          "7 libras",
+          "9 libras",
+          "A: 6",
+          "B: 15",
+          "C: 54",
+          "D: 63"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q35": {
+      "inputHash": "a34c34d167858c48acd0117659f5165bf73f2edddcb12d23c54121db70679eb7",
+      "description": {
+        "en": "Question 35. The dimensions of a cereal box in the shape of a right rectangular prism are 8 1/10 inches by 4 4/5 inches by 12 1/2 inches. What is the volume, in cubic inches, of the cereal box? Choices: A: 24 B: 25 2/5 C: 384 1/25 D: 486",
+        "es": "Pregunta 35. A continuación, se muestran las dimensiones de una caja de cereales con la forma de un prisma rectangular recto. Las dimensiones son 8 1/10 pulgadas por 4 4/5 pulgadas por 12 1/2 pulgadas. ¿Cuál es el volumen, en pulgadas cúbicas, de la caja de cereales? Opciones: A: 24 B: 25 2/5 C: 384 1/25 D: 486"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 1/10 inches",
+          "4 4/5 inches",
+          "12 1/2 inches",
+          "A: 24",
+          "B: 25 2/5",
+          "C: 384 1/25",
+          "D: 486",
+          "8 1/10",
+          "4 4/5",
+          "12 1/2",
+          "25 2/5",
+          "384 1/25"
+        ],
+        "es": [
+          "8 1/10 pulgadas",
+          "4 4/5 pulgadas",
+          "12 1/2 pulgadas",
+          "A: 24",
+          "B: 25 2/5",
+          "C: 384 1/25",
+          "D: 486",
+          "8 1/10",
+          "4 4/5",
+          "12 1/2",
+          "25 2/5",
+          "384 1/25"
+        ]
+      }
+    },
+    "nysed-2024-g6-mc-q36": {
+      "inputHash": "d4d8cc0da1bd31699a8f8d2af5464534bb4be96c8a0221faaa52c02105ac4af3",
+      "description": {
+        "en": "Question 36. A tutoring company charges $25.00 per hour to tutor a student. How many hours of tutoring would cost $62.50? Choices: A: 2 1/2 B: 3 1/2 C: 37 1/2 D: 87 1/2",
+        "es": "Pregunta 36. Una empresa que ofrece clases particulares cobra $25.00 por hora para darle clases particulares a un alumno. ¿Cuántas horas de clases particulares costaría $62.50? Opciones: A: 2 1/2 B: 3 1/2 C: 37 1/2 D: 87 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$25.00",
+          "$62.50",
+          "A: 2 1/2",
+          "B: 3 1/2",
+          "C: 37 1/2",
+          "D: 87 1/2",
+          "2 1/2",
+          "3 1/2",
+          "37 1/2",
+          "87 1/2"
+        ],
+        "es": [
+          "$25.00 por hora",
+          "$62.50",
+          "A: 2 1/2",
+          "B: 3 1/2",
+          "C: 37 1/2",
+          "D: 87 1/2",
+          "2 1/2",
+          "3 1/2",
+          "37 1/2",
+          "87 1/2"
+        ]
+      }
+    }
+  }
+}

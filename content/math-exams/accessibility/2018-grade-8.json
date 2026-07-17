@@ -1,0 +1,1129 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2018-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2018-g8-mc-q1": {
+      "inputHash": "c5596de7f275ca5badf12eaf4e399cf816664d58f0cab81b39c0e07eaafc17ef",
+      "description": {
+        "en": "Question 1. In each table, x represents the input value, and y represents the output value. Which table does not represent a function of x? Choices: A: A two-column table labeled x and y contains the ordered pairs (0, 0), (1, 1), (2, 2), and (3, 3). B: A two-column table labeled x and y contains the ordered pairs (3, 0), (2, 1), (1, 2), and (0, 3). C: A two-column table labeled x and y contains the ordered pairs (0, 3), (1, 3), (2, 3), and (3, 3). D: A two-column table labeled x and y contains the ordered pairs (3, 0), (3, 1), (3, 2), and (3, 3).",
+        "es": "Pregunta 1. En cada tabla, x representa el valor de ingreso e y representa el valor de salida. ¿Qué tabla no representa una función de x? Opciones: A: Tabla con columnas x e y y los pares ordenados (0, 0), (1, 1), (2, 2) y (3, 3). B: Tabla con columnas x e y y los pares ordenados (3, 0), (2, 1), (1, 2) y (0, 3). C: Tabla con columnas x e y y los pares ordenados (0, 3), (1, 3), (2, 3) y (3, 3). D: Tabla con columnas x e y y los pares ordenados (3, 0), (3, 1), (3, 2) y (3, 3)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(1, 1)",
+          "(2, 2)",
+          "(3, 3)",
+          "(3, 0)",
+          "(2, 1)",
+          "(1, 2)",
+          "(0, 3)",
+          "(1, 3)",
+          "(2, 3)",
+          "(3, 1)",
+          "(3, 2)",
+          "A: A two-column table labeled x and y contains the ordered pairs (0, 0), (1, 1), (2, 2), and (3, 3)",
+          "B: A two-column table labeled x and y contains the ordered pairs (3, 0), (2, 1), (1, 2), and (0, 3)",
+          "C: A two-column table labeled x and y contains the ordered pairs (0, 3), (1, 3), (2, 3), and (3, 3)",
+          "D: A two-column table labeled x and y contains the ordered pairs (3, 0), (3, 1), (3, 2), and (3, 3)"
+        ],
+        "es": [
+          "(0, 0)",
+          "(1, 1)",
+          "(2, 2)",
+          "(3, 3)",
+          "(3, 0)",
+          "(2, 1)",
+          "(1, 2)",
+          "(0, 3)",
+          "(1, 3)",
+          "(2, 3)",
+          "(3, 1)",
+          "(3, 2)",
+          "A: Tabla con columnas x e y y los pares ordenados (0, 0), (1, 1), (2, 2) y (3, 3)",
+          "B: Tabla con columnas x e y y los pares ordenados (3, 0), (2, 1), (1, 2) y (0, 3)",
+          "C: Tabla con columnas x e y y los pares ordenados (0, 3), (1, 3), (2, 3) y (3, 3)",
+          "D: Tabla con columnas x e y y los pares ordenados (3, 0), (3, 1), (3, 2) y (3, 3)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q2": {
+      "inputHash": "4c8e3686a876e7eabca8fbdcf6d7e2e3faaf37f9d6925a2415b20f70be70a427",
+      "description": {
+        "en": "Question 2. City X has a population of 3 × 10⁵ and City Y has a population of 6 × 10⁶. Which statement correctly describes the relationship between the populations of City X and City Y? Choices: A: The population of City Y is 2 times the population of City X. B: The population of City Y is 20 times the population of City X. C: The population of City X is 300,000 less than the population of City Y. D: The population of City X is 3,000,000 less than the population of City Y.",
+        "es": "Pregunta 2. La Ciudad X tiene una población de 3 × 10⁵ y la Ciudad Y tiene una población de 6 × 10⁶. ¿Qué afirmación describe correctamente la relación entre las poblaciones de la Ciudad X y la Ciudad Y? Opciones: A: La población de la Ciudad Y es 2 veces la población de la Ciudad X. B: La población de la Ciudad Y es 20 veces la población de la Ciudad X. C: La población de la Ciudad X es 300,000 menos que la población de la Ciudad Y. D: La población de la Ciudad X es 3,000,000 menos que la población de la Ciudad Y."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 × 10⁵",
+          "6 × 10⁶",
+          "2",
+          "20",
+          "300,000",
+          "3,000,000",
+          "A: The population of City Y is 2 times the population of City X",
+          "B: The population of City Y is 20 times the population of City X",
+          "C: The population of City X is 300,000 less than the population of City Y",
+          "D: The population of City X is 3,000,000 less than the population of City Y",
+          "10⁵",
+          "10⁶"
+        ],
+        "es": [
+          "3 × 10⁵",
+          "6 × 10⁶",
+          "2 veces",
+          "20 veces",
+          "300,000",
+          "3,000,000",
+          "A: La población de la Ciudad Y es 2 veces la población de la Ciudad X",
+          "B: La población de la Ciudad Y es 20 veces la población de la Ciudad X",
+          "C: La población de la Ciudad X es 300,000 menos que la población de la Ciudad Y",
+          "D: La población de la Ciudad X es 3,000,000 menos que la población de la Ciudad Y",
+          "10⁵",
+          "10⁶"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q3": {
+      "inputHash": "874d511f118f9a5cd53f25e93764df3f945b54b95db74fbe6947164a23522e34",
+      "description": {
+        "en": "Question 3. Which equation describes a linear function? Choices: A: V = s³. B: y = (1/6)x. C: y = 2ˣ. D: A = πr².",
+        "es": "Pregunta 3. ¿Qué ecuación describe una función lineal? Opciones: A: V = s³. B: y = (1/6)x. C: y = 2ˣ. D: A = πr²."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "V = s³",
+          "y = (1/6)x",
+          "y = 2ˣ",
+          "A = πr²",
+          "A: V = s³",
+          "B: y = (1/6)x",
+          "C: y = 2ˣ",
+          "D: A = πr²",
+          "(1/6)"
+        ],
+        "es": [
+          "V = s³",
+          "y = (1/6)x",
+          "y = 2ˣ",
+          "A = πr²",
+          "A: V = s³",
+          "B: y = (1/6)x",
+          "C: y = 2ˣ",
+          "D: A = πr²",
+          "(1/6)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q4": {
+      "inputHash": "3368babc6e1cbb4fa9082dfa214c59d5da28383233efafe1deeda3dc80757063",
+      "description": {
+        "en": "Question 4. A system of equations is given: 5x + 2y = −15 and 2x − 2y = −6. What is the solution to the system of equations? Choices: A: (−3, 0). B: (0, −3). C: (−3, 6). D: (6, −3).",
+        "es": "Pregunta 4. A continuación, se muestra un sistema de ecuaciones: 5x + 2y = −15 y 2x − 2y = −6. ¿Cuál es la solución del sistema de ecuaciones? Opciones: A: (−3, 0). B: (0, −3). C: (−3, 6). D: (6, −3)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5x + 2y = −15",
+          "2x − 2y = −6",
+          "(−3, 0)",
+          "(0, −3)",
+          "(−3, 6)",
+          "(6, −3)",
+          "A: (−3, 0)",
+          "B: (0, −3)",
+          "C: (−3, 6)",
+          "D: (6, −3)"
+        ],
+        "es": [
+          "5x + 2y = −15",
+          "2x − 2y = −6",
+          "(−3, 0)",
+          "(0, −3)",
+          "(−3, 6)",
+          "(6, −3)",
+          "A: (−3, 0)",
+          "B: (0, −3)",
+          "C: (−3, 6)",
+          "D: (6, −3)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q6": {
+      "inputHash": "00adbe0285dc94ebed607ed3f09dfd8d9ff48bb1be34479ae87c70aa747a7977",
+      "description": {
+        "en": "Question 6. A radar device has an antenna that revolves at a constant rate. A graph titled “RADAR DEVICE ANTENNA” shows the number of revolutions the device will make over time. The horizontal x-axis is Time (minutes), marked from 0 through 10 in increments of 1. The vertical y-axis is Number of Revolutions, marked from 10 through 100 in increments of 10, with the origin representing 0. A straight ray begins at (0, 0), passes through (2, 30), (4, 60), and (6, 90), and continues upward and to the right beyond 100 revolutions. Which table shows the data for an antenna that revolves at exactly twice the rate of the antenna described in the graph? Choices: A: ANTENNA #1. A table with columns Time (minutes) and Number of Revolutions contains the rows 15 and 315; 30 and 660. B: ANTENNA #2. A table with columns Time (minutes) and Number of Revolutions contains the rows 18 and 450; 36 and 900. C: ANTENNA #3. A table with columns Time (minutes) and Number of Revolutions contains the rows 20 and 40; 25 and 50. D: ANTENNA #4. A table with columns Time (minutes) and Number of Revolutions contains the rows 22 and 660; 24 and 720.",
+        "es": "Pregunta 6. Un dispositivo de radar tiene una antena que gira a una tasa constante. En el gráfico se muestra el número de revoluciones que el dispositivo realizará en el tiempo. El gráfico, titulado «ANTENA DEL DISPOSITIVO DE RADAR», tiene el eje horizontal x rotulado «Tiempo (minutos)» y el eje vertical y rotulado «Número de revoluciones». El eje horizontal está marcado de 0 a 10 minutos en incrementos de 1; el eje vertical está marcado de 10 a 100 revoluciones en incrementos de 10. Una recta ascendente parte del origen (0, 0), pasa por (2, 30), (4, 60) y (6, 90), y continúa con una flecha más allá de 100 revoluciones. ¿Qué tabla muestra los datos para una antena que gira exactamente al doble de la tasa de la antena que se describe en el gráfico? Opciones: A: ANTENA N.º 1. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 15 minutos y 315 revoluciones; 30 minutos y 660 revoluciones. B: ANTENA N.º 2. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 18 minutos y 450 revoluciones; 36 minutos y 900 revoluciones. C: ANTENA N.º 3. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 20 minutos y 40 revoluciones; 25 minutos y 50 revoluciones. D: ANTENA N.º 4. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 22 minutos y 660 revoluciones; 24 minutos y 720 revoluciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(2, 30)",
+          "(4, 60)",
+          "(6, 90)",
+          "15",
+          "315",
+          "30",
+          "660",
+          "18",
+          "450",
+          "36",
+          "900",
+          "20",
+          "40",
+          "25",
+          "50",
+          "22",
+          "24",
+          "720",
+          "A: ANTENNA #1. A table with columns Time (minutes) and Number of Revolutions contains the rows 15 and 315; 30 and 660",
+          "B: ANTENNA #2. A table with columns Time (minutes) and Number of Revolutions contains the rows 18 and 450; 36 and 900",
+          "C: ANTENNA #3. A table with columns Time (minutes) and Number of Revolutions contains the rows 20 and 40; 25 and 50",
+          "D: ANTENNA #4. A table with columns Time (minutes) and Number of Revolutions contains the rows 22 and 660; 24 and 720"
+        ],
+        "es": [
+          "(0, 0)",
+          "(2, 30)",
+          "(4, 60)",
+          "(6, 90)",
+          "15 minutos",
+          "315 revoluciones",
+          "30 minutos",
+          "660 revoluciones",
+          "18 minutos",
+          "450 revoluciones",
+          "36 minutos",
+          "900 revoluciones",
+          "20 minutos",
+          "40 revoluciones",
+          "25 minutos",
+          "50 revoluciones",
+          "22 minutos",
+          "24 minutos",
+          "720 revoluciones",
+          "A: ANTENA N.º 1. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 15 minutos y 315 revoluciones; 30 minutos y 660 revoluciones",
+          "B: ANTENA N.º 2. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 18 minutos y 450 revoluciones; 36 minutos y 900 revoluciones",
+          "C: ANTENA N.º 3. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 20 minutos y 40 revoluciones; 25 minutos y 50 revoluciones",
+          "D: ANTENA N.º 4. Tabla con columnas «Tiempo (minutos)» y «Número de revoluciones»: 22 minutos y 660 revoluciones; 24 minutos y 720 revoluciones"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q7": {
+      "inputHash": "5d609d3c9a818ae470fb7c8e94f57f45597afd82700b2cf3a8a6f34fded5e511",
+      "description": {
+        "en": "Question 7. An octagon has eight congruent sides. Its measures are rounded to the nearest tenth of a centimeter. The octagon is oriented with horizontal top and bottom sides, vertical left and right sides, and four slanted corner sides. Its total width and total height are each 28 cm. The top horizontal side is 11.6 cm; because all eight sides are congruent, each side is 11.6 cm. Dashed horizontal segments connect the upper endpoints of the two vertical sides and the lower endpoints of the two vertical sides. A perpendicular dashed vertical segment from the upper-left endpoint of the top side to the upper dashed horizontal segment is 8.2 cm. A perpendicular dashed vertical segment from the lower-left endpoint of the bottom side to the lower dashed horizontal segment is also 8.2 cm. What is the area, to the nearest square centimeter, of the octagon? Choices: A: 392. B: 487. C: 650. D: 720.",
+        "es": "Pregunta 7. El octágono que se muestra a continuación tiene ocho lados congruentes. Las medidas indicadas del octágono están redondeadas al décimo de centímetro más cercano. El octágono tiene lados superior e inferior horizontales, lados izquierdo y derecho verticales y cuatro lados diagonales en las esquinas. Su anchura total y su altura total miden 28 cm. El lado superior mide 11.6 cm. Dos segmentos horizontales punteados unen los extremos superiores de los lados verticales y los extremos inferiores de esos lados. Desde el extremo izquierdo del lado superior baja perpendicularmente un segmento punteado de 8.2 cm hasta el segmento horizontal punteado superior. Desde el extremo izquierdo del lado inferior sube perpendicularmente otro segmento punteado de 8.2 cm hasta el segmento horizontal punteado inferior. Los marcadores de ángulo recto señalan estas intersecciones perpendiculares y las cuatro esquinas de la región rectangular central. ¿Cuál es el área del octágono, redondeada al centímetro cuadrado más cercano? Opciones: A: 392. B: 487. C: 650. D: 720."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "28 cm",
+          "11.6 cm",
+          "8.2 cm",
+          "392",
+          "487",
+          "650",
+          "720",
+          "A: 392",
+          "B: 487",
+          "C: 650",
+          "D: 720"
+        ],
+        "es": [
+          "28 cm",
+          "11.6 cm",
+          "8.2 cm",
+          "392",
+          "487",
+          "650",
+          "720",
+          "A: 392",
+          "B: 487",
+          "C: 650",
+          "D: 720"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q8": {
+      "inputHash": "e74c8522a373ac31ff393ac3967ffe46f3bf31c20e8820346c1f041c4f60cae3",
+      "description": {
+        "en": "Question 8. A set of data is represented on a scatter plot. Both axes begin at 0. The horizontal x-axis is marked at integers from 1 through 8, and the vertical y-axis is marked at integers from 1 through 8. Reading each point against the grid, the plotted points are approximately (1, 7), (1, 5.2), (1.5, 3), (2, 3.7), (2.5, 4.7), (3, 5.5), (3.5, 5.2), (3.5, 2.7), (4, 4), (4, 1.2), (4.5, 1.5), (5, 3), (5.5, 3), (6, 2.2), and (7, 0). The data show an overall downward trend from left to right. Which equation best models the set of data? Choices: A: y = −(3/4)x + 6. B: y = (3/4)x − 6. C: y = −6x + 3/4. D: y = 6x − 3/4.",
+        "es": "Pregunta 8. Se representa un conjunto de datos en el siguiente diagrama de dispersión. El eje horizontal x y el eje vertical y forman el primer cuadrante; ambos tienen una cuadrícula con incrementos de 1. Las etiquetas numéricas visibles van de 0 a 8. Los puntos muestran una tendencia descendente general y están aproximadamente en (1, 7), (1, 5.2), (1.5, 3), (2, 3.7), (2.5, 4.7), (3, 5.5), (3.5, 5.2), (3.5, 2.7), (4, 4), (4, 1.2), (4.5, 1.5), (5, 3), (5.5, 3), (6, 2.2) y (7, 0). ¿Qué ecuación modela mejor el conjunto de datos? Opciones: A: y = −(3/4)x + 6. B: y = (3/4)x − 6. C: y = −6x + 3/4. D: y = 6x − 3/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 7)",
+          "(1, 5.2)",
+          "(1.5, 3)",
+          "(2, 3.7)",
+          "(2.5, 4.7)",
+          "(3, 5.5)",
+          "(3.5, 5.2)",
+          "(3.5, 2.7)",
+          "(4, 4)",
+          "(4, 1.2)",
+          "(4.5, 1.5)",
+          "(5, 3)",
+          "(5.5, 3)",
+          "(6, 2.2)",
+          "(7, 0)",
+          "y = −(3/4)x + 6",
+          "y = (3/4)x − 6",
+          "y = −6x + 3/4",
+          "y = 6x − 3/4",
+          "A: y = −(3/4)x + 6",
+          "B: y = (3/4)x − 6",
+          "C: y = −6x + 3/4",
+          "D: y = 6x − 3/4",
+          "(3/4)",
+          "3/4"
+        ],
+        "es": [
+          "(1, 7)",
+          "(1, 5.2)",
+          "(1.5, 3)",
+          "(2, 3.7)",
+          "(2.5, 4.7)",
+          "(3, 5.5)",
+          "(3.5, 5.2)",
+          "(3.5, 2.7)",
+          "(4, 4)",
+          "(4, 1.2)",
+          "(4.5, 1.5)",
+          "(5, 3)",
+          "(5.5, 3)",
+          "(6, 2.2)",
+          "(7, 0)",
+          "y = −(3/4)x + 6",
+          "y = (3/4)x − 6",
+          "y = −6x + 3/4",
+          "y = 6x − 3/4",
+          "A: y = −(3/4)x + 6",
+          "B: y = (3/4)x − 6",
+          "C: y = −6x + 3/4",
+          "D: y = 6x − 3/4",
+          "(3/4)",
+          "3/4"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q11": {
+      "inputHash": "6aace7ef4564ca699e0e767c6cd1a7701ec7114480b9287adcbdf1af863f89a7",
+      "description": {
+        "en": "Question 11. On a coordinate plane, rectangle ABCD is rotated 90° clockwise about the origin to form rectangle WXYZ. The coordinate grid has unit squares. Rectangle ABCD is left of the y-axis and above the x-axis, with A(−5, 6) at the upper left, B(−2, 6) at the upper right, C(−2, 1) at the lower right, and D(−5, 1) at the lower left. Rectangle WXYZ is right of the y-axis and above the x-axis, with Z(1, 5) at the upper left, W(6, 5) at the upper right, X(6, 2) at the lower right, and Y(1, 2) at the lower left. Right-angle marks appear at every vertex of both rectangles. Which statement about the relationship between rectangle ABCD and rectangle WXYZ is true? Choices: A: Segment DA ≅ segment YZ. B: Segment DC ≅ segment XY. C: Segment BC ≅ segment YZ. D: Segment AB ≅ segment WX.",
+        "es": "Pregunta 11. En el plano de coordenadas a continuación, el rectángulo ABCD se rota 90° en sentido del reloj alrededor del origen para formar el rectángulo WXYZ. Los ejes x e y se intersectan en el origen y la cuadrícula avanza en unidades de 1. El rectángulo ABCD está a la izquierda del eje y y sobre el eje x: A = (−5, 6), B = (−2, 6), C = (−2, 1) y D = (−5, 1). El rectángulo WXYZ está a la derecha del eje y y sobre el eje x: W = (6, 5), X = (6, 2), Y = (1, 2) y Z = (1, 5). La rotación establece las correspondencias A → W, B → X, C → Y y D → Z. ¿Qué afirmación sobre la relación entre el rectángulo ABCD y el rectángulo WXYZ es verdadera? Opciones: A: El segmento DA es congruente con el segmento YZ: DA ≅ YZ. B: El segmento DC es congruente con el segmento XY: DC ≅ XY. C: El segmento BC es congruente con el segmento YZ: BC ≅ YZ. D: El segmento AB es congruente con el segmento WX: AB ≅ WX."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "90°",
+          "A(−5, 6)",
+          "B(−2, 6)",
+          "C(−2, 1)",
+          "D(−5, 1)",
+          "Z(1, 5)",
+          "W(6, 5)",
+          "X(6, 2)",
+          "Y(1, 2)",
+          "DA ≅ segment YZ",
+          "DC ≅ segment XY",
+          "BC ≅ segment YZ",
+          "AB ≅ segment WX",
+          "A: Segment DA ≅ segment YZ",
+          "B: Segment DC ≅ segment XY",
+          "C: Segment BC ≅ segment YZ",
+          "D: Segment AB ≅ segment WX",
+          "(−5, 6)",
+          "(−2, 6)",
+          "(−2, 1)",
+          "(−5, 1)",
+          "(1, 5)",
+          "(6, 5)",
+          "(6, 2)",
+          "(1, 2)"
+        ],
+        "es": [
+          "90°",
+          "A = (−5, 6)",
+          "B = (−2, 6)",
+          "C = (−2, 1)",
+          "D = (−5, 1)",
+          "W = (6, 5)",
+          "X = (6, 2)",
+          "Y = (1, 2)",
+          "Z = (1, 5)",
+          "A → W",
+          "B → X",
+          "C → Y",
+          "D → Z",
+          "DA ≅ YZ",
+          "DC ≅ XY",
+          "BC ≅ YZ",
+          "AB ≅ WX",
+          "A: El segmento DA es congruente con el segmento YZ: DA ≅ YZ",
+          "B: El segmento DC es congruente con el segmento XY: DC ≅ XY",
+          "C: El segmento BC es congruente con el segmento YZ: BC ≅ YZ",
+          "D: El segmento AB es congruente con el segmento WX: AB ≅ WX",
+          "(−5, 6)",
+          "(−2, 6)",
+          "(−2, 1)",
+          "(−5, 1)",
+          "(6, 5)",
+          "(6, 2)",
+          "(1, 2)",
+          "(1, 5)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q14": {
+      "inputHash": "f4d18391ab668fb12797573f2f974fc8a4262eaba3bee5bff3b6f06d7b7bbfa3",
+      "description": {
+        "en": "Question 14. Which set of ordered pairs (x, y) could represent a linear function of x? Choices: A: {(−2, 8), (0, 4), (2, 3), (4, 2)} B: {(1, 2), (1, 3), (1, 4), (1, 5)} C: {(−2, 7), (0, 12), (2, 17), (4, 22)} D: {(3, 5), (4, 7), (3, 9), (5, 11)}",
+        "es": "Pregunta 14. ¿Qué conjunto de pares ordenados (x, y) puede representar una función lineal de x? Opciones: A: {(−2, 8), (0, 4), (2, 3), (4, 2)} B: {(1, 2), (1, 3), (1, 4), (1, 5)} C: {(−2, 7), (0, 12), (2, 17), (4, 22)} D: {(3, 5), (4, 7), (3, 9), (5, 11)}"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(x, y)",
+          "{(−2, 8), (0, 4), (2, 3), (4, 2)}",
+          "{(1, 2), (1, 3), (1, 4), (1, 5)}",
+          "{(−2, 7), (0, 12), (2, 17), (4, 22)}",
+          "{(3, 5), (4, 7), (3, 9), (5, 11)}",
+          "A: {(−2, 8), (0, 4), (2, 3), (4, 2)}",
+          "B: {(1, 2), (1, 3), (1, 4), (1, 5)}",
+          "C: {(−2, 7), (0, 12), (2, 17), (4, 22)}",
+          "D: {(3, 5), (4, 7), (3, 9), (5, 11)}",
+          "(−2, 8)",
+          "(0, 4)",
+          "(2, 3)",
+          "(4, 2)",
+          "(1, 2)",
+          "(1, 3)",
+          "(1, 4)",
+          "(1, 5)",
+          "(−2, 7)",
+          "(0, 12)",
+          "(2, 17)",
+          "(4, 22)",
+          "(3, 5)",
+          "(4, 7)",
+          "(3, 9)",
+          "(5, 11)"
+        ],
+        "es": [
+          "(x, y)",
+          "(−2, 8)",
+          "(0, 4)",
+          "(2, 3)",
+          "(4, 2)",
+          "(1, 2)",
+          "(1, 3)",
+          "(1, 4)",
+          "(1, 5)",
+          "(−2, 7)",
+          "(0, 12)",
+          "(2, 17)",
+          "(4, 22)",
+          "(3, 5)",
+          "(4, 7)",
+          "(3, 9)",
+          "(5, 11)",
+          "A: {(−2, 8), (0, 4), (2, 3), (4, 2)}",
+          "B: {(1, 2), (1, 3), (1, 4), (1, 5)}",
+          "C: {(−2, 7), (0, 12), (2, 17), (4, 22)}",
+          "D: {(3, 5), (4, 7), (3, 9), (5, 11)}"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q15": {
+      "inputHash": "018e6f41aa38ede0e3c3ae1ebe14913c120d3d42b31fab1eed4f47e968646c98",
+      "description": {
+        "en": "Question 15. Which set of angle measures could be the interior angles of a triangle? Choices: A: 90°, 90°, 90° B: 80°, 80°, 200° C: 40°, 50°, 60° D: 15°, 30°, 135°",
+        "es": "Pregunta 15. ¿Qué conjunto de medidas de ángulos podría ser los ángulos interiores de un triángulo? Opciones: A: 90°, 90°, 90° B: 80°, 80°, 200° C: 40°, 50°, 60° D: 15°, 30°, 135°"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "90°, 90°, 90°",
+          "80°, 80°, 200°",
+          "40°, 50°, 60°",
+          "15°, 30°, 135°",
+          "A: 90°, 90°, 90°",
+          "B: 80°, 80°, 200°",
+          "C: 40°, 50°, 60°",
+          "D: 15°, 30°, 135°"
+        ],
+        "es": [
+          "90°, 90°, 90°",
+          "80°, 80°, 200°",
+          "40°, 50°, 60°",
+          "15°, 30°, 135°",
+          "A: 90°, 90°, 90°",
+          "B: 80°, 80°, 200°",
+          "C: 40°, 50°, 60°",
+          "D: 15°, 30°, 135°"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q16": {
+      "inputHash": "1cced8893cdc8f8930a21556b3211a506df6145b239911904567cea4bbfa64bb",
+      "description": {
+        "en": "Question 16. The scatter plot below can be used to find the approximate rate at which water flows through a garden hose. The line of best fit for the scatter plot can be described by the equation y = 4/5x. The graph is titled “WATER FLOWING FROM A HOSE.” The horizontal x-axis is labeled “Time (minutes),” runs from 0 to 45, and is marked every 5 minutes. The vertical y-axis is labeled “Amount of Water (gallons),” runs from 0 to 24, and is marked every 2 gallons. Six plotted points are located approximately at (5, 4), (9, 7.5), (15, 8.5), (17.5, 15), (24, 19), and (30, 24). A straight line of best fit rises from the origin through (5, 4), (10, 8), (15, 12), (20, 16), (25, 20), and (30, 24). If the rate, in gallons per minute, continues, approximately how many gallons of water will flow from the hose in 45 minutes? Choices: A: 24 B: 36 C: 39 D: 56",
+        "es": "Pregunta 16. El siguiente diagrama de dispersión puede usarse para averiguar la tasa aproximada a la cual el agua fluye a través de una manguera de jardín. La línea de mejor ajuste para el diagrama de dispersión se puede describir mediante la ecuación y = 4/5 x. La gráfica se titula «AGUA QUE SALE DE UNA MANGUERA». El eje horizontal, x, representa «Tiempo (minutos)» y va de 0 a 45, con marcas cada 5 minutos. El eje vertical, y, representa «Cantidad de agua (galones)» y va de 0 a 24, con marcas cada 2 galones. Hay seis puntos de dispersión: uno en (5, 4); uno entre 5 y 10 minutos y entre 6 y 8 galones, cerca de (9, 7.5); uno en 15 minutos, entre 8 y 10 galones, cerca de (15, 8.5); uno entre 15 y 20 minutos, entre 14 y 16 galones, cerca de (17.5, 15); uno ligeramente a la izquierda de 25 minutos y entre 18 y 20 galones, cerca de (24, 19); y uno en (30, 24). La recta de mejor ajuste asciende desde el origen (0, 0), pasa por (5, 4) y llega a (30, 24). Si la tasa, en galones por minuto, continúa, ¿aproximadamente cuántos galones de agua fluirán por la manguera en 45 minutos? Opciones: A: 24 B: 36 C: 39 D: 56"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 4/5x",
+          "0 to 45",
+          "0 to 24",
+          "(5, 4)",
+          "(9, 7.5)",
+          "(15, 8.5)",
+          "(17.5, 15)",
+          "(24, 19)",
+          "(30, 24)",
+          "(10, 8)",
+          "(15, 12)",
+          "(20, 16)",
+          "(25, 20)",
+          "45 minutes",
+          "A: 24",
+          "B: 36",
+          "C: 39",
+          "D: 56",
+          "4/5"
+        ],
+        "es": [
+          "y = 4/5 x",
+          "0",
+          "45",
+          "5",
+          "24",
+          "2",
+          "(5, 4)",
+          "(9, 7.5)",
+          "(15, 8.5)",
+          "(17.5, 15)",
+          "(24, 19)",
+          "(30, 24)",
+          "(0, 0)",
+          "45 minutos",
+          "36",
+          "39",
+          "56",
+          "A: 24",
+          "B: 36",
+          "C: 39",
+          "D: 56",
+          "4/5"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q19": {
+      "inputHash": "baa03c065f6f9453c0e73362988d0cbd4fd120e8eedc31ef748fa6e466c4c9c8",
+      "description": {
+        "en": "Question 19. Functions W and Z are both linear functions of x. Function W is given by y = −1/16x + 30. Function Z is given by a table: the x-values are 0, 1, 2, 3, and the corresponding y-values are 15.8, 15.76, 15.72, 15.68. Which statement comparing the functions is true? Choices: A: The slope of Function W is equal to the slope of Function Z. B: The slope of Function W is less than the slope of Function Z. C: The y-intercept of Function W is equal to the y-intercept of Function Z. D: The y-intercept of Function W is less than the y-intercept of Function Z.",
+        "es": "Pregunta 19. Las funciones W y Z son funciones lineales de x. La Función W está dada por y = −1/16 x + 30. La Función Z se presenta en una tabla: para x = 0, y = 15.8; para x = 1, y = 15.76; para x = 2, y = 15.72; y para x = 3, y = 15.68. ¿Qué afirmación que compara las funciones es verdadera? Opciones: A: La pendiente de la Función W es igual a la pendiente de la Función Z. B: La pendiente de la Función W es menor que la pendiente de la Función Z. C: La intersección con el eje y de la Función W es igual a la intersección con el eje y de la Función Z. D: La intersección con el eje y de la Función W es menor que la intersección con el eje y de la Función Z."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −1/16x + 30",
+          "0, 1, 2, 3",
+          "15.8, 15.76, 15.72, 15.68",
+          "equal to",
+          "less than",
+          "A: The slope of Function W is equal to the slope of Function Z",
+          "B: The slope of Function W is less than the slope of Function Z",
+          "C: The y-intercept of Function W is equal to the y-intercept of Function Z",
+          "D: The y-intercept of Function W is less than the y-intercept of Function Z",
+          "1/16"
+        ],
+        "es": [
+          "y = −1/16 x + 30",
+          "x = 0",
+          "y = 15.8",
+          "x = 1",
+          "y = 15.76",
+          "x = 2",
+          "y = 15.72",
+          "x = 3",
+          "y = 15.68",
+          "A: La pendiente de la Función W es igual a la pendiente de la Función Z",
+          "B: La pendiente de la Función W es menor que la pendiente de la Función Z",
+          "C: La intersección con el eje y de la Función W es igual a la intersección con el eje y de la Función Z",
+          "D: La intersección con el eje y de la Función W es menor que la intersección con el eje y de la Función Z",
+          "1/16"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q20": {
+      "inputHash": "dee007d0f4e8f04ed9001b1ef1987ab6c7d2630d91d8d97dc615bd5cdc9d7951",
+      "description": {
+        "en": "Question 20. On a coordinate plane, vertex A for triangle ABC is located at (6, 4). Triangle ABC is dilated by a scale factor of 0.5 with the center of dilation at the origin. The resulting image is triangle A′B′C′. What are the coordinates of vertex A′? Choices: A: (3, 2) B: (12, 8) C: (5.5, 3.5) D: (6.5, 4.5)",
+        "es": "Pregunta 20. En un plano de coordenadas, el vértice A del triángulo ABC está ubicado en (6, 4). El triángulo ABC se dilata por un factor de escala de 0.5 con el centro de dilatación en el origen. La imagen resultante es el triángulo A′B′C′. ¿Cuáles son las coordenadas del vértice A′? Opciones: A: (3, 2) B: (12, 8) C: (5.5, 3.5) D: (6.5, 4.5)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(6, 4)",
+          "0.5",
+          "A′B′C′",
+          "A′",
+          "(3, 2)",
+          "(12, 8)",
+          "(5.5, 3.5)",
+          "(6.5, 4.5)",
+          "A: (3, 2)",
+          "B: (12, 8)",
+          "C: (5.5, 3.5)",
+          "D: (6.5, 4.5)"
+        ],
+        "es": [
+          "(6, 4)",
+          "0.5",
+          "A′B′C′",
+          "A′",
+          "(3, 2)",
+          "(12, 8)",
+          "(5.5, 3.5)",
+          "(6.5, 4.5)",
+          "A: (3, 2)",
+          "B: (12, 8)",
+          "C: (5.5, 3.5)",
+          "D: (6.5, 4.5)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q23": {
+      "inputHash": "182020ec342935d67e61b07b82b6f61f212073b01076ca49196232b89e8e7e25",
+      "description": {
+        "en": "Question 23. Triangle BCD is rotated 180° clockwise and then dilated by a factor of 4 centered at the origin. The resulting image is triangle B′C′D′. Which statement about the two triangles is true? Choices: A: The area of △BCD is 4 times the area of △B′C′D′. B: The perimeter of △BCD is 4 times the perimeter of △B′C′D′. C: The corresponding sides of △BCD and △B′C′D′ are congruent. D: The corresponding angles of △BCD and △B′C′D′ are congruent.",
+        "es": "Pregunta 23. El triángulo BCD se rota 180° en el sentido del reloj y luego se dilata por un factor de 4 con el centro en el origen. La imagen resultante es el triángulo B′C′D′. ¿Qué afirmación sobre los dos triángulos es verdadera? Opciones: A: El área de △BCD es 4 veces mayor que el área de △B′C′D′. B: El perímetro de △BCD es 4 veces mayor que el perímetro de △B′C′D′. C: Los lados correspondientes de △BCD y △B′C′D′ son congruentes. D: Los ángulos correspondientes de △BCD y △B′C′D′ son congruentes."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "180°",
+          "factor of 4",
+          "B′C′D′",
+          "△BCD",
+          "△B′C′D′",
+          "4 times",
+          "corresponding sides",
+          "corresponding angles",
+          "A: The area of △BCD is 4 times the area of △B′C′D′",
+          "B: The perimeter of △BCD is 4 times the perimeter of △B′C′D′",
+          "C: The corresponding sides of △BCD and △B′C′D′ are congruent",
+          "D: The corresponding angles of △BCD and △B′C′D′ are congruent"
+        ],
+        "es": [
+          "180°",
+          "4",
+          "B′C′D′",
+          "△BCD",
+          "△B′C′D′",
+          "4 veces",
+          "A: El área de △BCD es 4 veces mayor que el área de △B′C′D′",
+          "B: El perímetro de △BCD es 4 veces mayor que el perímetro de △B′C′D′",
+          "C: Los lados correspondientes de △BCD y △B′C′D′ son congruentes",
+          "D: Los ángulos correspondientes de △BCD y △B′C′D′ son congruentes"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q24": {
+      "inputHash": "5274e6fec1dd33ec423895204f0f4f4baceedc69c43fa454d3e4ff334a597535",
+      "description": {
+        "en": "Question 24. At a local basketball game, all tickets are the same price and all souvenirs are the same price. Mr. Smith bought 2 tickets to this basketball game and 1 souvenir for a total of $17.25. Ms. Lockhart bought 5 tickets to the same game and 2 souvenirs for a total of $42.00. How much was a ticket to this game? Choices: A: $2.25 B: $7.50 C: $8.50 D: $9.75",
+        "es": "Pregunta 24. En un partido de baloncesto local, todas las entradas cuestan lo mismo, y todos los recuerdos cuestan lo mismo. El señor Smith compró 2 entradas para el partido de baloncesto y 1 recuerdo por un total de $17.25. La señora Lockhart compró 5 entradas para el mismo partido y 2 recuerdos por un total de $42.00. ¿Cuánto costaba una entrada para este partido? Opciones: A: $2.25 B: $7.50 C: $8.50 D: $9.75"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 tickets",
+          "1 souvenir",
+          "$17.25",
+          "5 tickets",
+          "2 souvenirs",
+          "$42.00",
+          "$2.25",
+          "$7.50",
+          "$8.50",
+          "$9.75",
+          "A: $2.25",
+          "B: $7.50",
+          "C: $8.50",
+          "D: $9.75"
+        ],
+        "es": [
+          "2 entradas",
+          "1 recuerdo",
+          "$17.25",
+          "5 entradas",
+          "2 recuerdos",
+          "$42.00",
+          "$2.25",
+          "$7.50",
+          "$8.50",
+          "$9.75",
+          "A: $2.25",
+          "B: $7.50",
+          "C: $8.50",
+          "D: $9.75"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q26": {
+      "inputHash": "9af2ad87964cc644f4d740888f30168d60b5c37172de5feb4bee4388cd7a62d4",
+      "description": {
+        "en": "Question 26. The object is made of solid plastic. It is a cylinder with an indentation at the top in the shape of a cone. The cylinder is 8 in. tall and has a diameter of 4 in. The conical indentation is centered in the circular top, has the same 4 in. diameter as the cylinder, and extends 0.7 in. downward from the top. Dashed lines form the sides of the inverted conical indentation from the rim of the cylinder’s top to its vertex. What is the volume, to the nearest tenth of a cubic inch, of the plastic object? Choices: A: 103.5 B: 100.4 C: 97.6 D: 91.7",
+        "es": "Pregunta 26. El siguiente objeto está hecho de plástico sólido. Es un cilindro con una hendidura en la parte superior en forma de cono. El cilindro mide 8 in de altura y su base circular mide 4 in de diámetro. La hendidura cónica está centrada en la cara circular superior: su base coincide con el círculo superior del cilindro y su vértice apunta hacia abajo, a una profundidad de 0.7 in desde la parte superior. ¿Cuál es el volumen del objeto de plástico, redondeado al décimo de una pulgada cúbica más cercano? Opciones: A: 103.5 B: 100.4 C: 97.6 D: 91.7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 in",
+          "4 in",
+          "0.7 in",
+          "103.5",
+          "100.4",
+          "97.6",
+          "91.7",
+          "A: 103.5",
+          "B: 100.4",
+          "C: 97.6",
+          "D: 91.7"
+        ],
+        "es": [
+          "8 in",
+          "4 in",
+          "0.7 in",
+          "103.5",
+          "100.4",
+          "97.6",
+          "91.7",
+          "A: 103.5",
+          "B: 100.4",
+          "C: 97.6",
+          "D: 91.7"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q30": {
+      "inputHash": "1e6ab199bfa8a1f7baffa7b75c39d305442c25759a899d505a9b423aacab6b5e",
+      "description": {
+        "en": "Question 30. Which function of x has the least value for the y-intercept? Choice B is a coordinate graph with x- and y-axes marked from −4 through 4. Its line rises from left to right, crosses the y-axis at −2, and passes through approximately (−4, −3) and (4, −1). Choice D is a coordinate graph with x- and y-axes marked from −4 through 4. Its line rises from left to right, crosses the y-axis at 2, and passes through (−4, 0) and (4, 4). Choices: A: y = −4x + 15. B: The line with y-intercept −2, passing through approximately (−4, −3) and (4, −1). C: y = 2x − 3. D: The line with y-intercept 2, passing through (−4, 0) and (4, 4).",
+        "es": "Pregunta 30. ¿Qué función de x tiene el menor valor para la intersección con el eje y? En la opción B, el plano de coordenadas abarca de −4 a 4 en ambos ejes; la recta es creciente, pasa por (0, −2) y aproximadamente por (4, −1), y continúa con flechas en ambos extremos. En la opción D, el plano de coordenadas abarca de −4 a 4 en ambos ejes; la recta es creciente, pasa por (0, 2), (2, 3) y (4, 4), y continúa con flechas en ambos extremos. Opciones: A: y = −4x + 15 B: La función representada por la recta que intersecta el eje y en (0, −2). C: y = 2x − 3 D: La función representada por la recta que intersecta el eje y en (0, 2)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −4x + 15",
+          "−2",
+          "(−4, −3)",
+          "(4, −1)",
+          "y = 2x − 3",
+          "(−4, 0)",
+          "(4, 4)",
+          "A: y = −4x + 15",
+          "B: The line with y-intercept −2, passing through approximately (−4, −3) and (4, −1)",
+          "C: y = 2x − 3",
+          "D: The line with y-intercept 2, passing through (−4, 0) and (4, 4)"
+        ],
+        "es": [
+          "y = −4x + 15",
+          "(0, −2)",
+          "(4, −1)",
+          "y = 2x − 3",
+          "(0, 2)",
+          "(2, 3)",
+          "(4, 4)",
+          "A: y = −4x + 15",
+          "B: La función representada por la recta que intersecta el eje y en (0, −2)",
+          "C: y = 2x − 3",
+          "D: La función representada por la recta que intersecta el eje y en (0, 2)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q31": {
+      "inputHash": "642544fb2f41ebb9c9e180ae5827e5ebea10e30c14f8a245903d84d96bb610c1",
+      "description": {
+        "en": "Question 31. The scatter plot below shows the average points scored per game by players of different ages in an adult basketball league. The graph is titled “POINTS SCORED BY BASKETBALL PLAYERS.” The horizontal axis is labeled “Age (years)” and spans ages 18 through 24, with grid lines every 0.5 year. The vertical axis is labeled “Average Points Scored per Game” and spans 19 through 28 points, with grid lines every 1 point and labels at 20, 22, 24, and 26. The nine plotted points are (18.5, 20), (19, 22), (19.5, 20.5), (20.5, 21.5), (20.5, 23.5), (21.5, 26), (22, 24), (22.5, 27), and (23, 20). Which statement best describes the association between a player’s age, in years, and the average points scored per game? Choices: A: There is no association. B: There is a nonlinear association. C: There is a positive linear association and one outlier. D: There is a negative linear association and one outlier.",
+        "es": "Pregunta 31. El siguiente diagrama de dispersión muestra el promedio de puntos anotados por partido por jugadores de diferentes edades en una liga de baloncesto de adultos. El diagrama se titula «PUNTOS ANOTADOS POR LOS JUGADORES DE BALONCESTO». El eje x representa la edad, en años, y está marcado de 18 a 24 en incrementos de 1 año, con líneas intermedias cada 0.5 año. El eje y representa el promedio de puntos anotados por partido; está marcado en 20, 22, 24 y 26, con líneas intermedias cada punto. Los nueve puntos son (18.5, 20), (19, 22), (19.5, 20.5), (20.5, 21.5), (20.5, 23.5), (21.5, 26), (22, 24), (22.5, 27) y (23, 20). Ocho puntos siguen, en general, una tendencia ascendente a medida que aumenta la edad; el punto (23, 20) está separado por debajo de esa tendencia. ¿Qué afirmación describe mejor la asociación entre la edad de un jugador, en años, y el promedio de puntos anotados por partido? Opciones: A: No hay asociación. B: Hay una asociación no lineal. C: Hay una asociación lineal positiva y un valor atípico. D: Hay una asociación lineal negativa y un valor atípico."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.5",
+          "(18.5, 20)",
+          "(19, 22)",
+          "(19.5, 20.5)",
+          "(20.5, 21.5)",
+          "(20.5, 23.5)",
+          "(21.5, 26)",
+          "(22, 24)",
+          "(22.5, 27)",
+          "(23, 20)",
+          "positive linear association and one outlier",
+          "negative linear association and one outlier",
+          "A: There is no association",
+          "B: There is a nonlinear association",
+          "C: There is a positive linear association and one outlier",
+          "D: There is a negative linear association and one outlier"
+        ],
+        "es": [
+          "(18.5, 20)",
+          "(19, 22)",
+          "(19.5, 20.5)",
+          "(20.5, 21.5)",
+          "(20.5, 23.5)",
+          "(21.5, 26)",
+          "(22, 24)",
+          "(22.5, 27)",
+          "(23, 20)",
+          "18",
+          "24",
+          "20",
+          "22",
+          "26",
+          "A: No hay asociación",
+          "B: Hay una asociación no lineal",
+          "C: Hay una asociación lineal positiva y un valor atípico",
+          "D: Hay una asociación lineal negativa y un valor atípico"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q32": {
+      "inputHash": "602085d70bd1fb908ba0b382381015dfeb6fe63fe25fde26db10a9694c2ebcd0",
+      "description": {
+        "en": "Question 32. In city W, the average cost for a gym membership is given by the equation y = 34.99x + 49, where y is the total cost, in dollars, for x months of membership. What is the meaning of the y-value when x = 1? Choices: A: the average sign-up fee for a gym membership. B: the average monthly charge for a gym membership. C: the average total cost for the first month of a gym membership. D: the average total cost for the first two months of a gym membership.",
+        "es": "Pregunta 32. En la ciudad W, el costo promedio de la membresía de un gimnasio está dado por la ecuación y = 34.99x + 49, donde y es el costo total, en dólares, por x meses de membresía. ¿Cuál es el significado del valor de y cuando x = 1? Opciones: A: el cargo de inscripción promedio para la membresía de un gimnasio B: el cargo mensual promedio para la membresía de un gimnasio C: el costo total promedio para el primer mes de la membresía de un gimnasio D: el costo total promedio para los primeros dos meses de la membresía de un gimnasio"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 34.99x + 49",
+          "x = 1",
+          "first month",
+          "first two months",
+          "A: the average sign-up fee for a gym membership",
+          "B: the average monthly charge for a gym membership",
+          "C: the average total cost for the first month of a gym membership",
+          "D: the average total cost for the first two months of a gym membership"
+        ],
+        "es": [
+          "y = 34.99x + 49",
+          "x = 1",
+          "primer mes",
+          "primeros dos meses",
+          "A: el cargo de inscripción promedio para la membresía de un gimnasio",
+          "B: el cargo mensual promedio para la membresía de un gimnasio",
+          "C: el costo total promedio para el primer mes de la membresía de un gimnasio",
+          "D: el costo total promedio para los primeros dos meses de la membresía de un gimnasio"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q33": {
+      "inputHash": "5908533f5e04cbd6d80ce45d7a5f290f6bb0ef4e9e191a3d279549ac930e9fc8",
+      "description": {
+        "en": "Question 33. What is the volume, in terms of π, for a cylindrical container with a radius of 3.25 centimeters and a height of 10 centimeters? Choices: A: 65π cm³. B: 105.625π cm³. C: 331.83π cm³. D: 422.5π cm³.",
+        "es": "Pregunta 33. ¿Cuál es el volumen, en términos de π, de un recipiente cilíndrico con un radio de 3.25 centímetros y una altura de 10 centímetros? Opciones: A: 65π cm³ B: 105.625π cm³ C: 331.83π cm³ D: 422.5π cm³"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3.25",
+          "10",
+          "65π cm³",
+          "105.625π cm³",
+          "331.83π cm³",
+          "422.5π cm³",
+          "A: 65π cm³",
+          "B: 105.625π cm³",
+          "C: 331.83π cm³",
+          "D: 422.5π cm³"
+        ],
+        "es": [
+          "3.25 centímetros",
+          "10 centímetros",
+          "65π cm³",
+          "105.625π cm³",
+          "331.83π cm³",
+          "422.5π cm³",
+          "A: 65π cm³",
+          "B: 105.625π cm³",
+          "C: 331.83π cm³",
+          "D: 422.5π cm³"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q34": {
+      "inputHash": "a660a7b856b6aa34c7e6b5291ba0ca03fec40f00f26e2660411e72f3879502aa",
+      "description": {
+        "en": "Question 34. Kevin and Christy both saved money for their class trip. Kevin saved the same amount each week. The total amount that Kevin saved at the end of every two weeks is given in a table titled “KEVIN’S SAVINGS.” The columns are “Time (weeks)” and “Total Amount Saved.” The rows are: 2 weeks, $46; 4 weeks, $92; 6 weeks, $138. Christy’s savings can be modeled by the equation y = 26x, where y is the total amount of money saved in x weeks. Which statement correctly compares the rates at which Kevin and Christy saved money? Choices: A: Christy saved $3 per week more than Kevin. B: Kevin saved $10 per week more than Christy. C: Christy saved $18 per week more than Kevin. D: Kevin saved $20 per week more than Christy.",
+        "es": "Pregunta 34. Kevin y Christy ahorraron dinero para su excursión escolar. Kevin ahorró la misma cantidad cada semana. La cantidad total que ahorró Kevin al finalizar cada período de dos semanas se muestra en la siguiente tabla. La tabla se titula «AHORROS DE KEVIN» y tiene las columnas «Tiempo (semanas)» y «Monto total ahorrado». Sus filas son: 2 semanas, $46; 4 semanas, $92; 6 semanas, $138. Los ahorros de Christy pueden modelarse por la ecuación y = 26x, donde y es la cantidad total de dinero ahorrado en x semanas. ¿Qué afirmación compara correctamente las tasas a las cuales Kevin y Christy ahorraron dinero? Opciones: A: Christy ahorró $3 por semana más que Kevin. B: Kevin ahorró $10 por semana más que Christy. C: Christy ahorró $18 por semana más que Kevin. D: Kevin ahorró $20 por semana más que Christy."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 weeks, $46",
+          "4 weeks, $92",
+          "6 weeks, $138",
+          "y = 26x",
+          "$3 per week",
+          "$10 per week",
+          "$18 per week",
+          "$20 per week",
+          "A: Christy saved $3 per week more than Kevin",
+          "B: Kevin saved $10 per week more than Christy",
+          "C: Christy saved $18 per week more than Kevin",
+          "D: Kevin saved $20 per week more than Christy"
+        ],
+        "es": [
+          "2 semanas",
+          "$46",
+          "4 semanas",
+          "$92",
+          "6 semanas",
+          "$138",
+          "y = 26x",
+          "$3 por semana",
+          "$10 por semana",
+          "$18 por semana",
+          "$20 por semana",
+          "A: Christy ahorró $3 por semana más que Kevin",
+          "B: Kevin ahorró $10 por semana más que Christy",
+          "C: Christy ahorró $18 por semana más que Kevin",
+          "D: Kevin ahorró $20 por semana más que Christy"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q35": {
+      "inputHash": "e43799207f02b2352811158cbaf433f6e0559f10d288d6f4cf5e3d2264abc880",
+      "description": {
+        "en": "Question 35. The points (4, 1) and (x, −6) lie on the same line. If the slope of the line is 1, what is the value of x? Choices: A: x = −3. B: x = 3. C: x = 9. D: x = 11.",
+        "es": "Pregunta 35. Los puntos (4, 1) y (x, −6) se encuentran en la misma recta. Si la pendiente de la recta es 1, ¿cuál es el valor de x? Opciones: A: x = −3 B: x = 3 C: x = 9 D: x = 11"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4, 1)",
+          "(x, −6)",
+          "1",
+          "x = −3",
+          "x = 3",
+          "x = 9",
+          "x = 11",
+          "A: x = −3",
+          "B: x = 3",
+          "C: x = 9",
+          "D: x = 11"
+        ],
+        "es": [
+          "(4, 1)",
+          "(x, −6)",
+          "pendiente de la recta es 1",
+          "x = −3",
+          "x = 3",
+          "x = 9",
+          "x = 11",
+          "A: x = −3",
+          "B: x = 3",
+          "C: x = 9",
+          "D: x = 11"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q36": {
+      "inputHash": "3499a3de28c9c2f5985eb5c6beb8d6cc46a9c67a258082fb5774fa7a576d823c",
+      "description": {
+        "en": "Question 36. Mya claims (m∠3 + m∠4) = m∠1, as represented by a triangle resting on a horizontal line. The triangle’s left base interior angle is ∠2, its top interior angle is ∠3, and its right base interior angle is ∠4. The horizontal base extends to the left, forming exterior angle ∠1 adjacent to ∠2; therefore, ∠1 and ∠2 form a linear pair. Which equations explain why Mya’s claim must be true? Choices: A: (m∠1 + m∠2) = 90° and (m∠3 + m∠4) = 90°. B: (m∠1 + m∠2) = 180° and (m∠3 + m∠4) = 180°. C: (m∠1 + m∠2) = 90° and (m∠3 + m∠4 + m∠2) = 90°. D: (m∠1 + m∠2) = 180° and (m∠3 + m∠4 + m∠2) = 180°.",
+        "es": "Pregunta 36. Mya afirma que (m∠3 + m∠4) = m∠1, como se muestra en un triángulo. El triángulo tiene una base horizontal y un vértice superior. En el vértice superior está el ángulo 3; en el vértice inferior derecho está el ángulo interior 4. La base se prolonga hacia la izquierda, formando en el vértice inferior izquierdo dos ángulos adyacentes: el ángulo interior 2 y el ángulo exterior 1. ¿Qué ecuaciones explican por qué la afirmación de Mya debe ser verdadera? Opciones: A: (m∠1 + m∠2) = 90° y (m∠3 + m∠4) = 90° B: (m∠1 + m∠2) = 180° y (m∠3 + m∠4) = 180° C: (m∠1 + m∠2) = 90° y (m∠3 + m∠4 + m∠2) = 90° D: (m∠1 + m∠2) = 180° y (m∠3 + m∠4 + m∠2) = 180°"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(m∠3 + m∠4) = m∠1",
+          "(m∠1 + m∠2) = 90°",
+          "(m∠3 + m∠4) = 90°",
+          "(m∠1 + m∠2) = 180°",
+          "(m∠3 + m∠4) = 180°",
+          "(m∠3 + m∠4 + m∠2) = 90°",
+          "(m∠3 + m∠4 + m∠2) = 180°",
+          "A: (m∠1 + m∠2) = 90° and (m∠3 + m∠4) = 90°",
+          "B: (m∠1 + m∠2) = 180° and (m∠3 + m∠4) = 180°",
+          "C: (m∠1 + m∠2) = 90° and (m∠3 + m∠4 + m∠2) = 90°",
+          "D: (m∠1 + m∠2) = 180° and (m∠3 + m∠4 + m∠2) = 180°",
+          "(m∠3 + m∠4)",
+          "(m∠1 + m∠2)",
+          "(m∠3 + m∠4 + m∠2)"
+        ],
+        "es": [
+          "(m∠3 + m∠4) = m∠1",
+          "(m∠1 + m∠2) = 90°",
+          "(m∠3 + m∠4) = 90°",
+          "(m∠1 + m∠2) = 180°",
+          "(m∠3 + m∠4) = 180°",
+          "(m∠3 + m∠4 + m∠2) = 90°",
+          "(m∠3 + m∠4 + m∠2) = 180°",
+          "A: (m∠1 + m∠2) = 90° y (m∠3 + m∠4) = 90°",
+          "B: (m∠1 + m∠2) = 180° y (m∠3 + m∠4) = 180°",
+          "C: (m∠1 + m∠2) = 90° y (m∠3 + m∠4 + m∠2) = 90°",
+          "D: (m∠1 + m∠2) = 180° y (m∠3 + m∠4 + m∠2) = 180°",
+          "(m∠3 + m∠4)",
+          "(m∠1 + m∠2)",
+          "(m∠3 + m∠4 + m∠2)"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q37": {
+      "inputHash": "bb4ade48538b45d738060e7dee50351a9894268d912ef4560c55b5c7105b4028",
+      "description": {
+        "en": "Question 37. The dimensions of a square right pyramid are represented. Its square base measures 4 units by 4 units, and its perpendicular vertical height from the base to the top vertex is 10 units. The pyramid is sliced by a vertical plane that passes through the top vertex and is perpendicular to the base. The plane crosses the base along a segment of length 4 units, producing a plane section with a height of 10 units. What is the resulting two-dimensional shape and the area of the plane section? Choices: A: a triangle with an area of 20 square units. B: a triangle with an area of 40 square units. C: a rectangle with an area of 16 square units. D: a rectangle with an area of 40 square units.",
+        "es": "Pregunta 37. Las dimensiones de una pirámide recta cuadrada se muestran a continuación. La base es un cuadrado de 4 unidades por 4 unidades y la altura perpendicular desde el centro de la base hasta el vértice superior es de 10 unidades. Un plano vertical atraviesa el vértice superior y una sección de la base, y es perpendicular a la base. La intersección del plano con la pirámide forma una sección triangular cuya base mide 4 unidades y cuya altura perpendicular mide 10 unidades. ¿Cuál es la figura bidimensional que se forma y el área de la sección del plano? Opciones: A: un triángulo con un área de 20 unidades cuadradas B: un triángulo con un área de 40 unidades cuadradas C: un rectángulo con un área de 16 unidades cuadradas D: un rectángulo con un área de 40 unidades cuadradas"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 units by 4 units",
+          "10 units",
+          "4 units",
+          "20 square units",
+          "40 square units",
+          "16 square units",
+          "A: a triangle with an area of 20 square units",
+          "B: a triangle with an area of 40 square units",
+          "C: a rectangle with an area of 16 square units",
+          "D: a rectangle with an area of 40 square units"
+        ],
+        "es": [
+          "4 unidades por 4 unidades",
+          "10 unidades",
+          "base mide 4 unidades",
+          "altura perpendicular mide 10 unidades",
+          "20 unidades cuadradas",
+          "40 unidades cuadradas",
+          "16 unidades cuadradas",
+          "A: un triángulo con un área de 20 unidades cuadradas",
+          "B: un triángulo con un área de 40 unidades cuadradas",
+          "C: un rectángulo con un área de 16 unidades cuadradas",
+          "D: un rectángulo con un área de 40 unidades cuadradas"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q38": {
+      "inputHash": "ccc2eb2bc865270d3b4f8cc3266864365c8d8d2d173923bbd83afc320ed80e85",
+      "description": {
+        "en": "Question 38. A newspaper conducted a survey to find out how many high school students play video games. The two-way table displays the data from the survey. The table is titled “VIDEO GAME SURVEY.” Columns are Boys, Girls, and Total. The row “Do Play Video Games” contains 1,593 boys, 1,361 girls, and a total of 2,954. The row “Do Not Play Video Games” contains 858 boys, 1,635 girls, and a total of 2,493. The “Total” row contains 2,451 boys, 2,996 girls, and 5,447 students overall. Based on these data in the table, which statement is true? Choices: A: There were 2,451 boys surveyed, and about 29% of them play video games. B: There were 2,996 girls surveyed, and about 45% of them play video games. C: There were 5,447 students surveyed, and about 54% of them do not play video games. D: There were 2,493 students surveyed, and about 34% of them are girls who do not play video games.",
+        "es": "Pregunta 38. Un periódico realizó una encuesta para saber cuántos alumnos de secundaria juegan videojuegos. La tabla de doble entrada titulada “ENCUESTA DE VIDEOJUEGOS” muestra los datos de la encuesta. Las columnas son “Niños”, “Niñas” y “Total”. En la fila “Juegan videojuegos” aparecen 1,593 niños, 1,361 niñas y un total de 2,954 alumnos. En la fila “No juegan videojuegos” aparecen 858 niños, 1,635 niñas y un total de 2,493 alumnos. En la fila “Total” aparecen 2,451 niños, 2,996 niñas y un total general de 5,447 alumnos. Según estos datos en la tabla, ¿qué afirmación es verdadera? Opciones: A: Se encuestó a 2,451 niños y aproximadamente el 29 % de ellos juega a los videojuegos. B: Se encuestó a 2,996 niñas y aproximadamente el 45 % de ellas juega a los videojuegos. C: Se encuestó a 5,447 alumnos y aproximadamente el 54 % de ellos no juega a los videojuegos. D: Se encuestó a 2,493 alumnos y aproximadamente el 34 % de ellos son niñas que no juegan a los videojuegos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,593",
+          "1,361",
+          "2,954",
+          "858",
+          "1,635",
+          "2,493",
+          "2,451",
+          "2,996",
+          "5,447",
+          "29%",
+          "45%",
+          "54%",
+          "34%",
+          "A: There were 2,451 boys surveyed, and about 29% of them play video games",
+          "B: There were 2,996 girls surveyed, and about 45% of them play video games",
+          "C: There were 5,447 students surveyed, and about 54% of them do not play video games",
+          "D: There were 2,493 students surveyed, and about 34% of them are girls who do not play video games"
+        ],
+        "es": [
+          "1,593",
+          "1,361",
+          "2,954",
+          "858",
+          "1,635",
+          "2,493",
+          "2,451",
+          "2,996",
+          "5,447",
+          "29 %",
+          "45 %",
+          "54 %",
+          "34 %",
+          "A: Se encuestó a 2,451 niños y aproximadamente el 29 % de ellos juega a los videojuegos",
+          "B: Se encuestó a 2,996 niñas y aproximadamente el 45 % de ellas juega a los videojuegos",
+          "C: Se encuestó a 5,447 alumnos y aproximadamente el 54 % de ellos no juega a los videojuegos",
+          "D: Se encuestó a 2,493 alumnos y aproximadamente el 34 % de ellos son niñas que no juegan a los videojuegos"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q39": {
+      "inputHash": "dded9d8226b47036661542c8a8ff17c53c1feff021726c0552a41bcbc3aa3006",
+      "description": {
+        "en": "Question 39. Two cells are viewed and measured under a microscope. The approximate diameter of each cell is listed below: cell P: 5.0 × 10⁻⁴ meters; cell Q: 3.0 × 10⁻⁵ meters. What is the approximate difference, in meters, between the diameter of cell P and the diameter of cell Q? Choices: A: 2.0 × 10⁻⁵ B: 2.0 × 10⁻⁴ C: 4.7 × 10⁻⁵ D: 4.7 × 10⁻⁴",
+        "es": "Pregunta 39. Se observan y se miden dos células bajo un microscopio. El diámetro aproximado de cada célula se indica a continuación: célula P: 5.0 × 10⁻⁴ metros; célula Q: 3.0 × 10⁻⁵ metros. ¿Cuál es la diferencia aproximada, en metros, entre el diámetro de la célula P y el diámetro de la célula Q? Opciones: A: 2.0 × 10⁻⁵ B: 2.0 × 10⁻⁴ C: 4.7 × 10⁻⁵ D: 4.7 × 10⁻⁴"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5.0 × 10⁻⁴",
+          "3.0 × 10⁻⁵",
+          "2.0 × 10⁻⁵",
+          "2.0 × 10⁻⁴",
+          "4.7 × 10⁻⁵",
+          "4.7 × 10⁻⁴",
+          "A: 2.0 × 10⁻⁵",
+          "B: 2.0 × 10⁻⁴",
+          "C: 4.7 × 10⁻⁵",
+          "D: 4.7 × 10⁻⁴",
+          "10⁻⁴",
+          "10⁻⁵"
+        ],
+        "es": [
+          "5.0 × 10⁻⁴",
+          "3.0 × 10⁻⁵",
+          "2.0 × 10⁻⁵",
+          "2.0 × 10⁻⁴",
+          "4.7 × 10⁻⁵",
+          "4.7 × 10⁻⁴",
+          "A: 2.0 × 10⁻⁵",
+          "B: 2.0 × 10⁻⁴",
+          "C: 4.7 × 10⁻⁵",
+          "D: 4.7 × 10⁻⁴",
+          "10⁻⁴",
+          "10⁻⁵"
+        ]
+      }
+    },
+    "nysed-2018-g8-mc-q40": {
+      "inputHash": "b9df3860ed5c670badd43d71677eaf02a4a382fe68ed6776bfd2773b031928fa",
+      "description": {
+        "en": "Question 40. A function of x is graphed on a coordinate plane. The horizontal axis is labeled x, and the vertical axis is labeled y. Both axes have unit grid spacing. Five vertices are connected consecutively by straight line segments: (−4, −4) to (−2, 1), then to (0, −1), then to (2, 1), and then to (4, −4). Thus, the graph rises from (−4, −4) to (−2, 1), falls to (0, −1), rises to (2, 1), and falls to (4, −4). Over which intervals is the function increasing? Choices: A: −4 < x < −2 and −1 < x < 1 B: −4 < x < −2 and 0 < x < 2 C: −2 < x < 0 and 2 < x < 4 D: −2 < x < −1 and 2 < x < 4",
+        "es": "Pregunta 40. En el plano de coordenadas, se muestra una función de x. El eje horizontal está etiquetado x y el eje vertical está etiquetado y. La gráfica es una línea poligonal continua formada por segmentos rectos que conectan, de izquierda a derecha, los puntos (−4, −4), (−2, 1), (0, −1), (2, 1) y (4, −4). Por lo tanto, la función sube desde (−4, −4) hasta (−2, 1), baja hasta (0, −1), sube hasta (2, 1) y baja hasta (4, −4). ¿Sobre qué intervalos aumenta la función? Opciones: A: −4 < x < −2 y −1 < x < 1 B: −4 < x < −2 y 0 < x < 2 C: −2 < x < 0 y 2 < x < 4 D: −2 < x < −1 y 2 < x < 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−4, −4)",
+          "(−2, 1)",
+          "(0, −1)",
+          "(2, 1)",
+          "(4, −4)",
+          "−4 < x < −2",
+          "−1 < x < 1",
+          "0 < x < 2",
+          "−2 < x < 0",
+          "2 < x < 4",
+          "−2 < x < −1",
+          "A: −4 < x < −2 and −1 < x < 1",
+          "B: −4 < x < −2 and 0 < x < 2",
+          "C: −2 < x < 0 and 2 < x < 4",
+          "D: −2 < x < −1 and 2 < x < 4"
+        ],
+        "es": [
+          "(−4, −4)",
+          "(−2, 1)",
+          "(0, −1)",
+          "(2, 1)",
+          "(4, −4)",
+          "−4 < x < −2",
+          "−1 < x < 1",
+          "0 < x < 2",
+          "−2 < x < 0",
+          "2 < x < 4",
+          "−2 < x < −1",
+          "A: −4 < x < −2 y −1 < x < 1",
+          "B: −4 < x < −2 y 0 < x < 2",
+          "C: −2 < x < 0 y 2 < x < 4",
+          "D: −2 < x < −1 y 2 < x < 4"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2024-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2024-g4-mc-q1": {
+      "inputHash": "68099c9d057e7d82df9fe9f6963afd5f2298c0009145e9357fe2428ed73d17a4",
+      "description": {
+        "en": "Question 1. Carter has 9 comic books. Ben has 3 times as many as Carter. How many comic books does Ben have? Choices: A: 6; B: 12; C: 24; D: 27.",
+        "es": "Pregunta 1. Carter tiene 9 libros de historietas. Ben tiene 3 veces esa cantidad. ¿Cuántos libros tiene Ben? Opciones: A: 6; B: 12; C: 24; D: 27."
+      }
+    },
+    "nysed-2024-g4-mc-q2": {
+      "inputHash": "14ff274ce560d6b3a201b4296e22a87069328c0eb1601df6a443b0c1bdfcc2f6",
+      "description": {
+        "en": "Question 2. What value makes the equation 3/4 = 9/? true? Choices: A: 3; B: 9; C: 12; D: 16.",
+        "es": "Pregunta 2. ¿Qué valor hace verdadera la ecuación 3/4 = 9/?? Opciones: A: 3; B: 9; C: 12; D: 16."
+      }
+    },
+    "nysed-2024-g4-mc-q7": {
+      "inputHash": "d920748f0be947607cf1b860139994903e10257c30642da47dfc8ddbe366ff59",
+      "description": {
+        "en": "Question 7. J, K, and L form a straight angle; ray KM makes a 70-degree angle with KL. Which equation finds angle JKM? Choices: A: 90 − 20 = ?; B: 90 − 70 = ?; C: 180 − 70 = ?; D: 180 − 110 = ?.",
+        "es": "Pregunta 7. J, K y L forman un ángulo llano; KM forma 70 grados con KL. ¿Qué ecuación halla el ángulo JKM? Opciones: A: 90 − 20 = ?; B: 90 − 70 = ?; C: 180 − 70 = ?; D: 180 − 110 = ?."
+      }
+    },
+    "nysed-2024-g4-mc-q10": {
+      "inputHash": "68b3c885fc7db525f59591422fb83bc0d1c170dffa604128f963f03ae7a789e9",
+      "description": {
+        "en": "Question 10. Three lines meet: AB is horizontal, CD is vertical, and EF is diagonal from upper left to lower right. Which statement is most likely true? Choices: A: AB is perpendicular to CD; B: AB is parallel to CD; C: EF is perpendicular to CD; D: EF is parallel to CD.",
+        "es": "Pregunta 10. Tres rectas se cruzan: AB es horizontal, CD vertical y EF diagonal de arriba izquierda a abajo derecha. ¿Qué afirmación parece verdadera? Opciones: A: AB es perpendicular a CD; B: AB es paralela a CD; C: EF es perpendicular a CD; D: EF es paralela a CD."
+      }
+    },
+    "nysed-2024-g4-mc-q11": {
+      "inputHash": "818444b4520ded6627561ee1187baf6e3235e444fb0d820e36537d1100dd16fa",
+      "description": {
+        "en": "Question 11. Which fraction can be added to 4/12 to equal 1 whole? Choices: A: 1/12; B: 4/12; C: 6/12; D: 8/12.",
+        "es": "Pregunta 11. ¿Qué fracción se puede sumar a 4/12 para obtener 1 entero? Opciones: A: 1/12; B: 4/12; C: 6/12; D: 8/12."
+      }
+    },
+    "nysed-2024-g4-mc-q12": {
+      "inputHash": "b7f232db7bbbe45b0865a5667e43e25447953d18d7d6d7a822e43343bea9d04e",
+      "description": {
+        "en": "Question 12. Which number rounds to 17,000 to the nearest thousand? Choices: A: 16,129; B: 16,921; C: 17,538; D: 17,853.",
+        "es": "Pregunta 12. ¿Qué número se redondea a 17,000 al millar más cercano? Opciones: A: 16,129; B: 16,921; C: 17,538; D: 17,853."
+      }
+    },
+    "nysed-2024-g4-mc-q15": {
+      "inputHash": "089624286a4051e7ec95502d7c565f7a61be0fbf6a6e3cd5fe95b3f1e0ce1177",
+      "description": {
+        "en": "Question 15. Allison runs 8/10 mile each day. Which fraction equals the miles she runs in 7 days? Choices: A: 56/10; B: 15/10; C: 56/70; D: 8/70.",
+        "es": "Pregunta 15. Allison corre 8/10 de milla cada día. ¿Qué fracción equivale a las millas que corre en 7 días? Opciones: A: 56/10; B: 15/10; C: 56/70; D: 8/70."
+      }
+    },
+    "nysed-2024-g4-mc-q16": {
+      "inputHash": "e0c4ea50352e35c3f50ebef2d4a884f498cf64af634b2ede18e75cc3ca9b2f8f",
+      "description": {
+        "en": "Question 16. What is the value of 102 ÷ 6? Choices: A: 16; B: 17; C: 96; D: 108.",
+        "es": "Pregunta 16. ¿Cuál es el valor de 102 ÷ 6? Opciones: A: 16; B: 17; C: 96; D: 108."
+      }
+    },
+    "nysed-2024-g4-mc-q22": {
+      "inputHash": "4dba5992efa880837f897ab0f7c646dd69db9e6b773de72a7889da9b1632ce79",
+      "description": {
+        "en": "Question 22. What is the value of 4 1/4 − 2 2/4? Choices: A: 1 1/4; B: 1 3/4; C: 2 1/4; D: 2 3/4.",
+        "es": "Pregunta 22. ¿Cuál es el valor de 4 1/4 − 2 2/4? Opciones: A: 1 1/4; B: 1 3/4; C: 2 1/4; D: 2 3/4."
+      }
+    },
+    "nysed-2024-g4-mc-q23": {
+      "inputHash": "118bb8e5fd49486fb0e72bc5083543b01d238f5afb73fffa7222fbf0b36f3cc6",
+      "description": {
+        "en": "Question 23. How many hundreds are in 1,000? Choices: A: 1; B: 10; C: 100; D: 1,000.",
+        "es": "Pregunta 23. ¿Cuántos cientos hay en 1,000? Opciones: A: 1; B: 10; C: 100; D: 1,000."
+      }
+    },
+    "nysed-2024-g4-mc-q24": {
+      "inputHash": "bbe12cd0415b0763250f44f7cf6bfc30cf8644b21261b65e3ac9006f019c48c9",
+      "description": {
+        "en": "Question 24. Which equation is not true? Choices: A: 5 × 3/4 = 15/20; B: 4 × 2/5 = 8 × 1/5; C: 3 × 5/6 = 15/6; D: 2 × 4/8 = 8 × 1/8.",
+        "es": "Pregunta 24. ¿Qué ecuación no es verdadera? Opciones: A: 5 × 3/4 = 15/20; B: 4 × 2/5 = 8 × 1/5; C: 3 × 5/6 = 15/6; D: 2 × 4/8 = 8 × 1/8."
+      }
+    },
+    "nysed-2024-g4-mc-q26": {
+      "inputHash": "2646925aac303d46eea669fd8bf4a47baa1d83b629faa145b3452d0073a2d8a3",
+      "description": {
+        "en": "Question 26. Which figure appears to be a rectangle? Choices: A: a quadrilateral with one slanted side; B: a square with four right angles; C: a slanted parallelogram; D: a trapezoid with slanted sides.",
+        "es": "Pregunta 26. ¿Qué figura parece ser un rectángulo? Opciones: A: cuadrilátero con un lado inclinado; B: cuadrado con cuatro ángulos rectos; C: paralelogramo inclinado; D: trapecio con lados inclinados."
+      }
+    },
+    "nysed-2024-g4-mc-q29": {
+      "inputHash": "d4a3f57bf381cf025a16400b40ae05917e41a8688dae95ba5bea5284f3fcc2eb",
+      "description": {
+        "en": "Question 29. What is the product of 3 and 2,470? Choices: A: 6,210; B: 6,213; C: 7,410; D: 7,413.",
+        "es": "Pregunta 29. ¿Cuál es el producto de 3 y 2,470? Opciones: A: 6,210; B: 6,213; C: 7,410; D: 7,413."
+      }
+    },
+    "nysed-2024-g4-mc-q30": {
+      "inputHash": "4853d214e674596b2fbab760f07a6e241566772d989a9b3ab973da56f5f249ad",
+      "description": {
+        "en": "Question 30. A square floor has perimeter 120 feet. What is the length of each side? Choices: A: 20; B: 30; C: 40; D: 60 feet.",
+        "es": "Pregunta 30. Un piso cuadrado tiene un perímetro de 120 pies. ¿Cuánto mide cada lado? Opciones: A: 20; B: 30; C: 40; D: 60 pies."
+      }
+    },
+    "nysed-2024-g4-mc-q31": {
+      "inputHash": "1e469e33e74df5f0c2a5358758413aef2f8c3bbe98e91fa551f9ce3c3a928b32",
+      "description": {
+        "en": "Question 31. A regular hexagon with all six sides equal is shown. How many lines of symmetry does it have? Choices: A: 1; B: 2; C: 5; D: 6.",
+        "es": "Pregunta 31. Se muestra un hexágono regular con sus seis lados iguales. ¿Cuántos ejes de simetría tiene? Opciones: A: 1; B: 2; C: 5; D: 6."
+      }
+    },
+    "nysed-2024-g4-mc-q32": {
+      "inputHash": "95ad2528401dbe958933ab1d45a37e722d164bf62ac1c2ef8c8325a793f323a6",
+      "description": {
+        "en": "Question 32. For 80 students, the bus costs $3 each and zoo admission costs $2 each. What is the total price for bus and admission? Choices: A: $160; B: $240; C: $400; D: $480.",
+        "es": "Pregunta 32. Para 80 estudiantes, el autobús cuesta $3 por persona y la entrada $2 por persona. ¿Cuál es el precio total? Opciones: A: $160; B: $240; C: $400; D: $480."
+      }
+    },
+    "nysed-2024-g4-mc-q33": {
+      "inputHash": "16e9ea80e09e11b45ef424a98cf4237920ad3eee1075d0ecf70a8e9d5f8ad5c8",
+      "description": {
+        "en": "Question 33. Which number sentence shows a correct comparison? Choices: A: 1/3 > 3/4; B: 4/5 < 1/3; C: 1/3 = 3/4; D: 3/4 < 4/5.",
+        "es": "Pregunta 33. ¿Qué oración numérica muestra una comparación correcta? Opciones: A: 1/3 > 3/4; B: 4/5 < 1/3; C: 1/3 = 3/4; D: 3/4 < 4/5."
+      }
+    },
+    "nysed-2024-g4-mc-q34": {
+      "inputHash": "99188fcd141cd793032ded8ee050c89d2645f41d647f8f2f3d35ed8ed5deea24",
+      "description": {
+        "en": "Question 34. An area model for 35 × 43 splits 35 into 30 + 5 and 43 into 40 + 3. Which equation sums its four partial areas? Choices: A: 1,200 + 200 + 90 + 15 = 1,505; B: 1,200 + 20 + 90 + 15 = 1,325; C: 120 + 200 + 90 + 15 = 425; D: 120 + 20 + 90 + 15 = 245.",
+        "es": "Pregunta 34. Un modelo de 35 × 43 separa 35 en 30 + 5 y 43 en 40 + 3. ¿Qué ecuación suma las cuatro áreas parciales? Opciones: A: 1,200 + 200 + 90 + 15 = 1,505; B: 1,200 + 20 + 90 + 15 = 1,325; C: 120 + 200 + 90 + 15 = 425; D: 120 + 20 + 90 + 15 = 245."
+      }
+    },
+    "nysed-2024-g4-mc-q35": {
+      "inputHash": "b1701f290e4f7efb53fed2b8e6f36f471af4903c63beda024cbc285022de4dc5",
+      "description": {
+        "en": "Question 35. Which expression is equivalent to 2 4/6? Choices: A: 1 + 1 + 2/3 + 2/3; B: 6/6 + 6/6 + 2/6 + 1/6 + 1/6; C: 1 + 1 + 3/3 + 1/3; D: 6/6 + 6/6 + 1/6 + 1/6 + 1/6.",
+        "es": "Pregunta 35. ¿Qué expresión es equivalente a 2 4/6? Opciones: A: 1 + 1 + 2/3 + 2/3; B: 6/6 + 6/6 + 2/6 + 1/6 + 1/6; C: 1 + 1 + 3/3 + 1/3; D: 6/6 + 6/6 + 1/6 + 1/6 + 1/6."
+      }
+    }
+  }
+}

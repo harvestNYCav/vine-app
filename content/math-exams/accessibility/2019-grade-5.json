@@ -1,0 +1,793 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2019-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2019-g5-mc-q1": {
+      "inputHash": "241680dc54c87ec8a2aa9eb27bd6c5dad30a0adcf4226d20c316412d8fd7918a",
+      "description": {
+        "en": "Question 1. A gift box is in the shape of a right rectangular prism. The prism has a height of 10 cm, a width of 5 cm, and a length of 9 cm. Dashed segments indicate the three hidden back edges. What is the volume, in cubic centimeters, of the gift box? Choices: A: 24 B: 45 C: 225 D: 450",
+        "es": "Pregunta 1. Una caja de regalo tiene forma de prisma rectangular recto, como se muestra a continuación. El prisma tiene 10 cm de altura, 5 cm de ancho y 9 cm de largo. Las aristas ocultas de la base y la parte posterior están representadas con líneas discontinuas. ¿Cuál es el volumen, en centímetros cúbicos, de la caja de regalo? Opciones: A: 24 B: 45 C: 225 D: 450"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 cm",
+          "5 cm",
+          "9 cm",
+          "24",
+          "45",
+          "225",
+          "450",
+          "A: 24",
+          "B: 45",
+          "C: 225",
+          "D: 450"
+        ],
+        "es": [
+          "10 cm",
+          "5 cm",
+          "9 cm",
+          "24",
+          "45",
+          "225",
+          "450",
+          "A: 24",
+          "B: 45",
+          "C: 225",
+          "D: 450"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q2": {
+      "inputHash": "d14f1b940b0321fea33f9f6833f681f86b02078d00e72bdbf7fa7ddb21fd9802",
+      "description": {
+        "en": "Question 2. What is the sum of 2/10 + 6/100? Choices: A: 8/10 B: 8/100 C: 26/10 D: 26/100",
+        "es": "Pregunta 2. ¿Cuál es la suma de 2/10 + 6/100? Opciones: A: 8/10 B: 8/100 C: 26/10 D: 26/100"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/10 + 6/100",
+          "8/10",
+          "8/100",
+          "26/10",
+          "26/100",
+          "A: 8/10",
+          "B: 8/100",
+          "C: 26/10",
+          "D: 26/100",
+          "2/10",
+          "6/100"
+        ],
+        "es": [
+          "2/10 + 6/100",
+          "8/10",
+          "8/100",
+          "26/10",
+          "26/100",
+          "A: 8/10",
+          "B: 8/100",
+          "C: 26/10",
+          "D: 26/100",
+          "2/10",
+          "6/100"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q3": {
+      "inputHash": "4a4008b7faeccd34f63a25781b01854dd0d3d99a7f3d8ba21f3dd9e1550711dd",
+      "description": {
+        "en": "Question 3. On Saturday, Mark sold 2 7/8 gallons of lemonade. On the same day, Regan sold 2/3 as much lemonade as Mark. How much lemonade, in gallons, did Regan sell? Choices: A: 1 5/16 B: 1 11/12 C: 2 7/12 D: 4 5/16",
+        "es": "Pregunta 3. El sábado, Mark vendió 2 7/8 galones de limonada. El mismo día, Regan vendió 2/3 de la cantidad de limonada que vendió Mark. ¿Cuánta limonada, en galones, vendió Regan? Opciones: A: 1 5/16 B: 1 11/12 C: 2 7/12 D: 4 5/16"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 7/8",
+          "2/3",
+          "1 5/16",
+          "1 11/12",
+          "2 7/12",
+          "4 5/16",
+          "A: 1 5/16",
+          "B: 1 11/12",
+          "C: 2 7/12",
+          "D: 4 5/16"
+        ],
+        "es": [
+          "2 7/8",
+          "2/3",
+          "1 5/16",
+          "1 11/12",
+          "2 7/12",
+          "4 5/16",
+          "A: 1 5/16",
+          "B: 1 11/12",
+          "C: 2 7/12",
+          "D: 4 5/16"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q4": {
+      "inputHash": "b41db7d3359dd36da157c2fff316701411d1c8e9fee5f3da79ff5f8a159cc679",
+      "description": {
+        "en": "Question 4. Which point on the number line represents a value of 0.75? A horizontal number line has arrows at both ends and runs from 0 to 1, divided into 20 equal intervals. Point A is at 0.30, point B is at 0.55, point C is at 0.75, and point D is at 0.85. Choices: A: point A B: point B C: point C D: point D",
+        "es": "Pregunta 4. ¿Qué punto de la recta numérica a continuación representa un valor de 0.75? La recta tiene flechas en ambos extremos y marcas igualmente espaciadas. El tramo de 0 a 1 está dividido en 20 intervalos iguales. El punto A está en 0.30, el punto B está en 0.55, el punto C está en 0.75 y el punto D está en 0.85. Opciones: A: punto A B: punto B C: punto C D: punto D"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.75",
+          "0",
+          "1",
+          "20",
+          "0.30",
+          "0.55",
+          "0.85",
+          "point A",
+          "point B",
+          "point C",
+          "point D",
+          "A: point A",
+          "B: point B",
+          "C: point C",
+          "D: point D"
+        ],
+        "es": [
+          "0.75",
+          "0",
+          "1",
+          "20",
+          "0.30",
+          "0.55",
+          "0.85",
+          "punto A",
+          "punto B",
+          "punto C",
+          "punto D",
+          "A: punto A",
+          "B: punto B",
+          "C: punto C",
+          "D: punto D"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q13": {
+      "inputHash": "131d58f0c5d297fef880e08fe206fecfefd1cb91df5c083f570a2fcf8a2f096f",
+      "description": {
+        "en": "Question 13. What is the area, in square feet, of a rectangle with a horizontal length of 6 4/5 ft and a vertical width of 4 3/4 ft? Choices: A: 11 11/20 B: 24 12/20 C: 27 4/20 D: 32 6/20",
+        "es": "Pregunta 13. ¿Cuál es el área, en pies cuadrados, del rectángulo que se muestra a continuación? El rectángulo mide 6 4/5 pies de base y 4 3/4 pies de altura. Opciones: A: 11 11/20 B: 24 12/20 C: 27 4/20 D: 32 6/20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 4/5 ft",
+          "4 3/4 ft",
+          "11 11/20",
+          "24 12/20",
+          "27 4/20",
+          "32 6/20",
+          "A: 11 11/20",
+          "B: 24 12/20",
+          "C: 27 4/20",
+          "D: 32 6/20",
+          "6 4/5",
+          "4 3/4"
+        ],
+        "es": [
+          "6 4/5 pies",
+          "4 3/4 pies",
+          "11 11/20",
+          "24 12/20",
+          "27 4/20",
+          "32 6/20",
+          "A: 11 11/20",
+          "B: 24 12/20",
+          "C: 27 4/20",
+          "D: 32 6/20",
+          "6 4/5",
+          "4 3/4"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q18": {
+      "inputHash": "1bb4d6fe072c03b40da5813ac10cfc86222f968991998a33403f16cc1881fa3e",
+      "description": {
+        "en": "Question 18. Which expression cannot be used to determine the volume of the rectangular prism? The prism is built from equal unit cubes arranged 6 cubes across, 4 cubes high, and 3 cubes deep, for a total of 72 unit cubes. Choices: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6",
+        "es": "Pregunta 18. ¿Qué expresión no puede usarse para determinar el volumen del prisma rectangular que se muestra a continuación? El prisma está formado por cubos unitarios. La cara frontal tiene 6 cubos de ancho y 4 cubos de alto; el prisma tiene 3 cubos de profundidad. Por tanto, hay 24 cubos en cada capa horizontal, 18 cubos en cada capa vertical paralela a la cara frontal dividida por la altura, y 12 cubos en cada sección de 3 por 4. Opciones: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "4",
+          "3",
+          "72",
+          "12 × 6",
+          "18 × 4",
+          "6 × 3 × 4",
+          "6 × 4 × 6",
+          "A: 12 × 6",
+          "B: 18 × 4",
+          "C: 6 × 3 × 4",
+          "D: 6 × 4 × 6"
+        ],
+        "es": [
+          "6",
+          "4",
+          "3",
+          "24",
+          "18",
+          "12",
+          "12 × 6",
+          "18 × 4",
+          "6 × 3 × 4",
+          "6 × 4 × 6",
+          "A: 12 × 6",
+          "B: 18 × 4",
+          "C: 6 × 3 × 4",
+          "D: 6 × 4 × 6"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q19": {
+      "inputHash": "ae8b223867050ecb24b15e08c0552d50c1cf82a2458394489a3aef7fa6ba0206",
+      "description": {
+        "en": "Question 19. What is 15.74 rounded to the nearest whole number? Choices: A: 10 B: 15 C: 16 D: 20",
+        "es": "Pregunta 19. ¿Cuánto es 15.74 redondeado al número entero más cercano? Opciones: A: 10 B: 15 C: 16 D: 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15.74",
+          "10",
+          "15",
+          "16",
+          "20",
+          "A: 10",
+          "B: 15",
+          "C: 16",
+          "D: 20"
+        ],
+        "es": [
+          "15.74",
+          "10",
+          "15",
+          "16",
+          "20",
+          "A: 10",
+          "B: 15",
+          "C: 16",
+          "D: 20"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q20": {
+      "inputHash": "8cc8f6064e24c7189e8aaf8f58fbecb29f0bcf164617613366c26caf1426f31a",
+      "description": {
+        "en": "Question 20. Jack puts 1/3 pound of birdseed into his bird feeder every time he fills it. How many times can Jack fill his bird feeder with 4 pounds of birdseed? Choices: A: 1 1/3 B: 3 2/3 C: 11 D: 12",
+        "es": "Pregunta 20. Jack pone 1/3 de libra de semillas en el comedero para pájaros cada vez que lo llena. ¿Cuántas veces puede Jack llenar el comedero para pájaros con 4 libras de semillas? Opciones: A: 1 1/3 B: 3 2/3 C: 11 D: 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "4",
+          "1 1/3",
+          "3 2/3",
+          "11",
+          "12",
+          "A: 1 1/3",
+          "B: 3 2/3",
+          "C: 11",
+          "D: 12"
+        ],
+        "es": [
+          "1/3",
+          "4 libras",
+          "1 1/3",
+          "3 2/3",
+          "11",
+          "12",
+          "A: 1 1/3",
+          "B: 3 2/3",
+          "C: 11",
+          "D: 12"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q21": {
+      "inputHash": "189a63178d67536406346070cbf3bbe8907b3440db66b6abb8755b1c1292a27b",
+      "description": {
+        "en": "Question 21. Carlos makes 1 pound of snack mix using nuts, raisins, and cereal. The list gives the amounts he uses: 1/3 pound of nuts and 2/5 pound of raisins. How much cereal, in pounds, does Carlos use? Choices: A: 3/8. B: 5/8. C: 4/15. D: 11/15.",
+        "es": "Pregunta 21. Carlos prepara 1 libra de mezcla de refrigerios con nueces, pasas y cereal. La siguiente lista muestra la cantidad de libras de nueces y pasas que usa: 1/3 de libra de nueces; 2/5 de libra de pasas. ¿Cuánto cereal, en libras, usa Carlos? Opciones: A: 3/8 B: 5/8 C: 4/15 D: 11/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 pound",
+          "1/3",
+          "2/5",
+          "3/8",
+          "5/8",
+          "4/15",
+          "11/15",
+          "A: 3/8",
+          "B: 5/8",
+          "C: 4/15",
+          "D: 11/15"
+        ],
+        "es": [
+          "1 libra",
+          "1/3",
+          "2/5",
+          "3/8",
+          "5/8",
+          "4/15",
+          "11/15",
+          "A: 3/8",
+          "B: 5/8",
+          "C: 4/15",
+          "D: 11/15"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q26": {
+      "inputHash": "d61fc7786968bfa63a5db6cb0dbef33389a8f45f4c51fb2f6225c405713729fb",
+      "description": {
+        "en": "Question 26. What is the value of the expression 1/7 ÷ 5? Choices: A: 1/12. B: 1/35. C: 5/7. D: 6/7.",
+        "es": "Pregunta 26. ¿Cuál es el valor de la expresión 1/7 ÷ 5? Opciones: A: 1/12 B: 1/35 C: 5/7 D: 6/7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/7 ÷ 5",
+          "1/12",
+          "1/35",
+          "5/7",
+          "6/7",
+          "A: 1/12",
+          "B: 1/35",
+          "C: 5/7",
+          "D: 6/7",
+          "1/7"
+        ],
+        "es": [
+          "1/7 ÷ 5",
+          "1/12",
+          "1/35",
+          "5/7",
+          "6/7",
+          "A: 1/12",
+          "B: 1/35",
+          "C: 5/7",
+          "D: 6/7",
+          "1/7"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q27": {
+      "inputHash": "a145ec15f4009d742af2362dca648a4639c0efda617dfd9edc42ca9d5831261c",
+      "description": {
+        "en": "Question 27. Cole has a rectangular garden with an area of 16.02 square meters. The length of the garden is 4.5 meters. What is the width, in meters, of the garden? Choices: A: 3.56. B: 11.52. C: 16.12. D: 20.52.",
+        "es": "Pregunta 27. Cole tiene un jardín rectangular que ocupa un área de 16.02 metros cuadrados. La longitud del jardín es de 4.5 metros. ¿Cuál es el ancho, en metros, del jardín? Opciones: A: 3.56 B: 11.52 C: 16.12 D: 20.52"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16.02",
+          "4.5",
+          "3.56",
+          "11.52",
+          "16.12",
+          "20.52",
+          "A: 3.56",
+          "B: 11.52",
+          "C: 16.12",
+          "D: 20.52"
+        ],
+        "es": [
+          "16.02 metros cuadrados",
+          "4.5 metros",
+          "3.56",
+          "11.52",
+          "16.12",
+          "20.52",
+          "A: 3.56",
+          "B: 11.52",
+          "C: 16.12",
+          "D: 20.52"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q28": {
+      "inputHash": "ffb1d03a94ffcff80fcc900f512eb0002bb5721f30501b8a46a4d403de6ab1d8",
+      "description": {
+        "en": "Question 28. A school raised a total of $1,648 to purchase new books. The money raised will be shared equally among 8 different classrooms. What is the total amount of money each classroom will receive? Choices: A: $206. B: $207. C: $260. D: $270.",
+        "es": "Pregunta 28. Una escuela recaudó un total de $1,648 para comprar libros nuevos. El dinero recaudado se compartirá en partes iguales entre 8 aulas diferentes. ¿Cuál es la cantidad total de dinero que recibirá cada aula? Opciones: A: $206 B: $207 C: $260 D: $270"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$1,648",
+          "8",
+          "$206",
+          "$207",
+          "$260",
+          "$270",
+          "A: $206",
+          "B: $207",
+          "C: $260",
+          "D: $270"
+        ],
+        "es": [
+          "$1,648",
+          "8 aulas",
+          "$206",
+          "$207",
+          "$260",
+          "$270",
+          "A: $206",
+          "B: $207",
+          "C: $260",
+          "D: $270"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q29": {
+      "inputHash": "8744dd8233f36eb6a6ac28473a666d44d3d7a12d033f46a8d2f8f0f20ec7cd79",
+      "description": {
+        "en": "Question 29. The line plot titled “CEREAL EATEN” shows the amount of cereal Shyanne ate in 5 days. A horizontal number line labeled “Amount (cups)” has arrows at both ends and equally spaced tick marks labeled 0, 1/4, 1/2, 3/4, and 1 from left to right. There are two X marks above 1/4, two X marks above 1/2, and one X mark above 3/4, for a total of five X marks. What is the total number of cups of cereal that Shyanne ate in the 5 days? Choices: A: 1 1/2. B: 1 3/4. C: 1 4/6. D: 2 1/4.",
+        "es": "Pregunta 29. El siguiente diagrama lineal, titulado «CEREAL COMIDO», muestra la cantidad de cereal que comió Shyanne en 5 días. La recta horizontal, etiquetada «Cantidad (tazas)», tiene flechas en ambos extremos y marcas igualmente espaciadas en 0, 1/4, 1/2, 3/4 y 1. Hay dos X sobre 1/4, dos X sobre 1/2 y una X sobre 3/4, para un total de cinco datos. ¿Cuál es la cantidad total de tazas de cereal que comió Shyanne en los 5 días? Opciones: A: 1 1/2 B: 1 3/4 C: 1 4/6 D: 2 1/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 days",
+          "0",
+          "1/4",
+          "1/2",
+          "3/4",
+          "1",
+          "1 1/2",
+          "1 3/4",
+          "1 4/6",
+          "2 1/4",
+          "A: 1 1/2",
+          "B: 1 3/4",
+          "C: 1 4/6",
+          "D: 2 1/4"
+        ],
+        "es": [
+          "5 días",
+          "0",
+          "1/4",
+          "1/2",
+          "3/4",
+          "1",
+          "1 1/2",
+          "1 3/4",
+          "1 4/6",
+          "2 1/4",
+          "A: 1 1/2",
+          "B: 1 3/4",
+          "C: 1 4/6",
+          "D: 2 1/4"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q30": {
+      "inputHash": "0277b65e66aef0cee9a8cd8ddc642d4727d4b1cc82b489616a8f3a2ba2695a40",
+      "description": {
+        "en": "Question 30. Lana used the two rectangular-prism blocks described in the diagram to build a tower. The lower block measures 10 in. long, 2 in. deep, and 4 in. high. The upper block rests on top of the lower block and measures 5 in. long, 2 in. deep, and 4 in. high. The blocks do not overlap; they meet along the bottom face of the upper block. What is the total volume, in cubic inches, of the tower Lana built? Choices: A: 27. B: 80. C: 116. D: 120.",
+        "es": "Pregunta 30. Lana usó los dos bloques que se muestran en el diagrama para construir una torre. La «TORRE DE LANA» está formada por dos prismas rectangulares, uno colocado encima del otro. El bloque inferior mide 10 pulgadas de largo, 4 pulgadas de alto y 2 pulgadas de profundidad. El bloque superior descansa sobre la cara superior del bloque inferior y mide 5 pulgadas de largo, 4 pulgadas de alto y 2 pulgadas de profundidad. ¿Cuál es el volumen total, en pulgadas cúbicas, de la torre que construyó Lana? Opciones: A: 27 B: 80 C: 116 D: 120"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 in",
+          "2 in",
+          "4 in",
+          "5 in",
+          "27",
+          "80",
+          "116",
+          "120",
+          "A: 27",
+          "B: 80",
+          "C: 116",
+          "D: 120"
+        ],
+        "es": [
+          "10 pulgadas",
+          "4 pulgadas",
+          "2 pulgadas",
+          "5 pulgadas",
+          "27",
+          "80",
+          "116",
+          "120",
+          "A: 27",
+          "B: 80",
+          "C: 116",
+          "D: 120"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q31": {
+      "inputHash": "ec853490239108a92ef678ca33cae6fbea25917a0df8d65feb50e07fa947ceaa",
+      "description": {
+        "en": "Question 31. Which statement about rectangles and rhombuses is always true? Choices: A: Both figures are squares. B: Both figures are quadrilaterals. C: Both figures have four right angles. D: Both figures have four congruent sides.",
+        "es": "Pregunta 31. ¿Qué afirmación sobre los rectángulos y los rombos es siempre verdadera? Opciones: A: Ambas figuras son cuadrados. B: Ambas figuras son cuadriláteros. C: Ambas figuras tienen cuatro ángulos rectos. D: Ambas figuras tienen cuatro lados congruentes."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "squares",
+          "quadrilaterals",
+          "four right angles",
+          "four congruent sides",
+          "A: Both figures are squares",
+          "B: Both figures are quadrilaterals",
+          "C: Both figures have four right angles",
+          "D: Both figures have four congruent sides"
+        ],
+        "es": [
+          "cuadrados",
+          "cuadriláteros",
+          "cuatro ángulos rectos",
+          "cuatro lados congruentes",
+          "A: Ambas figuras son cuadrados",
+          "B: Ambas figuras son cuadriláteros",
+          "C: Ambas figuras tienen cuatro ángulos rectos",
+          "D: Ambas figuras tienen cuatro lados congruentes"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q32": {
+      "inputHash": "8763eb61e4844dc7b2ea563b359fcb417a1a5c217f504d019a2f04804ccc8b3f",
+      "description": {
+        "en": "Question 32. What is the value of the expression 2/5 + 3/7? Choices: A: 5/35. B: 6/35. C: 5/12. D: 29/35.",
+        "es": "Pregunta 32. ¿Cuál es el valor de la expresión 2/5 + 3/7? Opciones: A: 5/35 B: 6/35 C: 5/12 D: 29/35"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/5 + 3/7",
+          "5/35",
+          "6/35",
+          "5/12",
+          "29/35",
+          "A: 5/35",
+          "B: 6/35",
+          "C: 5/12",
+          "D: 29/35",
+          "2/5",
+          "3/7"
+        ],
+        "es": [
+          "5/35",
+          "6/35",
+          "5/12",
+          "29/35",
+          "2/5 + 3/7",
+          "A: 5/35",
+          "B: 6/35",
+          "C: 5/12",
+          "D: 29/35",
+          "2/5",
+          "3/7"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q33": {
+      "inputHash": "b5032e93bba60468cc22a8f7960504ea3980e7cff448c22bd6e9e92a6dac0a92",
+      "description": {
+        "en": "Question 33. Which measurement is equivalent to 4,000 centimeters? Choices: A: 4 meters. B: 40 meters. C: 400 meters. D: 40,000 meters.",
+        "es": "Pregunta 33. ¿Qué medida es equivalente a 4,000 centímetros? Opciones: A: 4 metros. B: 40 metros. C: 400 metros. D: 40,000 metros."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4,000 centimeters",
+          "4 meters",
+          "40 meters",
+          "400 meters",
+          "40,000 meters",
+          "A: 4 meters",
+          "B: 40 meters",
+          "C: 400 meters",
+          "D: 40,000 meters"
+        ],
+        "es": [
+          "4,000 centímetros",
+          "4 metros",
+          "40 metros",
+          "400 metros",
+          "40,000 metros",
+          "A: 4 metros",
+          "B: 40 metros",
+          "C: 400 metros",
+          "D: 40,000 metros"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q34": {
+      "inputHash": "6a368262e3839f3315c78df1600044391e45f9e5a6332bb18328455df1864bfe",
+      "description": {
+        "en": "Question 34. Zaire is making granola bars. For one batch of bars, the recipe requires 1 2/3 cups of rolled oats, and 1/2 cup raisins. What is the combined amount, in cups, of rolled oats and raisins that is used in one batch of granola bars? Choices: A: 1 1/5. B: 1 3/5. C: 2 1/3. D: 2 1/6.",
+        "es": "Pregunta 34. Zaire está haciendo barritas de granola. Para una tanda de barritas, la receta lleva 1 2/3 tazas de copos de avena y 1/2 taza de pasas. ¿Cuál es la cantidad combinada, en tazas, de copos de avena y pasas que se usa en una tanda de barritas de granola? Opciones: A: 1 1/5. B: 1 3/5. C: 2 1/3. D: 2 1/6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 2/3 cups",
+          "1/2 cup",
+          "1 1/5",
+          "1 3/5",
+          "2 1/3",
+          "2 1/6",
+          "A: 1 1/5",
+          "B: 1 3/5",
+          "C: 2 1/3",
+          "D: 2 1/6",
+          "1 2/3",
+          "1/2"
+        ],
+        "es": [
+          "1 2/3",
+          "1/2",
+          "1 1/5",
+          "1 3/5",
+          "2 1/3",
+          "2 1/6",
+          "A: 1 1/5",
+          "B: 1 3/5",
+          "C: 2 1/3",
+          "D: 2 1/6"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q35": {
+      "inputHash": "8b211e304cbba9f485abbaaf443af141152d49dfc98cf9d86bd4c4a1388b9c46",
+      "description": {
+        "en": "Question 35. In a science class, Paula made a mixture by adding 2.05 milliliters of hydrogen peroxide and 6.15 milliliters of water together. Equal amounts of the whole mixture were poured into 5 empty containers. How much of the mixture, in milliliters, did she pour into each container? Choices: A: 0.61. B: 1.64. C: 3.2. D: 13.4.",
+        "es": "Pregunta 35. En la clase de ciencias, Paula elaboró una mezcla agregando 2.05 mililitros de peróxido de hidrógeno y 6.15 mililitros de agua. Se vertieron cantidades iguales de toda la mezcla en 5 recipientes vacíos. ¿Qué cantidad de mezcla, en mililitros, vertió en cada recipiente? Opciones: A: 0.61. B: 1.64. C: 3.2. D: 13.4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2.05 milliliters",
+          "6.15 milliliters",
+          "5 empty containers",
+          "0.61",
+          "1.64",
+          "3.2",
+          "13.4",
+          "A: 0.61",
+          "B: 1.64",
+          "C: 3.2",
+          "D: 13.4"
+        ],
+        "es": [
+          "2.05 mililitros",
+          "6.15 mililitros",
+          "5 recipientes",
+          "0.61",
+          "1.64",
+          "3.2",
+          "13.4",
+          "A: 0.61",
+          "B: 1.64",
+          "C: 3.2",
+          "D: 13.4"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q36": {
+      "inputHash": "a933ea188fb97ece238b49f00741edb07417d2db52c77a7785a5078f09e493f8",
+      "description": {
+        "en": "Question 36. What is 482.073 expressed in word form? Choices: A: four eighty-two and seventy-three thousandths. B: four hundred eighty-two thousand seventy-three. C: four hundred eighty-two and seventy-three hundredths. D: four hundred eighty-two and seventy-three thousandths.",
+        "es": "Pregunta 36. ¿Cómo se expresa 482.073 en palabras? Opciones: A: cuatro ochenta y dos y setenta y tres milésimas. B: cuatrocientos ochenta y dos mil setenta y tres. C: cuatrocientos ochenta y dos y setenta y tres centésimas. D: cuatrocientos ochenta y dos y setenta y tres milésimas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "482.073",
+          "four eighty-two and seventy-three thousandths",
+          "four hundred eighty-two thousand seventy-three",
+          "four hundred eighty-two and seventy-three hundredths",
+          "four hundred eighty-two and seventy-three thousandths",
+          "A: four eighty-two and seventy-three thousandths",
+          "B: four hundred eighty-two thousand seventy-three",
+          "C: four hundred eighty-two and seventy-three hundredths",
+          "D: four hundred eighty-two and seventy-three thousandths"
+        ],
+        "es": [
+          "482.073",
+          "cuatro ochenta y dos y setenta y tres milésimas",
+          "cuatrocientos ochenta y dos mil setenta y tres",
+          "cuatrocientos ochenta y dos y setenta y tres centésimas",
+          "cuatrocientos ochenta y dos y setenta y tres milésimas",
+          "A: cuatro ochenta y dos y setenta y tres milésimas",
+          "B: cuatrocientos ochenta y dos mil setenta y tres",
+          "C: cuatrocientos ochenta y dos y setenta y tres centésimas",
+          "D: cuatrocientos ochenta y dos y setenta y tres milésimas"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q37": {
+      "inputHash": "f1718b4fd0df8e9fa00cdfb4e04de20113faf568529a0920caffe9ed299e4b53",
+      "description": {
+        "en": "Question 37. Marco bakes cookies for his class. He uses 3/4 cup of butter in each batch of cookies and bakes 2 1/2 batches. Which equation can be used to determine the number of cups of butter Marco uses to bake cookies? Choices: A: 5/2 × 3/4 = 1 7/8. B: 3/2 × 3/4 = 1 1/8. C: 5/2 × 4/3 = 3 1/3. D: 3/2 × 4/3 = 2.",
+        "es": "Pregunta 37. Marco hornea galletas para su clase. Usa 3/4 de taza de mantequilla en cada tanda de galletas y hornea 2 1/2 tandas. ¿Qué ecuación puede usarse para determinar la cantidad de tazas de mantequilla que usa Marco para hornear galletas? Opciones: A: 5/2 × 3/4 = 1 7/8. B: 3/2 × 3/4 = 1 1/8. C: 5/2 × 4/3 = 3 1/3. D: 3/2 × 4/3 = 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4 cup",
+          "2 1/2 batches",
+          "5/2 × 3/4 = 1 7/8",
+          "3/2 × 3/4 = 1 1/8",
+          "5/2 × 4/3 = 3 1/3",
+          "3/2 × 4/3 = 2",
+          "A: 5/2 × 3/4 = 1 7/8",
+          "B: 3/2 × 3/4 = 1 1/8",
+          "C: 5/2 × 4/3 = 3 1/3",
+          "D: 3/2 × 4/3 = 2",
+          "3/4",
+          "2 1/2",
+          "5/2",
+          "1 7/8",
+          "3/2",
+          "1 1/8",
+          "4/3",
+          "3 1/3"
+        ],
+        "es": [
+          "3/4",
+          "2 1/2",
+          "5/2 × 3/4 = 1 7/8",
+          "3/2 × 3/4 = 1 1/8",
+          "5/2 × 4/3 = 3 1/3",
+          "3/2 × 4/3 = 2",
+          "A: 5/2 × 3/4 = 1 7/8",
+          "B: 3/2 × 3/4 = 1 1/8",
+          "C: 5/2 × 4/3 = 3 1/3",
+          "D: 3/2 × 4/3 = 2",
+          "5/2",
+          "1 7/8",
+          "3/2",
+          "1 1/8",
+          "4/3",
+          "3 1/3"
+        ]
+      }
+    },
+    "nysed-2019-g5-mc-q38": {
+      "inputHash": "a31daa31d0ecde4a4733b912ac09b66ef822b812ad7e7a1f93f7c5eea65fed7f",
+      "description": {
+        "en": "Question 38. Which expression is not equivalent to 2/3 × 4? Choices: A: (2 × 4) ÷ 3. B: 1/3 × (2 × 4). C: (4 × 1/3) × 2. D: (2 × 1/3) + (4 × 1/3).",
+        "es": "Pregunta 38. ¿Qué expresión no es equivalente a 2/3 × 4? Opciones: A: (2 × 4) ÷ 3. B: 1/3 × (2 × 4). C: (4 × 1/3) × 2. D: (2 × 1/3) + (4 × 1/3)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/3 × 4",
+          "(2 × 4) ÷ 3",
+          "1/3 × (2 × 4)",
+          "(4 × 1/3) × 2",
+          "(2 × 1/3) + (4 × 1/3)",
+          "A: (2 × 4) ÷ 3",
+          "B: 1/3 × (2 × 4)",
+          "C: (4 × 1/3) × 2",
+          "D: (2 × 1/3) + (4 × 1/3)",
+          "2/3",
+          "(2 × 4)",
+          "1/3",
+          "(4 × 1/3)",
+          "(2 × 1/3)"
+        ],
+        "es": [
+          "2/3 × 4",
+          "(2 × 4) ÷ 3",
+          "1/3 × (2 × 4)",
+          "(4 × 1/3) × 2",
+          "(2 × 1/3) + (4 × 1/3)",
+          "A: (2 × 4) ÷ 3",
+          "B: 1/3 × (2 × 4)",
+          "C: (4 × 1/3) × 2",
+          "D: (2 × 1/3) + (4 × 1/3)",
+          "2/3",
+          "(2 × 4)",
+          "1/3",
+          "(4 × 1/3)",
+          "(2 × 1/3)"
+        ]
+      }
+    }
+  }
+}

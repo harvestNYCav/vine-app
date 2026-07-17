@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2022-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2022-g4-mc-q1": {
+      "inputHash": "ed4895d9f477c63385063a4a36c7f594836af031de6ad52e2426163440369256",
+      "description": {
+        "en": "Question 1. Julia moves the arm of a spinner one degree at a time, 45 times. How many total degrees does she move the arm? Choices: A: 1; B: 45; C: 90; D: 360.",
+        "es": "Pregunta 1. Julia mueve el brazo de una ruleta un grado por vez, 45 veces. ¿Cuántos grados en total mueve el brazo? Opciones: A: 1; B: 45; C: 90; D: 360."
+      }
+    },
+    "nysed-2022-g4-mc-q2": {
+      "inputHash": "343835dd9fffef26e635e48a087b10dddad17e488ffc5bebc52dd3b53f2d68ec",
+      "description": {
+        "en": "Question 2. Which pair of lines appears to be perpendicular? Choices: A: a horizontal line crossed by a downward-sloping diagonal; B: a horizontal line crossed by an upward-sloping diagonal; C: a horizontal line crossed by a vertical line; D: two parallel horizontal lines.",
+        "es": "Pregunta 2. ¿Qué par de líneas parece ser perpendicular? Opciones: A: una línea horizontal cruzada por una diagonal descendente; B: una horizontal cruzada por una diagonal ascendente; C: una horizontal cruzada por una vertical; D: dos líneas horizontales paralelas."
+      }
+    },
+    "nysed-2022-g4-mc-q8": {
+      "inputHash": "8a4be85a1c0ca06b72b6351cb0e17eb4201b879574eaa9f1ebb2e5a2c9797515",
+      "description": {
+        "en": "Question 8. A rectangular section of a park is 24 feet long and 12 feet wide. What is its area in square feet? Choices: A: 36; B: 72; C: 144; D: 288.",
+        "es": "Pregunta 8. Una sección rectangular de un parque mide 24 pies de largo y 12 pies de ancho. ¿Cuál es su área en pies cuadrados? Opciones: A: 36; B: 72; C: 144; D: 288."
+      }
+    },
+    "nysed-2022-g4-mc-q9": {
+      "inputHash": "75f1a5d180756698a5a64d9f4280976a1a85b6cc76f3c59b534844b945e22dba",
+      "description": {
+        "en": "Question 9. How many times greater is the value of the digit 6 in 6,419 than the value of the digit 6 in 84,362? Choices: A: 10; B: 100; C: 1,000; D: 10,000.",
+        "es": "Pregunta 9. ¿Cuántas veces mayor es el valor del dígito 6 en 6,419 que el valor del dígito 6 en 84,362? Opciones: A: 10; B: 100; C: 1,000; D: 10,000."
+      }
+    },
+    "nysed-2022-g4-mc-q13": {
+      "inputHash": "befe6e7ede48a994fc4d275dae0867a7a788074e961ed52dd3119fcca85e7781",
+      "description": {
+        "en": "Question 13. Which equation represents the statement “forty-eight is six times as many as eight”? Choices: A: 48 − 6 = 8; B: 48 + 6 = 8; C: 48 = 6 × 8; D: 48 = 6 + 8.",
+        "es": "Pregunta 13. ¿Qué ecuación representa la afirmación «cuarenta y ocho es seis veces ocho»? Opciones: A: 48 − 6 = 8; B: 48 + 6 = 8; C: 48 = 6 × 8; D: 48 = 6 + 8."
+      }
+    },
+    "nysed-2022-g4-mc-q14": {
+      "inputHash": "1ed556f1051b9bd6661e007d98a1b2b91caa48f27d3e1412a1436aa9e411340e",
+      "description": {
+        "en": "Question 14. Two bars are each divided into 8 equal parts. The first has 3 parts shaded and the second has 4 parts shaded. What is the sum of the represented fractions? Choices: A: 1/8; B: 3/8; C: 4/8; D: 7/8.",
+        "es": "Pregunta 14. Dos barras están divididas en 8 partes iguales. La primera tiene 3 partes sombreadas y la segunda 4. ¿Cuál es la suma de las fracciones representadas? Opciones: A: 1/8; B: 3/8; C: 4/8; D: 7/8."
+      }
+    },
+    "nysed-2022-g4-mc-q16": {
+      "inputHash": "661af98b57969fb05bf16973a6085f4fa2db4e160254dba333558621c6c416a4",
+      "description": {
+        "en": "Question 16. A line plot has one X at 1 1/4 miles, two Xs at 2 miles, one X at 2 2/4 miles, and one X at 3 miles. What total distance did Mark run? Choices: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4 miles.",
+        "es": "Pregunta 16. Un diagrama lineal tiene una X en 1 1/4 millas, dos X en 2 millas, una X en 2 2/4 millas y una X en 3 millas. ¿Qué distancia total corrió Mark? Opciones: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4 millas."
+      }
+    },
+    "nysed-2022-g4-mc-q17": {
+      "inputHash": "493ee2120afcda72c4eabf8d3d079f233d6787920bbababd9a7aed3e152bbd65",
+      "description": {
+        "en": "Question 17. A number rounded to the nearest hundred is 3,700. Which number could not be the number before rounding? Choices: A: 3,614; B: 3,650; C: 3,720; D: 3,749.",
+        "es": "Pregunta 17. Un número redondeado a la centena más cercana da 3,700. ¿Qué número no podría ser el número antes de redondearlo? Opciones: A: 3,614; B: 3,650; C: 3,720; D: 3,749."
+      }
+    },
+    "nysed-2022-g4-mc-q21": {
+      "inputHash": "002a61f880dbfd5031ce72d6daf4a00d156b450c675d953503f43d158a4ce161",
+      "description": {
+        "en": "Question 21. Which list shows only fractions less than 1/2? Choices: A: 1/3, 1/5, and 1/8; B: 2/3, 2/4, and 2/5; C: 1/4, 5/8, and 6/12; D: 3/4, 5/6, and 7/10.",
+        "es": "Pregunta 21. ¿Qué lista muestra solamente fracciones menores que 1/2? Opciones: A: 1/3, 1/5 y 1/8; B: 2/3, 2/4 y 2/5; C: 1/4, 5/8 y 6/12; D: 3/4, 5/6 y 7/10."
+      }
+    },
+    "nysed-2022-g4-mc-q22": {
+      "inputHash": "38448aeeeec241333fb18b91f0574d227935a4bf6f63ee1d10534f089a0c99c2",
+      "description": {
+        "en": "Question 22. An obtuse angle has one ray pointing horizontally left and the other ray pointing upward and right at a shallow angle. What is its measure? Choices: A: 19°; B: 24°; C: 156°; D: 161°.",
+        "es": "Pregunta 22. Un ángulo obtuso tiene un rayo horizontal hacia la izquierda y otro rayo que apunta hacia arriba y a la derecha con poca inclinación. ¿Cuál es su medida? Opciones: A: 19°; B: 24°; C: 156°; D: 161°."
+      }
+    },
+    "nysed-2022-g4-mc-q23": {
+      "inputHash": "c417bd8605b7f39efe83d93d9e6846cd8c9fa2e429c7bb97608b6d1686bc38e4",
+      "description": {
+        "en": "Question 23. A bake sale has 3 pans of brownies, each pan has 5 rows of 5 brownies, and each brownie sells for $2. How much money is made if all are sold? Choices: A: $25; B: $50; C: $75; D: $150.",
+        "es": "Pregunta 23. Una venta tiene 3 bandejas de brownies, cada bandeja tiene 5 filas de 5 brownies y cada brownie se vende a $2. ¿Cuánto dinero se obtiene si se venden todos? Opciones: A: $25; B: $50; C: $75; D: $150."
+      }
+    },
+    "nysed-2022-g4-mc-q24": {
+      "inputHash": "fafe0bf059f4cfefc08e04a6064a14fbaa11fad49daa28a31f58fb7645cf45b4",
+      "description": {
+        "en": "Question 24. What is the degree measure of an angle that represents 1/4 of a complete circle? Choices: A: 25; B: 45; C: 90; D: 180.",
+        "es": "Pregunta 24. ¿Cuál es la medida en grados de un ángulo que representa 1/4 de un círculo completo? Opciones: A: 25; B: 45; C: 90; D: 180."
+      }
+    },
+    "nysed-2022-g4-mc-q27": {
+      "inputHash": "9752ebb3fd55bfcf4274f22fc98a3ce18282cc2feffb0f2b627bd7cfcfb5f7cf",
+      "description": {
+        "en": "Question 27. What is the value of 7,839 × 9? Choices: A: 70,471; B: 70,551; C: 71,471; D: 71,551.",
+        "es": "Pregunta 27. ¿Cuál es el valor de 7,839 × 9? Opciones: A: 70,471; B: 70,551; C: 71,471; D: 71,551."
+      }
+    },
+    "nysed-2022-g4-mc-q28": {
+      "inputHash": "9abac70e14a3a9c23cabe401d520e17da84288a549dd7f6a1c74f96d94f524d8",
+      "description": {
+        "en": "Question 28. Which figure appears to be a right triangle? Choices: A: a tall narrow triangle with a horizontal base and two slanted sides; B: a low irregular triangle with one horizontal side and two slanted sides; C: a triangle with a vertical side meeting a horizontal base; D: a nearly equilateral triangle with a horizontal base.",
+        "es": "Pregunta 28. ¿Qué figura parece ser un triángulo rectángulo? Opciones: A: un triángulo alto y angosto con base horizontal y dos lados inclinados; B: uno bajo e irregular con un lado horizontal y dos inclinados; C: uno con un lado vertical que se une a una base horizontal; D: uno casi equilátero con base horizontal."
+      }
+    },
+    "nysed-2022-g4-mc-q31": {
+      "inputHash": "168b320923dc07f09491853ab08d83a87a55c14a84c5c931f697ce38505956a7",
+      "description": {
+        "en": "Question 31. Mr. Jonus’s children ate 4/8 of a pizza and he ate 2/8; the rest was saved. Which equation represents the whole pizza? Choices: A: 2/8 + 3/8 + 4/8 = 1; B: 1/8 + 2/8 + 4/8 = 1; C: 2/8 + 2/8 + 4/8 = 1; D: 2/8 + 4/8 + 4/8 = 1.",
+        "es": "Pregunta 31. Los hijos del señor Jonus comieron 4/8 de una pizza y él comió 2/8; el resto se guardó. ¿Qué ecuación representa la pizza entera? Opciones: A: 2/8 + 3/8 + 4/8 = 1; B: 1/8 + 2/8 + 4/8 = 1; C: 2/8 + 2/8 + 4/8 = 1; D: 2/8 + 4/8 + 4/8 = 1."
+      }
+    },
+    "nysed-2022-g4-mc-q32": {
+      "inputHash": "88e30f1bf821f5dc799d9b1f6096b39f17862e82a228ce045f5e206ac07975f2",
+      "description": {
+        "en": "Question 32. Matt has 4 pens. Sue has 4 times as many as Matt, and Chris has 2 times as many as Sue. Which equation determines Chris’s number of pens? Choices: A: 4 + 4 + 2 = ?; B: 4 + 4 × 2 = ?; C: 4 × 4 × 2 = ?; D: 4 × 4 + 2 = ?.",
+        "es": "Pregunta 32. Matt tiene 4 lapiceras. Sue tiene 4 veces la cantidad de Matt y Chris tiene 2 veces la cantidad de Sue. ¿Qué ecuación determina cuántas tiene Chris? Opciones: A: 4 + 4 + 2 = ?; B: 4 + 4 × 2 = ?; C: 4 × 4 × 2 = ?; D: 4 × 4 + 2 = ?."
+      }
+    },
+    "nysed-2022-g4-mc-q33": {
+      "inputHash": "a11e5851a45403ff1530f414b6ec723a0b0f40cac88c1d5a45f71907f395a84e",
+      "description": {
+        "en": "Question 33. A diagram measures Lynn’s plant at 2 inches on Monday and 3 inches on Friday using the same vertical scale. How many inches did the plant grow? Choices: A: 1; B: 2; C: 3; D: 5.",
+        "es": "Pregunta 33. Un diagrama mide la planta de Lynn en 2 pulgadas el lunes y 3 pulgadas el viernes con la misma escala vertical. ¿Cuántas pulgadas creció la planta? Opciones: A: 1; B: 2; C: 3; D: 5."
+      }
+    },
+    "nysed-2022-g4-mc-q34": {
+      "inputHash": "b8abdff81c4263361061576c796505748793b8f5613218ea5eb06a63161100df",
+      "description": {
+        "en": "Question 34. Sam has 12 baseball cards, and Aly has 4 times as many. Which equation finds Aly’s total number of cards? Choices: A: 12 ÷ 4 = 3; B: 12 − 4 = 8; C: 12 + 4 = 16; D: 12 × 4 = 48.",
+        "es": "Pregunta 34. Sam tiene 12 tarjetas de béisbol y Aly tiene 4 veces esa cantidad. ¿Qué ecuación halla la cantidad total de Aly? Opciones: A: 12 ÷ 4 = 3; B: 12 − 4 = 8; C: 12 + 4 = 16; D: 12 × 4 = 48."
+      }
+    },
+    "nysed-2022-g4-mc-q35": {
+      "inputHash": "a7328bc95e50ecdcbbca071a30d8540d233e9bc84e180b9e7c005125fa2777c2",
+      "description": {
+        "en": "Question 35. What is the value of 9 4/10 − 2 8/10? Choices: A: 6 4/10; B: 6 6/10; C: 7 4/10; D: 7 6/10.",
+        "es": "Pregunta 35. ¿Cuál es el valor de 9 4/10 − 2 8/10? Opciones: A: 6 4/10; B: 6 6/10; C: 7 4/10; D: 7 6/10."
+      }
+    },
+    "nysed-2022-g4-mc-q36": {
+      "inputHash": "0dab985773bd800b740203f289ffa1551b17f58a0a75a2e40d572dab4b32f7f6",
+      "description": {
+        "en": "Question 36. Cam has 35 tickets and wants to use as many as possible on rides that each require 4 tickets. How many tickets will remain? Choices: A: 3; B: 4; C: 8; D: 9.",
+        "es": "Pregunta 36. Cam tiene 35 boletos y quiere usar la mayor cantidad posible en juegos que requieren 4 boletos cada uno. ¿Cuántos boletos le quedarán? Opciones: A: 3; B: 4; C: 8; D: 9."
+      }
+    },
+    "nysed-2022-g4-mc-q37": {
+      "inputHash": "6844af6dc494132f441ef3755edc4f5f481580592442f5a8d7b9ba4b33796e94",
+      "description": {
+        "en": "Question 37. Students collected 268 books and packed the same number into each of 4 large boxes. How many books were packed in each box? Choices: A: 52; B: 67; C: 842; D: 1,072.",
+        "es": "Pregunta 37. Los alumnos juntaron 268 libros y empacaron la misma cantidad en cada una de 4 cajas grandes. ¿Cuántos libros se empacaron en cada caja? Opciones: A: 52; B: 67; C: 842; D: 1,072."
+      }
+    },
+    "nysed-2022-g4-mc-q38": {
+      "inputHash": "a6a45893590804775b3f47ad88c8f45d5fcf97b13c81e12603e0063fc1e4f21b",
+      "description": {
+        "en": "Question 38. Ms. Smyth’s class has 24 students, and the whole fourth grade has 6 times as many. Which equation finds the school’s total fourth-grade students? Choices: A: 24 × ? = 6; B: 24 ÷ ? = 6; C: 24 × 6 = ?; D: 24 + 6 = ?.",
+        "es": "Pregunta 38. La clase de la señora Smyth tiene 24 alumnos y todo cuarto grado tiene 6 veces esa cantidad. ¿Qué ecuación halla el total de alumnos de cuarto grado? Opciones: A: 24 × ? = 6; B: 24 ÷ ? = 6; C: 24 × 6 = ?; D: 24 + 6 = ?."
+      }
+    }
+  }
+}

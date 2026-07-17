@@ -2,8 +2,15 @@ import type { GradeLevel } from '@/lib/grade-levels'
 
 export type ElaExamChoice = 'A' | 'B' | 'C' | 'D'
 export type ElaExamQuestionNumberKind = 'official' | 'release-ordinal'
-export type ElaExplanationSource = 'official-nysed' | 'vine-authored'
+export type ElaExplanationSource =
+  | 'official-nysed'
+  | 'official-nysed-corrected'
+  | 'vine-authored'
 export type ElaStandardsFramework = 'CCLS' | 'NGLS'
+export type ElaPassageTranscriptSource =
+  | 'official-pdf-text'
+  | 'mixed-official-pdf-text-and-ocr'
+  | 'passage-image-ocr'
 
 export type ElaSkill =
   | 'key-ideas-details'
@@ -34,6 +41,13 @@ export interface ElaPassageAsset {
   alt: string
   /** Number of physical booklet pages joined into this continuous image. */
   pageCount: number
+  /** Reviewed, source-pinned text alternative for Grade 3–8 passages. */
+  transcript?: {
+    text: string
+    source: ElaPassageTranscriptSource
+    sourcePdfSha256: string
+    passageImageSha256: string
+  }
 }
 
 export interface ElaChoiceGrading {
@@ -69,6 +83,17 @@ export interface ElaWorkedExample {
   takeaway: string
 }
 
+export interface ElaSkillLesson {
+  skill: ElaSkill
+  emoji: string
+  title: string
+  description: string
+  overview: string
+  learningGoals: string[]
+  strategy: string
+  workedExample: ElaWorkedExample
+}
+
 export interface ElaExamSectionDefinition {
   slug: string
   stimulusId: string
@@ -79,6 +104,7 @@ export interface ElaExamSectionDefinition {
   passageReferences: ElaPassageReference[]
   focusSkill: ElaSkill
   skills: ElaSkill[]
+  skillLessons: ElaSkillLesson[]
   standards: string[]
   emoji: string
   title: string

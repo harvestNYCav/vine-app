@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2025-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2025-g8-mc-q2": {
+      "inputHash": "28783ce6ff0d1d2ee50acae8a2bc38fdd30d11c14c4abf1dc0cfb7fe51fc4fd1",
+      "description": {
+        "en": "Question 2. A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data? Each choice uses the same coordinate plane, with x labeled on the horizontal axis and y on the vertical axis. The x-axis runs from 0 to 10 in increments of 1, and the y-axis runs from 0 to 8 in increments of 1. Each plot contains data points at approximately (2, 6), (2.6, 6), (3, 4.1), (6, 2.3), (6.2, 3.2), (8, 2.1), (8.2, 1.9), and (9.8, 1.8). Choices: A: A decreasing line passing approximately through (0.4, 7.2), (4, 5.2), (8, 2.9), and (10, 1.8). B: A horizontal line at approximately y = 2.9. C: A more steeply decreasing line passing approximately through (0.5, 7), (5, 4), (8, 2), and (10, 0.7). D: An increasing line passing approximately through (0.5, 0.7), (5, 4), and (10, 7.7).",
+        "es": "Pregunta 2. En el siguiente gráfico de dispersión se representa un conjunto de datos. ¿Cuál de los gráficos de dispersión de los datos muestra una línea que podría utilizarse para representar mejor la relación de los datos? Las cuatro opciones presentan el mismo plano de coordenadas, con x de 0 a 10 y y de 0 a 8, y los mismos ocho puntos, ubicados aproximadamente en (2, 6), (2.6, 6), (3, 4.1), (6, 3.2), (6, 2.3), (8, 2.1), (8.2, 1.9) y (9.8, 1.8). Opciones: A: Una recta descendente que pasa aproximadamente por (1, 6.8), (4, 5.2), (7, 3.5) y (10, 1.8). La mayoría de los puntos quedan debajo de la recta. B: Una recta horizontal en y ≈ 2.9, desde x = 0 hasta x = 10. C: Una recta descendente que pasa aproximadamente por (1, 6.7), (3, 5.5), (5, 4.2), (7, 2.9) y (10, 0.8). Los puntos quedan distribuidos a ambos lados de la recta. D: Una recta ascendente que pasa aproximadamente por (1, 1.1), (5, 4), (8, 6.2) y (10, 7.7)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 6)",
+          "(2.6, 6)",
+          "(3, 4.1)",
+          "(6, 2.3)",
+          "(6.2, 3.2)",
+          "(8, 2.1)",
+          "(8.2, 1.9)",
+          "(9.8, 1.8)",
+          "(0.4, 7.2)",
+          "(4, 5.2)",
+          "(8, 2.9)",
+          "(10, 1.8)",
+          "y = 2.9",
+          "(0.5, 7)",
+          "(5, 4)",
+          "(8, 2)",
+          "(10, 0.7)",
+          "(0.5, 0.7)",
+          "(10, 7.7)",
+          "A: A decreasing line passing approximately through (0.4, 7.2), (4, 5.2), (8, 2.9), and (10, 1.8)",
+          "B: A horizontal line at approximately y = 2.9",
+          "C: A more steeply decreasing line passing approximately through (0.5, 7), (5, 4), (8, 2), and (10, 0.7)",
+          "D: An increasing line passing approximately through (0.5, 0.7), (5, 4), and (10, 7.7)"
+        ],
+        "es": [
+          "(2, 6)",
+          "(2.6, 6)",
+          "(3, 4.1)",
+          "(6, 3.2)",
+          "(6, 2.3)",
+          "(8, 2.1)",
+          "(8.2, 1.9)",
+          "(9.8, 1.8)",
+          "y ≈ 2.9",
+          "(10, 0.8)",
+          "(10, 7.7)",
+          "A: Una recta descendente que pasa aproximadamente por (1, 6.8), (4, 5.2), (7, 3.5) y (10, 1.8). La mayoría de los puntos quedan debajo de la recta",
+          "B: Una recta horizontal en y ≈ 2.9, desde x = 0 hasta x = 10",
+          "C: Una recta descendente que pasa aproximadamente por (1, 6.7), (3, 5.5), (5, 4.2), (7, 2.9) y (10, 0.8). Los puntos quedan distribuidos a ambos lados de la recta",
+          "D: Una recta ascendente que pasa aproximadamente por (1, 1.1), (5, 4), (8, 6.2) y (10, 7.7)",
+          "(1, 6.8)",
+          "(4, 5.2)",
+          "(7, 3.5)",
+          "(10, 1.8)",
+          "(1, 6.7)",
+          "(3, 5.5)",
+          "(5, 4.2)",
+          "(7, 2.9)",
+          "(1, 1.1)",
+          "(5, 4)",
+          "(8, 6.2)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q4": {
+      "inputHash": "51fbe98b1aa1fe58c0e47f3559d92b0c30bad80690f5953585cd47c475b06fa2",
+      "description": {
+        "en": "Question 4. A vertical plane intersects a right rectangular pyramid. The pyramid has a rectangular base, an apex directly above the base, and triangular lateral faces joining the apex to the four base vertices. A dashed vertical segment from the apex to the base has a right-angle marker where it meets the base. The shaded vertical plane passes through the apex and crosses the rectangular base along a segment connecting two points on opposite sides of the base. The portion common to the plane and pyramid has the apex as its top vertex and the base-intersection segment as its bottom side. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid? Choices: A: parallelogram B: rectangle C: trapezoid D: triangle",
+        "es": "Pregunta 4. Un plano vertical intersecta una pirámide rectangular recta. La pirámide tiene una base rectangular y su vértice está directamente sobre el centro de la base; una línea vertical discontinua desde el vértice hasta la base, marcada con un ángulo recto, representa su altura. El plano vertical sombreado atraviesa el vértice de la pirámide y corta la base a lo largo de un segmento. La región de intersección dentro de la pirámide está limitada por ese segmento de la base y por dos segmentos que van desde sus extremos hasta el vértice. ¿Cuál es la figura bidimensional que se forma a partir de la intersección del plano y la pirámide? Opciones: A: paralelogramo B: rectángulo C: trapecio D: triángulo"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "right rectangular pyramid",
+          "right-angle",
+          "parallelogram",
+          "rectangle",
+          "trapezoid",
+          "triangle",
+          "A: parallelogram",
+          "B: rectangle",
+          "C: trapezoid",
+          "D: triangle"
+        ],
+        "es": [
+          "plano vertical",
+          "base rectangular",
+          "ángulo recto",
+          "paralelogramo",
+          "rectángulo",
+          "trapecio",
+          "triángulo",
+          "A: paralelogramo",
+          "B: rectángulo",
+          "C: trapecio",
+          "D: triángulo"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q7": {
+      "inputHash": "b2314c0fc8cd8179fb31554483861bf87bd040ea3d3549327f7721ae5c3ae269",
+      "description": {
+        "en": "Question 7. The diagram below shows a person flying a kite. They let out 20 feet of string and are holding the end of the string 4 feet above the ground. The kite is directly above a spot on the ground that is 15 feet away from where they are standing. A right triangle is formed by the 20 ft kite string as the hypotenuse, a horizontal dashed leg of 15 ft from the person to the point directly below the kite, and a vertical dashed leg labeled x from the string-holder’s height to the kite. A right-angle marker is at the intersection of the horizontal and vertical dashed legs. The lower part of the vertical distance, from the ground to the horizontal dashed leg, is 4 ft. Which equation can be used to determine the value of x? Choices: A: x² = 20² + 15² B: 24² = 15² + x² C: 20² = 19² + x² D: 20² = 15² + x²",
+        "es": "Pregunta 7. El siguiente diagrama muestra a una persona haciendo volar una cometa. Suelta 20 pies de cordel y sostiene el extremo del cordel a una distancia de 4 pies sobre el suelo. La cometa está directamente encima de un punto del suelo que está a 15 pies del lugar donde está parada la persona. El cordel forma la hipotenusa de un triángulo rectángulo y mide 20 pies. El cateto horizontal, desde la mano de la persona hasta la vertical situada bajo la cometa, mide 15 pies. La mano y el extremo inferior del segmento vertical están ambos a 4 pies sobre el suelo. El cateto vertical desde ese nivel hasta la cometa está etiquetado x; entre este cateto y el segmento horizontal aparece un ángulo recto. ¿Qué ecuación se puede usar para determinar el valor de x? Opciones: A: x² = 20² + 15² B: 24² = 15² + x² C: 20² = 19² + x² D: 20² = 15² + x²"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20 feet",
+          "4 feet",
+          "15 feet",
+          "20 ft",
+          "15 ft",
+          "4 ft",
+          "x² = 20² + 15²",
+          "24² = 15² + x²",
+          "20² = 19² + x²",
+          "20² = 15² + x²",
+          "A: x² = 20² + 15²",
+          "B: 24² = 15² + x²",
+          "C: 20² = 19² + x²",
+          "D: 20² = 15² + x²",
+          "20²",
+          "15²",
+          "24²",
+          "19²"
+        ],
+        "es": [
+          "20 pies",
+          "4 pies",
+          "15 pies",
+          "x",
+          "x² = 20² + 15²",
+          "24² = 15² + x²",
+          "20² = 19² + x²",
+          "20² = 15² + x²",
+          "A: x² = 20² + 15²",
+          "B: 24² = 15² + x²",
+          "C: 20² = 19² + x²",
+          "D: 20² = 15² + x²",
+          "20²",
+          "15²",
+          "24²",
+          "19²"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q8": {
+      "inputHash": "e9d3027beb9fc5392cf8e34b0d9980ee8543a8095bed1bde2729ab25e75390d9",
+      "description": {
+        "en": "Question 8. The graph of a line is shown below. On a coordinate plane, x is the horizontal axis and y is the vertical axis. The labeled x-values run from −4 through 6, and the labeled y-values run from −1 through 5. A line with arrowheads at both ends decreases from left to right. It crosses the y-axis at (0, 3) and the x-axis at (6, 0); it also passes through points such as (2, 2) and (4, 1). What is the equation of the line? Choices: A: y = −2x + 3 B: y = −2x + 6 C: y = −1/2x + 3 D: y = −1/2x + 6",
+        "es": "Pregunta 8. A continuación, se muestra el gráfico de una línea. El plano de coordenadas tiene el eje x horizontal y el eje y vertical. La recta desciende de izquierda a derecha, tiene flechas en ambos extremos, corta el eje y en (0, 3) y corta el eje x en (6, 0). También pasa por puntos de la cuadrícula como (2, 2) y (4, 1). ¿Cuál es la ecuación de la línea? Opciones: A: y = −2x + 3 B: y = −2x + 6 C: y = −(1/2)x + 3 D: y = −(1/2)x + 6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−4",
+          "−1",
+          "(0, 3)",
+          "(6, 0)",
+          "(2, 2)",
+          "(4, 1)",
+          "y = −2x + 3",
+          "y = −2x + 6",
+          "y = −1/2x + 3",
+          "y = −1/2x + 6",
+          "A: y = −2x + 3",
+          "B: y = −2x + 6",
+          "C: y = −1/2x + 3",
+          "D: y = −1/2x + 6",
+          "1/2"
+        ],
+        "es": [
+          "(0, 3)",
+          "(6, 0)",
+          "(2, 2)",
+          "(4, 1)",
+          "y = −2x + 3",
+          "y = −2x + 6",
+          "y = −(1/2)x + 3",
+          "y = −(1/2)x + 6",
+          "A: y = −2x + 3",
+          "B: y = −2x + 6",
+          "C: y = −(1/2)x + 3",
+          "D: y = −(1/2)x + 6",
+          "(1/2)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q12": {
+      "inputHash": "11ced49fbc949289eda597cd0b13ba662f76d1d7c0b23b166d31478e93df4594",
+      "description": {
+        "en": "Question 12. A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball? Choices: A: 1,593 B: 6,371 C: 12,741 D: 50,965",
+        "es": "Pregunta 12. Una pelota de fútbol tiene un diámetro de 23 centímetros. ¿Cuál es el volumen, redondeado al centímetro cúbico más cercano, de la pelota? Opciones: A: 1,593 B: 6,371 C: 12,741 D: 50,965"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "23 centimeters",
+          "1,593",
+          "6,371",
+          "12,741",
+          "50,965",
+          "A: 1,593",
+          "B: 6,371",
+          "C: 12,741",
+          "D: 50,965"
+        ],
+        "es": [
+          "23 centímetros",
+          "centímetro cúbico",
+          "1,593",
+          "6,371",
+          "12,741",
+          "50,965",
+          "A: 1,593",
+          "B: 6,371",
+          "C: 12,741",
+          "D: 50,965"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q14": {
+      "inputHash": "940d22715014266d310b2ee9b44b2c842b527bfed53c36fcddf3a36b4261855c",
+      "description": {
+        "en": "Question 14. An equation is shown below: −6(x − 4) + 5x = −9x. Which value of x makes the equation true? Choices: A: −3 B: −2.4 C: 0.5 D: 3",
+        "es": "Pregunta 14. A continuación, se muestra una ecuación: −6(x − 4) + 5x = −9x. ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: −3 B: −2.4 C: 0.5 D: 3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−6(x − 4) + 5x = −9x",
+          "−3",
+          "−2.4",
+          "0.5",
+          "3",
+          "A: −3",
+          "B: −2.4",
+          "C: 0.5",
+          "D: 3",
+          "(x − 4)"
+        ],
+        "es": [
+          "−6(x − 4) + 5x = −9x",
+          "−3",
+          "−2.4",
+          "0.5",
+          "3",
+          "A: −3",
+          "B: −2.4",
+          "C: 0.5",
+          "D: 3",
+          "(x − 4)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q15": {
+      "inputHash": "72cd2eb3f020414f521c5e3ea0472b941c96bea91d003c77790030f3c524b7e7",
+      "description": {
+        "en": "Question 15. A set of numbers is shown below: {1/3, 1.13̅, √5, 5/2}, where the bar in 1.13̅ is over the digit 3 only. What number would need to be removed from the set so that the set contains only rational numbers? Choices: A: 1/3 B: 1.13̅ C: √5 D: 5/2",
+        "es": "Pregunta 15. A continuación, se muestra un conjunto de números: {1/3, 1.13̅, √5, 5/2}. En el segundo número, 1.13̅, la barra está únicamente sobre el dígito 3, por lo que el 3 se repite. ¿Qué número tendría que quitarse del conjunto para que este contenga solo números racionales? Opciones: A: 1/3 B: 1.13̅ C: √5 D: 5/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "{1/3, 1.13̅, √5, 5/2}",
+          "1/3",
+          "1.13̅",
+          "√5",
+          "5/2",
+          "A: 1/3",
+          "B: 1.13̅",
+          "C: √5",
+          "D: 5/2"
+        ],
+        "es": [
+          "{1/3, 1.13̅, √5, 5/2}",
+          "1/3",
+          "1.13̅",
+          "√5",
+          "5/2",
+          "A: 1/3",
+          "B: 1.13̅",
+          "C: √5",
+          "D: 5/2"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q16": {
+      "inputHash": "1bec3e3db57317918ba03f62d80591d291c1ec4149475685f2bb4ce5b6376028",
+      "description": {
+        "en": "Question 16. Which expression is equivalent to 3⁵? Choices: A: (3⁶ · 3⁴)/3² B: (3²)² · 3 C: (3³)² D: 3¹⁵/3³",
+        "es": "Pregunta 16. ¿Qué expresión es equivalente a 3⁵? Opciones: A: (3⁶ · 3⁴)/3² B: (3²)² · 3 C: (3³)² D: 3¹⁵/3³"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3⁵",
+          "(3⁶ · 3⁴)/3²",
+          "(3²)² · 3",
+          "(3³)²",
+          "3¹⁵/3³",
+          "A: (3⁶ · 3⁴)/3²",
+          "B: (3²)² · 3",
+          "C: (3³)²",
+          "D: 3¹⁵/3³",
+          "(3⁶ · 3⁴)",
+          "3²",
+          "(3²)",
+          "(3³)",
+          "3¹⁵",
+          "3³"
+        ],
+        "es": [
+          "3⁵",
+          "(3⁶ · 3⁴)/3²",
+          "(3²)² · 3",
+          "(3³)²",
+          "3¹⁵/3³",
+          "A: (3⁶ · 3⁴)/3²",
+          "B: (3²)² · 3",
+          "C: (3³)²",
+          "D: 3¹⁵/3³",
+          "(3⁶ · 3⁴)",
+          "3²",
+          "(3²)",
+          "(3³)",
+          "3¹⁵",
+          "3³"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q17": {
+      "inputHash": "a353ac5207eac958ea2ea364c5ce72c89019910676a4e5b84d190585a421d87d",
+      "description": {
+        "en": "Question 17. Rectangle JKLM is graphed on a coordinate plane. Its vertices are J(1, 4), K(1, 1), L(3, 1), and M(3, 4). The rectangle will be translated 5 units right and 2 units up to produce rectangle J′K′L′M′. Thus, its translated vertices are J′(6, 6), K′(6, 3), L′(8, 3), and M′(8, 6). Which statement about the line segments of rectangle J′K′L′M′ is true? Choices: A: J′K′ ∥ J′M′. B: J′K′ ∥ L′M′. C: K′L′ ∥ J′K′. D: K′L′ ∥ L′M′.",
+        "es": "Pregunta 17. El rectángulo JKLM se representa en un plano de coordenadas. Sus vértices son J(1, 4), K(1, 1), L(3, 1) y M(3, 4). El rectángulo JKLM se trasladará 5 unidades hacia la derecha y 2 unidades hacia arriba para crear el rectángulo J′K′L′M′. Por lo tanto, los vértices trasladados son J′(6, 6), K′(6, 3), L′(8, 3) y M′(8, 6). ¿Qué afirmación acerca de los segmentos de línea del rectángulo J′K′L′M′ es verdadera? Opciones: A: El segmento J′K′ es paralelo al segmento J′M′. B: El segmento J′K′ es paralelo al segmento L′M′. C: El segmento K′L′ es paralelo al segmento J′K′. D: El segmento K′L′ es paralelo al segmento L′M′."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "J(1, 4)",
+          "K(1, 1)",
+          "L(3, 1)",
+          "M(3, 4)",
+          "5 units right",
+          "2 units up",
+          "J′(6, 6)",
+          "K′(6, 3)",
+          "L′(8, 3)",
+          "M′(8, 6)",
+          "J′K′ ∥ J′M′",
+          "J′K′ ∥ L′M′",
+          "K′L′ ∥ J′K′",
+          "K′L′ ∥ L′M′",
+          "A: J′K′ ∥ J′M′",
+          "B: J′K′ ∥ L′M′",
+          "C: K′L′ ∥ J′K′",
+          "D: K′L′ ∥ L′M′",
+          "(1, 4)",
+          "(1, 1)",
+          "(3, 1)",
+          "(3, 4)",
+          "(6, 6)",
+          "(6, 3)",
+          "(8, 3)",
+          "(8, 6)"
+        ],
+        "es": [
+          "J(1, 4)",
+          "K(1, 1)",
+          "L(3, 1)",
+          "M(3, 4)",
+          "5 unidades",
+          "2 unidades",
+          "J′(6, 6)",
+          "K′(6, 3)",
+          "L′(8, 3)",
+          "M′(8, 6)",
+          "J′K′",
+          "J′M′",
+          "L′M′",
+          "K′L′",
+          "A: El segmento J′K′ es paralelo al segmento J′M′",
+          "B: El segmento J′K′ es paralelo al segmento L′M′",
+          "C: El segmento K′L′ es paralelo al segmento J′K′",
+          "D: El segmento K′L′ es paralelo al segmento L′M′",
+          "(1, 4)",
+          "(1, 1)",
+          "(3, 1)",
+          "(3, 4)",
+          "(6, 6)",
+          "(6, 3)",
+          "(8, 3)",
+          "(8, 6)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q19": {
+      "inputHash": "a0ee98a0aeb1e2110bec3dc9f4974b723b463ee789b306e5b820a396b34625a7",
+      "description": {
+        "en": "Question 19. Figure ABCD is drawn on a coordinate plane with vertices A(−3, 4), B(−3, 1), C(−1, 2), and D(−1, 3), connected in that order. The figure will be dilated by a scale factor of 2, with the center of dilation at the origin. The resulting image will be figure A′B′C′D′. What will be the coordinates of vertex A′? Choices: A: (−5, 6). B: (−3, 6). C: (−3, 8). D: (−6, 8).",
+        "es": "Pregunta 19. La figura ABCD se muestra en un plano de coordenadas. Sus vértices son A(−3, 4), B(−3, 1), C(−1, 2) y D(−1, 3), unidos consecutivamente para formar el cuadrilátero ABCD. Se hará la dilatación de la figura con un factor de escala de 2, y el centro de la dilatación estará en el origen. La imagen resultante será la figura A′B′C′D′. ¿Cuáles serán las coordenadas del vértice A′? Opciones: A: (−5, 6) B: (−3, 6) C: (−3, 8) D: (−6, 8)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(−3, 4)",
+          "B(−3, 1)",
+          "C(−1, 2)",
+          "D(−1, 3)",
+          "scale factor of 2",
+          "(−5, 6)",
+          "(−3, 6)",
+          "(−3, 8)",
+          "(−6, 8)",
+          "A: (−5, 6)",
+          "B: (−3, 6)",
+          "C: (−3, 8)",
+          "D: (−6, 8)",
+          "(−3, 4)",
+          "(−3, 1)",
+          "(−1, 2)",
+          "(−1, 3)"
+        ],
+        "es": [
+          "A(−3, 4)",
+          "B(−3, 1)",
+          "C(−1, 2)",
+          "D(−1, 3)",
+          "factor de escala de 2",
+          "(−5, 6)",
+          "(−3, 6)",
+          "(−3, 8)",
+          "(−6, 8)",
+          "A: (−5, 6)",
+          "B: (−3, 6)",
+          "C: (−3, 8)",
+          "D: (−6, 8)",
+          "(−3, 4)",
+          "(−3, 1)",
+          "(−1, 2)",
+          "(−1, 3)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q27": {
+      "inputHash": "fb1876a57d7c63f1732c54332d585b811df27d5d4ba23df4330d05273f6c8e85",
+      "description": {
+        "en": "Question 27. A diagram of a right cone has a dashed vertical height from the cone’s vertex to the center of its circular base. The height is 8 yd and meets the base at a right angle. A dashed horizontal segment extends across the entire circular base through its center and is labeled 6 yd, so 6 yd is the base’s diameter. What is the volume, in cubic yards, of the cone? Choices: A: 14π. B: 24π. C: 72π. D: 96π.",
+        "es": "Pregunta 27. A continuación, se muestra el diagrama de un cono recto. Un segmento vertical discontinuo va desde el vértice del cono hasta el centro de su base circular y representa una altura de 8 yardas; un símbolo de ángulo recto indica que esta altura es perpendicular a la base. Un segmento horizontal discontinuo atraviesa toda la base circular de un extremo al otro, pasa por el pie de la altura y representa un diámetro de 6 yardas. ¿Cuál es el volumen, en yardas cúbicas, del cono? Opciones: A: 14π B: 24π C: 72π D: 96π"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 yd",
+          "6 yd",
+          "14π",
+          "24π",
+          "72π",
+          "96π",
+          "A: 14π",
+          "B: 24π",
+          "C: 72π",
+          "D: 96π"
+        ],
+        "es": [
+          "8 yardas",
+          "6 yardas",
+          "14π",
+          "24π",
+          "72π",
+          "96π",
+          "A: 14π",
+          "B: 24π",
+          "C: 72π",
+          "D: 96π"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q28": {
+      "inputHash": "2b9a3103d6a051ccdbd7240aee4b8ef80390e80514f39a86bddb70b8df3c6e86",
+      "description": {
+        "en": "Question 28. A transformation maps △ABC to △A′B′C′. If △A′B′C′ is similar but not congruent to △ABC, which transformation occurred? Choices: A: a rotation about the origin. B: a reflection over the y-axis. C: a dilation with a scale factor not equal to 1. D: a translation of 1 unit in both the x and y directions.",
+        "es": "Pregunta 28. Una transformación mapea △ABC en △A′B′C′. Si △A′B′C′ es similar, pero no congruente con △ABC, ¿qué transformación surgió? Opciones: A: una rotación alrededor del origen B: una reflexión sobre el eje y C: una dilatación con un factor de escala que no es igual a 1 D: una traslación de 1 unidad en ambas direcciones x e y"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "△ABC",
+          "△A′B′C′",
+          "not congruent",
+          "scale factor not equal to 1",
+          "1 unit",
+          "x and y directions",
+          "A: a rotation about the origin",
+          "B: a reflection over the y-axis",
+          "C: a dilation with a scale factor not equal to 1",
+          "D: a translation of 1 unit in both the x and y directions"
+        ],
+        "es": [
+          "△ABC",
+          "△A′B′C′",
+          "no congruente",
+          "factor de escala que no es igual a 1",
+          "1 unidad",
+          "x",
+          "y",
+          "A: una rotación alrededor del origen",
+          "B: una reflexión sobre el eje y",
+          "C: una dilatación con un factor de escala que no es igual a 1",
+          "D: una traslación de 1 unidad en ambas direcciones x e y"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q30": {
+      "inputHash": "f8b7f49ab9d741540d0b276e16831f3f5c4945d5bcc612996c9e87761a00d1b6",
+      "description": {
+        "en": "Question 30. An equation is given: 8 − 12x = h(3x − 4). For which value of h will this equation have no solutions? Choices: A: −4. B: −2. C: 3. D: 4.",
+        "es": "Pregunta 30. A continuación, se muestra una ecuación: 8 − 12x = h(3x − 4). ¿Para qué valor de h esta ecuación no tendrá soluciones? Opciones: A: −4 B: −2 C: 3 D: 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 − 12x = h(3x − 4)",
+          "−4",
+          "−2",
+          "3",
+          "4",
+          "A: −4",
+          "B: −2",
+          "C: 3",
+          "D: 4",
+          "(3x − 4)"
+        ],
+        "es": [
+          "8 − 12x = h(3x − 4)",
+          "−4",
+          "−2",
+          "3",
+          "4",
+          "A: −4",
+          "B: −2",
+          "C: 3",
+          "D: 4",
+          "(3x − 4)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q31": {
+      "inputHash": "67a1ff2f92306a7c164461015d7ef942bafcb6f5e27a102c6f7f05a70ad351ee",
+      "description": {
+        "en": "Question 31. Three lines intersect at one point: a horizontal line with arrows pointing left and right, a diagonal line running from upper left to lower right, and another diagonal line running from lower left to upper right. The angle above the horizontal ray pointing left and below the diagonal ray pointing upper left is labeled (6x − 23)°. The vertically opposite angle below the horizontal ray pointing right and above the diagonal ray pointing lower right is labeled (4x + 11)°. What is the value of x? Choices: A: 6. B: 10.2. C: 17. D: 19.2.",
+        "es": "Pregunta 31. El diagrama muestra tres líneas que se intersecan en un mismo punto: una línea horizontal y dos líneas diagonales que forman una X. El ángulo situado arriba de la línea horizontal y a la izquierda del punto de intersección, entre el rayo horizontal dirigido a la izquierda y el rayo diagonal dirigido hacia arriba a la izquierda, mide (6x − 23)°. El ángulo verticalmente opuesto, situado debajo de la línea horizontal y a la derecha del punto de intersección, entre el rayo horizontal dirigido a la derecha y el rayo diagonal dirigido hacia abajo a la derecha, mide (4x + 11)°. ¿Cuál es el valor de x? Opciones: A: 6 B: 10.2 C: 17 D: 19.2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(6x − 23)°",
+          "(4x + 11)°",
+          "6",
+          "10.2",
+          "17",
+          "19.2",
+          "A: 6",
+          "B: 10.2",
+          "C: 17",
+          "D: 19.2",
+          "(6x − 23)",
+          "(4x + 11)"
+        ],
+        "es": [
+          "(6x − 23)°",
+          "(4x + 11)°",
+          "6",
+          "10.2",
+          "17",
+          "19.2",
+          "A: 6",
+          "B: 10.2",
+          "C: 17",
+          "D: 19.2",
+          "(6x − 23)",
+          "(4x + 11)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q32": {
+      "inputHash": "6d9f4741fc542cff16fe05409f8481206eb593eb02296cc23cbc623387d76d82",
+      "description": {
+        "en": "Question 32. Alex and Taylor are comparing the costs of their gym memberships. The total cost, y, in dollars, of Alex’s gym membership for x months is represented by the equation y = 15x. The total cost of Taylor’s gym membership is represented by a graph titled “TAYLOR’S GYM MEMBERSHIP.” The horizontal x-axis is Number of Months, marked from 0 to 10 in increments of 1. The vertical y-axis is Cost (dollars), marked from 0 to 250 in increments of 25. A straight ray begins at (0, 0), passes through points such as (1, 25), (2, 50), (4, 100), (6, 150), and (8, 200), and continues through (10, 250). Which statement identifies the gym membership with the lower cost per month? Choices: A: Alex’s gym membership at a cost of $10.00 per month. B: Alex’s gym membership at a cost of $15.00 per month. C: Taylor’s gym membership at a cost of $15.00 per month. D: Taylor’s gym membership at a cost of $25.00 per month.",
+        "es": "Pregunta 32. Alex y Taylor están comparando los costos de su membresía del gimnasio. El costo total, y, en dólares, de la membresía del gimnasio de Alex por x meses se representa mediante la ecuación y = 15x. El costo total de membresía del gimnasio de Taylor se representa mediante una gráfica titulada “MEMBRESÍA DE TAYLOR DEL GIMNASIO”. El eje horizontal, x, representa la cantidad de meses y está marcado de 0 a 10 en incrementos de 1. El eje vertical, y, representa el costo en dólares y está marcado de 25 a 250 en incrementos de 25. Una recta ascendente pasa por el origen y por puntos como (1, 25), (2, 50), (3, 75), (4, 100), (5, 125), (6, 150), (7, 175), (8, 200), (9, 225) y (10, 250). ¿Qué afirmación identifica la membresía con el menor costo por mes? Opciones: A: La membresía del gimnasio de Alex a un costo de $10.00 por mes B: La membresía del gimnasio de Alex a un costo de $15.00 por mes C: La membresía del gimnasio de Taylor a un costo de $15.00 por mes D: La membresía del gimnasio de Taylor a un costo de $25.00 por mes"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 15x",
+          "0 to 10",
+          "increments of 1",
+          "0 to 250",
+          "increments of 25",
+          "(0, 0)",
+          "(1, 25)",
+          "(2, 50)",
+          "(4, 100)",
+          "(6, 150)",
+          "(8, 200)",
+          "(10, 250)",
+          "$10.00",
+          "$15.00",
+          "$25.00",
+          "A: Alex’s gym membership at a cost of $10.00 per month",
+          "B: Alex’s gym membership at a cost of $15.00 per month",
+          "C: Taylor’s gym membership at a cost of $15.00 per month",
+          "D: Taylor’s gym membership at a cost of $25.00 per month"
+        ],
+        "es": [
+          "y = 15x",
+          "(1, 25)",
+          "(2, 50)",
+          "(3, 75)",
+          "(4, 100)",
+          "(5, 125)",
+          "(6, 150)",
+          "(7, 175)",
+          "(8, 200)",
+          "(9, 225)",
+          "(10, 250)",
+          "$10.00",
+          "$15.00",
+          "$25.00",
+          "A: La membresía del gimnasio de Alex a un costo de $10.00 por mes",
+          "B: La membresía del gimnasio de Alex a un costo de $15.00 por mes",
+          "C: La membresía del gimnasio de Taylor a un costo de $15.00 por mes",
+          "D: La membresía del gimnasio de Taylor a un costo de $25.00 por mes"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q33": {
+      "inputHash": "ba0495728687881f922b698283eb90b38e787b09ecfaf53ac03103672a80460f",
+      "description": {
+        "en": "Question 33. What is the value of the expression 2⁵ · 10⁰ · 3⁻²? Choices: A: −288. B: −90. C: 0/9. D: 32/9.",
+        "es": "Pregunta 33. ¿Cuál es el valor de la expresión 2⁵ · 10⁰ · 3⁻²? Opciones: A: −288 B: −90 C: 0/9 D: 32/9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2⁵ · 10⁰ · 3⁻²",
+          "−288",
+          "−90",
+          "0/9",
+          "32/9",
+          "A: −288",
+          "B: −90",
+          "C: 0/9",
+          "D: 32/9",
+          "2⁵",
+          "10⁰",
+          "3⁻²"
+        ],
+        "es": [
+          "2⁵ · 10⁰ · 3⁻²",
+          "−288",
+          "−90",
+          "0/9",
+          "32/9",
+          "A: −288",
+          "B: −90",
+          "C: 0/9",
+          "D: 32/9",
+          "2⁵",
+          "10⁰",
+          "3⁻²"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q34": {
+      "inputHash": "a79c2638ac6752a5363098dd802631c7e330f2c9a12cb683e0a702f064e7d722",
+      "description": {
+        "en": "Question 34. Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS. On a coordinate plane, trapezoid ABCD has vertices A(−6, −1), B(−3, −1), C(−2, −3), and D(−7, −3), connected in that order. Its horizontal bases are AB and DC. Trapezoid PQRS has vertices P(6, 1), Q(3, 1), R(2, 3), and S(7, 3), connected in that order. Its horizontal bases are QP and RS. Which statement about the trapezoids is true? Choices: A: Angle A is congruent to angle S. B: Angle C is congruent to angle Q. C: Side BC is congruent to side QR. D: Side DC is congruent to side RQ.",
+        "es": "Pregunta 34. El trapezoide ABCD se rotó 180° alrededor del origen para crear el trapezoide PQRS, como se muestra a continuación. En un plano de coordenadas con ejes x e y marcados en unidades enteras, el trapezoide ABCD tiene vértices A(−6, −1), B(−3, −1), C(−2, −3) y D(−7, −3). Sus bases horizontales son AB y DC. El trapezoide PQRS tiene vértices P(6, 1), Q(3, 1), R(2, 3) y S(7, 3). Sus bases horizontales son PQ y RS. La rotación de 180° relaciona A con P, B con Q, C con R y D con S. ¿Qué afirmación acerca de los trapezoides es verdadera? Opciones: A: El ángulo A es congruente con el ángulo S. B: El ángulo C es congruente con el ángulo Q. C: El lado BC es congruente con el lado QR. D: El lado DC es congruente con el lado RQ."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "180°",
+          "A(−6, −1)",
+          "B(−3, −1)",
+          "C(−2, −3)",
+          "D(−7, −3)",
+          "P(6, 1)",
+          "Q(3, 1)",
+          "R(2, 3)",
+          "S(7, 3)",
+          "AB",
+          "DC",
+          "QP",
+          "RS",
+          "BC",
+          "QR",
+          "RQ",
+          "A: Angle A is congruent to angle S",
+          "B: Angle C is congruent to angle Q",
+          "C: Side BC is congruent to side QR",
+          "D: Side DC is congruent to side RQ",
+          "(−6, −1)",
+          "(−3, −1)",
+          "(−2, −3)",
+          "(−7, −3)",
+          "(6, 1)",
+          "(3, 1)",
+          "(2, 3)",
+          "(7, 3)"
+        ],
+        "es": [
+          "180°",
+          "A(−6, −1)",
+          "B(−3, −1)",
+          "C(−2, −3)",
+          "D(−7, −3)",
+          "P(6, 1)",
+          "Q(3, 1)",
+          "R(2, 3)",
+          "S(7, 3)",
+          "A con P",
+          "B con Q",
+          "C con R",
+          "D con S",
+          "ángulo A",
+          "ángulo S",
+          "ángulo C",
+          "ángulo Q",
+          "lado BC",
+          "lado QR",
+          "lado DC",
+          "lado RQ",
+          "A: El ángulo A es congruente con el ángulo S",
+          "B: El ángulo C es congruente con el ángulo Q",
+          "C: El lado BC es congruente con el lado QR",
+          "D: El lado DC es congruente con el lado RQ",
+          "(−6, −1)",
+          "(−3, −1)",
+          "(−2, −3)",
+          "(−7, −3)",
+          "(6, 1)",
+          "(3, 1)",
+          "(2, 3)",
+          "(7, 3)"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q35": {
+      "inputHash": "8ff27350ebb5e3a4d561ddde52580b279cf9d1dabdb86ddc11ae61a63416544e",
+      "description": {
+        "en": "Question 35. Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be 2/3, and Hannah calculated the slope to be 4/6. Their work is represented on two coordinate planes. In both planes, the line rises from left to right, crosses the x-axis between −2 and −1, and crosses the y-axis at 1. Brayden’s work shows a vertical rise from (0, 1) to (0, 3), labeled 2, followed by a horizontal run from (0, 3) to (3, 3), labeled 3. Hannah’s work shows a horizontal run from (−3, −1) to (3, −1), labeled 6, followed by a vertical rise from (3, −1) to (3, 3), labeled 4. Which statement is true? Choices: A: Only Brayden calculated the slope correctly. B: Only Hannah calculated the slope correctly. C: Both Brayden and Hannah calculated the slope correctly. D: Neither Brayden nor Hannah calculated the slope correctly.",
+        "es": "Pregunta 35. Se les pidió a Brayden y Hannah que calcularan la pendiente de la misma línea. Brayden calculó que la pendiente era 2/3 y Hannah calculó que la pendiente era 4/6. A continuación, se muestra su trabajo. En ambos planos, la recta asciende de izquierda a derecha, pasa por (0, 1) y por (3, 3), y cruza el eje x entre −2 y −1. Trabajo de Brayden: dibuja un desplazamiento vertical de 2 unidades desde (0, 1) hasta (0, 3), seguido de un desplazamiento horizontal de 3 unidades hacia la derecha, desde (0, 3) hasta (3, 3). Trabajo de Hannah: dibuja un desplazamiento horizontal de 6 unidades hacia la derecha, desde (−3, −1) hasta (3, −1), seguido de un desplazamiento vertical de 4 unidades hacia arriba, desde (3, −1) hasta (3, 3). ¿Qué afirmación es verdadera? Opciones: A: Solo Brayden calculó correctamente la pendiente. B: Solo Hannah calculó correctamente la pendiente. C: Tanto Brayden como Hannah calcularon correctamente la pendiente. D: Ni Brayden ni Hannah calcularon correctamente la pendiente."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/3",
+          "4/6",
+          "−2",
+          "−1",
+          "1",
+          "(0, 1)",
+          "(0, 3)",
+          "(3, 3)",
+          "2",
+          "3",
+          "(−3, −1)",
+          "(3, −1)",
+          "6",
+          "4",
+          "A: Only Brayden calculated the slope correctly",
+          "B: Only Hannah calculated the slope correctly",
+          "C: Both Brayden and Hannah calculated the slope correctly",
+          "D: Neither Brayden nor Hannah calculated the slope correctly"
+        ],
+        "es": [
+          "2/3",
+          "4/6",
+          "(0, 1)",
+          "(3, 3)",
+          "−2",
+          "−1",
+          "2 unidades",
+          "(0, 3)",
+          "3 unidades",
+          "6 unidades",
+          "(−3, −1)",
+          "(3, −1)",
+          "4 unidades",
+          "A: Solo Brayden calculó correctamente la pendiente",
+          "B: Solo Hannah calculó correctamente la pendiente",
+          "C: Tanto Brayden como Hannah calcularon correctamente la pendiente",
+          "D: Ni Brayden ni Hannah calcularon correctamente la pendiente"
+        ]
+      },
+      "verbatimEvaluativeChoices": true
+    },
+    "nysed-2025-g8-mc-q36": {
+      "inputHash": "63d9821d9f451d060cde3a1ed0d5c4962ee52fbe45b64a280c93c4a42a4f3d6f",
+      "description": {
+        "en": "Question 36. The table of values represents a relation. The columns are labeled x and y. The five rows are: x = −2, y = −12; x = −1, y = −7; x = 0, y = −2; x = 1, y = 3; and x = 2, y = 8. Which statement describes the relation? Choices: A: The table represents a function because each input has only one output. B: The table represents a function because each output has only one input. C: The table does not represent a function because each input has only one output. D: The table does not represent a function because each output has only one input.",
+        "es": "Pregunta 36. La siguiente tabla de valores representa una relación. La tabla tiene dos columnas, x e y. Sus pares ordenados son (−2, −12), (−1, −7), (0, −2), (1, 3) y (2, 8). ¿Qué afirmación describe la relación? Opciones: A: La tabla representa una función porque cada valor de entrada tiene solo un valor de salida. B: La tabla representa una función porque cada valor de salida tiene solo un valor de entrada. C: La tabla no representa una función porque cada valor de entrada tiene solo un valor de salida. D: La tabla no representa una función porque cada valor de salida tiene solo un valor de entrada."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x = −2, y = −12",
+          "x = −1, y = −7",
+          "x = 0, y = −2",
+          "x = 1, y = 3",
+          "x = 2, y = 8",
+          "A: The table represents a function because each input has only one output",
+          "B: The table represents a function because each output has only one input",
+          "C: The table does not represent a function because each input has only one output",
+          "D: The table does not represent a function because each output has only one input"
+        ],
+        "es": [
+          "x",
+          "y",
+          "(−2, −12)",
+          "(−1, −7)",
+          "(0, −2)",
+          "(1, 3)",
+          "(2, 8)",
+          "cada valor de entrada",
+          "solo un valor de salida",
+          "cada valor de salida",
+          "solo un valor de entrada",
+          "A: La tabla representa una función porque cada valor de entrada tiene solo un valor de salida",
+          "B: La tabla representa una función porque cada valor de salida tiene solo un valor de entrada",
+          "C: La tabla no representa una función porque cada valor de entrada tiene solo un valor de salida",
+          "D: La tabla no representa una función porque cada valor de salida tiene solo un valor de entrada"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q37": {
+      "inputHash": "4dfd485c0bb84575948a02ba315f441af44e6fed51f276151c608b94686149ae",
+      "description": {
+        "en": "Question 37. On which number line does point P represent the value of the expression √4 + √10? Each number line has integer tick marks labeled from −1 through 8. Choices: A: Point P is between 2 and 3, closer to 3. B: Point P is between 3 and 4, closer to 4. C: Point P is just to the right of 5, between 5 and 6. D: Point P is exactly at 7.",
+        "es": "Pregunta 37. ¿En qué recta numérica representa el punto P el valor de la expresión √4 + √10? Cada opción contiene una recta numérica horizontal orientada en ambas direcciones, con marcas igualmente espaciadas y rotuladas desde −1 hasta 8. Opciones: A: El punto P está entre 2 y 3, más cerca de 3. B: El punto P está entre 3 y 4, más cerca de 4. C: El punto P está apenas a la derecha de 5, entre 5 y 6 y mucho más cerca de 5. D: El punto P está exactamente en 7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "√4 + √10",
+          "−1",
+          "8",
+          "between 2 and 3",
+          "between 3 and 4",
+          "between 5 and 6",
+          "exactly at 7",
+          "A: Point P is between 2 and 3, closer to 3",
+          "B: Point P is between 3 and 4, closer to 4",
+          "C: Point P is just to the right of 5, between 5 and 6",
+          "D: Point P is exactly at 7",
+          "√4",
+          "√10"
+        ],
+        "es": [
+          "√4 + √10",
+          "−1",
+          "8",
+          "entre 2 y 3",
+          "entre 3 y 4",
+          "entre 5 y 6",
+          "7",
+          "A: El punto P está entre 2 y 3, más cerca de 3",
+          "B: El punto P está entre 3 y 4, más cerca de 4",
+          "C: El punto P está apenas a la derecha de 5, entre 5 y 6 y mucho más cerca de 5",
+          "D: El punto P está exactamente en 7",
+          "√4",
+          "√10"
+        ]
+      }
+    },
+    "nysed-2025-g8-mc-q38": {
+      "inputHash": "bbb64d9d1e7fb14d48f9103f2be5d947eb0bb87721d69dc6f541a92469d3516e",
+      "description": {
+        "en": "Question 38. A scatter plot has an x-axis and a y-axis, each numbered from 0 to 60 in increments of 5. The 31 plotted points, read approximately from the grid, are (6, 6), (8, 11), (8, 16), (9, 25), (11, 21), (13, 16), (14, 18), (15, 22), (16, 28), (17, 27), (18, 17), (22, 22), (23, 37), (26, 32), (27, 35), (28, 33), (30, 34), (30, 39), (34, 37), (37, 33), (37, 42), (37, 48), (39, 33), (40, 46), (41, 48), (43, 37), (43, 47), (46, 46), (48, 50), (51, 48), and (51, 53). Overall, the points form an upward trend from the lower left toward the upper right and cluster around a straight-line pattern. Which statement best describes the association between x and y? Choices: A: There is a positive, linear association. B: There is a negative, linear association. C: There is a positive, nonlinear association. D: There is a negative, nonlinear association.",
+        "es": "Pregunta 38. A continuación, se muestra un diagrama de dispersión. El eje horizontal está rotulado x y el eje vertical está rotulado y. Ambos ejes comienzan en 0 y tienen una escala de 5 unidades; el plano abarca valores de 0 a 60 en cada eje. Los puntos forman una nube que, en general, asciende de izquierda a derecha y se distribuye aproximadamente alrededor de una trayectoria recta: para valores pequeños de x, los valores de y son principalmente pequeños, y para valores grandes de x, los valores de y son principalmente grandes. No se observa una curvatura marcada. ¿Qué afirmación describe mejor la asociación entre x y y? Opciones: A: Hay una asociación lineal positiva. B: Hay una asociación lineal negativa. C: Hay una asociación no lineal positiva. D: Hay una asociación no lineal negativa."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 60",
+          "increments of 5",
+          "31",
+          "(6, 6)",
+          "(8, 11)",
+          "(8, 16)",
+          "(9, 25)",
+          "(11, 21)",
+          "(13, 16)",
+          "(14, 18)",
+          "(15, 22)",
+          "(16, 28)",
+          "(17, 27)",
+          "(18, 17)",
+          "(22, 22)",
+          "(23, 37)",
+          "(26, 32)",
+          "(27, 35)",
+          "(28, 33)",
+          "(30, 34)",
+          "(30, 39)",
+          "(34, 37)",
+          "(37, 33)",
+          "(37, 42)",
+          "(37, 48)",
+          "(39, 33)",
+          "(40, 46)",
+          "(41, 48)",
+          "(43, 37)",
+          "(43, 47)",
+          "(46, 46)",
+          "(48, 50)",
+          "(51, 48)",
+          "(51, 53)",
+          "positive, linear",
+          "negative, linear",
+          "positive, nonlinear",
+          "negative, nonlinear",
+          "A: There is a positive, linear association",
+          "B: There is a negative, linear association",
+          "C: There is a positive, nonlinear association",
+          "D: There is a negative, nonlinear association"
+        ],
+        "es": [
+          "x",
+          "y",
+          "0",
+          "5 unidades",
+          "60",
+          "asociación lineal positiva",
+          "asociación lineal negativa",
+          "asociación no lineal positiva",
+          "asociación no lineal negativa",
+          "A: Hay una asociación lineal positiva",
+          "B: Hay una asociación lineal negativa",
+          "C: Hay una asociación no lineal positiva",
+          "D: Hay una asociación no lineal negativa"
+        ]
+      }
+    }
+  }
+}

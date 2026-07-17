@@ -27,6 +27,7 @@ type RawQuestion = {
   secondaryStandards?: string[]
   domain: MathDomainCode
   correct: MathExamChoice
+  choiceLabels?: MathExamChoice[]
   explanation: {
     text: LocalizedText
     source: MathExplanationSource
@@ -65,9 +66,20 @@ const DOMAIN_CODES = new Set<MathDomainCode>([
   'OA', 'NBT', 'NF', 'MD', 'G', 'RP', 'NS', 'EE', 'F', 'SP',
 ])
 const RELEASE_YEARS = new Set([2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
+const DEFAULT_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C', 'D']
+const THREE_CHOICE_QUESTION_ID = 'nysed-2016-g4-mc-q24'
+const THREE_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C']
+const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-2013-g4-mc-q8',
+  'nysed-2013-g6-mc-q14',
+  'nysed-2014-g4-mc-q29',
+  'nysed-2014-g5-mc-q44',
+  'nysed-2014-g7-mc-q1',
+])
 const SPANISH_RELEASE_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const STANDARD_PATTERN = /^(CCSS|NGLS)\.Math\.Content\.(?:NY-)?([3-8])\.(OA|NBT|NF|MD|G|RP|NS|EE|F|SP)\.(?:[A-Z]\.)?\d+[a-z]?$/
-const ANSWER_METADATA_PATTERN = /(?:\b(?:Key|Clave)\s*:\s*[A-D]\b|\bAnswer\s+Key\s*:|\b(?:Primary|Aligned)\s+CCLS|\bMeasured(?:\s+CCLS)?\s*:?\s*(?:NY-)?[3-8]\.|\bMap\s+to\s+the\s+Standards|\bScoring\s+Rubric|\bSample\s+Response|\bR[uú]brica\s+de\s+puntuaci[oó]n|\bRespuesta\s+de\s+muestra)/i
+const ANSWER_METADATA_PATTERN = /(?:\b(?:Key|Clave)\s*:\s*[A-D]\b|\bAnswer\s+Key\s*:|\b(?:the\s+)?answer\s+is\s+[A-D]\b|\b(?:la\s+)?respuesta\s+es\s+[A-D]\b|\b(?:choice|option)\s+[A-D]\s+is\s+(?:the\s+)?(?:correct|right|best|accurate)\b|\b(?:the\s+)?(?:right|best|accurate)\s+(?:answer|response|choice)\s+is\s+[A-D]\b|\b(?:la\s+)?opci[oó]n\s+[A-D]\s+es\s+(?:la\s+)?(?:correcta|mejor|adecuada)\b|\b(?:la\s+)?(?:mejor|adecuada)\s+respuesta\s+es\s+[A-D]\b|\b(?:Primary|Aligned)\s+CCLS|\bMeasured(?:\s+CCLS)?\s*:?\s*(?:NY-)?[3-8]\.|\bMap\s+to\s+the\s+Standards|\bScoring\s+Rubric|\bSample\s+Response|\bR[uú]brica\s+de\s+puntuaci[oó]n|\bRespuesta\s+de\s+muestra)/i
+const LOCAL_FILESYSTEM_PATH_PATTERN = /(?:file:\/\/|\/(?:Users|home|private|tmp|root|workspace|workspaces|var)\/|[A-Za-z]:\\|\\\\[^\\\s]+\\[^\\\s]+)/i
 const GENERIC_EXPLANATION_PATTERNS = [
   /\b(?:official\s+)?(?:nysed\s+)?answer\s+key\b/i,
   /\baccording\s+to\s+(?:the\s+)?(?:official\s+)?(?:answer|key)\b/i,
@@ -98,6 +110,17 @@ function validText(value: unknown): value is string {
   return typeof value === 'string' && value.trim().length > 0
 }
 
+function containsLocalFilesystemPath(value: unknown): boolean {
+  if (typeof value === 'string') return LOCAL_FILESYSTEM_PATH_PATTERN.test(value)
+  if (Array.isArray(value)) return value.some(containsLocalFilesystemPath)
+  if (value && typeof value === 'object') {
+    return Object.entries(value).some(([key, nested]) =>
+      LOCAL_FILESYSTEM_PATH_PATTERN.test(key) || containsLocalFilesystemPath(nested),
+    )
+  }
+  return false
+}
+
 function substantiveAlt(value: unknown) {
   return validText(value) && value.replace(/[^\p{L}\p{N}]/gu, '').length >= 24
 }
@@ -106,6 +129,7 @@ function safeAlt(value: unknown) {
   return typeof value === 'string'
     && substantiveAlt(value)
     && !ANSWER_METADATA_PATTERN.test(value)
+    && !LOCAL_FILESYSTEM_PATH_PATTERN.test(value)
 }
 
 function substantiveExplanation(value: unknown): value is string {
@@ -159,6 +183,24 @@ function validDateOnly(value: unknown): value is string {
   if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false
   const date = new Date(`${value}T00:00:00Z`)
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value
+}
+
+function choiceLabelsForQuestion(question: RawQuestion): MathExamChoice[] {
+  if (question.id === THREE_CHOICE_QUESTION_ID) {
+    invariant(
+      Array.isArray(question.choiceLabels)
+        && question.choiceLabels.length === THREE_CHOICE_LABELS.length
+        && question.choiceLabels.every((label, index) => label === THREE_CHOICE_LABELS[index]),
+      `${question.id} must use its verified A-C choice labels`,
+    )
+    return [...THREE_CHOICE_LABELS]
+  }
+
+  invariant(
+    question.choiceLabels === undefined,
+    `${question.id} has unexpected choice labels`,
+  )
+  return [...DEFAULT_CHOICE_LABELS]
 }
 
 function domainLabel(domain: MathDomainCode) {
@@ -252,13 +294,21 @@ function validateRawExam(exam: RawExam) {
     }
     invariant(DOMAIN_CODES.has(question.domain), `${question.id} has a bad domain`)
     invariant(['A', 'B', 'C', 'D'].includes(question.correct), `${question.id} has a bad answer key`)
+    const choiceLabels = choiceLabelsForQuestion(question)
+    invariant(choiceLabels.includes(question.correct), `${question.id} has an unavailable answer key`)
     invariant(
       question.explanation?.source === 'official-nysed'
+        || question.explanation?.source === 'official-nysed-corrected'
         || question.explanation?.source === 'vine-authored',
       `${question.id} has a bad explanation source`,
     )
+    const expectedExplanationSource: MathExplanationSource = exam.year >= 2015
+      ? 'vine-authored'
+      : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
+        ? 'official-nysed-corrected'
+        : 'official-nysed'
     invariant(
-      question.explanation.source === (exam.year <= 2014 ? 'official-nysed' : 'vine-authored'),
+      question.explanation.source === expectedExplanationSource,
       `${question.id} has an explanation source that does not match its release`,
     )
     invariant(
@@ -297,6 +347,7 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
   invariant(validDateOnly(rawCatalog.sourceUpdatedAt), 'bad sourceUpdatedAt')
   invariant(rawCatalog.sourceIndexUrl === 'https://www.nysedregents.org/ei/ei-math.html', 'bad source index')
   invariant(Array.isArray(rawCatalog.exams), 'missing exams')
+  invariant(!containsLocalFilesystemPath(rawCatalog), 'catalog exposes a local filesystem path')
 
   const accessedAt = rawCatalog.accessedAt
   const examIds = new Set<string>()
@@ -305,6 +356,7 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
   const questions: MathExamQuestionRecord[] = []
   const explanationSourceCounts: Record<MathExplanationSource, number> = {
     'official-nysed': 0,
+    'official-nysed-corrected': 0,
     'vine-authored': 0,
   }
 
@@ -321,11 +373,13 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
       questionIds.add(rawQuestion.id)
       const sectionDomain = sectionDomainForQuestion(rawExam.grade, rawQuestion.domain)
       const sectionSlug = buildMathExamSection(sectionDomain, rawExam.grade, []).slug
+      const choiceLabels = choiceLabelsForQuestion(rawQuestion)
       explanationSourceCounts[rawQuestion.explanation.source] += 1
+      const englishImageAlt = rawQuestion.alt!.en.trim()
       const imageAlt: LocalizedText = {
-        en: rawQuestion.alt!.en.trim(),
+        en: englishImageAlt,
         es: rawQuestion.alt?.es?.trim()
-          || `El ítem oficial ${rawQuestion.number} de matemáticas de NYSED para el grado ${rawExam.grade} solo está disponible en inglés.`,
+          || `El ítem oficial ${rawQuestion.number} de matemáticas de NYSED para el grado ${rawExam.grade} solo está disponible en inglés. A continuación se ofrece la transcripción completa en inglés: ${englishImageAlt}`,
       }
       questions.push({
         id: rawQuestion.id,
@@ -340,6 +394,7 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
         primaryStandard: rawQuestion.primaryStandard,
         secondaryStandards: rawQuestion.secondaryStandards,
         cluster: domainLabel(rawQuestion.domain),
+        choiceLabels,
         image: {
           en: rawQuestion.image.en,
           ...(rawQuestion.image.es ? { es: rawQuestion.image.es } : {}),
@@ -381,8 +436,12 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
   })
 
   invariant(
-    explanationSourceCounts['official-nysed'] === 228,
-    'catalog must contain exactly 228 official NYSED rationales',
+    explanationSourceCounts['official-nysed'] === 223,
+    'catalog must contain exactly 223 unmodified official NYSED rationales',
+  )
+  invariant(
+    explanationSourceCounts['official-nysed-corrected'] === 5,
+    'catalog must contain exactly 5 official NYSED rationales corrected by Vine',
   )
   invariant(
     explanationSourceCounts['vine-authored'] === 1_611,

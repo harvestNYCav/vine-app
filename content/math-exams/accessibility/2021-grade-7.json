@@ -1,0 +1,955 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2021-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2021-g7-mc-q1": {
+      "inputHash": "9869f9b407bb67cc8326db12d853f680690d610d48981513ba42328261201dca",
+      "description": {
+        "en": "Question 1. Clara goes miniature golfing. She pays $7.50 for an admission ticket and $6.25 for each round she golfs. The total amount Clara pays for admission and the number of rounds she golfs is $26.25. Which equation can be used to determine the number of rounds, x, that Clara golfs? Choices: A: 6.25x + 7.50 = 26.25 B: 6.25x − 7.50 = 26.25 C: 7.50x + 6.25 = 26.25 D: 7.50x − 6.25 = 26.25",
+        "es": "Pregunta 1. Clara va a jugar al golf en miniatura. Paga $7.50 por la entrada y $6.25 por cada ronda que juega. La cantidad total que paga Clara por la entrada y la cantidad de rondas que juega es $26.25. ¿Qué ecuación puede usarse para determinar la cantidad de rondas, x, que Clara juega? Opciones: A: 6.25x + 7.50 = 26.25 B: 6.25x − 7.50 = 26.25 C: 7.50x + 6.25 = 26.25 D: 7.50x − 6.25 = 26.25"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$7.50",
+          "$6.25",
+          "$26.25",
+          "6.25x + 7.50 = 26.25",
+          "6.25x − 7.50 = 26.25",
+          "7.50x + 6.25 = 26.25",
+          "7.50x − 6.25 = 26.25",
+          "A: 6.25x + 7.50 = 26.25",
+          "B: 6.25x − 7.50 = 26.25",
+          "C: 7.50x + 6.25 = 26.25",
+          "D: 7.50x − 6.25 = 26.25"
+        ],
+        "es": [
+          "$7.50",
+          "$6.25",
+          "$26.25",
+          "x",
+          "6.25x + 7.50 = 26.25",
+          "6.25x − 7.50 = 26.25",
+          "7.50x + 6.25 = 26.25",
+          "7.50x − 6.25 = 26.25",
+          "A: 6.25x + 7.50 = 26.25",
+          "B: 6.25x − 7.50 = 26.25",
+          "C: 7.50x + 6.25 = 26.25",
+          "D: 7.50x − 6.25 = 26.25"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q2": {
+      "inputHash": "58178435f9c845f0cfac552376ff45aabbd433574694a1179060cf2fa738621e",
+      "description": {
+        "en": "Question 2. What is the exact decimal equivalent of 7/12? Choices: A: 0.583 B: 0.583, with a bar over the 3 only C: 1.714 D: 1.714, with a bar over the 4 only",
+        "es": "Pregunta 2. ¿Cuál es el equivalente decimal exacto de 7/12? Opciones: A: 0.583 B: 0.58 seguido de un 3 periódico; es decir, 0.58 con una barra sobre el 3. C: 1.714 D: 1.71 seguido de un 4 periódico; es decir, 1.71 con una barra sobre el 4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7/12",
+          "0.583",
+          "1.714",
+          "A: 0.583",
+          "B: 0.583, with a bar over the 3 only",
+          "C: 1.714",
+          "D: 1.714, with a bar over the 4 only"
+        ],
+        "es": [
+          "7/12",
+          "0.583",
+          "0.58",
+          "3 periódico",
+          "1.714",
+          "1.71",
+          "4 periódico",
+          "A: 0.583",
+          "B: 0.58 seguido de un 3 periódico; es decir, 0.58 con una barra sobre el 3",
+          "C: 1.714",
+          "D: 1.71 seguido de un 4 periódico; es decir, 1.71 con una barra sobre el 4"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q3": {
+      "inputHash": "7aa0d8e5789b61c5a5e8476ff168c3cedfb3d2cfac5c368706be57fba7e0d129",
+      "description": {
+        "en": "Question 3. Joseph’s lunch at a restaurant costs $13.00, without tax. He leaves the waiter a tip of 17% of the cost of the lunch, without tax. What is the total cost of the lunch, including the tip, without tax? Choices: A: $2.21 B: $10.79 C: $13.17 D: $15.21",
+        "es": "Pregunta 3. El almuerzo de Joseph en un restaurante cuesta $13.00, sin impuestos. Le deja al mesero una propina del 17 % del costo del almuerzo, sin impuestos. ¿Cuál es el costo total del almuerzo, incluida la propina, sin impuestos? Opciones: A: $2.21 B: $10.79 C: $13.17 D: $15.21"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$13.00",
+          "17%",
+          "$2.21",
+          "$10.79",
+          "$13.17",
+          "$15.21",
+          "A: $2.21",
+          "B: $10.79",
+          "C: $13.17",
+          "D: $15.21"
+        ],
+        "es": [
+          "$13.00",
+          "17 %",
+          "$2.21",
+          "$10.79",
+          "$13.17",
+          "$15.21",
+          "A: $2.21",
+          "B: $10.79",
+          "C: $13.17",
+          "D: $15.21"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q4": {
+      "inputHash": "244e92e0a5be2f8c853f31453ce2885e07f7ef2999cfe6f66db2b2aaa7dabe61",
+      "description": {
+        "en": "Question 4. Jordan is baking brownies and will choose to use either a round or a rectangular pan. The dimensions of the bottom of each pan are given. The bottom of the round pan is a circle with a diameter of 10 in. The bottom of the rectangular pan is a rectangle measuring 10 in. by 7 in. Which statement correctly describes how the area of the bottom of the round pan compares to the area of the bottom of the rectangular pan? Choices: A: The area of the bottom of the round pan is greater than the area of the bottom of the rectangular pan by about 8.5 square inches. B: The area of the bottom of the round pan is greater than the area of the bottom of the rectangular pan by about 244.2 square inches. C: The area of the bottom of the round pan is less than the area of the bottom of the rectangular pan by about 7.2 square inches. D: The area of the bottom of the round pan is less than the area of the bottom of the rectangular pan by about 38.6 square inches.",
+        "es": "Pregunta 4. Jordan está preparando bizcochos de chocolate y tiene que elegir una fuente redonda o una rectangular para hornearlos. Las dimensiones de las bases de las fuentes se muestran a continuación. La base de la fuente redonda es un círculo con un segmento horizontal que atraviesa el círculo de un lado al otro por el centro, rotulado 10 pulgadas; esta medida es el diámetro. La base de la fuente rectangular es un rectángulo de 10 pulgadas de largo por 7 pulgadas de ancho. ¿Qué afirmación describe correctamente cómo el área de la base de la fuente redonda se compara con el área de la base de la fuente rectangular? Opciones: A: El área de la base de la fuente redonda es mayor que el área de la base de la fuente rectangular por aproximadamente 8.5 pulgadas cuadradas. B: El área de la base de la fuente redonda es mayor que el área de la base de la fuente rectangular por aproximadamente 244.2 pulgadas cuadradas. C: El área de la base de la fuente redonda es menor que el área de la base de la fuente rectangular por aproximadamente 7.2 pulgadas cuadradas. D: El área de la base de la fuente redonda es menor que el área de la base de la fuente rectangular por aproximadamente 38.6 pulgadas cuadradas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 in",
+          "7 in",
+          "8.5 square inches",
+          "244.2 square inches",
+          "7.2 square inches",
+          "38.6 square inches",
+          "A: The area of the bottom of the round pan is greater than the area of the bottom of the rectangular pan by about 8.5 square inches",
+          "B: The area of the bottom of the round pan is greater than the area of the bottom of the rectangular pan by about 244.2 square inches",
+          "C: The area of the bottom of the round pan is less than the area of the bottom of the rectangular pan by about 7.2 square inches",
+          "D: The area of the bottom of the round pan is less than the area of the bottom of the rectangular pan by about 38.6 square inches"
+        ],
+        "es": [
+          "10 pulgadas",
+          "7 pulgadas",
+          "8.5 pulgadas cuadradas",
+          "244.2 pulgadas cuadradas",
+          "7.2 pulgadas cuadradas",
+          "38.6 pulgadas cuadradas",
+          "mayor que",
+          "menor que",
+          "A: El área de la base de la fuente redonda es mayor que el área de la base de la fuente rectangular por aproximadamente 8.5 pulgadas cuadradas",
+          "B: El área de la base de la fuente redonda es mayor que el área de la base de la fuente rectangular por aproximadamente 244.2 pulgadas cuadradas",
+          "C: El área de la base de la fuente redonda es menor que el área de la base de la fuente rectangular por aproximadamente 7.2 pulgadas cuadradas",
+          "D: El área de la base de la fuente redonda es menor que el área de la base de la fuente rectangular por aproximadamente 38.6 pulgadas cuadradas"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q5": {
+      "inputHash": "9cc08e305bb2702d828a618173a45426ed66df4b43b65adf07e3d24cb8508456",
+      "description": {
+        "en": "Question 5. On average, Shawnte drinks 1/2 of a 6-ounce glass of water in 2/3 hour. How much water does she drink in an hour? Choices: A: 0.75 ounce B: 2 ounces C: 4.5 ounces D: 9 ounces",
+        "es": "Pregunta 5. En promedio, Shawnte toma 1/2 de un vaso de agua de 6 onzas en 2/3 de hora. ¿Cuánta agua toma en una hora? Opciones: A: 0.75 onza B: 2 onzas C: 4.5 onzas D: 9 onzas"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/2",
+          "6-ounce",
+          "2/3",
+          "0.75 ounce",
+          "2 ounces",
+          "4.5 ounces",
+          "9 ounces",
+          "A: 0.75 ounce",
+          "B: 2 ounces",
+          "C: 4.5 ounces",
+          "D: 9 ounces"
+        ],
+        "es": [
+          "1/2",
+          "6 onzas",
+          "2/3",
+          "0.75 onza",
+          "2 onzas",
+          "4.5 onzas",
+          "9 onzas",
+          "A: 0.75 onza",
+          "B: 2 onzas",
+          "C: 4.5 onzas",
+          "D: 9 onzas"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q6": {
+      "inputHash": "4302e34917be89637a4d9bb9baa52d1b263d7335993c916ffedd9a6a5c2ad82d",
+      "description": {
+        "en": "Question 6. What is the value of the expression [−(−4)(−6) − (3/5)(10 + 15)] ÷ (1/3)? Choices: A: −117 B: −13 C: 3 D: 27",
+        "es": "Pregunta 6. ¿Cuál es el valor de la siguiente expresión? Una fracción compleja cuyo numerador es −(−4)(−6) − (3/5)(10 + 15) y cuyo denominador es 1/3; es decir, [−(−4)(−6) − (3/5)(10 + 15)]/(1/3). Opciones: A: −117 B: −13 C: 3 D: 27"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "[−(−4)(−6) − (3/5)(10 + 15)] ÷ (1/3)",
+          "−117",
+          "−13",
+          "3",
+          "27",
+          "A: −117",
+          "B: −13",
+          "C: 3",
+          "D: 27",
+          "(−4)",
+          "(−6)",
+          "(3/5)",
+          "(10 + 15)",
+          "(1/3)"
+        ],
+        "es": [
+          "−(−4)(−6) − (3/5)(10 + 15)",
+          "1/3",
+          "[−(−4)(−6) − (3/5)(10 + 15)]/(1/3)",
+          "−117",
+          "−13",
+          "3",
+          "27",
+          "A: −117",
+          "B: −13",
+          "C: 3",
+          "D: 27",
+          "(−4)",
+          "(−6)",
+          "(3/5)",
+          "(10 + 15)",
+          "(1/3)"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q7": {
+      "inputHash": "921f37653f37049875e4ed99daffabb4e0b4c475990242cb04d8f3b05512a9f3",
+      "description": {
+        "en": "Question 7. The diagram gives the length and width of a cell phone and the length of a larger version of the same brand of cell phone. The smaller cell phone is 5.4 in. long and 2.6 in. wide. The larger cell phone is 6.21 in. long, and its width is not labeled. The lengths and widths of the two cell phones are proportional. What is the width, in inches, of the larger version of the cell phone? Choices: A: 1.15 B: 2.26 C: 2.99 D: 3.41",
+        "es": "Pregunta 7. El diagrama muestra la longitud y el ancho de un teléfono celular y la longitud de una versión más grande de la misma marca de teléfonos celulares. El teléfono más pequeño mide 5.4 pulgadas de largo y 2.6 pulgadas de ancho. La versión más grande mide 6.21 pulgadas de largo; su ancho no está rotulado. Las longitudes y los anchos de los dos celulares son proporcionales. ¿Cuál es el ancho, en pulgadas, de la versión más grande del teléfono celular? Opciones: A: 1.15 B: 2.26 C: 2.99 D: 3.41"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5.4 in",
+          "2.6 in",
+          "6.21 in",
+          "1.15",
+          "2.26",
+          "2.99",
+          "3.41",
+          "A: 1.15",
+          "B: 2.26",
+          "C: 2.99",
+          "D: 3.41"
+        ],
+        "es": [
+          "5.4 pulgadas",
+          "2.6 pulgadas",
+          "6.21 pulgadas",
+          "1.15",
+          "2.26",
+          "2.99",
+          "3.41",
+          "proporcionales",
+          "A: 1.15",
+          "B: 2.26",
+          "C: 2.99",
+          "D: 3.41"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q8": {
+      "inputHash": "3b3cba6c588e20a97e363e614b3411145037920d44bc1140029d4ae7eeb9d27b",
+      "description": {
+        "en": "Question 8. From 12:00 midnight to 6:00 a.m., the temperature decreased by 12°C. If the original temperature was 12°C, which expression can be used to represent this situation? Choices: A: 12 − 12 B: 12 + 12 C: 12 − (−12) D: −12 + (−12)",
+        "es": "Pregunta 8. Desde las 12:00 de la medianoche hasta las 6:00 a. m., la temperatura disminuyó 12 °C. Si la temperatura original era de 12 °C, ¿qué expresión puede usarse para representar esta situación? Opciones: A: 12 − 12 B: 12 + 12 C: 12 − (−12) D: −12 + (−12)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12:00",
+          "6:00 a.m",
+          "12°C",
+          "12 − 12",
+          "12 + 12",
+          "12 − (−12)",
+          "−12 + (−12)",
+          "A: 12 − 12",
+          "B: 12 + 12",
+          "C: 12 − (−12)",
+          "D: −12 + (−12)",
+          "(−12)"
+        ],
+        "es": [
+          "12:00",
+          "6:00 a. m",
+          "12 °C",
+          "12 − 12",
+          "12 + 12",
+          "12 − (−12)",
+          "−12 + (−12)",
+          "A: 12 − 12",
+          "B: 12 + 12",
+          "C: 12 − (−12)",
+          "D: −12 + (−12)",
+          "(−12)"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q9": {
+      "inputHash": "98445dfba740eca217e1ba1a3943b308555bba91e87008cf7348a2a3d10f7111",
+      "description": {
+        "en": "Question 9. Jordan prepares 200 name tags to use at a meeting. The number for each color of name tag is described below: 35% of the name tags are blue; 3/8 of the name tags are yellow; all of the remaining name tags are red. How many of Jordan’s name tags are red? Choices: A: 55. B: 90. C: 110. D: 145.",
+        "es": "Pregunta 9. Jordan prepara 200 etiquetas de nombre para usar en una reunión. La cantidad de cada color de etiqueta de nombre se describe a continuación: 35 % de las etiquetas de nombre son azules; 3/8 de las etiquetas de nombre son amarillas; todas las etiquetas de nombre restantes son rojas. ¿Cuántas de las etiquetas de nombre de Jordan son rojas? Opciones: A: 55 B: 90 C: 110 D: 145"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "200",
+          "35%",
+          "3/8",
+          "55",
+          "90",
+          "110",
+          "145",
+          "A: 55",
+          "B: 90",
+          "C: 110",
+          "D: 145"
+        ],
+        "es": [
+          "200",
+          "35 %",
+          "3/8",
+          "55",
+          "90",
+          "110",
+          "145",
+          "A: 55",
+          "B: 90",
+          "C: 110",
+          "D: 145"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q10": {
+      "inputHash": "478bb9abfc235682c2a5735e0a0f0677491f2eab6cc7720d0e329e43c587a8cd",
+      "description": {
+        "en": "Question 10. The ratio of boys to girls in Mr. Johnson’s after-school club is the same as the ratio of boys to girls in Ms. Greene’s after-school club. There are 4 boys and 12 girls in Mr. Johnson’s club. There are 6 boys in Ms. Greene’s club. How many girls are in Ms. Greene’s club? Choices: A: 2. B: 12. C: 14. D: 18.",
+        "es": "Pregunta 10. La proporción entre niños y niñas en el club de actividades extracurriculares del señor Johnson es igual a la proporción entre niños y niñas en el club de actividades extracurriculares de la señora Greene. Hay 4 niños y 12 niñas en el club del señor Johnson. Hay 6 niños en el club de la señora Greene. ¿Cuántas niñas hay en el club de la señora Greene? Opciones: A: 2 B: 12 C: 14 D: 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4",
+          "12",
+          "6",
+          "2",
+          "14",
+          "18",
+          "A: 2",
+          "B: 12",
+          "C: 14",
+          "D: 18"
+        ],
+        "es": [
+          "4 niños",
+          "12 niñas",
+          "6 niños",
+          "2",
+          "12",
+          "14",
+          "18",
+          "A: 2",
+          "B: 12",
+          "C: 14",
+          "D: 18"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q11": {
+      "inputHash": "a15509840ec1f76b2b6a33e4d67b9303c011e332a05c33fcd6912b0d28b22b24",
+      "description": {
+        "en": "Question 11. The regular price of an item at a store is p dollars. The item is on sale for 20% off the regular price. Some of the expressions below represent the sale price, in dollars, of the item. Expression A: 0.2p. Expression B: 0.8p. Expression C: 1 − 0.2p. Expression D: p − 0.2p. Expression E: p − 0.8p. Which two expressions each represent the sale price of the item? Choices: A: Expression A and Expression E. B: Expression B and Expression C. C: Expression B and Expression D. D: Expression C and Expression D.",
+        "es": "Pregunta 11. El precio normal de un artículo en una tienda es p dólares. El artículo está en oferta con un 20 % de descuento sobre su precio normal. Algunas de las expresiones que se muestran a continuación representan el precio de oferta, en dólares, del artículo. Expresión A: 0.2p Expresión B: 0.8p Expresión C: 1 − 0.2p Expresión D: p − 0.2p Expresión E: p − 0.8p ¿Cuáles son las dos expresiones que, cada una, representan el precio de oferta del artículo? Opciones: A: Expresión A y Expresión E B: Expresión B y Expresión C C: Expresión B y Expresión D D: Expresión C y Expresión D"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "p",
+          "20%",
+          "0.2p",
+          "0.8p",
+          "1 − 0.2p",
+          "p − 0.2p",
+          "p − 0.8p",
+          "Expression A and Expression E",
+          "Expression B and Expression C",
+          "Expression B and Expression D",
+          "Expression C and Expression D",
+          "A: Expression A and Expression E",
+          "B: Expression B and Expression C",
+          "C: Expression B and Expression D",
+          "D: Expression C and Expression D"
+        ],
+        "es": [
+          "p",
+          "20 %",
+          "0.2p",
+          "0.8p",
+          "1 − 0.2p",
+          "p − 0.2p",
+          "p − 0.8p",
+          "Expresión A y Expresión E",
+          "Expresión B y Expresión C",
+          "Expresión B y Expresión D",
+          "Expresión C y Expresión D",
+          "A: Expresión A y Expresión E",
+          "B: Expresión B y Expresión C",
+          "C: Expresión B y Expresión D",
+          "D: Expresión C y Expresión D"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q12": {
+      "inputHash": "f4347bb8d9a4a76be2229be6568416a39710310823036b64071d26a8a2a738cf",
+      "description": {
+        "en": "Question 12. Last week, the price of apples at a grocery store was $1.60 per pound. This week, apples at the same grocery store are on sale at a 10% discount. What is the total price of 4 1/2 pounds of apples this week at the grocery store? Choices: A: $4.77. B: $6.48. C: $6.75. D: $6.93.",
+        "es": "Pregunta 12. La semana pasada, el precio de las manzanas en la despensa era de $1.60 por libra. Esta semana, las manzanas de la misma despensa están en oferta con un 10 % de descuento. ¿Cuál es el precio total de 4 1/2 libras de manzanas en la despensa esta semana? Opciones: A: $4.77 B: $6.48 C: $6.75 D: $6.93"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$1.60",
+          "10%",
+          "4 1/2",
+          "$4.77",
+          "$6.48",
+          "$6.75",
+          "$6.93",
+          "A: $4.77",
+          "B: $6.48",
+          "C: $6.75",
+          "D: $6.93"
+        ],
+        "es": [
+          "$1.60",
+          "10 %",
+          "4 1/2",
+          "$4.77",
+          "$6.48",
+          "$6.75",
+          "$6.93",
+          "A: $4.77",
+          "B: $6.48",
+          "C: $6.75",
+          "D: $6.93"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q13": {
+      "inputHash": "1b63503fb0975317e91091877a8bb58d8dc065c3034867b0ee2c6ba36abe82a5",
+      "description": {
+        "en": "Question 13. An object travels along a horizontal straight path at a constant rate. The object travels 1/20 of the length of the path in 3/4 second. At that rate, how many seconds does it take the object to travel the entire length of the path? Choices: A: 15. B: 15 3/4. C: 20. D: 20 3/4.",
+        "es": "Pregunta 13. Un objeto se desplaza en línea recta a una velocidad constante. El objeto se desplaza 1/20 del trayecto en 3/4 de segundo. A esa velocidad, ¿cuántos segundos le lleva al objeto desplazarse la distancia completa del trayecto? Opciones: A: 15 B: 15 3/4 C: 20 D: 20 3/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/20",
+          "3/4",
+          "15",
+          "15 3/4",
+          "20",
+          "20 3/4",
+          "A: 15",
+          "B: 15 3/4",
+          "C: 20",
+          "D: 20 3/4"
+        ],
+        "es": [
+          "1/20",
+          "3/4",
+          "15",
+          "15 3/4",
+          "20",
+          "20 3/4",
+          "A: 15",
+          "B: 15 3/4",
+          "C: 20",
+          "D: 20 3/4"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q14": {
+      "inputHash": "f92c18160ed1988b2e9b6ad5f2dd2f5c84267563a3e2abbfd4d8e98bd7850cf4",
+      "description": {
+        "en": "Question 14. A furniture store has a sale during which the sale price of a sofa is 1/3 off its original price. The original price of the sofa is $1,029.00. A customer can get an additional 5% discount off the sale price for paying with cash. At checkout, a 6.5% sales tax on the final price is added to the cost of the sofa. What is the total cost of the sofa, including sales tax, for a customer paying with cash? Choices: A: $343.00. B: $651.70. C: $686.00. D: $694.06.",
+        "es": "Pregunta 14. Una tienda de muebles tiene una oferta durante la cual el precio de venta de un sofá tiene un descuento de 1/3 de su precio original. El precio original del sofá es de $1,029.00. Un cliente puede obtener un descuento adicional del 5 % sobre el precio de venta si paga en efectivo. En la caja, se agrega al costo del sofá un impuesto a las ventas del 6.5 % sobre el precio final. ¿Cuál es el costo total del sofá, incluido el impuesto a las ventas, para un cliente que paga en efectivo? Opciones: A: $343.00 B: $651.70 C: $686.00 D: $694.06"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "$1,029.00",
+          "5%",
+          "6.5%",
+          "$343.00",
+          "$651.70",
+          "$686.00",
+          "$694.06",
+          "A: $343.00",
+          "B: $651.70",
+          "C: $686.00",
+          "D: $694.06"
+        ],
+        "es": [
+          "1/3",
+          "$1,029.00",
+          "5 %",
+          "6.5 %",
+          "$343.00",
+          "$651.70",
+          "$686.00",
+          "$694.06",
+          "A: $343.00",
+          "B: $651.70",
+          "C: $686.00",
+          "D: $694.06"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q15": {
+      "inputHash": "b3053d054382b09b34058f3506cdb73b350beb910fd4927763911c26ab51c23b",
+      "description": {
+        "en": "Question 15. Which table shows a proportional relationship between x and y? Choices: A: A two-column table labeled x and y with rows (3, 4), (6, 10), (9, 16), (12, 22), and (15, 28). B: A two-column table labeled x and y with rows (12, 6), (14, 12), (16, 18), (18, 24), and (20, 30). C: A two-column table labeled x and y with rows (4, 2), (8, 4), (12, 8), (16, 14), and (20, 20). D: A two-column table labeled x and y with rows (5, 1), (10, 2), (15, 3), (20, 4), and (25, 5).",
+        "es": "Pregunta 15. ¿Qué tabla muestra una relación proporcional entre x y y? Opciones: A: Tabla con columnas x e y. Sus pares ordenados (x, y) son (3, 4), (6, 10), (9, 16), (12, 22) y (15, 28). B: Tabla con columnas x e y. Sus pares ordenados (x, y) son (12, 6), (14, 12), (16, 18), (18, 24) y (20, 30). C: Tabla con columnas x e y. Sus pares ordenados (x, y) son (4, 2), (8, 4), (12, 8), (16, 14) y (20, 20). D: Tabla con columnas x e y. Sus pares ordenados (x, y) son (5, 1), (10, 2), (15, 3), (20, 4) y (25, 5)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "(3, 4)",
+          "(6, 10)",
+          "(9, 16)",
+          "(12, 22)",
+          "(15, 28)",
+          "(12, 6)",
+          "(14, 12)",
+          "(16, 18)",
+          "(18, 24)",
+          "(20, 30)",
+          "(4, 2)",
+          "(8, 4)",
+          "(12, 8)",
+          "(16, 14)",
+          "(20, 20)",
+          "(5, 1)",
+          "(10, 2)",
+          "(15, 3)",
+          "(20, 4)",
+          "(25, 5)",
+          "A: A two-column table labeled x and y with rows (3, 4), (6, 10), (9, 16), (12, 22), and (15, 28)",
+          "B: A two-column table labeled x and y with rows (12, 6), (14, 12), (16, 18), (18, 24), and (20, 30)",
+          "C: A two-column table labeled x and y with rows (4, 2), (8, 4), (12, 8), (16, 14), and (20, 20)",
+          "D: A two-column table labeled x and y with rows (5, 1), (10, 2), (15, 3), (20, 4), and (25, 5)"
+        ],
+        "es": [
+          "(3, 4)",
+          "(6, 10)",
+          "(9, 16)",
+          "(12, 22)",
+          "(15, 28)",
+          "(12, 6)",
+          "(14, 12)",
+          "(16, 18)",
+          "(18, 24)",
+          "(20, 30)",
+          "(4, 2)",
+          "(8, 4)",
+          "(12, 8)",
+          "(16, 14)",
+          "(20, 20)",
+          "(5, 1)",
+          "(10, 2)",
+          "(15, 3)",
+          "(20, 4)",
+          "(25, 5)",
+          "A: Tabla con columnas x e y. Sus pares ordenados (x, y) son (3, 4), (6, 10), (9, 16), (12, 22) y (15, 28)",
+          "B: Tabla con columnas x e y. Sus pares ordenados (x, y) son (12, 6), (14, 12), (16, 18), (18, 24) y (20, 30)",
+          "C: Tabla con columnas x e y. Sus pares ordenados (x, y) son (4, 2), (8, 4), (12, 8), (16, 14) y (20, 20)",
+          "D: Tabla con columnas x e y. Sus pares ordenados (x, y) son (5, 1), (10, 2), (15, 3), (20, 4) y (25, 5)"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q16": {
+      "inputHash": "35eec34416783f0f841fa5f50e6f48a40d3fa45d84f91ad783cf313389081712",
+      "description": {
+        "en": "Question 16. Which expression is equivalent to 7a − 8 − 12a + 4? Choices: A: −9a. B: 31a. C: −5a − 4. D: 19a + 12.",
+        "es": "Pregunta 16. ¿Qué expresión es equivalente a 7a − 8 − 12a + 4? Opciones: A: −9a B: 31a C: −5a − 4 D: 19a + 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7a − 8 − 12a + 4",
+          "−9a",
+          "31a",
+          "−5a − 4",
+          "19a + 12",
+          "A: −9a",
+          "B: 31a",
+          "C: −5a − 4",
+          "D: 19a + 12"
+        ],
+        "es": [
+          "7a − 8 − 12a + 4",
+          "−9a",
+          "31a",
+          "−5a − 4",
+          "19a + 12",
+          "A: −9a",
+          "B: 31a",
+          "C: −5a − 4",
+          "D: 19a + 12"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q17": {
+      "inputHash": "5571f6441f5df483811b44f06bc9767feb154ca37ad9133809712ebf40ff8c53",
+      "description": {
+        "en": "Question 17. A box contains paper clips of three different sizes. The numbers of each size of paper clip are listed below: 100 small paper clips; 250 medium paper clips; 150 large paper clips. One paper clip is randomly selected from the box. What is the probability that the paper clip selected is either small or medium? Choices: A: 1/3. B: 2/3. C: 3/7. D: 7/10.",
+        "es": "Pregunta 17. Una caja contiene sujetapapeles de tres tamaños diferentes. Las cantidades de cada tamaño de sujetapapeles se muestran a continuación: 100 sujetapapeles pequeños; 250 sujetapapeles medianos; 150 sujetapapeles grandes. Se saca al azar un sujetapapeles de la caja. ¿Cuál es la probabilidad de que el sujetapapeles seleccionado sea pequeño o mediano? Opciones: A: 1/3 B: 2/3 C: 3/7 D: 7/10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "100",
+          "250",
+          "150",
+          "1/3",
+          "2/3",
+          "3/7",
+          "7/10",
+          "A: 1/3",
+          "B: 2/3",
+          "C: 3/7",
+          "D: 7/10"
+        ],
+        "es": [
+          "100",
+          "250",
+          "150",
+          "1/3",
+          "2/3",
+          "3/7",
+          "7/10",
+          "A: 1/3",
+          "B: 2/3",
+          "C: 3/7",
+          "D: 7/10"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q18": {
+      "inputHash": "be95d5a18ab06ba5ac6e588ea85ae7a7c0a0d8e44aefd0c852f2cad074a3a5e6",
+      "description": {
+        "en": "Question 18. What is 1/2% of [(-0.5) × (-1/4)]? Choices: A: 0.000625. B: 0.00025. C: 0.065. D: 0.025.",
+        "es": "Pregunta 18. ¿Cuánto es 1/2 % de [(−0.5) × (−1/4)]? Opciones: A: 0.000625 B: 0.00025 C: 0.065 D: 0.025"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/2%",
+          "[(-0.5) × (-1/4)]",
+          "0.000625",
+          "0.00025",
+          "0.065",
+          "0.025",
+          "A: 0.000625",
+          "B: 0.00025",
+          "C: 0.065",
+          "D: 0.025",
+          "1/2",
+          "(-0.5)",
+          "(-1/4)"
+        ],
+        "es": [
+          "1/2 %",
+          "[(−0.5) × (−1/4)]",
+          "0.000625",
+          "0.00025",
+          "0.065",
+          "0.025",
+          "A: 0.000625",
+          "B: 0.00025",
+          "C: 0.065",
+          "D: 0.025",
+          "1/2",
+          "(−0.5)",
+          "(−1/4)"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q19": {
+      "inputHash": "4e7385593cb944cecac3f2c301524481316bcdc8841abccc8f4cf092d76f212f",
+      "description": {
+        "en": "Question 19. Mario sells men’s and women’s shoes in his shoe store. He is considering selling children’s shoes. He randomly selected 120 customers to participate in a survey. The survey results are listed: 42 customers said they would shop for children’s shoes; 78 customers said they would not shop for children’s shoes. Mario has an average of 440 customers per month. Based on the survey results, which value is the best estimate of the number of customers that would shop for children’s shoes during an average month? Choices: A: 120. B: 154. C: 220. D: 286.",
+        "es": "Pregunta 19. Mario vende zapatos para hombres y mujeres en su tienda de zapatos. Está considerando vender zapatos para niños. Seleccionó aleatoriamente 120 clientes para que participen en una encuesta. A continuación, se muestran los resultados de la encuesta: 42 clientes dijeron que comprarían zapatos para niños; 78 clientes dijeron que no comprarían zapatos para niños. Mario tiene un promedio de 440 clientes por mes. Según los resultados de la encuesta, ¿qué valor es el cálculo más aproximado de la cantidad de clientes que comprarían zapatos para niños durante un mes promedio? Opciones: A: 120 B: 154 C: 220 D: 286"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "120",
+          "42",
+          "78",
+          "440",
+          "154",
+          "220",
+          "286",
+          "A: 120",
+          "B: 154",
+          "C: 220",
+          "D: 286"
+        ],
+        "es": [
+          "120",
+          "42",
+          "78",
+          "440",
+          "154",
+          "220",
+          "286",
+          "A: 120",
+          "B: 154",
+          "C: 220",
+          "D: 286"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q20": {
+      "inputHash": "5a253d9ba9a9e2af6aeb7e4f35f46e2df04552a11af7b9e384c16bb5f606d0a3",
+      "description": {
+        "en": "Question 20. Danielle constructs a scale model of a building with a rectangular base. Her model is 2 inches in length and 1 inch in width. The scale on the model is 1 inch = 47 feet. What is the actual area, in square feet, of the base of the building? Choices: A: 141. B: 282. C: 2,209. D: 4,418.",
+        "es": "Pregunta 20. Danielle construye un modelo a escala de un edificio con una base rectangular. Su modelo mide 2 pulgadas de largo y 1 pulgada de ancho. La escala en el modelo es 1 pulgada = 47 pies. ¿Cuál es el área real, en pies cuadrados, de la base del edificio? Opciones: A: 141 B: 282 C: 2,209 D: 4,418"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 inches",
+          "1 inch",
+          "1 inch = 47 feet",
+          "141",
+          "282",
+          "2,209",
+          "4,418",
+          "A: 141",
+          "B: 282",
+          "C: 2,209",
+          "D: 4,418"
+        ],
+        "es": [
+          "2 pulgadas",
+          "1 pulgada",
+          "1 pulgada = 47 pies",
+          "141",
+          "282",
+          "2,209",
+          "4,418",
+          "A: 141",
+          "B: 282",
+          "C: 2,209",
+          "D: 4,418"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q21": {
+      "inputHash": "6fb6f7da8c98a81e230de1fd7ac69d2bcef492972804800f22cb11d319f228a3",
+      "description": {
+        "en": "Question 21. What value will make the equation true? -2.1 - ? = -1 1/2. Choices: A: 3.6. B: 0.6. C: -0.6. D: -3.6.",
+        "es": "Pregunta 21. ¿Qué valor hará que la ecuación sea verdadera? La ecuación es −2.1 − ? = −1 1/2. Opciones: A: 3.6 B: 0.6 C: −0.6 D: −3.6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "-2.1 - ? = -1 1/2",
+          "3.6",
+          "0.6",
+          "-0.6",
+          "-3.6",
+          "A: 3.6",
+          "B: 0.6",
+          "C: -0.6",
+          "D: -3.6",
+          "1 1/2"
+        ],
+        "es": [
+          "−2.1 − ? = −1 1/2",
+          "3.6",
+          "0.6",
+          "−0.6",
+          "−3.6",
+          "A: 3.6",
+          "B: 0.6",
+          "C: −0.6",
+          "D: −3.6",
+          "1 1/2"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q22": {
+      "inputHash": "da9f19b3f507f83721eb830de402b25f9725b9f5febca5fc8047fdca91f2754b",
+      "description": {
+        "en": "Question 22. Manny goes bowling. He has $25.00 to spend. He spends $4.25 to rent shoes. He spends $2.50 for each game he bowls. Which inequality can Manny use to determine x, the greatest number of games he can bowl? Choices: A: 2.5 + 4.25x ≥ 25. B: 4.25 + 2.5x ≥ 25. C: 2.5 + 4.25x ≤ 25. D: 4.25 + 2.5x ≤ 25.",
+        "es": "Pregunta 22. Manny va a jugar al bowling. Tiene $25.00 para gastar. Gasta $4.25 en el alquiler de zapatos. Gasta $2.50 por cada juego que juega. ¿Qué desigualdad puede usar Manny para determinar x, el mayor número de juegos que puede jugar? Opciones: A: 2.5 + 4.25x ≥ 25 B: 4.25 + 2.5x ≥ 25 C: 2.5 + 4.25x ≤ 25 D: 4.25 + 2.5x ≤ 25"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$25.00",
+          "$4.25",
+          "$2.50",
+          "2.5 + 4.25x ≥ 25",
+          "4.25 + 2.5x ≥ 25",
+          "2.5 + 4.25x ≤ 25",
+          "4.25 + 2.5x ≤ 25",
+          "A: 2.5 + 4.25x ≥ 25",
+          "B: 4.25 + 2.5x ≥ 25",
+          "C: 2.5 + 4.25x ≤ 25",
+          "D: 4.25 + 2.5x ≤ 25"
+        ],
+        "es": [
+          "$25.00",
+          "$4.25",
+          "$2.50",
+          "2.5 + 4.25x ≥ 25",
+          "4.25 + 2.5x ≥ 25",
+          "2.5 + 4.25x ≤ 25",
+          "4.25 + 2.5x ≤ 25",
+          "A: 2.5 + 4.25x ≥ 25",
+          "B: 4.25 + 2.5x ≥ 25",
+          "C: 2.5 + 4.25x ≤ 25",
+          "D: 4.25 + 2.5x ≤ 25"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q23": {
+      "inputHash": "7a83901f199f017b85fad1258836b528db372d790e971048d2a8581ab1601a69",
+      "description": {
+        "en": "Question 23. A middle school principal wants to change the lunch menu at the school. The principal surveys the students to determine how the students would feel about the changes. Which survey method will produce the best representative sample? Choices: A: survey every fifth student who rides in a car to school. B: survey 3 randomly selected students from every homeroom. C: survey every tenth seventh-grade student during lunch. D: survey 5 randomly selected students from every art, drama, and music class.",
+        "es": "Pregunta 23. Un director de escuela intermedia quiere cambiar el menú del almuerzo en la escuela. El director realiza una encuesta a los alumnos para determinar cómo se sentirían con los cambios. ¿Qué método de encuesta producirá la muestra más representativa? Opciones: A: encuestar a cada quinto alumno que llega en auto a la escuela B: encuestar a 3 alumnos seleccionados al azar de cada clase del curso C: encuestar a cada décimo alumno de séptimo grado durante el almuerzo D: encuestar a 5 alumnos seleccionados al azar de cada clase de arte, teatro y música"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "every fifth student",
+          "3 randomly selected students from every homeroom",
+          "every tenth seventh-grade student",
+          "5 randomly selected students from every art, drama, and music class",
+          "A: survey every fifth student who rides in a car to school",
+          "B: survey 3 randomly selected students from every homeroom",
+          "C: survey every tenth seventh-grade student during lunch",
+          "D: survey 5 randomly selected students from every art, drama, and music class"
+        ],
+        "es": [
+          "cada quinto alumno",
+          "3 alumnos",
+          "cada clase del curso",
+          "cada décimo alumno",
+          "séptimo grado",
+          "5 alumnos",
+          "cada clase de arte, teatro y música",
+          "A: encuestar a cada quinto alumno que llega en auto a la escuela",
+          "B: encuestar a 3 alumnos seleccionados al azar de cada clase del curso",
+          "C: encuestar a cada décimo alumno de séptimo grado durante el almuerzo",
+          "D: encuestar a 5 alumnos seleccionados al azar de cada clase de arte, teatro y música"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q24": {
+      "inputHash": "4dbb51e7f155de9bbf915378ccdf049ff1de4bfba16f1a416e0567d6d80086bc",
+      "description": {
+        "en": "Question 24. Kerry has a bag containing white and yellow marbles. Kerry randomly selects one marble from the bag, records the result, and returns the marble to the bag. The results of the first 65 selections are listed: a white marble was selected 41 times; a yellow marble was selected 24 times. Based on these results, what is the probability that the next marble Kerry selects, rounded to the nearest percent, will be white? Choices: A: 41%. B: 50%. C: 59%. D: 63%.",
+        "es": "Pregunta 24. Kerry tiene una bolsa con canicas blancas y amarillas. Kerry saca al azar una canica de la bolsa, registra el resultado y vuelve a colocar la canica en la bolsa. Los resultados de las primeras 65 canicas que sacó se muestran a continuación: sacó una canica blanca 41 veces; sacó una canica amarilla 24 veces. Según los resultados, ¿cuál es la probabilidad, redondeada al porcentual más cercano, de que la próxima canica que saque Kerry sea blanca? Opciones: A: 41 % B: 50 % C: 59 % D: 63 %"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "65",
+          "41 times",
+          "24 times",
+          "41%",
+          "50%",
+          "59%",
+          "63%",
+          "A: 41%",
+          "B: 50%",
+          "C: 59%",
+          "D: 63%"
+        ],
+        "es": [
+          "65",
+          "41 veces",
+          "24 veces",
+          "41 %",
+          "50 %",
+          "59 %",
+          "63 %",
+          "A: 41 %",
+          "B: 50 %",
+          "C: 59 %",
+          "D: 63 %"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q25": {
+      "inputHash": "629d100f833a6f47cf54601a416349489d5b974c1810a62f42269dc5c5d024f8",
+      "description": {
+        "en": "Question 25. Which situation results in a final value of zero? Choices: A: the overall change in temperature when the temperature goes from −10°F to 10°F B: the total profit made when a person buys an item for $2.25 and then sells the item for $2.25 C: the overall change in altitude of a hot air balloon after rising 21 kilometers from sea level D: the total distance a person travels when he bikes 3.1 miles to school and then bikes 3.1 miles back home",
+        "es": "Pregunta 25. ¿Qué situación da como resultado un valor final de cero? Opciones: A: El cambio total en la temperatura, cuando esta va de −10 °F a 10 °F. B: Las ganancias totales obtenidas cuando una persona compra un artículo por $2.25 y luego lo vende por $2.25. C: El cambio total en la altitud de un globo aerostático tras subir 21 kilómetros sobre el nivel del mar. D: La distancia total que recorre una persona al hacer 3.1 millas en bicicleta hasta la escuela y luego 3.1 millas en bicicleta de regreso a su hogar."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10°F",
+          "10°F",
+          "$2.25",
+          "21 kilometers",
+          "3.1 miles",
+          "A: the overall change in temperature when the temperature goes from −10°F to 10°F",
+          "B: the total profit made when a person buys an item for $2.25 and then sells the item for $2.25",
+          "C: the overall change in altitude of a hot air balloon after rising 21 kilometers from sea level",
+          "D: the total distance a person travels when he bikes 3.1 miles to school and then bikes 3.1 miles back home"
+        ],
+        "es": [
+          "−10 °F",
+          "10 °F",
+          "$2.25",
+          "21 kilómetros",
+          "3.1 millas",
+          "A: El cambio total en la temperatura, cuando esta va de −10 °F a 10 °F",
+          "B: Las ganancias totales obtenidas cuando una persona compra un artículo por $2.25 y luego lo vende por $2.25",
+          "C: El cambio total en la altitud de un globo aerostático tras subir 21 kilómetros sobre el nivel del mar",
+          "D: La distancia total que recorre una persona al hacer 3.1 millas en bicicleta hasta la escuela y luego 3.1 millas en bicicleta de regreso a su hogar"
+        ]
+      }
+    },
+    "nysed-2021-g7-mc-q26": {
+      "inputHash": "7642737ef8f63c0e4490b9890ddeabd2664db3869bbcf3e6daa4d03c0e4902b0",
+      "description": {
+        "en": "Question 26. An equation is shown below: 2(x − 9) = 9 ÷ (−1/3). What value of x makes the equation true? Choices: A: −9.0 B: −4.5 C: 3.0 D: 7.5",
+        "es": "Pregunta 26. A continuación, se muestra una ecuación: 2(x − 9) = 9 ÷ (−1/3) ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: −9.0 B: −4.5 C: 3.0 D: 7.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2(x − 9) = 9 ÷ (−1/3)",
+          "−1/3",
+          "−9.0",
+          "−4.5",
+          "3.0",
+          "7.5",
+          "A: −9.0",
+          "B: −4.5",
+          "C: 3.0",
+          "D: 7.5",
+          "(x − 9)",
+          "(−1/3)"
+        ],
+        "es": [
+          "2(x − 9) = 9 ÷ (−1/3)",
+          "−1/3",
+          "−9.0",
+          "−4.5",
+          "3.0",
+          "7.5",
+          "A: −9.0",
+          "B: −4.5",
+          "C: 3.0",
+          "D: 7.5",
+          "(x − 9)",
+          "(−1/3)"
+        ]
+      }
+    }
+  }
+}

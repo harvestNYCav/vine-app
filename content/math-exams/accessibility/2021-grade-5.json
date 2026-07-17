@@ -1,0 +1,827 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2021-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2021-g5-mc-q1": {
+      "inputHash": "43099ad2045df05566b921ac6d240e41d332791ea76a4d42259906147bc551df",
+      "description": {
+        "en": "Question 1. A gift box is in the shape of a right rectangular prism. The prism has a height of 10 cm, a width of 5 cm, and a length of 9 cm. Dashed lines represent the three hidden back edges. What is the volume, in cubic centimeters, of the gift box? Choices: A: 24. B: 45. C: 225. D: 450.",
+        "es": "Pregunta 1. Una caja de regalo tiene forma de prisma rectangular recto. El diagrama representa una caja con altura de 10 cm, ancho de 5 cm y largo de 9 cm. Las aristas ocultas del prisma están trazadas con líneas discontinuas. ¿Cuál es el volumen, en centímetros cúbicos, de la caja de regalo? Opciones: A: 24 B: 45 C: 225 D: 450"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 cm",
+          "5 cm",
+          "9 cm",
+          "24",
+          "45",
+          "225",
+          "450",
+          "A: 24",
+          "B: 45",
+          "C: 225",
+          "D: 450"
+        ],
+        "es": [
+          "10 cm",
+          "5 cm",
+          "9 cm",
+          "24",
+          "45",
+          "225",
+          "450",
+          "A: 24",
+          "B: 45",
+          "C: 225",
+          "D: 450"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q2": {
+      "inputHash": "fd8f62eb92613ef4acdb0cd96c73a8f4209d821005c5164f8e2f79854a9095f4",
+      "description": {
+        "en": "Question 2. What is the sum of 2/10 + 6/100? Choices: A: 8/10. B: 8/100. C: 26/10. D: 26/100.",
+        "es": "Pregunta 2. ¿Cuál es la suma de 2/10 + 6/100? Opciones: A: 8/10 B: 8/100 C: 26/10 D: 26/100"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/10 + 6/100",
+          "8/10",
+          "8/100",
+          "26/10",
+          "26/100",
+          "A: 8/10",
+          "B: 8/100",
+          "C: 26/10",
+          "D: 26/100",
+          "2/10",
+          "6/100"
+        ],
+        "es": [
+          "2/10 + 6/100",
+          "8/10",
+          "8/100",
+          "26/10",
+          "26/100",
+          "A: 8/10",
+          "B: 8/100",
+          "C: 26/10",
+          "D: 26/100",
+          "2/10",
+          "6/100"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q3": {
+      "inputHash": "98d55c6075e4c9c13b56953b2af2f0234ebc81c620b48501fa90c609f7ece8fe",
+      "description": {
+        "en": "Question 3. On Saturday, Mark sold 2 7/8 gallons of lemonade. On the same day, Regan sold 2/3 as much lemonade as Mark. How much lemonade, in gallons, did Regan sell? Choices: A: 1 5/16. B: 1 11/12. C: 2 7/12. D: 4 5/16.",
+        "es": "Pregunta 3. El sábado, Mark vendió 2 7/8 galones de limonada. El mismo día, Regan vendió 2/3 de la cantidad de limonada que vendió Mark. ¿Cuánta limonada, en galones, vendió Regan? Opciones: A: 1 5/16 B: 1 11/12 C: 2 7/12 D: 4 5/16"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 7/8",
+          "2/3",
+          "1 5/16",
+          "1 11/12",
+          "2 7/12",
+          "D: 4 5/16",
+          "A: 1 5/16",
+          "B: 1 11/12",
+          "C: 2 7/12",
+          "4 5/16"
+        ],
+        "es": [
+          "2 7/8",
+          "2/3",
+          "1 5/16",
+          "1 11/12",
+          "2 7/12",
+          "4 5/16",
+          "A: 1 5/16",
+          "B: 1 11/12",
+          "C: 2 7/12",
+          "D: 4 5/16"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q4": {
+      "inputHash": "f5c8a3641eb70f6010a4cfd2081312ce0c13471532e8f5db0a38a0b38969acb4",
+      "description": {
+        "en": "Question 4. Which point on the number line represents a value of 0.75? The horizontal number line has arrowheads at both ends. The ticks from 0 to 1 divide that interval into 20 equal parts, so each interval is 0.05. Point A is at 0.30, point B is at 0.55, point C is at 0.75, and point D is at 0.85. Choices: A: point A. B: point B. C: point C. D: point D.",
+        "es": "Pregunta 4. ¿Qué punto de la recta numérica a continuación representa un valor de 0.75? La recta numérica horizontal tiene flechas en ambos extremos. El tramo de 0 a 1 está dividido en 20 intervalos iguales. El punto A está en 0.30, el punto B está en 0.55, el punto C está en 0.75 y el punto D está en 0.85. Opciones: A: punto A B: punto B C: punto C D: punto D"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.75",
+          "0",
+          "1",
+          "20",
+          "0.05",
+          "0.30",
+          "0.55",
+          "0.85",
+          "point A",
+          "point B",
+          "point C",
+          "point D",
+          "A: point A",
+          "B: point B",
+          "C: point C",
+          "D: point D"
+        ],
+        "es": [
+          "0.75",
+          "0",
+          "1",
+          "20",
+          "0.30",
+          "0.55",
+          "0.85",
+          "punto A",
+          "punto B",
+          "punto C",
+          "punto D",
+          "A: punto A",
+          "B: punto B",
+          "C: punto C",
+          "D: punto D"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q5": {
+      "inputHash": "754ab6413a2a03ffa09137fbf10673ad3cca8b6c503fdb1b5731e6b5972c40b9",
+      "description": {
+        "en": "Question 5. Which comparison is true? Choices: A: 2.919 > 2.94. B: 0.99 < 0.569. C: 1.27 > 1.189. D: 3.861 < 3.75.",
+        "es": "Pregunta 5. ¿Qué comparación es verdadera? Opciones: A: 2.919 > 2.94 B: 0.99 < 0.569 C: 1.27 > 1.189 D: 3.861 < 3.75"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2.919 > 2.94",
+          "0.99 < 0.569",
+          "1.27 > 1.189",
+          "3.861 < 3.75",
+          "A: 2.919 > 2.94",
+          "B: 0.99 < 0.569",
+          "C: 1.27 > 1.189",
+          "D: 3.861 < 3.75"
+        ],
+        "es": [
+          "2.919 > 2.94",
+          "0.99 < 0.569",
+          "1.27 > 1.189",
+          "3.861 < 3.75",
+          "A: 2.919 > 2.94",
+          "B: 0.99 < 0.569",
+          "C: 1.27 > 1.189",
+          "D: 3.861 < 3.75"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q6": {
+      "inputHash": "fdb487afab9e05fc9630eb9f0d8aa6390a696151abd18df7f5379deeb5436ff3",
+      "description": {
+        "en": "Question 6. Betty has 3 cats and 4 dogs. She feeds each of them one scoop of food twice a day. Which expression can be used to show how many scoops Betty feeds her pets in one day? Choices: A: (2 × 3) × 4. B: (2 × 3) + 4. C: 2 + (3 + 4). D: 2 × (3 + 4).",
+        "es": "Pregunta 6. Betty tiene 3 gatos y 4 perros. Para alimentarlos, le da a cada uno una cucharada de comida dos veces por día. ¿Qué expresión puede usarse para mostrar con cuántas cucharadas Betty alimenta a sus mascotas en un día? Opciones: A: (2 × 3) × 4 B: (2 × 3) + 4 C: 2 + (3 + 4) D: 2 × (3 + 4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "4",
+          "(2 × 3) × 4",
+          "(2 × 3) + 4",
+          "2 + (3 + 4)",
+          "2 × (3 + 4)",
+          "A: (2 × 3) × 4",
+          "B: (2 × 3) + 4",
+          "C: 2 + (3 + 4)",
+          "D: 2 × (3 + 4)",
+          "(2 × 3)",
+          "(3 + 4)"
+        ],
+        "es": [
+          "3",
+          "4",
+          "(2 × 3) × 4",
+          "(2 × 3) + 4",
+          "2 + (3 + 4)",
+          "2 × (3 + 4)",
+          "A: (2 × 3) × 4",
+          "B: (2 × 3) + 4",
+          "C: 2 + (3 + 4)",
+          "D: 2 × (3 + 4)",
+          "(2 × 3)",
+          "(3 + 4)"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q7": {
+      "inputHash": "89bb112f24604e84e07982cb4ce771a14b116e89f8a1daaf64eae3536bec1def",
+      "description": {
+        "en": "Question 7. A rectangular prism filled with unit cubes is depicted. Each unit cube has side lengths measuring 1 foot. The prism is 4 unit cubes wide across the front, 6 unit cubes high, and 3 unit cubes deep. What is the volume, in cubic feet, of the rectangular prism? Choices: A: 12. B: 13. C: 54. D: 72.",
+        "es": "Pregunta 7. A continuación, se muestra el diagrama de un prisma rectangular lleno de cubos de unidades. La longitud de cada lado del cubo de unidades es de 1 pie. El prisma tiene 4 cubos de ancho, 3 cubos de profundidad y 6 cubos de altura. ¿Cuál es el volumen, en pies cúbicos, del prisma rectangular? Opciones: A: 12 B: 13 C: 54 D: 72"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 foot",
+          "4",
+          "6",
+          "3",
+          "12",
+          "13",
+          "54",
+          "72",
+          "A: 12",
+          "B: 13",
+          "C: 54",
+          "D: 72"
+        ],
+        "es": [
+          "1 pie",
+          "4",
+          "3",
+          "6",
+          "12",
+          "13",
+          "54",
+          "72",
+          "A: 12",
+          "B: 13",
+          "C: 54",
+          "D: 72"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q8": {
+      "inputHash": "3caa6906ea730602af1587d8ede7c3a4d46c851aa9821b11d7137c73314cc4d8",
+      "description": {
+        "en": "Question 8. What is the value of the expression [ (3 × 4) − 6 ] + 4 × 2? Choices: A: 4. B: 14. C: 20. D: 30.",
+        "es": "Pregunta 8. ¿Cuál es el valor de la siguiente expresión? [(3 × 4) − 6] + 4 × 2 Opciones: A: 4 B: 14 C: 20 D: 30"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "[ (3 × 4) − 6 ] + 4 × 2",
+          "4",
+          "14",
+          "20",
+          "30",
+          "A: 4",
+          "B: 14",
+          "C: 20",
+          "D: 30",
+          "(3 × 4)"
+        ],
+        "es": [
+          "[(3 × 4) − 6] + 4 × 2",
+          "4",
+          "14",
+          "20",
+          "30",
+          "A: 4",
+          "B: 14",
+          "C: 20",
+          "D: 30",
+          "(3 × 4)"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q9": {
+      "inputHash": "848b14a804e6a21d6bf17c79cb49d220af57d5f8d0e740747d8814e8c8ee1659",
+      "description": {
+        "en": "Question 9. Ms. Reed makes salad dressing by combining oil and vinegar. She combines 8 fluid ounces of oil and 3 fluid ounces of vinegar to make one batch. Ms. Reed makes 3 batches of salad dressing. How many total cups of salad dressing does she make? Choices: A: 1 3/8 cups. B: 2 1/16 cups. C: 2 3/4 cups. D: 4 1/8 cups.",
+        "es": "Pregunta 9. La señora Reed prepara aderezo para ensalada combinando aceite y vinagre. Combina 8 onzas líquidas de aceite y 3 onzas líquidas de vinagre para preparar una tanda. La señora Reed prepara 3 tandas de aderezo para ensalada. ¿Cuántas tazas de aderezo para ensalada prepara en total? Opciones: A: 1 3/8 tazas. B: 2 1/16 tazas. C: 2 3/4 tazas. D: 4 1/8 tazas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 fluid ounces",
+          "3 fluid ounces",
+          "3 batches",
+          "1 3/8 cups",
+          "2 1/16 cups",
+          "2 3/4 cups",
+          "4 1/8 cups",
+          "A: 1 3/8 cups",
+          "B: 2 1/16 cups",
+          "C: 2 3/4 cups",
+          "D: 4 1/8 cups",
+          "1 3/8",
+          "2 1/16",
+          "2 3/4",
+          "4 1/8"
+        ],
+        "es": [
+          "8 onzas líquidas",
+          "3 onzas líquidas",
+          "3 tandas",
+          "1 3/8 tazas",
+          "2 1/16 tazas",
+          "2 3/4 tazas",
+          "4 1/8 tazas",
+          "A: 1 3/8 tazas",
+          "B: 2 1/16 tazas",
+          "C: 2 3/4 tazas",
+          "D: 4 1/8 tazas",
+          "1 3/8",
+          "2 1/16",
+          "2 3/4",
+          "4 1/8"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q10": {
+      "inputHash": "ca43a234f4f2ac44f2ee8550a3b0964242bd1b9c1b408635b0fa41b926302a8b",
+      "description": {
+        "en": "Question 10. What is the area, in square feet, of a rectangle with a length of 6 4/5 ft and a width of 4 3/4 ft? Choices: A: 11 11/20. B: 24 12/20. C: 27 4/20. D: 32 6/20.",
+        "es": "Pregunta 10. ¿Cuál es el área, en pies cuadrados, del rectángulo que se muestra a continuación? El diagrama contiene un rectángulo con una longitud horizontal de 6 4/5 pies y una altura vertical de 4 3/4 pies. Opciones: A: 11 11/20. B: 24 12/20. C: 27 4/20. D: 32 6/20."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 4/5 ft",
+          "4 3/4 ft",
+          "11 11/20",
+          "24 12/20",
+          "27 4/20",
+          "32 6/20",
+          "A: 11 11/20",
+          "B: 24 12/20",
+          "C: 27 4/20",
+          "D: 32 6/20",
+          "6 4/5",
+          "4 3/4"
+        ],
+        "es": [
+          "6 4/5 pies",
+          "4 3/4 pies",
+          "11 11/20",
+          "24 12/20",
+          "27 4/20",
+          "32 6/20",
+          "A: 11 11/20",
+          "B: 24 12/20",
+          "C: 27 4/20",
+          "D: 32 6/20",
+          "6 4/5",
+          "4 3/4"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q11": {
+      "inputHash": "b2380d9acf318cd22135dca4480a3895386616048e52c37cc1b5e54394b564d2",
+      "description": {
+        "en": "Question 11. Ed hiked 3 kilometers on Saturday and swam 2 kilometers on Sunday. How many total meters did Ed hike and swim on Saturday and Sunday? Choices: A: 50. B: 500. C: 5,000. D: 50,000.",
+        "es": "Pregunta 11. Ed caminó 3 kilómetros el sábado y nadó 2 kilómetros el domingo. ¿Cuántos metros en total caminó y nadó Ed el sábado y el domingo? Opciones: A: 50. B: 500. C: 5,000. D: 50,000."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 kilometers",
+          "2 kilometers",
+          "50",
+          "500",
+          "5,000",
+          "50,000",
+          "A: 50",
+          "B: 500",
+          "C: 5,000",
+          "D: 50,000"
+        ],
+        "es": [
+          "3 kilómetros",
+          "2 kilómetros",
+          "50",
+          "500",
+          "5,000",
+          "50,000",
+          "A: 50",
+          "B: 500",
+          "C: 5,000",
+          "D: 50,000"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q12": {
+      "inputHash": "3287cee3c7dff435b5918cfa032bb877f41486124feb86a64a9ec6cad9990f1a",
+      "description": {
+        "en": "Question 12. Which expression can be used to find the value of the expression 1,284 ÷ 4? Choices: A: (1,200 ÷ 4) × (84 ÷ 4). B: (1,200 ÷ 4) ÷ (84 ÷ 4). C: (1,200 ÷ 4) + (84 ÷ 4). D: (1,200 ÷ 4) − (84 ÷ 4).",
+        "es": "Pregunta 12. ¿Qué expresión puede usarse para averiguar el valor de la siguiente expresión? 1,284 ÷ 4. Opciones: A: (1,200 ÷ 4) × (84 ÷ 4). B: (1,200 ÷ 4) ÷ (84 ÷ 4). C: (1,200 ÷ 4) + (84 ÷ 4). D: (1,200 ÷ 4) − (84 ÷ 4)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,284 ÷ 4",
+          "(1,200 ÷ 4) × (84 ÷ 4)",
+          "(1,200 ÷ 4) ÷ (84 ÷ 4)",
+          "(1,200 ÷ 4) + (84 ÷ 4)",
+          "(1,200 ÷ 4) − (84 ÷ 4)",
+          "A: (1,200 ÷ 4) × (84 ÷ 4)",
+          "B: (1,200 ÷ 4) ÷ (84 ÷ 4)",
+          "C: (1,200 ÷ 4) + (84 ÷ 4)",
+          "D: (1,200 ÷ 4) − (84 ÷ 4)",
+          "(1,200 ÷ 4)",
+          "(84 ÷ 4)"
+        ],
+        "es": [
+          "1,284 ÷ 4",
+          "(1,200 ÷ 4) × (84 ÷ 4)",
+          "(1,200 ÷ 4) ÷ (84 ÷ 4)",
+          "(1,200 ÷ 4) + (84 ÷ 4)",
+          "(1,200 ÷ 4) − (84 ÷ 4)",
+          "A: (1,200 ÷ 4) × (84 ÷ 4)",
+          "B: (1,200 ÷ 4) ÷ (84 ÷ 4)",
+          "C: (1,200 ÷ 4) + (84 ÷ 4)",
+          "D: (1,200 ÷ 4) − (84 ÷ 4)",
+          "(1,200 ÷ 4)",
+          "(84 ÷ 4)"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q13": {
+      "inputHash": "b7bc494ea781c268d7cfdb41b266bd759c2d7580865a4ade50f701f64a2962e9",
+      "description": {
+        "en": "Question 13. Which expression cannot be used to determine the volume of a rectangular prism built from equal-sized unit cubes? The prism is 6 cubes long, 4 cubes high, and 3 cubes deep. Its front face is a 6-by-4 array, its side face is a 3-by-4 array, and its top face is a 6-by-3 array. Choices: A: 12 × 6. B: 18 × 4. C: 6 × 3 × 4. D: 6 × 4 × 6.",
+        "es": "Pregunta 13. ¿Qué expresión no puede usarse para determinar el volumen del prisma rectangular que se muestra a continuación? El prisma está formado por cubos unitarios. La cara frontal tiene 6 cubos de ancho y 4 cubos de alto; el prisma tiene una profundidad de 3 cubos. Por lo tanto, se distinguen 6 columnas y 4 filas en la cara frontal, y 3 capas desde el frente hacia atrás. Opciones: A: 12 × 6. B: 18 × 4. C: 6 × 3 × 4. D: 6 × 4 × 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 cubes long",
+          "4 cubes high",
+          "3 cubes deep",
+          "6-by-4",
+          "3-by-4",
+          "6-by-3",
+          "12 × 6",
+          "18 × 4",
+          "6 × 3 × 4",
+          "6 × 4 × 6",
+          "A: 12 × 6",
+          "B: 18 × 4",
+          "C: 6 × 3 × 4",
+          "D: 6 × 4 × 6"
+        ],
+        "es": [
+          "6 cubos de ancho",
+          "4 cubos de alto",
+          "3 cubos",
+          "6 columnas",
+          "4 filas",
+          "3 capas",
+          "12 × 6",
+          "18 × 4",
+          "6 × 3 × 4",
+          "6 × 4 × 6",
+          "A: 12 × 6",
+          "B: 18 × 4",
+          "C: 6 × 3 × 4",
+          "D: 6 × 4 × 6"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q14": {
+      "inputHash": "9d7e6954f224ca18fd831294242ff42e23edb7f0912f02076eee90aa8fc9ca5e",
+      "description": {
+        "en": "Question 14. What is 15.74 rounded to the nearest whole number? Choices: A: 10. B: 15. C: 16. D: 20.",
+        "es": "Pregunta 14. ¿Cuánto es 15.74 redondeado al número entero más cercano? Opciones: A: 10. B: 15. C: 16. D: 20."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15.74",
+          "10",
+          "15",
+          "16",
+          "20",
+          "A: 10",
+          "B: 15",
+          "C: 16",
+          "D: 20"
+        ],
+        "es": [
+          "15.74",
+          "10",
+          "15",
+          "16",
+          "20",
+          "A: 10",
+          "B: 15",
+          "C: 16",
+          "D: 20"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q15": {
+      "inputHash": "dbe708d164a8b382b764d18ca5a25418207a9db5473cac1f654e0c4b198dc361",
+      "description": {
+        "en": "Question 15. Jack puts 1/3 pound of birdseed into his bird feeder every time he fills it. How many times can Jack fill his bird feeder with 4 pounds of birdseed? Choices: A: 1 1/3. B: 3 2/3. C: 11. D: 12.",
+        "es": "Pregunta 15. Jack pone 1/3 de libra de semillas en el comedero para pájaros cada vez que lo llena. ¿Cuántas veces puede Jack llenar el comedero para pájaros con 4 libras de semillas? Opciones: A: 1 1/3. B: 3 2/3. C: 11. D: 12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3 pound",
+          "4 pounds",
+          "1 1/3",
+          "3 2/3",
+          "11",
+          "12",
+          "A: 1 1/3",
+          "B: 3 2/3",
+          "C: 11",
+          "D: 12",
+          "1/3"
+        ],
+        "es": [
+          "1/3 de libra",
+          "4 libras",
+          "1 1/3",
+          "3 2/3",
+          "11",
+          "12",
+          "A: 1 1/3",
+          "B: 3 2/3",
+          "C: 11",
+          "D: 12",
+          "1/3"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q16": {
+      "inputHash": "eefcec264f7096f6ec42b86ea83de990e995ef3fa724dce25ba90f2200b51d11",
+      "description": {
+        "en": "Question 16. Carlos makes 1 pound of snack mix using nuts, raisins, and cereal. He uses 1/3 pound of nuts and 2/5 pound of raisins. How much cereal, in pounds, does Carlos use? Choices: A: 3/8. B: 5/8. C: 4/15. D: 11/15.",
+        "es": "Pregunta 16. Carlos prepara 1 libra de mezcla de refrigerios con nueces, pasas y cereal. La siguiente lista muestra la cantidad de libras de nueces y pasas que usa: 1/3 de libra de nueces; 2/5 de libra de pasas. ¿Cuánto cereal, en libras, usa Carlos? Opciones: A: 3/8. B: 5/8. C: 4/15. D: 11/15."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 pound",
+          "1/3 pound",
+          "2/5 pound",
+          "3/8",
+          "5/8",
+          "4/15",
+          "11/15",
+          "A: 3/8",
+          "B: 5/8",
+          "C: 4/15",
+          "D: 11/15",
+          "1/3",
+          "2/5"
+        ],
+        "es": [
+          "1 libra",
+          "1/3 de libra de nueces",
+          "2/5 de libra de pasas",
+          "3/8",
+          "5/8",
+          "4/15",
+          "11/15",
+          "A: 3/8",
+          "B: 5/8",
+          "C: 4/15",
+          "D: 11/15",
+          "1/3",
+          "2/5"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q17": {
+      "inputHash": "ffe43f389b84fa7aff8b820fb202c4fc42e886aa09d1d93e4deebd93fe664c31",
+      "description": {
+        "en": "Question 17. Tara lives 3/4 mile from the park. Nikhil lives 6 2/3 times as far as Tara from the park. How far, in miles, does Nikhil live from the park? Choices: A: 2. B: 5. C: 5 1/6. D: 8 8/9.",
+        "es": "Pregunta 17. Tara vive a 3/4 de milla del parque. Nikhil vive 6 2/3 veces más lejos que Tara del parque. ¿A qué distancia del parque, en millas, vive Nikhil? Opciones: A: 2 B: 5 C: 5 1/6 D: 8 8/9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4",
+          "6 2/3",
+          "2",
+          "5",
+          "5 1/6",
+          "8 8/9",
+          "A: 2",
+          "B: 5",
+          "C: 5 1/6",
+          "D: 8 8/9"
+        ],
+        "es": [
+          "3/4",
+          "6 2/3",
+          "2",
+          "5",
+          "5 1/6",
+          "8 8/9",
+          "A: 2",
+          "B: 5",
+          "C: 5 1/6",
+          "D: 8 8/9"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q18": {
+      "inputHash": "6e1a2350d31b103500fb9a47456e4e1e388e7a1b0ed881180c26d8a88e651598",
+      "description": {
+        "en": "Question 18. Which statement describes the product of the expression 5 × 1/2? Choices: A: It is less than 1/2. B: It is greater than 5. C: It is between 5 and 6. D: It is between 1/2 and 5.",
+        "es": "Pregunta 18. ¿Qué afirmación describe el producto de la expresión 5 × 1/2? Opciones: A: Es menor que 1/2. B: Es mayor que 5. C: Está entre 5 y 6. D: Está entre 1/2 y 5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 × 1/2",
+          "1/2",
+          "5",
+          "6",
+          "A: It is less than 1/2",
+          "B: It is greater than 5",
+          "C: It is between 5 and 6",
+          "D: It is between 1/2 and 5"
+        ],
+        "es": [
+          "5 × 1/2",
+          "1/2",
+          "5",
+          "6",
+          "A: Es menor que 1/2",
+          "B: Es mayor que 5",
+          "C: Está entre 5 y 6",
+          "D: Está entre 1/2 y 5"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q19": {
+      "inputHash": "5b5e5ebaab973d00835df85bfba61547094523a7fc8637f8cbd2112dba5fb509",
+      "description": {
+        "en": "Question 19. What is the value of the expression 1/7 ÷ 5? Choices: A: 1/12. B: 1/35. C: 5/7. D: 6/7.",
+        "es": "Pregunta 19. ¿Cuál es el valor de la expresión 1/7 ÷ 5? Opciones: A: 1/12 B: 1/35 C: 5/7 D: 6/7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/7 ÷ 5",
+          "1/12",
+          "1/35",
+          "5/7",
+          "6/7",
+          "A: 1/12",
+          "B: 1/35",
+          "C: 5/7",
+          "D: 6/7",
+          "1/7"
+        ],
+        "es": [
+          "1/7 ÷ 5",
+          "1/12",
+          "1/35",
+          "5/7",
+          "6/7",
+          "A: 1/12",
+          "B: 1/35",
+          "C: 5/7",
+          "D: 6/7",
+          "1/7"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q20": {
+      "inputHash": "38e92c1104eb35e705d8f4c44d7c7beb6b7148f81ce636abb46667d75c27d6c6",
+      "description": {
+        "en": "Question 20. Cole has a rectangular garden with an area of 16.02 square meters. The length of the garden is 4.5 meters. What is the width, in meters, of the garden? Choices: A: 3.56. B: 11.52. C: 16.12. D: 20.52.",
+        "es": "Pregunta 20. Cole tiene un jardín rectangular que ocupa un área de 16.02 metros cuadrados. La longitud del jardín es de 4.5 metros. ¿Cuál es el ancho, en metros, del jardín? Opciones: A: 3.56 B: 11.52 C: 16.12 D: 20.52"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16.02",
+          "4.5",
+          "3.56",
+          "11.52",
+          "16.12",
+          "20.52",
+          "A: 3.56",
+          "B: 11.52",
+          "C: 16.12",
+          "D: 20.52"
+        ],
+        "es": [
+          "16.02",
+          "4.5",
+          "3.56",
+          "11.52",
+          "16.12",
+          "20.52",
+          "A: 3.56",
+          "B: 11.52",
+          "C: 16.12",
+          "D: 20.52"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q21": {
+      "inputHash": "3ee81f576fc13949b99b2a502338b68f24648e64b51ea9258540efbb9bf11214",
+      "description": {
+        "en": "Question 21. A school raised a total of $1,648 to purchase new books. The money raised will be shared equally among 8 different classrooms. What is the total amount of money each classroom will receive? Choices: A: $206. B: $207. C: $260. D: $270.",
+        "es": "Pregunta 21. Una escuela recaudó un total de $1,648 para comprar libros nuevos. El dinero recaudado se compartirá en partes iguales entre 8 aulas diferentes. ¿Cuál es la cantidad total de dinero que recibirá cada aula? Opciones: A: $206 B: $207 C: $260 D: $270"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$1,648",
+          "8",
+          "$206",
+          "$207",
+          "$260",
+          "$270",
+          "A: $206",
+          "B: $207",
+          "C: $260",
+          "D: $270"
+        ],
+        "es": [
+          "$1,648",
+          "8",
+          "$206",
+          "$207",
+          "$260",
+          "$270",
+          "A: $206",
+          "B: $207",
+          "C: $260",
+          "D: $270"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q22": {
+      "inputHash": "39a180661f65cf6d23d0e67970036705eb8ae7495faca682695affc1d2247eef",
+      "description": {
+        "en": "Question 22. The line plot titled “CEREAL EATEN” shows the amount of cereal Shyanne ate in 5 days. Its horizontal number line, labeled “Amount (cups),” has equally spaced tick marks at 0, 1/4, 1/2, 3/4, and 1, with arrows pointing in both directions. There are two X marks above 1/4, two X marks above 1/2, and one X mark above 3/4; each X represents one day. What is the total number of cups of cereal that Shyanne ate in the 5 days? Choices: A: 1 1/2. B: 1 3/4. C: 1 4/6. D: 2 1/4.",
+        "es": "Pregunta 22. El siguiente diagrama lineal muestra la cantidad de cereal que comió Shyanne en 5 días. El diagrama, titulado “CEREAL COMIDO”, es una recta numérica horizontal con flechas en ambos extremos y marcas igualmente espaciadas en 0, 1/4, 1/2, 3/4 y 1. La etiqueta bajo la recta es “Cantidad (tazas)”. Hay dos X sobre 1/4, dos X sobre 1/2 y una X sobre 3/4; cada X representa uno de los 5 días. ¿Cuál es la cantidad total de tazas de cereal que comió Shyanne en los 5 días? Opciones: A: 1 1/2 B: 1 3/4 C: 1 4/6 D: 2 1/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "1/4",
+          "1/2",
+          "3/4",
+          "1",
+          "1 1/2",
+          "1 3/4",
+          "1 4/6",
+          "2 1/4",
+          "A: 1 1/2",
+          "B: 1 3/4",
+          "C: 1 4/6",
+          "D: 2 1/4"
+        ],
+        "es": [
+          "5 días",
+          "0",
+          "1/4",
+          "1/2",
+          "3/4",
+          "1",
+          "1 1/2",
+          "1 3/4",
+          "1 4/6",
+          "2 1/4",
+          "A: 1 1/2",
+          "B: 1 3/4",
+          "C: 1 4/6",
+          "D: 2 1/4"
+        ]
+      }
+    },
+    "nysed-2021-g5-mc-q23": {
+      "inputHash": "090cea2eb0300ed7da3e77393d0e1215700c79bc597e070e0eb86805c3d642f1",
+      "description": {
+        "en": "Question 23. Lana used the two rectangular-prism blocks pictured in the diagram to build a tower. The lower block is 10 inches long, 2 inches deep, and 4 inches high. A smaller block rests on top of the lower block; it is 5 inches long, 2 inches deep, and 4 inches high. The blocks do not overlap, and the smaller block’s 5-inch-by-2-inch base lies on the top face of the lower block. What is the total volume, in cubic inches, of the tower Lana built? Choices: A: 27. B: 80. C: 116. D: 120.",
+        "es": "Pregunta 23. Lana usó los dos bloques que se describen a continuación para construir una torre. El diagrama, titulado “TORRE DE LANA”, presenta dos prismas rectangulares apilados. El bloque inferior mide 10 pulgadas de largo, 2 pulgadas de profundidad y 4 pulgadas de alto. El bloque superior descansa sobre la cara superior del bloque inferior y mide 5 pulgadas de largo, 2 pulgadas de profundidad y 4 pulgadas de alto. Los bloques no se superponen: la base del bloque superior coincide con una parte de la cara superior del bloque inferior. ¿Cuál es el volumen total, en pulgadas cúbicas, de la torre que construyó Lana? Opciones: A: 27 B: 80 C: 116 D: 120"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 inches",
+          "2 inches",
+          "4 inches",
+          "5 inches",
+          "5-inch-by-2-inch",
+          "27",
+          "80",
+          "116",
+          "120",
+          "A: 27",
+          "B: 80",
+          "C: 116",
+          "D: 120"
+        ],
+        "es": [
+          "10 pulgadas",
+          "2 pulgadas",
+          "4 pulgadas",
+          "5 pulgadas",
+          "27",
+          "80",
+          "116",
+          "120",
+          "A: 27",
+          "B: 80",
+          "C: 116",
+          "D: 120"
+        ]
+      }
+    }
+  }
+}

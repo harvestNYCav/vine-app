@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2026-grade-3-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2026-g3-mc-q1": {
+      "inputHash": "83636bde404ff3bc64423b91c09952d29e7630f9092a905a4413d70a78cfc8e9",
+      "description": {
+        "en": "Question 1. Which fraction is represented by the point on the number line? The segment from 0 to 1 is divided into 4 equal intervals, and the point is at the first tick after 0. Choices: A: 1/4; B: 1/8; C: 2/4; D: 2/6.",
+        "es": "Pregunta 1. ¿Qué fracción está representada por el punto en la recta numérica? El segmento de 0 a 1 está dividido en 4 intervalos iguales, y el punto está en la primera marca después de 0. Opciones: A: 1/4; B: 1/8; C: 2/4; D: 2/6."
+      }
+    },
+    "nysed-2026-g3-mc-q2": {
+      "inputHash": "e528196f93a91ca44f4b35b5a9ab8a24b681b188df10247dcfa33c479b8c5c6f",
+      "description": {
+        "en": "Question 2. What is the number 3,406 written in word form? Choices: A: three thousand four hundred sixty; B: three thousand four hundred six; C: thirty-four thousand sixty; D: thirty-four thousand six.",
+        "es": "Pregunta 2. ¿Cómo se escribe en letras el número 3,406? Opciones: A: tres mil cuatrocientos sesenta; B: tres mil cuatrocientos seis; C: treinta y cuatro mil sesenta; D: treinta y cuatro mil seis."
+      }
+    },
+    "nysed-2026-g3-mc-q3": {
+      "inputHash": "17255e2f1de8b0e87edb5d77670943e25102fc7b1ff68921b3673747bbf3dcea",
+      "description": {
+        "en": "Question 3. Jaylani has 54 cookies. She puts all of the cookies into 9 bags. Each bag has the same number of cookies. How many cookies does Jaylani put into each bag? Choices: A: 6; B: 7; C: 45; D: 63.",
+        "es": "Pregunta 3. Jaylani tiene 54 galletas. Ella pone todas las galletitas en 9 bolsas. Cada bolsa tiene la misma cantidad de galletas. ¿Cuántas galletas pone Jaylani en cada bolsa? Opciones: A: 6; B: 7; C: 45; D: 63."
+      }
+    },
+    "nysed-2026-g3-mc-q4": {
+      "inputHash": "bfa47d2af974bb4cd781fa1e8d16aa7ea00f4c777652c7f588520418096c37d5",
+      "description": {
+        "en": "Question 4. A bucket scale is marked at 5, 10, 15, 20, and 25 liters, and the water is at the 10-liter mark. How many liters will be in the bucket after 5 more liters are poured into it? Choices: A: 10; B: 15; C: 20; D: 25.",
+        "es": "Pregunta 4. La escala de una cubeta está marcada en 5, 10, 15, 20 y 25 litros, y el agua llega a la marca de 10 litros. ¿Cuántos litros habrá después de verter otros 5 litros? Opciones: A: 10; B: 15; C: 20; D: 25."
+      }
+    },
+    "nysed-2026-g3-mc-q5": {
+      "inputHash": "6893b12273e69cf67d24f939bd9f0d2d22744f983e8c78ebded47fc64243c22e",
+      "description": {
+        "en": "Question 5. A whole rectangle is divided into 3 equal vertical parts, with the first 2 parts shaded. Which shape represents an equivalent fraction? Choices: A: a rectangle divided into 6 equal parts with the first 3 shaded; B: 6 equal parts with the middle 2 shaded; C: 6 equal parts with the last 5 shaded; D: 6 equal parts with the middle 4 shaded.",
+        "es": "Pregunta 5. Un rectángulo entero está dividido en 3 partes verticales iguales, con las primeras 2 sombreadas. ¿Qué forma representa una fracción equivalente? Opciones: A: 6 partes iguales con las primeras 3 sombreadas; B: 6 partes iguales con las 2 del medio sombreadas; C: 6 partes iguales con las últimas 5 sombreadas; D: 6 partes iguales con las 4 del medio sombreadas."
+      }
+    },
+    "nysed-2026-g3-mc-q6": {
+      "inputHash": "2a134842ea88b99cff6c49c83f5e70ed5151b76356333eb404fe49481556d071",
+      "description": {
+        "en": "Question 6. A group of students collected 59 kilograms of trash in September and 81 kilograms in October. What is the difference, in kilograms, between the trash collected in the two months? Choices: A: 20; B: 22; C: 32; D: 38.",
+        "es": "Pregunta 6. Un grupo de estudiantes recolectó 59 kilogramos de basura en septiembre y 81 kilogramos en octubre. ¿Cuál es la diferencia, en kilogramos, entre la basura recolectada en los dos meses? Opciones: A: 20; B: 22; C: 32; D: 38."
+      }
+    },
+    "nysed-2026-g3-mc-q7": {
+      "inputHash": "f519c95d95c0843008322872d9631e980de55bc05f637a4565f2e2d8442720f1",
+      "description": {
+        "en": "Question 7. The number pattern 2, 8, 14, 20, and so on continues. What is the seventh number in the pattern? Choices: A: 26; B: 32; C: 38; D: 44.",
+        "es": "Pregunta 7. El patrón numérico 2, 8, 14, 20, y así sucesivamente continúa. ¿Cuál es el séptimo número del patrón? Opciones: A: 26; B: 32; C: 38; D: 44."
+      }
+    },
+    "nysed-2026-g3-mc-q8": {
+      "inputHash": "b74a16774e939c21c4788447864ce926ead12ddc14659dc886ef274ea37a115a",
+      "description": {
+        "en": "Question 8. A rectangle is completely covered by a grid of unit squares arranged in 7 rows and 9 columns. Which two methods find its area? Choices: A: multiply 8 and 6; add 6 rows of 8; B: multiply 8 and 7; add 7 rows of 8; C: multiply 9 and 6; add 6 rows of 9; D: multiply 9 and 7; add 7 rows of 9.",
+        "es": "Pregunta 8. Un rectángulo está completamente cubierto por una cuadrícula de cuadrados unitarios dispuestos en 7 filas y 9 columnas. ¿Qué dos métodos hallan su área? Opciones: A: multiplicar 8 por 6; sumar 6 filas de 8; B: multiplicar 8 por 7; sumar 7 filas de 8; C: multiplicar 9 por 6; sumar 6 filas de 9; D: multiplicar 9 por 7; sumar 7 filas de 9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 rows and 9 columns",
+          "A: multiply 8 and 6; add 6 rows of 8",
+          "B: multiply 8 and 7; add 7 rows of 8",
+          "C: multiply 9 and 6; add 6 rows of 9",
+          "D: multiply 9 and 7; add 7 rows of 9"
+        ],
+        "es": [
+          "7 filas y 9 columnas",
+          "A: multiplicar 8 por 6; sumar 6 filas de 8",
+          "B: multiplicar 8 por 7; sumar 7 filas de 8",
+          "C: multiplicar 9 por 6; sumar 6 filas de 9",
+          "D: multiplicar 9 por 7; sumar 7 filas de 9"
+        ]
+      }
+    },
+    "nysed-2026-g3-mc-q10": {
+      "inputHash": "dc821da68cc2888bb716ad267f11932be77d91fafcf1047ab4b20d4cc3669217",
+      "description": {
+        "en": "Question 10. The equation is 5 × 6 = (2 × blank) + (3 × blank). What number can go into both blanks to make the equation true? Choices: A: 3; B: 4; C: 5; D: 6.",
+        "es": "Pregunta 10. La ecuación es 5 × 6 = (2 × espacio en blanco) + (3 × espacio en blanco). ¿Qué número puede ir en ambos espacios para que la ecuación sea verdadera? Opciones: A: 3; B: 4; C: 5; D: 6."
+      }
+    },
+    "nysed-2026-g3-mc-q11": {
+      "inputHash": "7699aebe9958d09120e16e27192808ed8b318bfa96572074341b8dc7b533c899",
+      "description": {
+        "en": "Question 11. Which whole model is divided into equal parts and shaded to represent a fraction less than 2/8? Choices: A: a bar with 2 of 6 equal parts shaded; B: a bar with 1 of 8 equal parts shaded; C: a bar with 3 of 8 equal parts shaded; D: a bar with 2 of 4 equal parts shaded.",
+        "es": "Pregunta 11. ¿Qué modelo entero está dividido en partes iguales y sombreado para representar una fracción menor que 2/8? Opciones: A: una barra con 2 de 6 partes iguales sombreadas; B: una barra con 1 de 8 partes iguales sombreada; C: una barra con 3 de 8 partes iguales sombreadas; D: una barra con 2 de 4 partes iguales sombreadas."
+      }
+    },
+    "nysed-2026-g3-mc-q12": {
+      "inputHash": "c341953a6aa2c7685de8d4351c414f459d40e22b03d2c9ab38af14878254b4e2",
+      "description": {
+        "en": "Question 12. Which story problem can be represented by the expression 4 × 2? Choices: A: Jim has 4 cookies and shares them equally between 2 people; B: Jim has 4 pieces of candy and gives away 2; C: Jim has 4 pencils and a friend gives him 2 more; D: Jim has 4 bags of toys with 2 toys in each bag.",
+        "es": "Pregunta 12. ¿Cuál enunciado se puede representar mediante la expresión 4 × 2? Opciones: A: Jim tiene 4 galletitas y las comparte por igual entre 2 personas; B: Jim tiene 4 dulces y entrega 2; C: Jim tiene 4 lápices y un amigo le da 2 más; D: Jim tiene 4 bolsas con 2 juguetes en cada bolsa."
+      }
+    },
+    "nysed-2026-g3-mc-q14": {
+      "inputHash": "fc2debbf4da0ddf1ae5aefbd8fe92ed500d3f49ac2d3f2991d160b57d956483a",
+      "description": {
+        "en": "Question 14. What is the number 2,355 rounded to the nearest ten? Choices: A: 2,300; B: 2,350; C: 2,360; D: 2,400.",
+        "es": "Pregunta 14. ¿Cuál es el número 2,355 redondeado a la decena más cercana? Opciones: A: 2,300; B: 2,350; C: 2,360; D: 2,400."
+      }
+    },
+    "nysed-2026-g3-mc-q15": {
+      "inputHash": "28b179df7b4ee9e0eae9d6ca3cbc18ce252e8ad8314307882b405312ed054d81",
+      "description": {
+        "en": "Question 15. Which two fractions both represent the same whole number? Choices: A: 3/3 and 6/1; B: 4/2 and 2/2; C: 3/1 and 6/2; D: 4/4 and 4/1.",
+        "es": "Pregunta 15. ¿Cuáles son las dos fracciones que representan el mismo número entero? Opciones: A: 3/3 y 6/1; B: 4/2 y 2/2; C: 3/1 y 6/2; D: 4/4 y 4/1."
+      }
+    },
+    "nysed-2026-g3-mc-q16": {
+      "inputHash": "de05dab2138f2792456b66d9a31a6408e1196e6cc4841e239fdc9afa50237adb",
+      "description": {
+        "en": "Question 16. An L-shaped region on a unit-square grid consists of an upper rectangle 2 squares wide by 3 squares tall and a lower rectangle 4 squares wide by 3 squares tall, stacked without overlap. What is its area? Choices: A: 12; B: 18; C: 20; D: 24.",
+        "es": "Pregunta 16. Una región en forma de L en una cuadrícula unitaria consiste en un rectángulo superior de 2 cuadrados por 3 cuadrados y uno inferior de 4 cuadrados por 3 cuadrados, apilados sin superponerse. ¿Cuál es su área? Opciones: A: 12; B: 18; C: 20; D: 24."
+      }
+    },
+    "nysed-2026-g3-mc-q17": {
+      "inputHash": "550881efb8ee11609f98e0181d055c06f75c7f7c10211ea834999a0ca550f095",
+      "description": {
+        "en": "Question 17. Which equation can be used to find the value of the expression 28 ÷ 4? Choices: A: 4 × blank = 28; B: 28 × 4 = blank; C: blank − 4 = 28; D: 28 − blank = 4.",
+        "es": "Pregunta 17. ¿Qué ecuación se puede usar para averiguar el valor de la expresión 28 ÷ 4? Opciones: A: 4 × espacio en blanco = 28; B: 28 × 4 = espacio en blanco; C: espacio en blanco − 4 = 28; D: 28 − espacio en blanco = 4."
+      }
+    },
+    "nysed-2026-g3-mc-q18": {
+      "inputHash": "b0a76b300eed92efba61c40661d83655913d169abd480b3827119676acb80dbd",
+      "description": {
+        "en": "Question 18. A rug in the shape of a square has side lengths of 6 feet. What is the area, in square feet, of the rug? Choices: A: 12; B: 24; C: 30; D: 36.",
+        "es": "Pregunta 18. Las longitudes de los lados de una alfombra con forma de cuadrado miden 6 pies. ¿Cuál es el área, en pies cuadrados, de la alfombra? Opciones: A: 12; B: 24; C: 30; D: 36."
+      }
+    },
+    "nysed-2026-g3-mc-q19": {
+      "inputHash": "387b91e8b168ad98054586d0d900fb73c08d24a77e0dd68373d92ed7e2fb38c7",
+      "description": {
+        "en": "Question 19. Which number line shows 6/8 at the stated location? Choices: A: 0 to 1 in 6 equal intervals, with 6/8 at the second tick after 0; B: 0 to 1 in 8 equal intervals, with 6/8 at the second tick; C: 0 to 1 in 8 equal intervals, with 6/8 at the sixth tick; D: 0 to 1 in 6 equal intervals, with 6/8 at the fourth tick.",
+        "es": "Pregunta 19. ¿Qué recta numérica muestra 6/8 en la ubicación indicada? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: en 8 intervalos iguales, con 6/8 en la segunda marca; C: en 8 intervalos iguales, con 6/8 en la sexta marca; D: en 6 intervalos iguales, con 6/8 en la cuarta marca."
+      }
+    },
+    "nysed-2026-g3-mc-q20": {
+      "inputHash": "1be1160c9ff0e4db2ae07c8c87a270977fe174942774ffbb9b1007bb92f83144",
+      "description": {
+        "en": "Question 20. Nellie made bracelets for 6 friends. She used 10 beads for each bracelet and made 2 bracelets for each friend. How many beads did Nellie use for all of the bracelets? Choices: A: 20; B: 60; C: 80; D: 120.",
+        "es": "Pregunta 20. Nellie hizo brazaletes para 6 amigos. Usó 10 cuentas en cada brazalete e hizo 2 brazaletes para cada amigo. ¿Cuántas cuentas usó para todos los brazaletes? Opciones: A: 20; B: 60; C: 80; D: 120."
+      }
+    },
+    "nysed-2026-g3-mc-q22": {
+      "inputHash": "1d3393661ea9e71ad9b6e1bddeaebcadb0f700731006751aef56cd5ef22adb86",
+      "description": {
+        "en": "Question 22. A number line from 0 to 42 shows 6 equal forward jumps of 7, landing at 7, 14, 21, 28, 35, and 42. Which division problem does it represent? Choices: A: 7 marbles placed into 42 groups with 6 in each; B: 6 marbles placed into 42 groups with 7 in each; C: 42 marbles placed into 6 groups with 7 in each; D: 42 marbles placed into 7 groups with 7 in each.",
+        "es": "Pregunta 22. Una recta de 0 a 42 muestra 6 saltos iguales de 7 hacia adelante, que llegan a 7, 14, 21, 28, 35 y 42. ¿Qué problema de división representa? Opciones: A: 7 canicas en 42 grupos con 6 en cada grupo; B: 6 canicas en 42 grupos con 7 en cada grupo; C: 42 canicas en 6 grupos con 7 en cada grupo; D: 42 canicas en 7 grupos con 7 en cada grupo."
+      }
+    },
+    "nysed-2026-g3-mc-q23": {
+      "inputHash": "59299e36419dfffbb55c9046eed4e8d1e6e5dec81ca6269e8ab056f55f415235",
+      "description": {
+        "en": "Question 23. A square is cut into 8 parts, and each part has the same area. What fraction of the entire area of the square is each part? Choices: A: 1/8; B: 7/1; C: 8/1; D: 8/8.",
+        "es": "Pregunta 23. Un cuadrado se corta en 8 partes, y cada parte tiene la misma área. ¿Qué fracción del área entera del cuadrado es cada parte? Opciones: A: 1/8; B: 7/1; C: 8/1; D: 8/8."
+      }
+    },
+    "nysed-2026-g3-mc-q24": {
+      "inputHash": "081348da94bede00009b528b3dc519bf8840a648c3644327106e7bc9a292f134",
+      "description": {
+        "en": "Question 24. Which value does the digit 6 represent in the number 7,461? Choices: A: 6 ones; B: 6 tens; C: 6 hundreds; D: 6 thousands.",
+        "es": "Pregunta 24. ¿Qué valor representa el dígito 6 en el número 7,461? Opciones: A: 6 unidades; B: 6 decenas; C: 6 centenas; D: 6 unidades de mil."
+      }
+    },
+    "nysed-2026-g3-mc-q25": {
+      "inputHash": "57ef27095915e1640b45ec637c7d5e0ea1ccf45638bd1c37047ef90814019c35",
+      "description": {
+        "en": "Question 25. A rectangular floor is a 5-row by 10-column unit-square grid. The first 4 columns are gray and the remaining 6 columns are white. Which expression finds the entire area? Choices: A: (5 × 4) + (5 × 6); B: (5 × 4) × (5 × 6); C: (5 + 4) + (5 + 6); D: (5 + 4) × (5 + 6).",
+        "es": "Pregunta 25. Un piso rectangular es una cuadrícula de 5 filas por 10 columnas. Las primeras 4 columnas son grises y las otras 6 son blancas. ¿Qué expresión halla el área total? Opciones: A: (5 × 4) + (5 × 6); B: (5 × 4) × (5 × 6); C: (5 + 4) + (5 + 6); D: (5 + 4) × (5 + 6)."
+      }
+    },
+    "nysed-2026-g3-mc-q26": {
+      "inputHash": "589cff377e96afe322bd8caea607e4ec08bec6b1a1534f09c50fca81326bd057",
+      "description": {
+        "en": "Question 26. How many unit squares are needed to cover a rectangle with an area of 18 square units without any gaps or overlaps? Choices: A: 3; B: 6; C: 18; D: 36.",
+        "es": "Pregunta 26. ¿Cuántos cuadrados unitarios se necesitan para cubrir un rectángulo con un área de 18 unidades cuadradas sin que queden huecos ni se superpongan? Opciones: A: 3; B: 6; C: 18; D: 36."
+      }
+    },
+    "nysed-2026-g3-mc-q27": {
+      "inputHash": "0e5417b87c052a0274fbd914cbf8b40561609ab48c619a4d4da99b9d1410d6cf",
+      "description": {
+        "en": "Question 27. Which number sentence is true? Choices: A: 1/3 = 3/6; B: 2/4 = 4/8; C: 4/6 = 2/4; D: 5/6 = 7/8.",
+        "es": "Pregunta 27. ¿Cuál oración numérica es verdadera? Opciones: A: 1/3 = 3/6; B: 2/4 = 4/8; C: 4/6 = 2/4; D: 5/6 = 7/8."
+      }
+    },
+    "nysed-2026-g3-mc-q28": {
+      "inputHash": "4d831a2c1046209c5b5a77005ed7d88aa5059918e38d980fae7a63983026f952",
+      "description": {
+        "en": "Question 28. Two rectangular gardens form an L-shaped large garden. The left side is 8 feet, the bottom is 8 feet, the top section is 3 feet wide, and the lower right section is 5 feet wide and 5 feet tall. What is the total area? Choices: A: 29; B: 32; C: 49; D: 54.",
+        "es": "Pregunta 28. Dos jardines rectangulares forman un jardín grande en forma de L. El lado izquierdo mide 8 pies, la base 8 pies, la sección superior tiene 3 pies de ancho y la sección inferior derecha mide 5 pies de ancho por 5 pies de alto. ¿Cuál es el área total? Opciones: A: 29; B: 32; C: 49; D: 54."
+      }
+    },
+    "nysed-2026-g3-mc-q29": {
+      "inputHash": "0613c2f492be9d595803ba3808789662c9f7bbe5bc029943014a494429016d84",
+      "description": {
+        "en": "Question 29. The equation is blank divided by 4 equals 8. What number makes the equation true? Choices: A: 4; B: 12; C: 28; D: 32.",
+        "es": "Pregunta 29. La ecuación es espacio en blanco dividido entre 4 es igual a 8. ¿Qué número hace que la ecuación sea verdadera? Opciones: A: 4; B: 12; C: 28; D: 32."
+      }
+    },
+    "nysed-2026-g3-mc-q30": {
+      "inputHash": "4b136f8af8f5ca963a4128420b12699688329ff5217894e11cc676c35253c2ea",
+      "description": {
+        "en": "Question 30. Which shape is divided into equal parts that each have an area of 1/4 of the whole? Choices: A: a circle crossed through its center by two slanted lines, forming narrow top and bottom regions and wider left and right regions; B: a rotated square divided into four same-size smaller square regions; C: a triangle divided by a vertical line from the top vertex to the base and a horizontal line near the top; D: a rectangle crossed by three parallel slanted segments, forming diagonal bands.",
+        "es": "Pregunta 30. ¿Qué forma está dividida en partes iguales, cada una con un área de 1/4 del entero? Opciones: A: un círculo atravesado por su centro por dos líneas inclinadas, que forman regiones estrechas arriba y abajo y regiones más anchas a la izquierda y a la derecha; B: un cuadrado girado dividido en cuatro regiones cuadradas más pequeñas del mismo tamaño; C: un triángulo dividido por una línea vertical desde el vértice superior hasta la base y una línea horizontal cerca de la parte superior; D: un rectángulo atravesado por tres segmentos inclinados paralelos, que forman franjas diagonales."
+      }
+    }
+  }
+}

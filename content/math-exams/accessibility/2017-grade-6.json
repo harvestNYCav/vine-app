@@ -1,0 +1,1454 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2017-grade-6-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2017-g6-mc-q1": {
+      "inputHash": "a51b4e49d1228108be94877b5dc49959e80e475d08cc45ff0b5d1a48afc53f96",
+      "description": {
+        "en": "Question 1. A bakery sells 5 apple muffins for every 2 bran muffins sold. Which table shows this ratio? Choices: A: A two-column table labeled Apple and Bran, with rows (5, 2), (10, 12), and (20, 22). B: A two-column table labeled Apple and Bran, with rows (10, 4), (15, 6), and (35, 14). C: A two-column table labeled Apple and Bran, with rows (5, 2), (18, 8), and (20, 10). D: A two-column table labeled Apple and Bran, with rows (20, 4), (30, 6), and (40, 8).",
+        "es": "Pregunta 1. Una panadería vende 5 muffins de manzana por cada 2 muffins de salvado vendidos. ¿Qué tabla muestra esta razón? Opciones: A: Tabla con columnas «Manzana» y «Salvado». Filas: 5 y 2; 10 y 12; 20 y 22. B: Tabla con columnas «Manzana» y «Salvado». Filas: 10 y 4; 15 y 6; 35 y 14. C: Tabla con columnas «Manzana» y «Salvado». Filas: 5 y 2; 18 y 8; 20 y 10. D: Tabla con columnas «Manzana» y «Salvado». Filas: 20 y 4; 30 y 6; 40 y 8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "2",
+          "(5, 2)",
+          "(10, 12)",
+          "(20, 22)",
+          "(10, 4)",
+          "(15, 6)",
+          "(35, 14)",
+          "(18, 8)",
+          "(20, 10)",
+          "(20, 4)",
+          "(30, 6)",
+          "(40, 8)",
+          "A: A two-column table labeled Apple and Bran, with rows (5, 2), (10, 12), and (20, 22)",
+          "B: A two-column table labeled Apple and Bran, with rows (10, 4), (15, 6), and (35, 14)",
+          "C: A two-column table labeled Apple and Bran, with rows (5, 2), (18, 8), and (20, 10)",
+          "D: A two-column table labeled Apple and Bran, with rows (20, 4), (30, 6), and (40, 8)"
+        ],
+        "es": [
+          "5",
+          "2",
+          "10",
+          "12",
+          "20",
+          "22",
+          "4",
+          "15",
+          "6",
+          "35",
+          "14",
+          "18",
+          "8",
+          "30",
+          "40",
+          "A: Tabla con columnas «Manzana» y «Salvado». Filas: 5 y 2; 10 y 12; 20 y 22",
+          "B: Tabla con columnas «Manzana» y «Salvado». Filas: 10 y 4; 15 y 6; 35 y 14",
+          "C: Tabla con columnas «Manzana» y «Salvado». Filas: 5 y 2; 18 y 8; 20 y 10",
+          "D: Tabla con columnas «Manzana» y «Salvado». Filas: 20 y 4; 30 y 6; 40 y 8"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q2": {
+      "inputHash": "e899cf835b51c5a57bfe603e75f58fa1885fcc16a046a5798025c1b7bb27256f",
+      "description": {
+        "en": "Question 2. In which set do all of the values make the inequality 2x − 1 < 10 true? Choices: A: {10, 15, 20} B: {5, 7, 9} C: {4, 6, 8} D: {2, 3, 4}",
+        "es": "Pregunta 2. ¿En qué conjunto todos los valores hacen que la desigualdad 2x − 1 < 10 sea verdadera? Opciones: A: {10, 15, 20} B: {5, 7, 9} C: {4, 6, 8} D: {2, 3, 4}"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2x − 1 < 10",
+          "{10, 15, 20}",
+          "{5, 7, 9}",
+          "{4, 6, 8}",
+          "{2, 3, 4}",
+          "A: {10, 15, 20}",
+          "B: {5, 7, 9}",
+          "C: {4, 6, 8}",
+          "D: {2, 3, 4}",
+          "1 < 10"
+        ],
+        "es": [
+          "2x − 1 < 10",
+          "{10, 15, 20}",
+          "{5, 7, 9}",
+          "{4, 6, 8}",
+          "{2, 3, 4}",
+          "A: {10, 15, 20}",
+          "B: {5, 7, 9}",
+          "C: {4, 6, 8}",
+          "D: {2, 3, 4}",
+          "1 < 10"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q3": {
+      "inputHash": "70de501ae6649c1fa31e5e090417a53d7b8663dde482bce090e8d6c9b5f36a96",
+      "description": {
+        "en": "Question 3. The model below represents a division problem. A horizontal number line has arrows at both ends and is marked in increments of 1/3 from 0 through 4; the integers 0, 1, 2, 3, and 4 are labeled. Beneath it is a bar extending from 0 to 3 and partitioned into thirds by dashed lines. The portion from 0 through 2 1/3 is shaded, and the portion from 2 1/3 through 3 is unshaded. Braces beneath the bar mark consecutive groups from 0 to 2/3, from 2/3 to 1 1/3, from 1 1/3 to 2, and from 2 to 2 2/3; each brace is labeled 2/3. Which equation is represented by the model? Choices: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 1/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3",
+        "es": "Pregunta 3. El siguiente modelo representa un problema de división. Una recta numérica horizontal, con flechas en ambos extremos, está marcada desde 0 hasta 4. Entre cada par de números enteros hay tres intervalos iguales, de modo que las marcas representan tercios. Debajo aparece una barra rectangular desde 0 hasta 3, dividida en tercios. La parte desde 0 hasta 2 1/3 está sombreada de gris; desde 2 1/3 hasta 3 queda sin sombrear. Debajo de la barra hay cuatro llaves consecutivas, cada una de longitud 2/3: las tres primeras cubren por completo la parte sombreada, desde 0 hasta 2, y la cuarta comienza en 2, cubre el último 1/3 sombreado y continúa otro 1/3 dentro de la parte no sombreada. Cada llave está rotulada 2/3. ¿A qué ecuación representa el modelo? Opciones: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 1/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "2 1/3",
+          "2/3",
+          "1 1/3",
+          "2 2/3",
+          "2 1/3 ÷ 2/3 = 3 1/2",
+          "2 1/3 ÷ 1/3 = 3 1/3",
+          "7/1 ÷ 1/3 = 2 1/3",
+          "2/3 ÷ 3 1/2 = 2 1/3",
+          "A: 2 1/3 ÷ 2/3 = 3 1/2",
+          "B: 2 1/3 ÷ 1/3 = 3 1/3",
+          "C: 7/1 ÷ 1/3 = 2 1/3",
+          "D: 2/3 ÷ 3 1/2 = 2 1/3",
+          "3 1/2",
+          "3 1/3",
+          "7/1"
+        ],
+        "es": [
+          "0",
+          "4",
+          "2 1/3",
+          "3",
+          "2/3",
+          "2",
+          "1/3",
+          "2 1/3 ÷ 2/3 = 3 1/2",
+          "2 1/3 ÷ 1/3 = 3 1/3",
+          "7/1 ÷ 1/3 = 2 1/3",
+          "2/3 ÷ 3 1/2 = 2 1/3",
+          "A: 2 1/3 ÷ 2/3 = 3 1/2",
+          "B: 2 1/3 ÷ 1/3 = 3 1/3",
+          "C: 7/1 ÷ 1/3 = 2 1/3",
+          "D: 2/3 ÷ 3 1/2 = 2 1/3",
+          "3 1/2",
+          "3 1/3",
+          "7/1"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q4": {
+      "inputHash": "3b1c9d2d76679bd67856290b3b1fc2e46cfd9ccfc50683765e999ee7b84614e1",
+      "description": {
+        "en": "Question 4. What is the value of the expression below? 2[3(4² + 1)] − 2³ Choices: A: 156 B: 110 C: 94 D: 48",
+        "es": "Pregunta 4. ¿Cuál es el valor de la siguiente expresión? 2[3(4² + 1)] − 2³ Opciones: A: 156 B: 110 C: 94 D: 48"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2[3(4² + 1)] − 2³",
+          "156",
+          "110",
+          "94",
+          "48",
+          "A: 156",
+          "B: 110",
+          "C: 94",
+          "D: 48",
+          "(4² + 1)",
+          "2³"
+        ],
+        "es": [
+          "2[3(4² + 1)] − 2³",
+          "4²",
+          "2³",
+          "156",
+          "110",
+          "94",
+          "48",
+          "A: 156",
+          "B: 110",
+          "C: 94",
+          "D: 48",
+          "(4² + 1)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q9": {
+      "inputHash": "d3013a4915f553eab06375b68cf213f62498d48500b837e2397409a5c747631f",
+      "description": {
+        "en": "Question 9. Triangle QRS, with vertices Q(6, −2), R(4, −7), and S(2, −5), is drawn inside a rectangle on a coordinate plane. The x-axis is horizontal and the y-axis is vertical. The rectangle has corners (2, −2), (6, −2), (6, −7), and (2, −7). Q is the upper-right corner of the rectangle, R lies on its bottom side, and S lies on its left side. Segments connect Q to R, R to S, and S to Q. What is the area, in square units, of triangle QRS? Choices: A: 7 B: 10 C: 13 D: 18",
+        "es": "Pregunta 9. El triángulo QRS, con los vértices Q(6, −2), R(4, −7) y S(2, −5), está dibujado adentro de un rectángulo. El plano de coordenadas tiene el eje x horizontal, positivo hacia la derecha, y el eje y vertical, positivo hacia arriba. El rectángulo tiene lados paralelos a los ejes y vértices (2, −2), (6, −2), (6, −7) y (2, −7). El triángulo se forma con segmentos que unen Q(6, −2) con R(4, −7), R(4, −7) con S(2, −5), y S(2, −5) con Q(6, −2). ¿Cuál es el área, en unidades cuadradas, del triángulo QRS? Opciones: A: 7 B: 10 C: 13 D: 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Q(6, −2)",
+          "R(4, −7)",
+          "S(2, −5)",
+          "(2, −2)",
+          "(6, −2)",
+          "(6, −7)",
+          "(2, −7)",
+          "7",
+          "10",
+          "13",
+          "18",
+          "A: 7",
+          "B: 10",
+          "C: 13",
+          "D: 18",
+          "(4, −7)",
+          "(2, −5)"
+        ],
+        "es": [
+          "Q(6, −2)",
+          "R(4, −7)",
+          "S(2, −5)",
+          "(2, −2)",
+          "(6, −2)",
+          "(6, −7)",
+          "(2, −7)",
+          "7",
+          "10",
+          "13",
+          "18",
+          "A: 7",
+          "B: 10",
+          "C: 13",
+          "D: 18",
+          "(4, −7)",
+          "(2, −5)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q10": {
+      "inputHash": "8a2c9a0a24994c418477ce2e88cdb6ab55951a31123e74927c9cebaa600013a2",
+      "description": {
+        "en": "Question 10. Points F and G have been plotted on a coordinate plane. The x-axis and y-axis begin at 0 and are marked in one-unit increments. Point F is at (3, 2), and point G is at (4, 4). Point G and point H are the same distance from point F. Which coordinates could be the location of point H? Choices: A: (1, 2) B: (4, 2) C: (5, 1) D: (2, 5)",
+        "es": "Pregunta 10. Se han marcado los puntos F y G en el plano de coordenadas a continuación. El plano muestra el primer cuadrante, con el eje x horizontal y el eje y vertical; ambos parten de 0 y tienen cuadrícula de una unidad. El punto F está en (3, 2) y el punto G está en (4, 4). El punto G y el punto H se encuentran a la misma distancia del punto F. ¿Qué coordenadas podrían ser la ubicación del punto H? Opciones: A: (1, 2) B: (4, 2) C: (5, 1) D: (2, 5)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3, 2)",
+          "(4, 4)",
+          "(1, 2)",
+          "(4, 2)",
+          "(5, 1)",
+          "(2, 5)",
+          "A: (1, 2)",
+          "B: (4, 2)",
+          "C: (5, 1)",
+          "D: (2, 5)"
+        ],
+        "es": [
+          "F",
+          "G",
+          "H",
+          "(3, 2)",
+          "(4, 4)",
+          "(1, 2)",
+          "(4, 2)",
+          "(5, 1)",
+          "(2, 5)",
+          "A: (1, 2)",
+          "B: (4, 2)",
+          "C: (5, 1)",
+          "D: (2, 5)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q13": {
+      "inputHash": "9b1ce97be8820c5b1d2114ea96028f1756be52e0eccc599a1093009fbe9f8a02",
+      "description": {
+        "en": "Question 13. A bookstore is selling books for $10 each. Which graph shows the relationship between the number of books, x, the store sold and the total amount of money, y, paid from the book sales? Each choice is a graph titled BOOK SALES with a horizontal x-axis labeled Number of Books Sold, a vertical y-axis labeled Total Amount Paid (dollars), and an increasing straight ray that begins at the origin and continues up and to the right. Choices: A: Both axes are numbered 0 through 5 in increments of 1. Closed points on the ray are (1, 1), (2, 2), (3, 3), (4, 4), and (5, 5). B: The x-axis is numbered 0 through 5 in increments of 1, and the y-axis is numbered 0 through 50 in increments of 10. Closed points on the ray are (1, 10), (2, 20), (3, 30), (4, 40), and (5, 50). C: The x-axis is numbered 0 through 50 in increments of 10, and the y-axis is numbered 0 through 5 in increments of 1. Closed points on the ray are (10, 1), (20, 2), (30, 3), (40, 4), and (50, 5). D: Both axes are numbered 0 through 50 in increments of 10. Closed points on the ray are (10, 10), (20, 20), (30, 30), (40, 40), and (50, 50).",
+        "es": "Pregunta 13. Una librería está vendiendo libros a $10 cada uno. ¿Qué gráfico muestra la relación entre la cantidad de libros, x, que la librería vendió y la cantidad total de dinero, y, que se pagó en las ventas de libros? Opciones: A: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 1, 2, 3, 4 y 5. El eje y, «Cantidad total pagada (dólares)», está marcado 1, 2, 3, 4 y 5. Una recta ascendente parte del origen y pasa por (1, 1), (2, 2), (3, 3), (4, 4) y (5, 5), con una flecha que continúa hacia arriba y a la derecha. B: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 1, 2, 3, 4 y 5. El eje y, «Cantidad total pagada (dólares)», está marcado 10, 20, 30, 40 y 50. Una recta ascendente parte del origen y pasa por (1, 10), (2, 20), (3, 30), (4, 40) y (5, 50), con una flecha que continúa hacia arriba y a la derecha. C: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 10, 20, 30, 40 y 50. El eje y, «Cantidad total pagada (dólares)», está marcado 1, 2, 3, 4 y 5. Una recta ascendente parte del origen y pasa por (10, 1), (20, 2), (30, 3), (40, 4) y (50, 5), con una flecha que continúa hacia arriba y a la derecha. D: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 10, 20, 30, 40 y 50. El eje y, «Cantidad total pagada (dólares)», está marcado 10, 20, 30, 40 y 50. Una recta ascendente parte del origen y pasa por (10, 10), (20, 20), (30, 30), (40, 40) y (50, 50), con una flecha que continúa hacia arriba y a la derecha."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$10",
+          "(1, 1)",
+          "(2, 2)",
+          "(3, 3)",
+          "(4, 4)",
+          "(5, 5)",
+          "(1, 10)",
+          "(2, 20)",
+          "(3, 30)",
+          "(4, 40)",
+          "(5, 50)",
+          "(10, 1)",
+          "(20, 2)",
+          "(30, 3)",
+          "(40, 4)",
+          "(50, 5)",
+          "(10, 10)",
+          "(20, 20)",
+          "(30, 30)",
+          "(40, 40)",
+          "(50, 50)",
+          "A: Both axes are numbered 0 through 5 in increments of 1. Closed points on the ray are (1, 1), (2, 2), (3, 3), (4, 4), and (5, 5)",
+          "B: The x-axis is numbered 0 through 5 in increments of 1, and the y-axis is numbered 0 through 50 in increments of 10. Closed points on the ray are (1, 10), (2, 20), (3, 30), (4, 40), and (5, 50)",
+          "C: The x-axis is numbered 0 through 50 in increments of 10, and the y-axis is numbered 0 through 5 in increments of 1. Closed points on the ray are (10, 1), (20, 2), (30, 3), (40, 4), and (50, 5)",
+          "D: Both axes are numbered 0 through 50 in increments of 10. Closed points on the ray are (10, 10), (20, 20), (30, 30), (40, 40), and (50, 50)"
+        ],
+        "es": [
+          "$10",
+          "x",
+          "y",
+          "(1, 1)",
+          "(2, 2)",
+          "(3, 3)",
+          "(4, 4)",
+          "(5, 5)",
+          "(1, 10)",
+          "(2, 20)",
+          "(3, 30)",
+          "(4, 40)",
+          "(5, 50)",
+          "(10, 1)",
+          "(20, 2)",
+          "(30, 3)",
+          "(40, 4)",
+          "(50, 5)",
+          "(10, 10)",
+          "(20, 20)",
+          "(30, 30)",
+          "(40, 40)",
+          "(50, 50)",
+          "A: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 1, 2, 3, 4 y 5. El eje y, «Cantidad total pagada (dólares)», está marcado 1, 2, 3, 4 y 5. Una recta ascendente parte del origen y pasa por (1, 1), (2, 2), (3, 3), (4, 4) y (5, 5), con una flecha que continúa hacia arriba y a la derecha",
+          "B: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 1, 2, 3, 4 y 5. El eje y, «Cantidad total pagada (dólares)», está marcado 10, 20, 30, 40 y 50. Una recta ascendente parte del origen y pasa por (1, 10), (2, 20), (3, 30), (4, 40) y (5, 50), con una flecha que continúa hacia arriba y a la derecha",
+          "C: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 10, 20, 30, 40 y 50. El eje y, «Cantidad total pagada (dólares)», está marcado 1, 2, 3, 4 y 5. Una recta ascendente parte del origen y pasa por (10, 1), (20, 2), (30, 3), (40, 4) y (50, 5), con una flecha que continúa hacia arriba y a la derecha",
+          "D: Gráfico titulado «VENTAS DE LIBROS». El eje x, «Cantidad de libros vendidos», está marcado 0, 10, 20, 30, 40 y 50. El eje y, «Cantidad total pagada (dólares)», está marcado 10, 20, 30, 40 y 50. Una recta ascendente parte del origen y pasa por (10, 10), (20, 20), (30, 30), (40, 40) y (50, 50), con una flecha que continúa hacia arriba y a la derecha"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q14": {
+      "inputHash": "14ab2b4b90660a54689737286c4a4a24567fc9e382b4fea329c40c60d3270c40",
+      "description": {
+        "en": "Question 14. The ratio of students to adults on a field trip is 8 to 1. Which table correctly shows this ratio for each grade? Each table has columns labeled Grade, Number of Students, and Number of Adults. Choices: A: Grade 6: 96 students and 88 adults; grade 7: 120 students and 112 adults; grade 8: 136 students and 128 adults. B: Grade 6: 96 students and 104 adults; grade 7: 120 students and 128 adults; grade 8: 136 students and 144 adults. C: Grade 6: 96 students and 12 adults; grade 7: 120 students and 15 adults; grade 8: 136 students and 17 adults. D: Grade 6: 96 students and 11 adults; grade 7: 120 students and 13 adults; grade 8: 136 students and 15 adults.",
+        "es": "Pregunta 14. La razón entre alumnos y adultos en una excursión es de 8 a 1. ¿Qué tabla muestra correctamente esta razón para cada grado? Opciones: A: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 88 adultos. Grado 7: 120 alumnos y 112 adultos. Grado 8: 136 alumnos y 128 adultos. B: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 104 adultos. Grado 7: 120 alumnos y 128 adultos. Grado 8: 136 alumnos y 144 adultos. C: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 12 adultos. Grado 7: 120 alumnos y 15 adultos. Grado 8: 136 alumnos y 17 adultos. D: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 11 adultos. Grado 7: 120 alumnos y 13 adultos. Grado 8: 136 alumnos y 15 adultos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 to 1",
+          "96 students and 88 adults",
+          "120 students and 112 adults",
+          "136 students and 128 adults",
+          "96 students and 104 adults",
+          "120 students and 128 adults",
+          "136 students and 144 adults",
+          "96 students and 12 adults",
+          "120 students and 15 adults",
+          "136 students and 17 adults",
+          "96 students and 11 adults",
+          "120 students and 13 adults",
+          "136 students and 15 adults",
+          "A: Grade 6: 96 students and 88 adults; grade 7: 120 students and 112 adults; grade 8: 136 students and 128 adults",
+          "B: Grade 6: 96 students and 104 adults; grade 7: 120 students and 128 adults; grade 8: 136 students and 144 adults",
+          "C: Grade 6: 96 students and 12 adults; grade 7: 120 students and 15 adults; grade 8: 136 students and 17 adults",
+          "D: Grade 6: 96 students and 11 adults; grade 7: 120 students and 13 adults; grade 8: 136 students and 15 adults"
+        ],
+        "es": [
+          "8 a 1",
+          "6",
+          "96",
+          "88",
+          "7",
+          "120",
+          "112",
+          "8",
+          "136",
+          "128",
+          "104",
+          "144",
+          "12",
+          "15",
+          "17",
+          "11",
+          "13",
+          "A: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 88 adultos. Grado 7: 120 alumnos y 112 adultos. Grado 8: 136 alumnos y 128 adultos",
+          "B: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 104 adultos. Grado 7: 120 alumnos y 128 adultos. Grado 8: 136 alumnos y 144 adultos",
+          "C: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 12 adultos. Grado 7: 120 alumnos y 15 adultos. Grado 8: 136 alumnos y 17 adultos",
+          "D: Tabla con columnas «Grado», «Cantidad de alumnos» y «Cantidad de adultos». Grado 6: 96 alumnos y 11 adultos. Grado 7: 120 alumnos y 13 adultos. Grado 8: 136 alumnos y 15 adultos"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q15": {
+      "inputHash": "322e67a4e7a32d0573b1c21b45367bed2f2113af4382608f896f12f0ac36b099",
+      "description": {
+        "en": "Question 15. Which phrase is a description of 2m + 7? Choices: A: 7 more than 2 times m. B: 2 more than 7 times m. C: 2 times the sum of 7 and m. D: 7 times the sum of 2 and m.",
+        "es": "Pregunta 15. ¿Qué frase es una descripción de 2m + 7? Opciones: A: 7 más que 2 veces m. B: 2 más que 7 veces m. C: 2 veces la suma de 7 y m. D: 7 veces la suma de 2 y m."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2m + 7",
+          "7 more than 2 times m",
+          "2 more than 7 times m",
+          "2 times the sum of 7 and m",
+          "7 times the sum of 2 and m",
+          "A: 7 more than 2 times m",
+          "B: 2 more than 7 times m",
+          "C: 2 times the sum of 7 and m",
+          "D: 7 times the sum of 2 and m"
+        ],
+        "es": [
+          "2m + 7",
+          "7 más que 2 veces m",
+          "2 más que 7 veces m",
+          "2 veces la suma de 7 y m",
+          "7 veces la suma de 2 y m",
+          "A: 7 más que 2 veces m",
+          "B: 2 más que 7 veces m",
+          "C: 2 veces la suma de 7 y m",
+          "D: 7 veces la suma de 2 y m"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q16": {
+      "inputHash": "f27ee78fe3f23764cc4673882e216b815a3f266098c7434e7219210350373b3e",
+      "description": {
+        "en": "Question 16. George has $23 to spend on art supplies. He wants to buy markers, paper, and glue. If the total cost of the markers and paper is more than $14, which inequality represents the dollar amount, p, George can spend on glue? Choices: A: p < 9. B: p > 9. C: p < 37. D: p > 37.",
+        "es": "Pregunta 16. George tiene $23 para gastar en materiales de arte. Él quiere comprar marcadores, papel y pegamento. Si el costo total de los marcadores y el papel es mayor a $14, ¿qué desigualdad representa la cantidad de dólares, p, que George puede gastar en pegamento? Opciones: A: p < 9. B: p > 9. C: p < 37. D: p > 37."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$23",
+          "$14",
+          "p < 9",
+          "p > 9",
+          "p < 37",
+          "p > 37",
+          "A: p < 9",
+          "B: p > 9",
+          "C: p < 37",
+          "D: p > 37"
+        ],
+        "es": [
+          "$23",
+          "$14",
+          "p < 9",
+          "p > 9",
+          "p < 37",
+          "p > 37",
+          "A: p < 9",
+          "B: p > 9",
+          "C: p < 37",
+          "D: p > 37"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q17": {
+      "inputHash": "df6fca266d8a16645e3971095bf1e73be6fc063608641e6e71b8cc63c668a9eb",
+      "description": {
+        "en": "Question 17. The net of a rectangular prism is provided. The surface area of each face is labeled. Four rectangular faces form a horizontal row. From left to right, their areas are 24 sq. cm, 18 sq. cm, 24 sq. cm, and 18 sq. cm. A face with an area of 12 sq. cm is attached above the third face, and another face with an area of 12 sq. cm is attached below the third face. Dashed fold lines separate all adjoining faces. Which values represent the dimensions, in centimeters, of the rectangular prism? Choices: A: 12, 18, 24. B: 3, 4, 8. C: 3, 4, 6. D: 2, 9, 12.",
+        "es": "Pregunta 17. A continuación se muestra la superficie de un prisma rectangular. El área de superficie de cada cara está identificada. La red tiene cuatro caras rectangulares alineadas horizontalmente. De izquierda a derecha, sus áreas son 24 cm cuadrados, 18 cm cuadrados, 24 cm cuadrados y 18 cm cuadrados. Una cara de 12 cm cuadrados está unida arriba de la tercera cara de la fila, y otra cara de 12 cm cuadrados está unida debajo de esa misma cara. Las líneas exteriores son continuas y las líneas entre caras son discontinuas, indicando los dobleces. ¿Qué valores representan las dimensiones, en centímetros, del prisma rectangular? Opciones: A: 12, 18, 24. B: 3, 4, 8. C: 3, 4, 6. D: 2, 9, 12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "24 sq. cm",
+          "18 sq. cm",
+          "12 sq. cm",
+          "12, 18, 24",
+          "3, 4, 8",
+          "3, 4, 6",
+          "2, 9, 12",
+          "A: 12, 18, 24",
+          "B: 3, 4, 8",
+          "C: 3, 4, 6",
+          "D: 2, 9, 12"
+        ],
+        "es": [
+          "24 cm cuadrados",
+          "18 cm cuadrados",
+          "12 cm cuadrados",
+          "12, 18, 24",
+          "3, 4, 8",
+          "3, 4, 6",
+          "2, 9, 12",
+          "A: 12, 18, 24",
+          "B: 3, 4, 8",
+          "C: 3, 4, 6",
+          "D: 2, 9, 12"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q18": {
+      "inputHash": "57ed9b5d1cf74c4f3de992f0cd1cd59ec47063e63475753b787467a35ec187de",
+      "description": {
+        "en": "Question 18. A salesperson had $240,000 in sales last year, which is 60% of the sales she had this year. Which equation could be used to determine x, the salesperson’s total amount of sales, in dollars, for this year? Choices: A: 240,000/x = 60/100. B: 240,000/100 = x/60. C: 60/240,000 = x/100. D: 60/100 = x/240,000.",
+        "es": "Pregunta 18. Una vendedora tuvo $240,000 en ventas el año pasado, lo cual es el 60 % de las ventas que ella tuvo este año. ¿Qué ecuación podría usarse para determinar x, el monto total de ventas, en dólares, de la vendedora para este año? Opciones: A: 240,000/x = 60/100. B: 240,000/100 = x/60. C: 60/240,000 = x/100. D: 60/100 = x/240,000."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$240,000",
+          "60%",
+          "240,000/x = 60/100",
+          "240,000/100 = x/60",
+          "60/240,000 = x/100",
+          "60/100 = x/240,000",
+          "A: 240,000/x = 60/100",
+          "B: 240,000/100 = x/60",
+          "C: 60/240,000 = x/100",
+          "D: 60/100 = x/240,000",
+          "60/100",
+          "000/100",
+          "60/240"
+        ],
+        "es": [
+          "$240,000",
+          "60 %",
+          "240,000/x = 60/100",
+          "240,000/100 = x/60",
+          "60/240,000 = x/100",
+          "60/100 = x/240,000",
+          "A: 240,000/x = 60/100",
+          "B: 240,000/100 = x/60",
+          "C: 60/240,000 = x/100",
+          "D: 60/100 = x/240,000",
+          "60/100",
+          "000/100",
+          "60/240"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q19": {
+      "inputHash": "db754722ff55befb0c646ebf3c03262cb6ebb5834ac208d38aebbeaa7ef01fd0",
+      "description": {
+        "en": "Question 19. A student formed a pattern in which each term is represented by a sum. A two-column table is labeled n and Sum. Its rows are: n = 1, Sum = 1; n = 2, Sum = 1 + 3; n = 3, Sum = 1 + 3 + 5; and n = 4, Sum = 1 + 3 + 5 + 7. Which expression can be used to determine the value of the sum in any term, n? Choices: A: n². B: 4n. C: n + 3. D: 2ⁿ.",
+        "es": "Pregunta 19. Un alumno formó un patrón en el cual cada término es representado por una suma. A continuación se muestran los primeros cuatro términos del patrón. Una tabla tiene dos columnas, con encabezados n y Suma. Sus filas son: n = 1, Suma = 1; n = 2, Suma = 1 + 3; n = 3, Suma = 1 + 3 + 5; n = 4, Suma = 1 + 3 + 5 + 7. ¿Qué expresión puede usarse para determinar el valor de la suma en cualquier término, n? Opciones: A: n². B: 4n. C: n + 3. D: 2ⁿ."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "n = 1",
+          "Sum = 1",
+          "n = 2",
+          "Sum = 1 + 3",
+          "n = 3",
+          "Sum = 1 + 3 + 5",
+          "n = 4",
+          "Sum = 1 + 3 + 5 + 7",
+          "n²",
+          "4n",
+          "n + 3",
+          "2ⁿ",
+          "A: n²",
+          "B: 4n",
+          "C: n + 3",
+          "D: 2ⁿ"
+        ],
+        "es": [
+          "n = 1",
+          "Suma = 1",
+          "n = 2",
+          "Suma = 1 + 3",
+          "n = 3",
+          "Suma = 1 + 3 + 5",
+          "n = 4",
+          "Suma = 1 + 3 + 5 + 7",
+          "n²",
+          "4n",
+          "n + 3",
+          "2ⁿ",
+          "A: n²",
+          "B: 4n",
+          "C: n + 3",
+          "D: 2ⁿ"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q20": {
+      "inputHash": "b8093837a7a7f591e0e50bde8ff2eaa567aac67113543e6e97b1e059bbaea77d",
+      "description": {
+        "en": "Question 20. Jason will use a 1/3-gallon pitcher to fill an empty 3/4-gallon water jug. How much water will he need in order to completely fill the water jug? Choices: A: between 1 and 2 full pitchers. B: between 2 and 3 full pitchers. C: about 1/2 of a full pitcher. D: about 1/4 of a full pitcher.",
+        "es": "Pregunta 20. Jason usará una jarra de 1/3 galones para llenar un cántaro de agua vacío de 3/4 galones. ¿Cuánta agua necesitará para llenar por completo el cántaro de agua? Opciones: A: entre 1 y 2 jarras llenas. B: entre 2 y 3 jarras llenas. C: aproximadamente 1/2 de una jarra llena. D: aproximadamente 1/4 de una jarra llena."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3-gallon",
+          "3/4-gallon",
+          "between 1 and 2 full pitchers",
+          "between 2 and 3 full pitchers",
+          "1/2",
+          "1/4",
+          "A: between 1 and 2 full pitchers",
+          "B: between 2 and 3 full pitchers",
+          "C: about 1/2 of a full pitcher",
+          "D: about 1/4 of a full pitcher",
+          "1/3",
+          "3/4"
+        ],
+        "es": [
+          "1/3 galones",
+          "3/4 galones",
+          "entre 1 y 2 jarras llenas",
+          "entre 2 y 3 jarras llenas",
+          "1/2 de una jarra llena",
+          "1/4 de una jarra llena",
+          "A: entre 1 y 2 jarras llenas",
+          "B: entre 2 y 3 jarras llenas",
+          "C: aproximadamente 1/2 de una jarra llena",
+          "D: aproximadamente 1/4 de una jarra llena",
+          "1/3",
+          "3/4",
+          "1/2",
+          "1/4"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q23": {
+      "inputHash": "951b075caf8ce6d12e67af253b353aa303f9dcce42d236eb3543717adffd0257",
+      "description": {
+        "en": "Question 23. Which expression is equivalent to 5(6x + 3y)? Choices: A: 11x + 3y. B: 11x + 8y. C: 30x + 3y. D: 30x + 15y.",
+        "es": "Pregunta 23. ¿Qué expresión es equivalente a 5(6x + 3y)? Opciones: A: 11x + 3y. B: 11x + 8y. C: 30x + 3y. D: 30x + 15y."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5(6x + 3y)",
+          "11x + 3y",
+          "11x + 8y",
+          "30x + 3y",
+          "30x + 15y",
+          "A: 11x + 3y",
+          "B: 11x + 8y",
+          "C: 30x + 3y",
+          "D: 30x + 15y",
+          "(6x + 3y)"
+        ],
+        "es": [
+          "5(6x + 3y)",
+          "11x + 3y",
+          "11x + 8y",
+          "30x + 3y",
+          "30x + 15y",
+          "A: 11x + 3y",
+          "B: 11x + 8y",
+          "C: 30x + 3y",
+          "D: 30x + 15y",
+          "(6x + 3y)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q24": {
+      "inputHash": "8821f55218a93f957457881b21086923a4192a6d87ede5c80c1b8ab4ebc1c6bd",
+      "description": {
+        "en": "Question 24. A circle graph titled “SUPPORTERS AT FOOTBALL GAME” shows the percentages of people attending a football game who were supporters of either the home team or the visiting team. The visiting-team sector is 20% of the circle, and the home-team sector is the remaining 80%. If the total number of people attending the game was 64,000, how many people were supporters of the home team? Choices: A: 12,800. B: 38,400. C: 48,000. D: 51,200.",
+        "es": "Pregunta 24. El siguiente diagrama muestra los porcentajes de personas que asistieron a un juego de fútbol que eran hinchas del equipo local o del equipo visitante. Una gráfica circular titulada «HINCHAS EN JUEGO DE FÚTBOL» está dividida en dos sectores: el sector mayor, sombreado en gris, representa al Equipo local, 80 %; el sector menor, sin sombreado, representa al Equipo visitante, 20 %. Si el número total de personas que asistieron al juego fue de 64,000, ¿cuántas personas eran hinchas del equipo local? Opciones: A: 12,800. B: 38,400. C: 48,000. D: 51,200."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20%",
+          "80%",
+          "64,000",
+          "12,800",
+          "38,400",
+          "48,000",
+          "51,200",
+          "A: 12,800",
+          "B: 38,400",
+          "C: 48,000",
+          "D: 51,200"
+        ],
+        "es": [
+          "Equipo local, 80 %",
+          "Equipo visitante, 20 %",
+          "64,000",
+          "12,800",
+          "38,400",
+          "48,000",
+          "51,200",
+          "A: 12,800",
+          "B: 38,400",
+          "C: 48,000",
+          "D: 51,200"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q25": {
+      "inputHash": "87c94b4585d85dab00437cf9c144c0f038b14f72d64d7d32c3807d563b2a9b78",
+      "description": {
+        "en": "Question 25. Which pair of expressions is equivalent for any variable value greater than zero? Choices: A: 3(x + 2) and 3x + 2. B: 4d + 2e and 8d + e. C: f + f + f + g and 3fg. D: b + b + 3c and 2b + 3c.",
+        "es": "Pregunta 25. ¿Qué par de expresiones es equivalente para cualquier valor de variable mayor que cero? Opciones: A: 3(x + 2) y 3x + 2. B: 4d + 2e y 8d + e. C: f + f + f + g y 3fg. D: b + b + 3c y 2b + 3c."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3(x + 2)",
+          "3x + 2",
+          "4d + 2e",
+          "8d + e",
+          "f + f + f + g",
+          "3fg",
+          "b + b + 3c",
+          "2b + 3c",
+          "A: 3(x + 2) and 3x + 2",
+          "B: 4d + 2e and 8d + e",
+          "C: f + f + f + g and 3fg",
+          "D: b + b + 3c and 2b + 3c",
+          "(x + 2)"
+        ],
+        "es": [
+          "3(x + 2)",
+          "3x + 2",
+          "4d + 2e",
+          "8d + e",
+          "f + f + f + g",
+          "3fg",
+          "b + b + 3c",
+          "2b + 3c",
+          "A: 3(x + 2) y 3x + 2",
+          "B: 4d + 2e y 8d + e",
+          "C: f + f + f + g y 3fg",
+          "D: b + b + 3c y 2b + 3c",
+          "(x + 2)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q26": {
+      "inputHash": "c09328002cfdc4c5aa8347349c319e53cf09ada67bdd9650e14d3bad9d390a12",
+      "description": {
+        "en": "Question 26. What is the greatest common factor of 42 and 84? Choices: A: 7. B: 21. C: 42. D: 84.",
+        "es": "Pregunta 26. ¿Cuál es el máximo común divisor de 42 y 84? Opciones: A: 7. B: 21. C: 42. D: 84."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "42",
+          "84",
+          "7",
+          "21",
+          "A: 7",
+          "B: 21",
+          "C: 42",
+          "D: 84"
+        ],
+        "es": [
+          "42",
+          "84",
+          "7",
+          "21",
+          "A: 7",
+          "B: 21",
+          "C: 42",
+          "D: 84"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q27": {
+      "inputHash": "5463ea8759f8fdddbef515a0330d13f445ab3d03f2da0cb1f12da463737b6dd6",
+      "description": {
+        "en": "Question 27. Kira studied data collected on the school basketball team for one season. She noticed that a player on the team had 13 successful free throws out of a total of 20 attempted free throws. To find the percentage of the total free throws attempted by this player that were successful, Kira set up the equivalent ratios 13/20 = m/n. What are the values for m and n in Kira’s equation? Choices: A: m = 65 and n = 1. B: m = 100 and n = 65. C: m = 93 and n = 100. D: m = 65 and n = 100.",
+        "es": "Pregunta 27. Kira estudió los datos recopilados sobre el equipo de básquetbol de la escuela para una temporada. Ella notó que un jugador del equipo tenía 13 tiros libres convertidos de un total de 20 tiros libres intentados. Para averiguar el porcentaje del total de tiros libres intentados por este jugador que fueron convertidos, Kira estableció las siguientes razones equivalentes: 13/20 = m/n. ¿Cuáles son los valores para m y n en la ecuación de Kira? Opciones: A: m = 65; n = 1. B: m = 100; n = 65. C: m = 93; n = 100. D: m = 65; n = 100."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "13",
+          "20",
+          "13/20 = m/n",
+          "m = 65",
+          "n = 1",
+          "m = 100",
+          "n = 65",
+          "m = 93",
+          "n = 100",
+          "A: m = 65 and n = 1",
+          "B: m = 100 and n = 65",
+          "C: m = 93 and n = 100",
+          "D: m = 65 and n = 100",
+          "13/20"
+        ],
+        "es": [
+          "13/20",
+          "m/n",
+          "m = 65",
+          "n = 1",
+          "m = 100",
+          "n = 65",
+          "m = 93",
+          "n = 100",
+          "A: m = 65; n = 1",
+          "B: m = 100; n = 65",
+          "C: m = 93; n = 100",
+          "D: m = 65; n = 100"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q28": {
+      "inputHash": "16f6556f0782480bf4f12cc2c7d825bec49dab9babef33cb99c52eb0fb15e07c",
+      "description": {
+        "en": "Question 28. What is the least common multiple of 4 and 10? Choices: A: 14. B: 20. C: 40. D: 60.",
+        "es": "Pregunta 28. ¿Cuál es el mínimo común múltiplo de 4 y 10? Opciones: A: 14. B: 20. C: 40. D: 60."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4",
+          "10",
+          "14",
+          "20",
+          "40",
+          "60",
+          "A: 14",
+          "B: 20",
+          "C: 40",
+          "D: 60"
+        ],
+        "es": [
+          "4",
+          "10",
+          "14",
+          "20",
+          "40",
+          "60",
+          "A: 14",
+          "B: 20",
+          "C: 40",
+          "D: 60"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q29": {
+      "inputHash": "9f764296f655571ad764cfb131bbf8217d4c495e19ef24c23ff161b86ed7ebc7",
+      "description": {
+        "en": "Question 29. The surface area, S, of a right rectangular prism with length l, width w, and height h can be found using the formula S = 2(lw + wh + hl). What is the surface area, in square inches, of a prism with a length of 12 inches, a width of 9 inches, and a height of 2 inches? Choices: A: 300. B: 258. C: 150. D: 92.",
+        "es": "Pregunta 29. El área de superficie, S, de un prisma rectangular recto con longitud l, ancho w y altura h puede averiguarse usando la siguiente fórmula: S = 2(lw + wh + hl). ¿Cuál es el área de superficie, en pulgadas cuadradas, de un prisma con una longitud de 12 pulgadas, un ancho de 9 pulgadas y una altura de 2 pulgadas? Opciones: A: 300. B: 258. C: 150. D: 92."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "S = 2(lw + wh + hl)",
+          "12 inches",
+          "9 inches",
+          "2 inches",
+          "300",
+          "258",
+          "150",
+          "92",
+          "A: 300",
+          "B: 258",
+          "C: 150",
+          "D: 92"
+        ],
+        "es": [
+          "S = 2(lw + wh + hl)",
+          "12 pulgadas",
+          "9 pulgadas",
+          "2 pulgadas",
+          "300",
+          "258",
+          "150",
+          "92",
+          "A: 300",
+          "B: 258",
+          "C: 150",
+          "D: 92"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q30": {
+      "inputHash": "af3d89f80a338ef4ab165735078aa562b4aca0c8df5cfd3bce0611261c64f5a0",
+      "description": {
+        "en": "Question 30. Which point on the number line represents the number opposite the number −5 1/2? A horizontal number line has arrows at both ends and tick marks at intervals of 1/2. The integers −5, −4, −3, −2, −1, 0, 1, 2, 3, 4, and 5 are labeled. Point P is at −5 1/2, point Q is at −1/2, point R is at 1/2, and point S is at 5 1/2. Choices: A: point P. B: point Q. C: point R. D: point S.",
+        "es": "Pregunta 30. ¿Qué punto en la siguiente recta numérica representa el número opuesto al número −5 1/2? La recta numérica horizontal tiene flechas en ambos extremos, marcas cada 1/2 unidad y etiquetas enteras desde −5 hasta 5. El punto P está en −5 1/2; el punto Q está en −1/2; el punto R está en 1/2; y el punto S está en 5 1/2. Opciones: A: punto P. B: punto Q. C: punto R. D: punto S."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−5 1/2",
+          "1/2",
+          "−5",
+          "−4",
+          "−3",
+          "−2",
+          "−1",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "−1/2",
+          "5 1/2",
+          "point P",
+          "point Q",
+          "point R",
+          "point S",
+          "A: point P",
+          "B: point Q",
+          "C: point R",
+          "D: point S"
+        ],
+        "es": [
+          "−5 1/2",
+          "1/2",
+          "−5",
+          "5",
+          "P",
+          "Q",
+          "−1/2",
+          "R",
+          "S",
+          "5 1/2",
+          "A: punto P",
+          "B: punto Q",
+          "C: punto R",
+          "D: punto S"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q34": {
+      "inputHash": "4563d54fa4801e70a6bcaa4282a3a3c7880edf84104e553deef3595ad470165d",
+      "description": {
+        "en": "Question 34. In 2010, Kim-Ly earned $17.50 for 2 hours of work. Which table shows the relationship between the number of hours worked and Kim-Ly’s total earnings, if her rate per hour is constant? Choices: A: A table with columns Number of Hours and Total Earnings: 1, $17.50; 2, $35.00; 3, $52.50; 4, $70.00. B: A table with columns Number of Hours and Total Earnings: 1, $17.50; 2, $17.50; 3, $17.50; 4, $17.50. C: A table with columns Number of Hours and Total Earnings: 1, $16.50; 2, $17.50; 3, $18.50; 4, $19.50. D: A table with columns Number of Hours and Total Earnings: 1, $8.75; 2, $17.50; 3, $26.25; 4, $35.00.",
+        "es": "Pregunta 34. En 2010, Kim-Ly ganó $17.50 por 2 horas de trabajo. ¿Qué tabla muestra la relación entre el número de horas trabajadas y las ganancias totales de Kim-Ly, si su tasa por hora es constante? Opciones: A: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $17.50, $35.00, $52.50 y $70.00. B: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $17.50, $17.50, $17.50 y $17.50. C: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $16.50, $17.50, $18.50 y $19.50. D: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $8.75, $17.50, $26.25 y $35.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2010",
+          "$17.50",
+          "2 hours",
+          "$35.00",
+          "$52.50",
+          "$70.00",
+          "$16.50",
+          "$18.50",
+          "$19.50",
+          "$8.75",
+          "$26.25",
+          "A: A table with columns Number of Hours and Total Earnings: 1, $17.50; 2, $35.00; 3, $52.50; 4, $70.00",
+          "B: A table with columns Number of Hours and Total Earnings: 1, $17.50; 2, $17.50; 3, $17.50; 4, $17.50",
+          "C: A table with columns Number of Hours and Total Earnings: 1, $16.50; 2, $17.50; 3, $18.50; 4, $19.50",
+          "D: A table with columns Number of Hours and Total Earnings: 1, $8.75; 2, $17.50; 3, $26.25; 4, $35.00"
+        ],
+        "es": [
+          "2010",
+          "$17.50",
+          "2 horas",
+          "1",
+          "2",
+          "3",
+          "4",
+          "$1",
+          "$2",
+          "$3",
+          "$5",
+          "$7",
+          "$8",
+          "$35.00",
+          "$52.50",
+          "$70.00",
+          "$16.50",
+          "$18.50",
+          "$19.50",
+          "$8.75",
+          "$26.25",
+          "A: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $17.50, $35.00, $52.50 y $70.00",
+          "B: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $17.50, $17.50, $17.50 y $17.50",
+          "C: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $16.50, $17.50, $18.50 y $19.50",
+          "D: Tabla con las columnas «Cantidad de horas» y «Ganancias totales». Para 1, 2, 3 y 4 horas, las ganancias son, respectivamente, $8.75, $17.50, $26.25 y $35.00"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q35": {
+      "inputHash": "5e120f4493b956955745f1747f031f28ea7a7a5ebc9a90c59ada441fc5f69c6b",
+      "description": {
+        "en": "Question 35. Susan reads a book at a rate of 1 page every 3 minutes. If her reading rate remains the same, which method could be used to determine the number of minutes for her to read 18 pages? Choices: A: add 18 and 3. B: divide 18 by 3. C: multiply 3 by 18. D: subtract 3 from 18.",
+        "es": "Pregunta 35. Susan lee un libro a una tasa de 1 página cada 3 minutos. Si su tasa de lectura se mantiene igual, ¿qué método podría usarse para determinar el número de minutos que le llevaría a ella leer 18 páginas? Opciones: A: sumar 18 y 3. B: dividir 18 por 3. C: multiplicar 3 por 18. D: restar 3 a 18."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 page",
+          "3 minutes",
+          "18 pages",
+          "add 18 and 3",
+          "divide 18 by 3",
+          "multiply 3 by 18",
+          "subtract 3 from 18",
+          "A: add 18 and 3",
+          "B: divide 18 by 3",
+          "C: multiply 3 by 18",
+          "D: subtract 3 from 18"
+        ],
+        "es": [
+          "1 página",
+          "3 minutos",
+          "18 páginas",
+          "18 y 3",
+          "18 por 3",
+          "3 por 18",
+          "3 a 18",
+          "A: sumar 18 y 3",
+          "B: dividir 18 por 3",
+          "C: multiplicar 3 por 18",
+          "D: restar 3 a 18"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q36": {
+      "inputHash": "97a9c0e99c4ac6128b858cfbdb45ee38c07340234820a41a3603f4af8c5fab66",
+      "description": {
+        "en": "Question 36. A triangle has vertices on a coordinate grid at points J(−1, 5), K(4, 5), and L(4, −2). What is the length, in units, of KL? Choices: A: 3. B: 7. C: 8. D: 11.",
+        "es": "Pregunta 36. Un triángulo tiene vértices en una cuadrilla de coordenadas en los puntos J(−1, 5), K(4, 5) y L(4, −2). ¿Cuál es la longitud, en unidades, del segmento KL? Opciones: A: 3 B: 7 C: 8 D: 11"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "J(−1, 5)",
+          "K(4, 5)",
+          "L(4, −2)",
+          "KL",
+          "3",
+          "7",
+          "8",
+          "11",
+          "A: 3",
+          "B: 7",
+          "C: 8",
+          "D: 11",
+          "(−1, 5)",
+          "(4, 5)",
+          "(4, −2)"
+        ],
+        "es": [
+          "J(−1, 5)",
+          "K(4, 5)",
+          "L(4, −2)",
+          "KL",
+          "3",
+          "7",
+          "8",
+          "11",
+          "A: 3",
+          "B: 7",
+          "C: 8",
+          "D: 11",
+          "(−1, 5)",
+          "(4, 5)",
+          "(4, −2)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q37": {
+      "inputHash": "3bcc1221785b2bd8a4a275f7961afb43c33216dba04e29cdcd2c3f6051f15a02",
+      "description": {
+        "en": "Question 37. Rosa has a goal of running a total of 100 miles this month. Each day that she ran, she ran 5 miles. Which expression could Rosa use to determine how many miles she has left to run after running for d days? Choices: A: 100 − 5d. B: 5d + 100. C: 100/(5d). D: 5d.",
+        "es": "Pregunta 37. Rosa tiene como meta correr un total de 100 millas este mes. Cada día que ella corrió, corrió 5 millas. ¿Qué expresión podría usar Rosa para determinar cuántas millas le quedan por correr después de haber corrido durante d días? Opciones: A: 100 − 5d B: 5d + 100 C: 100/(5d) D: 5d"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "100",
+          "5",
+          "d",
+          "100 − 5d",
+          "5d + 100",
+          "100/(5d)",
+          "5d",
+          "A: 100 − 5d",
+          "B: 5d + 100",
+          "C: 100/(5d)",
+          "D: 5d",
+          "(5d)"
+        ],
+        "es": [
+          "100",
+          "5",
+          "d",
+          "100 − 5d",
+          "5d + 100",
+          "100/(5d)",
+          "5d",
+          "A: 100 − 5d",
+          "B: 5d + 100",
+          "C: 100/(5d)",
+          "D: 5d",
+          "(5d)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q38": {
+      "inputHash": "b5467bd4add8e5efcf708c9891e2d458e5d43b4ea2911cacdd3f5d9ca8ec6dc6",
+      "description": {
+        "en": "Question 38. The inequality below compares two rational numbers: −8/18 > −17/27. If the two numbers were plotted as values on a horizontal number line, which statement would be true? Choices: A: Both numbers lie to the right of 0, and −8/18 lies to the left of −17/27. B: Both numbers lie to the left of 0, and −8/18 lies to the left of −17/27. C: Both numbers lie to the right of 0, and −8/18 lies to the right of −17/27. D: Both numbers lie to the left of 0, and −8/18 lies to the right of −17/27.",
+        "es": "Pregunta 38. La siguiente desigualdad compara dos números racionales: −8/18 > −17/27. Si los dos números se trazaran como valores en una recta numérica horizontal, ¿qué afirmación sería verdadera? Opciones: A: Ambos números se encuentran a la derecha del 0 y −8/18 se encuentra a la izquierda de −17/27. B: Ambos números se encuentran a la izquierda del 0 y −8/18 se encuentra a la izquierda de −17/27. C: Ambos números se encuentran a la derecha del 0 y −8/18 se encuentra a la derecha de −17/27. D: Ambos números se encuentran a la izquierda del 0 y −8/18 se encuentra a la derecha de −17/27."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−8/18 > −17/27",
+          "−8/18",
+          "−17/27",
+          "0",
+          "right of 0",
+          "left of 0",
+          "to the left of −17/27",
+          "to the right of −17/27",
+          "A: Both numbers lie to the right of 0, and −8/18 lies to the left of −17/27",
+          "B: Both numbers lie to the left of 0, and −8/18 lies to the left of −17/27",
+          "C: Both numbers lie to the right of 0, and −8/18 lies to the right of −17/27",
+          "D: Both numbers lie to the left of 0, and −8/18 lies to the right of −17/27",
+          "8/18",
+          "17/27"
+        ],
+        "es": [
+          "−8/18 > −17/27",
+          "−8/18",
+          "−17/27",
+          "0",
+          "a la izquierda",
+          "a la derecha",
+          "A: Ambos números se encuentran a la derecha del 0 y −8/18 se encuentra a la izquierda de −17/27",
+          "B: Ambos números se encuentran a la izquierda del 0 y −8/18 se encuentra a la izquierda de −17/27",
+          "C: Ambos números se encuentran a la derecha del 0 y −8/18 se encuentra a la derecha de −17/27",
+          "D: Ambos números se encuentran a la izquierda del 0 y −8/18 se encuentra a la derecha de −17/27",
+          "8/18",
+          "17/27"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q39": {
+      "inputHash": "36266a8868579b00cf016a75fdc17d60bf76deea76bc3fa3b7dc05a55fe68305",
+      "description": {
+        "en": "Question 39. Which value or values for the variable c from the set {0, 0.875, 1, 2.5} will make 5.6 + 0.4c ≤ 6c true? Choices: A: only 2.5. B: 1 and 2.5. C: 0.875, 1, and 2.5. D: all values in the set.",
+        "es": "Pregunta 39. ¿Qué valor o valores para la variable c del siguiente conjunto hará o harán que 5.6 + 0.4c ≤ 6c sea verdadero? Conjunto: {0, 0.875, 1, 2.5}. Opciones: A: solamente 2.5 B: 1 y 2.5 C: 0.875, 1 y 2.5 D: todos los valores del conjunto"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "c",
+          "{0, 0.875, 1, 2.5}",
+          "5.6 + 0.4c ≤ 6c",
+          "only 2.5",
+          "1 and 2.5",
+          "0.875, 1, and 2.5",
+          "all values in the set",
+          "A: only 2.5",
+          "B: 1 and 2.5",
+          "C: 0.875, 1, and 2.5",
+          "D: all values in the set"
+        ],
+        "es": [
+          "c",
+          "5.6 + 0.4c ≤ 6c",
+          "{0, 0.875, 1, 2.5}",
+          "2.5",
+          "1 y 2.5",
+          "0.875, 1 y 2.5",
+          "A: solamente 2.5",
+          "B: 1 y 2.5",
+          "C: 0.875, 1 y 2.5",
+          "D: todos los valores del conjunto"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q40": {
+      "inputHash": "e76ed22bbcba4b8fe4bf362e4d22ad96ece69bacdf7c6378d05b18a90d8e11ef",
+      "description": {
+        "en": "Question 40. Steve ordered plastic cases for storing his baseball cards. Each case has a length of 12 centimeters, a width of 6.5 centimeters, and a height of 1.25 centimeters. What is the volume, in cubic centimeters, of one baseball card case? Choices: A: 39.5. B: 97.5. C: 118.5. D: 202.25.",
+        "es": "Pregunta 40. Steve hizo un pedido de estuches de plástico para guardar sus tarjetas de béisbol. Cada estuche tiene una longitud de 12 centímetros, un ancho de 6.5 centímetros y una altura de 1.25 centímetros. ¿Cuál es el volumen, en centímetros cúbicos, de un estuche para tarjetas de béisbol? Opciones: A: 39.5 B: 97.5 C: 118.5 D: 202.25"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 centimeters",
+          "6.5 centimeters",
+          "1.25 centimeters",
+          "cubic centimeters",
+          "39.5",
+          "97.5",
+          "118.5",
+          "202.25",
+          "A: 39.5",
+          "B: 97.5",
+          "C: 118.5",
+          "D: 202.25"
+        ],
+        "es": [
+          "12 centímetros",
+          "6.5 centímetros",
+          "1.25 centímetros",
+          "centímetros cúbicos",
+          "39.5",
+          "97.5",
+          "118.5",
+          "202.25",
+          "A: 39.5",
+          "B: 97.5",
+          "C: 118.5",
+          "D: 202.25"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q41": {
+      "inputHash": "a9eacee9bc5e310aa5cd4949457058612dfc00852fc24ccc41c1c0001145acda",
+      "description": {
+        "en": "Question 41. Kim rode her bicycle 135 miles in 9 weeks, riding the same distance each week. Eric rode his bicycle 102 miles in 6 weeks, riding the same distance each week. Which statement correctly compares the number of miles per week they rode? Choices: A: Eric rode 2 more miles per week than Kim rode. B: Kim rode 3 more miles per week than Eric rode. C: Kim rode 11 more miles per week than Eric rode. D: Eric rode 17 more miles per week than Kim rode.",
+        "es": "Pregunta 41. Kim recorrió en su bicicleta 135 millas en 9 semanas, recorriendo la misma distancia cada semana. Eric recorrió en su bicicleta 102 millas en 6 semanas, recorriendo la misma distancia cada semana. ¿Qué afirmación compara correctamente el número de millas por semana que anduvieron? Opciones: A: Eric recorrió 2 millas más por semana que las que recorrió Kim. B: Kim recorrió 3 millas más por semana que las que recorrió Eric. C: Kim recorrió 11 millas más por semana que las que recorrió Eric. D: Eric recorrió 17 millas más por semana que las que recorrió Kim."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "135 miles",
+          "9 weeks",
+          "102 miles",
+          "6 weeks",
+          "2 more miles per week",
+          "3 more miles per week",
+          "11 more miles per week",
+          "17 more miles per week",
+          "A: Eric rode 2 more miles per week than Kim rode",
+          "B: Kim rode 3 more miles per week than Eric rode",
+          "C: Kim rode 11 more miles per week than Eric rode",
+          "D: Eric rode 17 more miles per week than Kim rode"
+        ],
+        "es": [
+          "135 millas",
+          "9 semanas",
+          "102 millas",
+          "6 semanas",
+          "2 millas más",
+          "3 millas más",
+          "11 millas más",
+          "17 millas más",
+          "A: Eric recorrió 2 millas más por semana que las que recorrió Kim",
+          "B: Kim recorrió 3 millas más por semana que las que recorrió Eric",
+          "C: Kim recorrió 11 millas más por semana que las que recorrió Eric",
+          "D: Eric recorrió 17 millas más por semana que las que recorrió Kim"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q42": {
+      "inputHash": "200c64e8a55670546ca78cf8d6156abbd0e34fd061899516f154abcbdf3cbeab",
+      "description": {
+        "en": "Question 42. A net of a triangular prism consists of three rectangles joined vertically along their 8-foot sides. Each rectangle is 8 feet wide. From top to bottom, their heights are 3 feet, 4 feet, and 5 feet. Dashed horizontal fold lines separate the rectangles. A congruent right triangle is attached to each vertical side of the middle rectangle. Each triangle has a horizontal leg of 3 feet, a vertical leg of 4 feet, and a slanted side of 5 feet; the 4-foot vertical leg is joined to the middle rectangle. What is the surface area, in square feet, of the triangular prism? Choices: A: 44. B: 96. C: 108. D: 120.",
+        "es": "Pregunta 42. A continuación se presenta la red o superficie desplegada de un prisma triangular. Tres rectángulos están unidos verticalmente y comparten el mismo ancho horizontal de 8 pies. El rectángulo superior mide 8 pies por 3 pies; el rectángulo central mide 8 pies por 4 pies; y el rectángulo inferior mide 8 pies por 5 pies. Las líneas horizontales compartidas entre los rectángulos se representan con trazos, al igual que los dos lados verticales del rectángulo central, para indicar dobleces. Hay un triángulo unido a cada lado vertical del rectángulo central. Cada triángulo es un triángulo de lados 3 pies, 4 pies y 5 pies: el lado de 4 pies coincide con el lado vertical del rectángulo central; el lado horizontal de 3 pies se extiende hacia afuera desde la esquina superior correspondiente; y el lado inclinado de 5 pies conecta el extremo exterior de ese segmento con la esquina inferior correspondiente del rectángulo central. ¿Cuál es el área de superficie, en pies cuadrados, del prisma triangular? Opciones: A: 44 B: 96 C: 108 D: 120"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8-foot sides",
+          "8 feet wide",
+          "3 feet",
+          "4 feet",
+          "5 feet",
+          "square feet",
+          "44",
+          "96",
+          "108",
+          "120",
+          "A: 44",
+          "B: 96",
+          "C: 108",
+          "D: 120"
+        ],
+        "es": [
+          "8 pies",
+          "3 pies",
+          "4 pies",
+          "5 pies",
+          "8 pies por 3 pies",
+          "8 pies por 4 pies",
+          "8 pies por 5 pies",
+          "44",
+          "96",
+          "108",
+          "120",
+          "A: 44",
+          "B: 96",
+          "C: 108",
+          "D: 120"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q43": {
+      "inputHash": "607d6b502052396dfed31e25554e064a0b854f02f186043f33274dfaa239fe8d",
+      "description": {
+        "en": "Question 43. The two expressions below are equivalent: y(2.5 + 7) + y − 2 and 10.5y − 2. Which statement best explains why the expressions are equivalent? Choices: A: The expressions have the same value for any value of y. B: The expressions have the same value for only whole number values of y. C: The expressions have the same value only when y is an odd number. D: The expressions have the same value only when y is an even number.",
+        "es": "Pregunta 43. Las siguientes dos expresiones son equivalentes: y(2.5 + 7) + y − 2 y 10.5y − 2. ¿Qué afirmación explica mejor por qué las expresiones son equivalentes? Opciones: A: Las expresiones tienen el mismo valor para cualquier valor de y. B: Las expresiones tienen el mismo valor solamente para valores de números enteros de y. C: Las expresiones tienen el mismo valor solamente cuando y es un número impar. D: Las expresiones tienen el mismo valor solamente cuando y es un número par."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y(2.5 + 7) + y − 2",
+          "10.5y − 2",
+          "any value of y",
+          "only whole number values of y",
+          "y is an odd number",
+          "y is an even number",
+          "A: The expressions have the same value for any value of y",
+          "B: The expressions have the same value for only whole number values of y",
+          "C: The expressions have the same value only when y is an odd number",
+          "D: The expressions have the same value only when y is an even number",
+          "(2.5 + 7)"
+        ],
+        "es": [
+          "y(2.5 + 7) + y − 2",
+          "10.5y − 2",
+          "y",
+          "cualquier valor",
+          "números enteros",
+          "número impar",
+          "número par",
+          "A: Las expresiones tienen el mismo valor para cualquier valor de y",
+          "B: Las expresiones tienen el mismo valor solamente para valores de números enteros de y",
+          "C: Las expresiones tienen el mismo valor solamente cuando y es un número impar",
+          "D: Las expresiones tienen el mismo valor solamente cuando y es un número par",
+          "(2.5 + 7)"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q44": {
+      "inputHash": "ab5ff974e657caccbce18d159f749fccdedf97d8f3955291478fff273e5ad1b8",
+      "description": {
+        "en": "Question 44. Two whole numbers have a least common multiple of 60. Each number is less than or equal to 12 (≤ 12). The greatest common factor of the two numbers is 2. What are the two numbers? Choices: A: 6 and 10. B: 5 and 12. C: 10 and 12. D: 12 and 15.",
+        "es": "Pregunta 44. Dos números enteros tienen un mínimo común múltiplo de 60. Cada número es menor o igual a 12. El máximo común divisor de los dos números es 2. ¿Cuáles son los dos números? Opciones: A: 6 y 10. B: 5 y 12. C: 10 y 12. D: 12 y 15."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "60",
+          "≤ 12",
+          "2",
+          "6 and 10",
+          "5 and 12",
+          "10 and 12",
+          "12 and 15",
+          "A: 6 and 10",
+          "B: 5 and 12",
+          "C: 10 and 12",
+          "D: 12 and 15",
+          "(≤ 12)"
+        ],
+        "es": [
+          "60",
+          "menor o igual a 12",
+          "2",
+          "6 y 10",
+          "5 y 12",
+          "10 y 12",
+          "12 y 15",
+          "A: 6 y 10",
+          "B: 5 y 12",
+          "C: 10 y 12",
+          "D: 12 y 15"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q45": {
+      "inputHash": "476927c0e884eb0802449d1e3f854c623f5071d3cf0de21e31a34b42e9b49071",
+      "description": {
+        "en": "Question 45. Which quantity could go in the blank to make the equation below true? x + 2x + ____ = 5x. Choices: A: 2. B: 3. C: 2x. D: 3x.",
+        "es": "Pregunta 45. ¿Qué cantidad podría ir en el espacio en blanco para que la siguiente ecuación sea verdadera? Ecuación: x + 2x + ____ = 5x. Opciones: A: 2. B: 3. C: 2x. D: 3x."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x + 2x + ____ = 5x",
+          "2",
+          "3",
+          "2x",
+          "3x",
+          "A: 2",
+          "B: 3",
+          "C: 2x",
+          "D: 3x"
+        ],
+        "es": [
+          "x + 2x + ____ = 5x",
+          "2",
+          "3",
+          "2x",
+          "3x",
+          "A: 2",
+          "B: 3",
+          "C: 2x",
+          "D: 3x"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q46": {
+      "inputHash": "515c808d0e25b66697b62a82ce39c781fcd6ed22c85c7c6e320f8909f0c6c0f8",
+      "description": {
+        "en": "Question 46. Which coordinate grid shows point M plotted at (4, 3)? Each choice is a first-quadrant coordinate grid with the horizontal x-axis and vertical y-axis numbered from 0 through 7 in increments of 1. Choices: A: Point M is plotted at (7, 0), on the x-axis. B: Point M is plotted at (4, 3). C: Point M is plotted at (0, 7), on the y-axis. D: Point M is plotted at (3, 4).",
+        "es": "Pregunta 46. ¿Qué cuadrícula de coordenadas muestra el punto M trazado en (4, 3)? Cada opción presenta un plano de coordenadas en el primer cuadrante, con el eje x horizontal hacia la derecha y el eje y vertical hacia arriba; las líneas de la cuadrícula marcan unidades enteras. Opciones: A: El punto M está en (7, 0), sobre el eje x. B: El punto M está en (4, 3), cuatro unidades a la derecha y tres unidades hacia arriba. C: El punto M está en (0, 7), sobre el eje y. D: El punto M está en (3, 4), tres unidades a la derecha y cuatro unidades hacia arriba."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4, 3)",
+          "0 through 7",
+          "1",
+          "(7, 0)",
+          "(0, 7)",
+          "(3, 4)",
+          "A: Point M is plotted at (7, 0), on the x-axis",
+          "B: Point M is plotted at (4, 3)",
+          "C: Point M is plotted at (0, 7), on the y-axis",
+          "D: Point M is plotted at (3, 4)"
+        ],
+        "es": [
+          "(4, 3)",
+          "(7, 0)",
+          "(0, 7)",
+          "(3, 4)",
+          "eje x",
+          "eje y",
+          "A: El punto M está en (7, 0), sobre el eje x",
+          "B: El punto M está en (4, 3), cuatro unidades a la derecha y tres unidades hacia arriba",
+          "C: El punto M está en (0, 7), sobre el eje y",
+          "D: El punto M está en (3, 4), tres unidades a la derecha y cuatro unidades hacia arriba"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q50": {
+      "inputHash": "d388e0769be314526447d1ae0dbb73320ed6f7d2c2c01be132f7357806e9769d",
+      "description": {
+        "en": "Question 50. What is the area, in square centimeters, of the shaded part of the rectangle described below? The rectangle is 10 cm wide and 14 cm high. A diagonal segment runs downward to the right from a point on the left side that is 6 cm below the top-left corner to the bottom-right corner. The region above and to the right of this segment is shaded; the triangular region below the segment is unshaded. Choices: A: 20. B: 60. C: 100. D: 140.",
+        "es": "Pregunta 50. ¿Cuál es el área, en centímetros cuadrados, de la parte sombreada del rectángulo? El rectángulo mide 10 cm de ancho y 14 cm de alto. Un segmento diagonal comienza en el lado izquierdo, a 6 cm por debajo del borde superior, y termina en la esquina inferior derecha. La región situada por encima de este segmento diagonal, que incluye todo el borde superior y todo el lado derecho, está sombreada de gris; la región triangular situada debajo del segmento no está sombreada. Opciones: A: 20. B: 60. C: 100. D: 140."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 cm",
+          "14 cm",
+          "6 cm",
+          "20",
+          "60",
+          "100",
+          "140",
+          "A: 20",
+          "B: 60",
+          "C: 100",
+          "D: 140"
+        ],
+        "es": [
+          "10 cm",
+          "14 cm",
+          "6 cm",
+          "20",
+          "60",
+          "100",
+          "140",
+          "A: 20",
+          "B: 60",
+          "C: 100",
+          "D: 140"
+        ]
+      }
+    },
+    "nysed-2017-g6-mc-q51": {
+      "inputHash": "6572037cba1f158e899d471b41fa817a4a89108c27f010f148bcae3feb375629",
+      "description": {
+        "en": "Question 51. A sandwich shop sells sandwiches for $5.95 each, including tax. The shop received a total of $71.40 from the sales of sandwiches one afternoon. Which equation can be used to determine the number of sandwiches, x, sold by the sandwich shop that afternoon? Choices: A: 5.95 + x = 71.40. B: 5.95 ÷ 71.40 = x. C: 5.95x = 71.40. D: 5.95 ÷ x = 71.40.",
+        "es": "Pregunta 51. Una sandwichería vende sándwiches a $5.95 cada uno, incluyendo impuestos. La sandwichería recibió un total de $71.40 por la venta de sándwiches una tarde. ¿Qué ecuación se puede usar para determinar el número de sándwiches, x, vendidos por la sandwichería esa tarde? Opciones: A: 5.95 + x = 71.40. B: 5.95 ÷ 71.40 = x. C: 5.95x = 71.40. D: 5.95 ÷ x = 71.40."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$5.95",
+          "$71.40",
+          "5.95 + x = 71.40",
+          "5.95 ÷ 71.40 = x",
+          "5.95x = 71.40",
+          "5.95 ÷ x = 71.40",
+          "A: 5.95 + x = 71.40",
+          "B: 5.95 ÷ 71.40 = x",
+          "C: 5.95x = 71.40",
+          "D: 5.95 ÷ x = 71.40"
+        ],
+        "es": [
+          "$5.95",
+          "$71.40",
+          "x",
+          "5.95 + x = 71.40",
+          "5.95 ÷ 71.40 = x",
+          "5.95x = 71.40",
+          "5.95 ÷ x = 71.40",
+          "A: 5.95 + x = 71.40",
+          "B: 5.95 ÷ 71.40 = x",
+          "C: 5.95x = 71.40",
+          "D: 5.95 ÷ x = 71.40"
+        ]
+      }
+    }
+  }
+}

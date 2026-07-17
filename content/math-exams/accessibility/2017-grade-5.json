@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2017-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2017-g5-mc-q1": {
+      "inputHash": "70e3d0e7f00b4aa429d15793e0cdcc7d1f29ed925eea0f2fa9aa9ddd3a9636f3",
+      "description": {
+        "en": "Question 1. What part of the expression below should be calculated first? 8 + {22 × [15 + (14 × 2)]}. Choices: A: 8 + 22. B: 22 × 15. C: 14 × 2. D: 15 + 14.",
+        "es": "Pregunta 1. ¿Qué parte de la siguiente expresión se debería calcular primero? 8 + {22 × [15 + (14 × 2)]} Opciones: A: 8 + 22 B: 22 × 15 C: 14 × 2 D: 15 + 14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 + {22 × [15 + (14 × 2)]}",
+          "8 + 22",
+          "22 × 15",
+          "14 × 2",
+          "15 + 14",
+          "A: 8 + 22",
+          "B: 22 × 15",
+          "C: 14 × 2",
+          "D: 15 + 14",
+          "(14 × 2)"
+        ],
+        "es": [
+          "8 + {22 × [15 + (14 × 2)]}",
+          "8 + 22",
+          "22 × 15",
+          "14 × 2",
+          "15 + 14",
+          "A: 8 + 22",
+          "B: 22 × 15",
+          "C: 14 × 2",
+          "D: 15 + 14",
+          "(14 × 2)"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q2": {
+      "inputHash": "2808020206677d9d2b8276894de5651889bbe74ddb17d3a605096da8bf65015e",
+      "description": {
+        "en": "Question 2. Tara baked 6 1/2 dozen cookies. She sold 3 2/6 dozen of the cookies she made. How many dozens of cookies does Tara have remaining? Choices: A: 3 1/6. B: 3 1/4. C: 3 3/8. D: 3 5/6.",
+        "es": "Pregunta 2. Tara horneó 6 1/2 docenas de galletas. Ella vendió 3 2/6 docenas de las galletas que hizo. ¿Cuántas docenas de galletas le quedan a Tara? Opciones: A: 3 1/6 B: 3 1/4 C: 3 3/8 D: 3 5/6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 1/2",
+          "3 2/6",
+          "3 1/6",
+          "3 1/4",
+          "3 3/8",
+          "3 5/6",
+          "A: 3 1/6",
+          "B: 3 1/4",
+          "C: 3 3/8",
+          "D: 3 5/6"
+        ],
+        "es": [
+          "6 1/2",
+          "3 2/6",
+          "3 1/6",
+          "3 1/4",
+          "3 3/8",
+          "3 5/6",
+          "A: 3 1/6",
+          "B: 3 1/4",
+          "C: 3 3/8",
+          "D: 3 5/6"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q3": {
+      "inputHash": "a7596fa306ef7abc3e6e9e81eda9b2c05af3458f72f553c2e95f9078bbe42d80",
+      "description": {
+        "en": "Question 3. Prism A is a rectangular prism made of unit cubes. Its front face is 5 cubes long and 2 cubes high, and it is 3 cubes deep, for a 5-by-3-by-2 arrangement. A key states that each unit cube equals 1 cubic inch. The height of Prism B is 2 times the height of Prism A. The length and width of both prisms are the same. What is the volume, in cubic inches, of Prism B? Choices: A: 20. B: 44. C: 45. D: 60.",
+        "es": "Pregunta 3. A continuación se muestra el Prisma A. La altura del Prisma B es 2 veces la altura del Prisma A. La longitud y el ancho de ambos prismas son los mismos. El Prisma A es un prisma rectangular formado por cubos unitarios. Tiene 5 cubos de longitud, 3 cubos de ancho y 2 cubos de altura. Una referencia indica que cada cubo equivale a 1 pulgada cúbica. ¿Cuál es el volumen, en pulgadas cúbicas, del Prisma B? Opciones: A: 20 B: 44 C: 45 D: 60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5-by-3-by-2",
+          "1 cubic inch",
+          "2 times",
+          "20",
+          "44",
+          "45",
+          "60",
+          "A: 20",
+          "B: 44",
+          "C: 45",
+          "D: 60"
+        ],
+        "es": [
+          "2 veces",
+          "5 cubos",
+          "3 cubos",
+          "2 cubos",
+          "1 pulgada cúbica",
+          "4",
+          "6",
+          "A: 20",
+          "B: 44",
+          "C: 45",
+          "D: 60"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q4": {
+      "inputHash": "46dfcf42b0ba9edca36c56c1781427499d107c0f9e5eccc3eb004c0ee8bf3ec9",
+      "description": {
+        "en": "Question 4. Which decimal is equivalent to 41/100? Choices: A: 41.0. B: 4.10. C: 0.41. D: 0.041.",
+        "es": "Pregunta 4. ¿Qué decimal es equivalente a 41/100? Opciones: A: 41.0 B: 4.10 C: 0.41 D: 0.041"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "41/100",
+          "41.0",
+          "4.10",
+          "0.41",
+          "0.041",
+          "A: 41.0",
+          "B: 4.10",
+          "C: 0.41",
+          "D: 0.041"
+        ],
+        "es": [
+          "41/100",
+          "A: 41.0",
+          "B: 4.10",
+          "C: 0.41",
+          "D: 0.041"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q6": {
+      "inputHash": "17115b838133b455700e001414e58acf2c4848d08a47441922546e92ffef476d",
+      "description": {
+        "en": "Question 6. What number is equivalent to the expanded form shown below? (2 × 100) + (3 × 1) + (4 × 1/10) + (3 × 1/1,000). Choices: A: 203.043. B: 203.403. C: 230.430. D: 230.403.",
+        "es": "Pregunta 6. ¿Qué número es equivalente a la forma expandida que se muestra a continuación? (2 × 100) + (3 × 1) + (4 × 1/10) + (3 × 1/1,000) Opciones: A: 203.043 B: 203.403 C: 230.430 D: 230.403"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2 × 100) + (3 × 1) + (4 × 1/10) + (3 × 1/1,000)",
+          "203.043",
+          "203.403",
+          "230.430",
+          "230.403",
+          "A: 203.043",
+          "B: 203.403",
+          "C: 230.430",
+          "D: 230.403",
+          "(2 × 100)",
+          "(3 × 1)",
+          "(4 × 1/10)",
+          "(3 × 1/1,000)"
+        ],
+        "es": [
+          "(2 × 100) + (3 × 1) + (4 × 1/10) + (3 × 1/1,000)",
+          "1/10",
+          "1/1,000",
+          "203.043",
+          "203.403",
+          "230.430",
+          "230.403",
+          "A: 203.043",
+          "B: 203.403",
+          "C: 230.430",
+          "D: 230.403",
+          "(2 × 100)",
+          "(3 × 1)",
+          "(4 × 1/10)",
+          "(3 × 1/1,000)"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q7": {
+      "inputHash": "802c8722830b2aaa93c742f39c10a4679c3a78014c7f1cab2a4b2ae146541f76",
+      "description": {
+        "en": "Question 7. Which phrase is represented by the expression 5 × (36 + 9)? Choices: A: the product of 36 and 5, increased by 9. B: the product of 36 and 9, multiplied by 5. C: the sum of 36 and 9, multiplied by 5. D: the sum of 36 and 5, increased by 9.",
+        "es": "Pregunta 7. ¿A qué frase representa la expresión 5 × (36 + 9)? Opciones: A: el producto de 36 y 5, aumentado en 9 B: el producto de 36 y 9, multiplicado por 5 C: la suma de 36 y 9, multiplicada por 5 D: la suma de 36 y 5, aumentada en 9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 × (36 + 9)",
+          "product of 36 and 5, increased by 9",
+          "product of 36 and 9, multiplied by 5",
+          "sum of 36 and 9, multiplied by 5",
+          "sum of 36 and 5, increased by 9",
+          "A: the product of 36 and 5, increased by 9",
+          "B: the product of 36 and 9, multiplied by 5",
+          "C: the sum of 36 and 9, multiplied by 5",
+          "D: the sum of 36 and 5, increased by 9",
+          "(36 + 9)"
+        ],
+        "es": [
+          "5 × (36 + 9)",
+          "36 y 5",
+          "36 y 9",
+          "multiplicado por 5",
+          "multiplicada por 5",
+          "aumentado en 9",
+          "aumentada en 9",
+          "A: el producto de 36 y 5, aumentado en 9",
+          "B: el producto de 36 y 9, multiplicado por 5",
+          "C: la suma de 36 y 9, multiplicada por 5",
+          "D: la suma de 36 y 5, aumentada en 9",
+          "(36 + 9)"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q8": {
+      "inputHash": "500c2bab5638a6ee45599d1b6514da3372e70f1c3dda2e407fc2cc0adf861c76",
+      "description": {
+        "en": "Question 8. The value of the digit in the hundreds place in the number 653,841 is 1/10 the value of the digit in the thousands place in which number? Choices: A: 748,917. B: 749,817. C: 784,917. D: 797,481.",
+        "es": "Pregunta 8. ¿El valor del dígito en el lugar de la centena en el número 653,841 es 1/10 el valor del dígito en el lugar de la unidad de mil en qué número? Opciones: A: 748,917 B: 749,817 C: 784,917 D: 797,481"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "653,841",
+          "1/10",
+          "748,917",
+          "749,817",
+          "784,917",
+          "797,481",
+          "A: 748,917",
+          "B: 749,817",
+          "C: 784,917",
+          "D: 797,481"
+        ],
+        "es": [
+          "653,841",
+          "1/10",
+          "748,917",
+          "749,817",
+          "784,917",
+          "797,481",
+          "A: 748,917",
+          "B: 749,817",
+          "C: 784,917",
+          "D: 797,481"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q9": {
+      "inputHash": "cd48d6ea0cac6f3bba4b60ea7e529f4ff345b40f07b7bfc7341e7e72d503fbf5",
+      "description": {
+        "en": "Question 9. The table below lists the number of layers of centimeter cubes, along with the number of cubes in each layer, in each of four rectangular prisms. The table is titled “Layers of Cubes in Rectangular Prisms” and has columns “Prism,” “Number of Layers,” and “Number of Cubes in Each Layer.” Prism R has 3 layers and 8 cubes in each layer. Prism S has 5 layers and 5 cubes in each layer. Prism T has 6 layers and 5 cubes in each layer. Prism U has 7 layers and 4 cubes in each layer. Which rectangular prism has the greatest volume? Choices: A: Prism R. B: Prism S. C: Prism T. D: Prism U.",
+        "es": "Pregunta 9. La siguiente tabla incluye el número de niveles de cubos centimétricos junto con el número de cubos en cada nivel, en cada uno de cuatro prismas rectangulares. La tabla se titula «Niveles de cubos en prismas rectangulares» y tiene tres columnas: Prisma, Número de niveles y Número de cubos en cada nivel. Sus filas indican: Prisma R, 3 niveles y 8 cubos en cada nivel; Prisma S, 5 niveles y 5 cubos en cada nivel; Prisma T, 6 niveles y 5 cubos en cada nivel; Prisma U, 7 niveles y 4 cubos en cada nivel. ¿Qué prisma rectangular tiene el mayor volumen? Opciones: A: Prisma R B: Prisma S C: Prisma T D: Prisma U"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Prism R",
+          "3 layers",
+          "8 cubes",
+          "Prism S",
+          "5 layers",
+          "5 cubes",
+          "Prism T",
+          "6 layers",
+          "Prism U",
+          "7 layers",
+          "4 cubes",
+          "A: Prism R",
+          "B: Prism S",
+          "C: Prism T",
+          "D: Prism U"
+        ],
+        "es": [
+          "Prisma R",
+          "3 niveles",
+          "8 cubos",
+          "Prisma S",
+          "5 niveles",
+          "5 cubos",
+          "Prisma T",
+          "6 niveles",
+          "Prisma U",
+          "7 niveles",
+          "4 cubos",
+          "A: Prisma R",
+          "B: Prisma S",
+          "C: Prisma T",
+          "D: Prisma U"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q12": {
+      "inputHash": "c2095adae884eba6c2e10d8e1044f6ac9a7d8a3b9a01f723a3e524f5df24c0e0",
+      "description": {
+        "en": "Question 12. The decimal grid described below is shaded and marked with Xs to model an expression. A 10-by-10 decimal grid has 100 equal squares. All squares in the leftmost 8 columns are shaded, representing 0.80 of the grid. Every square in the top 4 rows is marked with an X, representing 0.40 of the grid. Thus, the shaded region and the X-marked region overlap in the top 4 rows of the leftmost 8 columns. Which expression could be modeled by this decimal grid? Choices: A: 0.08 × 0.04 B: 0.08 × 0.40 C: 0.80 × 0.04 D: 0.80 × 0.40",
+        "es": "Pregunta 12. La cuadrilla de decimales que se presenta está sombreada y marcada con X para modelar una expresión. La cuadrilla tiene 10 filas y 10 columnas, para un total de 100 celdas. Las 8 columnas de la izquierda están sombreadas, lo que representa 0.80 de la cuadrilla. Las 4 filas superiores están marcadas con una X en cada celda, lo que representa 0.40 de la cuadrilla. La región donde coinciden el sombreado y las X comprende 8 columnas por 4 filas. ¿Qué expresión podría modelar esta cuadrilla de decimales? Opciones: A: 0.08 × 0.04 B: 0.08 × 0.40 C: 0.80 × 0.04 D: 0.80 × 0.40"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10-by-10",
+          "100",
+          "8",
+          "0.80",
+          "4",
+          "0.40",
+          "0.08 × 0.04",
+          "0.08 × 0.40",
+          "0.80 × 0.04",
+          "0.80 × 0.40",
+          "A: 0.08 × 0.04",
+          "B: 0.08 × 0.40",
+          "C: 0.80 × 0.04",
+          "D: 0.80 × 0.40"
+        ],
+        "es": [
+          "10 filas",
+          "10 columnas",
+          "100 celdas",
+          "8 columnas",
+          "4 filas",
+          "0.80",
+          "0.40",
+          "8 columnas por 4 filas",
+          "0.08 × 0.04",
+          "0.08 × 0.40",
+          "0.80 × 0.04",
+          "0.80 × 0.40",
+          "A: 0.08 × 0.04",
+          "B: 0.08 × 0.40",
+          "C: 0.80 × 0.04",
+          "D: 0.80 × 0.40"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q13": {
+      "inputHash": "281e35abad72131fd0e1bde41810103573553f22d856dd15fb6a79904bc8effb",
+      "description": {
+        "en": "Question 13. What is the value of the expression 1/5 ÷ 4? Choices: A: 20/1 B: 5/4 C: 4/5 D: 1/20",
+        "es": "Pregunta 13. ¿Cuál es el valor de la expresión 1/5 ÷ 4? Opciones: A: 20/1 B: 5/4 C: 4/5 D: 1/20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/5 ÷ 4",
+          "20/1",
+          "5/4",
+          "4/5",
+          "1/20",
+          "A: 20/1",
+          "B: 5/4",
+          "C: 4/5",
+          "D: 1/20",
+          "1/5"
+        ],
+        "es": [
+          "1/5 ÷ 4",
+          "20/1",
+          "5/4",
+          "4/5",
+          "1/20",
+          "A: 20/1",
+          "B: 5/4",
+          "C: 4/5",
+          "D: 1/20",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q14": {
+      "inputHash": "9ca0fb5a30097176dc56e9d4bbf641173d10745728ddf0b9df84971b17b1175a",
+      "description": {
+        "en": "Question 14. Mia buys 5 yards of ribbon to make bracelets. She needs 18 inches of ribbon to make 1 bracelet. How many bracelets can Mia make if she uses all the ribbon she buys? Choices: A: 90 B: 10 C: 3 D: 2",
+        "es": "Pregunta 14. Mia compra 5 yardas de cinta para hacer brazaletes. Ella necesita 18 pulgadas de cinta para hacer 1 brazalete. ¿Cuántos brazaletes puede hacer Mia si usa toda la cinta que compra? Opciones: A: 90 B: 10 C: 3 D: 2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 yards",
+          "18 inches",
+          "1 bracelet",
+          "90",
+          "10",
+          "3",
+          "2",
+          "A: 90",
+          "B: 10",
+          "C: 3",
+          "D: 2"
+        ],
+        "es": [
+          "5 yardas",
+          "18 pulgadas",
+          "1 brazalete",
+          "90",
+          "10",
+          "3",
+          "2",
+          "A: 90",
+          "B: 10",
+          "C: 3",
+          "D: 2"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q15": {
+      "inputHash": "98929171b1dc0e88d70f696c0137f98aa2c2dbe2175c7963aeb2a1ec12e48f37",
+      "description": {
+        "en": "Question 15. The decimal grids described below are shaded to model an expression. Each grid is a 10-by-10 array of 100 equal squares, so a fully shaded grid represents 1. To the left of a plus sign are two fully shaded grids and a third grid with 23 shaded squares: its leftmost 2 columns are completely shaded, and the top 3 squares of the next column are shaded. To the right of the plus sign are one fully shaded grid and another grid with its leftmost 9 columns completely shaded, for 90 shaded squares. What is the value of the expression modeled by the decimal grids? Choices: A: 3.29 B: 3.32 C: 4.10 D: 4.13",
+        "es": "Pregunta 15. Las siguientes cuadrillas de decimales están sombreadas para modelar una expresión. Hay cinco cuadrillas, cada una dividida en 10 filas y 10 columnas, con 100 celdas en total. De izquierda a derecha: la primera cuadrilla está completamente sombreada; la segunda está completamente sombreada; en la tercera están sombreadas las 2 columnas de la izquierda y las 3 celdas superiores de la columna siguiente, para un total de 23 celdas sombreadas; la cuarta está completamente sombreada; en la quinta están sombreadas las 9 columnas de la izquierda y la columna de la derecha está en blanco. ¿Cuál es el valor de la expresión que modelan las cuadrillas de decimales? Opciones: A: 3.29 B: 3.32 C: 4.10 D: 4.13"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10-by-10",
+          "100",
+          "1",
+          "23",
+          "2",
+          "3",
+          "90",
+          "3.29",
+          "3.32",
+          "4.10",
+          "4.13",
+          "A: 3.29",
+          "B: 3.32",
+          "C: 4.10",
+          "D: 4.13"
+        ],
+        "es": [
+          "cinco cuadrillas",
+          "10 filas",
+          "10 columnas",
+          "100 celdas",
+          "2 columnas",
+          "9 columnas",
+          "3.29",
+          "3.32",
+          "4.10",
+          "4.13",
+          "23 celdas sombreadas",
+          "A: 3.29",
+          "B: 3.32",
+          "C: 4.10",
+          "D: 4.13"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q16": {
+      "inputHash": "bac19f92519b9675c79241edc21ca611728b627419a1bba5eceab3813195b20d",
+      "description": {
+        "en": "Question 16. Which expression is equivalent to 3/5? Choices: A: 3 × 5 B: 3 + 5 C: 3 ÷ 5 D: 3 − 5",
+        "es": "Pregunta 16. ¿Qué expresión es equivalente a 3/5? Opciones: A: 3 × 5 B: 3 + 5 C: 3 ÷ 5 D: 3 − 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/5",
+          "3 × 5",
+          "3 + 5",
+          "3 ÷ 5",
+          "3 − 5",
+          "A: 3 × 5",
+          "B: 3 + 5",
+          "C: 3 ÷ 5",
+          "D: 3 − 5"
+        ],
+        "es": [
+          "3/5",
+          "3 × 5",
+          "3 + 5",
+          "3 ÷ 5",
+          "3 − 5",
+          "A: 3 × 5",
+          "B: 3 + 5",
+          "C: 3 ÷ 5",
+          "D: 3 − 5"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q17": {
+      "inputHash": "ecf14b24ebf9911be29c2d4cb92919df102449caf39ec113d676ffebe75f67f7",
+      "description": {
+        "en": "Question 17. Tyler completely filled a rectangular box with unit cubes, with no gaps or overlaps. A key shows that one unit cube equals 1 cubic unit. He then counted the number of cubes that he used to fill the box. What type of measurement is represented by the number of cubes Tyler counted? Choices: A: area B: height C: volume D: perimeter",
+        "es": "Pregunta 17. Tyler llenó por completo una caja con cubos unitarios, sin espacios vacíos ni superposiciones. Una referencia indica que un cubo unitario equivale a 1 unidad cúbica. Luego, él contó el número de cubos que usó para llenar la caja. ¿Qué tipo de medida está representada por el número de cubos que contó Tyler? Opciones: A: área B: altura C: volumen D: perímetro"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 cubic unit",
+          "area",
+          "height",
+          "volume",
+          "perimeter",
+          "A: area",
+          "B: height",
+          "C: volume",
+          "D: perimeter"
+        ],
+        "es": [
+          "cubos unitarios",
+          "1 unidad cúbica",
+          "área",
+          "altura",
+          "volumen",
+          "perímetro",
+          "A: área",
+          "B: altura",
+          "C: volumen",
+          "D: perímetro"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q21": {
+      "inputHash": "2f5c2d21bb3554995f26414f7979e69cd57cc00ac78dc8819faaf5f0058a9ccc",
+      "description": {
+        "en": "Question 21. Each student in a class plays one of three sports: soccer, volleyball, or basketball. Of the number of students, 3/5 play soccer and 1/4 play volleyball. What fraction of the number of students play basketball? Choices: A: 3/20 B: 4/9 C: 5/9 D: 17/20",
+        "es": "Pregunta 21. Cada alumno de una clase juega a uno de tres deportes: fútbol, vóleibol o básquetbol. Tres quintos, 3/5, del número de alumnos juegan al fútbol. Un cuarto, 1/4, del número de alumnos juegan al vóleibol. ¿Qué fracción del número de alumnos juega al básquetbol? Opciones: A: 3/20 B: 4/9 C: 5/9 D: 17/20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/5",
+          "1/4",
+          "3/20",
+          "4/9",
+          "5/9",
+          "17/20",
+          "A: 3/20",
+          "B: 4/9",
+          "C: 5/9",
+          "D: 17/20"
+        ],
+        "es": [
+          "3/5",
+          "1/4",
+          "3/20",
+          "4/9",
+          "5/9",
+          "17/20",
+          "A: 3/20",
+          "B: 4/9",
+          "C: 5/9",
+          "D: 17/20"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q22": {
+      "inputHash": "13a65ad5f5c8e16a731464bf735c51743ff8049b64ed9ed83bfee18b88823df6",
+      "description": {
+        "en": "Question 22. What is the value of 0.1561 rounded to the nearest tenth? Choices: A: 0.15 B: 0.16 C: 0.1 D: 0.2",
+        "es": "Pregunta 22. ¿Cuál es el valor de 0.1561 redondeado al décimo más cercano? Opciones: A: 0.15 B: 0.16 C: 0.1 D: 0.2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.1561",
+          "0.15",
+          "0.16",
+          "0.1",
+          "0.2",
+          "A: 0.15",
+          "B: 0.16",
+          "C: 0.1",
+          "D: 0.2"
+        ],
+        "es": [
+          "0.1561",
+          "0.15",
+          "0.16",
+          "0.1",
+          "0.2",
+          "A: 0.15",
+          "B: 0.16",
+          "C: 0.1",
+          "D: 0.2"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q23": {
+      "inputHash": "48f14161eae767e69e062beb21980f6ae3554eb9434f281b29cb0374ba7f4bdf",
+      "description": {
+        "en": "Question 23. The figure is made of unit cubes. The diagram contains eight cubes, all one cube high. Six cubes form a straight row. At one end, one additional cube is attached beside the end cube; at the opposite end, one additional cube is attached beside that end cube. How many unit cubes need to be added to the figure so that it will have a total volume of 12 cubic units? Choices: A: 1. B: 2. C: 4. D: 8.",
+        "es": "Pregunta 23. La siguiente figura está hecha de cubos unitarios. El sólido contiene 8 cubos: 6 cubos forman una hilera recta; hay 1 cubo unido al costado del cubo situado en un extremo de la hilera y 1 cubo unido al costado del cubo situado en el extremo opuesto. Todos los cubos tienen el mismo tamaño y no hay cubos apilados. ¿Cuántos cubos unitarios es necesario sumar a la figura para que tenga un volumen total de 12 unidades cúbicas? Opciones: A: 1 B: 2 C: 4 D: 8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 cubic units",
+          "A: 1",
+          "B: 2",
+          "C: 4",
+          "D: 8"
+        ],
+        "es": [
+          "8 cubos",
+          "6 cubos",
+          "1 cubo",
+          "12 unidades cúbicas",
+          "A: 1",
+          "B: 2",
+          "C: 4",
+          "D: 8"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q24": {
+      "inputHash": "5ec5c9b37eff84235e9335d1965b3631dd7f18dc6fdde1bda7f428378fa05c49",
+      "description": {
+        "en": "Question 24. The operation symbol and the exponent are missing in the equation 7,320 □ 10^□ = 0.07320. Which operation symbol and exponent should go in the boxes to make the equation true? Choices: A: × and 2. B: ÷ and 2. C: × and 5. D: ÷ and 5.",
+        "es": "Pregunta 24. En la ecuación que se muestra a continuación faltan el símbolo de operación y el exponente. La ecuación es: 7,320 [símbolo de operación] 10^[exponente] = 0.07320. ¿Qué símbolo de operación y exponente deben ir en los recuadros para que la ecuación sea verdadera? Opciones: A: × y 2 B: ÷ y 2 C: × y 5 D: ÷ y 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7,320 □ 10^□ = 0.07320",
+          "× and 2",
+          "÷ and 2",
+          "× and 5",
+          "÷ and 5",
+          "A: × and 2",
+          "B: ÷ and 2",
+          "C: × and 5",
+          "D: ÷ and 5"
+        ],
+        "es": [
+          "7,320 [símbolo de operación] 10^[exponente] = 0.07320",
+          "0.07320",
+          "× y 2",
+          "÷ y 2",
+          "× y 5",
+          "÷ y 5",
+          "A: × y 2",
+          "B: ÷ y 2",
+          "C: × y 5",
+          "D: ÷ y 5"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q25": {
+      "inputHash": "0c87cbe64b3a65efad0ab5588bfc1b931e7cd64aeb4ad06d0572f4cc919fa215",
+      "description": {
+        "en": "Question 25. A square and a rhombus are presented. The square has four equal sides and four right angles. The rhombus is slanted, has four equal sides, two acute angles, two obtuse angles, and no right angles. Which attribute is true of one of the shapes but not of both? Choices: A: All angles are right angles. B: All sides are the same length. C: There are two sets of equal angles. D: There are two sets of parallel sides.",
+        "es": "Pregunta 25. A continuación se muestran un cuadrado y un rombo. El cuadrado tiene cuatro lados de la misma longitud, cuatro ángulos rectos y dos pares de lados opuestos paralelos. El rombo está inclinado hacia la derecha: tiene cuatro lados de la misma longitud, dos ángulos agudos iguales, dos ángulos obtusos iguales y dos pares de lados opuestos paralelos. ¿Qué atributo es verdadero para una de las figuras, pero no para ambas? Opciones: A: Todos los ángulos son ángulos rectos. B: Todos los lados tienen la misma longitud. C: Hay dos conjuntos de ángulos iguales. D: Hay dos conjuntos de lados paralelos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "four equal sides",
+          "four right angles",
+          "two acute angles",
+          "two obtuse angles",
+          "A: All angles are right angles",
+          "B: All sides are the same length",
+          "C: There are two sets of equal angles",
+          "D: There are two sets of parallel sides"
+        ],
+        "es": [
+          "cuatro lados",
+          "cuatro ángulos rectos",
+          "dos ángulos agudos iguales",
+          "dos ángulos obtusos iguales",
+          "dos pares de lados opuestos paralelos",
+          "A: Todos los ángulos son ángulos rectos",
+          "B: Todos los lados tienen la misma longitud",
+          "C: Hay dos conjuntos de ángulos iguales",
+          "D: Hay dos conjuntos de lados paralelos"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q26": {
+      "inputHash": "95fa28a63d9cb601efccb62cf17bdd807c1380a6830a86cd3925c065af61c6c0",
+      "description": {
+        "en": "Question 26. Point K is marked on a horizontal number line with arrows at both ends. The ticks are equally spaced. The first labeled tick is 0.10 and the last labeled tick is 0.20, with ten equal intervals between them, so each interval represents 0.01. Point K is between the ticks for 0.12 and 0.13 and is to the left of 0.13. Which number sentence best describes the value represented by point K? Choices: A: K > 0.13. B: K < 0.13. C: K = 0.15. D: K = 0.35.",
+        "es": "Pregunta 26. El punto K se muestra en una recta numérica horizontal con flechas en ambos extremos. Las marcas están espaciadas uniformemente desde 0.10 hasta 0.20, en incrementos de 0.01. El punto K es un punto cerrado situado entre las marcas de 0.12 y 0.13; está a la derecha de 0.12 y a la izquierda de 0.13. ¿Qué ecuación numérica describe mejor el valor representado por el punto K? Opciones: A: K > 0.13 B: K < 0.13 C: K = 0.15 D: K = 0.35"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.10",
+          "0.20",
+          "0.01",
+          "0.12",
+          "0.13",
+          "K > 0.13",
+          "K < 0.13",
+          "K = 0.15",
+          "K = 0.35",
+          "A: K > 0.13",
+          "B: K < 0.13",
+          "C: K = 0.15",
+          "D: K = 0.35"
+        ],
+        "es": [
+          "0.10",
+          "0.20",
+          "0.01",
+          "0.12",
+          "0.13",
+          "K > 0.13",
+          "K < 0.13",
+          "K = 0.15",
+          "K = 0.35",
+          "A: K > 0.13",
+          "B: K < 0.13",
+          "C: K = 0.15",
+          "D: K = 0.35"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q27": {
+      "inputHash": "960e752a0788ce9a4df0d3777fcb4ffaf63cb0bf19d118d04f4b856ffa6ce112",
+      "description": {
+        "en": "Question 27. The table titled “SOFTBALL DISTANCES” shows the distance some players hit a softball. It has columns “Name” and “Distance.” The rows are: Amalia, 36 inches; Nick, 6 feet; Lila, 108 inches. Pablo hit the softball 2 yards. Which player or players hit the softball the same distance as Pablo? Choices: A: Amalia only. B: Nick only. C: Lila only. D: Amalia and Nick.",
+        "es": "Pregunta 27. La siguiente tabla muestra la distancia a la cual algunos jugadores batearon una pelota de sófbol. La tabla se titula «DISTANCIAS DE SÓFBOL» y tiene las columnas «Nombre» y «Distancia». Sus filas son: Amalia, 36 pulgadas; Nick, 6 pies; Lila, 108 pulgadas. Pablo bateó la pelota de sófbol a 2 yardas. ¿Qué jugador o jugadores batearon la pelota de sófbol a la misma distancia que Pablo? Opciones: A: solamente Amalia B: solamente Nick C: solamente Lila D: Amalia y Nick"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "36 inches",
+          "6 feet",
+          "108 inches",
+          "2 yards",
+          "A: Amalia only",
+          "B: Nick only",
+          "C: Lila only",
+          "D: Amalia and Nick"
+        ],
+        "es": [
+          "36 pulgadas",
+          "6 pies",
+          "108 pulgadas",
+          "2 yardas",
+          "A: solamente Amalia",
+          "B: solamente Nick",
+          "C: solamente Lila",
+          "D: Amalia y Nick"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q28": {
+      "inputHash": "61d8e5a3c008489e58984599aacce6888fe656ad26958a506518c76974b5352f",
+      "description": {
+        "en": "Question 28. The line plot titled “PIECES OF STRING” shows the lengths of all the pieces of string Emma used for an art project. She cut all these pieces from one original piece of string. The horizontal axis is labeled “Length (feet)” and has equally spaced values 0, 1/8, 1/4, 3/8, 2/4, 5/8, 3/4, 7/8, and 1. The X marks show one piece at 1/8 foot, four pieces at 2/4 foot, one piece at 5/8 foot, two pieces at 3/4 foot, and one piece at 7/8 foot. There are no X marks at the other values. Emma had 1 foot of string left over. How long, in feet, was the original piece of string? Choices: A: 1 6/8. B: 1 7/8. C: 3 7/8. D: 6 1/8.",
+        "es": "Pregunta 28. El diagrama lineal de abajo muestra las longitudes de todos los trozos de cuerda que Emma usó para un proyecto de arte. Ella cortó todos estos trozos de una sola cuerda original. El diagrama se titula «TROZOS DE CUERDA». Su eje horizontal, rotulado «Longitud (pies)», tiene marcas igualmente espaciadas en 0, 1/8, 1/4, 3/8, 2/4, 5/8, 3/4, 7/8 y 1. Las X indican: 1 trozo de 1/8 de pie; 4 trozos de 2/4 de pie; 1 trozo de 5/8 de pie; 2 trozos de 3/4 de pie; y 1 trozo de 7/8 de pie. No hay X en 0, 1/4, 3/8 ni 1. A Emma le sobró 1 pie de cuerda. ¿Qué longitud, en pies, tenía la cuerda original? Opciones: A: 1 6/8 B: 1 7/8 C: 3 7/8 D: 6 1/8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0, 1/8, 1/4, 3/8, 2/4, 5/8, 3/4, 7/8, and 1",
+          "one piece at 1/8 foot",
+          "four pieces at 2/4 foot",
+          "one piece at 5/8 foot",
+          "two pieces at 3/4 foot",
+          "one piece at 7/8 foot",
+          "1 foot",
+          "A: 1 6/8",
+          "B: 1 7/8",
+          "C: 3 7/8",
+          "D: 6 1/8",
+          "1/8",
+          "1/4",
+          "3/8",
+          "2/4",
+          "5/8",
+          "3/4",
+          "7/8",
+          "1 6/8",
+          "1 7/8",
+          "3 7/8",
+          "6 1/8"
+        ],
+        "es": [
+          "0",
+          "1/8",
+          "1/4",
+          "3/8",
+          "2/4",
+          "5/8",
+          "3/4",
+          "7/8",
+          "1",
+          "1 trozo de 1/8",
+          "4 trozos de 2/4",
+          "1 trozo de 5/8",
+          "2 trozos de 3/4",
+          "1 trozo de 7/8",
+          "1 pie",
+          "1 6/8",
+          "1 7/8",
+          "3 7/8",
+          "6 1/8",
+          "A: 1 6/8",
+          "B: 1 7/8",
+          "C: 3 7/8",
+          "D: 6 1/8"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q29": {
+      "inputHash": "8f75e2d0bc14e9c63eef438d8dd24af8e9b04efc9abe73dec1b2326b0b5b280b",
+      "description": {
+        "en": "Question 29. For which values of k would the product of (k/3) × 12 be greater than 12? Choices: A: for any value of k less than 1 but greater than 0. B: for any value of k less than 3 but greater than 1. C: for any value of k equal to 3. D: for any value of k greater than 3.",
+        "es": "Pregunta 29. ¿Para qué valores de k el producto de (k/3) × 12 sería mayor que 12? Opciones: A: para cualquier valor de k menor que 1, pero mayor que 0 B: para cualquier valor de k menor que 3, pero mayor que 1 C: para cualquier valor de k igual a 3 D: para cualquier valor de k mayor que 3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(k/3) × 12",
+          "greater than 12",
+          "k less than 1 but greater than 0",
+          "k less than 3 but greater than 1",
+          "k equal to 3",
+          "k greater than 3",
+          "A: for any value of k less than 1 but greater than 0",
+          "B: for any value of k less than 3 but greater than 1",
+          "C: for any value of k equal to 3",
+          "D: for any value of k greater than 3",
+          "(k/3)"
+        ],
+        "es": [
+          "(k/3) × 12",
+          "mayor que 12",
+          "k menor que 1",
+          "k menor que 3",
+          "k igual a 3",
+          "k mayor que 3",
+          "A: para cualquier valor de k menor que 1, pero mayor que 0",
+          "B: para cualquier valor de k menor que 3, pero mayor que 1",
+          "C: para cualquier valor de k igual a 3",
+          "D: para cualquier valor de k mayor que 3",
+          "(k/3)"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q32": {
+      "inputHash": "86aee9d9076b1650dff624d3aa317b5031cce15f5f34c6630ec0e6c709e38cd4",
+      "description": {
+        "en": "Question 32. Each day last week, Ms. Wilson walked 3/4 mile. What is the total distance, in miles, that Ms. Wilson walked in 4 days? Choices: A: 1. B: 2. C: 3. D: 4.",
+        "es": "Pregunta 32. Cada día de la semana pasada, la Sra. Wilson caminó 3/4 de milla. ¿Cuál es la distancia total, en millas, que caminó la Sra. Wilson en 4 días? Opciones: A: 1 B: 2 C: 3 D: 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4 mile",
+          "4 days",
+          "A: 1",
+          "B: 2",
+          "C: 3",
+          "D: 4",
+          "3/4"
+        ],
+        "es": [
+          "3/4 de milla",
+          "4 días",
+          "A: 1",
+          "B: 2",
+          "C: 3",
+          "D: 4",
+          "3/4"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q33": {
+      "inputHash": "cf7b5dca19dab70fea9a49fc573f9a50bb0fa7eb05c6efed739bcb437162363d",
+      "description": {
+        "en": "Question 33. A right rectangular prism is shown. The volume of the prism is determined by using unit cubes. The prism measures 4 in. long, 3 in. wide, and 2 in. high. A key shows a unit cube measuring 1 in. by 1 in. by 1 in. Which statement describes how to determine the volume of the prism in cubic units? Choices: A: Add the length, width, and height: 4 + 3 + 2. B: Add the length and width and then multiply by the height: (4 + 3) × 2. C: Determine the area of the base and add the number of layers of cubes: (4 × 3) + 2. D: Determine the area of the base and multiply by the number of layers of cubes: (4 × 3) × 2.",
+        "es": "Pregunta 33. A continuación se muestra un prisma rectangular recto. El volumen del prisma se determina usando cubos unitarios. El prisma rectangular tiene 4 pulg. de longitud, 3 pulg. de ancho y 2 pulg. de altura. Un recuadro titulado «REFERENCIA» presenta un cubo unitario cuyas tres dimensiones —longitud, ancho y altura— miden 1 pulg. ¿Qué afirmación describe cómo determinar el volumen del prisma en unidades cúbicas? Opciones: A: Sume la longitud, el ancho y la altura: 4 + 3 + 2. B: Sume la longitud y el ancho y luego multiplique por la altura: (4 + 3) × 2. C: Determine el área de la base y sume el número de niveles de cubos: (4 × 3) + 2. D: Determine el área de la base y multiplique por el número de niveles de cubos: (4 × 3) × 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 in",
+          "3 in",
+          "2 in",
+          "1 in",
+          "4 + 3 + 2",
+          "(4 + 3) × 2",
+          "(4 × 3) + 2",
+          "(4 × 3) × 2",
+          "A: Add the length, width, and height: 4 + 3 + 2",
+          "B: Add the length and width and then multiply by the height: (4 + 3) × 2",
+          "C: Determine the area of the base and add the number of layers of cubes: (4 × 3) + 2",
+          "D: Determine the area of the base and multiply by the number of layers of cubes: (4 × 3) × 2",
+          "(4 + 3)",
+          "(4 × 3)"
+        ],
+        "es": [
+          "4 pulg",
+          "3 pulg",
+          "2 pulg",
+          "1 pulg",
+          "4 + 3 + 2",
+          "(4 + 3) × 2",
+          "(4 × 3) + 2",
+          "(4 × 3) × 2",
+          "A: Sume la longitud, el ancho y la altura: 4 + 3 + 2",
+          "B: Sume la longitud y el ancho y luego multiplique por la altura: (4 + 3) × 2",
+          "C: Determine el área de la base y sume el número de niveles de cubos: (4 × 3) + 2",
+          "D: Determine el área de la base y multiplique por el número de niveles de cubos: (4 × 3) × 2",
+          "(4 + 3)",
+          "(4 × 3)"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q36": {
+      "inputHash": "7906bd663ae3b8e8ea0e6df88084a28abed2e40a4c436dff583a8ff781acb35e",
+      "description": {
+        "en": "Question 36. What is the volume of the cube? A diagram shows a cube with length, width, and height each labeled 1 unit. Choices: A: 1 cubic unit. B: 3 cubic units. C: 4 cubic units. D: 6 cubic units.",
+        "es": "Pregunta 36. ¿Cuál es el volumen del cubo que se muestra a continuación? El diagrama representa un cubo con longitud, ancho y altura de 1 unidad cada uno. Opciones: A: 1 unidad cúbica. B: 3 unidades cúbicas. C: 4 unidades cúbicas. D: 6 unidades cúbicas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 unit",
+          "1 cubic unit",
+          "3 cubic units",
+          "4 cubic units",
+          "6 cubic units",
+          "A: 1 cubic unit",
+          "B: 3 cubic units",
+          "C: 4 cubic units",
+          "D: 6 cubic units"
+        ],
+        "es": [
+          "1 unidad",
+          "1 unidad cúbica",
+          "3 unidades cúbicas",
+          "4 unidades cúbicas",
+          "6 unidades cúbicas",
+          "A: 1 unidad cúbica",
+          "B: 3 unidades cúbicas",
+          "C: 4 unidades cúbicas",
+          "D: 6 unidades cúbicas"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q37": {
+      "inputHash": "65cf173952967a564602fee4096cb19d51f98bbe5d78cc3751828e7982f97bf9",
+      "description": {
+        "en": "Question 37. During a hike, 3 friends equally shared 1/2 pound of trail mix. What amount of trail mix, in pounds, did each friend receive? Choices: A: 1/6. B: 3/2. C: 3 1/2. D: 6.",
+        "es": "Pregunta 37. Durante una caminata, 3 amigos compartieron 1/2 libra de surtido de frutos secos. ¿Qué cantidad de surtido de frutos secos, en libras, recibió cada amigo? Opciones: A: 1/6. B: 3/2. C: 3 1/2. D: 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "1/2",
+          "1/6",
+          "3/2",
+          "3 1/2",
+          "6",
+          "A: 1/6",
+          "B: 3/2",
+          "C: 3 1/2",
+          "D: 6"
+        ],
+        "es": [
+          "3 amigos",
+          "1/2",
+          "1/6",
+          "3/2",
+          "3 1/2",
+          "6",
+          "A: 1/6",
+          "B: 3/2",
+          "C: 3 1/2",
+          "D: 6"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q41": {
+      "inputHash": "9f49fe8cc0441657b7ac1d0b4dcb89f7eb9b00f8b46808a7b862016bccba7510",
+      "description": {
+        "en": "Question 41. Which expression has a value greater than 1/2? Choices: A: 1/2 × 4/5. B: 1/2 × 4/4. C: 1/2 × 5/5. D: 1/2 × 5/4.",
+        "es": "Pregunta 41. ¿Qué expresión tiene un valor mayor que 1/2? Opciones: A: 1/2 × 4/5. B: 1/2 × 4/4. C: 1/2 × 5/5. D: 1/2 × 5/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/2",
+          "1/2 × 4/5",
+          "1/2 × 4/4",
+          "1/2 × 5/5",
+          "1/2 × 5/4",
+          "A: 1/2 × 4/5",
+          "B: 1/2 × 4/4",
+          "C: 1/2 × 5/5",
+          "D: 1/2 × 5/4",
+          "4/5",
+          "4/4",
+          "5/5",
+          "5/4"
+        ],
+        "es": [
+          "1/2",
+          "1/2 × 4/5",
+          "1/2 × 4/4",
+          "1/2 × 5/5",
+          "1/2 × 5/4",
+          "A: 1/2 × 4/5",
+          "B: 1/2 × 4/4",
+          "C: 1/2 × 5/5",
+          "D: 1/2 × 5/4",
+          "4/5",
+          "4/4",
+          "5/5",
+          "5/4"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q42": {
+      "inputHash": "df8a68efc0605f5315aa58d8b8cc59c302f54f59f538521d747f8dc45760e2f5",
+      "description": {
+        "en": "Question 42. A science teacher has 0.4 liter of seawater. She gives each of her 22 students a container and a 5-milliliter spoon. She then asks her students to put two spoonfuls of seawater into their containers. How many milliliters of seawater will be left after all 22 students have filled their containers? Choices: A: 70. B: 180. C: 290. D: 780.",
+        "es": "Pregunta 42. Una maestra de ciencias tiene 0.4 litros de agua de mar. Ella le da a cada uno de sus 22 alumnos un recipiente y una cuchara de 5 mililitros. Luego, les pide a sus alumnos que viertan dos cucharadas de agua de mar en sus recipientes. ¿Cuántos mililitros de agua de mar quedarán después de que los 22 alumnos hayan llenado sus recipientes? Opciones: A: 70. B: 180. C: 290. D: 780."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.4 liter",
+          "22",
+          "5-milliliter",
+          "two spoonfuls",
+          "70",
+          "180",
+          "290",
+          "780",
+          "A: 70",
+          "B: 180",
+          "C: 290",
+          "D: 780"
+        ],
+        "es": [
+          "0.4 litros",
+          "22 alumnos",
+          "5 mililitros",
+          "dos cucharadas",
+          "180",
+          "70",
+          "A: 70",
+          "B: 180",
+          "C: 290",
+          "D: 780"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q43": {
+      "inputHash": "ffb77c866bb1cdd9fd2ab4505e8aa3f314b84e6bed28445652a8c41b79738814",
+      "description": {
+        "en": "Question 43. What is the value of the expression below? 1/25 ÷ 74. Choices: A: 1/1,850. B: 1,850. C: 25/74. D: 2 24/25.",
+        "es": "Pregunta 43. ¿Cuál es el valor de la siguiente expresión? 1/25 ÷ 74. Opciones: A: 1/1,850. B: 1,850. C: 25/74. D: 2 24/25."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/25 ÷ 74",
+          "1/1,850",
+          "1,850",
+          "25/74",
+          "2 24/25",
+          "A: 1/1,850",
+          "B: 1,850",
+          "C: 25/74",
+          "D: 2 24/25",
+          "1/25",
+          "1/1"
+        ],
+        "es": [
+          "1/25 ÷ 74",
+          "1/1,850",
+          "1,850",
+          "25/74",
+          "2 24/25",
+          "A: 1/1,850",
+          "B: 1,850",
+          "C: 25/74",
+          "D: 2 24/25",
+          "1/25",
+          "1/1"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q44": {
+      "inputHash": "6c4932e5d4137ba2f2ca27aac9a156d5acb764669ef5fb25da46da5d86128602",
+      "description": {
+        "en": "Question 44. Which phrase best describes a figure with dimensions of 2 units by 2 units by 4 units and a volume of 16 cubic units? Choices: A: a solid figure that can be filled with 16 cubes that each measure 1 cubic unit. B: a solid figure that can be filled with 1 cube that measures 16 units on each edge. C: a solid figure that can be covered with 16 squares that each measure 1 square unit. D: a solid figure that can be covered with 1 square that measures 16 units on each edge.",
+        "es": "Pregunta 44. ¿Qué frase describe mejor una figura con dimensiones de 2 unidades por 2 unidades por 4 unidades y un volumen de 16 unidades cúbicas? Opciones: A: una figura sólida que puede llenarse con 16 cubos que miden 1 unidad cúbica cada uno. B: una figura sólida que puede llenarse con 1 cubo que mide 16 unidades en cada borde. C: una figura sólida que puede cubrirse con 16 cuadrados que miden 1 unidad cuadrada cada uno. D: una figura sólida que puede cubrirse con 1 cuadrado que mide 16 unidades en cada borde."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 units by 2 units by 4 units",
+          "16 cubic units",
+          "16 cubes",
+          "1 cubic unit",
+          "1 cube",
+          "16 units",
+          "16 squares",
+          "1 square unit",
+          "1 square",
+          "A: a solid figure that can be filled with 16 cubes that each measure 1 cubic unit",
+          "B: a solid figure that can be filled with 1 cube that measures 16 units on each edge",
+          "C: a solid figure that can be covered with 16 squares that each measure 1 square unit",
+          "D: a solid figure that can be covered with 1 square that measures 16 units on each edge"
+        ],
+        "es": [
+          "2 unidades por 2 unidades por 4 unidades",
+          "16 unidades cúbicas",
+          "16 cubos",
+          "1 unidad cúbica",
+          "1 cubo",
+          "16 unidades en cada borde",
+          "16 cuadrados",
+          "1 unidad cuadrada",
+          "1 cuadrado",
+          "A: una figura sólida que puede llenarse con 16 cubos que miden 1 unidad cúbica cada uno",
+          "B: una figura sólida que puede llenarse con 1 cubo que mide 16 unidades en cada borde",
+          "C: una figura sólida que puede cubrirse con 16 cuadrados que miden 1 unidad cuadrada cada uno",
+          "D: una figura sólida que puede cubrirse con 1 cuadrado que mide 16 unidades en cada borde"
+        ]
+      }
+    },
+    "nysed-2017-g5-mc-q45": {
+      "inputHash": "906304773609fc9a70f26060fd763bab2706ce22a6e2c1d5600dfa89b3e916b0",
+      "description": {
+        "en": "Question 45. Susan determined that the expression below is equal to 7.59: 15.91 − 8.32. Which expression can Susan use to check her answer? Choices: A: 8.32 − 7.59. B: 8.32 + 7.59. C: 15.91 + 8.32. D: 15.91 + 7.59.",
+        "es": "Pregunta 45. Susan determinó que la siguiente expresión es igual a 7.59: 15.91 − 8.32. ¿Qué expresión puede usar Susan para comprobar su respuesta? Opciones: A: 8.32 − 7.59. B: 8.32 + 7.59. C: 15.91 + 8.32. D: 15.91 + 7.59."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7.59",
+          "15.91 − 8.32",
+          "8.32 − 7.59",
+          "8.32 + 7.59",
+          "15.91 + 8.32",
+          "15.91 + 7.59",
+          "A: 8.32 − 7.59",
+          "B: 8.32 + 7.59",
+          "C: 15.91 + 8.32",
+          "D: 15.91 + 7.59"
+        ],
+        "es": [
+          "7.59",
+          "15.91 − 8.32",
+          "8.32 − 7.59",
+          "8.32 + 7.59",
+          "15.91 + 8.32",
+          "15.91 + 7.59",
+          "A: 8.32 − 7.59",
+          "B: 8.32 + 7.59",
+          "C: 15.91 + 8.32",
+          "D: 15.91 + 7.59"
+        ]
+      }
+    }
+  }
+}

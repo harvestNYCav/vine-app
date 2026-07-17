@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2024-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2024-g8-mc-q1": {
+      "inputHash": "3741ea946d173b1b3b93a623c0d5b0713a94267e58bc8d4f27e1b7dd05f1d3c1",
+      "description": {
+        "en": "Question 1. A group of friends went to a movie theater and paid $15.00 for each movie ticket. The group of friends shared one container of popcorn that cost $8.99. Which equation can be used to determine the total cost, c, for n tickets and the container of popcorn? Choices: A: c = 15n + 8.99 B: c = 8.99n + 15 C: c = 15(n + 8.99) D: c = 8.99(n + 15)",
+        "es": "Pregunta 1. Un grupo de amigos fue al cine y pagó $15.00 por cada entrada. El grupo de amigos compartió un recipiente de palomitas de maíz que cuesta $8.99. ¿Qué ecuación se puede usar para determinar el costo total, c, de n entradas y el recipiente de palomitas de maíz? Opciones: A: c = 15n + 8.99 B: c = 8.99n + 15 C: c = 15(n + 8.99) D: c = 8.99(n + 15)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$15.00",
+          "$8.99",
+          "c",
+          "n",
+          "c = 15n + 8.99",
+          "c = 8.99n + 15",
+          "c = 15(n + 8.99)",
+          "c = 8.99(n + 15)",
+          "A: c = 15n + 8.99",
+          "B: c = 8.99n + 15",
+          "C: c = 15(n + 8.99)",
+          "D: c = 8.99(n + 15)",
+          "(n + 8.99)",
+          "(n + 15)"
+        ],
+        "es": [
+          "$15.00",
+          "$8.99",
+          "c = 15n + 8.99",
+          "c = 8.99n + 15",
+          "c = 15(n + 8.99)",
+          "c = 8.99(n + 15)",
+          "A: c = 15n + 8.99",
+          "B: c = 8.99n + 15",
+          "C: c = 15(n + 8.99)",
+          "D: c = 8.99(n + 15)",
+          "(n + 8.99)",
+          "(n + 15)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q2": {
+      "inputHash": "e2806aa17d2f97ba055590d143f9174588ef932abd98737852a7f76267333746",
+      "description": {
+        "en": "Question 2. A scatter plot is provided on a coordinate plane. Both the x-axis and y-axis are numbered from 0 through 12 in increments of 1. The plotted points are (1,1), (2,1), (2,4), (3,2), (3,3), (3,4), (4,5), (4,7), (5,2), (5,4), (6,4), (6,6), (6,7), (7,6), (7,8), (8,4), (8,6), (9,7), (9,8), (10,6), and (10,9). Which pair of points could be used to draw a line that best represents the relationship of the data? Choices: A: (4,7) and (8,4) B: (3,3) and (9,7) C: (2,4) and (6,4) D: (3,2) and (3,4)",
+        "es": "Pregunta 2. A continuación, se muestra un diagrama de dispersión. El plano de coordenadas tiene el eje x horizontal, dirigido hacia la derecha, y el eje y vertical, dirigido hacia arriba. Ambos ejes están numerados de 0 a 12 en incrementos de 1. Los puntos del diagrama son (1,1), (2,1), (2,4), (3,2), (3,3), (3,4), (4,5), (4,7), (5,2), (5,4), (6,4), (6,6), (6,7), (7,6), (7,8), (8,4), (8,6), (9,7), (9,8), (10,6) y (10,9). ¿Qué par de puntos podría usarse para trazar la línea que represente mejor la relación de los datos? Opciones: A: (4,7) y (8,4) B: (3,3) y (9,7) C: (2,4) y (6,4) D: (3,2) y (3,4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "12",
+          "(1,1)",
+          "(2,1)",
+          "(2,4)",
+          "(3,2)",
+          "(3,3)",
+          "(3,4)",
+          "(4,5)",
+          "(4,7)",
+          "(5,2)",
+          "(5,4)",
+          "(6,4)",
+          "(6,6)",
+          "(6,7)",
+          "(7,6)",
+          "(7,8)",
+          "(8,4)",
+          "(8,6)",
+          "(9,7)",
+          "(9,8)",
+          "(10,6)",
+          "(10,9)",
+          "A: (4,7) and (8,4)",
+          "B: (3,3) and (9,7)",
+          "C: (2,4) and (6,4)",
+          "D: (3,2) and (3,4)"
+        ],
+        "es": [
+          "0 a 12",
+          "(1,1)",
+          "(2,1)",
+          "(2,4)",
+          "(3,2)",
+          "(3,3)",
+          "(3,4)",
+          "(4,5)",
+          "(4,7)",
+          "(5,2)",
+          "(5,4)",
+          "(6,4)",
+          "(6,6)",
+          "(6,7)",
+          "(7,6)",
+          "(7,8)",
+          "(8,4)",
+          "(8,6)",
+          "(9,7)",
+          "(9,8)",
+          "(10,6)",
+          "(10,9)",
+          "(4,7) y (8,4)",
+          "(3,3) y (9,7)",
+          "(2,4) y (6,4)",
+          "(3,2) y (3,4)",
+          "A: (4,7) y (8,4)",
+          "B: (3,3) y (9,7)",
+          "C: (2,4) y (6,4)",
+          "D: (3,2) y (3,4)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q4": {
+      "inputHash": "add5b2a9eb2976324b00b53e7508e4210f5d4e00952241e59bf1839eb7549c33",
+      "description": {
+        "en": "Question 4. Triangle ABC is rotated 90° about the origin and then reflected over the y-axis to form triangle A′B′C′. One of the angles in triangle ABC has a measure of 115°. One of the angles in triangle A′B′C′ has a measure of 40°. Which is the measure of an angle in triangle ABC? Choices: A: 25° B: 75° C: 155° D: 180°",
+        "es": "Pregunta 4. El triángulo ABC se rota 90° alrededor del origen y luego se refleja sobre el eje y para formar el triángulo A′B′C′. Uno de los ángulos del triángulo ABC mide 115°. Uno de los ángulos del triángulo A′B′C′ mide 40°. ¿Cuál es la medida de un ángulo interno del triángulo ABC? Opciones: A: 25° B: 75° C: 155° D: 180°"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "ABC",
+          "90°",
+          "y-axis",
+          "A′B′C′",
+          "115°",
+          "40°",
+          "25°",
+          "75°",
+          "155°",
+          "180°",
+          "A: 25°",
+          "B: 75°",
+          "C: 155°",
+          "D: 180°"
+        ],
+        "es": [
+          "90°",
+          "A′B′C′",
+          "115°",
+          "40°",
+          "25°",
+          "75°",
+          "155°",
+          "180°",
+          "A: 25°",
+          "B: 75°",
+          "C: 155°",
+          "D: 180°"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q5": {
+      "inputHash": "809b42d5984c03dfe8cc297a95a4d32519162ba47781c4b942e4fba1166986a6",
+      "description": {
+        "en": "Question 5. What is the value of x in the equation (2/3)x − 7 = 5 − (3/5)x? Choices: A: 3 18/19 B: 9 9/19 C: 15 1/5 D: 19 1/5",
+        "es": "Pregunta 5. ¿Cuál es el valor de x en la ecuación (2/3)x − 7 = 5 − (3/5)x? Opciones: A: 3 18/19 B: 9 9/19 C: 15 1/5 D: 19 1/5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "(2/3)x − 7 = 5 − (3/5)x",
+          "3 18/19",
+          "9 9/19",
+          "15 1/5",
+          "19 1/5",
+          "A: 3 18/19",
+          "B: 9 9/19",
+          "C: 15 1/5",
+          "D: 19 1/5",
+          "(2/3)",
+          "(3/5)"
+        ],
+        "es": [
+          "(2/3)x − 7 = 5 − (3/5)x",
+          "3 18/19",
+          "9 9/19",
+          "15 1/5",
+          "19 1/5",
+          "A: 3 18/19",
+          "B: 9 9/19",
+          "C: 15 1/5",
+          "D: 19 1/5",
+          "(2/3)",
+          "(3/5)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q7": {
+      "inputHash": "5546f03d09ea7cd8b63652bf0c5e4fee3c3aceaf2acf9d5dc8cd94e1501f94bb",
+      "description": {
+        "en": "Question 7. Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. Electrician A's charges are represented by the equation C = 25x + 50. For Electrician B, a table has columns labeled “Time (hours)” and “Total Charge (dollars).” Its rows are: 3 hours, 130 dollars; 4 hours, 150 dollars; and 5 hours, 170 dollars. Which statement comparing the charges for each electrician is true? Choices: A: Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B. B: Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B. C: Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B. D: Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B.",
+        "es": "Pregunta 7. Dos electricistas, electricista A y electricista B, ofrecen distintos precios por su trabajo. Cada electricista cobra una tarifa inicial por el pedido de servicio más una tarifa por hora. Lo que cobra cada uno de los electricistas se representa mediante la ecuación y la tabla que se muestran a continuación. Para el electricista A, la ecuación es C = 25x + 50. Para el electricista B, la tabla tiene las columnas «Tiempo (en horas)» y «Cargo total (en dólares)». Sus filas indican: 3 horas, 130 dólares; 4 horas, 150 dólares; y 5 horas, 170 dólares. ¿Qué afirmación que compara lo que cobra cada electricista es verdadera? Opciones: A: El electricista A tiene una tarifa inicial y una tarifa por hora que son menores que las del electricista B. B: El electricista A tiene una tarifa inicial y una tarifa por hora que son mayores que las del electricista B. C: El electricista A tiene una tarifa inicial que es menor que la del electricista B. La tarifa por hora del electricista A es mayor que la del electricista B. D: El electricista A tiene una tarifa inicial que es mayor que la del electricista B. La tarifa por hora del electricista A es menor que la del electricista B."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "C = 25x + 50",
+          "Time (hours)",
+          "Total Charge (dollars)",
+          "3 hours, 130 dollars",
+          "4 hours, 150 dollars",
+          "5 hours, 170 dollars",
+          "A: Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B",
+          "B: Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B",
+          "C: Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B",
+          "D: Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B"
+        ],
+        "es": [
+          "C = 25x + 50",
+          "3 horas, 130 dólares",
+          "4 horas, 150 dólares",
+          "5 horas, 170 dólares",
+          "tarifa inicial y una tarifa por hora que son menores",
+          "tarifa inicial y una tarifa por hora que son mayores",
+          "tarifa inicial que es menor",
+          "tarifa por hora del electricista A es mayor",
+          "tarifa inicial que es mayor",
+          "tarifa por hora del electricista A es menor",
+          "A: El electricista A tiene una tarifa inicial y una tarifa por hora que son menores que las del electricista B",
+          "B: El electricista A tiene una tarifa inicial y una tarifa por hora que son mayores que las del electricista B",
+          "C: El electricista A tiene una tarifa inicial que es menor que la del electricista B. La tarifa por hora del electricista A es mayor que la del electricista B",
+          "D: El electricista A tiene una tarifa inicial que es mayor que la del electricista B. La tarifa por hora del electricista A es menor que la del electricista B"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q9": {
+      "inputHash": "ecc55e42746c6be6fd780ec98661394e5677202bd469d7045b26e0c8c6eb49a1",
+      "description": {
+        "en": "Question 9. What is the slope of the line on a coordinate plane that passes through the points (2,2) and (−1,−2)? Choices: A: −4/3 B: −3/4 C: 3/4 D: 4/3",
+        "es": "Pregunta 9. ¿Cuál es la pendiente de la línea en un plano de coordenadas que pasa a través de los puntos (2,2) y (−1,−2)? Opciones: A: −4/3 B: −3/4 C: 3/4 D: 4/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2,2)",
+          "(−1,−2)",
+          "−4/3",
+          "−3/4",
+          "3/4",
+          "4/3",
+          "A: −4/3",
+          "B: −3/4",
+          "C: 3/4",
+          "D: 4/3"
+        ],
+        "es": [
+          "(2,2)",
+          "(−1,−2)",
+          "−4/3",
+          "−3/4",
+          "3/4",
+          "4/3",
+          "A: −4/3",
+          "B: −3/4",
+          "C: 3/4",
+          "D: 4/3"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q10": {
+      "inputHash": "ec67666726421dd005792458da53896d21d34abac01cc1e3e657b8b43301802f",
+      "description": {
+        "en": "Question 10. A sphere has a radius of 4 inches. A cone has a radius of 3 inches and a height of 8 inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone? Choices: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8²)(3)] D: π[(4/3)(4²) − (1/3)(8²)(3)]",
+        "es": "Pregunta 10. Una esfera tiene un radio de 4 pulgadas. Un cono tiene un radio de 3 pulgadas y una altura de 8 pulgadas. ¿Qué expresión representa la diferencia de volumen, en pulgadas cúbicas, entre la esfera y el cono? Opciones: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8²)(3)] D: π[(4/3)(4²) − (1/3)(8²)(3)]"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 inches",
+          "3 inches",
+          "8 inches",
+          "π[(4/3)(4³) − (1/3)(3²)(8)]",
+          "π[(4/3)(4²) − (1/3)(3²)(8)]",
+          "π[(4/3)(4³) − (1/3)(8²)(3)]",
+          "π[(4/3)(4²) − (1/3)(8²)(3)]",
+          "A: π[(4/3)(4³) − (1/3)(3²)(8)]",
+          "B: π[(4/3)(4²) − (1/3)(3²)(8)]",
+          "C: π[(4/3)(4³) − (1/3)(8²)(3)]",
+          "D: π[(4/3)(4²) − (1/3)(8²)(3)]",
+          "(4/3)",
+          "(4³)",
+          "(1/3)",
+          "(3²)",
+          "(8)",
+          "(4²)",
+          "(8²)",
+          "(3)"
+        ],
+        "es": [
+          "4 pulgadas",
+          "3 pulgadas",
+          "8 pulgadas",
+          "π[(4/3)(4³) − (1/3)(3²)(8)]",
+          "π[(4/3)(4²) − (1/3)(3²)(8)]",
+          "π[(4/3)(4³) − (1/3)(8²)(3)]",
+          "π[(4/3)(4²) − (1/3)(8²)(3)]",
+          "A: π[(4/3)(4³) − (1/3)(3²)(8)]",
+          "B: π[(4/3)(4²) − (1/3)(3²)(8)]",
+          "C: π[(4/3)(4³) − (1/3)(8²)(3)]",
+          "D: π[(4/3)(4²) − (1/3)(8²)(3)]",
+          "(4/3)",
+          "(4³)",
+          "(1/3)",
+          "(3²)",
+          "(8)",
+          "(4²)",
+          "(8²)",
+          "(3)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q12": {
+      "inputHash": "93afef4a26a5571d4113886cca728a0df01cd195be6bd4d45a63e3bc7859dee2",
+      "description": {
+        "en": "Question 12. Which value of x makes the equation x³ = 64 true? Choices: A: 4 B: 8 C: 16 D: 32",
+        "es": "Pregunta 12. ¿Qué valor de x hace que la ecuación x³ = 64 sea verdadera? Opciones: A: 4 B: 8 C: 16 D: 32"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x³ = 64",
+          "4",
+          "8",
+          "16",
+          "32",
+          "A: 4",
+          "B: 8",
+          "C: 16",
+          "D: 32"
+        ],
+        "es": [
+          "x³ = 64",
+          "4",
+          "8",
+          "16",
+          "32",
+          "A: 4",
+          "B: 8",
+          "C: 16",
+          "D: 32"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q18": {
+      "inputHash": "d256b9c849bb25bed6e542024b83e511af1bafc809c35d3171ecbea52c0759f8",
+      "description": {
+        "en": "Question 18. The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line y = 0.3x + 5.8 has been drawn to best represent the relationship between the alligator’s weight and growth time. The graph is titled “ALLIGATOR’S WEIGHT.” The horizontal axis is Time (weeks), labeled x, and runs from 0 to 50 in increments of 10. The vertical axis is Weight (pounds), labeled y, and is marked at 5, 10, 15, 20, and 25. Seven data points appear approximately at (0, 6), (8, 9), (18, 10), (28, 13), (34, 15), (44, 17.5), and (50, 19.5). The increasing line of best fit has a y-intercept near 5.8 and rises 0.3 pound for each additional week. Which statement best describes what the number 0.3 in the equation represents in this situation? Choices: A: The starting weight, in pounds, of the alligator. B: The approximate number of pounds the alligator gains each week. C: The maximum number of pounds the alligator gains each week. D: The average number of pounds of food the alligator is fed each week.",
+        "es": "Pregunta 18. El siguiente diagrama de dispersión muestra el peso, en libras, de un caimán a medida que va creciendo en un zoológico. La línea y = 0.3x + 5.8 se trazó para representar mejor la relación entre el peso del caimán y el tiempo de crecimiento. La gráfica se titula «PESO DEL CAIMÁN». El eje horizontal, x, representa el tiempo en semanas, desde 0 hasta 50, con marcas cada 10 semanas. El eje vertical, y, representa el peso en libras, desde 0 hasta 25, con marcas cada 5 libras. Hay siete puntos de datos, ubicados aproximadamente en (0, 6), (8, 9), (18, 10), (28, 13), (35, 15), (44, 17.5) y (50, 19.5). La recta ascendente y = 0.3x + 5.8 comienza cerca de (0, 5.8) y llega cerca de (50, 20). ¿Qué afirmación describe mejor lo que representa el número 0.3 de la ecuación en esta situación? Opciones: A: El peso inicial, en libras, del caimán. B: La cantidad aproximada de libras que aumenta de peso el caimán cada semana. C: La cantidad máxima de libras que aumenta de peso el caimán cada semana. D: La cantidad promedio de libras de alimento que recibe el caimán cada semana."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 0.3x + 5.8",
+          "0.3",
+          "5.8",
+          "0",
+          "50",
+          "10",
+          "5",
+          "15",
+          "20",
+          "25",
+          "(0, 6)",
+          "(8, 9)",
+          "(18, 10)",
+          "(28, 13)",
+          "(34, 15)",
+          "(44, 17.5)",
+          "(50, 19.5)",
+          "A: The starting weight, in pounds, of the alligator",
+          "B: The approximate number of pounds the alligator gains each week",
+          "C: The maximum number of pounds the alligator gains each week",
+          "D: The average number of pounds of food the alligator is fed each week"
+        ],
+        "es": [
+          "y = 0.3x + 5.8",
+          "0.3",
+          "(0, 6)",
+          "(8, 9)",
+          "(18, 10)",
+          "(28, 13)",
+          "(35, 15)",
+          "(44, 17.5)",
+          "(50, 19.5)",
+          "(0, 5.8)",
+          "(50, 20)",
+          "50",
+          "25",
+          "A: El peso inicial, en libras, del caimán",
+          "B: La cantidad aproximada de libras que aumenta de peso el caimán cada semana",
+          "C: La cantidad máxima de libras que aumenta de peso el caimán cada semana",
+          "D: La cantidad promedio de libras de alimento que recibe el caimán cada semana"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q19": {
+      "inputHash": "2cb9536c85ee089a7f5113f7435aff6c17d4fe06776393b18e884d0b55e3a324",
+      "description": {
+        "en": "Question 19. Trapezoid ABCD and its image A′B′C′D′ are on a coordinate plane. Both axes are marked in increments of 2. Trapezoid ABCD has vertices A(−10, −4), B(−8, −8), C(−4, −8), and D(−4, −4), connected in that order. Its horizontal top and bottom sides extend from A to D and from B to C; AD is longer than BC. Trapezoid A′B′C′D′ has vertices A′(10, −4), B′(8, −8), C′(4, −8), and D′(4, −4), connected in that order. Its horizontal top and bottom sides extend from D′ to A′ and from C′ to B′; D′A′ is longer than C′B′. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A′B′C′D′? Choices: A: reflection over the x axis and then a rotation of 180° about the origin B: reflection over the x axis and then a rotation of 90° about the origin C: reflection over the y axis and then a rotation of 180° about the origin D: reflection over the y axis and then a rotation of 90° about the origin",
+        "es": "Pregunta 19. El trapecio ABCD y su imagen A′B′C′D′ se muestran en un plano de coordenadas. Los ejes x e y se cruzan en el origen (0, 0), y la cuadrícula tiene incrementos de 2 unidades. El trapecio ABCD está a la izquierda del eje y y tiene vértices A(−10, −4), B(−8, −8), C(−4, −8) y D(−4, −4), unidos en ese orden. Sus lados AD y BC son horizontales, CD es vertical y AB es diagonal. El trapecio A′B′C′D′ está a la derecha del eje y y tiene vértices A′(10, −4), B′(8, −8), C′(4, −8) y D′(4, −4), unidos en ese orden. Sus lados D′A′ y C′B′ son horizontales, D′C′ es vertical y B′A′ es diagonal. ¿Qué series de transformaciones se podrían aplicar para mapear el trapecio ABCD en el trapecio A′B′C′D′? Opciones: A: reflexión sobre el eje x y luego rotación de 180° alrededor del origen. B: reflexión sobre el eje x y luego rotación de 90° alrededor del origen. C: reflexión sobre el eje y y luego rotación de 180° alrededor del origen. D: reflexión sobre el eje y y luego rotación de 90° alrededor del origen."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(−10, −4)",
+          "B(−8, −8)",
+          "C(−4, −8)",
+          "D(−4, −4)",
+          "A′(10, −4)",
+          "B′(8, −8)",
+          "C′(4, −8)",
+          "D′(4, −4)",
+          "180°",
+          "90°",
+          "x",
+          "y",
+          "A: reflection over the x axis and then a rotation of 180° about the origin",
+          "B: reflection over the x axis and then a rotation of 90° about the origin",
+          "C: reflection over the y axis and then a rotation of 180° about the origin",
+          "D: reflection over the y axis and then a rotation of 90° about the origin",
+          "(−10, −4)",
+          "(−8, −8)",
+          "(−4, −8)",
+          "(−4, −4)",
+          "(10, −4)",
+          "(8, −8)",
+          "(4, −8)",
+          "(4, −4)"
+        ],
+        "es": [
+          "(0, 0)",
+          "A(−10, −4)",
+          "B(−8, −8)",
+          "C(−4, −8)",
+          "D(−4, −4)",
+          "A′(10, −4)",
+          "B′(8, −8)",
+          "C′(4, −8)",
+          "D′(4, −4)",
+          "180°",
+          "90°",
+          "eje x",
+          "eje y",
+          "A: reflexión sobre el eje x y luego rotación de 180° alrededor del origen",
+          "B: reflexión sobre el eje x y luego rotación de 90° alrededor del origen",
+          "C: reflexión sobre el eje y y luego rotación de 180° alrededor del origen",
+          "D: reflexión sobre el eje y y luego rotación de 90° alrededor del origen",
+          "(−10, −4)",
+          "(−8, −8)",
+          "(−4, −8)",
+          "(−4, −4)",
+          "(10, −4)",
+          "(8, −8)",
+          "(4, −8)",
+          "(4, −4)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q20": {
+      "inputHash": "e554d7914eafd1737a0dc1261d6dffcbce91624be67a3999aa2c9df3597d1897",
+      "description": {
+        "en": "Question 20. Which equation represents a linear function? Choices: A: y = 1/2x − 3 B: y = x² + 5 C: y = x² + 2x D: y = 1/5x³",
+        "es": "Pregunta 20. ¿Qué ecuación representa una función lineal? Opciones: A: y = 1/2 x − 3. B: y = x² + 5. C: y = x² + 2x. D: y = 1/5 x³."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 1/2x − 3",
+          "y = x² + 5",
+          "y = x² + 2x",
+          "D: y = 1/5x³",
+          "A: y = 1/2x − 3",
+          "B: y = x² + 5",
+          "C: y = x² + 2x",
+          "1/2",
+          "1/5"
+        ],
+        "es": [
+          "y = 1/2 x − 3",
+          "1/2",
+          "y = x² + 5",
+          "x²",
+          "y = x² + 2x",
+          "y = 1/5 x³",
+          "1/5",
+          "x³",
+          "A: y = 1/2 x − 3",
+          "B: y = x² + 5",
+          "C: y = x² + 2x",
+          "D: y = 1/5 x³"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q22": {
+      "inputHash": "cf2b58712deb17d847d2788c766963155c7249bd38381aa02109c0b3616bcedb",
+      "description": {
+        "en": "Question 22. On a coordinate plane, triangle ABC is rotated 90 degrees clockwise about the origin and then dilated with a scale factor of 2 centered at the origin to form triangle A′B′C′. Which statement describes the relationship between triangle ABC and triangle A′B′C′? Choices: A: They are similar and congruent. B: They are similar but not congruent. C: They are congruent but not similar. D: They are neither congruent nor similar.",
+        "es": "Pregunta 22. En un plano de coordenadas, el triángulo ABC se rota 90 grados en sentido horario alrededor del origen y luego se dilata con un factor de escala de 2 centrado en el origen para formar el triángulo A′B′C′. ¿Qué afirmación describe la relación entre el triángulo ABC y el triángulo A′B′C′? Opciones: A: Son similares y congruentes. B: Son similares, pero no congruentes. C: Son congruentes, pero no similares. D: No son ni congruentes ni similares."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "90 degrees",
+          "2",
+          "ABC",
+          "A′B′C′",
+          "A: They are similar and congruent",
+          "B: They are similar but not congruent",
+          "C: They are congruent but not similar",
+          "D: They are neither congruent nor similar"
+        ],
+        "es": [
+          "90 grados",
+          "factor de escala de 2",
+          "ABC",
+          "A′B′C′",
+          "A: Son similares y congruentes",
+          "B: Son similares, pero no congruentes",
+          "C: Son congruentes, pero no similares",
+          "D: No son ni congruentes ni similares"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q23": {
+      "inputHash": "bc4b753a35046b709612fae8596d7de52da60d4c4ff3cd7ae40178fac51c0470",
+      "description": {
+        "en": "Question 23. One of the angles in a triangle measures x degrees. Another angle in the triangle measures y degrees. Which expression represents the measurement, in degrees, of the third angle of the triangle? Choices: A: 180 − (x + y) B: 180 − x + y C: x + y − 180 D: x + y + 180",
+        "es": "Pregunta 23. Uno de los ángulos del triángulo mide x grados. Otro de los ángulos del triángulo mide y grados. ¿Qué expresión representa la medida, en grados, del tercer ángulo del triángulo? Opciones: A: 180 − (x + y). B: 180 − x + y. C: x + y − 180. D: x + y + 180."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "180 − (x + y)",
+          "180 − x + y",
+          "x + y − 180",
+          "x + y + 180",
+          "A: 180 − (x + y)",
+          "B: 180 − x + y",
+          "C: x + y − 180",
+          "D: x + y + 180"
+        ],
+        "es": [
+          "x",
+          "y",
+          "180 − (x + y)",
+          "180 − x + y",
+          "x + y − 180",
+          "x + y + 180",
+          "A: 180 − (x + y)",
+          "B: 180 − x + y",
+          "C: x + y − 180",
+          "D: x + y + 180"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q27": {
+      "inputHash": "f9d6e2258bcb1f105d9c949de55c9882b7fc0838106476be49cc8344694804cb",
+      "description": {
+        "en": "Question 27. Which expression is equivalent to 3⁵? Choices: A: 3¹⁰/3⁵ B: 3¹⁵/3³ C: 9¹⁰/3⁵ D: 9³/9⁵",
+        "es": "Pregunta 27. ¿Qué expresión es equivalente a 3⁵? Opciones: A: 3¹⁰/3⁵, una fracción con numerador 3¹⁰ y denominador 3⁵. B: 3¹⁵/3³, una fracción con numerador 3¹⁵ y denominador 3³. C: 9¹⁰/3⁵, una fracción con numerador 9¹⁰ y denominador 3⁵. D: 9³/9⁵, una fracción con numerador 9³ y denominador 9⁵."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3⁵",
+          "3¹⁰/3⁵",
+          "3¹⁵/3³",
+          "9¹⁰/3⁵",
+          "9³/9⁵",
+          "A: 3¹⁰/3⁵",
+          "B: 3¹⁵/3³",
+          "C: 9¹⁰/3⁵",
+          "D: 9³/9⁵",
+          "3¹⁰",
+          "3¹⁵",
+          "3³",
+          "9¹⁰",
+          "9³",
+          "9⁵"
+        ],
+        "es": [
+          "3⁵",
+          "3¹⁰/3⁵",
+          "3¹⁰",
+          "3¹⁵/3³",
+          "3¹⁵",
+          "3³",
+          "9¹⁰/3⁵",
+          "9¹⁰",
+          "9³/9⁵",
+          "9³",
+          "9⁵",
+          "A: 3¹⁰/3⁵, una fracción con numerador 3¹⁰ y denominador 3⁵",
+          "B: 3¹⁵/3³, una fracción con numerador 3¹⁵ y denominador 3³",
+          "C: 9¹⁰/3⁵, una fracción con numerador 9¹⁰ y denominador 3⁵",
+          "D: 9³/9⁵, una fracción con numerador 9³ y denominador 9⁵"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q30": {
+      "inputHash": "88063ca038ac6bfcfa193c37f195cf978e5dfcf70bb84a18d0bb02b2b75f9e68",
+      "description": {
+        "en": "Question 30. Which list of numbers could represent the side lengths of a right triangle? Choices: A: 5, 10, 13 B: 5, 12, 17 C: 10, 24, 26 D: 10, 24, 68",
+        "es": "Pregunta 30. ¿Qué lista de números podría representar la longitud de los lados de un triángulo rectángulo? Opciones: A: 5, 10, 13. B: 5, 12, 17. C: 10, 24, 26. D: 10, 24, 68."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5, 10, 13",
+          "5, 12, 17",
+          "10, 24, 26",
+          "10, 24, 68",
+          "A: 5, 10, 13",
+          "B: 5, 12, 17",
+          "C: 10, 24, 26",
+          "D: 10, 24, 68"
+        ],
+        "es": [
+          "5, 10, 13",
+          "5, 12, 17",
+          "10, 24, 26",
+          "10, 24, 68",
+          "A: 5, 10, 13",
+          "B: 5, 12, 17",
+          "C: 10, 24, 26",
+          "D: 10, 24, 68"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q33": {
+      "inputHash": "9b6e8ca6265d17cd8533020018fb98b5a0220a9ab1d1539a57a81743da1e070a",
+      "description": {
+        "en": "Question 33. The table below represents a function. The table has columns x and y. Its ordered pairs are (2.5, 7.5), (3.5, 10.5), (4.5, 13.5), and (5.5, 16.5). Which statement describes the function? Choices: A: The function is nonlinear because the y intercept is 0. B: The function is linear because the rate of change is constant. C: The function is linear because the y intercept is a constant value. D: The function is nonlinear because the rate of change is not constant.",
+        "es": "Pregunta 33. La siguiente tabla representa una función. La tabla tiene dos columnas, x e y, y cuatro filas de valores. Los pares ordenados son (2.5, 7.5), (3.5, 10.5), (4.5, 13.5) y (5.5, 16.5). ¿Qué afirmación describe la función? Opciones: A: La función es no lineal porque la intersección con el eje y es 0. B: La función es lineal porque la tasa de cambio es constante. C: La función es lineal porque la intersección con el eje y es un valor constante. D: La función es no lineal porque la tasa de cambio no es constante."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "(2.5, 7.5)",
+          "(3.5, 10.5)",
+          "(4.5, 13.5)",
+          "(5.5, 16.5)",
+          "0",
+          "A: The function is nonlinear because the y intercept is 0",
+          "B: The function is linear because the rate of change is constant",
+          "C: The function is linear because the y intercept is a constant value",
+          "D: The function is nonlinear because the rate of change is not constant"
+        ],
+        "es": [
+          "(2.5, 7.5)",
+          "(3.5, 10.5)",
+          "(4.5, 13.5)",
+          "(5.5, 16.5)",
+          "0",
+          "A: La función es no lineal porque la intersección con el eje y es 0",
+          "B: La función es lineal porque la tasa de cambio es constante",
+          "C: La función es lineal porque la intersección con el eje y es un valor constante",
+          "D: La función es no lineal porque la tasa de cambio no es constante"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q34": {
+      "inputHash": "bf0d93189e9de1f860a21b4157eab16217be04fd8685a9409688323c17e806fc",
+      "description": {
+        "en": "Question 34. Quadrilateral FGHJ is rotated about the origin to form quadrilateral F′G′H′J′. A coordinate plane has x- and y-axes marked in one-unit intervals. Quadrilateral FGHJ has vertices F(0, 0), G(4, 0), H(6, 5), and J(2, 5), connected in that order. Quadrilateral F′G′H′J′ has vertices F′(0, 0), G′(0, 4), H′(−5, 6), and J′(−5, 2), connected in that order. Which two sides are equal in length? Choices: A: FG and F′J′. B: JF and H′J′. C: GH and H′G′. D: HG and H′J′.",
+        "es": "Pregunta 34. El cuadrilátero FGHJ se rota alrededor del origen para formar el cuadrilátero F′G′H′J′. En un plano de coordenadas, el cuadrilátero original tiene vértices F(0, 0), G(4, 0), H(6, 5) y J(2, 5). El lado FG es horizontal sobre el eje x; JH es horizontal; FJ y GH son lados inclinados paralelos. El cuadrilátero rotado tiene vértices F′(0, 0), G′(0, 4), H′(−5, 6) y J′(−5, 2). El lado F′G′ es vertical sobre el eje y; H′J′ es vertical; G′H′ y F′J′ son lados inclinados paralelos. ¿Cuáles dos lados son iguales en longitud? Opciones: A: Los segmentos FG y F′J′. B: Los segmentos JF y H′J′. C: Los segmentos GH y H′G′. D: Los segmentos HG y H′J′."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "F(0, 0)",
+          "G(4, 0)",
+          "H(6, 5)",
+          "J(2, 5)",
+          "F′(0, 0)",
+          "G′(0, 4)",
+          "H′(−5, 6)",
+          "J′(−5, 2)",
+          "FG and F′J′",
+          "JF and H′J′",
+          "GH and H′G′",
+          "HG and H′J′",
+          "A: FG and F′J′",
+          "B: JF and H′J′",
+          "C: GH and H′G′",
+          "D: HG and H′J′",
+          "(0, 0)",
+          "(4, 0)",
+          "(6, 5)",
+          "(2, 5)",
+          "(0, 4)",
+          "(−5, 6)",
+          "(−5, 2)"
+        ],
+        "es": [
+          "F(0, 0)",
+          "G(4, 0)",
+          "H(6, 5)",
+          "J(2, 5)",
+          "F′(0, 0)",
+          "G′(0, 4)",
+          "H′(−5, 6)",
+          "J′(−5, 2)",
+          "FG",
+          "F′J′",
+          "JF",
+          "H′J′",
+          "GH",
+          "H′G′",
+          "HG",
+          "A: Los segmentos FG y F′J′",
+          "B: Los segmentos JF y H′J′",
+          "C: Los segmentos GH y H′G′",
+          "D: Los segmentos HG y H′J′",
+          "(0, 0)",
+          "(4, 0)",
+          "(6, 5)",
+          "(2, 5)",
+          "(0, 4)",
+          "(−5, 6)",
+          "(−5, 2)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q35": {
+      "inputHash": "216b5f6cb12f27129cdb9613e912269884668ca440763a319c03418ec7fd3ea7",
+      "description": {
+        "en": "Question 35. A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are provided. The large can is a right circular cylinder with height 10 cm and radius 3.5 cm; the radius is represented by a dashed segment from the center of its circular top to the rim. The small can is a right circular cylinder with height 6 cm and diameter 7 cm; the diameter is represented by a dashed segment across the circular top. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of π? Choices: A: 4π. B: 49π. C: 73.5π. D: 155.5π.",
+        "es": "Pregunta 35. Un fabricante produce latas cilíndricas de dos tamaños. Las dimensiones de cada lata se presentan en un diagrama. La lata grande es un cilindro de 10 cm de altura; en la base circular superior, un segmento punteado va desde el centro hasta el borde y mide 3.5 cm, por lo que esa medida es el radio. La lata pequeña es un cilindro de 6 cm de altura; un segmento punteado atraviesa toda la base circular superior de un borde al opuesto, pasa por el centro y mide 7 cm, por lo que esa medida es el diámetro. ¿Cuál es la diferencia entre el volumen, en centímetros cúbicos, de la lata grande y la lata pequeña en términos de π? Opciones: A: 4π. B: 49π. C: 73.5π. D: 155.5π."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 cm",
+          "3.5 cm",
+          "6 cm",
+          "7 cm",
+          "4π",
+          "49π",
+          "73.5π",
+          "155.5π",
+          "A: 4π",
+          "B: 49π",
+          "C: 73.5π",
+          "D: 155.5π"
+        ],
+        "es": [
+          "10 cm",
+          "3.5 cm",
+          "6 cm",
+          "7 cm",
+          "4π",
+          "49π",
+          "73.5π",
+          "155.5π",
+          "A: 4π",
+          "B: 49π",
+          "C: 73.5π",
+          "D: 155.5π"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q36": {
+      "inputHash": "e99970f00ec7b5a0e224ca9daf3c4063356e986a3784ca49eec3e726a3fa87ff",
+      "description": {
+        "en": "Question 36. An equation is given: 2(3x + 1) = x + 1 + 5x. Which statement about the equation is true? Choices: A: It has no solutions. B: It has exactly one solution. C: It has exactly two solutions. D: It has an infinite number of solutions.",
+        "es": "Pregunta 36. A continuación, se muestra una ecuación: 2(3x + 1) = x + 1 + 5x. ¿Qué afirmación sobre la ecuación es verdadera? Opciones: A: No tiene soluciones. B: Tiene una solución exacta. C: Tiene exactamente dos soluciones. D: Tiene una cantidad infinita de soluciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2(3x + 1) = x + 1 + 5x",
+          "no solutions",
+          "exactly one solution",
+          "exactly two solutions",
+          "an infinite number of solutions",
+          "A: It has no solutions",
+          "B: It has exactly one solution",
+          "C: It has exactly two solutions",
+          "D: It has an infinite number of solutions",
+          "(3x + 1)"
+        ],
+        "es": [
+          "2(3x + 1) = x + 1 + 5x",
+          "No tiene soluciones",
+          "una solución exacta",
+          "exactamente dos soluciones",
+          "una cantidad infinita de soluciones",
+          "A: No tiene soluciones",
+          "B: Tiene una solución exacta",
+          "C: Tiene exactamente dos soluciones",
+          "D: Tiene una cantidad infinita de soluciones",
+          "(3x + 1)"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q37": {
+      "inputHash": "0ea855f8b24540abace3a5ff9f31727c93f3b2d4b1f42b1a5845ab4e289232bb",
+      "description": {
+        "en": "Question 37. Which statement best describes the value of √2? Choices: A: between 0.5 and 1.0. B: between 1.5 and 2.0. C: between 1.0 and 1.5, but closer to 1.0. D: between 1.0 and 1.5, but closer to 1.5.",
+        "es": "Pregunta 37. ¿Qué afirmación describe mejor el valor de √2? Opciones: A: Entre 0.5 y 1.0. B: Entre 1.5 y 2.0. C: Entre 1.0 y 1.5, pero más cerca de 1.0. D: Entre 1.0 y 1.5, pero más cerca de 1.5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "√2",
+          "between 0.5 and 1.0",
+          "between 1.5 and 2.0",
+          "between 1.0 and 1.5, but closer to 1.0",
+          "between 1.0 and 1.5, but closer to 1.5",
+          "A: between 0.5 and 1.0",
+          "B: between 1.5 and 2.0",
+          "C: between 1.0 and 1.5, but closer to 1.0",
+          "D: between 1.0 and 1.5, but closer to 1.5"
+        ],
+        "es": [
+          "√2",
+          "0.5",
+          "1.0",
+          "1.5",
+          "2.0",
+          "A: Entre 0.5 y 1.0",
+          "B: Entre 1.5 y 2.0",
+          "C: Entre 1.0 y 1.5, pero más cerca de 1.0",
+          "D: Entre 1.0 y 1.5, pero más cerca de 1.5"
+        ]
+      }
+    },
+    "nysed-2024-g8-mc-q38": {
+      "inputHash": "e53c430144c331112ee4e4944abbf7402a57896b0f46e98236e85de6265a985b",
+      "description": {
+        "en": "Question 38. A set of ordered pairs is given: {(−3, 3), (1, 1), (4, 2), (−1, −1), (−2, −1), (3, 1), (−2, 3)}. Which ordered pair should be removed to make the set a function? Choices: A: (−3, 3). B: (4, 2). C: (−2, −1). D: (3, 1).",
+        "es": "Pregunta 38. A continuación, se muestra un conjunto de pares ordenados: {(−3, 3), (1, 1), (4, 2), (−1, −1), (−2, −1), (3, 1), (−2, 3)}. ¿Qué par ordenado se debe quitar para que el conjunto sea una función? Opciones: A: (−3, 3). B: (4, 2). C: (−2, −1). D: (3, 1)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−3, 3)",
+          "(1, 1)",
+          "(4, 2)",
+          "(−1, −1)",
+          "(−2, −1)",
+          "(3, 1)",
+          "(−2, 3)",
+          "A: (−3, 3)",
+          "B: (4, 2)",
+          "C: (−2, −1)",
+          "D: (3, 1)"
+        ],
+        "es": [
+          "{(−3, 3), (1, 1), (4, 2), (−1, −1), (−2, −1), (3, 1), (−2, 3)}",
+          "(−3, 3)",
+          "(1, 1)",
+          "(4, 2)",
+          "(−1, −1)",
+          "(−2, −1)",
+          "(3, 1)",
+          "(−2, 3)",
+          "A: (−3, 3)",
+          "B: (4, 2)",
+          "C: (−2, −1)",
+          "D: (3, 1)"
+        ]
+      }
+    }
+  }
+}

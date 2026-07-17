@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2019-grade-3-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2019-g3-mc-q1": {
+      "inputHash": "31faa77ef9018d04c76960649a0bb73ae59f4f6c9f8aa0dfeb9d42659526dd0e",
+      "description": {
+        "en": "Question 1. An array has 3 rows and 4 columns. Which expression can be used to find the product represented by the array? Choices: A: 4 + 3; B: 4 + 4 + 4 + 4; C: 3 × 4; D: 3 × 3 × 3 × 3.",
+        "es": "Pregunta 1. Una matriz tiene 3 filas y 4 columnas. ¿Qué expresión puede usarse para hallar el producto que representa la matriz? Opciones: A: 4 + 3; B: 4 + 4 + 4 + 4; C: 3 × 4; D: 3 × 3 × 3 × 3."
+      }
+    },
+    "nysed-2019-g3-mc-q2": {
+      "inputHash": "71819e2f95aad005d3bb254b4311cf53d61af04a67cd35e076392d36cbcac178",
+      "description": {
+        "en": "Question 2. Lucy is counting by 2s. She starts with the number 2 and stops at the number 50. 2 Which number would Lucy not count? Choices: A: 11; B: 22; C: 34; D: 48.",
+        "es": "Pregunta 2. Lucy cuenta de 2 en 2. Comienza con el número 2 y termina con el número 50. ¿Qué número no debería contar Lucy? Opciones: A: 11; B: 22; C: 34; D: 48."
+      }
+    },
+    "nysed-2019-g3-mc-q3": {
+      "inputHash": "7b58d26a7266ff75264863ad3bcb5f89e1d8c9051dceb50274887ee12ea597de",
+      "description": {
+        "en": "Question 3. Ms. Carter has 30 students in her classroom. She arranges them into 5 equal groups. Which expression represents how to find the number of students in each group? Choices: A: 30 + 5; B: 30 ÷ 5; C: 30 − 5; D: 30 × 5.",
+        "es": "Pregunta 3. La señora Carter tiene 30 alumnos en la clase. Los ordena en 5 grupos iguales. ¿Qué expresión representa la manera de hallar la cantidad de alumnos en cada grupo? Opciones: A: 30 + 5; B: 30 ÷ 5; C: 30 − 5; D: 30 × 5."
+      }
+    },
+    "nysed-2019-g3-mc-q6": {
+      "inputHash": "3f2cfa06d254fa0e329c8914e6d0ea5e5d8a48ddcf0e8d8cdcfc5cb670589eb7",
+      "description": {
+        "en": "Question 6. Jess scored 18 points during her last basketball game. Each basket she made was worth 2 points. How many baskets did she make? Choices: A: 20; B: 16; C: 9; D: 8.",
+        "es": "Pregunta 6. Jess anotó 18 puntos durante su último juego de baloncesto. Cada canasta que anotó valía 2 puntos. ¿Cuántas canastas anotó Jess? Opciones: A: 20; B: 16; C: 9; D: 8."
+      }
+    },
+    "nysed-2019-g3-mc-q7": {
+      "inputHash": "c8af5f363629dff739464d73a200b40d94a6e6337b82b290f2c52253ab2bad5d",
+      "description": {
+        "en": "Question 7. A librarian receives two boxes of books. The first box has 136 books. The second has 58 fewer books than the first. What is the total number of books the librarian receives? Choices: A: 58; B: 78; C: 194; D: 214.",
+        "es": "Pregunta 7. Un bibliotecario recibe dos cajas de libros. La primera caja tiene 136 libros. La segunda tiene 58 libros menos que la primera. ¿Cuál es la cantidad total de libros que recibe? Opciones: A: 58; B: 78; C: 194; D: 214."
+      }
+    },
+    "nysed-2019-g3-mc-q8": {
+      "inputHash": "de48f492b81b3ff5f6089d33c495735779083a30f8605cf0aa4c7eb31b00eb0d",
+      "description": {
+        "en": "Question 8. Which two fractions should be plotted at the same location on a number line? Choices: A: 3/4 and 4/8; B: 1/4 and 2/8; C: 2/4 and 4/6; D: 1/2 and 2/6.",
+        "es": "Pregunta 8. ¿Cuáles son las dos fracciones que deberían trazarse en la misma ubicación en una recta numérica? Opciones: A: 3/4 y 4/8; B: 1/4 y 2/8; C: 2/4 y 4/6; D: 1/2 y 2/6."
+      }
+    },
+    "nysed-2019-g3-mc-q15": {
+      "inputHash": "f287e9c0967221c4b70d06589795a5e9b991068bce4dcfb60c46d8138ae50328",
+      "description": {
+        "en": "Question 15. A rectangular floor is a grid 7 tiles wide and 12 tiles high. The top 10 rows are white and the bottom 2 rows are gray; each tile is 1 square unit. Which expression could be used to find the area of the entire floor? Choices: A: (12 + 7) × (12 + 7); B: (12 × 7) + (12 × 7); C: (10 + 7) × (2 + 7); D: (10 × 7) + (2 × 7).",
+        "es": "Pregunta 15. Un piso rectangular es una cuadrícula de 7 baldosas de ancho y 12 de alto. Las 10 filas superiores son blancas y las 2 inferiores son grises; cada baldosa equivale a 1 unidad cuadrada. ¿Qué expresión podría usarse para hallar el área de todo el piso? Opciones: A: (12 + 7) × (12 + 7); B: (12 × 7) + (12 × 7); C: (10 + 7) × (2 + 7); D: (10 × 7) + (2 × 7)."
+      }
+    },
+    "nysed-2019-g3-mc-q16": {
+      "inputHash": "3e3427bab2dadc50f7edc36a426d4de7b07954479c3f9419b09256d11ac18050",
+      "description": {
+        "en": "Question 16. Which expression is equivalent to (5 + 2) × 8? Choices: A: (8 × 5) + (8 × 2); B: (5 × 8) + (5 × 2); C: 8 × (5 × 2); D: (5 × 8) × 2.",
+        "es": "Pregunta 16. ¿Qué expresión es equivalente a (5 + 2) × 8? Opciones: A: (8 × 5) + (8 × 2); B: (5 × 8) + (5 × 2); C: 8 × (5 × 2); D: (5 × 8) × 2."
+      }
+    },
+    "nysed-2019-g3-mc-q21": {
+      "inputHash": "5d8538ebe0fbde71af17799c9eaf56fc67246b9cd8bf143fb9256c6e7f2ffa61",
+      "description": {
+        "en": "Question 21. Which equation is true when the missing number is 7? Choices: A: 7 × ? = 42; B: 7 × ? = 49; C: 8 × ? = 40; D: 8 × ? = 48.",
+        "es": "Pregunta 21. ¿Qué ecuación es verdadera cuando el número que falta es 7? Opciones: A: 7 × ? = 42; B: 7 × ? = 49; C: 8 × ? = 40; D: 8 × ? = 48."
+      }
+    },
+    "nysed-2019-g3-mc-q22": {
+      "inputHash": "2e2a38fe8ffe660e69ebc31f35bfe1a4712a84e2e7f7d6aaebb233444e59b609",
+      "description": {
+        "en": "Question 22. A number is rounded to the nearest hundred. The result is 500. Which number could not be the number before it was rounded? Choices: A: 458; B: 463; C: 547; D: 559.",
+        "es": "Pregunta 22. Se redondea un número a la centena más cercana y el resultado es 500. ¿Qué número no podría ser el número antes de ser redondeado? Opciones: A: 458; B: 463; C: 547; D: 559."
+      }
+    },
+    "nysed-2019-g3-mc-q23": {
+      "inputHash": "271e46323eba0fc0a20c3db5373827fe4c07d93d045a2346b9ac1d8d55434469",
+      "description": {
+        "en": "Question 23. Which statement is true? Choices: A: The product of 5 × 2 is even because both factors are even; B: The product of 4 × 4 is odd because both factors are even; C: The product of 2 × 7 is even because both factors are odd; D: The product of 5 × 3 is odd because both factors are odd.",
+        "es": "Pregunta 23. ¿Qué afirmación es verdadera? Opciones: A: El producto de 5 × 2 es par porque ambos factores son pares; B: El producto de 4 × 4 es impar porque ambos factores son pares; C: El producto de 2 × 7 es par porque ambos factores son impares; D: El producto de 5 × 3 es impar porque ambos factores son impares."
+      }
+    },
+    "nysed-2019-g3-mc-q26": {
+      "inputHash": "05c02fcf2597e1a81ff29476608362e991646165a0cc8b2a4f80803c38ccfc4e",
+      "description": {
+        "en": "Question 26. A bar is divided into 2 equal parts with 1 shaded. Which shape is shaded to represent an equivalent fraction? Choices: A: a bar divided into 8 equal parts with 1 shaded; B: a bar divided into 4 equal parts with 1 shaded; C: a bar divided into 4 equal parts with 2 shaded; D: a bar divided into 4 equal parts with 3 shaded.",
+        "es": "Pregunta 26. Una barra está dividida en 2 partes iguales con 1 sombreada. ¿Qué figura está sombreada para representar una fracción equivalente? Opciones: A: una barra dividida en 8 partes iguales con 1 sombreada; B: una barra dividida en 4 partes iguales con 1 sombreada; C: una barra dividida en 4 partes iguales con 2 sombreadas; D: una barra dividida en 4 partes iguales con 3 sombreadas."
+      }
+    },
+    "nysed-2019-g3-mc-q27": {
+      "inputHash": "a96d81b3d538d08237795b63b8348b921ffd09f84510a72f4272f9a68cc61f4f",
+      "description": {
+        "en": "Question 27. A store orders 81 shirts, and each shipping box holds 9 shirts. How many shipping boxes are needed for all the shirts? Choices: A: 8; B: 9; C: 72; D: 90.",
+        "es": "Pregunta 27. Una tienda pide 81 camisas y en cada caja de envío caben 9 camisas. ¿Cuántas cajas se necesitan para todas las camisas? Opciones: A: 8; B: 9; C: 72; D: 90."
+      }
+    },
+    "nysed-2019-g3-mc-q28": {
+      "inputHash": "89d2e7aa963fbf62069180082deeb3b22ead7c5915f9fdd1279e023a5de0b7b1",
+      "description": {
+        "en": "Question 28. Leeza used unit squares to find the area of a rectangle shown as a grid with 4 rows and 6 columns. Each square is 1 square unit. What is the area, in square units, of the rectangle? Choices: A: 16; B: 20; C: 24; D: 28.",
+        "es": "Pregunta 28. Leeza usó cuadrados de unidad para hallar el área de un rectángulo mostrado como una cuadrícula de 4 filas y 6 columnas. Cada cuadrado equivale a 1 unidad cuadrada. ¿Cuál es el área, en unidades cuadradas, del rectángulo? Opciones: A: 16; B: 20; C: 24; D: 28."
+      }
+    },
+    "nysed-2019-g3-mc-q29": {
+      "inputHash": "790c069e19b337f9aee590998716bad8952f09955a522816b9b200298259ddcd",
+      "description": {
+        "en": "Question 29. A bar graph titled Cans Collected shows Monday, 30 cans; Wednesday, 45 cans; and Friday, 20 cans. How many more cans were collected on Wednesday than on Friday? Choices: A: 15; B: 20; C: 25; D: 45.",
+        "es": "Pregunta 29. Un gráfico de barras titulado Latas Recolectadas muestra: lunes, 30 latas; miércoles, 45 latas; y viernes, 20 latas. ¿Cuántas latas más se recolectaron el miércoles que el viernes? Opciones: A: 15; B: 20; C: 25; D: 45."
+      }
+    },
+    "nysed-2019-g3-mc-q30": {
+      "inputHash": "4e70046cdffa26ad8a83c9fee86964178e1992f28b193fadfb35fdbfebda8114",
+      "description": {
+        "en": "Question 30. In which situation can the expression 64 ÷ 8 be used? Choices: A: There are 8 buses with 64 students on each bus; B: Ms. Vance has 8 pens and 64 pencils in a container; C: There are 64 books in a bookcase and 8 books are removed; D: Mr. Juarez has 64 cups and puts an equal number on each of 8 tables.",
+        "es": "Pregunta 30. ¿En qué situación puede usarse la expresión 64 ÷ 8? Opciones: A: Hay 8 autobuses con 64 alumnos en cada autobús; B: La señora Vance tiene 8 lapiceras y 64 lápices en un recipiente; C: Hay 64 libros en una biblioteca y se retiran 8 libros; D: El señor Juárez tiene 64 tazas y pone una cantidad igual en cada una de 8 mesas."
+      }
+    },
+    "nysed-2019-g3-mc-q31": {
+      "inputHash": "2f91078c2cad7b5bae4e3d1f96f6fd30be00af4f0d6e66f11a7f31bbae52fcec",
+      "description": {
+        "en": "Question 31. A step-shaped figure is made by combining two rectangles. It is 4 units high on the left, 5 units wide across the top, 6 units wide across the bottom, and 2 units high on the lower-right extension. What is its total area, in square units? Choices: A: 17; B: 20; C: 22; D: 32.",
+        "es": "Pregunta 31. Una figura escalonada se hizo combinando dos rectángulos. Mide 4 unidades de alto a la izquierda, 5 unidades de ancho en la parte superior, 6 unidades de ancho en la base y 2 unidades de alto en la extensión inferior derecha. ¿Cuál es su área total, en unidades cuadradas? Opciones: A: 17; B: 20; C: 22; D: 32."
+      }
+    },
+    "nysed-2019-g3-mc-q32": {
+      "inputHash": "9115244aea8461e0252d452bbb1e22d76a4cf4ebfdde8645d05c02e961e9edb6",
+      "description": {
+        "en": "Question 32. Which expression is equivalent to 4 × 9? Choices: A: (4 × 4) + (4 × 5); B: (4 + 4) × (4 + 5); C: (4 + 4) + (4 + 5); D: (4 × 4) × (4 × 5).",
+        "es": "Pregunta 32. ¿Qué expresión es equivalente a 4 × 9? Opciones: A: (4 × 4) + (4 × 5); B: (4 + 4) × (4 + 5); C: (4 + 4) + (4 + 5); D: (4 × 4) × (4 × 5)."
+      }
+    },
+    "nysed-2019-g3-mc-q33": {
+      "inputHash": "bcc8491ac22ca5fada4399591cbaf181592dc9e4810e6d9c0fcb0c0164280508",
+      "description": {
+        "en": "Question 33. Coach Wu has 30 soccer balls. Nine are white. The remaining balls are blue, pink, or green, with an equal number of each color. How many green soccer balls does Coach Wu have? Choices: A: 7; B: 10; C: 21; D: 39.",
+        "es": "Pregunta 33. El entrenador Wu tiene 30 pelotas de fútbol. Nueve son blancas. Las restantes son azules, rosas o verdes, con una cantidad igual de cada color. ¿Cuántas pelotas verdes tiene? Opciones: A: 7; B: 10; C: 21; D: 39."
+      }
+    }
+  }
+}

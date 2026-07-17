@@ -1,0 +1,975 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2018-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2018-g7-mc-q1": {
+      "inputHash": "07d7e37e887de5688453cba6d19f73be3d35196a5c292ccf4ea41d80c8fb663e",
+      "description": {
+        "en": "Question 1. What is the decimal equivalent of the fraction 8/15? Choices: A: 0.53. B: 0.53̅, with the bar over the 3 only. C: 0.5̅3̅, with one bar over both digits 53. D: 0.533.",
+        "es": "Pregunta 1. ¿Cuál es el equivalente decimal de la fracción 8/15? Opciones: A: 0.53, decimal finito. B: 0.53̅, con una barra únicamente sobre el dígito 3, que se repite. C: 0.5̅3̅, con una barra sobre los dígitos 5 y 3, que se repiten como bloque. D: 0.533, decimal finito."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8/15",
+          "0.53",
+          "0.5̅3",
+          "0.533",
+          "B: 0.53̅",
+          "C: 0.5̅3̅",
+          "A: 0.53",
+          "B: 0.53̅, with the bar over the 3 only",
+          "C: 0.5̅3̅, with one bar over both digits 53",
+          "D: 0.533"
+        ],
+        "es": [
+          "8/15",
+          "0.53",
+          "0.53̅",
+          "0.5̅3̅",
+          "0.533",
+          "A: 0.53, decimal finito",
+          "B: 0.53̅, con una barra únicamente sobre el dígito 3, que se repite",
+          "C: 0.5̅3̅, con una barra sobre los dígitos 5 y 3, que se repiten como bloque",
+          "D: 0.533, decimal finito"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q2": {
+      "inputHash": "d83716c76c80ca1312441044a04b860c599730bd76d35f042479cd6b27f6d649",
+      "description": {
+        "en": "Question 2. The circumference of a circle is 15π centimeters. What is the area of the circle in terms of π? Choices: A: 7.5π cm². B: 15π cm². C: 56.25π cm². D: 225π cm².",
+        "es": "Pregunta 2. La circunferencia de un círculo es de 15π centímetros. ¿Cuál es el área del círculo en términos de π? Opciones: A: 7.5π cm² B: 15π cm² C: 56.25π cm² D: 225π cm²"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15π",
+          "7.5π cm²",
+          "15π cm²",
+          "56.25π cm²",
+          "225π cm²",
+          "A: 7.5π cm²",
+          "B: 15π cm²",
+          "C: 56.25π cm²",
+          "D: 225π cm²"
+        ],
+        "es": [
+          "15π",
+          "7.5π cm²",
+          "15π cm²",
+          "56.25π cm²",
+          "225π cm²",
+          "A: 7.5π cm²",
+          "B: 15π cm²",
+          "C: 56.25π cm²",
+          "D: 225π cm²"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q3": {
+      "inputHash": "8581ac52d18ec480e7dcae7544dab88953b817c18afb0d53f8c746814128c62a",
+      "description": {
+        "en": "Question 3. Bob buys eggs and potatoes at a store. He pays a total of $25.92. He pays $2.57 for the eggs. He buys 5 bags of potatoes that each cost the same amount. Which equation can be used to determine the cost, x, of each bag of potatoes? Choices: A: x = (25.92 − 2.57) ÷ 5. B: x = 25.92 ÷ 5 + 2.57. C: x = (25.92 + 2.57) ÷ 5. D: x = 25.92 ÷ 5 − 2.57.",
+        "es": "Pregunta 3. Bob compra huevos y papas en una tienda. Paga un total de $25.92. Paga $2.57 por los huevos. Compra 5 bolsas de papas que cuestan lo mismo cada una. ¿Qué ecuación se puede usar para determinar el costo, x, de cada bolsa de papas? Opciones: A: x = (25.92 − 2.57) ÷ 5 B: x = 25.92 ÷ 5 + 2.57 C: x = (25.92 + 2.57) ÷ 5 D: x = 25.92 ÷ 5 − 2.57"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$25.92",
+          "$2.57",
+          "5",
+          "x = (25.92 − 2.57) ÷ 5",
+          "x = 25.92 ÷ 5 + 2.57",
+          "x = (25.92 + 2.57) ÷ 5",
+          "x = 25.92 ÷ 5 − 2.57",
+          "A: x = (25.92 − 2.57) ÷ 5",
+          "B: x = 25.92 ÷ 5 + 2.57",
+          "C: x = (25.92 + 2.57) ÷ 5",
+          "D: x = 25.92 ÷ 5 − 2.57",
+          "(25.92 − 2.57)",
+          "(25.92 + 2.57)"
+        ],
+        "es": [
+          "$25.92",
+          "$2.57",
+          "5",
+          "x = (25.92 − 2.57) ÷ 5",
+          "x = 25.92 ÷ 5 + 2.57",
+          "x = (25.92 + 2.57) ÷ 5",
+          "x = 25.92 ÷ 5 − 2.57",
+          "A: x = (25.92 − 2.57) ÷ 5",
+          "B: x = 25.92 ÷ 5 + 2.57",
+          "C: x = (25.92 + 2.57) ÷ 5",
+          "D: x = 25.92 ÷ 5 − 2.57",
+          "(25.92 − 2.57)",
+          "(25.92 + 2.57)"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q6": {
+      "inputHash": "2d4b5b3e895f2c7bacd56470f1a9d5e2060b9c7a80d187fea9fc2af9a8f77d6f",
+      "description": {
+        "en": "Question 6. A spinner is divided into four colored sections that are not of equal size: red, blue, purple, and orange. The arrow on the spinner is spun several times. A table titled “SPINNER RESULTS” has columns “Color” and “Number of Times.” Its rows are: Red, 15; Blue, 24; Purple, 12; Orange, 9. The arrow on the spinner will be spun one more time. Based on these results, what is the probability that the arrow will land on the purple section? Choices: A: 1/4. B: 1/5. C: 1/6. D: 1/12.",
+        "es": "Pregunta 6. Una ruleta está dividida en cuatro secciones de color que no tienen el mismo tamaño: rojo, azul, púrpura y naranja. La flecha de la ruleta se gira varias veces. Una tabla titulada «RESULTADOS DE LA RULETA» tiene las columnas «Color» y «Cantidad de veces». Sus filas son: Rojo, 15; Azul, 24; Púrpura, 12; Naranja, 9. La flecha de la ruleta se girará una vez más. Según estos resultados, ¿cuál es la probabilidad de que la flecha se detenga en la sección púrpura? Opciones: A: 1/4 B: 1/5 C: 1/6 D: 1/12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15",
+          "24",
+          "12",
+          "9",
+          "1/4",
+          "1/5",
+          "1/6",
+          "1/12",
+          "A: 1/4",
+          "B: 1/5",
+          "C: 1/6",
+          "D: 1/12"
+        ],
+        "es": [
+          "15",
+          "24",
+          "12",
+          "9",
+          "1/4",
+          "1/5",
+          "1/6",
+          "1/12",
+          "A: 1/4",
+          "B: 1/5",
+          "C: 1/6",
+          "D: 1/12"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q7": {
+      "inputHash": "3e028ae59b5ffa15c0a4433e06aec7685077d9d502a6823966cdf0ddfc04ebb8",
+      "description": {
+        "en": "Question 7. The table below shows the lowest temperature, in degrees Fahrenheit, on each of 5 days for a city. A table titled “LOWEST DAILY TEMPERATURES” has columns “Day” and “Temperature (°F).” Its rows are: Monday, −36°; Tuesday, −25°; Wednesday, 12°; Thursday, −3°; Friday, 18°. What is the mean lowest temperature, in degrees Fahrenheit, in the city for those 5 days? Choices: A: −18.8°. B: −6.8°. C: 6.8°. D: 18.8°.",
+        "es": "Pregunta 7. La siguiente tabla muestra la temperatura más baja, en grados Fahrenheit, para cada uno de los 5 días en una ciudad. La tabla se titula «TEMPERATURAS DIARIAS MÁS BAJAS» y tiene las columnas «Día» y «Temperatura (°F)». Sus filas son: Lunes, −36°; Martes, −25°; Miércoles, 12°; Jueves, −3°; Viernes, 18°. ¿Cuál es la temperatura media más baja, en grados Fahrenheit, en esa ciudad para esos 5 días? Opciones: A: −18.8° B: −6.8° C: 6.8° D: 18.8°"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "Temperature (°F)",
+          "−36°",
+          "−25°",
+          "12°",
+          "−3°",
+          "18°",
+          "−18.8°",
+          "−6.8°",
+          "6.8°",
+          "18.8°",
+          "A: −18.8°",
+          "B: −6.8°",
+          "C: 6.8°",
+          "D: 18.8°"
+        ],
+        "es": [
+          "5",
+          "Temperatura (°F)",
+          "−36°",
+          "−25°",
+          "12°",
+          "−3°",
+          "18°",
+          "−18.8°",
+          "−6.8°",
+          "6.8°",
+          "18.8°",
+          "A: −18.8°",
+          "B: −6.8°",
+          "C: 6.8°",
+          "D: 18.8°"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q10": {
+      "inputHash": "4f310dfc731c49187a1d4ca044e2225a21c29a398bb80ae93d4953f71ea4818c",
+      "description": {
+        "en": "Question 10. Which expression is equivalent to (−18) − 64n? Choices: A: −2(9 − 32n). B: 2(9 − 32n). C: −2(9 + 32n). D: 2(9 + 32n).",
+        "es": "Pregunta 10. ¿Qué expresión es equivalente a (−18) − 64n? Opciones: A: −2(9 − 32n) B: 2(9 − 32n) C: −2(9 + 32n) D: 2(9 + 32n)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−18) − 64n",
+          "−2(9 − 32n)",
+          "2(9 − 32n)",
+          "−2(9 + 32n)",
+          "2(9 + 32n)",
+          "A: −2(9 − 32n)",
+          "B: 2(9 − 32n)",
+          "C: −2(9 + 32n)",
+          "D: 2(9 + 32n)",
+          "(−18)",
+          "(9 − 32n)",
+          "(9 + 32n)"
+        ],
+        "es": [
+          "(−18) − 64n",
+          "−2(9 − 32n)",
+          "2(9 − 32n)",
+          "−2(9 + 32n)",
+          "2(9 + 32n)",
+          "A: −2(9 − 32n)",
+          "B: 2(9 − 32n)",
+          "C: −2(9 + 32n)",
+          "D: 2(9 + 32n)",
+          "(−18)",
+          "(9 − 32n)",
+          "(9 + 32n)"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q11": {
+      "inputHash": "7d699962efb1c25c68e68d331720fa399349475fd065e55ac324356538e7c21c",
+      "description": {
+        "en": "Question 11. Verda used a sensor to measure the speed of a moving car at different times. At each time, the sensor measured the speed of the car in both miles per hour and kilometers per hour. A table titled “RECORDED SPEEDS” has columns “Speed (miles per hour)” and “Speed (kilometers per hour).” Its rows are: 11.0 miles per hour and 17.699 kilometers per hour; 26.0 miles per hour and 41.834 kilometers per hour; 34.0 miles per hour and 54.706 kilometers per hour. Based on her results, which statement describes the relationship between m, the speed of the car in miles per hour, and k, the speed of the car in kilometers per hour? Choices: A: The relationship is proportional because the ratio of m to k is constant. B: The relationship is not proportional because the ratio of m to k is constant. C: The relationship is proportional because the difference between m and k is constant. D: The relationship is not proportional because the difference between m and k is constant.",
+        "es": "Pregunta 11. Verda utilizó un sensor para medir la velocidad de un automóvil en movimiento en diferentes momentos. En cada oportunidad, el sensor midió la velocidad del automóvil tanto en millas por hora como en kilómetros por hora. La tabla a continuación muestra sus resultados. La tabla se titula «VELOCIDADES REGISTRADAS» y tiene las columnas «Velocidad (en millas por hora)» y «Velocidad (en kilómetros por hora)». Sus pares de valores son: 11.0 millas por hora y 17.699 kilómetros por hora; 26.0 millas por hora y 41.834 kilómetros por hora; 34.0 millas por hora y 54.706 kilómetros por hora. Según sus resultados, ¿qué afirmación describe la relación entre m, la velocidad del automóvil en millas por hora, y k, la velocidad del automóvil en kilómetros por hora? Opciones: A: La relación es proporcional porque la razón entre m y k es constante. B: La relación no es proporcional porque la razón entre m y k es constante. C: La relación es proporcional porque la diferencia entre m y k es constante. D: La relación no es proporcional porque la diferencia entre m y k es constante."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "11.0",
+          "17.699",
+          "26.0",
+          "41.834",
+          "34.0",
+          "54.706",
+          "m",
+          "k",
+          "A: The relationship is proportional because the ratio of m to k is constant",
+          "B: The relationship is not proportional because the ratio of m to k is constant",
+          "C: The relationship is proportional because the difference between m and k is constant",
+          "D: The relationship is not proportional because the difference between m and k is constant"
+        ],
+        "es": [
+          "11.0",
+          "17.699",
+          "26.0",
+          "41.834",
+          "34.0",
+          "54.706",
+          "m",
+          "k",
+          "razón entre m y k",
+          "diferencia entre m y k",
+          "A: La relación es proporcional porque la razón entre m y k es constante",
+          "B: La relación no es proporcional porque la razón entre m y k es constante",
+          "C: La relación es proporcional porque la diferencia entre m y k es constante",
+          "D: La relación no es proporcional porque la diferencia entre m y k es constante"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q16": {
+      "inputHash": "b2f84b88c4fc01b2cdd2241e708782e4289f15120673ae399ace9bb1534e78c3",
+      "description": {
+        "en": "Question 16. Bonnie deposits $70.00 into a new savings account. The account earns 4.5% simple interest per year. No money is added or removed from the savings account for 3 years. What is the total amount of money in her savings account at the end of the 3 years? Choices: A: $9.45. B: $79.45. C: $94.50. D: $164.50.",
+        "es": "Pregunta 16. Bonnie deposita $70.00 en una cuenta de ahorro nueva. La cuenta gana el 4.5 % de interés simple por año. No se agrega ni se retira dinero de la cuenta de ahorro por 3 años. ¿Cuál es el monto total de dinero en la cuenta de ahorro al final de los 3 años? Opciones: A: $9.45 B: $79.45 C: $94.50 D: $164.50"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$70.00",
+          "4.5%",
+          "3 years",
+          "$9.45",
+          "$79.45",
+          "$94.50",
+          "$164.50",
+          "A: $9.45",
+          "B: $79.45",
+          "C: $94.50",
+          "D: $164.50"
+        ],
+        "es": [
+          "$70.00",
+          "4.5 %",
+          "3 años",
+          "$9.45",
+          "$79.45",
+          "$94.50",
+          "$164.50",
+          "A: $9.45",
+          "B: $79.45",
+          "C: $94.50",
+          "D: $164.50"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q17": {
+      "inputHash": "e1e76f6e956ef317d1ac6131b3b48b5d03e411c6ba913d97b236e1c19dcbd439",
+      "description": {
+        "en": "Question 17. Which situation results in a final value of zero? Choices: A: The temperature after a decrease of 5°F from a temperature of −5°F. B: The height of an airplane after taking off from ground level and rising 1,000 feet. C: The amount of money received in change after making a $10 purchase with a $20 bill. D: The distance above sea level after increasing 24 meters from a depth of 24 meters below sea level.",
+        "es": "Pregunta 17. ¿Qué situación da como resultado un valor final de cero? Opciones: A: La temperatura tras un descenso de 5 °F a partir de una temperatura de −5 °F. B: La altitud de un avión tras despegar del suelo y elevarse 1,000 pies. C: La cantidad de dinero recibida en cambio tras hacer una compra de $10 con un billete de $20. D: La distancia sobre el nivel del mar tras subir 24 metros desde una profundidad de 24 metros bajo el nivel del mar."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5°F",
+          "−5°F",
+          "1,000 feet",
+          "$10",
+          "$20",
+          "24 meters",
+          "A: The temperature after a decrease of 5°F from a temperature of −5°F",
+          "B: The height of an airplane after taking off from ground level and rising 1,000 feet",
+          "C: The amount of money received in change after making a $10 purchase with a $20 bill",
+          "D: The distance above sea level after increasing 24 meters from a depth of 24 meters below sea level"
+        ],
+        "es": [
+          "5 °F",
+          "−5 °F",
+          "1,000 pies",
+          "$10",
+          "$20",
+          "24 metros",
+          "A: La temperatura tras un descenso de 5 °F a partir de una temperatura de −5 °F",
+          "B: La altitud de un avión tras despegar del suelo y elevarse 1,000 pies",
+          "C: La cantidad de dinero recibida en cambio tras hacer una compra de $10 con un billete de $20",
+          "D: La distancia sobre el nivel del mar tras subir 24 metros desde una profundidad de 24 metros bajo el nivel del mar"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q22": {
+      "inputHash": "0df68a194210e75c8164f7eb424f1699871cd65230e0a8d0e2e94b1ff9e63d06",
+      "description": {
+        "en": "Question 22. Three classes at a junior high school raised money to buy new computers. Ms. Moore’s class raised $249.00. Ms. Aguilar’s class raised $396.62 more than Ms. Moore’s class. Mr. Barry’s class raised $430.43 less than Ms. Aguilar’s class. What is the total amount of money raised by all three classes? Choices: A: $215.19 B: $464.19 C: $1,076.05 D: $1,109.81",
+        "es": "Pregunta 22. Tres clases de una escuela secundaria recaudaron dinero para comprar computadoras nuevas. La clase de la Sra. Moore recaudó $249.00. La clase de la Sra. Aguilar recaudó $396.62 más que la clase de la Sra. Moore. La clase de la Sra. Barry recaudó $430.43 menos que la clase de la Sra. Aguilar. ¿Cuál es la cantidad total de dinero recaudado por las tres clases? Opciones: A: $215.19 B: $464.19 C: $1,076.05 D: $1,109.81"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$249.00",
+          "$396.62",
+          "$430.43",
+          "$215.19",
+          "$464.19",
+          "$1,076.05",
+          "$1,109.81",
+          "A: $215.19",
+          "B: $464.19",
+          "C: $1,076.05",
+          "D: $1,109.81"
+        ],
+        "es": [
+          "$249.00",
+          "$396.62",
+          "$430.43",
+          "$215.19",
+          "$464.19",
+          "$1,076.05",
+          "$1,109.81",
+          "A: $215.19",
+          "B: $464.19",
+          "C: $1,076.05",
+          "D: $1,109.81"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q23": {
+      "inputHash": "58ebf596964b9cd736b203faa92b26f983c6ef38a76949d818e6cd311e357261",
+      "description": {
+        "en": "Question 23. A farm grew 19.8 tons of wheat in 2013. The farm’s wheat output increased by 9.8% from 2013 to 2014 and by 5.1% from 2014 to 2015. Which expression represents a strategy for estimating the total output of wheat, in tons, in 2015? Choices: A: 20 + 10 + 5 B: 20(10)(5) C: 20 + 1.1 + 1.05 D: 20(1.1)(1.05)",
+        "es": "Pregunta 23. En una granja se cultivaron 19.8 toneladas de trigo en 2013. La producción de trigo de la granja aumentó un 9.8 % desde 2013 hasta 2014 y un 5.1 % desde 2014 hasta 2015. ¿Qué expresión representa una estrategia para estimar la producción total de trigo, en toneladas, en 2015? Opciones: A: 20 + 10 + 5 B: 20(10)(5) C: 20 + 1.1 + 1.05 D: 20(1.1)(1.05)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "19.8",
+          "2013",
+          "9.8%",
+          "2014",
+          "5.1%",
+          "2015",
+          "20 + 10 + 5",
+          "20(10)(5)",
+          "20 + 1.1 + 1.05",
+          "20(1.1)(1.05)",
+          "A: 20 + 10 + 5",
+          "B: 20(10)(5)",
+          "C: 20 + 1.1 + 1.05",
+          "D: 20(1.1)(1.05)",
+          "(10)",
+          "(5)",
+          "(1.1)",
+          "(1.05)"
+        ],
+        "es": [
+          "19.8",
+          "2013",
+          "9.8 %",
+          "2014",
+          "5.1 %",
+          "2015",
+          "20 + 10 + 5",
+          "20(10)(5)",
+          "20 + 1.1 + 1.05",
+          "20(1.1)(1.05)",
+          "A: 20 + 10 + 5",
+          "B: 20(10)(5)",
+          "C: 20 + 1.1 + 1.05",
+          "D: 20(1.1)(1.05)",
+          "(10)",
+          "(5)",
+          "(1.1)",
+          "(1.05)"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q26": {
+      "inputHash": "0f53ffd20def74c7e9dcd40933daab8433748f1d0ef33960cb04e5b638dcb673",
+      "description": {
+        "en": "Question 26. Lea wants to save money on a new computer. At the store near her, the computer she wants is listed at a regular price of $400.00. On Saturday, the store will have a sale and discount the computer by 30%. Shoppers who buy a computer that same Saturday before 9:00 a.m. will also receive an additional 10% off the sale price. How much will Lea pay, without tax, when she buys the computer that Saturday before 9:00 a.m.? Choices: A: $148.00 B: $160.00 C: $240.00 D: $252.00",
+        "es": "Pregunta 26. Lea desea ahorrar dinero en la compra de una computadora nueva. En la tienda cercana, la computadora que desea tiene un precio de lista regular de $400.00. El sábado, la tienda tendrá una liquidación y la computadora tendrá un descuento del 30 %. Los compradores que adquieran una computadora ese mismo sábado antes de las 9:00 a. m. también recibirán un descuento adicional del 10 % sobre el precio de liquidación. ¿Cuánto pagará Lea, sin impuestos, al comprar la computadora ese sábado antes de las 9:00 a. m.? Opciones: A: $148.00 B: $160.00 C: $240.00 D: $252.00"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$400.00",
+          "30%",
+          "9:00 a.m",
+          "10%",
+          "$148.00",
+          "$160.00",
+          "$240.00",
+          "$252.00",
+          "A: $148.00",
+          "B: $160.00",
+          "C: $240.00",
+          "D: $252.00"
+        ],
+        "es": [
+          "$400.00",
+          "30 %",
+          "9:00 a. m",
+          "10 %",
+          "$148.00",
+          "$160.00",
+          "$240.00",
+          "$252.00",
+          "A: $148.00",
+          "B: $160.00",
+          "C: $240.00",
+          "D: $252.00"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q27": {
+      "inputHash": "d25540674a41b937e5ec9bae12795c17ede61c903e7a7725b6a6e2e0fa656a4d",
+      "description": {
+        "en": "Question 27. Which expression can go in the blank to make the equation true? The equation is −4.5 + 4.4 + ___ = 0. Choices: A: −6.7 + 6.8 B: −6.7 + (−6.6) C: 7.2 + (−7.2) D: 7.2 + (−7.3)",
+        "es": "Pregunta 27. ¿Qué expresión puede ir en el espacio en blanco para que la ecuación sea verdadera? La ecuación es −4.5 + 4.4 + ___ = 0. Opciones: A: −6.7 + 6.8 B: −6.7 + (−6.6) C: 7.2 + (−7.2) D: 7.2 + (−7.3)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−4.5 + 4.4 + ___ = 0",
+          "−6.7 + 6.8",
+          "−6.7 + (−6.6)",
+          "7.2 + (−7.2)",
+          "7.2 + (−7.3)",
+          "A: −6.7 + 6.8",
+          "B: −6.7 + (−6.6)",
+          "C: 7.2 + (−7.2)",
+          "D: 7.2 + (−7.3)",
+          "(−6.6)",
+          "(−7.2)",
+          "(−7.3)"
+        ],
+        "es": [
+          "−4.5 + 4.4 + ___ = 0",
+          "−6.7 + 6.8",
+          "−6.7 + (−6.6)",
+          "7.2 + (−7.2)",
+          "7.2 + (−7.3)",
+          "A: −6.7 + 6.8",
+          "B: −6.7 + (−6.6)",
+          "C: 7.2 + (−7.2)",
+          "D: 7.2 + (−7.3)",
+          "(−6.6)",
+          "(−7.2)",
+          "(−7.3)"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q28": {
+      "inputHash": "4dcef73b8256c5faa7c943b191d2de78b097793ce23de3ec6806487c0437f2c7",
+      "description": {
+        "en": "Question 28. A principal gathered data about the distance, in miles, that his teachers and bus drivers live from the school. Two horizontal box plots titled “DISTANCE FROM THE SCHOOL” share an axis labeled “Distance from School (miles),” marked from 0 to 40 in increments of 5. For bus drivers, the minimum is 5 miles, the first quartile is 10 miles, the median is 15 miles, the third quartile is 20 miles, and the maximum is 30 miles. For teachers, the minimum is 5 miles, the first quartile is 15 miles, the median is 25 miles, the third quartile is 30 miles, and the maximum is 35 miles. Based on the box plots, which statement is true? Choices: A: The interquartile range of the distances for the bus drivers is twice the interquartile range of the distances for the teachers. B: The range of the distances for the teachers is twice the range of the distances for the bus drivers. C: The interquartile range of the distances for the bus drivers is 5 miles less than the interquartile range of the distances for the teachers. D: The range of the distances for the teachers is 5 miles less than the range of the distances for the bus drivers.",
+        "es": "Pregunta 28. El director de una escuela reunió datos acerca de la distancia de la escuela, en millas, a la que viven los maestros y los conductores de autobús. Dos diagramas de caja titulados «DISTANCIA DE LA ESCUELA» representan estos datos sobre una recta horizontal rotulada «Distancia de la escuela (millas)», con marcas en 0, 5, 10, 15, 20, 25, 30, 35 y 40. Para los conductores de autobús, el valor mínimo es 5 millas, el primer cuartil es 10 millas, la mediana es 15 millas, el tercer cuartil es 20 millas y el valor máximo es 30 millas. Para los maestros, el valor mínimo es 5 millas, el primer cuartil es 15 millas, la mediana es 25 millas, el tercer cuartil es 30 millas y el valor máximo es 35 millas. Según los diagramas de caja, ¿qué afirmación es verdadera? Opciones: A: El rango intercuartil de las distancias para los conductores de autobús es el doble del rango intercuartil de las distancias para los maestros. B: El rango de las distancias para los maestros es el doble del rango de las distancias para los conductores de autobús. C: El rango intercuartil de las distancias para los conductores de autobús es 5 millas menor que el rango intercuartil de las distancias para los maestros. D: El rango de las distancias para los maestros es 5 millas menor que el rango de las distancias para los conductores de autobús."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 40",
+          "increments of 5",
+          "5 miles",
+          "10 miles",
+          "15 miles",
+          "20 miles",
+          "25 miles",
+          "30 miles",
+          "35 miles",
+          "A: The interquartile range of the distances for the bus drivers is twice the interquartile range of the distances for the teachers",
+          "B: The range of the distances for the teachers is twice the range of the distances for the bus drivers",
+          "C: The interquartile range of the distances for the bus drivers is 5 miles less than the interquartile range of the distances for the teachers",
+          "D: The range of the distances for the teachers is 5 miles less than the range of the distances for the bus drivers"
+        ],
+        "es": [
+          "0, 5, 10, 15, 20, 25, 30, 35 y 40",
+          "5 millas",
+          "10 millas",
+          "15 millas",
+          "20 millas",
+          "25 millas",
+          "30 millas",
+          "35 millas",
+          "A: El rango intercuartil de las distancias para los conductores de autobús es el doble del rango intercuartil de las distancias para los maestros",
+          "B: El rango de las distancias para los maestros es el doble del rango de las distancias para los conductores de autobús",
+          "C: El rango intercuartil de las distancias para los conductores de autobús es 5 millas menor que el rango intercuartil de las distancias para los maestros",
+          "D: El rango de las distancias para los maestros es 5 millas menor que el rango de las distancias para los conductores de autobús"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q29": {
+      "inputHash": "bb1e8a227cd9a603655bd970ca60be00d72d4c51244bf22cbe1969d086ac3275",
+      "description": {
+        "en": "Question 29. At midnight, the temperature was −8°F. At noon, the temperature was 23°F. Which expression represents the increase in temperature? Choices: A: −8 − 23 B: |−8| − 23 C: −8 − |23| D: |−8 − 23|",
+        "es": "Pregunta 29. A la medianoche, la temperatura era de −8 °F. Al mediodía, la temperatura era de 23 °F. ¿Qué expresión representa el aumento de temperatura? Opciones: A: −8 − 23 B: |−8| − 23 C: −8 − |23| D: |−8 − 23|"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−8°F",
+          "23°F",
+          "−8 − 23",
+          "|−8| − 23",
+          "−8 − |23|",
+          "|−8 − 23|",
+          "A: −8 − 23",
+          "B: |−8| − 23",
+          "C: −8 − |23|",
+          "D: |−8 − 23|"
+        ],
+        "es": [
+          "−8 °F",
+          "23 °F",
+          "−8 − 23",
+          "|−8| − 23",
+          "−8 − |23|",
+          "|−8 − 23|",
+          "A: −8 − 23",
+          "B: |−8| − 23",
+          "C: −8 − |23|",
+          "D: |−8 − 23|"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q30": {
+      "inputHash": "948776dbe68b90d81047e616b4289770d3009303fe89f5019c034a54935e7f1c",
+      "description": {
+        "en": "Question 30. A spinner with seven equal-sized sections was used to play a game. It was used 250 times in the first game. Of those 250, the arrow landed on section 7 a total of 35 times. The same spinner was used 150 times in the second game. How many times did the spinner most likely land on section 7 in the second game? Choices: A: 14 B: 21 C: 30 D: 35",
+        "es": "Pregunta 30. Una ruleta con siete secciones de igual tamaño se usó para jugar un juego. Se usó 250 veces durante el primer juego. De esas 250, la flecha se detuvo en la sección 7 un total de 35 veces. La misma ruleta se usó 150 veces durante el segundo juego. ¿Cuántas veces más probablemente se detuvo la flecha en la sección 7 durante el segundo juego? Opciones: A: 14 B: 21 C: 30 D: 35"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "seven equal-sized sections",
+          "250 times",
+          "section 7",
+          "35 times",
+          "150 times",
+          "14",
+          "21",
+          "30",
+          "35",
+          "A: 14",
+          "B: 21",
+          "C: 30",
+          "D: 35"
+        ],
+        "es": [
+          "siete secciones",
+          "250 veces",
+          "sección 7",
+          "35 veces",
+          "150 veces",
+          "14",
+          "21",
+          "30",
+          "35",
+          "A: 14",
+          "B: 21",
+          "C: 30",
+          "D: 35"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q31": {
+      "inputHash": "5a3003b5ef2f83bc47de2d4f5a7938fa99d16550fa07ff241ff5a7385a4902fa",
+      "description": {
+        "en": "Question 31. Amanda surveyed 13 students in her class about their heights in inches. Her data are listed below: 52, 53, 55, 55, 56, 57, 58, 58, 59, 59, 59, 62, 65. Which box plot correctly displays her data? Each choice uses a horizontal number line labeled at every integer from 51 through 66, with arrows at both ends. Choices: A: The left whisker is at 52, the box extends from 55 to 59, the median line is at 58, and the right whisker is at 65. B: The left whisker is at 53, the box extends from 55 to 58, no separate median line appears inside the box, and the right whisker is at 62. C: The left whisker is at 53, the box extends from 55 to 59, the median line is at 58, and the right whisker is at 62. D: The left whisker is at 52, the box extends from 53 to 62, the median line is halfway between 58 and 59, and the right whisker is at 65.",
+        "es": "Pregunta 31. Amanda encuestó a 13 alumnos de su clase sobre sus estaturas en pulgadas. A continuación se indican sus datos: 52, 53, 55, 55, 56, 57, 58, 58, 59, 59, 59, 62, 65. ¿Qué diagrama de caja muestra correctamente sus datos? Opciones: A: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 52; la caja se extiende de 55 a 59, con la mediana en 58; el bigote derecho termina en 65. B: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 53; la caja se extiende de 55 a 58, sin una línea de mediana visible dentro de la caja; el bigote derecho termina en 62. C: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 53; la caja se extiende de 55 a 59, con la mediana en 58; el bigote derecho termina en 62. D: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 52; la caja se extiende de 53 a 62, con la mediana a la mitad entre 58 y 59, es decir, 58.5; el bigote derecho termina en 65."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "52, 53, 55, 55, 56, 57, 58, 58, 59, 59, 59, 62, 65",
+          "51 through 66",
+          "52",
+          "55 to 59",
+          "58",
+          "65",
+          "53",
+          "55 to 58",
+          "62",
+          "53 to 62",
+          "between 58 and 59",
+          "A: The left whisker is at 52, the box extends from 55 to 59, the median line is at 58, and the right whisker is at 65",
+          "B: The left whisker is at 53, the box extends from 55 to 58, no separate median line appears inside the box, and the right whisker is at 62",
+          "C: The left whisker is at 53, the box extends from 55 to 59, the median line is at 58, and the right whisker is at 62",
+          "D: The left whisker is at 52, the box extends from 53 to 62, the median line is halfway between 58 and 59, and the right whisker is at 65"
+        ],
+        "es": [
+          "52, 53, 55, 55, 56, 57, 58, 58, 59, 59, 59, 62, 65",
+          "51 a 66",
+          "52",
+          "53",
+          "55",
+          "58",
+          "58.5",
+          "59",
+          "62",
+          "65",
+          "A: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 52; la caja se extiende de 55 a 59, con la mediana en 58; el bigote derecho termina en 65",
+          "B: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 53; la caja se extiende de 55 a 58, sin una línea de mediana visible dentro de la caja; el bigote derecho termina en 62",
+          "C: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 53; la caja se extiende de 55 a 59, con la mediana en 58; el bigote derecho termina en 62",
+          "D: Diagrama sobre una recta numérica de 51 a 66: el bigote izquierdo termina en 52; la caja se extiende de 53 a 62, con la mediana a la mitad entre 58 y 59, es decir, 58.5; el bigote derecho termina en 65"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q32": {
+      "inputHash": "401e40915f5ed090cf9fdad4c66593f1f2cc03906468e167d6d570855c80fc1b",
+      "description": {
+        "en": "Question 32. The graph below shows the total distance, in miles, traveled by a towboat over time, in hours. The graph is titled “AVERAGE SPEED OF TOWBOAT.” The horizontal x-axis is labeled “Time (hours)” and has labeled values 0, 1, 2, 3, and 4, with one additional grid interval to the right. The vertical y-axis is labeled “Total Distance (miles)” and has labeled values 5.25, 10.50, 15.75, and 21.00, with one additional grid interval above 21.00. A straight ray begins at the origin, rises to the right through point F at (1, 5.25), and continues with an arrow toward the upper-right corner of the grid. Which statement best describes the meaning of the coordinates of point F on the graph? Choices: A: It shows the unit rate of the graph in hours per mile. B: It shows the unit rate of the graph in miles per hour. C: It shows the time, in hours, it takes the towboat to travel 1 mile. D: It shows the distance traveled, in miles, by the towboat after 5.25 hours.",
+        "es": "Pregunta 32. El gráfico a continuación muestra la distancia total, en millas, recorrida por un remolcador con el paso del tiempo, en horas. El gráfico se titula «VELOCIDAD PROMEDIO DEL REMOLCADOR». El eje horizontal, x, representa el tiempo en horas y está marcado en incrementos de 1; aparecen las etiquetas 0, 1, 2, 3 y 4. El eje vertical, y, representa la distancia total en millas y está marcado en incrementos de 5.25; aparecen las etiquetas 5.25, 10.50, 15.75 y 21.00. Una recta ascendente parte del origen, pasa por el punto F de coordenadas (1, 5.25) y continúa hacia arriba y a la derecha. ¿Qué afirmación describe mejor el significado de las coordenadas del punto F en el gráfico? Opciones: A: Muestra la tasa por unidad del gráfico en horas por milla. B: Muestra la tasa por unidad del gráfico en millas por hora. C: Muestra el tiempo, en horas, que le lleva al remolcador recorrer 1 milla. D: Muestra la distancia recorrida, en millas, por el remolcador tras 5.25 horas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0, 1, 2, 3, and 4",
+          "5.25, 10.50, 15.75, and 21.00",
+          "(1, 5.25)",
+          "hours per mile",
+          "miles per hour",
+          "1 mile",
+          "5.25 hours",
+          "A: It shows the unit rate of the graph in hours per mile",
+          "B: It shows the unit rate of the graph in miles per hour",
+          "C: It shows the time, in hours, it takes the towboat to travel 1 mile",
+          "D: It shows the distance traveled, in miles, by the towboat after 5.25 hours"
+        ],
+        "es": [
+          "(1, 5.25)",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5.25",
+          "10.50",
+          "15.75",
+          "21.00",
+          "1 milla",
+          "5.25 horas",
+          "A: Muestra la tasa por unidad del gráfico en horas por milla",
+          "B: Muestra la tasa por unidad del gráfico en millas por hora",
+          "C: Muestra el tiempo, en horas, que le lleva al remolcador recorrer 1 milla",
+          "D: Muestra la distancia recorrida, en millas, por el remolcador tras 5.25 horas"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q33": {
+      "inputHash": "3aaf8a8ba958bddace349967096d99398a8cc86e854f16454b0bafadee8cf862",
+      "description": {
+        "en": "Question 33. A computer program selects blue, red, or green as the background color each time the program is used. The program was used 45 times on the same computer in one week. Of those 45 times, a blue background appeared 12 times and a red background appeared 21 times. Based on this information, which statement about the likelihood of the green background appearing the next time the program is used is true? Choices: A: Green is just as likely as red or blue to appear. B: Green is just as likely as blue to appear, but not as likely as red. C: Green is not as likely as red or blue to appear. D: Green is not as likely as blue to appear, but is as likely as red.",
+        "es": "Pregunta 33. Un programa informático selecciona azul, rojo o verde como el color de fondo cada vez que se usa el programa. El programa se usó 45 veces en la misma computadora en una semana. De esas 45 veces, el fondo azul apareció 12 veces y el fondo rojo apareció 21 veces. Según esta información, ¿qué afirmación sobre la probabilidad de que aparezca el fondo verde la próxima vez que se use el programa es verdadera? Opciones: A: Existen las mismas probabilidades de que aparezca verde, rojo o azul. B: Existen las mismas probabilidades de que aparezca verde y azul, pero no es tan probable que aparezca rojo. C: No es tan probable que aparezca verde como que aparezca rojo o azul. D: No es tan probable que aparezca verde como que aparezca azul, pero sí existen las mismas probabilidades de que aparezca rojo."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "45 times",
+          "12 times",
+          "21 times",
+          "just as likely as red or blue",
+          "just as likely as blue",
+          "not as likely as red",
+          "not as likely as red or blue",
+          "not as likely as blue",
+          "as likely as red",
+          "A: Green is just as likely as red or blue to appear",
+          "B: Green is just as likely as blue to appear, but not as likely as red",
+          "C: Green is not as likely as red or blue to appear",
+          "D: Green is not as likely as blue to appear, but is as likely as red"
+        ],
+        "es": [
+          "45 veces",
+          "12 veces",
+          "21 veces",
+          "verde, rojo o azul",
+          "verde y azul",
+          "rojo o azul",
+          "A: Existen las mismas probabilidades de que aparezca verde, rojo o azul",
+          "B: Existen las mismas probabilidades de que aparezca verde y azul, pero no es tan probable que aparezca rojo",
+          "C: No es tan probable que aparezca verde como que aparezca rojo o azul",
+          "D: No es tan probable que aparezca verde como que aparezca azul, pero sí existen las mismas probabilidades de que aparezca rojo"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q34": {
+      "inputHash": "4dd3e7224001da01b3c9ab1c19b27a450022ec81bf2809f0ef37f9c044a4e46e",
+      "description": {
+        "en": "Question 34. Which number represents the probability of an event that is very likely to occur? Choices: A: 0.12 B: 1.3 C: 0.89 D: 0.09",
+        "es": "Pregunta 34. ¿Qué número representa la probabilidad de un evento que es muy probable que ocurra? Opciones: A: 0.12 B: 1.3 C: 0.89 D: 0.09"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.12",
+          "1.3",
+          "0.89",
+          "0.09",
+          "A: 0.12",
+          "B: 1.3",
+          "C: 0.89",
+          "D: 0.09"
+        ],
+        "es": [
+          "0.12",
+          "1.3",
+          "0.89",
+          "0.09",
+          "A: 0.12",
+          "B: 1.3",
+          "C: 0.89",
+          "D: 0.09"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q35": {
+      "inputHash": "0b58e5330661ac6c891bb26cdde107be36a89a401aabf5db9900670da20849cb",
+      "description": {
+        "en": "Question 35. Which expression is equivalent to n + n − 0.18n? Choices: A: 1.18n B: 1.82n C: n − 0.18 D: 2n − 0.82",
+        "es": "Pregunta 35. ¿Qué expresión es equivalente a n + n − 0.18n? Opciones: A: 1.18n B: 1.82n C: n − 0.18 D: 2n − 0.82"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "n + n − 0.18n",
+          "1.18n",
+          "1.82n",
+          "n − 0.18",
+          "2n − 0.82",
+          "A: 1.18n",
+          "B: 1.82n",
+          "C: n − 0.18",
+          "D: 2n − 0.82"
+        ],
+        "es": [
+          "n + n − 0.18n",
+          "1.18n",
+          "1.82n",
+          "n − 0.18",
+          "2n − 0.82",
+          "A: 1.18n",
+          "B: 1.82n",
+          "C: n − 0.18",
+          "D: 2n − 0.82"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q36": {
+      "inputHash": "deebe52c7d27c5ff9b677c8f8b16a3dccfc2dff3f9d073e236533c7c17d63021",
+      "description": {
+        "en": "Question 36. Nick is making bread dough. The recipe requires 3/4 cup of flour and 1 1/8 teaspoons of salt. Nick wants to make the recipe using 1 cup of flour. To maintain the ratio, how much salt is required when 1 cup of flour is used? Choices: A: 27/32 teaspoon B: 2/3 teaspoon C: 1 1/2 teaspoons D: 1 7/8 teaspoons",
+        "es": "Pregunta 36. Nick hace masa para pan. La receta lleva 3/4 de taza de harina y 1 1/8 cucharaditas de sal. Nick desea hacer la receta con 1 taza de harina. Para mantener la proporción, ¿cuánta sal se requiere cuando se usa 1 taza de harina? Opciones: A: 27/32 de cucharadita B: 2/3 de cucharadita C: 1 1/2 cucharaditas D: 1 7/8 cucharaditas"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4 cup",
+          "1 1/8 teaspoons",
+          "1 cup",
+          "27/32 teaspoon",
+          "2/3 teaspoon",
+          "1 1/2 teaspoons",
+          "1 7/8 teaspoons",
+          "A: 27/32 teaspoon",
+          "B: 2/3 teaspoon",
+          "C: 1 1/2 teaspoons",
+          "D: 1 7/8 teaspoons",
+          "3/4",
+          "1 1/8",
+          "27/32",
+          "2/3",
+          "1 1/2",
+          "1 7/8"
+        ],
+        "es": [
+          "3/4",
+          "1 1/8",
+          "1 taza",
+          "27/32",
+          "2/3",
+          "1 1/2",
+          "1 7/8",
+          "A: 27/32 de cucharadita",
+          "B: 2/3 de cucharadita",
+          "C: 1 1/2 cucharaditas",
+          "D: 1 7/8 cucharaditas"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q37": {
+      "inputHash": "a052f99ada163a82046a7a0faac1b6f65b829bda33ac061d824405567bb93b9f",
+      "description": {
+        "en": "Question 37. Which expression is equivalent to −1/3(6x + 15) − 3? Choices: A: −2x + 12 B: −2x + 2 C: −2x − 2 D: −2x − 8",
+        "es": "Pregunta 37. ¿Qué expresión es equivalente a −1/3(6x + 15) − 3? Opciones: A: −2x + 12 B: −2x + 2 C: −2x − 2 D: −2x − 8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−1/3(6x + 15) − 3",
+          "−2x + 12",
+          "−2x + 2",
+          "−2x − 2",
+          "−2x − 8",
+          "A: −2x + 12",
+          "B: −2x + 2",
+          "C: −2x − 2",
+          "D: −2x − 8",
+          "1/3",
+          "(6x + 15)"
+        ],
+        "es": [
+          "−1/3(6x + 15) − 3",
+          "−2x + 12",
+          "−2x + 2",
+          "−2x − 2",
+          "−2x − 8",
+          "A: −2x + 12",
+          "B: −2x + 2",
+          "C: −2x − 2",
+          "D: −2x − 8",
+          "1/3",
+          "(6x + 15)"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q38": {
+      "inputHash": "760c54c52a7f169745fe9277873874ff4906a0570699efbb4d4fcfde59be1dc6",
+      "description": {
+        "en": "Question 38. Josh has a rewards card for a movie theater. He receives 15 points for becoming a rewards card holder. He earns 3.5 points for each visit to the movie theater. He needs at least 55 points to earn a free movie ticket. Which inequality can Josh use to determine x, the minimum number of visits he needs to earn his first free movie ticket? Choices: A: 55 ≥ 3.5x + 15 B: 55 ≥ 15x + 3.5 C: 55 ≤ 3.5x + 15 D: 55 ≤ 15x + 3.5",
+        "es": "Pregunta 38. Josh tiene una tarjeta de puntos para un cine. Él recibe 15 puntos tras convertirse en titular de la tarjeta de puntos. Él gana 3.5 puntos por cada visita al cine. Él necesita al menos 55 puntos para ganar una entrada gratis al cine. ¿Qué desigualdad puede usar Josh para determinar x, el número mínimo de visitas que necesita para ganar su primera entrada gratis al cine? Opciones: A: 55 ≥ 3.5x + 15 B: 55 ≥ 15x + 3.5 C: 55 ≤ 3.5x + 15 D: 55 ≤ 15x + 3.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 points",
+          "3.5 points",
+          "at least 55 points",
+          "x",
+          "55 ≥ 3.5x + 15",
+          "55 ≥ 15x + 3.5",
+          "55 ≤ 3.5x + 15",
+          "55 ≤ 15x + 3.5",
+          "A: 55 ≥ 3.5x + 15",
+          "B: 55 ≥ 15x + 3.5",
+          "C: 55 ≤ 3.5x + 15",
+          "D: 55 ≤ 15x + 3.5",
+          "55 ≥ 3.5",
+          "55 ≥ 15",
+          "55 ≤ 3.5",
+          "55 ≤ 15"
+        ],
+        "es": [
+          "15 puntos",
+          "3.5 puntos",
+          "al menos 55 puntos",
+          "55 ≥ 3.5x + 15",
+          "55 ≥ 15x + 3.5",
+          "55 ≤ 3.5x + 15",
+          "55 ≤ 15x + 3.5",
+          "A: 55 ≥ 3.5x + 15",
+          "B: 55 ≥ 15x + 3.5",
+          "C: 55 ≤ 3.5x + 15",
+          "D: 55 ≤ 15x + 3.5",
+          "55 ≥ 3.5",
+          "55 ≥ 15",
+          "55 ≤ 3.5",
+          "55 ≤ 15"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q39": {
+      "inputHash": "8183164a5596b022eb87497a51b6a2a00812c520ca838e92b7883bd3405fc1d8",
+      "description": {
+        "en": "Question 39. At a store, a hat has a regular price of x dollars. During a sale, the price of the hat is discounted by 20%. The expression 0.8x describes the discounted price, in dollars, of the hat. Which expression also describes the discounted price, in dollars, of the hat? Choices: A: 0.2x B: x − 20 C: x − 0.2 D: x − 0.2x",
+        "es": "Pregunta 39. En una tienda, el precio regular de un sombrero es de x dólares. Durante una liquidación, al precio del sombrero se le aplica un descuento del 20 %. La expresión 0.8x describe el precio con descuento, en dólares, del sombrero. ¿Qué expresión también describe el precio con descuento, en dólares, del sombrero? Opciones: A: 0.2x B: x − 20 C: x − 0.2 D: x − 0.2x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "20%",
+          "0.8x",
+          "0.2x",
+          "x − 20",
+          "x − 0.2",
+          "x − 0.2x",
+          "A: 0.2x",
+          "B: x − 20",
+          "C: x − 0.2",
+          "D: x − 0.2x"
+        ],
+        "es": [
+          "x",
+          "20 %",
+          "0.8x",
+          "0.2x",
+          "x − 20",
+          "x − 0.2",
+          "x − 0.2x",
+          "A: 0.2x",
+          "B: x − 20",
+          "C: x − 0.2",
+          "D: x − 0.2x"
+        ]
+      }
+    },
+    "nysed-2018-g7-mc-q40": {
+      "inputHash": "cb26edb5bdfa61ea855c2226be6c1ba8ebdaaac0268714ef54be117717660368",
+      "description": {
+        "en": "Question 40. Howard has a scale model of the Statue of Liberty. The model is 15 inches tall. The scale of the model to the actual statue is 1 inch : 6.2 meters. Which equation can Howard use to determine x, the height in meters, of the Statue of Liberty? Choices: A: 15x = 6.2 B: 6.2x = 15 C: 1/6.2 = x/15 D: 1/6.2 = 15/x",
+        "es": "Pregunta 40. Howard tiene un modelo a escala de la Estatua de la Libertad. El modelo tiene 15 pulgadas de alto. La escala del modelo en relación con la estatua real es de 1 pulgada : 6.2 metros. ¿Qué ecuación puede usar Howard para determinar x, la altura, en metros, de la Estatua de la Libertad? Opciones: A: 15x = 6.2 B: 6.2x = 15 C: 1/6.2 = x/15 D: 1/6.2 = 15/x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 inches",
+          "1 inch : 6.2 meters",
+          "x",
+          "15x = 6.2",
+          "6.2x = 15",
+          "1/6.2 = x/15",
+          "1/6.2 = 15/x",
+          "A: 15x = 6.2",
+          "B: 6.2x = 15",
+          "C: 1/6.2 = x/15",
+          "D: 1/6.2 = 15/x",
+          "1/6"
+        ],
+        "es": [
+          "15 pulgadas",
+          "1 pulgada : 6.2 metros",
+          "x",
+          "15x = 6.2",
+          "6.2x = 15",
+          "1/6.2 = x/15",
+          "1/6.2 = 15/x",
+          "A: 15x = 6.2",
+          "B: 6.2x = 15",
+          "C: 1/6.2 = x/15",
+          "D: 1/6.2 = 15/x",
+          "1/6"
+        ]
+      }
+    }
+  }
+}

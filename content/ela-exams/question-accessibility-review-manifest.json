@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "ela-question-accessibility-1",
+  "scope": {
+    "years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "grades": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "examCount": 78,
+    "questionCount": 1583
+  },
+  "reviews": [
+    {
+      "examId": "nysed-ela-2013-grade-3-mc-v1",
+      "year": 2013,
+      "grade": 3,
+      "sourcePdfSha256": "e4e50659dbad011e1baafece07d3393e15b1225775069bd29b92d9e492a65e41",
+      "sidecarSha256": "a90f4b5cb58af633c1fba8e31e5716912d5fea3f2151bdbd7ecf03dc3690d7fa",
+      "questionCount": 6
+    },
+    {
+      "examId": "nysed-ela-2013-grade-4-mc-v1",
+      "year": 2013,
+      "grade": 4,
+      "sourcePdfSha256": "5155bd2172eb921376855d51a3a8f3d7bcb045ffa13d97ee55a7746cb9c85774",
+      "sidecarSha256": "fc4e49c44a8f11b07b09412c61d1302a90957a52b492e7da16fd0f7fd493b96d",
+      "questionCount": 5
+    },
+    {
+      "examId": "nysed-ela-2013-grade-5-mc-v1",
+      "year": 2013,
+      "grade": 5,
+      "sourcePdfSha256": "656e83cc8e0d59fb17ef905519f4206a6d589e38e03d603c2ba2bb73cf48be05",
+      "sidecarSha256": "dc4e19a85287e558cc87813a0d0f5d4ef9f72215a6c31c65bc64ce32501fe1b2",
+      "questionCount": 6
+    },
+    {
+      "examId": "nysed-ela-2013-grade-6-mc-v1",
+      "year": 2013,
+      "grade": 6,
+      "sourcePdfSha256": "154db498faaadf8d5165bbc4e6e184abc6c98e07447902fd6cd0693c66554858",
+      "sidecarSha256": "33ec143e7ff3e3726d766ba931a8122486853987ec4f6adc1cb0e4e9ddc7be25",
+      "questionCount": 5
+    },
+    {
+      "examId": "nysed-ela-2013-grade-7-mc-v1",
+      "year": 2013,
+      "grade": 7,
+      "sourcePdfSha256": "7d9140bd761519e9b6ced09ffc3d2ddebc2391fe3cdafe5b9fa8ab57b29eae7b",
+      "sidecarSha256": "61aea6ab748d514ec617e09911de5860b3827d1ca779df13f4ecde7955c4a2b3",
+      "questionCount": 7
+    },
+    {
+      "examId": "nysed-ela-2013-grade-8-mc-v1",
+      "year": 2013,
+      "grade": 8,
+      "sourcePdfSha256": "b1684db0e405ae878368207509d68a3b17413385519ba702a8f6dd67a4dad7c8",
+      "sidecarSha256": "3525f4daa04c5da66f630fdb600e8fe42c4505a68084de54f84cb3da3944bd1f",
+      "questionCount": 7
+    },
+    {
+      "examId": "nysed-ela-2014-grade-3-mc-v1",
+      "year": 2014,
+      "grade": 3,
+      "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
+      "sidecarSha256": "04c13077dbd6c0ae2dde53d1b6abd5d76a5e88fd20cacd2fe9e129f84f3d0127",
+      "questionCount": 16
+    },
+    {
+      "examId": "nysed-ela-2014-grade-4-mc-v1",
+      "year": 2014,
+      "grade": 4,
+      "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
+      "sidecarSha256": "847e6da81b2ef876f0bb1fc6b338275c2d7005bd7cd173d5b627b73838311e5c",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2014-grade-5-mc-v1",
+      "year": 2014,
+      "grade": 5,
+      "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
+      "sidecarSha256": "65ec92410df1ebe3d9d46d3a24ae1ebee8131d0aa4623f46c5fd92f00a1ba8e5",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2014-grade-6-mc-v1",
+      "year": 2014,
+      "grade": 6,
+      "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
+      "sidecarSha256": "2c6f21412d41774bb97f9bf0b8d87ef465b6cfb1ba44f3edae30c8167a7f1f91",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2014-grade-7-mc-v1",
+      "year": 2014,
+      "grade": 7,
+      "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
+      "sidecarSha256": "c986ab323decdfe11c1595e154ad906af5f613953900532a9b73d2067ca57231",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2014-grade-8-mc-v1",
+      "year": 2014,
+      "grade": 8,
+      "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
+      "sidecarSha256": "4aaa1998cd99de3ef3b7e7884254bed9a038431f8874a66c4ba0fbe9deaff8dd",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2015-grade-3-mc-v1",
+      "year": 2015,
+      "grade": 3,
+      "sourcePdfSha256": "68d5695c54474f86a820183a7127b6b409e34ce9e18cd4726fb7887ea68611de",
+      "sidecarSha256": "f7ab7c4db081c18100f1239b6b9e3385771072a9507ddd67a4023d77bb46069d",
+      "questionCount": 18
+    },
+    {
+      "examId": "nysed-ela-2015-grade-4-mc-v1",
+      "year": 2015,
+      "grade": 4,
+      "sourcePdfSha256": "dc83061599c8dd6572781a368575e83d6432870285e1040371793cbda0f8108d",
+      "sidecarSha256": "f050271c56d421e052b02f9793250498519caceb6635678700e10b87f24d34ce",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2015-grade-5-mc-v1",
+      "year": 2015,
+      "grade": 5,
+      "sourcePdfSha256": "9ff46890d4d9fb734f966d5727a704853b96f1279a435912c0248a5928102a04",
+      "sidecarSha256": "653c2949147e80793b62c64f4b601010657c2f9649dc2a456c9ef2d86bf6888d",
+      "questionCount": 20
+    },
+    {
+      "examId": "nysed-ela-2015-grade-6-mc-v1",
+      "year": 2015,
+      "grade": 6,
+      "sourcePdfSha256": "b953e7edaf153661766717c8a68af12c1c51fd733f21b9ecb324bba9a1db1655",
+      "sidecarSha256": "4030830bff6b34451ae5856cf5ba238d141aa41500923c1d2c6313f20d11bece",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2015-grade-7-mc-v1",
+      "year": 2015,
+      "grade": 7,
+      "sourcePdfSha256": "9ac337956a3980544004e316c733fee236cae6afa964df2af4602f7fcdeb24cd",
+      "sidecarSha256": "7d70b449ab66bd9ca872a0807b5c3f76b0cc3ed4f387e4e4ebb521d0a83cea64",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2015-grade-8-mc-v1",
+      "year": 2015,
+      "grade": 8,
+      "sourcePdfSha256": "cc13c14fff655fd57a5ce44c66c6f976d633c213efa4c6e19fa2cd6d354abb69",
+      "sidecarSha256": "d0c1d9a9c977a6385f7400fb2b0161c0913d40d75620879d4c2d60200e7bfd35",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2016-grade-3-mc-v1",
+      "year": 2016,
+      "grade": 3,
+      "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+      "sidecarSha256": "2b15bffaa2a5f3c810c86b63f43fae5c7c1182f943b523197fcf29598f9b901a",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2016-grade-4-mc-v1",
+      "year": 2016,
+      "grade": 4,
+      "sourcePdfSha256": "747a02afb44c0f31874dbd00926334254c777b3c77f053bc191551feb6193c57",
+      "sidecarSha256": "499d7ded24d40669392d97a746cec4baa520e3583eb252d1b70dcf923ba205e1",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2016-grade-5-mc-v1",
+      "year": 2016,
+      "grade": 5,
+      "sourcePdfSha256": "1ab84bda55804d949c3e78ac4ae012d7f0d3e71f2acf3a4bd1f12d9ebeb45fbf",
+      "sidecarSha256": "4855fe3cb510cfc7beb5c265f666e544b110d74a64ea9052d21a3371f4ced5be",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2016-grade-6-mc-v1",
+      "year": 2016,
+      "grade": 6,
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "sidecarSha256": "c55557005b91191ee359c1632387d748134e684f9998ba7519277e159e237653",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2016-grade-7-mc-v1",
+      "year": 2016,
+      "grade": 7,
+      "sourcePdfSha256": "0401a2a7e7c3171ee1fec5663618967bd169df54cf594e3d8ca43029ea18fabb",
+      "sidecarSha256": "f595245570564be2cba96b4bd74e5abb39099ffc3258a6aa3fb8803eba4d2858",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2016-grade-8-mc-v1",
+      "year": 2016,
+      "grade": 8,
+      "sourcePdfSha256": "c66ca7e9ecdb3551374f4d7a19e4623c050efb7cc982c978fd2bacdb923724f6",
+      "sidecarSha256": "9926c18af2c018442757974c0b8ea5ab4d10e2b00cc8727f61e0469698849a2c",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2017-grade-3-mc-v1",
+      "year": 2017,
+      "grade": 3,
+      "sourcePdfSha256": "ae2f6e12cf2d20a3b365f4d019ed6cb4ebd259912db38d32101fb394281acbbe",
+      "sidecarSha256": "d5e9021e1761af32984fe56231aa690f114f6250afe254759994f9ec602c5251",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2017-grade-4-mc-v1",
+      "year": 2017,
+      "grade": 4,
+      "sourcePdfSha256": "9eb521cae46a5c9841ff303ee4b6a2b715894c264c9f468cba1e82c3b264c55c",
+      "sidecarSha256": "2c9985d91817c5e54ffad4f23fdd3de88b3dab6fb1f397cea5c8d9a033aa994d",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2017-grade-5-mc-v1",
+      "year": 2017,
+      "grade": 5,
+      "sourcePdfSha256": "28c327840d12dbe51555c48ce94a02abeace76e10f78f62cd316d71338cddd9c",
+      "sidecarSha256": "31cb4a73e6a9d8e5fe6829b6f795fd6f703a067ec0e5eca6a442fd4079e87f4c",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2017-grade-6-mc-v1",
+      "year": 2017,
+      "grade": 6,
+      "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
+      "sidecarSha256": "ae0e97c58b311ff92913048cf88d71b1feb9344fa868d8d7e4b73de4dbc046c4",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2017-grade-7-mc-v1",
+      "year": 2017,
+      "grade": 7,
+      "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
+      "sidecarSha256": "6853955723e160a806bdd6d4a933ee19507b9dac7252c168d7b372f2498cf13d",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2017-grade-8-mc-v1",
+      "year": 2017,
+      "grade": 8,
+      "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
+      "sidecarSha256": "7a3c35a969fb6e2d7d84449b1d3d7273f576e103d875d9a5303c9e0159810667",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2018-grade-3-mc-v1",
+      "year": 2018,
+      "grade": 3,
+      "sourcePdfSha256": "d99f0e8d07cf840b77418fd20a6c7dcd9014dc48880717013957bf96c71e8082",
+      "sidecarSha256": "a851737e7357a9ac3e22e44dc27bc6c85f7830f0b35894d135706364c5ecbf9c",
+      "questionCount": 12
+    },
+    {
+      "examId": "nysed-ela-2018-grade-4-mc-v1",
+      "year": 2018,
+      "grade": 4,
+      "sourcePdfSha256": "216465767efecfbd77ff8fcf81c201c752ab69fbd5f5505bd120f38f18ecbce4",
+      "sidecarSha256": "574a5b8cb7e19929073b64ec6c122b958acd97eed0f6b0bccf314633c6de276a",
+      "questionCount": 12
+    },
+    {
+      "examId": "nysed-ela-2018-grade-5-mc-v1",
+      "year": 2018,
+      "grade": 5,
+      "sourcePdfSha256": "e1787392509748c02633c2318e17d1967f8e3277bc8ee0dc607197e4189d94a5",
+      "sidecarSha256": "9030906c9f17eb2dd2d7074f637a072aaf6badc11a91e23992ce707f50a72a2c",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2018-grade-6-mc-v1",
+      "year": 2018,
+      "grade": 6,
+      "sourcePdfSha256": "fc717fd5fac384d19205f9800fbd743ebe9ac872467b84de5f55701da6e2a57d",
+      "sidecarSha256": "807ec11655e13969d4661c659966d8c4cb622b30ecf0c8479695920fb030f3f2",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2018-grade-7-mc-v1",
+      "year": 2018,
+      "grade": 7,
+      "sourcePdfSha256": "51c010b6a243968e9cf51fad449869e4a9b269b18e231572b598dbe68e4b6d3b",
+      "sidecarSha256": "8d096b1c33f39e0d2fc300a1f6886f5c765e54eb8f2a38a13c946838a615cdc8",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2018-grade-8-mc-v1",
+      "year": 2018,
+      "grade": 8,
+      "sourcePdfSha256": "5f8f99c872399ab5a4b33c2c11078ae9bda1891bd26befb7d47e0cc1b15087c2",
+      "sidecarSha256": "f856e9cd539dc0ec4fb124eaa914d9cd11f2bf4fbb19226ae57dd0dcf5fddfe2",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2019-grade-3-mc-v1",
+      "year": 2019,
+      "grade": 3,
+      "sourcePdfSha256": "7d7bd32dab01d64ece63b6d2357b03e6156be454022a04565a7a5031c91444f8",
+      "sidecarSha256": "d01a6dfaa269bf04e43ea3b03e9117d5d59f28ac15890abe5add7703c772a557",
+      "questionCount": 12
+    },
+    {
+      "examId": "nysed-ela-2019-grade-4-mc-v1",
+      "year": 2019,
+      "grade": 4,
+      "sourcePdfSha256": "85964b191ff0991362a05cd43aa6b30f8741d6ef8357c73fc8d1c69688fba923",
+      "sidecarSha256": "76c400ded60c9b39a91a583ab6b20501dabd5a632cedeb4197316045e45f4863",
+      "questionCount": 12
+    },
+    {
+      "examId": "nysed-ela-2019-grade-5-mc-v1",
+      "year": 2019,
+      "grade": 5,
+      "sourcePdfSha256": "f3ba908fe5f371a53c6f8e4c60e1e042d48d4edf4f90756a5a247ae3a810d504",
+      "sidecarSha256": "a0b1ca414b17afcee99737ffdf00878705f60dffef2d25aa878d206ff433c949",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2019-grade-6-mc-v1",
+      "year": 2019,
+      "grade": 6,
+      "sourcePdfSha256": "67f316ecaf723d7aa9bc073b59f61bccfa9087542188d8fb704636feae01b404",
+      "sidecarSha256": "61e2303347de5b874b29fbb9b04bdf859a38734a7d83ee4b31083ac79186fceb",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2019-grade-7-mc-v1",
+      "year": 2019,
+      "grade": 7,
+      "sourcePdfSha256": "e29f1fa7fa2b1bccba6a4701743ab5337414d2b820a04171090a2866d8dcb8d8",
+      "sidecarSha256": "bb311ffe07318524a3c919424cfdb0bb40f59eaff799abfef7f85c9f1705361e",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2019-grade-8-mc-v1",
+      "year": 2019,
+      "grade": 8,
+      "sourcePdfSha256": "a082aae7f5d841e26b0ccbcee86654a05591d0a1637add04511c2d1e414210da",
+      "sidecarSha256": "c3540ad24be39814df7bf5c3b96c635e20b9ea5033ddcc381e3a433172929b5d",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2021-grade-3-mc-v1",
+      "year": 2021,
+      "grade": 3,
+      "sourcePdfSha256": "9789b9d9d41bccac09d1d9409904d73ca67682ac60511891cc380184aaf84ffb",
+      "sidecarSha256": "7e33ee46ccd7fcb05e7c8daae39b5ae3e307c54286d81822b517be05e0fb85cb",
+      "questionCount": 18
+    },
+    {
+      "examId": "nysed-ela-2021-grade-4-mc-v1",
+      "year": 2021,
+      "grade": 4,
+      "sourcePdfSha256": "1e590bb1a0c7665e80d530c7a80eaba46976620676aebf22e8f2d22a43243b03",
+      "sidecarSha256": "a6dab5e7d26e0ea6112f906961ca1846f1700f9a9b804712615ffda9eca09819",
+      "questionCount": 18
+    },
+    {
+      "examId": "nysed-ela-2021-grade-5-mc-v1",
+      "year": 2021,
+      "grade": 5,
+      "sourcePdfSha256": "e5eb7049f22509cef18f51cb060a0cda93d4c00088e35b2e3cd2660034c77d86",
+      "sidecarSha256": "8af29a7d283c406e9703b1cf331872a3eb329e591ccbac3a24fe743d1456d39b",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2021-grade-6-mc-v1",
+      "year": 2021,
+      "grade": 6,
+      "sourcePdfSha256": "830e4a78b14d56a940a64bcfc9dca61ba12a9b1137610ddf05607f531f2a280f",
+      "sidecarSha256": "b9b7d7d242187760caf771ab5262263d5a1028f2c5b9bd2b899b530bbdb9159a",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2021-grade-7-mc-v1",
+      "year": 2021,
+      "grade": 7,
+      "sourcePdfSha256": "1a23c13ebab53166bbff3443bc8396c28151f9ddf3cd8cd097aa36aab52520aa",
+      "sidecarSha256": "c4fecdb2cb0baf894de8f19f5cc5ec4b0cc98d04c9ad2a28597106479f6bc498",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2021-grade-8-mc-v1",
+      "year": 2021,
+      "grade": 8,
+      "sourcePdfSha256": "7f3d96ebbcaba3f91307b08f8b95ac4407fb7617a88efb52d884c3958a1a0ae8",
+      "sidecarSha256": "a31c1e7adc8d6d6e788a4b5e073b8d447c158ac0b12b8869096d63e875cdc3a5",
+      "questionCount": 28
+    },
+    {
+      "examId": "nysed-ela-2022-grade-3-mc-v1",
+      "year": 2022,
+      "grade": 3,
+      "sourcePdfSha256": "5372fb817cc7cb16ec10650319a7eab745c59d0b49597eadc8f9205f962c1a0a",
+      "sidecarSha256": "30c188b53caf496709ccd89bf77b807a9d1dc7af18bfc187b5fa2647e63d42f5",
+      "questionCount": 12
+    },
+    {
+      "examId": "nysed-ela-2022-grade-4-mc-v1",
+      "year": 2022,
+      "grade": 4,
+      "sourcePdfSha256": "eefb0f795262fa4b68e66e3b34957cf73eb88ed4927d8a6072350a512fbd7007",
+      "sidecarSha256": "b379054d928dc9fff6cf8a271620da68035bdaa4691953ceee8657619732329a",
+      "questionCount": 12
+    },
+    {
+      "examId": "nysed-ela-2022-grade-5-mc-v1",
+      "year": 2022,
+      "grade": 5,
+      "sourcePdfSha256": "9040c839cdaa09ef0946561edae9f21e30aea6897fe46ae31a4711f61f34654a",
+      "sidecarSha256": "95eed8231db721789d34354e754df5671f100993f3dd9e30978202cd166f0829",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2022-grade-6-mc-v1",
+      "year": 2022,
+      "grade": 6,
+      "sourcePdfSha256": "e85617d445f9cd4e7d5c37a5138ee5efcf068cf48030397b88185e0a7a2e6d9e",
+      "sidecarSha256": "812771e55aa44096692c0167c010531c619e8bf569d83a8ba8f4d703c4e0aea5",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2022-grade-7-mc-v1",
+      "year": 2022,
+      "grade": 7,
+      "sourcePdfSha256": "ac2ed9ed3d33b08d7ad295c0f84584ce7f0eb1a41c6f9d4780cc092ebd049ba3",
+      "sidecarSha256": "fe0d8ef51171b3dd7e22278f0f72c089b462bf49f0c472927d8370ae64006666",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2022-grade-8-mc-v1",
+      "year": 2022,
+      "grade": 8,
+      "sourcePdfSha256": "0a8bd6f3a5ba827221eb9515e7477a013b60aa7790e03da096038029c78a9c2d",
+      "sidecarSha256": "2d68daa2dd21d3305c86f5238b064236aedaa1af1bf0632cf0511cce805934da",
+      "questionCount": 21
+    },
+    {
+      "examId": "nysed-ela-2023-grade-3-mc-v1",
+      "year": 2023,
+      "grade": 3,
+      "sourcePdfSha256": "d95524077a534813d2772f0e4218604f68f037d2f6b49fd89a84b8190fc4b50a",
+      "sidecarSha256": "47b151528fe31b4f57ce73346599a842e4bfedd5b4e1950663f85c8a8d93ca05",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2023-grade-4-mc-v1",
+      "year": 2023,
+      "grade": 4,
+      "sourcePdfSha256": "a730182f385f005969b086ac22cd0a20dc94aaffceaa50a63e774f4cdd11b686",
+      "sidecarSha256": "dac483720bcc946020f37ab3eb2b06022c97a364a60f2091977b8689aa4e845e",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2023-grade-5-mc-v1",
+      "year": 2023,
+      "grade": 5,
+      "sourcePdfSha256": "ee05ce5ade536c4937131cbf89b240cf7c50fa7a061a8b52f2d2d67b46fdb80d",
+      "sidecarSha256": "d4c4e114826297722d6d4d5f03bdaa181e50d73aea694e7d55c22cdf2d0b29bc",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2023-grade-6-mc-v1",
+      "year": 2023,
+      "grade": 6,
+      "sourcePdfSha256": "b39dd1e1e8f7a50fc2a5b7eb4e9c377bbee9c42a27d1981d2ba93af5cfb67145",
+      "sidecarSha256": "a6ca636f8372d5bda07b722a0f3873bf605dc6334d29b7c783b461d83bb316aa",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2023-grade-7-mc-v1",
+      "year": 2023,
+      "grade": 7,
+      "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
+      "sidecarSha256": "cd318a89df9651244bfd3c18ba12ad1ae071669f700b87c0b7abfb01859127c0",
+      "questionCount": 26
+    },
+    {
+      "examId": "nysed-ela-2023-grade-8-mc-v1",
+      "year": 2023,
+      "grade": 8,
+      "sourcePdfSha256": "a8b8dd01c2545bbe3e666917cc09aa223506e69adc7293060551129ec80ef14c",
+      "sidecarSha256": "074128e98f78ac610a48557305817c48d354e3be98bd2cf59656414304000139",
+      "questionCount": 26
+    },
+    {
+      "examId": "nysed-ela-2024-grade-3-mc-v1",
+      "year": 2024,
+      "grade": 3,
+      "sourcePdfSha256": "a5ebcc36a9784e3a446759cc5761d1cc64108ba4e6d89c0ced2a4144074bd55f",
+      "sidecarSha256": "265b4cfd6026dd9909f1ae3064813ce1af07c4e859a8a46ffafe626badbb33c3",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2024-grade-4-mc-v1",
+      "year": 2024,
+      "grade": 4,
+      "sourcePdfSha256": "5f9d133bd00188e9ea2f0830a60e2e9278d83e316825b3586dbf6d04ca6464f1",
+      "sidecarSha256": "a5f800c8af64515a395c4b1bc1bdb6a706ecf93904d49877bdc1c6dfb07b52a2",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2024-grade-5-mc-v1",
+      "year": 2024,
+      "grade": 5,
+      "sourcePdfSha256": "69e11b3841c5c70bac9ff5c3ec9017bd06e37e3651742c253378f198148bc034",
+      "sidecarSha256": "82d2ad4c12681dbb2ae14852bb2ad862385ddc5edaeec7132b64281aada1a125",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2024-grade-6-mc-v1",
+      "year": 2024,
+      "grade": 6,
+      "sourcePdfSha256": "bbca99ab7905cc388417360ea69d905bf85fbe8231a561f6007cbe5ba77c9bdf",
+      "sidecarSha256": "4ba8a33af68c2ac78e7cab258a680989e1fc02f569a750a14e8c7d67511bbd49",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2024-grade-7-mc-v1",
+      "year": 2024,
+      "grade": 7,
+      "sourcePdfSha256": "10462cd9a66abc6cfbefe0a17f9bcd830342700ce9d8428244c6c04cb55d94ea",
+      "sidecarSha256": "f576f21586de319fb300b5520dce9a3aba9c1281dd532cee4af62a6d438cffd7",
+      "questionCount": 26
+    },
+    {
+      "examId": "nysed-ela-2024-grade-8-mc-v1",
+      "year": 2024,
+      "grade": 8,
+      "sourcePdfSha256": "452bfde106eb2a5d73eb7ba0fe367664297075ecfb360c53f284c9102e913c22",
+      "sidecarSha256": "4e9e32953011b03dd29ec4c5a85be582014b7422c940529995a43163345e2c32",
+      "questionCount": 26
+    },
+    {
+      "examId": "nysed-ela-2025-grade-3-mc-v1",
+      "year": 2025,
+      "grade": 3,
+      "sourcePdfSha256": "f423c705395638759cdcea8e0fdd4a65f5c1b1b3df3e9073d7b9e64ac1661bd3",
+      "sidecarSha256": "40ad15dd1d4f00975a2739b4d87ca2f4d9ab27062013a6bc441099cb3e0a1cd3",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2025-grade-4-mc-v1",
+      "year": 2025,
+      "grade": 4,
+      "sourcePdfSha256": "01c3c37d495dc5455dae3b832927cdee108f9761710cb6fe4f553e7ef43c8c12",
+      "sidecarSha256": "57de26517340d691dbc87f0d119a6f7a6b111aa336d04d49d703844d7b0c0f68",
+      "questionCount": 17
+    },
+    {
+      "examId": "nysed-ela-2025-grade-5-mc-v1",
+      "year": 2025,
+      "grade": 5,
+      "sourcePdfSha256": "ef047fa3986775c1d270e45ec4a3f935e0e05f79d707467a2879cf7187ed2e91",
+      "sidecarSha256": "c714d43565e8af44199a3902e05cbb905b8fc9653fe963c5a658ddf38f31f971",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2025-grade-6-mc-v1",
+      "year": 2025,
+      "grade": 6,
+      "sourcePdfSha256": "734c8ac722ece5fe182bcd36652c8ae8617124eccf03b6de16ae71c3244907ea",
+      "sidecarSha256": "ddda1884a1dbdb34d2a5a72d6a554f48ce7b84e40d79ba40b10b54cdb5aae37c",
+      "questionCount": 19
+    },
+    {
+      "examId": "nysed-ela-2025-grade-7-mc-v1",
+      "year": 2025,
+      "grade": 7,
+      "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
+      "sidecarSha256": "4b547fa8901aec414dde8fae55896243235146053df024b3dac35d9f4dc99786",
+      "questionCount": 26
+    },
+    {
+      "examId": "nysed-ela-2025-grade-8-mc-v1",
+      "year": 2025,
+      "grade": 8,
+      "sourcePdfSha256": "5e037c48bd40d85ee1ce5994b53d3b004d3aa14b5c73014599c80511c3deb27b",
+      "sidecarSha256": "a466f157a35e6fac242dc224c6c93dcb2eae4adef6c7c82c9864722c64f82acc",
+      "questionCount": 26
+    },
+    {
+      "examId": "nysed-ela-2026-grade-3-mc-v1",
+      "year": 2026,
+      "grade": 3,
+      "sourcePdfSha256": "eb18b321db0dbf11639b772b8538553c7821bd1dd14ae9d8a2fd947445e1dbba",
+      "sidecarSha256": "32a8ae83dc8c6469629cfd862f31b515837eb6af110ac28756a26782a6a956e2",
+      "questionCount": 24
+    },
+    {
+      "examId": "nysed-ela-2026-grade-4-mc-v1",
+      "year": 2026,
+      "grade": 4,
+      "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
+      "sidecarSha256": "9776550df1d970c60238ca353b44dbfa3bf0ee8027ac54a575c3f369e835134b",
+      "questionCount": 24
+    },
+    {
+      "examId": "nysed-ela-2026-grade-5-mc-v1",
+      "year": 2026,
+      "grade": 5,
+      "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
+      "sidecarSha256": "0063bb04b9c5bc569fac0c21d7ef6a8f7e929b2512f36ef3fda09c5c713e6604",
+      "questionCount": 27
+    },
+    {
+      "examId": "nysed-ela-2026-grade-6-mc-v1",
+      "year": 2026,
+      "grade": 6,
+      "sourcePdfSha256": "af7b7da4a4c7f75ad3e82f0f42cad7f4c068d693315ff1356bef1723cdd19ce1",
+      "sidecarSha256": "817d0468c72ee4bd2cf6688f1bc464b725e6c1bbce7af6912e23782be6b9ac5a",
+      "questionCount": 27
+    },
+    {
+      "examId": "nysed-ela-2026-grade-7-mc-v1",
+      "year": 2026,
+      "grade": 7,
+      "sourcePdfSha256": "95c3b143f0ea3ac37f3c03c0abcca455dabfbc40d05cf8c78f7cfd46fc2bcf44",
+      "sidecarSha256": "09137cd526fb3d0b20175cd5d312310bcd7cb73e703a9e2338bef1e9e0a9a96b",
+      "questionCount": 34
+    },
+    {
+      "examId": "nysed-ela-2026-grade-8-mc-v1",
+      "year": 2026,
+      "grade": 8,
+      "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
+      "sidecarSha256": "22693b755161e0cadfd090f1f65b6a392cfc7917a592c1fc5782d0e749421a7a",
+      "questionCount": 34
+    }
+  ]
+}

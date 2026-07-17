@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "ela-question-accessibility-1",
+  "examId": "nysed-ela-2013-grade-3-mc-v1",
+  "sourcePdfSha256": "e4e50659dbad011e1baafece07d3393e15b1225775069bd29b92d9e492a65e41",
+  "questions": {
+    "nysed-ela-2013-g3-mc-q1": {
+      "inputHash": "a78310c02d212c6d5937189f0e724338a3f3f76ce84f23d87143db44aa323c8d",
+      "alt": "Question 1. Which detail about Mlaika helps explain the strange sounds she was making? Choices: A: She was an African elephant. B: She lived in Kenya. C: She lived near a highway. D: She was ten years old."
+    },
+    "nysed-ela-2013-g3-mc-q2": {
+      "inputHash": "0bf93946dabc196687d44c08e261709dc50c74faa501345f7e71d3b9bee2eb8f",
+      "alt": "Question 2. Which paragraph in the article shows how people are most like the animals? Choices: A: paragraph 2 B: paragraph 3 C: paragraph 5 D: paragraph 7"
+    },
+    "nysed-ela-2013-g3-mc-q3": {
+      "inputHash": "aca7ab559caa6114ea267dd225558f236f1a5da705d71716ad5709e8b25501bf",
+      "alt": "Question 3. Which detail best supports the article’s main idea? Choices: A: Parrots copy human sounds. B: People copy sounds and noises. C: Mlaika is one of the elephants that copy sounds. D: Dr. Joyce H. Poole studies mammals that copy sounds."
+    },
+    "nysed-ela-2013-g3-mc-q4": {
+      "inputHash": "f98ade1de9bb600992c9a633cc96f6b2862277c9e57510b85fb93a11555f13a0",
+      "alt": "Question 4. Read the sentence from paragraph 7. When they are kept outside of their natural environment, they may copy unusual sounds. What is the meaning of “environment” in this sentence? Choices: A: the work a person or animal does B: the place a person or animal lives C: the family a person or animal has D: the noise a person or animal makes"
+    },
+    "nysed-ela-2013-g3-mc-q5": {
+      "inputHash": "482e2726271e75062dc9912bc07b0a2b8fa067ca4d021cc25d3af298242db43d",
+      "alt": "Question 5. Read the sentence from the article. It turned out that Mlaika was copying the sounds of the trucks driving by. (paragraph 3) How does paragraph 7 support this sentence? Choices: A: It gives a new example of Mlaika copying sounds. B: It shows how Mlaika enjoyed studying the trucks. C: It gives a possible reason for Mlaika copying sounds. D: It shows how Mlaika learned to make the truck sounds."
+    },
+    "nysed-ela-2013-g3-mc-q6": {
+      "inputHash": "9a413d087be490e23d91e4eff75dbb721ea431164e082240f45db9ab7aa2e662",
+      "alt": "Question 6. Read the sentence from paragraph 6. Dr. Poole says that elephants, too, need to form bonds with their family and friends. Which action in the article best shows the forming of a “bond”? Choices: A: imitating a truck B: talking on television C: learning to chirp D: studying animal sounds"
+    }
+  }
+}

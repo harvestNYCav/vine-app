@@ -57,8 +57,8 @@
       "inputHash": "56b9b5810799d76b8dd17f3e744139ee3d6529e65cc65d5b06877fa3c33f4cca",
       "explanation": {
         "text": {
-          "en": "The scale factor from the 5.41-inch phone to the 6.21-inch phone is 6.21/5.41. Applying it to the 2.6-inch width gives 2.6(6.21/5.41) ≈ 2.99 inches.",
-          "es": "El factor de escala del teléfono de 5.41 pulgadas al de 6.21 pulgadas es 6.21/5.41. Al aplicarlo al ancho de 2.6 pulgadas se obtiene 2.6(6.21/5.41) ≈ 2.99 pulgadas; por lo tanto, ese es el nuevo ancho."
+          "en": "The scale factor from the 5.4-inch phone to the 6.21-inch phone is 6.21/5.4. Applying it to the 2.6-inch width gives 2.6(6.21/5.4) = 2.99 inches.",
+          "es": "El factor de escala del teléfono de 5.4 pulgadas al de 6.21 pulgadas es 6.21/5.4. Al aplicarlo al ancho de 2.6 pulgadas se obtiene 2.6(6.21/5.4) = 2.99 pulgadas."
         },
         "source": "vine-authored"
       }
@@ -237,8 +237,8 @@
       "inputHash": "cea1d95e57688723cd65a103b7c35c39fb187ef615ecb7a7ab75caacf48888e7",
       "explanation": {
         "text": {
-          "en": "The h hats cost $9.95h, and shipping adds $5.50. Because the total is less than $125, the inequality is 9.95h + 5.50 < 125.",
-          "es": "Los h sombreros cuestan $9.95h y el envío suma $5.50. Como el total es menor que $125, la desigualdad es 9.95h + 5.50 < 125."
+        "en": "The h hats cost $9.95h, and shipping adds $5.00. Because the total is less than $125, the inequality is 9.95h + 5 < 125.",
+        "es": "Los h sombreros cuestan $9.95h y el envío suma $5.00. Como el total es menor que $125, la desigualdad es 9.95h + 5 < 125."
         },
         "source": "vine-authored"
       }

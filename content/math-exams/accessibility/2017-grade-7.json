@@ -1,0 +1,1437 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2017-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2017-g7-mc-q1": {
+      "inputHash": "2e773169585274ac1757f128c7b04ba5bad09838089069dee1782f6cafe36d5d",
+      "description": {
+        "en": "Question 1. Point P is on a horizontal number line marked at every integer. The even integers from −12 through 12 are labeled, and P is a solid point at −4. The number line has arrows in both directions. The distance between point Q and point P is 6 1/2 units. Which number could represent point Q? Choices: A: −9 1/2. B: 1 1/2. C: 2 1/2. D: 10 1/2.",
+        "es": "Pregunta 1. El punto P se muestra en una recta numérica horizontal con flechas en ambos extremos. Las marcas representan enteros consecutivos; están rotulados los números pares desde −12 hasta 12. El punto P es un punto cerrado ubicado en −4. La distancia entre el punto Q y el punto P es de 6 1/2 unidades. ¿Qué número podría representar el punto Q? Opciones: A: −9 1/2 B: 1 1/2 C: 2 1/2 D: 10 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−12",
+          "12",
+          "−4",
+          "6 1/2",
+          "−9 1/2",
+          "1 1/2",
+          "2 1/2",
+          "10 1/2",
+          "A: −9 1/2",
+          "B: 1 1/2",
+          "C: 2 1/2",
+          "D: 10 1/2",
+          "9 1/2"
+        ],
+        "es": [
+          "−4",
+          "6 1/2",
+          "−9 1/2",
+          "1 1/2",
+          "2 1/2",
+          "10 1/2",
+          "A: −9 1/2",
+          "B: 1 1/2",
+          "C: 2 1/2",
+          "D: 10 1/2",
+          "9 1/2"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q2": {
+      "inputHash": "508900c10725ecbc6bbeadd9905e7b06c17d3c86da7d0766336ebb2de2fbabc3",
+      "description": {
+        "en": "Question 2. Ms. Gartland bought x number of shirts for the new members of her chorus. The cost for x number of shirts, including $3.99 shipping, was $77.49. Each shirt cost $12.25. There was no sales tax on this purchase. Which equation could be used to find x? Choices: A: 3.99(x + 12.25) = 77.49. B: 3.99x + 12.25 = 77.49. C: 12.25(x + 3.99) = 77.49. D: 12.25x + 3.99 = 77.49.",
+        "es": "Pregunta 2. La Sra. Gartland compró x número de camisas para los nuevos miembros de su coro. El costo de x número de camisas, incluido un cargo de envío de $3.99, fue de $77.49. Cada camisa costó $12.25. No se aplicó ningún impuesto a las ventas sobre esta compra. ¿Qué ecuación se podría usar para averiguar x? Opciones: A: 3.99(x + 12.25) = 77.49 B: 3.99x + 12.25 = 77.49 C: 12.25(x + 3.99) = 77.49 D: 12.25x + 3.99 = 77.49"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$3.99",
+          "$77.49",
+          "$12.25",
+          "3.99(x + 12.25) = 77.49",
+          "3.99x + 12.25 = 77.49",
+          "12.25(x + 3.99) = 77.49",
+          "12.25x + 3.99 = 77.49",
+          "A: 3.99(x + 12.25) = 77.49",
+          "B: 3.99x + 12.25 = 77.49",
+          "C: 12.25(x + 3.99) = 77.49",
+          "D: 12.25x + 3.99 = 77.49",
+          "(x + 12.25)",
+          "(x + 3.99)"
+        ],
+        "es": [
+          "x",
+          "$3.99",
+          "$77.49",
+          "$12.25",
+          "3.99(x + 12.25) = 77.49",
+          "3.99x + 12.25 = 77.49",
+          "12.25(x + 3.99) = 77.49",
+          "12.25x + 3.99 = 77.49",
+          "A: 3.99(x + 12.25) = 77.49",
+          "B: 3.99x + 12.25 = 77.49",
+          "C: 12.25(x + 3.99) = 77.49",
+          "D: 12.25x + 3.99 = 77.49",
+          "(x + 12.25)",
+          "(x + 3.99)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q3": {
+      "inputHash": "f858326e28cf118680fa212e15395c9f0db2c89e2a30ab7639987f5a875c364a",
+      "description": {
+        "en": "Question 3. Which representation shows a proportional relationship between x and y? Choices: A: A coordinate graph with x labeled from 0 through 6 in increments of 1 and y labeled from 0 through 30 in increments of 5. A rising line begins at the solid point (0, 5), passes through grid points such as (1, 10), (2, 15), (3, 20), (4, 25), and (5, 30), and continues up and to the right with an arrow. B: A coordinate graph with x labeled from 0 through 6 in increments of 1 and y labeled from 0 through 30 in increments of 5. A horizontal ray begins at the solid point (0, 25) and extends to the right with an arrow along y = 25. C: A table with columns x and y and rows (2, 8), (4, 16), (8, 24), and (12, 32). D: A table with columns x and y and rows (2, 3), (4, 6), (8, 12), and (12, 18).",
+        "es": "Pregunta 3. ¿Qué representación muestra una relación proporcional entre x e y? Opciones: A: Plano de coordenadas en el primer cuadrante. El eje x está marcado de 0 a 6 en incrementos de 1 y el eje y está marcado de 0 a 30 en incrementos de 5. Una semirrecta ascendente comienza con un punto cerrado en (0, 5), pasa por (1, 10), (2, 15), (3, 20), (4, 25), (5, 30) y continúa hacia arriba y a la derecha. B: Plano de coordenadas en el primer cuadrante. El eje x está marcado de 0 a 6 en incrementos de 1 y el eje y está marcado de 0 a 30 en incrementos de 5. Una semirrecta horizontal comienza con un punto cerrado en (0, 25), pasa por todos los puntos con y = 25 y continúa hacia la derecha. C: Tabla con columnas x e y. Las filas de datos son (2, 8), (4, 16), (8, 24) y (12, 32). D: Tabla con columnas x e y. Las filas de datos son (2, 3), (4, 6), (8, 12) y (12, 18)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 5)",
+          "(1, 10)",
+          "(2, 15)",
+          "(3, 20)",
+          "(4, 25)",
+          "(5, 30)",
+          "(0, 25)",
+          "y = 25",
+          "(2, 8)",
+          "(4, 16)",
+          "(8, 24)",
+          "(12, 32)",
+          "(2, 3)",
+          "(4, 6)",
+          "(8, 12)",
+          "(12, 18)",
+          "A: A coordinate graph with x labeled from 0 through 6 in increments of 1 and y labeled from 0 through 30 in increments of 5. A rising line begins at the solid point (0, 5), passes through grid points such as (1, 10), (2, 15), (3, 20), (4, 25), and (5, 30), and continues up and to the right with an arrow",
+          "B: A coordinate graph with x labeled from 0 through 6 in increments of 1 and y labeled from 0 through 30 in increments of 5. A horizontal ray begins at the solid point (0, 25) and extends to the right with an arrow along y = 25",
+          "C: A table with columns x and y and rows (2, 8), (4, 16), (8, 24), and (12, 32)",
+          "D: A table with columns x and y and rows (2, 3), (4, 6), (8, 12), and (12, 18)"
+        ],
+        "es": [
+          "(0, 5)",
+          "(1, 10)",
+          "(2, 15)",
+          "(3, 20)",
+          "(4, 25)",
+          "(5, 30)",
+          "(0, 25)",
+          "y = 25",
+          "(2, 8)",
+          "(4, 16)",
+          "(8, 24)",
+          "(12, 32)",
+          "(2, 3)",
+          "(4, 6)",
+          "(8, 12)",
+          "(12, 18)",
+          "A: Plano de coordenadas en el primer cuadrante. El eje x está marcado de 0 a 6 en incrementos de 1 y el eje y está marcado de 0 a 30 en incrementos de 5. Una semirrecta ascendente comienza con un punto cerrado en (0, 5), pasa por (1, 10), (2, 15), (3, 20), (4, 25), (5, 30) y continúa hacia arriba y a la derecha",
+          "B: Plano de coordenadas en el primer cuadrante. El eje x está marcado de 0 a 6 en incrementos de 1 y el eje y está marcado de 0 a 30 en incrementos de 5. Una semirrecta horizontal comienza con un punto cerrado en (0, 25), pasa por todos los puntos con y = 25 y continúa hacia la derecha",
+          "C: Tabla con columnas x e y. Las filas de datos son (2, 8), (4, 16), (8, 24) y (12, 32)",
+          "D: Tabla con columnas x e y. Las filas de datos son (2, 3), (4, 6), (8, 12) y (12, 18)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q4": {
+      "inputHash": "610e0ee2efd7ea5ac3dc79044d1066fed05944c89c5782a7cb5549bb126bcb71",
+      "description": {
+        "en": "Question 4. Every five years in March, the population of a certain town is recorded. In 1995, the town had a population of 4,500 people. From 1995 to 2000, the population increased by 15%. From 2000 to 2005, the population decreased by 4%. What was the town’s population in 2005? Choices: A: 4,527. B: 4,968. C: 4,995. D: 5,382.",
+        "es": "Pregunta 4. Cada cinco años, en marzo, se registra la población de una ciudad determinada. En 1995, la ciudad tenía una población de 4,500 personas. Desde 1995 hasta el 2000, la población aumentó un 15 %. Desde el 2000 hasta el 2005, la población disminuyó un 4 %. ¿Cuál era la población de la ciudad en el 2005? Opciones: A: 4,527 B: 4,968 C: 4,995 D: 5,382"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1995",
+          "4,500",
+          "2000",
+          "15%",
+          "2005",
+          "4%",
+          "4,527",
+          "4,968",
+          "4,995",
+          "5,382",
+          "A: 4,527",
+          "B: 4,968",
+          "C: 4,995",
+          "D: 5,382"
+        ],
+        "es": [
+          "1995",
+          "4,500",
+          "15 %",
+          "2000",
+          "2005",
+          "4 %",
+          "4,527",
+          "4,968",
+          "4,995",
+          "5,382",
+          "A: 4,527",
+          "B: 4,968",
+          "C: 4,995",
+          "D: 5,382"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q9": {
+      "inputHash": "844804147a19a1dba0e489afe9af525c106e8464627a157638da35c38bdfcf47",
+      "description": {
+        "en": "Question 9. The measure of one side of a square is (s + 3) inches long. Which pair of expressions both represent the perimeter of this square? Choices: A: 2s + 3 and (s + 3)(s + 3). B: 2(s + 3) and (s + 3)(s + 3). C: 4s + 3 and (s + 3) + (s + 3) + (s + 3) + (s + 3). D: 4(s + 3) and (s + 3) + (s + 3) + (s + 3) + (s + 3).",
+        "es": "Pregunta 9. La medida de un lado de un cuadrado es de (s + 3) pulgadas de largo. ¿Qué par de expresiones representa el perímetro de este cuadrado? Opciones: A: 2s + 3; y (s + 3)(s + 3) B: 2(s + 3); y (s + 3)(s + 3) C: 4s + 3; y (s + 3) + (s + 3) + (s + 3) + (s + 3) D: 4(s + 3); y (s + 3) + (s + 3) + (s + 3) + (s + 3)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(s + 3)",
+          "2s + 3",
+          "(s + 3)(s + 3)",
+          "2(s + 3)",
+          "4s + 3",
+          "(s + 3) + (s + 3) + (s + 3) + (s + 3)",
+          "4(s + 3)",
+          "A: 2s + 3 and (s + 3)(s + 3)",
+          "B: 2(s + 3) and (s + 3)(s + 3)",
+          "C: 4s + 3 and (s + 3) + (s + 3) + (s + 3) + (s + 3)",
+          "D: 4(s + 3) and (s + 3) + (s + 3) + (s + 3) + (s + 3)"
+        ],
+        "es": [
+          "(s + 3)",
+          "2s + 3",
+          "(s + 3)(s + 3)",
+          "2(s + 3)",
+          "4s + 3",
+          "(s + 3) + (s + 3) + (s + 3) + (s + 3)",
+          "4(s + 3)",
+          "A: 2s + 3; y (s + 3)(s + 3)",
+          "B: 2(s + 3); y (s + 3)(s + 3)",
+          "C: 4s + 3; y (s + 3) + (s + 3) + (s + 3) + (s + 3)",
+          "D: 4(s + 3); y (s + 3) + (s + 3) + (s + 3) + (s + 3)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q10": {
+      "inputHash": "f0169111afa3660453a803b9521d5b4e399a23a5b939ca4672632c52b77bda0f",
+      "description": {
+        "en": "Question 10. Which expression has the same value as 59.2 − 84.7? Choices: A: 84.7 − 59.2. B: −84.7 + (−59.2). C: 59.2 − (−84.7). D: 59.2 + (−84.7).",
+        "es": "Pregunta 10. ¿Qué expresión tiene el mismo valor que 59.2 − 84.7? Opciones: A: 84.7 − 59.2 B: −84.7 + (−59.2) C: 59.2 − (−84.7) D: 59.2 + (−84.7)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "59.2 − 84.7",
+          "84.7 − 59.2",
+          "−84.7 + (−59.2)",
+          "59.2 − (−84.7)",
+          "59.2 + (−84.7)",
+          "A: 84.7 − 59.2",
+          "B: −84.7 + (−59.2)",
+          "C: 59.2 − (−84.7)",
+          "D: 59.2 + (−84.7)",
+          "(−59.2)",
+          "(−84.7)"
+        ],
+        "es": [
+          "59.2 − 84.7",
+          "84.7 − 59.2",
+          "−84.7 + (−59.2)",
+          "59.2 − (−84.7)",
+          "59.2 + (−84.7)",
+          "A: 84.7 − 59.2",
+          "B: −84.7 + (−59.2)",
+          "C: 59.2 − (−84.7)",
+          "D: 59.2 + (−84.7)",
+          "(−59.2)",
+          "(−84.7)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q11": {
+      "inputHash": "f55b9c8f5f7678d33b0cfaedf196387c0a8b584b1849f4c2bc2629776db2af95",
+      "description": {
+        "en": "Question 11. Winston needs at least 80 signatures from students in his school before he can run for class president. He has 23 signatures already. He and two of his friends plan to get the remaining signatures during lunch. If each person gets the same number of signatures, which inequality can Winston use to determine the minimum number of signatures each person should get so he can run for class president? Choices: A: 3x + 80 ≥ 23. B: 3x + 80 ≤ 23. C: 3x + 23 ≥ 80. D: 3x + 23 ≤ 80.",
+        "es": "Pregunta 11. Winston necesita al menos 80 firmas de alumnos de su escuela para poder postularse para presidente de la clase. Él ya tiene 23 firmas. Él y dos de sus amigos planean conseguir las firmas restantes durante el almuerzo. Si cada persona consigue el mismo número de firmas, ¿qué desigualdad puede usar Winston para determinar el número mínimo de firmas que cada persona debe conseguir para que él pueda postularse para presidente de la clase? Opciones: A: 3x + 80 ≥ 23 B: 3x + 80 ≤ 23 C: 3x + 23 ≥ 80 D: 3x + 23 ≤ 80"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "80",
+          "23",
+          "3x + 80 ≥ 23",
+          "3x + 80 ≤ 23",
+          "3x + 23 ≥ 80",
+          "3x + 23 ≤ 80",
+          "A: 3x + 80 ≥ 23",
+          "B: 3x + 80 ≤ 23",
+          "C: 3x + 23 ≥ 80",
+          "D: 3x + 23 ≤ 80",
+          "80 ≥ 23",
+          "80 ≤ 23",
+          "23 ≥ 80",
+          "23 ≤ 80"
+        ],
+        "es": [
+          "80",
+          "23",
+          "3x + 80 ≥ 23",
+          "3x + 80 ≤ 23",
+          "3x + 23 ≥ 80",
+          "3x + 23 ≤ 80",
+          "A: 3x + 80 ≥ 23",
+          "B: 3x + 80 ≤ 23",
+          "C: 3x + 23 ≥ 80",
+          "D: 3x + 23 ≤ 80",
+          "80 ≥ 23",
+          "80 ≤ 23",
+          "23 ≥ 80",
+          "23 ≤ 80"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q12": {
+      "inputHash": "d940f9843c801cb3d5c54d0081727c06f8720dae8c47ac6b22687d17870b2670",
+      "description": {
+        "en": "Question 12. In the morning, a farm worker packed 3 pints of strawberries every 4 minutes. In the afternoon, she packed 2 pints of strawberries every 3 minutes. What was the difference between her morning and afternoon packing rates, in pints per hour? Choices: A: 5. B: 10. C: 40. D: 45.",
+        "es": "Pregunta 12. Por la mañana, una trabajadora agrícola empaquetó 3 pintas de fresas cada 4 minutos. Por la tarde, ella empaquetó 2 pintas de fresas cada 3 minutos. ¿Cuál fue la diferencia entre sus tasas de empaquetado de la mañana y de la tarde, en pintas por hora? Opciones: A: 5 B: 10 C: 40 D: 45"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 pints",
+          "4 minutes",
+          "2 pints",
+          "3 minutes",
+          "5",
+          "10",
+          "40",
+          "45",
+          "A: 5",
+          "B: 10",
+          "C: 40",
+          "D: 45"
+        ],
+        "es": [
+          "3 pintas",
+          "4 minutos",
+          "2 pintas",
+          "3 minutos",
+          "5",
+          "10",
+          "40",
+          "45",
+          "A: 5",
+          "B: 10",
+          "C: 40",
+          "D: 45"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q13": {
+      "inputHash": "ea3e1b2d8b9f725158c16701c8cbd6ea75e8e1d5953cdff9331d6bc7196e61b3",
+      "description": {
+        "en": "Question 13. Which expression makes the equation true for all values of x? Equation: 16x − 16 = 4(____). Choices: A: 4x − 4. B: 4x − 16. C: 2x − 2. D: 12x − 12.",
+        "es": "Pregunta 13. ¿Qué expresión hace que la ecuación sea verdadera para todos los valores de x? Ecuación: 16x − 16 = 4(___), donde la línea en blanco dentro de los paréntesis debe reemplazarse por una expresión. Opciones: A: 4x − 4 B: 4x − 16 C: 2x − 2 D: 12x − 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16x − 16 = 4(____)",
+          "4x − 4",
+          "4x − 16",
+          "2x − 2",
+          "12x − 12",
+          "A: 4x − 4",
+          "B: 4x − 16",
+          "C: 2x − 2",
+          "D: 12x − 12"
+        ],
+        "es": [
+          "16x − 16 = 4(___)",
+          "4x − 4",
+          "4x − 16",
+          "2x − 2",
+          "12x − 12",
+          "A: 4x − 4",
+          "B: 4x − 16",
+          "C: 2x − 2",
+          "D: 12x − 12"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q14": {
+      "inputHash": "ea46cefa701adf902170332e92a71b73e047c46a7abc17d3e86847472ef6827f",
+      "description": {
+        "en": "Question 14. Which number is equivalent to 43/12? Choices: A: 3.583. B: 3.583̅, with a bar over only the final 3. C: 3.58̅3̅, with a bar over 83. D: 3.5̅8̅3̅, with a bar over 583.",
+        "es": "Pregunta 14. ¿Qué número es equivalente a 43/12? Opciones: A: 3.583, decimal sin barra de período. B: 3.583̅, es decir, 3.58 seguido del dígito 3 periódico; la barra está únicamente sobre el último 3. C: 3.58̅3̅, es decir, 3.5 seguido del bloque periódico 83; la barra está sobre los dígitos 8 y 3. D: 3.5̅8̅3̅, es decir, 3 seguido del bloque periódico 583; la barra está sobre los tres dígitos 583."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "43/12",
+          "3.583",
+          "3.583̅",
+          "3.58̅3̅",
+          "3.5̅8̅3̅",
+          "A: 3.583",
+          "B: 3.583̅, with a bar over only the final 3",
+          "C: 3.58̅3̅, with a bar over 83",
+          "D: 3.5̅8̅3̅, with a bar over 583"
+        ],
+        "es": [
+          "43/12",
+          "3.583",
+          "3.58̅3",
+          "3.5̅8̅3̅",
+          "3.5̅8̅3",
+          "583",
+          "58",
+          "B: 3.583̅",
+          "C: 3.58̅3̅",
+          "D: 3.5̅8̅3̅",
+          "A: 3.583, decimal sin barra de período",
+          "B: 3.583̅, es decir, 3.58 seguido del dígito 3 periódico; la barra está únicamente sobre el último 3",
+          "C: 3.58̅3̅, es decir, 3.5 seguido del bloque periódico 83; la barra está sobre los dígitos 8 y 3",
+          "D: 3.5̅8̅3̅, es decir, 3 seguido del bloque periódico 583; la barra está sobre los tres dígitos 583"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q15": {
+      "inputHash": "d36be8be87e70c767d01313eb23db4002ab3f8cccfb7a8e017da27a9c3583d4b",
+      "description": {
+        "en": "Question 15. Mr. Santino needs a total of 406 forks for his restaurant. He currently has 278 forks. If each set has 12 forks, what is the minimum number of sets of forks he should buy? Choices: A: 11. B: 12. C: 128. D: 140.",
+        "es": "Pregunta 15. El Sr. Santino necesita un total de 406 tenedores para su restaurante. Actualmente, él tiene 278 tenedores. Si cada juego tiene 12 tenedores, ¿cuál es el número mínimo de juegos de tenedores que debería comprar? Opciones: A: 11 B: 12 C: 128 D: 140"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "406",
+          "278",
+          "12",
+          "11",
+          "128",
+          "140",
+          "A: 11",
+          "B: 12",
+          "C: 128",
+          "D: 140"
+        ],
+        "es": [
+          "406",
+          "278",
+          "12",
+          "11",
+          "128",
+          "140",
+          "A: 11",
+          "B: 12",
+          "C: 128",
+          "D: 140"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q16": {
+      "inputHash": "2c13558ce0a1357aec5cba24877f84c9107abbb57b17b8d3a53b8471365446d3",
+      "description": {
+        "en": "Question 16. If the expression below has a positive value, which inequality represents all possible values of x in the expression? Expression: −3x. Choices: A: x < 0. B: x > 0. C: x ≤ 0. D: x ≥ 0.",
+        "es": "Pregunta 16. Si la siguiente expresión tiene un valor positivo, ¿qué desigualdad representa todos los valores posibles de x en la expresión? Expresión: −3x. Opciones: A: x < 0 B: x > 0 C: x ≤ 0 D: x ≥ 0"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−3x",
+          "x < 0",
+          "x > 0",
+          "x ≤ 0",
+          "x ≥ 0",
+          "A: x < 0",
+          "B: x > 0",
+          "C: x ≤ 0",
+          "D: x ≥ 0"
+        ],
+        "es": [
+          "−3x",
+          "x < 0",
+          "x > 0",
+          "x ≤ 0",
+          "x ≥ 0",
+          "A: x < 0",
+          "B: x > 0",
+          "C: x ≤ 0",
+          "D: x ≥ 0"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q19": {
+      "inputHash": "7dba6bb5a67cb9a7cd17dfcde194944ece37eba5f4bc4044fa6bc2c649ca2ef0",
+      "description": {
+        "en": "Question 19. Jensen stopped at rest area A along the side of the highway. His map has a scale of 1 inch to 35 miles. A horizontal line labeled Highway has Rest Area B marked on the left and Rest Area A marked on the right. A dimension line between the two rest areas is labeled 2.5 in. Jensen planned to stop at rest area B next. What is the actual distance, in miles, between the two rest areas? Choices: A: 14.0. B: 37.5. C: 70.5. D: 87.5.",
+        "es": "Pregunta 19. Jensen se detuvo en un área de descanso A al costado de la carretera. Su mapa tiene una escala de 1 pulgada por cada 35 millas. Un diagrama presenta una carretera como una línea horizontal. El área de descanso B está marcada a la izquierda y el área de descanso A está marcada a la derecha. Una medida horizontal entre las marcas de las dos áreas indica 2.5 pulgadas. Jensen tenía planeado detenerse luego en el área de descanso B. ¿Cuál es la distancia real, en millas, entre las dos áreas de descanso? Opciones: A: 14.0 B: 37.5 C: 70.5 D: 87.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 inch to 35 miles",
+          "2.5 in",
+          "14.0",
+          "37.5",
+          "70.5",
+          "87.5",
+          "A: 14.0",
+          "B: 37.5",
+          "C: 70.5",
+          "D: 87.5"
+        ],
+        "es": [
+          "1 pulgada",
+          "35 millas",
+          "2.5 pulgadas",
+          "14.0",
+          "37.5",
+          "70.5",
+          "87.5",
+          "A: 14.0",
+          "B: 37.5",
+          "C: 70.5",
+          "D: 87.5"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q20": {
+      "inputHash": "386d9a3e54c0c6c375c051f2611525078fc7a536714403984d7326dc2dd8e544",
+      "description": {
+        "en": "Question 20. Which statement describes the decimal equivalent of 7/8? Choices: A: It is a decimal with a repeating digit of 5. B: It is a decimal with repeating digits of 75. C: It is a decimal that terminates after 2 decimal places. D: It is a decimal that terminates after 3 decimal places.",
+        "es": "Pregunta 20. ¿Qué afirmación describe el equivalente decimal de 7/8? Opciones: A: Es un decimal con un dígito periódico de 5. B: Es un decimal con dígitos periódicos de 75. C: Es un decimal que termina después de 2 lugares decimales. D: Es un decimal que termina después de 3 lugares decimales."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7/8",
+          "5",
+          "75",
+          "2 decimal places",
+          "3 decimal places",
+          "A: It is a decimal with a repeating digit of 5",
+          "B: It is a decimal with repeating digits of 75",
+          "C: It is a decimal that terminates after 2 decimal places",
+          "D: It is a decimal that terminates after 3 decimal places"
+        ],
+        "es": [
+          "7/8",
+          "5",
+          "75",
+          "2 lugares decimales",
+          "3 lugares decimales",
+          "A: Es un decimal con un dígito periódico de 5",
+          "B: Es un decimal con dígitos periódicos de 75",
+          "C: Es un decimal que termina después de 2 lugares decimales",
+          "D: Es un decimal que termina después de 3 lugares decimales"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q21": {
+      "inputHash": "5c91794b751812eb0a1b29f352e2041a8de4d56184e38e637648872d82e8b27b",
+      "description": {
+        "en": "Question 21. Which expression is equivalent to the expression below? Expression: −1/2(−3/2x + 6x + 1) − 3x. Choices: A: 3/2x − 1/2. B: 6 3/4x − 1/2. C: −3/4x + 1/2. D: −5 1/4x − 1/2.",
+        "es": "Pregunta 21. ¿Qué expresión es equivalente a la expresión que se muestra a continuación? Expresión: −1/2(−3/2 x + 6x + 1) − 3x. Opciones: A: 3/2 x − 1/2 B: 6 3/4 x − 1/2 C: −3/4 x + 1/2 D: −5 1/4 x − 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/2x − 1/2",
+          "6 3/4x − 1/2",
+          "−3/4x + 1/2",
+          "−5 1/4x − 1/2",
+          "−1/2(−3/2x + 6x + 1) − 3x",
+          "A: 3/2x − 1/2",
+          "B: 6 3/4x − 1/2",
+          "C: −3/4x + 1/2",
+          "D: −5 1/4x − 1/2",
+          "1/2",
+          "(−3/2x + 6x + 1)",
+          "3/2",
+          "6 3/4",
+          "3/4",
+          "5 1/4"
+        ],
+        "es": [
+          "−1/2(−3/2 x + 6x + 1) − 3x",
+          "3/2 x − 1/2",
+          "6 3/4 x − 1/2",
+          "−3/4 x + 1/2",
+          "−5 1/4 x − 1/2",
+          "A: 3/2 x − 1/2",
+          "B: 6 3/4 x − 1/2",
+          "C: −3/4 x + 1/2",
+          "D: −5 1/4 x − 1/2",
+          "1/2",
+          "(−3/2 x + 6x + 1)",
+          "3/2",
+          "6 3/4",
+          "3/4",
+          "5 1/4"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q22": {
+      "inputHash": "60d2bef307963c63c0de513012e6a29256395f447dbb7061b0fbd8ef089e46a4",
+      "description": {
+        "en": "Question 22. Leanne collects data throughout the basketball season and uses these data to determine the probabilities of different teams playing in the league championship game. The probabilities for her four favorite teams playing in the championship game are: Tigers, P = 2/3; Redbirds, P = 4/5; Bulldogs, P = 3/8; Titans, P = 1/2. Which of these teams is least likely to play in the championship game? Choices: A: Tigers. B: Redbirds. C: Bulldogs. D: Titans.",
+        "es": "Pregunta 22. Leanne recopila datos durante la temporada de básquetbol y usa estos datos para determinar las probabilidades de que los diferentes equipos jueguen en el juego del campeonato de la liga. A continuación se muestran las probabilidades de que sus cuatro equipos favoritos jueguen en el juego del campeonato: Tigers, P = 2/3; Redbirds, P = 4/5; Bulldogs, P = 3/8; Titans, P = 1/2. ¿Cuál de estos equipos tiene menos probabilidades de jugar en el juego del campeonato? Opciones: A: Tigers B: Redbirds C: Bulldogs D: Titans"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Tigers, P = 2/3",
+          "Redbirds, P = 4/5",
+          "Bulldogs, P = 3/8",
+          "Titans, P = 1/2",
+          "Tigers",
+          "Redbirds",
+          "Bulldogs",
+          "Titans",
+          "A: Tigers",
+          "B: Redbirds",
+          "C: Bulldogs",
+          "D: Titans",
+          "2/3",
+          "4/5",
+          "3/8",
+          "1/2"
+        ],
+        "es": [
+          "P = 2/3",
+          "P = 4/5",
+          "P = 3/8",
+          "P = 1/2",
+          "Tigers",
+          "Redbirds",
+          "Bulldogs",
+          "Titans",
+          "A: Tigers",
+          "B: Redbirds",
+          "C: Bulldogs",
+          "D: Titans",
+          "2/3",
+          "4/5",
+          "3/8",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q25": {
+      "inputHash": "3b616ec373c27cdf8ebbf7f64ab92e72a8800b251ae3d5d7257e1f938e56deb4",
+      "description": {
+        "en": "Question 25. The initial balance of a savings account was $275. After which transactions will the balance of the savings account be the same as the initial balance? Choices: A: a withdrawal of $232 followed by a deposit of $132. B: a deposit of $278 followed by a withdrawal of $278. C: a withdrawal of $115 followed by a deposit of $312. D: a deposit of $205 followed by a withdrawal of $317.",
+        "es": "Pregunta 25. El saldo inicial de una cuenta de ahorro era de $275. ¿Después de qué transacciones el saldo de la cuenta de ahorro será igual al saldo inicial? Opciones: A: una extracción de $232 seguida de un depósito de $132 B: un depósito de $278 seguido de una extracción de $278 C: una extracción de $115 seguida de un depósito de $312 D: un depósito de $205 seguido de una extracción de $317"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$275",
+          "$232",
+          "$132",
+          "$278",
+          "$115",
+          "$312",
+          "$205",
+          "$317",
+          "A: a withdrawal of $232 followed by a deposit of $132",
+          "B: a deposit of $278 followed by a withdrawal of $278",
+          "C: a withdrawal of $115 followed by a deposit of $312",
+          "D: a deposit of $205 followed by a withdrawal of $317"
+        ],
+        "es": [
+          "$275",
+          "$232",
+          "$132",
+          "$278",
+          "$115",
+          "$312",
+          "$205",
+          "$317",
+          "A: una extracción de $232 seguida de un depósito de $132",
+          "B: un depósito de $278 seguido de una extracción de $278",
+          "C: una extracción de $115 seguida de un depósito de $312",
+          "D: un depósito de $205 seguido de una extracción de $317"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q26": {
+      "inputHash": "df5ef09fca6250c70f9284879a213e1ebb52d9b1970ddac80ae42eac37a79ea0",
+      "description": {
+        "en": "Question 26. A researcher surveyed five randomly selected employees from each of four different companies about their daily commutes to work. A table titled “Commute Times for Selected Employees” gives commute times in minutes. Company 1: 24, 26, 28, 23, 21. Company 2: 6, 32, 9, 31, 21. Company 3: 15, 15, 15, 15, 15. Company 4: 13, 10, 45, 12, 15. Based on the data, which company most likely has the longest average commute time per employee? Choices: A: Company 1. B: Company 2. C: Company 3. D: Company 4.",
+        "es": "Pregunta 26. Un investigador encuestó a cinco empleados seleccionados al azar de cada una de cuatro empresas diferentes sobre los viajes diarios al trabajo. La tabla, titulada «TIEMPOS DE VIAJE DE LOS EMPLEADOS SELECCIONADOS», muestra los tiempos de viaje de los empleados encuestados, en minutos. Empresa 1: 24, 26, 28, 23 y 21. Empresa 2: 6, 32, 9, 31 y 21. Empresa 3: 15, 15, 15, 15 y 15. Empresa 4: 13, 10, 45, 12 y 15. Según los datos, ¿qué empresa tiene, más probablemente, el tiempo promedio de viajes al trabajo más prolongado por empleado? Opciones: A: Empresa 1 B: Empresa 2 C: Empresa 3 D: Empresa 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Company 1: 24, 26, 28, 23, 21",
+          "Company 2: 6, 32, 9, 31, 21",
+          "Company 3: 15, 15, 15, 15, 15",
+          "Company 4: 13, 10, 45, 12, 15",
+          "A: Company 1",
+          "B: Company 2",
+          "C: Company 3",
+          "D: Company 4"
+        ],
+        "es": [
+          "24, 26, 28, 23 y 21",
+          "6, 32, 9, 31 y 21",
+          "15, 15, 15, 15 y 15",
+          "13, 10, 45, 12 y 15",
+          "Empresa 1",
+          "Empresa 2",
+          "Empresa 3",
+          "Empresa 4",
+          "A: Empresa 1",
+          "B: Empresa 2",
+          "C: Empresa 3",
+          "D: Empresa 4"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q27": {
+      "inputHash": "b63e2066a90384c4cd1c3a089a36d6c6a8ad11f3127e9873c253ee066a4d8ab4",
+      "description": {
+        "en": "Question 27. In a scale drawing of an apartment, 1 centimeter represents 2 3/4 feet. If the length of the kitchen is 4 1/2 cm on the scale drawing, what is the actual length, in feet, of the kitchen? Choices: A: 6 2/3. B: 7 1/4. C: 8 3/8. D: 12 3/8.",
+        "es": "Pregunta 27. En un dibujo a escala de un apartamento, 1 centímetro representa 2 3/4 pies. Si la longitud de la cocina es de 4 1/2 cm en el dibujo a escala, ¿cuál es la longitud real, en pies, de la cocina? Opciones: A: 6 2/3 B: 7 1/4 C: 8 3/8 D: 12 3/8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 centimeter",
+          "2 3/4 feet",
+          "4 1/2 cm",
+          "6 2/3",
+          "7 1/4",
+          "8 3/8",
+          "12 3/8",
+          "A: 6 2/3",
+          "B: 7 1/4",
+          "C: 8 3/8",
+          "D: 12 3/8",
+          "2 3/4",
+          "4 1/2"
+        ],
+        "es": [
+          "1 centímetro",
+          "2 3/4 pies",
+          "4 1/2 cm",
+          "6 2/3",
+          "7 1/4",
+          "8 3/8",
+          "12 3/8",
+          "A: 6 2/3",
+          "B: 7 1/4",
+          "C: 8 3/8",
+          "D: 12 3/8",
+          "2 3/4",
+          "4 1/2"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q28": {
+      "inputHash": "f6697e8e7787361b7477f8131ceb4aa3ebb39088432798185ec8903b8a024423",
+      "description": {
+        "en": "Question 28. A passenger train has tickets available for 12 window seats and 8 aisle seats. The next person to buy a ticket will be randomly assigned to one of those seats. What is the probability that the next person will be assigned to an aisle seat? Choices: A: 1/8. B: 2/5. C: 1/2. D: 2/3.",
+        "es": "Pregunta 28. Un tren de pasajeros tiene boletos disponibles para 12 asientos del lado de la ventana y 8 asientos del lado del pasillo. A la próxima persona en comprar un boleto se le asignará al azar uno de esos asientos. ¿Cuál es la probabilidad de que a la próxima persona se le asigne un asiento del lado del pasillo? Opciones: A: 1/8 B: 2/5 C: 1/2 D: 2/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 window seats",
+          "8 aisle seats",
+          "1/8",
+          "2/5",
+          "1/2",
+          "2/3",
+          "A: 1/8",
+          "B: 2/5",
+          "C: 1/2",
+          "D: 2/3"
+        ],
+        "es": [
+          "12 asientos",
+          "8 asientos",
+          "1/8",
+          "2/5",
+          "1/2",
+          "2/3",
+          "A: 1/8",
+          "B: 2/5",
+          "C: 1/2",
+          "D: 2/3"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q32": {
+      "inputHash": "28933f9d6070f630dbe407d80789a1f3d1826490a5b28cd2184452e917292a92",
+      "description": {
+        "en": "Question 32. The scale drawing of a field in the shape of a triangle is represented on a coordinate plane. Both the x-axis and y-axis are numbered from 0 through 10 in increments of 1. The triangle has vertices at (2, 2), (4, 7), and (9, 2), with a horizontal base from (2, 2) to (9, 2). The key states that one grid-unit length represents 2 meters. What is the actual area, in square meters, of this field? Choices: A: 8.75. B: 17.5. C: 35. D: 70.",
+        "es": "Pregunta 32. A continuación se presenta el dibujo a escala de un campo con forma de triángulo en un plano de coordenadas. Los ejes x e y abarcan de 0 a 10, con cuadrícula en cada unidad. Los vértices del triángulo son (2, 2), (4, 7) y (9, 2). La base es el segmento horizontal desde (2, 2) hasta (9, 2); los otros lados unen esos extremos con (4, 7). La referencia indica que la longitud de una unidad de la cuadrícula equivale a 2 metros. ¿Cuál es el área real, en metros cuadrados, de este campo? Opciones: A: 8.75 B: 17.5 C: 35 D: 70"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 2)",
+          "(4, 7)",
+          "(9, 2)",
+          "2 meters",
+          "8.75",
+          "17.5",
+          "35",
+          "70",
+          "A: 8.75",
+          "B: 17.5",
+          "C: 35",
+          "D: 70"
+        ],
+        "es": [
+          "0 a 10",
+          "(2, 2)",
+          "(4, 7)",
+          "(9, 2)",
+          "2 metros",
+          "8.75",
+          "17.5",
+          "35",
+          "70",
+          "A: 8.75",
+          "B: 17.5",
+          "C: 35",
+          "D: 70"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q33": {
+      "inputHash": "dabab7312a9d85cff78106e726a08d5beb730ec6a967d3604e44c6d9dea8c99c",
+      "description": {
+        "en": "Question 33. A vehicle uses 1 1/8 gallons of gasoline to travel 13 1/2 miles. At this rate, how many miles can the vehicle travel per gallon of gasoline? Choices: A: 16/243. B: 4/3. C: 12. D: 13.",
+        "es": "Pregunta 33. Un vehículo consume 1 1/8 galones de gasolina para recorrer 13 1/2 millas. A esta tasa, ¿cuántas millas puede recorrer el vehículo por galón de gasolina? Opciones: A: 16/243 B: 4/3 C: 12 D: 13"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/8 gallons",
+          "13 1/2 miles",
+          "16/243",
+          "4/3",
+          "12",
+          "13 1/2",
+          "D: 13",
+          "A: 16/243",
+          "B: 4/3",
+          "C: 12",
+          "1 1/8"
+        ],
+        "es": [
+          "1 1/8 galones",
+          "13 1/2 millas",
+          "16/243",
+          "4/3",
+          "12",
+          "13",
+          "A: 16/243",
+          "B: 4/3",
+          "C: 12",
+          "D: 13",
+          "1 1/8",
+          "13 1/2"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q34": {
+      "inputHash": "27394395f686a0bb6cfd5dc94275675437cbc14acecc77dd5753034e30ccea6a",
+      "description": {
+        "en": "Question 34. A bowling team participates in a two-day tournament and records the scores for each team member on both days. Two horizontal box plots titled “Bowling Team Scores” share a number line labeled “Bowling Scores.” The number line has evenly spaced tick marks, with 175, 200, and 225 labeled. Friday’s box plot is positioned to the right of Saturday’s: its median line is to the right of Saturday’s median line. The Friday and Saturday boxes have equal horizontal widths, so their interquartile ranges are equal. Friday’s left whisker begins to the right of Saturday’s left whisker, and Friday’s right whisker ends to the right of Saturday’s right whisker. Which conclusion can be drawn from the box plots? Choices: A: The scores on Friday and the scores on Saturday have the same median and interquartile range. B: The scores on Friday have a greater median and a greater interquartile range than the scores on Saturday. C: The scores on Friday have a greater interquartile range than the scores on Saturday, but both data sets have the same median. D: The scores on Friday have a greater median than the scores on Saturday, but both data sets have the same interquartile range.",
+        "es": "Pregunta 34. Un equipo de bolos participa en un torneo de dos días y registra los puntajes de cada miembro del equipo para ambos días. Los puntajes se representan mediante dos diagramas de caja horizontales sobre una misma recta numérica titulada «Puntajes de bolos». La recta tiene marcas igualmente espaciadas de 5 puntos; están rotuladas 175, 200 y 225. Para el viernes, el extremo inferior está en 185, el primer cuartil en 200, la mediana en 215, el tercer cuartil en 220 y el extremo superior en 230. Para el sábado, el extremo inferior está en 175, el primer cuartil en 190, la mediana en 205, el tercer cuartil en 210 y el extremo superior está entre 220 y 225. ¿Qué conclusión puede sacarse a partir de los diagramas de caja? Opciones: A: Los puntajes del viernes y los puntajes del sábado tienen la misma mediana y el mismo rango intercuartil. B: Los puntajes del viernes tienen una mediana mayor y un rango intercuartil mayor que los puntajes del sábado. C: Los puntajes del viernes tienen un rango intercuartil mayor que los puntajes del sábado, pero ambos conjuntos de datos tienen la misma mediana. D: Los puntajes del viernes tienen una mediana mayor que los puntajes del sábado, pero ambos conjuntos de datos tienen el mismo rango intercuartil."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "175",
+          "200",
+          "225",
+          "same median and interquartile range",
+          "greater median and a greater interquartile range",
+          "greater interquartile range",
+          "same median",
+          "greater median",
+          "same interquartile range",
+          "A: The scores on Friday and the scores on Saturday have the same median and interquartile range",
+          "B: The scores on Friday have a greater median and a greater interquartile range than the scores on Saturday",
+          "C: The scores on Friday have a greater interquartile range than the scores on Saturday, but both data sets have the same median",
+          "D: The scores on Friday have a greater median than the scores on Saturday, but both data sets have the same interquartile range"
+        ],
+        "es": [
+          "5 puntos",
+          "175",
+          "185",
+          "190",
+          "200",
+          "205",
+          "210",
+          "215",
+          "220",
+          "225",
+          "230",
+          "entre 220 y 225",
+          "misma mediana",
+          "mismo rango intercuartil",
+          "mediana mayor",
+          "rango intercuartil mayor",
+          "A: Los puntajes del viernes y los puntajes del sábado tienen la misma mediana y el mismo rango intercuartil",
+          "B: Los puntajes del viernes tienen una mediana mayor y un rango intercuartil mayor que los puntajes del sábado",
+          "C: Los puntajes del viernes tienen un rango intercuartil mayor que los puntajes del sábado, pero ambos conjuntos de datos tienen la misma mediana",
+          "D: Los puntajes del viernes tienen una mediana mayor que los puntajes del sábado, pero ambos conjuntos de datos tienen el mismo rango intercuartil"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q35": {
+      "inputHash": "d2a4b0ef149000b39dcd8f5f6c04eb9785335292ed1c959ac27aa7c4c5ae3ce2",
+      "description": {
+        "en": "Question 35. Which expression is equivalent to (7/2)h − 3(5h − 1/2)? Choices: A: −(23/2)h + 3/2. B: −(23/2)h − 3/2. C: (37/2)h + 3/2. D: (37/2)h − 3/2.",
+        "es": "Pregunta 35. ¿Qué expresión es equivalente a (7/2)h − 3(5h − 1/2)? Opciones: A: (−23/2)h + 3/2 B: (−23/2)h − 3/2 C: (37/2)h + 3/2 D: (37/2)h − 3/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(7/2)h − 3(5h − 1/2)",
+          "−(23/2)h + 3/2",
+          "−(23/2)h − 3/2",
+          "(37/2)h + 3/2",
+          "(37/2)h − 3/2",
+          "A: −(23/2)h + 3/2",
+          "B: −(23/2)h − 3/2",
+          "C: (37/2)h + 3/2",
+          "D: (37/2)h − 3/2",
+          "(7/2)",
+          "(5h − 1/2)",
+          "(23/2)",
+          "3/2",
+          "(37/2)"
+        ],
+        "es": [
+          "(7/2)h − 3(5h − 1/2)",
+          "(−23/2)h + 3/2",
+          "(−23/2)h − 3/2",
+          "(37/2)h + 3/2",
+          "(37/2)h − 3/2",
+          "A: (−23/2)h + 3/2",
+          "B: (−23/2)h − 3/2",
+          "C: (37/2)h + 3/2",
+          "D: (37/2)h − 3/2",
+          "(7/2)",
+          "(5h − 1/2)",
+          "(−23/2)",
+          "3/2",
+          "(37/2)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q36": {
+      "inputHash": "d04983742ba5268caf5c45fa06ede03119b9ea637f35885f11ac72121aa3263e",
+      "description": {
+        "en": "Question 36. Jeanette purchased a concert ticket on a web site. The original price of the ticket was $75. She used a coupon code to receive a 20% discount. The web site applied a 10% service fee to the discounted price. Jeanette’s ticket was less than the original price by what percent? Choices: A: 7% B: 10% C: 12% D: 28%",
+        "es": "Pregunta 36. Jeanette compró una entrada para un concierto en un sitio web. El precio original de la entrada era de $75. Ella usó el código de un cupón para recibir un descuento del 20 %. El sitio web aplicó un cargo por servicio del 10% al precio con descuento. ¿La entrada de Jeanette fue menor que el precio original en qué porcentaje? Opciones: A: 7 % B: 10 % C: 12 % D: 28 %"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$75",
+          "20%",
+          "10%",
+          "7%",
+          "12%",
+          "28%",
+          "A: 7%",
+          "B: 10%",
+          "C: 12%",
+          "D: 28%"
+        ],
+        "es": [
+          "$75",
+          "20 %",
+          "10%",
+          "7 %",
+          "10 %",
+          "12 %",
+          "28 %",
+          "A: 7 %",
+          "B: 10 %",
+          "C: 12 %",
+          "D: 28 %"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q37": {
+      "inputHash": "958238227ddd9ab2ded6bdbbd051b180f5f42298b234739dda5f6456c4542896",
+      "description": {
+        "en": "Question 37. A seventh grade English Language Arts teacher wants to order books for all the seventh grade classes. He wants to determine the favorite type of book among the seventh grade students. Which sample would be the most appropriate for this survey? Choices: A: 7 girls in each of his classes B: every fifth student in the seventh grade C: 1 out of 7 students in his middle school D: all of the boys in one of his seventh grade classes",
+        "es": "Pregunta 37. Un maestro de Lengua y Literatura Inglesa de séptimo grado quiere hacer un pedido de libros para todas las clases de séptimo grado. Él quiere determinar el tipo de libro favorito entre los alumnos de séptimo grado. ¿Qué muestra sería la más apropiada para esta encuesta? Opciones: A: 7 niñas de cada una de sus clases B: uno de cada cinco alumnos de séptimo grado C: 1 de cada 7 alumnos de la escuela intermedia D: todos los varones de una sola de sus clases de séptimo grado"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 girls",
+          "every fifth student",
+          "1 out of 7",
+          "all of the boys",
+          "A: 7 girls in each of his classes",
+          "B: every fifth student in the seventh grade",
+          "C: 1 out of 7 students in his middle school",
+          "D: all of the boys in one of his seventh grade classes"
+        ],
+        "es": [
+          "7 niñas",
+          "uno de cada cinco alumnos",
+          "1 de cada 7 alumnos",
+          "todos los varones",
+          "A: 7 niñas de cada una de sus clases",
+          "B: uno de cada cinco alumnos de séptimo grado",
+          "C: 1 de cada 7 alumnos de la escuela intermedia",
+          "D: todos los varones de una sola de sus clases de séptimo grado"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q38": {
+      "inputHash": "73cb255ded66a1de4cd31d0ed133546f26163cf2568dc9fb467d9008055969b9",
+      "description": {
+        "en": "Question 38. The amount of money in a bank account increased by 21.5% over the last year. If the amount of money at the beginning of the year is represented by n, which expression represents the amount of money in the bank account after the increase? Choices: A: n + 0.215n B: n + 21.5n C: 0.215n D: 21.5n",
+        "es": "Pregunta 38. La cantidad de dinero en una cuenta bancaria aumentó un 21.5 % a lo largo del año pasado. Si la cantidad de dinero al comienzo del año está representada por n, ¿qué expresión representa la cantidad de dinero en la cuenta bancaria después del aumento? Opciones: A: n + 0.215n B: n + 21.5n C: 0.215n D: 21.5n"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "21.5%",
+          "n",
+          "n + 0.215n",
+          "n + 21.5n",
+          "0.215n",
+          "21.5n",
+          "A: n + 0.215n",
+          "B: n + 21.5n",
+          "C: 0.215n",
+          "D: 21.5n"
+        ],
+        "es": [
+          "21.5 %",
+          "n",
+          "n + 0.215n",
+          "n + 21.5n",
+          "0.215n",
+          "21.5n",
+          "A: n + 0.215n",
+          "B: n + 21.5n",
+          "C: 0.215n",
+          "D: 21.5n"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q39": {
+      "inputHash": "7a5b813d2ca24d5f81b0e4d9c159054d9be74c0d7528be131b7dfa99ea288620",
+      "description": {
+        "en": "Question 39. Kiyo used wire fencing to form a border around a circular region in his back yard. If the radius of the circular region was 5 yards, what was the total length of the border, rounded to the nearest tenth of a yard? Choices: A: 15.7 B: 31.4 C: 78.5 D: 157.1",
+        "es": "Pregunta 39. Kiyo usó alambrado para formar un límite alrededor de una región circular en su patio. Si el radio de la región circular era de 5 yardas, ¿cuál era la longitud total del límite, redondeada al décimo de yarda más cercano? Opciones: A: 15.7 B: 31.4 C: 78.5 D: 157.1"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 yards",
+          "15.7",
+          "31.4",
+          "78.5",
+          "157.1",
+          "A: 15.7",
+          "B: 31.4",
+          "C: 78.5",
+          "D: 157.1"
+        ],
+        "es": [
+          "5 yardas",
+          "15.7",
+          "31.4",
+          "78.5",
+          "157.1",
+          "A: 15.7",
+          "B: 31.4",
+          "C: 78.5",
+          "D: 157.1"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q40": {
+      "inputHash": "649504b88e64e0ca4dd4956736ab13d2e1f224a3958d861fba9111d4653ff2e8",
+      "description": {
+        "en": "Question 40. A triangle has side lengths of (5.5x + 6.2y) centimeters, (4.3x + 8.3z) centimeters, and (1.6z − 5.1y) centimeters. Which expression represents the perimeter, in centimeters, of the triangle? Choices: A: 11.4xz + 9.4yz B: 11.7xy + 12.6xz − 3.5yz C: 9.8x + 1.1y + 9.9z D: 9.8x + 7.8y + 3.5z",
+        "es": "Pregunta 40. Un triángulo tiene lados con longitudes de (5.5x + 6.2y) centímetros, (4.3x + 8.3z) centímetros, y (1.6z − 5.1y) centímetros. ¿Qué expresión representa el perímetro, en centímetros, del triángulo? Opciones: A: 11.4xz + 9.4yz B: 11.7xy + 12.6xz − 3.5yz C: 9.8x + 1.1y + 9.9z D: 9.8x + 7.8y + 3.5z"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(5.5x + 6.2y)",
+          "(4.3x + 8.3z)",
+          "(1.6z − 5.1y)",
+          "11.4xz + 9.4yz",
+          "11.7xy + 12.6xz − 3.5yz",
+          "9.8x + 1.1y + 9.9z",
+          "9.8x + 7.8y + 3.5z",
+          "A: 11.4xz + 9.4yz",
+          "B: 11.7xy + 12.6xz − 3.5yz",
+          "C: 9.8x + 1.1y + 9.9z",
+          "D: 9.8x + 7.8y + 3.5z"
+        ],
+        "es": [
+          "(5.5x + 6.2y)",
+          "(4.3x + 8.3z)",
+          "(1.6z − 5.1y)",
+          "11.4xz + 9.4yz",
+          "11.7xy + 12.6xz − 3.5yz",
+          "9.8x + 1.1y + 9.9z",
+          "9.8x + 7.8y + 3.5z",
+          "A: 11.4xz + 9.4yz",
+          "B: 11.7xy + 12.6xz − 3.5yz",
+          "C: 9.8x + 1.1y + 9.9z",
+          "D: 9.8x + 7.8y + 3.5z"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q41": {
+      "inputHash": "90196de8230991196d02ba59f717a580a2ff3e26110191db9a121e922c6eaec7",
+      "description": {
+        "en": "Question 41. Carl wants to buy a television that costs $500, including taxes. To pay for the television, he will use a payment plan that requires him to make a down payment of $125, and then pay $72.50 each month for 6 months. What is the percent increase from the original cost of the television to the cost of the television using the payment plan? Choices: A: 6% B: 12% C: 58% D: 89%",
+        "es": "Pregunta 41. Carl quiere comprar un televisor que cuesta $500, impuestos incluidos. Para pagar el televisor, él usará un plan de pago que requiere que haga un pago inicial de $125 y luego pague $72.50 por mes durante 6 meses. ¿Cuál es el aumento porcentual, con respecto al costo original del televisor, del costo del televisor al usar el plan de pago? Opciones: A: 6 % B: 12 % C: 58 % D: 89 %"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$500",
+          "$125",
+          "$72.50",
+          "6 months",
+          "6%",
+          "12%",
+          "58%",
+          "89%",
+          "A: 6%",
+          "B: 12%",
+          "C: 58%",
+          "D: 89%"
+        ],
+        "es": [
+          "$500",
+          "$125",
+          "$72.50",
+          "6 meses",
+          "6 %",
+          "12 %",
+          "58 %",
+          "89 %",
+          "A: 6 %",
+          "B: 12 %",
+          "C: 58 %",
+          "D: 89 %"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q42": {
+      "inputHash": "b376a86da687dbd42950dce4e53479d261c6464dedf52e7de02fff1e607c3481",
+      "description": {
+        "en": "Question 42. Yolanda participated in a walkathon in which each kilometer walked raised $10 for charity. Her goal was to raise more than $300 on Saturday and Sunday. She raised $50 on Saturday. Which graph shows all the distances, in kilometers, that Yolanda could have walked on Sunday to reach her goal? Choices: A: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 5 and a ray extending to the right, representing distances greater than 5. B: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 25 and a ray extending to the right, representing distances greater than 25. C: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 30 and a ray extending to the right, representing distances greater than 30. D: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 35 and a ray extending to the right, representing distances greater than 35.",
+        "es": "Pregunta 42. Yolanda participó en una caminata solidaria en la cual por cada kilómetro caminado se recaudaban $10 para organizaciones benéficas. Su meta era recaudar más de $300 el sábado y el domingo. Ella recaudó $50 el sábado. ¿Qué gráfico muestra todas las distancias, en kilómetros, que Yolanda podría haber caminado el domingo para alcanzar su meta? Cada opción es una recta numérica horizontal con flechas en ambos extremos, marcas rotuladas 0, 5, 10, 15, 20, 25, 30, 35 y 40, y un círculo abierto desde el cual se extiende un rayo hacia la derecha. Opciones: A: Círculo abierto en 5 y rayo hacia la derecha; representa x > 5. B: Círculo abierto en 25 y rayo hacia la derecha; representa x > 25. C: Círculo abierto en 30 y rayo hacia la derecha; representa x > 30. D: Círculo abierto en 35 y rayo hacia la derecha; representa x > 35."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$10",
+          "more than $300",
+          "$50",
+          "0, 5, 10, 15, 20, 25, 30, 35, and 40",
+          "open circle at 5",
+          "greater than 5",
+          "open circle at 25",
+          "greater than 25",
+          "open circle at 30",
+          "greater than 30",
+          "open circle at 35",
+          "greater than 35",
+          "A: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 5 and a ray extending to the right, representing distances greater than 5",
+          "B: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 25 and a ray extending to the right, representing distances greater than 25",
+          "C: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 30 and a ray extending to the right, representing distances greater than 30",
+          "D: A number line labeled 0, 5, 10, 15, 20, 25, 30, 35, and 40 in increments of 5, with an open circle at 35 and a ray extending to the right, representing distances greater than 35"
+        ],
+        "es": [
+          "$10",
+          "más de $300",
+          "$50",
+          "0",
+          "5",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "x > 5",
+          "x > 25",
+          "x > 30",
+          "x > 35",
+          "A: Círculo abierto en 5 y rayo hacia la derecha; representa x > 5",
+          "B: Círculo abierto en 25 y rayo hacia la derecha; representa x > 25",
+          "C: Círculo abierto en 30 y rayo hacia la derecha; representa x > 30",
+          "D: Círculo abierto en 35 y rayo hacia la derecha; representa x > 35"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q43": {
+      "inputHash": "1c77651110e91eb2767aaa3f41417cb034d050bf6bc9b0504265802e73b2c3c9",
+      "description": {
+        "en": "Question 43. A grocery store sells sliced turkey. The graph shows the relationship between the weight of the sliced turkey and the total cost of the sliced turkey. Two points, R and W, are labeled on the graph. The graph is titled “TOTAL COST AND WEIGHT OF SLICED TURKEY.” The horizontal x-axis is labeled “Weight (pounds)” and is marked from 0 through 6 in increments of 1. The vertical y-axis is labeled “Total Cost (dollars)” and is marked from 0 through 16 in increments of 2. A straight ray begins at the origin, passes through point W at (1, 2.5) and point R at (4, 10), and continues upward and to the right. Which statement about the graph is true? Choices: A: Point R means that the unit rate is $10.00 per pound. B: Point R means that the unit rate is 4 pounds per dollar. C: Point W means that the unit rate is $2.50 per pound. D: Point W means that the unit rate is 2.5 pounds per dollar.",
+        "es": "Pregunta 43. Una despensa vende pavo en rebanadas. El gráfico muestra la relación entre el peso del pavo en rebanadas y el costo total del pavo en rebanadas. En el gráfico se marcan dos puntos, R y W. El plano de coordenadas tiene el eje horizontal x rotulado «Peso (libras)» y el eje vertical y rotulado «Costo total (dólares)». Una recta ascendente parte del origen, pasa por W en (1, 2.5) y por R en (4, 10), y continúa hacia arriba y a la derecha con una flecha. En el eje x aparecen los valores 0, 1, 2, 3, 4, 5 y 6. En el eje y aparecen 0, 2, 4, 6, 8, 10, 12, 14 y 16. ¿Qué afirmación sobre el gráfico es verdadera? Opciones: A: El punto R significa que la tasa por unidad es de $10.00 por libra. B: El punto R significa que la tasa por unidad es de 4 libras por dólar. C: El punto W significa que la tasa por unidad es de $2.50 por libra. D: El punto W significa que la tasa por unidad es de 2.5 libras por dólar."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "R",
+          "W",
+          "(1, 2.5)",
+          "(4, 10)",
+          "$10.00 per pound",
+          "4 pounds per dollar",
+          "$2.50 per pound",
+          "2.5 pounds per dollar",
+          "A: Point R means that the unit rate is $10.00 per pound",
+          "B: Point R means that the unit rate is 4 pounds per dollar",
+          "C: Point W means that the unit rate is $2.50 per pound",
+          "D: Point W means that the unit rate is 2.5 pounds per dollar"
+        ],
+        "es": [
+          "R",
+          "W",
+          "(1, 2.5)",
+          "(4, 10)",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "10",
+          "12",
+          "14",
+          "16",
+          "$10.00 por libra",
+          "4 libras por dólar",
+          "$2.50 por libra",
+          "2.5 libras por dólar",
+          "A: El punto R significa que la tasa por unidad es de $10.00 por libra",
+          "B: El punto R significa que la tasa por unidad es de 4 libras por dólar",
+          "C: El punto W significa que la tasa por unidad es de $2.50 por libra",
+          "D: El punto W significa que la tasa por unidad es de 2.5 libras por dólar"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q44": {
+      "inputHash": "5c3e1e1c5e08be6550e989c6ec3adea8c219b68584c11b6c8cc71a636a6a1d7c",
+      "description": {
+        "en": "Question 44. An item with an original price of p dollars is on sale at a 25% discount. Which expression is not equivalent to the price of the item with the discount? Choices: A: (1.0p − 0.25p) B: (1.0 − 0.25)p C: 0.75p D: 0.25p",
+        "es": "Pregunta 44. Un artículo con un precio original de p dólares está de oferta con un descuento del 25 %. ¿Qué expresión no es equivalente al precio del artículo con el descuento? Opciones: A: (1.0p − 0.25p) B: (1.0 − 0.25)p C: 0.75p D: 0.25p"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "p",
+          "25%",
+          "(1.0p − 0.25p)",
+          "(1.0 − 0.25)p",
+          "0.75p",
+          "0.25p",
+          "A: (1.0p − 0.25p)",
+          "B: (1.0 − 0.25)p",
+          "C: 0.75p",
+          "D: 0.25p",
+          "(1.0 − 0.25)"
+        ],
+        "es": [
+          "p",
+          "25 %",
+          "(1.0p − 0.25p)",
+          "(1.0 − 0.25)p",
+          "0.75p",
+          "0.25p",
+          "A: (1.0p − 0.25p)",
+          "B: (1.0 − 0.25)p",
+          "C: 0.75p",
+          "D: 0.25p",
+          "(1.0 − 0.25)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q45": {
+      "inputHash": "921c287690149b4e5f980127ee350db57a3f88f5474566b258d4226f4578fec3",
+      "description": {
+        "en": "Question 45. A circle has a diameter of 26 units. What is the area of the circle to the nearest hundredth of a square unit? Choices: A: 81.68 B: 530.93 C: 2,123.72 D: 8,494.87",
+        "es": "Pregunta 45. Un círculo tiene un diámetro de 26 unidades. ¿Cuál es el área del círculo redondeada al centésimo más cercano de una unidad cuadrada? Opciones: A: 81.68 B: 530.93 C: 2,123.72 D: 8,494.87"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "26",
+          "81.68",
+          "530.93",
+          "2,123.72",
+          "8,494.87",
+          "A: 81.68",
+          "B: 530.93",
+          "C: 2,123.72",
+          "D: 8,494.87"
+        ],
+        "es": [
+          "26",
+          "81.68",
+          "530.93",
+          "2,123.72",
+          "8,494.87",
+          "A: 81.68",
+          "B: 530.93",
+          "C: 2,123.72",
+          "D: 8,494.87"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q46": {
+      "inputHash": "c0d057f50caabf0baba47101c2242389b5430c46d706c23f651064cf5299d044",
+      "description": {
+        "en": "Question 46. The width of a rectangle is 6 2/3 inches. The length of the rectangle is twice its width. What is the perimeter of the rectangle? Choices: A: 20 inches B: 40 inches C: 30 2/3 inches D: 88 8/9 inches",
+        "es": "Pregunta 46. El ancho de un rectángulo es de 6 2/3 pulgadas. La longitud del rectángulo es del doble de su ancho. ¿Cuál es el perímetro del rectángulo? Opciones: A: 20 pulgadas B: 40 pulgadas C: 30 2/3 pulgadas D: 88 8/9 pulgadas"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 2/3",
+          "20 inches",
+          "40 inches",
+          "30 2/3 inches",
+          "88 8/9 inches",
+          "A: 20 inches",
+          "B: 40 inches",
+          "C: 30 2/3 inches",
+          "D: 88 8/9 inches",
+          "30 2/3",
+          "88 8/9"
+        ],
+        "es": [
+          "6 2/3",
+          "20 pulgadas",
+          "40 pulgadas",
+          "30 2/3 pulgadas",
+          "88 8/9 pulgadas",
+          "A: 20 pulgadas",
+          "B: 40 pulgadas",
+          "C: 30 2/3 pulgadas",
+          "D: 88 8/9 pulgadas",
+          "30 2/3",
+          "88 8/9"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q47": {
+      "inputHash": "ba146ffeb29100eda6734f62c9b0fbb7fb90ddbaeb59ec5c63ea23f49118378c",
+      "description": {
+        "en": "Question 47. A student uses a solution that contains 16 grams of water to conduct an evaporation experiment. At the end of one hour, the amount of water in the solution has decreased by 3.5%. At the end of two hours, the amount of water in the solution has decreased by another 4.25%. Which calculations can be used to determine the amount of water, in grams, remaining in the solution at the end of the second hour? Choices: A: Step 1: 0.035 × 16 = 0.56; Step 2: 16 − 0.56 = 15.44; Step 3: 0.0425 × 15.44 = 0.6562; Step 4: 16 − 0.6562 = 15.3438 B: Step 1: 0.035 × 16 = 0.56; Step 2: 16 − 0.56 = 15.44; Step 3: 0.0425 × 15.44 = 0.6562; Step 4: 15.44 − 0.6562 = 14.7838 C: Step 1: 0.35 × 16 = 5.6; Step 2: 16 − 5.6 = 10.4; Step 3: 0.425 × 10.4 = 4.42; Step 4: 16 − 4.42 = 11.58 D: Step 1: 0.35 × 16 = 5.6; Step 2: 16 − 5.6 = 10.4; Step 3: 0.425 × 10.4 = 4.42; Step 4: 10.4 − 4.42 = 5.98",
+        "es": "Pregunta 47. Un alumno usa una solución que contiene 16 gramos de agua para realizar un experimento de evaporación. Al cabo de una hora, la cantidad de agua en la solución se ha reducido un 3.5 %. Al cabo de dos horas, la cantidad de agua en la solución se ha reducido otro 4.25 %. ¿Qué cálculos pueden usarse para determinar la cantidad de agua, en gramos, que queda en la solución al cabo de la segunda hora? Opciones: A: Paso 1: 0.035 × 16 = 0.56. Paso 2: 16 − 0.56 = 15.44. Paso 3: 0.0425 × 15.44 = 0.6562. Paso 4: 16 − 0.6562 = 15.3438. B: Paso 1: 0.035 × 16 = 0.56. Paso 2: 16 − 0.56 = 15.44. Paso 3: 0.0425 × 15.44 = 0.6562. Paso 4: 15.44 − 0.6562 = 14.7838. C: Paso 1: 0.35 × 16 = 5.6. Paso 2: 16 − 5.6 = 10.4. Paso 3: 0.425 × 10.4 = 4.42. Paso 4: 16 − 4.42 = 11.58. D: Paso 1: 0.35 × 16 = 5.6. Paso 2: 16 − 5.6 = 10.4. Paso 3: 0.425 × 10.4 = 4.42. Paso 4: 10.4 − 4.42 = 5.98."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16 grams",
+          "3.5%",
+          "4.25%",
+          "0.035 × 16 = 0.56",
+          "16 − 0.56 = 15.44",
+          "0.0425 × 15.44 = 0.6562",
+          "16 − 0.6562 = 15.3438",
+          "15.44 − 0.6562 = 14.7838",
+          "0.35 × 16 = 5.6",
+          "16 − 5.6 = 10.4",
+          "0.425 × 10.4 = 4.42",
+          "16 − 4.42 = 11.58",
+          "10.4 − 4.42 = 5.98",
+          "A: Step 1: 0.035 × 16 = 0.56; Step 2: 16 − 0.56 = 15.44; Step 3: 0.0425 × 15.44 = 0.6562; Step 4: 16 − 0.6562 = 15.3438",
+          "B: Step 1: 0.035 × 16 = 0.56; Step 2: 16 − 0.56 = 15.44; Step 3: 0.0425 × 15.44 = 0.6562; Step 4: 15.44 − 0.6562 = 14.7838",
+          "C: Step 1: 0.35 × 16 = 5.6; Step 2: 16 − 5.6 = 10.4; Step 3: 0.425 × 10.4 = 4.42; Step 4: 16 − 4.42 = 11.58",
+          "D: Step 1: 0.35 × 16 = 5.6; Step 2: 16 − 5.6 = 10.4; Step 3: 0.425 × 10.4 = 4.42; Step 4: 10.4 − 4.42 = 5.98"
+        ],
+        "es": [
+          "16 gramos",
+          "3.5 %",
+          "4.25 %",
+          "0.035 × 16 = 0.56",
+          "16 − 0.56 = 15.44",
+          "0.0425 × 15.44 = 0.6562",
+          "16 − 0.6562 = 15.3438",
+          "15.44 − 0.6562 = 14.7838",
+          "0.35 × 16 = 5.6",
+          "16 − 5.6 = 10.4",
+          "0.425 × 10.4 = 4.42",
+          "16 − 4.42 = 11.58",
+          "10.4 − 4.42 = 5.98",
+          "A: Paso 1: 0.035 × 16 = 0.56. Paso 2: 16 − 0.56 = 15.44. Paso 3: 0.0425 × 15.44 = 0.6562. Paso 4: 16 − 0.6562 = 15.3438",
+          "B: Paso 1: 0.035 × 16 = 0.56. Paso 2: 16 − 0.56 = 15.44. Paso 3: 0.0425 × 15.44 = 0.6562. Paso 4: 15.44 − 0.6562 = 14.7838",
+          "C: Paso 1: 0.35 × 16 = 5.6. Paso 2: 16 − 5.6 = 10.4. Paso 3: 0.425 × 10.4 = 4.42. Paso 4: 16 − 4.42 = 11.58",
+          "D: Paso 1: 0.35 × 16 = 5.6. Paso 2: 16 − 5.6 = 10.4. Paso 3: 0.425 × 10.4 = 4.42. Paso 4: 10.4 − 4.42 = 5.98"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q50": {
+      "inputHash": "1fad1c40d586d2b73abc867792f86eb93025c06e360b379c601f81d7df0b64fc",
+      "description": {
+        "en": "Question 50. What is the value of the expression (−8/9) ÷ (−2/3) × (−4 1/2)? Choices: A: −6 B: −8/27 C: 8/27 D: 6",
+        "es": "Pregunta 50. ¿Cuál es el valor de la expresión (−8/9) ÷ (−2/3) × (−4 1/2)? Opciones: A: −6 B: −8/27 C: 8/27 D: 6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−8/9) ÷ (−2/3) × (−4 1/2)",
+          "−6",
+          "−8/27",
+          "8/27",
+          "6",
+          "A: −6",
+          "B: −8/27",
+          "C: 8/27",
+          "D: 6",
+          "(−8/9)",
+          "(−2/3)",
+          "(−4 1/2)"
+        ],
+        "es": [
+          "(−8/9) ÷ (−2/3) × (−4 1/2)",
+          "−6",
+          "−8/27",
+          "8/27",
+          "6",
+          "A: −6",
+          "B: −8/27",
+          "C: 8/27",
+          "D: 6",
+          "(−8/9)",
+          "(−2/3)",
+          "(−4 1/2)"
+        ]
+      }
+    },
+    "nysed-2017-g7-mc-q51": {
+      "inputHash": "4a127496829566dcda95e3a7c63d03c11e6ebf32273bfbe872b8b89b56131a0a",
+      "description": {
+        "en": "Question 51. A board game has a spinner divided into 12 sections of equal size. Each section is labeled with a number between 1 and 5. Beginning with the section immediately clockwise from the top vertical radius and continuing clockwise, the labels are 1, 2, 3, 5, 2, 4, 3, 5, 4, 5, 2, 3. An arrow extends from the center toward the upper-right and points into the section labeled 2. Which number is a reasonable estimate of the number of times the spinner will land on a section labeled 5 over the course of 150 spins? Choices: A: 15 B: 25 C: 40 D: 60",
+        "es": "Pregunta 51. Un juego de mesa tiene una rueda giratoria dividida en 12 secciones de igual tamaño. Cada sección está marcada con un número entre el 1 y el 5. Partiendo de la sección inmediatamente a la derecha del radio vertical superior y avanzando en sentido horario, las secciones están marcadas, en orden: 1, 2, 3, 5, 2, 4, 3, 5, 4, 5, 2 y 3. Una flecha giratoria parte del centro y apunta hacia arriba y a la derecha, dentro de la sección marcada con 2 que está entre las secciones marcadas con 1 y 3. ¿Qué número es una estimación razonable del número de veces que la rueda giratoria se detendrá en una sección marcada con el 5 a lo largo de 150 vueltas? Opciones: A: 15 B: 25 C: 40 D: 60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12",
+          "1 and 5",
+          "1, 2, 3, 5, 2, 4, 3, 5, 4, 5, 2, 3",
+          "2",
+          "5",
+          "150",
+          "15",
+          "25",
+          "40",
+          "60",
+          "A: 15",
+          "B: 25",
+          "C: 40",
+          "D: 60"
+        ],
+        "es": [
+          "12 secciones",
+          "1, 2, 3, 5, 2, 4, 3, 5, 4, 5, 2 y 3",
+          "150 vueltas",
+          "15",
+          "25",
+          "40",
+          "60",
+          "A: 15",
+          "B: 25",
+          "C: 40",
+          "D: 60"
+        ]
+      }
+    }
+  }
+}

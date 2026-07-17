@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2026-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2026-g4-mc-q1": {
+      "inputHash": "d414c362ee3d05923a5d770f8af79cb9dce2ae81372e67f0fdd8cd8ba3c9f790",
+      "description": {
+        "en": "Question 1. What is the number 860,327 written in expanded form? Choices: A: 800,000 + 60,000 + 3,000 + 200 + 7; B: 800,000 + 60,000 + 300 + 20 + 7; C: 80,000 + 6,000 + 3,000 + 20 + 7; D: 80,000 + 6,000 + 300 + 200 + 7.",
+        "es": "Pregunta 1. ¿Cómo se escribe en letras el número 860,327? Opciones: A: 800,000 + 60,000 + 3,000 + 200 + 7; B: 800,000 + 60,000 + 300 + 20 + 7; C: 80,000 + 6,000 + 3,000 + 20 + 7; D: 80,000 + 6,000 + 300 + 200 + 7."
+      }
+    },
+    "nysed-2026-g4-mc-q2": {
+      "inputHash": "df74ffa9ea29578cc729a232b68699dee0ffb2f28d6c528d59c28a1386fca989",
+      "description": {
+        "en": "Question 2. A chef buys 1 pound of potatoes. The chef uses 3/8 pound of the potatoes to make potato salad. He uses 4/8 pound of the potatoes to make mashed potatoes. What fraction of a pound of potatoes does the chef have remaining? Choices: A: 1/8; B: 7/8; C: 1/16; D: 7/16.",
+        "es": "Pregunta 2. Un chef compra 1 libra de papas. El chef usa 3/8 de libra de papas para hacer una ensalada. Usa 4/8 de libra de papas para hacer puré. ¿Qué fracción de una libra de papas le queda al chef? Opciones: A: 1/8; B: 7/8; C: 1/16; D: 7/16."
+      }
+    },
+    "nysed-2026-g4-mc-q3": {
+      "inputHash": "31bec2217ae00c3d97c1fb47ab223887b613e7685d4b806cbb695ec174e0f620",
+      "description": {
+        "en": "Question 3. A group of five triangles is labeled A through E. Triangle A has a vertical left side and a horizontal bottom side. Triangle B has a horizontal bottom and two slanted sides. Triangle C points upward with a horizontal bottom. Triangle D has a horizontal top and a vertical right side. Triangle E points downward with a horizontal top. Which two triangles appear to be right triangles? Choices: A: A and B; B: A and D; C: C and D; D: C and E.",
+        "es": "Pregunta 3. Un grupo de cinco triángulos está rotulado de A a E. El triángulo A tiene un lado izquierdo vertical y un lado inferior horizontal. El triángulo B tiene un lado inferior horizontal y dos lados inclinados. El triángulo C apunta hacia arriba y tiene un lado inferior horizontal. El triángulo D tiene un lado superior horizontal y un lado derecho vertical. El triángulo E apunta hacia abajo y tiene un lado superior horizontal. ¿Cuáles son los dos triángulos que parecen ser triángulos rectángulos? Opciones: A: A y B; B: A y D; C: C y D; D: C y E."
+      }
+    },
+    "nysed-2026-g4-mc-q4": {
+      "inputHash": "05aaeb9c88b88691e9b8ad438690fd6a02ef3bf980ae6989d1fbbe4aec05f255",
+      "description": {
+        "en": "Question 4. What is the product of 35 and 12? Four numerical answer choices are listed vertically. Choices: A: 105; B: 320; C: 350; D: 420.",
+        "es": "Pregunta 4. ¿Cuál es el producto de 35 y 12? Las cuatro opciones numéricas aparecen en una lista vertical. Opciones: A: 105; B: 320; C: 350; D: 420."
+      }
+    },
+    "nysed-2026-g4-mc-q5": {
+      "inputHash": "1e5132081f94b40b5a289952abd9b9513b32fe92981be5d6ebf0c27111add3d4",
+      "description": {
+        "en": "Question 5. An incomplete comparison is shown: ? < 4/8. Which fraction makes the comparison true? Choices: A: 2/4; B: 3/4; C: 5/12; D: 7/12.",
+        "es": "Pregunta 5. Se muestra una comparación incompleta: ? < 4/8. ¿Qué fracción hace que la comparación sea verdadera? Opciones: A: 2/4; B: 3/4; C: 5/12; D: 7/12."
+      }
+    },
+    "nysed-2026-g4-mc-q6": {
+      "inputHash": "4e5e0f56bb1f8bc3ba96fe2198f6ee1f0cd153d8daab2e310aed8e318ef3825e",
+      "description": {
+        "en": "Question 6. Which number is a multiple of 4 but not a factor of 36? Choices: A: 4; B: 8; C: 9; D: 12.",
+        "es": "Pregunta 6. ¿Qué número es múltiplo de 4, pero no un factor de 36? Opciones: A: 4; B: 8; C: 9; D: 12."
+      }
+    },
+    "nysed-2026-g4-mc-q7": {
+      "inputHash": "e7695bfde33958fd4e46774f687e7604cb46a5e6834858b39efc0b3d3b884bfc",
+      "description": {
+        "en": "Question 7. A line plot titled Distance Henry Walks His Dog shows five days on a distance axis in miles, marked in fourths from 1 to 3. There are two X marks at 1 2/4, one at 1 3/4, one at 2 1/4, and one at 3. What is the total distance, in miles, that Henry walks his dog on those days? Choices: A: 7; B: 8 1/2; C: 9 3/4; D: 10.",
+        "es": "Pregunta 7. Un diagrama lineal titulado Distancia que Henry recorre con su perro muestra cinco días en un eje de distancia en millas, marcado en cuartos desde 1 hasta 3. Hay dos X en 1 2/4, una en 1 3/4, una en 2 1/4 y una en 3. ¿Cuál es la distancia total, en millas, que Henry recorre con su perro en esos días? Opciones: A: 7; B: 8 1/2; C: 9 3/4; D: 10."
+      }
+    },
+    "nysed-2026-g4-mc-q9": {
+      "inputHash": "924996a963da5475720f1ced7474869a4986d2cdacacbe11e4c49b7dd3f04e90",
+      "description": {
+        "en": "Question 9. Which comparison is true? Choices: A: 367,832 > 368,459; B: 369,254 > 368,459; C: 358,468 > 368,459; D: 359,684 > 368,459.",
+        "es": "Pregunta 9. ¿Qué comparación es verdadera? Opciones: A: 367,832 > 368,459; B: 369,254 > 368,459; C: 358,468 > 368,459; D: 359,684 > 368,459."
+      }
+    },
+    "nysed-2026-g4-mc-q10": {
+      "inputHash": "aed13a378db6a999472f676666ed9214bc3befa8068176d1b60d329ab663b8e4",
+      "description": {
+        "en": "Question 10. In which model is the fraction of its whole shaded to represent a value equivalent to 2/3? Model A is a rectangle split into 3 horizontal parts with 1 shaded. Model B is a 2-by-2 grid with 3 of 4 parts shaded. Model C is a rectangle split into 5 vertical parts with 2 shaded. Model D is a 3-by-4 grid with 8 of 12 parts shaded. Choices: A: Model A; B: Model B; C: Model C; D: Model D.",
+        "es": "Pregunta 10. ¿En qué modelo está sombreada la fracción del modelo entero para representar un valor equivalente a 2/3? El modelo A es un rectángulo dividido en 3 partes horizontales con 1 sombreada. El modelo B es una cuadrícula de 2 por 2 con 3 de 4 partes sombreadas. El modelo C es un rectángulo dividido en 5 partes verticales con 2 sombreadas. El modelo D es una cuadrícula de 3 por 4 con 8 de 12 partes sombreadas. Opciones: A: Modelo A; B: Modelo B; C: Modelo C; D: Modelo D."
+      }
+    },
+    "nysed-2026-g4-mc-q11": {
+      "inputHash": "ca3dc991733829b8c2cce726b80b336aff18ccee21bd88242179219105dbf337",
+      "description": {
+        "en": "Question 11. The number pattern 81, 27, 9, ... follows a rule. Which of these number patterns follows the same rule? Choices: A: 64, 16, 4, ...; B: 54, 18, 6, ...; C: 32, 28, 24, ...; D: 22, 19, 16, ....",
+        "es": "Pregunta 11. El patrón numérico 81, 27, 9, ... sigue una regla. ¿Cuál de los siguientes patrones numéricos sigue la misma regla? Opciones: A: 64, 16, 4, ...; B: 54, 18, 6, ...; C: 32, 28, 24, ...; D: 22, 19, 16, ...."
+      }
+    },
+    "nysed-2026-g4-mc-q12": {
+      "inputHash": "53639856e1d98b6047b45b517eefd0aa76920c03f240a270018497810408287a",
+      "description": {
+        "en": "Question 12. Three four-sided figures are shown. Figure X has four equal-looking sides, with horizontal top and bottom and vertical left and right sides. Figure Y is wider than it is tall, with horizontal top and bottom and vertical sides. Figure Z is slanted, with opposite sides appearing parallel. Which statement about all three figures appears to be true? Choices: A: Figure X, Figure Y, and Figure Z are all parallelograms; B: Figure X and Figure Z are the only parallelograms; C: Figure X and Figure Y are the only parallelograms; D: Figure Z is the only parallelogram.",
+        "es": "Pregunta 12. Se muestran tres figuras de cuatro lados. La figura X tiene cuatro lados que parecen iguales, con lados superior e inferior horizontales y lados izquierdo y derecho verticales. La figura Y es más ancha que alta, con lados superior e inferior horizontales y lados verticales. La figura Z está inclinada y sus lados opuestos parecen paralelos. ¿Qué afirmación sobre las tres figuras parece ser verdadera? Opciones: A: Las figuras X, Y y Z son paralelogramos; B: Las figuras X y Z son los únicos paralelogramos; C: Las figuras X e Y son los únicos paralelogramos; D: La figura Z es el único paralelogramo."
+      }
+    },
+    "nysed-2026-g4-mc-q13": {
+      "inputHash": "e6a0961968df63000e17793d8e3ffe782445fad76ec8d06a181be1d0a9a4039a",
+      "description": {
+        "en": "Question 13. What is the value of 3,642 ÷ 4? The letter r means remainder in two choices. Choices: A: 91; B: 91 r2; C: 910; D: 910 r2.",
+        "es": "Pregunta 13. ¿Cuál es el valor de 3,642 ÷ 4? La letra r significa residuo en dos opciones. Opciones: A: 91; B: 91 r2; C: 910; D: 910 r2."
+      }
+    },
+    "nysed-2026-g4-mc-q15": {
+      "inputHash": "46f1fc4fe8f83578f1a521901e1d054b47351b81e939910f31c235b43240d4fc",
+      "description": {
+        "en": "Question 15. Steve sold 15 books last year at a book fair. This year, he sold 3 times as many books at the book fair as last year. How many books did Steve sell at the book fair this year? Choices: A: 5; B: 18; C: 30; D: 45.",
+        "es": "Pregunta 15. Steve vendió 15 libros el año pasado en una feria del libro. Este año, vendió 3 veces tantos libros en la feria del libro que el año pasado. ¿Cuántos libros vendió Steve en la feria del libro este año? Opciones: A: 5; B: 18; C: 30; D: 45."
+      }
+    },
+    "nysed-2026-g4-mc-q16": {
+      "inputHash": "73926247c40a02f546c0819ea8e38f4c32bd7b13164696d9ab02c685ebc7917f",
+      "description": {
+        "en": "Question 16. An unknown is shown in the comparison 4/6 > ?/3. Which number can replace the unknown to make the comparison true? Choices: A: 1; B: 2; C: 3; D: 4.",
+        "es": "Pregunta 16. Se muestra un valor desconocido en la comparación 4/6 > ?/3. ¿Qué número puede reemplazar el valor desconocido para que la comparación sea verdadera? Opciones: A: 1; B: 2; C: 3; D: 4."
+      }
+    },
+    "nysed-2026-g4-mc-q17": {
+      "inputHash": "fe3eb5f6a67302da78c926ccd9457ab8d4831c43a9a2b5c03b603294b771ef7a",
+      "description": {
+        "en": "Question 17. Which value is equivalent to 10 tens? The four place-value choices are listed vertically. Choices: A: 1 one; B: 1 ten; C: 1 hundred; D: 1 thousand.",
+        "es": "Pregunta 17. ¿Qué valor es equivalente a 10 decenas? Las cuatro opciones de valor posicional aparecen en una lista vertical. Opciones: A: 1 uno; B: 1 diez; C: 1 cien; D: 1 mil."
+      }
+    },
+    "nysed-2026-g4-mc-q18": {
+      "inputHash": "27e3550ada7af145f61e91d5c4ff3267ecd1d8bd80ef2a811951a9b561c1531f",
+      "description": {
+        "en": "Question 18. What fraction of a circle does a ray turn through when it creates an angle with a measure of 23 degrees? Choices: A: 23/180; B: 23/360; C: 46/180; D: 46/360.",
+        "es": "Pregunta 18. ¿Qué fracción de un círculo gira una semirrecta cuando crea un ángulo que mide 23 grados? Opciones: A: 23/180; B: 23/360; C: 46/180; D: 46/360."
+      }
+    },
+    "nysed-2026-g4-mc-q19": {
+      "inputHash": "da5d24c47a7236ee917a1b899561c8b331042d545da89b16704be4bba97e911a",
+      "description": {
+        "en": "Question 19. Matteo has a goal to complete a 750-piece puzzle over three days. The number of pieces he completed the first two days is described: Day 1, 252 pieces completed; Day 2, 155 pieces completed. Which is closest to the number of puzzle pieces Matteo still needs to complete on Day 3 to meet his goal? Choices: A: 250; B: 300; C: 350; D: 400.",
+        "es": "Pregunta 19. Matteo tiene el objetivo de completar un rompecabezas de 750 piezas en tres días. La cantidad de piezas que completó los primeros dos días se describe así: Día 1, 252 piezas completadas; Día 2, 155 piezas completadas. ¿Cuál es el número más cercano a la cantidad de piezas que Matteo todavía tiene que completar el Día 3 para cumplir con su objetivo? Opciones: A: 250; B: 300; C: 350; D: 400."
+      }
+    },
+    "nysed-2026-g4-mc-q20": {
+      "inputHash": "a83461fee17a78b09d3a1e7ecb14f88119259d706eb7525e32d5aeca34a917e6",
+      "description": {
+        "en": "Question 20. Four figures are shown. Figures J and M are rotated quadrilaterals with four right angles. Figure K is an upright quadrilateral with four equal-looking sides and four right angles. Figure L has vertical sides, a horizontal top, a slanted bottom, and only its two top angles are right angles. Which statement about the figures appears to be true? Choices: A: Figures J, K, L, and M are all rectangles; B: Figures M and J are the only rectangles; C: Figures M and K are the only rectangles; D: Figures J, K, and M are the only rectangles.",
+        "es": "Pregunta 20. Se muestran cuatro figuras. Las figuras J y M son cuadriláteros rotados con cuatro ángulos rectos. La figura K es un cuadrilátero vertical con cuatro lados que parecen iguales y cuatro ángulos rectos. La figura L tiene lados verticales, un lado superior horizontal, un lado inferior inclinado y solamente sus dos ángulos superiores son rectos. ¿Qué afirmación sobre las figuras parece ser verdadera? Opciones: A: Las figuras J, K, L y M son rectángulos; B: Las figuras M y J son los únicos rectángulos; C: Las figuras M y K son los únicos rectángulos; D: Las figuras J, K y M son los únicos rectángulos."
+      }
+    },
+    "nysed-2026-g4-mc-q21": {
+      "inputHash": "be09a01f33f0c8b35d53331e7ecee040f275c68f000eac458959c0debfe067d7",
+      "description": {
+        "en": "Question 21. Which expression is equivalent to 9 × 5/12? Choices: A: 14 × 1/12; B: 14 × 5/12; C: 45 × 1/12; D: 45 × 5/12.",
+        "es": "Pregunta 21. ¿Qué expresión es equivalente a 9 × 5/12? Opciones: A: 14 × 1/12; B: 14 × 5/12; C: 45 × 1/12; D: 45 × 5/12."
+      }
+    },
+    "nysed-2026-g4-mc-q23": {
+      "inputHash": "15bd4ee86ebdc5e93194b7781a4231615bc3b2552faa48099eb342a98685ebc5",
+      "description": {
+        "en": "Question 23. Jen and Kim are playing a game. The number of points they each score is described: Jen scores 12 points; Jen scores 4 times as many points as Kim. How many points does Kim score? Choices: A: 3; B: 8; C: 16; D: 48.",
+        "es": "Pregunta 23. Jen y Kim están jugando un juego. La cantidad de puntos que cada una anota se describe así: Jen anota 12 puntos; Jen anota 4 veces tantos puntos que Kim. ¿Cuántos puntos anota Kim? Opciones: A: 3; B: 8; C: 16; D: 48."
+      }
+    },
+    "nysed-2026-g4-mc-q24": {
+      "inputHash": "4e219096acfa719558ad155bfb78c15e23c9c31cc6aa0c00209712415ca4cb5b",
+      "description": {
+        "en": "Question 24. Two same-size circles are each divided into 5 equal sectors. In each circle, 4 of the 5 sectors are shaded and 1 is unshaded. Which expression represents the total value of the parts that are shaded? Choices: A: 1 × 1/5; B: 4 × 1/5; C: 1 × 4/5; D: 2 × 4/5.",
+        "es": "Pregunta 24. Dos círculos del mismo tamaño están divididos en 5 sectores iguales cada uno. En cada círculo, 4 de los 5 sectores están sombreados y 1 no está sombreado. ¿Qué expresión representa el valor total de las partes que están sombreadas? Opciones: A: 1 × 1/5; B: 4 × 1/5; C: 1 × 4/5; D: 2 × 4/5."
+      }
+    },
+    "nysed-2026-g4-mc-q25": {
+      "inputHash": "15ec67d82cd257c23f580fee75e1971a5d1704ae9c735eacdf0de9fcb11bb62e",
+      "description": {
+        "en": "Question 25. What is the value of the expression 10,317 × 3? Choices: A: 30,931; B: 30,941; C: 30,951; D: 30,961.",
+        "es": "Pregunta 25. ¿Cuál es el valor de la expresión 10,317 × 3? Opciones: A: 30,931; B: 30,941; C: 30,951; D: 30,961."
+      }
+    },
+    "nysed-2026-g4-mc-q26": {
+      "inputHash": "d01cb3bef8a484a650c1dd480a193c63c5fb79032e2c56ac7da2874d1cb6a25d",
+      "description": {
+        "en": "Question 26. The expression 8 3/10 − 3 7/10 is shown. What is the value of the expression? Choices: A: 4 3/10; B: 4 6/10; C: 5 4/10; D: 5 6/10.",
+        "es": "Pregunta 26. Se muestra la expresión 8 3/10 − 3 7/10. ¿Cuál es el valor de la expresión? Opciones: A: 4 3/10; B: 4 6/10; C: 5 4/10; D: 5 6/10."
+      }
+    },
+    "nysed-2026-g4-mc-q28": {
+      "inputHash": "cf099707940d884c277beeb3aae2e75a4b07c3867157646853bcf28fc9acfebc",
+      "description": {
+        "en": "Question 28. Angle ABC is a straight angle with ray BA extending horizontally left from B and ray BC extending horizontally right. Ray BE extends vertically upward from B, and ray BD extends diagonally upward and left between BA and BE. Which angle in the diagram is an obtuse angle? Choices: A: angle ABD; B: angle ABE; C: angle DBE; D: angle DBC.",
+        "es": "Pregunta 28. El ángulo ABC es un ángulo llano; la semirrecta BA se extiende horizontalmente a la izquierda desde B y la semirrecta BC, horizontalmente a la derecha. La semirrecta BE se extiende verticalmente hacia arriba desde B, y la semirrecta BD se extiende en diagonal hacia arriba y a la izquierda entre BA y BE. ¿Qué ángulo en el diagrama es un ángulo obtuso? Opciones: A: ángulo ABD; B: ángulo ABE; C: ángulo DBE; D: ángulo DBC."
+      }
+    },
+    "nysed-2026-g4-mc-q29": {
+      "inputHash": "60ac2fe9df69b7ad429f91e6fd860542fbed1667682ebd6e93b53364889f84cc",
+      "description": {
+        "en": "Question 29. What is the value of the expression 2,913 ÷ 8? The letter r means remainder in every choice. Choices: A: 363 r9; B: 364 r1; C: 373 r9; D: 374 r1.",
+        "es": "Pregunta 29. ¿Cuál es el valor de la expresión 2,913 ÷ 8? La letra r significa residuo en cada opción. Opciones: A: 363 r9; B: 364 r1; C: 373 r9; D: 374 r1."
+      }
+    },
+    "nysed-2026-g4-mc-q30": {
+      "inputHash": "69703ab30feb4c51ab58ce510b3674f916d1ca0592981785e2c2d9abad4660f1",
+      "description": {
+        "en": "Question 30. Four same-size circles are each divided into 8 equal sectors. All 8 sectors are shaded in each of the first three circles. In the fourth circle, 3 of the 8 sectors are shaded. What is the sum of the fractions represented by the circles? Choices: A: 8/32; B: 8/27; C: 27/8; D: 32/8.",
+        "es": "Pregunta 30. Cuatro círculos del mismo tamaño están divididos en 8 sectores iguales cada uno. Los 8 sectores están sombreados en cada uno de los primeros tres círculos. En el cuarto círculo, 3 de los 8 sectores están sombreados. ¿Cuál es la suma de las fracciones representadas por los círculos? Opciones: A: 8/32; B: 8/27; C: 27/8; D: 32/8."
+      }
+    },
+    "nysed-2026-g4-mc-q31": {
+      "inputHash": "c709f7cd7f5b98c112eeaced17071e16fc37443efec612a5a2b230ff26ceb5cf",
+      "description": {
+        "en": "Question 31. Which fraction is equivalent to 3/5? The four fraction choices are listed vertically. Choices: A: 2/5; B: 6/5; C: 3/10; D: 6/10.",
+        "es": "Pregunta 31. ¿Qué fracción es equivalente a 3/5? Las cuatro opciones de fracción aparecen en una lista vertical. Opciones: A: 2/5; B: 6/5; C: 3/10; D: 6/10."
+      }
+    },
+    "nysed-2026-g4-mc-q32": {
+      "inputHash": "4a64e5de3215f2033d49d994d20ae2337b1ab6ae757a217855f2fbd4033dacad",
+      "description": {
+        "en": "Question 32. An area model represents 54 × 18. Its column widths are 50 and 4, and its row heights are 10 and 8. The four partial-product cells contain 500 in the 50-by-10 cell, 40 in the 4-by-10 cell, C in the 50-by-8 cell, and 32 in the 4-by-8 cell. What is the value of C? Choices: A: 40; B: 45; C: 400; D: 450.",
+        "es": "Pregunta 32. Un modelo de área representa 54 × 18. Los anchos de las columnas son 50 y 4, y las alturas de las filas son 10 y 8. Las cuatro celdas de productos parciales contienen 500 en la celda de 50 por 10, 40 en la de 4 por 10, C en la de 50 por 8 y 32 en la de 4 por 8. ¿Cuál es el valor de C? Opciones: A: 40; B: 45; C: 400; D: 450."
+      }
+    },
+    "nysed-2026-g4-mc-q33": {
+      "inputHash": "10c1ade9baed00fca809c7e988002939d0444f284fac09bcb0ffeacd77a48ae7",
+      "description": {
+        "en": "Question 33. The equation 28 = 4 × 7 is shown. Which statement represents this equation? Choices: A: twenty-eight is four less than seven; B: four times as many as twenty-eight is seven; C: twenty-eight is seven more than four; D: four times as many as seven is twenty-eight.",
+        "es": "Pregunta 33. Se muestra la ecuación 28 = 4 × 7. ¿Qué afirmación representa esta ecuación? Opciones: A: veintiocho es cuatro menos que siete; B: cuatro veces tantos como veintiocho es siete; C: veintiocho es siete más que cuatro; D: cuatro veces tantos como siete es veintiocho."
+      }
+    },
+    "nysed-2026-g4-mc-q34": {
+      "inputHash": "55e13578d2eaa3810af4cb446a41a5c717f89e86e4ca426628fef91c613e8a97",
+      "description": {
+        "en": "Question 34. A connected figure has these segments: AB is vertical; AG is horizontal; GF is vertical; FE slopes down and right; ED slopes down and left; DC is vertical; and CB is horizontal. Which two line segments in the figure appear to be perpendicular to each other? Choices: A: line segments AG and BC; B: line segments FG and EF; C: line segments BC and CD; D: line segments CD and FG.",
+        "es": "Pregunta 34. Una figura conectada tiene estos segmentos: AB es vertical; AG es horizontal; GF es vertical; FE se inclina hacia abajo y a la derecha; ED se inclina hacia abajo y a la izquierda; DC es vertical; y CB es horizontal. ¿Cuáles son los dos segmentos lineales de la figura que parecen ser perpendiculares entre sí? Opciones: A: segmentos lineales AG y BC; B: segmentos lineales FG y EF; C: segmentos lineales BC y CD; D: segmentos lineales CD y FG."
+      }
+    },
+    "nysed-2026-g4-mc-q35": {
+      "inputHash": "dc04abee83d85e11ff278913e13bca99bd378f09ccbe63526828f727b40431b9",
+      "description": {
+        "en": "Question 35. What is the value of the expression 26,908 ÷ 7? Four numerical answer choices are listed vertically. Choices: A: 3,804; B: 3,844; C: 4,804; D: 4,844.",
+        "es": "Pregunta 35. ¿Cuál es el valor de la expresión 26,908 ÷ 7? Las cuatro opciones numéricas aparecen en una lista vertical. Opciones: A: 3,804; B: 3,844; C: 4,804; D: 4,844."
+      }
+    }
+  }
+}

@@ -122,7 +122,7 @@ export function generateProblem(skill: Skill, recentOperands: string[] = []): Ma
       answer = a - b; numCarries = 0; numBorrows = countBorrows(a, b)
 
     } else if (op === 'multiplication') {
-      if (tag === 'multiplication_tables') { a = rand(2, 12); b = rand(2, 12) }
+      if (tag === 'multiplication_tables') { a = rand(1, 12); b = rand(1, 12) }
       else if (digits === 2) { a = rand(11, 25); b = rand(2, 9) }
       else { a = rand(2, 9); b = rand(2, 9) }
       answer = a * b; numCarries = 0; numBorrows = 0

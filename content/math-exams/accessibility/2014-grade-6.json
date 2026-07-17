@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2014-grade-6-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2014-g6-mc-q1": {
+      "inputHash": "6a5773740d51e8474f5838674b77f654751bd9c7cadcbdec047158eb722a8d18",
+      "description": {
+        "en": "Question 1. What is the value of the expression below? 3⁴ + 9. Choices: A: 21. B: 39. C: 43. D: 90."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3⁴ + 9",
+          "21",
+          "39",
+          "43",
+          "90",
+          "A: 21",
+          "B: 39",
+          "C: 43",
+          "D: 90",
+          "3⁴"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q2": {
+      "inputHash": "c57c8ebed279a50ad8b4a6bd4782385afe7e2825790e7224ec2a5c04550011b0",
+      "description": {
+        "en": "Question 2. Paul bought a package of 6 spiral notebooks for a total cost of $13.50. Which equation represents p, the cost, in dollars, of each notebook? Choices: A: p = 13.50 − 6. B: p = 13.50 × 6. C: p = 13.50 + 6. D: p = 13.50 ÷ 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "$13.50",
+          "p = 13.50 − 6",
+          "p = 13.50 × 6",
+          "p = 13.50 + 6",
+          "p = 13.50 ÷ 6",
+          "A: p = 13.50 − 6",
+          "B: p = 13.50 × 6",
+          "C: p = 13.50 + 6",
+          "D: p = 13.50 ÷ 6"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q5": {
+      "inputHash": "a187daa660f60df163b075bd1f5734a37d2c88c6b0a792d751a98c1cb5c2fd97",
+      "description": {
+        "en": "Question 5. The set of numbers 1, 7, 11, and 36 contains values for m. What value of m makes the equation below true? 4m + 8 = 36. Choices: A: 1. B: 7. C: 11. D: 36."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1, 7, 11, and 36",
+          "4m + 8 = 36",
+          "1",
+          "7",
+          "11",
+          "36",
+          "A: 1",
+          "B: 7",
+          "C: 11",
+          "D: 36"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q10": {
+      "inputHash": "91c528bcbbe19ca2ecfaf1f9fe84eb046a9c1a362719942351834aa62e1750da",
+      "description": {
+        "en": "Question 10. What is the value of the expression below when c = 5 and d = 4? 6c² − 5d + 8. Choices: A: 48. B: 79. C: 138. D: 888."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "c = 5",
+          "d = 4",
+          "6c² − 5d + 8",
+          "48",
+          "79",
+          "138",
+          "888",
+          "A: 48",
+          "B: 79",
+          "C: 138",
+          "D: 888"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q11": {
+      "inputHash": "61367c7103dfcf1827107f17a76f6ffa56ec9dbc18fba031195ce1ce8127598b",
+      "description": {
+        "en": "Question 11. Which expression is equivalent to 16a + 24b? Choices: A: 4(4a + 20b). B: 8(2a + 3b). C: 4a(4 + 6b). D: 8ab(2 + 3)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16a + 24b",
+          "4(4a + 20b)",
+          "8(2a + 3b)",
+          "4a(4 + 6b)",
+          "8ab(2 + 3)",
+          "A: 4(4a + 20b)",
+          "B: 8(2a + 3b)",
+          "C: 4a(4 + 6b)",
+          "D: 8ab(2 + 3)",
+          "(4a + 20b)",
+          "(2a + 3b)",
+          "(4 + 6b)",
+          "(2 + 3)"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q12": {
+      "inputHash": "b3aa543e9251d3fcae6a78df36764632df4ed575eafc3efb329fd4cefbf59a66",
+      "description": {
+        "en": "Question 12. Felicity babysat 2 hours each night for 10 nights. She earned a total of $180 babysitting. Felicity wants to calculate her hourly rate. How much did Felicity earn per hour babysitting? Choices: A: $9. B: $15. C: $18. D: $20."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 hours",
+          "10 nights",
+          "$180",
+          "$9",
+          "$15",
+          "$18",
+          "$20",
+          "A: $9",
+          "B: $15",
+          "C: $18",
+          "D: $20"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q18": {
+      "inputHash": "83f418ad4fada79f8ece45ed12138c01bc86d46d35ea703385f5f2138f6d4c8f",
+      "description": {
+        "en": "Question 18. Which expression is equivalent to 3(6m) + m? Choices: A: 19m. B: 21m. C: 7m + 3. D: 18m + 6m²."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3(6m) + m",
+          "19m",
+          "21m",
+          "7m + 3",
+          "18m + 6m²",
+          "A: 19m",
+          "B: 21m",
+          "C: 7m + 3",
+          "D: 18m + 6m²",
+          "(6m)"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q20": {
+      "inputHash": "0785a1886fafe17337e09ab6751816c4de7060e228b3881b80b0f6c4068b3381",
+      "description": {
+        "en": "Question 20. Machines S and T were both cleaned this week. Machine S is cleaned every 12 weeks. Machine T is cleaned every 8 weeks. What is the fewest number of weeks that will pass before both machines are cleaned again in the same week? Choices: A: 16. B: 24. C: 36. D: 48."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "S",
+          "T",
+          "12 weeks",
+          "8 weeks",
+          "16",
+          "24",
+          "36",
+          "48",
+          "A: 16",
+          "B: 24",
+          "C: 36",
+          "D: 48"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q23": {
+      "inputHash": "20cc9286a97e43e3721eac15d7dab1706c12feb2d1d0709e1870c054d48e1d96",
+      "description": {
+        "en": "Question 23. Nadia bought 5 tickets to attend a spaghetti supper fundraiser at her school. The equation 5x = 32.50 can be used to find x, the cost of each ticket in dollars. Which equation represents the cost of each ticket? Choices: A: x = 32.50/5. B: x = 32.50(5). C: x = 32.50 − 5. D: x = 32.50 + 5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5x = 32.50",
+          "x = 32.50/5",
+          "x = 32.50(5)",
+          "x = 32.50 − 5",
+          "x = 32.50 + 5",
+          "A: x = 32.50/5",
+          "B: x = 32.50(5)",
+          "C: x = 32.50 − 5",
+          "D: x = 32.50 + 5",
+          "50/5",
+          "(5)"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q25": {
+      "inputHash": "df9896d8ffdb4b7e26d0b37dc32068082f60f2a7d15bc6fef06090c031b115cd",
+      "description": {
+        "en": "Question 25. The area of a rectangular city park is 25/54 square miles. The length of the park is 5/9 mile. What is the width, in miles, of the park? Choices: A: 4/9. B: 5/6. C: 1 1/54. D: 1 1/5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25/54",
+          "5/9",
+          "4/9",
+          "5/6",
+          "1 1/54",
+          "1 1/5",
+          "A: 4/9",
+          "B: 5/6",
+          "C: 1 1/54",
+          "D: 1 1/5"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q26": {
+      "inputHash": "e88c7da477a8fa63ad8f4c3c14aced53c9e462346603585473ca82740e00569b",
+      "description": {
+        "en": "Question 26. The table below shows how much money a grocery store receives for selling different amounts of asparagus. A table titled “ASPARAGUS SALES” has columns “Number of Pounds” and “Total Sales.” Its rows are: 4 pounds, $10; 6 pounds, $15; 8 pounds, $20; 10 pounds, unknown; 12 pounds, unknown. If the unit rate is constant, what are the total sales for 12 pounds of asparagus? Choices: A: $22.50. B: $25.00. C: $30.00. D: $32.50."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 pounds, $10",
+          "6 pounds, $15",
+          "8 pounds, $20",
+          "10 pounds, unknown",
+          "12 pounds, unknown",
+          "$22.50",
+          "$25.00",
+          "$30.00",
+          "$32.50",
+          "A: $22.50",
+          "B: $25.00",
+          "C: $30.00",
+          "D: $32.50"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q27": {
+      "inputHash": "65a78525ec745dbb113a6e9b641e55bccf541f735b910a60344e01c42dabfb7e",
+      "description": {
+        "en": "Question 27. Point Q is plotted on a coordinate grid at (−3, −2), three units left of the y-axis and two units below the x-axis. The x- and y-axes intersect at the origin, each grid interval represents 1 unit, and the labeled values on each axis run from −5 through 5. Which statement correctly describes the relationship between the point (−3, 2) and point Q? Choices: A: It is a reflection across the x-axis. B: It is a reflection across the y-axis. C: They are 6 units apart. D: They are 2 units apart."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−3, −2)",
+          "1 unit",
+          "−5 through 5",
+          "(−3, 2)",
+          "6 units apart",
+          "2 units apart",
+          "A: It is a reflection across the x-axis",
+          "B: It is a reflection across the y-axis",
+          "C: They are 6 units apart",
+          "D: They are 2 units apart"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q28": {
+      "inputHash": "ae3cbe855a441a4b3ce7d4765338840bddb35b0a90a1b4fce0614b59fdd6fd4b",
+      "description": {
+        "en": "Question 28. What is the value of the expression below when z = 7? The expression is 3z − 3. Choices: A: 12. B: 18. C: 21. D: 34."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "z = 7",
+          "3z − 3",
+          "12",
+          "18",
+          "21",
+          "34",
+          "A: 12",
+          "B: 18",
+          "C: 21",
+          "D: 34"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q29": {
+      "inputHash": "0eed5219213e70071a2a82426f66b9b08879427d87c7305d32fa7b0b973e64b4",
+      "description": {
+        "en": "Question 29. Which equation is true when n = 4? Choices: A: 2n = 6. B: n + 3 = 7. C: 9 − n = 13. D: n/12 = 3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "n = 4",
+          "2n = 6",
+          "n + 3 = 7",
+          "9 − n = 13",
+          "n/12 = 3",
+          "A: 2n = 6",
+          "B: n + 3 = 7",
+          "C: 9 − n = 13",
+          "D: n/12 = 3"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q30": {
+      "inputHash": "6bde6436d32dce5951d3ebf2366435343526819e75efae5198124758e969a3a7",
+      "description": {
+        "en": "Question 30. What coordinates best represent the location of point K on the coordinate plane below? The x- and y-axes intersect at the origin. Both axes are labeled at intervals of 2 from −10 through 10, and the grid lines are spaced every 2 units. Point K lies in Quadrant III at x = −7, halfway between x = −8 and x = −6, and at y = −4. Choices: A: (−7, −4). B: (−7, 4). C: (−4, −7). D: (−4, 7)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10 through 10",
+          "2 units",
+          "x = −7",
+          "x = −8",
+          "x = −6",
+          "y = −4",
+          "(−7, −4)",
+          "(−7, 4)",
+          "(−4, −7)",
+          "(−4, 7)",
+          "A: (−7, −4)",
+          "B: (−7, 4)",
+          "C: (−4, −7)",
+          "D: (−4, 7)"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q31": {
+      "inputHash": "498cf66080aeeceae41d3638d74cee3ce2bd1fccdce1ce386e21c98fa0684500",
+      "description": {
+        "en": "Question 31. In Ms. Perron’s class, 75% of the students are boys. There are 18 boys in the class. What is the total number of students in Ms. Perron’s class? Choices: A: 6. B: 14. C: 24. D: 57."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "75%",
+          "18",
+          "6",
+          "14",
+          "24",
+          "57",
+          "A: 6",
+          "B: 14",
+          "C: 24",
+          "D: 57"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q36": {
+      "inputHash": "4e4a2c69f71e0e7322108e993ab96ec4e328bd9e00f0974956c7818d6fad900b",
+      "description": {
+        "en": "Question 36. Which expression is equivalent to 5(d + 1)? Choices: A: 5d + 5. B: 5d + 1. C: d + 5. D: d + 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5(d + 1)",
+          "5d + 5",
+          "5d + 1",
+          "d + 5",
+          "d + 6",
+          "A: 5d + 5",
+          "B: 5d + 1",
+          "C: d + 5",
+          "D: d + 6",
+          "(d + 1)"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q37": {
+      "inputHash": "3d4a698b23eac2ff4c8fc9262e8b9c6be126554d154d0eb8e8a88a9691438c95",
+      "description": {
+        "en": "Question 37. A net of a square pyramid consists of a central square with one triangular face attached to each of its four sides. Each side of the square is 5.1 cm. The perpendicular height of each triangular face, from the midpoint of its base to its opposite vertex, is 5.95 cm; a right-angle marker indicates that this height is perpendicular to the base. What is the surface area, in square centimeters, of the pyramid? Choices: A: 60.7. B: 86.7. C: 121.4. D: 147.4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5.1 cm",
+          "5.95 cm",
+          "60.7",
+          "86.7",
+          "121.4",
+          "147.4",
+          "A: 60.7",
+          "B: 86.7",
+          "C: 121.4",
+          "D: 147.4"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q39": {
+      "inputHash": "c174a9c817882e40f3c8046f76fdf5a69f6201f9e707f6a4fa57cb05c2108731",
+      "description": {
+        "en": "Question 39. Which expression is equivalent to 8x − 2y + x + x? Choices: A: 4x. B: 8x. C: 6x − 2y. D: 10x − 2y."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8x − 2y + x + x",
+          "4x",
+          "8x",
+          "6x − 2y",
+          "10x − 2y",
+          "A: 4x",
+          "B: 8x",
+          "C: 6x − 2y",
+          "D: 10x − 2y"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q40": {
+      "inputHash": "d667551b53c7b2a30922473396072ba9b39cd08bfb86571dfec28bc5862a6ca9",
+      "description": {
+        "en": "Question 40. Which situation can be represented by the expression 1.3x? Choices: A: the total cost of an item that is x dollars more than $1.30. B: the area of a rectangle with side lengths 1.3 and x. C: the amount of change when $1.30 is used to pay for an item costing x dollars. D: the number of square feet in each lot when 1.3 acres is partitioned into x equal sections."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1.3x",
+          "x",
+          "$1.30",
+          "1.3",
+          "A: the total cost of an item that is x dollars more than $1.30",
+          "B: the area of a rectangle with side lengths 1.3 and x",
+          "C: the amount of change when $1.30 is used to pay for an item costing x dollars",
+          "D: the number of square feet in each lot when 1.3 acres is partitioned into x equal sections"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q41": {
+      "inputHash": "bbd26453c2fefabddb4b29c8bf0a694777a643e5fab61a1ae10efb49531f0c12",
+      "description": {
+        "en": "Question 41. Last year the girls’ basketball team had 8 fifth-grade students and 7 sixth-grade students. What was the ratio of sixth-grade students to fifth-grade students on the team? Choices: A: 8 : 15. B: 8 : 7. C: 7 : 8. D: 15 : 8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8",
+          "7",
+          "8 : 15",
+          "8 : 7",
+          "7 : 8",
+          "15 : 8",
+          "A: 8 : 15",
+          "B: 8 : 7",
+          "C: 7 : 8",
+          "D: 15 : 8"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q42": {
+      "inputHash": "c14d62a0a23d4bfa12e5157e2cddd2ba5bf3214e83846eb04dcc3d4ac5f40c80",
+      "description": {
+        "en": "Question 42. Peter wants to plot the point (2, 3) on a coordinate plane. Which statement describes how to plot this point starting from the origin? Choices: A: Move 2 units to the left and then 3 units down. B: Move 3 units to the left and then 2 units down. C: Move 2 units to the right and then 3 units up. D: Move 3 units to the right and then 2 units up."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 3)",
+          "2 units to the left",
+          "3 units down",
+          "3 units to the left",
+          "2 units down",
+          "2 units to the right",
+          "3 units up",
+          "3 units to the right",
+          "2 units up",
+          "A: Move 2 units to the left and then 3 units down",
+          "B: Move 3 units to the left and then 2 units down",
+          "C: Move 2 units to the right and then 3 units up",
+          "D: Move 3 units to the right and then 2 units up"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q44": {
+      "inputHash": "a04b7a19cd9195bd6edcb5bd8ca7e63152f786bd2b6d0c410812b050082fef18",
+      "description": {
+        "en": "Question 44. What is the area, in square centimeters, of a triangle with a horizontal base of 5.8 cm and a perpendicular height of 2.4 cm? The height extends from the top vertex to the base, and a right-angle marker indicates that it is perpendicular to the base. Choices: A: 6.96. B: 10.6. C: 13.92. D: 17.4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5.8 cm",
+          "2.4 cm",
+          "6.96",
+          "10.6",
+          "13.92",
+          "17.4",
+          "A: 6.96",
+          "B: 10.6",
+          "C: 13.92",
+          "D: 17.4"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q47": {
+      "inputHash": "24fa76098d4e5651348aa4e9ed1fd13ef616b66246a72cc6be49a56a2e5abeae",
+      "description": {
+        "en": "Question 47. Which expression is modeled by the following diagram? A horizontal number line has arrows at both ends, is labeled 0, 1, 2, 3, and 4, and is divided into fourths between consecutive whole numbers. Beneath it, one bar represents 3 1/4. A second bar of the same total length is partitioned into four consecutive sections labeled 3/4 and one final section labeled 1/4. Choices: A: 3 1/4 ÷ 3/4. B: 3/4 ÷ 3 1/4. C: 3 ÷ 1/4. D: 1/4 ÷ 3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "3 1/4",
+          "3/4",
+          "1/4",
+          "3 1/4 ÷ 3/4",
+          "3/4 ÷ 3 1/4",
+          "3 ÷ 1/4",
+          "1/4 ÷ 3",
+          "A: 3 1/4 ÷ 3/4",
+          "B: 3/4 ÷ 3 1/4",
+          "C: 3 ÷ 1/4",
+          "D: 1/4 ÷ 3"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q48": {
+      "inputHash": "cda03ba9669214a85d2569c5c1d652eb9e20cdee66c86654f389eccacaf7a2e8",
+      "description": {
+        "en": "Question 48. Points F, G, and H are represented on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y. Both axes begin at 0, and the labeled values 1 through 7 increase by 1. Point F is at (0, 0), point G is at (4, 2), and point H is at (6, 3). Which statement is true for each of the points? Choices: A: The x-coordinate is 1/2 the y-coordinate. B: The x-coordinate is 2 times the y-coordinate. C: The x-coordinate is 2 more than the y-coordinate. D: The x-coordinate is 3 more than the y-coordinate."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(4, 2)",
+          "(6, 3)",
+          "1/2",
+          "2 times",
+          "2 more",
+          "3 more",
+          "A: The x-coordinate is 1/2 the y-coordinate",
+          "B: The x-coordinate is 2 times the y-coordinate",
+          "C: The x-coordinate is 2 more than the y-coordinate",
+          "D: The x-coordinate is 3 more than the y-coordinate"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q49": {
+      "inputHash": "2d961f168944568c056ac71684f47b72c8be28fa2cf4476dffc3d2438d4a7e49",
+      "description": {
+        "en": "Question 49. The coordinates of the vertices of a rectangle are (−2, 3), (4, 3), (4, −4), and (−2, −4). What are the dimensions of the rectangle? Choices: A: 1 unit by 2 units B: 1 unit by 6 units C: 7 units by 2 units D: 7 units by 6 units"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−2, 3)",
+          "(4, 3)",
+          "(4, −4)",
+          "(−2, −4)",
+          "1 unit by 2 units",
+          "1 unit by 6 units",
+          "7 units by 2 units",
+          "7 units by 6 units",
+          "A: 1 unit by 2 units",
+          "B: 1 unit by 6 units",
+          "C: 7 units by 2 units",
+          "D: 7 units by 6 units"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q51": {
+      "inputHash": "c8bce38c6d34a83d4b09c6496e938021bd74c621aad063a2dec9e84e444bed3a",
+      "description": {
+        "en": "Question 51. Lars wrote rules for two patterns. A two-column table has the headings “Pattern for x-values” and “Pattern for y-values.” For the x-values, the starting number is 1 and the rule is: Add 2. For the y-values, the starting number is 1 and the rule is: Multiply by 2. Lars then wrote ordered pairs (x, y) using the patterns above. Which ordered pair could Lars have written? Choices: A: (2, 3) B: (3, 2) C: (3, 6) D: (5, 5)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1",
+          "Add 2",
+          "Multiply by 2",
+          "(x, y)",
+          "(2, 3)",
+          "(3, 2)",
+          "(3, 6)",
+          "(5, 5)",
+          "A: (2, 3)",
+          "B: (3, 2)",
+          "C: (3, 6)",
+          "D: (5, 5)"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q52": {
+      "inputHash": "818caf11f6f4e3c330cea62a858b06ecad174a30a8c13b6db0a2585909ce7bf3",
+      "description": {
+        "en": "Question 52. Noah wants to make a kite out of cloth. The kite is drawn as a four-sided figure with perpendicular dashed diagonals that intersect at a right angle. The horizontal diagonal is divided at the intersection into a left segment of 42.7 cm and a right segment of 22.5 cm. The vertical diagonal is divided at the intersection into an upper segment of 16.3 cm and a lower segment of 16.3 cm. He wants to determine how much cloth he needs. What is the area, rounded to the nearest square centimeter, of Noah’s kite? Choices: A: 531 B: 1,063 C: 1,430 D: 2,126"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "42.7 cm",
+          "22.5 cm",
+          "16.3 cm",
+          "531",
+          "1,063",
+          "1,430",
+          "2,126",
+          "A: 531",
+          "B: 1,063",
+          "C: 1,430",
+          "D: 2,126"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q54": {
+      "inputHash": "8ea67ab721172cfe330eb206099595ea17a569fe91a2c7bf61a9587aaa6b8360",
+      "description": {
+        "en": "Question 54. Amy, Bart, and Candace each went on a whale-watching trip. On the coordinate plane, x represents the number of hours they spent whale watching and y represents the number of whales seen. The graph is titled “Whales Seen on Trip.” The horizontal axis is labeled “Hours Spent Watching,” and the vertical axis is labeled “Number of Whales.” Both axes begin at 0, with grid lines at each whole number; the labeled values run from 1 through 7. Amy is plotted at (2, 4), Bart is plotted at (3, 4), and Candace is plotted at (2, 2). Which statement is true based on the points plotted on the grid? Choices: A: Bart saw 3 whales in 4 hours. B: Bart saw 1 more whale than Amy. C: Amy and Bart saw the same number of whales. D: Amy and Candace saw the same number of whales."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 4)",
+          "(3, 4)",
+          "(2, 2)",
+          "3 whales in 4 hours",
+          "1 more whale",
+          "same number of whales",
+          "A: Bart saw 3 whales in 4 hours",
+          "B: Bart saw 1 more whale than Amy",
+          "C: Amy and Bart saw the same number of whales",
+          "D: Amy and Candace saw the same number of whales"
+        ]
+      }
+    },
+    "nysed-2014-g6-mc-q55": {
+      "inputHash": "1057ebabd59f48f18a4bb49c215ccfed618d8df46e1a8e97361efb7d878afe63",
+      "description": {
+        "en": "Question 55. The base of a right rectangular prism has an area of 173.6 square centimeters and a height of 9 centimeters. What is the volume, in cubic centimeters, of the right rectangular prism? Choices: A: 182.6 B: 781.2 C: 14,061.6 D: 1,562.4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "173.6 square centimeters",
+          "9 centimeters",
+          "cubic centimeters",
+          "182.6",
+          "781.2",
+          "14,061.6",
+          "1,562.4",
+          "A: 182.6",
+          "B: 781.2",
+          "C: 14,061.6",
+          "D: 1,562.4"
+        ]
+      }
+    }
+  }
+}

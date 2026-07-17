@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2015-grade-6-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2015-g6-mc-q1": {
+      "inputHash": "5ca860fb04c26c51d9a40b69e664e2239b9b2faf559a21fa0a439d27258ad2ec",
+      "description": {
+        "en": "Question 1. What is the x-coordinate of point P on the coordinate grid? The coordinate plane has horizontal x- and vertical y-axes, with grid lines every 1/2 unit. The labeled integer values on each axis are −2, −1, 1, and 2. Point P is located at (−1 1/2, 1/2). Choices: A: −1 1/2. B: −1/2. C: 1/2. D: 1 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−1 1/2, 1/2)",
+          "−1 1/2",
+          "−1/2",
+          "1/2",
+          "1 1/2",
+          "A: −1 1/2",
+          "B: −1/2",
+          "C: 1/2",
+          "D: 1 1/2"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q2": {
+      "inputHash": "31a300929281b3bb7543c9f56a8472b7d02c550571353a7295927c5d9133f756",
+      "description": {
+        "en": "Question 2. Arnold’s entire workout consisted of 10 minutes of warm-up exercises, 25 minutes of lifting weights, and 15 minutes on the treadmill. What was the ratio of the number of minutes he lifted weights to the total number of minutes of his entire workout? Choices: A: 1 : 1. B: 1 : 2. C: 3 : 10. D: 5 : 8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 minutes",
+          "25 minutes",
+          "15 minutes",
+          "1 : 1",
+          "1 : 2",
+          "3 : 10",
+          "5 : 8",
+          "A: 1 : 1",
+          "B: 1 : 2",
+          "C: 3 : 10",
+          "D: 5 : 8"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q3": {
+      "inputHash": "c85f5b0fbb261c43795eab24414918d7b0d57ec3c9ac98a52a5af974b175161f",
+      "description": {
+        "en": "Question 3. A rectangular prism is drawn as a tall box whose height is greater than the side lengths of its rectangular base. Hidden back and bottom edges are dashed. Which figure represents the net of the rectangular prism? Choices: A: A horizontal strip of four tall rectangles with alternating narrow and wide widths; two congruent small base rectangles are attached above and below the same narrow rectangle in the strip. B: A horizontal strip made of one narrow tall rectangle between two wide tall rectangles; congruent narrow rectangles extend above and below the central rectangle, forming a vertical column. C: A horizontal strip of four short rectangles with alternating wide and narrow widths; two congruent tall rectangles are attached above and below the same narrow rectangle in the strip. D: A cross made from a small central rectangle, tall narrow rectangles directly above and below it, and short wide rectangles directly to its left and right."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "four tall rectangles",
+          "two congruent small base rectangles",
+          "one narrow tall rectangle between two wide tall rectangles",
+          "four short rectangles",
+          "two congruent tall rectangles",
+          "small central rectangle",
+          "A: A horizontal strip of four tall rectangles with alternating narrow and wide widths; two congruent small base rectangles are attached above and below the same narrow rectangle in the strip",
+          "B: A horizontal strip made of one narrow tall rectangle between two wide tall rectangles; congruent narrow rectangles extend above and below the central rectangle, forming a vertical column",
+          "C: A horizontal strip of four short rectangles with alternating wide and narrow widths; two congruent tall rectangles are attached above and below the same narrow rectangle in the strip",
+          "D: A cross made from a small central rectangle, tall narrow rectangles directly above and below it, and short wide rectangles directly to its left and right"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q4": {
+      "inputHash": "661af03fd3aaff6d9e978b401318d1c1bddaaa82dae1236b03d61d9e5c7b554b",
+      "description": {
+        "en": "Question 4. Wyatt hiked 6 miles in 2 hours. At this same rate, what is the total number of miles Wyatt could hike in 9 hours? Choices: A: 3. B: 7. C: 21. D: 27."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 miles",
+          "2 hours",
+          "9 hours",
+          "3",
+          "7",
+          "21",
+          "27",
+          "A: 3",
+          "B: 7",
+          "C: 21",
+          "D: 27"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q5": {
+      "inputHash": "d5b44df889a32b26420d466fa8d1d647ebcbb34aad0893cfc8ed0085af35bfe5",
+      "description": {
+        "en": "Question 5. A punch recipe requires 2 cups of cranberry juice to make 3 gallons of punch. Using the same recipe, what is the amount of cranberry juice needed for 1 gallon of punch? Choices: A: 3 cups. B: 1 1/2 cups. C: 1 cup. D: 2/3 cup."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 cups",
+          "3 gallons",
+          "1 gallon",
+          "3 cups",
+          "1 1/2 cups",
+          "1 cup",
+          "2/3 cup",
+          "A: 3 cups",
+          "B: 1 1/2 cups",
+          "C: 1 cup",
+          "D: 2/3 cup",
+          "1 1/2",
+          "2/3"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q6": {
+      "inputHash": "3b9cb49348f60a87b64901ac68d0f35924276831ae1237e73ef20c03479a77e4",
+      "description": {
+        "en": "Question 6. Omar has 2 3/4 cups of dough to make dumplings. If he uses 3/16 cup of dough for each dumpling, how many whole dumplings can Omar make? Choices: A: 13. B: 14. C: 15. D: 16."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 3/4 cups",
+          "3/16 cup",
+          "13",
+          "14",
+          "15",
+          "16",
+          "A: 13",
+          "B: 14",
+          "C: 15",
+          "D: 16",
+          "2 3/4",
+          "3/16"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q7": {
+      "inputHash": "23a3f51d6fdf1297bc65fc0c0b9b4872b358ccc91271100bee91b527e0ca4aa5",
+      "description": {
+        "en": "Question 7. What is the solution of the equation below? x + 8.63 = 11.001. Choices: A: x = 19.631. B: x = 10.138. C: x = 3.471. D: x = 2.371."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x + 8.63 = 11.001",
+          "x = 19.631",
+          "x = 10.138",
+          "x = 3.471",
+          "x = 2.371",
+          "A: x = 19.631",
+          "B: x = 10.138",
+          "C: x = 3.471",
+          "D: x = 2.371"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q8": {
+      "inputHash": "364a2d846d9c5680235da356afde1951d438b40199fd300d81e7d6a61158f22b",
+      "description": {
+        "en": "Question 8. A high-speed elevator can rise 480 feet in 30 seconds. Which expression represents the rate, in feet per minute, of the elevator? Choices: A: 480 × 30. B: 480 ÷ 30. C: 480 × 2. D: 480 ÷ 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "480 feet",
+          "30 seconds",
+          "feet per minute",
+          "480 × 30",
+          "480 ÷ 30",
+          "480 × 2",
+          "480 ÷ 2",
+          "A: 480 × 30",
+          "B: 480 ÷ 30",
+          "C: 480 × 2",
+          "D: 480 ÷ 2"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q9": {
+      "inputHash": "67d89ea2179e1ab838654872c308ab9ffbaf678824c525d7dba13024607c0435",
+      "description": {
+        "en": "Question 9. Erica drew a parallelogram. Its horizontal base is 5 1/4 in., its slanted left side is 4 1/2 in., and its perpendicular height is 4 1/5 in. The height is represented by a vertical dashed segment from the upper-right vertex to the base, with a right-angle marker where it meets the base. Which expression can Erica use to find the area of the parallelogram? Choices: A: 5 1/4 × 4 1/5. B: 1/2(5 1/4 × 4 1/5). C: 2 × (5 1/4 + 4 1/2). D: 5 1/4 × 4 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 1/4 in",
+          "4 1/2 in",
+          "4 1/5 in",
+          "5 1/4 × 4 1/5",
+          "1/2(5 1/4 × 4 1/5)",
+          "2 × (5 1/4 + 4 1/2)",
+          "5 1/4 × 4 1/2",
+          "A: 5 1/4 × 4 1/5",
+          "B: 1/2(5 1/4 × 4 1/5)",
+          "C: 2 × (5 1/4 + 4 1/2)",
+          "D: 5 1/4 × 4 1/2",
+          "5 1/4",
+          "4 1/2",
+          "4 1/5",
+          "1/2",
+          "(5 1/4 × 4 1/5)",
+          "(5 1/4 + 4 1/2)"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q10": {
+      "inputHash": "8930269a1bf063ff15c09cdf5e509859a706bc82d6ad4be1809534ae6414f7b3",
+      "description": {
+        "en": "Question 10. What is the value of 5/6 ÷ 3/7? Choices: A: 15/42. B: 18/35. C: 35/18. D: 42/15."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5/6 ÷ 3/7",
+          "15/42",
+          "18/35",
+          "35/18",
+          "42/15",
+          "A: 15/42",
+          "B: 18/35",
+          "C: 35/18",
+          "D: 42/15",
+          "5/6",
+          "3/7"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q11": {
+      "inputHash": "5133f8bd1a8fb55185f540f43721439fe9b8774177e9141cde0030fdab7413b4",
+      "description": {
+        "en": "Question 11. The points plotted on the coordinate grid represent different locations in a city, and the grid lines represent the city’s streets. The x-axis increases to the right and the y-axis increases upward. Both axes begin at 0, and the grid marks integer coordinates from 0 through 9. The locations are Theater at (3, 9), Library at (5, 4), Museum at (7, 2), and Post Office at (8, 6). The city plans to build a parking lot at the location represented by the coordinates (8, 4). Which building is the shortest driving distance from the parking lot when travel follows the horizontal and vertical grid streets? Choices: A: theater. B: library. C: museum. D: post office."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3, 9)",
+          "(5, 4)",
+          "(7, 2)",
+          "(8, 6)",
+          "(8, 4)",
+          "0 through 9",
+          "A: theater",
+          "B: library",
+          "C: museum",
+          "D: post office"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q12": {
+      "inputHash": "5fef6a9b05f5119ae4d70de2c86436ca934b1928ac17a3997341e6ca0ce8ce76",
+      "description": {
+        "en": "Question 12. Solve the equation 0.3r = 2.1. Choices: A: r = 0.7. B: r = 1.8. C: r = 7. D: r = 18."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.3r = 2.1",
+          "r = 0.7",
+          "r = 1.8",
+          "r = 7",
+          "r = 18",
+          "A: r = 0.7",
+          "B: r = 1.8",
+          "C: r = 7",
+          "D: r = 18"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q13": {
+      "inputHash": "f3ce18a11c9d2bfcdc01335ed318510be8e2a3f993487ce937f057f32357f7b9",
+      "description": {
+        "en": "Question 13. A group of students organized a car wash to raise money for a local charity. The students charged $5.00 for each car they washed. In 3 hours, they washed 12 cars. At that rate, how much money could they earn from washing cars for eight hours? Choices: A: $40.00. B: $60.00. C: $85.00. D: $160.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$5.00",
+          "3 hours",
+          "12 cars",
+          "eight hours",
+          "$40.00",
+          "$60.00",
+          "$85.00",
+          "$160.00",
+          "A: $40.00",
+          "B: $60.00",
+          "C: $85.00",
+          "D: $160.00"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q14": {
+      "inputHash": "9378585c7df74d6ad922bc246d283ccba7e5dc1364b07820997e6f44f829588a",
+      "description": {
+        "en": "Question 14. Madison and Pedro each created a number pattern that began with the number 0. Madison used the rule “Add 4.” Pedro used the rule “Add 12.” Which statement is true about each corresponding pair of numbers in the two patterns? Choices: A: Each number in Pedro’s pattern is 8 less than the corresponding number in Madison’s pattern. B: Each number in Pedro’s pattern is 8 more than the corresponding number in Madison’s pattern. C: Each number in Pedro’s pattern is 3 times less than the corresponding number in Madison’s pattern. D: Each number in Pedro’s pattern is 3 times more than the corresponding number in Madison’s pattern."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "Add 4",
+          "Add 12",
+          "8 less",
+          "8 more",
+          "3 times less",
+          "3 times more",
+          "A: Each number in Pedro’s pattern is 8 less than the corresponding number in Madison’s pattern",
+          "B: Each number in Pedro’s pattern is 8 more than the corresponding number in Madison’s pattern",
+          "C: Each number in Pedro’s pattern is 3 times less than the corresponding number in Madison’s pattern",
+          "D: Each number in Pedro’s pattern is 3 times more than the corresponding number in Madison’s pattern"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q15": {
+      "inputHash": "ddd65a71668b4efb54a2f64091c12f5759e41504bdab7980ff809abb6a321251",
+      "description": {
+        "en": "Question 15. Kelly saves $5 every week. Which expression represents the amount of money, in dollars, Kelly will save in w weeks? Choices: A: 5 + w. B: 5 − w. C: 5w. D: 5/w."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$5",
+          "w weeks",
+          "5 + w",
+          "5 − w",
+          "5w",
+          "5/w",
+          "A: 5 + w",
+          "B: 5 − w",
+          "C: 5w",
+          "D: 5/w"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q16": {
+      "inputHash": "d1341b8e724328d2bf2408e5a9ed88969eaab46748f242e654900e9f765f6d9f",
+      "description": {
+        "en": "Question 16. What is the greatest common factor of 56 and 92? Choices: A: 2. B: 4. C: 7. D: 8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "56",
+          "92",
+          "2",
+          "4",
+          "7",
+          "8",
+          "A: 2",
+          "B: 4",
+          "C: 7",
+          "D: 8"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q17": {
+      "inputHash": "54feaa7b8fd1e043341e04c5389a59aa0d2d50729636a60c7ff000a4863ddefd",
+      "description": {
+        "en": "Question 17. A museum has an aquarium in the shape of a right rectangular prism that is 22.9 meters long, 7.5 meters wide, and 4.6 meters high. What is the volume, rounded to the nearest cubic meter, of the aquarium? Choices: A: 280. B: 623. C: 790. D: 1,288."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "22.9 meters",
+          "7.5 meters",
+          "4.6 meters",
+          "280",
+          "623",
+          "790",
+          "1,288",
+          "A: 280",
+          "B: 623",
+          "C: 790",
+          "D: 1,288"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q18": {
+      "inputHash": "54d94ddcd80a63844c3b25d6266a76ddc3e5f868e76a8c366f03f6f1ef34cb7e",
+      "description": {
+        "en": "Question 18. The right rectangular prism described below is made of equal-sized cubes. The side length of each cube is 2 1/2 inches. The prism is 5 cubes wide, 4 cubes high, and 2 cubes deep, for a total arrangement of 5 by 4 by 2 cubes. What is the volume, in cubic inches, of the right rectangular prism? Choices: A: 50. B: 100. C: 250. D: 625."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 1/2 inches",
+          "5 cubes",
+          "4 cubes",
+          "2 cubes",
+          "5 by 4 by 2",
+          "50",
+          "100",
+          "250",
+          "625",
+          "A: 50",
+          "B: 100",
+          "C: 250",
+          "D: 625",
+          "2 1/2"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q19": {
+      "inputHash": "6645640651c33c6bbf8550cd487ae063afa75013206bdf95ad8c6144c5364fd5",
+      "description": {
+        "en": "Question 19. The water level in an ocean bay changes at an average rate of 3 meters per hour. At this rate, how many hours would it take for the water level to change 12 meters? Choices: A: 1/4. B: 1/3. C: 4. D: 36."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 meters per hour",
+          "12 meters",
+          "1/4",
+          "1/3",
+          "4",
+          "36",
+          "A: 1/4",
+          "B: 1/3",
+          "C: 4",
+          "D: 36"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q20": {
+      "inputHash": "fecbc530c0522fcf9d9ce60ec5aab15cdb1eeccfc3f9cb34eb8b3cf7564a1735",
+      "description": {
+        "en": "Question 20. A company paid $48 for 2 cases of printer paper. Each case contained 12 packages of paper. Next month the company’s office manager needs to order 180 packages of the same paper. If the price per package does not change, what would be the total cost of next month’s order? Choices: A: $90. B: $360. C: $720. D: $1,140."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$48",
+          "2 cases",
+          "12 packages",
+          "180 packages",
+          "$90",
+          "$360",
+          "$720",
+          "$1,140",
+          "A: $90",
+          "B: $360",
+          "C: $720",
+          "D: $1,140"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q21": {
+      "inputHash": "f8bdc423cdd4e85f047c0ddf665b8886e0bb0eb04eb34a7dbe082070a8f029d6",
+      "description": {
+        "en": "Question 21. Which two expressions are equivalent for any value of y? Choices: A: 3(3y + 3) and 6y + 6. B: 3(3y + 3) and 9y + 6. C: 9(y + 3) and 12 + 9y. D: 9(y + 3) and 27 + 9y."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y",
+          "3(3y + 3)",
+          "6y + 6",
+          "9y + 6",
+          "9(y + 3)",
+          "12 + 9y",
+          "27 + 9y",
+          "A: 3(3y + 3) and 6y + 6",
+          "B: 3(3y + 3) and 9y + 6",
+          "C: 9(y + 3) and 12 + 9y",
+          "D: 9(y + 3) and 27 + 9y",
+          "(3y + 3)",
+          "(y + 3)"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q22": {
+      "inputHash": "92c026282d0d0216ba1fc300f373685562b102f8c7b45c5bca79529df6b8fe0e",
+      "description": {
+        "en": "Question 22. There are five houses on Maple Street and five houses on Oak Street, arranged from left to right. The first house on Maple Street is numbered 6. Each house number on Maple Street is six more than the house number to its left. The first house on Oak Street is numbered 4. Each house number on Oak Street is eight more than the house number to its left. How much greater is the house number of the last house on Oak Street than the house number of the last house on Maple Street? Choices: A: 2. B: 6. C: 8. D: 10."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "five houses",
+          "6",
+          "six more",
+          "4",
+          "eight more",
+          "2",
+          "8",
+          "10",
+          "A: 2",
+          "B: 6",
+          "C: 8",
+          "D: 10"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q23": {
+      "inputHash": "38bf89ac1845ee48467987cf997a91072a81df273ddae4fe5d64a1531ced3c04",
+      "description": {
+        "en": "Question 23. Which equation has the solution x = 2? Choices: A: 2x − 3 = 19. B: 3x + 2 = 8. C: 4x − 4 = −4. D: 5x + 1 = 10."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x = 2",
+          "2x − 3 = 19",
+          "3x + 2 = 8",
+          "4x − 4 = −4",
+          "5x + 1 = 10",
+          "A: 2x − 3 = 19",
+          "B: 3x + 2 = 8",
+          "C: 4x − 4 = −4",
+          "D: 5x + 1 = 10"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q24": {
+      "inputHash": "34594b93ea61fc7121aece5b8f5c6f03a03d5d06550d20fcd100136a1f503c7d",
+      "description": {
+        "en": "Question 24. At a concert, 20% of the audience members were teenagers. If the number of teenagers at the concert was 360, what was the total number of audience members? Choices: A: 432. B: 450. C: 1,800. D: 7,200."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20%",
+          "360",
+          "432",
+          "450",
+          "1,800",
+          "7,200",
+          "A: 432",
+          "B: 450",
+          "C: 1,800",
+          "D: 7,200"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q25": {
+      "inputHash": "00d6d04e4d2242d714032cc163f05ec609fb6656b0ed9d73e3c71ef8d0308fb9",
+      "description": {
+        "en": "Question 25. The net below represents a three-dimensional object. The net consists of three rectangles arranged vertically in a single strip. A triangle is attached to the left side of the middle rectangle, and a congruent triangle is attached to its right side. Dashed fold lines separate the middle rectangle from the rectangles above and below it and from the two triangles. Which three-dimensional object can be formed from the net? Choices: A: A square pyramid with one quadrilateral base and four triangular faces meeting at one apex. B: A triangular prism with two parallel triangular bases joined by three rectangular faces. C: A rectangular prism with six rectangular faces. D: A triangular pyramid with four triangular faces."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "three rectangles",
+          "two triangles",
+          "square pyramid",
+          "triangular prism",
+          "rectangular prism",
+          "triangular pyramid",
+          "A: A square pyramid with one quadrilateral base and four triangular faces meeting at one apex",
+          "B: A triangular prism with two parallel triangular bases joined by three rectangular faces",
+          "C: A rectangular prism with six rectangular faces",
+          "D: A triangular pyramid with four triangular faces"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q26": {
+      "inputHash": "c7da0735bbd6665382d6ff45f04194eddf34105fb69e0267b8c0efcfbaba7c2b",
+      "description": {
+        "en": "Question 26. The trapezoid below has an area of 21.66 square inches. Its horizontal top base is 4.6 in. long. Perpendicular dashed segments from both endpoints of the top base to the bottom base show a height of 3.8 in. These segments form a central unshaded rectangle. The bottom base extends 1.1 in. beyond the rectangle on each side, forming two shaded right-triangular sections. The diagram is not drawn to scale. What is the total area of the shaded sections of the trapezoid? Choices: A: 2.09 square inches B: 4.18 square inches C: 4.86 square inches D: 8.74 square inches"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "21.66 square inches",
+          "4.6 in",
+          "3.8 in",
+          "1.1 in",
+          "2.09 square inches",
+          "4.18 square inches",
+          "4.86 square inches",
+          "8.74 square inches",
+          "A: 2.09 square inches",
+          "B: 4.18 square inches",
+          "C: 4.86 square inches",
+          "D: 8.74 square inches"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q27": {
+      "inputHash": "1cf6ba783e1892d1d4de296301dba8512ea1d3491686d432e49704a6f3451940",
+      "description": {
+        "en": "Question 27. Which expression is equivalent to the expression below? g + g + g + g + g + g Choices: A: 6 + g B: g⁶ C: 6g D: g/6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "g + g + g + g + g + g",
+          "6 + g",
+          "g⁶",
+          "6g",
+          "g/6",
+          "A: 6 + g",
+          "B: g⁶",
+          "C: 6g",
+          "D: g/6"
+        ]
+      }
+    },
+    "nysed-2015-g6-mc-q28": {
+      "inputHash": "756c9260cc52690406034eafbab8112274ac7a36c45ecce18746ea75f996dc89",
+      "description": {
+        "en": "Question 28. Keith wants to plot −8 and −9 on a number line. Which statement is true? Choices: A: Keith should plot −8 to the left of −9 because −8 < −9. B: Keith should plot −8 to the left of −9 because −8 > −9. C: Keith should plot −9 to the left of −8 because −9 < −8. D: Keith should plot −9 to the left of −8 because −9 > −8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−8",
+          "−9",
+          "−8 < −9",
+          "−8 > −9",
+          "−9 < −8",
+          "−9 > −8",
+          "A: Keith should plot −8 to the left of −9 because −8 < −9",
+          "B: Keith should plot −8 to the left of −9 because −8 > −9",
+          "C: Keith should plot −9 to the left of −8 because −9 < −8",
+          "D: Keith should plot −9 to the left of −8 because −9 > −8",
+          "e −8 < −9",
+          "e −8 > −9",
+          "e −9 < −8",
+          "e −9 > −8"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,949 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2022-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2022-g8-mc-q1": {
+      "inputHash": "5a583ce4a16ee900b7f48b61fd978862c6d5f5f744366529f42d5e3d072f5912",
+      "description": {
+        "en": "Question 1. Which graph represents a function that is increasing? Each choice is a coordinate plane with x- and y-axes marked from −5 to 5. Choices: A: A horizontal line with arrows at both ends passes through y = 2. B: A vertical line with arrows at both ends passes through x = 2. C: A line with arrows at both ends slopes downward from left to right and passes through (−2, 6), (0, 0), and (2, −6). D: A line with arrows at both ends slopes upward from left to right and passes through (−2, −6), (0, 0), and (2, 6).",
+        "es": "Pregunta 1. ¿Qué gráfico representa una función que es creciente? Los cuatro planos de coordenadas tienen el eje x horizontal, positivo hacia la derecha, y el eje y vertical, positivo hacia arriba; ambos abarcan aproximadamente de −5 a 5 y las rectas tienen flechas en sus extremos. Opciones: A: Recta horizontal y = 2, extendida indefinidamente hacia la izquierda y la derecha. B: Recta vertical x = 2, extendida indefinidamente hacia arriba y abajo. C: Recta con pendiente negativa, descendente de izquierda a derecha; pasa por (−1, 3), (0, 0) y (1, −3), y continúa en ambas direcciones. D: Recta con pendiente positiva, ascendente de izquierda a derecha; pasa por (−1, −3), (0, 0) y (1, 3), y continúa en ambas direcciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−5",
+          "5",
+          "y = 2",
+          "x = 2",
+          "(−2, 6)",
+          "(0, 0)",
+          "(2, −6)",
+          "(−2, −6)",
+          "(2, 6)",
+          "A: A horizontal line with arrows at both ends passes through y = 2",
+          "B: A vertical line with arrows at both ends passes through x = 2",
+          "C: A line with arrows at both ends slopes downward from left to right and passes through (−2, 6), (0, 0), and (2, −6)",
+          "D: A line with arrows at both ends slopes upward from left to right and passes through (−2, −6), (0, 0), and (2, 6)"
+        ],
+        "es": [
+          "y = 2",
+          "x = 2",
+          "(−1, 3)",
+          "(0, 0)",
+          "(1, −3)",
+          "(−1, −3)",
+          "(1, 3)",
+          "A: Recta horizontal y = 2, extendida indefinidamente hacia la izquierda y la derecha",
+          "B: Recta vertical x = 2, extendida indefinidamente hacia arriba y abajo",
+          "C: Recta con pendiente negativa, descendente de izquierda a derecha; pasa por (−1, 3), (0, 0) y (1, −3), y continúa en ambas direcciones",
+          "D: Recta con pendiente positiva, ascendente de izquierda a derecha; pasa por (−1, −3), (0, 0) y (1, 3), y continúa en ambas direcciones"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q2": {
+      "inputHash": "0fc48dcdfa6676e27e958167b07f303a05f55ba9462234eafbbaa45025c1d362",
+      "description": {
+        "en": "Question 2. What is the solution to the equation shown below? 2.5(x + 5) = 7.5x − 0.5. Choices: A: x = 2.6 B: x = 1.1 C: x = −2.6 D: x = −1.1",
+        "es": "Pregunta 2. ¿Cuál es la solución de la ecuación que se muestra a continuación? 2.5(x + 5) = 7.5x − 0.5. Opciones: A: x = 2.6 B: x = 1.1 C: x = −2.6 D: x = −1.1"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2.5(x + 5) = 7.5x − 0.5",
+          "x = 2.6",
+          "x = 1.1",
+          "x = −2.6",
+          "x = −1.1",
+          "A: x = 2.6",
+          "B: x = 1.1",
+          "C: x = −2.6",
+          "D: x = −1.1",
+          "(x + 5)"
+        ],
+        "es": [
+          "2.5(x + 5) = 7.5x − 0.5",
+          "x = 2.6",
+          "x = 1.1",
+          "x = −2.6",
+          "x = −1.1",
+          "A: x = 2.6",
+          "B: x = 1.1",
+          "C: x = −2.6",
+          "D: x = −1.1",
+          "(x + 5)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q3": {
+      "inputHash": "af6f8ed5d58fd4b5c0df79321fdccf7b813a448c9d4adffe8f4fa9ac4d0b988c",
+      "description": {
+        "en": "Question 3. There are two boxes of cereal in the shape of rectangular prisms on a shelf. The dimensions of each box of cereal are listed below. Box A has a height of 25 centimeters, a length of 20 centimeters, and a width of 9 centimeters. Box B has a height of 25 centimeters, a length of 19 centimeters, and a width of 6 centimeters. What is the difference in volume, in cubic centimeters, between the two boxes of cereal? Choices: A: 1,650 B: 3,900 C: 4,500 D: 7,350",
+        "es": "Pregunta 3. Hay dos cajas de cereal con la forma de prismas rectangulares en un estante. Las dimensiones de cada caja de cereal se indican a continuación. La Caja A tiene una altura de 25 centímetros, una longitud de 20 centímetros y un ancho de 9 centímetros. La Caja B tiene una altura de 25 centímetros, una longitud de 19 centímetros y un ancho de 6 centímetros. ¿Cuál es la diferencia en volumen, en centímetros cúbicos, entre las dos cajas de cereal? Opciones: A: 1,650 B: 3,900 C: 4,500 D: 7,350"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25 centimeters",
+          "20 centimeters",
+          "9 centimeters",
+          "19 centimeters",
+          "6 centimeters",
+          "1,650",
+          "3,900",
+          "4,500",
+          "7,350",
+          "A: 1,650",
+          "B: 3,900",
+          "C: 4,500",
+          "D: 7,350"
+        ],
+        "es": [
+          "25 centímetros",
+          "20 centímetros",
+          "9 centímetros",
+          "19 centímetros",
+          "6 centímetros",
+          "1,650",
+          "3,900",
+          "4,500",
+          "7,350",
+          "A: 1,650",
+          "B: 3,900",
+          "C: 4,500",
+          "D: 7,350"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q4": {
+      "inputHash": "056bdb76b4dbff881417a47288c527d229bec419a45f766d38378170a2858e30",
+      "description": {
+        "en": "Question 4. Which equation represents the line shown on the coordinate plane below? The x-axis is labeled at −8, −6, −4, −2, 2, 4, 6, and 8, and the y-axis is labeled at −8, −6, −4, −2, 2, 4, 6, 8, and 10. A line with arrows at both ends rises from lower left to upper right. It contains marked points at (−4, −6), (0, 4), and (2, 9). Choices: A: y = 2/5x + 4 B: y = 2/3x + 4 C: y = 3/2x + 4 D: y = 5/2x + 4",
+        "es": "Pregunta 4. ¿Qué ecuación representa la recta que se muestra en el siguiente plano de coordenadas? El eje x es horizontal y el eje y es vertical. La recta asciende de izquierda a derecha, corta el eje y en el punto marcado (0, 4) y también contiene los puntos marcados (2, 9) y (−4, −6). Tiene flechas en ambos extremos, por lo que continúa en las dos direcciones. Opciones: A: y = 2/5x + 4 B: y = 2/3x + 4 C: y = 3/2x + 4 D: y = 5/2x + 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−8",
+          "−6",
+          "−4",
+          "−2",
+          "10",
+          "(−4, −6)",
+          "(0, 4)",
+          "(2, 9)",
+          "y = 2/5x + 4",
+          "y = 2/3x + 4",
+          "y = 3/2x + 4",
+          "y = 5/2x + 4",
+          "A: y = 2/5x + 4",
+          "B: y = 2/3x + 4",
+          "C: y = 3/2x + 4",
+          "D: y = 5/2x + 4",
+          "2/5",
+          "2/3",
+          "3/2",
+          "5/2"
+        ],
+        "es": [
+          "(0, 4)",
+          "(2, 9)",
+          "(−4, −6)",
+          "y = 2/5x + 4",
+          "y = 2/3x + 4",
+          "y = 3/2x + 4",
+          "y = 5/2x + 4",
+          "A: y = 2/5x + 4",
+          "B: y = 2/3x + 4",
+          "C: y = 3/2x + 4",
+          "D: y = 5/2x + 4",
+          "2/5",
+          "2/3",
+          "3/2",
+          "5/2"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q5": {
+      "inputHash": "829031cc9725f73c9d3a58960ea38727b3101d1097c8f03c87fe153066baf6fa",
+      "description": {
+        "en": "Question 5. Two intersecting lines, l and t, are shown in the diagram below. Line l is horizontal with arrows at both ends. Line t slopes downward from upper left to lower right and has arrows at both ends. At their intersection, the upper-right angle is labeled (2x − 15)°, and the vertically opposite lower-left angle is labeled y°. If y = 115, what is the value of x? Choices: A: 40 B: 50 C: 65 D: 115",
+        "es": "Pregunta 5. En el siguiente diagrama se muestran dos rectas intersecantes l y t. La recta l es horizontal y la recta t desciende de izquierda a derecha; ambas tienen flechas en sus extremos. En la intersección, el ángulo situado arriba de l y a la derecha de t está rotulado (2x − 15)°, y el ángulo verticalmente opuesto, situado debajo de l y a la izquierda de t, está rotulado y°. Si y = 115, ¿cuál es el valor de x? Opciones: A: 40 B: 50 C: 65 D: 115"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2x − 15)°",
+          "y°",
+          "y = 115",
+          "40",
+          "50",
+          "65",
+          "115",
+          "A: 40",
+          "B: 50",
+          "C: 65",
+          "D: 115",
+          "(2x − 15)"
+        ],
+        "es": [
+          "(2x − 15)°",
+          "y°",
+          "y = 115",
+          "40",
+          "50",
+          "65",
+          "115",
+          "A: 40",
+          "B: 50",
+          "C: 65",
+          "D: 115",
+          "(2x − 15)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q6": {
+      "inputHash": "3ff4ccc793c2dbeb51b89eba99e81807dca98b9890914a6542ab2fd446137ff0",
+      "description": {
+        "en": "Question 6. Triangle P undergoes a sequence of transformations resulting in triangle Q. Which sequence of transformations could be used to show that triangle Q is similar but not congruent to triangle P? Choices: A: a reflection followed by a translation B: a rotation followed by a reflection C: a reflection followed by a rotation D: a translation followed by a dilation",
+        "es": "Pregunta 6. El triángulo P sufre una serie de transformaciones que dan lugar al triángulo Q. ¿Qué serie de transformaciones podría usarse para mostrar que el triángulo Q es similar a pero no congruente con el triángulo P? Opciones: A: una reflexión seguida de una traslación B: una rotación seguida de una reflexión C: una reflexión seguida de una rotación D: una traslación seguida de una dilatación"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "triangle P",
+          "triangle Q",
+          "similar but not congruent",
+          "reflection",
+          "translation",
+          "rotation",
+          "dilation",
+          "A: a reflection followed by a translation",
+          "B: a rotation followed by a reflection",
+          "C: a reflection followed by a rotation",
+          "D: a translation followed by a dilation"
+        ],
+        "es": [
+          "triángulo P",
+          "triángulo Q",
+          "reflexión",
+          "traslación",
+          "rotación",
+          "dilatación",
+          "A: una reflexión seguida de una traslación",
+          "B: una rotación seguida de una reflexión",
+          "C: una reflexión seguida de una rotación",
+          "D: una traslación seguida de una dilatación"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q7": {
+      "inputHash": "8902fb5febec1416ff6f6085b0c2b0ec6f8ea01f88a9443a853abb89a7e79cb6",
+      "description": {
+        "en": "Question 7. A scatter plot is shown below. The horizontal x-axis runs from 0 to 16 and is numbered at even integers; the vertical y-axis runs from 0 to 10 and is numbered at even integers. The plotted points are (1, 10), (2, 9.5), (2, 8), (3, 10), (3, 8.5), (3, 7), (4, 8), (4, 6.5), (5, 7), (5, 6), (5.5, 5), (5.5, 4), (6.5, 4), (6.5, 3), (6.5, 2), (8, 3), (8, 1.5), (9.5, 3), (11, 2), (12, 3), (13, 2), (13, 1), (14.5, 2), (15, 3), (15, 1), and (16, 2). The points form a decreasing curved pattern that levels off as x increases. Which statement best explains why these data can or cannot be modeled using a line of best fit? Choices: A: A line would not be appropriate because there is a negative association. B: A line would not be appropriate because the points follow a nonlinear pattern. C: A line would be appropriate because there is a positive association. D: A line would be appropriate because the points follow a nonlinear pattern.",
+        "es": "Pregunta 7. A continuación, se muestra un diagrama de dispersión. El eje x es horizontal, aumenta hacia la derecha y está numerado de 0 a 16; el eje y es vertical, aumenta hacia arriba y está numerado de 0 a 10. Los puntos son (1, 10), (2, 9.5), (2, 8), (3, 10), (3, 8.5), (3, 7), (4, 8), (4, 6.5), (5, 7), (5, 6), (5.5, 5), (5.5, 4), (6.5, 4), (6.5, 3), (6.5, 2), (8, 3), (8, 1.5), (9.5, 3), (11, 2), (12, 3), (13, 2), (13, 1), (14.5, 2), (15, 3), (15, 1) y (16, 2). En conjunto, los puntos descienden rápidamente y luego se nivelan cerca de y = 2 o y = 3, formando un patrón curvo, no lineal. ¿Cuál afirmación explica mejor por qué estos datos pueden o no representarse usando una línea de mejor ajuste? Opciones: A: Una línea no sería apropiada porque hay una asociación negativa. B: Una línea no sería apropiada porque los puntos siguen un patrón no lineal. C: Una línea sería apropiada porque hay una asociación positiva. D: Una línea sería apropiada porque los puntos siguen un patrón no lineal."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "16",
+          "10",
+          "(1, 10)",
+          "(2, 9.5)",
+          "(2, 8)",
+          "(3, 10)",
+          "(3, 8.5)",
+          "(3, 7)",
+          "(4, 8)",
+          "(4, 6.5)",
+          "(5, 7)",
+          "(5, 6)",
+          "(5.5, 5)",
+          "(5.5, 4)",
+          "(6.5, 4)",
+          "(6.5, 3)",
+          "(6.5, 2)",
+          "(8, 3)",
+          "(8, 1.5)",
+          "(9.5, 3)",
+          "(11, 2)",
+          "(12, 3)",
+          "(13, 2)",
+          "(13, 1)",
+          "(14.5, 2)",
+          "(15, 3)",
+          "(15, 1)",
+          "(16, 2)",
+          "negative association",
+          "nonlinear pattern",
+          "positive association",
+          "A: A line would not be appropriate because there is a negative association",
+          "B: A line would not be appropriate because the points follow a nonlinear pattern",
+          "C: A line would be appropriate because there is a positive association",
+          "D: A line would be appropriate because the points follow a nonlinear pattern"
+        ],
+        "es": [
+          "(1, 10)",
+          "(2, 9.5)",
+          "(2, 8)",
+          "(3, 10)",
+          "(3, 8.5)",
+          "(3, 7)",
+          "(4, 8)",
+          "(4, 6.5)",
+          "(5, 7)",
+          "(5, 6)",
+          "(5.5, 5)",
+          "(5.5, 4)",
+          "(6.5, 4)",
+          "(6.5, 3)",
+          "(6.5, 2)",
+          "(8, 3)",
+          "(8, 1.5)",
+          "(9.5, 3)",
+          "(11, 2)",
+          "(12, 3)",
+          "(13, 2)",
+          "(13, 1)",
+          "(14.5, 2)",
+          "(15, 3)",
+          "(15, 1)",
+          "(16, 2)",
+          "y = 2",
+          "y = 3",
+          "A: Una línea no sería apropiada porque hay una asociación negativa",
+          "B: Una línea no sería apropiada porque los puntos siguen un patrón no lineal",
+          "C: Una línea sería apropiada porque hay una asociación positiva",
+          "D: Una línea sería apropiada porque los puntos siguen un patrón no lineal"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q8": {
+      "inputHash": "df57cebffc73027213ee18fa725c682d22477b2d663e5b1551030d285a646fa4",
+      "description": {
+        "en": "Question 8. What is the solution, if any, to the equation 3(x − 2) + 4 = 3x + 6? Choices: A: x = 0 B: x = 8 C: There is no solution. D: There are an infinite number of solutions.",
+        "es": "Pregunta 8. ¿Cuál es la solución, si es que existe alguna, de la ecuación 3(x − 2) + 4 = 3x + 6? Opciones: A: x = 0 B: x = 8 C: No hay solución. D: Hay una cantidad infinita de soluciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3(x − 2) + 4 = 3x + 6",
+          "x = 0",
+          "x = 8",
+          "no solution",
+          "infinite number of solutions",
+          "A: x = 0",
+          "B: x = 8",
+          "C: There is no solution",
+          "D: There are an infinite number of solutions",
+          "(x − 2)"
+        ],
+        "es": [
+          "3(x − 2) + 4 = 3x + 6",
+          "x = 0",
+          "x = 8",
+          "A: x = 0",
+          "B: x = 8",
+          "C: No hay solución",
+          "D: Hay una cantidad infinita de soluciones",
+          "(x − 2)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q14": {
+      "inputHash": "d63dccab5fb80dba21b61b55a520a0499f8412454067878306c3914cafff3951",
+      "description": {
+        "en": "Question 14. Which expression is equivalent to (15³)(15⁻⁷)? Choices: A: 15⁻²¹ B: −15⁴ C: 1/15⁴ D: 1/15⁻⁴",
+        "es": "Pregunta 14. ¿Qué expresión es equivalente a (15³)(15⁻⁷)? Opciones: A: 15⁻²¹ B: −15⁴ C: 1/15⁴ D: 1/15⁻⁴"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(15³)(15⁻⁷)",
+          "15⁻²¹",
+          "−15⁴",
+          "1/15⁴",
+          "1/15⁻⁴",
+          "A: 15⁻²¹",
+          "B: −15⁴",
+          "C: 1/15⁴",
+          "D: 1/15⁻⁴",
+          "(15³)",
+          "(15⁻⁷)",
+          "15⁴",
+          "1/15"
+        ],
+        "es": [
+          "(15³)(15⁻⁷)",
+          "15⁻²¹",
+          "−15⁴",
+          "1/15⁴",
+          "1/15⁻⁴",
+          "A: 15⁻²¹",
+          "B: −15⁴",
+          "C: 1/15⁴",
+          "D: 1/15⁻⁴",
+          "(15³)",
+          "(15⁻⁷)",
+          "15⁴",
+          "1/15"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q15": {
+      "inputHash": "2764e6956ecab86cc68f93a1b472548a4411bb4a074ea9c29b76354ece9db21d",
+      "description": {
+        "en": "Question 15. Alex opened a savings account with an initial deposit of $50. Each month, he deposits the same amount of money. He uses the equation t = 50 + 25m to determine t, the total amount of money in his savings account in m months. What is the unit rate and what is the meaning of the unit rate? Choices: A: 25; the amount of money Alex deposits each month B: 50; the amount of money Alex deposits each month C: 25; the amount of money Alex initially deposited D: 50; the amount of money Alex initially deposited",
+        "es": "Pregunta 15. Alex abrió una cuenta de ahorros con un depósito inicial de $50. Cada mes, deposita la misma cantidad de dinero. Alex usa la ecuación t = 50 + 25m para determinar t, la cantidad total de dinero en su cuenta de ahorros en m meses. ¿Cuál es la tasa unitaria y qué significa la tasa unitaria? Opciones: A: 25; la cantidad de dinero que Alex deposita cada mes B: 50; la cantidad de dinero que Alex deposita cada mes C: 25; la cantidad de dinero que Alex depositó inicialmente D: 50; la cantidad de dinero que Alex depositó inicialmente"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$50",
+          "t = 50 + 25m",
+          "25",
+          "50",
+          "A: 25; the amount of money Alex deposits each month",
+          "B: 50; the amount of money Alex deposits each month",
+          "C: 25; the amount of money Alex initially deposited",
+          "D: 50; the amount of money Alex initially deposited"
+        ],
+        "es": [
+          "$50",
+          "t = 50 + 25m",
+          "25",
+          "50",
+          "A: 25; la cantidad de dinero que Alex deposita cada mes",
+          "B: 50; la cantidad de dinero que Alex deposita cada mes",
+          "C: 25; la cantidad de dinero que Alex depositó inicialmente",
+          "D: 50; la cantidad de dinero que Alex depositó inicialmente"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q16": {
+      "inputHash": "5745d9c163a271d31ef9e8d9a563fc69dd986ca8b286906a76413ca7c981aba3",
+      "description": {
+        "en": "Question 16. What is the solution to the equation −1/3(6y + 6) + 21 = 3y? Choices: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5",
+        "es": "Pregunta 16. ¿Cuál es la solución de la ecuación que se muestra a continuación? −(1/3)(6y + 6) + 21 = 3y. Opciones: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−1/3(6y + 6) + 21 = 3y",
+          "y = 19/5",
+          "y = 27/5",
+          "y = −9/5",
+          "y = −23/5",
+          "A: y = 19/5",
+          "B: y = 27/5",
+          "C: y = −9/5",
+          "D: y = −23/5",
+          "1/3",
+          "(6y + 6)",
+          "19/5",
+          "27/5",
+          "9/5",
+          "23/5"
+        ],
+        "es": [
+          "−(1/3)(6y + 6) + 21 = 3y",
+          "y = 19/5",
+          "y = 27/5",
+          "y = −9/5",
+          "y = −23/5",
+          "A: y = 19/5",
+          "B: y = 27/5",
+          "C: y = −9/5",
+          "D: y = −23/5",
+          "(1/3)",
+          "(6y + 6)",
+          "19/5",
+          "27/5",
+          "9/5",
+          "23/5"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q19": {
+      "inputHash": "69d254eed5dd1401b568fa8bcfbec8719f69ef691a3014eaf45f6181326c174a",
+      "description": {
+        "en": "Question 19. The graph of a function is drawn on an x-y coordinate plane. Filled points occur at (−5, −4), (−3, 1), (1, 3), (4, 3), and (6, −2). A rising straight line segment connects (−5, −4) to (−3, 1). A rising curved segment connects (−3, 1) to (1, 3), passing through the y-axis at approximately y = 2. A horizontal line segment connects (1, 3) to (4, 3). A falling curved segment connects (4, 3) to (6, −2), crossing the x-axis slightly before x = 6. Between which two values of x is the function nonlinear and increasing? Choices: A: −5 and −3 B: −3 and 1 C: 1 and 4 D: 4 and 6",
+        "es": "Pregunta 19. En el siguiente plano de coordenadas se muestra el gráfico de una función. Los ejes x y y están marcados en incrementos de 1. La función consta de cuatro tramos unidos por puntos cerrados: un segmento recto creciente desde (−5, −4) hasta (−3, 1); una curva creciente y no lineal desde (−3, 1) hasta (1, 3), que pasa por el eje y en (0, 2); un segmento horizontal desde (1, 3) hasta (4, 3); y una curva decreciente y no lineal desde (4, 3) hasta (6, −2), que cruza el eje x entre x = 5 y x = 6. ¿Entre cuáles dos valores de x la función es no lineal y creciente? Opciones: A: −5 y −3 B: −3 y 1 C: 1 y 4 D: 4 y 6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−5, −4)",
+          "(−3, 1)",
+          "(1, 3)",
+          "(4, 3)",
+          "(6, −2)",
+          "y = 2",
+          "x = 6",
+          "−5 and −3",
+          "−3 and 1",
+          "1 and 4",
+          "4 and 6",
+          "A: −5 and −3",
+          "B: −3 and 1",
+          "C: 1 and 4",
+          "D: 4 and 6"
+        ],
+        "es": [
+          "(−5, −4)",
+          "(−3, 1)",
+          "(1, 3)",
+          "(0, 2)",
+          "(4, 3)",
+          "(6, −2)",
+          "x = 5",
+          "x = 6",
+          "−5 y −3",
+          "−3 y 1",
+          "1 y 4",
+          "4 y 6",
+          "A: −5 y −3",
+          "B: −3 y 1",
+          "C: 1 y 4",
+          "D: 4 y 6"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q23": {
+      "inputHash": "2339ebc5b2d8f89af17beaf08c1c879441bc5ebb46c3dc4411dc2694ba879494",
+      "description": {
+        "en": "Question 23. The dimensions of a cone are given. A vertical segment from the cone’s apex to the center of its circular base is perpendicular to the base. The cone’s vertical height is 11 cm. A horizontal segment from the center of the base to its edge is 6 cm, so 6 cm is the radius. What is the approximate volume, in cubic centimeters, of the cone? Choices: A: 138 B: 415 C: 622 D: 1,244",
+        "es": "Pregunta 23. Las dimensiones de un cono se muestran en la figura a continuación. El cono tiene una altura perpendicular de 11 cm, trazada desde el vértice hasta el centro de la base circular. El radio de la base, desde ese centro hasta el borde derecho, mide 6 cm. Un ángulo recto marca la perpendicularidad entre la altura y el radio. ¿Cuál es el volumen aproximado, en centímetros cúbicos, del cono? Opciones: A: 138 B: 415 C: 622 D: 1,244"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "11 cm",
+          "6 cm",
+          "138",
+          "415",
+          "622",
+          "1,244",
+          "A: 138",
+          "B: 415",
+          "C: 622",
+          "D: 1,244"
+        ],
+        "es": [
+          "11 cm",
+          "6 cm",
+          "138",
+          "415",
+          "622",
+          "1,244",
+          "A: 138",
+          "B: 415",
+          "C: 622",
+          "D: 1,244"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q24": {
+      "inputHash": "fe0f4f8d8ff886ae14a19ea3778f8b3091c94444ba6b61d509d2aad1210a1fa7",
+      "description": {
+        "en": "Question 24. A triangle has side lengths a, b, and c. Side a connects the left vertex to the top vertex, side b connects the top vertex to the bottom vertex, and side c connects the bottom vertex to the left vertex. Which statement about the side lengths must be true? Choices: A: a + b > c B: b + c < a C: a + b < c D: a + c < b",
+        "es": "Pregunta 24. A continuación se muestra un triángulo con longitudes de los lados a, b y c. El lado a une el vértice izquierdo con el vértice superior; el lado b une el vértice superior con el vértice inferior; y el lado c une el vértice inferior con el vértice izquierdo. ¿Qué afirmación sobre las longitudes de los lados debe de ser verdadera? Opciones: A: a + b > c B: b + c < a C: a + b < c D: a + c < b"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "a + b > c",
+          "b + c < a",
+          "a + b < c",
+          "a + c < b",
+          "A: a + b > c",
+          "B: b + c < a",
+          "C: a + b < c",
+          "D: a + c < b"
+        ],
+        "es": [
+          "a + b > c",
+          "b + c < a",
+          "a + b < c",
+          "a + c < b",
+          "A: a + b > c",
+          "B: b + c < a",
+          "C: a + b < c",
+          "D: a + c < b"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q25": {
+      "inputHash": "ac1f29ed0f03c73a27ba16d57156ca469aa506c3597b97b214164f9d1afd12ed",
+      "description": {
+        "en": "Question 25. A line is graphed on an x-y coordinate plane. The line descends from upper left to lower right, has arrows at both ends, and passes through the marked intercepts (0, 8) and (10, 0). What is the equation of the line? Choices: A: y = −4/5x + 8 B: y = 4/5x + 10 C: y = −5/4x + 8 D: y = 5/4x + 10",
+        "es": "Pregunta 25. Se grafica una recta en el plano de coordenadas que se muestra a continuación. Los ejes x y y están marcados en incrementos de 2. La recta desciende de izquierda a derecha, tiene flechas en ambos extremos, cruza el eje y en el punto cerrado (0, 8) y cruza el eje x en el punto cerrado (10, 0). ¿Cuál es la ecuación de la recta? Opciones: A: y = −(4/5)x + 8 B: y = (4/5)x + 10 C: y = −(5/4)x + 8 D: y = (5/4)x + 10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 8)",
+          "(10, 0)",
+          "y = −4/5x + 8",
+          "y = 4/5x + 10",
+          "y = −5/4x + 8",
+          "y = 5/4x + 10",
+          "A: y = −4/5x + 8",
+          "B: y = 4/5x + 10",
+          "C: y = −5/4x + 8",
+          "D: y = 5/4x + 10",
+          "4/5",
+          "5/4"
+        ],
+        "es": [
+          "(0, 8)",
+          "(10, 0)",
+          "y = −(4/5)x + 8",
+          "y = (4/5)x + 10",
+          "y = −(5/4)x + 8",
+          "y = (5/4)x + 10",
+          "A: y = −(4/5)x + 8",
+          "B: y = (4/5)x + 10",
+          "C: y = −(5/4)x + 8",
+          "D: y = (5/4)x + 10",
+          "(4/5)",
+          "(5/4)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q26": {
+      "inputHash": "cd1b350e17fb3d7897320c40f049b7819185dab3c97af229333de4bbb621f9ca",
+      "description": {
+        "en": "Question 26. There are two mechanics who work on cars. For each mechanic, the relationship between x, the number of hours worked, and y, the total cost in dollars, is described. The equation y = 36x represents the total cost charged by Mechanic A for the number of hours worked. A graph titled “MECHANIC B CHARGES” represents Mechanic B’s total cost. Its horizontal x-axis is labeled “Number of Hours,” and its vertical y-axis is labeled “Total Cost (dollars).” A straight ray begins at (0, 0), rises to the right, passes through the filled point (2, 88), and continues with an arrow toward approximately (8, 350). Based on the information, which statement is true? Choices: A: Mechanic A charges $8.00 more per hour than Mechanic B. B: Mechanic B charges $8.00 more per hour than Mechanic A. C: Mechanic A charges $52.00 more per hour than Mechanic B. D: Mechanic B charges $52.00 more per hour than Mechanic A.",
+        "es": "Pregunta 26. Hay dos mecánicos haciendo trabajos en autos. A continuación se describe, para cada mecánico, la relación entre x, la cantidad de horas trabajadas e y, el costo total, en dólares. La ecuación y = 36x representa el costo total cobrado por el Mecánico A por la cantidad de horas trabajadas. El gráfico representa el costo total cobrado por el Mecánico B por la cantidad de horas trabajadas. El gráfico, titulado «CARGOS DEL MECÁNICO B», tiene el eje horizontal rotulado «Cantidad de horas» y el eje vertical rotulado «Costo total (dólares)». Una recta creciente parte del origen (0, 0), pasa por el punto cerrado (2, 88) y continúa con una flecha hacia la parte superior derecha. Según la información, ¿qué afirmación es verdadera? Opciones: A: El Mecánico A cobra $8.00 más por hora que el Mecánico B. B: El Mecánico B cobra $8.00 más por hora que el Mecánico A. C: El Mecánico A cobra $52.00 más por hora que el Mecánico B. D: El Mecánico B cobra $52.00 más por hora que el Mecánico A."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 36x",
+          "(0, 0)",
+          "(2, 88)",
+          "(8, 350)",
+          "$8.00",
+          "$52.00",
+          "A: Mechanic A charges $8.00 more per hour than Mechanic B",
+          "B: Mechanic B charges $8.00 more per hour than Mechanic A",
+          "C: Mechanic A charges $52.00 more per hour than Mechanic B",
+          "D: Mechanic B charges $52.00 more per hour than Mechanic A"
+        ],
+        "es": [
+          "y = 36x",
+          "(0, 0)",
+          "(2, 88)",
+          "$8.00",
+          "$52.00",
+          "A: El Mecánico A cobra $8.00 más por hora que el Mecánico B",
+          "B: El Mecánico B cobra $8.00 más por hora que el Mecánico A",
+          "C: El Mecánico A cobra $52.00 más por hora que el Mecánico B",
+          "D: El Mecánico B cobra $52.00 más por hora que el Mecánico A"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q34": {
+      "inputHash": "d86d9b2fad84b5ded9dcbc527e774d0044ff055ffee0a27112e071893eab1242",
+      "description": {
+        "en": "Question 34. Cory drinks water from a bottle during a bike ride. The average amount of water, in ounces, in his water bottle can be represented by the equation y = −8x + 32, where y is the amount of water remaining after x hours. Based on the equation, what amount of water, in ounces, will remain in the bottle after Cory rides for 2 1/2 hours? Choices: A: 8. B: 12. C: 20. D: 32.",
+        "es": "Pregunta 34. Cory bebe agua de una botella durante un paseo en bicicleta. La cantidad promedio de agua, en onzas, en su botella de agua puede representarse con la ecuación y = −8x + 32, donde y es la cantidad de agua restante después de x horas. Según la ecuación, ¿qué cantidad de agua, en onzas, quedará en la botella después de que Cory ande 2 1/2 horas? Opciones: A: 8 B: 12 C: 20 D: 32"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −8x + 32",
+          "2 1/2",
+          "8",
+          "12",
+          "20",
+          "32",
+          "A: 8",
+          "B: 12",
+          "C: 20",
+          "D: 32"
+        ],
+        "es": [
+          "y = −8x + 32",
+          "2 1/2",
+          "8",
+          "12",
+          "20",
+          "32",
+          "A: 8",
+          "B: 12",
+          "C: 20",
+          "D: 32"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q35": {
+      "inputHash": "53f7aecd6abe3196266a26e4aac51b6001cd303df84f75534dc3cf5a930ff0ea",
+      "description": {
+        "en": "Question 35. Which expression is equivalent to 4⁻⁵ × 4⁸? Choices: A: 4⁻²/4⁻¹. B: (4³)⁻¹. C: 4²/4⁻¹. D: (4⁻¹)³.",
+        "es": "Pregunta 35. ¿Qué expresión es equivalente a 4⁻⁵ × 4⁸? Opciones: A: 4⁻²/4⁻¹, una fracción con numerador 4⁻² y denominador 4⁻¹. B: (4³)⁻¹ C: 4²/4⁻¹, una fracción con numerador 4² y denominador 4⁻¹. D: (4⁻¹)³"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4⁻⁵ × 4⁸",
+          "4⁻²/4⁻¹",
+          "(4³)⁻¹",
+          "4²/4⁻¹",
+          "(4⁻¹)³",
+          "A: 4⁻²/4⁻¹",
+          "B: (4³)⁻¹",
+          "C: 4²/4⁻¹",
+          "D: (4⁻¹)³",
+          "4⁻⁵",
+          "4⁸",
+          "4⁻²",
+          "4⁻¹",
+          "(4³)",
+          "4²",
+          "(4⁻¹)"
+        ],
+        "es": [
+          "4⁻⁵ × 4⁸",
+          "4⁻²/4⁻¹",
+          "(4³)⁻¹",
+          "4²/4⁻¹",
+          "(4⁻¹)³",
+          "A: 4⁻²/4⁻¹, una fracción con numerador 4⁻² y denominador 4⁻¹",
+          "B: (4³)⁻¹",
+          "C: 4²/4⁻¹, una fracción con numerador 4² y denominador 4⁻¹",
+          "D: (4⁻¹)³",
+          "4⁻⁵",
+          "4⁸",
+          "4⁻²",
+          "4⁻¹",
+          "(4³)",
+          "4²",
+          "(4⁻¹)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q36": {
+      "inputHash": "1872eb1fc1fe3cd9c3697018403f395a7ebe86e2bf475dfcd13162ee41b2b0c6",
+      "description": {
+        "en": "Question 36. Lines l and m are parallel and intersect transversal p. Lines l and m are horizontal, with l above m, and transversal p slopes downward from left to right across both lines. At the intersection with l, the interior angle below l and to the right of p is labeled (3n + 16)°. At the intersection with m, the interior angle above m and to the left of p is labeled (5n + 4)°. What is the value of n? Choices: A: 6. B: 10. C: 20. D: 24.",
+        "es": "Pregunta 36. Las rectas l y m son paralelas e intersecan la transversal p. Las rectas l y m son horizontales, con l arriba de m, y la transversal p desciende de izquierda a derecha al cruzar ambas. En la intersección con l, el ángulo interior situado debajo de l y a la derecha de p mide (3n + 16)°. En la intersección con m, el ángulo interior situado encima de m y a la izquierda de p mide (5n + 4)°. Estos dos ángulos son alternos internos. ¿Cuál es el valor de n? Opciones: A: 6 B: 10 C: 20 D: 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3n + 16)°",
+          "(5n + 4)°",
+          "6",
+          "10",
+          "20",
+          "24",
+          "A: 6",
+          "B: 10",
+          "C: 20",
+          "D: 24",
+          "(3n + 16)",
+          "(5n + 4)"
+        ],
+        "es": [
+          "l",
+          "m",
+          "p",
+          "(3n + 16)°",
+          "(5n + 4)°",
+          "6",
+          "10",
+          "20",
+          "24",
+          "A: 6",
+          "B: 10",
+          "C: 20",
+          "D: 24",
+          "(3n + 16)",
+          "(5n + 4)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q37": {
+      "inputHash": "132aeb1480aea7f33baa2474c618f1d7d34ef618b269ac254d485eb334a263aa",
+      "description": {
+        "en": "Question 37. Trapezoid RSTU and trapezoid NMLK on a coordinate plane are congruent. The axes are labeled x and y, and the grid has 1-unit intervals. Trapezoid RSTU has vertices R(1, 4), S(2, 2), T(4, 2), and U(5, 4), connected in that order; RU and ST are horizontal, with RU longer than ST. Trapezoid NMLK has vertices N(0, −4), M(1, −2), L(3, −2), and K(4, −4), connected in that order; NK and ML are horizontal, with NK longer than ML. Which sequence of transformations will map trapezoid RSTU onto trapezoid NMLK? Choices: A: a reflection over the y-axis, then a translation 1 unit to the right. B: a reflection over the x-axis, then a translation 1 unit to the left. C: a reflection over the y-axis, then a translation 1 unit down. D: a reflection over the x-axis, then a translation 1 unit up.",
+        "es": "Pregunta 37. El trapecio RSTU y el trapecio NMLK que se muestran en el plano de coordenadas son congruentes. El plano tiene los ejes x e y y una cuadrícula de unidades. El trapecio RSTU está en el primer cuadrante, con vértices R(1, 4), S(2, 2), T(4, 2) y U(5, 4). Su base superior horizontal es RU, de (1, 4) a (5, 4), y su base inferior horizontal es ST, de (2, 2) a (4, 2). El trapecio NMLK está debajo del eje x, con vértices N(0, −4), M(1, −2), L(3, −2) y K(4, −4). Su base superior horizontal es ML, de (1, −2) a (3, −2), y su base inferior horizontal es NK, de (0, −4) a (4, −4). ¿Qué secuencia de transformaciones mapeará el trapecio RSTU en el trapecio NMLK? Opciones: A: una reflexión sobre el eje y, luego una traslación de 1 unidad hacia la derecha B: una reflexión sobre el eje x, luego una traslación de 1 unidad hacia la izquierda C: una reflexión sobre el eje y, luego una traslación de 1 unidad hacia abajo D: una reflexión sobre el eje x, luego una traslación de 1 unidad hacia arriba"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "R(1, 4)",
+          "S(2, 2)",
+          "T(4, 2)",
+          "U(5, 4)",
+          "N(0, −4)",
+          "M(1, −2)",
+          "L(3, −2)",
+          "K(4, −4)",
+          "1 unit to the right",
+          "1 unit to the left",
+          "1 unit down",
+          "1 unit up",
+          "A: a reflection over the y-axis, then a translation 1 unit to the right",
+          "B: a reflection over the x-axis, then a translation 1 unit to the left",
+          "C: a reflection over the y-axis, then a translation 1 unit down",
+          "D: a reflection over the x-axis, then a translation 1 unit up",
+          "(1, 4)",
+          "(2, 2)",
+          "(4, 2)",
+          "(5, 4)",
+          "(0, −4)",
+          "(1, −2)",
+          "(3, −2)",
+          "(4, −4)"
+        ],
+        "es": [
+          "R(1, 4)",
+          "S(2, 2)",
+          "T(4, 2)",
+          "U(5, 4)",
+          "N(0, −4)",
+          "M(1, −2)",
+          "L(3, −2)",
+          "K(4, −4)",
+          "eje y",
+          "eje x",
+          "1 unidad hacia la derecha",
+          "1 unidad hacia la izquierda",
+          "1 unidad hacia abajo",
+          "1 unidad hacia arriba",
+          "A: una reflexión sobre el eje y, luego una traslación de 1 unidad hacia la derecha",
+          "B: una reflexión sobre el eje x, luego una traslación de 1 unidad hacia la izquierda",
+          "C: una reflexión sobre el eje y, luego una traslación de 1 unidad hacia abajo",
+          "D: una reflexión sobre el eje x, luego una traslación de 1 unidad hacia arriba",
+          "(1, 4)",
+          "(2, 2)",
+          "(4, 2)",
+          "(5, 4)",
+          "(0, −4)",
+          "(1, −2)",
+          "(3, −2)",
+          "(4, −4)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q38": {
+      "inputHash": "c7b1b33bff7be7704ba79774223f80c470a3d6e541d6f3aaae734d7042c57e4f",
+      "description": {
+        "en": "Question 38. Which set of ordered pairs represents a function? Choices: A: {(−20, 30), (−40, 0), (−40, 50)}. B: {(−30, 0), (−30, 20), (−30, 50)}. C: {(−40, 0), (20, −30), (60, −50)}. D: {(−50, 0), (20, −30), (−50, 60)}.",
+        "es": "Pregunta 38. ¿Qué conjunto de pares ordenados representa una función? Opciones: A: {(−20, 30), (−40, 0), (−40, 50)} B: {(−30, 0), (−30, 20), (−30, 50)} C: {(−40, 0), (20, −30), (60, −50)} D: {(−50, 0), (20, −30), (−50, 60)}"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "{(−20, 30), (−40, 0), (−40, 50)}",
+          "{(−30, 0), (−30, 20), (−30, 50)}",
+          "{(−40, 0), (20, −30), (60, −50)}",
+          "{(−50, 0), (20, −30), (−50, 60)}",
+          "A: {(−20, 30), (−40, 0), (−40, 50)}",
+          "B: {(−30, 0), (−30, 20), (−30, 50)}",
+          "C: {(−40, 0), (20, −30), (60, −50)}",
+          "D: {(−50, 0), (20, −30), (−50, 60)}",
+          "(−20, 30)",
+          "(−40, 0)",
+          "(−40, 50)",
+          "(−30, 0)",
+          "(−30, 20)",
+          "(−30, 50)",
+          "(20, −30)",
+          "(60, −50)",
+          "(−50, 0)",
+          "(−50, 60)"
+        ],
+        "es": [
+          "{(−20, 30), (−40, 0), (−40, 50)}",
+          "{(−30, 0), (−30, 20), (−30, 50)}",
+          "{(−40, 0), (20, −30), (60, −50)}",
+          "{(−50, 0), (20, −30), (−50, 60)}",
+          "A: {(−20, 30), (−40, 0), (−40, 50)}",
+          "B: {(−30, 0), (−30, 20), (−30, 50)}",
+          "C: {(−40, 0), (20, −30), (60, −50)}",
+          "D: {(−50, 0), (20, −30), (−50, 60)}",
+          "(−20, 30)",
+          "(−40, 0)",
+          "(−40, 50)",
+          "(−30, 0)",
+          "(−30, 20)",
+          "(−30, 50)",
+          "(20, −30)",
+          "(60, −50)",
+          "(−50, 0)",
+          "(−50, 60)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q39": {
+      "inputHash": "7b817edd04bad1b5f254e6da705f2fe8f35e789cdf48c5487a83ce1bf063e58d",
+      "description": {
+        "en": "Question 39. What value for the constant n will result in no solution for the equation n(5x + 7) = 10x + 12? Choices: A: 5. B: 2. C: −2. D: −5.",
+        "es": "Pregunta 39. ¿Qué valor para la constante, n, tendrá como resultado la ausencia de una solución para la ecuación que se muestra a continuación? La ecuación es n(5x + 7) = 10x + 12. Opciones: A: 5 B: 2 C: −2 D: −5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "n(5x + 7) = 10x + 12",
+          "5",
+          "2",
+          "−2",
+          "−5",
+          "A: 5",
+          "B: 2",
+          "C: −2",
+          "D: −5",
+          "(5x + 7)"
+        ],
+        "es": [
+          "n(5x + 7) = 10x + 12",
+          "5",
+          "2",
+          "−2",
+          "−5",
+          "A: 5",
+          "B: 2",
+          "C: −2",
+          "D: −5",
+          "(5x + 7)"
+        ]
+      }
+    },
+    "nysed-2022-g8-mc-q40": {
+      "inputHash": "0b0c568414f1c7c8207df8039cdffac71e2a82ad2a0178206457c6ab31edeb9e",
+      "description": {
+        "en": "Question 40. Triangle QPR is graphed on a coordinate plane. The axes are labeled x and y from −10 through 10 with 1-unit grid intervals. The triangle has vertices P(2, 1), Q(4, 6), and R(10, 4), joined by line segments PQ, QR, and RP. Triangle QPR is dilated by a scale factor of 1/2 with a center of dilation at the origin, resulting in triangle Q′P′R′. What are the coordinates of vertex R′? Choices: A: (2, 5). B: (5, 2). C: (8, 20). D: (20, 8).",
+        "es": "Pregunta 40. Se grafica el triángulo QPR en un plano de coordenadas con los ejes x e y y una cuadrícula de unidades. Sus vértices son P(2, 1), Q(4, 6) y R(10, 4); los segmentos PQ, QR y RP forman el triángulo. El triángulo QPR se dilata por un factor de escala de 1/2 con un centro de dilatación en el origen, que da como resultado el triángulo Q′P′R′. ¿Cuáles son las coordenadas del vértice R′? Opciones: A: (2, 5) B: (5, 2) C: (8, 20) D: (20, 8)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10",
+          "10",
+          "P(2, 1)",
+          "Q(4, 6)",
+          "R(10, 4)",
+          "1/2",
+          "Q′P′R′",
+          "R′",
+          "(2, 5)",
+          "(5, 2)",
+          "(8, 20)",
+          "(20, 8)",
+          "A: (2, 5)",
+          "B: (5, 2)",
+          "C: (8, 20)",
+          "D: (20, 8)",
+          "(2, 1)",
+          "(4, 6)",
+          "(10, 4)"
+        ],
+        "es": [
+          "P(2, 1)",
+          "Q(4, 6)",
+          "R(10, 4)",
+          "1/2",
+          "Q′P′R′",
+          "R′",
+          "(2, 5)",
+          "(5, 2)",
+          "(8, 20)",
+          "(20, 8)",
+          "A: (2, 5)",
+          "B: (5, 2)",
+          "C: (8, 20)",
+          "D: (20, 8)",
+          "(2, 1)",
+          "(4, 6)",
+          "(10, 4)"
+        ]
+      }
+    }
+  }
+}

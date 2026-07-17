@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2023-grade-3-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2023-g3-mc-q1": {
+      "inputHash": "d194c6d68d582a7d083b1815450f63c820df77b6468a4433f079eb2f0ad035b4",
+      "description": {
+        "en": "Question 1. What factor makes the equation 8 × ? = 72 true? Choices: A: 6; B: 7; C: 8; D: 9.",
+        "es": "Pregunta 1. ¿Qué factor hace verdadera la ecuación 8 × ? = 72? Opciones: A: 6; B: 7; C: 8; D: 9."
+      }
+    },
+    "nysed-2023-g3-mc-q2": {
+      "inputHash": "e01e8f5fc50ef897322c7f640fcbd8a6cc0028efdf79474ef3e5feb294c7ba10",
+      "description": {
+        "en": "Question 2. A figure made of unit squares has 9 squares in its top row and 10 squares in each of its next three rows. What is its area? Choices: A: 23; B: 26; C: 32; D: 39 square units.",
+        "es": "Pregunta 2. Una figura hecha de cuadrados unitarios tiene 9 cuadrados en la fila superior y 10 cuadrados en cada una de las tres filas siguientes. ¿Cuál es su área? Opciones: A: 23; B: 26; C: 32; D: 39 unidades cuadradas."
+      }
+    },
+    "nysed-2023-g3-mc-q5": {
+      "inputHash": "386b683e32e53be857285214a2c129f00b6883005ea6c4e8c81c51a0631d4390",
+      "description": {
+        "en": "Question 5. A number line from 0 to 1 is divided into 8 equal intervals, and point R is at the sixth tick after 0. Which two fractions represent R? Choices: A: 1/4 and 2/8; B: 2/4 and 6/8; C: 2/4 and 4/8; D: 3/4 and 6/8.",
+        "es": "Pregunta 5. Una recta numérica de 0 a 1 está dividida en 8 intervalos iguales y el punto R está en la sexta marca después de 0. ¿Qué dos fracciones representan R? Opciones: A: 1/4 y 2/8; B: 2/4 y 6/8; C: 2/4 y 4/8; D: 3/4 y 6/8."
+      }
+    },
+    "nysed-2023-g3-mc-q6": {
+      "inputHash": "c1f37302f178bfecbc9ae7f7619a0890d7608b8e3f36b97a4040f591d7a3ae4e",
+      "description": {
+        "en": "Question 6. Madeline has exactly 7 coins in a bag. Each coin has a mass of 5 grams. What is the total mass of all the coins? Choices: A: 2; B: 12; C: 35; D: 40 grams.",
+        "es": "Pregunta 6. Madeline tiene exactamente 7 monedas en una bolsa. Cada moneda tiene una masa de 5 gramos. ¿Cuál es la masa total de todas las monedas? Opciones: A: 2; B: 12; C: 35; D: 40 gramos."
+      }
+    },
+    "nysed-2023-g3-mc-q15": {
+      "inputHash": "54ff378ccda070872b7af1425e2b12b19ff8d8da28058624b1100f73b9cdba9c",
+      "description": {
+        "en": "Question 15. A rule creates the number pattern ?, 9, ?, 21, 27. What two numbers are missing? Choices: A: 3 and 12; B: 3 and 15; C: 6 and 12; D: 6 and 15.",
+        "es": "Pregunta 15. Una regla crea el patrón numérico ?, 9, ?, 21, 27. ¿Qué dos números faltan? Opciones: A: 3 y 12; B: 3 y 15; C: 6 y 12; D: 6 y 15."
+      }
+    },
+    "nysed-2023-g3-mc-q16": {
+      "inputHash": "92ff7e926afabb64fa8f9b7de25cbd3520e54b44ba6c6ab467aea5b5878e3b47",
+      "description": {
+        "en": "Question 16. Which fraction is equivalent to 4/4? Choices: A: 2/1; B: 2/2; C: 4/1; D: 4/2.",
+        "es": "Pregunta 16. ¿Qué fracción es equivalente a 4/4? Opciones: A: 2/1; B: 2/2; C: 4/1; D: 4/2."
+      }
+    },
+    "nysed-2023-g3-mc-q18": {
+      "inputHash": "c608d20087785cc8da3f91dc3bfe360d06878f61d43d5481ad7c344d345b138f",
+      "description": {
+        "en": "Question 18. An L-shaped figure combines two rectangles. Its bottom is 10 feet, right side is 8 feet, top is 4 feet, and both left vertical sections are 4 feet. What is its area? Choices: A: 36; B: 40; C: 56; D: 80 square feet.",
+        "es": "Pregunta 18. Una figura en L combina dos rectángulos. La base mide 10 pies, el lado derecho 8 pies, la parte superior 4 pies y cada sección vertical izquierda 4 pies. ¿Cuál es su área? Opciones: A: 36; B: 40; C: 56; D: 80 pies cuadrados."
+      }
+    },
+    "nysed-2023-g3-mc-q19": {
+      "inputHash": "9c6c8f792c4218f0cc634614ddb9ec5f1314fb1e2803f2bcb03260034324a1f2",
+      "description": {
+        "en": "Question 19. Which expression is equivalent to 4 × (3 × 2)? Choices: A: 2 + (3 + 4); B: 3 × (4 × 2); C: 2 × (4 + 3); D: 3 + (2 × 4).",
+        "es": "Pregunta 19. ¿Qué expresión es equivalente a 4 × (3 × 2)? Opciones: A: 2 + (3 + 4); B: 3 × (4 × 2); C: 2 × (4 + 3); D: 3 + (2 × 4)."
+      }
+    },
+    "nysed-2023-g3-mc-q20": {
+      "inputHash": "5baf128912dac984d0acdb576e75e9f2870c559b9cc6605668d8acd564546b5c",
+      "description": {
+        "en": "Question 20. Which number line shows a point at 1/4? Choices: A: 0 to 1 in eighths, point at 4/8; B: 0 to 1 in fourths, point at 1/4; C: 0 to 1 in fourths, point at 2/4; D: 0 to 1 in eighths, point at 1/8.",
+        "es": "Pregunta 20. ¿Qué recta numérica muestra un punto en 1/4? Opciones: A: de 0 a 1 en octavos, punto en 4/8; B: de 0 a 1 en cuartos, punto en 1/4; C: de 0 a 1 en cuartos, punto en 2/4; D: de 0 a 1 en octavos, punto en 1/8."
+      }
+    },
+    "nysed-2023-g3-mc-q23": {
+      "inputHash": "dbfec2808e89d9987157d4eea4421b74344147e8595d242137a75b39740e11fc",
+      "description": {
+        "en": "Question 23. How many unit squares are needed to find the area of a rectangle that is 48 square units? Choices: A: 6; B: 8; C: 24; D: 48.",
+        "es": "Pregunta 23. ¿Cuántos cuadrados unitarios se necesitan para hallar el área de un rectángulo de 48 unidades cuadradas? Opciones: A: 6; B: 8; C: 24; D: 48."
+      }
+    },
+    "nysed-2023-g3-mc-q24": {
+      "inputHash": "06e34b845427c4793d5620575beee0ae03edaaeacceb01a500dfb314881ad4fb",
+      "description": {
+        "en": "Question 24. A number line from 0 to 1 is divided into eighths: P is at 1/8, Q at 3/8, R at 4/8, and S at 7/8. Which point represents 4/8? Choices: A: point P; B: point Q; C: point R; D: point S.",
+        "es": "Pregunta 24. Una recta de 0 a 1 está dividida en octavos: P está en 1/8, Q en 3/8, R en 4/8 y S en 7/8. ¿Qué punto representa 4/8? Opciones: A: punto P; B: punto Q; C: punto R; D: punto S."
+      }
+    },
+    "nysed-2023-g3-mc-q26": {
+      "inputHash": "62daa6812d68a4d588ed4174fac09f8efb00bbd45bc15c62b08d0be0b10ee0e4",
+      "description": {
+        "en": "Question 26. A box has 27 cupcakes: 10 with chocolate frosting, 11 with vanilla frosting, and the remaining s with strawberry frosting. What is s? Choices: A: 6; B: 8; C: 17; D: 21.",
+        "es": "Pregunta 26. Una caja tiene 27 pastelitos: 10 con cobertura de chocolate, 11 con cobertura de vainilla y los s restantes con cobertura de fresa. ¿Cuál es s? Opciones: A: 6; B: 8; C: 17; D: 21."
+      }
+    },
+    "nysed-2023-g3-mc-q27": {
+      "inputHash": "d6495b77a3610468b820418a297411f40bbdd5f5f5d560178ce6ebb79887f8cc",
+      "description": {
+        "en": "Question 27. A rectangle is partitioned into unit squares arranged in 6 rows and 4 columns. What is its area? Choices: A: 10; B: 18; C: 20; D: 24 square units.",
+        "es": "Pregunta 27. Un rectángulo está dividido en cuadrados unitarios organizados en 6 filas y 4 columnas. ¿Cuál es su área? Opciones: A: 10; B: 18; C: 20; D: 24 unidades cuadradas."
+      }
+    },
+    "nysed-2023-g3-mc-q28": {
+      "inputHash": "e61f56c4e2a83a3e9f4261b72c0215af2c61e415e1d6a7a49dbfd01e9d975585",
+      "description": {
+        "en": "Question 28. Mr. Juarez buys 5 packs of 6 notebooks and gives an equal number to each of his 3 children. How many notebooks does each child get? Choices: A: 8; B: 10; C: 11; D: 14.",
+        "es": "Pregunta 28. El señor Juarez compra 5 paquetes de 6 cuadernos y reparte la misma cantidad entre sus 3 hijos. ¿Cuántos recibe cada hijo? Opciones: A: 8; B: 10; C: 11; D: 14."
+      }
+    },
+    "nysed-2023-g3-mc-q29": {
+      "inputHash": "f2a661a81dec37476af9d67f59bf6f9a5e8900bb57d84ed032bc5b4164732fec",
+      "description": {
+        "en": "Question 29. Which fraction is equivalent to 2/8? Choices: A: 1/4; B: 1/6; C: 2/4; D: 2/6.",
+        "es": "Pregunta 29. ¿Qué fracción es equivalente a 2/8? Opciones: A: 1/4; B: 1/6; C: 2/4; D: 2/6."
+      }
+    },
+    "nysed-2023-g3-mc-q30": {
+      "inputHash": "78e2bb8ed5f0acb493fefa0d38d63119db355f2cf4e8c60d5d7e500193fd84c0",
+      "description": {
+        "en": "Question 30. A 5-by-6 shaded array is stacked above a 4-by-6 unshaded array. Which expression finds the total area? Choices: A: (5 × 6) + (4 × 6); B: 6 + 5 + 4; C: (5 × 6) × (4 × 6); D: 6 × 5 × 4.",
+        "es": "Pregunta 30. Un arreglo sombreado de 5 por 6 está sobre un arreglo sin sombrear de 4 por 6. ¿Qué expresión halla el área total? Opciones: A: (5 × 6) + (4 × 6); B: 6 + 5 + 4; C: (5 × 6) × (4 × 6); D: 6 × 5 × 4."
+      }
+    }
+  }
+}

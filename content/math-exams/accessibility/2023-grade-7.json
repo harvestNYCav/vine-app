@@ -1,0 +1,802 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2023-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2023-g7-mc-q1": {
+      "inputHash": "3d5e9c5636eb06365c72bdf36b88647c47b4eeeeb5cc5c1bbb2c2fc39871435f",
+      "description": {
+        "en": "Question 1. What is the value of the expression (−1/3) ÷ (2/5)? Choices: A: −6/5. B: −5/6. C: 5/6. D: 6/5.",
+        "es": "Pregunta 1. ¿Cuál es el valor de la expresión (−1/3) ÷ (2/5)? Opciones: A: −6/5 B: −5/6 C: 5/6 D: 6/5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−1/3) ÷ (2/5)",
+          "−6/5",
+          "−5/6",
+          "5/6",
+          "6/5",
+          "A: −6/5",
+          "B: −5/6",
+          "C: 5/6",
+          "D: 6/5",
+          "(−1/3)",
+          "(2/5)"
+        ],
+        "es": [
+          "(−1/3) ÷ (2/5)",
+          "−6/5",
+          "−5/6",
+          "5/6",
+          "6/5",
+          "A: −6/5",
+          "B: −5/6",
+          "C: 5/6",
+          "D: 6/5",
+          "(−1/3)",
+          "(2/5)"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q2": {
+      "inputHash": "cd85273f66d9f45a93a665f776f0c26612cb4c03058b36b061aabb02678ef385",
+      "description": {
+        "en": "Question 2. Maria and two friends are at a movie theater. They have $52.00 and spend $34.50 of it on movie tickets. They also buy 3 drinks that each cost the same amount. After buying the movie tickets and drinks, they have $4.00 remaining. How much did each drink cost? Choices: A: $2.50. B: $3.83. C: $4.00. D: $4.50.",
+        "es": "Pregunta 2. María y dos amigos están en el cine. Tienen $52.00 y gastan $34.50 de ese dinero en entradas para el cine. También compran 3 bebidas que cuestan cada una lo mismo. Luego de comprar las entradas y las bebidas, les quedan $4.00. ¿Cuánto costó cada bebida? Opciones: A: $2.50 B: $3.83 C: $4.00 D: $4.50"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$52.00",
+          "$34.50",
+          "3",
+          "$4.00",
+          "$2.50",
+          "$3.83",
+          "$4.50",
+          "A: $2.50",
+          "B: $3.83",
+          "C: $4.00",
+          "D: $4.50"
+        ],
+        "es": [
+          "$52.00",
+          "$34.50",
+          "3 bebidas",
+          "$4.00",
+          "$2.50",
+          "$3.83",
+          "$4.50",
+          "A: $2.50",
+          "B: $3.83",
+          "C: $4.00",
+          "D: $4.50"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q4": {
+      "inputHash": "9e3665c83240510a4d0674182dbc30062c6269d7c13a8219f81a7f5ade5b14e9",
+      "description": {
+        "en": "Question 4. Megan reads the same number of pages in a book each day. A table titled “NUMBER OF PAGES READ” represents the total number of pages read at the end of the given number of days. The columns are “Number of Days” and “Total Number of Pages.” The rows are: 2 days, 32 pages; 4 days, 64 pages; 5 days, 80 pages; and 7 days, 112 pages. How many pages does Megan read in 1 day? Choices: A: 16. B: 18. C: 28. D: 32.",
+        "es": "Pregunta 4. Megan lee cada día el mismo número de páginas de un libro. La tabla representa el número total de páginas leídas al final del número de días establecido. La tabla se titula «NÚMERO DE PÁGINAS LEÍDAS» y tiene dos columnas: «Número de días» y «Cantidad total de páginas». Sus pares de valores son: 2 días, 32 páginas; 4 días, 64 páginas; 5 días, 80 páginas; y 7 días, 112 páginas. ¿Cuántas páginas lee Megan en 1 día? Opciones: A: 16 B: 18 C: 28 D: 32"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 days, 32 pages",
+          "4 days, 64 pages",
+          "5 days, 80 pages",
+          "7 days, 112 pages",
+          "1 day",
+          "16",
+          "18",
+          "28",
+          "32",
+          "A: 16",
+          "B: 18",
+          "C: 28",
+          "D: 32"
+        ],
+        "es": [
+          "2 días, 32 páginas",
+          "4 días, 64 páginas",
+          "5 días, 80 páginas",
+          "7 días, 112 páginas",
+          "1 día",
+          "16",
+          "18",
+          "28",
+          "32",
+          "A: 16",
+          "B: 18",
+          "C: 28",
+          "D: 32"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q5": {
+      "inputHash": "90b70871aaa60cad5a5a3b0b1218bf7cc6fbf57e5793277426ffa26ee1f42edf",
+      "description": {
+        "en": "Question 5. Which expression is equivalent to the one below? −1.5 + 2/5 + (−7) + 2.6. Choices: A: (−5.5 + 2.6) + 2/5. B: (−8.5 + 2.6) + 2/5. C: (−1/5 + 2/5) + (−4.4). D: (−1/5 + 2/5) + (−9.6).",
+        "es": "Pregunta 5. ¿Qué expresión es equivalente a la que se muestra a continuación: −1.5 + 2/5 + (−7) + 2.6? Opciones: A: (−5.5 + 2.6) + 2/5 B: (−8.5 + 2.6) + 2/5 C: (−1/5 + 2/5) + (−4.4) D: (−1/5 + 2/5) + (−9.6)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−1.5 + 2/5 + (−7) + 2.6",
+          "(−5.5 + 2.6) + 2/5",
+          "(−8.5 + 2.6) + 2/5",
+          "(−1/5 + 2/5) + (−4.4)",
+          "(−1/5 + 2/5) + (−9.6)",
+          "A: (−5.5 + 2.6) + 2/5",
+          "B: (−8.5 + 2.6) + 2/5",
+          "C: (−1/5 + 2/5) + (−4.4)",
+          "D: (−1/5 + 2/5) + (−9.6)",
+          "2/5",
+          "(−7)",
+          "(−5.5 + 2.6)",
+          "(−8.5 + 2.6)",
+          "(−1/5 + 2/5)",
+          "(−4.4)",
+          "(−9.6)"
+        ],
+        "es": [
+          "−1.5 + 2/5 + (−7) + 2.6",
+          "(−5.5 + 2.6) + 2/5",
+          "(−8.5 + 2.6) + 2/5",
+          "(−1/5 + 2/5) + (−4.4)",
+          "(−1/5 + 2/5) + (−9.6)",
+          "A: (−5.5 + 2.6) + 2/5",
+          "B: (−8.5 + 2.6) + 2/5",
+          "C: (−1/5 + 2/5) + (−4.4)",
+          "D: (−1/5 + 2/5) + (−9.6)",
+          "2/5",
+          "(−7)",
+          "(−5.5 + 2.6)",
+          "(−8.5 + 2.6)",
+          "(−1/5 + 2/5)",
+          "(−4.4)",
+          "(−9.6)"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q8": {
+      "inputHash": "1115daff9eca6848106b3134047c17cd639f89223bdfe067f9ad9bbaebc479bf",
+      "description": {
+        "en": "Question 8. Joel has three buckets containing different amounts of liquid. The amounts are 7 1/2 liters, 5 3/4 liters, and 6 3/4 liters. Joel mixes all the liquid together. Then he pours all the liquid equally into 5 containers. How many liters of liquid does Joel pour into each container? Choices: A: 2 1/2. B: 4. C: 6. D: 6 2/3.",
+        "es": "Pregunta 8. Joel tiene tres baldes que contienen diferentes cantidades de líquido. La cantidad de líquido en cada balde es: 7 1/2 litros; 5 3/4 litros; y 6 3/4 litros. Joel mezcla todo el líquido. A continuación, vierte todo el líquido por igual en 5 recipientes. ¿Cuántos litros de líquido vierte Joel en cada recipiente? Opciones: A: 2 1/2 B: 4 C: 6 D: 6 2/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 1/2 liters",
+          "5 3/4 liters",
+          "6 3/4 liters",
+          "5 containers",
+          "2 1/2",
+          "4",
+          "6",
+          "6 2/3",
+          "A: 2 1/2",
+          "B: 4",
+          "C: 6",
+          "D: 6 2/3",
+          "7 1/2",
+          "5 3/4",
+          "6 3/4"
+        ],
+        "es": [
+          "7 1/2 litros",
+          "5 3/4 litros",
+          "6 3/4 litros",
+          "5 recipientes",
+          "2 1/2",
+          "4",
+          "6",
+          "D: 6 2/3",
+          "A: 2 1/2",
+          "B: 4",
+          "C: 6",
+          "7 1/2",
+          "5 3/4",
+          "6 3/4",
+          "6 2/3"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q9": {
+      "inputHash": "2728e359d3ccb7ebdbb8b96758aaa28577ebd0f1e126230d7daf75f3d9b1552c",
+      "description": {
+        "en": "Question 9. A student’s science scores are 76, 82, 65, 82, 93, 63, 45, 82, 90, 74. What is the mode and how does it compare to the median? Choices: A: The mode is 79 and it is lower than the median. B: The mode is 79 and it is higher than the median. C: The mode is 82 and it is lower than the median. D: The mode is 82 and it is higher than the median.",
+        "es": "Pregunta 9. A continuación se muestran los puntajes de Ciencias de un estudiante: 76, 82, 65, 82, 93, 63, 45, 82, 90, 74. ¿Cuál es la moda y cómo se compara con la mediana? Opciones: A: La moda es 79 y es inferior a la mediana. B: La moda es 79 y es mayor que la mediana. C: La moda es 82 y es inferior a la mediana. D: La moda es 82 y es mayor que la mediana."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "76, 82, 65, 82, 93, 63, 45, 82, 90, 74",
+          "79",
+          "82",
+          "lower than the median",
+          "higher than the median",
+          "A: The mode is 79 and it is lower than the median",
+          "B: The mode is 79 and it is higher than the median",
+          "C: The mode is 82 and it is lower than the median",
+          "D: The mode is 82 and it is higher than the median"
+        ],
+        "es": [
+          "76, 82, 65, 82, 93, 63, 45, 82, 90, 74",
+          "79",
+          "82",
+          "inferior a la mediana",
+          "mayor que la mediana",
+          "A: La moda es 79 y es inferior a la mediana",
+          "B: La moda es 79 y es mayor que la mediana",
+          "C: La moda es 82 y es inferior a la mediana",
+          "D: La moda es 82 y es mayor que la mediana"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q13": {
+      "inputHash": "d6eba6980b07ddda03c218a7540c681d4b7c168e124b5496913af1ef36c30433",
+      "description": {
+        "en": "Question 13. A table titled “BABYSITTING EARNINGS” shows the amount of money, in dollars, that Kathy earns babysitting for a given number of hours worked. The columns are “Number of Hours, h” and “Earnings, d (dollars).” The rows are: h = 4, d = $50.00; h = 5, d = $62.50; h = 6, d = $75.00; and h = 9, d = $112.50. Based on the table, which statement is true about the relationship between the number of hours, h, she works and the amount of money, d, she earns? Choices: A: It is not proportional because when the value of h is 0, the value of d is 0. B: It is proportional because the ratios between the values of d and h are the same for each pair. C: It is not proportional because the difference between d and h is different for each pair of values. D: It is proportional because the values of h increase by the same amount from one pair of values to the next.",
+        "es": "Pregunta 13. La siguiente tabla muestra la cantidad de dinero, en dólares, que gana Kathy cuidando niños durante un número determinado de horas trabajadas. La tabla se titula «GANANCIAS POR EL CUIDADO DE NIÑOS» y tiene dos columnas: «Cantidad de horas, h» y «Ganancias, d (dólares)». Sus pares de valores son: h = 4, d = $50.00; h = 5, d = $62.50; h = 6, d = $75.00; y h = 9, d = $112.50. Según la tabla, ¿qué afirmación es cierta sobre la relación entre el número de horas, h, que trabaja y la cantidad de dinero, d, que gana? Opciones: A: No es proporcional porque cuando el valor de h es 0, el valor de d es 0. B: Es proporcional porque la razón entre los valores de d y h es igual para cada par. C: No es proporcional porque la diferencia entre d y h es distinta para cada par de valores. D: Es proporcional porque los valores de h aumentan del mismo modo de un par de valores al siguiente."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "h = 4, d = $50.00",
+          "h = 5, d = $62.50",
+          "h = 6, d = $75.00",
+          "h = 9, d = $112.50",
+          "h is 0",
+          "d is 0",
+          "d and h",
+          "A: It is not proportional because when the value of h is 0, the value of d is 0",
+          "B: It is proportional because the ratios between the values of d and h are the same for each pair",
+          "C: It is not proportional because the difference between d and h is different for each pair of values",
+          "D: It is proportional because the values of h increase by the same amount from one pair of values to the next"
+        ],
+        "es": [
+          "h = 4, d = $50.00",
+          "h = 5, d = $62.50",
+          "h = 6, d = $75.00",
+          "h = 9, d = $112.50",
+          "h es 0",
+          "d es 0",
+          "razón entre los valores de d y h",
+          "diferencia entre d y h",
+          "A: No es proporcional porque cuando el valor de h es 0, el valor de d es 0",
+          "B: Es proporcional porque la razón entre los valores de d y h es igual para cada par",
+          "C: No es proporcional porque la diferencia entre d y h es distinta para cada par de valores",
+          "D: Es proporcional porque los valores de h aumentan del mismo modo de un par de valores al siguiente"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q16": {
+      "inputHash": "63da13e450a51a8d78a80db8c4b767bb2326819696025bdfc364255cbb55a34d",
+      "description": {
+        "en": "Question 16. The math test scores for Class A and Class B are represented by two horizontal box plots titled “TEST SCORES” above a number line. The number line has labeled ticks at 60, 65, 70, 75, 80, 85, 90, 95, and 100, with arrows extending in both directions. For Class A, the left whisker endpoint is between 65 and 70; the left edge of the box is between 75 and 80; the median is between 80 and 85; the right edge of the box is between 85 and 90; and the right whisker endpoint is at 95. For Class B, the left whisker endpoint is at 75; the left edge of the box is at 85; the median is between 90 and 95, closer to 95; the right edge of the box is between 95 and 100; and the right whisker endpoint is at 100. Which statement about the relationship between the scores of the two classes is true? Choices: A: The median score for Class A is greater than the median score for Class B. B: The range of the scores for Class A is less than the range of the scores for Class B. C: The interquartile range for Class B is greater than the interquartile range for Class A. D: The second quartile value for Class B is less than the second quartile value for Class A.",
+        "es": "Pregunta 16. Los puntajes de los exámenes de Matemáticas de la clase A y clase B están representados en diagramas de caja. El gráfico se titula «PUNTAJES DE LOS EXÁMENES». Una recta numérica horizontal, con flechas en ambos extremos, está marcada de 5 en 5 desde 60 hasta 100: 60, 65, 70, 75, 80, 85, 90, 95 y 100. En el diagrama de la clase A, el extremo izquierdo está entre 65 y 70; el lado izquierdo de la caja está entre 75 y 80; la línea de la mediana está entre 80 y 85; el lado derecho de la caja está entre 85 y 90; y el extremo derecho coincide con 95. En el diagrama de la clase B, el extremo izquierdo coincide con 75; el lado izquierdo de la caja coincide con 85; la línea de la mediana está entre 90 y 95, más cerca de 95; el lado derecho de la caja está entre 95 y 100, más cerca de 95; y el extremo derecho coincide con 100. ¿Qué afirmación sobre la relación entre los puntajes de las dos clases es verdadera? Opciones: A: El puntaje medio de la clase A es mayor que el puntaje medio de la clase B. B: El rango de los puntajes de la clase A es menor que el rango de los puntajes de la clase B. C: El rango intercuartil de la clase B es mayor que el rango intercuartil de la clase A. D: El valor del segundo cuartil de la clase B es menor que el valor del segundo cuartil de la clase A."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "60, 65, 70, 75, 80, 85, 90, 95, and 100",
+          "between 65 and 70",
+          "between 75 and 80",
+          "between 80 and 85",
+          "between 85 and 90",
+          "at 95",
+          "at 75",
+          "at 85",
+          "between 90 and 95",
+          "between 95 and 100",
+          "at 100",
+          "A: The median score for Class A is greater than the median score for Class B",
+          "B: The range of the scores for Class A is less than the range of the scores for Class B",
+          "C: The interquartile range for Class B is greater than the interquartile range for Class A",
+          "D: The second quartile value for Class B is less than the second quartile value for Class A"
+        ],
+        "es": [
+          "60, 65, 70, 75, 80, 85, 90, 95 y 100",
+          "extremo derecho coincide con 95",
+          "extremo izquierdo coincide con 75",
+          "lado izquierdo de la caja coincide con 85",
+          "extremo derecho coincide con 100",
+          "puntaje medio de la clase A",
+          "puntaje medio de la clase B",
+          "rango de los puntajes de la clase A",
+          "rango de los puntajes de la clase B",
+          "rango intercuartil de la clase B",
+          "rango intercuartil de la clase A",
+          "segundo cuartil de la clase B",
+          "segundo cuartil de la clase A",
+          "A: El puntaje medio de la clase A es mayor que el puntaje medio de la clase B",
+          "B: El rango de los puntajes de la clase A es menor que el rango de los puntajes de la clase B",
+          "C: El rango intercuartil de la clase B es mayor que el rango intercuartil de la clase A",
+          "D: El valor del segundo cuartil de la clase B es menor que el valor del segundo cuartil de la clase A"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q17": {
+      "inputHash": "c191c8428a697da3b96df1e2a322976ebcb7b931a02d9aa0849f4b6f5033883f",
+      "description": {
+        "en": "Question 17. The design of an office parking lot is represented by five equal-width parking spaces arranged side by side. Each parking space is 8 1/2 feet wide. There are four equal gaps between adjacent parking spaces, and each gap is x feet wide. The total width from the left edge of the first parking space to the right edge of the fifth parking space is 50 feet. What is the distance, x, between each parking space in the parking lot? Choices: A: 17/20 foot. B: 1 1/2 feet. C: 1 7/8 feet. D: 1 7/10 feet.",
+        "es": "Pregunta 17. A continuación se muestra el diseño del estacionamiento de una oficina. La distancia entre cada parcela de estacionamiento es de x pies. El “DIAGRAMA DEL ESTACIONAMIENTO” contiene cinco parcelas consecutivas, cada una con un automóvil. El ancho de cada parcela, medido entre sus dos líneas verticales, es 8 1/2 pies. Entre cada par de parcelas contiguas hay un espacio de x pies; hay cuatro espacios de x pies en total. La distancia completa desde la línea exterior izquierda de la primera parcela hasta la línea exterior derecha de la quinta parcela es 50 pies. ¿Cuál es la distancia, x, entre cada parcela del estacionamiento? Opciones: A: 17/20 pies B: 1 1/2 pies C: 1 7/8 pies D: 1 7/10 pies"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 1/2",
+          "x",
+          "50 feet",
+          "17/20",
+          "1 1/2",
+          "1 7/8",
+          "1 7/10",
+          "A: 17/20 foot",
+          "B: 1 1/2 feet",
+          "C: 1 7/8 feet",
+          "D: 1 7/10 feet"
+        ],
+        "es": [
+          "x pies",
+          "8 1/2 pies",
+          "50 pies",
+          "17/20 pies",
+          "1 1/2 pies",
+          "1 7/8 pies",
+          "1 7/10 pies",
+          "A: 17/20 pies",
+          "B: 1 1/2 pies",
+          "C: 1 7/8 pies",
+          "D: 1 7/10 pies",
+          "8 1/2",
+          "17/20",
+          "1 1/2",
+          "1 7/8",
+          "1 7/10"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q18": {
+      "inputHash": "0769a7d85b498b9ebded6963be6cca98ce99a95e6fa3185fa50141452eccd1c8",
+      "description": {
+        "en": "Question 18. A student has a bus pass with a balance of $30.00. Each time the student rides the bus, the balance on the bus pass decreases by $2.25. What is the greatest number of bus rides the student can take using the bus pass? Choices: A: 10. B: 13. C: 14. D: 15.",
+        "es": "Pregunta 18. Un estudiante tiene un pase de autobús con un saldo de $30.00. Cada vez que el estudiante toma el autobús, el saldo del pase disminuye $2.25. ¿Cuál es el número máximo de viajes en autobús que el estudiante puede hacer con su pase? Opciones: A: 10 B: 13 C: 14 D: 15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$30.00",
+          "$2.25",
+          "10",
+          "13",
+          "14",
+          "15",
+          "A: 10",
+          "B: 13",
+          "C: 14",
+          "D: 15"
+        ],
+        "es": [
+          "$30.00",
+          "$2.25",
+          "10",
+          "13",
+          "14",
+          "15",
+          "A: 10",
+          "B: 13",
+          "C: 14",
+          "D: 15"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q21": {
+      "inputHash": "7505adc3c704e575664557d94b5c52961a4fad5c5d8a8369e5baba8ae4b2ed9c",
+      "description": {
+        "en": "Question 21. A store sells blue hats and green hats. Each hat is priced at $8.00. The expression 8b + 8g can be used to determine the total price when a customer buys any number of blue hats, b, and any number of green hats, g. Which equivalent expression could also be used to determine the total price, in dollars, of the hats? Choices: A: 8bg. B: 16bg. C: 8(b + g). D: 16(b + g).",
+        "es": "Pregunta 21. Una tienda vende sombreros azules y verdes. Cada sombrero tiene un precio de $8.00. La expresión 8b + 8g puede usarse para determinar el precio total cuando un cliente compra una determinada cantidad de sombreros azules, b, y una determinada cantidad de sombreros verdes, g. ¿Qué otra expresión equivalente podría usarse para determinar el precio total, en dólares, de los sombreros? Opciones: A: 8bg B: 16bg C: 8(b + g) D: 16(b + g)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$8.00",
+          "8b + 8g",
+          "8bg",
+          "16bg",
+          "8(b + g)",
+          "16(b + g)",
+          "A: 8bg",
+          "B: 16bg",
+          "C: 8(b + g)",
+          "D: 16(b + g)"
+        ],
+        "es": [
+          "$8.00",
+          "8b + 8g",
+          "b",
+          "g",
+          "8bg",
+          "16bg",
+          "8(b + g)",
+          "16(b + g)",
+          "A: 8bg",
+          "B: 16bg",
+          "C: 8(b + g)",
+          "D: 16(b + g)"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q23": {
+      "inputHash": "a10c9eb2e84066ebe76b34f9fc2625127725bcc4ebfc73c5a8349f288327fe5c",
+      "description": {
+        "en": "Question 23. A store manager collects information about the number of people who visit his store each week. The information, collected over a 3-week period, is listed as follows: The number of people who visited the store in week 1 was 3,200. The number of people who visited the store in week 2 was 10% more than in week 1. The number of people who visited the store in week 3 was 15% more than in week 2. How many people visited the store in week 3? Choices: A: 3,520. B: 3,680. C: 4,000. D: 4,048.",
+        "es": "Pregunta 23. El director de una tienda recopila información sobre el número de personas que visitan su tienda cada semana. A continuación se muestra la información recopilada durante un período de 3 semanas. El número de personas que visitaron la tienda en la primera semana fue de 3,200. El número de personas que visitaron la tienda en la segunda semana fue un 10 % más que en la primera. El número de personas que visitaron la tienda en la tercera semana fue un 15 % más que en la segunda. ¿Cuántas personas visitaron la tienda en la tercera semana? Opciones: A: 3,520 B: 3,680 C: 4,000 D: 4,048"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3-week",
+          "week 1",
+          "3,200",
+          "week 2",
+          "10%",
+          "week 3",
+          "15%",
+          "3,520",
+          "3,680",
+          "4,000",
+          "4,048",
+          "A: 3,520",
+          "B: 3,680",
+          "C: 4,000",
+          "D: 4,048"
+        ],
+        "es": [
+          "3 semanas",
+          "3,200",
+          "10 %",
+          "15 %",
+          "3,520",
+          "3,680",
+          "4,000",
+          "4,048",
+          "A: 3,520",
+          "B: 3,680",
+          "C: 4,000",
+          "D: 4,048"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q25": {
+      "inputHash": "7fa8307eece972ef182fd7070e04842699a2bf156513f372483752016a84804a",
+      "description": {
+        "en": "Question 25. Joseph has a part-time job. A coordinate graph titled “JOSEPH’S EARNINGS” represents the amount Joseph earns, in dollars, for the number of hours he works. The horizontal x-axis is labeled “Hours Worked” and is numbered from 0 through 10 in increments of 1. The vertical y-axis is labeled “Earnings (dollars)” and has grid marks in increments of 10, with 0, 20, 40, 60, 80, and 100 labeled. A straight ray begins at the origin, (0, 0), passes through the solid plotted points (2, 30) and (6, 90), and continues upward and to the right. Based on the graph, which equation can be used to determine the earnings, in dollars, for every hour he works? Choices: A: y = 1.5x. B: y = 15x. C: x = 1.5y. D: x = 15y.",
+        "es": "Pregunta 25. Joseph tiene un trabajo a tiempo parcial. El siguiente gráfico representa el monto que Joseph gana, en dólares, por el número de horas que trabaja. El gráfico se titula “GANANCIAS DE JOSEPH”. El eje horizontal, x, se titula “Horas trabajadas” y está marcado de 1 a 10 en incrementos de 1. El eje vertical, y, se titula “Ganancias (dólares)”; muestra 0 en el origen y etiquetas en 20, 40, 60, 80 y 100, con líneas de cuadrícula cada 10 dólares. Una recta ascendente parte del origen (0, 0), pasa por los puntos sólidos (2, 30) y (6, 90), y continúa hacia arriba y a la derecha con una flecha, aproximadamente hasta (7 1/3, 110). Según el gráfico, ¿qué ecuación se puede utilizar para determinar lo que gana, en dólares, por cada hora que trabaja? Opciones: A: y = 1.5x B: y = 15x C: x = 1.5y D: x = 15y"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(2, 30)",
+          "(6, 90)",
+          "y = 1.5x",
+          "y = 15x",
+          "x = 1.5y",
+          "x = 15y",
+          "A: y = 1.5x",
+          "B: y = 15x",
+          "C: x = 1.5y",
+          "D: x = 15y"
+        ],
+        "es": [
+          "x",
+          "y",
+          "1 a 10",
+          "20",
+          "40",
+          "60",
+          "80",
+          "100",
+          "10 dólares",
+          "(0, 0)",
+          "(2, 30)",
+          "(6, 90)",
+          "(7 1/3, 110)",
+          "y = 1.5x",
+          "y = 15x",
+          "x = 1.5y",
+          "x = 15y",
+          "A: y = 1.5x",
+          "B: y = 15x",
+          "C: x = 1.5y",
+          "D: x = 15y"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q31": {
+      "inputHash": "f5adf9095b00b755dc2fe7145c4c092f4a137fc72a776449badf7d4d837a6fad",
+      "description": {
+        "en": "Question 31. A line plot titled “HITS AT BASEBALL TOURNAMENT” represents the number of hits by some players at a baseball tournament. The horizontal number line is labeled “Number of hits” and has values 0 through 7. Each X represents one player. There are 3 Xs above 0, 7 Xs above 1, no Xs above 2, 5 Xs above 3, 4 Xs above 4, 2 Xs above 5, 5 Xs above 6, and 1 X above 7. How many players are represented by the data on the line plot? Choices: A: 3. B: 7. C: 27. D: 85.",
+        "es": "Pregunta 31. El diagrama lineal representa el número de aciertos de algunos jugadores en un torneo de béisbol y se titula “ACIERTOS EN EL TORNEO DE BÉISBOL”. La recta horizontal, titulada “Cantidad de aciertos”, tiene marcas en los enteros de 0 a 7 y flechas en ambos extremos. Cada X representa un jugador. Hay 3 X sobre 0 aciertos, 7 X sobre 1 acierto, ninguna X sobre 2 aciertos, 5 X sobre 3 aciertos, 4 X sobre 4 aciertos, 2 X sobre 5 aciertos, 5 X sobre 6 aciertos y 1 X sobre 7 aciertos. ¿A cuántos jugadores representan los datos del diagrama lineal? Opciones: A: 3 B: 7 C: 27 D: 85"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 Xs above 0",
+          "7 Xs above 1",
+          "no Xs above 2",
+          "5 Xs above 3",
+          "4 Xs above 4",
+          "2 Xs above 5",
+          "5 Xs above 6",
+          "1 X above 7",
+          "3",
+          "7",
+          "27",
+          "85",
+          "A: 3",
+          "B: 7",
+          "C: 27",
+          "D: 85"
+        ],
+        "es": [
+          "0 a 7",
+          "3 X sobre 0 aciertos",
+          "7 X sobre 1 acierto",
+          "ninguna X sobre 2 aciertos",
+          "5 X sobre 3 aciertos",
+          "4 X sobre 4 aciertos",
+          "2 X sobre 5 aciertos",
+          "5 X sobre 6 aciertos",
+          "1 X sobre 7 aciertos",
+          "3",
+          "7",
+          "27",
+          "85",
+          "A: 3",
+          "B: 7",
+          "C: 27",
+          "D: 85"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q32": {
+      "inputHash": "70320c7bcf9f6b7e6a79f9e5eff8ee9a635405ed2778289781eb8b1d2a7db662",
+      "description": {
+        "en": "Question 32. The bill for a dinner at a restaurant is $58.20, before sales tax and tip. Sales tax is 5% of the dinner bill. Tip is 20% of the dinner bill. How much is the total bill including tax and tip? Choices: A: $83.20. B: $72.75. C: $62.27. D: $58.45.",
+        "es": "Pregunta 32. La cuenta de una cena en un restaurante es de $58.20, sin incluir el impuesto sobre las ventas ni la propina. El impuesto sobre las ventas es el 5 % de la cuenta de la cena. La propina es el 20 % de la cuenta de la cena. ¿Cuál es el importe total de la cuenta, impuestos y propina incluidos? Opciones: A: $83.20 B: $72.75 C: $62.27 D: $58.45"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$58.20",
+          "5%",
+          "20%",
+          "$83.20",
+          "$72.75",
+          "$62.27",
+          "$58.45",
+          "A: $83.20",
+          "B: $72.75",
+          "C: $62.27",
+          "D: $58.45"
+        ],
+        "es": [
+          "$58.20",
+          "5 %",
+          "20 %",
+          "$83.20",
+          "$72.75",
+          "$62.27",
+          "$58.45",
+          "A: $83.20",
+          "B: $72.75",
+          "C: $62.27",
+          "D: $58.45"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q33": {
+      "inputHash": "c16a0953169847994135d64ae371b5fe99865f7435141cd504323bbe107306e9",
+      "description": {
+        "en": "Question 33. A bicyclist travels 6 1/2 miles in 2/3 hour. What is the average speed, in miles per hour, of the bicyclist? Choices: A: 6 1/2. B: 6 5/6. C: 7 1/6. D: 9 3/4.",
+        "es": "Pregunta 33. Un ciclista recorre 6 1/2 millas en 2/3 horas. ¿Cuál es la velocidad promedio, en millas por hora, del ciclista? Opciones: A: 6 1/2 B: 6 5/6 C: 7 1/6 D: 9 3/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 1/2",
+          "2/3",
+          "6 5/6",
+          "7 1/6",
+          "9 3/4",
+          "A: 6 1/2",
+          "B: 6 5/6",
+          "C: 7 1/6",
+          "D: 9 3/4"
+        ],
+        "es": [
+          "6 1/2 millas",
+          "2/3 horas",
+          "6 1/2",
+          "6 5/6",
+          "7 1/6",
+          "9 3/4",
+          "A: 6 1/2",
+          "B: 6 5/6",
+          "C: 7 1/6",
+          "D: 9 3/4",
+          "2/3"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q34": {
+      "inputHash": "c757add6b56c847adc9b490d028257a13f2e231215ac0e96b74b0c20a304ded8",
+      "description": {
+        "en": "Question 34. At a deli, customers buying a sandwich can choose one type of bread, one type of meat, and one type of cheese. The options for each sandwich are listed below. Bread: white or wheat. Meat: turkey or beef. Cheese: American, Swiss, or cheddar. Assuming each choice is equally likely, what is the probability a customer will choose a sandwich with white bread, turkey, and Swiss cheese? Choices: A: 1/12. B: 1/7. C: 1/4. D: 1/3.",
+        "es": "Pregunta 34. En una rotisería, los clientes que compran un sándwich pueden elegir un tipo de pan, un tipo de carne y un tipo de queso. A continuación se indican las opciones para cada sándwich. Pan: blanco o integral. Carne: pavo o ternera. Queso: americano, suizo o cheddar. En el supuesto de que cada opción tenga la misma probabilidad, ¿cuál es la probabilidad de que un cliente elija un sándwich con pan blanco, pavo y queso suizo? Opciones: A: 1/12 B: 1/7 C: 1/4 D: 1/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/12",
+          "1/7",
+          "1/4",
+          "1/3",
+          "A: 1/12",
+          "B: 1/7",
+          "C: 1/4",
+          "D: 1/3"
+        ],
+        "es": [
+          "1/12",
+          "1/7",
+          "1/4",
+          "1/3",
+          "A: 1/12",
+          "B: 1/7",
+          "C: 1/4",
+          "D: 1/3"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q35": {
+      "inputHash": "1bf7fb42f9370fb6eae6b34b0d7433bae8bf71be5ea655f79b07d372b7c52494",
+      "description": {
+        "en": "Question 35. Frank is riding in a taxi to get to work. The cost of riding in a taxi includes a one-time fee of $2.75, and $2.60 per mile. If Frank rides in a taxi for 4 miles and pays a $2.00 tip, how much money will he have left over if he pays with a $20.00 bill? Choices: A: $4.85. B: $6.85. C: $7.35. D: $7.60.",
+        "es": "Pregunta 35. Frank viaja en taxi para ir al trabajo. El costo del viaje en taxi incluye una tarifa única de $2.75 y $2.60 por milla. Si Frank recorre 4 millas en taxi y paga $2.00 de propina, ¿cuánto dinero le sobrará si paga con un billete de $20.00? Opciones: A: $4.85 B: $6.85 C: $7.35 D: $7.60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$2.75",
+          "$2.60",
+          "4 miles",
+          "$2.00",
+          "$20.00",
+          "$4.85",
+          "$6.85",
+          "$7.35",
+          "$7.60",
+          "A: $4.85",
+          "B: $6.85",
+          "C: $7.35",
+          "D: $7.60"
+        ],
+        "es": [
+          "$2.75",
+          "$2.60",
+          "4 millas",
+          "$2.00",
+          "$20.00",
+          "$4.85",
+          "$6.85",
+          "$7.35",
+          "$7.60",
+          "A: $4.85",
+          "B: $6.85",
+          "C: $7.35",
+          "D: $7.60"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q36": {
+      "inputHash": "06dbc4184d52f290aa40d4a02e628abdf3bab4c3ac91551c1248105c1e37216f",
+      "description": {
+        "en": "Question 36. The sum of two numbers is zero. If one of the numbers is 5, what is the other number? Choices: A: −10. B: −5. C: 0. D: 5.",
+        "es": "Pregunta 36. La suma de dos números es cero. Si uno de los números es 5, ¿cuál es el otro número? Opciones: A: −10 B: −5 C: 0 D: 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "−10",
+          "−5",
+          "0",
+          "A: −10",
+          "B: −5",
+          "C: 0",
+          "D: 5"
+        ],
+        "es": [
+          "5",
+          "−10",
+          "−5",
+          "0",
+          "A: −10",
+          "B: −5",
+          "C: 0",
+          "D: 5"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q37": {
+      "inputHash": "c22e5b5bdc0b65e04c1e8859cf60bcb9162b0720302d47748eb3611cdc056a95",
+      "description": {
+        "en": "Question 37. Ms. Jacobs has $15.00 to spend on coffee and donuts. She buys 1 coffee for $2.59. The cost of each donut is $1.09. Which inequality could be used to determine the greatest number of donuts, d, that Ms. Jacobs can buy? Choices: A: 1.09d + 2.59 ≤ 15. B: 1.09d + 2.59 ≥ 15. C: 1.09 + 2.59d ≤ 15. D: 1.09 + 2.59d ≥ 15.",
+        "es": "Pregunta 37. La Sra. Jacobs tiene $15.00 para gastar en café y donas. Compra 1 café por $2.59. El costo de cada dona es de $1.09. ¿Qué desigualdad podría utilizarse para determinar el mayor número de donas, d, que puede comprar la Sra. Jacobs? Opciones: A: 1.09d + 2.59 ≤ 15 B: 1.09d + 2.59 ≥ 15 C: 1.09 + 2.59d ≤ 15 D: 1.09 + 2.59d ≥ 15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$15.00",
+          "1 coffee",
+          "$2.59",
+          "$1.09",
+          "d",
+          "1.09d + 2.59 ≤ 15",
+          "1.09d + 2.59 ≥ 15",
+          "1.09 + 2.59d ≤ 15",
+          "1.09 + 2.59d ≥ 15",
+          "A: 1.09d + 2.59 ≤ 15",
+          "B: 1.09d + 2.59 ≥ 15",
+          "C: 1.09 + 2.59d ≤ 15",
+          "D: 1.09 + 2.59d ≥ 15",
+          "2.59 ≤ 15",
+          "2.59 ≥ 15"
+        ],
+        "es": [
+          "$15.00",
+          "1",
+          "$2.59",
+          "$1.09",
+          "d",
+          "1.09d + 2.59 ≤ 15",
+          "1.09d + 2.59 ≥ 15",
+          "1.09 + 2.59d ≤ 15",
+          "1.09 + 2.59d ≥ 15",
+          "A: 1.09d + 2.59 ≤ 15",
+          "B: 1.09d + 2.59 ≥ 15",
+          "C: 1.09 + 2.59d ≤ 15",
+          "D: 1.09 + 2.59d ≥ 15",
+          "2.59 ≤ 15",
+          "2.59 ≥ 15"
+        ]
+      }
+    },
+    "nysed-2023-g7-mc-q38": {
+      "inputHash": "d5ee79dd3a810867715843c8c15a71fef41c6965d8ad375c93de013def00c52b",
+      "description": {
+        "en": "Question 38. Maggie owns a dog grooming business. The prices for two services are listed below. A dog wash costs $31.50. A nail trim costs $17.00. A customer receives an 18% discount when paying for both a dog wash and a nail trim. What is the total price the customer will pay for a dog wash and a nail trim with the discount? Choices: A: $18.00. B: $39.77. C: $42.83. D: $48.50.",
+        "es": "Pregunta 38. Maggie tiene una peluquería canina. A continuación se indican los precios de dos servicios. $31.50 por lavado de perros. $17.00 por corte de uñas. Un cliente recibe un descuento del 18 % cuando paga tanto por el lavado como por el corte de uñas. ¿Cuál es el precio total que el cliente pagará por el lavado y el corte de uñas con el descuento? Opciones: A: $18.00 B: $39.77 C: $42.83 D: $48.50"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$31.50",
+          "$17.00",
+          "18%",
+          "$18.00",
+          "$39.77",
+          "$42.83",
+          "$48.50",
+          "A: $18.00",
+          "B: $39.77",
+          "C: $42.83",
+          "D: $48.50"
+        ],
+        "es": [
+          "$31.50",
+          "$17.00",
+          "18 %",
+          "$18.00",
+          "$39.77",
+          "$42.83",
+          "$48.50",
+          "A: $18.00",
+          "B: $39.77",
+          "C: $42.83",
+          "D: $48.50"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,804 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2022-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2022-g7-mc-q1": {
+      "inputHash": "a2ee3a03302d4aa4f53902d6fd4ea6663e9e7a1dd77f2c691213a9145309e20b",
+      "description": {
+        "en": "Question 1. Based on a weather report, the probability that it will rain tomorrow is 0.13. Which word describes the likelihood that it will rain tomorrow? Choices: A: certain. B: impossible. C: likely. D: unlikely.",
+        "es": "Pregunta 1. Según un parte meteorológico, la probabilidad de que mañana llueva es de 0.13. ¿Qué palabra describe la probabilidad de que mañana llueva? Opciones: A: seguro B: imposible C: probable D: improbable"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.13",
+          "A: certain",
+          "B: impossible",
+          "C: likely",
+          "D: unlikely"
+        ],
+        "es": [
+          "0.13",
+          "seguro",
+          "imposible",
+          "probable",
+          "improbable",
+          "A: seguro",
+          "B: imposible",
+          "C: probable",
+          "D: improbable"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q2": {
+      "inputHash": "7a6233c296ea0ea1d9ce81bd48526121cd7d529c0cee7661694daa138a0d21a8",
+      "description": {
+        "en": "Question 2. Two stores each advertise a discount on the same type of watch. At both stores, the original price of the watch was $35.00. Store A discounts the price of the watch by 20%. Store B discounts the price of the watch by 15%. How much less is the discounted price of the watch at Store A than the discounted price of the watch at Store B? Choices: A: $1.75. B: $5.00. C: $5.25. D: $7.00.",
+        "es": "Pregunta 2. Dos tiendas publicitan un descuento en el mismo tipo de reloj de pulsera. En ambas tiendas, el precio original del reloj de pulsera era de $35.00. • La Tienda A aplica un descuento del 20 % al precio del reloj de pulsera. • La Tienda B aplica un descuento del 15 % al precio del reloj de pulsera. ¿Cuánto menor es el precio con descuento del reloj de pulsera en la Tienda A que el precio con descuento del reloj de pulsera en la Tienda B? Opciones: A: $1.75 B: $5.00 C: $5.25 D: $7.00"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$35.00",
+          "20%",
+          "15%",
+          "$1.75",
+          "$5.00",
+          "$5.25",
+          "$7.00",
+          "A: $1.75",
+          "B: $5.00",
+          "C: $5.25",
+          "D: $7.00"
+        ],
+        "es": [
+          "$35.00",
+          "20 %",
+          "15 %",
+          "$1.75",
+          "$5.00",
+          "$5.25",
+          "$7.00",
+          "A: $1.75",
+          "B: $5.00",
+          "C: $5.25",
+          "D: $7.00"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q4": {
+      "inputHash": "6ec1417ee4b78589fbd078bf40b1d466f49e6c0cb68f94f42628c4444aa22eb7",
+      "description": {
+        "en": "Question 4. A spinner has five equal-sized sections colored blue, red, orange, yellow, and green. The arrow on the spinner was spun 50 times during an experiment. A table titled “RESULTS OF EXPERIMENT” has two columns, Color and Frequency. Its rows are: Blue, 12; Red, 15; Orange, 6; Yellow, 10; Green, 7. Based on the results, what is the experimental probability that on any one spin, the arrow will land on the red section? Choices: A: 1/15. B: 1/5. C: 3/7. D: 3/10.",
+        "es": "Pregunta 4. Una ruleta tiene cinco secciones de igual tamaño de color azul, rojo, naranja, amarillo y verde. La flecha en la ruleta ha girado 50 veces durante un experimento. Los resultados se muestran en la tabla a continuación. Tabla titulada «RESULTADOS DEL EXPERIMENTO», con las columnas «Color» y «Frecuencia»: Azul, 12; Rojo, 15; Naranja, 6; Amarillo, 10; Verde, 7. Según los resultados, ¿cuál es la probabilidad experimental de que, en cualquiera de los giros, la flecha se detenga en la sección de color rojo? Opciones: A: 1/15 B: 1/5 C: 3/7 D: 3/10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "50",
+          "Blue, 12",
+          "Red, 15",
+          "Orange, 6",
+          "Yellow, 10",
+          "Green, 7",
+          "1/15",
+          "1/5",
+          "3/7",
+          "3/10",
+          "A: 1/15",
+          "B: 1/5",
+          "C: 3/7",
+          "D: 3/10"
+        ],
+        "es": [
+          "50",
+          "Azul, 12",
+          "Rojo, 15",
+          "Naranja, 6",
+          "Amarillo, 10",
+          "Verde, 7",
+          "1/15",
+          "1/5",
+          "3/7",
+          "3/10",
+          "A: 1/15",
+          "B: 1/5",
+          "C: 3/7",
+          "D: 3/10"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q5": {
+      "inputHash": "57382eb545fdbc4a1e2135411378e141226efea775260c97ff63f3bb879ba977",
+      "description": {
+        "en": "Question 5. Which expression is equivalent to −3(2x − 8) + 4x? Choices: A: −2x − 8. B: −2x + 24. C: −10x − 8. D: −10x + 24.",
+        "es": "Pregunta 5. ¿Qué expresión es equivalente a −3(2x − 8) + 4x? Opciones: A: −2x − 8 B: −2x + 24 C: −10x − 8 D: −10x + 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−3(2x − 8) + 4x",
+          "−2x − 8",
+          "−2x + 24",
+          "−10x − 8",
+          "−10x + 24",
+          "A: −2x − 8",
+          "B: −2x + 24",
+          "C: −10x − 8",
+          "D: −10x + 24",
+          "(2x − 8)"
+        ],
+        "es": [
+          "−3(2x − 8) + 4x",
+          "−2x − 8",
+          "−2x + 24",
+          "−10x − 8",
+          "−10x + 24",
+          "A: −2x − 8",
+          "B: −2x + 24",
+          "C: −10x − 8",
+          "D: −10x + 24",
+          "(2x − 8)"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q9": {
+      "inputHash": "c4f6eb72176b219c2ae0230edc7d8b20887568c7e49d3040d35fcab5b4dd1951",
+      "description": {
+        "en": "Question 9. The data set below represents the distribution of daily high temperatures in a city for 8 days: 79, 73, 72, 70, 72, 66, 81, 75. What is the median daily high temperature, in degrees Fahrenheit, in the city? Choices: A: 71. B: 72.5. C: 73. D: 73.5.",
+        "es": "Pregunta 9. El conjunto de datos que se muestra a continuación representa la distribución de temperaturas máximas diarias en una ciudad durante 8 días. 79, 73, 72, 70, 72, 66, 81, 75 ¿Cuál es la mediana de la temperatura máxima diaria, en grados Fahrenheit, en la ciudad? Opciones: A: 71 B: 72.5 C: 73 D: 73.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 days",
+          "79, 73, 72, 70, 72, 66, 81, 75",
+          "71",
+          "72.5",
+          "73",
+          "73.5",
+          "A: 71",
+          "B: 72.5",
+          "C: 73",
+          "D: 73.5"
+        ],
+        "es": [
+          "8 días",
+          "79, 73, 72, 70, 72, 66, 81, 75",
+          "71",
+          "72.5",
+          "73",
+          "73.5",
+          "A: 71",
+          "B: 72.5",
+          "C: 73",
+          "D: 73.5"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q10": {
+      "inputHash": "35fed8b9173256d1580f962d6686eaf0dff190ebe39cd02a395ac4aa6dd511ac",
+      "description": {
+        "en": "Question 10. The menu at an ice cream store is given. The ICE CREAM MENU has three categories. Size options are Small, Medium, and Large. Flavor options are Vanilla, Chocolate, and Strawberry. Topping options are Dip, Sprinkles, and Crunch Coat. How many different choices of one size, one flavor, and one topping can be made from the menu? Choices: A: 3. B: 9. C: 18. D: 27.",
+        "es": "Pregunta 10. A continuación se muestra el menú en una heladería. Tabla titulada «MENÚ DE HELADOS», con tres columnas. Tamaño: Pequeño, Mediano, Grande. Sabor: Vainilla, Chocolate, Fresa. Cobertura: Baño, Granas, Capa de crocante. ¿Cuántas opciones diferentes de un tamaño, un sabor y una cobertura pueden elegirse del menú? Opciones: A: 3 B: 9 C: 18 D: 27"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Small, Medium, and Large",
+          "Vanilla, Chocolate, and Strawberry",
+          "Dip, Sprinkles, and Crunch Coat",
+          "A: 3",
+          "B: 9",
+          "C: 18",
+          "D: 27"
+        ],
+        "es": [
+          "Pequeño, Mediano, Grande",
+          "Vainilla, Chocolate, Fresa",
+          "Baño, Granas, Capa de crocante",
+          "3",
+          "9",
+          "18",
+          "27",
+          "A: 3",
+          "B: 9",
+          "C: 18",
+          "D: 27"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q11": {
+      "inputHash": "c96c89d35a486863f55e04330f3afeea2e6199c05233b0858e41afdb8dfc1248",
+      "description": {
+        "en": "Question 11. The cost for 10 ounces of organic blueberries is $2.70. Which equation can be used to determine x, the cost, in dollars, for 30 ounces of organic blueberries? Choices: A: 10/2.7 = x/30. B: 2.7/10 = 30/x. C: 10/2.7 = 30/x. D: 2.7/30 = x/10.",
+        "es": "Pregunta 11. El costo de 10 onzas de arándanos orgánicos es de $2.70. ¿Qué ecuación puede usarse para determinar x, el costo, en dólares, para 30 onzas de arándanos orgánicos? Opciones: A: 10/2.7 = x/30 B: 2.7/10 = 30/x C: 10/2.7 = 30/x D: 2.7/30 = x/10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 ounces",
+          "$2.70",
+          "30 ounces",
+          "10/2.7 = x/30",
+          "2.7/10 = 30/x",
+          "10/2.7 = 30/x",
+          "2.7/30 = x/10",
+          "A: 10/2.7 = x/30",
+          "B: 2.7/10 = 30/x",
+          "C: 10/2.7 = 30/x",
+          "D: 2.7/30 = x/10",
+          "10/2",
+          "7/10",
+          "7/30"
+        ],
+        "es": [
+          "10 onzas",
+          "$2.70",
+          "30 onzas",
+          "10/2.7 = x/30",
+          "2.7/10 = 30/x",
+          "10/2.7 = 30/x",
+          "2.7/30 = x/10",
+          "A: 10/2.7 = x/30",
+          "B: 2.7/10 = 30/x",
+          "C: 10/2.7 = 30/x",
+          "D: 2.7/30 = x/10",
+          "10/2",
+          "7/10",
+          "7/30"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q19": {
+      "inputHash": "0c0d0dcda8efd027dca22c7573a6afeeaff74fe1310bd33096970f12b5a23531",
+      "description": {
+        "en": "Question 19. Which expression has the same value as the expression −3/8 − 7/8? Choices: A: 3/8 + 7/8. B: −3/8 + 7/8. C: 3/8 + (−7/8). D: −3/8 + (−7/8).",
+        "es": "Pregunta 19. ¿Qué expresión tiene el mismo valor que la expresión que se muestra a continuación? −3/8 − 7/8 Opciones: A: 3/8 + 7/8 B: −3/8 + 7/8 C: 3/8 + (−7/8) D: −3/8 + (−7/8)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−3/8 − 7/8",
+          "3/8 + 7/8",
+          "−3/8 + 7/8",
+          "3/8 + (−7/8)",
+          "−3/8 + (−7/8)",
+          "A: 3/8 + 7/8",
+          "B: −3/8 + 7/8",
+          "C: 3/8 + (−7/8)",
+          "D: −3/8 + (−7/8)",
+          "3/8",
+          "7/8",
+          "(−7/8)"
+        ],
+        "es": [
+          "−3/8 − 7/8",
+          "3/8 + 7/8",
+          "−3/8 + 7/8",
+          "3/8 + (−7/8)",
+          "−3/8 + (−7/8)",
+          "A: 3/8 + 7/8",
+          "B: −3/8 + 7/8",
+          "C: 3/8 + (−7/8)",
+          "D: −3/8 + (−7/8)",
+          "3/8",
+          "7/8",
+          "(−7/8)"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q20": {
+      "inputHash": "9f5694527eb91aa684e85d801d532599c9900c11d54f100a07bd3cc63d5b4b9c",
+      "description": {
+        "en": "Question 20. A chef made 150 cups of chili and sold 60% of it. A serving size of the chili is 1 2/3 cups. How many servings of chili were sold? Choices: A: 36. B: 54. C: 90. D: 100.",
+        "es": "Pregunta 20. Un chef preparó 150 tazas de chili y vendió el 60 %. El tamaño de una porción de chili es de 1 2/3 tazas. ¿Cuántas porciones de chili se vendieron? Opciones: A: 36 B: 54 C: 90 D: 100"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "150",
+          "60%",
+          "1 2/3",
+          "36",
+          "54",
+          "90",
+          "100",
+          "A: 36",
+          "B: 54",
+          "C: 90",
+          "D: 100"
+        ],
+        "es": [
+          "150",
+          "60 %",
+          "1 2/3",
+          "36",
+          "54",
+          "90",
+          "100",
+          "A: 36",
+          "B: 54",
+          "C: 90",
+          "D: 100"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q21": {
+      "inputHash": "12aac16880036e0cb8639bc7699ac2fded47dddeb1891b40d919939aca88206f",
+      "description": {
+        "en": "Question 21. At sunset, a thermometer had a reading of 4°F. During the night, the temperature decreased 15°F. After the decrease, what is the total number of degrees that the temperature must change for the thermometer to read 0°F? Choices: A: 4°F. B: 11°F. C: 15°F. D: 19°F.",
+        "es": "Pregunta 21. Al atardecer, un termómetro tenía una lectura de 4°F. Durante la noche, la temperatura disminuyó 15°F. Después de la disminución, ¿cuál es la cantidad total de grados que debe cambiar la temperatura para que la lectura del termómetro sea de 0°F? Opciones: A: 4°F B: 11°F C: 15°F D: 19°F"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4°F",
+          "15°F",
+          "0°F",
+          "11°F",
+          "19°F",
+          "A: 4°F",
+          "B: 11°F",
+          "C: 15°F",
+          "D: 19°F"
+        ],
+        "es": [
+          "4°F",
+          "15°F",
+          "0°F",
+          "11°F",
+          "19°F",
+          "A: 4°F",
+          "B: 11°F",
+          "C: 15°F",
+          "D: 19°F"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q25": {
+      "inputHash": "59e542183f029f12fdbbc003c2e9049dac46f7bf802efb73b88ce5fd640a2656",
+      "description": {
+        "en": "Question 25. A gardener uses a total of 61.5 gallons of gasoline in one month. Of the total amount of gasoline, 3/5 was used in his lawn mowers. How many gallons of gasoline did the gardener use in his lawn mowers in the one month? Choices: A: 12.3. B: 24.6. C: 26.5. D: 36.9.",
+        "es": "Pregunta 25. Un jardinero usa un total de 61.5 galones de gasolina en un mes. De la cantidad total de gasolina, 3/5 se usaron en sus cortadoras de césped. ¿Cuántos galones de gasolina usó el jardinero en sus cortadoras de césped en ese mes? Opciones: A: 12.3 B: 24.6 C: 26.5 D: 36.9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "61.5",
+          "3/5",
+          "12.3",
+          "24.6",
+          "26.5",
+          "36.9",
+          "A: 12.3",
+          "B: 24.6",
+          "C: 26.5",
+          "D: 36.9"
+        ],
+        "es": [
+          "61.5",
+          "3/5",
+          "12.3",
+          "24.6",
+          "26.5",
+          "36.9",
+          "A: 12.3",
+          "B: 24.6",
+          "C: 26.5",
+          "D: 36.9"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q26": {
+      "inputHash": "4f675234c69375e6be5271aca7760c11a0251d1843d62004afe1133acd8686b6",
+      "description": {
+        "en": "Question 26. A machine in a factory makes 2 1/4 pounds of nails in 1 1/2 hours. At what rate, in pounds per hour, does the machine make nails? Choices: A: 2/3. B: 3/4. C: 1 1/2. D: 3 3/4.",
+        "es": "Pregunta 26. Una máquina en una fábrica produce 2 1/4 libras de clavos en 1 1/2 horas. ¿A qué tasa, en libras por hora, produce clavos la máquina? Opciones: A: 2/3 B: 3/4 C: 1 1/2 D: 3 3/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 1/4",
+          "1 1/2",
+          "2/3",
+          "3/4",
+          "3 3/4",
+          "A: 2/3",
+          "B: 3/4",
+          "C: 1 1/2",
+          "D: 3 3/4"
+        ],
+        "es": [
+          "2 1/4",
+          "1 1/2",
+          "2/3",
+          "3/4",
+          "3 3/4",
+          "A: 2/3",
+          "B: 3/4",
+          "C: 1 1/2",
+          "D: 3 3/4"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q28": {
+      "inputHash": "fba9cdb2ad21d97e46629319532fcfac5a71cce91bbbba9a6e129513a585e27a",
+      "description": {
+        "en": "Question 28. The table below shows a proportional relationship between x and y. The table has columns labeled x and y. Its ordered row pairs (x, y) are (0.50, 0.750), (1.25, 1.875), (3.00, 4.500), and (6.75, 10.125). What is the constant of proportionality for the relationship between x and y? Choices: A: 0.25. B: 0.50. C: 1.50. D: 1.75.",
+        "es": "Pregunta 28. La siguiente tabla muestra una relación proporcional entre x e y. La tabla tiene dos columnas, x e y. Sus pares de valores son: x = 0.50, y = 0.750; x = 1.25, y = 1.875; x = 3.00, y = 4.500; x = 6.75, y = 10.125. ¿Cuál es la constante de proporcionalidad para la relación entre x e y? Opciones: A: 0.25 B: 0.50 C: 1.50 D: 1.75"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "(x, y)",
+          "(0.50, 0.750)",
+          "(1.25, 1.875)",
+          "(3.00, 4.500)",
+          "(6.75, 10.125)",
+          "0.25",
+          "0.50",
+          "1.50",
+          "1.75",
+          "A: 0.25",
+          "B: 0.50",
+          "C: 1.50",
+          "D: 1.75"
+        ],
+        "es": [
+          "x",
+          "y",
+          "0.50",
+          "0.750",
+          "1.25",
+          "1.875",
+          "3.00",
+          "4.500",
+          "6.75",
+          "10.125",
+          "0.25",
+          "1.50",
+          "1.75",
+          "A: 0.25",
+          "B: 0.50",
+          "C: 1.50",
+          "D: 1.75"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q31": {
+      "inputHash": "0ad5bcc19dd2b5cf53229664224edd2b8df959c98d026b5b8317a68afdc2c329",
+      "description": {
+        "en": "Question 31. Mr. Jensen purchased an airline ticket on a web site. The original price of the airline ticket was $473.00. He used a coupon code to receive a 20% discount. A sales tax of 12% was applied after the discount. What was the total purchase price of the airline ticket after the discount, including sales tax? Choices: A: $105.92. B: $332.99. C: $423.81. D: $529.76.",
+        "es": "Pregunta 31. El señor Jensen compró un boleto de aerolínea en un sitio web. El precio original del boleto de aerolínea era de $473.00. Él usó el código de un cupón para recibir un descuento del 20 %. Se aplicó un impuesto a las ventas del 12 % después del descuento. ¿Cuál fue el precio total de compra del boleto de aerolínea después del descuento, con el impuesto a las ventas incluido? Opciones: A: $105.92 B: $332.99 C: $423.81 D: $529.76"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$473.00",
+          "20%",
+          "12%",
+          "$105.92",
+          "$332.99",
+          "$423.81",
+          "$529.76",
+          "A: $105.92",
+          "B: $332.99",
+          "C: $423.81",
+          "D: $529.76"
+        ],
+        "es": [
+          "$473.00",
+          "20 %",
+          "12 %",
+          "$105.92",
+          "$332.99",
+          "$423.81",
+          "$529.76",
+          "A: $105.92",
+          "B: $332.99",
+          "C: $423.81",
+          "D: $529.76"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q32": {
+      "inputHash": "c6177bf41f23052c28e4a697f0c594fa2241f3cf251e46326476c20120fbe94c",
+      "description": {
+        "en": "Question 32. What is the value of 12.5 − 31/2 + 1 1/4? Choices: A: −20.25. B: −17.25. C: −17/4. D: −7/4.",
+        "es": "Pregunta 32. ¿Cuál es el valor de 12.5 − 31/2 + 1 1/4? Opciones: A: −20.25 B: −17.25 C: −17/4 D: −7/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12.5 − 31/2 + 1 1/4",
+          "−20.25",
+          "−17.25",
+          "−17/4",
+          "−7/4",
+          "A: −20.25",
+          "B: −17.25",
+          "C: −17/4",
+          "D: −7/4",
+          "31/2",
+          "1 1/4",
+          "17/4",
+          "7/4"
+        ],
+        "es": [
+          "12.5 − 31/2 + 1 1/4",
+          "−20.25",
+          "−17.25",
+          "−17/4",
+          "−7/4",
+          "A: −20.25",
+          "B: −17.25",
+          "C: −17/4",
+          "D: −7/4",
+          "31/2",
+          "1 1/4",
+          "17/4",
+          "7/4"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q33": {
+      "inputHash": "9c9ff32cb2355254b7a790caec55fe034f935bec67465cedd38f38f9187e2000",
+      "description": {
+        "en": "Question 33. On a map, two cities are 2.8 inches apart. The map has a scale of 1 inch to 25 miles. How far apart, in inches, would the same two cities be on a map that has a scale of 1 inch to 40 miles? Choices: A: 1.20. B: 1.60. C: 1.75. D: 1.80.",
+        "es": "Pregunta 33. En un mapa, dos ciudades se encuentran a 2.8 pulgadas de distancia. El mapa tiene una escala de 1 pulgada = 25 millas. ¿A qué distancia, en pulgadas, se encontrarían las mismas dos ciudades en un mapa que tuviera una escala de 1 pulgada = 40 millas? Opciones: A: 1.20 B: 1.60 C: 1.75 D: 1.80"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2.8",
+          "1 inch to 25 miles",
+          "1 inch to 40 miles",
+          "1.20",
+          "1.60",
+          "1.75",
+          "1.80",
+          "A: 1.20",
+          "B: 1.60",
+          "C: 1.75",
+          "D: 1.80"
+        ],
+        "es": [
+          "2.8",
+          "1 pulgada = 25 millas",
+          "1 pulgada = 40 millas",
+          "1.20",
+          "1.60",
+          "1.75",
+          "1.80",
+          "A: 1.20",
+          "B: 1.60",
+          "C: 1.75",
+          "D: 1.80"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q34": {
+      "inputHash": "49966bdfd3958ab88a00ed0e0c9b72a18eab411f9902b6bd56b3ed58056c6b3a",
+      "description": {
+        "en": "Question 34. Katelyn wants to buy a $75.00 skateboard. She has $25.00 saved so far. She mows lawns to make extra money and earns $20.00 for each lawn she mows. Which inequality can be used to determine the number of lawns, x, she needs to mow to have enough money to buy the skateboard? Choices: A: 25 + 20x ≤ 75. B: 25 + 20x ≥ 75. C: 20 + 25x ≤ 75. D: 20 + 25x ≥ 75.",
+        "es": "Pregunta 34. Katelyn quiere comprar un monopatín de $75.00. Ella tiene $25.00 ahorrados hasta el momento. Corta el césped para ganar dinero adicional y recibe $20.00 por cada corte de césped. ¿Qué desigualdad puede usarse para determinar la cantidad de cortes, x, que debe realizar para tener suficiente dinero para comprar el monopatín? Opciones: A: 25 + 20x ≤ 75 B: 25 + 20x ≥ 75 C: 20 + 25x ≤ 75 D: 20 + 25x ≥ 75"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$75.00",
+          "$25.00",
+          "$20.00",
+          "x",
+          "25 + 20x ≤ 75",
+          "25 + 20x ≥ 75",
+          "20 + 25x ≤ 75",
+          "20 + 25x ≥ 75",
+          "A: 25 + 20x ≤ 75",
+          "B: 25 + 20x ≥ 75",
+          "C: 20 + 25x ≤ 75",
+          "D: 20 + 25x ≥ 75"
+        ],
+        "es": [
+          "$75.00",
+          "$25.00",
+          "$20.00",
+          "x",
+          "25 + 20x ≤ 75",
+          "25 + 20x ≥ 75",
+          "20 + 25x ≤ 75",
+          "20 + 25x ≥ 75",
+          "A: 25 + 20x ≤ 75",
+          "B: 25 + 20x ≥ 75",
+          "C: 20 + 25x ≤ 75",
+          "D: 20 + 25x ≥ 75"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q35": {
+      "inputHash": "902ab616fe154e9d6a3bfe37566c9f90ef9f30ebeebe89b294c3aff7035d4477",
+      "description": {
+        "en": "Question 35. A coach compared the heights of the players on two different teams. The data set is given in a table titled “HEIGHTS OF PLAYERS ON TWO TEAMS.” Team A player heights, in inches, are 76, 68, 73, 65, 60, 63, 69, and 76. Team B player heights, in inches, are 63, 73, 64, 70, 70, 67, 75, and 62. Based on these data, which statement is true? Choices: A: The mean height of the players on Team B is greater than the mean height of the players on Team A. B: The mean height of the players on Team A is greater than the mean height of the players on Team B. C: The median height of the players on Team B is greater than the median height of the players on Team A. D: The median height of the players on Team A is greater than the median height of the players on Team B.",
+        "es": "Pregunta 35. Un entrenador comparó las estaturas de los jugadores de dos equipos diferentes. El conjunto de datos se muestra en una tabla titulada «ESTATURAS DE LOS JUGADORES DE DOS EQUIPOS». La fila «Estaturas de los jugadores del Equipo A (pulgadas)» contiene, en orden: 76, 68, 73, 65, 60, 63, 69, 76. La fila «Estaturas de los jugadores del Equipo B (pulgadas)» contiene, en orden: 63, 73, 64, 70, 70, 67, 75, 62. Según estos datos, ¿qué afirmación es verdadera? Opciones: A: La estatura media de los jugadores del Equipo B es mayor que la estatura media de los jugadores del Equipo A. B: La estatura media de los jugadores del Equipo A es mayor que la estatura media de los jugadores del Equipo B. C: La estatura mediana de los jugadores del Equipo B es mayor que la estatura mediana de los jugadores del Equipo A. D: La estatura mediana de los jugadores del Equipo A es mayor que la estatura mediana de los jugadores del Equipo B."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "76, 68, 73, 65, 60, 63, 69, and 76",
+          "63, 73, 64, 70, 70, 67, 75, and 62",
+          "mean height",
+          "median height",
+          "Team A",
+          "Team B",
+          "A: The mean height of the players on Team B is greater than the mean height of the players on Team A",
+          "B: The mean height of the players on Team A is greater than the mean height of the players on Team B",
+          "C: The median height of the players on Team B is greater than the median height of the players on Team A",
+          "D: The median height of the players on Team A is greater than the median height of the players on Team B"
+        ],
+        "es": [
+          "76, 68, 73, 65, 60, 63, 69, 76",
+          "63, 73, 64, 70, 70, 67, 75, 62",
+          "Equipo A",
+          "Equipo B",
+          "media",
+          "mediana",
+          "A: La estatura media de los jugadores del Equipo B es mayor que la estatura media de los jugadores del Equipo A",
+          "B: La estatura media de los jugadores del Equipo A es mayor que la estatura media de los jugadores del Equipo B",
+          "C: La estatura mediana de los jugadores del Equipo B es mayor que la estatura mediana de los jugadores del Equipo A",
+          "D: La estatura mediana de los jugadores del Equipo A es mayor que la estatura mediana de los jugadores del Equipo B"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q36": {
+      "inputHash": "dba36d68dfd9d5dae0d99365a039bb2ca834805d263cc6cf84628893fdef00ed",
+      "description": {
+        "en": "Question 36. What is the value of the expression −36 ÷ 9 + 3(−7) + 2? Choices: A: −23. B: −19. C: 9. D: 15.",
+        "es": "Pregunta 36. ¿Cuál es el valor de la siguiente expresión? −36 ÷ 9 + 3(−7) + 2. Opciones: A: −23 B: −19 C: 9 D: 15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−36 ÷ 9 + 3(−7) + 2",
+          "−23",
+          "−19",
+          "9",
+          "15",
+          "A: −23",
+          "B: −19",
+          "C: 9",
+          "D: 15",
+          "(−7)"
+        ],
+        "es": [
+          "−36 ÷ 9 + 3(−7) + 2",
+          "−23",
+          "−19",
+          "9",
+          "15",
+          "A: −23",
+          "B: −19",
+          "C: 9",
+          "D: 15",
+          "(−7)"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q37": {
+      "inputHash": "36ccd1819ab59348ebf6662555e49c80a04c69d706e99b43aa5e6bd18cb7a2d6",
+      "description": {
+        "en": "Question 37. A cook uses 1 3/4 teaspoons of salt to make 3 1/2 pounds of pasta. What is the unit rate, in teaspoons per pound, at which the cook uses salt to make pasta? Choices: A: 1/2. B: 1. C: 1 3/4. D: 2.",
+        "es": "Pregunta 37. Un cocinero usa 1 3/4 cucharaditas de sal para preparar 3 1/2 libras de pasta. ¿Cuál es la tasa por unidad, en cucharaditas por libra, a la cual el cocinero usa sal para preparar pasta? Opciones: A: 1/2 B: 1 C: 1 3/4 D: 2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 3/4",
+          "3 1/2",
+          "1/2",
+          "1",
+          "2",
+          "A: 1/2",
+          "B: 1",
+          "C: 1 3/4",
+          "D: 2"
+        ],
+        "es": [
+          "1 3/4",
+          "3 1/2",
+          "1/2",
+          "1",
+          "2",
+          "A: 1/2",
+          "B: 1",
+          "C: 1 3/4",
+          "D: 2"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q38": {
+      "inputHash": "f159d1ecfae29e3bcef8f877975ffbe551b0b617f07f5d5e64042fcd964e71e0",
+      "description": {
+        "en": "Question 38. The expression 48y − 16 represents the perimeter, in feet, of a square. Which expression represents the length, in feet, of each side of the square? Choices: A: 12y − 4. B: 12y − 16. C: 24y − 8. D: 48y − 4.",
+        "es": "Pregunta 38. La expresión 48y − 16 representa el perímetro, en pies, de un cuadrado. ¿Qué expresión representa la longitud, en pies, de cada lado del cuadrado? Opciones: A: 12y − 4 B: 12y − 16 C: 24y − 8 D: 48y − 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "48y − 16",
+          "12y − 4",
+          "12y − 16",
+          "24y − 8",
+          "48y − 4",
+          "A: 12y − 4",
+          "B: 12y − 16",
+          "C: 24y − 8",
+          "D: 48y − 4"
+        ],
+        "es": [
+          "48y − 16",
+          "12y − 4",
+          "12y − 16",
+          "24y − 8",
+          "48y − 4",
+          "A: 12y − 4",
+          "B: 12y − 16",
+          "C: 24y − 8",
+          "D: 48y − 4"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q39": {
+      "inputHash": "ff4ce157f6c7b9e5b14b4906fc22041eda1e06742f169ac2005b0611332025dd",
+      "description": {
+        "en": "Question 39. The equation y = 4.3x can be used to determine the total cost, y, in dollars, of x pounds of apples. What does the number 4.3 represent in the equation? Choices: A: the number of apples in 1 pound. B: the number of apples in x pounds. C: the cost of 1 pound of apples. D: the cost of x pounds of apples.",
+        "es": "Pregunta 39. La ecuación y = 4.3x puede usarse para determinar el costo total, y, en dólares, de x libras de manzanas. ¿Qué representa el número 4.3 en la ecuación? Opciones: A: la cantidad de manzanas en 1 libra B: la cantidad de manzanas en x libras C: el costo de 1 libra de manzanas D: el costo de x libras de manzanas"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 4.3x",
+          "y",
+          "x",
+          "4.3",
+          "1 pound",
+          "x pounds",
+          "A: the number of apples in 1 pound",
+          "B: the number of apples in x pounds",
+          "C: the cost of 1 pound of apples",
+          "D: the cost of x pounds of apples"
+        ],
+        "es": [
+          "y = 4.3x",
+          "y",
+          "4.3",
+          "x",
+          "1 libra",
+          "x libras",
+          "A: la cantidad de manzanas en 1 libra",
+          "B: la cantidad de manzanas en x libras",
+          "C: el costo de 1 libra de manzanas",
+          "D: el costo de x libras de manzanas"
+        ]
+      }
+    },
+    "nysed-2022-g7-mc-q40": {
+      "inputHash": "6b0fe078ad90ae957759a36f0793fb8eaf72acd6ae4a857bb6075ed340edf74c",
+      "description": {
+        "en": "Question 40. Which expression is equivalent to the expression 2 + 3(2x + 5)? Choices: A: 7 + 6x. B: 17 + 2x. C: 17 + 6x. D: 25 + 10x.",
+        "es": "Pregunta 40. ¿Qué expresión es equivalente a la expresión que se muestra a continuación? 2 + 3(2x + 5). Opciones: A: 7 + 6x B: 17 + 2x C: 17 + 6x D: 25 + 10x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 + 3(2x + 5)",
+          "7 + 6x",
+          "17 + 2x",
+          "17 + 6x",
+          "25 + 10x",
+          "A: 7 + 6x",
+          "B: 17 + 2x",
+          "C: 17 + 6x",
+          "D: 25 + 10x",
+          "(2x + 5)"
+        ],
+        "es": [
+          "2 + 3(2x + 5)",
+          "7 + 6x",
+          "17 + 2x",
+          "17 + 6x",
+          "25 + 10x",
+          "A: 7 + 6x",
+          "B: 17 + 2x",
+          "C: 17 + 6x",
+          "D: 25 + 10x",
+          "(2x + 5)"
+        ]
+      }
+    }
+  }
+}

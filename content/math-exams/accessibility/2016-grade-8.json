@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2016-grade-8-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2016-g8-mc-q1": {
+      "inputHash": "645573e162afec459a822446ac86e2146ae819cab622eb2fe06bb183c80f96ef",
+      "description": {
+        "en": "Question 1. Mr. Thomsen is buying two types of gift cards to give as prizes to employees at a company meeting. He will buy restaurant gift cards that each cost $50. He will also buy movie theater gift cards that each cost $20. He has $450 to buy a total of 15 gift cards. How many of each type of gift card can Mr. Thomsen buy? Choices: A: He can buy 5 restaurant gift cards and 10 movie theater gift cards. B: He can buy 8 restaurant gift cards and 7 movie theater gift cards. C: He can buy 10 restaurant gift cards and 5 movie theater gift cards. D: He can buy 12 restaurant gift cards and 3 movie theater gift cards."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$50",
+          "$20",
+          "$450",
+          "15",
+          "5 restaurant gift cards",
+          "10 movie theater gift cards",
+          "8 restaurant gift cards",
+          "7 movie theater gift cards",
+          "10 restaurant gift cards",
+          "5 movie theater gift cards",
+          "12 restaurant gift cards",
+          "3 movie theater gift cards",
+          "A: He can buy 5 restaurant gift cards and 10 movie theater gift cards",
+          "B: He can buy 8 restaurant gift cards and 7 movie theater gift cards",
+          "C: He can buy 10 restaurant gift cards and 5 movie theater gift cards",
+          "D: He can buy 12 restaurant gift cards and 3 movie theater gift cards"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q2": {
+      "inputHash": "3bc175d32520ac42379c40a831903858a0fc53ed03ecab9809874eb254f107d6",
+      "description": {
+        "en": "Question 2. The relationship between temperature in degrees Fahrenheit and degrees Celsius is represented by a coordinate graph titled “TEMPERATURE CONVERSION.” The horizontal x-axis represents degrees Celsius and is labeled from 0 through 5 in increments of 1. The vertical y-axis represents degrees Fahrenheit and is labeled from 26 through 42 in increments of 2. An increasing straight line crosses the y-axis at (0, 32) and continues upward and to the right with an arrow, reaching approximately (5.5, 42). What is the meaning of the y-intercept? Choices: A: the change in degrees Fahrenheit for every change of one degree Celsius. B: the change in degrees Celsius for every change of one degree Fahrenheit. C: the temperature in degrees Fahrenheit when the temperature is zero degrees Celsius. D: the temperature in degrees Celsius when the temperature is zero degrees Fahrenheit."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 through 5",
+          "26 through 42",
+          "(0, 32)",
+          "(5.5, 42)",
+          "one degree Celsius",
+          "one degree Fahrenheit",
+          "zero degrees Celsius",
+          "zero degrees Fahrenheit",
+          "A: the change in degrees Fahrenheit for every change of one degree Celsius",
+          "B: the change in degrees Celsius for every change of one degree Fahrenheit",
+          "C: the temperature in degrees Fahrenheit when the temperature is zero degrees Celsius",
+          "D: the temperature in degrees Celsius when the temperature is zero degrees Fahrenheit"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q3": {
+      "inputHash": "f9610e770bf386ac3b4b9832c15748382103db69cd219bdc16da6f0de2a5a970",
+      "description": {
+        "en": "Question 3. Kevin moved from a city to a small town. The population of the city is 6 × 10⁵, which is about 15 times as great as the small town. Which expression could represent the approximate population of the small town? Choices: A: 4 × 10³. B: 4 × 10⁴. C: 9 × 10⁵. D: 9 × 10⁶."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 × 10⁵",
+          "15",
+          "4 × 10³",
+          "4 × 10⁴",
+          "9 × 10⁵",
+          "9 × 10⁶",
+          "A: 4 × 10³",
+          "B: 4 × 10⁴",
+          "C: 9 × 10⁵",
+          "D: 9 × 10⁶",
+          "10⁵",
+          "10³",
+          "10⁴",
+          "10⁶"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q4": {
+      "inputHash": "1198d4eabff8b91d3ab563220986f94fd7310f89a0fc1422cdb5fa34ddd17925",
+      "description": {
+        "en": "Question 4. Pentagon P and pentagon Q are congruent and are drawn on a coordinate plane. Both axes are marked in increments of 1. Pentagon P has vertices (1, 2), (1, 5), (2, 5), (2, 4), and (3, 2), connected in that order and then back to (1, 2). Pentagon Q has vertices (-3, -5), (-2, -3), (-2, -2), (-1, -2), and (-1, -5), connected in that order and then back to (-3, -5). Which sequence could be used to transform pentagon P to pentagon Q? Choices: A: a 180° clockwise rotation about the origin. B: a translation four units left and then a reflection over the x-axis. C: a reflection over the y-axis and then a translation seven units down. D: a translation seven units down and then a 90° clockwise rotation about the origin."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 2)",
+          "(1, 5)",
+          "(2, 5)",
+          "(2, 4)",
+          "(3, 2)",
+          "(-3, -5)",
+          "(-2, -3)",
+          "(-2, -2)",
+          "(-1, -2)",
+          "(-1, -5)",
+          "180°",
+          "four units left",
+          "seven units down",
+          "90°",
+          "A: a 180° clockwise rotation about the origin",
+          "B: a translation four units left and then a reflection over the x-axis",
+          "C: a reflection over the y-axis and then a translation seven units down",
+          "D: a translation seven units down and then a 90° clockwise rotation about the origin"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q5": {
+      "inputHash": "cc820f0668877a9c1e1f7eb275559983b9d92d1d12a9ce59edcd811ead2ea31a",
+      "description": {
+        "en": "Question 5. The graph of a system of equations is drawn on a coordinate plane whose numbered tick marks increase by 2. One decreasing line crosses the y-axis at (0, 10) and the x-axis at (5, 0), then continues with arrows upward to the left and downward to the right. The other decreasing line passes through the origin (0, 0) and approximately through (-12, 6) and (12, -6), continuing with arrows in both directions. The two lines intersect at approximately (6.7, -3.3). What system of equations represents the graph? Choices: A: y = -2x + 10 and y = -(1/3)x. B: y = -2x + 10 and y = -(1/2)x. C: y = -(1/2)x + 10 and y = -2x. D: y = -(1/3)x + 10 and y = -2x."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 10)",
+          "(5, 0)",
+          "(0, 0)",
+          "(-12, 6)",
+          "(12, -6)",
+          "(6.7, -3.3)",
+          "y = -2x + 10",
+          "y = -(1/3)x",
+          "y = -(1/2)x",
+          "y = -(1/2)x + 10",
+          "y = -2x",
+          "y = -(1/3)x + 10",
+          "A: y = -2x + 10 and y = -(1/3)x",
+          "B: y = -2x + 10 and y = -(1/2)x",
+          "C: y = -(1/2)x + 10 and y = -2x",
+          "D: y = -(1/3)x + 10 and y = -2x",
+          "(1/3)",
+          "(1/2)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q6": {
+      "inputHash": "eeebca4791449d18455df94d63bdafb6aa107e2c8c65df74aad25d2a45d7492d",
+      "description": {
+        "en": "Question 6. A cylinder and a cone have congruent heights and radii. What is the ratio of the volume of the cone to the volume of the cylinder? Choices: A: 1:1. B: 1:3. C: 1:6. D: 1:9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1:1",
+          "1:3",
+          "1:6",
+          "1:9",
+          "A: 1:1",
+          "B: 1:3",
+          "C: 1:6",
+          "D: 1:9"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q7": {
+      "inputHash": "266e16a15f5dc7dd3afe689681ea5521296a02ec18e5903b181a8701169c084f",
+      "description": {
+        "en": "Question 7. Which of the equations listed below are linear equations? Equation I: C = 2πr. Equation II: A = πr². Equation III: V = (4/3)πr³. Choices: A: equation I only. B: equation II only. C: equations I and III. D: equations II and III."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "C = 2πr",
+          "A = πr²",
+          "V = (4/3)πr³",
+          "equation I only",
+          "equation II only",
+          "equations I and III",
+          "equations II and III",
+          "A: equation I only",
+          "B: equation II only",
+          "C: equations I and III",
+          "D: equations II and III",
+          "(4/3)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q8": {
+      "inputHash": "1a8740aaa7d8c5fcb2dc06f5ce1849730e48ba3d24b5417c07f9880e1838b111",
+      "description": {
+        "en": "Question 8. The scatter plot titled “POINTS SCORED AND ALLOWED” shows the points scored and the points allowed by the Bulldogs football team for several games. The horizontal x-axis represents Points Scored and runs from 0 to 30, with numbered labels every 2 points. The vertical y-axis represents Points Allowed and runs from 0 to 30, with numbered labels every 2 points. The plotted points are (2, 14), (7, 21), (10, 17), (13, 20), (14, 10), (16, 4), (17, 13), (20, 24), (21, 17), (24, 28), (24, 10), (27, 3), and (28, 24). Which association (correlation) best describes the data? Choices: A: no association (correlation). B: positive association (correlation). C: negative association (correlation). D: nonlinear association (correlation)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 30",
+          "(2, 14)",
+          "(7, 21)",
+          "(10, 17)",
+          "(13, 20)",
+          "(14, 10)",
+          "(16, 4)",
+          "(17, 13)",
+          "(20, 24)",
+          "(21, 17)",
+          "(24, 28)",
+          "(24, 10)",
+          "(27, 3)",
+          "(28, 24)",
+          "no association (correlation)",
+          "positive association (correlation)",
+          "negative association (correlation)",
+          "nonlinear association (correlation)",
+          "A: no association (correlation)",
+          "B: positive association (correlation)",
+          "C: negative association (correlation)",
+          "D: nonlinear association (correlation)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q9": {
+      "inputHash": "58411af0444e9f7f15f531320c5582accd4be461efd76a788b7929037c4ff41a",
+      "description": {
+        "en": "Question 9. The graph below shows the relationship between the distances run and the time for three people in a 100-yard race. The graph is titled “RUNNERS IN 100-YARD RACE.” The horizontal x-axis is labeled “Time (seconds),” and the vertical y-axis is labeled “Distance (yards).” Three rays begin at the origin. Bella’s ray is the steepest, Kofi’s ray has a middle slope, and Elsie’s ray is the least steep. The relationship between the distance run and the time for Kofi can be represented by the equation y = 15.55x, where he ran y yards in x seconds. Which two equations could be used to represent this relationship for Bella and Elsie? Choices: A: Bella: y = 15.15x; Elsie: y = 15.85x. B: Bella: y = 15.85x; Elsie: y = 15.65x. C: Bella: y = 15.45x; Elsie: y = 15.15x. D: Bella: y = 15.85x; Elsie: y = 15.15x."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "100-yard",
+          "x-axis",
+          "y-axis",
+          "y = 15.55x",
+          "y = 15.15x",
+          "y = 15.85x",
+          "y = 15.65x",
+          "y = 15.45x",
+          "A: Bella: y = 15.15x; Elsie: y = 15.85x",
+          "B: Bella: y = 15.85x; Elsie: y = 15.65x",
+          "C: Bella: y = 15.45x; Elsie: y = 15.15x",
+          "D: Bella: y = 15.85x; Elsie: y = 15.15x"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q10": {
+      "inputHash": "47b9f160e55d830484bb56872824dd9717e1d930eed61c45689012ffd5966565",
+      "description": {
+        "en": "Question 10. Which table of values represents a linear function? Choices: A: A table with columns x and y and rows (0, 0), (1, 1), (4, 16), and (9, 81). B: A table with columns x and y and rows (0, 1), (1, 3), (4, 9), and (9, 20). C: A table with columns x and y and rows (0, 0), (1, 2), (4, 8), and (9, 18). D: A table with columns x and y and rows (0, 0), (1, 2), (4, 4), and (9, 6)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(1, 1)",
+          "(4, 16)",
+          "(9, 81)",
+          "(0, 1)",
+          "(1, 3)",
+          "(4, 9)",
+          "(9, 20)",
+          "(1, 2)",
+          "(4, 8)",
+          "(9, 18)",
+          "(4, 4)",
+          "(9, 6)",
+          "A: A table with columns x and y and rows (0, 0), (1, 1), (4, 16), and (9, 81)",
+          "B: A table with columns x and y and rows (0, 1), (1, 3), (4, 9), and (9, 20)",
+          "C: A table with columns x and y and rows (0, 0), (1, 2), (4, 8), and (9, 18)",
+          "D: A table with columns x and y and rows (0, 0), (1, 2), (4, 4), and (9, 6)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q11": {
+      "inputHash": "e9a629c6804281b3ec4ffa64abc72cdc2fe846aaa21743baa6f76a7715a00c84",
+      "description": {
+        "en": "Question 11. Simplify 5⁻⁸ × 5⁴. Choices: A: 1/5⁴. B: 1/5³². C: −5². D: −5¹²."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5⁻⁸ × 5⁴",
+          "1/5⁴",
+          "1/5³²",
+          "−5²",
+          "−5¹²",
+          "A: 1/5⁴",
+          "B: 1/5³²",
+          "C: −5²",
+          "D: −5¹²",
+          "5⁻⁸",
+          "5⁴",
+          "1/5",
+          "5²",
+          "5¹²"
+        ]
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2016-g8-mc-q12": {
+      "inputHash": "f719a8476cc89819f5643957616025ced0752c8d9f236400eb06c1f6115c8448",
+      "description": {
+        "en": "Question 12. What is the value of t that satisfies the equation below? 3(t + 4) − 2(2t + 3) = −4. Choices: A: −11/3. B: −4/5. C: 10. D: 11."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3(t + 4) − 2(2t + 3) = −4",
+          "−11/3",
+          "−4/5",
+          "10",
+          "11",
+          "A: −11/3",
+          "B: −4/5",
+          "C: 10",
+          "D: 11",
+          "(t + 4)",
+          "(2t + 3)",
+          "11/3",
+          "4/5"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q19": {
+      "inputHash": "6bd578773dcc95632eccd6ad1d8170d0437306c316bc6ff49fa16cf81c907e9d",
+      "description": {
+        "en": "Question 19. Ellentown College has approximately 3 × 10³ students, and Pengrove University has approximately 30,000 students. How many times as much is the number of students at Pengrove University as the number of students at Ellentown College? Choices: A: 1. B: 10. C: 30. D: 100."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 × 10³",
+          "30,000",
+          "1",
+          "10",
+          "30",
+          "100",
+          "A: 1",
+          "B: 10",
+          "C: 30",
+          "D: 100",
+          "10³"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q20": {
+      "inputHash": "34cce2b0760c155c6d36c64fd2c99512aba1b391a6549d3354b8cf6b40c45554",
+      "description": {
+        "en": "Question 20. A series of transformations on quadrilateral S resulted in quadrilateral T. The angle measures of quadrilateral T are congruent to those of quadrilateral S. The side lengths of quadrilateral T are twice as long as those of quadrilateral S. Which transformation on quadrilateral S must be included to result in quadrilateral T? Choices: A: dilation. B: rotation. C: reflection. D: translation."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "quadrilateral S",
+          "quadrilateral T",
+          "twice",
+          "dilation",
+          "rotation",
+          "reflection",
+          "translation",
+          "A: dilation",
+          "B: rotation",
+          "C: reflection",
+          "D: translation"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q21": {
+      "inputHash": "085249ace651f4ba240586c90ba86e96b173fe63f0a61332ff4f7bb6ca354594",
+      "description": {
+        "en": "Question 21. Function 1 is represented by the equation y = −4/5x − 2, and function 2 is represented by a coordinate graph. The graph, titled “FUNCTION 2,” has an x-axis and a y-axis with a one-unit square grid. Function 2 is a downward-opening parabola symmetric about the y-axis. Its vertex is at (0, −2), its greatest output value. The curve passes through approximately (−1, −3), (1, −3), (−2, −6), and (2, −6), and both branches continue downward, as indicated by arrows near y = −9. For which of the functions are all the output values less than −1? Choices: A: both functions. B: only function 1. C: only function 2. D: neither function."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −4/5x − 2",
+          "(0, −2)",
+          "(−1, −3)",
+          "(1, −3)",
+          "(−2, −6)",
+          "(2, −6)",
+          "y = −9",
+          "less than −1",
+          "A: both functions",
+          "B: only function 1",
+          "C: only function 2",
+          "D: neither function",
+          "4/5"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q22": {
+      "inputHash": "5059c05c82ee5ed12eac6475a710cf41a5673ad54c9b2c65dc0bb75154044e5c",
+      "description": {
+        "en": "Question 22. Rectangle FGHJ is translated 6 units right and 1 unit up to produce rectangle F′G′H′J′. On the coordinate plane, the original rectangle has vertices F(−5, 2), G(−2, 2), H(−2, −3), and J(−5, −3). Its horizontal side FG has length 3 units, and its vertical side GH has length 5 units. Which statement about the side lengths of rectangle F′G′H′J′ is true? Choices: A: F′G′ = 3 and G′H′ = 5. B: F′G′ = 3 and G′H′ = 6. C: F′G′ = 9 and G′H′ = 5. D: F′G′ = 9 and G′H′ = 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 units right",
+          "1 unit up",
+          "F(−5, 2)",
+          "G(−2, 2)",
+          "H(−2, −3)",
+          "J(−5, −3)",
+          "FG",
+          "3 units",
+          "GH",
+          "5 units",
+          "F′G′ = 3",
+          "G′H′ = 5",
+          "G′H′ = 6",
+          "F′G′ = 9",
+          "A: F′G′ = 3 and G′H′ = 5",
+          "B: F′G′ = 3 and G′H′ = 6",
+          "C: F′G′ = 9 and G′H′ = 5",
+          "D: F′G′ = 9 and G′H′ = 6",
+          "(−5, 2)",
+          "(−2, 2)",
+          "(−2, −3)",
+          "(−5, −3)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q27": {
+      "inputHash": "0b497c527edee15bf45922386f73a07c89ada4852ad7a8057993061a1c66682d",
+      "description": {
+        "en": "Question 27. Solve the system of equations below: 2x + 4y = 10 and 2x + 4y = −10. Choices: A: x = 3, y = 1. B: x = 6, y = −4. C: No solution. D: Infinitely many solutions."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2x + 4y = 10",
+          "2x + 4y = −10",
+          "x = 3, y = 1",
+          "x = 6, y = −4",
+          "No solution",
+          "Infinitely many solutions",
+          "A: x = 3, y = 1",
+          "B: x = 6, y = −4",
+          "C: No solution",
+          "D: Infinitely many solutions"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q28": {
+      "inputHash": "be98ae00a881d83da77cb3c6a87b142ee56805ae9cf0d9fea3976afee6f59905",
+      "description": {
+        "en": "Question 28. Mia enlarged a plan for an outdoor stage. The original plan is a rectangle on a coordinate plane with vertices (−6, 4), (8, 4), (8, −2), and (−6, −2). Its sides are horizontal along y = 4 and y = −2 and vertical along x = −6 and x = 8. She dilated the outdoor stage by a scale factor of four with the center of dilation at the origin. Which ordered pair will be the coordinates of one of the new vertices? Choices: A: (2, 1). B: (8, 16). C: (32, 4). D: (32, 16)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−6, 4)",
+          "(8, 4)",
+          "(8, −2)",
+          "(−6, −2)",
+          "y = 4",
+          "y = −2",
+          "x = −6",
+          "x = 8",
+          "(2, 1)",
+          "(8, 16)",
+          "(32, 4)",
+          "(32, 16)",
+          "A: (2, 1)",
+          "B: (8, 16)",
+          "C: (32, 4)",
+          "D: (32, 16)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q29": {
+      "inputHash": "779dc21ee2249f98399273fbfa763b76bd7045d850acc4d29821cdad0a3c3c8d",
+      "description": {
+        "en": "Question 29. Bianca and Nick are both musicians who sell their songs online. During the same year, Bianca sold 8 × 10⁵ downloads of her songs and Nick sold 4 × 10⁶ downloads of his songs. How many times as much is the number of songs that Nick sold than the number of songs that Bianca sold? Choices: A: 2. B: 5. C: 20. D: 40."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 × 10⁵",
+          "4 × 10⁶",
+          "2",
+          "5",
+          "20",
+          "40",
+          "A: 2",
+          "B: 5",
+          "C: 20",
+          "D: 40",
+          "10⁵",
+          "10⁶"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q30": {
+      "inputHash": "e317f842f763142e7ca4df76beb5629aea800fa563a4107212c22ea7cd8ed1c6",
+      "description": {
+        "en": "Question 30. Which table represents a relation that is not a function? Choices: A: A two-column Input–Output table contains the rows (1, 1), (2, 1), (3, 1), and (4, 1). B: A two-column Input–Output table contains the rows (2, 0), (4, 1), (6, 2), and (8, 0). C: A two-column Input–Output table contains the rows (−1, −7), (−2, 11), (−3, 13), and (−4, 105). D: A two-column Input–Output table contains the rows (3, 0), (5, 2), (7, 1), and (3, −4)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 1)",
+          "(2, 1)",
+          "(3, 1)",
+          "(4, 1)",
+          "(2, 0)",
+          "(6, 2)",
+          "(8, 0)",
+          "(−1, −7)",
+          "(−2, 11)",
+          "(−3, 13)",
+          "(−4, 105)",
+          "(3, 0)",
+          "(5, 2)",
+          "(7, 1)",
+          "(3, −4)",
+          "A: A two-column Input–Output table contains the rows (1, 1), (2, 1), (3, 1), and (4, 1)",
+          "B: A two-column Input–Output table contains the rows (2, 0), (4, 1), (6, 2), and (8, 0)",
+          "C: A two-column Input–Output table contains the rows (−1, −7), (−2, 11), (−3, 13), and (−4, 105)",
+          "D: A two-column Input–Output table contains the rows (3, 0), (5, 2), (7, 1), and (3, −4)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q34": {
+      "inputHash": "9563d7399acd1be8ad5d3e118882c60f362330ed0a563bf8fcfb7aff5d93e704",
+      "description": {
+        "en": "Question 34. The Ecology Club was planning to take a field trip either to the seacoast or the mountains. The club president surveyed all of the members to determine the preferred trip. The results are displayed in a table titled “FIELD TRIP SURVEY.” The columns are Students, Seacoast, Mountains, and Total. The Seventh-Grade row contains 42, 28, and 70, respectively. The Eighth-Grade row contains 30, 50, and 80, respectively. The Total row contains 72, 78, and 150, respectively. Which statement is true about the results of the survey? Choices: A: 20% of eighth-grade students preferred the seacoast. B: 32% of seventh-grade students preferred the mountains. C: 40% of students preferred the mountains. D: 48% of students preferred the seacoast."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "42",
+          "28",
+          "70",
+          "30",
+          "50",
+          "80",
+          "72",
+          "78",
+          "150",
+          "20%",
+          "32%",
+          "40%",
+          "48%",
+          "A: 20% of eighth-grade students preferred the seacoast",
+          "B: 32% of seventh-grade students preferred the mountains",
+          "C: 40% of students preferred the mountains",
+          "D: 48% of students preferred the seacoast"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q35": {
+      "inputHash": "9cb2762411ff2e293dc06e8be3214f5b831898c6337fbd1f4205d012d172b67d",
+      "description": {
+        "en": "Question 35. A cylinder has a radius of 3 inches and a height of 4 3/4 inches. A sphere has a radius of 3 inches. What is the difference between the volumes, to the nearest tenth of a cubic inch, of the cylinder and the sphere? Choices: A: 21.2. B: 51.8. C: 68.3. D: 96.6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 inches",
+          "4 3/4 inches",
+          "21.2",
+          "51.8",
+          "68.3",
+          "96.6",
+          "A: 21.2",
+          "B: 51.8",
+          "C: 68.3",
+          "D: 96.6",
+          "4 3/4"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q36": {
+      "inputHash": "654a92fa78adbe27375fd8ebac8c026b1803d8dfc56b9f837e4b660ea2317b01",
+      "description": {
+        "en": "Question 36. Two friends work at different companies, P and S. Both companies use the number of hours that an employee works to calculate that employee’s vacation hours. The relationship between the number of hours worked and the number of vacation hours for employees at each company is shown in a table and graph, respectively. The COMPANY P table has columns Hours Worked and Vacation Hours and contains the rows (10, 0.4), (20, 0.8), (30, 1.2), (40, 1.6), and (50, 2.0). The COMPANY S graph has Hours Worked on the x-axis and Vacation Hours on the y-axis. The labeled x-axis values are 0, 20, 40, 60, 80, 100, and 120, with grid lines continuing to 140; the labeled y-axis values are 1 through 9, with grid lines continuing to 10. A straight ray begins at the origin, rises to the right, passes through approximately (80, 5), and continues with an arrow to approximately (140, 8.3). Which statement describes the difference in each friend’s vacation hours if both work 2,080 hours? Choices: A: The friend at company S will have about 42 more vacation hours than the friend at company P. B: The friend at company S will have about 46 more vacation hours than the friend at company P. C: The friend at company P will have about eight more vacation hours than the friend at company S. D: The friend at company P will have about nine more vacation hours than the friend at company S."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(10, 0.4)",
+          "(20, 0.8)",
+          "(30, 1.2)",
+          "(40, 1.6)",
+          "(50, 2.0)",
+          "(80, 5)",
+          "(140, 8.3)",
+          "2,080",
+          "42",
+          "46",
+          "eight",
+          "nine",
+          "A: The friend at company S will have about 42 more vacation hours than the friend at company P",
+          "B: The friend at company S will have about 46 more vacation hours than the friend at company P",
+          "C: The friend at company P will have about eight more vacation hours than the friend at company S",
+          "D: The friend at company P will have about nine more vacation hours than the friend at company S"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q37": {
+      "inputHash": "556550390e1b34dba3ef5cd1121350de52d2b1d11e1755fe7768565ecc4bd3f9",
+      "description": {
+        "en": "Question 37. Which equation represents a nonlinear function? Choices: A: y = −3x + 1. B: y = x² + 1. C: y = x/2 + 1. D: y = 2x + 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −3x + 1",
+          "y = x² + 1",
+          "y = x/2 + 1",
+          "y = 2x + 1/2",
+          "A: y = −3x + 1",
+          "B: y = x² + 1",
+          "C: y = x/2 + 1",
+          "D: y = 2x + 1/2",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q38": {
+      "inputHash": "e5367594e4eb8f036ee818a39c91aa4095b01a12ca682d02458f3e74de454e1b",
+      "description": {
+        "en": "Question 38. What is the value of the expression below? (4.8 × 10⁸)/(1.2 × 10⁴) × (2.2 × 10⁻⁶). Choices: A: 0.88. B: 0.088. C: 0.0088. D: 0.00088."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4.8 × 10⁸)/(1.2 × 10⁴) × (2.2 × 10⁻⁶)",
+          "0.88",
+          "0.088",
+          "0.0088",
+          "0.00088",
+          "A: 0.88",
+          "B: 0.088",
+          "C: 0.0088",
+          "D: 0.00088",
+          "(4.8 × 10⁸)",
+          "(1.2 × 10⁴)",
+          "(2.2 × 10⁻⁶)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q39": {
+      "inputHash": "6c0b6aa95e1e1abcf8ca220c086d3f60839665736b3b43dd393dfdabe024bfb2",
+      "description": {
+        "en": "Question 39. A crane is lowering a concrete block from a height of 270 feet above the ground at a constant rate of 2.5 feet per second. Which function can be used to determine h, the height, in feet, above the ground of the concrete block after s seconds? Choices: A: h = 270s + 2.5. B: h = 2.5s + 270. C: h = 270 − 2.5s. D: h = 2.5s − 270."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "270 feet",
+          "2.5 feet per second",
+          "h = 270s + 2.5",
+          "h = 2.5s + 270",
+          "h = 270 − 2.5s",
+          "h = 2.5s − 270",
+          "A: h = 270s + 2.5",
+          "B: h = 2.5s + 270",
+          "C: h = 270 − 2.5s",
+          "D: h = 2.5s − 270"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q40": {
+      "inputHash": "eb2fb0624cb8f68172aeed1ea11377e08d5eda6cf6d1c58a821b6900f68699cb",
+      "description": {
+        "en": "Question 40. Function P is a linear function with a y-intercept of 5. Function Q is defined by the equation y = −(1/3)x + 4. Which statement must be true about functions P and Q? Choices: A: Both functions have the same slope. B: Both functions have a negative slope. C: The functions will have the same input when y = 0. D: The functions will have different outputs when x = 0."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "y = −(1/3)x + 4",
+          "y = 0",
+          "x = 0",
+          "A: Both functions have the same slope",
+          "B: Both functions have a negative slope",
+          "C: The functions will have the same input when y = 0",
+          "D: The functions will have different outputs when x = 0",
+          "(1/3)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q41": {
+      "inputHash": "168cc9c2cb123f53ea64c1a71d4f9ff33b2ebe984b76b66cd827df6f7f7092fd",
+      "description": {
+        "en": "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y coordinate grid marked in increments of 1, with numbered values shown at even integers from 0 through 10. Choices: A: A scatter plot with an overall positive association but points spread noticeably around the trend. The visible points are approximately (1,4), (1,1), (2,4), (2,1), (3,5), (3,2), (3,3), (4,7), (4,3), (5,7), (5,5), (6,5), (6,9), (7,7), (7,10), (8,7), (8,8), and (9,10). Line k rises from about (0,6) toward (7,12), lying above most of the data rather than through their center. B: A scatter plot with a strong negative association. The visible points descend from the upper left toward the lower right, including points near (1,10), (1,7), (2,10), (2,7), (3,9), (3,6), (4,9), (4,4), (5,8), (5,4), (6,6), (6,4), (7,6), (7,5), (8,4), and (9,4). Line k descends from about (0,10) toward the lower right and lies above much of the lower-right data. C: A scatter plot with a strong positive association. The visible points rise from the lower left toward the upper right, including points near (0,2), (1,1), (1,3), (2,4), (2,2), (3,5), (3,3), (4,5), (5,7), (5,4), (6,8), (6,5), (7,9), (7,7), (8,8), (8,10), and (9,8). Line k rises from about (2,0) to about (11,10), lying below most of the data rather than through their center. D: A scatter plot with a strong negative association. The visible points cluster closely around a descending line from the upper left toward the lower right, including points near (0,10), (0,8), (1,10), (1,9), (2,7), (2,9), (3,8), (3,6), (4,7), (4,5), (5,5), (5,4), and (6,5). Line k descends through the center of the cluster from about (0,10) toward the lower right."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1",
+          "0",
+          "10",
+          "(1,4)",
+          "(1,1)",
+          "(2,4)",
+          "(2,1)",
+          "(3,5)",
+          "(3,2)",
+          "(3,3)",
+          "(4,7)",
+          "(4,3)",
+          "(5,7)",
+          "(5,5)",
+          "(6,5)",
+          "(6,9)",
+          "(7,7)",
+          "(7,10)",
+          "(8,7)",
+          "(8,8)",
+          "(9,10)",
+          "(0,6)",
+          "(7,12)",
+          "(1,10)",
+          "(1,7)",
+          "(2,10)",
+          "(2,7)",
+          "(3,9)",
+          "(3,6)",
+          "(4,9)",
+          "(4,4)",
+          "(5,8)",
+          "(5,4)",
+          "(6,6)",
+          "(6,4)",
+          "(7,6)",
+          "(7,5)",
+          "(8,4)",
+          "(9,4)",
+          "(0,10)",
+          "(0,2)",
+          "(1,3)",
+          "(2,2)",
+          "(4,5)",
+          "(6,8)",
+          "(7,9)",
+          "(8,10)",
+          "(9,8)",
+          "(2,0)",
+          "(11,10)",
+          "(0,8)",
+          "(1,9)",
+          "(2,9)",
+          "(3,8)",
+          "A: A scatter plot with an overall positive association but points spread noticeably around the trend. The visible points are approximately (1,4), (1,1), (2,4), (2,1), (3,5), (3,2), (3,3), (4,7), (4,3), (5,7), (5,5), (6,5), (6,9), (7,7), (7,10), (8,7), (8,8), and (9,10). Line k rises from about (0,6) toward (7,12), lying above most of the data rather than through their center",
+          "B: A scatter plot with a strong negative association. The visible points descend from the upper left toward the lower right, including points near (1,10), (1,7), (2,10), (2,7), (3,9), (3,6), (4,9), (4,4), (5,8), (5,4), (6,6), (6,4), (7,6), (7,5), (8,4), and (9,4). Line k descends from about (0,10) toward the lower right and lies above much of the lower-right data",
+          "C: A scatter plot with a strong positive association. The visible points rise from the lower left toward the upper right, including points near (0,2), (1,1), (1,3), (2,4), (2,2), (3,5), (3,3), (4,5), (5,7), (5,4), (6,8), (6,5), (7,9), (7,7), (8,8), (8,10), and (9,8). Line k rises from about (2,0) to about (11,10), lying below most of the data rather than through their center",
+          "D: A scatter plot with a strong negative association. The visible points cluster closely around a descending line from the upper left toward the lower right, including points near (0,10), (0,8), (1,10), (1,9), (2,7), (2,9), (3,8), (3,6), (4,7), (4,5), (5,5), (5,4), and (6,5). Line k descends through the center of the cluster from about (0,10) toward the lower right"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q47": {
+      "inputHash": "9c5c6d1b0f175044eb4964506cf12ec322509856dd516390edde3e3984148c8e",
+      "description": {
+        "en": "Question 47. In the coordinate-plane diagram, lines MN and JK are parallel and are intersected by line QT. The axes are marked in units of 1. Line MN is horizontal at y = 2 and contains M(−5,2), R(−2,2), and N(5,2). Line JK is horizontal at y = −2 and contains J(−5,−2), S(2,−2), and K(5,−2). Transversal QT descends from upper left to lower right, passes through Q(−5,5), R(−2,2), the origin (0,0), S(2,−2), and T(5,−5), and continues with arrows in both directions. Which transformation could be used to show that ∠MRS is congruent to ∠JST? Choices: A: reflect ∠MRS over the x-axis. B: rotate ∠MRS about the origin. C: translate ∠MRS down and to the right. D: dilate ∠MRS by a scale factor of two with the center at point R."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 2",
+          "M(−5,2)",
+          "R(−2,2)",
+          "N(5,2)",
+          "y = −2",
+          "J(−5,−2)",
+          "S(2,−2)",
+          "K(5,−2)",
+          "Q(−5,5)",
+          "(0,0)",
+          "T(5,−5)",
+          "∠MRS",
+          "∠JST",
+          "A: reflect ∠MRS over the x-axis",
+          "B: rotate ∠MRS about the origin",
+          "C: translate ∠MRS down and to the right",
+          "D: dilate ∠MRS by a scale factor of two with the center at point R",
+          "(−5,2)",
+          "(−2,2)",
+          "(5,2)",
+          "(−5,−2)",
+          "(2,−2)",
+          "(5,−2)",
+          "(−5,5)",
+          "(5,−5)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q48": {
+      "inputHash": "4932630dd463cc2102cc574ba4d6740ab7b2fcceb7ef65902d8039483405d1e1",
+      "description": {
+        "en": "Question 48. What is the equation of the line that passes through points (−3, 0.5) and (3, −0.5)? Choices: A: y = −(1/6)x. B: y = −6x. C: y = −(1/6)x + 1. D: y = −6x − 17.5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−3, 0.5)",
+          "(3, −0.5)",
+          "y = −(1/6)x",
+          "y = −6x",
+          "y = −(1/6)x + 1",
+          "y = −6x − 17.5",
+          "A: y = −(1/6)x",
+          "B: y = −6x",
+          "C: y = −(1/6)x + 1",
+          "D: y = −6x − 17.5",
+          "(1/6)"
+        ]
+      }
+    },
+    "nysed-2016-g8-mc-q49": {
+      "inputHash": "f2425bc659cbee0871a9d78a920b12ab5db0a10d4b45a452935b1d2b2e1ab1be",
+      "description": {
+        "en": "Question 49. Function J is graphed on a coordinate grid whose x- and y-axes are marked in units of 1 from −5 through 5. The graph is a straight line with arrows at both ends, rising steeply from lower left to upper right. It crosses the y-axis at (0,−1) and passes through (1,2) and (2,5). If the y-intercept of Function R is 3/2 greater than the y-intercept of Function J, which equation could represent Function R? Choices: A: y = −x + 4.5. B: y = 0.5x + 3. C: y = 3x + 0.5. D: y = 4.5x − 1."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−5",
+          "5",
+          "(0,−1)",
+          "(1,2)",
+          "(2,5)",
+          "3/2",
+          "y = −x + 4.5",
+          "y = 0.5x + 3",
+          "y = 3x + 0.5",
+          "y = 4.5x − 1",
+          "A: y = −x + 4.5",
+          "B: y = 0.5x + 3",
+          "C: y = 3x + 0.5",
+          "D: y = 4.5x − 1"
+        ]
+      }
+    }
+  }
+}

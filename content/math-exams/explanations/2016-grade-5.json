@@ -87,8 +87,8 @@
       "inputHash": "6ddea69d90e28f2613a8d2fa5b2be2ea7398b99da1c502f596536bf4782e69dd",
       "explanation": {
         "text": {
-          "en": "The first prism has volume 3 × 3 × 3 = 27 cubic feet. The second has volume 2 × 3 × 5 = 30 cubic feet, so the difference is 30 − 27 = 3 cubic feet.",
-          "es": "El primer prisma tiene un volumen de 3 × 3 × 3 = 27 pies cúbicos. El segundo tiene un volumen de 2 × 3 × 5 = 30 pies cúbicos, así que la diferencia es 30 − 27 = 3 pies cúbicos."
+        "en": "The first prism has volume 3 × 3 × 3 = 27 cubic feet. The second has volume 2 × 4 × 3 = 24 cubic feet, so the difference is 27 − 24 = 3 cubic feet.",
+        "es": "El primer prisma tiene un volumen de 3 × 3 × 3 = 27 pies cúbicos. El segundo tiene un volumen de 2 × 4 × 3 = 24 pies cúbicos, así que la diferencia es 27 − 24 = 3 pies cúbicos."
         },
         "source": "vine-authored"
       }
@@ -194,7 +194,7 @@
       }
     },
     "nysed-2016-g5-mc-q29": {
-      "inputHash": "f3721902156e7b28e080120b3ec4179b9f5db5da462ac7c4b92eff0b7843df7b",
+      "inputHash": "1eb96f96917c99080830ad4f32860d2b716ccceb02e5ebb804536f8a85f8bd4a",
       "explanation": {
         "text": {
           "en": "One meter equals 100 centimeters. Multiplying 3 meters by 100 centimeters per meter gives 3 × 100 = 300 centimeters.",
@@ -207,8 +207,8 @@
       "inputHash": "12d473594bc1bb3b26d595e565931e1ddd74d63f166262dd459b64028374c261",
       "explanation": {
         "text": {
-          "en": "The side lengths are 7/10 meter and 3/5 meter, with 3/5 = 6/10. Model A shows 7 of 10 columns and 6 of 10 rows overlapping, representing 7/10 × 3/5 = 21/50 square meter.",
-          "es": "Los lados miden 7/10 de metro y 3/5 de metro, con 3/5 = 6/10. El modelo A muestra la superposición de 7 de 10 columnas y 6 de 10 filas, lo que representa 7/10 × 3/5 = 21/50 de metro cuadrado."
+        "en": "Model A shades 7 of the 10 columns and 3 of the 5 rows. Their overlap represents 7/10 × 3/5 = 21/50 square meter, the rectangle's area.",
+        "es": "El modelo A sombrea 7 de las 10 columnas y 3 de las 5 filas. Su superposición representa 7/10 × 3/5 = 21/50 de metro cuadrado, el área del rectángulo."
         },
         "source": "vine-authored"
       }
@@ -257,8 +257,8 @@
       "inputHash": "2d037f92fcebcd1d00c7912be084c09bdad199c1db9bab25967da312ec92ff69",
       "explanation": {
         "text": {
-          "en": "Evaluate inside the parentheses first: 5 − 2 = 3. Then 4 × 3 = 12, so the original expression is equivalent to 4 + 12 + 2.",
-          "es": "Primero se evalúa dentro de los paréntesis: 5 − 2 = 3. Luego, 4 × 3 = 12, así que la expresión original equivale a 4 + 12 + 2."
+        "en": "Evaluate inside the parentheses first: 5 − 2 = 3. Then 4 × 3 = 12, while the division by 2 remains, so the expression is equivalent to 4 + 12 ÷ 2.",
+        "es": "Primero se evalúa dentro de los paréntesis: 5 − 2 = 3. Luego, 4 × 3 = 12, mientras que la división entre 2 permanece, así que la expresión equivale a 4 + 12 ÷ 2."
         },
         "source": "vine-authored"
       }

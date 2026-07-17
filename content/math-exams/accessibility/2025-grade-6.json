@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2025-grade-6-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2025-g6-mc-q1": {
+      "inputHash": "949a63a54c208c9e2e9e7ed49722c5f7df83434621a12ed1b4c977b44a532ef3",
+      "description": {
+        "en": "Question 1. A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe? Choices: A: A table with columns Cheese (cups) and Noodles (ounces), with rows (2, 8), (3, 9), (4, 10), and (5, 11). B: A table with columns Cheese (cups) and Noodles (ounces), with rows (2, 8), (4, 16), (6, 24), and (8, 32). C: A table with columns Cheese (cups) and Noodles (ounces), with rows (8, 2), (9, 3), (10, 4), and (11, 5). D: A table with columns Cheese (cups) and Noodles (ounces), with rows (8, 2), (16, 4), (24, 6), and (32, 8).",
+        "es": "Pregunta 1. Una receta requiere 2 tazas de queso por cada 8 onzas de fideos. ¿Cuál de las tablas representa la proporción de queso respecto de fideos para esta receta? Opciones: A: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 2 y 8; 3 y 9; 4 y 10; 5 y 11, respectivamente. B: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 2 y 8; 4 y 16; 6 y 24; 8 y 32, respectivamente. C: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 8 y 2; 9 y 3; 10 y 4; 11 y 5, respectivamente. D: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 8 y 2; 16 y 4; 24 y 6; 32 y 8, respectivamente."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 cups",
+          "8 ounces",
+          "(2, 8)",
+          "(3, 9)",
+          "(4, 10)",
+          "(5, 11)",
+          "(4, 16)",
+          "(6, 24)",
+          "(8, 32)",
+          "(8, 2)",
+          "(9, 3)",
+          "(10, 4)",
+          "(11, 5)",
+          "(16, 4)",
+          "(24, 6)",
+          "(32, 8)",
+          "A: A table with columns Cheese (cups) and Noodles (ounces), with rows (2, 8), (3, 9), (4, 10), and (5, 11)",
+          "B: A table with columns Cheese (cups) and Noodles (ounces), with rows (2, 8), (4, 16), (6, 24), and (8, 32)",
+          "C: A table with columns Cheese (cups) and Noodles (ounces), with rows (8, 2), (9, 3), (10, 4), and (11, 5)",
+          "D: A table with columns Cheese (cups) and Noodles (ounces), with rows (8, 2), (16, 4), (24, 6), and (32, 8)"
+        ],
+        "es": [
+          "2 tazas",
+          "8 onzas",
+          "2 y 8",
+          "3 y 9",
+          "4 y 10",
+          "5 y 11",
+          "4 y 16",
+          "6 y 24",
+          "8 y 32",
+          "8 y 2",
+          "9 y 3",
+          "10 y 4",
+          "11 y 5",
+          "16 y 4",
+          "24 y 6",
+          "32 y 8",
+          "A: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 2 y 8; 3 y 9; 4 y 10; 5 y 11, respectivamente",
+          "B: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 2 y 8; 4 y 16; 6 y 24; 8 y 32, respectivamente",
+          "C: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 8 y 2; 9 y 3; 10 y 4; 11 y 5, respectivamente",
+          "D: Tabla titulada «RECETA», con las columnas «Queso (tazas)» y «Fideos (onzas)». Sus filas son: 8 y 2; 16 y 4; 24 y 6; 32 y 8, respectivamente"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q3": {
+      "inputHash": "885804d2db630608cb5fd943a93b6f03ff99b2caa7f8373f6d033809dc712b70",
+      "description": {
+        "en": "Question 3. Points W, X, Y, and Z are plotted on a coordinate plane. The x- and y-axes are labeled, and each grid interval represents 1 unit. Point W is at (−2, 3), point X is at (−2, −3), point Y is at (2, −3), and point Z is at (2, 3). Which point is located at (−2, 3)? Choices: A: point W. B: point X. C: point Y. D: point Z.",
+        "es": "Pregunta 3. En el siguiente plano de coordenadas, están marcados los puntos W, X, Y y Z. Los ejes perpendiculares x e y se intersecan en el origen (0, 0), y la cuadrícula está dividida en unidades. Los puntos son W en (−2, 3), X en (−2, −3), Y en (2, −3) y Z en (2, 3). ¿Qué punto está ubicado en (−2, 3)? Opciones: A: punto W. B: punto X. C: punto Y. D: punto Z."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 unit",
+          "(−2, 3)",
+          "(−2, −3)",
+          "(2, −3)",
+          "(2, 3)",
+          "point W",
+          "point X",
+          "point Y",
+          "point Z",
+          "A: point W",
+          "B: point X",
+          "C: point Y",
+          "D: point Z"
+        ],
+        "es": [
+          "(0, 0)",
+          "(−2, 3)",
+          "(−2, −3)",
+          "(2, −3)",
+          "(2, 3)",
+          "punto W",
+          "punto X",
+          "punto Y",
+          "punto Z",
+          "A: punto W",
+          "B: punto X",
+          "C: punto Y",
+          "D: punto Z"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q5": {
+      "inputHash": "0c81025e3fb728b617a9d77267e8885f60935230260b173a986e06b52fd7ad0f",
+      "description": {
+        "en": "Question 5. What is the value of the expression c³ + 4h − 7 when c = 2 and h = 3? Choices: A: 11. B: 13. C: 42. D: 44.",
+        "es": "Pregunta 5. ¿Cuál es el valor de la siguiente expresión cuando c = 2 y h = 3? La expresión es c³ + 4h − 7. Opciones: A: 11. B: 13. C: 42. D: 44."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "c³ + 4h − 7",
+          "c = 2",
+          "h = 3",
+          "11",
+          "13",
+          "42",
+          "44",
+          "A: 11",
+          "B: 13",
+          "C: 42",
+          "D: 44"
+        ],
+        "es": [
+          "c = 2",
+          "h = 3",
+          "c³ + 4h − 7",
+          "11",
+          "13",
+          "42",
+          "44",
+          "A: 11",
+          "B: 13",
+          "C: 42",
+          "D: 44"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q6": {
+      "inputHash": "056ad59ccfdfe85ea4a761a9d16a50a64137fb38f6ad76fd27d02650876bf3a2",
+      "description": {
+        "en": "Question 6. A carton contains 4 1/2 cups of ice cream. One full serving is 3/4 cup. What is the total number of full servings of ice cream in the carton? Choices: A: 3 3/4. B: 5 1/4. C: 6. D: 12.",
+        "es": "Pregunta 6. Una caja contiene 4 1/2 tazas de helado. Una porción completa es 3/4 de taza. ¿Cuál es la cantidad total de porciones completas de helado que hay en la caja? Opciones: A: 3 3/4. B: 5 1/4. C: 6. D: 12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 1/2 cups",
+          "3/4 cup",
+          "3 3/4",
+          "5 1/4",
+          "6",
+          "12",
+          "A: 3 3/4",
+          "B: 5 1/4",
+          "C: 6",
+          "D: 12",
+          "4 1/2",
+          "3/4"
+        ],
+        "es": [
+          "4 1/2",
+          "3/4",
+          "3 3/4",
+          "5 1/4",
+          "6",
+          "12",
+          "A: 3 3/4",
+          "B: 5 1/4",
+          "C: 6",
+          "D: 12"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q13": {
+      "inputHash": "2b392b51c640fce799ca7e5da4d8cfc35081ea6f810e31749a8da01b99d4fe94",
+      "description": {
+        "en": "Question 13. The net of a right rectangular prism consists of four rectangles joined side by side in one horizontal strip. Each rectangle in the strip has height 5 cm, and their widths alternate 2 cm, 2 cm, 2 cm, and 2 cm. A 2 cm by 2 cm square is attached above the second rectangle, and another congruent square is attached below the first rectangle. Dashed lines mark the fold lines between adjoining faces. What is the surface area, in square centimeters, of this prism? Choices: A: 20. B: 34. C: 40. D: 48.",
+        "es": "Pregunta 13. A continuación, se presenta el desarrollo plano de un prisma rectangular recto. El desarrollo tiene una franja horizontal formada por cuatro caras rectangulares consecutivas, separadas por tres líneas verticales discontinuas. Cada una mide 5 cm de alto y 2 cm de ancho. Un cuadrado de 2 cm por 2 cm está unido por encima de la segunda cara de la franja; su borde compartido con esa cara se representa con una línea horizontal discontinua. Otro cuadrado de 2 cm por 2 cm está unido por debajo de la primera cara; su borde compartido con esa cara también se representa con una línea horizontal discontinua. ¿Cuál es el área de la superficie, en centímetros cuadrados, de este prisma? Opciones: A: 20. B: 34. C: 40. D: 48."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 cm",
+          "2 cm",
+          "2 cm by 2 cm",
+          "20",
+          "34",
+          "40",
+          "48",
+          "A: 20",
+          "B: 34",
+          "C: 40",
+          "D: 48"
+        ],
+        "es": [
+          "5 cm",
+          "2 cm",
+          "2 cm por 2 cm",
+          "20",
+          "34",
+          "40",
+          "48",
+          "A: 20",
+          "B: 34",
+          "C: 40",
+          "D: 48"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q16": {
+      "inputHash": "d80e98f9f54f2311f2dc21ba25b7db5098f9eb5613c1fbccb42608cc8e689ce7",
+      "description": {
+        "en": "Question 16. An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A? Choices: A: 20. B: 35. C: 50. D: 70.",
+        "es": "Pregunta 16. Hay dos fotocopiadoras en una oficina. La fotocopiadora A imprime 350 páginas en 7 minutos. La fotocopiadora B imprime 210 páginas en 3 minutos. ¿Cuántas páginas más que la fotocopiadora A puede imprimir la fotocopiadora B en 1 minuto? Opciones: A: 20. B: 35. C: 50. D: 70."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "350 pages",
+          "7 minutes",
+          "210 pages",
+          "3 minutes",
+          "1 minute",
+          "20",
+          "35",
+          "50",
+          "70",
+          "A: 20",
+          "B: 35",
+          "C: 50",
+          "D: 70"
+        ],
+        "es": [
+          "350 páginas",
+          "7 minutos",
+          "210 páginas",
+          "3 minutos",
+          "1 minuto",
+          "20",
+          "35",
+          "50",
+          "70",
+          "A: 20",
+          "B: 35",
+          "C: 50",
+          "D: 70"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q17": {
+      "inputHash": "f467ebd505ecdde72707d77c24166c67827049299f9f66e3c677dee98819159e",
+      "description": {
+        "en": "Question 17. A regular hexagon is made of 6 congruent equilateral triangles meeting at the center. Each of the 6 outer sides of the hexagon is 5 cm long. A perpendicular dashed segment from the center to the bottom side is 4.3 cm long and has a right-angle marker at the side. What is the area, in square centimeters, of the regular hexagon? Choices: A: 10.75. B: 21.5. C: 34.3. D: 64.5.",
+        "es": "Pregunta 17. Como se presenta a continuación, un hexágono regular está formado por seis triángulos equiláteros que comparten un vértice en el centro. Cada uno de los seis lados del hexágono mide 5 cm. Desde el centro se traza un segmento perpendicular al lado inferior; el ángulo recto está marcado en la intersección y la longitud del segmento es 4.3 cm. ¿Cuál es el área, en centímetros cuadrados, del hexágono regular? Opciones: A: 10.75. B: 21.5. C: 34.3. D: 64.5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 congruent equilateral triangles",
+          "6 outer sides",
+          "5 cm",
+          "4.3 cm",
+          "10.75",
+          "21.5",
+          "34.3",
+          "64.5",
+          "A: 10.75",
+          "B: 21.5",
+          "C: 34.3",
+          "D: 64.5"
+        ],
+        "es": [
+          "5 cm",
+          "4.3 cm",
+          "10.75",
+          "21.5",
+          "34.3",
+          "64.5",
+          "A: 10.75",
+          "B: 21.5",
+          "C: 34.3",
+          "D: 64.5"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q19": {
+      "inputHash": "5ee1b5a596168e189b8f84942693971a420bd6f15335e07fe39f3dd41c9a305b",
+      "description": {
+        "en": "Question 19. What is the value of the expression (3² + 5 · 3)/2³? The entire quantity 3² + 5 · 3 is the numerator, and 2³ is the denominator. Choices: A: 3. B: 3 1/2. C: 4. D: 5 1/4.",
+        "es": "Pregunta 19. ¿Cuál es el valor de la siguiente expresión? La expresión es la fracción (3² + 5 · 3)/2³, con todo «3² + 5 · 3» en el numerador y 2³ en el denominador. Opciones: A: 3. B: 3 1/2. C: 4. D: 5 1/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3² + 5 · 3)/2³",
+          "3² + 5 · 3",
+          "2³",
+          "3",
+          "3 1/2",
+          "4",
+          "5 1/4",
+          "A: 3",
+          "B: 3 1/2",
+          "C: 4",
+          "D: 5 1/4",
+          "(3² + 5 · 3)",
+          "3²"
+        ],
+        "es": [
+          "(3² + 5 · 3)/2³",
+          "3² + 5 · 3",
+          "2³",
+          "3",
+          "3 1/2",
+          "4",
+          "5 1/4",
+          "A: 3",
+          "B: 3 1/2",
+          "C: 4",
+          "D: 5 1/4",
+          "(3² + 5 · 3)",
+          "3²"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q21": {
+      "inputHash": "633e7ddb13b387a59cae3a7a0b742ae978ad226b6d9144b1052610ec6929e239",
+      "description": {
+        "en": "Question 21. A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. Table titled “FAVORITE HOBBIES,” with columns “Hobby” and “Number of Students”: Reading, 12; Playing a musical instrument, 11; Watching movies, 9; Playing sports, 18. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby? Choices: A: 12% B: 23% C: 46% D: 54%",
+        "es": "Pregunta 21. Un maestro pide a 50 alumnos de sexto grado que elijan su hobby favorito. La siguiente tabla muestra los resultados. Tabla titulada “HOBBIES FAVORITOS”, con las columnas “Hobby” y “Cantidad de alumnos”. Filas: Leer, 12; Tocar un instrumento musical, 11; Ver películas, 9; Hacer deportes, 18. ¿Qué porcentaje de los alumnos eligió tocar un instrumento musical o leer como hobby favorito? Opciones: A: 12 % B: 23 % C: 46 % D: 54 %"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "50",
+          "12",
+          "11",
+          "9",
+          "18",
+          "12%",
+          "23%",
+          "46%",
+          "54%",
+          "A: 12%",
+          "B: 23%",
+          "C: 46%",
+          "D: 54%"
+        ],
+        "es": [
+          "50",
+          "12",
+          "11",
+          "9",
+          "18",
+          "12 %",
+          "23 %",
+          "46 %",
+          "54 %",
+          "A: 12 %",
+          "B: 23 %",
+          "C: 46 %",
+          "D: 54 %"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q23": {
+      "inputHash": "f49b89bb799373986b44e3985d4839be3011bd65b3f8086f3987a9f3f9db7038",
+      "description": {
+        "en": "Question 23. What is the coefficient in the expression 2x³? Choices: A: 2 B: 3 C: x D: 2x",
+        "es": "Pregunta 23. ¿Cuál es el coeficiente de la expresión 2x³? Opciones: A: 2 B: 3 C: x D: 2x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2x³",
+          "2",
+          "3",
+          "x",
+          "2x",
+          "A: 2",
+          "B: 3",
+          "C: x",
+          "D: 2x"
+        ],
+        "es": [
+          "2x³",
+          "2",
+          "3",
+          "x",
+          "2x",
+          "A: 2",
+          "B: 3",
+          "C: x",
+          "D: 2x"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q27": {
+      "inputHash": "569612554232b5516fefe40862f0e83ae98b77c30f3f1cf134403b37090e5faa",
+      "description": {
+        "en": "Question 27. Which number is not a solution to the inequality 3w ≥ 12? Choices: A: 3 B: 4 C: 5 D: 8",
+        "es": "Pregunta 27. ¿Qué número no es una solución a la desigualdad que se muestra a continuación? 3w ≥ 12. Opciones: A: 3 B: 4 C: 5 D: 8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3w ≥ 12",
+          "3",
+          "4",
+          "5",
+          "8",
+          "A: 3",
+          "B: 4",
+          "C: 5",
+          "D: 8"
+        ],
+        "es": [
+          "3w ≥ 12",
+          "3",
+          "4",
+          "5",
+          "8",
+          "A: 3",
+          "B: 4",
+          "C: 5",
+          "D: 8"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q28": {
+      "inputHash": "975c0a14aca6c4e58b097a1f251f410e4c8fda17db23af3367784faed7b40f26",
+      "description": {
+        "en": "Question 28. A school club includes students from four grade levels. The numbers of students are: 12 students from Grade 5; 6 students from Grade 6; 2 students from Grade 7; and 8 students from Grade 8. What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8? Choices: A: 2 : 1 B: 3 : 1 C: 5 : 9 D: 9 : 5",
+        "es": "Pregunta 28. El club de una escuela incluye alumnos de cuatro niveles de grado. La cantidad de alumnos de cada nivel de grado se muestra en la siguiente lista: 12 alumnos del Grado 5; 6 alumnos del Grado 6; 2 alumnos del Grado 7; 8 alumnos del Grado 8. ¿Cuál es la proporción de la cantidad total de alumnos que hay en el club de los Grados 5 y 6 respecto de la cantidad total de alumnos de los Grados 7 y 8? Opciones: A: 2 : 1 B: 3 : 1 C: 5 : 9 D: 9 : 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12",
+          "Grade 5",
+          "6",
+          "Grade 6",
+          "2",
+          "Grade 7",
+          "8",
+          "Grade 8",
+          "2 : 1",
+          "3 : 1",
+          "5 : 9",
+          "9 : 5",
+          "A: 2 : 1",
+          "B: 3 : 1",
+          "C: 5 : 9",
+          "D: 9 : 5"
+        ],
+        "es": [
+          "12",
+          "5",
+          "6",
+          "2",
+          "7",
+          "8",
+          "2 : 1",
+          "3 : 1",
+          "5 : 9",
+          "9 : 5",
+          "A: 2 : 1",
+          "B: 3 : 1",
+          "C: 5 : 9",
+          "D: 9 : 5"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q30": {
+      "inputHash": "b154ac26952eee6d37ad26222fd51bf7f7a2805c7390af4bdb6c73fffdcb36b5",
+      "description": {
+        "en": "Question 30. Which expression represents the phrase “the sum of fifteen and five less than twice a number, n”? Choices: A: 15(5 − 2n) B: 15(2n − 5) C: 15 + (5 − 2n) D: 15 + (2n − 5)",
+        "es": "Pregunta 30. ¿Qué expresión representa la frase “la suma de quince y cinco menos que dos veces el valor de un número, n”? Opciones: A: 15(5 − 2n) B: 15(2n − 5) C: 15 + (5 − 2n) D: 15 + (2n − 5)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15(5 − 2n)",
+          "15(2n − 5)",
+          "15 + (5 − 2n)",
+          "15 + (2n − 5)",
+          "A: 15(5 − 2n)",
+          "B: 15(2n − 5)",
+          "C: 15 + (5 − 2n)",
+          "D: 15 + (2n − 5)",
+          "(5 − 2n)",
+          "(2n − 5)"
+        ],
+        "es": [
+          "n",
+          "15(5 − 2n)",
+          "15(2n − 5)",
+          "15 + (5 − 2n)",
+          "15 + (2n − 5)",
+          "A: 15(5 − 2n)",
+          "B: 15(2n − 5)",
+          "C: 15 + (5 − 2n)",
+          "D: 15 + (2n − 5)",
+          "(5 − 2n)",
+          "(2n − 5)"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q31": {
+      "inputHash": "2e9053c6cfb7e06b0f37631b888827b100d21c8bf77ab53601b673f680ac79f4",
+      "description": {
+        "en": "Question 31. Tyrone deposits $65 into his bank account. The next day he withdraws $20. Which two integers represent the activity in Tyrone’s bank account? Choices: A: −65 and −20 B: −65 and 20 C: 65 and −20 D: 65 and 20",
+        "es": "Pregunta 31. Tyrone deposita $65 en su cuenta bancaria. Al día siguiente retira $20. ¿Qué conjunto de dos números enteros representa la actividad en la cuenta bancaria de Tyrone? Opciones: A: −65 y −20 B: −65 y 20 C: 65 y −20 D: 65 y 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$65",
+          "$20",
+          "−65 and −20",
+          "−65 and 20",
+          "65 and −20",
+          "65 and 20",
+          "A: −65 and −20",
+          "B: −65 and 20",
+          "C: 65 and −20",
+          "D: 65 and 20"
+        ],
+        "es": [
+          "$65",
+          "$20",
+          "−65 y −20",
+          "−65 y 20",
+          "65 y −20",
+          "65 y 20",
+          "A: −65 y −20",
+          "B: −65 y 20",
+          "C: 65 y −20",
+          "D: 65 y 20"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q32": {
+      "inputHash": "26a506a8658c6c0afd00e034199059388d7ccdf0ad75ccd7165f681e1c8267ed",
+      "description": {
+        "en": "Question 32. Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute? Choices: A: 1,056 B: 26,400 C: 63,360 D: 3,801,600",
+        "es": "Pregunta 32. Mary anda en su bicicleta a una velocidad promedio de 12 millas en 1 hora. Al andar a esa velocidad, ¿cuántos pies recorre Mary en 1 minuto? Opciones: A: 1,056 B: 26,400 C: 63,360 D: 3,801,600"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 miles",
+          "1 hour",
+          "1 minute",
+          "1,056",
+          "26,400",
+          "63,360",
+          "3,801,600",
+          "A: 1,056",
+          "B: 26,400",
+          "C: 63,360",
+          "D: 3,801,600"
+        ],
+        "es": [
+          "12 millas",
+          "1 hora",
+          "1 minuto",
+          "1,056",
+          "26,400",
+          "63,360",
+          "3,801,600",
+          "A: 1,056",
+          "B: 26,400",
+          "C: 63,360",
+          "D: 3,801,600"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q33": {
+      "inputHash": "bdd6eb5fca40bd980bba0d6b252849a664743c3871a792a34ac8910908f0b0ce",
+      "description": {
+        "en": "Question 33. Two rules are used to generate sets of ordered pairs. The starting point is (1, 1). Rule for the x-coordinate: Each value is 3 more than the one before it. Rule for the y-coordinate: Each value is 2 more than the one before it. Which graph shows the set of ordered pairs? Each choice is a first-quadrant coordinate plane with the horizontal axis labeled x, the vertical axis labeled y, and a unit grid from 0 through 10 on each axis. Choices: A: Closed points at (1, 1), (4, 4), (7, 7), and (10, 10). B: Closed points at (1, 1), (3, 3), (5, 5), (7, 7), and (9, 9). C: Closed points at (1, 1), (4, 3), (7, 5), and (10, 7). D: Closed points at (1, 1), (3, 4), (5, 7), and (7, 10).",
+        "es": "Pregunta 33. Las dos reglas que se muestran a continuación se usan para generar conjuntos de pares ordenados. El punto de partida es (1, 1). Luego, los pares ordenados se ponen en un plano de coordenadas. Regla para la coordenada x: cada valor es 3 más que el que viene antes de ese. Regla para la coordenada y: cada valor es 2 más que el que viene antes de ese. ¿Qué gráfico muestra el conjunto de pares ordenados? Cada opción es un plano de coordenadas con el eje x horizontal, positivo hacia la derecha, y el eje y vertical, positivo hacia arriba; ambos ejes están marcados de 0 a 10 en incrementos de 1. Opciones: A: Gráfico con los puntos (1, 1), (4, 4), (7, 7) y (10, 10). B: Gráfico con los puntos (1, 1), (3, 3), (5, 5), (7, 7) y (9, 9). C: Gráfico con los puntos (1, 1), (4, 3), (7, 5) y (10, 7). D: Gráfico con los puntos (1, 1), (3, 4), (5, 7) y (7, 10)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 1)",
+          "x-coordinate",
+          "3",
+          "y-coordinate",
+          "2",
+          "(4, 4)",
+          "(7, 7)",
+          "(10, 10)",
+          "(3, 3)",
+          "(5, 5)",
+          "(9, 9)",
+          "(4, 3)",
+          "(7, 5)",
+          "(10, 7)",
+          "(3, 4)",
+          "(5, 7)",
+          "(7, 10)",
+          "A: Closed points at (1, 1), (4, 4), (7, 7), and (10, 10)",
+          "B: Closed points at (1, 1), (3, 3), (5, 5), (7, 7), and (9, 9)",
+          "C: Closed points at (1, 1), (4, 3), (7, 5), and (10, 7)",
+          "D: Closed points at (1, 1), (3, 4), (5, 7), and (7, 10)"
+        ],
+        "es": [
+          "(1, 1)",
+          "x",
+          "3",
+          "y",
+          "2",
+          "0",
+          "10",
+          "1",
+          "(4, 4)",
+          "(7, 7)",
+          "(10, 10)",
+          "(3, 3)",
+          "(5, 5)",
+          "(9, 9)",
+          "(4, 3)",
+          "(7, 5)",
+          "(10, 7)",
+          "(3, 4)",
+          "(5, 7)",
+          "(7, 10)",
+          "A: Gráfico con los puntos (1, 1), (4, 4), (7, 7) y (10, 10)",
+          "B: Gráfico con los puntos (1, 1), (3, 3), (5, 5), (7, 7) y (9, 9)",
+          "C: Gráfico con los puntos (1, 1), (4, 3), (7, 5) y (10, 7)",
+          "D: Gráfico con los puntos (1, 1), (3, 4), (5, 7) y (7, 10)"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q34": {
+      "inputHash": "54944dbae07dd097bbe20b173dead89e7280ce80acefedbc41e1b66cd06c23cb",
+      "description": {
+        "en": "Question 34. A gift box is in the shape of a right rectangular prism. The gift box is 7 3/5 centimeters long, 5 4/5 centimeters wide, and 2 1/2 centimeters high. What is the volume, in cubic centimeters, of the gift box? Choices: A: 15 9/10 B: 70 6/25 C: 110 1/5 D: 155 8/50",
+        "es": "Pregunta 34. Una caja de regalo tiene forma de prisma rectangular recto. La caja tiene 7 3/5 centímetros de largo, 5 4/5 centímetros de ancho y 2 1/2 centímetros de alto. ¿Cuál es el volumen, en centímetros cúbicos, de la caja de regalo? Opciones: A: 15 9/10 B: 70 6/25 C: 110 1/5 D: 155 8/50"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 3/5",
+          "5 4/5",
+          "2 1/2",
+          "15 9/10",
+          "70 6/25",
+          "110 1/5",
+          "155 8/50",
+          "A: 15 9/10",
+          "B: 70 6/25",
+          "C: 110 1/5",
+          "D: 155 8/50"
+        ],
+        "es": [
+          "7 3/5",
+          "5 4/5",
+          "2 1/2",
+          "15 9/10",
+          "70 6/25",
+          "110 1/5",
+          "155 8/50",
+          "A: 15 9/10",
+          "B: 70 6/25",
+          "C: 110 1/5",
+          "D: 155 8/50"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q35": {
+      "inputHash": "51a5281694b83d25066ee8de360e5294d0eb20c55beca48c01a6910f852d4050",
+      "description": {
+        "en": "Question 35. Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true? Choices: A: Apples have the greater unit price at $1.15. B: Apples have the greater unit price at $1.25. C: Oranges have the greater unit price at $1.15. D: Oranges have the greater unit price at $1.25.",
+        "es": "Pregunta 35. Hannah compra naranjas y manzanas en el supermercado. Paga $6.25 por 5 libras de naranjas y $6.90 por 6 libras de manzanas. ¿Qué afirmación acerca de la fruta es verdadera? Opciones: A: Las manzanas tienen el precio mayor por unidad a $1.15. B: Las manzanas tienen el precio mayor por unidad a $1.25. C: Las naranjas tienen el precio mayor por unidad a $1.15. D: Las naranjas tienen el precio mayor por unidad a $1.25."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$6.25",
+          "5 pounds",
+          "$6.90",
+          "6 pounds",
+          "$1.15",
+          "$1.25",
+          "A: Apples have the greater unit price at $1.15",
+          "B: Apples have the greater unit price at $1.25",
+          "C: Oranges have the greater unit price at $1.15",
+          "D: Oranges have the greater unit price at $1.25"
+        ],
+        "es": [
+          "$6.25",
+          "5 libras",
+          "$6.90",
+          "6 libras",
+          "$1.15",
+          "$1.25",
+          "A: Las manzanas tienen el precio mayor por unidad a $1.15",
+          "B: Las manzanas tienen el precio mayor por unidad a $1.25",
+          "C: Las naranjas tienen el precio mayor por unidad a $1.15",
+          "D: Las naranjas tienen el precio mayor por unidad a $1.25"
+        ]
+      }
+    },
+    "nysed-2025-g6-mc-q36": {
+      "inputHash": "b0c16df4d032b1aebccd0c0eec3fbf0e12b1ac890a91fe7f0ebd7f18b3fce002",
+      "description": {
+        "en": "Question 36. The figure below shows a parallelogram with part of it shaded. The parallelogram has horizontal top and bottom sides that are parallel and equal in length, with both slanted sides leaning to the right. A dashed vertical segment extends from the top-left vertex to the bottom side, dividing the parallelogram into an unshaded triangle on the left and a shaded quadrilateral on the right. The horizontal bottom side of the unshaded triangle, from the bottom-left vertex to the foot of the dashed segment, is 1.2 cm. The horizontal top side of the parallelogram, from the top-left vertex to the top-right vertex, is 2.4 cm. The perpendicular vertical height of the parallelogram is 3 cm. The shaded region is bounded by the dashed segment on the left, the 2.4 cm top side, the right slanted side, and the portion of the bottom side from the foot of the dashed segment to the bottom-right vertex. What is the area, in square centimeters, of the part of the parallelogram that is shaded? Choices: A: 3.6 B: 5.4 C: 4.32 D: 8.64",
+        "es": "Pregunta 36. La siguiente figura muestra un paralelogramo con una parte sombreada. El paralelogramo tiene bases horizontales y lados inclinados hacia la derecha. Su base superior mide 2.4 cm y su altura perpendicular mide 3 cm. Desde el extremo izquierdo de la base superior baja una línea vertical discontinua hasta la base inferior; esta línea divide el paralelogramo en un triángulo sin sombrear a la izquierda y una región sombreada a la derecha. El segmento de la base inferior que pertenece al triángulo sin sombrear, desde el vértice inferior izquierdo hasta la línea discontinua, mide 1.2 cm. La región sombreada queda limitada por la línea discontinua a la izquierda, la base superior, el lado inclinado derecho y la parte derecha de la base inferior. ¿Cuál es el área, en centímetros cuadrados, de la parte del paralelogramo que está sombreada? Opciones: A: 3.6 B: 5.4 C: 4.32 D: 8.64"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1.2 cm",
+          "2.4 cm",
+          "3 cm",
+          "3.6",
+          "5.4",
+          "4.32",
+          "8.64",
+          "A: 3.6",
+          "B: 5.4",
+          "C: 4.32",
+          "D: 8.64"
+        ],
+        "es": [
+          "2.4 cm",
+          "3 cm",
+          "1.2 cm",
+          "3.6",
+          "5.4",
+          "4.32",
+          "8.64",
+          "A: 3.6",
+          "B: 5.4",
+          "C: 4.32",
+          "D: 8.64"
+        ]
+      }
+    }
+  }
+}

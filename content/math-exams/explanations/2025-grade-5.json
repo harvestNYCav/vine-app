@@ -64,7 +64,7 @@
       }
     },
     "nysed-2025-g5-mc-q14": {
-      "inputHash": "46d313488695f08047217c74ec3c5795cbcf1ba87603123e5e5273640b82f2f2",
+      "inputHash": "d27badd15f53b2d34f30d680bcf3658e0df2b7935f0cef33e141de01fe2b0bd6",
       "explanation": {
         "text": {
           "en": "Convert 2/10 to hundredths: 2/10 = 20/100. Then 34/100 + 20/100 = 54/100.",
@@ -127,8 +127,8 @@
       "inputHash": "47a2fea57907fe3d8c3a6f6cf8099f978e0305d24d30692a0f0f16a468dc63c1",
       "explanation": {
         "text": {
-          "en": "In 506.42, the digit 6 is worth 600, and dividing 600 by 10 gives 60. In 540.62, the digit 6 is in the tens place and is worth 60.",
-          "es": "En 506.42, la cifra 6 vale 600, y dividir 600 entre 10 da 60. En 540.62, la cifra 6 está en las decenas y vale 60."
+          "en": "In 506.42, the digit 6 is worth 6. In 540.62, the digit 6 is worth 0.6. Since 6 ÷ 10 = 0.6, its value in 540.62 is one tenth its value in 506.42.",
+          "es": "En 506.42, la cifra 6 vale 6. En 540.62, la cifra 6 vale 0.6. Como 6 ÷ 10 = 0.6, su valor en 540.62 es una décima parte de su valor en 506.42."
         },
         "source": "vine-authored"
       }

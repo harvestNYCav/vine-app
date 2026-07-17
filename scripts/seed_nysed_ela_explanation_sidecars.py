@@ -14,9 +14,12 @@ letting this helper bless stale prose with a new hash.
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
+import os
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any, Sequence
 
@@ -28,6 +31,13 @@ try:
         QuestionExplanationInput,
         load_exam_explanations,
         question_explanation_input_hash,
+        validate_exam_explanation_sidecar,
+    )
+    from review_nysed_ela_question_accessibility_sidecars import (  # type: ignore
+        DEFAULT_APPROVED_ROOT as DEFAULT_QUESTION_ACCESSIBILITY_ROOT,
+        DEFAULT_MANIFEST as DEFAULT_QUESTION_ACCESSIBILITY_MANIFEST,
+        load_review_manifest,
+        preflight_sidecar_root,
     )
 except ModuleNotFoundError:  # Imported as ``scripts.<module>`` in tests/tools.
     from scripts.nysed_ela_explanations import (
@@ -37,6 +47,13 @@ except ModuleNotFoundError:  # Imported as ``scripts.<module>`` in tests/tools.
         QuestionExplanationInput,
         load_exam_explanations,
         question_explanation_input_hash,
+        validate_exam_explanation_sidecar,
+    )
+    from scripts.review_nysed_ela_question_accessibility_sidecars import (
+        DEFAULT_APPROVED_ROOT as DEFAULT_QUESTION_ACCESSIBILITY_ROOT,
+        DEFAULT_MANIFEST as DEFAULT_QUESTION_ACCESSIBILITY_MANIFEST,
+        load_review_manifest,
+        preflight_sidecar_root,
     )
 
 
@@ -45,6 +62,8 @@ DEFAULT_CATALOG = REPO_ROOT / "content" / "ela-exams" / "generated" / "catalog.j
 DEFAULT_ASSET_ROOT = REPO_ROOT / "public" / "nysed" / "ela"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "content" / "ela-exams" / "explanations"
 APP_ASSET_PREFIX = "/vine-app/nysed/ela/"
+EXPECTED_AUTHORED_EXPLANATION_EXAMS = 66
+EXPECTED_AUTHORED_EXPLANATION_QUESTIONS = 1_434
 
 
 class SidecarSeedError(RuntimeError):
@@ -272,6 +291,200 @@ def validate_sidecars(
     return outputs
 
 
+def _reject_duplicate_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise SidecarSeedError(f"Duplicate JSON key in explanation sidecar: {key}")
+        result[key] = value
+    return result
+
+
+def _load_explanation_payload(path: Path) -> dict[str, Any]:
+    try:
+        value = json.loads(
+            path.read_text(encoding="utf-8"),
+            object_pairs_hook=_reject_duplicate_keys,
+        )
+    except SidecarSeedError:
+        raise
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise SidecarSeedError(f"Could not read explanation sidecar {path}: {exc}") from exc
+    if not isinstance(value, dict):
+        raise SidecarSeedError(f"Explanation sidecar must be an object: {path}")
+    return value
+
+
+def _payload_with_refreshed_input_hashes(
+    existing: dict[str, Any],
+    seeded: dict[str, Any],
+    *,
+    label: str,
+) -> tuple[dict[str, Any], int]:
+    """Copy only recomputed input hashes while preserving authored prose exactly."""
+
+    if set(existing) != {"schemaVersion", "policyVersion", "examId", "questions"}:
+        raise SidecarSeedError(f"Unexpected explanation sidecar keys for {label}")
+    if any(existing.get(key) != seeded.get(key) for key in ("schemaVersion", "policyVersion", "examId")):
+        raise SidecarSeedError(f"Explanation sidecar metadata changed for {label}")
+    existing_questions = existing.get("questions")
+    seeded_questions = seeded.get("questions")
+    if not isinstance(existing_questions, dict) or not isinstance(seeded_questions, dict):
+        raise SidecarSeedError(f"Malformed explanation questions for {label}")
+    if set(existing_questions) != set(seeded_questions):
+        raise SidecarSeedError(f"Explanation question coverage changed for {label}")
+
+    refreshed = copy.deepcopy(existing)
+    refreshed_questions = refreshed["questions"]
+    changed = 0
+    for question_id, expected_record in seeded_questions.items():
+        existing_record = existing_questions[question_id]
+        if (
+            not isinstance(existing_record, dict)
+            or set(existing_record) != {"inputHash", "explanation"}
+            or not isinstance(expected_record, dict)
+            or set(expected_record) != {"inputHash", "explanation"}
+        ):
+            raise SidecarSeedError(f"Malformed explanation record for {question_id}")
+        new_hash = expected_record["inputHash"]
+        if existing_record["inputHash"] != new_hash:
+            changed += 1
+        refreshed_questions[question_id]["inputHash"] = new_hash
+        if refreshed_questions[question_id]["explanation"] != existing_record["explanation"]:
+            raise SidecarSeedError(f"Authored explanation changed for {question_id}")
+    return refreshed, changed
+
+
+def _atomic_write_payload(path: Path, payload: bytes) -> None:
+    descriptor, temporary_name = tempfile.mkstemp(
+        dir=path.parent,
+        prefix=f".{path.name}.",
+        suffix=".tmp",
+    )
+    temporary = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, "wb") as handle:
+            handle.write(payload)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.chmod(temporary, path.stat().st_mode & 0o777)
+        os.replace(temporary, path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def refresh_question_accessibility_input_hashes(
+    catalog_path: Path,
+    asset_root: Path,
+    output_dir: Path,
+    *,
+    accessibility_root: Path,
+    accessibility_manifest: Path,
+) -> tuple[list[Path], int]:
+    """Refresh only hashes affected by the newly reviewed question transcriptions.
+
+    The current sidecars are validated against the current catalog first. The
+    approved accessibility corpus is then source-pinned against its activation
+    manifest, all 66 replacements are prepared and validated in memory, and
+    only then are individual files atomically replaced.
+    """
+
+    baseline_outputs = validate_sidecars(catalog_path, asset_root, output_dir)
+    if len(baseline_outputs) != EXPECTED_AUTHORED_EXPLANATION_EXAMS:
+        raise SidecarSeedError(
+            "Authored explanation exam scope changed: expected "
+            f"{EXPECTED_AUTHORED_EXPLANATION_EXAMS}, got {len(baseline_outputs)}"
+        )
+
+    try:
+        snapshot = preflight_sidecar_root(
+            sidecar_root=accessibility_root,
+            catalog_path=catalog_path,
+            public_root=asset_root,
+        )
+        active_records = load_review_manifest(accessibility_manifest)
+    except (OSError, TypeError, ValueError) as exc:
+        raise SidecarSeedError(f"Approved question accessibility validation failed: {exc}") from exc
+    expected_records = {str(record["examId"]): dict(record) for record in snapshot.records}
+    if active_records != expected_records:
+        raise SidecarSeedError(
+            "Approved question accessibility bytes differ from the activation manifest"
+        )
+
+    catalog = _load_catalog(catalog_path)
+    selected = [
+        exam
+        for exam in catalog["exams"]
+        if isinstance(exam, dict)
+        and isinstance(exam.get("year"), int)
+        and not isinstance(exam.get("year"), bool)
+        and int(exam["year"]) >= 2015
+    ]
+    if len(selected) != EXPECTED_AUTHORED_EXPLANATION_EXAMS:
+        raise SidecarSeedError("Post-2014 ELA catalog scope changed")
+
+    prepared: list[tuple[Path, bytes]] = []
+    changed_total = 0
+    question_total = 0
+    for exam in sorted(selected, key=lambda value: (int(value["year"]), int(value["grade"]))):
+        revised_exam = copy.deepcopy(exam)
+        questions = revised_exam.get("questions")
+        if not isinstance(questions, list):
+            raise SidecarSeedError(f"Malformed questions for {revised_exam.get('id')}")
+        for question in questions:
+            if not isinstance(question, dict):
+                raise SidecarSeedError(f"Malformed question for {revised_exam.get('id')}")
+            question_id = _required_text(question.get("id"), label="question id")
+            try:
+                question["alt"] = snapshot.reviewed_alts[question_id]
+            except KeyError as exc:
+                raise SidecarSeedError(
+                    f"Approved question accessibility text is missing {question_id}"
+                ) from exc
+
+        seeded = build_exam_sidecar(revised_exam, asset_root=asset_root)
+        year = int(revised_exam["year"])
+        grade = int(revised_exam["grade"])
+        output = output_dir / f"{year}-grade-{grade}.json"
+        existing = _load_explanation_payload(output)
+        refreshed, changed = _payload_with_refreshed_input_hashes(
+            existing,
+            seeded,
+            label=str(seeded["examId"]),
+        )
+        expected_hashes = {
+            question_id: record["inputHash"]
+            for question_id, record in seeded["questions"].items()
+        }
+        try:
+            validate_exam_explanation_sidecar(
+                refreshed,
+                exam_id=str(seeded["examId"]),
+                expected_input_hashes=expected_hashes,
+            )
+        except (ElaExplanationError, TypeError, ValueError) as exc:
+            raise SidecarSeedError(
+                f"Refreshed explanation validation failed for {seeded['examId']}: {exc}"
+            ) from exc
+        question_total += len(expected_hashes)
+        changed_total += changed
+        prepared.append(
+            (
+                output,
+                (json.dumps(refreshed, ensure_ascii=False, indent=2) + "\n").encode("utf-8"),
+            )
+        )
+
+    if question_total != EXPECTED_AUTHORED_EXPLANATION_QUESTIONS:
+        raise SidecarSeedError(
+            "Authored explanation question scope changed: expected "
+            f"{EXPECTED_AUTHORED_EXPLANATION_QUESTIONS}, got {question_total}"
+        )
+    for path, payload in prepared:
+        _atomic_write_payload(path, payload)
+    return [path for path, _payload in prepared], changed_total
+
+
 def parse_args(argv: Sequence[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Seed post-2014 ELA explanation sidecars.")
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
@@ -279,16 +492,46 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--year", type=int, action="append")
     parser.add_argument("--grade", type=int, action="append")
-    parser.add_argument(
+    operation = parser.add_mutually_exclusive_group()
+    operation.add_argument(
         "--validate",
         action="store_true",
         help="Validate existing sidecars against recomputed source hashes instead of creating them.",
+    )
+    operation.add_argument(
+        "--refresh-question-accessibility",
+        action="store_true",
+        help="Refresh only explanation input hashes after approved question transcriptions change.",
+    )
+    parser.add_argument(
+        "--question-accessibility-root",
+        type=Path,
+        default=DEFAULT_QUESTION_ACCESSIBILITY_ROOT,
+    )
+    parser.add_argument(
+        "--question-accessibility-manifest",
+        type=Path,
+        default=DEFAULT_QUESTION_ACCESSIBILITY_MANIFEST,
     )
     return parser.parse_args(argv)
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
+    if args.refresh_question_accessibility:
+        if args.year or args.grade:
+            raise SidecarSeedError(
+                "Question-accessibility hash refresh must cover all post-2014 ELA exams"
+            )
+        outputs, changed = refresh_question_accessibility_input_hashes(
+            args.catalog.resolve(),
+            args.asset_root.resolve(),
+            args.output_dir.resolve(),
+            accessibility_root=args.question_accessibility_root.resolve(),
+            accessibility_manifest=args.question_accessibility_manifest.resolve(),
+        )
+        print(f"Refreshed {changed} explanation input hashes across {len(outputs)} sidecars")
+        return 0
     operation = validate_sidecars if args.validate else seed_sidecars
     outputs = operation(
         args.catalog.resolve(),

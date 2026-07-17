@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
-    "test": "node --test tests/smoke.test.mjs && node --conditions=react-server --import tsx --test tests/math-exams.test.ts tests/math-exam-access.test.ts tests/ela-exams.test.ts tests/ela-exam-access.test.ts tests/student-grade-settings.test.ts",
+    "test": "npm run test:python && node --test tests/smoke.test.mjs && node --import tsx --test tests/math-choice-buttons.test.ts && node --conditions=react-server --import tsx --test tests/math-exams.test.ts tests/math-exam-access.test.ts tests/math-generator.test.ts tests/ela-exams.test.ts tests/ela-exam-access.test.ts tests/student-grade-settings.test.ts",
+    "test:python": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "test:ela-question-accessibility": "python3 -m unittest discover -s tests -p test_nysed_ela_question_accessibility.py",
+    "test:ela-transcripts": "python3 -m unittest discover -s tests -p test_nysed_ela_transcripts.py",
     "typecheck": "node -e \"const fs=require('fs');['.next/dev','.next/types'].forEach(path=>fs.rmSync(path,{recursive:true,force:true}))\" && tsc --noEmit"
   },
   "dependencies": {

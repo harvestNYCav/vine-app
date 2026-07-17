@@ -5,8 +5,11 @@ import unittest
 from PIL import Image
 
 from scripts.import_nysed_math_mc import (
+    ImportFailure,
     Marker,
+    clean_alt_text,
     remap_markers_to_gray_box_positions,
+    verified_choice_labels_for_question,
 )
 
 
@@ -53,6 +56,71 @@ class MarkerDpiRetryTests(unittest.TestCase):
                 positions,
             )
         )
+
+
+class VerifiedChoiceLabelTests(unittest.TestCase):
+    def test_three_choice_variant_requires_exact_source_and_crop_hashes(self) -> None:
+        labels = verified_choice_labels_for_question(
+            question_id="nysed-2016-g4-mc-q24",
+            source_pdf_sha256="3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455",
+            question_image_sha256="185985912b8e9d3bf333598892d6efe3e6392d7202e683745534d4f551ade225",
+        )
+        self.assertEqual(labels, ["A", "B", "C"])
+
+        with self.assertRaisesRegex(ImportFailure, "choice-label source changed"):
+            verified_choice_labels_for_question(
+                question_id="nysed-2016-g4-mc-q24",
+                source_pdf_sha256="0" * 64,
+                question_image_sha256="185985912b8e9d3bf333598892d6efe3e6392d7202e683745534d4f551ade225",
+            )
+        with self.assertRaisesRegex(ImportFailure, "choice-label crop changed"):
+            verified_choice_labels_for_question(
+                question_id="nysed-2016-g4-mc-q24",
+                source_pdf_sha256="3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455",
+                question_image_sha256="0" * 64,
+            )
+
+    def test_ordinary_question_has_no_raw_choice_label_override(self) -> None:
+        self.assertIsNone(
+            verified_choice_labels_for_question(
+                question_id="nysed-2016-g4-mc-q25",
+                source_pdf_sha256="0" * 64,
+                question_image_sha256="0" * 64,
+            )
+        )
+
+
+class AccessibilityChromeCleanupTests(unittest.TestCase):
+    def test_preserves_stop_inside_question_content(self) -> None:
+        value = clean_alt_text(
+            "3 Which detail shows that the ferry will stop running?\n"
+            "A The weather changes.\nB The bridge opens.",
+            3,
+            "en",
+        )
+
+        self.assertIn("will stop running", value)
+
+    def test_removes_only_standalone_booklet_chrome(self) -> None:
+        value = clean_alt_text(
+            "3 Which detail supports the claim?\n"
+            "A The weather changes.\nGO ON\nPage 4\nSession 1",
+            3,
+            "en",
+        )
+
+        self.assertNotIn("GO ON", value)
+        self.assertNotIn("Page 4", value)
+        self.assertNotIn("Session 1", value)
+
+    def test_preserves_chrome_words_when_they_are_not_standalone(self) -> None:
+        value = clean_alt_text(
+            "3 Read page 4 and stop when the signal changes.",
+            3,
+            "en",
+        )
+
+        self.assertIn("page 4 and stop", value.lower())
 
 
 if __name__ == "__main__":

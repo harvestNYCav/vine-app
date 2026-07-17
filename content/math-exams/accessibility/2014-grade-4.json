@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2014-grade-4-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2014-g4-mc-q1": {
+      "inputHash": "a78d1827defe1a89838de8b0a7c74c6901e5f07378c850f59a3a90966cdb9e54",
+      "description": {
+        "en": "Question 1. Which model is shaded to represent a fraction equivalent to 1/2? Choices: A: a bar divided into 4 equal parts with 1 shaded; B: a bar divided into 4 equal parts with 2 shaded; C: a bar divided into 3 equal parts with 2 shaded; D: a bar divided into 6 equal parts with 2 shaded."
+      }
+    },
+    "nysed-2014-g4-mc-q3": {
+      "inputHash": "d08cd00474acb1d9b468e8b312021d48874bfc9f6170fadd74d84a35cdf20792",
+      "description": {
+        "en": "Question 3. What is 735,286 rounded to the nearest ten thousand? Choices: A: 700,000; B: 730,000; C: 735,000; D: 740,000."
+      }
+    },
+    "nysed-2014-g4-mc-q4": {
+      "inputHash": "742209327637be15a381e1e18943c8c41ecb6c38d56cd59f5c022b77fbddcf9b",
+      "description": {
+        "en": "Question 4. A four-sided figure has a perimeter of 37 feet. Its top side is 15 feet, its left and right sides are each 8 feet, and its bottom side has an unknown length. What is the length, in feet, of the unknown side? Choices: A: 6; B: 8; C: 14; D: 31."
+      }
+    },
+    "nysed-2014-g4-mc-q5": {
+      "inputHash": "ba9f9d5e909b0d041102944d259fef879e01fd5dc8b34332c30581566aea7299",
+      "description": {
+        "en": "Question 5. Which figure appears to have one right angle? Choices: A: a triangle with one vertical side and one horizontal side meeting at a corner; B: a slanted parallelogram; C: a pentagon with no square corners; D: a hexagon with no square corners."
+      }
+    },
+    "nysed-2014-g4-mc-q10": {
+      "inputHash": "eac22079be0a5ca784b81a0b41f5dd8e71a2c8b73d993db5da7320c2b13d306b",
+      "description": {
+        "en": "Question 10. In the number 344,586, how many times greater is the value represented by the 4 in the ten thousands place than the value represented by the 4 in the thousands place? Choices: A: 1; B: 10; C: 1,000; D: 10,000."
+      }
+    },
+    "nysed-2014-g4-mc-q11": {
+      "inputHash": "36000ab5a10ebe18b45e2a16b462fd063532314a2b59531cdb3a0a7f1a81b7a5",
+      "description": {
+        "en": "Question 11. A fraction model represents 6 whole units. Each of the 6 bars is divided into 3 equal parts, and the bottom part of each bar is shaded. Which number sentence represents the amount of the fraction model that is shaded? Choices: A: 6 × 1/2 = □; B: 6 × 1/3 = □; C: 3 × 1/6 = □; D: 3 × 1/2 = □."
+      }
+    },
+    "nysed-2014-g4-mc-q14": {
+      "inputHash": "d29bcca0cce6ca9016a5099958f9ced80961d7237867de66397034cdfe2dcd3d",
+      "description": {
+        "en": "Question 14. A school has 17 tables in the cafeteria. Each table seats 12 students. What is the greatest number of students that can be seated at these tables? Choices: A: 114; B: 184; C: 194; D: 204."
+      }
+    },
+    "nysed-2014-g4-mc-q15": {
+      "inputHash": "ca3e5735d7f18064cbc049d9999802aeb8c11e7e370c42fe6fdd51ac8b81bb12",
+      "description": {
+        "en": "Question 15. Which expression represents the number 13,809 written in expanded form? Choices: A: 13 + 80 + 9; B: 13,000 + 800 + 90; C: 9 + 1,300 + 80; D: 3,000 + 10,000 + 9 + 800."
+      }
+    },
+    "nysed-2014-g4-mc-q16": {
+      "inputHash": "7cada1824d2ab1f1be671ada4e0e7d19eb3f68c6f5c5eb9062797acd1c7c7fdd",
+      "description": {
+        "en": "Question 16. Three rays TS, TU, and TV share endpoint T, with ray TU between rays TS and TV. The measure of angle STV is 117°, and the measure of angle STU is 86°. The diagram is not drawn to scale. What is the measure of angle UTV? Choices: A: 31°; B: 63°; C: 157°; D: 203°."
+      }
+    },
+    "nysed-2014-g4-mc-q17": {
+      "inputHash": "89d04d37d1a4d239c979c08e3cc09539fa3fc7e1187dd96383fdc089d66f4647",
+      "verbatimEvaluativeChoices": true,
+      "description": {
+        "en": "Question 17. Carter shaded two same-sized rectangular models to represent 2/3 and 8/12. The first is divided into 3 equal parts with 2 shaded; the second is divided into 12 equal parts with 8 shaded. Carter believed that 2/3 is equivalent to 8/12. Why is he correct or incorrect? Choices: A: He is incorrect because the numerator and denominator are different in 2/3 and 8/12; B: He is incorrect because the numerator and denominator in 8/12 are greater than in 2/3; C: He is correct because adding the same number to the numerator and denominator in 2/3 equals 8/12; D: He is correct because multiplying the numerator and denominator in 2/3 by the same number equals 8/12."
+      }
+    },
+    "nysed-2014-g4-mc-q20": {
+      "inputHash": "7f6537b81e2766e58f9d38c35ae9548132fb0ecc4b7b4250b701510101ffb774",
+      "description": {
+        "en": "Question 20. Which figure appears to have exactly one line of symmetry? Choices: A: an irregular quadrilateral with a slanted top; B: a square; C: a right-pointing pentagon shaped like a rectangle with a centered triangular point; D: a scalene triangle."
+      }
+    },
+    "nysed-2014-g4-mc-q22": {
+      "inputHash": "f40fc8ce1e2e1a323238336f34b5564b17ffa17cc368430352fbd64c70ae2f45",
+      "description": {
+        "en": "Question 22. What is the measurement of the acute angle formed by a horizontal ray pointing right and a second ray rising slightly to the right? Choices: A: 15°; B: 25°; C: 165°; D: 175°."
+      }
+    },
+    "nysed-2014-g4-mc-q25": {
+      "inputHash": "3636b0a8e4abf2b9512cc2d1086b90027ee7a966f3332d39c585e83b4cb57e30",
+      "description": {
+        "en": "Question 25. Which figure appears to be a right triangle? Choices: A: a wide acute isosceles triangle; B: a tall acute isosceles triangle; C: a triangle with one vertical side and one horizontal side meeting at a corner; D: an obtuse scalene triangle."
+      }
+    },
+    "nysed-2014-g4-mc-q27": {
+      "inputHash": "6e025e122130bfc584b6f14c1764f86e5bcd3000bd0b5c53f7e7d89fa6109ffa",
+      "description": {
+        "en": "Question 27. A rectangular model is divided into 6 equal sections arranged in 2 rows and 3 columns. The first 2 sections in the top row are shaded. Which fraction is equivalent to the one represented by the model? Choices: A: 1/6; B: 1/3; C: 2/4; D: 2/3."
+      }
+    },
+    "nysed-2014-g4-mc-q28": {
+      "inputHash": "5b08fbbc07d0269d6bbb7d30eab3d1e129d598679ef6412addf0ba7f8054589c",
+      "description": {
+        "en": "Question 28. Which angle measures 25°? Choices: A: an obtuse angle formed by a horizontal right-pointing ray and a ray pointing up and left; B: an acute angle formed by a horizontal right-pointing ray and a steeper ray pointing up and right; C: an obtuse angle formed by a horizontal right-pointing ray and a shallow ray pointing up and left; D: an acute angle formed by a horizontal right-pointing ray and a shallower ray pointing up and right."
+      }
+    },
+    "nysed-2014-g4-mc-q29": {
+      "inputHash": "28f9fe00603e464567f307a907b3fc56a6a7c8e997b01d5655e9b93352a2f65d",
+      "description": {
+        "en": "Question 29. 4 thousands + 3 tens + 5 hundreds is less than which number below? Choices: A: 4 thousands + 5 tens + 3 hundreds; B: 8 hundreds + 3 thousands + 8 ones; C: 4 thousands + 7 ones + 8 tens + 6 hundreds; D: 9 hundreds + 9 tens + 2 thousands."
+      }
+    },
+    "nysed-2014-g4-mc-q31": {
+      "inputHash": "7d49f76c35c1c8e71f681967e9b3a6a1f46ea7831775bf13df213760952d932d",
+      "description": {
+        "en": "Question 31. A circle is divided into 10 equal sections, and 4 consecutive sections on the left are shaded. Which expression represents the fraction of the figure that is shaded? Choices: A: 1/10 + 2/10 + 3/10; B: 1/10 + 1/10 + 2/10; C: 3/10 + 3/10 + 4/10; D: 4/10 + 4/10 + 4/10."
+      }
+    },
+    "nysed-2014-g4-mc-q35": {
+      "inputHash": "0e23d1c535b13ec9269dc8f3e6514ca45026db68be8b8f6c84cbc0807ab4ce06",
+      "description": {
+        "en": "Question 35. What is 8 3/5 + 8 1/5? Choices: A: 8 4/10; B: 8 4/5; C: 16 4/10; D: 16 4/5."
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2014-g4-mc-q36": {
+      "inputHash": "de6ae16e155525bccce1dd283bfd6a35628b4ecc5c59b149c1fda1486641e599",
+      "description": {
+        "en": "Question 36. Which number has a 5 that represents a value ten times greater than the value represented by the 5 in 41,253? Choices: A: 31,254; B: 41,523; C: 43,125; D: 51,324."
+      }
+    },
+    "nysed-2014-g4-mc-q42": {
+      "inputHash": "c3e2382bbb745f58dcfe7e3c6d66310cdd685d937acb82d811fcb8dce3f7213f",
+      "description": {
+        "en": "Question 42. Which fraction below can be placed in the box to make the statement □ > 3/4 true? Choices: A: 2/6; B: 5/12; C: 1/2; D: 5/6."
+      }
+    },
+    "nysed-2014-g4-mc-q43": {
+      "inputHash": "0787ca505fa3b9ed7bf8f8c8a462d65b7743a7fa37b3e1909eb2464977304da3",
+      "description": {
+        "en": "Question 43. Which statement is represented by the equation below? 15 × 5 = 75 Choices: A: The number 15 is 5 less than 75; B: The number 15 is 5 times as many as 75; C: The number 75 is 15 more than 5; D: The number 75 is 5 times as many as 15."
+      }
+    },
+    "nysed-2014-g4-mc-q44": {
+      "inputHash": "516dc529a23da82b6dec89cce5dbc1d5f95e28bcca2ec132d587ea12369177f6",
+      "description": {
+        "en": "Question 44. Alex bought 2 printer cartridges for $28 each and a printer for $85. He gave the cashier $150. How much change should Alex have received from the cashier? Choices: A: $9; B: $11; C: $19; D: $37."
+      }
+    },
+    "nysed-2014-g4-mc-q48": {
+      "inputHash": "7409b12a8eeb70e91dd56108f31751c4abdf0e75188fc99c5df8a2c285839afb",
+      "description": {
+        "en": "Question 48. A diagram shows a book standing vertically on a horizontal shelf, forming a square corner. What is the measure of the angle formed by the book and the shelf? Choices: A: 45 degrees; B: 90 degrees; C: 180 degrees; D: 360 degrees."
+      }
+    },
+    "nysed-2014-g4-mc-q49": {
+      "inputHash": "178d4090dcdf4da3e9c684e6825373b15f33448bb92e4caad0c5bb58848dbeff",
+      "description": {
+        "en": "Question 49. A table titled Bags of Trail Mix shows: mass 2 1/2 pounds, 1 bag; mass 1 1/2 pounds, 3 bags; mass 1/2 pound, 4 bags. Which line plot represents the data in the table? Choices: A: a line plot from 0 to 3 with half-pound tick marks, showing 1 X at 1/2, 3 Xs at 1, and 4 Xs at 1 1/2; B: a line plot from 0 to 4 with whole-number tick marks, showing 1 X halfway between 0 and 1, 1 X halfway between 1 and 2, and 1 X halfway between 2 and 3; C: a line plot from 0 to 3 with half-pound tick marks, showing 4 Xs at 1/2, 3 Xs at 1 1/2, and 1 X at 2 1/2; D: a line plot from 0 to 3 with half-pound tick marks, showing 1 X each at 1/2, 1 1/2, and 2 1/2."
+      }
+    }
+  }
+}

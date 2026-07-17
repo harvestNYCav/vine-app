@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2025-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2025-g4-mc-q2": {
+      "inputHash": "fa72212cba13c64af3ca5be758ac9777b206d4386c5e53ce71059b31ceddd14f",
+      "description": {
+        "en": "Question 2. Which expression has the same value as 28/6? Choices: A: 14 × 1/2; B: 14 × 1/6; C: 28 × 1/2; D: 28 × 1/6.",
+        "es": "Pregunta 2. ¿Qué expresión tiene el mismo valor que 28/6? Opciones: A: 14 × 1/2; B: 14 × 1/6; C: 28 × 1/2; D: 28 × 1/6."
+      }
+    },
+    "nysed-2025-g4-mc-q5": {
+      "inputHash": "ec8594c5ef4e1c373f1989e913e26546366d47325c731bdb6d41e8ed8f24902b",
+      "description": {
+        "en": "Question 5. What is the value of 542 × 9? Choices: A: 4,568; B: 4,578; C: 4,868; D: 4,878.",
+        "es": "Pregunta 5. ¿Cuál es el valor de 542 × 9? Opciones: A: 4,568; B: 4,578; C: 4,868; D: 4,878."
+      }
+    },
+    "nysed-2025-g4-mc-q13": {
+      "inputHash": "54fc1c719a7bd2583ee0a31e02722e6f6b87844ec1388fd85c1569d3d6a49cdf",
+      "description": {
+        "en": "Question 13. Which expression has the same value as 13/10? Choices: A: 8/5 + 5/5; B: 8/5 + 2/5 + 3/10; C: 8/10 + 5/5; D: 8/10 + 2/10 + 3/10.",
+        "es": "Pregunta 13. ¿Qué expresión tiene el mismo valor que 13/10? Opciones: A: 8/5 + 5/5; B: 8/5 + 2/5 + 3/10; C: 8/10 + 5/5; D: 8/10 + 2/10 + 3/10."
+      }
+    },
+    "nysed-2025-g4-mc-q14": {
+      "inputHash": "6dfa7ef163348ed51dcb6506d96c3be1bd9751d20cfaea2a2f2a25fbcd73c95f",
+      "description": {
+        "en": "Question 14. A house price rounds to $220,000 to the nearest ten thousand. Which could be its price? Choices: A: $213,690; B: $224,830; C: $227,310; D: $230,150.",
+        "es": "Pregunta 14. El precio de una casa se redondea a $220,000 a la decena de mil más cercana. ¿Cuál podría ser? Opciones: A: $213,690; B: $224,830; C: $227,310; D: $230,150."
+      }
+    },
+    "nysed-2025-g4-mc-q17": {
+      "inputHash": "6966a2022668fb2ebbfacfebe66a0949485f0b5e329af75a05dbe926ad3bb005",
+      "description": {
+        "en": "Question 17. Sam buys 4 packs of 12 cards and shares all cards equally among 3 friends. Which equations find cards c per friend? Choices: A: 12 + 4 = 16, then 16 × 3 = c; B: 12 × 4 = 48, then 48 × 3 = c; C: 12 + 4 = 16, then 16 ÷ 3 = c; D: 12 × 4 = 48, then 48 ÷ 3 = c.",
+        "es": "Pregunta 17. Sam compra 4 paquetes de 12 tarjetas y las reparte por igual entre 3 amigos. ¿Qué ecuaciones hallan c por amigo? Opciones: A: 12 + 4 = 16, luego 16 × 3 = c; B: 12 × 4 = 48, luego 48 × 3 = c; C: 12 + 4 = 16, luego 16 ÷ 3 = c; D: 12 × 4 = 48, luego 48 ÷ 3 = c."
+      }
+    },
+    "nysed-2025-g4-mc-q18": {
+      "inputHash": "4423e88b0aa39a9c8df9d0ef809e243fb2fd956d6b1edc0df34543654b2f42d8",
+      "description": {
+        "en": "Question 18. Which expression is equivalent to 8 × 3/5? Choices: A: 11 × 1/5; B: 11 × 3/5; C: 24 × 1/5; D: 24 × 3/5.",
+        "es": "Pregunta 18. ¿Qué expresión es equivalente a 8 × 3/5? Opciones: A: 11 × 1/5; B: 11 × 3/5; C: 24 × 1/5; D: 24 × 3/5."
+      }
+    },
+    "nysed-2025-g4-mc-q19": {
+      "inputHash": "a0545ee0a4eb60c54026453721886557f745a87037e60b2c1af72b6977f9d83e",
+      "description": {
+        "en": "Question 19. In which number does digit 7 have ten times its value in 27,325? Choices: A: 95,724; B: 87,615; C: 74,538; D: 62,479.",
+        "es": "Pregunta 19. ¿En qué número el dígito 7 tiene diez veces su valor en 27,325? Opciones: A: 95,724; B: 87,615; C: 74,538; D: 62,479."
+      }
+    },
+    "nysed-2025-g4-mc-q22": {
+      "inputHash": "3c4f0fe617b8adf7a6c97665afc95ef8d782cf3f201e9eadfd1a3fbbd4446402",
+      "description": {
+        "en": "Question 22. A rectangle has length 6 inches and area 24 square inches. What is its width? Choices: A: 4; B: 6; C: 18; D: 30 inches.",
+        "es": "Pregunta 22. Un rectángulo mide 6 pulgadas de largo y tiene un área de 24 pulgadas cuadradas. ¿Cuál es su ancho? Opciones: A: 4; B: 6; C: 18; D: 30 pulgadas."
+      }
+    },
+    "nysed-2025-g4-mc-q24": {
+      "inputHash": "9efaa4877993378d186668cb75fa34e076ddb9408e5150e341abb284a0ea0af9",
+      "description": {
+        "en": "Question 24. Which comparison is true? Choices: A: 1/3 = 4/6; B: 2/5 < 4/10; C: 3/4 > 7/8; D: 5/10 = 3/6.",
+        "es": "Pregunta 24. ¿Qué comparación es verdadera? Opciones: A: 1/3 = 4/6; B: 2/5 < 4/10; C: 3/4 > 7/8; D: 5/10 = 3/6."
+      }
+    },
+    "nysed-2025-g4-mc-q25": {
+      "inputHash": "a6b6898e54e655fb8add321f0fd7c3cff33774f8c87937e354e638f423c7a3a9",
+      "description": {
+        "en": "Question 25. Six cookies are 2 times the number of friends f sharing them. Which equation finds f? Choices: A: 6 ÷ 2 = f; B: 6 − 2 = f; C: 6 + 2 = f; D: 6 × 2 = f.",
+        "es": "Pregunta 25. Seis galletas son 2 veces la cantidad de amigos f que las comparten. ¿Qué ecuación halla f? Opciones: A: 6 ÷ 2 = f; B: 6 − 2 = f; C: 6 + 2 = f; D: 6 × 2 = f."
+      }
+    },
+    "nysed-2025-g4-mc-q27": {
+      "inputHash": "d9c731f319a0ef9e825b8882753519885fa2d0db6311443c55930469a73494bd",
+      "description": {
+        "en": "Question 27. What value makes 3 2/4 + ? = 4 1/4 true? Choices: A: 3/4; B: 5/4; C: 7 1/4; D: 7 3/4.",
+        "es": "Pregunta 27. ¿Qué valor hace verdadera la ecuación 3 2/4 + ? = 4 1/4? Opciones: A: 3/4; B: 5/4; C: 7 1/4; D: 7 3/4."
+      }
+    },
+    "nysed-2025-g4-mc-q28": {
+      "inputHash": "18ff17a9f0c7901b61484d579019002d80f98ea0d3f01fe88cd9709702f0b76a",
+      "description": {
+        "en": "Question 28. What is the quotient of 4,523 ÷ 4? Choices: A: 1,130; B: 1,130 remainder 3; C: 1,131; D: 1,131 remainder 1.",
+        "es": "Pregunta 28. ¿Cuál es el cociente de 4,523 ÷ 4? Opciones: A: 1,130; B: 1,130, residuo 3; C: 1,131; D: 1,131, residuo 1."
+      }
+    },
+    "nysed-2025-g4-mc-q29": {
+      "inputHash": "620fe57ff89d063f2a60751832ed7e06cc4657830630624bdecf7608520911dc",
+      "description": {
+        "en": "Question 29. Which number is a multiple of 8 and has a factor of 3? Choices: A: 16; B: 18; C: 32; D: 48.",
+        "es": "Pregunta 29. ¿Qué número es múltiplo de 8 y tiene un factor de 3? Opciones: A: 16; B: 18; C: 32; D: 48."
+      }
+    },
+    "nysed-2025-g4-mc-q30": {
+      "inputHash": "7acd6e5db17eb0d2d8e1f5f54b7d5067b8c1eb46f9f58df67634ce47ca4d16e5",
+      "description": {
+        "en": "Question 30. A rectangle is divided into 12 equal parts in a 3-by-4 grid. How many parts should be shaded to represent 3/4 of the whole? Choices: A: 3; B: 6; C: 9; D: 12.",
+        "es": "Pregunta 30. Un rectángulo está dividido en 12 partes iguales en una cuadrícula de 3 por 4. ¿Cuántas deben sombrearse para representar 3/4? Opciones: A: 3; B: 6; C: 9; D: 12."
+      }
+    },
+    "nysed-2025-g4-mc-q31": {
+      "inputHash": "e361cb07e938d49723f42fe21dc3847f6ef8fb5bfbd2f0361b60ec65fbcede05",
+      "description": {
+        "en": "Question 31. Four quadrilaterals are shown. Figure A has four equal-looking sides and four right angles. Figure B is diamond-shaped, with four equal-looking sides and no right angles. Figure C is a tall four-sided figure with four right angles. Figure D is slanted, with two pairs of parallel sides and no right angles. Which two appear to be rectangles? Choices: A: figures B and D; B: figures A and C; C: figures B and C; D: figures A and D.",
+        "es": "Pregunta 31. Se muestran cuatro cuadriláteros. La figura A tiene cuatro lados que parecen iguales y cuatro ángulos rectos. La figura B tiene forma de diamante, con cuatro lados que parecen iguales y ningún ángulo recto. La figura C es una figura alta de cuatro lados con cuatro ángulos rectos. La figura D está inclinada, con dos pares de lados paralelos y ningún ángulo recto. ¿Cuáles dos parecen rectángulos? Opciones: A: figuras B y D; B: figuras A y C; C: figuras B y C; D: figuras A y D."
+      }
+    },
+    "nysed-2025-g4-mc-q32": {
+      "inputHash": "c5a36ff2ca1d70cb55a6be2b50b74fc4fb0e66b3ce6724d15b79c846fc56d0f3",
+      "description": {
+        "en": "Question 32. What is the value of 87 × 36? Choices: A: 522; B: 783; C: 2,932; D: 3,132.",
+        "es": "Pregunta 32. ¿Cuál es el valor de 87 × 36? Opciones: A: 522; B: 783; C: 2,932; D: 3,132."
+      }
+    },
+    "nysed-2025-g4-mc-q33": {
+      "inputHash": "246bcc2ba4e1115313b01f6fab296c14594be9ccf72c0f25f8ff66f79381902d",
+      "description": {
+        "en": "Question 33. The given rectangle is 4 by 3 inches. Which rectangle has the same area but a different perimeter? Choices: A: 5 by 2 inches; B: 12 by 1 inch; C: 6 by 3 inches; D: 7 by 2 inches.",
+        "es": "Pregunta 33. El rectángulo dado mide 4 por 3 pulgadas. ¿Cuál tiene la misma área y otro perímetro? Opciones: A: 5 por 2 pulgadas; B: 12 por 1 pulgada; C: 6 por 3 pulgadas; D: 7 por 2 pulgadas."
+      }
+    },
+    "nysed-2025-g4-mc-q34": {
+      "inputHash": "dfe2ec420f82676900ec570ce2c21f212ac799dc447045ba3518c0a822c78bc8",
+      "description": {
+        "en": "Question 34. What is the value of 570 ÷ 6? The four answer choices are listed vertically. Choices: A: 93; B: 94; C: 95; D: 96.",
+        "es": "Pregunta 34. ¿Cuál es el valor de 570 ÷ 6? Las cuatro opciones de respuesta aparecen en una lista vertical. Opciones: A: 93; B: 94; C: 95; D: 96."
+      }
+    },
+    "nysed-2025-g4-mc-q35": {
+      "inputHash": "b772584dff68ef1775aae66f117cdcdf0ce56b078e1ee27887d0d7c82d4591d6",
+      "description": {
+        "en": "Question 35. School G has 126 third-graders and 174 fourth-graders. School H has 2 times G’s third-graders and 3 times G’s fourth-graders. How many more students in those grades are at H than G? Choices: A: 254; B: 474; C: 554; D: 774.",
+        "es": "Pregunta 35. G tiene 126 alumnos de tercero y 174 de cuarto. H tiene 2 veces los de tercero de G y 3 veces los de cuarto de G. ¿Cuántos alumnos más de esos grados hay en H que en G? Opciones: A: 254; B: 474; C: 554; D: 774."
+      }
+    }
+  }
+}

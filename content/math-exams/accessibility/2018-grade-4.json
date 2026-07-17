@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2018-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2018-g4-mc-q1": {
+      "inputHash": "04f5ee6a5c5c7829f0fdaa02d32e0b56d6f938b956caf2d70d73f99903321674",
+      "description": {
+        "en": "Question 1. Jean threw a softball 9 feet. Lee threw a softball 3 times as far as Jean. Which equation can be used to determine the distance, d, that Lee threw the ball? Choices: A: d × 3 = 9; B: d + 3 = 9; C: 3 + 9 = d; D: 3 × 9 = d.",
+        "es": "Pregunta 1. Jean lanzó una pelota de sóftbol a una distancia de 9 pies. Lee lanzó una pelota 3 veces más lejos que Jean. ¿Qué ecuación se puede usar para determinar la distancia, d, a la que Lee lanzó la pelota? Opciones: A: d × 3 = 9; B: d + 3 = 9; C: 3 + 9 = d; D: 3 × 9 = d."
+      }
+    },
+    "nysed-2018-g4-mc-q2": {
+      "inputHash": "70397c57041005a62811b9c6b9e95943377da33e5da5c1c2434a60dedb20106d",
+      "description": {
+        "en": "Question 2. Natasha and Evan are each writing a 5-page essay. Natasha completed 3/5 of her essay in the morning and 2/5 in the afternoon. Evan completed 4/5 of his essay after school. How much more of the total essay did Natasha complete than Evan? Choices: A: 1/5; B: 2/5; C: 4/5; D: 9/5.",
+        "es": "Pregunta 2. Natasha y Evan escriben un ensayo de 5 páginas cada uno. Natasha completó 3/5 de su ensayo por la mañana y 2/5 por la tarde. Evan completó 4/5 de su ensayo después de la escuela. ¿Cuánto más del total del ensayo completó Natasha en comparación con Evan? Opciones: A: 1/5; B: 2/5; C: 4/5; D: 9/5."
+      }
+    },
+    "nysed-2018-g4-mc-q3": {
+      "inputHash": "f21a9309b32ae061076efee191eddf5f57c76075cbd68cf6f16ec8a630e1d2e3",
+      "description": {
+        "en": "Question 3. A number rounded to the nearest thousand is 47,000. Which number could be the number that was rounded? Choices: A: 46,295; B: 46,504; C: 47,520; D: 47,924.",
+        "es": "Pregunta 3. Un número redondeado al millar más cercano da 47,000. ¿Qué número podría ser el número redondeado? Opciones: A: 46,295; B: 46,504; C: 47,520; D: 47,924."
+      }
+    },
+    "nysed-2018-g4-mc-q4": {
+      "inputHash": "b22f7148e039b332b7f7b3abd1f7003634f95aee4a9ce33ad034309690067213",
+      "description": {
+        "en": "Question 4. A toy car is shown above a measurement line whose endpoint-to-endpoint span measures 2 1/4 inches. What is the length, in inches, of the toy car? Choices: A: 2 1/4; B: 2 1/2; C: 3 1/4; D: 3 3/4.",
+        "es": "Pregunta 4. Se muestra un auto de juguete sobre una línea de medición cuya distancia de extremo a extremo mide 2 1/4 pulgadas. ¿Cuál es la longitud, en pulgadas, del auto de juguete? Opciones: A: 2 1/4; B: 2 1/2; C: 3 1/4; D: 3 3/4."
+      }
+    },
+    "nysed-2018-g4-mc-q12": {
+      "inputHash": "34e96c3c533d0fe94ddfa95e4ab4bdfb06f84e51a862ffd6e0c2804ee8db3269",
+      "description": {
+        "en": "Question 12. What is the measure, in degrees, of an angle that represents 50/360 of a circle? Choices: A: 50°; B: 90°; C: 310°; D: 360°.",
+        "es": "Pregunta 12. ¿Cuánto mide, en grados, un ángulo que representa 50/360 de un círculo? Opciones: A: 50°; B: 90°; C: 310°; D: 360°."
+      }
+    },
+    "nysed-2018-g4-mc-q13": {
+      "inputHash": "07eb984052dc0fe6f1096734e77d9624fb0834d50ca308973d6b9afa142d7a38",
+      "description": {
+        "en": "Question 13. Ms. Larsen is buying 2 delivery vans. The first van costs $16,257. The digit 2 in the price of the second van is 10 times the value of the digit 2 in the price of the first van. Which amount could be the price of the second van? Choices: A: $12,987; B: $15,927; C: $17,257; D: $21,579.",
+        "es": "Pregunta 13. La Sra. Larsen compra 2 camionetas de reparto. La primera cuesta $16,257. El dígito 2 en el precio de la segunda camioneta es 10 veces el valor del dígito 2 en el precio de la primera camioneta. ¿Qué monto podría ser el precio de la segunda camioneta? Opciones: A: $12,987; B: $15,927; C: $17,257; D: $21,579."
+      }
+    },
+    "nysed-2018-g4-mc-q14": {
+      "inputHash": "dc218f645e64129daa4ed04ef27d40fbf41d01b2fca0f550661c26d1f1fe4e22",
+      "description": {
+        "en": "Question 14. What is the rule for the pattern 41, 38, 35, 32, 29, and so on? Choices: A: divide by 3; B: divide by 4; C: subtract 3; D: subtract 4.",
+        "es": "Pregunta 14. ¿Cuál es la regla para la serie 41, 38, 35, 32, 29 y así sucesivamente? Opciones: A: dividir por 3; B: dividir por 4; C: restar 3; D: restar 4."
+      }
+    },
+    "nysed-2018-g4-mc-q17": {
+      "inputHash": "68fd3ad48ab9ba2ac773b94042fb0f131a8d559a509ee3f824f9bd95a4442f12",
+      "description": {
+        "en": "Question 17. Angle ABC has vertex B. Ray BC points horizontally right, and ray BA points up and right, forming an acute angle. What is the measure of angle ABC? Choices: A: 60°; B: 70°; C: 110°; D: 120°.",
+        "es": "Pregunta 17. El ángulo ABC tiene vértice B. La semirrecta BC apunta horizontalmente hacia la derecha y la semirrecta BA apunta hacia arriba y a la derecha, formando un ángulo agudo. ¿Cuál es la medida del ángulo ABC? Opciones: A: 60°; B: 70°; C: 110°; D: 120°."
+      }
+    },
+    "nysed-2018-g4-mc-q18": {
+      "inputHash": "4b0886e45437341c8a8e87cbe6a2ac8ffe49e5326f89bbf1d3cf2f28f84f5975",
+      "description": {
+        "en": "Question 18. Which expression has the same value as 7/12? Choices: A: 2/12 + 3/12 + 3/12; B: 7/12 + 7/12 + 7/12; C: 2/12 + 1/12 + 2/12 + 1/12; D: 2/12 + 1/12 + 2/12 + 2/12.",
+        "es": "Pregunta 18. ¿Qué expresión tiene el mismo valor que 7/12? Opciones: A: 2/12 + 3/12 + 3/12; B: 7/12 + 7/12 + 7/12; C: 2/12 + 1/12 + 2/12 + 1/12; D: 2/12 + 1/12 + 2/12 + 2/12."
+      }
+    },
+    "nysed-2018-g4-mc-q23": {
+      "inputHash": "52164aacfdf96c1d7dfc92263ed60909b8838c98bbed8c9aca2f604131fe247f",
+      "description": {
+        "en": "Question 23. What is the quotient of 1,248 ÷ 7? Choices: A: 177 remainder 9; B: 168 remainder 2; C: 178 remainder 2; D: 178 remainder 3.",
+        "es": "Pregunta 23. ¿Cuál es el cociente de 1,248 ÷ 7? Opciones: A: 177 con un remanente de 9; B: 168 con un remanente de 2; C: 178 con un remanente de 2; D: 178 con un remanente de 3."
+      }
+    },
+    "nysed-2018-g4-mc-q24": {
+      "inputHash": "6b1a0d78608f49b887bbe6247ef5a8cbecf2bb22355704f8f0202c745e3179d7",
+      "description": {
+        "en": "Question 24. Which number sentence correctly compares two numbers? Choices: A: forty-six thousand three hundred fifteen < 46,350; B: 29,073 = 20,000 + 9,000 + 700 + 3; C: 10,000 + 6,000 + 400 > sixteen thousand four hundred ten; D: 86,502 = 80,000 + 6,000 + 500 + 20.",
+        "es": "Pregunta 24. ¿Qué oración numérica compara correctamente dos números? Opciones: A: cuarenta y seis mil trescientos quince < 46,350; B: 29,073 = 20,000 + 9,000 + 700 + 3; C: 10,000 + 6,000 + 400 > dieciséis mil cuatrocientos diez; D: 86,502 = 80,000 + 6,000 + 500 + 20."
+      }
+    },
+    "nysed-2018-g4-mc-q25": {
+      "inputHash": "df16f041327d7fe980306fcaae0d94e9814f43b4bd02d9dc7a978fec120cc4b8",
+      "description": {
+        "en": "Question 25. Which expression has the same value as 7 × 3/4? Choices: A: 21 × 3/4; B: 21 × 3/28; C: 21 × 1/4; D: 21 × 1/28.",
+        "es": "Pregunta 25. ¿Qué expresión tiene el mismo valor que 7 × 3/4? Opciones: A: 21 × 3/4; B: 21 × 3/28; C: 21 × 1/4; D: 21 × 1/28."
+      }
+    },
+    "nysed-2018-g4-mc-q27": {
+      "inputHash": "fa84218b13ad09a05a99b5b588c139f55ccaf9d45d51c55969d09669180e7263",
+      "description": {
+        "en": "Question 27. Megan’s art class painted two rectangular murals. The first mural measures 8 feet by 6 feet. The second mural had the same area but a different perimeter. Which measures could be the side lengths of the second mural? Choices: A: 8 feet and 6 feet; B: 5 feet and 9 feet; C: 4 feet and 12 feet; D: 4 feet and 10 feet.",
+        "es": "Pregunta 27. La clase de arte de Megan pintó dos murales rectangulares. El primer mural mide 8 pies por 6 pies. El segundo mural tenía la misma área, pero diferente perímetro. ¿Qué medidas podrían ser las longitudes de los lados del segundo mural? Opciones: A: 8 pies y 6 pies; B: 5 pies y 9 pies; C: 4 pies y 12 pies; D: 4 pies y 10 pies."
+      }
+    },
+    "nysed-2018-g4-mc-q28": {
+      "inputHash": "93ad0a236ea944dbc7b80f4846c7eaf37aecf92f119eac26214163d7f57d014a",
+      "description": {
+        "en": "Question 28. Jack picks 60 apples. He uses 12 to make applesauce and places the remaining apples equally into 6 gift baskets. Which equation can be used to determine the number of apples, a, in each basket? Choices: A: (60 ÷ 6) − 12 = a; B: (60 − 12) ÷ 6 = a; C: (60 − 6) − 12 = a; D: (60 + 12) ÷ 6 = a.",
+        "es": "Pregunta 28. Jack recoge 60 manzanas. Usa 12 para hacer compota y coloca las manzanas restantes en cantidades iguales en 6 canastas de obsequio. ¿Qué ecuación se puede usar para determinar la cantidad de manzanas, a, en cada canasta? Opciones: A: (60 ÷ 6) − 12 = a; B: (60 − 12) ÷ 6 = a; C: (60 − 6) − 12 = a; D: (60 + 12) ÷ 6 = a."
+      }
+    },
+    "nysed-2018-g4-mc-q29": {
+      "inputHash": "85c7cd59ddb0d8a1777ef49291771880afe833af9437dd0b4ad16819f6f8c4d0",
+      "description": {
+        "en": "Question 29. A line plot shows tomato-plant heights in inches. It has 2 marks at 3, 1 at 3 1/2, 3 at 4, 0 at 4 1/2, 6 at 5, 1 at 5 1/2, 4 at 6, 1 at 6 1/2, and 2 at 7. Based on the line plot, how many plants have a height greater than 4 1/2 inches? Choices: A: 0; B: 6; C: 14; D: 20.",
+        "es": "Pregunta 29. Un diagrama lineal muestra las alturas de plantas de tomate en pulgadas. Tiene 2 marcas en 3, 1 en 3 1/2, 3 en 4, 0 en 4 1/2, 6 en 5, 1 en 5 1/2, 4 en 6, 1 en 6 1/2 y 2 en 7. Según el diagrama lineal, ¿cuántas plantas tienen una altura mayor que 4 1/2 pulgadas? Opciones: A: 0; B: 6; C: 14; D: 20."
+      }
+    },
+    "nysed-2018-g4-mc-q30": {
+      "inputHash": "177eeb3e2e22dad4b36e755274b87137e98aee2f95062b1cb71fb7716f986253",
+      "description": {
+        "en": "Question 30. Which statement is true? Choices: A: 4/12 > 5/8 because 5/8 is greater than 1/2 and 4/12 is closer to 1 than 1/2; B: 4/12 < 5/8 because 4/12 is less than 1/2 and 5/8 is greater than 1/2; C: 5/8 > 4/12 because 4/12 and 5/8 are both closer to 1 than 1/2; D: 5/8 < 4/12 because 5/8 and 4/12 are both less than 1/2.",
+        "es": "Pregunta 30. ¿Qué afirmación es verdadera? Opciones: A: 4/12 > 5/8 porque 5/8 es mayor que 1/2 y 4/12 es más cercano a 1 que 1/2; B: 4/12 < 5/8 porque 4/12 es menor que 1/2 y 5/8 es mayor que 1/2; C: 5/8 > 4/12 porque tanto 4/12 como 5/8 son más cercanos a 1 que 1/2; D: 5/8 < 4/12 porque tanto 5/8 como 4/12 son menores que 1/2."
+      }
+    },
+    "nysed-2018-g4-mc-q31": {
+      "inputHash": "81ed0a1df44aeef3f3d42b883c735de73348e185babad1c646dd4a022da4f042",
+      "verbatimSingleLetterChoices": true,
+      "description": {
+        "en": "Question 31. Four outlined block capital letters are shown. Letter A has one vertical line of symmetry; letter D has one horizontal line; letter H has one vertical and one horizontal line; and letter Y has one vertical line. Which letter has the greatest number of lines of symmetry? Choices: A: A; B: D; C: H; D: Y.",
+        "es": "Pregunta 31. Se muestran cuatro letras mayúsculas de imprenta delineadas. La letra A tiene una línea vertical de simetría; la D tiene una línea horizontal; la H tiene una línea vertical y una horizontal; y la Y tiene una línea vertical. ¿Qué letra tiene la mayor cantidad de líneas de simetría? Opciones: A: A; B: D; C: H; D: Y."
+      }
+    },
+    "nysed-2018-g4-mc-q32": {
+      "inputHash": "dc24991e3412801824f6f126e9568d32fa8636aa83f26c99ce40fe3e913a765d",
+      "description": {
+        "en": "Question 32. Which list shows all the factors of 36? Choices: A: 1, 2, 3, 4, 9, 12, 18, 36; B: 0, 1, 2, 3, 4, 9, 12, 18, 36; C: 1, 2, 3, 4, 6, 9, 12, 18, 36; D: 0, 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+        "es": "Pregunta 32. ¿Qué lista muestra todos los factores de 36? Opciones: A: 1, 2, 3, 4, 9, 12, 18, 36; B: 0, 1, 2, 3, 4, 9, 12, 18, 36; C: 1, 2, 3, 4, 6, 9, 12, 18, 36; D: 0, 1, 2, 3, 4, 6, 9, 12, 18, 36."
+      }
+    },
+    "nysed-2018-g4-mc-q33": {
+      "inputHash": "9063411dab9f56701a0dc6fe996f64e251662d8b31714d8239ae7cb12f30c5de",
+      "description": {
+        "en": "Question 33. Which expression shows 125,206 written in expanded form? Choices: A: 100,000 + 2,000 + 5,000 + 200 + 6; B: 100,000 + 20,000 + 5,000 + 200 + 6; C: 100,000 + 20,000 + 50,000 + 200 + 6; D: 100,000 + 20,000 + 5,000 + 2,000 + 6.",
+        "es": "Pregunta 33. ¿Qué expresión muestra 125,206 escrito de forma expandida? Opciones: A: 100,000 + 2,000 + 5,000 + 200 + 6; B: 100,000 + 20,000 + 5,000 + 200 + 6; C: 100,000 + 20,000 + 50,000 + 200 + 6; D: 100,000 + 20,000 + 5,000 + 2,000 + 6."
+      }
+    },
+    "nysed-2018-g4-mc-q34": {
+      "inputHash": "e9cb79f8f75dcfb4ac6215d90e2a86dd3603925f18876637c307ab66c4dc810e",
+      "description": {
+        "en": "Question 34. A table shows height increases in one month: Gina, 3/8 inch; Maxine, 2/3 inch; Shari, 2/4 inch; Vanessa, 3/12 inch. What girl had a height increase greater than 1/2 inch? Choices: A: Gina; B: Maxine; C: Shari; D: Vanessa.",
+        "es": "Pregunta 34. Una tabla muestra los aumentos de altura en un mes: Gina, 3/8 de pulgada; Maxine, 2/3 de pulgada; Shari, 2/4 de pulgada; Vanessa, 3/12 de pulgada. ¿Qué niña aumentó en altura más de 1/2 pulgada? Opciones: A: Gina; B: Maxine; C: Shari; D: Vanessa."
+      }
+    },
+    "nysed-2018-g4-mc-q35": {
+      "inputHash": "63cc1b41dcc4863b9c6a8c0d2274b9d45af127cae20a329bcda3115fb6bc7f5e",
+      "description": {
+        "en": "Question 35. Carl used some fabric to make a seat cover. Then he used 8 times as much fabric to make a tent. He used 24 yards for the tent. Which equation can be used to determine the amount used for the seat cover? Choices: A: 24 = 8 × ?; B: 24 = 8 + ?; C: 8 × 24 = ?; D: 8 + 24 = ?.",
+        "es": "Pregunta 35. Carl usó tela para confeccionar un cubreasientos. Luego usó 8 veces más tela para confeccionar una tienda de campaña. Para la tienda usó 24 yardas. ¿Qué ecuación se puede usar para determinar la cantidad usada para el cubreasientos? Opciones: A: 24 = 8 × ?; B: 24 = 8 + ?; C: 8 × 24 = ?; D: 8 + 24 = ?."
+      }
+    },
+    "nysed-2018-g4-mc-q36": {
+      "inputHash": "f0642a9d4b4cafa8142cef8ca098ae630a70fd56b1964a6199473dde6093e6dc",
+      "description": {
+        "en": "Question 36. Ms. Clark’s class went to recess at 12:00 p.m. By the time recess ended, the minute hand had turned 90 degrees clockwise from 12. At what time did recess end? Choices: A: 12:15 p.m.; B: 12:30 p.m.; C: 12:45 p.m.; D: 1:00 p.m.",
+        "es": "Pregunta 36. La clase de la Sra. Clark entró en receso a las 12:00 p. m. Para cuando terminó el receso, la manecilla de los minutos había girado 90 grados en sentido horario desde el 12. ¿A qué hora terminó el receso? Opciones: A: 12:15 p. m.; B: 12:30 p. m.; C: 12:45 p. m.; D: 1:00 p. m."
+      }
+    },
+    "nysed-2018-g4-mc-q37": {
+      "inputHash": "34c487ae666517ffe9e5f783d8db25c3b0c53443b8638df73609d01ff5b89847",
+      "description": {
+        "en": "Question 37. Andrew wrote 186,425. In which number is the value of the digit 6 exactly 10 times the value of the digit 6 in Andrew’s number? Choices: A: 681,452; B: 462,017; C: 246,412; D: 125,655.",
+        "es": "Pregunta 37. Andrew escribió 186,425. ¿En qué número es el valor del dígito 6 exactamente 10 veces el valor del dígito 6 en el número de Andrew? Opciones: A: 681,452; B: 462,017; C: 246,412; D: 125,655."
+      }
+    },
+    "nysed-2018-g4-mc-q38": {
+      "inputHash": "b4dd408f1dde4aa92238e3a7a3632fb5da9a0bd333bcf31aafe08cc0e24fd489",
+      "description": {
+        "en": "Question 38. Which number could be placed in the blank to make the equation 6 × 5/6 = ? × 1/6 true? Choices: A: 5; B: 11; C: 30; D: 36.",
+        "es": "Pregunta 38. ¿Qué número se podría colocar en el espacio en blanco para que la ecuación 6 × 5/6 = ? × 1/6 sea verdadera? Opciones: A: 5; B: 11; C: 30; D: 36."
+      }
+    }
+  }
+}

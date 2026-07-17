@@ -37,8 +37,8 @@
       "inputHash": "c3d029fca7901664039af9f969fc95c22123c4764cd52cc67ae7eda7b2f958fb",
       "explanation": {
         "text": {
-          "en": "A 15% increase gives 4,500(1.15) = 5,175. The following 4% decrease gives 5,175(0.96) = 4,968, so the final value is $4,968.",
-          "es": "Un aumento del 15% da 4,500(1.15) = 5,175. La disminución posterior del 4% da 5,175(0.96) = 4,968, así que el valor final es $4,968."
+          "en": "A 15% population increase gives 4,500(1.15) = 5,175 people. The following 4% decrease gives 5,175(0.96) = 4,968, so the final population is 4,968 people.",
+          "es": "Un aumento del 15% en la población da 4,500(1.15) = 5,175 personas. La disminución posterior del 4% da 5,175(0.96) = 4,968, así que la población final es de 4,968 personas."
         },
         "source": "vine-authored"
       }
@@ -67,8 +67,8 @@
       "inputHash": "1a01f8278f758a349c2363b96646c950e9ae881b998fc64831659f71cc2c2080",
       "explanation": {
         "text": {
-          "en": "The three people each contribute x dollars, for 3x total, and $23 is already available. “At least $80” means the inequality 3x + 23 ≥ 80.",
-          "es": "Las tres personas aportan x dólares cada una, para un total de 3x, y ya hay $23. “Por lo menos $80” se representa con la desigualdad 3x + 23 ≥ 80."
+          "en": "Winston and his two friends each collect x signatures, for 3x signatures total, and Winston already has 23. “At least 80 signatures” means 3x + 23 ≥ 80.",
+          "es": "Winston y sus dos amigos reúnen x firmas cada uno, para un total de 3x firmas, y Winston ya tiene 23. “Por lo menos 80 firmas” se representa con 3x + 23 ≥ 80."
         },
         "source": "vine-authored"
       }
@@ -144,7 +144,7 @@
       }
     },
     "nysed-2017-g7-mc-q21": {
-      "inputHash": "fbf5af3ec823183612eb8ea1ad5bff488e9fab2bff0605d681da1621545127bd",
+      "inputHash": "0b32c669013996405f2a2f05daee17a532df79a9a52a9342fb0d85ff6f14eea5",
       "explanation": {
         "text": {
           "en": "First combine inside: −(3/2)x + 6x + 1 = (9/2)x + 1. Multiplying by −1/2 and then subtracting 3x gives −9/4x − 1/2 − 3x = −21/4x − 1/2 = −5 1/4x − 1/2.",
@@ -357,8 +357,8 @@
       "inputHash": "3b6014e4a294f06e533bf01210e3bd0fa7af664bc29f6b2ce48f6fe3cfd10e96",
       "explanation": {
         "text": {
-          "en": "First subtract the 3.5% fee: $16 − 0.035($16) = $15.44. The next fee is 0.0425($15.44) = $0.6562, leaving $15.44 − $0.6562 = $14.7838.",
-          "es": "Primero restamos la comisión del 3.5%: $16 − 0.035($16) = $15.44. La siguiente comisión es 0.0425($15.44) = $0.6562, por lo que quedan $15.44 − $0.6562 = $14.7838."
+          "en": "After the first hour, 16 − 0.035(16) = 15.44 grams of water remain. The second-hour decrease is 0.0425(15.44) = 0.6562 gram, leaving 15.44 − 0.6562 = 14.7838 grams.",
+          "es": "Después de la primera hora quedan 16 − 0.035(16) = 15.44 gramos de agua. La disminución de la segunda hora es 0.0425(15.44) = 0.6562 gramos, por lo que quedan 15.44 − 0.6562 = 14.7838 gramos."
         },
         "source": "vine-authored"
       }

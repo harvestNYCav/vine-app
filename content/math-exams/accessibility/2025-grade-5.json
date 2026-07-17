@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2025-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2025-g5-mc-q3": {
+      "inputHash": "53fe583272f46b526e52c47aa430748ab611139a06b2d6c85d438b5ba9eaa195",
+      "description": {
+        "en": "Question 3. What is the quotient of 2,550 ÷ 25? Choices: A: 100. B: 102. C: 105. D: 120.",
+        "es": "Pregunta 3. ¿Cuál es el cociente de 2,550 ÷ 25? Opciones: A: 100 B: 102 C: 105 D: 120"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2,550 ÷ 25",
+          "100",
+          "102",
+          "105",
+          "120",
+          "A: 100",
+          "B: 102",
+          "C: 105",
+          "D: 120"
+        ],
+        "es": [
+          "2,550 ÷ 25",
+          "100",
+          "102",
+          "105",
+          "120",
+          "A: 100",
+          "B: 102",
+          "C: 105",
+          "D: 120"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q5": {
+      "inputHash": "06e08abd60072221b3cd811a09580295fe79aac2f5ac44835de456790591dcdc",
+      "description": {
+        "en": "Question 5. Which number has a 2 in the tens place? Choices: A: 0.26. B: 2.09. C: 3.726. D: 425.9.",
+        "es": "Pregunta 5. ¿Qué número tiene un 2 en el lugar de los décimos? Opciones: A: 0.26 B: 2.09 C: 3.726 D: 425.9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.26",
+          "2.09",
+          "3.726",
+          "425.9",
+          "A: 0.26",
+          "B: 2.09",
+          "C: 3.726",
+          "D: 425.9"
+        ],
+        "es": [
+          "0.26",
+          "2.09",
+          "3.726",
+          "425.9",
+          "A: 0.26",
+          "B: 2.09",
+          "C: 3.726",
+          "D: 425.9"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q9": {
+      "inputHash": "e47e81886ef4fb88f2dc7f5ef03c8800253a9d6ab9ef5c9698595741a0ed78b6",
+      "description": {
+        "en": "Question 9. Which expression is equivalent to 3/4 × 7? Choices: A: 3 × 4 ÷ 7. B: 3 × 7 ÷ 4. C: 3 ÷ 4 ÷ 7. D: 3 × 7 × 4.",
+        "es": "Pregunta 9. ¿Qué expresión es equivalente a 3/4 × 7? Opciones: A: 3 × 4 ÷ 7 B: 3 × 7 ÷ 4 C: 3 ÷ 4 ÷ 7 D: 3 × 7 × 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4 × 7",
+          "3 × 4 ÷ 7",
+          "3 × 7 ÷ 4",
+          "3 ÷ 4 ÷ 7",
+          "3 × 7 × 4",
+          "A: 3 × 4 ÷ 7",
+          "B: 3 × 7 ÷ 4",
+          "C: 3 ÷ 4 ÷ 7",
+          "D: 3 × 7 × 4",
+          "3/4"
+        ],
+        "es": [
+          "3/4 × 7",
+          "3 × 4 ÷ 7",
+          "3 × 7 ÷ 4",
+          "3 ÷ 4 ÷ 7",
+          "3 × 7 × 4",
+          "A: 3 × 4 ÷ 7",
+          "B: 3 × 7 ÷ 4",
+          "C: 3 ÷ 4 ÷ 7",
+          "D: 3 × 7 × 4",
+          "3/4"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q10": {
+      "inputHash": "49cddcdf877ded330b718dd82d2f3d2e260c70f68cfac1512dd84cd6fb5e3745",
+      "description": {
+        "en": "Question 10. The first layer of a right rectangular prism is represented by a rectangular array of 15 small cubes arranged in 3 rows of 5 cubes. Each small cube has a volume of 1 cubic unit. A key states that one small cube equals 1 cubic unit. The height of the entire right rectangular prism is 6 unit cubes. What is the volume, in cubic units, of this prism? Choices: A: 15. B: 23. C: 60. D: 90.",
+        "es": "Pregunta 10. A continuación, se muestra la primera capa de un prisma rectangular recto. Cada pequeño cubo tiene un volumen de 1 unidad cúbica. La primera capa está formada por una matriz rectangular de cubos unitarios, con 3 cubos de ancho y 5 cubos de largo, para un total de 15 cubos en la capa. Un recuadro de REFERENCIA contiene el dibujo de un cubo y la igualdad «1 cubo = 1 unidad cúbica». La altura de todo el prisma rectangular recto es de 6 cubos unitarios. ¿Cuál es el volumen, en unidades cúbicas, de este prisma? Opciones: A: 15 B: 23 C: 60 D: 90"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 small cubes",
+          "3 rows of 5 cubes",
+          "1 cubic unit",
+          "6 unit cubes",
+          "15",
+          "23",
+          "60",
+          "90",
+          "A: 15",
+          "B: 23",
+          "C: 60",
+          "D: 90"
+        ],
+        "es": [
+          "1 unidad cúbica",
+          "3 cubos",
+          "5 cubos",
+          "15 cubos",
+          "1 cubo = 1 unidad cúbica",
+          "6 cubos unitarios",
+          "15",
+          "23",
+          "60",
+          "90",
+          "A: 15",
+          "B: 23",
+          "C: 60",
+          "D: 90"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q11": {
+      "inputHash": "a8ae42d10cb5bdaee8f94f49c2198b678598d33fb9688fc6c6377012ebc58381",
+      "description": {
+        "en": "Question 11. A baker has 1/4 of a box of muffin mix. He pours all the muffin mix equally into 3 bowls. What fraction of the whole box of muffin mix is in each bowl? Choices: A: 1/12. B: 3/4. C: 2 3/4. D: 3 1/4.",
+        "es": "Pregunta 11. Un panadero tiene 1/4 de caja de mezcla para muffins. Vierte toda la mezcla para muffins en partes iguales en 3 recipientes. ¿Qué fracción de la caja entera de mezcla para muffins contiene cada recipiente? Opciones: A: 1/12 B: 3/4 C: 2 3/4 D: 3 1/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/4",
+          "3 bowls",
+          "1/12",
+          "3/4",
+          "2 3/4",
+          "3 1/4",
+          "A: 1/12",
+          "B: 3/4",
+          "C: 2 3/4",
+          "D: 3 1/4"
+        ],
+        "es": [
+          "1/4",
+          "3 recipientes",
+          "1/12",
+          "3/4",
+          "2 3/4",
+          "3 1/4",
+          "A: 1/12",
+          "B: 3/4",
+          "C: 2 3/4",
+          "D: 3 1/4"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q13": {
+      "inputHash": "168a1be9df4e693d668e026dabb89f4fdebfa80cc7c94a54119e61ea18350ccd",
+      "description": {
+        "en": "Question 13. Jamie has aquarium rocks that come in bags that weigh 2 2/5 pounds each. She has 1 1/2 bags of rocks. What is the total weight, in pounds, of the aquarium rocks that Jamie has? Choices: A: 1 3/5. B: 3 3/7. C: 3 3/5. D: 3 9/10.",
+        "es": "Pregunta 13. Jamie tiene piedras de acuario que vienen en bolsas que pesan 2 2/5 libras cada una. Ella tiene 1 1/2 bolsas de piedras. ¿Cuál es el peso total, en libras, de piedras de acuario que tiene Jamie? Opciones: A: 1 3/5 B: 3 3/7 C: 3 3/5 D: 3 9/10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 2/5 pounds",
+          "1 1/2 bags",
+          "1 3/5",
+          "3 3/7",
+          "3 3/5",
+          "3 9/10",
+          "A: 1 3/5",
+          "B: 3 3/7",
+          "C: 3 3/5",
+          "D: 3 9/10",
+          "2 2/5",
+          "1 1/2"
+        ],
+        "es": [
+          "2 2/5 libras",
+          "1 1/2 bolsas",
+          "1 3/5",
+          "3 3/7",
+          "3 3/5",
+          "3 9/10",
+          "A: 1 3/5",
+          "B: 3 3/7",
+          "C: 3 3/5",
+          "D: 3 9/10",
+          "2 2/5",
+          "1 1/2"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q14": {
+      "inputHash": "bcefc15acd9f34597f5e7e7332d5cd0aca8656a9a1c0da275ff5700b3ad95b4f",
+      "description": {
+        "en": "Question 14. What is the value of 34/100 + 2/10? Choices: A: 54/100. B: 54/10. C: 36/100. D: 36/10.",
+        "es": "Pregunta 14. ¿Cuál es el valor de 34/100 + 2/10? Opciones: A: 54/100; B: 54/10; C: 36/100; D: 36/10."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "34/100 + 2/10",
+          "54/100",
+          "54/10",
+          "36/100",
+          "36/10",
+          "A: 54/100",
+          "B: 54/10",
+          "C: 36/100",
+          "D: 36/10",
+          "34/100",
+          "2/10"
+        ],
+        "es": [
+          "34/100 + 2/10",
+          "A: 54/100",
+          "B: 54/10",
+          "C: 36/100",
+          "D: 36/10",
+          "34/100",
+          "2/10",
+          "54/100",
+          "54/10",
+          "36/100",
+          "36/10"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q15": {
+      "inputHash": "17a141ad5bcff4921a3c9c6ae239575831580f8dcfb700ca2cdc9bf7ba22a9e0",
+      "description": {
+        "en": "Question 15. Which shape always has four sides of equal length? Choices: A: rectangle. B: rhombus. C: parallelogram. D: trapezoid.",
+        "es": "Pregunta 15. ¿Qué forma tiene siempre cuatro lados del mismo largo? Opciones: A: rectángulo B: rombo C: paralelogramo D: trapecio"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "four sides of equal length",
+          "rectangle",
+          "rhombus",
+          "parallelogram",
+          "trapezoid",
+          "A: rectangle",
+          "B: rhombus",
+          "C: parallelogram",
+          "D: trapezoid"
+        ],
+        "es": [
+          "cuatro lados del mismo largo",
+          "rectángulo",
+          "rombo",
+          "paralelogramo",
+          "trapecio",
+          "A: rectángulo",
+          "B: rombo",
+          "C: paralelogramo",
+          "D: trapecio"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q20": {
+      "inputHash": "1f225de868108792924a822319b03d10ec7b2da1452c8c4e377b10ac9ea345ac",
+      "description": {
+        "en": "Question 20. What is 63.4368 rounded to the nearest hundredth? Choices: A: 63.4 B: 63.43 C: 63.44 D: 63.437",
+        "es": "Pregunta 20. ¿Cuánto es 63.4368 redondeado al centésimo más cercano? Opciones: A: 63.4 B: 63.43 C: 63.44 D: 63.437"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "63.4368",
+          "63.4",
+          "63.43",
+          "63.44",
+          "63.437",
+          "A: 63.4",
+          "B: 63.43",
+          "C: 63.44",
+          "D: 63.437"
+        ],
+        "es": [
+          "63.4368",
+          "63.4",
+          "63.43",
+          "63.44",
+          "63.437",
+          "A: 63.4",
+          "B: 63.43",
+          "C: 63.44",
+          "D: 63.437"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q24": {
+      "inputHash": "e67ed1eccec2608de7122138c757cf74087968f26600613acdffe2c4ea7f8e73",
+      "description": {
+        "en": "Question 24. A container had 1 liter of water. Exactly 800 milliliters of the water were removed from the container. Which picture shows the amount of water remaining in the container? Each choice is a beaker with a vertical scale labeled, from bottom to top, 200, 400, 600, 800, and 1,000 mL; there is also one unlabeled tick halfway between each pair of consecutive labeled values. Choices: A: The water surface is at the 200 mL mark. B: The water surface is at the 600 mL mark. C: The water surface is at the 800 mL mark. D: The water surface is at the 1,000 mL mark.",
+        "es": "Pregunta 24. Un contenedor tenía 1 litro de agua. Se sacaron exactamente 800 mililitros de agua del contenedor. ¿Qué figura muestra la cantidad de agua que queda en el contenedor? Cada opción presenta un vaso medidor con una escala vertical rotulada 200, 400, 600, 800 y 1,000 ml, con marcas intermedias de 100 ml. Opciones: A: El agua está sombreada hasta la marca de 200 ml. B: El agua está sombreada hasta la marca de 600 ml. C: El agua está sombreada hasta la marca de 800 ml. D: El agua está sombreada hasta la marca de 1,000 ml."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 liter",
+          "800 milliliters",
+          "200",
+          "400",
+          "600",
+          "800",
+          "1,000 mL",
+          "200 mL",
+          "600 mL",
+          "800 mL",
+          "A: The water surface is at the 200 mL mark",
+          "B: The water surface is at the 600 mL mark",
+          "C: The water surface is at the 800 mL mark",
+          "D: The water surface is at the 1,000 mL mark"
+        ],
+        "es": [
+          "1 litro",
+          "800 mililitros",
+          "100 ml",
+          "200 ml",
+          "400",
+          "600 ml",
+          "800 ml",
+          "1,000 ml",
+          "A: El agua está sombreada hasta la marca de 200 ml",
+          "B: El agua está sombreada hasta la marca de 600 ml",
+          "C: El agua está sombreada hasta la marca de 800 ml",
+          "D: El agua está sombreada hasta la marca de 1,000 ml"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q25": {
+      "inputHash": "f03991f4ae0850d91702d125472426ac4fb662be3e76b7a03285d2cbbdb866b4",
+      "description": {
+        "en": "Question 25. Lori uses 12 pounds of turkey to make 60 sandwiches. Each sandwich has the same amount of turkey. What is the total amount of turkey in each sandwich? Choices: A: 1/6 pound B: 1/5 pound C: 5 pounds D: 6 pounds",
+        "es": "Pregunta 25. Lori utiliza 12 libras de pavo para hacer 60 sándwiches. Cada sándwich tiene la misma cantidad de pavo. ¿Cuál es la cantidad total de pavo que hay en cada sándwich? Opciones: A: 1/6 libra B: 1/5 libra C: 5 libras D: 6 libras"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 pounds",
+          "60 sandwiches",
+          "1/6 pound",
+          "1/5 pound",
+          "5 pounds",
+          "6 pounds",
+          "A: 1/6 pound",
+          "B: 1/5 pound",
+          "C: 5 pounds",
+          "D: 6 pounds",
+          "1/6",
+          "1/5"
+        ],
+        "es": [
+          "12 libras",
+          "60 sándwiches",
+          "1/6 libra",
+          "1/5 libra",
+          "5 libras",
+          "6 libras",
+          "A: 1/6 libra",
+          "B: 1/5 libra",
+          "C: 5 libras",
+          "D: 6 libras",
+          "1/6",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q26": {
+      "inputHash": "c4915bfbc0f7d5427e30f43d77da03c506d1606d53bad710aa49cfeddda8f232",
+      "description": {
+        "en": "Question 26. Sheri walks 1 1/3 miles to the store. From the store she walks 2/5 of a mile to a friend’s house. What is the total distance, in miles, that Sheri walks? Choices: A: 8/15 B: 6/8 C: 1 3/8 D: 1 11/15",
+        "es": "Pregunta 26. Sheri camina 1 1/3 millas para ir a la tienda. Desde la tienda, camina 2/5 de milla hasta la casa de una amiga. ¿Cuál es la distancia total, en millas, que camina Sheri? Opciones: A: 8/15 B: 6/8 C: 1 3/8 D: 1 11/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/3",
+          "2/5",
+          "8/15",
+          "6/8",
+          "1 3/8",
+          "1 11/15",
+          "A: 8/15",
+          "B: 6/8",
+          "C: 1 3/8",
+          "D: 1 11/15"
+        ],
+        "es": [
+          "1 1/3",
+          "2/5",
+          "8/15",
+          "6/8",
+          "1 3/8",
+          "1 11/15",
+          "A: 8/15",
+          "B: 6/8",
+          "C: 1 3/8",
+          "D: 1 11/15"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q28": {
+      "inputHash": "b961f01f48b773e620532d6e5922e30c2d7d0205beb739c9d478f4e4302dcdd8",
+      "description": {
+        "en": "Question 28. In which number does the digit 6 represent a value that is one tenth the value represented by the digit 6 in the number 506.42? Choices: A: 504.26 B: 540.62 C: 560.42 D: 604.25",
+        "es": "Pregunta 28. ¿En qué número representa el dígito 6 un valor que es un décimo del valor representado por el dígito 6 en el número 506.42? Opciones: A: 504.26 B: 540.62 C: 560.42 D: 604.25"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "506.42",
+          "504.26",
+          "540.62",
+          "560.42",
+          "604.25",
+          "A: 504.26",
+          "B: 540.62",
+          "C: 560.42",
+          "D: 604.25"
+        ],
+        "es": [
+          "6",
+          "un décimo",
+          "506.42",
+          "504.26",
+          "540.62",
+          "560.42",
+          "604.25",
+          "A: 504.26",
+          "B: 540.62",
+          "C: 560.42",
+          "D: 604.25"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q29": {
+      "inputHash": "1035df4c9530aa8b03dbef19dc26a8d7382380c149ab52122d171452d961ac96",
+      "description": {
+        "en": "Question 29. The figure is made of unit cubes arranged in two identical horizontal layers. In each layer, 5 cubes form one horizontal row. One additional cube extends perpendicularly from the first, third, and fifth positions of that row, all on the same side, so each layer contains 8 cubes. The layers are directly above one another. What is the volume, in cubic units, of the figure? Choices: A: 16; B: 20; C: 24; D: 30.",
+        "es": "Pregunta 29. La figura está hecha de cubos unitarios dispuestos en dos capas horizontales idénticas. En cada capa, 5 cubos forman una fila horizontal. Un cubo adicional se extiende perpendicularmente desde las posiciones primera, tercera y quinta de esa fila, todos hacia el mismo lado, por lo que cada capa contiene 8 cubos. Las capas están directamente una sobre la otra. ¿Cuál es el volumen, en unidades cúbicas, de la figura? Opciones: A: 16; B: 20; C: 24; D: 30."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 cubes form one horizontal row",
+          "first, third, and fifth positions",
+          "each layer contains 8 cubes",
+          "two identical horizontal layers",
+          "A: 16",
+          "B: 20",
+          "C: 24",
+          "D: 30"
+        ],
+        "es": [
+          "5 cubos forman una fila horizontal",
+          "posiciones primera, tercera y quinta",
+          "cada capa contiene 8 cubos",
+          "dos capas horizontales idénticas",
+          "A: 16",
+          "B: 20",
+          "C: 24",
+          "D: 30"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q31": {
+      "inputHash": "d636b469ea542de022b9ba6ac40acf881d7e106575b52e966176369d1df6d7bd",
+      "description": {
+        "en": "Question 31. A company owner spends $1,488 for tickets to a baseball game. The price of each ticket is $24. How many tickets does the company owner buy? Choices: A: 62 B: 68 C: 74 D: 75",
+        "es": "Pregunta 31. El dueño de una empresa gasta $1,488 en entradas para un juego de béisbol. El precio de cada entrada es de $24. ¿Cuántas entradas compra el dueño de la empresa? Opciones: A: 62 B: 68 C: 74 D: 75"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$1,488",
+          "$24",
+          "62",
+          "68",
+          "74",
+          "75",
+          "A: 62",
+          "B: 68",
+          "C: 74",
+          "D: 75"
+        ],
+        "es": [
+          "$1,488",
+          "$24",
+          "62",
+          "68",
+          "74",
+          "75",
+          "A: 62",
+          "B: 68",
+          "C: 74",
+          "D: 75"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q32": {
+      "inputHash": "eeaf55f4f94ecc7e4970b17cf5a8c4d04944f4727262e5440f6e9d57c9bd779f",
+      "description": {
+        "en": "Question 32. An art teacher makes green paint by combining 2 quarts of yellow paint and 3 pints of blue paint. How much green paint, in cups, does the art teacher make? Choices: A: 7 B: 10 C: 14 D: 20",
+        "es": "Pregunta 32. Una maestra de arte prepara pintura verde combinando 2 cuartos de galón de pintura amarilla con 3 pintas de pintura azul. ¿Cuánta pintura verde, en tazas, prepara la maestra de arte? Opciones: A: 7 B: 10 C: 14 D: 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 quarts",
+          "3 pints",
+          "7",
+          "10",
+          "14",
+          "20",
+          "A: 7",
+          "B: 10",
+          "C: 14",
+          "D: 20"
+        ],
+        "es": [
+          "2 cuartos de galón",
+          "3 pintas",
+          "7",
+          "10",
+          "14",
+          "20",
+          "A: 7",
+          "B: 10",
+          "C: 14",
+          "D: 20"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q33": {
+      "inputHash": "46e63eb9ebae9c94c26c6f9a490d65a4e3c6d01da8c00777230dd2d0ea375707",
+      "description": {
+        "en": "Question 33. Which expression is equivalent to 1 5/14 − 3/4? Choices: A: 15/14 − 13/14. B: 33/28 − 3/28. C: 38/28 − 21/28. D: 19/56 − 3/56.",
+        "es": "Pregunta 33. ¿Qué expresión es equivalente a 1 5/14 − 3/4? Opciones: A: 15/14 − 13/14 B: 33/28 − 3/28 C: 38/28 − 21/28 D: 19/56 − 3/56"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 5/14 − 3/4",
+          "15/14 − 13/14",
+          "33/28 − 3/28",
+          "38/28 − 21/28",
+          "19/56 − 3/56",
+          "A: 15/14 − 13/14",
+          "B: 33/28 − 3/28",
+          "C: 38/28 − 21/28",
+          "D: 19/56 − 3/56",
+          "1 5/14",
+          "3/4",
+          "15/14",
+          "13/14",
+          "33/28",
+          "3/28",
+          "38/28",
+          "21/28",
+          "19/56",
+          "3/56"
+        ],
+        "es": [
+          "1 5/14",
+          "3/4",
+          "15/14",
+          "13/14",
+          "33/28",
+          "3/28",
+          "38/28",
+          "21/28",
+          "19/56",
+          "3/56",
+          "A: 15/14 − 13/14",
+          "B: 33/28 − 3/28",
+          "C: 38/28 − 21/28",
+          "D: 19/56 − 3/56"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q34": {
+      "inputHash": "7a7cc5403e80f072bbdb675cf3800a31f1462859d8ff07f6906f5a67950e30fd",
+      "description": {
+        "en": "Question 34. Jaylah is buying her favorite candy at a store. The cost for each piece of candy is $0.63. Jaylah buys 5 pieces of candy. She pays with a $5.00 bill. What is the total amount of money she should get in change? Choices: A: $1.55. B: $1.85. C: $3.05. D: $3.15.",
+        "es": "Pregunta 34. Jaylah está comprando su dulce favorito en una tienda. El costo de cada unidad de dulce es de $0.63. Jaylah compra 5 unidades de dulce. Paga con un billete de $5.00. ¿Cuál es la cantidad total de dinero que debe recibir como cambio? Opciones: A: $1.55 B: $1.85 C: $3.05 D: $3.15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$0.63",
+          "5",
+          "$5.00",
+          "$1.55",
+          "$1.85",
+          "$3.05",
+          "$3.15",
+          "A: $1.55",
+          "B: $1.85",
+          "C: $3.05",
+          "D: $3.15"
+        ],
+        "es": [
+          "$0.63",
+          "5 unidades",
+          "$5.00",
+          "$1.55",
+          "$1.85",
+          "$3.05",
+          "$3.15",
+          "A: $1.55",
+          "B: $1.85",
+          "C: $3.05",
+          "D: $3.15"
+        ]
+      }
+    },
+    "nysed-2025-g5-mc-q35": {
+      "inputHash": "5060254cba1a136b6e05b5a9c0f634e466a97a853ff52aa8fed0cce89556b18e",
+      "description": {
+        "en": "Question 35. Which statement about parallelograms is true? Choices: A: All parallelograms are squares. B: All parallelograms are rectangles. C: All parallelograms are rhombuses. D: All parallelograms are quadrilaterals.",
+        "es": "Pregunta 35. ¿Qué afirmación sobre los paralelogramos es verdadera? Opciones: A: Todos los paralelogramos son cuadrados. B: Todos los paralelogramos son rectángulos. C: Todos los paralelogramos son rombos. D: Todos los paralelogramos son cuadriláteros."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "squares",
+          "rectangles",
+          "rhombuses",
+          "quadrilaterals",
+          "A: All parallelograms are squares",
+          "B: All parallelograms are rectangles",
+          "C: All parallelograms are rhombuses",
+          "D: All parallelograms are quadrilaterals"
+        ],
+        "es": [
+          "paralelogramos",
+          "cuadrados",
+          "rectángulos",
+          "rombos",
+          "cuadriláteros",
+          "A: Todos los paralelogramos son cuadrados",
+          "B: Todos los paralelogramos son rectángulos",
+          "C: Todos los paralelogramos son rombos",
+          "D: Todos los paralelogramos son cuadriláteros"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2013-grade-5-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2013-g5-mc-q1": {
+      "inputHash": "43f5312003d20955951899b61b36d9e6f3b0529b7d343daee2e0e0bc702c870d",
+      "description": {
+        "en": "Question 1. The shaded part of the square below has a length of 3/4 foot and a width of 1/2 foot. A square measuring 1 foot by 1 foot is divided into four equal columns and two equal rows, forming eight equal rectangles. The first three rectangles in the top row are shaded; the fourth rectangle in the top row and all four rectangles in the bottom row are unshaded. What is the area, in square feet, of the shaded part of the square? Choices: A: 1/8. B: 3/8. C: 4/8. D: 5/8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4",
+          "1/2",
+          "1 foot by 1 foot",
+          "1/8",
+          "3/8",
+          "4/8",
+          "5/8",
+          "A: 1/8",
+          "B: 3/8",
+          "C: 4/8",
+          "D: 5/8"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q2": {
+      "inputHash": "4307e67f1a1eeea294096453d9cec78fcfeeb8583550bbcf43e96f5984541645",
+      "description": {
+        "en": "Question 2. What is the value of the expression below? 24.5 − 15.75. Choices: A: 8.75. B: 8.85. C: 9.25. D: 9.75."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "24.5 − 15.75",
+          "8.75",
+          "8.85",
+          "9.25",
+          "9.75",
+          "A: 8.75",
+          "B: 8.85",
+          "C: 9.25",
+          "D: 9.75"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q3": {
+      "inputHash": "63d68b31813e74264f4316a4fea2db709df19c1c0b0f9cf64614d7a13bc55604",
+      "description": {
+        "en": "Question 3. Mr. Morris built a fence to enclose his yard. He put up 3/4 of the fence on Monday. On Tuesday, he put up 1/6 of the fence, and on Wednesday, he put up the rest of the fence. What portion of the fence did he put up on Wednesday? Choices: A: 11/12. B: 3/5. C: 2/5. D: 1/12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4",
+          "1/6",
+          "11/12",
+          "3/5",
+          "2/5",
+          "1/12",
+          "A: 11/12",
+          "B: 3/5",
+          "C: 2/5",
+          "D: 1/12"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q4": {
+      "inputHash": "deb916a1d06678cbf408ccdba66d31e611683118b561cb48afec60287dcce419",
+      "description": {
+        "en": "Question 4. Which statement is true about the product of 5/12 × 7? Choices: A: The product is greater than each factor. B: The product is less than each factor. C: The product is greater than 5/12 but less than 7. D: The product is equal to one of the factors."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5/12 × 7",
+          "greater than each factor",
+          "less than each factor",
+          "greater than 5/12 but less than 7",
+          "equal to one of the factors",
+          "A: The product is greater than each factor",
+          "B: The product is less than each factor",
+          "C: The product is greater than 5/12 but less than 7",
+          "D: The product is equal to one of the factors",
+          "5/12"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q5": {
+      "inputHash": "627c717abb270f6d0f77de560388871e028ab5a8c21197277db784fb440352fc",
+      "description": {
+        "en": "Question 5. Which term can be put in the blank to make the statement below true? 3,000,000 = 30 _____. Choices: A: thousands. B: ten-thousands. C: hundred-thousands. D: millions."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3,000,000 = 30 _____",
+          "thousands",
+          "ten-thousands",
+          "hundred-thousands",
+          "millions",
+          "A: thousands",
+          "B: ten-thousands",
+          "C: hundred-thousands",
+          "D: millions"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q6": {
+      "inputHash": "7781f603f91d4d52d16168a22309a30e35ca7e3e068d83ef125ddba1c24ec314",
+      "description": {
+        "en": "Question 6. What is the value of the expression below? 738 ÷ 18. Choices: A: 40. B: 41. C: 401. D: 410."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "738 ÷ 18",
+          "40",
+          "41",
+          "401",
+          "410",
+          "A: 40",
+          "B: 41",
+          "C: 401",
+          "D: 410"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q7": {
+      "inputHash": "222d56e74a3d39768164a29ad217ef5f82075f48eceb2d3232de59b9e7f7598a",
+      "description": {
+        "en": "Question 7. Four hundred sixty-nine and eight hundredths can also be written as what number? Choices: A: 460.908. B: 460.98. C: 469.08. D: 469.800."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Four hundred sixty-nine and eight hundredths",
+          "460.908",
+          "460.98",
+          "469.08",
+          "469.800",
+          "A: 460.908",
+          "B: 460.98",
+          "C: 469.08",
+          "D: 469.800"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q8": {
+      "inputHash": "c3ac2682b0635a48c3360c0822bedb3ab3e9c6c4f38063a7097d06c1e667b033",
+      "description": {
+        "en": "Question 8. Rich’s fish tank is in the shape of a right rectangular prism. It has a length of 6 feet, a width of 2 feet, and a height of 4 feet. What is the volume, in cubic feet, of Rich’s fish tank? Choices: A: 12. B: 32. C: 36. D: 48."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 feet",
+          "2 feet",
+          "4 feet",
+          "12",
+          "32",
+          "36",
+          "48",
+          "A: 12",
+          "B: 32",
+          "C: 36",
+          "D: 48"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q9": {
+      "inputHash": "372598650380e02a3204a4a50316f355769e59ed99896f997e9fbe3d3c63a95b",
+      "description": {
+        "en": "Question 9. Penelope made a paper chain that was 6 feet 10 inches long. What was the length, in inches, of the paper chain? Choices: A: 82 B: 72 C: 60 D: 28"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 feet 10 inches",
+          "82",
+          "72",
+          "60",
+          "28",
+          "A: 82",
+          "B: 72",
+          "C: 60",
+          "D: 28"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q10": {
+      "inputHash": "5a41f8fc967a453281f758292dfdcebc11918c9bc42f78c4856b09b6afa9ab5e",
+      "description": {
+        "en": "Question 10. Each lap around Eastern Park is 3 3/4 miles. Janet rode her bike 2/3 of a lap before one of the tires on her bike went flat. How many miles did Janet ride before one of the tires on her bike went flat? Choices: A: 2 1/2 B: 2 3/4 C: 3 1/2 D: 3 5/7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 3/4",
+          "2/3",
+          "2 1/2",
+          "2 3/4",
+          "3 1/2",
+          "3 5/7",
+          "A: 2 1/2",
+          "B: 2 3/4",
+          "C: 3 1/2",
+          "D: 3 5/7"
+        ]
+      }
+    },
+    "nysed-2013-g5-mc-q11": {
+      "inputHash": "ede72b39cd3f59bc6b7d05aad4716beb706ba011a7f5049b025b9dbdb2ba7214",
+      "description": {
+        "en": "Question 11. Which expression shows 40.54 in expanded form? Choices: A: (4 × 10) + (5 × 1/10) + (4 × 1/100) B: (4 × 1) + (5 × 1/10) + (4 × 1/100) C: (4 × 10) + (5 × 1) + (4 × 1/100) D: (4 × 10) + (5 × 1) + (4 × 1/10)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "40.54",
+          "(4 × 10) + (5 × 1/10) + (4 × 1/100)",
+          "(4 × 1) + (5 × 1/10) + (4 × 1/100)",
+          "(4 × 10) + (5 × 1) + (4 × 1/100)",
+          "(4 × 10) + (5 × 1) + (4 × 1/10)",
+          "A: (4 × 10) + (5 × 1/10) + (4 × 1/100)",
+          "B: (4 × 1) + (5 × 1/10) + (4 × 1/100)",
+          "C: (4 × 10) + (5 × 1) + (4 × 1/100)",
+          "D: (4 × 10) + (5 × 1) + (4 × 1/10)",
+          "(4 × 10)",
+          "(5 × 1/10)",
+          "(4 × 1/100)",
+          "(4 × 1)",
+          "(5 × 1)",
+          "(4 × 1/10)"
+        ]
+      }
+    }
+  }
+}

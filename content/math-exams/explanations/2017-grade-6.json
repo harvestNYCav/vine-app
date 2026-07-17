@@ -67,8 +67,8 @@
       "inputHash": "028011c81bb50fe81b61d9b4d14092f322f3256c1d75359d8e37018be3dc812f",
       "explanation": {
         "text": {
-          "en": "Each book costs $10, so total cost is y = 10x. Graph A passes through the origin and (5, 50), giving the required constant rate of 10.",
-          "es": "Cada libro cuesta $10, así que el costo total es y = 10x. La gráfica A pasa por el origen y por (5, 50), lo que da la tasa constante requerida de 10."
+        "en": "Each book costs $10, so total cost is y = 10x. Graph B passes through the origin and (5, 50), giving the required constant rate of 10 dollars per book.",
+        "es": "Cada libro cuesta $10, así que el costo total es y = 10x. La gráfica B pasa por el origen y por (5, 50), lo que da la tasa constante requerida de 10 dólares por libro."
         },
         "source": "vine-authored"
       }
@@ -77,8 +77,8 @@
       "inputHash": "7a3dde89495d2cdf17f932db85952cde321078e990f41004acd28dde03fad406",
       "explanation": {
         "text": {
-          "en": "In table C, every second quantity divided by the first equals 8: 96/12 = 8, 120/15 = 8, and 136/17 = 8. Therefore its ratios are equivalent.",
-          "es": "En la tabla C, cada segunda cantidad dividida entre la primera es 8: 96/12 = 8, 120/15 = 8 y 136/17 = 8. Por tanto, sus razones son equivalentes."
+          "en": "In table C, every first-column student count divided by its second-column adult count equals 8: 96/12 = 8, 120/15 = 8, and 136/17 = 8. Therefore each row has the required 8-to-1 ratio.",
+          "es": "En la tabla C, cada cantidad de estudiantes de la primera columna dividida entre la cantidad de adultos de la segunda da 8: 96/12 = 8, 120/15 = 8 y 136/17 = 8. Por tanto, cada fila tiene la razón requerida de 8 a 1."
         },
         "source": "vine-authored"
       }
@@ -224,7 +224,7 @@
       }
     },
     "nysed-2017-g6-mc-q34": {
-      "inputHash": "eb168cd567045f0216ad580e289b4da7a7fdfc7f9e35b1f66776a4147d48b373",
+      "inputHash": "9ea1e1a2d3fc105b3c190f2c5e3e869ac7eb156e9dfff2065a290e101eb3e90f",
       "explanation": {
         "text": {
           "en": "The unit rate is $17.50 ÷ 2 = $8.75 per hour. Table D follows it: 1 hour costs $8.75, 2 cost $17.50, 3 cost $26.25, and 4 cost $35.",
@@ -297,8 +297,8 @@
       "inputHash": "22672642d5fecac17b1dee3e05dfd49aec0082affa7e543e667cb16713c2c07f",
       "explanation": {
         "text": {
-          "en": "Kim runs 135 ÷ 9 = 15 miles weekly, while Eric runs 102 ÷ 6 = 17. Eric therefore runs 17 − 15 = 2 more miles per week.",
-          "es": "Kim corre 135 ÷ 9 = 15 millas por semana, mientras que Eric corre 102 ÷ 6 = 17. Por tanto, Eric corre 17 − 15 = 2 millas más por semana."
+          "en": "Kim rides 135 ÷ 9 = 15 miles per week, while Eric rides 102 ÷ 6 = 17 miles per week. Eric therefore rides 17 − 15 = 2 more miles per week.",
+          "es": "Kim recorre en bicicleta 135 ÷ 9 = 15 millas por semana, mientras que Eric recorre 102 ÷ 6 = 17 millas por semana. Por tanto, Eric recorre 17 − 15 = 2 millas más por semana."
         },
         "source": "vine-authored"
       }

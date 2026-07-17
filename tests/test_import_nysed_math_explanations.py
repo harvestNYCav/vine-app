@@ -10,6 +10,7 @@ from typing import Any
 
 from scripts.import_nysed_math_mc import (
     EXPECTED_MC_COUNTS,
+    EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL,
     EXPECTED_OFFICIAL_EXPLANATION_TOTAL,
     EXPECTED_VINE_EXPLANATION_TOTAL,
     ImportFailure,
@@ -204,6 +205,49 @@ class MathExplanationInputTests(unittest.TestCase):
 
 
 class ImportedMathExplanationValidationTests(unittest.TestCase):
+    def test_generated_catalog_preserves_every_superscript_localization_exactly(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        superscripts = frozenset("⁰¹²³⁴⁵⁶⁷⁸⁹")
+        expected: dict[tuple[str, str], str] = {}
+        superscript_question_ids: set[str] = set()
+        for path in sorted((root / "content" / "math-exams" / "explanations").glob("*.json")):
+            sidecar = json.loads(path.read_text(encoding="utf-8"))
+            for question_id, record in sidecar["questions"].items():
+                localized = record["explanation"]["text"]
+                for language in ("en", "es"):
+                    text = localized[language]
+                    if any(character in superscripts for character in text):
+                        expected[(question_id, language)] = text
+                        superscript_question_ids.add(question_id)
+
+        self.assertEqual(len(superscript_question_ids), 62)
+        self.assertEqual(len(expected), 123)
+        self.assertEqual(
+            sum(language == "en" for _, language in expected),
+            61,
+        )
+        self.assertEqual(
+            sum(language == "es" for _, language in expected),
+            62,
+        )
+        self.assertIn("nysed-2019-g8-mc-q9", superscript_question_ids)
+
+        catalog = json.loads(
+            (root / "content" / "math-exams" / "generated" / "catalog.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        generated = {
+            (question["id"], language): question["explanation"]["text"][language]
+            for exam in catalog["exams"]
+            for question in exam["questions"]
+            for language in ("en", "es")
+            if (question["id"], language) in expected
+        }
+        self.assertEqual(set(generated), set(expected))
+        for key, source_text in expected.items():
+            self.assertEqual(generated[key], source_text, f"superscript changed for {key}")
+
     def test_accepts_official_rationale_duplicated_for_english_only_exam(self) -> None:
         question = {
             "id": "nysed-2013-g3-mc-q1",
@@ -245,10 +289,14 @@ class ImportedMathExplanationValidationTests(unittest.TestCase):
             validate_imported_question_explanation(2014, unequal_official)
 
     def test_pinned_provenance_counts_cover_the_inventory(self) -> None:
-        official = sum(sum(EXPECTED_MC_COUNTS[year]) for year in (2013, 2014))
+        legacy = sum(sum(EXPECTED_MC_COUNTS[year]) for year in (2013, 2014))
         total = sum(sum(counts) for counts in EXPECTED_MC_COUNTS.values())
-        self.assertEqual(official, EXPECTED_OFFICIAL_EXPLANATION_TOTAL)
-        self.assertEqual(total - official, EXPECTED_VINE_EXPLANATION_TOTAL)
+        self.assertEqual(
+            legacy,
+            EXPECTED_OFFICIAL_EXPLANATION_TOTAL
+            + EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL,
+        )
+        self.assertEqual(total - legacy, EXPECTED_VINE_EXPLANATION_TOTAL)
 
 
 if __name__ == "__main__":

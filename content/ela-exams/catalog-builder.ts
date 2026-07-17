@@ -8,6 +8,7 @@ import type {
   ElaExamQuestionRecord,
   ElaExplanationSource,
   ElaPassageAsset,
+  ElaPassageTranscriptSource,
   ElaPassageReference,
   ElaQuestionImage,
   ElaSkill,
@@ -59,7 +60,7 @@ export type RawElaExam = {
 }
 
 export type RawElaExamCatalog = {
-  schemaVersion: 3
+  schemaVersion: 4
   generatedAt: string
   accessedAt: string
   sourceUpdatedAt: string
@@ -89,6 +90,10 @@ const EXPECTED_COUNTS: Record<(typeof RELEASE_YEARS)[number], readonly number[]>
 }
 
 const RELEASE_YEAR_SET = new Set<number>(RELEASE_YEARS)
+const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-ela-2013-g4-mc-q2',
+  'nysed-ela-2014-g3-mc-q12',
+])
 const SKILL_SET = new Set<ElaSkill>(ELA_SKILL_ORDER)
 const CCLS_STANDARD_PATTERN = /^CCSS\.ELA-Literacy\.(RL|RI|L)\.([3-8])\.([1-9])([a-z])?$/
 const NGLS_STANDARD_PATTERN = /^NGLS\.ELA\.Content\.NY-([3-8])(R|L)([1-9])([a-z])?$/
@@ -96,14 +101,207 @@ const ANSWER_METADATA_PATTERN = /(?:\bKey\s*:\s*[A-D]\b|\bCorrect\s+(?:Answer|Re
 const EXPLANATION_REASONING_PATTERN = /\b(?:because|since|therefore|thus|consequently|so|as\s+a\s+result|which\s+(?:show(?:s|ed|ing)?|means?|indicates?|demonstrates?|reveals?|explains?)|(?:this|that)\s+(?:show(?:s|ed|ing)?|means?|indicates?|supports?|demonstrates?|reveals?|explains?)|show(?:s|ed|ing)?|means?|illustrat(?:e|es|ed|ing)|suggest(?:s|ed|ing)?|clarif(?:y|ies|ied)|supports?|supported\s+by|evidence|demonstrates?|indicates?|reveals?|explains?|confirms?|contradicts?|connect(?:s|ed|ing)?|identif(?:y|ies|ied)|recogniz(?:e|es|ed)|understand(?:s|ing)?|deduc(?:e|es|ed)|determin(?:e|es|ed)|infer(?:s|red|ring)?|interpret(?:s|ed|ing)?|rel(?:y|ies|ied)|uses?|contribut(?:e|es|ed|ing))\b/i
 const GENERIC_EXPLANATION_PATTERN = /(?:\b(?:official\s+)?(?:nysed\s+)?answer\s+key\b|\baccording\s+to\s+(?:the\s+)?(?:official\s+)?(?:answer|key)\b|\bidentifies\s+choice\s+[A-D]\s+as\s+the\s+correct\s+answer\b|\bbecause\s+(?:it|this|that|choice\s+[A-D])\s+is\s+(?:the\s+)?(?:correct|right)\s+(?:answer|choice|response)\b|^(?:the\s+)?(?:correct|right)\s+answer\s+is\s+(?:choice\s+)?[A-D][.!]?$|^choice\s+[A-D]\s+is\s+(?:correct|right)[.!]?$)/i
 const EXPLANATION_ARTIFACT_PATTERN = /(?:\bWHY\s+(?:CHOICE|ANSWER)\b|\bWHY\s+(?:THE\s+)?OTHER\s+(?:CHOICES|ANSWERS|RESPONSES)\b|\bHOW\s+TO\s+HELP\s+STUDENTS\b|\bINSTRUCTIONAL\s+(?:SUGGESTIONS?|IMPLICATIONS?)\b|\bQUESTION\s+ANNOTATION\b|[.!?”’]\s+\d{1,3}$)/i
-const LOCAL_FILESYSTEM_PATH_PATTERN = /(?:file:\/\/|\/(?:Users|home|private|tmp|root|workspace|workspaces)\/|\/var\/folders\/|[A-Za-z]:\\|\\\\[^\\\s]+\\[^\\\s]+)/i
+const LOCAL_FILESYSTEM_PATH_PATTERN = /(?:file:\/\/|\/(?:Users|home|private|tmp|root|workspace|workspaces|var)\/|[A-Za-z]:\\|\\\\[^\\\s]+\\[^\\\s]+)/i
+const TRANSCRIPT_SOURCE_SET = new Set<ElaPassageTranscriptSource>([
+  'official-pdf-text',
+  'mixed-official-pdf-text-and-ocr',
+  'passage-image-ocr',
+])
+const TRANSCRIPT_CHROME_PATTERN = /(?:^\s*(?:GO\s*ON|STOP)\s*$|\bSession\s+\d+\s+Page\s+\d+\b|\bPage\s+\d+\s+Session\s+\d+\b)/im
+const TRANSCRIPT_ANSWER_LEAK_PATTERN = /(?:\bAnswer\s+Key\b|\bCorrect\s+(?:Answer|Response)\b|\bWHY\s+CHOICE\b|\bScoring\s+Rubric\b|\bAnnotated\s+Item\b|\b(?:Answer|Response|Key)\s*(?::|\bis\b)\s*[A-D]\b|\b(?:the\s+)?correct\s+(?:choice|option|answer|response)\s*(?::|\bis\b)\s*[A-D]\b|\b(?:Choice|Option)\s+[A-D]\s+(?:is|was|would\s+be)\s+(?:correct|right|best|accurate)\b|\b(?:Clave|Respuesta(?:\s+correcta)?)\s*(?::|\bes\b)\s*[A-D]\b|\b(?:La\s+)?(?:opci[oó]n|alternativa|respuesta)\s+[A-D]\s+es\s+(?:correcta|acertada|la\s+mejor)\b)/i
+const TRANSCRIPT_OCR_CORRUPTION_PATTERN = /(?:\bDivcions\b|\bcartt\b|\b[JT]\s+don['’]t\b|\bT[’']{1,2}m\b|\bTt[’']?s\b|\bLam\s+responsible\b|\byoud\b|[“"']ll\s+get\b|[:;][’'](?=\s|$)|‘(?:The|They)\b|=\s*=\s*SS\b|—{2}\s*=)/i
+// Match the narrow, source-reviewed split-run classes emitted by NYSED's
+// embedded PDF fonts. The explicit lookbehinds preserve the genuine phrase
+// “sci-fi fishland” while rejecting forms such as “Th e” and “fi eld.”
+const TRANSCRIPT_SPLIT_WORD_OCR_PATTERN = /(?:\bTh\s+(?:e|at|en|ere|ese|ey|eir|is|ough)\b|\b(?:Aft|aft)\s+(?:er|ernoon)\b|\b(?:C\s+oral|F\s+ire|I\s+nterference|O\s+ne-Eyed)\b|\b\d+f\s+rappé(?![\p{L}\p{N}_])|(?<!sci-)(?<!Sci-)\b[A-Za-z]*(?:fi|fl)\s+[a-z]+\b|\b(?:stuff\s+ed|soft\s+en|drift\s+ed|heft\s+ing|diff\s+erent|off\s+er|eff\s+ective|refl\s+ect)\b)/u
+const TRANSCRIPT_DOUBLED_CHARACTER_TOKEN_PATTERN = /\b[A-Za-z][A-Za-z-]*[A-Za-z]\b/g
+const TRANSCRIPT_DOUBLED_CHARACTER_LAYOUT_PATTERN = /(?:““|””|::|\bThThee\b|\b4400\b)/
+const ALLOWED_EXPRESSIVE_REPEAT_TOKENS = new Set(['Snoozzzzzze', 'go-rillllllas'])
+const TRANSCRIPT_SINGLE_CLOSING_QUOTE_PATTERN = /[,!?.]’/
+const ALLOWED_NESTED_SINGLE_QUOTE_FRAGMENTS: Readonly<Record<string, readonly string[]>> = {
+  'nysed-ela-2014-g5-stimulus-15-21': [
+    'which means ‘very small.’',
+    'head ‘no,’ but',
+  ],
+  'nysed-ela-2015-g5-stimulus-8-13': ['‘We’ll all go this time.’ ”'],
+  'nysed-ela-2017-g8-stimulus-29-35': [
+    'anymore.’ And I took',
+    '‘Baby, yes, you can see.’ I said',
+    'see with your hands.’ And then',
+    'hands and your nose and your ears.’ ”',
+  ],
+  'nysed-ela-2019-g8-stimulus-29-35': [
+    '‘new woman.’ She',
+    '‘eternal feminine,’ who',
+  ],
+  'nysed-ela-2018-g7-stimulus-15-21': [
+    '‘eat\nmore, eat more,’” explains',
+  ],
+  'nysed-ela-2021-g6-stimulus-8-14': [
+    'that ‘nearby\nnature,’” Louv',
+  ],
+  'nysed-ela-2021-g7-stimulus-8-14': [
+    '‘eat\nmore, eat more,’” explains',
+  ],
+  'nysed-ela-2021-g8-stimulus-22-28': [
+    '‘new woman.’ She',
+    '‘eternal feminine,’ who',
+  ],
+  'nysed-ela-2022-g6-stimulus-8-14': ['out where they go,’ ” remembers'],
+  'nysed-ela-2023-g7-stimulus-36-42': [
+    'win the election.’\n3 “I',
+    'the truth all this time.’ ”',
+    '‘You were right.’ ”',
+    'paper.’ ”',
+  ],
+  'nysed-ela-2023-g8-stimulus-29-35': [
+    '‘What the . . .’ He',
+    'excited.’\n_',
+  ],
+  'nysed-ela-2025-g6-stimulus-8-14': ['‘This is it!’ because'],
+  'nysed-ela-2026-g7-stimulus-29-35': [
+    'animals. ‘That’s where you’re needed,’ he',
+    '‘Mr. Zuo’s\nwaterwheels.’” Chengli',
+  ],
+  'nysed-ela-2017-g3-stimulus-25-31': ['‘you have to slow down.’ ”'],
+  'nysed-ela-2019-g4-stimulus-19-24': ['Send him over.’ Then'],
+  'nysed-ela-2023-g3-stimulus-26-31': ['‘thunderstorm,’ ”'],
+  'nysed-ela-2025-g3-stimulus-1-6': ['‘Paint Out!’ Sounds'],
+  'nysed-ela-2026-g3-stimulus-20-24': [
+    'vote ‘no,’ there',
+    '‘Save Our Zoo!’ with',
+  ],
+}
+const TRANSCRIPT_MARKER_PATTERN = /^\s*(\d{1,3})\s+(?:[1-6]\.\s+)?(?=[A-Za-z“"‘'•(\[])/
+const VISUAL_DESCRIPTION_PATTERN = /^\[(?:Illustration|Diagram|Photograph|Map|Chart|Text box|Sidebar|Caption):\s+\S.+\]$/im
+const REQUIRED_VISUAL_DESCRIPTION_COUNTS: Readonly<Record<string, number>> = {
+  'nysed-ela-2014-g3-stimulus-1-4': 2,
+  'nysed-ela-2014-g3-stimulus-10-16': 2,
+  'nysed-ela-2014-g4-stimulus-12-17': 1,
+  'nysed-ela-2017-g3-stimulus-19-24': 3,
+  'nysed-ela-2017-g4-stimulus-25-31': 2,
+  'nysed-ela-2018-g3-stimulus-1-6': 1,
+  'nysed-ela-2019-g3-stimulus-7-12': 2,
+  'nysed-ela-2019-g4-stimulus-13-18': 4,
+  'nysed-ela-2021-g3-stimulus-7-12': 2,
+  'nysed-ela-2023-g4-stimulus-26-31': 2,
+  'nysed-ela-2024-g4-stimulus-1-6': 1,
+  'nysed-ela-2024-g4-stimulus-26-31': 2,
+  'nysed-ela-2025-g4-stimulus-1-6': 1,
+  'nysed-ela-2026-g3-stimulus-13-19': 4,
+  'nysed-ela-2026-g4-stimulus-26-31': 1,
+  // Independently enumerated from every Grade 5–8 passage facsimile and its
+  // released multiple-choice stems. The ledger includes every question-
+  // dependent visual plus six adopted structured-accessibility enhancements.
+  'nysed-ela-2014-g5-stimulus-8-14': 1,
+  'nysed-ela-2014-g7-stimulus-13-19': 2,
+  'nysed-ela-2015-g6-stimulus-1-7': 1,
+  'nysed-ela-2015-g7-stimulus-1-7': 1,
+  'nysed-ela-2015-g7-stimulus-15-21': 1,
+  'nysed-ela-2016-g8-stimulus-36-42': 1,
+  'nysed-ela-2017-g5-stimulus-1-7': 1,
+  'nysed-ela-2017-g5-stimulus-36-42': 1,
+  'nysed-ela-2018-g5-stimulus-29-35': 1,
+  'nysed-ela-2018-g6-stimulus-29-35': 1,
+  'nysed-ela-2019-g6-stimulus-29-35': 2,
+  'nysed-ela-2021-g6-stimulus-8-14': 1,
+  'nysed-ela-2021-g6-stimulus-22-28': 1,
+  'nysed-ela-2022-g5-stimulus-29-35': 1,
+  'nysed-ela-2023-g6-stimulus-22-26': 1,
+  'nysed-ela-2024-g6-stimulus-15-21': 1,
+  'nysed-ela-2024-g5-stimulus-22-26': 1,
+  'nysed-ela-2025-g5-stimulus-29-35': 1,
+  'nysed-ela-2025-g6-stimulus-8-14': 1,
+  'nysed-ela-2025-g6-stimulus-22-26': 1,
+  'nysed-ela-2026-g5-stimulus-15-21': 1,
+  'nysed-ela-2026-g5-stimulus-22-27': 1,
+  'nysed-ela-2026-g6-stimulus-22-27': 1,
+}
+
+function hasUnexpectedSingleClosingQuote(text: string, stimulusId: string) {
+  let masked = text
+  for (const fragment of ALLOWED_NESTED_SINGLE_QUOTE_FRAGMENTS[stimulusId] ?? []) {
+    if (masked.split(fragment).length > 2) return true
+    masked = masked.replace(fragment, fragment.replaceAll('’', "'"))
+  }
+  return TRANSCRIPT_SINGLE_CLOSING_QUOTE_PATTERN.test(masked)
+}
+
+function hasDoubledCharacterExtraction(text: string) {
+  if (TRANSCRIPT_DOUBLED_CHARACTER_LAYOUT_PATTERN.test(text)) return true
+  for (const match of text.matchAll(TRANSCRIPT_DOUBLED_CHARACTER_TOKEN_PATTERN)) {
+    const token = match[0]
+    if (ALLOWED_EXPRESSIVE_REPEAT_TOKENS.has(token)) continue
+    for (const component of token.split('-')) {
+      if (component.length % 2 !== 0) continue
+      const pairCount = component.length / 2
+      const doubledPairCount = Array.from({ length: pairCount }).filter((_, pairIndex) => {
+        const index = pairIndex * 2
+        return component[index] === component[index + 1]
+      }).length
+      if (component.length >= 4 && doubledPairCount === pairCount) return true
+      if (
+        component.length >= 8
+        && doubledPairCount >= 3
+        && doubledPairCount / pairCount >= 0.6
+      ) return true
+    }
+  }
+  return false
+}
 
 function invariant(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(`Invalid generated NYSED ELA catalog: ${message}`)
 }
 
+function hasExactObjectKeys(
+  value: unknown,
+  required: readonly string[],
+  optional: readonly string[] = [],
+) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return false
+  const keys = Object.keys(value)
+  const allowed = new Set([...required, ...optional])
+  return required.every(key => Object.prototype.hasOwnProperty.call(value, key))
+    && keys.every(key => allowed.has(key))
+}
+
+export function transcriptParagraphMarkers(text: string) {
+  const candidates = text.split('\n').flatMap(line => {
+    const match = line.match(TRANSCRIPT_MARKER_PATTERN)
+    return match ? [Number(match[1])] : []
+  })
+  if (candidates.length === 0) return []
+
+  // Match the authoring validator exactly: numeric prose, table values, and
+  // captions can look like markers, so retain the first longest increasing
+  // subsequence rather than rejecting an otherwise reviewed passage.
+  const best: number[][] = []
+  for (let index = 0; index < candidates.length; index += 1) {
+    let prior: number[] = []
+    for (let priorIndex = 0; priorIndex < index; priorIndex += 1) {
+      if (candidates[priorIndex] < candidates[index] && best[priorIndex].length > prior.length) {
+        prior = best[priorIndex]
+      }
+    }
+    best.push([...prior, candidates[index]])
+  }
+  return best.reduce((longest, sequence) => sequence.length > longest.length ? sequence : longest)
+}
+
 function validText(value: unknown): value is string {
   return typeof value === 'string' && value.trim().length > 0
+}
+
+function containsLocalFilesystemPath(value: unknown): boolean {
+  if (typeof value === 'string') return LOCAL_FILESYSTEM_PATH_PATTERN.test(value)
+  if (Array.isArray(value)) return value.some(containsLocalFilesystemPath)
+  if (value && typeof value === 'object') {
+    return Object.entries(value).some(([key, nested]) =>
+      LOCAL_FILESYSTEM_PATH_PATTERN.test(key) || containsLocalFilesystemPath(nested),
+    )
+  }
+  return false
 }
 
 function substantiveAlt(value: unknown): value is string {
@@ -155,6 +353,7 @@ function officialPdfUrl(value: unknown): value is string {
 
 function validImage(value: Omit<ElaQuestionImage, 'alt'> | undefined) {
   return !!value
+    && hasExactObjectKeys(value, ['src', 'width', 'height'])
     && typeof value.src === 'string'
     && value.src.startsWith('/vine-app/nysed/ela/')
     && Number.isInteger(value.width)
@@ -163,8 +362,45 @@ function validImage(value: Omit<ElaQuestionImage, 'alt'> | undefined) {
     && value.height > 0
 }
 
-function validPassageAsset(value: ElaPassageAsset | undefined) {
+function validPassageTranscript(value: ElaPassageAsset['transcript'] | undefined, stimulusId: string) {
+  if (!value
+    || !hasExactObjectKeys(value, ['text', 'source', 'sourcePdfSha256', 'passageImageSha256'])
+    || !validText(value.text)
+    || value.text.length < 400
+    || value.text.length > 20_000
+    || !TRANSCRIPT_SOURCE_SET.has(value.source)
+    || !/^[0-9a-f]{64}$/.test(value.sourcePdfSha256)
+    || !/^[0-9a-f]{64}$/.test(value.passageImageSha256)
+    || value.text !== value.text.normalize('NFC')
+    || /[\uE000-\uF8FF]/u.test(value.text)
+    || LOCAL_FILESYSTEM_PATH_PATTERN.test(value.text)
+    || TRANSCRIPT_CHROME_PATTERN.test(value.text)
+    || TRANSCRIPT_ANSWER_LEAK_PATTERN.test(value.text)
+    || TRANSCRIPT_OCR_CORRUPTION_PATTERN.test(value.text)
+    || TRANSCRIPT_SPLIT_WORD_OCR_PATTERN.test(value.text)
+    || hasDoubledCharacterExtraction(value.text)
+    || hasUnexpectedSingleClosingQuote(value.text, stimulusId)
+  ) return false
+  const words = value.text.match(/[A-Za-z0-9]+/g) ?? []
+  if (words.length < 80 || transcriptParagraphMarkers(value.text).length < 3) {
+    return false
+  }
+  const visualDescriptionCount = value.text
+    .split('\n')
+    .filter(line => VISUAL_DESCRIPTION_PATTERN.test(line.trim())).length
+  const requiredVisualDescriptionCount = REQUIRED_VISUAL_DESCRIPTION_COUNTS[stimulusId]
+  if (
+    requiredVisualDescriptionCount !== undefined
+    && visualDescriptionCount !== requiredVisualDescriptionCount
+  ) {
+    return false
+  }
+  return true
+}
+
+function validPassageAsset(value: ElaPassageAsset | undefined, stimulusId: string) {
   return !!value
+    && hasExactObjectKeys(value, ['src', 'width', 'height', 'alt', 'pageCount', 'transcript'])
     && typeof value.src === 'string'
     && value.src.startsWith('/vine-app/nysed/ela/')
     && Number.isInteger(value.width)
@@ -177,6 +413,7 @@ function validPassageAsset(value: ElaPassageAsset | undefined) {
     && Number.isInteger(value.pageCount)
     && value.pageCount >= 1
     && value.pageCount <= 4
+    && validPassageTranscript(value.transcript, stimulusId)
 }
 
 function expectedSkillForStandard(standard: string): ElaSkill | null {
@@ -227,6 +464,10 @@ function validatePassageReference(
   exam: RawElaExam,
   stimulusId: string,
 ) {
+  invariant(
+    hasExactObjectKeys(reference, ['label', 'sourceUrl', 'pageStart', 'pageEnd']),
+    `${stimulusId} has a passage reference with unexpected keys`,
+  )
   invariant(validText(reference?.label), `${stimulusId} has a passage reference without a label`)
   invariant(officialPdfUrl(reference?.sourceUrl), `${stimulusId} needs an official passage PDF URL`)
   invariant(reference.sourceUrl === exam.sourceUrl, `${stimulusId} passage URL must match its released booklet`)
@@ -235,6 +476,19 @@ function validatePassageReference(
 }
 
 function validateRawExam(exam: RawElaExam) {
+  invariant(hasExactObjectKeys(exam, [
+    'id',
+    'slug',
+    'year',
+    'grade',
+    'standardsFramework',
+    'title',
+    'description',
+    'sourceTitle',
+    'sourceUrl',
+    'stimuli',
+    'questions',
+  ]), `${exam?.id ?? 'exam'} has unexpected keys`)
   invariant(Number.isInteger(exam.year) && RELEASE_YEAR_SET.has(exam.year), `${exam.id} has a bad year`)
   invariant(isGradeLevel(exam.grade), `${exam.id} has a bad grade`)
   invariant(exam.id === `nysed-ela-${exam.year}-grade-${exam.grade}-mc-v1`, `bad exam id ${exam.id}`)
@@ -249,14 +503,23 @@ function validateRawExam(exam: RawElaExam) {
   invariant(validText(exam.sourceTitle), `${exam.id} needs a source title`)
   invariant(officialPdfUrl(exam.sourceUrl), `${exam.id} needs an official released-question PDF URL`)
 
+  invariant(Array.isArray(exam.stimuli) && exam.stimuli.length > 0, `${exam.id} needs passage stimuli`)
+  invariant(Array.isArray(exam.questions), `${exam.id} needs multiple-choice questions`)
   const expectedCount = EXPECTED_COUNTS[exam.year as keyof typeof EXPECTED_COUNTS][exam.grade - 3]
   invariant(exam.questions.length === expectedCount, `${exam.id} must contain exactly ${expectedCount} multiple-choice questions`)
-  invariant(Array.isArray(exam.stimuli) && exam.stimuli.length > 0, `${exam.id} needs passage stimuli`)
 
   const stimuliById = new Map<string, RawElaStimulus>()
   const passagePaths = new Set<string>()
   let priorQuestionEnd = 0
   for (const stimulus of exam.stimuli) {
+    invariant(hasExactObjectKeys(stimulus, [
+      'id',
+      'label',
+      'questionStart',
+      'questionEnd',
+      'passage',
+      'references',
+    ]), `${stimulus?.id ?? exam.id} has unexpected keys`)
     invariant(Number.isInteger(stimulus.questionStart) && stimulus.questionStart > 0, `${stimulus.id} has a bad question start`)
     invariant(Number.isInteger(stimulus.questionEnd) && stimulus.questionEnd >= stimulus.questionStart, `${stimulus.id} has a bad question end`)
     invariant(stimulus.questionStart > priorQuestionEnd, `${exam.id} has overlapping or unordered passage ranges`)
@@ -274,7 +537,7 @@ function validateRawExam(exam: RawElaExam) {
       invariant(!referenceKeys.has(key), `${stimulus.id} repeats a passage reference`)
       referenceKeys.add(key)
     }
-    invariant(validPassageAsset(stimulus.passage), `${stimulus.id} needs a valid local passage image`)
+    invariant(validPassageAsset(stimulus.passage, stimulus.id), `${stimulus.id} needs a valid local passage image and required transcript`)
     const expectedPassagePath = `/vine-app/nysed/ela/${exam.year}/grade-${exam.grade}/en/passage-${stimulus.questionStart}-${stimulus.questionEnd}.webp`
     invariant(stimulus.passage.src === expectedPassagePath, `${stimulus.id} has the wrong passage image path`)
     invariant(!passagePaths.has(stimulus.passage.src), `${exam.id} repeats a passage image path`)
@@ -292,6 +555,23 @@ function validateRawExam(exam: RawElaExam) {
   const usedStimulusIds = new Set<string>()
   let previousNumber = 0
   for (const question of exam.questions) {
+    invariant(hasExactObjectKeys(question, [
+      'id',
+      'number',
+      'session',
+      'sourcePage',
+      'primaryStandard',
+      'stimulusId',
+      'skill',
+      'correct',
+      'explanation',
+      'image',
+      'alt',
+    ], ['sourceNumberKind', 'secondaryStandards']), `${question?.id ?? exam.id} has unexpected keys`)
+    invariant(
+      hasExactObjectKeys(question.explanation, ['text', 'source']),
+      `${question.id} has an explanation with unexpected keys`,
+    )
     invariant(Number.isInteger(question.number) && question.number > 0, `${question.id} has a bad number`)
     invariant(question.id === `nysed-ela-${exam.year}-g${exam.grade}-mc-q${question.number}`, `${question.id} does not belong to ${exam.id}`)
     invariant(!numbers.has(question.number), `${exam.id} repeats question ${question.number}`)
@@ -336,11 +616,17 @@ function validateRawExam(exam: RawElaExam) {
     invariant(['A', 'B', 'C', 'D'].includes(question.correct), `${question.id} has a bad answer key`)
     invariant(
       question.explanation?.source === 'official-nysed'
+        || question.explanation?.source === 'official-nysed-corrected'
         || question.explanation?.source === 'vine-authored',
       `${question.id} has a bad explanation source`,
     )
+    const expectedExplanationSource: ElaExplanationSource = exam.year >= 2015
+      ? 'vine-authored'
+      : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
+        ? 'official-nysed-corrected'
+        : 'official-nysed'
     invariant(
-      question.explanation.source === (exam.year <= 2014 ? 'official-nysed' : 'vine-authored'),
+      question.explanation.source === expectedExplanationSource,
       `${question.id} has an explanation source that does not match its release`,
     )
     invariant(
@@ -359,26 +645,32 @@ function validateRawExam(exam: RawElaExam) {
   invariant(usedStimulusIds.size === exam.stimuli.length, `${exam.id} has a passage stimulus without a multiple-choice question`)
 }
 
-function dominantSkill(questions: RawElaQuestion[]) {
-  const counts = new Map<ElaSkill, number>()
-  for (const question of questions) {
-    counts.set(question.skill, (counts.get(question.skill) ?? 0) + 1)
-  }
-  return ELA_SKILL_ORDER.reduce((best, skill) =>
-    (counts.get(skill) ?? 0) > (counts.get(best) ?? 0) ? skill : best,
-  ELA_SKILL_ORDER[0])
+function sectionFocusSkill(questions: RawElaQuestion[]) {
+  // The lesson immediately precedes this section's questions, so align it to
+  // the first skill students will practice. Using the numerically dominant
+  // skill hid Integration and Vocabulary lessons whenever a passage also had
+  // several Key Ideas questions.
+  return questions[0].skill
 }
 
 export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
   invariant(rawCatalog && typeof rawCatalog === 'object', 'missing catalog')
-  invariant(rawCatalog.schemaVersion === 3, 'unsupported schema version')
+  invariant(hasExactObjectKeys(rawCatalog, [
+    'schemaVersion',
+    'generatedAt',
+    'accessedAt',
+    'sourceUpdatedAt',
+    'sourceIndexUrl',
+    'exams',
+  ]), 'catalog has unexpected keys')
+  invariant(rawCatalog.schemaVersion === 4, 'unsupported schema version')
   invariant(typeof rawCatalog.generatedAt === 'string' && !Number.isNaN(Date.parse(rawCatalog.generatedAt)), 'bad generatedAt')
   invariant(validDateOnly(rawCatalog.accessedAt), 'bad accessedAt')
   invariant(validDateOnly(rawCatalog.sourceUpdatedAt), 'bad sourceUpdatedAt')
   invariant(rawCatalog.sourceIndexUrl === 'https://www.nysedregents.org/ei/ei-ela.html', 'bad source index')
   invariant(Array.isArray(rawCatalog.exams), 'missing exams')
   invariant(rawCatalog.exams.length === 78, 'catalog must contain exactly 78 exams')
-  invariant(!LOCAL_FILESYSTEM_PATH_PATTERN.test(JSON.stringify(rawCatalog)), 'catalog exposes a local filesystem path')
+  invariant(!containsLocalFilesystemPath(rawCatalog), 'catalog exposes a local filesystem path')
 
   const accessedAt = rawCatalog.accessedAt
   const examIds = new Set<string>()
@@ -388,11 +680,16 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
   const questions: ElaExamQuestionRecord[] = []
   const explanationSourceCounts: Record<ElaExplanationSource, number> = {
     'official-nysed': 0,
+    'official-nysed-corrected': 0,
     'vine-authored': 0,
   }
+  let transcriptStimulusCount = 0
+  let transcriptQuestionCount = 0
 
   const exams = rawCatalog.exams.map(rawExam => {
     validateRawExam(rawExam)
+    transcriptStimulusCount += rawExam.stimuli.length
+    transcriptQuestionCount += rawExam.questions.length
     invariant(!examIds.has(rawExam.id), `duplicate exam id ${rawExam.id}`)
     invariant(!examSlugs.has(rawExam.slug), `duplicate exam slug ${rawExam.slug}`)
     const releasePair = `${rawExam.year}-${rawExam.grade}`
@@ -442,17 +739,35 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
         question.primaryStandard,
         ...(question.secondaryStandards ?? []),
       ]))]
+      const transcript = stimulus.passage.transcript!
       return buildElaExamSection({
         stimulusId: stimulus.id,
         passageLabel: stimulus.label,
         questionStart: stimulus.questionStart,
         questionEnd: stimulus.questionEnd,
-        passage: stimulus.passage,
-        passageReferences: stimulus.references,
+        passage: {
+          src: stimulus.passage.src,
+          width: stimulus.passage.width,
+          height: stimulus.passage.height,
+          alt: stimulus.passage.alt,
+          pageCount: stimulus.passage.pageCount,
+          transcript: {
+            text: transcript.text,
+            source: transcript.source,
+            sourcePdfSha256: transcript.sourcePdfSha256,
+            passageImageSha256: transcript.passageImageSha256,
+          },
+        },
+        passageReferences: stimulus.references.map(reference => ({
+          label: reference.label,
+          sourceUrl: reference.sourceUrl,
+          pageStart: reference.pageStart,
+          pageEnd: reference.pageEnd,
+        })),
         skills,
         standards,
         questionIds: stimulusQuestions.map(question => question.id),
-      }, rawExam.grade, dominantSkill(stimulusQuestions))
+      }, rawExam.grade, sectionFocusSkill(stimulusQuestions))
     })
 
     const exam: ElaExamDefinition = {
@@ -477,9 +792,15 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
     }
   }
   invariant(questions.length === 1_583, 'catalog must contain exactly 1,583 multiple-choice questions')
+  invariant(transcriptStimulusCount === 242, 'catalog must contain exactly 242 reviewed Grade 3–8 passage transcripts')
+  invariant(transcriptQuestionCount === 1_583, 'reviewed Grade 3–8 transcripts must cover exactly 1,583 questions')
   invariant(
-    explanationSourceCounts['official-nysed'] === 149,
-    'catalog must contain exactly 149 official NYSED rationales',
+    explanationSourceCounts['official-nysed'] === 147,
+    'catalog must contain exactly 147 unmodified official NYSED rationales',
+  )
+  invariant(
+    explanationSourceCounts['official-nysed-corrected'] === 2,
+    'catalog must contain exactly 2 official NYSED rationales corrected by Vine',
   )
   invariant(
     explanationSourceCounts['vine-authored'] === 1_434,

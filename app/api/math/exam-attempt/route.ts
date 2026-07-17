@@ -10,6 +10,7 @@ import {
   getMathExamSection,
   getMathExamSectionQuestions,
   localized,
+  normalizeMathChoiceAnswer,
   normalizeMathAnswer,
   toPublicMathExamQuestion,
 } from '@/lib/math-exams'
@@ -80,7 +81,9 @@ function loadResponses(value: unknown): SubmittedResponse[] | null {
 
 function gradeObjective(question: MathExamQuestionRecord, answer: string) {
   if (question.grading.mode === 'choice') {
-    const correct = answer.trim().toUpperCase() === question.grading.correct
+    const normalizedAnswer = normalizeMathChoiceAnswer(question, answer)
+    if (!normalizedAnswer) return null
+    const correct = normalizedAnswer === question.grading.correct
     return {
       points: correct ? question.points : 0,
       correct,
@@ -255,7 +258,7 @@ export async function POST(req: NextRequest) {
 
   if (body.action === 'check') {
     const questionId = typeof body.questionId === 'string' ? body.questionId : ''
-    const answer = normalizeStoredAnswer(body.answer)
+    let answer = normalizeStoredAnswer(body.answer)
     if (!questionIdSet.has(questionId) || !answer) {
       return NextResponse.json({ error: 'Invalid response' }, { status: 400 })
     }
@@ -263,6 +266,12 @@ export async function POST(req: NextRequest) {
     const question = getMathExamQuestion(questionId)
     if (!question || !questionBelongsToAttempt(question, examId, sectionSlug)) {
       return NextResponse.json({ error: 'Question not found' }, { status: 404 })
+    }
+    if (question.grading.mode === 'choice') {
+      answer = normalizeMathChoiceAnswer(question, answer)
+      if (!answer) {
+        return NextResponse.json({ error: 'Invalid response' }, { status: 400 })
+      }
     }
     let persistedAnswer: string | null = null
     let serializedResponses = String(attempt.responses)

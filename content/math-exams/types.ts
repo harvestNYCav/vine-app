@@ -9,7 +9,10 @@ export type MathExamQuestionType =
 
 export type MathExamChoice = 'A' | 'B' | 'C' | 'D'
 export type MathExamQuestionNumberKind = 'official' | 'release-ordinal'
-export type MathExplanationSource = 'official-nysed' | 'vine-authored'
+export type MathExplanationSource =
+  | 'official-nysed'
+  | 'official-nysed-corrected'
+  | 'vine-authored'
 
 export interface LocalizedText {
   en: string
@@ -63,6 +66,7 @@ export interface MathExamQuestionRecord {
   primaryStandard: string
   secondaryStandards?: string[]
   cluster: string
+  choiceLabels: MathExamChoice[]
   image: MathExamQuestionImage
   grading: MathExamGrading
 }

@@ -67,8 +67,8 @@
       "inputHash": "56bdbed5acd299503be3501f260c1686056f52f4c68efb93032e79cacbb6eb9c",
       "explanation": {
         "text": {
-          "en": "Travel time equals distance divided by speed. Therefore, the hours are represented by (3.39 × 10⁷) ÷ (3.36 × 10⁴).",
-          "es": "El tiempo de viaje es la distancia dividida entre la rapidez. Por lo tanto, las horas se representan con (3.39 × 10⁷) ÷ (3.36 × 10⁴)."
+          "en": "Travel time equals distance divided by speed. Therefore, the hours are represented by (3.39 × 10⁷) ÷ (3.6 × 10⁴).",
+          "es": "El tiempo de viaje es la distancia dividida entre la rapidez. Por lo tanto, las horas se representan con (3.39 × 10⁷) ÷ (3.6 × 10⁴)."
         },
         "source": "vine-authored"
       }
@@ -117,8 +117,8 @@
       "inputHash": "8dde3d90dffda6f7d09572e8d4823231e519f27ac12a5b34f3410a0427c11f7b",
       "explanation": {
         "text": {
-          "en": "The volume of the rectangular prism is length × width × height. Substituting the interior dimensions gives 15 × 8 × 6 = 720 cubic inches.",
-          "es": "El volumen del prisma rectangular es largo × ancho × alto. Al sustituir las dimensiones interiores se obtiene 15 × 8 × 6 = 720 pulgadas cúbicas."
+          "en": "The full rectangular-prism volume is 15 × 8 × 6 = 720 cubic inches. Because the flower box is filled 3/4 full, it contains (3/4)(720) = 540 cubic inches of soil.",
+          "es": "El volumen completo del prisma rectangular es 15 × 8 × 6 = 720 pulgadas cúbicas. Como la jardinera se llena hasta 3/4 de su capacidad, contiene (3/4)(720) = 540 pulgadas cúbicas de tierra."
         },
         "source": "vine-authored"
       }
@@ -247,8 +247,8 @@
       "inputHash": "d6aafe19800b439c3ba503b28d34965f69ee508707cbb2a71ee8e105e35ec516",
       "explanation": {
         "text": {
-          "en": "The original vertices are A(2,1), B(4,4), and C(−4,2). A dilation by factor 2 about the origin doubles each coordinate, giving A′(4,2), B′(8,8), and C′(−8,4).",
-          "es": "Los vértices originales son A(2,1), B(4,4) y C(−4,2). Una dilatación de factor 2 con centro en el origen duplica cada coordenada y da A′(4,2), B′(8,8) y C′(−8,4)."
+        "en": "The original vertices are A(2,2), B(4,4), and C(−4,2). A dilation by factor 2 about the origin doubles each coordinate, giving A′(4,4), B′(8,8), and C′(−8,4).",
+        "es": "Los vértices originales son A(2,2), B(4,4) y C(−4,2). Una dilatación de factor 2 con centro en el origen duplica cada coordenada y da A′(4,4), B′(8,8) y C′(−8,4)."
         },
         "source": "vine-authored"
       }

@@ -292,6 +292,11 @@
       ]
     }
   },
+  "verifiedTextOverlays": {
+    "3": "2017-g5-es-q3-choice-values-v1",
+    "4": "2017-g5-es-q4-choice-values-v1",
+    "42": "2017-g5-es-q42-choice-values-v1"
+  },
   "outputs": {
     "1": {
       "width": 891,
@@ -303,11 +308,11 @@
     },
     "3": {
       "width": 1142,
-      "height": 635
+      "height": 632
     },
     "4": {
       "width": 536,
-      "height": 295
+      "height": 292
     },
     "6": {
       "width": 1103,
@@ -407,7 +412,7 @@
     },
     "42": {
       "width": 1145,
-      "height": 368
+      "height": 365
     },
     "43": {
       "width": 620,

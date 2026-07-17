@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2013-grade-7-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2013-g7-mc-q1": {
+      "inputHash": "36e67d9477197fc9f6903653891b7797b85836199ebecdb63b3a1e5fb106b6b7",
+      "description": {
+        "en": "Question 1. Cassie rolls a fair number cube with 6 faces labeled 1 through 6. She rolls the number cube 300 times. Which result is most likely? Choices: A: Cassie will roll a 1 or a 2 about 50 times. B: Cassie will roll a 1 or a 2 exactly 50 times. C: Cassie will roll an even number about 150 times. D: Cassie will roll an even number exactly 150 times."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "1",
+          "2",
+          "300",
+          "50",
+          "150",
+          "A: Cassie will roll a 1 or a 2 about 50 times",
+          "B: Cassie will roll a 1 or a 2 exactly 50 times",
+          "C: Cassie will roll an even number about 150 times",
+          "D: Cassie will roll an even number exactly 150 times"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q2": {
+      "inputHash": "927d1eed8574730bfdeb3b7ab33f723a258ffd4b3a0ac1b807b7fa740c8a9add",
+      "description": {
+        "en": "Question 2. What is the value of the expression 3/8 + (−4/5) + (−3/8) + 5/4? Choices: A: 0 B: 1/20 C: 9/20 D: 2 4/5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/8 + (−4/5) + (−3/8) + 5/4",
+          "0",
+          "1/20",
+          "9/20",
+          "2 4/5",
+          "A: 0",
+          "B: 1/20",
+          "C: 9/20",
+          "D: 2 4/5",
+          "3/8",
+          "(−4/5)",
+          "(−3/8)",
+          "5/4"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q3": {
+      "inputHash": "dd517a770576672abfac29372bf3a0985a9df12050b55edc8e0111f79c9dcc5b",
+      "description": {
+        "en": "Question 3. Carmine paid an electrician x dollars per hour for a 5-hour job, plus $70 for parts. The total charge was $320. Which equation can be used to determine how much the electrician charged per hour? Choices: A: 5x = 320 + 70 B: 5x = 320 − 70 C: (70 + 5)x = 320 D: (70 − 5)x = 320"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "5-hour",
+          "$70",
+          "$320",
+          "5x = 320 + 70",
+          "5x = 320 − 70",
+          "(70 + 5)x = 320",
+          "(70 − 5)x = 320",
+          "A: 5x = 320 + 70",
+          "B: 5x = 320 − 70",
+          "C: (70 + 5)x = 320",
+          "D: (70 − 5)x = 320",
+          "(70 + 5)",
+          "(70 − 5)"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q4": {
+      "inputHash": "ed5f3c1857445ee975bf7b8f07814a380c6eabbc50139fbac2ecd63dbe19f739",
+      "description": {
+        "en": "Question 4. The relationship between the length of one side of a square, x, and the perimeter of the square, y, can be represented in an xy-plane by a straight line. Which of the points with coordinates (x, y) lie on the line? Choices: A: (2, 6) B: (2, 8) C: (6, 2) D: (8, 2)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "xy-plane",
+          "(x, y)",
+          "(2, 6)",
+          "(2, 8)",
+          "(6, 2)",
+          "(8, 2)",
+          "A: (2, 6)",
+          "B: (2, 8)",
+          "C: (6, 2)",
+          "D: (8, 2)"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q5": {
+      "inputHash": "346c4c4776dc6dd678efe12a0b499cc12cff42262388ffb01e3db54ba3d359cb",
+      "description": {
+        "en": "Question 5. A crew of highway workers paved 2/15 mile in 20 minutes. If they work at the same rate, what portion of a mile will they pave in one hour? Choices: A: 1/150 B: 2/45 C: 2/5 D: 5/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/15",
+          "20",
+          "1/150",
+          "2/45",
+          "2/5",
+          "5/2",
+          "A: 1/150",
+          "B: 2/45",
+          "C: 2/5",
+          "D: 5/2"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q6": {
+      "inputHash": "89852dcc5f929e7a62f0fa90a965731de8bd908bac72fe56133cb8b21b08a8ad",
+      "description": {
+        "en": "Question 6. Which expression represents the sum of (2x − 5y) and (x + y)? Choices: A: 3x − 4y B: 3x − 6y C: x − 4y D: x − 6y"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2x − 5y)",
+          "(x + y)",
+          "3x − 4y",
+          "3x − 6y",
+          "x − 4y",
+          "x − 6y",
+          "A: 3x − 4y",
+          "B: 3x − 6y",
+          "C: x − 4y",
+          "D: x − 6y"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q7": {
+      "inputHash": "b9454b4bdc3f2d96d39e6d76efbebc26306e41d8e6535d362a94aaa46d423c4b",
+      "description": {
+        "en": "Question 7. Which steps can be used to solve for the value of y in the equation (2/3)(y + 57) = 178? Choices: A: Divide both sides by 2/3, then subtract 57 from both sides. B: Subtract 57 from both sides, then divide both sides by 2/3. C: Multiply both sides by 2/3, then subtract 57 from both sides. D: Subtract 2/3 from both sides, then subtract 57 from both sides."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y",
+          "(2/3)(y + 57) = 178",
+          "2/3",
+          "57",
+          "A: Divide both sides by 2/3, then subtract 57 from both sides",
+          "B: Subtract 57 from both sides, then divide both sides by 2/3",
+          "C: Multiply both sides by 2/3, then subtract 57 from both sides",
+          "D: Subtract 2/3 from both sides, then subtract 57 from both sides",
+          "(2/3)",
+          "(y + 57)"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q8": {
+      "inputHash": "00901ee76e6dea0048f31a15ed96e0ab8379bc041d2fdb9e29739a819d42aedb",
+      "description": {
+        "en": "Question 8. David bought a computer that was 20% off the regular price of $1,080. If an 8% sales tax was added to the cost of the computer, what was the total price David paid for it? Choices: A: $302.40 B: $864.00 C: $933.12 D: $1,382.40"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20%",
+          "$1,080",
+          "8%",
+          "$302.40",
+          "$864.00",
+          "$933.12",
+          "$1,382.40",
+          "A: $302.40",
+          "B: $864.00",
+          "C: $933.12",
+          "D: $1,382.40"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q9": {
+      "inputHash": "d76132b8b052b06b70f71bf0b29b67ceff26d2502a86cd22859dfa96e020d62f",
+      "description": {
+        "en": "Question 9. Suzanne bought a sweater at the sale price of $25. The original cost of the sweater was $40. What percent represents the discount that Suzanne received when buying the sweater? Choices: A: 15% B: 37.5% C: 60% D: 62.5%"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$25",
+          "$40",
+          "15%",
+          "37.5%",
+          "60%",
+          "62.5%",
+          "A: 15%",
+          "B: 37.5%",
+          "C: 60%",
+          "D: 62.5%"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q10": {
+      "inputHash": "e59f6bad07b3bc0fb98aa383f48b3480ba262c87836edcfcab6fb6c135374c6e",
+      "description": {
+        "en": "Question 10. Leo bought a used car for x dollars. One year later the value of the car was 0.88x. Which expression is another way to describe the change in the value of the car? Choices: A: 0.12% decrease B: 0.88% decrease C: 12% decrease D: 88% decrease"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "0.88x",
+          "0.12% decrease",
+          "0.88% decrease",
+          "12% decrease",
+          "88% decrease",
+          "A: 0.12% decrease",
+          "B: 0.88% decrease",
+          "C: 12% decrease",
+          "D: 88% decrease"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q11": {
+      "inputHash": "c9c4d0f4524fb4bdf782c6293208497f93d82a565b47b8592e04d3a09cfd9e83",
+      "description": {
+        "en": "Question 11. Last week Len spent $18 to bowl 4 games. This week he spent $27 to bowl 6 games. Len owns his bowling ball and shoes, so he only has to pay for each game that he bowls. If each of these bowling games costs the same amount of money, what is the constant of proportionality between the money spent and the number of games played? Choices: A: 1.5 B: 2.0 C: 4.5 D: 9.0"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$18",
+          "4 games",
+          "$27",
+          "6 games",
+          "1.5",
+          "2.0",
+          "4.5",
+          "9.0",
+          "A: 1.5",
+          "B: 2.0",
+          "C: 4.5",
+          "D: 9.0"
+        ]
+      }
+    },
+    "nysed-2013-g7-mc-q12": {
+      "inputHash": "79155aea6c2fb5f87bcefcb446988b068c393d8f19371e4d780ebdd11b64c081",
+      "description": {
+        "en": "Question 12. Julia’s service charge at a beauty salon was $72.60 before tax. The sales tax rate was 8%. If she added 20% of the amount before tax as a tip, how much did she pay for the service at the salon? Choices: A: $87.12 B: $92.93 C: $100.60 D: $145.20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$72.60",
+          "8%",
+          "20%",
+          "$87.12",
+          "$92.93",
+          "$100.60",
+          "$145.20",
+          "A: $87.12",
+          "B: $92.93",
+          "C: $100.60",
+          "D: $145.20"
+        ]
+      }
+    }
+  }
+}
