@@ -92,7 +92,9 @@ const EXPECTED_COUNTS: Record<(typeof RELEASE_YEARS)[number], readonly number[]>
 const RELEASE_YEAR_SET = new Set<number>(RELEASE_YEARS)
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
   'nysed-ela-2013-g4-mc-q2',
+  'nysed-ela-2013-g6-mc-q5',
   'nysed-ela-2014-g3-mc-q12',
+  'nysed-ela-2014-g7-mc-q15',
 ])
 const SKILL_SET = new Set<ElaSkill>(ELA_SKILL_ORDER)
 const CCLS_STANDARD_PATTERN = /^CCSS\.ELA-Literacy\.(RL|RI|L)\.([3-8])\.([1-9])([a-z])?$/
@@ -795,12 +797,12 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
   invariant(transcriptStimulusCount === 242, 'catalog must contain exactly 242 reviewed Grade 3–8 passage transcripts')
   invariant(transcriptQuestionCount === 1_583, 'reviewed Grade 3–8 transcripts must cover exactly 1,583 questions')
   invariant(
-    explanationSourceCounts['official-nysed'] === 147,
-    'catalog must contain exactly 147 unmodified official NYSED rationales',
+    explanationSourceCounts['official-nysed'] === 145,
+    'catalog must contain exactly 145 unmodified official NYSED rationales',
   )
   invariant(
-    explanationSourceCounts['official-nysed-corrected'] === 2,
-    'catalog must contain exactly 2 official NYSED rationales corrected by Vine',
+    explanationSourceCounts['official-nysed-corrected'] === 4,
+    'catalog must contain exactly 4 official NYSED rationales corrected by Vine',
   )
   invariant(
     explanationSourceCounts['vine-authored'] === 1_434,

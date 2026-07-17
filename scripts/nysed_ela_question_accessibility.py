@@ -68,6 +68,7 @@ KNOWN_OCR_ARTIFACT_RE = re.compile(
     r"by(?:raising|speaking|explaining|showing|describing))\b|"
     r"\b(?:be\s+s\s+t|b\s+e\s+st|m\s+o\s+st|d\s+lown|couldn[’']\s+t|astory|tobe)\b|"
     r"\b(?:1g|2g|209)\b|\bGO\s+ON\b|"
+    r"(?<![A-Za-z0-9])(?-i:3g|oN|yg)(?![A-Za-z0-9])|(?-i:\bsa\s+feeling\b)|"
     r"(?<![A-Za-z])(?-i:c)(?![A-Za-z])|"
     r"(?<![A-Za-z0-9])(?:Pp|P|q)(?![A-Za-z0-9])|"
     r"(?:=|»)|\byoud\b|=\s*=\s*SS\b|walls;'|,\.\.|(?<!\.)\.\.(?!\.))",

@@ -34,6 +34,32 @@ class CorrectedOfficialElaRationaleTests(unittest.TestCase):
                 ),
                 "slopes and trails nearby",
             ),
+            (
+                2013,
+                6,
+                5,
+                (
+                    "Students who choose \u201cC\u201d recognize that this section describes how the "
+                    "project is unlike most others: Conditions are extreme and the window of time "
+                    "for working is only a few months. In answering correctly, they demonstrate an "
+                    "understanding that the author establishes the unique nature of the "
+                    "\u201cthoroughfare\u201d to set the stage for ideas discussed throughout the text."
+                ),
+                "path of groomed snow and ice",
+            ),
+            (
+                2014,
+                7,
+                15,
+                (
+                    "Students selecting \u201cA\u201d show an understanding of the meaning of \u201cleftovers\u201d "
+                    "in the context of the article. Lines 28 through 30 explain that there are two "
+                    "main sources of comets. One source is an area called the Kuiper Belt. The "
+                    "Kuiper Belt is described as being made up of \u201cplanetary leftovers\u201d or pieces "
+                    "of what were once the \u201cpreviously used\u201d parts of planets."
+                ),
+                "remaining after the planets formed",
+            ),
         )
         for year, grade, number, original, expected in cases:
             with self.subTest(year=year, grade=grade, number=number):

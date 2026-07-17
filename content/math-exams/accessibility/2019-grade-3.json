@@ -17,8 +17,16 @@
     "nysed-2019-g3-mc-q2": {
       "inputHash": "71819e2f95aad005d3bb254b4311cf53d61af04a67cd35e076392d36cbcac178",
       "description": {
-        "en": "Question 2. Lucy is counting by 2s. She starts with the number 2 and stops at the number 50. 2 Which number would Lucy not count? Choices: A: 11; B: 22; C: 34; D: 48.",
+        "en": "Question 2. Lucy is counting by 2s. She starts with the number 2 and stops at the number 50. Which number would Lucy not count? Choices: A: 11; B: 22; C: 34; D: 48.",
         "es": "Pregunta 2. Lucy cuenta de 2 en 2. Comienza con el número 2 y termina con el número 50. ¿Qué número no debería contar Lucy? Opciones: A: 11; B: 22; C: 34; D: 48."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "stops at the number 50. Which number would Lucy not count?"
+        ],
+        "es": [
+          "termina con el número 50. ¿Qué número no debería contar Lucy?"
+        ]
       }
     },
     "nysed-2019-g3-mc-q3": {

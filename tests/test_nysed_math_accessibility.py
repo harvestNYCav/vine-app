@@ -343,6 +343,78 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                         )
                     )
 
+    def test_reported_grade_3_ocr_artifacts_are_removed_from_reviewed_descriptions(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        catalog = json.loads(
+            (root / "content" / "math-exams" / "generated" / "catalog.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        cases = (
+            (
+                2019,
+                2,
+                "09901750f1c47789dd9a5159b286544069cfa40ff41184666a5f7885e5e17d89",
+                {"sourcePage": 7, "box": [28.0, 354.652, 584.0, 555.528]},
+                (1101, 349),
+                "e035326a63fa46251fc079771f516b909e4ed5edcd8113d3269fc6bd57961c9b",
+                "stops at the number 50. Which number would Lucy not count?",
+                ("number 50. 2 Which",),
+            ),
+            (
+                2016,
+                27,
+                "a3a5e69e8f5baee262924d36c53f59c9d5d1278bdcebca633845b21fbca493ab",
+                {"sourcePage": 19, "box": [28.0, 352.8, 584.0, 699.2]},
+                (1174, 315),
+                "2083cafc6bdbe33840f58370bad30ec14366c84e688ddf306ba2c10a1f0e33e7",
+                "Which situation could be represented by the expression 6 × 2?",
+                ("Question 27. a7", "6 x 2"),
+            ),
+        )
+        for year, number, pdf_hash, crop, size, asset_hash, expected, forbidden in cases:
+            question_id = f"nysed-{year}-g3-mc-q{number}"
+            with self.subTest(question_id=question_id):
+                directory = root / "public" / "nysed" / "math" / str(year) / "grade-3" / "en"
+                manifest = json.loads(
+                    (directory / ".nysed-import.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(manifest["sourcePdfSha256"], pdf_hash)
+                self.assertEqual(manifest["crops"][str(number)], crop)
+                self.assertEqual(
+                    manifest["outputs"][str(number)],
+                    {"width": size[0], "height": size[1]},
+                )
+                asset = directory / f"q{number:02d}.webp"
+                self.assertEqual(sha256(asset), asset_hash)
+                with Image.open(asset) as image:
+                    self.assertEqual(image.size, size)
+
+                item = json.loads(
+                    (
+                        root
+                        / "content"
+                        / "math-exams"
+                        / "accessibility"
+                        / f"{year}-grade-3.json"
+                    ).read_text(encoding="utf-8")
+                )["questions"][question_id]
+                description = item["description"]["en"]
+                self.assertIn(expected, description)
+                self.assertIn(expected, item["requiredSourceTokens"]["en"])
+                for artifact in forbidden:
+                    self.assertNotIn(artifact, description)
+
+                exam = next(
+                    exam
+                    for exam in catalog["exams"]
+                    if exam["year"] == year and exam["grade"] == 3
+                )
+                question = next(
+                    question for question in exam["questions"] if question["id"] == question_id
+                )
+                self.assertEqual(question["alt"], item["description"])
+
     def test_reported_visual_contradictions_are_corrected_and_source_pinned(self) -> None:
         root = Path(__file__).resolve().parents[1] / "content" / "math-exams" / "accessibility"
         cases = (

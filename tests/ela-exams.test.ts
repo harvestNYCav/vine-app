@@ -30,7 +30,9 @@ const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024,
 const GRADES = [3, 4, 5, 6, 7, 8] as const
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
   'nysed-ela-2013-g4-mc-q2',
+  'nysed-ela-2013-g6-mc-q5',
   'nysed-ela-2014-g3-mc-q12',
+  'nysed-ela-2014-g7-mc-q15',
 ])
 const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2013: [6, 5, 6, 5, 7, 7],
@@ -602,6 +604,18 @@ test('reviewed ELA explanations preserve the passage evidence without overstatin
   assert.doesNotMatch(snowshoe.grading.explanation, /trails and mountains/i)
   assert.equal(snowshoe.grading.explanationSource, 'official-nysed-corrected')
 
+  const traverse = getElaExamQuestion('nysed-ela-2013-g6-mc-q5')!
+  assert.match(traverse.grading.explanation, /path of groomed snow and ice/i)
+  assert.match(traverse.grading.explanation, /crevasses, deep snow, mountains/i)
+  assert.doesNotMatch(traverse.grading.explanation, /window of time for working/i)
+  assert.equal(traverse.grading.explanationSource, 'official-nysed-corrected')
+
+  const leftovers = getElaExamQuestion('nysed-ela-2014-g7-mc-q15')!
+  assert.match(leftovers.grading.explanation, /material remaining after the planets formed/i)
+  assert.match(leftovers.grading.explanation, /without claiming.*previously used parts of planets/i)
+  assert.doesNotMatch(leftovers.grading.explanation, /what were once the .previously used. parts of planets/i)
+  assert.equal(leftovers.grading.explanationSource, 'official-nysed-corrected')
+
   const height = getElaExamQuestion('nysed-ela-2023-g3-mc-q4')!
   assert.match(height.grading.explanation, /earlier measurement/i)
   assert.match(height.grading.explanation, /rather than conclusively proving their current heights/i)
@@ -662,8 +676,8 @@ test('active ELA questions have substantive sourced explanations with server-onl
   }
 
   assert.deepEqual(explanationSourceCounts, {
-    'official-nysed': 147,
-    'official-nysed-corrected': 2,
+    'official-nysed': 145,
+    'official-nysed-corrected': 4,
     'vine-authored': 1_434,
   })
 })
