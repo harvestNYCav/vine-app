@@ -126,6 +126,57 @@ test('catalog validation rejects leaked keys, wrong-grade standards, and unsafe 
   const localPath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
   localPath.exams[0].description = '/Users/example/private/vine-app'
   assert.throws(() => buildElaExamCatalog(localPath), /local filesystem path/)
+
+  const linuxLocalPath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  linuxLocalPath.exams[0].description = '/home/example/private/vine-app'
+  assert.throws(() => buildElaExamCatalog(linuxLocalPath), /local filesystem path/)
+
+  const genericExplanation = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const genericQuestion = genericExplanation.exams[0].questions[0]
+  genericQuestion.explanation.text = `The official NYSED answer key identifies choice ${genericQuestion.correct} as the correct answer.`
+  assert.throws(
+    () => buildElaExamCatalog(genericExplanation),
+    /substantive, question-specific explanation/,
+  )
+
+  const tautologicalExplanation = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  tautologicalExplanation.exams[0].questions[0].explanation.text =
+    'Choice B fits because it is the right answer, and this repeats that the selected response is right without citing any passage evidence.'
+  assert.throws(
+    () => buildElaExamCatalog(tautologicalExplanation),
+    /substantive, question-specific explanation/,
+  )
+
+  const explanationWithoutReasoning = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const authoredQuestion = explanationWithoutReasoning.exams.find(exam => exam.year >= 2015)!.questions[0]
+  authoredQuestion.explanation.text =
+    'Choice B quotes paragraph four and accurately describes the cub following its mother into the den for protection from the storm.'
+  assert.throws(
+    () => buildElaExamCatalog(explanationWithoutReasoning),
+    /substantive, question-specific explanation/,
+  )
+
+  const footerExplanation = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  footerExplanation.exams[0].questions[0].explanation.text += ' 14'
+  assert.throws(
+    () => buildElaExamCatalog(footerExplanation),
+    /substantive, question-specific explanation/,
+  )
+
+  const missingExplanation = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const questionWithoutExplanation = missingExplanation.exams[0].questions[0] as unknown as {
+    explanation?: unknown
+  }
+  delete questionWithoutExplanation.explanation
+  assert.throws(() => buildElaExamCatalog(missingExplanation), /bad explanation source/)
+
+  const wrongExplanationSource = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const modernQuestion = wrongExplanationSource.exams.find(exam => exam.year >= 2015)!.questions[0]
+  modernQuestion.explanation.source = 'official-nysed'
+  assert.throws(
+    () => buildElaExamCatalog(wrongExplanationSource),
+    /explanation source that does not match its release/,
+  )
 })
 
 test('grade filters expose only the assigned grade and sort newest first', () => {
@@ -216,7 +267,13 @@ test('each practice section stays on one passage stimulus and exposes official p
   assert.equal(passagePaths.size, 242)
 })
 
-test('active ELA questions are one-point multiple choice with server-only keys', () => {
+test('active ELA questions have substantive sourced explanations with server-only grading', () => {
+  const explanationSourceCounts = {
+    'official-nysed': 0,
+    'vine-authored': 0,
+  }
+  const genericFallback = /official NYSED answer key identifies choice [A-D] as the correct answer/i
+
   for (const question of ELA_EXAM_QUESTIONS) {
     const exam = getElaExamById(question.examId)
     assert.ok(exam)
@@ -224,6 +281,9 @@ test('active ELA questions are one-point multiple choice with server-only keys',
     assert.equal(question.points, 1)
     assert.equal(question.grading.mode, 'choice')
     assert.match(question.grading.correct, /^[A-D]$/)
+    assert.ok(question.grading.explanation.replace(/[^\p{L}\p{N}]/gu, '').length >= 40)
+    assert.doesNotMatch(question.grading.explanation, genericFallback)
+    explanationSourceCounts[question.grading.explanationSource] += 1
     assert.match(question.id, new RegExp(`^nysed-ela-${exam.year}-g${exam.grade}-mc-q\\d+$`))
     assert.equal(getElaExamQuestion(question.id), question)
     if (question.numberKind === 'release-ordinal') assert.equal(question.session, null)
@@ -240,7 +300,15 @@ test('active ELA questions are one-point multiple choice with server-only keys',
 
     const publicQuestion = toPublicElaExamQuestion(question)
     assert.ok(!('grading' in publicQuestion), `${question.id} must not expose its answer key`)
+    assert.ok(!('correct' in publicQuestion), `${question.id} must not expose its answer key`)
+    assert.ok(!('explanation' in publicQuestion), `${question.id} must not expose its explanation`)
+    assert.ok(!('explanationSource' in publicQuestion), `${question.id} must not expose explanation provenance`)
   }
+
+  assert.deepEqual(explanationSourceCounts, {
+    'official-nysed': 149,
+    'vine-authored': 1_434,
+  })
 })
 
 test('all question and passage WebPs exist with exact dimensions and no orphaned ELA assets', () => {

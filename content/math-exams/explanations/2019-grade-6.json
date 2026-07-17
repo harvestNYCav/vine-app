@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2019-grade-6-mc-v1",
+  "questions": {
+    "nysed-2019-g6-mc-q1": {
+      "inputHash": "c2243043614ac9d4db915d5fe7b02614ba257ed5a7153e5976b2b965288954f1",
+      "explanation": {
+        "text": {
+          "en": "In graph A, the four vertices are at (−5, 5), (2, 4), (6, −2), and (−3, −6). Each point’s horizontal and vertical positions match the given ordered pair.",
+          "es": "En la gráfica A, los cuatro vértices están en (−5, 5), (2, 4), (6, −2) y (−3, −6). Las posiciones horizontal y vertical de cada punto coinciden con el par ordenado dado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q2": {
+      "inputHash": "90a34d67cbcf214d27e635b6c5148c58f74a8d84240d6b07788f6e759871abf7",
+      "explanation": {
+        "text": {
+          "en": "Evaluate powers first: 3² = 9, 2³ = 8, and 2² = 4. Then [9(8 + 4)]/4 = 108/4 = 27.",
+          "es": "Primero evaluamos las potencias: 3² = 9, 2³ = 8 y 2² = 4. Luego, [9(8 + 4)]/4 = 108/4 = 27."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q3": {
+      "inputHash": "7e2c04261c2ab950b19da10df9809871932dbe4cc31580c435dc24111643e4c0",
+      "explanation": {
+        "text": {
+          "en": "The rectangle is 6 units wide and 8 units tall, so its area is 6 × 8 = 48. The diagonal divides it into equal halves, making the shaded area 48 ÷ 2 = 24 square units.",
+          "es": "El rectángulo mide 6 unidades de ancho y 8 de alto, así que su área es 6 × 8 = 48. La diagonal lo divide en mitades iguales, por lo que el área sombreada es 48 ÷ 2 = 24 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q4": {
+      "inputHash": "f717a50a081445b7518033f3a12950382024667d20c82ecaa4bb891d90b551d4",
+      "explanation": {
+        "text": {
+          "en": "The ratio 3 teaspoons to 1 tablespoon means every 3 teaspoons make 1 tablespoon. Thus 6 ÷ 3 = 2 tablespoons.",
+          "es": "La razón de 3 cucharaditas por 1 cucharada significa que cada 3 cucharaditas forman 1 cucharada. Entonces, 6 ÷ 3 = 2 cucharadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q7": {
+      "inputHash": "c1d331ebd89463b5ad3032f685d5a88bc9ed771607f8f6df66e2bde59f3bf8f4",
+      "explanation": {
+        "text": {
+          "en": "The “sum of 2t and 2” is 2t + 2, and “twice the cube of s” is 2s³. Their quotient is (2t + 2)/(2s³), which is expression D.",
+          "es": "La “suma de 2t y 2” es 2t + 2, y “dos veces el cubo de s” es 2s³. Su cociente es (2t + 2)/(2s³), que corresponde a la expresión D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q10": {
+      "inputHash": "9fbee3e176ffba93e4916e4f833596efdab3b9c64022de7094e2699f72eb1910",
+      "explanation": {
+        "text": {
+          "en": "The number of 3/4-gallon portions in 5 1/4 gallons is (21/4) ÷ (3/4) = (21/4)(4/3) = 7 bookcases.",
+          "es": "La cantidad de porciones de 3/4 de galón en 5 1/4 galones es (21/4) ÷ (3/4) = (21/4)(4/3) = 7 libreros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q13": {
+      "inputHash": "eee80f48deee5ed83f4e8a35e1f6fa78ec683595e927c43c6bb94da892c12104",
+      "explanation": {
+        "text": {
+          "en": "Divide the available ice cream by each serving: 9 1/2 ÷ 3/5 = (19/2)(5/3) = 95/6 = 15 5/6. Only 15 complete servings can be made, so Carly can serve 15 guests.",
+          "es": "Dividimos el helado disponible entre cada porción: 9 1/2 ÷ 3/5 = (19/2)(5/3) = 95/6 = 15 5/6. Solo se pueden hacer 15 porciones completas, así que Carly puede servir a 15 invitados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q16": {
+      "inputHash": "c46668a093a79f5f193e08aa046e71e1535713e14594df4d05aa2eff67e112da",
+      "explanation": {
+        "text": {
+          "en": "Because 75 is a multiple of 15, both schedules coincide again after 75 minutes. Adding 75 minutes to 6:00 a.m. gives 7:15 a.m.",
+          "es": "Como 75 es múltiplo de 15, ambos horarios vuelven a coincidir después de 75 minutos. Al sumar 75 minutos a las 6:00 a. m. se obtiene 7:15 a. m."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q17": {
+      "inputHash": "32b4ece0f2823e6666c967ad10989620e92cdd4ba5716387208816df3b021209",
+      "explanation": {
+        "text": {
+          "en": "Absolute value is distance from zero. Since |−6| = 6 and 6 > 5, −6 is the only listed number with absolute value greater than 5.",
+          "es": "El valor absoluto es la distancia al cero. Como |−6| = 6 y 6 > 5, −6 es el único número dado con valor absoluto mayor que 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q26": {
+      "inputHash": "9f1e55e1a3e68029ece8eabf812460d60752517a4253b5a3e124c141d1472af4",
+      "explanation": {
+        "text": {
+          "en": "The rate is 9 cakes ÷ 3 bags = 3 cakes per bag. Table B keeps that rate with pairs (3,1), (6,2), (9,3), (12,4), and (15,5).",
+          "es": "La tasa es 9 pasteles ÷ 3 bolsas = 3 pasteles por bolsa. La tabla B mantiene esa tasa con los pares (3,1), (6,2), (9,3), (12,4) y (15,5)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q27": {
+      "inputHash": "03040201b7463404ed141efd9470d7bf553bfe464f52abb1ef89a540c11da7f5",
+      "explanation": {
+        "text": {
+          "en": "Substitute s = 2.3 into V = s³: V = 2.3³ = 2.3 × 2.3 × 2.3 = 12.167 cubic centimeters.",
+          "es": "Sustituimos s = 2.3 en V = s³: V = 2.3³ = 2.3 × 2.3 × 2.3 = 12.167 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q28": {
+      "inputHash": "d8136667eaf82163a695964118a8c12b35ae718d29a3ae1bbf344d510c8e24d9",
+      "explanation": {
+        "text": {
+          "en": "Divide the total length by each piece length: 8 1/4 ÷ 3/4 = (33/4)(4/3) = 33/3 = 11 pieces.",
+          "es": "Dividimos la longitud total entre la de cada pieza: 8 1/4 ÷ 3/4 = (33/4)(4/3) = 33/3 = 11 piezas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q29": {
+      "inputHash": "3c6c0811725bb1ce0c8c5c55ce7dd0f927cfbb656fbcbb84437d0f87683c6e2d",
+      "explanation": {
+        "text": {
+          "en": "The toucan-to-parrot ratio is 15:60. Dividing both terms by 15 gives 1:4.",
+          "es": "La razón de tucanes a loros es 15:60. Al dividir ambos términos entre 15 se obtiene 1:4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q30": {
+      "inputHash": "f36ed84cee97ea78da62ce5d1124ffd8211525613499ccd9ab55f43de53b5dc3",
+      "explanation": {
+        "text": {
+          "en": "The 231 total eggs consist of 46 brown eggs plus w white eggs. Therefore the relationship is 46 + w = 231.",
+          "es": "Los 231 huevos totales se componen de 46 huevos marrones más w huevos blancos. Por lo tanto, la relación es 46 + w = 231."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q31": {
+      "inputHash": "fe9f2b7e104fbc92ea4fe8cee3eb7347dba529ff0fd353babee0742801713e1e",
+      "explanation": {
+        "text": {
+          "en": "Apply the distributive property to both terms: 9(9m + 3t) = 9·9m + 9·3t = 81m + 27t.",
+          "es": "Aplicamos la propiedad distributiva a ambos términos: 9(9m + 3t) = 9·9m + 9·3t = 81m + 27t."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q32": {
+      "inputHash": "bf09da94beefac55334c2d68fb21f3a95d4c9c658311e72178aa3ce27495364c",
+      "explanation": {
+        "text": {
+          "en": "The inequality n ≥ −5 includes −5 and every number greater than −5. All three values in set B, {−5, −4.5, −3}, satisfy that condition.",
+          "es": "La desigualdad n ≥ −5 incluye −5 y todos los números mayores que −5. Los tres valores del conjunto B, {−5, −4.5, −3}, cumplen esa condición."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q33": {
+      "inputHash": "e75de575173407191ad88d55b35c433f97a52d272a947ac6408b41461996563a",
+      "explanation": {
+        "text": {
+          "en": "If total milkshakes are t, then 40% of t is 48: 0.40t = 48. Dividing gives t = 48/0.40 = 120 milkshakes.",
+          "es": "Si el total de batidos es t, entonces el 40% de t es 48: 0.40t = 48. Al dividir se obtiene t = 48/0.40 = 120 batidos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q34": {
+      "inputHash": "2712180b0a08730c8a740154730bf5d434c9bea5cc333f39636df5a66fcdaf8d",
+      "explanation": {
+        "text": {
+          "en": "“3 fewer than p” means subtract 3 from p, so the expression is p − 3.",
+          "es": "“3 menos que p” significa restar 3 de p, así que la expresión es p − 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q35": {
+      "inputHash": "080f827af47e7d86a89f66cc790cc09bf1e061fba28a9c5cd465ca285f0ad03d",
+      "explanation": {
+        "text": {
+          "en": "Solve w − 10 ≤ 16 by adding 10 to both sides, giving w ≤ 26. Therefore 27 is not in the solution set.",
+          "es": "Resolvemos w − 10 ≤ 16 sumando 10 a ambos lados, lo que da w ≤ 26. Por lo tanto, 27 no pertenece al conjunto solución."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q36": {
+      "inputHash": "085223b4babfd342f0bad05fd16cf95826c0f99465883f694f9cd2cfc234d8bd",
+      "explanation": {
+        "text": {
+          "en": "A(1, −1) and B(1, 4) have the same x-coordinate, so the segment is vertical. Its length is 4 − (−1) = 5 units.",
+          "es": "A(1, −1) y B(1, 4) tienen la misma coordenada x, así que el segmento es vertical. Su longitud es 4 − (−1) = 5 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q37": {
+      "inputHash": "ab3dfa77c94149531da0b6fcef80390cf60a63ff650622567b698f10d3127b7b",
+      "explanation": {
+        "text": {
+          "en": "Ken makes 25 necklaces, and Tami makes 25 + m. Their combined total is 25 + (25 + m), which is expression A.",
+          "es": "Ken hace 25 collares y Tami hace 25 + m. Su total combinado es 25 + (25 + m), que corresponde a la expresión A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g6-mc-q38": {
+      "inputHash": "94a7d9188bbfd411ad087646ffe840b339fd7fd9efaac716115f77e0170cf446",
+      "explanation": {
+        "text": {
+          "en": "A cube has 6 congruent square faces. With side 6.5 inches, the surface area is 6(6.5²) = 6(42.25) = 253.5 square inches.",
+          "es": "Un cubo tiene 6 caras cuadradas congruentes. Con lado de 6.5 pulgadas, el área de superficie es 6(6.5²) = 6(42.25) = 253.5 pulgadas cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

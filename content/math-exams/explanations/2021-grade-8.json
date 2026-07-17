@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2021-grade-8-mc-v1",
+  "questions": {
+    "nysed-2021-g8-mc-q1": {
+      "inputHash": "d6d5f20c6398e8246d84d010edbc9cd6665cbcf3ae50dea52854fdc8a26aafee",
+      "explanation": {
+        "text": {
+          "en": "A linear function graphs as a nonvertical straight line. Graph B is straight and passes the vertical-line test; A and C are curved, while D is vertical and is not a function. Therefore B is correct.",
+          "es": "Una función lineal se grafica como una recta no vertical. La gráfica B es recta y pasa la prueba de la línea vertical; A y C son curvas, y D es vertical y no es función. Por lo tanto, B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q2": {
+      "inputHash": "1ceeb22542579d9cfd619429a1c604f1434a6cc3c64adc29b920518ee90a11db",
+      "explanation": {
+        "text": {
+          "en": "Divide the coefficients and subtract the exponents: (1.6/0.2) × 10^(5-2) = 8 × 10^3. Thus the value is choice B.",
+          "es": "Se dividen los coeficientes y se restan los exponentes: (1.6/0.2) × 10^(5-2) = 8 × 10^3. Por lo tanto, el valor es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q3": {
+      "inputHash": "f1da904a58d188054361fd95ed1c0b2a1a97c4dc3d00178ab6cf5b838303d1de",
+      "explanation": {
+        "text": {
+          "en": "From 3 to 6 toothbrushes, cost rises from $4.50 to $9.00. The rate is (9.00 - 4.50) ÷ (6 - 3) = $1.50 per toothbrush, which is choice A.",
+          "es": "De 3 a 6 cepillos, el costo aumenta de $4.50 a $9.00. La tasa es (9.00 - 4.50) ÷ (6 - 3) = $1.50 por cepillo, que es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q4": {
+      "inputHash": "b5aadc74d0e38a4e3c4d232e137c9e6ddfb04ab6dc86dbc58300e8c995a3e23c",
+      "explanation": {
+        "text": {
+          "en": "Using V = (1/3)πr^2h, the large cone has volume (1/3)π(2.25)^2(5.1) ≈ 27.0, and the small cone has (1/3)π(1.5)^2(3.5) ≈ 8.2. Their difference is about 18.8 cubic inches, choice A.",
+          "es": "Con V = (1/3)πr^2h, el cono grande tiene volumen (1/3)π(2.25)^2(5.1) ≈ 27.0 y el pequeño (1/3)π(1.5)^2(3.5) ≈ 8.2. La diferencia es aproximadamente 18.8 pulgadas cúbicas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q5": {
+      "inputHash": "04a5c64e6f04c80c9265ed4ccf88fad5c120b354957ac586a847e170db85e45a",
+      "explanation": {
+        "text": {
+          "en": "Chris's equation gives a rate of $8.25 per hour. Sam's table gives 30 ÷ 4 = $7.50 per hour, and 8.25 - 7.50 = $0.75, so Chris earns $0.75 more per hour, choice B.",
+          "es": "La ecuación de Chris da una tasa de $8.25 por hora. La tabla de Sam da 30 ÷ 4 = $7.50 por hora, y 8.25 - 7.50 = $0.75; por eso Chris gana $0.75 más por hora, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q6": {
+      "inputHash": "fee0a86881e9bf9b44d8c4e99e942f006b10fb0d63d4278cf3bf54af8a1b5e5c",
+      "explanation": {
+        "text": {
+          "en": "Choice C contains the term 3x^2, so the variable is raised to the second power and the function is nonlinear. The other equations simplify to forms ax + b, so C is the only non-linear function.",
+          "es": "La opción C contiene el término 3x^2, así que la variable está elevada a la segunda potencia y la función no es lineal. Las otras ecuaciones se simplifican a la forma ax + b; por eso C es la única no lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q7": {
+      "inputHash": "ed28fa32edb6214a82b0a660091d020446013c804883328f9ee109d73a954495",
+      "explanation": {
+        "text": {
+          "en": "The line passes through the origin and through (8, -2), so its slope is -2/8 = -1/4. With y-intercept 0, its equation is y = -(1/4)x, choice D.",
+          "es": "La recta pasa por el origen y por (8, -2), así que su pendiente es -2/8 = -1/4. Como la intersección con y es 0, su ecuación es y = -(1/4)x, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q8": {
+      "inputHash": "c1adc3db92a40fdab8510510fdc26c11305d0e88f28e73c743475c420ec32e96",
+      "explanation": {
+        "text": {
+          "en": "Travel time equals distance divided by speed. Therefore the required number of hours is (3.39 × 10^7) ÷ (3.6 × 10^4), the expression in choice C.",
+          "es": "El tiempo de viaje es la distancia dividida entre la velocidad. Por lo tanto, las horas necesarias se calculan con (3.39 × 10^7) ÷ (3.6 × 10^4), la expresión de la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q9": {
+      "inputHash": "2e94749fb07d8366707cdfd55b02331a62fff91e07145a0e7a03dc958bf0d91c",
+      "explanation": {
+        "text": {
+          "en": "Reflecting A across the x-axis sends (2, 6), (2, 2), and (4, 2) to (2, -6), (2, -2), and (4, -2). Translating 6 units left then gives (-4, -6), (-4, -2), and (-2, -2), exactly triangle B, so choice C works.",
+          "es": "Al reflejar A sobre el eje x, (2, 6), (2, 2) y (4, 2) pasan a (2, -6), (2, -2) y (4, -2). Al trasladar 6 unidades a la izquierda se obtienen (-4, -6), (-4, -2) y (-2, -2), exactamente B; por lo tanto, C funciona."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q10": {
+      "inputHash": "652ff30c494b51bd033a00d003313544eb2658145b81ad3ffe9458a3c8465e5f",
+      "explanation": {
+        "text": {
+          "en": "In choice B, both equations have the identical left side 7x - 2y but require it to equal both 9 and 13. That contradiction is impossible, so the parallel lines never intersect and the system has no solution.",
+          "es": "En la opción B, las dos ecuaciones tienen el mismo lado izquierdo, 7x - 2y, pero exigen que sea igual a 9 y a 13. Esa contradicción es imposible, así que las rectas paralelas no se cruzan y el sistema no tiene solución."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q11": {
+      "inputHash": "83510f9f7527583f4ee5b8512926d6b09ec2f001232cda3b10f28803c193ff0b",
+      "explanation": {
+        "text": {
+          "en": "The graphed line passes through (0, -4) and (4, -2), so its equation is y = (1/2)x - 4. Setting it equal to y = -x + 2 gives (1/2)x - 4 = -x + 2, hence x = 4 and y = -2, choice D.",
+          "es": "La recta graficada pasa por (0, -4) y (4, -2), así que es y = (1/2)x - 4. Al igualarla con y = -x + 2 se obtiene (1/2)x - 4 = -x + 2; entonces x = 4 y y = -2, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q12": {
+      "inputHash": "60aa27eeea5e699459a2539aea796f62f28b447cfa76fdf16cf48f746ecc7495",
+      "explanation": {
+        "text": {
+          "en": "The rate of change is the slope between (-3, 7) and (3, 3): (3 - 7) ÷ [3 - (-3)] = -4/6 = -2/3. Therefore choice B is correct.",
+          "es": "La tasa de cambio es la pendiente entre (-3, 7) y (3, 3): (3 - 7) ÷ [3 - (-3)] = -4/6 = -2/3. Por lo tanto, la opción B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q13": {
+      "inputHash": "a8ef8e946b75d73609825d5df604c7138100ff25cd194b803b4b6d3fda496e39",
+      "explanation": {
+        "text": {
+          "en": "Reflecting A(2, 4) across the y-axis gives (-2, 4), and dilating by 1/2 gives (-1, 2), which is A'. The same mapping works for every vertex, so the sequence is choice B.",
+          "es": "Al reflejar A(2, 4) sobre el eje y se obtiene (-2, 4), y al dilatar por 1/2 se obtiene (-1, 2), que es A'. La misma transformación funciona para cada vértice; por lo tanto, la secuencia es B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q14": {
+      "inputHash": "8fc9beb5336c8d31eccacc66f924bc91fcfc37c750ea73f8097ecaa460b4d2b5",
+      "explanation": {
+        "text": {
+          "en": "The full prism volume is 15 × 8 × 6 = 720 cubic inches. Filling it 3/4 full uses (3/4)(720) = 540 cubic inches of soil, choice C.",
+          "es": "El volumen total del prisma es 15 × 8 × 6 = 720 pulgadas cúbicas. Al llenarlo hasta 3/4 se usan (3/4)(720) = 540 pulgadas cúbicas de tierra, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q15": {
+      "inputHash": "adfc976019d0f1991ccdb3eb386479849cad1e32438df23aed113e86b4828c87",
+      "explanation": {
+        "text": {
+          "en": "The slope from the origin to (10, 14) is 14/10 = 7/5. Since the line passes through the origin, its y-intercept is 0, so the equation is y = (7/5)x, choice B.",
+          "es": "La pendiente desde el origen hasta (10, 14) es 14/10 = 7/5. Como la recta pasa por el origen, su intersección con y es 0; por eso la ecuación es y = (7/5)x, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q16": {
+      "inputHash": "a760560aeb0afe9f49e8914f2baeeca45c54e5542e7603d8baad7f0d2c1f70fa",
+      "explanation": {
+        "text": {
+          "en": "From 3 = -(1/3)x, multiply both sides by -3 to isolate x. This gives x = -9, the equation has one solution, and choice C is true.",
+          "es": "De 3 = -(1/3)x, se multiplican ambos lados por -3 para aislar x. Así se obtiene x = -9, la ecuación tiene una sola solución y la opción C es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q17": {
+      "inputHash": "f97f3e65957e29bc0f4ce25139be10ad8bcb4677be3657e399f92e5cafc5c7d7",
+      "explanation": {
+        "text": {
+          "en": "Substitute x = 5 into y = -750x + 8,500: y = -750(5) + 8,500 = -3,750 + 8,500 = $4,750. Therefore choice B is the estimate.",
+          "es": "Se sustituye x = 5 en y = -750x + 8,500: y = -750(5) + 8,500 = -3,750 + 8,500 = $4,750. Por lo tanto, la estimación es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q18": {
+      "inputHash": "c9f3576be44efc3055e028c33bf5fe26ac7839cd483e36ad94484958105803ae",
+      "explanation": {
+        "text": {
+          "en": "When y decreases as x increases, the data trend downward from left to right. A line modeling that trend must have a negative slope, so choice D is correct.",
+          "es": "Cuando y disminuye mientras x aumenta, los datos descienden de izquierda a derecha. Una recta que modele esa tendencia debe tener pendiente negativa; por lo tanto, la opción D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q19": {
+      "inputHash": "b7489c3f7186d130fb0e05e060332ce04628dbc0b85241058562be1bd477f83b",
+      "explanation": {
+        "text": {
+          "en": "The rates are 7 for A, 12/4 = 3 for B, 8/2 = 4 for C, and 18/3 = 6 for graph D. Since 7 is greatest, the proportional relationship y = 7x in choice A has the greatest rate.",
+          "es": "Las tasas son 7 para A, 12/4 = 3 para B, 8/2 = 4 para C y 18/3 = 6 para la gráfica D. Como 7 es la mayor, la relación y = 7x de la opción A tiene la tasa más grande."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q20": {
+      "inputHash": "67d77d2ce3e521c07f68c5ec5bc45258b46ecfa901b728279c32c743a1ff7ba4",
+      "explanation": {
+        "text": {
+          "en": "A 5-inch diameter gives radius 5 ÷ 2 = 2.5 inches. Using V = πr^2h with height 7 gives V = π(2.5)^2(7), which is the equation in choice D.",
+          "es": "Un diámetro de 5 pulgadas da un radio de 5 ÷ 2 = 2.5 pulgadas. Al usar V = πr^2h con altura 7 se obtiene V = π(2.5)^2(7), la ecuación de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q21": {
+      "inputHash": "acdf45a71e0175f5fbe52b91419300003cde40d7d9851c880f8609f154f1e9b4",
+      "explanation": {
+        "text": {
+          "en": "Divide Jupiter's distance by Mercury's: (4.8 × 10^8) ÷ (3.6 × 10^7) = (4.8/3.6) × 10 ≈ 13.3. Thus Jupiter is about 13.3 times farther away, choice C.",
+          "es": "Se divide la distancia de Júpiter entre la de Mercurio: (4.8 × 10^8) ÷ (3.6 × 10^7) = (4.8/3.6) × 10 ≈ 13.3. Así, Júpiter está unas 13.3 veces más lejos, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q22": {
+      "inputHash": "3ea202f8b0884dd6ff17dc4468bd074e25aa57d10f759824b7723d92eb8e8eb3",
+      "explanation": {
+        "text": {
+          "en": "Apply exponent rules: (5^-2)^5 × 5^4 = 5^-10 × 5^4 = 5^-6. A negative exponent means 5^-6 = 1/5^6, which is choice C.",
+          "es": "Se aplican las reglas de exponentes: (5^-2)^5 × 5^4 = 5^-10 × 5^4 = 5^-6. Un exponente negativo significa que 5^-6 = 1/5^6, que es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q23": {
+      "inputHash": "3e8657b76affbc2f6b1577370063f381ef78d7a076a082e09e75f1fa9ff2847e",
+      "explanation": {
+        "text": {
+          "en": "Function M's rate is (11 - 1) ÷ (2 - 0) = 5. Function P has rate 7 from the coefficient of x, and 7 - 5 = 2, so their rates differ by 2, choice A.",
+          "es": "La tasa de M es (11 - 1) ÷ (2 - 0) = 5. La tasa de P es 7, el coeficiente de x, y 7 - 5 = 2; por eso sus tasas difieren en 2, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q24": {
+      "inputHash": "8fee007ff44ee68f4da09bbf272a5c7264b2269e59ae25dfc197e3fdb7096904",
+      "explanation": {
+        "text": {
+          "en": "The plotted points generally rise from left to right and cluster around a straight-line trend. Therefore the number of customers increases with the number of days in a positive linear association, choice C.",
+          "es": "Los puntos generalmente suben de izquierda a derecha y se agrupan alrededor de una tendencia recta. Por lo tanto, los clientes aumentan con los días en una asociación lineal positiva, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q25": {
+      "inputHash": "243c13e82d7f1219dbef93231bcbf6b540f1d2eacecdabb41d92f2b342a55545",
+      "explanation": {
+        "text": {
+          "en": "Triangle angles sum to 180°, so (3x - 9) + 30 + 24 = 180. This simplifies to 3x + 45 = 180, then 3x = 135 and x = 45, choice C.",
+          "es": "Los ángulos de un triángulo suman 180°, así que (3x - 9) + 30 + 24 = 180. Esto se simplifica a 3x + 45 = 180, luego 3x = 135 y x = 45, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g8-mc-q26": {
+      "inputHash": "950ebd2e4249e2b825d82494aa9b8f9127f0feef2829b5c8500345f4c9927ae6",
+      "explanation": {
+        "text": {
+          "en": "From x = 4 to x = 11, the graph moves downward as x increases, so the function is decreasing. That portion is curved rather than a straight segment, so it is nonlinear, exactly as choice D states.",
+          "es": "De x = 4 a x = 11, la gráfica baja a medida que x aumenta, así que la función es decreciente. Ese tramo es curvo y no recto, por lo que es no lineal, exactamente como indica la opción D."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

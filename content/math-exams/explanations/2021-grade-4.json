@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2021-grade-4-mc-v1",
+  "questions": {
+    "nysed-2021-g4-mc-q1": {
+      "inputHash": "2a620c5cbff1625466cf58573288ed52c8a91fcfb215319a3041d1f3fc51e513",
+      "explanation": {
+        "text": {
+          "en": "Tatum walks 2/3 mile on each of 5 days, so multiply 5 × 2/3. Multiplying the whole number by the numerator gives 10/3 miles, choice B.",
+          "es": "Tatum camina 2/3 de milla cada uno de 5 días, así que se multiplica 5 × 2/3. Al multiplicar el entero por el numerador se obtienen 10/3 millas, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q2": {
+      "inputHash": "b0bd5b889ca3970c79ad32b5be345358fd376f782710eb284af745d679419bb9",
+      "explanation": {
+        "text": {
+          "en": "The multiples of 7 below 45 are 7, 14, 21, 28, 35, and 42. Of the choices, only 35 is both a multiple of 7 and less than 45, so choice B works.",
+          "es": "Los múltiplos de 7 menores que 45 son 7, 14, 21, 28, 35 y 42. Entre las opciones, solo 35 es múltiplo de 7 y menor que 45, así que funciona la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q3": {
+      "inputHash": "39b1c6595b1ccfe0f0b2dd24ea56be8a2d2e3e0bc656e1f8f7e2289180f8f5af",
+      "explanation": {
+        "text": {
+          "en": "Multiplying both the numerator and denominator of 2/3 by 4 gives 8/12. Therefore 2/3 = 8/12 is a true comparison, which is choice A.",
+          "es": "Al multiplicar el numerador y el denominador de 2/3 por 4 se obtiene 8/12. Por lo tanto, 2/3 = 8/12 es una comparación verdadera, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q4": {
+      "inputHash": "54bae27a592c1ade63e681097dbf3bf605c99e505ba2492fe565871e5fe16bd1",
+      "explanation": {
+        "text": {
+          "en": "The blue section seats 200 − 20 = 180 people, and the green section seats 2 × 180 = 360. Adding all three sections gives 200 + 180 + 360 = 740 people, choice D.",
+          "es": "La sección azul tiene 200 − 20 = 180 asientos y la verde tiene 2 × 180 = 360. Al sumar las tres secciones se obtiene 200 + 180 + 360 = 740 personas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q5": {
+      "inputHash": "c24f3badb49c780e83f32747ea58695c7eb43627bece304e9550368e0a898a42",
+      "explanation": {
+        "text": {
+          "en": "A line segment has exactly two endpoints and does not continue beyond either one. Figure A has a point at each end and no arrows, so it represents a line segment.",
+          "es": "Un segmento de recta tiene exactamente dos extremos y no continúa más allá de ninguno. La figura A tiene un punto en cada extremo y no tiene flechas, así que representa un segmento."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q6": {
+      "inputHash": "1e3f0ce2fbb889ecfa792199c85e2a0c9a192ee6f0cfccadc156ca83db710b48",
+      "explanation": {
+        "text": {
+          "en": "After keeping 10 oranges, the family has 126 − 10 oranges to share. Dividing that remainder equally among 4 families gives (126 − 10) ÷ 4 = n, choice B, and n = 29.",
+          "es": "Después de guardar 10 naranjas, quedan 126 − 10 para repartir. Al dividir ese resto por igual entre 4 familias se obtiene (126 − 10) ÷ 4 = n, la opción B, y n = 29."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q7": {
+      "inputHash": "99cb434dfae2eafdeb1ef70f2ac932902d98f81f355eaf9786a35d2368d4a122",
+      "explanation": {
+        "text": {
+          "en": "Simplifying 3/12 by dividing the numerator and denominator by 3 gives 1/4. Model B divides the whole into 4 equal parts and shades 1, so its shaded area is equivalent to 3/12.",
+          "es": "Al simplificar 3/12 dividiendo el numerador y el denominador entre 3 se obtiene 1/4. El modelo B divide el entero en 4 partes iguales y sombrea 1, así que su área sombreada equivale a 3/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q8": {
+      "inputHash": "3b6fadc1ff67591fdfb8732fc534c83c23faf50b62c186c063f642bdc6525789",
+      "explanation": {
+        "text": {
+          "en": "Angle EFG is made of adjacent angles EFH and HFG. Since HFG is 34°, subtract to find EFH: 106° − 34° = 72°, choice C.",
+          "es": "El ángulo EFG está formado por los ángulos adyacentes EFH y HFG. Como HFG mide 34°, se resta para hallar EFH: 106° − 34° = 72°, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q9": {
+      "inputHash": "303ff978b66e46896895d9f60f960e7e198f600115ccad5dcb6c0e534464a703",
+      "explanation": {
+        "text": {
+          "en": "Write each fraction in fourths: 1/4 stays 1/4, 1/2 = 2/4, and 3/4 stays 3/4. Thus 1/4 < 1/2 < 3/4, the order shown in choice B.",
+          "es": "Se escriben todas las fracciones en cuartos: 1/4 queda igual, 1/2 = 2/4 y 3/4 queda igual. Así, 1/4 < 1/2 < 3/4, el orden de la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q10": {
+      "inputHash": "6944e6d0ec05853ba21329eb4b7a2f5d6d0e0dc47b38344ae54da09360d5b2fe",
+      "explanation": {
+        "text": {
+          "en": "To subtract 4 1/3 − 1 2/3, regroup 4 1/3 as 3 4/3. Then 3 4/3 − 1 2/3 = 2 2/3 cups, which is choice A.",
+          "es": "Para restar 4 1/3 − 1 2/3, se reagrupa 4 1/3 como 3 4/3. Luego 3 4/3 − 1 2/3 = 2 2/3 tazas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q11": {
+      "inputHash": "f1b70f684e93dacc2a3272c3705f5444a2831f5b930ab62959ee1deeea5e3a0c",
+      "explanation": {
+        "text": {
+          "en": "Use place-value products: 2,800 × 7 = 19,600 and 16 × 7 = 112. Adding them gives 19,600 + 112 = 19,712, choice D.",
+          "es": "Se usan productos por valor posicional: 2,800 × 7 = 19,600 y 16 × 7 = 112. Al sumarlos se obtiene 19,600 + 112 = 19,712, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q12": {
+      "inputHash": "e4f82da476ce5b3ab2ecc75358aa209f1130ddeb4a0f5f306c2e89e0c3e68d36",
+      "explanation": {
+        "text": {
+          "en": "Four goes into 23 five times with 3 left, bring down 1 to make 31, then seven times with 3 left, and bring down 4 to make 34. The quotient is 578 remainder 2 because 4 × 578 + 2 = 2,314, choice D.",
+          "es": "El 4 cabe 5 veces en 23 y sobran 3; al bajar el 1 se forma 31, cabe 7 veces y sobran 3; al bajar el 4 se forma 34. El cociente es 578 con residuo 2 porque 4 × 578 + 2 = 2,314, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q13": {
+      "inputHash": "89b5ce967cf9672e1e39fe32a5e79318cc75046a0edb2431980e1122045b8a6a",
+      "explanation": {
+        "text": {
+          "en": "The exact total is 5 × 36 + 6 × 32 = 180 + 192 = 372 folders. Of the choices, 380 is only 8 away and is the closest estimate, so choice B is correct.",
+          "es": "El total exacto es 5 × 36 + 6 × 32 = 180 + 192 = 372 carpetas. Entre las opciones, 380 está a solo 8 y es la estimación más cercana, así que la opción B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q14": {
+      "inputHash": "e94a518acba877285c6982e7868f62f2d90b6d054614419b38e6da436eedc860",
+      "explanation": {
+        "text": {
+          "en": "Nine times as much as 400 means multiply 400 by 9. Since 4 × 9 = 36, 400 × 9 = 3,600, which is choice C.",
+          "es": "Nueve veces 400 significa multiplicar 400 por 9. Como 4 × 9 = 36, entonces 400 × 9 = 3,600, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q15": {
+      "inputHash": "44dec188836e15beb956036619293b8b2502a1868aa5b5edaac77f5ae0b81a1c",
+      "explanation": {
+        "text": {
+          "en": "Numbers from 1,450 through 1,549 round to 1,500 to the nearest hundred. Both 1,457 and 1,547 lie in that interval, so choice C is correct.",
+          "es": "Los números de 1,450 a 1,549 se redondean a 1,500 a la centena más cercana. Tanto 1,457 como 1,547 están en ese intervalo, así que la opción C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q16": {
+      "inputHash": "fcc364d910083378b8823b4a729176beaf049ad2aeed16102c035457e389d942",
+      "explanation": {
+        "text": {
+          "en": "Fencing surrounds all four sides, so find the perimeter rather than the area. The perimeter is 2 × (55 + 75) = 2 × 130 = 260 feet, choice B.",
+          "es": "La cerca rodea los cuatro lados, así que se halla el perímetro y no el área. El perímetro es 2 × (55 + 75) = 2 × 130 = 260 pies, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q17": {
+      "inputHash": "e3d7273635a71aba288dbff5adff468f5d4fc2dd3294ee8d210a5bf25ef6e486",
+      "explanation": {
+        "text": {
+          "en": "The least recorded growth is 1/4 inch and the greatest is 1 inch. Their difference is 1 − 1/4 = 4/4 − 1/4 = 3/4 inch, choice C.",
+          "es": "El menor crecimiento registrado es 1/4 de pulgada y el mayor es 1 pulgada. La diferencia es 1 − 1/4 = 4/4 − 1/4 = 3/4 de pulgada, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q18": {
+      "inputHash": "605cf41c3ba8860c1ef5363b557b0e8ff663d6c0f223ee027aa0823795f1fa40",
+      "explanation": {
+        "text": {
+          "en": "In 29,461, the digit 9 is in the thousands place and has value 9,000. A value one-tenth as large is 900, so the other 9 must be in the hundreds place; 53,982, choice B, has that value.",
+          "es": "En 29,461, el dígito 9 está en los millares y vale 9,000. Un valor diez veces menor es 900, así que el otro 9 debe estar en las centenas; 53,982, la opción B, tiene ese valor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q19": {
+      "inputHash": "69bd8894fd3d04b59574092eed80470217c563b1cf96d9d20be9ad29d78c2beb",
+      "explanation": {
+        "text": {
+          "en": "Each term in 2, 8, 32, 128 is the previous term multiplied by 4. Choice B follows the same rule because 1 × 4 = 4, 4 × 4 = 16, and 16 × 4 = 64.",
+          "es": "Cada término de 2, 8, 32, 128 es el anterior multiplicado por 4. La opción B sigue la misma regla porque 1 × 4 = 4, 4 × 4 = 16 y 16 × 4 = 64."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q20": {
+      "inputHash": "1e466b5e8b8d7f45d669a7a39e3c17a71fc868673ff3fe3000c807cd8e8849b3",
+      "explanation": {
+        "text": {
+          "en": "Each model has 6 equal parts and shades 3, 2, and 5 parts, respectively. Adding like denominators gives 3/6 + 2/6 + 5/6 = 10/6, which is choice D.",
+          "es": "Cada modelo tiene 6 partes iguales y sombrea 3, 2 y 5 partes, respectivamente. Al sumar fracciones con el mismo denominador se obtiene 3/6 + 2/6 + 5/6 = 10/6, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q21": {
+      "inputHash": "9d8eae501f7734575f13a6bbd515d5216a31fb496e541a805dcbc4e30a0a25a4",
+      "explanation": {
+        "text": {
+          "en": "A vertical line through the center swaps the matching left and right arrows, and a horizontal line through the center matches the top and bottom halves. No diagonal reflection works, so the greatest number is 2 lines of symmetry, choice C.",
+          "es": "Una línea vertical por el centro intercambia las flechas iguales de izquierda y derecha, y una línea horizontal hace coincidir las mitades superior e inferior. Ninguna diagonal funciona, así que hay como máximo 2 ejes de simetría, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q22": {
+      "inputHash": "75744c347bedf79ca2b30a6e9809994911dca2d8eb99e50b56345c1b914b590d",
+      "explanation": {
+        "text": {
+          "en": "A full circle measures 360°. One three-hundred-sixtieth of it is 360° × 1/360 = 1°, so the angle measures 1 degree, choice A.",
+          "es": "Un círculo completo mide 360°. Una trescientas sesentava parte es 360° × 1/360 = 1°, así que el ángulo mide 1 grado, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g4-mc-q23": {
+      "inputHash": "edf4eb96316572285022c1358a8159dcf2de6ed0606feaca481d454011486525",
+      "explanation": {
+        "text": {
+          "en": "The model shows 4 equal groups of 6, and 4 × 6 = 24. Therefore 24 is 4 times as many as 6, exactly the comparison in choice B.",
+          "es": "El modelo muestra 4 grupos iguales de 6, y 4 × 6 = 24. Por lo tanto, 24 es 4 veces 6, exactamente la comparación de la opción B."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2017-grade-7-mc-v1",
+  "questions": {
+    "nysed-2017-g7-mc-q1": {
+      "inputHash": "fdf9ead47f787209df37705fa066d085aa15c7fa3ac74b92e979e896000185a0",
+      "explanation": {
+        "text": {
+          "en": "Point P is −4. Moving 6 1/2 units to the right gives −4 + 6 1/2 = 2 1/2, and |2 1/2 − (−4)| = 6 1/2. That is point Q in choice C.",
+          "es": "El punto P es −4. Al avanzar 6 1/2 unidades a la derecha se obtiene −4 + 6 1/2 = 2 1/2, y |2 1/2 − (−4)| = 6 1/2. Ese es el punto Q de la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q2": {
+      "inputHash": "b69891774f0f8aa27acc37ba53c26d1279eafcd34b49fce1f1cfebbf2b893e5c",
+      "explanation": {
+        "text": {
+          "en": "If x shirts cost $12.25 each, the shirts cost 12.25x. Adding the fixed $3.99 shipping charge and setting the total to $77.49 gives 12.25x + 3.99 = 77.49.",
+          "es": "Si x camisas cuestan $12.25 cada una, las camisas cuestan 12.25x. Al agregar el cargo fijo de envío de $3.99 e igualar el total a $77.49 se obtiene 12.25x + 3.99 = 77.49."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q3": {
+      "inputHash": "08702ef6910f8dc829198fa2afbc665cd8793a0302b28297f19609b3fc5f14af",
+      "explanation": {
+        "text": {
+          "en": "In table D, every ratio y/x is the same: 3/2 = 6/4 = 12/8 = 18/12 = 1.5. A constant ratio means the relationship is proportional.",
+          "es": "En la tabla D, todas las razones y/x son iguales: 3/2 = 6/4 = 12/8 = 18/12 = 1.5. Una razón constante significa que la relación es proporcional."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q4": {
+      "inputHash": "c3d029fca7901664039af9f969fc95c22123c4764cd52cc67ae7eda7b2f958fb",
+      "explanation": {
+        "text": {
+          "en": "A 15% increase gives 4,500(1.15) = 5,175. The following 4% decrease gives 5,175(0.96) = 4,968, so the final value is $4,968.",
+          "es": "Un aumento del 15% da 4,500(1.15) = 5,175. La disminución posterior del 4% da 5,175(0.96) = 4,968, así que el valor final es $4,968."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q9": {
+      "inputHash": "346796134d1cf8263a984c5d512bdbdcacee37992d58a235bfb81b99489ed57f",
+      "explanation": {
+        "text": {
+          "en": "Each side of the square is s + 3, so its perimeter is four equal sides: 4(s + 3). The repeated sum (s + 3) + (s + 3) + (s + 3) + (s + 3) is equivalent.",
+          "es": "Cada lado del cuadrado mide s + 3, así que su perímetro son cuatro lados iguales: 4(s + 3). La suma repetida (s + 3) + (s + 3) + (s + 3) + (s + 3) es equivalente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q10": {
+      "inputHash": "9d6515855d7472f422e504d7c0f9580be71493ef74a96b5ea6139a75365d4f8c",
+      "explanation": {
+        "text": {
+          "en": "Subtracting 84.7 is the same as adding its opposite, −84.7. Therefore 59.2 − 84.7 = 59.2 + (−84.7), which is choice D.",
+          "es": "Restar 84.7 equivale a sumar su opuesto, −84.7. Por tanto, 59.2 − 84.7 = 59.2 + (−84.7), que es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q11": {
+      "inputHash": "1a01f8278f758a349c2363b96646c950e9ae881b998fc64831659f71cc2c2080",
+      "explanation": {
+        "text": {
+          "en": "The three people each contribute x dollars, for 3x total, and $23 is already available. “At least $80” means the inequality 3x + 23 ≥ 80.",
+          "es": "Las tres personas aportan x dólares cada una, para un total de 3x, y ya hay $23. “Por lo menos $80” se representa con la desigualdad 3x + 23 ≥ 80."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q12": {
+      "inputHash": "b5d20e4d655f142991c034ac7c4d3cf55c9b990c8ae0626cc072906d4ab4c3ac",
+      "explanation": {
+        "text": {
+          "en": "In one hour, the morning rate is (3/4)(60) = 45 pints and the afternoon rate is (2/3)(60) = 40 pints. The difference is 45 − 40 = 5 pints per hour.",
+          "es": "En una hora, la tasa de la mañana es (3/4)(60) = 45 pintas y la de la tarde es (2/3)(60) = 40 pintas. La diferencia es 45 − 40 = 5 pintas por hora."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q13": {
+      "inputHash": "97c913c25a3f95027e148cf2ad0f94cc63be83033dd98fc42fd9dc1c69a831b0",
+      "explanation": {
+        "text": {
+          "en": "Factoring 4 from 16x − 16 gives 4(4x − 4), because 4·4x = 16x and 4·(−4) = −16. Thus choice A is equivalent.",
+          "es": "Al factorizar 4 de 16x − 16 se obtiene 4(4x − 4), porque 4·4x = 16x y 4·(−4) = −16. Por tanto, la opción A es equivalente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q14": {
+      "inputHash": "719c80cfd316691c438d679254074d2c40a671982ff14a3f2cc4342115a902d2",
+      "explanation": {
+        "text": {
+          "en": "Long division gives 43/12 = 3.583333…, where only the final digit 3 repeats. Therefore the correct notation is 3.58 with a bar over the last 3, as in choice B.",
+          "es": "La división larga da 43/12 = 3.583333…, donde solo se repite el último dígito 3. Por tanto, la notación correcta es 3.58 con una barra sobre el último 3, como en la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q15": {
+      "inputHash": "186cd5350ddb11960b112636252b46638285783bec6245e76ebbcc437d8fb551",
+      "explanation": {
+        "text": {
+          "en": "Each set contains 12 forks. Since 128 ÷ 12 = 10 2/3, ten sets are not enough, so the restaurant must buy the next whole number, 11 sets.",
+          "es": "Cada juego contiene 12 tenedores. Como 128 ÷ 12 = 10 2/3, diez juegos no son suficientes; por tanto, el restaurante debe comprar el siguiente número entero, 11 juegos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q16": {
+      "inputHash": "a5a1c5ce6548a319c5645e39ad0111a8689693e3cb52fa1ece0b25f78f0d5dde",
+      "explanation": {
+        "text": {
+          "en": "For −3x to be positive, x must be negative: a negative number times a negative number is positive. Thus the condition is x < 0.",
+          "es": "Para que −3x sea positivo, x debe ser negativo: el producto de dos números negativos es positivo. Por tanto, la condición es x < 0."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q19": {
+      "inputHash": "e17c42ec7f1c3a209c8018664cb9cb2ddf7599f5e1d36b1983d8a4aa54d7641c",
+      "explanation": {
+        "text": {
+          "en": "The scale is 1 inch for 35 miles. A map distance of 2.5 inches represents 2.5 × 35 = 87.5 miles.",
+          "es": "La escala es 1 pulgada por 35 millas. Una distancia de 2.5 pulgadas en el mapa representa 2.5 × 35 = 87.5 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q20": {
+      "inputHash": "14097a02ca8f64b8db65b31696d1cfe926b9fd79f9b2e6f4c305ba2bcd3f36b1",
+      "explanation": {
+        "text": {
+          "en": "Dividing 7 by 8 gives 7/8 = 0.875 exactly. The decimal stops after three digits, so it is a terminating decimal.",
+          "es": "Al dividir 7 entre 8 se obtiene exactamente 7/8 = 0.875. El decimal termina después de tres cifras, así que es un decimal finito."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q21": {
+      "inputHash": "fbf5af3ec823183612eb8ea1ad5bff488e9fab2bff0605d681da1621545127bd",
+      "explanation": {
+        "text": {
+          "en": "First combine inside: −(3/2)x + 6x + 1 = (9/2)x + 1. Multiplying by −1/2 and then subtracting 3x gives −9/4x − 1/2 − 3x = −21/4x − 1/2 = −5 1/4x − 1/2.",
+          "es": "Primero combinamos dentro: −(3/2)x + 6x + 1 = (9/2)x + 1. Al multiplicar por −1/2 y luego restar 3x queda −9/4x − 1/2 − 3x = −21/4x − 1/2 = −5 1/4x − 1/2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q22": {
+      "inputHash": "18e2bc0e89ef9a0c7dfba157a85594ba1928036e0966d4381ce45952cabc3436",
+      "explanation": {
+        "text": {
+          "en": "Compare the probabilities: 2/3 ≈ 0.667, 4/5 = 0.8, 3/8 = 0.375, and 1/2 = 0.5. The smallest is 3/8, so the Bulldogs are least likely to win.",
+          "es": "Comparamos las probabilidades: 2/3 ≈ 0.667, 4/5 = 0.8, 3/8 = 0.375 y 1/2 = 0.5. La menor es 3/8, así que los Bulldogs tienen la menor probabilidad de ganar."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q25": {
+      "inputHash": "e6517fc352a659f0d8873c6b58855ad01cc3969b7691d150705e93c8bb31d04c",
+      "explanation": {
+        "text": {
+          "en": "The first change is +278 and the second is −278. Their sum is 278 + (−278) = 0, so the quantity returns to its original value.",
+          "es": "El primer cambio es +278 y el segundo es −278. Su suma es 278 + (−278) = 0, así que la cantidad regresa a su valor original."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q26": {
+      "inputHash": "9148db56c1dfec1e7f8b712d61b11b5bb6de1b6efda4196902f6bdae4b0be389",
+      "explanation": {
+        "text": {
+          "en": "The company means are 122/5 = 24.4, 99/5 = 19.8, 75/5 = 15, and 95/5 = 19 minutes. Company 1 has the greatest mean commute time, 24.4 minutes.",
+          "es": "Los promedios de las compañías son 122/5 = 24.4, 99/5 = 19.8, 75/5 = 15 y 95/5 = 19 minutos. La compañía 1 tiene el mayor promedio, 24.4 minutos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q27": {
+      "inputHash": "e64dca31f9b3486a9cf99a039f0aa6718c1b65b40187edabaa043b84a6fa99c3",
+      "explanation": {
+        "text": {
+          "en": "The scale is 2 3/4 feet per centimeter, and the drawing is 4 1/2 centimeters long. Thus the actual length is (11/4)(9/2) = 99/8 = 12 3/8 feet.",
+          "es": "La escala es 2 3/4 pies por centímetro y el dibujo mide 4 1/2 centímetros. Por tanto, la longitud real es (11/4)(9/2) = 99/8 = 12 3/8 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q28": {
+      "inputHash": "b1bf6f3096b6965e98c3d5dd3d8e38c464b8d91f789ef805d25662854114608e",
+      "explanation": {
+        "text": {
+          "en": "There are 8 aisle seats among 12 + 8 = 20 seats total. The aisle-seat fraction is 8/20 = 2/5.",
+          "es": "Hay 8 asientos de pasillo entre 12 + 8 = 20 asientos en total. La fracción de asientos de pasillo es 8/20 = 2/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q32": {
+      "inputHash": "79d55463fcae6cf69430a7a1db6b0c3641795e7266a4d9539fcf5465e6f24f58",
+      "explanation": {
+        "text": {
+          "en": "The drawing’s triangle has base 9 − 2 = 7 grid units and height 7 − 2 = 5. At 2 meters per unit, the actual base is 14 and height is 10, so area = 1/2(14)(10) = 70 square meters.",
+          "es": "El triángulo del dibujo tiene base 9 − 2 = 7 unidades y altura 7 − 2 = 5. A 2 metros por unidad, la base real es 14 y la altura 10, así que el área = 1/2(14)(10) = 70 metros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q33": {
+      "inputHash": "341c6e20944686ad4d6d70258d74f244ceb6c47a73f3adac3084e745d7d9822e",
+      "explanation": {
+        "text": {
+          "en": "Convert the quantities: 1 1/8 = 9/8 gallons and 13 1/2 = 27/2 miles. The rate is (27/2) ÷ (9/8) = (27/2)(8/9) = 12 miles per gallon.",
+          "es": "Convertimos las cantidades: 1 1/8 = 9/8 galones y 13 1/2 = 27/2 millas. La tasa es (27/2) ÷ (9/8) = (27/2)(8/9) = 12 millas por galón."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q34": {
+      "inputHash": "90b2ff56f47ac097f7afd1d30f357fc4e2760f368b80643b9942279661e5314f",
+      "explanation": {
+        "text": {
+          "en": "Friday’s median is 215, while Saturday’s is 205. Both interquartile ranges are 20: 220 − 200 = 20 and 210 − 190 = 20. Therefore only the statement in choice D is true.",
+          "es": "La mediana del viernes es 215 y la del sábado es 205. Ambos rangos intercuartílicos son 20: 220 − 200 = 20 y 210 − 190 = 20. Por tanto, solo la afirmación de la opción D es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q35": {
+      "inputHash": "2116d0ea19eed6f5e28993edebad0d1aa7c77ecbe0ef144133b6b23d0411035f",
+      "explanation": {
+        "text": {
+          "en": "Distribute −3 and combine like terms: (7/2)h − 3(5h − 1/2) = (7/2)h − 15h + 3/2 = −23/2h + 3/2.",
+          "es": "Distribuimos −3 y combinamos términos semejantes: (7/2)h − 3(5h − 1/2) = (7/2)h − 15h + 3/2 = −23/2h + 3/2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q36": {
+      "inputHash": "66ceebebe3cf00d270ba62324114a0414e757ec96531f2e7c0ffe0860b9a1013",
+      "explanation": {
+        "text": {
+          "en": "After a 20% decrease, 75 becomes 75(0.80) = 60. Increasing 60 by 10% gives 60(1.10) = 66, a net decrease of 9; 9/75 = 0.12, or 12%.",
+          "es": "Después de disminuir un 20%, 75 se convierte en 75(0.80) = 60. Aumentar 60 un 10% da 60(1.10) = 66, una disminución neta de 9; 9/75 = 0.12, o 12%."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q37": {
+      "inputHash": "fc6afdab74f8ddddd69e24232570885273bba125c2554fdb2a9b181e23e0b5da",
+      "explanation": {
+        "text": {
+          "en": "Selecting every fifth seventh-grade student is a systematic sample spread through the full grade-level list. Because the interval is fixed and not based on opinions or convenience, it is the best unbiased method shown.",
+          "es": "Seleccionar a cada quinto estudiante de séptimo grado crea una muestra sistemática distribuida por toda la lista del grado. Como el intervalo es fijo y no depende de opiniones ni conveniencia, es el mejor método no sesgado mostrado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q38": {
+      "inputHash": "4ce3590d52fbf72b02af17b963ac628b5bdc608aab4acc7cc8a7f47fc0228fba",
+      "explanation": {
+        "text": {
+          "en": "An increase of 21.5% adds 0.215n to the original amount n. Therefore the new amount can be written n + 0.215n, equivalently 1.215n.",
+          "es": "Un aumento del 21.5% agrega 0.215n a la cantidad original n. Por tanto, la nueva cantidad se escribe n + 0.215n, o de forma equivalente, 1.215n."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q39": {
+      "inputHash": "e388e4d6f9e017f06645e5f6447a131994c101b420a271ff3da576dfdbdf8180",
+      "explanation": {
+        "text": {
+          "en": "Circumference is C = 2πr. With radius 5, C = 2π(5) = 10π ≈ 31.4 units.",
+          "es": "La circunferencia es C = 2πr. Con radio 5, C = 2π(5) = 10π ≈ 31.4 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q40": {
+      "inputHash": "93c2246e57bab51f8dbbcba131d71c447d2f21477c3608230c191d42384a0373",
+      "explanation": {
+        "text": {
+          "en": "Combine each variable’s like terms: (5.5 + 4.3)x = 9.8x, (6.2 − 5.1)y = 1.1y, and (8.3 + 1.6)z = 9.9z. The result is 9.8x + 1.1y + 9.9z.",
+          "es": "Combinamos los términos semejantes de cada variable: (5.5 + 4.3)x = 9.8x, (6.2 − 5.1)y = 1.1y y (8.3 + 1.6)z = 9.9z. El resultado es 9.8x + 1.1y + 9.9z."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q41": {
+      "inputHash": "dd9d1f12fc377d75bb0982d59e6d90139731d0b141c3d7d9a1797269e3c44f37",
+      "explanation": {
+        "text": {
+          "en": "The plan costs $125 + 6($72.50) = $560. That is $60 above the $500 budget, and 60/500 = 0.12, so the plan is 12% over budget.",
+          "es": "El plan cuesta $125 + 6($72.50) = $560. Son $60 más que el presupuesto de $500, y 60/500 = 0.12, así que el plan supera el presupuesto en un 12%."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q42": {
+      "inputHash": "dfeb9a0364f8c31a22e6f3ad8ed7ce5a95940a68c2021b598f981b6ceceafa5f",
+      "explanation": {
+        "text": {
+          "en": "Solve 50 + 10k > 300: subtract 50 to get 10k > 250, then divide by 10 to get k > 25. Graph B has an open circle at 25 and shades to the right.",
+          "es": "Resolvemos 50 + 10k > 300: al restar 50 queda 10k > 250 y al dividir entre 10 queda k > 25. La gráfica B tiene un círculo abierto en 25 y se sombrea hacia la derecha."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q43": {
+      "inputHash": "6d3011ed92b2edec761f363f55105de0c196f87049a64400a3bd434917023d1d",
+      "explanation": {
+        "text": {
+          "en": "Point W represents 1 pound costing $2.50. The unit rate is cost ÷ weight = 2.50 ÷ 1 = $2.50 per pound.",
+          "es": "El punto W representa 1 libra que cuesta $2.50. La tasa unitaria es costo ÷ peso = 2.50 ÷ 1 = $2.50 por libra."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q44": {
+      "inputHash": "890d3e69c1d5ea36025acfd5b0451809e6e70bab3913687abe9e387005956413",
+      "explanation": {
+        "text": {
+          "en": "A 25% discount leaves 100% − 25% = 75% of the original price p. Thus the sale price is 0.75p; 0.25p would be only the discount amount.",
+          "es": "Un descuento del 25% deja 100% − 25% = 75% del precio original p. Por tanto, el precio de oferta es 0.75p; 0.25p sería solo el monto del descuento."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q45": {
+      "inputHash": "1844e9167a6d67e34d3219de06997fbdd8a42e20a465cc77db0fe4ebcd429b2c",
+      "explanation": {
+        "text": {
+          "en": "A diameter of 26 gives radius 13. The circle’s area is πr² = π(13²) = 169π ≈ 530.93 square units.",
+          "es": "Un diámetro de 26 da un radio de 13. El área del círculo es πr² = π(13²) = 169π ≈ 530.93 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q46": {
+      "inputHash": "5263f8fa463da7f2781677181c648078d8b83e65e7412ea214576d07c8cd4ba7",
+      "explanation": {
+        "text": {
+          "en": "The width is 6 2/3 = 20/3, and the length is twice that, 40/3. The perimeter is 2(20/3 + 40/3) = 2(60/3) = 40 units.",
+          "es": "El ancho es 6 2/3 = 20/3 y el largo es el doble, 40/3. El perímetro es 2(20/3 + 40/3) = 2(60/3) = 40 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q47": {
+      "inputHash": "3b6014e4a294f06e533bf01210e3bd0fa7af664bc29f6b2ce48f6fe3cfd10e96",
+      "explanation": {
+        "text": {
+          "en": "First subtract the 3.5% fee: $16 − 0.035($16) = $15.44. The next fee is 0.0425($15.44) = $0.6562, leaving $15.44 − $0.6562 = $14.7838.",
+          "es": "Primero restamos la comisión del 3.5%: $16 − 0.035($16) = $15.44. La siguiente comisión es 0.0425($15.44) = $0.6562, por lo que quedan $15.44 − $0.6562 = $14.7838."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q50": {
+      "inputHash": "48fe06d003177e52d601f34d6e62b2bb9807653fe55b5bb890d905d4edfa5b7b",
+      "explanation": {
+        "text": {
+          "en": "Compute from left to right: (−8/9) ÷ (−2/3) = (−8/9)(−3/2) = 4/3. Then (4/3)(−4 1/2) = (4/3)(−9/2) = −6.",
+          "es": "Calculamos de izquierda a derecha: (−8/9) ÷ (−2/3) = (−8/9)(−3/2) = 4/3. Luego, (4/3)(−4 1/2) = (4/3)(−9/2) = −6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g7-mc-q51": {
+      "inputHash": "be10bd247b4b1016a926e202dd81a69b81b7a258cb70de9ab90d49ba60b01e01",
+      "explanation": {
+        "text": {
+          "en": "Three of the spinner’s 12 equal sections are labeled 5, so P(5) = 3/12 = 1/4. In 150 spins, the expected count is 150(1/4) = 37.5, which is about 40.",
+          "es": "Tres de las 12 secciones iguales de la ruleta tienen el número 5, así que P(5) = 3/12 = 1/4. En 150 giros, la cantidad esperada es 150(1/4) = 37.5, aproximadamente 40."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2024-grade-6-mc-v1",
+  "questions": {
+    "nysed-2024-g6-mc-q2": {
+      "inputHash": "cf3c0cba3336fb3a3468244d1d9b826654f01b5e848b34b9917bdc21c0970e01",
+      "explanation": {
+        "text": {
+          "en": "The product of 2 and y is 2y. Adding 5 gives 2y + 5, so choice B represents 5 more than that product.",
+          "es": "El producto de 2 e y es 2y. Al sumar 5 se obtiene 2y + 5, así que la opción B representa 5 más que ese producto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q3": {
+      "inputHash": "0511a2cc7f05369d6536f7579564aa4ce5f0e4b250d313f23c969005f8741d5c",
+      "explanation": {
+        "text": {
+          "en": "Dividing both sides of 3b > 12 by 3 gives b > 4. Of the choices, only 5 is greater than 4, so choice D makes the inequality true.",
+          "es": "Al dividir ambos lados de 3b > 12 entre 3 se obtiene b > 4. De las opciones, solo 5 es mayor que 4, así que la opción D hace verdadera la desigualdad."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q4": {
+      "inputHash": "0068b30520c93b206f945d3ba2236c725fe099553738e2ca859208a405833830",
+      "explanation": {
+        "text": {
+          "en": "The points have the same x-coordinate, so their distance is the vertical change between y = -8 and y = 4. That distance is |4 - (-8)| = 12 units, choice C.",
+          "es": "Los puntos tienen la misma coordenada x, así que su distancia es el cambio vertical entre y = -8 e y = 4. Esa distancia es |4 - (-8)| = 12 unidades, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q11": {
+      "inputHash": "bb30acb6f47b96943ff617c7b35d086e5544c8f5806c7b8770b9d7e69aa570e1",
+      "explanation": {
+        "text": {
+          "en": "The symbol ≥ includes -3, so the graph needs a closed point at -3. Values greater than -3 lie to the right, which is the graph in choice B.",
+          "es": "El símbolo ≥ incluye -3, por lo que la gráfica necesita un punto cerrado en -3. Los valores mayores que -3 están a la derecha, como muestra la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q14": {
+      "inputHash": "ad630dd9ab89a2caeb6956243c1ce54d5ec1a2f1f555ad60df5bd5cc17fb234a",
+      "explanation": {
+        "text": {
+          "en": "Evaluate the exponents first: 8² = 64 and 2³ = 8. Then perform division and multiplication from left to right: 64 ÷ 4 × 8 = 16 × 8 = 128, choice D.",
+          "es": "Primero se evalúan los exponentes: 8² = 64 y 2³ = 8. Luego se divide y multiplica de izquierda a derecha: 64 ÷ 4 × 8 = 16 × 8 = 128, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q15": {
+      "inputHash": "6e972743b8b522bdb02a31c364c896c1da887cd1af42658b5405ce0e94f87bbb",
+      "explanation": {
+        "text": {
+          "en": "The number of 1/8-pound bags is 1 1/4 ÷ 1/8. Since 1 1/4 = 10/8, (10/8) ÷ (1/8) = 10, so Ben fills 10 bags, choice D.",
+          "es": "La cantidad de bolsas de 1/8 de libra es 1 1/4 ÷ 1/8. Como 1 1/4 = 10/8, (10/8) ÷ (1/8) = 10, así que Ben llena 10 bolsas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q18": {
+      "inputHash": "5ff4ee8d53db2d7cdbe57b8ec12279f0ad6f31cc9b1c0c81263cd58f89c73a0c",
+      "explanation": {
+        "text": {
+          "en": "The opposite of a number is found by changing its sign, or multiplying it by -1. Therefore the opposite of -2 1/2 is -(-2 1/2) = 2 1/2, which is choice B.",
+          "es": "El opuesto de un número se obtiene cambiando su signo, o multiplicándolo por -1. Por eso, el opuesto de -2 1/2 es -(-2 1/2) = 2 1/2, que es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q20": {
+      "inputHash": "2712c28efcec50956a76569c0c7688b126f08846d8da89a77f04ae81036ff8ee",
+      "explanation": {
+        "text": {
+          "en": "A cube with side length 2 1/2 inches has volume (2 1/2)³. Since (5/2)³ = 125/8 = 15 5/8, the volume is 15 5/8 cubic inches, choice C.",
+          "es": "Un cubo con lado de 2 1/2 pulgadas tiene volumen (2 1/2)³. Como (5/2)³ = 125/8 = 15 5/8, el volumen es 15 5/8 pulgadas cúbicas, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q22": {
+      "inputHash": "bd5bfbb70831d7ca25a990122f84a96539800cbcb2974216ac97bccf9d25666f",
+      "explanation": {
+        "text": {
+          "en": "Three times Tammy's s stamps is 3s. Jacob has 4 fewer than that amount, so subtracting 4 gives 3s - 4, choice B.",
+          "es": "Tres veces las s estampillas de Tammy es 3s. Jacob tiene 4 menos que esa cantidad, por lo que al restar 4 se obtiene 3s - 4, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q23": {
+      "inputHash": "77742a358666787d46df57c818cfc4ba606744e546cbd13c48ccdf4a0313111e",
+      "explanation": {
+        "text": {
+          "en": "One gallon equals 8 pints. Multiplying 6 gallons by 8 pints per gallon gives 6 × 8 = 48 pints, choice D.",
+          "es": "Un galón equivale a 8 pintas. Al multiplicar 6 galones por 8 pintas por galón se obtiene 6 × 8 = 48 pintas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q26": {
+      "inputHash": "a00ebc7c38ef15170a5f4bb6f88d0dea84f9de8bae01bec6a13379aaee50e243",
+      "explanation": {
+        "text": {
+          "en": "Reflecting a point over the x-axis keeps its x-coordinate and changes the sign of its y-coordinate. Thus (-4, 6) becomes (-4, -6), choice B.",
+          "es": "Al reflejar sobre el eje x, (-4, 6) se convierte en (-4, -6) porque la coordenada x se conserva y la coordenada y cambia de signo. Por eso, corresponde a la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q28": {
+      "inputHash": "d95e28e63a3b221bd0ba59a773ea2a6ad4d05867ddc0f4168082ea54c8a62562",
+      "explanation": {
+        "text": {
+          "en": "Use the trapezoid area formula with bases 10 and 16 and height 15: A = 1/2(10 + 16)(15). This equals 1/2 × 26 × 15 = 195 square centimeters, choice C.",
+          "es": "Se usa la fórmula del área del trapecio con bases 10 y 16 y altura 15: A = 1/2(10 + 16)(15). Esto da 1/2 × 26 × 15 = 195 centímetros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q29": {
+      "inputHash": "12c45e3458482ba34329fef55b8c5205a24f53f00842661f5675adb94a719216",
+      "explanation": {
+        "text": {
+          "en": "Both numbers are negative, so both lie left of 0. Also -9/20 = -0.45 and -21/24 = -0.875; because -0.45 is greater, -9/20 lies to the right of -21/24, as stated in choice B.",
+          "es": "Ambos números son negativos, así que están a la izquierda de 0. Además, -9/20 = -0.45 y -21/24 = -0.875; como -0.45 es mayor, -9/20 está a la derecha de -21/24, como indica la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q31": {
+      "inputHash": "951b699ab18e206110f597985509fa181870489f5776cfba2a48f2c6333a76a9",
+      "explanation": {
+        "text": {
+          "en": "To find the unit rate, divide the 104 calories by 8 ounces. Since 104 ÷ 8 = 13, one ounce contains 13 calories, choice A.",
+          "es": "Para hallar la tasa unitaria, se dividen las 104 calorías entre 8 onzas. Como 104 ÷ 8 = 13, una onza contiene 13 calorías, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q32": {
+      "inputHash": "74c1a2f57bc4de2ff0d1a1050ca993993cf14ec9f2302fdb6938730050ca67b1",
+      "explanation": {
+        "text": {
+          "en": "The three rectangular faces have areas 4 × 2.5 = 10, 4 × 6 = 24, and 4 × 6.5 = 26 square feet. The two triangles total 2 × (1/2 × 2.5 × 6) = 15, so the surface area is 10 + 24 + 26 + 15 = 75 square feet, choice B.",
+          "es": "Las tres caras rectangulares tienen áreas de 4 × 2.5 = 10, 4 × 6 = 24 y 4 × 6.5 = 26 pies cuadrados. Los dos triángulos suman 2 × (1/2 × 2.5 × 6) = 15, así que el área de superficie es 10 + 24 + 26 + 15 = 75 pies cuadrados, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q33": {
+      "inputHash": "1f54033291d7f6cd71e1a2584ac93aaf9b21bb8591996fa42d8953c6b0336281",
+      "explanation": {
+        "text": {
+          "en": "Let n be the whole number. The equation 0.16n = 4 gives n = 4 ÷ 0.16 = 25, so 4 is 16% of 25, choice C.",
+          "es": "Sea n el número total. La ecuación 0.16n = 4 da n = 4 ÷ 0.16 = 25, así que 4 es el 16% de 25, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q34": {
+      "inputHash": "cafdd073841847112090d25ff74150d006fafc2b7e82a3677bb16c13832d647c",
+      "explanation": {
+        "text": {
+          "en": "The machine takes 42 ÷ 7 = 6 minutes per pound. At that constant rate, 9 pounds take 9 × 6 = 54 minutes, choice C.",
+          "es": "La máquina tarda 42 ÷ 7 = 6 minutos por libra. A esa tasa constante, 9 libras tardan 9 × 6 = 54 minutos, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q35": {
+      "inputHash": "88a4709034ba3718d00d2cb2035bc77edd377402cd024ca19fc1bab02ca6aafd",
+      "explanation": {
+        "text": {
+          "en": "The volume of a rectangular prism is length × width × height. Multiplying 8 1/10 × 4 4/5 × 12 1/2 = 8.1 × 4.8 × 12.5 = 486, so the box holds 486 cubic inches, choice D.",
+          "es": "El volumen de un prisma rectangular es largo × ancho × altura. Al multiplicar 8 1/10 × 4 4/5 × 12 1/2 = 8.1 × 4.8 × 12.5 = 486, la caja tiene 486 pulgadas cúbicas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g6-mc-q36": {
+      "inputHash": "aa74b3f6a877a2ce1f39950cf152ec0a4f31ac1d0284496866d73bfdc58051d5",
+      "explanation": {
+        "text": {
+          "en": "At $25 per hour, the number of hours costing $62.50 is $62.50 ÷ $25.00 = 2.5. Therefore the tutoring time is 2 1/2 hours, choice A.",
+          "es": "A $25 por hora, la cantidad de horas que cuestan $62.50 es $62.50 ÷ $25.00 = 2.5. Por lo tanto, el tiempo de tutoría es 2 1/2 horas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

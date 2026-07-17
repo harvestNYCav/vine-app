@@ -2,6 +2,7 @@ import type { GradeLevel } from '@/lib/grade-levels'
 
 export type ElaExamChoice = 'A' | 'B' | 'C' | 'D'
 export type ElaExamQuestionNumberKind = 'official' | 'release-ordinal'
+export type ElaExplanationSource = 'official-nysed' | 'vine-authored'
 export type ElaStandardsFramework = 'CCLS' | 'NGLS'
 
 export type ElaSkill =
@@ -39,6 +40,7 @@ export interface ElaChoiceGrading {
   mode: 'choice'
   correct: ElaExamChoice
   explanation: string
+  explanationSource: ElaExplanationSource
 }
 
 export interface ElaExamQuestionRecord {

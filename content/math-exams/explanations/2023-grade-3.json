@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2023-grade-3-mc-v1",
+  "questions": {
+    "nysed-2023-g3-mc-q1": {
+      "inputHash": "2a7701108f1b8a1d334073909a26a8695388bda2fc90e846e7931c7a6ca8d237",
+      "explanation": {
+        "text": {
+          "en": "The missing factor in 8 × ? = 72 is found by dividing 72 ÷ 8. Since 72 ÷ 8 = 9 and 8 × 9 = 72, the factor is 9, choice D.",
+          "es": "El factor que falta en 8 × ? = 72 se halla al dividir 72 ÷ 8. Como 72 ÷ 8 = 9 y 8 × 9 = 72, el factor es 9, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q2": {
+      "inputHash": "4ac5745d7c09a12f003caef0585b0669df91a76b7cde56e42f6cc146f1fb823d",
+      "explanation": {
+        "text": {
+          "en": "The top row has 9 unit squares, and each of the other 3 rows has 10. Counting by rows gives 9 + (3 × 10) = 39 square units, choice D.",
+          "es": "La fila superior tiene 9 cuadrados unitarios y cada una de las otras 3 filas tiene 10. Al contar por filas se obtiene 9 + (3 × 10) = 39 unidades cuadradas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q5": {
+      "inputHash": "1e8389fdfea9d2cdf773b6f73229cca7250f49d359a6143cd4b910a62146b499",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is split into 8 equal parts, and R is at the sixth mark, so R = 6/8. Simplifying 6/8 by dividing by 2 gives 3/4, making 3/4 and 6/8, choice D, equivalent.",
+          "es": "El intervalo de 0 a 1 está dividido en 8 partes iguales y R está en la sexta marca, así que R = 6/8. Al simplificar 6/8 dividiendo entre 2 se obtiene 3/4; por eso 3/4 y 6/8, la opción D, son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q6": {
+      "inputHash": "43c9e7108b0fc981d1903587f0c27a1e388094c6b153ef421bc4ca3527e83a60",
+      "explanation": {
+        "text": {
+          "en": "Seven coins with a mass of 5 grams each form 7 equal groups of 5. Multiplying 7 × 5 = 35 gives a total mass of 35 grams, choice C.",
+          "es": "Siete monedas con una masa de 5 gramos cada una forman 7 grupos iguales de 5. Al multiplicar 7 × 5 = 35 se obtiene una masa total de 35 gramos, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q15": {
+      "inputHash": "998703fe1be5cc6f122db336a52146b856f950ee9afdd3440d2552a0ac32d467",
+      "explanation": {
+        "text": {
+          "en": "The visible terms increase from 21 to 27 by 6, so apply the same rule throughout. The pattern is 3, 9, 15, 21, 27, making the missing numbers 3 and 15, choice B.",
+          "es": "Los términos visibles aumentan de 21 a 27 en 6, así que se aplica la misma regla en toda la serie. El patrón es 3, 9, 15, 21, 27; los números que faltan son 3 y 15, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q16": {
+      "inputHash": "9306e2dd1cc234642080db5981f77ec99e3f9814eb542079ef76b65a85bf5bd0",
+      "explanation": {
+        "text": {
+          "en": "The fraction 4/4 represents one whole because all 4 of 4 equal parts are included. The fraction 2/2 also equals one whole, so it is equivalent and is choice B.",
+          "es": "La fracción 4/4 representa un entero porque incluye las 4 de 4 partes iguales. La fracción 2/2 también equivale a un entero, así que es equivalente y corresponde a la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q18": {
+      "inputHash": "c7cb548d69083ed12ebc8be9929ac11262da48f4519c0a5090bf1c8d3c3a915b",
+      "explanation": {
+        "text": {
+          "en": "Split the shape into a bottom rectangle measuring 10 ft by 4 ft and an upper-right rectangle measuring 4 ft by 4 ft. Their areas add to (10 × 4) + (4 × 4) = 40 + 16 = 56 square feet, choice C.",
+          "es": "Se divide la figura en un rectángulo inferior de 10 pies por 4 pies y otro superior derecho de 4 pies por 4 pies. Sus áreas suman (10 × 4) + (4 × 4) = 40 + 16 = 56 pies cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q19": {
+      "inputHash": "cca623f5840edf5d4a61f8fa71a83a2e4193848fb2a15c46747c4fae0118feb3",
+      "explanation": {
+        "text": {
+          "en": "The factors 4, 3, and 2 may be regrouped or reordered without changing their product. Both 4 × (3 × 2) and 3 × (4 × 2), choice B, equal 24.",
+          "es": "Los factores 4, 3 y 2 se pueden reagrupar o cambiar de orden sin alterar su producto. Tanto 4 × (3 × 2) como 3 × (4 × 2), la opción B, equivalen a 24."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q20": {
+      "inputHash": "5cc2465207b96acdce12cb24dfe7fe7adf82854650400936a35e5408629cba6a",
+      "explanation": {
+        "text": {
+          "en": "To show 1/4, the interval from 0 to 1 must have 4 equal parts and the point must be at the first division mark. Number line B meets both conditions, so B is correct.",
+          "es": "Para mostrar 1/4, el intervalo de 0 a 1 debe tener 4 partes iguales y el punto debe estar en la primera marca. La recta B cumple ambas condiciones, así que B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q23": {
+      "inputHash": "57f0ed4f8d59ad1a4187a0709429a97b158a5507362255143969931dc79ab7e7",
+      "explanation": {
+        "text": {
+          "en": "A region with an area of 48 square units is covered by 48 unit squares because each one has area 1 square unit. Therefore 48 unit squares are needed, choice D.",
+          "es": "Una región con un área de 48 unidades cuadradas se cubre con 48 cuadrados unitarios porque cada uno tiene un área de 1 unidad cuadrada. Por lo tanto, se necesitan 48 cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q24": {
+      "inputHash": "f37bf57c1ef3bbdf77879cca4fdd6d2fa7baf5e85d62f15a85edb1218023c5f1",
+      "explanation": {
+        "text": {
+          "en": "The number line from 0 to 1 is divided into 8 equal intervals. Counting 4 intervals from 0 lands at point R, so R represents 4/8 and choice C is correct.",
+          "es": "La recta de 0 a 1 está dividida en 8 intervalos iguales. Al contar 4 intervalos desde 0 se llega al punto R, así que R representa 4/8 y la opción C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q26": {
+      "inputHash": "dfe3cd9a09ed2f672bc2647c5e812067a00912e112e5380d15ef3cb8a463f4a8",
+      "explanation": {
+        "text": {
+          "en": "Of the 27 cupcakes, 10 + 11 = 21 have chocolate or vanilla frosting. Subtracting those from the total gives s = 27 − 21 = 6 strawberry cupcakes, choice A.",
+          "es": "De los 27 pastelitos, 10 + 11 = 21 tienen cobertura de chocolate o vainilla. Al restarlos del total se obtiene s = 27 − 21 = 6 pastelitos de fresa, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q27": {
+      "inputHash": "0429857b60f0828ca7b6854b68913bb454a599660562889aaceb3b4cd8da6603",
+      "explanation": {
+        "text": {
+          "en": "The rectangle contains 6 rows with 4 unit squares in each row. Its area is 6 × 4 = 24 square units, which is choice D.",
+          "es": "El rectángulo contiene 6 filas con 4 cuadrados unitarios en cada fila. Su área es 6 × 4 = 24 unidades cuadradas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q28": {
+      "inputHash": "1ae62ab94476bde62f6157122eba545e7e522420d40c6be310542f50cdc4d74e",
+      "explanation": {
+        "text": {
+          "en": "Five packs of 6 contain 5 × 6 = 30 notebooks. Sharing 30 equally among 3 children gives 30 ÷ 3 = 10 notebooks per child, choice B.",
+          "es": "Cinco paquetes de 6 contienen 5 × 6 = 30 cuadernos. Al repartir 30 por igual entre 3 niños se obtiene 30 ÷ 3 = 10 cuadernos por niño, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q29": {
+      "inputHash": "37d367b9b215653ca184f0a4710a14da7ddc28ac3d0fd2d1ae0529417c2f4fb5",
+      "explanation": {
+        "text": {
+          "en": "Dividing both the numerator and denominator of 2/8 by 2 gives 1/4. The value stays the same, so 1/4, choice A, is equivalent to 2/8.",
+          "es": "Al dividir el numerador y el denominador de 2/8 entre 2 se obtiene 1/4. El valor no cambia, así que 1/4, la opción A, equivale a 2/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g3-mc-q30": {
+      "inputHash": "61d96f1c14a6ec5486baa8b413a13bb67ca49466fa938affaafb1fc86e86d9f9",
+      "explanation": {
+        "text": {
+          "en": "The shaded array has 5 rows of 6 squares and the unshaded array has 4 rows of 6 squares. Adding their areas gives (5 × 6) + (4 × 6), which is choice A and totals 54 square units.",
+          "es": "El arreglo sombreado tiene 5 filas de 6 cuadrados y el no sombreado tiene 4 filas de 6. Al sumar sus áreas se obtiene (5 × 6) + (4 × 6), la opción A, para un total de 54 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

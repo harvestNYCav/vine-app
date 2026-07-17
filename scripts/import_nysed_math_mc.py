@@ -51,6 +51,27 @@ import numpy as np
 import pdfplumber
 from PIL import Image, ImageDraw, ImageOps, ImageStat
 
+try:
+    from scripts.nysed_math_explanations import (
+        DEFAULT_MATH_EXPLANATIONS_ROOT,
+        MathExplanationError,
+        MathQuestionExplanationInput,
+        extract_official_math_rationale,
+        load_math_exam_explanations,
+        math_question_explanation_input_hash,
+        validate_math_question_explanation,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_math_explanations import (  # type: ignore[no-redef]
+        DEFAULT_MATH_EXPLANATIONS_ROOT,
+        MathExplanationError,
+        MathQuestionExplanationInput,
+        extract_official_math_rationale,
+        load_math_exam_explanations,
+        math_question_explanation_input_hash,
+        validate_math_question_explanation,
+    )
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MAIN_INDEX_URL = "https://www.nysedregents.org/ei/ei-math.html"
@@ -82,6 +103,9 @@ EXPECTED_MC_COUNTS: dict[int, tuple[int, int, int, int, int, int]] = {
     2026: (27, 31, 31, 31, 34, 34),
 }
 EXPECTED_GRAND_TOTAL = 1839
+EXPECTED_OFFICIAL_EXPLANATION_TOTAL = 228
+EXPECTED_VINE_EXPLANATION_TOTAL = 1611
+DEFAULT_MARKER_RETRY_DPI = 240
 SPANISH_YEARS = frozenset((2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026))
 EXPECTED_SPANISH_TOTAL = 1292
 
@@ -209,6 +233,7 @@ class AnnotatedItem:
     key: str
     raw_standard: str
     crop_box: tuple[float, float, float, float]
+    official_rationale: str | None
 
 
 @dataclasses.dataclass(frozen=True)
@@ -773,7 +798,11 @@ def word_top(page: Any, pattern: re.Pattern[str]) -> float | None:
     return None
 
 
-def parse_annotated_items(pdf_path: Path) -> list[AnnotatedItem]:
+def parse_annotated_items(
+    pdf_path: Path,
+    *,
+    require_official_rationale: bool = False,
+) -> list[AnnotatedItem]:
     with pdfplumber.open(pdf_path) as pdf:
         # A page can finish one item's annotation and begin the next question.
         # Track every positioned item-code token, not merely the first per page.
@@ -836,6 +865,18 @@ def parse_annotated_items(pdf_path: Path) -> list[AnnotatedItem]:
                     f"Answer-key mismatch for item {item_code}: filename suffix says "
                     f"{suffix_key}, printed annotation says {printed_key}"
                 )
+            official_rationale: str | None = None
+            if require_official_rationale:
+                try:
+                    official_rationale = extract_official_math_rationale(
+                        block_text,
+                        printed_key,
+                    )
+                except (MathExplanationError, TypeError, ValueError) as exc:
+                    raise ImportFailure(
+                        f"Could not extract the official correct-choice rationale for "
+                        f"annotated item {item_code}_{choice_index} in {pdf_path}: {exc}"
+                    ) from exc
 
             page = pdf.pages[page_index]
             key_tops: list[float] = []
@@ -866,6 +907,7 @@ def parse_annotated_items(pdf_path: Path) -> list[AnnotatedItem]:
                     key=printed_key,
                     raw_standard=standard_match.group(1).strip(),
                     crop_box=crop_box,
+                    official_rationale=official_rationale,
                 )
             )
 
@@ -1142,6 +1184,51 @@ def markers_overlap_gray_boxes(
     return True
 
 
+def remap_markers_to_gray_box_positions(
+    markers: Sequence[Marker],
+    positions: Sequence[tuple[int, float, Image.Image]],
+    *,
+    tolerance: float = 3.0,
+) -> list[Marker] | None:
+    """Move retry markers onto the original render-DPI box coordinates.
+
+    Higher-resolution OCR can recover a faint marker identity, but its box top
+    can differ by a fraction of a PDF point because the rasterized gray edge
+    rounds differently. Crop manifests and explanation input hashes are pinned
+    to the original render DPI, so use the retry only for identity and retain
+    the original gray-box coordinates for crop construction.
+    """
+
+    if not isinstance(tolerance, (int, float)) or tolerance <= 0:
+        raise ValueError("Marker remap tolerance must be positive")
+    by_page: dict[int, list[tuple[int, float]]] = defaultdict(list)
+    for index, (page_index, top, _) in enumerate(positions):
+        by_page[page_index].append((index, top))
+    used: set[int] = set()
+    remapped: list[Marker] = []
+    for marker in markers:
+        matches = [
+            (abs(marker.top - top), index, top)
+            for index, top in by_page.get(marker.page_index, [])
+            if index not in used and abs(marker.top - top) <= tolerance
+        ]
+        if not matches:
+            return None
+        _, position_index, original_top = min(matches)
+        used.add(position_index)
+        remapped.append(
+            Marker(
+                marker.number,
+                marker.page_index,
+                original_top,
+                marker.x0,
+                marker.score,
+                f"{marker.method}-render-dpi-remap",
+            )
+        )
+    return remapped
+
+
 def gray_box_markers(
     pdf_path: Path,
     expected: Sequence[int],
@@ -1395,6 +1482,7 @@ def find_question_markers(
     tesseract_binary: str | None,
     *,
     require_exact_gray_box_count: bool = False,
+    retry_dpi: int | None = DEFAULT_MARKER_RETRY_DPI,
 ) -> list[Marker]:
     expected = sorted(expected_numbers)
     expected_set = set(expected)
@@ -1481,9 +1569,46 @@ def find_question_markers(
         chosen = choose_monotonic_markers(expected, candidates)
         if chosen is None or not markers_overlap_gray_boxes(chosen, positions):
             found = sorted({candidate.number for candidate in candidates})
-            raise ImportFailure(
+            low_resolution_failure = ImportFailure(
                 f"Could not establish exact question-marker parity for {pdf_path}; "
                 f"expected {expected}, detected candidate numbers {found}"
+            )
+            if (
+                retry_dpi is None
+                or retry_dpi <= dpi
+                or tesseract_binary is None
+            ):
+                raise low_resolution_failure
+            log(
+                f"  Retrying marker detection at {retry_dpi} DPI while preserving "
+                f"the {dpi}-DPI crop geometry: {pdf_path.name}"
+            )
+            try:
+                retry_markers = find_question_markers(
+                    pdf_path,
+                    expected,
+                    map_pages,
+                    cache_root,
+                    retry_dpi,
+                    tesseract_binary,
+                    require_exact_gray_box_count=require_exact_gray_box_count,
+                    retry_dpi=None,
+                )
+            except ImportFailure as exc:
+                raise low_resolution_failure from exc
+            chosen = remap_markers_to_gray_box_positions(retry_markers, positions)
+            if (
+                chosen is None
+                or [marker.number for marker in chosen] != expected
+                or not markers_overlap_gray_boxes(chosen, positions)
+            ):
+                raise ImportFailure(
+                    f"High-resolution marker retry for {pdf_path} could not be "
+                    f"mapped safely onto the {dpi}-DPI gray boxes"
+                ) from low_resolution_failure
+            log(
+                f"  Recovered {len(chosen)} markers at {retry_dpi} DPI and remapped "
+                f"them to the {dpi}-DPI crop geometry"
             )
 
     if [marker.number for marker in chosen] != expected:
@@ -1804,6 +1929,30 @@ def render_question_crops(
     return results
 
 
+_KNOWN_ACCESSIBILITY_FONT_TRANSLATION = str.maketrans(
+    {
+        "\uf8eb": "\u239b",  # LEFT PARENTHESIS UPPER HOOK
+        "\uf8ec": "\u239c",  # LEFT PARENTHESIS EXTENSION
+        "\uf8ed": "\u239d",  # LEFT PARENTHESIS LOWER HOOK
+        "\uf8f6": "\u239e",  # RIGHT PARENTHESIS UPPER HOOK
+        "\uf8f7": "\u239f",  # RIGHT PARENTHESIS EXTENSION
+        "\uf8f8": "\u23a0",  # RIGHT PARENTHESIS LOWER HOOK
+        "\uf032": "\u25b3",  # TRIANGLE (legacy Mathematical Pi encoding)
+        "\uf056": "\u25b3",  # TRIANGLE (modern Mathematical Pi encoding)
+        "\uf0f5": "\u25b3",  # TRIANGLE (legacy Mathematical Pi encoding)
+        "\ue0f5": None,  # Decorative equation-editor line start
+        "\ue0f6": None,  # Decorative equation-editor line extension
+        "\ue0f7": None,  # Decorative equation-editor line end
+    }
+)
+
+
+def normalize_known_accessibility_font_glyphs(text: str) -> str:
+    """Normalize only reviewed PUA glyphs whose visual meaning is known."""
+
+    return text.translate(_KNOWN_ACCESSIBILITY_FONT_TRANSLATION)
+
+
 def has_unsafe_accessibility_characters(text: str) -> bool:
     """Reject PDF font artifacts that cannot be exposed as readable alt text."""
 
@@ -1818,6 +1967,7 @@ def has_unsafe_accessibility_characters(text: str) -> bool:
 
 
 def clean_alt_text(text: str, number: int, language: Literal["en", "es"]) -> str:
+    text = normalize_known_accessibility_font_glyphs(text)
     if has_unsafe_accessibility_characters(text):
         raise ImportFailure(
             f"Accessibility text contains unreadable PDF font characters for question {number}"
@@ -1854,7 +2004,10 @@ def extract_alt_texts(
                 and set(cached) == {str(number) for number in boxes}
                 and all(isinstance(value, str) for value in cached.values())
             ):
-                results = {int(number): value for number, value in cached.items()}
+                results = {
+                    int(number): normalize_known_accessibility_font_glyphs(value)
+                    for number, value in cached.items()
+                }
                 if all(
                     len(re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", value)) >= 24
                     and not LEAK_RE.search(value)
@@ -1872,6 +2025,7 @@ def extract_alt_texts(
                 x_tolerance=2,
                 y_tolerance=3,
             ) or ""
+            text = normalize_known_accessibility_font_glyphs(text)
             substantive = (
                 len(re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", text)) >= 32
                 and not has_unsafe_accessibility_characters(text)
@@ -1968,6 +2122,231 @@ def question_json(
     if map_item.secondary_standards:
         result["secondaryStandards"] = list(map_item.secondary_standards)
     return result
+
+
+def _math_explanation_asset_path(
+    asset_root: Path,
+    src: Any,
+    *,
+    year: int,
+    grade: int,
+    language: Literal["en", "es"],
+    number: int,
+    label: str,
+) -> Path:
+    expected_src = (
+        f"{APP_PUBLIC_PREFIX}/{year}/grade-{grade}/{language}/q{number:02d}.webp"
+    )
+    if src != expected_src:
+        raise ImportFailure(
+            f"{label} path changed: expected {expected_src!r}, got {src!r}"
+        )
+    relative = Path(str(src)[len(f"{APP_PUBLIC_PREFIX}/") :])
+    path = Path(asset_root) / relative
+    if not path.is_file() or path.is_symlink():
+        raise ImportFailure(f"Missing or unsafe {label}: {path}")
+    root = Path(asset_root)
+    for parent in path.parents:
+        if parent == root:
+            break
+        if parent.is_symlink():
+            raise ImportFailure(f"Unsafe symlink in {label} path: {parent}")
+    else:
+        raise ImportFailure(f"{label} is outside the math asset root: {path}")
+    return path
+
+
+def build_exam_explanation_input_hashes(
+    exam: dict[str, Any],
+    asset_root: Path,
+) -> dict[str, str]:
+    """Hash the exact localized question inputs behind each authored explanation."""
+
+    year = exam.get("year")
+    grade = exam.get("grade")
+    exam_id = exam.get("id")
+    if (
+        not isinstance(year, int)
+        or isinstance(year, bool)
+        or year < 2015
+        or not isinstance(grade, int)
+        or isinstance(grade, bool)
+        or grade not in GRADES
+        or not isinstance(exam_id, str)
+        or not exam_id
+    ):
+        raise ImportFailure("Malformed 2015+ math exam while hashing explanations")
+    languages = exam.get("supportedLanguages")
+    if languages not in (["en"], ["en", "es"]):
+        raise ImportFailure(
+            f"Invalid explanation language coverage in {exam_id}: {languages!r}"
+        )
+    expected_language_keys = set(languages)
+    questions = exam.get("questions")
+    if not isinstance(questions, list) or not questions:
+        raise ImportFailure(f"Cannot build explanation inputs without questions in {exam_id}")
+
+    input_hashes: dict[str, str] = {}
+    for question in questions:
+        if not isinstance(question, dict) or not isinstance(question.get("id"), str):
+            raise ImportFailure(f"Malformed question while hashing explanations in {exam_id}")
+        question_id = str(question["id"])
+        if not question_id or question_id in input_hashes:
+            raise ImportFailure(f"Duplicate or empty explanation question id {question_id!r}")
+        number = question.get("number")
+        if not isinstance(number, int) or isinstance(number, bool) or not 1 <= number <= 100:
+            raise ImportFailure(f"Question {question_id} has an invalid explanation number")
+        image = question.get("image")
+        alt = question.get("alt")
+        if not isinstance(image, dict) or set(image) != expected_language_keys:
+            raise ImportFailure(f"Question {question_id} has invalid localized explanation assets")
+        if not isinstance(alt, dict) or set(alt) != expected_language_keys:
+            raise ImportFailure(f"Question {question_id} has invalid localized explanation alt text")
+
+        image_hashes: dict[str, str] = {}
+        normalized_alts: dict[str, str] = {}
+        for language in languages:
+            localized_image = image.get(language)
+            localized_alt = alt.get(language)
+            if not isinstance(localized_image, dict) or set(localized_image) != {
+                "src",
+                "width",
+                "height",
+            }:
+                raise ImportFailure(
+                    f"Question {question_id} has a malformed {language} explanation asset"
+                )
+            if not isinstance(localized_alt, str) or not localized_alt.strip():
+                raise ImportFailure(
+                    f"Question {question_id} has empty {language} explanation alt text"
+                )
+            path = _math_explanation_asset_path(
+                asset_root,
+                localized_image.get("src"),
+                year=year,
+                grade=grade,
+                language=language,
+                number=number,
+                label=f"{language} question image for {question_id}",
+            )
+            try:
+                image_hashes[language] = sha256_file(path)
+            except OSError as exc:
+                raise ImportFailure(f"Could not hash {language} asset for {question_id}: {exc}") from exc
+            normalized_alts[language] = localized_alt
+
+        secondary_standards = question.get("secondaryStandards", [])
+        if not isinstance(secondary_standards, list) or not all(
+            isinstance(standard, str) and standard.strip()
+            for standard in secondary_standards
+        ):
+            raise ImportFailure(f"Question {question_id} has invalid explanation standards")
+        try:
+            explanation_input = MathQuestionExplanationInput.create(
+                question_id=question_id,
+                alt_en=normalized_alts["en"],
+                alt_es=normalized_alts.get("es"),
+                correct=question.get("correct"),
+                primary_standard=question.get("primaryStandard"),
+                secondary_standards=secondary_standards,
+                question_image_en_sha256=image_hashes["en"],
+                question_image_es_sha256=image_hashes.get("es"),
+            )
+            input_hashes[question_id] = math_question_explanation_input_hash(
+                explanation_input
+            )
+        except (MathExplanationError, TypeError, ValueError) as exc:
+            raise ImportFailure(
+                f"Could not hash explanation inputs for {question_id}: {exc}"
+            ) from exc
+    return input_hashes
+
+
+def attach_vine_authored_explanations(
+    exam: dict[str, Any],
+    asset_root: Path,
+    *,
+    explanations_root: Path = DEFAULT_MATH_EXPLANATIONS_ROOT,
+) -> None:
+    """Attach one exactly covering, hash-pinned sidecar to a 2015+ math exam."""
+
+    year = exam.get("year")
+    grade = exam.get("grade")
+    exam_id = exam.get("id")
+    if (
+        not isinstance(year, int)
+        or isinstance(year, bool)
+        or year < 2015
+        or not isinstance(grade, int)
+        or isinstance(grade, bool)
+        or grade not in GRADES
+        or not isinstance(exam_id, str)
+        or not exam_id
+    ):
+        raise ImportFailure("Official-rationale math releases must not use authored sidecars")
+    questions = exam.get("questions")
+    if not isinstance(questions, list) or not all(
+        isinstance(question, dict) for question in questions
+    ):
+        raise ImportFailure(f"Malformed question list while attaching explanations in {exam_id}")
+    if any("explanation" in question for question in questions):
+        raise ImportFailure(f"Authored explanations would overwrite existing data in {exam_id}")
+
+    expected_input_hashes = build_exam_explanation_input_hashes(exam, asset_root)
+    try:
+        explanations = load_math_exam_explanations(
+            year=year,
+            grade=grade,
+            exam_id=exam_id,
+            expected_input_hashes=expected_input_hashes,
+            root=explanations_root,
+        )
+    except (MathExplanationError, OSError, TypeError, ValueError) as exc:
+        raise ImportFailure(f"Math explanation sidecar failed for {exam_id}: {exc}") from exc
+
+    for question in questions:
+        question_id = str(question["id"])
+        explanation = explanations[question_id]
+        if explanation.source != "vine-authored":
+            raise ImportFailure(
+                f"Authored explanation {question_id} has invalid source {explanation.source}"
+            )
+        question["explanation"] = {
+            "text": {"en": explanation.en, "es": explanation.es},
+            "source": explanation.source,
+        }
+
+
+def validate_imported_question_explanation(
+    year: int,
+    question: dict[str, Any],
+) -> None:
+    """Require canonical localized explanation text and year-specific provenance."""
+
+    question_id = str(question.get("id", ""))
+    try:
+        explanation = validate_math_question_explanation(
+            question.get("explanation"),
+            question_id=question_id,
+        )
+    except (MathExplanationError, TypeError, ValueError) as exc:
+        raise ImportFailure(f"Invalid explanation in {question_id}: {exc}") from exc
+    expected_source = "official-nysed" if year <= 2014 else "vine-authored"
+    if explanation.source != expected_source:
+        raise ImportFailure(
+            f"Wrong explanation source in {question_id}: "
+            f"expected {expected_source}, got {explanation.source}"
+        )
+    canonical = {
+        "text": {"en": explanation.en, "es": explanation.es},
+        "source": explanation.source,
+    }
+    if question.get("explanation") != canonical:
+        raise ImportFailure(f"Explanation is not canonically normalized in {question_id}")
+    if year <= 2014 and explanation.en != explanation.es:
+        raise ImportFailure(
+            f"Official English-only rationale must match both localized fields in {question_id}"
+        )
 
 
 def process_modern_exam(
@@ -2180,7 +2559,10 @@ def process_annotated_exam(
     tesseract_binary: str | None,
 ) -> tuple[list[dict[str, Any]], dict[str, str], list[str]]:
     english_pdf = get_pdf(source, cache_root, kind="release", offline=offline, force=force_download)
-    annotated = parse_annotated_items(english_pdf)
+    annotated = parse_annotated_items(
+        english_pdf,
+        require_official_rationale=source.year <= 2014,
+    )
 
     def released_order_pairs() -> list[tuple[AnnotatedItem, MapItem]]:
         # Old annotated PDFs publish a numbered released subset, not a test
@@ -2262,8 +2644,9 @@ def process_annotated_exam(
         "en",
         tesseract_binary,
     )
-    questions = [
-        question_json(
+    questions: list[dict[str, Any]] = []
+    for item, map_item in pairs:
+        question = question_json(
             source.year,
             source.grade,
             map_item,
@@ -2273,8 +2656,17 @@ def process_annotated_exam(
             alts[map_item.number],
             None,
         )
-        for item, map_item in pairs
-    ]
+        if source.year <= 2014:
+            if item.official_rationale is None:
+                raise ImportFailure(f"Missing official rationale for {question['id']}")
+            question["explanation"] = {
+                "text": {
+                    "en": item.official_rationale,
+                    "es": item.official_rationale,
+                },
+                "source": "official-nysed",
+            }
+        questions.append(question)
     return questions, {"en": source.release_url}, ["en"]
 
 
@@ -2296,6 +2688,7 @@ def validate_exam_questions(year: int, grade: int, questions: Sequence[dict[str,
     for question in questions:
         if question["correct"] not in CHOICES:
             raise ImportFailure(f"Invalid answer key in generated question {question['id']}")
+        validate_imported_question_explanation(year, question)
         if question["domain"] not in SUPPORTED_DOMAINS:
             raise ImportFailure(f"Invalid domain in generated question {question['id']}")
         primary_standard = str(question["primaryStandard"])
@@ -2598,8 +2991,10 @@ def main(argv: Sequence[str] | None = None) -> int:
                 dpi=args.dpi,
                 tesseract_binary=args.tesseract,
             )
-        validate_exam_questions(year, grade, questions)
         exam_json = build_exam_json(source, questions, source_urls, supported)
+        if year >= 2015:
+            attach_vine_authored_explanations(exam_json, asset_root)
+        validate_exam_questions(year, grade, questions)
         log(f"  Generated {len(questions)} multiple-choice questions for {year} grade {grade}")
         return exam_json
 
@@ -2644,11 +3039,28 @@ def main(argv: Sequence[str] | None = None) -> int:
             raise ImportFailure(
                 f"Spanish catalog count mismatch: expected {EXPECTED_SPANISH_TOTAL}, generated {spanish_total}"
             )
+        explanation_sources = [
+            str(question.get("explanation", {}).get("source", ""))
+            for exam in exams
+            for question in exam["questions"]
+        ]
+        official_total = explanation_sources.count("official-nysed")
+        vine_total = explanation_sources.count("vine-authored")
+        if (
+            official_total != EXPECTED_OFFICIAL_EXPLANATION_TOTAL
+            or vine_total != EXPECTED_VINE_EXPLANATION_TOTAL
+            or len(explanation_sources) != official_total + vine_total
+        ):
+            raise ImportFailure(
+                "Full explanation provenance parity failed: "
+                f"expected official/vine={EXPECTED_OFFICIAL_EXPLANATION_TOTAL}/"
+                f"{EXPECTED_VINE_EXPLANATION_TOTAL}, got {official_total}/{vine_total}"
+            )
     if failures and not exams:
         raise ImportFailure("All requested exams failed; refusing to write an empty catalog")
 
     catalog = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "generatedAt": generated_at(main_html),
         "accessedAt": os.environ.get("NYSED_ACCESSED_AT", IMPORT_ACCESSED_AT),
         "sourceUpdatedAt": source_updated_at(main_html),

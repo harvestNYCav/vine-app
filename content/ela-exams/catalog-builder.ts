@@ -6,6 +6,7 @@ import type {
   ElaExamDefinition,
   ElaExamQuestionNumberKind,
   ElaExamQuestionRecord,
+  ElaExplanationSource,
   ElaPassageAsset,
   ElaPassageReference,
   ElaQuestionImage,
@@ -35,6 +36,10 @@ export type RawElaQuestion = {
   stimulusId: string
   skill: ElaSkill
   correct: ElaExamChoice
+  explanation: {
+    text: string
+    source: ElaExplanationSource
+  }
   image: Omit<ElaQuestionImage, 'alt'>
   alt: string
 }
@@ -54,7 +59,7 @@ export type RawElaExam = {
 }
 
 export type RawElaExamCatalog = {
-  schemaVersion: 2
+  schemaVersion: 3
   generatedAt: string
   accessedAt: string
   sourceUpdatedAt: string
@@ -88,6 +93,10 @@ const SKILL_SET = new Set<ElaSkill>(ELA_SKILL_ORDER)
 const CCLS_STANDARD_PATTERN = /^CCSS\.ELA-Literacy\.(RL|RI|L)\.([3-8])\.([1-9])([a-z])?$/
 const NGLS_STANDARD_PATTERN = /^NGLS\.ELA\.Content\.NY-([3-8])(R|L)([1-9])([a-z])?$/
 const ANSWER_METADATA_PATTERN = /(?:\bKey\s*:\s*[A-D]\b|\bCorrect\s+(?:Answer|Response)\s*:\s*[A-D]\b|\bAnswer\s+Key\s*:|\b(?:Primary|Secondary|Aligned)\s+(?:CCLS|Standard)|\bMeasured(?:\s+CCLS)?\s*:|\bMap\s+to\s+the\s+Standards|\bScoring\s+Rubric|\bSample\s+Response|\bAnnotated\s+(?:Item|Response))/i
+const EXPLANATION_REASONING_PATTERN = /\b(?:because|since|therefore|thus|consequently|so|as\s+a\s+result|which\s+(?:show(?:s|ed|ing)?|means?|indicates?|demonstrates?|reveals?|explains?)|(?:this|that)\s+(?:show(?:s|ed|ing)?|means?|indicates?|supports?|demonstrates?|reveals?|explains?)|show(?:s|ed|ing)?|means?|illustrat(?:e|es|ed|ing)|suggest(?:s|ed|ing)?|clarif(?:y|ies|ied)|supports?|supported\s+by|evidence|demonstrates?|indicates?|reveals?|explains?|confirms?|contradicts?|connect(?:s|ed|ing)?|identif(?:y|ies|ied)|recogniz(?:e|es|ed)|understand(?:s|ing)?|deduc(?:e|es|ed)|determin(?:e|es|ed)|infer(?:s|red|ring)?|interpret(?:s|ed|ing)?|rel(?:y|ies|ied)|uses?|contribut(?:e|es|ed|ing))\b/i
+const GENERIC_EXPLANATION_PATTERN = /(?:\b(?:official\s+)?(?:nysed\s+)?answer\s+key\b|\baccording\s+to\s+(?:the\s+)?(?:official\s+)?(?:answer|key)\b|\bidentifies\s+choice\s+[A-D]\s+as\s+the\s+correct\s+answer\b|\bbecause\s+(?:it|this|that|choice\s+[A-D])\s+is\s+(?:the\s+)?(?:correct|right)\s+(?:answer|choice|response)\b|^(?:the\s+)?(?:correct|right)\s+answer\s+is\s+(?:choice\s+)?[A-D][.!]?$|^choice\s+[A-D]\s+is\s+(?:correct|right)[.!]?$)/i
+const EXPLANATION_ARTIFACT_PATTERN = /(?:\bWHY\s+(?:CHOICE|ANSWER)\b|\bWHY\s+(?:THE\s+)?OTHER\s+(?:CHOICES|ANSWERS|RESPONSES)\b|\bHOW\s+TO\s+HELP\s+STUDENTS\b|\bINSTRUCTIONAL\s+(?:SUGGESTIONS?|IMPLICATIONS?)\b|\bQUESTION\s+ANNOTATION\b|[.!?”’]\s+\d{1,3}$)/i
+const LOCAL_FILESYSTEM_PATH_PATTERN = /(?:file:\/\/|\/(?:Users|home|private|tmp|root|workspace|workspaces)\/|\/var\/folders\/|[A-Za-z]:\\|\\\\[^\\\s]+\\[^\\\s]+)/i
 
 function invariant(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(`Invalid generated NYSED ELA catalog: ${message}`)
@@ -105,6 +114,21 @@ function substantiveAlt(value: unknown): value is string {
 
 function safeAlt(value: unknown): value is string {
   return substantiveAlt(value) && !ANSWER_METADATA_PATTERN.test(value)
+}
+
+function substantiveExplanation(value: unknown, source: ElaExplanationSource): value is string {
+  if (!validText(value)) return false
+  const text = value.trim()
+  const words = text.match(/[\p{L}\p{N}]+(?:['’\-][\p{L}\p{N}]+)*/gu) ?? []
+  const distinctWords = new Set(words.filter(word => word.length >= 3).map(word => word.toLocaleLowerCase('en-US')))
+  return text.length >= 60
+    && text.length <= 1_200
+    && text.replace(/[^\p{L}\p{N}]/gu, '').length >= 40
+    && words.length >= 10
+    && distinctWords.size >= 6
+    && (source === 'official-nysed' || EXPLANATION_REASONING_PATTERN.test(text))
+    && !GENERIC_EXPLANATION_PATTERN.test(text)
+    && !EXPLANATION_ARTIFACT_PATTERN.test(text)
 }
 
 function validDateOnly(value: unknown): value is string {
@@ -310,6 +334,19 @@ function validateRawExam(exam: RawElaExam) {
     usedStimulusIds.add(question.stimulusId)
 
     invariant(['A', 'B', 'C', 'D'].includes(question.correct), `${question.id} has a bad answer key`)
+    invariant(
+      question.explanation?.source === 'official-nysed'
+        || question.explanation?.source === 'vine-authored',
+      `${question.id} has a bad explanation source`,
+    )
+    invariant(
+      question.explanation.source === (exam.year <= 2014 ? 'official-nysed' : 'vine-authored'),
+      `${question.id} has an explanation source that does not match its release`,
+    )
+    invariant(
+      substantiveExplanation(question.explanation.text, question.explanation.source),
+      `${question.id} needs a substantive, question-specific explanation`,
+    )
     invariant(validImage(question.image), `${question.id} needs a question-only image`)
     const filename = `q${String(question.number).padStart(2, '0')}.webp`
     invariant(
@@ -334,14 +371,14 @@ function dominantSkill(questions: RawElaQuestion[]) {
 
 export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
   invariant(rawCatalog && typeof rawCatalog === 'object', 'missing catalog')
-  invariant(rawCatalog.schemaVersion === 2, 'unsupported schema version')
+  invariant(rawCatalog.schemaVersion === 3, 'unsupported schema version')
   invariant(typeof rawCatalog.generatedAt === 'string' && !Number.isNaN(Date.parse(rawCatalog.generatedAt)), 'bad generatedAt')
   invariant(validDateOnly(rawCatalog.accessedAt), 'bad accessedAt')
   invariant(validDateOnly(rawCatalog.sourceUpdatedAt), 'bad sourceUpdatedAt')
   invariant(rawCatalog.sourceIndexUrl === 'https://www.nysedregents.org/ei/ei-ela.html', 'bad source index')
   invariant(Array.isArray(rawCatalog.exams), 'missing exams')
   invariant(rawCatalog.exams.length === 78, 'catalog must contain exactly 78 exams')
-  invariant(!/(?:file:\/\/|\/Users\/|[A-Za-z]:\\)/.test(JSON.stringify(rawCatalog)), 'catalog exposes a local filesystem path')
+  invariant(!LOCAL_FILESYSTEM_PATH_PATTERN.test(JSON.stringify(rawCatalog)), 'catalog exposes a local filesystem path')
 
   const accessedAt = rawCatalog.accessedAt
   const examIds = new Set<string>()
@@ -349,6 +386,10 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
   const releasePairs = new Set<string>()
   const questionIds = new Set<string>()
   const questions: ElaExamQuestionRecord[] = []
+  const explanationSourceCounts: Record<ElaExplanationSource, number> = {
+    'official-nysed': 0,
+    'vine-authored': 0,
+  }
 
   const exams = rawCatalog.exams.map(rawExam => {
     validateRawExam(rawExam)
@@ -366,6 +407,7 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
       questionIds.add(rawQuestion.id)
       const stimulus = rawExam.stimuli.find(item => item.id === rawQuestion.stimulusId)!
       const sectionSlug = `questions-${stimulus.questionStart}-${stimulus.questionEnd}`
+      explanationSourceCounts[rawQuestion.explanation.source] += 1
       questions.push({
         id: rawQuestion.id,
         examId: rawExam.id,
@@ -384,7 +426,8 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
         grading: {
           mode: 'choice',
           correct: rawQuestion.correct,
-          explanation: `The official NYSED answer key identifies choice ${rawQuestion.correct} as the correct answer.`,
+          explanation: rawQuestion.explanation.text.trim(),
+          explanationSource: rawQuestion.explanation.source,
         },
       })
       const stimulusQuestions = rawQuestionsByStimulus.get(rawQuestion.stimulusId) ?? []
@@ -434,6 +477,14 @@ export function buildElaExamCatalog(rawCatalog: RawElaExamCatalog) {
     }
   }
   invariant(questions.length === 1_583, 'catalog must contain exactly 1,583 multiple-choice questions')
+  invariant(
+    explanationSourceCounts['official-nysed'] === 149,
+    'catalog must contain exactly 149 official NYSED rationales',
+  )
+  invariant(
+    explanationSourceCounts['vine-authored'] === 1_434,
+    'catalog must contain exactly 1,434 Vine-authored explanations',
+  )
 
   exams.sort((a, b) => b.year - a.year || a.grade - b.grade)
   return { exams, questions }

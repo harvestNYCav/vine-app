@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2025-grade-5-mc-v1",
+  "questions": {
+    "nysed-2025-g5-mc-q3": {
+      "inputHash": "44d1e6284974bd46d399f4115f08971712069309a199e0e0361e3ece2857dd73",
+      "explanation": {
+        "text": {
+          "en": "Dividing 2,550 by 25 gives 102. This checks because 25 × 102 = 2,550.",
+          "es": "Al dividir 2,550 entre 25 se obtiene 102. Se comprueba porque 25 × 102 = 2,550."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q5": {
+      "inputHash": "b75a87fd19b9c225dae74d55c9ad9e15b417e7608841b9306e7aefebaaf3553c",
+      "explanation": {
+        "text": {
+          "en": "In 425.9, the digit 2 is two places to the left of the decimal, so it is in the tens place and has value 20.",
+          "es": "En 425.9, la cifra 2 está dos lugares a la izquierda del punto decimal, así que ocupa la posición de las decenas y vale 20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q9": {
+      "inputHash": "9f199c5dbe55120ff30cbccd04262a6113ff51cfc9fa6fb038a35018548f96a3",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 3/4 by 7 is the same as multiplying 3 by 7 and then dividing by 4. Thus 3/4 × 7 = 3 × 7 ÷ 4.",
+          "es": "Multiplicar 3/4 por 7 equivale a multiplicar 3 por 7 y luego dividir entre 4. Así, 3/4 × 7 = 3 × 7 ÷ 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q10": {
+      "inputHash": "7e088458391c1fcdeb6cbecc20df62583eea6c31e68d1727121195f8e99b3d88",
+      "explanation": {
+        "text": {
+          "en": "The pictured first layer contains 15 unit cubes. With 6 identical layers, the prism's volume is 15 × 6 = 90 cubic units.",
+          "es": "La primera capa mostrada contiene 15 cubos unitarios. Con 6 capas idénticas, el volumen del prisma es 15 × 6 = 90 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q11": {
+      "inputHash": "0e30eaca6282fb79314ac57543d90ec127768f356f3a1dcf7cdf884b11aefb8a",
+      "explanation": {
+        "text": {
+          "en": "Sharing 1/4 of a box equally among 3 bowls is 1/4 ÷ 3. Multiplying by 1/3 gives 1/4 × 1/3 = 1/12 of the box per bowl.",
+          "es": "Repartir 1/4 de caja por igual entre 3 tazones es 1/4 ÷ 3. Al multiplicar por 1/3 se obtiene 1/4 × 1/3 = 1/12 de la caja por tazón."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q13": {
+      "inputHash": "a51f6588e3a5dcd9b58967cb62f22a0215cd51c79c11702304cc65914941f750",
+      "explanation": {
+        "text": {
+          "en": "Each bag weighs 2 2/5 = 12/5 pounds, and there are 1 1/2 = 3/2 bags. Their product is 12/5 × 3/2 = 18/5 = 3 3/5 pounds.",
+          "es": "Cada bolsa pesa 2 2/5 = 12/5 libras y hay 1 1/2 = 3/2 bolsas. Su producto es 12/5 × 3/2 = 18/5 = 3 3/5 libras."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q14": {
+      "inputHash": "46d313488695f08047217c74ec3c5795cbcf1ba87603123e5e5273640b82f2f2",
+      "explanation": {
+        "text": {
+          "en": "Convert 2/10 to hundredths: 2/10 = 20/100. Then 34/100 + 20/100 = 54/100.",
+          "es": "Se convierte 2/10 a centésimos: 2/10 = 20/100. Luego, 34/100 + 20/100 = 54/100."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q15": {
+      "inputHash": "8561be4763047c51315d64a5d38c70a09d6a25edc75c80637e73ab8aff154acf",
+      "explanation": {
+        "text": {
+          "en": "A rhombus is defined as a quadrilateral with four equal-length sides. The other listed shapes do not always have four equal sides.",
+          "es": "Un rombo se define como un cuadrilátero con cuatro lados de igual longitud. Las otras figuras indicadas no siempre tienen cuatro lados iguales; por lo tanto, la respuesta es rombo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q20": {
+      "inputHash": "f7a5ce17f172cf486ea34b50635f36ac2c99b2d0c4d7845e6e158ab3214fe8b5",
+      "explanation": {
+        "text": {
+          "en": "For 63.4368, the hundredths digit is 3 and the next digit is 6. Since 6 is at least 5, round the hundredths up to get 63.44.",
+          "es": "En 63.4368, la cifra de las centésimas es 3 y la siguiente es 6. Ya que 6 es al menos 5, se aumenta la centésima y resulta 63.44."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q24": {
+      "inputHash": "7109a9c79aba00ad1084b58a511dd00487cd9db7c2b3a1c61db38e5bb327f5b8",
+      "explanation": {
+        "text": {
+          "en": "One liter is 1,000 milliliters, so 1,000 − 800 = 200 milliliters remain. Picture A shows the liquid at the 200-milliliter mark.",
+          "es": "Un litro son 1,000 mililitros, así que quedan 1,000 − 800 = 200 mililitros. La imagen A muestra el líquido en la marca de 200 mililitros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q25": {
+      "inputHash": "da1b0a45cced630846c2e9f90a2b1144ecdb0009c8110243d11097ba95717d80",
+      "explanation": {
+        "text": {
+          "en": "The 12 pounds are divided equally among 60 sandwiches. Each sandwich gets 12/60 = 1/5 pound of turkey.",
+          "es": "Las 12 libras se dividen por igual entre 60 sándwiches. Cada sándwich recibe 12/60 = 1/5 de libra de pavo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q26": {
+      "inputHash": "f15c2c9625f22d14a138be107b7775c5887ab31458469519427db4dc4273178e",
+      "explanation": {
+        "text": {
+          "en": "Add the distances using fifteenths: 1 1/3 + 2/5 = 1 + 5/15 + 6/15 = 1 11/15 miles.",
+          "es": "Se suman las distancias usando quinceavos: 1 1/3 + 2/5 = 1 + 5/15 + 6/15 = 1 11/15 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q28": {
+      "inputHash": "47a2fea57907fe3d8c3a6f6cf8099f978e0305d24d30692a0f0f16a468dc63c1",
+      "explanation": {
+        "text": {
+          "en": "In 506.42, the digit 6 is worth 600, and dividing 600 by 10 gives 60. In 540.62, the digit 6 is in the tens place and is worth 60.",
+          "es": "En 506.42, la cifra 6 vale 600, y dividir 600 entre 10 da 60. En 540.62, la cifra 6 está en las decenas y vale 60."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q29": {
+      "inputHash": "e1027ecebc9a619600002f545482548580cfe3b67edfdd70a6dfcdebb7a5d09f",
+      "explanation": {
+        "text": {
+          "en": "Counting the top layer gives 8 unit cubes. Since the bottom layer is identical, the total volume is 8 + 8 = 16 cubic units.",
+          "es": "Al contar la capa superior se obtienen 8 cubos unitarios. Como la capa inferior es idéntica, el volumen total es 8 + 8 = 16 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q31": {
+      "inputHash": "5636ee7f25c8ce10f68267565b0e5633c9dd017fb4bc476fff61578ab9bd36fc",
+      "explanation": {
+        "text": {
+          "en": "Divide the total cost by the price per ticket: $1,488 ÷ $24 = 62 tickets. This checks because 62 × $24 = $1,488.",
+          "es": "Se divide el costo total entre el precio por boleto: $1,488 ÷ $24 = 62 boletos. Se comprueba porque 62 × $24 = $1,488."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q32": {
+      "inputHash": "616eaa3249c6c66d6dd19dca0032e9ce8ee82fd5840d307db1158cda1dcc521b",
+      "explanation": {
+        "text": {
+          "en": "Two quarts equal 8 cups, and 3 pints equal 6 cups. The teacher makes 8 + 6 = 14 cups of green paint.",
+          "es": "Dos cuartos equivalen a 8 tazas y 3 pintas equivalen a 6 tazas. La maestra prepara 8 + 6 = 14 tazas de pintura verde."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q33": {
+      "inputHash": "2c4e6c9777a4e925a05f8f26474fdd48b24009ddfaba87710389d2e4668d2d5f",
+      "explanation": {
+        "text": {
+          "en": "Convert both terms to twenty-eighths: 1 5/14 = 38/28 and 3/4 = 21/28. Therefore, the equivalent difference is 38/28 − 21/28.",
+          "es": "Se convierten ambos términos a veintiochoavos: 1 5/14 = 38/28 y 3/4 = 21/28. Por lo tanto, la diferencia equivalente es 38/28 − 21/28."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q34": {
+      "inputHash": "78cef7b4a4e9a7347cb0f6464b51a7bb5f8566cbdb423e26302c72732abf8695",
+      "explanation": {
+        "text": {
+          "en": "Five candies cost 5 × $0.63 = $3.15. Her change from $5.00 is $5.00 − $3.15 = $1.85.",
+          "es": "Cinco dulces cuestan 5 × $0.63 = $3.15. Su cambio de $5.00 es $5.00 − $3.15 = $1.85."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g5-mc-q35": {
+      "inputHash": "c0215185edada3a4b174e433dfd01353e4ab12edb893044f08cf828ca083ae63",
+      "explanation": {
+        "text": {
+          "en": "A parallelogram is a four-sided polygon with two pairs of parallel sides. Therefore, every parallelogram is a quadrilateral, though it need not be a square, rectangle, or rhombus.",
+          "es": "Un paralelogramo es un polígono de cuatro lados con dos pares de lados paralelos. Por lo tanto, todo paralelogramo es un cuadrilátero, aunque no tenga que ser cuadrado, rectángulo o rombo."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

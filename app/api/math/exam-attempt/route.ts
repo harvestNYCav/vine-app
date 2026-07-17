@@ -317,6 +317,7 @@ export async function POST(req: NextRequest) {
       pointsPossible: question.points,
       correctAnswer: objective.correctAnswer,
       explanation: localized(question.grading.explanation, language),
+      explanationSource: question.grading.explanationSource,
     })
   }
 

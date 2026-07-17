@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2016-grade-3-mc-v1",
+  "questions": {
+    "nysed-2016-g3-mc-q1": {
+      "inputHash": "115299c9788325a1dee6c895cc8dd3e72dde2f3401a2d2118220b3a7ec8dbdbb",
+      "explanation": {
+        "text": {
+          "en": "At 7:08, the short hour hand should be just past 7 and the long minute hand should point to the eighth minute mark. Clock A shows both positions.",
+          "es": "A las 7:08, la manecilla corta de la hora debe estar un poco después del 7 y la manecilla larga de los minutos debe señalar la octava marca de minuto. El reloj A muestra ambas posiciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q2": {
+      "inputHash": "e39b46d2be5fc874d0c0c09b49f6a6c98ef8eb994ce1631526541d148b9de4dd",
+      "explanation": {
+        "text": {
+          "en": "To round 836 to the nearest ten, look at the ones digit. Since 6 is at least 5, round the tens place up, giving 840.",
+          "es": "Para redondear 836 a la decena más cercana, se mira la cifra de las unidades. Como 6 es al menos 5, se aumenta la cifra de las decenas; por lo tanto, resulta 840."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q3": {
+      "inputHash": "77d2a982f3c7f2fd33bad3a47d981701381220353514bb8cdaf33139f833f279",
+      "explanation": {
+        "text": {
+          "en": "The fraction 4/1 equals 4 because dividing by 1 does not change a number. Therefore, 4/1 and 4 are at the same point on a number line.",
+          "es": "La fracción 4/1 es igual a 4 porque dividir entre 1 no cambia un número. Por lo tanto, 4/1 y 4 están en el mismo punto de la recta numérica."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q7": {
+      "inputHash": "ab302f5353fe38fd2809c161b5fbf03763cc614f81094c93a0859377866ed3f0",
+      "explanation": {
+        "text": {
+          "en": "The pattern adds 20 each time. Continuing 20, 40, 60, 80, 100, 120, 140 gives 160 as the eighth number.",
+          "es": "El patrón suma 20 cada vez. Al continuar 20, 40, 60, 80, 100, 120, 140, por lo tanto se obtiene 160 como el octavo número."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q8": {
+      "inputHash": "afe938bca1e4c452acb2d8ad0273cb532ff59608b6a763b684fef2c2546a0f6d",
+      "explanation": {
+        "text": {
+          "en": "Substituting 6 into 48 ÷ ? = 8 gives 48 ÷ 6 = 8, which is true. The other equations are not made true by 6.",
+          "es": "Al sustituir 6 en 48 ÷ ? = 8 se obtiene 48 ÷ 6 = 8, que es verdadero. Las otras ecuaciones no se hacen verdaderas con 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q12": {
+      "inputHash": "bf28685b6554dec1635f4e4d8ae196c3bd20acb5563f9e7ea866ea5ab652ba80",
+      "explanation": {
+        "text": {
+          "en": "The totals in the table are 4, 8, 12, and 16 wheels. Each total is 4 more than the one before it, so the number of wheels increases by 4 each time.",
+          "es": "Los totales de la tabla son 4, 8, 12 y 16 ruedas. Cada total es 4 mayor que el anterior, así que el número de ruedas aumenta en 4 cada vez."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q13": {
+      "inputHash": "5ada0e3a185b6cc10ece6e8c1decf0857b66a17b6f946bd864581423be5d0081",
+      "explanation": {
+        "text": {
+          "en": "The missing factor in 5 × ? = 45 is found with the inverse operation: 45 ÷ 5 = 9. Therefore, 45 ÷ 5 is the expression that finds the missing value.",
+          "es": "El factor que falta en 5 × ? = 45 se encuentra con la operación inversa: 45 ÷ 5 = 9. Por lo tanto, 45 ÷ 5 es la expresión que encuentra el valor faltante."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q14": {
+      "inputHash": "9c304056944f2d8661234d108d60da2e6591b95d1a98ae721ac363e9242149f3",
+      "explanation": {
+        "text": {
+          "en": "Split the poster into two nonoverlapping rectangles. Their areas are 8 × 4 = 32 and 8 × 3 = 24 square inches, and 32 + 24 = 56 square inches.",
+          "es": "Se divide el cartel en dos rectángulos que no se superponen. Sus áreas son 8 × 4 = 32 y 8 × 3 = 24 pulgadas cuadradas, y 32 + 24 = 56 pulgadas cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q19": {
+      "inputHash": "2301d53a2fda87a01ae718e219aafe35a5c8edf2b7db556fe57be562048066fc",
+      "explanation": {
+        "text": {
+          "en": "The 56 miles are shared equally among 7 days, so divide: 56 ÷ 7 = 8. Maddie rides 8 miles each day.",
+          "es": "Las 56 millas se reparten por igual entre 7 días, así que se divide: 56 ÷ 7 = 8. Maddie recorre 8 millas cada día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q20": {
+      "inputHash": "48a75cca46a846e425da03c43b338b29706ed08f826181948200642e14e2b337",
+      "explanation": {
+        "text": {
+          "en": "Selena's figure is divided into 8 equal triangles, and 5 of them are shaded. The shaded fraction is therefore 5/8.",
+          "es": "La figura de Selena está dividida en 8 triángulos iguales y 5 de ellos están sombreados. Por lo tanto, la fracción sombreada es 5/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q21": {
+      "inputHash": "e992a10cac99fb96b378a72777b13d9a09dc3cf80ee4325d213d7e4f3f36b9b3",
+      "explanation": {
+        "text": {
+          "en": "The expression 7 × 2 represents 7 equal groups of 2. Seven made shots worth 2 points each give 7 × 2 = 14 total points.",
+          "es": "La expresión 7 × 2 representa 7 grupos iguales de 2. Siete tiros encestados de 2 puntos cada uno dan 7 × 2 = 14 puntos en total."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q22": {
+      "inputHash": "2f357787915f12bd8eaa4a0e27cb567aa37e641f090cce25734fcd9b31d059b0",
+      "explanation": {
+        "text": {
+          "en": "Multiplying both the numerator and denominator of 3/4 by 2 gives 6/8. Since 3/4 and 6/8 are equivalent, they mark the same point on a number line.",
+          "es": "Al multiplicar por 2 el numerador y el denominador de 3/4 se obtiene 6/8. Como 3/4 y 6/8 son equivalentes, señalan el mismo punto en una recta numérica."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q23": {
+      "inputHash": "f276cfb804eaa571de5de44d32fb3f0aa472de4e7e7ec6885969ec79160e5a47",
+      "explanation": {
+        "text": {
+          "en": "The equation asks for a number that makes 81 ÷ ? = 9. Since 81 ÷ 9 = 9, the missing number is 9.",
+          "es": "La ecuación pide un número que haga verdadera 81 ÷ ? = 9. Como 81 ÷ 9 = 9, el número faltante es 9."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q24": {
+      "inputHash": "2bf6f828f0105c7980d1cd966ae903c538ad5b79e8904cb7a2bb03248afda5b8",
+      "explanation": {
+        "text": {
+          "en": "Since 9 × 8 = 72, multiplying 9 by 80 gives ten times as much: 9 × 80 = 720.",
+          "es": "Como 9 × 8 = 72, multiplicar 9 por 80 da diez veces esa cantidad: 9 × 80 = 720."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q25": {
+      "inputHash": "f344e3c6f0728a1fdb0123d1d192cca1ae4a2934a7f05fd0b27be096f1ad5330",
+      "explanation": {
+        "text": {
+          "en": "After selling 96 roses, 152 − 96 = 56 roses remain. Sharing them equally among 8 vases gives 56 ÷ 8 = 7 roses per vase.",
+          "es": "Después de vender 96 rosas, quedan 152 − 96 = 56 rosas. Al repartirlas por igual entre 8 floreros, se obtiene 56 ÷ 8 = 7 rosas por florero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q26": {
+      "inputHash": "5d8d65d9291be4c4ea69c29aa905d672e9c7025dcba883575fe38eb06aafef73",
+      "explanation": {
+        "text": {
+          "en": "Shape 3 is divided into 3 equal-area parts, and 2 of those parts are shaded. It therefore shows 2/3 shaded.",
+          "es": "La figura 3 está dividida en 3 partes de igual área y 2 de esas partes están sombreadas. Por eso representa 2/3 sombreado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q27": {
+      "inputHash": "65feeca83f0fa7ca9e8a348212d708034d4d1c7b30e0f624118403f987127141",
+      "explanation": {
+        "text": {
+          "en": "Hiking 6 miles each day for 2 days creates 2 equal groups of 6 miles, so it is represented by 6 × 2. The other situations describe addition, subtraction, or sharing.",
+          "es": "Caminar 6 millas cada día durante 2 días forma 2 grupos iguales de 6 millas, así que se representa con 6 × 2. Las otras situaciones describen suma, resta o reparto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q31": {
+      "inputHash": "c02d471e7dd1dfb95865809aff9ee12459c1306753ed4cb477272c1d437d8dbb",
+      "explanation": {
+        "text": {
+          "en": "Each small square represents 1 square meter. Figure D has 21 squares in its top three rows and 8 more in the two lower legs, for 21 + 8 = 29 square meters.",
+          "es": "Cada cuadrado pequeño representa 1 metro cuadrado. La figura D tiene 21 cuadrados en sus tres filas superiores y 8 más en las dos patas inferiores, para un total de 21 + 8 = 29 metros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q32": {
+      "inputHash": "dc7344eddbee86a92eb70494ae7ac70fa0164bd488575f186d8d43315aed1cc7",
+      "explanation": {
+        "text": {
+          "en": "A number from 850 through 949 rounds to 900 to the nearest hundred. Of the choices, 852 is in that interval, so it rounds to 900.",
+          "es": "Un número desde 850 hasta 949 se redondea a 900 a la centena más cercana. Entre las opciones, 852 está en ese intervalo, así que se redondea a 900."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q33": {
+      "inputHash": "526907776ebd5b4fa9059f77a82f239dd6d6ca1965b08cd73a4d0e0e764c2443",
+      "explanation": {
+        "text": {
+          "en": "The water level is at 12 liters. Dividing 12 liters equally among 3 bowls gives 12 ÷ 3 = 4 liters in each bowl.",
+          "es": "El nivel del agua está en 12 litros. Al repartir 12 litros por igual entre 3 tazones, se obtiene 12 ÷ 3 = 4 litros en cada tazón."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q34": {
+      "inputHash": "a61daa9ab97ae2edbb13db4a6013820c2f8ded705451113c897ba0d6d1ad7ade",
+      "explanation": {
+        "text": {
+          "en": "The game board contains 9 equal small squares, and 1 square is shaded. The shaded fraction is 1 out of 9, or 1/9.",
+          "es": "El tablero contiene 9 cuadrados pequeños iguales y 1 cuadrado está sombreado. Por lo tanto, la fracción sombreada es 1 de 9, es decir, 1/9."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q38": {
+      "inputHash": "afe1c17569515f9c5becc343f6515aae81d89d5922c4f894febed40afd0021bf",
+      "explanation": {
+        "text": {
+          "en": "The shaded poster covers 24 unit squares. Figure A has area 8 × 3 = 24 square units, so it has the same area.",
+          "es": "El cartel sombreado cubre 24 cuadrados unitarios. La figura A tiene un área de 8 × 3 = 24 unidades cuadradas, así que tiene la misma área."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q39": {
+      "inputHash": "dbe44d1f494c1bb60cf5b436edf62070833447ee9aa27f80818db8451fbe8502",
+      "explanation": {
+        "text": {
+          "en": "Both the starting number 28 and the amount added, 14, are multiples of 7. Adding another multiple of 7 keeps every term divisible by 7.",
+          "es": "Tanto el número inicial 28 como la cantidad que se suma, 14, son múltiplos de 7. Sumar otro múltiplo de 7 hace que cada término siga siendo divisible entre 7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q40": {
+      "inputHash": "2b45f9bded5ae45fb9fe1ccae465ba8f1d5902a313acc2ac59395feedc8f63f6",
+      "explanation": {
+        "text": {
+          "en": "There are 6 equal rows with 8 chairs in each row. Multiplying gives 6 × 8 = 48 chairs.",
+          "es": "Hay 6 filas iguales con 8 sillas en cada fila. Al multiplicar, 6 × 8 = 48 sillas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q41": {
+      "inputHash": "a552eccfd359c3582d795e52e1663e9da4953f4805039e9c58060d1581628904",
+      "explanation": {
+        "text": {
+          "en": "If each part is 1/4 of the circle, four equal parts are needed to make the whole because 4 × 1/4 = 1. Therefore, the circle has 4 equal-size parts.",
+          "es": "Si cada parte es 1/4 del círculo, se necesitan cuatro partes iguales para formar el entero porque 4 × 1/4 = 1. Por lo tanto, el círculo tiene 4 partes del mismo tamaño."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g3-mc-q42": {
+      "inputHash": "b536f10f90999dbe9fee1c02675d7539a32447e32481a586ade492710c7694b2",
+      "explanation": {
+        "text": {
+          "en": "First subtract the 190 muffins sent away from the 232 made, then divide the remaining muffins among boxes of 6. This gives the equation (232 − 190) ÷ 6 = b.",
+          "es": "Primero se restan de los 232 muffins hechos los 190 que se enviaron y luego se dividen los muffins restantes en cajas de 6. Esto da la ecuación (232 − 190) ÷ 6 = b."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

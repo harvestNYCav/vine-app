@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2015-grade-3-mc-v1",
+  "questions": {
+    "nysed-2015-g3-mc-q1": {
+      "inputHash": "26eb60b38759f9949524b7c13cd425581e773079beedf1bcad90e55cb703ebbe",
+      "explanation": {
+        "text": {
+          "en": "There are 2 rows with 10 circles in each row, so 2 × 10 = 20 circles. The matching expression is 2 × 10.",
+          "es": "Hay 2 filas con 10 círculos en cada fila, así que 2 × 10 = 20 círculos. La expresión correspondiente es 2 × 10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q2": {
+      "inputHash": "b23debad0771f5cd240eab938b0c5f8a848e8e812580809055fb55d1836798dd",
+      "explanation": {
+        "text": {
+          "en": "The flag has 8 equal sections, and 3 of those sections are gray. Therefore, the gray part represents 3/8 of the flag.",
+          "es": "La bandera tiene 8 secciones iguales y 3 de ellas están sombreadas de gris. Por lo tanto, la parte gris representa 3/8 de la bandera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q3": {
+      "inputHash": "f12ae48fa49aab340f13e2dc4d027ec5d68e19b7c944c1ead9e97fb8953a674a",
+      "explanation": {
+        "text": {
+          "en": "Divide the 63 pages equally among 7 days: 63 ÷ 7 = 9. Alexis read 9 pages each day.",
+          "es": "Se dividen las 63 páginas en partes iguales entre 7 días: 63 ÷ 7 = 9. Alexis leyó 9 páginas cada día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q4": {
+      "inputHash": "10120cecad83454740e7fbd058e27a7a96ced1852cf285b0fdb9313c7508aaec",
+      "explanation": {
+        "text": {
+          "en": "First add the 47 new stamps: 204 + 47 = 251. Then subtract the 38 stamps Selena gave away: 251 − 38 = 213.",
+          "es": "Primero se suman las 47 estampillas nuevas: 204 + 47 = 251. Luego se restan las 38 que Selena regaló: 251 − 38 = 213."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q5": {
+      "inputHash": "586b7cbf1e732cae614faf0ca323fd5c0bd360182d2aacab0a316837a937bdc8",
+      "explanation": {
+        "text": {
+          "en": "The tallies give 4, 6, 2, and 8 students for spring through winter. Since each picture represents 2 students, the graph needs 2, 3, 1, and 4 pictures, which is graph D.",
+          "es": "Las marcas indican 4, 6, 2 y 8 estudiantes de primavera a invierno. Como cada dibujo representa 2 estudiantes, se necesitan 2, 3, 1 y 4 dibujos, que corresponden a la gráfica D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q6": {
+      "inputHash": "3bc073ef6611a19b669ae75987fd2fcfe964147496a6880125e8ccc05e69cdae",
+      "explanation": {
+        "text": {
+          "en": "The ones digit in 637 is 7, so the tens digit rounds up. Thus, 637 rounded to the nearest ten is 640.",
+          "es": "El dígito de las unidades de 637 es 7, así que se aumenta la decena. Por lo tanto, 637 redondeado a la decena más cercana es 640."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q7": {
+      "inputHash": "f7f0e895107c475bd9cd455b6a14ddad23a3f0f6eefd28b704824fd569024157",
+      "explanation": {
+        "text": {
+          "en": "One of the 6 equal parts is already shaded, and the target is 5 shaded parts. Nadia must shade 5 − 1 = 4 more parts.",
+          "es": "Ya está sombreada 1 de las 6 partes iguales y la meta es tener 5 partes sombreadas. Nadia debe sombrear 5 − 1 = 4 partes más."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q8": {
+      "inputHash": "ffde17468549ab825d62c80fd65f9a910a5ad4e1280eda732b7b0131de703a5c",
+      "explanation": {
+        "text": {
+          "en": "The shaded shape contains three rows of 7 unit squares plus 2 more squares below them. Its area is 3 × 7 + 2 = 23 square units.",
+          "es": "La figura sombreada contiene tres filas de 7 cuadrados unitarios y 2 cuadrados más debajo. Su área es 3 × 7 + 2 = 23 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q9": {
+      "inputHash": "c219684d311a5efaac85adf8700f1d293d9de5333dc61474751179dd1f9c55d6",
+      "explanation": {
+        "text": {
+          "en": "Because the 40-kilogram box is heavier than 5 identical cans, each can must weigh less than 40 ÷ 5 = 8 kilograms. A mass of 6 works since 5 × 6 = 30 < 40.",
+          "es": "Como la caja de 40 kilogramos pesa más que 5 latas idénticas, cada lata debe pesar menos de 40 ÷ 5 = 8 kilogramos. Una masa de 6 sirve porque 5 × 6 = 30 < 40."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q10": {
+      "inputHash": "1a81c1b75dc955d75b62e18e352a77f9dbf7a74a5a4b0b1f4e4c488ae580c076",
+      "explanation": {
+        "text": {
+          "en": "The graph shows 2 drawing symbols, 3 reading symbols, and 4 sports symbols. Multiplying each by 2 students gives 4, 6, and 8, matching table A.",
+          "es": "La gráfica muestra 2 símbolos para dibujo, 3 para lectura y 4 para deportes. Al multiplicar cada cantidad por 2 estudiantes se obtienen 4, 6 y 8, que coinciden con la tabla A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q11": {
+      "inputHash": "0d64ad3312b7da2564258235037ffc1a06fe9060748f989d772004afa3f486b5",
+      "explanation": {
+        "text": {
+          "en": "Factor out the common 8: (8 × 5) + (8 × 3) = 8 × (5 + 3) = 8 × 8. Therefore, 8 × 8 has the same value.",
+          "es": "Se saca el factor común 8: (8 × 5) + (8 × 3) = 8 × (5 + 3) = 8 × 8. Por lo tanto, 8 × 8 tiene el mismo valor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q12": {
+      "inputHash": "1c7cbbfecad6d277e40b57e6572d915d3982876760b4a0265ebbf4d86243e506",
+      "explanation": {
+        "text": {
+          "en": "Sorting 20 cars into 4 equal groups requires division. The expression 20 ÷ 4 gives 5 cars in each group.",
+          "es": "Repartir 20 autos en 4 grupos iguales requiere una división. La expresión 20 ÷ 4 da 5 autos en cada grupo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q13": {
+      "inputHash": "748515ad66a6efe991204c5c25e53a6131443f18b33d29d585faa55c474619a7",
+      "explanation": {
+        "text": {
+          "en": "Six equal groups with the same unknown number of dancers must total 42, so 6 × ? = 42. Solving gives ? = 7 dancers per group.",
+          "es": "Seis grupos iguales con la misma cantidad desconocida de bailarines deben sumar 42, así que 6 × ? = 42. Al resolver, ? = 7 bailarines por grupo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q14": {
+      "inputHash": "b30d43ea8f3cb33b2c8fbb3e563c8cdac22ab92deac495cc9b9c353c1e02930f",
+      "explanation": {
+        "text": {
+          "en": "Noel read 90 × 6 = 540 minutes, while Tyra read 60 × 8 = 480 minutes. The difference is 540 − 480 = 60 minutes.",
+          "es": "Noel leyó 90 × 6 = 540 minutos, mientras que Tyra leyó 60 × 8 = 480 minutos. La diferencia es 540 − 480 = 60 minutos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q15": {
+      "inputHash": "c7eade3a41dea76294dc1d19a0489a42c2d7c8a9e64f0a0499d0a87d601b403b",
+      "explanation": {
+        "text": {
+          "en": "Six bags weighing 4 pounds each have a total weight of 6 × 4 = 24 pounds. The other bag-and-weight combinations do not equal 24.",
+          "es": "Seis bolsas de 4 libras cada una pesan en total 6 × 4 = 24 libras. Las otras combinaciones de bolsas y pesos no suman 24."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q16": {
+      "inputHash": "4c5eef6cbdf8206fc658a3efae15e1748963b8ac213e116ca4634860c56062cb",
+      "explanation": {
+        "text": {
+          "en": "The clock shows 8:35 a.m. Adding Tina's 20 minutes gives 8:55, and adding Carlos's 18 more minutes gives 9:13 a.m.",
+          "es": "El reloj marca las 8:35 a. m. Al sumar los 20 minutos de Tina se llega a las 8:55, y al sumar 18 minutos más se llega a las 9:13 a. m."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q17": {
+      "inputHash": "07f349f213fb9d4e54149fff37fe76fbe0294bf09a718f2cfe9828b7b1e08e78",
+      "explanation": {
+        "text": {
+          "en": "There are 8 pitchers and each uses 2 liters of water. Multiplying 8 × 2 = 16 shows that Mrs. Allen used 16 liters in all.",
+          "es": "Hay 8 jarras y cada una usa 2 litros de agua. Al multiplicar 8 × 2 = 16, se obtiene que la señora Allen usó 16 litros en total."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q18": {
+      "inputHash": "453c7e83f3ad51eae0c6eaec26f35741340e74e3d4be834347c9d3bce01de3e6",
+      "explanation": {
+        "text": {
+          "en": "Sunday's 328 tickets round to 300 because 328 is closer to 300 than to 400. The other counts round to either 200 or 400.",
+          "es": "Las 328 entradas del domingo se redondean a 300 porque 328 está más cerca de 300 que de 400. Las otras cantidades se redondean a 200 o a 400."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q19": {
+      "inputHash": "29404d43893d6f90f0246c6b0995da41802859b6d7fde5b03fd361accae337a7",
+      "explanation": {
+        "text": {
+          "en": "The patio is 8 stones wide, with 7 rows of gray stones and 3 rows of white stones. Adding the two rectangular areas gives (8 × 7) + (8 × 3) = 80 square feet.",
+          "es": "El patio tiene 8 piedras de ancho, con 7 filas de piedras grises y 3 filas de piedras blancas. Al sumar las dos áreas rectangulares se obtiene (8 × 7) + (8 × 3) = 80 pies cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q20": {
+      "inputHash": "8e59bd67b1db2620c604b7c42a042ac54d960c985fff9651b3da41e1f0c8c71a",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 is divided into 3 equal parts. Point R is at the second division, so its location is 2/3.",
+          "es": "El intervalo de 0 a 1 está dividido en 3 partes iguales. El punto R está en la segunda división, así que su ubicación es 2/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q21": {
+      "inputHash": "5510e8a7d9e4f4f20874c7c15562415c9b1304af782a87eb4bb415c0f7b7c0e3",
+      "explanation": {
+        "text": {
+          "en": "Each package contains 4 pencils, so the number of packages is 28 ÷ 4 = 7. Indeed, 4 × 7 = 28 pencils.",
+          "es": "Cada paquete contiene 4 lápices, así que la cantidad de paquetes es 28 ÷ 4 = 7. En efecto, 4 × 7 = 28 lápices."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q22": {
+      "inputHash": "184d827d0a1aa0e03a2d35df3f7ad36912f7788673b2625d3fd88b02c2200782",
+      "explanation": {
+        "text": {
+          "en": "Rick gives out 3 muffins each day, one to each child. Dividing 15 ÷ 3 = 5 shows that the muffins last 5 days.",
+          "es": "Rick reparte 3 panecillos cada día, uno a cada hijo. Al dividir 15 ÷ 3 = 5, se obtiene que los panecillos duran 5 días."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q23": {
+      "inputHash": "368e644e3c9d9ba7d6519f54e2edf1d1ae1b3b54166155915de764e26aa6e546",
+      "explanation": {
+        "text": {
+          "en": "Division undoes multiplication, so the missing factor in 10 × ? = 60 is found by 60 ÷ 10. This gives ? = 6.",
+          "es": "La división deshace la multiplicación, así que el factor que falta en 10 × ? = 60 se obtiene con 60 ÷ 10. Esto da ? = 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g3-mc-q24": {
+      "inputHash": "ea9bcbe5deedb8e1c625827676b4ff8da6d55bfb4c0b06d79ce3a390e28029e1",
+      "explanation": {
+        "text": {
+          "en": "Multiplying the numerator and denominator of 1/2 by 3 gives 3/6. Therefore, 1/2 = 3/6 is the true number sentence.",
+          "es": "Al multiplicar por 3 el numerador y el denominador de 1/2 se obtiene 3/6. Por lo tanto, 1/2 = 3/6 es la igualdad verdadera."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

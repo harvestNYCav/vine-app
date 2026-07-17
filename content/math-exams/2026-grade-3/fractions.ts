@@ -28,6 +28,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'A',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The distance from 0 to 1 is split into 4 equal intervals. The first tick after 0 represents 1/4, so A is correct.',
         es: 'La distancia de 0 a 1 está dividida en 4 intervalos iguales. La primera marca después de 0 representa 1/4, por lo que A es correcta.',
@@ -56,6 +57,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'D',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The original model shows 2/3. Choice D shows 4/6, which is equivalent because both the numerator and denominator of 2/3 were multiplied by 2.',
         es: 'El modelo original muestra 2/3. La opción D muestra 4/6, que es equivalente porque el numerador y el denominador de 2/3 se multiplicaron por 2.',
@@ -84,6 +86,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Choice B represents 1/8. With the same denominator, 1/8 is less than 2/8 because 1 is less than 2.',
         es: 'La opción B representa 1/8. Con el mismo denominador, 1/8 es menor que 2/8 porque 1 es menor que 2.',
@@ -112,6 +115,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'In choice C, 3/1 equals 3 and 6/2 also equals 3. Both fractions represent the same whole number.',
         es: 'En la opción C, 3/1 es igual a 3 y 6/2 también es igual a 3. Ambas fracciones representan el mismo número entero.',
@@ -140,6 +144,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'C',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'To locate 6/8, divide the distance from 0 to 1 into 8 equal intervals and count 6 intervals from 0. Choice C does this.',
         es: 'Para ubicar 6/8, divide la distancia de 0 a 1 en 8 intervalos iguales y cuenta 6 intervalos desde 0. La opción C hace esto.',
@@ -168,6 +173,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Both 2/4 and 4/8 are equivalent to 1/2, so the number sentence in choice B is true.',
         es: 'Tanto 2/4 como 4/8 son equivalentes a 1/2, por lo que la oración numérica de la opción B es verdadera.',
@@ -196,6 +202,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'exact',
       acceptedAnswers: ['2/6', '1/3', '2⁄6', '1⁄3', '⅓'],
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The model has 6 equal parts and 2 are shaded, so the shaded fraction is 2/6. The equivalent fraction 1/3 is also correct.',
         es: 'El modelo tiene 6 partes iguales y 2 están sombreadas, por lo que la fracción sombreada es 2/6. La fracción equivalente 1/3 también es correcta.',
@@ -223,6 +230,7 @@ export const FRACTIONS_QUESTIONS: MathExamQuestionRecord[] = [
     },
     grading: {
       mode: 'self-assessed',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Pizza A has the larger slices. Because the pizzas are the same size, dividing one into 6 equal pieces makes larger pieces than dividing one into 8 equal pieces, so 1/6 is greater than 1/8.',
         es: 'La Pizza A tiene las porciones más grandes. Como las pizzas tienen el mismo tamaño, dividir una en 6 partes iguales produce partes más grandes que dividir una en 8 partes iguales, por lo que 1/6 es mayor que 1/8.',

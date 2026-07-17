@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2024-grade-8-mc-v1",
+  "questions": {
+    "nysed-2024-g8-mc-q1": {
+      "inputHash": "dda3a9d1cf56f2212aa626a61052d941cb390512a4ce1ce6fc7f4ab8a0b459bf",
+      "explanation": {
+        "text": {
+          "en": "The n tickets cost $15n, and the single container of popcorn adds $8.99 regardless of n. Therefore the total is c = 15n + 8.99, choice A.",
+          "es": "Los n boletos cuestan $15n, y el único recipiente de palomitas agrega $8.99 sin depender de n. Por lo tanto, el total es c = 15n + 8.99, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q2": {
+      "inputHash": "122a1fcaeb583f8c6950588e432cf6a6c46aded283755a599cc8157c177baa80",
+      "explanation": {
+        "text": {
+          "en": "The scatter plot has a positive trend, and the line through (3, 3) and (9, 7) has positive slope (7 - 3)/(9 - 3) = 2/3 and runs through the center of the data. The other pairs make a decreasing, horizontal, or vertical line, so choice B fits best.",
+          "es": "El diagrama de dispersión tiene una tendencia positiva, y la recta que pasa por (3, 3) y (9, 7) tiene pendiente positiva (7 - 3)/(9 - 3) = 2/3 y atraviesa el centro de los datos. Los otros pares forman una recta decreciente, horizontal o vertical, por lo que la opción B es la mejor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q4": {
+      "inputHash": "433f97ccb4eb0582d0c8702ec72de828623226cc99880701ecba24a4d4563b8b",
+      "explanation": {
+        "text": {
+          "en": "Rotations and reflections preserve angle measures, so the 40° angle in the image is also an angle of the original triangle. The third angle is 180° - 115° - 40° = 25°, choice A.",
+          "es": "Las rotaciones y reflexiones conservan las medidas de los ángulos, así que el ángulo de 40° de la imagen también pertenece al triángulo original. El tercer ángulo es 180° - 115° - 40° = 25°, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q5": {
+      "inputHash": "f46eee237fee807ecd70b57a6b504d3c64675a6ae926a5d1059c3e887b4b56b0",
+      "explanation": {
+        "text": {
+          "en": "Add (3/5)x to both sides and add 7 to both sides to get (2/3 + 3/5)x = 12, or (19/15)x = 12. Thus x = 180/19 = 9 9/19, choice B.",
+          "es": "Suma (3/5)x a ambos lados y suma 7 a ambos lados para obtener (2/3 + 3/5)x = 12, es decir, (19/15)x = 12. Por lo tanto, x = 180/19 = 9 9/19, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q7": {
+      "inputHash": "8675a647389d763b4c87fcae2eeac2b38c51f900e4955119cb46add363fc42b4",
+      "explanation": {
+        "text": {
+          "en": "Electrician B's hourly rate is $150 - $130 = $20, and the initial fee is $130 - 3($20) = $70. Electrician A has a $25 hourly rate and a $50 initial fee, so A's fee is lower but A's rate is higher, choice C.",
+          "es": "La tarifa por hora del electricista B es $150 - $130 = $20, y su cargo inicial es $130 - 3($20) = $70. El electricista A cobra $25 por hora y $50 inicialmente, así que su cargo inicial es menor pero su tarifa por hora es mayor, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q9": {
+      "inputHash": "9a26191b0f5f582b0a0235a06612192671e1ad092a4d7e32e3839eb7322b959c",
+      "explanation": {
+        "text": {
+          "en": "Using the two points, the slope is [2 - (-2)]/[2 - (-1)] = 4/3. Both coordinates increase, so the slope is positive, making choice D correct.",
+          "es": "Al usar los dos puntos, la pendiente es [2 - (-2)]/[2 - (-1)] = 4/3. Ambas coordenadas aumentan, por lo que la pendiente es positiva y corresponde a la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q10": {
+      "inputHash": "fbbdddaf9274008667382df56eb7fe2ac5923d2c454fc8ddd6e391d14d657f0c",
+      "explanation": {
+        "text": {
+          "en": "The sphere's volume is (4/3)π(4^3), while the cone's volume is (1/3)π(3^2)(8). Subtracting cone from sphere and factoring out π gives π[(4/3)(4^3) - (1/3)(3^2)(8)], choice A.",
+          "es": "El volumen de la esfera es (4/3)π(4^3), mientras que el del cono es (1/3)π(3^2)(8). Al restar el cono de la esfera y factorizar π se obtiene π[(4/3)(4^3) - (1/3)(3^2)(8)], opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q12": {
+      "inputHash": "d159a5905e7678981d771267f87b5c3d6b2bd3237d63b620b604c2fb626a107a",
+      "explanation": {
+        "text": {
+          "en": "Taking the cube root of both sides of x^3 = 64 gives x = cube root of 64. Since 4 × 4 × 4 = 64, x = 4, choice A.",
+          "es": "Al sacar la raíz cúbica de ambos lados de x^3 = 64 se obtiene x = raíz cúbica de 64. Ya que 4 × 4 × 4 = 64, x = 4, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q18": {
+      "inputHash": "82e53a7f051b1d0338501df6ee9362ef0c57ae50768744d1799dbb4de8491acf",
+      "explanation": {
+        "text": {
+          "en": "In y = 0.3x + 5.8, the coefficient 0.3 is the slope, or change in weight divided by change in weeks. It represents an approximate gain of 0.3 pound each week, choice B.",
+          "es": "En y = 0.3x + 5.8, el coeficiente 0.3 es la pendiente, es decir, el cambio de peso dividido entre el cambio de semanas. Representa un aumento aproximado de 0.3 libra por semana, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q19": {
+      "inputHash": "595e98edcf719fcd567b06282621cd0c3b326ffe60b241621581847a6929387c",
+      "explanation": {
+        "text": {
+          "en": "Reflecting (x, y) over the x-axis gives (x, -y), and then rotating 180° gives (-x, y). This moves the left trapezoid to its mirror image on the right, so the sequence in choice A works.",
+          "es": "Al reflejar (x, y) sobre el eje x se obtiene (x, -y), y luego una rotación de 180° da (-x, y). Esto lleva el trapecio izquierdo a su imagen reflejada a la derecha, por lo que funciona la secuencia de la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q20": {
+      "inputHash": "b9103843f8034c05f70e2a449563164e254123b9b0422ab7d8fedd11f1608195",
+      "explanation": {
+        "text": {
+          "en": "A linear function has the form y = mx + b, with x only to the first power. The equation y = (1/2)x - 3 has that form, while the other choices contain x^2 or x^3, so choice A is linear.",
+          "es": "Una función lineal tiene la forma y = mx + b, con x solamente a la primera potencia. La ecuación y = (1/2)x - 3 tiene esa forma, mientras que las otras opciones contienen x^2 o x^3; por lo tanto, la opción A es lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q22": {
+      "inputHash": "4163642b374ea4620fef7c5aed9133eca5fd0d62424d1d46fb22922e44b52842",
+      "explanation": {
+        "text": {
+          "en": "The rotation preserves all lengths and angles, and the dilation by 2 preserves angles and doubles every side length. The triangles therefore have proportional sides but different sizes, so they are similar but not congruent, choice B.",
+          "es": "La rotación conserva todas las longitudes y los ángulos, y la dilatación por 2 conserva los ángulos y duplica cada lado. Por lo tanto, los triángulos tienen lados proporcionales pero distinto tamaño: son semejantes pero no congruentes, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q23": {
+      "inputHash": "ffe79c493d6bdf476f011b9899e38f3561213e0e82ee31cb0403c85579530dc8",
+      "explanation": {
+        "text": {
+          "en": "The three interior angles of a triangle add to 180°. After subtracting the two known angles, the third angle is 180 - x - y = 180 - (x + y), choice A.",
+          "es": "Los tres ángulos interiores de un triángulo suman 180°. Al restar los dos ángulos conocidos, el tercero es 180 - x - y = 180 - (x + y), opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q27": {
+      "inputHash": "07e050e8c1929c33196ae7fa57e3251340c540188d7869a37fe1a68be642747a",
+      "explanation": {
+        "text": {
+          "en": "When powers with the same base are divided, subtract the exponents: 3^10 ÷ 3^5 = 3^(10 - 5) = 3^5. Therefore the equivalent expression is choice A.",
+          "es": "Al dividir potencias con la misma base, se restan los exponentes: 3^10 ÷ 3^5 = 3^(10 - 5) = 3^5. Por lo tanto, la expresión equivalente es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q30": {
+      "inputHash": "f6c15c796b006624ff1e8cde873d648cddffca7f998148a836bd0d8c180910e9",
+      "explanation": {
+        "text": {
+          "en": "For a right triangle, the two shorter sides must satisfy a^2 + b^2 = c^2. The numbers 10, 24, and 26 work because 10^2 + 24^2 = 100 + 576 = 676 = 26^2, choice C.",
+          "es": "En un triángulo rectángulo, los dos lados menores deben cumplir a^2 + b^2 = c^2. Los números 10, 24 y 26 funcionan porque 10^2 + 24^2 = 100 + 576 = 676 = 26^2, opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q33": {
+      "inputHash": "5f51833865b639dd2ce4c6494bd6cc2e13090c0abc489cfe2c106aa018f2eaaf",
+      "explanation": {
+        "text": {
+          "en": "Each time x increases by 1, y increases by 3: 7.5, 10.5, 13.5, and 16.5 have constant differences of 3. A constant rate of change means the function is linear, choice B.",
+          "es": "Cada vez que x aumenta en 1, y aumenta en 3: 7.5, 10.5, 13.5 y 16.5 tienen diferencias constantes de 3. Una tasa de cambio constante significa que la función es lineal, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q34": {
+      "inputHash": "9bd97a99b3e7858c4fbaefe87f415b94dc78b265a33128c88daca6b8390f84de",
+      "explanation": {
+        "text": {
+          "en": "A rotation preserves lengths and maps G to G' and H to H'. Therefore side GH has the same length as its image G'H', which is the same segment as H'G' in choice C.",
+          "es": "Una rotación conserva las longitudes y lleva G a G' y H a H'. Por lo tanto, el lado GH tiene la misma longitud que su imagen G'H', que es el mismo segmento H'G' de la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q35": {
+      "inputHash": "08a076e302b541c5dc3b9843778af334796adb379975c51ee99754b6bc3b0d0b",
+      "explanation": {
+        "text": {
+          "en": "Both cans have radius 3.5 cm because the small can's 7 cm measurement is its diameter. Their volume difference is π(3.5)^2(10 - 6) = 49π cubic centimeters, choice B.",
+          "es": "Ambas latas tienen radio de 3.5 cm porque la medida de 7 cm de la lata pequeña es su diámetro. La diferencia de volúmenes es π(3.5)^2(10 - 6) = 49π centímetros cúbicos, opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q36": {
+      "inputHash": "8f511e09d8d1dbe2624db568529a9fffaf5f06c23e57e0dfa94f510b269b9c96",
+      "explanation": {
+        "text": {
+          "en": "Expanding both sides gives 6x + 2 = 6x + 1. Subtracting 6x would require 2 = 1, which is impossible, so the equation has no solutions, choice A.",
+          "es": "Al desarrollar ambos lados se obtiene 6x + 2 = 6x + 1. Restar 6x exigiría que 2 = 1, lo cual es imposible; por lo tanto, la ecuación no tiene soluciones, opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q37": {
+      "inputHash": "6f1c749e974b0672407c0db7cea200ef1ec25177b9d1db88b30998237ed9ee29",
+      "explanation": {
+        "text": {
+          "en": "Since 1.4^2 = 1.96 < 2 and 1.5^2 = 2.25 > 2, the square root of 2 lies between 1.4 and 1.5. Its value is about 1.414, so it is closer to 1.5, choice D.",
+          "es": "Ya que 1.4^2 = 1.96 < 2 y 1.5^2 = 2.25 > 2, la raíz cuadrada de 2 está entre 1.4 y 1.5. Su valor es aproximadamente 1.414, por lo que está más cerca de 1.5, opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g8-mc-q38": {
+      "inputHash": "afd73f143f37e03b40f90d338c42e3f76a51a3809232b132cc9d3549deee7a58",
+      "explanation": {
+        "text": {
+          "en": "A function cannot assign two outputs to the same input. The input -2 appears in both (-2, -1) and (-2, 3), so removing (-2, -1), choice C, leaves each input paired with only one output.",
+          "es": "Una función no puede asignar dos salidas a la misma entrada. La entrada -2 aparece en (-2, -1) y (-2, 3), así que eliminar (-2, -1), opción C, deja cada entrada asociada con una sola salida."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

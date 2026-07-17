@@ -28,6 +28,7 @@ export const GEOMETRY_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'A',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'The whole is divided into 8 equal-area parts, so each single part is 1 out of 8, or 1/8. Choice A is correct.',
         es: 'El entero está dividido en 8 partes de igual área, por lo que cada parte es 1 de 8, o 1/8. La opción A es correcta.',
@@ -56,6 +57,7 @@ export const GEOMETRY_QUESTIONS: MathExamQuestionRecord[] = [
     grading: {
       mode: 'choice',
       correct: 'B',
+      explanationSource: 'vine-authored',
       explanation: {
         en: 'Choice B divides the whole into 4 equal-area squares. Each of those parts is 1/4 of the whole.',
         es: 'La opción B divide el entero en 4 cuadrados de igual área. Cada una de esas partes es 1/4 del entero.',

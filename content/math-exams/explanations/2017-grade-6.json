@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2017-grade-6-mc-v1",
+  "questions": {
+    "nysed-2017-g6-mc-q1": {
+      "inputHash": "bd90b0979a546f4e83cb9b9d3ec9d8bc45651113cf3746c5efad24e14ddb286f",
+      "explanation": {
+        "text": {
+          "en": "Table B has ratios 10:4, 15:6, and 35:14. Each simplifies to 5:2, so the two quantities have one constant ratio.",
+          "es": "La tabla B tiene las razones 10:4, 15:6 y 35:14. Cada una se simplifica a 5:2, por lo que las dos cantidades mantienen una razón constante."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q2": {
+      "inputHash": "403f43b9fceb90862e872e6d70c6864ed1d7cdd4ec91312be2bfe2f40a13680d",
+      "explanation": {
+        "text": {
+          "en": "Solve 2x − 1 < 10: adding 1 gives 2x < 11, then dividing by 2 gives x < 5.5. Only set D, {2, 3, 4}, contains nothing but solutions.",
+          "es": "Resolvemos 2x − 1 < 10: al sumar 1 queda 2x < 11 y al dividir entre 2 queda x < 5.5. Solo el conjunto D, {2, 3, 4}, contiene únicamente soluciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q3": {
+      "inputHash": "e7cc0a5feee5a7c45a5e6d8eb9f4df3cc754c87fbcd6242d37e755314d38e2ad",
+      "explanation": {
+        "text": {
+          "en": "Dividing 2 1/3 by 2/3 gives (7/3) × (3/2) = 7/2 = 3 1/2. Model A shows three whole groups of 2/3 and half of another group.",
+          "es": "Dividir 2 1/3 entre 2/3 da (7/3) × (3/2) = 7/2 = 3 1/2. El modelo A muestra tres grupos completos de 2/3 y la mitad de otro grupo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q4": {
+      "inputHash": "e8fe5e967e0c818af5cdd43cb9f5a3dc064053110e43e48a7f87e44a57a49896",
+      "explanation": {
+        "text": {
+          "en": "Evaluate the grouping first: 4² + 1 = 17. Then 2[3(17)] − 2³ = 2(51) − 8 = 102 − 8 = 94.",
+          "es": "Primero evaluamos la agrupación: 4² + 1 = 17. Luego, 2[3(17)] − 2³ = 2(51) − 8 = 102 − 8 = 94."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q9": {
+      "inputHash": "d42de389796bbcb217572556064f431256e6e8a5a7861d9249754865cc85a007",
+      "explanation": {
+        "text": {
+          "en": "Using Q(6, −2), R(4, −7), and S(2, −5), the coordinate-area calculation is 1/2|6(−2) + 4(−3) + 2(5)| = 1/2|−14| = 7 square units.",
+          "es": "Con Q(6, −2), R(4, −7) y S(2, −5), el cálculo del área por coordenadas es 1/2|6(−2) + 4(−3) + 2(5)| = 1/2|−14| = 7 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q10": {
+      "inputHash": "c15db3ee1face4060c7038295c86caf53fe197f3ee36adc1b07fb5a249828941",
+      "explanation": {
+        "text": {
+          "en": "For F(3, 2) and G(4, 4), FG² = 1² + 2² = 5. Choice C puts H at (5, 1), and FH² = 2² + (−1)² = 5, so those sides are equal.",
+          "es": "Para F(3, 2) y G(4, 4), FG² = 1² + 2² = 5. La opción C coloca H en (5, 1), y FH² = 2² + (−1)² = 5, así que esos lados son iguales."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q13": {
+      "inputHash": "028011c81bb50fe81b61d9b4d14092f322f3256c1d75359d8e37018be3dc812f",
+      "explanation": {
+        "text": {
+          "en": "Each book costs $10, so total cost is y = 10x. Graph A passes through the origin and (5, 50), giving the required constant rate of 10.",
+          "es": "Cada libro cuesta $10, así que el costo total es y = 10x. La gráfica A pasa por el origen y por (5, 50), lo que da la tasa constante requerida de 10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q14": {
+      "inputHash": "7a3dde89495d2cdf17f932db85952cde321078e990f41004acd28dde03fad406",
+      "explanation": {
+        "text": {
+          "en": "In table C, every second quantity divided by the first equals 8: 96/12 = 8, 120/15 = 8, and 136/17 = 8. Therefore its ratios are equivalent.",
+          "es": "En la tabla C, cada segunda cantidad dividida entre la primera es 8: 96/12 = 8, 120/15 = 8 y 136/17 = 8. Por tanto, sus razones son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q15": {
+      "inputHash": "3d9642564ab0f00cafab522840f043a8e6610676a12db8966594480ae3060bc0",
+      "explanation": {
+        "text": {
+          "en": "“Two times m” is 2m. Adding “7 more than” that amount gives 2m + 7, which is the expression in choice A.",
+          "es": "“Dos veces m” es 2m. Al agregar “7 más que” esa cantidad se obtiene 2m + 7, que es la expresión de la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q16": {
+      "inputHash": "b1dcf7ae2341c3c479950996d99580037cca5f5cf6d19725b9bab7ef238349e7",
+      "explanation": {
+        "text": {
+          "en": "The total is $23, while the markers and paper cost more than $14 together. Thus glue price p satisfies p < 23 − 14 = 9, so it is less than $9.",
+          "es": "El total es $23, mientras que los marcadores y el papel juntos cuestan más de $14. Entonces, el precio p del pegamento cumple p < 23 − 14 = 9; es menor que $9."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q17": {
+      "inputHash": "e1420a0ccea2887292555adb2ad656f36bc831e589e4d57be5a7e69dfc533759",
+      "explanation": {
+        "text": {
+          "en": "For side lengths 3, 4, and 6, the three different face areas are 3 × 4 = 12, 3 × 6 = 18, and 4 × 6 = 24, matching the prism shown.",
+          "es": "Con lados 3, 4 y 6, las tres áreas distintas de las caras son 3 × 4 = 12, 3 × 6 = 18 y 4 × 6 = 24, como en el prisma mostrado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q18": {
+      "inputHash": "b4471e5c78a2d9739a4566ea7f2dba22171d1de56955e6ad52edd8395fcd2583",
+      "explanation": {
+        "text": {
+          "en": "$240,000 is 60% of original value x, so 240,000/x = 60/100, equivalently 0.60x = 240,000. Choice A shows this proportion.",
+          "es": "$240,000 representa el 60% del valor original x, así que 240,000/x = 60/100, o 0.60x = 240,000. La opción A muestra esta proporción."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q19": {
+      "inputHash": "17a2e7c8755fdcda66d82ccb0833289d648ed5e4a9c67a04cdfc09636a768de7",
+      "explanation": {
+        "text": {
+          "en": "The sums begin 1 = 1², 1 + 3 = 4 = 2², and 1 + 3 + 5 = 9 = 3². Continuing the pattern, the first n odd numbers sum to n².",
+          "es": "Las sumas comienzan 1 = 1², 1 + 3 = 4 = 2² y 1 + 3 + 5 = 9 = 3². Al continuar el patrón, los primeros n impares suman n²."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q20": {
+      "inputHash": "babd3900155a778fd3f2a8ece7a492ea6d2c00732a20023311c09f94d00ebff2",
+      "explanation": {
+        "text": {
+          "en": "The number of 1/3-gallon pitchers in 3/4 gallon is (3/4) ÷ (1/3) = (3/4)(3) = 9/4 = 2.25. Therefore it lies between 2 and 3.",
+          "es": "La cantidad de jarras de 1/3 de galón en 3/4 de galón es (3/4) ÷ (1/3) = (3/4)(3) = 9/4 = 2.25. Por tanto, está entre 2 y 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q23": {
+      "inputHash": "e517457c83184bc73be63ac2e3647002b36db81cd7aac3b666cbd70dfdc3a677",
+      "explanation": {
+        "text": {
+          "en": "Apply the distributive property to both terms: 5(6x + 3y) = 5·6x + 5·3y = 30x + 15y, which matches choice D.",
+          "es": "Aplicamos la propiedad distributiva a ambos términos: 5(6x + 3y) = 5·6x + 5·3y = 30x + 15y, lo que coincide con la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q24": {
+      "inputHash": "aad76eec8dabcfec9250d7e8923ac0b7da868bfd3e2eaca46e85435e9b848e06",
+      "explanation": {
+        "text": {
+          "en": "Eighty percent is 0.80. Multiplying 64,000 by 0.80 gives 51,200, so 80% of 64,000 is 51,200.",
+          "es": "El ochenta por ciento es 0.80. Al multiplicar 64,000 por 0.80 se obtiene 51,200, así que el 80% de 64,000 es 51,200."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q25": {
+      "inputHash": "ac108438367cd7fdcf8e57c23ebd89194e31bf558bd34a49421bb8ab8422d24b",
+      "explanation": {
+        "text": {
+          "en": "The like terms combine as b + b = 2b, while 3c is unlike them and stays unchanged. The simplified expression is 2b + 3c.",
+          "es": "Los términos semejantes se combinan como b + b = 2b, mientras que 3c no es semejante y queda igual. La expresión simplificada es 2b + 3c."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q26": {
+      "inputHash": "707a25f98de4079915089347e1cc86b34e99cdbe8cf1dd8ea589ce7903772dea",
+      "explanation": {
+        "text": {
+          "en": "Because 84 = 2 × 42, the number 42 divides both 42 and 84. No common factor can exceed the smaller number, so their greatest common factor is 42.",
+          "es": "Como 84 = 2 × 42, el número 42 divide tanto a 42 como a 84. Ningún factor común puede superar al número menor, así que su máximo común divisor es 42."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q27": {
+      "inputHash": "af057d87e563e656ed1eb3bbb531140dd55f7909d2e540fe652bafe80e5f1b27",
+      "explanation": {
+        "text": {
+          "en": "Multiply numerator and denominator by 5: 13/20 = 65/100. Therefore the equivalent fraction has m = 65 and n = 100.",
+          "es": "Multiplicamos el numerador y el denominador por 5: 13/20 = 65/100. Por tanto, la fracción equivalente tiene m = 65 y n = 100."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q28": {
+      "inputHash": "fe5f7a24e1aebf6bd0a2e7349da644c938fa4e07d75c159eeea803c1c25ec9ff",
+      "explanation": {
+        "text": {
+          "en": "Multiples of 4 include 4, 8, 12, 16, 20, …, while multiples of 10 include 10, 20, …. Therefore their first common multiple is LCM(4, 10) = 20.",
+          "es": "Los múltiplos de 4 incluyen 4, 8, 12, 16, 20, …, y los de 10 incluyen 10, 20, …. Por tanto, su primer múltiplo común es mcm(4, 10) = 20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q29": {
+      "inputHash": "6aeb56ab2f367b9f176d3a965a280a454058fef7334d37cca275cdcd0db54c69",
+      "explanation": {
+        "text": {
+          "en": "The surface area is 2(12·9 + 9·2 + 2·12) = 2(108 + 18 + 24) = 300 square units because the prism has two of each face.",
+          "es": "El área de superficie es 2(12·9 + 9·2 + 2·12) = 2(108 + 18 + 24) = 300 unidades cuadradas porque el prisma tiene dos caras de cada tipo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q30": {
+      "inputHash": "c86e8a2de987f79b7c0805299d16fbc277d838b229559d735182d0d552881095",
+      "explanation": {
+        "text": {
+          "en": "The opposite of −5 1/2 is the same distance from zero on the other side: +5 1/2. On the number line, that location is point S.",
+          "es": "El opuesto de −5 1/2 está a la misma distancia de cero pero al otro lado: +5 1/2. En la recta numérica, esa ubicación es el punto S."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q34": {
+      "inputHash": "eb168cd567045f0216ad580e289b4da7a7fdfc7f9e35b1f66776a4147d48b373",
+      "explanation": {
+        "text": {
+          "en": "The unit rate is $17.50 ÷ 2 = $8.75 per hour. Table D follows it: 1 hour costs $8.75, 2 cost $17.50, 3 cost $26.25, and 4 cost $35.",
+          "es": "La tasa unitaria es $17.50 ÷ 2 = $8.75 por hora. La tabla D la sigue: 1 hora cuesta $8.75, 2 cuestan $17.50, 3 cuestan $26.25 y 4 cuestan $35."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q35": {
+      "inputHash": "55dba052ade77d32ef46e5fd42aa8d942bf41a406b8c3cd798ab95b26a83f184",
+      "explanation": {
+        "text": {
+          "en": "At 1 page every 3 minutes, each page takes 3 minutes. Reading 18 pages therefore takes 18 × 3 = 54 minutes.",
+          "es": "A una tasa de 1 página cada 3 minutos, cada página requiere 3 minutos. Por tanto, leer 18 páginas toma 18 × 3 = 54 minutos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q36": {
+      "inputHash": "e506906bd7799071ce64799aaf6ae56aac19d88c3d3281eda734e3f15e3ea0e6",
+      "explanation": {
+        "text": {
+          "en": "K(4, 5) and L(4, −2) share an x-coordinate, so their distance is vertical. The difference is 5 − (−2) = 7 units.",
+          "es": "K(4, 5) y L(4, −2) comparten la coordenada x, así que su distancia es vertical. La diferencia es 5 − (−2) = 7 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q37": {
+      "inputHash": "9bd2068e3fa1d326a5ac3a357a46ec2758c3791289059c5f54cbab5277b894b7",
+      "explanation": {
+        "text": {
+          "en": "Running 5 miles per day for d days gives 5d miles already run. Subtracting from the 100-mile goal leaves 100 − 5d miles.",
+          "es": "Correr 5 millas por día durante d días da 5d millas ya recorridas. Al restarlas de la meta de 100 millas quedan 100 − 5d millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q38": {
+      "inputHash": "e559d57cd9227b93daf63d934b5fe7637a9279aa1472de44e4cbb0fdc9990295",
+      "explanation": {
+        "text": {
+          "en": "Rewrite −8/18 as −4/9 ≈ −0.444 and −17/27 ≈ −0.630. Since −0.444 lies farther right, −8/18 > −17/27.",
+          "es": "Reescribimos −8/18 como −4/9 ≈ −0.444 y −17/27 ≈ −0.630. Como −0.444 queda más a la derecha, −8/18 > −17/27."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q39": {
+      "inputHash": "1bda1aed7b77db85a614d025a91773c7ab5954e043909e831e71b33eb313037c",
+      "explanation": {
+        "text": {
+          "en": "Solve 5.6 + 0.4c ≤ 6c: subtracting 0.4c gives 5.6 ≤ 5.6c, so c ≥ 1. Of the listed values, exactly 1 and 2.5 work.",
+          "es": "Resolvemos 5.6 + 0.4c ≤ 6c: al restar 0.4c queda 5.6 ≤ 5.6c, así que c ≥ 1. De los valores dados, exactamente 1 y 2.5 sirven."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q40": {
+      "inputHash": "c99dd462769249c76942b755a46467a7a834c6f4fd925bdf53270491c9c739c1",
+      "explanation": {
+        "text": {
+          "en": "Volume is length × width × height, so V = 12 × 6.5 × 1.25 = 78 × 1.25 = 97.5 cubic units.",
+          "es": "El volumen es largo × ancho × altura, así que V = 12 × 6.5 × 1.25 = 78 × 1.25 = 97.5 unidades cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q41": {
+      "inputHash": "22672642d5fecac17b1dee3e05dfd49aec0082affa7e543e667cb16713c2c07f",
+      "explanation": {
+        "text": {
+          "en": "Kim runs 135 ÷ 9 = 15 miles weekly, while Eric runs 102 ÷ 6 = 17. Eric therefore runs 17 − 15 = 2 more miles per week.",
+          "es": "Kim corre 135 ÷ 9 = 15 millas por semana, mientras que Eric corre 102 ÷ 6 = 17. Por tanto, Eric corre 17 − 15 = 2 millas más por semana."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q42": {
+      "inputHash": "23887b1104080a9b3f0a80d787f9ee46392352cb6f68f91ef9c16b2c8df6d7a9",
+      "explanation": {
+        "text": {
+          "en": "Lateral area is 8(3 + 4 + 5) = 96. The two triangular bases add 2(1/2·3·4) = 12, giving 96 + 12 = 108 square units.",
+          "es": "El área lateral es 8(3 + 4 + 5) = 96. Las dos bases triangulares suman 2(1/2·3·4) = 12, para un total de 96 + 12 = 108 unidades cuadradas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q43": {
+      "inputHash": "5f0ebab7947bfb0764ace9e1284e9bd329ecda5e27c7e2273c5f0889db04c7fe",
+      "explanation": {
+        "text": {
+          "en": "Distribute y: y(2.5 + 7) + y − 2 = 9.5y + y − 2 = 10.5y − 2. This works for every y, so the expressions are equivalent.",
+          "es": "Distribuimos y: y(2.5 + 7) + y − 2 = 9.5y + y − 2 = 10.5y − 2. Esto funciona para cualquier y, así que las expresiones son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q44": {
+      "inputHash": "b300680bf56d160d548c9994d412c255cb06c1a1896a8bd29394442f6308f427",
+      "explanation": {
+        "text": {
+          "en": "For 10 and 12, the greatest common factor is 2 and least common multiple is 60. Both numbers are at most 12, so choice C meets every condition.",
+          "es": "Para 10 y 12, el máximo común divisor es 2 y el mínimo común múltiplo es 60. Ambos son como máximo 12, así que la opción C cumple todas las condiciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q45": {
+      "inputHash": "6ca7f4c40e6f4b3e830dba03d0015fd932e67da8db36f51de852e6bc50701de5",
+      "explanation": {
+        "text": {
+          "en": "The known terms total x + 2x = 3x. To reach 5x, the missing term must be 5x − 3x = 2x.",
+          "es": "Los términos conocidos suman x + 2x = 3x. Para llegar a 5x, el término que falta debe ser 5x − 3x = 2x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q46": {
+      "inputHash": "7cdb16761063342eb7cbe1772d92cb438937b367ddd4d9705a053d04ca404b46",
+      "explanation": {
+        "text": {
+          "en": "An ordered pair (x, y) moves x units horizontally, then y units vertically. Graph B marks 4 units right and 3 units up; therefore it represents (4, 3).",
+          "es": "Un par ordenado (x, y) avanza x unidades horizontalmente y luego y verticalmente. La gráfica B marca 4 a la derecha y 3 hacia arriba; por tanto, representa (4, 3)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q50": {
+      "inputHash": "0309eae8cb1c2201af1a1109f54528c7c0128051dc7ce40eb4e34eeeb255625b",
+      "explanation": {
+        "text": {
+          "en": "The rectangle’s area is 10 × 14 = 140. The white triangle has height 14 − 6 = 8 and area 1/2(10)(8) = 40, so shaded area is 140 − 40 = 100.",
+          "es": "El área del rectángulo es 10 × 14 = 140. El triángulo blanco tiene altura 14 − 6 = 8 y área 1/2(10)(8) = 40, así que el área sombreada es 140 − 40 = 100."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g6-mc-q51": {
+      "inputHash": "0ab652e1f8edbdf645ac6b798c884f2718bb016b426dc93e3e04810b23ffb1f4",
+      "explanation": {
+        "text": {
+          "en": "At $5.95 per sandwich, x sandwiches cost 5.95x. Equating that amount to the $71.40 bill gives 5.95x = 71.40.",
+          "es": "A $5.95 por sándwich, x sándwiches cuestan 5.95x. Al igualar esa cantidad con la cuenta de $71.40 se obtiene 5.95x = 71.40."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

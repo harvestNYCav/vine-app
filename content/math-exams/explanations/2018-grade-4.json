@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2018-grade-4-mc-v1",
+  "questions": {
+    "nysed-2018-g4-mc-q1": {
+      "inputHash": "f324c2e70802a65775ec1a2fcfb2cdc519cd31dde4a0f172397dc52cef3ea99f",
+      "explanation": {
+        "text": {
+          "en": "Lee threw the ball 3 times Jean's 9-foot distance. Multiplying gives 3 × 9 = d, so Lee threw it 27 feet.",
+          "es": "Lee lanzó la pelota 3 veces la distancia de 9 pies de Jean. Al multiplicar se obtiene 3 × 9 = d, así que Lee la lanzó 27 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q2": {
+      "inputHash": "9752b304b5e4234838423e1324533188dee7c5d27d43459325e6196ace25c842",
+      "explanation": {
+        "text": {
+          "en": "Natasha completed 3/5 + 2/5 = 5/5 of her essay. Evan completed 4/5, so Natasha completed 5/5 − 4/5 = 1/5 more.",
+          "es": "Natasha completó 3/5 + 2/5 = 5/5 de su ensayo. Evan completó 4/5, así que Natasha completó 5/5 − 4/5 = 1/5 más."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q3": {
+      "inputHash": "a9e6cba57f52bee137c8d79b25e372c82a87f45f678a8c49487dc987f359c47c",
+      "explanation": {
+        "text": {
+          "en": "Numbers from 46,500 through 47,499 round to 47,000 to the nearest thousand. Since 46,504 is in that interval, it could be the original number.",
+          "es": "Los números desde 46,500 hasta 47,499 se redondean a 47,000 al millar más cercano. Como 46,504 está en ese intervalo, por lo tanto podría ser el número original."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q4": {
+      "inputHash": "52f5bff5a5388c2384d38e94ef96cf9cf1cb9167b2c156b757f429b220a04714",
+      "explanation": {
+        "text": {
+          "en": "Measuring the span between the two endpoint marks beneath the car gives 2 1/4 inches. That endpoint-to-endpoint distance is the car's pictured length.",
+          "es": "Al medir el espacio entre las dos marcas de los extremos debajo del automóvil se obtienen 2 1/4 pulgadas. Esa distancia de extremo a extremo es la longitud mostrada del automóvil."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q12": {
+      "inputHash": "b3f2eb89f8f9cdf529ee23514109e2329f8a8dd81aa1ef45d61a6ab0fedad1e4",
+      "explanation": {
+        "text": {
+          "en": "The fraction 50/360 of a complete 360° circle is 50/360 × 360° = 50°. Therefore, the angle measures 50°.",
+          "es": "La fracción 50/360 de un círculo completo de 360° es 50/360 × 360° = 50°. Por lo tanto, el ángulo mide 50°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q13": {
+      "inputHash": "71e4ae4cdea6586a34628d175a65ce38a7821a1eba5c9c8e08777c19e3b89499",
+      "explanation": {
+        "text": {
+          "en": "In $16,257, the digit 2 is in the hundreds place and has value $200. Since ten times $200 is $2,000, the price $12,987 works because its digit 2 has value $2,000.",
+          "es": "En $16,257, la cifra 2 está en las centenas y vale $200. Como diez veces $200 es $2,000, el precio $12,987 funciona porque su cifra 2 vale $2,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q14": {
+      "inputHash": "0f75a459ad52ecf64a5cf5eb668fa35b14b324956ea198df9c65675b693e92e9",
+      "explanation": {
+        "text": {
+          "en": "Each term is 3 less than the preceding term: 41 − 3 = 38, 38 − 3 = 35, and so on. The rule is subtract 3.",
+          "es": "Cada término es 3 menor que el anterior: 41 − 3 = 38, 38 − 3 = 35, y así sucesivamente. La regla es restar 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q17": {
+      "inputHash": "a522099cc76e572a5fc43b89babcc4d9f5c165199482b335a2d0c318705ff54a",
+      "explanation": {
+        "text": {
+          "en": "Ray BC is horizontal, and ray BA rises at an angle that is about one-third of a 180° straight angle. Thus angle ABC measures 60°.",
+          "es": "La semirrecta BC es horizontal y la semirrecta BA sube formando aproximadamente un tercio de un ángulo llano de 180°. Por lo tanto, el ángulo ABC mide 60°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q18": {
+      "inputHash": "939de7651caa46b0f4db7c5ea2c648c1751095fb4a5fda5871dd2748d59b0ac4",
+      "explanation": {
+        "text": {
+          "en": "Add the numerators because all terms have denominator 12. Choice D gives 2/12 + 1/12 + 2/12 + 2/12 = 7/12.",
+          "es": "Se suman los numeradores porque todos los términos tienen denominador 12. La opción D da 2/12 + 1/12 + 2/12 + 2/12 = 7/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q23": {
+      "inputHash": "416744a975cb643b4fc887a027b1d3351e485602f9ba9ae8f0a8b1b5bc3e0a52",
+      "explanation": {
+        "text": {
+          "en": "Dividing 1,248 by 7 gives 178 with 2 left over, since 7 × 178 = 1,246 and 1,248 − 1,246 = 2.",
+          "es": "Al dividir 1,248 entre 7 se obtiene 178 con residuo 2, porque 7 × 178 = 1,246 y 1,248 − 1,246 = 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q24": {
+      "inputHash": "d4356d5e89feaf4854faf946db89bbb8a14d719ef9341b205221661e806c318c",
+      "explanation": {
+        "text": {
+          "en": "Forty-six thousand three hundred fifteen is 46,315. Since 46,315 < 46,350, sentence A makes a correct comparison.",
+          "es": "Cuarenta y seis mil trescientos quince es 46,315. Como 46,315 < 46,350, la oración A hace una comparación correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q25": {
+      "inputHash": "133cbbb536f5b8c59373d636ccbf86b42ee65cc2f471a361ac3cf14191eb11c1",
+      "explanation": {
+        "text": {
+          "en": "Rewrite 7 as 21/3: 7 × 3/4 = (21/3) × 3/4 = 21 × 1/4. Therefore, choice C has the same value.",
+          "es": "Se reescribe 7 como 21/3: 7 × 3/4 = (21/3) × 3/4 = 21 × 1/4. Por lo tanto, la opción C tiene el mismo valor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q27": {
+      "inputHash": "a49e64615797c3acedc0cdc2818062a5f7bb79717f1117878db169301f4619a5",
+      "explanation": {
+        "text": {
+          "en": "The first mural's area is 8 × 6 = 48 square feet. A 4-by-12 rectangle also has area 48, but its perimeter is 32 feet instead of the first mural's 28 feet.",
+          "es": "El área del primer mural es 8 × 6 = 48 pies cuadrados. Un rectángulo de 4 por 12 también tiene área 48, pero su perímetro es 32 pies en vez de los 28 pies del primer mural."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q28": {
+      "inputHash": "8d635c7b92406857502c8788f73a4628643e86d60d65c34e05faa189af4476dd",
+      "explanation": {
+        "text": {
+          "en": "After using 12 apples, Jack has 60 − 12 apples left. Dividing those equally among 6 baskets gives the equation (60 − 12) ÷ 6 = a.",
+          "es": "Después de usar 12 manzanas, a Jack le quedan 60 − 12. Al dividirlas por igual entre 6 canastas se obtiene la ecuación (60 − 12) ÷ 6 = a."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q29": {
+      "inputHash": "4749b349a94a83678dafbc07acc9caaf9c5580785750b4b694a4e551fedd2023",
+      "explanation": {
+        "text": {
+          "en": "Heights greater than 4 1/2 inches are plotted to the right of 4 1/2. Counting those Xs gives 14 plants.",
+          "es": "Las alturas mayores que 4 1/2 pulgadas están representadas a la derecha de 4 1/2. Al contar esas X se obtienen 14 plantas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q30": {
+      "inputHash": "038af5aa09a8030bbd8166e0dcf64c5fd3d764d8e65ad9374251d6e0afe3c7f2",
+      "explanation": {
+        "text": {
+          "en": "The fraction 4/12 = 1/3 is less than 1/2, while 5/8 is greater than 1/2. Therefore, 4/12 < 5/8, as stated in choice B.",
+          "es": "La fracción 4/12 = 1/3 es menor que 1/2, mientras que 5/8 es mayor que 1/2. Por lo tanto, 4/12 < 5/8, como indica la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q31": {
+      "inputHash": "273f1542aef20e911aa7d70265a6431447556845b1c240b7dbdd524fce487c5c",
+      "explanation": {
+        "text": {
+          "en": "The letter H matches itself across both a vertical line and a horizontal line through its center. The other letters shown have fewer such reflections, so H has the greatest number of symmetry lines.",
+          "es": "La letra H coincide consigo misma al reflejarse tanto sobre una línea vertical como sobre una horizontal que pasan por su centro. Las otras letras tienen menos reflexiones de este tipo, así que H tiene el mayor número de líneas de simetría."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q32": {
+      "inputHash": "b33d0cd865c6b92a7e3ae92955c6277c3c3d4d252b64212101a13e5b9a1d030f",
+      "explanation": {
+        "text": {
+          "en": "The factor pairs of 36 are 1×36, 2×18, 3×12, 4×9, and 6×6. Listing every number in those pairs gives 1, 2, 3, 4, 6, 9, 12, 18, and 36.",
+          "es": "Los pares de factores de 36 son 1×36, 2×18, 3×12, 4×9 y 6×6. Al enumerar todos los números de esos pares se obtiene 1, 2, 3, 4, 6, 9, 12, 18 y 36."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q33": {
+      "inputHash": "04e50f400497c23954ccd85212c12fd7d273edc1997f2f69e57c162fc7645b09",
+      "explanation": {
+        "text": {
+          "en": "The place values in 125,206 are 100,000 + 20,000 + 5,000 + 200 + 6. This matches expression B.",
+          "es": "Los valores posicionales de 125,206 son 100,000 + 20,000 + 5,000 + 200 + 6. Esto coincide con la expresión B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q34": {
+      "inputHash": "97b3f609ece90a11682626eb30b29d3eef55e37c5bd51f50dfbcfbf779511777",
+      "explanation": {
+        "text": {
+          "en": "Compare each increase with 1/2. Maxine's 2/3 is greater than 1/2; Gina's 3/8 and Vanessa's 3/12 are smaller, and Shari's 2/4 equals 1/2.",
+          "es": "Se compara cada aumento con 1/2. Los 2/3 de Maxine son mayores que 1/2; los 3/8 de Gina y los 3/12 de Vanessa son menores, y los 2/4 de Shari equivalen a 1/2. Por lo tanto, Maxine es la única que cumple."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q35": {
+      "inputHash": "33f92d7b5853164a62abd564bc30cdbe463eba06fef402f36b861c71ff227537",
+      "explanation": {
+        "text": {
+          "en": "The tent used 8 times the unknown amount of fabric for the seat cover and required 24 yards. That relationship is 24 = 8 × ?, so the seat cover used 3 yards.",
+          "es": "La tienda usó 8 veces la cantidad desconocida de tela de la funda y requirió 24 yardas. Esa relación es 24 = 8 × ?, así que la funda usó 3 yardas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q36": {
+      "inputHash": "938968eebed55bcb37b4dccf645b81b61b5de8274fcc2819ee0f05c9d32414c4",
+      "explanation": {
+        "text": {
+          "en": "A 90° turn is one-fourth of the 360° clock face, so the minute hand moves 15 minutes. Starting at 12:00 p.m., recess ended at 12:15 p.m.",
+          "es": "Un giro de 90° es un cuarto de la esfera de 360°, así que la manecilla de los minutos avanza 15 minutos. Al comenzar a las 12:00 p. m., el recreo terminó a las 12:15 p. m."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q37": {
+      "inputHash": "6cf8cd324416b65549d93e935ea582d4685e6b0ce529b16302b0d3be12d89e09",
+      "explanation": {
+        "text": {
+          "en": "In 186,425, the digit 6 is in the thousands place and has value 6,000. Since ten times that is 60,000, the number 462,017 works because its digit 6 has value 60,000.",
+          "es": "En 186,425, la cifra 6 está en los millares y vale 6,000. Como diez veces esa cantidad es 60,000, el número 462,017 funciona porque su cifra 6 vale 60,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g4-mc-q38": {
+      "inputHash": "8f1aa40dfa4ffbfda7b8c800ce640fc23963084cfbdae1ab18ccfa881b976d74",
+      "explanation": {
+        "text": {
+          "en": "The left side is 6 × 5/6 = 5. The right side must also equal 5, and 30 × 1/6 = 5, so 30 fills the blank.",
+          "es": "El lado izquierdo es 6 × 5/6 = 5. El lado derecho también debe ser 5, y 30 × 1/6 = 5, así que 30 completa el espacio."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2015-grade-8-mc-v1",
+  "questions": {
+    "nysed-2015-g8-mc-q2": {
+      "inputHash": "9b107f74ec40b7bc0b94819c062222da39408d302962f8cb35c4b807ee85d071",
+      "explanation": {
+        "text": {
+          "en": "The number 299,792,458 is approximately 300,000,000. In scientific notation, 300,000,000 = 3.0 × 10⁸.",
+          "es": "El número 299,792,458 es aproximadamente 300,000,000. En notación científica, 300,000,000 = 3.0 × 10⁸."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q5": {
+      "inputHash": "e6f4235f7b5cf5ceec1c20913e1e94408f6e2adc8409782d7892e353f9eefe16",
+      "explanation": {
+        "text": {
+          "en": "A system's solution is the point where its two lines intersect. The graph's intersection is approximately 3 units left and 2 units up from the origin, or (−3, 2).",
+          "es": "La solución de un sistema es el punto donde se intersecan sus dos rectas. La intersección está aproximadamente 3 unidades a la izquierda y 2 hacia arriba del origen, es decir, (−3, 2)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q6": {
+      "inputHash": "b9248630e7c1e6edeaad220ccb6d42a4cbd67b96b53f8ee9708e439af1ceca43",
+      "explanation": {
+        "text": {
+          "en": "A linear function has no variable raised above the first power. The term 2x² in y = 2x² + 3x makes its graph quadratic rather than linear.",
+          "es": "Una función lineal no tiene variables elevadas a una potencia mayor que uno. El término 2x² en y = 2x² + 3x hace que su gráfica sea cuadrática y no lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q9": {
+      "inputHash": "bdf424b08aa449eecc81584cf31756c0e959d2baba9a5d376e2378f356bbca04",
+      "explanation": {
+        "text": {
+          "en": "From x = −2 to x = 0, the graph curves downward from about y = 4 to y = 0. It is decreasing because y falls as x increases, and it is nonlinear because the segment is curved.",
+          "es": "Desde x = −2 hasta x = 0, la gráfica se curva hacia abajo desde aproximadamente y = 4 hasta y = 0. Es decreciente porque y baja al aumentar x, y no es lineal porque el tramo es curvo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q12": {
+      "inputHash": "3d1ff635d24401f912e3d2a4353f23c3635780d52e1436ce1b98fc7356f9cbde",
+      "explanation": {
+        "text": {
+          "en": "Let m be the miles driven. Equal costs require 20 + 2m = 3m, so subtracting 2m gives m = 20 miles.",
+          "es": "Sea m la cantidad de millas recorridas. Los costos iguales requieren 20 + 2m = 3m, así que al restar 2m se obtiene m = 20 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q15": {
+      "inputHash": "6fc8df1a1dd00fe78f16670ea86ca04ffc6980b8e5f06c2578b9adea5566d477",
+      "explanation": {
+        "text": {
+          "en": "The slanted line splits a right angle into angles 2n and n + 18, using vertical angles. Thus, 2n + (n + 18) = 90, so 3n = 72 and n = 24.",
+          "es": "La recta inclinada divide un ángulo recto en ángulos de 2n y n + 18, usando ángulos opuestos por el vértice. Entonces, 2n + (n + 18) = 90, de donde 3n = 72 y n = 24."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q16": {
+      "inputHash": "dc14d75388b8fdde77666d7376d095cdc28f111238a646209f8b7d6c52863259",
+      "explanation": {
+        "text": {
+          "en": "The hourly rate is the coefficient of x, $3.50, and the one-time initial fee is the constant $7. Therefore, the model is y = 3.5x + 7.",
+          "es": "La tarifa por hora es el coeficiente de x, $3.50, y el cargo inicial único es la constante $7. Por lo tanto, el modelo es y = 3.5x + 7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q20": {
+      "inputHash": "eae55ec23b538f047e04b2d3252bab44308ffdac37b7b7f75d2bb784c18b18f1",
+      "explanation": {
+        "text": {
+          "en": "The y-intercept is the model's value when x = 0. Since x = 0 represents 7 p.m., the intercept represents the average number of customers at 7 p.m.",
+          "es": "La intersección con el eje y es el valor del modelo cuando x = 0. Como x = 0 representa las 7 p. m., la intersección representa el número promedio de clientes a esa hora."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q25": {
+      "inputHash": "c04f8e1ab96e9c883f1e8229ad1be7df48e7b20a455bfcf442778fb1ccdef983",
+      "explanation": {
+        "text": {
+          "en": "The third angle of triangle M is 180° − 32° − 93° = 55°. Similar triangle N must have the same angle measures, so it can include 93° and 55°.",
+          "es": "El tercer ángulo del triángulo M mide 180° − 32° − 93° = 55°. El triángulo semejante N debe tener los mismos ángulos, así que puede incluir 93° y 55°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q26": {
+      "inputHash": "532e93d021ec72ae41c8d17e78e025419054132de87feea40a431c79bd67f3b8",
+      "explanation": {
+        "text": {
+          "en": "Every vertex of X moves 5 units right and 5 units down to reach the corresponding vertex of Y, a translation by (5, −5). A translation preserves lengths and angles, so the figures are congruent.",
+          "es": "Cada vértice de X se mueve 5 unidades a la derecha y 5 hacia abajo para llegar al vértice correspondiente de Y, una traslación de (5, −5). Una traslación conserva longitudes y ángulos, así que las figuras son congruentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q27": {
+      "inputHash": "1884a23575745dfde338d213d59e5667fe0be33bc60dc5167022fbd263973031",
+      "explanation": {
+        "text": {
+          "en": "Using the product rule, 2⁻⁵ · 2⁸ = 2⁻⁵⁺⁸ = 2³. Option A also equals 2²/2⁻¹ = 2²⁻⁽⁻¹⁾ = 2³.",
+          "es": "Con la regla del producto, 2⁻⁵ · 2⁸ = 2⁻⁵⁺⁸ = 2³. La opción A también equivale a 2²/2⁻¹ = 2²⁻⁽⁻¹⁾ = 2³."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q29": {
+      "inputHash": "c2482f18b329f6c44652226c282eefcfcec7ca482e937891598a6d817023f42a",
+      "explanation": {
+        "text": {
+          "en": "A rate of 3°C per hour means the graph must rise 3 degrees for each 1-hour move right. Graph D rises from 20°C at hour 0 to 26°C at hour 2, giving (26 − 20)/(2 − 0) = 3.",
+          "es": "Una razón de 3°C por hora exige que la gráfica suba 3 grados por cada hora hacia la derecha. La gráfica D sube de 20°C en la hora 0 a 26°C en la hora 2, y (26 − 20)/(2 − 0) = 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q30": {
+      "inputHash": "4a7c65d721c647b618911fe2b9b970ef9570bdb1b7b60e0b38ad202892c58c39",
+      "explanation": {
+        "text": {
+          "en": "Use V = (1/3)πr²h: V = (1/3)π(1.2)²(2.9) = 1.392π ≈ 4.4 cubic inches. This matches the choice showing about 4.4 cubic inches.",
+          "es": "Se usa V = (1/3)πr²h: V = (1/3)π(1.2)²(2.9) = 1.392π ≈ 4.4 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q35": {
+      "inputHash": "90b9ad36f41853ed2b17ad2c84fa0be7cc76d37ffb48a3e700eaccbe89e9552c",
+      "explanation": {
+        "text": {
+          "en": "The slope through (0, −1) and (4, 2) is (2 − (−1))/(4 − 0) = 3/4. Since the y-intercept is −1, the equation is y = (3/4)x − 1.",
+          "es": "La pendiente entre (0, −1) y (4, 2) es (2 − (−1))/(4 − 0) = 3/4. Como la intersección con el eje y es −1, la ecuación es y = (3/4)x − 1."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q36": {
+      "inputHash": "b6887e64532e42fc6d7590ce2806d45a80672b2c3a6b2752d05849ddcdd6444e",
+      "explanation": {
+        "text": {
+          "en": "Substitution gives 5(−6) + 3(8) = −6 and 2(−6) + 8 = −4, so (−6, 8) satisfies both equations. The equations have different slopes, so this intersection is the only solution.",
+          "es": "La sustitución da 5(−6) + 3(8) = −6 y 2(−6) + 8 = −4, así que (−6, 8) satisface ambas ecuaciones. Las rectas tienen pendientes distintas, por lo que esta intersección es la única solución."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q38": {
+      "inputHash": "ae7270d70942f0be914d332c00f878711fdc896e003659f173338b6687c31a7f",
+      "explanation": {
+        "text": {
+          "en": "Using the y-intercept point (0, −2) and (4, 12), the slope is (12 − (−2))/(4 − 0) = 14/4 = 7/2. Thus, the line is y = (7/2)x − 2.",
+          "es": "Con el punto de intersección (0, −2) y el punto (4, 12), la pendiente es (12 − (−2))/(4 − 0) = 14/4 = 7/2. Por lo tanto, la recta es y = (7/2)x − 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q42": {
+      "inputHash": "9a70cf28bcd4c9d193e498d4a742bfcfb5618a76c7124a3ca9c3b9acdede8577",
+      "explanation": {
+        "text": {
+          "en": "Every plane cross-section of a prism is bounded by straight line segments, so it cannot produce two solids with circular bases. Cones, cylinders, and spheres can all be sliced to create circular faces.",
+          "es": "Toda sección plana de un prisma está limitada por segmentos rectos, así que no puede producir dos sólidos con bases circulares. Los conos, cilindros y esferas sí pueden cortarse para crear caras circulares."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q45": {
+      "inputHash": "33fa1eae165563864ae8b2860c73e91d756d2190720de806aeff2f090c807e68",
+      "explanation": {
+        "text": {
+          "en": "Function 1 has slope 3/4 and y-intercept 1. Using the grid, function 2 rises less than 3 units for every 4 units to the right and crosses the y-axis below 0, so function 1 has both the greater rate of change and the greater intercept.",
+          "es": "La función 1 tiene pendiente 3/4 e intersección con el eje y igual a 1. Según la cuadrícula, la función 2 sube menos de 3 unidades por cada 4 hacia la derecha y cruza el eje y debajo de 0, así que la función 1 tiene la mayor razón de cambio y la mayor intersección."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q46": {
+      "inputHash": "3726f99a16c0b2059065f9c183dd61e9f7186cbca59d64347b749194f46856ba",
+      "explanation": {
+        "text": {
+          "en": "The radius is half the 14-centimeter diameter, so r = 7. Using 112π = π(7²)h gives 112 = 49h and h = 112/49 = 16/7 centimeters.",
+          "es": "El radio es la mitad del diámetro de 14 centímetros, así que r = 7. Al usar 112π = π(7²)h se obtiene 112 = 49h y h = 112/49 = 16/7 centímetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q47": {
+      "inputHash": "d3aa7223aef8c7d072ea4ad79640db245b3db2861cb0ecd24ba532de337db1ed",
+      "explanation": {
+        "text": {
+          "en": "Figure L is a 4-by-3 rectangle, while figure M is a 3-by-3 square. Rotations, reflections, and translations preserve side lengths, so they cannot transform these noncongruent figures into each other.",
+          "es": "La figura L es un rectángulo de 4 por 3, mientras que la figura M es un cuadrado de 3 por 3. Las rotaciones, reflexiones y traslaciones conservan las longitudes, así que no pueden transformar estas figuras no congruentes una en otra."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q49": {
+      "inputHash": "4175110b613159f34a3fa84f83c28fc5bdcc6509778b9b63fac5e2b7260ddd0c",
+      "explanation": {
+        "text": {
+          "en": "The two nonparallel lines intersect exactly once, at (−2, 2). That point is the unique solution because it is the only ordered pair lying on both lines simultaneously.",
+          "es": "Las dos rectas no paralelas se intersecan una sola vez, en (−2, 2). Ese punto es la solución única porque es el único par ordenado que pertenece a ambas rectas simultáneamente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q53": {
+      "inputHash": "6e07aabcc2b8bcdd2ee5a7524c53580243e5566de8a8ca747e3c37cc46f1b018",
+      "explanation": {
+        "text": {
+          "en": "The variable x counts years after 1976, and 2020 − 1976 = 44. Therefore, the prediction uses y = −0.054(44) + 44.54.",
+          "es": "La variable x cuenta los años transcurridos desde 1976, y 2020 − 1976 = 44. Por lo tanto, la predicción usa y = −0.054(44) + 44.54."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g8-mc-q54": {
+      "inputHash": "9f1aee7b2e627229d6c26b3ed54140f01efe6d40c76dc8d28204b1eb2af1ebbc",
+      "explanation": {
+        "text": {
+          "en": "The pool's radius is 18 ÷ 2 = 9 feet, and 6 inches = 0.5 foot, so the water depth is 4.5 − 0.5 = 4 feet. The volume is π(9²)(4) = 324π ≈ 1,018 cubic feet.",
+          "es": "El radio de la piscina es 18 ÷ 2 = 9 pies, y 6 pulgadas = 0.5 pie, así que el agua tiene 4.5 − 0.5 = 4 pies de profundidad. El volumen es π(9²)(4) = 324π ≈ 1,018 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

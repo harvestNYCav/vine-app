@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2018-grade-7-mc-v1",
+  "questions": {
+    "nysed-2018-g7-mc-q1": {
+      "inputHash": "161f66dfd9e28fdcd2b7dac679dcc1c027d31c381e2b00c4120dd053630bad4a",
+      "explanation": {
+        "text": {
+          "en": "Dividing 8 by 15 gives 0.5333..., with the digit 3 repeating forever. Choice B shows 0.5 followed by a repeating 3, so B is the decimal equivalent.",
+          "es": "Al dividir 8 entre 15 se obtiene 0.5333..., con el dígito 3 repitiéndose indefinidamente. La opción B muestra 0.5 seguido de un 3 periódico; por eso B es el equivalente decimal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q2": {
+      "inputHash": "e4b1c4a5c66aca2edb2e3f766cf3b09ea85ae06d9d1959101ccff80991b93649",
+      "explanation": {
+        "text": {
+          "en": "Using C = 2πr, the equation 15π = 2πr gives r = 7.5 cm. Then A = πr^2 = π(7.5)^2 = 56.25π square centimeters, choice C.",
+          "es": "Con C = 2πr, la ecuación 15π = 2πr da r = 7.5 cm. Luego, A = πr^2 = π(7.5)^2 = 56.25π centímetros cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q3": {
+      "inputHash": "9ae0a3733e6a2aa0228dca3b44368ab67723d7d28b21862c5c62d62ec981d306",
+      "explanation": {
+        "text": {
+          "en": "First subtract the $2.57 egg cost from the $25.92 total, then divide the remaining cost equally among 5 potato bags. Thus x = (25.92 - 2.57) ÷ 5, the equation in choice A.",
+          "es": "Primero se resta el costo de los huevos, $2.57, del total de $25.92 y luego se divide el costo restante por igual entre 5 bolsas. Así, x = (25.92 - 2.57) ÷ 5, la ecuación de la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q6": {
+      "inputHash": "c59fdb453cfd509d1e28a90e4188137641cd44d776cf744890208a7301529bc9",
+      "explanation": {
+        "text": {
+          "en": "There were 15 + 24 + 12 + 9 = 60 spins, and 12 landed on purple. The experimental probability is 12/60 = 1/5, so choice B is correct.",
+          "es": "Hubo 15 + 24 + 12 + 9 = 60 giros, y 12 cayeron en morado. La probabilidad experimental es 12/60 = 1/5, así que la opción B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q7": {
+      "inputHash": "549cfe48d51d000a900346afad72c2801b6ed2a7e782265518fe6ca2bd6820e7",
+      "explanation": {
+        "text": {
+          "en": "Add the five temperatures and divide by 5: (-36 - 25 + 12 - 3 + 18) ÷ 5 = -34 ÷ 5 = -6.8. The mean is -6.8°F, choice B.",
+          "es": "Se suman las cinco temperaturas y se divide entre 5: (-36 - 25 + 12 - 3 + 18) ÷ 5 = -34 ÷ 5 = -6.8. La media es -6.8°F, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q10": {
+      "inputHash": "e34f4e0d80229003e7405016d259c14aaeee86d94f0b5ccc2ce7ccfdda9840a4",
+      "explanation": {
+        "text": {
+          "en": "Factor -2 from both terms: -18 ÷ (-2) = 9 and -64n ÷ (-2) = 32n. Therefore -18 - 64n = -2(9 + 32n), which is choice C.",
+          "es": "Se factoriza -2 de ambos términos: -18 ÷ (-2) = 9 y -64n ÷ (-2) = 32n. Por lo tanto, -18 - 64n = -2(9 + 32n), que es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q11": {
+      "inputHash": "856ac1c9e210f5af163e2a700f5b9f44ec98e982ea19e8b861ae63990c6c4766",
+      "explanation": {
+        "text": {
+          "en": "For each row, the ratio of miles per hour to kilometers per hour is approximately 0.6215: 11/17.699 ≈ 26/41.834 ≈ 34/54.706. A constant ratio means the relationship is proportional, so choice A is true.",
+          "es": "En cada fila, la razón de millas por hora a kilómetros por hora es aproximadamente 0.6215: 11/17.699 ≈ 26/41.834 ≈ 34/54.706. Una razón constante significa que la relación es proporcional; por eso A es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q16": {
+      "inputHash": "830ba3850cd4643f8ea06d87f6a4fa6a7b7c1158d2948f7c5d272ade86f1ecf7",
+      "explanation": {
+        "text": {
+          "en": "Simple interest is I = Prt = 70(0.045)(3) = $9.45. Adding that interest to the $70 principal gives $79.45, so choice B is the final account balance.",
+          "es": "El interés simple es I = Prt = 70(0.045)(3) = $9.45. Al sumarlo al capital inicial de $70 se obtiene $79.45, así que el saldo final es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q17": {
+      "inputHash": "0c59f6f1020ae82016de28200dd70feb9c0efdc8cb339fd0db83f4323338423a",
+      "explanation": {
+        "text": {
+          "en": "A depth of 24 meters below sea level is -24 meters. Increasing that position by 24 meters gives -24 + 24 = 0, so the situation in choice D ends at zero.",
+          "es": "Una profundidad de 24 metros bajo el nivel del mar se representa con -24. Al aumentar 24 metros se obtiene -24 + 24 = 0; por eso la situación de la opción D termina en cero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q22": {
+      "inputHash": "d47ebbf9ecd0c795956e14376e05027f162ffef2ade30b101b9175707722ae27",
+      "explanation": {
+        "text": {
+          "en": "Ms. Aguilar's class raised 249.00 + 396.62 = $645.62, and Mr. Barry's raised 645.62 - 430.43 = $215.19. The total is 249.00 + 645.62 + 215.19 = $1,109.81, choice D.",
+          "es": "La clase de la Sra. Aguilar recaudó 249.00 + 396.62 = $645.62, y la del Sr. Barry recaudó 645.62 - 430.43 = $215.19. El total es 249.00 + 645.62 + 215.19 = $1,109.81, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q23": {
+      "inputHash": "57d10e14a0f3b1de58c2352c38c895f5b19c951a0129a00d9e59028e4d73ba2c",
+      "explanation": {
+        "text": {
+          "en": "Estimate 19.8 as 20, the 9.8% increase factor as 1.1, and the 5.1% increase factor as 1.05. Applying both successive increases gives 20(1.1)(1.05), which is choice D.",
+          "es": "Se estima 19.8 como 20, el factor de aumento de 9.8% como 1.1 y el de 5.1% como 1.05. Al aplicar los dos aumentos sucesivos se obtiene 20(1.1)(1.05); por lo tanto, corresponde la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q26": {
+      "inputHash": "61bef6d4d62a75678b37a9ac63cdd0e0be42d212672178591fa2742c82423312",
+      "explanation": {
+        "text": {
+          "en": "A 30% discount leaves 70% of $400: 400(0.70) = $280. The additional 10% discount leaves 90% of that sale price, and 280(0.90) = $252, so choice D is correct.",
+          "es": "Un descuento de 30% deja el 70% de $400: 400(0.70) = $280. El descuento adicional de 10% deja el 90% de ese precio, y 280(0.90) = $252; por eso la opción D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q27": {
+      "inputHash": "8e3b9b2cda8f5205e232056d9ebc13b02913274fe56858da13b571f501de68b8",
+      "explanation": {
+        "text": {
+          "en": "The first two terms total -4.5 + 4.4 = -0.1, so the blank must equal 0.1. Choice A gives -6.7 + 6.8 = 0.1, and then -0.1 + 0.1 = 0.",
+          "es": "Los dos primeros términos suman -4.5 + 4.4 = -0.1, así que el espacio debe valer 0.1. La opción A da -6.7 + 6.8 = 0.1, y entonces -0.1 + 0.1 = 0."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q28": {
+      "inputHash": "102a216f0843c922e55cb57ee4f1abcec1a94045779cc064b2514a1a3d67ecea",
+      "explanation": {
+        "text": {
+          "en": "For bus drivers, the interquartile range is 20 - 10 = 10 miles. For teachers it is 30 - 15 = 15 miles, so the bus-driver IQR is 5 miles less, exactly as stated in choice C.",
+          "es": "Para los conductores, el rango intercuartílico es 20 - 10 = 10 millas. Para los maestros es 30 - 15 = 15 millas, así que el primero es 5 millas menor, exactamente como indica la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q29": {
+      "inputHash": "03cefba6a67adf07f4af9ffedec2503119fdcf4afbd947f53838dbe2002f28e0",
+      "explanation": {
+        "text": {
+          "en": "The increase from -8°F to 23°F has magnitude 23 - (-8) = 31°F. Choice D, |-8 - 23|, also equals |-31| = 31, so it represents the increase.",
+          "es": "El aumento de -8°F a 23°F tiene magnitud 23 - (-8) = 31°F. La opción D, |-8 - 23|, también equivale a |-31| = 31; por eso representa el aumento."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q30": {
+      "inputHash": "c79ccee2dcce84e8a81921db4c7000ac6a8454348988e2427b84c202881d8fe7",
+      "explanation": {
+        "text": {
+          "en": "Section 7 appeared 35/250 = 0.14 of the first game's spins. Applying that experimental rate to 150 spins gives 0.14 × 150 = 21, so choice B is the most likely count.",
+          "es": "La sección 7 apareció en 35/250 = 0.14 de los giros del primer juego. Al aplicar esa tasa experimental a 150 giros se obtiene 0.14 × 150 = 21, así que la opción B es la cantidad más probable."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q31": {
+      "inputHash": "4caceabc36638a7de68144c3ba7479299a555f5df5e55e137f3a80fe9d3ed4cc",
+      "explanation": {
+        "text": {
+          "en": "The ordered data have minimum 52, median 58, and maximum 65. The lower-half median is 55 and the upper-half median is 59, so the five-number summary is (52, 55, 58, 59, 65), which only box plot A displays.",
+          "es": "Los datos ordenados tienen mínimo 52, mediana 58 y máximo 65. Las medianas de las mitades son 55 y 59, así que el resumen de cinco números es (52, 55, 58, 59, 65), mostrado solo por la gráfica A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q32": {
+      "inputHash": "363f640f6f12e1b8691bedf0bdc2853e8581a048482ebe2a12d34e7077b9e35d",
+      "explanation": {
+        "text": {
+          "en": "Point F is (1, 5.25): in 1 hour the towboat travels 5.25 miles. A distance for one unit of time is the unit rate in miles per hour, so choice B gives the correct interpretation.",
+          "es": "El punto F es (1, 5.25): en 1 hora el remolcador recorre 5.25 millas. Una distancia por una unidad de tiempo es la tasa unitaria en millas por hora, así que la interpretación correcta es B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q33": {
+      "inputHash": "c2d0bd352297849ce070dff5f86c40aa6ac3c93919e3423c652ee09285329c87",
+      "explanation": {
+        "text": {
+          "en": "Green appeared 45 - 12 - 21 = 12 times. That equals the 12 blue results but is less than the 21 red results, so green is as likely as blue and less likely than red, choice B.",
+          "es": "El fondo verde apareció 45 - 12 - 21 = 12 veces. Esto iguala los 12 resultados azules, pero es menor que los 21 rojos; por eso verde es tan probable como azul y menos probable que rojo, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q34": {
+      "inputHash": "a671a3c946489e0c8a08ad579f197025ee8ccd01138e4b18f6d8406575b1386a",
+      "explanation": {
+        "text": {
+          "en": "A probability must lie from 0 to 1, and a very likely event has a probability close to 1. Of the valid choices, 0.89 is closest to 1, so choice C represents a very likely event.",
+          "es": "Una probabilidad debe estar entre 0 y 1, y un evento muy probable tiene una probabilidad cercana a 1. Entre las opciones válidas, 0.89 es la más cercana a 1; por eso la opción C representa ese evento."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q35": {
+      "inputHash": "a25a4304cb4eec91f8225816e9f54167f57ecdba762bcef4182c2fb0c55b8dee",
+      "explanation": {
+        "text": {
+          "en": "Combine like terms: n + n - 0.18n = 2n - 0.18n = 1.82n. Therefore the equivalent expression is choice B.",
+          "es": "Se combinan los términos semejantes: n + n - 0.18n = 2n - 0.18n = 1.82n. Por lo tanto, la expresión equivalente es la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q36": {
+      "inputHash": "72e14c9ca41d95e6a3a9c78682b5dbc240d52686fd1dad2c33765d1f0b49cbb0",
+      "explanation": {
+        "text": {
+          "en": "Changing 3/4 cup of flour to 1 cup multiplies every ingredient by 1 ÷ (3/4) = 4/3. The salt needed is 1 1/8 × 4/3 = 9/8 × 4/3 = 3/2 = 1 1/2 teaspoons, choice C.",
+          "es": "Cambiar 3/4 de taza de harina a 1 taza multiplica cada ingrediente por 1 ÷ (3/4) = 4/3. La sal necesaria es 1 1/8 × 4/3 = 9/8 × 4/3 = 3/2 = 1 1/2 cucharaditas, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q37": {
+      "inputHash": "289bbffa2be22e0c0a3e8495385feb3370cb9946393b22f2257595f337cf64ee",
+      "explanation": {
+        "text": {
+          "en": "Distribute -1/3: (-1/3)(6x) = -2x and (-1/3)(15) = -5. Then -2x - 5 - 3 = -2x - 8, which is choice D.",
+          "es": "Se distribuye -1/3: (-1/3)(6x) = -2x y (-1/3)(15) = -5. Luego, -2x - 5 - 3 = -2x - 8, que es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q38": {
+      "inputHash": "0c9a88effc05275015ffadba8cc9205f71e0e823e29443a31ccafbdcfa32a21f",
+      "explanation": {
+        "text": {
+          "en": "After x visits, Josh has 15 + 3.5x points. Needing at least 55 means this total must be greater than or equal to 55: 55 ≤ 3.5x + 15, which is choice C.",
+          "es": "Después de x visitas, Josh tiene 15 + 3.5x puntos. Necesitar al menos 55 significa que el total debe ser mayor o igual que 55: 55 ≤ 3.5x + 15, que es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q39": {
+      "inputHash": "8e09e5235e940db36e0b2361c60422d39ae9eda32eadf1a5739766e287a8022d",
+      "explanation": {
+        "text": {
+          "en": "A 20% discount subtracts 20% of the regular price from that price: x - 0.2x. Combining like terms gives 0.8x, so choice D is another expression for the discounted price.",
+          "es": "Un descuento de 20% resta del precio regular el 20% de ese precio: x - 0.2x. Al combinar términos se obtiene 0.8x; por lo tanto, la opción D es otra expresión para el precio rebajado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g7-mc-q40": {
+      "inputHash": "2e8b772f685ac659d42a6b36f828edd8b54b511ac5634dcaa5bcda19b4f8e17b",
+      "explanation": {
+        "text": {
+          "en": "The scale pairs 1 model inch with 6.2 actual meters, while 15 model inches pair with x actual meters. Keeping model/actual in the same order gives 1/6.2 = 15/x, the proportion in choice D.",
+          "es": "La escala relaciona 1 pulgada del modelo con 6.2 metros reales, y 15 pulgadas con x metros. Al mantener el orden modelo/real se obtiene 1/6.2 = 15/x, la proporción de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

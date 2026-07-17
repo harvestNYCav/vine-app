@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2019-grade-4-mc-v1",
+  "questions": {
+    "nysed-2019-g4-mc-q1": {
+      "inputHash": "16253bde51657130fbd65a6f8c224a6d2052b91941c1247c50a92ed2af9649cb",
+      "explanation": {
+        "text": {
+          "en": "Walking 2/3 mile for 5 days gives 5 × 2/3 = 10/3 = 3 1/3 miles.",
+          "es": "Caminar 2/3 de milla durante 5 días da 5 × 2/3 = 10/3 = 3 1/3 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q2": {
+      "inputHash": "693b1687029649a25eeb698cbdf7d8779be569a1d3f83e4fc3e22789a90610ee",
+      "explanation": {
+        "text": {
+          "en": "The multiples of 7 below 45 include 7, 14, 21, 28, 35, and 42. Therefore 35 meets both conditions.",
+          "es": "Los múltiplos de 7 menores que 45 incluyen 7, 14, 21, 28, 35 y 42. Como 35 = 7 × 5, cumple ambas condiciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q3": {
+      "inputHash": "900287884a9f9a78b880c000b56f41426cc8379075dd0c1c179851780fcae884",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 2/3 by 4/4 gives 8/12, so 2/3 = 8/12. This makes comparison A true.",
+          "es": "Al multiplicar 2/3 por 4/4 se obtiene 8/12, así que 2/3 = 8/12. Esto hace verdadera la comparación A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q4": {
+      "inputHash": "79ff65e9f3313eb94b6cdf7a5f1dece3313499da749d7e10fbe789536e1982d1",
+      "explanation": {
+        "text": {
+          "en": "The blue section seats 200 − 20 = 180 people, and the green section seats 2 × 180 = 360. The total is 200 + 180 + 360 = 740.",
+          "es": "La sección azul tiene 200 − 20 = 180 asientos y la verde tiene 2 × 180 = 360. El total es 200 + 180 + 360 = 740."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q5": {
+      "inputHash": "db0ba8e02083b8faa074807b604898f69aba66afe6ece02127e232be65bf9015",
+      "explanation": {
+        "text": {
+          "en": "A line segment has exactly two endpoints and does not continue past them. Figure A has an endpoint at each end and no arrows, so it is a line segment.",
+          "es": "Un segmento tiene exactamente dos extremos y no continúa más allá de ellos. La figura A tiene un extremo en cada lado y no tiene flechas, por lo que es un segmento."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q8": {
+      "inputHash": "c45edc04e71c199d70d006a8bd6756c28262f975f4791545fbe6e0432e0c103d",
+      "explanation": {
+        "text": {
+          "en": "The target fraction simplifies as 3/12 = 1/4. Model B shades 1 of 4 equal parts, so it represents the same amount.",
+          "es": "La fracción dada se simplifica como 3/12 = 1/4. El modelo B sombrea 1 de 4 partes iguales, por lo que representa la misma cantidad."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q9": {
+      "inputHash": "cb4d18cbdaedac9b3301bc1a798b05e5a74272486ab6fe9359ebb818e3db0126",
+      "explanation": {
+        "text": {
+          "en": "Angle EFG is split into angles EFH and HFG. Since HFG is 34°, EFH = 106° − 34° = 72°.",
+          "es": "El ángulo EFG está dividido en EFH y HFG. Como HFG mide 34°, EFH = 106° − 34° = 72°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q15": {
+      "inputHash": "7b9befd867cf7c74e1f74c7576946b7d3fa997c4fdf9f7492c08a0df30d50aed",
+      "explanation": {
+        "text": {
+          "en": "Break apart the multiplication: 2,816 × 7 = 2,800 × 7 + 16 × 7 = 19,600 + 112 = 19,712.",
+          "es": "Descomponemos la multiplicación: 2,816 × 7 = 2,800 × 7 + 16 × 7 = 19,600 + 112 = 19,712."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q16": {
+      "inputHash": "25e39a48945a377966ab0beea3321a4afc97f003ba0fe22ed25dd41af807658d",
+      "explanation": {
+        "text": {
+          "en": "Since 4 × 578 = 2,312, subtracting from 2,314 leaves 2. Therefore 2,314 ÷ 4 = 578 remainder 2.",
+          "es": "Como 4 × 578 = 2,312, al restarlo de 2,314 quedan 2. Por tanto, 2,314 ÷ 4 = 578 con residuo 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q17": {
+      "inputHash": "c7d0d1a50dc161f0a87ccce5bc55c46532d767ffde46d7030cd5ede6aa197b53",
+      "explanation": {
+        "text": {
+          "en": "The teacher buys 5 × 36 = 180 red folders and 6 × 32 = 192 blue folders, for 372 total. The closest listed number is 380.",
+          "es": "La maestra compra 5 × 36 = 180 carpetas rojas y 6 × 32 = 192 azules, para un total de 372. El número dado más cercano es 380."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q20": {
+      "inputHash": "dcbdab2a55edac77fb9fba7885b9dd4197c8a2d5e7dfd15e986c9e7905fd2fad",
+      "explanation": {
+        "text": {
+          "en": "The number 1,457 rounds up to 1,500, while 1,547 rounds down to 1,500. Thus both numbers in pair C round to the required hundred.",
+          "es": "El número 1,457 se redondea a 1,500 y 1,547 también se redondea a 1,500. Por lo tanto, ambos números del par C llegan a la centena indicada."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q21": {
+      "inputHash": "4016315916587fa8112c7e15b1dd7c2ecc7a44be98e661fcfe8278c1efe6d350",
+      "explanation": {
+        "text": {
+          "en": "Fencing follows all four sides of the rectangle, so the perimeter is 2(55 + 75) = 2(130) = 260 feet.",
+          "es": "La cerca recorre los cuatro lados del rectángulo, así que el perímetro es 2(55 + 75) = 2(130) = 260 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q27": {
+      "inputHash": "04dad3df6ed736a178e85fb76872f4a1e8987db023bfaa008b04c8e6e40d2d1d",
+      "explanation": {
+        "text": {
+          "en": "Each bar is divided into sixths, with 3, 2, and 5 parts shaded. Their sum is 3/6 + 2/6 + 5/6 = 10/6.",
+          "es": "Cada barra está dividida en sextos, con 3, 2 y 5 partes sombreadas. Su suma es 3/6 + 2/6 + 5/6 = 10/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q28": {
+      "inputHash": "6547acd95c829758a3b3aa91bc8de5ff589cd5dcdb221985ecd1d47b7e923940",
+      "explanation": {
+        "text": {
+          "en": "A vertical center line matches the left and right halves, and a horizontal one matches the top and bottom. No diagonal works, so there are 2 symmetry lines.",
+          "es": "Una línea vertical central hace coincidir izquierda y derecha, y una horizontal hace coincidir arriba y abajo. Ninguna diagonal funciona, por lo que hay 2 líneas de simetría."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q29": {
+      "inputHash": "464612b0ca940a32b43e35d3bbd60e82b74994bdd2762fdaa787ca8389d61d70",
+      "explanation": {
+        "text": {
+          "en": "A full circle measures 360°. Therefore 1/360 of a circle measures (1/360) × 360° = 1°.",
+          "es": "Un círculo completo mide 360°. Por tanto, 1/360 de un círculo mide (1/360) × 360° = 1°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q30": {
+      "inputHash": "eed8235da99a359c97bb3538577b5d33f2f6384713a43030ab6b26d92977af6c",
+      "explanation": {
+        "text": {
+          "en": "The model has 4 equal groups of 6, and 4 × 6 = 24. Therefore 24 is 4 times as many as 6.",
+          "es": "El modelo tiene 4 grupos iguales de 6, y 4 × 6 = 24. Por tanto, 24 es 4 veces 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q31": {
+      "inputHash": "b79de65901ea9fe849c7661fce67b1c915798957bbe9f87dc4ff47661f359835",
+      "explanation": {
+        "text": {
+          "en": "The product 4 × 1/3 means four groups with one third shaded in each. Model B shows four rectangles, each divided into thirds with one third shaded.",
+          "es": "El producto 4 × 1/3 significa cuatro grupos con un tercio sombreado en cada uno. El modelo B muestra cuatro rectángulos divididos en tercios, cada uno con un tercio sombreado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q32": {
+      "inputHash": "2b74a1779fa63df5c7ab4fd8786035460ac48a3068020e37585e14492a2975dd",
+      "explanation": {
+        "text": {
+          "en": "The tree is 3 times the truck’s 6-foot height, so its height is found by 6 × 3 = 18 feet. Equation B represents this multiplication.",
+          "es": "El árbol mide 3 veces la altura de 6 pies del camión, así que su altura se obtiene con 6 × 3 = 18 pies. La ecuación B representa esta multiplicación."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q33": {
+      "inputHash": "6ca693031821c34aa3007b09c3ae0b5fed4cbe69831eed1b143a4f60ea8dc467",
+      "explanation": {
+        "text": {
+          "en": "Decompose 4,600 as 4,000 + 600. Then 4,600 ÷ 5 = (4,000 ÷ 5) + (600 ÷ 5), which is expression D.",
+          "es": "Descomponemos 4,600 como 4,000 + 600. Entonces, 4,600 ÷ 5 = (4,000 ÷ 5) + (600 ÷ 5), que es la expresión D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q34": {
+      "inputHash": "03cae71fd05aff39450e2470d68a5cf733fdf7c445e4020475fed37e506abc8b",
+      "explanation": {
+        "text": {
+          "en": "One complete turn is 360°, and 90/360 = 1/4. Therefore a 90° turn is one fourth of the way around a circle.",
+          "es": "Una vuelta completa mide 360°, y 90/360 = 1/4. Por tanto, un giro de 90° es un cuarto de una vuelta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q35": {
+      "inputHash": "d92406ff8301935a23ac11a8a2374f8017a11469cd25cbe115e4c45aebdbb37d",
+      "explanation": {
+        "text": {
+          "en": "The equation 8 = 4 × 2 says that four groups of 2 make 8. Therefore 8 is 4 times as many as 2.",
+          "es": "La ecuación 8 = 4 × 2 dice que cuatro grupos de 2 forman 8. Por tanto, 8 es 4 veces 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q36": {
+      "inputHash": "db51fbad2c576660be03ccac30876fd42fceac1e08029435e7ef349282676350",
+      "explanation": {
+        "text": {
+          "en": "With a protractor centered at the vertex and its baseline on the horizontal ray, the other ray meets 55°. Thus the acute angle measures 55°.",
+          "es": "Al centrar un transportador en el vértice y alinear su base con el rayo horizontal, el otro rayo llega a 55°. Por lo tanto, el ángulo agudo mide 55°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q37": {
+      "inputHash": "954599ecd221b619105bd5fd41241b804ffa777a4691f2c4f90fd994522d156f",
+      "explanation": {
+        "text": {
+          "en": "The original model shades 2 of 5 equal parts, or 2/5. Model D shades 4 of 10 parts, and 4/10 = 2/5 after dividing by 2.",
+          "es": "El modelo original sombrea 2 de 5 partes iguales, o 2/5. El modelo D sombrea 4 de 10 partes, y 4/10 = 2/5 al dividir entre 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g4-mc-q38": {
+      "inputHash": "94eaceb7c0e2608858acd1dbe88a8f7e239727bbb6be949d3051a496ce75279f",
+      "explanation": {
+        "text": {
+          "en": "The segments measure 1 1/2, 2 1/4, 2 1/4, and 2 3/4 inches. Plot C places one X at 1 1/2, two at 2 1/4, and one at 2 3/4.",
+          "es": "Los segmentos miden 1 1/2, 2 1/4, 2 1/4 y 2 3/4 pulgadas. La gráfica C muestra una X en 1 1/2, dos en 2 1/4 y una en 2 3/4."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

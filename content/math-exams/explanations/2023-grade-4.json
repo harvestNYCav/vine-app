@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2023-grade-4-mc-v1",
+  "questions": {
+    "nysed-2023-g4-mc-q1": {
+      "inputHash": "976b81b45415cee904b6784dd821fac2805fbe19eebb51a9ba2acd20b3d4df1d",
+      "explanation": {
+        "text": {
+          "en": "Add each place-value part: 700,000 + 5,000 + 200 + 10 + 9 = 705,219.",
+          "es": "Sumamos cada parte de valor posicional: 700,000 + 5,000 + 200 + 10 + 9 = 705,219."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q2": {
+      "inputHash": "494440c7d77dd36ec33428453682f390d3c5bbdc86cf391af6f365f29d33ca59",
+      "explanation": {
+        "text": {
+          "en": "Carol runs 2 times Jen’s 8 laps, so multiplication models the situation: 8 × 2 = 16 laps.",
+          "es": "Carol corre 2 veces las 8 vueltas de Jen, así que la multiplicación representa la situación: 8 × 2 = 16 vueltas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q5": {
+      "inputHash": "2287d5551982056212c82ed2e036662dcdf5852615fa4dd172c3545de0af9271",
+      "explanation": {
+        "text": {
+          "en": "Use the distributive property: 432 × 6 = (400 × 6) + (30 × 6) + (2 × 6) = 2,400 + 180 + 12 = 2,592.",
+          "es": "Usamos la propiedad distributiva: 432 × 6 = (400 × 6) + (30 × 6) + (2 × 6) = 2,400 + 180 + 12 = 2,592."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q6": {
+      "inputHash": "8490c62003d3ea4f48c61ec6d3e11277c77356943ad95c86d27168207272696c",
+      "explanation": {
+        "text": {
+          "en": "By definition, an acute angle measures less than 90°. An acute triangle has three acute angles, so each of its angles is less than 90°.",
+          "es": "Por definición, un ángulo agudo mide menos de 90°. Un triángulo acutángulo tiene tres ángulos agudos, así que cada ángulo mide menos de 90°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q9": {
+      "inputHash": "5495ed5c902c3c14b7bb5c09dbb2bf4b36332a3bed34a7c2d11a38084eb7e44a",
+      "explanation": {
+        "text": {
+          "en": "Aligning the pencil’s left end with zero on a ruler places its right end at 4 1/4 inches. Therefore its length is 4 1/4 inches.",
+          "es": "Al alinear el extremo izquierdo del lápiz con cero en una regla, el extremo derecho llega a 4 1/4 pulgadas. Por lo tanto, su longitud es 4 1/4 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q10": {
+      "inputHash": "da53b888eecc8b244a6fc244bed73ef6e3f08747067e5fd153c5d2550cb835f6",
+      "explanation": {
+        "text": {
+          "en": "Divide 13 by 3: 3 goes into 13 four times with remainder 1. Therefore 13/3 = 4 1/3.",
+          "es": "Dividimos 13 entre 3: el 3 cabe cuatro veces y queda un residuo de 1. Por lo tanto, 13/3 = 4 1/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q13": {
+      "inputHash": "25ce433ec754896d13626fd9a857a2eaf302a1781a34d46e7dc9eba59091e9b4",
+      "explanation": {
+        "text": {
+          "en": "The shortest height shown is 5 inches and the tallest is 7 1/2 inches. Their difference is 7 1/2 − 5 = 2 1/2 inches.",
+          "es": "La menor altura mostrada es 5 pulgadas y la mayor es 7 1/2 pulgadas. La diferencia es 7 1/2 − 5 = 2 1/2 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q17": {
+      "inputHash": "6208cabe28498cb4ca69199177575875acd6a7898af70df9bdeff534ee91b72d",
+      "explanation": {
+        "text": {
+          "en": "Each term is half the preceding term: 64 ÷ 2 = 32, 32 ÷ 2 = 16, and 16 ÷ 2 = 8. The rule is divide by 2.",
+          "es": "Cada término es la mitad del anterior: 64 ÷ 2 = 32, 32 ÷ 2 = 16 y 16 ÷ 2 = 8. La regla es dividir entre 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q19": {
+      "inputHash": "6d5ba4830767d00d03e8848aa9f1b5832e82e25d4e9b8cfa950a699ad05ad297",
+      "explanation": {
+        "text": {
+          "en": "The right side is 15 × 1/6 = 15/6, while the left is x × 3/6. Solving 3x/6 = 15/6 gives 3x = 15, so x = 5.",
+          "es": "El lado derecho es 15 × 1/6 = 15/6 y el izquierdo es x × 3/6. Al resolver 3x/6 = 15/6 se obtiene 3x = 15, así que x = 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q20": {
+      "inputHash": "9c20c403fb0a360bcefb5e971e1d75ec1d75b2d0bdbb655c3dd21960400f86da",
+      "explanation": {
+        "text": {
+          "en": "If 20 red apples are 5 equal groups of the green-apples amount, then the green amount is 20 ÷ 5 = 4 apples.",
+          "es": "Si 20 manzanas rojas son 5 grupos iguales de la cantidad de verdes, entonces la cantidad de verdes es 20 ÷ 5 = 4 manzanas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q23": {
+      "inputHash": "cf5dee9aa24d28175a5fd7c91f7fa49ee64dbcf923b8aa07daa7bb7e935e4cf2",
+      "explanation": {
+        "text": {
+          "en": "The non-square rectangle in figure A matches across its horizontal and vertical center lines. Its diagonals do not create matching halves, so it has exactly 2 lines of symmetry.",
+          "es": "El rectángulo no cuadrado de la figura A coincide al reflejarse sobre sus líneas centrales horizontal y vertical. Sus diagonales no forman mitades iguales, así que tiene exactamente 2 líneas de simetría."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q25": {
+      "inputHash": "63be2cfd99992f51f3c9bac6eaf9add280765e374a6b779fe03a0b60b6d6123e",
+      "explanation": {
+        "text": {
+          "en": "With a protractor centered at each vertex, angle D reaches the 60° mark. The other drawings are much smaller than, equal to, or greater than 90°.",
+          "es": "Al centrar un transportador en cada vértice, el ángulo D muestra una medida de 60°. Los otros dibujos son mucho menores que, iguales a, o mayores que 90°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q29": {
+      "inputHash": "dda67bd329311db7f43c938ec7c3e5eae9f2a6990d3f4ba47519bc17b2272315",
+      "explanation": {
+        "text": {
+          "en": "The model has 2 of 4 equal parts shaded, so it represents 2/4. Dividing numerator and denominator by 2 gives 2/4 = 1/2.",
+          "es": "El modelo tiene 2 de 4 partes iguales sombreadas, así que representa 2/4. Al dividir numerador y denominador entre 2 se obtiene 2/4 = 1/2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q30": {
+      "inputHash": "fc3d857a5e800f170a2230e46de330df7c09784745d5e9b5a60f8a8e1209e691",
+      "explanation": {
+        "text": {
+          "en": "Since 6 × 1,204 = 7,224, subtracting from 7,225 leaves 1. Therefore 7,225 ÷ 6 = 1,204 remainder 1.",
+          "es": "Como 6 × 1,204 = 7,224, al restarlo de 7,225 queda 1. Por lo tanto, 7,225 ÷ 6 = 1,204 con residuo 1."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q31": {
+      "inputHash": "8bbe9ad1629d7b4bce354aa8657d60440d1ac425ed02ccd4edf64ff86b04ddbb",
+      "explanation": {
+        "text": {
+          "en": "In triangle B, the dotted line passes through the top vertex and the midpoint of the opposite side. Reflecting across it matches the two halves, so it is a line of symmetry.",
+          "es": "En el triángulo B, la línea punteada pasa por el vértice superior y el punto medio del lado opuesto. Al reflejar sobre ella coinciden las dos mitades, así que es una línea de simetría."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q32": {
+      "inputHash": "43069707235cda0e5934d00daefa61e358ced501c0bef964487444eca05a6728",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 2/3 by 2/2 gives 4/6. Therefore the true comparison is 2/3 = 4/6.",
+          "es": "Al multiplicar 2/3 por 2/2 se obtiene 4/6. Por lo tanto, la comparación verdadera es 2/3 = 4/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q33": {
+      "inputHash": "b57c08f16cdfe065df60e65ba8b3fd11d8bc32dbc1a09da1a7caf5b27d50b3c5",
+      "explanation": {
+        "text": {
+          "en": "The bottom side is horizontal and the right side is vertical, so they meet at a 90° angle. Therefore the figure has two perpendicular sides.",
+          "es": "El lado inferior es horizontal y el derecho es vertical, así que se encuentran formando un ángulo de 90°. Por lo tanto, la figura tiene dos lados perpendiculares."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q34": {
+      "inputHash": "b6bca245b1f99ab03edac669d3cb719a5c7fb3cd75cdb9e07dee79edcd4780b8",
+      "explanation": {
+        "text": {
+          "en": "Three packs with 12 markers in each contain 3 × 12 markers. Thus the total n is modeled by 3 × 12 = n.",
+          "es": "Tres paquetes con 12 marcadores en cada uno contienen 3 × 12 marcadores. Por lo tanto, el total n se representa con 3 × 12 = n."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g4-mc-q35": {
+      "inputHash": "d5b8101cd36df99043834aef5517243dd222181ff92f67cf6f6ece6423b94187",
+      "explanation": {
+        "text": {
+          "en": "Break 11 into 10 + 1: 24 × 11 = 24 × 10 + 24 × 1 = 240 + 24 = 264. Thus the product is 264.",
+          "es": "Descomponemos 11 como 10 + 1: 24 × 11 = 24 × 10 + 24 × 1 = 240 + 24 = 264."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

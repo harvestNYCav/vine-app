@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2016-grade-8-mc-v1",
+  "questions": {
+    "nysed-2016-g8-mc-q1": {
+      "inputHash": "dd0a7faa21f51030048e6d895f068624fab85df5293527524f73f3fbfacfbc4e",
+      "explanation": {
+        "text": {
+          "en": "Five restaurant cards and 10 movie cards make 5 + 10 = 15 cards, and their cost is 5($50) + 10($20) = $450.",
+          "es": "Cinco tarjetas de restaurante y 10 de cine suman 5 + 10 = 15 tarjetas, y cuestan 5($50) + 10($20) = $450."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q2": {
+      "inputHash": "973aaee8ee1c861af6451a013b56ebdbfda2201e54401c1888397a662c07dc7d",
+      "explanation": {
+        "text": {
+          "en": "The graph crosses the Fahrenheit axis at 32 when Celsius is 0. Thus the y-intercept represents 32°F at 0°C.",
+          "es": "La gráfica cruza el eje Fahrenheit en 32 cuando Celsius es 0. Por eso, la intersección con y representa 32°F cuando hay 0°C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q3": {
+      "inputHash": "65846b4e11806aa167b0c752a030f83b02c130d6fe5aed5a51b775e3ce6edbd2",
+      "explanation": {
+        "text": {
+          "en": "Divide the city population by 15: (6 × 10^5) ÷ 15 = 0.4 × 10^5 = 4 × 10^4 people.",
+          "es": "Se divide la población de la ciudad entre 15: (6 × 10^5) ÷ 15 = 0.4 × 10^5 = 4 × 10^4 personas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q4": {
+      "inputHash": "2b0cbeae44f619d9bf4dbb40bd3c1749003b2d774fd6f3720c40d050ed998c56",
+      "explanation": {
+        "text": {
+          "en": "Reflecting over the y-axis sends (x, y) to (−x, y), and moving down 7 sends it to (−x, y − 7). For example, (1, 5) maps to (−1, −2) and (3, 2) maps to (−3, −5), matching Q.",
+          "es": "Reflejar sobre el eje y transforma (x, y) en (−x, y), y bajar 7 unidades da (−x, y − 7). Por ejemplo, (1, 5) pasa a (−1, −2) y (3, 2) pasa a (−3, −5), que coinciden con Q."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q5": {
+      "inputHash": "c6d891ebc67a30b21c934d3c892c15e37d5f2c580579d8e7715e16cd72ce782f",
+      "explanation": {
+        "text": {
+          "en": "The steep line has y-intercept 10 and slope −2, so it is y = −2x + 10. The other line passes through the origin with slope −1/2, so it is y = −(1/2)x.",
+          "es": "La recta inclinada tiene intersección 10 y pendiente −2, así que y = −2x + 10. La otra pasa por el origen con pendiente −1/2, así que y = −(1/2)x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q6": {
+      "inputHash": "483de906f9d3d6a7cd438ced999ae86a12464533ce7fd8152c0342507a9f9c81",
+      "explanation": {
+        "text": {
+          "en": "With the same radius and height, V(cone) = (1/3)πr²h while V(cylinder) = πr²h. Dividing the volumes gives a ratio of 1/3 to 1, or 1:3.",
+          "es": "Con el mismo radio y altura, V(cono) = (1/3)πr²h y V(cilindro) = πr²h. Al dividir los volúmenes, la razón es 1/3 a 1, es decir, 1:3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q7": {
+      "inputHash": "a23f5e6416ec26ee6e241394790df3f1e7ae99ac55bfffe8700a3fac103828bb",
+      "explanation": {
+        "text": {
+          "en": "In C = 2πr, the variable r has exponent 1, so the relationship is linear. The formulas A = πr² and V = (4/3)πr³ contain higher powers and are nonlinear.",
+          "es": "En C = 2πr, la variable r tiene exponente 1, así que la relación es lineal. A = πr² y V = (4/3)πr³ tienen potencias mayores y no son lineales."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q8": {
+      "inputHash": "553e670597d068d56caa0ec5946c1d6bdc9ed6d370559f4e1d117a5f37dd5de2",
+      "explanation": {
+        "text": {
+          "en": "As points scored increase, the points allowed are sometimes high and sometimes low. The scattered points show no consistent upward, downward, or curved pattern.",
+          "es": "Cuando aumentan los puntos anotados, los puntos permitidos a veces son altos y a veces bajos. Por lo tanto, no muestran un patrón ascendente, descendente ni curvo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q9": {
+      "inputHash": "4c0b79fe6c7fe117bc380f25321bddf3cbd895b1ab720a413826569857fcf78c",
+      "explanation": {
+        "text": {
+          "en": "Because Bella's line is steeper than Kofi's rate of 15.55 yards per second, her rate must be larger, while Elsie's must be smaller. The matching rates are 15.85 for Bella and 15.15 for Elsie.",
+          "es": "La tasa de Bella debe ser mayor que 15.55 porque su recta es más inclinada, y la de Elsie debe ser menor porque su recta es menos inclinada. Las tasas son 15.85 para Bella y 15.15 para Elsie."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q10": {
+      "inputHash": "4261f2c6f84a1adae070526bb47bc818a4b4f47c840341196f611dd1fb580ab8",
+      "explanation": {
+        "text": {
+          "en": "Every pair in table C satisfies y = 2x: 0 = 2(0), 2 = 2(1), 8 = 2(4), and 18 = 2(9). The constant rate makes the function linear.",
+          "es": "Cada par de la tabla C satisface y = 2x: 0 = 2(0), 2 = 2(1), 8 = 2(4) y 18 = 2(9). La tasa constante hace que la función sea lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q11": {
+      "inputHash": "16821bf417f65ba571b95c528206e6118c15a9a317234f6e3e2065df79a27f1e",
+      "explanation": {
+        "text": {
+          "en": "Multiplying powers with base 5 means adding exponents: 5^(−8) × 5^4 = 5^(−4). A negative exponent gives 5^(−4) = 1/5^4.",
+          "es": "Al multiplicar potencias de base 5 se suman los exponentes: 5^(−8) × 5^4 = 5^(−4). El exponente negativo da 5^(−4) = 1/5^4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q12": {
+      "inputHash": "b45e58b0f0612585aa7145ffd97b42fdf05965fa7fd6bbad488e08c539a9fd7c",
+      "explanation": {
+        "text": {
+          "en": "Distribute and combine terms: 3t + 12 − 4t − 6 = −4, so −t + 6 = −4. Subtracting 6 gives −t = −10, hence t = 10.",
+          "es": "Al distribuir y combinar términos: 3t + 12 − 4t − 6 = −4, entonces −t + 6 = −4. Al restar 6 queda −t = −10, por lo tanto t = 10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q19": {
+      "inputHash": "81621b36620f976c5c4f9c26ee1b9c9a7c62bf79909dd56ca4016460abe84653",
+      "explanation": {
+        "text": {
+          "en": "Ellentown has 3 × 10^3 = 3,000 students. Dividing Pengrove's 30,000 by 3,000 gives 30,000 ÷ 3,000 = 10 times as many.",
+          "es": "Ellentown tiene 3 × 10^3 = 3,000 estudiantes. Al dividir 30,000 entre 3,000 se obtiene 30,000 ÷ 3,000 = 10 veces esa cantidad."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q20": {
+      "inputHash": "d1ea08959df1cf675d5ce1ca6dd38e96d32e8406edf91a3c2db81d93bb2a9932",
+      "explanation": {
+        "text": {
+          "en": "Rotations, reflections, and translations preserve side lengths. Doubling every side while preserving angles requires a dilation with scale factor 2.",
+          "es": "Las rotaciones, reflexiones y traslaciones conservan las longitudes. Duplicar cada lado (×2) y conservar los ángulos requiere una dilatación de factor 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q21": {
+      "inputHash": "a8d75d2661d82f46df1edde6e5042989516ba24ac42e50a9a182e79f137dbbca",
+      "explanation": {
+        "text": {
+          "en": "Function 1 can produce values above −1; for example, x = −5 gives y = 2. Function 2 is a downward-opening parabola whose maximum is y = −2, so only function 2 always stays below −1.",
+          "es": "La función 1 puede dar valores mayores que −1; por ejemplo, x = −5 da y = 2. La función 2 es una parábola hacia abajo cuyo máximo es y = −2, así que solo ella permanece siempre debajo de −1."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q22": {
+      "inputHash": "7a3a4b11cbfa3568222929e3dece4dc4161c5bda6358aeaa490a45c15d2a467d",
+      "explanation": {
+        "text": {
+          "en": "The original rectangle has FG = 3 units and GH = 5 units. A translation preserves lengths, so F'G' = 3 and G'H' = 5.",
+          "es": "El rectángulo original tiene FG = 3 unidades y GH = 5 unidades. Una traslación conserva las longitudes, por lo que F'G' = 3 y G'H' = 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q27": {
+      "inputHash": "0e9be4f836bbeffd49b6b66bbada79fc790508719b7a51d61681cde443fb5ae2",
+      "explanation": {
+        "text": {
+          "en": "The equations have the same left side but different constants. Subtracting them gives 0 = 20, a contradiction, so no ordered pair satisfies both equations.",
+          "es": "Las ecuaciones tienen el mismo lado izquierdo pero constantes distintas. Al restarlas se obtiene 0 = 20, una contradicción, así que ningún par satisface ambas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q28": {
+      "inputHash": "6aaf6116122de4ee0fb51e74facd2a7223ecb8b803dc55cde4f88827f311b0cb",
+      "explanation": {
+        "text": {
+          "en": "A dilation centered at the origin with factor 4 multiplies both coordinates by 4. The vertex (8, 4) maps to (4·8, 4·4) = (32, 16).",
+          "es": "Una dilatación con centro en el origen y factor 4 multiplica ambas coordenadas por 4. El vértice (8, 4) pasa a (4·8, 4·4) = (32, 16)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q29": {
+      "inputHash": "5f7fa6392b18627a6b1763a71b47273f4e617c0a55192cac5a63a6651e886566",
+      "explanation": {
+        "text": {
+          "en": "Compare the downloads by division: (4 × 10^6) ÷ (8 × 10^5) = (4/8) × 10 = 0.5 × 10 = 5.",
+          "es": "Se comparan las descargas mediante división: (4 × 10^6) ÷ (8 × 10^5) = (4/8) × 10 = 0.5 × 10 = 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q30": {
+      "inputHash": "bdc1aac018aebb731a14d2ce93c063ccb01b2ec28ad918d44b59cfa0adf481a3",
+      "explanation": {
+        "text": {
+          "en": "In table D, the input 3 is paired with output 0 and also with output −4. One input having two outputs violates the definition of a function.",
+          "es": "En la tabla D, la entrada 3 se relaciona con la salida 0 y también con −4. Una entrada con dos salidas no representa una función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q34": {
+      "inputHash": "19d9899e95cd740e3d9c040481bbb407050d5d96c66ef5f5a9a89a84c198edf8",
+      "explanation": {
+        "text": {
+          "en": "Overall, 72 of the 150 students preferred the seacoast. The proportion is 72 ÷ 150 = 0.48, which is 48%.",
+          "es": "En total, 72 de los 150 estudiantes prefirieron la costa. La proporción es 72 ÷ 150 = 0.48, que equivale al 48%."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q35": {
+      "inputHash": "7b454a17f12675a80baa114bc8589c1e59fb1a95b8d69355aeef7d8dce06fbaf",
+      "explanation": {
+        "text": {
+          "en": "The cylinder volume is π(3²)(4.75) = 42.75π, and the sphere volume is (4/3)π(3³) = 36π. Their difference is 6.75π ≈ 21.2 cubic inches.",
+          "es": "El cilindro tiene volumen π(3²)(4.75) = 42.75π y la esfera (4/3)π(3³) = 36π. La diferencia es 6.75π ≈ 21.2 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q36": {
+      "inputHash": "03603320048f63d045a302084f6f4daf3ea1f96ebf6205313a9cac7cf4f165eb",
+      "explanation": {
+        "text": {
+          "en": "Company P earns 0.4 ÷ 10 = 0.04 vacation hour per work hour, while the graph for S shows 0.06. At 2,080 hours, the difference is (0.06 − 0.04)(2,080) = 41.6, about 42 hours in favor of S.",
+          "es": "La compañía P da 0.4 ÷ 10 = 0.04 hora de vacaciones por hora trabajada, y S da 0.06. Con 2,080 horas, la diferencia es (0.06 − 0.04)(2,080) = 41.6, unas 42 horas más en S."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q37": {
+      "inputHash": "4dd1af38bc71bc7664ba47df043c335067a9a6c33344ee02a2c5fbd1721d59b0",
+      "explanation": {
+        "text": {
+          "en": "The equation y = x² + 1 contains an x² term, so its rate of change is not constant and its graph is a parabola. The other equations have x only to the first power.",
+          "es": "La ecuación y = x² + 1 contiene x², por lo que su tasa de cambio no es constante y su gráfica es una parábola. Las demás tienen x solo a la primera potencia."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q38": {
+      "inputHash": "9ecee19b16ece9404c6bb4538235cb4aea7a4c6df4396d890ffcd1f3d461e6e3",
+      "explanation": {
+        "text": {
+          "en": "First, (4.8 × 10^8) ÷ (1.2 × 10^4) = 4 × 10^4. Then (4 × 10^4)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088.",
+          "es": "Primero, (4.8 × 10^8) ÷ (1.2 × 10^4) = 4 × 10^4. Luego, (4 × 10^4)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q39": {
+      "inputHash": "b3e4c19309fc7c91583e8aa0086368f2dbc054ac2245de96fd050a0cdbe92172",
+      "explanation": {
+        "text": {
+          "en": "The block begins at 270 feet and loses 2.5 feet of height each second. After s seconds its height is h = 270 − 2.5s.",
+          "es": "El bloque empieza a 270 pies y pierde 2.5 pies de altura cada segundo. Después de s segundos, su altura es h = 270 − 2.5s."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q40": {
+      "inputHash": "82886212cc56e5aa061eb2c0477a9d3f90f49111bf3ab15d0b4449c72e52a471",
+      "explanation": {
+        "text": {
+          "en": "At x = 0, a function's output is its y-intercept. Function P outputs 5, while Q outputs −(1/3)(0) + 4 = 4, so their outputs differ.",
+          "es": "Cuando x = 0, la salida es la intersección con y. La función P da 5 y Q da −(1/3)(0) + 4 = 4, así que sus salidas son distintas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q41": {
+      "inputHash": "a389f9a58d2416e58568ba812d9e1794bc3ccd8f4e760b9353e4a550b9caa7c8",
+      "explanation": {
+        "text": {
+          "en": "A strong linear association places the points close to the line of best fit. Plot D qualifies because its points cluster around the downward-sloping line k, indicating a strong negative linear association.",
+          "es": "Una asociación lineal fuerte coloca los puntos cerca de la recta de ajuste. En la gráfica D, los puntos se agrupan alrededor de la recta descendente k, por lo que la asociación es fuerte y negativa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q47": {
+      "inputHash": "041b89616a87308cbfe4020fb69e954fdb4754c50df364d2b74339b0f5fa54d0",
+      "explanation": {
+        "text": {
+          "en": "Translating by 4 units right and 4 units down maps vertex R(−2, 2) to S(2, −2). The horizontal ray stays on the parallel line and the diagonal ray stays on transversal QT, so the angles coincide.",
+          "es": "Trasladar 4 unidades a la derecha y 4 hacia abajo lleva R(−2, 2) a S(2, −2). El rayo horizontal queda en la paralela y el diagonal en la transversal QT, así que los ángulos coinciden."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q48": {
+      "inputHash": "74fcdf39f0564a4cab76da53664de0f10449aa06aee6cdf2f441117594b0c613",
+      "explanation": {
+        "text": {
+          "en": "The slope is (−0.5 − 0.5)/(3 − (−3)) = −1/6. The midpoint of the two points is (0, 0), so the y-intercept is 0 and the equation is y = −(1/6)x.",
+          "es": "La pendiente es (−0.5 − 0.5)/(3 − (−3)) = −1/6. El punto medio es (0, 0), así que la intersección es 0 y la ecuación es y = −(1/6)x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g8-mc-q49": {
+      "inputHash": "aaf78f7e211ab3454ea045b1ff2f40640c26971c000e91cd3d3d407febb83ca9",
+      "explanation": {
+        "text": {
+          "en": "The graph of J crosses the y-axis at −1. Adding 3/2 gives −1 + 3/2 = 1/2 = 0.5, so function R must have y-intercept 0.5; y = 3x + 0.5 does.",
+          "es": "La gráfica de J cruza el eje y en −1. Al sumar 3/2 se obtiene −1 + 3/2 = 1/2 = 0.5, así que R debe tener intersección 0.5; y = 3x + 0.5 la tiene."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

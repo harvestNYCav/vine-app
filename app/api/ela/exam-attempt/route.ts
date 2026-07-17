@@ -287,6 +287,7 @@ export async function POST(req: NextRequest) {
       pointsPossible: question.points,
       correctAnswer: question.grading.correct,
       explanation: question.grading.explanation,
+      explanationSource: question.grading.explanationSource,
     })
   }
 

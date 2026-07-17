@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2017-grade-8-mc-v1",
+  "questions": {
+    "nysed-2017-g8-mc-q1": {
+      "inputHash": "c6d5c51c3e9075b5318222306e26450f28eb3626a2d54c21f50b6fe1effe566b",
+      "explanation": {
+        "text": {
+          "en": "Moving the decimal in 0.000007 six places to the right produces the coefficient 7. Because the original number is less than 1, the exponent is negative: 0.000007 = 7 × 10^-6, choice A.",
+          "es": "Al mover el punto decimal de 0.000007 seis lugares a la derecha se obtiene el coeficiente 7. Como el número original es menor que 1, el exponente es negativo: 0.000007 = 7 × 10^-6, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q2": {
+      "inputHash": "57f2d6daee38b5d567a2574ae9f6952d79cdd9aba283f48b683278eb2d772539",
+      "explanation": {
+        "text": {
+          "en": "Graph D has every required piece: a rising straight segment from x = -5 to -3, a horizontal segment from -3 to 0, a falling straight segment from 0 to 3, and then a rising curved segment from 3 to 5. Thus D matches all four intervals.",
+          "es": "La gráfica D tiene cada tramo requerido: un segmento recto creciente de x = -5 a -3, uno horizontal de -3 a 0, uno recto decreciente de 0 a 3 y luego una curva creciente de 3 a 5. Por eso D cumple los cuatro intervalos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q3": {
+      "inputHash": "249933c613c2a9114eef701a846b6baa33613f766ff8de0560760f0e512176ac",
+      "explanation": {
+        "text": {
+          "en": "The vertical plane cuts the cube in a rectangle and the square pyramid in a triangle. The triangle's base coincides with the rectangle's top edge, so that shared edge is inside the combined cross-section. The outer boundary has 5 sides, making a pentagon, choice D.",
+          "es": "El plano vertical corta el cubo en un rectángulo y la pirámide cuadrada en un triángulo. La base del triángulo coincide con el lado superior del rectángulo, así que ese lado queda dentro de la sección combinada. El contorno tiene 5 lados: es un pentágono, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q4": {
+      "inputHash": "5c200e97c469b1a0f1fefd0b9c426924c4b1d85c1050416a3f59a3bc13afae83",
+      "explanation": {
+        "text": {
+          "en": "From 4 to 8 months, the total rises from $1,500 to $2,500, so the monthly deposit is ($2,500 - $1,500) ÷ 4 = $250. The initial $500 is the value at t = 0, giving a = 250t + 500, choice C.",
+          "es": "De 4 a 8 meses, el total aumenta de $1,500 a $2,500, así que el depósito mensual es ($2,500 - $1,500) ÷ 4 = $250. Los $500 iniciales corresponden a t = 0; por eso a = 250t + 500, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q5": {
+      "inputHash": "f4a1d11b11df7b3f5516f2f34f96f6b619a4ebb713f2c8c1cc31bdb88bbed34b",
+      "explanation": {
+        "text": {
+          "en": "Choices A and B are both the same 180° rotation, and reflecting across both axes in C also sends (x, y) to (-x, -y), which maps F onto G. For D, the vertex (-5, 2) becomes (5, 2) and then (2, -5), which is not a vertex of G. Therefore D does not work.",
+          "es": "Las opciones A y B son la misma rotación de 180°, y las dos reflexiones de C también transforman (x, y) en (-x, -y), llevando F a G. En D, el vértice (-5, 2) pasa a (5, 2) y luego a (2, -5), que no es vértice de G. Por lo tanto, D no funciona."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q6": {
+      "inputHash": "f86fec862315fcc9b21ab0a31258a1855555661568507d9f1b5db3fc5307926f",
+      "explanation": {
+        "text": {
+          "en": "A linear function has the variable only to the first power. In y = x^2 + 9, the term x^2 makes the graph quadratic rather than a straight line. Therefore the function is nonlinear for the reason stated in choice D.",
+          "es": "En una función lineal, la variable aparece solo a la primera potencia. En y = x^2 + 9, el término x^2 hace que la gráfica sea cuadrática y no una recta. Por lo tanto, la función es no lineal por la razón indicada en la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q7": {
+      "inputHash": "626761d1b736b2445ad809b2f186314d10620fcc905b04a42e2c331c138f5661",
+      "explanation": {
+        "text": {
+          "en": "The required intersection is (3/2, 0). Substituting x = 3/2 into choice B gives y = (4/3)(3/2) - 2 = 2 - 2 = 0. Its slope 4/3 differs from line n's slope -2/3, so the lines meet exactly once, at that point.",
+          "es": "La intersección requerida es (3/2, 0). Al sustituir x = 3/2 en la opción B se obtiene y = (4/3)(3/2) - 2 = 2 - 2 = 0. Su pendiente 4/3 es distinta de la pendiente -2/3 de n, así que las rectas se cruzan una sola vez, en ese punto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q8": {
+      "inputHash": "77b0d2592e6bb126d472d32fb74e5a331ad8b4c303051bd5751d03ddfc2ff5e2",
+      "explanation": {
+        "text": {
+          "en": "For Function F, the rate of change is (24 - 18) ÷ (6 - 4) = 6 ÷ 2 = 3. In y = 4x + 2, Function G has rate of change 4. Since 4 > 3, G's rate is greater, which is choice D.",
+          "es": "Para la Función F, la tasa de cambio es (24 - 18) ÷ (6 - 4) = 6 ÷ 2 = 3. En y = 4x + 2, la Función G tiene tasa de cambio 4. Como 4 > 3, la tasa de G es mayor, que es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q9": {
+      "inputHash": "233aa113b3ed38d35d57a72e7095b3caf85aaba87b2f19f4ea3896051a1a415a",
+      "explanation": {
+        "text": {
+          "en": "Subtract 5 from both sides of (2/3)x + 5 = 1 to get (2/3)x = -4. Multiplying both sides by 3/2 gives x = -4 × 3/2 = -6. Therefore choice A is the solution.",
+          "es": "Se resta 5 de ambos lados de (2/3)x + 5 = 1 para obtener (2/3)x = -4. Al multiplicar ambos lados por 3/2 resulta x = -4 × 3/2 = -6. Por lo tanto, la solución es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q10": {
+      "inputHash": "36557452fc3693ce89be07af406597ada5f5608e6fde06d55cc8b42a3aaf0db4",
+      "explanation": {
+        "text": {
+          "en": "Substitute 11 hours for x in the model: y = 100 - 8.9(11) = 100 - 97.9 = 2.1. The predicted remaining battery power is therefore 2.1%, choice B.",
+          "es": "Se sustituyen 11 horas por x en el modelo: y = 100 - 8.9(11) = 100 - 97.9 = 2.1. Por lo tanto, el porcentaje de energía restante previsto es 2.1%, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q15": {
+      "inputHash": "9907eed198ea9b70af3dc7ba8392869b1de00d3477a933cd7656e9fe981f90ab",
+      "explanation": {
+        "text": {
+          "en": "Let x be ounces of butter and y be cups of flour. The relationship is y = 2.5x, so its graph must pass through the origin and through a point such as (4, 10). Only graph D has that intercept and slope, so D is correct.",
+          "es": "Sea x la cantidad de mantequilla en onzas y sea y la harina en tazas. La relación es y = 2.5x, así que la gráfica debe pasar por el origen y por un punto como (4, 10). Solo la gráfica D tiene esa intersección y pendiente; por eso D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q18": {
+      "inputHash": "54bbbe95212c4ce028f7b1d24562b628c34a8b384c1cec4b831066c7b3fa4f57",
+      "explanation": {
+        "text": {
+          "en": "Rectangle P gives 2[h + (j + 4)] = 20, so h + j = 6. Rectangle Q gives 2[3h + (j + 1)] = 30, so 3h + j = 14. Subtracting yields 2h = 8, hence h = 4 and j = 2, choice C.",
+          "es": "El rectángulo P da 2[h + (j + 4)] = 20, así que h + j = 6. El rectángulo Q da 2[3h + (j + 1)] = 30, así que 3h + j = 14. Al restar se obtiene 2h = 8; entonces h = 4 y j = 2, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q19": {
+      "inputHash": "90a1b3f9c97a463acf72ba5261af8fcf3e61013dc6339900d63bca3bc6d20602",
+      "explanation": {
+        "text": {
+          "en": "In table B, the blue row totals 34 + 46 + 28 = 108 and the green row totals 26 + 40 + 30 = 96. Its columns also total 60 small, 86 medium, and 58 large. Because every given row and column total matches, B is correct.",
+          "es": "En la tabla B, la fila azul suma 34 + 46 + 28 = 108 y la verde suma 26 + 40 + 30 = 96. Sus columnas también suman 60 pequeñas, 86 medianas y 58 grandes. Como coinciden todos los totales de filas y columnas, B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q20": {
+      "inputHash": "10bf2fcf323b93e8c1d06bc4bf059a324acce151a47fe7c51d769900a0d341e4",
+      "explanation": {
+        "text": {
+          "en": "A 90° clockwise rotation sends (x, y) to (y, -x), and a dilation by 1/2 then halves both coordinates. For example, F(-4, -2) becomes (-2, 4) and then (-1, 2), exactly F'. Therefore this is the sequence in choice D.",
+          "es": "Una rotación de 90° en sentido horario transforma (x, y) en (y, -x), y una dilatación de 1/2 divide después ambas coordenadas entre 2. Por ejemplo, F(-4, -2) pasa a (-2, 4) y luego a (-1, 2), que es F'. Por lo tanto, esta es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q24": {
+      "inputHash": "aa56c40f6a55a4894a2c481d060a970eb79cfe40c1c9c6b45861e5a339377883",
+      "explanation": {
+        "text": {
+          "en": "Apply the exponent rules: (2^4)^3 = 2^12, while 2^2 × 2^n = 2^(2+n). Equal bases require equal exponents, so 2 + n = 12 and n = 10. Therefore choice C is correct.",
+          "es": "Se aplican las reglas de exponentes: (2^4)^3 = 2^12, mientras que 2^2 × 2^n = 2^(2+n). Con bases iguales, los exponentes deben ser iguales: 2 + n = 12 y n = 10. Por lo tanto, la opción C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q25": {
+      "inputHash": "f717c80356a6003e9249793a53610179a61183feda9b2748e75e042a5fdc053d",
+      "explanation": {
+        "text": {
+          "en": "A relation is a function when each input has exactly one output. In choice D, the inputs 5, 8, and 9 each appear only once; sharing the same output 6 is allowed. The other choices repeat an input with different outputs, so D is the function.",
+          "es": "Una relación es una función cuando cada entrada tiene exactamente una salida. En la opción D, las entradas 5, 8 y 9 aparecen una sola vez; pueden compartir la salida 6. Las otras opciones repiten una entrada con salidas distintas, así que D es la función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q26": {
+      "inputHash": "f858567bff102a71813461cf96f636861da0d30cd630692754cde7b505c568bc",
+      "explanation": {
+        "text": {
+          "en": "Reflection across the y-axis changes each x-coordinate from x to -x. Only x = 0 remains unchanged because -0 = 0. Of the listed vertices, (0, 3) is the only one with x-coordinate 0, so choice A is correct.",
+          "es": "La reflexión sobre el eje y cambia cada coordenada x por -x. Solo x = 0 queda igual porque -0 = 0. Entre los vértices dados, (0, 3) es el único cuya coordenada x es 0; por eso la opción A es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q27": {
+      "inputHash": "e5ad5985fb1c21b2a32cda48f84601a64e76c33b3d426b0d75d8d3c010a703f8",
+      "explanation": {
+        "text": {
+          "en": "Section P is a straight segment, so it is linear, and it rises from left to right, so it is increasing. That makes choice B true. Section N also rises, Q is horizontal, and R is a rising straight segment, so the other descriptions fail.",
+          "es": "La sección P es un segmento recto, por lo que es lineal, y sube de izquierda a derecha, por lo que es creciente. Así, la opción B es verdadera. La sección N también sube, Q es horizontal y R es un segmento recto creciente; las demás descripciones fallan."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q28": {
+      "inputHash": "c41d77f7f981de605eebeb12ee45ec25faffd695396b6d8a167f7522dde9f64e",
+      "explanation": {
+        "text": {
+          "en": "For a high temperature of 0°F, substitute x = 0 into the model: y = -5.9(0) + 850 = 850. Thus the model predicts about 850 fluid ounces of hot coffee, exactly the statement in choice D.",
+          "es": "Para una temperatura máxima de 0°F, se sustituye x = 0 en el modelo: y = -5.9(0) + 850 = 850. Por lo tanto, el modelo predice unas 850 onzas líquidas de café caliente, exactamente lo que afirma la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q29": {
+      "inputHash": "684787874a0cb353b4a1008835f2f3b11d32c6136886e36114cfeec6414c265f",
+      "explanation": {
+        "text": {
+          "en": "Translate P(2, 4) two units left and down to (0, 2), then reflect across the x-axis to get (0, -2), which is T. The same operations map Q, R, and S to U, V, and W. This is the sequence in choice C.",
+          "es": "Se traslada P(2, 4) dos unidades a la izquierda y hacia abajo para obtener (0, 2), y luego se refleja sobre el eje x para obtener (0, -2), que es T. Las mismas operaciones llevan Q, R y S a U, V y W. Por lo tanto, esta es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q30": {
+      "inputHash": "0b24cb6f26be3d29d91dadeccc0bedc43e4d003679b73c184294c0d5b01e3744",
+      "explanation": {
+        "text": {
+          "en": "Box J has surface area 2(3 × 4.5 + 3 × 2 + 4.5 × 2) = 57 square feet. Box F is a 3-foot cube, so its surface area is 6(3 × 3) = 54 square feet. The difference is 57 - 54 = 3, choice B.",
+          "es": "El área de superficie de la caja J es 2(3 × 4.5 + 3 × 2 + 4.5 × 2) = 57 pies cuadrados. La caja F es un cubo de 3 pies, así que su área es 6(3 × 3) = 54. La diferencia es 57 - 54 = 3, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q31": {
+      "inputHash": "0b91eaf457e7ae402d57b6c1499d295ee78c1ed043f5e69062a4e7e421dabc4a",
+      "explanation": {
+        "text": {
+          "en": "Write the factor 2 as 2^1, then combine exponents: 2^2 × 2^1 ÷ 2^4 = 2^(2+1-4) = 2^-1. Therefore the equivalent expression is 2^-1, choice B.",
+          "es": "Se escribe el factor 2 como 2^1 y se combinan los exponentes: 2^2 × 2^1 ÷ 2^4 = 2^(2+1-4) = 2^-1. Por lo tanto, la expresión equivalente es 2^-1, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q32": {
+      "inputHash": "28e5cedb36de518831d9d16a8395230e09fa1a39116ce3a106d222717187da06",
+      "explanation": {
+        "text": {
+          "en": "The radius is 4 ÷ 2 = 2 cm. The cone is 3 cm tall, so the cylinder height is 10 - 3 = 7 cm. The volumes are π(2^2)(7) = 28π and (1/3)π(2^2)(3) = 4π; together they equal 32π, choice A.",
+          "es": "El radio es 4 ÷ 2 = 2 cm. El cono mide 3 cm de alto, así que el cilindro mide 10 - 3 = 7 cm. Los volúmenes son π(2^2)(7) = 28π y (1/3)π(2^2)(3) = 4π; juntos suman 32π, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q34": {
+      "inputHash": "12247b039840817eef7b5f6285313aa97c4a8a05d28977d1a0c817fce1d3bd9b",
+      "explanation": {
+        "text": {
+          "en": "Rotations, reflections, and translations preserve all side lengths. Figure A's top side runs from x = 2 to x = 9, a length of 7, while Figure B's top side runs from x = -7 to x = -2, a length of 5. The figures are not congruent, so choice C is true.",
+          "es": "Las rotaciones, reflexiones y traslaciones conservan todas las longitudes. El lado superior de A va de x = 2 a x = 9 y mide 7, mientras que el de B va de x = -7 a x = -2 y mide 5. Las figuras no son congruentes; por eso C es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q35": {
+      "inputHash": "8f9e4828a50f4d94d129e9d7f3179b57788e314309ea1d5868d175fbfe4b1a9c",
+      "explanation": {
+        "text": {
+          "en": "Add the equations 2x + 3y = 6 and x - 3y = 9 to eliminate y: 3x = 15, so x = 5. Substituting into x - 3y = 9 gives 5 - 3y = 9, so y = -4/3. The solution is (5, -4/3), choice C.",
+          "es": "Se suman 2x + 3y = 6 y x - 3y = 9 para eliminar y: 3x = 15, así que x = 5. Al sustituir en x - 3y = 9 se obtiene 5 - 3y = 9, de donde y = -4/3. La solución es (5, -4/3), la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q36": {
+      "inputHash": "5c08192177599aff1190bfae8f46208622991a5ab62161ee51dfc1a4bf0e7b0d",
+      "explanation": {
+        "text": {
+          "en": "As the number of training weeks increases, the plotted running times generally decrease, so the association is negative. The points cluster close to one downward-sloping line, with no point separated far from the pattern. Therefore there is a negative linear association with no outliers, choice A.",
+          "es": "A medida que aumentan las semanas de entrenamiento, los tiempos generalmente disminuyen, por lo que la asociación es negativa. Los puntos quedan cerca de una recta descendente y ninguno está muy separado del patrón. Por eso hay una asociación lineal negativa sin valores atípicos, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q37": {
+      "inputHash": "cdf76fa2109c811cdd18160927d8ef03c22098f39562fe5fd4500fa9341f1cbe",
+      "explanation": {
+        "text": {
+          "en": "Distribute and solve: 5c + 4 = 2c - 10, so 3c + 4 = -10 and 3c = -14. Thus c = -14/3 = -4 2/3, which is choice A.",
+          "es": "Se distribuye y se resuelve: 5c + 4 = 2c - 10, así que 3c + 4 = -10 y 3c = -14. Por lo tanto, c = -14/3 = -4 2/3, que es la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q38": {
+      "inputHash": "e272d3bfce5172209d9fe496613cc93a16b34ee4260e078b15f8d58c98a2553c",
+      "explanation": {
+        "text": {
+          "en": "The input 6 appears in both (6, 7) and (6, 9), giving that one input two different outputs. A function must assign exactly one output to each input, so these pairs do not form a function. This is the explanation in choice C.",
+          "es": "La entrada 6 aparece en (6, 7) y en (6, 9), por lo que una misma entrada tiene dos salidas diferentes. Una función debe asignar exactamente una salida a cada entrada; por eso estos pares no forman una función, como dice la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q39": {
+      "inputHash": "cd5e69bcd4a32529e037d1ea53e8e640ef301e7f029aca6930241eb358b532c7",
+      "explanation": {
+        "text": {
+          "en": "Set revenue equal to cost: 4x = (1/2)x + 280. Subtracting (1/2)x gives 3.5x = 280, and 280 ÷ 3.5 = 80. Jason must sell 80 posters for cost and revenue to be equal, choice B.",
+          "es": "Se igualan los ingresos y el costo: 4x = (1/2)x + 280. Al restar (1/2)x se obtiene 3.5x = 280, y 280 ÷ 3.5 = 80. Jason debe vender 80 pósteres para que sean iguales, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q40": {
+      "inputHash": "f246cce92d20fdce482445b31f0b5ea33bd2b4735b71a58583192cf4f367cdc0",
+      "explanation": {
+        "text": {
+          "en": "Convert 45 minutes to 45/60 = 3/4 hour. The constant speed is 36 ÷ (3/4) = 48 miles per hour. Distance equals rate times time, so after x hours y = 48x, choice A.",
+          "es": "Se convierten 45 minutos en 45/60 = 3/4 de hora. La velocidad constante es 36 ÷ (3/4) = 48 millas por hora. Como distancia = velocidad × tiempo, después de x horas y = 48x, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q42": {
+      "inputHash": "dae467f9dba937e32ba5447ceef0ba90065789704b596a00879e8d7ec0ac3e7c",
+      "explanation": {
+        "text": {
+          "en": "Divide the dust particle's mass by one electron's mass: (7.5 × 10^-10) ÷ (9.1 × 10^-31) = (7.5/9.1) × 10^21 ≈ 0.824 × 10^21 = 8.24 × 10^20. Thus choice C is the approximate number of electrons.",
+          "es": "Se divide la masa de la partícula entre la de un electrón: (7.5 × 10^-10) ÷ (9.1 × 10^-31) = (7.5/9.1) × 10^21 ≈ 0.824 × 10^21 = 8.24 × 10^20. Por lo tanto, la cantidad aproximada es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q43": {
+      "inputHash": "eaa00ddcc91254fc89d9024be87cf46df86e27eb149b7be36e63195a6a9cfc0e",
+      "explanation": {
+        "text": {
+          "en": "Photographer A's graph has y-intercept $25, so A's equipment fee is $25. For B, the hourly rate is ($110 - $80) ÷ (4 - 2) = $15; using $80 = 15(2) + b gives b = $50. A's fee is therefore $25 less than B's, choice C.",
+          "es": "La gráfica de A tiene intersección con y en $25, así que ese es su cargo de equipo. Para B, la tarifa es ($110 - $80) ÷ (4 - 2) = $15; con $80 = 15(2) + b se obtiene b = $50. El cargo de A es $25 menor que el de B, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q44": {
+      "inputHash": "07e060bad4c4b60521c2074e02c6833b91f0cf154908cbae8a00b43251bbee92",
+      "explanation": {
+        "text": {
+          "en": "A rotation preserves both angle measures and side lengths. A dilation with scale factor 1/2 also preserves angle measures but multiplies every side length by 1/2. Therefore the new triangle has equal angles and half-length sides, as stated in choice B.",
+          "es": "Una rotación conserva las medidas de los ángulos y de los lados. Una dilatación de factor 1/2 también conserva los ángulos, pero multiplica cada lado por 1/2. Por lo tanto, el nuevo triángulo tiene ángulos iguales y lados de la mitad, como indica B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q45": {
+      "inputHash": "18f233dec23adb632073018eec2c6509aabb294d2b20a1afa8268634a53b7966",
+      "explanation": {
+        "text": {
+          "en": "Convert to the same power of ten: 4.5 × 10^2 = 0.45 × 10^3. Then (0.45 + 6.0) × 10^3 = 6.45 × 10^3. Its coefficient is between 1 and 10, so this is scientific notation, choice C.",
+          "es": "Se convierten los términos a la misma potencia de diez: 4.5 × 10^2 = 0.45 × 10^3. Luego, (0.45 + 6.0) × 10^3 = 6.45 × 10^3. El coeficiente está entre 1 y 10, así que es notación científica, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q46": {
+      "inputHash": "e6f3cd1ad580b0326e75f7b97182f106e7697829ad9b1801b6ef31395f9e7d2c",
+      "explanation": {
+        "text": {
+          "en": "The slope through (2, -2) and (-4, 13) is [13 - (-2)] ÷ (-4 - 2) = 15/-6 = -2.5. Using (2, -2) gives y = -2.5x + 3. At x = -6, y = -2.5(-6) + 3 = 18, so (-6, 18), choice A, lies on the line.",
+          "es": "La pendiente entre (2, -2) y (-4, 13) es [13 - (-2)] ÷ (-4 - 2) = 15/-6 = -2.5. Con (2, -2), la recta es y = -2.5x + 3. Si x = -6, y = -2.5(-6) + 3 = 18; por eso (-6, 18), la opción A, está en la recta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q47": {
+      "inputHash": "17be28faa6ae609883c2773534f5a54ac3a2b952a34cd8b3d0f79751286f5311",
+      "explanation": {
+        "text": {
+          "en": "An equation has infinitely many solutions when both sides are identical. With h = 2, the right side is 2(3x + 9) = 6x + 18, exactly the left side for every x. Therefore h = 2, choice C.",
+          "es": "Una ecuación tiene infinitas soluciones cuando ambos lados son idénticos. Si h = 2, el lado derecho es 2(3x + 9) = 6x + 18, exactamente igual al izquierdo para todo x. Por lo tanto, h = 2, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q50": {
+      "inputHash": "3eff1a3ce7fe0c3b97a1393fe0593e455983f136978177d0c562ce08c965a89c",
+      "explanation": {
+        "text": {
+          "en": "Speed is the slope of each distance-time graph. Airplane A travels 6 miles per minute and B travels 4 miles per minute. For C, the coefficient in y = (27/6)x is 27/6 = 4.5 miles per minute. Since 4 < 4.5 < 6, C is slower than A but faster than B, choice D.",
+          "es": "La velocidad es la pendiente de cada gráfica. El avión A recorre 6 millas por minuto y B recorre 4. Para C, el coeficiente de y = (27/6)x es 27/6 = 4.5 millas por minuto. Como 4 < 4.5 < 6, C es más lento que A y más rápido que B, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g8-mc-q51": {
+      "inputHash": "1291e1ae1098ef13fe25fc5d75ebe546d269f4bdced45e66367b6c5fd4f317c9",
+      "explanation": {
+        "text": {
+          "en": "Translations and rotations preserve size, and a dilation with scale factor 1 also leaves size unchanged, so choices A-C remain congruent to the original. A dilation by 1/2 preserves angles and proportions but halves every length, making the image similar but not congruent. Thus D is correct.",
+          "es": "Las traslaciones y rotaciones conservan el tamaño, y una dilatación de factor 1 tampoco lo cambia; por eso A-C siguen siendo congruentes. Una dilatación de 1/2 conserva ángulos y proporciones, pero reduce cada longitud a la mitad. Por lo tanto, la imagen es semejante, no congruente, y D es correcta."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

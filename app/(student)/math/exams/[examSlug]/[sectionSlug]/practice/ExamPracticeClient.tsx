@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import type {
   MathExamDefinition,
+  MathExplanationSource,
   MathExamSectionDefinition,
   PublicMathExamQuestion,
 } from '@/content/math-exams/types'
@@ -16,6 +17,7 @@ type CheckedFeedback = {
   correct: boolean
   correctAnswer: string
   explanation: string
+  explanationSource: MathExplanationSource
 }
 
 type SavedResponse = {
@@ -290,7 +292,12 @@ export default function ExamPracticeClient({
                 ? (isSpanish ? 'Correcto!' : 'Correct!')
                 : (isSpanish ? `La respuesta correcta es ${feedback.correctAnswer}.` : `The correct answer is ${feedback.correctAnswer}.`)}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
+            <p className="mt-3 text-xs font-bold uppercase tracking-wider text-gray-500">
+              {feedback.explanationSource === 'official-nysed'
+                ? (isSpanish ? 'Justificación oficial de NYSED' : 'Official NYSED rationale')
+                : (isSpanish ? 'Explicación de Vine' : 'Vine explanation')}
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
 
             <button
               type="button"

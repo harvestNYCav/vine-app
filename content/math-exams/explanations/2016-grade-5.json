@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2016-grade-5-mc-v1",
+  "questions": {
+    "nysed-2016-g5-mc-q1": {
+      "inputHash": "0682ecd9498c4883b2e4682e9ed86b4bbd176b7ec8ad70af084d6ab4bd4f25b1",
+      "explanation": {
+        "text": {
+          "en": "One recipe makes 1.25 + 2.5 + 1 = 4.75 liters of punch. Making three times that amount gives 4.75 × 3 = 14.25 liters.",
+          "es": "Una receta produce 1.25 + 2.5 + 1 = 4.75 litros de ponche. Hacer tres veces esa cantidad da 4.75 × 3 = 14.25 litros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q2": {
+      "inputHash": "0c3bbceac7672b64cf33c11ab665a0d8eaebf00dc9b3b9b7a30fb9d764665031",
+      "explanation": {
+        "text": {
+          "en": "To subtract 3 1/4 − 1 7/8, write 3 1/4 as 3 2/8 and regroup it as 2 10/8. Then 2 10/8 − 1 7/8 = 1 3/8.",
+          "es": "Para restar 3 1/4 − 1 7/8, se escribe 3 1/4 como 3 2/8 y se reagrupa como 2 10/8. Entonces 2 10/8 − 1 7/8 = 1 3/8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q3": {
+      "inputHash": "1c3ac885d9f0fc7c55b5ba794004118e9a5ad977ef0f23dbe32156540334511d",
+      "explanation": {
+        "text": {
+          "en": "Dividing 3,972 by 12 gives 331. The quotient is confirmed by the inverse operation because 331 × 12 = 3,972.",
+          "es": "Al dividir 3,972 entre 12 se obtiene 331. El cociente se comprueba con la operación inversa porque 331 × 12 = 3,972."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q4": {
+      "inputHash": "472dbaac17870665d955fe33b7456e0d6b97f8e6802da668de8e8e716ae389a9",
+      "explanation": {
+        "text": {
+          "en": "Sage first hikes 8 3/4 miles to Lookout Point. The return distance to Giant Boulder is 8 3/4 − 4 1/4 = 4 1/2 miles, so the total is 8 3/4 + 4 1/2 = 13 1/4 miles.",
+          "es": "Sage primero camina 8 3/4 millas hasta Lookout Point. La distancia de regreso a Giant Boulder es 8 3/4 − 4 1/4 = 4 1/2 millas, así que el total es 8 3/4 + 4 1/2 = 13 1/4 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q5": {
+      "inputHash": "5743d8b33822c6576c91401e691ed8bd62c3367817e35731ec60e2191aa9e502",
+      "explanation": {
+        "text": {
+          "en": "A trapezoid can have exactly one pair of parallel sides. Therefore it fits the condition, while rectangles, rhombuses, and squares each have two pairs of parallel sides.",
+          "es": "Un trapecio puede tener exactamente un par de lados paralelos. En cambio, los rectángulos, rombos y cuadrados tienen dos pares de lados paralelos; por lo tanto, la respuesta es trapecio."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q9": {
+      "inputHash": "630487f15525536a7ab9393b09f23fc6b11952cd2417eb40fb655b8960b66bd3",
+      "explanation": {
+        "text": {
+          "en": "Dividing by 1/17 is the same as multiplying by its reciprocal, 17. Therefore, 56 ÷ 1/17 = 56 × 17 = 952.",
+          "es": "Dividir entre 1/17 equivale a multiplicar por su recíproco, 17. Por lo tanto, 56 ÷ 1/17 = 56 × 17 = 952."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q10": {
+      "inputHash": "f513cc16dfba81f5d07e16a6caa2dc422dee73b2652c301d332d84b78341f858",
+      "explanation": {
+        "text": {
+          "en": "With volume 24 cubic units and height 2 units, the bottom layer must have area 24 ÷ 2 = 12 square units. Figure A has 2 × 6 = 12 unit squares in its layer.",
+          "es": "Con un volumen de 24 unidades cúbicas y una altura de 2 unidades, la capa inferior debe tener un área de 24 ÷ 2 = 12 unidades cuadradas. La figura A tiene 2 × 6 = 12 cuadrados unitarios."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q13": {
+      "inputHash": "3d4aa0fc331d3e5bed14bdde1ead0086f737af725b32c6432257cdb5805a74cb",
+      "explanation": {
+        "text": {
+          "en": "Three of the 5 equally priced shirts were red, so the red shirts account for 3/5 of the $75 total. Their cost is represented by 75 × 3/5.",
+          "es": "Tres de las 5 camisas del mismo precio eran rojas, así que representan 3/5 del total de $75. Su costo se representa con 75 × 3/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q14": {
+      "inputHash": "6ddea69d90e28f2613a8d2fa5b2be2ea7398b99da1c502f596536bf4782e69dd",
+      "explanation": {
+        "text": {
+          "en": "The first prism has volume 3 × 3 × 3 = 27 cubic feet. The second has volume 2 × 3 × 5 = 30 cubic feet, so the difference is 30 − 27 = 3 cubic feet.",
+          "es": "El primer prisma tiene un volumen de 3 × 3 × 3 = 27 pies cúbicos. El segundo tiene un volumen de 2 × 3 × 5 = 30 pies cúbicos, así que la diferencia es 30 − 27 = 3 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q15": {
+      "inputHash": "0107fbbc9e2b7ef217af9701f7f1123cb3387a63d4dcff697b34dd75c922645f",
+      "explanation": {
+        "text": {
+          "en": "The four greatest plotted weights are 2 1/2, 2 1/4, 2, and 2 ounces. Their sum is 2 1/2 + 2 1/4 + 2 + 2 = 8 3/4 ounces.",
+          "es": "Los cuatro pesos mayores de la gráfica son 2 1/2, 2 1/4, 2 y 2 onzas. Su suma es 2 1/2 + 2 1/4 + 2 + 2 = 8 3/4 onzas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q16": {
+      "inputHash": "58408550d388ad5ee6d1a66ad6a3533b74af95611cba4e6d1b312c398e5f18d2",
+      "explanation": {
+        "text": {
+          "en": "Each gallon equals 4 quarts, so 60 gallons equals 60 × 4 = 240 quarts. The table lists the Pacific tank at 240 quarts.",
+          "es": "Cada galón equivale a 4 cuartos, así que 60 galones equivalen a 60 × 4 = 240 cuartos. La tabla muestra que el tanque Pacific tiene 240 cuartos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q17": {
+      "inputHash": "7558933a0b0d0e0775b79ea5f8dd7646285dfc82ac1c1b670903b90fe11e14b0",
+      "explanation": {
+        "text": {
+          "en": "Write both decimals to the hundredths place: 0.3 = 0.30 and 0.20 stays 0.20. Since 30 hundredths is greater than 20 hundredths, 0.3 > 0.20 is true.",
+          "es": "Se escriben ambos decimales hasta las centésimas: 0.3 = 0.30 y 0.20 permanece igual. Como 30 centésimas es mayor que 20 centésimas, 0.3 > 0.20 es verdadero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q18": {
+      "inputHash": "3cd2dd748fcd0b454bbb3ff5f03e62c258aca0782cfe666b1f9d6dba6f05dfda",
+      "explanation": {
+        "text": {
+          "en": "Divide the 83 acres equally among 8 buyers: 83 ÷ 8 = 10 3/8. This amount is more than 10 and less than 11 acres.",
+          "es": "Se dividen los 83 acres por igual entre 8 compradores: 83 ÷ 8 = 10 3/8. Esta cantidad es mayor que 10 y menor que 11 acres."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q23": {
+      "inputHash": "533c14abc00621113dea9572967cceb3337e798b1e475bee404db672959eec33",
+      "explanation": {
+        "text": {
+          "en": "Follow the order of operations: 2 × 6 = 12, then 24 ÷ 12 = 2. Finally, 8 + 2 − 4 = 6.",
+          "es": "Se sigue el orden de las operaciones: 2 × 6 = 12 y luego 24 ÷ 12 = 2. Finalmente, 8 + 2 − 4 = 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q24": {
+      "inputHash": "24ee542d4b97a9a4057af3476fc8683e20ea6d062e27aa2ee403a13dcf39bcca",
+      "explanation": {
+        "text": {
+          "en": "A parallelogram is defined as a quadrilateral with two pairs of parallel sides. Therefore, every parallelogram always belongs to the category of quadrilaterals.",
+          "es": "Un paralelogramo se define como un cuadrilátero con dos pares de lados paralelos. Por lo tanto, todo paralelogramo siempre pertenece a la categoría de los cuadriláteros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q25": {
+      "inputHash": "d345f30ffbda67c50c140d8faf000bfbd7dd55c2e4dc49686aa0396437d86479",
+      "explanation": {
+        "text": {
+          "en": "The interval from 70/100 to 80/100 is divided into ten equal steps, so each step is 1/100, or 0.01. Point X is at the sixth step after 0.70, which is 0.76.",
+          "es": "El intervalo de 70/100 a 80/100 está dividido en diez pasos iguales, así que cada paso es 1/100, o 0.01. El punto X está en el sexto paso después de 0.70, lo que da 0.76."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q26": {
+      "inputHash": "9e9cbea88489d6d93eb4efa8b0521e5557142de0454dc13ae33422e6f1b9cb71",
+      "explanation": {
+        "text": {
+          "en": "Dividing 1,748 by 38 gives 46. Check the quotient by multiplying: 38 × 46 = 38 × (40 + 6) = 1,520 + 228 = 1,748.",
+          "es": "Al dividir 1,748 entre 38 se obtiene 46. Se comprueba multiplicando: 38 × 46 = 38 × (40 + 6) = 1,520 + 228 = 1,748."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q27": {
+      "inputHash": "5ea61e16641b386d78bdf6c5f216c754a5a94f94273febb3c9a7fed30585a474",
+      "explanation": {
+        "text": {
+          "en": "The companies donated 25 + 40 + 25 + 30 = 120 computers. Sharing 120 equally among 5 classrooms is 120 ÷ 5, which can be written as 120 × 1/5.",
+          "es": "Las compañías donaron 25 + 40 + 25 + 30 = 120 computadoras. Repartir 120 por igual entre 5 salones es 120 ÷ 5, lo que se puede escribir como 120 × 1/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q28": {
+      "inputHash": "27ee7bf3716e51fcaa9f7554d36bd415bb255072e0485eba29773f0da1733d0f",
+      "explanation": {
+        "text": {
+          "en": "In 83,120, the 8 is in the 10⁴ place, the 3 in the 10³ place, the 1 in the 10² place, and the 2 in the 10¹ place. Thus it equals (8 × 10⁴) + (3 × 10³) + (1 × 10²) + (2 × 10¹).",
+          "es": "En 83,120, el 8 está en la posición de 10⁴, el 3 en la de 10³, el 1 en la de 10² y el 2 en la de 10¹. Por lo tanto, equivale a (8 × 10⁴) + (3 × 10³) + (1 × 10²) + (2 × 10¹)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q29": {
+      "inputHash": "f3721902156e7b28e080120b3ec4179b9f5db5da462ac7c4b92eff0b7843df7b",
+      "explanation": {
+        "text": {
+          "en": "One meter equals 100 centimeters. Multiplying 3 meters by 100 centimeters per meter gives 3 × 100 = 300 centimeters.",
+          "es": "Un metro equivale a 100 centímetros. Al multiplicar 3 metros por 100 centímetros por metro se obtiene 3 × 100 = 300 centímetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q40": {
+      "inputHash": "12d473594bc1bb3b26d595e565931e1ddd74d63f166262dd459b64028374c261",
+      "explanation": {
+        "text": {
+          "en": "The side lengths are 7/10 meter and 3/5 meter, with 3/5 = 6/10. Model A shows 7 of 10 columns and 6 of 10 rows overlapping, representing 7/10 × 3/5 = 21/50 square meter.",
+          "es": "Los lados miden 7/10 de metro y 3/5 de metro, con 3/5 = 6/10. El modelo A muestra la superposición de 7 de 10 columnas y 6 de 10 filas, lo que representa 7/10 × 3/5 = 21/50 de metro cuadrado."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q41": {
+      "inputHash": "025abaa1c75131901d875038302d473c7fc8a24c03dd47e3548e2e252861d369",
+      "explanation": {
+        "text": {
+          "en": "The pool's volume is length × width × depth. Substituting the dimensions gives 36 × 20 × 4 = 2,880 cubic feet.",
+          "es": "El volumen de la piscina es largo × ancho × profundidad. Al sustituir las dimensiones se obtiene 36 × 20 × 4 = 2,880 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q42": {
+      "inputHash": "893240d5168aa28b6fe6d4ff7aa52bbe4526b677043485f17ccb1e8cd946e8bb",
+      "explanation": {
+        "text": {
+          "en": "Convert 3/4 to eighths: 3/4 = 6/8. The museum and zoo received 6/8 + 1/8 = 7/8 of the votes, leaving 1 − 7/8 = 1/8 for the nature park.",
+          "es": "Se convierte 3/4 a octavos: 3/4 = 6/8. El museo y el zoológico recibieron 6/8 + 1/8 = 7/8 de los votos, por lo que queda 1 − 7/8 = 1/8 para el parque natural."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q43": {
+      "inputHash": "3e54e50c643682ef6536ad754d6ce9a41140af846ace37698ad9503910696f23",
+      "explanation": {
+        "text": {
+          "en": "The plot shows two rocks at 1/4 kilogram, three at 2/4, and two at 3/4. Their total is 2(1/4) + 3(2/4) + 2(3/4) = 14/4 = 3 1/2 kilograms.",
+          "es": "La gráfica muestra dos rocas de 1/4 de kilogramo, tres de 2/4 y dos de 3/4. El total es 2(1/4) + 3(2/4) + 2(3/4) = 14/4 = 3 1/2 kilogramos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q44": {
+      "inputHash": "eab5992e6e9866f80f71e32d2d88098179c41e69f04c3d4440e2f1e18c63e4e2",
+      "explanation": {
+        "text": {
+          "en": "Logan needs 3/8 cup per gallon and uses 10 1/2 = 21/2 gallons. Multiplying gives 3/8 × 21/2 = 63/16 = 3 15/16 cups.",
+          "es": "Logan necesita 3/8 de taza por galón y usa 10 1/2 = 21/2 galones. Al multiplicar se obtiene 3/8 × 21/2 = 63/16 = 3 15/16 tazas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2016-g5-mc-q45": {
+      "inputHash": "2d037f92fcebcd1d00c7912be084c09bdad199c1db9bab25967da312ec92ff69",
+      "explanation": {
+        "text": {
+          "en": "Evaluate inside the parentheses first: 5 − 2 = 3. Then 4 × 3 = 12, so the original expression is equivalent to 4 + 12 + 2.",
+          "es": "Primero se evalúa dentro de los paréntesis: 5 − 2 = 3. Luego, 4 × 3 = 12, así que la expresión original equivale a 4 + 12 + 2."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

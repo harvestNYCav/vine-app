@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2023-grade-7-mc-v1",
+  "questions": {
+    "nysed-2023-g7-mc-q1": {
+      "inputHash": "d3418d67bd9f8063ae22331ad5565fd2fa9d15ae6811e25ee46d706ed3453ad7",
+      "explanation": {
+        "text": {
+          "en": "Divide by multiplying by the reciprocal: (−1/3) ÷ (2/5) = (−1/3)(5/2) = −5/6.",
+          "es": "Se divide multiplicando por el recíproco: (−1/3) ÷ (2/5) = (−1/3)(5/2) = −5/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q2": {
+      "inputHash": "c316d01bb7229f567c2adc558fad7795e36e52c0cb2b2d917890934cc610b8b5",
+      "explanation": {
+        "text": {
+          "en": "The money spent on three drinks is $52.00 − $34.50 − $4.00 = $13.50. Dividing equally gives $13.50 ÷ 3 = $4.50 per drink.",
+          "es": "El dinero gastado en tres bebidas es $52.00 − $34.50 − $4.00 = $13.50. Al dividir por igual se obtiene $13.50 ÷ 3 = $4.50 por bebida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q4": {
+      "inputHash": "474bbe14152ab6d06d27f2400cd49de78b2684e84a0532cbf5688dddaf87feac",
+      "explanation": {
+        "text": {
+          "en": "Divide total pages by days: 32/2 = 16, 64/4 = 16, and 80/5 = 16. The constant rate is 16 pages per day.",
+          "es": "Se dividen las páginas totales entre los días: 32/2 = 16, 64/4 = 16 y 80/5 = 16. La tasa constante es 16 páginas por día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q5": {
+      "inputHash": "b0e37f2f293d5086a556e5a56994d418b60e8e1319938b9acdf1280769afb56b",
+      "explanation": {
+        "text": {
+          "en": "Regroup the negative decimals: −1.5 + (−7) = −8.5. The expression can therefore be written as (−8.5 + 2.6) + 2/5.",
+          "es": "Se agrupan los decimales negativos: −1.5 + (−7) = −8.5. Por lo tanto, la expresión se puede escribir como (−8.5 + 2.6) + 2/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q8": {
+      "inputHash": "2a3720bccfcdca837c6c4d6b6a8ed45a1e2a9dd2c4027d3ee6d46c4991c07401",
+      "explanation": {
+        "text": {
+          "en": "The buckets contain 7 1/2 + 5 3/4 + 6 3/4 = 20 liters. Sharing 20 liters equally among 5 containers gives 20 ÷ 5 = 4 liters each.",
+          "es": "Los baldes contienen 7 1/2 + 5 3/4 + 6 3/4 = 20 litros. Al repartir 20 litros por igual entre 5 recipientes se obtienen 20 ÷ 5 = 4 litros en cada uno."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q9": {
+      "inputHash": "024300c4a799c32465a9d6d5c2f0ab883433f1cc524dc3afe53e60d96c9617e2",
+      "explanation": {
+        "text": {
+          "en": "The score 82 occurs three times, more than any other score, so the mode is 82. The median is (76 + 82)/2 = 79, making the mode higher than the median.",
+          "es": "La puntuación 82 aparece tres veces, más que cualquier otra, así que la moda es 82. La mediana es (76 + 82)/2 = 79, por lo que la moda es mayor que la mediana."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q13": {
+      "inputHash": "b21af5de7167d056671a9ea5e045e61d04144bf5430e13e2e91af9ccd8244463",
+      "explanation": {
+        "text": {
+          "en": "The earnings-to-hours ratios are 50/4 = 62.5/5 = 75/6 = 112.5/9 = 12.5. Because the ratio is constant, the relationship is proportional.",
+          "es": "Las razones ganancias/horas son 50/4 = 62.5/5 = 75/6 = 112.5/9 = 12.5. Como la razón es constante, la relación es proporcional."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q16": {
+      "inputHash": "4fe5ed0fe3892805dde37c1c30419bc76ea14a6f81dc2287ead27646ed1ea82c",
+      "explanation": {
+        "text": {
+          "en": "Class B's box extends from about 80 to 96, giving a larger interquartile range than Class A's box from about 75 to 85. Therefore, Class B has the greater IQR.",
+          "es": "La caja de la clase B se extiende aproximadamente de 80 a 96, dando un rango intercuartílico mayor que la caja de la clase A, de cerca de 75 a 85. Por lo tanto, la clase B tiene el mayor RIC."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q17": {
+      "inputHash": "ef03767aa5b5aa4f1d3ea095af3adb708e781bce61308ba4e7fb91ee7a0d4dca",
+      "explanation": {
+        "text": {
+          "en": "Five parking spaces use 5(8 1/2) = 42 1/2 feet, leaving 50 − 42 1/2 = 7 1/2 feet for four equal gaps. Thus x = 7 1/2 ÷ 4 = 1 7/8 feet.",
+          "es": "Cinco espacios usan 5(8 1/2) = 42 1/2 pies, dejando 50 − 42 1/2 = 7 1/2 pies para cuatro separaciones iguales. Así, x = 7 1/2 ÷ 4 = 1 7/8 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q18": {
+      "inputHash": "44bb431fff6a1418276cc4d625dea4697a22818a42d8b655cd4f51325d866a62",
+      "explanation": {
+        "text": {
+          "en": "The number of rides is $30 ÷ $2.25 = 13 1/3. Since only whole rides are possible, the greatest number the pass can cover is 13.",
+          "es": "El número de viajes es $30 ÷ $2.25 = 13 1/3. Como solo se pueden hacer viajes completos, la mayor cantidad que cubre el pase es 13."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q21": {
+      "inputHash": "5b89329880fa70c0a8b45b22505cd416c017f78e9e7e46c0de32416322c4fd73",
+      "explanation": {
+        "text": {
+          "en": "At $8 each, b blue hats and g green hats cost 8b + 8g. Factoring out 8 gives the equivalent expression 8(b + g).",
+          "es": "A $8 cada uno, b sombreros azules y g verdes cuestan 8b + 8g. Al factorizar 8 se obtiene la expresión equivalente 8(b + g)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q23": {
+      "inputHash": "d5642186f853389fbd972da58aaecc0887f124ffaa8e8586c08f9eb6e5a709ca",
+      "explanation": {
+        "text": {
+          "en": "Week 2 had 3,200 × 1.10 = 3,520 visitors. Week 3 then had 3,520 × 1.15 = 4,048 visitors.",
+          "es": "La semana 2 tuvo 3,200 × 1.10 = 3,520 visitantes. Luego, la semana 3 tuvo 3,520 × 1.15 = 4,048 visitantes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q25": {
+      "inputHash": "a8af6bfbe248f4fac150133d30f379849b3e69222156603e6dfe763b204f8db7",
+      "explanation": {
+        "text": {
+          "en": "The graph passes through the origin and points such as (2,30) and (6,90). Its slope is 30/2 = 15 dollars per hour, so the equation is y = 15x.",
+          "es": "La gráfica pasa por el origen y por puntos como (2,30) y (6,90). Su pendiente es 30/2 = 15 dólares por hora, así que la ecuación es y = 15x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q31": {
+      "inputHash": "810c01cc31d32034d5c3e94c9cdfe73ad051f9184507650ceaf74b68af79e174",
+      "explanation": {
+        "text": {
+          "en": "Each X represents one player. Counting all the Xs across the line plot gives 27 players.",
+          "es": "Cada X representa un jugador. Al contar todas las X de la gráfica se obtienen 27 jugadores."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q32": {
+      "inputHash": "b28c80abe9667c548fd9a37e18d58a17a33b27ad3af1067019e0d40e44fb42fe",
+      "explanation": {
+        "text": {
+          "en": "Tax and tip total 5% + 20% = 25% of the dinner bill. The total is $58.20 × 1.25 = $72.75.",
+          "es": "El impuesto y la propina suman 5% + 20% = 25% de la cuenta. El total es $58.20 × 1.25 = $72.75."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q33": {
+      "inputHash": "709b2359b7029aeacce5aeb5050cc1e0f57eca18b6c2913e189c8fd2cd4cf013",
+      "explanation": {
+        "text": {
+          "en": "Average speed is distance divided by time: 6 1/2 ÷ 2/3 = 13/2 × 3/2 = 39/4 = 9 3/4 miles per hour.",
+          "es": "La velocidad media es distancia dividida entre tiempo: 6 1/2 ÷ 2/3 = 13/2 × 3/2 = 39/4 = 9 3/4 millas por hora."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q34": {
+      "inputHash": "048cb4c7c7822cdfe6c27170e949c04b63de982be23a85ee09e0eb440ac1e2db",
+      "explanation": {
+        "text": {
+          "en": "There are 2 × 2 × 3 = 12 equally likely sandwiches. Only one has white bread, turkey, and Swiss cheese, so its probability is 1/12.",
+          "es": "Hay 2 × 2 × 3 = 12 sándwiches igualmente probables. Solo uno tiene pan blanco, pavo y queso suizo, así que su probabilidad es 1/12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q35": {
+      "inputHash": "e570d9c5e05291c2bb2b9b0edbaebe752451db25e41732c1ffbd5f376732206c",
+      "explanation": {
+        "text": {
+          "en": "The fare plus tip is $2.75 + $2.60(4) + $2.00 = $15.15. From a $20 bill, Frank has $20.00 − $15.15 = $4.85 left.",
+          "es": "La tarifa más la propina es $2.75 + $2.60(4) + $2.00 = $15.15. De un billete de $20, a Frank le quedan $20.00 − $15.15 = $4.85."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q36": {
+      "inputHash": "9dff63de505c652d9f84b7bf60e384240ed8978b5148a6441b41ae8afede4efc",
+      "explanation": {
+        "text": {
+          "en": "Additive inverses sum to zero. Since 5 + (−5) = 0, the other number is −5.",
+          "es": "Los inversos aditivos suman cero. Como 5 + (−5) = 0, el otro número es −5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q37": {
+      "inputHash": "953818292cf51f276e1eb2010372e78ac7a99b4b5236f473b65eab91694e55e6",
+      "explanation": {
+        "text": {
+          "en": "If d is the number of donuts, they cost $1.09d, and coffee adds $2.59. Staying within $15 gives 1.09d + 2.59 ≤ 15.",
+          "es": "Si d es el número de donas, cuestan $1.09d y el café suma $2.59. Mantenerse dentro de $15 da 1.09d + 2.59 ≤ 15."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2023-g7-mc-q38": {
+      "inputHash": "89ace5d5d896e3c3096089e5171f24eadef708de296a03f92813bbcbb7dc2546",
+      "explanation": {
+        "text": {
+          "en": "Before the discount, the services cost $31.50 + $17.00 = $48.50. Paying 82% after an 18% discount gives $48.50 × 0.82 = $39.77.",
+          "es": "Antes del descuento, los servicios cuestan $31.50 + $17.00 = $48.50. Pagar el 82% después de un descuento del 18% da $48.50 × 0.82 = $39.77."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

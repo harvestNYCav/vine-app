@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2022-grade-8-mc-v1",
+  "questions": {
+    "nysed-2022-g8-mc-q1": {
+      "inputHash": "03f96ef835739fe87abdd85814964715615cf068825d14ef4cc9606b92e38161",
+      "explanation": {
+        "text": {
+          "en": "An increasing function rises as x moves from left to right and must pass the vertical-line test. Graph D is a nonvertical line with positive slope, so it is increasing.",
+          "es": "Una función creciente sube cuando x avanza de izquierda a derecha y debe pasar la prueba de la recta vertical. La gráfica D es una recta no vertical con pendiente positiva, así que es creciente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q2": {
+      "inputHash": "51421d8b9806bf03816c714eefc0f8a92269d5a52fd2fa2e1b2f69dce052f9c1",
+      "explanation": {
+        "text": {
+          "en": "Distribute and solve: 2.5x + 12.5 = 7.5x − 0.5, so 13 = 5x. Dividing by 5 gives x = 2.6.",
+          "es": "Se distribuye y se resuelve: 2.5x + 12.5 = 7.5x − 0.5, así que 13 = 5x. Al dividir entre 5 se obtiene x = 2.6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q3": {
+      "inputHash": "3828d1eb70a2d42cb5feecec0400f858a4cea0a1daa74560726026d21fda9d57",
+      "explanation": {
+        "text": {
+          "en": "Box A has volume 25 × 20 × 9 = 4,500 cubic centimeters, and Box B has 25 × 19 × 6 = 2,850. The difference is 4,500 − 2,850 = 1,650 cubic centimeters.",
+          "es": "La caja A tiene un volumen de 25 × 20 × 9 = 4,500 centímetros cúbicos y la caja B de 25 × 19 × 6 = 2,850. La diferencia es 4,500 − 2,850 = 1,650 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q4": {
+      "inputHash": "c1a7297419bbb2325b1a568364bc67b71bab41269c4896a59fadc7772dbddb36",
+      "explanation": {
+        "text": {
+          "en": "The line crosses the y-axis at 4 and rises 5 units for every 2 units to the right, giving slope 5/2. Its equation is y = (5/2)x + 4.",
+          "es": "La recta cruza el eje y en 4 y sube 5 unidades por cada 2 hacia la derecha, lo que da una pendiente de 5/2. Su ecuación es y = (5/2)x + 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q5": {
+      "inputHash": "2332cccaf24467de91f3237f383c7a7c617265d77698eaff903efa5f4f6413c3",
+      "explanation": {
+        "text": {
+          "en": "The angles labeled y° and (2x − 15)° are vertical angles, so they are equal. With y = 115, 2x − 15 = 115, giving 2x = 130 and x = 65.",
+          "es": "Los ángulos y° y (2x − 15)° son opuestos por el vértice, así que son iguales. Con y = 115, 2x − 15 = 115, lo que da 2x = 130 y x = 65."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q6": {
+      "inputHash": "ddc366216123a3331dc4b5451326f14bd1be50707f839c0df1dcc77a8ffd4718",
+      "explanation": {
+        "text": {
+          "en": "Reflections, rotations, and translations preserve size, so they produce congruent images. A dilation changes size; therefore, a translation followed by a dilation can produce a similar but noncongruent triangle.",
+          "es": "Las reflexiones, rotaciones y traslaciones conservan el tamaño, así que producen imágenes congruentes. Una dilatación cambia el tamaño; por lo tanto, una traslación seguida de una dilatación puede producir un triángulo semejante pero no congruente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q7": {
+      "inputHash": "a615692308bb4cb00f4e77ea252f5ca43cecf955da60fe0a7f9862bf1aae5a27",
+      "explanation": {
+        "text": {
+          "en": "The points decrease rapidly and then level off, following a curved rather than straight pattern. Therefore, a line of best fit is inappropriate because the association is nonlinear.",
+          "es": "Los puntos disminuyen rápidamente y luego se nivelan, siguiendo un patrón curvo y no recto. Por lo tanto, una recta de mejor ajuste no es apropiada porque la asociación no es lineal."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q8": {
+      "inputHash": "7b5e6b9a0adc22069fda639e8668c21c340e1336ce3e0ac539a88fcb3052e0fc",
+      "explanation": {
+        "text": {
+          "en": "Expanding gives 3x − 6 + 4 = 3x + 6, or 3x − 2 = 3x + 6. Subtracting 3x would require −2 = 6, a contradiction, so there is no solution.",
+          "es": "Al expandir se obtiene 3x − 6 + 4 = 3x + 6, o 3x − 2 = 3x + 6. Restar 3x exigiría −2 = 6, una contradicción, así que no hay solución."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q14": {
+      "inputHash": "c42876637dc485b9b06ab95de941bd8fd2d7026c485f4897e1d472a0f31fb14b",
+      "explanation": {
+        "text": {
+          "en": "When multiplying powers with the same base, add exponents: (15³)(15⁻⁷) = 15^(3−7) = 15⁻⁴ = 1/15⁴.",
+          "es": "Al multiplicar potencias de la misma base se suman los exponentes: (15³)(15⁻⁷) = 15^(3−7) = 15⁻⁴ = 1/15⁴."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q15": {
+      "inputHash": "5ff492d5c6b6aac4f7518827c04e48cb0b03c8a9f9b49ac0ee579cd83177c4a3",
+      "explanation": {
+        "text": {
+          "en": "In y = 50 + 25x, the coefficient 25 is the change in savings for each one-month increase in x. Thus the unit rate is $25 deposited per month.",
+          "es": "En y = 50 + 25x, el coeficiente 25 es el cambio en los ahorros por cada aumento de un mes en x. Por lo tanto, la tasa unitaria es un depósito de $25 por mes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q16": {
+      "inputHash": "098714002f046779bca2490c909c5fa09d9f551113b205f260f272df2f140503",
+      "explanation": {
+        "text": {
+          "en": "Distribute: −(1/3)(6y + 6) + 21 = 3y becomes −2y − 2 + 21 = 3y. Thus 19 = 5y and y = 19/5.",
+          "es": "Se distribuye: −(1/3)(6y + 6) + 21 = 3y se convierte en −2y − 2 + 21 = 3y. Así, 19 = 5y y y = 19/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q19": {
+      "inputHash": "5b88cc5e9dcf8a8a551023be1571bdfce80ac15d7e755e61c078ba8eba46c0b1",
+      "explanation": {
+        "text": {
+          "en": "Between x = −3 and x = 1, the graph rises as x increases and follows a curved segment. Therefore, the function is nonlinear and increasing on that interval.",
+          "es": "Entre x = −3 y x = 1, la gráfica sube a medida que x aumenta y sigue un tramo curvo. Por lo tanto, la función es no lineal y creciente en ese intervalo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q23": {
+      "inputHash": "0d9ddb312b9855ecf376ad93ba187834e24a0b4248e0871c99226ab64ef90fc4",
+      "explanation": {
+        "text": {
+          "en": "The cone has radius 6 cm and height 11 cm. Its volume is (1/3)π(6²)(11) = 132π ≈ 415 cubic centimeters.",
+          "es": "El cono tiene radio de 6 cm y altura de 11 cm. Su volumen es (1/3)π(6²)(11) = 132π ≈ 415 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q24": {
+      "inputHash": "38c5c8c2ae7c817dde8bbe3cae1555f382985ca4f179478ad73e9dc391bde34a",
+      "explanation": {
+        "text": {
+          "en": "The triangle inequality says the sum of any two side lengths must be greater than the third side. Therefore, a + b > c must be true.",
+          "es": "La desigualdad triangular dice que la suma de dos lados cualesquiera debe ser mayor que el tercer lado. Por lo tanto, a + b > c debe ser verdadero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q25": {
+      "inputHash": "487d337dd2b41f0c712d570c0830a5be70087a57ce2eacee4132c2db01e1d33f",
+      "explanation": {
+        "text": {
+          "en": "The graph crosses the y-axis at 8 and falls 4 units for every 5 units moved right, so its slope is −4/5. The equation is y = −(4/5)x + 8.",
+          "es": "La gráfica cruza el eje y en 8 y baja 4 unidades por cada 5 hacia la derecha, así que su pendiente es −4/5. La ecuación es y = −(4/5)x + 8."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q26": {
+      "inputHash": "6d9420239b439c8341b1a4a678fd9173efd9a8a9ffe01eda39db39db9784951b",
+      "explanation": {
+        "text": {
+          "en": "Mechanic A's equation has rate $36 per hour. Mechanic B's graph contains (2,88), so its rate is 88/2 = $44 per hour, which is $8 more than A's rate.",
+          "es": "La ecuación del mecánico A tiene una tasa de $36 por hora. La gráfica del mecánico B contiene (2,88), así que su tasa es 88/2 = $44 por hora, $8 más que la de A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q34": {
+      "inputHash": "647f8f335d58903639c6347eb7393005735ee236e9d20d7706cac40b2bde9085",
+      "explanation": {
+        "text": {
+          "en": "Substitute x = 2 1/2 into y = −8x + 32. Then y = −8(2.5) + 32 = −20 + 32 = 12 ounces.",
+          "es": "Se sustituye x = 2 1/2 en y = −8x + 32. Entonces y = −8(2.5) + 32 = −20 + 32 = 12 onzas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q35": {
+      "inputHash": "eec47fcf7889f8a720eacf670ecff27d5c333681ebfd3fa47a6d27d83af68a0e",
+      "explanation": {
+        "text": {
+          "en": "The original product is 4⁻⁵ × 4⁸ = 4³. Choice C gives 4²/4⁻¹ = 4^(2−(−1)) = 4³, so it is equivalent.",
+          "es": "El producto original es 4⁻⁵ × 4⁸ = 4³. La opción C da 4²/4⁻¹ = 4^(2−(−1)) = 4³, así que es equivalente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q36": {
+      "inputHash": "6686e2299380f16e435bd7e812722f0b36ad8dd6b68b72887b0e5304838c28c5",
+      "explanation": {
+        "text": {
+          "en": "The marked angles are alternate interior angles formed by parallel lines, so they are equal: 3n + 16 = 5n + 4. Solving gives 12 = 2n and n = 6.",
+          "es": "Los ángulos marcados son alternos internos formados por rectas paralelas, así que son iguales: 3n + 16 = 5n + 4. Al resolver se obtiene 12 = 2n y n = 6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q37": {
+      "inputHash": "eacb145d0a55b7f2623955648b02775266c512384fdb115e31ba9c3dd5652333",
+      "explanation": {
+        "text": {
+          "en": "Reflecting RSTU over the x-axis moves it below the axis with the required orientation. Translating the image 1 unit left then aligns every vertex with NMLK, so this is the required sequence.",
+          "es": "Reflejar RSTU sobre el eje x lo mueve debajo del eje con la orientación requerida. Luego, trasladar la imagen 1 unidad a la izquierda alinea cada vértice con NMLK; por lo tanto, esa es la secuencia requerida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q38": {
+      "inputHash": "8f0476cf519ca86e04e3713ff148a998fba5b71dfd4cd549740d1ccd7ac2d39b",
+      "explanation": {
+        "text": {
+          "en": "A set represents a function when each x-value occurs with only one y-value. In set C, the inputs −40, 20, and 60 are all distinct, so it is a function.",
+          "es": "Un conjunto representa una función cuando cada valor de x aparece con un solo valor de y. En el conjunto C, las entradas −40, 20 y 60 son todas distintas, así que es una función."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q39": {
+      "inputHash": "ed8657842c2ab82a1fedd075bb794c7ec179ee6acaa6917e00f2162a74d47b42",
+      "explanation": {
+        "text": {
+          "en": "For n(5x + 7) = 10x + 12 to have no solution, the x-coefficients must match but the constants must differ. Setting 5n = 10 gives n = 2, while 7n = 14 ≠ 12.",
+          "es": "Para que n(5x + 7) = 10x + 12 no tenga solución, los coeficientes de x deben coincidir y las constantes diferir. Al imponer 5n = 10 se obtiene n = 2, mientras que 7n = 14 ≠ 12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2022-g8-mc-q40": {
+      "inputHash": "8c5ba6c036885ce94ff9c2f1d532de0a75d3984e84a57d91448b51cb7b65fa8c",
+      "explanation": {
+        "text": {
+          "en": "Vertex R is at (10,4). A dilation by scale factor 1/2 about the origin multiplies each coordinate by 1/2, giving R′ = (5,2).",
+          "es": "El vértice R está en (10,4). Una dilatación de factor 1/2 con centro en el origen multiplica cada coordenada por 1/2 y da R′ = (5,2)."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

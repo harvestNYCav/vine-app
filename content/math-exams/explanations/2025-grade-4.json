@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2025-grade-4-mc-v1",
+  "questions": {
+    "nysed-2025-g4-mc-q2": {
+      "inputHash": "16cd08176fe878bc442a81f949d92f8ffea4370dda8db798ea8412e475e32235",
+      "explanation": {
+        "text": {
+          "en": "A fraction represents division, so 28/6 means 28 ÷ 6. Dividing by 6 is equivalent to multiplying by 1/6, giving 28 × 1/6.",
+          "es": "Una fracción representa división, así que 28/6 significa 28 ÷ 6. Dividir entre 6 equivale a multiplicar por 1/6, lo que da 28 × 1/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q5": {
+      "inputHash": "4397eea849152419790d61e11f645b6db15bfa25fa6c39dd3ae8b9b901e978b2",
+      "explanation": {
+        "text": {
+          "en": "Compute 542 × 9 by place value: 500×9 + 40×9 + 2×9 = 4,500 + 360 + 18 = 4,878.",
+          "es": "Se calcula 542 × 9 por valor posicional: 500×9 + 40×9 + 2×9 = 4,500 + 360 + 18 = 4,878."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q13": {
+      "inputHash": "f03690b739f061e6c890abf8a3371ac9d7bd2a729cda52f12eb11ebcaeef9f0b",
+      "explanation": {
+        "text": {
+          "en": "All terms in choice D have denominator 10, so add their numerators: 8/10 + 2/10 + 3/10 = 13/10.",
+          "es": "Todos los términos de la opción D tienen denominador 10, así que se suman sus numeradores: 8/10 + 2/10 + 3/10 = 13/10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q14": {
+      "inputHash": "ee593baead06653ffa4a8e1c0fa88c833857a6246a3c03b4141cf2c1e72ebd51",
+      "explanation": {
+        "text": {
+          "en": "$224,830 has a thousands digit of 4, so it rounds down to $220,000 to the nearest ten thousand. The other choices round to $210,000 or $230,000.",
+          "es": "$224,830 tiene 4 en los millares, así que se redondea hacia abajo a $220,000 a la decena de millar más cercana. Las otras opciones se redondean a $210,000 o $230,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q17": {
+      "inputHash": "4520215087dca5b5996d03861c9265ff700f888fc0b13d9d94aa7fc671b5c00f",
+      "explanation": {
+        "text": {
+          "en": "Four packages of 12 cards give 12 × 4 = 48 cards. Sharing 48 cards among 3 friends is represented by 48 ÷ 3 = c.",
+          "es": "Cuatro paquetes de 12 tarjetas dan 12 × 4 = 48 tarjetas. Repartir 48 tarjetas entre 3 amigos se representa con 48 ÷ 3 = c."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q18": {
+      "inputHash": "52a96b1071ab720cd4d7b6b75fc2d39034d26ca2c21cf4811a6b606027ec29a5",
+      "explanation": {
+        "text": {
+          "en": "Regroup the whole-number factor: 8 × 3/5 = (8×3) × 1/5 = 24 × 1/5. Therefore, the two expressions are equivalent.",
+          "es": "Se reagrupa el factor entero porque 3/5 = 3 × 1/5: 8 × 3/5 = (8 × 3) × 1/5 = 24 × 1/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q19": {
+      "inputHash": "1e613932de15a9b9d38ce82363b72253a4d04d631b8546922ce27f860c3efaf4",
+      "explanation": {
+        "text": {
+          "en": "In 27,325, the digit 7 is worth 7,000. Since ten times 7,000 is 70,000, the 7 in 74,538 must be in the ten-thousands place.",
+          "es": "En 27,325, la cifra 7 vale 7,000. Ya que diez veces 7,000 es 70,000, el 7 en 74,538 debe estar en las decenas de millar."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q22": {
+      "inputHash": "ae04fac39146dcfd1e36a9f00fa52bac3616506934e2e14aba7523ba52f5aa84",
+      "explanation": {
+        "text": {
+          "en": "A rectangle's area is length times width, so 6w = 24. Dividing by 6 gives w = 4 inches.",
+          "es": "El área de un rectángulo es largo por ancho, así que 6w = 24. Al dividir entre 6 se obtiene w = 4 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q24": {
+      "inputHash": "1c4b7290ae93495c2f58355bafa42fa4a2e6d32a5e658a772dd161c85ecd4a87",
+      "explanation": {
+        "text": {
+          "en": "Both fractions in choice D simplify to one-half: 5/10 = 1/2 and 3/6 = 1/2. Therefore, 5/10 = 3/6 is true.",
+          "es": "Ambas fracciones de la opción D se simplifican a un medio: 5/10 = 1/2 y 3/6 = 1/2. Por lo tanto, 5/10 = 3/6 es verdadero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q25": {
+      "inputHash": "5dddb39cfefef821bc44c28c6c9015d62b0789ed019706f2b057fa268d591369",
+      "explanation": {
+        "text": {
+          "en": "Six cookies are 2 times the number of friends, so 6 = 2f. Dividing the 6 cookies into groups of 2 gives the equivalent equation 6 ÷ 2 = f.",
+          "es": "Seis galletas son 2 veces el número de amigos, así que 6 = 2f. Dividir las 6 galletas en grupos de 2 da la ecuación equivalente 6 ÷ 2 = f."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q27": {
+      "inputHash": "3a28795e32dbdacb1961e2552aab2713dfacff4cd1bac337057df7fadd6c799c",
+      "explanation": {
+        "text": {
+          "en": "The missing addend is 4 1/4 − 3 2/4. Regrouping 4 1/4 as 3 5/4 gives 3 5/4 − 3 2/4 = 3/4.",
+          "es": "El sumando faltante es 4 1/4 − 3 2/4. Al reagrupar 4 1/4 como 3 5/4 se obtiene 3 5/4 − 3 2/4 = 3/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q28": {
+      "inputHash": "27b8c91a15a4865e59486fe67a50033edcd4cb308fc3c06d951de5bd0e26b307",
+      "explanation": {
+        "text": {
+          "en": "The greatest multiple of 4 below 4,523 is 4 × 1,130 = 4,520. The difference is 3, so the quotient is 1,130 remainder 3.",
+          "es": "El mayor múltiplo de 4 menor que 4,523 es 4 × 1,130 = 4,520. La diferencia es 3, así que el cociente es 1,130 con residuo 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q29": {
+      "inputHash": "6f571b516a80bcf57aaa53a4c0447ceee346d2b19d124b835efc366ebb53a0be",
+      "explanation": {
+        "text": {
+          "en": "The number 48 is a multiple of 8 because 48 = 8 × 6, and it has 3 as a factor because 48 = 3 × 16.",
+          "es": "El número 48 es múltiplo de 8 porque 48 = 8 × 6, y tiene 3 como factor porque 48 = 3 × 16."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q30": {
+      "inputHash": "514cc5f11ffe0b52c852d29972a1eb474f34f058623613d72de2f8e64f8a0b1a",
+      "explanation": {
+        "text": {
+          "en": "To show 3/4 of 12 equal parts, multiply 12 × 3/4 = 9. Therefore, 9 parts should be shaded.",
+          "es": "Para mostrar 3/4 de 12 partes iguales, se multiplica 12 × 3/4 = 9. Por lo tanto, se deben sombrear 9 partes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q31": {
+      "inputHash": "71e688e2707c56e3cc4e423e8d86195a7f74df5bb22a2ee80e1e8212f595a348",
+      "explanation": {
+        "text": {
+          "en": "Rectangles have four right angles. Figures A and C each show four right angles, while B and D have slanted non-right angles.",
+          "es": "Los rectángulos tienen cuatro ángulos rectos. Las figuras A y C muestran cuatro ángulos rectos cada una; por lo tanto, ambas son rectángulos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q32": {
+      "inputHash": "71d61225a3c26269766a2d7829d77fd8efaf64cb881946756ba9d91f34160247",
+      "explanation": {
+        "text": {
+          "en": "Use the distributive property: 87 × 36 = 87(30 + 6) = 2,610 + 522 = 3,132.",
+          "es": "Se usa la propiedad distributiva: 87 × 36 = 87(30 + 6) = 2,610 + 522 = 3,132."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q33": {
+      "inputHash": "6c2b5e92bbd48b9ab7a89b2773e9c7c329abb113a843c5cb028c249661198c9d",
+      "explanation": {
+        "text": {
+          "en": "The original rectangle has area 4 × 3 = 12 and perimeter 14. Choice B is 12 × 1, so it also has area 12 but has perimeter 26.",
+          "es": "El rectángulo original tiene área 4 × 3 = 12 y perímetro 14. La opción B mide 12 × 1, así que también tiene área 12 pero perímetro 26."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q34": {
+      "inputHash": "0445fc711b90bbda8c124dd029ab1973d2f7d1437910998add35fc3d6159ab8b",
+      "explanation": {
+        "text": {
+          "en": "Since 57 ÷ 6 = 9.5, multiplying both dividend and quotient by 10 gives 570 ÷ 6 = 95.",
+          "es": "Como 57 ÷ 6 = 9.5, multiplicar por 10 el dividendo y el cociente da 570 ÷ 6 = 95."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g4-mc-q35": {
+      "inputHash": "042890b1ac102f7efe8d8e2c5c482708b4a02fb55e5d9ff425f5669f650ab753",
+      "explanation": {
+        "text": {
+          "en": "School H has 2(126) + 3(174) = 252 + 522 = 774 students in those grades. School G has 126 + 174 = 300, so H has 774 − 300 = 474 more.",
+          "es": "La escuela H tiene 2(126) + 3(174) = 252 + 522 = 774 estudiantes de esos grados. La escuela G tiene 126 + 174 = 300, así que H tiene 774 − 300 = 474 más."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

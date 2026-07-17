@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2018-grade-3-mc-v1",
+  "questions": {
+    "nysed-2018-g3-mc-q1": {
+      "inputHash": "76631532c64358536e70cc36e3f9d8be217ea869010bdf8ae51a98fb554b6d13",
+      "explanation": {
+        "text": {
+          "en": "The factor 8 can be decomposed as 2 × 4. Replacing 8 in 8 × 6 gives (2 × 4) × 6, which still equals 48, so choice D represents the same product.",
+          "es": "El factor 8 se puede descomponer como 2 × 4. Al sustituir el 8 en 8 × 6 se obtiene (2 × 4) × 6, que también es igual a 48; por eso la opción D representa el mismo producto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q2": {
+      "inputHash": "8e4668ae616b6cf0e3d7c5d37b11b09b4aa9ae97c01a567753067e2b6d7bc61d",
+      "explanation": {
+        "text": {
+          "en": "The number 794 is only 6 away from 800 but 94 away from 700. It is therefore closer to 800, so 794 rounded to the nearest hundred is 800, choice C.",
+          "es": "El número 794 está a solo 6 de 800, pero a 94 de 700. Por lo tanto, está más cerca de 800, así que 794 redondeado a la centena más cercana es 800, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q3": {
+      "inputHash": "76ff5ec81d0f35751a0a5b1d2539f7525fe336d90d23a45cb2cfe446ea1769b6",
+      "explanation": {
+        "text": {
+          "en": "The equation says that the unknown number divided by 7 equals 4. Use the inverse operation: 4 × 7 = 28, and checking gives 28 ÷ 7 = 4. Therefore the missing number is 28, choice C.",
+          "es": "La ecuación dice que el número desconocido dividido entre 7 es igual a 4. Se usa la operación inversa: 4 × 7 = 28, y al comprobar, 28 ÷ 7 = 4. Por eso el número que falta es 28, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q6": {
+      "inputHash": "adc22b02254b3743a10796a1bb391c597d6499297ea445cb3388dd065b308901",
+      "explanation": {
+        "text": {
+          "en": "The picture shows 4 buckets, and the water reaches the 3-gallon mark in every bucket. Four equal groups of 3 gallons are represented by 4 × 3, so choice A finds the total of 12 gallons.",
+          "es": "La imagen muestra 4 cubetas y el agua llega a la marca de 3 galones en cada una. Cuatro grupos iguales de 3 galones se representan con 4 × 3; por eso la opción A da el total de 12 galones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q7": {
+      "inputHash": "d590b0c0f57cc565e44340bb3b073ca44250f5def0e58949d381ca8a988005a9",
+      "explanation": {
+        "text": {
+          "en": "Each square sheet has area 1 foot × 1 foot = 1 square foot. Since 30 such sheets cover the board with no gaps or overlaps, its area is 30 × 1 = 30 square feet, choice D.",
+          "es": "Cada hoja cuadrada tiene un área de 1 pie × 1 pie = 1 pie cuadrado. Como 30 hojas cubren el tablero sin espacios ni superposiciones, su área es 30 × 1 = 30 pies cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q17": {
+      "inputHash": "ae514377f94096f8a04c1f5513f59353f0bec2839e5a48b917c13d37a425374c",
+      "explanation": {
+        "text": {
+          "en": "Joe finished 4 minutes before 4:02 p.m. Counting back 2 minutes reaches 4:00 p.m., and counting back 2 more reaches 3:58 p.m. Thus Joe finished at 3:58 p.m., choice A.",
+          "es": "Joe terminó 4 minutos antes de las 4:02 p. m. Al retroceder 2 minutos se llega a las 4:00 p. m., y al retroceder otros 2 se llega a las 3:58 p. m.; es decir, 4:02 − 4 minutos = 3:58. Por eso la opción A es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q18": {
+      "inputHash": "519539d15e8df007f9c1ece4b30a1486d7e60b5834db737764718cc2cf9c7cb3",
+      "explanation": {
+        "text": {
+          "en": "The interval from 0 to 1 mile is divided into 8 equal parts, so each tick represents 1/8 mile. The third tick after 0 is 3/8, and that tick is labeled B. Therefore point B is correct.",
+          "es": "El intervalo de 0 a 1 milla está dividido en 8 partes iguales, así que cada marca representa 1/8 de milla. La tercera marca después de 0 es 3/8 y está rotulada B. Por lo tanto, el punto B es correcto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q22": {
+      "inputHash": "f38c1e186153ab31e5f78f9a912308901a49d855ad9e689c726d307abff2498b",
+      "explanation": {
+        "text": {
+          "en": "To locate 1/3, the distance from 0 to 1 must be divided into 3 equal parts, and 1/3 is the first division point after 0. Only number line B shows those three equal intervals and labels the first tick 1/3.",
+          "es": "Para ubicar 1/3, la distancia de 0 a 1 debe dividirse en 3 partes iguales, y 1/3 es el primer punto de división después de 0. Solo la recta B muestra esos tres intervalos iguales y marca el primero como 1/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q23": {
+      "inputHash": "69b51246fa0a955343b5252ac60adec119d77d06541fd7b18fdbc85485274a2e",
+      "explanation": {
+        "text": {
+          "en": "There are 8 tanks with 40 liters in each tank, so multiply the number of equal groups by the amount in each group: 8 × 40 = 320. The tanks hold 320 liters altogether, choice D.",
+          "es": "Hay 8 peceras con 40 litros en cada una, así que se multiplica el número de grupos iguales por la cantidad de cada grupo: 8 × 40 = 320. En total hay 320 litros, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q24": {
+      "inputHash": "89b947b2aa1e20a1f1412e9f429b19115e92f46f420baf2db1878b4d580bc560",
+      "explanation": {
+        "text": {
+          "en": "Paul ate 2 cookies per day for 5 + 4 days altogether. Multiplying the daily amount by the combined number of days gives 2 × (5 + 4) = 18, which is the expression in choice B.",
+          "es": "Paul comió 2 galletas al día durante 5 + 4 días en total. Al multiplicar la cantidad diaria por el total de días se obtiene 2 × (5 + 4) = 18, que es la expresión de la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q25": {
+      "inputHash": "22bc63519a993c76d1cfe5971ab854f4a6add2fc2cccff134e67030dea50f6fe",
+      "explanation": {
+        "text": {
+          "en": "Because the gardens are the same size, compare the fractions directly. One third is equivalent to 2/6, and 1/6 < 2/6, so 1/6 < 1/3. Kay's flower section is smaller, as shown in choice B.",
+          "es": "Como los jardines tienen el mismo tamaño, se comparan directamente las fracciones. Un tercio equivale a 2/6, y 1/6 < 2/6; por eso 1/6 < 1/3. La sección de flores de Kay es menor, como muestra la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q26": {
+      "inputHash": "02e3a230eb42af5d23ba0be9b3da7cecf24334e99e2b907d7771ecd66a0a381e",
+      "explanation": {
+        "text": {
+          "en": "Since 6 × 8 = 48, the first blank must be 8. The related division fact is 48 ÷ 6 = 8, so the same number also fills the second blank. Therefore 8, choice B, makes both equations true.",
+          "es": "Como 6 × 8 = 48, el primer espacio debe ser 8. La división relacionada es 48 ÷ 6 = 8, así que el mismo número también completa el segundo espacio. Por lo tanto, 8, la opción B, hace verdaderas ambas ecuaciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q27": {
+      "inputHash": "63bb45c6fd387c541cad50a987e58de2dfc4b94ea0013473c351c0a68e04487d",
+      "explanation": {
+        "text": {
+          "en": "Five packages with 80 sheets each make 5 equal groups of 80. Multiplying gives 5 × 80 = 400, so the teacher puts 400 sheets into the cabinet, choice C.",
+          "es": "Cinco paquetes con 80 hojas cada uno forman 5 grupos iguales de 80. Al multiplicar, 5 × 80 = 400, así que el maestro coloca 400 hojas en el armario, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q28": {
+      "inputHash": "9fd2e3a8dc59194a4df2985a8f82f98c66212bc91a85ce518f0d17ef53ecd111",
+      "explanation": {
+        "text": {
+          "en": "The target amount 1/2 cup is equivalent to 2/4 cup. Each full container contributes 1/4 cup, and 1/4 + 1/4 = 2/4 = 1/2. Jaime must fill it 2 times, choice C.",
+          "es": "La cantidad deseada, 1/2 taza, equivale a 2/4 de taza. Cada recipiente lleno aporta 1/4 de taza, y 1/4 + 1/4 = 2/4 = 1/2. Jaime debe llenarlo 2 veces, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q29": {
+      "inputHash": "e7bd602e2fc72fb3f6b8449522e111ff3e2598bba36a2f28fd2f9939e14c4f20",
+      "explanation": {
+        "text": {
+          "en": "The expression 21 ÷ 3 means separating a total of 21 into 3 equal groups. Placing 21 skirts equally on 3 racks does exactly that and gives 21 ÷ 3 = 7 skirts per rack, so choice D matches.",
+          "es": "La expresión 21 ÷ 3 significa repartir un total de 21 en 3 grupos iguales. Colocar 21 faldas por igual en 3 percheros hace justamente eso y da 21 ÷ 3 = 7 faldas por perchero; por eso corresponde la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q30": {
+      "inputHash": "f88bd8c7e4f802ace7629dde58c14e713fd4f063efd33a71d6c93e0bc3b89ffe",
+      "explanation": {
+        "text": {
+          "en": "The first number is 5. Each difference is 4: 9 − 5 = 4, 13 − 9 = 4, and the same change continues. Therefore the rule is to start with 5 and add 4 each time, choice C.",
+          "es": "El primer número es 5. Cada diferencia es 4: 9 − 5 = 4, 13 − 9 = 4, y el mismo cambio continúa. Por lo tanto, la regla es comenzar con 5 y sumar 4 cada vez, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q31": {
+      "inputHash": "3b236f1256bbfb4a0497ca0652bd0a6668783b19354562c734b13a4acfce72a8",
+      "explanation": {
+        "text": {
+          "en": "Split the L-shape into a bottom rectangle measuring 9 ft × 3 ft and an upper-left rectangle measuring 4 ft × (7 − 3) ft. Their areas are 27 and 16, and 27 + 16 = 43 square feet, choice C.",
+          "es": "Se divide la figura en L en un rectángulo inferior de 9 pies × 3 pies y otro superior izquierdo de 4 pies × (7 − 3) pies. Sus áreas son 27 y 16, y 27 + 16 = 43 pies cuadrados, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q32": {
+      "inputHash": "dd0fdcdb0811abba6fc23bed49e1e506d9ec4b90c33d659666f293a2c5bdf537",
+      "explanation": {
+        "text": {
+          "en": "If every section is 1/4 of the circle, the spinner must have 4 sections of equal area because 4 × 1/4 = 1 whole. Picture C divides the circle with two diameters into four equal sections, so C is correct.",
+          "es": "Si cada sección es 1/4 del círculo, la ruleta debe tener 4 secciones de igual área porque 4 × 1/4 = 1 entero. La imagen C divide el círculo con dos diámetros en cuatro secciones iguales; por eso C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2018-g3-mc-q33": {
+      "inputHash": "9eec0c8d68265449051bbe402ffc9fce5e4d515493bde92971567ad216623e09",
+      "explanation": {
+        "text": {
+          "en": "A fraction means numerator divided by denominator. Since 4 ÷ 1 = 4, the fraction 4/1 has the same value as the whole number 4. Therefore choice D is equivalent to 4.",
+          "es": "Una fracción representa el numerador dividido entre el denominador. Como 4 ÷ 1 = 4, la fracción 4/1 tiene el mismo valor que el número entero 4. Por lo tanto, la opción D equivale a 4."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

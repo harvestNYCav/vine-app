@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2025-grade-6-mc-v1",
+  "questions": {
+    "nysed-2025-g6-mc-q1": {
+      "inputHash": "a0ff88ae5434b0cddc292a13944c792e24492aa010ec67a32a1c6edd16e1869b",
+      "explanation": {
+        "text": {
+          "en": "The recipe ratio 2 cups to 8 ounces simplifies to 1:4. Therefore, Table B preserves the ratio with 2:8, 4:16, 6:24, and 8:32.",
+          "es": "La razón de la receta, 2 tazas por 8 onzas, se simplifica a 1:4. Por lo tanto, la tabla B conserva la razón con 2:8, 4:16, 6:24 y 8:32."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q3": {
+      "inputHash": "aa00d7c28d4a1a7a96c1410c00571cbbb6c35c67110534497527f37073437c8f",
+      "explanation": {
+        "text": {
+          "en": "The point (−2,3) is 2 units left of the y-axis and 3 units above the x-axis. That plotted location is point W.",
+          "es": "El punto (−2,3) está 2 unidades a la izquierda del eje y y 3 unidades sobre el eje x. Esa ubicación graficada corresponde al punto W."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q5": {
+      "inputHash": "d9863c9e0cd3c506d99ff912f05252526e4d566dc555b3aa004f3d151cdb6452",
+      "explanation": {
+        "text": {
+          "en": "Substitute c = 2 and h = 3 into c³ + 4h − 7. The value is 2³ + 4(3) − 7 = 8 + 12 − 7 = 13.",
+          "es": "Se sustituyen c = 2 y h = 3 en c³ + 4h − 7. El valor es 2³ + 4(3) − 7 = 8 + 12 − 7 = 13."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q6": {
+      "inputHash": "8862ee2201a66c324197cb04ac2c809cb49a8eb0a20003c1bb983ad84d8ec197",
+      "explanation": {
+        "text": {
+          "en": "The carton holds 4 1/2 = 9/2 cups, and each serving is 3/4 cup. Dividing gives 9/2 ÷ 3/4 = 9/2 × 4/3 = 6 full servings.",
+          "es": "El envase contiene 4 1/2 = 9/2 tazas y cada porción es 3/4 de taza. Al dividir se obtiene 9/2 ÷ 3/4 = 9/2 × 4/3 = 6 porciones completas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q13": {
+      "inputHash": "87ac5446be75aaae0c40539b43ab2d5d7e26153634f68d2e6d68ba6c0d281941",
+      "explanation": {
+        "text": {
+          "en": "The prism dimensions are 2 cm, 2 cm, and 5 cm. Its surface area is 2(2×2 + 2×5 + 2×5) = 2(4 + 10 + 10) = 48 square centimeters.",
+          "es": "Las dimensiones del prisma son 2 cm, 2 cm y 5 cm. Su área de superficie es 2(2×2 + 2×5 + 2×5) = 2(4 + 10 + 10) = 48 centímetros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q16": {
+      "inputHash": "af11e836a2c2ddb6cc6359937f4c67f00f69dd416e097b4ce7863a743e21cc83",
+      "explanation": {
+        "text": {
+          "en": "Copier A prints 350/7 = 50 pages per minute, while Copier B prints 210/3 = 70. Copier B prints 70 − 50 = 20 more pages per minute.",
+          "es": "La copiadora A imprime 350/7 = 50 páginas por minuto y la B imprime 210/3 = 70. La B imprime 70 − 50 = 20 páginas más por minuto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q17": {
+      "inputHash": "e81bcc32eaca32ca9caefc9040bdc7f570519e3d7d745646c44f23dfd452a9a2",
+      "explanation": {
+        "text": {
+          "en": "Each of the 6 triangles has area 1/2 × 5 × 4.3 = 10.75 square centimeters. The hexagon's area is 6 × 10.75 = 64.5 square centimeters.",
+          "es": "Cada uno de los 6 triángulos tiene un área de 1/2 × 5 × 4.3 = 10.75 centímetros cuadrados. El área del hexágono es 6 × 10.75 = 64.5 centímetros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q19": {
+      "inputHash": "2faa3fbe1c737b8dfb50a5ab3fb09bc8be0dca4bdcee5fcc81ce6b5996d56190",
+      "explanation": {
+        "text": {
+          "en": "Evaluate the numerator and denominator: 3² + 5·3 = 9 + 15 = 24 and 2³ = 8. Therefore, 24/8 = 3.",
+          "es": "Se evalúan el numerador y el denominador: 3² + 5·3 = 9 + 15 = 24 y 2³ = 8. Por lo tanto, 24/8 = 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q21": {
+      "inputHash": "6857bdb2ca0aaea5587d8b0c5f22b51d35f4b6d55f9aeef3a2abd28be42876d6",
+      "explanation": {
+        "text": {
+          "en": "Reading received 12 votes and playing an instrument received 11, for 23 votes total. Out of 50 students, 23/50 = 46%.",
+          "es": "Leer recibió 12 votos y tocar un instrumento recibió 11, para un total de 23 votos. De 50 estudiantes, 23/50 = 46%."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q23": {
+      "inputHash": "d91b6a0dfa5c5fdeeac36e7aecea950593ff0b900b1e65a17986f9c2dd2e5566",
+      "explanation": {
+        "text": {
+          "en": "In the term 2x³, the coefficient is the numerical factor multiplying the variable expression. That factor is 2.",
+          "es": "En el término 2x³, el coeficiente es el factor numérico que multiplica la expresión variable. Por lo tanto, ese factor es 2."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q27": {
+      "inputHash": "dc65b09fdab29d879a9b4af436a3feeab3d9e311389b5727054e237dd16a7cff",
+      "explanation": {
+        "text": {
+          "en": "Solve 3w ≥ 12 by dividing both sides by 3, giving w ≥ 4. Therefore, 3 is not a solution, while 4, 5, and 8 are.",
+          "es": "Se resuelve 3w ≥ 12 dividiendo ambos lados entre 3, lo que da w ≥ 4. Por lo tanto, 3 no es solución, mientras que 4, 5 y 8 sí lo son."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q28": {
+      "inputHash": "b914cf636bfe2bb9858ebf690ced15a5af324966cc6fad059c2efd45ad9827df",
+      "explanation": {
+        "text": {
+          "en": "Grades 5 and 6 have 12 + 6 = 18 students, and Grades 7 and 8 have 2 + 8 = 10. The ratio 18:10 simplifies to 9:5.",
+          "es": "Los grados 5 y 6 tienen 12 + 6 = 18 estudiantes, y los grados 7 y 8 tienen 2 + 8 = 10. La razón 18:10 se simplifica a 9:5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q30": {
+      "inputHash": "650db513957423a1438e17aab94f02643289db4832a01fd6695de1c16d7b3bd3",
+      "explanation": {
+        "text": {
+          "en": "Twice a number n is 2n, and five less than that is 2n − 5. The sum of fifteen and that quantity is 15 + (2n − 5).",
+          "es": "El doble de un número n es 2n, y cinco menos que eso es 2n − 5. La suma de quince y esa cantidad es 15 + (2n − 5)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q31": {
+      "inputHash": "c28ef4019a228fcfd3828097cd05ad733831e03a98c19c841b9edf8318c9a47f",
+      "explanation": {
+        "text": {
+          "en": "A deposit increases the account, so $65 is represented by +65. A withdrawal decreases it, so $20 is represented by −20.",
+          "es": "Un depósito aumenta la cuenta, así que $65 se representa con +65. Un retiro la disminuye, así que $20 se representa con −20."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q32": {
+      "inputHash": "859237f73f6edf45ba97db3a7bcf656ae05318f11e3fa51aed488edc11f783c5",
+      "explanation": {
+        "text": {
+          "en": "Convert 12 miles per hour to feet per minute: 12 × 5,280 ÷ 60 = 1,056 feet per minute.",
+          "es": "Se convierten 12 millas por hora a pies por minuto: 12 × 5,280 ÷ 60 = 1,056 pies por minuto."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q33": {
+      "inputHash": "6ab53ef455084fac2343b6e1813c85717d9a38febb581fb3dc7f9cbf4504463f",
+      "explanation": {
+        "text": {
+          "en": "Starting at (1,1), add 3 to x and 2 to y each time to get (4,3), (7,5), and (10,7). Graph C plots exactly those points.",
+          "es": "Desde (1,1), se suma 3 a x y 2 a y cada vez para obtener (4,3), (7,5) y (10,7). La gráfica C muestra exactamente esos puntos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q34": {
+      "inputHash": "0472b157c0e808b981d4ac7dfa744e90e3339d69cedba78c109e8e57b26db5b7",
+      "explanation": {
+        "text": {
+          "en": "Volume is length × width × height. Thus 7 3/5 × 5 4/5 × 2 1/2 = 38/5 × 29/5 × 5/2 = 110 1/5 cubic centimeters.",
+          "es": "El volumen es largo × ancho × alto. Por lo tanto, 7 3/5 × 5 4/5 × 2 1/2 = 38/5 × 29/5 × 5/2 = 110 1/5 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q35": {
+      "inputHash": "4512031ed8dc0398e7643f568685f61bd0abca866e06c6961123ed66c26bb272",
+      "explanation": {
+        "text": {
+          "en": "Oranges cost $6.25/5 = $1.25 per pound, while apples cost $6.90/6 = $1.15 per pound. Oranges have the greater unit price at $1.25.",
+          "es": "Las naranjas cuestan $6.25/5 = $1.25 por libra y las manzanas $6.90/6 = $1.15 por libra. Las naranjas tienen el mayor precio unitario, $1.25."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g6-mc-q36": {
+      "inputHash": "d433b12529278011e3871b4da3131b52771c52ae29d218b96ba7d4d13ca8b686",
+      "explanation": {
+        "text": {
+          "en": "The whole parallelogram has area 2.4 × 3 = 7.2 square centimeters. The unshaded triangle has area 1/2 × 1.2 × 3 = 1.8, leaving 7.2 − 1.8 = 5.4 square centimeters shaded.",
+          "es": "El paralelogramo completo tiene área 2.4 × 3 = 7.2 centímetros cuadrados. El triángulo sin sombrear tiene área 1/2 × 1.2 × 3 = 1.8, por lo que quedan 7.2 − 1.8 = 5.4 centímetros cuadrados sombreados."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

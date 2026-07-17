@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2015-grade-4-mc-v1",
+  "questions": {
+    "nysed-2015-g4-mc-q1": {
+      "inputHash": "9680802ebf288b79157309d474f3874f48f11501cd488eac925444a32d7f52a4",
+      "explanation": {
+        "text": {
+          "en": "Compare 376,425 and 367,419 from left to right. The hundred-thousands digits match, but 7 ten-thousands is greater than 6 ten-thousands, so 376,425 > 367,419.",
+          "es": "Se comparan 376,425 y 367,419 de izquierda a derecha. Las centenas de millar son iguales, pero 7 decenas de millar es mayor que 6 decenas de millar, así que 376,425 > 367,419."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q2": {
+      "inputHash": "5285cabcef59668a6eb23fa14ba14584eb9286670e2345efa51cc556090aebec",
+      "explanation": {
+        "text": {
+          "en": "The marked span measures 3 whole inches plus 2 quarter-inch intervals. Since 2/4 = 1/2, the leaf is 3 1/2 inches long.",
+          "es": "El tramo marcado mide 3 pulgadas completas más 2 intervalos de un cuarto de pulgada. Como 2/4 = 1/2, la hoja mide 3 1/2 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q3": {
+      "inputHash": "7ad2289dba949d53ee0f6cc4ce8cf1aa091eddd74a1067847488ef8891075f06",
+      "explanation": {
+        "text": {
+          "en": "The model has 2 shaded sections out of 12 equal sections, representing 2/12. Dividing numerator and denominator by 2 gives 2/12 = 1/6.",
+          "es": "El modelo tiene 2 secciones sombreadas de 12 secciones iguales, por lo que representa 2/12. Al dividir el numerador y el denominador entre 2 se obtiene 2/12 = 1/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q4": {
+      "inputHash": "c74580250e3e1edf2317b214fec17da8cdf6924b40eb49fbc05c271b013b7fc1",
+      "explanation": {
+        "text": {
+          "en": "Using ray CE as the protractor's 0-degree baseline, ray CD meets the 40-degree mark. Therefore, angle DCE measures 40°.",
+          "es": "Al usar el rayo CE como línea de 0 grados del transportador, el rayo CD llega a la marca de 40 grados. Por lo tanto, el ángulo DCE mide 40°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q5": {
+      "inputHash": "93fbe6fb48c8fc0bcbf96f142e225f65d628dcbb55c91725ace32b9cd541f461",
+      "explanation": {
+        "text": {
+          "en": "Fred has 4 times Estelle's 28 coins, so his amount is represented by 28 × 4. The product is 112 coins.",
+          "es": "Fred tiene 4 veces las 28 monedas de Estelle, así que su cantidad se representa con 28 × 4. El producto es 112 monedas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q6": {
+      "inputHash": "11543c451fb3c70cd88f210d26e887fe04670fbc35c88847fef2c4090b0ce154",
+      "explanation": {
+        "text": {
+          "en": "The number 15,518 is past the halfway point of 15,500, so it rounds up to 16,000. The other choices round to either 15,000 or 17,000.",
+          "es": "El número 15,518 supera el punto medio de 15,500, así que se redondea hacia arriba a 16,000. Las otras opciones se redondean a 15,000 o a 17,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q7": {
+      "inputHash": "9adc0608ef3075cfeec804e353059ec7fc2af57db595edc109c8f5fd467951ee",
+      "explanation": {
+        "text": {
+          "en": "Britney shaded 4 of 6 equal parts, and Walter shaded 2 of 3 equal parts. Since 4/6 simplifies to 2/3, their fractions are equivalent.",
+          "es": "Britney sombreó 4 de 6 partes iguales y Walter sombreó 2 de 3 partes iguales. Como 4/6 = 2/3 al simplificar, sus fracciones son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q8": {
+      "inputHash": "8b949897a0bd66aa4bc594b71edb5420c2b06b3efde4f716028f8b9b3c66d603",
+      "explanation": {
+        "text": {
+          "en": "A complete turn is 360°, and the spinner moves 270°. The fraction of the full turn is therefore 270/360, which also equals 3/4.",
+          "es": "Una vuelta completa mide 360° y la flecha gira 270°. Por lo tanto, la fracción de la vuelta completa es 270/360, que también equivale a 3/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q9": {
+      "inputHash": "e6d30e35a8b3e22c1e9fa2e177a959cff7de44fc8f89a2ae83c842fbef9408fd",
+      "explanation": {
+        "text": {
+          "en": "The product 3 × 1/2 means three groups of one-half. Model B shows three separate squares with exactly one-half of each square shaded.",
+          "es": "El producto 3 × 1/2 significa tres grupos de un medio. El modelo B muestra tres cuadrados separados con exactamente la mitad de cada uno sombreada."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q10": {
+      "inputHash": "6d3536e7c911b9b40415756f6ef590087f26f09264defcdf3b6b35bd27b894a3",
+      "explanation": {
+        "text": {
+          "en": "Dividing 5,600 by 8 gives 700 because 8 × 700 = 5,600. Thus, the missing number is 700.",
+          "es": "Al dividir 5,600 entre 8 se obtiene 700 porque 8 × 700 = 5,600. Por lo tanto, el número que falta es 700."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q11": {
+      "inputHash": "440c86011d1e9735253a3b76c5e2ecf6895c0e505a61172bab3f81a297657e18",
+      "explanation": {
+        "text": {
+          "en": "Three of the 5 equal parts are shaded, so the shaded amount is 3/5. Adding one fifth for each shaded part gives 1/5 + 1/5 + 1/5 = 3/5.",
+          "es": "Tres de las 5 partes iguales están sombreadas, así que la cantidad sombreada es 3/5. Al sumar un quinto por cada parte se obtiene 1/5 + 1/5 + 1/5 = 3/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q12": {
+      "inputHash": "988a32a81dac5f96f0c4479b82b31021cff8bafa4748e15e3a8f81134af72425",
+      "explanation": {
+        "text": {
+          "en": "Rose uses 2/8 cup for each of 7 pitchers. Multiplying 7 × 2/8 gives 14/8 cups of powder in total.",
+          "es": "Rose usa 2/8 de taza para cada una de las 7 jarras. Al multiplicar 7 × 2/8 se obtienen 14/8 tazas de polvo en total."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q13": {
+      "inputHash": "1be203f4a752ca55544dfc5e965e41782b0ac107d95f68d2e8fad669fcf196a3",
+      "explanation": {
+        "text": {
+          "en": "The banana muffins total 28 × 12 = 336, and the blueberry muffins total 5 × 6 = 30. Adding them gives 336 + 30 = 366 muffins.",
+          "es": "Los panecillos de banana suman 28 × 12 = 336 y los de arándano suman 5 × 6 = 30. Al sumarlos se obtiene 336 + 30 = 366 panecillos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q14": {
+      "inputHash": "ad90256424ea1876eb842ea8a38fa62bc31a963d556a4d3e9745dbf26181b0a6",
+      "explanation": {
+        "text": {
+          "en": "The octagon's opposite sides run in the same directions, so they are parallel. Each exterior turn is 45°, making each interior angle 180° − 45° = 135°.",
+          "es": "Los lados opuestos del octágono siguen las mismas direcciones, así que son paralelos. Cada giro exterior mide 45°, por lo que cada ángulo interior mide 180° − 45° = 135°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q15": {
+      "inputHash": "14ff335065daac98589e50f074f2e42161e4c5b51a5fe3f8b1fa0737a31c76ff",
+      "explanation": {
+        "text": {
+          "en": "The $24 board game costs twice as much as the puzzle. Dividing $24 ÷ 2 = $12 gives the price of the puzzle.",
+          "es": "El juego de mesa de $24 cuesta el doble que el rompecabezas. Al dividir $24 ÷ 2 = $12 se obtiene el precio del rompecabezas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q16": {
+      "inputHash": "af051b7546d601d11f0e1329870e5aa5a16676dd2255cd36497a0bb58e90872b",
+      "explanation": {
+        "text": {
+          "en": "The original model has 3 of 4 equal parts shaded, or 3/4. Figure A has 6 of 8 parts shaded, and 6/8 simplifies to 3/4.",
+          "es": "El modelo original tiene sombreadas 3 de 4 partes iguales, es decir, 3/4. La figura A tiene 6 de 8 partes sombreadas, y 6/8 = 3/4 al simplificar."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q17": {
+      "inputHash": "b92c38fa113de49ebc5f4dfdf1482d14690a4651cb7fb1dc6fce31159dc98edb",
+      "explanation": {
+        "text": {
+          "en": "The 7 in 507,264 is worth 7,000. In 493,725 the 7 is worth 700, and 10 × 700 = 7,000.",
+          "es": "El 7 de 507,264 vale 7,000. En 493,725, el 7 vale 700, y 10 × 700 = 7,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q18": {
+      "inputHash": "640660e0e35a405027745a7d3efc258e69f598e6154bf6c6f5d72f12cfe4a55b",
+      "explanation": {
+        "text": {
+          "en": "Multiply the 46 bushes by $27 each: 46 × 27 = 46 × 20 + 46 × 7 = 920 + 322 = $1,242.",
+          "es": "Se multiplican los 46 arbustos por $27 cada uno: 46 × 27 = 46 × 20 + 46 × 7 = 920 + 322 = $1,242."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q19": {
+      "inputHash": "1768ea1bf0f431494415eefce24d9b8152f96173b858e93a76af7233adc818b4",
+      "explanation": {
+        "text": {
+          "en": "A rectangle's area is length times width. For this floor, 12 × 16 = 192, so its area is 192 square feet.",
+          "es": "El área de un rectángulo es largo por ancho. Para este piso, 12 × 16 = 192, así que el área es 192 pies cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q20": {
+      "inputHash": "3a46d82d9776f3b88c3d8574c44a7359e73cf2002e14610e3254d8fbb318bdeb",
+      "explanation": {
+        "text": {
+          "en": "Use area = length × width: 648 = length × 9. Dividing 648 ÷ 9 = 72 gives a length of 72 inches.",
+          "es": "Se usa área = largo × ancho: 648 = largo × 9. Al dividir 648 ÷ 9 = 72 se obtiene un largo de 72 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g4-mc-q21": {
+      "inputHash": "86488bdc987208bd8a2aad40201d3705bbfdc6b8caeb83b74d3c5771b16b0496",
+      "explanation": {
+        "text": {
+          "en": "In 916,672, the 6 in the thousands place is worth 6,000 and the 6 in the hundreds place is worth 600. Since 6,000 ÷ 600 = 10, the first value is 10 times greater.",
+          "es": "En 916,672, el 6 de los millares vale 6,000 y el 6 de las centenas vale 600. Como 6,000 ÷ 600 = 10, el primer valor es 10 veces mayor."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

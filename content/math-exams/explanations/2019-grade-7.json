@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2019-grade-7-mc-v1",
+  "questions": {
+    "nysed-2019-g7-mc-q1": {
+      "inputHash": "33c6a7cf67f26d5eb3a5d4a76454e4cc3427fb09b1aa174d6c57545c28b9fb13",
+      "explanation": {
+        "text": {
+          "en": "The $7.50 admission fee is fixed, and x rounds cost $6.25x. Adding them to equal the $26.25 total gives 6.25x + 7.50 = 26.25.",
+          "es": "La entrada de $7.50 es un costo fijo y x rondas cuestan $6.25x. Al sumarlos para obtener el total de $26.25 se obtiene 6.25x + 7.50 = 26.25."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q2": {
+      "inputHash": "ab6406a6a046289b4d447361d8952c223c7e339607da1b2daf308776c93c1579",
+      "explanation": {
+        "text": {
+          "en": "Dividing 7 by 12 gives 0.583333…, where the digit 3 repeats forever. Therefore, the exact decimal is 0.58 with a repeating 3.",
+          "es": "Al dividir 7 entre 12 se obtiene 0.583333…, donde la cifra 3 se repite indefinidamente. Por lo tanto, el decimal exacto es 0.58 con un 3 periódico."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q3": {
+      "inputHash": "61b095ed5b9a13dc2ee56170a699be6b91854a7d499cbbddabdda6f695821884",
+      "explanation": {
+        "text": {
+          "en": "The tip is 17% of $13.00: 0.17 × 13 = $2.21. Adding the tip gives $13.00 + $2.21 = $15.21.",
+          "es": "La propina es el 17% de $13.00: 0.17 × 13 = $2.21. Al sumar la propina se obtiene $13.00 + $2.21 = $15.21."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q4": {
+      "inputHash": "710c148fcb7195de6898eb2d82d947b002c0065ddbdf085d5b51800d9ad263d2",
+      "explanation": {
+        "text": {
+          "en": "The round pan has radius 5 inches, so its area is π(5²) ≈ 78.5 square inches. The rectangle's area is 10 × 7 = 70, making the round pan about 8.5 square inches greater.",
+          "es": "El molde redondo tiene radio de 5 pulgadas, así que su área es π(5²) ≈ 78.5 pulgadas cuadradas. El área del rectángulo es 10 × 7 = 70, por lo que el molde redondo es aproximadamente 8.5 pulgadas cuadradas mayor."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q5": {
+      "inputHash": "63e3ac843e01384f7419a4c2633dd9ae51300faf2af64fac611b55e6b7d9d3c9",
+      "explanation": {
+        "text": {
+          "en": "Shawnte drinks 1/2 of 6 ounces, or 3 ounces, in 2/3 hour. Her hourly rate is 3 ÷ 2/3 = 3 × 3/2 = 4.5 ounces per hour.",
+          "es": "Shawnte bebe 1/2 de 6 onzas, es decir, 3 onzas, en 2/3 de hora. Su tasa por hora es 3 ÷ 2/3 = 3 × 3/2 = 4.5 onzas por hora."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q9": {
+      "inputHash": "56b9b5810799d76b8dd17f3e744139ee3d6529e65cc65d5b06877fa3c33f4cca",
+      "explanation": {
+        "text": {
+          "en": "The scale factor from the 5.41-inch phone to the 6.21-inch phone is 6.21/5.41. Applying it to the 2.6-inch width gives 2.6(6.21/5.41) ≈ 2.99 inches.",
+          "es": "El factor de escala del teléfono de 5.41 pulgadas al de 6.21 pulgadas es 6.21/5.41. Al aplicarlo al ancho de 2.6 pulgadas se obtiene 2.6(6.21/5.41) ≈ 2.99 pulgadas; por lo tanto, ese es el nuevo ancho."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q10": {
+      "inputHash": "111e30274c600b35ca72c6a6b0f10b5fec3676b947962c2e41243a51b42bc29b",
+      "explanation": {
+        "text": {
+          "en": "A decrease of 12°C from an initial 12°C is represented by subtracting 12. The matching expression is 12 − 12.",
+          "es": "Una disminución de 12°C desde una temperatura inicial de 12°C se representa restando 12. La expresión correspondiente es 12 − 12."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q13": {
+      "inputHash": "0a3780707058d682256dc7dabb90cf2d1f8f7381d48962027334922eeb9de33c",
+      "explanation": {
+        "text": {
+          "en": "The first club's boy-to-girl ratio is 4:12 = 1:3. With 6 boys at the same ratio, the number of girls is 6 × 3 = 18.",
+          "es": "La razón de niños a niñas del primer club es 4:12 = 1:3. Con 6 niños en la misma razón, el número de niñas es 6 × 3 = 18."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q14": {
+      "inputHash": "f2a73aea5c6ecce1fbadfb1c8fd4450bd7ee36f95d3e22f35a51cc1c3aead0f2",
+      "explanation": {
+        "text": {
+          "en": "A 20% discount leaves 80% of the price, so the sale price is 0.8p. It can also be written as p − 0.2p, making expressions B and D equivalent.",
+          "es": "Un descuento del 20% deja el 80% del precio, así que el precio de oferta es 0.8p. También se puede escribir como p − 0.2p, por lo que las expresiones B y D son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q15": {
+      "inputHash": "086497c2f1870002335ce5dbf917d2cefb8c4d34c330da2db15ccee3b9c7e006",
+      "explanation": {
+        "text": {
+          "en": "A 10% discount on $1.60 leaves $1.60 × 0.90 = $1.44 per pound. For 4 1/2 pounds, the cost is $1.44 × 4.5 = $6.48.",
+          "es": "Un descuento del 10% sobre $1.60 deja $1.60 × 0.90 = $1.44 por libra. Para 4 1/2 libras, el costo es $1.44 × 4.5 = $6.48."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q16": {
+      "inputHash": "5d42ce7cb0ca8b44210df09cf4bd2d3f68a573be522c34d36eaecca15519d6f4",
+      "explanation": {
+        "text": {
+          "en": "If 1/20 of the path takes 3/4 second, the whole path takes 20 equal time intervals. Thus the total time is 20 × 3/4 = 15 seconds.",
+          "es": "Si 1/20 del recorrido toma 3/4 de segundo, el recorrido completo toma 20 intervalos iguales. Por lo tanto, el tiempo total es 20 × 3/4 = 15 segundos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q19": {
+      "inputHash": "c4fa1ffe2123fe148087f553830a5d4e8699e037863fe537593019b265acffaa",
+      "explanation": {
+        "text": {
+          "en": "A proportional table has a constant y/x ratio. In table D, 1/5 = 2/10 = 3/15 = 4/20 = 5/25, so table D is proportional.",
+          "es": "Una tabla proporcional tiene una razón y/x constante. En la tabla D, 1/5 = 2/10 = 3/15 = 4/20 = 5/25, así que la tabla D es proporcional."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q20": {
+      "inputHash": "7846d0bac1c40a3c6dac992260a7675c05946796f66db39c1c86d3afd4b3a066",
+      "explanation": {
+        "text": {
+          "en": "Combine the variable terms and the constants separately: 7a − 8 − 12a + 4 = (7a − 12a) + (−8 + 4) = −5a − 4.",
+          "es": "Se combinan por separado los términos variables y las constantes: 7a − 8 − 12a + 4 = (7a − 12a) + (−8 + 4) = −5a − 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q27": {
+      "inputHash": "00942f61111a32361251158b00d7fc1b1e39866001032b63c7180fdf7e26324b",
+      "explanation": {
+        "text": {
+          "en": "At 47 feet per model inch, the actual dimensions are 2 × 47 = 94 feet and 1 × 47 = 47 feet. The base area is 94 × 47 = 4,418 square feet.",
+          "es": "Con 47 pies por pulgada del modelo, las dimensiones reales son 2 × 47 = 94 pies y 1 × 47 = 47 pies. El área de la base es 94 × 47 = 4,418 pies cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q28": {
+      "inputHash": "8930f7e86ba3912e3d5a0846770df42fbd00b5ed06cf8cd00ed3bdb6bc517102",
+      "explanation": {
+        "text": {
+          "en": "Solve −2.1 − x = −1.5 by adding 2.1 to both sides: −x = 0.6, so x = −0.6. Checking gives −2.1 − (−0.6) = −1.5.",
+          "es": "Se resuelve −2.1 − x = −1.5 sumando 2.1 a ambos lados: −x = 0.6, así que x = −0.6. La comprobación da −2.1 − (−0.6) = −1.5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q29": {
+      "inputHash": "f7a70a4b8284b1864c3b488b30413193cd2eaec5a4177fedf7310e87c35fa26b",
+      "explanation": {
+        "text": {
+          "en": "Manny pays $4.25 for shoes plus $2.50 for each of b games, and cannot exceed $25. The inequality is 4.25 + 2.5b ≤ 25.",
+          "es": "Manny paga $4.25 por los zapatos más $2.50 por cada uno de b juegos y no puede exceder $25. La desigualdad es 4.25 + 2.5b ≤ 25."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q30": {
+      "inputHash": "265b15a266c040578dea81206809dc2304aa57e0f88279639cc8d15fa298abd4",
+      "explanation": {
+        "text": {
+          "en": "Randomly selecting students from every homeroom includes students across the whole school and avoids favoring one grade, transportation group, or elective. Thus three random students per homeroom gives the most representative sample.",
+          "es": "Seleccionar al azar estudiantes de cada salón base incluye alumnos de toda la escuela y evita favorecer un grado, medio de transporte o clase optativa. Por lo tanto, tres estudiantes al azar por salón producen la muestra más representativa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q31": {
+      "inputHash": "6d88cab111259b9716bbaadf1149190c3e609f08587972e6272e53cedbf13979",
+      "explanation": {
+        "text": {
+          "en": "The experimental probability of white is 41/65 ≈ 0.6308. Therefore, rounded to the nearest percent, the probability is 63%.",
+          "es": "La probabilidad experimental de obtener una canica blanca es 41/65 ≈ 0.6308. Por lo tanto, redondeada al porcentaje más cercano, es 63%."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q32": {
+      "inputHash": "904eaeaa169541660ff6393682f2ea961061c6b301e43d9d9d6ba78700b5400e",
+      "explanation": {
+        "text": {
+          "en": "Buying an item for $2.25 and selling it for $2.25 gives profit $2.25 − $2.25 = $0. The other situations describe a nonzero change or total distance.",
+          "es": "Comprar un artículo por $2.25 y venderlo por $2.25 da una ganancia de $2.25 − $2.25 = $0. Las otras situaciones describen un cambio o una distancia total distintos de cero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q34": {
+      "inputHash": "cdf0b9abea6576da723b32c688d93dc1465ee99b50c965f0e0ded847a90f68dc",
+      "explanation": {
+        "text": {
+          "en": "For every row, s/t = 21/3 = 35/5 = 49/7 = 7. Therefore, the proportional relationship is s = 7t.",
+          "es": "En cada fila, s/t = 21/3 = 35/5 = 49/7 = 7. Por lo tanto, la relación proporcional es s = 7t."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q35": {
+      "inputHash": "d657d68c3ad8f59c5a5db147580c7fd30c907f07333b3fb786b92a79fee7cc84",
+      "explanation": {
+        "text": {
+          "en": "Distribute and combine like terms: 2(x + 7) − 18x + 4/5 = 2x + 14 − 18x + 4/5 = −16x + 74/5.",
+          "es": "Se distribuye y se combinan términos semejantes: 2(x + 7) − 18x + 4/5 = 2x + 14 − 18x + 4/5 = −16x + 74/5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q36": {
+      "inputHash": "f0a919a80cf70a0de9ba3b492eb5bdc54370b64ccbf51c675cab7acaa59a82a5",
+      "explanation": {
+        "text": {
+          "en": "When the data are ordered, the middle value is 1.5, so the median is 1.5. The values at 3.5 and 4 pull the mean to the right, making the mean greater than the median.",
+          "es": "Al ordenar los datos, el valor central es 1.5, así que la mediana es 1.5. Los valores de 3.5 y 4 desplazan la media hacia la derecha, por lo que la media es mayor que la mediana."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q37": {
+      "inputHash": "fa3b5f8b03f4fb1fae1d6ba6086ea8ee17b11faa6ca2a194f54f196bf854caa9",
+      "explanation": {
+        "text": {
+          "en": "There were 117 + 24 + 9 = 150 visitors in all, and 9 bought more than one piece. The probability is 9/150 = 3/50.",
+          "es": "Hubo 117 + 24 + 9 = 150 visitantes en total y 9 compraron más de una obra. La probabilidad es 9/150 = 3/50."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q38": {
+      "inputHash": "cea1d95e57688723cd65a103b7c35c39fb187ef615ecb7a7ab75caacf48888e7",
+      "explanation": {
+        "text": {
+          "en": "The h hats cost $9.95h, and shipping adds $5.50. Because the total is less than $125, the inequality is 9.95h + 5.50 < 125.",
+          "es": "Los h sombreros cuestan $9.95h y el envío suma $5.50. Como el total es menor que $125, la desigualdad es 9.95h + 5.50 < 125."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q39": {
+      "inputHash": "7410aab73ba39976cd698bf2d539bd5db8f7b369af7b5556bc532f6df071c02d",
+      "explanation": {
+        "text": {
+          "en": "Write 0.1 as 1/10 and divide by multiplying by the reciprocal: 3/7 × 1/10 × 21/5 = 63/350 = 9/50.",
+          "es": "Se escribe 0.1 como 1/10 y se divide multiplicando por el recíproco: 3/7 × 1/10 × 21/5 = 63/350 = 9/50."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2019-g7-mc-q40": {
+      "inputHash": "a56774554d507a7622cc466d7cb3603e5621ed2db6d8b019253be2cf4335bbf1",
+      "explanation": {
+        "text": {
+          "en": "After 30 cups are used, x − 30 remain. Since 15% of that remainder is 90, 0.15(x − 30) = 90, so x − 30 = 600 and x = 630 cups.",
+          "es": "Después de usar 30 vasos, quedan x − 30. Como el 15% de esa cantidad es 90, 0.15(x − 30) = 90, así que x − 30 = 600 y x = 630 vasos."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

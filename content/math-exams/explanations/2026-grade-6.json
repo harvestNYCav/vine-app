@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2026-grade-6-mc-v1",
+  "questions": {
+    "nysed-2026-g6-mc-q1": {
+      "inputHash": "2a1ff82ad040f12426d9356391eb634d74330e6fb5fcda64fc24fe93a5d03a8b",
+      "explanation": {
+        "text": {
+          "en": "Speed is distance divided by time. Calculating 686 meters ÷ 2 seconds = 343 meters per second gives the sound's speed.",
+          "es": "La rapidez es la distancia dividida entre el tiempo. Calcular 686 metros ÷ 2 segundos = 343 metros por segundo da la rapidez del sonido."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q2": {
+      "inputHash": "b04e93fbe6c1173433dccea8a85f8813d59eee9be20c840a45244dad6794740f",
+      "explanation": {
+        "text": {
+          "en": "City B is at −2, which is below sea level, while City C is at 2, which is above sea level. Therefore, statement D is true.",
+          "es": "La ciudad B está en −2, debajo del nivel del mar, mientras la ciudad C está en 2, por encima. Por lo tanto, la afirmación D es verdadera."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q3": {
+      "inputHash": "2d5e07b17630d2749ef0e038832d53f20b54140c86118e60548e68f7e9954640",
+      "explanation": {
+        "text": {
+          "en": "There are 16 ounces in one pound, so convert ounces to pounds by dividing. The needed expression is 72 ÷ 16.",
+          "es": "Hay 16 onzas en una libra, así que se convierten onzas a libras dividiendo. La expresión necesaria es 72 ÷ 16."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q4": {
+      "inputHash": "428596532ec44cae1b8b643983c4e76e05050d75938137001577faa8932dd02d",
+      "explanation": {
+        "text": {
+          "en": "Substitute x = 7 and y = 3 into the given expression. Then 2(12 − 7) + 3² = 2(5) + 9 = 10 + 9 = 19.",
+          "es": "Se sustituyen x = 7 e y = 3 en la expresión dada. Entonces 2(12 − 7) + 3² = 2(5) + 9 = 10 + 9 = 19."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q5": {
+      "inputHash": "cfb72625016f4dc147d14f8ad81103f113724d8692fa137b832f8c57d6f033f2",
+      "explanation": {
+        "text": {
+          "en": "Points B(4, 3) and C(4, −7) have the same x-coordinate, so BC is vertical. Its length is 3 − (−7) = 10 units.",
+          "es": "Los puntos B(4, 3) y C(4, −7) tienen la misma coordenada x, así que BC es vertical. Su longitud es 3 − (−7) = 10 unidades."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q6": {
+      "inputHash": "1059dadce1fd725036a3165882db58b3cef8e990afee0c59b6043206f3365f45",
+      "explanation": {
+        "text": {
+          "en": "Add all six outer sides: 2 + x + 5 + 2 + (x + 3) + 6. Combining like terms gives a perimeter of 2x + 18.",
+          "es": "Se suman los seis lados exteriores: 2 + x + 5 + 2 + (x + 3) + 6. Al combinar términos semejantes resulta 2x + 18."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q8": {
+      "inputHash": "05c2a262dedcfcefc458122b2c09b6856897699fc94dfc1cc779e564299abb93",
+      "explanation": {
+        "text": {
+          "en": "Opposite numbers are the same distance from zero on different sides. The opposite of 4 1/2 is −4 1/2, which is point P.",
+          "es": "Los números opuestos están a igual distancia de cero en lados distintos. El opuesto de 4 1/2 es −4 1/2, que corresponde al punto P."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q9": {
+      "inputHash": "3cd1a2f059d56e768084b5309004124ef969a51ae98e840f3f8f442db071346f",
+      "explanation": {
+        "text": {
+          "en": "The number of 1/12-cake servings is 2 1/2 ÷ 1/12. Multiplying 5/2 × 12 = 30 gives the total servings.",
+          "es": "La cantidad de porciones de 1/12 de pastel es 2 1/2 ÷ 1/12. Multiplicar 5/2 × 12 = 30 da el total de porciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q10": {
+      "inputHash": "06c75834eb4f51b85bc18e4f66ab8205b380c7ae757e7d48d60667ed364d163e",
+      "explanation": {
+        "text": {
+          "en": "The plotted points show 18 gallons in 2 minutes, a constant rate of 18 ÷ 2 = 9 gallons per minute. At 3 minutes, 3 × 9 = 27 gallons.",
+          "es": "Los puntos muestran 18 galones en 2 minutos, una razón constante de 18 ÷ 2 = 9 galones por minuto. En 3 minutos hay 3 × 9 = 27 galones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q11": {
+      "inputHash": "2b672026b4ee8f7603cbde6ba57d901fb789811ba7f1777e4e37aa0e176b5e31",
+      "explanation": {
+        "text": {
+          "en": "Volume equals length × width × height. Converting to fractions gives 11/3 × 7/2 × 6 = 77 cubic inches.",
+          "es": "El volumen equivale a largo × ancho × altura. Al convertir a fracciones se obtiene 11/3 × 7/2 × 6 = 77 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q12": {
+      "inputHash": "513042e92e9c550dab5b96406d66ea9306de8de4a8f9813c24968e3d108c34ae",
+      "explanation": {
+        "text": {
+          "en": "There are 12 + 20 + 13 = 45 flowers in all and 20 are roses. Therefore, the ratio of roses to total flowers is 20:45.",
+          "es": "Hay 12 + 20 + 13 = 45 flores en total y 20 son rosas. Por lo tanto, la razón de rosas al total es 20:45."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q14": {
+      "inputHash": "222e101769ae0720322b6ecc0c31d7e8e40fd0817bf0103d72293b1e0bf83a09",
+      "explanation": {
+        "text": {
+          "en": "The pizza cost is $15 for each of p pizzas, or 15p, and the delivery fee adds $5 once. Thus, c = 15p + 5.",
+          "es": "El costo de p pizzas a $15 cada una es 15p, y el envío agrega $5 una sola vez. Por lo tanto, c = 15p + 5."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q15": {
+      "inputHash": "67ebeaaa9957b6b693f865d58157308a27fe86c27a021890d89ed53edcb032c5",
+      "explanation": {
+        "text": {
+          "en": "One cup equals 16 tablespoons, so find three fourths of 16. Calculating 3/4 × 16 = 12 gives the tablespoons needed.",
+          "es": "Una taza equivale a 16 cucharadas, así que se hallan tres cuartos de 16. Calcular 3/4 × 16 = 12 da las cucharadas necesarias."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q16": {
+      "inputHash": "142e22f55911e85d1ca5276c65c625c4e21922a4164707f61eb799ed4f7920b5",
+      "explanation": {
+        "text": {
+          "en": "The two triangles total 2(1/2 × 12 × 8) = 96 square feet. The three rectangles total 6(10 + 12 + 10) = 192, so the surface area is 288.",
+          "es": "Los dos triángulos suman 2(1/2 × 12 × 8) = 96 pies cuadrados. Los rectángulos suman 6(10 + 12 + 10) = 192, así que el área total es 288."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q17": {
+      "inputHash": "880ad05bb99bf36a8e7edb42f29bdbd6b255e0527b836bdb4df51a4eef6caddc",
+      "explanation": {
+        "text": {
+          "en": "The next shared practice day is the least common multiple of 6 and 8. Their first common multiple is 24, so both practices occur again in 24 days.",
+          "es": "El siguiente día compartido es el mínimo común múltiplo de 6 y 8. Su primer múltiplo común es 24, así que ambas prácticas coinciden en 24 días."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q19": {
+      "inputHash": "974a75a5bd34b39fbf233c0b6af06c210dbed0783bf5ebd8767960f61778f7b3",
+      "explanation": {
+        "text": {
+          "en": "Distribute the 5 and combine like terms: 5(6m + 3) + 4m = 30m + 15 + 4m = 34m + 15.",
+          "es": "Se distribuye el 5 y se combinan términos semejantes: 5(6m + 3) + 4m = 30m + 15 + 4m = 34m + 15."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q20": {
+      "inputHash": "6ece5e544c35d55b87a6230fce817d4d8dfc0bb5a291b95df7e07c82557c8767",
+      "explanation": {
+        "text": {
+          "en": "On a number line, −15 lies left of −5, so −15 < −5. Their distances from zero are 15 and 5, so |−15| > |−5|.",
+          "es": "En la recta numérica, −15 queda a la izquierda de −5, así que −15 < −5. Sus distancias a cero son 15 y 5, por eso |−15| > |−5|."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q21": {
+      "inputHash": "7713341ca1f6d975f38904cf15bc50418482913f9d3a77cd1063d80cbdb8cb49",
+      "explanation": {
+        "text": {
+          "en": "The unit rate is 39 ÷ 6 = 6.5 minutes per decoration. At that rate, 14 decorations take 14 × 6.5 = 91 minutes.",
+          "es": "La razón unitaria es 39 ÷ 6 = 6.5 minutos por decoración. A esa razón, 14 decoraciones tardan 14 × 6.5 = 91 minutos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q22": {
+      "inputHash": "d5c2282adf6fe956eac070522eeb75b543e6542b985e0782c9ba32067568b993",
+      "explanation": {
+        "text": {
+          "en": "Each layer contains 5 rows of 5 cubes, so one layer has 5 × 5 = 25 cubes. With 5 layers, the cube has 25 × 5 = 125 cubes.",
+          "es": "Cada capa contiene 5 filas de 5 cubos, así que tiene 5 × 5 = 25 cubos. Con 5 capas, el modelo tiene 25 × 5 = 125 cubos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q23": {
+      "inputHash": "55bcb40844f8cf73fe94eb26db862ec0e462a3941edd1d3b1c4866fcebff85c0",
+      "explanation": {
+        "text": {
+          "en": "At least 48 inches means the height h can equal 48 or be greater, so h ≥ 48. The matching graph has a closed point at 48 and a ray to the right.",
+          "es": "Por lo menos 48 pulgadas significa que h puede ser 48 o mayor, así que h ≥ 48. La gráfica correcta tiene un punto cerrado en 48 y un rayo a la derecha."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q24": {
+      "inputHash": "9d6ff98f7f8d028f019145604f1dd6eca2623f8f6851deef592866b3e68d3181",
+      "explanation": {
+        "text": {
+          "en": "Let T be the team's total goals. Since 30% of T is 6, 0.30T = 6, so T = 6 ÷ 0.30 = 20 goals.",
+          "es": "Sea T el total de goles del equipo. Como el 30% de T es 6, 0.30T = 6; por lo tanto, T = 6 ÷ 0.30 = 20 goles."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q26": {
+      "inputHash": "fe9bdac6991339a0c53dd7eb99a2503b0c02b4e5980a60d4b79e6619971e7800",
+      "explanation": {
+        "text": {
+          "en": "Add 16 to both sides of k − 16 > 29 to get k > 45. Of the choices, only 58 is greater than 45 and makes the inequality true.",
+          "es": "Se suma 16 a ambos lados de k − 16 > 29 para obtener k > 45. De las opciones, solo 58 es mayor que 45 y satisface la desigualdad."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q27": {
+      "inputHash": "17ca9232c4a680433d66ceafb0b5562f340472a14b88d1106e41a4b564a8fb4b",
+      "explanation": {
+        "text": {
+          "en": "The 250 chocolate-chip boxes plus x sugar-cookie boxes make all 324 boxes. Therefore, the situation is represented by x + 250 = 324.",
+          "es": "Las 250 cajas de chocolate más x cajas de azúcar forman las 324 cajas totales. Por lo tanto, la situación se representa con x + 250 = 324."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q28": {
+      "inputHash": "50dbd5f0597fd3a64ab789cc0705610298c27dc23841f79fbf407542c9f82e2e",
+      "explanation": {
+        "text": {
+          "en": "The ratio 6 eggs to 4 cups simplifies by dividing both terms by 2. This gives 3 eggs for every 2 cups of flour.",
+          "es": "La razón de 6 huevos por 4 tazas se simplifica dividiendo ambos términos entre 2. Esto da 3 huevos por cada 2 tazas de harina."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q29": {
+      "inputHash": "0a2b7d106f8afcd1bf9e89eb4aee8a604ce1e78c7a7bac1f5cc47ef9d8def89b",
+      "explanation": {
+        "text": {
+          "en": "The shaded sail is a right triangle with base 8 meters and height 6 meters. Its area is 1/2 × 8 × 6 = 24 square meters.",
+          "es": "La vela sombreada es un triángulo rectángulo de base 8 metros y altura 6 metros. Su área es 1/2 × 8 × 6 = 24 metros cuadrados."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q30": {
+      "inputHash": "189dc35343ec6ddc73270b42d670cfe414cd85741fe3113df17dd10fe3c9d8e7",
+      "explanation": {
+        "text": {
+          "en": "The sum of 4 and twice c is 4 + 2c. Taking 55 less than that sum means subtracting 55, which gives (4 + 2c) − 55.",
+          "es": "La suma de 4 y el doble de c es 4 + 2c. Tomar 55 menos que esa suma significa restar 55, lo que da (4 + 2c) − 55."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q31": {
+      "inputHash": "987b02e80942b4d17e3d71d20848d275dc17c79a8fc4db2aef98d5250974ba5c",
+      "explanation": {
+        "text": {
+          "en": "There are 18 + 21 + 11 = 50 students, and 21 chose vanilla. Calculating 21 ÷ 50 = 0.42 shows that 42% chose vanilla.",
+          "es": "Hay 18 + 21 + 11 = 50 estudiantes y 21 eligieron vainilla. Calcular 21 ÷ 50 = 0.42 muestra que el 42% eligió vainilla."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q32": {
+      "inputHash": "de58bd0b673cecac1ea44981bba7d910d86c06110668474b3223e1666fed8595",
+      "explanation": {
+        "text": {
+          "en": "The greatest common factor of 24 and 18 is 6. Factoring out 6 gives 24x + 18y = 6(4x + 3y).",
+          "es": "El máximo factor común de 24 y 18 es 6. Al factorizar el 6 se obtiene 24x + 18y = 6(4x + 3y)."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q33": {
+      "inputHash": "0448c2172d3082b1290ac17898eabe8d7df8ec380393292df63859dc17bccb60",
+      "explanation": {
+        "text": {
+          "en": "For (1, −2) and (1, 3), the x-coordinates match, so the vertical distance is 3 − (−2) = 5 units. Thus, choice B works.",
+          "es": "Para (1, −2) y (1, 3), las coordenadas x coinciden, así que la distancia vertical es 3 − (−2) = 5 unidades. Por lo tanto, funciona B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q34": {
+      "inputHash": "91d196c27b78b6c56245d45a89d48f1d53aca81cdc2b9aad0b3ea5bb95c39f7f",
+      "explanation": {
+        "text": {
+          "en": "Three notebooks cost $6, so each notebook costs $6 ÷ 3 = $2. Table B keeps this rate: 3, 6, 9, 12, and 15 notebooks cost $6, $12, $18, $24, and $30.",
+          "es": "Tres cuadernos cuestan $6, así que cada uno cuesta $6 ÷ 3 = $2. La tabla B mantiene esa razón: 3, 6, 9, 12 y 15 cuestan $6, $12, $18, $24 y $30."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2026-g6-mc-q35": {
+      "inputHash": "4fe08304b5d0cd26b1f44dfe497b925eb2108506d613fad238fe425570181d61",
+      "explanation": {
+        "text": {
+          "en": "Multiply the prism's dimensions: 5 1/4 × 9 1/3 × 2 1/2 = 21/4 × 28/3 × 5/2 = 245/2 = 122 1/2 cubic inches.",
+          "es": "Se multiplican las dimensiones del prisma: 5 1/4 × 9 1/3 × 2 1/2 = 21/4 × 28/3 × 5/2 = 245/2 = 122 1/2 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

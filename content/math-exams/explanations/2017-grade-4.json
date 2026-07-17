@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2017-grade-4-mc-v1",
+  "questions": {
+    "nysed-2017-g4-mc-q1": {
+      "inputHash": "c874e382ef8b34c53384b0f596a69a6b299bde5b6d5905676182bd906b902a19",
+      "explanation": {
+        "text": {
+          "en": "To round 836,527 to the nearest ten thousand, look at the thousands digit, 6. Since it is at least 5, increase the ten-thousands digit from 3 to 4, giving 840,000.",
+          "es": "Para redondear 836,527 a la decena de millar más cercana, se mira la cifra de los millares, 6. Como es al menos 5, se aumenta la cifra de las decenas de millar de 3 a 4, lo que da 840,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q2": {
+      "inputHash": "b0bb08efe2f0a210ca8fc7dff8a83e7c1bd5be470c6d741cd1805ec59cf150c1",
+      "explanation": {
+        "text": {
+          "en": "The angle is larger than a 90° right angle but smaller than a 180° straight angle. The slanted ray is about 30° past vertical, so the angle measures 90° + 30° = 120°.",
+          "es": "El ángulo es mayor que un ángulo recto de 90° y menor que un ángulo llano de 180°. El rayo inclinado está unos 30° más allá de la vertical, así que el ángulo mide 90° + 30° = 120°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q3": {
+      "inputHash": "f8bae4879264c9d57c2e12de8dfe627c9c29e90b76e8c007c692b84c207c659e",
+      "explanation": {
+        "text": {
+          "en": "Subtracting fractions with the same denominator gives 7/10 − 2/10 = 5/10. Choice A also equals 5/10 because 2/10 + 3/10 = 5/10.",
+          "es": "Al restar fracciones con el mismo denominador se obtiene 7/10 − 2/10 = 5/10. La opción A también equivale a 5/10 porque 2/10 + 3/10 = 5/10."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q4": {
+      "inputHash": "b493007b937d8d83a3fe44897aaab8d6de8a7d21ddbfd9ef554fd55c1943baf9",
+      "explanation": {
+        "text": {
+          "en": "The figure with an arrow at one end is a ray, while the other two figures have two endpoints and are line segments. The two segments are parallel, and the ray crosses each at a right angle, so statement A describes the figure.",
+          "es": "La figura con una flecha en un extremo es una semirrecta, mientras que las otras dos tienen dos extremos y son segmentos. Los dos segmentos son paralelos y la semirrecta cruza cada uno en ángulo recto, así que la afirmación A describe la figura."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q5": {
+      "inputHash": "6b7c1ca814dd5cd8f2e30a76390499dd561f8aec350e8df460d6d114fcb2c82c",
+      "explanation": {
+        "text": {
+          "en": "Use the distributive property: 32 × 67 = 32 × (60 + 7) = 1,920 + 224 = 2,144.",
+          "es": "Se usa la propiedad distributiva: 32 × 67 = 32 × (60 + 7) = 1,920 + 224 = 2,144."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q6": {
+      "inputHash": "68cd5f5173862790f0f655d19de000758213c13399f733f3c32cdcd920a12c45",
+      "explanation": {
+        "text": {
+          "en": "The first model has 8 of 12 parts shaded, or 8/12, and the second has 4 of 6 shaded, or 4/6. Both fractions simplify to 2/3.",
+          "es": "El primer modelo tiene sombreadas 8 de 12 partes, o 8/12, y el segundo tiene sombreadas 4 de 6, o 4/6. Ambas fracciones se simplifican a 2/3; por lo tanto, son equivalentes."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q7": {
+      "inputHash": "97ba59de184561a726a665ea35619188a22aa1f655931591691538b3e2fb9db7",
+      "explanation": {
+        "text": {
+          "en": "A complete circle is 360°. Three-fourths of that turn is 3/4 × 360° = 270°.",
+          "es": "Un círculo completo mide 360°. Tres cuartos de ese giro son 3/4 × 360° = 270°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q8": {
+      "inputHash": "a429d5e5940a7f1488837fed57540bda21df3a5b4538be8eacbf81227f7cdcdc",
+      "explanation": {
+        "text": {
+          "en": "The shortest plant is 1/4 foot tall and the tallest is 3/4 foot tall. Their difference is 3/4 − 1/4 = 2/4 foot.",
+          "es": "La planta más baja mide 1/4 de pie y la más alta mide 3/4 de pie. La diferencia es 3/4 − 1/4 = 2/4 de pie."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q11": {
+      "inputHash": "4472660a98f2cabcd0c1dc3dd026d6954d62fb1ec84228acc19459e061524675",
+      "explanation": {
+        "text": {
+          "en": "The square has area 4 × 4 = 16 square inches. A rectangle of the same area and length 8 inches has width 16 ÷ 8 = 2 inches, so its perimeter is 2(8 + 2) = 20 inches.",
+          "es": "El cuadrado tiene un área de 4 × 4 = 16 pulgadas cuadradas. Un rectángulo con la misma área y 8 pulgadas de largo tiene un ancho de 16 ÷ 8 = 2 pulgadas, así que su perímetro es 2(8 + 2) = 20 pulgadas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q12": {
+      "inputHash": "6dc912886eb4c8a54ebb6babb5f5b71233bff6b88c77bf03d52844dc7f527501",
+      "explanation": {
+        "text": {
+          "en": "There are 15 × 18 = 270 apples. Dividing by 7 gives 270 ÷ 7 = 38 remainder 4, so the bakers can make 38 complete pies.",
+          "es": "Hay 15 × 18 = 270 manzanas. Al dividir entre 7 se obtiene 270 ÷ 7 = 38 con residuo 4, así que los panaderos pueden hacer 38 pasteles completos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q15": {
+      "inputHash": "5acae9bf5020f3d5d5cd513cdde3737d10449270f7001536cdc254dd09ee8990",
+      "explanation": {
+        "text": {
+          "en": "A quadrilateral has exactly four sides. Ashley's, Camden's, and Hayden's shapes each have four sides, while Fiona's and George's shapes have five, so those three students drew quadrilaterals.",
+          "es": "Un cuadrilátero tiene exactamente cuatro lados. Las figuras de Ashley, Camden y Hayden tienen cuatro lados cada una, mientras que las de Fiona y George tienen cinco; por lo tanto, esos tres estudiantes dibujaron cuadriláteros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q16": {
+      "inputHash": "e36bf26e8c2a72a6c3914ecf84f031ce7426b3ba0242c53fab7aa5b2a531fb66",
+      "explanation": {
+        "text": {
+          "en": "Angles STU and UTV together form the 90° right angle STV. Since angle STU is 75°, the other angle is found by 90 − 75.",
+          "es": "Los ángulos STU y UTV juntos forman el ángulo recto STV de 90°. Como el ángulo STU mide 75°, el otro ángulo se encuentra con 90 − 75."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q17": {
+      "inputHash": "fd1413cc30183a5c3ce7918b536c7395af4338532e6614b55be828c933ce9e1c",
+      "explanation": {
+        "text": {
+          "en": "Point X represents 3/4. Multiplying its numerator and denominator by 2 gives 6/8, and multiplying by 3 gives 9/12, matching points Y and Z.",
+          "es": "El punto X representa 3/4. Al multiplicar su numerador y denominador por 2 se obtiene 6/8, y al multiplicarlos por 3 se obtiene 9/12, que corresponden a los puntos Y y Z."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q21": {
+      "inputHash": "d61dc4cd93090f870d8e3805bdda47aafcc11929f3c6a4cc0fdb4d7e1a8bb171",
+      "explanation": {
+        "text": {
+          "en": "Angle ABD is made of angles ABC and CBD. Therefore, angle CBD measures 153° − 67° = 86°.",
+          "es": "El ángulo ABD está formado por los ángulos ABC y CBD. Por lo tanto, el ángulo CBD mide 153° − 67° = 86°."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q22": {
+      "inputHash": "a9630ffa864113ebf87fd48950e2d33c2847ea77db44e63b725d9ee5557bf7d0",
+      "explanation": {
+        "text": {
+          "en": "Dividing 1,224 by 9 gives 136. The quotient can be checked because 136 × 9 = 1,224.",
+          "es": "Al dividir 1,224 entre 9 se obtiene 136. El cociente se puede comprobar porque 136 × 9 = 1,224."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q23": {
+      "inputHash": "9a3ab18f65fcf2c5fa5095204d53685f134c166f99d0b92d75eb2e7750cc2983",
+      "explanation": {
+        "text": {
+          "en": "A multiple of 7 can be written as 7 times a whole number. Since 56 = 7 × 8, 56 is the multiple of 7 among the choices.",
+          "es": "Un múltiplo de 7 se puede escribir como 7 por un número entero. Como 56 = 7 × 8, 56 es el múltiplo de 7 entre las opciones."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q24": {
+      "inputHash": "2c9635af6ddc272df52b5b3cde9526bace8131199d487dfb6bc6a989249fd26a",
+      "explanation": {
+        "text": {
+          "en": "The table requires 3 Xs at 0, 3 at 1/4, 2 at 1/2, 4 at 3/4, and 2 at 1. Line plot C shows exactly those five frequencies.",
+          "es": "La tabla requiere 3 X en 0, 3 en 1/4, 2 en 1/2, 4 en 3/4 y 2 en 1. La gráfica C muestra exactamente esas cinco frecuencias."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q25": {
+      "inputHash": "dd71e181e46aa481989925cc5c490a0ded0a8e371beb08f9d5fd88f4f4f19a78",
+      "explanation": {
+        "text": {
+          "en": "Each of the 3 puzzles has 1,250 pieces, so the total is 3 × 1,250 = 3,750 pieces.",
+          "es": "Cada uno de los 3 rompecabezas tiene 1,250 piezas, así que el total es 3 × 1,250 = 3,750 piezas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q26": {
+      "inputHash": "b53d58e6c4d968921333b03783b32838dc177d493b4d8a7a99efcd84ad17067d",
+      "explanation": {
+        "text": {
+          "en": "The shirt costs 4 times the $8 cap price. Four equal groups of 8 are represented by 8 × 4 = ?, which gives a shirt price of $32.",
+          "es": "La camisa cuesta 4 veces el precio de $8 de la gorra. Cuatro grupos iguales de 8 se representan con 8 × 4 = ?, lo que da un precio de $32 para la camisa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q27": {
+      "inputHash": "100eae979a8d21d03b7de2776a13c3e9b83b950c447c3feffda692be3a272e44",
+      "explanation": {
+        "text": {
+          "en": "The fraction 4/6 simplifies to 2/3. On the number line, the interval from 0 to 1 is divided into thirds, and point B is at the second third, so B represents 2/3.",
+          "es": "La fracción 4/6 se simplifica a 2/3. En la recta numérica, el intervalo de 0 a 1 está dividido en tercios y el punto B está en el segundo tercio; por lo tanto, B representa 2/3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q28": {
+      "inputHash": "af97c7b6cce30a34505e9165107bae6b9387178c156438856b63d3718d7de31d",
+      "explanation": {
+        "text": {
+          "en": "The sign is a rectangle 4 feet long and 2 feet wide. Its perimeter is 2(4 + 2) = 12 feet.",
+          "es": "El letrero es un rectángulo de 4 pies de largo y 2 pies de ancho. Su perímetro es 2(4 + 2) = 12 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q29": {
+      "inputHash": "97ff05f0b0cb2ed184102b890ed5a2969d013e4e4431808a852fecef6cb14344",
+      "explanation": {
+        "text": {
+          "en": "Figure A matches itself when reflected across one horizontal line through its center. It does not match across a vertical line, so it has exactly one line of symmetry.",
+          "es": "La figura A coincide consigo misma al reflejarse sobre una línea horizontal que pasa por su centro. No coincide sobre una línea vertical, así que tiene exactamente una línea de simetría."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q30": {
+      "inputHash": "a70a3e74343f854b2e1177b0b92af7872b11081511736a33fea29ad928f195b5",
+      "explanation": {
+        "text": {
+          "en": "Dividing 762 students equally among 6 teams gives 762 ÷ 6 = 127 students per team. This checks because 127 × 6 = 762.",
+          "es": "Al dividir 762 estudiantes por igual entre 6 equipos se obtiene 762 ÷ 6 = 127 estudiantes por equipo. Se comprueba porque 127 × 6 = 762."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q31": {
+      "inputHash": "717c96dda4cd85539f25bbce49bad4dc81d5a8a1976214ee4cd9ac3d0c0c1b99",
+      "explanation": {
+        "text": {
+          "en": "The playground rack has 3 times the 11 spaces on the other rack. That relationship is represented by 3 × 11 = ?, which equals 33 spaces.",
+          "es": "El soporte del área de juegos tiene 3 veces los 11 espacios del otro soporte. Esa relación se representa con 3 × 11 = ?, que equivale a 33 espacios."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q32": {
+      "inputHash": "f34efe4e4774088dfce53625711976dd0f99ab2cd4764060b482894074d3d435",
+      "explanation": {
+        "text": {
+          "en": "Melina walks 9/12 mile on each of 5 days, so multiply: 5 × 9/12 = 45/12 miles.",
+          "es": "Melina camina 9/12 de milla cada uno de 5 días, así que se multiplica: 5 × 9/12 = 45/12 millas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q35": {
+      "inputHash": "a4c4958a1226c51cae499519733b9ebb9a26f8c8547709b0b6b58ca0bad9b052",
+      "explanation": {
+        "text": {
+          "en": "The red yarn is 3/4 foot, the yellow yarn is 6/8 = 3/4 foot, and the blue yarn is 4/12 = 1/3 foot. Since 1/3 < 3/4, the true comparison is 4/12 < 3/4.",
+          "es": "El hilo rojo mide 3/4 de pie, el amarillo mide 6/8 = 3/4 de pie y el azul mide 4/12 = 1/3 de pie. Como 1/3 < 3/4, la comparación verdadera es 4/12 < 3/4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q36": {
+      "inputHash": "17bac889efd57c1806e8d2604066cf81acdf010069c1f57ed5b9e8fda77481f6",
+      "explanation": {
+        "text": {
+          "en": "An acute angle measures less than 90°. The upper-left and lower-middle angles are less than a right angle; the other two are straight or obtuse, so 2 angles are acute.",
+          "es": "Un ángulo agudo mide menos de 90°. Los ángulos superior izquierdo e inferior central son menores que un ángulo recto; los otros dos son llano u obtuso, así que hay 2 ángulos agudos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q37": {
+      "inputHash": "8b8a63aaf32e5dc3a9925e09e89e13e2f73ff17ca2ff6afe0233147e482a19ab",
+      "explanation": {
+        "text": {
+          "en": "Each turn moves the dial 1 degree, and there are 10 turns. Multiplying gives 1° × 10 = 10° in all.",
+          "es": "Cada giro mueve el dial 1 grado y hay 10 giros. Al multiplicar se obtiene 1° × 10 = 10° en total."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q40": {
+      "inputHash": "48c88c13bd58ad5a931b6e67836863dcfed2e79fed61e94be8a93adbc6352262",
+      "explanation": {
+        "text": {
+          "en": "Break 13 into 10 + 3 and use the distributive property: 11 × 13 = 11 × 10 + 11 × 3. Therefore, multiply those two pairs and add the products.",
+          "es": "Se descompone 13 en 10 + 3 y se usa la propiedad distributiva: 11 × 13 = 11 × 10 + 11 × 3. Por lo tanto, se multiplican esos dos pares y se suman los productos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q41": {
+      "inputHash": "a16f5074a053cd97d422552d80f8b225328bc2dd90602dbdfc288da5e2e49937",
+      "explanation": {
+        "text": {
+          "en": "Simplifying 9/12 by dividing numerator and denominator by 3 gives 3/4. Model B has 3 of its 4 equal parts shaded, so it represents an equivalent fraction.",
+          "es": "Al simplificar 9/12 dividiendo el numerador y el denominador entre 3 se obtiene 3/4. El modelo B tiene sombreadas 3 de sus 4 partes iguales, así que representa una fracción equivalente."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q44": {
+      "inputHash": "8de142c400fb13dc2864d938e2fd8c4b59c21c02abf3fef5507f004ae50c1751",
+      "explanation": {
+        "text": {
+          "en": "The greatest whole-number multiple of 8 not exceeding 123 is 8 × 15 = 120. Since 123 − 120 = 3, the quotient is 15 remainder 3.",
+          "es": "El mayor múltiplo entero de 8 que no supera 123 es 8 × 15 = 120. Como 123 − 120 = 3, el cociente es 15 con residuo 3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2017-g4-mc-q45": {
+      "inputHash": "58c8495f032c7b5c3d2530e607d1502a1c8768ddef885581f58825e9f1a4382f",
+      "explanation": {
+        "text": {
+          "en": "Subtract Becky's amount from the total: 4 2/8 − 1 5/8. Regroup 4 2/8 as 3 10/8; then 3 10/8 − 1 5/8 = 2 5/8 feet.",
+          "es": "Se resta la cantidad de Becky del total: 4 2/8 − 1 5/8. Se reagrupa 4 2/8 como 3 10/8; entonces 3 10/8 − 1 5/8 = 2 5/8 pies."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

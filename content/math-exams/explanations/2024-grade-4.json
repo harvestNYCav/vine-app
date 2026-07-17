@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2024-grade-4-mc-v1",
+  "questions": {
+    "nysed-2024-g4-mc-q1": {
+      "inputHash": "713304acdc2a69350a3bbfcc33ef394fc34887cbfbcc706263352e49920d86bd",
+      "explanation": {
+        "text": {
+          "en": "Ben has 3 times Carter's 9 comic books, so multiply 3 × 9. The product is 27 comic books, choice D.",
+          "es": "Ben tiene 3 veces los 9 cómics de Carter, así que se multiplica 3 × 9. El producto es 27 cómics, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q2": {
+      "inputHash": "8c048093a8d483992c7af99e3ef994b95aa19e13988f3893fca80f1e4804df0c",
+      "explanation": {
+        "text": {
+          "en": "The numerator 3 was multiplied by 3 to become 9, so the denominator 4 must also be multiplied by 3. Thus 3/4 = 9/12, and the missing value is 12, choice C.",
+          "es": "El numerador 3 se multiplicó por 3 para convertirse en 9, así que el denominador 4 también debe multiplicarse por 3. Por lo tanto, 3/4 = 9/12 y el valor faltante es 12, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q7": {
+      "inputHash": "4c9ae6c13f15fc107678194bdba3cd8ca35d3fd93539d0eb17da6ddeeddf7ff6",
+      "explanation": {
+        "text": {
+          "en": "A straight angle measures 180°, and the 70° angle plus angle JKM make the straight angle. Therefore angle JKM is found with 180° − 70° = 110°, the equation in choice C.",
+          "es": "Un ángulo llano mide 180° y el ángulo de 70° junto con JKM forman el ángulo llano. Por lo tanto, JKM se halla con 180° − 70° = 110°, la ecuación de la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q10": {
+      "inputHash": "89a1e3d45e3bec37ad9282a37af0e8b49d761fe2fc4f5db440ff8d84cde6dda6",
+      "explanation": {
+        "text": {
+          "en": "Line AB is horizontal and line CD is vertical, so they intersect to form right angles. Therefore AB is perpendicular to CD, as stated in choice A.",
+          "es": "La recta AB es horizontal y CD es vertical, así que se cruzan formando ángulos rectos. Por lo tanto, AB es perpendicular a CD, como indica la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q11": {
+      "inputHash": "cdebefb669ed2cbd7be3c7a0f15d061cbdaf7dbd9d6cc327cd3cd8f1c7d32f1d",
+      "explanation": {
+        "text": {
+          "en": "One whole is 12/12. The missing part is 12/12 − 4/12 = 8/12, so adding choice D to 4/12 makes one whole.",
+          "es": "Un entero es 12/12. La parte faltante es 12/12 − 4/12 = 8/12, así que al sumar la opción D a 4/12 se forma un entero."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q12": {
+      "inputHash": "828110c9071fb9885ed00766ed86821c5941c3afde969c71e4cff8f3b19dc973",
+      "explanation": {
+        "text": {
+          "en": "A number rounds to 17,000 to the nearest thousand when it is from 16,500 through 17,499. The number 16,921 is in that interval, so choice B rounds to 17,000.",
+          "es": "Un número se redondea a 17,000 al millar más cercano si está entre 16,500 y 17,499. El 16,921 está en ese intervalo, así que la opción B se redondea a 17,000."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q15": {
+      "inputHash": "2251044a856801a175a937a9be6e4bb498a67e14b73ab4bc6b162e64b45dce35",
+      "explanation": {
+        "text": {
+          "en": "Allison runs 8/10 mile on each of 7 days, so multiply 7 × 8/10. Multiplying the numerator gives 56/10 miles, which is choice A.",
+          "es": "Allison corre 8/10 de milla cada uno de 7 días, así que se multiplica 7 × 8/10. Al multiplicar el numerador se obtienen 56/10 millas, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q16": {
+      "inputHash": "50c75f54829c7b966e06bccdcd7e00b84be3b64b5d0864870ab697329cc9dc86",
+      "explanation": {
+        "text": {
+          "en": "The expression is 102 ÷ 6. Since 6 × 17 = 102, the quotient is 17, which is choice B.",
+          "es": "La expresión es 102 ÷ 6. Como 6 × 17 = 102, el cociente es 17, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q22": {
+      "inputHash": "9a7abe168e4bfbfd5e51194d63a306c3eef8deb50d4e2eb3cdc9df460ea705e4",
+      "explanation": {
+        "text": {
+          "en": "Regroup 4 1/4 as 3 5/4 so the fractional parts can be subtracted. Then 3 5/4 − 2 2/4 = 1 3/4, choice B.",
+          "es": "Se reagrupa 4 1/4 como 3 5/4 para poder restar las partes fraccionarias. Luego 3 5/4 − 2 2/4 = 1 3/4, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q23": {
+      "inputHash": "41a390ffa80a31150651cc3d78f4088434ee29a8b00d3f4351705052c7d9e672",
+      "explanation": {
+        "text": {
+          "en": "Each hundred contains 100, and 1,000 ÷ 100 = 10. Therefore there are 10 hundreds in 1,000, choice B.",
+          "es": "Cada centena contiene 100 y 1,000 ÷ 100 = 10. Por lo tanto, hay 10 centenas en 1,000, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q24": {
+      "inputHash": "853a41e2756893d9950db8f9dc8bc7bd316147e076812b4f63b0a09f5c9ae2c5",
+      "explanation": {
+        "text": {
+          "en": "Choice A is not true because 5 × 3/4 = 15/4, not 15/20. The other equations give equal values on both sides, so A is the required choice.",
+          "es": "La opción A no es verdadera porque 5 × 3/4 = 15/4, no 15/20. Las otras ecuaciones dan valores iguales en ambos lados, así que A es la opción requerida."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q26": {
+      "inputHash": "78aa5213125f4543ef26c1510d0e531effc3fda2a15fedd3c3a614bd86342b5a",
+      "explanation": {
+        "text": {
+          "en": "A rectangle has four right angles and two pairs of parallel opposite sides. Figure B has those properties; being a square does not stop it from also being a rectangle, so B is correct.",
+          "es": "Un rectángulo tiene cuatro ángulos rectos y dos pares de lados opuestos paralelos. La figura B cumple esas propiedades; ser un cuadrado no impide que también sea un rectángulo, así que B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q29": {
+      "inputHash": "7ea759c6224fba2d1aaa5a43401abd76da99881e1b02f1c7b7c6437a6ee062f5",
+      "explanation": {
+        "text": {
+          "en": "Multiplying 2,470 by 3 gives 2,000(3) + 400(3) + 70(3) = 6,000 + 1,200 + 210 = 7,410. This is choice C.",
+          "es": "Al multiplicar 2,470 por 3 se obtiene 2,000(3) + 400(3) + 70(3) = 6,000 + 1,200 + 210 = 7,410. Esta es la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q30": {
+      "inputHash": "8301739e87bd3fdb2bc5cb5c047e1593b3059f535e17a0589e061b4d3e2b576c",
+      "explanation": {
+        "text": {
+          "en": "A square has 4 equal sides, so each side is one-fourth of its 120-foot perimeter. Calculating 120 ÷ 4 = 30 feet gives choice B.",
+          "es": "Un cuadrado tiene 4 lados iguales, así que cada lado es la cuarta parte del perímetro de 120 pies. Al calcular 120 ÷ 4 = 30 pies se obtiene la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q31": {
+      "inputHash": "f543aaccd4df4174fe1cdbab7ba81795652771fcf113aba4dd1c309529e1113b",
+      "explanation": {
+        "text": {
+          "en": "The regular hexagon has one symmetry line through each pair of opposite vertices and one through each pair of opposite side midpoints. That gives 3 + 3 = 6 lines of symmetry, choice D.",
+          "es": "El hexágono regular tiene un eje de simetría por cada par de vértices opuestos y otro por cada par de puntos medios de lados opuestos. Eso da 3 + 3 = 6 ejes, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q32": {
+      "inputHash": "d7e259acf809138ac5ea1835c7822c7524b7f585bcb131774e2d0d5e081c4045",
+      "explanation": {
+        "text": {
+          "en": "Each student costs $3 + $2 = $5 for the bus and admission together. For 80 students, the total is 80 × $5 = $400, choice C.",
+          "es": "Cada estudiante cuesta $3 + $2 = $5 entre autobús y entrada. Para 80 estudiantes, el total es 80 × $5 = $400, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q33": {
+      "inputHash": "a4c1694f5e940c3a1704ec4fa4d1194f6c6a6ec4f76ca9f4e123995aa7dfeaed",
+      "explanation": {
+        "text": {
+          "en": "Compare the fractions as decimals: 3/4 = 0.75 and 4/5 = 0.80. Since 0.75 < 0.80, the true comparison is 3/4 < 4/5, choice D.",
+          "es": "Se comparan las fracciones como decimales: 3/4 = 0.75 y 4/5 = 0.80. Como 0.75 < 0.80, la comparación verdadera es 3/4 < 4/5, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q34": {
+      "inputHash": "a6caf6e40ba50db18e2bebfe0b4825914fbba3f4394dc8dc2414d337e49601a2",
+      "explanation": {
+        "text": {
+          "en": "The four partial products are 30 × 40 = 1,200, 5 × 40 = 200, 30 × 3 = 90, and 5 × 3 = 15. Their sum is 1,505, exactly the equation in choice A.",
+          "es": "Los cuatro productos parciales son 30 × 40 = 1,200, 5 × 40 = 200, 30 × 3 = 90 y 5 × 3 = 15. Su suma es 1,505, exactamente la ecuación de la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2024-g4-mc-q35": {
+      "inputHash": "d90d0d2386b9b4bae2f59b5f6082313ab70f0c647165f0bcd1f29b210c74e342",
+      "explanation": {
+        "text": {
+          "en": "Choice B contains two wholes, 6/6 + 6/6, plus 2/6 + 1/6 + 1/6 = 4/6. Therefore it equals 2 4/6 and is equivalent to the given mixed number.",
+          "es": "La opción B contiene dos enteros, 6/6 + 6/6, más 2/6 + 1/6 + 1/6 = 4/6. Por lo tanto, equivale a 2 4/6 y es equivalente al número mixto dado."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

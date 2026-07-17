@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2025-grade-7-mc-v1",
+  "questions": {
+    "nysed-2025-g7-mc-q2": {
+      "inputHash": "0675f016250778266a540306f6d3dbfd851adbbc75fd8af964ae571939d2d99c",
+      "explanation": {
+        "text": {
+          "en": "In table C, calories per slice are constant: 106/1 = 212/2 = 318/3 = 424/4 = 106. A constant unit rate makes the relationship proportional.",
+          "es": "En la tabla C, las calorías por rebanada son constantes: 106/1 = 212/2 = 318/3 = 424/4 = 106. Una tasa unitaria constante hace que la relación sea proporcional."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q3": {
+      "inputHash": "b649097c4afe3698911a875615f3cb7bb8ada7d549688d9f4fa7418173eb422e",
+      "explanation": {
+        "text": {
+          "en": "There are 3 main courses and 2 desserts, so all 3 × 2 = 6 meals must appear. Diagram B branches from C, S, and F to both P and B exactly once.",
+          "es": "Hay 3 platos principales y 2 postres, así que deben aparecer las 3 × 2 = 6 comidas. El diagrama B conecta C, S y F con P y B exactamente una vez."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q8": {
+      "inputHash": "4b8cda7a78cd5fe745b5355a5bbf2abdd29ce3d19bdb123f13df92df2da749cf",
+      "explanation": {
+        "text": {
+          "en": "Each ticket costs 81/3 = 27 dollars; the other rows give the same rate. Therefore total cost is c = 27t.",
+          "es": "Cada boleto cuesta 81/3 = 27 dólares; las otras filas dan la misma tasa. Por lo tanto, el costo total es c = 27t."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q10": {
+      "inputHash": "7a79a01be7834931d2ac790890713d9f3a2dccd7fb07050bb5a8d84b4edd07e3",
+      "explanation": {
+        "text": {
+          "en": "The perimeter includes two lengths x and two widths of 6.5 feet. Thus 2x + 2(6.5) = 47, or 2x + 13 = 47.",
+          "es": "El perímetro incluye dos largos x y dos anchos de 6.5 pies. Entonces, 2x + 2(6.5) = 47, o 2x + 13 = 47."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q13": {
+      "inputHash": "da1c9e32042e4bfa77e0bd8ab3f35a3f9b6db8142cb8b2bd6caa999cde59285f",
+      "explanation": {
+        "text": {
+          "en": "The known terms total −6.8 + 6.4 = −0.4, so the blank must equal +0.4. Choice A gives −4.3 + 4.7 = 0.4.",
+          "es": "Los términos conocidos suman −6.8 + 6.4 = −0.4, así que el espacio debe valer +0.4. La opción A da −4.3 + 4.7 = 0.4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q14": {
+      "inputHash": "358d868db5fde2be7106588076dca7544af433acc3f26253d03ed899d8313983",
+      "explanation": {
+        "text": {
+          "en": "Use any labeled point on the line: $55 ÷ 4 hours = $13.75 per hour. The points (7, 96.25) and (11, 151.25) confirm the same rate.",
+          "es": "Usamos cualquier punto marcado en la recta: $55 ÷ 4 horas = $13.75 por hora. Los puntos (7, 96.25) y (11, 151.25) confirman la misma tasa."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q17": {
+      "inputHash": "1a8de945094b7c02728288a71ea6078fcef2a922dae359a883476ccc552b1fe8",
+      "explanation": {
+        "text": {
+          "en": "Adding a negative is equivalent to subtraction: (−0.3) + 1.5 = 1.5 + (−0.3) = 1.5 − 0.3.",
+          "es": "Sumar un número negativo equivale a restar: (−0.3) + 1.5 = 1.5 + (−0.3) = 1.5 − 0.3."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q20": {
+      "inputHash": "0d83b0f99e0f9b657cffbb21c91a252e8b37871d2b7fdd8745dfcfa48e1adc2c",
+      "explanation": {
+        "text": {
+          "en": "Distribute and combine like terms: 4(3x − 1.25) − 2(3.5x + 2) = 12x − 5 − 7x − 4 = 5x − 9.",
+          "es": "Distribuimos y combinamos términos semejantes: 4(3x − 1.25) − 2(3.5x + 2) = 12x − 5 − 7x − 4 = 5x − 9."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q21": {
+      "inputHash": "357d072ed9c3aa247f75f693a3491b38447880e303bc172db4fcd52aa041fb6b",
+      "explanation": {
+        "text": {
+          "en": "The discount is 0.10t, so the sale price is t − 0.10t = (1 − 0.10)t = 0.90t.",
+          "es": "El descuento es 0.10t, así que el precio de oferta es t − 0.10t = (1 − 0.10)t = 0.90t."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q23": {
+      "inputHash": "4797ff0c73a2cb5a53a4f26095b4166a8260e45bb40e71bfa38507f7646e7f77",
+      "explanation": {
+        "text": {
+          "en": "Convert −1 1/2 to −3/2. Then (−6)(−3/2) = 18/2 = 9 because the product of two negatives is positive.",
+          "es": "Convertimos −1 1/2 en −3/2. Luego, (−6)(−3/2) = 18/2 = 9 porque el producto de dos negativos es positivo."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q25": {
+      "inputHash": "019ae0e5291ae4691a219e3dfd2a76f9ebeafde4297f5223af0235a0922d0692",
+      "explanation": {
+        "text": {
+          "en": "The regular price is 2($49) − $10 = $88, which is $39 more per chair. For 3 chairs, the difference is 3($39) = $117.",
+          "es": "El precio regular es 2($49) − $10 = $88, que son $39 más por silla. Para 3 sillas, la diferencia es 3($39) = $117."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q27": {
+      "inputHash": "1cdce4a49fbf1846cccf3636412bfea6bcb7fd1d85f3f15d6215cbfdb00548d4",
+      "explanation": {
+        "text": {
+          "en": "Miles per gallon is distance divided by fuel: 30 ÷ 1 2/3 = 30 ÷ 5/3 = 30(3/5) = 18 miles per gallon.",
+          "es": "Las millas por galón son distancia dividida entre combustible: 30 ÷ 1 2/3 = 30 ÷ 5/3 = 30(3/5) = 18 millas por galón."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q28": {
+      "inputHash": "4b2c7b355debfec260ee188ae0ea82f3305282661cdea6e20c10509816bd784a",
+      "explanation": {
+        "text": {
+          "en": "Saturday attendance was 152(1.25) = 190, so 152 + 190 = 342 tickets were sold. Revenue was 342($8.95) = $3,060.90.",
+          "es": "La asistencia del sábado fue 152(1.25) = 190, así que se vendieron 152 + 190 = 342 boletos. El ingreso fue 342($8.95) = $3,060.90."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q29": {
+      "inputHash": "af154f7f693f3c7770506395af96be01cde3994567154d3fe4afe4faa78edd58",
+      "explanation": {
+        "text": {
+          "en": "After w weeks the balance is 500 − 40w. Requiring 500 − 40w ≥ 200 gives w ≤ 7.5, so the greatest whole number of weeks is 7.",
+          "es": "Después de w semanas, el saldo es 500 − 40w. Exigir 500 − 40w ≥ 200 da w ≤ 7.5, así que el mayor número entero de semanas es 7."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q32": {
+      "inputHash": "e75f6ed5fbd07b8d322009794679e0f1324cc8e880719e7eb663d3e0f506465a",
+      "explanation": {
+        "text": {
+          "en": "The descent rate is 2,700 ÷ 1 1/3 = 2,700 ÷ 4/3 = 2,025 feet per hour. After 2 1/4 hours, the depth is 2,025(9/4) = 4,556.25 feet.",
+          "es": "La tasa de descenso es 2,700 ÷ 1 1/3 = 2,700 ÷ 4/3 = 2,025 pies por hora. Después de 2 1/4 horas, la profundidad es 2,025(9/4) = 4,556.25 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q33": {
+      "inputHash": "3aced33e56d8e98faf4b324f513fc2194eb4178a758d65d803b2844e9db444c1",
+      "explanation": {
+        "text": {
+          "en": "The graph contains the point (1, 0.50), so one container costs $0.50. Other points such as (4, 2.00) give the same unit price.",
+          "es": "La gráfica contiene el punto (1, 0.50), así que un envase cuesta $0.50. Otros puntos como (4, 2.00) dan el mismo precio unitario."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q34": {
+      "inputHash": "c3690292e387aef287ac0653971b61f2013ba6b6a62ea42ddfa1e381ed3f81b7",
+      "explanation": {
+        "text": {
+          "en": "Admission costs $12 and x ride tickets cost $5.50x. Spending at most $46 is represented by 5.5x + 12 ≤ 46.",
+          "es": "La entrada cuesta $12 y x boletos para juegos cuestan $5.50x. Gastar como máximo $46 se representa con 5.5x + 12 ≤ 46."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q35": {
+      "inputHash": "e57f52966660814c844e2ddcc22ece10245b0b0df07429264fffae2d9144491c",
+      "explanation": {
+        "text": {
+          "en": "The median line is at 40 words per minute for Semester 1 and 55 for Semester 2. Their difference is 55 − 40 = 15.",
+          "es": "La línea de la mediana está en 40 palabras por minuto para el Semestre 1 y en 55 para el Semestre 2. La diferencia es 55 − 40 = 15."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q36": {
+      "inputHash": "20b812b83cee1e1aec688042d3a174ac268ca6da84749c64851dfc94080520d3",
+      "explanation": {
+        "text": {
+          "en": "A 20% decrease leaves 100% − 20% = 80% of the original value x. Written as a decimal, the remaining value is 0.8x.",
+          "es": "Una disminución del 20% deja 100% − 20% = 80% del valor original x. Escrito como decimal, el valor restante es 0.8x."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q37": {
+      "inputHash": "05cbf710c47631659ab669b30b74f5f04096a6f2acde2290e6272eba0a09d741",
+      "explanation": {
+        "text": {
+          "en": "Change equals final temperature minus initial temperature: 8 − (−7) = 8 + 7 = 15°F.",
+          "es": "El cambio es la temperatura final menos la inicial: 8 − (−7) = 8 + 7 = 15°F."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2025-g7-mc-q38": {
+      "inputHash": "9d2215da39375061d2f0ce9b127272e053669507e7786b41ea445b7c9232459b",
+      "explanation": {
+        "text": {
+          "en": "The party needs 30 × 2 = 60 servings, which requires 60 ÷ 5 = 12 bottles. The cost is 12($4.89) = $58.68.",
+          "es": "La fiesta necesita 30 × 2 = 60 porciones, lo que requiere 60 ÷ 5 = 12 botellas. El costo es 12($4.89) = $58.68."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

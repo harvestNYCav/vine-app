@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2015-grade-5-mc-v1",
+  "questions": {
+    "nysed-2015-g5-mc-q1": {
+      "inputHash": "ce7e8428d6178b620c1ac2e7e18a1b5f860681ca6d23367422ec5564fb4d94de",
+      "explanation": {
+        "text": {
+          "en": "The phrase first requires finding the sum 9 + 6, then multiplying that sum by 4. Thus, 4 × (9 + 6) = 4 × 15 = 60 represents the phrase.",
+          "es": "La frase exige primero hallar la suma 9 + 6 y luego multiplicar esa suma por 4. Por lo tanto, 4 × (9 + 6) = 4 × 15 = 60 representa la frase."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q2": {
+      "inputHash": "36ce006bf3074cb761c42ed4a29287595a3dad14c790da4cb2e04bdec9af4c0b",
+      "explanation": {
+        "text": {
+          "en": "For a right rectangular prism, volume equals base area times depth. The tank's volume is 220 × 11 = 2,420 cubic feet.",
+          "es": "Para un prisma rectangular recto, el volumen es el área de la base por la profundidad. El volumen del tanque es 220 × 11 = 2,420 pies cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q3": {
+      "inputHash": "a000d530b66d6906a7bda9d921ea29f753122443ac3c9e00681354128e3e8712",
+      "explanation": {
+        "text": {
+          "en": "Divide the 1,344 photos equally among 24 pages. Since 24 × 56 = 1,344, each page will contain 56 photos.",
+          "es": "Se dividen las 1,344 fotos en partes iguales entre 24 páginas. Como 24 × 56 = 1,344, cada página tendrá 56 fotos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q4": {
+      "inputHash": "d9094110b5c60701c477029161381494678233b426a9f4062cc224ce988cc1ee",
+      "explanation": {
+        "text": {
+          "en": "For 0.27 to be greater than the missing decimal, the missing value must be below 27 hundredths. Since 0.26 < 0.27, 0.26 makes the sentence true.",
+          "es": "Para que 0.27 sea mayor que el decimal que falta, ese valor debe ser menor que 27 centésimos. Como 0.26 < 0.27, el número 0.26 hace verdadera la desigualdad."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q5": {
+      "inputHash": "64cfb32cc952f6354f5cb0e7b2b9ee045f0178ea17b5429b618c5c3420d13307",
+      "explanation": {
+        "text": {
+          "en": "Multiply the prism's three dimensions to find its volume: 5 × 4 × 8 = 160. The jewelry box holds 160 cubic centimeters.",
+          "es": "Se multiplican las tres dimensiones del prisma para hallar el volumen: 5 × 4 × 8 = 160. El joyero tiene un volumen de 160 centímetros cúbicos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q6": {
+      "inputHash": "d338733589f7a39f2d61e2500d2bdb4dcfffa6a6f713cbe24b123ebd93dd5002",
+      "explanation": {
+        "text": {
+          "en": "The four full buses carry 4 × 40 = 160 people, and the fifth carries 4/5 × 40 = 32, for 192 passengers. One eighth of 192 is 192 ÷ 8 = 24 adults.",
+          "es": "Los cuatro autobuses llenos llevan 4 × 40 = 160 personas y el quinto lleva 4/5 × 40 = 32, para un total de 192 pasajeros. Un octavo de 192 es 192 ÷ 8 = 24 adultos."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q7": {
+      "inputHash": "28a6b4343e01716b4603dc7b19901bd9349280e6c4a9bcaebfdcfe5a9cf8ca85",
+      "explanation": {
+        "text": {
+          "en": "Evaluate inside the parentheses first: 2 × (9 + 7) = 2 × 16 = 32. The other expressions evaluate to 12, 72, and 14, not 32.",
+          "es": "Primero se evalúa lo que está dentro de los paréntesis: 2 × (9 + 7) = 2 × 16 = 32. Las otras expresiones dan 12, 72 y 14, no 32."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q8": {
+      "inputHash": "e948f2eee14fa35f31c8dd00f785256b60c617f008f57f61d3028f47d73d570b",
+      "explanation": {
+        "text": {
+          "en": "Divide 1,364 pages by 62 days. Because 62 × 22 = 1,364, Josie must read 22 pages each day.",
+          "es": "Se dividen 1,364 páginas entre 62 días. Como 62 × 22 = 1,364, Josie debe leer 22 páginas cada día."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q9": {
+      "inputHash": "ff396f74b26f9f7b1aea1519156cbe4aad2460610e606c3c7dc92b67d9249eaf",
+      "explanation": {
+        "text": {
+          "en": "Equation 2 gives 40/100 + 32/100 = 72/100, and equation 4 gives 60/100 + 27/100 = 87/100. Equations 1 and 3 instead total 45/100 and 72/100, so only equations 2 and 4 are true.",
+          "es": "La ecuación 2 da 40/100 + 32/100 = 72/100, y la ecuación 4 da 60/100 + 27/100 = 87/100. Las ecuaciones 1 y 3 suman 45/100 y 72/100, así que solo son verdaderas la 2 y la 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q10": {
+      "inputHash": "38b8607cf3d6ddd5a84c57a4125585f22a6882ec56270570cbf41b682e9a744e",
+      "explanation": {
+        "text": {
+          "en": "Multiply numerators and denominators: 5/8 × 3/4 = (5 × 3)/(8 × 4) = 15/32. The fraction is already in simplest form.",
+          "es": "Se multiplican los numeradores y los denominadores: 5/8 × 3/4 = (5 × 3)/(8 × 4) = 15/32. La fracción ya está en su forma más simple."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q11": {
+      "inputHash": "af7a599f216ea512b56ffaf69dffa6b819dd185c9b023329a93d54c39c0e1405",
+      "explanation": {
+        "text": {
+          "en": "Each unit cube has a volume of 1 cubic unit. Therefore, filling a volume of 125 cubic units requires exactly 125 unit cubes.",
+          "es": "Cada cubo unitario tiene un volumen de 1 unidad cúbica. Por lo tanto, para llenar 125 unidades cúbicas se necesitan exactamente 125 cubos unitarios."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q12": {
+      "inputHash": "eaeb0d2ddd997dbf2fb876cacbca2b83faea0f0794393c14e8910d25152178b4",
+      "explanation": {
+        "text": {
+          "en": "The bottom layer holds 15 cubes, and the two cubes stacked above it show that the box is 3 layers high. A full box therefore has 15 × 3 = 45 cubic units of volume.",
+          "es": "La capa inferior contiene 15 cubos y los dos cubos apilados encima muestran que la caja tiene 3 capas de altura. Por lo tanto, una caja llena tiene 15 × 3 = 45 unidades cúbicas de volumen."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q13": {
+      "inputHash": "12c77f762958b63851e800009b33435a3070ee25c9432c7dd7e5637e67bb1fa5",
+      "explanation": {
+        "text": {
+          "en": "“Triple” means multiply by 3, and the sum is 24 + 9. Thus, the expression is 3 × (24 + 9), which equals 99.",
+          "es": "“El triple” significa multiplicar por 3, y la suma es 24 + 9. Por lo tanto, la expresión es 3 × (24 + 9), que equivale a 99."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q14": {
+      "inputHash": "c95c4da491efe83e39a1ba173a3d8db77fe57c7470312be5a991f5019b6f2e36",
+      "explanation": {
+        "text": {
+          "en": "The expanded form 200 + 50 + 6 equals 256. Multiplying by 10 shifts every digit one place left, so 10 × 256 = 2,560.",
+          "es": "La forma desarrollada 200 + 50 + 6 equivale a 256. Al multiplicar por 10, cada dígito se desplaza un lugar a la izquierda, así que 10 × 256 = 2,560."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q15": {
+      "inputHash": "3d22789455c85a8c8daf5857d9742faedf388878395156660356fca02c559ff1",
+      "explanation": {
+        "text": {
+          "en": "The fraction 7/10 means seven tenths. Writing seven tenths in decimal form gives 0.7 mile.",
+          "es": "La fracción 7/10 significa siete décimos. Al escribir siete décimos en forma decimal se obtiene 0.7 milla."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q16": {
+      "inputHash": "73f5bcc7a155d22cd2b58858fae9cda413060d778edb60dbdcfce91ca0f55914",
+      "explanation": {
+        "text": {
+          "en": "Five tickets cost 5 × $9.25 = $46.25. Adding the $7.75 popcorn gives $46.25 + $7.75 = $54.00.",
+          "es": "Cinco boletos cuestan 5 × $9.25 = $46.25. Al sumar las palomitas de $7.75 se obtiene $46.25 + $7.75 = $54.00."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q17": {
+      "inputHash": "b7e2c1133268df5c44d7a834b3148156773053d966c81d370037ba43c49f234b",
+      "explanation": {
+        "text": {
+          "en": "The prism measures 8 cubes long, 4 cubes high, and 2 cubes deep, so it contains 8 × 4 × 2 = 64 cubes. One fourth of 64 is 64 ÷ 4 = 16 cubic inches.",
+          "es": "El prisma mide 8 cubos de largo, 4 de alto y 2 de profundidad, así que contiene 8 × 4 × 2 = 64 cubos. La cuarta parte de 64 es 64 ÷ 4 = 16 pulgadas cúbicas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q18": {
+      "inputHash": "3825b12808814de79e3c0a519b82eb5368d9c0e17916f7057dfc393f8e0c8bf5",
+      "explanation": {
+        "text": {
+          "en": "Dividing by 8 is the same as multiplying by 1/8. Therefore, 1/4 ÷ 8 = 1/4 × 1/8 = 1/32.",
+          "es": "Dividir entre 8 equivale a multiplicar por 1/8. Por lo tanto, 1/4 ÷ 8 = 1/4 × 1/8 = 1/32."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q19": {
+      "inputHash": "950c7f98e2b214ce61fa7ff5d979ead4f54a991f4ec9c1efdee563a37f447529",
+      "explanation": {
+        "text": {
+          "en": "One quart equals 4 cups, so each plant receives 4 cups. Dividing 20 ÷ 4 = 5 shows that Nellie waters 5 plants.",
+          "es": "Un cuarto de galón equivale a 4 tazas, así que cada planta recibe 4 tazas. Al dividir 20 ÷ 4 = 5 se obtiene que Nellie riega 5 plantas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q20": {
+      "inputHash": "b6d872df12b6ccba5e54d0f96234409b3ce25f82e009a56af368d8737f84407e",
+      "explanation": {
+        "text": {
+          "en": "Add the three prices by place value: $2.15 + $5.08 = $7.23, and $7.23 + $3.08 = $10.31.",
+          "es": "Se suman los tres precios por valor posicional: $2.15 + $5.08 = $7.23, y $7.23 + $3.08 = $10.31."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q21": {
+      "inputHash": "b3cc4a6414d814d5db3773fb82e69e087d358467ce9ca8507d90b627912d1d7b",
+      "explanation": {
+        "text": {
+          "en": "The tags require 100 × 5 = 500 centimeters of ribbon. Min has 3.25 meters = 325 centimeters, so she still needs 500 − 325 = 175 centimeters.",
+          "es": "Las etiquetas requieren 100 × 5 = 500 centímetros de cinta. Min tiene 3.25 metros = 325 centímetros, así que todavía necesita 500 − 325 = 175 centímetros."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q22": {
+      "inputHash": "7387d1a0aec58835b3bb859ab0d7122b9c2d796fdbe61308f6baa4222311a64e",
+      "explanation": {
+        "text": {
+          "en": "Three miles equal 3 × 5,280 = 15,840 feet, and one fourth of a mile is 5,280 ÷ 4 = 1,320 feet. Together, the trail is 15,840 + 1,320 = 17,160 feet.",
+          "es": "Tres millas equivalen a 3 × 5,280 = 15,840 pies, y un cuarto de milla es 5,280 ÷ 4 = 1,320 pies. En total, el sendero mide 15,840 + 1,320 = 17,160 pies."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q23": {
+      "inputHash": "5b8767801337ec160a5d59a888c104d08bdf01d510d18eeb40d21e4f068a9f95",
+      "explanation": {
+        "text": {
+          "en": "Using denominator 60, 5/12 = 25/60 and 2/5 = 24/60, so poetry and biographies use 49/60 of the books. The remainder is 60/60 − 49/60 = 11/60.",
+          "es": "Con denominador 60, 5/12 = 25/60 y 2/5 = 24/60, así que poesía y biografías ocupan 49/60 de los libros. El resto es 60/60 − 49/60 = 11/60."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2015-g5-mc-q24": {
+      "inputHash": "413514730f50d6c826029bb4ed729618501bb19e1fc136574dd6b26d67457d5c",
+      "explanation": {
+        "text": {
+          "en": "The first factor is a mixed number greater than 2, so it is greater than 1. Multiplying any positive second number by a factor greater than 1 makes the product greater than that second number, though not necessarily a whole number.",
+          "es": "El primer factor es un número mixto mayor que 2, así que es mayor que 1. Al multiplicar cualquier segundo número positivo por un factor mayor que 1, el producto resulta mayor que ese segundo número, aunque no tiene que ser entero."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2021-grade-5-mc-v1",
+  "questions": {
+    "nysed-2021-g5-mc-q1": {
+      "inputHash": "d6c9f3acf4624250b5432d7816c9fc79635eabf3695adb4786cb76e2dd12b254",
+      "explanation": {
+        "text": {
+          "en": "The volume of a rectangular prism is length × width × height. Using the labeled dimensions gives 9 × 5 × 10 = 450 cubic centimeters, choice D.",
+          "es": "El volumen de un prisma rectangular es largo × ancho × alto. Con las dimensiones indicadas se obtiene 9 × 5 × 10 = 450 centímetros cúbicos, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q2": {
+      "inputHash": "7650fc39f7d9968c6066f101b4f2e5492b4582b1522d2fdcec0f4efe144280c9",
+      "explanation": {
+        "text": {
+          "en": "Rewrite 2/10 with denominator 100 by multiplying by 10: 2/10 = 20/100. Then 20/100 + 6/100 = 26/100, which is choice D.",
+          "es": "Se reescribe 2/10 con denominador 100 multiplicando por 10: 2/10 = 20/100. Luego 20/100 + 6/100 = 26/100, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q3": {
+      "inputHash": "68e1ca83e1ed33db7c7ef8f7204e7ea930d3abf7b05c1c372c3b205b9f381d6f",
+      "explanation": {
+        "text": {
+          "en": "Regan sold 2/3 of Mark's 2 7/8 gallons, so multiply 2/3 × 23/8. The product is 46/24 = 23/12 = 1 11/12 gallons, choice B.",
+          "es": "Regan vendió 2/3 de los 2 7/8 galones de Mark, así que se multiplica 2/3 × 23/8. El producto es 46/24 = 23/12 = 1 11/12 galones, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q4": {
+      "inputHash": "e7682bfaddec74f7e6e2d28002c4b340e239a0eae12a79b9b92f5cb37abb3357",
+      "explanation": {
+        "text": {
+          "en": "The decimal 0.75 equals 75/100 = 3/4, so it lies three-fourths of the way from 0 to 1. On the number line, point C is at that location, making choice C correct.",
+          "es": "El decimal 0.75 equivale a 75/100 = 3/4, así que está a tres cuartos del recorrido de 0 a 1. En la recta, el punto C ocupa esa posición, por lo que la opción C es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q5": {
+      "inputHash": "ea13c75aecf22482aaa368a422c21a000a115dbc38fce9ab77efb7bb522fe8b6",
+      "explanation": {
+        "text": {
+          "en": "Compare digits from left to right after writing trailing zeros: 1.270 and 1.189. The tenths digits are 2 and 1, so 1.27 > 1.189, which is choice C.",
+          "es": "Se comparan los dígitos de izquierda a derecha después de agregar ceros: 1.270 y 1.189. Las décimas son 2 y 1, así que 1.27 > 1.189, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q6": {
+      "inputHash": "170bff7ccbaac0ebc6339306c3562a1459ebe19adf1f0c8d17dc6bdc02ea349d",
+      "explanation": {
+        "text": {
+          "en": "Betty has 3 + 4 = 7 pets, and each receives one scoop at each of 2 feedings. Thus the daily total is 2 × (3 + 4) = 14 scoops, the expression in choice D.",
+          "es": "Betty tiene 3 + 4 = 7 mascotas y cada una recibe una medida en cada una de 2 comidas. Por eso el total diario es 2 × (3 + 4) = 14 medidas, la expresión de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q7": {
+      "inputHash": "10bc3dc8ea075c7107c7bee9098e48f3227ee3fe8620b4679bcdbb248a10b08f",
+      "explanation": {
+        "text": {
+          "en": "The prism is 4 cubes wide, 3 cubes deep, and 6 cubes high. Multiplying the dimensions gives 4 × 3 × 6 = 72 unit cubes, so the volume is 72 cubic feet, choice D.",
+          "es": "El prisma mide 4 cubos de ancho, 3 de profundidad y 6 de alto. Al multiplicar las dimensiones se obtiene 4 × 3 × 6 = 72 cubos unitarios, así que el volumen es 72 pies cúbicos, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q8": {
+      "inputHash": "1d4098e2b2f5a3b61ac5b5a7104afe58a5fcbef51bead0870a594d0e73b41cac",
+      "explanation": {
+        "text": {
+          "en": "Evaluate grouping symbols first: (3 × 4) − 6 = 12 − 6 = 6. Then 4 × 2 = 8, and 6 + 8 = 14, which is choice B.",
+          "es": "Primero se evalúan los símbolos de agrupación: (3 × 4) − 6 = 12 − 6 = 6. Luego 4 × 2 = 8, y 6 + 8 = 14, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q9": {
+      "inputHash": "fb968dc944bff903814bf4c346272568723835bc70cd8bca8641da192aa34331",
+      "explanation": {
+        "text": {
+          "en": "One batch contains 8 + 3 = 11 fluid ounces, so 3 batches contain 3 × 11 = 33 fluid ounces. Since 8 fluid ounces make a cup, 33 ÷ 8 = 4 1/8 cups, choice D.",
+          "es": "Un lote contiene 8 + 3 = 11 onzas líquidas, así que 3 lotes contienen 3 × 11 = 33 onzas. Como 8 onzas forman una taza, 33 ÷ 8 = 4 1/8 tazas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q10": {
+      "inputHash": "aecb8b0e5901ed08ab6c8a0ec5c0549bf387598d0c0edfd8038084d3d4ecb833",
+      "explanation": {
+        "text": {
+          "en": "Convert the side lengths to improper fractions: 6 4/5 = 34/5 and 4 3/4 = 19/4. Their product is (34 × 19)/20 = 646/20 = 32 6/20 square feet, choice D.",
+          "es": "Se convierten los lados en fracciones impropias: 6 4/5 = 34/5 y 4 3/4 = 19/4. Su producto es (34 × 19)/20 = 646/20 = 32 6/20 pies cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q11": {
+      "inputHash": "ffcf9122f2c3e6bd8391422ade350da886f774f46f8d2be7e2cbd2b617d888c3",
+      "explanation": {
+        "text": {
+          "en": "Ed traveled 3 + 2 = 5 kilometers altogether. Since each kilometer is 1,000 meters, 5 × 1,000 = 5,000 meters, choice C.",
+          "es": "Ed recorrió 3 + 2 = 5 kilómetros en total. Como cada kilómetro tiene 1,000 metros, 5 × 1,000 = 5,000 metros, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q12": {
+      "inputHash": "755c8f2c6be5d40b9d922df890b92b5e6ea8dbd2339c5b583d8e47a1988cb4c6",
+      "explanation": {
+        "text": {
+          "en": "Decompose 1,284 as 1,200 + 84. Dividing each addend by 4 and adding the quotients gives (1,200 ÷ 4) + (84 ÷ 4), so choice C is equivalent to 1,284 ÷ 4.",
+          "es": "Se descompone 1,284 como 1,200 + 84. Al dividir cada sumando entre 4 y sumar los cocientes se obtiene (1,200 ÷ 4) + (84 ÷ 4), así que la opción C equivale a 1,284 ÷ 4."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q13": {
+      "inputHash": "e87e7ea064542d4108b3af4028f39adac1c59631519ce9378a8e41be4005de1d",
+      "explanation": {
+        "text": {
+          "en": "The prism's dimensions are 6 by 3 by 4, so its volume is 6 × 3 × 4 = 72 cubes. Choices A, B, and C each equal 72, but 6 × 4 × 6 = 144, so choice D cannot determine this volume.",
+          "es": "Las dimensiones del prisma son 6 por 3 por 4, así que su volumen es 6 × 3 × 4 = 72 cubos. Las opciones A, B y C equivalen a 72, pero 6 × 4 × 6 = 144; por eso la opción D no determina este volumen."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q14": {
+      "inputHash": "347287868da46213fc52c417d0597a2fe4ce924bdf86eec2f9f9ff6f4029d86b",
+      "explanation": {
+        "text": {
+          "en": "The tenths digit in 15.74 is 7, so the ones digit rounds up from 5 to 6. Therefore 15.74 rounds to 16, choice C.",
+          "es": "El dígito de las décimas en 15.74 es 7, así que la unidad se redondea de 5 a 6. Por lo tanto, 15.74 se redondea a 16, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q15": {
+      "inputHash": "a0fbc9fc945c139ad63ca2614a7702682cdd85fecc531ee33228033b729d72b2",
+      "explanation": {
+        "text": {
+          "en": "The number of fills is 4 ÷ 1/3. Dividing by 1/3 is multiplying by 3, so 4 × 3 = 12 fills, choice D.",
+          "es": "La cantidad de llenados es 4 ÷ 1/3. Dividir entre 1/3 equivale a multiplicar por 3, así que 4 × 3 = 12 llenados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q16": {
+      "inputHash": "095dfdac2182a892e9ee03637066c33cd522f9a93943a86362ddf09250770df8",
+      "explanation": {
+        "text": {
+          "en": "The cereal is the part left after subtracting nuts and raisins from 1 pound. Using fifteenths, 1 − 1/3 − 2/5 = 15/15 − 5/15 − 6/15 = 4/15 pound, choice C.",
+          "es": "El cereal es la parte que queda después de restar las nueces y las pasas de 1 libra. En quinceavos, 1 − 1/3 − 2/5 = 15/15 − 5/15 − 6/15 = 4/15 de libra, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q17": {
+      "inputHash": "9808ed4769563273ad563ca2562a1d70bea094232540ab66aa56a3f1546422f4",
+      "explanation": {
+        "text": {
+          "en": "Nikhil's distance is 6 2/3 times Tara's 3/4 mile. Converting and multiplying gives 20/3 × 3/4 = 20/4 = 5 miles, choice B.",
+          "es": "La distancia de Nikhil es 6 2/3 veces las 3/4 de milla de Tara. Al convertir y multiplicar se obtiene 20/3 × 3/4 = 20/4 = 5 millas, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q18": {
+      "inputHash": "62d004553bfe34afd9727c811888a2ab2650ec9d9fb522fce89458ff26098c58",
+      "explanation": {
+        "text": {
+          "en": "The product is 5 × 1/2 = 5/2 = 2 1/2. This value is greater than 1/2 and less than 5, exactly the interval described by choice D.",
+          "es": "El producto es 5 × 1/2 = 5/2 = 2 1/2. Este valor es mayor que 1/2 y menor que 5, exactamente el intervalo de la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q19": {
+      "inputHash": "fe9e2c2f9ffb033b855989a08ecd175d91b2d118a8a8e37373c3f2470bde1a83",
+      "explanation": {
+        "text": {
+          "en": "Dividing 1/7 by 5 is the same as multiplying by 1/5. Thus 1/7 ÷ 5 = 1/7 × 1/5 = 1/35, which is choice B.",
+          "es": "Dividir 1/7 entre 5 equivale a multiplicar por 1/5. Por lo tanto, 1/7 ÷ 5 = 1/7 × 1/5 = 1/35, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q20": {
+      "inputHash": "17779536bb8a0f6b19aeec9b535e6d72d681b74858f35d9a499e25529ce520fd",
+      "explanation": {
+        "text": {
+          "en": "The width equals area ÷ length, so calculate 16.02 ÷ 4.5. Because 4.5 × 3.56 = 16.02, the width is 3.56 meters, choice A.",
+          "es": "El ancho es área ÷ largo, así que se calcula 16.02 ÷ 4.5. Como 4.5 × 3.56 = 16.02, el ancho es 3.56 metros, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q21": {
+      "inputHash": "e86f23fcbf5a60cad10c4c39e7dcbbac23a35ad4998005c4dd2afed38f0318f3",
+      "explanation": {
+        "text": {
+          "en": "Sharing $1,648 equally among 8 classrooms requires 1,648 ÷ 8. Since 8 × 206 = 1,648, each classroom receives $206, choice A.",
+          "es": "Repartir $1,648 por igual entre 8 salones requiere calcular 1,648 ÷ 8. Como 8 × 206 = 1,648, cada salón recibe $206, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q22": {
+      "inputHash": "084d33d00f97fd2b6a4a37e858a6f2eeec2d861847263f31fafc68273f20824a",
+      "explanation": {
+        "text": {
+          "en": "The plot shows two days at 1/4 cup, two at 1/2 cup, and one at 3/4 cup. The total is 2(1/4) + 2(1/2) + 3/4 = 1/2 + 1 + 3/4 = 2 1/4 cups, choice D.",
+          "es": "La gráfica muestra dos días con 1/4 de taza, dos con 1/2 y uno con 3/4. El total es 2(1/4) + 2(1/2) + 3/4 = 1/2 + 1 + 3/4 = 2 1/4 tazas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g5-mc-q23": {
+      "inputHash": "ec962f7f344fa6f4bc0ba35e720417cd8619f55aa4dedbd3c6f31bec839cb836",
+      "explanation": {
+        "text": {
+          "en": "The bottom block has volume 10 × 2 × 4 = 80 cubic inches, and the top block has volume 5 × 2 × 4 = 40. Adding the nonoverlapping blocks gives 80 + 40 = 120 cubic inches, choice D.",
+          "es": "El bloque inferior tiene un volumen de 10 × 2 × 4 = 80 pulgadas cúbicas y el superior de 5 × 2 × 4 = 40. Al sumar los bloques sin superposición se obtiene 80 + 40 = 120 pulgadas cúbicas, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}

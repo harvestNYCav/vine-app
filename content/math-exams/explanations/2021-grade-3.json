@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-explanation-1",
+  "examId": "nysed-2021-grade-3-mc-v1",
+  "questions": {
+    "nysed-2021-g3-mc-q1": {
+      "inputHash": "6c178edcd79d88d4b401ada013d65f88f48e645cf56c10457ad1d8faba390340",
+      "explanation": {
+        "text": {
+          "en": "Because 8 = 2 × 4, replacing the 8 in 8 × 6 gives (2 × 4) × 6. This is choice D and still equals 48.",
+          "es": "Como 8 = 2 × 4, al reemplazar el 8 en 8 × 6 se obtiene (2 × 4) × 6. Esta es la opción D y todavía equivale a 48."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q2": {
+      "inputHash": "b67de908c78325c841d367f0cd38e5e1ad2a9797fc147755f4c60eeb2bf74d40",
+      "explanation": {
+        "text": {
+          "en": "794 is between 700 and 800, and it is only 6 away from 800 but 94 away from 700. Therefore it rounds to 800, choice C.",
+          "es": "794 está entre 700 y 800, y está a solo 6 de 800 pero a 94 de 700. Por lo tanto, se redondea a 800, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q3": {
+      "inputHash": "b9f143bbad9041b1d02a07462c41d8b29a6245eb83ff21771c2868845d29281d",
+      "explanation": {
+        "text": {
+          "en": "The equation is 4 = ? ÷ 7, so multiply 4 × 7 to undo the division. Since 4 × 7 = 28 and 28 ÷ 7 = 4, the missing number is 28, choice C.",
+          "es": "La ecuación es 4 = ? ÷ 7, así que se multiplica 4 × 7 para deshacer la división. Como 4 × 7 = 28 y 28 ÷ 7 = 4, el número que falta es 28, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q4": {
+      "inputHash": "2221091ba9fcc7064f4e4302af04ed247b62f115fa33a6d17a76267464e35fe9",
+      "explanation": {
+        "text": {
+          "en": "Dividing both the numerator and denominator of 4/6 by 2 gives 2/3. The value does not change, so 2/3, choice B, is equivalent to 4/6.",
+          "es": "Al dividir el numerador y el denominador de 4/6 entre 2 se obtiene 2/3. El valor no cambia, así que 2/3, la opción B, equivale a 4/6."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q5": {
+      "inputHash": "f2a0a7c5aaabd21871cfe8e05e143066870c318bddc3f0907deb589273f03000",
+      "explanation": {
+        "text": {
+          "en": "The picture shows 4 buckets with 3 gallons in each bucket. Four equal groups of 3 are represented by 4 × 3, choice A, and contain 12 gallons altogether.",
+          "es": "La imagen muestra 4 cubetas con 3 galones en cada una. Cuatro grupos iguales de 3 se representan con 4 × 3, la opción A, y contienen 12 galones en total."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q6": {
+      "inputHash": "a1b1ef610a051b6c7e18480ad9b04f71604816e0c2f91170686c080398dabbed",
+      "explanation": {
+        "text": {
+          "en": "Each 1-foot-by-1-foot piece covers 1 square foot. Since 30 such pieces cover the board with no gaps or overlaps, its area is 30 × 1 = 30 square feet, choice D.",
+          "es": "Cada hoja de 1 pie por 1 pie cubre 1 pie cuadrado. Como 30 hojas cubren el tablero sin espacios ni superposiciones, su área es 30 × 1 = 30 pies cuadrados, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q7": {
+      "inputHash": "e66aec8639d6e04e201b12677cea0bc244bf10cf9bec1008151ea5f8a30832a9",
+      "explanation": {
+        "text": {
+          "en": "First combine the paper clips: 16 + 48 = 64. Dividing all 64 clips into 8 equal groups gives 64 ÷ 8 = 8 clips per group, choice B.",
+          "es": "Primero se juntan los sujetapapeles: 16 + 48 = 64. Al dividir los 64 sujetapapeles en 8 grupos iguales se obtiene 64 ÷ 8 = 8 por grupo, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q8": {
+      "inputHash": "499c1eeabd9751ed2e7be89600d83a0ffe3c85a540b7c9cbef41aa3a7b40b72b",
+      "explanation": {
+        "text": {
+          "en": "Seven groups of 80 equal 7 groups of 8 tens. Since 7 × 8 = 56 tens and 56 tens = 560, 80 × 7 = 560, choice D.",
+          "es": "Siete grupos de 80 equivalen a 7 grupos de 8 decenas. Como 7 × 8 = 56 decenas y 56 decenas = 560, 80 × 7 = 560, la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q9": {
+      "inputHash": "25608f7bede8dc53566774b9b57d5f18044a3384bbce8f01afd7ead969a3caa2",
+      "explanation": {
+        "text": {
+          "en": "The same number must complete both related facts. Because 9 × 5 = 45 and 45 ÷ 9 = 5, the missing number is 5, choice B.",
+          "es": "El mismo número debe completar las dos operaciones relacionadas. Como 9 × 5 = 45 y 45 ÷ 9 = 5, el número que falta es 5, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q10": {
+      "inputHash": "af2c325051c179d70def580edf99eca1e98ae6e9d1d3c0d3e17f6981d8bf2445",
+      "explanation": {
+        "text": {
+          "en": "The 72 cards are separated into groups of 8 cards per page, so division finds the number of pages. The needed expression is 72 ÷ 8, choice D, which equals 9 pages.",
+          "es": "Las 72 tarjetas se separan en grupos de 8 por folio, así que la división permite hallar la cantidad de folios. La expresión es 72 ÷ 8, la opción D, que equivale a 9 folios."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q11": {
+      "inputHash": "ac29241c34ef4bb83ec8643a7ebcfc21a5bacb116a0ae119d80e7fbc36565ba1",
+      "explanation": {
+        "text": {
+          "en": "Emma and 5 other children make 6 children in all. Dividing the table into 6 equal shares means each child receives 1 of the 6 shares, or 1/6, choice A.",
+          "es": "Emma y otros 5 niños forman un grupo de 6 niños. Al dividir la mesa en 6 partes iguales, cada niño recibe 1 de las 6 partes, es decir, 1/6, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q12": {
+      "inputHash": "1f0ebef35082061f4b94db733c36ab6bd9efe61694511ca909fd2e7f8bc323a6",
+      "explanation": {
+        "text": {
+          "en": "Joe finished 4 minutes before 4:02 p.m. Subtracting 4 minutes crosses the hour: 4:02 − 0:04 = 3:58 p.m., which is choice A.",
+          "es": "Joe terminó 4 minutos antes de las 4:02 p. m. Al restar 4 minutos se pasa a la hora anterior: 4:02 − 0:04 = 3:58 p. m., la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q13": {
+      "inputHash": "d1163fde9ac013d47fd943239d60a155d68f48767b5c9c6607b2fc68a89a2342",
+      "explanation": {
+        "text": {
+          "en": "The distance from 0 to 1 is divided into 8 equal intervals, so 3/8 is the third tick to the right of 0. That tick is labeled point B, choice B.",
+          "es": "La distancia de 0 a 1 está dividida en 8 intervalos iguales, así que 3/8 está en la tercera marca a la derecha de 0. Esa marca es el punto B, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q14": {
+      "inputHash": "019cbe947c97d3ba2b120719c4fb52ba6d48e1caf55fc99a8b33cbe171b06ed8",
+      "explanation": {
+        "text": {
+          "en": "Sharing 54 balloons equally among 9 teams requires 54 ÷ 9. Since 9 × 6 = 54, each team receives 6 balloons, choice A.",
+          "es": "Repartir 54 globos por igual entre 9 equipos requiere calcular 54 ÷ 9. Como 9 × 6 = 54, cada equipo recibe 6 globos, la opción A."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q15": {
+      "inputHash": "9a95b0b89567069ddf480a58ed3e6666aec9b2d6fb31c26a893128e9236d4dd4",
+      "explanation": {
+        "text": {
+          "en": "Each term is half the term before it: 64 ÷ 2 = 32, 32 ÷ 2 = 16, and the pattern continues. The rule is divide by 2, choice C.",
+          "es": "Cada término es la mitad del anterior: 64 ÷ 2 = 32, 32 ÷ 2 = 16, y el patrón continúa. La regla es dividir entre 2, la opción C."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q16": {
+      "inputHash": "57dbe683dbf678c03a99c6195ec2a8c69b298b699248e9e866c2db14e07a99cb",
+      "explanation": {
+        "text": {
+          "en": "To locate 1/3, the interval from 0 to 1 must be split into 3 equal parts and the first division point must be labeled 1/3. Only number line B shows both conditions, so B is correct.",
+          "es": "Para ubicar 1/3, el intervalo de 0 a 1 debe dividirse en 3 partes iguales y la primera marca debe representar 1/3. Solo la recta B muestra ambas condiciones, así que B es correcta."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q17": {
+      "inputHash": "821cb112cbbcacbdc79e77370844f2c4c1703b3b05d376b52ade0f309bb49484",
+      "explanation": {
+        "text": {
+          "en": "There are 8 tanks with 40 liters in each one, so multiply equal groups: 8 × 40 = 8 × 4 tens = 32 tens = 320 liters. This is choice D.",
+          "es": "Hay 8 peceras con 40 litros en cada una, así que se multiplican los grupos iguales: 8 × 40 = 8 × 4 decenas = 32 decenas = 320 litros. Esta es la opción D."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q18": {
+      "inputHash": "a500624fb7864afb78e413f41603d59f425a22ab867baebc4ddbab9ba2ebb661",
+      "explanation": {
+        "text": {
+          "en": "Paul ate 2 cookies on each of 5 + 4 days. Using the distributive property, 2 × 5 + 2 × 4 = 2 × (5 + 4), so choice B represents the total of 18 cookies.",
+          "es": "Paul comió 2 galletas cada uno de los 5 + 4 días. Por la propiedad distributiva, 2 × 5 + 2 × 4 = 2 × (5 + 4), así que la opción B representa el total de 18 galletas."
+        },
+        "source": "vine-authored"
+      }
+    },
+    "nysed-2021-g3-mc-q19": {
+      "inputHash": "81df9c0968ee8df8d917ea00ca9be206b40647c0a8a415ad092902a9198686b2",
+      "explanation": {
+        "text": {
+          "en": "For unit fractions, dividing the same whole into more equal pieces makes each piece smaller. Sixths are smaller than thirds, so 1/6 < 1/3, which is choice B.",
+          "es": "En las fracciones unitarias, dividir el mismo entero en más partes iguales hace que cada parte sea menor. Los sextos son menores que los tercios, así que 1/6 < 1/3, la opción B."
+        },
+        "source": "vine-authored"
+      }
+    }
+  }
+}
