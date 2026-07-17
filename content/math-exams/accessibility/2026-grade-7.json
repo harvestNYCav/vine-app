@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2026-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2026-g7-mc-q1": {
+      "inputHash": "18406e77cd71dfa51ce74c08845cf5d4c7104e312a345bbbfd560f092df8f03d",
+      "description": {
+        "en": "Question 1. Mr. Joseph paid a total of $540.00 for a new gaming system and games. He paid $300.00 for the gaming system and $60.00 for each game. How many games did Mr. Joseph buy? Choices: A: 3. B: 4. C: 5. D: 9.",
+        "es": "Pregunta 1. El Sr. Joseph pagó un total de $540.00 por una nueva consola de videojuegos y juegos. Pagó $300.00 por la consola de videojuegos y $60.00 por cada juego. ¿Cuántos juegos compró el Sr. Joseph? Opciones: A: 3 juegos. B: 4 juegos. C: 5 juegos. D: 9 juegos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$540.00",
+          "$300.00",
+          "$60.00",
+          "3",
+          "4",
+          "5",
+          "9",
+          "A: 3",
+          "B: 4",
+          "C: 5",
+          "D: 9"
+        ],
+        "es": [
+          "$540.00",
+          "$300.00",
+          "$60.00",
+          "3",
+          "4",
+          "5",
+          "9",
+          "A: 3 juegos",
+          "B: 4 juegos",
+          "C: 5 juegos",
+          "D: 9 juegos"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q2": {
+      "inputHash": "01041d4ae30b76c273d266528ae0395332f32d7cb6b2c3e28ed33218fc6bb624",
+      "description": {
+        "en": "Question 2. A group of four students is playing a game using a deck of cards. The cards in the deck are labeled with an integer from −10 to 10. Each student draws two cards from the deck and finds the sum of their two cards to determine their score. Alberto’s cards are −4 and 3. Jenny’s cards are −5 and 5. Lisako’s cards are −2 and −2. Paul’s cards are 1 and −1. Which students have a score of 0? Choices: A: Alberto and Jenny. B: Jenny and Lisako. C: Alberto and Paul. D: Jenny and Paul.",
+        "es": "Pregunta 2. Un grupo de cuatro alumnos está jugando a un juego en el que usan un mazo de cartas. Las cartas del mazo están etiquetadas con un número entero del −10 al 10. Cada alumno retira dos cartas del mazo y hace la suma de sus dos cartas para determinar su puntaje. Las parejas de cartas son: Alberto tiene −4 y 3; Jenny tiene −5 y 5; Lisako tiene −2 y −2; Paul tiene 1 y −1. ¿Qué alumnos tienen un puntaje de 0? Opciones: A: Alberto y Jenny. B: Jenny y Lisako. C: Alberto y Paul. D: Jenny y Paul."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10",
+          "10",
+          "−4",
+          "3",
+          "−5",
+          "5",
+          "−2",
+          "1",
+          "−1",
+          "0",
+          "Alberto and Jenny",
+          "Jenny and Lisako",
+          "Alberto and Paul",
+          "Jenny and Paul",
+          "A: Alberto and Jenny",
+          "B: Jenny and Lisako",
+          "C: Alberto and Paul",
+          "D: Jenny and Paul"
+        ],
+        "es": [
+          "−10",
+          "10",
+          "−4",
+          "3",
+          "−5",
+          "5",
+          "−2",
+          "1",
+          "−1",
+          "0",
+          "Alberto y Jenny",
+          "Jenny y Lisako",
+          "Alberto y Paul",
+          "Jenny y Paul",
+          "A: Alberto y Jenny",
+          "B: Jenny y Lisako",
+          "C: Alberto y Paul",
+          "D: Jenny y Paul"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q3": {
+      "inputHash": "5a5454db1c7ebfbb06cff46548ffcdefd632f504c8451d35b1a42bc06bb0f3fe",
+      "description": {
+        "en": "Question 3. A farm sells blueberries by the pound to customers. The table shows the relationship between the price, p, in dollars, and the number of pounds of blueberries, b, sold. The table is titled “BLUEBERRY PRICES.” Its columns are “Pounds of Blueberries, b” and “Price (dollars), p.” The rows are: 2 pounds, $11.98; 4 pounds, $23.96; 6 pounds, $35.94. Which statement describes a constant of proportionality for the relationship between the price, p, in dollars, and the number of pounds of blueberries, b, sold? Choices: A: The price per pound is $0.17. B: The price per pound is $5.99. C: The price per pound is $9.98. D: The price per pound is $11.98.",
+        "es": "Pregunta 3. Una granja vende arándanos por libra a los clientes. La tabla titulada «PRECIOS DE ARÁNDANOS» muestra la relación entre el precio, p, en dólares, y la cantidad de libras de arándanos, b, vendidas. Tiene dos columnas: «Libras de arándanos, b» y «Precio (dólares), p». Las filas de datos son: 2 libras, $11.98; 4 libras, $23.96; 6 libras, $35.94. ¿Qué afirmación describe una constante de proporcionalidad para la relación entre el precio, p, en dólares, y la cantidad de libras de arándanos, b, vendidas? Opciones: A: El precio por libra es $0.17. B: El precio por libra es $5.99. C: El precio por libra es $9.98. D: El precio por libra es $11.98."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "p",
+          "b",
+          "2",
+          "$11.98",
+          "4",
+          "$23.96",
+          "6",
+          "$35.94",
+          "$0.17",
+          "$5.99",
+          "$9.98",
+          "A: The price per pound is $0.17",
+          "B: The price per pound is $5.99",
+          "C: The price per pound is $9.98",
+          "D: The price per pound is $11.98"
+        ],
+        "es": [
+          "p",
+          "b",
+          "2",
+          "$11.98",
+          "4",
+          "$23.96",
+          "6",
+          "$35.94",
+          "$0.17",
+          "$5.99",
+          "$9.98",
+          "A: El precio por libra es $0.17",
+          "B: El precio por libra es $5.99",
+          "C: El precio por libra es $9.98",
+          "D: El precio por libra es $11.98"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q4": {
+      "inputHash": "3671ae6f7f5bbad2f5a28244749638754f2b7ef70b1a0e0ced7a3752e07227cd",
+      "description": {
+        "en": "Question 4. What is the value of the expression (−5/6) ÷ (−1/3)? Choices: A: −2 1/2. B: −5/18. C: 5/18. D: 2 1/2.",
+        "es": "Pregunta 4. ¿Cuál es el valor de la expresión (−5/6) ÷ (−1/3)? Opciones: A: −2 1/2. B: −5/18. C: 5/18. D: 2 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−5/6) ÷ (−1/3)",
+          "−2 1/2",
+          "−5/18",
+          "5/18",
+          "2 1/2",
+          "A: −2 1/2",
+          "B: −5/18",
+          "C: 5/18",
+          "D: 2 1/2",
+          "(−5/6)",
+          "(−1/3)"
+        ],
+        "es": [
+          "(−5/6) ÷ (−1/3)",
+          "−2 1/2",
+          "−5/18",
+          "5/18",
+          "2 1/2",
+          "A: −2 1/2",
+          "B: −5/18",
+          "C: 5/18",
+          "D: 2 1/2",
+          "(−5/6)",
+          "(−1/3)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q5": {
+      "inputHash": "3a152a6a4e0410348cb2c006604d2c9ab56801a7f40ec2eaa4dd820f9d825d4f",
+      "description": {
+        "en": "Question 5. A water hose is being used to fill a 3,000-gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in 2 1/2 hours, how many gallons of water were added to the pool per hour? Choices: A: 300. B: 600. C: 1,200. D: 7,500.",
+        "es": "Pregunta 5. Se está usando una manguera de agua para llenar una piscina de 3,000 galones. El agua fluye a una tasa constante a través de la manguera. Si la piscina se llena por completo en 2 1/2 horas, ¿cuántos galones de agua se agregaron a la piscina por hora? Opciones: A: 300 galones por hora. B: 600 galones por hora. C: 1,200 galones por hora. D: 7,500 galones por hora."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3,000-gallon",
+          "2 1/2",
+          "300",
+          "600",
+          "1,200",
+          "7,500",
+          "A: 300",
+          "B: 600",
+          "C: 1,200",
+          "D: 7,500"
+        ],
+        "es": [
+          "3,000",
+          "2 1/2",
+          "300",
+          "600",
+          "1,200",
+          "7,500",
+          "A: 300 galones por hora",
+          "B: 600 galones por hora",
+          "C: 1,200 galones por hora",
+          "D: 7,500 galones por hora"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q6": {
+      "inputHash": "7b5a04042d1f5f73b3d6338092104c026d3e662bfe7d15af9aa2d2a031ba98b0",
+      "description": {
+        "en": "Question 6. Shameka is saving for a new scooter that costs $248.00. She has already saved $100.00. She wants to buy the scooter in 8 weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal? Choices: A: $16.45. B: $18.50. C: $31.00. D: $43.50.",
+        "es": "Pregunta 6. Shameka está ahorrando para comprar una motoneta nueva que cuesta $248.00. Ya ha ahorrado $100.00. Quiere comprar la motoneta en 8 semanas ahorrando la misma cantidad de dinero cada semana. ¿Cuál es la menor cantidad de dinero, en dólares, que Shameka puede ahorrar cada semana para alcanzar su objetivo? Opciones: A: $16.45 por semana. B: $18.50 por semana. C: $31.00 por semana. D: $43.50 por semana."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$248.00",
+          "$100.00",
+          "8",
+          "$16.45",
+          "$18.50",
+          "$31.00",
+          "$43.50",
+          "A: $16.45",
+          "B: $18.50",
+          "C: $31.00",
+          "D: $43.50"
+        ],
+        "es": [
+          "$248.00",
+          "$100.00",
+          "8",
+          "$16.45",
+          "$18.50",
+          "$31.00",
+          "$43.50",
+          "A: $16.45 por semana",
+          "B: $18.50 por semana",
+          "C: $31.00 por semana",
+          "D: $43.50 por semana"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q7": {
+      "inputHash": "04065d484c7c17c503bea61053f6a7037b6966d98bb2ed54bca1780ce0b326fa",
+      "description": {
+        "en": "Question 7. The table shows a proportional relationship between y and x. The columns are x and y. The ordered pairs represented by the rows are (2, 0.6), (3, 0.9), (4, 1.2), and (5, 1.5). Which equation represents the proportional relationship? Choices: A: y = x + 0.3. B: y = x + 3.3̅. C: y = 3.3̅x. D: y = 0.3x.",
+        "es": "Pregunta 7. La tabla muestra una relación proporcional entre y y x. Tiene dos columnas, x y y. Las filas de datos son: x = 2, y = 0.6; x = 3, y = 0.9; x = 4, y = 1.2; x = 5, y = 1.5. ¿Qué ecuación representa esta relación proporcional? Opciones: A: y = x + 0.3. B: y = x + 3.3̅, donde la barra indica que el dígito 3 se repite. C: y = 3.3̅x, donde la barra indica que el dígito 3 se repite. D: y = 0.3x."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 0.6)",
+          "(3, 0.9)",
+          "(4, 1.2)",
+          "(5, 1.5)",
+          "y = x + 0.3",
+          "y = x + 3.3̅",
+          "y = 3.3̅x",
+          "y = 0.3x",
+          "A: y = x + 0.3",
+          "B: y = x + 3.3̅",
+          "C: y = 3.3̅x",
+          "D: y = 0.3x"
+        ],
+        "es": [
+          "x = 2",
+          "y = 0.6",
+          "x = 3",
+          "y = 0.9",
+          "x = 4",
+          "y = 1.2",
+          "x = 5",
+          "y = 1.5",
+          "y = x + 0.3",
+          "y = x + 3.3̅",
+          "y = 3.3̅x",
+          "y = 0.3x",
+          "A: y = x + 0.3",
+          "B: y = x + 3.3̅, donde la barra indica que el dígito 3 se repite",
+          "C: y = 3.3̅x, donde la barra indica que el dígito 3 se repite",
+          "D: y = 0.3x"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q8": {
+      "inputHash": "5a4dcc095637c303c729f10ecfdc0088e3ca34492e1cace098b24c08f4e32ba9",
+      "description": {
+        "en": "Question 8. A student can choose one food item and one type of juice for breakfast. The available food items are egg, toast, pancakes, and sausage. The available types of juice are apple, grape, and orange. How many different breakfast combinations of one food item and one type of juice are available for the student to choose from? Choices: A: 3. B: 4. C: 7. D: 12.",
+        "es": "Pregunta 8. Un alumno puede elegir un alimento y un tipo de jugo para el desayuno. Los alimentos disponibles son huevos, tostadas, panqueques y salchichas. Los tipos de jugo disponibles son manzana, uva y naranja. ¿Cuántas combinaciones diferentes de desayuno de un alimento y un tipo de jugo están disponibles para que elija el alumno? Opciones: A: 3 combinaciones. B: 4 combinaciones. C: 7 combinaciones. D: 12 combinaciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "egg",
+          "toast",
+          "pancakes",
+          "sausage",
+          "apple",
+          "grape",
+          "orange",
+          "3",
+          "4",
+          "7",
+          "12",
+          "A: 3",
+          "B: 4",
+          "C: 7",
+          "D: 12"
+        ],
+        "es": [
+          "huevos",
+          "tostadas",
+          "panqueques",
+          "salchichas",
+          "manzana",
+          "uva",
+          "naranja",
+          "3",
+          "4",
+          "7",
+          "12",
+          "A: 3 combinaciones",
+          "B: 4 combinaciones",
+          "C: 7 combinaciones",
+          "D: 12 combinaciones"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q10": {
+      "inputHash": "2989707d8c13e2b60562ecde6e0c73ff53019ba6f915c56d511203ba8b1ca104",
+      "description": {
+        "en": "Question 10. Ms. Morgan earns $15.50 per hour working in an office. On Tuesday she spends 1 1/3 hours filling out paperwork, 1 hour and 25 minutes sending emails, and 3 1/4 hours making appointments. How much money does Ms. Morgan earn on Tuesday? Choices: A: $77.50 B: $89.90 C: $93.00 D: $108.50",
+        "es": "Pregunta 10. La Sra. Morgan gana $15.50 por hora trabajando en una oficina. El martes dedica 1 1/3 horas a llenar documentos, 1 hora y 25 minutos a enviar correos electrónicos y 3 1/4 horas a concertar citas. ¿Cuánto dinero gana la Sra. Morgan el martes? Opciones: A: $77.50 B: $89.90 C: $93.00 D: $108.50"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$15.50",
+          "1 1/3",
+          "1 hour and 25 minutes",
+          "3 1/4",
+          "$77.50",
+          "$89.90",
+          "$93.00",
+          "$108.50",
+          "A: $77.50",
+          "B: $89.90",
+          "C: $93.00",
+          "D: $108.50"
+        ],
+        "es": [
+          "$15.50",
+          "1 1/3",
+          "1 hora y 25 minutos",
+          "3 1/4",
+          "$77.50",
+          "$89.90",
+          "$93.00",
+          "$108.50",
+          "A: $77.50",
+          "B: $89.90",
+          "C: $93.00",
+          "D: $108.50"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q11": {
+      "inputHash": "a7f6fb883d847887593975859fc3b6ce269c8fa688edb19824ca814880babdb6",
+      "description": {
+        "en": "Question 11. Which expression is equivalent to 3(5x + 2) − 2(6x − 7)? Choices: A: 23x B: −11x C: 3x − 5 D: 3x + 20",
+        "es": "Pregunta 11. ¿Qué expresión es equivalente a 3(5x + 2) − 2(6x − 7)? Opciones: A: 23x B: −11x C: 3x − 5 D: 3x + 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3(5x + 2) − 2(6x − 7)",
+          "23x",
+          "−11x",
+          "3x − 5",
+          "3x + 20",
+          "A: 23x",
+          "B: −11x",
+          "C: 3x − 5",
+          "D: 3x + 20",
+          "(5x + 2)",
+          "(6x − 7)"
+        ],
+        "es": [
+          "3(5x + 2) − 2(6x − 7)",
+          "23x",
+          "−11x",
+          "3x − 5",
+          "3x + 20",
+          "A: 23x",
+          "B: −11x",
+          "C: 3x − 5",
+          "D: 3x + 20",
+          "(5x + 2)",
+          "(6x − 7)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q12": {
+      "inputHash": "ae300dc4e58ad0f4e61ba6ac7451f2ff89131399e2d16817140e6a92e9e26f09",
+      "description": {
+        "en": "Question 12. Jessica opened a savings account with a $1,200.00 deposit. She did not make any additional deposits or withdrawals for 4 years and earned $144.00 in simple interest. What was the annual interest rate that the bank used to calculate the simple interest? Choices: A: 0.3% B: 2.7% C: 3.0% D: 4.8%",
+        "es": "Pregunta 12. Jessica abrió una cuenta de ahorros con un depósito de $1,200.00. No hizo depósitos adicionales ni retiros durante 4 años y ganó $144.00 de interés simple. ¿Cuál fue la tasa de interés anual que el banco usó para calcular el interés simple? Opciones: A: 0.3 % B: 2.7 % C: 3.0 % D: 4.8 %"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$1,200.00",
+          "4 years",
+          "$144.00",
+          "0.3%",
+          "2.7%",
+          "3.0%",
+          "4.8%",
+          "A: 0.3%",
+          "B: 2.7%",
+          "C: 3.0%",
+          "D: 4.8%"
+        ],
+        "es": [
+          "$1,200.00",
+          "4 años",
+          "$144.00",
+          "0.3 %",
+          "2.7 %",
+          "3.0 %",
+          "4.8 %",
+          "A: 0.3 %",
+          "B: 2.7 %",
+          "C: 3.0 %",
+          "D: 4.8 %"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q13": {
+      "inputHash": "ef5fe7e3d4ecdd15dfe192b66fea678d2fe4ccf15633a108e0b55f75132d4308",
+      "description": {
+        "en": "Question 13. The graph titled “GIFT BAG PRICES” shows the prices of gift bags at a store. The horizontal x-axis is labeled “Number of Gift Bags” and runs from 0 to 6 in increments of 1. The vertical y-axis is labeled “Price (dollars)” and runs from 0 to 30; labeled values appear every 5 dollars, with grid lines every 2.5 dollars. Five points are plotted: (1, 5), (2, 10), (3, 15), (4, 20), and (5, 25). Based on the graph, which statement is true? Choices: A: The unit rate is $0.20 per gift bag. B: The unit rate is $1.00 per gift bag. C: The unit rate is $2.00 per gift bag. D: The unit rate is $5.00 per gift bag.",
+        "es": "Pregunta 13. El siguiente gráfico muestra los precios de las bolsas de regalo de una tienda. El gráfico se titula «PRECIOS DE BOLSAS DE REGALO». El eje horizontal, x, está rotulado «Cantidad de bolsas de regalo» y va de 0 a 6, con incrementos de 1. El eje vertical, y, está rotulado «Precio (dólares)» y va de 0 a 30; aparecen rótulos cada 5 dólares y líneas de cuadrícula intermedias cada 2.5 dólares. Los cinco puntos representan las coordenadas (1, 5), (2, 10), (3, 15), (4, 20) y (5, 25), donde la primera coordenada es la cantidad de bolsas y la segunda es el precio en dólares. Según el gráfico, ¿qué afirmación es verdadera? Opciones: A: La tasa por unidad es $0.20 por bolsa de regalo. B: La tasa por unidad es $1.00 por bolsa de regalo. C: La tasa por unidad es $2.00 por bolsa de regalo. D: La tasa por unidad es $5.00 por bolsa de regalo."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 6",
+          "0 to 30",
+          "2.5 dollars",
+          "(1, 5)",
+          "(2, 10)",
+          "(3, 15)",
+          "(4, 20)",
+          "(5, 25)",
+          "$0.20",
+          "$1.00",
+          "$2.00",
+          "$5.00",
+          "A: The unit rate is $0.20 per gift bag",
+          "B: The unit rate is $1.00 per gift bag",
+          "C: The unit rate is $2.00 per gift bag",
+          "D: The unit rate is $5.00 per gift bag"
+        ],
+        "es": [
+          "0 a 6",
+          "0 a 30",
+          "(1, 5)",
+          "(2, 10)",
+          "(3, 15)",
+          "(4, 20)",
+          "(5, 25)",
+          "$0.20",
+          "$1.00",
+          "$2.00",
+          "$5.00",
+          "A: La tasa por unidad es $0.20 por bolsa de regalo",
+          "B: La tasa por unidad es $1.00 por bolsa de regalo",
+          "C: La tasa por unidad es $2.00 por bolsa de regalo",
+          "D: La tasa por unidad es $5.00 por bolsa de regalo"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q14": {
+      "inputHash": "7f0e2e809077e2a9a747c12981050d4230c0fd69796f13a8c6cbb93c21181807",
+      "description": {
+        "en": "Question 14. The number of goals scored by two soccer teams in each of 17 games during a tournament is given in a table and a dot plot. For Team A, the table has columns “Number of Goals” and “Frequency”: 0 goals has frequency 2; 1 goal has frequency 4; 2 goals has frequency 2; 3 goals has frequency 3; and 4 goals has frequency 6. For Team B, the horizontal dot plot is labeled “Number of Goals” and has values 0 through 4: there are 2 dots at 0, 4 dots at 1, 3 dots at 2, 5 dots at 3, and 3 dots at 4. Which team had a higher median number of goals scored in a game, and what is that team’s median number of goals scored? Choices: A: Team A with a median of 3 goals scored in a game. B: Team A with a median of 4 goals scored in a game. C: Team B with a median of 2 goals scored in a game. D: Team B with a median of 3 goals scored in a game.",
+        "es": "Pregunta 14. La cantidad de goles anotados por dos equipos de fútbol en cada uno de los 17 partidos durante un torneo se muestra en una tabla y un diagrama de puntos. Para el EQUIPO A, la tabla tiene las columnas «Cantidad de goles» y «Frecuencia»: 0 goles, frecuencia 2; 1 gol, frecuencia 4; 2 goles, frecuencia 2; 3 goles, frecuencia 3; y 4 goles, frecuencia 6. Para el EQUIPO B, el diagrama de puntos tiene un eje horizontal rotulado «Cantidad de goles», con valores de 0 a 4. Sobre 0 hay 2 puntos; sobre 1 hay 4 puntos; sobre 2 hay 3 puntos; sobre 3 hay 5 puntos; y sobre 4 hay 3 puntos. ¿Qué equipo tuvo la cantidad mediana más alta de goles anotados en un partido y cuál es la cantidad mediana de goles anotados de ese equipo? Opciones: A: El equipo A con una mediana de 3 goles anotados en un partido. B: El equipo A con una mediana de 4 goles anotados en un partido. C: El equipo B con una mediana de 2 goles anotados en un partido. D: El equipo B con una mediana de 3 goles anotados en un partido."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "17 games",
+          "0 goals has frequency 2",
+          "1 goal has frequency 4",
+          "2 goals has frequency 2",
+          "3 goals has frequency 3",
+          "4 goals has frequency 6",
+          "2 dots at 0",
+          "4 dots at 1",
+          "3 dots at 2",
+          "5 dots at 3",
+          "3 dots at 4",
+          "median of 3",
+          "median of 4",
+          "median of 2",
+          "A: Team A with a median of 3 goals scored in a game",
+          "B: Team A with a median of 4 goals scored in a game",
+          "C: Team B with a median of 2 goals scored in a game",
+          "D: Team B with a median of 3 goals scored in a game"
+        ],
+        "es": [
+          "17 partidos",
+          "0 goles, frecuencia 2",
+          "1 gol, frecuencia 4",
+          "2 goles, frecuencia 2",
+          "3 goles, frecuencia 3",
+          "4 goles, frecuencia 6",
+          "0 hay 2 puntos",
+          "1 hay 4 puntos",
+          "2 hay 3 puntos",
+          "3 hay 5 puntos",
+          "4 hay 3 puntos",
+          "3 goles",
+          "4 goles",
+          "2 goles",
+          "A: El equipo A con una mediana de 3 goles anotados en un partido",
+          "B: El equipo A con una mediana de 4 goles anotados en un partido",
+          "C: El equipo B con una mediana de 2 goles anotados en un partido",
+          "D: El equipo B con una mediana de 3 goles anotados en un partido"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q15": {
+      "inputHash": "13c0417f0276b3edef35429fa84961c4ab12bb31b9a1fd4db7674829b50f06aa",
+      "description": {
+        "en": "Question 15. What is the product of −1/5 and 3/8? Choices: A: −8/15 B: −3/40 C: 3/40 D: 8/15",
+        "es": "Pregunta 15. ¿Cuál es el producto de −1/5 y 3/8? Opciones: A: −8/15 B: −3/40 C: 3/40 D: 8/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−1/5",
+          "3/8",
+          "−8/15",
+          "−3/40",
+          "3/40",
+          "8/15",
+          "A: −8/15",
+          "B: −3/40",
+          "C: 3/40",
+          "D: 8/15",
+          "1/5"
+        ],
+        "es": [
+          "−1/5",
+          "3/8",
+          "−8/15",
+          "−3/40",
+          "3/40",
+          "8/15",
+          "A: −8/15",
+          "B: −3/40",
+          "C: 3/40",
+          "D: 8/15",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q17": {
+      "inputHash": "2d512d20c6e0ba9208ecf46a502129596291d4c9a999eafbade72c8b26d57f6a",
+      "description": {
+        "en": "Question 17. Joyce is buying a laptop. The original price of the laptop is $279.00. She uses a coupon for a 10% discount off the original price. A sales tax of 8.875% is applied to the discounted price. How much does Joyce pay, in total, for the laptop, rounded to the nearest cent? Choices: A: $228.81 B: $260.13 C: $273.39 D: $334.14",
+        "es": "Pregunta 17. Joyce está comprando una laptop. El precio original de la laptop es de $279.00. Usa un cupón con un 10 % de descuento del precio original. Se aplica un impuesto sobre la venta del 8.875 % al precio con descuento. ¿Cuánto paga Joyce, en total, por la laptop, redondeado al centavo más cercano? Opciones: A: $228.81 B: $260.13 C: $273.39 D: $334.14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$279.00",
+          "10%",
+          "8.875%",
+          "$228.81",
+          "$260.13",
+          "$273.39",
+          "$334.14",
+          "A: $228.81",
+          "B: $260.13",
+          "C: $273.39",
+          "D: $334.14"
+        ],
+        "es": [
+          "$279.00",
+          "10 %",
+          "8.875 %",
+          "$228.81",
+          "$260.13",
+          "$273.39",
+          "$334.14",
+          "A: $228.81",
+          "B: $260.13",
+          "C: $273.39",
+          "D: $334.14"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q18": {
+      "inputHash": "ccfbe087bafe72018d0e10ff7ada3fd4f0e46709fa10dc3c578ad1499ae8e14c",
+      "description": {
+        "en": "Question 18. In a science class, students placed 8 tomato plants in full sun and 8 tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. Two horizontal dot plots titled “HEIGHTS OF PLANTS” share a scale labeled “Height (inches),” marked from 10.7 through 11.2 in increments of 0.1. The Full Sun plot has 8 dots: one halfway between 10.9 and 11.0; one between 11.0 and 11.1, closer to 11.1; two stacked just left of 11.1; one just right of 11.1; one farther right between 11.1 and 11.2; one farther right again; and one still farther right but left of 11.2. The Shade plot has 8 dots: three between 10.7 and 10.8, with the third at 10.8; two between 10.8 and 10.9; one just right of 10.9; and two just right of 11.0. Which statement best describes the data? Choices: A: The heights of the plants in full sun varied more than the heights of the plants in the shade. B: The heights of the plants in the shade were all greater than the heights of the plants in full sun. C: The average height of the plants in full sun was greater than the average height of the plants in the shade. D: The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+        "es": "Pregunta 18. En una clase de ciencia, los alumnos colocaron 8 plantas de tomate a pleno sol y 8 plantas de tomate a la sombra. La altura de las plantas se midió y registró después de varias semanas. Los resultados aparecen en dos diagramas de puntos titulados «ALTURA DE LAS PLANTAS». Ambos usan una recta horizontal rotulada «Altura (pulgadas)», con marcas en 10.7, 10.8, 10.9, 11, 11.1 y 11.2. En la recta «Pleno sol» hay 8 puntos: uno entre 10.9 y 11; uno entre 11 y 11.1; dos puntos apilados en 11.1; y cuatro puntos distintos entre 11.1 y 11.2. En la recta «Sombra» hay 8 puntos: tres puntos distintos entre 10.7 y 10.8; dos puntos distintos entre 10.8 y 10.9; uno entre 10.9 y 11; y dos puntos distintos inmediatamente a la derecha de 11. ¿Qué afirmación describe mejor los datos? Opciones: A: La altura de las plantas a pleno sol varió más que la altura de las plantas a la sombra. B: La altura de las plantas a la sombra fue mayor que la altura de las plantas a pleno sol. C: La altura promedio de las plantas a pleno sol fue mayor que la altura promedio de las plantas a la sombra. D: La altura promedio de las plantas a la sombra fue mayor que la altura promedio de las plantas a pleno sol."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 tomato plants",
+          "10.7",
+          "10.8",
+          "10.9",
+          "11.0",
+          "11.1",
+          "11.2",
+          "0.1",
+          "8 dots",
+          "A: The heights of the plants in full sun varied more than the heights of the plants in the shade",
+          "B: The heights of the plants in the shade were all greater than the heights of the plants in full sun",
+          "C: The average height of the plants in full sun was greater than the average height of the plants in the shade",
+          "D: The average height of the plants in the shade was greater than the average height of the plants in full sun"
+        ],
+        "es": [
+          "8 plantas",
+          "10.7",
+          "10.8",
+          "10.9",
+          "11",
+          "11.1",
+          "11.2",
+          "8 puntos",
+          "dos puntos apilados en 11.1",
+          "A: La altura de las plantas a pleno sol varió más que la altura de las plantas a la sombra",
+          "B: La altura de las plantas a la sombra fue mayor que la altura de las plantas a pleno sol",
+          "C: La altura promedio de las plantas a pleno sol fue mayor que la altura promedio de las plantas a la sombra",
+          "D: La altura promedio de las plantas a la sombra fue mayor que la altura promedio de las plantas a pleno sol"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q19": {
+      "inputHash": "434cd1eff131b1d75fef6d88fb6202fd911a9713ce0771f0bfba474e9699426e",
+      "description": {
+        "en": "Question 19. Which graph represents a proportional relationship? Each choice is a coordinate plane with x- and y-axes numbered from 0 to 8 in increments of 1. Choices: A: A diagonal ray begins at (0, 0), rises from left to right through (1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), and (7, 7), and has an arrow at (8, 8). B: A horizontal ray at y = 4 begins at (0, 4), extends right through (8, 4), and has a right-pointing arrow. C: A descending diagonal ray begins at (0, 7), passes through (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), and (6, 1), and has an arrow at (7, 0). D: A vertical ray at x = 4 begins at (4, 0), extends upward through (4, 8), and has an upward-pointing arrow.",
+        "es": "Pregunta 19. ¿Qué gráfico representa una relación proporcional? Cada opción contiene un plano de coordenadas con los ejes x e y, numerados de 0 a 8 en incrementos de 1. Opciones: A: Una recta ascendente comienza en el origen (0, 0), pasa por puntos como (1, 1), (2, 2) y (7, 7), y continúa con una flecha hacia (8, 8). B: Una recta horizontal, y = 4, comienza en (0, 4) y continúa hacia la derecha con una flecha cerca de (8, 4). C: Una recta descendente comienza en (0, 7), pasa por puntos como (1, 6), (4, 3) y (6, 1), y continúa con una flecha hacia (7, 0). D: Una recta vertical, x = 4, comienza en (4, 0) y continúa hacia arriba con una flecha cerca de (4, 8)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 8",
+          "(0, 0)",
+          "(1, 1)",
+          "(2, 2)",
+          "(3, 3)",
+          "(4, 4)",
+          "(5, 5)",
+          "(6, 6)",
+          "(7, 7)",
+          "(8, 8)",
+          "y = 4",
+          "(0, 4)",
+          "(8, 4)",
+          "(0, 7)",
+          "(1, 6)",
+          "(2, 5)",
+          "(3, 4)",
+          "(4, 3)",
+          "(5, 2)",
+          "(6, 1)",
+          "(7, 0)",
+          "x = 4",
+          "(4, 0)",
+          "(4, 8)",
+          "A: A diagonal ray begins at (0, 0), rises from left to right through (1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), and (7, 7), and has an arrow at (8, 8)",
+          "B: A horizontal ray at y = 4 begins at (0, 4), extends right through (8, 4), and has a right-pointing arrow",
+          "C: A descending diagonal ray begins at (0, 7), passes through (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), and (6, 1), and has an arrow at (7, 0)",
+          "D: A vertical ray at x = 4 begins at (4, 0), extends upward through (4, 8), and has an upward-pointing arrow"
+        ],
+        "es": [
+          "(0, 0)",
+          "(1, 1)",
+          "(2, 2)",
+          "(7, 7)",
+          "(8, 8)",
+          "y = 4",
+          "(0, 4)",
+          "(8, 4)",
+          "(0, 7)",
+          "(1, 6)",
+          "(4, 3)",
+          "(6, 1)",
+          "(7, 0)",
+          "x = 4",
+          "(4, 0)",
+          "(4, 8)",
+          "A: Una recta ascendente comienza en el origen (0, 0), pasa por puntos como (1, 1), (2, 2) y (7, 7), y continúa con una flecha hacia (8, 8)",
+          "B: Una recta horizontal, y = 4, comienza en (0, 4) y continúa hacia la derecha con una flecha cerca de (8, 4)",
+          "C: Una recta descendente comienza en (0, 7), pasa por puntos como (1, 6), (4, 3) y (6, 1), y continúa con una flecha hacia (7, 0)",
+          "D: Una recta vertical, x = 4, comienza en (4, 0) y continúa hacia arriba con una flecha cerca de (4, 8)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q20": {
+      "inputHash": "95cd4fbcbdb408a72fcf7f58e6c3bea30ffa1751f7e7335bfc36cb5d9e35f571",
+      "description": {
+        "en": "Question 20. An equation is shown below: 4(x + 2) = 12/−0.25. What value of x makes the equation true? Choices: A: −12.5 B: −14 C: −50 D: −56",
+        "es": "Pregunta 20. A continuación, se muestra una ecuación: 4(x + 2) = 12/(−0.25). ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: −12.5 B: −14 C: −50 D: −56"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4(x + 2) = 12/−0.25",
+          "−12.5",
+          "−14",
+          "−50",
+          "−56",
+          "A: −12.5",
+          "B: −14",
+          "C: −50",
+          "D: −56",
+          "(x + 2)"
+        ],
+        "es": [
+          "4(x + 2) = 12/(−0.25)",
+          "−12.5",
+          "−14",
+          "−50",
+          "−56",
+          "A: −12.5",
+          "B: −14",
+          "C: −50",
+          "D: −56",
+          "(x + 2)",
+          "(−0.25)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q21": {
+      "inputHash": "579adfcf4a639a367c77aaeb92877648a25416938424dd15b3e092bbed09fbbb",
+      "description": {
+        "en": "Question 21. An artist is paid $20.00 to work at a birthday party, plus $5.00 for each portrait painted during the party. The artist would like to earn at least $200.00 at the party. Which inequality represents the number of portraits, x, the artist should paint to earn at least $200.00? Choices: A: 20x + 5 ≤ 200 B: 20x + 5 < 200 C: 5x + 20 ≥ 200 D: 5x + 20 > 200",
+        "es": "Pregunta 21. Un artista recibe $20.00 para trabajar en una fiesta de cumpleaños, más $5.00 por cada retrato pintado durante la fiesta. Al artista le gustaría ganar al menos $200.00 en la fiesta. ¿Qué desigualdad representa la cantidad de retratos, x, que el artista debe pintar para ganar al menos $200.00? Opciones: A: 20x + 5 ≥ 200 B: 20x + 5 < 200 C: 5x + 20 ≥ 200 D: 5x + 20 > 200"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$20.00",
+          "$5.00",
+          "$200.00",
+          "20x + 5 ≤ 200",
+          "20x + 5 < 200",
+          "5x + 20 ≥ 200",
+          "5x + 20 > 200",
+          "A: 20x + 5 ≤ 200",
+          "B: 20x + 5 < 200",
+          "C: 5x + 20 ≥ 200",
+          "D: 5x + 20 > 200",
+          "5 ≤ 200",
+          "5 < 200",
+          "20 ≥ 200",
+          "20 > 200"
+        ],
+        "es": [
+          "$20.00",
+          "$5.00",
+          "$200.00",
+          "20x + 5 ≥ 200",
+          "20x + 5 < 200",
+          "5x + 20 ≥ 200",
+          "5x + 20 > 200",
+          "A: 20x + 5 ≥ 200",
+          "B: 20x + 5 < 200",
+          "C: 5x + 20 ≥ 200",
+          "D: 5x + 20 > 200",
+          "5 ≥ 200",
+          "5 < 200",
+          "20 ≥ 200",
+          "20 > 200"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q22": {
+      "inputHash": "a91d85d9eff4aa887092c6e3a046516151bf4b88698a4e2b6a0766e165a913e8",
+      "description": {
+        "en": "Question 22. Bianca created a scale drawing of her bedroom for a class project using a scale of 1 ft to 1.5 cm. On the drawing, Bianca’s rectangular bed is 10.5 cm long and 5.25 cm wide. What is the actual area, in square feet, of Bianca’s bed? Choices: A: 24.5 B: 36.75 C: 55.125 D: 124.03",
+        "es": "Pregunta 22. Bianca hizo un dibujo a escala de su dormitorio para un proyecto de su clase utilizando una escala de 1 pie equivalente a 1.5 cm. En el dibujo, la cama rectangular de Bianca tiene 10.5 cm de longitud y 5.25 cm de ancho. ¿Cuál es el área real, en pies cuadrados, de la cama de Bianca? Opciones: A: 24.5 B: 36.75 C: 55.125 D: 124.03"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 ft to 1.5 cm",
+          "10.5 cm",
+          "5.25 cm",
+          "24.5",
+          "36.75",
+          "55.125",
+          "124.03",
+          "A: 24.5",
+          "B: 36.75",
+          "C: 55.125",
+          "D: 124.03"
+        ],
+        "es": [
+          "1 pie",
+          "1.5 cm",
+          "10.5 cm",
+          "5.25 cm",
+          "24.5",
+          "36.75",
+          "55.125",
+          "124.03",
+          "A: 24.5",
+          "B: 36.75",
+          "C: 55.125",
+          "D: 124.03"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q23": {
+      "inputHash": "866e3df50540689f97747bd548bb40ffe96c2846dc0137f2b7c70ede8351750a",
+      "description": {
+        "en": "Question 23. Which expression is equivalent to 7 − 2(3x + 6) − 4x? Choices: A: 11x + 6 B: 11x + 30 C: −10x − 5 D: −10x + 13",
+        "es": "Pregunta 23. ¿Qué expresión es equivalente a 7 − 2(3x + 6) − 4x? Opciones: A: 11x + 6 B: 11x + 30 C: −10x − 5 D: −10x + 13"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 − 2(3x + 6) − 4x",
+          "11x + 6",
+          "11x + 30",
+          "−10x − 5",
+          "−10x + 13",
+          "A: 11x + 6",
+          "B: 11x + 30",
+          "C: −10x − 5",
+          "D: −10x + 13",
+          "(3x + 6)"
+        ],
+        "es": [
+          "7 − 2(3x + 6) − 4x",
+          "11x + 6",
+          "11x + 30",
+          "−10x − 5",
+          "−10x + 13",
+          "A: 11x + 6",
+          "B: 11x + 30",
+          "C: −10x − 5",
+          "D: −10x + 13",
+          "(3x + 6)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q25": {
+      "inputHash": "4053c6f7f3d51355bdab7c7ce32d1590b631450865a1bd0a5868b5afca60d812",
+      "description": {
+        "en": "Question 25. Mateo has $20.00 to spend at a store. He spends 2/5 of his money on a shirt. Then he buys a pack of gum with 10% of his remaining money. What is the total amount of money that Mateo spends at the store? Choices: A: $8.80 B: $9.20 C: $10.80 D: $13.20",
+        "es": "Pregunta 25. Mateo tiene $20.00 para gastar en una tienda. Gasta 2/5 de su dinero en una camisa. Luego compra un paquete de chicles con 10% de su dinero restante. ¿Cuál es la cantidad total de dinero que Mateo gasta en la tienda? Opciones: A: $8.80 B: $9.20 C: $10.80 D: $13.20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$20.00",
+          "2/5",
+          "10%",
+          "$8.80",
+          "$9.20",
+          "$10.80",
+          "$13.20",
+          "A: $8.80",
+          "B: $9.20",
+          "C: $10.80",
+          "D: $13.20"
+        ],
+        "es": [
+          "$20.00",
+          "2/5",
+          "10%",
+          "$8.80",
+          "$9.20",
+          "$10.80",
+          "$13.20",
+          "A: $8.80",
+          "B: $9.20",
+          "C: $10.80",
+          "D: $13.20"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q26": {
+      "inputHash": "c745feaa42eb0375bb057804fbc58741d020d060adf9a85a1a351a05807ffa0a",
+      "description": {
+        "en": "Question 26. What is the value of (4/5)(0.2)(−5/8)? Choices: A: −1/10 B: −3/8 C: 1/10 D: 3/8",
+        "es": "Pregunta 26. ¿Cuál es el valor de (4/5)(0.2)(−5/8)? Opciones: A: −1/10 B: −3/8 C: 1/10 D: 3/8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4/5)(0.2)(−5/8)",
+          "−1/10",
+          "−3/8",
+          "1/10",
+          "3/8",
+          "A: −1/10",
+          "B: −3/8",
+          "C: 1/10",
+          "D: 3/8",
+          "(4/5)",
+          "(0.2)",
+          "(−5/8)"
+        ],
+        "es": [
+          "(4/5)(0.2)(−5/8)",
+          "−1/10",
+          "−3/8",
+          "1/10",
+          "3/8",
+          "A: −1/10",
+          "B: −3/8",
+          "C: 1/10",
+          "D: 3/8",
+          "(4/5)",
+          "(0.2)",
+          "(−5/8)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q27": {
+      "inputHash": "7ee79dee8db3d0a2942415386516477f7e46154760cd7e866f6022f90f64c8aa",
+      "description": {
+        "en": "Question 27. The graph below shows the relationship between the amount of juice, y, that can be made from x apples. The graph is titled “JUICE MADE FROM APPLES.” The horizontal x-axis is labeled “Number of Apples,” runs from 0 to 5, and is marked in increments of 0.5. The vertical y-axis is labeled “Amount of Juice (fluid ounces),” runs from 0 to 10, and is marked in increments of 1. A straight rising line begins at the origin and continues through (2.5, 10). Four solid points on the line are labeled P at (0, 0), Q at (1, 4), R at (1.5, 6), and S at (2, 8). Which point on the graph has a y coordinate that represents the number of fluid ounces of juice made from 1 apple? Choices: A: point P B: point Q C: point R D: point S",
+        "es": "Pregunta 27. El siguiente gráfico, titulado «JUGO DE MANZANAS», muestra la relación entre la cantidad de jugo, y, que se puede hacer con x manzanas. El eje horizontal, «Cantidad de manzanas», va de 0 a 5 en incrementos de 0.5. El eje vertical, «Cantidad de jugo (onzas fluidas)», va de 0 a 10 en incrementos de 1. Una recta ascendente parte del origen y pasa por los puntos P = (0, 0), Q = (1, 4), R = (1.5, 6) y S = (2, 8); continúa hasta aproximadamente (2.5, 10). ¿Qué punto en el gráfico tiene una coordenada y que representa la cantidad de onzas fluidas de jugo que se extrae de 1 manzana? Opciones: A: punto P B: punto Q C: punto R D: punto S"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 5",
+          "0.5",
+          "0 to 10",
+          "(2.5, 10)",
+          "(0, 0)",
+          "(1, 4)",
+          "(1.5, 6)",
+          "(2, 8)",
+          "1 apple",
+          "point P",
+          "point Q",
+          "point R",
+          "point S",
+          "A: point P",
+          "B: point Q",
+          "C: point R",
+          "D: point S"
+        ],
+        "es": [
+          "0 a 5",
+          "0.5",
+          "0 a 10",
+          "P = (0, 0)",
+          "Q = (1, 4)",
+          "R = (1.5, 6)",
+          "S = (2, 8)",
+          "(2.5, 10)",
+          "1 manzana",
+          "A: punto P",
+          "B: punto Q",
+          "C: punto R",
+          "D: punto S",
+          "(0, 0)",
+          "(1, 4)",
+          "(1.5, 6)",
+          "(2, 8)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q29": {
+      "inputHash": "9e5d1f6578350f58a3ecfc944d2b5dd976de13b256e5698079dfbb6637abd79e",
+      "description": {
+        "en": "Question 29. Students in four middle school classes raised money for a field trip. The amount of money each class raised is described below. Ms. Strazullo’s class raised $153.45. Mr. Fiorentino’s class raised $123.23 more than Ms. Strazullo’s class. Ms. Rubas’ class raised $176.32 less than Mr. Fiorentino’s class. Mr. Smith’s class raised $234.89 more than Ms. Rubas’ class. If the total price of the field trip is $800.00, how much extra money did they raise? Choices: A: $65.74. B: $112.11. C: $687.89. D: $865.74.",
+        "es": "Pregunta 29. Los alumnos en cuatro clases de la escuela intermedia recaudaron dinero para una excursión. La cantidad de dinero que cada clase recaudó se describe a continuación. • La clase de la Sra. Strazullo recaudó $153.45. • La clase del Sr. Fiorentino recaudó $123.23 más que la clase de la Sra. Strazullo. • La clase de la Sra. Ruba recaudó $176.32 menos que la clase del Sr. Fiorentino. • La clase del Sr. Smith recaudó $234.89 más que la clase de la Sra. Ruba. Si el precio total de la excursión es $800.00, ¿cuánto dinero extra recaudaron? Opciones: A: $65.74 B: $112.11 C: $687.89 D: $865.74"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$153.45",
+          "$123.23",
+          "$176.32",
+          "$234.89",
+          "$800.00",
+          "$65.74",
+          "$112.11",
+          "$687.89",
+          "$865.74",
+          "A: $65.74",
+          "B: $112.11",
+          "C: $687.89",
+          "D: $865.74"
+        ],
+        "es": [
+          "$153.45",
+          "$123.23",
+          "$176.32",
+          "$234.89",
+          "$800.00",
+          "$65.74",
+          "$112.11",
+          "$687.89",
+          "$865.74",
+          "A: $65.74",
+          "B: $112.11",
+          "C: $687.89",
+          "D: $865.74"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q30": {
+      "inputHash": "ec6a71ec249d9cdb417ce573bf6887fe9faa9a77b4099cc0429b8edbbc803766",
+      "description": {
+        "en": "Question 30. The weights of 9 adult cats are recorded on a dot plot. The horizontal number line has arrows pointing in both directions and tick marks labeled 7, 8, 9, 10, 11, 12, and 13. There is 1 dot above 8, 4 dots above 9, 1 dot above 10, and 3 dots above 12. There are no dots above 7, 11, or 13. Which label for the number line could be used to correctly identify the unit of measurement for the data in the dot plot? Choices: A: number of cats. B: number of years. C: number of inches. D: number of pounds.",
+        "es": "Pregunta 30. El peso de 9 gatos adultos se registra en un diagrama de puntos. El diagrama contiene una recta numérica horizontal con flechas en ambos extremos y marcas etiquetadas 7, 8, 9, 10, 11, 12 y 13. Hay un punto sobre 8, cuatro puntos apilados sobre 9, un punto sobre 10, ningún punto sobre 11 y tres puntos apilados sobre 12. No hay puntos sobre 7 ni sobre 13. ¿Qué etiqueta se podría usar para la línea numérica a fin de identificar correctamente la unidad de medida de los datos del diagrama de puntos? Opciones: A: cantidad de gatos B: cantidad de años C: cantidad de pulgadas D: cantidad de libras"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9 adult cats",
+          "7, 8, 9, 10, 11, 12, and 13",
+          "1 dot above 8",
+          "4 dots above 9",
+          "1 dot above 10",
+          "3 dots above 12",
+          "number of cats",
+          "number of years",
+          "number of inches",
+          "number of pounds",
+          "A: number of cats",
+          "B: number of years",
+          "C: number of inches",
+          "D: number of pounds"
+        ],
+        "es": [
+          "9 gatos",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "un punto sobre 8",
+          "cuatro puntos apilados sobre 9",
+          "un punto sobre 10",
+          "ningún punto sobre 11",
+          "tres puntos apilados sobre 12",
+          "cantidad de gatos",
+          "cantidad de años",
+          "cantidad de pulgadas",
+          "cantidad de libras",
+          "A: cantidad de gatos",
+          "B: cantidad de años",
+          "C: cantidad de pulgadas",
+          "D: cantidad de libras"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q31": {
+      "inputHash": "c264e9161872979f71fadc489840db2a79760e826cc14e474d725d59c8c6e29c",
+      "description": {
+        "en": "Question 31. An incomplete equation is given: (5.2 − 1.6) + (___) = 0. Which expression completes the equation to make it true? Choices: A: 5.2 + 1.6. B: 5.2 − 1.6. C: −5.2 − 1.6. D: −5.2 + 1.6.",
+        "es": "Pregunta 31. A continuación, se muestra una ecuación incompleta: (5.2 − 1.6) + (___?___) = 0 ¿Qué expresión completa la ecuación para que sea verdadera? Opciones: A: 5.2 + 1.6 B: 5.2 − 1.6 C: −5.2 − 1.6 D: −5.2 + 1.6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(5.2 − 1.6) + (___) = 0",
+          "5.2 + 1.6",
+          "5.2 − 1.6",
+          "−5.2 − 1.6",
+          "−5.2 + 1.6",
+          "A: 5.2 + 1.6",
+          "B: 5.2 − 1.6",
+          "C: −5.2 − 1.6",
+          "D: −5.2 + 1.6",
+          "(5.2 − 1.6)"
+        ],
+        "es": [
+          "(5.2 − 1.6) + (___?___) = 0",
+          "5.2 + 1.6",
+          "5.2 − 1.6",
+          "−5.2 − 1.6",
+          "−5.2 + 1.6",
+          "A: 5.2 + 1.6",
+          "B: 5.2 − 1.6",
+          "C: −5.2 − 1.6",
+          "D: −5.2 + 1.6",
+          "(5.2 − 1.6)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q32": {
+      "inputHash": "1da10248c39025f5ac715ef80b1f998e4ab0c38d4c3bafbeafedffd5dddd20b3",
+      "description": {
+        "en": "Question 32. Which expression is equivalent to −1/4(12x − 6)? Choices: A: 3x + 6. B: 3x − 6. C: −3x + 1 1/2. D: −3x − 1 1/2.",
+        "es": "Pregunta 32. ¿Qué expresión es equivalente a −(1/4)(12x − 6)? Opciones: A: 3x + 6 B: 3x − 6 C: −3x + 1 1/2 D: −3x − 1 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−1/4(12x − 6)",
+          "3x + 6",
+          "3x − 6",
+          "−3x + 1 1/2",
+          "−3x − 1 1/2",
+          "A: 3x + 6",
+          "B: 3x − 6",
+          "C: −3x + 1 1/2",
+          "D: −3x − 1 1/2",
+          "1/4",
+          "(12x − 6)",
+          "1 1/2"
+        ],
+        "es": [
+          "−(1/4)(12x − 6)",
+          "3x + 6",
+          "3x − 6",
+          "−3x + 1 1/2",
+          "−3x − 1 1/2",
+          "A: 3x + 6",
+          "B: 3x − 6",
+          "C: −3x + 1 1/2",
+          "D: −3x − 1 1/2",
+          "(1/4)",
+          "(12x − 6)",
+          "1 1/2"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q33": {
+      "inputHash": "3e20568f667dbc467408b1fdf85deab69e03cb5205be3470816241267ab629dd",
+      "description": {
+        "en": "Question 33. A table titled “GASOLINE PRICES” shows the number of gallons of gasoline customers put in their cars and the total price they paid. The table has two columns labeled “Gallons, g” and “Total Price, p.” Its rows are: 3 gallons, $9.63; 5 gallons, $16.05; and 9 gallons, $28.89. Which equation represents the relationship between the total price, p, and gallons of gasoline purchased, g? Choices: A: p = 0.31g. B: p = 3.21g. C: p = 6.42g. D: p = 9.63g.",
+        "es": "Pregunta 33. La siguiente tabla muestra la cantidad de galones de gasolina que los clientes ponen en su automóvil y el precio total que pagaron. La tabla se titula “PRECIOS DE GASOLINA”. Tiene dos columnas, “Galones, g” y “Precio total, p”. Sus filas de datos son: 3 galones y $9.63; 5 galones y $16.05; 9 galones y $28.89. ¿Qué ecuación representa la relación entre el precio total, p, y los galones de gasolina comprados, g? Opciones: A: p = 0.31g B: p = 3.21g C: p = 6.42g D: p = 9.63g"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Gallons, g",
+          "Total Price, p",
+          "3 gallons, $9.63",
+          "5 gallons, $16.05",
+          "9 gallons, $28.89",
+          "p = 0.31g",
+          "p = 3.21g",
+          "p = 6.42g",
+          "p = 9.63g",
+          "A: p = 0.31g",
+          "B: p = 3.21g",
+          "C: p = 6.42g",
+          "D: p = 9.63g"
+        ],
+        "es": [
+          "Galones, g",
+          "Precio total, p",
+          "3 galones",
+          "$9.63",
+          "5 galones",
+          "$16.05",
+          "9 galones",
+          "$28.89",
+          "p = 0.31g",
+          "p = 3.21g",
+          "p = 6.42g",
+          "p = 9.63g",
+          "A: p = 0.31g",
+          "B: p = 3.21g",
+          "C: p = 6.42g",
+          "D: p = 9.63g"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q34": {
+      "inputHash": "be30bf35c45ce58dca10d5341d5be3b4c6e0771c27a654589a1667feb9955fef",
+      "description": {
+        "en": "Question 34. Which expression is equivalent to (−45)/(−9)? Choices: A: −(45/9). B: −45/9. C: 45/(−9). D: 45/9.",
+        "es": "Pregunta 34. ¿Qué expresión es equivalente a (−45)/(−9)? Opciones: A: −(45/9) B: −45/9, con −45 como numerador y 9 como denominador C: 45/(−9), con 45 como numerador y −9 como denominador D: 45/9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−45)/(−9)",
+          "−(45/9)",
+          "−45/9",
+          "45/(−9)",
+          "45/9",
+          "A: −(45/9)",
+          "B: −45/9",
+          "C: 45/(−9)",
+          "D: 45/9",
+          "(−45)",
+          "(−9)",
+          "(45/9)"
+        ],
+        "es": [
+          "(−45)/(−9)",
+          "−(45/9)",
+          "−45/9",
+          "45/(−9)",
+          "45/9",
+          "A: −(45/9)",
+          "B: −45/9, con −45 como numerador y 9 como denominador",
+          "C: 45/(−9), con 45 como numerador y −9 como denominador",
+          "D: 45/9",
+          "(−45)",
+          "(−9)",
+          "(45/9)"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q35": {
+      "inputHash": "9295d988f7977893e9bd0ffd2d609df16169877bf3f1bcb21126d61c5f0d4862",
+      "description": {
+        "en": "Question 35. Ms. Suarez buys 4 packages of pencils for $4.48. Each package of pencils is the same price. What is the unit price, in dollars per package, of the pencils? Choices: A: $0.48. B: $0.89. C: $1.12. D: $4.00.",
+        "es": "Pregunta 35. La Sra. Suarez compra 4 paquetes de lápices por $4.48. Cada paquete de lápices tiene el mismo precio. ¿Cuál es el precio por unidad, en dólares por paquete, de los lápices? Opciones: A: $0.48 B: $0.89 C: $1.12 D: $4.00"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 packages",
+          "$4.48",
+          "$0.48",
+          "$0.89",
+          "$1.12",
+          "$4.00",
+          "A: $0.48",
+          "B: $0.89",
+          "C: $1.12",
+          "D: $4.00"
+        ],
+        "es": [
+          "4 paquetes",
+          "$4.48",
+          "$0.48",
+          "$0.89",
+          "$1.12",
+          "$4.00",
+          "A: $0.48",
+          "B: $0.89",
+          "C: $1.12",
+          "D: $4.00"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q36": {
+      "inputHash": "02c287e1434a4abb9ea2abfa4ce8b5fbbb9f2d4d6616b24b93c1ff1ed2152dcd",
+      "description": {
+        "en": "Question 36. Ashley buys a book that is on sale for 25% off the original price, x. The expression x − 0.25x can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book? Choices: A: 0.25x. B: 0.75x. C: 0.25x − x. D: 0.75x + x.",
+        "es": "Pregunta 36. Ashley compra un libro que está en oferta con un descuento de 25 % respecto del precio original, x. La expresión x − 0.25x puede utilizarse para determinar el precio final del libro. ¿Qué expresión se puede usar también para determinar el precio final del libro? Opciones: A: 0.25x B: 0.75x C: 0.25x − x D: 0.75x + x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25%",
+          "x − 0.25x",
+          "0.25x",
+          "0.75x",
+          "0.25x − x",
+          "0.75x + x",
+          "A: 0.25x",
+          "B: 0.75x",
+          "C: 0.25x − x",
+          "D: 0.75x + x"
+        ],
+        "es": [
+          "25 %",
+          "x − 0.25x",
+          "0.25x",
+          "0.75x",
+          "0.25x − x",
+          "0.75x + x",
+          "A: 0.25x",
+          "B: 0.75x",
+          "C: 0.25x − x",
+          "D: 0.75x + x"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q37": {
+      "inputHash": "f461660ab061975e2934ed82402c3bd91373d42efbe45b2751496f83c122dbba",
+      "description": {
+        "en": "Question 37. Jayden made a scale drawing of the rectangular basketball court at his middle school. The drawing has a scale of 1 inch to 24 feet. The actual length of the basketball court is 76 4/5 feet. What is the length, in inches, of the rectangular basketball court in Jayden’s drawing? Choices: A: 5/16 B: 3 1/5 C: 24 D: 52 1/5",
+        "es": "Pregunta 37. Jayden hizo un dibujo a escala de la cancha rectangular de baloncesto en la escuela intermedia. • El dibujo tiene una escala de 1 pulgada a 24 pies. • La longitud real de la cancha de baloncesto es de 76 4/5 pies. ¿Cuál es la longitud, en pulgadas, de la cancha de baloncesto rectangular en el dibujo de Jayden? Opciones: A: 5/16 B: 3 1/5 C: 24 D: 52 1/5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 inch",
+          "24 feet",
+          "76 4/5 feet",
+          "5/16",
+          "3 1/5",
+          "24",
+          "52 1/5",
+          "A: 5/16",
+          "B: 3 1/5",
+          "C: 24",
+          "D: 52 1/5",
+          "76 4/5"
+        ],
+        "es": [
+          "1 pulgada",
+          "24 pies",
+          "76 4/5 pies",
+          "5/16",
+          "3 1/5",
+          "24",
+          "52 1/5",
+          "A: 5/16",
+          "B: 3 1/5",
+          "C: 24",
+          "D: 52 1/5",
+          "76 4/5"
+        ]
+      }
+    },
+    "nysed-2026-g7-mc-q38": {
+      "inputHash": "d18213c0a8547633d24efe13a2cfb212745b5ccadb78aea377eafcf98709e0a0",
+      "description": {
+        "en": "Question 38. A box plot is displayed above a horizontal number line labeled at every integer from 12 through 24, with arrows extending in both directions. The box plot has a left whisker at 15, the left edge of the box at 17, a median line at 18, the right edge of the box at 19, and a right whisker at 21. A separate point is plotted at 23. Based on the box plot, what is true about the data value 23? Choices: A: It represents a data point that lies an unusual distance from other points in the data. B: It represents the data point that occurred the most number of times in the data. C: It represents the interquartile range of the data. D: It represents the median of the data.",
+        "es": "Pregunta 38. A continuación, se muestra un diagrama de caja. Una recta numérica horizontal, con flechas en ambos extremos, está marcada en cada número entero desde 12 hasta 24, en orden creciente de izquierda a derecha. El diagrama de caja situado sobre la recta tiene el extremo del bigote izquierdo en 15; el borde izquierdo de la caja, o primer cuartil, en 17; una línea de mediana en 18; el borde derecho de la caja, o tercer cuartil, en 19; y el extremo del bigote derecho en 21. Además, hay un punto aislado en 23. Según el diagrama de caja, ¿qué es verdadero respecto del valor de dato 23? Opciones: A: Representa un punto de dato que se encuentra a una distancia inusual de otros puntos de datos. B: Representa el punto de dato que ocurrió la mayor cantidad de veces en los datos. C: Representa el rango intercuartil de los datos. D: Representa la mediana de los datos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12",
+          "24",
+          "15",
+          "17",
+          "18",
+          "19",
+          "21",
+          "23",
+          "A: It represents a data point that lies an unusual distance from other points in the data",
+          "B: It represents the data point that occurred the most number of times in the data",
+          "C: It represents the interquartile range of the data",
+          "D: It represents the median of the data"
+        ],
+        "es": [
+          "12",
+          "15",
+          "17",
+          "18",
+          "19",
+          "21",
+          "23",
+          "24",
+          "A: Representa un punto de dato que se encuentra a una distancia inusual de otros puntos de datos",
+          "B: Representa el punto de dato que ocurrió la mayor cantidad de veces en los datos",
+          "C: Representa el rango intercuartil de los datos",
+          "D: Representa la mediana de los datos"
+        ]
+      }
+    }
+  }
+}

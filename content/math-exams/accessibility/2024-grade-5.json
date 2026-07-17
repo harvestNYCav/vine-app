@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2024-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2024-g5-mc-q1": {
+      "inputHash": "e9c7efe5a095cb111430abcedacc918247eb390795f475d886c169141eace94a",
+      "description": {
+        "en": "Question 1. Carlos walks 3.65 kilometers on Saturday and 1.46 kilometers on Sunday. How many total kilometers does Carlos walk on Saturday and Sunday? Choices: A: 2.19 B: 2.29 C: 5.01 D: 5.11",
+        "es": "Pregunta 1. Carlos camina 3.65 kilómetros el sábado y 1.46 kilómetros el domingo. ¿Cuántos kilómetros camina Carlos en total el sábado y el domingo? Opciones: A: 2.19 B: 2.29 C: 5.01 D: 5.11"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3.65",
+          "1.46",
+          "2.19",
+          "2.29",
+          "5.01",
+          "5.11",
+          "A: 2.19",
+          "B: 2.29",
+          "C: 5.01",
+          "D: 5.11"
+        ],
+        "es": [
+          "3.65",
+          "1.46",
+          "2.19",
+          "2.29",
+          "5.01",
+          "5.11",
+          "A: 2.19",
+          "B: 2.29",
+          "C: 5.01",
+          "D: 5.11"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q2": {
+      "inputHash": "298485b683b263682d2bf6b54b661acbbae0d8399f74cbf25dc6aa6923452a85",
+      "description": {
+        "en": "Question 2. Which expression is equivalent to 5 × 3/4? Choices: A: 5/1 + 3/4 B: 5/1 − 3/4 C: 3/4 + 3/4 + 3/4 + 3/4 + 3/4 D: 3/4 × 3/4 × 3/4 × 3/4 × 3/4",
+        "es": "Pregunta 2. ¿Qué expresión es equivalente a 5 × 3/4? Opciones: A: 5/1 + 3/4 B: 5/1 − 3/4 C: 3/4 + 3/4 + 3/4 + 3/4 + 3/4 D: 3/4 × 3/4 × 3/4 × 3/4 × 3/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 × 3/4",
+          "5/1 + 3/4",
+          "5/1 − 3/4",
+          "3/4 + 3/4 + 3/4 + 3/4 + 3/4",
+          "3/4 × 3/4 × 3/4 × 3/4 × 3/4",
+          "A: 5/1 + 3/4",
+          "B: 5/1 − 3/4",
+          "C: 3/4 + 3/4 + 3/4 + 3/4 + 3/4",
+          "D: 3/4 × 3/4 × 3/4 × 3/4 × 3/4",
+          "3/4",
+          "5/1"
+        ],
+        "es": [
+          "5 × 3/4",
+          "5/1 + 3/4",
+          "5/1 − 3/4",
+          "3/4 + 3/4 + 3/4 + 3/4 + 3/4",
+          "3/4 × 3/4 × 3/4 × 3/4 × 3/4",
+          "A: 5/1 + 3/4",
+          "B: 5/1 − 3/4",
+          "C: 3/4 + 3/4 + 3/4 + 3/4 + 3/4",
+          "D: 3/4 × 3/4 × 3/4 × 3/4 × 3/4",
+          "3/4",
+          "5/1"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q3": {
+      "inputHash": "99889bba648e30efbf0e55f2345cfb17185ec0a8f38c1a8ea7b08132d0644857",
+      "description": {
+        "en": "Question 3. A diagram of a right rectangular prism made of unit cubes is provided. The prism is 4 unit cubes wide, 2 unit cubes high, and 2 unit cubes deep. A key states that one unit cube equals 1 cubic unit. What measurement for the right rectangular prism is equal to the total number of cubes? Choices: A: area B: height C: perimeter D: volume",
+        "es": "Pregunta 3. A continuación, se muestra el diagrama de un prisma rectangular recto formado por cubos unitarios. El prisma tiene 4 cubos de ancho, 2 cubos de altura y 2 cubos de profundidad. Una referencia presenta un cubo y establece que ese cubo es igual a 1 unidad cúbica. ¿Qué medida del prisma rectangular recto es igual a la cantidad total de cubos? Opciones: A: área B: altura C: perímetro D: volumen"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 unit cubes",
+          "2 unit cubes",
+          "1 cubic unit",
+          "A: area",
+          "B: height",
+          "C: perimeter",
+          "D: volume"
+        ],
+        "es": [
+          "4 cubos",
+          "2 cubos de altura",
+          "2 cubos de profundidad",
+          "1 unidad cúbica",
+          "área",
+          "altura",
+          "perímetro",
+          "volumen",
+          "A: área",
+          "B: altura",
+          "C: perímetro",
+          "D: volumen"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q4": {
+      "inputHash": "3dee9ebf482b7217b9033872b13fd9d8956ff66652e2f06d914d3bd98815449a",
+      "description": {
+        "en": "Question 4. What is 34.275 rounded to the nearest hundredth? Choices: A: 34.0 B: 34.3 C: 34.27 D: 34.28",
+        "es": "Pregunta 4. ¿Cuánto es 34.275 redondeado al centésimo más cercano? Opciones: A: 34.0 B: 34.3 C: 34.27 D: 34.28"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "34.275",
+          "34.0",
+          "34.3",
+          "34.27",
+          "34.28",
+          "A: 34.0",
+          "B: 34.3",
+          "C: 34.27",
+          "D: 34.28"
+        ],
+        "es": [
+          "34.275",
+          "34.0",
+          "34.3",
+          "34.27",
+          "34.28",
+          "A: 34.0",
+          "B: 34.3",
+          "C: 34.27",
+          "D: 34.28"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q7": {
+      "inputHash": "cd079002b6c13bc6a49db9dbd7461bb67825c63a98784d3082d341ccb86e522c",
+      "description": {
+        "en": "Question 7. A group of 4 gold miners found 10 ounces of gold. The miners shared the gold equally. How much gold, in ounces, did each miner receive? Choices: A: 1/4 B: 4/10 C: 2 2/10 D: 2 1/2",
+        "es": "Pregunta 7. Un grupo de 4 mineros encontró 10 onzas de oro. Los mineros compartieron el oro en partes iguales. ¿Cuánto oro, en onzas, recibió cada minero? Opciones: A: 1/4 B: 4/10 C: 2 2/10 D: 2 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4",
+          "10",
+          "1/4",
+          "4/10",
+          "2 2/10",
+          "2 1/2",
+          "A: 1/4",
+          "B: 4/10",
+          "C: 2 2/10",
+          "D: 2 1/2"
+        ],
+        "es": [
+          "4 mineros",
+          "10 onzas",
+          "1/4",
+          "4/10",
+          "2 2/10",
+          "2 1/2",
+          "A: 1/4",
+          "B: 4/10",
+          "C: 2 2/10",
+          "D: 2 1/2"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q9": {
+      "inputHash": "4ff9c6d962c8cc2088b23f8c868a913c7c3850af6ed9674e6edf0d017f1e928d",
+      "description": {
+        "en": "Question 9. A diagram of a 3-dimensional figure is provided. The figure is a right prism with a constant depth of 2 inches and an L-shaped front face. The front face has a total width of 10 inches. Its lower rectangular portion is 8 inches high across the full width. At the right end, a vertical rectangular column rises to a total height of 12 inches; this column is 3 inches wide. What is the volume, in cubic inches, of the figure? Choices: A: 35 B: 72 C: 184 D: 240",
+        "es": "Pregunta 9. A continuación, se muestra el diagrama de una figura tridimensional con forma de prisma escalonado. La cara frontal tiene forma de L: su base mide 10 pulg. de largo; la sección inferior mide 8 pulg. de altura; y una sección vertical situada en el extremo derecho continúa hacia arriba hasta alcanzar una altura total de 12 pulg. Esa sección vertical derecha mide 3 pulg. de ancho, desde la arista interior del escalón hasta la arista derecha. Toda la figura tiene una profundidad uniforme de 2 pulg., desde la cara frontal hasta la cara posterior. ¿Cuál es el volumen, en pulgadas cúbicas, de la figura? Opciones: A: 35 B: 72 C: 184 D: 240"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 inches",
+          "10 inches",
+          "8 inches",
+          "12 inches",
+          "3 inches",
+          "35",
+          "72",
+          "184",
+          "240",
+          "A: 35",
+          "B: 72",
+          "C: 184",
+          "D: 240"
+        ],
+        "es": [
+          "10 pulg",
+          "8 pulg",
+          "12 pulg",
+          "3 pulg",
+          "2 pulg",
+          "35",
+          "72",
+          "184",
+          "240",
+          "A: 35",
+          "B: 72",
+          "C: 184",
+          "D: 240"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q10": {
+      "inputHash": "f1e6965f23b286a4f61f8e9f824f2e10e91e803f0c2a381b0c9fed9ba28f1af0",
+      "description": {
+        "en": "Question 10. Steven has 3 cups of raisins. He shares all the raisins equally among himself and his friends. If each person gets 1/4 cup of raisins, how many people, in total, get raisins? Choices: A: 1 B: 4 C: 7 D: 12",
+        "es": "Pregunta 10. Steven tiene 3 tazas de pasas. Comparte todas las pasas en partes iguales entre él y sus amigos. Si cada persona recibe 1/4 taza de pasas, ¿cuántas personas, en total, reciben pasas? Opciones: A: 1 B: 4 C: 7 D: 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "1/4",
+          "1",
+          "4",
+          "7",
+          "12",
+          "A: 1",
+          "B: 4",
+          "C: 7",
+          "D: 12"
+        ],
+        "es": [
+          "3 tazas",
+          "1/4 taza",
+          "1",
+          "4",
+          "7",
+          "12",
+          "A: 1",
+          "B: 4",
+          "C: 7",
+          "D: 12",
+          "1/4"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q12": {
+      "inputHash": "26070fec3c6f9d09b684efa3508a536e071ca5caf31fd3567f923ef79b3be32d",
+      "description": {
+        "en": "Question 12. Saul has $6.00 in quarters. He uses all of the quarters to play video games. If each game requires 3 quarters, what is the total number of video games that Saul plays? Choices: A: 2 B: 8 C: 12 D: 18",
+        "es": "Pregunta 12. Saul tiene $6.00 en monedas de veinticinco centavos y las gasta todas en videojuegos. Si cada juego cuesta 3 monedas de veinticinco centavos, ¿cuántos videojuegos juega Saul en total? Opciones: A: 2 B: 8 C: 12 D: 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$6.00",
+          "3 quarters",
+          "2",
+          "8",
+          "12",
+          "18",
+          "A: 2",
+          "B: 8",
+          "C: 12",
+          "D: 18"
+        ],
+        "es": [
+          "$6.00",
+          "veinticinco centavos",
+          "3 monedas",
+          "2",
+          "8",
+          "12",
+          "18",
+          "A: 2",
+          "B: 8",
+          "C: 12",
+          "D: 18"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q15": {
+      "inputHash": "da37dde4c776aa803869797f5f31eda4c3bbc44f9246c78197a4f4ba081f6cda",
+      "description": {
+        "en": "Question 15. A company has an annual employee picnic. The company rents buses to transport the employees to the picnic area. There are 1,320 employees. Each bus carries a total of 54 employees. What is the minimum number of buses the company needs to transport all of the employees to the picnic area? Choices: A: 24 B: 25 C: 26 D: 27",
+        "es": "Pregunta 15. Una empresa organiza un picnic anual para los empleados. La empresa alquila autobuses para transportar a los empleados hasta el lugar del picnic. Hay 1,320 empleados. Cada autobús lleva un total de 54 empleados. ¿Cuál es la cantidad mínima de autobuses que necesita la empresa para transportar a todos los empleados al lugar del picnic? Opciones: A: 24 B: 25 C: 26 D: 27"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,320",
+          "54",
+          "24",
+          "25",
+          "26",
+          "27",
+          "A: 24",
+          "B: 25",
+          "C: 26",
+          "D: 27"
+        ],
+        "es": [
+          "1,320",
+          "54",
+          "24",
+          "25",
+          "26",
+          "27",
+          "A: 24",
+          "B: 25",
+          "C: 26",
+          "D: 27"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q16": {
+      "inputHash": "0e8d15bb5bd6c8a179d1502ef15e96ffbd0da50c7dd00ffe3a5950f8fd3a8954",
+      "description": {
+        "en": "Question 16. Which comparison is true? Choices: A: 0.04 > 0.14 B: 0.83 > 0.92 C: 0.27 < 0.36 D: 0.52 < 0.49",
+        "es": "Pregunta 16. ¿Qué comparación es verdadera? Opciones: A: 0.04 > 0.14 B: 0.83 > 0.92 C: 0.27 < 0.36 D: 0.52 < 0.49"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.04 > 0.14",
+          "0.83 > 0.92",
+          "0.27 < 0.36",
+          "0.52 < 0.49",
+          "A: 0.04 > 0.14",
+          "B: 0.83 > 0.92",
+          "C: 0.27 < 0.36",
+          "D: 0.52 < 0.49"
+        ],
+        "es": [
+          "0.04 > 0.14",
+          "0.83 > 0.92",
+          "0.27 < 0.36",
+          "0.52 < 0.49",
+          "A: 0.04 > 0.14",
+          "B: 0.83 > 0.92",
+          "C: 0.27 < 0.36",
+          "D: 0.52 < 0.49"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q19": {
+      "inputHash": "4890a09cc43976858761a70e6895e92f8d035076fe567389ffc25075677eb3f0",
+      "description": {
+        "en": "Question 19. Which statement about the relationship between parallelograms and rectangles is true? Choices: A: All parallelograms are rectangles, but not all rectangles are parallelograms. B: All rectangles are parallelograms, but not all parallelograms are rectangles. C: All rectangles are parallelograms, and all parallelograms are rectangles. D: Not all parallelograms are rectangles, and not all rectangles are parallelograms.",
+        "es": "Pregunta 19. ¿Qué afirmación acerca de la relación entre paralelogramos y rectángulos es verdadera? Opciones: A: Todos los paralelogramos son rectángulos, pero no todos los rectángulos son paralelogramos. B: Todos los rectángulos son paralelogramos, pero no todos los paralelogramos son rectángulos. C: Todos los rectángulos son paralelogramos y todos los paralelogramos son rectángulos. D: No todos los paralelogramos son rectángulos y no todos los rectángulos son paralelogramos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "All parallelograms are rectangles",
+          "All rectangles are parallelograms",
+          "not all parallelograms are rectangles",
+          "not all rectangles are parallelograms",
+          "A: All parallelograms are rectangles, but not all rectangles are parallelograms",
+          "B: All rectangles are parallelograms, but not all parallelograms are rectangles",
+          "C: All rectangles are parallelograms, and all parallelograms are rectangles",
+          "D: Not all parallelograms are rectangles, and not all rectangles are parallelograms"
+        ],
+        "es": [
+          "Todos los paralelogramos son rectángulos",
+          "no todos los rectángulos son paralelogramos",
+          "Todos los rectángulos son paralelogramos",
+          "no todos los paralelogramos son rectángulos",
+          "A: Todos los paralelogramos son rectángulos, pero no todos los rectángulos son paralelogramos",
+          "B: Todos los rectángulos son paralelogramos, pero no todos los paralelogramos son rectángulos",
+          "C: Todos los rectángulos son paralelogramos y todos los paralelogramos son rectángulos",
+          "D: No todos los paralelogramos son rectángulos y no todos los rectángulos son paralelogramos"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q27": {
+      "inputHash": "453f8f0aef0c1ea70806e292c06fee53b671bcc68fa8d63d976b2657632fc8d5",
+      "description": {
+        "en": "Question 27. What is the value of the expression 1/7 ÷ 5? Choices: A: 1/35 B: 1/12 C: 5/7 D: 6/7",
+        "es": "Pregunta 27. ¿Cuál es el valor de la expresión 1/7 ÷ 5? Opciones: A: 1/35 B: 1/12 C: 5/7 D: 6/7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/7 ÷ 5",
+          "1/35",
+          "1/12",
+          "5/7",
+          "6/7",
+          "A: 1/35",
+          "B: 1/12",
+          "C: 5/7",
+          "D: 6/7",
+          "1/7"
+        ],
+        "es": [
+          "1/7 ÷ 5",
+          "1/35",
+          "1/12",
+          "5/7",
+          "6/7",
+          "A: 1/35",
+          "B: 1/12",
+          "C: 5/7",
+          "D: 6/7",
+          "1/7"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q28": {
+      "inputHash": "54d0248fc30a136f9437a243bcdcead13ba2997bf4fb71480f50dcb4adfe943d",
+      "description": {
+        "en": "Question 28. Marcel has 2 1/3 cups of milk. He uses 2/3 cup for his cereal and 1 1/4 cups for a pancake recipe. How much milk, in cups, does Marcel have remaining? Choices: A: 5/12 B: 7/12 C: 1 1/12 D: 1 11/12",
+        "es": "Pregunta 28. Marcel tiene 2 1/3 tazas de leche. Él usa 2/3 de taza para su cereal y 1 1/4 tazas para una receta de panqueques. ¿Cuánta leche, en tazas, le queda a Marcel? Opciones: A: 5/12 B: 7/12 C: 1 1/12 D: 1 11/12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 1/3",
+          "2/3",
+          "1 1/4",
+          "5/12",
+          "7/12",
+          "1 1/12",
+          "1 11/12",
+          "A: 5/12",
+          "B: 7/12",
+          "C: 1 1/12",
+          "D: 1 11/12"
+        ],
+        "es": [
+          "2 1/3",
+          "2/3",
+          "1 1/4",
+          "5/12",
+          "7/12",
+          "1 1/12",
+          "1 11/12",
+          "A: 5/12",
+          "B: 7/12",
+          "C: 1 1/12",
+          "D: 1 11/12"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q30": {
+      "inputHash": "89149c5ffbe607c673247c282c81f8d8f05fd159cc717d4376907ad8f7952be0",
+      "description": {
+        "en": "Question 30. What is the area, in square units, of a rectangle with side lengths 3 3/4 units and 9 1/2 units? Choices: A: 13 1/4 B: 27 3/8 C: 35 5/8 D: 47 1/2",
+        "es": "Pregunta 30. ¿Cuál es el área, en unidades cuadradas, de un rectángulo con longitudes de lado de 3 3/4 unidades y 9 1/2 unidades? Opciones: A: 13 1/4 B: 27 3/8 C: 35 5/8 D: 47 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 3/4",
+          "9 1/2",
+          "13 1/4",
+          "27 3/8",
+          "35 5/8",
+          "47 1/2",
+          "A: 13 1/4",
+          "B: 27 3/8",
+          "C: 35 5/8",
+          "D: 47 1/2"
+        ],
+        "es": [
+          "3 3/4",
+          "9 1/2",
+          "13 1/4",
+          "27 3/8",
+          "35 5/8",
+          "47 1/2",
+          "A: 13 1/4",
+          "B: 27 3/8",
+          "C: 35 5/8",
+          "D: 47 1/2"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q31": {
+      "inputHash": "17421d3d6b269c1048d0f090575c78fc69878a69d144b995d08383cfb02902f3",
+      "description": {
+        "en": "Question 31. Rida is walking on a trail that is 2.5 kilometers long. She has walked 0.72 kilometer of the trail so far. How many more kilometers does Rida still need to walk to complete the trail? Choices: A: 0.53 B: 0.97 C: 1.78 D: 3.22",
+        "es": "Pregunta 31. Rida camina por una senda que tiene 2.5 kilómetros de largo. Ya caminó 0.72 kilómetros de la senda. ¿Cuántos kilómetros más debe caminar Rida para completar la senda? Opciones: A: 0.53 B: 0.97 C: 1.78 D: 3.22"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2.5",
+          "0.72",
+          "0.53",
+          "0.97",
+          "1.78",
+          "3.22",
+          "A: 0.53",
+          "B: 0.97",
+          "C: 1.78",
+          "D: 3.22"
+        ],
+        "es": [
+          "2.5",
+          "0.72",
+          "0.53",
+          "0.97",
+          "1.78",
+          "3.22",
+          "A: 0.53",
+          "B: 0.97",
+          "C: 1.78",
+          "D: 3.22"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q32": {
+      "inputHash": "b2d13dba274e997944b6211a8594b26d70e3cc299057e0fb2ad814b73d64e702",
+      "description": {
+        "en": "Question 32. What is the value of the expression 1/2 + 2/3 − 1/4? Choices: A: 2/1 B: 4/9 C: 11/12 D: 17/12",
+        "es": "Pregunta 32. ¿Cuál es el valor de la siguiente expresión? 1/2 + 2/3 − 1/4. Opciones: A: 2/1 B: 4/9 C: 11/12 D: 17/12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/2 + 2/3 − 1/4",
+          "2/1",
+          "4/9",
+          "11/12",
+          "17/12",
+          "A: 2/1",
+          "B: 4/9",
+          "C: 11/12",
+          "D: 17/12",
+          "1/2",
+          "2/3",
+          "1/4"
+        ],
+        "es": [
+          "1/2 + 2/3 − 1/4",
+          "2/1",
+          "4/9",
+          "11/12",
+          "17/12",
+          "A: 2/1",
+          "B: 4/9",
+          "C: 11/12",
+          "D: 17/12",
+          "1/2",
+          "2/3",
+          "1/4"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q33": {
+      "inputHash": "8944cc4b9d31f23c1ebb01b5c7a976b5723a08cf416e121ca4c1153d6976cadd",
+      "description": {
+        "en": "Question 33. Lisa drew a four-sided shape that had exactly one pair of parallel lines and two right angles. Which list correctly classifies the shape Lisa drew? Choices: A: square, rhombus, quadrilateral. B: trapezoid, quadrilateral, polygon. C: rectangle, parallelogram, polygon. D: rhombus, parallelogram, quadrilateral.",
+        "es": "Pregunta 33. Lisa dibujó una figura de cuatro lados que tenía exactamente un par de líneas paralelas y dos ángulos rectos. ¿Qué lista clasifica correctamente la figura que dibujó Lisa? Opciones: A: cuadrado, rombo, cuadrilátero B: trapezoide, cuadrilátero, polígono C: rectángulo, paralelogramo, polígono D: rombo, paralelogramo, cuadrilátero"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "exactly one pair of parallel lines",
+          "two right angles",
+          "square, rhombus, quadrilateral",
+          "trapezoid, quadrilateral, polygon",
+          "rectangle, parallelogram, polygon",
+          "rhombus, parallelogram, quadrilateral",
+          "A: square, rhombus, quadrilateral",
+          "B: trapezoid, quadrilateral, polygon",
+          "C: rectangle, parallelogram, polygon",
+          "D: rhombus, parallelogram, quadrilateral"
+        ],
+        "es": [
+          "cuatro lados",
+          "exactamente un par de líneas paralelas",
+          "dos ángulos rectos",
+          "cuadrado, rombo, cuadrilátero",
+          "trapezoide, cuadrilátero, polígono",
+          "rectángulo, paralelogramo, polígono",
+          "rombo, paralelogramo, cuadrilátero",
+          "A: cuadrado, rombo, cuadrilátero",
+          "B: trapezoide, cuadrilátero, polígono",
+          "C: rectángulo, paralelogramo, polígono",
+          "D: rombo, paralelogramo, cuadrilátero"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q34": {
+      "inputHash": "1b16574656341733339433989a3be7b3fd5e4b53dcaf2e5eacffb01c5c2f99a9",
+      "description": {
+        "en": "Question 34. Elsie has two equal-sized bags of rice. One bag is 1/3 full, and the other bag is 1/5 full. She combines the rice into one of the bags. What fraction of a full bag of rice does Elsie now have after combining the rice? Choices: A: 1/2. B: 1/4. C: 2/15. D: 8/15.",
+        "es": "Pregunta 34. Elsie tiene dos bolsas de arroz del mismo tamaño. Una bolsa está 1/3 llena, y la otra bolsa está 1/5 llena. Ella combina todo el arroz en una de las bolsas. ¿Qué fracción de una bolsa llena tiene Elsie después de combinar el arroz? Opciones: A: 1/2 B: 1/4 C: 2/15 D: 8/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "1/5",
+          "1/2",
+          "1/4",
+          "2/15",
+          "8/15",
+          "A: 1/2",
+          "B: 1/4",
+          "C: 2/15",
+          "D: 8/15"
+        ],
+        "es": [
+          "dos bolsas",
+          "1/3",
+          "1/5",
+          "1/2",
+          "1/4",
+          "2/15",
+          "8/15",
+          "A: 1/2",
+          "B: 1/4",
+          "C: 2/15",
+          "D: 8/15"
+        ]
+      }
+    },
+    "nysed-2024-g5-mc-q35": {
+      "inputHash": "98a1103d86d9f1e7cc854e40ad10be8b9ec1cc144afb0cecd42e15698ada8a40",
+      "description": {
+        "en": "Question 35. The distance between two houses on a street is 450 meters. What is the distance measured in kilometers? Choices: A: 45. B: 4.5. C: 0.45. D: 0.045.",
+        "es": "Pregunta 35. La distancia entre dos casas en una calle es de 450 metros. ¿Cuál es la distancia medida en kilómetros? Opciones: A: 45 B: 4.5 C: 0.45 D: 0.045"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "450 meters",
+          "kilometers",
+          "45",
+          "4.5",
+          "0.45",
+          "0.045",
+          "A: 45",
+          "B: 4.5",
+          "C: 0.45",
+          "D: 0.045"
+        ],
+        "es": [
+          "450 metros",
+          "kilómetros",
+          "45",
+          "4.5",
+          "0.45",
+          "0.045",
+          "A: 45",
+          "B: 4.5",
+          "C: 0.45",
+          "D: 0.045"
+        ]
+      }
+    }
+  }
+}

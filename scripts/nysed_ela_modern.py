@@ -95,6 +95,20 @@ try:
 except ModuleNotFoundError:  # pragma: no cover - permits direct script imports.
     from nysed_ela_passages import render_passage_assets  # type: ignore[no-redef]
 
+try:
+    from scripts.nysed_ela_question_accessibility import (
+        load_and_attach_exam_question_accessibility,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script imports.
+    from nysed_ela_question_accessibility import (  # type: ignore[no-redef]
+        load_and_attach_exam_question_accessibility,
+    )
+
+try:
+    from scripts.nysed_ela_transcripts import load_and_attach_exam_transcripts
+except ModuleNotFoundError:  # pragma: no cover - permits direct script imports.
+    from nysed_ela_transcripts import load_and_attach_exam_transcripts  # type: ignore[no-redef]
+
 
 MODERN_YEARS = (2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026)
 GRADES = (3, 4, 5, 6, 7, 8)
@@ -1359,6 +1373,16 @@ def _import_modern_pdf(
         "stimuli": stimuli,
         "questions": questions,
     }
+    # Reviewed question text must be attached before this raw exam is returned
+    # to the top-level importer.  The caller hashes ``alt`` while attaching the
+    # authored explanations, so changing this order would silently make every
+    # explanation sidecar stale or pin it to unreviewed PDF/OCR output.
+    load_and_attach_exam_question_accessibility(
+        exam,
+        pdf_path=pdf_path,
+        asset_root=asset_root,
+    )
+    load_and_attach_exam_transcripts(exam, pdf_path=pdf_path, asset_root=asset_root)
     validate_modern_exam(exam)
     return exam
 

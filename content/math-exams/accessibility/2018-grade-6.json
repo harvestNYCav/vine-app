@@ -1,0 +1,845 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2018-grade-6-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2018-g6-mc-q1": {
+      "inputHash": "f6e5b099c970c020097e2b6603acfee15f658196f1fb62a6f10ff0f80dd2b335",
+      "description": {
+        "en": "Question 1. An equation is shown below: 12 − 9 + c = 12. What value of c makes the equation true? Choices: A: 0 B: 3 C: 9 D: 12",
+        "es": "Pregunta 1. A continuación, se muestra una ecuación. 12 − 9 + c = 12 ¿Qué valor de c hace que la ecuación sea verdadera? Opciones: A: 0 B: 3 C: 9 D: 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 − 9 + c = 12",
+          "0",
+          "3",
+          "9",
+          "12",
+          "A: 0",
+          "B: 3",
+          "C: 9",
+          "D: 12"
+        ],
+        "es": [
+          "12 − 9 + c = 12",
+          "0",
+          "3",
+          "9",
+          "12",
+          "A: 0",
+          "B: 3",
+          "C: 9",
+          "D: 12"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q2": {
+      "inputHash": "a85e578215534865877e12fb0d4f8ed5fb8ae29ed5ad9df124878286e03e2a71",
+      "description": {
+        "en": "Question 2. Kate has a coin collection. She keeps 7 of the coins in a box, which is only 5% of her entire collection. What is the total number of coins in Kate’s coin collection? Choices: A: 12 B: 14 C: 120 D: 140",
+        "es": "Pregunta 2. Kate tiene una colección de monedas. Guarda 7 de las monedas en una caja, que representa solo el 5 % de toda su colección. ¿Cuál es el número total de monedas en la colección de Kate? Opciones: A: 12 B: 14 C: 120 D: 140"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7",
+          "5%",
+          "12",
+          "14",
+          "120",
+          "140",
+          "A: 12",
+          "B: 14",
+          "C: 120",
+          "D: 140"
+        ],
+        "es": [
+          "7",
+          "5 %",
+          "12",
+          "14",
+          "120",
+          "140",
+          "A: 12",
+          "B: 14",
+          "C: 120",
+          "D: 140"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q3": {
+      "inputHash": "0ad87705cf5e30247afa7c1f58c54707db6e506811505f6e823710a1c9155a05",
+      "description": {
+        "en": "Question 3. What is the greatest common factor of 36 and 90? Choices: A: 6 B: 18 C: 36 D: 180",
+        "es": "Pregunta 3. ¿Cuál es el máximo común divisor de 36 y 90? Opciones: A: 6 B: 18 C: 36 D: 180"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "36",
+          "90",
+          "6",
+          "18",
+          "180",
+          "A: 6",
+          "B: 18",
+          "C: 36",
+          "D: 180"
+        ],
+        "es": [
+          "36",
+          "90",
+          "6",
+          "18",
+          "180",
+          "A: 6",
+          "B: 18",
+          "C: 36",
+          "D: 180"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q4": {
+      "inputHash": "ff14054b6d60383da6ff849f6ed0bd3cbc567891d7f4af9dd73a4b15eba493d9",
+      "description": {
+        "en": "Question 4. The relationship between Robert’s age, r, and Julia’s age, j, can be represented by the equation r = j + 3. Which table of values represents the relationship between Robert’s age and Julia’s age? Choices: A: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 12; r = 15, j = 18; and r = 21, j = 24. B: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 3; r = 15, j = 5; and r = 21, j = 7. C: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 6; r = 15, j = 12; and r = 21, j = 18. D: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 27; r = 15, j = 45; and r = 21, j = 63.",
+        "es": "Pregunta 4. La relación entre la edad de Robert, r, y la edad de Julia, j, puede representarse mediante la ecuación que se muestra a continuación. r = j + 3 ¿Qué tabla de valores representa la relación entre la edad de Robert y la edad de Julia? Opciones: A: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 12), (15, 18) y (21, 24). B: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 3), (15, 5) y (21, 7). C: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 6), (15, 12) y (21, 18). D: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 27), (15, 45) y (21, 63)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "r = j + 3",
+          "r = 9, j = 12",
+          "r = 15, j = 18",
+          "r = 21, j = 24",
+          "r = 9, j = 3",
+          "r = 15, j = 5",
+          "r = 21, j = 7",
+          "r = 9, j = 6",
+          "r = 15, j = 12",
+          "r = 21, j = 18",
+          "r = 9, j = 27",
+          "r = 15, j = 45",
+          "r = 21, j = 63",
+          "A: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 12; r = 15, j = 18; and r = 21, j = 24",
+          "B: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 3; r = 15, j = 5; and r = 21, j = 7",
+          "C: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 6; r = 15, j = 12; and r = 21, j = 18",
+          "D: A table titled “Possible Ages” with columns “Robert’s Age, r (years)” and “Julia’s Age, j (years).” The rows are r = 9, j = 27; r = 15, j = 45; and r = 21, j = 63"
+        ],
+        "es": [
+          "r = j + 3",
+          "(r, j)",
+          "(9, 12)",
+          "(15, 18)",
+          "(21, 24)",
+          "(9, 3)",
+          "(15, 5)",
+          "(21, 7)",
+          "(9, 6)",
+          "(15, 12)",
+          "(21, 18)",
+          "(9, 27)",
+          "(15, 45)",
+          "(21, 63)",
+          "A: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 12), (15, 18) y (21, 24)",
+          "B: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 3), (15, 5) y (21, 7)",
+          "C: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 6), (15, 12) y (21, 18)",
+          "D: Tabla titulada «EDADES POSIBLES». Las columnas son «Edad de Robert, r (años)» y «Edad de Julia, j (años)». Sus pares ordenados (r, j) son (9, 27), (15, 45) y (21, 63)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q15": {
+      "inputHash": "2f7bf223a84cecaac564ffdd804fc29513ec29aed43518ef7bd3a0c90e55cf1b",
+      "description": {
+        "en": "Question 15. All the students in the sixth grade either purchased their lunch or brought their lunch from home on Monday. 24% of the students purchased their lunch. 190 students brought their lunch from home. How many students are in the sixth grade? Choices: A: 76 B: 166 C: 214 D: 250",
+        "es": "Pregunta 15. Todos los alumnos del sexto grado compraron su almuerzo o trajeron el almuerzo de su casa el lunes. • El 24 % de los alumnos compró su almuerzo. • 190 alumnos trajeron el almuerzo de su casa. ¿Cuántos alumnos hay en el sexto grado? Opciones: A: 76 B: 166 C: 214 D: 250"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "24%",
+          "190",
+          "76",
+          "166",
+          "214",
+          "250",
+          "A: 76",
+          "B: 166",
+          "C: 214",
+          "D: 250"
+        ],
+        "es": [
+          "24 %",
+          "190",
+          "76",
+          "166",
+          "214",
+          "250",
+          "A: 76",
+          "B: 166",
+          "C: 214",
+          "D: 250"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q16": {
+      "inputHash": "93a1e655d784991e489d73a9cade4e5de7d254a1fc5fc0e579aefdd5fb9ef2c3",
+      "description": {
+        "en": "Question 16. Joe walks on a treadmill at a constant rate. The equation d = 4t describes the relationship between t, the time he walks in hours, and d, the distance he walks in miles. Which graph represents the relationship between the amount of time Joe walks and the distance he walks? Each graph has a horizontal t-axis labeled “Time (hours)” and a vertical d-axis labeled “Distance (miles).” Both axes begin at 0, have grid marks at every 1 unit, and have numbered labels at 2, 4, 6, and 8. Choices: A: A ray begins at the closed point (0, 0), passes through the closed points (1, 4) and (2, 8), and continues upward and to the right beyond (2, 8). B: A ray begins at the closed point (0, 0), passes through the closed points (4, 1) and (8, 2), and continues upward and to the right beyond (8, 2). C: A ray begins at the closed point (0, 0), passes through the closed points (4, 4) and (8, 8), and continues upward and to the right beyond (8, 8). D: A vertical ray begins at the closed point (4, 0), passes through the closed points (4, 4) and (4, 8), and continues upward beyond (4, 8).",
+        "es": "Pregunta 16. Joe camina en una cinta para caminar a una tasa constante. La siguiente ecuación describe la relación entre t, el tiempo que camina en horas, y d, la distancia que camina en millas. d = 4t ¿Qué gráfico representa la relación entre la cantidad de tiempo que camina Joe y la distancia que camina? En todos los gráficos, el eje horizontal es t y está rotulado «Tiempo (horas)»; el eje vertical es d y está rotulado «Distancia (millas)». Ambos ejes comienzan en 0 y tienen flechas en sus extremos positivos. La cuadrícula usa incrementos de 1 desde 0 hasta 9 en ambos ejes; se muestran rótulos numéricos en 2, 4, 6 y 8. Opciones: A: Una semirrecta ascendente parte del punto cerrado (0, 0), pasa por los puntos cerrados (1, 4) y (2, 8), y continúa con una flecha hacia arriba y a la derecha más allá de (2, 8). B: Una semirrecta ascendente parte del punto cerrado (0, 0), pasa por los puntos cerrados (4, 1) y (8, 2), y continúa con una flecha hacia la derecha y arriba más allá de (8, 2). C: Una semirrecta ascendente parte del punto cerrado (0, 0), pasa por los puntos cerrados (4, 4) y (8, 8), y continúa con una flecha hacia arriba y a la derecha más allá de (8, 8). D: Una semirrecta vertical se encuentra sobre t = 4. Parte del punto cerrado (4, 0), pasa por los puntos cerrados (4, 4) y (4, 8), y continúa con una flecha hacia arriba más allá de (4, 8)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "d = 4t",
+          "(0, 0)",
+          "(1, 4)",
+          "(2, 8)",
+          "(4, 1)",
+          "(8, 2)",
+          "(4, 4)",
+          "(8, 8)",
+          "(4, 0)",
+          "(4, 8)",
+          "A: A ray begins at the closed point (0, 0), passes through the closed points (1, 4) and (2, 8), and continues upward and to the right beyond (2, 8)",
+          "B: A ray begins at the closed point (0, 0), passes through the closed points (4, 1) and (8, 2), and continues upward and to the right beyond (8, 2)",
+          "C: A ray begins at the closed point (0, 0), passes through the closed points (4, 4) and (8, 8), and continues upward and to the right beyond (8, 8)",
+          "D: A vertical ray begins at the closed point (4, 0), passes through the closed points (4, 4) and (4, 8), and continues upward beyond (4, 8)"
+        ],
+        "es": [
+          "d = 4t",
+          "(0, 0)",
+          "(1, 4)",
+          "(2, 8)",
+          "(4, 1)",
+          "(8, 2)",
+          "(4, 4)",
+          "(8, 8)",
+          "t = 4",
+          "(4, 0)",
+          "(4, 8)",
+          "A: Una semirrecta ascendente parte del punto cerrado (0, 0), pasa por los puntos cerrados (1, 4) y (2, 8), y continúa con una flecha hacia arriba y a la derecha más allá de (2, 8)",
+          "B: Una semirrecta ascendente parte del punto cerrado (0, 0), pasa por los puntos cerrados (4, 1) y (8, 2), y continúa con una flecha hacia la derecha y arriba más allá de (8, 2)",
+          "C: Una semirrecta ascendente parte del punto cerrado (0, 0), pasa por los puntos cerrados (4, 4) y (8, 8), y continúa con una flecha hacia arriba y a la derecha más allá de (8, 8)",
+          "D: Una semirrecta vertical se encuentra sobre t = 4. Parte del punto cerrado (4, 0), pasa por los puntos cerrados (4, 4) y (4, 8), y continúa con una flecha hacia arriba más allá de (4, 8)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q19": {
+      "inputHash": "d12c0bd9754c2888f9dd62c4c00c246fb9b86e0496f32cecde7ac928c65601fa",
+      "description": {
+        "en": "Question 19. There are 230 calories in 4 ounces of a type of ice cream. How many calories are in 6 ounces of that ice cream? Choices: A: 232 B: 236 C: 345 D: 460",
+        "es": "Pregunta 19. Hay 230 calorías en 4 onzas de un tipo de helado. ¿Cuántas calorías hay en 6 onzas del mismo helado? Opciones: A: 232 B: 236 C: 345 D: 460"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "230",
+          "4 ounces",
+          "6 ounces",
+          "232",
+          "236",
+          "345",
+          "460",
+          "A: 232",
+          "B: 236",
+          "C: 345",
+          "D: 460"
+        ],
+        "es": [
+          "230",
+          "4 onzas",
+          "6 onzas",
+          "232",
+          "236",
+          "345",
+          "460",
+          "A: 232",
+          "B: 236",
+          "C: 345",
+          "D: 460"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q22": {
+      "inputHash": "59c32046a05972db59645da918e166d8c2b437a33a9f389cdecc1d079479dbbd",
+      "description": {
+        "en": "Question 22. A shape is made of 12 right triangles of equal size. Each right triangle has a base of 4 cm and a height of 5 cm. What is the total area, in square centimeters, of the shape? Choices: A: 10 B: 60 C: 120 D: 240",
+        "es": "Pregunta 22. Una figura está hecha de 12 triángulos rectángulos de igual tamaño. Cada triángulo rectángulo tiene una base de 4 cm y una altura de 5 cm. ¿Cuál es el área total, en centímetros cuadrados, de la figura? Opciones: A: 10 B: 60 C: 120 D: 240"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12",
+          "4 cm",
+          "5 cm",
+          "10",
+          "60",
+          "120",
+          "240",
+          "A: 10",
+          "B: 60",
+          "C: 120",
+          "D: 240"
+        ],
+        "es": [
+          "12",
+          "4 cm",
+          "5 cm",
+          "10",
+          "60",
+          "120",
+          "240",
+          "A: 10",
+          "B: 60",
+          "C: 120",
+          "D: 240"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q25": {
+      "inputHash": "fd5d6e1e7251ff766c7500e9c370bcd6ef527a3003e2d4da28d230ad524a74f2",
+      "description": {
+        "en": "Question 25. Pat bounces a basketball 25 times in 30 seconds. At that rate, approximately how many times will Pat bounce the ball in 150 seconds? Choices: A: 120. B: 125. C: 144. D: 145.",
+        "es": "Pregunta 25. Pat hace rebotar una pelota de baloncesto 25 veces en 30 segundos. A esa tasa, ¿aproximadamente cuántas veces hará rebotar la pelota Pat en 150 segundos? Opciones: A: 120 B: 125 C: 144 D: 145"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25 times",
+          "30 seconds",
+          "150 seconds",
+          "120",
+          "125",
+          "144",
+          "145",
+          "A: 120",
+          "B: 125",
+          "C: 144",
+          "D: 145"
+        ],
+        "es": [
+          "25",
+          "30 segundos",
+          "150 segundos",
+          "120",
+          "125",
+          "144",
+          "145",
+          "A: 120",
+          "B: 125",
+          "C: 144",
+          "D: 145"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q26": {
+      "inputHash": "605d27fc9693f9314158ce4f9d70468751f107d6f62190790a1ddcff8053eb97",
+      "description": {
+        "en": "Question 26. Which expression is equivalent to 5(4x + 3) − 2x? Choices: A: 18x + 15. B: 18x + 3. C: 7x + 8. D: 2x + 8.",
+        "es": "Pregunta 26. ¿Qué expresión es equivalente a 5(4x + 3) − 2x? Opciones: A: 18x + 15 B: 18x + 3 C: 7x + 8 D: 2x + 8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5(4x + 3) − 2x",
+          "18x + 15",
+          "18x + 3",
+          "7x + 8",
+          "2x + 8",
+          "A: 18x + 15",
+          "B: 18x + 3",
+          "C: 7x + 8",
+          "D: 2x + 8",
+          "(4x + 3)"
+        ],
+        "es": [
+          "5(4x + 3) − 2x",
+          "18x + 15",
+          "18x + 3",
+          "7x + 8",
+          "2x + 8",
+          "A: 18x + 15",
+          "B: 18x + 3",
+          "C: 7x + 8",
+          "D: 2x + 8",
+          "(4x + 3)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q27": {
+      "inputHash": "5bdbea71a63305c8c965619f4df301d62c51858c45918165b5f67f10c2dbeffd",
+      "description": {
+        "en": "Question 27. Mark graphed points on a coordinate plane to represent the locations of his school and a bank. The horizontal x-axis and vertical y-axis meet at the origin, 0. Both axes have arrows in the positive direction. The grid is marked in units from 1 through 7 on each axis. School is plotted at (2, 4), and Bank is plotted at (6, 4). Mark wants to add the location of the library on the coordinate plane. The distance from the library to the school is the same as the distance from the bank to the school. Which ordered pair could be the coordinates of the library? Choices: A: (2, 4). B: (2, 8). C: (4, 4). D: (6, 8).",
+        "es": "Pregunta 27. Mark graficó puntos en un plano de coordenadas para representar las ubicaciones de su escuela y un banco. El eje horizontal es x y el eje vertical es y; ambos parten de 0 y la cuadrícula está marcada en incrementos de 1. La escuela está en (2, 4) y el banco está en (6, 4). Mark quiere agregar la ubicación de la biblioteca en el plano de coordenadas. La distancia de la biblioteca a la escuela es la misma que la distancia del banco a la escuela. ¿Qué par ordenado podría representar las coordenadas de la biblioteca? Opciones: A: (2, 4) B: (2, 8) C: (4, 4) D: (6, 8)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x-axis",
+          "y-axis",
+          "0",
+          "1 through 7",
+          "(2, 4)",
+          "(6, 4)",
+          "(2, 8)",
+          "(4, 4)",
+          "(6, 8)",
+          "A: (2, 4)",
+          "B: (2, 8)",
+          "C: (4, 4)",
+          "D: (6, 8)"
+        ],
+        "es": [
+          "(2, 4)",
+          "(6, 4)",
+          "(2, 8)",
+          "(4, 4)",
+          "(6, 8)",
+          "A: (2, 4)",
+          "B: (2, 8)",
+          "C: (4, 4)",
+          "D: (6, 8)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q28": {
+      "inputHash": "4286d6c23d7648fa6acdb351a5451cc6966fd5880d9a91a716cac43494bb9a87",
+      "description": {
+        "en": "Question 28. A student draws a net to show the dimensions of a container that is shaped like a right rectangular prism. The net has six rectangular faces for a prism with dimensions 5 in. by 2 in. by 3 in. A central 5 in. by 3 in. rectangle has a 2 in. by 3 in. rectangle attached to each of its left and right sides. A 5 in. by 2 in. rectangle is attached above the central rectangle. Below the central rectangle are a 5 in. by 2 in. rectangle and then a 5 in. by 3 in. rectangle, arranged vertically. Dashed lines mark the folds between the central rectangle and the top and bottom faces, and between the two lower rectangles. What is the surface area, in square inches, of the container? Choices: A: 19. B: 30. C: 38. D: 62.",
+        "es": "Pregunta 28. Un alumno dibuja una representación bidimensional para mostrar las dimensiones de un recipiente que tiene forma de prisma rectangular recto. La red del prisma tiene una tira vertical central de 5 pulgadas de ancho, dividida por líneas discontinuas en cuatro rectángulos consecutivos: de arriba abajo, uno de 5 por 2 pulgadas, uno de 5 por 3 pulgadas, uno de 5 por 2 pulgadas y uno de 5 por 3 pulgadas. Al rectángulo central de 5 por 3 pulgadas se une un rectángulo de 2 por 3 pulgadas a cada lado, uno a la izquierda y otro a la derecha. ¿Cuál es el área de superficie, en pulgadas cuadradas, del recipiente? Opciones: A: 19 B: 30 C: 38 D: 62"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 in. by 2 in. by 3 in",
+          "5 in. by 3 in",
+          "2 in. by 3 in",
+          "5 in. by 2 in",
+          "19",
+          "30",
+          "38",
+          "62",
+          "A: 19",
+          "B: 30",
+          "C: 38",
+          "D: 62"
+        ],
+        "es": [
+          "5 pulgadas",
+          "2 pulgadas",
+          "3 pulgadas",
+          "5 por 2 pulgadas",
+          "5 por 3 pulgadas",
+          "2 por 3 pulgadas",
+          "19",
+          "30",
+          "38",
+          "62",
+          "A: 19",
+          "B: 30",
+          "C: 38",
+          "D: 62"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q29": {
+      "inputHash": "631746ac7577c64b053072c79a8f49296146a934eb5a22f8780e7d628c259073",
+      "description": {
+        "en": "Question 29. Which two expressions are equivalent? Choices: A: x + x + x and x³. B: 14x + 10 − 2x and 16x + 10. C: 12x + 16x and 4(3x + 4x). D: 12x² + 5x + 10 and 17x² + 10.",
+        "es": "Pregunta 29. ¿Cuáles dos expresiones son equivalentes? Opciones: A: x + x + x y x³ B: 14x + 10 − 2x y 16x + 10 C: 12x + 16x y 4(3x + 4x) D: 12x² + 5x + 10 y 17x² + 10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x + x + x",
+          "x³",
+          "14x + 10 − 2x",
+          "16x + 10",
+          "12x + 16x",
+          "4(3x + 4x)",
+          "12x² + 5x + 10",
+          "17x² + 10",
+          "A: x + x + x and x³",
+          "B: 14x + 10 − 2x and 16x + 10",
+          "C: 12x + 16x and 4(3x + 4x)",
+          "D: 12x² + 5x + 10 and 17x² + 10",
+          "(3x + 4x)"
+        ],
+        "es": [
+          "x + x + x",
+          "x³",
+          "14x + 10 − 2x",
+          "16x + 10",
+          "12x + 16x",
+          "4(3x + 4x)",
+          "12x² + 5x + 10",
+          "17x² + 10",
+          "A: x + x + x y x³",
+          "B: 14x + 10 − 2x y 16x + 10",
+          "C: 12x + 16x y 4(3x + 4x)",
+          "D: 12x² + 5x + 10 y 17x² + 10",
+          "(3x + 4x)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q30": {
+      "inputHash": "856d77863f978dc7f7c5b1187d8d5c1fd97b672a87985b536f32ecf9d8f9a772",
+      "description": {
+        "en": "Question 30. A machine fills boxes at a constant rate. At the end of 35 minutes, it has filled 5 boxes. Which table represents the relationship between the number of minutes the machine fills boxes and the number of boxes it has filled? Each table is titled “FILLING BOXES” and has columns “Time (minutes)” and “Boxes Filled.” Choices: A: Rows: 7 minutes, 1 box; 14 minutes, 2 boxes; 21 minutes, 3 boxes; 28 minutes, 4 boxes. B: Rows: 5 minutes, 1 box; 10 minutes, 2 boxes; 15 minutes, 3 boxes; 20 minutes, 4 boxes. C: Rows: 1 minute, 7 boxes; 2 minutes, 14 boxes; 3 minutes, 21 boxes; 4 minutes, 28 boxes. D: Rows: 1 minute, 5 boxes; 2 minutes, 10 boxes; 3 minutes, 15 boxes; 4 minutes, 20 boxes.",
+        "es": "Pregunta 30. Una máquina llena cajas a una tasa constante. Al finalizar 35 minutos, ha llenado 5 cajas. ¿Qué tabla representa la relación entre el número de minutos que le lleva a la máquina llenar cajas y el número de cajas que ha llenado? Cada tabla se titula «LLENADO DE CAJAS» y tiene las columnas «Tiempo (minutos)» y «Cajas llenadas». Opciones: A: Filas de tiempo y cajas, respectivamente: 7 y 1; 14 y 2; 21 y 3; 28 y 4. B: Filas de tiempo y cajas, respectivamente: 5 y 1; 10 y 2; 15 y 3; 20 y 4. C: Filas de tiempo y cajas, respectivamente: 1 y 7; 2 y 14; 3 y 21; 4 y 28. D: Filas de tiempo y cajas, respectivamente: 1 y 5; 2 y 10; 3 y 15; 4 y 20."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "35 minutes",
+          "5 boxes",
+          "7 minutes, 1 box",
+          "14 minutes, 2 boxes",
+          "21 minutes, 3 boxes",
+          "28 minutes, 4 boxes",
+          "5 minutes, 1 box",
+          "10 minutes, 2 boxes",
+          "15 minutes, 3 boxes",
+          "20 minutes, 4 boxes",
+          "1 minute, 7 boxes",
+          "2 minutes, 14 boxes",
+          "3 minutes, 21 boxes",
+          "4 minutes, 28 boxes",
+          "1 minute, 5 boxes",
+          "2 minutes, 10 boxes",
+          "3 minutes, 15 boxes",
+          "4 minutes, 20 boxes",
+          "A: Rows: 7 minutes, 1 box; 14 minutes, 2 boxes; 21 minutes, 3 boxes; 28 minutes, 4 boxes",
+          "B: Rows: 5 minutes, 1 box; 10 minutes, 2 boxes; 15 minutes, 3 boxes; 20 minutes, 4 boxes",
+          "C: Rows: 1 minute, 7 boxes; 2 minutes, 14 boxes; 3 minutes, 21 boxes; 4 minutes, 28 boxes",
+          "D: Rows: 1 minute, 5 boxes; 2 minutes, 10 boxes; 3 minutes, 15 boxes; 4 minutes, 20 boxes"
+        ],
+        "es": [
+          "35 minutos",
+          "5 cajas",
+          "7 y 1",
+          "14 y 2",
+          "21 y 3",
+          "28 y 4",
+          "5 y 1",
+          "10 y 2",
+          "15 y 3",
+          "20 y 4",
+          "1 y 7",
+          "2 y 14",
+          "3 y 21",
+          "4 y 28",
+          "1 y 5",
+          "2 y 10",
+          "3 y 15",
+          "4 y 20",
+          "A: Filas de tiempo y cajas, respectivamente: 7 y 1; 14 y 2; 21 y 3; 28 y 4",
+          "B: Filas de tiempo y cajas, respectivamente: 5 y 1; 10 y 2; 15 y 3; 20 y 4",
+          "C: Filas de tiempo y cajas, respectivamente: 1 y 7; 2 y 14; 3 y 21; 4 y 28",
+          "D: Filas de tiempo y cajas, respectivamente: 1 y 5; 2 y 10; 3 y 15; 4 y 20"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q31": {
+      "inputHash": "d4e7bb69276cecaa5769c0c029707c260a7c52fb7ac0409f068dc7dc5a0b09e6",
+      "description": {
+        "en": "Question 31. Which expression represents the perimeter of the figure? The figure is a closed polygon shaped like a vertical handle with a wider hexagonal top. Its boundary consists of five sides labeled x: the horizontal top side and two slanted sides on each side of the wider top; two vertical handle sides labeled y, one on the left and one on the right; and one horizontal bottom side labeled z. Choices: A: 5x + 2y. B: x + y + z. C: 5x + 2y + z. D: (5 + 2 + 1)(x + y + z).",
+        "es": "Pregunta 31. ¿Qué expresión representa el perímetro de la siguiente figura? La figura es un polígono con ocho lados. Su parte superior es semejante a un hexágono unido a un tallo rectangular. Los cinco lados que forman el borde superior —un lado horizontal arriba y dos lados inclinados a cada lado— están etiquetados x. Desde los extremos inferiores de esa parte salen hacia abajo dos lados verticales, cada uno etiquetado y. Los lados verticales se unen mediante un lado horizontal inferior etiquetado z. Opciones: A: 5x + 2y B: x + y + z C: 5x + 2y + z D: (5 + 2 + 1)(x + y + z)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "z",
+          "5x + 2y",
+          "x + y + z",
+          "5x + 2y + z",
+          "(5 + 2 + 1)(x + y + z)",
+          "A: 5x + 2y",
+          "B: x + y + z",
+          "C: 5x + 2y + z",
+          "D: (5 + 2 + 1)(x + y + z)",
+          "(5 + 2 + 1)"
+        ],
+        "es": [
+          "5x + 2y",
+          "x + y + z",
+          "5x + 2y + z",
+          "(5 + 2 + 1)(x + y + z)",
+          "x",
+          "y",
+          "z",
+          "A: 5x + 2y",
+          "B: x + y + z",
+          "C: 5x + 2y + z",
+          "D: (5 + 2 + 1)(x + y + z)",
+          "(5 + 2 + 1)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q32": {
+      "inputHash": "bd3f233e9c4e2907ecd770c54b864aa555bc7c03e1d20a7b0759e12993aa8b48",
+      "description": {
+        "en": "Question 32. The elevations, in feet, of three cities are marked on a vertical number line. The number line increases upward and decreases downward, with labeled marks at 10, 5, 0, −5, −10, −15, −20, −25, and −30. City P is marked at 10 feet, City Q at 0 feet, and City R at −20 feet. The point 0 on the number line represents sea level. Which statement must be true? Choices: A: City P and City Q are above sea level. B: City Q and City R are below sea level. C: City P is above sea level and City Q is below sea level. D: City P is above sea level and City R is below sea level.",
+        "es": "Pregunta 32. Las elevaciones, en pies, de tres ciudades están marcadas en una recta numérica vertical. Los valores aumentan hacia arriba y disminuyen hacia abajo. Las marcas, de arriba abajo, son 10, 5, 0, −5, −10, −15, −20, −25 y −30. La Ciudad P está marcada con un punto cerrado en 10, la Ciudad Q con un punto cerrado en 0 y la Ciudad R con un punto cerrado en −20. El punto 0 en la recta numérica representa el nivel del mar. ¿Qué afirmación debe ser verdadera? Opciones: A: La Ciudad P y la Ciudad Q están por encima del nivel del mar. B: La Ciudad Q y la Ciudad R están por debajo del nivel del mar. C: La Ciudad P está por encima del nivel del mar y la Ciudad Q está por debajo del nivel del mar. D: La Ciudad P está por encima del nivel del mar y la Ciudad R está por debajo del nivel del mar."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10",
+          "5",
+          "0",
+          "−5",
+          "−10",
+          "−15",
+          "−20",
+          "−25",
+          "−30",
+          "10 feet",
+          "0 feet",
+          "−20 feet",
+          "City P and City Q are above sea level",
+          "City Q and City R are below sea level",
+          "City P is above sea level and City Q is below sea level",
+          "City P is above sea level and City R is below sea level",
+          "A: City P and City Q are above sea level",
+          "B: City Q and City R are below sea level",
+          "C: City P is above sea level and City Q is below sea level",
+          "D: City P is above sea level and City R is below sea level"
+        ],
+        "es": [
+          "10",
+          "5",
+          "0",
+          "−5",
+          "−10",
+          "−15",
+          "−20",
+          "−25",
+          "−30",
+          "Ciudad P",
+          "Ciudad Q",
+          "Ciudad R",
+          "A: La Ciudad P y la Ciudad Q están por encima del nivel del mar",
+          "B: La Ciudad Q y la Ciudad R están por debajo del nivel del mar",
+          "C: La Ciudad P está por encima del nivel del mar y la Ciudad Q está por debajo del nivel del mar",
+          "D: La Ciudad P está por encima del nivel del mar y la Ciudad R está por debajo del nivel del mar"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q33": {
+      "inputHash": "7df889d4d014de5058415d66ed43483f941cab7ba524ec7337b00c25b43be764",
+      "description": {
+        "en": "Question 33. A basketball player attempts 15 baskets in a game. He makes 9 of the attempted baskets. Which ratio describes the number of baskets the player made to the number of baskets the player attempted? Choices: A: 3/5. B: 5/3. C: 2/5. D: 5/2.",
+        "es": "Pregunta 33. Un jugador de baloncesto intenta 15 canastas en un juego. Anota 9 de las canastas intentadas. ¿Qué razón describe el número de canastas que anotó el jugador con respecto al número de canastas que intentó el jugador? Opciones: A: 3/5. B: 5/3. C: 2/5. D: 5/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15",
+          "9",
+          "3/5",
+          "5/3",
+          "2/5",
+          "5/2",
+          "A: 3/5",
+          "B: 5/3",
+          "C: 2/5",
+          "D: 5/2"
+        ],
+        "es": [
+          "15",
+          "9",
+          "3/5",
+          "5/3",
+          "2/5",
+          "5/2",
+          "A: 3/5",
+          "B: 5/3",
+          "C: 2/5",
+          "D: 5/2"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q34": {
+      "inputHash": "d5c9ffff82bf6956517592004eabe3b4bf5fd169697c1248ea5dd852d27824ff",
+      "description": {
+        "en": "Question 34. Which number line shows a graph of the inequality x > −25? Each horizontal number line has arrows at both ends and labeled values −50, −25, 0, 25, and 50. Choices: A: An open circle at −25, with the bold portion extending left from −25. B: An open circle at −25, with the bold portion extending right from −25. C: An open circle at 25, with the bold portion extending left from 25. D: An open circle at 25, with the bold portion extending right from 25.",
+        "es": "Pregunta 34. ¿Qué recta numérica muestra un gráfico de la desigualdad x > −25? Opciones: A: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en −25 y el trazo grueso se extiende desde −25 hacia la izquierda, con una flecha en el extremo izquierdo. B: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en −25 y el trazo grueso se extiende desde −25 hacia la derecha, con una flecha en el extremo derecho. C: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en 25 y el trazo grueso se extiende desde 25 hacia la izquierda, con una flecha en el extremo izquierdo. D: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en 25 y el trazo grueso se extiende desde 25 hacia la derecha, con una flecha en el extremo derecho."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x > −25",
+          "−50",
+          "−25",
+          "0",
+          "25",
+          "50",
+          "A: An open circle at −25, with the bold portion extending left from −25",
+          "B: An open circle at −25, with the bold portion extending right from −25",
+          "C: An open circle at 25, with the bold portion extending left from 25",
+          "D: An open circle at 25, with the bold portion extending right from 25"
+        ],
+        "es": [
+          "x > −25",
+          "−50",
+          "−25",
+          "0",
+          "25",
+          "50",
+          "círculo abierto en −25",
+          "círculo abierto en 25",
+          "hacia la izquierda",
+          "hacia la derecha",
+          "A: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en −25 y el trazo grueso se extiende desde −25 hacia la izquierda, con una flecha en el extremo izquierdo",
+          "B: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en −25 y el trazo grueso se extiende desde −25 hacia la derecha, con una flecha en el extremo derecho",
+          "C: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en 25 y el trazo grueso se extiende desde 25 hacia la izquierda, con una flecha en el extremo izquierdo",
+          "D: Recta numérica con marcas igualmente espaciadas y etiquetas −50, −25, 0, 25 y 50. Hay un círculo abierto en 25 y el trazo grueso se extiende desde 25 hacia la derecha, con una flecha en el extremo derecho"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q35": {
+      "inputHash": "f14262e089e77c6bd6a4e4c7d025e5a4f6f9ad874aa322f25412087c49a1fb9d",
+      "description": {
+        "en": "Question 35. The coordinates of the points below represent the vertices of a rectangle. P: (2, 2); Q: (6, 2); R: (6, 5); S: (2, 5). What is the perimeter, in units, of rectangle PQRS? Choices: A: 8. B: 12. C: 14. D: 16.",
+        "es": "Pregunta 35. Las coordenadas de los siguientes puntos representan los vértices de un rectángulo: P: (2, 2), Q: (6, 2), R: (6, 5) y S: (2, 5). ¿Cuál es el perímetro, en unidades, del rectángulo PQRS? Opciones: A: 8. B: 12. C: 14. D: 16."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "P: (2, 2)",
+          "Q: (6, 2)",
+          "R: (6, 5)",
+          "S: (2, 5)",
+          "PQRS",
+          "8",
+          "12",
+          "14",
+          "16",
+          "A: 8",
+          "B: 12",
+          "C: 14",
+          "D: 16",
+          "(2, 2)",
+          "(6, 2)",
+          "(6, 5)",
+          "(2, 5)"
+        ],
+        "es": [
+          "P: (2, 2)",
+          "Q: (6, 2)",
+          "R: (6, 5)",
+          "S: (2, 5)",
+          "PQRS",
+          "8",
+          "12",
+          "14",
+          "16",
+          "A: 8",
+          "B: 12",
+          "C: 14",
+          "D: 16",
+          "(2, 2)",
+          "(6, 2)",
+          "(6, 5)",
+          "(2, 5)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q36": {
+      "inputHash": "61f66f4e29c9252f60d20ba180cde59f77cad41effaf5dad45b384713346d94a",
+      "description": {
+        "en": "Question 36. Carol has 1 5/8 cups of yogurt to make smoothies. Each smoothie uses 1/3 cup of yogurt. What is the maximum number of smoothies that Carol can make with the yogurt? Choices: A: 1. B: 4. C: 5. D: 7.",
+        "es": "Pregunta 36. Carol tiene 1 5/8 tazas de yogur para hacer batidos. Cada batido lleva 1/3 de taza de yogur. ¿Cuál es el número máximo de batidos que puede preparar Carol con el yogur? Opciones: A: 1. B: 4. C: 5. D: 7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 5/8",
+          "1/3",
+          "1",
+          "4",
+          "5",
+          "7",
+          "A: 1",
+          "B: 4",
+          "C: 5",
+          "D: 7"
+        ],
+        "es": [
+          "1 5/8",
+          "1/3",
+          "1",
+          "4",
+          "5",
+          "7",
+          "A: 1",
+          "B: 4",
+          "C: 5",
+          "D: 7"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q37": {
+      "inputHash": "bc0e0dc0745087b94b45ae3dae046f04fdeb662ebc077d22f70786cd5c52facf",
+      "description": {
+        "en": "Question 37. Which expression is equivalent to 60 − 3y − 9? Choices: A: 3(17 − y). B: 3(20 − y) − 3. C: 17(3 − y). D: 20(3 − 3y) − 9.",
+        "es": "Pregunta 37. ¿Qué expresión es equivalente a 60 − 3y − 9? Opciones: A: 3(17 − y). B: 3(20 − y) − 3. C: 17(3 − y). D: 20(3 − 3y) − 9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "60 − 3y − 9",
+          "3(17 − y)",
+          "3(20 − y) − 3",
+          "17(3 − y)",
+          "20(3 − 3y) − 9",
+          "A: 3(17 − y)",
+          "B: 3(20 − y) − 3",
+          "C: 17(3 − y)",
+          "D: 20(3 − 3y) − 9",
+          "(17 − y)",
+          "(20 − y)",
+          "(3 − y)",
+          "(3 − 3y)"
+        ],
+        "es": [
+          "60 − 3y − 9",
+          "3(17 − y)",
+          "3(20 − y) − 3",
+          "17(3 − y)",
+          "20(3 − 3y) − 9",
+          "A: 3(17 − y)",
+          "B: 3(20 − y) − 3",
+          "C: 17(3 − y)",
+          "D: 20(3 − 3y) − 9",
+          "(17 − y)",
+          "(20 − y)",
+          "(3 − y)",
+          "(3 − 3y)"
+        ]
+      }
+    },
+    "nysed-2018-g6-mc-q38": {
+      "inputHash": "092656f19472fec26c63b181cfea51ab0bd62e65ed67642779ffdce828c989c9",
+      "description": {
+        "en": "Question 38. A grocery store sells a bag of 5 lemons for $2.00. What is the unit cost of each lemon in the bag? Choices: A: $2.50. B: $0.60. C: $0.40. D: $0.10.",
+        "es": "Pregunta 38. Un almacén vende una bolsa de 5 limones por $2.00. ¿Cuál es el costo por unidad de cada limón en la bolsa? Opciones: A: $2.50. B: $0.60. C: $0.40. D: $0.10."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "$2.00",
+          "$2.50",
+          "$0.60",
+          "$0.40",
+          "$0.10",
+          "A: $2.50",
+          "B: $0.60",
+          "C: $0.40",
+          "D: $0.10"
+        ],
+        "es": [
+          "5",
+          "$2.00",
+          "$2.50",
+          "$0.60",
+          "$0.40",
+          "$0.10",
+          "A: $2.50",
+          "B: $0.60",
+          "C: $0.40",
+          "D: $0.10"
+        ]
+      }
+    }
+  }
+}

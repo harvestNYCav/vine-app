@@ -14,7 +14,7 @@
       }
     },
     "nysed-2023-g6-mc-q3": {
-      "inputHash": "99c88e16030e9abb751fb42fb68e52e208474af7ac8d5d80fa48f8951d65b7fe",
+      "inputHash": "8598b37142d27803bcfbedf2c791aab17b264585db4e9858b684823569dcfdc0",
       "explanation": {
         "text": {
           "en": "At 450 cookies per day, d days produce 450 × d cookies. Therefore the relationship is 450d = c.",
@@ -107,8 +107,8 @@
       "inputHash": "fcb51e4fbc2f21af28750d02f699143a9c803bcc5799ea6b27ca919aea00b84b",
       "explanation": {
         "text": {
-          "en": "Substitute b = 7 and c = 4: 5b + c³ = 5(7) + 4³ = 35 + 64 = 99. Thus the expression equals 99.",
-          "es": "Sustituimos b = 7 y c = 4: 5b + c³ = 5(7) + 4³ = 35 + 64 = 99. Por lo tanto, la expresión vale 99."
+        "en": "Substitute h = 7 and c = 4: 5h + c³ = 5(7) + 4³ = 35 + 64 = 99. Thus the expression equals 99.",
+        "es": "Sustituimos h = 7 y c = 4: 5h + c³ = 5(7) + 4³ = 35 + 64 = 99. Por lo tanto, la expresión vale 99."
         },
         "source": "vine-authored"
       }

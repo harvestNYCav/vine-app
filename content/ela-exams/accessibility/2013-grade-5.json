@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "ela-question-accessibility-1",
+  "examId": "nysed-ela-2013-grade-5-mc-v1",
+  "sourcePdfSha256": "656e83cc8e0d59fb17ef905519f4206a6d589e38e03d603c2ba2bb73cf48be05",
+  "questions": {
+    "nysed-ela-2013-g5-mc-q1": {
+      "inputHash": "c21bbf1d32279c037f0b15661a9614ae7aa2daa46a533cfd27989215b4757f63",
+      "alt": "Question 1. Which of the following best summarizes the main idea of the passage? Choices: A: “Researchers use wind tunnels to learn more about how an aircraft will fly.” (paragraph 1) B: “Special instruments are often used to measure the force of the air on the object.” (paragraph 2) C: “NASA engineers tested ideas for the design of Ares in wind tunnels.” (paragraph 6) D: “Long after the first design work is finished, NASA can still use wind tunnels.” (paragraph 7)"
+    },
+    "nysed-ela-2013-g5-mc-q2": {
+      "inputHash": "8b26d78998c624e97169617a1dea62e9390d94e0aa9ceb7764faf1651e292c5c",
+      "alt": "Question 2. Which key detail helps the reader understand the importance of using wind tunnels? Choices: A: Wind tunnels can move air more than 4,000 miles per hour. B: Wind tunnels are design tools that help make safer aircraft vehicles. C: Wind tunnels can create different atmospheres. D: Wind tunnels are large tubes that show how air moves."
+    },
+    "nysed-ela-2013-g5-mc-q3": {
+      "inputHash": "5ebf757edcae31a6db91befcdb1738acd615f1c97564b78b7d12fb5f8201fa6d",
+      "alt": "Question 3. The statement that “NASA also works with others that need to use wind tunnels” most strongly suggests that Choices: A: many different groups are developing space shuttles B: NASA hopes to buy vehicles made by other agencies C: NASA has the largest wind tunnels in existence D: many companies do not have their own wind tunnels"
+    },
+    "nysed-ela-2013-g5-mc-q4": {
+      "inputHash": "502b4e17be94905d63539d0292a0f79498e0057a59286e9f9a649552bfb541c7",
+      "alt": "Question 4. The most important feature of a wind tunnel used to test vehicles that can land on Mars is the ability to test how Choices: A: gravity affects vehicles B: a thin atmosphere affects vehicles C: high-speed winds affect vehicles D: freezing temperatures affect vehicles"
+    },
+    "nysed-ela-2013-g5-mc-q5": {
+      "inputHash": "59e8d0aa6ff8018e64043aedac7e15bb2903748f1a6ba44132f1f188e9505004",
+      "alt": "Question 5. Which sentence from the passage best explains why NASA uses wind tunnels to test spacecraft models? Choices: A: “These vehicles are made to operate in space.” (paragraph 5) B: “Spacecraft and rockets have to travel through the atmosphere to get to space.” (paragraph 5) C: “They needed to know what would happen to different designs when the spacecraft came back through the atmosphere.” (paragraph 6) D: “Some are only a few inches square, and some are large enough to test a full-size airplane.” (paragraph 9)"
+    },
+    "nysed-ela-2013-g5-mc-q6": {
+      "inputHash": "ca2b4c27d10b6ae193794fc1c4841936cb43abaf49c4a9a5690435b0851e2364",
+      "alt": "Question 6. Which sentence from the passage best explains how a wind tunnel works? Choices: A: “NASA uses wind tunnels to test scale models of aircraft and spacecraft.” (paragraph 1) B: “The object to be tested is fastened in the tunnel so that it will not move.” (paragraph 2) C: “The air moving around the still object shows what would happen if the object were moving through the air.” (paragraph 2) D: “Smoke or dye can be placed in the air and can be seen as it moves.” (paragraph 2)"
+    }
+  }
+}

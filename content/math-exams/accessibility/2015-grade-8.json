@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2015-grade-8-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2015-g8-mc-q2": {
+      "inputHash": "b7b3e1a9d214cfa3a8021b9abe0ff6a88a33ed4e6247e4d8ed16bdde333780f0",
+      "description": {
+        "en": "Question 2. The speed of light in a vacuum is 299,792,458 meters per second. Which number, written in scientific notation, is the best approximation of the speed of light? Choices: A: 0.3 × 10⁷ meters per second B: 0.3 × 10⁸ meters per second C: 3.0 × 10⁷ meters per second D: 3.0 × 10⁸ meters per second"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "299,792,458",
+          "0.3 × 10⁷",
+          "0.3 × 10⁸",
+          "3.0 × 10⁷",
+          "3.0 × 10⁸",
+          "A: 0.3 × 10⁷ meters per second",
+          "B: 0.3 × 10⁸ meters per second",
+          "C: 3.0 × 10⁷ meters per second",
+          "D: 3.0 × 10⁸ meters per second",
+          "10⁷",
+          "10⁸"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q5": {
+      "inputHash": "2468ef35718f5fc437918476536576b6f9c51acb1d0356a8604a05c59b24bf4c",
+      "description": {
+        "en": "Question 5. The graph of a system of linear equations is given on a coordinate plane. Both axes extend from −12 to 12, with grid lines every 2 units. One line rises from lower left to upper right, passing through (−6, 0), (0, 4), and (12, 12), with arrows at both ends. The other line falls steeply from upper left to lower right, passing through (−8, 12), (−2, 0), and (4, −12), with arrows at both ends. The two lines intersect at approximately (−3, 2). Which ordered pair is the best estimate for the solution of this system of linear equations? Choices: A: (−6, −2) B: (−3, 2) C: (4, −4) D: (6, 8)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−12",
+          "12",
+          "2",
+          "(−6, 0)",
+          "(0, 4)",
+          "(12, 12)",
+          "(−8, 12)",
+          "(−2, 0)",
+          "(4, −12)",
+          "(−3, 2)",
+          "(−6, −2)",
+          "(4, −4)",
+          "(6, 8)",
+          "A: (−6, −2)",
+          "B: (−3, 2)",
+          "C: (4, −4)",
+          "D: (6, 8)"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q6": {
+      "inputHash": "4fc4f84a9c59637675e31072afea349b0f9b54ee2f46795291008c80edfedd03",
+      "description": {
+        "en": "Question 6. Which equation does not represent a linear function? Choices: A: y = 2(x − 3) B: y = 2² − 3x C: y = (x + 1)/5 D: y = 2x² + 3x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 2(x − 3)",
+          "y = 2² − 3x",
+          "y = (x + 1)/5",
+          "y = 2x² + 3x",
+          "A: y = 2(x − 3)",
+          "B: y = 2² − 3x",
+          "C: y = (x + 1)/5",
+          "D: y = 2x² + 3x",
+          "(x − 3)",
+          "2²",
+          "(x + 1)"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q9": {
+      "inputHash": "369571f58bbac0be2e1588900269560a8a596bc4444392e4434bc01d1f863619",
+      "description": {
+        "en": "Question 9. The graph of a function is given on a coordinate plane with grid lines every 1 unit. From the lower left, a straight ray with an arrow rises through approximately (−4, −2) and (−2, 4). From (−2, 4), a curved segment decreases nonlinearly to (0, 0). From (0, 0), another curved segment increases nonlinearly to (2, 8). From (2, 8), a straight ray with an arrow decreases through approximately (4, 1) and continues toward the lower right. For which interval of x is the function decreasing and nonlinear? Choices: A: between −4 and −2 B: between −2 and 0 C: between 0 and 2 D: between 2 and 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1",
+          "(−4, −2)",
+          "(−2, 4)",
+          "(0, 0)",
+          "(2, 8)",
+          "(4, 1)",
+          "between −4 and −2",
+          "between −2 and 0",
+          "between 0 and 2",
+          "between 2 and 4",
+          "A: between −4 and −2",
+          "B: between −2 and 0",
+          "C: between 0 and 2",
+          "D: between 2 and 4"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q12": {
+      "inputHash": "be6ee90db13a3ce78486efa33189004f52ee0bf8f82247ef5557d1afcca35881",
+      "description": {
+        "en": "Question 12. Jenny wants to rent a truck for one day. She contacted two companies. Laguna’s Truck Rentals charges $20 plus $2 per mile. Salvatori’s Truck Rentals charges $3 per mile. After how many miles will the total cost for both companies be the same? Choices: A: 4 B: 6 C: 20 D: 60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$20",
+          "$2",
+          "$3",
+          "4",
+          "6",
+          "20",
+          "60",
+          "A: 4",
+          "B: 6",
+          "C: 20",
+          "D: 60"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q15": {
+      "inputHash": "b92ef0f96dee8c1544e9ae669cef393aedd5e635fcc521befe50b4da24e74f88",
+      "description": {
+        "en": "Question 15. What is the value of n in the diagram below? A horizontal line and a vertical line intersect at right angles, as indicated by a right-angle marker in the upper-left quadrant. A diagonal line also passes through their intersection, extending from the lower left to the upper right with arrows at both ends. The acute angle between the upward vertical ray and the upper-right diagonal ray is labeled (n + 18)°. The acute angle between the leftward horizontal ray and the lower-left diagonal ray is labeled (2n)°. The diagram is not drawn to scale. Choices: A: 18 B: 24 C: 42 D: 48"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(n + 18)°",
+          "(2n)°",
+          "18",
+          "24",
+          "42",
+          "48",
+          "A: 18",
+          "B: 24",
+          "C: 42",
+          "D: 48",
+          "(n + 18)",
+          "(2n)"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q16": {
+      "inputHash": "83e75ced866b45da0d5e0e5c2e8dd1d18bf3bbd916013cb5f6892ce68333bfa9",
+      "description": {
+        "en": "Question 16. The cost to rent a paddleboat at the city park includes an initial fee of $7.00, plus $3.50 per hour. Which equation models the relationship between the total cost, y, and the number of hours, x, that the paddleboat is rented? Choices: A: y = 3.5x + 7 B: y = 7x + 3.5 C: y = x/7 + 3.5 D: y = x/3.5 + 7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$7.00",
+          "$3.50",
+          "y = 3.5x + 7",
+          "y = 7x + 3.5",
+          "y = x/7 + 3.5",
+          "y = x/3.5 + 7",
+          "A: y = 3.5x + 7",
+          "B: y = 7x + 3.5",
+          "C: y = x/7 + 3.5",
+          "D: y = x/3.5 + 7"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q20": {
+      "inputHash": "140710afe39b30c5903c58890871f5b5c403d2c9444ad5052d06b77d375e3a82",
+      "description": {
+        "en": "Question 20. The scatter plot shows the numbers of customers in a restaurant for four hours of the dinner service on two different Saturday nights. The line shown models this relationship, and x = 0 represents 7 p.m. The graph is titled “RESTAURANT CUSTOMERS.” The horizontal axis is labeled “Time (hours)” and runs from 0 to 4 in increments of 1. The vertical axis is labeled “Number of Customers” and is marked from 0 to 60 in increments of 10. The plotted points are (0, 55), (0, 45), (1, 50), (1, 30), (2, 40), (2, 30), (3, 25), (3, 10), (4, 10), and (4, 5). The decreasing model line passes through (0, 50) and (4, 10). What does the value of the y-intercept represent? Choices: A: the average number of customers at 7 p.m. B: the average number of customers at 11 p.m. C: the average change in the number of customers each hour D: the average change in the number of customers during four hours of the dinner service"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x = 0",
+          "7 p.m",
+          "0",
+          "4",
+          "1",
+          "60",
+          "10",
+          "(0, 55)",
+          "(0, 45)",
+          "(1, 50)",
+          "(1, 30)",
+          "(2, 40)",
+          "(2, 30)",
+          "(3, 25)",
+          "(3, 10)",
+          "(4, 10)",
+          "(4, 5)",
+          "(0, 50)",
+          "11 p.m",
+          "A: the average number of customers at 7 p.m",
+          "B: the average number of customers at 11 p.m",
+          "C: the average change in the number of customers each hour",
+          "D: the average change in the number of customers during four hours of the dinner service"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q25": {
+      "inputHash": "a327a4c80153319ef012f9a9d5a4dbda7e70d0f3a9827795dbe86ac971138507",
+      "description": {
+        "en": "Question 25. Triangle M is similar to triangle N. Triangle M has two angles with measures of 32° and 93°. Which two angle measures could be included in triangle N? Choices: A: 32° and 58°. B: 32° and 74°. C: 93° and 55°. D: 93° and 87°."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "32°",
+          "93°",
+          "58°",
+          "74°",
+          "55°",
+          "87°",
+          "A: 32° and 58°",
+          "B: 32° and 74°",
+          "C: 93° and 55°",
+          "D: 93° and 87°"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q26": {
+      "inputHash": "6bdf34bbdfcbaa7303f89dd7ed55db19540a16274dd25de4edd94e453612d121",
+      "description": {
+        "en": "Question 26. Figure X and figure Y are drawn on a coordinate grid with unit spacing. Figure X is a pentagon with vertices, in order, at (−4, 4), (−2, 4), (−2, 2), (−3, 2), and (−4, 1), followed by a return to (−4, 4). Figure Y is a pentagon with vertices, in the corresponding order, at (1, −1), (3, −1), (3, −3), (2, −3), and (1, −4), followed by a return to (1, −1). Which statement about figures X and Y must be true? Choices: A: A series of translations will transform figure X to figure Y, and the figures will be congruent. B: A 180° clockwise rotation will transform figure X to figure Y, and the figures will be congruent. C: A series of translations will transform figure X to figure Y, but the figures will not be congruent. D: A 180° clockwise rotation will transform figure X to figure Y, but the figures will not be congruent."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−4, 4)",
+          "(−2, 4)",
+          "(−2, 2)",
+          "(−3, 2)",
+          "(−4, 1)",
+          "(1, −1)",
+          "(3, −1)",
+          "(3, −3)",
+          "(2, −3)",
+          "(1, −4)",
+          "180°",
+          "A: A series of translations will transform figure X to figure Y, and the figures will be congruent",
+          "B: A 180° clockwise rotation will transform figure X to figure Y, and the figures will be congruent",
+          "C: A series of translations will transform figure X to figure Y, but the figures will not be congruent",
+          "D: A 180° clockwise rotation will transform figure X to figure Y, but the figures will not be congruent"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q27": {
+      "inputHash": "7d5624637dd7a2ad2307a74813cc31b06ddc2a716125e475d35830c58cd7cacc",
+      "description": {
+        "en": "Question 27. Which exponential expression is equal to 2⁻⁵ • 2⁸? Choices: A: 2²/2⁻¹. B: (2³)⁻¹. C: 2⁻²/2⁻¹. D: (2⁻¹)³."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2⁻⁵ • 2⁸",
+          "2²/2⁻¹",
+          "(2³)⁻¹",
+          "2⁻²/2⁻¹",
+          "(2⁻¹)³",
+          "A: 2²/2⁻¹",
+          "B: (2³)⁻¹",
+          "C: 2⁻²/2⁻¹",
+          "D: (2⁻¹)³",
+          "2⁻⁵",
+          "2⁸",
+          "2²",
+          "2⁻¹",
+          "(2³)",
+          "2⁻²",
+          "(2⁻¹)"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q29": {
+      "inputHash": "b35fe1551ca8401f3f2ebef1509f43d65d1527b08444e2134229760c5b405e73",
+      "description": {
+        "en": "Question 29. During an experiment, the temperature of a substance increased at a constant rate of three degrees Celsius (°C) per hour. Which graph represents this relationship? Each choice is a graph titled “SUBSTANCE TEMPERATURE,” with Time (hours) on the horizontal axis and Temperature (°C) on the vertical axis. Time is marked in 1-hour intervals, and temperature is marked in 1°C intervals beginning at 20°C. Choices: A: An increasing straight ray starts at (0, 20) and passes through (3, 21). B: An increasing straight ray starts at (0, 20) and passes through (1, 21), (2, 22), (3, 23), and (4, 24). C: An increasing straight ray starts at (0, 20) and passes through (1, 22), (2, 24), and (3, 26). D: An increasing straight ray starts at (0, 20) and passes through (1, 23) and (2, 26). Calculators are allowed."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "°C",
+          "1°C",
+          "20°C",
+          "(0, 20)",
+          "(3, 21)",
+          "(1, 21)",
+          "(2, 22)",
+          "(3, 23)",
+          "(4, 24)",
+          "(1, 22)",
+          "(2, 24)",
+          "(3, 26)",
+          "(1, 23)",
+          "(2, 26)",
+          "A: An increasing straight ray starts at (0, 20) and passes through (3, 21)",
+          "B: An increasing straight ray starts at (0, 20) and passes through (1, 21), (2, 22), (3, 23), and (4, 24)",
+          "C: An increasing straight ray starts at (0, 20) and passes through (1, 22), (2, 24), and (3, 26)",
+          "D: An increasing straight ray starts at (0, 20) and passes through (1, 23) and (2, 26). Calculators are allowed"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q30": {
+      "inputHash": "91e08a5b0ecd05c41b8238a0fac0c9ecd063f4b1e7e570d0e3072766437c0220",
+      "description": {
+        "en": "Question 30. A cone has a radius of 1.2 inches and a height of 2.9 inches. What is the volume, to the nearest tenth of a cubic inch, of the cone? Calculators are allowed. Choices: A: 3.6. B: 4.4. C: 10.6. D: 13.1."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1.2 inches",
+          "2.9 inches",
+          "3.6",
+          "4.4",
+          "10.6",
+          "13.1",
+          "A: 3.6",
+          "B: 4.4",
+          "C: 10.6",
+          "D: 13.1"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q35": {
+      "inputHash": "36bfc2b907b2939476fb03eea738806eb7bc9e916bbbd65797ea5d56f8b34c50",
+      "description": {
+        "en": "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Calculators are allowed. Choices: A: y = 2x − 6. B: y = 3/4x − 1. C: y = 1/4x + 1. D: y = 4/3x − 10/3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4, 2)",
+          "(0, −1)",
+          "y = 2x − 6",
+          "y = 3/4x − 1",
+          "y = 1/4x + 1",
+          "y = 4/3x − 10/3",
+          "A: y = 2x − 6",
+          "B: y = 3/4x − 1",
+          "C: y = 1/4x + 1",
+          "D: y = 4/3x − 10/3",
+          "3/4",
+          "1/4",
+          "4/3",
+          "10/3"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q36": {
+      "inputHash": "da4eafe95990a7f6b31302574c533755ecac594da5cb6fd4a0926d5215a5338b",
+      "description": {
+        "en": "Question 36. A system of equations is given: 5x + 3y = −6 and 2x + y = −4. Which statement about the ordered pair (−6, 8) is true? Calculators are allowed. Choices: A: It is the only solution to the system. B: It is not a solution to either equation. C: It is one of many solutions to the system. D: It is a solution to the first but not the second equation."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5x + 3y = −6",
+          "2x + y = −4",
+          "(−6, 8)",
+          "A: It is the only solution to the system",
+          "B: It is not a solution to either equation",
+          "C: It is one of many solutions to the system",
+          "D: It is a solution to the first but not the second equation"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q38": {
+      "inputHash": "9b3814167291b90b4ee51b33985e08eb150508cf6eb5de883e375947cb8a8853",
+      "description": {
+        "en": "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Calculators are allowed. Choices: A: y = 5/2x − 2. B: y = 7/2x − 2. C: y = 2x − 2. D: y = 6x − 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4, 12)",
+          "−2",
+          "y = 5/2x − 2",
+          "y = 7/2x − 2",
+          "y = 2x − 2",
+          "y = 6x − 2",
+          "A: y = 5/2x − 2",
+          "B: y = 7/2x − 2",
+          "C: y = 2x − 2",
+          "D: y = 6x − 2",
+          "5/2",
+          "7/2"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q42": {
+      "inputHash": "28de2c3c84e172762b8b85eba677f2e62114d4c796c258ca88ec064fe5e49ac7",
+      "description": {
+        "en": "Question 42. A solid object was sliced to form two new objects. Each of the two new objects had a circular base. Which shape could not have been the original object? Choices: A: cone. B: cylinder. C: prism. D: sphere."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "circular base",
+          "cone",
+          "cylinder",
+          "prism",
+          "sphere",
+          "A: cone",
+          "B: cylinder",
+          "C: prism",
+          "D: sphere"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q45": {
+      "inputHash": "9763702e553ec8988b59e0125c6e5d858aed78e5437c483c099adcafffce9628",
+      "description": {
+        "en": "Question 45. Function 1 is defined by the equation y = (3/4)x + 1, and function 2 is represented by a coordinate graph. The graph has x- and y-axes marked in increments of 2 from −10 to 10, with the square grid extending from −12 to 12 on each axis. Function 2 is an increasing straight line with arrows at both ends. It crosses the y-axis at (0, −3) and crosses the x-axis between 4 and 6, at approximately (5.1, 0). Which statement about the functions is true? Choices: A: Function 1 has the greater rate of change and the greater y-intercept. B: Function 2 has the greater rate of change and the greater y-intercept. C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept. D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = (3/4)x + 1",
+          "−10",
+          "10",
+          "−12",
+          "12",
+          "(0, −3)",
+          "crosses the y-axis at (0, −3)",
+          "crosses the x-axis between 4 and 6, at approximately (5.1, 0)",
+          "Function 1",
+          "Function 2",
+          "A: Function 1 has the greater rate of change and the greater y-intercept",
+          "B: Function 2 has the greater rate of change and the greater y-intercept",
+          "C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept",
+          "D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept",
+          "(3/4)"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q46": {
+      "inputHash": "c5060a91f7185c20673817bc740b82650ac801e78354f623ce49e9d451b437b4",
+      "description": {
+        "en": "Question 46. A cylinder has a diameter of 14 centimeters and a volume of 112π cubic centimeters. What is the height, in centimeters, of the cylinder? Choices: A: 16. B: 4. C: 16/7. D: 4/7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "14 centimeters",
+          "112π cubic centimeters",
+          "16",
+          "4",
+          "16/7",
+          "4/7",
+          "A: 16",
+          "B: 4",
+          "C: 16/7",
+          "D: 4/7"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q47": {
+      "inputHash": "7cf6651ff85ff7aca978148eaf211ca15854704984bb651a1ed8c8a99b9d8a37",
+      "description": {
+        "en": "Question 47. Figure L and figure M are shown on a coordinate grid with x- and y-axes marked in units of 1 from −5 to 5. Figure L is a rectangle in the third quadrant with vertices (−5, −2), (−1, −2), (−1, −5), and (−5, −5); it is 4 units wide and 3 units high. Figure M is a square in the first quadrant with vertices (2, 2), (5, 2), (5, 5), and (2, 5); it is 3 units wide and 3 units high. Maria wants to transform figure L to figure M using only rotations, reflections, and translations. Which statement is true? Choices: A: The transformation can be done with a reflection followed by a rotation. B: The transformation can be done with a reflection followed by a translation. C: The transformation cannot be done because figure L is not congruent to figure M. D: The transformation cannot be done because figures L and M are in different quadrants."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−5",
+          "5",
+          "(−5, −2)",
+          "(−1, −2)",
+          "(−1, −5)",
+          "(−5, −5)",
+          "4 units wide",
+          "3 units high",
+          "(2, 2)",
+          "(5, 2)",
+          "(5, 5)",
+          "(2, 5)",
+          "reflection",
+          "rotation",
+          "translation",
+          "not congruent",
+          "A: The transformation can be done with a reflection followed by a rotation",
+          "B: The transformation can be done with a reflection followed by a translation",
+          "C: The transformation cannot be done because figure L is not congruent to figure M",
+          "D: The transformation cannot be done because figures L and M are in different quadrants"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q49": {
+      "inputHash": "124542b9a8f92a21bb4c23abe84d681ee89ec5844ef47444d32e10687a8746a9",
+      "description": {
+        "en": "Question 49. Which statement explains why the point (−2, 2) is the solution to the system of linear equations graphed on a coordinate plane? The x- and y-axes are marked in increments of 2 from −10 to 10, and the square grid extends from −12 to 12 on each axis. Two straight lines with arrows at both ends intersect at (−2, 2). The increasing line crosses the x-axis at (−4, 0) and the y-axis at (0, 4). The decreasing line crosses the y-axis at (0, −4) and passes through approximately (−5.33, 12) and (2.67, −12). Choices: A: It lies on the graph of only one of the equations. B: It lies in the second quadrant of the coordinate plane. C: It is the only point that satisfies both equations simultaneously. D: It is one of many points that satisfies both equations simultaneously."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−2, 2)",
+          "−10",
+          "10",
+          "−12",
+          "12",
+          "(−4, 0)",
+          "(0, 4)",
+          "(0, −4)",
+          "(−5.33, 12)",
+          "(2.67, −12)",
+          "only one",
+          "only point",
+          "one of many points",
+          "A: It lies on the graph of only one of the equations",
+          "B: It lies in the second quadrant of the coordinate plane",
+          "C: It is the only point that satisfies both equations simultaneously",
+          "D: It is one of many points that satisfies both equations simultaneously"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q53": {
+      "inputHash": "c259810c300fbd48ada7015618a5f25d18076c703e3acb7077c860f95f173422",
+      "description": {
+        "en": "Question 53. The winning time for the men’s 400-meter race in each of the Olympic Games from 1976 to 1996 can be modeled by the equation y = −0.054x + 44.54, where x is the number of years after 1976 and y is the winning time in seconds. If the relationship continues, which equation could be used to predict the winning time in the year 2020? Choices: A: y = −0.054(1976) + 44.54. B: y = −0.054(2020) + 44.54. C: y = −0.054(24) + 44.54. D: y = −0.054(44) + 44.54."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "400-meter",
+          "1976",
+          "1996",
+          "y = −0.054x + 44.54",
+          "2020",
+          "y = −0.054(1976) + 44.54",
+          "y = −0.054(2020) + 44.54",
+          "y = −0.054(24) + 44.54",
+          "y = −0.054(44) + 44.54",
+          "A: y = −0.054(1976) + 44.54",
+          "B: y = −0.054(2020) + 44.54",
+          "C: y = −0.054(24) + 44.54",
+          "D: y = −0.054(44) + 44.54",
+          "(1976)",
+          "(2020)",
+          "(24)",
+          "(44)"
+        ]
+      }
+    },
+    "nysed-2015-g8-mc-q54": {
+      "inputHash": "c390f098b79fadf866ef4100db4e2e27db211b28500c9549a1ab89390e0be4a7",
+      "description": {
+        "en": "Question 54. An above-ground swimming pool in the shape of a cylinder has a diameter of 18 feet and a height of 4.5 feet. If the pool is filled with water to 6 inches from the top of the pool, what is the volume, to the nearest cubic foot, of the water in the pool? Choices: A: 226. B: 452. C: 1,018. D: 4,072."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "18 feet",
+          "4.5 feet",
+          "6 inches",
+          "nearest cubic foot",
+          "226",
+          "452",
+          "1,018",
+          "4,072",
+          "A: 226",
+          "B: 452",
+          "C: 1,018",
+          "D: 4,072"
+        ]
+      }
+    }
+  }
+}

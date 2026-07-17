@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2014-grade-8-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2014-g8-mc-q1": {
+      "inputHash": "638b66e0612f1d14b0c417538fa119b0a22bb2daa7c63ca6d372e985dd0d4c63",
+      "description": {
+        "en": "Question 1. Which number is equivalent to 3⁴/3²? Choices: A: 2. B: 9. C: 81. D: 729."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3⁴/3²",
+          "2",
+          "9",
+          "81",
+          "729",
+          "A: 2",
+          "B: 9",
+          "C: 81",
+          "D: 729",
+          "3⁴",
+          "3²"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q2": {
+      "inputHash": "b20c411726c85466c857c47a057f0df9eb4a2fa83dc55ac8674cce67dc495f5e",
+      "description": {
+        "en": "Question 2. A sequence of transformations was applied to an equilateral triangle in a coordinate plane. The transformations used were rotations, reflections, and translations. Which statement about the resulting figure is true? Choices: A: It must be an equilateral triangle with the same side lengths as the original triangle. B: It must be an equilateral triangle, but the side lengths may differ from the original triangle. C: It may be a scalene triangle, and all the side lengths may differ from the original triangle. D: It may be an obtuse triangle with at least one side the same length as the original triangle."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "rotations",
+          "reflections",
+          "translations",
+          "equilateral triangle",
+          "same side lengths",
+          "scalene triangle",
+          "obtuse triangle",
+          "A: It must be an equilateral triangle with the same side lengths as the original triangle",
+          "B: It must be an equilateral triangle, but the side lengths may differ from the original triangle",
+          "C: It may be a scalene triangle, and all the side lengths may differ from the original triangle",
+          "D: It may be an obtuse triangle with at least one side the same length as the original triangle"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q3": {
+      "inputHash": "866273047eb8c69c62af77656f44aae4c405e9ad16def6bf8e28a7310af4554b",
+      "description": {
+        "en": "Question 3. Figure Q was the result of a sequence of transformations on figure P. A coordinate plane has unit grid lines, with x increasing to the right and y increasing upward. Figure P has a horizontal segment from (−5, 0) to (−2, 0), vertical segments from (−5, 0) to (−5, 3) and from (−2, 0) to (−2, 3), and a concave-up curved arc connecting (−5, 3) to (−2, 3), with its lowest point halfway between them at approximately (−3.5, 1.5). Figure Q has a horizontal segment from (2, 0) to (5, 0), vertical segments from (2, 0) to (2, −3) and from (5, 0) to (5, −3), and a concave-down curved arc connecting (2, −3) to (5, −3), with its highest point halfway between them at approximately (3.5, −1.5). Which sequence of transformations could take figure P to figure Q? Choices: A: reflection over the x-axis and translation 7 units right. B: reflection over the y-axis and translation 3 units down. C: translation 1 unit right and 180° rotation about the origin. D: translation 4 units right and 180° rotation about the origin."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−5, 0)",
+          "(−2, 0)",
+          "(−5, 3)",
+          "(−2, 3)",
+          "(−3.5, 1.5)",
+          "(2, 0)",
+          "(5, 0)",
+          "(2, −3)",
+          "(5, −3)",
+          "(3.5, −1.5)",
+          "x-axis",
+          "7 units right",
+          "y-axis",
+          "3 units down",
+          "1 unit right",
+          "180°",
+          "4 units right",
+          "A: reflection over the x-axis and translation 7 units right",
+          "B: reflection over the y-axis and translation 3 units down",
+          "C: translation 1 unit right and 180° rotation about the origin",
+          "D: translation 4 units right and 180° rotation about the origin"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q4": {
+      "inputHash": "eba4ca0e209732b2afb46dbea29fd925cd193048c277b2ad426da350deb3ac78",
+      "description": {
+        "en": "Question 4. Determine the product: 800.5 × (2 × 10⁶). Choices: A: 1.7 × 10⁷. B: 1.601 × 10⁷. C: 1.7 × 10⁹. D: 1.601 × 10⁹."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "800.5 × (2 × 10⁶)",
+          "1.7 × 10⁷",
+          "1.601 × 10⁷",
+          "1.7 × 10⁹",
+          "1.601 × 10⁹",
+          "A: 1.7 × 10⁷",
+          "B: 1.601 × 10⁷",
+          "C: 1.7 × 10⁹",
+          "D: 1.601 × 10⁹",
+          "(2 × 10⁶)",
+          "10⁷",
+          "10⁹"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q5": {
+      "inputHash": "dd98e61bfe1f68949da146e2d449cb110db23e31b054fac0142123d4bd830df2",
+      "description": {
+        "en": "Question 5. Which line represents the best fit for the scatter plot data? Each choice repeats the same scatter plot on a coordinate grid from 0 to 10 on both axes. The plotted points are (1, 3), (2, 3), (2, 4), (3, 5), (4, 5), (4, 6), (5, 6), (7, 7), (7, 8), (8, 7), (8, 9), and (9, 8). Choices: A: An upward-sloping line runs through approximately (0, 2) and (10, 9), passing through the middle of the point cluster with points distributed on both sides. B: A horizontal line at y = 6. C: A downward-sloping line running from near (1, 9.5) to near (9.5, 2). D: An upward-sloping line running from near (0, 3.5) to near (8.5, 9.7), lying above most of the points."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 10",
+          "(1, 3)",
+          "(2, 3)",
+          "(2, 4)",
+          "(3, 5)",
+          "(4, 5)",
+          "(4, 6)",
+          "(5, 6)",
+          "(7, 7)",
+          "(7, 8)",
+          "(8, 7)",
+          "(8, 9)",
+          "(9, 8)",
+          "(0, 2)",
+          "(10, 9)",
+          "y = 6",
+          "(1, 9.5)",
+          "(9.5, 2)",
+          "(0, 3.5)",
+          "(8.5, 9.7)",
+          "A: An upward-sloping line runs through approximately (0, 2) and (10, 9), passing through the middle of the point cluster with points distributed on both sides",
+          "B: A horizontal line at y = 6",
+          "C: A downward-sloping line running from near (1, 9.5) to near (9.5, 2)",
+          "D: An upward-sloping line running from near (0, 3.5) to near (8.5, 9.7), lying above most of the points"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q6": {
+      "inputHash": "2b8124aab6a2eb89bf4bf08dc360e4548b9bcd22dab4345d33d70a153bea7a41",
+      "description": {
+        "en": "Question 6. At a given time, Saturn was 9.1 × 10⁸ miles from the Sun, and Earth was 9.3 × 10⁷ miles from the Sun. By what distance is one planet closer to the Sun than the other planet? Choices: A: 2 × 10¹. B: 2 × 10¹⁵. C: 8.17 × 10⁷. D: 8.17 × 10⁸."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9.1 × 10⁸",
+          "9.3 × 10⁷",
+          "miles",
+          "2 × 10¹",
+          "2 × 10¹⁵",
+          "8.17 × 10⁷",
+          "8.17 × 10⁸",
+          "A: 2 × 10¹",
+          "B: 2 × 10¹⁵",
+          "C: 8.17 × 10⁷",
+          "D: 8.17 × 10⁸",
+          "10⁸",
+          "10⁷",
+          "10¹",
+          "10¹⁵"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q7": {
+      "inputHash": "624808e87b1bdc19db99f350a8fe42799a720fcf8c2c772f1c2f04270a7fd1b4",
+      "description": {
+        "en": "Question 7. The combined volume of all the tanks at an aquarium is 1.25 × 10⁶ gallons. The aquarium plans to install a new dolphin tank with a volume of 250,000 gallons. What will be the total volume of all of the tanks at the aquarium after the new dolphin tank is installed? Choices: A: 1.5 × 10⁵. B: 3.75 × 10⁵. C: 1.5 × 10⁶. D: 3.75 × 10⁶."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1.25 × 10⁶",
+          "250,000",
+          "gallons",
+          "1.5 × 10⁵",
+          "3.75 × 10⁵",
+          "1.5 × 10⁶",
+          "3.75 × 10⁶",
+          "A: 1.5 × 10⁵",
+          "B: 3.75 × 10⁵",
+          "C: 1.5 × 10⁶",
+          "D: 3.75 × 10⁶",
+          "10⁶",
+          "10⁵"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q8": {
+      "inputHash": "cca86450c3ad26e65b69fd0d9922ccc3bf95ff1eaa7a7d7d43fa5918b072da76",
+      "description": {
+        "en": "Question 8. Rectangle R undergoes a dilation with scale factor 0.5 and then a reflection over the y-axis. The resulting image is Rectangle S. Which statement about Rectangles R and S is true? Choices: A: They are congruent and similar. B: They are similar but not congruent. C: They are congruent but not similar. D: They are neither congruent nor similar."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.5",
+          "y-axis",
+          "Rectangle R",
+          "Rectangle S",
+          "congruent and similar",
+          "similar but not congruent",
+          "congruent but not similar",
+          "neither congruent nor similar",
+          "A: They are congruent and similar",
+          "B: They are similar but not congruent",
+          "C: They are congruent but not similar",
+          "D: They are neither congruent nor similar"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q9": {
+      "inputHash": "08b9efe077baa9c7cdbdfb8472f275ef9b1d2e6bcfd4975c3f477b6095c5ac3d",
+      "description": {
+        "en": "Question 9. The table below shows the cost of different numbers of goldfish at a pet store. A table titled “COST OF GOLDFISH” has columns “Number of Goldfish” and “Cost.” Its rows are: 5, $1.50; 10, $3.00; 15, $4.50; and 20, $6.00. The cost is a linear function of the number of goldfish. Which statement describes the rate of change of this function? Choices: A: The cost increases $0.30 each time 1 goldfish is added. B: The cost increases $1.50 each time 1 goldfish is added. C: The cost increases $3.00 each time 5 goldfish are added. D: The cost increases $6.00 each time 5 goldfish are added."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5, $1.50",
+          "10, $3.00",
+          "15, $4.50",
+          "20, $6.00",
+          "$0.30",
+          "$1.50",
+          "$3.00",
+          "$6.00",
+          "A: The cost increases $0.30 each time 1 goldfish is added",
+          "B: The cost increases $1.50 each time 1 goldfish is added",
+          "C: The cost increases $3.00 each time 5 goldfish are added",
+          "D: The cost increases $6.00 each time 5 goldfish are added"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q10": {
+      "inputHash": "4f088832696709506a8a437cf57d5f226652fa2056735a409e37de5852836883",
+      "description": {
+        "en": "Question 10. The population growth of two towns over a period of five years is represented by the system of equations below, both algebraically and graphically: y = x + 6 and y = 2x + 2. A coordinate graph titled “Population Growth” has a horizontal x-axis labeled “Year” and a vertical y-axis labeled “Population (thousands).” The x-axis is numbered from 0 through 5 in increments of 1, and the y-axis is numbered from 1 through 12 in increments of 1. The line y = x + 6 crosses the y-axis at (0, 6), rises one unit for each unit to the right, passes through (4, 10), and continues upward to the right with an arrow. The line y = 2x + 2 crosses the y-axis at (0, 2), rises two units for each unit to the right, passes through (4, 10), and continues upward to the right with an arrow. Which ordered pair is the solution to the system of equations? Choices: A: (2, 6) B: (4, 10) C: (6, 2) D: (10, 4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = x + 6",
+          "y = 2x + 2",
+          "(0, 6)",
+          "(4, 10)",
+          "(0, 2)",
+          "(2, 6)",
+          "(6, 2)",
+          "(10, 4)",
+          "A: (2, 6)",
+          "B: (4, 10)",
+          "C: (6, 2)",
+          "D: (10, 4)"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q11": {
+      "inputHash": "b3d372cc861b2f59728eeed89534f1c19ae38eef7bd0c531e67ad2250d2eaf18",
+      "description": {
+        "en": "Question 11. The four tables below show relationships in which the x-values represent inputs and the y-values represent the corresponding outputs. Table Q has columns x and y and contains the ordered pairs (−2, −3), (1, 3), (3, −3), and (5, 3). Table R contains (−1, −5), (2, 4), (3, 7), and (4, 10). Table S contains (−2, 3), (1, 3), (3, 3), and (5, 3). Table T contains (3, 4), (4, 5), (3, −4), and (4, −5). Which table represents a relationship that is not a function? Choices: A: Q B: R C: S D: T"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−2, −3)",
+          "(1, 3)",
+          "(3, −3)",
+          "(5, 3)",
+          "(−1, −5)",
+          "(2, 4)",
+          "(3, 7)",
+          "(4, 10)",
+          "(−2, 3)",
+          "(3, 3)",
+          "(3, 4)",
+          "(4, 5)",
+          "(3, −4)",
+          "(4, −5)",
+          "A: Q",
+          "B: R",
+          "C: S",
+          "D: T"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q12": {
+      "inputHash": "bad61f846155ad9fb9f92de0d41f0d836703a3d4fb840c0a5d75ee35314d4c85",
+      "description": {
+        "en": "Question 12. Madison created two functions. For Function A, the value of y is two less than four times the value of x. The table below represents Function B. The Function B table has columns x and y and contains the ordered pairs (−3, −9), (−1, −5), (1, −1), and (3, 3). In comparing the rates of change, which statement about Function A and Function B is true? Choices: A: Function A and Function B have the same rate of change. B: Function A has a greater rate of change than Function B has. C: Function A and Function B both have negative rates of change. D: Function A has a negative rate of change and Function B has a positive rate of change."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−3, −9)",
+          "(−1, −5)",
+          "(1, −1)",
+          "(3, 3)",
+          "A: Function A and Function B have the same rate of change",
+          "B: Function A has a greater rate of change than Function B has",
+          "C: Function A and Function B both have negative rates of change",
+          "D: Function A has a negative rate of change and Function B has a positive rate of change"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q13": {
+      "inputHash": "325583666dc4ba8aba282e735474f62624523c9b6a11aa63833ad7e05458dd69",
+      "description": {
+        "en": "Question 13. In the diagram below, three lines intersect at N. The measure of ∠GNF is 60°, and the measure of ∠MNL is 47°. The straight line G–N–L runs from upper left through N to lower right. The straight line H–N–M runs from upper right through N to lower left. The horizontal straight line F–N–K runs from left to right. Thus G and L are opposite rays from N, H and M are opposite rays from N, and F and K are opposite rays from N. What is the measure of ∠HNK? Choices: A: 47° B: 60° C: 73° D: 107°"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "∠GNF",
+          "60°",
+          "∠MNL",
+          "47°",
+          "G–N–L",
+          "H–N–M",
+          "F–N–K",
+          "∠HNK",
+          "73°",
+          "107°",
+          "A: 47°",
+          "B: 60°",
+          "C: 73°",
+          "D: 107°"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q14": {
+      "inputHash": "6b1661aed5c40b90da12a0617eb988b7bb7295dac73316b29b10aada9fa3fe05",
+      "description": {
+        "en": "Question 14. Which expression is equivalent to 4⁷ × 4⁻⁵? Choices: A: 4¹² B: 4² C: 4⁻² D: 4⁻³⁵"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4⁷ × 4⁻⁵",
+          "4¹²",
+          "4²",
+          "4⁻²",
+          "4⁻³⁵",
+          "A: 4¹²",
+          "B: 4²",
+          "C: 4⁻²",
+          "D: 4⁻³⁵",
+          "4⁷",
+          "4⁻⁵"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q15": {
+      "inputHash": "9e644a1f8a445a9d212efb213a638b234cd4859f861685d161a86d71e6fccf42",
+      "description": {
+        "en": "Question 15. Figure 1 can be transformed to create Figure 2 using a single transformation. A coordinate plane has x- and y-axes marked from −10 to 10 in increments of 2. Figure 1, to the left of the y-axis, consists of line segments joining (−10, 8) to (−2, 8) to (−4, 2). Figure 2, to the right of the y-axis, consists of line segments joining (10, 8) to (2, 8) to (4, 2). All six endpoints are solid points. The figures have matching sizes and are mirror-oriented across the y-axis: (−10, 8) corresponds to (10, 8), (−2, 8) corresponds to (2, 8), and (−4, 2) corresponds to (4, 2). Which transformation can be used to accomplish this? Choices: A: dilation B: rotation C: reflection D: translation"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10",
+          "10",
+          "(−10, 8)",
+          "(−2, 8)",
+          "(−4, 2)",
+          "(10, 8)",
+          "(2, 8)",
+          "(4, 2)",
+          "A: dilation",
+          "B: rotation",
+          "C: reflection",
+          "D: translation"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q16": {
+      "inputHash": "c2187fdbcb9a8a51d3e34272eb05502a1a1e23779cbb8b64ece63eb55544e234",
+      "description": {
+        "en": "Question 16. What is the solution to the system of equations below? 3x + 4y = −2 and 2x − 4y = −8. Choices: A: x = 2, y = −2 B: x = 6, y = −5 C: x = 4, y = 4 D: x = −2, y = 1"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3x + 4y = −2",
+          "2x − 4y = −8",
+          "x = 2, y = −2",
+          "x = 6, y = −5",
+          "x = 4, y = 4",
+          "x = −2, y = 1",
+          "A: x = 2, y = −2",
+          "B: x = 6, y = −5",
+          "C: x = 4, y = 4",
+          "D: x = −2, y = 1"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q17": {
+      "inputHash": "fcaff114e0b1361c043508f16b413999d02f5b9c84a6fceb6a0cc2d8d4b5e8f7",
+      "description": {
+        "en": "Question 17. A bicycle club went on a six-hour ride. The graph below shows the relationship between the number of hours spent on the trails and the number of miles traveled. The graph is titled “BICYCLE CLUB RIDE.” The horizontal axis is Time (hours), from 0 to 6, labeled at each whole hour and divided into 0.5-hour intervals. The vertical axis is Distance (miles), from 0 to 60, labeled every 10 miles and divided into 5-mile intervals. A connected line begins at (0, 0), rises to about (1, 10), continues upward at changing rates to about (2, 20), rises more steeply to about (3, 33), stays horizontal from 3 to 4 hours at about 33 miles, and then rises again to (6, 50). Which statement best interprets information provided by the graph? Choices: A: The club members rode at a constant speed for the entire ride. B: The club members stopped for a rest during their ride. C: The number of miles traveled increased continuously throughout the ride. D: The number of miles traveled increased some of the time and decreased some of the time."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.5-hour",
+          "(0, 0)",
+          "(1, 10)",
+          "(2, 20)",
+          "(3, 33)",
+          "(6, 50)",
+          "3 to 4 hours",
+          "33 miles",
+          "A: The club members rode at a constant speed for the entire ride",
+          "B: The club members stopped for a rest during their ride",
+          "C: The number of miles traveled increased continuously throughout the ride",
+          "D: The number of miles traveled increased some of the time and decreased some of the time"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q18": {
+      "inputHash": "393bca729cb70f6592fb70a63cc82d757de88d1c844c995c11677a6f71923b11",
+      "description": {
+        "en": "Question 18. Which number could not be a value of x? A triangle, marked “not drawn to scale,” has side lengths 12, 8, and x. The side labeled 12 runs from the left vertex to the upper-right vertex; the side labeled 8 runs from the left vertex to the lower vertex; and the side labeled x runs from the lower vertex to the upper-right vertex. Choices: A: 8 B: 9 C: 12 D: 21"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "12",
+          "8",
+          "9",
+          "21",
+          "A: 8",
+          "B: 9",
+          "C: 12",
+          "D: 21"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q19": {
+      "inputHash": "66dd46ff08c6165b03a4a583c49374b33768b5598bc29ab6272b9152b3b83801",
+      "description": {
+        "en": "Question 19. Which equation represents the line on the coordinate grid? Both axes run from −10 to 10 with grid lines every 2 units. The line rises from left to right, extends in both directions with arrowheads, and passes through the labeled points (0, −2) and (5, 0). Choices: A: y = 2/5x − 2 B: y = 2/5x + 5 C: y = −2/5x − 2 D: y = −2/5x + 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10",
+          "10",
+          "2 units",
+          "(0, −2)",
+          "(5, 0)",
+          "y = 2/5x − 2",
+          "y = 2/5x + 5",
+          "y = −2/5x − 2",
+          "y = −2/5x + 5",
+          "A: y = 2/5x − 2",
+          "B: y = 2/5x + 5",
+          "C: y = −2/5x − 2",
+          "D: y = −2/5x + 5",
+          "2/5"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q20": {
+      "inputHash": "75d1ba6d6d7db15405272b6613d9dde26b2b10a4a9edbdcf13ff8a7e16350327",
+      "description": {
+        "en": "Question 20. A researcher studied the eyesight of people at different ages. She calculated a vision score for each person in the study and plotted the data. The scatter plot is titled “EYESIGHT STUDY.” The horizontal axis is Age (years), with values from 20 through 75 in 5-year intervals. The vertical axis is Vision Score, with values from 98 through 110 in 2-point intervals and an axis break below 98. The plotted points are approximately (20, 107), (25, 108), (30, 108), (35, 107), (40, 107), (45, 106), (50, 105), (55, 105), (58, 103), (65, 102), (70, 102), and (75, 101), showing a generally decreasing trend. The researcher used the line y = −0.1x + 110 to model the data. When she substituted the value x = 65 into this equation, what did the result tell her? Choices: A: the exact value for the vision score of a 65-year-old B: the predicted value for the vision score of a 65-year-old C: the minimum possible value for the vision score of a 65-year-old D: the maximum possible value for the vision score of a 65-year-old"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(20, 107)",
+          "(25, 108)",
+          "(30, 108)",
+          "(35, 107)",
+          "(40, 107)",
+          "(45, 106)",
+          "(50, 105)",
+          "(55, 105)",
+          "(58, 103)",
+          "(65, 102)",
+          "(70, 102)",
+          "(75, 101)",
+          "y = −0.1x + 110",
+          "x = 65",
+          "65-year-old",
+          "A: the exact value for the vision score of a 65-year-old",
+          "B: the predicted value for the vision score of a 65-year-old",
+          "C: the minimum possible value for the vision score of a 65-year-old",
+          "D: the maximum possible value for the vision score of a 65-year-old"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q21": {
+      "inputHash": "40cd6f6c7c4dd8227007c07934557691ed930b58391e4853cddfe9e6fdac1046",
+      "description": {
+        "en": "Question 21. The table represents a linear function. It has columns x and y and the ordered pairs (−1, 5), (1, 9), (3, 13), and (5, 17). Which function has a greater slope and a greater y-intercept than the linear function represented in the table? Choices: A: y = 2x + 8.5 B: y = 3x + 7.5 C: y = 5x + 6.5 D: y = 10x + 5.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−1, 5)",
+          "(1, 9)",
+          "(3, 13)",
+          "(5, 17)",
+          "y = 2x + 8.5",
+          "y = 3x + 7.5",
+          "y = 5x + 6.5",
+          "y = 10x + 5.5",
+          "A: y = 2x + 8.5",
+          "B: y = 3x + 7.5",
+          "C: y = 5x + 6.5",
+          "D: y = 10x + 5.5"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q22": {
+      "inputHash": "abfe5a18cf4d980ad2b46ddab9bdc1138b64760b3bb6277203e4d48ecb0d1327",
+      "description": {
+        "en": "Question 22. Which phrase describes a nonlinear function? Choices: A: the area of a circle as a function of the radius B: the perimeter of a square as a function of the side length C: the cost of gasoline as a function of the number of gallons purchased D: the distance traveled by a car moving at constant speed as a function of time"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "area of a circle",
+          "perimeter of a square",
+          "cost of gasoline",
+          "constant speed",
+          "A: the area of a circle as a function of the radius",
+          "B: the perimeter of a square as a function of the side length",
+          "C: the cost of gasoline as a function of the number of gallons purchased",
+          "D: the distance traveled by a car moving at constant speed as a function of time"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q23": {
+      "inputHash": "5f1bbad160d5fd63f4da1fe8631082743bacdad83c79d12d524545bce49d6cc1",
+      "description": {
+        "en": "Question 23. Which graph represents a function? Each choice is a coordinate-plane graph. Choices: A: A continuous V-shaped graph with vertex (0, 0). Its left branch passes through (−1, 2) and continues up and left with an arrow; its right branch passes through (1, 2) and continues up and right with an arrow. Every vertical line meets the graph at most once. B: A vertical ray lies on x = −2, beginning at (−2, −2) and extending upward with an arrow. From (−2, −2), another ray slopes down and right, passing through (0, −3) and continuing with an arrow. C: The boundary of a rectangle with vertices (−3, 3), (2, 3), (2, −2), and (−3, −2). D: A connected graph begins with a ray approaching (−2, 1) from the lower left, followed by a vertical segment from (−2, 1) to (−2, 2), a horizontal segment from (−2, 2) to (1, 2), and a ray beginning at (1, 2) and rising to the right."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(−1, 2)",
+          "(1, 2)",
+          "x = −2",
+          "(−2, −2)",
+          "(0, −3)",
+          "(−3, 3)",
+          "(2, 3)",
+          "(2, −2)",
+          "(−3, −2)",
+          "(−2, 1)",
+          "A: A continuous V-shaped graph with vertex (0, 0). Its left branch passes through (−1, 2) and continues up and left with an arrow; its right branch passes through (1, 2) and continues up and right with an arrow. Every vertical line meets the graph at most once",
+          "B: A vertical ray lies on x = −2, beginning at (−2, −2) and extending upward with an arrow. From (−2, −2), another ray slopes down and right, passing through (0, −3) and continuing with an arrow",
+          "C: The boundary of a rectangle with vertices (−3, 3), (2, 3), (2, −2), and (−3, −2)",
+          "D: A connected graph begins with a ray approaching (−2, 1) from the lower left, followed by a vertical segment from (−2, 1) to (−2, 2), a horizontal segment from (−2, 2) to (1, 2), and a ray beginning at (1, 2) and rising to the right",
+          "(−2, 2)"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q24": {
+      "inputHash": "da1d369117c036878430d124ac810aefe95cc86b8c0cb8633dc3fb9fc6a8745d",
+      "description": {
+        "en": "Question 24. A circle is centered at (0, 0) and passes through point P located at (2, 0). On the coordinate plane, the circle therefore has radius 2; point P is marked at the circle’s rightmost point on the x-axis. The circle is dilated with the center of dilation at the origin and a scale factor of 0.5 and then translated up 3 units. What are the coordinates of the image of point P after this transformation? Choices: A: (4, 3) B: (1, 3) C: (1, 1.5) D: (0.5, 3)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "P",
+          "(2, 0)",
+          "radius 2",
+          "0.5",
+          "3 units",
+          "(4, 3)",
+          "(1, 3)",
+          "(1, 1.5)",
+          "(0.5, 3)",
+          "A: (4, 3)",
+          "B: (1, 3)",
+          "C: (1, 1.5)",
+          "D: (0.5, 3)"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q25": {
+      "inputHash": "63179816a5f8b7307bf75c853eb53d6fcd8b7c5b6a0f9b3eb5f297385c6c410c",
+      "description": {
+        "en": "Question 25. Which equation represents a linear function? Choices: A: y = 4/x + 1 B: y = x² + 2 C: y = ∛(x + 1) D: y = −(2/3)x − 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 4/x + 1",
+          "y = x² + 2",
+          "y = ∛(x + 1)",
+          "y = −(2/3)x − 1/2",
+          "A: y = 4/x + 1",
+          "B: y = x² + 2",
+          "C: y = ∛(x + 1)",
+          "D: y = −(2/3)x − 1/2",
+          "(x + 1)",
+          "(2/3)",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q26": {
+      "inputHash": "274b3c1d6e2dfc22f4e33080a7eaad43aab4e54ab3336b0978dc08637357e815",
+      "description": {
+        "en": "Question 26. Annette plans to visit an amusement park where she must pay for admission and purchase tickets to go on the rides. Annette wants to find the total cost for a day at the amusement park. She wrote the equation c = 1.50x + 12 to predict c, the total cost for a day at the amusement park. What could the number 12 represent in Annette’s equation? Choices: A: the number of rides B: the cost of admission C: the cost of each ticket D: the number of tickets"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "c = 1.50x + 12",
+          "12",
+          "A: the number of rides",
+          "B: the cost of admission",
+          "C: the cost of each ticket",
+          "D: the number of tickets"
+        ]
+      }
+    },
+    "nysed-2014-g8-mc-q27": {
+      "inputHash": "c1db4a3001c2215ea8515b530cf4b0ad6b48f863cb0554c211b7961f91a6687a",
+      "description": {
+        "en": "Question 27. The scatter plot shows the sizes and annual rents of some office spaces in the downtown area of a city. The graph is titled “SIZE AND ANNUAL RENT OF OFFICE SPACE.” The horizontal x-axis is labeled “Office Space (square feet)” and increases from 0 to 4,000, with labeled values 0, 500, 1,000, 1,500, 2,000, 2,500, 3,000, 3,500, and 4,000. The vertical y-axis is labeled “Rent (dollars)” and has labeled values 35,000, 70,000, 105,000, and 140,000. Thirteen points form a tight upward trend. Reading their locations approximately from left to right, the plotted office-space-and-rent pairs are (1,500 square feet, 27,000 dollars), (1,500 square feet, 35,000 dollars), (1,850 square feet, 45,000 dollars), (1,850 square feet, 52,000 dollars), (2,000 square feet, 52,000 dollars), (2,450 square feet, 82,000 dollars), (2,500 square feet, 79,000 dollars), (2,750 square feet, 87,000 dollars), (3,250 square feet, 100,000 dollars), (3,250 square feet, 117,000 dollars), (3,450 square feet, 117,000 dollars), (3,800 square feet, 133,000 dollars), and (4,000 square feet, 141,000 dollars). What would the line of best fit reveal about these data? Choices: A: There is a strong negative relationship between the cost of rent and the size of the office space. B: There is a strong positive relationship between the cost of rent and the size of the office space. C: There is a weak positive relationship between the cost of rent and the size of the office space. D: There is a weak negative relationship between the cost of rent and the size of the office space."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "500",
+          "1,000",
+          "1,500",
+          "2,000",
+          "2,500",
+          "3,000",
+          "3,500",
+          "4,000",
+          "35,000",
+          "70,000",
+          "105,000",
+          "140,000",
+          "(1,500 square feet, 27,000 dollars)",
+          "(1,500 square feet, 35,000 dollars)",
+          "(1,850 square feet, 45,000 dollars)",
+          "(1,850 square feet, 52,000 dollars)",
+          "(2,000 square feet, 52,000 dollars)",
+          "(2,450 square feet, 82,000 dollars)",
+          "(2,500 square feet, 79,000 dollars)",
+          "(2,750 square feet, 87,000 dollars)",
+          "(3,250 square feet, 100,000 dollars)",
+          "(3,250 square feet, 117,000 dollars)",
+          "(3,450 square feet, 117,000 dollars)",
+          "(3,800 square feet, 133,000 dollars)",
+          "(4,000 square feet, 141,000 dollars)",
+          "strong negative relationship",
+          "strong positive relationship",
+          "weak positive relationship",
+          "weak negative relationship",
+          "A: There is a strong negative relationship between the cost of rent and the size of the office space",
+          "B: There is a strong positive relationship between the cost of rent and the size of the office space",
+          "C: There is a weak positive relationship between the cost of rent and the size of the office space",
+          "D: There is a weak negative relationship between the cost of rent and the size of the office space"
+        ]
+      }
+    }
+  }
+}

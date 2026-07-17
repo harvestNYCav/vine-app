@@ -18,6 +18,7 @@ import { buildMathExamSection, type MathDomainCode } from '../content/math-exams
 import {
   getMathExamQuestion,
   getMathExamSectionQuestions,
+  normalizeMathChoiceAnswer,
   normalizeMathAnswer,
   toPublicMathExamQuestion,
 } from '../lib/math-exams'
@@ -26,6 +27,13 @@ const root = process.cwd()
 const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]
 const GRADES = [3, 4, 5, 6, 7, 8] as const
 const SPANISH_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
+const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-2013-g4-mc-q8',
+  'nysed-2013-g6-mc-q14',
+  'nysed-2014-g4-mc-q29',
+  'nysed-2014-g5-mc-q44',
+  'nysed-2014-g7-mc-q1',
+])
 const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2013: [10, 11, 11, 12, 12, 12],
   2014: [25, 24, 24, 30, 30, 27],
@@ -111,6 +119,45 @@ test('runtime catalog validation rejects leaked keys and generic or mismatched e
     /safe, substantive Spanish alt text/,
   )
 
+  const positiveAnswerLeak = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  positiveAnswerLeak.exams[0].questions[0].alt!.en += ' Choice A is correct because it matches.'
+  assert.throws(
+    () => buildMathExamCatalog(positiveAnswerLeak),
+    /safe, substantive English alt text/,
+  )
+
+  const bestChoiceLeak = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  bestChoiceLeak.exams[0].questions[0].alt!.en += ' Option B is best because it matches.'
+  assert.throws(
+    () => buildMathExamCatalog(bestChoiceLeak),
+    /safe, substantive English alt text/,
+  )
+
+  const localPathLeak = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  localPathLeak.exams[0].description.en = 'Draft notes: /Users/reviewer/vine/notes.txt'
+  assert.throws(
+    () => buildMathExamCatalog(localPathLeak),
+    /catalog exposes a local filesystem path/,
+  )
+
+  const macOsTemporaryPathLeak = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  macOsTemporaryPathLeak.exams[0].description.en = '/var/folders/75/reviewer/notes.txt'
+  assert.throws(
+    () => buildMathExamCatalog(macOsTemporaryPathLeak),
+    /catalog exposes a local filesystem path/,
+  )
+
+  const windowsLocalPathLeak = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  windowsLocalPathLeak.exams[0].description.en = String.raw`C:\Users\reviewer\vine\notes.txt`
+  assert.throws(
+    () => buildMathExamCatalog(windowsLocalPathLeak),
+    /catalog exposes a local filesystem path/,
+  )
+
+  const proseColonBeforeLineBreak = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  proseColonBeforeLineBreak.exams[0].description.en = 'Released question:\nGrade-level math practice.'
+  assert.doesNotThrow(() => buildMathExamCatalog(proseColonBeforeLineBreak))
+
   const wrongGrade = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
   const ordinaryGradeEight = wrongGrade.exams
     .find(exam => exam.year === 2025 && exam.grade === 8)!
@@ -152,6 +199,64 @@ test('runtime catalog validation rejects leaked keys and generic or mismatched e
     () => buildMathExamCatalog(wrongExplanationSource),
     /explanation source that does not match its release/,
   )
+
+  const missingVerifiedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  const missingVerifiedQuestion = missingVerifiedLabels.exams
+    .find(exam => exam.year === 2016 && exam.grade === 4)!
+    .questions.find(question => question.number === 24)!
+  delete missingVerifiedQuestion.choiceLabels
+  assert.throws(
+    () => buildMathExamCatalog(missingVerifiedLabels),
+    /must use its verified A-C choice labels/,
+  )
+
+  const alteredVerifiedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  const alteredVerifiedQuestion = alteredVerifiedLabels.exams
+    .find(exam => exam.year === 2016 && exam.grade === 4)!
+    .questions.find(question => question.number === 24)!
+  alteredVerifiedQuestion.choiceLabels = ['A', 'B', 'C', 'D']
+  assert.throws(
+    () => buildMathExamCatalog(alteredVerifiedLabels),
+    /must use its verified A-C choice labels/,
+  )
+
+  const unexpectedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  unexpectedLabels.exams[0].questions[0].choiceLabels = ['A', 'B', 'C']
+  assert.throws(
+    () => buildMathExamCatalog(unexpectedLabels),
+    /has unexpected choice labels/,
+  )
+
+  const unavailableKey = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
+  const unavailableKeyQuestion = unavailableKey.exams
+    .find(exam => exam.year === 2016 && exam.grade === 4)!
+    .questions.find(question => question.number === 24)!
+  unavailableKeyQuestion.correct = 'D'
+  assert.throws(
+    () => buildMathExamCatalog(unavailableKey),
+    /has an unavailable answer key/,
+  )
+})
+
+test('the verified three-choice item exposes only A-C and rejects unavailable submissions', () => {
+  const threeChoiceQuestion = getMathExamQuestion('nysed-2016-g4-mc-q24')!
+  assert.deepEqual(threeChoiceQuestion.choiceLabels, ['A', 'B', 'C'])
+  assert.deepEqual(toPublicMathExamQuestion(threeChoiceQuestion).choiceLabels, ['A', 'B', 'C'])
+  assert.equal(normalizeMathChoiceAnswer(threeChoiceQuestion, ' b '), 'B')
+  assert.equal(normalizeMathChoiceAnswer(threeChoiceQuestion, 'D'), null)
+
+  const ordinaryQuestions = MATH_EXAM_QUESTIONS.filter(
+    question => question.id !== threeChoiceQuestion.id,
+  )
+  assert.equal(ordinaryQuestions.length, MATH_EXAM_QUESTIONS.length - 1)
+  for (const question of ordinaryQuestions) {
+    assert.deepEqual(question.choiceLabels, ['A', 'B', 'C', 'D'], question.id)
+  }
+
+  const ordinaryQuestion = ordinaryQuestions.find(
+    question => question.grading.mode === 'choice' && question.grading.correct === 'D',
+  )!
+  assert.equal(normalizeMathChoiceAnswer(ordinaryQuestion, 'D'), 'D')
 })
 
 test('grade filters expose only the assigned grade and sort newest first', () => {
@@ -188,11 +293,88 @@ test('learning sections use complete, grade-specific bilingual lessons', () => {
       overviewByDomain.set(domain, overviews)
     }
   }
+
+  const grade3BaseTen = buildMathExamSection('NBT', 3, [])
+  assert.match(grade3BaseTen.overview.en, /beyond 1,000/)
+  assert.match(grade3BaseTen.overview.es, /mayores que 1,000/)
+
+  const grade4BaseTen = buildMathExamSection('NBT', 4, [])
+  assert.ok(grade4BaseTen.learningGoals.some(goal =>
+    /two-digit by two-digit/.test(goal.en) && /dos cifras por dos cifras/.test(goal.es),
+  ))
+})
+
+test('reviewed Math explanations retain the corrected mathematical relationships', () => {
+  const rounding = getMathExamQuestion('nysed-2017-g3-mc-q7')!
+  assert.match(rounding.grading.explanation.en, /2,396 rounds up to 2,400/)
+  assert.doesNotMatch(rounding.grading.explanation.en, /2,300 must round up/)
+
+  const multiple = getMathExamQuestion('nysed-2013-g4-mc-q8')!
+  assert.match(multiple.grading.explanation.en, /42 is a multiple of 7/i)
+  assert.doesNotMatch(multiple.grading.explanation.en, /42 is a factor of 7/i)
+  assert.equal(multiple.grading.explanationSource, 'official-nysed-corrected')
+
+  const comparison = getMathExamQuestion('nysed-2014-g4-mc-q29')!
+  assert.match(comparison.grading.explanation.en, /4,?530\s*(?:is less than|<)\s*4,?687/i)
+  assert.equal(comparison.grading.explanationSource, 'official-nysed-corrected')
+
+  const grade5PlaceValue = getMathExamQuestion('nysed-2025-g5-mc-q28')!
+  assert.match(grade5PlaceValue.grading.explanation.en, /digit 6 is worth 6\b/)
+  assert.match(grade5PlaceValue.grading.explanation.en, /digit 6 is worth 0\.6\b/)
+  assert.doesNotMatch(grade5PlaceValue.grading.explanation.en, /worth 600|gives 60/)
+
+  const grade5Conversion = getMathExamQuestion('nysed-2014-g5-mc-q44')!
+  assert.match(grade5Conversion.grading.explanation.en, /75 inches/)
+  assert.doesNotMatch(grade5Conversion.grading.explanation.en, /75 feet/)
+  assert.equal(grade5Conversion.grading.explanationSource, 'official-nysed-corrected')
+
+  const trapezoid = getMathExamQuestion('nysed-2013-g6-mc-q14')!
+  assert.match(trapezoid.grading.explanation.en, /9 - 4\.5 = 4\.5/)
+  assert.doesNotMatch(trapezoid.grading.explanation.en, /9\.5\s*[−-]\s*4\.5/)
+  assert.equal(trapezoid.grading.explanationSource, 'official-nysed-corrected')
+
+  const ratioTable = getMathExamQuestion('nysed-2017-g6-mc-q14')!
+  assert.match(ratioTable.grading.explanation.en, /first-column student count divided by its second-column adult count/i)
+  assert.match(ratioTable.grading.explanation.en, /96\/12 = 8/)
+
+  const bicyclists = getMathExamQuestion('nysed-2017-g6-mc-q41')!
+  assert.match(bicyclists.grading.explanation.en, /Kim rides|Eric rides/)
+  assert.doesNotMatch(bicyclists.grading.explanation.en, /Kim runs|Eric runs/)
+
+  const phones = getMathExamQuestion('nysed-2019-g7-mc-q9')!
+  assert.match(phones.grading.explanation.en, /6\.21\/5\.4\b/)
+  assert.match(phones.grading.explanation.en, /= 2\.99 inches/)
+  assert.doesNotMatch(phones.grading.explanation.en, /5\.41/)
+
+  const population = getMathExamQuestion('nysed-2017-g7-mc-q4')!
+  assert.match(population.grading.explanation.en, /population is 4,968 people/)
+  assert.doesNotMatch(population.grading.explanation.en, /\$4,968/)
+
+  const signatures = getMathExamQuestion('nysed-2017-g7-mc-q11')!
+  assert.match(signatures.grading.explanation.en, /80 signatures|3x \+ 23 ≥ 80/)
+  assert.doesNotMatch(signatures.grading.explanation.en, /dollars|\$23|\$80/)
+
+  const evaporation = getMathExamQuestion('nysed-2017-g7-mc-q47')!
+  assert.match(evaporation.grading.explanation.en, /grams of water remain/)
+  assert.doesNotMatch(evaporation.grading.explanation.en, /fee|\$16|\$15/)
+
+  const rocket = getMathExamQuestion('nysed-2019-g8-mc-q9')!
+  assert.match(rocket.grading.explanation.en, /3\.6 × 10⁴/)
+  assert.doesNotMatch(rocket.grading.explanation.en, /3\.36 × 10⁴/)
+
+  const flowerBox = getMathExamQuestion('nysed-2019-g8-mc-q17')!
+  assert.match(flowerBox.grading.explanation.en, /\(3\/4\)\(720\) = 540/)
+
+  const squareRoot = getMathExamQuestion('nysed-2024-g8-mc-q37')!
+  assert.match(squareRoot.grading.explanation.en, /between 1\.0 and 1\.5/)
+  assert.match(squareRoot.grading.explanation.en, /0\.086.*0\.414/)
+  assert.doesNotMatch(squareRoot.grading.explanation.en, /closer to 1\.5 than 1\.4/)
 })
 
 test('active questions are one-point multiple choice and belong to one section', () => {
   const explanationSourceCounts = {
     'official-nysed': 0,
+    'official-nysed-corrected': 0,
     'vine-authored': 0,
   }
   const genericFallback = /(?:official\s+(?:NYSED\s+)?answer\s+key|clave\s+oficial\s+de\s+respuestas)/i
@@ -226,10 +408,12 @@ test('active questions are one-point multiple choice and belong to one section',
     assert.equal(question.type, 'multiple-choice')
     assert.equal(question.points, 1)
     assert.equal(question.grading.mode, 'choice')
-    assert.equal(
-      question.grading.explanationSource,
-      exam.year <= 2014 ? 'official-nysed' : 'vine-authored',
-    )
+    const expectedSource = exam.year >= 2015
+      ? 'vine-authored'
+      : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
+        ? 'official-nysed-corrected'
+        : 'official-nysed'
+    assert.equal(question.grading.explanationSource, expectedSource)
     explanationSourceCounts[question.grading.explanationSource] += 1
     for (const language of ['en', 'es'] as const) {
       const explanation = question.grading.explanation[language]
@@ -259,6 +443,12 @@ test('active questions are one-point multiple choice and belong to one section',
     assert.ok(question.image.alt.en.replace(/[^\p{L}\p{N}]/gu, '').length >= 24)
     if (exam.supportedLanguages.includes('es')) {
       assert.ok(question.image.alt.es.replace(/[^\p{L}\p{N}]/gu, '').length >= 24)
+    } else {
+      assert.match(question.image.alt.es, /transcripción completa en inglés:/)
+      assert.ok(
+        question.image.alt.es.endsWith(question.image.alt.en),
+        `${question.id} must expose its reviewed English transcription after the Spanish availability notice`,
+      )
     }
     const answerMetadata = /(?:\b(?:Key|Clave)\s*:\s*[A-D]\b|\bAnswer\s+Key\s*:|\b(?:Primary|Aligned)\s+CCLS|\bMeasured(?:\s+CCLS)?\s*:?\s*(?:NY-)?[3-8]\.|\bMap\s+to\s+the\s+Standards|\bScoring\s+Rubric|\bSample\s+Response|\bR[uú]brica\s+de\s+puntuaci[oó]n|\bRespuesta\s+de\s+muestra)/i
     assert.doesNotMatch(question.image.alt.en, answerMetadata)
@@ -272,7 +462,8 @@ test('active questions are one-point multiple choice and belong to one section',
   }
 
   assert.deepEqual(explanationSourceCounts, {
-    'official-nysed': 228,
+    'official-nysed': 223,
+    'official-nysed-corrected': 5,
     'vine-authored': 1_611,
   })
 
@@ -289,6 +480,15 @@ test('active questions are one-point multiple choice and belong to one section',
 })
 
 test('all 3,131 referenced WebPs exist with exact dimensions and no orphaned question assets', () => {
+  assert.ok(
+    !existsSync(join(root, 'public', 'nysed', '2026-grade-3')),
+    'the retired hand-authored 2026 Grade 3 asset tree must not return',
+  )
+  assert.ok(
+    !existsSync(join(root, 'content', 'math-exams', '2026-grade-3')),
+    'the retired hand-authored 2026 Grade 3 question modules must not return',
+  )
+
   const images = MATH_EXAM_QUESTIONS.flatMap(question => [
     question.image.en,
     ...(question.image.es ? [question.image.es] : []),

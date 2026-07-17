@@ -1,0 +1,1034 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2021-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2021-g8-mc-q1": {
+      "inputHash": "50a45fad7388b97962696604abeca97e397edd2b48a0e23ac69aab03a5997e13",
+      "description": {
+        "en": "Question 1. Which graph represents a linear function of x? Choices: A: A coordinate plane with x- and y-axes. An upward-opening parabola has its vertex below the x-axis and to the right of the y-axis. B: A coordinate plane with x- and y-axes. A straight, nonvertical line decreases from upper left to lower right, crossing the positive y-axis and positive x-axis. C: A coordinate plane with x- and y-axes. An increasing curve rises from left to right and becomes progressively steeper; it crosses the positive y-axis. D: A coordinate plane with x- and y-axes. A vertical line is drawn to the right of the y-axis.",
+        "es": "Pregunta 1. ¿Qué gráfico representa una función lineal de x? Cada gráfico contiene ejes perpendiculares, con el eje horizontal etiquetado x y el eje vertical etiquetado y. Opciones: A: Una parábola que abre hacia arriba. Su vértice está debajo del eje x y a la derecha del eje y; la curva cruza el eje x dos veces y el eje y una vez. B: Una recta oblicua decreciente, con flechas en ambos extremos. Cruza el eje y por encima del origen y el eje x a la derecha del origen. C: Una curva creciente y cóncava hacia arriba, con flechas en ambos extremos. Se aproxima al eje x por encima de este hacia la izquierda y cruza el eje y por encima del origen. D: Una recta vertical, paralela al eje y y situada a la derecha de este, con flechas en ambos extremos. Cruza el eje x a la derecha del origen."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "A:",
+          "B:",
+          "C:",
+          "D:",
+          "A: A coordinate plane with x- and y-axes. An upward-opening parabola has its vertex below the x-axis and to the right of the y-axis",
+          "B: A coordinate plane with x- and y-axes. A straight, nonvertical line decreases from upper left to lower right, crossing the positive y-axis and positive x-axis",
+          "C: A coordinate plane with x- and y-axes. An increasing curve rises from left to right and becomes progressively steeper; it crosses the positive y-axis",
+          "D: A coordinate plane with x- and y-axes. A vertical line is drawn to the right of the y-axis"
+        ],
+        "es": [
+          "x",
+          "y",
+          "A:",
+          "B:",
+          "C:",
+          "D:",
+          "A: Una parábola que abre hacia arriba. Su vértice está debajo del eje x y a la derecha del eje y; la curva cruza el eje x dos veces y el eje y una vez",
+          "B: Una recta oblicua decreciente, con flechas en ambos extremos. Cruza el eje y por encima del origen y el eje x a la derecha del origen",
+          "C: Una curva creciente y cóncava hacia arriba, con flechas en ambos extremos. Se aproxima al eje x por encima de este hacia la izquierda y cruza el eje y por encima del origen",
+          "D: Una recta vertical, paralela al eje y y situada a la derecha de este, con flechas en ambos extremos. Cruza el eje x a la derecha del origen"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q2": {
+      "inputHash": "240e1358afbda5cda4e0f7021024aabb29aa84e076d0216eabd780012fb64eac",
+      "description": {
+        "en": "Question 2. What is the value of the expression (1.6 × 10⁵)/(0.2 × 10²)? Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷",
+        "es": "Pregunta 2. ¿Cuál es el valor de la siguiente expresión? (1.6 × 10⁵)/(0.2 × 10²) Opciones: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1.6 × 10⁵)/(0.2 × 10²)",
+          "0.8 × 10³",
+          "8 × 10³",
+          "0.8 × 10⁷",
+          "8 × 10⁷",
+          "A: 0.8 × 10³",
+          "B: 8 × 10³",
+          "C: 0.8 × 10⁷",
+          "D: 8 × 10⁷",
+          "(1.6 × 10⁵)",
+          "(0.2 × 10²)",
+          "10³",
+          "10⁷"
+        ],
+        "es": [
+          "(1.6 × 10⁵)/(0.2 × 10²)",
+          "0.8 × 10³",
+          "8 × 10³",
+          "0.8 × 10⁷",
+          "8 × 10⁷",
+          "A: 0.8 × 10³",
+          "B: 8 × 10³",
+          "C: 0.8 × 10⁷",
+          "D: 8 × 10⁷",
+          "(1.6 × 10⁵)",
+          "(0.2 × 10²)",
+          "10³",
+          "10⁷"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q3": {
+      "inputHash": "17d521f4f96c3b308b833377d8c17480ded9f563ecacb715dac0ca7d67c91622",
+      "description": {
+        "en": "Question 3. At a factory, the cost of making different numbers of toothbrushes is shown in the table below. Table titled “COST OF TOOTHBRUSHES.” The row labeled “Number of Toothbrushes” contains 3, 6, 9, and 12. The corresponding row labeled “Cost (dollars)” contains $4.50, $9.00, $13.50, and $18.00. A linear function models the cost based on the number of toothbrushes made. Which statement about the rate of change of this function is true? Choices: A: The cost increases by $1.50 for each additional toothbrush made. B: The cost increases by $4.50 for each additional toothbrush made. C: The cost increases by $9.00 for each additional 3 toothbrushes made. D: The cost increases by $18.00 for each additional 3 toothbrushes made.",
+        "es": "Pregunta 3. En una fábrica, el costo para fabricar diferentes cantidades de cepillos de dientes se muestra en la siguiente tabla. Título de la tabla: COSTO DE LOS CEPILLOS DE DIENTES. La fila «Cantidad de cepillos de dientes» contiene, en orden, 3, 6, 9 y 12. La fila «Costo (dólares)» contiene, respectivamente, $4.50, $9.00, $13.50 y $18.00. Una función lineal representa el costo según la cantidad de cepillos de dientes fabricados. ¿Qué afirmación acerca de la tasa de cambio de esta función es verdadera? Opciones: A: El costo aumenta a razón de $1.50 por cada cepillo de dientes adicional fabricado. B: El costo aumenta a razón de $4.50 por cada cepillo de dientes adicional fabricado. C: El costo aumenta a razón de $9.00 por cada 3 cepillos de dientes adicionales fabricados. D: El costo aumenta a razón de $18.00 por cada 3 cepillos de dientes adicionales fabricados."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3, 6, 9, and 12",
+          "$4.50, $9.00, $13.50, and $18.00",
+          "$1.50",
+          "$4.50",
+          "$9.00",
+          "$18.00",
+          "3 toothbrushes",
+          "A: The cost increases by $1.50 for each additional toothbrush made",
+          "B: The cost increases by $4.50 for each additional toothbrush made",
+          "C: The cost increases by $9.00 for each additional 3 toothbrushes made",
+          "D: The cost increases by $18.00 for each additional 3 toothbrushes made"
+        ],
+        "es": [
+          "3, 6, 9 y 12",
+          "$4.50, $9.00, $13.50 y $18.00",
+          "$1.50",
+          "$4.50",
+          "$9.00",
+          "$18.00",
+          "3 cepillos de dientes",
+          "A: El costo aumenta a razón de $1.50 por cada cepillo de dientes adicional fabricado",
+          "B: El costo aumenta a razón de $4.50 por cada cepillo de dientes adicional fabricado",
+          "C: El costo aumenta a razón de $9.00 por cada 3 cepillos de dientes adicionales fabricados",
+          "D: El costo aumenta a razón de $18.00 por cada 3 cepillos de dientes adicionales fabricados"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q4": {
+      "inputHash": "40962e0fa70f349ede0a1099c3a8f022097accb38041a1636aeaf1a2768094dd",
+      "description": {
+        "en": "Question 4. A company makes two different-sized ice cream cones. The smaller cones are 3.5 inches tall and have a diameter of 3 inches. The larger cones are 5.1 inches tall and have a diameter of 4.5 inches. About how much greater, to the nearest tenth of a cubic inch, is the volume of the larger cone than the volume of the smaller cone? Choices: A: 18.8 B: 56.4 C: 75.2 D: 225.5",
+        "es": "Pregunta 4. Una empresa elabora conos de helado de dos diferentes tamaños. Los conos más pequeños miden 3.5 pulgadas de alto y tienen un diámetro de 3 pulgadas. Los conos más grandes miden 5.1 pulgadas de alto y tienen un diámetro de 4.5 pulgadas. Aproximadamente, redondeado al décimo de pulgada cúbica más cercano, ¿cuánto mayor es el volumen del cono más grande que el volumen del cono más pequeño? Opciones: A: 18.8 B: 56.4 C: 75.2 D: 225.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3.5 inches",
+          "3 inches",
+          "5.1 inches",
+          "4.5 inches",
+          "18.8",
+          "56.4",
+          "75.2",
+          "225.5",
+          "A: 18.8",
+          "B: 56.4",
+          "C: 75.2",
+          "D: 225.5"
+        ],
+        "es": [
+          "3.5 pulgadas",
+          "3 pulgadas",
+          "5.1 pulgadas",
+          "4.5 pulgadas",
+          "18.8",
+          "56.4",
+          "75.2",
+          "225.5",
+          "A: 18.8",
+          "B: 56.4",
+          "C: 75.2",
+          "D: 225.5"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q5": {
+      "inputHash": "9ec12faecac7b443e6330e30c3933bb5bf542821eaec45adb8e7b8cedd6ad572",
+      "description": {
+        "en": "Question 5. Chris and Sam earn money shoveling snow, as described below. The amount of money Chris earns can be modeled by the equation y = 8.25x, where y is the total amount of money, in dollars, earned in x hours. A table titled “SAM’S EARNINGS” shows the relationship between Sam’s total money earned, y, in dollars, and total time worked, x, in hours. In the x row, the values are 4, 6, and 8. The corresponding values in the y row are 30, 45, and 60. Which statement correctly compares the rates at which Chris and Sam earn money shoveling snow? Choices: A: Sam earns $0.75 more per hour than Chris. B: Chris earns $0.75 more per hour than Sam. C: Sam earns $0.25 more per hour than Chris. D: Chris earns $0.25 more per hour than Sam.",
+        "es": "Pregunta 5. Chris y Sam ganan dinero paleando nieve, como se describe a continuación. • La cantidad de dinero que gana Chris puede representarse con la ecuación y = 8.25x, donde y es la cantidad total de dinero, en dólares, ganado en x horas. • La siguiente tabla muestra la relación entre la cantidad total de dinero ganado, y, en dólares, y la cantidad total de tiempo trabajado, x, en horas, para Sam. Título de la tabla: GANANCIAS DE SAM. La fila x contiene 4, 6 y 8. La fila y contiene, respectivamente, 30, 45 y 60. ¿Qué afirmación compara correctamente las tasas a las cuales Chris y Sam ganaron dinero paleando nieve? Opciones: A: Sam gana $0.75 más por hora que Chris. B: Chris gana $0.75 más por hora que Sam. C: Sam gana $0.25 más por hora que Chris. D: Chris gana $0.25 más por hora que Sam."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 8.25x",
+          "x",
+          "y",
+          "4, 6, and 8",
+          "30, 45, and 60",
+          "$0.75",
+          "$0.25",
+          "A: Sam earns $0.75 more per hour than Chris",
+          "B: Chris earns $0.75 more per hour than Sam",
+          "C: Sam earns $0.25 more per hour than Chris",
+          "D: Chris earns $0.25 more per hour than Sam"
+        ],
+        "es": [
+          "y = 8.25x",
+          "x",
+          "y",
+          "4, 6 y 8",
+          "30, 45 y 60",
+          "$0.75",
+          "$0.25",
+          "A: Sam gana $0.75 más por hora que Chris",
+          "B: Chris gana $0.75 más por hora que Sam",
+          "C: Sam gana $0.25 más por hora que Chris",
+          "D: Chris gana $0.25 más por hora que Sam"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q6": {
+      "inputHash": "9927f4558b188ff04aac1bed0d0829b31a9c5d6db5b276b92cfc7b7a7fd0a636",
+      "description": {
+        "en": "Question 6. Which equation represents a function of x that is not linear? Choices: A: y = 4(x + 3) B: y = 4² + 3x C: y = 4x + 3x² D: y = (4 + x)/3",
+        "es": "Pregunta 6. ¿Qué ecuación representa una función de x que no es lineal? Opciones: A: y = 4(x + 3) B: y = 4² + 3x C: y = 4x + 3x² D: y = (4 + x)/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 4(x + 3)",
+          "y = 4² + 3x",
+          "y = 4x + 3x²",
+          "y = (4 + x)/3",
+          "A: y = 4(x + 3)",
+          "B: y = 4² + 3x",
+          "C: y = 4x + 3x²",
+          "D: y = (4 + x)/3",
+          "(x + 3)",
+          "4²",
+          "(4 + x)"
+        ],
+        "es": [
+          "y = 4(x + 3)",
+          "y = 4² + 3x",
+          "y = 4x + 3x²",
+          "y = (4 + x)/3",
+          "A: y = 4(x + 3)",
+          "B: y = 4² + 3x",
+          "C: y = 4x + 3x²",
+          "D: y = (4 + x)/3",
+          "(x + 3)",
+          "4²",
+          "(4 + x)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q7": {
+      "inputHash": "16436db856693aebcf520d18cc38b159c580cf66d6d1a6d624ee8acfefb29584",
+      "description": {
+        "en": "Question 7. Which equation represents the line shown on the coordinate plane below? The coordinate plane has a horizontal x-axis and a vertical y-axis, with integer grid lines. The x-axis is labeled from −8 through 8, and the y-axis is labeled from −4 through 4. A straight line with arrows at both ends decreases from upper left to lower right. It passes through the origin, (0, 0), and through points such as (−8, 2), (−4, 1), (4, −1), and (8, −2). Choices: A: y = 4x B: y = −4x C: y = (1/4)x D: y = −(1/4)x",
+        "es": "Pregunta 7. ¿Qué ecuación representa la recta que se muestra en el siguiente plano de coordenadas? El plano tiene un eje horizontal x y un eje vertical y, con flechas en ambos sentidos. En el eje x se marcan los enteros de −8 a 8, y en el eje y se marcan los enteros de −4 a 4. Una recta decreciente con flechas en ambos extremos pasa por el origen (0, 0), por (−8, 2) y por (8, −2). Opciones: A: y = 4x B: y = −4x C: y = (1/4)x D: y = −(1/4)x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−8",
+          "8",
+          "−4",
+          "4",
+          "(0, 0)",
+          "(−8, 2)",
+          "(−4, 1)",
+          "(4, −1)",
+          "(8, −2)",
+          "y = 4x",
+          "y = −4x",
+          "y = (1/4)x",
+          "y = −(1/4)x",
+          "A: y = 4x",
+          "B: y = −4x",
+          "C: y = (1/4)x",
+          "D: y = −(1/4)x",
+          "(1/4)"
+        ],
+        "es": [
+          "−8 a 8",
+          "−4 a 4",
+          "(0, 0)",
+          "(−8, 2)",
+          "(8, −2)",
+          "y = 4x",
+          "y = −4x",
+          "y = (1/4)x",
+          "y = −(1/4)x",
+          "A: y = 4x",
+          "B: y = −4x",
+          "C: y = (1/4)x",
+          "D: y = −(1/4)x",
+          "(1/4)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q8": {
+      "inputHash": "fbb13b19be5e324c1fb05167e7c07da67815e5ba281707081c4c053130eacf3d",
+      "description": {
+        "en": "Question 8. The closest distance between Earth and Mars is approximately 3.39 × 10⁷ miles. The fastest rocket leaving Earth travels at an average speed of approximately 3.6 × 10⁴ miles per hour. At that rate, which expression could be used to determine the approximate number of hours it would take the rocket to travel that distance? Choices: A: (3.39 × 10⁷) − (3.6 × 10⁴) B: (3.6 × 10⁴) − (3.39 × 10⁷) C: (3.39 × 10⁷) ÷ (3.6 × 10⁴) D: (3.6 × 10⁴) ÷ (3.39 × 10⁷)",
+        "es": "Pregunta 8. La distancia más cercana entre la Tierra y Marte es de aproximadamente 3.39 × 10⁷ millas. El cohete más rápido que parte de la Tierra viaja a una velocidad promedio de aproximadamente 3.6 × 10⁴ millas por hora. A esa tasa, ¿qué expresión puede usarse para determinar la cantidad aproximada de horas que le llevaría al cohete viajar esa distancia? Opciones: A: (3.39 × 10⁷) − (3.6 × 10⁴) B: (3.6 × 10⁴) − (3.39 × 10⁷) C: (3.39 × 10⁷) ÷ (3.6 × 10⁴) D: (3.6 × 10⁴) ÷ (3.39 × 10⁷)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3.39 × 10⁷",
+          "3.6 × 10⁴",
+          "(3.39 × 10⁷) − (3.6 × 10⁴)",
+          "(3.6 × 10⁴) − (3.39 × 10⁷)",
+          "(3.39 × 10⁷) ÷ (3.6 × 10⁴)",
+          "(3.6 × 10⁴) ÷ (3.39 × 10⁷)",
+          "A: (3.39 × 10⁷) − (3.6 × 10⁴)",
+          "B: (3.6 × 10⁴) − (3.39 × 10⁷)",
+          "C: (3.39 × 10⁷) ÷ (3.6 × 10⁴)",
+          "D: (3.6 × 10⁴) ÷ (3.39 × 10⁷)",
+          "10⁷",
+          "10⁴",
+          "(3.39 × 10⁷)",
+          "(3.6 × 10⁴)"
+        ],
+        "es": [
+          "3.39 × 10⁷ millas",
+          "3.6 × 10⁴ millas por hora",
+          "(3.39 × 10⁷) − (3.6 × 10⁴)",
+          "(3.6 × 10⁴) − (3.39 × 10⁷)",
+          "(3.39 × 10⁷) ÷ (3.6 × 10⁴)",
+          "(3.6 × 10⁴) ÷ (3.39 × 10⁷)",
+          "A: (3.39 × 10⁷) − (3.6 × 10⁴)",
+          "B: (3.6 × 10⁴) − (3.39 × 10⁷)",
+          "C: (3.39 × 10⁷) ÷ (3.6 × 10⁴)",
+          "D: (3.6 × 10⁴) ÷ (3.39 × 10⁷)",
+          "10⁷",
+          "10⁴",
+          "(3.39 × 10⁷)",
+          "(3.6 × 10⁴)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q9": {
+      "inputHash": "a4783946621de7dfdc83961b1396778637ab1bb3eef6731bcd692b7bd4646c51",
+      "description": {
+        "en": "Question 9. Triangle A and triangle B are graphed on a coordinate plane. Triangle A has vertices at (2, 6), (2, 2), and (4, 2); its vertical side extends from (2, 2) to (2, 6), its horizontal side extends from (2, 2) to (4, 2), and its slanted side connects (2, 6) to (4, 2). Triangle B has vertices at (−4, −2), (−2, −2), and (−4, −6); its horizontal side extends from (−4, −2) to (−2, −2), its vertical side extends from (−4, −2) to (−4, −6), and its slanted side connects (−4, −6) to (−2, −2). Which sequence of transformations will map triangle A onto its congruent image, triangle B? Choices: A: a reflection over the x-axis, then a reflection over the y-axis. B: a translation 8 units down, then a reflection over the y-axis. C: a reflection over the x-axis, then a translation 6 units to the left. D: a rotation 90° clockwise about the origin, then a translation 6 units to the left.",
+        "es": "Pregunta 9. El triángulo A y el triángulo B se grafican en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. El triángulo A tiene vértices en (2, 6), (2, 2) y (4, 2): un lado vertical desde (2, 2) hasta (2, 6), un lado horizontal desde (2, 2) hasta (4, 2) y un lado diagonal desde (2, 6) hasta (4, 2). El triángulo B tiene vértices en (−4, −2), (−2, −2) y (−4, −6): un lado horizontal desde (−4, −2) hasta (−2, −2), un lado vertical desde (−4, −2) hasta (−4, −6) y un lado diagonal desde (−4, −6) hasta (−2, −2). ¿Qué secuencia de transformaciones mapeará el triángulo A en su imagen congruente, el triángulo B? Opciones: A: una reflexión sobre el eje x, luego una reflexión sobre el eje y. B: una traslación de 8 unidades hacia abajo, luego una reflexión sobre el eje y. C: una reflexión sobre el eje x, luego una traslación de 6 unidades hacia la izquierda. D: una rotación de 90° en sentido del reloj alrededor del origen, luego una traslación de 6 unidades hacia la izquierda."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 6)",
+          "(2, 2)",
+          "(4, 2)",
+          "(−4, −2)",
+          "(−2, −2)",
+          "(−4, −6)",
+          "8 units",
+          "6 units",
+          "90°",
+          "A: a reflection over the x-axis, then a reflection over the y-axis",
+          "B: a translation 8 units down, then a reflection over the y-axis",
+          "C: a reflection over the x-axis, then a translation 6 units to the left",
+          "D: a rotation 90° clockwise about the origin, then a translation 6 units to the left"
+        ],
+        "es": [
+          "(2, 6)",
+          "(2, 2)",
+          "(4, 2)",
+          "(−4, −2)",
+          "(−2, −2)",
+          "(−4, −6)",
+          "8 unidades",
+          "6 unidades",
+          "90°",
+          "A: una reflexión sobre el eje x, luego una reflexión sobre el eje y",
+          "B: una traslación de 8 unidades hacia abajo, luego una reflexión sobre el eje y",
+          "C: una reflexión sobre el eje x, luego una traslación de 6 unidades hacia la izquierda",
+          "D: una rotación de 90° en sentido del reloj alrededor del origen, luego una traslación de 6 unidades hacia la izquierda"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q10": {
+      "inputHash": "98cedcb58aa806b9e6d405c9bafe41f43ed88d180ef1fc5edef8099febdaf175",
+      "description": {
+        "en": "Question 10. Which system of equations has no solution? Choices: A: 3x + 4y = 5 and 6x + 8y = 10. B: 7x − 2y = 9 and 7x − 2y = 13. C: 2x − y = −11 and −2x + y = 11. D: 3x + 6y = 1 and x + y = 0.",
+        "es": "Pregunta 10. ¿Qué sistema de ecuaciones no tiene solución? Opciones: A: el sistema 3x + 4y = 5 y 6x + 8y = 10. B: el sistema 7x − 2y = 9 y 7x − 2y = 13. C: el sistema 2x − y = −11 y −2x + y = 11. D: el sistema 3x + 6y = 1 y x + y = 0."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3x + 4y = 5",
+          "6x + 8y = 10",
+          "7x − 2y = 9",
+          "7x − 2y = 13",
+          "2x − y = −11",
+          "−2x + y = 11",
+          "3x + 6y = 1",
+          "x + y = 0",
+          "A: 3x + 4y = 5 and 6x + 8y = 10",
+          "B: 7x − 2y = 9 and 7x − 2y = 13",
+          "C: 2x − y = −11 and −2x + y = 11",
+          "D: 3x + 6y = 1 and x + y = 0"
+        ],
+        "es": [
+          "3x + 4y = 5",
+          "6x + 8y = 10",
+          "7x − 2y = 9",
+          "7x − 2y = 13",
+          "2x − y = −11",
+          "−2x + y = 11",
+          "3x + 6y = 1",
+          "x + y = 0",
+          "A: el sistema 3x + 4y = 5 y 6x + 8y = 10",
+          "B: el sistema 7x − 2y = 9 y 7x − 2y = 13",
+          "C: el sistema 2x − y = −11 y −2x + y = 11",
+          "D: el sistema 3x + 6y = 1 y x + y = 0"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q11": {
+      "inputHash": "a6fc6324bbee3414d5e0228554b2e94f527590cf0459dd89fe947cc8297cb0d7",
+      "description": {
+        "en": "Question 11. A line is graphed on a coordinate plane. The line has arrows at both ends, rises from left to right, crosses the y-axis at (0, −4), and passes through (2, −3) and (4, −2). Line y = −x + 2 will be graphed on the same coordinate plane to create a system of equations. What is the solution to that system of equations? Choices: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2).",
+        "es": "Pregunta 11. Se traza una recta en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. La recta ascendente pasa por (0, −4), (2, −3) y (4, −2), por lo que sube 1 unidad por cada 2 unidades que avanza hacia la derecha; tiene flechas en ambos extremos. La recta y = −x + 2 se trazará en el mismo plano de coordenadas para crear un sistema de ecuaciones. ¿Cuál es la solución de ese sistema de ecuaciones? Opciones: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, −4)",
+          "(2, −3)",
+          "(4, −2)",
+          "y = −x + 2",
+          "(−2, 4)",
+          "(2, −4)",
+          "A: (−2, 4)",
+          "B: (0, −4)",
+          "C: (2, −4)",
+          "D: (4, −2)"
+        ],
+        "es": [
+          "(0, −4)",
+          "(2, −3)",
+          "(4, −2)",
+          "1 unidad",
+          "2 unidades",
+          "y = −x + 2",
+          "(−2, 4)",
+          "(2, −4)",
+          "A: (−2, 4)",
+          "B: (0, −4)",
+          "C: (2, −4)",
+          "D: (4, −2)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q12": {
+      "inputHash": "e8e8ec30a5666597f9824e22f7feff8416bbaa3337e86bb367b9557a2653ea2f",
+      "description": {
+        "en": "Question 12. Linear function K passes through points (−3, 7) and (3, 3). What is the rate of change of function K? Choices: A: −3/2. B: −2/3. C: 3/2. D: 2/3.",
+        "es": "Pregunta 12. La función lineal K atraviesa los puntos (−3, 7) y (3, 3). ¿Cuál es la tasa de cambio de la función K? Opciones: A: −3/2. B: −2/3. C: 3/2. D: 2/3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−3, 7)",
+          "(3, 3)",
+          "−3/2",
+          "−2/3",
+          "3/2",
+          "2/3",
+          "A: −3/2",
+          "B: −2/3",
+          "C: 3/2",
+          "D: 2/3"
+        ],
+        "es": [
+          "(−3, 7)",
+          "(3, 3)",
+          "−3/2",
+          "−2/3",
+          "3/2",
+          "2/3",
+          "A: −3/2",
+          "B: −2/3",
+          "C: 3/2",
+          "D: 2/3"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q13": {
+      "inputHash": "875e602179c04230bd3b8e092ed4109a80f4c6440227312ca75b8f132a462b78",
+      "description": {
+        "en": "Question 13. Rectangle A′B′C′D′ is similar to rectangle ABCD on a coordinate plane. Rectangle ABCD has vertices A(2, 4), B(6, 4), C(6, 2), and D(2, 2). Rectangle A′B′C′D′ has vertices A′(−1, 2), B′(−3, 2), C′(−3, 1), and D′(−1, 1). Which sequence of transformations maps rectangle ABCD onto rectangle A′B′C′D′? Choices: A: a translation 8 units to the left, then a dilation by a scale factor of 1/2 with a center of dilation at the origin. B: a reflection over the y-axis, then a dilation by a scale factor of 1/2 with a center of dilation at the origin. C: a dilation by a scale factor of 1/2 with a center of dilation at the origin, then a 90° counterclockwise rotation about the origin. D: a 90° counterclockwise rotation about the origin, then a dilation by a scale factor of 1/2 with a center of dilation at the origin.",
+        "es": "Pregunta 13. El rectángulo A′B′C′D′ es similar al rectángulo ABCD, como se muestra en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. El rectángulo ABCD tiene A en (2, 4), B en (6, 4), C en (6, 2) y D en (2, 2); mide 4 unidades de ancho y 2 unidades de alto. El rectángulo A′B′C′D′ tiene A′ en (−1, 2), B′ en (−3, 2), C′ en (−3, 1) y D′ en (−1, 1); mide 2 unidades de ancho y 1 unidad de alto. ¿Qué secuencia de transformaciones mapea el rectángulo ABCD en el rectángulo A′B′C′D′? Opciones: A: una traslación de 8 unidades hacia la izquierda, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. B: una reflexión sobre el eje y, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. C: una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen, luego una rotación de 90° en sentido contrario al reloj alrededor del origen. D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(2, 4)",
+          "B(6, 4)",
+          "C(6, 2)",
+          "D(2, 2)",
+          "A′(−1, 2)",
+          "B′(−3, 2)",
+          "C′(−3, 1)",
+          "D′(−1, 1)",
+          "8 units",
+          "1/2",
+          "90°",
+          "A: a translation 8 units to the left, then a dilation by a scale factor of 1/2 with a center of dilation at the origin",
+          "B: a reflection over the y-axis, then a dilation by a scale factor of 1/2 with a center of dilation at the origin",
+          "C: a dilation by a scale factor of 1/2 with a center of dilation at the origin, then a 90° counterclockwise rotation about the origin",
+          "D: a 90° counterclockwise rotation about the origin, then a dilation by a scale factor of 1/2 with a center of dilation at the origin",
+          "(2, 4)",
+          "(6, 4)",
+          "(6, 2)",
+          "(2, 2)",
+          "(−1, 2)",
+          "(−3, 2)",
+          "(−3, 1)",
+          "(−1, 1)"
+        ],
+        "es": [
+          "A′B′C′D′",
+          "ABCD",
+          "(2, 4)",
+          "(6, 4)",
+          "(6, 2)",
+          "(2, 2)",
+          "4 unidades",
+          "2 unidades",
+          "(−1, 2)",
+          "(−3, 2)",
+          "(−3, 1)",
+          "(−1, 1)",
+          "1 unidad",
+          "8 unidades",
+          "1/2",
+          "90°",
+          "alrededor del origen",
+          "A: una traslación de 8 unidades hacia la izquierda, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen",
+          "B: una reflexión sobre el eje y, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen",
+          "C: una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen, luego una rotación de 90° en sentido contrario al reloj alrededor del origen",
+          "D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q14": {
+      "inputHash": "6f7005cccb66580a72c88c9f44ca9b0193740629b71a181dc4a05db4ab1a5860",
+      "description": {
+        "en": "Question 14. Patty has a flower box in the shape of a rectangular prism with interior dimensions that are 15 inches in length, 8 inches in width, and 6 inches in height. Patty will fill the flower box 3/4 full of soil. How many cubic inches of soil will be in the flower box? Choices: A: 387. B: 516. C: 540. D: 720.",
+        "es": "Pregunta 14. Patty tiene un macetero con forma de prisma rectangular. Las dimensiones interiores son 15 pulgadas de longitud, 8 pulgadas de ancho y 6 pulgadas de altura. Patty llenará el macetero 3/4 con tierra. ¿Cuántas pulgadas cúbicas de tierra habrá en el macetero? Opciones: A: 387. B: 516. C: 540. D: 720."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 inches",
+          "8 inches",
+          "6 inches",
+          "3/4",
+          "387",
+          "516",
+          "540",
+          "720",
+          "A: 387",
+          "B: 516",
+          "C: 540",
+          "D: 720"
+        ],
+        "es": [
+          "15 pulgadas",
+          "8 pulgadas",
+          "6 pulgadas",
+          "3/4",
+          "387",
+          "516",
+          "540",
+          "720",
+          "A: 387",
+          "B: 516",
+          "C: 540",
+          "D: 720"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q15": {
+      "inputHash": "4a75f7ad1ee55b7a1a45c47a9332f1c64883707f0d322916989dc7b8389b8fb6",
+      "description": {
+        "en": "Question 15. On a coordinate plane, the graph of a line passes through the origin and the point (10, 14). What is the equation of the line? Choices: A: y = (5/7)x. B: y = (7/5)x. C: y = x + 5/7. D: y = x + 7/5.",
+        "es": "Pregunta 15. En un plano de coordenadas, el gráfico de una recta atraviesa el origen y el punto (10, 14). ¿Cuál es la ecuación de la recta? Opciones: A: y = 5/7x. B: y = 7/5x. C: y = x + 5/7. D: y = x + 7/5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(10, 14)",
+          "y = (5/7)x",
+          "y = (7/5)x",
+          "y = x + 5/7",
+          "y = x + 7/5",
+          "A: y = (5/7)x",
+          "B: y = (7/5)x",
+          "C: y = x + 5/7",
+          "D: y = x + 7/5",
+          "(5/7)",
+          "(7/5)",
+          "5/7",
+          "7/5"
+        ],
+        "es": [
+          "(10, 14)",
+          "y = 5/7x",
+          "y = 7/5x",
+          "y = x + 5/7",
+          "y = x + 7/5",
+          "A: y = 5/7x",
+          "B: y = 7/5x",
+          "C: y = x + 5/7",
+          "D: y = x + 7/5",
+          "5/7",
+          "7/5"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q16": {
+      "inputHash": "eea056fedae5022a587e2b0b78fdfd7570ada25369bbb6ac6994db25dd6f4c89",
+      "description": {
+        "en": "Question 16. Which statement about the solution to the equation 3 = −(1/3)x is true? Choices: A: There is no solution. B: There is only one solution, x = −1. C: There is only one solution, x = −9. D: There are an infinite number of solutions.",
+        "es": "Pregunta 16. ¿Qué afirmación sobre la solución de la ecuación que se muestra a continuación es verdadera? La ecuación es 3 = −(1/3)x. Opciones: A: No hay solución. B: Hay solo una solución, x = −1. C: Hay solo una solución, x = −9. D: Hay una cantidad infinita de soluciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 = −(1/3)x",
+          "x = −1",
+          "x = −9",
+          "A: There is no solution",
+          "B: There is only one solution, x = −1",
+          "C: There is only one solution, x = −9",
+          "D: There are an infinite number of solutions",
+          "(1/3)"
+        ],
+        "es": [
+          "3 = −(1/3)x",
+          "x = −1",
+          "x = −9",
+          "A: No hay solución",
+          "B: Hay solo una solución, x = −1",
+          "C: Hay solo una solución, x = −9",
+          "D: Hay una cantidad infinita de soluciones",
+          "(1/3)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q17": {
+      "inputHash": "f91e714d5d02151790c8c9b1c76a82f036af361cb1127d1c4cebaad55bd8067e",
+      "description": {
+        "en": "Question 17. A study was conducted to determine the relationship between the age, x, in years, of a certain brand of motorcycle and its value, y, in dollars. The equation y = −750x + 8,500 best models the data. Based on the equation, what is the estimated value of a motorcycle that is 5 years old? Choices: A: $3,750. B: $4,750. C: $7,750. D: $12,250.",
+        "es": "Pregunta 17. Se realizó un estudio para determinar la relación entre la antigüedad, x, en años, de una motocicleta de cierta marca y su valor, y, en dólares. La ecuación y = −750x + 8,500 representa mejor estos datos. Según la ecuación, ¿cuál es el valor estimado de una motocicleta que tiene 5 años? Opciones: A: $3,750 B: $4,750 C: $7,750 D: $12,250"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −750x + 8,500",
+          "5 years",
+          "$3,750",
+          "$4,750",
+          "$7,750",
+          "$12,250",
+          "A: $3,750",
+          "B: $4,750",
+          "C: $7,750",
+          "D: $12,250"
+        ],
+        "es": [
+          "y = −750x + 8,500",
+          "5 años",
+          "$3,750",
+          "$4,750",
+          "$7,750",
+          "$12,250",
+          "A: $3,750",
+          "B: $4,750",
+          "C: $7,750",
+          "D: $12,250"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q18": {
+      "inputHash": "ca0935c55926b4d4c598022613b88706c87daf346939725f9b45a6506a955fcb",
+      "description": {
+        "en": "Question 18. Which statement best describes the data in a scatter plot where the y-values are decreasing as the x-values are increasing? Choices: A: The data can best be modeled by a vertical line. B: The data can best be modeled by a horizontal line. C: The data can best be modeled by a line with a positive slope. D: The data can best be modeled by a line with a negative slope.",
+        "es": "Pregunta 18. ¿Qué afirmación describe mejor los datos en un diagrama de dispersión donde los valores de y disminuyen a medida que los valores de x aumentan? Opciones: A: Los datos pueden representarse mejor con una recta vertical. B: Los datos pueden representarse mejor con una recta horizontal. C: Los datos pueden representarse mejor con una recta con una pendiente positiva. D: Los datos pueden representarse mejor con una recta con una pendiente negativa."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y-values",
+          "x-values",
+          "vertical line",
+          "horizontal line",
+          "positive slope",
+          "negative slope",
+          "A: The data can best be modeled by a vertical line",
+          "B: The data can best be modeled by a horizontal line",
+          "C: The data can best be modeled by a line with a positive slope",
+          "D: The data can best be modeled by a line with a negative slope"
+        ],
+        "es": [
+          "y disminuyen",
+          "x aumentan",
+          "recta vertical",
+          "recta horizontal",
+          "pendiente positiva",
+          "pendiente negativa",
+          "A: Los datos pueden representarse mejor con una recta vertical",
+          "B: Los datos pueden representarse mejor con una recta horizontal",
+          "C: Los datos pueden representarse mejor con una recta con una pendiente positiva",
+          "D: Los datos pueden representarse mejor con una recta con una pendiente negativa"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q19": {
+      "inputHash": "a974ad436b586e2b9715d4366a9070ea92ef0baadc09ec3c60446ee919790d1c",
+      "description": {
+        "en": "Question 19. Which proportional relationship has the greatest rate of change? Choices: A: y = 7x. B: The value of y increases by 12 for every increase of 4 in the value of x. C: A table with columns x and y and rows (0, 0), (2, 8), (4, 16), and (6, 24). D: A coordinate graph of a ray beginning at (0, 0) and rising to the right, passing through (1, 6), (2, 12), and (3, 18), with an arrow continuing upward and right. The x-axis is labeled x, with labeled values 0, 1, 2, and 3; the y-axis is labeled y, with labeled values 2, 4, 6, 8, 10, 12, 14, 16, and 18.",
+        "es": "Pregunta 19. ¿Qué relación proporcional tiene una tasa de cambio mayor? Opciones: A: La ecuación y = 7x. B: El valor de y aumenta en 12 por cada aumento de 4 en el valor de x. C: Una tabla con columnas x e y. Sus pares ordenados son (0, 0), (2, 8), (4, 16) y (6, 24). D: Una gráfica en el plano xy. La recta parte del origen (0, 0), asciende hacia la derecha y pasa por puntos de la cuadrícula como (1, 6), (2, 12) y (3, 18); continúa con una flecha hacia arriba y a la derecha. El eje x está rotulado en 0, 1, 2 y 3, con líneas intermedias cada 0.5 unidad. El eje y está rotulado de 0 a 18 en incrementos de 2, y la cuadrícula continúa hasta 20."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 7x",
+          "12",
+          "4",
+          "(0, 0)",
+          "(2, 8)",
+          "(4, 16)",
+          "(6, 24)",
+          "(1, 6)",
+          "(2, 12)",
+          "(3, 18)",
+          "A: y = 7x",
+          "B: The value of y increases by 12 for every increase of 4 in the value of x",
+          "C: A table with columns x and y and rows (0, 0), (2, 8), (4, 16), and (6, 24)",
+          "D: A coordinate graph of a ray beginning at (0, 0) and rising to the right, passing through (1, 6), (2, 12), and (3, 18), with an arrow continuing upward and right. The x-axis is labeled x, with labeled values 0, 1, 2, and 3; the y-axis is labeled y, with labeled values 2, 4, 6, 8, 10, 12, 14, 16, and 18"
+        ],
+        "es": [
+          "y = 7x",
+          "12",
+          "4",
+          "(0, 0)",
+          "(2, 8)",
+          "(4, 16)",
+          "(6, 24)",
+          "(1, 6)",
+          "(2, 12)",
+          "(3, 18)",
+          "0.5",
+          "20",
+          "A: La ecuación y = 7x",
+          "B: El valor de y aumenta en 12 por cada aumento de 4 en el valor de x",
+          "C: Una tabla con columnas x e y. Sus pares ordenados son (0, 0), (2, 8), (4, 16) y (6, 24)",
+          "D: Una gráfica en el plano xy. La recta parte del origen (0, 0), asciende hacia la derecha y pasa por puntos de la cuadrícula como (1, 6), (2, 12) y (3, 18); continúa con una flecha hacia arriba y a la derecha. El eje x está rotulado en 0, 1, 2 y 3, con líneas intermedias cada 0.5 unidad. El eje y está rotulado de 0 a 18 en incrementos de 2, y la cuadrícula continúa hasta 20"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q20": {
+      "inputHash": "294b348c372cf484a48b53e9372a817ca6cbc316c7eeaaa084a9274bf76b1830",
+      "description": {
+        "en": "Question 20. A flower vase is in the shape of a cylinder and has a diameter of 5 inches and a height of 7 inches. Which equation could be used to determine the volume, in cubic inches, of the vase? Choices: A: V = π(5)²(7). B: V = π(7)²(5). C: V = π(7)²(2.5). D: V = π(2.5)²(7).",
+        "es": "Pregunta 20. Un florero tiene forma de cilindro, un diámetro de 5 pulgadas y una altura de 7 pulgadas. ¿Qué ecuación podría usarse para determinar el volumen, en pulgadas cúbicas, del florero? Opciones: A: V = π(5)²(7) B: V = π(7)²(5) C: V = π(7)²(2.5) D: V = π(2.5)²(7)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 inches",
+          "7 inches",
+          "cubic inches",
+          "V = π(5)²(7)",
+          "V = π(7)²(5)",
+          "V = π(7)²(2.5)",
+          "V = π(2.5)²(7)",
+          "A: V = π(5)²(7)",
+          "B: V = π(7)²(5)",
+          "C: V = π(7)²(2.5)",
+          "D: V = π(2.5)²(7)",
+          "(5)",
+          "(7)",
+          "(2.5)"
+        ],
+        "es": [
+          "5 pulgadas",
+          "7 pulgadas",
+          "V = π(5)²(7)",
+          "V = π(7)²(5)",
+          "V = π(7)²(2.5)",
+          "V = π(2.5)²(7)",
+          "A: V = π(5)²(7)",
+          "B: V = π(7)²(5)",
+          "C: V = π(7)²(2.5)",
+          "D: V = π(2.5)²(7)",
+          "(5)",
+          "(7)",
+          "(2.5)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q21": {
+      "inputHash": "b6156f0af05e69f6c70d697fb0748d9360766eed067176cb34a2603bfebfc3ba",
+      "description": {
+        "en": "Question 21. The planet Mercury is approximately 3.6 × 10⁷ miles away from the sun, and the planet Jupiter is approximately 4.8 × 10⁸ miles away. About how many times farther from the sun is planet Jupiter than planet Mercury? Choices: A: 1.3. B: 7.5. C: 13.3. D: 17.3.",
+        "es": "Pregunta 21. El planeta Mercurio se encuentra aproximadamente a 3.6 × 10⁷ millas del Sol, y el planeta Júpiter se encuentra aproximadamente a 4.8 × 10⁸ millas. ¿Cuántas veces más lejos del Sol está Júpiter en relación con Mercurio, aproximadamente? Opciones: A: 1.3 B: 7.5 C: 13.3 D: 17.3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3.6 × 10⁷",
+          "4.8 × 10⁸",
+          "1.3",
+          "7.5",
+          "13.3",
+          "17.3",
+          "A: 1.3",
+          "B: 7.5",
+          "C: 13.3",
+          "D: 17.3",
+          "10⁷",
+          "10⁸"
+        ],
+        "es": [
+          "3.6 × 10⁷",
+          "4.8 × 10⁸",
+          "1.3",
+          "7.5",
+          "13.3",
+          "17.3",
+          "A: 1.3",
+          "B: 7.5",
+          "C: 13.3",
+          "D: 17.3",
+          "10⁷",
+          "10⁸"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q22": {
+      "inputHash": "b97ab2a5b6edb23e6e33fea03af33c71fbfb8d1472ef26b21a9675d9f3b3dc7e",
+      "description": {
+        "en": "Question 22. Which expression is equivalent to (5⁻²)⁵ × 5⁴? Choices: A: 5¹². B: 5⁷. C: 1/5⁶. D: 1/5⁴⁰.",
+        "es": "Pregunta 22. ¿Qué expresión es equivalente a (5⁻²)⁵ × 5⁴? Opciones: A: 5¹² B: 5⁻⁷ C: 1/5⁶ D: 1/5⁴⁰"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(5⁻²)⁵ × 5⁴",
+          "5¹²",
+          "5⁷",
+          "1/5⁶",
+          "1/5⁴⁰",
+          "A: 5¹²",
+          "B: 5⁷",
+          "C: 1/5⁶",
+          "D: 1/5⁴⁰",
+          "(5⁻²)",
+          "5⁴",
+          "1/5"
+        ],
+        "es": [
+          "(5⁻²)⁵ × 5⁴",
+          "5¹²",
+          "5⁻⁷",
+          "1/5⁶",
+          "1/5⁴⁰",
+          "A: 5¹²",
+          "B: 5⁻⁷",
+          "C: 1/5⁶",
+          "D: 1/5⁴⁰",
+          "(5⁻²)",
+          "5⁴",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q23": {
+      "inputHash": "6d91e11fbcea4f94bafee48363f7b51e47ba60ba95dfadf3e1c26a34086f2cfa",
+      "description": {
+        "en": "Question 23. Linear functions M and P are given. Function M is represented by a table with columns x and y and rows (−2, −9), (0, 1), (2, 11), and (4, 21). Function P is represented by the equation y = 7x + 9. In comparing the rates of change, which statement about Function M and Function P is true? Choices: A: Their rates of change differ by 2. B: Their rates of change differ by 4. C: Function M has a greater rate of change than Function P. D: Function M and Function P have the same rate of change.",
+        "es": "Pregunta 23. A continuación, se muestran las funciones lineales M y P. La Función M se presenta en una tabla con columnas x e y y los pares ordenados (−2, −9), (0, 1), (2, 11) y (4, 21). La Función P está definida por y = 7x + 9. Al comparar las tasas de cambio, ¿qué afirmación sobre la Función M y la Función P es verdadera? Opciones: A: Sus tasas de cambio difieren en 2. B: Sus tasas de cambio difieren en 4. C: La Función M tiene una tasa de cambio mayor que la Función P. D: La Función M y la Función P tienen la misma tasa de cambio."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−2, −9)",
+          "(0, 1)",
+          "(2, 11)",
+          "(4, 21)",
+          "y = 7x + 9",
+          "differ by 2",
+          "differ by 4",
+          "A: Their rates of change differ by 2",
+          "B: Their rates of change differ by 4",
+          "C: Function M has a greater rate of change than Function P",
+          "D: Function M and Function P have the same rate of change"
+        ],
+        "es": [
+          "(−2, −9)",
+          "(0, 1)",
+          "(2, 11)",
+          "(4, 21)",
+          "y = 7x + 9",
+          "2",
+          "4",
+          "A: Sus tasas de cambio difieren en 2",
+          "B: Sus tasas de cambio difieren en 4",
+          "C: La Función M tiene una tasa de cambio mayor que la Función P",
+          "D: La Función M y la Función P tienen la misma tasa de cambio"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q24": {
+      "inputHash": "517b2f2e5bcb3eb64c03c2497eed9196715eb97b1894b64c2cc9d1867c644b05",
+      "description": {
+        "en": "Question 24. The scatter plot titled “FOOD TRUCK CUSTOMERS” shows the average number of customers who visit a food truck per day, depending on the number of days the food truck stays in the same location. The horizontal x-axis is labeled “Number of Days in Same Location,” runs from 0 through 20, and is numbered every 2 units. The vertical y-axis is labeled “Number of Customers,” runs from 0 through 60, and is numbered every 5 units. The plotted points are (2, 20), (2, 22), (3, 30), (4, 20), (5, 25), (6, 24), (6, 30), (7, 27), (8, 36), (10, 26), (10, 29), (11, 37), (12, 35), (12, 42), (13, 40), (14, 28), (15, 40), (15, 47), (16, 45), (16, 52), (17, 47), (18, 37), (18, 54), (19, 57), and (20, 55). Which statement best describes the association between the number of days the food truck is in the same location and the number of customers who visit the food truck per day? Choices: A: There is no association. B: There is a nonlinear association. C: There is a positive linear association. D: There is a negative linear association.",
+        "es": "Pregunta 24. El siguiente diagrama de dispersión muestra la cantidad promedio de clientes que visitan un camión de venta de alimentos por día, en función de la cantidad de días que el camión de venta de alimentos permanece en la misma ubicación. La gráfica se titula «CLIENTES DEL CAMIÓN DE VENTA DE ALIMENTOS». El eje horizontal representa la «Cantidad de días en la misma ubicación» y está marcado de 0 a 20 en incrementos de 2. El eje vertical representa la «Cantidad de clientes» y está marcado de 5 a 60 en incrementos de 5. Los puntos trazados son aproximadamente (2, 20), (2, 22), (3, 30), (4, 20), (5, 25), (6, 24), (6, 30), (7, 27), (8, 36), (10, 26), (10, 29), (11, 37), (12, 35), (12, 42), (13, 40), (14, 28), (15, 40), (15, 47), (16, 45), (16, 52), (17, 47), (18, 37), (18, 54), (19, 57) y (20, 55). En conjunto, los puntos ascienden de izquierda a derecha con dispersión alrededor de una tendencia aproximadamente recta. ¿Qué afirmación describe mejor la asociación entre la cantidad de días que el camión de venta de alimentos permanece en la misma ubicación y la cantidad de clientes que visitan el camión de venta de alimentos por día? Opciones: A: No hay asociación. B: Hay una asociación no lineal. C: Hay una asociación lineal positiva. D: Hay una asociación lineal negativa."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 through 20",
+          "every 2 units",
+          "0 through 60",
+          "every 5 units",
+          "(2, 20)",
+          "(2, 22)",
+          "(3, 30)",
+          "(4, 20)",
+          "(5, 25)",
+          "(6, 24)",
+          "(6, 30)",
+          "(7, 27)",
+          "(8, 36)",
+          "(10, 26)",
+          "(10, 29)",
+          "(11, 37)",
+          "(12, 35)",
+          "(12, 42)",
+          "(13, 40)",
+          "(14, 28)",
+          "(15, 40)",
+          "(15, 47)",
+          "(16, 45)",
+          "(16, 52)",
+          "(17, 47)",
+          "(18, 37)",
+          "(18, 54)",
+          "(19, 57)",
+          "(20, 55)",
+          "no association",
+          "nonlinear association",
+          "positive linear association",
+          "negative linear association",
+          "A: There is no association",
+          "B: There is a nonlinear association",
+          "C: There is a positive linear association",
+          "D: There is a negative linear association"
+        ],
+        "es": [
+          "0 a 20",
+          "incrementos de 2",
+          "5 a 60",
+          "incrementos de 5",
+          "(2, 20)",
+          "(2, 22)",
+          "(3, 30)",
+          "(4, 20)",
+          "(5, 25)",
+          "(6, 24)",
+          "(6, 30)",
+          "(7, 27)",
+          "(8, 36)",
+          "(10, 26)",
+          "(10, 29)",
+          "(11, 37)",
+          "(12, 35)",
+          "(12, 42)",
+          "(13, 40)",
+          "(14, 28)",
+          "(15, 40)",
+          "(15, 47)",
+          "(16, 45)",
+          "(16, 52)",
+          "(17, 47)",
+          "(18, 37)",
+          "(18, 54)",
+          "(19, 57)",
+          "(20, 55)",
+          "A: No hay asociación",
+          "B: Hay una asociación no lineal",
+          "C: Hay una asociación lineal positiva",
+          "D: Hay una asociación lineal negativa"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q25": {
+      "inputHash": "49e0aa81e9fa78c967a6abcd8348c8a3b3e493586391fc337bc340211dd6e916",
+      "description": {
+        "en": "Question 25. The measures of the angles in triangle UVW are given. Triangle UVW has vertex U at the top, vertex V at the lower left, and vertex W at the lower right. The interior angle at V measures 30°, the interior angle at W measures 24°, and the interior angle at U measures (3x − 9)°. What is the value of x? Choices: A: 21 B: 39 C: 45 D: 126",
+        "es": "Pregunta 25. Las medidas de los ángulos en el triángulo UVW se muestran en el siguiente diagrama. El triángulo tiene el vértice U arriba, V abajo a la izquierda y W abajo a la derecha; V y W están unidos por una base horizontal. El ángulo interior en V mide 30°, el ángulo interior en W mide 24° y el ángulo interior en U mide (3x − 9)°. ¿Cuál es el valor de x? Opciones: A: 21 B: 39 C: 45 D: 126"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "30°",
+          "24°",
+          "(3x − 9)°",
+          "21",
+          "39",
+          "45",
+          "126",
+          "A: 21",
+          "B: 39",
+          "C: 45",
+          "D: 126",
+          "(3x − 9)"
+        ],
+        "es": [
+          "30°",
+          "24°",
+          "(3x − 9)°",
+          "21",
+          "39",
+          "45",
+          "126",
+          "A: 21",
+          "B: 39",
+          "C: 45",
+          "D: 126",
+          "(3x − 9)"
+        ]
+      }
+    },
+    "nysed-2021-g8-mc-q26": {
+      "inputHash": "cb34ab1fc07463820495bf982a99ea594a4c92e31d7032fac5a519176be799ed",
+      "description": {
+        "en": "Question 26. The graph of a function is given on a coordinate plane with horizontal x-axis and vertical y-axis. The function begins at (−7, −4) and follows an increasing nonlinear curve to (−4, 2). It then follows a horizontal line segment from (−4, 2) to (1, 2). Next, it follows an increasing nonlinear curve from (1, 2) to (4, 9). Finally, it follows a decreasing nonlinear curve from (4, 9) to (11, 1). No endpoints are marked as open. Which statement correctly describes the function on a given interval? Choices: A: The function is decreasing and nonlinear between x = −7 and x = −4. B: The function is increasing and linear between x = −4 and x = 1. C: The function is increasing and linear between x = 1 and x = 4. D: The function is decreasing and nonlinear between x = 4 and x = 11.",
+        "es": "Pregunta 26. En el siguiente plano de coordenadas se muestra el gráfico de una función. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. La gráfica consta de cuatro partes conectadas: una curva creciente y no lineal desde (−7, −4) hasta (−4, 2); un segmento horizontal desde (−4, 2) hasta (1, 2); una curva creciente y no lineal desde (1, 2) hasta (4, 9); y una curva decreciente y no lineal desde (4, 9) hasta (11, 1). No se indican extremos abiertos. ¿Qué afirmación describe correctamente la función en un intervalo determinado? Opciones: A: La función es decreciente y no lineal entre x = −7 y x = −4. B: La función es creciente y lineal entre x = −4 y x = 1. C: La función es creciente y lineal entre x = 1 y x = 4. D: La función es decreciente y no lineal entre x = 4 y x = 11."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−7, −4)",
+          "(−4, 2)",
+          "(1, 2)",
+          "(4, 9)",
+          "(11, 1)",
+          "x = −7",
+          "x = −4",
+          "x = 1",
+          "x = 4",
+          "x = 11",
+          "A: The function is decreasing and nonlinear between x = −7 and x = −4",
+          "B: The function is increasing and linear between x = −4 and x = 1",
+          "C: The function is increasing and linear between x = 1 and x = 4",
+          "D: The function is decreasing and nonlinear between x = 4 and x = 11"
+        ],
+        "es": [
+          "(−7, −4)",
+          "(−4, 2)",
+          "(1, 2)",
+          "(4, 9)",
+          "(11, 1)",
+          "x = −7",
+          "x = −4",
+          "x = 1",
+          "x = 4",
+          "x = 11",
+          "A: La función es decreciente y no lineal entre x = −7 y x = −4",
+          "B: La función es creciente y lineal entre x = −4 y x = 1",
+          "C: La función es creciente y lineal entre x = 1 y x = 4",
+          "D: La función es decreciente y no lineal entre x = 4 y x = 11"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2019-grade-6-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2019-g6-mc-q1": {
+      "inputHash": "125495ef9eea758c59763c56742aa08a3ce2a025d98b896d88299ae8d580e64d",
+      "description": {
+        "en": "Question 1. Which coordinate plane shows a polygon with four vertices graphed at (−5, 5), (2, 4), (6, −2), and (−3, −6)? Each choice is a coordinate plane with x- and y-axes marked in 1-unit intervals from −6 through 6. Choices: A: A quadrilateral whose consecutive vertices are (−5, 5), (2, 4), (6, −2), and (−3, −6), connected back to (−5, 5). B: A quadrilateral whose consecutive vertices are (−5, 5), (2, 4), (6, −2), and (−6, −2), connected back to (−5, 5). C: A quadrilateral whose consecutive vertices are (−5, 5), (4, 2), (2, −6), and (−3, −6), connected back to (−5, 5). D: A quadrilateral whose consecutive vertices are (−5, 5), (6, 2), (4, −2), and (−3, −6), connected back to (−5, 5).",
+        "es": "Pregunta 1. ¿Qué plano de coordenadas muestra un polígono con cuatro vértices graficados en (−5, 5), (2, 4), (6, −2), y (−3, −6)? Cada opción presenta un plano con ejes x e y, una cuadrícula de unidades enteras y cuatro segmentos que unen consecutivamente los vértices indicados y cierran el polígono. Opciones: A: Polígono con vértices en (−5, 5), (2, 4), (6, −2) y (−3, −6). B: Polígono con vértices en (−5, 5), (2, 4), (6, −2) y (−6, −2). C: Polígono con vértices en (−5, 5), (4, 2), (2, −6) y (−3, −6). D: Polígono con vértices en (−5, 5), (6, 2), (4, −2) y (−3, −6)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−5, 5)",
+          "(2, 4)",
+          "(6, −2)",
+          "(−3, −6)",
+          "(−6, −2)",
+          "(4, 2)",
+          "(2, −6)",
+          "(6, 2)",
+          "(4, −2)",
+          "−6",
+          "6",
+          "A: A quadrilateral whose consecutive vertices are (−5, 5), (2, 4), (6, −2), and (−3, −6), connected back to (−5, 5)",
+          "B: A quadrilateral whose consecutive vertices are (−5, 5), (2, 4), (6, −2), and (−6, −2), connected back to (−5, 5)",
+          "C: A quadrilateral whose consecutive vertices are (−5, 5), (4, 2), (2, −6), and (−3, −6), connected back to (−5, 5)",
+          "D: A quadrilateral whose consecutive vertices are (−5, 5), (6, 2), (4, −2), and (−3, −6), connected back to (−5, 5)"
+        ],
+        "es": [
+          "(−5, 5)",
+          "(2, 4)",
+          "(6, −2)",
+          "(−3, −6)",
+          "(−6, −2)",
+          "(4, 2)",
+          "(2, −6)",
+          "(6, 2)",
+          "(4, −2)",
+          "A: Polígono con vértices en (−5, 5), (2, 4), (6, −2) y (−3, −6)",
+          "B: Polígono con vértices en (−5, 5), (2, 4), (6, −2) y (−6, −2)",
+          "C: Polígono con vértices en (−5, 5), (4, 2), (2, −6) y (−3, −6)",
+          "D: Polígono con vértices en (−5, 5), (6, 2), (4, −2) y (−3, −6)"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q2": {
+      "inputHash": "6962309cb88b087fb853a478f7d83602aca8506a55f2d5b1e5d53a99d8090c77",
+      "description": {
+        "en": "Question 2. What is the value of the expression (3² · (2³ + 4))/2²? Choices: A: 10 B: 15 C: 19 D: 27",
+        "es": "Pregunta 2. ¿Cuál es el valor de la expresión [3² · (2³ + 4)]/2²? Opciones: A: 10 B: 15 C: 19 D: 27"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3² · (2³ + 4))/2²",
+          "10",
+          "15",
+          "19",
+          "27",
+          "A: 10",
+          "B: 15",
+          "C: 19",
+          "D: 27",
+          "3²",
+          "(2³ + 4)",
+          "2²"
+        ],
+        "es": [
+          "[3² · (2³ + 4)]/2²",
+          "10",
+          "15",
+          "19",
+          "27",
+          "A: 10",
+          "B: 15",
+          "C: 19",
+          "D: 27",
+          "3²",
+          "(2³ + 4)",
+          "2²"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q3": {
+      "inputHash": "e9775bdf9f965c92d855f2cbc653199c7fff04dcfe24046e95be1b9cca2e9018",
+      "description": {
+        "en": "Question 3. The grid is in the shape of a rectangle. It contains 6 equal columns and 8 equal rows, making 48 unit squares. A diagonal line segment runs from the rectangle’s upper-left corner to its lower-right corner. The entire triangular region below and to the left of the diagonal is shaded gray; the triangular region above and to the right is unshaded. What is the area, in square units, of the shaded part of the rectangle? Choices: A: 14 B: 24 C: 28 D: 48",
+        "es": "Pregunta 3. La siguiente cuadrilla tiene forma de rectángulo. El rectángulo está dividido en 6 columnas y 8 filas de cuadrados unitarios, para un total de 48 cuadrados. Un segmento diagonal va desde la esquina superior izquierda hasta la esquina inferior derecha y divide el rectángulo en dos triángulos. Está sombreado el triángulo situado debajo y a la izquierda de la diagonal, incluidos los medios cuadrados atravesados por ella. ¿Cuál es el área, en unidades cuadradas, de la parte sombreada del rectángulo? Opciones: A: 14 B: 24 C: 28 D: 48"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "8",
+          "48",
+          "14",
+          "24",
+          "28",
+          "A: 14",
+          "B: 24",
+          "C: 28",
+          "D: 48"
+        ],
+        "es": [
+          "6",
+          "8",
+          "48",
+          "14",
+          "24",
+          "28",
+          "A: 14",
+          "B: 24",
+          "C: 28",
+          "D: 48"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q4": {
+      "inputHash": "96c5628ece59fae9b69d6258226b390717ea3a9733d04a2a6eaf6d7fb377cca0",
+      "description": {
+        "en": "Question 4. Debnil has 6 teaspoons of salt. The ratio of teaspoons to tablespoons is 3 : 1. How many tablespoons of salt does Debnil have? Choices: A: 1/18 B: 1/2 C: 2 D: 18",
+        "es": "Pregunta 4. Debnil tiene 6 cucharaditas de sal. La proporción entre cucharaditas y cucharadas es 3 : 1. ¿Cuántas cucharadas de sal tiene Debnil? Opciones: A: 1/18 B: 1/2 C: 2 D: 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "3 : 1",
+          "1/18",
+          "1/2",
+          "2",
+          "18",
+          "A: 1/18",
+          "B: 1/2",
+          "C: 2",
+          "D: 18"
+        ],
+        "es": [
+          "6",
+          "3 : 1",
+          "1/18",
+          "1/2",
+          "2",
+          "18",
+          "A: 1/18",
+          "B: 1/2",
+          "C: 2",
+          "D: 18"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q7": {
+      "inputHash": "c778d5020175a08c950b090c81ea04a09488dc039de335fe2b4b47c7d82a3e90",
+      "description": {
+        "en": "Question 7. Which expression is equivalent to the phrase below: the quotient of the sum of 2t and 2, and twice the cube of s? Choices: A: 2t + 2/(3s²) B: 2t + 2/(2s³) C: (2t + 2)/(3s²) D: (2t + 2)/(2s³)",
+        "es": "Pregunta 7. ¿Qué expresión es equivalente a la frase que se muestra a continuación? «el cociente de la suma de 2t y 2, y dos veces el cubo de s». Opciones: A: 2t + 2/(3s²) B: 2t + 2/(2s³) C: (2t + 2)/(3s²) D: (2t + 2)/(2s³)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2t",
+          "2",
+          "s",
+          "2t + 2/(3s²)",
+          "2t + 2/(2s³)",
+          "(2t + 2)/(3s²)",
+          "(2t + 2)/(2s³)",
+          "A: 2t + 2/(3s²)",
+          "B: 2t + 2/(2s³)",
+          "C: (2t + 2)/(3s²)",
+          "D: (2t + 2)/(2s³)",
+          "(3s²)",
+          "(2s³)",
+          "(2t + 2)"
+        ],
+        "es": [
+          "2t",
+          "2",
+          "s",
+          "2t + 2/(3s²)",
+          "2t + 2/(2s³)",
+          "(2t + 2)/(3s²)",
+          "(2t + 2)/(2s³)",
+          "A: 2t + 2/(3s²)",
+          "B: 2t + 2/(2s³)",
+          "C: (2t + 2)/(3s²)",
+          "D: (2t + 2)/(2s³)",
+          "(3s²)",
+          "(2s³)",
+          "(2t + 2)"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q10": {
+      "inputHash": "7a1912109a0ee6971ddedd2aba62bf7a13a93c49f86039b5eea5470d2c05a802",
+      "description": {
+        "en": "Question 10. A custodian plans to repaint some classroom bookcases. She has 5 1/4 gallons of paint. All of the bookcases are the same size, and each requires 3/4 gallon of paint. How many bookcases will the custodian be able to repaint with that amount of paint? Choices: A: 3 B: 4 C: 7 D: 15",
+        "es": "Pregunta 10. Una conserje planea volver a pintar algunas bibliotecas del aula. Tiene 5 1/4 galones de pintura. Todas las bibliotecas tienen el mismo tamaño y cada una requiere 3/4 de galón de pintura. ¿Cuántas bibliotecas podrá pintar la conserje con esa cantidad de pintura? Opciones: A: 3 B: 4 C: 7 D: 15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 1/4",
+          "3/4",
+          "3",
+          "4",
+          "7",
+          "15",
+          "A: 3",
+          "B: 4",
+          "C: 7",
+          "D: 15"
+        ],
+        "es": [
+          "5 1/4",
+          "3/4",
+          "3",
+          "4",
+          "7",
+          "15",
+          "A: 3",
+          "B: 4",
+          "C: 7",
+          "D: 15"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q13": {
+      "inputHash": "dbca345bf0c9da5680add325ece5832138a8b25b0c7dde59369d5679869b1191",
+      "description": {
+        "en": "Question 13. Carly purchased 9 1/2 pints of ice cream for a party. If each guest will be served exactly 3/5 pint of ice cream, what is the greatest number of guests that Carly can serve? Choices: A: 5 B: 9 C: 15 D: 16",
+        "es": "Pregunta 13. Carly compró 9 1/2 pintas de helado para una fiesta. Si a cada invitado se le sirve exactamente 3/5 de pinta de helado, ¿cuál es la mayor cantidad de invitados a quienes puede servir Carly? Opciones: A: 5 B: 9 C: 15 D: 16"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9 1/2",
+          "3/5",
+          "5",
+          "9",
+          "15",
+          "16",
+          "A: 5",
+          "B: 9",
+          "C: 15",
+          "D: 16"
+        ],
+        "es": [
+          "9 1/2",
+          "3/5",
+          "5",
+          "9",
+          "15",
+          "16",
+          "A: 5",
+          "B: 9",
+          "C: 15",
+          "D: 16"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q16": {
+      "inputHash": "8f348bb0d80963fcc538f45198282e2b3c7411b5ce18d9e36d936139aaf3f87a",
+      "description": {
+        "en": "Question 16. At a bus station, buses begin their routes at 6:00 a.m. The schedule for two of the buses is based on these time intervals: Bus A has a long route and leaves the station every 75 minutes. Bus B has a short route and leaves the station every 15 minutes. What is the next time Bus A and Bus B will leave the bus station at the same time? Choices: A: 7:00 a.m. B: 7:15 a.m. C: 7:30 a.m. D: 8:30 a.m.",
+        "es": "Pregunta 16. En una estación de autobuses, los autobuses comienzan sus recorridos a las 6:00 a. m. El horario para dos de los autobuses se basa en los intervalos de tiempo que se muestran a continuación. El autobús A tiene un recorrido largo y sale de la estación cada 75 minutos. El autobús B tiene un recorrido corto y sale de la estación cada 15 minutos. ¿Cuál es la próxima hora en la que el autobús A y el autobús B saldrán de la estación de autobuses a la misma hora? Opciones: A: 7:00 a. m. B: 7:15 a. m. C: 7:30 a. m. D: 8:30 a. m."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6:00 a.m",
+          "75",
+          "15",
+          "7:00 a.m",
+          "7:15 a.m",
+          "7:30 a.m",
+          "8:30 a.m",
+          "A: 7:00 a.m",
+          "B: 7:15 a.m",
+          "C: 7:30 a.m",
+          "D: 8:30 a.m"
+        ],
+        "es": [
+          "6:00 a. m",
+          "75 minutos",
+          "15 minutos",
+          "7:00 a. m",
+          "7:15 a. m",
+          "7:30 a. m",
+          "8:30 a. m",
+          "A: 7:00 a. m",
+          "B: 7:15 a. m",
+          "C: 7:30 a. m",
+          "D: 8:30 a. m"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q17": {
+      "inputHash": "a730b3ffa6d15910d7bd292d79125a6d17b5179af13b6cfd008bdff2c7711b93",
+      "description": {
+        "en": "Question 17. Which number has an absolute value greater than 5? Choices: A: −6. B: −5. C: 0. D: 5.",
+        "es": "Pregunta 17. ¿Qué número tiene un valor absoluto mayor que 5? Opciones: A: −6 B: −5 C: 0 D: 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "−6",
+          "−5",
+          "0",
+          "A: −6",
+          "B: −5",
+          "C: 0",
+          "D: 5"
+        ],
+        "es": [
+          "5",
+          "−6",
+          "−5",
+          "0",
+          "A: −6",
+          "B: −5",
+          "C: 0",
+          "D: 5"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q26": {
+      "inputHash": "2e14a7b1daf14b71ca3035561cd628264a1baeb891b39c058efa223498ae9bc7",
+      "description": {
+        "en": "Question 26. A bakery made 9 cakes using 3 bags of flour. The bakery uses the same relationship between cakes made and the amount of flour used to make all of their cakes. Which table of values shows the relationship between the number of cakes the bakery makes and the number of bags of flour the bakery uses? Choices: A: Table titled “CAKES BAKED.” The Cakes row is 1, 2, 3, 4, 5; the corresponding Bags of Flour row is 3, 6, 9, 12, 15. B: Table titled “CAKES BAKED.” The Cakes row is 3, 6, 9, 12, 15; the corresponding Bags of Flour row is 1, 2, 3, 4, 5. C: Table titled “CAKES BAKED.” The Cakes row is 7, 8, 9, 10, 11; the corresponding Bags of Flour row is 1, 2, 3, 4, 5. D: Table titled “CAKES BAKED.” The Cakes row is 1, 2, 3, 4, 5; the corresponding Bags of Flour row is 7, 8, 9, 10, 11.",
+        "es": "Pregunta 26. Una panadería hizo 9 pasteles usando 3 bolsas de harina. La panadería usa la misma relación entre los pasteles hechos y la cantidad de harina usada para hacer todos sus pasteles. ¿Qué tabla de valores muestra la relación entre la cantidad de pasteles que hace la panadería y la cantidad de bolsas de harina que usa la panadería? Opciones: A: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 1, 2, 3, 4, 5. Fila «Bolsas de harina»: 3, 6, 9, 12, 15. B: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 3, 6, 9, 12, 15. Fila «Bolsas de harina»: 1, 2, 3, 4, 5. C: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 7, 8, 9, 10, 11. Fila «Bolsas de harina»: 1, 2, 3, 4, 5. D: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 1, 2, 3, 4, 5. Fila «Bolsas de harina»: 7, 8, 9, 10, 11."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9 cakes",
+          "3 bags of flour",
+          "1, 2, 3, 4, 5",
+          "3, 6, 9, 12, 15",
+          "7, 8, 9, 10, 11",
+          "A: Table titled “CAKES BAKED.” The Cakes row is 1, 2, 3, 4, 5; the corresponding Bags of Flour row is 3, 6, 9, 12, 15",
+          "B: Table titled “CAKES BAKED.” The Cakes row is 3, 6, 9, 12, 15; the corresponding Bags of Flour row is 1, 2, 3, 4, 5",
+          "C: Table titled “CAKES BAKED.” The Cakes row is 7, 8, 9, 10, 11; the corresponding Bags of Flour row is 1, 2, 3, 4, 5",
+          "D: Table titled “CAKES BAKED.” The Cakes row is 1, 2, 3, 4, 5; the corresponding Bags of Flour row is 7, 8, 9, 10, 11"
+        ],
+        "es": [
+          "9 pasteles",
+          "3 bolsas de harina",
+          "1, 2, 3, 4, 5",
+          "3, 6, 9, 12, 15",
+          "7, 8, 9, 10, 11",
+          "A: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 1, 2, 3, 4, 5. Fila «Bolsas de harina»: 3, 6, 9, 12, 15",
+          "B: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 3, 6, 9, 12, 15. Fila «Bolsas de harina»: 1, 2, 3, 4, 5",
+          "C: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 7, 8, 9, 10, 11. Fila «Bolsas de harina»: 1, 2, 3, 4, 5",
+          "D: Tabla titulada «PASTELES HORNEADOS». Fila «Pasteles»: 1, 2, 3, 4, 5. Fila «Bolsas de harina»: 7, 8, 9, 10, 11"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q27": {
+      "inputHash": "dcb97a12a74f0fc31b2bcee287ab6d9cf9b6ba5d4fd989e876d2b1798f4bbfb9",
+      "description": {
+        "en": "Question 27. The volume, V, of any cube with a side length, s, can be determined using the formula V = s³. What is the volume, in cubic centimeters, of a cube with a side length of 2.3 centimeters? Choices: A: 5.29. B: 6.9. C: 8.027. D: 12.167.",
+        "es": "Pregunta 27. El volumen, V, de cualquier cubo con una longitud de lado de s, puede determinarse usando la fórmula V = s³. ¿Cuál es el volumen, en centímetros cúbicos, de un cubo con una longitud de lado de 2.3 centímetros? Opciones: A: 5.29 B: 6.9 C: 8.027 D: 12.167"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "V = s³",
+          "2.3 centimeters",
+          "5.29",
+          "6.9",
+          "8.027",
+          "12.167",
+          "A: 5.29",
+          "B: 6.9",
+          "C: 8.027",
+          "D: 12.167"
+        ],
+        "es": [
+          "V = s³",
+          "2.3 centímetros",
+          "5.29",
+          "6.9",
+          "8.027",
+          "12.167",
+          "A: 5.29",
+          "B: 6.9",
+          "C: 8.027",
+          "D: 12.167"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q28": {
+      "inputHash": "accd37fe85520956adae50e82d99525791bc02682a6f1090b85d9ce73a899cf2",
+      "description": {
+        "en": "Question 28. Mr. Tola has a piece of wood that is 8 1/4 feet in length. He wants to cut it into pieces that are each 3/4 foot in length. How many 3/4-foot pieces of wood can Mr. Tola make? Choices: A: 7. B: 8. C: 9. D: 11.",
+        "es": "Pregunta 28. El señor Tola tiene un trozo de madera de 8 1/4 pies de longitud. Quiere cortarlo en trozos de 3/4 de pie de largo cada uno. ¿Cuántos trozos de madera de 3/4 de pie puede hacer el señor Tola? Opciones: A: 7 B: 8 C: 9 D: 11"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 1/4 feet",
+          "3/4 foot",
+          "3/4-foot",
+          "7",
+          "8",
+          "9",
+          "11",
+          "A: 7",
+          "B: 8",
+          "C: 9",
+          "D: 11",
+          "8 1/4",
+          "3/4"
+        ],
+        "es": [
+          "8 1/4 pies",
+          "3/4 de pie",
+          "7",
+          "8",
+          "9",
+          "11",
+          "A: 7",
+          "B: 8",
+          "C: 9",
+          "D: 11",
+          "8 1/4",
+          "3/4"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q29": {
+      "inputHash": "05dde3518fb7ea749a3ecbcb17d51d4d290c3ceabe5cab969a261ec2c5269c21",
+      "description": {
+        "en": "Question 29. A zoo has 15 toucans and 60 parrots. What is the ratio of the number of toucans to the number of parrots at the zoo? Choices: A: 1 : 4. B: 1 : 5. C: 4 : 1. D: 4 : 5.",
+        "es": "Pregunta 29. Un zoológico tiene 15 tucanes y 60 loros. ¿Cuál es la proporción entre la cantidad de tucanes y la cantidad de loros en el zoológico? Opciones: A: 1 : 4 B: 1 : 5 C: 4 : 1 D: 4 : 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 toucans",
+          "60 parrots",
+          "1 : 4",
+          "1 : 5",
+          "4 : 1",
+          "4 : 5",
+          "A: 1 : 4",
+          "B: 1 : 5",
+          "C: 4 : 1",
+          "D: 4 : 5"
+        ],
+        "es": [
+          "15 tucanes",
+          "60 loros",
+          "1 : 4",
+          "1 : 5",
+          "4 : 1",
+          "4 : 5",
+          "A: 1 : 4",
+          "B: 1 : 5",
+          "C: 4 : 1",
+          "D: 4 : 5"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q30": {
+      "inputHash": "c863173bf3e6804ca759d172ae16d5de394ab520f104634f0e33718a9e407197",
+      "description": {
+        "en": "Question 30. A restaurant used 231 eggs last week. Of these, 46 were brown in color. The remaining eggs were white in color. Which equation can be used to solve for w, the number of white eggs used last week? Choices: A: 231 + 46w = 0. B: 46 + w = 231. C: w = 231 + 46. D: 231 = 46w.",
+        "es": "Pregunta 30. La semana pasada, un restaurante usó 231 huevos. De esos, 46 eran de color marrón. Los huevos restantes eran de color blanco. ¿Qué ecuación puede usarse para resolver w, la cantidad de huevos blancos usados la semana pasada? Opciones: A: 231 + 46w = 0 B: 46 + w = 231 C: w = 231 + 46 D: 231 = 46w"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "231",
+          "46",
+          "w",
+          "231 + 46w = 0",
+          "46 + w = 231",
+          "w = 231 + 46",
+          "231 = 46w",
+          "A: 231 + 46w = 0",
+          "B: 46 + w = 231",
+          "C: w = 231 + 46",
+          "D: 231 = 46w"
+        ],
+        "es": [
+          "231 huevos",
+          "46 eran de color marrón",
+          "231 + 46w = 0",
+          "46 + w = 231",
+          "w = 231 + 46",
+          "231 = 46w",
+          "A: 231 + 46w = 0",
+          "B: 46 + w = 231",
+          "C: w = 231 + 46",
+          "D: 231 = 46w"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q31": {
+      "inputHash": "04daa5e206afd2e11b3a4dc4d739094a646aee1950d386ec030c4a93afead153",
+      "description": {
+        "en": "Question 31. Which expression is equivalent to 9(9m + 3t)? Choices: A: 18m + 3t. B: 81m + 3t. C: 18m + 12t. D: 81m + 27t.",
+        "es": "Pregunta 31. ¿Qué expresión es equivalente a 9(9m + 3t)? Opciones: A: 18m + 3t B: 81m + 3t C: 18m + 12t D: 81m + 27t"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9(9m + 3t)",
+          "18m + 3t",
+          "81m + 3t",
+          "18m + 12t",
+          "81m + 27t",
+          "A: 18m + 3t",
+          "B: 81m + 3t",
+          "C: 18m + 12t",
+          "D: 81m + 27t",
+          "(9m + 3t)"
+        ],
+        "es": [
+          "9(9m + 3t)",
+          "18m + 3t",
+          "81m + 3t",
+          "18m + 12t",
+          "81m + 27t",
+          "A: 18m + 3t",
+          "B: 81m + 3t",
+          "C: 18m + 12t",
+          "D: 81m + 27t",
+          "(9m + 3t)"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q32": {
+      "inputHash": "a696915ee0726d5ec37647006bc9288f0d76a34d7e2add4a399a1c85df90fa32",
+      "description": {
+        "en": "Question 32. Which set of values makes the inequality n ≥ −5 true? Choices: A: {−5, −5.5, −6}. B: {−5, −4.5, −3}. C: {−6, 0, 5}. D: {−6, −7, −8}.",
+        "es": "Pregunta 32. ¿Qué conjunto de valores hace que la desigualdad n ≥ −5 sea verdadera? Opciones: A: {−5, −5.5, −6} B: {−5, −4.5, −3} C: {−6, 0, 5} D: {−6, −7, −8}"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "n ≥ −5",
+          "{−5, −5.5, −6}",
+          "{−5, −4.5, −3}",
+          "{−6, 0, 5}",
+          "{−6, −7, −8}",
+          "A: {−5, −5.5, −6}",
+          "B: {−5, −4.5, −3}",
+          "C: {−6, 0, 5}",
+          "D: {−6, −7, −8}"
+        ],
+        "es": [
+          "n ≥ −5",
+          "{−5, −5.5, −6}",
+          "{−5, −4.5, −3}",
+          "{−6, 0, 5}",
+          "{−6, −7, −8}",
+          "A: {−5, −5.5, −6}",
+          "B: {−5, −4.5, −3}",
+          "C: {−6, 0, 5}",
+          "D: {−6, −7, −8}"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q33": {
+      "inputHash": "25b772c7d54deed9179079bdd87c144446c1b310696ea035855fee208b56b564",
+      "description": {
+        "en": "Question 33. An ice cream shop sold 48 vanilla milkshakes in a day, which was 40% of the total number of milkshakes sold that day. What was the total number of milkshakes that the ice cream shop sold that day? Choices: A: 60. B: 72. C: 100. D: 120.",
+        "es": "Pregunta 33. Una heladería vendió 48 malteadas de vainilla en un día, lo que representó el 40 % de la cantidad total de malteadas vendidas ese día. ¿Cuál fue la cantidad total de malteadas que vendió la heladería ese día? Opciones: A: 60 B: 72 C: 100 D: 120"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "48",
+          "40%",
+          "60",
+          "72",
+          "100",
+          "120",
+          "A: 60",
+          "B: 72",
+          "C: 100",
+          "D: 120"
+        ],
+        "es": [
+          "48",
+          "40 %",
+          "A: 60",
+          "B: 72",
+          "C: 100",
+          "D: 120"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q34": {
+      "inputHash": "562edacf035826f11ecf3ffdd890edc91a8f34529965537835f0eba376e02851",
+      "description": {
+        "en": "Question 34. Which expression represents the phrase below? 3 fewer than a number, p. Choices: A: 3 − p. B: p ÷ 3. C: 3 ÷ p. D: p − 3.",
+        "es": "Pregunta 34. ¿Qué expresión representa la siguiente frase? 3 menor que un número, p. Opciones: A: 3 − p B: p ÷ 3 C: 3 ÷ p D: p − 3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "p",
+          "3 − p",
+          "p ÷ 3",
+          "3 ÷ p",
+          "p − 3",
+          "A: 3 − p",
+          "B: p ÷ 3",
+          "C: 3 ÷ p",
+          "D: p − 3"
+        ],
+        "es": [
+          "3 menor que un número, p",
+          "A: 3 − p",
+          "B: p ÷ 3",
+          "C: 3 ÷ p",
+          "D: p − 3"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q35": {
+      "inputHash": "8def2a738ef0635bdf767e6dbcc7c5921ee3659c6d9cfd9c5173beac7c15ed3a",
+      "description": {
+        "en": "Question 35. What number is not part of the solution set to the inequality below? w − 10 ≤ 16. Choices: A: 11. B: 15. C: 26. D: 27.",
+        "es": "Pregunta 35. ¿Qué número no es parte del conjunto de soluciones de la siguiente desigualdad? w − 10 ≤ 16. Opciones: A: 11 B: 15 C: 26 D: 27"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "w − 10 ≤ 16",
+          "11",
+          "15",
+          "26",
+          "27",
+          "A: 11",
+          "B: 15",
+          "C: 26",
+          "D: 27",
+          "10 ≤ 16"
+        ],
+        "es": [
+          "w − 10 ≤ 16",
+          "A: 11",
+          "B: 15",
+          "C: 26",
+          "D: 27",
+          "10 ≤ 16"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q36": {
+      "inputHash": "df8d84007bdda2c5e6cb41400d99947ad59b14cd37196ad0b0891ccdb10be78c",
+      "description": {
+        "en": "Question 36. The coordinates of the vertices of triangle ABC are A(1, −1), B(1, 4), and C(8, 4). What is the length, in units, of the line segment that connects vertex A and vertex B? Choices: A: 1. B: 4. C: 5. D: 7.",
+        "es": "Pregunta 36. Las coordenadas de los vértices del triángulo ABC son A(1, −1), B(1, 4) y C(8, 4). ¿Cuál es la longitud, en unidades, del segmento que conecta el vértice A y el vértice B? Opciones: A: 1 B: 4 C: 5 D: 7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(1, −1)",
+          "B(1, 4)",
+          "C(8, 4)",
+          "1",
+          "4",
+          "5",
+          "7",
+          "A: 1",
+          "B: 4",
+          "C: 5",
+          "D: 7",
+          "(1, −1)",
+          "(1, 4)",
+          "(8, 4)"
+        ],
+        "es": [
+          "A(1, −1)",
+          "B(1, 4)",
+          "C(8, 4)",
+          "A: 1",
+          "B: 4",
+          "C: 5",
+          "D: 7",
+          "(1, −1)",
+          "(1, 4)",
+          "(8, 4)"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q37": {
+      "inputHash": "c137ceaa9bafd87af42700260968d97233dd4a736c3e767b421e59e32f156aeb",
+      "description": {
+        "en": "Question 37. Ken and Tami are making necklaces. Ken makes 25 necklaces. Tami makes m more necklaces than Ken. Which expression represents the total number of necklaces Ken and Tami made? Choices: A: 25 + (25 + m). B: 25 + 25m. C: 25 + m. D: 25m.",
+        "es": "Pregunta 37. Ken y Tami están haciendo collares. Ken hace 25 collares. Tami hace m collares más que Ken. ¿Qué expresión representa la cantidad total de collares que hacen Ken y Tami? Opciones: A: 25 + (25 + m) B: 25 + 25m C: 25 + m D: 25m"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25",
+          "m",
+          "25 + (25 + m)",
+          "25 + 25m",
+          "25 + m",
+          "25m",
+          "A: 25 + (25 + m)",
+          "B: 25 + 25m",
+          "C: 25 + m",
+          "D: 25m",
+          "(25 + m)"
+        ],
+        "es": [
+          "25",
+          "m",
+          "A: 25 + (25 + m)",
+          "B: 25 + 25m",
+          "C: 25 + m",
+          "D: 25m",
+          "(25 + m)"
+        ]
+      }
+    },
+    "nysed-2019-g6-mc-q38": {
+      "inputHash": "0f3e5fbf0e1f476ed342129c3540001c013f4732d878436f9738581d3fa8e427",
+      "description": {
+        "en": "Question 38. Kira decorates the exterior faces of a gift box in the shape of a cube. The net of Kira’s gift box consists of six congruent squares. A central square has one square attached above it, one attached to its left, one attached to its right, and a vertical column of two squares attached below it. Dashed fold lines separate adjoining squares. A dimension marker spanning one side of the right-hand square labels the side length as 6.5 in. What is the surface area, in square inches, of the gift box that Kira decorates? Choices: A: 91.0. B: 169.0. C: 253.5. D: 274.6.",
+        "es": "Pregunta 38. Kira decora las caras exteriores de una caja de regalo que tiene forma de cubo. La siguiente figura muestra la representación bidimensional de la caja de regalo. El diagrama, titulado «REPRESENTACIÓN BIDIMENSIONAL DE LA CAJA DE REGALO DE KIRA», es una red de un cubo formada por 6 cuadrados congruentes: hay una fila horizontal de 3 cuadrados; un cuadrado está unido por encima del cuadrado central; y 2 cuadrados están unidos consecutivamente por debajo del cuadrado central. Las líneas exteriores son continuas y las líneas que separan cuadrados adyacentes son discontinuas. Un corchete vertical junto al cuadrado derecho indica que la longitud de cada lado es 6.5 pulgadas. ¿Cuál es el área de superficie, en pulgadas cuadradas, de la caja de regalo que decora Kira? Opciones: A: 91.0 B: 169.0 C: 253.5 D: 274.6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "six congruent squares",
+          "6.5 in",
+          "91.0",
+          "169.0",
+          "253.5",
+          "274.6",
+          "A: 91.0",
+          "B: 169.0",
+          "C: 253.5",
+          "D: 274.6"
+        ],
+        "es": [
+          "6 cuadrados congruentes",
+          "6.5 pulgadas",
+          "pulgadas cuadradas",
+          "A: 91.0",
+          "B: 169.0",
+          "C: 253.5",
+          "D: 274.6"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-official-rationale-repair-1",
+  "questions": {
+    "nysed-2013-g3-mc-q1": {
+      "rawRationaleSha256": "49b9cb2b3b40e2a6cc6886c4b626fcb6a7821b9d3aea3ab3bb2c1f67a227c284",
+      "text": "1/4 unit - This response correctly identifies the fractional representation of the distance from zero to N. There are precisely 4 equal parts represented on the number line diagram. Point N at the first unit interval defines 1/4 unit of the whole defined from zero to 1.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g3-mc-q4": {
+      "rawRationaleSha256": "277637afb8332437b79231638fc0eb49bb2a33d89c96b0606a86bb4dd89accb9",
+      "text": "2/8 - This response correctly identifies a valid comparison. The student understands that the denominator shows the number of parts of the whole and when the denominators are the same the numerators can be used directly to compare the fractions. Since 4 is greater than 2, 4/8 > 2/8.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g3-mc-q8": {
+      "rawRationaleSha256": "54e60db2546b06637da649c28f6de89f4fb1cf58962b763ea95458299b5d7149",
+      "text": "(5 × 10) + (5 × 6) This is the correct expression which can be used to find the area of the whole garden. The area of both regions together can be found by multiplying 5 × 16. This product can be found also by rewriting 16 as the sum of 10 and 6 and distributing the 5 to both of those terms as shown in answer choice C. As a result the student finds the area of the region for the carrots (5 × 10) and then the region for the peas (5 × 6), and adds the two together.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g3-mc-q9": {
+      "rawRationaleSha256": "295443f286df2693bdaa8cfa6d0c4eb3aebce4246c60f16cc9bfc0da23d35df0",
+      "text": "2/6 This response correctly identifies the fractional representation. There are precisely 6 intervals represented on the number line diagram. Point P is at the second interval defining 2/6 of the entire number line.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g4-mc-q3": {
+      "rawRationaleSha256": "ad899227731b3c32796c17e36e3b33404b71fe3a9c6ffb1af4acde20a89da0dc",
+      "text": "This response indicates a clear understanding of using a visual fraction model to represent equivalent fractions. Even though it has a different number and size of parts compared to the given model, the student recognizes that the shaded region represents 2/6 and is equivalent to 1/3 of the whole.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g4-mc-q5": {
+      "rawRationaleSha256": "080ef6f28a889c6b715f59cfb66edb7fd01db86b1999ec0eb391c94cde2995c3",
+      "text": "2/3 = 4/6 - This response indicates the student has a clear understanding of fraction equivalence. The student understands that multiplying or dividing a numerator and denominator by the same factor will create an equivalent fraction; in this case the factor is 2.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g4-mc-q7": {
+      "rawRationaleSha256": "df66c68fa5ed80262c43641ec753da505d247a42b8f81c90f9d56c9f9f664b5c",
+      "text": "4 × 1/8 = ? - This response indicates a clear understanding of the use of a visual fraction model to represent a whole number multiplied by a fraction. The student recognizes that there are eight parts to each model with one part shaded, representing 1/8. Since there are four models, 4 × 1/8 can be used to find the total shaded area.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g4-mc-q8": {
+      "rawRationaleSha256": "e6ff9a8e53cf5f915fa48659cbd87349c53246968130f8766e32b078d9027834",
+      "text": "41 - This response indicates a clear understanding of number patterns that arise from a rule; the student may have continued the pattern with precision. Or in continuing the pattern, the student may have recognized that each number in the pattern was 1 less than a multiple of 7. Since 42 is a multiple of 7, the correct response is 41.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g5-mc-q1": {
+      "rawRationaleSha256": "a616cf059896cc11acf03913ee3e5f1608fda7df074133ca73176b6fce94ac5d",
+      "text": "3/8 - The student has correctly identified the area of the shaded part of the square. The side lengths of the shaded rectangle are 3/4 foot and 1/2 foot, and (3/4) × (1/2) = 3/8 square foot. A student may also count the equal tiles and see that 3/8 of the square is shaded.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g5-mc-q10": {
+      "rawRationaleSha256": "ade6633933d07326e8d524b8fc981d9d63a3e4cdca4dc31a74788943c04d04b8",
+      "text": "“2 1/2 miles” The student correctly used multiplication to determine the distance Janet rode. Converting 3 3/4 to 15/4 and multiplying by 2/3 gives (15/4) × (2/3) = 30/12 = 5/2 = 2 1/2 miles.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g5-mc-q11": {
+      "rawRationaleSha256": "767f2570da9d283f76b5fd0e0808f2167732eaadff64434b208c2b2b51446e87",
+      "text": "“(4 × 10) + (5 × 1/10) + (4 × 1/100)” This response correctly identifies 40.54 in expanded form: 4 tens, 5 tenths, and 4 hundredths.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g5-mc-q3": {
+      "rawRationaleSha256": "54e4bb0a94a37002bdfe86a8966076ff4f6d63a1d16ab19c702ee80295604ea7",
+      "text": "1/12 - The student correctly added the unlike fractions and subtracted their sum from 1: 3/4 + 1/6 = 9/12 + 2/12 = 11/12, and 1 - 11/12 = 1/12. Therefore Mr. Morris put up 1/12 of the fence on Wednesday.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g5-mc-q4": {
+      "rawRationaleSha256": "a5831385ee353e1447d63f9b710465ed29f9f38a9881350f9fbe8aaa6e1c4f57",
+      "text": "“The product is greater than 5/12 but less than 7.” The student correctly identified that multiplying a fraction less than 1 by a number greater than 1 gives a product greater than the fraction but less than the whole number.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g6-mc-q13": {
+      "rawRationaleSha256": "b7861b77332167b82d43dbc921ac1454d127e61074e3fedd2c2286cf15234949",
+      "text": "“3/4 mile” The student correctly used the rectangle area formula A = lw and divided the area by the length to find the width: (1/2) ÷ (2/3) = (1/2) × (3/2) = 3/4 mile.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g6-mc-q14": {
+      "rawRationaleSha256": "37cdaab064ec91e0b2a819d08ef4880d56d1e7a402fad175b3f5033518a3b60b",
+      "text": "“40.5 cm²” The trapezoid can be decomposed into a 6-by-4.5 rectangle and two congruent triangles. The difference between the bases is 9 - 4.5 = 4.5, so each triangle has base 2.25. The two triangles have combined area 2(1/2 × 2.25 × 6) = 13.5 cm², and the rectangle has area 6 × 4.5 = 27 cm². Thus the total area is 13.5 + 27 = 40.5 cm².",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g6-mc-q2": {
+      "rawRationaleSha256": "0c21d29ec0ce22ca317af83154b6d4086011ea3d89667a716d34109be543e637",
+      "text": "“244” The student correctly evaluated the numerical expression using whole-number exponents and the order of operations: 6³ + 7 × 4 = 216 + 28 = 244.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g6-mc-q27": {
+      "rawRationaleSha256": "6172a535169c7b13e1f12edb7af5daeab395f587da309f39b0765831106b0583",
+      "text": "“w = 2/12” The student correctly solved 4w = 2/3 by dividing both sides by 4: w = (2/3) ÷ 4 = (2/3) × (1/4) = 2/12 = 1/6.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g7-mc-q2": {
+      "rawRationaleSha256": "0cfbc6e00f96787fba68fca35e66ff97f4bd59f19ac9f73b4dc9ed665ad7148f",
+      "text": "“9/20” The student correctly evaluated the expression. The additive inverses 3/8 and -3/8 cancel, leaving -4/5 + 5/4 = -16/20 + 25/20 = 9/20.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g7-mc-q5": {
+      "rawRationaleSha256": "464620dee6e97f7f0760dabd4a8081866991dcad11c60b245429def0b7abb254",
+      "text": "“2/5 mile” The student correctly computed the unit rate. Since 20 minutes is 1/3 hour, (2/15) ÷ (1/3) = (2/15) × 3 = 6/15 = 2/5 mile per hour.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g7-mc-q7": {
+      "rawRationaleSha256": "fa8526f20ebfdfc62f9ef78c3d6de731f1aadadda2756803a17d692bd9c31574",
+      "text": "“Divide both sides by 2/3, then subtract 57 from both sides.” Dividing (2/3)(y + 57) = 178 by 2/3 gives y + 57 = 267. Subtracting 57 then gives y = 210.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g8-mc-q17": {
+      "rawRationaleSha256": "aa93c4c82c7f5a515338140dc347fa13b6bff55a931ace3291b9aa4a74717409",
+      "text": "“1/6²” The student correctly identified the expression that is not equivalent to 6³/6⁶. Since 6³/6⁶ = 6⁻³ = 1/6³, the expression 1/6² is not equivalent.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g8-mc-q19": {
+      "rawRationaleSha256": "708b77fd9b1f81b7ddbf5fe1fcccd13054abdc78d7bba79dcf2b7f8f6d2d0cc4",
+      "text": "“Culture A contains 1/50 as many bacteria as culture B.” Dividing the populations gives (8 × 10⁴)/(4 × 10⁶) = 2/10² = 1/50. Equivalently, 80,000/4,000,000 = 1/50.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g8-mc-q25": {
+      "rawRationaleSha256": "18240e2dd1972af06536b66cdca2d6f905fff5b410eff2cb7796756ec756a362",
+      "text": "“1.08 × 10⁸” The student correctly multiplied the expressions to obtain 10.8 × 10⁷ and adjusted the power of ten to write the product in scientific notation: (2.4 × 10⁴)(4.5 × 10³) = 10.8 × 10⁷ = 1.08 × 10⁸.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g8-mc-q49": {
+      "rawRationaleSha256": "d5ac58185a718deae895cede65a2d9b83005d5c7f207039002ce9373f0093849",
+      "text": "“8” The student correctly used V = πr²h to solve for the radius and then doubled the radius to find the diameter: 320π = πr²(20), so r² = 16, r = 4, and d = 2r = 8.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g8-mc-q50": {
+      "rawRationaleSha256": "671ac6e2b707c96706f0a3c118b1e0582fdf724ea5088fb196cc40df657e2213",
+      "text": "“y = 3x² - 2” The student correctly determined that this equation does not represent a linear function. A linear function has x raised only to the first power in the form y = mx + b; here x is squared.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g8-mc-q6": {
+      "rawRationaleSha256": "4656125867e3795eca80dd1bd0372c380dae42b3c7f065a1c70a046fe5e032cc",
+      "text": "“4¹²” The student correctly applied the quotient rule for exponents: 4⁸ ÷ 4⁻⁴ = 4⁽⁸⁻⁽⁻⁴⁾⁾ = 4⁸⁺⁴ = 4¹².",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q14": {
+      "rawRationaleSha256": "76e3bf7b04be21f9cf97f6e28e42b0878327c6942d58840ae702e9fa251d972f",
+      "text": "“J and M”; This is the correct pair of points on the number line with a distance of 3/8 between them. The student may have understood that the number line represents eighths and counted three tick marks from J to M. The student who selects this response understands how to recognize a fraction a/b on a number line diagram by marking off a lengths 1/b from 0. The student recognizes that the resulting interval has size a/b.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q26": {
+      "rawRationaleSha256": "bf78056b77413c4944a9366068085e8842b28d345d4709b1089ddd8018dccf36",
+      "text": "“1/6”; This is the correct fraction that represents a whole partitioned into 6 equal parts, when 1 of the parts is shaded. The student may have understood that the denominator was the number of equal-sized parts and the numerator was the number of parts shaded. The student who selects this response may understand how to represent a fraction as 1/b when a whole is partitioned into b equal parts.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q28": {
+      "rawRationaleSha256": "2be464881df84c83c6b5ff9cd0d74ee09c52429778782617c80fe0a0a7b2e2d2",
+      "text": "“the soccer field”; This is the correct location that is 2/4 mile from Jordan’s house. The student may have understood that each interval on the number line represented one-fourth and that the numerator in 2/4 meant to count over two intervals from 0. The student who selects this response understands how to read and interpret a number line.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q31": {
+      "rawRationaleSha256": "cf15cab9fcc51fbb0478627312c375f014f4a098e47cdd494422b3dddef4665f",
+      "text": "“1/4”; This is the correct fraction that represents one part when a whole is partitioned into 4 equal-sized parts. The student may have understood that the denominator of the fraction represents the number of equal-sized parts the board was divided into and understood that each of the four parts represents 1/4. The student who selects this response understands a fraction 1/b is the quantity formed by 1 part when a whole is partitioned into b equal parts.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q41": {
+      "rawRationaleSha256": "321d43c8f76a0cc7ddd7c7d252cb33633d99afc69085a6ba29b38f77d22fc886",
+      "text": "“2/4 and 4/8”; This is the correct pair of equivalent fractions. The student may have understood how to divide the given number line into fourths and that 2/4 and 4/8 are the same point on the number line. The student who selects this response understands how to find an equivalent fraction.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q8": {
+      "rawRationaleSha256": "c638fadb63d5e36c6def737b79b84722848e63b012068fef486a04e720faa108",
+      "text": "“1/4”; This is a correct fraction that is equivalent to 2/8. The student may have drawn a number line or partitioned equal-sized shapes into fourths and eighths and noticed that 1/4 and 2/8 are the same position on the number line or that 1/4 of the area of a shape is the same size as 2/8 of the area. The student who selects this response understands how to recognize or generate an equivalent fraction.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q1": {
+      "rawRationaleSha256": "07105c06d927f7b874172cb272d01fe34e930827783b416c8d2f05bd193196b1",
+      "text": "This is the correct representation of a fraction equivalent to 1/2. The student may have understood that an equivalent fraction can be generated by multiplying a fraction by n/n, or the student may have recognized the figure that showed 1/2 of it shaded. The student who selects this response understands how to recognize and generate equivalent fractions using a visual model.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q11": {
+      "rawRationaleSha256": "4b6f0211b264a0a326acfa01feeab3e1845ac563900a057282c851b93f98b496",
+      "text": "“6 × 1/3 = ?”; This is the correct number sentence that represents the amount of the fraction model that is shaded. The student may have understood that each of the 6 wholes in the model is shaded to show 1/3. The student who selects this response understands a fraction a/b as a multiple of 1/b.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q17": {
+      "rawRationaleSha256": "33b67b1a05da695c6f8d9fb4335c021653b8f75fa164569b48103d8ec08493f4",
+      "text": "“He is correct because multiplying the numerator and denominator in 2/3 by the same number equals 8/12.” This is the correct response that identifies the fractions as equivalent, along with an appropriate justification. The student may have understood that an equivalent fraction can be generated by multiplying a fraction by 1 (n/n). The student who selects this response understands how to generate an equivalent fraction using the principle that fraction a/b is equivalent to fraction (n × a)/(n × b).",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q27": {
+      "rawRationaleSha256": "490f727b561c962941152af5e2673786d057237f37c43b0900f4a35c8b23d6f0",
+      "text": "“1/3”; This is the correct fraction that is equivalent to 2/6. The student may have understood that a fraction can be multiplied by 1 (n/n) to determine an equivalent fraction. The student who selects this response may understand how to generate equivalent fractions using the fact that a/b is equivalent to a fraction (n × a)/(n × b).",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q29": {
+      "rawRationaleSha256": "63e4a3f6e4a0df008fabe99ce380a64e579111e806e70a6b011746eaea6c2360",
+      "text": "“4 thousands + 7 ones + 8 tens + 6 hundreds”; This response represents 4,687, and 4,530 < 4,687. The student may have reordered the expressions by place value to compare the numbers. The student who selects this response understands how to read multi-digit numbers in expanded form and how to compare them.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g4-mc-q31": {
+      "rawRationaleSha256": "41ff7127b8f9743380102a65f7ec9e434c9801e7b73c717ab8631607560ddb1e",
+      "text": "“1/10 + 1/10 + 2/10”; This is the correct response that shows that 4/10 can be decomposed into 1/10 + 1/10 + 2/10. The student may have understood that 4/10 can be decomposed into several fractions that have a total sum of 4/10. The student who selects this response understands how to decompose a fraction into a sum of fractions with the same denominator.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q35": {
+      "rawRationaleSha256": "dc126f1948c6f36d31bbc2228b2f66e270caf7debfe3416f8ce8348220189b75",
+      "text": "“16 4/5”; This is the correct result when 8 1/5 is added to 8 3/5. The student may have calculated 1/5 + 3/5 = 4/5 and 8 + 8 = 16. The student who selects this response understands how to add mixed numbers.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q42": {
+      "rawRationaleSha256": "fec304206d37661545881728c99007cd22f7d199b927ce362e11248fa665f039",
+      "text": "“5/6”; This represents the correct fraction that is greater than 3/4. The student may have found a common denominator to compare the fractions or may have compared the fractions to benchmark fractions. The student who selects this response understands how to compare two fractions with different numerators and different denominators by creating common denominators or numerators, or by comparing to a benchmark fraction. 10/12 > 9/12, or 5/6 is closer to 1 than 3/4.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g4-mc-q49": {
+      "rawRationaleSha256": "545115da97eff27057343e7aa32ff81b2100e69f2230a4120ace42695e055870",
+      "text": "This is the correct line plot for the data. The student may have understood that each X on the line plot stood for one bag of trail mix, so if the table shows 4 bags have a mass of 1/2 pound, then there should be 4 Xs above the 1/2 tick mark on the line plot. If the table shows 3 bags have a mass of 1 1/2 pounds, then there should be 3 Xs above the 1 1/2 tick mark on the line plot. If the table shows 1 bag has a mass of 2 1/2 pounds, then there should be 1 X above the 2 1/2 tick mark on the line plot. The student who selects this response understands how to recognize a line plot that displays a data set of measurements in fractions of a unit.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q13": {
+      "rawRationaleSha256": "25361ee8510ebf6388eb9edc71a48cfbadce2b3075d111385990f34070138439",
+      "text": "“20 3/5 kilograms” The student correctly converted 30 9/10 to 309/10 and multiplied by 2/3: (309/10) × (2/3) = 618/30 = 20 18/30 = 20 3/5.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q16": {
+      "rawRationaleSha256": "5c3e3a278bfa2ba7c836f0c02c02debc48d5db47d0c2e90b6536add6f73abbf6",
+      "text": "“21/128 square inch” This is the correct area of the rectangle. Multiplying the fractional side lengths gives (7/8) × (3/16) = 21/128.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q23": {
+      "rawRationaleSha256": "3d20a44fd5f45339488f8600e132035900c19400f351918cbeb7e227901a95fc",
+      "text": "“25/72 square foot” This is the correct area of the rectangular label. Multiplying its fractional side lengths gives (5/12) × (5/6) = 25/72.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q33": {
+      "rawRationaleSha256": "2704b98cd0011da41b79ee198ce25831ba030d1ce95dde60cea3466bc9b8ade8",
+      "text": "“10⁵” This expression is equivalent to 100,000 because the exponent 5 means multiplying five factors of 10: 10 × 10 × 10 × 10 × 10 = 100,000.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q36": {
+      "rawRationaleSha256": "b6f06d0f5c8e9063a3a3c400accd2c706f2abd448eca0f3161473b4affac880b",
+      "text": "“9 8/56 servings” The student correctly divided 512 by 56. The quotient is 9 with remainder 8, which can be written as the mixed number 9 8/56.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q40": {
+      "rawRationaleSha256": "be1721e0606ea5a8dfe8ec5c5c12a3b9e02e560e574386ec194fe18b7b9234d9",
+      "text": "“1 11/50 feet” The student correctly converted 30 1/2 to 61/2 and applied the 1/25 scale: (61/2) × (1/25) = 61/50 = 1 11/50 feet.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q41": {
+      "rawRationaleSha256": "d700e2d18abba53d7da05f0cabce9ccec0d0c6bb7bae50cf27ebab454c099fcf",
+      "text": "“20” This is the number of 1/4-foot pieces that Deb can cut from a 5-foot board. Dividing by 1/4 is the same as multiplying by 4: 5 ÷ (1/4) = 5 × 4 = 20.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q44": {
+      "rawRationaleSha256": "dc3baf492c342e86395e403fe5efeb52019966ffdd60dfdbd074971ea469d56f",
+      "text": "“23” There are 12 inches in 1 foot, so 6 feet 3 inches equals (6 × 12) + 3 = 75 inches. Michele's father is therefore 75 - 52 = 23 inches taller than Michele.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g5-mc-q49": {
+      "rawRationaleSha256": "0723c24e1ef0c8212efc6f4cdbd086c64b7e27c9a8be39026071d46db6723d85",
+      "text": "“29/35” This is the correct sum of 2/5 and 3/7. Using a common denominator of 35 gives 2/5 = 14/35 and 3/7 = 15/35, so 14/35 + 15/35 = 29/35.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q7": {
+      "rawRationaleSha256": "b6d99a98a5f25c9135fdf3acf1b9fab4607773ea8c4643168c54fc9328bd69b6",
+      "text": "“1 4/6 cups” The student correctly multiplied 2/3 by 2 1/2. Converting the mixed number gives (2/3) × (5/2) = 10/6 = 1 4/6 cups.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q9": {
+      "rawRationaleSha256": "818b807f016bff47fe45abd6da9f99bee2664fd366842aaa2dd5ce17d400e514",
+      "text": "“1/6” This is the fraction of the whole pie each person received. Dividing 1/2 by 3 is the same as multiplying by 1/3: (1/2) × (1/3) = 1/6.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q1": {
+      "rawRationaleSha256": "6908b98d0618f5f4a339860e0842befcc2f2ba35526b5cb2feda0efb49165e56",
+      "text": "“90” This is the correct value of the numerical expression. Evaluating the exponent first gives 3⁴ + 9 = (3 × 3 × 3 × 3) + 9 = 81 + 9 = 90.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q10": {
+      "rawRationaleSha256": "027f363edd1e33212bdf48bf66863422bb1934ee1d9a85b538a503a91aca29b4",
+      "text": "“138” This is the correct value of the expression when c = 5 and d = 4. Substitution and the order of operations give 6(5²) - 5(4) + 8 = 150 - 20 + 8 = 138.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q23": {
+      "rawRationaleSha256": "eceb9401a941cfdf8bfaf4206d1b869dfc638f9e392c54fe2459b8c7036dd6a8",
+      "text": "“x = 32.50/5” This equation correctly shows the cost of each ticket. Dividing both sides of 5x = 32.50 by 5 gives x = 32.50/5 = 6.50.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q25": {
+      "rawRationaleSha256": "0e8ee94dcbd81687a2c9e84291d64f82476712e77add6abfed4021090bd5d4e8",
+      "text": "“5/6 mile” This is the correct width of the park. Using A = lw and dividing the area by the length gives (25/54) ÷ (5/9) = (25/54) × (9/5) = 5/6 mile.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q47": {
+      "rawRationaleSha256": "136edd073f654a1684fcc93c0c060704315889a257508a4a39bf2337f5093902",
+      "text": "“3 1/4 ÷ 3/4” This expression is modeled by the diagram. The model shows 3 1/4 divided into groups of size 3/4, giving four full groups with 1/4 left; the leftover is one third of another 3/4 group, so the quotient is 4 1/3.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q11": {
+      "rawRationaleSha256": "1b3f3a3fec761211c019b08fd4365668dd0e3a124a5e6a1549098e50c38fade5",
+      "text": "“1/5” This fraction is closest to the probability that the next customer will pay with cash. There were 54 + 42 + 153 = 249 customers, and 54/249 is approximately 0.22, which is closest to 1/5.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q8": {
+      "rawRationaleSha256": "76729a90a7cde97e9aa65739cb9aee56e498521b63b97a5826312e3bef2769b4",
+      "text": "“27 1/2 pages per hour” The student correctly computed the unit rate. Carrie read 5 1/2 pages in 12 minutes, so (5 1/2 pages/12 minutes) × (60 minutes/1 hour) = 27 1/2 pages per hour.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q14": {
+      "rawRationaleSha256": "1e292d8db80f867ef13d60dcf249f6c501924fce12b5f1bbdeacd5588d2f7fa8",
+      "text": "“4²” The student correctly added the exponents for powers with the same base: 4⁷ × 4⁻⁵ = 4⁽⁷⁺⁽⁻⁵⁾⁾ = 4².",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q19": {
+      "rawRationaleSha256": "0caba1a0863d53bd57970a0ffd3481a027fa4f8cfd854bef559c549d9044ab93",
+      "text": "“y = (2/5)x - 2” This is the correct equation for the graph. Using the points (0, -2) and (5, 0), the slope is (0 - (-2))/(5 - 0) = 2/5, and the graph's y-intercept is -2.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q25": {
+      "rawRationaleSha256": "931de9577bdcfbd32eb7ddc1e2fd8f40979ea2c9545dcbf8dff3e17e282fe954",
+      "text": "“y = -(2/3)x - 1/2” This equation represents a linear function because it has the form y = mx + b, with constant slope -2/3 and y-intercept -1/2.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q4": {
+      "rawRationaleSha256": "5acdda749f77e8421e1db552aca58c609a8a748b4a300103f31dc3c0dae5bd51",
+      "text": "“1.601 × 10⁹” The student correctly found the product and wrote it in scientific notation: 800.5 × (2 × 10⁶) = 1,601 × 10⁶ = 1.601 × 10⁹.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q6": {
+      "rawRationaleSha256": "c3ac9ff0257e33025aee1e6dfc4088a7f730888e545d9463fac6bd51401de6b7",
+      "text": "“8.17 × 10⁸ miles” The student correctly rewrote 9.1 × 10⁸ as 91 × 10⁷ and subtracted: (91 - 9.3) × 10⁷ = 81.7 × 10⁷ = 8.17 × 10⁸.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q7": {
+      "rawRationaleSha256": "df4f5f686014dae268ad9433ad216ac6dd87cef0db5f1757d641aa98675e148a",
+      "text": "“1.5 × 10⁶ gallons” The student correctly added the tank volumes: 1.25 × 10⁶ + 250,000 = 1,250,000 + 250,000 = 1,500,000 = 1.5 × 10⁶ gallons.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q10": {
+      "rawRationaleSha256": "68f447dc4e76c0b882bb27e1fde276f52b3080ffd3e5f591c72b4f9f9b0cf72c",
+      "text": "“six tenths” This is the correct value represented by the 6 in the other number. In a multi-digit number, a digit in one place represents 10 times as much as it represents in the place to its right and 1/10 of what it represents in the place to its left.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q43": {
+      "rawRationaleSha256": "8767b3cb16efc41082decd493cfce1d8f510bda29a31673cdc98e60c53f71c96",
+      "text": "“453,362” The digit 5 represents 50,000, which is 10 times the 5,000 represented by the digit 5 in 35,187. In a multi-digit number, each place is worth 10 times the place to its right and 1/10 of the place to its left.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q26": {
+      "rawRationaleSha256": "393d2e6eb0c4b296d574e76e987db42c21a0867496e72d96fe5a0a2d0bf81356",
+      "text": "“$30.00” The ratios give the same unit rate: $10/4 lb = $15/6 lb = $20/8 lb = $5/2 lb. Applying that rate to 12 pounds gives 12 lb × ($5/2 lb) = $30.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q27": {
+      "rawRationaleSha256": "664ff796555ecdd0de8d5f41d42a702d4696844c05d065fb71de46d32027de18",
+      "text": "“It is a reflection across the x-axis.” Point Q is (−3, −2), while the other point is (−3, 2). Their x-coordinates are the same and their y-coordinates are opposites, so the points are reflections of each other across the x-axis.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q31": {
+      "rawRationaleSha256": "231ad804f4989c01ada6dc635bc2448cef5efe0953e17ad60e4de42397eda289",
+      "text": "“24” There are 24 students in the class. If n is the total number of students, then 18/n = 75/100 because 18 boys are 75% of the class. Solving the proportion gives n = 24.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q37": {
+      "rawRationaleSha256": "260e96252b0079f4591c517903ad9800366ab8a98ebe865d9bf05234507f7cf8",
+      "text": "“86.7” Each triangular face has area (1/2) × 5.95 × 5.1 = 15.1725 square centimeters, and the square base has area 5.1 × 5.1 = 26.01. Thus the total surface area is 4(15.1725) + 26.01 = 86.7 square centimeters.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q44": {
+      "rawRationaleSha256": "e9f9a3528931dc902b4c5a374e04807ad0d706eb7a5aa529ec0b55ee0be025ab",
+      "text": "“6.96” The triangle has a base of 5.8 centimeters and a perpendicular height of 2.4 centimeters. Its area is (1/2) × 5.8 × 2.4 = 6.96 square centimeters.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q51": {
+      "rawRationaleSha256": "1e92a10e8fb874f65b6964c88831a2c5d8956ad73fcbace930090cfe9a54f54d",
+      "text": "“(3, 2)” The x-value pattern is 1, 3, 5, 7, 9, …, while the corresponding y-value pattern is 1, 2, 4, 8, 16, …. Therefore, (3, 2) is an ordered pair produced by the two rules.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q52": {
+      "rawRationaleSha256": "99dcce96f90b993f8a7b0928f83466d4f322eaf226e5965c3b1d53224b9456b1",
+      "text": "“1,063” Decomposing the kite into four right triangles gives 2[(0.5 × 22.5 × 16.3) + (0.5 × 42.7 × 16.3)] = 1,062.76 square centimeters. Rounded to the nearest square centimeter, the area is 1,063.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q55": {
+      "rawRationaleSha256": "eb88fdf5bcd7e25d5de5bf6b14572d1202d0459be5ed3ead64780cc6383f7ba8",
+      "text": "“1,562.4” The volume of a right rectangular prism is its base area times its height. Therefore, V = Bh = 173.6 × 9 = 1,562.4 cubic centimeters.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q1": {
+      "rawRationaleSha256": "8db051e8ac6551920dbbe56dd933ece0ff2fac83ef22461f8575f329ad5d15fa",
+      "text": "“4” Craig can spend at most $25, so if x is the number of games, 4x + 5.25 ≤ 25. Then 4x ≤ 19.75 and x ≤ 4.9375. Because x must be a whole number, the greatest possible number of games is 4.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g7-mc-q2": {
+      "rawRationaleSha256": "30ab6564c4d9dc48822cf0edfc8fefb0279bda7de7f6e69b5c3e1b660404215e",
+      "text": "“250” A 1 1/2-pound bag covers 375 square feet. Dividing by 1 1/2 gives the coverage for one pound: 375 ÷ (3/2) = 375 × (2/3) = 250 square feet.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q4": {
+      "rawRationaleSha256": "f280c34b8397b2cc90b3ce9b89f0268296188159b8cfb23707009759620a23e2",
+      "text": "“25%” The team won 20 − 16 = 4 more games. Relative to last year's 16 wins, the percent increase is (4/16) × 100% = 25%.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q5": {
+      "rawRationaleSha256": "1c91e4662678a064e6914d817ffbc5497db0f1f0e3035c461cab493c8232b738",
+      "text": "“$8.25” Gina pays $2.75 for shoes, half of 3($2.50) for the games, and $1.75 for nachos. The total is $2.75 + [3($2.50)]/2 + $1.75 = $2.75 + $3.75 + $1.75 = $8.25.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q7": {
+      "rawRationaleSha256": "62794b9e6e2a7488eb2753ac94a2490eaeb3b486a2783d9693e8a0cd23eb6eef",
+      "text": "“200” The random sample was 25%, or one fourth, of the seventh-grade students. Scaling 51 students to the whole population gives 51 × 4 = 204, so about 200 students is the most reasonable prediction.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q15": {
+      "rawRationaleSha256": "ce1d32a8ae86177a5d95e42144933c9263a9890fc3842ea5ae7342eefeea5fe6",
+      "text": "“x = 417.6” Subtracting 78.2 from both sides of 0.5x + 78.2 = 287 gives 0.5x = 208.8. Dividing by 0.5 gives x = 417.6.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q17": {
+      "rawRationaleSha256": "d5477c977d91aa585a4c44c7e6c9904708b581b36f9da1bd0bc953e5b8d09f34",
+      "text": "This sign shows a proportional relationship because the price is consistently $0.40 per cucumber: $2/5 = $4/10 = $6/15 = $8/20 = $0.40 per cucumber.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q18": {
+      "rawRationaleSha256": "eef6a016dd7b98a00b99775cc3b96ee9b6474c0dcff230b33f14ad06847244b7",
+      "text": "“$57.75” Doug worked 1 3/4 + 2 1/3 + 1 5/12 = 5 1/2 hours. At $10.50 per hour, his earnings were $10.50 × 5.5 = $57.75.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q20": {
+      "rawRationaleSha256": "d0d50edbf5d8dc638915dd74cf68cba86548dc87f942950b8489f582e25d022c",
+      "text": "“12%” Sales decreased by 650 − 572 = 78 bicycles. Relative to last year's 650 bicycles, the percent decrease is (78/650) × 100% = 12%.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q21": {
+      "rawRationaleSha256": "3781c1159c02517f5ea0a6e36b74bd88cf5242603630e9dfd5b9397ec775560d",
+      "text": "“The perimeter is 6 times the width.” Simplifying the perimeter expression gives 2(2w) + 2(w) = 4w + 2w = 6w. Therefore, the perimeter is six times the width.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q23": {
+      "rawRationaleSha256": "a13ea9ca1f3eebd0b151afc302533cf2bfd6742cf420d7bf851cd86aea805a00",
+      "text": "“p = 0.42n” The unit price is $2.52/6 = $0.42 per orange. Therefore, the cost p for n oranges is represented by p = 0.42n.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q24": {
+      "rawRationaleSha256": "034585e144a20447ab83a98aff419c694a143a848fe6e429cbd136b8ae295746",
+      "text": "“67.5” The scale is 13.5 feet for each inch. A 5-inch model train car therefore represents 5 in × (13.5 ft/1 in) = 67.5 feet.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q27": {
+      "rawRationaleSha256": "b1764c49c46874cab6627ea0f1052dfa926a245890ab610f1f7c932a75f5cf01",
+      "text": "“0.11” The store sold 167 + 285 + 56 = 508 cards in all, including 56 blank cards. The estimated probability is therefore 56/508 ≈ 0.11.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g7-mc-q29": {
+      "rawRationaleSha256": "6203672d00374041ec4f29ef463c5b645911d7f2c6048c41a2fad97ffb1a91ed",
+      "text": "“$19.26” A 50% markup makes the price $12.00 × 1.5 = $18.00. Adding 7% sales tax gives $18.00 × 1.07 = $19.26.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q1": {
+      "rawRationaleSha256": "4fac3b7922b17ee4b98fdc2e8554668e473738a6aa9d0b6c4bf89b5085737972",
+      "text": "“9” When dividing powers with the same base, subtract the exponents: 3⁴/3² = 3⁽⁴⁻²⁾ = 3² = 9.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q9": {
+      "rawRationaleSha256": "0e32a30a7e05da8b8434556124431399191e4eece62cb384a19c67d9bbb61aba",
+      "text": "“The cost increases $0.30 each time 1 goldfish is added.” The rate of change is ($3.00 − $1.50)/(10 − 5) = $1.50/5 = $0.30 per goldfish.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q10": {
+      "rawRationaleSha256": "2f5f87c3d3da77f02a9a4e0781bf031332c286ee4fc4b4a98199528302e7d18f",
+      "text": "“(4, 10)” The solution is the intersection of the two lines. Setting their equations equal gives x + 6 = 2x + 2, so x = 4. Substitution gives y = 4 + 6 = 10.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q12": {
+      "rawRationaleSha256": "9555da36c2af8389fdd59644f72bfdcb45f25b2f22df252bb5ae6349e826937e",
+      "text": "“Function A has a greater rate of change than Function B has.” Function A is y = 4x − 2, so its rate of change is 4. In Function B, y increases by 4 when x increases by 2, so its rate of change is 4/2 = 2. Therefore, Function A has the greater rate.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q20": {
+      "rawRationaleSha256": "43b3f7608824da9892b4e8f52d58e5a2da074031d8e305ccf8bf7731cd7863de",
+      "text": "“the predicted value for the vision score of a 65-year-old” Substituting x = 65 into the linear model produces a prediction based on the association between age and vision score; it does not determine an exact, minimum, or maximum score.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q21": {
+      "rawRationaleSha256": "79ad505bd06e9164d2674b7aeb6c7ba2bc813447caad77c0bd5b0b34ed48b628",
+      "text": "“y = 3x + 7.5” The table's function has slope (9 − 5)/(1 − (−1)) = 4/2 = 2. Using (−1, 5), its y-intercept is 7. The equation y = 3x + 7.5 has both a greater slope and a greater y-intercept.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q22": {
+      "rawRationaleSha256": "2f9ae3eda80e7dc3872145be5ee6878ea939a1fff00168a878dc634a3f2521ac",
+      "text": "“the area of a circle as a function of the radius” Circle area is A = πr². Because the variable r has an exponent greater than 1, this function is nonlinear.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g8-mc-q23": {
+      "rawRationaleSha256": "8a460777999fc98d1371510c63e8ba2befa490869d640275adfd520e63b0121f",
+      "text": "This is the graph of a function because every input has exactly one output. Equivalently, each vertical line intersects the graph at most once.",
+      "source": "official-nysed"
+    }
+  }
+}

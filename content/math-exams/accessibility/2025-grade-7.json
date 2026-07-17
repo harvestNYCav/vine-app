@@ -1,0 +1,820 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2025-grade-7-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2025-g7-mc-q2": {
+      "inputHash": "79c45a5767334379ec22e6d0150bf36d4b2a6885bdcda63138ca357c591b4eed",
+      "description": {
+        "en": "Question 2. Which table shows a proportional relationship between the number of calories and the number of cheese slices? Each table is titled “CALORIE INFORMATION” and has columns “Number of Cheese Slices” and “Number of Calories.” Choices: A: The rows are (2, 226), (4, 452), (5, 678), and (8, 904). B: The rows are (2, 208), (4, 416), (5, 624), and (8, 832). C: The rows are (1, 106), (2, 212), (3, 318), and (4, 424). D: The rows are (1, 103), (2, 206), (3, 412), and (4, 824).",
+        "es": "Pregunta 2. ¿Qué tabla muestra una relación proporcional entre la cantidad de calorías y la cantidad de rebanadas de queso? Cada opción es una tabla titulada “INFORMACIÓN SOBRE LAS CALORÍAS”, con las columnas “Cantidad de rebanadas de queso” y “Cantidad de calorías”. Opciones: A: Las filas son: 2 rebanadas, 226 calorías; 4 rebanadas, 452 calorías; 5 rebanadas, 678 calorías; 8 rebanadas, 904 calorías. B: Las filas son: 2 rebanadas, 208 calorías; 4 rebanadas, 416 calorías; 5 rebanadas, 624 calorías; 8 rebanadas, 832 calorías. C: Las filas son: 1 rebanada, 106 calorías; 2 rebanadas, 212 calorías; 3 rebanadas, 318 calorías; 4 rebanadas, 424 calorías. D: Las filas son: 1 rebanada, 103 calorías; 2 rebanadas, 206 calorías; 3 rebanadas, 412 calorías; 4 rebanadas, 824 calorías."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2, 226)",
+          "(4, 452)",
+          "(5, 678)",
+          "(8, 904)",
+          "(2, 208)",
+          "(4, 416)",
+          "(5, 624)",
+          "(8, 832)",
+          "(1, 106)",
+          "(2, 212)",
+          "(3, 318)",
+          "(4, 424)",
+          "(1, 103)",
+          "(2, 206)",
+          "(3, 412)",
+          "(4, 824)",
+          "A: The rows are (2, 226), (4, 452), (5, 678), and (8, 904)",
+          "B: The rows are (2, 208), (4, 416), (5, 624), and (8, 832)",
+          "C: The rows are (1, 106), (2, 212), (3, 318), and (4, 424)",
+          "D: The rows are (1, 103), (2, 206), (3, 412), and (4, 824)"
+        ],
+        "es": [
+          "2 rebanadas, 226 calorías",
+          "4 rebanadas, 452 calorías",
+          "5 rebanadas, 678 calorías",
+          "8 rebanadas, 904 calorías",
+          "2 rebanadas, 208 calorías",
+          "4 rebanadas, 416 calorías",
+          "5 rebanadas, 624 calorías",
+          "8 rebanadas, 832 calorías",
+          "1 rebanada, 106 calorías",
+          "2 rebanadas, 212 calorías",
+          "3 rebanadas, 318 calorías",
+          "4 rebanadas, 424 calorías",
+          "1 rebanada, 103 calorías",
+          "2 rebanadas, 206 calorías",
+          "3 rebanadas, 412 calorías",
+          "4 rebanadas, 824 calorías",
+          "A: Las filas son: 2 rebanadas, 226 calorías; 4 rebanadas, 452 calorías; 5 rebanadas, 678 calorías; 8 rebanadas, 904 calorías",
+          "B: Las filas son: 2 rebanadas, 208 calorías; 4 rebanadas, 416 calorías; 5 rebanadas, 624 calorías; 8 rebanadas, 832 calorías",
+          "C: Las filas son: 1 rebanada, 106 calorías; 2 rebanadas, 212 calorías; 3 rebanadas, 318 calorías; 4 rebanadas, 424 calorías",
+          "D: Las filas son: 1 rebanada, 103 calorías; 2 rebanadas, 206 calorías; 3 rebanadas, 412 calorías; 4 rebanadas, 824 calorías"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q3": {
+      "inputHash": "c5a540059d4db8a31b3414793efb5f0257f75cd1291843c8a73fc7e95f13e152",
+      "description": {
+        "en": "Question 3. At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event? Choices: A: Under Main Course are C and S only. Each branches to the two Dessert choices P and B. B: Under Main Course are C, S, and F. Each branches to the two Dessert choices P and B. C: Under Main Course are C, S, and F. C branches to P and P; S branches to B and B; F branches to P and P. D: Under Main Course are C, S, and F. C branches to the Dessert labels P, B, S, and F; S branches to P, B, C, and F; F branches to P, B, C, and S.",
+        "es": "Pregunta 3. En un evento, cada persona puede elegir un plato principal y un postre para una comida. Las opciones de plato principal son pollo (C), bife (S) o pescado (F). Las opciones de postre son budín (P) o brownie (B). ¿Qué diagrama en árbol representa todas las diferentes combinaciones de comida que se ofrecen en el evento? En cada diagrama, la fila superior corresponde al plato principal y las ramas descendentes llevan a la fila de postres. Opciones: A: Presenta solamente los platos principales C y S. Desde C salen dos ramas, una hacia P y otra hacia B. Desde S salen dos ramas, una hacia P y otra hacia B. No presenta F. B: Presenta los platos principales C, S y F. Desde cada uno salen dos ramas: desde C hacia P y B; desde S hacia P y B; y desde F hacia P y B. C: Presenta los platos principales C, S y F. Desde C salen dos ramas, ambas hacia P; desde S salen dos ramas, ambas hacia B; y desde F salen dos ramas, ambas hacia P. D: Presenta los platos principales C, S y F. Desde cada plato principal salen cuatro ramas. Desde C, las ramas terminan en P, B, S y F; desde S, terminan en P, B, C y F; desde F, terminan en P, B, C y S."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "chicken (C)",
+          "steak (S)",
+          "fish (F)",
+          "pudding (P)",
+          "brownie (B)",
+          "C and S only",
+          "C, S, and F",
+          "P and B",
+          "P and P",
+          "B and B",
+          "P, B, S, and F",
+          "P, B, C, and F",
+          "P, B, C, and S",
+          "A: Under Main Course are C and S only. Each branches to the two Dessert choices P and B",
+          "B: Under Main Course are C, S, and F. Each branches to the two Dessert choices P and B",
+          "C: Under Main Course are C, S, and F. C branches to P and P; S branches to B and B; F branches to P and P",
+          "D: Under Main Course are C, S, and F. C branches to the Dessert labels P, B, S, and F; S branches to P, B, C, and F; F branches to P, B, C, and S"
+        ],
+        "es": [
+          "pollo (C)",
+          "bife (S)",
+          "pescado (F)",
+          "budín (P)",
+          "brownie (B)",
+          "C y S",
+          "C, S y F",
+          "C hacia P y B",
+          "S hacia P y B",
+          "F hacia P y B",
+          "C, las ramas terminan en P, B, S y F",
+          "S, terminan en P, B, C y F",
+          "F, terminan en P, B, C y S",
+          "A: Presenta solamente los platos principales C y S. Desde C salen dos ramas, una hacia P y otra hacia B. Desde S salen dos ramas, una hacia P y otra hacia B. No presenta F",
+          "B: Presenta los platos principales C, S y F. Desde cada uno salen dos ramas: desde C hacia P y B; desde S hacia P y B; y desde F hacia P y B",
+          "C: Presenta los platos principales C, S y F. Desde C salen dos ramas, ambas hacia P; desde S salen dos ramas, ambas hacia B; y desde F salen dos ramas, ambas hacia P",
+          "D: Presenta los platos principales C, S y F. Desde cada plato principal salen cuatro ramas. Desde C, las ramas terminan en P, B, S y F; desde S, terminan en P, B, C y F; desde F, terminan en P, B, C y S"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q8": {
+      "inputHash": "798ee10d165281af3ec021a2f820f6737196edce08d816a09d647ef0f869dad4",
+      "description": {
+        "en": "Question 8. The table below shows the proportional relationship between the number of concert tickets purchased, t, and the total cost, c, of the tickets. The table is titled “TICKET COSTS.” Its columns are “Number of Tickets Purchased, t” and “Total Cost, c (dollars).” The rows are: 3 tickets and 81.00 dollars; 5 tickets and 135.00 dollars; 10 tickets and 270.00 dollars. Which equation represents the relationship between t and c? Choices: A: c = 27t. B: c = 54t. C: c = 78t. D: c = 81t.",
+        "es": "Pregunta 8. La siguiente tabla muestra la relación proporcional entre la cantidad de entradas al concierto compradas, t, y el costo total, c, de las entradas. La tabla se titula “COSTOS DE LAS ENTRADAS”. Sus columnas son “Cantidad de entradas compradas, t” y “Costo total, c (dólares)”. Las filas indican: 3 entradas y 81.00 dólares; 5 entradas y 135.00 dólares; 10 entradas y 270.00 dólares. ¿Qué ecuación representa la relación entre t y c? Opciones: A: c = 27t B: c = 54t C: c = 78t D: c = 81t"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "t",
+          "c",
+          "3 tickets and 81.00 dollars",
+          "5 tickets and 135.00 dollars",
+          "10 tickets and 270.00 dollars",
+          "c = 27t",
+          "c = 54t",
+          "c = 78t",
+          "c = 81t",
+          "A: c = 27t",
+          "B: c = 54t",
+          "C: c = 78t",
+          "D: c = 81t"
+        ],
+        "es": [
+          "t",
+          "c",
+          "3 entradas y 81.00 dólares",
+          "5 entradas y 135.00 dólares",
+          "10 entradas y 270.00 dólares",
+          "c = 27t",
+          "c = 54t",
+          "c = 78t",
+          "c = 81t",
+          "A: c = 27t",
+          "B: c = 54t",
+          "C: c = 78t",
+          "D: c = 81t"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q10": {
+      "inputHash": "d4b6e4a5912ae1ca3b96a9d296ba4b5d2c1470a212d7b1be64a96c5fc5138201",
+      "description": {
+        "en": "Question 10. A rectangular garden has perimeter 47 feet. Its horizontal length is labeled x, and its vertical width is labeled 6.5 ft. Which equation can be used to find the length, x, in feet, of the garden? Choices: A: x + 13 = 47. B: x + 6.5 = 47. C: 2x + 13 = 47. D: 2x + 6.5 = 47.",
+        "es": "Pregunta 10. El siguiente diagrama muestra un jardín rectangular. El perímetro del jardín es de 47 pies. El lado horizontal inferior del rectángulo tiene longitud x. El lado vertical derecho mide 6.5 pies. ¿Qué ecuación se puede usar para hallar la longitud, x, en pies, del jardín? Opciones: A: x + 13 = 47 B: x + 6.5 = 47 C: 2x + 13 = 47 D: 2x + 6.5 = 47"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "47 feet",
+          "x",
+          "6.5 ft",
+          "x + 13 = 47",
+          "x + 6.5 = 47",
+          "2x + 13 = 47",
+          "2x + 6.5 = 47",
+          "A: x + 13 = 47",
+          "B: x + 6.5 = 47",
+          "C: 2x + 13 = 47",
+          "D: 2x + 6.5 = 47"
+        ],
+        "es": [
+          "47 pies",
+          "x",
+          "6.5 pies",
+          "x + 13 = 47",
+          "x + 6.5 = 47",
+          "2x + 13 = 47",
+          "2x + 6.5 = 47",
+          "A: x + 13 = 47",
+          "B: x + 6.5 = 47",
+          "C: 2x + 13 = 47",
+          "D: 2x + 6.5 = 47"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q13": {
+      "inputHash": "09a7ca659ace1bb99e9945d3c232cd905b0035f0995a1d386e7602d9920c1c3b",
+      "description": {
+        "en": "Question 13. An incomplete equation is −6.8 + 6.4 + _____ = 0. Which expression, when placed in the blank, makes this equation true? Choices: A: −4.3 + 4.7. B: −6.5 + 6.7. C: −4.3 + (−4.7). D: −6.5 + (−6.7).",
+        "es": "Pregunta 13. A continuación, se muestra una ecuación incompleta: −6.8 + 6.4 + _____ = 0. ¿Qué expresión, colocada en el espacio en blanco, hace que esta ecuación sea verdadera? Opciones: A: −4.3 + 4.7 B: −6.5 + 6.7 C: −4.3 + (−4.7) D: −6.5 + (−6.7)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−6.8 + 6.4 + _____ = 0",
+          "−4.3 + 4.7",
+          "−6.5 + 6.7",
+          "−4.3 + (−4.7)",
+          "−6.5 + (−6.7)",
+          "A: −4.3 + 4.7",
+          "B: −6.5 + 6.7",
+          "C: −4.3 + (−4.7)",
+          "D: −6.5 + (−6.7)",
+          "(−4.7)",
+          "(−6.7)"
+        ],
+        "es": [
+          "−6.8 + 6.4 + _____ = 0",
+          "−4.3 + 4.7",
+          "−6.5 + 6.7",
+          "−4.3 + (−4.7)",
+          "−6.5 + (−6.7)",
+          "A: −4.3 + 4.7",
+          "B: −6.5 + 6.7",
+          "C: −4.3 + (−4.7)",
+          "D: −6.5 + (−6.7)",
+          "(−4.7)",
+          "(−6.7)"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q14": {
+      "inputHash": "f294a01996a2cd1032a20bfd9d4c3160f76629291a6fd2697d1568184d7a1b5f",
+      "description": {
+        "en": "Question 14. Alexis has a part-time job. A coordinate graph titled “ALEXIS’S EARNINGS” shows the relationship between x, the number of hours worked, and y, the wages she earned. The horizontal x-axis is labeled “Number of Hours,” runs from 0 to 12, and has labeled ticks at 0, 2, 4, 6, 8, 10, and 12. The vertical y-axis is labeled “Wages Earned (dollars),” runs from 0 to 160, and has labeled ticks at 20, 40, 60, 80, 100, 120, 140, and 160. An increasing straight line starts at the origin (0, 0) and passes through the solid plotted points (4, 55), (7, 96.25), and (11, 151.25). What is Alexis’s wage earned per hour? Choices: A: $0.07. B: $1.57. C: $10.00. D: $13.75.",
+        "es": "Pregunta 14. Alexis tiene un trabajo a tiempo parcial. El gráfico muestra la relación entre x, la cantidad de horas trabajadas, y y, el salario que recibió. El gráfico se titula “GANANCIAS DE ALEXIS”. El eje horizontal, x, se titula “Cantidad de horas” y está marcado de 0 a 12 en incrementos de 2. El eje vertical, y, se titula “Salarios recibidos (dólares)” y está marcado de 0 a 160 en incrementos de 20. Una recta ascendente parte del origen (0, 0) y contiene los tres puntos marcados y etiquetados (4, 55), (7, 96.25) y (11, 151.25). ¿Cuál es el salario por hora que recibió Alexis? Opciones: A: $0.07 B: $1.57 C: $10.00 D: $13.75"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "0 to 12",
+          "0, 2, 4, 6, 8, 10, and 12",
+          "0 to 160",
+          "20, 40, 60, 80, 100, 120, 140, and 160",
+          "(0, 0)",
+          "(4, 55)",
+          "(7, 96.25)",
+          "(11, 151.25)",
+          "$0.07",
+          "$1.57",
+          "$10.00",
+          "$13.75",
+          "A: $0.07",
+          "B: $1.57",
+          "C: $10.00",
+          "D: $13.75"
+        ],
+        "es": [
+          "x",
+          "y",
+          "0 a 12",
+          "incrementos de 2",
+          "0 a 160",
+          "incrementos de 20",
+          "(0, 0)",
+          "(4, 55)",
+          "(7, 96.25)",
+          "(11, 151.25)",
+          "$0.07",
+          "$1.57",
+          "$10.00",
+          "$13.75",
+          "A: $0.07",
+          "B: $1.57",
+          "C: $10.00",
+          "D: $13.75"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q17": {
+      "inputHash": "b4cce092bc34dcf5abb638b3e36de54521b0c987f7b4785a0c8504342cee9922",
+      "description": {
+        "en": "Question 17. Which expression is equivalent to (−0.3) + 1.5? Choices: A: (−0.3) + (−1.5). B: (−1.5) + (0.3). C: 1.5 − 0.3. D: 0.3 − 1.5.",
+        "es": "Pregunta 17. ¿Qué expresión es equivalente a (−0.3) + 1.5? Opciones: A: (−0.3) + (−1.5) B: (−1.5) + (0.3) C: 1.5 − 0.3 D: 0.3 − 1.5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−0.3) + 1.5",
+          "(−0.3) + (−1.5)",
+          "(−1.5) + (0.3)",
+          "1.5 − 0.3",
+          "0.3 − 1.5",
+          "A: (−0.3) + (−1.5)",
+          "B: (−1.5) + (0.3)",
+          "C: 1.5 − 0.3",
+          "D: 0.3 − 1.5",
+          "(−0.3)",
+          "(−1.5)",
+          "(0.3)"
+        ],
+        "es": [
+          "(−0.3) + 1.5",
+          "(−0.3) + (−1.5)",
+          "(−1.5) + (0.3)",
+          "1.5 − 0.3",
+          "0.3 − 1.5",
+          "A: (−0.3) + (−1.5)",
+          "B: (−1.5) + (0.3)",
+          "C: 1.5 − 0.3",
+          "D: 0.3 − 1.5",
+          "(−0.3)",
+          "(−1.5)",
+          "(0.3)"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q20": {
+      "inputHash": "29a4de9a95448e5926654a94ddfb06a0b2de9ac9b29499c5bb6cc7adcbead26e",
+      "description": {
+        "en": "Question 20. Which expression is equivalent to 4(3x − 1.25) − 2(3.5x + 2)? Choices: A: −4x. B: −2x. C: 5x − 1. D: 5x − 9.",
+        "es": "Pregunta 20. ¿Qué expresión es equivalente a 4(3x − 1.25) − 2(3.5x + 2)? Opciones: A: −4x B: −2x C: 5x − 1 D: 5x − 9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4(3x − 1.25) − 2(3.5x + 2)",
+          "−4x",
+          "−2x",
+          "5x − 1",
+          "5x − 9",
+          "A: −4x",
+          "B: −2x",
+          "C: 5x − 1",
+          "D: 5x − 9",
+          "(3x − 1.25)",
+          "(3.5x + 2)"
+        ],
+        "es": [
+          "4(3x − 1.25) − 2(3.5x + 2)",
+          "−4x",
+          "−2x",
+          "5x − 1",
+          "5x − 9",
+          "A: −4x",
+          "B: −2x",
+          "C: 5x − 1",
+          "D: 5x − 9",
+          "(3x − 1.25)",
+          "(3.5x + 2)"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q21": {
+      "inputHash": "bfa286244dafba10a8e4f65fc9c234c44e9a37fa90b3ff9503da55dbc49c5574",
+      "description": {
+        "en": "Question 21. A sweater has an original price of t dollars. The expression t − 0.10t can be used to determine the sale price, in dollars, of the sweater. Which expression can also be used to determine the sale price, in dollars, of the sweater? Choices: A: 0.10t B: 0.90t C: 0.10t − t D: 0.90t − t",
+        "es": "Pregunta 21. Un suéter tiene un precio original de t dólares. La expresión t − 0.10t se puede usar para determinar el precio de venta, en dólares, del suéter. ¿Qué expresión también se puede usar para determinar el precio de venta, en dólares, del suéter? Opciones: A: 0.10t B: 0.90t C: 0.10t − t D: 0.90t − t"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "t − 0.10t",
+          "0.10t",
+          "0.90t",
+          "0.10t − t",
+          "0.90t − t",
+          "A: 0.10t",
+          "B: 0.90t",
+          "C: 0.10t − t",
+          "D: 0.90t − t"
+        ],
+        "es": [
+          "t − 0.10t",
+          "0.10t",
+          "0.90t",
+          "0.10t − t",
+          "0.90t − t",
+          "A: 0.10t",
+          "B: 0.90t",
+          "C: 0.10t − t",
+          "D: 0.90t − t"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q23": {
+      "inputHash": "b6f8badd9c337fe31dfe162e0dfede3281dae73a95c538d2e3bb6c4702ffe181",
+      "description": {
+        "en": "Question 23. What is the product of (−6)(−1 1/2)? Choices: A: −9 B: −6 1/2 C: 6 1/2 D: 9",
+        "es": "Pregunta 23. ¿Cuál es el producto de (−6)(−1 1/2)? Opciones: A: −9 B: −6 1/2 C: 6 1/2 D: 9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−6)(−1 1/2)",
+          "−9",
+          "−6 1/2",
+          "6 1/2",
+          "9",
+          "A: −9",
+          "B: −6 1/2",
+          "C: 6 1/2",
+          "D: 9",
+          "(−6)",
+          "(−1 1/2)"
+        ],
+        "es": [
+          "(−6)(−1 1/2)",
+          "−9",
+          "−6 1/2",
+          "6 1/2",
+          "9",
+          "A: −9",
+          "B: −6 1/2",
+          "C: 6 1/2",
+          "D: 9",
+          "(−6)",
+          "(−1 1/2)"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q25": {
+      "inputHash": "f1bcfc9cec970ddff2ef9694980865ae1a5eeb31ffe73480e9215d6f59d2cb4b",
+      "description": {
+        "en": "Question 25. A chair is on sale at a discounted price of $49.00. The regular price of the chair is $10.00 less than 2 times the discounted price. What is the difference between the total cost of 3 regular-priced chairs and 3 chairs at the discounted price? Choices: A: $39.00 B: $88.00 C: $117.00 D: $147.00",
+        "es": "Pregunta 25. Una silla está a la venta a un precio con descuento de $49.00. El precio normal de la silla es $10.00 menos que 2 veces el precio con descuento. ¿Cuál es la diferencia entre el costo total de 3 sillas a precio normal y 3 sillas al precio con descuento? Opciones: A: $39.00 B: $88.00 C: $117.00 D: $147.00"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$49.00",
+          "$10.00",
+          "2",
+          "3",
+          "$39.00",
+          "$88.00",
+          "$117.00",
+          "$147.00",
+          "A: $39.00",
+          "B: $88.00",
+          "C: $117.00",
+          "D: $147.00"
+        ],
+        "es": [
+          "$49.00",
+          "$10.00",
+          "2",
+          "3",
+          "$39.00",
+          "$88.00",
+          "$117.00",
+          "$147.00",
+          "A: $39.00",
+          "B: $88.00",
+          "C: $117.00",
+          "D: $147.00"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q27": {
+      "inputHash": "6069d76ecba0559706067bc582af6a619dd0c152c1ef6aed8bc544ecb9da653d",
+      "description": {
+        "en": "Question 27. A car travels 30 miles and uses 1 2/3 gallons of fuel. What is the unit rate, in miles per gallon, for the car? Choices: A: 1/50 B: 1/18 C: 18 D: 50",
+        "es": "Pregunta 27. Un automóvil viaja 30 millas y usa 1 2/3 galones de combustible. ¿Cuál es la tasa unitaria, en millas por galón, del automóvil? Opciones: A: 1/50 B: 1/18 C: 18 D: 50"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "30",
+          "1 2/3",
+          "1/50",
+          "1/18",
+          "18",
+          "50",
+          "A: 1/50",
+          "B: 1/18",
+          "C: 18",
+          "D: 50"
+        ],
+        "es": [
+          "30",
+          "1 2/3",
+          "1/50",
+          "1/18",
+          "18",
+          "50",
+          "A: 1/50",
+          "B: 1/18",
+          "C: 18",
+          "D: 50"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q28": {
+      "inputHash": "d92b743f7a97accd4dbf9454a822e7183ca1df6ee70ffaad1b7ee1f1944b70f7",
+      "description": {
+        "en": "Question 28. A school sold tickets to a musical for $8.95 per person. The musical had two performances as described below. On Friday night, 152 people attended. On Saturday night, 25% more people attended than Friday night. What was the total amount of money earned from tickets sold on these two nights? Choices: A: $1,700.50 B: $2,723.04 C: $2,944.55 D: $3,060.90",
+        "es": "Pregunta 28. Una escuela vendió entradas para un musical a $8.95 por persona. El musical tuvo dos presentaciones que se describen a continuación. El viernes por la noche asistieron 152 personas. El sábado por la noche, asistió un 25 % más de gente que el viernes por la noche. ¿Cuál fue la cantidad total de dinero recaudada con las entradas vendidas en esas dos noches? Opciones: A: $1,700.50 B: $2,723.04 C: $2,944.55 D: $3,060.90"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$8.95",
+          "152",
+          "25%",
+          "$1,700.50",
+          "$2,723.04",
+          "$2,944.55",
+          "$3,060.90",
+          "A: $1,700.50",
+          "B: $2,723.04",
+          "C: $2,944.55",
+          "D: $3,060.90"
+        ],
+        "es": [
+          "$8.95",
+          "152",
+          "25 %",
+          "$1,700.50",
+          "$2,723.04",
+          "$2,944.55",
+          "$3,060.90",
+          "A: $1,700.50",
+          "B: $2,723.04",
+          "C: $2,944.55",
+          "D: $3,060.90"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q29": {
+      "inputHash": "7d90fc433025a362a2ba0f9c7fd23507067bc579d98fbc5643f8655496850b33",
+      "description": {
+        "en": "Question 29. Shannon has $500.00 in her bank account. Each week, she withdraws $40.00 from the account. If she does not deposit or withdraw any additional money, what is the maximum number of weeks she can withdraw the same amount of money and maintain a balance of at least $200.00? Choices: A: 5 B: 7 C: 8 D: 12",
+        "es": "Pregunta 29. Shannon tiene $500.00 en su cuenta bancaria. Cada semana, ella retira $40.00 de la cuenta. Si no deposita o retira más dinero, ¿cuál es la cantidad máxima de semanas en las que puede retirar la misma suma de dinero y mantener un saldo de al menos $200.00? Opciones: A: 5 B: 7 C: 8 D: 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$500.00",
+          "$40.00",
+          "$200.00",
+          "5",
+          "7",
+          "8",
+          "12",
+          "A: 5",
+          "B: 7",
+          "C: 8",
+          "D: 12"
+        ],
+        "es": [
+          "$500.00",
+          "$40.00",
+          "$200.00",
+          "5",
+          "7",
+          "8",
+          "12",
+          "A: 5",
+          "B: 7",
+          "C: 8",
+          "D: 12"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q32": {
+      "inputHash": "7345d1eccb66f8996a52ac0f1e1f83bf8df752f6a44f3de1a98f9554e220acad",
+      "description": {
+        "en": "Question 32. A submarine at sea level descends at a constant rate. After descending for 1 1/3 hours, the submarine’s depth is 2,700 feet below sea level. At this rate, which value represents the depth, in feet, the submarine will have reached after descending for a total of 2 1/4 hours? Choices: A: 5,805.00 B: 5,400.00 C: 4,837.50 D: 4,556.25",
+        "es": "Pregunta 32. Un submarino que está a nivel del mar desciende a una tasa constante. Después de descender durante 1 1/3 horas, la profundidad que alcanza el submarino es de 2,700 pies por debajo del nivel del mar. A esta tasa, ¿qué valor representa la profundidad, en pies, que habrá alcanzado el submarino después de descender por un total de 2 1/4 horas? Opciones: A: 5,805.00 B: 5,400.00 C: 4,837.50 D: 4,556.25"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/3",
+          "2,700",
+          "2 1/4",
+          "5,805.00",
+          "5,400.00",
+          "4,837.50",
+          "4,556.25",
+          "A: 5,805.00",
+          "B: 5,400.00",
+          "C: 4,837.50",
+          "D: 4,556.25"
+        ],
+        "es": [
+          "1 1/3",
+          "2,700",
+          "2 1/4",
+          "5,805.00",
+          "5,400.00",
+          "4,837.50",
+          "4,556.25",
+          "A: 5,805.00",
+          "B: 5,400.00",
+          "C: 4,837.50",
+          "D: 4,556.25"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q33": {
+      "inputHash": "f6e2f642c3e87671cc684f1720963df1ec82cf11d96c60bbac15cfed6e30d6c3",
+      "description": {
+        "en": "Question 33. The graph titled “YOGURT PRICES” shows the prices for a number of containers of a type of yogurt. The horizontal x-axis is labeled “Number of Containers” and is numbered from 0 through 5. The vertical y-axis is labeled “Price (dollars)” and is numbered from 0 through 4. Grid lines mark increments of 0.5 on both axes. Four points are plotted at (1, 0.5), (2, 1), (3, 1.5), and (4, 2). Which statement describes the unit price per container of yogurt? Choices: A: The unit price is $0.50. B: The unit price is $1.00. C: The unit price is $1.50. D: The unit price is $2.00.",
+        "es": "Pregunta 33. El siguiente gráfico muestra los precios de una cantidad de envases de un tipo de yogur. El gráfico se titula «PRECIOS DE YOGUR». Es un plano de coordenadas en el primer cuadrante. El eje horizontal, x, está etiquetado «Cantidad de envases» y aumenta hacia la derecha; presenta valores enteros de 0 a 5, con líneas de cuadrícula cada 0.5 unidad. El eje vertical, y, está etiquetado «Precio (dólares)» y aumenta hacia arriba; presenta valores enteros de 1 a 4, con líneas de cuadrícula cada 0.5 dólar. Hay cuatro puntos cerrados en las coordenadas (1, 0.5), (2, 1), (3, 1.5) y (4, 2). ¿Qué afirmación describe el precio unitario por envase de yogur? Opciones: A: El precio unitario es $0.50. B: El precio unitario es $1.00. C: El precio unitario es $1.50. D: El precio unitario es $2.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 0.5)",
+          "(2, 1)",
+          "(3, 1.5)",
+          "(4, 2)",
+          "$0.50",
+          "$1.00",
+          "$1.50",
+          "$2.00",
+          "A: The unit price is $0.50",
+          "B: The unit price is $1.00",
+          "C: The unit price is $1.50",
+          "D: The unit price is $2.00"
+        ],
+        "es": [
+          "0",
+          "5",
+          "0.5",
+          "1",
+          "4",
+          "(1, 0.5)",
+          "(2, 1)",
+          "(3, 1.5)",
+          "(4, 2)",
+          "$0.50",
+          "$1.00",
+          "$1.50",
+          "$2.00",
+          "A: El precio unitario es $0.50",
+          "B: El precio unitario es $1.00",
+          "C: El precio unitario es $1.50",
+          "D: El precio unitario es $2.00"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q34": {
+      "inputHash": "618c3b75bbc0e559bfdd8b679088463755cc56c4abc6453baa2d24938d5ae27d",
+      "description": {
+        "en": "Question 34. A student attends a fair. Admission to the fair is $12.00 and each ride ticket costs $5.50. The student can spend, at most, $46.00 on admission and ride tickets. Which inequality can be used to find the number of ride tickets, x, the student can buy? Choices: A: 12x + 5.5 ≤ 46 B: 5.5x + 12 ≤ 46 C: 5.5x + 12 ≥ 46 D: 12x + 5.5 ≥ 46",
+        "es": "Pregunta 34. Un alumno va a un parque de diversiones. La entrada al parque cuesta $12.00 y cada boleto para los juegos cuesta $5.50. El alumno puede gastar, como máximo, $46.00 en la entrada y los boletos para los juegos. ¿Qué desigualdad se puede usar para averiguar la cantidad de boletos para los juegos, x, que puede comprar el alumno? Opciones: A: 12x + 5.5 ≤ 46 B: 5.5x + 12 ≤ 46 C: 5.5x + 12 ≥ 46 D: 12x + 5.5 ≥ 46"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$12.00",
+          "$5.50",
+          "$46.00",
+          "12x + 5.5 ≤ 46",
+          "5.5x + 12 ≤ 46",
+          "5.5x + 12 ≥ 46",
+          "12x + 5.5 ≥ 46",
+          "A: 12x + 5.5 ≤ 46",
+          "B: 5.5x + 12 ≤ 46",
+          "C: 5.5x + 12 ≥ 46",
+          "D: 12x + 5.5 ≥ 46",
+          "5.5 ≤ 46",
+          "12 ≤ 46",
+          "12 ≥ 46",
+          "5.5 ≥ 46"
+        ],
+        "es": [
+          "$12.00",
+          "$5.50",
+          "$46.00",
+          "x",
+          "12x + 5.5 ≤ 46",
+          "5.5x + 12 ≤ 46",
+          "5.5x + 12 ≥ 46",
+          "12x + 5.5 ≥ 46",
+          "A: 12x + 5.5 ≤ 46",
+          "B: 5.5x + 12 ≤ 46",
+          "C: 5.5x + 12 ≥ 46",
+          "D: 12x + 5.5 ≥ 46",
+          "5.5 ≤ 46",
+          "12 ≤ 46",
+          "12 ≥ 46",
+          "5.5 ≥ 46"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q35": {
+      "inputHash": "919fe8a485824c03efbcb39934d5056f44e5b1f17d4b8985007f93092bf5658c",
+      "description": {
+        "en": "Question 35. Students in a class are recording the number of words they can type per minute each semester during the school year. Two horizontal box plots titled “NUMBER OF WORDS TYPED” show the results for two semesters. The horizontal axis is labeled “Average Number of Words Typed (per minute),” has arrows at both ends, and is marked at 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, and 75. For Semester 1, the minimum is 30, the first quartile is 35, the median is 40, the third quartile is 45, and the maximum is 50. For Semester 2, the minimum is 30, the first quartile is 40, the median is 55, the third quartile is 65, and the maximum is 70. What is the difference in the median number of words typed per minute from Semester 1 to Semester 2? Choices: A: 5 B: 10 C: 15 D: 20",
+        "es": "Pregunta 35. Los alumnos de una clase están registrando la cantidad de palabras que pueden tipear por minuto cada semestre durante el año escolar. Los siguientes diagramas de caja muestran los resultados de dos semestres. El diagrama se titula «CANTIDAD DE PALABRAS TIPEADAS». Una recta numérica horizontal, rotulada «Cantidad promedio de palabras tipeadas (por minuto)», tiene flechas en ambos extremos y marcas igualmente espaciadas con las etiquetas 25, 30, 35, 40, 45, 50, 55, 60, 65, 70 y 75. El diagrama de caja del Semestre 1 tiene un mínimo de 30, primer cuartil de 35, mediana de 40, tercer cuartil de 45 y máximo de 50 palabras por minuto. El diagrama de caja del Semestre 2 tiene un mínimo de 30, primer cuartil de 40, mediana de 55, tercer cuartil de 65 y máximo de 70 palabras por minuto. ¿Cuál es la diferencia en la cantidad mediana de palabras tipeadas por minuto entre el Semestre 1 y el Semestre 2? Opciones: A: 5 B: 10 C: 15 D: 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55",
+          "60",
+          "65",
+          "70",
+          "75",
+          "5",
+          "10",
+          "15",
+          "20",
+          "A: 5",
+          "B: 10",
+          "C: 15",
+          "D: 20"
+        ],
+        "es": [
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55",
+          "60",
+          "65",
+          "70",
+          "75",
+          "Semestre 1",
+          "Semestre 2",
+          "A: 5",
+          "B: 10",
+          "C: 15",
+          "D: 20"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q36": {
+      "inputHash": "24f0f5fb6367bdf3b323b9f7445f116aabe21042567170c3bc1fb31871650337",
+      "description": {
+        "en": "Question 36. Jacob bought a phone for x dollars. One year later, the value of the phone decreased by 20%. Which expression represents the value of the phone after the decrease? Choices: A: 0.2x B: 0.8x C: x − 0.2 D: x − 0.8",
+        "es": "Pregunta 36. Jacob compró un teléfono por x dólares. Un año después, el valor del teléfono disminuyó 20 %. ¿Qué expresión representa el valor del teléfono después de la disminución? Opciones: A: 0.2x B: 0.8x C: x − 0.2 D: x − 0.8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "20%",
+          "0.2x",
+          "0.8x",
+          "x − 0.2",
+          "x − 0.8",
+          "A: 0.2x",
+          "B: 0.8x",
+          "C: x − 0.2",
+          "D: x − 0.8"
+        ],
+        "es": [
+          "x",
+          "20 %",
+          "0.2x",
+          "0.8x",
+          "x − 0.2",
+          "x − 0.8",
+          "A: 0.2x",
+          "B: 0.8x",
+          "C: x − 0.2",
+          "D: x − 0.8"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q37": {
+      "inputHash": "3cf94455b9abb4fff0a7d3ba7c72e706a0628244f2999a14402675110da833a9",
+      "description": {
+        "en": "Question 37. The temperature at 8:00 a.m. was −7°F. At 3:00 p.m., the temperature had risen to 8°F. What was the change in temperature, in degrees Fahrenheit, from 8:00 a.m. to 3:00 p.m.? Choices: A: −15 B: −1 C: 1 D: 15",
+        "es": "Pregunta 37. La temperatura a las 8:00 a. m. era de −7 °F. A las 3:00 p. m., la temperatura había aumentado a 8 °F. ¿Cuál fue el cambio en la temperatura, en grados Fahrenheit, desde las 8:00 a. m. a las 3:00 p. m.? Opciones: A: −15 B: −1 C: 1 D: 15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8:00 a.m",
+          "−7°F",
+          "3:00 p.m",
+          "8°F",
+          "−15",
+          "−1",
+          "1",
+          "15",
+          "A: −15",
+          "B: −1",
+          "C: 1",
+          "D: 15"
+        ],
+        "es": [
+          "8:00 a. m",
+          "−7 °F",
+          "3:00 p. m",
+          "8 °F",
+          "A: −15",
+          "B: −1",
+          "C: 1",
+          "D: 15"
+        ]
+      }
+    },
+    "nysed-2025-g7-mc-q38": {
+      "inputHash": "65769a7848639daa7ecb72fea6217a47ff38b8e0fdffd6967a5bf9199969e155",
+      "description": {
+        "en": "Question 38. Audrey is planning a party for 30 people. She wants to buy enough juice for each person to have exactly 2 servings of juice. Each bottle of juice has 5 servings. Each bottle of juice costs $4.89. What is the total amount it will cost Audrey to buy the bottles of juice to serve her guests and have no juice left over? Choices: A: $29.34 B: $48.90 C: $58.68 D: $73.35",
+        "es": "Pregunta 38. Audrey está planeando una fiesta para 30 personas. Quiere comprar suficiente jugo para que cada persona tenga exactamente 2 raciones de jugo. • Cada botella de jugo rinde 5 raciones. • Cada botella de jugo cuesta $4.89. ¿Cuál es la cantidad total que tendrá que pagar Audrey para comprar las botellas de jugo para sus invitados y que no sobre nada de jugo? Opciones: A: $29.34 B: $48.90 C: $58.68 D: $73.35"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "30",
+          "2",
+          "5",
+          "$4.89",
+          "$29.34",
+          "$48.90",
+          "$58.68",
+          "$73.35",
+          "A: $29.34",
+          "B: $48.90",
+          "C: $58.68",
+          "D: $73.35"
+        ],
+        "es": [
+          "30",
+          "2",
+          "5",
+          "$4.89",
+          "$29.34",
+          "$48.90",
+          "$58.68",
+          "$73.35",
+          "A: $29.34",
+          "B: $48.90",
+          "C: $58.68",
+          "D: $73.35"
+        ]
+      }
+    }
+  }
+}

@@ -17,9 +17,21 @@ MATH_EXPLANATION_SIDECAR_SCHEMA_VERSION = 1
 DEFAULT_MATH_EXPLANATIONS_ROOT = (
     Path(__file__).resolve().parents[1] / "content" / "math-exams" / "explanations"
 )
+DEFAULT_MATH_OFFICIAL_RATIONALE_OVERRIDES = (
+    Path(__file__).resolve().parents[1]
+    / "content"
+    / "math-exams"
+    / "official-rationale-overrides.json"
+)
+MATH_OFFICIAL_RATIONALE_OVERRIDE_POLICY_VERSION = "math-official-rationale-repair-1"
+MATH_OFFICIAL_RATIONALE_OVERRIDE_SCHEMA_VERSION = 1
 
-MathExplanationSource = Literal["official-nysed", "vine-authored"]
-_SOURCES = frozenset(("official-nysed", "vine-authored"))
+MathExplanationSource = Literal[
+    "official-nysed",
+    "official-nysed-corrected",
+    "vine-authored",
+]
+_SOURCES = frozenset(("official-nysed", "official-nysed-corrected", "vine-authored"))
 _CHOICES = frozenset(("A", "B", "C", "D"))
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 _GENERIC_RE = re.compile(
@@ -51,8 +63,121 @@ _ANSWER_CHOICE_HEADING_RE = re.compile(
     re.IGNORECASE | re.MULTILINE,
 )
 _ANSWER_CHOICES_SUMMARY_RE = re.compile(
-    r"^[ \t]*Answer[ \t]+(?:choices?|options?)\b",
+    # Singular "answer choice C" can occur inside an explanation sentence;
+    # only the official plural summary heading terminates a rationale.
+    r"^[ \t]*Answer[ \t]+(?:choices|options)\b",
     re.IGNORECASE | re.MULTILINE,
+)
+
+OFFICIAL_RATIONALE_OVERRIDE_QUESTION_IDS = frozenset(
+    {
+        "nysed-2013-g3-mc-q1",
+        "nysed-2013-g3-mc-q4",
+        "nysed-2013-g3-mc-q8",
+        "nysed-2013-g3-mc-q9",
+        "nysed-2013-g4-mc-q3",
+        "nysed-2013-g4-mc-q5",
+        "nysed-2013-g4-mc-q7",
+        "nysed-2013-g4-mc-q8",
+        "nysed-2013-g5-mc-q1",
+        "nysed-2013-g5-mc-q3",
+        "nysed-2013-g5-mc-q4",
+        "nysed-2013-g5-mc-q10",
+        "nysed-2013-g5-mc-q11",
+        "nysed-2013-g6-mc-q2",
+        "nysed-2013-g6-mc-q13",
+        "nysed-2013-g6-mc-q14",
+        "nysed-2013-g6-mc-q27",
+        "nysed-2013-g7-mc-q2",
+        "nysed-2013-g7-mc-q5",
+        "nysed-2013-g7-mc-q7",
+        "nysed-2013-g8-mc-q6",
+        "nysed-2013-g8-mc-q17",
+        "nysed-2013-g8-mc-q19",
+        "nysed-2013-g8-mc-q25",
+        "nysed-2013-g8-mc-q49",
+        "nysed-2013-g8-mc-q50",
+        "nysed-2014-g3-mc-q8",
+        "nysed-2014-g3-mc-q14",
+        "nysed-2014-g3-mc-q26",
+        "nysed-2014-g3-mc-q28",
+        "nysed-2014-g3-mc-q31",
+        "nysed-2014-g3-mc-q41",
+        "nysed-2014-g4-mc-q1",
+        "nysed-2014-g4-mc-q11",
+        "nysed-2014-g4-mc-q17",
+        "nysed-2014-g4-mc-q27",
+        "nysed-2014-g4-mc-q29",
+        "nysed-2014-g4-mc-q31",
+        "nysed-2014-g4-mc-q35",
+        "nysed-2014-g4-mc-q42",
+        "nysed-2014-g4-mc-q49",
+        "nysed-2014-g5-mc-q7",
+        "nysed-2014-g5-mc-q9",
+        "nysed-2014-g5-mc-q10",
+        "nysed-2014-g5-mc-q13",
+        "nysed-2014-g5-mc-q16",
+        "nysed-2014-g5-mc-q23",
+        "nysed-2014-g5-mc-q33",
+        "nysed-2014-g5-mc-q36",
+        "nysed-2014-g5-mc-q40",
+        "nysed-2014-g5-mc-q41",
+        "nysed-2014-g5-mc-q43",
+        "nysed-2014-g5-mc-q44",
+        "nysed-2014-g5-mc-q49",
+        "nysed-2014-g6-mc-q1",
+        "nysed-2014-g6-mc-q10",
+        "nysed-2014-g6-mc-q23",
+        "nysed-2014-g6-mc-q25",
+        "nysed-2014-g6-mc-q26",
+        "nysed-2014-g6-mc-q27",
+        "nysed-2014-g6-mc-q31",
+        "nysed-2014-g6-mc-q37",
+        "nysed-2014-g6-mc-q44",
+        "nysed-2014-g6-mc-q47",
+        "nysed-2014-g6-mc-q51",
+        "nysed-2014-g6-mc-q52",
+        "nysed-2014-g6-mc-q55",
+        "nysed-2014-g7-mc-q1",
+        "nysed-2014-g7-mc-q2",
+        "nysed-2014-g7-mc-q4",
+        "nysed-2014-g7-mc-q5",
+        "nysed-2014-g7-mc-q7",
+        "nysed-2014-g7-mc-q8",
+        "nysed-2014-g7-mc-q11",
+        "nysed-2014-g7-mc-q15",
+        "nysed-2014-g7-mc-q17",
+        "nysed-2014-g7-mc-q18",
+        "nysed-2014-g7-mc-q20",
+        "nysed-2014-g7-mc-q21",
+        "nysed-2014-g7-mc-q23",
+        "nysed-2014-g7-mc-q24",
+        "nysed-2014-g7-mc-q27",
+        "nysed-2014-g7-mc-q29",
+        "nysed-2014-g8-mc-q1",
+        "nysed-2014-g8-mc-q4",
+        "nysed-2014-g8-mc-q6",
+        "nysed-2014-g8-mc-q7",
+        "nysed-2014-g8-mc-q9",
+        "nysed-2014-g8-mc-q10",
+        "nysed-2014-g8-mc-q12",
+        "nysed-2014-g8-mc-q14",
+        "nysed-2014-g8-mc-q19",
+        "nysed-2014-g8-mc-q20",
+        "nysed-2014-g8-mc-q21",
+        "nysed-2014-g8-mc-q22",
+        "nysed-2014-g8-mc-q23",
+        "nysed-2014-g8-mc-q25",
+    }
+)
+OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS = frozenset(
+    {
+        "nysed-2013-g4-mc-q8",
+        "nysed-2013-g6-mc-q14",
+        "nysed-2014-g4-mc-q29",
+        "nysed-2014-g5-mc-q44",
+        "nysed-2014-g7-mc-q1",
+    }
 )
 
 
@@ -64,6 +189,13 @@ class MathExplanationError(ValueError):
 class LocalizedMathExplanation:
     en: str
     es: str
+    source: MathExplanationSource
+
+
+@dataclasses.dataclass(frozen=True)
+class OfficialMathRationaleOverride:
+    raw_rationale_sha256: str
+    text: str
     source: MathExplanationSource
 
 
@@ -109,7 +241,10 @@ class MathQuestionExplanationInput:
 def normalize_math_explanation_text(value: str) -> str:
     if not isinstance(value, str):
         raise TypeError("Math explanation text must be a string")
-    normalized = unicodedata.normalize("NFKC", value)
+    # Compatibility normalization rewrites mathematical superscripts into
+    # baseline digits (for example, 12²⁰ becomes 1220).  Preserve authored and
+    # official notation while still composing canonically equivalent text.
+    normalized = unicodedata.normalize("NFC", value)
     normalized = "".join(
         " " if unicodedata.category(character).startswith("C") else character
         for character in normalized
@@ -117,10 +252,26 @@ def normalize_math_explanation_text(value: str) -> str:
     return re.sub(r"\s+", " ", normalized).strip()
 
 
+def _normalize_pinned_question_input_text(value: str, *, label: str) -> str:
+    """Retain the established compatibility-normalized explanation input hash."""
+
+    if not isinstance(value, str):
+        raise TypeError(f"{label} must be a string")
+    normalized = unicodedata.normalize("NFKC", value)
+    normalized = "".join(
+        " " if unicodedata.category(character).startswith("C") else character
+        for character in normalized
+    )
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    if not normalized:
+        raise MathExplanationError(f"{label} must not be empty")
+    return normalized
+
+
 def _annotation_text(value: str) -> str:
     if not isinstance(value, str):
         raise TypeError("Official annotation block must be a string")
-    normalized = unicodedata.normalize("NFKC", value).replace("\r", "\n").replace("\f", "\n")
+    normalized = unicodedata.normalize("NFC", value).replace("\r", "\n").replace("\f", "\n")
     return "\n".join(re.sub(r"[ \t]+", " ", line).strip() for line in normalized.splitlines())
 
 
@@ -192,8 +343,18 @@ def math_question_explanation_input_hash(value: MathQuestionExplanationInput) ->
     payload = {
         "questionId": _required(value.question_id, label="Question id"),
         "questionAlt": {
-            "en": _required(value.alt_en, label="English question alt", flatten=True),
-            "es": _optional(value.alt_es, label="Spanish question alt", flatten=True),
+            "en": _normalize_pinned_question_input_text(
+                value.alt_en,
+                label="English question alt",
+            ),
+            "es": (
+                _normalize_pinned_question_input_text(
+                    value.alt_es,
+                    label="Spanish question alt",
+                )
+                if value.alt_es is not None
+                else None
+            ),
         },
         "correct": _choice(value.correct, label="Correct choice"),
         "standards": {"primary": primary, "secondary": secondary},
@@ -247,6 +408,124 @@ def validate_math_question_explanation(value: Any, *, question_id: str) -> Local
         en=_validate_text(localized["en"], question_id=question_id, language="English", source=source),
         es=_validate_text(localized["es"], question_id=question_id, language="Spanish", source=source),
         source=source,
+    )
+
+
+def official_math_rationale_extraction_hash(value: str) -> str:
+    """Hash the exact normalized extraction an override was reviewed against."""
+
+    normalized = normalize_math_explanation_text(value)
+    if not normalized:
+        raise MathExplanationError("Official rationale extraction must not be empty")
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def validate_official_math_rationale_overrides(
+    value: Any,
+    *,
+    expected_question_ids: frozenset[str] = OFFICIAL_RATIONALE_OVERRIDE_QUESTION_IDS,
+) -> dict[str, OfficialMathRationaleOverride]:
+    """Validate exact repair coverage and provenance for known NYSED defects."""
+
+    document = _exact_keys(
+        value,
+        {"schemaVersion", "policyVersion", "questions"},
+        label="Official math rationale override document",
+    )
+    if document["schemaVersion"] != MATH_OFFICIAL_RATIONALE_OVERRIDE_SCHEMA_VERSION:
+        raise MathExplanationError("Official rationale override schemaVersion is invalid")
+    if document["policyVersion"] != MATH_OFFICIAL_RATIONALE_OVERRIDE_POLICY_VERSION:
+        raise MathExplanationError("Official rationale override policyVersion is invalid")
+    questions = document["questions"]
+    if not isinstance(questions, dict):
+        raise MathExplanationError("Official rationale override questions must be an object")
+    actual_ids = set(questions)
+    if actual_ids != set(expected_question_ids):
+        raise MathExplanationError(
+            "Official rationale override coverage changed; "
+            f"missing={sorted(set(expected_question_ids) - actual_ids)}, "
+            f"orphaned={sorted(actual_ids - set(expected_question_ids))}"
+        )
+
+    result: dict[str, OfficialMathRationaleOverride] = {}
+    for question_id in sorted(expected_question_ids):
+        item = _exact_keys(
+            questions[question_id],
+            {"rawRationaleSha256", "text", "source"},
+            label=f"Official rationale override for {question_id}",
+        )
+        source = item["source"]
+        expected_source = (
+            "official-nysed-corrected"
+            if question_id in OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS
+            else "official-nysed"
+        )
+        if source != expected_source:
+            raise MathExplanationError(
+                f"Official rationale override {question_id} must use {expected_source} provenance"
+            )
+        text = _validate_text(
+            item["text"],
+            question_id=question_id,
+            language="English",
+            source=source,
+        )
+        result[question_id] = OfficialMathRationaleOverride(
+            raw_rationale_sha256=_sha(
+                item["rawRationaleSha256"],
+                label=f"Raw rationale SHA-256 for {question_id}",
+            ),
+            text=text,
+            source=source,
+        )
+    return result
+
+
+def load_official_math_rationale_overrides(
+    path: Path = DEFAULT_MATH_OFFICIAL_RATIONALE_OVERRIDES,
+) -> dict[str, OfficialMathRationaleOverride]:
+    try:
+        value = json.loads(
+            Path(path).read_text(encoding="utf-8"),
+            object_pairs_hook=_reject_duplicate_keys,
+        )
+    except MathExplanationError:
+        raise
+    except (OSError, json.JSONDecodeError, UnicodeError) as exc:
+        raise MathExplanationError(
+            f"Could not read official math rationale overrides: {exc}"
+        ) from exc
+    return validate_official_math_rationale_overrides(value)
+
+
+def resolve_official_math_rationale(
+    *,
+    question_id: str,
+    raw_rationale: str,
+    overrides: Mapping[str, OfficialMathRationaleOverride],
+) -> LocalizedMathExplanation:
+    """Apply a reviewed repair only when the source extraction still matches."""
+
+    normalized = normalize_math_explanation_text(raw_rationale)
+    override = overrides.get(question_id)
+    if override is None:
+        text = _validate_text(
+            normalized,
+            question_id=question_id,
+            language="English",
+            source="official-nysed",
+        )
+        return LocalizedMathExplanation(en=text, es=text, source="official-nysed")
+    actual_hash = official_math_rationale_extraction_hash(normalized)
+    if actual_hash != override.raw_rationale_sha256:
+        raise MathExplanationError(
+            f"Official rationale extraction changed for {question_id}; "
+            "the reviewed repair must be re-audited"
+        )
+    return LocalizedMathExplanation(
+        en=override.text,
+        es=override.text,
+        source=override.source,
     )
 
 

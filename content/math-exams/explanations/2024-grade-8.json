@@ -197,8 +197,8 @@
       "inputHash": "6f1c749e974b0672407c0db7cea200ef1ec25177b9d1db88b30998237ed9ee29",
       "explanation": {
         "text": {
-          "en": "Since 1.4^2 = 1.96 < 2 and 1.5^2 = 2.25 > 2, the square root of 2 lies between 1.4 and 1.5. Its value is about 1.414, so it is closer to 1.5, choice D.",
-          "es": "Ya que 1.4^2 = 1.96 < 2 y 1.5^2 = 2.25 > 2, la raíz cuadrada de 2 está entre 1.4 y 1.5. Su valor es aproximadamente 1.414, por lo que está más cerca de 1.5, opción D."
+          "en": "The square root of 2 is about 1.414. It lies between 1.0 and 1.5, and its distance from 1.5 is about 0.086, much less than its distance of about 0.414 from 1.0, so choice D is correct.",
+          "es": "La raíz cuadrada de 2 es aproximadamente 1.414 y está entre 1.0 y 1.5. Como 1.5 − 1.414 = 0.086 y 1.414 − 1.0 = 0.414, está mucho más cerca de 1.5; por eso la opción D es correcta."
         },
         "source": "vine-authored"
       }

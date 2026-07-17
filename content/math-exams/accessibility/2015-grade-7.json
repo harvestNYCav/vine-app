@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2015-grade-7-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2015-g7-mc-q1": {
+      "inputHash": "2ff8fc9136acf969505043d9ac4d0d79954df44b87e34953d8d29024d89ee86d",
+      "description": {
+        "en": "Question 1. Yesterday, the temperature at noon was 11.4°F. By midnight, the temperature had decreased by 15.7 degrees. What was the temperature at midnight? Choices: A: −4.3°F B: −11.4°F C: −15.7°F D: −27.1°F"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "11.4°F",
+          "15.7",
+          "−4.3°F",
+          "−11.4°F",
+          "−15.7°F",
+          "−27.1°F",
+          "A: −4.3°F",
+          "B: −11.4°F",
+          "C: −15.7°F",
+          "D: −27.1°F"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q2": {
+      "inputHash": "7b851ea9d45dd3ec62e6ef4f65e42c73e5b76399e9f30d6de74270e4ead279b9",
+      "description": {
+        "en": "Question 2. Jared surveyed the students in his class to determine how they scored in a game. He displayed his results in a table titled “GAME SCORES.” The table has columns “Score (points)” and “Number of Students.” The rows are: 0 to 4 points, 5 students; 5 to 9 points, 10 students; 10 to 14 points, 3 students; and 15 to 19 points, 7 students. Which histogram represents the data in the table? Each choice is a histogram titled “GAME SCORES,” with horizontal axis “Score (points),” intervals 0–4, 5–9, 10–14, and 15–19, and vertical axis “Number of Students.” Adjacent bars represent the four intervals in that order. Choices: A: The bar heights are 7, 3, 10, and 5. B: The bar heights are 5, 10, 3, and 7. C: The bar heights are 5, 6, 3, and 7. D: The bar heights are 10, 5, 3, and 7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 to 4",
+          "5 to 9",
+          "10 to 14",
+          "15 to 19",
+          "0–4",
+          "5–9",
+          "10–14",
+          "15–19",
+          "7, 3, 10, and 5",
+          "5, 10, 3, and 7",
+          "5, 6, 3, and 7",
+          "10, 5, 3, and 7",
+          "A: The bar heights are 7, 3, 10, and 5",
+          "B: The bar heights are 5, 10, 3, and 7",
+          "C: The bar heights are 5, 6, 3, and 7",
+          "D: The bar heights are 10, 5, 3, and 7"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q3": {
+      "inputHash": "bd3fe7a81890340ee9cfe934d8f06fd29cf62f03b1453cc34a78c9051a97a48a",
+      "description": {
+        "en": "Question 3. Altitude above sea level is given in positive values and below sea level is given in negative values. Which situation describes a hiker in Death Valley stopping at an altitude of 0 feet? Choices: A: The hiker starts at −10 feet then increases altitude by 10 feet. B: The hiker starts at −10 feet then decreases altitude by 10 feet. C: The hiker starts at 10 feet then increases altitude by 10 feet. D: The hiker starts at 0 feet then decreases altitude by 10 feet."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 feet",
+          "−10 feet",
+          "10 feet",
+          "A: The hiker starts at −10 feet then increases altitude by 10 feet",
+          "B: The hiker starts at −10 feet then decreases altitude by 10 feet",
+          "C: The hiker starts at 10 feet then increases altitude by 10 feet",
+          "D: The hiker starts at 0 feet then decreases altitude by 10 feet"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q4": {
+      "inputHash": "2ee8edaed123d16766f929ae7924366f5434b17c82268364f22105bcd4fd031c",
+      "description": {
+        "en": "Question 4. A cereal company puts a colored ring in each box of cereal. There are 6 different ring colors. The colors of the rings in each of 50 cereal boxes are listed in a table titled “RING COLORS IN CEREAL BOXES.” The table has columns “Color” and “Number of Rings.” The rows are: Red, 7; Blue, 15; Green, 8; Purple, 10; Yellow, 5; Orange, 5. Based on the data, what is the probability that the next cereal box will contain a blue or a yellow ring? Choices: A: 1/6 B: 2/5 C: 3/5 D: 2/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "50",
+          "Red, 7",
+          "Blue, 15",
+          "Green, 8",
+          "Purple, 10",
+          "Yellow, 5",
+          "Orange, 5",
+          "1/6",
+          "2/5",
+          "3/5",
+          "2/3",
+          "A: 1/6",
+          "B: 2/5",
+          "C: 3/5",
+          "D: 2/3"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q5": {
+      "inputHash": "eb941fa48993ed414db1e2785084e2da1bab5f6682a6bdcfad556ab12854c83f",
+      "description": {
+        "en": "Question 5. The three steps below were used to find an expression equivalent to (2/5)(15x − 30y) + 10x. Step 1 is unknown. Step 2 is 16x − 12y. Step 3 is 4(4x − 3y). Which expression could be used as Step 1? Choices: A: (2/5)(25x − 30y) B: 6x − 12y + 10x C: 6x − 30y + 10x D: 15(x − 2y) + 10x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2/5)(15x − 30y) + 10x",
+          "16x − 12y",
+          "4(4x − 3y)",
+          "(2/5)(25x − 30y)",
+          "6x − 12y + 10x",
+          "6x − 30y + 10x",
+          "15(x − 2y) + 10x",
+          "A: (2/5)(25x − 30y)",
+          "B: 6x − 12y + 10x",
+          "C: 6x − 30y + 10x",
+          "D: 15(x − 2y) + 10x",
+          "(2/5)",
+          "(15x − 30y)",
+          "(4x − 3y)",
+          "(25x − 30y)",
+          "(x − 2y)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q6": {
+      "inputHash": "4202803c599ec5f2581677cf23d9dca40bbe47bfc11be0785f441877a6c32b45",
+      "description": {
+        "en": "Question 6. A graph titled “Circus Admission” shows the relationship between the number of people in a group and the total cost of admission tickets for a circus. The horizontal x-axis is labeled “Number of People” and is marked from 0 through 10 in increments of 1. The vertical y-axis is labeled “Total Cost (dollars)” and is marked from 0 through 135 in increments of 15. A straight ray begins at (0, 0), passes through the closed points (1, 15), (2, 30), (3, 45), (4, 60), (5, 75), (6, 90), (7, 105), and (8, 120), and continues upward and to the right with an arrow. What point on the graph represents the unit rate? Choices: A: (0, 0) B: (1, 15) C: (15, 1) D: (8, 120)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "(1, 15)",
+          "(2, 30)",
+          "(3, 45)",
+          "(4, 60)",
+          "(5, 75)",
+          "(6, 90)",
+          "(7, 105)",
+          "(8, 120)",
+          "(15, 1)",
+          "A: (0, 0)",
+          "B: (1, 15)",
+          "C: (15, 1)",
+          "D: (8, 120)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q7": {
+      "inputHash": "157454a2ecfbc4f4c4d472c403aa94e26510281e1201c026591990966a3de53c",
+      "description": {
+        "en": "Question 7. Evaluate (−7/10 + 0.15) ÷ (−0.125). Choices: A: −6.8 B: −4.4 C: 4.4 D: 6.8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−7/10 + 0.15) ÷ (−0.125)",
+          "−6.8",
+          "−4.4",
+          "4.4",
+          "6.8",
+          "A: −6.8",
+          "B: −4.4",
+          "C: 4.4",
+          "D: 6.8",
+          "(−7/10 + 0.15)",
+          "(−0.125)"
+        ]
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2015-g7-mc-q8": {
+      "inputHash": "6cbc32d5e0b10c58fe56589ff6ad07fa98809e03752293a525285bf5035f9288",
+      "description": {
+        "en": "Question 8. A recipe requires 1/3 cup of milk for each 1/4 cup of water. How many cups of water are needed for each cup of milk? Choices: A: 1/12 B: 3/4 C: 11/12 D: 1 1/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "1/4",
+          "1/12",
+          "3/4",
+          "11/12",
+          "1 1/3",
+          "A: 1/12",
+          "B: 3/4",
+          "C: 11/12",
+          "D: 1 1/3"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q9": {
+      "inputHash": "98e8ffbd5b73fa625e2c638e990f9ec554544591e502dd28a776267d8f8f4023",
+      "description": {
+        "en": "Question 9. During a sale, a store offered a 40% discount on a particular camera that was originally priced at $450. After the sale, the discounted price of the camera was increased by 40%. What was the price of the camera after this increase? Choices: A: $252 B: $360 C: $378 D: $450"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "40%",
+          "$450",
+          "$252",
+          "$360",
+          "$378",
+          "A: $252",
+          "B: $360",
+          "C: $378",
+          "D: $450"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q10": {
+      "inputHash": "3221a2b68d5d3a709069efca57586973392daa60287b22faf75f1a4ce64f6324",
+      "description": {
+        "en": "Question 10. What is the product of (−1/4) × (−3/7)? Choices: A: −7/12 B: −3/28 C: 3/28 D: 7/12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−1/4) × (−3/7)",
+          "−7/12",
+          "−3/28",
+          "3/28",
+          "7/12",
+          "A: −7/12",
+          "B: −3/28",
+          "C: 3/28",
+          "D: 7/12",
+          "(−1/4)",
+          "(−3/7)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q11": {
+      "inputHash": "208b0ea54d6389f6f3a1b775791a7aaa9950f9dd965ad20209e72daff1b750d1",
+      "description": {
+        "en": "Question 11. Gary buys a 3 1/2-pound bag of cat food every 3 weeks. Gary feeds his cat the same amount of food each day. Which expression can Gary use to determine the number of pounds of cat food his cat eats each year? (1 year = 52 weeks) Choices: A: 7/2 × 52/3 B: 7/2 × 3/52 C: 3(1/2 × 3/52) D: 3(1/2 × 52/3)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 1/2-pound",
+          "3 weeks",
+          "1 year = 52 weeks",
+          "7/2 × 52/3",
+          "7/2 × 3/52",
+          "3(1/2 × 3/52)",
+          "3(1/2 × 52/3)",
+          "A: 7/2 × 52/3",
+          "B: 7/2 × 3/52",
+          "C: 3(1/2 × 3/52)",
+          "D: 3(1/2 × 52/3)",
+          "3 1/2",
+          "(1 year = 52 weeks)",
+          "7/2",
+          "52/3",
+          "3/52",
+          "(1/2 × 3/52)",
+          "(1/2 × 52/3)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q12": {
+      "inputHash": "249954211c8adc7e9aeed682b463e880700853b304e6138a9bf474b80ac040f2",
+      "description": {
+        "en": "Question 12. What is the decimal equivalent of 7/8? Choices: A: 0.780 B: 0.870 C: 0.875 D: 0.885"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7/8",
+          "0.780",
+          "0.870",
+          "0.875",
+          "0.885",
+          "A: 0.780",
+          "B: 0.870",
+          "C: 0.875",
+          "D: 0.885"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q13": {
+      "inputHash": "f719d8f9cfdb50549d1cfdd1c2ee4bc943423c9942a6559005613b4c194b0f34",
+      "description": {
+        "en": "Question 13. What is the value of (−1/4 − 1/2) ÷ (−4/7)? Choices: A: −1 5/16 B: −3/7 C: 3/7 D: 1 5/16"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−1/4 − 1/2) ÷ (−4/7)",
+          "−1 5/16",
+          "−3/7",
+          "3/7",
+          "1 5/16",
+          "A: −1 5/16",
+          "B: −3/7",
+          "C: 3/7",
+          "D: 1 5/16",
+          "(−1/4 − 1/2)",
+          "(−4/7)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q14": {
+      "inputHash": "87b2ef43e20cd9e1609271d36786baf4b4ce05d7b68560834f280a90de66ff52",
+      "description": {
+        "en": "Question 14. The school bus Evie rides is scheduled to arrive at her stop at 8:20 a.m. each day. The table below shows the actual arrival times of the bus for several days that were randomly selected over the past few months. The table is titled “BUS ARRIVAL TIMES (a.m.)” and has four rows and five columns. From left to right, row 1 contains 8:21, 8:21, 8:19, 8:20, 8:23. Row 2 contains 8:22, 8:20, 8:18, 8:20, 8:18. Row 3 contains 8:21, 8:20, 8:19, 8:17, 8:25. Row 4 contains 8:20, 8:20, 8:18, 8:19, 8:24. Based on these data, what is the probability that the bus will arrive at Evie’s stop before 8:20 a.m. tomorrow? Choices: A: 3/10 B: 1/3 C: 7/20 D: 13/20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8:20 a.m",
+          "8:21",
+          "8:19",
+          "8:23",
+          "8:22",
+          "8:18",
+          "8:17",
+          "8:25",
+          "8:24",
+          "3/10",
+          "1/3",
+          "7/20",
+          "13/20",
+          "A: 3/10",
+          "B: 1/3",
+          "C: 7/20",
+          "D: 13/20"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q15": {
+      "inputHash": "5e0a11b5988ab63233549598adb00db26ade7a444f6b757aadb522ab07a90be0",
+      "description": {
+        "en": "Question 15. What is the radius, in centimeters, of a circle that has a circumference of 16π centimeters? Calculators allowed. Choices: A: 8 B: 16 C: 32 D: 64"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16π centimeters",
+          "8",
+          "16",
+          "32",
+          "64",
+          "A: 8",
+          "B: 16",
+          "C: 32",
+          "D: 64"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q16": {
+      "inputHash": "03f69b4f25e145afefea4f69a6f8cb3a191099d45eac1024b43401051bc904df",
+      "description": {
+        "en": "Question 16. Each sales associate at an electronics store has a choice of the two salary options below: $115 per week plus 9.5% commission on the associate’s total sales; or $450 per week with no commission. The average of the total sales amount for each associate last year was $125,000. Based on this average, what is the difference between the two salary options each year? (52 weeks = 1 year) Calculators allowed. Choices: A: $4,262.11 B: $5,545.00 C: $10,956.90 D: $11,525.00"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$115 per week",
+          "9.5%",
+          "$450 per week",
+          "$125,000",
+          "52 weeks = 1 year",
+          "$4,262.11",
+          "$5,545.00",
+          "$10,956.90",
+          "$11,525.00",
+          "A: $4,262.11",
+          "B: $5,545.00",
+          "C: $10,956.90",
+          "D: $11,525.00",
+          "(52 weeks = 1 year)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q17": {
+      "inputHash": "7e9f8962b5b70c8e58b8b07e8552db7add7426dd5cb56e1f1cac679adf440873",
+      "description": {
+        "en": "Question 17. Travis, Jessica, and Robin are collecting donations for the school band. Travis wants to collect 20% more than Jessica, and Robin wants to collect 35% more than Travis. If the students meet their goals and Travis collects $43, how much money did they collect in all? Calculators allowed. Choices: A: $106.78 B: $128.60 C: $136.88 D: $144.99"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20%",
+          "35%",
+          "$43",
+          "$106.78",
+          "$128.60",
+          "$136.88",
+          "$144.99",
+          "A: $106.78",
+          "B: $128.60",
+          "C: $136.88",
+          "D: $144.99"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q18": {
+      "inputHash": "b3afe437ceaf838da9cdd2a8670810567c867b8dea1380ecf28a3b35e7fdc29e",
+      "description": {
+        "en": "Question 18. The mean radius of Earth is 6,371.0 kilometers, and the mean radius of Earth’s Moon is 1,737.5 kilometers. What is the approximate difference in the mean circumferences, in kilometers, of Earth and Earth’s Moon? Round your answer to the nearest tenth of a kilometer. Calculators allowed. Choices: A: 40,030.2 B: 29,113.1 C: 14,556.6 D: 10,917.0"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6,371.0",
+          "1,737.5",
+          "40,030.2",
+          "29,113.1",
+          "14,556.6",
+          "10,917.0",
+          "A: 40,030.2",
+          "B: 29,113.1",
+          "C: 14,556.6",
+          "D: 10,917.0"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q19": {
+      "inputHash": "7786dba7299c914c277c94198065c09cd280fd22001abbd13c5b4d1a4defc1ac",
+      "description": {
+        "en": "Question 19. A dealer paid $10,000 for a boat at an auction. At the dealership, a salesperson sold the boat for 30% more than the auction price. The salesperson received a commission of 25% of the difference between the auction price and the dealership price. What was the salesperson’s commission? Calculators allowed. Choices: A: $750 B: $1,750 C: $3,250 D: $5,500"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$10,000",
+          "30%",
+          "25%",
+          "$750",
+          "$1,750",
+          "$3,250",
+          "$5,500",
+          "A: $750",
+          "B: $1,750",
+          "C: $3,250",
+          "D: $5,500"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q20": {
+      "inputHash": "2c2c3467e627163a77405c752daad8b8095308b153a77da6c83dddb06b6328b5",
+      "description": {
+        "en": "Question 20. Which expression represents a factorization of 32m + 56mp? Calculators allowed. Choices: A: 8(4m + 7p) B: 8(4 + 7)mp C: 8p(4 + 7m) D: 8m(4 + 7p)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "32m + 56mp",
+          "8(4m + 7p)",
+          "8(4 + 7)mp",
+          "8p(4 + 7m)",
+          "8m(4 + 7p)",
+          "A: 8(4m + 7p)",
+          "B: 8(4 + 7)mp",
+          "C: 8p(4 + 7m)",
+          "D: 8m(4 + 7p)",
+          "(4m + 7p)",
+          "(4 + 7)",
+          "(4 + 7m)",
+          "(4 + 7p)"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q21": {
+      "inputHash": "4b0153e4d3a52e38058ac4611681d9302c1f2bc531fcd42825d07578ccaeae5f",
+      "description": {
+        "en": "Question 21. Amber determined that the expression (−1/2) ÷ (−41/15) is equivalent to 15/82. Which statement describes the process Amber could have used? Calculators allowed. Choices: A: She divided −1/2 by −15 and then divided the result by 41. B: She multiplied −1/2 by −15 and then divided the result by 41. C: She divided −1/2 by −15 and then multiplied the result by 41. D: She multiplied −1/2 by −15 and then multiplied the result by 41."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−1/2) ÷ (−41/15)",
+          "15/82",
+          "−1/2",
+          "−15",
+          "41",
+          "A: She divided −1/2 by −15 and then divided the result by 41",
+          "B: She multiplied −1/2 by −15 and then divided the result by 41",
+          "C: She divided −1/2 by −15 and then multiplied the result by 41",
+          "D: She multiplied −1/2 by −15 and then multiplied the result by 41",
+          "(−1/2)",
+          "(−41/15)",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q22": {
+      "inputHash": "69830bd61621e15343c9d6b84d9124f68dc66067e49b080dfae21f744e819590",
+      "description": {
+        "en": "Question 22. Ben earns $9 per hour and $6 for each delivery he makes. He wants to earn more than $155 in an 8-hour workday. What is the least number of deliveries he must make to reach his goal? Calculators allowed. Choices: A: 11 B: 12 C: 13 D: 14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$9",
+          "$6",
+          "more than $155",
+          "8-hour",
+          "11",
+          "12",
+          "13",
+          "14",
+          "A: 11",
+          "B: 12",
+          "C: 13",
+          "D: 14"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q23": {
+      "inputHash": "9d86212c2201d405800f3a779acd802b38fd9c52210e5a92dac46d4d9e200af0",
+      "description": {
+        "en": "Question 23. Malika and Adrian prepared containers of potato salad at a deli. Each container was supposed to have a mass of one pound. The manager selected a random sample of containers prepared by each employee to check the mass of each container. A table titled “Mass of Each Container” has two columns. Malika’s containers, in pounds, have masses 1.10, 1.08, 1.05, 0.95, and 0.98. Adrian’s containers, in pounds, have masses 1.30, 1.21, 0.79, 0.90, and 0.88. Which inference is best supported by these data? Calculators allowed. Choices: A: Malika will produce more containers with a mass of exactly one pound than Adrian will. B: Adrian will produce more containers with a mass of exactly one pound than Malika will. C: Most of Malika’s containers will have a mass closer to one pound than most of Adrian’s containers. D: Most of Adrian’s containers will have a mass closer to one pound than most of Malika’s containers."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1.10",
+          "1.08",
+          "1.05",
+          "0.95",
+          "0.98",
+          "1.30",
+          "1.21",
+          "0.79",
+          "0.90",
+          "0.88",
+          "exactly one pound",
+          "closer to one pound",
+          "A: Malika will produce more containers with a mass of exactly one pound than Adrian will",
+          "B: Adrian will produce more containers with a mass of exactly one pound than Malika will",
+          "C: Most of Malika’s containers will have a mass closer to one pound than most of Adrian’s containers",
+          "D: Most of Adrian’s containers will have a mass closer to one pound than most of Malika’s containers"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q24": {
+      "inputHash": "d2657656a67c911cecac87a8fec1e1144a029f7e6c5d950593a517677f9fd334",
+      "description": {
+        "en": "Question 24. Which expression is equivalent to 8c + 6 − 3c − 2? Calculators allowed. Choices: A: 5c + 4 B: 5c + 8 C: 11c + 4 D: 11c + 8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8c + 6 − 3c − 2",
+          "5c + 4",
+          "5c + 8",
+          "11c + 4",
+          "11c + 8",
+          "A: 5c + 4",
+          "B: 5c + 8",
+          "C: 11c + 4",
+          "D: 11c + 8"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q25": {
+      "inputHash": "999ee89ec0c5502c9b996aaa3dcbc3be492f552412febdd0fc7113c483fee347",
+      "description": {
+        "en": "Question 25. A rhombus with side length s is depicted. The rhombus has four equal sides, and its bottom side is labeled s. The perimeter, P, of a rhombus is proportional to the length of each side, s. Which equation represents this relationship? Choices: A: P = 4s. B: s = 4P. C: P = 4 + s. D: s = 4 + P."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "s",
+          "P",
+          "P = 4s",
+          "s = 4P",
+          "P = 4 + s",
+          "s = 4 + P",
+          "A: P = 4s",
+          "B: s = 4P",
+          "C: P = 4 + s",
+          "D: s = 4 + P"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q26": {
+      "inputHash": "2f8eea6e4b9e8f48c06307f1e3499854ae6ebd982987caa07ce870fc32ac4f6d",
+      "description": {
+        "en": "Question 26. Sara is playing a board game. The probability that Sara will score a point on her next turn is 1/3. Which statement describes the probability that Sara will score a point on her next turn? Choices: A: likely. B: certain. C: unlikely. D: impossible."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "likely",
+          "certain",
+          "unlikely",
+          "impossible",
+          "A: likely",
+          "B: certain",
+          "C: unlikely",
+          "D: impossible"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q27": {
+      "inputHash": "4844b41dc784a155cb13da7aebf09b18136a63c15730789b6f89645c6b44b691",
+      "description": {
+        "en": "Question 27. Salid bought 35 feet of window trim at a hardware store. The trim cost $1.75 per foot, including sales tax. If Salid paid with a $100.00 bill, how much change should he have received? Choices: A: $20.00. B: $38.75. C: $61.25. D: $80.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "35 feet",
+          "$1.75",
+          "$100.00",
+          "$20.00",
+          "$38.75",
+          "$61.25",
+          "$80.00",
+          "A: $20.00",
+          "B: $38.75",
+          "C: $61.25",
+          "D: $80.00"
+        ]
+      }
+    },
+    "nysed-2015-g7-mc-q28": {
+      "inputHash": "8440a28624d817c3f2f2b12a41285a92d83a587eb5397a3ed85489d444205bc3",
+      "description": {
+        "en": "Question 28. A pile of newspapers in Ms. McGrath’s art class was 17 3/4 inches high. Each consecutive week, for the next 5 weeks, the height of the pile of newspapers increased by 8 7/12 inches. What was the height, in inches, of the pile after 3 weeks? Choices: A: 25 3/4. B: 26 1/4. C: 42 1/4. D: 43 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "17 3/4",
+          "5 weeks",
+          "8 7/12",
+          "3 weeks",
+          "25 3/4",
+          "26 1/4",
+          "42 1/4",
+          "43 1/2",
+          "A: 25 3/4",
+          "B: 26 1/4",
+          "C: 42 1/4",
+          "D: 43 1/2"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2021-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2021-g4-mc-q1": {
+      "inputHash": "a55102f95f25642f586e90f7306fd162f60881a97889044f8d5d2a868f694ae4",
+      "description": {
+        "en": "Question 1. Tatum walks her dog 2/3 mile every day after school. How many miles does she walk the dog in 5 days? Choices: A: 7/3; B: 10/3; C: 2/15; D: 10/15.",
+        "es": "Pregunta 1. Tatum pasea a su perro 2/3 de milla todos los días después de la escuela. ¿Cuántas millas lo pasea en 5 días? Opciones: A: 7/3; B: 10/3; C: 2/15; D: 10/15."
+      }
+    },
+    "nysed-2021-g4-mc-q2": {
+      "inputHash": "949ceb931fa53853ea3437f7fe5e29c61347c11455ae003e51f0287dba76830c",
+      "description": {
+        "en": "Question 2. Jaden’s score is less than 45 and is also a multiple of 7. How many points could he have scored? Choices: A: 17; B: 35; C: 52; D: 70.",
+        "es": "Pregunta 2. La puntuación de Jaden es menor que 45 y también es múltiplo de 7. ¿Cuántos puntos podría haber anotado? Opciones: A: 17; B: 35; C: 52; D: 70."
+      }
+    },
+    "nysed-2021-g4-mc-q3": {
+      "inputHash": "c9767ee6d9244e5cfe5e7e0a4757414f2dfe440878d292e6af6f308ee337fbd3",
+      "description": {
+        "en": "Question 3. Which comparison is true? Choices: A: 2/3 = 8/12; B: 4/9 = 8/9; C: 3/4 > 9/10; D: 2/4 > 2/3.",
+        "es": "Pregunta 3. ¿Qué comparación es verdadera? Opciones: A: 2/3 = 8/12; B: 4/9 = 8/9; C: 3/4 > 9/10; D: 2/4 > 2/3."
+      }
+    },
+    "nysed-2021-g4-mc-q4": {
+      "inputHash": "e8c143a228f8190335fa9a9154ee7194d1c269105a2dd148c1f0b7649a4f209a",
+      "description": {
+        "en": "Question 4. A baseball park has three sections. Red seats 200 people; blue seats 20 fewer than red; green seats 2 times as many as blue. How many people can sit in all three sections? Choices: A: 260; B: 380; C: 640; D: 740.",
+        "es": "Pregunta 4. Un estadio tiene tres secciones. La roja tiene 200 asientos; la azul tiene 20 menos que la roja; la verde tiene 2 veces la cantidad de la azul. ¿Cuántas personas caben en total? Opciones: A: 260; B: 380; C: 640; D: 740."
+      }
+    },
+    "nysed-2021-g4-mc-q5": {
+      "inputHash": "65ce95743ae6e7067656ef243737adac292577c7bae33e728db86bad9b041e42",
+      "description": {
+        "en": "Question 5. Which figure is a line segment? Choices: A: a horizontal path with a solid endpoint at both ends; B: two rays sharing one solid endpoint; C: a horizontal line with arrows at both ends; D: a horizontal ray with one solid endpoint and one arrow.",
+        "es": "Pregunta 5. ¿Qué figura es un segmento de recta? Opciones: A: un trazo horizontal con un extremo sólido en cada lado; B: dos rayos con un extremo sólido común; C: una línea horizontal con flechas en ambos extremos; D: un rayo horizontal con un extremo sólido y una flecha."
+      }
+    },
+    "nysed-2021-g4-mc-q6": {
+      "inputHash": "07a872fc8f3a8f42d3dbdf87144849e2044cab33fc5e34e4aa3c4838f7d723b0",
+      "description": {
+        "en": "Question 6. Izzy’s family picked 126 oranges, kept 10, and shared the rest equally among 4 families. Which equation determines n, the oranges each family received? Choices: A: (126 − 4) ÷ 10 = n; B: (126 − 10) ÷ 4 = n; C: (126 + 10) ÷ 4 = n; D: (126 + 4) ÷ 10 = n.",
+        "es": "Pregunta 6. La familia de Izzy recogió 126 naranjas, guardó 10 y repartió el resto por igual entre 4 familias. ¿Qué ecuación determina n, las naranjas que recibió cada familia? Opciones: A: (126 − 4) ÷ 10 = n; B: (126 − 10) ÷ 4 = n; C: (126 + 10) ÷ 4 = n; D: (126 + 4) ÷ 10 = n."
+      }
+    },
+    "nysed-2021-g4-mc-q7": {
+      "inputHash": "69e8c77f5d69300bfa43fd80a4b92af6d4336afd2c0b71c162603b0cb9e52bf9",
+      "description": {
+        "en": "Question 7. Which model has a shaded area equivalent to 3/12? Choices: A: 1 of 6 equal parts shaded; B: 1 of 4 shaded; C: 1 of 3 shaded; D: 1 of 12 shaded.",
+        "es": "Pregunta 7. ¿Qué modelo tiene un área sombreada equivalente a 3/12? Opciones: A: 1 de 6 partes iguales sombreada; B: 1 de 4 sombreada; C: 1 de 3 sombreada; D: 1 de 12 sombreada."
+      }
+    },
+    "nysed-2021-g4-mc-q8": {
+      "inputHash": "9726d8ab8acb8cce2fc93898e9940439e27e0049b1dd87d382231e09e92e9451",
+      "description": {
+        "en": "Question 8. Angle EFG measures 106°. Ray FH lies inside it, and angle HFG measures 34°. What is the measure of angle EFH? Choices: A: 34; B: 56; C: 72; D: 140 degrees.",
+        "es": "Pregunta 8. El ángulo EFG mide 106°. El rayo FH está dentro de él y el ángulo HFG mide 34°. ¿Cuál es la medida del ángulo EFH? Opciones: A: 34; B: 56; C: 72; D: 140 grados."
+      }
+    },
+    "nysed-2021-g4-mc-q9": {
+      "inputHash": "a1f862f1c8d34e818b29524d4d91495a6af6a4507af26fe083ce470bf59a2c8a",
+      "description": {
+        "en": "Question 9. Which list of fractions is in order from least to greatest value? Choices: A: 1/2, 1/4, 3/4; B: 1/4, 1/2, 3/4; C: 1/4, 3/4, 1/2; D: 1/2, 3/4, 1/4.",
+        "es": "Pregunta 9. ¿Qué lista de fracciones está en orden de menor a mayor valor? Opciones: A: 1/2, 1/4, 3/4; B: 1/4, 1/2, 3/4; C: 1/4, 3/4, 1/2; D: 1/2, 3/4, 1/4."
+      }
+    },
+    "nysed-2021-g4-mc-q10": {
+      "inputHash": "71b3d57875a6af208e40a5ad445619b2efd5b2b30c6db5c03744108b396e9033",
+      "description": {
+        "en": "Question 10. Betsy has 4 1/3 cups of lemonade in a pitcher. She pours 1 2/3 cups into a glass. How much lemonade remains in the pitcher? Choices: A: 2 2/3 cups; B: 3 1/3 cups; C: 5 3/3 cups; D: 5 3/6 cups.",
+        "es": "Pregunta 10. Betsy tiene 4 1/3 tazas de limonada en una jarra. Sirve 1 2/3 tazas en un vaso. ¿Cuánta limonada queda en la jarra? Opciones: A: 2 2/3 tazas; B: 3 1/3 tazas; C: 5 3/3 tazas; D: 5 3/6 tazas."
+      }
+    },
+    "nysed-2021-g4-mc-q11": {
+      "inputHash": "83a7ef450325b511e8ad89dad4162458567ee730bc0d35567090e7ebdbd023ba",
+      "description": {
+        "en": "Question 11. What is the value of 2,816 × 7? Choices: A: 14,572; B: 14,672; C: 19,612; D: 19,712.",
+        "es": "Pregunta 11. ¿Cuál es el valor de 2,816 × 7? Opciones: A: 14,572; B: 14,672; C: 19,612; D: 19,712."
+      }
+    },
+    "nysed-2021-g4-mc-q12": {
+      "inputHash": "111d9e2d622d7c02de7b9d14ddb20b360922875c4307c18a229920f6cb7ffe41",
+      "description": {
+        "en": "Question 12. What is the quotient for 2,314 ÷ 4? Choices: A: 508; B: 508 remainder 2; C: 578; D: 578 remainder 2.",
+        "es": "Pregunta 12. ¿Cuál es el cociente de 2,314 ÷ 4? Opciones: A: 508; B: 508, residuo 2; C: 578; D: 578, residuo 2."
+      }
+    },
+    "nysed-2021-g4-mc-q13": {
+      "inputHash": "df10cef2912ff8c3b14276e4ae75eff0bcb5759978a274a5eaf58674c39e6d7a",
+      "description": {
+        "en": "Question 13. A teacher buys 5 boxes of red folders with 36 folders in each box and 6 boxes of blue folders with 32 folders in each box. Which number is closest to the total number of folders? Choices: A: 275; B: 380; C: 440; D: 550.",
+        "es": "Pregunta 13. Un maestro compra 5 cajas de carpetas rojas con 36 carpetas en cada caja y 6 cajas de carpetas azules con 32 carpetas en cada caja. ¿Qué número se aproxima más al total de carpetas? Opciones: A: 275; B: 380; C: 440; D: 550."
+      }
+    },
+    "nysed-2021-g4-mc-q14": {
+      "inputHash": "8b0e32cc53e059bda2e3374a1daf3eb0c99dab394615c5fa7c8a086285761d3a",
+      "description": {
+        "en": "Question 14. What number is 9 times as much as 400? Choices: A: 391; B: 409; C: 3,600; D: 3,609.",
+        "es": "Pregunta 14. ¿Qué número es 9 veces 400? Opciones: A: 391; B: 409; C: 3,600; D: 3,609."
+      }
+    },
+    "nysed-2021-g4-mc-q15": {
+      "inputHash": "e23b69c57612fa3ab7c8f7285f54ef16475f0a5fdc6314b1e99771e35e9af548",
+      "description": {
+        "en": "Question 15. Which two numbers both round to 1,500 when rounded to the nearest hundred? Choices: A: 1,399 and 1,599; B: 1,449 and 1,549; C: 1,457 and 1,547; D: 1,489 and 1,589.",
+        "es": "Pregunta 15. ¿Cuáles dos números se redondean ambos a 1,500 al redondearlos a la centena más cercana? Opciones: A: 1,399 y 1,599; B: 1,449 y 1,549; C: 1,457 y 1,547; D: 1,489 y 1,589."
+      }
+    },
+    "nysed-2021-g4-mc-q16": {
+      "inputHash": "6df6356d49eb0e8bd039a58c3d843e30126efc33caa930079efeb32d6b6d6c99",
+      "description": {
+        "en": "Question 16. Mr. Fuller wants to put fencing around his rectangular yard. The width is 55 feet and the length is 75 feet. How many feet of fencing does he need? Choices: A: 130; B: 260; C: 3,905; D: 4,125.",
+        "es": "Pregunta 16. El señor Fuller quiere poner una cerca alrededor de su patio rectangular. El ancho es de 55 pies y la longitud es de 75 pies. ¿Cuántos pies de cerca necesita? Opciones: A: 130; B: 260; C: 3,905; D: 4,125."
+      }
+    },
+    "nysed-2021-g4-mc-q17": {
+      "inputHash": "be18138835235b618b3e4fb01c7a74ca6a8bebbac0b8dc8fb2f723ac996b7ec2",
+      "description": {
+        "en": "Question 17. A line plot shows student growth in inches: two X marks at 1/4, three at 2/4, four at 3/4, and two at 1. What is the difference between the greatest and least growth? Choices: A: 1/4 inch; B: 2/4 inch; C: 3/4 inch; D: 1 inch.",
+        "es": "Pregunta 17. Un diagrama de puntos muestra el crecimiento en pulgadas: dos X en 1/4, tres en 2/4, cuatro en 3/4 y dos en 1. ¿Cuál es la diferencia entre el mayor y el menor crecimiento? Opciones: A: 1/4 de pulgada; B: 2/4 de pulgada; C: 3/4 de pulgada; D: 1 pulgada."
+      }
+    },
+    "nysed-2021-g4-mc-q18": {
+      "inputHash": "867ee8f15e7422b7042f9765584254207ab883ff044fe399e3f02d977cef5041",
+      "description": {
+        "en": "Question 18. The value of the digit 9 in 29,461 is 10 times the value of the digit 9 in which number? Choices: A: 46,195; B: 53,982; C: 89,354; D: 93,610.",
+        "es": "Pregunta 18. El valor del dígito 9 en 29,461 es 10 veces el valor del dígito 9 en ¿qué número? Opciones: A: 46,195; B: 53,982; C: 89,354; D: 93,610."
+      }
+    },
+    "nysed-2021-g4-mc-q19": {
+      "inputHash": "31dc9808e50a4955a778d09e6e7685e6a86969045198724c57663e333c5415e6",
+      "description": {
+        "en": "Question 19. The number pattern 2, 8, 32, 128 follows a rule. Which pattern follows the same rule? Choices: A: 4, 8, 12, 16; B: 1, 4, 16, 64; C: 3, 7, 11, 15; D: 6, 12, 24, 48.",
+        "es": "Pregunta 19. La serie 2, 8, 32, 128 sigue una regla. ¿Qué serie sigue la misma regla? Opciones: A: 4, 8, 12, 16; B: 1, 4, 16, 64; C: 3, 7, 11, 15; D: 6, 12, 24, 48."
+      }
+    },
+    "nysed-2021-g4-mc-q20": {
+      "inputHash": "54034d6df9c11ff43d2dbd3e8785b8298181682cf0ab2d5046f06966d89cfc23",
+      "description": {
+        "en": "Question 20. Three models, each divided into 6 equal vertical parts, show 3/6 shaded plus 2/6 shaded plus 5/6 shaded. What is their sum? Choices: A: 10/18; B: 8/10; C: 10/8; D: 10/6.",
+        "es": "Pregunta 20. Tres modelos, cada uno dividido en 6 partes verticales iguales, muestran 3/6 sombreados más 2/6 sombreados más 5/6 sombreados. ¿Cuál es la suma? Opciones: A: 10/18; B: 8/10; C: 10/8; D: 10/6."
+      }
+    },
+    "nysed-2021-g4-mc-q21": {
+      "inputHash": "3cd6a5defbd4c2aa0afd91c0cacc829809518f7f14ed3ce6dca886da5cc69a90",
+      "description": {
+        "en": "Question 21. A figure has a centered rectangle with matching arrowheads extending left and right from the middle of its sides. What is the greatest number of lines of symmetry that can be drawn on it? Choices: A: 0; B: 1; C: 2; D: 4.",
+        "es": "Pregunta 21. Una figura tiene un rectángulo centrado con puntas de flecha iguales que se extienden hacia la izquierda y la derecha desde el centro de sus lados. ¿Cuál es la mayor cantidad de ejes de simetría que se pueden dibujar? Opciones: A: 0; B: 1; C: 2; D: 4."
+      }
+    },
+    "nysed-2021-g4-mc-q22": {
+      "inputHash": "93d21e8d7507fca4ab89993943082cb4b2ddb656e8c1066cb92ddfcb683d7cba",
+      "description": {
+        "en": "Question 22. What is the measure, in degrees, of an angle equivalent to 1/360 of a circle? Choices: A: 1; B: 90; C: 180; D: 360 degrees.",
+        "es": "Pregunta 22. ¿Cuánto mide, en grados, un ángulo equivalente a 1/360 de un círculo? Opciones: A: 1; B: 90; C: 180; D: 360 grados."
+      }
+    },
+    "nysed-2021-g4-mc-q23": {
+      "inputHash": "2714c9999c62a090fb1a0759556db3d034f45703ab72748da3ffd15a17a343d1",
+      "description": {
+        "en": "Question 23. A model shows four boxes, each containing 6, under a bracket labeled 24. Which comparison statement describes it? Choices: A: 6 is 24 times as many as 4; B: 24 is 4 times as many as 6; C: 4 times as many as 24 is 6; D: 6 times as many as 6 is 24.",
+        "es": "Pregunta 23. Un modelo muestra cuatro casillas, cada una con 6, bajo una llave rotulada 24. ¿Qué afirmación de comparación lo describe? Opciones: A: 6 es 24 veces 4; B: 24 es 4 veces 6; C: 4 veces 24 es 6; D: 6 veces 6 es 24."
+      }
+    }
+  }
+}

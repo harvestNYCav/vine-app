@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2014-grade-3-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2014-g3-mc-q1": {
+      "inputHash": "06eb70ffac30236dabe8c29c413217343a162f3acf4d7bce57ab7a8cd89ed35b",
+      "description": {
+        "en": "Question 1. A model shows 4 rows with 9 equal squares in each row. Which expression is represented by the model? Choices: A: 4 × 9; B: 9 ÷ 4; C: 36 × 4; D: 9 ÷ 36."
+      }
+    },
+    "nysed-2014-g3-mc-q2": {
+      "inputHash": "fc2a0ac9ae514edb8879dda986294335c19c8a7b0b112adee9a079e4bdcb1571",
+      "description": {
+        "en": "Question 2. A playground has an area of 30 square meters. The key says each small square equals 1 square meter. Which shape could represent the playground? Choices: A: a 5-by-5 grid; B: a 3-by-12 grid; C: a 3-by-10 grid; D: a 6-by-6 grid."
+      }
+    },
+    "nysed-2014-g3-mc-q3": {
+      "inputHash": "1baef139c8016be4c06001e872d33c5749e0ff63984969b05db45a7eaf8bc72a",
+      "description": {
+        "en": "Question 3. Which figure is 1/2 shaded? Choices: A: a triangle divided by a horizontal line, with the smaller top triangle shaded; B: a circle divided by a horizontal chord near the top, with the small top segment shaded; C: an irregular five-sided figure divided into two unequal regions, with the smaller left region shaded; D: a rectangle divided by a diagonal from one corner to the opposite corner, with one of the two triangles shaded."
+      }
+    },
+    "nysed-2014-g3-mc-q4": {
+      "inputHash": "06988bb8244bc6ee53874782ff6b0366c6e1a87f13b41558e5198afdf8b821ca",
+      "description": {
+        "en": "Question 4. Kai separated 36 index cards into 4 equal stacks. Which number sentence could be used to determine the number of cards in each stack? Choices: A: 4 × □ = 36; B: 4 ÷ □ = 36; C: □ + 4 = 36; D: □ ÷ 4 = 36."
+      }
+    },
+    "nysed-2014-g3-mc-q5": {
+      "inputHash": "21adf867080d7ed38032e99cb193f4fb7ee0c2a4861780dcae661eac958d6e1b",
+      "description": {
+        "en": "Question 5. Bruce made a game board by painting stripes on a rectangular piece of cardboard. Each stripe covered 1/8 of the rectangle. Which figure could represent the game board Bruce made? Choices: A: a rectangle divided into 8 columns and 2 rows; B: a rectangle divided into vertical regions of unequal widths; C: a rectangle divided into 3 columns and 2 rows; D: a rectangle divided into 8 equal vertical strips."
+      }
+    },
+    "nysed-2014-g3-mc-q6": {
+      "inputHash": "d8b5c36ef0593df9be89054aa179787d3f75017dd6242f6c6f7f8685ba061074",
+      "description": {
+        "en": "Question 6. Hilda and Mallory each have the same number of seashells. • Hilda sorted her seashells into 3 groups with 8 seashells in each group. • Mallory sorted her seashells into 6 equal groups. How many seashells were in each of the groups Mallory made? Choices: A: 4; B: 9; C: 18; D: 24."
+      }
+    },
+    "nysed-2014-g3-mc-q8": {
+      "inputHash": "e7eda9e31ccdbcc79bb589435e7113f2341ea1814fe15b8a9d1b6401941abc38",
+      "description": {
+        "en": "Question 8. Which fraction is equivalent to 2/8? Choices: A: 1/8; B: 1/4; C: 2/4; D: 4/8."
+      }
+    },
+    "nysed-2014-g3-mc-q10": {
+      "inputHash": "e62ec55fa32608857da4db8249711bf951f7f90c6f72a729e877035949763bbe",
+      "description": {
+        "en": "Question 10. What time is shown on the analog clock? The longer minute hand points a little past 7, and the shorter hour hand is between 10 and 11. Choices: A: 7:10; B: 10:07; C: 10:37; D: 11:37."
+      }
+    },
+    "nysed-2014-g3-mc-q12": {
+      "inputHash": "6ba11bcfdd3c684200b6e941d538de73d905037ab72cfbadbada748070fd0cd2",
+      "description": {
+        "en": "Question 12. Mr. Jacobs had 56 books in his office. He put an equal number of books on each of 7 shelves. The equation 56 ÷ 7 = □ can be used to determine the number of books he put on each shelf. How many books, in all, did Mr. Jacobs put on each shelf? Choices: A: 7; B: 8; C: 49; D: 63."
+      }
+    },
+    "nysed-2014-g3-mc-q13": {
+      "inputHash": "ff5f8d02c0cc76c3fca8a9c1128b323413717d49d1451e794489229f656dd893",
+      "description": {
+        "en": "Question 13. Mandy’s garden is shaped like a rectangle. It has a total area of 40 square feet. Which figure could represent Mandy’s garden? Choices: A: a rectangle measuring 9 feet by 4 feet; B: a rectangle measuring 7 feet by 5 feet; C: a rectangle measuring 11 feet by 9 feet; D: a rectangle measuring 8 feet by 5 feet."
+      }
+    },
+    "nysed-2014-g3-mc-q14": {
+      "inputHash": "4a2d826e9dfb61576fb0e2d4899eb1f17d3e0e669086243d6603b8d6a20fce31",
+      "description": {
+        "en": "Question 14. A number line from 0 to 1 is divided into 8 equal intervals. Point J is at 0, L is at 2/8, M is at 3/8, Q is at 7/8, and R is at 1. Which two points have a distance of 3/8 between them? Choices: A: J and L; B: J and M; C: L and Q; D: M and R."
+      }
+    },
+    "nysed-2014-g3-mc-q17": {
+      "inputHash": "e59f22846d4cf945ef028e8f104ccf9d0490c99f2cfbfb3905da8d6613b5c050",
+      "description": {
+        "en": "Question 17. Jerome had 23 farm animal stickers and 17 sea animal stickers. Jerome used all of the stickers to fill an 8-page scrapbook. He put the same number of stickers on each page. How many stickers did he put on each page? Choices: A: 5; B: 6; C: 32; D: 40."
+      }
+    },
+    "nysed-2014-g3-mc-q18": {
+      "inputHash": "9ea1894925355de094a277705e73c9b2d3c0bcbdcc00396266bb016b01b7ffd4",
+      "description": {
+        "en": "Question 18. Ms. Jones has six types of flowers in her garden. A bar graph titled Flowers in Garden shows: Roses, 15; Tulips, 25; Daisies, 10; Violets, 20; Pansies, 5; Lilies, 15. Based on the bar graph, which sentence is true? Choices: A: Ms. Jones has 25 more tulips than pansies; B: Ms. Jones has 10 more lilies than daisies; C: Ms. Jones has 5 more violets than lilies; D: Ms. Jones has 5 more roses than pansies."
+      }
+    },
+    "nysed-2014-g3-mc-q22": {
+      "inputHash": "d33a3d2c7f3559101261e92006b8cf3932f44dcb767f24d2513bc5315a9c5336",
+      "description": {
+        "en": "Question 22. Ryan used gray and white square tiles to make a rectangular design 7 inches high. The gray part is 3 inches wide, and the white part is 5 inches wide. Which expression could be used to find the total area, in square inches, of Ryan’s design? Choices: A: (7 × 3) + (7 × 5); B: (7 + 3) × (7 + 5); C: 3 × 5 × 7; D: 3 + 5 + 7."
+      }
+    },
+    "nysed-2014-g3-mc-q24": {
+      "inputHash": "f087ba8a01113b325c0405b2070f8e97f9ba7a3794aafb8c1a97d6d7cd022fa0",
+      "description": {
+        "en": "Question 24. If each side of a square has a length of 1 unit, which statement about the square is true? Choices: A: The square is a unit square that can be used to measure mass; B: The square is a unit square that can be used to measure area; C: The square is a unit square that can be used to measure volume; D: The square is a unit square that can be used to measure weight."
+      }
+    },
+    "nysed-2014-g3-mc-q25": {
+      "inputHash": "7a5cfb60c9059a0cd402a314a59f9999a0794a6d6f3464ed1df2bb2e64c11e40",
+      "description": {
+        "en": "Question 25. Which number sentence can be used to determine the value of 72 ÷ 9? Choices: A: 9 × □ = 72; B: 9 + □ = 72; C: 9 × 72 = □; D: 9 + 72 = □."
+      }
+    },
+    "nysed-2014-g3-mc-q26": {
+      "inputHash": "8bc64c5513581ea2b1577a82435a10a55311e1d923d7016afeac697258dfc43a",
+      "description": {
+        "en": "Question 26. Mr. Lopez divided his garden into 6 equal parts arranged in 2 rows and 3 columns. The top middle part is shaded to show where he planted carrots. Which fraction of the garden is planted with carrots? Choices: A: 1/6; B: 1/5; C: 1/3; D: 1/2."
+      }
+    },
+    "nysed-2014-g3-mc-q28": {
+      "inputHash": "14df5c643003d5353a5343cef43c3762c1db495b6a1726e1d89ab3a1d2764688",
+      "description": {
+        "en": "Question 28. Points on a number line represent distances from Jordan’s house. Jordan’s house is at 0 mile, the park is at 1/4 mile, the soccer field is at 2/4 mile, the school is at 3/4 mile, and the library is at 1 mile. What location is 2/4 mile from Jordan’s house? Choices: A: the park; B: the school; C: the library; D: the soccer field."
+      }
+    },
+    "nysed-2014-g3-mc-q29": {
+      "inputHash": "d60900876cdec33e3cfafcdb00e3ea990f0f25cae782a19f1490e90e90b03e07",
+      "description": {
+        "en": "Question 29. The rectangular floor of a bathroom is 6 feet wide and 7 feet long. What is the total area, in square feet, of the floor of the bathroom? Choices: A: 13; B: 26; C: 42; D: 48."
+      }
+    },
+    "nysed-2014-g3-mc-q31": {
+      "inputHash": "5b0133c1d322ae62be22989e90dc9e27f633a6ca978172e0f10b2166bd16c395",
+      "description": {
+        "en": "Question 31. Wendy cut a board into 4 pieces of equal sizes to make a table. Which fraction of the whole board does each piece represent? Choices: A: 1/4; B: 1/1; C: 4/4; D: 4/1."
+      }
+    },
+    "nysed-2014-g3-mc-q37": {
+      "inputHash": "bbc3a0dbf763b5a7f967eff145d54d1c2ab1fde0c1d30717bff8ff37fcd57022",
+      "description": {
+        "en": "Question 37. What number goes in the blank to make the number sentence true? 12 × 2 = ( ? × 2) + (2 × 2) Choices: A: 10; B: 12; C: 20; D: 24."
+      }
+    },
+    "nysed-2014-g3-mc-q38": {
+      "inputHash": "3a5515711096418b7770f248bc49a4bdec35f0f802604a6ed42d01d2430d2c0e",
+      "description": {
+        "en": "Question 38. What is 345 rounded to the nearest 100? Choices: A: 300; B: 340; C: 350; D: 400."
+      }
+    },
+    "nysed-2014-g3-mc-q41": {
+      "inputHash": "a0897a1fbcc4c11dc1221b2456f2a69952527048e6024515e1f372d5e42c8d8c",
+      "description": {
+        "en": "Question 41. A number line from 0 to 1 is divided into eighths and labeled 1/8 through 7/8 at the interior tick marks. Which pair of fractions is equivalent? Choices: A: 5/8 and 2/4; B: 2/4 and 4/8; C: 3/8 and 2/4; D: 2/4 and 2/8."
+      }
+    },
+    "nysed-2014-g3-mc-q43": {
+      "inputHash": "7e1629c97cf39b2f1f2de9441a1c41bcf79ae7669ffe4ad44682b5f799fcfe7e",
+      "description": {
+        "en": "Question 43. The first row in a pattern had 5 tiles. Each row after the first had 2 more tiles than the row before it; the diagram shows rows of 5, 7, and 9 tiles. Which statement is true about the number of tiles in any row? Choices: A: It is divisible by 10; B: It is an even number; C: It is a multiple of 3; D: It is an odd number."
+      }
+    },
+    "nysed-2014-g3-mc-q47": {
+      "inputHash": "35fe5ba928c88b439e8d29cc010708deaba5d03f7dd1cb009fb1abd5e43b4d40",
+      "description": {
+        "en": "Question 47. Which figure below has an area of 36 square units? The key says each small square equals 1 square unit. Choices: A: an irregular figure with rows containing 9, 9, 8, 8, 4, and 3 unit squares; B: an irregular figure with rows containing 6, 10, 10, and 10 unit squares; C: an irregular figure with rows containing 6, 6, 4, 2, 6, and 6 unit squares; D: an L-shaped figure with 9 squares in each of its top 2 rows and 3 squares in each of its next 4 rows."
+      }
+    }
+  }
+}

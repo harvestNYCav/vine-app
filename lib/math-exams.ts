@@ -1,6 +1,7 @@
 import { getMathExamById } from '@/content/math-exams'
 import { MATH_EXAM_QUESTIONS } from '@/content/math-exams/catalog-runtime'
 import type {
+  MathExamChoice,
   MathExamLanguage,
   MathExamQuestionRecord,
   PublicMathExamQuestion,
@@ -35,6 +36,15 @@ export function getMathExamSectionQuestions(examId: string, sectionSlug: string)
 export function toPublicMathExamQuestion(question: MathExamQuestionRecord): PublicMathExamQuestion {
   const { grading: _grading, ...publicQuestion } = question
   return publicQuestion
+}
+
+export function normalizeMathChoiceAnswer(
+  question: MathExamQuestionRecord,
+  value: string,
+): MathExamChoice | null {
+  if (question.type !== 'multiple-choice' || question.grading.mode !== 'choice') return null
+  const answer = value.trim().toUpperCase() as MathExamChoice
+  return question.choiceLabels.includes(answer) ? answer : null
 }
 
 export function localized(value: { en: string; es: string }, language: MathExamLanguage) {

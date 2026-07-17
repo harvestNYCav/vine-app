@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2026-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2026-g5-mc-q1": {
+      "inputHash": "93e00d80795b22691c5ba09fe34554ef3613b8fc93193464b2d5a6a9766b4997",
+      "description": {
+        "en": "Question 1. Which number makes the comparison 44.325 > ? true? Choices: A: 44.235 B: 44.325 C: 44.352 D: 44.532",
+        "es": "Pregunta 1. ¿Qué número hace que la siguiente comparación sea verdadera? 44.325 > ___. El espacio en blanco representa el número que debe compararse con 44.325. Opciones: A: 44.235 B: 44.325 C: 44.352 D: 44.532"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "44.325 > ?",
+          "44.235",
+          "44.325",
+          "44.352",
+          "44.532",
+          "A: 44.235",
+          "B: 44.325",
+          "C: 44.352",
+          "D: 44.532"
+        ],
+        "es": [
+          "44.325 > ___",
+          "44.235",
+          "44.325",
+          "44.352",
+          "44.532",
+          "A: 44.235",
+          "B: 44.325",
+          "C: 44.352",
+          "D: 44.532"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q2": {
+      "inputHash": "0ecb358e354091b5a1e88ff6b2084cf93014c09701dd00bc96e5137cbea03117",
+      "description": {
+        "en": "Question 2. Which expression shows the number 43.564 in expanded form? Choices: A: (4 × 100) + (3 × 10) + (5 × 1) + (6 × 1/10) + (4 × 1/100) B: (4 × 10) + (3 × 1) + (5 × 1/10) + (6 × 1/100) + (4 × 1/1,000) C: (4 × 10) + (3 × 1) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10) D: (4 × 100) + (3 × 10) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+        "es": "Pregunta 2. ¿Qué expresión muestra el número 43.564 escrito de forma expandida? Opciones: A: (4 × 100) + (3 × 10) + (5 × 1) + (6 × 1/10) + (4 × 1/100) B: (4 × 10) + (3 × 1) + (5 × 1/10) + (6 × 1/100) + (4 × 1/1,000) C: (4 × 10) + (3 × 1) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10) D: (4 × 100) + (3 × 10) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "43.564",
+          "(4 × 100) + (3 × 10) + (5 × 1) + (6 × 1/10) + (4 × 1/100)",
+          "(4 × 10) + (3 × 1) + (5 × 1/10) + (6 × 1/100) + (4 × 1/1,000)",
+          "(4 × 10) + (3 × 1) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "(4 × 100) + (3 × 10) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "A: (4 × 100) + (3 × 10) + (5 × 1) + (6 × 1/10) + (4 × 1/100)",
+          "B: (4 × 10) + (3 × 1) + (5 × 1/10) + (6 × 1/100) + (4 × 1/1,000)",
+          "C: (4 × 10) + (3 × 1) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "D: (4 × 100) + (3 × 10) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "(4 × 100)",
+          "(3 × 10)",
+          "(5 × 1)",
+          "(6 × 1/10)",
+          "(4 × 1/100)",
+          "(4 × 10)",
+          "(3 × 1)",
+          "(5 × 1/10)",
+          "(6 × 1/100)",
+          "(4 × 1/1,000)",
+          "(5 × 1/1,000)",
+          "(4 × 1/10)"
+        ],
+        "es": [
+          "43.564",
+          "(4 × 100) + (3 × 10) + (5 × 1) + (6 × 1/10) + (4 × 1/100)",
+          "(4 × 10) + (3 × 1) + (5 × 1/10) + (6 × 1/100) + (4 × 1/1,000)",
+          "(4 × 10) + (3 × 1) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "(4 × 100) + (3 × 10) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "A: (4 × 100) + (3 × 10) + (5 × 1) + (6 × 1/10) + (4 × 1/100)",
+          "B: (4 × 10) + (3 × 1) + (5 × 1/10) + (6 × 1/100) + (4 × 1/1,000)",
+          "C: (4 × 10) + (3 × 1) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "D: (4 × 100) + (3 × 10) + (5 × 1/1,000) + (6 × 1/100) + (4 × 1/10)",
+          "(4 × 100)",
+          "(3 × 10)",
+          "(5 × 1)",
+          "(6 × 1/10)",
+          "(4 × 1/100)",
+          "(4 × 10)",
+          "(3 × 1)",
+          "(5 × 1/10)",
+          "(6 × 1/100)",
+          "(4 × 1/1,000)",
+          "(5 × 1/1,000)",
+          "(4 × 1/10)"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q3": {
+      "inputHash": "2517d63647161409e354b72c77d0f6915a61ea1bf997fbfad40962af5da92f10",
+      "description": {
+        "en": "Question 3. A diagram of a right rectangular prism has a rectangular front face and receding edges that connect it to the back face. Dashed segments represent the three hidden edges meeting at the back-left-bottom vertex. The prism’s height is labeled 6 ft, its front horizontal length is labeled 7 ft, and its front-to-back depth is labeled 5 ft. What is the volume, in cubic feet, of the right rectangular prism? Choices: A: 280 B: 210 C: 41 D: 35",
+        "es": "Pregunta 3. A continuación se muestra un diagrama de un prisma rectangular recto. El prisma tiene una altura de 6 pies, indicada en la arista vertical izquierda; una longitud de 7 pies, indicada en la arista horizontal frontal inferior; y una profundidad de 5 pies, indicada en la arista inferior derecha que se extiende hacia el fondo. Las aristas ocultas que se encuentran en la esquina posterior inferior izquierda están trazadas con líneas discontinuas. ¿Cuál es el volumen, en pies cúbicos, del prisma rectangular recto? Opciones: A: 280 B: 210 C: 41 D: 35"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 ft",
+          "7 ft",
+          "5 ft",
+          "280",
+          "210",
+          "41",
+          "35",
+          "A: 280",
+          "B: 210",
+          "C: 41",
+          "D: 35"
+        ],
+        "es": [
+          "6 pies",
+          "7 pies",
+          "5 pies",
+          "pies cúbicos",
+          "280",
+          "210",
+          "41",
+          "35",
+          "A: 280",
+          "B: 210",
+          "C: 41",
+          "D: 35"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q4": {
+      "inputHash": "c5f201aa6bbd58e095d8a89b5720ff9fd7cd4896c0166174b151d79ef44bab0c",
+      "description": {
+        "en": "Question 4. Gina works 6 1/3 hours on Tuesday and 4 1/2 hours on Thursday. What is the total number of hours Gina works on these two days? Choices: A: 10 1/6 B: 10 1/5 C: 10 2/5 D: 10 5/6",
+        "es": "Pregunta 4. Gina trabaja 6 1/3 horas el martes y 4 1/2 horas el jueves. ¿Cuál es la cantidad total de horas que trabaja Gina en estos dos días? Opciones: A: 10 1/6 B: 10 1/5 C: 10 2/5 D: 10 5/6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 1/3",
+          "4 1/2",
+          "10 1/6",
+          "10 1/5",
+          "10 2/5",
+          "10 5/6",
+          "A: 10 1/6",
+          "B: 10 1/5",
+          "C: 10 2/5",
+          "D: 10 5/6"
+        ],
+        "es": [
+          "6 1/3",
+          "4 1/2",
+          "10 1/6",
+          "10 1/5",
+          "10 2/5",
+          "10 5/6",
+          "A: 10 1/6",
+          "B: 10 1/5",
+          "C: 10 2/5",
+          "D: 10 5/6"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q5": {
+      "inputHash": "25bb37e846d80a9a0bb8563350fb335549d6d5cbd366faad2e2136fb3aa60847",
+      "description": {
+        "en": "Question 5. A teacher buys 1,176 prizes for a school event. The teacher places all the prizes into 14 baskets with the same number of prizes in each basket. How many prizes are in each basket? Choices: A: 74 B: 76 C: 84 D: 86",
+        "es": "Pregunta 5. Una maestra compra 1,176 premios para un evento escolar. La maestra coloca todos los premios en 14 canastas con la misma cantidad de premios en cada canasta. ¿Cuántos premios hay en cada canasta? Opciones: A: 74 B: 76 C: 84 D: 86"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,176",
+          "14",
+          "74",
+          "76",
+          "84",
+          "86",
+          "A: 74",
+          "B: 76",
+          "C: 84",
+          "D: 86"
+        ],
+        "es": [
+          "1,176",
+          "14",
+          "74",
+          "76",
+          "84",
+          "86",
+          "A: 74",
+          "B: 76",
+          "C: 84",
+          "D: 86"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q6": {
+      "inputHash": "0a537c54b3fe56a256e0370974b9c75ff83679fc1815cb788f1c88735e4e491e",
+      "description": {
+        "en": "Question 6. Mariam draws a quadrilateral with exactly one set of parallel lines. Which type of figure does she draw? Choices: A: square B: rectangle C: trapezoid D: parallelogram",
+        "es": "Pregunta 6. Mariam dibuja un cuadrilátero con exactamente un conjunto de líneas paralelas. ¿Qué tipo de figura dibuja? Opciones: A: cuadrado B: rectángulo C: trapecio D: paralelogramo"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "exactly one set of parallel lines",
+          "square",
+          "rectangle",
+          "trapezoid",
+          "parallelogram",
+          "A: square",
+          "B: rectangle",
+          "C: trapezoid",
+          "D: parallelogram"
+        ],
+        "es": [
+          "exactamente un conjunto de líneas paralelas",
+          "cuadrado",
+          "rectángulo",
+          "trapecio",
+          "paralelogramo",
+          "A: cuadrado",
+          "B: rectángulo",
+          "C: trapecio",
+          "D: paralelogramo"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q7": {
+      "inputHash": "8cdbb8975497e47f60e548ced1fcf2e04eb675ef02d0ad011fbf147c7dd6b626",
+      "description": {
+        "en": "Question 7. Savannah walks a total of 21.7 miles in 7 days. She walks the same distance every day. How many miles does she walk each day? Choices: A: 3.01 B: 3.10 C: 30.1 D: 31.0",
+        "es": "Pregunta 7. Savannah camina un total de 21.7 millas en 7 días. Camina la misma distancia cada día. ¿Cuántas millas camina cada día? Opciones: A: 3.01 B: 3.10 C: 30.1 D: 31.0"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "21.7",
+          "7 days",
+          "3.01",
+          "3.10",
+          "30.1",
+          "31.0",
+          "A: 3.01",
+          "B: 3.10",
+          "C: 30.1",
+          "D: 31.0"
+        ],
+        "es": [
+          "21.7",
+          "7 días",
+          "3.01",
+          "3.10",
+          "30.1",
+          "31.0",
+          "A: 3.01",
+          "B: 3.10",
+          "C: 30.1",
+          "D: 31.0"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q9": {
+      "inputHash": "5b499cada57ccfb0478e0362c6c3854124ec43a040be05bb163493c1be526baa",
+      "description": {
+        "en": "Question 9. Which statement describes the product of the expression 2/5 × 3/3? Choices: A: It is between 1 and 2. B: It is between 2/5 and 1. C: It is equal to 2/5. D: It is less than 2/5.",
+        "es": "Pregunta 9. ¿Qué afirmación describe el producto de la expresión 2/5 × 3/3? Opciones: A: Está entre 1 y 2. B: Está entre 2/5 y 1. C: Es igual a 2/5. D: Es menor que 2/5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/5 × 3/3",
+          "between 1 and 2",
+          "between 2/5 and 1",
+          "equal to 2/5",
+          "less than 2/5",
+          "A: It is between 1 and 2",
+          "B: It is between 2/5 and 1",
+          "C: It is equal to 2/5",
+          "D: It is less than 2/5",
+          "2/5",
+          "3/3"
+        ],
+        "es": [
+          "2/5 × 3/3",
+          "1 y 2",
+          "2/5 y 1",
+          "2/5",
+          "A: Está entre 1 y 2",
+          "B: Está entre 2/5 y 1",
+          "C: Es igual a 2/5",
+          "D: Es menor que 2/5",
+          "3/3"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q10": {
+      "inputHash": "309f360a0a440396175ff9a4ab1f416dac662ca83a589cc4ad8843b38780b3e0",
+      "description": {
+        "en": "Question 10. The table below shows the amount of snow that fell in Mr. Green’s yard each month for five months. The table is titled “SNOW IN MR. GREEN’S YARD” and has columns labeled “Month” and “Amount of Snow.” Its rows are: November, 10 in.; December, 1 ft 7 in.; January, 2 ft 5 in.; February, 1 ft 9 in.; March, 11 in. What is the total amount of snow, in inches, that fell in Mr. Green’s yard during the five months? Choices: A: 42. B: 46. C: 82. D: 90.",
+        "es": "Pregunta 10. La siguiente tabla muestra la cantidad de nieve que cayó en el patio del Sr. Green cada mes, durante cinco meses. La tabla se titula “NIEVE EN EL PATIO DEL SR. GREEN”. Tiene dos columnas, “Mes” y “Cantidad de nieve”, y cinco filas: Noviembre, 10 pulgadas; Diciembre, 1 pie 7 pulgadas; Enero, 2 pies 5 pulgadas; Febrero, 1 pie 9 pulgadas; Marzo, 11 pulgadas. ¿Cuál es la cantidad total de nieve, en pulgadas, que cayó en el patio del Sr. Green durante los cinco meses? Opciones: A: 42. B: 46. C: 82. D: 90."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 in",
+          "1 ft 7 in",
+          "2 ft 5 in",
+          "1 ft 9 in",
+          "11 in",
+          "42",
+          "46",
+          "82",
+          "90",
+          "A: 42",
+          "B: 46",
+          "C: 82",
+          "D: 90"
+        ],
+        "es": [
+          "10 pulgadas",
+          "1 pie 7 pulgadas",
+          "2 pies 5 pulgadas",
+          "1 pie 9 pulgadas",
+          "11 pulgadas",
+          "42",
+          "46",
+          "82",
+          "90",
+          "A: 42",
+          "B: 46",
+          "C: 82",
+          "D: 90"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q11": {
+      "inputHash": "f817b765e56b1e50f3544d8f51f6546b77a44f4b2b7ed2a1ca563bead95282e8",
+      "description": {
+        "en": "Question 11. Zahra has 7 3/8 yards of string. She uses 5 1/4 yards of the string to wrap gifts. What is the length, in yards, of the remaining string? Choices: A: 2 1/2. B: 2 1/3. C: 2 1/4. D: 2 1/8.",
+        "es": "Pregunta 11. Zahra tiene 7 3/8 yardas de cuerda. Usa 5 1/4 yardas de la cuerda para envolver regalos. ¿Cuál es la longitud, en yardas, de la cuerda restante? Opciones: A: 2 1/2. B: 2 1/3. C: 2 1/4. D: 2 1/8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 3/8",
+          "5 1/4",
+          "2 1/2",
+          "2 1/3",
+          "2 1/4",
+          "2 1/8",
+          "A: 2 1/2",
+          "B: 2 1/3",
+          "C: 2 1/4",
+          "D: 2 1/8"
+        ],
+        "es": [
+          "7 3/8",
+          "5 1/4",
+          "2 1/2",
+          "2 1/3",
+          "2 1/4",
+          "2 1/8",
+          "A: 2 1/2",
+          "B: 2 1/3",
+          "C: 2 1/4",
+          "D: 2 1/8"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q12": {
+      "inputHash": "8950dff84750e8966421e089a4cadabf624e5f197220c1cf72855f518a9c931d",
+      "description": {
+        "en": "Question 12. In which number does the digit 6 represent a value that is one tenth the value represented by the digit 6 in 786,543? Choices: A: 589,632. B: 675,432. C: 764,132. D: 798,562.",
+        "es": "Pregunta 12. ¿En qué número representa el dígito 6 un valor que es un décimo del valor representado por el dígito 6 en el número 786,543? Opciones: A: 589,632. B: 675,432. C: 764,132. D: 798,562."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "786,543",
+          "589,632",
+          "675,432",
+          "764,132",
+          "798,562",
+          "A: 589,632",
+          "B: 675,432",
+          "C: 764,132",
+          "D: 798,562"
+        ],
+        "es": [
+          "6",
+          "786,543",
+          "589,632",
+          "675,432",
+          "764,132",
+          "798,562",
+          "A: 589,632",
+          "B: 675,432",
+          "C: 764,132",
+          "D: 798,562"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q13": {
+      "inputHash": "b78edf95532041466a3030f1fd1c5f6560af1b6c102c4064db1c7ed20badff49",
+      "description": {
+        "en": "Question 13. A student records the time they spend reading each day for 8 days. They start to make a line plot using the data collected. The data table and the line plot are described below. The table is titled “TIME SPENT READING (HOURS)” and contains 8 values in four rows and two columns: first row, 1 3/4 and 1 1/4; second row, 3/4 and 3/4; third row, 2/4 and 1 2/4; fourth row, 0 and 2. The line plot is titled “TIME SPENT READING.” Its horizontal number line, labeled “Time (hours),” has arrows pointing left and right and tick marks every 1/4 hour from 0 through 2. The ticks at 0, 1, and 2 are labeled. One X is plotted above each of 0, 2/4, 3/4, 1 1/4, 1 3/4, and 2. What data points does the student need to add to complete the line plot? Choices: A: 1/4 and 1 2/4. B: 2/4 and 1 1/4. C: 3/4 and 1 3/4. D: 3/4 and 1 2/4.",
+        "es": "Pregunta 13. Un alumno registra el tiempo que dedica a leer cada día, durante 8 días. Comienza por hacer un diagrama lineal con los datos reunidos. A continuación, se muestran la tabla de datos y el diagrama lineal. La tabla se titula “TIEMPO DEDICADO A LEER (HORAS)” y contiene ocho valores, distribuidos en cuatro filas y dos columnas: primera fila, 1 3/4 y 1 1/4; segunda fila, 3/4 y 3/4; tercera fila, 2/4 y 1 2/4; cuarta fila, 0 y 2. El diagrama lineal se titula “TIEMPO DEDICADO A LEER”. Su eje horizontal, con flechas en ambos extremos, se titula “Tiempo (en horas)” y va de 0 a 2, con marcas cada 1/4 de hora. Las marcas correspondientes a 0, 1 y 2 están rotuladas. Hay una X sobre cada uno de estos valores: 0, 2/4, 3/4, 1 1/4, 1 3/4 y 2. ¿Qué puntos de datos necesita agregar el alumno para completar el diagrama lineal? Opciones: A: 1/4 y 1 2/4. B: 2/4 y 1 1/4. C: 3/4 y 1 3/4. D: 3/4 y 1 2/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8",
+          "1 3/4",
+          "1 1/4",
+          "3/4",
+          "2/4",
+          "1 2/4",
+          "0",
+          "2",
+          "1/4",
+          "1",
+          "A: 1/4 and 1 2/4",
+          "B: 2/4 and 1 1/4",
+          "C: 3/4 and 1 3/4",
+          "D: 3/4 and 1 2/4"
+        ],
+        "es": [
+          "8",
+          "1 3/4",
+          "1 1/4",
+          "3/4",
+          "2/4",
+          "1 2/4",
+          "0",
+          "2",
+          "1/4",
+          "1",
+          "1/4 y 1 2/4",
+          "2/4 y 1 1/4",
+          "3/4 y 1 3/4",
+          "3/4 y 1 2/4",
+          "A: 1/4 y 1 2/4",
+          "B: 2/4 y 1 1/4",
+          "C: 3/4 y 1 3/4",
+          "D: 3/4 y 1 2/4"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q15": {
+      "inputHash": "b8954a0f17947d73b60bd6575c04bc1732f5fe4991ecde6faa5aa5cef4e796d3",
+      "description": {
+        "en": "Question 15. A student uses unit cubes to build a U-shaped figure. The key states that one pictured cube equals 1 unit cube. The figure consists of 11 vertical stacks, each exactly 2 unit cubes high. Five stacks form the closed back of the U. From each end of that back row, an arm extends forward by 3 additional stacks, leaving the front and center of the U open. What is the volume, in cubic units, of the figure? Choices: A: 11. B: 22. C: 34. D: 40.",
+        "es": "Pregunta 15. Un alumno usa cubos unitarios para crear una figura. La figura es una pared en forma de U, de un cubo de grosor y dos cubos de altura. Está formada por 11 pilas verticales contiguas, cada una compuesta por 2 cubos unitarios: dos brazos paralelos se extienden hacia el frente y están unidos por una sección posterior. Se ven las caras superiores de las 11 pilas y las divisiones entre todos los cubos. Una referencia indica que el dibujo de un cubo equivale a 1 cubo unitario. ¿Cuál es el volumen, en unidades cúbicas, de la figura? Opciones: A: 11. B: 22. C: 34. D: 40."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 unit cube",
+          "11",
+          "2",
+          "5",
+          "3",
+          "22",
+          "34",
+          "40",
+          "A: 11",
+          "B: 22",
+          "C: 34",
+          "D: 40"
+        ],
+        "es": [
+          "11 pilas",
+          "2 cubos unitarios",
+          "1 cubo unitario",
+          "11",
+          "22",
+          "34",
+          "40",
+          "A: 11",
+          "B: 22",
+          "C: 34",
+          "D: 40"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q16": {
+      "inputHash": "30c5d04a32a265d02c41f6b11f306c5a6937f163f4557492e5c8a9b7aabeaa8e",
+      "description": {
+        "en": "Question 16. A division equation is shown: 4 ÷ 1/5 = ?. Which related multiplication equation can be used to find the solution? Choices: A: 4 × 5 = ?. B: 4 × 1/5 = ?. C: 4 × ? = 5. D: 4 × ? = 1/5.",
+        "es": "Pregunta 16. A continuación, se muestra una ecuación de división: 4 ÷ 1/5 = ?. ¿Qué ecuación de multiplicación relacionada se puede usar para hallar la solución? En cada opción, el signo de interrogación aparece sobre una línea en blanco. Opciones: A: 4 × 5 = ?. B: 4 × 1/5 = ?. C: 4 × ? = 5. D: 4 × ? = 1/5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 ÷ 1/5 = ?",
+          "4 × 5 = ?",
+          "4 × 1/5 = ?",
+          "4 × ? = 5",
+          "4 × ? = 1/5",
+          "A: 4 × 5 = ?",
+          "B: 4 × 1/5 = ?",
+          "C: 4 × ? = 5",
+          "D: 4 × ? = 1/5",
+          "1/5"
+        ],
+        "es": [
+          "4 ÷ 1/5 = ?",
+          "4 × 5 = ?",
+          "4 × 1/5 = ?",
+          "4 × ? = 5",
+          "4 × ? = 1/5",
+          "A: 4 × 5 = ?",
+          "B: 4 × 1/5 = ?",
+          "C: 4 × ? = 5",
+          "D: 4 × ? = 1/5",
+          "1/5"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q17": {
+      "inputHash": "aeb4bdc752a31aeaa6a0be7a17618cdfdffa4fa18413425b9a999d273e8794d3",
+      "description": {
+        "en": "Question 17. A bakery uses 5 kilograms of flour to make 8 batches of cookies. Each batch uses the same amount of flour. How much flour is needed for 1 batch of cookies? Choices: A: 1/5 kilogram. B: 5/8 kilogram. C: 1 3/8 kilograms. D: 1 3/5 kilograms.",
+        "es": "Pregunta 17. Una panadería usa 5 kilogramos de harina para hacer 8 tandas de galletitas. Se usa la misma cantidad de harina para cada tanda. ¿Cuánta harina se necesita para 1 tanda de galletitas? Opciones: A: 1/5 de kilogramo. B: 5/8 de kilogramo. C: 1 3/8 de kilogramo. D: 1 3/5 de kilogramo."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 kilograms",
+          "8 batches",
+          "1 batch",
+          "1/5 kilogram",
+          "5/8 kilogram",
+          "1 3/8 kilograms",
+          "1 3/5 kilograms",
+          "A: 1/5 kilogram",
+          "B: 5/8 kilogram",
+          "C: 1 3/8 kilograms",
+          "D: 1 3/5 kilograms",
+          "1/5",
+          "5/8",
+          "1 3/8",
+          "1 3/5"
+        ],
+        "es": [
+          "5 kilogramos",
+          "8 tandas",
+          "1 tanda",
+          "1/5 de kilogramo",
+          "5/8 de kilogramo",
+          "1 3/8 de kilogramo",
+          "1 3/5 de kilogramo",
+          "A: 1/5 de kilogramo",
+          "B: 5/8 de kilogramo",
+          "C: 1 3/8 de kilogramo",
+          "D: 1 3/5 de kilogramo",
+          "1/5",
+          "5/8",
+          "1 3/8",
+          "1 3/5"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q18": {
+      "inputHash": "3bfcd2ffbfddb7574fb75492115f85daa4e51ae6f774616ca3d6bedce22683c2",
+      "description": {
+        "en": "Question 18. Nicole drew fraction models to help her find the value of 1/4 + 2/3. There are two equal rectangular models, each divided into 3 rows and 4 columns, for 12 equal parts. In the first model, all 3 parts in the leftmost column are shaded and the other 9 parts are unshaded, representing 1/4. In the second model, all 8 parts in the top two rows are shaded and all 4 parts in the bottom row are unshaded, representing 2/3. What is the value of 1/4 + 2/3? Choices: A: 3/7. B: 3/8. C: 11/12. D: 11/24.",
+        "es": "Pregunta 18. Nicole dibujó los siguientes modelos de fracción para ayudarse a encontrar el valor de 1/4 + 2/3. Hay dos rectángulos iguales, cada uno dividido en 3 filas y 4 columnas, para un total de 12 partes iguales. En el rectángulo izquierdo están sombreadas las 3 partes de la primera columna, lo que representa 3/12 o 1/4. En el rectángulo derecho están sombreadas las 8 partes de las dos filas superiores, lo que representa 8/12 o 2/3. ¿Cuál es el valor de 1/4 + 2/3? Opciones: A: 3/7. B: 3/8. C: 11/12. D: 11/24."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/4 + 2/3",
+          "3",
+          "4",
+          "12",
+          "9",
+          "8",
+          "1/4",
+          "2/3",
+          "3/7",
+          "3/8",
+          "11/12",
+          "11/24",
+          "A: 3/7",
+          "B: 3/8",
+          "C: 11/12",
+          "D: 11/24"
+        ],
+        "es": [
+          "1/4 + 2/3",
+          "3 filas",
+          "4 columnas",
+          "12 partes iguales",
+          "3/12",
+          "1/4",
+          "8/12",
+          "2/3",
+          "3/7",
+          "3/8",
+          "11/12",
+          "11/24",
+          "A: 3/7",
+          "B: 3/8",
+          "C: 11/12",
+          "D: 11/24"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q19": {
+      "inputHash": "356455671406a91271a8d906091489cf09184b9bc050a904740c95822f737131",
+      "description": {
+        "en": "Question 19. A right rectangular prism has a volume of 90 cubic inches. The height of the prism is 6 inches and the width of the prism is 3 inches. What is the length, in inches, of the prism? Choices: A: 5. B: 10. C: 72. D: 99.",
+        "es": "Pregunta 19. Un prisma rectangular recto tiene un volumen de 90 pulgadas cúbicas. El prisma mide 6 pulgadas de alto y 3 pulgadas de ancho. ¿Cuál es la longitud, en pulgadas, del prisma? Opciones: A: 5 B: 10 C: 72 D: 99"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "90 cubic inches",
+          "6 inches",
+          "3 inches",
+          "A: 5",
+          "B: 10",
+          "C: 72",
+          "D: 99"
+        ],
+        "es": [
+          "90 pulgadas cúbicas",
+          "6 pulgadas",
+          "3 pulgadas",
+          "5",
+          "10",
+          "72",
+          "99",
+          "A: 5",
+          "B: 10",
+          "C: 72",
+          "D: 99"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q20": {
+      "inputHash": "1232190c3011a8a0c72a95167a45d29fb121ba59ea495c273eee3c0aa245e25e",
+      "description": {
+        "en": "Question 20. Which value is equivalent to 0.35? Choices: A: 35/10. B: 35/100. C: 3 5/10. D: 3 5/100.",
+        "es": "Pregunta 20. ¿Qué valor es equivalente a 0.35? Opciones: A: 35/10 B: 35/100 C: 3 5/10 D: 3 5/100"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.35",
+          "A: 35/10",
+          "B: 35/100",
+          "C: 3 5/10",
+          "D: 3 5/100",
+          "35/10",
+          "35/100",
+          "3 5/10",
+          "3 5/100"
+        ],
+        "es": [
+          "0.35",
+          "35/10",
+          "35/100",
+          "3 5/10",
+          "3 5/100",
+          "A: 35/10",
+          "B: 35/100",
+          "C: 3 5/10",
+          "D: 3 5/100"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q21": {
+      "inputHash": "dde8edc6bfb6d96423a0ecb233c246e7b702f39edf2e9945cb8dc55867d2ebc8",
+      "description": {
+        "en": "Question 21. Caleb has two pets. His cat weighs 8 3/4 pounds. His dog weighs 4 1/2 times as much as his cat. What is the weight, in pounds, of Caleb’s dog? Choices: A: 12 4/6. B: 13 1/4. C: 32 3/8. D: 39 3/8.",
+        "es": "Pregunta 21. Caleb tiene dos mascotas. Su gato pesa 8 3/4 libras. Su perro pesa 4 1/2 tantas veces que su gato. ¿Cuál es el peso, en libras, del perro de Caleb? Opciones: A: 12 4/6 B: 13 1/4 C: 32 3/8 D: 39 3/8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 3/4 pounds",
+          "4 1/2 times",
+          "A: 12 4/6",
+          "B: 13 1/4",
+          "C: 32 3/8",
+          "D: 39 3/8",
+          "8 3/4",
+          "4 1/2",
+          "12 4/6",
+          "13 1/4",
+          "32 3/8",
+          "39 3/8"
+        ],
+        "es": [
+          "8 3/4",
+          "4 1/2",
+          "12 4/6",
+          "13 1/4",
+          "32 3/8",
+          "39 3/8",
+          "A: 12 4/6",
+          "B: 13 1/4",
+          "C: 32 3/8",
+          "D: 39 3/8"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q23": {
+      "inputHash": "37486f46b9fc42367f26e49243c1358ffac0de128833f0e02c7d243df697862b",
+      "description": {
+        "en": "Question 23. Jamal lives 3.65 miles away from school. Terry lives 1.78 miles farther from school than Jamal. How many miles from school does Terry live? Choices: A: 1.87. B: 2.13. C: 4.33. D: 5.43.",
+        "es": "Pregunta 23. Jamal vive a 3.65 millas de la escuela. Terry vive 1.78 millas más lejos de la escuela que Jamal. ¿A cuántas millas de la escuela vive Terry? Opciones: A: 1.87 B: 2.13 C: 4.33 D: 5.43"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3.65 miles",
+          "1.78 miles",
+          "A: 1.87",
+          "B: 2.13",
+          "C: 4.33",
+          "D: 5.43"
+        ],
+        "es": [
+          "3.65",
+          "1.78",
+          "1.87",
+          "2.13",
+          "4.33",
+          "5.43",
+          "A: 1.87",
+          "B: 2.13",
+          "C: 4.33",
+          "D: 5.43"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q24": {
+      "inputHash": "3734c717975adf3217d30278a658bfdc99dd8c4357149a650d73c870097ce5a7",
+      "description": {
+        "en": "Question 24. What is the value of the expression 1/3 ÷ 15? Choices: A: 1/45. B: 1/5. C: 5. D: 45.",
+        "es": "Pregunta 24. ¿Cuál es el valor de la siguiente expresión: 1/3 ÷ 15? Opciones: A: 1/45 B: 1/5 C: 5 D: 45"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3 ÷ 15",
+          "A: 1/45",
+          "B: 1/5",
+          "C: 5",
+          "D: 45",
+          "1/3",
+          "1/45",
+          "1/5"
+        ],
+        "es": [
+          "1/3 ÷ 15",
+          "1/45",
+          "1/5",
+          "5",
+          "45",
+          "A: 1/45",
+          "B: 1/5",
+          "C: 5",
+          "D: 45",
+          "1/3"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q25": {
+      "inputHash": "487587d86849954983b567b19da0492beca96f7f5f07ca56973ba35127afb330",
+      "description": {
+        "en": "Question 25. What is the area, in square units, of a rectangle with side lengths of 4/12 units and 7/8 units? Choices: A: 11/20. B: 22/40. C: 28/86. D: 28/96.",
+        "es": "Pregunta 25. ¿Cuál es el área, en unidades cuadradas, de un rectángulo con longitudes de lado de 4/12 unidades y 7/8 unidades? Opciones: A: 11/20 B: 22/40 C: 28/86 D: 28/96"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4/12 units",
+          "7/8 units",
+          "A: 11/20",
+          "B: 22/40",
+          "C: 28/86",
+          "D: 28/96",
+          "4/12",
+          "7/8",
+          "11/20",
+          "22/40",
+          "28/86",
+          "28/96"
+        ],
+        "es": [
+          "4/12",
+          "7/8",
+          "11/20",
+          "22/40",
+          "28/86",
+          "28/96",
+          "A: 11/20",
+          "B: 22/40",
+          "C: 28/86",
+          "D: 28/96"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q26": {
+      "inputHash": "3f87de86fa62f4c775cd0d6991c638783236267f74151b6d8af0ef43dc7c8867",
+      "description": {
+        "en": "Question 26. What is the number 256.754 rounded to the nearest hundredth? Choices: A: 256.7. B: 256.8. C: 256.75. D: 256.76.",
+        "es": "Pregunta 26. ¿Cuál es el número 256.754 redondeado a la centésima más cercana? Opciones: A: 256.7 B: 256.8 C: 256.75 D: 256.76"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "256.754",
+          "A: 256.7",
+          "B: 256.8",
+          "C: 256.75",
+          "D: 256.76"
+        ],
+        "es": [
+          "256.754",
+          "256.7",
+          "256.8",
+          "256.75",
+          "256.76",
+          "A: 256.7",
+          "B: 256.8",
+          "C: 256.75",
+          "D: 256.76"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q28": {
+      "inputHash": "dd72935c9c2231d126fa9567a3cd0770c72fb95885b79c7d664356673ecad654",
+      "description": {
+        "en": "Question 28. Val combines these ingredients to make fruit punch: 3 cups water; 4 pints pineapple juice; 8 fluid ounces orange juice; and 16 fluid ounces lemonade. How many cups of fruit punch does Val make? Choices: A: 7. B: 8. C: 14. D: 31.",
+        "es": "Pregunta 28. Val combina los ingredientes que se muestran a continuación para hacer un ponche de frutas: 3 tazas de agua; 4 pintas de jugo de piña; 8 onzas fluidas de jugo de naranja; y 16 onzas fluidas de limonada. ¿Cuántas tazas de ponche de frutas prepara Val? Opciones: A: 7 B: 8 C: 14 D: 31"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 cups water",
+          "4 pints pineapple juice",
+          "8 fluid ounces orange juice",
+          "16 fluid ounces lemonade",
+          "A: 7",
+          "B: 8",
+          "C: 14",
+          "D: 31"
+        ],
+        "es": [
+          "3 tazas",
+          "4 pintas",
+          "8 onzas fluidas",
+          "16 onzas fluidas",
+          "7",
+          "8",
+          "14",
+          "31",
+          "A: 7",
+          "B: 8",
+          "C: 14",
+          "D: 31"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q29": {
+      "inputHash": "15ddd2d745accd6842dc2988352be6cc1aad8eb0ae20476ad1074f9c0f42aa8c",
+      "description": {
+        "en": "Question 29. What is the value of the expression 5 1/4 − 2 5/6? Choices: A: 2 5/12. B: 2 7/12. C: 3 5/12. D: 3 7/12.",
+        "es": "Pregunta 29. ¿Cuál es el valor de la expresión 5 1/4 − 2 5/6? Opciones: A: 2 5/12 B: 2 7/12 C: 3 5/12 D: 3 7/12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 1/4 − 2 5/6",
+          "2 5/12",
+          "2 7/12",
+          "3 5/12",
+          "3 7/12",
+          "A: 2 5/12",
+          "B: 2 7/12",
+          "C: 3 5/12",
+          "D: 3 7/12",
+          "5 1/4",
+          "2 5/6"
+        ],
+        "es": [
+          "5 1/4 − 2 5/6",
+          "2 5/12",
+          "2 7/12",
+          "3 5/12",
+          "3 7/12",
+          "A: 2 5/12",
+          "B: 2 7/12",
+          "C: 3 5/12",
+          "D: 3 7/12",
+          "5 1/4",
+          "2 5/6"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q30": {
+      "inputHash": "5dccfe567623d09e0d4d99b6bb8d18cc71e2b987fc7ac9f7a6bbc3bf08c35f77",
+      "description": {
+        "en": "Question 30. Julia uses 1-inch cubes to build a right rectangular prism. The base of the prism is 4 inches by 6 inches. The prism is 7 inches tall. What is the total number of 1-inch cubes she uses to build the prism? Choices: A: 17. B: 24. C: 168. D: 280.",
+        "es": "Pregunta 30. Julia usa cubos de 1 pulgada para construir un prisma rectangular recto. La base del prisma mide 4 pulgadas por 6 pulgadas. El prisma tiene 7 pulgadas de alto. ¿Cuál es la cantidad total de cubos de 1 pulgada que ella usa para construir el prisma? Opciones: A: 17 B: 24 C: 168 D: 280"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1-inch",
+          "4 inches",
+          "6 inches",
+          "7 inches",
+          "17",
+          "24",
+          "168",
+          "280",
+          "A: 17",
+          "B: 24",
+          "C: 168",
+          "D: 280"
+        ],
+        "es": [
+          "1 pulgada",
+          "4 pulgadas",
+          "6 pulgadas",
+          "7 pulgadas",
+          "17",
+          "24",
+          "168",
+          "280",
+          "A: 17",
+          "B: 24",
+          "C: 168",
+          "D: 280"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q31": {
+      "inputHash": "a366028778f61c494c725a6f868bd70e252536a31774c59dc9e2f2223ccb08de",
+      "description": {
+        "en": "Question 31. The list below shows the number of pounds of blueberries a farmer sold on two different days. Monday: 3 1/2 pounds. Wednesday: 4 7/8 pounds. How many fewer pounds of blueberries did the farmer sell on Monday than on Wednesday? Choices: A: 3/8. B: 1 3/8. C: 1 6/8. D: 2.",
+        "es": "Pregunta 31. La siguiente lista muestra la cantidad de libras de arándanos que vendió un agricultor en dos días diferentes: • Lunes: 3 1/2 libras. • Miércoles: 4 7/8 libras. ¿Cuántas libras de arándanos menos vendió el agricultor el lunes respecto del miércoles? Opciones: A: 3/8 B: 1 3/8 C: 1 6/8 D: 2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 1/2 pounds",
+          "4 7/8 pounds",
+          "3/8",
+          "1 3/8",
+          "1 6/8",
+          "2",
+          "A: 3/8",
+          "B: 1 3/8",
+          "C: 1 6/8",
+          "D: 2",
+          "3 1/2",
+          "4 7/8"
+        ],
+        "es": [
+          "3 1/2 libras",
+          "4 7/8 libras",
+          "3/8",
+          "1 3/8",
+          "1 6/8",
+          "2",
+          "A: 3/8",
+          "B: 1 3/8",
+          "C: 1 6/8",
+          "D: 2",
+          "3 1/2",
+          "4 7/8"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q32": {
+      "inputHash": "7442b38afb21f1929bd730a118f8add2853cef282dcc46401b6c7664b55a917e",
+      "description": {
+        "en": "Question 32. Melissa bought 2 binders with a price of $3.49 each and 1 pack of pencils with a price of $2.79. What is the total amount Melissa paid for the binders and pencils? Choices: A: $9.77. B: $8.57. C: $6.98. D: $6.28.",
+        "es": "Pregunta 32. Melissa compró 2 carpetas que costaban $3.49 cada una y 1 paquete de lápices que costaba $2.79. ¿Cuál es el monto total que pagó Melissa por las carpetas y los lápices? Opciones: A: $9.77 B: $8.57 C: $6.98 D: $6.28"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 binders",
+          "$3.49",
+          "1 pack",
+          "$2.79",
+          "$9.77",
+          "$8.57",
+          "$6.98",
+          "$6.28",
+          "A: $9.77",
+          "B: $8.57",
+          "C: $6.98",
+          "D: $6.28"
+        ],
+        "es": [
+          "2 carpetas",
+          "$3.49",
+          "1 paquete",
+          "$2.79",
+          "$9.77",
+          "$8.57",
+          "$6.98",
+          "$6.28",
+          "A: $9.77",
+          "B: $8.57",
+          "C: $6.98",
+          "D: $6.28"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q33": {
+      "inputHash": "8da1e4678d60c4264b39290b041a47363416fbb401599b69919edeea825287e7",
+      "description": {
+        "en": "Question 33. Which statement about the quotient of 267.354 ÷ 10² is true? Choices: A: The decimal point is between the 5 and the 4. B: The decimal point is between the 3 and the 5. C: The decimal point is between the 6 and the 7. D: The decimal point is between the 2 and the 6.",
+        "es": "Pregunta 33. ¿Qué afirmación acerca del cociente de 267.354 ÷ 10² es verdadera? Opciones: A: El punto decimal está entre el 5 y el 4. B: El punto decimal está entre el 3 y el 5. C: El punto decimal está entre el 6 y el 7. D: El punto decimal está entre el 2 y el 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "267.354 ÷ 10²",
+          "5 and the 4",
+          "3 and the 5",
+          "6 and the 7",
+          "2 and the 6",
+          "A: The decimal point is between the 5 and the 4",
+          "B: The decimal point is between the 3 and the 5",
+          "C: The decimal point is between the 6 and the 7",
+          "D: The decimal point is between the 2 and the 6",
+          "10²"
+        ],
+        "es": [
+          "267.354 ÷ 10²",
+          "5 y el 4",
+          "3 y el 5",
+          "6 y el 7",
+          "2 y el 6",
+          "A: El punto decimal está entre el 5 y el 4",
+          "B: El punto decimal está entre el 3 y el 5",
+          "C: El punto decimal está entre el 6 y el 7",
+          "D: El punto decimal está entre el 2 y el 6",
+          "10²"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q34": {
+      "inputHash": "25120a76fada3755826d85a38701394aba0f462a2c8072424711d1647becbd6a",
+      "description": {
+        "en": "Question 34. There are 624 books in the library, and 3/8 of them are fiction books. Which expression represents the number of fiction books in the library? Choices: A: 3 × (8 × 624). B: 3 × (624 ÷ 8). C: (624 ÷ 3) × 8. D: (624 ÷ 3) ÷ 8.",
+        "es": "Pregunta 34. Hay 624 libros en la biblioteca y 3/8 de ellos son libros de ficción. ¿Qué expresión representa la cantidad de libros de ficción de la biblioteca? Opciones: A: 3 × (8 × 624) B: 3 × (624 ÷ 8) C: (624 ÷ 3) × 8 D: (624 ÷ 3) ÷ 8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "624",
+          "3/8",
+          "3 × (8 × 624)",
+          "3 × (624 ÷ 8)",
+          "(624 ÷ 3) × 8",
+          "(624 ÷ 3) ÷ 8",
+          "A: 3 × (8 × 624)",
+          "B: 3 × (624 ÷ 8)",
+          "C: (624 ÷ 3) × 8",
+          "D: (624 ÷ 3) ÷ 8",
+          "(8 × 624)",
+          "(624 ÷ 8)",
+          "(624 ÷ 3)"
+        ],
+        "es": [
+          "624",
+          "3/8",
+          "3 × (8 × 624)",
+          "3 × (624 ÷ 8)",
+          "(624 ÷ 3) × 8",
+          "(624 ÷ 3) ÷ 8",
+          "A: 3 × (8 × 624)",
+          "B: 3 × (624 ÷ 8)",
+          "C: (624 ÷ 3) × 8",
+          "D: (624 ÷ 3) ÷ 8",
+          "(8 × 624)",
+          "(624 ÷ 8)",
+          "(624 ÷ 3)"
+        ]
+      }
+    },
+    "nysed-2026-g5-mc-q35": {
+      "inputHash": "e728c902ddc9dc95513b85c4233334cc513eabdcd022f7431719e8c3f5e46d53",
+      "description": {
+        "en": "Question 35. The line plot titled “BAGS OF JELLY BEANS” shows the weights of several bags of jelly beans. The horizontal axis is labeled “Weight (pounds)” and has tick marks, from left to right, at 0, 1/8, 1/4, 3/8, 1/2, 5/8, 3/4, 7/8, 1, 1 1/8, 1 1/4, 1 3/8, and 1 1/2. There are 2 X marks above 1/2, 3 X marks above 3/4, 1 X mark above 1 1/8, and 4 X marks above 1 3/8. There are no X marks above the other labeled weights. What is the total weight, in pounds, of all the bags of jelly beans? Choices: A: 2 3/4. B: 8. C: 9 7/8. D: 10.",
+        "es": "Pregunta 35. El siguiente diagrama lineal muestra el peso de varias bolsas de gomitas. El diagrama se titula «BOLSAS DE GOMITAS». Es una recta numérica horizontal con flechas en ambos extremos y la etiqueta «Peso (libras)». Las marcas, de izquierda a derecha y en incrementos de 1/8 de libra, son: 0, 1/8, 1/4, 3/8, 1/2, 5/8, 3/4, 7/8, 1, 1 1/8, 1 1/4, 1 3/8 y 1 1/2. Las equis representan bolsas: hay 2 equis sobre 1/2, 3 equis sobre 3/4, 1 equis sobre 1 1/8 y 4 equis sobre 1 3/8. No hay equis sobre las demás marcas. ¿Cuál es el peso total, en libras, de todas las bolsas de gomitas? Opciones: A: 2 3/4 B: 8 C: 9 7/8 D: 10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "1",
+          "1 1/8",
+          "1 1/4",
+          "1 3/8",
+          "1 1/2",
+          "2 X marks above 1/2",
+          "3 X marks above 3/4",
+          "1 X mark above 1 1/8",
+          "4 X marks above 1 3/8",
+          "2 3/4",
+          "8",
+          "9 7/8",
+          "10",
+          "A: 2 3/4",
+          "B: 8",
+          "C: 9 7/8",
+          "D: 10"
+        ],
+        "es": [
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "1 1/8",
+          "1 1/4",
+          "1 3/8",
+          "1 1/2",
+          "2 equis sobre 1/2",
+          "3 equis sobre 3/4",
+          "1 equis sobre 1 1/8",
+          "4 equis sobre 1 3/8",
+          "2 3/4",
+          "8",
+          "9 7/8",
+          "10",
+          "A: 2 3/4",
+          "B: 8",
+          "C: 9 7/8",
+          "D: 10"
+        ]
+      }
+    }
+  }
+}

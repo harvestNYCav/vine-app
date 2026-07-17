@@ -77,8 +77,8 @@
       "inputHash": "4fe5ed0fe3892805dde37c1c30419bc76ea14a6f81dc2287ead27646ed1ea82c",
       "explanation": {
         "text": {
-          "en": "Class B's box extends from about 80 to 96, giving a larger interquartile range than Class A's box from about 75 to 85. Therefore, Class B has the greater IQR.",
-          "es": "La caja de la clase B se extiende aproximadamente de 80 a 96, dando un rango intercuartílico mayor que la caja de la clase A, de cerca de 75 a 85. Por lo tanto, la clase B tiene el mayor RIC."
+        "en": "The width of each box represents its interquartile range. Class B's box, from about 85 to 96, is wider than Class A's box, from about 77.5 to 86, so Class B has the greater IQR.",
+        "es": "El ancho de cada caja representa su rango intercuartílico. La caja de la clase B, de aproximadamente 85 a 96, es más ancha que la de la clase A, de aproximadamente 77.5 a 86, así que la clase B tiene el mayor RIC."
         },
         "source": "vine-authored"
       }

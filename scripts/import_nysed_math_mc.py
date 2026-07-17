@@ -45,30 +45,53 @@ import urllib.request
 from collections import defaultdict
 from concurrent.futures import Future, ThreadPoolExecutor
 from pathlib import Path
-from typing import Any, Iterable, Iterator, Literal, Sequence
+from typing import Any, Iterable, Iterator, Literal, Mapping, Sequence
 
 import numpy as np
 import pdfplumber
-from PIL import Image, ImageDraw, ImageOps, ImageStat
+from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageStat
+
+try:
+    from scripts.nysed_math_accessibility import (
+        DEFAULT_MATH_ACCESSIBILITY_ROOT,
+        MathAccessibilityError,
+        load_math_exam_accessibility,
+        math_accessibility_input_hash,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_math_accessibility import (  # type: ignore[no-redef]
+        DEFAULT_MATH_ACCESSIBILITY_ROOT,
+        MathAccessibilityError,
+        load_math_exam_accessibility,
+        math_accessibility_input_hash,
+    )
 
 try:
     from scripts.nysed_math_explanations import (
+        DEFAULT_MATH_OFFICIAL_RATIONALE_OVERRIDES,
         DEFAULT_MATH_EXPLANATIONS_ROOT,
         MathExplanationError,
         MathQuestionExplanationInput,
+        OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS,
         extract_official_math_rationale,
+        load_official_math_rationale_overrides,
         load_math_exam_explanations,
         math_question_explanation_input_hash,
+        resolve_official_math_rationale,
         validate_math_question_explanation,
     )
 except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
     from nysed_math_explanations import (  # type: ignore[no-redef]
+        DEFAULT_MATH_OFFICIAL_RATIONALE_OVERRIDES,
         DEFAULT_MATH_EXPLANATIONS_ROOT,
         MathExplanationError,
         MathQuestionExplanationInput,
+        OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS,
         extract_official_math_rationale,
+        load_official_math_rationale_overrides,
         load_math_exam_explanations,
         math_question_explanation_input_hash,
+        resolve_official_math_rationale,
         validate_math_question_explanation,
     )
 
@@ -83,6 +106,19 @@ APP_PUBLIC_PREFIX = "/vine-app/nysed/math"
 YEARS = (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026)
 GRADES = (3, 4, 5, 6, 7, 8)
 CHOICES = ("A", "B", "C", "D")
+VERIFIED_CHOICE_LABEL_VARIANTS: dict[str, dict[str, Any]] = {
+    # The official 2016 Grade 4 q24 crop genuinely contains only figures A-C.
+    # Keep the exception tied to both the reviewed source PDF and exact crop so
+    # a changed release or render fails closed and requires a fresh audit.
+    "nysed-2016-g4-mc-q24": {
+        "year": 2016,
+        "grade": 4,
+        "number": 24,
+        "sourcePdfSha256": "3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455",
+        "questionImageSha256": "185985912b8e9d3bf333598892d6efe3e6392d7202e683745534d4f551ade225",
+        "choiceLabels": ("A", "B", "C"),
+    },
+}
 SUPPORTED_DOMAINS = frozenset(("OA", "NBT", "NF", "MD", "G", "RP", "NS", "EE", "F", "SP"))
 SCRIPT_VERSION = "14"
 OCR_CACHE_VERSION = "12"
@@ -103,8 +139,13 @@ EXPECTED_MC_COUNTS: dict[int, tuple[int, int, int, int, int, int]] = {
     2026: (27, 31, 31, 31, 34, 34),
 }
 EXPECTED_GRAND_TOTAL = 1839
-EXPECTED_OFFICIAL_EXPLANATION_TOTAL = 228
+EXPECTED_OFFICIAL_EXPLANATION_TOTAL = 223
+EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL = 5
 EXPECTED_VINE_EXPLANATION_TOTAL = 1611
+EXPECTED_REVIEWED_ACCESSIBILITY_QUESTION_TOTAL = 1_839
+EXPECTED_REVIEWED_ACCESSIBILITY_LOCALIZATION_TOTAL = 3_131
+EXPECTED_GRADE_5_8_ACCESSIBILITY_QUESTION_TOTAL = 1_277
+EXPECTED_GRADE_5_8_ACCESSIBILITY_LOCALIZATION_TOTAL = 2_174
 DEFAULT_MARKER_RETRY_DPI = 240
 SPANISH_YEARS = frozenset((2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026))
 EXPECTED_SPANISH_TOTAL = 1292
@@ -1690,6 +1731,391 @@ def crop_boxes_from_markers(
     return result
 
 
+_VERIFIED_MODERN_CROP_REPAIRS: dict[
+    tuple[int, int, str, int],
+    dict[str, Any],
+] = {
+    # The official 2021 Grade 4 q3 fraction denominators overlap the vertical
+    # lane occupied by the page's GO ON footer. The ordinary footer boundary
+    # clips both denominators. These source- and geometry-pinned repairs extend
+    # only q3 and mask only the far-right footer lane; answer content is left.
+    (2021, 4, "en", 3): {
+        "sourcePdfSha256": "d26506e972400d567a0af3029cdcfa0c43619f2f06be139488c33aaab3bfb614",
+        "sourcePage": 7,
+        "oldBox": (28.0, 531.9, 584.0, 698.6),
+        "newBox": (28.0, 531.9, 584.0, 722.0),
+        "footerMask": (490.0, 698.6),
+    },
+    (2021, 4, "es", 3): {
+        "sourcePdfSha256": "7c35fd97ffc19e72145b1a8eb2c3ce0e4515554ee8d5489d1c5f7dc26529b42f",
+        "sourcePage": 7,
+        "oldBox": (28.0, 532.8, 584.0, 698.6),
+        "newBox": (28.0, 532.8, 584.0, 722.0),
+        "footerMask": (490.0, 698.6),
+    },
+    # The Spanish 2021 Grade 8 q18 marker crop stops midway through the answer
+    # list. The source-pinned extension ends above the page footer.
+    (2021, 8, "es", 18): {
+        "sourcePdfSha256": "422c2acacb2fe516ca8e446a6fdc21c82456d0cbee65c076bf57805ea186b917",
+        "sourcePage": 20,
+        "oldBox": (28.0, 530.1, 584.0, 622.4),
+        "newBox": (28.0, 530.1, 584.0, 700.0),
+    },
+    (2021, 8, "es", 13): {
+        "sourcePdfSha256": "422c2acacb2fe516ca8e446a6fdc21c82456d0cbee65c076bf57805ea186b917",
+        "sourcePage": 18,
+        "oldBox": (28.0, 50.4, 584.0, 602.0),
+        "newBox": (28.0, 50.4, 584.0, 685.0),
+    },
+    # The Spanish 2022 Grade 6 q17 D amount overlaps the vertical footer lane.
+    # Extend through D and mask only the far-right SIGA lane.
+    (2022, 6, "es", 17): {
+        "sourcePdfSha256": "6a9b8dcaf0787644a325150dad282ec099e02dc71b080caf7db8c292de5bb933",
+        "sourcePage": 12,
+        "oldBox": (28.0, 474.3, 584.0, 702.372),
+        "newBox": (28.0, 474.3, 584.0, 723.0),
+        "footerMask": (516.0, 699.0),
+    },
+    # The Spanish 2023 Grade 8 q20 final equation overlaps SIGA. Preserve the
+    # left-side fraction and mask only the audited footer lane.
+    (2023, 8, "es", 20): {
+        "sourcePdfSha256": "6da677c8eb967384f368a202a8974bcc9e3e2d59cb2cc6d1a0dc09549845bd12",
+        "sourcePage": 12,
+        "oldBox": (28.0, 527.85, 584.0, 702.372),
+        "newBox": (28.0, 527.85, 584.0, 723.0),
+        "footerMask": (516.0, 699.0),
+    },
+    # The Spanish 2024 Grade 7 q29 D amount likewise overlaps SIGA. Preserve
+    # the left-side answer and mask only the source-audited footer lane.
+    (2024, 7, "es", 29): {
+        "sourcePdfSha256": "7d5913318ceb35bb77e90cdf5cbcf7e9c74b7eb1e5cfcb2629edf16396905976",
+        "sourcePage": 15,
+        "oldBox": (28.0, 546.677, 584.0, 701.654),
+        "newBox": (28.0, 546.677, 584.0, 725.0),
+        "footerMask": (516.0, 699.0),
+    },
+    # The 2015 Grade 7 annotated release places the final answer row just
+    # below the generic marker/footer bounds for two released items. Extend
+    # each crop only through its printed question border, before the separate
+    # "calculators allowed" line.
+    (2015, 7, "en", 25): {
+        "sourcePdfSha256": "b0aa156031c76884c8a381ea69a0c6ff00e0bed04f67a387c1c8541e657f9a8a",
+        "sourcePage": 21,
+        "oldBox": (30.0, 352.553, 573.0, 590.0),
+        "newBox": (30.0, 352.553, 573.0, 616.0),
+    },
+    (2015, 7, "en", 27): {
+        "sourcePdfSha256": "b0aa156031c76884c8a381ea69a0c6ff00e0bed04f67a387c1c8541e657f9a8a",
+        "sourcePage": 22,
+        "oldBox": (30.0, 535.453, 573.0, 665.0),
+        "newBox": (30.0, 535.453, 573.0, 687.0),
+    },
+    # The released 2016 Grade 5 booklet places q30 on the same page after q29,
+    # but q30 is not in the released MC item-map subset. Without a source-pinned
+    # lower boundary, the ordinary last-item crop runs to the footer and exposes
+    # all of q30 beneath q29 even though the UI renders only q29's controls.
+    (2016, 5, "en", 29): {
+        "sourcePdfSha256": "3be09f6036180bf30b69b1ba61be8ffb98a95ce1d29e70bbbcdfb6225004208b",
+        "sourcePage": 22,
+        "oldBox": (28.0, 198.45, 584.0, 694.4),
+        "newBox": (28.0, 198.45, 584.0, 354.0),
+    },
+    # The scanned 2016 Grade 6 q11 table extends beyond the detected footer
+    # boundary. The repaired lower edge restores D's complete d-row while
+    # remaining well above the page footer.
+    (2016, 6, "en", 11): {
+        "sourcePdfSha256": "f58e644f4ba3e7614bf40ab5f3c527f66cd9e66986be53afa14d0ad8b0ac66c8",
+        "sourcePage": 7,
+        "oldBox": (28.0, 280.8, 584.0, 596.6),
+        "newBox": (28.0, 280.8, 584.0, 640.0),
+    },
+    # The 2016 Grade 8 q2 crop stops inside C and omits D. The repaired edge
+    # includes both complete choices and remains above the page footer.
+    (2016, 8, "en", 2): {
+        "sourcePdfSha256": "c340042edf847c9a2f7c77772ccddc8ce2a5ddd61bb160ff926b71157b0229a6",
+        "sourcePage": 7,
+        "oldBox": (28.0, 227.7, 584.0, 636.2),
+        "newBox": (28.0, 227.7, 584.0, 692.0),
+    },
+    # Both localized 2023 Grade 6 q3 crops stop after choice C because choice D
+    # sits just below the ordinary footer boundary. Extend only to the verified
+    # dotted-rule margin so all four equations remain inside the question crop.
+    (2023, 6, "en", 3): {
+        "sourcePdfSha256": "ef605c9fcefcfd9fcf9f4320fc72ea9921fe04e7f6303e800791f017fb5560d4",
+        "sourcePage": 7,
+        "oldBox": (28.0, 560.7, 584.0, 702.372),
+        "newBox": (28.0, 560.7, 584.0, 723.0),
+        "footerMask": (490.0, 702.372),
+    },
+    (2023, 6, "es", 3): {
+        "sourcePdfSha256": "5becc2cd07f7306b6ed22ddf0a2e1db4d245ddebe34a557d2885416e5c2fe260",
+        "sourcePage": 7,
+        "oldBox": (28.0, 555.152, 584.0, 702.372),
+        "newBox": (28.0, 555.152, 584.0, 723.0),
+        "footerMask": (490.0, 702.372),
+    },
+    # The Spanish 2025 Grade 5 q14 denominator in choice D falls just below
+    # the standard crop boundary. The source-pinned extension stops before the
+    # page footer and restores the complete 36/10 choice.
+    (2025, 5, "es", 14): {
+        "sourcePdfSha256": "f92ebb165f19b082995c51a13b663405e572b13a5052ca641bb1dc59bf9967a0",
+        "sourcePage": 10,
+        "oldBox": (28.0, 527.876, 584.0, 702.372),
+        "newBox": (28.0, 527.876, 584.0, 718.0),
+        "footerMask": (490.0, 702.372),
+    },
+}
+
+
+# The official 2017 Spanish PDFs below contain duplicated or missing glyph
+# operators in otherwise valid question artwork. These exact-source overlays
+# replace only the malformed value cells with the values printed in the
+# matching official English release. Coordinates remain in source-page points
+# and are validated against the exact crop before rendering.
+_VERIFIED_TEXT_OVERLAY_REPAIRS: dict[tuple[str, int], dict[str, Any]] = {
+    (
+        "8c8c706ee38a63b81ba4ae0c8a3234d65c00f43e8fe68fb0d8f533caa1ecc187",
+        32,
+    ): {
+        "policyId": "2019-g5-es-q32-denominator-v1",
+        "sourcePage": 21,
+        "box": (28.0, 243.45, 584.0, 483.3),
+        "fontSize": 11.0,
+        "clearRects": ((240.0, 266.0, 252.0, 282.0),),
+        "texts": (("5", 242.95, 267.98, "lt"),),
+    },
+    (
+        "943edf43943948bc58023351f96f57dff7a9b8575684ffa3a953fd9ce1d80be1",
+        21,
+    ): {
+        "policyId": "2017-g7-en-q21-expression-v1",
+        "sourcePage": 15,
+        "box": (28.0, 49.95, 584.0, 340.65),
+        "fontSize": 13.0,
+        "clearRects": ((140.0, 87.0, 290.0, 124.0),),
+        "texts": (("-1/2(-3/2 x + 6x + 1) - 3x", 145.0, 94.0, "lt"),),
+    },
+    (
+        "642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d",
+        3,
+    ): {
+        "policyId": "2017-g5-es-q3-choice-values-v1",
+        "sourcePage": 10,
+        "box": (28.0, 50.85, 584.0, 400.95),
+        "fontSize": 11.0,
+        "clearRects": ((88.0, 249.0, 135.0, 340.0),),
+        "texts": (
+            ("20", 92.4, 253.75, "lt"),
+            ("44", 92.4, 277.76, "lt"),
+            ("45", 92.35, 301.76, "lt"),
+            ("60", 92.39, 325.76, "lt"),
+        ),
+    },
+    (
+        "642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d",
+        4,
+    ): {
+        "policyId": "2017-g5-es-q4-choice-values-v1",
+        "sourcePage": 10,
+        "box": (28.0, 400.95, 584.0, 702.372),
+        "fontSize": 11.0,
+        "clearRects": ((88.0, 444.0, 145.0, 534.0),),
+        "texts": (
+            ("41.0", 92.4, 448.15, "lt"),
+            ("4.10", 92.4, 472.16, "lt"),
+            ("0.41", 92.4, 496.16, "lt"),
+            ("0.041", 92.39, 520.16, "lt"),
+        ),
+    },
+    (
+        "642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d",
+        42,
+    ): {
+        "policyId": "2017-g5-es-q42-choice-values-v1",
+        "sourcePage": 29,
+        "box": (28.0, 282.6, 584.0, 702.372),
+        "fontSize": 11.0,
+        "clearRects": ((88.0, 361.0, 140.0, 452.0),),
+        "texts": (
+            ("70", 92.4, 365.25, "lt"),
+            ("180", 92.4, 389.26, "lt"),
+            ("290", 92.44, 413.26, "lt"),
+            ("780", 92.31, 437.26, "lt"),
+        ),
+    },
+    (
+        "8c464ae6cc63b4edbae96ba3649900b09f30b6bca5481db8c1e50afa50b1b0c8",
+        34,
+    ): {
+        "policyId": "2017-g6-es-q34-table-values-v1",
+        "sourcePage": 28,
+        "box": (28.0, 50.85, 584.0, 473.4),
+        "fontSize": 10.0,
+        "clearRects": (
+            (176.0, 156.0, 256.8, 177.8),
+            (176.0, 179.0, 256.8, 202.8),
+            (176.0, 204.0, 256.8, 225.8),
+            (176.0, 227.0, 256.8, 249.5),
+            (176.0, 311.0, 256.8, 332.5),
+            (176.0, 334.0, 256.8, 356.5),
+            (176.0, 358.0, 256.8, 380.5),
+            (176.0, 382.0, 256.8, 405.5),
+            (429.0, 157.0, 510.3, 179.5),
+            (429.0, 181.0, 510.3, 202.5),
+            (429.0, 204.0, 510.3, 226.5),
+            (429.0, 228.0, 510.3, 249.5),
+            (431.3, 313.0, 512.8, 334.5),
+            (431.3, 336.0, 512.8, 358.5),
+            (431.3, 360.0, 512.8, 382.5),
+            (431.3, 384.0, 512.8, 405.8),
+        ),
+        "texts": (
+            ("$17.50", 216.35, 166.9, "mm"),
+            ("$35.00", 216.35, 190.9, "mm"),
+            ("$52.50", 216.35, 214.9, "mm"),
+            ("$70.00", 216.35, 238.3, "mm"),
+            ("$17.50", 216.35, 321.5, "mm"),
+            ("$17.50", 216.35, 345.0, "mm"),
+            ("$17.50", 216.35, 369.0, "mm"),
+            ("$17.50", 216.35, 393.6, "mm"),
+            ("$16.50", 469.6, 168.0, "mm"),
+            ("$17.50", 469.6, 191.5, "mm"),
+            ("$18.50", 469.6, 215.0, "mm"),
+            ("$19.50", 469.6, 238.5, "mm"),
+            ("$8.75", 472.1, 323.6, "mm"),
+            ("$17.50", 472.1, 347.1, "mm"),
+            ("$26.25", 472.1, 371.1, "mm"),
+            ("$35.00", 472.1, 394.8, "mm"),
+        ),
+    },
+}
+
+
+def apply_verified_modern_crop_repairs(
+    *,
+    pdf_path: Path,
+    year: int,
+    grade: int,
+    language: str,
+    boxes: Mapping[int, tuple[int, tuple[float, float, float, float]]],
+) -> tuple[
+    dict[int, tuple[int, tuple[float, float, float, float]]],
+    dict[int, tuple[float, float]],
+]:
+    """Apply exact-source crop extensions for reviewed released-booklet defects."""
+
+    repaired = dict(boxes)
+    footer_masks: dict[int, tuple[float, float]] = {}
+    entries = [
+        (key, value)
+        for key, value in _VERIFIED_MODERN_CROP_REPAIRS.items()
+        if key[:3] == (year, grade, language)
+    ]
+    if not entries:
+        return repaired, footer_masks
+    actual_source_hash = sha256_file(pdf_path)
+    for (_, _, _, number), record in entries:
+        if actual_source_hash != record["sourcePdfSha256"]:
+            raise ImportFailure(
+                f"Verified crop repair source changed for {year} grade {grade} "
+                f"{language} q{number}; re-audit the official PDF"
+            )
+        actual = repaired.get(number)
+        expected = (int(record["sourcePage"]), tuple(record["oldBox"]))
+        if actual is None or (
+            actual[0] != expected[0]
+            or tuple(round(float(value), 3) for value in actual[1])
+            != tuple(round(float(value), 3) for value in expected[1])
+        ):
+            raise ImportFailure(
+                f"Verified crop repair geometry changed for {year} grade {grade} "
+                f"{language} q{number}; re-audit marker detection"
+            )
+        repaired[number] = (actual[0], tuple(record["newBox"]))
+        if "footerMask" in record:
+            footer_masks[number] = tuple(record["footerMask"])
+    return repaired, footer_masks
+
+
+def verified_text_overlay_repairs(
+    *,
+    source_pdf_sha256: str,
+    boxes: Mapping[int, tuple[int, tuple[float, float, float, float]]],
+) -> dict[int, dict[str, Any]]:
+    """Select and validate exact-source repairs for malformed PDF glyph layers."""
+
+    selected: dict[int, dict[str, Any]] = {}
+    for (expected_source_hash, number), record in _VERIFIED_TEXT_OVERLAY_REPAIRS.items():
+        if expected_source_hash != source_pdf_sha256 or number not in boxes:
+            continue
+        source_page, box = boxes[number]
+        expected_box = tuple(record["box"])
+        if source_page != record["sourcePage"] or tuple(
+            round(float(value), 3) for value in box
+        ) != tuple(round(float(value), 3) for value in expected_box):
+            raise ImportFailure(
+                f"Verified text-overlay geometry changed for q{number}; "
+                "re-audit the malformed official PDF"
+            )
+        if number in selected:
+            raise AssertionError(f"Duplicate verified text-overlay repair for q{number}")
+        for rectangle in record["clearRects"]:
+            if (
+                len(rectangle) != 4
+                or not box[0] <= rectangle[0] < rectangle[2] <= box[2]
+                or not box[1] <= rectangle[1] < rectangle[3] <= box[3]
+            ):
+                raise ImportFailure(f"Verified text-overlay rectangle is invalid for q{number}")
+        for text, left, top, anchor in record["texts"]:
+            if (
+                not isinstance(text, str)
+                or not text
+                or not box[0] <= left <= box[2]
+                or not box[1] <= top <= box[3]
+                or anchor not in {"lt", "mm"}
+            ):
+                raise ImportFailure(f"Verified text-overlay text is invalid for q{number}")
+        selected[number] = record
+    return selected
+
+
+def apply_verified_text_overlay(
+    image: Image.Image,
+    *,
+    box: tuple[float, float, float, float],
+    x_scale: float,
+    y_scale: float,
+    record: Mapping[str, Any],
+) -> Image.Image:
+    """Replace only source-audited malformed glyph regions with clean text."""
+
+    result = image.copy()
+    draw = ImageDraw.Draw(result)
+    for left, top, right, bottom in record["clearRects"]:
+        draw.rectangle(
+            (
+                round((left - box[0]) * x_scale),
+                round((top - box[1]) * y_scale),
+                round((right - box[0]) * x_scale),
+                round((bottom - box[1]) * y_scale),
+            ),
+            fill="white",
+        )
+    font = ImageFont.load_default(size=max(8, round(float(record["fontSize"]) * y_scale)))
+    for text, left, top, anchor in record["texts"]:
+        draw.text(
+            (
+                round((left - box[0]) * x_scale),
+                round((top - box[1]) * y_scale),
+            ),
+            text,
+            fill=(20, 20, 20),
+            font=font,
+            anchor=anchor,
+        )
+    return result
+
+
 def trim_white(image: Image.Image, padding: int = 12) -> Image.Image:
     rgb = image.convert("RGB")
     array = np.asarray(rgb)
@@ -1731,7 +2157,7 @@ def mask_selectable_footer_words(
 ) -> Image.Image:
     """Remove only an exact selectable NYSED footer row from a crop.
 
-    Some ELA answer rows overlap the vertical extent of ``GO ON`` at the far
+    Some answer rows overlap the vertical extent of ``GO ON`` at the far
     right of the page.  Expanding the crop far enough to preserve the answer
     therefore also captures the top of that footer.  Mask the narrow positioned
     footer lane instead of globally relaxing clearance or trimming the answer.
@@ -1775,6 +2201,26 @@ def mask_selectable_footer_words(
     return result
 
 
+def mask_verified_footer_lane(
+    image: Image.Image,
+    box: tuple[float, float, float, float],
+    x_scale: float,
+    y_scale: float,
+    mask_origin: tuple[float, float],
+) -> Image.Image:
+    """Mask a source-pinned footer lane without touching left-side answers."""
+
+    left, top = mask_origin
+    if not (box[0] < left < box[2] and box[1] < top < box[3]):
+        raise ImportFailure("Verified footer mask falls outside its repaired crop")
+    result = image.copy()
+    draw = ImageDraw.Draw(result)
+    pixel_left = max(0, round((left - box[0]) * x_scale))
+    pixel_top = max(0, round((top - box[1]) * y_scale))
+    draw.rectangle((pixel_left, pixel_top, result.width, result.height), fill="white")
+    return result
+
+
 def validate_image(image: Image.Image, label: str) -> None:
     if image.width < 240 or image.height < 90:
         raise ImportFailure(f"Question crop is implausibly small ({image.width}x{image.height}): {label}")
@@ -1798,13 +2244,22 @@ def render_question_crops(
     force: bool,
     script_version: str = SCRIPT_VERSION,
     mask_selectable_footers: bool = False,
+    verified_footer_masks: Mapping[int, tuple[float, float]] | None = None,
 ) -> dict[int, CropResult]:
+    verified_footer_masks = dict(verified_footer_masks or {})
+    if not set(verified_footer_masks).issubset(boxes):
+        raise ImportFailure("Verified footer masks do not match rendered question coverage")
     output_directory.mkdir(parents=True, exist_ok=True)
     manifest_path = output_directory / ".nysed-import.json"
+    source_pdf_sha256 = sha256_file(pdf_path)
+    text_overlay_repairs = verified_text_overlay_repairs(
+        source_pdf_sha256=source_pdf_sha256,
+        boxes=boxes,
+    )
     expected_manifest = {
         "scriptVersion": script_version,
         "dpi": dpi,
-        "sourcePdfSha256": sha256_file(pdf_path),
+        "sourcePdfSha256": source_pdf_sha256,
         "crops": {
             str(number): {
                 "sourcePage": source_page,
@@ -1815,6 +2270,16 @@ def render_question_crops(
     }
     if mask_selectable_footers:
         expected_manifest["selectableFooterMask"] = "selectable-footer-lane-v1"
+    if verified_footer_masks:
+        expected_manifest["verifiedFooterMasks"] = {
+            str(number): [round(float(value), 3) for value in origin]
+            for number, origin in sorted(verified_footer_masks.items())
+        }
+    if text_overlay_repairs:
+        expected_manifest["verifiedTextOverlays"] = {
+            str(number): record["policyId"]
+            for number, record in sorted(text_overlay_repairs.items())
+        }
     existing_manifest: dict[str, Any] | None = None
     if manifest_path.exists():
         try:
@@ -1875,6 +2340,22 @@ def render_question_crops(
                         box,
                         x_scale,
                         y_scale,
+                    )
+                if number in verified_footer_masks:
+                    raw_question = mask_verified_footer_lane(
+                        raw_question,
+                        box,
+                        x_scale,
+                        y_scale,
+                        verified_footer_masks[number],
+                    )
+                if number in text_overlay_repairs:
+                    raw_question = apply_verified_text_overlay(
+                        raw_question,
+                        box=box,
+                        x_scale=x_scale,
+                        y_scale=y_scale,
+                        record=text_overlay_repairs[number],
                     )
                 question = trim_trailing_whitespace(trim_white(raw_question))
                 validate_image(question, f"{pdf_path.name} question {number}")
@@ -1972,9 +2453,26 @@ def clean_alt_text(text: str, number: int, language: Literal["en", "es"]) -> str
         raise ImportFailure(
             f"Accessibility text contains unreadable PDF font characters for question {number}"
         )
-    text = re.sub(r"\b(?:GO\s+ON|STOP|PARE)\b", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"\b(?:Session|Sesión)\s+[12]\b", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"\b(?:Page|Página)\s+\d+\b", " ", text, flags=re.IGNORECASE)
+    # Booklet chrome appears on a line by itself. Restrict cleanup to those
+    # lines so real question language such as "the ferry will stop" survives.
+    text = re.sub(
+        r"^[ \t]*(?:GO[ \t]+ON|STOP|PARE)[ \t]*$",
+        " ",
+        text,
+        flags=re.IGNORECASE | re.MULTILINE,
+    )
+    text = re.sub(
+        r"^[ \t]*(?:Session|Sesión)[ \t]+[12][ \t]*$",
+        " ",
+        text,
+        flags=re.IGNORECASE | re.MULTILINE,
+    )
+    text = re.sub(
+        r"^[ \t]*(?:Page|Página)[ \t]+\d+[ \t]*$",
+        " ",
+        text,
+        flags=re.IGNORECASE | re.MULTILINE,
+    )
     text = " ".join(text.replace("|", " ").split())
     prefix = f"Question {number}." if language == "en" else f"Pregunta {number}."
     if text.startswith(str(number)):
@@ -2124,6 +2622,75 @@ def question_json(
     return result
 
 
+def verified_choice_labels_for_question(
+    *,
+    question_id: str,
+    source_pdf_sha256: str,
+    question_image_sha256: str,
+) -> list[str] | None:
+    """Return an exact-source reviewed choice-label variant, if one exists."""
+
+    record = VERIFIED_CHOICE_LABEL_VARIANTS.get(question_id)
+    if record is None:
+        return None
+    if source_pdf_sha256 != record["sourcePdfSha256"]:
+        raise ImportFailure(
+            f"Verified choice-label source changed for {question_id}; "
+            "re-audit the official PDF"
+        )
+    if question_image_sha256 != record["questionImageSha256"]:
+        raise ImportFailure(
+            f"Verified choice-label crop changed for {question_id}; "
+            "re-audit the rendered question"
+        )
+    return list(record["choiceLabels"])
+
+
+def attach_verified_choice_labels(
+    questions: Sequence[dict[str, Any]],
+    *,
+    year: int,
+    grade: int,
+    source_pdf: Path,
+    asset_root: Path,
+) -> None:
+    """Attach only reviewed non-default choice labels to generated questions."""
+
+    expected_records = {
+        question_id: record
+        for question_id, record in VERIFIED_CHOICE_LABEL_VARIANTS.items()
+        if (record["year"], record["grade"]) == (year, grade)
+    }
+    if not expected_records:
+        if any("choiceLabels" in question for question in questions):
+            raise ImportFailure(f"Unexpected choice-label variant in {year} grade {grade}")
+        return
+
+    questions_by_id = {str(question.get("id")): question for question in questions}
+    if set(expected_records) - set(questions_by_id):
+        raise ImportFailure(f"Verified choice-label question is missing in {year} grade {grade}")
+    if any("choiceLabels" in question for question in questions):
+        raise ImportFailure(f"Choice labels were attached before source verification in {year} grade {grade}")
+
+    source_pdf_sha256 = sha256_file(source_pdf)
+    for question_id, record in expected_records.items():
+        number = int(record["number"])
+        image_path = asset_root / str(year) / f"grade-{grade}" / "en" / f"q{number:02d}.webp"
+        if not image_path.is_file() or image_path.is_symlink():
+            raise ImportFailure(f"Missing or unsafe verified choice-label crop: {image_path}")
+        labels = verified_choice_labels_for_question(
+            question_id=question_id,
+            source_pdf_sha256=source_pdf_sha256,
+            question_image_sha256=sha256_file(image_path),
+        )
+        if labels is None:
+            raise AssertionError("Verified choice-label record disappeared during attachment")
+        question = questions_by_id[question_id]
+        if question.get("number") != number or question.get("correct") not in labels:
+            raise ImportFailure(f"Verified choice-label metadata changed for {question_id}")
+        question["choiceLabels"] = labels
+
+
 def _math_explanation_asset_path(
     asset_root: Path,
     src: Any,
@@ -2262,6 +2829,127 @@ def build_exam_explanation_input_hashes(
     return input_hashes
 
 
+def build_exam_accessibility_input_hashes(
+    exam: dict[str, Any],
+    asset_root: Path,
+) -> tuple[dict[str, str], dict[str, int]]:
+    """Hash every localized Grade 3-8 crop reviewed by an accessibility sidecar."""
+
+    year = exam.get("year")
+    grade = exam.get("grade")
+    exam_id = exam.get("id")
+    languages = exam.get("supportedLanguages")
+    questions = exam.get("questions")
+    if (
+        not isinstance(year, int)
+        or isinstance(year, bool)
+        or year not in YEARS
+        or grade not in GRADES
+        or not isinstance(exam_id, str)
+        or not exam_id
+        or languages not in (["en"], ["en", "es"])
+        or not isinstance(questions, list)
+        or not questions
+    ):
+        raise ImportFailure("Malformed Grade 3-8 exam while hashing accessibility inputs")
+
+    expected_language_keys = set(languages)
+    input_hashes: dict[str, str] = {}
+    numbers: dict[str, int] = {}
+    for question in questions:
+        if not isinstance(question, dict):
+            raise ImportFailure(f"Malformed accessibility question in {exam_id}")
+        question_id = question.get("id")
+        number = question.get("number")
+        images = question.get("image")
+        if (
+            not isinstance(question_id, str)
+            or not question_id
+            or question_id in input_hashes
+            or not isinstance(number, int)
+            or isinstance(number, bool)
+            or not 1 <= number <= 100
+            or not isinstance(images, dict)
+            or set(images) != expected_language_keys
+        ):
+            raise ImportFailure(f"Malformed accessibility inputs in {exam_id}")
+
+        image_hashes: dict[str, str] = {}
+        for language in languages:
+            localized_image = images.get(language)
+            if not isinstance(localized_image, dict):
+                raise ImportFailure(f"Malformed {language} accessibility asset for {question_id}")
+            path = _math_explanation_asset_path(
+                asset_root,
+                localized_image.get("src"),
+                year=year,
+                grade=grade,
+                language=language,
+                number=number,
+                label=f"{language} accessibility image for {question_id}",
+            )
+            try:
+                image_hashes[language] = sha256_file(path)
+            except OSError as exc:
+                raise ImportFailure(
+                    f"Could not hash {language} accessibility asset for {question_id}: {exc}"
+                ) from exc
+        try:
+            input_hashes[question_id] = math_accessibility_input_hash(
+                question_id=question_id,
+                number=number,
+                image_sha256=image_hashes,
+                languages=languages,
+            )
+        except (MathAccessibilityError, TypeError, ValueError) as exc:
+            raise ImportFailure(
+                f"Could not hash accessibility inputs for {question_id}: {exc}"
+            ) from exc
+        numbers[question_id] = number
+    return input_hashes, numbers
+
+
+def attach_reviewed_accessibility(
+    exam: dict[str, Any],
+    asset_root: Path,
+    *,
+    accessibility_root: Path = DEFAULT_MATH_ACCESSIBILITY_ROOT,
+) -> None:
+    """Replace unsafe OCR alts with exact-crop, human-reviewed descriptions."""
+
+    year = exam.get("year")
+    grade = exam.get("grade")
+    exam_id = exam.get("id")
+    languages = exam.get("supportedLanguages")
+    questions = exam.get("questions")
+    if (
+        not isinstance(year, int)
+        or grade not in GRADES
+        or not isinstance(exam_id, str)
+        or languages not in (["en"], ["en", "es"])
+        or not isinstance(questions, list)
+    ):
+        raise ImportFailure("Only canonical Grade 3-8 exams may use reviewed accessibility sidecars")
+
+    input_hashes, numbers = build_exam_accessibility_input_hashes(exam, asset_root)
+    try:
+        descriptions = load_math_exam_accessibility(
+            year=year,
+            grade=grade,
+            exam_id=exam_id,
+            languages=languages,
+            expected_input_hashes=input_hashes,
+            expected_numbers=numbers,
+            root=accessibility_root,
+        )
+    except (MathAccessibilityError, OSError, TypeError, ValueError) as exc:
+        raise ImportFailure(f"Math accessibility sidecar failed for {exam_id}: {exc}") from exc
+
+    for question in questions:
+        question_id = str(question["id"])
+        question["alt"] = descriptions[question_id]
+
+
 def attach_vine_authored_explanations(
     exam: dict[str, Any],
     asset_root: Path,
@@ -2317,6 +3005,27 @@ def attach_vine_authored_explanations(
         }
 
 
+def attach_reviewed_exam_content(exam: dict[str, Any], asset_root: Path) -> None:
+    """Attach hash-pinned explanations before replacing source OCR presentation alts."""
+
+    year = exam.get("year")
+    grade = exam.get("grade")
+    if (
+        not isinstance(year, int)
+        or isinstance(year, bool)
+        or not isinstance(grade, int)
+        or isinstance(grade, bool)
+    ):
+        raise ImportFailure("Malformed exam while attaching reviewed content")
+
+    # Explanation sidecars intentionally pin the importer's source-extracted alt.
+    # Accessibility sidecars independently pin the exact localized crop bytes and
+    # replace that OCR only after explanation validation has succeeded.
+    if year >= 2015:
+        attach_vine_authored_explanations(exam, asset_root)
+    attach_reviewed_accessibility(exam, asset_root)
+
+
 def validate_imported_question_explanation(
     year: int,
     question: dict[str, Any],
@@ -2331,7 +3040,14 @@ def validate_imported_question_explanation(
         )
     except (MathExplanationError, TypeError, ValueError) as exc:
         raise ImportFailure(f"Invalid explanation in {question_id}: {exc}") from exc
-    expected_source = "official-nysed" if year <= 2014 else "vine-authored"
+    if year <= 2014:
+        expected_source = (
+            "official-nysed-corrected"
+            if question_id in OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS
+            else "official-nysed"
+        )
+    else:
+        expected_source = "vine-authored"
     if explanation.source != expected_source:
         raise ImportFailure(
             f"Wrong explanation source in {question_id}: "
@@ -2380,6 +3096,13 @@ def process_modern_exam(
     )
     all_english_boxes = crop_boxes_from_markers(english_pdf, markers)
     english_boxes = {number: all_english_boxes[number] for number in numbers}
+    english_boxes, english_verified_footer_masks = apply_verified_modern_crop_repairs(
+        pdf_path=english_pdf,
+        year=source.year,
+        grade=source.grade,
+        language="en",
+        boxes=english_boxes,
+    )
     language_directory = asset_root / str(source.year) / f"grade-{source.grade}" / "en"
     public_directory = f"{public_prefix}/{source.year}/grade-{source.grade}/en"
     english_images = render_question_crops(
@@ -2389,6 +3112,7 @@ def process_modern_exam(
         public_directory,
         dpi=dpi,
         force=force_render,
+        verified_footer_masks=english_verified_footer_masks,
     )
     english_alts = extract_alt_texts(
         english_pdf,
@@ -2505,6 +3229,13 @@ def process_modern_exam(
             )
         all_spanish_boxes = crop_boxes_from_markers(spanish_pdf, spanish_markers)
         spanish_boxes = {number: all_spanish_boxes[number] for number in numbers}
+        spanish_boxes, spanish_verified_footer_masks = apply_verified_modern_crop_repairs(
+            pdf_path=spanish_pdf,
+            year=source.year,
+            grade=source.grade,
+            language="es",
+            boxes=spanish_boxes,
+        )
         spanish_images = render_question_crops(
             spanish_pdf,
             spanish_boxes,
@@ -2512,6 +3243,7 @@ def process_modern_exam(
             f"{public_prefix}/{source.year}/grade-{source.grade}/es",
             dpi=dpi,
             force=force_render,
+            verified_footer_masks=spanish_verified_footer_masks,
         )
         spanish_alts = extract_alt_texts(
             spanish_pdf,
@@ -2542,6 +3274,13 @@ def process_modern_exam(
                 spanish_alts.get(item.number),
             )
         )
+    attach_verified_choice_labels(
+        questions,
+        year=source.year,
+        grade=source.grade,
+        source_pdf=english_pdf,
+        asset_root=asset_root,
+    )
     return questions, source_urls, supported_languages
 
 
@@ -2557,12 +3296,23 @@ def process_annotated_exam(
     dpi: int,
     allow_index_defects: bool,
     tesseract_binary: str | None,
+    rationale_overrides_path: Path = DEFAULT_MATH_OFFICIAL_RATIONALE_OVERRIDES,
 ) -> tuple[list[dict[str, Any]], dict[str, str], list[str]]:
     english_pdf = get_pdf(source, cache_root, kind="release", offline=offline, force=force_download)
     annotated = parse_annotated_items(
         english_pdf,
         require_official_rationale=source.year <= 2014,
     )
+    rationale_overrides = {}
+    if source.year <= 2014:
+        try:
+            rationale_overrides = load_official_math_rationale_overrides(
+                rationale_overrides_path
+            )
+        except (MathExplanationError, OSError, TypeError, ValueError) as exc:
+            raise ImportFailure(
+                f"Official rationale repairs failed validation: {exc}"
+            ) from exc
 
     def released_order_pairs() -> list[tuple[AnnotatedItem, MapItem]]:
         # Old annotated PDFs publish a numbered released subset, not a test
@@ -2629,6 +3379,13 @@ def process_annotated_exam(
     boxes = {map_item.number: (item.source_page, item.crop_box) for item, map_item in pairs}
     if len(boxes) != len(pairs):
         raise ImportFailure(f"Old-map alignment produced duplicate question numbers for {source.year} grade {source.grade}")
+    boxes, verified_footer_masks = apply_verified_modern_crop_repairs(
+        pdf_path=english_pdf,
+        year=source.year,
+        grade=source.grade,
+        language="en",
+        boxes=boxes,
+    )
     images = render_question_crops(
         english_pdf,
         boxes,
@@ -2636,6 +3393,7 @@ def process_annotated_exam(
         f"{public_prefix}/{source.year}/grade-{source.grade}/en",
         dpi=dpi,
         force=force_render,
+        verified_footer_masks=verified_footer_masks,
     )
     alts = extract_alt_texts(
         english_pdf,
@@ -2659,12 +3417,22 @@ def process_annotated_exam(
         if source.year <= 2014:
             if item.official_rationale is None:
                 raise ImportFailure(f"Missing official rationale for {question['id']}")
+            try:
+                explanation = resolve_official_math_rationale(
+                    question_id=str(question["id"]),
+                    raw_rationale=item.official_rationale,
+                    overrides=rationale_overrides,
+                )
+            except (MathExplanationError, TypeError, ValueError) as exc:
+                raise ImportFailure(
+                    f"Official rationale repair failed for {question['id']}: {exc}"
+                ) from exc
             question["explanation"] = {
                 "text": {
-                    "en": item.official_rationale,
-                    "es": item.official_rationale,
+                    "en": explanation.en,
+                    "es": explanation.es,
                 },
-                "source": "official-nysed",
+                "source": explanation.source,
             }
         questions.append(question)
     return questions, {"en": source.release_url}, ["en"]
@@ -2688,6 +3456,20 @@ def validate_exam_questions(year: int, grade: int, questions: Sequence[dict[str,
     for question in questions:
         if question["correct"] not in CHOICES:
             raise ImportFailure(f"Invalid answer key in generated question {question['id']}")
+        expected_choice_labels = (
+            list(VERIFIED_CHOICE_LABEL_VARIANTS[question["id"]]["choiceLabels"])
+            if question["id"] in VERIFIED_CHOICE_LABEL_VARIANTS
+            else None
+        )
+        if question.get("choiceLabels") != expected_choice_labels:
+            raise ImportFailure(
+                f"Invalid choice-label variant in generated question {question['id']}"
+            )
+        available_choices = expected_choice_labels or list(CHOICES)
+        if question["correct"] not in available_choices:
+            raise ImportFailure(
+                f"Answer key is unavailable in generated question {question['id']}"
+            )
         validate_imported_question_explanation(year, question)
         if question["domain"] not in SUPPORTED_DOMAINS:
             raise ImportFailure(f"Invalid domain in generated question {question['id']}")
@@ -2992,8 +3774,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 tesseract_binary=args.tesseract,
             )
         exam_json = build_exam_json(source, questions, source_urls, supported)
-        if year >= 2015:
-            attach_vine_authored_explanations(exam_json, asset_root)
+        attach_reviewed_exam_content(exam_json, asset_root)
         validate_exam_questions(year, grade, questions)
         log(f"  Generated {len(questions)} multiple-choice questions for {year} grade {grade}")
         return exam_json
@@ -3030,6 +3811,51 @@ def main(argv: Sequence[str] | None = None) -> int:
             f"Full catalog count mismatch: expected {EXPECTED_GRAND_TOTAL}, generated {len(question_ids)}"
         )
     if is_full:
+        reviewed_accessibility_questions = [
+            question
+            for exam in exams
+            for question in exam["questions"]
+        ]
+        reviewed_accessibility_localizations = sum(
+            len(question["alt"]) for question in reviewed_accessibility_questions
+        )
+        if (
+            len(reviewed_accessibility_questions)
+            != EXPECTED_REVIEWED_ACCESSIBILITY_QUESTION_TOTAL
+            or reviewed_accessibility_localizations
+            != EXPECTED_REVIEWED_ACCESSIBILITY_LOCALIZATION_TOTAL
+        ):
+            raise ImportFailure(
+                "Full reviewed accessibility parity failed: "
+                f"expected questions/localizations="
+                f"{EXPECTED_REVIEWED_ACCESSIBILITY_QUESTION_TOTAL}/"
+                f"{EXPECTED_REVIEWED_ACCESSIBILITY_LOCALIZATION_TOTAL}, got "
+                f"{len(reviewed_accessibility_questions)}/"
+                f"{reviewed_accessibility_localizations}"
+            )
+        grade_5_8_accessibility_questions = [
+            question
+            for exam in exams
+            if int(exam["grade"]) in (5, 6, 7, 8)
+            for question in exam["questions"]
+        ]
+        grade_5_8_accessibility_localizations = sum(
+            len(question["alt"]) for question in grade_5_8_accessibility_questions
+        )
+        if (
+            len(grade_5_8_accessibility_questions)
+            != EXPECTED_GRADE_5_8_ACCESSIBILITY_QUESTION_TOTAL
+            or grade_5_8_accessibility_localizations
+            != EXPECTED_GRADE_5_8_ACCESSIBILITY_LOCALIZATION_TOTAL
+        ):
+            raise ImportFailure(
+                "Grade 5-8 reviewed accessibility parity failed: expected "
+                "questions/localizations="
+                f"{EXPECTED_GRADE_5_8_ACCESSIBILITY_QUESTION_TOTAL}/"
+                f"{EXPECTED_GRADE_5_8_ACCESSIBILITY_LOCALIZATION_TOTAL}, got "
+                f"{len(grade_5_8_accessibility_questions)}/"
+                f"{grade_5_8_accessibility_localizations}"
+            )
         spanish_total = sum(
             len(exam["questions"])
             for exam in exams
@@ -3045,16 +3871,21 @@ def main(argv: Sequence[str] | None = None) -> int:
             for question in exam["questions"]
         ]
         official_total = explanation_sources.count("official-nysed")
+        corrected_total = explanation_sources.count("official-nysed-corrected")
         vine_total = explanation_sources.count("vine-authored")
         if (
             official_total != EXPECTED_OFFICIAL_EXPLANATION_TOTAL
+            or corrected_total != EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL
             or vine_total != EXPECTED_VINE_EXPLANATION_TOTAL
-            or len(explanation_sources) != official_total + vine_total
+            or len(explanation_sources) != official_total + corrected_total + vine_total
         ):
             raise ImportFailure(
                 "Full explanation provenance parity failed: "
-                f"expected official/vine={EXPECTED_OFFICIAL_EXPLANATION_TOTAL}/"
-                f"{EXPECTED_VINE_EXPLANATION_TOTAL}, got {official_total}/{vine_total}"
+                "expected official/corrected/vine="
+                f"{EXPECTED_OFFICIAL_EXPLANATION_TOTAL}/"
+                f"{EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL}/"
+                f"{EXPECTED_VINE_EXPLANATION_TOTAL}, got "
+                f"{official_total}/{corrected_total}/{vine_total}"
             )
     if failures and not exams:
         raise ImportFailure("All requested exams failed; refusing to write an empty catalog")

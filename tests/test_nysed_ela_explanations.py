@@ -216,6 +216,18 @@ class ExplanationSidecarValidationTests(unittest.TestCase):
         )
         self.assertEqual(official.source, "official-nysed")
 
+        corrected_official = validate_question_explanation(
+            {
+                "text": (
+                    "Students who choose B show an understanding of the story. The Wampanoag "
+                    "people seek Maushop's help, and his response resolves the central problem."
+                ),
+                "source": "official-nysed-corrected",
+            },
+            question_id="nysed-ela-2013-g4-mc-q2",
+        )
+        self.assertEqual(corrected_official.source, "official-nysed-corrected")
+
         official_without_causal_conjunction = validate_question_explanation(
             {
                 "text": (
@@ -363,7 +375,7 @@ class ExplanationSidecarValidationTests(unittest.TestCase):
         assert isinstance(explanation, dict)
         explanation["source"] = "generated"
 
-        with self.assertRaisesRegex(ElaExplanationError, "official-nysed or vine-authored"):
+        with self.assertRaisesRegex(ElaExplanationError, "official-nysed-corrected"):
             self.validate(sidecar)
 
     def test_loader_uses_fixed_year_grade_filename_and_rejects_duplicate_keys(self) -> None:

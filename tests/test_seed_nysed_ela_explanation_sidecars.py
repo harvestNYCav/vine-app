@@ -7,6 +7,7 @@ from pathlib import Path
 
 from scripts.seed_nysed_ela_explanation_sidecars import (
     SidecarSeedError,
+    _payload_with_refreshed_input_hashes,
     seed_sidecars,
     validate_sidecars,
 )
@@ -47,6 +48,55 @@ def _catalog() -> dict[str, object]:
 
 
 class SeedElaExplanationSidecarsTests(unittest.TestCase):
+    def test_accessibility_refresh_changes_only_the_input_hash(self) -> None:
+        explanation = {
+            "text": (
+                "The passage returns to this detail several times, which shows why it supports "
+                "the central idea instead of describing only one isolated event."
+            ),
+            "source": "vine-authored",
+        }
+        existing = {
+            "schemaVersion": 1,
+            "policyVersion": "ela-explanation-1",
+            "examId": "nysed-ela-2015-grade-3-mc-v1",
+            "questions": {
+                "nysed-ela-2015-g3-mc-q1": {
+                    "inputHash": "a" * 64,
+                    "explanation": explanation,
+                }
+            },
+        }
+        seeded = {
+            **existing,
+            "questions": {
+                "nysed-ela-2015-g3-mc-q1": {
+                    "inputHash": "b" * 64,
+                    "explanation": {"text": "", "source": "vine-authored"},
+                }
+            },
+        }
+
+        refreshed, changed = _payload_with_refreshed_input_hashes(
+            existing,
+            seeded,
+            label="fixture",
+        )
+
+        self.assertEqual(changed, 1)
+        self.assertEqual(
+            refreshed["questions"]["nysed-ela-2015-g3-mc-q1"]["inputHash"],
+            "b" * 64,
+        )
+        self.assertEqual(
+            refreshed["questions"]["nysed-ela-2015-g3-mc-q1"]["explanation"],
+            explanation,
+        )
+        self.assertEqual(
+            existing["questions"]["nysed-ela-2015-g3-mc-q1"]["inputHash"],
+            "a" * 64,
+        )
+
     def test_seed_then_validate_recomputes_asset_provenance(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

@@ -83,46 +83,78 @@ export default async function ElaExamSectionPage({
         <CollapsiblePassage passage={section.passage} passageLabel={section.passageLabel} />
       </div>
 
-      <section className="mb-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
-        <h2 className="font-bold text-gray-800">Big idea</h2>
-        <p className="mt-2 text-sm leading-relaxed text-gray-600">{section.overview}</p>
-      </section>
-
-      <section className="mb-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
-        <h2 className="font-bold text-gray-800">What you will learn</h2>
-        <ul className="mt-3 space-y-2">
-          {section.learningGoals.map((goal, index) => (
-            <li key={index} className="flex gap-2 text-sm leading-relaxed text-gray-600">
-              <span className="font-bold text-green-600" aria-hidden="true">✓</span>
-              <span>{goal}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-4 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-        <p className="text-xs font-bold uppercase tracking-wide text-blue-700">Reading strategy</p>
-        <p className="mt-2 text-sm leading-relaxed text-blue-900">{section.strategy}</p>
-      </section>
-
-      <section className="mb-6 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
-        <h2 className="font-bold text-gray-800">Worked example</h2>
-        <p className="mt-3 rounded-xl bg-gray-50 p-3 text-sm font-medium leading-relaxed text-gray-700">
-          {section.workedExample.prompt}
+      <section className="mb-6">
+        <h2 className="mb-2 font-bold text-gray-800">Skills in this passage</h2>
+        <p className="mb-3 text-sm leading-relaxed text-gray-500">
+          Open each lesson represented in the released questions below.
         </p>
-        <ol className="mt-4 space-y-3">
-          {section.workedExample.steps.map((step, index) => (
-            <li key={index} className="flex gap-3 text-sm leading-relaxed text-gray-600">
-              <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green-100 text-xs font-bold text-green-700">
-                {index + 1}
-              </span>
-              <span>{step}</span>
-            </li>
+        <div className="space-y-3">
+          {section.skillLessons.map(lesson => (
+            <details
+              key={lesson.skill}
+              open={lesson.skill === section.focusSkill}
+              className="group rounded-2xl border border-gray-100 bg-white shadow-sm"
+            >
+              <summary className="cursor-pointer list-none p-5 [&::-webkit-details-marker]:hidden">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl" aria-hidden="true">{lesson.emoji}</span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block font-bold text-gray-800">{lesson.title}</span>
+                    <span className="mt-1 block text-sm leading-relaxed text-gray-500">
+                      {lesson.description}
+                    </span>
+                  </span>
+                  <span
+                    className="text-gray-400 transition-transform group-open:rotate-180"
+                    aria-hidden="true"
+                  >
+                    ⌄
+                  </span>
+                </div>
+              </summary>
+
+              <div className="border-t border-gray-100 px-5 pb-5 pt-4">
+                <h3 className="font-bold text-gray-800">Big idea</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{lesson.overview}</p>
+
+                <h3 className="mt-5 font-bold text-gray-800">What you will learn</h3>
+                <ul className="mt-3 space-y-2">
+                  {lesson.learningGoals.map((goal, index) => (
+                    <li key={index} className="flex gap-2 text-sm leading-relaxed text-gray-600">
+                      <span className="font-bold text-green-600" aria-hidden="true">✓</span>
+                      <span>{goal}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50 p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-blue-700">
+                    Reading strategy
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-blue-900">{lesson.strategy}</p>
+                </div>
+
+                <h3 className="mt-5 font-bold text-gray-800">Worked example</h3>
+                <p className="mt-3 rounded-xl bg-gray-50 p-3 text-sm font-medium leading-relaxed text-gray-700">
+                  {lesson.workedExample.prompt}
+                </p>
+                <ol className="mt-4 space-y-3">
+                  {lesson.workedExample.steps.map((step, index) => (
+                    <li key={index} className="flex gap-3 text-sm leading-relaxed text-gray-600">
+                      <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green-100 text-xs font-bold text-green-700">
+                        {index + 1}
+                      </span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
+                <p className="mt-4 rounded-xl bg-green-50 p-3 text-sm font-bold text-green-800">
+                  {lesson.workedExample.takeaway}
+                </p>
+              </div>
+            </details>
           ))}
-        </ol>
-        <p className="mt-4 rounded-xl bg-green-50 p-3 text-sm font-bold text-green-800">
-          {section.workedExample.takeaway}
-        </p>
+        </div>
       </section>
 
       <p className="mb-3 text-center text-xs leading-relaxed text-gray-500">

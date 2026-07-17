@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2014-grade-7-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2014-g7-mc-q1": {
+      "inputHash": "a6494d656929a50066cbf1750ea632cce60075a0d6022b1e66d1cf204355f435",
+      "description": {
+        "en": "Question 1. Craig went bowling with $25 to spend. He rented shoes for $5.25 and paid $4.00 for each game. What was the greatest number of games Craig could have played? Choices: A: 4. B: 5. C: 6. D: 7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$25",
+          "$5.25",
+          "$4.00",
+          "4",
+          "5",
+          "6",
+          "7",
+          "A: 4",
+          "B: 5",
+          "C: 6",
+          "D: 7"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q2": {
+      "inputHash": "8f911ead7c2cdf799ca7b3be739ae59380deb4e1cf8a927f5a7ddb9461aec401",
+      "description": {
+        "en": "Question 2. The label on a 1 1/2-pound bag of wildflower seeds states that it will cover an area of 375 square feet. Based on this information, what is the number of square feet that 1 pound of wildflower seeds will cover? Choices: A: 1/250. B: 250. C: 562 1/2. D: 750."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 1/2-pound",
+          "375",
+          "1 pound",
+          "1/250",
+          "250",
+          "562 1/2",
+          "750",
+          "A: 1/250",
+          "B: 250",
+          "C: 562 1/2",
+          "D: 750",
+          "1 1/2"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q3": {
+      "inputHash": "c6ff1cce113ce4863310ec47b07f092ec997be92686473340793749fdcc44a58",
+      "description": {
+        "en": "Question 3. Which expression is equivalent to (7x − 5) − (3x − 2)? Choices: A: 10x − 7. B: 10x − 3. C: 4x − 7. D: 4x − 3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(7x − 5) − (3x − 2)",
+          "10x − 7",
+          "10x − 3",
+          "4x − 7",
+          "4x − 3",
+          "A: 10x − 7",
+          "B: 10x − 3",
+          "C: 4x − 7",
+          "D: 4x − 3",
+          "(7x − 5)",
+          "(3x − 2)"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q4": {
+      "inputHash": "83a77933a213d5f4071acf55f4eb73249a65ec718b807a5eacb2892b3af21507",
+      "description": {
+        "en": "Question 4. The Lions won 16 games last year. This year the Lions won 20 games. What is the percent increase in the number of games the Lions won from last year to this year? Choices: A: 20%. B: 25%. C: 80%. D: 125%."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16",
+          "20",
+          "20%",
+          "25%",
+          "80%",
+          "125%",
+          "A: 20%",
+          "B: 25%",
+          "C: 80%",
+          "D: 125%"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q5": {
+      "inputHash": "f280b6d5b56412a0b273177ae182a5bd5226671ca00a28bf0f16a0365fe3164a",
+      "description": {
+        "en": "Question 5. The table shows prices for shoe rental, games, and snacks at the bowling alley. The table is titled “BOWLING ALLEY PRICES” and has columns labeled “Item” and “Price.” The rows are: Shoe rental, $2.75; One game of bowling, $2.50; Small soda, $0.95; Large soda, $1.50; Nachos, $1.75. Gina rented shoes, bowled 3 games, and bought 1 order of nachos. She used a coupon for 1/2 off the price of her bowling games. What was Gina’s total cost before tax was added? Choices: A: $5.75. B: $6.00. C: $8.25. D: $12.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$2.75",
+          "$2.50",
+          "$0.95",
+          "$1.50",
+          "$1.75",
+          "3 games",
+          "1 order",
+          "1/2",
+          "$5.75",
+          "$6.00",
+          "$8.25",
+          "$12.00",
+          "A: $5.75",
+          "B: $6.00",
+          "C: $8.25",
+          "D: $12.00"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q6": {
+      "inputHash": "c53858e7b8683ae17d063dce938472a126004ce0d6c371e45693861a90c5e6d1",
+      "description": {
+        "en": "Question 6. The population of a city is expected to increase by 7.5% next year. If p represents the current population, which expression represents the expected population next year? Choices: A: 1.75p. B: 1.075p. C: p + 0.075. D: 1 + 0.075."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7.5%",
+          "p",
+          "1.75p",
+          "1.075p",
+          "p + 0.075",
+          "1 + 0.075",
+          "A: 1.75p",
+          "B: 1.075p",
+          "C: p + 0.075",
+          "D: 1 + 0.075"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q7": {
+      "inputHash": "5bffeb031cc1a47c9a32fccd1f2a859b0c85691c44af8a7cc54f3517685eb486",
+      "description": {
+        "en": "Question 7. Laticia randomly selected 25% of the seventh-grade students in her school and asked them their favorite season. Of the students surveyed, 51 chose summer as their favorite season. Based on the data, what is the most reasonable prediction of the number of seventh-grade students in her school who would choose summer as their favorite season? Choices: A: 15. B: 75. C: 150. D: 200."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "25%",
+          "51",
+          "15",
+          "75",
+          "150",
+          "200",
+          "A: 15",
+          "B: 75",
+          "C: 150",
+          "D: 200"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q8": {
+      "inputHash": "03dfbe09f44d7f1c46a66f0fdc4039c2ff8601f929ec98d14462af2a205c5356",
+      "description": {
+        "en": "Question 8. Ms. Graves gave her class 12 minutes to read. Carrie read 5 1/2 pages in that time. At what rate, in pages per hour, did Carrie read? Choices: A: 1 1/10. B: 22. C: 27 1/2. D: 66."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 minutes",
+          "5 1/2 pages",
+          "1 1/10",
+          "22",
+          "27 1/2",
+          "66",
+          "A: 1 1/10",
+          "B: 22",
+          "C: 27 1/2",
+          "D: 66",
+          "5 1/2"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q9": {
+      "inputHash": "1c3d8d7e813d7e75b8a1cd376eacd51dafa2bd47fd5ccfc51b3a26013de5d598",
+      "description": {
+        "en": "Question 9. Ms. Andrews made two line plots to compare the quiz scores for her first-period math class and her second-period math class. She gave the same quiz to each class. Both plots have a horizontal Points axis labeled at every integer from 0 through 10, with arrows at both ends. In the First-Period Class plot, the scores are: one X at 2, two X's at 3, two X's at 4, two X's at 5, and one X at 6. In the Second-Period Class plot, the scores are: two X's at 5, four X's at 6, four X's at 7, four X's at 8, and two X's at 9. What conclusion can Ms. Andrews make about the performance of her first- and second-period classes? Choices: A: The first-period class had a higher median score than the second-period class. B: The second-period class scores had a higher mean than the first-period class scores. C: The first-period class scores had a greater range than the second-period class scores. D: The second-period class scores had a greater mean absolute deviation than the first-period class scores."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 through 10",
+          "one X at 2",
+          "two X's at 3",
+          "two X's at 4",
+          "two X's at 5",
+          "one X at 6",
+          "four X's at 6",
+          "four X's at 7",
+          "four X's at 8",
+          "two X's at 9",
+          "A: The first-period class had a higher median score than the second-period class",
+          "B: The second-period class scores had a higher mean than the first-period class scores",
+          "C: The first-period class scores had a greater range than the second-period class scores",
+          "D: The second-period class scores had a greater mean absolute deviation than the first-period class scores"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q10": {
+      "inputHash": "f86a803018cd657912d3dc417b52148aec9baaec139f4ba729d6b2a9f762a624",
+      "description": {
+        "en": "Question 10. Which tree diagram shows all of the possible outcomes for tossing a coin and rolling a number pyramid that has four sides labeled 1 through 4? In each description, H means heads and T means tails. Choices: A: The coin-toss level has only one branch, H. From H, four branches lead to 1, 2, 3, and 4 for the number-pyramid roll. B: The coin-toss level branches to H and T. From H, two branches lead to 1 and 2; from T, two branches lead to 3 and 4. C: The coin-toss level branches to H and T. From H, four branches lead to 1, 1, 2, and 2; from T, four branches lead to 3, 3, 4, and 4. D: The coin-toss level branches to H and T. From each of H and T, four branches lead to 1, 2, 3, and 4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 through 4",
+          "H",
+          "T",
+          "1, 2, 3, and 4",
+          "1 and 2",
+          "3 and 4",
+          "1, 1, 2, and 2",
+          "3, 3, 4, and 4",
+          "A: The coin-toss level has only one branch, H. From H, four branches lead to 1, 2, 3, and 4 for the number-pyramid roll",
+          "B: The coin-toss level branches to H and T. From H, two branches lead to 1 and 2; from T, two branches lead to 3 and 4",
+          "C: The coin-toss level branches to H and T. From H, four branches lead to 1, 1, 2, and 2; from T, four branches lead to 3, 3, 4, and 4",
+          "D: The coin-toss level branches to H and T. From each of H and T, four branches lead to 1, 2, 3, and 4"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q11": {
+      "inputHash": "74997247d5fcf93d4247db2c8147c235e6cb964132635d4246c88e69ce42d744",
+      "description": {
+        "en": "Question 11. An owner of a small store knows that in the last week 54 customers paid with cash, 42 paid with a debit card, and 153 paid with a credit card. Based on the number of customers from last week, which fraction is closest to the probability that the next customer will pay with cash? Choices: A: 1/5. B: 1/4. C: 1/3. D: 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "54",
+          "42",
+          "153",
+          "1/5",
+          "1/4",
+          "1/3",
+          "1/2",
+          "A: 1/5",
+          "B: 1/4",
+          "C: 1/3",
+          "D: 1/2"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q12": {
+      "inputHash": "188af65ff54e84da360996b71c8b8c191bb9db4ecdf5a23ee6ed7d87d3f4e581",
+      "description": {
+        "en": "Question 12. Scientists determined that Antarctica's average winter temperature was −34.44°C. The difference between this temperature and Antarctica's highest recorded temperature was 49.44 degrees. What was Antarctica's highest recorded temperature? Choices: A: −83.88°C. B: −15°C. C: 15°C. D: 83.88°C."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−34.44°C",
+          "49.44",
+          "−83.88°C",
+          "−15°C",
+          "15°C",
+          "83.88°C",
+          "A: −83.88°C",
+          "B: −15°C",
+          "C: 15°C",
+          "D: 83.88°C"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q13": {
+      "inputHash": "ff85f73a47625b542dcb50e0a1df2896091a6566be153a5d6a734a53b9e09151",
+      "description": {
+        "en": "Question 13. The expression below was simplified using two properties of operations. The original expression is 5(11z + 29 + 6z). Step 1 is 5(11z + 6z + 29). Step 2 is 5(17z + 29). Step 3 is 85z + 145. Which properties were applied in Steps 1 and 3, respectively? Choices: A: commutative property, then distributive property. B: commutative property, then identity property. C: associative property, then distributive property. D: associative property, then commutative property."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5(11z + 29 + 6z)",
+          "5(11z + 6z + 29)",
+          "5(17z + 29)",
+          "85z + 145",
+          "Steps 1 and 3",
+          "A: commutative property, then distributive property",
+          "B: commutative property, then identity property",
+          "C: associative property, then distributive property",
+          "D: associative property, then commutative property",
+          "(11z + 29 + 6z)",
+          "(11z + 6z + 29)",
+          "(17z + 29)"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q14": {
+      "inputHash": "a2e1307d0d21df1ea6687ddd013393da6f75d589ce898a2173f56eff25c59e12",
+      "description": {
+        "en": "Question 14. For her cell phone plan, Heather pays $30 per month plus $0.05 per text. She wants to keep her bill under $60 per month. Which inequality represents the number of texts, t, Heather can send each month while staying within her budget? Choices: A: t < 600. B: t > 600. C: t < 1,800. D: t > 1,800."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$30",
+          "$0.05",
+          "$60",
+          "t",
+          "t < 600",
+          "t > 600",
+          "t < 1,800",
+          "t > 1,800",
+          "A: t < 600",
+          "B: t > 600",
+          "C: t < 1,800",
+          "D: t > 1,800"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q15": {
+      "inputHash": "debe3d93c0e6e335647b3d54cd86d10d67ac304640cbbadfc32667fb9a3a19d5",
+      "description": {
+        "en": "Question 15. Solve for x. The equation is 0.5x + 78.2 = 287. Choices: A: x = 104.4. B: x = 417.6. C: x = 495.8. D: x = 730.4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.5x + 78.2 = 287",
+          "x = 104.4",
+          "x = 417.6",
+          "x = 495.8",
+          "x = 730.4",
+          "A: x = 104.4",
+          "B: x = 417.6",
+          "C: x = 495.8",
+          "D: x = 730.4"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q16": {
+      "inputHash": "5f7f821735a585f4b030a8975874399fa42f368f0b34b5b4de87e8804bc245f5",
+      "description": {
+        "en": "Question 16. Katie bought 4 sweaters that each cost the same amount and 1 skirt that cost $20. The items she bought cost a total of $160 before tax was added. What was the cost of each sweater? Choices: A: $20. B: $35. C: $40. D: $45."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 sweaters",
+          "1 skirt",
+          "$20",
+          "$160",
+          "$35",
+          "$40",
+          "$45",
+          "A: $20",
+          "B: $35",
+          "C: $40",
+          "D: $45"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q17": {
+      "inputHash": "c342c8343badac273b3bca7f0c81816fb9104eb0ad99c361f4bc64c03cf81272",
+      "description": {
+        "en": "Question 17. Jocelyn was shopping at a farmers’ market. She observed the prices of cucumbers at several stands. Which sign shows a proportional relationship in the pricing of the cucumbers? Choices: A: Joe’s Stand: 5 cucumbers for $2.50; 10 cucumbers for $4.00; 15 cucumbers for $5.50; 20 cucumbers for $7.00. B: Steve’s Stand: 5 cucumbers for $2.50; 10 cucumbers for $4.50; 15 cucumbers for $6.50; 20 cucumbers for $8.50. C: Betty’s Stand: 5 cucumbers for $2.00; 10 cucumbers for $4.00; 15 cucumbers for $6.00; 20 cucumbers for $8.00. D: Lula’s Stand: 5 cucumbers for $1.50; 10 cucumbers for $3.00; 15 cucumbers for $6.00; 20 cucumbers for $12.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 cucumbers for $2.50",
+          "10 cucumbers for $4.00",
+          "15 cucumbers for $5.50",
+          "20 cucumbers for $7.00",
+          "10 cucumbers for $4.50",
+          "15 cucumbers for $6.50",
+          "20 cucumbers for $8.50",
+          "5 cucumbers for $2.00",
+          "15 cucumbers for $6.00",
+          "20 cucumbers for $8.00",
+          "5 cucumbers for $1.50",
+          "10 cucumbers for $3.00",
+          "20 cucumbers for $12.00",
+          "A: Joe’s Stand: 5 cucumbers for $2.50; 10 cucumbers for $4.00; 15 cucumbers for $5.50; 20 cucumbers for $7.00",
+          "B: Steve’s Stand: 5 cucumbers for $2.50; 10 cucumbers for $4.50; 15 cucumbers for $6.50; 20 cucumbers for $8.50",
+          "C: Betty’s Stand: 5 cucumbers for $2.00; 10 cucumbers for $4.00; 15 cucumbers for $6.00; 20 cucumbers for $8.00",
+          "D: Lula’s Stand: 5 cucumbers for $1.50; 10 cucumbers for $3.00; 15 cucumbers for $6.00; 20 cucumbers for $12.00"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q18": {
+      "inputHash": "5117bec7d72fd53f267a33248c5fcd6425761e370f37c84ac6394ad3162630f2",
+      "description": {
+        "en": "Question 18. Doug earns $10.50 per hour working at a restaurant. On Friday he spent 1 3/4 hours cleaning, 2 1/3 hours doing paperwork, and 1 5/12 hours serving customers. What were Doug’s earnings? Choices: A: $46.97. B: $47.25. C: $53.00. D: $57.75."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$10.50",
+          "1 3/4",
+          "2 1/3",
+          "1 5/12",
+          "$46.97",
+          "$47.25",
+          "$53.00",
+          "$57.75",
+          "A: $46.97",
+          "B: $47.25",
+          "C: $53.00",
+          "D: $57.75"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q19": {
+      "inputHash": "62644cbff9aad74bdda9f94f9b142cd7abcb29675a57c1c36e6e578bbf4f4fa6",
+      "description": {
+        "en": "Question 19. The test scores of the students in Mr. Duffy’s class are shown on a line plot titled “MR. DUFFY’S CLASS.” Its horizontal number line has arrows at both ends and labeled ticks at 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 60: 1 X; 65: 0 X; 70: 0 X; 75: 2 X; 80: 4 X; 85: 5 X; 90: 3 X; 95: 2 X; 100: 1 X. Most of the students in Ms. Guzman’s class scored higher than most of the students in Mr. Duffy’s class on the same test. Which line plot could represent the test scores of the students in Ms. Guzman’s class? Each choice is titled “MS. GUZMAN’S CLASS” and has a horizontal number line with arrows at both ends. Choices: A: Ticks are labeled 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 50: 1 X; 55: 0 X; 60: 0 X; 65: 0 X; 70: 0 X; 75: 2 X; 80: 4 X; 85: 5 X; 90: 3 X; 95: 2 X; 100: 1 X. B: Ticks are labeled 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 50: 0 X; 55: 1 X; 60: 0 X; 65: 2 X; 70: 4 X; 75: 5 X; 80: 3 X; 85: 2 X; 90: 1 X; 95: 0 X; 100: 0 X. C: Ticks are labeled 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 60: 1 X; 65: 0 X; 70: 0 X; 75: 2 X; 80: 3 X; 85: 5 X; 90: 4 X; 95: 3 X; 100: 0 X. D: Ticks are labeled 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 60: 0 X; 65: 1 X; 70: 0 X; 75: 0 X; 80: 2 X; 85: 3 X; 90: 5 X; 95: 4 X; 100: 3 X."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "60: 1 X",
+          "75: 2 X",
+          "80: 4 X",
+          "85: 5 X",
+          "90: 3 X",
+          "95: 2 X",
+          "100: 1 X",
+          "50: 1 X",
+          "55: 1 X",
+          "65: 2 X",
+          "70: 4 X",
+          "75: 5 X",
+          "80: 3 X",
+          "85: 2 X",
+          "90: 1 X",
+          "90: 4 X",
+          "95: 3 X",
+          "65: 1 X",
+          "80: 2 X",
+          "85: 3 X",
+          "90: 5 X",
+          "95: 4 X",
+          "100: 3 X",
+          "A: Ticks are labeled 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 50: 1 X; 55: 0 X; 60: 0 X; 65: 0 X; 70: 0 X; 75: 2 X; 80: 4 X; 85: 5 X; 90: 3 X; 95: 2 X; 100: 1 X",
+          "B: Ticks are labeled 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 50: 0 X; 55: 1 X; 60: 0 X; 65: 2 X; 70: 4 X; 75: 5 X; 80: 3 X; 85: 2 X; 90: 1 X; 95: 0 X; 100: 0 X",
+          "C: Ticks are labeled 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 60: 1 X; 65: 0 X; 70: 0 X; 75: 2 X; 80: 3 X; 85: 5 X; 90: 4 X; 95: 3 X; 100: 0 X",
+          "D: Ticks are labeled 60, 65, 70, 75, 80, 85, 90, 95, and 100. The numbers of X marks are 60: 0 X; 65: 1 X; 70: 0 X; 75: 0 X; 80: 2 X; 85: 3 X; 90: 5 X; 95: 4 X; 100: 3 X"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q20": {
+      "inputHash": "f12dc062bd57cc7324722e2e10c72d78586c2aac58ae1d144cb7b4c9b1425e8c",
+      "description": {
+        "en": "Question 20. A store sold 650 bicycles last year. This year the store sold 572 bicycles. What is the percent decrease in the number of bicycles sold from last year to this year? Choices: A: 12%. B: 14%. C: 78%. D: 88%."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "650",
+          "572",
+          "12%",
+          "14%",
+          "78%",
+          "88%",
+          "A: 12%",
+          "B: 14%",
+          "C: 78%",
+          "D: 88%"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q21": {
+      "inputHash": "da9efab14a9c8f299b40fa9bc569c2acf613c10281031eee95119f59e3259d8e",
+      "description": {
+        "en": "Question 21. Sammy drew a rectangle that was w inches wide. The expression 2(2w) + 2(w) represents the perimeter of the rectangle that Sammy drew. Which statement relates the perimeter to the width of the rectangle? Choices: A: The perimeter is 6 inches more than the width. B: The perimeter is 6 times the width. C: The perimeter is 2 inches more than the width. D: The perimeter is 2 times the width."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "w",
+          "2(2w) + 2(w)",
+          "6 inches more",
+          "6 times",
+          "2 inches more",
+          "2 times",
+          "A: The perimeter is 6 inches more than the width",
+          "B: The perimeter is 6 times the width",
+          "C: The perimeter is 2 inches more than the width",
+          "D: The perimeter is 2 times the width",
+          "(2w)"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q22": {
+      "inputHash": "dae21d4faa2a7ea4ab3f9828bc7a11b457620f5e32a10543c22f4670529f6bf5",
+      "description": {
+        "en": "Question 22. Sally has a discount card that reduces the price of her grocery bill in a certain grocery store by 5%. If c represents the cost of Sally’s groceries, which expression represents Sally’s grocery bill? Choices: A: 0.05c. B: 0.95c. C: c − 0.05. D: c + 0.95."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5%",
+          "c",
+          "0.05c",
+          "0.95c",
+          "c − 0.05",
+          "c + 0.95",
+          "A: 0.05c",
+          "B: 0.95c",
+          "C: c − 0.05",
+          "D: c + 0.95"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q23": {
+      "inputHash": "373bdc7a61fd82cc2174157c9ff106bec521464dfeb146e33b1f494401032d53",
+      "description": {
+        "en": "Question 23. The cost of oranges in a grocery store is directly proportional to the number of oranges purchased. Jerri paid $2.52 for 6 oranges. If p represents the cost, in dollars, and n represents the number of oranges purchased, which equation best represents this relationship? Choices: A: p = 0.42n. B: p = 2.52n. C: p = 6n. D: p = 15.12n."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$2.52",
+          "6 oranges",
+          "p",
+          "n",
+          "p = 0.42n",
+          "p = 2.52n",
+          "p = 6n",
+          "p = 15.12n",
+          "A: p = 0.42n",
+          "B: p = 2.52n",
+          "C: p = 6n",
+          "D: p = 15.12n"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q24": {
+      "inputHash": "02259bb7291dc62925ff5ca984cd2a89c1f357489387c5aadc1e542d82f50f09",
+      "description": {
+        "en": "Question 24. The scale of a model train is 1 inch to 13.5 feet. One of the cars of the model train is 5 inches long. What is the length, in feet, of the actual train car? Choices: A: 67.5. B: 32.4. C: 14.5. D: 2.7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 inch",
+          "13.5 feet",
+          "5 inches",
+          "67.5",
+          "32.4",
+          "14.5",
+          "2.7",
+          "A: 67.5",
+          "B: 32.4",
+          "C: 14.5",
+          "D: 2.7"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q25": {
+      "inputHash": "6ce6cfe4e46b6aad0516351ab8131b1e232d5618602f8a53c9ac2b149a200657",
+      "description": {
+        "en": "Question 25. Charis invested $140. She earned a simple interest of 3% per year on the initial investment. If no money was added or removed from the investment, what was the amount of interest Charis received at the end of two years? Choices: A: $4.20 B: $6.00 C: $8.40 D: $12.60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$140",
+          "3%",
+          "$4.20",
+          "$6.00",
+          "$8.40",
+          "$12.60",
+          "A: $4.20",
+          "B: $6.00",
+          "C: $8.40",
+          "D: $12.60"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q26": {
+      "inputHash": "f1112c400e216ba2f35a3dc6d8a9b1ab5efc320fa675767846c0b0d74fd23c9b",
+      "description": {
+        "en": "Question 26. Which expression is equivalent to 4.8 + 2.2w − 1.4w + 2.4? Choices: A: 0.4(6 + 2w) B: 0.8(9 + w) C: 1.6(3 + 2w) D: 3.6(2 + w)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4.8 + 2.2w − 1.4w + 2.4",
+          "0.4(6 + 2w)",
+          "0.8(9 + w)",
+          "1.6(3 + 2w)",
+          "3.6(2 + w)",
+          "A: 0.4(6 + 2w)",
+          "B: 0.8(9 + w)",
+          "C: 1.6(3 + 2w)",
+          "D: 3.6(2 + w)",
+          "(6 + 2w)",
+          "(9 + w)",
+          "(3 + 2w)",
+          "(2 + w)"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q27": {
+      "inputHash": "8f7344bc483f7dadf16084902b8ba102c8fb4b96d789dae987e748c27aa2533e",
+      "description": {
+        "en": "Question 27. A storeowner made a list of the number of greeting cards sold last month. The store sold 167 thank-you cards, 285 birthday cards, and 56 blank cards. Based on these data, which number is closest to the probability that the next customer will buy a blank card? Choices: A: 0.11 B: 0.33 C: 0.56 D: 0.89"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "167",
+          "285",
+          "56",
+          "0.11",
+          "0.33",
+          "0.56",
+          "0.89",
+          "A: 0.11",
+          "B: 0.33",
+          "C: 0.56",
+          "D: 0.89"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q28": {
+      "inputHash": "614b20e589627b63858cb641a0e1f2584499bbc40bf5e03b6de8d0b2ceb80d2b",
+      "description": {
+        "en": "Question 28. Bananas cost $0.45 per pound. What equation is used to find C, the total cost of p pounds of bananas? Choices: A: C = 0.45p B: C = p + 0.45 C: 0.45C = p D: 0.45 + C = p"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$0.45",
+          "C",
+          "p",
+          "C = 0.45p",
+          "C = p + 0.45",
+          "0.45C = p",
+          "0.45 + C = p",
+          "A: C = 0.45p",
+          "B: C = p + 0.45",
+          "C: 0.45C = p",
+          "D: 0.45 + C = p"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q29": {
+      "inputHash": "ff7378a9a23dabd660e8ad16c83cd6f587e5075a9a3274110bff28b480ae83d1",
+      "description": {
+        "en": "Question 29. A store purchased a DVD for $12.00 and sold it to a customer for 50% more than the purchase price. The customer was charged a 7% tax when the DVD was sold. What was the customer’s total cost for the DVD? Choices: A: $12.84 B: $18.42 C: $18.84 D: $19.26"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$12.00",
+          "50%",
+          "7%",
+          "$12.84",
+          "$18.42",
+          "$18.84",
+          "$19.26",
+          "A: $12.84",
+          "B: $18.42",
+          "C: $18.84",
+          "D: $19.26"
+        ]
+      }
+    },
+    "nysed-2014-g7-mc-q30": {
+      "inputHash": "4741baa3da73f5559262a2f88f15d07050cfca7d124aab3ac14a88b9a130ce17",
+      "description": {
+        "en": "Question 30. To select a new school mascot, 20 randomly selected students in each grade were asked to choose between the two finalists: tiger and eagle. The results are given in a table titled “PREFERRED MASCOT.” The columns are Grade, Tiger, and Eagle. Grade 5: Tiger, 14; Eagle, 6. Grade 6: Tiger, 13; Eagle, 7. Grade 7: Tiger, 8; Eagle, 12. Grade 8: Tiger, 5; Eagle, 15. Which statement is best supported by the results? Choices: A: The preferred mascot is a tiger. B: The preferred mascot is an eagle. C: Fifth and sixth grade students at the school preferred an eagle mascot. D: Seventh and eighth grade students at the school preferred an eagle mascot."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20",
+          "Grade 5: Tiger, 14; Eagle, 6",
+          "Grade 6: Tiger, 13; Eagle, 7",
+          "Grade 7: Tiger, 8; Eagle, 12",
+          "Grade 8: Tiger, 5; Eagle, 15",
+          "A: The preferred mascot is a tiger",
+          "B: The preferred mascot is an eagle",
+          "C: Fifth and sixth grade students at the school preferred an eagle mascot",
+          "D: Seventh and eighth grade students at the school preferred an eagle mascot"
+        ]
+      }
+    }
+  }
+}

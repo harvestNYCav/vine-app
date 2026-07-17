@@ -1,0 +1,1112 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2026-grade-6-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2026-g6-mc-q1": {
+      "inputHash": "347e863afda60b82e6575e46923d3d0bbc22109d3301f62b8ac7b17f14a1e3f6",
+      "description": {
+        "en": "Question 1. It takes approximately 2 seconds for sound to travel 686 meters through air. Based on this rate, what is the speed of sound in meters per second? Choices: A: 343 B: 684 C: 688 D: 1,372",
+        "es": "Pregunta 1. El sonido tarda aproximadamente 2 segundos en viajar 686 metros a través del aire. Según esta tasa, ¿cuál es la velocidad del sonido en metros por segundo? Opciones: A: 343 B: 684 C: 688 D: 1,372"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 seconds",
+          "686 meters",
+          "meters per second",
+          "343",
+          "684",
+          "688",
+          "1,372",
+          "A: 343",
+          "B: 684",
+          "C: 688",
+          "D: 1,372"
+        ],
+        "es": [
+          "2 segundos",
+          "686 metros",
+          "343",
+          "684",
+          "688",
+          "1,372",
+          "A: 343",
+          "B: 684",
+          "C: 688",
+          "D: 1,372"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q2": {
+      "inputHash": "2ae859b937b9f552ba0a0d55ac0159add437f5ee39b2c78de31a07f68224c52a",
+      "description": {
+        "en": "Question 2. The elevations, in meters, of three cities as measured from sea level are marked on a horizontal number line. The line has arrows in both directions and integer tick marks from −5 through 5. City A is plotted at −5, City B is plotted at −2, and City C is plotted at 2. The axis is labeled “Elevation (meters).” Based on the number line, which statement is true? Choices: A: City A and City B are both above sea level. B: City B is at sea level and City C is above sea level. C: City A is above sea level and City C is below sea level. D: City B is below sea level and City C is above sea level.",
+        "es": "Pregunta 2. Las elevaciones, en metros, de tres ciudades respecto del nivel del mar están marcadas en una recta numérica horizontal con flechas en ambos extremos. La recta, titulada «Elevación (en metros)», tiene marcas en cada entero desde −5 hasta 5. La Ciudad A está representada por un punto cerrado en −5; la Ciudad B, por un punto cerrado en −2; y la Ciudad C, por un punto cerrado en 2. Según la recta numérica, ¿qué afirmación es verdadera? Opciones: A: La Ciudad A y la Ciudad B están por encima del nivel del mar. B: La Ciudad B está al nivel de mar y la Ciudad C está por encima del nivel del mar. C: La Ciudad A está por encima del nivel del mar y la Ciudad C está por debajo del nivel del mar. D: La Ciudad B está por debajo del nivel del mar y la Ciudad C está por encima del nivel del mar."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−5",
+          "−2",
+          "2",
+          "5",
+          "City A",
+          "City B",
+          "City C",
+          "Elevation (meters)",
+          "A: City A and City B are both above sea level",
+          "B: City B is at sea level and City C is above sea level",
+          "C: City A is above sea level and City C is below sea level",
+          "D: City B is below sea level and City C is above sea level"
+        ],
+        "es": [
+          "−5",
+          "−2",
+          "2",
+          "5",
+          "Ciudad A",
+          "Ciudad B",
+          "Ciudad C",
+          "A: La Ciudad A y la Ciudad B están por encima del nivel del mar",
+          "B: La Ciudad B está al nivel de mar y la Ciudad C está por encima del nivel del mar",
+          "C: La Ciudad A está por encima del nivel del mar y la Ciudad C está por debajo del nivel del mar",
+          "D: La Ciudad B está por debajo del nivel del mar y la Ciudad C está por encima del nivel del mar"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q3": {
+      "inputHash": "55c09378b01bbe9da576fd5672852b32eedca25ccb98e8ff9fcc7670f9544c02",
+      "description": {
+        "en": "Question 3. Lacy needs to buy 72 ounces of beef for a recipe. Which expression can be used to determine how many pounds of beef Lacy needs for the recipe? Choices: A: 72 ÷ 16 B: 72 × 16 C: 72 − 16 D: 72 + 16",
+        "es": "Pregunta 3. Lacy necesita comprar 72 onzas de carne de res para una receta. ¿Qué expresión se puede usar para determinar cuántas libras de carne de res necesita Lacy para la receta? Opciones: A: 72 ÷ 16 B: 72 × 16 C: 72 − 16 D: 72 + 16"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "72 ounces",
+          "72 ÷ 16",
+          "72 × 16",
+          "72 − 16",
+          "72 + 16",
+          "A: 72 ÷ 16",
+          "B: 72 × 16",
+          "C: 72 − 16",
+          "D: 72 + 16"
+        ],
+        "es": [
+          "72 onzas",
+          "72 ÷ 16",
+          "72 × 16",
+          "72 − 16",
+          "72 + 16",
+          "A: 72 ÷ 16",
+          "B: 72 × 16",
+          "C: 72 − 16",
+          "D: 72 + 16"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q4": {
+      "inputHash": "f7f05d6847fdab85cab01af462d85e3e284cac65dacb0a610a6c99e661a31260",
+      "description": {
+        "en": "Question 4. An expression is given: 2(12 − x) + y². What is the value of the expression when x = 7 and y = 3? Choices: A: 16 B: 19 C: 23 D: 26",
+        "es": "Pregunta 4. A continuación, se muestra una expresión: 2(12 − x) + y². ¿Cuál es el valor de la expresión cuando x = 7 y y = 3? Opciones: A: 16 B: 19 C: 23 D: 26"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2(12 − x) + y²",
+          "x = 7",
+          "y = 3",
+          "16",
+          "19",
+          "23",
+          "26",
+          "A: 16",
+          "B: 19",
+          "C: 23",
+          "D: 26",
+          "(12 − x)"
+        ],
+        "es": [
+          "2(12 − x) + y²",
+          "x = 7",
+          "y = 3",
+          "16",
+          "19",
+          "23",
+          "26",
+          "A: 16",
+          "B: 19",
+          "C: 23",
+          "D: 26",
+          "(12 − x)"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q5": {
+      "inputHash": "b98468b3ebb10a622e93bf414450e524ca41fd57b302be9f51af7bbfd6fb6484",
+      "description": {
+        "en": "Question 5. A rectangle is drawn on a coordinate plane with vertices located at A(−2, 3), B(4, 3), C(4, −7), and D(−2, −7). What is the length, in units, of side BC? Choices: A: 6 B: 8 C: 10 D: 14",
+        "es": "Pregunta 5. Se dibuja un rectángulo en un plano de coordenadas con vértices ubicados en A(−2, 3), B(4, 3), C(4, −7) y D(−2, −7). ¿Cuál es la longitud, en unidades, del lado BC? Opciones: A: 6 B: 8 C: 10 D: 14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(−2, 3)",
+          "B(4, 3)",
+          "C(4, −7)",
+          "D(−2, −7)",
+          "BC",
+          "6",
+          "8",
+          "10",
+          "14",
+          "A: 6",
+          "B: 8",
+          "C: 10",
+          "D: 14",
+          "(−2, 3)",
+          "(4, 3)",
+          "(4, −7)",
+          "(−2, −7)"
+        ],
+        "es": [
+          "A(−2, 3)",
+          "B(4, 3)",
+          "C(4, −7)",
+          "D(−2, −7)",
+          "BC",
+          "6",
+          "8",
+          "10",
+          "14",
+          "A: 6",
+          "B: 8",
+          "C: 10",
+          "D: 14",
+          "(−2, 3)",
+          "(4, 3)",
+          "(4, −7)",
+          "(−2, −7)"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q6": {
+      "inputHash": "e631c6138d5f01c1d500fff8487b83f54ab8b35bbf3215c3967be8553a8bb449",
+      "description": {
+        "en": "Question 6. Which expression represents the perimeter, in units, of an L-shaped figure? Starting at the upper-left corner and moving clockwise, the six boundary segments are: a top horizontal segment of length 2; a vertical segment downward of length x; a horizontal segment right of length 5; a right vertical segment downward of length 2; a bottom horizontal segment left of length x + 3; and a left vertical segment upward of length 6, returning to the starting point. Choices: A: x + 15 B: x + 18 C: 2x + 15 D: 2x + 18",
+        "es": "Pregunta 6. ¿Qué expresión representa el perímetro, en unidades, de la siguiente figura? La figura es un polígono en forma de L con seis lados y ángulos rectos. Recorriéndolo desde la esquina superior izquierda en sentido horario: el lado horizontal superior mide 2; el lado vertical interior desciende y mide x; el lado horizontal interior se extiende 5 unidades hacia la derecha; el lado vertical derecho desciende y mide 2; el lado horizontal inferior se extiende hacia la izquierda y mide x + 3; y el lado vertical izquierdo asciende y mide 6 hasta regresar al punto inicial. Opciones: A: x + 15 B: x + 18 C: 2x + 15 D: 2x + 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2",
+          "x",
+          "5",
+          "x + 3",
+          "6",
+          "x + 15",
+          "x + 18",
+          "2x + 15",
+          "2x + 18",
+          "A: x + 15",
+          "B: x + 18",
+          "C: 2x + 15",
+          "D: 2x + 18"
+        ],
+        "es": [
+          "2",
+          "x",
+          "5",
+          "x + 3",
+          "6",
+          "x + 15",
+          "x + 18",
+          "2x + 15",
+          "2x + 18",
+          "A: x + 15",
+          "B: x + 18",
+          "C: 2x + 15",
+          "D: 2x + 18"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q8": {
+      "inputHash": "4dec13bb4de67f63ef78eb5d3db1afcefb4296ee5fb87fc585be9540993ba31f",
+      "description": {
+        "en": "Question 8. Four points are plotted on a horizontal number line with arrows in both directions and integer tick marks from −5 through 5. Point P is plotted halfway between −5 and −4, at −4 1/2. Point Q is plotted halfway between −4 and −3, at −3 1/2. Point R is plotted halfway between 3 and 4, at 3 1/2. Point S is plotted halfway between 4 and 5, at 4 1/2. Which point represents the opposite of 4 1/2? Choices: A: P B: Q C: R D: S",
+        "es": "Pregunta 8. En la siguiente recta numérica, se marcaron cuatro puntos. La recta es horizontal, tiene flechas en ambos extremos y marcas en cada entero desde −5 hasta 5. El punto P está a la mitad entre −5 y −4, por lo que representa −4 1/2; Q está a la mitad entre −4 y −3, por lo que representa −3 1/2; R está a la mitad entre 3 y 4, por lo que representa 3 1/2; y S está a la mitad entre 4 y 5, por lo que representa 4 1/2. ¿Qué punto representa el opuesto de 4 1/2? Opciones: A: P B: Q C: R D: S"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−5",
+          "−4",
+          "−4 1/2",
+          "−3",
+          "−3 1/2",
+          "3",
+          "3 1/2",
+          "4",
+          "4 1/2",
+          "5",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "A: P",
+          "B: Q",
+          "C: R",
+          "D: S"
+        ],
+        "es": [
+          "−5",
+          "−4",
+          "−3",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "−4 1/2",
+          "−3 1/2",
+          "3 1/2",
+          "4 1/2",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "A: P",
+          "B: Q",
+          "C: R",
+          "D: S"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q9": {
+      "inputHash": "4d53d03c83b06c694eda8908dabe94877b912309b02a28ba27ab39e57e31f64d",
+      "description": {
+        "en": "Question 9. A teacher has 2 1/2 vanilla cakes. A serving size is 1/12 of a cake. How many total servings of vanilla cake does the teacher have? Choices: A: 12 B: 24 C: 30 D: 60",
+        "es": "Pregunta 9. Una maestra tiene 2 1/2 pasteles de vainilla. El tamaño de una porción es 1/12 de un pastel. ¿Cuántas porciones de pastel de vainilla tiene la maestra en total? Opciones: A: 12 B: 24 C: 30 D: 60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2 1/2",
+          "1/12",
+          "12",
+          "24",
+          "30",
+          "60",
+          "A: 12",
+          "B: 24",
+          "C: 30",
+          "D: 60"
+        ],
+        "es": [
+          "2 1/2",
+          "1/12",
+          "12",
+          "24",
+          "30",
+          "60",
+          "A: 12",
+          "B: 24",
+          "C: 30",
+          "D: 60"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q10": {
+      "inputHash": "1e95a6e1ffb17f5c11fb76d9afd8ac2df6a547708b35c11a34e7be3dfed2dc46",
+      "description": {
+        "en": "Question 10. A gardener is filling a pool with water from a garden hose at a constant rate. He plots points showing the number of gallons of water in the pool at different times on a coordinate plane titled “WATER IN THE POOL.” The horizontal x-axis is labeled “Time (minutes)” and is marked from 0 through 7 in increments of 1. The vertical y-axis is labeled “Amount of Water (gallons)” and is marked from 0 through 90 in increments of 9. Three points are plotted at (2, 18), (4, 36), and (6, 54). Based on the graph, what is the total amount of water, in gallons, in the pool at 3 minutes? Choices: A: 6 B: 9 C: 18 D: 27",
+        "es": "Pregunta 10. Un jardinero está llenando una piscina con una manguera de jardín a una tasa constante. Marca puntos que muestran la cantidad de galones de agua que tiene la piscina en diferentes momentos en un plano de coordenadas titulado «AGUA EN LA PISCINA». El eje horizontal, x, representa el tiempo en minutos y está marcado de 0 a 7 en incrementos de 1. El eje vertical, y, representa la cantidad de agua en galones y está marcado de 0 a 90 en incrementos de 9. Hay puntos en las coordenadas (2, 18), (4, 36) y (6, 54). Según el gráfico, ¿cuál es la cantidad total de agua, en galones, que tiene la piscina a los 3 minutos? Opciones: A: 6 B: 9 C: 18 D: 27"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 through 7",
+          "1",
+          "0 through 90",
+          "9",
+          "(2, 18)",
+          "(4, 36)",
+          "(6, 54)",
+          "3 minutes",
+          "A: 6",
+          "B: 9",
+          "C: 18",
+          "D: 27"
+        ],
+        "es": [
+          "0 a 7",
+          "1",
+          "0 a 90",
+          "9",
+          "(2, 18)",
+          "(4, 36)",
+          "(6, 54)",
+          "3 minutos",
+          "6",
+          "18",
+          "27",
+          "A: 6",
+          "B: 9",
+          "C: 18",
+          "D: 27"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q11": {
+      "inputHash": "2a601098e670fed15639aef2072bec9f444e201ee8d1bba573e10f0d806cf049",
+      "description": {
+        "en": "Question 11. An art teacher orders boxes to organize her supplies. Each box is a right rectangular prism with a length of 3 2/3 inches, a width of 3 1/2 inches, and a height of 6 inches. What is the volume, in cubic inches, of each box? Choices: A: 54 1/3 B: 54 3/5 C: 77 D: 96",
+        "es": "Pregunta 11. Una maestra de arte pide cajas para organizar sus materiales. Cada caja es un prisma rectangular recto con una longitud de 3 2/3 pulgadas, un ancho de 3 1/2 pulgadas y un alto de 6 pulgadas. ¿Cuál es el volumen, en pulgadas cúbicas, de cada caja? Opciones: A: 54 1/3 B: 54 3/5 C: 77 D: 96"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 2/3 inches",
+          "3 1/2 inches",
+          "6 inches",
+          "A: 54 1/3",
+          "B: 54 3/5",
+          "C: 77",
+          "D: 96",
+          "3 2/3",
+          "3 1/2",
+          "54 1/3",
+          "54 3/5"
+        ],
+        "es": [
+          "3 2/3 pulgadas",
+          "3 1/2 pulgadas",
+          "6 pulgadas",
+          "54 1/3",
+          "54 3/5",
+          "77",
+          "96",
+          "A: 54 1/3",
+          "B: 54 3/5",
+          "C: 77",
+          "D: 96",
+          "3 2/3",
+          "3 1/2"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q12": {
+      "inputHash": "4713644fa7c8c125d994c46f5fbb4bdc3f871cfac2994480aacea4fcaa0d7ba4",
+      "description": {
+        "en": "Question 12. A flower garden has three different types of flowers. There are 12 daisies, 20 roses, and 13 tulips. What is the ratio of the number of roses to the total number of flowers? Choices: A: 20 : 25 B: 20 : 45 C: 25 : 20 D: 45 : 20",
+        "es": "Pregunta 12. Un jardín tiene tres tipos diferentes de flores. Hay 12 margaritas, 20 rosas y 13 tulipanes. ¿Cuál es la proporción de rosas respecto de la cantidad total de flores? Opciones: A: 20 : 25 B: 20 : 45 C: 25 : 20 D: 45 : 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 daisies",
+          "20 roses",
+          "13 tulips",
+          "A: 20 : 25",
+          "B: 20 : 45",
+          "C: 25 : 20",
+          "D: 45 : 20"
+        ],
+        "es": [
+          "12 margaritas",
+          "20 rosas",
+          "13 tulipanes",
+          "20 : 25",
+          "20 : 45",
+          "25 : 20",
+          "45 : 20",
+          "A: 20 : 25",
+          "B: 20 : 45",
+          "C: 25 : 20",
+          "D: 45 : 20"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q14": {
+      "inputHash": "9af1b2b0585488f4e21e2c6ff55c1aa702914e8ae3c5115dcb61d0414a2305a0",
+      "description": {
+        "en": "Question 14. A pizza shop charges $15.00 for each large pizza. There is a one-time charge of $5.00 to deliver any number of pizzas. Which equation could be used to determine the total charge, c, in dollars, of a delivery order of p large pizzas? Choices: A: c = 15 + 5p B: c = 15p + 5 C: c = 15 + 5 + p D: c = 15 × 5 + p",
+        "es": "Pregunta 14. Una pizzería cobra $15.00 por cada pizza grande. Cobra un cargo único de $5.00 por la entrega de cualquier cantidad de pizzas. ¿Qué ecuación se podría usar para determinar el cargo total, c, en dólares, de un pedido de entrega de p pizzas grandes? Opciones: A: c = 15 + 5p B: c = 15p + 5 C: c = 15 + 5 + p D: c = 15 × 5 + p"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$15.00",
+          "$5.00",
+          "c",
+          "p",
+          "A: c = 15 + 5p",
+          "B: c = 15p + 5",
+          "C: c = 15 + 5 + p",
+          "D: c = 15 × 5 + p"
+        ],
+        "es": [
+          "$15.00",
+          "$5.00",
+          "c",
+          "p",
+          "c = 15 + 5p",
+          "c = 15p + 5",
+          "c = 15 + 5 + p",
+          "c = 15 × 5 + p",
+          "A: c = 15 + 5p",
+          "B: c = 15p + 5",
+          "C: c = 15 + 5 + p",
+          "D: c = 15 × 5 + p"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q15": {
+      "inputHash": "71a98d4aa32f6f32cd4dd0d92aa14097807cdb83c35c47542196220ff237d988",
+      "description": {
+        "en": "Question 15. Marty needs to measure 3/4 cup of cooking oil, but he can only find a tablespoon. He knows that 1 cup is the same as 16 tablespoons. How many tablespoons of oil will Marty need to measure 3/4 cup of oil? Choices: A: 4 B: 8 C: 12 D: 20",
+        "es": "Pregunta 15. Marty debe medir 3/4 de taza de aceite de cocina, pero solo encuentra una cuchara. Sabe que 1 taza es igual a 16 cucharadas. ¿Cuántas cucharadas de aceite necesitará Marty para medir 3/4 de taza de aceite? Opciones: A: 4 B: 8 C: 12 D: 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/4 cup",
+          "1 cup",
+          "16 tablespoons",
+          "A: 4",
+          "B: 8",
+          "C: 12",
+          "D: 20",
+          "3/4"
+        ],
+        "es": [
+          "3/4 de taza",
+          "1 taza",
+          "16 cucharadas",
+          "4",
+          "8",
+          "12",
+          "20",
+          "A: 4",
+          "B: 8",
+          "C: 12",
+          "D: 20",
+          "3/4"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q16": {
+      "inputHash": "ecb6e0b81df103d4b012e557697138925acd5bb9b06e93ac0250cbe3792a701a",
+      "description": {
+        "en": "Question 16. A net of a right triangular prism consists of three rectangles joined side by side in one horizontal row. All three rectangles have a height of 6 ft. Their widths, from left to right, are 10 ft, 12 ft, and 10 ft. Two congruent triangles are attached to the 12-ft edges of the middle rectangle: one above it and one below it. Each triangle has a base of 12 ft. A dashed perpendicular altitude inside the upper triangle extends from its top vertex to its 12-ft base, is labeled 8 ft, and has a right-angle marker where it meets the base. What is the surface area, in square feet, of the triangular prism? Choices: A: 240 B: 288 C: 336 D: 384",
+        "es": "Pregunta 16. A continuación, se muestra el desarrollo de un prisma triangular recto. El desarrollo contiene tres rectángulos consecutivos alineados horizontalmente, todos con una altura de 6 pies. Sus anchos, de izquierda a derecha, son 10 pies, 12 pies y 10 pies. Dos triángulos congruentes están unidos a los lados horizontal superior e inferior del rectángulo central de 12 pies por 6 pies. Cada triángulo tiene una base de 12 pies y una altura perpendicular de 8 pies; la altura está representada por un segmento punteado desde el vértice hasta la base, con un símbolo de ángulo recto en su intersección con la base. Los otros dos lados de cada base triangular corresponden a los anchos de 10 pies de los rectángulos laterales. ¿Cuál es el área de superficie, en pies cuadrados, del prisma triangular? Opciones: A: 240 B: 288 C: 336 D: 384"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 ft",
+          "10 ft, 12 ft, and 10 ft",
+          "12-ft edges",
+          "12 ft",
+          "8 ft",
+          "A: 240",
+          "B: 288",
+          "C: 336",
+          "D: 384"
+        ],
+        "es": [
+          "6 pies",
+          "10 pies",
+          "12 pies",
+          "12 pies por 6 pies",
+          "8 pies",
+          "240",
+          "288",
+          "336",
+          "384",
+          "A: 240",
+          "B: 288",
+          "C: 336",
+          "D: 384"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q17": {
+      "inputHash": "11ed11210cb91dee758d94959e586695e0dae61ba8b6b3b3d2bc0e7a8785e436",
+      "description": {
+        "en": "Question 17. A student has both basketball practice and choir practice today. Practices can occur any day of the week and follow these schedules: basketball practice: every 6 days; choir practice: every 8 days. What is the fewest number of days until the student has both basketball and choir practice on the same day again? Choices: A: 14 B: 24 C: 36 D: 48",
+        "es": "Pregunta 17. Un alumno tiene práctica de baloncesto y ensayo de coro hoy. Estas actividades pueden suceder cualquier día de la semana y se ajustan a la siguiente programación: práctica de baloncesto, cada 6 días; ensayo de coro, cada 8 días. ¿Cuál es el menor número de días hasta que el alumno tenga baloncesto y coro el mismo día nuevamente? Opciones: A: 14 B: 24 C: 36 D: 48"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "every 6 days",
+          "every 8 days",
+          "A: 14",
+          "B: 24",
+          "C: 36",
+          "D: 48"
+        ],
+        "es": [
+          "cada 6 días",
+          "cada 8 días",
+          "14",
+          "24",
+          "36",
+          "48",
+          "A: 14",
+          "B: 24",
+          "C: 36",
+          "D: 48"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q19": {
+      "inputHash": "fbff0e0f978fb53a20c292fcde5ce9672f6717fcf3a797746034e32c27eed438",
+      "description": {
+        "en": "Question 19. Which expression is equivalent to 5(6m + 3) + 4m? Choices: A: 37m B: 49m C: 34m + 3 D: 34m + 15",
+        "es": "Pregunta 19. ¿Qué expresión es equivalente a 5(6m + 3) + 4m? Opciones: A: 37m B: 49m C: 34m + 3 D: 34m + 15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5(6m + 3) + 4m",
+          "A: 37m",
+          "B: 49m",
+          "C: 34m + 3",
+          "D: 34m + 15",
+          "(6m + 3)"
+        ],
+        "es": [
+          "5(6m + 3) + 4m",
+          "37m",
+          "49m",
+          "34m + 3",
+          "34m + 15",
+          "A: 37m",
+          "B: 49m",
+          "C: 34m + 3",
+          "D: 34m + 15",
+          "(6m + 3)"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q20": {
+      "inputHash": "2a41992c809dd9c53be61ac1a498da6fab6b1465c33ccf2fbdd9793569ef73c8",
+      "description": {
+        "en": "Question 20. Which statement is true for the values of −15 and −5? Choices: A: −5 < −15 and |−5| < |−15|. B: −5 > −15 and |−5| > |−15|. C: −15 < −5 and |−15| > |−5|. D: −15 > −5 and |−15| < |−5|.",
+        "es": "Pregunta 20. ¿Qué afirmación es verdadera para los valores de −15 y −5? Opciones: A: −5 < −15 y |−5| < |−15| B: −5 > −15 y |−5| > |−15| C: −15 < −5 y |−15| > |−5| D: −15 > −5 y |−15| < |−5|"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−15",
+          "−5",
+          "−5 < −15",
+          "|−5| < |−15|",
+          "−5 > −15",
+          "|−5| > |−15|",
+          "−15 < −5",
+          "|−15| > |−5|",
+          "−15 > −5",
+          "|−15| < |−5|",
+          "A: −5 < −15 and |−5| < |−15|",
+          "B: −5 > −15 and |−5| > |−15|",
+          "C: −15 < −5 and |−15| > |−5|",
+          "D: −15 > −5 and |−15| < |−5|"
+        ],
+        "es": [
+          "−15",
+          "−5",
+          "−5 < −15",
+          "|−5| < |−15|",
+          "−5 > −15",
+          "|−5| > |−15|",
+          "−15 < −5",
+          "|−15| > |−5|",
+          "−15 > −5",
+          "|−15| < |−5|",
+          "A: −5 < −15 y |−5| < |−15|",
+          "B: −5 > −15 y |−5| > |−15|",
+          "C: −15 < −5 y |−15| > |−5|",
+          "D: −15 > −5 y |−15| < |−5|"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q21": {
+      "inputHash": "56f3f09609d41439d58ee95d231ad6b2ac120a4034683e4cb5fc09b7c9d9b85f",
+      "description": {
+        "en": "Question 21. Tina makes 6 paper decorations in 39 minutes. At this rate, how many minutes will it take Tina to make 14 paper decorations? Choices: A: 47. B: 59. C: 84. D: 91.",
+        "es": "Pregunta 21. Tina hace 6 decoraciones de papel en 39 minutos. A esta tasa, ¿cuántos minutos le lleva a Tina hacer 14 decoraciones de papel? Opciones: A: 47 B: 59 C: 84 D: 91"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "39",
+          "14",
+          "47",
+          "59",
+          "84",
+          "91",
+          "A: 47",
+          "B: 59",
+          "C: 84",
+          "D: 91"
+        ],
+        "es": [
+          "6",
+          "39",
+          "14",
+          "47",
+          "59",
+          "84",
+          "91",
+          "A: 47",
+          "B: 59",
+          "C: 84",
+          "D: 91"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q22": {
+      "inputHash": "578415cfd11a686fb924f061a6c33848b4eed9044b2154e27af46b46c11d1e0f",
+      "description": {
+        "en": "Question 22. A model is built to represent a perfect cube using unit cubes. The model has 5 layers. Each layer consists of 5 rows of 5 unit cubes. What perfect cube is represented by the model? Choices: A: 125. B: 25. C: 15. D: 10.",
+        "es": "Pregunta 22. Se construye un modelo para representar un cubo perfecto usando cubos unitarios. El modelo tiene 5 capas. Cada capa está formada por 5 filas de 5 cubos unitarios. ¿Qué cubo perfecto se representa con el modelo? Opciones: A: 125 B: 25 C: 15 D: 10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "125",
+          "25",
+          "15",
+          "10",
+          "A: 125",
+          "B: 25",
+          "C: 15",
+          "D: 10"
+        ],
+        "es": [
+          "5 capas",
+          "5 filas",
+          "5 cubos unitarios",
+          "125",
+          "25",
+          "15",
+          "10",
+          "A: 125",
+          "B: 25",
+          "C: 15",
+          "D: 10"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q23": {
+      "inputHash": "34b7c87dfd7f60f199e0965e19de7e674b967b16804c3382f13e32bd78e4f4f8",
+      "description": {
+        "en": "Question 23. At an amusement park, a rider must be at least 48 inches tall to ride a roller coaster. Which number line represents how tall, in inches, a rider must be to ride the roller coaster? Each choice is a number line labeled at every integer from 45 through 55, with arrows at both ends. Choices: A: A closed point at 48 with a bold ray extending to the right. B: An open point at 48 with a bold ray extending to the right. C: A closed point at 48 with a bold ray extending to the left. D: An open point at 48 with a bold ray extending to the left.",
+        "es": "Pregunta 23. En un parque de diversiones, la persona que suba a la montaña rusa debe medir al menos 48 pulgadas de altura. ¿Cuál de las rectas numéricas representa la altura, en pulgadas, que debe tener una persona para subir a la montaña rusa? Cada recta está marcada en los números enteros de 45 a 55 y tiene flechas en ambos extremos. Opciones: A: Punto cerrado en 48 y tramo resaltado desde 48 hacia la derecha, que representa alturas ≥ 48. B: Punto abierto en 48 y tramo resaltado hacia la derecha, que representa alturas > 48. C: Punto cerrado en 48 y tramo resaltado desde 48 hacia la izquierda, que representa alturas ≤ 48. D: Punto abierto en 48 y tramo resaltado hacia la izquierda, que representa alturas < 48."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "48",
+          "45",
+          "55",
+          "closed point at 48",
+          "open point at 48",
+          "extending to the right",
+          "extending to the left",
+          "A: A closed point at 48 with a bold ray extending to the right",
+          "B: An open point at 48 with a bold ray extending to the right",
+          "C: A closed point at 48 with a bold ray extending to the left",
+          "D: An open point at 48 with a bold ray extending to the left"
+        ],
+        "es": [
+          "48 pulgadas",
+          "45",
+          "55",
+          "≥ 48",
+          "> 48",
+          "≤ 48",
+          "< 48",
+          "A: Punto cerrado en 48 y tramo resaltado desde 48 hacia la derecha, que representa alturas ≥ 48",
+          "B: Punto abierto en 48 y tramo resaltado hacia la derecha, que representa alturas > 48",
+          "C: Punto cerrado en 48 y tramo resaltado desde 48 hacia la izquierda, que representa alturas ≤ 48",
+          "D: Punto abierto en 48 y tramo resaltado hacia la izquierda, que representa alturas < 48"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q24": {
+      "inputHash": "f5a68ce5a2167ca6e9961a31d37ad68cb4a9703253637b5ce824e85d652c90b2",
+      "description": {
+        "en": "Question 24. A soccer player scored 30% of the total goals scored by a team in a tournament. If the player scored 6 goals, how many total goals did the team score in the tournament? Choices: A: 14. B: 18. C: 20. D: 24.",
+        "es": "Pregunta 24. Un jugador de fútbol anotó el 30 % del total de goles que anotó un equipo en un torneo. Si el jugador anotó 6 goles, ¿cuántos goles en total anotó el equipo en el torneo? Opciones: A: 14 B: 18 C: 20 D: 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "30%",
+          "6",
+          "14",
+          "18",
+          "20",
+          "24",
+          "A: 14",
+          "B: 18",
+          "C: 20",
+          "D: 24"
+        ],
+        "es": [
+          "30 %",
+          "6",
+          "14",
+          "18",
+          "20",
+          "24",
+          "A: 14",
+          "B: 18",
+          "C: 20",
+          "D: 24"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q26": {
+      "inputHash": "4f52ba6c2c7431daea2083d3bf95714005eeccf2bba3ddf59046d6abf906f1c5",
+      "description": {
+        "en": "Question 26. An inequality is shown below: k − 16 > 29. Which value of k makes the inequality true? Choices: A: 30. B: 35. C: 45. D: 58.",
+        "es": "Pregunta 26. A continuación, se muestra una desigualdad: k − 16 > 29. ¿Qué valor de k hace que la desigualdad sea verdadera? Opciones: A: 30 B: 35 C: 45 D: 58"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "k − 16 > 29",
+          "k",
+          "30",
+          "35",
+          "45",
+          "58",
+          "A: 30",
+          "B: 35",
+          "C: 45",
+          "D: 58",
+          "16 > 29"
+        ],
+        "es": [
+          "k − 16 > 29",
+          "30",
+          "35",
+          "45",
+          "58",
+          "A: 30",
+          "B: 35",
+          "C: 45",
+          "D: 58",
+          "16 > 29"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q27": {
+      "inputHash": "2b22e852f1dbcb473d2389cda624f1ff377ab51c185fa75c67f3ef5c93155d7c",
+      "description": {
+        "en": "Question 27. A bakery sells boxes of cookies. The list below shows information for one month of sales. The bakery sold a total of 324 boxes of cookies. Of the boxes sold, 250 of the boxes contained just chocolate chip cookies. The rest of the boxes sold contained just sugar cookies. Which equation can be used to determine the total number of boxes, x, of sugar cookies sold by the bakery that month? Choices: A: 324/x = 250. B: 324x = 250. C: x − 250 = 324. D: x + 250 = 324.",
+        "es": "Pregunta 27. Una panadería vende cajas de galletas. La siguiente lista muestra información de un mes de ventas. La panadería vendió un total de 324 cajas de galletas. De las cajas vendidas, 250 contenían solo galletas con chispas de chocolate. El resto de las cajas vendidas contenían solo galletas de azúcar. ¿Qué ecuación se puede usar para determinar la cantidad total de cajas, x, de galletas de azúcar vendidas por la panadería ese mes? Opciones: A: 324/x = 250, con 324 como numerador y x como denominador. B: 324x = 250 C: x − 250 = 324 D: x + 250 = 324"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "324",
+          "250",
+          "x",
+          "324/x = 250",
+          "324x = 250",
+          "x − 250 = 324",
+          "x + 250 = 324",
+          "A: 324/x = 250",
+          "B: 324x = 250",
+          "C: x − 250 = 324",
+          "D: x + 250 = 324"
+        ],
+        "es": [
+          "324",
+          "250",
+          "x",
+          "324/x = 250",
+          "324x = 250",
+          "x − 250 = 324",
+          "x + 250 = 324",
+          "A: 324/x = 250, con 324 como numerador y x como denominador",
+          "B: 324x = 250",
+          "C: x − 250 = 324",
+          "D: x + 250 = 324"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q28": {
+      "inputHash": "a3df6a4859a79b86fcc4e6a247b7286525296aa7d51e058e86258703b149aace",
+      "description": {
+        "en": "Question 28. A cake recipe requires 6 eggs for every 4 cups of flour. Which statement is true about the relationship between flour and eggs for the recipe? Choices: A: For every 2 cups of flour, 3 eggs are used. B: For every 2 cups of flour, 5 eggs are used. C: For every 3 cups of flour, 2 eggs are used. D: For every 3 cups of flour, 5 eggs are used.",
+        "es": "Pregunta 28. En una receta, se indica que para hacer un pastel se necesitan 6 huevos por cada 4 tazas de harina. ¿Qué afirmación es verdadera sobre la relación entre la harina y los huevos para la receta? Opciones: A: Por cada 2 tazas de harina, se deben usar 3 huevos. B: Por cada 2 tazas de harina, se deben usar 5 huevos. C: Por cada 3 tazas de harina, se deben usar 2 huevos. D: Por cada 3 tazas de harina, se deben usar 5 huevos."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6",
+          "4",
+          "2 cups of flour, 3 eggs",
+          "2 cups of flour, 5 eggs",
+          "3 cups of flour, 2 eggs",
+          "3 cups of flour, 5 eggs",
+          "A: For every 2 cups of flour, 3 eggs are used",
+          "B: For every 2 cups of flour, 5 eggs are used",
+          "C: For every 3 cups of flour, 2 eggs are used",
+          "D: For every 3 cups of flour, 5 eggs are used"
+        ],
+        "es": [
+          "6 huevos",
+          "4 tazas de harina",
+          "2 tazas de harina",
+          "3 huevos",
+          "5 huevos",
+          "3 tazas de harina",
+          "2 huevos",
+          "A: Por cada 2 tazas de harina, se deben usar 3 huevos",
+          "B: Por cada 2 tazas de harina, se deben usar 5 huevos",
+          "C: Por cada 3 tazas de harina, se deben usar 2 huevos",
+          "D: Por cada 3 tazas de harina, se deben usar 5 huevos"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q29": {
+      "inputHash": "9f813df02ed8718aa7763f9f9fe860899dfb8b01426ba340e3bbaa994a6c4aeb",
+      "description": {
+        "en": "Question 29. A piece of fabric in the shape of a parallelogram is used to create two sails for a sailboat. A diagram of the fabric is described as follows. A horizontal segment of length 8 m connects the left vertex to the right vertex of the parallelogram, dividing it into two triangular regions. The lower triangular region is shaded. Its vertical left side is 6 m long, and a right-angle marker indicates that this side is perpendicular to the 8 m horizontal segment. The upper triangular region is unshaded. Its slanted side from the left vertex to the upper-right vertex is 10 m long. What is the area, in square meters, of the shaded region? Choices: A: 24. B: 30. C: 48. D: 60.",
+        "es": "Pregunta 29. Se usa un trozo de tela con la forma de un paralelogramo para crear dos velas para un barco a vela. A continuación, se muestra el diagrama de la tela. El paralelogramo está dividido por un segmento horizontal de 8 m que une el vértice superior izquierdo con el vértice inferior derecho. Este segmento forma dos triángulos. El triángulo superior no está sombreado; su lado inclinado mide 10 m y su base horizontal mide 8 m. El triángulo inferior está sombreado; tiene un lado vertical de 6 m y un lado horizontal de 8 m, perpendiculares entre sí, como indica el símbolo de ángulo recto en el vértice superior izquierdo. ¿Cuál es el área, en metros cuadrados, del área sombreada? Opciones: A: 24 B: 30 C: 48 D: 60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 m",
+          "6 m",
+          "10 m",
+          "24",
+          "30",
+          "48",
+          "60",
+          "A: 24",
+          "B: 30",
+          "C: 48",
+          "D: 60"
+        ],
+        "es": [
+          "8 m",
+          "10 m",
+          "6 m",
+          "24",
+          "30",
+          "48",
+          "60",
+          "A: 24",
+          "B: 30",
+          "C: 48",
+          "D: 60"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q30": {
+      "inputHash": "8b0f8b1ff9fb9e37a56780f6e7492883839b66e94e7bd398ae57c61367efd719",
+      "description": {
+        "en": "Question 30. Which expression is equivalent to 55 less than the sum of 4 and twice a number, c? Choices: A: 55 − 2(4 + c). B: 55 − (4 + 2c). C: (4 + 2c) − 55. D: 2(4 + c) − 55.",
+        "es": "Pregunta 30. ¿Qué expresión es equivalente a 55 menos que la suma de 4 y el doble de un número, c? Opciones: A: 55 − 2(4 + c) B: 55 − (4 + 2c) C: (4 + 2c) − 55 D: 2(4 + c) − 55"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "55 − 2(4 + c)",
+          "55 − (4 + 2c)",
+          "(4 + 2c) − 55",
+          "2(4 + c) − 55",
+          "A: 55 − 2(4 + c)",
+          "B: 55 − (4 + 2c)",
+          "C: (4 + 2c) − 55",
+          "D: 2(4 + c) − 55",
+          "(4 + c)",
+          "(4 + 2c)"
+        ],
+        "es": [
+          "55 − 2(4 + c)",
+          "55 − (4 + 2c)",
+          "(4 + 2c) − 55",
+          "2(4 + c) − 55",
+          "A: 55 − 2(4 + c)",
+          "B: 55 − (4 + 2c)",
+          "C: (4 + 2c) − 55",
+          "D: 2(4 + c) − 55",
+          "(4 + c)",
+          "(4 + 2c)"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q31": {
+      "inputHash": "bbb0ea8fbc804960b7b39badd4a280df8f93a1df8c10fcc3ab06b16ac956366b",
+      "description": {
+        "en": "Question 31. A teacher surveyed all of the students in the art club to determine their favorite ice cream flavor. Each student chose one flavor. The survey-results table has columns labeled “Favorite Ice Cream Flavor” and “Number of Students.” Its rows are: Chocolate, 18; Vanilla, 21; Strawberry, 11. What percent of the students in the art club chose vanilla ice cream as their favorite flavor? Choices: A: 21%. B: 42%. C: 58%. D: 72%.",
+        "es": "Pregunta 31. Una maestra hizo una encuesta a todos los alumnos del club de arte para determinar cuál era su sabor favorito de helado. Cada alumno eligió un sabor. Los resultados se muestran en la siguiente tabla. La tabla, titulada «RESULTADOS DE LA ENCUESTA», tiene las columnas «Sabor de helado favorito» y «Cantidad de alumnos». Sus filas son: Chocolate, 18; Vainilla, 21; Fresa, 11. ¿Qué porcentaje de alumnos del club de arte eligió el helado de vainilla como su sabor favorito? Opciones: A: 21 % B: 42 % C: 58 % D: 72 %"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Chocolate, 18",
+          "Vanilla, 21",
+          "Strawberry, 11",
+          "21%",
+          "42%",
+          "58%",
+          "72%",
+          "A: 21%",
+          "B: 42%",
+          "C: 58%",
+          "D: 72%"
+        ],
+        "es": [
+          "18",
+          "21",
+          "11",
+          "21 %",
+          "42 %",
+          "58 %",
+          "72 %",
+          "A: 21 %",
+          "B: 42 %",
+          "C: 58 %",
+          "D: 72 %"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q32": {
+      "inputHash": "160e083c15a1de9932c6ed86fbb939a8960894064ffb9537b976493b2ed77ec9",
+      "description": {
+        "en": "Question 32. An expression is shown below: 24x + 18y. Which expression is equivalent to the expression shown? Choices: A: 42xy. B: 4x + 3y. C: 6(4x + 3y). D: 6(4x + 18y).",
+        "es": "Pregunta 32. A continuación, se muestra una expresión: 24x + 18y. ¿Qué expresión es equivalente a la expresión que se muestra a continuación? Opciones: A: 42xy B: 4x + 3y C: 6(4x + 3y) D: 6(4x + 18y)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "24x + 18y",
+          "42xy",
+          "4x + 3y",
+          "6(4x + 3y)",
+          "6(4x + 18y)",
+          "A: 42xy",
+          "B: 4x + 3y",
+          "C: 6(4x + 3y)",
+          "D: 6(4x + 18y)",
+          "(4x + 3y)",
+          "(4x + 18y)"
+        ],
+        "es": [
+          "24x + 18y",
+          "42xy",
+          "4x + 3y",
+          "6(4x + 3y)",
+          "6(4x + 18y)",
+          "A: 42xy",
+          "B: 4x + 3y",
+          "C: 6(4x + 3y)",
+          "D: 6(4x + 18y)",
+          "(4x + 3y)",
+          "(4x + 18y)"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q33": {
+      "inputHash": "392c6eba578ab3372998416246c834df7ae5e00f837e2ae798420afeeae3d101",
+      "description": {
+        "en": "Question 33. Points A and B are located 5 units away from each other on a coordinate plane. Which two ordered pairs could be the coordinates of points A and B? Choices: A: (−4, 1) and (−4, −6). B: (1, −2) and (1, 3). C: (−1, 2) and (−4, 2). D: (3, −1) and (2, −1).",
+        "es": "Pregunta 33. Los puntos A y B están ubicados a 5 unidades de distancia entre sí en un plano de coordenadas. ¿Cuáles dos pares ordenados podrían ser las coordenadas de los puntos A y B? Opciones: A: (−4, 1) y (−4, −6) B: (1, −2) y (1, 3) C: (−1, 2) y (−4, 2) D: (3, −1) y (2, −1)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "(−4, 1)",
+          "(−4, −6)",
+          "(1, −2)",
+          "(1, 3)",
+          "(−1, 2)",
+          "(−4, 2)",
+          "(3, −1)",
+          "(2, −1)",
+          "A: (−4, 1) and (−4, −6)",
+          "B: (1, −2) and (1, 3)",
+          "C: (−1, 2) and (−4, 2)",
+          "D: (3, −1) and (2, −1)"
+        ],
+        "es": [
+          "5",
+          "(−4, 1)",
+          "(−4, −6)",
+          "(1, −2)",
+          "(1, 3)",
+          "(−1, 2)",
+          "(−4, 2)",
+          "(3, −1)",
+          "(2, −1)",
+          "A: (−4, 1) y (−4, −6)",
+          "B: (1, −2) y (1, 3)",
+          "C: (−1, 2) y (−4, 2)",
+          "D: (3, −1) y (2, −1)"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q34": {
+      "inputHash": "8384fa8f2b3f31bbda7e1444061f36dcffe0e4340c215adc070c0298c754a6ab",
+      "description": {
+        "en": "Question 34. A store has a sale on one type of notebook. The price of 3 of these notebooks is $6. Which table shows the same relationship for each given number of notebooks of this type and the total price for those notebooks? Choices: A: Notebook Prices table. Number of Notebooks: 6, 12, 18, 24, 30. Price (dollars): 3, 6, 9, 12, 15. B: Notebook Prices table. Number of Notebooks: 3, 6, 9, 12, 15. Price (dollars): 6, 12, 18, 24, 30. C: Notebook Prices table. Number of Notebooks: 6, 9, 12, 15, 18. Price (dollars): 3, 6, 9, 12, 15. D: Notebook Prices table. Number of Notebooks: 3, 6, 9, 12, 15. Price (dollars): 6, 9, 12, 15, 18.",
+        "es": "Pregunta 34. Una tienda tiene en oferta un tipo de cuaderno. El precio de 3 de estos cuadernos es $6. ¿Qué tabla muestra la misma relación para cada cantidad de cuadernos de este tipo y el precio total de esos cuadernos? Opciones: A: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 6, 12, 18, 24, 30. Fila «Precio (en dólares)»: 3, 6, 9, 12, 15. B: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 3, 6, 9, 12, 15. Fila «Precio (en dólares)»: 6, 12, 18, 24, 30. C: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 6, 9, 12, 15, 18. Fila «Precio (en dólares)»: 3, 6, 9, 12, 15. D: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 3, 6, 9, 12, 15. Fila «Precio (en dólares)»: 6, 9, 12, 15, 18."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "$6",
+          "6, 12, 18, 24, 30",
+          "3, 6, 9, 12, 15",
+          "6, 9, 12, 15, 18",
+          "A: Notebook Prices table. Number of Notebooks: 6, 12, 18, 24, 30. Price (dollars): 3, 6, 9, 12, 15",
+          "B: Notebook Prices table. Number of Notebooks: 3, 6, 9, 12, 15. Price (dollars): 6, 12, 18, 24, 30",
+          "C: Notebook Prices table. Number of Notebooks: 6, 9, 12, 15, 18. Price (dollars): 3, 6, 9, 12, 15",
+          "D: Notebook Prices table. Number of Notebooks: 3, 6, 9, 12, 15. Price (dollars): 6, 9, 12, 15, 18"
+        ],
+        "es": [
+          "3",
+          "$6",
+          "6, 12, 18, 24, 30",
+          "3, 6, 9, 12, 15",
+          "6, 9, 12, 15, 18",
+          "A: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 6, 12, 18, 24, 30. Fila «Precio (en dólares)»: 3, 6, 9, 12, 15",
+          "B: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 3, 6, 9, 12, 15. Fila «Precio (en dólares)»: 6, 12, 18, 24, 30",
+          "C: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 6, 9, 12, 15, 18. Fila «Precio (en dólares)»: 3, 6, 9, 12, 15",
+          "D: Tabla «PRECIOS DE CUADERNOS». Fila «Cantidad de cuadernos»: 3, 6, 9, 12, 15. Fila «Precio (en dólares)»: 6, 9, 12, 15, 18"
+        ]
+      }
+    },
+    "nysed-2026-g6-mc-q35": {
+      "inputHash": "2de023619e882aded92817a08fe1fc858fb89193b8cae085e0a826d810a6193a",
+      "description": {
+        "en": "Question 35. A diagram of a right rectangular prism has dimensions 5 1/4 in. high, 9 1/3 in. long, and 2 1/2 in. deep. What is the volume, in cubic inches, of the right rectangular prism? Choices: A: 17 1/12. B: 23 1/3. C: 120 1/2. D: 122 1/2.",
+        "es": "Pregunta 35. A continuación, se muestra el diagrama de un prisma rectangular recto. Sus tres dimensiones son 5 1/4 pulgadas de altura, 9 1/3 pulgadas de longitud y 2 1/2 pulgadas de ancho o profundidad. ¿Cuál es el volumen, en pulgadas cúbicas, del prisma rectangular recto? Opciones: A: 17 1/12 B: 23 1/3 C: 120 1/2 D: 122 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 1/4 in",
+          "9 1/3 in",
+          "2 1/2 in",
+          "17 1/12",
+          "23 1/3",
+          "120 1/2",
+          "122 1/2",
+          "A: 17 1/12",
+          "B: 23 1/3",
+          "C: 120 1/2",
+          "D: 122 1/2",
+          "5 1/4",
+          "9 1/3",
+          "2 1/2"
+        ],
+        "es": [
+          "5 1/4",
+          "9 1/3",
+          "2 1/2",
+          "17 1/12",
+          "23 1/3",
+          "120 1/2",
+          "122 1/2",
+          "A: 17 1/12",
+          "B: 23 1/3",
+          "C: 120 1/2",
+          "D: 122 1/2"
+        ]
+      }
+    }
+  }
+}

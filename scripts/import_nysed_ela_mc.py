@@ -23,6 +23,7 @@ import argparse
 import calendar
 import dataclasses
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -121,6 +122,28 @@ except ModuleNotFoundError:  # pragma: no cover - permits direct script executio
         render_passage_assets,
     )
 
+try:
+    from scripts.nysed_ela_question_accessibility import (
+        load_and_attach_exam_question_accessibility,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_ela_question_accessibility import (  # type: ignore[no-redef]
+        load_and_attach_exam_question_accessibility,
+    )
+
+try:
+    from scripts.nysed_ela_transcripts import (
+        ElaTranscriptError,
+        load_and_attach_exam_transcripts,
+        validate_full_transcript_coverage,
+    )
+except ModuleNotFoundError:  # pragma: no cover - permits direct script execution.
+    from nysed_ela_transcripts import (  # type: ignore[no-redef]
+        ElaTranscriptError,
+        load_and_attach_exam_transcripts,
+        validate_full_transcript_coverage,
+    )
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 INDEX_URL = "https://www.nysedregents.org/ei/ei-ela.html"
@@ -151,8 +174,52 @@ EXPECTED_MC_COUNTS: dict[int, tuple[int, int, int, int, int, int]] = {
 }
 EXPECTED_GRAND_TOTAL = 1583
 EXPECTED_LEGACY_TOTAL = 269
-EXPECTED_OFFICIAL_RATIONALE_TOTAL = 149
+EXPECTED_OFFICIAL_RATIONALE_TOTAL = 147
+EXPECTED_CORRECTED_OFFICIAL_RATIONALE_TOTAL = 2
 EXPECTED_VINE_EXPLANATION_TOTAL = 1434
+CORRECTED_OFFICIAL_RATIONALES: dict[tuple[int, int, int], str] = {
+    (2013, 4, 2): (
+        "Students who choose \u201cB\u201d show an understanding of the key elements of the story. "
+        "This choice begins by focusing on the Sun, bringing in the Wampanoag people as those "
+        "who seek Maushop's help, and describing Maushop's role in helping them. The degree of "
+        "emphasis on the various characters, events, and problems in this summary mirrors that "
+        "of the story as well."
+    ),
+    (2014, 3, 12): (
+        "Students who choose \u201cA\u201d demonstrate the ability to understand what a word means "
+        "given its use in the text. In this case, they may use a clue in the sentence "
+        "(\u201caround the school\u201d) or recognize that the \u201cshort hike\u201d takes place after learning "
+        "the correct way to walk in snowshoes (paragraph 14) and before the passage says they "
+        "are ready for the \u201cslopes and trails nearby\u201d (paragraph 15)."
+    ),
+}
+CORRECTED_OFFICIAL_RATIONALE_SOURCE_SHA256: dict[tuple[int, int, int], str] = {
+    (2013, 4, 2): "2fcb8e31eb5a52497b543826a7ee2709b40aeb6a3ef92503de55147525a1b474",
+    (2014, 3, 12): "f3ef27d7feb33bcc3ace8afb059e062862ada599350a2490d73c2a5be0b30e95",
+}
+
+
+def corrected_official_rationale(
+    year: int,
+    grade: int,
+    number: int,
+    extracted_text: str,
+) -> str | None:
+    """Return a reviewed correction only when its exact source still matches."""
+
+    key = (year, grade, number)
+    correction = CORRECTED_OFFICIAL_RATIONALES.get(key)
+    if correction is None:
+        return None
+    expected_source_sha = CORRECTED_OFFICIAL_RATIONALE_SOURCE_SHA256.get(key)
+    actual_source_sha = hashlib.sha256(extracted_text.encode("utf-8")).hexdigest()
+    if actual_source_sha != expected_source_sha:
+        raise ImportFailure(
+            "Reviewed official ELA rationale changed before correction for "
+            f"{year} Grade {grade} question {number}: expected "
+            f"{expected_source_sha}, got {actual_source_sha}"
+        )
+    return correction
 EXPECTED_LEGACY_GROUP_COUNTS: dict[tuple[int, int], tuple[int, ...]] = {
     (2013, 3): (6,),
     (2013, 4): (5,),
@@ -770,9 +837,17 @@ def import_legacy_release(
         if release.year <= 2014:
             if item.official_rationale is None:
                 raise ImportFailure(f"Missing official rationale for {question['id']}")
+            correction = corrected_official_rationale(
+                release.year,
+                release.grade,
+                number,
+                item.official_rationale,
+            )
             question["explanation"] = {
-                "text": item.official_rationale,
-                "source": "official-nysed",
+                "text": correction or item.official_rationale,
+                "source": (
+                    "official-nysed-corrected" if correction else "official-nysed"
+                ),
             }
         if item.secondary_standards:
             question["secondaryStandards"] = list(item.secondary_standards)
@@ -792,8 +867,16 @@ def import_legacy_release(
         "stimuli": stimuli,
         "questions": questions,
     }
+    # Authored explanation hashes include ``question.alt``.  Replace raw PDF
+    # extraction with the reviewed, source-pinned transcription first.
+    load_and_attach_exam_question_accessibility(
+        exam,
+        pdf_path=pdf_path,
+        asset_root=asset_root,
+    )
     if release.year >= 2015:
         attach_vine_authored_explanations(exam, asset_root)
+    load_and_attach_exam_transcripts(exam, pdf_path=pdf_path, asset_root=asset_root)
     validate_exam(exam)
     return exam
 
@@ -859,7 +942,18 @@ def validate_exam(exam: dict[str, Any]) -> None:
             )
         except (ElaExplanationError, TypeError, ValueError) as exc:
             raise ImportFailure(f"Invalid explanation in {question['id']}: {exc}") from exc
-        expected_explanation_source = "official-nysed" if year <= 2014 else "vine-authored"
+        corrected_id = (
+            year,
+            grade,
+            number,
+        ) in CORRECTED_OFFICIAL_RATIONALES
+        expected_explanation_source = (
+            "vine-authored"
+            if year >= 2015
+            else "official-nysed-corrected"
+            if corrected_id
+            else "official-nysed"
+        )
         if validated_explanation.source != expected_explanation_source:
             raise ImportFailure(
                 f"Wrong explanation source in {question['id']}: "
@@ -1383,24 +1477,34 @@ def main(argv: Sequence[str] | None = None) -> int:
         for question in exam["questions"]
     ]
     if is_full:
+        validate_full_transcript_coverage(exams)
         official_count = explanation_sources.count("official-nysed")
+        corrected_official_count = explanation_sources.count(
+            "official-nysed-corrected"
+        )
         vine_count = explanation_sources.count("vine-authored")
         if (
             official_count != EXPECTED_OFFICIAL_RATIONALE_TOTAL
+            or corrected_official_count
+            != EXPECTED_CORRECTED_OFFICIAL_RATIONALE_TOTAL
             or vine_count != EXPECTED_VINE_EXPLANATION_TOTAL
-            or len(explanation_sources) != official_count + vine_count
+            or len(explanation_sources)
+            != official_count + corrected_official_count + vine_count
         ):
             raise ImportFailure(
                 "Full explanation provenance parity failed: "
-                f"expected official/vine={EXPECTED_OFFICIAL_RATIONALE_TOTAL}/"
-                f"{EXPECTED_VINE_EXPLANATION_TOTAL}, got {official_count}/{vine_count}"
+                "expected official/corrected/vine="
+                f"{EXPECTED_OFFICIAL_RATIONALE_TOTAL}/"
+                f"{EXPECTED_CORRECTED_OFFICIAL_RATIONALE_TOTAL}/"
+                f"{EXPECTED_VINE_EXPLANATION_TOTAL}, got {official_count}/"
+                f"{corrected_official_count}/{vine_count}"
             )
     if failures and not exams:
         raise ImportFailure("All requested exams failed; refusing to write an empty catalog")
 
     generated_at = deterministic_timestamp(index_html)
     catalog = {
-        "schemaVersion": 3,
+        "schemaVersion": 4,
         "generatedAt": generated_at,
         "accessedAt": os.environ.get("NYSED_ACCESSED_AT", IMPORT_ACCESSED_AT),
         "sourceUpdatedAt": generated_at.split("T", 1)[0],
@@ -1429,6 +1533,6 @@ def main(argv: Sequence[str] | None = None) -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except ImportFailure as exc:
+    except (ImportFailure, ElaTranscriptError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(1)

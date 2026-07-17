@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2015-grade-3-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2015-g3-mc-q1": {
+      "inputHash": "9c5944e64b7db241d106c1189ab2454916e3edccb3cbfc6d2599d17cc4bdd664",
+      "description": {
+        "en": "Question 1. A model shows 2 rows of 10 circles. Which expression could be used to find the total number of circles? Choices: A: 2 + 20; B: 2 × 20; C: 2 + 10; D: 2 × 10."
+      }
+    },
+    "nysed-2015-g3-mc-q2": {
+      "inputHash": "d3fd7f99d8dbeef8499d97d073b8d29da1e796a23ff7b2efe1361973982d2bce",
+      "description": {
+        "en": "Question 2. Amar and his friends made a flag for their clubhouse. They divided the flag into 8 equal vertical sections and colored 3 of the sections gray. What fraction of the flag is gray? Choices: A: 1/3; B: 3/8; C: 3/5; D: 5/8."
+      }
+    },
+    "nysed-2015-g3-mc-q3": {
+      "inputHash": "c77281f2e971ee10a811f9f44a0c74cc405dc2affec71d96256e755c1811ef5f",
+      "description": {
+        "en": "Question 3. Alexis read 63 pages of a book in seven days. She read an equal number of pages each day. The equation 63 ÷ 7 = □ can be used to find the total number of pages she read each day. What is the total number of pages Alexis read each day? Choices: A: 8; B: 9; C: 56; D: 70."
+      }
+    },
+    "nysed-2015-g3-mc-q4": {
+      "inputHash": "0834d36c87f643196a318b8e4756657e5db1d901973568345990b2b945259cfe",
+      "description": {
+        "en": "Question 4. Selena had 204 stamps in her collection. She bought 47 more stamps. If she gave 38 stamps to her brother, how many stamps does Selena have now? Choices: A: 119; B: 195; C: 213; D: 289."
+      }
+    },
+    "nysed-2015-g3-mc-q5": {
+      "inputHash": "427e3f750e0edbc0019d758ae74c510a51c03b542d8bc199395381ac1679f862",
+      "description": {
+        "en": "Question 5. A tally chart titled Our Favorite Seasons shows: Spring, 4 students; Summer, 6 students; Fall, 2 students; Winter, 8 students. Which picture graph correctly shows the data? In each choice, one balloon symbol represents 2 students. Choices: A: Spring 4 symbols, Summer 6, Fall 2, Winter 8; B: Spring 2 symbols, Summer 3, Fall 2, Winter 4; C: Spring 3 symbols, Summer 3, Fall 1, Winter 4; D: Spring 2 symbols, Summer 3, Fall 1, Winter 4."
+      }
+    },
+    "nysed-2015-g3-mc-q6": {
+      "inputHash": "666c57d8adff760f4f2f3a4b8beaf523e0ff57e98295d033bf5368cc7a4300d7",
+      "description": {
+        "en": "Question 6. What is 637 rounded to the nearest ten? Choices: A: 600; B: 630; C: 640; D: 647."
+      }
+    },
+    "nysed-2015-g3-mc-q7": {
+      "inputHash": "01b08a4ee283ab01fe0c9ed7e8fc5e4fafa1ee5e53e3323788d258261be713d4",
+      "description": {
+        "en": "Question 7. Nadia was asked to shade parts of a figure so that 5/6 of it was shaded. The figure is divided into 6 equal vertical parts, and 1 part is already shaded. What should Nadia do to complete the math problem? Choices: A: Nadia should shade two more parts of the figure; B: Nadia should shade three more parts of the figure; C: Nadia should shade four more parts of the figure; D: Nadia should shade five more parts of the figure."
+      }
+    },
+    "nysed-2015-g3-mc-q8": {
+      "inputHash": "83b911f65573bcff0755a02bb2da723af01227a23f0cb0e97351d7a67463c902",
+      "description": {
+        "en": "Question 8. What is the area, in square units, of the shaded shape on the grid? The shaded shape contains a rectangle 7 unit squares wide and 3 unit squares high, plus 2 additional shaded unit squares centered directly below it. The key says each small square equals 1 square unit. Choices: A: 22; B: 23; C: 28; D: 72."
+      }
+    },
+    "nysed-2015-g3-mc-q9": {
+      "inputHash": "c0b8ee9d706c245e561bee1d184c3f8e09b365db3653e780c68c683bc3385b02",
+      "description": {
+        "en": "Question 9. A balance scale shows that one box is heavier than 5 identical cans: the pan holding the box is lower than the pan holding the cans. The box has a mass of 40 kilograms. What could be the mass, in kilograms, of 1 can? Choices: A: 40; B: 10; C: 8; D: 6."
+      }
+    },
+    "nysed-2015-g3-mc-q10": {
+      "inputHash": "4daeac2b744166d533d6db6f43d294eff7ffe07779238a025056d322d4288407",
+      "description": {
+        "en": "Question 10. A picture graph titled Students’ Favorite Hobbies shows 2 symbols for Drawing, 3 for Reading, and 4 for Sports. The key says each symbol represents 2 students. Which table represents the same data as the picture graph? Choices: A: Drawing 4, Reading 6, Sports 8; B: Drawing 8, Reading 6, Sports 4; C: Drawing 2, Reading 3, Sports 4; D: Drawing 4, Reading 5, Sports 6."
+      }
+    },
+    "nysed-2015-g3-mc-q11": {
+      "inputHash": "35905394b64f59a71fbec8833d330b10efbe4e2c7fe3bc38366f3b11aaad5f41",
+      "description": {
+        "en": "Question 11. Which expression has the same value as (8 ×5) + (8 × 3)? Choices: A: 8 × 8; B: 8 ×15; C: 16 + 8; D: 13 + 11."
+      }
+    },
+    "nysed-2015-g3-mc-q12": {
+      "inputHash": "34598799a7ceab0dde090f1c196de1271b3deadf5269368e514b430085ab32af",
+      "description": {
+        "en": "Question 12. Alex sorted 20 toy cars into 4 groups with the same number of cars in each group. Which expression represents the number of toy cars in each group? Choices: A: 20 × 4; B: 20 + 4; C: 20 ÷ 4; D: 20 − 4."
+      }
+    },
+    "nysed-2015-g3-mc-q13": {
+      "inputHash": "5277134bcc29296f51b377aca4858a67a0760d500ddf2f58d985831905c4d217",
+      "description": {
+        "en": "Question 13. A certain dance class has 42 dancers. The teacher wants to place the class into six equal groups. Which number sentence could be used to find the number of dancers that will be in each group? Choices: A: 6 × □ = 42; B: 6 ÷ □ = 42; C: 42 + 6 = □; D: 42 − 6 = □."
+      }
+    },
+    "nysed-2015-g3-mc-q14": {
+      "inputHash": "ecfcf85347e51aff436739e70bfb5959c0b6065cddde1e61d90a1264b391cd54",
+      "description": {
+        "en": "Question 14. Noel read 90 minutes each day for 6 days. Tyra read 60 minutes each day for 8 days. What is the difference, in minutes, between the total amount of time Noel read and the total amount of time Tyra read? Choices: A: 30; B: 40; C: 60; D: 80."
+      }
+    },
+    "nysed-2015-g3-mc-q15": {
+      "inputHash": "c34c5a6a4863d976cb431823a2be97fdec25e25bb03f54cec42ebbecb75d4a96",
+      "description": {
+        "en": "Question 15. Mr. Bachu bought 24 pounds of potting soil. Which sentence could describe the potting soil Mr. Bachu bought? Choices: A: He bought 6 bags that weigh 4 pounds each; B: He bought 5 bags that weigh 4 pounds each; C: He bought 4 bags that weigh 20 pounds each; D: He bought 10 bags that weigh 14 pounds each."
+      }
+    },
+    "nysed-2015-g3-mc-q16": {
+      "inputHash": "86b8f5a3af3b5ff98716947937a44da45f0f4208c8eceee671a475d5b61e18a4",
+      "description": {
+        "en": "Question 16. Pedro left home this morning at the time shown on an analog clock. The minute hand points to 7, and the hour hand is between 8 and 9, showing 8:35. Tina left home 20 minutes after Pedro left. Carlos left home 18 minutes after Tina left. At what time did Carlos leave home this morning? Choices: A: 7:57 a.m.; B: 8:13 a.m.; C: 8:38 a.m.; D: 9:13 a.m."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "minute hand points to 7",
+          "hour hand is between 8 and 9",
+          "showing 8:35",
+          "A: 7:57 a.m.",
+          "B: 8:13 a.m.",
+          "C: 8:38 a.m.",
+          "D: 9:13 a.m."
+        ]
+      }
+    },
+    "nysed-2015-g3-mc-q17": {
+      "inputHash": "b7ef4c4108df1903233ad8433dec2bd9231a22bc4e5220ec39b16acaf811ffe4",
+      "description": {
+        "en": "Question 17. Mrs. Allen made 8 pitchers of fruit punch for a party. She used 2 liters of water to make each pitcher of fruit punch. How many liters of water did Mrs. Allen use in all? Choices: A: 4; B: 6; C: 10; D: 16."
+      }
+    },
+    "nysed-2015-g3-mc-q18": {
+      "inputHash": "770b65d656937dfe5edd96676ad03de2cdd570c6a92b9279a99f7cc83e1dd955",
+      "description": {
+        "en": "Question 18. The table below shows the number of tickets for the school play that were sold each day. SCHOOL PLAY TICKETS Number of Day Tickets Sold Thursday 238 Friday 361 Saturday 249 Sunday 328 On which day does the number of tickets sold round to 300, when rounded to the nearest hundred? Choices: A: Thursday; B: Friday; C: Saturday; D: Sunday."
+      }
+    },
+    "nysed-2015-g3-mc-q19": {
+      "inputHash": "f57d13fb125f3c3c2b9d934b6dc07204b2806d0e033e78ec116738ed1bc9fb6a",
+      "description": {
+        "en": "Question 19. Paul’s rectangular patio is shown as a grid 8 unit squares wide and 10 unit squares high. The top 7 rows are gray stones, and the bottom 3 rows are white stones. The key says each small square equals 1 square foot. Which equation can be used to find the total area, in square feet, of Paul’s patio? Choices: A: (8 × 7) + (8 × 3) = □; B: (8 + 7) × (8 + 3) = □; C: (10 × 7) + (10 × 3) = □; D: (10 + 7) × (10 + 3) = □."
+      }
+    },
+    "nysed-2015-g3-mc-q20": {
+      "inputHash": "fd88d8b25beda7191c341fcaf0db41c40849cd558b5435c17e459e947687dd95",
+      "description": {
+        "en": "Question 20. A number line from 0 to 1 is divided into 3 equal intervals, and point R is at the second tick mark after 0. Which fraction represents the location of point R? Choices: A: 1/3; B: 2/4; C: 2/3; D: 3/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "divided into 3 equal intervals",
+          "point R is at the second tick mark after 0",
+          "A: 1/3",
+          "B: 2/4",
+          "C: 2/3",
+          "D: 3/4"
+        ]
+      }
+    },
+    "nysed-2015-g3-mc-q21": {
+      "inputHash": "0f6704f87a1f66c7e06060e819c633a13e1d5cf9ea335d7bbddce2af9cab4b07",
+      "description": {
+        "en": "Question 21. The school store sells pencils in packages of 4. Zoe bought enough packages to have 28 pencils. The equation 4 × □ = 28 can be used to determine the number of packages Zoe bought. What is the total number of packages that Zoe bought? Choices: A: 6; B: 7; C: 24; D: 32."
+      }
+    },
+    "nysed-2015-g3-mc-q22": {
+      "inputHash": "d9cb7fcec73397574c20e5dc4d1e116a71c798cc5a8f07798e3dbd3854624771",
+      "description": {
+        "en": "Question 22. Rick has 15 muffins. He will give each of his three children one muffin each day. The equation 15 ÷ □ = 3 can be used to find the total number of days he can give the muffins to his children before they are gone. What is the total number of days Rick can give the muffins to his children? Choices: A: 4; B: 5; C: 12; D: 18."
+      }
+    },
+    "nysed-2015-g3-mc-q23": {
+      "inputHash": "6701b8246e5ef9a6abf74714f6b073373b6c60f06eec52efaf2f426a65cc7a1a",
+      "description": {
+        "en": "Question 23. Which number sentence could also be used to find the missing number in the equation 10 × □ = 60? Choices: A: 60 × 10 = □; B: 60 − 10 = □; C: 60 + 10 = □; D: 60 ÷ 10 = □."
+      }
+    },
+    "nysed-2015-g3-mc-q24": {
+      "inputHash": "2b5fcd56369cd78cd000ebd6c6fec7f43b41bb02004282f1c0557f139cb89856",
+      "description": {
+        "en": "Question 24. Which number sentence is true? Choices: A: 2/2 = 2/6; B: 4/6 = 2/2; C: 1/2 = 3/6; D: 2/6 = 1/2."
+      }
+    }
+  }
+}

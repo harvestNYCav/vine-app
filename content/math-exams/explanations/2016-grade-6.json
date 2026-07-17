@@ -4,7 +4,7 @@
   "examId": "nysed-2016-grade-6-mc-v1",
   "questions": {
     "nysed-2016-g6-mc-q11": {
-      "inputHash": "12aa806a1827c3f57e0ee3670eac332929a38e7b39ebc814d106aa3fc0abe177",
+      "inputHash": "a86b0d166a2c36eece3a469ccdd323bb4c157b4f3fb86b4af2011226c310351a",
       "explanation": {
         "text": {
           "en": "The coupon subtracts $2.50 from every original price, so d = p − 2.50. For example, $3.00 becomes $0.50 and $6.00 becomes $3.50, exactly the pairs in table A.",
@@ -37,8 +37,8 @@
       "inputHash": "d9d60893d984080aff84dff5118efd6fc135c0549f53951564ab91e47a74723b",
       "explanation": {
         "text": {
-          "en": "Both points have x-coordinate 1, so they lie on the vertical line x = 1. Point F has y = 0.5 above the x-axis, while G has y = −0.5 below it; plane A shows those locations.",
-          "es": "Ambos puntos tienen coordenada x igual a 1, así que están en la recta vertical x = 1. F tiene y = 0.5 sobre el eje x y G tiene y = −0.5 debajo; el plano A muestra esas ubicaciones."
+        "en": "Point F is at (1, 0.5), one unit right and one-half unit up from the origin. Point G is at (−1, −0.5), one unit left and one-half unit down; plane A shows both locations.",
+        "es": "El punto F está en (1, 0.5), una unidad a la derecha y media unidad arriba del origen. El punto G está en (−1, −0.5), una unidad a la izquierda y media unidad abajo; el plano A muestra ambas ubicaciones."
         },
         "source": "vine-authored"
       }

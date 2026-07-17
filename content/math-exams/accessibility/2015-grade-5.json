@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2015-grade-5-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2015-g5-mc-q1": {
+      "inputHash": "f5f1b6862efbe4e3500a26748da21d822fb457b2770268dd92266588450629c9",
+      "description": {
+        "en": "Question 1. Which expression represents the phrase “4 times the sum of 9 and 6”? Choices: A: 4 × (9 + 6) B: 4 × 9 + 6 C: 9 + 6 × 4 D: 9 + (6 × 4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 × (9 + 6)",
+          "4 × 9 + 6",
+          "9 + 6 × 4",
+          "9 + (6 × 4)",
+          "A: 4 × (9 + 6)",
+          "B: 4 × 9 + 6",
+          "C: 9 + 6 × 4",
+          "D: 9 + (6 × 4)",
+          "(9 + 6)",
+          "(6 × 4)"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q2": {
+      "inputHash": "9fe95b0ff9c148db9f833ea563f227784cce8e1d72258e947c3b3a0030e670d5",
+      "description": {
+        "en": "Question 2. A water tank in the shape of a right rectangular prism is 11 feet deep. The top of the water tank has an area of 220 square feet. What is the volume, in cubic feet, of the water tank? Choices: A: 20 B: 231 C: 1,331 D: 2,420"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "11 feet",
+          "220 square feet",
+          "20",
+          "231",
+          "1,331",
+          "2,420",
+          "A: 20",
+          "B: 231",
+          "C: 1,331",
+          "D: 2,420"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q3": {
+      "inputHash": "17506760b7335c32b335d4472fc7a596f85843477cd7c1118d4b7a35e0720e2c",
+      "description": {
+        "en": "Question 3. Members of the Garner High School yearbook committee need to put 1,344 student photos on 24 pages in the yearbook. They want to put the same number of student photos on each page. How many student photos will they put on each page in the yearbook? Choices: A: 51 B: 52 C: 56 D: 61"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,344",
+          "24 pages",
+          "51",
+          "52",
+          "56",
+          "61",
+          "A: 51",
+          "B: 52",
+          "C: 56",
+          "D: 61"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q4": {
+      "inputHash": "55a1db922748c567ac1886d75f890206325ae29762f7f215d70b709d6e8d0a3a",
+      "description": {
+        "en": "Question 4. Which decimal makes the number sentence true? 0.27 > ?. Choices: A: 0.4 B: 0.26 C: 0.3 D: 0.28"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.27 > ?",
+          "0.4",
+          "0.26",
+          "0.3",
+          "0.28",
+          "A: 0.4",
+          "B: 0.26",
+          "C: 0.3",
+          "D: 0.28"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q5": {
+      "inputHash": "7201040671c2e35eabab3c0b09cab97f16d3cef2a71d6101bb450da2b5dbbd7e",
+      "description": {
+        "en": "Question 5. Juliette made a jewelry box shaped like a right rectangular prism. A perspective drawing labels the prism’s height as 5 cm, its front horizontal length as 8 cm, and its depth from front to back as 4 cm. Dashed lines represent the three hidden back and interior edges. What was the volume, in cubic centimeters, of the jewelry box? Choices: A: 17 B: 37 C: 160 D: 184"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 cm",
+          "8 cm",
+          "4 cm",
+          "17",
+          "37",
+          "160",
+          "184",
+          "A: 17",
+          "B: 37",
+          "C: 160",
+          "D: 184"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q6": {
+      "inputHash": "3676f420d09a978c8ba0ef8b2bd7a5af649700dc0f3762445999abf8e2867d41",
+      "description": {
+        "en": "Question 6. The fifth-grade classes at Brookfield School used five identical buses to go on a field trip. There were a total of 40 seats on each bus. All of the seats on four buses were filled. The fifth bus had 4/5 of the seats filled. Of all the passengers on the buses, 1/8 were adults. How many adults went on the field trip with the fifth-grade classes? Choices: A: 20 B: 24 C: 25 D: 32"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "40 seats",
+          "four buses",
+          "4/5",
+          "1/8",
+          "20",
+          "24",
+          "25",
+          "32",
+          "A: 20",
+          "B: 24",
+          "C: 25",
+          "D: 32"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q7": {
+      "inputHash": "345c77ca79f7ebf2a0a1bba93f7f7f63c97a3c74ee5cf4e111793f8b9b54019e",
+      "description": {
+        "en": "Question 7. Which expression is equivalent to 32? Choices: A: (30 + 6) ÷ 3 B: 2 × (9 + 7) C: 9 × (3 + 5) D: 6 + 2 × 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "32",
+          "(30 + 6) ÷ 3",
+          "2 × (9 + 7)",
+          "9 × (3 + 5)",
+          "6 + 2 × 4",
+          "A: (30 + 6) ÷ 3",
+          "B: 2 × (9 + 7)",
+          "C: 9 × (3 + 5)",
+          "D: 6 + 2 × 4",
+          "(30 + 6)",
+          "(9 + 7)",
+          "(3 + 5)"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q8": {
+      "inputHash": "16b0cc8980ce580043c94db9c580d8c2e640acfd863cad7769f794239f676313",
+      "description": {
+        "en": "Question 8. Josie has a 1,364-page book to read over summer vacation. She wants to read the same number of pages each day for 62 days. What is the total number of pages Josie will need to read each day? Choices: A: 28 B: 27 C: 22 D: 17"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,364-page",
+          "62 days",
+          "28",
+          "27",
+          "22",
+          "17",
+          "A: 28",
+          "B: 27",
+          "C: 22",
+          "D: 17"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q9": {
+      "inputHash": "bcb2485123a74d73a0c0abf3da33a52f13b0e674224ca5e0a4ec49645479b257",
+      "description": {
+        "en": "Question 9. Equation 1: 3/10 + 15/100 = 18/100. Equation 2: 4/10 + 32/100 = 72/100. Equation 3: 7/10 + 2/100 = 27/100. Equation 4: 6/10 + 27/100 = 87/100. Which equation or equations are true? Choices: A: equation 1 only. B: equation 2 only. C: equations 3 and 4 only. D: equations 2 and 4 only."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/10 + 15/100 = 18/100",
+          "4/10 + 32/100 = 72/100",
+          "7/10 + 2/100 = 27/100",
+          "6/10 + 27/100 = 87/100",
+          "equation 1 only",
+          "equation 2 only",
+          "equations 3 and 4 only",
+          "equations 2 and 4 only",
+          "A: equation 1 only",
+          "B: equation 2 only",
+          "C: equations 3 and 4 only",
+          "D: equations 2 and 4 only",
+          "3/10",
+          "15/100",
+          "18/100",
+          "4/10",
+          "32/100",
+          "72/100",
+          "7/10",
+          "2/100",
+          "27/100",
+          "6/10",
+          "87/100"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q10": {
+      "inputHash": "4a94f3c141fd1cb97971053a49ab8d9af9892631731800fe954a8c30f7869e13",
+      "description": {
+        "en": "Question 10. What is the product of 5/8 × 3/4? Choices: A: 8/32. B: 15/32. C: 8/12. D: 15/12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5/8 × 3/4",
+          "8/32",
+          "15/32",
+          "8/12",
+          "15/12",
+          "A: 8/32",
+          "B: 15/32",
+          "C: 8/12",
+          "D: 15/12",
+          "5/8",
+          "3/4"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q11": {
+      "inputHash": "3293a07bd30125686c892504bf4ae96a3d0ae88bba6cd122b3e770f97efb4d90",
+      "description": {
+        "en": "Question 11. Barbara filled a box with layers of unit cubes. The box had a volume of 125 cubic units. Which sentence about the box must be true? Choices: A: There were 125 unit cubes in the bottom layer. B: The box was filled with exactly 125 unit cubes. C: There were 125 unit cubes in each layer. D: The box was filled with less than 125 unit cubes."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "125 cubic units",
+          "125 unit cubes",
+          "exactly 125 unit cubes",
+          "less than 125 unit cubes",
+          "A: There were 125 unit cubes in the bottom layer",
+          "B: The box was filled with exactly 125 unit cubes",
+          "C: There were 125 unit cubes in each layer",
+          "D: The box was filled with less than 125 unit cubes"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q12": {
+      "inputHash": "11cb301114b7eac524a9fbd724949f5f20c9317d00ae24bb652964973d82216f",
+      "description": {
+        "en": "Question 12. Rashad is filling a toy box with wooden blocks that are each a unit cube in size. He filled the bottom layer of a toy box with 15 wooden blocks. He then stacked two more wooden blocks on top of the bottom layer. The partially filled rectangular toy box has a bottom layer arranged 5 blocks across and 3 blocks deep. At the back-left corner, two additional blocks are stacked above the bottom block, reaching the full height of the box; this indicates that the box is 3 blocks high. What was the total volume, in cubic units, of the toy box? Choices: A: 15. B: 17. C: 30. D: 45."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 wooden blocks",
+          "5 blocks across",
+          "3 blocks deep",
+          "two additional blocks",
+          "3 blocks high",
+          "15",
+          "17",
+          "30",
+          "45",
+          "A: 15",
+          "B: 17",
+          "C: 30",
+          "D: 45"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q13": {
+      "inputHash": "347b31fd5c99cfa3c546f82fbfcbe940541d3392c85455e15afb49a38c5c8bac",
+      "description": {
+        "en": "Question 13. Which expression represents the phrase “triple the sum of 24 and 9”? Choices: A: 3 + (24 + 9). B: 3 × (24 + 9). C: 3 + 24 + 9. D: 3 × 24 + 9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 + (24 + 9)",
+          "3 × (24 + 9)",
+          "3 + 24 + 9",
+          "3 × 24 + 9",
+          "A: 3 + (24 + 9)",
+          "B: 3 × (24 + 9)",
+          "C: 3 + 24 + 9",
+          "D: 3 × 24 + 9",
+          "(24 + 9)"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q14": {
+      "inputHash": "276893749adf4b53d0523fc335781d36bad9c56cdd6aecf2dfa7e3b0c31e7f60",
+      "description": {
+        "en": "Question 14. Which equation correctly shows the relationship between the numbers 2,560 and 256? Choices: A: 2,560 = 1,000 × (2 + 5 + 6). B: 2,560 = 10 × (2 + 5 + 6). C: 2,560 = 10 × (200 + 50 + 6). D: 2,560 = 1/10 × (200 + 50 + 6)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2,560",
+          "256",
+          "2,560 = 1,000 × (2 + 5 + 6)",
+          "2,560 = 10 × (2 + 5 + 6)",
+          "2,560 = 10 × (200 + 50 + 6)",
+          "2,560 = 1/10 × (200 + 50 + 6)",
+          "A: 2,560 = 1,000 × (2 + 5 + 6)",
+          "B: 2,560 = 10 × (2 + 5 + 6)",
+          "C: 2,560 = 10 × (200 + 50 + 6)",
+          "D: 2,560 = 1/10 × (200 + 50 + 6)",
+          "(2 + 5 + 6)",
+          "(200 + 50 + 6)",
+          "1/10"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q15": {
+      "inputHash": "3b6c45b5a6a49f2afcf377164ac5dc7ece02d6770bfb598b4467fcda615c42c1",
+      "description": {
+        "en": "Question 15. The distance from Greg’s house to Tanya’s house is 7/10 of a mile. A horizontal line segment connects a closed dot labeled Greg’s house on the left to a closed dot labeled Tanya’s house on the right. The segment is labeled 7/10 mile. Which number correctly shows the number of miles as a decimal? Choices: A: 0.07. B: 0.7. C: 7.0. D: 7.10."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7/10 of a mile",
+          "7/10 mile",
+          "0.07",
+          "0.7",
+          "7.0",
+          "7.10",
+          "A: 0.07",
+          "B: 0.7",
+          "C: 7.0",
+          "D: 7.10",
+          "7/10"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q16": {
+      "inputHash": "47bf7716ba3c955edfd9c5dab62c1408fa24d21906e934ba37391df0d63c42e1",
+      "description": {
+        "en": "Question 16. Movie tickets cost $9.25 each, and a large order of popcorn costs $7.75. What is the total cost of 5 movie tickets and a large order of popcorn? Choices: A: $22.00. B: $48.00. C: $54.00. D: $85.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$9.25",
+          "$7.75",
+          "5 movie tickets",
+          "$22.00",
+          "$48.00",
+          "$54.00",
+          "$85.00",
+          "A: $22.00",
+          "B: $48.00",
+          "C: $54.00",
+          "D: $85.00"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q17": {
+      "inputHash": "8068f23048bcc364b14d761dd7a578e2d56812b34e1d49de23dd21cf9eabc262",
+      "description": {
+        "en": "Question 17. Jack used cubes to make a right rectangular prism. The prism is 8 cubes long, 4 cubes high, and 2 cubes deep. A key states that each cube equals 1 cubic inch. He then made a smaller right rectangular prism using 1/4 of the number of cubes. What was the volume, in cubic inches, of the smaller right rectangular prism? Choices: A: 8 B: 13 C: 16 D: 64"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 cubes",
+          "4 cubes",
+          "2 cubes",
+          "1 cubic inch",
+          "1/4",
+          "A: 8",
+          "B: 13",
+          "C: 16",
+          "D: 64"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q18": {
+      "inputHash": "192682182db8a21622ad0227300daee38c3d6daf8d1a25b4fba983df7c1a1208",
+      "description": {
+        "en": "Question 18. What is the value of the expression below? 1/4 ÷ 8. Choices: A: 1/32 B: 1/2 C: 2 D: 32"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/4 ÷ 8",
+          "A: 1/32",
+          "B: 1/2",
+          "C: 2",
+          "D: 32",
+          "1/4",
+          "1/32",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q19": {
+      "inputHash": "b8b997bd533ff7527ed22f9be4923c86c95b9683fa0aea4e836d40dafbb85acd",
+      "description": {
+        "en": "Question 19. Nellie has a watering can that contains 20 cups of water. She pours one quart of water on each plant in her yard. If Nellie uses all of the water in the watering can, how many plants does she water? Choices: A: 4 B: 5 C: 10 D: 80"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20 cups",
+          "one quart",
+          "A: 4",
+          "B: 5",
+          "C: 10",
+          "D: 80"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q20": {
+      "inputHash": "9ee8e1068855660a1b2b00aed5719bf901d0850f8120a539bc37cbcac95904b7",
+      "description": {
+        "en": "Question 20. Christopher wants to buy a notebook for $2.15, a pack of glue sticks for $5.08, and a pack of pens for $3.08. What is the total cost of the three items Christopher wants to buy? Choices: A: $10.75 B: $10.31 C: $10.23 D: $10.11"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$2.15",
+          "$5.08",
+          "$3.08",
+          "A: $10.75",
+          "B: $10.31",
+          "C: $10.23",
+          "D: $10.11"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q21": {
+      "inputHash": "bb1901a3d8ccdfedce274b64ba312cef4f96a2f72cb6e60ae45d086346e1e9a4",
+      "description": {
+        "en": "Question 21. Min wants to make 100 name tags with ribbons attached to them. Each name tag requires five centimeters of ribbon. She has 3.25 meters of ribbon. Exactly how many more centimeters of ribbon does Min still need to make 100 name tags? Choices: A: 175 B: 305 C: 325 D: 825"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "100 name tags",
+          "five centimeters",
+          "3.25 meters",
+          "A: 175",
+          "B: 305",
+          "C: 325",
+          "D: 825"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q22": {
+      "inputHash": "8cb2295a4b75664c90e9f7a37d17a9c163f424f855beea4d5432e2b2bfe02537",
+      "description": {
+        "en": "Question 22. A park sign reads “Sunrise Trail, 3 1/4 miles.” What is the length, in feet, of the trail? Choices: A: 5,280 B: 5,720 C: 15,840 D: 17,160"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 1/4 miles",
+          "A: 5,280",
+          "B: 5,720",
+          "C: 15,840",
+          "D: 17,160",
+          "3 1/4"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q23": {
+      "inputHash": "b848643b6c958853a39da99bc1eacf91b3699437bf77b034a9ebdc26f3e285d3",
+      "description": {
+        "en": "Question 23. In a shipment of new books for a library, 5/12 of the books were poetry and 2/5 were biographies. The remainder of the books in the shipment were mysteries. What fraction of the books in the shipment were mysteries? Choices: A: 2/12 B: 11/60 C: 7/17 D: 49/60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5/12",
+          "2/5",
+          "A: 2/12",
+          "B: 11/60",
+          "C: 7/17",
+          "D: 49/60",
+          "2/12",
+          "11/60",
+          "7/17",
+          "49/60"
+        ]
+      }
+    },
+    "nysed-2015-g5-mc-q24": {
+      "inputHash": "fa18168bb98ec029c8a55fffd6354c05948033297ad95df2c234c6bd35311756",
+      "description": {
+        "en": "Question 24. In a math game, a player chooses two numbers, as described below. First number: a mixed number between 2 and 10. Second number: 1, 2, 3, 4, or 5. Which statement describes the product of the two numbers a player chooses? Choices: A: The product must be a whole number less than the second number. B: The product must be a value less than the second number. C: The product must be a whole number greater than the second number. D: The product must be a value greater than the second number."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "between 2 and 10",
+          "1, 2, 3, 4, or 5",
+          "A: The product must be a whole number less than the second number",
+          "B: The product must be a value less than the second number",
+          "C: The product must be a whole number greater than the second number",
+          "D: The product must be a value greater than the second number"
+        ]
+      }
+    }
+  }
+}

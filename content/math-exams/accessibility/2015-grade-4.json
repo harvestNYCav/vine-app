@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2015-grade-4-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2015-g4-mc-q1": {
+      "inputHash": "34fb4508898771ef645d94a635b73cd8f4bf40c3eba0d8921b70c6df8db02936",
+      "description": {
+        "en": "Question 1. Which number sentence is true? Choices: A: 376,425 > 367,419; B: 337,425 > 337,524; C: 336,425 < 335,426; D: 327,425 < 327,416."
+      }
+    },
+    "nysed-2015-g4-mc-q2": {
+      "inputHash": "4e3dac1e309924b5595d11b119b9ba5077a0b72e977c98b268a39af5bc5cf631",
+      "description": {
+        "en": "Question 2. Taylor is measuring leaves for an art project. A leaf is shown above a horizontal measurement line whose endpoints align with the leaf’s left and right ends; the line measures 3 1/2 inches. What is the length of this leaf? Choices: A: 3 1/4 inches; B: 3 1/2 inches; C: 4 1/4 inches; D: 4 1/2 inches."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "the line measures 3 1/2 inches",
+          "A: 3 1/4 inches",
+          "B: 3 1/2 inches",
+          "C: 4 1/4 inches",
+          "D: 4 1/2 inches"
+        ]
+      }
+    },
+    "nysed-2015-g4-mc-q3": {
+      "inputHash": "4019f662c7293936bda33227e0913a693de6814c153af95aaa7b10fcceafa234",
+      "description": {
+        "en": "Question 3. Ryan folded a sheet of paper into 12 equal-sized sections arranged in 2 rows and 6 columns. He shaded the 2 sections in the last column. Which fraction is equivalent to the one represented by the shaded part of the sheet of paper? Choices: A: 1/12; B: 1/6; C: 1/5; D: 6/5."
+      }
+    },
+    "nysed-2015-g4-mc-q4": {
+      "inputHash": "63381b8d0f4a51b6e3d9bd48ee3e338fc8cb7ee67ba9bec74d88e53be5dc7359",
+      "description": {
+        "en": "Question 4. A diagram has horizontal line ACE through C, vertical ray CB, and diagonal ray CD rising to the right. Angle DCE is the acute angle between diagonal ray CD and right-pointing ray CE; it is visibly smaller than half of the right angle BCE. What is the measure of angle DCE? Choices: A: 40°; B: 50°; C: 90°; D: 130°."
+      }
+    },
+    "nysed-2015-g4-mc-q5": {
+      "inputHash": "0fe1409a99f67f361a4deea8e6c0ea166bf733fb2d2f9e5341976f90b9e26f04",
+      "description": {
+        "en": "Question 5. Estelle had 28 coins in her collection. Fred had 4 times as many coins as Estelle had. Which equation can be used to determine the number of coins Fred had? Choices: A: 28 × 4 = □; B: 28 ÷ 4 = □; C: 28 + 4 = □; D: 28 − 4 = □."
+      }
+    },
+    "nysed-2015-g4-mc-q6": {
+      "inputHash": "0acf849fd272d7c94346dad3adf92db879f8c1b6e28ce92fa6147deedf3b5e04",
+      "description": {
+        "en": "Question 6. Which number would be 16,000 when rounded to the nearest thousand? Choices: A: 15,472; B: 15,518; C: 16,511; D: 16,739."
+      }
+    },
+    "nysed-2015-g4-mc-q7": {
+      "inputHash": "ca61301e89508cb6f3c8d235ec24fd9a1949807b9a00c37ee7cd716a3492436d",
+      "description": {
+        "en": "Question 7. Students shaded circles to represent fractions. Britney’s circle has 4 of 6 equal sections shaded. Keisha’s has 2 of 4 equal sections shaded. Ivan’s has 3 of 4 equal sections shaded. Walter’s has 2 of 3 equal sections shaded. Which two students’ shapes represent equivalent fractions? Choices: A: Britney’s fraction is equivalent to Walter’s fraction; B: Keisha’s fraction is equivalent to Walter’s fraction; C: Ivan’s fraction is equivalent to Keisha’s fraction; D: Ivan’s fraction is equivalent to Britney’s fraction."
+      }
+    },
+    "nysed-2015-g4-mc-q8": {
+      "inputHash": "d5086cb4193c98822671a658234b192fa6ac9bf40d27240dd516b0a6d0dc6d89",
+      "description": {
+        "en": "Question 8. Carolina moved the hand of a spinner 270 degrees. A diagram shows a three-quarter counterclockwise turn from an upward-pointing position to a left-pointing position. What fraction of a complete turn through a circle is 270 degrees? Choices: A: 3/360; B: 27/360; C: 90/360; D: 270/360."
+      }
+    },
+    "nysed-2015-g4-mc-q9": {
+      "inputHash": "84b95fe43cae8e3147fc29346242203c87fd437550a9fe3f3a83a548084ffdd4",
+      "description": {
+        "en": "Question 9. Which model represents 3 × 1/2? Choices: A: 3 fully shaded squares and a fourth square with 1/2 shaded; B: 3 squares, each divided diagonally into 2 equal triangles with 1 triangle shaded; C: 2 rectangles, each divided into 3 equal vertical parts with 1 part shaded; D: 3 rectangles, each divided into thirds with 2/3 shaded."
+      }
+    },
+    "nysed-2015-g4-mc-q10": {
+      "inputHash": "04a25e4e7089bc4b2c5b1cf774f07a0caf86893c095672a9051f6fd983c7936c",
+      "description": {
+        "en": "Question 10. What is the missing number in the equation 5,600 ÷ 8 = □? Choices: A: 7; B: 70; C: 700; D: 7,000."
+      }
+    },
+    "nysed-2015-g4-mc-q11": {
+      "inputHash": "8ebe80edae85a46eebc938c2c5835f8fc2a53b261a47eebd3a4baa09c4830e83",
+      "description": {
+        "en": "Question 11. A fraction strip is divided into 5 equal parts, and the first 3 parts are shaded. Which expression represents the amount of the fraction strip that is shaded? Choices: A: 1/5 + 1/5; B: 1/5 + 1/5 + 1/5; C: 3/5 + 3/5 + 3/5; D: 3/5 + 2/5."
+      }
+    },
+    "nysed-2015-g4-mc-q12": {
+      "inputHash": "4f2e144458ef1bcc04a30fe2bb17afc089a54088652e9e1ccb86b0d803823231",
+      "description": {
+        "en": "Question 12. Rose uses instant lemonade powder to make 7 pitchers of lemonade. She uses 2/8 cup of powder for each pitcher. What is the total amount of powder that Rose uses? Choices: A: 2/56 cups; B: 14/56 cups; C: 9/8 cups; D: 14/8 cups."
+      }
+    },
+    "nysed-2015-g4-mc-q13": {
+      "inputHash": "fe0be2dcbb2c5424cf7bd39601a871a6d5f26e3e0fa202ca4df0875a91a29dbf",
+      "description": {
+        "en": "Question 13. A store ordered 28 boxes holding 12 banana muffins each and 5 boxes holding 6 blueberry muffins each. What was the total number of muffins the store ordered? Choices: A: 51; B: 366; C: 440; D: 10,080."
+      }
+    },
+    "nysed-2015-g4-mc-q14": {
+      "inputHash": "acbc7f5e0ef5ec809929a451528523662400c979fdb1cbcfb8b3beccb33f9c0a",
+      "description": {
+        "en": "Question 14. A regular-looking octagon is shown with horizontal top and bottom sides, vertical left and right sides, and four diagonal corner sides. Which statement best classifies the figure? Choices: A: The figure has opposite sides that are perpendicular and angles that measure 135°; B: The figure has opposite sides that are perpendicular and angles that measure 45°; C: The figure has opposite sides that are parallel and angles that measure 135°; D: The figure has opposite sides that are parallel and angles that measure 45°."
+      }
+    },
+    "nysed-2015-g4-mc-q15": {
+      "inputHash": "f8e015bb2dd255515f7beda98b27068662f40bd557f4d5efa7a9a8ea868183c8",
+      "description": {
+        "en": "Question 15. The price of a board game is $24. The price of the board game is 2 times as much as the price of a jigsaw puzzle. What is the price of the jigsaw puzzle? Choices: A: $12; B: $22; C: $26; D: $48."
+      }
+    },
+    "nysed-2015-g4-mc-q16": {
+      "inputHash": "07fa788df2a65175e5422ff1559227326b94652d99f7d5df995014551080dfe1",
+      "description": {
+        "en": "Question 16. A rectangular model is divided into 4 equal vertical parts with 3 shaded. Which figure is shaded to show a fraction equivalent to the model? Choices: A: a rectangle divided into 8 equal vertical parts with 6 shaded; B: a rectangle divided into 3 equal vertical parts with 2 shaded; C: a rectangle divided into 4 equal vertical parts with 1 shaded; D: a rectangle divided into 8 equal vertical parts with 3 shaded."
+      }
+    },
+    "nysed-2015-g4-mc-q17": {
+      "inputHash": "649854b0cf5f8f6dd1d995abfe1069969a77ac275f2feed09e659aaa356ec066",
+      "description": {
+        "en": "Question 17. The value of the 7 in 507,264 is 10 times the value of the 7 in which number? Choices: A: 493,725; B: 587,921; C: 672,439; D: 714,093."
+      }
+    },
+    "nysed-2015-g4-mc-q18": {
+      "inputHash": "192daa2ec4e7695695579d65d87efda03e4fe480a6301eb017e1ba9c76c6bbc2",
+      "description": {
+        "en": "Question 18. A gardener ordered 46 flowering bushes to plant in a park. Each bush cost $27. What was the total cost of the bushes? Choices: A: $1,102; B: $1,142; C: $1,202; D: $1,242."
+      }
+    },
+    "nysed-2015-g4-mc-q19": {
+      "inputHash": "15bf13f7d529786ee8850dfdc1f685679b328fda48dc090561d8aed15363c095",
+      "description": {
+        "en": "Question 19. Dennis wants to buy carpet for the rectangular floor of his living room. The room is 12 feet long and 16 feet wide. What is the area, in square feet, of the living room floor? Choices: A: 28; B: 56; C: 182; D: 192."
+      }
+    },
+    "nysed-2015-g4-mc-q20": {
+      "inputHash": "32c169e65c1669017658430dc6028b2c612e5d096d80288fc83de10cb0d4b44f",
+      "description": {
+        "en": "Question 20. A rectangle has a width of 9 inches. The area of the rectangle is 648 square inches. What is the length, in inches, of the rectangle? Choices: A: 36; B: 72; C: 162; D: 315."
+      }
+    },
+    "nysed-2015-g4-mc-q21": {
+      "inputHash": "732fdc1944a5fafb3a38791a53ec2f4526f4977423058e72545a7fddc81b756e",
+      "description": {
+        "en": "Question 21. The number below has the digit 6 in two different places. 916,672 How many times greater is the value represented by the 6 in the thousands place than the value represented by the 6 in the hundreds place? Choices: A: 10; B: 100; C: 1,000; D: 10,000."
+      }
+    }
+  }
+}

@@ -123,8 +123,8 @@ const GRADE_DOMAIN_LESSONS: Record<
         es: 'Usa el valor posicional para redondear, sumar, restar y multiplicar por decenas.',
       },
       overview: {
-        en: 'Grade 3 place-value work extends through 1,000. You round to the nearest ten or hundred, add and subtract within 1,000, and multiply one-digit numbers by multiples of ten.',
-        es: 'En 3.er grado, el valor posicional se extiende hasta 1,000. Redondeas a la decena o centena más cercana, sumas y restas hasta 1,000 y multiplicas números de una cifra por múltiplos de diez.',
+        en: 'Grade 3 place-value work includes reading and rounding whole numbers beyond 1,000 when a problem calls for it. You round to the nearest ten or hundred, add and subtract within 1,000, and multiply one-digit numbers by multiples of ten.',
+        es: 'En 3.er grado, el trabajo con el valor posicional incluye leer y redondear números enteros mayores que 1,000 cuando un problema lo requiere. Redondeas a la decena o centena más cercana, sumas y restas hasta 1,000 y multiplicas números de una cifra por múltiplos de diez.',
       },
       learningGoals: [
         { en: 'Round whole numbers to the nearest ten or hundred.', es: 'Redondear números enteros a la decena o centena más cercana.' },
@@ -271,7 +271,7 @@ const GRADE_DOMAIN_LESSONS: Record<
       learningGoals: [
         { en: 'Read, compare, and round whole numbers through 1,000,000.', es: 'Leer, comparar y redondear números enteros hasta 1,000,000.' },
         { en: 'Add and subtract multi-digit whole numbers fluently.', es: 'Sumar y restar con fluidez números enteros de varias cifras.' },
-        { en: 'Multiply up to four-digit by one-digit numbers and divide by one-digit divisors.', es: 'Multiplicar números de hasta cuatro cifras por una cifra y dividir entre divisores de una cifra.' },
+        { en: 'Multiply up to four-digit by one-digit and two-digit by two-digit numbers, and divide by one-digit divisors.', es: 'Multiplicar números de hasta cuatro cifras por una cifra y números de dos cifras por dos cifras, y dividir entre divisores de una cifra.' },
       ],
       strategy: {
         en: 'Estimate first, align place values, and use partial products or quotients so every step has a clear place-value meaning.',

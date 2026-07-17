@@ -22,9 +22,9 @@ export default function NYSEDAttribution({ exam }: { exam: ElaExamDefinition }) 
         NYSED.
       </p>
       <p className="mt-2">
-        Reading passages and other third-party works retain their own rights. Vine reproduces the
-        released passage pages for noncommercial educational practice. Source and permission credits
-        remain available in the official NYSED booklet linked below.
+        Reading passages and other third-party works retain their own rights. Vine provides accessible
+        text transcripts alongside facsimiles of the released passage pages for noncommercial educational
+        practice. Source and permission credits remain available in the official NYSED booklet linked below.
       </p>
       <p className="mt-2">
         Source:{' '}

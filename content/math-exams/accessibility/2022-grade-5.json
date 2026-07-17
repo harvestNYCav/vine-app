@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2022-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2022-g5-mc-q1": {
+      "inputHash": "f030526fc235c152942c41a64a597ab92f4d32bc083910a13718af23ed0493cf",
+      "description": {
+        "en": "Question 1. Jill has 4 one-dollar bills, 3 quarters, 4 dimes, and 3 pennies. Mark has 3 one-dollar bills, 4 dimes, and 2 pennies. What is the difference between the amount of money Jill has and the amount of money Mark has? Choices: A: $1.01 B: $1.76 C: $7.85 D: $8.60",
+        "es": "Pregunta 1. Jill tiene 4 billetes de un dólar, 3 monedas de veinticinco centavos, 4 monedas de diez centavos y 3 monedas de un centavo. Mark tiene 3 billetes de un dólar, 4 monedas de diez centavos y 2 monedas de un centavo. ¿Cuál es la diferencia entre la cantidad de dinero que tiene Jill y la cantidad de dinero que tiene Mark? Opciones: A: $1.01 B: $1.76 C: $7.85 D: $8.60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 one-dollar bills",
+          "3 quarters",
+          "4 dimes",
+          "3 pennies",
+          "3 one-dollar bills",
+          "2 pennies",
+          "$1.01",
+          "$1.76",
+          "$7.85",
+          "$8.60",
+          "A: $1.01",
+          "B: $1.76",
+          "C: $7.85",
+          "D: $8.60"
+        ],
+        "es": [
+          "4",
+          "3",
+          "2",
+          "$1.01",
+          "$1.76",
+          "$7.85",
+          "$8.60",
+          "A: $1.01",
+          "B: $1.76",
+          "C: $7.85",
+          "D: $8.60"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q2": {
+      "inputHash": "9550ab6004f7f499f0c4fd6048ec875dbccb3971d5285db3dac99e2e03db7049",
+      "description": {
+        "en": "Question 2. What is the value of 6 3/5 + 3 2/3? Choices: A: 2 14/15 B: 9 4/15 C: 9 5/8 D: 10 4/15",
+        "es": "Pregunta 2. ¿Cuál es el valor de 6 3/5 + 3 2/3? Opciones: A: 2 14/15 B: 9 4/15 C: 9 5/8 D: 10 4/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 3/5 + 3 2/3",
+          "2 14/15",
+          "9 4/15",
+          "9 5/8",
+          "10 4/15",
+          "A: 2 14/15",
+          "B: 9 4/15",
+          "C: 9 5/8",
+          "D: 10 4/15",
+          "6 3/5",
+          "3 2/3"
+        ],
+        "es": [
+          "6 3/5 + 3 2/3",
+          "2 14/15",
+          "9 4/15",
+          "9 5/8",
+          "10 4/15",
+          "A: 2 14/15",
+          "B: 9 4/15",
+          "C: 9 5/8",
+          "D: 10 4/15",
+          "6 3/5",
+          "3 2/3"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q3": {
+      "inputHash": "9fa9ee172c2d5dbe98004b9762802236910b78a03fadd3d2f9029112b4b6c487",
+      "description": {
+        "en": "Question 3. Which two-dimensional figure is always a regular quadrilateral? Choices: A: rhombus B: polygon C: square D: trapezoid",
+        "es": "Pregunta 3. ¿Qué figura bidimensional siempre es un cuadrilátero regular? Opciones: A: rombo B: polígono C: cuadrado D: trapecio"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "rhombus",
+          "polygon",
+          "square",
+          "trapezoid",
+          "A: rhombus",
+          "B: polygon",
+          "C: square",
+          "D: trapezoid"
+        ],
+        "es": [
+          "rombo",
+          "polígono",
+          "cuadrado",
+          "trapecio",
+          "A: rombo",
+          "B: polígono",
+          "C: cuadrado",
+          "D: trapecio"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q6": {
+      "inputHash": "68f6bc46c1e1ab63541980c9f802df731c7617a20acf4fddfdf11662d2594f1b",
+      "description": {
+        "en": "Question 6. Janelle makes fruit punch by mixing these ingredients: 5 pints of orange juice, 6 cups of grape juice, and 8 cups of apple juice. How many quarts of fruit punch does Janelle make? Choices: A: 3 B: 6 C: 24 D: 96",
+        "es": "Pregunta 6. Janelle prepara ponche de frutas mezclando los ingredientes que se indican a continuación: 5 pintas de jugo de naranja; 6 tazas de jugo de uva; y 8 tazas de jugo de manzana. ¿Cuántos cuartos de galón de ponche de frutas prepara Janelle? Opciones: A: 3 B: 6 C: 24 D: 96"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 pints",
+          "6 cups",
+          "8 cups",
+          "3",
+          "6",
+          "24",
+          "96",
+          "A: 3",
+          "B: 6",
+          "C: 24",
+          "D: 96"
+        ],
+        "es": [
+          "5 pintas",
+          "6 tazas",
+          "8 tazas",
+          "3",
+          "6",
+          "24",
+          "96",
+          "A: 3",
+          "B: 6",
+          "C: 24",
+          "D: 96"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q7": {
+      "inputHash": "bbdd50d8390caa6c3999fb903f302594288837c167ca1ec750006bb49e7dcd00",
+      "description": {
+        "en": "Question 7. Shara is building a birdhouse. She cuts a 6-foot-long board into sections that are each 1/3 foot long. How many sections of the board will Shara have when she is finished cutting? Choices: A: 2 B: 6 1/3 C: 10 1/3 D: 18",
+        "es": "Pregunta 7. Shara está construyendo una pajarera. Corta una tabla de 6 pies de largo en secciones que tienen 1/3 de pie de largo cada una. ¿Cuántas secciones de la tabla tendrá Shara cuando termine de cortar? Opciones: A: 2 B: 6 1/3 C: 10 1/3 D: 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6-foot-long",
+          "1/3 foot",
+          "2",
+          "6 1/3",
+          "10 1/3",
+          "18",
+          "A: 2",
+          "B: 6 1/3",
+          "C: 10 1/3",
+          "D: 18",
+          "1/3"
+        ],
+        "es": [
+          "6 pies",
+          "1/3 de pie",
+          "2",
+          "6 1/3",
+          "10 1/3",
+          "18",
+          "A: 2",
+          "B: 6 1/3",
+          "C: 10 1/3",
+          "D: 18",
+          "1/3"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q13": {
+      "inputHash": "321e78bc3d80eabc4b631391b4268cdba8ef32518307b7b929535764bf01051a",
+      "description": {
+        "en": "Question 13. Which value makes the comparison ? < 0.6 true? Choices: A: 0.6 B: 0.7 C: 0.59 D: 0.64",
+        "es": "Pregunta 13. ¿Qué valor hace que la siguiente comparación sea verdadera? Una línea en blanco con un signo de interrogación representa el valor desconocido en la desigualdad ? < 0.6. Opciones: A: 0.6 B: 0.7 C: 0.59 D: 0.64"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "? < 0.6",
+          "0.6",
+          "0.7",
+          "0.59",
+          "0.64",
+          "A: 0.6",
+          "B: 0.7",
+          "C: 0.59",
+          "D: 0.64"
+        ],
+        "es": [
+          "? < 0.6",
+          "0.6",
+          "0.7",
+          "0.59",
+          "0.64",
+          "A: 0.6",
+          "B: 0.7",
+          "C: 0.59",
+          "D: 0.64"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q14": {
+      "inputHash": "a274fb25ed6aa4c9e4d7fefb553266b3656bf180cf7d963431ac4d3efd32db1a",
+      "description": {
+        "en": "Question 14. A student completes his homework in 1 hour and 34 minutes. How long, in minutes, does it take the student to complete his homework? Choices: A: 26 B: 60 C: 94 D: 134",
+        "es": "Pregunta 14. Un alumno completa su tarea en 1 hora y 34 minutos. ¿Cuánto tiempo, en minutos, le lleva al alumno completar su tarea? Opciones: A: 26 B: 60 C: 94 D: 134"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 hour",
+          "34 minutes",
+          "26",
+          "60",
+          "94",
+          "134",
+          "A: 26",
+          "B: 60",
+          "C: 94",
+          "D: 134"
+        ],
+        "es": [
+          "1 hora",
+          "34 minutos",
+          "26",
+          "60",
+          "94",
+          "134",
+          "A: 26",
+          "B: 60",
+          "C: 94",
+          "D: 134"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q15": {
+      "inputHash": "439eddd5c4d31cf139235b11d4c37022a2d7adda178d1fa899e6670b49db4adc",
+      "description": {
+        "en": "Question 15. What is the value of the expression 2,158 ÷ 26? Choices: A: 80 B: 83 C: 86 D: 89",
+        "es": "Pregunta 15. ¿Cuál es el valor de la expresión que se muestra a continuación? 2,158 ÷ 26. Opciones: A: 80 B: 83 C: 86 D: 89"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2,158 ÷ 26",
+          "80",
+          "83",
+          "86",
+          "89",
+          "A: 80",
+          "B: 83",
+          "C: 86",
+          "D: 89"
+        ],
+        "es": [
+          "2,158 ÷ 26",
+          "80",
+          "83",
+          "86",
+          "89",
+          "A: 80",
+          "B: 83",
+          "C: 86",
+          "D: 89"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q18": {
+      "inputHash": "36a7fc59b667837f3cf9396487f084a1e587ec081e086d7f7ae92efe720139c0",
+      "description": {
+        "en": "Question 18. Ms. Torres has a box of scraps of wood. She measures the length of each scrap of wood to the nearest half inch. The results are represented on a line plot titled “LENGTH OF SCRAPS OF WOOD.” The horizontal number line, labeled “Length (inches),” has arrows at both ends and tick marks at 5, 5 1/2, 6, 6 1/2, 7, 7 1/2, and 8. There are no X marks above 5 or 7 1/2. There is 1 X above 5 1/2, 1 X above 6, 3 X marks above 6 1/2, 2 X marks above 7, and 1 X above 8. What is the approximate length, in inches, of the scraps of wood when they are placed end to end? Choices: A: 19 1/2. B: 33. C: 45 1/2. D: 53.",
+        "es": "Pregunta 18. La señora Torres tiene una caja de pedazos de madera. Mide la longitud de cada pedazo de madera a la mitad de una pulgada más cercana. Los resultados se representan en un diagrama lineal titulado «LONGITUD DE LOS PEDAZOS DE MADERA». La recta, etiquetada «Longitud (pulgadas)», tiene marcas cada media pulgada desde 5 hasta 8 y flechas en ambos extremos. Hay una X sobre 5 1/2, una X sobre 6, tres X apiladas sobre 6 1/2, dos X apiladas sobre 7 y una X sobre 8. No hay X sobre 5 ni sobre 7 1/2. ¿Cuál es la longitud aproximada, en pulgadas, de los pedazos de madera cuando se los coloca uno tras otro? Opciones: A: 19 1/2 B: 33 C: 45 1/2 D: 53"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "5 1/2",
+          "6",
+          "6 1/2",
+          "7",
+          "7 1/2",
+          "8",
+          "1 X",
+          "3 X",
+          "2 X",
+          "19 1/2",
+          "33",
+          "45 1/2",
+          "53",
+          "A: 19 1/2",
+          "B: 33",
+          "C: 45 1/2",
+          "D: 53"
+        ],
+        "es": [
+          "5",
+          "5 1/2",
+          "6",
+          "6 1/2",
+          "7",
+          "7 1/2",
+          "8",
+          "19 1/2",
+          "33",
+          "45 1/2",
+          "53",
+          "A: 19 1/2",
+          "B: 33",
+          "C: 45 1/2",
+          "D: 53"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q19": {
+      "inputHash": "b21084890e86f6064f92e6b136a993418ae4f4bda7ae70b028920b60d9ee478d",
+      "description": {
+        "en": "Question 19. Which expression is equivalent to 65 × 0.15? Choices: A: 65 × 0.1 + 0.05. B: 65 × 0.05 + 0.1. C: (65 × 0.1) + (65 × 0.5). D: (65 × 0.1) + (65 × 0.05).",
+        "es": "Pregunta 19. ¿Qué expresión es equivalente a 65 × 0.15? Opciones: A: 65 × 0.1 + 0.05 B: 65 × 0.05 + 0.1 C: (65 × 0.1) + (65 × 0.5) D: (65 × 0.1) + (65 × 0.05)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "65 × 0.15",
+          "65 × 0.1 + 0.05",
+          "65 × 0.05 + 0.1",
+          "(65 × 0.1) + (65 × 0.5)",
+          "(65 × 0.1) + (65 × 0.05)",
+          "A: 65 × 0.1 + 0.05",
+          "B: 65 × 0.05 + 0.1",
+          "C: (65 × 0.1) + (65 × 0.5)",
+          "D: (65 × 0.1) + (65 × 0.05)",
+          "(65 × 0.1)",
+          "(65 × 0.5)",
+          "(65 × 0.05)"
+        ],
+        "es": [
+          "65 × 0.15",
+          "65 × 0.1 + 0.05",
+          "65 × 0.05 + 0.1",
+          "(65 × 0.1) + (65 × 0.5)",
+          "(65 × 0.1) + (65 × 0.05)",
+          "A: 65 × 0.1 + 0.05",
+          "B: 65 × 0.05 + 0.1",
+          "C: (65 × 0.1) + (65 × 0.5)",
+          "D: (65 × 0.1) + (65 × 0.05)",
+          "(65 × 0.1)",
+          "(65 × 0.5)",
+          "(65 × 0.05)"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q20": {
+      "inputHash": "b8b42083aafd69cc9c8c47033699e675439481423055d87f9449aeb451e72a70",
+      "description": {
+        "en": "Question 20. What is the value of the expression 14 1/3 − 6 5/8? Choices: A: 7 1/24. B: 7 17/24. C: 8 7/24. D: 8 23/24.",
+        "es": "Pregunta 20. ¿Cuál es el valor de la expresión que se muestra a continuación? 14 1/3 − 6 5/8. Opciones: A: 7 1/24 B: 7 17/24 C: 8 7/24 D: 8 23/24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "14 1/3 − 6 5/8",
+          "7 1/24",
+          "7 17/24",
+          "8 7/24",
+          "8 23/24",
+          "A: 7 1/24",
+          "B: 7 17/24",
+          "C: 8 7/24",
+          "D: 8 23/24",
+          "14 1/3",
+          "6 5/8"
+        ],
+        "es": [
+          "14 1/3 − 6 5/8",
+          "7 1/24",
+          "7 17/24",
+          "8 7/24",
+          "8 23/24",
+          "A: 7 1/24",
+          "B: 7 17/24",
+          "C: 8 7/24",
+          "D: 8 23/24",
+          "14 1/3",
+          "6 5/8"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q21": {
+      "inputHash": "a0abd62617a56e3c75e89a7dba40485f230c41ec40f9d377318857706ce79046",
+      "description": {
+        "en": "Question 21. Trey and his 4 friends equally share a 12-ounce jar of applesauce. How much applesauce, in ounces, does each person receive? Choices: A: 5/12. B: 2 2/5. C: 17. D: 60.",
+        "es": "Pregunta 21. Trey y sus 4 amigos comparten un frasco de compota de manzana de 12 onzas en partes iguales. ¿Cuánta compota de manzana, en onzas, recibe cada persona? Opciones: A: 5/12 B: 2 2/5 C: 17 D: 60"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4",
+          "12-ounce",
+          "5/12",
+          "2 2/5",
+          "17",
+          "60",
+          "A: 5/12",
+          "B: 2 2/5",
+          "C: 17",
+          "D: 60"
+        ],
+        "es": [
+          "4",
+          "12",
+          "5/12",
+          "2 2/5",
+          "17",
+          "60",
+          "A: 5/12",
+          "B: 2 2/5",
+          "C: 17",
+          "D: 60"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q22": {
+      "inputHash": "9136352e7230917f045382508e5712784ba33b184fe783c45ef789ccc847d7c3",
+      "description": {
+        "en": "Question 22. What is the value of 3/10 + 27/100? Choices: A: 30/10. B: 30/100. C: 57/10. D: 57/100.",
+        "es": "Pregunta 22. ¿Cuál es el valor de 3/10 + 27/100? Opciones: A: 30/10 B: 30/100 C: 57/10 D: 57/100"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3/10 + 27/100",
+          "30/10",
+          "30/100",
+          "57/10",
+          "57/100",
+          "A: 30/10",
+          "B: 30/100",
+          "C: 57/10",
+          "D: 57/100",
+          "3/10",
+          "27/100"
+        ],
+        "es": [
+          "3/10 + 27/100",
+          "30/10",
+          "30/100",
+          "57/10",
+          "57/100",
+          "A: 30/10",
+          "B: 30/100",
+          "C: 57/10",
+          "D: 57/100",
+          "3/10",
+          "27/100"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q23": {
+      "inputHash": "7ab87da74669aca2eaa543537c1a943275c6c2a3839acec53486c12ea0a6440d",
+      "description": {
+        "en": "Question 23. Which statement about the quotient of 425.378 ÷ 10³ is true? Choices: A: The decimal point is located to the left of the 4. B: The decimal point is located to the right of the 8. C: The decimal point is located between the 3 and the 7. D: The decimal point is located between the 4 and the 2.",
+        "es": "Pregunta 23. ¿Qué afirmación acerca del cociente de 425.378 ÷ 10³ es verdadera? Opciones: A: El punto decimal está ubicado a la izquierda del 4. B: El punto decimal está ubicado a la derecha del 8. C: El punto decimal está ubicado entre el 3 y el 7. D: El punto decimal está ubicado entre el 4 y el 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "425.378 ÷ 10³",
+          "left of the 4",
+          "right of the 8",
+          "between the 3 and the 7",
+          "between the 4 and the 2",
+          "A: The decimal point is located to the left of the 4",
+          "B: The decimal point is located to the right of the 8",
+          "C: The decimal point is located between the 3 and the 7",
+          "D: The decimal point is located between the 4 and the 2",
+          "10³"
+        ],
+        "es": [
+          "425.378 ÷ 10³",
+          "4",
+          "8",
+          "3",
+          "7",
+          "2",
+          "A: El punto decimal está ubicado a la izquierda del 4",
+          "B: El punto decimal está ubicado a la derecha del 8",
+          "C: El punto decimal está ubicado entre el 3 y el 7",
+          "D: El punto decimal está ubicado entre el 4 y el 2",
+          "10³"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q31": {
+      "inputHash": "4ef1fe871d136497287342cc421b3c8b0a86ef36af5e051dccf599a5618083a0",
+      "description": {
+        "en": "Question 31. What is the missing value in the equation 4/10 + ?/100 = 7/10? Choices: A: 1. B: 3. C: 10. D: 30.",
+        "es": "Pregunta 31. ¿Cuál es el valor que falta en la ecuación que se muestra a continuación? 4/10 + ?/100 = 7/10. Opciones: A: 1 B: 3 C: 10 D: 30"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4/10 + ?/100 = 7/10",
+          "1",
+          "3",
+          "10",
+          "30",
+          "A: 1",
+          "B: 3",
+          "C: 10",
+          "D: 30",
+          "4/10",
+          "7/10"
+        ],
+        "es": [
+          "4/10 + ?/100 = 7/10",
+          "1",
+          "3",
+          "10",
+          "30",
+          "A: 1",
+          "B: 3",
+          "C: 10",
+          "D: 30",
+          "4/10",
+          "7/10"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q32": {
+      "inputHash": "0da5d711433235c124c59200d432dae0eeb5852e7151868d784895e11caf2386",
+      "description": {
+        "en": "Question 32. Which expression is equivalent to 2/3 × 7? Choices: A: 2 × 7 ÷ 3. B: 2 × 3 ÷ 7. C: 7 × 3 ÷ 2. D: 7 ÷ 2 × 3.",
+        "es": "Pregunta 32. ¿Qué expresión es equivalente a 2/3 × 7? Opciones: A: 2 × 7 ÷ 3 B: 2 × 3 ÷ 7 C: 7 × 3 ÷ 2 D: 7 ÷ 2 × 3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/3 × 7",
+          "2 × 7 ÷ 3",
+          "2 × 3 ÷ 7",
+          "7 × 3 ÷ 2",
+          "7 ÷ 2 × 3",
+          "A: 2 × 7 ÷ 3",
+          "B: 2 × 3 ÷ 7",
+          "C: 7 × 3 ÷ 2",
+          "D: 7 ÷ 2 × 3",
+          "2/3"
+        ],
+        "es": [
+          "2/3 × 7",
+          "2 × 7 ÷ 3",
+          "2 × 3 ÷ 7",
+          "7 × 3 ÷ 2",
+          "7 ÷ 2 × 3",
+          "A: 2 × 7 ÷ 3",
+          "B: 2 × 3 ÷ 7",
+          "C: 7 × 3 ÷ 2",
+          "D: 7 ÷ 2 × 3",
+          "2/3"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q33": {
+      "inputHash": "0c9895688cf665d18d1ec4190755f291e844be0bb6970b241491fa2223075f2d",
+      "description": {
+        "en": "Question 33. Which two-dimensional figure always has 4 equal sides and 4 right angles? Choices: A: parallelogram. B: rectangle. C: rhombus. D: square.",
+        "es": "Pregunta 33. ¿Qué figura bidimensional siempre tiene 4 lados iguales y 4 ángulos rectos? Opciones: A: paralelogramo B: rectángulo C: rombo D: cuadrado"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 equal sides",
+          "4 right angles",
+          "parallelogram",
+          "rectangle",
+          "rhombus",
+          "square",
+          "A: parallelogram",
+          "B: rectangle",
+          "C: rhombus",
+          "D: square"
+        ],
+        "es": [
+          "4 lados iguales",
+          "4 ángulos rectos",
+          "A: paralelogramo",
+          "B: rectángulo",
+          "C: rombo",
+          "D: cuadrado"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q34": {
+      "inputHash": "acaac55081f8cbbd9ea706a2a32b2eacbcc139c691b34485e3f4d65f806bf800",
+      "description": {
+        "en": "Question 34. Which expression has a value less than 1? Choices: A: 3/4 × 4/3. B: 3/4 × 6/3. C: 3/4 × 4/4. D: 3/4 × 8/4.",
+        "es": "Pregunta 34. ¿Qué expresión tiene un valor menor que 1? Opciones: A: 3/4 × 4/3 B: 3/4 × 6/3 C: 3/4 × 4/4 D: 3/4 × 8/4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "less than 1",
+          "3/4 × 4/3",
+          "3/4 × 6/3",
+          "3/4 × 4/4",
+          "3/4 × 8/4",
+          "A: 3/4 × 4/3",
+          "B: 3/4 × 6/3",
+          "C: 3/4 × 4/4",
+          "D: 3/4 × 8/4",
+          "3/4",
+          "4/3",
+          "6/3",
+          "4/4",
+          "8/4"
+        ],
+        "es": [
+          "1",
+          "3/4 × 4/3",
+          "3/4 × 6/3",
+          "3/4 × 4/4",
+          "3/4 × 8/4",
+          "A: 3/4 × 4/3",
+          "B: 3/4 × 6/3",
+          "C: 3/4 × 4/4",
+          "D: 3/4 × 8/4",
+          "3/4",
+          "4/3",
+          "6/3",
+          "4/4",
+          "8/4"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q35": {
+      "inputHash": "4d844994749248514f6f5c6d26a06a949434761473b51e0509f5eec780967345",
+      "description": {
+        "en": "Question 35. Which fraction has the same value as 0.28? Choices: A: 28/1. B: 28/10. C: 28/100. D: 28/1,000.",
+        "es": "Pregunta 35. ¿Qué fracción tiene el mismo valor que 0.28? Opciones: A: 28/1 B: 28/10 C: 28/100 D: 28/1,000"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0.28",
+          "28/1",
+          "28/10",
+          "28/100",
+          "28/1,000",
+          "A: 28/1",
+          "B: 28/10",
+          "C: 28/100",
+          "D: 28/1,000"
+        ],
+        "es": [
+          "0.28",
+          "28/1",
+          "28/10",
+          "28/100",
+          "28/1,000",
+          "A: 28/1",
+          "B: 28/10",
+          "C: 28/100",
+          "D: 28/1,000"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q36": {
+      "inputHash": "80c0d923fe5e1c0979829172033a7e47fa84e3ce376c985c8e764fbd98276dd4",
+      "description": {
+        "en": "Question 36. Mr. Davis buys 4 pizzas for a family dinner. He cuts each pizza into sixths. How many pieces of pizza does Mr. Davis have for the family dinner? Choices: A: 6. B: 10. C: 20. D: 24.",
+        "es": "Pregunta 36. El señor Davis compra 4 pizzas para una cena familiar. Corta cada pizza en sextos. ¿Cuántas porciones de pizza tiene el señor Davis para la cena familiar? Opciones: A: 6 B: 10 C: 20 D: 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 pizzas",
+          "sixths",
+          "6",
+          "10",
+          "20",
+          "24",
+          "A: 6",
+          "B: 10",
+          "C: 20",
+          "D: 24"
+        ],
+        "es": [
+          "4 pizzas",
+          "sextos",
+          "6",
+          "10",
+          "20",
+          "24",
+          "A: 6",
+          "B: 10",
+          "C: 20",
+          "D: 24"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q37": {
+      "inputHash": "dc236b021d13a4bd01ee21c2296b24d9e024e41a114e0958d43740a5e420951f",
+      "description": {
+        "en": "Question 37. Nicolas drinks 2/3 liter of water in the morning and 1/2 liter of water at lunch. During basketball practice, he drinks another 2/3 liter of water. What is the total amount of water, in liters, that Nicolas drinks? Choices: A: 3/5. B: 5/8. C: 1 1/6. D: 1 5/6.",
+        "es": "Pregunta 37. Nicolas bebe 2/3 de litro de agua a la mañana y 1/2 litro de agua en el almuerzo. Durante la práctica de baloncesto, bebe otros 2/3 de litro de agua. ¿Cuál es la cantidad total de agua, en litros, que bebe Nicolas? Opciones: A: 3/5 B: 5/8 C: 1 1/6 D: 1 5/6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/3 liter",
+          "1/2 liter",
+          "3/5",
+          "5/8",
+          "1 1/6",
+          "1 5/6",
+          "A: 3/5",
+          "B: 5/8",
+          "C: 1 1/6",
+          "D: 1 5/6",
+          "2/3",
+          "1/2"
+        ],
+        "es": [
+          "2/3",
+          "1/2",
+          "3/5",
+          "5/8",
+          "1 1/6",
+          "1 5/6",
+          "A: 3/5",
+          "B: 5/8",
+          "C: 1 1/6",
+          "D: 1 5/6"
+        ]
+      }
+    },
+    "nysed-2022-g5-mc-q38": {
+      "inputHash": "620f9cc20c33f249895aa0a93ee0decb447c16e4dc99d92dc48970e0b34e10c2",
+      "description": {
+        "en": "Question 38. What is six hundred eighty and fourteen thousandths written in standard form? Choices: A: 608.014. B: 608.14. C: 680.014. D: 680.14.",
+        "es": "Pregunta 38. ¿Cómo se escribe seiscientos ochenta y catorce milésimas en forma estándar? Opciones: A: 608.014 B: 608.14 C: 680.014 D: 680.14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "six hundred eighty",
+          "fourteen thousandths",
+          "608.014",
+          "608.14",
+          "680.014",
+          "680.14",
+          "A: 608.014",
+          "B: 608.14",
+          "C: 680.014",
+          "D: 680.14"
+        ],
+        "es": [
+          "608.014",
+          "608.14",
+          "680.014",
+          "680.14",
+          "A: 608.014",
+          "B: 608.14",
+          "C: 680.014",
+          "D: 680.14"
+        ]
+      }
+    }
+  }
+}

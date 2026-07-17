@@ -10,6 +10,7 @@ import type {
   PublicMathExamQuestion,
 } from '@/content/math-exams/types'
 import NYSEDAttribution from '../../../NYSEDAttribution'
+import MathChoiceButtons from './MathChoiceButtons'
 
 type Screen = 'intro' | 'question' | 'results'
 
@@ -29,6 +30,18 @@ type FinalResult = {
   pointsEarned: number
   pointsPossible: number
   percentage: number
+}
+
+function explanationSourceLabel(source: MathExplanationSource, isSpanish: boolean) {
+  if (source === 'official-nysed') {
+    return isSpanish ? 'Justificación oficial de NYSED' : 'Official NYSED rationale'
+  }
+  if (source === 'official-nysed-corrected') {
+    return isSpanish
+      ? 'Justificación oficial de NYSED, corregida por Vine'
+      : 'Official NYSED rationale, corrected by Vine'
+  }
+  return isSpanish ? 'Explicación de Vine' : 'Vine explanation'
 }
 
 export default function ExamPracticeClient({
@@ -252,25 +265,13 @@ export default function ExamPracticeClient({
         <div className="mt-5">
           <fieldset>
             <legend className="mb-2 text-sm font-semibold text-gray-700">{isSpanish ? 'Elige tu respuesta' : 'Choose your answer'}</legend>
-            <div className="grid grid-cols-4 gap-2">
-              {(['A', 'B', 'C', 'D'] as const).map(choice => (
-                <button
-                  key={choice}
-                  type="button"
-                  disabled={loading || !!feedback}
-                  onClick={() => setAnswer(choice)}
-                  aria-pressed={answer === choice}
-                  aria-label={isSpanish ? `Opción ${choice}` : `Choice ${choice}`}
-                  className={`rounded-xl border-2 py-3 text-lg font-bold transition-colors ${
-                    answer === choice
-                      ? 'border-green-600 bg-green-50 text-green-800'
-                      : 'border-gray-200 bg-white text-gray-600 hover:border-green-300'
-                  } disabled:cursor-default`}
-                >
-                  {choice}
-                </button>
-              ))}
-            </div>
+            <MathChoiceButtons
+              choiceLabels={question.choiceLabels}
+              answer={answer}
+              disabled={loading || !!feedback}
+              isSpanish={isSpanish}
+              onSelect={setAnswer}
+            />
           </fieldset>
         </div>
 
@@ -293,9 +294,7 @@ export default function ExamPracticeClient({
                 : (isSpanish ? `La respuesta correcta es ${feedback.correctAnswer}.` : `The correct answer is ${feedback.correctAnswer}.`)}
             </p>
             <p className="mt-3 text-xs font-bold uppercase tracking-wider text-gray-500">
-              {feedback.explanationSource === 'official-nysed'
-                ? (isSpanish ? 'Justificación oficial de NYSED' : 'Official NYSED rationale')
-                : (isSpanish ? 'Explicación de Vine' : 'Vine explanation')}
+              {explanationSourceLabel(feedback.explanationSource, isSpanish)}
             </p>
             <p className="mt-1 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
 

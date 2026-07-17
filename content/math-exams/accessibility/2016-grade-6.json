@@ -1,0 +1,666 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2016-grade-6-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2016-g6-mc-q11": {
+      "inputHash": "6cc88ae8683e6dedd4d038ec05333a614836522f2a68e258d6b5c6b084d3e60f",
+      "description": {
+        "en": "Question 11. Jason has a coupon for $2.50 off any electronic book from an online book store. If the original price, in dollars, of an electronic book is p and the discounted price, in dollars, is d, which table shows the relationship between p and d? Choices: A: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 0.50, 1.50, 2.50, 3.50. B: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 5.50, 6.50, 7.50, 8.50. C: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 2.50, 2.50, 2.50, 2.50. D: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 7.50, 10.00, 12.50, 15.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$2.50",
+          "p = 3.00, 4.00, 5.00, 6.00",
+          "d = 0.50, 1.50, 2.50, 3.50",
+          "d = 5.50, 6.50, 7.50, 8.50",
+          "d = 2.50, 2.50, 2.50, 2.50",
+          "d = 7.50, 10.00, 12.50, 15.00",
+          "A: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 0.50, 1.50, 2.50, 3.50",
+          "B: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 5.50, 6.50, 7.50, 8.50",
+          "C: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 2.50, 2.50, 2.50, 2.50",
+          "D: Table: p = 3.00, 4.00, 5.00, 6.00; corresponding d = 7.50, 10.00, 12.50, 15.00"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q12": {
+      "inputHash": "56b06efe2a528e4c5ce8095d7cd28d3fc93e4f43db1a96d3de27ae23b7a6eeb6",
+      "description": {
+        "en": "Question 12. Which pair of expressions below are equivalent? Choices: A: 7(2x) and 9x. B: 3x + 5x and 15x. C: 4(2x − 6) and 8x − 24. D: x + x + x + x and x⁴."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7(2x)",
+          "9x",
+          "3x + 5x",
+          "15x",
+          "4(2x − 6)",
+          "8x − 24",
+          "x + x + x + x",
+          "x⁴",
+          "A: 7(2x) and 9x",
+          "B: 3x + 5x and 15x",
+          "C: 4(2x − 6) and 8x − 24",
+          "D: x + x + x + x and x⁴",
+          "(2x)",
+          "(2x − 6)"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q13": {
+      "inputHash": "884983507734de649d2d9fcfd2e06c394b82801ea87f749919f361dae53a01a0",
+      "description": {
+        "en": "Question 13. An art teacher had 2/3 gallon of paint to pour into containers. If he poured 1/8 gallon of paint into each container until he ran out of paint, how many containers had paint in them, including the one that was partially filled? Choices: A: 1. B: 3. C: 5. D: 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/3",
+          "1/8",
+          "A: 1",
+          "B: 3",
+          "C: 5",
+          "D: 6"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q14": {
+      "inputHash": "ece92321d34d4a946e67ab9406dfc4a066d62b25bbca7ed177af930ba8bd3895",
+      "description": {
+        "en": "Question 14. The coordinates of point F are (1, 0.5) and the coordinates of point G are (−1, −0.5). Which coordinate plane below correctly shows the locations of points F and G? Each plane has a horizontal x-axis, positive to the right, and a vertical y-axis, positive upward. Choices: A: F is plotted at (1, 0.5), and G is plotted at (−1, −0.5). B: F is plotted at (0.5, 1), and G is plotted at (−0.5, −1). C: F is plotted at (1, −0.5), and G is plotted at (−1, 0.5). D: F is plotted at (−1, 0.5), and G is plotted at (1, −0.5)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 0.5)",
+          "(−1, −0.5)",
+          "(0.5, 1)",
+          "(−0.5, −1)",
+          "(1, −0.5)",
+          "(−1, 0.5)",
+          "A: F is plotted at (1, 0.5), and G is plotted at (−1, −0.5)",
+          "B: F is plotted at (0.5, 1), and G is plotted at (−0.5, −1)",
+          "C: F is plotted at (1, −0.5), and G is plotted at (−1, 0.5)",
+          "D: F is plotted at (−1, 0.5), and G is plotted at (1, −0.5)"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q15": {
+      "inputHash": "a7aaad89070ae6fec28f75bab6f1659945631f96ff11fa71ce9874bc991e4f52",
+      "description": {
+        "en": "Question 15. Last year, Chesa made 32 one-cup servings of soup for a school party. This year, she will make two times the amount of soup that she made last year. How many gallons of soup will Chesa make this year? Choices: A: 64. B: 16. C: 4. D: 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "32",
+          "A: 64",
+          "B: 16",
+          "C: 4",
+          "D: 2"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q16": {
+      "inputHash": "7b1a40f4439988bd7d47ecbb1acad4306e3ea5fe467e75f3896d23e660f1240e",
+      "description": {
+        "en": "Question 16. A shelf has four books on it. The weight, in pounds, of each of the four books on the shelf is listed below: 2.5, 3.2, 2.7, 2.3. Which inequality represents the weight, w, of any book chosen from the shelf? Choices: A: w > 2.3. B: w < 2.4. C: w > 3.2. D: w < 3.3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2.5, 3.2, 2.7, 2.3",
+          "w > 2.3",
+          "w < 2.4",
+          "w > 3.2",
+          "w < 3.3",
+          "A: w > 2.3",
+          "B: w < 2.4",
+          "C: w > 3.2",
+          "D: w < 3.3"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q17": {
+      "inputHash": "76fb95f5b440ffaac5a39f3c1f7bf30d3475285e662c67cba5340b20f5415af1",
+      "description": {
+        "en": "Question 17. The area of the triangle below is 2/5 square foot. The diagram is a right triangle with a horizontal base and a vertical height of 6/5 ft; a right-angle marker identifies the perpendicular base and height. What is the length, in feet, of the base of the triangle? Choices: A: 24/25. B: 25/24. C: 2/3. D: 3/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/5",
+          "6/5 ft",
+          "24/25",
+          "25/24",
+          "2/3",
+          "3/2",
+          "A: 24/25",
+          "B: 25/24",
+          "C: 2/3",
+          "D: 3/2",
+          "6/5"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q18": {
+      "inputHash": "88990783639b4e65ad0f672c275ca96643264553fcf0190a473393b8f6d8a148",
+      "description": {
+        "en": "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3; points halfway between consecutive integers are marked with filled dots. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is at 1/2. D: N is at −1/2, and M is at 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−1/2",
+          "5/2",
+          "−3",
+          "3",
+          "−5/2",
+          "1/2",
+          "−2",
+          "A: M is at −1/2, and N is at 5/2",
+          "B: N is at −5/2, and M is at 1/2",
+          "C: M is at −2, and N is at 1/2",
+          "D: N is at −1/2, and M is at 2"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q19": {
+      "inputHash": "fd263dfee7012335348f67220bce77e743d0de214e8005e5cad533d5a8f3e1bc",
+      "description": {
+        "en": "Question 19. The weight of an object on the moon, m, is about 1/6 of the object’s weight on Earth, e. Which equation represents the approximate weight of an object on the moon in terms of the object’s weight on Earth? Choices: A: m = 1/6 + e. B: m = e/6. C: m = 6 + e. D: m = 6e."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/6",
+          "m = 1/6 + e",
+          "m = e/6",
+          "m = 6 + e",
+          "m = 6e",
+          "A: m = 1/6 + e",
+          "B: m = e/6",
+          "C: m = 6 + e",
+          "D: m = 6e"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q20": {
+      "inputHash": "7e5676130854d3f4e260f04a20f04286f29d8d97b68bd2b18bea5db485e34a3b",
+      "description": {
+        "en": "Question 20. The table titled “Possible Baseball Games Won” shows different possibilities for the number of games a team would need to win to maintain a certain percentage of wins. The columns are “Number of Games Won” and “Number of Games Played.” The rows, written as games won to games played, are 6 to 10, 24 to 40, 36 to 60, and 42 to 70. Which ratio of the number of games won to the number of games played could also be included in this table? Choices: A: 18:20. B: 30:20. C: 18:30. D: 50:30."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6 to 10",
+          "24 to 40",
+          "36 to 60",
+          "42 to 70",
+          "18:20",
+          "30:20",
+          "18:30",
+          "50:30",
+          "A: 18:20",
+          "B: 30:20",
+          "C: 18:30",
+          "D: 50:30"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q21": {
+      "inputHash": "5bc7d62b83711e36cc49a7e956dec843a3caf58e6dd4c2f29eae59e0964cbd6a",
+      "description": {
+        "en": "Question 21. A table titled “Coordinates” lists the coordinates of four points. Its columns are x and y. The four rows are x = 1, y = 5; x = 2, y = 7; x = 3, y = 9; and x = 4, y = 11. If x represents any number in the first column, which expression can always be used to find the value of y in the second column? Choices: A: 5x. B: x + 2. C: x + 4. D: 2x + 3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x = 1, y = 5",
+          "x = 2, y = 7",
+          "x = 3, y = 9",
+          "x = 4, y = 11",
+          "5x",
+          "x + 2",
+          "x + 4",
+          "2x + 3",
+          "A: 5x",
+          "B: x + 2",
+          "C: x + 4",
+          "D: 2x + 3"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q22": {
+      "inputHash": "e56b465eb95e801d510ff2db12a6a129848c44469085ea9e90d24bbfe81b1aab",
+      "description": {
+        "en": "Question 22. Which expression is represented by the phrase “the square of y decreased by the quotient of 28 and 7”? Choices: A: 28/7 − y². B: y² − 28/7. C: 28/(7 − y²). D: 28/(y² − 7)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y²",
+          "28/7",
+          "28/7 − y²",
+          "y² − 28/7",
+          "28/(7 − y²)",
+          "28/(y² − 7)",
+          "A: 28/7 − y²",
+          "B: y² − 28/7",
+          "C: 28/(7 − y²)",
+          "D: 28/(y² − 7)",
+          "(7 − y²)",
+          "(y² − 7)"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q27": {
+      "inputHash": "a8d98fb69674d430d148bc9b5225444e5ce17e3169fbd90078e622a343d36809",
+      "description": {
+        "en": "Question 27. A recipe for lemonade calls for 1 cup of sugar and 5 cups of water. How much sugar is used per cup of water? Choices: A: 1/6 cup. B: 1/5 cup. C: 1/4 cup. D: 5/1 cup."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 cup",
+          "5 cups",
+          "1/6 cup",
+          "1/5 cup",
+          "1/4 cup",
+          "5/1 cup",
+          "A: 1/6 cup",
+          "B: 1/5 cup",
+          "C: 1/4 cup",
+          "D: 5/1 cup",
+          "1/6",
+          "1/5",
+          "1/4",
+          "5/1"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q28": {
+      "inputHash": "8c2f7cb02e0e6377716781b6504b1db75fe2a0abeaed35e92b24fffa7133e6a5",
+      "description": {
+        "en": "Question 28. Sam paid $8.28 for 18 stamps. At this rate, how much would it cost Sam to buy 12 stamps? Choices: A: $2.19. B: $2.28. C: $3.72. D: $5.52."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$8.28",
+          "18 stamps",
+          "12 stamps",
+          "$2.19",
+          "$2.28",
+          "$3.72",
+          "$5.52",
+          "A: $2.19",
+          "B: $2.28",
+          "C: $3.72",
+          "D: $5.52"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q29": {
+      "inputHash": "b92f9fe63c78b7966ca71776e8c63465831ed39452545930f08dd4ef6a078437",
+      "description": {
+        "en": "Question 29. John’s friend told him that he could earn $49 for handing out flyers at a local concert. John wants to calculate the hourly rate. If he works a total of 3.5 hours, the equation 3.5x = 49 can be used to determine his hourly rate. What would John’s hourly rate be, in dollars? Choices: A: $1.40. B: $14.00. C: $45.50. D: $171.50."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$49",
+          "3.5 hours",
+          "3.5x = 49",
+          "$1.40",
+          "$14.00",
+          "$45.50",
+          "$171.50",
+          "A: $1.40",
+          "B: $14.00",
+          "C: $45.50",
+          "D: $171.50"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q30": {
+      "inputHash": "923a1665b9e184b04207aec8e375d2ace74cda3ac5a2af5b255818b39f225cd5",
+      "description": {
+        "en": "Question 30. Theo made sails for a model boat. He cut along the diagonal of a rectangular piece of cloth to make two sails. The rectangle is 4 ft tall and 1 1/6 ft wide. A dashed diagonal cut runs from the upper-left corner to the lower-right corner, dividing the rectangle into two congruent triangular sails. A right-angle marker appears at the lower-left corner of the rectangle. What was the area, in square feet, of one sail? Choices: A: 9 1/3. B: 4 2/3. C: 2 7/12. D: 2 1/3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 ft",
+          "1 1/6 ft",
+          "9 1/3",
+          "4 2/3",
+          "2 7/12",
+          "2 1/3",
+          "A: 9 1/3",
+          "B: 4 2/3",
+          "C: 2 7/12",
+          "D: 2 1/3",
+          "1 1/6"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q34": {
+      "inputHash": "cd5eb68ae4ec674f83ea91c3dd8837801d51a5ea42bd1a0df34c832d567cd06b",
+      "description": {
+        "en": "Question 34. The area of an airplane’s wings is related to the airplane’s lifting force, which holds the airplane in the air. The table below lists several wing areas and the corresponding lifting forces. A table titled “AIRPLANE LIFTING FORCE” has columns “Area of Wings (square feet)” and “Lifting Force (pounds).” Its rows are: 125 and 1,875; 150 and 2,250; 175 and 2,625; 250 and 3,750; x and 5,625; 420 and y. The ratio of lifting force to area is equivalent for all pairs in the table. What are the values of x and y? Choices: A: x = 375 square feet and y = 7,500 pounds. B: x = 335 square feet and y = 7,500 pounds. C: x = 375 square feet and y = 6,300 pounds. D: x = 335 square feet and y = 6,300 pounds."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "125",
+          "1,875",
+          "150",
+          "2,250",
+          "175",
+          "2,625",
+          "250",
+          "3,750",
+          "5,625",
+          "420",
+          "x = 375",
+          "x = 335",
+          "y = 7,500",
+          "y = 6,300",
+          "A: x = 375 square feet and y = 7,500 pounds",
+          "B: x = 335 square feet and y = 7,500 pounds",
+          "C: x = 375 square feet and y = 6,300 pounds",
+          "D: x = 335 square feet and y = 6,300 pounds"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q36": {
+      "inputHash": "6132abf1f6f9e984f2f3277ead82e079e87d39f354ea1221a07248457bc3d50f",
+      "description": {
+        "en": "Question 36. Simon used 3 pears and 9 apples to make a fruit salad. What was the ratio of the number of pears to the number of apples in the fruit salad? Choices: A: 1:3. B: 1:4. C: 1:6. D: 1:9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "9",
+          "1:3",
+          "1:4",
+          "1:6",
+          "1:9",
+          "A: 1:3",
+          "B: 1:4",
+          "C: 1:6",
+          "D: 1:9"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q37": {
+      "inputHash": "b4279e4994688f567ba7c73833346d3108c475438ca97b4d783fc25d5136a201",
+      "description": {
+        "en": "Question 37. The summit of a volcano is 10 kilometers (km) above the ocean floor. A vertical cross-section diagram shows the volcano rising from the ocean floor through sea level to the summit. The ocean floor is labeled “Ocean Floor (5 km below sea level),” a horizontal line across the volcano is labeled “Sea Level,” and the top is labeled “Summit.” If the ocean floor has an elevation of −5 kilometers, which statement describes the elevation of sea level and the summit? Choices: A: The elevation of sea level is 0 km and the elevation of the summit is 5 km. B: The elevation of sea level is 5 km and the elevation of the summit is 5 km. C: The elevation of sea level is 0 km and the elevation of the summit is 10 km. D: The elevation of sea level is 5 km and the elevation of the summit is 10 km."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 kilometers",
+          "5 km below sea level",
+          "−5 kilometers",
+          "0 km",
+          "5 km",
+          "10 km",
+          "A: The elevation of sea level is 0 km and the elevation of the summit is 5 km",
+          "B: The elevation of sea level is 5 km and the elevation of the summit is 5 km",
+          "C: The elevation of sea level is 0 km and the elevation of the summit is 10 km",
+          "D: The elevation of sea level is 5 km and the elevation of the summit is 10 km",
+          "(5 km below sea level)"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q38": {
+      "inputHash": "87fbd1153645fc06ee54f9ec0c87e2afee0e91b596a0d32f3a795935cf2ae0eb",
+      "description": {
+        "en": "Question 38. The Frenchtown Roller Rink charges a $5 entrance fee and an hourly rate for roller skating. The total cost for roller skating depends on the number of hours a person skates. A table titled “ROLLER SKATING COST” represents the total cost of skating for different numbers of hours. Its columns are “Number of Hours (h)” and “Total Cost in Dollars (c).” Its rows are: h = 0, c = 5; h = 1, c = 8; h = 2, c = 11; h = 3, c = 14; h = 4, c = 17. Which equation represents the relationship between the cost, c, and the number of hours, h? Choices: A: c = 8h. B: c = 5h + 3. C: c = 2h + 7. D: c = 3h + 5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$5",
+          "h = 0",
+          "c = 5",
+          "h = 1",
+          "c = 8",
+          "h = 2",
+          "c = 11",
+          "h = 3",
+          "c = 14",
+          "h = 4",
+          "c = 17",
+          "c = 8h",
+          "c = 5h + 3",
+          "c = 2h + 7",
+          "c = 3h + 5",
+          "A: c = 8h",
+          "B: c = 5h + 3",
+          "C: c = 2h + 7",
+          "D: c = 3h + 5"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q39": {
+      "inputHash": "0b06e5b2e39350baa41bd93d6750956776c3df4fc337854920d1856a5e81c4af",
+      "description": {
+        "en": "Question 39. Fei Yen’s dog eats 8 ounces of dog food each day. Fei Yen bought a 28-pound bag of dog food. How many 8-ounce servings are in a 28-pound bag of dog food? Choices: A: 14. B: 56. C: 224. D: 448."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 ounces",
+          "28-pound",
+          "8-ounce",
+          "14",
+          "56",
+          "224",
+          "448",
+          "A: 14",
+          "B: 56",
+          "C: 224",
+          "D: 448"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q40": {
+      "inputHash": "63083c1d9ca160cfcc45ceee13ab8f5f5bc1f971bd6b3f3d6ff9088a6dd64209",
+      "description": {
+        "en": "Question 40. Point A and point B are placed on a number line. Point A is located at −20 and point B is 5 less than point A. Which statement about point B is true? Choices: A: It is located at −25 and is to the right of point A on the number line. B: It is located at −15 and is to the right of point A on the number line. C: It is located at −25 and is to the left of point A on the number line. D: It is located at −15 and is to the left of point A on the number line."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−20",
+          "5 less",
+          "−25",
+          "−15",
+          "right",
+          "left",
+          "A: It is located at −25 and is to the right of point A on the number line",
+          "B: It is located at −15 and is to the right of point A on the number line",
+          "C: It is located at −25 and is to the left of point A on the number line",
+          "D: It is located at −15 and is to the left of point A on the number line"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q41": {
+      "inputHash": "9fe81339852c3f0a238acbc654dc06ea9fe8ff96b2b03e058783b60ec63565fb",
+      "description": {
+        "en": "Question 41. Chakan worked at the warehouse after school. He earned $9.25 per hour stacking boxes. Which equation correctly relates Chakan’s total earnings, d, to the number of hours he worked, h? Choices: A: d = 9.25h. B: h = 9.25d. C: d = 9.25/h. D: h = 9.25/d."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$9.25",
+          "d = 9.25h",
+          "h = 9.25d",
+          "d = 9.25/h",
+          "h = 9.25/d",
+          "A: d = 9.25h",
+          "B: h = 9.25d",
+          "C: d = 9.25/h",
+          "D: h = 9.25/d"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q42": {
+      "inputHash": "675a94c40dd1833858725e9c93b7f8de425271313b4c5b8700982c20e90a2013",
+      "description": {
+        "en": "Question 42. Bronson is using a coordinate plane to design a rectangular swimming pool. He will plot points on the coordinate plane to mark the vertices of the rectangular pool bottom. If Bronson plots the first three points at (5, 3), (5, 13), and (30, 13), what would be the coordinates of the fourth point? A blank square coordinate grid is provided for working out the problem; it has evenly spaced horizontal and vertical grid lines and no visible axis labels or plotted points. Choices: A: (30, 5). B: (20, 13). C: (5, 28). D: (30, 3)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(5, 3)",
+          "(5, 13)",
+          "(30, 13)",
+          "(30, 5)",
+          "(20, 13)",
+          "(5, 28)",
+          "(30, 3)",
+          "A: (30, 5)",
+          "B: (20, 13)",
+          "C: (5, 28)",
+          "D: (30, 3)"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q43": {
+      "inputHash": "f7c31a35713492715e7fc5f4047d57fe124474ea0ba41307d569222abfff893e",
+      "description": {
+        "en": "Question 43. Residents of a small city voted on whether to allow a developer to build a shopping center. The number of votes in favor of the shopping center was 4,400. The number of votes against the shopping center was 17,600. What percent of the voters were in favor of building the shopping center? Choices: A: 20% B: 25% C: 40% D: 44%"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4,400",
+          "17,600",
+          "20%",
+          "25%",
+          "40%",
+          "44%",
+          "A: 20%",
+          "B: 25%",
+          "C: 40%",
+          "D: 44%"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q44": {
+      "inputHash": "b6b2f8710c7361ddc18d24d65493680d212c8189be7e18eefaccfaf0fddb7fd1",
+      "description": {
+        "en": "Question 44. Maddy had a piece of ribbon that was 3 1/2 yards long. She used this ribbon to make bows. Each bow was made from a piece of the ribbon that was 3/4 yard long. This situation can be represented by the equation 3 1/2 ÷ 3/4 = 4 2/3. Which statement best describes what the quotient 4 2/3 represents in this situation? Choices: A: Maddy had bows that were each 4 2/3 yards long. B: Maddy had 4 2/3 yards of ribbon left after making the bows. C: Maddy made 4 bows from the piece of ribbon and had 2/3 of a yard left. D: Maddy made 4 bows from the piece of ribbon and had enough left for 2/3 of a bow."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 1/2",
+          "3/4",
+          "3 1/2 ÷ 3/4 = 4 2/3",
+          "4 2/3",
+          "4",
+          "2/3",
+          "A: Maddy had bows that were each 4 2/3 yards long",
+          "B: Maddy had 4 2/3 yards of ribbon left after making the bows",
+          "C: Maddy made 4 bows from the piece of ribbon and had 2/3 of a yard left",
+          "D: Maddy made 4 bows from the piece of ribbon and had enough left for 2/3 of a bow"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q45": {
+      "inputHash": "d03607fe3ec2e61a2e4e0d6c9feea4959dc5485bbaab310a29ea41f083239ff4",
+      "description": {
+        "en": "Question 45. The figure is the net of a triangular pyramid. The net consists of four equilateral triangles: one central, downward-pointing triangle outlined with dashed lines, with one outward-pointing triangle attached to each of its three sides. One side of each equilateral triangle is 5 cm, and the perpendicular height of each triangle is 4.33 cm; the given height is rounded to the nearest hundredth. What is the surface area of the pyramid in square centimeters? Choices: A: 86.6 B: 43.3 C: 32.48 D: 10.83"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5 cm",
+          "4.33 cm",
+          "86.6",
+          "43.3",
+          "32.48",
+          "10.83",
+          "A: 86.6",
+          "B: 43.3",
+          "C: 32.48",
+          "D: 10.83"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q46": {
+      "inputHash": "4e5062468a3811cac23c59d23ec8c2e82203b5d1c34b15df10708376b2a4f9c8",
+      "description": {
+        "en": "Question 46. Zelma buys p pounds of bananas for 40 cents per pound. She pays the clerk with a twenty-dollar bill. The clerk subtracts the total cost of the bananas from the twenty-dollar bill to determine the amount of change to give Zelma. Which expression represents the amount of change Zelma should receive? Choices: A: p − 20 B: 20 − 40p C: 20 − 0.40p D: 0.40p − 20"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "p",
+          "40",
+          "p − 20",
+          "20 − 40p",
+          "20 − 0.40p",
+          "0.40p − 20",
+          "A: p − 20",
+          "B: 20 − 40p",
+          "C: 20 − 0.40p",
+          "D: 0.40p − 20"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q47": {
+      "inputHash": "08561d42061ab1f9cbd80c5ead42f07790207d06410959a1455b498862fa6766",
+      "description": {
+        "en": "Question 47. A table titled “Masses and Corresponding Weights” lists four masses and their corresponding approximate weights on Earth. The columns are Mass (kilograms) and Weight (Newtons). The data rows are: 20 kilograms, 196 Newtons; 50 kilograms, 490 Newtons; x kilograms, 1078 Newtons; 130 kilograms, 1274 Newtons; and 140 kilograms, 1372 Newtons. The ratio of weight to mass is constant. Which statement describes the ratio of weight to mass and the value of x in the table? Choices: A: The ratio is 98/10; x = 90. B: The ratio is 98/10; x = 110. C: The ratio is 10/98; x = 90. D: The ratio is 10/98; x = 110."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20",
+          "196",
+          "50",
+          "490",
+          "x",
+          "1078",
+          "130",
+          "1274",
+          "140",
+          "1372",
+          "98/10",
+          "10/98",
+          "x = 90",
+          "x = 110",
+          "A: The ratio is 98/10; x = 90",
+          "B: The ratio is 98/10; x = 110",
+          "C: The ratio is 10/98; x = 90",
+          "D: The ratio is 10/98; x = 110"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q48": {
+      "inputHash": "3d26b9c7eb8753b50cd310804d0c31230cf36f0e3596f4ba7e62b0c433f2f0e5",
+      "description": {
+        "en": "Question 48. What value of y makes the equation below true? y + 2.9 = 11. Choices: A: 8.1 B: 8.9 C: 9.1 D: 13.9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y + 2.9 = 11",
+          "8.1",
+          "8.9",
+          "9.1",
+          "13.9",
+          "A: 8.1",
+          "B: 8.9",
+          "C: 9.1",
+          "D: 13.9"
+        ]
+      }
+    },
+    "nysed-2016-g6-mc-q49": {
+      "inputHash": "5ddb23269d0e833201708f799cff75b03dcae019cb4b025ea4643d50aeccfff0",
+      "description": {
+        "en": "Question 49. A scientist studied the migration patterns of two types of whales. The humpback whales traveled 2,240 miles in 28 days. The gray whales traveled 2,368 miles in 32 days. If the humpback whales had traveled at the same rate for 32 days, how many more miles would they have traveled than the gray whales? Choices: A: 128 B: 192 C: 280 D: 408"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2,240",
+          "28",
+          "2,368",
+          "32",
+          "128",
+          "192",
+          "280",
+          "408",
+          "A: 128",
+          "B: 192",
+          "C: 280",
+          "D: 408"
+        ]
+      }
+    }
+  }
+}

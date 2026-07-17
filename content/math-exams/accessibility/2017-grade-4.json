@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2017-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2017-g4-mc-q1": {
+      "inputHash": "fd1c33980c970fb8e1d97a4f3f08909eb7eb81b736324c16920b3a2bb4aeb45a",
+      "description": {
+        "en": "Question 1. The population of a certain city is 836,527. What is the population of this city rounded to the nearest ten thousand? Choices: A: 800,000; B: 830,000; C: 836,000; D: 840,000.",
+        "es": "Pregunta 1. La población de una ciudad determinada es 836,527. ¿Cuál es la población de esta ciudad redondeada a la decena de mil más cercana? Opciones: A: 800,000; B: 830,000; C: 836,000; D: 840,000."
+      }
+    },
+    "nysed-2017-g4-mc-q2": {
+      "inputHash": "de928515f719ccdd4a0352896787d4a205670e038fdf204e4ac22e004a88947f",
+      "description": {
+        "en": "Question 2. A diagram shows an obtuse angle formed by one ray pointing horizontally right and another ray pointing up and left. What is the measure of the angle shown? Choices: A: 60°; B: 90°; C: 110°; D: 120°.",
+        "es": "Pregunta 2. Un diagrama muestra un ángulo obtuso formado por una semirrecta que apunta horizontalmente hacia la derecha y otra que apunta hacia arriba y a la izquierda. ¿Cuál es la medida del ángulo que se muestra? Opciones: A: 60°; B: 90°; C: 110°; D: 120°."
+      }
+    },
+    "nysed-2017-g4-mc-q3": {
+      "inputHash": "069bf7d5166c2098339b051ade707047ae76a8e716ec2955e0efcea0b88231cf",
+      "description": {
+        "en": "Question 3. Which expression is equivalent to 7/10 − 2/10? Choices: A: 2/10 + 3/10; B: 5/10 + 4/10; C: 1/5 + 4/5; D: 3/6 + 2/4.",
+        "es": "Pregunta 3. ¿Qué expresión es equivalente a 7/10 − 2/10? Opciones: A: 2/10 + 3/10; B: 5/10 + 4/10; C: 1/5 + 4/5; D: 3/6 + 2/4."
+      }
+    },
+    "nysed-2017-g4-mc-q4": {
+      "inputHash": "6f1b3dc443ce28cba2814db60474e21e8216e1cf6a0cb77552ab5b768433f780",
+      "description": {
+        "en": "Question 4. A figure shows one ray slanting upward to the right and crossing two parallel line segments that slant downward to the right. Which statement best describes the figure? Choices: A: The ray appears to be perpendicular to 2 line segments that appear to be parallel; B: The ray appears to be parallel to 2 line segments that appear to be perpendicular; C: The line segment appears to be perpendicular to 2 lines that appear to be parallel; D: The line segment appears to be parallel to 2 lines that appear to be perpendicular.",
+        "es": "Pregunta 4. Una figura muestra una semirrecta inclinada hacia arriba y a la derecha que cruza dos segmentos lineales paralelos inclinados hacia abajo y a la derecha. ¿Qué afirmación describe mejor la figura? Opciones: A: La semirrecta parece ser perpendicular a 2 segmentos lineales que parecen ser paralelos; B: La semirrecta parece ser paralela a 2 segmentos lineales que parecen ser perpendiculares; C: El segmento lineal parece ser perpendicular a 2 líneas que parecen ser paralelas; D: El segmento lineal parece ser paralelo a 2 líneas que parecen ser perpendiculares."
+      }
+    },
+    "nysed-2017-g4-mc-q5": {
+      "inputHash": "99927ee586568affe5b508085bdfd2add6df2f4f1f793c4b795e3ba90d70a8e7",
+      "description": {
+        "en": "Question 5. What is the product of 32 × 67? Choices: A: 1,824; B: 1,934; C: 2,044; D: 2,144.",
+        "es": "Pregunta 5. ¿Cuál es el producto de 32 × 67? Opciones: A: 1,824; B: 1,934; C: 2,044; D: 2,144."
+      }
+    },
+    "nysed-2017-g4-mc-q6": {
+      "inputHash": "bd7ef86f9ec024a72123e167cbeeadcefcd95435a79446f7677e0ee91f54bfcf",
+      "description": {
+        "en": "Question 6. Two rectangular models are shaded to represent equivalent fractions. The first is divided into 12 equal parts in 3 rows of 4, with all 8 parts in the top two rows shaded. The second is divided into 6 equal parts in 3 rows of 2, with all 4 parts in the top two rows shaded. Which fraction is equivalent to the fractions shown by the models? Choices: A: 2/3; B: 4/8; C: 6/10; D: 9/12.",
+        "es": "Pregunta 6. Dos modelos rectangulares están sombreados para representar fracciones equivalentes. El primero está dividido en 12 partes iguales, en 3 filas de 4, con las 8 partes de las dos filas superiores sombreadas. El segundo está dividido en 6 partes iguales, en 3 filas de 2, con las 4 partes de las dos filas superiores sombreadas. ¿Qué fracción es equivalente a las fracciones que muestran los modelos? Opciones: A: 2/3; B: 4/8; C: 6/10; D: 9/12."
+      }
+    },
+    "nysed-2017-g4-mc-q7": {
+      "inputHash": "69f39aa7eafa36b2fb699091c5931d05fe349293637aa20aca1a331772e788e6",
+      "description": {
+        "en": "Question 7. What is the measure of an angle that turns through 3/4 of a complete circle? Choices: A: 34°; B: 43°; C: 75°; D: 270°.",
+        "es": "Pregunta 7. ¿Cuál es la medida de un ángulo que gira 3/4 de un círculo completo? Opciones: A: 34°; B: 43°; C: 75°; D: 270°."
+      }
+    },
+    "nysed-2017-g4-mc-q8": {
+      "inputHash": "edede50dd5acf7ec68349c90303f3646844e1e36ce3a8720828007c99a03c541",
+      "description": {
+        "en": "Question 8. Andrew is growing tomato plants in his garden. A line plot of plant heights in feet has 3 marks at 1/4, 5 marks at 1/2, and 4 marks at 3/4. What was the difference in height between the tallest plant and the shortest plant? Choices: A: 1/4 foot; B: 2/4 foot; C: 3/4 foot; D: 4/4 foot.",
+        "es": "Pregunta 8. Andrew está cultivando plantas de tomate en su jardín. Un diagrama lineal de las alturas de las plantas en pies tiene 3 marcas en 1/4, 5 marcas en 1/2 y 4 marcas en 3/4. ¿Cuál fue la diferencia en altura entre la planta más alta y la planta más baja? Opciones: A: 1/4 de pie; B: 2/4 de pie; C: 3/4 de pie; D: 4/4 de pie."
+      }
+    },
+    "nysed-2017-g4-mc-q11": {
+      "inputHash": "29c060b92fb8469ce7f20dcb4dfea4cb566816cce4ca8135eddd4d3076436eff",
+      "description": {
+        "en": "Question 11. A square has a side length of 4 inches. Kelsey drew a rectangle with the same area as the square. The length of Kelsey’s rectangle is 8 inches. What is the perimeter, in inches, of Kelsey’s rectangle? Choices: A: 10; B: 16; C: 20; D: 32.",
+        "es": "Pregunta 11. Un cuadrado tiene lados de 4 pulgadas. Kelsey dibujó un rectángulo con la misma área que el cuadrado. La longitud del rectángulo de Kelsey es de 8 pulgadas. ¿Cuál es el perímetro, en pulgadas, del rectángulo de Kelsey? Opciones: A: 10; B: 16; C: 20; D: 32."
+      }
+    },
+    "nysed-2017-g4-mc-q12": {
+      "inputHash": "dd6503cd522bb129ca77af9834a6d4c2502610a86ba52225258fc9f75afb1365",
+      "description": {
+        "en": "Question 12. Some bakers make apple pies. They have 15 boxes of apples, each box has 18 apples, and they use 7 apples for each pie. What is the total number of apple pies that the bakers can make? Choices: A: 33; B: 38; C: 39; D: 40.",
+        "es": "Pregunta 12. Algunos panaderos hacen pasteles de manzana. Tienen 15 cajas de manzanas, cada caja tiene 18 manzanas y usan 7 manzanas para cada pastel. ¿Cuál es el número total de pasteles de manzana que pueden hacer los panaderos? Opciones: A: 33; B: 38; C: 39; D: 40."
+      }
+    },
+    "nysed-2017-g4-mc-q15": {
+      "inputHash": "fe9bc339af3732f660345d82085c52d20aea86c00e2cd2aeab6433afcb184f92",
+      "description": {
+        "en": "Question 15. Five students drew shapes: Ashley drew a rectangle, Camden drew a square, Fiona drew a pentagon, George drew a pentagon, and Hayden drew a trapezoid. Which list has the names of all the students who drew quadrilaterals? Choices: A: Fiona and George; B: Ashley and Camden; C: Ashley, Camden, and Hayden; D: Ashley, Camden, Fiona, and George.",
+        "es": "Pregunta 15. Cinco estudiantes dibujaron figuras: Ashley dibujó un rectángulo, Camden dibujó un cuadrado, Fiona dibujó un pentágono, George dibujó un pentágono y Hayden dibujó un trapecio. ¿Qué lista tiene los nombres de todos los estudiantes que dibujaron cuadriláteros? Opciones: A: Fiona y George; B: Ashley y Camden; C: Ashley, Camden y Hayden; D: Ashley, Camden, Fiona y George."
+      }
+    },
+    "nysed-2017-g4-mc-q16": {
+      "inputHash": "2df49219d9f7a7db1347f4832aad6a3db251bd5a40d2c5ead0bd20b2b2801b59",
+      "description": {
+        "en": "Question 16. Angles STU and UTV combine to form right angle STV. The diagram labels angle STU as 75° and angle UTV with a question mark. Which expression could be used to find the measure, in degrees, of angle UTV? Choices: A: 90 − 75; B: 90 + 75; C: 180 − 75; D: 180 + 75.",
+        "es": "Pregunta 16. Los ángulos STU y UTV se combinan para formar el ángulo recto STV. El diagrama indica que el ángulo STU mide 75° y marca el ángulo UTV con un signo de interrogación. ¿Qué expresión se podría usar para averiguar cuánto mide, en grados, el ángulo UTV? Opciones: A: 90 − 75; B: 90 + 75; C: 180 − 75; D: 180 + 75."
+      }
+    },
+    "nysed-2017-g4-mc-q17": {
+      "inputHash": "e5b6ba80d944f3d8bf4031f55ac3013174ba2f31c20a66b77646f9d59e1b7224",
+      "description": {
+        "en": "Question 17. Three number lines run from 0 to 1. Point X is at 3/4 on a line divided into fourths; point Y is at 6/8 on a line divided into eighths; and point Z is at 9/12 on a line divided into twelfths. Points Y and Z represent fractions equivalent to the fraction represented by point X. Which fractions do points Y and Z represent? Choices: A: Y represents 4/6 and Z represents 8/12; B: Y represents 4/6 and Z represents 9/12; C: Y represents 6/8 and Z represents 8/12; D: Y represents 6/8 and Z represents 9/12.",
+        "es": "Pregunta 17. Tres rectas numéricas van de 0 a 1. El punto X está en 3/4 en una recta dividida en cuartos; el punto Y está en 6/8 en una recta dividida en octavos; y el punto Z está en 9/12 en una recta dividida en doceavos. Los puntos Y y Z representan fracciones equivalentes a la fracción representada por el punto X. ¿Qué fracciones representan los puntos Y y Z? Opciones: A: Y representa 4/6 y Z representa 8/12; B: Y representa 4/6 y Z representa 9/12; C: Y representa 6/8 y Z representa 8/12; D: Y representa 6/8 y Z representa 9/12."
+      }
+    },
+    "nysed-2017-g4-mc-q21": {
+      "inputHash": "91b791b055f9f1406953e2d449ec608cd74e09877c66335dd3bbaf4305bb312c",
+      "description": {
+        "en": "Question 21. Three rays BA, BC, and BD share endpoint B, with ray BC inside angle ABD. Angle ABD measures 153° and angle ABC measures 67°. What is the measure of angle CBD? Choices: A: 84°; B: 86°; C: 94°; D: 96°.",
+        "es": "Pregunta 21. Tres semirrectas BA, BC y BD comparten el extremo B, y la semirrecta BC está dentro del ángulo ABD. El ángulo ABD mide 153° y el ángulo ABC mide 67°. ¿Cuál es la medida del ángulo CBD? Opciones: A: 84°; B: 86°; C: 94°; D: 96°."
+      }
+    },
+    "nysed-2017-g4-mc-q22": {
+      "inputHash": "48bf16b451d5f87b8fb563a059743c01164bec6a3398ac5f2aad9b2d99056106",
+      "description": {
+        "en": "Question 22. What is the quotient of 1,224 ÷ 9? Choices: A: 135; B: 136; C: 1,215; D: 1,360.",
+        "es": "Pregunta 22. ¿Cuál es el cociente de 1,224 ÷ 9? Opciones: A: 135; B: 136; C: 1,215; D: 1,360."
+      }
+    },
+    "nysed-2017-g4-mc-q23": {
+      "inputHash": "394237bf63a2558e5903086ec548a81b9e716d3254f09b9b7322980d600f4dc3",
+      "description": {
+        "en": "Question 23. Which number is a multiple of 7? Choices: A: 27; B: 48; C: 56; D: 74.",
+        "es": "Pregunta 23. ¿Qué número es múltiplo de 7? Opciones: A: 27; B: 48; C: 56; D: 74."
+      }
+    },
+    "nysed-2017-g4-mc-q24": {
+      "inputHash": "2e4ffa88302af0a5a5313beda9b2e9934c7b2a82a07b8843bfedc87337fd3929",
+      "description": {
+        "en": "Question 24. For a science project, Joseph recorded rainfall each day for 2 weeks. His table shows: 0 inches on 3 days, 1/4 inch on 3 days, 1/2 inch on 2 days, 3/4 inch on 4 days, and 1 inch on 2 days. Which line plot correctly displays Joseph’s data? Each choice lists the number of marks at 0, 1/4, 1/2, 3/4, and 1 inch, in that order. Choices: A: 3, 3, 2, 3, 4; B: 2, 4, 2, 3, 3; C: 3, 3, 2, 4, 2; D: 2, 2, 3, 3, 5.",
+        "es": "Pregunta 24. Para un proyecto de Ciencias, Joseph registró la cantidad de precipitaciones diarias durante 2 semanas. Su tabla muestra: 0 pulgadas durante 3 días, 1/4 de pulgada durante 3 días, 1/2 pulgada durante 2 días, 3/4 de pulgada durante 4 días y 1 pulgada durante 2 días. ¿Qué diagrama lineal muestra correctamente los datos de Joseph? Cada opción indica el número de marcas en 0, 1/4, 1/2, 3/4 y 1 pulgada, en ese orden. Opciones: A: 3, 3, 2, 3, 4; B: 2, 4, 2, 3, 3; C: 3, 3, 2, 4, 2; D: 2, 2, 3, 3, 5."
+      }
+    },
+    "nysed-2017-g4-mc-q25": {
+      "inputHash": "04da798cefc69d077d516dc0b2e5292d7dd2422db4c26a3549d2577f5ea13a6b",
+      "description": {
+        "en": "Question 25. A student has 3 puzzles. Each puzzle has 1,250 pieces. What is the total number of pieces in the puzzles? Choices: A: 3,650; B: 3,750; C: 4,650; D: 4,750.",
+        "es": "Pregunta 25. Un estudiante tiene 3 rompecabezas. Cada rompecabezas tiene 1,250 piezas. ¿Cuál es el número total de piezas de los rompecabezas? Opciones: A: 3,650; B: 3,750; C: 4,650; D: 4,750."
+      }
+    },
+    "nysed-2017-g4-mc-q26": {
+      "inputHash": "1ec39c834a993958f722c2b01fe39e7c5420e30330bb06648d60d235e1181d28",
+      "description": {
+        "en": "Question 26. A baseball cap costs $8. A matching shirt costs 4 times as much as the cap. Which of the following can be used to determine the cost of the shirt? Choices: A: 8 ÷ 2 = ?; B: 8 − 4 = ?; C: 8 + 4 = ?; D: 8 × 4 = ?.",
+        "es": "Pregunta 26. Una gorra de béisbol cuesta $8. Una camiseta que combina cuesta 4 veces más que la gorra. ¿Cuál de las siguientes se puede usar para determinar el costo de la camiseta? Opciones: A: 8 ÷ 2 = ?; B: 8 − 4 = ?; C: 8 + 4 = ?; D: 8 × 4 = ?."
+      }
+    },
+    "nysed-2017-g4-mc-q27": {
+      "inputHash": "a1646e587920362fd81c89691a0d03164a6f479b90d3108b40214558211d323c",
+      "verbatimSingleLetterChoices": true,
+      "description": {
+        "en": "Question 27. A number line from 0 to 2 is divided into thirds. Point A is at 1/3, point B at 2/3, point C at 4/3, and point D at 5/3. Which letter represents a fraction equivalent to 4/6? Choices: A: A; B: B; C: C; D: D.",
+        "es": "Pregunta 27. Una recta numérica de 0 a 2 está dividida en tercios. El punto A está en 1/3, el punto B en 2/3, el punto C en 4/3 y el punto D en 5/3. ¿Qué letra representa una fracción equivalente a 4/6? Opciones: A: A; B: B; C: C; D: D."
+      }
+    },
+    "nysed-2017-g4-mc-q28": {
+      "inputHash": "e121347f16e3681a6709bb82def58f5138b3f1571092a4bee4046443720f4ed1",
+      "description": {
+        "en": "Question 28. A rectangular sign is 4 feet long and 2 feet high. What is the perimeter, in feet, of the sign? Choices: A: 6; B: 8; C: 12; D: 16.",
+        "es": "Pregunta 28. Un cartel rectangular mide 4 pies de largo y 2 pies de alto. ¿Cuál es el perímetro, en pies, del cartel? Opciones: A: 6; B: 8; C: 12; D: 16."
+      }
+    },
+    "nysed-2017-g4-mc-q29": {
+      "inputHash": "d06d902f9e02b2a7029d2a9db873392f2b0dad2d7d312661705bf909c63eb896",
+      "description": {
+        "en": "Question 29. Which figure has exactly one line of symmetry? Choices: A: a concave six-sided figure shaped like a rectangle with a centered triangular notch cut into its right side; B: a concave hourglass-shaped six-sided figure with matching centered triangular notches on its left and right sides; C: a regular hexagon; D: an irregular concave six-sided figure with unmatched slanted and vertical sides.",
+        "es": "Pregunta 29. ¿Qué figura tiene exactamente una línea de simetría? Opciones: A: una figura cóncava de seis lados con forma de rectángulo y una muesca triangular centrada en el lado derecho; B: una figura cóncava de seis lados con forma de reloj de arena y muescas triangulares iguales centradas en los lados izquierdo y derecho; C: un hexágono regular; D: una figura cóncava irregular de seis lados con lados inclinados y verticales que no coinciden."
+      }
+    },
+    "nysed-2017-g4-mc-q30": {
+      "inputHash": "1435e3eeeff255d034df13ab7b2a3c89ed22dec15f99ebcc7f4743c2b40c82bf",
+      "description": {
+        "en": "Question 30. If a total of 762 students at a citywide competition are divided into 6 equal-sized teams, how many students are on each team? Choices: A: 110; B: 120; C: 127; D: 137.",
+        "es": "Pregunta 30. Si un total de 762 estudiantes en una competencia de toda la ciudad se divide en 6 equipos de igual tamaño, ¿cuántos estudiantes hay en cada equipo? Opciones: A: 110; B: 120; C: 127; D: 137."
+      }
+    },
+    "nysed-2017-g4-mc-q31": {
+      "inputHash": "4529e009c508dc698ca312b45676d66009768eeaed3ae46a9544551010980a28",
+      "description": {
+        "en": "Question 31. At a neighborhood park, there are 11 spaces for bicycles on a rack by the basketball court. The bicycle rack by the playground has 3 times as many spaces as the one by the basketball court. Which equation could be used to find the total number of bicycle spaces on the rack by the playground? Choices: A: 3 × 11 = ?; B: 11 + 3 = ?; C: 11 ÷ ? = 3; D: ? + 3 = 11.",
+        "es": "Pregunta 31. En el parque de un vecindario, hay 11 espacios para bicicletas en un aparcabicis junto a la cancha de baloncesto. El aparcabicis del parque infantil tiene 3 veces más espacios que el que se encuentra junto a la cancha de baloncesto. ¿Qué ecuación se podría usar para averiguar el número total de espacios para bicicletas del aparcabicis que se encuentra junto al parque infantil? Opciones: A: 3 × 11 = ?; B: 11 + 3 = ?; C: 11 ÷ ? = 3; D: ? + 3 = 11."
+      }
+    },
+    "nysed-2017-g4-mc-q32": {
+      "inputHash": "1cee02ee3c19d387813d1e2e7b9e7055922febad5a420ee0f2a53b759b84744f",
+      "description": {
+        "en": "Question 32. Melina walked 9/12 mile each day for 5 days. What was the total distance, in miles, she walked in the 5 days? Choices: A: 9/60; B: 45/60; C: 14/12; D: 45/12.",
+        "es": "Pregunta 32. Melina caminó 9/12 de milla por día durante 5 días. ¿Cuál fue la distancia total, en millas, que caminó durante los 5 días? Opciones: A: 9/60; B: 45/60; C: 14/12; D: 45/12."
+      }
+    },
+    "nysed-2017-g4-mc-q35": {
+      "inputHash": "2ea8324e9fb4f68dfba650c5d532a27f6a3642d94f3b89188e3e69843f513efd",
+      "description": {
+        "en": "Question 35. Rowan has three pieces of yarn: a red piece that is 3/4 foot long, a yellow piece that is 6/8 foot long, and a blue piece that is 4/12 foot long. Which number sentence correctly compares the lengths of two pieces? Choices: A: 3/4 < 6/8; B: 4/12 < 3/4; C: 3/4 > 6/8; D: 4/12 > 6/8.",
+        "es": "Pregunta 35. Rowan tiene tres piezas de hilo: una roja de 3/4 de pie de largo, una amarilla de 6/8 de pie de largo y una azul de 4/12 de pie de largo. ¿Qué ecuación numérica compara correctamente las longitudes de dos piezas? Opciones: A: 3/4 < 6/8; B: 4/12 < 3/4; C: 3/4 > 6/8; D: 4/12 > 6/8."
+      }
+    },
+    "nysed-2017-g4-mc-q36": {
+      "inputHash": "d5c85e321e6f17523c7e09b3a44931dc47bfd6ecf130b626b817e5edb1df5767",
+      "description": {
+        "en": "Question 36. Four angles are shown: two angles smaller than a right angle, one straight angle, and one angle larger than a right angle but smaller than a straight angle. How many of these angles are acute? Choices: A: 1; B: 2; C: 3; D: 4.",
+        "es": "Pregunta 36. Se muestran cuatro ángulos: dos ángulos menores que un ángulo recto, un ángulo llano y un ángulo mayor que un ángulo recto pero menor que un ángulo llano. ¿Cuántos de estos ángulos son agudos? Opciones: A: 1; B: 2; C: 3; D: 4."
+      }
+    },
+    "nysed-2017-g4-mc-q37": {
+      "inputHash": "25238d40eb8f5e67f607c69b00fb785ccdaba03ece5e4a3c4662e99511faebb6",
+      "description": {
+        "en": "Question 37. Each time Rami turned the dial on a machine, the dial moved 1 degree. Rami turned the dial 10 times. What is the total number of degrees the dial moved? Choices: A: 10; B: 90; C: 110; D: 360.",
+        "es": "Pregunta 37. Cada vez que Rami giraba el dial en una máquina, el dial se movía 1 grado. Rami giró el dial 10 veces. ¿Cuál es la cantidad total de grados que se movió el dial? Opciones: A: 10; B: 90; C: 110; D: 360."
+      }
+    },
+    "nysed-2017-g4-mc-q40": {
+      "inputHash": "553e76e36e010e6bd07dbb8ab4a041a1ab64729d25eb17670523f4e3a25f666b",
+      "description": {
+        "en": "Question 40. Which method can be used to solve 11 × 13? Choices: A: Multiply 11 × 10 and 10 × 3, then add the two products; B: Multiply 11 × 10 and 11 × 3, then add the two products; C: Multiply 11 × 100 and 10 × 3, then add the two products; D: Multiply 11 × 100 and 11 × 3, then add the two products.",
+        "es": "Pregunta 40. ¿Qué método se puede usar para resolver 11 × 13? Opciones: A: Multiplicar 11 × 10 y 10 × 3, y luego sumar los dos productos; B: Multiplicar 11 × 10 y 11 × 3, y luego sumar los dos productos; C: Multiplicar 11 × 100 y 10 × 3, y luego sumar los dos productos; D: Multiplicar 11 × 100 y 11 × 3, y luego sumar los dos productos."
+      }
+    },
+    "nysed-2017-g4-mc-q41": {
+      "inputHash": "77193eccafbf3bc51b7073a1a1890a3c5cd80c9cf4b9e94e5972fc02529ca611",
+      "description": {
+        "en": "Question 41. Which model is shaded to represent a fraction equivalent to 9/12? Each bar represents 1 whole. Choices: A: a bar divided into 6 equal parts with 2 shaded; B: a bar divided into 4 equal parts with 3 shaded; C: a bar divided into 3 equal parts with 2 shaded; D: a bar divided into 3 equal parts with 1 shaded.",
+        "es": "Pregunta 41. ¿Qué modelo está sombreado para representar una fracción equivalente a 9/12? Cada barra representa 1 entero. Opciones: A: una barra dividida en 6 partes iguales con 2 sombreadas; B: una barra dividida en 4 partes iguales con 3 sombreadas; C: una barra dividida en 3 partes iguales con 2 sombreadas; D: una barra dividida en 3 partes iguales con 1 sombreada."
+      }
+    },
+    "nysed-2017-g4-mc-q44": {
+      "inputHash": "d9f91a3f9744988bc331135d50884898b19fd2f3eb163766019a9bbe119e47e0",
+      "description": {
+        "en": "Question 44. What is 123 ÷ 8? Choices: A: 15 remainder 7; B: 15 remainder 3; C: 16 remainder 5; D: 16 remainder 1.",
+        "es": "Pregunta 44. ¿Cuánto es 123 ÷ 8? Opciones: A: 15 con un remanente de 7; B: 15 con un remanente de 3; C: 16 con un remanente de 5; D: 16 con un remanente de 1."
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2017-g4-mc-q45": {
+      "inputHash": "23c405413507e05fcc43cd53afac2c96abd1e19413c231d9da8b9fe87ce2d9e4",
+      "description": {
+        "en": "Question 45. Becky and James have a total of 4 2/8 feet of yarn. Becky has 1 5/8 feet of yarn. How many feet of yarn does James have? Choices: A: 2 5/8; B: 2 7/8; C: 3 3/8; D: 3 5/8.",
+        "es": "Pregunta 45. Becky y James tienen un total de 4 2/8 pies de hilo. Becky tiene 1 5/8 pies de hilo. ¿Cuántos pies de hilo tiene James? Opciones: A: 2 5/8; B: 2 7/8; C: 3 3/8; D: 3 5/8."
+      }
+    }
+  }
+}

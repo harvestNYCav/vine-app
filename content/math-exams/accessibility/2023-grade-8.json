@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2023-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2023-g8-mc-q2": {
+      "inputHash": "d1b1baba727fb38cdd439d5ee2479269fa4212bf2a7d98fed6bead68f80a8f88",
+      "description": {
+        "en": "Question 2. Which scatter plot best represents a linear association between y and x? Each choice is a coordinate grid with x- and y-axes numbered from 0 through 11. Coordinates listed below are approximate when a point lies between grid lines. Choices: A: A scatter plot with points approximately at (1, 0), (2.3, 0.1), (3.5, 0.4), (5, 0.9), (6.3, 1.8), (7.3, 2.9), (8, 4.1), (8.6, 5.5), (8.9, 7), and (9, 8.3). The points form an upward-curving pattern that becomes increasingly steep. B: A scatter plot with points approximately at (2, 5), (3, 9), (4, 6.5), (4.5, 9), (5, 4.5), (7, 4), (7, 7), (8, 9), (9, 6.5), and (9, 7). The points are dispersed without a clear increasing or decreasing pattern. C: A scatter plot with points approximately at (0, 4.5), (0.5, 6), (1, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5), and (9, 4). The points form an arch: y increases and then decreases as x increases. D: A scatter plot with points approximately at (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2), and (10, 2). The points follow an approximately straight downward trend.",
+        "es": "Pregunta 2. ¿Qué gráfico de dispersión representa mejor una asociación lineal entre y y x? Cada opción es un plano de coordenadas con los ejes x y y numerados de 0 a 11 y una cuadrícula de una unidad. Opciones: A: Gráfico con una tendencia creciente curva, no recta. Los puntos están aproximadamente en (1, 0), (2, 0.1), (3.5, 0.4), (5, 0.9), (6.2, 1.8), (7.3, 2.8), (8, 4.1), (8.5, 5.5), (8.9, 7) y (9, 8.3). B: Gráfico con puntos dispersos sin una tendencia clara: aproximadamente (2, 5), (3, 9), (4, 6.5), (4.5, 9), (5, 4.5), (7, 4), (7, 7), (8, 9), (9, 6.5) y (9, 7). C: Gráfico con una tendencia curva: los valores de y primero aumentan y luego disminuyen. Los puntos están aproximadamente en (0, 4.5), (0.5, 6), (1, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) y (9, 4). D: Gráfico con una tendencia descendente casi recta. Los puntos están aproximadamente en (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) y (10, 2)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 through 11",
+          "(1, 0)",
+          "(2.3, 0.1)",
+          "(3.5, 0.4)",
+          "(5, 0.9)",
+          "(6.3, 1.8)",
+          "(7.3, 2.9)",
+          "(8, 4.1)",
+          "(8.6, 5.5)",
+          "(8.9, 7)",
+          "(9, 8.3)",
+          "(2, 5)",
+          "(3, 9)",
+          "(4, 6.5)",
+          "(4.5, 9)",
+          "(5, 4.5)",
+          "(7, 4)",
+          "(7, 7)",
+          "(8, 9)",
+          "(9, 6.5)",
+          "(9, 7)",
+          "(0, 4.5)",
+          "(0.5, 6)",
+          "(1, 6.5)",
+          "(1.5, 8)",
+          "(5, 10)",
+          "(7.5, 7)",
+          "(8.5, 5)",
+          "(9, 4)",
+          "(1, 10)",
+          "(1.5, 9)",
+          "(2, 8)",
+          "(3, 7)",
+          "(4, 6)",
+          "(5.5, 5)",
+          "(6, 4)",
+          "(7, 3)",
+          "(8.5, 2)",
+          "(10, 2)",
+          "A: A scatter plot with points approximately at (1, 0), (2.3, 0.1), (3.5, 0.4), (5, 0.9), (6.3, 1.8), (7.3, 2.9), (8, 4.1), (8.6, 5.5), (8.9, 7), and (9, 8.3). The points form an upward-curving pattern that becomes increasingly steep",
+          "B: A scatter plot with points approximately at (2, 5), (3, 9), (4, 6.5), (4.5, 9), (5, 4.5), (7, 4), (7, 7), (8, 9), (9, 6.5), and (9, 7). The points are dispersed without a clear increasing or decreasing pattern",
+          "C: A scatter plot with points approximately at (0, 4.5), (0.5, 6), (1, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5), and (9, 4). The points form an arch: y increases and then decreases as x increases",
+          "D: A scatter plot with points approximately at (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2), and (10, 2). The points follow an approximately straight downward trend",
+          "(7, 9)"
+        ],
+        "es": [
+          "(1, 0)",
+          "(2, 0.1)",
+          "(3.5, 0.4)",
+          "(5, 0.9)",
+          "(6.2, 1.8)",
+          "(7.3, 2.8)",
+          "(8, 4.1)",
+          "(8.5, 5.5)",
+          "(8.9, 7)",
+          "(9, 8.3)",
+          "(2, 5)",
+          "(3, 9)",
+          "(4, 6.5)",
+          "(4.5, 9)",
+          "(5, 4.5)",
+          "(7, 4)",
+          "(7, 7)",
+          "(8, 9)",
+          "(9, 6.5)",
+          "(9, 7)",
+          "(0, 4.5)",
+          "(0.5, 6)",
+          "(1, 6.5)",
+          "(1.5, 8)",
+          "(5, 10)",
+          "(7.5, 7)",
+          "(8.5, 5)",
+          "(9, 4)",
+          "(1, 10)",
+          "(1.5, 9)",
+          "(2, 8)",
+          "(3, 7)",
+          "(4, 6)",
+          "(5.5, 5)",
+          "(6, 4)",
+          "(7, 3)",
+          "(8.5, 2)",
+          "(10, 2)",
+          "A: Gráfico con una tendencia creciente curva, no recta. Los puntos están aproximadamente en (1, 0), (2, 0.1), (3.5, 0.4), (5, 0.9), (6.2, 1.8), (7.3, 2.8), (8, 4.1), (8.5, 5.5), (8.9, 7) y (9, 8.3)",
+          "B: Gráfico con puntos dispersos sin una tendencia clara: aproximadamente (2, 5), (3, 9), (4, 6.5), (4.5, 9), (5, 4.5), (7, 4), (7, 7), (8, 9), (9, 6.5) y (9, 7)",
+          "C: Gráfico con una tendencia curva: los valores de y primero aumentan y luego disminuyen. Los puntos están aproximadamente en (0, 4.5), (0.5, 6), (1, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) y (9, 4)",
+          "D: Gráfico con una tendencia descendente casi recta. Los puntos están aproximadamente en (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) y (10, 2)",
+          "(7, 9)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q3": {
+      "inputHash": "45c9f3bca817dfc409e1b788b83979b2cae7f09b2349b31b0f5716f32d438ddf",
+      "description": {
+        "en": "Question 3. Quadrilateral ABCD is graphed on a coordinate plane. Vertex A is located at the point (−2, 3). The quadrilateral is dilated by a scale factor of 2, with the center of dilation at the origin, to form quadrilateral A′B′C′D′. Which ordered pair represents the location of vertex A′? Choices: A: (−4, 5) B: (−4, 6) C: (0, 5) D: (6, −4)",
+        "es": "Pregunta 3. Se grafica el cuadrilátero ABCD en un plano de coordenadas. El vértice A está ubicado en el punto (−2, 3). El cuadrilátero se dilata por un factor de escala de 2, con el centro de dilatación en el origen para formar el cuadrilátero A′B′C′D′. ¿Qué par ordenado representa la ubicación del vértice A′? Opciones: A: (−4, 5) B: (−4, 6) C: (0, 5) D: (6, −4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−2, 3)",
+          "2",
+          "A′B′C′D′",
+          "(−4, 5)",
+          "(−4, 6)",
+          "(0, 5)",
+          "(6, −4)",
+          "A: (−4, 5)",
+          "B: (−4, 6)",
+          "C: (0, 5)",
+          "D: (6, −4)"
+        ],
+        "es": [
+          "(−2, 3)",
+          "2",
+          "A′B′C′D′",
+          "(−4, 5)",
+          "(−4, 6)",
+          "(0, 5)",
+          "(6, −4)",
+          "A: (−4, 5)",
+          "B: (−4, 6)",
+          "C: (0, 5)",
+          "D: (6, −4)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q7": {
+      "inputHash": "edc1f390a12c15b20949d84df2a560ed1be0bc515f55c5b261ecbe879e92e967",
+      "description": {
+        "en": "Question 7. The equation and the table below each represent a different relationship between x and y. Function A is y = 5/4 x. Function B is a table with columns x and y and rows (5, 1.5), (10, 3), and (15, 4.5). Which statement about the functions is true? Choices: A: Function A has a greater rate of change than Function B because 1.25 > 3.3̅. B: Function B has a greater rate of change than Function A because 1.25 < 3.3̅. C: Function A has a greater rate of change than Function B because 1.25 > 0.3. D: Function B has a greater rate of change than Function A because 1.25 < 0.3.",
+        "es": "Pregunta 7. La ecuación y la tabla que se muestran a continuación representan, cada una, una relación diferente entre x e y. Función A: y = 5/4 x. Función B: tabla con columnas x e y; sus filas son x = 5, y = 1.5; x = 10, y = 3; y x = 15, y = 4.5. ¿Qué afirmación sobre las funciones es verdadera? Opciones: A: La Función A tiene una tasa de cambio mayor que la Función B porque 1.25 > 3.3̅. B: La Función B tiene una tasa de cambio mayor que la Función A porque 1.25 < 3.3̅. C: La Función A tiene una tasa de cambio mayor que la Función B porque 1.25 > 0.3. D: La Función B tiene una tasa de cambio mayor que la Función A porque 1.25 < 0.3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 5/4 x",
+          "(5, 1.5)",
+          "(10, 3)",
+          "(15, 4.5)",
+          "1.25 > 3.3̅",
+          "1.25 < 3.3̅",
+          "1.25 > 0.3",
+          "1.25 < 0.3",
+          "A: Function A has a greater rate of change than Function B because 1.25 > 3.3̅",
+          "B: Function B has a greater rate of change than Function A because 1.25 < 3.3̅",
+          "C: Function A has a greater rate of change than Function B because 1.25 > 0.3",
+          "D: Function B has a greater rate of change than Function A because 1.25 < 0.3",
+          "5/4",
+          "e 1.25 > 3.3",
+          "e 1.25 < 3.3",
+          "e 1.25 > 0.3",
+          "e 1.25 < 0.3"
+        ],
+        "es": [
+          "y = 5/4 x",
+          "x = 5",
+          "y = 1.5",
+          "x = 10",
+          "y = 3",
+          "x = 15",
+          "y = 4.5",
+          "1.25 > 3.3̅",
+          "1.25 < 3.3̅",
+          "C: La Función A tiene una tasa de cambio mayor que la Función B porque 1.25 > 0.3",
+          "D: La Función B tiene una tasa de cambio mayor que la Función A porque 1.25 < 0.3",
+          "A: La Función A tiene una tasa de cambio mayor que la Función B porque 1.25 > 3.3̅",
+          "B: La Función B tiene una tasa de cambio mayor que la Función A porque 1.25 < 3.3̅",
+          "5/4",
+          "e 1.25 > 3.3",
+          "e 1.25 < 3.3",
+          "e 1.25 > 0.3",
+          "e 1.25 < 0.3"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q8": {
+      "inputHash": "3f79dd0a93c9f23508fb9a62174e0b7590fe28e1db09a2a3c0b07f645ffab69a",
+      "description": {
+        "en": "Question 8. Two points are plotted on a coordinate plane. Point A is plotted at (−11, 8), and point B is plotted at (−2, −4). What is the distance, in units, from point A to point B? Choices: A: 13 B: 15 C: √145 D: √185",
+        "es": "Pregunta 8. Se trazan dos puntos en un plano de coordenadas. El punto A se traza en (−11, 8) y el punto B se traza en (−2, −4). ¿Cuál es la distancia, en unidades, del punto A al punto B? Opciones: A: 13 B: 15 C: √145 D: √185"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−11, 8)",
+          "(−2, −4)",
+          "13",
+          "15",
+          "√145",
+          "√185",
+          "A: 13",
+          "B: 15",
+          "C: √145",
+          "D: √185"
+        ],
+        "es": [
+          "(−11, 8)",
+          "(−2, −4)",
+          "13",
+          "15",
+          "√145",
+          "√185",
+          "A: 13",
+          "B: 15",
+          "C: √145",
+          "D: √185"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q12": {
+      "inputHash": "dc340223167659b1bc4fe1fed66d73ef0e992fd47347ff08fca101a4dd067d89",
+      "description": {
+        "en": "Question 12. The rule for a function of x is: multiply the input value by 2, then subtract 6. The data set for the input values of the function, x, is {−1, 1, 3, 5}. Which value is one of the output values, y? Choices: A: −2 B: −1 C: 2 D: 4",
+        "es": "Pregunta 12. La regla para una función de x es: multiplicar el valor de ingreso por 2, y luego restar 6. El conjunto de datos de los valores de ingreso de la función, x, es {−1, 1, 3, 5}. ¿Qué valor es uno de los valores de egreso, y? Opciones: A: −2 B: −1 C: 2 D: 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2",
+          "6",
+          "{−1, 1, 3, 5}",
+          "−2",
+          "−1",
+          "4",
+          "A: −2",
+          "B: −1",
+          "C: 2",
+          "D: 4"
+        ],
+        "es": [
+          "2",
+          "6",
+          "{−1, 1, 3, 5}",
+          "−2",
+          "−1",
+          "4",
+          "A: −2",
+          "B: −1",
+          "C: 2",
+          "D: 4"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q15": {
+      "inputHash": "b38634ca4499b158bb7c99094b549bab3c7527f1bfa4e91c1230b6c29cd53d10",
+      "description": {
+        "en": "Question 15. Which expression has a value of 1/16? Choices: A: (2⁻⁴)⁻¹ B: (2⁴)⁻¹ C: (2⁸)⁻² D: (2⁻⁸)⁻²",
+        "es": "Pregunta 15. ¿Qué expresión tiene un valor de 1/16? Opciones: A: (2⁻⁴)⁻¹ B: (2⁴)⁻¹ C: (2⁸)⁻² D: (2⁻⁸)⁻²"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/16",
+          "(2⁻⁴)⁻¹",
+          "(2⁴)⁻¹",
+          "(2⁸)⁻²",
+          "(2⁻⁸)⁻²",
+          "A: (2⁻⁴)⁻¹",
+          "B: (2⁴)⁻¹",
+          "C: (2⁸)⁻²",
+          "D: (2⁻⁸)⁻²",
+          "(2⁻⁴)",
+          "(2⁴)",
+          "(2⁸)",
+          "(2⁻⁸)"
+        ],
+        "es": [
+          "1/16",
+          "(2⁻⁴)⁻¹",
+          "(2⁴)⁻¹",
+          "(2⁸)⁻²",
+          "(2⁻⁸)⁻²",
+          "A: (2⁻⁴)⁻¹",
+          "B: (2⁴)⁻¹",
+          "C: (2⁸)⁻²",
+          "D: (2⁻⁸)⁻²",
+          "(2⁻⁴)",
+          "(2⁴)",
+          "(2⁸)",
+          "(2⁻⁸)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q16": {
+      "inputHash": "9a7e7d3f96f50ecd3e94803680524d2ba02e4bca4867554babcfa673406577b0",
+      "description": {
+        "en": "Question 16. A cylinder has a radius of 4.8 feet and a height of 8.1 feet. What is the volume, to the nearest tenth of a cubic foot, of the cylinder? Choices: A: 989.4 B: 586.3 C: 244.3 D: 186.6",
+        "es": "Pregunta 16. Un cilindro tiene un radio de 4.8 pies y una altura de 8.1 pies. ¿Cuál es el volumen del cilindro, redondeado al décimo más cercano de un pie cúbico? Opciones: A: 989.4 B: 586.3 C: 244.3 D: 186.6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4.8 feet",
+          "8.1 feet",
+          "989.4",
+          "586.3",
+          "244.3",
+          "186.6",
+          "A: 989.4",
+          "B: 586.3",
+          "C: 244.3",
+          "D: 186.6"
+        ],
+        "es": [
+          "4.8 pies",
+          "8.1 pies",
+          "989.4",
+          "586.3",
+          "244.3",
+          "186.6",
+          "A: 989.4",
+          "B: 586.3",
+          "C: 244.3",
+          "D: 186.6"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q19": {
+      "inputHash": "f94a6c7ff21b9f2188362709b834a4ff2034747dc872bcddc8c9c54f8e82abc6",
+      "description": {
+        "en": "Question 19. Triangle ABC and its congruent image, triangle A′B′C′, are graphed on a coordinate plane. The axes are labeled x and y, and the grid is marked in increments of 2. Triangle ABC has vertices A(4, −4), B(8, −8), and C(10, −5). Triangle A′B′C′ has corresponding vertices A′(−4, −2), B′(−8, −6), and C′(−10, −3). Which sequence of transformations maps triangle ABC onto triangle A′B′C′? Choices: A: a reflection over the y-axis and then a translation 2 units up B: a reflection over the y-axis and then a translation 2 units down C: a reflection over the x-axis and then a translation 8 units left D: a reflection over the x-axis and then a translation 8 units right",
+        "es": "Pregunta 19. El triángulo ABC y su imagen congruente, el triángulo A′B′C′, se grafican en un plano de coordenadas. La cuadrícula está marcada de 2 en 2 en ambos ejes. El triángulo ABC tiene vértices A(4, −4), B(8, −8) y C(10, −5). El triángulo congruente A′B′C′ tiene vértices A′(−4, −2), B′(−8, −6) y C′(−10, −3). En cada triángulo, los tres vértices están unidos por segmentos. ¿Qué secuencia de transformaciones traza el triángulo ABC en el triángulo A′B′C′? Opciones: A: una reflexión sobre el eje y y luego una traslación 2 unidades hacia arriba B: una reflexión sobre el eje y y luego una traslación 2 unidades hacia abajo C: una reflexión sobre el eje x y luego una traslación 8 unidades a la izquierda D: una reflexión sobre el eje x y luego una traslación 8 unidades a la derecha"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2",
+          "A(4, −4)",
+          "B(8, −8)",
+          "C(10, −5)",
+          "A′(−4, −2)",
+          "B′(−8, −6)",
+          "C′(−10, −3)",
+          "2 units up",
+          "2 units down",
+          "8 units left",
+          "8 units right",
+          "A: a reflection over the y-axis and then a translation 2 units up",
+          "B: a reflection over the y-axis and then a translation 2 units down",
+          "C: a reflection over the x-axis and then a translation 8 units left",
+          "D: a reflection over the x-axis and then a translation 8 units right",
+          "(4, −4)",
+          "(8, −8)",
+          "(10, −5)",
+          "(−4, −2)",
+          "(−8, −6)",
+          "(−10, −3)"
+        ],
+        "es": [
+          "A(4, −4)",
+          "B(8, −8)",
+          "C(10, −5)",
+          "A′(−4, −2)",
+          "B′(−8, −6)",
+          "C′(−10, −3)",
+          "2 unidades hacia arriba",
+          "2 unidades hacia abajo",
+          "8 unidades a la izquierda",
+          "8 unidades a la derecha",
+          "eje y",
+          "eje x",
+          "A: una reflexión sobre el eje y y luego una traslación 2 unidades hacia arriba",
+          "B: una reflexión sobre el eje y y luego una traslación 2 unidades hacia abajo",
+          "C: una reflexión sobre el eje x y luego una traslación 8 unidades a la izquierda",
+          "D: una reflexión sobre el eje x y luego una traslación 8 unidades a la derecha",
+          "(4, −4)",
+          "(8, −8)",
+          "(10, −5)",
+          "(−4, −2)",
+          "(−8, −6)",
+          "(−10, −3)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q20": {
+      "inputHash": "8f14ad59ce1ab689829ca2f7affe9c60cc3f6ab09177b6f20b47b57a9b5443ec",
+      "description": {
+        "en": "Question 20. Which equation represents the graph of a line on a coordinate plane that passes through the x-intercept at (9,0) and the y-intercept at (0,−5)? Choices: A: y = −9/5x − 5. B: y = 9/5x − 5. C: y = −5/9x − 5. D: y = 5/9x − 5.",
+        "es": "Pregunta 20. ¿Qué ecuación representa el gráfico de una recta en un plano de coordenadas que atraviesa la intersección con el eje x en (9, 0) y la intersección con el eje y en (0, −5)? Opciones: A: y = −(9/5)x − 5 B: y = (9/5)x − 5 C: y = −(5/9)x − 5 D: y = (5/9)x − 5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(9,0)",
+          "(0,−5)",
+          "y = −9/5x − 5",
+          "y = 9/5x − 5",
+          "y = −5/9x − 5",
+          "y = 5/9x − 5",
+          "A: y = −9/5x − 5",
+          "B: y = 9/5x − 5",
+          "C: y = −5/9x − 5",
+          "D: y = 5/9x − 5",
+          "9/5",
+          "5/9"
+        ],
+        "es": [
+          "(9, 0)",
+          "(0, −5)",
+          "y = −(9/5)x − 5",
+          "y = (9/5)x − 5",
+          "y = −(5/9)x − 5",
+          "5",
+          "y = (5/9)x − 5",
+          "A: y = −(9/5)x − 5",
+          "B: y = (9/5)x − 5",
+          "C: y = −(5/9)x − 5",
+          "D: y = (5/9)x − 5",
+          "(9/5)",
+          "(5/9)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q22": {
+      "inputHash": "80384f8ad4d09a601958390859c6fbe72e59a9ebbe32f7a4ce579feb7dee54b6",
+      "description": {
+        "en": "Question 22. Trent draws a triangle with one interior angle measuring 34°. Which angle measures could be the measures of the other two interior angles in Trent’s triangle? Choices: A: 46° and 90°. B: 53° and 127°. C: 66° and 80°. D: 68° and 68°.",
+        "es": "Pregunta 22. Trent dibuja un triángulo con un ángulo interior de 34°. ¿De cuántos grados podrían ser los otros dos ángulos interiores del triángulo de Trent? Opciones: A: 46° y 90° B: 53° y 127° C: 66° y 80° D: 68° y 68°"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "34°",
+          "46°",
+          "90°",
+          "53°",
+          "127°",
+          "66°",
+          "80°",
+          "68°",
+          "A: 46° and 90°",
+          "B: 53° and 127°",
+          "C: 66° and 80°",
+          "D: 68° and 68°"
+        ],
+        "es": [
+          "34°",
+          "46° y 90°",
+          "53° y 127°",
+          "66° y 80°",
+          "68° y 68°",
+          "A: 46° y 90°",
+          "B: 53° y 127°",
+          "C: 66° y 80°",
+          "D: 68° y 68°"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q23": {
+      "inputHash": "0cefdf50c814f33640f2c59550e245bd9478db1aa39f224032d87bbdd81eb63c",
+      "description": {
+        "en": "Question 23. Nathan observes the growth of sunflower plants for a science project. He collects data on the relationship between the height, in centimeters, of each sunflower plant during a thirty-day period and the amount of fertilizer, in grams, used on each plant. The equation for the line of best fit for these data is y = 0.35x + 2, where y is the height of the plant in centimeters and x is the number of grams of fertilizer used. Based on the model, what does the slope of the line represent? Choices: A: the height of the plant. B: the amount of fertilizer used. C: the average growth of the plant per gram of fertilizer used. D: the average amount of fertilizer used per centimeter the plant grew.",
+        "es": "Pregunta 23. Nathan tiene que observar el crecimiento de plantas de girasol para un proyecto de ciencias. Recopila datos sobre la relación entre la altura, en centímetros, de cada planta de girasol durante un período de treinta días y la cantidad de fertilizante, en gramos, que usa en cada planta. La ecuación para la línea de ajuste óptimo de estos datos es y = 0.35x + 2, donde y representa la altura de la planta en centímetros y x representa la cantidad de gramos de fertilizante utilizado. Según el modelo, ¿qué representa la pendiente de la línea? Opciones: A: la altura de la planta B: la cantidad de fertilizante utilizado C: el crecimiento promedio de la planta por gramo de fertilizante utilizado D: la cantidad promedio de fertilizante utilizado por cada centímetro que creció la planta"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 0.35x + 2",
+          "y",
+          "x",
+          "A: the height of the plant",
+          "B: the amount of fertilizer used",
+          "C: the average growth of the plant per gram of fertilizer used",
+          "D: the average amount of fertilizer used per centimeter the plant grew"
+        ],
+        "es": [
+          "treinta días",
+          "y = 0.35x + 2",
+          "0.35",
+          "2",
+          "A: la altura de la planta",
+          "B: la cantidad de fertilizante utilizado",
+          "C: el crecimiento promedio de la planta por gramo de fertilizante utilizado",
+          "D: la cantidad promedio de fertilizante utilizado por cada centímetro que creció la planta"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q24": {
+      "inputHash": "83e67be8cc92460b03614abc0ac247bc8075c604df4c210c54df7269951ab939",
+      "description": {
+        "en": "Question 24. Line segment CD is graphed on a coordinate plane. The line segment is reflected over the x-axis and then rotated 90° clockwise about the origin to create line segment EF. Which statement is always true about line segment EF? Choices: A: Line segment EF is congruent to line segment CD. B: Line segment EF is perpendicular to line segment CD. C: Line segment EF is twice the length of line segment CD. D: Line segment EF is one-half the length of line segment CD.",
+        "es": "Pregunta 24. Se grafica el segmento lineal CD en un plano de coordenadas. El segmento lineal se refleja sobre el eje x y se rota 90° en sentido de las agujas del reloj alrededor del origen para crear el segmento lineal EF. ¿Qué afirmación es siempre verdadera sobre el segmento lineal EF? Opciones: A: El segmento lineal EF es congruente con el segmento lineal CD. B: El segmento lineal EF es perpendicular al segmento lineal CD. C: El segmento lineal EF es dos veces más largo que el segmento lineal CD. D: El segmento lineal EF es la mitad de largo que el segmento lineal CD."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "CD",
+          "x-axis",
+          "90°",
+          "EF",
+          "twice",
+          "one-half",
+          "A: Line segment EF is congruent to line segment CD",
+          "B: Line segment EF is perpendicular to line segment CD",
+          "C: Line segment EF is twice the length of line segment CD",
+          "D: Line segment EF is one-half the length of line segment CD"
+        ],
+        "es": [
+          "CD",
+          "eje x",
+          "90°",
+          "EF",
+          "dos veces",
+          "la mitad",
+          "A: El segmento lineal EF es congruente con el segmento lineal CD",
+          "B: El segmento lineal EF es perpendicular al segmento lineal CD",
+          "C: El segmento lineal EF es dos veces más largo que el segmento lineal CD",
+          "D: El segmento lineal EF es la mitad de largo que el segmento lineal CD"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q25": {
+      "inputHash": "6fb85a63efa664d1ff82323f951b7d1802f3307a3771a99e4703be8acd31cd26",
+      "description": {
+        "en": "Question 25. Lines a and b are parallel horizontal lines, with a above b, and line c is a transversal that rises from lower left to upper right. At the intersection of c with a, the angle above a and to the left of c is labeled (13x + 6)°. At the intersection of c with b, the angle above b and to the left of c is labeled (11x + 30)°. What is the value of x? Choices: A: 6. B: 9. C: 12. D: 18.",
+        "es": "Pregunta 25. En la figura, las rectas a y b son paralelas, horizontales, y la recta c es transversal: asciende en diagonal de izquierda a derecha y corta primero a b y luego a a. El ángulo situado arriba de la recta a y a la izquierda de la transversal c mide (13x + 6)°. El ángulo situado arriba de la recta b y a la izquierda de la transversal c mide (11x + 30)°. ¿Cuál es el valor de x? Opciones: A: 6 B: 9 C: 12 D: 18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "a",
+          "b",
+          "c",
+          "(13x + 6)°",
+          "(11x + 30)°",
+          "x",
+          "6",
+          "9",
+          "12",
+          "18",
+          "A: 6",
+          "B: 9",
+          "C: 12",
+          "D: 18",
+          "(13x + 6)",
+          "(11x + 30)"
+        ],
+        "es": [
+          "a",
+          "b",
+          "c",
+          "(13x + 6)°",
+          "(11x + 30)°",
+          "6",
+          "9",
+          "12",
+          "18",
+          "A: 6",
+          "B: 9",
+          "C: 12",
+          "D: 18",
+          "(13x + 6)",
+          "(11x + 30)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q26": {
+      "inputHash": "5e238f13687d6c980a877877b721a2d69eaba00426f438a5ffd851bad1bae266",
+      "description": {
+        "en": "Question 26. Two functions are described. Function A: A taxi driver charges customers a base amount of $3.00 and also an amount of $2.00 per mile, x, for a total charge, y, to a customer. Function B: The equation y = 3x + 2 represents the relationship between the number of miles, x, a taxi travels and the total charge, y, to a customer. Which statement correctly compares the relationship between Function A and Function B? Choices: A: Function A has both a greater rate of change and a greater initial value. B: Function B has both a greater rate of change and a greater initial value. C: Function A has a greater rate of change than Function B, but the initial value for Function A is less than the initial value for Function B. D: Function B has a greater rate of change than Function A, but the initial value for Function B is less than the initial value for Function A.",
+        "es": "Pregunta 26. A continuación, se describen dos funciones. Función A: Un taxista cobra a sus clientes un monto base de $3.00 y también un monto de $2.00 por milla, x, lo que da un importe total, y, que deben pagar los clientes. Función B: La ecuación y = 3x + 2 representa la relación entre la cantidad de millas, x, que recorre el taxi y el importe total, y, que debe pagar un cliente. ¿En qué enunciado se compara correctamente la relación entre la Función A y la Función B? Opciones: A: La Función A tiene una tasa de cambio mayor y un valor inicial mayor. B: La Función B tiene una tasa de cambio mayor y un valor inicial mayor. C: La Función A tiene una tasa de cambio mayor que la Función B, pero el valor inicial de la Función A es menor que el valor inicial de la Función B. D: La Función B tiene una tasa de cambio mayor que la Función A, pero el valor inicial de la Función B es menor que el valor inicial de la Función A."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$3.00",
+          "$2.00",
+          "x",
+          "y",
+          "y = 3x + 2",
+          "A: Function A has both a greater rate of change and a greater initial value",
+          "B: Function B has both a greater rate of change and a greater initial value",
+          "C: Function A has a greater rate of change than Function B, but the initial value for Function A is less than the initial value for Function B",
+          "D: Function B has a greater rate of change than Function A, but the initial value for Function B is less than the initial value for Function A"
+        ],
+        "es": [
+          "$3.00",
+          "$2.00",
+          "x",
+          "y",
+          "y = 3x + 2",
+          "3",
+          "2",
+          "A: La Función A tiene una tasa de cambio mayor y un valor inicial mayor",
+          "B: La Función B tiene una tasa de cambio mayor y un valor inicial mayor",
+          "C: La Función A tiene una tasa de cambio mayor que la Función B, pero el valor inicial de la Función A es menor que el valor inicial de la Función B",
+          "D: La Función B tiene una tasa de cambio mayor que la Función A, pero el valor inicial de la Función B es menor que el valor inicial de la Función A"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q29": {
+      "inputHash": "b7a2753d7fd64e7be8cf823b24bab8a4cf56925ae445689c1700f2bca2d46084",
+      "description": {
+        "en": "Question 29. On a coordinate plane, triangle ABC undergoes a sequence of transformations to create triangle A′B′C′. The axes are labeled x and y, and the grid is marked in increments of 2. Triangle ABC has vertices A(2,4), B(2,2), and C(6,2). Segment AB is vertical, segment BC is horizontal, and segment AC slopes downward from left to right. Triangle A′B′C′ has vertices A′(4,−8), B′(4,−4), and C′(12,−4). Segment A′B′ is vertical, segment B′C′ is horizontal, and segment A′C′ slopes upward from left to right. Which sequence of transformations could have been used to take triangle ABC to triangle A′B′C′? Choices: A: a dilation by a scale factor of 2 centered at the origin and then a reflection over the x-axis. B: a dilation by a scale factor of 2 centered at the origin and then a reflection over the y-axis. C: a dilation by a scale factor of 1/2 centered at the origin and then a reflection over the x-axis. D: a dilation by a scale factor of 1/2 centered at the origin and then a reflection over the y-axis.",
+        "es": "Pregunta 29. En un plano de coordenadas, △ABC sufre una secuencia de transformaciones para crear △A′B′C′. En la cuadrícula, △ABC tiene los vértices A(2, 4), B(2, 2) y C(6, 2): AB es vertical, BC es horizontal y AC desciende de izquierda a derecha. El triángulo transformado tiene los vértices A′(4, −8), B′(4, −4) y C′(12, −4): A′B′ es vertical, B′C′ es horizontal y A′C′ asciende de izquierda a derecha. ¿Qué secuencia de transformaciones se podría haber utilizado para llevar △ABC a △A′B′C′? Opciones: A: una dilatación por un factor de escala de 2 centrada en el origen y luego una reflexión sobre el eje x B: una dilatación por un factor de escala de 2 centrada en el origen y luego una reflexión sobre el eje y C: una dilatación por un factor de escala de 1/2 centrada en el origen y luego una reflexión sobre el eje x D: una dilatación por un factor de escala de 1/2 centrada en el origen y luego una reflexión sobre el eje y"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(2,4)",
+          "B(2,2)",
+          "C(6,2)",
+          "A′(4,−8)",
+          "B′(4,−4)",
+          "C′(12,−4)",
+          "2",
+          "1/2",
+          "x-axis",
+          "y-axis",
+          "A: a dilation by a scale factor of 2 centered at the origin and then a reflection over the x-axis",
+          "B: a dilation by a scale factor of 2 centered at the origin and then a reflection over the y-axis",
+          "C: a dilation by a scale factor of 1/2 centered at the origin and then a reflection over the x-axis",
+          "D: a dilation by a scale factor of 1/2 centered at the origin and then a reflection over the y-axis",
+          "(2,4)",
+          "(2,2)",
+          "(6,2)",
+          "(4,−8)",
+          "(4,−4)",
+          "(12,−4)"
+        ],
+        "es": [
+          "△ABC",
+          "△A′B′C′",
+          "A(2, 4)",
+          "B(2, 2)",
+          "C(6, 2)",
+          "A′(4, −8)",
+          "B′(4, −4)",
+          "C′(12, −4)",
+          "2",
+          "1/2",
+          "eje x",
+          "eje y",
+          "A: una dilatación por un factor de escala de 2 centrada en el origen y luego una reflexión sobre el eje x",
+          "B: una dilatación por un factor de escala de 2 centrada en el origen y luego una reflexión sobre el eje y",
+          "C: una dilatación por un factor de escala de 1/2 centrada en el origen y luego una reflexión sobre el eje x",
+          "D: una dilatación por un factor de escala de 1/2 centrada en el origen y luego una reflexión sobre el eje y",
+          "(2, 4)",
+          "(2, 2)",
+          "(6, 2)",
+          "(4, −8)",
+          "(4, −4)",
+          "(12, −4)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q33": {
+      "inputHash": "fa78865346446f154d4c0a0aed60b018a091d28b62b36a508008231516eeeb86",
+      "description": {
+        "en": "Question 33. The graph of a line is on a coordinate plane with axes labeled x and y and grid marks in increments of 1. The line has arrowheads at both ends, rises from lower left to upper right, and passes through the marked points (0,1) and (6,4). It crosses the x-axis at (−2,0). Which equation represents the graph of the line? Choices: A: y = 1/2x + 1. B: y = 1/2x − 2. C: y = 2x + 1. D: y = 2x − 2.",
+        "es": "Pregunta 33. En el siguiente plano de coordenadas se muestra el gráfico de una recta. Los ejes x e y tienen marcas de una unidad. La recta asciende de izquierda a derecha, tiene flechas en ambos extremos y pasa por los puntos marcados (0, 1) y (6, 4). También cruza el eje x en (−2, 0). ¿Qué ecuación representa el gráfico de la recta? Opciones: A: y = (1/2)x + 1 B: y = (1/2)x − 2 C: y = 2x + 1 D: y = 2x − 2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0,1)",
+          "(6,4)",
+          "(−2,0)",
+          "y = 1/2x + 1",
+          "y = 1/2x − 2",
+          "y = 2x + 1",
+          "y = 2x − 2",
+          "A: y = 1/2x + 1",
+          "B: y = 1/2x − 2",
+          "C: y = 2x + 1",
+          "D: y = 2x − 2",
+          "1/2"
+        ],
+        "es": [
+          "(0, 1)",
+          "(6, 4)",
+          "(−2, 0)",
+          "y = (1/2)x + 1",
+          "y = (1/2)x − 2",
+          "y = 2x + 1",
+          "y = 2x − 2",
+          "A: y = (1/2)x + 1",
+          "B: y = (1/2)x − 2",
+          "C: y = 2x + 1",
+          "D: y = 2x − 2",
+          "(1/2)"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q34": {
+      "inputHash": "7a281983a03c1b618c877d4e405d4cdbdbf6bf51a1eb147051245012b2920f42",
+      "description": {
+        "en": "Question 34. Function A and Function B are represented by a table and graph. Function A is a table with columns x and y and rows (−6, −12), (−2, −4), (0, 0), and (2, 4). Function B is graphed on a coordinate plane with x- and y-axes labeled in increments of 2. A straight line with arrows at both ends rises from lower left to upper right, passes through the origin (0, 0), and contains a marked closed point at (4, 6). Which statement about Function A and Function B is true? Choices: A: The rate of change for Function A is less than the rate of change for Function B. B: The rate of change for Function A is greater than the rate of change for Function B. C: The rate of change for Function A is equal to the rate of change for Function B because the graph of the line for each function is linear. D: The rate of change for Function A is equal to the rate of change for Function B because the graph of the line for each function passes through the origin.",
+        "es": "Pregunta 34. En la tabla y el gráfico que se muestran a continuación se representan la Función A y la Función B. La Función A está dada por una tabla de dos columnas, x e y, con los pares ordenados (−6, −12), (−2, −4), (0, 0) y (2, 4). La Función B está representada en un plano de coordenadas con ambos ejes marcados de 2 en 2, desde −10 hasta 10. Es una recta ascendente con flechas en ambos extremos; atraviesa el origen (0, 0), contiene el punto cerrado (4, 6) y continúa aproximadamente hacia (8, 12) y (−8, −12). ¿Qué enunciado sobre la Función A y la Función B es verdadero? Opciones: A: La tasa de cambio de la Función A es menor que la tasa de cambio de la Función B. B: La tasa de cambio de la Función A es mayor que la tasa de cambio de la Función B. C: La tasa de cambio de la Función A es igual a la tasa de cambio de la Función B porque el gráfico de la línea de cada función es lineal. D: La tasa de cambio de la Función A es igual a la tasa de cambio de la Función B porque el gráfico de la línea de cada función atraviesa el origen."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−6, −12)",
+          "(−2, −4)",
+          "(0, 0)",
+          "(2, 4)",
+          "(4, 6)",
+          "A: The rate of change for Function A is less than the rate of change for Function B",
+          "B: The rate of change for Function A is greater than the rate of change for Function B",
+          "C: The rate of change for Function A is equal to the rate of change for Function B because the graph of the line for each function is linear",
+          "D: The rate of change for Function A is equal to the rate of change for Function B because the graph of the line for each function passes through the origin"
+        ],
+        "es": [
+          "(−6, −12)",
+          "(−2, −4)",
+          "(0, 0)",
+          "(2, 4)",
+          "(4, 6)",
+          "(8, 12)",
+          "(−8, −12)",
+          "−10",
+          "10",
+          "A: La tasa de cambio de la Función A es menor que la tasa de cambio de la Función B",
+          "B: La tasa de cambio de la Función A es mayor que la tasa de cambio de la Función B",
+          "C: La tasa de cambio de la Función A es igual a la tasa de cambio de la Función B porque el gráfico de la línea de cada función es lineal",
+          "D: La tasa de cambio de la Función A es igual a la tasa de cambio de la Función B porque el gráfico de la línea de cada función atraviesa el origen"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q35": {
+      "inputHash": "43f31a5d7a3053752c7d41bf9b1798361f0e4cb66d557ab1b12d59da712900f9",
+      "description": {
+        "en": "Question 35. Which statement about the value of √50 is true? Choices: A: It is irrational because the decimal equivalent eventually repeats. B: It is rational because the decimal equivalent eventually terminates. C: It is rational because the value as a decimal is equivalent to a fraction. D: It is irrational because the decimal equivalent is non-repeating and does not terminate.",
+        "es": "Pregunta 35. ¿Qué afirmación acerca del valor de √50 es verdadera? Opciones: A: Es irracional porque el equivalente decimal inevitablemente se repite. B: Es racional porque el equivalente decimal inevitablemente termina. C: Es racional porque el valor expresado como decimal es equivalente a una fracción. D: Es irracional porque el equivalente decimal no se repite y no termina."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "√50",
+          "irrational",
+          "rational",
+          "eventually repeats",
+          "eventually terminates",
+          "non-repeating",
+          "does not terminate",
+          "A: It is irrational because the decimal equivalent eventually repeats",
+          "B: It is rational because the decimal equivalent eventually terminates",
+          "C: It is rational because the value as a decimal is equivalent to a fraction",
+          "D: It is irrational because the decimal equivalent is non-repeating and does not terminate"
+        ],
+        "es": [
+          "√50",
+          "A: Es irracional porque el equivalente decimal inevitablemente se repite",
+          "B: Es racional porque el equivalente decimal inevitablemente termina",
+          "C: Es racional porque el valor expresado como decimal es equivalente a una fracción",
+          "D: Es irracional porque el equivalente decimal no se repite y no termina"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q36": {
+      "inputHash": "ba4293af40a67fbf3eacfc0a8d0e6a61231518964aa7f12de0697a280fef3d96",
+      "description": {
+        "en": "Question 36. Which graph represents y as a function of x? Each choice is a coordinate plane with x- and y-axes numbered from −8 through 8. Choices: A: A curve has a leftmost closed point at (−6, 0), then splits into an upper branch ending at the closed point (0, 5) and a lower branch ending at the closed point (0, −5). From (0, 5), a horizontal ray at y = 5 extends to the right; from (0, −5), a horizontal ray at y = −5 extends to the right. Both rays have right-pointing arrows. B: A vertical line at x = 3 extends upward and downward with arrows at both ends. C: Horizontal rays at y = 5 and y = −5 extend leftward with left-pointing arrows and have closed endpoints at (0, 5) and (0, −5). From those endpoints, an upper and a lower curved branch extend rightward and meet at the closed point (6, 0). D: A horizontal line at y = 3 extends left and right with arrows at both ends.",
+        "es": "Pregunta 36. ¿Qué gráfico representa a y como una función de x? Cada opción presenta un plano de coordenadas con los ejes x e y y marcas enteras de −8 a 8. Opciones: A: Una curva de dos ramas tiene un punto cerrado común en (−6, 0). La rama superior se curva hacia la derecha hasta el punto cerrado (0, 5) y desde allí continúa horizontalmente hacia la derecha, con una flecha sobre la recta y = 5. La rama inferior se curva hacia la derecha hasta el punto cerrado (0, −5) y desde allí continúa horizontalmente hacia la derecha, con una flecha sobre la recta y = −5. B: Una recta vertical x = 3, con flechas hacia arriba y hacia abajo. C: Dos rayos horizontales llegan desde la izquierda: uno sobre y = 5 hasta el punto cerrado (0, 5) y otro sobre y = −5 hasta el punto cerrado (0, −5). Desde esos dos puntos salen ramas curvas hacia la derecha que se unen en el punto cerrado (6, 0). D: Una recta horizontal y = 3, con flechas hacia la izquierda y hacia la derecha."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−8",
+          "8",
+          "(−6, 0)",
+          "(0, 5)",
+          "(0, −5)",
+          "y = 5",
+          "y = −5",
+          "x = 3",
+          "(6, 0)",
+          "y = 3",
+          "A: A curve has a leftmost closed point at (−6, 0), then splits into an upper branch ending at the closed point (0, 5) and a lower branch ending at the closed point (0, −5). From (0, 5), a horizontal ray at y = 5 extends to the right; from (0, −5), a horizontal ray at y = −5 extends to the right. Both rays have right-pointing arrows",
+          "B: A vertical line at x = 3 extends upward and downward with arrows at both ends",
+          "C: Horizontal rays at y = 5 and y = −5 extend leftward with left-pointing arrows and have closed endpoints at (0, 5) and (0, −5). From those endpoints, an upper and a lower curved branch extend rightward and meet at the closed point (6, 0)",
+          "D: A horizontal line at y = 3 extends left and right with arrows at both ends"
+        ],
+        "es": [
+          "−8",
+          "8",
+          "(−6, 0)",
+          "(0, 5)",
+          "y = 5",
+          "(0, −5)",
+          "y = −5",
+          "x = 3",
+          "(6, 0)",
+          "y = 3",
+          "A: Una curva de dos ramas tiene un punto cerrado común en (−6, 0). La rama superior se curva hacia la derecha hasta el punto cerrado (0, 5) y desde allí continúa horizontalmente hacia la derecha, con una flecha sobre la recta y = 5. La rama inferior se curva hacia la derecha hasta el punto cerrado (0, −5) y desde allí continúa horizontalmente hacia la derecha, con una flecha sobre la recta y = −5",
+          "B: Una recta vertical x = 3, con flechas hacia arriba y hacia abajo",
+          "C: Dos rayos horizontales llegan desde la izquierda: uno sobre y = 5 hasta el punto cerrado (0, 5) y otro sobre y = −5 hasta el punto cerrado (0, −5). Desde esos dos puntos salen ramas curvas hacia la derecha que se unen en el punto cerrado (6, 0)",
+          "D: Una recta horizontal y = 3, con flechas hacia la izquierda y hacia la derecha"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q37": {
+      "inputHash": "4ad6ee05af89944c9e5d23a8cc9c701b65394dc5d9bef6d8418f897cc33011e6",
+      "description": {
+        "en": "Question 37. A cylindrical container has a height of 56 centimeters and a diameter of 22 centimeters. What is the volume, in cubic centimeters, of the container in terms of π? Choices: A: 1,232π B: 3,388π C: 6,776π D: 27,104π",
+        "es": "Pregunta 37. Un recipiente cilíndrico tiene una altura de 56 centímetros y un diámetro de 22 centímetros. ¿Cuál es el volumen, en centímetros cúbicos, del recipiente en términos de π? Opciones: A: 1,232π B: 3,388π C: 6,776π D: 27,104π"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "56 centimeters",
+          "22 centimeters",
+          "cubic centimeters",
+          "π",
+          "1,232π",
+          "3,388π",
+          "6,776π",
+          "27,104π",
+          "A: 1,232π",
+          "B: 3,388π",
+          "C: 6,776π",
+          "D: 27,104π"
+        ],
+        "es": [
+          "56 centímetros",
+          "22 centímetros",
+          "1,232π",
+          "3,388π",
+          "6,776π",
+          "27,104π",
+          "A: 1,232π",
+          "B: 3,388π",
+          "C: 6,776π",
+          "D: 27,104π"
+        ]
+      }
+    },
+    "nysed-2023-g8-mc-q38": {
+      "inputHash": "baaf25a7bcfab5cc5dd060a1c784889fbdfa8a4aeda8d57be0034d62464b03ef",
+      "description": {
+        "en": "Question 38. Quadrilateral ABCD is graphed on a coordinate plane, with point C plotted at (−4, 3). Quadrilateral ABCD is then reflected over the y-axis to create its image A′B′C′D′. After the reflection, what are the coordinates of point C′? Choices: A: (4, 3) B: (4, −3) C: (−4, 3) D: (−4, −3)",
+        "es": "Pregunta 38. Se dibuja el cuadrilátero ABCD en el plano de coordenadas con el punto C trazado en (−4, 3). Luego, el cuadrilátero ABCD se refleja sobre el eje y para crear su imagen A′B′C′D′. Luego de la reflexión, ¿cuáles son las coordenadas del punto C′? Opciones: A: (4, 3) B: (4, −3) C: (−4, 3) D: (−4, −3)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "ABCD",
+          "C",
+          "(−4, 3)",
+          "y-axis",
+          "A′B′C′D′",
+          "C′",
+          "(4, 3)",
+          "(4, −3)",
+          "(−4, −3)",
+          "A: (4, 3)",
+          "B: (4, −3)",
+          "C: (−4, 3)",
+          "D: (−4, −3)"
+        ],
+        "es": [
+          "(−4, 3)",
+          "A′B′C′D′",
+          "C′",
+          "(4, 3)",
+          "(4, −3)",
+          "(−4, −3)",
+          "A: (4, 3)",
+          "B: (4, −3)",
+          "C: (−4, 3)",
+          "D: (−4, −3)"
+        ]
+      }
+    }
+  }
+}

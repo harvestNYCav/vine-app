@@ -51,8 +51,14 @@ DEFAULT_EXPLANATIONS_ROOT = (
     Path(__file__).resolve().parents[1] / "content" / "ela-exams" / "explanations"
 )
 
-ExplanationSource = Literal["official-nysed", "vine-authored"]
-_EXPLANATION_SOURCES = frozenset(("official-nysed", "vine-authored"))
+ExplanationSource = Literal[
+    "official-nysed",
+    "official-nysed-corrected",
+    "vine-authored",
+]
+_EXPLANATION_SOURCES = frozenset(
+    ("official-nysed", "official-nysed-corrected", "vine-authored")
+)
 _CHOICES = frozenset(("A", "B", "C", "D"))
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
@@ -378,12 +384,12 @@ def validate_question_explanation(
     if not isinstance(source, str) or source not in _EXPLANATION_SOURCES:
         raise ElaExplanationError(
             f"Explanation source for {normalized_question_id} must be "
-            "official-nysed or vine-authored"
+            "official-nysed, official-nysed-corrected, or vine-authored"
         )
     text = _validate_explanation_text(
         explanation["text"],
         question_id=normalized_question_id,
-        require_reasoning_connective=source != "official-nysed",
+        require_reasoning_connective=source == "vine-authored",
     )
     return QuestionExplanation(text=text, source=source)
 

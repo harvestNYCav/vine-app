@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2014-grade-5-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2014-g5-mc-q1": {
+      "inputHash": "2eb93303bfd74019d9ecbaf7bc1e4daa78853a8f1f567db73515e61774c75d35",
+      "description": {
+        "en": "Question 1. Which statement is true about the values of the two expressions below? Expression A: 3 × (8 + 4). Expression B: 8 + 4. Choices: A: The value of Expression B is three times the value of Expression A. B: The value of Expression A is three times the value of Expression B. C: The value of Expression A is three more than the value of Expression B. D: The value of Expression B is three more than the value of Expression A."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3 × (8 + 4)",
+          "8 + 4",
+          "three times",
+          "three more",
+          "A: The value of Expression B is three times the value of Expression A",
+          "B: The value of Expression A is three times the value of Expression B",
+          "C: The value of Expression A is three more than the value of Expression B",
+          "D: The value of Expression B is three more than the value of Expression A",
+          "(8 + 4)"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q2": {
+      "inputHash": "05ba6c30eca3d63896bb3ad98bbdbc4974d2c87f7c74ffdf1e53c6bd94cd5aa9",
+      "description": {
+        "en": "Question 2. Which diagram represents a volume of one cubic unit? Choices: A: A two-dimensional square measuring 1 unit high and 1 unit wide. B: A two-dimensional square measuring 2 units high and 2 units wide. C: A three-dimensional rectangular prism measuring 2 units high, 2 units wide, and 2 units deep; dashed lines indicate the hidden edges. D: A three-dimensional cube measuring 1 unit high, 1 unit wide, and 1 unit deep; dashed lines indicate the hidden edges."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "one cubic unit",
+          "1 unit",
+          "2 units",
+          "2 units high, 2 units wide, and 2 units deep",
+          "1 unit high, 1 unit wide, and 1 unit deep",
+          "A: A two-dimensional square measuring 1 unit high and 1 unit wide",
+          "B: A two-dimensional square measuring 2 units high and 2 units wide",
+          "C: A three-dimensional rectangular prism measuring 2 units high, 2 units wide, and 2 units deep; dashed lines indicate the hidden edges",
+          "D: A three-dimensional cube measuring 1 unit high, 1 unit wide, and 1 unit deep; dashed lines indicate the hidden edges"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q5": {
+      "inputHash": "2f44dc06d9062ca3c2b80ce1b9c24f666fd0fb389cb9e0f311dbadfdef8ccac6",
+      "description": {
+        "en": "Question 5. Which phrase describes the volume of a 3-dimensional figure? Choices: A: the number of square units it takes to fill a solid figure. B: the number of cubic units it takes to fill a solid figure. C: the number of square units it takes to cover the outside of a solid figure. D: the number of cubic units it takes to cover the outside of a solid figure."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3-dimensional",
+          "square units",
+          "cubic units",
+          "fill",
+          "cover the outside",
+          "A: the number of square units it takes to fill a solid figure",
+          "B: the number of cubic units it takes to fill a solid figure",
+          "C: the number of square units it takes to cover the outside of a solid figure",
+          "D: the number of cubic units it takes to cover the outside of a solid figure"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q7": {
+      "inputHash": "940139cf56647221c3c572d149c3907e29b072ba07ae95baf6b7556c4723d222",
+      "description": {
+        "en": "Question 7. A recipe for 1 batch of muffins included 2/3 cup of raisins. Ina made 2 1/2 batches of muffins. How many cups of raisins did she use? Choices: A: 1 4/6. B: 1 5/6. C: 2 2/6. D: 3 1/6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 batch",
+          "2/3",
+          "2 1/2",
+          "1 4/6",
+          "1 5/6",
+          "2 2/6",
+          "3 1/6",
+          "A: 1 4/6",
+          "B: 1 5/6",
+          "C: 2 2/6",
+          "D: 3 1/6"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q9": {
+      "inputHash": "8ad69a687e6d2ac0668443790730d6226a48f0af25b8b8bd27b6223a04dc01da",
+      "description": {
+        "en": "Question 9. Mani, James, and Isidro equally shared 1/2 of a pie. Which fraction of the whole pie did each of them receive? Choices: A: 1/6. B: 1/5. C: 2/3. D: 3/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/2",
+          "1/6",
+          "1/5",
+          "2/3",
+          "3/2",
+          "A: 1/6",
+          "B: 1/5",
+          "C: 2/3",
+          "D: 3/2"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q10": {
+      "inputHash": "c6d57d13f1a88d7586862c952ac10ae73aa72deb64c04419d01012c8f499d083",
+      "description": {
+        "en": "Question 10. A number is given below: 136.25. In a different number, the 6 represents a value which is one-tenth of the value of the 6 in the number above. What value is represented by the 6 in the other number? Choices: A: six hundredths. B: six tenths. C: six ones. D: six tens."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "136.25",
+          "one-tenth",
+          "six hundredths",
+          "six tenths",
+          "six ones",
+          "six tens",
+          "A: six hundredths",
+          "B: six tenths",
+          "C: six ones",
+          "D: six tens"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q13": {
+      "inputHash": "f9ed4b3e591ab5c512ee33394a35d69d569d337bd4f5e8965eb2264e21f5b384",
+      "description": {
+        "en": "Question 13. Austin collected 30 9/10 kilograms of glass for recycling. Exactly 2/3 of the glass he collected was blue. What was the total amount, in kilograms, of blue glass Austin collected? Choices: A: 20 3/5. B: 27 2/3. C: 30 3/5. D: 30 11/13."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "30 9/10",
+          "2/3",
+          "20 3/5",
+          "27 2/3",
+          "30 3/5",
+          "30 11/13",
+          "A: 20 3/5",
+          "B: 27 2/3",
+          "C: 30 3/5",
+          "D: 30 11/13"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q14": {
+      "inputHash": "0363601e4c026a6a4bcbcf03d8535fb8762c6d213c0dc882aad8a0f900e99c88",
+      "description": {
+        "en": "Question 14. What number goes in the blank to make the statement below true? 3,840 ounces = _____ pounds. Choices: A: 24. B: 240. C: 480. D: 61,440."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3,840 ounces = _____ pounds",
+          "24",
+          "240",
+          "480",
+          "61,440",
+          "A: 24",
+          "B: 240",
+          "C: 480",
+          "D: 61,440"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q16": {
+      "inputHash": "f366cf4261331134c74a3dd2618f45d04a4c78b12d38884b86f18f629c9bf3ab",
+      "description": {
+        "en": "Question 16. What is the area, in square inches, of a rectangle with the dimensions shown in the diagram below? The rectangle measures 7/8 inch in length and 3/16 inch in width. Choices: A: 21/128. B: 3/14. C: 10/24. D: 24/112."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7/8",
+          "3/16",
+          "21/128",
+          "3/14",
+          "10/24",
+          "24/112",
+          "A: 21/128",
+          "B: 3/14",
+          "C: 10/24",
+          "D: 24/112"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q18": {
+      "inputHash": "249c44e4ac98e32bc0a3c697342d51eb71a645e8d34f19df60ffb2c725019b7e",
+      "description": {
+        "en": "Question 18. What is the value of the expression below? 1,536 ÷ 24. Choices: A: 57. B: 64. C: 65. D: 68."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,536 ÷ 24",
+          "57",
+          "64",
+          "65",
+          "68",
+          "A: 57",
+          "B: 64",
+          "C: 65",
+          "D: 68"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q19": {
+      "inputHash": "a9714f114c5147ce2b5498cd2354f2de35bc3e70633fde5fb36c35243c4e1fd9",
+      "description": {
+        "en": "Question 19. What is the volume, in cubic centimeters, of the figure below? The figure is a rectangular prism made of equal unit cubes. Its front face is 5 cubes wide and 3 cubes high, and it is 3 cubes deep. A separate key shows one cube labeled “1 cubic centimeter.” Choices: A: 15. B: 24. C: 30. D: 45."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "3",
+          "1 cubic centimeter",
+          "15",
+          "24",
+          "30",
+          "45",
+          "A: 15",
+          "B: 24",
+          "C: 30",
+          "D: 45"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q23": {
+      "inputHash": "1d21909843b9d06dcfd634754e5d1c0d5da928c8c7927e32e4dc6b7335ed205b",
+      "description": {
+        "en": "Question 23. Millie designed a rectangular label to put on the front of her scrapbook. The label was 5/12 foot wide and 5/6 foot long. What was the area, in square feet, of the label? Choices: A: 2 6/12. B: 1 3/12. C: 10/18. D: 25/72."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5/12",
+          "5/6",
+          "2 6/12",
+          "1 3/12",
+          "10/18",
+          "25/72",
+          "A: 2 6/12",
+          "B: 1 3/12",
+          "C: 10/18",
+          "D: 25/72"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q27": {
+      "inputHash": "529fd8be6c29a38f0c079f7d5382e41f820ff34e991719e5b076e96466aa6ac2",
+      "description": {
+        "en": "Question 27. Which expression means the same as the phrase below? Subtract 3 from the product of 8 and 5. Choices: A: (5 × 8) + 3. B: (5 × 8) − 3. C: 5 × (8 − 3). D: 5 × (8 + 3)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(5 × 8) + 3",
+          "(5 × 8) − 3",
+          "5 × (8 − 3)",
+          "5 × (8 + 3)",
+          "A: (5 × 8) + 3",
+          "B: (5 × 8) − 3",
+          "C: 5 × (8 − 3)",
+          "D: 5 × (8 + 3)",
+          "(5 × 8)",
+          "(8 − 3)",
+          "(8 + 3)"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q32": {
+      "inputHash": "43a195d3a38a7fba19886090700dcf06b986a4bbac31289d5e6d356b0ac2e3b7",
+      "description": {
+        "en": "Question 32. Jim gave the following description of a figure: It is a quadrilateral. All sides are equal in length. There are two equal obtuse angles and two equal acute angles. Which figure could match Jim’s description? Choices: A: rectangle. B: rhombus. C: square. D: pentagon."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "rectangle",
+          "rhombus",
+          "square",
+          "pentagon",
+          "A: rectangle",
+          "B: rhombus",
+          "C: square",
+          "D: pentagon"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q33": {
+      "inputHash": "db7befdb4aa705239ab07ee4a068fd1a8aad487ae47818fcec9a996e2f093234",
+      "description": {
+        "en": "Question 33. Which expression is equivalent to 100,000? Choices: A: 10⁴. B: 10⁵. C: 10⁶. D: 10⁷."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "100,000",
+          "10⁴",
+          "10⁵",
+          "10⁶",
+          "10⁷",
+          "A: 10⁴",
+          "B: 10⁵",
+          "C: 10⁶",
+          "D: 10⁷"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q34": {
+      "inputHash": "a54cf7bc523e3fd46a43292a46b243b3a9a51a33ab64ae4faa1edd2da0c96557",
+      "description": {
+        "en": "Question 34. Lincoln had 2 books in his backpack. One book had a mass of 3 pounds 7 ounces, and the other book had a mass of 2 pounds 10 ounces. What was the total mass, in ounces, of the books? Choices: A: 60. B: 77. C: 80. D: 97."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2",
+          "3 pounds 7 ounces",
+          "2 pounds 10 ounces",
+          "60",
+          "77",
+          "80",
+          "97",
+          "A: 60",
+          "B: 77",
+          "C: 80",
+          "D: 97"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q36": {
+      "inputHash": "3a34e32d541fb0c458025ca46cb260efe500bc13f891aae92c712d5064e4ea5f",
+      "description": {
+        "en": "Question 36. A box contains 512 grams of cereal. One serving of cereal is 56 grams. How many servings of cereal does the box contain? Choices: A: 9 1/4. B: 9 1/8. C: 9 8/56. D: 9 8/512."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "512",
+          "56",
+          "9 1/4",
+          "9 1/8",
+          "9 8/56",
+          "9 8/512",
+          "A: 9 1/4",
+          "B: 9 1/8",
+          "C: 9 8/56",
+          "D: 9 8/512"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q38": {
+      "inputHash": "2d3ca7fd069f7962bc333dfb7a26503a9ade6e2b50f6274d06fda0d94433d65b",
+      "description": {
+        "en": "Question 38. Lori and Maria bought juice to make fruit punch. Maria bought 5 bottles of juice, each containing 750 milliliters. Lori bought 4 liters of juice. Based on this information, which sentence is true? Choices: A: Lori bought 0.25 liter more juice than Maria. B: Maria bought 0.75 liter more juice than Lori. C: Maria bought 33.5 liters more juice than Lori. D: Lori bought 36.25 liters more juice than Maria."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "750",
+          "4",
+          "0.25",
+          "0.75",
+          "33.5",
+          "36.25",
+          "A: Lori bought 0.25 liter more juice than Maria",
+          "B: Maria bought 0.75 liter more juice than Lori",
+          "C: Maria bought 33.5 liters more juice than Lori",
+          "D: Lori bought 36.25 liters more juice than Maria"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q39": {
+      "inputHash": "af05522c3ea73e8119cfd3972251e01be1cccf3c6f2ca58532039a33f5a0d299",
+      "description": {
+        "en": "Question 39. Which decimal best represents the location of point X on the number line? The horizontal number line has arrows pointing in both directions and 11 equally spaced tick marks. The first tick is labeled 50/100, and the last tick is labeled 60/100. Point X is marked by a closed dot on the sixth tick from the left, five equal intervals to the right of 50/100. Choices: A: 0.5. B: 0.55. C: 0.56. D: 0.6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "X",
+          "11",
+          "50/100",
+          "60/100",
+          "0.5",
+          "0.55",
+          "0.56",
+          "0.6",
+          "A: 0.5",
+          "B: 0.55",
+          "C: 0.56",
+          "D: 0.6"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q40": {
+      "inputHash": "b3f5b4bbbdd6da5bde4861f7c86e158b31cb5aac61ecab50fc451b0164234ff8",
+      "description": {
+        "en": "Question 40. Clark made a model of his house. His house is 30 1/2 feet long. The dimensions of the model were 1/25 the dimensions of Clark’s actual home. What is the length, in feet, of the model? Choices: A: 1 10/50. B: 1 11/50. C: 30 23/50. D: 30 27/50."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "30 1/2",
+          "1/25",
+          "1 10/50",
+          "1 11/50",
+          "30 23/50",
+          "30 27/50",
+          "A: 1 10/50",
+          "B: 1 11/50",
+          "C: 30 23/50",
+          "D: 30 27/50"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q41": {
+      "inputHash": "38aaf65dd608c65db0867abd4785bb41f9743f249d706b2e1d3f2b39381da38b",
+      "description": {
+        "en": "Question 41. Deb has a board that measures 5 feet in length. How many 1/4-foot-long pieces can Deb cut from the board? Choices: A: 1. B: 9. C: 10. D: 20."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "1/4",
+          "1",
+          "9",
+          "10",
+          "20",
+          "A: 1",
+          "B: 9",
+          "C: 10",
+          "D: 20"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q43": {
+      "inputHash": "ba9716abcedea7fe61bb850063270f1a7eaa714b1f3fb364293937258b0a9e0a",
+      "description": {
+        "en": "Question 43. In which number does the 5 represent a value 10 times the value represented by the 5 in 35,187? Choices: A: 117,568. B: 247,351. C: 325,827. D: 453,362."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "10",
+          "35,187",
+          "117,568",
+          "247,351",
+          "325,827",
+          "453,362",
+          "A: 117,568",
+          "B: 247,351",
+          "C: 325,827",
+          "D: 453,362"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q44": {
+      "inputHash": "bdaf5bb251a60334a828c64d58a6bc9fadfb685b37dd111b631b3b48160a27e6",
+      "description": {
+        "en": "Question 44. Michele is 52 inches tall. Her father is 6 feet 3 inches tall. Exactly how many inches taller is Michele’s father than Michele? Choices: A: 11. B: 13. C: 23. D: 25."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "52",
+          "6",
+          "3",
+          "11",
+          "13",
+          "23",
+          "25",
+          "A: 11",
+          "B: 13",
+          "C: 23",
+          "D: 25"
+        ]
+      }
+    },
+    "nysed-2014-g5-mc-q49": {
+      "inputHash": "fcdadfc013be0ea8335eff6c51fd0e3c17f86397c4b6bcca0447c189a613e853",
+      "description": {
+        "en": "Question 49. What is the value of 2/5 + 3/7? Choices: A: 6/35. B: 5/12. C: 6/12. D: 29/35."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/5 + 3/7",
+          "6/35",
+          "5/12",
+          "6/12",
+          "29/35",
+          "A: 6/35",
+          "B: 5/12",
+          "C: 6/12",
+          "D: 29/35",
+          "2/5",
+          "3/7"
+        ]
+      }
+    }
+  }
+}

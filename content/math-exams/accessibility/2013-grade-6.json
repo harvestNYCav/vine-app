@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2013-grade-6-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2013-g6-mc-q2": {
+      "inputHash": "3b5c15199f6cf8682698f0dc94b1e7e101f747cad45dc593ded341dd67f6be99",
+      "description": {
+        "en": "Question 2. Evaluate: 6³ + 7 × 4. Choices: A: 100. B: 244. C: 757. D: 892."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6³ + 7 × 4",
+          "100",
+          "244",
+          "757",
+          "892",
+          "A: 100",
+          "B: 244",
+          "C: 757",
+          "D: 892",
+          "6³"
+        ]
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2013-g6-mc-q6": {
+      "inputHash": "5985bce0b9e91919fcf2ca728522bc790b5bb3247ca71d59a76b257b39b591c2",
+      "description": {
+        "en": "Question 6. Which pair of expressions is equivalent? Choices: A: 4(6x) and 10x. B: 4(6x) and 24x. C: 4x + 6x and 10x². D: 4x + 6x and 24x."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4(6x)",
+          "10x",
+          "24x",
+          "4x + 6x",
+          "10x²",
+          "A: 4(6x) and 10x",
+          "B: 4(6x) and 24x",
+          "C: 4x + 6x and 10x²",
+          "D: 4x + 6x and 24x",
+          "(6x)"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q13": {
+      "inputHash": "67ccbe846d5582a7b4ace14b7dd92902b15b71a69408b5ca75b2e0df3d717f67",
+      "description": {
+        "en": "Question 13. The length of a rectangular parking lot at the airport is 2/3 mile. If the area is 1/2 square mile, what is the width of the parking lot? Choices: A: 1/3 mile. B: 3/4 mile. C: 1 1/6 miles. D: 1 1/3 miles."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2/3 mile",
+          "1/2 square mile",
+          "1/3 mile",
+          "3/4 mile",
+          "1 1/6 miles",
+          "1 1/3 miles",
+          "A: 1/3 mile",
+          "B: 3/4 mile",
+          "C: 1 1/6 miles",
+          "D: 1 1/3 miles",
+          "2/3",
+          "1/2",
+          "1/3",
+          "3/4",
+          "1 1/6",
+          "1 1/3"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q14": {
+      "inputHash": "363699186438ca3dd9d7bd07d286e1fddd9440083fa9185b66c5f8f0b678c902",
+      "description": {
+        "en": "Question 14. What is the area of the isosceles trapezoid? The parallel horizontal bases have lengths 9 cm and 4.5 cm, with the 9 cm base above the 4.5 cm base. A perpendicular dashed segment from the upper base to the lower-left vertex is labeled 6 cm, representing the height; a right-angle marker appears where it meets the upper base. The two nonparallel sides slant outward from the shorter lower base to the longer upper base. Choices: A: 27 cm². B: 33.8 cm². C: 40.5 cm². D: 54 cm²."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9 cm",
+          "4.5 cm",
+          "6 cm",
+          "27 cm²",
+          "33.8 cm²",
+          "40.5 cm²",
+          "54 cm²",
+          "A: 27 cm²",
+          "B: 33.8 cm²",
+          "C: 40.5 cm²",
+          "D: 54 cm²"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q19": {
+      "inputHash": "eebb5c5d84c6bb147512cf17bbab6966257cfd79911f34a241006ed793a7732e",
+      "description": {
+        "en": "Question 19. The table below shows the number of tea bags needed to make different amounts of iced tea. The table has two columns labeled “Number of Tea Bags” and “Total Quarts of Iced Tea.” Its rows are: 8 tea bags, 2 quarts; 16 tea bags, 4 quarts; 24 tea bags, ? quarts; and 36 tea bags, 9 quarts. What is the total number of quarts of iced tea that can be made with 24 tea bags? Choices: A: 5. B: 6. C: 7. D: 8."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 tea bags, 2 quarts",
+          "16 tea bags, 4 quarts",
+          "24 tea bags, ? quarts",
+          "36 tea bags, 9 quarts",
+          "5",
+          "6",
+          "7",
+          "8",
+          "A: 5",
+          "B: 6",
+          "C: 7",
+          "D: 8"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q24": {
+      "inputHash": "51aabdf406c2bc28fac58ad1dd7a3b0769527a08d633bd07fea05129f05143ac",
+      "description": {
+        "en": "Question 24. A printer makes more than 3 copies of a book every hour. Which graph represents the number of books made in 4 hours? Each choice is a horizontal number line labeled at the even numbers 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, and 20, with tick marks every 2 units and arrows at both ends. Choices: A: An open circle at 3 with the ray extending to the left. B: An open circle at 4 with the ray extending to the right. C: An open circle at 7 with the ray extending to the right. D: An open circle at 12 with the ray extending to the right."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "more than 3",
+          "4 hours",
+          "0, 2, 4, 6, 8, 10, 12, 14, 16, 18, and 20",
+          "open circle at 3",
+          "open circle at 4",
+          "open circle at 7",
+          "open circle at 12",
+          "A: An open circle at 3 with the ray extending to the left",
+          "B: An open circle at 4 with the ray extending to the right",
+          "C: An open circle at 7 with the ray extending to the right",
+          "D: An open circle at 12 with the ray extending to the right"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q27": {
+      "inputHash": "3266bb92c9b6b33b7d65170af8fd96238938e64018795d0dc88f93aca1473b83",
+      "description": {
+        "en": "Question 27. What is the solution to the equation below? 4w = 2/3. Choices: A: w = 2/12. B: w = 2/7. C: w = 8/3. D: w = 3 1/3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4w = 2/3",
+          "w = 2/12",
+          "w = 2/7",
+          "w = 8/3",
+          "w = 3 1/3",
+          "A: w = 2/12",
+          "B: w = 2/7",
+          "C: w = 8/3",
+          "D: w = 3 1/3",
+          "2/3",
+          "2/12",
+          "2/7",
+          "8/3",
+          "3 1/3"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q29": {
+      "inputHash": "6b44f2947eaee462fd6093572408dbeaaf4474c2559483f40744c348075e3163",
+      "description": {
+        "en": "Question 29. Which number best represents the location of point E on the number line below? The horizontal number line has arrows at both ends. The interval from −2 to −1 is divided into five equal parts by four evenly spaced interior tick marks. Point E is a closed point on the second interior tick mark to the right of −2. Choices: A: −1.8. B: −1.6. C: −1.5. D: −1.3."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−2",
+          "−1",
+          "five equal parts",
+          "point E",
+          "−1.8",
+          "−1.6",
+          "−1.5",
+          "−1.3",
+          "A: −1.8",
+          "B: −1.6",
+          "C: −1.5",
+          "D: −1.3"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q31": {
+      "inputHash": "53f646651397f54ee2aa32ef0664a79eb29cf60cd3c8f09703bd0e73ff982c7b",
+      "description": {
+        "en": "Question 31. Which pair of expressions below is equivalent? Choices: A: x + y + x + y and 2(x + y) B: 5(2x − 3y) and 10x − 3y C: 4x − 5y and 5y − 4x D: 9x + 2y and 11xy"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x + y + x + y",
+          "2(x + y)",
+          "5(2x − 3y)",
+          "10x − 3y",
+          "4x − 5y",
+          "5y − 4x",
+          "9x + 2y",
+          "11xy",
+          "A: x + y + x + y and 2(x + y)",
+          "B: 5(2x − 3y) and 10x − 3y",
+          "C: 4x − 5y and 5y − 4x",
+          "D: 9x + 2y and 11xy",
+          "(2x − 3y)"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q47": {
+      "inputHash": "8e97d6044c27510dba54f91ce770369e0309bd3b8437f7a5204c243e77af7180",
+      "description": {
+        "en": "Question 47. The coordinates of point A are (−6, 4). The coordinates of point B are (3, 4). Which expression represents the distance, in units, between points A and B? Choices: A: |−6| + |3| B: |3| − |−6| C: |−6| + |−4| D: |4| − |−6|"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−6, 4)",
+          "(3, 4)",
+          "|−6| + |3|",
+          "|3| − |−6|",
+          "|−6| + |−4|",
+          "|4| − |−6|",
+          "A: |−6| + |3|",
+          "B: |3| − |−6|",
+          "C: |−6| + |−4|",
+          "D: |4| − |−6|"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q48": {
+      "inputHash": "1879dfa1e0223fafe1f329ebb696f70723767d395bb5f36eef24e449d46b18bd",
+      "description": {
+        "en": "Question 48. Which expression represents the phrase below? 8 less than the product of 6 and a number, x. Choices: A: 8 − 6x B: 6x − 8 C: (6 + x) − 8 D: 8 − (6 + x)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8",
+          "6",
+          "x",
+          "8 − 6x",
+          "6x − 8",
+          "(6 + x) − 8",
+          "8 − (6 + x)",
+          "A: 8 − 6x",
+          "B: 6x − 8",
+          "C: (6 + x) − 8",
+          "D: 8 − (6 + x)",
+          "(6 + x)"
+        ]
+      }
+    },
+    "nysed-2013-g6-mc-q61": {
+      "inputHash": "4c046e34a279bd6847892aa6a67d1379d07fd6b35be66ee8c49ec00091f2908c",
+      "description": {
+        "en": "Question 61. Point G is the point (3, −1). A coordinate plane has a horizontal x-axis, positive to the right, and a vertical y-axis, positive upward. The axes intersect at the origin, and the square grid marks one-unit intervals from −6 to 6 on each axis. Four solid points are plotted: point A at (−1, −1), point B at (−2, −1), point C at (−2, 4), and point D at (3, 3). Which point is 5 units from point G? Choices: A: point A B: point B C: point C D: point D"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3, −1)",
+          "−6",
+          "6",
+          "(−1, −1)",
+          "(−2, −1)",
+          "(−2, 4)",
+          "(3, 3)",
+          "5 units",
+          "point A",
+          "point B",
+          "point C",
+          "point D",
+          "A: point A",
+          "B: point B",
+          "C: point C",
+          "D: point D"
+        ]
+      }
+    }
+  }
+}

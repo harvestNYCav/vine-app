@@ -1,0 +1,1459 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2026-grade-8-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2026-g8-mc-q1": {
+      "inputHash": "4f6ed2c5afa51c1a0ab232558589c71a40eb2546a9734ce59188b7ed84c0e2e0",
+      "description": {
+        "en": "Question 1. Triangle ABC is graphed on a coordinate plane. Triangle ABC will be translated 4 units to the left and 2 units up to create triangle A′B′C′. The coordinate plane has integer grid lines from −10 through 10 on both axes. The triangle’s vertices are A at (−2, 3), B at (2, −2), and C at (3, 5), connected by line segments. What will be the coordinates of vertex A′? Choices: A: (0, −1) B: (2, 1) C: (−1, 7) D: (−6, 5)",
+        "es": "Pregunta 1. El triángulo ABC se grafica en un plano de coordenadas. Sus vértices son A = (−2, 3), B = (2, −2) y C = (3, 5). Los segmentos conectan A con B, B con C y C con A. Se realiza la traslación del triángulo ABC 4 unidades a la izquierda y 2 unidades hacia arriba para crear el triángulo A′B′C′. ¿Cuáles serán las coordenadas del vértice A′? Opciones: A: (0, −1) B: (2, 1) C: (−1, 7) D: (−6, 5)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 units to the left",
+          "2 units up",
+          "A′B′C′",
+          "(−2, 3)",
+          "(2, −2)",
+          "(3, 5)",
+          "(0, −1)",
+          "(2, 1)",
+          "(−1, 7)",
+          "(−6, 5)",
+          "A: (0, −1)",
+          "B: (2, 1)",
+          "C: (−1, 7)",
+          "D: (−6, 5)"
+        ],
+        "es": [
+          "A = (−2, 3)",
+          "B = (2, −2)",
+          "C = (3, 5)",
+          "4 unidades a la izquierda",
+          "2 unidades hacia arriba",
+          "A′B′C′",
+          "(0, −1)",
+          "(2, 1)",
+          "(−1, 7)",
+          "(−6, 5)",
+          "A: (0, −1)",
+          "B: (2, 1)",
+          "C: (−1, 7)",
+          "D: (−6, 5)",
+          "(−2, 3)",
+          "(2, −2)",
+          "(3, 5)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q2": {
+      "inputHash": "69657efa256d1cda129e898299309185ad7d0a4089aad36c25acda002bb03048",
+      "description": {
+        "en": "Question 2. Ms. Whitley is comparing the prices of apples, sold by the pound, at two different stores. The price, y, in dollars, of x pounds of apples sold at Store A is represented by the equation y = 1.50x. The price for a number of pounds of apples sold at Store B is represented by a graph titled “STORE B APPLE PRICES.” Its horizontal axis is Weight of Apples (pounds), from 0 to 5, and its vertical axis is Price (dollars), from 0 to 11. A ray begins at (0, 0), passes through the marked point (4, 9), and continues upward and to the right. Which statement is true based on the information given? Choices: A: Store A charges $0.75 more per pound. B: Store B charges $0.75 more per pound. C: Store A charges $3.00 more per pound. D: Store B charges $3.00 more per pound.",
+        "es": "Pregunta 2. La Sra. Whitley está comparando los precios de las manzanas, que se venden por libra, en dos tiendas diferentes. El precio, y, en dólares, de x libras de manzanas que se venden en la Tienda A se representa mediante la ecuación y = 1.50x. El precio de una cantidad de libras de manzanas que se venden en la Tienda B se representa mediante una gráfica titulada «PRECIOS DE MANZANAS EN TIENDA B». El eje horizontal, «Peso de manzanas (libras)», va de 0 a 5; el eje vertical, «Precio (en dólares)», va de 0 a 11. La recta de la Tienda B parte del origen (0, 0), pasa por el punto marcado (4, 9) y continúa con una flecha hacia aproximadamente (5, 11). ¿Qué afirmación es verdadera según la información ofrecida? Opciones: A: La Tienda A cobra $0.75 más por libra. B: La Tienda B cobra $0.75 más por libra. C: La Tienda A cobra $3.00 más por libra. D: La Tienda B cobra $3.00 más por libra."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 1.50x",
+          "(0, 0)",
+          "(4, 9)",
+          "$0.75",
+          "$3.00",
+          "A: Store A charges $0.75 more per pound",
+          "B: Store B charges $0.75 more per pound",
+          "C: Store A charges $3.00 more per pound",
+          "D: Store B charges $3.00 more per pound"
+        ],
+        "es": [
+          "y = 1.50x",
+          "0 a 5",
+          "0 a 11",
+          "(0, 0)",
+          "(4, 9)",
+          "(5, 11)",
+          "$0.75",
+          "$3.00",
+          "A: La Tienda A cobra $0.75 más por libra",
+          "B: La Tienda B cobra $0.75 más por libra",
+          "C: La Tienda A cobra $3.00 más por libra",
+          "D: La Tienda B cobra $3.00 más por libra"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q3": {
+      "inputHash": "92eedec7b4d5ed689011fe6c2d023102e89cbc85b12fa0cff7ebed37e5380215",
+      "description": {
+        "en": "Question 3. Which expression is equivalent to 12²⁰/12⁴? Choices: A: 1⁵ B: 1¹⁶ C: 12⁵ D: 12¹⁶",
+        "es": "Pregunta 3. ¿Qué expresión es equivalente a 12²⁰/12⁴? Opciones: A: 1⁵ B: 1¹⁶ C: 12⁵ D: 12¹⁶"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12²⁰/12⁴",
+          "1⁵",
+          "1¹⁶",
+          "12⁵",
+          "12¹⁶",
+          "A: 1⁵",
+          "B: 1¹⁶",
+          "C: 12⁵",
+          "D: 12¹⁶",
+          "12²⁰",
+          "12⁴"
+        ],
+        "es": [
+          "12²⁰/12⁴",
+          "1⁵",
+          "1¹⁶",
+          "12⁵",
+          "12¹⁶",
+          "A: 1⁵",
+          "B: 1¹⁶",
+          "C: 12⁵",
+          "D: 12¹⁶",
+          "12²⁰",
+          "12⁴"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q4": {
+      "inputHash": "1cbcd0f8c0dfd411a95396a6eba32945b9762d9d1f0658d62b1200ca11c44fed",
+      "description": {
+        "en": "Question 4. A school sells tickets to a play. The data on the graph below shows the number of tickets sold, y, per day, x. The equation of the line y = −2x + 29 was drawn to best represent the relationship between the data. The graph is titled “TICKET SALES.” The horizontal axis is Day, from 0 to 10 in increments of 1, and the vertical axis is Number of Tickets Sold, from 0 to 35 in increments of 5. Eight data points are plotted: (1, 30), (2, 25), (3, 20), a point at day 4 slightly above 20, a point at day 5 halfway between 15 and 20, (6, 15), a point at day 8 between 15 and 20, and (9, 10). A decreasing line of best fit representing y = −2x + 29 crosses the y-axis at 29 and extends through the graph. Based on the equation of the line, which statement describes a valid prediction of ticket sales? Choices: A: Since the number of tickets approximately decreases by 29 a day, it can be predicted that 9 tickets will be sold on day 12. B: Since the number of tickets approximately decreases by 29 a day, it can be predicted that 5 tickets will be sold on day 12. C: Since the number of tickets approximately decreases by 2 a day, it can be predicted that 9 tickets will be sold on day 12. D: Since the number of tickets approximately decreases by 2 a day, it can be predicted that 5 tickets will be sold on day 12.",
+        "es": "Pregunta 4. Una escuela vende entradas para una obra. Los datos de una gráfica muestran la cantidad de entradas vendidas, y, por día, x. Se dibujó la ecuación de la línea y = −2x + 29 para representar de la mejor manera la relación entre los datos. La gráfica se titula «VENTAS DE ENTRADAS». El eje horizontal, «Día», está numerado de 0 a 10; el eje vertical, «Cantidad de entradas vendidas», está numerado de 0 a 35 en incrementos de 5. Los puntos de datos están ubicados en (1, 30), (2, 25), (3, 20), aproximadamente (4, 22), aproximadamente (5, 17.5), (6, 15), aproximadamente (8, 17) y (9, 10). La línea y = −2x + 29 desciende de izquierda a derecha, desde cerca de (0, 29) hasta cerca de (10, 9). Según la ecuación de la línea, ¿qué afirmación describe una predicción válida de las ventas de entradas? Opciones: A: Debido a que la cantidad de entradas disminuye aproximadamente en 29 por día, se puede predecir que se venderán 9 entradas el día 12. B: Debido a que la cantidad de entradas disminuye aproximadamente en 29 por día, se puede predecir que se venderán 5 entradas el día 12. C: Debido a que la cantidad de entradas disminuye aproximadamente en 2 por día, se puede predecir que se venderán 9 entradas el día 12. D: Debido a que la cantidad de entradas disminuye aproximadamente en 2 por día, se puede predecir que se venderán 5 entradas el día 12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −2x + 29",
+          "(1, 30)",
+          "(2, 25)",
+          "(3, 20)",
+          "(6, 15)",
+          "(9, 10)",
+          "29 a day",
+          "2 a day",
+          "9 tickets",
+          "5 tickets",
+          "day 12",
+          "A: Since the number of tickets approximately decreases by 29 a day, it can be predicted that 9 tickets will be sold on day 12",
+          "B: Since the number of tickets approximately decreases by 29 a day, it can be predicted that 5 tickets will be sold on day 12",
+          "C: Since the number of tickets approximately decreases by 2 a day, it can be predicted that 9 tickets will be sold on day 12",
+          "D: Since the number of tickets approximately decreases by 2 a day, it can be predicted that 5 tickets will be sold on day 12"
+        ],
+        "es": [
+          "y = −2x + 29",
+          "0 a 10",
+          "0 a 35",
+          "(1, 30)",
+          "(2, 25)",
+          "(3, 20)",
+          "(4, 22)",
+          "(5, 17.5)",
+          "(6, 15)",
+          "(8, 17)",
+          "(9, 10)",
+          "(0, 29)",
+          "(10, 9)",
+          "29 por día",
+          "2 por día",
+          "9 entradas",
+          "5 entradas",
+          "día 12",
+          "A: Debido a que la cantidad de entradas disminuye aproximadamente en 29 por día, se puede predecir que se venderán 9 entradas el día 12",
+          "B: Debido a que la cantidad de entradas disminuye aproximadamente en 29 por día, se puede predecir que se venderán 5 entradas el día 12",
+          "C: Debido a que la cantidad de entradas disminuye aproximadamente en 2 por día, se puede predecir que se venderán 9 entradas el día 12",
+          "D: Debido a que la cantidad de entradas disminuye aproximadamente en 2 por día, se puede predecir que se venderán 5 entradas el día 12"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q5": {
+      "inputHash": "66cbc56c07b5b8e0958df52ffcad66630ccdb75657537903758d611a587778cb",
+      "description": {
+        "en": "Question 5. Which value is irrational? Choices: A: 0 B: π C: √9 D: 1/3",
+        "es": "Pregunta 5. ¿Qué valor es irracional? Opciones: A: 0 B: π C: √9 D: 1/3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0",
+          "π",
+          "√9",
+          "1/3",
+          "A: 0",
+          "B: π",
+          "C: √9",
+          "D: 1/3"
+        ],
+        "es": [
+          "0",
+          "π",
+          "√9",
+          "1/3",
+          "A: 0",
+          "B: π",
+          "C: √9",
+          "D: 1/3"
+        ]
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2026-g8-mc-q6": {
+      "inputHash": "c77e064691d7531069e651bddaad09ffa5b7f0bba0934f7669fd1f1594274bc4",
+      "description": {
+        "en": "Question 6. The dimensions of a can of tomatoes are given in a diagram. The can is a right circular cylinder with a circular top and bottom. The diameter of the circular base is 7 cm, and the vertical height is 10 cm. What is the volume, to the nearest cubic centimeter, of the can? Choices: A: 110 B: 220 C: 385 D: 1,539",
+        "es": "Pregunta 6. Las dimensiones de una lata de tomates se representan mediante un cilindro vertical. El diámetro de la base circular es 7 cm y la altura del cilindro es 10 cm. ¿Cuál es el volumen, redondeado al centímetro cúbico más cercano, de la lata? Opciones: A: 110 B: 220 C: 385 D: 1,539"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "7 cm",
+          "10 cm",
+          "110",
+          "220",
+          "385",
+          "1,539",
+          "A: 110",
+          "B: 220",
+          "C: 385",
+          "D: 1,539"
+        ],
+        "es": [
+          "7 cm",
+          "10 cm",
+          "110",
+          "220",
+          "385",
+          "1,539",
+          "A: 110",
+          "B: 220",
+          "C: 385",
+          "D: 1,539"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q7": {
+      "inputHash": "a0aba3b167cff6b4a832c2e6b470327bab946235f74c9ed33661716fa2af7ea4",
+      "description": {
+        "en": "Question 7. Triangle ABC has side lengths of 9 in., 12 in., and 15 in. Which equation proves that the triangle is a right triangle? Choices: A: √9 + √12 = 15 B: √9 + √12 = √15 C: (9 + 12)² = 15² D: 9² + 12² = 15²",
+        "es": "Pregunta 7. El triángulo ABC tiene longitudes laterales de 9 pulgadas, 12 pulgadas y 15 pulgadas. ¿Qué ecuación prueba que el triángulo es un triángulo rectángulo? Opciones: A: √9 + √12 = 15 B: √9 + √12 = √15 C: (9 + 12)² = 15² D: 9² + 12² = 15²"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9 in",
+          "12 in",
+          "15 in",
+          "√9 + √12 = 15",
+          "√9 + √12 = √15",
+          "(9 + 12)² = 15²",
+          "9² + 12² = 15²",
+          "A: √9 + √12 = 15",
+          "B: √9 + √12 = √15",
+          "C: (9 + 12)² = 15²",
+          "D: 9² + 12² = 15²",
+          "√9",
+          "√12",
+          "√15",
+          "(9 + 12)",
+          "15²",
+          "9²",
+          "12²"
+        ],
+        "es": [
+          "9 pulgadas",
+          "12 pulgadas",
+          "15 pulgadas",
+          "√9 + √12 = 15",
+          "√9 + √12 = √15",
+          "(9 + 12)² = 15²",
+          "9² + 12² = 15²",
+          "A: √9 + √12 = 15",
+          "B: √9 + √12 = √15",
+          "C: (9 + 12)² = 15²",
+          "D: 9² + 12² = 15²",
+          "√9",
+          "√12",
+          "√15",
+          "(9 + 12)",
+          "15²",
+          "9²",
+          "12²"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q8": {
+      "inputHash": "0c3f504feacde8c225c5cf4e02d310d03a8c060331fbf8ee7ea86fe97f3846d6",
+      "description": {
+        "en": "Question 8. A line is graphed on a coordinate plane. Both axes have integer grid lines. The labeled x-values run from −7 through 7, and the labeled y-values run from −7 through 7. The line has arrows at both ends, rises from left to right, crosses the y-axis at (0, −3), and crosses the x-axis at (6, 0). It also passes through points such as (2, −2) and (4, −1). Which equation represents the line shown on the coordinate plane? Choices: A: y = 1/2x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −1/2x + 3",
+        "es": "Pregunta 8. Una recta se puso en un gráfico en el plano de coordenadas. Ambos ejes están marcados en incrementos de 1, con valores visibles de −7 a 7. La recta asciende de izquierda a derecha, tiene flechas en ambos extremos, corta el eje y en (0, −3) y corta el eje x en (6, 0). También pasa, entre otros, por los puntos (2, −2) y (4, −1). ¿Qué ecuación representa la recta que se muestra en el plano de coordenadas? Opciones: A: y = 1/2x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −1/2x + 3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, −3)",
+          "(6, 0)",
+          "(2, −2)",
+          "(4, −1)",
+          "y = 1/2x − 3",
+          "y = 3x − 1/2",
+          "y = −3x + 6",
+          "y = −1/2x + 3",
+          "A: y = 1/2x − 3",
+          "B: y = 3x − 1/2",
+          "C: y = −3x + 6",
+          "D: y = −1/2x + 3",
+          "1/2"
+        ],
+        "es": [
+          "−7 a 7",
+          "(0, −3)",
+          "(6, 0)",
+          "(2, −2)",
+          "(4, −1)",
+          "y = 1/2x − 3",
+          "y = 3x − 1/2",
+          "y = −3x + 6",
+          "y = −1/2x + 3",
+          "A: y = 1/2x − 3",
+          "B: y = 3x − 1/2",
+          "C: y = −3x + 6",
+          "D: y = −1/2x + 3",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q10": {
+      "inputHash": "7e563ae8aa78f05180d1dbdcdfc9d6b6557b696dffaa74c24d0a22bab10944c1",
+      "description": {
+        "en": "Question 10. Rectangles JKLM and PQRS are shown on a coordinate plane. Rectangle JKLM has vertices J(2, 8), K(2, 4), L(8, 4), and M(8, 8). Rectangle PQRS has vertices P(−4, 1), Q(−2, 1), R(−2, 4), and S(−4, 4). Which sequence of transformations can be used to show rectangle JKLM is similar but not congruent to rectangle PQRS? Choices: A: A reflection of rectangle JKLM over the y-axis, followed by a dilation by a scale factor of 2 centered at the origin. B: A reflection of rectangle JKLM over the y-axis, followed by a dilation by a scale factor of 1/2 centered at the origin. C: A 90° counterclockwise rotation of rectangle JKLM about the origin, followed by a dilation by a scale factor of 2 centered at the origin. D: A 90° counterclockwise rotation of rectangle JKLM about the origin, followed by a dilation by a scale factor of 1/2 centered at the origin.",
+        "es": "Pregunta 10. Los rectángulos JKLM y PQRS se representan en un plano de coordenadas. El rectángulo JKLM tiene vértices J(2, 8), K(2, 4), L(8, 4) y M(8, 8). El rectángulo PQRS tiene vértices P(−4, 1), Q(−2, 1), R(−2, 4) y S(−4, 4). ¿Qué secuencia de transformaciones se puede usar para mostrar que el rectángulo JKLM es similar, pero no congruente al rectángulo PQRS? Opciones: A: Una reflexión del rectángulo JKLM sobre el eje y, seguida de una dilatación por un factor de escala de 2 centrado en el origen. B: Una reflexión del rectángulo JKLM sobre el eje y, seguida de una dilatación por un factor de escala de 1/2 centrado en el origen. C: Una rotación en sentido contrario a las agujas del reloj de 90° del rectángulo JKLM alrededor del origen, seguida de una dilatación por un factor de escala de 2 centrado en el origen. D: Una rotación en sentido contrario a las agujas del reloj de 90° del rectángulo JKLM alrededor del origen, seguida de una dilatación por un factor de escala de 1/2 centrado en el origen."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "J(2, 8)",
+          "K(2, 4)",
+          "L(8, 4)",
+          "M(8, 8)",
+          "P(−4, 1)",
+          "Q(−2, 1)",
+          "R(−2, 4)",
+          "S(−4, 4)",
+          "90°",
+          "1/2",
+          "scale factor of 2",
+          "A: A reflection of rectangle JKLM over the y-axis, followed by a dilation by a scale factor of 2 centered at the origin",
+          "B: A reflection of rectangle JKLM over the y-axis, followed by a dilation by a scale factor of 1/2 centered at the origin",
+          "C: A 90° counterclockwise rotation of rectangle JKLM about the origin, followed by a dilation by a scale factor of 2 centered at the origin",
+          "D: A 90° counterclockwise rotation of rectangle JKLM about the origin, followed by a dilation by a scale factor of 1/2 centered at the origin",
+          "(2, 8)",
+          "(2, 4)",
+          "(8, 4)",
+          "(8, 8)",
+          "(−4, 1)",
+          "(−2, 1)",
+          "(−2, 4)",
+          "(−4, 4)"
+        ],
+        "es": [
+          "J(2, 8)",
+          "K(2, 4)",
+          "L(8, 4)",
+          "M(8, 8)",
+          "P(−4, 1)",
+          "Q(−2, 1)",
+          "R(−2, 4)",
+          "S(−4, 4)",
+          "90°",
+          "factor de escala de 2",
+          "factor de escala de 1/2",
+          "A: Una reflexión del rectángulo JKLM sobre el eje y, seguida de una dilatación por un factor de escala de 2 centrado en el origen",
+          "B: Una reflexión del rectángulo JKLM sobre el eje y, seguida de una dilatación por un factor de escala de 1/2 centrado en el origen",
+          "C: Una rotación en sentido contrario a las agujas del reloj de 90° del rectángulo JKLM alrededor del origen, seguida de una dilatación por un factor de escala de 2 centrado en el origen",
+          "D: Una rotación en sentido contrario a las agujas del reloj de 90° del rectángulo JKLM alrededor del origen, seguida de una dilatación por un factor de escala de 1/2 centrado en el origen",
+          "(2, 8)",
+          "(2, 4)",
+          "(8, 4)",
+          "(8, 8)",
+          "(−4, 1)",
+          "(−2, 1)",
+          "(−2, 4)",
+          "(−4, 4)",
+          "1/2"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q11": {
+      "inputHash": "d58d13a834e64c8d181b0d334231a4ffd8e91c650c983e9d0ad9a3967298a83e",
+      "description": {
+        "en": "Question 11. Which relation is not a function? Choices: A: A coordinate graph contains the five points (1, 2), (2, 2), (3, 2), (4, 2), and (5, 2). B: A coordinate graph contains the five points (0, 1), (1, 3), (2, 4), (3, 2), and (4, 4). C: A coordinate graph contains an upward-opening parabola symmetric about the y-axis, with vertex (0, 0). Each vertical line intersects the curve at no more than one point. D: A coordinate graph contains two rays beginning at (0, 0): one extends up and to the right through (1, 1), (2, 2), (3, 3), and (4, 4), and the other extends down and to the right through (1, −1), (2, −2), (3, −3), and (4, −4). Thus, for each x > 0, the graph has two points with that x-coordinate.",
+        "es": "Pregunta 11. ¿Qué relación no es una función? Opciones: A: Plano de coordenadas con cinco puntos: (1, 2), (2, 2), (3, 2), (4, 2) y (5, 2). B: Plano de coordenadas con cinco puntos: (0, 1), (1, 3), (2, 4), (3, 2) y (4, 4). C: Plano de coordenadas con una parábola que abre hacia arriba, es simétrica respecto del eje y y tiene vértice en (0, 0). Sus dos ramas continúan hacia arriba, indicadas por flechas. D: Plano de coordenadas con dos rayos que parten del punto (0, 0): uno se extiende hacia arriba y a la derecha, pasando por (1, 1), (2, 2), (3, 3) y (4, 4); el otro se extiende hacia abajo y a la derecha, pasando por (1, −1), (2, −2), (3, −3) y (4, −4). Ambos extremos derechos tienen flechas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(1, 2)",
+          "(2, 2)",
+          "(3, 2)",
+          "(4, 2)",
+          "(5, 2)",
+          "(0, 1)",
+          "(1, 3)",
+          "(2, 4)",
+          "(4, 4)",
+          "(0, 0)",
+          "(1, −1)",
+          "(2, −2)",
+          "(3, −3)",
+          "(4, −4)",
+          "x > 0",
+          "A: A coordinate graph contains the five points (1, 2), (2, 2), (3, 2), (4, 2), and (5, 2)",
+          "B: A coordinate graph contains the five points (0, 1), (1, 3), (2, 4), (3, 2), and (4, 4)",
+          "C: A coordinate graph contains an upward-opening parabola symmetric about the y-axis, with vertex (0, 0). Each vertical line intersects the curve at no more than one point",
+          "D: A coordinate graph contains two rays beginning at (0, 0): one extends up and to the right through (1, 1), (2, 2), (3, 3), and (4, 4), and the other extends down and to the right through (1, −1), (2, −2), (3, −3), and (4, −4). Thus, for each x > 0, the graph has two points with that x-coordinate",
+          "(1, 1)",
+          "(3, 3)"
+        ],
+        "es": [
+          "(1, 2)",
+          "(2, 2)",
+          "(3, 2)",
+          "(4, 2)",
+          "(5, 2)",
+          "(0, 1)",
+          "(1, 3)",
+          "(2, 4)",
+          "(4, 4)",
+          "(0, 0)",
+          "(1, 1)",
+          "(3, 3)",
+          "(1, −1)",
+          "(2, −2)",
+          "(3, −3)",
+          "(4, −4)",
+          "A: Plano de coordenadas con cinco puntos: (1, 2), (2, 2), (3, 2), (4, 2) y (5, 2)",
+          "B: Plano de coordenadas con cinco puntos: (0, 1), (1, 3), (2, 4), (3, 2) y (4, 4)",
+          "C: Plano de coordenadas con una parábola que abre hacia arriba, es simétrica respecto del eje y y tiene vértice en (0, 0). Sus dos ramas continúan hacia arriba, indicadas por flechas",
+          "D: Plano de coordenadas con dos rayos que parten del punto (0, 0): uno se extiende hacia arriba y a la derecha, pasando por (1, 1), (2, 2), (3, 3) y (4, 4); el otro se extiende hacia abajo y a la derecha, pasando por (1, −1), (2, −2), (3, −3) y (4, −4). Ambos extremos derechos tienen flechas"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q12": {
+      "inputHash": "bbd8c2e0d28e9cbe2d616f91c994995651a27d9b927a2b6fdb9b0ee85e4f366a",
+      "description": {
+        "en": "Question 12. Which equation has an infinite number of solutions? Choices: A: 2x − 1 = 2(x − 1) B: 2x − 2 = 2(x − 1) C: 2x − 3 = 3(x − 1) D: 2x + 3 = 3(x − 1)",
+        "es": "Pregunta 12. ¿Qué ecuación tiene una cantidad infinita de soluciones? Opciones: A: 2x − 1 = 2(x − 1) B: 2x − 2 = 2(x − 1) C: 2x − 3 = 3(x − 1) D: 2x + 3 = 3(x − 1)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2x − 1 = 2(x − 1)",
+          "2x − 2 = 2(x − 1)",
+          "2x − 3 = 3(x − 1)",
+          "2x + 3 = 3(x − 1)",
+          "A: 2x − 1 = 2(x − 1)",
+          "B: 2x − 2 = 2(x − 1)",
+          "C: 2x − 3 = 3(x − 1)",
+          "D: 2x + 3 = 3(x − 1)",
+          "(x − 1)"
+        ],
+        "es": [
+          "2x − 1 = 2(x − 1)",
+          "2x − 2 = 2(x − 1)",
+          "2x − 3 = 3(x − 1)",
+          "2x + 3 = 3(x − 1)",
+          "A: 2x − 1 = 2(x − 1)",
+          "B: 2x − 2 = 2(x − 1)",
+          "C: 2x − 3 = 3(x − 1)",
+          "D: 2x + 3 = 3(x − 1)",
+          "(x − 1)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q13": {
+      "inputHash": "e2a2dbcd2f8c9ac5089a9e5bc2d233bc660cea886fa24a69df945e393cc7cd83",
+      "description": {
+        "en": "Question 13. Which side lengths, in inches, will form a triangle? Choices: A: 3, 5, 10 B: 4, 9, 14 C: 5, 7, 10 D: 6, 7, 14",
+        "es": "Pregunta 13. ¿Qué longitudes de lado, en pulgadas, formarán un triángulo? Opciones: A: 3, 5, 10 B: 4, 9, 14 C: 5, 7, 10 D: 6, 7, 14"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3, 5, 10",
+          "4, 9, 14",
+          "5, 7, 10",
+          "6, 7, 14",
+          "A: 3, 5, 10",
+          "B: 4, 9, 14",
+          "C: 5, 7, 10",
+          "D: 6, 7, 14"
+        ],
+        "es": [
+          "3, 5, 10",
+          "4, 9, 14",
+          "5, 7, 10",
+          "6, 7, 14",
+          "A: 3, 5, 10",
+          "B: 4, 9, 14",
+          "C: 5, 7, 10",
+          "D: 6, 7, 14"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q14": {
+      "inputHash": "be6a070b57adf63aeae560f8b7872a961801bceecb43eb5f070d41ffbedfd578",
+      "description": {
+        "en": "Question 14. Which equation represents a linear function? Choices: A: y = 2x B: y = 2x³ C: y = x² − 2 D: y = x² − x",
+        "es": "Pregunta 14. ¿Qué ecuación representa una función lineal? Opciones: A: y = 2x B: y = 2x³ C: y = x² − 2 D: y = x² − x"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 2x",
+          "y = 2x³",
+          "y = x² − 2",
+          "y = x² − x",
+          "A: y = 2x",
+          "B: y = 2x³",
+          "C: y = x² − 2",
+          "D: y = x² − x"
+        ],
+        "es": [
+          "y = 2x",
+          "y = 2x³",
+          "y = x² − 2",
+          "y = x² − x",
+          "A: y = 2x",
+          "B: y = 2x³",
+          "C: y = x² − 2",
+          "D: y = x² − x"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q15": {
+      "inputHash": "9b4cb9484d4e1405e859cca953ed0526efc34bbfdfb0231448f0796af045fb03",
+      "description": {
+        "en": "Question 15. Which expression is equivalent to (5²)(7⁻²)(5⁴)? Choices: A: 5⁶/7² B: 25⁶/7² C: 17⁴ D: 175⁴",
+        "es": "Pregunta 15. ¿Qué expresión es equivalente a (5²)(7⁻²)(5⁴)? Opciones: A: 5⁶/7² B: 25⁶/7² C: 17⁴ D: 175⁴"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(5²)(7⁻²)(5⁴)",
+          "5⁶/7²",
+          "25⁶/7²",
+          "17⁴",
+          "175⁴",
+          "A: 5⁶/7²",
+          "B: 25⁶/7²",
+          "C: 17⁴",
+          "D: 175⁴",
+          "(5²)",
+          "(7⁻²)",
+          "(5⁴)",
+          "5⁶",
+          "7²",
+          "25⁶"
+        ],
+        "es": [
+          "(5²)(7⁻²)(5⁴)",
+          "5⁶/7²",
+          "25⁶/7²",
+          "17⁴",
+          "175⁴",
+          "A: 5⁶/7²",
+          "B: 25⁶/7²",
+          "C: 17⁴",
+          "D: 175⁴",
+          "(5²)",
+          "(7⁻²)",
+          "(5⁴)",
+          "5⁶",
+          "7²",
+          "25⁶"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q17": {
+      "inputHash": "5f306c00b471f384a18c7754780413b629f4b566cb8b4a3a62bac9a4b1a0ba9f",
+      "description": {
+        "en": "Question 17. Triangle ABC and triangle EFG are shown. In triangle ABC, angle A is 76°, angle B is 39°, and angle C is 65°. Side AB is 188 cm, side AC is 132 cm, and side BC is 201 cm. In triangle EFG, angle E is 76° and angle G is 65°. Side FE is 94 cm and side EG is 66 cm; angle F and side FG are not labeled with measurements. Corresponding vertices are A and E, B and F, and C and G. Which statement describes the measurements of angle F and side FG for triangle EFG? Choices: A: Angle F is 39° and side FG is 201 cm. B: Angle F is 19.5° and side FG is 201 cm. C: Angle F is 19.5° and side FG is 100.5 cm. D: Angle F is 39° and side FG is 100.5 cm.",
+        "es": "Pregunta 17. A continuación, se muestran el triángulo ABC y el triángulo EFG. En el triángulo ABC, AB mide 188 cm, AC mide 132 cm y BC mide 201 cm; el ángulo A mide 76°, el ángulo B mide 39° y el ángulo C mide 65°. En el triángulo EFG, FE mide 94 cm, EG mide 66 cm, el ángulo E mide 76° y el ángulo G mide 65°; no se indican la medida del ángulo F ni la longitud FG. Los vértices correspondientes por posición y medidas son A con E, B con F y C con G. ¿Qué afirmación describe las medidas del ángulo F y el lado FG del triángulo EFG? Opciones: A: El ángulo F mide 39° y el lado FG mide 201 cm. B: El ángulo F mide 19.5° y el lado FG mide 201 cm. C: El ángulo F mide 19.5° y el lado FG mide 100.5 cm. D: El ángulo F mide 39° y el lado FG mide 100.5 cm."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "76°",
+          "39°",
+          "65°",
+          "188 cm",
+          "132 cm",
+          "201 cm",
+          "94 cm",
+          "66 cm",
+          "19.5°",
+          "100.5 cm",
+          "A: Angle F is 39° and side FG is 201 cm",
+          "B: Angle F is 19.5° and side FG is 201 cm",
+          "C: Angle F is 19.5° and side FG is 100.5 cm",
+          "D: Angle F is 39° and side FG is 100.5 cm"
+        ],
+        "es": [
+          "188 cm",
+          "132 cm",
+          "201 cm",
+          "76°",
+          "39°",
+          "65°",
+          "94 cm",
+          "66 cm",
+          "19.5°",
+          "100.5 cm",
+          "A: El ángulo F mide 39° y el lado FG mide 201 cm",
+          "B: El ángulo F mide 19.5° y el lado FG mide 201 cm",
+          "C: El ángulo F mide 19.5° y el lado FG mide 100.5 cm",
+          "D: El ángulo F mide 39° y el lado FG mide 100.5 cm"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q18": {
+      "inputHash": "d56976e59ab3b2505d6bc8418dc62b526bc9817f3a90e1ea49f65ddf4b01905a",
+      "description": {
+        "en": "Question 18. The graph of a function is drawn on a coordinate plane. From the left, a ray slopes downward as x increases until reaching (−6, 5). The graph is then horizontal at y = 5 from x = −6 through x = 2. Beginning at (2, 5), a ray slopes upward as x increases. Which statement is true about the function? Choices: A: The function is constant when x is less than −6. B: The function is decreasing when x is greater than 2. C: The function is increasing when x is greater than 2. D: The function is decreasing when x is between the values of −6 and 2.",
+        "es": "Pregunta 18. A continuación, se muestra el gráfico de una función en un plano de coordenadas. La gráfica es lineal por tramos y tiene flechas en sus dos extremos. Desde la izquierda, un tramo decreciente llega al punto (−6, 5). Luego, un tramo horizontal, y = 5, se extiende desde x = −6 hasta x = 2. A partir del punto (2, 5), un tramo creciente continúa hacia la derecha. ¿Qué afirmación es verdadera sobre la función? Opciones: A: La función es constante cuando x es menor que −6. B: La función es decreciente cuando x es mayor que 2. C: La función es creciente cuando x es mayor que 2. D: La función es decreciente cuando x está entre los valores de −6 y 2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−6, 5)",
+          "y = 5",
+          "x = −6",
+          "x = 2",
+          "(2, 5)",
+          "x is less than −6",
+          "x is greater than 2",
+          "between the values of −6 and 2",
+          "A: The function is constant when x is less than −6",
+          "B: The function is decreasing when x is greater than 2",
+          "C: The function is increasing when x is greater than 2",
+          "D: The function is decreasing when x is between the values of −6 and 2"
+        ],
+        "es": [
+          "(−6, 5)",
+          "y = 5",
+          "x = −6",
+          "x = 2",
+          "(2, 5)",
+          "x es menor que −6",
+          "x es mayor que 2",
+          "entre los valores de −6 y 2",
+          "A: La función es constante cuando x es menor que −6",
+          "B: La función es decreciente cuando x es mayor que 2",
+          "C: La función es creciente cuando x es mayor que 2",
+          "D: La función es decreciente cuando x está entre los valores de −6 y 2"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q19": {
+      "inputHash": "0365490486e1a20cbf2bad269898fbbaeb78d3be8607a19926ab19cbcd0b1a48",
+      "description": {
+        "en": "Question 19. Myla sells hot chocolate at a fundraising event. The function y = 3x + 30 represents the total amount of money, y, she raises and includes the profit made by selling x cups of hot chocolate and a one-time donation at the event. Which statement is true about the situation? Choices: A: The profit per cup is $3.00 and the number of cups she sells is 30. B: The number of cups she sells is 3 and the profit per cup is $30.00. C: The profit per cup is $3.00 and the amount of the donation is $30.00. D: The amount of the donation is $3.00 and the profit per cup is $30.00.",
+        "es": "Pregunta 19. Myla vende chocolate caliente en un evento para recaudar fondos. La función y = 3x + 30 representa la cantidad total de dinero, y, que ella recauda e incluye la ganancia obtenida con la venta de x tazas de chocolate caliente y una donación por única vez realizada en el evento. ¿Qué afirmación es verdadera sobre la situación? Opciones: A: La ganancia por taza es $3.00, y la cantidad de tazas que vende es 30. B: La cantidad de tazas que vende es 3, y la ganancia por taza es $30.00. C: La ganancia por taza es $3.00, y la cantidad de la donación es $30.00. D: La cantidad de la donación es $3.00 y la ganancia por taza es $30.00."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = 3x + 30",
+          "$3.00",
+          "30",
+          "3",
+          "$30.00",
+          "A: The profit per cup is $3.00 and the number of cups she sells is 30",
+          "B: The number of cups she sells is 3 and the profit per cup is $30.00",
+          "C: The profit per cup is $3.00 and the amount of the donation is $30.00",
+          "D: The amount of the donation is $3.00 and the profit per cup is $30.00"
+        ],
+        "es": [
+          "y = 3x + 30",
+          "$3.00",
+          "30",
+          "3",
+          "$30.00",
+          "A: La ganancia por taza es $3.00, y la cantidad de tazas que vende es 30",
+          "B: La cantidad de tazas que vende es 3, y la ganancia por taza es $30.00",
+          "C: La ganancia por taza es $3.00, y la cantidad de la donación es $30.00",
+          "D: La cantidad de la donación es $3.00 y la ganancia por taza es $30.00"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q20": {
+      "inputHash": "bd65938c415e888d3ae7131261a8dc011f94768b4c502caad93ae6f73ab38dba",
+      "description": {
+        "en": "Question 20. Which equation represents the line that passes through the points (0, 9) and (3, 0)? Choices: A: y = −3x + 3 B: y = −3x + 9 C: y = −(1/3)x + 3 D: y = −(1/3)x + 9",
+        "es": "Pregunta 20. ¿Qué ecuación representa la línea que pasa por los puntos (0, 9) y (3, 0)? Opciones: A: y = −3x + 3. B: y = −3x + 9. C: y = −(1/3)x + 3. D: y = −(1/3)x + 9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 9)",
+          "(3, 0)",
+          "y = −3x + 3",
+          "y = −3x + 9",
+          "y = −(1/3)x + 3",
+          "y = −(1/3)x + 9",
+          "A: y = −3x + 3",
+          "B: y = −3x + 9",
+          "C: y = −(1/3)x + 3",
+          "D: y = −(1/3)x + 9",
+          "(1/3)"
+        ],
+        "es": [
+          "(0, 9)",
+          "(3, 0)",
+          "y = −3x + 3",
+          "y = −3x + 9",
+          "y = −(1/3)x + 3",
+          "y = −(1/3)x + 9",
+          "1/3",
+          "A: y = −3x + 3",
+          "B: y = −3x + 9",
+          "C: y = −(1/3)x + 3",
+          "D: y = −(1/3)x + 9",
+          "(1/3)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q21": {
+      "inputHash": "4caf61b73f519c068cb2efb2bd71e2032db405bcf8fcc642b23b91d856462b2f",
+      "description": {
+        "en": "Question 21. An equation is given: 3x − 2 = 7(x + 5). What is the value of x? Choices: A: −37/4 B: −7/4 C: 3/10 D: 33/10",
+        "es": "Pregunta 21. A continuación, se muestra una ecuación: 3x − 2 = 7(x + 5). ¿Cuál es el valor de x? Opciones: A: −37/4. B: −7/4. C: 3/10. D: 33/10."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3x − 2 = 7(x + 5)",
+          "−37/4",
+          "−7/4",
+          "3/10",
+          "33/10",
+          "A: −37/4",
+          "B: −7/4",
+          "C: 3/10",
+          "D: 33/10",
+          "(x + 5)",
+          "37/4",
+          "7/4"
+        ],
+        "es": [
+          "3x − 2 = 7(x + 5)",
+          "−37/4",
+          "−7/4",
+          "3/10",
+          "33/10",
+          "A: −37/4",
+          "B: −7/4",
+          "C: 3/10",
+          "D: 33/10",
+          "(x + 5)",
+          "37/4",
+          "7/4"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q22": {
+      "inputHash": "b1cf5841159662617a710e5c12d23cb29e31a6a5db3da3b46b185755a7b30c81",
+      "description": {
+        "en": "Question 22. Triangle ABC and triangle DEF on a coordinate plane are congruent. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−3, 5), B(−5, 1), and C(−1, 3). Triangle DEF has vertices D(4, 0), E(6, −4), and F(2, −2). The corresponding vertices are A and D, B and E, and C and F. Which sequence of transformations will map triangle ABC onto triangle DEF? Choices: A: a reflection over the x-axis and then a translation 1 unit right and 5 units down B: a reflection over the x-axis and then a translation 5 units right and 1 unit down C: a reflection over the y-axis and then a translation 5 units right and 1 unit down D: a reflection over the y-axis and then a translation 1 unit right and 5 units down",
+        "es": "Pregunta 22. El triángulo ABC y el triángulo DEF que se representan en un plano de coordenadas son congruentes. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−3, 5), B(−5, 1) y C(−1, 3). El triángulo DEF tiene vértices D(4, 0), E(6, −4) y F(2, −2). Los vértices correspondientes son A y D, B y E, y C y F. ¿Qué secuencia de transformaciones mapeará el triángulo ABC sobre el triángulo DEF? Opciones: A: Una reflexión sobre el eje x y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo. B: Una reflexión sobre el eje x y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. C: Una reflexión sobre el eje y y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. D: Una reflexión sobre el eje y y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(−3, 5)",
+          "B(−5, 1)",
+          "C(−1, 3)",
+          "D(4, 0)",
+          "E(6, −4)",
+          "F(2, −2)",
+          "x-axis",
+          "y-axis",
+          "1 unit right and 5 units down",
+          "5 units right and 1 unit down",
+          "A: a reflection over the x-axis and then a translation 1 unit right and 5 units down",
+          "B: a reflection over the x-axis and then a translation 5 units right and 1 unit down",
+          "C: a reflection over the y-axis and then a translation 5 units right and 1 unit down",
+          "D: a reflection over the y-axis and then a translation 1 unit right and 5 units down",
+          "(−3, 5)",
+          "(−5, 1)",
+          "(−1, 3)",
+          "(4, 0)",
+          "(6, −4)",
+          "(2, −2)",
+          "The corresponding vertices are A and D, B and E, and C and F"
+        ],
+        "es": [
+          "A(−3, 5)",
+          "B(−5, 1)",
+          "C(−1, 3)",
+          "D(4, 0)",
+          "E(6, −4)",
+          "F(2, −2)",
+          "eje x",
+          "eje y",
+          "1 unidad a la derecha",
+          "5 unidades hacia abajo",
+          "5 unidades a la derecha",
+          "1 unidad hacia abajo",
+          "A: Una reflexión sobre el eje x y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo",
+          "B: Una reflexión sobre el eje x y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo",
+          "C: Una reflexión sobre el eje y y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo",
+          "D: Una reflexión sobre el eje y y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo",
+          "(−3, 5)",
+          "(−5, 1)",
+          "(−1, 3)",
+          "(4, 0)",
+          "(6, −4)",
+          "(2, −2)",
+          "Los vértices correspondientes son A y D, B y E, y C y F"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q23": {
+      "inputHash": "8e7dfa4a405f7ab08251681a71e9f811908a503c74b6009d7f09f4cb7b130317",
+      "description": {
+        "en": "Question 23. Two intersecting lines create four angles. One line is horizontal, and the other rises from lower left to upper right. The upper-left angle is labeled (4x − 15)°, and its vertical angle, the lower-right angle, is labeled 115°. What is the value of x? Choices: A: 20 B: 26.25 C: 32.5 D: 48.75",
+        "es": "Pregunta 23. Dos líneas que se intersecan crean cuatro ángulos. Una línea es horizontal, con flechas en ambos extremos, y la otra asciende de izquierda a derecha, también con flechas en ambos extremos. El ángulo situado arriba de la línea horizontal y a la izquierda de la línea inclinada mide (4x − 15)°. El ángulo opuesto por el vértice, situado debajo de la línea horizontal y a la derecha de la línea inclinada, mide 115°. ¿Cuál es el valor de x? Opciones: A: 20. B: 26.25. C: 32.5. D: 48.75."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(4x − 15)°",
+          "115°",
+          "20",
+          "26.25",
+          "32.5",
+          "48.75",
+          "A: 20",
+          "B: 26.25",
+          "C: 32.5",
+          "D: 48.75",
+          "(4x − 15)"
+        ],
+        "es": [
+          "(4x − 15)°",
+          "115°",
+          "20",
+          "26.25",
+          "32.5",
+          "48.75",
+          "A: 20",
+          "B: 26.25",
+          "C: 32.5",
+          "D: 48.75",
+          "(4x − 15)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q25": {
+      "inputHash": "ef36cc8c99c942e088100956d494cf5f4641129b258b5f674899c4c41e04d1d3",
+      "description": {
+        "en": "Question 25. Triangle ABC is rotated clockwise about the origin to create triangle XYZ on a coordinate plane. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−2, 3), B(−5, 1), and C(−2, 1). Triangle XYZ has vertices X(3, 2), Y(1, 5), and Z(1, 2). Side AC is vertical and corresponds to side XZ; side BC is horizontal and corresponds to side YZ; side AB corresponds to side XY. Which statement is correct? Choices: A: ∠A ≅ ∠Y B: ∠B ≅ ∠Y C: ∠B ≅ ∠Z D: ∠C ≅ ∠X",
+        "es": "Pregunta 25. El triángulo ABC se rota en sentido de las agujas del reloj alrededor del origen para crear el triángulo XYZ en un plano de coordenadas. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−2, 3), B(−5, 1) y C(−2, 1); el segmento AC es vertical y el segmento BC es horizontal. El triángulo XYZ tiene vértices X(3, 2), Y(1, 5) y Z(1, 2); el segmento YZ es vertical y el segmento ZX es horizontal. La rotación establece las correspondencias A con X, B con Y y C con Z. ¿Qué afirmación es correcta? Opciones: A: ∠A ≅ ∠Y. B: ∠B ≅ ∠Y. C: ∠B ≅ ∠Z. D: ∠C ≅ ∠X."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A(−2, 3)",
+          "B(−5, 1)",
+          "C(−2, 1)",
+          "X(3, 2)",
+          "Y(1, 5)",
+          "Z(1, 2)",
+          "∠A ≅ ∠Y",
+          "∠B ≅ ∠Y",
+          "∠B ≅ ∠Z",
+          "∠C ≅ ∠X",
+          "A: ∠A ≅ ∠Y",
+          "B: ∠B ≅ ∠Y",
+          "C: ∠B ≅ ∠Z",
+          "D: ∠C ≅ ∠X",
+          "(−2, 3)",
+          "(−5, 1)",
+          "(−2, 1)",
+          "(3, 2)",
+          "(1, 5)",
+          "(1, 2)"
+        ],
+        "es": [
+          "A(−2, 3)",
+          "B(−5, 1)",
+          "C(−2, 1)",
+          "X(3, 2)",
+          "Y(1, 5)",
+          "Z(1, 2)",
+          "∠A ≅ ∠Y",
+          "∠B ≅ ∠Y",
+          "∠B ≅ ∠Z",
+          "∠C ≅ ∠X",
+          "A: ∠A ≅ ∠Y",
+          "B: ∠B ≅ ∠Y",
+          "C: ∠B ≅ ∠Z",
+          "D: ∠C ≅ ∠X",
+          "(−2, 3)",
+          "(−5, 1)",
+          "(−2, 1)",
+          "(3, 2)",
+          "(1, 5)",
+          "(1, 2)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q26": {
+      "inputHash": "79b2de2f59f6595c6da565f423d272d4e4ff7ca241324643a4c86d2f888009da",
+      "description": {
+        "en": "Question 26. A linear function is graphed on a coordinate plane. The x-axis is horizontal and the y-axis is vertical. The line descends from upper left to lower right, with arrows at both ends, and passes through (−3, 6), (0, 4), (3, 2), (6, 0), and (9, −2). Which statement is true about the function? Choices: A: The rate of change is 2/3 and the y-intercept is 4. B: The rate of change is 2/3 and the y-intercept is 6. C: The rate of change is −2/3 and the y-intercept is 4. D: The rate of change is −2/3 and the y-intercept is 6.",
+        "es": "Pregunta 26. Una función lineal se grafica en un plano de coordenadas. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. La recta desciende de izquierda a derecha, tiene flechas en ambos extremos, cruza el eje y en (0, 4) y cruza el eje x en (6, 0). También pasa por puntos de la cuadrícula como (3, 2). ¿Qué afirmación es verdadera sobre la función? Opciones: A: La tasa de cambio es 2/3 y la intersección y es 4. B: La tasa de cambio es 2/3 y la intersección y es 6. C: La tasa de cambio es −2/3 y la intersección y es 4. D: La tasa de cambio es −2/3 y la intersección y es 6."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(−3, 6)",
+          "(0, 4)",
+          "(3, 2)",
+          "(6, 0)",
+          "(9, −2)",
+          "2/3",
+          "−2/3",
+          "y-intercept is 4",
+          "y-intercept is 6",
+          "A: The rate of change is 2/3 and the y-intercept is 4",
+          "B: The rate of change is 2/3 and the y-intercept is 6",
+          "C: The rate of change is −2/3 and the y-intercept is 4",
+          "D: The rate of change is −2/3 and the y-intercept is 6"
+        ],
+        "es": [
+          "(0, 4)",
+          "(6, 0)",
+          "(3, 2)",
+          "2/3",
+          "−2/3",
+          "intersección y es 4",
+          "intersección y es 6",
+          "A: La tasa de cambio es 2/3 y la intersección y es 4",
+          "B: La tasa de cambio es 2/3 y la intersección y es 6",
+          "C: La tasa de cambio es −2/3 y la intersección y es 4",
+          "D: La tasa de cambio es −2/3 y la intersección y es 6"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q27": {
+      "inputHash": "2f25b49fd19dee5af3f2c15a80e1d7a56a1873f1b40811d43dec9466e36c1ada",
+      "description": {
+        "en": "Question 27. Miguel is comparing the costs of renting a photobooth for an event. The costs of two companies are described. The cost at Company A includes a $180.00 setup fee plus an additional $49.00 per hour. The cost at Company B is represented by the equation c = 99h + 150, where c is the cost, in dollars, for h hours. Which statement correctly compares the costs for renting a photobooth? Choices: A: Company A charges $30.00 more per hour than Company B. B: Company B charges $50.00 more per hour than Company A. C: Company A charges $50.00 more per hour than Company B. D: Company B charges $30.00 more per hour than Company A.",
+        "es": "Pregunta 27. Miguel está comparando los costos de alquilar una cabina fotográfica para un evento. Los costos de dos empresas se describen a continuación. El costo de la Empresa A incluye una tarifa de instalación de $180.00 más un adicional de $49.00 por hora. El costo de la Empresa B se representa mediante la ecuación c = 99h + 150, donde c es el costo, en dólares, por h horas. ¿Qué afirmación compara correctamente los costos de alquiler de la cabina fotográfica? Opciones: A: La Empresa A cobra $30.00 más por hora que la Empresa B. B: La Empresa B cobra $50.00 más por hora que la Empresa A. C: La Empresa A cobra $50.00 más por hora que la Empresa B. D: La Empresa B cobra $30.00 más por hora que la Empresa A."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$180.00",
+          "$49.00",
+          "c = 99h + 150",
+          "$30.00",
+          "$50.00",
+          "A: Company A charges $30.00 more per hour than Company B",
+          "B: Company B charges $50.00 more per hour than Company A",
+          "C: Company A charges $50.00 more per hour than Company B",
+          "D: Company B charges $30.00 more per hour than Company A"
+        ],
+        "es": [
+          "$180.00",
+          "$49.00",
+          "c = 99h + 150",
+          "$30.00",
+          "$50.00",
+          "A: La Empresa A cobra $30.00 más por hora que la Empresa B",
+          "B: La Empresa B cobra $50.00 más por hora que la Empresa A",
+          "C: La Empresa A cobra $50.00 más por hora que la Empresa B",
+          "D: La Empresa B cobra $30.00 más por hora que la Empresa A"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q29": {
+      "inputHash": "560cfb604fcf287dfca19c95ac0a541dc98deecc81c2221db5b682c6520ed431",
+      "description": {
+        "en": "Question 29. Triangle ABC is graphed on a coordinate plane. Triangle ABC is translated 4 units left and 3 units up to create triangle A′B′C′. The vertices are A(−4, 3), B(−4, −3), and C(7, −3). Side AB is vertical, side BC is horizontal, and side AC slopes downward from left to right. What is the length, in units, of side A′B′? Choices: A: 2. B: 6. C: 7. D: 9.",
+        "es": "Pregunta 29. El triángulo ABC se grafica en un plano de coordenadas. El triángulo ABC se somete a una traslación de 4 unidades hacia la derecha y 3 unidades hacia arriba para crear el triángulo A′B′C′. En el plano, los vértices son A(−4, 3), B(−4, −3) y C(7, −3). El lado AB es vertical, el lado BC es horizontal y el lado AC es diagonal. ¿Cuál es la longitud, en unidades, del lado A′B′? Opciones: A: 2 B: 6 C: 7 D: 9"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 units left",
+          "3 units up",
+          "A′B′C′",
+          "A(−4, 3)",
+          "B(−4, −3)",
+          "C(7, −3)",
+          "A′B′",
+          "2",
+          "6",
+          "7",
+          "9",
+          "A: 2",
+          "B: 6",
+          "C: 7",
+          "D: 9",
+          "(−4, 3)",
+          "(−4, −3)",
+          "(7, −3)"
+        ],
+        "es": [
+          "4 unidades",
+          "3 unidades",
+          "A′B′C′",
+          "A(−4, 3)",
+          "B(−4, −3)",
+          "C(7, −3)",
+          "A′B′",
+          "2",
+          "6",
+          "7",
+          "9",
+          "A: 2",
+          "B: 6",
+          "C: 7",
+          "D: 9",
+          "(−4, 3)",
+          "(−4, −3)",
+          "(7, −3)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q30": {
+      "inputHash": "3d0b8ec681f10a94697c7a47b32ab501fb1052e5a5f4b66efb1b0d428127e77a",
+      "description": {
+        "en": "Question 30. A set of ordered pairs is { (1, 4), (2, 5), (3, 4), (k, 6) }. Which value of k makes the set of ordered pairs a function? Choices: A: 1. B: 2. C: 3. D: 4.",
+        "es": "Pregunta 30. A continuación, se muestra un conjunto de pares ordenados: {(1, 4), (2, 5), (3, 4), (k, 6)}. ¿Qué valor de k hace que el conjunto de pares ordenados sea una función? Opciones: A: 1 B: 2 C: 3 D: 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "{ (1, 4), (2, 5), (3, 4), (k, 6) }",
+          "k",
+          "1",
+          "2",
+          "3",
+          "4",
+          "A: 1",
+          "B: 2",
+          "C: 3",
+          "D: 4",
+          "(1, 4)",
+          "(2, 5)",
+          "(3, 4)",
+          "(k, 6)"
+        ],
+        "es": [
+          "{(1, 4), (2, 5), (3, 4), (k, 6)}",
+          "k",
+          "1",
+          "2",
+          "3",
+          "4",
+          "A: 1",
+          "B: 2",
+          "C: 3",
+          "D: 4",
+          "(1, 4)",
+          "(2, 5)",
+          "(3, 4)",
+          "(k, 6)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q31": {
+      "inputHash": "ae03e55dfb41b5890e1b85388fa6916faf9083802fb94bef05ad5286c05e621b",
+      "description": {
+        "en": "Question 31. Lines a and b are parallel horizontal lines, and lines q and t are transversals. The transversals intersect each other on line a and extend downward in opposite directions, forming a triangle with a segment of line b. Angle 1 is below line a and to the right of transversal q. Angle 2 is between transversals t and q, below their intersection. Angle 3 is above line b and to the left of transversal t. The measure of angle 1 is 79°, and the measure of angle 3 is 128°. What is the measure, in degrees, of angle 2? Choices: A: 49. B: 52. C: 101. D: 128.",
+        "es": "Pregunta 31. En una figura, la línea a es paralela a la línea b; ambas son horizontales, con a encima de b. Las líneas oblicuas q y t son transversales. Ambas cortan la línea a en el mismo punto y después divergen hacia abajo: t desciende hacia la izquierda y corta la línea b, mientras que q desciende hacia la derecha y corta la línea b. El ángulo 1 está debajo de a y a la derecha de q. El ángulo 2 está debajo de a, entre t y q. El ángulo 3 está encima de b y a la izquierda de t. La medida del ángulo 1 es 79° y la medida del ángulo 3 es 128°. ¿Cuál es la medida, en grados, del ángulo 2? Opciones: A: 49 B: 52 C: 101 D: 128"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "a",
+          "b",
+          "q",
+          "t",
+          "79°",
+          "128°",
+          "49",
+          "52",
+          "101",
+          "128",
+          "A: 49",
+          "B: 52",
+          "C: 101",
+          "D: 128"
+        ],
+        "es": [
+          "a",
+          "b",
+          "q",
+          "t",
+          "ángulo 1",
+          "ángulo 2",
+          "ángulo 3",
+          "79°",
+          "128°",
+          "49",
+          "52",
+          "101",
+          "128",
+          "A: 49",
+          "B: 52",
+          "C: 101",
+          "D: 128"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q32": {
+      "inputHash": "9914945dadaacca943873b58cd9ce5b17819205a1398accfc097be639e47dc00",
+      "description": {
+        "en": "Question 32. An equation is 1/2(14 + 4x) = 5(x − 2) + 2. What value of x makes the equation true? Choices: A: 2 1/7. B: 5. C: 6 1/3. D: 7.",
+        "es": "Pregunta 32. A continuación, se muestra una ecuación: ½(14 + 4x) = 5(x − 2) + 2. ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: 2 1/7 B: 5 C: 6 1/3 D: 7"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/2(14 + 4x) = 5(x − 2) + 2",
+          "x",
+          "2 1/7",
+          "5",
+          "6 1/3",
+          "7",
+          "A: 2 1/7",
+          "B: 5",
+          "C: 6 1/3",
+          "D: 7",
+          "1/2",
+          "(14 + 4x)",
+          "(x − 2)"
+        ],
+        "es": [
+          "½(14 + 4x) = 5(x − 2) + 2",
+          "x",
+          "2 1/7",
+          "5",
+          "6 1/3",
+          "7",
+          "A: 2 1/7",
+          "B: 5",
+          "C: 6 1/3",
+          "D: 7",
+          "(14 + 4x)",
+          "(x − 2)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q33": {
+      "inputHash": "7a234d8151581ace97cf68d93a7348073ef6660b829976957387034095b425e2",
+      "description": {
+        "en": "Question 33. Which value of x makes the equation x³ = 8 true? Choices: A: 2. B: 4. C: 11. D: 24.",
+        "es": "Pregunta 33. ¿Qué valor de x hace que la ecuación x³ = 8 sea verdadera? Opciones: A: 2 B: 4 C: 11 D: 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x³ = 8",
+          "2",
+          "4",
+          "11",
+          "24",
+          "A: 2",
+          "B: 4",
+          "C: 11",
+          "D: 24"
+        ],
+        "es": [
+          "x³ = 8",
+          "2",
+          "4",
+          "11",
+          "24",
+          "A: 2",
+          "B: 4",
+          "C: 11",
+          "D: 24"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q34": {
+      "inputHash": "065d0325ac2892c3afa8b9db530a6b977d9076f063901bbc2fc9cc24f3104564",
+      "description": {
+        "en": "Question 34. Which scatter plot represents data with a positive linear association? Each choice is a coordinate grid with x- and y-axes numbered from 0 through 10. Choices: A: Points (3, 7), (3, 5), (4, 6), (4, 4), (5, 5), (5, 2), (6, 7), (6, 6), (6, 4), (7, 4), (7, 3), (7, 1), (8, 6), (8, 4), (8, 2), (9, 3), (9, 2), (9, 1), (10, 4), and (10, 1); the overall pattern descends from left to right. B: Points (1, 3), (1, 2), (1, 1), (2, 5), (2, 2), (3, 6), (3, 4), (4, 8), (4, 6), (4, 5), (5, 9), (5, 5), (5, 3), (6, 7), (6, 6), and (7, 8); the overall pattern rises from left to right. C: Points (1, 8), (1, 6), (1, 4), (2, 7), (2, 5), (3, 6), (3, 4), (4, 5), (4, 3), (5, 3), (6, 4), (6, 2), (7, 5), (7, 4), (8, 6), (8, 3), (9, 7), (9, 5), and (10, 7); the points form a curved, U-shaped pattern. D: Points (1, 3), (2, 10), (2, 7), (3, 6), (4, 4), (5, 2), (6, 8), (7, 5), (8, 9), (9, 6), (9, 3), (10, 7), and (10, 2); the points are widely scattered without a consistent linear direction.",
+        "es": "Pregunta 34. ¿Cuál de los diagramas de dispersión representa los datos con una asociación lineal positiva? Cada opción es un plano con ejes x e y, y una cuadrícula numerada de 0 a 10 en ambos ejes. Opciones: A: Diagrama de dispersión con los puntos (3, 7), (3, 5), (4, 6), (4, 4), (5, 5), (5, 2), (6, 7), (6, 6), (6, 4), (7, 4), (7, 3), (7, 1), (8, 6), (8, 4), (8, 2), (9, 3), (9, 2), (9, 1), (10, 4) y (10, 1). B: Diagrama de dispersión con los puntos (1, 3), (1, 2), (1, 1), (2, 5), (2, 2), (3, 6), (3, 4), (4, 8), (4, 6), (4, 5), (5, 9), (5, 5), (5, 3), (6, 7), (6, 6) y (7, 8). C: Diagrama de dispersión con los puntos (1, 8), (1, 6), (1, 4), (2, 7), (2, 5), (3, 6), (3, 4), (4, 5), (4, 3), (5, 3), (6, 4), (6, 2), (7, 5), (7, 4), (8, 6), (8, 3), (9, 7), (9, 5) y (10, 7). Los puntos descienden hacia el centro y luego ascienden, formando aproximadamente una V. D: Diagrama de dispersión con los puntos (1, 3), (2, 10), (2, 7), (3, 6), (4, 4), (5, 2), (6, 8), (7, 5), (8, 9), (9, 6), (9, 3), (10, 7) y (10, 2), dispersos sin una tendencia lineal uniforme."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 through 10",
+          "(3, 7)",
+          "(10, 1)",
+          "(1, 3)",
+          "(7, 8)",
+          "(1, 8)",
+          "(10, 7)",
+          "(2, 10)",
+          "(10, 2)",
+          "A: Points (3, 7), (3, 5), (4, 6), (4, 4), (5, 5), (5, 2), (6, 7), (6, 6), (6, 4), (7, 4), (7, 3), (7, 1), (8, 6), (8, 4), (8, 2), (9, 3), (9, 2), (9, 1), (10, 4), and (10, 1); the overall pattern descends from left to right",
+          "B: Points (1, 3), (1, 2), (1, 1), (2, 5), (2, 2), (3, 6), (3, 4), (4, 8), (4, 6), (4, 5), (5, 9), (5, 5), (5, 3), (6, 7), (6, 6), and (7, 8); the overall pattern rises from left to right",
+          "C: Points (1, 8), (1, 6), (1, 4), (2, 7), (2, 5), (3, 6), (3, 4), (4, 5), (4, 3), (5, 3), (6, 4), (6, 2), (7, 5), (7, 4), (8, 6), (8, 3), (9, 7), (9, 5), and (10, 7); the points form a curved, U-shaped pattern",
+          "D: Points (1, 3), (2, 10), (2, 7), (3, 6), (4, 4), (5, 2), (6, 8), (7, 5), (8, 9), (9, 6), (9, 3), (10, 7), and (10, 2); the points are widely scattered without a consistent linear direction",
+          "(3, 5)",
+          "(4, 6)",
+          "(4, 4)",
+          "(5, 5)",
+          "(5, 2)",
+          "(6, 7)",
+          "(6, 6)",
+          "(6, 4)",
+          "(7, 4)",
+          "(7, 3)",
+          "(7, 1)",
+          "(8, 6)",
+          "(8, 4)",
+          "(8, 2)",
+          "(9, 3)",
+          "(9, 2)",
+          "(9, 1)",
+          "(10, 4)",
+          "(1, 2)",
+          "(1, 1)",
+          "(2, 5)",
+          "(2, 2)",
+          "(3, 6)",
+          "(3, 4)",
+          "(4, 8)",
+          "(4, 5)",
+          "(5, 9)",
+          "(5, 3)",
+          "(1, 6)",
+          "(1, 4)",
+          "(2, 7)",
+          "(4, 3)",
+          "(6, 2)",
+          "(7, 5)",
+          "(8, 3)",
+          "(9, 7)",
+          "(9, 5)",
+          "(6, 8)",
+          "(8, 9)",
+          "(9, 6)"
+        ],
+        "es": [
+          "0 a 10",
+          "(3, 7)",
+          "(3, 5)",
+          "(4, 6)",
+          "(4, 4)",
+          "(5, 5)",
+          "(5, 2)",
+          "(6, 7)",
+          "(6, 6)",
+          "(6, 4)",
+          "(7, 4)",
+          "(7, 3)",
+          "(7, 1)",
+          "(8, 6)",
+          "(8, 4)",
+          "(8, 2)",
+          "(9, 3)",
+          "(9, 2)",
+          "(9, 1)",
+          "(10, 4)",
+          "(10, 1)",
+          "(1, 3)",
+          "(1, 2)",
+          "(1, 1)",
+          "(2, 5)",
+          "(2, 2)",
+          "(3, 6)",
+          "(4, 8)",
+          "(4, 5)",
+          "(5, 9)",
+          "(5, 3)",
+          "(7, 8)",
+          "(1, 8)",
+          "(1, 6)",
+          "(1, 4)",
+          "(2, 7)",
+          "(3, 4)",
+          "(4, 3)",
+          "(6, 2)",
+          "(7, 5)",
+          "(8, 3)",
+          "(9, 7)",
+          "(9, 5)",
+          "(10, 7)",
+          "(2, 10)",
+          "(6, 8)",
+          "(8, 9)",
+          "(9, 6)",
+          "(10, 2)",
+          "A: Diagrama de dispersión con los puntos (3, 7), (3, 5), (4, 6), (4, 4), (5, 5), (5, 2), (6, 7), (6, 6), (6, 4), (7, 4), (7, 3), (7, 1), (8, 6), (8, 4), (8, 2), (9, 3), (9, 2), (9, 1), (10, 4) y (10, 1)",
+          "B: Diagrama de dispersión con los puntos (1, 3), (1, 2), (1, 1), (2, 5), (2, 2), (3, 6), (3, 4), (4, 8), (4, 6), (4, 5), (5, 9), (5, 5), (5, 3), (6, 7), (6, 6) y (7, 8)",
+          "C: Diagrama de dispersión con los puntos (1, 8), (1, 6), (1, 4), (2, 7), (2, 5), (3, 6), (3, 4), (4, 5), (4, 3), (5, 3), (6, 4), (6, 2), (7, 5), (7, 4), (8, 6), (8, 3), (9, 7), (9, 5) y (10, 7). Los puntos descienden hacia el centro y luego ascienden, formando aproximadamente una V",
+          "D: Diagrama de dispersión con los puntos (1, 3), (2, 10), (2, 7), (3, 6), (4, 4), (5, 2), (6, 8), (7, 5), (8, 9), (9, 6), (9, 3), (10, 7) y (10, 2), dispersos sin una tendencia lineal uniforme"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q35": {
+      "inputHash": "701807117f5dea9bd4d8435dfe1dfa4c3e8fe31295de28730086bf84c028a6d1",
+      "description": {
+        "en": "Question 35. A map shows a store, a home, and a gas station. The store is directly north of the home and 12 miles away. The gas station is directly east of the home and 16 miles away. Dashed segments connect the three locations, forming a right triangle whose right angle is at the home; the segment from the store to the gas station is the hypotenuse. What is the distance, in miles, between the store and the gas station? Choices: A: 14. B: 20. C: 28. D: 56.",
+        "es": "Pregunta 35. Un diagrama muestra un mapa de una tienda, una casa y una gasolinera. Al norte de la casa se encuentra una tienda que está a 12 millas de distancia. Al este de la casa se encuentra una gasolinera que está a 16 millas de distancia. Los segmentos entre la casa y la tienda, y entre la casa y la gasolinera, forman un ángulo recto. Un segmento diagonal une la tienda con la gasolinera. ¿Cuál es la distancia, en millas, entre la tienda y la gasolinera? Opciones: A: 14 B: 20 C: 28 D: 56"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "12 miles",
+          "16 miles",
+          "14",
+          "20",
+          "28",
+          "56",
+          "A: 14",
+          "B: 20",
+          "C: 28",
+          "D: 56"
+        ],
+        "es": [
+          "12 millas",
+          "16 millas",
+          "14",
+          "20",
+          "28",
+          "56",
+          "A: 14",
+          "B: 20",
+          "C: 28",
+          "D: 56"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q36": {
+      "inputHash": "70c867ca927b7d3d8a1d5c140515be8976f749ab03ad82362f1f6e4d1fae7157",
+      "description": {
+        "en": "Question 36. An equation is 2(4x + 5) = 5(2x + 1) − 2x. Which statement about the equation is true? Choices: A: The equation has no solution. B: The equation has one solution, x = 5/2. C: The equation has one solution, x = 5/4. D: The equation has an infinite number of solutions.",
+        "es": "Pregunta 36. A continuación, se muestra una ecuación: 2(4x + 5) = 5(2x + 1) − 2x. ¿Qué afirmación sobre la ecuación es verdadera? Opciones: A: La ecuación no tiene solución. B: La ecuación tiene una sola solución, x = 5/2. C: La ecuación tiene una sola solución, x = 5/4. D: La ecuación tiene una cantidad infinita de soluciones."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2(4x + 5) = 5(2x + 1) − 2x",
+          "x = 5/2",
+          "x = 5/4",
+          "no solution",
+          "infinite number of solutions",
+          "A: The equation has no solution",
+          "B: The equation has one solution, x = 5/2",
+          "C: The equation has one solution, x = 5/4",
+          "D: The equation has an infinite number of solutions",
+          "(4x + 5)",
+          "(2x + 1)",
+          "5/2",
+          "5/4"
+        ],
+        "es": [
+          "2(4x + 5) = 5(2x + 1) − 2x",
+          "x = 5/2",
+          "x = 5/4",
+          "A: La ecuación no tiene solución",
+          "B: La ecuación tiene una sola solución, x = 5/2",
+          "C: La ecuación tiene una sola solución, x = 5/4",
+          "D: La ecuación tiene una cantidad infinita de soluciones",
+          "(4x + 5)",
+          "(2x + 1)",
+          "5/2",
+          "5/4"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q37": {
+      "inputHash": "4d9a8e5ad9c76db77d058cb7ff362f98dfba5ba545554535322e5ea15ee22e33",
+      "description": {
+        "en": "Question 37. Which table of values represents y as a linear function of x? Choices: A: A two-column table labeled x and y. The ordered pairs are (2, 4), (4, 16), (6, 36), and (8, 64). B: A two-column table labeled x and y. The ordered pairs are (2, 8), (4, 64), (6, 216), and (8, 512). C: A two-column table labeled x and y. The ordered pairs are (2, 8), (4, 32), (6, 72), and (8, 128). D: A two-column table labeled x and y. The ordered pairs are (2, 6), (4, 10), (6, 14), and (8, 18).",
+        "es": "Pregunta 37. ¿Qué tabla de valores representa a y como función lineal de x? Opciones: A: Tabla con columnas x e y. Los pares de valores son (2, 4), (4, 16), (6, 36) y (8, 64). B: Tabla con columnas x e y. Los pares de valores son (2, 8), (4, 64), (6, 216) y (8, 512). C: Tabla con columnas x e y. Los pares de valores son (2, 8), (4, 32), (6, 72) y (8, 128). D: Tabla con columnas x e y. Los pares de valores son (2, 6), (4, 10), (6, 14) y (8, 18)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "x",
+          "y",
+          "(2, 4)",
+          "(4, 16)",
+          "(6, 36)",
+          "(8, 64)",
+          "(2, 8)",
+          "(4, 64)",
+          "(6, 216)",
+          "(8, 512)",
+          "(4, 32)",
+          "(6, 72)",
+          "(8, 128)",
+          "(2, 6)",
+          "(4, 10)",
+          "(6, 14)",
+          "(8, 18)",
+          "A: A two-column table labeled x and y. The ordered pairs are (2, 4), (4, 16), (6, 36), and (8, 64)",
+          "B: A two-column table labeled x and y. The ordered pairs are (2, 8), (4, 64), (6, 216), and (8, 512)",
+          "C: A two-column table labeled x and y. The ordered pairs are (2, 8), (4, 32), (6, 72), and (8, 128)",
+          "D: A two-column table labeled x and y. The ordered pairs are (2, 6), (4, 10), (6, 14), and (8, 18)"
+        ],
+        "es": [
+          "(2, 4)",
+          "(4, 16)",
+          "(6, 36)",
+          "(8, 64)",
+          "(2, 8)",
+          "(4, 64)",
+          "(6, 216)",
+          "(8, 512)",
+          "(4, 32)",
+          "(6, 72)",
+          "(8, 128)",
+          "(2, 6)",
+          "(4, 10)",
+          "(6, 14)",
+          "(8, 18)",
+          "A: Tabla con columnas x e y. Los pares de valores son (2, 4), (4, 16), (6, 36) y (8, 64)",
+          "B: Tabla con columnas x e y. Los pares de valores son (2, 8), (4, 64), (6, 216) y (8, 512)",
+          "C: Tabla con columnas x e y. Los pares de valores son (2, 8), (4, 32), (6, 72) y (8, 128)",
+          "D: Tabla con columnas x e y. Los pares de valores son (2, 6), (4, 10), (6, 14) y (8, 18)"
+        ]
+      }
+    },
+    "nysed-2026-g8-mc-q38": {
+      "inputHash": "4d66954948f541fa3a72a5f62f6e95148b09e28a182749b88df71082db28c5aa",
+      "description": {
+        "en": "Question 38. Points A, B, C, and D are plotted on a horizontal number line with arrows extending in both directions. The labeled integer tick marks are 0, 1, 2, 3, 4, and 5. Point A is slightly to the right of 2. Point B is between 2 and 3 and slightly to the left of 3. Point C is slightly to the right of 3. Point D is at 5. Which point represents the best approximation of the value of √10? Choices: A: point A B: point B C: point C D: point D",
+        "es": "Pregunta 38. Los puntos A, B, C y D se muestran en la siguiente recta numérica. La recta numérica es horizontal, tiene flechas en ambos extremos y marcas igualmente espaciadas etiquetadas 0, 1, 2, 3, 4 y 5. El punto A está apenas a la derecha de 2. El punto B está entre 2 y 3, muy cerca de 3 y a su izquierda. El punto C está apenas a la derecha de 3. El punto D está ubicado en 5. ¿Qué punto representa la mejor aproximación al valor de √10? Opciones: A: punto A. B: punto B. C: punto C. D: punto D."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "√10",
+          "point A",
+          "point B",
+          "point C",
+          "point D",
+          "A: point A",
+          "B: point B",
+          "C: point C",
+          "D: point D"
+        ],
+        "es": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "√10",
+          "punto A",
+          "punto B",
+          "punto C",
+          "punto D",
+          "A: punto A",
+          "B: punto B",
+          "C: punto C",
+          "D: punto D"
+        ]
+      }
+    }
+  }
+}

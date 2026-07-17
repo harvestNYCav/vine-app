@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2016-grade-7-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2016-g7-mc-q1": {
+      "inputHash": "e0736a3304a64c4e423b07dab5f74f901dfe9b7661068632380ce9be8007430c",
+      "description": {
+        "en": "Question 1. The drawing of a building has a scale of 1 inch to 30 feet. The building is represented by a three-dimensional rectangular structure. Its vertical height in the drawing is labeled 1.25 in., and the width of its front face is labeled 0.75 in. What is the actual height, in feet, of the building? Choices: A: 22.5 B: 24 C: 37.5 D: 40"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1 inch to 30 feet",
+          "1.25 in",
+          "0.75 in",
+          "22.5",
+          "24",
+          "37.5",
+          "40",
+          "A: 22.5",
+          "B: 24",
+          "C: 37.5",
+          "D: 40"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q2": {
+      "inputHash": "3082d469d2e00ee79bf8e2f394c4fe2f5e34f53b9c5bf73c76c652ec06b2b873",
+      "description": {
+        "en": "Question 2. What is the value of the expression below? −0.75 − (−2/5) + 0.4 + (−3/4) Choices: A: −1.5 B: −0.7 C: 0.8 D: 2.3"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−0.75 − (−2/5) + 0.4 + (−3/4)",
+          "−2/5",
+          "−3/4",
+          "−1.5",
+          "−0.7",
+          "0.8",
+          "2.3",
+          "A: −1.5",
+          "B: −0.7",
+          "C: 0.8",
+          "D: 2.3",
+          "(−2/5)",
+          "(−3/4)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q7": {
+      "inputHash": "379c25dc23b1530e647b629c7e0608c29a00394c2d7d38243be53837126950f6",
+      "description": {
+        "en": "Question 7. Lehana and Marty each opened a savings account with a deposit of $100. Lehana earned 2.5% simple interest per year. Marty earned 2% simple interest per year. Neither of them made additional deposits or withdrawals. How much more did Lehana receive in interest than Marty after three years? Choices: A: $0.50 B: $1.50 C: $5.00 D: $15.00"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$100",
+          "2.5%",
+          "2%",
+          "three years",
+          "$0.50",
+          "$1.50",
+          "$5.00",
+          "$15.00",
+          "A: $0.50",
+          "B: $1.50",
+          "C: $5.00",
+          "D: $15.00"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q8": {
+      "inputHash": "d4f0d27464aefdd4a3b6163df5404124e2b5818507f76acd8981e9f74694df96",
+      "description": {
+        "en": "Question 8. Addison wants to ride her bicycle more than 80 miles this week. She has already ridden her bicycle 18 miles. Which inequality could be used to determine the mean number of miles, m, she would need to ride her bicycle each day for six more days to achieve her goal? Choices: A: 6m + 18 < 80 B: 6m − 18 < 80 C: 6m + 18 > 80 D: 6m − 18 > 80"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "more than 80 miles",
+          "18 miles",
+          "m",
+          "six more days",
+          "6m + 18 < 80",
+          "6m − 18 < 80",
+          "6m + 18 > 80",
+          "6m − 18 > 80",
+          "A: 6m + 18 < 80",
+          "B: 6m − 18 < 80",
+          "C: 6m + 18 > 80",
+          "D: 6m − 18 > 80",
+          "18 < 80",
+          "18 > 80"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q9": {
+      "inputHash": "201751d3a7647445236d59c6eada8c09a265257b57236b1de271016b7b142b33",
+      "description": {
+        "en": "Question 9. An electronic sign that showed the speed of motorists was installed on a road. Two line plots show the speeds of some motorists before and after the sign was installed. Both horizontal axes are labeled Speed (miles per hour), have arrows in both directions, and contain tick marks at every 1 mile per hour from 20 through 40, with numbered labels at 20, 25, 30, 35, and 40. Before sign installation, the plotted speeds are: one motorist at 20, one at 24, four at 25, two at 30, two at 35, one at 38, and one at 40 miles per hour. After sign installation, the plotted speeds are: one motorist at 20, one at 22, four at 25, one at 28, three at 30, and two at 35 miles per hour. Based on these data, which statement is true about the speeds of motorists after the sign was installed? Choices: A: The mean speed and the range of the speeds of the motorists decreased. B: The median speed and the range of the speeds of the motorists increased. C: The mean speed of the motorists decreased and the range of the speeds increased. D: The median speed of the motorists increased and the range of the speeds decreased."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20 through 40",
+          "20, 25, 30, 35, and 40",
+          "one motorist at 20, one at 24, four at 25, two at 30, two at 35, one at 38, and one at 40",
+          "one motorist at 20, one at 22, four at 25, one at 28, three at 30, and two at 35",
+          "mean speed",
+          "median speed",
+          "range",
+          "A: The mean speed and the range of the speeds of the motorists decreased",
+          "B: The median speed and the range of the speeds of the motorists increased",
+          "C: The mean speed of the motorists decreased and the range of the speeds increased",
+          "D: The median speed of the motorists increased and the range of the speeds decreased"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q10": {
+      "inputHash": "24e95ad136b3417effdb9178eb6cc44ea88ffc176361e82ea4f51dbe671b86d0",
+      "description": {
+        "en": "Question 10. A number, n, is multiplied by −5/8. The product is −0.4. What is the value of n? Choices: A: −16/25 B: −1/4 C: 1/4 D: 16/25"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "n",
+          "−5/8",
+          "−0.4",
+          "−16/25",
+          "−1/4",
+          "1/4",
+          "16/25",
+          "A: −16/25",
+          "B: −1/4",
+          "C: 1/4",
+          "D: 16/25",
+          "5/8"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q11": {
+      "inputHash": "b1147e264740e7df4c6f1cc8313973858c20127f60da7c19bf096b801ee948fd",
+      "description": {
+        "en": "Question 11. The perimeter of a certain pentagon is 10.5 centimeters. Four sides of this pentagon have the same length, in centimeters, h, and the other side has a length of 1.7 centimeters. The pentagon diagram labels four sides h and the remaining upper-left side 1.7 cm. What is the value of h? Choices: A: 2.2 B: 3.7 C: 4.8 D: 8.8"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10.5 centimeters",
+          "h",
+          "1.7 centimeters",
+          "1.7 cm",
+          "2.2",
+          "3.7",
+          "4.8",
+          "8.8",
+          "A: 2.2",
+          "B: 3.7",
+          "C: 4.8",
+          "D: 8.8"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q12": {
+      "inputHash": "ba986af4a993764acc55e5c358bcd5faec481a062973e0d7b509f022db65f80c",
+      "description": {
+        "en": "Question 12. A school principal wants to determine which type of speaker the students prefer to invite to an assembly for the entire student population. Which survey method would produce the best representative sample? Choices: A: survey every fifth person who shops at a mall B: survey all of the students on the student council C: survey every tenth student entering the school one morning D: survey all of the students who went to the last basketball game"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "every fifth person",
+          "all of the students on the student council",
+          "every tenth student",
+          "all of the students who went to the last basketball game",
+          "A: survey every fifth person who shops at a mall",
+          "B: survey all of the students on the student council",
+          "C: survey every tenth student entering the school one morning",
+          "D: survey all of the students who went to the last basketball game"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q13": {
+      "inputHash": "cccdb12ddba3e7b12b293c7813a4df9a1932a49e102df80e90162b65282c4c0e",
+      "description": {
+        "en": "Question 13. Henry has a fair number pyramid with four faces and a spinner with three equal-sized colored sections. The possible outcomes are represented by branching diagrams. The Number Pyramid has four possible outcomes labeled 1, 2, 3, and 4. The Spinner has three possible outcomes labeled Red, Blue, and Green. What is the probability that the number pyramid will land on three and the spinner will stop on blue? Choices: A: 1/12. B: 3/12. C: 4/12. D: 7/12."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "Red",
+          "Blue",
+          "Green",
+          "1/12",
+          "3/12",
+          "4/12",
+          "7/12",
+          "A: 1/12",
+          "B: 3/12",
+          "C: 4/12",
+          "D: 7/12"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q14": {
+      "inputHash": "32ea10c73266312a5827c5d332444bdd52ce05f2e361622d9d145a34fe509ec5",
+      "description": {
+        "en": "Question 14. A company ordered 10 boxed lunches from a deli for $74.50. Each boxed lunch cost the same amount. Which equation represents the proportional relationship between y, the total cost of the boxed lunches, and x, the number of boxed lunches? Choices: A: 7.45x = y. B: 7.45/x = 10/y. C: 74.50x = y. D: 74.50/x = 10/y."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10",
+          "$74.50",
+          "7.45x = y",
+          "7.45/x = 10/y",
+          "74.50x = y",
+          "74.50/x = 10/y",
+          "A: 7.45x = y",
+          "B: 7.45/x = 10/y",
+          "C: 74.50x = y",
+          "D: 74.50/x = 10/y"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q15": {
+      "inputHash": "12586b6c4181245544d6a3669db8cdf2f7e22f4e8d01160eeb5069bd0468bf0d",
+      "description": {
+        "en": "Question 15. What is the value of the expression (2/3 − 5/6) ÷ (3/4)? Choices: A: −2/9. B: −1/8. C: 1/8. D: 2/9."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2/3 − 5/6) ÷ (3/4)",
+          "−2/9",
+          "−1/8",
+          "1/8",
+          "2/9",
+          "A: −2/9",
+          "B: −1/8",
+          "C: 1/8",
+          "D: 2/9",
+          "(2/3 − 5/6)",
+          "(3/4)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q16": {
+      "inputHash": "f46ab69d5c2e9117c5a354572fb8c0be48d1cc18eac7e8af55ee9a754928a90a",
+      "description": {
+        "en": "Question 16. Which event is most likely to occur? Choices: A: flipping a fair coin, with sides labeled heads and tails, and the coin landing on tails. B: choosing a marble out of a bag, with nine blue marbles and one red marble, and the marble being red. C: rolling a fair number cube, with faces labeled one to six, and the cube landing on a number less than six. D: spinning the arrow on a spinner, with four equal sectors labeled one to four, and the arrow landing on a number greater than one."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "nine blue marbles",
+          "one red marble",
+          "one to six",
+          "less than six",
+          "four equal sectors",
+          "one to four",
+          "greater than one",
+          "A: flipping a fair coin, with sides labeled heads and tails, and the coin landing on tails",
+          "B: choosing a marble out of a bag, with nine blue marbles and one red marble, and the marble being red",
+          "C: rolling a fair number cube, with faces labeled one to six, and the cube landing on a number less than six",
+          "D: spinning the arrow on a spinner, with four equal sectors labeled one to four, and the arrow landing on a number greater than one"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q20": {
+      "inputHash": "2ef58d102e59a540bad514dbca43eeb96a84a585c4362c4b86497536daf14e81",
+      "description": {
+        "en": "Question 20. A trailer will be used to transport several 40-kilogram crates to a store. The greatest amount of weight that can be loaded onto the trailer is 1,050 kilograms. An 82-kilogram crate has already been loaded onto the trailer. What is the greatest number of 40-kilogram crates that can also be loaded onto the trailer? Choices: A: 24. B: 25. C: 26. D: 27."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "40-kilogram",
+          "1,050 kilograms",
+          "82-kilogram",
+          "24",
+          "25",
+          "26",
+          "27",
+          "A: 24",
+          "B: 25",
+          "C: 26",
+          "D: 27"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q21": {
+      "inputHash": "e24df565bbb4dbc5d8e395c19b6a0cce198421d61996fae5f0132eebce3a0146",
+      "description": {
+        "en": "Question 21. What is the value of the expression 8/15 ÷ (−0.35)? Choices: A: −75/14. B: −32/21. C: −21/32. D: −14/75."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8/15 ÷ (−0.35)",
+          "−75/14",
+          "−32/21",
+          "−21/32",
+          "−14/75",
+          "A: −75/14",
+          "B: −32/21",
+          "C: −21/32",
+          "D: −14/75",
+          "8/15",
+          "(−0.35)",
+          "75/14",
+          "32/21",
+          "21/32",
+          "14/75"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q22": {
+      "inputHash": "0fe2f515727b25c0f2dc680a5889057f59cc460e8ae022e607efaa1e85555cef",
+      "description": {
+        "en": "Question 22. What is the value of the expression below? (3 1/2 − 9 3/4) ÷ (−2.5). Choices: A: −2.5. B: −2.3. C: 2.3. D: 2.5."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(3 1/2 − 9 3/4) ÷ (−2.5)",
+          "−2.5",
+          "−2.3",
+          "2.3",
+          "2.5",
+          "A: −2.5",
+          "B: −2.3",
+          "C: 2.3",
+          "D: 2.5",
+          "(3 1/2 − 9 3/4)",
+          "(−2.5)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q27": {
+      "inputHash": "ccc041d31aa1d6ed76294eeddc7d63b00a9f6e367932f1deeeeb10762fe46878",
+      "description": {
+        "en": "Question 27. Which expression is equivalent to 4 − (−7)? Choices: A: 7 + 4. B: 4 − 7. C: −7 − 4. D: −4 + 7."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4 − (−7)",
+          "7 + 4",
+          "4 − 7",
+          "−7 − 4",
+          "−4 + 7",
+          "A: 7 + 4",
+          "B: 4 − 7",
+          "C: −7 − 4",
+          "D: −4 + 7",
+          "(−7)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q28": {
+      "inputHash": "3ed1932c229ac8cda3043f478313235bb54b8e8673b7cc8ddacb888c538aa25a",
+      "description": {
+        "en": "Question 28. The elevation at ground level is 0 feet. An elevator starts 90 feet below ground level. After traveling for 15 seconds, the elevator is 20 feet below ground level. Which statement describes the elevator’s rate of change in elevation during this 15-second interval? Choices: A: The elevator traveled upward at a rate of 6 feet per second. B: The elevator traveled upward at a rate of 4 2/3 feet per second. C: The elevator traveled downward at a rate of 6 feet per second. D: The elevator traveled downward at a rate of 4 2/3 feet per second."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "0 feet",
+          "90 feet",
+          "15 seconds",
+          "20 feet",
+          "15-second",
+          "6 feet per second",
+          "4 2/3 feet per second",
+          "A: The elevator traveled upward at a rate of 6 feet per second",
+          "B: The elevator traveled upward at a rate of 4 2/3 feet per second",
+          "C: The elevator traveled downward at a rate of 6 feet per second",
+          "D: The elevator traveled downward at a rate of 4 2/3 feet per second",
+          "4 2/3"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q29": {
+      "inputHash": "58e095a363570d8337134d5b44a92f12f8b9b4f5991510c90d2f854a865086a8",
+      "description": {
+        "en": "Question 29. Which expression represents the product of 3 and (5/4 n + 1.8)? Choices: A: 5.55n B: 9.15n C: 3.75n + 1.8 D: 3.75n + 5.4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "3",
+          "(5/4 n + 1.8)",
+          "5.55n",
+          "9.15n",
+          "3.75n + 1.8",
+          "3.75n + 5.4",
+          "A: 5.55n",
+          "B: 9.15n",
+          "C: 3.75n + 1.8",
+          "D: 3.75n + 5.4"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q33": {
+      "inputHash": "c5473ff5396011c0452c02cc9fb4e3dfc5277b37a95b584cfc1bd84856a2409b",
+      "description": {
+        "en": "Question 33. Mike took a taxi from his home to the airport. The taxi driver charged an initial fee of $6 plus $3 per mile. The total fare was $24, not including the tip. How many miles did Mike travel by taxi on this ride? Choices: A: 2 B: 6 C: 8 D: 10"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$6",
+          "$3 per mile",
+          "$24",
+          "2",
+          "6",
+          "8",
+          "10",
+          "A: 2",
+          "B: 6",
+          "C: 8",
+          "D: 10"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q34": {
+      "inputHash": "2bdf55aaeb0548b9bf554948fedaf294d1cbe8c22cfdaf1fc1bf10c9d57c9cd3",
+      "description": {
+        "en": "Question 34. The original selling price of a share of stock was d dollars. The selling price for a share of the same stock at a later date was represented by the expression 1.15(0.95d). Which description could explain what happened to the price of the share of stock? Choices: A: The price decreased by 5% and then increased by 0.15%. B: The price decreased by 95% and then increased by 0.15%. C: The price decreased by 5% and then increased by 15%. D: The price decreased by 95% and then increased by 15%."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "d",
+          "1.15(0.95d)",
+          "5%",
+          "0.15%",
+          "95%",
+          "15%",
+          "A: The price decreased by 5% and then increased by 0.15%",
+          "B: The price decreased by 95% and then increased by 0.15%",
+          "C: The price decreased by 5% and then increased by 15%",
+          "D: The price decreased by 95% and then increased by 15%",
+          "(0.95d)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q35": {
+      "inputHash": "71a16e1dd3852bfe04a47b27640ac3507d9db5a3e7a0da17a9886d18592e3471",
+      "description": {
+        "en": "Question 35. A clothing store used a sign to advertise a discount on shirts. The rectangular sign reads: “DISCOUNT. Buy Two Shirts. Get 50% Off Third Shirt.” Ky wants to buy three shirts, which were originally priced $49.96 each. The store will discount the price of the third shirt and then apply a 7.1% tax to the total cost of all three shirts. Including the tax, what will be the mean cost of each shirt? Choices: A: $41.99 B: $42.70 C: $44.59 D: $45.18"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "50% Off Third Shirt",
+          "$49.96",
+          "7.1%",
+          "$41.99",
+          "$42.70",
+          "$44.59",
+          "$45.18",
+          "A: $41.99",
+          "B: $42.70",
+          "C: $44.59",
+          "D: $45.18"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q36": {
+      "inputHash": "7689ec146324fbf0e991231c23777cbb324d9eefd0cf5fc6b20e64ddfab3d1ea",
+      "description": {
+        "en": "Question 36. The results for a survey of 120 students who were selected randomly are listed: 60 students have a cell phone plan with company X; 36 students have a cell phone plan with company Y; and 24 students do not have a cell phone. The total population of students was 380. Based on the data, what is the best approximation for the total number of students who have a cell phone plan with company Y? Choices: A: 114 B: 127 C: 143 D: 163"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "120 students",
+          "60 students",
+          "company X",
+          "36 students",
+          "company Y",
+          "24 students",
+          "380",
+          "114",
+          "127",
+          "143",
+          "163",
+          "A: 114",
+          "B: 127",
+          "C: 143",
+          "D: 163"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q37": {
+      "inputHash": "de5aa7d558854c54de0f13a02bf80dece939154277665269fd8e2901b8aa0bcd",
+      "description": {
+        "en": "Question 37. Wallpaper was applied to one rectangular wall of a large room. A rectangular diagram labels the horizontal length as 42 feet and the vertical height as 25.5 feet. If the total cost of the wallpaper was $771.12, what was the cost, in dollars, of the wallpaper per square foot? Choices: A: $0.61 B: $0.72 C: $1.39 D: $1.65"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "42 feet",
+          "25.5 feet",
+          "$771.12",
+          "$0.61",
+          "$0.72",
+          "$1.39",
+          "$1.65",
+          "A: $0.61",
+          "B: $0.72",
+          "C: $1.39",
+          "D: $1.65"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q38": {
+      "inputHash": "bb09b35d519ded4689ac74836169aab8b5b52b04371708ec6cfbbdfcfa3832b8",
+      "description": {
+        "en": "Question 38. Three friends own a landscaping business. The number of hours each friend spent on the same project is given in a table titled “HOURS WORKED ON LANDSCAPING PROJECT.” The columns are “Name” and “Hours Worked.” The rows are: Edgar, 17 1/4; Kelly, 18 1/4; Shawn, 14 1/2. In total, they earned $850 for the job. They put 15% of this amount into a joint savings account for future expenses. They then divided the rest proportionally based on the number of hours each one worked. How much money did Shawn receive? Choices: A: $209.53 B: $240.83 C: $283.48 D: $295.11"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "17 1/4",
+          "18 1/4",
+          "14 1/2",
+          "$850",
+          "15%",
+          "$209.53",
+          "$240.83",
+          "$283.48",
+          "$295.11",
+          "A: $209.53",
+          "B: $240.83",
+          "C: $283.48",
+          "D: $295.11"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q39": {
+      "inputHash": "af2e71376327da8d7cb6936ddc4d2bad99a8b2511d0703489e97552693e466f8",
+      "description": {
+        "en": "Question 39. Line KN represents a proportional relationship. Point N lies at (18, 12), as represented on a coordinate plane. The x-axis is labeled x and marked from 0 to 20 in increments of 2. The y-axis is labeled y and marked from 0 to 14 in increments of 2; the grid extends above 14. Point N is plotted at x = 18 and y = 12. Which ordered pair could represent the coordinates of point K? Choices: A: (6, 0) B: (2, 3) C: (1.5, 0) D: (7.5, 5)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "KN",
+          "(18, 12)",
+          "x = 18",
+          "y = 12",
+          "(6, 0)",
+          "(2, 3)",
+          "(1.5, 0)",
+          "(7.5, 5)",
+          "A: (6, 0)",
+          "B: (2, 3)",
+          "C: (1.5, 0)",
+          "D: (7.5, 5)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q40": {
+      "inputHash": "acf2dec026f1b9eb2cd97734f9686920aed9eb4a180f0b6e61e42692a0962ead",
+      "description": {
+        "en": "Question 40. Which expression is equivalent to the expression −3(4x − 2) − 2x? Choices: A: −8x B: −16x C: −14x − 2 D: −14x + 6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−3(4x − 2) − 2x",
+          "−8x",
+          "−16x",
+          "−14x − 2",
+          "−14x + 6",
+          "A: −8x",
+          "B: −16x",
+          "C: −14x − 2",
+          "D: −14x + 6",
+          "(4x − 2)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q41": {
+      "inputHash": "17586542f8e1eb2917d8c7dc7d482192432513b11b8061e02abfb1a210bdccbc",
+      "description": {
+        "en": "Question 41. Maya uses blue and orange fabric to make identical wall decorations. A coordinate graph titled “FABRIC AMOUNTS” represents the relationship between the amounts of blue and orange fabric used. The horizontal x-axis is labeled “Orange Fabric (yards)” and is numbered 0.2, 0.4, 0.6, 0.8, and 1.0. The vertical y-axis is labeled “Blue Fabric (yards)” and is numbered 0.1, 0.2, 0.3, 0.4, and 0.5. A straight ray begins at the origin (0, 0), rises to the right through the grid intersection (0.7, 0.3), and continues with an arrow. No individual data points are marked on the ray. What is the constant of proportionality as represented in the graph? Choices: A: 3/10 B: 2/5 C: 3/7 D: 1/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 0)",
+          "through the grid intersection (0.7, 0.3)",
+          "No individual data points are marked on the ray",
+          "3/10",
+          "2/5",
+          "3/7",
+          "1/2",
+          "A: 3/10",
+          "B: 2/5",
+          "C: 3/7",
+          "D: 1/2"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q42": {
+      "inputHash": "5737132afb03d2da4514244b51e0e057a51b6a827a964c8504d07e5186e5f0ef",
+      "description": {
+        "en": "Question 42. Lance bought n notebooks that cost $0.75 each and p pens that cost $0.55 each. A 6.25% sales tax will be applied to the total cost. Which expression represents the total amount Lance paid, including tax? Choices: A: 0.0625(n + p) + 0.0625(0.75n + 0.55p) B: (0.75n + 0.55p) + 0.0625(0.75n + 0.55p) C: 0.75(0.0625n) + 0.55(0.0625n) D: 0.75(1.0625n) + 0.55(1.0625n)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "$0.75",
+          "$0.55",
+          "6.25%",
+          "0.0625(n + p) + 0.0625(0.75n + 0.55p)",
+          "(0.75n + 0.55p) + 0.0625(0.75n + 0.55p)",
+          "0.75(0.0625n) + 0.55(0.0625n)",
+          "0.75(1.0625n) + 0.55(1.0625n)",
+          "A: 0.0625(n + p) + 0.0625(0.75n + 0.55p)",
+          "B: (0.75n + 0.55p) + 0.0625(0.75n + 0.55p)",
+          "C: 0.75(0.0625n) + 0.55(0.0625n)",
+          "D: 0.75(1.0625n) + 0.55(1.0625n)",
+          "(0.75n + 0.55p)",
+          "(0.0625n)",
+          "(1.0625n)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q43": {
+      "inputHash": "af852fa1d8af45e268ca99b9d56b9bf02321a743164ca39dde61793738ad72bb",
+      "description": {
+        "en": "Question 43. A recycling plant processes an average of 1/3 ton of glass each minute. At approximately what rate does the recycling plant process glass, in tons per day? (1 day = 24 hours) Choices: A: 20 B: 180 C: 480 D: 4,320"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "1 day = 24 hours",
+          "20",
+          "180",
+          "480",
+          "4,320",
+          "A: 20",
+          "B: 180",
+          "C: 480",
+          "D: 4,320",
+          "(1 day = 24 hours)"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q44": {
+      "inputHash": "b3ac93553e12e13fe60eb22df4f64a6ff2cf03379189ac298ff3708ae04da656",
+      "description": {
+        "en": "Question 44. When Keisha installed a fence along the 200-foot perimeter of her rectangular back yard, she left an opening for a gate. She used x to represent the length, in feet, of the gate. A rectangular diagram labeled “Back Yard” has a height of 30 ft. Along the bottom side, the gate opening at the left has length x, and the remaining segment from the right edge of the gate to the bottom-right corner has length 60 ft. Thus, the full horizontal side consists of the gate length x plus 60 ft. What is the value of x? Choices: A: 10 B: 20 C: 25 D: 30"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "200-foot",
+          "x",
+          "30 ft",
+          "60 ft",
+          "10",
+          "20",
+          "25",
+          "30",
+          "A: 10",
+          "B: 20",
+          "C: 25",
+          "D: 30"
+        ]
+      }
+    },
+    "nysed-2016-g7-mc-q45": {
+      "inputHash": "55badfebebf460ad6d0493fa6fce2487af94fa12c1cfb1f4ff75553495bee65d",
+      "description": {
+        "en": "Question 45. Last year 950 people attended a town’s annual parade. This year 1,520 people attended. What was the percent increase in attendance from last year to this year? Choices: A: 37.5% B: 57.0% C: 60.0% D: 62.5%"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "950",
+          "1,520",
+          "37.5%",
+          "57.0%",
+          "60.0%",
+          "62.5%",
+          "A: 37.5%",
+          "B: 57.0%",
+          "C: 60.0%",
+          "D: 62.5%"
+        ]
+      }
+    }
+  }
+}

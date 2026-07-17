@@ -33,6 +33,14 @@ type FinalResult = {
   percentage: number
 }
 
+function explanationSourceLabel(source: ElaExplanationSource) {
+  if (source === 'official-nysed') return 'Official NYSED rationale'
+  if (source === 'official-nysed-corrected') {
+    return 'Official NYSED rationale, corrected by Vine'
+  }
+  return 'Vine explanation'
+}
+
 export default function ExamPracticeClient({
   exam,
   section,
@@ -325,9 +333,7 @@ export default function ExamPracticeClient({
               {feedback.correct ? 'Correct!' : `The correct answer is ${feedback.correctAnswer}.`}
             </p>
             <p className="mt-3 text-xs font-bold uppercase tracking-wider text-gray-500">
-              {feedback.explanationSource === 'official-nysed'
-                ? 'Official NYSED rationale'
-                : 'Vine explanation'}
+              {explanationSourceLabel(feedback.explanationSource)}
             </p>
             <p className="mt-1 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
             <button

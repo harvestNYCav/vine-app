@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2023-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2023-g4-mc-q1": {
+      "inputHash": "beba431197c900632f4b3f9de66750a46d05c46d6dc755f99433b2504ce09e1f",
+      "description": {
+        "en": "Question 1. Which value is equivalent to 700,000 + 5,000 + 200 + 10 + 9? Choices: A: 705,209; B: 705,219; C: 750,209; D: 750,219.",
+        "es": "Pregunta 1. ¿Qué valor es equivalente a 700,000 + 5,000 + 200 + 10 + 9? Opciones: A: 705,209; B: 705,219; C: 750,209; D: 750,219."
+      }
+    },
+    "nysed-2023-g4-mc-q2": {
+      "inputHash": "924c737dd7c08804efba21bb50a29286defaa35a1a914f37b781d459fb715751",
+      "description": {
+        "en": "Question 2. Jen runs 8 laps. Carol runs 2 times as many. Which equation determines Carol’s laps? Choices: A: 8 + 2 = ?; B: 8 − 2 = ?; C: 8 ÷ 2 = ?; D: 8 × 2 = ?.",
+        "es": "Pregunta 2. Jen corre 8 vueltas. Carol corre 2 veces esa cantidad. ¿Qué ecuación determina las vueltas de Carol? Opciones: A: 8 + 2 = ?; B: 8 − 2 = ?; C: 8 ÷ 2 = ?; D: 8 × 2 = ?."
+      }
+    },
+    "nysed-2023-g4-mc-q5": {
+      "inputHash": "c60dc109960b63cacc8bfaae1b1cb2e72648ab62d3f9f9ef787272304f219054",
+      "description": {
+        "en": "Question 5. What is the product of 432 and 6? Choices: A: 2,482; B: 2,492; C: 2,582; D: 2,592.",
+        "es": "Pregunta 5. ¿Cuál es el producto de 432 y 6? Opciones: A: 2,482; B: 2,492; C: 2,582; D: 2,592."
+      }
+    },
+    "nysed-2023-g4-mc-q6": {
+      "inputHash": "1c4bb72944278a143a149fd363a638a843c5f5a67be2c25cb7e09368d0899bbf",
+      "description": {
+        "en": "Question 6. Which statement about an acute triangle is true? Choices: A: one angle is exactly 90 degrees; B: one angle is greater than 90 degrees; C: each angle is less than 90 degrees; D: each angle is greater than 90 degrees.",
+        "es": "Pregunta 6. ¿Qué afirmación sobre un triángulo agudo es verdadera? Opciones: A: un ángulo mide exactamente 90 grados; B: un ángulo mide más de 90 grados; C: cada ángulo mide menos de 90 grados; D: cada ángulo mide más de 90 grados."
+      }
+    },
+    "nysed-2023-g4-mc-q9": {
+      "inputHash": "3def23603df686e5b05792ab33cac52a2b2e078dfaa2868ed6031880b75fad00",
+      "description": {
+        "en": "Question 9. A measurement bracket beneath a pencil spans 4 1/4 inches from end to end. What is the pencil’s length? Choices: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2 inches.",
+        "es": "Pregunta 9. Un corchete de medición debajo de un lápiz abarca 4 1/4 pulgadas de extremo a extremo. ¿Cuál es la longitud del lápiz? Opciones: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2 pulgadas."
+      }
+    },
+    "nysed-2023-g4-mc-q10": {
+      "inputHash": "2eebc423d382f8e3f23ad2afd849b27087aa64536ca739dd736992269851ecff",
+      "description": {
+        "en": "Question 10. Which mixed number is equivalent to 13/3? Choices: A: 3 1/3; B: 3 2/3; C: 4 1/3; D: 4 2/3.",
+        "es": "Pregunta 10. ¿Qué número mixto es equivalente a 13/3? Opciones: A: 3 1/3; B: 3 2/3; C: 4 1/3; D: 4 2/3."
+      }
+    },
+    "nysed-2023-g4-mc-q13": {
+      "inputHash": "8ef85b11294cf211d7b575b6b5968d92c42222812443dd8dceecd17d689d8128",
+      "description": {
+        "en": "Question 13. A line plot of ten plant heights has three X marks at 5, two at 6, four at 6 1/2, and one at 7 1/2 inches. What is the tallest-minus-shortest difference? Choices: A: 2 1/2; B: 3; C: 4; D: 6 1/2 inches.",
+        "es": "Pregunta 13. Un diagrama de diez alturas tiene tres X en 5, dos en 6, cuatro en 6 1/2 y una en 7 1/2 pulgadas. ¿Cuál es la diferencia entre la mayor y la menor? Opciones: A: 2 1/2; B: 3; C: 4; D: 6 1/2 pulgadas."
+      }
+    },
+    "nysed-2023-g4-mc-q17": {
+      "inputHash": "a4bad8a9d7bfa2322d3112e362beb804692cfca6c84a7d1a3e9e23e112d65bdf",
+      "description": {
+        "en": "Question 17. What is the rule for the pattern 64, 32, 16, 8, and so on? Choices: A: subtract 8; B: divide by 2; C: divide by 8; D: multiply by 2.",
+        "es": "Pregunta 17. ¿Cuál es la regla del patrón 64, 32, 16, 8 y así sucesivamente? Opciones: A: restar 8; B: dividir por 2; C: dividir por 8; D: multiplicar por 2."
+      }
+    },
+    "nysed-2023-g4-mc-q19": {
+      "inputHash": "af368058fbc1383fa233f674221de154e6822e91664b067e9bb3089898dff64b",
+      "description": {
+        "en": "Question 19. What value makes ? × 3/6 = 15 × 1/6 true? Choices: A: 3; B: 5; C: 12; D: 18.",
+        "es": "Pregunta 19. ¿Qué valor hace verdadera la ecuación ? × 3/6 = 15 × 1/6? Opciones: A: 3; B: 5; C: 12; D: 18."
+      }
+    },
+    "nysed-2023-g4-mc-q20": {
+      "inputHash": "6faca3e87bc019a72862aba81bf6498065177bfd01a3373f85c0f82483bf63c0",
+      "description": {
+        "en": "Question 20. Tiffany has 5 times as many red apples as green apples. If she has 20 red apples, how many green apples does she have? Choices: A: 4; B: 15; C: 25; D: 100.",
+        "es": "Pregunta 20. Tiffany tiene 5 veces tantas manzanas rojas como verdes. Si tiene 20 manzanas rojas, ¿cuántas verdes tiene? Opciones: A: 4; B: 15; C: 25; D: 100."
+      }
+    },
+    "nysed-2023-g4-mc-q23": {
+      "inputHash": "2fd48787e46895470aea9b0e2ece403f8b2d2d243113cf7829e25da180ca6819",
+      "description": {
+        "en": "Question 23. Which figure appears to have exactly two lines of symmetry? Choices: A: a horizontal non-square rectangle; B: a regular hexagon with flat top and bottom; C: a regular-looking pentagon with one top vertex; D: a square.",
+        "es": "Pregunta 23. ¿Qué figura parece tener exactamente dos ejes de simetría? Opciones: A: un rectángulo horizontal que no es cuadrado; B: un hexágono regular con arriba y abajo planos; C: un pentágono de aspecto regular con un vértice superior; D: un cuadrado."
+      }
+    },
+    "nysed-2023-g4-mc-q25": {
+      "inputHash": "5323b965e5758a77e960cdaec6c105949b330da72638af1c677da13a96eadaae",
+      "description": {
+        "en": "Question 25. Which angle measures 60 degrees? Choices: A: a very narrow acute angle of about 6 degrees; B: a right angle; C: an obtuse angle of about 120 degrees; D: an acute angle of about 60 degrees.",
+        "es": "Pregunta 25. ¿Qué ángulo mide 60 grados? Opciones: A: un ángulo agudo muy estrecho de unos 6 grados; B: un ángulo recto; C: un ángulo obtuso de unos 120 grados; D: un ángulo agudo de unos 60 grados."
+      }
+    },
+    "nysed-2023-g4-mc-q29": {
+      "inputHash": "a3fcfca3d294667ced6618e664982f58d5300edbf817014efa30d12266397445",
+      "description": {
+        "en": "Question 29. A rectangle is divided into 4 equal parts in a 2-by-2 grid, with both bottom parts shaded. Which fraction is equivalent to the shaded part? Choices: A: 4/2; B: 2/1; C: 1/2; D: 1/4.",
+        "es": "Pregunta 29. Un rectángulo está dividido en 4 partes iguales en una cuadrícula de 2 por 2, con las dos partes inferiores sombreadas. ¿Qué fracción equivale a la parte sombreada? Opciones: A: 4/2; B: 2/1; C: 1/2; D: 1/4."
+      }
+    },
+    "nysed-2023-g4-mc-q30": {
+      "inputHash": "5c27dd280205fc6ab417441e63ef3cc86f519972744c001335da7e786a7f5ac4",
+      "description": {
+        "en": "Question 30. What is the value of 7,225 ÷ 6? Choices: A: 1,204; B: 1,204 remainder 1; C: 1,205; D: 1,205 remainder 1.",
+        "es": "Pregunta 30. ¿Cuál es el valor de 7,225 ÷ 6? Opciones: A: 1,204; B: 1,204, residuo 1; C: 1,205; D: 1,205, residuo 1."
+      }
+    },
+    "nysed-2023-g4-mc-q31": {
+      "inputHash": "166336f13882c51596bab0ef7f5fda5f38bcf968baf4b06e2091e9a017845f99",
+      "description": {
+        "en": "Question 31. In which triangle does the dotted line appear to be a line of symmetry? Choices: A: a sideways scalene triangle, line through its upper-right vertex; B: an equilateral-looking triangle, line from the midpoint of its left side through the opposite vertex; C: a right triangle, horizontal line through it; D: a scalene triangle, diagonal line through its lower-right vertex.",
+        "es": "Pregunta 31. ¿En qué triángulo la línea punteada parece ser un eje de simetría? Opciones: A: triángulo escaleno de lado, línea por el vértice superior derecho; B: triángulo de aspecto equilátero, línea desde el punto medio del lado izquierdo al vértice opuesto; C: triángulo rectángulo, línea horizontal; D: triángulo escaleno, línea diagonal por el vértice inferior derecho."
+      }
+    },
+    "nysed-2023-g4-mc-q32": {
+      "inputHash": "c8afff34731385570f72e13c4be5b731b3cdcb3f47474665804533d224956968",
+      "description": {
+        "en": "Question 32. Which comparison is true? Choices: A: 1/4 < 2/8; B: 1/3 > 3/6; C: 3/6 = 5/8; D: 2/3 = 4/6.",
+        "es": "Pregunta 32. ¿Qué comparación es verdadera? Opciones: A: 1/4 < 2/8; B: 1/3 > 3/6; C: 3/6 = 5/8; D: 2/3 = 4/6."
+      }
+    },
+    "nysed-2023-g4-mc-q33": {
+      "inputHash": "4865688d94a9943ed2820bf1d505aa91fd13517bf6fb0513479ff2b790c4a482",
+      "description": {
+        "en": "Question 33. A triangle has a horizontal base and a vertical right side that meet at a right angle. Which statement is true? Choices: A: all angles appear acute; B: all angles appear obtuse; C: two sides appear parallel; D: two sides appear perpendicular.",
+        "es": "Pregunta 33. Un triángulo tiene una base horizontal y un lado derecho vertical que se unen en ángulo recto. ¿Qué afirmación es verdadera? Opciones: A: todos los ángulos parecen agudos; B: todos parecen obtusos; C: dos lados parecen paralelos; D: dos lados parecen perpendiculares."
+      }
+    },
+    "nysed-2023-g4-mc-q34": {
+      "inputHash": "e9ed3cf22f368de9fe545833609d65459746721341c6db8bded9a3dd19b3233f",
+      "description": {
+        "en": "Question 34. Tim has 3 packs of 12 markers. Which equation finds his total number of markers, n? Choices: A: 12 × n = 3; B: 3 × 12 = n; C: 3 ÷ n = 12; D: 12 ÷ 3 = n.",
+        "es": "Pregunta 34. Tim tiene 3 paquetes de 12 marcadores. ¿Qué ecuación halla el total, n? Opciones: A: 12 × n = 3; B: 3 × 12 = n; C: 3 ÷ n = 12; D: 12 ÷ 3 = n."
+      }
+    },
+    "nysed-2023-g4-mc-q35": {
+      "inputHash": "9ce8aa98b3511b0f762ac3e7d1b82a4afae40b2cd406f65ac280b314eb850978",
+      "description": {
+        "en": "Question 35. What is the value of 24 × 11? Choices: A: 35; B: 48; C: 264; D: 364.",
+        "es": "Pregunta 35. ¿Cuál es el valor de 24 × 11? Opciones: A: 35; B: 48; C: 264; D: 364."
+      }
+    }
+  }
+}

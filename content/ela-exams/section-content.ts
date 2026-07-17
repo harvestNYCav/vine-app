@@ -275,6 +275,10 @@ export function buildElaExamSection(
   focusSkill: ElaSkill,
 ): ElaExamSectionDefinition {
   const lesson = getElaSkillLesson(focusSkill, grade)
+  const skillLessons = input.skills.map(skill => ({
+    skill,
+    ...getElaSkillLesson(skill, grade),
+  }))
   return {
     slug: `questions-${input.questionStart}-${input.questionEnd}`,
     stimulusId: input.stimulusId,
@@ -285,6 +289,7 @@ export function buildElaExamSection(
     passageReferences: input.passageReferences,
     focusSkill,
     skills: input.skills,
+    skillLessons,
     standards: input.standards,
     emoji: lesson.emoji,
     title: `${input.passageLabel}: ${lesson.title}`,

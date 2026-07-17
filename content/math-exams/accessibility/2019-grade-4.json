@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2019-grade-4-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2019-g4-mc-q1": {
+      "inputHash": "f8cf19fab6f08eacd2671d0375a5298655a4f9720a543582dbfe79ebe611f529",
+      "description": {
+        "en": "Question 1. Tatum walks her dog 2/3 mile every day after school. How many miles does she walk her dog in 5 days? Choices: A: 7/3; B: 10/3; C: 2/15; D: 10/15.",
+        "es": "Pregunta 1. Tatum pasea a su perro 2/3 de milla cada día después de la escuela. ¿Cuántas millas lo pasea en 5 días? Opciones: A: 7/3; B: 10/3; C: 2/15; D: 10/15."
+      }
+    },
+    "nysed-2019-g4-mc-q2": {
+      "inputHash": "9f01a4fda2082a78f083c4ef742bc23ddbd7df639f0c0a4bdd2ccbcfc09e0700",
+      "description": {
+        "en": "Question 2. The number of points Jaden scored is less than 45 and is also a multiple of 7. How many points could he have scored? Choices: A: 17; B: 35; C: 52; D: 70.",
+        "es": "Pregunta 2. La cantidad de puntos que anotó Jaden es menor que 45 y también es múltiplo de 7. ¿Cuántos puntos podría haber anotado? Opciones: A: 17; B: 35; C: 52; D: 70."
+      }
+    },
+    "nysed-2019-g4-mc-q3": {
+      "inputHash": "a44844bc28d2867efa38cc10208eaf0f4048154181877a32ffaa19b5f50cc6c4",
+      "description": {
+        "en": "Question 3. Which comparison is true? Choices: A: 2/3 = 8/12; B: 4/9 = 8/9; C: 3/4 > 9/10; D: 2/4 > 2/3.",
+        "es": "Pregunta 3. ¿Qué comparación es verdadera? Opciones: A: 2/3 = 8/12; B: 4/9 = 8/9; C: 3/4 > 9/10; D: 2/4 > 2/3."
+      }
+    },
+    "nysed-2019-g4-mc-q4": {
+      "inputHash": "2237699f9cc95bceb4a5ffe6a93599d50f28c466a22cce546da10d0e29137176",
+      "description": {
+        "en": "Question 4. A baseball park has three seating sections. The red section seats 200 people; the blue section seats 20 fewer than the red; and the green section seats 2 times as many as the blue. What is the total capacity? Choices: A: 260; B: 380; C: 640; D: 740.",
+        "es": "Pregunta 4. Un parque de béisbol tiene tres secciones. La roja tiene capacidad para 200 personas; la azul, para 20 menos que la roja; y la verde, para 2 veces la cantidad de la azul. ¿Cuál es la capacidad total? Opciones: A: 260; B: 380; C: 640; D: 740."
+      }
+    },
+    "nysed-2019-g4-mc-q5": {
+      "inputHash": "e8519506bbbcbfcd4069da8df6ac14bc643fd1012dc787e8376529cf694dd4cd",
+      "description": {
+        "en": "Question 5. Which figure is an example of a line segment? Choices: A: a straight path with a dot at each endpoint; B: two rays sharing an endpoint; C: a straight line with arrows at both ends; D: a ray with one endpoint and one arrow.",
+        "es": "Pregunta 5. ¿Qué figura es un ejemplo de un segmento lineal? Opciones: A: un trayecto recto con un punto en cada extremo; B: dos semirrectas con un extremo común; C: una recta con flechas en ambos extremos; D: una semirrecta con un extremo y una flecha."
+      }
+    },
+    "nysed-2019-g4-mc-q8": {
+      "inputHash": "2a056dd7511a780ff55b57a6d766046f6269c8af204998706cc0ce10e29e47a6",
+      "description": {
+        "en": "Question 8. Which fraction model has a shaded area equivalent to 3/12? Choices: A: a bar divided into 6 equal parts with 1 shaded; B: a bar divided into 4 equal parts with 1 shaded; C: a bar divided into 3 equal parts with 1 shaded; D: a bar divided into 10 equal parts with 1 shaded.",
+        "es": "Pregunta 8. ¿Qué modelo de fracción tiene un área sombreada equivalente a 3/12? Opciones: A: una barra dividida en 6 partes iguales con 1 sombreada; B: una barra dividida en 4 partes iguales con 1 sombreada; C: una barra dividida en 3 partes iguales con 1 sombreada; D: una barra dividida en 10 partes iguales con 1 sombreada."
+      }
+    },
+    "nysed-2019-g4-mc-q9": {
+      "inputHash": "486f2bfab19f5f35884dfc30033937034e48e4f461c4cd7bb23d58a198fb82df",
+      "description": {
+        "en": "Question 9. Rays FE, FH, and FG share endpoint F, with FH inside angle EFG. Angle EFG measures 106°, and angle HFG measures 34°. What is the measure of angle EFH? Choices: A: 34; B: 56; C: 72; D: 140.",
+        "es": "Pregunta 9. Las semirrectas FE, FH y FG comparten el extremo F, y FH está dentro del ángulo EFG. El ángulo EFG mide 106° y el ángulo HFG mide 34°. ¿Cuánto mide el ángulo EFH? Opciones: A: 34; B: 56; C: 72; D: 140."
+      }
+    },
+    "nysed-2019-g4-mc-q15": {
+      "inputHash": "2f12e66da35bc67c430b7eb1ff23543a3533039d0eddc2ef116227e1cb5250ea",
+      "description": {
+        "en": "Question 15. What is the value of 2,816 × 7? Choices: A: 14,572; B: 14,672; C: 19,612; D: 19,712.",
+        "es": "Pregunta 15. ¿Cuál es el valor de 2,816 × 7? Opciones: A: 14,572; B: 14,672; C: 19,612; D: 19,712."
+      }
+    },
+    "nysed-2019-g4-mc-q16": {
+      "inputHash": "75c23836f2aa4d7242ee8d5593b6149faf747d870eb94b1bbbabb4bbb70f33de",
+      "description": {
+        "en": "Question 16. What is the quotient for 2,314 ÷ 4? Choices: A: 508; B: 508 remainder 2; C: 578; D: 578 remainder 2.",
+        "es": "Pregunta 16. ¿Cuál es el cociente de 2,314 ÷ 4? Opciones: A: 508; B: 508 con remanente 2; C: 578; D: 578 con remanente 2."
+      }
+    },
+    "nysed-2019-g4-mc-q17": {
+      "inputHash": "0baff2f40da72138597afc3b1a60a812df3d33500a2a9afcd373d1199338b8af",
+      "description": {
+        "en": "Question 17. A teacher buys 5 boxes of red folders with 36 in each box and 6 boxes of blue folders with 32 in each box. Which number is closest to the total number of folders? Choices: A: 275; B: 380; C: 440; D: 550.",
+        "es": "Pregunta 17. Un maestro compra 5 cajas de carpetas rojas con 36 en cada caja y 6 cajas de carpetas azules con 32 en cada caja. ¿Qué número es el más cercano al total de carpetas? Opciones: A: 275; B: 380; C: 440; D: 550."
+      }
+    },
+    "nysed-2019-g4-mc-q20": {
+      "inputHash": "221a0b754af3da978e1f4518fd770418a89eeefe6b5c30ed443b5a2d0790be62",
+      "description": {
+        "en": "Question 20. Which two numbers both round to 1,500 when rounded to the nearest hundred? Choices: A: 1,399 and 1,599; B: 1,449 and 1,549; C: 1,457 and 1,547; D: 1,489 and 1,589.",
+        "es": "Pregunta 20. ¿Cuáles son los dos números que se redondean a 1,500 a la centena más cercana? Opciones: A: 1,399 y 1,599; B: 1,449 y 1,549; C: 1,457 y 1,547; D: 1,489 y 1,589."
+      }
+    },
+    "nysed-2019-g4-mc-q21": {
+      "inputHash": "43310ce778b6b6ef13d084a79b7a048cb8c0b559f311a2cc6e1b04b5edc6a70a",
+      "description": {
+        "en": "Question 21. Mr. Fuller wants fencing around a rectangular yard 55 feet wide and 75 feet long. How many feet of fencing does he need? Choices: A: 130; B: 260; C: 3,905; D: 4,125.",
+        "es": "Pregunta 21. El señor Fuller quiere poner una cerca alrededor de un patio rectangular de 55 pies de ancho y 75 pies de largo. ¿Cuántos pies de cerca necesita? Opciones: A: 130; B: 260; C: 3,905; D: 4,125."
+      }
+    },
+    "nysed-2019-g4-mc-q27": {
+      "inputHash": "c831f582259bee984712e483edde1a0c605fed94bdeec09b6f1dfc759d464fe5",
+      "description": {
+        "en": "Question 27. Three bars are each divided into 6 equal parts. The first has 3 parts shaded, the second has 2, and the third has 5. What is the sum of the represented fractions? Choices: A: 10/18; B: 8/10; C: 10/8; D: 10/6.",
+        "es": "Pregunta 27. Tres barras están divididas en 6 partes iguales cada una. La primera tiene 3 partes sombreadas, la segunda 2 y la tercera 5. ¿Cuál es la suma de las fracciones representadas? Opciones: A: 10/18; B: 8/10; C: 10/8; D: 10/6."
+      }
+    },
+    "nysed-2019-g4-mc-q28": {
+      "inputHash": "355f0a7b99bee663e22b7a6c13bdf610ed964aef6a2ab6dc0dc38b726cb1f342",
+      "description": {
+        "en": "Question 28. A figure consists of a centered rectangle with matching arrow shapes extending from its left and right sides. It is symmetric across both its vertical and horizontal center lines. What is the greatest number of lines of symmetry that can be drawn? Choices: A: 0; B: 1; C: 2; D: 4.",
+        "es": "Pregunta 28. Una figura consiste en un rectángulo centrado con formas de flecha iguales que se extienden por sus lados izquierdo y derecho. Es simétrica respecto de sus líneas centrales vertical y horizontal. ¿Cuál es la mayor cantidad de líneas de simetría que se pueden dibujar? Opciones: A: 0; B: 1; C: 2; D: 4."
+      }
+    },
+    "nysed-2019-g4-mc-q29": {
+      "inputHash": "873f9d7ed2585cc9bca54999191fbda1e71a16e4ba4523376a01387c09a4d00a",
+      "description": {
+        "en": "Question 29. What is the measure, in degrees, of an angle equivalent to 1/360 of a circle? Choices: A: 1; B: 90; C: 180; D: 360.",
+        "es": "Pregunta 29. ¿Cuánto mide, en grados, un ángulo equivalente a 1/360 de un círculo? Opciones: A: 1; B: 90; C: 180; D: 360."
+      }
+    },
+    "nysed-2019-g4-mc-q30": {
+      "inputHash": "c0a82d8b72e65123c0d5f4dd4ec9256d1b44ce13c1417a4f78b0b979b4fa23cb",
+      "description": {
+        "en": "Question 30. A model shows 24 as a group of four boxes, each containing 6. Which comparison statement describes the model? Choices: A: 6 is 24 times as many as 4; B: 24 is 4 times as many as 6; C: 4 times as many as 24 is 6; D: 6 times as many as 6 is 24.",
+        "es": "Pregunta 30. Un modelo muestra 24 como un grupo de cuatro casillas, cada una con 6. ¿Qué afirmación de comparación describe el modelo? Opciones: A: 6 es 24 veces más que 4; B: 24 es 4 veces más que 6; C: 4 veces más que 24 es 6; D: 6 veces más que 6 es 24."
+      }
+    },
+    "nysed-2019-g4-mc-q31": {
+      "inputHash": "8abc2ebdb9b8c6f35e89ea6faafb56d0445f0fd2cb415654e10c020bcb5df325",
+      "description": {
+        "en": "Question 31. In which model could the shaded parts represent 4 × 1/3? Choices: A: 3 bars divided into fourths with 1 part of each shaded; B: 4 bars divided into thirds with 1 part of each shaded; C: 4 bars divided into fourths with 1 part of each shaded; D: 3 bars divided into thirds with 1 part of each shaded.",
+        "es": "Pregunta 31. ¿En qué modelo las partes sombreadas podrían representar 4 × 1/3? Opciones: A: 3 barras divididas en cuartos con 1 parte sombreada en cada una; B: 4 barras divididas en tercios con 1 parte sombreada en cada una; C: 4 barras divididas en cuartos con 1 parte sombreada en cada una; D: 3 barras divididas en tercios con 1 parte sombreada en cada una."
+      }
+    },
+    "nysed-2019-g4-mc-q32": {
+      "inputHash": "50b0a3e1b37a6117bfa2a5a8446e8b50d771672dc9e534231eb7972d5d0f87bd",
+      "description": {
+        "en": "Question 32. A truck is 6 feet high. A tree is 3 times the height of the truck. Which equation can be used to find the tree’s height? Choices: A: 6 + 3 = ?; B: 6 × 3 = ?; C: (6 × 3) + 3 = ?; D: (6 × 3) + 6 = ?.",
+        "es": "Pregunta 32. Un camión mide 6 pies de alto. Un árbol mide 3 veces la altura del camión. ¿Qué ecuación se puede usar para hallar la altura del árbol? Opciones: A: 6 + 3 = ?; B: 6 × 3 = ?; C: (6 × 3) + 3 = ?; D: (6 × 3) + 6 = ?."
+      }
+    },
+    "nysed-2019-g4-mc-q33": {
+      "inputHash": "7758f26dc74af457590ef28be3eb35756b29bde3a550f3c4c2aa6b7b9e3ba5c0",
+      "description": {
+        "en": "Question 33. Which expression can be used to solve 4,600 ÷ 5? Choices: A: (46 ÷ 5) + (100 ÷ 5); B: (400 ÷ 5) − (600 ÷ 5); C: (4,000 ÷ 5) − (60 ÷ 5); D: (4,000 ÷ 5) + (600 ÷ 5).",
+        "es": "Pregunta 33. ¿Qué expresión se puede usar para resolver 4,600 ÷ 5? Opciones: A: (46 ÷ 5) + (100 ÷ 5); B: (400 ÷ 5) − (600 ÷ 5); C: (4,000 ÷ 5) − (60 ÷ 5); D: (4,000 ÷ 5) + (600 ÷ 5)."
+      }
+    },
+    "nysed-2019-g4-mc-q34": {
+      "inputHash": "9f4ba4d6ba540304a9253e4099bcc0e363cf328645c77a83134df95e0505e162",
+      "description": {
+        "en": "Question 34. Which statement about an object turning 90 degrees around a circle is true? Choices: A: It turns 1/4 of the way around; B: It turns 2/4 of the way around; C: It turns 3/4 of the way around; D: It turns 4/4 of the way around.",
+        "es": "Pregunta 34. ¿Qué afirmación es verdadera sobre un objeto que gira 90 grados en un círculo? Opciones: A: Gira 1/4 del círculo; B: Gira 2/4 del círculo; C: Gira 3/4 del círculo; D: Gira 4/4 del círculo."
+      }
+    },
+    "nysed-2019-g4-mc-q35": {
+      "inputHash": "e7c35d2229172ed2315b6cf5dfceb199ea0ef663220f4d0cb0b26590f3cdf3d7",
+      "description": {
+        "en": "Question 35. Which statement represents the number sentence 8 = 4 × 2? Choices: A: 4 is 8 times as many as 2; B: 4 is 2 times as many as 8; C: 8 is 2 times as many as 2; D: 8 is 4 times as many as 2.",
+        "es": "Pregunta 35. ¿Qué afirmación representa la oración numérica 8 = 4 × 2? Opciones: A: 4 es 8 veces más que 2; B: 4 es 2 veces más que 8; C: 8 es 2 veces más que 2; D: 8 es 4 veces más que 2."
+      }
+    },
+    "nysed-2019-g4-mc-q36": {
+      "inputHash": "e23d06c584f5c5a75147ddf87bbc6d8f345ad58dc178cefea73b48cdefca536f",
+      "description": {
+        "en": "Question 36. An acute angle has one ray pointing horizontally right and a second ray rising to the right at about 55 degrees. What is its measure, in degrees? Choices: A: 55; B: 65; C: 125; D: 135.",
+        "es": "Pregunta 36. Un ángulo agudo tiene una semirrecta que apunta horizontalmente hacia la derecha y otra que sube hacia la derecha a unos 55 grados. ¿Cuál es su medida, en grados? Opciones: A: 55; B: 65; C: 125; D: 135."
+      }
+    },
+    "nysed-2019-g4-mc-q37": {
+      "inputHash": "45024298d41ca352c27e01ffae836a5dc3fcdcbe96ea5b45ec0d86466ce5c10e",
+      "description": {
+        "en": "Question 37. A bar is divided into 5 equal parts with 2 shaded. Which model represents an equivalent fraction? Choices: A: a bar divided into 10 equal parts with 2 shaded; B: a bar divided into 5 equal parts with 3 shaded; C: a bar divided into 5 equal parts with 4 shaded; D: a bar divided into 10 equal parts with 4 shaded.",
+        "es": "Pregunta 37. Una barra está dividida en 5 partes iguales con 2 sombreadas. ¿Qué modelo representa una fracción equivalente? Opciones: A: una barra dividida en 10 partes iguales con 2 sombreadas; B: una barra dividida en 5 partes iguales con 3 sombreadas; C: una barra dividida en 5 partes iguales con 4 sombreadas; D: una barra dividida en 10 partes iguales con 4 sombreadas."
+      }
+    },
+    "nysed-2019-g4-mc-q38": {
+      "inputHash": "809bb46e661c206d144a835689667c2b728b7a1cdb4b3f51cafa764ade7a0ccb",
+      "description": {
+        "en": "Question 38. Four line segments measure 1 1/2 inches, 2 1/4 inches, 2 1/4 inches, and 2 3/4 inches. Which line plot shows these lengths? Choices: A: one mark each at 1 1/2, 2 1/4, and 2 3/4; B: one mark at 1 1/2, one at 2 1/4, and two at 2 1/2; C: one mark at 1 1/2, two at 2 1/4, and one at 2 3/4; D: one mark at 1 1/2, one at 2 1/4, and two at 2 3/4.",
+        "es": "Pregunta 38. Cuatro segmentos miden 1 1/2 pulgadas, 2 1/4 pulgadas, 2 1/4 pulgadas y 2 3/4 pulgadas. ¿Qué diagrama lineal muestra estas longitudes? Opciones: A: una marca en 1 1/2, una en 2 1/4 y una en 2 3/4; B: una marca en 1 1/2, una en 2 1/4 y dos en 2 1/2; C: una marca en 1 1/2, dos en 2 1/4 y una en 2 3/4; D: una marca en 1 1/2, una en 2 1/4 y dos en 2 3/4."
+      }
+    }
+  }
+}

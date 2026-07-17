@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2013-grade-8-mc-v1",
+  "languages": [
+    "en"
+  ],
+  "questions": {
+    "nysed-2013-g8-mc-q1": {
+      "inputHash": "b3b0e53225d383a56ca53b4070c68a7aeb12c3e691c5fbf0dd88f391a62540e7",
+      "description": {
+        "en": "Question 1. Lucy graphed a system of linear equations on a coordinate plane whose x- and y-axes run from −10 to 10 in increments of 1. One line rises from lower left to upper right, passing through (−4, 0), (−1, 3), and (0, 4). The other line falls from upper left to lower right, passing through (−1, 3), (0, 2), and (2, 0). The lines intersect at (−1, 3). What is the solution to the system of equations? Choices: A: (−4, 2) B: (−1, 3) C: (0, 2) D: (2, 4)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "−10",
+          "10",
+          "(−4, 0)",
+          "(−1, 3)",
+          "(0, 4)",
+          "(0, 2)",
+          "(2, 0)",
+          "(−4, 2)",
+          "(2, 4)",
+          "A: (−4, 2)",
+          "B: (−1, 3)",
+          "C: (0, 2)",
+          "D: (2, 4)"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q2": {
+      "inputHash": "811bf6191dc4c704cb74077ee528a35caee18ba7d4dd0cb1b591fe111fddf957",
+      "description": {
+        "en": "Question 2. Which sequence of transformations takes △A to its image, △B? On a coordinate plane whose x- and y-axes run from −10 to 10 in increments of 1, triangle A has vertices (−9, 4), (−8, 9), and (−3, 4). Its horizontal base extends from (−9, 4) to (−3, 4). Triangle B has vertices (3, 2), (8, 7), and (9, 2). Its horizontal base extends from (3, 2) to (9, 2). Choices: A: reflection over the x-axis and translation 2 units down B: reflection over the y-axis and translation 2 units down C: translation 2 units down and 90° rotation about the origin D: translation 12 units right and 90° rotation about the origin"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "△A",
+          "△B",
+          "−10",
+          "10",
+          "(−9, 4)",
+          "(−8, 9)",
+          "(−3, 4)",
+          "(3, 2)",
+          "(8, 7)",
+          "(9, 2)",
+          "2 units down",
+          "90°",
+          "12 units right",
+          "A: reflection over the x-axis and translation 2 units down",
+          "B: reflection over the y-axis and translation 2 units down",
+          "C: translation 2 units down and 90° rotation about the origin",
+          "D: translation 12 units right and 90° rotation about the origin"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q3": {
+      "inputHash": "0d77447e8e92e90099b0f03dc99502369f66a909161e71bc629b91570fd4b251",
+      "description": {
+        "en": "Question 3. What is the solution to the equation below? 2(x − 3) = 2x + 5. Choices: A: x = 2 3/4 B: x = −2 3/4 C: There is no solution. D: There are infinitely many solutions."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2(x − 3) = 2x + 5",
+          "x = 2 3/4",
+          "x = −2 3/4",
+          "A: x = 2 3/4",
+          "B: x = −2 3/4",
+          "C: There is no solution",
+          "D: There are infinitely many solutions",
+          "(x − 3)",
+          "2 3/4"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q5": {
+      "inputHash": "5b4d54c41e20575c1fe2814dab66c84cb36d1276c6c1c62667909f36bdc9aa83",
+      "description": {
+        "en": "Question 5. Which graph below does not represent a function of x? Choices: A: A straight line with arrows at both ends rises from lower left to upper right, passing through (0, 1), (1, 2), (2, 3), (3, 4), (4, 5), and (5, 6). B: An upward-opening parabola with vertex (0, 0), symmetric about the y-axis, passing through (−2, 4), (−1, 1), (1, 1), and (2, 4), with arrows on both upper ends. C: Six closed points form three horizontal segments: one from (1, 3) to (2, 3), one from (1, 1) to (2, 1), and one from (3, 2) to (4, 2). D: A V-shaped graph with vertex (0, 0), consisting of two rays with arrows that rise leftward and rightward; it passes through (−5, 5), (−1, 1), (1, 1), and (5, 5)."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(0, 1)",
+          "(1, 2)",
+          "(2, 3)",
+          "(3, 4)",
+          "(4, 5)",
+          "(5, 6)",
+          "(0, 0)",
+          "(−2, 4)",
+          "(−1, 1)",
+          "(1, 1)",
+          "(2, 4)",
+          "(1, 3)",
+          "(2, 1)",
+          "(3, 2)",
+          "(4, 2)",
+          "(−5, 5)",
+          "(5, 5)",
+          "A: A straight line with arrows at both ends rises from lower left to upper right, passing through (0, 1), (1, 2), (2, 3), (3, 4), (4, 5), and (5, 6)",
+          "B: An upward-opening parabola with vertex (0, 0), symmetric about the y-axis, passing through (−2, 4), (−1, 1), (1, 1), and (2, 4), with arrows on both upper ends",
+          "C: Six closed points form three horizontal segments: one from (1, 3) to (2, 3), one from (1, 1) to (2, 1), and one from (3, 2) to (4, 2)",
+          "D: A V-shaped graph with vertex (0, 0), consisting of two rays with arrows that rise leftward and rightward; it passes through (−5, 5), (−1, 1), (1, 1), and (5, 5)"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q6": {
+      "inputHash": "bfe7d4884c678c40afbdc43c1678c75f4f1797fa9a68d7ce68438b9c2328e411",
+      "description": {
+        "en": "Question 6. Simplify: 4⁸/4⁻⁴. Choices: A: 4⁻³² B: 4⁻² C: 4⁴ D: 4¹²"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "4⁸/4⁻⁴",
+          "4⁻³²",
+          "4⁻²",
+          "4⁴",
+          "4¹²",
+          "A: 4⁻³²",
+          "B: 4⁻²",
+          "C: 4⁴",
+          "D: 4¹²",
+          "4⁸",
+          "4⁻⁴"
+        ]
+      },
+      "verbatimShortQuestion": true
+    },
+    "nysed-2013-g8-mc-q17": {
+      "inputHash": "d448b2723d4c4cc6bd571cb4ff438d97668b49634ec4245ab1777f7924555833",
+      "description": {
+        "en": "Question 17. Which expression is not equivalent to 6³/6⁶? Choices: A: 1/6² B: 6⁻³ C: 1/216 D: 1/6³"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "6³/6⁶",
+          "1/6²",
+          "6⁻³",
+          "1/216",
+          "1/6³",
+          "A: 1/6²",
+          "B: 6⁻³",
+          "C: 1/216",
+          "D: 1/6³",
+          "6³",
+          "6⁶",
+          "1/6"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q19": {
+      "inputHash": "0f6a8f9474b16f5e344c9f38c41292771a48136dd931c0947eb4fe466b547e37",
+      "description": {
+        "en": "Question 19. A lab has two bacteria cultures. Culture A contains 8 × 10⁴ bacteria, and culture B contains 4 × 10⁶ bacteria. How do the two cultures compare in size? Choices: A: Culture A contains twice as many bacteria as culture B. B: Culture A contains 1/2 as many bacteria as culture B. C: Culture A contains 1/25 as many bacteria as culture B. D: Culture A contains 1/50 as many bacteria as culture B."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 × 10⁴",
+          "4 × 10⁶",
+          "twice",
+          "1/2",
+          "1/25",
+          "1/50",
+          "A: Culture A contains twice as many bacteria as culture B",
+          "B: Culture A contains 1/2 as many bacteria as culture B",
+          "C: Culture A contains 1/25 as many bacteria as culture B",
+          "D: Culture A contains 1/50 as many bacteria as culture B",
+          "10⁴",
+          "10⁶"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q25": {
+      "inputHash": "05508af32b42c71b32d80658267edc05c9e2cee75c4c52d821ec582ab5af31c5",
+      "description": {
+        "en": "Question 25. Evaluate: (2.4 × 10⁴)(4.5 × 10³). Choices: A: 1.08 × 10⁷ B: 1.08 × 10⁸ C: 1.08 × 10¹² D: 1.08 × 10¹³"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "(2.4 × 10⁴)(4.5 × 10³)",
+          "1.08 × 10⁷",
+          "1.08 × 10⁸",
+          "1.08 × 10¹²",
+          "1.08 × 10¹³",
+          "A: 1.08 × 10⁷",
+          "B: 1.08 × 10⁸",
+          "C: 1.08 × 10¹²",
+          "D: 1.08 × 10¹³",
+          "(2.4 × 10⁴)",
+          "(4.5 × 10³)",
+          "10⁷",
+          "10⁸",
+          "10¹²",
+          "10¹³"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q49": {
+      "inputHash": "8b7f523da6ede8e5845c92f8eda4c43745434b689a775625e7f2d90fc258fe7f",
+      "description": {
+        "en": "Question 49. A water tank is in the shape of a right circular cylinder with a height of 20 feet and a volume of 320π cubic feet. What is the diameter, in feet, of the water tank? Choices: A: 16 B: 10 C: 8 D: 4"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "20 feet",
+          "320π cubic feet",
+          "16",
+          "10",
+          "8",
+          "4",
+          "A: 16",
+          "B: 10",
+          "C: 8",
+          "D: 4"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q50": {
+      "inputHash": "2d3475e200d1c9db6423946cda9049cd589b0fc8c4caef48e18f773811b20109",
+      "description": {
+        "en": "Question 50. Which equation does not represent a linear function of x? Choices: A: y = −(3/4)x B: y = x/2 C: y = −3 + 2x D: y = 3x² − 2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "y = −(3/4)x",
+          "y = x/2",
+          "y = −3 + 2x",
+          "y = 3x² − 2",
+          "A: y = −(3/4)x",
+          "B: y = x/2",
+          "C: y = −3 + 2x",
+          "D: y = 3x² − 2",
+          "(3/4)"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q51": {
+      "inputHash": "7dacaec2e8ddfa3e27de3db317d3f68d8e96142fd38358df84658ad9b54186c6",
+      "description": {
+        "en": "Question 51. If △ABC is rotated 90° clockwise about the origin, what will be the new coordinates of vertex B? A coordinate plane has horizontal x- and vertical y-axes, with unit grid lines and labeled values from −5 through 5 on each axis. Triangle ABC has vertices A at (−2, 3), B at (−4, 1), and C at (−1, 1). Segment BC is horizontal from B to C, and segments BA and AC meet at A. Choices: A: (−1, −4) B: (1, 4) C: (4, 1) D: (4, −1)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "90°",
+          "(−2, 3)",
+          "(−4, 1)",
+          "(−1, 1)",
+          "(−1, −4)",
+          "(1, 4)",
+          "(4, 1)",
+          "(4, −1)",
+          "A: (−1, −4)",
+          "B: (1, 4)",
+          "C: (4, 1)",
+          "D: (4, −1)"
+        ]
+      }
+    },
+    "nysed-2013-g8-mc-q61": {
+      "inputHash": "ee19521c98684ac634700f5a2511e2656dc23cb0a9ec38b50dc820ad67d7fb00",
+      "description": {
+        "en": "Question 61. Mr. Wallace surveyed 75 students at Poole Middle School to find out the students’ favorite place to eat lunch. The results are in a table titled “FAVORITE PLACE TO EAT LUNCH.” Columns are Cafeteria, Outside, and Total. Boys: 16, 21, 37. Girls: 24, 14, 38. Total: 40, 35, 75. Which table shows the approximate relative frequencies of Mr. Wallace’s data? Choices: A: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 16%, 21%, 37%. Girls: 24%, 14%, 38%. Total: 40%, 35%, 75%. B: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 21%, 28%, 49%. Girls: 32%, 19%, 51%. Total: 53%, 47%, 100%. C: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 40%, 60%, 49%. Girls: 60%, 40%, 51%. Total: 100%, 100%, 100%. D: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 43%, 57%, 100%. Girls: 63%, 37%, 100%. Total: 53%, 47%, 100%."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "75",
+          "16, 21, 37",
+          "24, 14, 38",
+          "40, 35, 75",
+          "16%, 21%, 37%",
+          "24%, 14%, 38%",
+          "40%, 35%, 75%",
+          "21%, 28%, 49%",
+          "32%, 19%, 51%",
+          "53%, 47%, 100%",
+          "40%, 60%, 49%",
+          "60%, 40%, 51%",
+          "100%, 100%, 100%",
+          "43%, 57%, 100%",
+          "63%, 37%, 100%",
+          "A: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 16%, 21%, 37%. Girls: 24%, 14%, 38%. Total: 40%, 35%, 75%",
+          "B: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 21%, 28%, 49%. Girls: 32%, 19%, 51%. Total: 53%, 47%, 100%",
+          "C: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 40%, 60%, 49%. Girls: 60%, 40%, 51%. Total: 100%, 100%, 100%",
+          "D: A table titled “FAVORITE PLACE TO EAT LUNCH,” with columns Cafeteria, Outside, and Total. Boys: 43%, 57%, 100%. Girls: 63%, 37%, 100%. Total: 53%, 47%, 100%"
+        ]
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import { createHash } from 'node:crypto'
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import {
@@ -10,8 +11,10 @@ import {
 } from '../content/ela-exams/index'
 import { ELA_EXAM_QUESTIONS } from '../content/ela-exams/catalog-runtime'
 import rawCatalog from '../content/ela-exams/generated/catalog.json'
+import transcriptReviewManifest from '../content/ela-exams/transcript-review-manifest.json'
 import {
   buildElaExamCatalog,
+  transcriptParagraphMarkers,
   type RawElaExamCatalog,
 } from '../content/ela-exams/catalog-builder'
 import { ELA_SKILL_ORDER, getElaSkillLesson } from '../content/ela-exams/section-content'
@@ -25,6 +28,10 @@ import {
 const root = process.cwd()
 const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]
 const GRADES = [3, 4, 5, 6, 7, 8] as const
+const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-ela-2013-g4-mc-q2',
+  'nysed-ela-2014-g3-mc-q12',
+])
 const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2013: [6, 5, 6, 5, 7, 7],
   2014: [16, 17, 21, 19, 19, 21],
@@ -39,6 +46,13 @@ const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2024: [17, 17, 19, 19, 26, 26],
   2025: [17, 17, 19, 19, 26, 26],
   2026: [24, 24, 27, 27, 34, 34],
+}
+const transcriptReviewsById = new Map(
+  transcriptReviewManifest.reviews.map(review => [review.stimulusId, review]),
+)
+
+function sha256(value: string | Buffer) {
+  return createHash('sha256').update(value).digest('hex')
 }
 
 function webpDimensions(path: string) {
@@ -113,7 +127,7 @@ test('catalog validation rejects leaked keys, wrong-grade standards, and unsafe 
     passage?: unknown
   }
   delete stimulusWithoutPassage.passage
-  assert.throws(() => buildElaExamCatalog(missingPassage), /valid local passage image/)
+  assert.throws(() => buildElaExamCatalog(missingPassage), /unexpected keys/)
 
   const wrongPassagePath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
   wrongPassagePath.exams[0].stimuli[0].passage.src = '/vine-app/nysed/ela/wrong.webp'
@@ -130,6 +144,23 @@ test('catalog validation rejects leaked keys, wrong-grade standards, and unsafe 
   const linuxLocalPath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
   linuxLocalPath.exams[0].description = '/home/example/private/vine-app'
   assert.throws(() => buildElaExamCatalog(linuxLocalPath), /local filesystem path/)
+
+  const windowsLocalPath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  windowsLocalPath.exams[0].description = String.raw`C:\Users\reviewer\vine-app`
+  assert.throws(() => buildElaExamCatalog(windowsLocalPath), /local filesystem path/)
+
+  for (const exposedPath of [
+    '/var/folders/75/private/transcript.txt',
+    '/workspaces/vine-app/transcript.txt',
+  ]) {
+    const exposedLocalPath = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+    exposedLocalPath.exams[0].description = exposedPath
+    assert.throws(() => buildElaExamCatalog(exposedLocalPath), /local filesystem path/)
+  }
+
+  const proseColonBeforeLineBreak = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  proseColonBeforeLineBreak.exams[0].description = 'Released passage:\nGrade-level reading practice.'
+  assert.doesNotThrow(() => buildElaExamCatalog(proseColonBeforeLineBreak))
 
   const genericExplanation = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
   const genericQuestion = genericExplanation.exams[0].questions[0]
@@ -168,7 +199,7 @@ test('catalog validation rejects leaked keys, wrong-grade standards, and unsafe 
     explanation?: unknown
   }
   delete questionWithoutExplanation.explanation
-  assert.throws(() => buildElaExamCatalog(missingExplanation), /bad explanation source/)
+  assert.throws(() => buildElaExamCatalog(missingExplanation), /unexpected keys/)
 
   const wrongExplanationSource = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
   const modernQuestion = wrongExplanationSource.exams.find(exam => exam.year >= 2015)!.questions[0]
@@ -176,6 +207,180 @@ test('catalog validation rejects leaked keys, wrong-grade standards, and unsafe 
   assert.throws(
     () => buildElaExamCatalog(wrongExplanationSource),
     /explanation source that does not match its release/,
+  )
+
+  const lowerGradeExam = rawCatalog.exams.find(exam => exam.grade === 3)!
+  const injectedTranscriptMetadata = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const injectedTranscript = injectedTranscriptMetadata.exams
+    .find(exam => exam.id === lowerGradeExam.id)!
+    .stimuli[0].passage.transcript as unknown as Record<string, unknown>
+  injectedTranscript.correctAnswer = 'B'
+  assert.throws(
+    () => buildElaExamCatalog(injectedTranscriptMetadata),
+    /valid local passage image and required transcript/,
+  )
+
+  const missingTranscript = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  delete missingTranscript.exams.find(exam => exam.id === lowerGradeExam.id)!.stimuli[0].passage.transcript
+  assert.throws(
+    () => buildElaExamCatalog(missingTranscript),
+    /valid local passage image and required transcript/,
+  )
+
+  const bookletChrome = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  bookletChrome.exams.find(exam => exam.id === lowerGradeExam.id)!.stimuli[0].passage.transcript!.text += '\nGO ON'
+  assert.throws(
+    () => buildElaExamCatalog(bookletChrome),
+    /valid local passage image and required transcript/,
+  )
+
+  const badClosingQuote = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  badClosingQuote.exams.find(exam => exam.id === lowerGradeExam.id)!.stimuli[0].passage.transcript!.text +=
+    '\n“Remember the story and finish the work,’ she said.'
+  assert.throws(
+    () => buildElaExamCatalog(badClosingQuote),
+    /valid local passage image and required transcript/,
+  )
+
+  const punctuationQuoteArtifact = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  punctuationQuoteArtifact.exams.find(exam => exam.id === lowerGradeExam.id)!.stimuli[0].passage.transcript!.text +=
+    "\nThe concrete walls;' Kathryn said."
+  assert.throws(
+    () => buildElaExamCatalog(punctuationQuoteArtifact),
+    /valid local passage image and required transcript/,
+  )
+
+  const spuriousOpeningQuote = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  spuriousOpeningQuote.exams.find(exam => exam.id === lowerGradeExam.id)!.stimuli[0].passage.transcript!.text +=
+    '\nSpices. ‘They called the drink chocolate.'
+  assert.throws(
+    () => buildElaExamCatalog(spuriousOpeningQuote),
+    /valid local passage image and required transcript/,
+  )
+
+  for (const artifact of ['youd stay awake', '= = SS', '—— =']) {
+    const knownOcrArtifact = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+    knownOcrArtifact.exams
+      .find(exam => exam.id === lowerGradeExam.id)!
+      .stimuli[0].passage.transcript!.text += `\n${artifact}`
+    assert.throws(
+      () => buildElaExamCatalog(knownOcrArtifact),
+      /valid local passage image and required transcript/,
+    )
+  }
+
+  for (const artifact of [
+    'Th e passage continues.',
+    'A fi eld appears nearby.',
+    'O ne-Eyed watched quietly.',
+    'The footer retains 2f rappé.',
+  ]) {
+    const splitWordArtifact = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+    splitWordArtifact.exams
+      .find(exam => exam.id === lowerGradeExam.id)!
+      .stimuli[0].passage.transcript!.text += `\n${artifact}`
+    assert.throws(
+      () => buildElaExamCatalog(splitWordArtifact),
+      /valid local passage image and required transcript/,
+    )
+  }
+
+  for (const artifact of [
+    'EExxcceerrpptt ffrroomm a reviewed story',
+    'ThThee passage continues.',
+    '11ssaagguuaarroo:: a kind of cactus',
+    'PPrroofifilleess in courage',
+    'IInnssiiggnniifificcaanntt events',
+    '““You are ready,” the teacher said.',
+  ]) {
+    const doubledCharacterArtifact = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+    doubledCharacterArtifact.exams
+      .find(exam => exam.id === lowerGradeExam.id)!
+      .stimuli[0].passage.transcript!.text += `\n${artifact}`
+    assert.throws(
+      () => buildElaExamCatalog(doubledCharacterArtifact),
+      /valid local passage image and required transcript/,
+    )
+  }
+
+  const missingReviewedVisual = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const visualStimulus = missingReviewedVisual.exams
+    .find(exam => exam.year === 2014 && exam.grade === 3)!
+    .stimuli.find(stimulus => stimulus.id === 'nysed-ela-2014-g3-stimulus-1-4')!
+  visualStimulus.passage.transcript!.text = visualStimulus.passage.transcript!.text.replace(
+    /^\[Diagram:.+\]\n\n/m,
+    '',
+  )
+  assert.throws(
+    () => buildElaExamCatalog(missingReviewedVisual),
+    /valid local passage image and required transcript/,
+  )
+
+  const missingUpperGradeVisual = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const upperGradeVisualStimulus = missingUpperGradeVisual.exams
+    .find(exam => exam.year === 2025 && exam.grade === 5)!
+    .stimuli.find(stimulus => stimulus.id === 'nysed-ela-2025-g5-stimulus-29-35')!
+  upperGradeVisualStimulus.passage.transcript!.text = upperGradeVisualStimulus.passage.transcript!.text
+    .split('\n')
+    .filter(line => !line.startsWith('[Diagram:'))
+    .join('\n')
+  assert.throws(
+    () => buildElaExamCatalog(missingUpperGradeVisual),
+    /valid local passage image and required transcript/,
+  )
+
+  for (const leak of [
+    'Key: B. Choice B is correct because the printed evidence supports it.',
+    'The answer is C. Option C is the best response to the question.',
+    'The correct option is B according to the scoring guide.',
+    'Clave: D. La opción D es correcta porque coincide con el texto.',
+  ]) {
+    const answerLeak = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+    answerLeak.exams.find(exam => exam.id === lowerGradeExam.id)!.stimuli[0].passage.transcript!.text += `\n${leak}`
+    assert.throws(
+      () => buildElaExamCatalog(answerLeak),
+      /valid local passage image and required transcript/,
+    )
+  }
+})
+
+test('transcript validation preserves legitimate prose and literal bullet markers', () => {
+  const goOn = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const goOnTranscript = goOn.exams.find(exam => exam.grade === 3)!.stimuli[0].passage.transcript!
+  goOnTranscript.text += '\n“Go on,” she said, inviting the student to continue.'
+  assert.doesNotThrow(() => buildElaExamCatalog(goOn))
+
+  const pageNumberProse = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const pageNumberTranscript = pageNumberProse.exams.find(exam => exam.grade === 3)!.stimuli[0].passage.transcript!
+  pageNumberTranscript.text += '\nShe turned to page 5 of the notebook and continued reading.'
+  assert.doesNotThrow(() => buildElaExamCatalog(pageNumberProse))
+
+  const bullet = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const bulletTranscript = bullet.exams.find(exam => exam.grade === 3)!.stimuli[0].passage.transcript!
+  bulletTranscript.text +=
+    '\n998 • Cross Country is a printed section heading.\n999 1. Cacao is grown on trees.'
+  assert.doesNotThrow(() => buildElaExamCatalog(bullet))
+
+  const symbols = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const symbolTranscript = symbols.exams.find(exam => exam.grade === 3)!.stimuli[0].passage.transcript!
+  symbolTranscript.text += '\nA notation example preserves 12², ½, ≤, ≥, and ÷ exactly.'
+  assert.doesNotThrow(() => buildElaExamCatalog(symbols))
+
+  const reviewedWordplay = structuredClone(rawCatalog) as unknown as RawElaExamCatalog
+  const wordplayTranscript = reviewedWordplay.exams.find(exam => exam.grade === 3)!.stimuli[0].passage.transcript!
+  wordplayTranscript.text += '\nThe source says sci-fi fishland, Snoozzzzzze, and go-rillllllas.'
+  assert.doesNotThrow(() => buildElaExamCatalog(reviewedWordplay))
+
+  assert.deepEqual(
+    transcriptParagraphMarkers([
+      '48 Hours is the article title.',
+      '1 First reviewed paragraph.',
+      '2 second reviewed paragraph begins in lowercase.',
+      '50 percent is a numeric sentence, not a printed marker.',
+      '3 (Third reviewed paragraph.)',
+      '4 [Fourth reviewed paragraph.]',
+    ].join('\n')),
+    [1, 2, 3, 4],
   )
 })
 
@@ -211,6 +416,8 @@ test('Vine-authored strategy lessons are complete and grade-specific for all fou
 
 test('each practice section stays on one passage stimulus and exposes official page references', () => {
   const passagePaths = new Set<string>()
+  let reviewedTranscriptCount = 0
+  let transcriptQuestionCount = 0
   for (const exam of ELA_EXAMS) {
     assert.equal(exam.standardsFramework, exam.year <= 2022 ? 'CCLS' : 'NGLS')
     assert.match(exam.accessedAt, /^\d{4}-\d{2}-\d{2}$/)
@@ -227,6 +434,8 @@ test('each practice section stays on one passage stimulus and exposes official p
       assert.ok(section.questionIds.length > 0)
       assert.ok(section.passageReferences.length > 0)
       assert.ok(section.skills.includes(section.focusSkill))
+      assert.deepEqual(section.skillLessons.map(lesson => lesson.skill), section.skills)
+      assert.equal(new Set(section.skillLessons.map(lesson => lesson.skill)).size, section.skills.length)
       assert.ok(section.standards.length > 0)
       assert.match(section.workedExample.prompt, /^Vine example:/)
       assert.equal(
@@ -236,6 +445,12 @@ test('each practice section stays on one passage stimulus and exposes official p
       assert.ok(section.passage.width >= 420)
       assert.ok(section.passage.height >= 260 && section.passage.height <= 16_000)
       assert.match(section.passage.alt, /PDF page breaks are removed/)
+      assert.ok(section.passage.transcript, `${section.stimulusId} needs its reviewed transcript`)
+      assert.ok(section.passage.transcript.text.length >= 400)
+      assert.match(section.passage.transcript.sourcePdfSha256, /^[0-9a-f]{64}$/)
+      assert.match(section.passage.transcript.passageImageSha256, /^[0-9a-f]{64}$/)
+      reviewedTranscriptCount += 1
+      transcriptQuestionCount += section.questionIds.length
       assert.ok(!passagePaths.has(section.passage.src), `${section.stimulusId} repeats a passage asset`)
       passagePaths.add(section.passage.src)
       const match = getElaExamSection(exam.id, section.slug)
@@ -244,6 +459,10 @@ test('each practice section stays on one passage stimulus and exposes official p
       assert.deepEqual(sectionQuestions.map(question => question.id), section.questionIds)
       assert.ok(sectionQuestions.every(question => question.stimulusId === section.stimulusId))
       assert.ok(sectionQuestions.every(question => question.sectionSlug === section.slug))
+      assert.equal(section.focusSkill, sectionQuestions[0].skill)
+      assert.ok(sectionQuestions.every(question =>
+        section.skillLessons.some(lesson => lesson.skill === question.skill),
+      ))
       assert.ok(sectionQuestions.every(question =>
         question.number >= section.questionStart && question.number <= section.questionEnd,
       ))
@@ -265,11 +484,142 @@ test('each practice section stays on one passage stimulus and exposes official p
     }
   }
   assert.equal(passagePaths.size, 242)
+  assert.equal(reviewedTranscriptCount, 242)
+  assert.equal(transcriptQuestionCount, 1_583)
+})
+
+test('every grade surfaces a lesson for every skill represented by its released questions', () => {
+  const lowerGradeExamIds = new Set(
+    ELA_EXAMS.filter(exam => exam.grade === 3 || exam.grade === 4).map(exam => exam.id),
+  )
+  const lowerGradeQuestions = ELA_EXAM_QUESTIONS.filter(question =>
+    lowerGradeExamIds.has(question.examId),
+  )
+  assert.equal(
+    lowerGradeQuestions.filter(question => question.skill === 'integration-knowledge').length,
+    56,
+  )
+  assert.equal(
+    lowerGradeQuestions.filter(question => question.skill === 'language-vocabulary').length,
+    26,
+  )
+
+  for (const grade of GRADES) {
+    const gradeExams = ELA_EXAMS.filter(exam => exam.grade === grade)
+    const questionedSkills = new Set(
+      ELA_EXAM_QUESTIONS
+        .filter(question => gradeExams.some(exam => exam.id === question.examId))
+        .map(question => question.skill),
+    )
+    const surfacedSkills = new Set(
+      gradeExams.flatMap(exam => exam.sections.flatMap(section =>
+        section.skillLessons.map(lesson => lesson.skill),
+      )),
+    )
+    assert.deepEqual(surfacedSkills, questionedSkills)
+    assert.ok(surfacedSkills.has('integration-knowledge'))
+    assert.ok(surfacedSkills.has('language-vocabulary'))
+  }
+})
+
+test('reviewed transcript manifest, sidecars, generated catalog, and passage bytes stay in exact parity', () => {
+  assert.deepEqual(transcriptReviewManifest.scope, {
+    grades: [3, 4, 5, 6, 7, 8],
+    stimulusCount: 242,
+    questionCount: 1_583,
+  })
+  assert.equal(transcriptReviewManifest.reviews.length, 242)
+  assert.equal(transcriptReviewsById.size, 242)
+
+  const transcriptDirectory = join(root, 'content', 'ela-exams', 'transcripts')
+  const sidecarNames = readdirSync(transcriptDirectory)
+    .filter(name => /^\d{4}-grade-[3-8]\.json$/.test(name))
+    .sort()
+  assert.equal(sidecarNames.length, 78)
+
+  const sidecarsByStimulusId = new Map<string, {
+    source: string
+    text: string
+    paragraphMarkers: number[]
+    visualDescriptionCount: number
+  }>()
+  for (const name of sidecarNames) {
+    const sidecar = JSON.parse(readFileSync(join(transcriptDirectory, name), 'utf8')) as {
+      passages: Array<{
+        stimulusId: string
+        source: string
+        text: string
+        paragraphMarkers: number[]
+        visualDescriptionCount: number
+      }>
+    }
+    for (const passage of sidecar.passages) {
+      assert.ok(!sidecarsByStimulusId.has(passage.stimulusId), `duplicate sidecar ${passage.stimulusId}`)
+      sidecarsByStimulusId.set(passage.stimulusId, passage)
+    }
+  }
+  assert.equal(sidecarsByStimulusId.size, 242)
+
+  for (const exam of ELA_EXAMS) {
+    for (const section of exam.sections) {
+      const transcript = section.passage.transcript
+      assert.ok(transcript, `${section.stimulusId} needs a catalog transcript`)
+      const review = transcriptReviewsById.get(section.stimulusId)
+      assert.ok(review, `${section.stimulusId} needs a review record`)
+      const sidecar = sidecarsByStimulusId.get(section.stimulusId)
+      assert.ok(sidecar, `${section.stimulusId} needs a sidecar record`)
+
+      assert.equal(review.examId, exam.id)
+      assert.equal(transcript.source, review.source)
+      assert.equal(transcript.sourcePdfSha256, review.sourcePdfSha256)
+      assert.equal(transcript.passageImageSha256, review.passageImageSha256)
+      assert.equal(sha256(transcript.text), review.textSha256)
+      assert.deepEqual(transcriptParagraphMarkers(transcript.text), review.paragraphMarkers)
+
+      const visualDescriptionCount = transcript.text.split('\n').filter(line =>
+        /^\[(?:Illustration|Diagram|Photograph|Map|Chart|Text box|Sidebar|Caption):\s+\S.+\]$/i.test(line.trim()),
+      ).length
+      assert.equal(visualDescriptionCount, review.visualDescriptionCount)
+      assert.equal(sidecar.source, review.source)
+      assert.equal(sidecar.text, transcript.text)
+      assert.deepEqual(sidecar.paragraphMarkers, review.paragraphMarkers)
+      assert.equal(sidecar.visualDescriptionCount, review.visualDescriptionCount)
+
+      const passagePath = join(root, 'public', section.passage.src.replace('/vine-app/', ''))
+      assert.equal(sha256(readFileSync(passagePath)), review.passageImageSha256)
+    }
+  }
+})
+
+test('reviewed ELA explanations preserve the passage evidence without overstating it', () => {
+  const wampanoag = getElaExamQuestion('nysed-ela-2013-g4-mc-q2')!
+  assert.match(wampanoag.grading.explanation, /seek Maushop's help/i)
+  assert.doesNotMatch(wampanoag.grading.explanation, /Wampanoag people as the antagonist/i)
+  assert.equal(wampanoag.grading.explanationSource, 'official-nysed-corrected')
+
+  const snowshoe = getElaExamQuestion('nysed-ela-2014-g3-mc-q12')!
+  assert.match(snowshoe.grading.explanation, /slopes and trails nearby/i)
+  assert.doesNotMatch(snowshoe.grading.explanation, /trails and mountains/i)
+  assert.equal(snowshoe.grading.explanationSource, 'official-nysed-corrected')
+
+  const height = getElaExamQuestion('nysed-ela-2023-g3-mc-q4')!
+  assert.match(height.grading.explanation, /earlier measurement/i)
+  assert.match(height.grading.explanation, /rather than conclusively proving their current heights/i)
+
+  const apples = getElaExamQuestion('nysed-ela-2024-g3-mc-q26')!
+  assert.match(apples.grading.explanation, /reluctantly accepts/i)
+  assert.match(apples.grading.explanation, /rather than intentionally deciding to trust him/i)
+  assert.doesNotMatch(apples.grading.explanation, /trusting what others contribute brings/i)
+
+  const glanced = getElaExamQuestion('nysed-ela-2026-g3-mc-q3')!
+  assert.match(glanced.grading.explanation, /“Glanced” means looked briefly/)
+  assert.match(glanced.grading.explanation, /purpose rather than the exact meaning/i)
 })
 
 test('active ELA questions have substantive sourced explanations with server-only grading', () => {
   const explanationSourceCounts = {
     'official-nysed': 0,
+    'official-nysed-corrected': 0,
     'vine-authored': 0,
   }
   const genericFallback = /official NYSED answer key identifies choice [A-D] as the correct answer/i
@@ -283,6 +633,12 @@ test('active ELA questions have substantive sourced explanations with server-onl
     assert.match(question.grading.correct, /^[A-D]$/)
     assert.ok(question.grading.explanation.replace(/[^\p{L}\p{N}]/gu, '').length >= 40)
     assert.doesNotMatch(question.grading.explanation, genericFallback)
+    const expectedSource = exam.year >= 2015
+      ? 'vine-authored'
+      : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
+        ? 'official-nysed-corrected'
+        : 'official-nysed'
+    assert.equal(question.grading.explanationSource, expectedSource)
     explanationSourceCounts[question.grading.explanationSource] += 1
     assert.match(question.id, new RegExp(`^nysed-ela-${exam.year}-g${exam.grade}-mc-q\\d+$`))
     assert.equal(getElaExamQuestion(question.id), question)
@@ -306,7 +662,8 @@ test('active ELA questions have substantive sourced explanations with server-onl
   }
 
   assert.deepEqual(explanationSourceCounts, {
-    'official-nysed': 149,
+    'official-nysed': 147,
+    'official-nysed-corrected': 2,
     'vine-authored': 1_434,
   })
 })

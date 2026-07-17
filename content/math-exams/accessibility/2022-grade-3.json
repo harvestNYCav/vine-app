@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2022-grade-3-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2022-g3-mc-q1": {
+      "inputHash": "5385469659eeb48f7f3b64c50551c39b56f64bb79cda8e0e6c8c2e473192f285",
+      "description": {
+        "en": "Question 1. Mr. Green buys 4 packages of cups, with 8 cups in each package. Which expression can be used to find the number of cups he buys? Choices: A: 8 ÷ 4; B: 8 − 4; C: 8 + 4; D: 8 × 4.",
+        "es": "Pregunta 1. El señor Green compra 4 paquetes de tazas, con 8 tazas en cada paquete. ¿Qué expresión puede usarse para averiguar la cantidad de tazas que compra? Opciones: A: 8 ÷ 4; B: 8 − 4; C: 8 + 4; D: 8 × 4."
+      }
+    },
+    "nysed-2022-g3-mc-q2": {
+      "inputHash": "8c7e2e4e6ec790cf4358864c7642e194528089760d6765ceca84e85bf86b0a21",
+      "description": {
+        "en": "Question 2. A number line from 0 to 1 is divided into 3 equal intervals. Point M is at the second division point. Which fraction is represented by M? Choices: A: 3/4; B: 2/4; C: 3/2; D: 2/3.",
+        "es": "Pregunta 2. Una recta numérica de 0 a 1 está dividida en 3 intervalos iguales. El punto M está en la segunda marca de división. ¿Qué fracción representa M? Opciones: A: 3/4; B: 2/4; C: 3/2; D: 2/3."
+      }
+    },
+    "nysed-2022-g3-mc-q3": {
+      "inputHash": "d384e9fd3cd6e2b120223cfbe6a9aade4b653e051372b69c02d75ec8f4a1c264",
+      "description": {
+        "en": "Question 3. An L-shaped figure combines two rectangles. Its bottom is 9 centimeters, left side is 5 centimeters, right side is 3 centimeters, and top-left horizontal segment is 5 centimeters. What is its area in square centimeters? Choices: A: 22; B: 37; C: 45; D: 52.",
+        "es": "Pregunta 3. Una figura en forma de L combina dos rectángulos. La base mide 9 centímetros, el lado izquierdo 5 centímetros, el lado derecho 3 centímetros y el segmento horizontal superior izquierdo 5 centímetros. ¿Cuál es su área en centímetros cuadrados? Opciones: A: 22; B: 37; C: 45; D: 52."
+      }
+    },
+    "nysed-2022-g3-mc-q4": {
+      "inputHash": "f476085eafac1381f3969afede1e84f5e5b3e11a099a08615ccbd4b30f040d38",
+      "description": {
+        "en": "Question 4. A worker has 3 bags of pebbles, and each bag has a mass of 9 kilograms. What is the total mass, in kilograms, of all the bags? Choices: A: 3; B: 6; C: 12; D: 27.",
+        "es": "Pregunta 4. Un trabajador tiene 3 bolsas de piedritas y cada bolsa tiene una masa de 9 kilogramos. ¿Cuál es la masa total, en kilogramos, de todas las bolsas? Opciones: A: 3; B: 6; C: 12; D: 27."
+      }
+    },
+    "nysed-2022-g3-mc-q9": {
+      "inputHash": "6a6de9662f73d44b1694fb8c113614662c8c87a45e4b19f14b5a7b36bfcb01f8",
+      "description": {
+        "en": "Question 9. Which expression is equivalent to 5 × 7? Choices: A: 5 + (4 + 3); B: 5 × (4 × 3); C: (5 + 3) × (5 + 4); D: (5 × 3) + (5 × 4).",
+        "es": "Pregunta 9. ¿Qué expresión es equivalente a 5 × 7? Opciones: A: 5 + (4 + 3); B: 5 × (4 × 3); C: (5 + 3) × (5 + 4); D: (5 × 3) + (5 × 4)."
+      }
+    },
+    "nysed-2022-g3-mc-q10": {
+      "inputHash": "9dc67cfb15cc428e9fd128262e64c31993e6fac956a31e3f47734dc26f9dfbdf",
+      "description": {
+        "en": "Question 10. Zach earns the same amount each week doing yard work. If he earns $36 after 4 weeks, how much does he earn each week? Choices: A: $9; B: $32; C: $40; D: $144.",
+        "es": "Pregunta 10. Zach gana la misma cantidad cada semana trabajando en el jardín. Si gana $36 después de 4 semanas, ¿cuánto gana cada semana? Opciones: A: $9; B: $32; C: $40; D: $144."
+      }
+    },
+    "nysed-2022-g3-mc-q11": {
+      "inputHash": "8b6c3c794ed590aac7767f133cc45ce4c1c5591e28292f0ff1b266f75867c7a7",
+      "description": {
+        "en": "Question 11. What is the value of 7 × 70? Choices: A: 49; B: 77; C: 490; D: 770.",
+        "es": "Pregunta 11. ¿Cuál es el valor de 7 × 70? Opciones: A: 49; B: 77; C: 490; D: 770."
+      }
+    },
+    "nysed-2022-g3-mc-q12": {
+      "inputHash": "42e57960a54777d44ba0fbc3acc35354201067f9bb5a5b055440c05f353fac21",
+      "description": {
+        "en": "Question 12. A student draws a rectangle with two sides measuring 1 unit and the other two sides measuring 2 units. What is the area? Choices: A: 2 square units; B: 4 units; C: 4 square units; D: 6 units.",
+        "es": "Pregunta 12. Un alumno dibuja un rectángulo con dos lados de 1 unidad y los otros dos lados de 2 unidades. ¿Cuál es el área? Opciones: A: 2 unidades cuadradas; B: 4 unidades; C: 4 unidades cuadradas; D: 6 unidades."
+      }
+    },
+    "nysed-2022-g3-mc-q15": {
+      "inputHash": "cb203e5a5bf4d92b11d1a5e8987d9d4cdf28a4aa8c08dbf2c027d9fe8f06ce0d",
+      "description": {
+        "en": "Question 15. What number makes the equation 48 ÷ blank = 8 true? Choices: A: 6; B: 7; C: 40; D: 56.",
+        "es": "Pregunta 15. ¿Qué número hace que la ecuación 48 ÷ espacio en blanco = 8 sea verdadera? Opciones: A: 6; B: 7; C: 40; D: 56."
+      }
+    },
+    "nysed-2022-g3-mc-q16": {
+      "inputHash": "3b130f81774112ab2aaca178d6f60a7aa3cdb22fd6b56aa956c5f1bb19bcd4b8",
+      "description": {
+        "en": "Question 16. A model is divided into 4 equal vertical parts with the first 2 shaded. Which figure shows an equivalent shaded fraction? Choices: A: 4 of 6 equal parts shaded; B: 2 of 6 shaded; C: 2 of 8 shaded; D: 4 of 8 shaded.",
+        "es": "Pregunta 16. Un modelo está dividido en 4 partes verticales iguales y las primeras 2 están sombreadas. ¿Qué figura muestra una fracción sombreada equivalente? Opciones: A: 4 de 6 partes iguales sombreadas; B: 2 de 6 sombreadas; C: 2 de 8 sombreadas; D: 4 de 8 sombreadas."
+      }
+    },
+    "nysed-2022-g3-mc-q22": {
+      "inputHash": "a4be9515671c05d75a988a9242872d12ca3f0d6d59cdb164809232743a3236da",
+      "description": {
+        "en": "Question 22. Greg walks 1 mile from home at 0 to a store at 1. He smells a flower after 2/6 mile, then walks another 3/6 mile before tying his shoe. Which number line shows both stops? Choices: A: sixths, with stops at 1/6 and 4/6; B: sixths, with stops at 2/6 and 5/6; C: eighths, with stops at 2/8 and 5/8; D: eighths, with stops at 1/8 and 4/8.",
+        "es": "Pregunta 22. Greg camina 1 milla desde su casa en 0 hasta una tienda en 1. Huele una flor después de 2/6 de milla y camina otros 3/6 antes de atarse los cordones. ¿Qué recta muestra ambas paradas? Opciones: A: sextos, con paradas en 1/6 y 4/6; B: sextos, con paradas en 2/6 y 5/6; C: octavos, con paradas en 2/8 y 5/8; D: octavos, con paradas en 1/8 y 4/8."
+      }
+    },
+    "nysed-2022-g3-mc-q26": {
+      "inputHash": "a5e61a7cb78deb61c942722078d27e58cf728f3b22359bec6878e574defc1359",
+      "description": {
+        "en": "Question 26. Which rectangle is divided into 4 equal parts? Choices: A: one short top strip and three taller bottom regions; B: a 2-by-2 grid of congruent rectangles; C: four horizontal strips of unequal heights; D: four vertical strips of unequal widths.",
+        "es": "Pregunta 26. ¿Qué rectángulo está dividido en 4 partes iguales? Opciones: A: una franja superior baja y tres regiones inferiores más altas; B: una cuadrícula de 2 por 2 rectángulos congruentes; C: cuatro franjas horizontales de alturas desiguales; D: cuatro franjas verticales de anchos desiguales."
+      }
+    },
+    "nysed-2022-g3-mc-q27": {
+      "inputHash": "a1847e710bd9158178ab3f8b14ae6003719a5bf80b6d1bdc40833232cf49858f",
+      "description": {
+        "en": "Question 27. A pet store has 4 fish tanks of the same size. A worker puts 10 liters of water in each tank. How many liters does the worker put in all the tanks? Choices: A: 4; B: 6; C: 14; D: 40.",
+        "es": "Pregunta 27. Una tienda de mascotas tiene 4 peceras del mismo tamaño. Un trabajador coloca 10 litros de agua en cada una. ¿Cuántos litros coloca en todas las peceras? Opciones: A: 4; B: 6; C: 14; D: 40."
+      }
+    },
+    "nysed-2022-g3-mc-q28": {
+      "inputHash": "4631e33e395940b07589a5afab5ccc9aae7b3b3db3e6f65d63a1770d61be296a",
+      "description": {
+        "en": "Question 28. Which rectangular array represents 3 × 6? Choices: A: 4 rows and 6 columns; B: 3 rows and 5 columns; C: 3 rows and 6 columns; D: 4 rows and 7 columns.",
+        "es": "Pregunta 28. ¿Qué modelo rectangular representa 3 × 6? Opciones: A: 4 filas y 6 columnas; B: 3 filas y 5 columnas; C: 3 filas y 6 columnas; D: 4 filas y 7 columnas."
+      }
+    },
+    "nysed-2022-g3-mc-q29": {
+      "inputHash": "f5bbcc1ff062bb419e992faee6baa95f6edaa32092168c00476b587fdb782240",
+      "description": {
+        "en": "Question 29. Which number pattern uses the rule add 3? Choices: A: 2, 6, 18, 48, and so on; B: 3, 7, 11, 15, and so on; C: 3, 9, 27, 54, and so on; D: 4, 7, 10, 13, and so on.",
+        "es": "Pregunta 29. ¿Qué patrón numérico usa la regla sumar 3? Opciones: A: 2, 6, 18, 48 y así sucesivamente; B: 3, 7, 11, 15 y así sucesivamente; C: 3, 9, 27, 54 y así sucesivamente; D: 4, 7, 10, 13 y así sucesivamente."
+      }
+    },
+    "nysed-2022-g3-mc-q30": {
+      "inputHash": "97312c49f03ee1f0ec165cb28240fb12e52087d8e097b1e885c6ccc1e81d8533",
+      "description": {
+        "en": "Question 30. Which fraction is less than 1/4? Choices: A: 2/4; B: 4/4; C: 1/3; D: 1/6.",
+        "es": "Pregunta 30. ¿Qué fracción es menor que 1/4? Opciones: A: 2/4; B: 4/4; C: 1/3; D: 1/6."
+      }
+    },
+    "nysed-2022-g3-mc-q31": {
+      "inputHash": "5c34798475ec020e77378a223c8eb8be428758e99c90fdf6a84a2f72508fc5c2",
+      "description": {
+        "en": "Question 31. Mica has 35 gumballs and gives all of them equally to 7 friends. Which expression finds the number each friend gets? Choices: A: 35 − 7; B: 35 ÷ 7; C: 35 + 7; D: 35 × 7.",
+        "es": "Pregunta 31. Mica tiene 35 gomas de mascar y las reparte por igual entre 7 amigos. ¿Qué expresión averigua cuántas recibe cada amigo? Opciones: A: 35 − 7; B: 35 ÷ 7; C: 35 + 7; D: 35 × 7."
+      }
+    },
+    "nysed-2022-g3-mc-q32": {
+      "inputHash": "1295533e92611b375ebc85c8adab1134b6213e3d20bda9b0b86cb624368eb548",
+      "description": {
+        "en": "Question 32. A figure is made of unit squares, some shaded and some unshaded. Which process finds the area, in square units, of the shaded part? Choices: A: count every unit square in the figure; B: count only the shaded unit squares; C: add every side length in the figure; D: add only side lengths of the shaded part.",
+        "es": "Pregunta 32. Una figura está hecha de cuadrados unitarios, algunos sombreados y otros sin sombrear. ¿Qué proceso averigua el área, en unidades cuadradas, de la parte sombreada? Opciones: A: contar todos los cuadrados unitarios; B: contar solo los cuadrados sombreados; C: sumar todas las longitudes de los lados; D: sumar solo las longitudes de los lados de la parte sombreada."
+      }
+    },
+    "nysed-2022-g3-mc-q33": {
+      "inputHash": "d6dcc51239d9709aceb1306b43ef82be57309bd296113aeac7680c24142eecba",
+      "description": {
+        "en": "Question 33. A number line from 0 to 1 is divided into 6 equal intervals, with a point at the fourth division mark, 4/6. Which equivalent fraction represents the point? Choices: A: 1/3; B: 2/3; C: 2/4; D: 3/4.",
+        "es": "Pregunta 33. Una recta numérica de 0 a 1 está dividida en 6 intervalos iguales, con un punto en la cuarta marca, 4/6. ¿Qué fracción equivalente representa el punto? Opciones: A: 1/3; B: 2/3; C: 2/4; D: 3/4."
+      }
+    }
+  }
+}

@@ -84,7 +84,7 @@
       }
     },
     "nysed-2023-g8-mc-q20": {
-      "inputHash": "8d01357e9c9e7f0ccf1b4ade9b353c4867e1cb592c063578090ff0210dc268f7",
+      "inputHash": "0d265d2fc47e660e2283b05df67861e07d808484adc923df3c8a503eddfd323e",
       "explanation": {
         "text": {
           "en": "Using (9,0) and (0,−5), the slope is (0 − (−5))/(9 − 0) = 5/9, and the y-intercept is −5. The equation is y = (5/9)x − 5.",
@@ -127,8 +127,8 @@
       "inputHash": "eff7762a873c53619f443ac30f25cee9f45f795c4b2b9c52a0558e3cda8ce57c",
       "explanation": {
         "text": {
-          "en": "The marked angles are alternate interior angles, so 13x + 6 = 11x + 30. Solving gives 2x = 24 and x = 12.",
-          "es": "Los ángulos marcados son alternos internos, así que 13x + 6 = 11x + 30. Al resolver se obtiene 2x = 24 y x = 12."
+        "en": "The marked angles are corresponding angles formed by a transversal across parallel lines, so 13x + 6 = 11x + 30. Solving gives 2x = 24 and x = 12.",
+        "es": "Los ángulos marcados son correspondientes, formados por una transversal que cruza rectas paralelas, así que 13x + 6 = 11x + 30. Al resolver se obtiene 2x = 24 y x = 12."
         },
         "source": "vine-authored"
       }

@@ -1,0 +1,818 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2018-grade-5-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2018-g5-mc-q1": {
+      "inputHash": "17db034ecd3770242c2f843f0ecccfb5929036ce6482b51af3c061fd7eab2eb0",
+      "description": {
+        "en": "Question 1. Mr. Smith has 1,104 student photos to display around the school. He plans to put them on 48 poster boards with the same number of photos on each poster board. How many student photos will Mr. Smith place on each poster board? Choices: A: 20. B: 22. C: 23. D: 24.",
+        "es": "Pregunta 1. El señor Smith tiene 1,104 fotos de alumnos para mostrar en la escuela. Planea colocarlas en 48 cartulinas con la misma cantidad de fotos en cada cartulina. ¿Cuántas fotos de alumnos colocará el señor Smith en cada cartulina? Opciones: A: 20 B: 22 C: 23 D: 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1,104",
+          "48",
+          "20",
+          "22",
+          "23",
+          "24",
+          "A: 20",
+          "B: 22",
+          "C: 23",
+          "D: 24"
+        ],
+        "es": [
+          "1,104",
+          "48",
+          "20",
+          "22",
+          "23",
+          "24",
+          "A: 20",
+          "B: 22",
+          "C: 23",
+          "D: 24"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q2": {
+      "inputHash": "f070f8a79391b8692d40f496bb7bd45f3d18fb2be08edf4aef15eb8dfd09d6c2",
+      "description": {
+        "en": "Question 2. The shaded parts of the models below each represent a fraction. The first model is a square divided into 100 equal cells arranged in 10 rows and 10 columns. All cells in the first four columns are shaded, and the bottom two cells of the fifth column are also shaded, for 42 shaded cells. A plus sign separates this model from a rectangle divided into 10 equal vertical strips, of which the first 3 strips are shaded. What is the sum of the fractions? Choices: A: 45/110. B: 65/110. C: 70/100. D: 72/100.",
+        "es": "Pregunta 2. Cada una de las partes sombreadas de los siguientes modelos representa una fracción. El primer modelo es una cuadrícula de 10 filas por 10 columnas, es decir, 100 cuadrados iguales. Están sombreados los 40 cuadrados de las primeras 4 columnas y, además, los 2 cuadrados inferiores de la quinta columna; en total, 42 de 100 cuadrados están sombreados. A la derecha aparece un signo + y un segundo modelo rectangular dividido en 10 franjas verticales iguales. Las primeras 3 franjas están sombreadas, por lo que representa 3/10. ¿Cuál es la suma de las fracciones? Opciones: A: 45/110 B: 65/110 C: 70/100 D: 72/100"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "100",
+          "10",
+          "42",
+          "3",
+          "45/110",
+          "65/110",
+          "70/100",
+          "72/100",
+          "A: 45/110",
+          "B: 65/110",
+          "C: 70/100",
+          "D: 72/100"
+        ],
+        "es": [
+          "10 filas por 10 columnas",
+          "100",
+          "40",
+          "5",
+          "3/10",
+          "+",
+          "45/110",
+          "65/110",
+          "70/100",
+          "72/100",
+          "42 de 100",
+          "2 cuadrados inferiores",
+          "A: 45/110",
+          "B: 65/110",
+          "C: 70/100",
+          "D: 72/100"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q3": {
+      "inputHash": "fbea0ed7798d2d3438de5dba0e0b315e289e593ca64aecf3b699eb49390f9c32",
+      "description": {
+        "en": "Question 3. Jake used 1-centimeter cubes to build a right rectangular prism that has a volume of 24 cubic centimeters. Which figure could represent the prism that Jake built? Each figure has a key stating that one unit cube equals 1 cubic cm. Choices: A: A rectangular prism measuring 3 unit cubes by 2 unit cubes by 2 unit cubes. B: A long rectangular prism measuring 12 unit cubes by 2 unit cubes by 1 unit cube. C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 7 unit cubes. D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 7 unit cubes.",
+        "es": "Pregunta 3. Jake usó cubos de 1 centímetro para construir un prisma rectangular recto que tiene un volumen de 24 centímetros cúbicos. ¿Qué figura podría representar el prisma que construyó Jake? En cada opción, una referencia indica que cada cubo representa 1 centímetro cúbico. Opciones: A: Prisma rectangular formado por 3 cubos de largo, 2 cubos de ancho y 2 cubos de alto. B: Prisma rectangular alargado formado por 12 cubos de largo, 2 cubos de ancho y 1 cubo de alto. C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 7 cubos de alto. D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 7 cubos de alto."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1-centimeter",
+          "24 cubic centimeters",
+          "1 cubic cm",
+          "3",
+          "2",
+          "12",
+          "1",
+          "6",
+          "8",
+          "3 unit cubes by 2 unit cubes by 2 unit cubes",
+          "8 unit cubes by 6 unit cubes by 7 unit cubes",
+          "8 unit cubes by 8 unit cubes by 7 unit cubes",
+          "A: A rectangular prism measuring 3 unit cubes by 2 unit cubes by 2 unit cubes",
+          "B: A long rectangular prism measuring 12 unit cubes by 2 unit cubes by 1 unit cube",
+          "C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 7 unit cubes",
+          "D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 7 unit cubes"
+        ],
+        "es": [
+          "1 centímetro",
+          "24 centímetros cúbicos",
+          "1 centímetro cúbico",
+          "3 cubos de largo",
+          "2 cubos de ancho",
+          "2 cubos de alto",
+          "12 cubos de largo",
+          "1 cubo de alto",
+          "8 cubos de largo",
+          "6 cubos de ancho",
+          "7 cubos de alto",
+          "8 cubos de ancho",
+          "A: Prisma rectangular formado por 3 cubos de largo, 2 cubos de ancho y 2 cubos de alto",
+          "B: Prisma rectangular alargado formado por 12 cubos de largo, 2 cubos de ancho y 1 cubo de alto",
+          "C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 7 cubos de alto",
+          "D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 7 cubos de alto"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q10": {
+      "inputHash": "56a3e639b5d5c448e2dbb693ea46b8eaa855acb0a79f8e53099748882a1587e3",
+      "description": {
+        "en": "Question 10. A school librarian ordered new books for the library. Of the new books ordered, 1/3 are science, 2/5 are biography, and the rest of the books are fiction. What fraction of the books ordered are fiction? Choices: A: 3/5. B: 3/8. C: 4/15. D: 11/15.",
+        "es": "Pregunta 10. Un bibliotecario pidió libros nuevos para la biblioteca de la escuela. Del pedido de libros nuevos, 1/3 son de ciencias, 2/5 son biografías y el resto de los libros son de ficción. ¿Qué fracción del pedido son libros de ficción? Opciones: A: 3/5 B: 3/8 C: 4/15 D: 11/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3",
+          "2/5",
+          "3/5",
+          "3/8",
+          "4/15",
+          "11/15",
+          "A: 3/5",
+          "B: 3/8",
+          "C: 4/15",
+          "D: 11/15"
+        ],
+        "es": [
+          "1/3",
+          "2/5",
+          "3/5",
+          "3/8",
+          "4/15",
+          "11/15",
+          "A: 3/5",
+          "B: 3/8",
+          "C: 4/15",
+          "D: 11/15"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q11": {
+      "inputHash": "254cc6f281802141a13d3f25f81fca280dc9772ede7d7e7ec6e18a43395ee3ad",
+      "description": {
+        "en": "Question 11. The model below is shaded to represent an expression. Two equal rectangles are each divided into 5 equal vertical parts. All 5 parts of the first rectangle and the first part of the second rectangle are shaded. Braces group the 6 shaded fifths into 3 groups, with 2/5 of a rectangle in each group; the third group spans the last fifth of the first rectangle and the shaded first fifth of the second rectangle. Which expression represents the model? Choices: A: 1/3 × 2/5. B: 1/3 × 5/2. C: 3 × 2/5. D: 3 × 5/2.",
+        "es": "Pregunta 11. El siguiente modelo está sombreado para representar una expresión. Hay dos rectángulos, cada uno dividido en 5 franjas verticales iguales. Las 5 franjas del primer rectángulo están sombreadas y 1 de las 5 franjas del segundo está sombreada, para un total sombreado de 6/5. Debajo de los rectángulos, llaves agrupan las franjas sombreadas en 3 grupos iguales; cada grupo contiene 2 franjas de tamaño 1/5, es decir, 2/5. ¿Qué expresión representa el modelo? Opciones: A: 1/3 × 2/5 B: 1/3 × 5/2 C: 3 × 2/5 D: 3 × 5/2"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5",
+          "6",
+          "3",
+          "2/5",
+          "1/3 × 2/5",
+          "1/3 × 5/2",
+          "3 × 2/5",
+          "3 × 5/2",
+          "A: 1/3 × 2/5",
+          "B: 1/3 × 5/2",
+          "C: 3 × 2/5",
+          "D: 3 × 5/2",
+          "1/3",
+          "5/2"
+        ],
+        "es": [
+          "5",
+          "1 de las 5",
+          "6/5",
+          "3 grupos",
+          "2/5",
+          "1/3 × 2/5",
+          "1/3 × 5/2",
+          "3 × 2/5",
+          "3 × 5/2",
+          "A: 1/3 × 2/5",
+          "B: 1/3 × 5/2",
+          "C: 3 × 2/5",
+          "D: 3 × 5/2",
+          "1/5",
+          "1/3",
+          "5/2"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q13": {
+      "inputHash": "56f94e9392aff1c002cfb83a38503cb75b5adf5755ac713352fedf4943602eb1",
+      "description": {
+        "en": "Question 13. Which shape always has four congruent sides? Choices: A: parallelogram. B: rectangle. C: rhombus. D: trapezoid.",
+        "es": "Pregunta 13. ¿Qué figura siempre tiene cuatro lados congruentes? Opciones: A: paralelogramo B: rectángulo C: rombo D: trapecio"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "four",
+          "parallelogram",
+          "rectangle",
+          "rhombus",
+          "trapezoid",
+          "A: parallelogram",
+          "B: rectangle",
+          "C: rhombus",
+          "D: trapezoid"
+        ],
+        "es": [
+          "cuatro lados congruentes",
+          "paralelogramo",
+          "rectángulo",
+          "rombo",
+          "trapecio",
+          "A: paralelogramo",
+          "B: rectángulo",
+          "C: rombo",
+          "D: trapecio"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q14": {
+      "inputHash": "66201e424fac2bffd9218627416903f9d3a5902d72f8c65781bae80add8cd065",
+      "description": {
+        "en": "Question 14. Which statement describes the value of the expression 67 × 1/6? Choices: A: The value is less than 67. B: The value is equal to 67. C: The value is greater than 67. D: The value is greater than 0 and less than 1.",
+        "es": "Pregunta 14. ¿Qué afirmación describe el valor de la siguiente expresión? 67 × 1/6. Opciones: A: El valor es menor que 67. B: El valor es igual a 67. C: El valor es mayor que 67. D: El valor es mayor que 0 y menor que 1."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "67 × 1/6",
+          "less than 67",
+          "equal to 67",
+          "greater than 67",
+          "greater than 0 and less than 1",
+          "A: The value is less than 67",
+          "B: The value is equal to 67",
+          "C: The value is greater than 67",
+          "D: The value is greater than 0 and less than 1",
+          "1/6"
+        ],
+        "es": [
+          "67 × 1/6",
+          "menor que 67",
+          "igual a 67",
+          "mayor que 67",
+          "mayor que 0 y menor que 1",
+          "A: El valor es menor que 67",
+          "B: El valor es igual a 67",
+          "C: El valor es mayor que 67",
+          "D: El valor es mayor que 0 y menor que 1",
+          "1/6"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q17": {
+      "inputHash": "2cbb8cdab5806ed41de06e407a06073ca0d664df627224a528bf2a948d1700dd",
+      "description": {
+        "en": "Question 17. The diagram below shows some 1-inch cubes placed in a box. The rectangular box measures 8 in. long, 3 in. deep, and 5 in. high. A complete bottom layer of cubes fills the 8-by-3-inch base to a height of 1 in.; the remaining space above that layer is empty. How many more 1-inch cubes are needed to completely fill the box? Choices: A: 16. B: 24. C: 96. D: 120.",
+        "es": "Pregunta 17. El siguiente diagrama muestra algunos cubos de 1 pulgada dentro de una caja rectangular. La caja mide 8 in de largo, 3 in de profundidad y 5 in de alto. En el fondo de la caja hay una sola capa completa de cubos de 1 pulgada de arista: 8 cubos a lo largo por 3 cubos a lo profundo, con una altura ocupada de 1 in. El espacio restante sobre esa capa tiene 4 in de altura. ¿Cuántos cubos más de 1 pulgada se necesitan para llenar la caja por completo? Opciones: A: 16 B: 24 C: 96 D: 120"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1-inch",
+          "8 in",
+          "3 in",
+          "5 in",
+          "1 in",
+          "8-by-3-inch",
+          "16",
+          "24",
+          "96",
+          "120",
+          "A: 16",
+          "B: 24",
+          "C: 96",
+          "D: 120"
+        ],
+        "es": [
+          "1 pulgada",
+          "8 in",
+          "3 in",
+          "5 in",
+          "8 cubos",
+          "3 cubos",
+          "1 in",
+          "4 in",
+          "16",
+          "24",
+          "96",
+          "120",
+          "A: 16",
+          "B: 24",
+          "C: 96",
+          "D: 120"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q18": {
+      "inputHash": "5971186d16916fadf616896ca92939a0920d6e0cefa273042b7d8877fb408db8",
+      "description": {
+        "en": "Question 18. Which expression has a value that is greater than 42.537? Choices: A: (4 × 10) + (2 × 1) + (5 × 1/10) + (9 × 1/100) + (3 × 1/1,000) B: (4 × 10) + (1 × 1) + (6 × 1/10) + (2 × 1/100) + (5 × 1/1,000) C: (4 × 10) + (2 × 1) + (5 × 1/10) + (3 × 1/100) + (7 × 1/1,000) D: (4 × 10) + (2 × 1) + (5 × 1/10) + (1 × 1/100) + (9 × 1/1,000)",
+        "es": "Pregunta 18. ¿Qué expresión tiene un valor mayor que 42.537? Opciones: A: (4 × 10) + (2 × 1) + (5 × 1/10) + (9 × 1/100) + (3 × 1/1,000) B: (4 × 10) + (1 × 1) + (6 × 1/10) + (2 × 1/100) + (5 × 1/1,000) C: (4 × 10) + (2 × 1) + (5 × 1/10) + (3 × 1/100) + (7 × 1/1,000) D: (4 × 10) + (2 × 1) + (5 × 1/10) + (1 × 1/100) + (9 × 1/1,000)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "42.537",
+          "(4 × 10) + (2 × 1) + (5 × 1/10) + (9 × 1/100) + (3 × 1/1,000)",
+          "(4 × 10) + (1 × 1) + (6 × 1/10) + (2 × 1/100) + (5 × 1/1,000)",
+          "(4 × 10) + (2 × 1) + (5 × 1/10) + (3 × 1/100) + (7 × 1/1,000)",
+          "(4 × 10) + (2 × 1) + (5 × 1/10) + (1 × 1/100) + (9 × 1/1,000)",
+          "A: (4 × 10) + (2 × 1) + (5 × 1/10) + (9 × 1/100) + (3 × 1/1,000)",
+          "B: (4 × 10) + (1 × 1) + (6 × 1/10) + (2 × 1/100) + (5 × 1/1,000)",
+          "C: (4 × 10) + (2 × 1) + (5 × 1/10) + (3 × 1/100) + (7 × 1/1,000)",
+          "D: (4 × 10) + (2 × 1) + (5 × 1/10) + (1 × 1/100) + (9 × 1/1,000)",
+          "(4 × 10)",
+          "(2 × 1)",
+          "(5 × 1/10)",
+          "(9 × 1/100)",
+          "(3 × 1/1,000)",
+          "(1 × 1)",
+          "(6 × 1/10)",
+          "(2 × 1/100)",
+          "(5 × 1/1,000)",
+          "(3 × 1/100)",
+          "(7 × 1/1,000)",
+          "(1 × 1/100)",
+          "(9 × 1/1,000)"
+        ],
+        "es": [
+          "42.537",
+          "(4 × 10) + (2 × 1) + (5 × 1/10) + (9 × 1/100) + (3 × 1/1,000)",
+          "(4 × 10) + (1 × 1) + (6 × 1/10) + (2 × 1/100) + (5 × 1/1,000)",
+          "(4 × 10) + (2 × 1) + (5 × 1/10) + (3 × 1/100) + (7 × 1/1,000)",
+          "(4 × 10) + (2 × 1) + (5 × 1/10) + (1 × 1/100) + (9 × 1/1,000)",
+          "A: (4 × 10) + (2 × 1) + (5 × 1/10) + (9 × 1/100) + (3 × 1/1,000)",
+          "B: (4 × 10) + (1 × 1) + (6 × 1/10) + (2 × 1/100) + (5 × 1/1,000)",
+          "C: (4 × 10) + (2 × 1) + (5 × 1/10) + (3 × 1/100) + (7 × 1/1,000)",
+          "D: (4 × 10) + (2 × 1) + (5 × 1/10) + (1 × 1/100) + (9 × 1/1,000)",
+          "(4 × 10)",
+          "(2 × 1)",
+          "(5 × 1/10)",
+          "(9 × 1/100)",
+          "(3 × 1/1,000)",
+          "(1 × 1)",
+          "(6 × 1/10)",
+          "(2 × 1/100)",
+          "(5 × 1/1,000)",
+          "(3 × 1/100)",
+          "(7 × 1/1,000)",
+          "(1 × 1/100)",
+          "(9 × 1/1,000)"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q24": {
+      "inputHash": "28eda801668d6617eccc61da4d7cc6a51ed6e29ff9c248bc5ee800cdbadf2da8",
+      "description": {
+        "en": "Question 24. A state fair held a heaviest-pumpkin contest. The winning pumpkin weighed 2,050 pounds. What is the weight, in ounces, of the winning pumpkin? Choices: A: 8,200 B: 16,400 C: 24,600 D: 32,800",
+        "es": "Pregunta 24. Una feria estatal organizó un concurso de la calabaza más pesada. La calabaza ganadora pesó 2,050 libras. ¿Cuál es el peso, en onzas, de la calabaza ganadora? Opciones: A: 8,200 B: 16,400 C: 24,600 D: 32,800"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "2,050 pounds",
+          "8,200",
+          "16,400",
+          "24,600",
+          "32,800",
+          "A: 8,200",
+          "B: 16,400",
+          "C: 24,600",
+          "D: 32,800"
+        ],
+        "es": [
+          "2,050 libras",
+          "8,200",
+          "16,400",
+          "24,600",
+          "32,800",
+          "A: 8,200",
+          "B: 16,400",
+          "C: 24,600",
+          "D: 32,800"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q25": {
+      "inputHash": "d80cd9460ec4d8c9a3b7ccce83339b0ed15adc116b93964b3b14e1fa8e4e19f7",
+      "description": {
+        "en": "Question 25. Which expression can be used to represent 8 more than the product of 15 and 12? Choices: A: 15 × 12 + 8 B: (15 + 12) × 8 C: 15 × 12 × 8 D: 15 × (12 + 8)",
+        "es": "Pregunta 25. ¿Qué expresión se puede usar para representar 8 más que el producto de 15 y 12? Opciones: A: 15 × 12 + 8 B: (15 + 12) × 8 C: 15 × 12 × 8 D: 15 × (12 + 8)"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "15 × 12 + 8",
+          "(15 + 12) × 8",
+          "15 × 12 × 8",
+          "15 × (12 + 8)",
+          "A: 15 × 12 + 8",
+          "B: (15 + 12) × 8",
+          "C: 15 × 12 × 8",
+          "D: 15 × (12 + 8)",
+          "(15 + 12)",
+          "(12 + 8)"
+        ],
+        "es": [
+          "8",
+          "15",
+          "12",
+          "15 × 12 + 8",
+          "(15 + 12) × 8",
+          "15 × 12 × 8",
+          "15 × (12 + 8)",
+          "A: 15 × 12 + 8",
+          "B: (15 + 12) × 8",
+          "C: 15 × 12 × 8",
+          "D: 15 × (12 + 8)",
+          "(15 + 12)",
+          "(12 + 8)"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q28": {
+      "inputHash": "c9ddd076eed10748949e0ee224e95728330879e12072cecdbe6c6c23a794c550",
+      "description": {
+        "en": "Question 28. The volume of a single layer in a rectangular prism is 18 cubic centimeters. There are 5 layers in this rectangular prism. What is the volume, in cubic centimeters, of this rectangular prism? Choices: A: 90 B: 23 C: 13 D: 3.6",
+        "es": "Pregunta 28. El volumen de una sola capa en un prisma rectangular es de 18 centímetros cúbicos. Hay 5 capas en este prisma rectangular. ¿Cuál es el volumen, en centímetros cúbicos, de este prisma rectangular? Opciones: A: 90 B: 23 C: 13 D: 3.6"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "18 cubic centimeters",
+          "5 layers",
+          "90",
+          "23",
+          "13",
+          "3.6",
+          "A: 90",
+          "B: 23",
+          "C: 13",
+          "D: 3.6"
+        ],
+        "es": [
+          "18 centímetros cúbicos",
+          "5 capas",
+          "90",
+          "23",
+          "13",
+          "3.6",
+          "A: 90",
+          "B: 23",
+          "C: 13",
+          "D: 3.6"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q29": {
+      "inputHash": "e7c6907af909be74a2770f123f3a7425c112c6eb4a94d9f769b66a973f34b391",
+      "description": {
+        "en": "Question 29. Which situation could the expression 1/4 ÷ 3 represent? Choices: A: 1/4 of a package of pencils shared equally among three friends B: the number of 1/4-cup servings in three cups of popcorn C: 1/3 of a stadium split into four equal sections D: a four-foot-long rope cut into 1/3-foot pieces",
+        "es": "Pregunta 29. ¿Qué situación podría representar la expresión 1/4 ÷ 3? Opciones: A: 1/4 de un paquete de lápices distribuidos en forma equitativa entre tres amigos B: el número de porciones de 1/4 de taza en tres tazas de palomitas de maíz C: 1/3 de un estadio dividido en cuatro secciones iguales D: una cuerda de cuatro pies de largo cortada en trozos de 1/3 de pie"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/4 ÷ 3",
+          "1/4",
+          "three friends",
+          "1/4-cup",
+          "three cups",
+          "1/3",
+          "four equal sections",
+          "four-foot-long",
+          "1/3-foot",
+          "A: 1/4 of a package of pencils shared equally among three friends",
+          "B: the number of 1/4-cup servings in three cups of popcorn",
+          "C: 1/3 of a stadium split into four equal sections",
+          "D: a four-foot-long rope cut into 1/3-foot pieces"
+        ],
+        "es": [
+          "1/4 ÷ 3",
+          "1/4 de un paquete",
+          "tres amigos",
+          "1/4 de taza",
+          "tres tazas",
+          "1/3 de un estadio",
+          "cuatro secciones",
+          "cuatro pies",
+          "1/3 de pie",
+          "A: 1/4 de un paquete de lápices distribuidos en forma equitativa entre tres amigos",
+          "B: el número de porciones de 1/4 de taza en tres tazas de palomitas de maíz",
+          "C: 1/3 de un estadio dividido en cuatro secciones iguales",
+          "D: una cuerda de cuatro pies de largo cortada en trozos de 1/3 de pie",
+          "1/4",
+          "1/3"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q30": {
+      "inputHash": "754bd973c1eaa7b561044b9f2d701f738a23157cd6f7938860b11f214f4c68c9",
+      "description": {
+        "en": "Question 30. Caley builds a rectangular prism using 18 cubes that each measure 1 centimeter on each side. What could be the dimensions of her rectangular prism? Choices: A: length: 2 cm; width: 2 cm; height: 3 cm B: length: 2 cm; width: 3 cm; height: 3 cm C: length: 3 cm; width: 3 cm; height: 3 cm D: length: 6 cm; width: 6 cm; height: 6 cm",
+        "es": "Pregunta 30. Caley construye un prisma rectangular usando 18 cubos que miden 1 centímetro de cada lado cada uno. ¿Cuáles podrían ser las dimensiones de su prisma rectangular? Opciones: A: longitud: 2 cm; ancho: 2 cm; altura: 3 cm B: longitud: 2 cm; ancho: 3 cm; altura: 3 cm C: longitud: 3 cm; ancho: 3 cm; altura: 3 cm D: longitud: 6 cm; ancho: 6 cm; altura: 6 cm"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "18 cubes",
+          "1 centimeter",
+          "length: 2 cm; width: 2 cm; height: 3 cm",
+          "length: 2 cm; width: 3 cm; height: 3 cm",
+          "length: 3 cm; width: 3 cm; height: 3 cm",
+          "length: 6 cm; width: 6 cm; height: 6 cm",
+          "A: length: 2 cm; width: 2 cm; height: 3 cm",
+          "B: length: 2 cm; width: 3 cm; height: 3 cm",
+          "C: length: 3 cm; width: 3 cm; height: 3 cm",
+          "D: length: 6 cm; width: 6 cm; height: 6 cm"
+        ],
+        "es": [
+          "18 cubos",
+          "1 centímetro",
+          "longitud: 2 cm; ancho: 2 cm; altura: 3 cm",
+          "longitud: 2 cm; ancho: 3 cm; altura: 3 cm",
+          "longitud: 3 cm; ancho: 3 cm; altura: 3 cm",
+          "longitud: 6 cm; ancho: 6 cm; altura: 6 cm",
+          "A: longitud: 2 cm; ancho: 2 cm; altura: 3 cm",
+          "B: longitud: 2 cm; ancho: 3 cm; altura: 3 cm",
+          "C: longitud: 3 cm; ancho: 3 cm; altura: 3 cm",
+          "D: longitud: 6 cm; ancho: 6 cm; altura: 6 cm"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q31": {
+      "inputHash": "da3255c851241193793301b8ece17267c1993cb4a26bbda18fb77255a2acc300",
+      "description": {
+        "en": "Question 31. How many 1/3-cup servings are in 4 cups? Choices: A: 1/12 B: 3/4 C: 4 D: 12",
+        "es": "Pregunta 31. ¿Cuántas porciones de 1/3 de taza hay en 4 tazas? Opciones: A: 1/12 B: 3/4 C: 4 D: 12"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "1/3-cup",
+          "4 cups",
+          "1/12",
+          "3/4",
+          "4",
+          "12",
+          "A: 1/12",
+          "B: 3/4",
+          "C: 4",
+          "D: 12",
+          "1/3"
+        ],
+        "es": [
+          "1/3 de taza",
+          "4 tazas",
+          "1/12",
+          "3/4",
+          "4",
+          "12",
+          "A: 1/12",
+          "B: 3/4",
+          "C: 4",
+          "D: 12",
+          "1/3"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q32": {
+      "inputHash": "fa11c2cbe159c654cb1fb5b154adea03d7a22d7286df08a2f0a2b8acae8f1348",
+      "description": {
+        "en": "Question 32. What is the value of 9 2/3 − 4 1/5? Choices: A: 5 1/8 B: 5 7/8 C: 5 5/15 D: 5 7/15",
+        "es": "Pregunta 32. ¿Cuál es el valor de 9 2/3 − 4 1/5? Opciones: A: 5 1/8 B: 5 7/8 C: 5 5/15 D: 5 7/15"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "9 2/3 − 4 1/5",
+          "5 1/8",
+          "5 7/8",
+          "5 5/15",
+          "5 7/15",
+          "A: 5 1/8",
+          "B: 5 7/8",
+          "C: 5 5/15",
+          "D: 5 7/15",
+          "9 2/3",
+          "4 1/5"
+        ],
+        "es": [
+          "9 2/3 − 4 1/5",
+          "5 1/8",
+          "5 7/8",
+          "5 5/15",
+          "5 7/15",
+          "A: 5 1/8",
+          "B: 5 7/8",
+          "C: 5 5/15",
+          "D: 5 7/15",
+          "9 2/3",
+          "4 1/5"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q33": {
+      "inputHash": "3f3fc6739b3bc8dc5729a4f68405ba0e8d7f6c907d63af99a2c5cf285104ffbc",
+      "description": {
+        "en": "Question 33. Which decimal number is equivalent to 73/100? Choices: A: 0.73 B: 7.30 C: 73.100 D: 100.73",
+        "es": "Pregunta 33. ¿Qué número decimal es equivalente a 73/100? Opciones: A: 0.73 B: 7.30 C: 73.100 D: 100.73"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "73/100",
+          "0.73",
+          "7.30",
+          "73.100",
+          "100.73",
+          "A: 0.73",
+          "B: 7.30",
+          "C: 73.100",
+          "D: 100.73"
+        ],
+        "es": [
+          "73/100",
+          "0.73",
+          "7.30",
+          "73.100",
+          "100.73",
+          "A: 0.73",
+          "B: 7.30",
+          "C: 73.100",
+          "D: 100.73"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q34": {
+      "inputHash": "673a323a5c8d90bb9264396f576af1a8400b0f2144d679753e2d1ccd8d8d7e77",
+      "description": {
+        "en": "Question 34. Which expression could be represented by the shaded parts of the model below? The model consists of five equal circles separated by plus signs. Each circle is divided into 8 equal sectors, and 5 of the 8 sectors in each circle are shaded. Choices: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5",
+        "es": "Pregunta 34. ¿Qué expresión podría estar representada por las partes sombreadas del siguiente modelo? El modelo contiene cinco círculos del mismo tamaño separados por signos de suma. Cada círculo está dividido en 8 sectores iguales: 5 sectores están sombreados de gris y 3 sectores no están sombreados. Por tanto, cada círculo representa visualmente 5/8, y ese mismo modelo se repite 5 veces. Opciones: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "5/8 + 5/5",
+          "5/8 × 5/5",
+          "5/8 + 5",
+          "5/8 × 5",
+          "A: 5/8 + 5/5",
+          "B: 5/8 × 5/5",
+          "C: 5/8 + 5",
+          "D: 5/8 × 5",
+          "5/8",
+          "5/5"
+        ],
+        "es": [
+          "5",
+          "8",
+          "5/8",
+          "3",
+          "5/8 + 5/5",
+          "5/8 × 5/5",
+          "5/8 + 5",
+          "5/8 × 5",
+          "A: 5/8 + 5/5",
+          "B: 5/8 × 5/5",
+          "C: 5/8 + 5",
+          "D: 5/8 × 5",
+          "5/5"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q35": {
+      "inputHash": "9b645fe1f9207b0e82918a097571b632c656a8b7d15017eb40f92f74bf82a5c4",
+      "description": {
+        "en": "Question 35. Three boxes are shipped on a truck. Each box has a base of 16 square feet. Two of the boxes have a height of 3 feet and one box has a height of 5 feet. What is the total volume, in cubic feet, of the three boxes? Choices: A: 240 B: 176 C: 144 D: 128",
+        "es": "Pregunta 35. Se envían tres cajas en un camión. Cada caja tiene una base de 16 pies cuadrados. Dos de las cajas tienen una altura de 3 pies y una caja tiene una altura de 5 pies. ¿Cuál es el volumen total, en pies cúbicos, de las tres cajas? Opciones: A: 240 B: 176 C: 144 D: 128"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "16 square feet",
+          "3 feet",
+          "5 feet",
+          "240",
+          "176",
+          "144",
+          "128",
+          "A: 240",
+          "B: 176",
+          "C: 144",
+          "D: 128"
+        ],
+        "es": [
+          "3",
+          "16 pies cuadrados",
+          "3 pies",
+          "5 pies",
+          "pies cúbicos",
+          "240",
+          "176",
+          "144",
+          "128",
+          "A: 240",
+          "B: 176",
+          "C: 144",
+          "D: 128"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q36": {
+      "inputHash": "4fc637d85c6290db484fec86a92ea38c0cb679344e84f20b95fbb3cfcd8f109c",
+      "description": {
+        "en": "Question 36. Lin’s goal is to drink 8 cups of water every day. She drank 37 ounces before lunch today. How much more water does Lin need to drink today to reach her goal? Choices: A: 27 ounces B: 29 ounces C: 59 ounces D: 91 ounces",
+        "es": "Pregunta 36. El objetivo de Lin es beber 8 tazas de agua todos los días. Bebió 37 onzas antes del almuerzo hoy. ¿Cuánta agua más necesita beber Lin hoy para alcanzar su objetivo? Opciones: A: 27 onzas B: 29 onzas C: 59 onzas D: 91 onzas"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "8 cups",
+          "37 ounces",
+          "27 ounces",
+          "29 ounces",
+          "59 ounces",
+          "91 ounces",
+          "A: 27 ounces",
+          "B: 29 ounces",
+          "C: 59 ounces",
+          "D: 91 ounces"
+        ],
+        "es": [
+          "8 tazas",
+          "37 onzas",
+          "27 onzas",
+          "29 onzas",
+          "59 onzas",
+          "91 onzas",
+          "A: 27 onzas",
+          "B: 29 onzas",
+          "C: 59 onzas",
+          "D: 91 onzas"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q37": {
+      "inputHash": "f5bd6ce6ef0da952861ad21e32f6e4187d567e3759d3f91bae9247cde8b26546",
+      "description": {
+        "en": "Question 37. Ursula drew a polygon in which all the angles were obtuse. What kind of polygon could she have drawn? Choices: A: trapezoid B: parallelogram C: triangle D: pentagon",
+        "es": "Pregunta 37. Ursula dibujó un polígono en el que todos los ángulos eran obtusos. ¿Qué tipo de polígono pudo haber dibujado? Opciones: A: trapecio B: paralelogramo C: triángulo D: pentágono"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "trapezoid",
+          "parallelogram",
+          "triangle",
+          "pentagon",
+          "A: trapezoid",
+          "B: parallelogram",
+          "C: triangle",
+          "D: pentagon"
+        ],
+        "es": [
+          "todos los ángulos eran obtusos",
+          "trapecio",
+          "paralelogramo",
+          "triángulo",
+          "pentágono",
+          "A: trapecio",
+          "B: paralelogramo",
+          "C: triángulo",
+          "D: pentágono"
+        ]
+      }
+    },
+    "nysed-2018-g5-mc-q38": {
+      "inputHash": "2ccc8053bf310cd938852a8c8e3d76cd5bd85a44a529369fa8fcdae0513cf451",
+      "description": {
+        "en": "Question 38. Anna is building a figure that has three columns of unit cubes. The first column is represented by a vertical stack of 10 unit cubes. A key states that one cube symbol equals 1 unit cube. The other two columns each have four fewer unit cubes than the first column. What is the volume, in cubic units, of Anna’s figure? Choices: A: 12 B: 16 C: 22 D: 24",
+        "es": "Pregunta 38. Anna construye una figura que tiene tres columnas de cubos unitarios. La primera columna se representa como una pila vertical de 10 cubos unitarios. Una referencia indica que el dibujo de un cubo equivale a 1 cubo unitario. Cada una de las otras dos columnas tiene cuatro cubos unitarios menos que la primera columna. ¿Cuál es el volumen, en unidades cúbicas, de la figura de Anna? Opciones: A: 12 B: 16 C: 22 D: 24"
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "10 unit cubes",
+          "1 unit cube",
+          "four fewer unit cubes",
+          "12",
+          "16",
+          "22",
+          "24",
+          "A: 12",
+          "B: 16",
+          "C: 22",
+          "D: 24"
+        ],
+        "es": [
+          "tres columnas",
+          "10 cubos unitarios",
+          "1 cubo unitario",
+          "cuatro cubos unitarios menos",
+          "unidades cúbicas",
+          "12",
+          "16",
+          "22",
+          "24",
+          "A: 12",
+          "B: 16",
+          "C: 22",
+          "D: 24"
+        ]
+      }
+    }
+  }
+}

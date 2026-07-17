@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "math-accessibility-1",
+  "examId": "nysed-2024-grade-3-mc-v1",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "questions": {
+    "nysed-2024-g3-mc-q1": {
+      "inputHash": "a0053b13e33d32b53ca98778fafbdbbbea04ecdabc1fa00972f0ac25770dfb8a",
+      "description": {
+        "en": "Question 1. There are 40 stickers arranged in rows of 8. Which expression finds the number of rows? Choices: A: 40 ÷ 8; B: 40 − 8; C: 40 × 8; D: 40 + 8.",
+        "es": "Pregunta 1. Hay 40 calcomanías organizadas en filas de 8. ¿Qué expresión halla la cantidad de filas? Opciones: A: 40 ÷ 8; B: 40 − 8; C: 40 × 8; D: 40 + 8."
+      }
+    },
+    "nysed-2024-g3-mc-q2": {
+      "inputHash": "9b76943584dd635525a5e42918c6813cdb4c973e0d4bf787313ad223b063db91",
+      "description": {
+        "en": "Question 2. A number rounds to 300 to the nearest ten. Which could be the original number? Choices: A: 289; B: 296; C: 308; D: 315.",
+        "es": "Pregunta 2. Un número se redondea a 300 a la decena más cercana. ¿Cuál podría ser el número original? Opciones: A: 289; B: 296; C: 308; D: 315."
+      }
+    },
+    "nysed-2024-g3-mc-q4": {
+      "inputHash": "2db4dc9ada901e5d8acf97aa00d3d3503e6a2e3af580b5e82a3cd96226f4b167",
+      "description": {
+        "en": "Question 4. A number line from 0 to 1 is divided into 6 equal intervals, and point P is at the fourth tick after 0. Which fraction represents P? Choices: A: 2/6; B: 4/6; C: 3/7; D: 5/7.",
+        "es": "Pregunta 4. Una recta de 0 a 1 está dividida en 6 intervalos iguales y P está en la cuarta marca después de 0. ¿Qué fracción representa P? Opciones: A: 2/6; B: 4/6; C: 3/7; D: 5/7."
+      }
+    },
+    "nysed-2024-g3-mc-q8": {
+      "inputHash": "78da7147252cbe59e398180ee9a4229873b600a5627d3d5baa620ef550634db7",
+      "description": {
+        "en": "Question 8. A librarian has 9 boxes with 8 books in each. Which expression finds the total number of books? Choices: A: 9 − 8; B: 9 + 8; C: 9 ÷ 8; D: 9 × 8.",
+        "es": "Pregunta 8. Un bibliotecario tiene 9 cajas con 8 libros en cada una. ¿Qué expresión halla el total de libros? Opciones: A: 9 − 8; B: 9 + 8; C: 9 ÷ 8; D: 9 × 8."
+      }
+    },
+    "nysed-2024-g3-mc-q9": {
+      "inputHash": "9ef53141749cd39bb8dc404daafca6cf108d1d6bec9b11b145a43e7f0bcc6c3e",
+      "description": {
+        "en": "Question 9. An L-shaped flower garden consists of a top rectangle 9 feet by 3 feet and a lower-right rectangle 6 feet by 4 feet. What is its total area? Choices: A: 22; B: 27; C: 51; D: 54 square feet.",
+        "es": "Pregunta 9. Un jardín en L consta de un rectángulo superior de 9 por 3 pies y uno inferior derecho de 6 por 4 pies. ¿Cuál es el área total? Opciones: A: 22; B: 27; C: 51; D: 54 pies cuadrados."
+      }
+    },
+    "nysed-2024-g3-mc-q12": {
+      "inputHash": "36f57bb83c5e3f832f6aa9ad541b855a3dc4e68ae3eab6ca1ff977ae84d7c120",
+      "description": {
+        "en": "Question 12. Which fraction is equivalent to 3? Choices: A: 1/3; B: 3/1; C: 3/3; D: 6/3.",
+        "es": "Pregunta 12. ¿Qué fracción es equivalente a 3? Opciones: A: 1/3; B: 3/1; C: 3/3; D: 6/3."
+      }
+    },
+    "nysed-2024-g3-mc-q13": {
+      "inputHash": "6c98e34b8dc595293280641fee6758a6f9c7bb93eb1d7d7d2ef11c0eba233dbf",
+      "description": {
+        "en": "Question 13. A wall is covered without gaps by 100 square pictures, each with side length 1 foot. What is the wall’s total area? Choices: A: 1 foot; B: 100 feet; C: 1 square foot; D: 100 square feet.",
+        "es": "Pregunta 13. Una pared se cubre sin huecos con 100 dibujos cuadrados, cada uno con lados de 1 pie. ¿Cuál es el área total? Opciones: A: 1 pie; B: 100 pies; C: 1 pie cuadrado; D: 100 pies cuadrados."
+      }
+    },
+    "nysed-2024-g3-mc-q18": {
+      "inputHash": "d2dca56cbef8065dda89124c739f8b3a839bc0826cfdf49896e00f177b077d58",
+      "description": {
+        "en": "Question 18. Which expression is equivalent to 5 × 4? Choices: A: (5 + 2) × (5 + 2); B: (5 × 2) + (5 × 2); C: (5 + 2) + (5 + 2); D: (5 × 2) × (5 × 2).",
+        "es": "Pregunta 18. ¿Qué expresión es equivalente a 5 × 4? Opciones: A: (5 + 2) × (5 + 2); B: (5 × 2) + (5 × 2); C: (5 + 2) + (5 + 2); D: (5 × 2) × (5 × 2)."
+      }
+    },
+    "nysed-2024-g3-mc-q21": {
+      "inputHash": "2d7cab59f7a989b49b85bf16da77a9564dc220b7d8a75bb0cb23617ed51ac2bc",
+      "description": {
+        "en": "Question 21. Each circle is divided into 8 equal sectors. Which model represents 3/8 shaded? Choices: A: 4 sectors shaded; B: 5 sectors shaded; C: 5 sectors shaded; D: 3 sectors shaded.",
+        "es": "Pregunta 21. Cada círculo está dividido en 8 sectores iguales. ¿Qué modelo representa 3/8 sombreados? Opciones: A: 4 sectores sombreados; B: 5 sectores sombreados; C: 5 sectores sombreados; D: 3 sectores sombreados."
+      }
+    },
+    "nysed-2024-g3-mc-q23": {
+      "inputHash": "5e6880092fd8e4ca109f505eb623db73629738adc78f46d5392f3512a9fa2e72",
+      "description": {
+        "en": "Question 23. A rectangle has 5 rows and 7 columns of unit squares. Which expression cannot find its area? Choices: A: 5 + 5 + 5 + 5 + 5 + 5 + 5; B: 7 + 7 + 7 + 7 + 7; C: 5 × 7 × 5 × 7; D: 7 × 5.",
+        "es": "Pregunta 23. Un rectángulo tiene 5 filas y 7 columnas de cuadrados unitarios. ¿Qué expresión no halla su área? Opciones: A: 5 + 5 + 5 + 5 + 5 + 5 + 5; B: 7 + 7 + 7 + 7 + 7; C: 5 × 7 × 5 × 7; D: 7 × 5."
+      }
+    },
+    "nysed-2024-g3-mc-q25": {
+      "inputHash": "e94267e3bef31fdcbe78c21160eb414f9f09a9a18cccf089d9d8237b93620f1a",
+      "description": {
+        "en": "Question 25. What number multiplied by 8 equals 48? Choices: A: 4; B: 6; C: 7; D: 8.",
+        "es": "Pregunta 25. ¿Qué número multiplicado por 8 es igual a 48? Opciones: A: 4; B: 6; C: 7; D: 8."
+      }
+    },
+    "nysed-2024-g3-mc-q26": {
+      "inputHash": "dbacb0af3c4f6716036b61644018d8ca8c166c65d85febf1f9f446e4d0eed4ea",
+      "description": {
+        "en": "Question 26. Which square is divided into parts that each have area 1/4 of the whole? Choices: A: one horizontal midline, with offset vertical splits in each half; B: both corner-to-corner diagonals; C: three parallel diagonal lines forming strips; D: a horizontal midline, with the bottom half split into thirds.",
+        "es": "Pregunta 26. ¿Qué cuadrado está dividido en partes de 1/4 del entero cada una? Opciones: A: línea media horizontal y divisiones verticales desplazadas en cada mitad; B: ambas diagonales de esquina a esquina; C: tres líneas diagonales paralelas que forman franjas; D: línea media horizontal y mitad inferior dividida en tercios."
+      }
+    },
+    "nysed-2024-g3-mc-q27": {
+      "inputHash": "660e1e0b2e53509a007fb4c39dc9e2a5ad41e552324083b8fc4586c56acbedba",
+      "description": {
+        "en": "Question 27. What are the next three numbers in the pattern 1, 5, 9, 13, and so on? Choices: A: 16, 19, 22; B: 16, 20, 24; C: 17, 20, 23; D: 17, 21, 25.",
+        "es": "Pregunta 27. ¿Cuáles son los siguientes tres números del patrón 1, 5, 9, 13 y así sucesivamente? Opciones: A: 16, 19, 22; B: 16, 20, 24; C: 17, 20, 23; D: 17, 21, 25."
+      }
+    },
+    "nysed-2024-g3-mc-q28": {
+      "inputHash": "fff6d5b06d730cd74a7ea7c3975b9571287f6f00258c7d93758b533de5a5cda2",
+      "description": {
+        "en": "Question 28. A bathroom floor has area 36 square feet. Each pictured cell is 1 square foot. Which figure could represent it? Choices: A: a 3-by-9 rectangle, 27 cells; B: an irregular 29-cell figure; C: three rows of 10 plus a bottom row of 6, 36 cells; D: a 4-by-8 rectangle, 32 cells.",
+        "es": "Pregunta 28. Un piso tiene 36 pies cuadrados y cada celda dibujada vale 1 pie cuadrado. ¿Qué figura podría representarlo? Opciones: A: rectángulo de 3 por 9, 27 celdas; B: figura irregular de 29 celdas; C: tres filas de 10 y una fila inferior de 6, 36 celdas; D: rectángulo de 4 por 8, 32 celdas."
+      }
+    },
+    "nysed-2024-g3-mc-q29": {
+      "inputHash": "0ca35d3ef7a9336f96ecea7555e35b3b4d0fad61a02033b962b580b78c78bbea",
+      "description": {
+        "en": "Question 29. Cecilia has 12 corn seeds and 15 bean seeds and puts 3 of one type in each hole. Which equations find total holes h? Choices: A: 12 ÷ 3 = 4, 15 ÷ 3 = 5, h = 4 + 5; B: same divisions, h = 4 × 5; C: 12 − 3 = 9, 15 − 3 = 12, h = 9 + 12; D: same subtractions, h = 9 × 12.",
+        "es": "Pregunta 29. Cecilia tiene 12 semillas de maíz y 15 de habichuela y pone 3 de un tipo en cada hoyo. ¿Qué ecuaciones hallan el total h? Opciones: A: 12 ÷ 3 = 4, 15 ÷ 3 = 5, h = 4 + 5; B: mismas divisiones, h = 4 × 5; C: 12 − 3 = 9, 15 − 3 = 12, h = 9 + 12; D: mismas restas, h = 9 × 12."
+      }
+    },
+    "nysed-2024-g3-mc-q30": {
+      "inputHash": "744a53d3c071ee9031bf92cc2d260ac641f90aac192acbd4b88dbe8fab36e243",
+      "description": {
+        "en": "Question 30. Which two fractions are equivalent? Choices: A: 2/3 and 3/6; B: 1/4 and 4/8; C: 2/4 and 3/6; D: 1/2 and 2/8.",
+        "es": "Pregunta 30. ¿Cuáles dos fracciones son equivalentes? Opciones: A: 2/3 y 3/6; B: 1/4 y 4/8; C: 2/4 y 3/6; D: 1/2 y 2/8."
+      }
+    }
+  }
+}
