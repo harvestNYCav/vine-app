@@ -3,6 +3,7 @@ import { randomUUID } from 'crypto'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { localDateKey } from '@/lib/dates'
+import { mathAttemptTtlMs } from '@/lib/resumable-work'
 import {
   classifyMistake,
   generateProblem,
@@ -25,7 +26,6 @@ const MAX_TIMED_PROBLEMS: Record<string, number> = {
   practice_10: 400,
 }
 const DIAGNOSTIC_TIER_TOTAL = 3
-const ATTEMPT_TTL_MS = 30 * 60 * 1000
 
 type SessionType = 'diagnostic' | 'practice_5' | 'practice_10' | 'flat_10' | 'flat_25' | 'custom'
 
@@ -189,7 +189,7 @@ export async function POST(req: NextRequest) {
         INSERT INTO math_attempts (id, user_id, session_type, started_at, expires_at, problems)
         VALUES (?, ?, ?, ?, ?, ?)
       `,
-      args: [id, session.userId, type, now, now + ATTEMPT_TTL_MS, JSON.stringify(problems)],
+      args: [id, session.userId, type, now, now + mathAttemptTtlMs(type), JSON.stringify(problems)],
     })
 
     return NextResponse.json({

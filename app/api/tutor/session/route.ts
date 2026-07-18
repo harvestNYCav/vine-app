@@ -2,27 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
-import { randomUUID } from 'crypto'
 import { todayString } from '@/lib/scheduling'
-
-type SessionRow = {
-  id: string; student_id: string; date: string; module_slug: string; tutor_id: string; homework_assigned: number | bigint; created_at: number | bigint
-}
+import {
+  assignTutorLesson,
+  AssignmentStudentNotFoundError,
+} from '@/lib/tutor-lesson-assignment'
 
 function isValidDate(value: unknown): value is string {
   return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
-}
-
-function toSessionJson(row: SessionRow) {
-  return {
-    id: row.id,
-    studentId: row.student_id,
-    date: row.date,
-    moduleSlug: row.module_slug,
-    tutorId: row.tutor_id,
-    homeworkAssigned: Number(row.homework_assigned) === 1,
-    createdAt: Number(row.created_at),
-  }
 }
 
 export async function POST(req: NextRequest) {
@@ -31,40 +18,66 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const { moduleSlug, date: rawDate, studentIds } = await req.json()
-  if (!moduleSlug || !ALL_MODULES.find(m => m.slug === moduleSlug)) {
+  const {
+    moduleSlug,
+    date: rawDate,
+    studentIds,
+    confirmTrackEnrollment,
+    collisionAction: rawCollisionAction,
+  } = await req.json()
+  const module = ALL_MODULES.find(item => item.slug === moduleSlug)
+  if (!moduleSlug || !module) {
     return NextResponse.json({ error: 'Invalid module' }, { status: 400 })
   }
   if (!Array.isArray(studentIds) || studentIds.length === 0 || !studentIds.every(id => typeof id === 'string')) {
     return NextResponse.json({ error: 'Select at least one student' }, { status: 400 })
   }
   const date = isValidDate(rawDate) ? rawDate : todayString()
+  const collisionAction = rawCollisionAction === 'replace' || rawCollisionAction === 'add'
+    ? rawCollisionAction
+    : undefined
 
   const db = await getDb()
-  const sessions: ReturnType<typeof toSessionJson>[] = []
-
-  for (const studentId of studentIds as string[]) {
-    const existingResult = await db.execute({
-      sql: 'SELECT id FROM sessions WHERE student_id = ? AND date = ?',
-      args: [studentId, date],
-    })
-    const id = (existingResult.rows[0]?.id as string | undefined) ?? randomUUID()
-
-    await db.execute({
-      sql: `
-        INSERT INTO sessions (id, student_id, date, module_slug, tutor_id, homework_assigned, created_at)
-        VALUES (?, ?, ?, ?, ?, 0, ?)
-        ON CONFLICT(student_id, date) DO UPDATE SET module_slug = excluded.module_slug
-      `,
-      args: [id, studentId, date, moduleSlug, session.userId, Date.now()],
+  try {
+    const result = await assignTutorLesson(db, {
+      moduleSlug,
+      moduleTrack: module.track,
+      date,
+      studentIds,
+      tutorId: session.userId,
+      confirmTrackEnrollment: confirmTrackEnrollment === true,
+      collisionAction,
     })
 
-    const rowResult = await db.execute({
-      sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?',
-      args: [studentId, date],
+    if (result.status === 'confirmation_required') {
+      const collisions = result.collisions.map(collision => ({
+        student: collision.student,
+        lessons: collision.sessions.map(existing => {
+          const existingModule = ALL_MODULES.find(item => item.slug === existing.moduleSlug)
+          return {
+            moduleSlug: existing.moduleSlug,
+            title: existingModule?.titleEn ?? existing.moduleSlug,
+          }
+        }),
+      }))
+      return NextResponse.json({
+        error: 'Assignment confirmation required.',
+        requiresTrackConfirmation: result.studentsMissingTrack.length > 0,
+        requiresCollisionConfirmation: collisions.length > 0,
+        track: result.track,
+        missingTrackStudents: result.studentsMissingTrack,
+        collisions,
+      }, { status: 409 })
+    }
+
+    return NextResponse.json({
+      sessions: result.sessions,
+      enrolledStudentIds: result.enrolledStudentIds,
     })
-    sessions.push(toSessionJson(rowResult.rows[0] as unknown as SessionRow))
+  } catch (error) {
+    if (error instanceof AssignmentStudentNotFoundError) {
+      return NextResponse.json({ error: error.message }, { status: 404 })
+    }
+    throw error
   }
-
-  return NextResponse.json({ sessions })
 }

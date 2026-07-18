@@ -1,8 +1,15 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
+import { normalizePersonName } from '@/lib/names'
+import {
+  appendPinDigit,
+  deleteLastPinDigit,
+  getPinKeyboardAction,
+  PIN_LENGTH,
+} from '@/lib/pin-entry'
 
 function LoginForm() {
   const router = useRouter()
@@ -17,12 +24,16 @@ function LoginForm() {
   const [step, setStep] = useState<'name' | 'email' | 'code' | 'pin'>('name')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const pinPanelRef = useRef<HTMLDivElement>(null)
+  const pinSubmissionStartedRef = useRef(false)
 
   const handleNameSubmit = () => {
-    if (name.trim().length < 2) {
+    const normalizedName = role === 'student' ? normalizePersonName(name) : name.trim()
+    if (normalizedName.length < 2) {
       setError('Please enter your name')
       return
     }
+    setName(normalizedName)
     setError('')
     setStep(role === 'admin' ? 'email' : 'pin')
   }
@@ -66,21 +77,48 @@ function LoginForm() {
   }
 
   const handlePinDigit = (digit: string) => {
-    if (pin.length < 4) {
-      setPin(prev => prev + digit)
-    }
+    setPin(currentPin => appendPinDigit(currentPin, digit))
   }
 
   const handlePinDelete = () => {
-    setPin(prev => prev.slice(0, -1))
+    setPin(currentPin => deleteLastPinDigit(currentPin))
   }
 
   useEffect(() => {
-    if (pin.length === 4) {
-      handleLogin()
+    if (step !== 'pin') return
+    pinPanelRef.current?.focus({ preventScroll: true })
+  }, [step])
+
+  useEffect(() => {
+    if (step !== 'pin' || loading) return
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      const action = getPinKeyboardAction(event)
+      if (!action) return
+
+      event.preventDefault()
+      if (action.type === 'delete') {
+        handlePinDelete()
+      } else {
+        handlePinDigit(action.digit)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [loading, step])
+
+  useEffect(() => {
+    if (
+      step === 'pin'
+      && pin.length === PIN_LENGTH
+      && !pinSubmissionStartedRef.current
+    ) {
+      pinSubmissionStartedRef.current = true
+      void handleLogin()
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pin])
+  }, [pin, step])
 
   const handleLogin = async () => {
     setLoading(true)
@@ -96,6 +134,7 @@ function LoginForm() {
         setError(data.error || 'Something went wrong')
         setPin('')
         setLoading(false)
+        pinSubmissionStartedRef.current = false
         return
       }
       if (data.needsTrackSelection) {
@@ -111,6 +150,7 @@ function LoginForm() {
       setError('Connection error. Please try again.')
       setPin('')
       setLoading(false)
+      pinSubmissionStartedRef.current = false
     }
   }
 
@@ -241,21 +281,32 @@ function LoginForm() {
         )}
 
         {step === 'pin' && (
-          <div className="space-y-4">
+          <div
+            ref={pinPanelRef}
+            className="space-y-4 focus:outline-none"
+            role="group"
+            aria-labelledby="pin-entry-heading"
+            tabIndex={-1}
+          >
             <p className="text-center text-gray-700 font-medium">
               Hello, {name}! 👋
             </p>
-            <p className="text-center text-gray-500 text-sm">
+            <p id="pin-entry-heading" className="text-center text-gray-500 text-sm">
               Enter your 4-digit PIN
+            </p>
+            <p className="text-center text-xs text-gray-400">
+              Use the number keys or keypad
             </p>
             <p className="text-center text-xs text-gray-400">
               {role === 'admin'
                 ? `Email verified: ${email}`
-                : `(New? We'll create your account)`}
+                : role === 'student'
+                  ? 'Your program admin creates student accounts'
+                  : `(New? We'll create your account)`}
             </p>
 
             {/* PIN Dots */}
-            <div className="flex justify-center gap-4 my-4">
+            <div className="flex justify-center gap-4 my-4" aria-hidden="true">
               {[0, 1, 2, 3].map(i => (
                 <div
                   key={i}
@@ -267,6 +318,12 @@ function LoginForm() {
                 />
               ))}
             </div>
+
+            <p className="sr-only" role="status" aria-live="polite">
+              {pin.length === 0
+                ? 'No PIN digits entered'
+                : `${pin.length} of ${PIN_LENGTH} PIN digits entered`}
+            </p>
 
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
 
@@ -280,6 +337,7 @@ function LoginForm() {
                     else if (key !== '') handlePinDigit(key)
                   }}
                   disabled={loading || key === ''}
+                  aria-label={key === '⌫' ? 'Delete last PIN digit' : key ? `Enter ${key}` : undefined}
                   className={`h-16 text-2xl font-semibold rounded-xl transition-all active:scale-95 ${
                     key === ''
                       ? 'invisible'

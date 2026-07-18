@@ -1,5 +1,6 @@
 import { ALL_MODULES } from '@/content/modules'
 import Link from 'next/link'
+import { formatWordCount } from '@/lib/study'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -39,7 +40,7 @@ export default function LessonsLibraryPage() {
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-gray-800 text-sm">{i + 1}. {mod.titleEn}</p>
                     <p className="text-xs text-gray-400 mt-0.5">
-                      {mod.track === 'esl' && `${mod.titleEs} · `}{mod.vocab.length} words
+                      {mod.track === 'esl' && `${mod.titleEs} · `}{formatWordCount(mod.vocab.length)}
                     </p>
                   </div>
                   <span className="text-gray-300 text-lg flex-shrink-0">→</span>

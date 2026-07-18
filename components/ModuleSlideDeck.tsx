@@ -37,11 +37,13 @@ interface Props {
   mod: Module
   variant: 'tutor' | 'student'
   onFinish?: () => void
+  initialIndex?: number
+  onIndexChange?: (index: number) => void
 }
 
-export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
+export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex = 0, onIndexChange }: Props) {
   const slides = useMemo(() => buildSlides(mod), [mod])
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(() => Math.min(Math.max(0, initialIndex), slides.length - 1))
   const firedFinish = useRef(false)
   const slide = slides[index]
   const isLast = index === slides.length - 1
@@ -52,6 +54,12 @@ export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
       onFinish?.()
     }
   }, [isLast, variant, onFinish])
+
+  function moveTo(nextIndex: number) {
+    const clamped = Math.min(Math.max(0, nextIndex), slides.length - 1)
+    setIndex(clamped)
+    onIndexChange?.(clamped)
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col">
@@ -194,7 +202,7 @@ export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
 
       <div className="flex items-center justify-between px-6 py-5 border-t border-gray-800">
         <button
-          onClick={() => setIndex(i => Math.max(0, i - 1))}
+          onClick={() => moveTo(index - 1)}
           disabled={index === 0}
           className="text-lg px-5 py-2 rounded-xl bg-gray-800 disabled:opacity-30"
         >
@@ -202,7 +210,7 @@ export default function ModuleSlideDeck({ mod, variant, onFinish }: Props) {
         </button>
         <span className="text-gray-400">{index + 1} / {slides.length}</span>
         <button
-          onClick={() => setIndex(i => Math.min(slides.length - 1, i + 1))}
+          onClick={() => moveTo(index + 1)}
           disabled={isLast}
           className="text-lg px-5 py-2 rounded-xl bg-amber-500 text-gray-900 disabled:opacity-30"
         >

@@ -3,12 +3,14 @@ import getDb from '@/lib/db'
 import { getModule } from '@/content/modules'
 import Link from 'next/link'
 import AttendanceToggle from './AttendanceToggle'
+import { filterTutorRosterStudents, getTutorStudentIds } from '@/lib/tutor-roster'
+import { getTutorRosterScope } from '@/lib/tutor-roster-server'
 
 export default async function CohortPage() {
-  await getSession()
+  const session = await getSession()
   const db = await getDb()
 
-  const [sessionsResult, studentsResult, attendanceResult, strugglingResult, allModuleProgressResult] = await Promise.all([
+  const [sessionsResult, studentsResult, attendanceResult, strugglingResult, allModuleProgressResult, assignedStudentIds, rosterScope] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM sessions ORDER BY date ASC', args: [] }),
     db.execute({ sql: "SELECT id, name FROM users WHERE role = 'student' ORDER BY name", args: [] }),
     db.execute({ sql: 'SELECT * FROM attendance', args: [] }),
@@ -20,6 +22,8 @@ export default async function CohortPage() {
       args: [],
     }),
     db.execute({ sql: 'SELECT * FROM module_progress', args: [] }),
+    getTutorStudentIds(db, session!.userId),
+    getTutorRosterScope(session!.userId),
   ])
 
   type SessionRow = { id: string; student_id: string; date: string; module_slug: string }
@@ -28,11 +32,17 @@ export default async function CohortPage() {
   type StrugglingRow = { word_id: string; module_slug: string; user_id: string; correct_count: number; incorrect_count: number }
   type ModProgressRow = { user_id: string; module_slug: string; homework_completed_at: number | null }
 
-  const sessions = sessionsResult.rows as unknown as SessionRow[]
-  const students = studentsResult.rows as unknown as StudentRow[]
-  const attendanceRows = attendanceResult.rows as unknown as AttendanceRow[]
-  const strugglingVocab = strugglingResult.rows as unknown as StrugglingRow[]
-  const allModuleProgressRows = allModuleProgressResult.rows as unknown as ModProgressRow[]
+  const allStudents = studentsResult.rows as unknown as StudentRow[]
+  const students = filterTutorRosterStudents(allStudents, assignedStudentIds, rosterScope)
+  const visibleStudentIds = new Set(students.map(student => student.id))
+  const sessions = (sessionsResult.rows as unknown as SessionRow[])
+    .filter(row => visibleStudentIds.has(row.student_id))
+  const attendanceRows = (attendanceResult.rows as unknown as AttendanceRow[])
+    .filter(row => visibleStudentIds.has(row.student_id))
+  const strugglingVocab = (strugglingResult.rows as unknown as StrugglingRow[])
+    .filter(row => visibleStudentIds.has(row.user_id))
+  const allModuleProgressRows = (allModuleProgressResult.rows as unknown as ModProgressRow[])
+    .filter(row => visibleStudentIds.has(row.user_id))
 
   // Index attendance for fast lookup
   const attendanceMap = new Map<string, boolean>()
@@ -40,13 +50,17 @@ export default async function CohortPage() {
     attendanceMap.set(`${row.session_date}:${row.student_id}`, Number(row.present) === 1)
   }
 
-  // Each student can be on a different module on the same date, so index sessions
-  // per (student, date) rather than assuming one shared module per date.
+  // Attendance stays one record per student/date, while each cell can contain
+  // multiple lesson assignments for that day.
   const uniqueDates = [...new Set(sessions.map(s => s.date))].sort()
-  const sessionByStudentDate = new Map<string, SessionRow>()
+  const sessionsByStudentDate = new Map<string, SessionRow[]>()
   for (const s of sessions) {
-    sessionByStudentDate.set(`${s.student_id}:${s.date}`, s)
+    const key = `${s.student_id}:${s.date}`
+    const rows = sessionsByStudentDate.get(key) ?? []
+    rows.push(s)
+    sessionsByStudentDate.set(key, rows)
   }
+  const scheduledStudentDays = sessionsByStudentDate.size
 
   // Index all module progress per student (including incomplete)
   const moduleProgressByStudent = new Map<string, Array<{ module_slug: string; homework_completed_at: number | null }>>()
@@ -97,7 +111,11 @@ export default async function CohortPage() {
         <Link href="/tutor" className="text-gray-400 hover:text-gray-600 text-2xl">←</Link>
         <div>
           <h1 className="text-2xl font-bold text-amber-800">Cohort Overview</h1>
-          <p className="text-gray-500 text-sm">{students.length} students · {sessions.length} student-sessions recorded</p>
+          <p className="text-gray-500 text-sm">
+            {rosterScope === 'assigned'
+              ? `${students.length} assigned students · ${scheduledStudentDays} scheduled student-days`
+              : `${students.length} program students · ${scheduledStudentDays} scheduled student-days`}
+          </p>
         </div>
       </div>
 
@@ -106,8 +124,12 @@ export default async function CohortPage() {
         <h2 className="font-semibold text-gray-700">Attendance</h2>
         {sessions.length === 0 ? (
           <div className="bg-amber-50 rounded-xl p-6 text-center text-sm text-amber-700">
-            No sessions recorded yet —{' '}
-            <Link href="/tutor/lessons" className="underline font-medium">assign a lesson from the Lesson Library</Link>.
+            {students.length === 0 && allStudents.length > 0
+              ? 'No students are assigned to you. Use All students above for substitute coverage.'
+              : <>
+                  No sessions recorded yet —{' '}
+                  <Link href="/tutor/lessons" className="underline font-medium">assign a lesson from the Lesson Library</Link>.
+                </>}
           </div>
         ) : (
           <div className="overflow-x-auto">
@@ -127,17 +149,28 @@ export default async function CohortPage() {
                   <tr key={student.id} className="border-t border-gray-100">
                     <td className="py-2 pr-3 text-gray-700 font-medium text-sm">{student.name}</td>
                     {uniqueDates.map(date => {
-                      const s = sessionByStudentDate.get(`${student.id}:${date}`)
-                      const mod = s ? getModule(s.module_slug) : null
+                      const scheduledLessons = sessionsByStudentDate.get(`${student.id}:${date}`) ?? []
+                      const modules = scheduledLessons.flatMap(row => {
+                        const module = getModule(row.module_slug)
+                        return module ? [module] : []
+                      })
                       const present = attendanceMap.get(`${date}:${student.id}`) ?? false
                       return (
                         <td key={date} className="py-2 px-1 text-center">
-                          <div className="text-[10px] text-gray-400 mb-0.5 truncate max-w-[56px]">{mod?.titleEn.split(' ')[0] ?? '—'}</div>
-                          <AttendanceToggle
-                            sessionDate={date}
-                            studentId={student.id}
-                            initialPresent={present}
-                          />
+                          <div
+                            className="mx-auto mb-1 max-w-[110px] text-[10px] leading-tight text-gray-500"
+                            title={modules.map(module => module.titleEn).join(', ')}
+                          >
+                            {modules.length > 0 ? modules.map(module => module.titleEn).join(' + ') : '—'}
+                          </div>
+                          {modules.length > 1 && <p className="mb-1 text-[10px] font-semibold text-amber-700">{modules.length} lessons</p>}
+                          {scheduledLessons.length > 0 && (
+                            <AttendanceToggle
+                              sessionDate={date}
+                              studentId={student.id}
+                              initialPresent={present}
+                            />
+                          )}
                         </td>
                       )
                     })}
@@ -153,7 +186,9 @@ export default async function CohortPage() {
       <div className="space-y-3">
         <h2 className="font-semibold text-gray-700">Module Completion</h2>
         {students.length === 0 ? (
-          <p className="text-sm text-gray-400">No students enrolled yet.</p>
+          <p className="text-sm text-gray-400">
+            {allStudents.length === 0 ? 'No students enrolled yet.' : 'No students are assigned to you.'}
+          </p>
         ) : (
           <div className="space-y-2">
             {students.map(student => {

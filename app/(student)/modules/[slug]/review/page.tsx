@@ -19,5 +19,5 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session!.userId)
   if (!taughtSlugs.has(slug)) notFound()
 
-  return <ReviewSlidesClient mod={mod} />
+  return <ReviewSlidesClient mod={mod} userId={session!.userId} />
 }

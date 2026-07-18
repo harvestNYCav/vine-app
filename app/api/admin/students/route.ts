@@ -3,6 +3,32 @@ import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { normalizeTracks } from '@/lib/tracks'
 import { normalizeGradeLevel } from '@/lib/grade-levels'
+import { createStudentAccount } from '@/lib/student-accounts'
+
+export async function POST(req: NextRequest) {
+  const session = await getSession()
+  if (!session || session.role !== 'admin') {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  let rawBody: unknown
+  try {
+    rawBody = await req.json()
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
+  }
+
+  const db = await getDb()
+  const result = await createStudentAccount(db, rawBody)
+  if (!result.ok) {
+    return NextResponse.json(
+      { error: result.error },
+      { status: result.reason === 'conflict' ? 409 : 400 },
+    )
+  }
+
+  return NextResponse.json({ ok: true, student: result.student }, { status: 201 })
+}
 
 export async function PATCH(req: NextRequest) {
   const session = await getSession()

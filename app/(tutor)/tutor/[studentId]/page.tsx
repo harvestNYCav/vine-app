@@ -43,17 +43,21 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT session_type, COUNT(*) as count FROM math_sessions WHERE user_id = ? GROUP BY session_type', args: [studentId] }),
-    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?', args: [studentId, today] }),
-    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ?', args: [studentId, nextDate] }),
+    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ? ORDER BY created_at, id', args: [studentId, today] }),
+    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ? ORDER BY created_at, id', args: [studentId, nextDate] }),
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
 
-  const todaySessionRow = todaySessionResult.rows[0] as unknown as { module_slug: string; homework_assigned: number | bigint } | undefined
-  const nextSessionRow = nextSessionResult.rows[0] as unknown as { module_slug: string } | undefined
-  const todayModule = todaySessionRow ? getModule(String(todaySessionRow.module_slug)) : null
-  const nextModule = nextSessionRow ? getModule(String(nextSessionRow.module_slug)) : null
-  const homeworkAssigned = todaySessionRow ? Number(todaySessionRow.homework_assigned) === 1 : false
+  type ScheduledLessonRow = { id: string; module_slug: string; homework_assigned: number | bigint }
+  const todayLessons = (todaySessionResult.rows as unknown as ScheduledLessonRow[]).flatMap(row => {
+    const module = getModule(String(row.module_slug))
+    return module ? [{ sessionId: row.id, module, homeworkAssigned: Number(row.homework_assigned) === 1 }] : []
+  })
+  const nextLessons = (nextSessionResult.rows as unknown as ScheduledLessonRow[]).flatMap(row => {
+    const module = getModule(String(row.module_slug))
+    return module ? [{ sessionId: row.id, module }] : []
+  })
 
   type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
@@ -108,28 +112,36 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Current Lesson */}
+      {/* Scheduled Lessons */}
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-amber-100 mb-6 space-y-4">
-        <h3 className="font-bold text-gray-700">Current Lesson</h3>
+        <h3 className="font-bold text-gray-700">Scheduled Lessons</h3>
         <div>
           <p className="text-xs text-amber-600 font-medium uppercase tracking-wide mb-0.5">Today</p>
-          {todayModule ? (
-            <>
-              <p className="font-semibold text-gray-800">{todayModule.titleEn}</p>
-              {todayModule.track === 'esl' && <p className="text-sm text-gray-500 mb-2">{todayModule.titleEs}</p>}
-              <HomeworkButton studentId={studentId} initialAssigned={homeworkAssigned} />
-            </>
+          {todayLessons.length > 0 ? (
+            <div className="space-y-3">
+              {todayLessons.map(lesson => (
+                <div key={lesson.sessionId} className="rounded-xl border border-amber-100 bg-amber-50/50 p-3">
+                  <p className="font-semibold text-gray-800">{lesson.module.titleEn}</p>
+                  {lesson.module.track === 'esl' && <p className="text-sm text-gray-500 mb-2">{lesson.module.titleEs}</p>}
+                  <HomeworkButton sessionId={lesson.sessionId} initialAssigned={lesson.homeworkAssigned} />
+                </div>
+              ))}
+            </div>
           ) : (
             <p className="text-sm text-gray-400">No lesson assigned yet</p>
           )}
         </div>
         <div>
           <p className="text-xs text-amber-600 font-medium uppercase tracking-wide mb-0.5">Next Session · {nextDate}</p>
-          {nextModule ? (
-            <>
-              <p className="font-semibold text-gray-800">{nextModule.titleEn}</p>
-              {nextModule.track === 'esl' && <p className="text-sm text-gray-500">{nextModule.titleEs}</p>}
-            </>
+          {nextLessons.length > 0 ? (
+            <div className="space-y-2">
+              {nextLessons.map(lesson => (
+                <div key={lesson.sessionId} className="rounded-xl border border-gray-100 px-3 py-2">
+                  <p className="font-semibold text-gray-800">{lesson.module.titleEn}</p>
+                  {lesson.module.track === 'esl' && <p className="text-sm text-gray-500">{lesson.module.titleEs}</p>}
+                </div>
+              ))}
+            </div>
           ) : (
             <p className="text-sm text-gray-400">Not planned yet</p>
           )}

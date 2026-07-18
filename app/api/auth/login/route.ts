@@ -5,6 +5,7 @@ import getDb from '@/lib/db'
 import { createSession, COOKIE_NAME } from '@/lib/auth'
 import { getStudentTracks } from '@/lib/tracks'
 import { isValidEmail, normalizeEmail } from '@/lib/email-verification'
+import { loginCanCreateMissingAccount, normalizeStudentName } from '@/lib/student-accounts'
 import type { Role } from '@/types'
 
 const ROLES = new Set<Role>(['student', 'tutor', 'admin'])
@@ -20,7 +21,7 @@ export async function POST(req: NextRequest) {
 
     phase = 'opening the database'
     const db = await getDb()
-    const normalizedName = name.trim()
+    const normalizedName = role === 'student' ? normalizeStudentName(name) : name.trim()
     const normalizedEmail = normalizeEmail(email)
 
     if (role === 'admin') {
@@ -60,6 +61,12 @@ export async function POST(req: NextRequest) {
     let attachedAdminEmail = false
 
     if (!rawUser) {
+      if (!loginCanCreateMissingAccount(role)) {
+        return NextResponse.json({
+          error: 'Student account not found. Ask an admin to create it before signing in.',
+        }, { status: 404 })
+      }
+
       if (role === 'admin') {
         const adminResult = await db.execute({
           sql: "SELECT COUNT(*) as count FROM users WHERE role = 'admin'",

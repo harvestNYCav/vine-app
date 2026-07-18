@@ -11,6 +11,7 @@ import type {
 } from '@/content/ela-exams/types'
 import CollapsiblePassage from '../../../CollapsiblePassage'
 import NYSEDAttribution from '../../../NYSEDAttribution'
+import { nextUnansweredQuestionIndex } from '@/lib/resumable-work'
 
 type Screen = 'intro' | 'question' | 'results'
 
@@ -59,6 +60,7 @@ export default function ExamPracticeClient({
   const [result, setResult] = useState<FinalResult | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [resumeNotice, setResumeNotice] = useState('')
 
   const question = questions[questionIndex]
   const sectionHref = `/ela/exams/${exam.slug}/${section.slug}`
@@ -81,15 +83,33 @@ export default function ExamPracticeClient({
       if (!Array.isArray(data.questions) || data.questions.length === 0) {
         throw new Error('No practice questions are available in this section')
       }
+      const savedResponses: SavedResponse[] = Array.isArray(data.responses)
+        ? data.responses.filter((item: unknown): item is SavedResponse => {
+          if (!item || typeof item !== 'object') return false
+          const candidate = item as Partial<SavedResponse>
+          return typeof candidate.questionId === 'string' && typeof candidate.answer === 'string'
+        })
+        : []
+      const nextIndex = nextUnansweredQuestionIndex(
+        data.questions.map((item: PublicElaExamQuestion) => item.id),
+        savedResponses,
+      )
       setAttemptId(data.attemptId)
       setQuestions(data.questions)
-      setQuestionIndex(0)
+      setQuestionIndex(Math.max(0, nextIndex))
       setAnswer('')
       setCheckedAnswer(null)
       setFeedback(null)
-      setResponses([])
+      setResponses(savedResponses)
       setResult(null)
-      setScreen('question')
+      setResumeNotice(savedResponses.length > 0
+        ? `Restored ${savedResponses.length} saved ${savedResponses.length === 1 ? 'answer' : 'answers'}.`
+        : '')
+      if (nextIndex === -1) {
+        await finishAttempt(savedResponses, data.attemptId)
+      } else {
+        setScreen('question')
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unable to start practice')
     } finally {
@@ -102,6 +122,7 @@ export default function ExamPracticeClient({
     const submittedAnswer = answer.trim()
     setLoading(true)
     setError('')
+    setResumeNotice('')
     try {
       const response = await fetch('/vine-app/api/ela/exam-attempt', {
         method: 'POST',
@@ -128,8 +149,8 @@ export default function ExamPracticeClient({
     }
   }
 
-  async function finishAttempt(completedResponses: SavedResponse[]) {
-    if (!attemptId) return
+  async function finishAttempt(completedResponses: SavedResponse[], activeAttemptId = attemptId) {
+    if (!activeAttemptId) return
     setLoading(true)
     setError('')
     try {
@@ -138,7 +159,7 @@ export default function ExamPracticeClient({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           action: 'finish',
-          attemptId,
+          attemptId: activeAttemptId,
           responses: completedResponses,
         }),
       })
@@ -161,12 +182,13 @@ export default function ExamPracticeClient({
     ]
     setResponses(completedResponses)
 
-    if (questionIndex === questions.length - 1) {
+    const nextIndex = nextUnansweredQuestionIndex(questions.map(item => item.id), completedResponses)
+    if (nextIndex === -1) {
       void finishAttempt(completedResponses)
       return
     }
 
-    setQuestionIndex(index => index + 1)
+    setQuestionIndex(nextIndex)
     setAnswer('')
     setCheckedAnswer(null)
     setFeedback(null)
@@ -258,6 +280,11 @@ export default function ExamPracticeClient({
 
   return (
     <div className="mx-auto w-full max-w-lg px-4 py-5">
+      {resumeNotice && (
+        <p role="status" className="mb-3 rounded-xl border border-blue-100 bg-blue-50 px-3 py-2 text-sm font-medium text-blue-800">
+          {resumeNotice}
+        </p>
+      )}
       <div className="mb-3 flex items-center justify-between text-xs font-semibold text-gray-500">
         <span>Question {questionIndex + 1}/{questions.length}</span>
         <span>{question.points} point</span>

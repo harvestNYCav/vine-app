@@ -60,6 +60,13 @@ export function firstTrackPath(tracks: Track[]): string {
   return '/tracks'
 }
 
+export function firstPracticePath(tracks: Track[]): string {
+  if (tracks.includes('esl')) return '/practice?mode=esl'
+  if (tracks.includes('ela')) return '/practice?mode=ela'
+  if (tracks.includes('math')) return '/practice?mode=math'
+  return '/tracks'
+}
+
 export function filterModulesByTracks(modules: Module[], tracks: Track[]): Module[] {
   return modules.filter(mod => tracks.includes(mod.track))
 }

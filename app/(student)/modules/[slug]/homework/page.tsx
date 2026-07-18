@@ -19,7 +19,7 @@ export default async function HomeworkPage({ params }: { params: Promise<{ slug:
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
-      <WorksheetClient mod={mod} />
+      <WorksheetClient mod={mod} userId={session!.userId} />
     </div>
   )
 }

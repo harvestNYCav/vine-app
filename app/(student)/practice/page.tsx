@@ -5,11 +5,13 @@ import PracticeClient from './PracticeClient'
 import MathClient from '../math/MathClient'
 import ModeToggle from '../ModeToggle'
 import LangToggle from '../LangToggle'
-import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import { firstPracticePath, getStudentTracks } from '@/lib/tracks'
 import { getStudentSettings } from '@/lib/student-settings'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import type { Track } from '@/types'
+import Link from 'next/link'
+import { formatDueWordCount } from '@/lib/study'
 
 export default async function PracticePage({
   searchParams,
@@ -23,8 +25,11 @@ export default async function PracticePage({
   const tracks = await getStudentTracks(db, session!.userId)
   if (tracks.length === 0) redirect('/tracks')
 
-  const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
-  if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
+  const requestedMode: Track | null = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : mode === 'esl' ? 'esl' : null
+  if (!requestedMode || !tracks.includes(requestedMode)) {
+    redirect(firstPracticePath(tracks))
+  }
+  const currentMode = requestedMode
 
   if (currentMode === 'math') {
     const [rowResult, historyResult, settings] = await Promise.all([
@@ -86,29 +91,55 @@ export default async function PracticePage({
           initialHistory={initialHistory}
           initialSkillFocus={skill || null}
           isSpanish={isSpanish}
+          userId={session!.userId}
         />
       </div>
     )
   }
 
   // English modes
-  const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode)
-  const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
+  const englishTracks = tracks.filter((track): track is 'ela' | 'esl' => track === 'ela' || track === 'esl')
+  const englishModules = ALL_MODULES.filter(mod => mod.track === 'ela' || mod.track === 'esl')
+  const moduleBySlug = new Map(englishModules.map(mod => [mod.slug, mod]))
   const now = Date.now()
   const dueResult = await db.execute({
-    sql: 'SELECT * FROM vocab_progress WHERE user_id = ? AND next_review_at <= ? ORDER BY next_review_at ASC LIMIT 10',
+    sql: 'SELECT * FROM vocab_progress WHERE user_id = ? AND next_review_at <= ? ORDER BY next_review_at ASC',
     args: [session!.userId, now],
   })
   type DueWordRow = { word_id: string; module_slug: string }
   const dueWords = dueResult.rows as unknown as DueWordRow[]
 
-  const cards = dueWords.flatMap(row => {
-    if (!visibleModuleSlugs.has(row.module_slug)) return []
-    const mod = visibleModules.find(m => m.slug === row.module_slug)
+  const allDueCards = dueWords.flatMap(row => {
+    const mod = moduleBySlug.get(row.module_slug)
     const vocab = mod?.vocab.find(v => `${row.module_slug}:${v.id}` === row.word_id)
     if (!vocab || !mod) return []
-    return [{ wordId: row.word_id, moduleSlug: row.module_slug, ...vocab }]
+    return [{ wordId: row.word_id, moduleSlug: row.module_slug, track: mod.track, ...vocab }]
   })
+  const dueCounts = {
+    ela: allDueCards.filter(card => card.track === 'ela').length,
+    esl: allDueCards.filter(card => card.track === 'esl').length,
+  }
+  const cards = allDueCards.filter(card => card.track === currentMode).slice(0, 10)
+  const globallyCaughtUp = englishTracks.every(track => dueCounts[track] === 0)
+  const otherTrackWithWork = englishTracks.find(track => track !== currentMode && dueCounts[track] > 0)
+  const dueModeNav = (
+    <nav aria-label="English practice queues" className="mb-5 grid grid-cols-2 gap-2">
+      {englishTracks.map(track => (
+        <Link
+          key={track}
+          href={`/practice?mode=${track}`}
+          aria-current={track === currentMode ? 'page' : undefined}
+          className={`rounded-xl border px-3 py-2 text-center text-sm font-semibold ${
+            track === currentMode
+              ? 'border-green-600 bg-green-50 text-green-800'
+              : 'border-gray-200 bg-white text-gray-600'
+          }`}
+        >
+          {track.toUpperCase()} · {formatDueWordCount(dueCounts[track])}
+        </Link>
+      ))}
+    </nav>
+  )
 
   if (cards.length === 0) {
     return (
@@ -120,15 +151,30 @@ export default async function PracticePage({
           </div>
           <ModeToggle currentMode={currentMode} availableTracks={tracks} />
         </div>
+        {dueModeNav}
         <div className="text-center py-8">
-          <div className="text-5xl mb-4">✅</div>
-          <h2 className="text-xl font-bold text-green-800 mb-2">All caught up!</h2>
-          <p className="text-gray-500 mb-8">No words to review right now.</p>
-          <a href={currentMode === 'ela' ? '/vine-app/modules?mode=ela' : '/vine-app/modules'}>
-            <button className="bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors">
+          <div className="text-5xl mb-4">{globallyCaughtUp ? '✅' : '↗️'}</div>
+          <h2 className="text-xl font-bold text-green-800 mb-2">
+            {globallyCaughtUp ? 'All caught up!' : `No ${currentMode.toUpperCase()} words due`}
+          </h2>
+          <p className="text-gray-500 mb-8">
+            {otherTrackWithWork
+              ? `${formatDueWordCount(dueCounts[otherTrackWithWork])} in ${otherTrackWithWork.toUpperCase()}.`
+              : 'No words to review right now.'}
+          </p>
+          {otherTrackWithWork ? (
+            <Link
+              href={`/practice?mode=${otherTrackWithWork}`}
+              className="inline-block bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors"
+            >
+              Practice {otherTrackWithWork.toUpperCase()} →
+            </Link>
+          ) : <a
+            href={currentMode === 'ela' ? '/vine-app/modules?mode=ela' : '/vine-app/modules'}
+            className="inline-block bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors"
+          >
               Go learn something new →
-            </button>
-          </a>
+          </a>}
         </div>
       </div>
     )
@@ -139,10 +185,11 @@ export default async function PracticePage({
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-2xl font-bold text-green-800">Practice</h1>
-          <p className="text-gray-500 text-sm">{cards.length} words due</p>
+          <p className="text-gray-500 text-sm">{formatDueWordCount(dueCounts[currentMode])}</p>
         </div>
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
+      {dueModeNav}
       <PracticeClient cards={cards} isEsl={currentMode === 'esl'} />
     </div>
   )

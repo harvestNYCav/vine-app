@@ -4,7 +4,7 @@ import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { getStudentTracks } from '@/lib/tracks'
 import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
-import { countMatchingRounds } from '@/lib/study'
+import { countMatchingRounds, formatWordCount } from '@/lib/study'
 
 export default async function StudyHubPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -35,7 +35,7 @@ export default async function StudyHubPage({ params }: { params: Promise<{ slug:
 
       {practicedCount > 0 && (
         <p className="text-xs text-gray-400 mb-6 ml-9">
-          {practicedCount} of {mod.vocab.length} words in your practice queue
+          {practicedCount} of {formatWordCount(mod.vocab.length)} in your practice queue
         </p>
       )}
       {practicedCount === 0 && <div className="mb-6" />}
@@ -47,7 +47,7 @@ export default async function StudyHubPage({ params }: { params: Promise<{ slug:
             <div>
               <p className="font-bold text-gray-800">Flashcards</p>
               <p className="text-sm text-gray-500">
-                {mod.vocab.length} words · {mod.track === 'esl' ? 'flip, browse, rate' : 'browse, rate'}
+                {formatWordCount(mod.vocab.length)} · {mod.track === 'esl' ? 'flip, browse, rate' : 'browse, rate'}
               </p>
             </div>
           </div>
