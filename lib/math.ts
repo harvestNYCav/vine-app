@@ -43,6 +43,11 @@ export function getSkillLabel(skill: Skill, isSpanish: boolean): string {
   return isSpanish ? skill.labelEs : skill.label
 }
 
+export function formatDiagnosticSkillPosition(skillIndex: number, totalSkills: number, isSpanish: boolean): string {
+  const position = Math.min(Math.max(0, skillIndex) + 1, totalSkills)
+  return `${isSpanish ? 'Diagnóstico · Habilidad' : 'Diagnostic · Skill'} ${position}/${totalSkills}`
+}
+
 export const OP_SYM: Record<ResolvedOperation, string> = {
   addition: '+',
   subtraction: '−',

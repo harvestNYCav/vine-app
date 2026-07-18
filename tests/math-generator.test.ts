@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { generateProblem, getSkillByTag } from '../lib/math'
+import { formatDiagnosticSkillPosition, generateProblem, getSkillByTag } from '../lib/math'
 
 test('the ×1–12 times-table generator includes both endpoint factors', () => {
   const skill = getSkillByTag('multiplication_tables')!
@@ -19,4 +19,10 @@ test('the ×1–12 times-table generator includes both endpoint factors', () => 
   } finally {
     Math.random = originalRandom
   }
+})
+
+test('diagnostic progress identifies skills rather than implying a question counter', () => {
+  assert.equal(formatDiagnosticSkillPosition(0, 14, false), 'Diagnostic · Skill 1/14')
+  assert.equal(formatDiagnosticSkillPosition(0, 14, true), 'Diagnóstico · Habilidad 1/14')
+  assert.equal(formatDiagnosticSkillPosition(1, 14, false), 'Diagnostic · Skill 2/14')
 })

@@ -14,8 +14,9 @@ import {
 import { studentCanAccessElaExam } from '@/lib/ela-exam-access'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
+import { WEEKEND_DRAFT_TTL_MS } from '@/lib/resumable-work'
 
-const ATTEMPT_TTL_MS = 2 * 60 * 60 * 1000
+const ATTEMPT_TTL_MS = WEEKEND_DRAFT_TTL_MS
 
 type SubmittedResponse = {
   questionId: string
@@ -128,6 +129,7 @@ export async function POST(req: NextRequest) {
     const transaction = await auth.db.transaction('write')
     let id = ''
     let startedAt = now
+    let savedResponses: SubmittedResponse[] = []
     try {
       await transaction.execute({
         sql: `
@@ -138,9 +140,9 @@ export async function POST(req: NextRequest) {
       })
       const reusableResult = await transaction.execute({
         sql: `
-          SELECT id, started_at FROM ela_exam_attempts
+          SELECT id, started_at, responses FROM ela_exam_attempts
           WHERE user_id = ? AND exam_id = ? AND section_slug = ?
-            AND finished_at IS NULL AND expires_at > ? AND responses = '[]'
+            AND finished_at IS NULL AND expires_at > ?
           ORDER BY started_at DESC LIMIT 1
         `,
         args: [auth.session.userId, examId, sectionSlug, now],
@@ -149,17 +151,8 @@ export async function POST(req: NextRequest) {
       if (reusable) {
         id = String(reusable.id)
         startedAt = Number(reusable.started_at)
+        savedResponses = loadResponses(reusable.responses) ?? []
       } else {
-        // Starting over supersedes any unfinished run for this exact section.
-        // This keeps abandoned partial attempts from accumulating indefinitely.
-        await transaction.execute({
-          sql: `
-            DELETE FROM ela_exam_attempts
-            WHERE user_id = ? AND exam_id = ? AND section_slug = ? AND finished_at IS NULL
-          `,
-          args: [auth.session.userId, examId, sectionSlug],
-        })
-
         id = randomUUID()
         await transaction.execute({
           sql: `
@@ -187,6 +180,7 @@ export async function POST(req: NextRequest) {
       attemptId: id,
       startedAt,
       questions: questions.map(toPublicElaExamQuestion),
+      responses: savedResponses,
     })
   }
 

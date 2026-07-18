@@ -5,6 +5,10 @@ import { todayString, nextSaturday } from '@/lib/scheduling'
 import ModuleSlideDeck from '@/components/ModuleSlideDeck'
 import AssignToStudents from './AssignToStudents'
 import getDb from '@/lib/db'
+import { normalizeTracks } from '@/lib/tracks'
+import { getSession } from '@/lib/auth'
+import { filterTutorRosterStudents, getTutorStudentIds } from '@/lib/tutor-roster'
+import { getTutorRosterScope } from '@/lib/tutor-roster-server'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -22,12 +26,30 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
   const today = todayString()
   const nextDate = nextSaturday()
 
+  const session = await getSession()
+  if (!session || session.role !== 'tutor') notFound()
   const db = await getDb()
-  const studentsResult = await db.execute({
-    sql: "SELECT id, name FROM users WHERE role = 'student' ORDER BY name",
-    args: [],
-  })
-  const students = studentsResult.rows.map(row => ({ id: String(row.id), name: String(row.name) }))
+  const [studentsResult, assignedStudentIds, rosterScope] = await Promise.all([
+    db.execute({
+      sql: `
+        SELECT u.id, u.name, GROUP_CONCAT(ut.track) AS tracks
+        FROM users u
+        LEFT JOIN user_tracks ut ON ut.user_id = u.id
+        WHERE u.role = 'student'
+        GROUP BY u.id, u.name
+        ORDER BY u.name
+      `,
+      args: [],
+    }),
+    getTutorStudentIds(db, session.userId),
+    getTutorRosterScope(session.userId),
+  ])
+  const allStudents = studentsResult.rows.map(row => ({
+    id: String(row.id),
+    name: String(row.name),
+    tracks: normalizeTracks(String(row.tracks ?? '').split(',').filter(Boolean)),
+  }))
+  const students = filterTutorRosterStudents(allStudents, assignedStudentIds, rosterScope)
 
   return (
     <div>
@@ -44,7 +66,14 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
         </div>
         <p className="text-sm text-gray-600 mb-5">{mod.descriptionEn}</p>
 
-        <AssignToStudents moduleSlug={mod.slug} today={today} nextDate={nextDate} students={students} />
+        <AssignToStudents
+          moduleSlug={mod.slug}
+          moduleTrack={mod.track}
+          today={today}
+          nextDate={nextDate}
+          students={students}
+          rosterScope={rosterScope}
+        />
 
         <p className="text-xs text-gray-400 mt-4 text-center">Preview the full lesson below ↓</p>
       </div>

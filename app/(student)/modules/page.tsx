@@ -14,6 +14,7 @@ import type { Track } from '@/types'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import Link from 'next/link'
+import { formatWordCount } from '@/lib/study'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -315,7 +316,7 @@ export default async function ModulesPage({
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="font-semibold text-gray-800">{mod.titleEn}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{mod.vocab.length} words</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{formatWordCount(mod.vocab.length)}</p>
                 </div>
                 <div className="text-right flex-shrink-0">
                   {status === 'homework-done' && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">Homework done ✓</span>}

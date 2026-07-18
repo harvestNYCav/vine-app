@@ -20,6 +20,18 @@ export function shuffle<T>(arr: T[]): T[] {
 
 export const MAX_ROUND_SIZE = 6
 
+export function formatWordCount(count: number): string {
+  return `${count} ${count === 1 ? 'word' : 'words'}`
+}
+
+export function formatDueWordCount(count: number): string {
+  return `${formatWordCount(count)} due`
+}
+
+export function formatReviewedWordCount(count: number): string {
+  return `You reviewed ${formatWordCount(count)} today.`
+}
+
 export function countMatchingRounds(vocabLength: number): number {
   return Math.max(1, Math.ceil(vocabLength / MAX_ROUND_SIZE))
 }

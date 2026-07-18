@@ -1,12 +1,30 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { Module } from '@/types'
 import { getMatchingItems } from '@/lib/worksheet'
+import { clearDraft, loadDraft, LONG_FORM_DRAFT_TTL_MS, saveDraft, userDraftKey } from '@/lib/resumable-work'
 
 interface Props {
   mod: Module
+  userId: string
+}
+
+type WorksheetDraft = {
+  matching: Record<string, string>
+  fillIn: Record<string, string>
+}
+
+function isStringRecord(value: unknown): value is Record<string, string> {
+  return !!value && typeof value === 'object' && !Array.isArray(value)
+    && Object.values(value).every(item => typeof item === 'string')
+}
+
+function isWorksheetDraft(value: unknown): value is WorksheetDraft {
+  if (!value || typeof value !== 'object') return false
+  const draft = value as Partial<WorksheetDraft>
+  return isStringRecord(draft.matching) && isStringRecord(draft.fillIn)
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -18,8 +36,9 @@ function shuffle<T>(arr: T[]): T[] {
   return copy
 }
 
-export default function WorksheetClient({ mod }: Props) {
+export default function WorksheetClient({ mod, userId }: Props) {
   const router = useRouter()
+  const draftKey = useMemo(() => userDraftKey(userId, 'worksheet', mod.slug), [mod.slug, userId])
   const [matchingItems] = useState(() => getMatchingItems(mod))
   const [shuffledEs] = useState(() => shuffle(matchingItems.map(v => v.es ?? '')))
   const hasMatching = matchingItems.length > 0
@@ -27,6 +46,31 @@ export default function WorksheetClient({ mod }: Props) {
   const [fillIn, setFillIn] = useState<Record<string, string>>({})
   const [submitting, setSubmitting] = useState(false)
   const [score, setScore] = useState<number | null>(null)
+  const [draftLoaded, setDraftLoaded] = useState(false)
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    try {
+      const draft = loadDraft(window.localStorage, draftKey, isWorksheetDraft, LONG_FORM_DRAFT_TTL_MS)
+      if (draft) {
+        setMatching(draft.matching)
+        setFillIn(draft.fillIn)
+      }
+    } catch {
+      // Start with an empty worksheet when browser storage is unavailable.
+    } finally {
+      setDraftLoaded(true)
+    }
+  }, [draftKey])
+
+  useEffect(() => {
+    if (!draftLoaded || score !== null) return
+    try {
+      saveDraft(window.localStorage, draftKey, { matching, fillIn })
+    } catch {
+      // The worksheet remains usable even when browser storage is unavailable.
+    }
+  }, [draftKey, draftLoaded, fillIn, matching, score])
 
   const allMatched = !hasMatching || matchingItems.every(v => matching[v.id])
   const allFilled = mod.worksheet.every(q => fillIn[q.id]?.trim())
@@ -34,6 +78,7 @@ export default function WorksheetClient({ mod }: Props) {
 
   const handleSubmit = async () => {
     setSubmitting(true)
+    setError('')
     try {
       const res = await fetch('/vine-app/api/progress', {
         method: 'POST',
@@ -48,9 +93,17 @@ export default function WorksheetClient({ mod }: Props) {
         }),
       })
       const json = await res.json()
-      setScore(typeof json.score === 'number' ? json.score : 0)
-    } catch {
-      setScore(0)
+      if (!res.ok || typeof json.score !== 'number') {
+        throw new Error(typeof json.error === 'string' ? json.error : 'Homework could not be saved')
+      }
+      try {
+        clearDraft(window.localStorage, draftKey)
+      } catch {
+        // The server result is authoritative even if local cleanup fails.
+      }
+      setScore(json.score)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Homework could not be saved. Your answers are still here.')
     } finally {
       setSubmitting(false)
     }
@@ -142,6 +195,7 @@ export default function WorksheetClient({ mod }: Props) {
       >
         {submitting ? 'Saving...' : 'Submit Homework'}
       </button>
+      {error && <p role="alert" className="text-sm font-medium text-red-600">{error}</p>}
     </div>
   )
 }

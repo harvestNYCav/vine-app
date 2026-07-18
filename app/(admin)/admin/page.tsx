@@ -7,6 +7,7 @@ import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
+import AdminCreateStudentForm from './AdminCreateStudentForm'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 
@@ -106,6 +107,7 @@ export default async function AdminPage() {
         <h1 className="text-2xl font-bold text-slate-900">Students</h1>
       </div>
 
+      <AdminCreateStudentForm />
       <AdminAllowlistControls initialEmails={adminAllowlist} />
       <AdminDangerZoneControls profiles={resettableProfiles} />
 

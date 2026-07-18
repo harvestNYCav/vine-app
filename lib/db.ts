@@ -137,7 +137,7 @@ async function initSchema(db: Client): Promise<void> {
       tutor_id TEXT NOT NULL,
       homework_assigned INTEGER NOT NULL DEFAULT 0,
       created_at INTEGER NOT NULL,
-      UNIQUE(student_id, date)
+      UNIQUE(student_id, date, module_slug)
     );
 
     CREATE TABLE IF NOT EXISTS attendance (
@@ -258,6 +258,7 @@ async function initSchema(db: Client): Promise<void> {
   await backfillExistingMathStudentGradeLevels(db)
   await ensureUsersTableSupportsAdminRole(db)
   await ensureSessionsTableSupportsStudentId(db)
+  await ensureSessionsTableSupportsMultipleLessons(db)
   await seedDefaultAdminAllowlistIfEmpty(db)
 }
 
@@ -369,9 +370,52 @@ async function ensureSessionsTableSupportsStudentId(db: Client): Promise<void> {
       tutor_id TEXT NOT NULL,
       homework_assigned INTEGER NOT NULL DEFAULT 0,
       created_at INTEGER NOT NULL,
-      UNIQUE(student_id, date)
+      UNIQUE(student_id, date, module_slug)
     );
   `)
+}
+
+export async function ensureSessionsTableSupportsMultipleLessons(db: Client): Promise<void> {
+  const migrationName = '2026-07-17-multiple-lessons-per-student-date'
+  const tableResult = await db.execute({
+    sql: "SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'sessions'",
+    args: [],
+  })
+  const normalizedTableSql = String(tableResult.rows[0]?.sql ?? '')
+    .toLowerCase()
+    .replace(/\s+/g, '')
+  const supportsMultipleLessons = normalizedTableSql.includes('unique(student_id,date,module_slug)')
+
+  if (!supportsMultipleLessons) {
+    await db.executeMultiple(`
+      DROP TABLE IF EXISTS sessions_multiple_lessons_migration;
+
+      CREATE TABLE sessions_multiple_lessons_migration (
+        id TEXT PRIMARY KEY,
+        student_id TEXT NOT NULL,
+        date TEXT NOT NULL,
+        module_slug TEXT NOT NULL,
+        tutor_id TEXT NOT NULL,
+        homework_assigned INTEGER NOT NULL DEFAULT 0,
+        created_at INTEGER NOT NULL,
+        UNIQUE(student_id, date, module_slug)
+      );
+
+      INSERT INTO sessions_multiple_lessons_migration (
+        id, student_id, date, module_slug, tutor_id, homework_assigned, created_at
+      )
+      SELECT id, student_id, date, module_slug, tutor_id, homework_assigned, created_at
+      FROM sessions;
+
+      DROP TABLE sessions;
+      ALTER TABLE sessions_multiple_lessons_migration RENAME TO sessions;
+    `)
+  }
+
+  await db.execute({
+    sql: 'INSERT INTO schema_migrations (name, applied_at) VALUES (?, ?) ON CONFLICT(name) DO NOTHING',
+    args: [migrationName, Date.now()],
+  })
 }
 
 export default getDb

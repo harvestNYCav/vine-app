@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { VocabItem } from '@/types'
+import { formatReviewedWordCount } from '@/lib/study'
 
 interface Card extends VocabItem {
   wordId: string
@@ -47,7 +48,7 @@ export default function PracticeClient({ cards, isEsl }: Props) {
       <div className="text-center py-8">
         <div className="text-5xl mb-4">🌟</div>
         <h2 className="text-xl font-bold text-green-800 mb-2">Review complete!</h2>
-        <p className="text-gray-500 mb-8">You reviewed {reviewed} words today.</p>
+        <p className="text-gray-500 mb-8">{formatReviewedWordCount(reviewed)}</p>
         <button
           onClick={() => router.push('/home')}
           className="bg-green-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-green-800 transition-colors"

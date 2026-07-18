@@ -17,8 +17,9 @@ import {
 import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
 import { studentCanAccessMathExam } from '@/lib/math-exam-access'
+import { WEEKEND_DRAFT_TTL_MS } from '@/lib/resumable-work'
 
-const ATTEMPT_TTL_MS = 2 * 60 * 60 * 1000
+const ATTEMPT_TTL_MS = WEEKEND_DRAFT_TTL_MS
 const MAX_RESPONSE_LENGTH = 5000
 
 type SubmittedResponse = {
@@ -168,9 +169,9 @@ export async function POST(req: NextRequest) {
     })
     const reusableResult = await auth.db.execute({
       sql: `
-        SELECT id, started_at FROM math_exam_attempts
+        SELECT id, started_at, responses FROM math_exam_attempts
         WHERE user_id = ? AND exam_id = ? AND section_slug = ? AND language = ?
-          AND finished_at IS NULL AND expires_at > ? AND responses = '[]'
+          AND finished_at IS NULL AND expires_at > ?
         ORDER BY started_at DESC LIMIT 1
       `,
       args: [auth.session.userId, examId, sectionSlug, language, now],
@@ -181,18 +182,9 @@ export async function POST(req: NextRequest) {
         attemptId: String(reusable.id),
         startedAt: Number(reusable.started_at),
         questions: questions.map(toPublicMathExamQuestion),
+        responses: loadResponses(reusable.responses) ?? [],
       })
     }
-
-    // Starting over supersedes any unfinished run for this exact section.
-    // This keeps abandoned partial attempts from accumulating indefinitely.
-    await auth.db.execute({
-      sql: `
-        DELETE FROM math_exam_attempts
-        WHERE user_id = ? AND exam_id = ? AND section_slug = ? AND finished_at IS NULL
-      `,
-      args: [auth.session.userId, examId, sectionSlug],
-    })
 
     const id = randomUUID()
     await auth.db.execute({
@@ -217,6 +209,7 @@ export async function POST(req: NextRequest) {
       attemptId: id,
       startedAt: now,
       questions: questions.map(toPublicMathExamQuestion),
+      responses: [],
     })
   }
 

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
-    "test": "npm run test:python && node --test tests/smoke.test.mjs && node --import tsx --test tests/math-choice-buttons.test.ts && node --conditions=react-server --import tsx --test tests/math-exams.test.ts tests/math-exam-access.test.ts tests/math-generator.test.ts tests/ela-exams.test.ts tests/ela-exam-access.test.ts tests/student-grade-settings.test.ts",
+    "test": "npm run test:python && node --test tests/smoke.test.mjs && node --import tsx --test tests/math-choice-buttons.test.ts tests/tutor-roster.test.ts tests/pin-entry.test.ts tests/demo-seed.test.ts && node --conditions=react-server --import tsx --test tests/math-exams.test.ts tests/math-exam-access.test.ts tests/math-generator.test.ts tests/ela-exams.test.ts tests/ela-exam-access.test.ts tests/student-grade-settings.test.ts tests/scheduling.test.ts tests/tutor-lesson-assignment.test.ts tests/student-accounts.test.ts tests/student-login-provisioning.test.ts tests/resumable-work.test.ts tests/lesson-progress.test.ts",
     "test:python": "python3 -m unittest discover -s tests -p 'test_*.py'",
     "test:ela-question-accessibility": "python3 -m unittest discover -s tests -p test_nysed_ela_question_accessibility.py",
     "test:ela-transcripts": "python3 -m unittest discover -s tests -p test_nysed_ela_transcripts.py",

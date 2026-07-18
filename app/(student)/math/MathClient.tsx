@@ -5,8 +5,16 @@ import {
   SKILLS, MathProblem, MistakeType, OP_SYM,
   classifyMistake, updateMastery,
   getSkillByTag, getNextSkill,
-  getSkillLabel, MASTERY_THRESHOLD, MIN_ATTEMPTS,
+  formatDiagnosticSkillPosition, getSkillLabel, MASTERY_THRESHOLD, MIN_ATTEMPTS,
 } from '@/lib/math'
+import {
+  clearDraft,
+  loadDraft,
+  mathAttemptTtlMs,
+  saveDraft,
+  userDraftKey,
+  WEEKEND_DRAFT_TTL_MS,
+} from '@/lib/resumable-work'
 
 type Screen = 'home' | 'diag-intro' | 'problem' | 'results' | 'skill-selector' | 'history' | 'leaderboard'
 type SessionType = 'diagnostic' | 'practice_5' | 'practice_10' | 'flat_10' | 'flat_25' | 'custom'
@@ -45,6 +53,7 @@ interface Props {
   initialHistory: MathSessionRecord[]
   initialSkillFocus?: string | null
   isSpanish?: boolean
+  userId: string
 }
 
 interface LeaderboardRow {
@@ -64,6 +73,70 @@ interface LeaderboardData {
 }
 
 const DIAG_TIER_TOTAL = 3
+
+type MathDraft = {
+  sessionType: SessionType
+  lastSessionType: SessionType
+  attemptId: string
+  sessionProblems: Attempt[]
+  sessionStart: number
+  sessionDuration: number
+  questionTarget: number
+  mistakeQueue: Array<{ skill_tag: string }>
+  pinnedTags: string[] | null
+  customQCount: number
+  plannedProblems: MathProblem[]
+  plannedProblemIndex: number
+  mastery: Record<string, number>
+  currentSkill: string | null
+  diagnosticDone: boolean
+  totalProblems: number
+  totalCorrect: number
+  mistakeProfile: Record<string, number>
+  skillCounts: Record<string, number>
+  diagnosticSkillIndex: number
+  diagnosticTier: boolean[]
+  diagnosticTierCorrect: number
+  awaitingNext: boolean
+  currentProblem: MathProblem
+}
+
+const SESSION_TYPES: SessionType[] = ['diagnostic', 'practice_5', 'practice_10', 'flat_10', 'flat_25', 'custom']
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return !!value && typeof value === 'object' && !Array.isArray(value)
+}
+
+function isMathDraft(value: unknown): value is MathDraft {
+  if (!isRecord(value)) return false
+  return typeof value.sessionType === 'string'
+    && SESSION_TYPES.includes(value.sessionType as SessionType)
+    && typeof value.lastSessionType === 'string'
+    && SESSION_TYPES.includes(value.lastSessionType as SessionType)
+    && typeof value.attemptId === 'string'
+    && Array.isArray(value.sessionProblems)
+    && typeof value.sessionStart === 'number'
+    && typeof value.sessionDuration === 'number'
+    && typeof value.questionTarget === 'number'
+    && Array.isArray(value.mistakeQueue)
+    && (value.pinnedTags === null || Array.isArray(value.pinnedTags))
+    && typeof value.customQCount === 'number'
+    && Array.isArray(value.plannedProblems)
+    && typeof value.plannedProblemIndex === 'number'
+    && isRecord(value.mastery)
+    && (value.currentSkill === null || typeof value.currentSkill === 'string')
+    && typeof value.diagnosticDone === 'boolean'
+    && typeof value.totalProblems === 'number'
+    && typeof value.totalCorrect === 'number'
+    && isRecord(value.mistakeProfile)
+    && isRecord(value.skillCounts)
+    && typeof value.diagnosticSkillIndex === 'number'
+    && Array.isArray(value.diagnosticTier)
+    && typeof value.diagnosticTierCorrect === 'number'
+    && typeof value.awaitingNext === 'boolean'
+    && isRecord(value.currentProblem)
+    && typeof value.currentProblem.id === 'string'
+}
 
 function isCountMode(type: SessionType | null): boolean {
   return type === 'flat_10' || type === 'flat_25' || type === 'custom'
@@ -99,7 +172,8 @@ const LB_TABS: Array<{ key: SessionType; label: string }> = [
   { key: 'flat_25', label: '25 Q' },
 ]
 
-export default function MathClient({ initialProgress, initialHistory, initialSkillFocus, isSpanish = false }: Props) {
+export default function MathClient({ initialProgress, initialHistory, initialSkillFocus, isSpanish = false, userId }: Props) {
+  const draftKey = userDraftKey(userId, 'math', 'active-attempt')
   // ── display state ──────────────────────────────────────────────────────
   const [screen, setScreen] = useState<Screen>('home')
   const [currentProblem, setCurrentProblem] = useState<MathProblem | null>(null)
@@ -157,15 +231,17 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   const endSessionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const answerInputRef = useRef<HTMLInputElement>(null)
 
-  // Auto-start focused session if arriving from a skill lesson page
+  // Restore unfinished work before auto-starting a focused session.
   const didAutoStart = useRef(false)
   useEffect(() => {
-    if (initialSkillFocus && diagDoneRef.current && !didAutoStart.current) {
+    const restored = restoreMathDraft()
+    if (!restored && initialSkillFocus && diagDoneRef.current && !didAutoStart.current) {
       didAutoStart.current = true
       pinnedTagsRef.current = [initialSkillFocus]
       setSelectedSkills([initialSkillFocus])
       void startPractice('custom')
     }
+    return clearTimers
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -189,6 +265,128 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       rightLabel = `${Math.floor(rem / 60)}:${(rem % 60).toString().padStart(2, '0')} ${isSpanish ? 'restante' : 'left'}`
     }
     setStatsDisplay({ total, correct, rightLabel })
+  }
+
+  function saveMathDraft() {
+    const sessionType = sessionTypeRef.current
+    const attemptId = mathAttemptIdRef.current
+    const current = currentProblemRef.current
+    if (!sessionType || !attemptId || !current) return
+
+    const draft: MathDraft = {
+      sessionType,
+      lastSessionType: lastSessionTypeRef.current ?? sessionType,
+      attemptId,
+      sessionProblems: sessionProblemsRef.current,
+      sessionStart: sessionStartRef.current,
+      sessionDuration: sessionDurationRef.current,
+      questionTarget: questionTargetRef.current,
+      mistakeQueue: mistakeQueueRef.current,
+      pinnedTags: pinnedTagsRef.current,
+      customQCount: customQCountRef.current,
+      plannedProblems: plannedProblemsRef.current,
+      plannedProblemIndex: plannedProblemIndexRef.current,
+      mastery: masteryRef.current,
+      currentSkill: currentSkillRef.current,
+      diagnosticDone: diagDoneRef.current,
+      totalProblems: totalProblemsRef.current,
+      totalCorrect: totalCorrectRef.current,
+      mistakeProfile: mistakeProfileRef.current,
+      skillCounts: skillCountsRef.current,
+      diagnosticSkillIndex: diagSkillIndexRef.current,
+      diagnosticTier: diagTierRef.current,
+      diagnosticTierCorrect: diagTierCorrectRef.current,
+      awaitingNext: awaitingNextRef.current,
+      currentProblem: current,
+    }
+
+    try {
+      saveDraft(window.localStorage, draftKey, draft)
+    } catch {
+      // The drill remains usable if browser storage is unavailable.
+    }
+  }
+
+  function discardMathDraft() {
+    try {
+      clearDraft(window.localStorage, draftKey)
+    } catch {
+      // Server completion remains authoritative if local cleanup fails.
+    }
+  }
+
+  function restoreMathDraft(): boolean {
+    let draft: MathDraft | null = null
+    try {
+      draft = loadDraft(window.localStorage, draftKey, isMathDraft, WEEKEND_DRAFT_TTL_MS)
+    } catch {
+      return false
+    }
+    if (!draft) return false
+
+    const elapsed = Date.now() - draft.sessionStart
+    const isTimed = draft.sessionType === 'practice_5' || draft.sessionType === 'practice_10'
+    if (
+      elapsed < 0
+      || elapsed > mathAttemptTtlMs(draft.sessionType)
+      || (isTimed && elapsed >= draft.sessionDuration)
+    ) {
+      discardMathDraft()
+      return false
+    }
+
+    sessionTypeRef.current = draft.sessionType
+    lastSessionTypeRef.current = draft.lastSessionType
+    mathAttemptIdRef.current = draft.attemptId
+    sessionProblemsRef.current = draft.sessionProblems
+    sessionStartRef.current = draft.sessionStart
+    sessionDurationRef.current = draft.sessionDuration
+    questionTargetRef.current = draft.questionTarget
+    mistakeQueueRef.current = draft.mistakeQueue
+    pinnedTagsRef.current = draft.pinnedTags
+    customQCountRef.current = draft.customQCount
+    plannedProblemsRef.current = draft.plannedProblems
+    plannedProblemIndexRef.current = draft.plannedProblemIndex
+    masteryRef.current = draft.mastery
+    currentSkillRef.current = draft.currentSkill
+    diagDoneRef.current = draft.diagnosticDone
+    totalProblemsRef.current = draft.totalProblems
+    totalCorrectRef.current = draft.totalCorrect
+    mistakeProfileRef.current = draft.mistakeProfile
+    skillCountsRef.current = draft.skillCounts
+    diagSkillIndexRef.current = draft.diagnosticSkillIndex
+    diagTierRef.current = draft.diagnosticTier
+    diagTierCorrectRef.current = draft.diagnosticTierCorrect
+    awaitingNextRef.current = draft.awaitingNext
+    currentProblemRef.current = draft.currentProblem
+    finishStartedRef.current = false
+
+    setCustomQCount(draft.customQCount)
+    if (draft.pinnedTags) setSelectedSkills(draft.pinnedTags)
+    setCurrentProblem(draft.currentProblem)
+    if (draft.awaitingNext) {
+      const last = draft.sessionProblems[draft.sessionProblems.length - 1]
+      setAnswerState(last?.isCorrect ? 'correct' : 'incorrect')
+      setFeedbackMsg(isSpanish ? 'Respuesta guardada. Continuando…' : 'Answer saved. Continuing…')
+    } else {
+      setAnswerState('idle')
+      setFeedbackMsg(isSpanish ? 'Sesión restaurada' : 'Session restored')
+    }
+    updateStatsDisplay(draft.sessionProblems, draft.sessionType)
+    setTimerWidth(isCountMode(draft.sessionType)
+      ? (draft.sessionProblems.length / Math.max(1, draft.questionTarget)) * 100
+      : isTimed
+        ? Math.max(0, (1 - elapsed / draft.sessionDuration) * 100)
+        : 0)
+    setScreen('problem')
+
+    if (draft.awaitingNext) {
+      scheduleNextStep(300)
+    } else {
+      startTimer()
+      setTimeout(() => answerInputRef.current?.focus(), 30)
+    }
+    return true
   }
 
   async function beginMathAttempt(type: SessionType): Promise<boolean> {
@@ -247,6 +445,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
         record: MathSessionRecord
         progress: InitialProgress
       }
+      discardMathDraft()
+      mathAttemptIdRef.current = null
       masteryRef.current = data.progress.skill_mastery
       currentSkillRef.current = data.progress.current_skill
       diagDoneRef.current = data.progress.diagnostic_done
@@ -337,6 +537,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       setTimerWidth((sessionProblemsRef.current.length / questionTargetRef.current) * 100)
     }
 
+    saveMathDraft()
     setTimeout(() => answerInputRef.current?.focus(), 30)
   }
 
@@ -364,6 +565,45 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   function advanceToNextProblem() {
     loadNextProblem()
     startTimer()
+  }
+
+  function scheduleNextStep(delay = 900) {
+    const type = sessionTypeRef.current
+    if (type === 'diagnostic') {
+      const tier = diagTierRef.current
+      if (tier.length >= DIAG_TIER_TOTAL) {
+        feedbackTimeoutRef.current = setTimeout(() => {
+          if (diagTierCorrectRef.current / tier.length >= 0.8) {
+            masteryRef.current = {
+              ...masteryRef.current,
+              [SKILLS[diagSkillIndexRef.current].tag]: Math.min(1, diagTierCorrectRef.current / tier.length),
+            }
+            diagSkillIndexRef.current++
+            if (diagSkillIndexRef.current >= SKILLS.length) {
+              finishDiagnostic(SKILLS.length - 1)
+            } else {
+              diagTierRef.current = []
+              diagTierCorrectRef.current = 0
+              advanceToNextProblem()
+            }
+          } else {
+            finishDiagnostic(Math.max(0, diagSkillIndexRef.current - 1))
+          }
+        }, delay)
+      } else {
+        feedbackTimeoutRef.current = setTimeout(advanceToNextProblem, delay)
+      }
+    } else if (isCountMode(type)) {
+      feedbackTimeoutRef.current = setTimeout(
+        sessionProblemsRef.current.length >= questionTargetRef.current ? endSession : advanceToNextProblem,
+        delay,
+      )
+    } else {
+      feedbackTimeoutRef.current = setTimeout(
+        Date.now() - sessionStartRef.current >= sessionDurationRef.current ? endSession : advanceToNextProblem,
+        delay,
+      )
+    }
   }
 
   // ── submit answer ──────────────────────────────────────────────────────
@@ -408,48 +648,13 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     setFeedbackMsg(isCorrect ? (isSpanish ? '✓ ¡Correcto!' : '✓ Correct!') : `✗ ${isSpanish ? 'Respuesta' : 'Answer'}: ${problem.answer}`)
     updateStatsDisplay(sessionProblemsRef.current, sessionTypeRef.current)
 
-    const type = sessionTypeRef.current
-
-    if (type === 'diagnostic') {
+    if (sessionTypeRef.current === 'diagnostic') {
       const tier = [...diagTierRef.current, isCorrect]
       diagTierRef.current = tier
       if (isCorrect) diagTierCorrectRef.current++
-
-      if (tier.length >= DIAG_TIER_TOTAL) {
-        feedbackTimeoutRef.current = setTimeout(() => {
-          if (diagTierCorrectRef.current / tier.length >= 0.8) {
-            masteryRef.current = {
-              ...masteryRef.current,
-              [SKILLS[diagSkillIndexRef.current].tag]: Math.min(1, diagTierCorrectRef.current / tier.length),
-            }
-            diagSkillIndexRef.current++
-            if (diagSkillIndexRef.current >= SKILLS.length) {
-              finishDiagnostic(SKILLS.length - 1)
-            } else {
-              diagTierRef.current = []
-              diagTierCorrectRef.current = 0
-              advanceToNextProblem()
-            }
-          } else {
-            finishDiagnostic(Math.max(0, diagSkillIndexRef.current - 1))
-          }
-        }, 1000)
-      } else {
-        feedbackTimeoutRef.current = setTimeout(advanceToNextProblem, 900)
-      }
-    } else if (isCountMode(type)) {
-      if (sessionProblemsRef.current.length >= questionTargetRef.current) {
-        feedbackTimeoutRef.current = setTimeout(endSession, 1000)
-      } else {
-        feedbackTimeoutRef.current = setTimeout(advanceToNextProblem, 900)
-      }
-    } else {
-      if (Date.now() - sessionStartRef.current >= sessionDurationRef.current) {
-        feedbackTimeoutRef.current = setTimeout(endSession, 1000)
-      } else {
-        feedbackTimeoutRef.current = setTimeout(advanceToNextProblem, 900)
-      }
     }
+    saveMathDraft()
+    scheduleNextStep()
   }
 
   function finishDiagnostic(idx: number) {
@@ -597,7 +802,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
           )}
           {type === 'diagnostic' && (
             <span className="bg-gray-100 text-gray-500 text-xs font-semibold px-3 py-1 rounded-full ml-auto">
-              {isSpanish ? 'Diagnóstico' : 'Diagnostic'} {diagSkillIndexRef.current + 1}/{SKILLS.length}
+              {formatDiagnosticSkillPosition(diagSkillIndexRef.current, SKILLS.length, isSpanish)}
             </span>
           )}
         </div>

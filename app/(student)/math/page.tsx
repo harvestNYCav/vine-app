@@ -58,7 +58,12 @@ export default async function MathPage({
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
-      <MathClient initialProgress={initialProgress} initialHistory={initialHistory} isSpanish={isSpanish} />
+      <MathClient
+        initialProgress={initialProgress}
+        initialHistory={initialHistory}
+        isSpanish={isSpanish}
+        userId={session!.userId}
+      />
     </div>
   )
 }

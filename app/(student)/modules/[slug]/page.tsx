@@ -4,6 +4,7 @@ import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { getStudentTracks } from '@/lib/tracks'
 import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
+import { formatWordCount } from '@/lib/study'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -79,7 +80,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
           <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow hover:bg-green-800 active:scale-95 transition-transform">
             📖 Review Slides
             <span className="block text-sm font-normal opacity-80 mt-0.5">
-              {reviewed ? 'Reviewed ✓' : `${mod.vocab.length} words from this lesson`}
+              {reviewed ? 'Reviewed ✓' : `${formatWordCount(mod.vocab.length)} from this lesson`}
             </span>
           </button>
         </a>
