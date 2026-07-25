@@ -38,6 +38,14 @@ export async function POST(req: NextRequest) {
   }
 
   const db = await getDb()
+  const studentResult = await db.execute({
+    sql: "SELECT id FROM users WHERE id = ? AND role = 'student'",
+    args: [studentId],
+  })
+  if (!studentResult.rows[0]) {
+    return NextResponse.json({ error: 'Student not found' }, { status: 404 })
+  }
+
   const id = randomUUID()
   await db.execute({
     sql: 'INSERT INTO tutor_notes (id, student_id, tutor_id, body, created_at) VALUES (?, ?, ?, ?, ?)',

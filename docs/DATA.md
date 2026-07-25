@@ -19,7 +19,7 @@ This repository contains data-like directories. Treat private runtime data diffe
 ## NYSED Released ELA Content
 
 - `content/ela-exams/generated/catalog.json` stores metadata for 78 releases from 2013–2019 and 2021–2026, covering Grades 3–8 and exactly 1,583 released multiple-choice questions.
-- `public/nysed/ela/` stores question-and-choice WebP crops. Full reading passages are not copied into Vine; each passage-based section links to its physical page range in the official NYSED booklet.
+- `public/nysed/ela/` stores question-and-choice WebP crops, plus stitched passage images (joining the physical booklet pages for each passage) with a reviewed, source-pinned text transcript alternative (`ElaPassageAsset`, `content/ela-exams/types.ts`) rendered in-app via a collapsible passage view. Each passage-based section still cites its physical page range and source booklet.
 - Third-party stories, articles, poems, illustrations, and other passage materials retain the rights and credits printed in the official booklet. Do not extract or republish those passage pages.
 - Every page that displays released questions must show the NYSED source, noncommercial educational-use statement, independent/non-endorsement disclaimer, and the third-party passage-rights notice.
 - Answer keys remain server-only. Do not ingest answer annotations, scoring-guide rationales, sample responses, or rubric text into student assets or generated feedback.

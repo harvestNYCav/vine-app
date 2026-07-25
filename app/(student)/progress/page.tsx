@@ -277,7 +277,7 @@ export default async function ProgressPage({
     db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
   ])
 
-  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
+  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; practice_score: number | null; homework_completed_at: number | null; homework_score: number | null }
   type VocabProgressRow = { word_id: string; correct_count: number; incorrect_count: number }
   type ActivityRow = { date: string; activity_type: string; count: number }
   type ElaExamProgressRow = {
@@ -411,9 +411,9 @@ export default async function ProgressPage({
         <div className="space-y-3">
           {visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
-            const steps = [!!p?.vocab_viewed_at, !!p?.homework_completed_at]
+            const steps = [!!p?.vocab_viewed_at, !!p?.practice_completed_at, !!p?.homework_completed_at]
             const completed = steps.filter(Boolean).length
-            const pct = Math.round((completed / 2) * 100)
+            const pct = Math.round((completed / 3) * 100)
             return (
               <div key={mod.slug} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
                 <div className="flex justify-between items-center mb-2">
@@ -423,8 +423,9 @@ export default async function ProgressPage({
                 <div className="w-full bg-gray-100 rounded-full h-2 mb-1">
                   <div className="bg-green-500 h-2 rounded-full transition-all" style={{ width: `${pct}%` }} />
                 </div>
-                <div className="flex gap-2 mt-2">
+                <div className="flex gap-2 mt-2 flex-wrap">
                   <span className={`text-xs px-2 py-0.5 rounded-full ${p?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-400'}`}>📖 Reviewed</span>
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${p?.practice_completed_at ? 'bg-purple-100 text-purple-600' : 'bg-gray-100 text-gray-400'}`}>✅ Quick Check {p?.practice_score ? `${p.practice_score}%` : ''}</span>
                   <span className={`text-xs px-2 py-0.5 rounded-full ${p?.homework_completed_at ? 'bg-green-100 text-green-600' : 'bg-gray-100 text-gray-400'}`}>📓 Homework {p?.homework_score ? `${p.homework_score}%` : ''}</span>
                 </div>
               </div>

@@ -64,6 +64,18 @@ export default async function StudyHubPage({ params }: { params: Promise<{ slug:
             </div>
           </a>
         )}
+
+        {mod.quiz.length > 0 && (
+          <a href={`/vine-app/modules/${slug}/study/quiz`} className="block">
+            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:border-green-300 active:scale-95 transition-transform flex items-center gap-4">
+              <span className="text-3xl">✅</span>
+              <div>
+                <p className="font-bold text-gray-800">Quick Check</p>
+                <p className="text-sm text-gray-500">{mod.quiz.length} question{mod.quiz.length === 1 ? '' : 's'} · see how much stuck</p>
+              </div>
+            </div>
+          </a>
+        )}
       </div>
     </div>
   )
