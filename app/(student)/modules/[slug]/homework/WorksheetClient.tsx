@@ -40,8 +40,13 @@ export default function WorksheetClient({ mod, userId }: Props) {
   const router = useRouter()
   const draftKey = useMemo(() => userDraftKey(userId, 'worksheet', mod.slug), [mod.slug, userId])
   const [matchingItems] = useState(() => getMatchingItems(mod))
-  const [shuffledEs] = useState(() => shuffle(matchingItems.map(v => v.es ?? '')))
+  const [shuffledEs, setShuffledEs] = useState(() => matchingItems.map(v => v.es ?? ''))
   const hasMatching = matchingItems.length > 0
+
+  useEffect(() => {
+    // Shuffle only after mount so the server-rendered and hydrated option order match.
+    setShuffledEs(prev => shuffle(prev))
+  }, [])
   const [matching, setMatching] = useState<Record<string, string>>({})
   const [fillIn, setFillIn] = useState<Record<string, string>>({})
   const [submitting, setSubmitting] = useState(false)

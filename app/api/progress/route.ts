@@ -128,10 +128,6 @@ export async function POST(req: NextRequest) {
       correct: String(answerByQuestionId.get(question.id) ?? '') === question.answer,
     }))
     const score = Math.round((graded.filter(result => result.correct).length / mod.quiz.length) * 100)
-    const wordResults = mod.vocab.slice(0, mod.quiz.length).map((vocab, index) => ({
-      wordId: `${mod.slug}:${vocab.id}`,
-      correct: graded[index]?.correct ?? false,
-    }))
 
     await db.execute({
       sql: `
@@ -150,31 +146,7 @@ export async function POST(req: NextRequest) {
       args: [session.userId, today],
     })
 
-    for (const { wordId, correct } of wordResults) {
-      const existingResult = await db.execute({
-        sql: 'SELECT * FROM vocab_progress WHERE user_id = ? AND word_id = ?',
-        args: [session.userId, wordId],
-      })
-      if (existingResult.rows[0]) {
-        if (correct) {
-          await db.execute({
-            sql: 'UPDATE vocab_progress SET correct_count = correct_count + 1, interval = MIN(interval * 2, 7), next_review_at = ? WHERE user_id = ? AND word_id = ?',
-            args: [Date.now() + 3 * 24 * 60 * 60 * 1000, session.userId, wordId],
-          })
-        } else {
-          await db.execute({
-            sql: 'UPDATE vocab_progress SET incorrect_count = incorrect_count + 1, interval = 1, next_review_at = ? WHERE user_id = ? AND word_id = ?',
-            args: [Date.now() + 24 * 60 * 60 * 1000, session.userId, wordId],
-          })
-        }
-      } else {
-        const { randomUUID } = await import('crypto')
-        await db.execute({
-          sql: 'INSERT INTO vocab_progress (id, user_id, word_id, module_slug, interval, repetitions, next_review_at, correct_count, incorrect_count) VALUES (?, ?, ?, ?, 3, 1, ?, ?, ?)',
-          args: [randomUUID(), session.userId, wordId, moduleSlug, Date.now() + 3 * 24 * 60 * 60 * 1000, correct ? 1 : 0, correct ? 0 : 1],
-        })
-      }
-    }
+    return NextResponse.json({ ok: true, score })
   }
 
   if (type === 'homework_completed') {

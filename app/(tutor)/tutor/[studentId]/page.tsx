@@ -59,7 +59,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     return module ? [{ sessionId: row.id, module }] : []
   })
 
-  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
+  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
   type MathSessionCountRow = { session_type: string; count: number }
   type ExamProgressRow = { exam_id: string; section_slug: string; attempts: number; best_points: number; best_possible: number }
@@ -170,23 +170,24 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
             </div>
           ) : visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
-            const steps = [!!p?.vocab_viewed_at, !!p?.homework_completed_at]
+            const steps = [!!p?.vocab_viewed_at, !!p?.practice_completed_at, !!p?.homework_completed_at]
             const completed = steps.filter(Boolean).length
             return (
               <div key={mod.slug} className="bg-white rounded-xl p-3 border border-gray-100 flex items-center gap-3">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-gray-700">{mod.titleEn}</p>
-                  <div className="flex gap-2 mt-1">
+                  <div className="flex gap-2 mt-1 flex-wrap">
                     <span className={`text-xs px-1.5 py-0.5 rounded ${p?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'text-gray-300'}`}>📖 Reviewed</span>
+                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.practice_completed_at ? 'bg-purple-100 text-purple-600' : 'text-gray-300'}`}>✅ Quick Check</span>
                     <span className={`text-xs px-1.5 py-0.5 rounded ${p?.homework_completed_at ? 'bg-green-100 text-green-600' : 'text-gray-300'}`}>📓 Homework{p?.homework_score ? ` ${p.homework_score}%` : ''}</span>
                   </div>
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center flex-shrink-0 text-xs font-bold"
                   style={{
-                    borderColor: completed === 2 ? '#10b981' : completed > 0 ? '#f59e0b' : '#e5e7eb',
-                    color: completed === 2 ? '#10b981' : completed > 0 ? '#f59e0b' : '#9ca3af'
+                    borderColor: completed === 3 ? '#10b981' : completed > 0 ? '#f59e0b' : '#e5e7eb',
+                    color: completed === 3 ? '#10b981' : completed > 0 ? '#f59e0b' : '#9ca3af'
                   }}>
-                  {completed}/2
+                  {completed}/3
                 </div>
               </div>
             )
