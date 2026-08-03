@@ -38,6 +38,29 @@ const module: Module = {
     { id: 'its-cold-hot', en: "It's cold / hot outside", es: 'Hace frío / calor afuera',
       exampleEn: "It's very cold outside today.", exampleEs: 'Hace mucho frío afuera hoy.' },
   ],
+  grammar: [
+    {
+      titleEn: 'Telling time: "It\'s ... o\'clock" and "half past ..."',
+      titleEs: 'Decir la hora: "It\'s ... o\'clock" y "half past ..."',
+      explanationEn: 'For an exact hour, say "It\'s" + the number + "o\'clock": It\'s three o\'clock. For thirty minutes past the hour, say "half past" + the number: It\'s half past three (3:30).',
+      explanationEs: 'Para una hora exacta, di "It\'s" + el número + "o\'clock": It\'s three o\'clock. Para treinta minutos después de la hora, di "half past" + el número: It\'s half past three (3:30).',
+      examples: [
+        { en: "It's three o'clock.", es: 'Son las tres en punto.' },
+        { en: "It's half past three.", es: 'Son las tres y media.' },
+      ],
+    },
+    {
+      titleEn: 'Use "in" before parts of the day, months, and seasons',
+      titleEs: 'Usa "in" antes de partes del día, meses y estaciones',
+      explanationEn: 'Use "in" before "the morning/afternoon/evening," before a month, and before a season: I work in the morning. My birthday is in January. It gets cold in the winter.',
+      explanationEs: 'Usa "in" antes de "the morning/afternoon/evening," antes de un mes, y antes de una estación: I work in the morning. My birthday is in January. It gets cold in the winter.',
+      examples: [
+        { en: 'I work in the morning.', es: 'Trabajo por la mañana.' },
+        { en: 'My birthday is in June.', es: 'Mi cumpleaños es en junio.' },
+        { en: 'It gets cold in the fall and very cold in the winter.', es: 'Hace frío en otoño y mucho frío en invierno.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"¿Qué hora es?" in English is:', promptEs: '"¿Qué hora es?" en inglés es:',
       answer: 'What time is it?', options: ['What time is it?', 'What day is it?', 'What is the date today?', 'It\'s cold outside'] },
@@ -49,6 +72,12 @@ const module: Module = {
       answer: 'winter', options: ['winter', 'summer', 'spring', 'fall'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"¿Cuál es la fecha de hoy?" in English is:', promptEs: '"¿Cuál es la fecha de hoy?" en inglés es:',
       answer: 'What is the date today?', options: ['What is the date today?', 'What time is it?', 'What day is it?', 'What month is it?'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "I wake up at half ___ six."', promptEs: 'Completa: "I wake up at half ___ six."',
+      answer: 'past', options: ['past', "o'clock", 'in', 'on'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which season comes right after summer?', promptEs: '¿Qué estación viene justo después del verano?',
+      answer: 'fall', options: ['fall', 'winter', 'spring', 'summer'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Trabajo de lunes a viernes" in English is:', promptEs: '"Trabajo de lunes a viernes" en inglés es:',
+      answer: 'I work Monday through Friday', options: ['I work Monday through Friday', 'I work on the weekend', 'I work every month', 'I work in the morning'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Telling time',
@@ -90,6 +119,26 @@ const module: Module = {
         { speaker: 'student', en: "In spring it's warm and in summer it's hot.", es: 'En primavera hace calor templado y en verano hace mucho calor.' },
         { speaker: 'tutor', en: 'Excellent! You know the seasons and can share your birthday date.', es: '¡Excelente! Conoces las estaciones y puedes compartir la fecha de tu cumpleaños.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'What Time Is It?',
+      titleEs: '¿Qué Hora Es?',
+      instructionsEn: 'Tutor: say a time in Spanish (or draw a clock). Student: say it in English using "o\'clock" or "half past." Then swap roles so the student gives the time and the tutor says it back.',
+      instructionsEs: 'Tutor: di una hora en español (o dibuja un reloj). Estudiante: dila en inglés usando "o\'clock" o "half past." Luego cambien de papel para que el estudiante dé la hora y el tutor la repita.',
+    },
+    {
+      titleEn: 'My Weekly Schedule',
+      titleEs: 'Mi Horario Semanal',
+      instructionsEn: 'Student: describe your real weekly schedule — which days you work, what you do on the weekend, and one thing you do "in the morning" and one thing you do "in the evening."',
+      instructionsEs: 'Estudiante: describe tu horario semanal real — qué días trabajas, qué haces en el fin de semana, y una cosa que haces "in the morning" y una que haces "in the evening."',
+    },
+    {
+      titleEn: 'Seasons and Special Dates',
+      titleEs: 'Estaciones y Fechas Especiales',
+      instructionsEn: 'Student: share your birthday month and today\'s date, then describe the weather in your favorite season using "It\'s cold/hot/warm..."',
+      instructionsEs: 'Estudiante: comparte el mes de tu cumpleaños y la fecha de hoy, y luego describe el clima en tu estación favorita usando "It\'s cold/hot/warm..."',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'What ____ is it?', promptEs: '¿Qué hora es? (What ____ is it?)', answer: 'time' },

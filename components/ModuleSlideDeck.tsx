@@ -1,16 +1,18 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { Module, VocabItem, TeachingScenario } from '@/types'
+import type { Module, VocabItem, TeachingScenario, GrammarPoint, PracticeActivity } from '@/types'
 import { shuffle } from '@/lib/study'
 
 type Slide =
   | { type: 'title' }
   | { type: 'vocab'; items: VocabItem[]; part: number; total: number }
+  | { type: 'grammar'; point: GrammarPoint; index: number; total: number }
   | { type: 'pronunciation'; items: VocabItem[] }
   | { type: 'matching'; enItems: VocabItem[]; esItems: VocabItem[] }
   | { type: 'transcription'; items: VocabItem[] }
   | { type: 'scenario'; scenario: TeachingScenario; index: number; total: number }
+  | { type: 'practice'; activity: PracticeActivity; index: number; total: number }
   | { type: 'wrapup' }
 
 function buildSlides(mod: Module): Slide[] {
@@ -21,6 +23,8 @@ function buildSlides(mod: Module): Slide[] {
     chunks.push(mod.vocab.slice(i, i + chunkSize))
   }
   chunks.forEach((items, i) => slides.push({ type: 'vocab', items, part: i + 1, total: chunks.length }))
+  const grammar = mod.grammar ?? []
+  grammar.forEach((point, i) => slides.push({ type: 'grammar', point, index: i + 1, total: grammar.length }))
   if (mod.track === 'esl') {
     slides.push({ type: 'pronunciation', items: mod.vocab })
     slides.push({ type: 'matching', enItems: mod.vocab, esItems: shuffle(mod.vocab) })
@@ -28,6 +32,10 @@ function buildSlides(mod: Module): Slide[] {
   }
   mod.teachingScenarios.forEach((scenario, i) =>
     slides.push({ type: 'scenario', scenario, index: i + 1, total: mod.teachingScenarios.length })
+  )
+  const practiceActivities = mod.practiceActivities ?? []
+  practiceActivities.forEach((activity, i) =>
+    slides.push({ type: 'practice', activity, index: i + 1, total: practiceActivities.length })
   )
   slides.push({ type: 'wrapup' })
   return slides
@@ -90,6 +98,28 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
                   {mod.track === 'esl' && <p className="text-2xl md:text-3xl text-amber-300 mt-1">{item.es}</p>}
                   <p className="text-base md:text-lg text-gray-400 mt-2 italic">{item.exampleEn}</p>
                   {mod.track === 'esl' && <p className="text-base md:text-lg text-gray-500 italic">{item.exampleEs}</p>}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {slide.type === 'grammar' && (
+          <div className="w-full max-w-3xl text-left">
+            <p className="text-amber-300 text-lg mb-2 text-center">Grammar Focus{slide.total > 1 ? ` ${slide.index}/${slide.total}` : ''}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">{slide.point.titleEn}</h2>
+            {mod.track === 'esl' && slide.point.titleEs && (
+              <p className="text-xl text-amber-300 mb-6 text-center">{slide.point.titleEs}</p>
+            )}
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-6">{slide.point.explanationEn}</p>
+            {mod.track === 'esl' && slide.point.explanationEs && (
+              <p className="text-base md:text-lg text-gray-400 italic leading-relaxed mb-6">{slide.point.explanationEs}</p>
+            )}
+            <div className="space-y-3">
+              {slide.point.examples.map((example, i) => (
+                <div key={i} className="border-b border-gray-700 pb-3">
+                  <p className="text-xl md:text-2xl font-semibold">{example.en}</p>
+                  {mod.track === 'esl' && example.es && <p className="text-lg text-amber-300 mt-1">{example.es}</p>}
                 </div>
               ))}
             </div>
@@ -167,6 +197,20 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
                 ))}
                 <p className="text-gray-400 italic pt-4">Now swap roles and read it again.</p>
               </div>
+            )}
+          </div>
+        )}
+
+        {slide.type === 'practice' && (
+          <div className="w-full max-w-2xl">
+            <p className="text-amber-300 text-lg mb-6">Guided Practice {slide.index}/{slide.total}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{slide.activity.titleEn}</h2>
+            {mod.track === 'esl' && slide.activity.titleEs && (
+              <p className="text-xl text-amber-300 mb-6">{slide.activity.titleEs}</p>
+            )}
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">{slide.activity.instructionsEn}</p>
+            {mod.track === 'esl' && slide.activity.instructionsEs && (
+              <p className="text-lg text-gray-400 italic leading-relaxed mt-4">{slide.activity.instructionsEs}</p>
             )}
           </div>
         )}

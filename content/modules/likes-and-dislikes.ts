@@ -38,6 +38,29 @@ const module: Module = {
     { id: 'me-too-me-neither', en: 'Me too / Me neither', es: 'A mí también / A mí tampoco',
       exampleEn: '"I like coffee." "Me too!"', exampleEs: '"Me gusta el café." "¡A mí también!"' },
   ],
+  grammar: [
+    {
+      titleEn: 'like/love + noun or -ing, and "likes" for he/she',
+      titleEs: 'like/love + sustantivo o -ing, y "likes" para he/she',
+      explanationEn: 'You can follow "like" or "love" with a noun (I like coffee) or with a verb ending in "-ing" (I love dancing) — both are correct. Remember to add "-s" for he/she: he likes, she likes.',
+      explanationEs: 'Puedes usar "like" o "love" seguido de un sustantivo (I like coffee) o de un verbo terminado en "-ing" (I love dancing) — ambos son correctos. Recuerda agregar "-s" para he/she: he likes, she likes.',
+      examples: [
+        { en: 'I like coffee.', es: 'Me gusta el café.' },
+        { en: 'I love dancing.', es: 'Me encanta bailar.' },
+        { en: 'He likes soccer. She likes music.', es: 'A él le gusta el fútbol. A ella le gusta la música.' },
+      ],
+    },
+    {
+      titleEn: 'Agreeing: Me too / Me neither',
+      titleEs: 'Estar de acuerdo: Me too / Me neither',
+      explanationEn: 'Use "Me too" to agree with a positive statement (something someone likes). Use "Me neither" to agree with a negative statement (something someone doesn\'t like).',
+      explanationEs: 'Usa "Me too" para estar de acuerdo con una afirmación positiva (algo que a alguien le gusta). Usa "Me neither" para estar de acuerdo con una afirmación negativa (algo que a alguien no le gusta).',
+      examples: [
+        { en: '"I like coffee." "Me too!"', es: '"Me gusta el café." "¡A mí también!"' },
+        { en: '"I don\'t like the cold." "Me neither."', es: '"No me gusta el frío." "A mí tampoco."' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"Me gusta" in English is:', promptEs: '"Me gusta" en inglés es:',
       answer: 'I like', options: ['I like', "I don't like", 'I love', 'I prefer'] },
@@ -49,6 +72,12 @@ const module: Module = {
       answer: 'Do you like pizza?', options: ['Do you like pizza?', 'You like pizza?', 'I like pizza', 'Are you pizza?'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"A mí también" in English is:', promptEs: '"A mí también" en inglés es:',
       answer: 'Me too', options: ['Me too', 'Me neither', 'I like it', 'I prefer it'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "He ___ soccer."', promptEs: 'Completa: "He ___ soccer."',
+      answer: 'likes', options: ['likes', 'like', 'liking', 'to like'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which response agrees with "I don\'t like spicy food"?', promptEs: '¿Qué respuesta está de acuerdo con "I don\'t like spicy food"?',
+      answer: 'Me neither', options: ['Me neither', 'Me too', 'I like it', 'I prefer it'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Prefiero el té" in English is:', promptEs: '"Prefiero el té" en inglés es:',
+      answer: 'I prefer tea', options: ['I prefer tea', 'I like tea', 'I love tea', "I don't like tea"] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Talking about food',
@@ -96,6 +125,26 @@ const module: Module = {
         { speaker: 'student', en: 'Me too!', es: '¡A mí también!' },
         { speaker: 'tutor', en: 'It\'s nice when we share the same favorites. Great practice today!', es: 'Es lindo cuando compartimos los mismos favoritos. ¡Buena práctica hoy!' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Favorites Interview',
+      titleEs: 'Entrevista de Favoritos',
+      instructionsEn: 'Student: ask the tutor about four favorites — food, music, season, and a free-time activity — using "What do you like?" or "Do you like...?" Tutor: answer, then swap roles.',
+      instructionsEs: 'Estudiante: pregúntale al tutor sobre cuatro favoritos — comida, música, estación del año, y una actividad de tiempo libre — usando "What do you like?" o "Do you like...?" Tutor: responde, luego cambien de papel.',
+    },
+    {
+      titleEn: 'Agree or Disagree',
+      titleEs: 'De Acuerdo o en Desacuerdo',
+      instructionsEn: 'Tutor: make five true statements about likes and dislikes one at a time ("I like coffee," "I don\'t like cold weather"). Student: respond genuinely with "Me too," "Me neither," or a different opinion ("I don\'t. I prefer...").',
+      instructionsEs: 'Tutor: haz cinco afirmaciones verdaderas sobre gustos y disgustos, una a la vez ("I like coffee," "I don\'t like cold weather"). Estudiante: responde con sinceridad usando "Me too," "Me neither," o una opinión diferente ("I don\'t. I prefer...").',
+    },
+    {
+      titleEn: 'Describe Someone You Know',
+      titleEs: 'Describe a Alguien que Conoces',
+      instructionsEn: 'Student: describe what a family member or friend likes and doesn\'t like, using third-person forms — "He likes...", "She doesn\'t like...", "She loves..."',
+      instructionsEs: 'Estudiante: describe lo que le gusta y no le gusta a un familiar o amigo, usando formas en tercera persona — "He likes...", "She doesn\'t like...", "She loves..."',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I ____ coffee.', promptEs: 'Me gusta el café. (I ____ coffee.)', answer: 'like' },

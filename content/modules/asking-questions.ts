@@ -38,6 +38,31 @@ const module: Module = {
     { id: 'where-is-the', en: 'Where is the...?', es: '¿Dónde está el/la...?',
       exampleEn: 'Excuse me, where is the bathroom?', exampleEs: 'Disculpe, ¿dónde está el baño?' },
   ],
+  grammar: [
+    {
+      titleEn: 'Question word order: WH-word + verb + subject',
+      titleEs: 'Orden de las preguntas: palabra interrogativa + verbo + sujeto',
+      explanationEn: 'With "to be," put the WH-word first, then is/are, then the subject: Where is the bathroom? Who is that? With action verbs, use "do/does" between the WH-word and the subject: Where do you live? What do you do? Notice the verb after "do" stays in its base form.',
+      explanationEs: 'Con "to be," pon la palabra interrogativa primero, luego is/are, y después el sujeto: Where is the bathroom? Who is that? Con verbos de acción, usa "do/does" entre la palabra interrogativa y el sujeto: Where do you live? What do you do? Nota que el verbo después de "do" se mantiene en su forma base.',
+      examples: [
+        { en: 'Where is the bathroom?', es: '¿Dónde está el baño?' },
+        { en: 'Who is that?', es: '¿Quién es ese?' },
+        { en: 'Where do you live?', es: '¿Dónde vives?' },
+        { en: 'How many children do you have?', es: '¿Cuántos hijos tienes?' },
+      ],
+    },
+    {
+      titleEn: 'Polite requests: Can/Could + you + verb',
+      titleEs: 'Peticiones corteses: Can/Could + you + verbo',
+      explanationEn: '"Can you...?" and "Could you please...?" are both used to politely ask someone to do something. "Could you please...?" sounds a little more formal and extra polite — useful with a stranger, a clerk, or someone official. After can/could, the verb stays in its base form: Can you help me? Could you please help me fill out this form?',
+      explanationEs: '"Can you...?" y "Could you please...?" se usan para pedir algo cortésmente. "Could you please...?" suena un poco más formal y extra cortés — útil con un desconocido, un empleado o alguien oficial. Después de can/could, el verbo se mantiene en su forma base: Can you help me? Could you please help me fill out this form?',
+      examples: [
+        { en: 'Can you help me?', es: '¿Puedes ayudarme?' },
+        { en: 'Could you please help me fill out this form?', es: '¿Podría ayudarme a llenar este formulario, por favor?' },
+        { en: 'Do you speak Spanish?', es: '¿Hablas español?' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"¿Dónde?" in English is:', promptEs: '"¿Dónde?" en inglés es:',
       answer: 'Where', options: ['Where', 'When', 'Who', 'Why'] },
@@ -49,6 +74,12 @@ const module: Module = {
       answer: 'What', options: ['What', 'Who', 'Where', 'When'] },
     { id: 'q5', type: 'multiple-choice', promptEn: 'How do you politely ask for help?', promptEs: '¿Cómo pides ayuda cortésmente?',
       answer: 'Could you please help me?', options: ['Could you please help me?', 'Where is the bathroom?', 'What time is it?', 'Why are you late?'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "___ do you live?"', promptEs: 'Completa: "___ do you live?"',
+      answer: 'Where', options: ['Where', 'What', 'When', 'Who'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which question word asks about a reason?', promptEs: '¿Qué palabra interrogativa pregunta sobre una razón?',
+      answer: 'Why', options: ['Why', 'How', 'Who', 'When'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"¿Cuántos hijos tienes?" in English is:', promptEs: '"¿Cuántos hijos tienes?" en inglés es:',
+      answer: 'How many children do you have?', options: ['How many children do you have?', 'How much is this?', 'How old are you?', 'What time is it?'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Basic questions when meeting someone or feeling lost',
@@ -94,6 +125,26 @@ const module: Module = {
         { speaker: 'student', en: 'Excuse me, do you speak Spanish?', es: 'Disculpe, ¿habla español?' },
         { speaker: 'tutor', en: 'A little bit! Between English and Spanish, we\'ll understand each other just fine.', es: 'Un poco. Entre inglés y español, nos entenderemos bien.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Interview Your Tutor',
+      titleEs: 'Entrevista a tu Tutor',
+      instructionsEn: 'Student: ask the tutor at least six different WH- questions from today\'s vocabulary (who, what, where, when, why, how, how much, how many). Tutor: answer each one in a full sentence. Then swap roles so the tutor interviews the student.',
+      instructionsEs: 'Estudiante: hazle al tutor al menos seis preguntas diferentes del vocabulario de hoy (who, what, where, when, why, how, how much, how many). Tutor: responde cada una con una oración completa. Luego cambien de papel para que el tutor entreviste al estudiante.',
+    },
+    {
+      titleEn: 'Ask a Stranger',
+      titleEs: 'Pregúntale a un Desconocido',
+      instructionsEn: 'Tutor: describe three real-life situations one at a time — you are lost on the street, you are at a doctor\'s office, you are at a store and want to know the price of something. Student: ask the question you would actually use in each situation.',
+      instructionsEs: 'Tutor: describe tres situaciones de la vida real, una a la vez — estás perdido en la calle, estás en el consultorio de un médico, estás en una tienda y quieres saber el precio de algo. Estudiante: haz la pregunta que realmente usarías en cada situación.',
+    },
+    {
+      titleEn: 'Polite Request Practice',
+      titleEs: 'Práctica de Peticiones Corteses',
+      instructionsEn: 'Student: make three polite requests to the tutor using "Can you...?" or "Could you please...?" for everyday classroom tasks — for example, asking the tutor to repeat something, spell a word, or speak more slowly. Tutor: respond naturally each time.',
+      instructionsEs: 'Estudiante: haz tres peticiones corteses al tutor usando "Can you...?" o "Could you please...?" para tareas cotidianas del salón — por ejemplo, pedirle al tutor que repita algo, deletree una palabra o hable más despacio. Tutor: responde de forma natural cada vez.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: '____ is your name?', promptEs: '¿Cómo te llamas? (____ is your name?)', answer: 'What' },

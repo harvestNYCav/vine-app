@@ -38,6 +38,29 @@ const module: Module = {
     { id: 'what-time-do-you-close', en: 'What time do you close?', es: '¿A qué hora cierran?',
       exampleEn: 'Excuse me, what time do you close?', exampleEs: 'Disculpe, ¿a qué hora cierran?' },
   ],
+  grammar: [
+    {
+      titleEn: 'Polite requests: "Can I...?" and "I would like to..."',
+      titleEs: 'Peticiones corteses: "Can I...?" e "I would like to..."',
+      explanationEn: '"Can I...?" politely asks for something (a menu, the check). "I would like to..." is a polite way to state what you want, often used when ordering: I would like to order the chicken.',
+      explanationEs: '"Can I...?" pide algo cortésmente (un menú, la cuenta). "I would like to..." es una forma cortés de decir lo que quieres, usada a menudo al ordenar: I would like to order the chicken.',
+      examples: [
+        { en: 'Can I see the menu?', es: '¿Puedo ver el menú?' },
+        { en: 'I would like to order the chicken.', es: 'Quisiera ordenar el pollo.' },
+        { en: 'Can I have the check, please?', es: '¿Me trae la cuenta, por favor?' },
+      ],
+    },
+    {
+      titleEn: 'Asking about a business: "Do you have...?" and "What time do you...?"',
+      titleEs: 'Preguntar sobre un negocio: "Do you have...?" y "What time do you...?"',
+      explanationEn: 'Use "Do you have...?" to ask if a place has something available (a table, a product). Use "What time do you...?" to ask about a store or restaurant\'s schedule.',
+      explanationEs: 'Usa "Do you have...?" para preguntar si un lugar tiene algo disponible (una mesa, un producto). Usa "What time do you...?" para preguntar sobre el horario de una tienda o restaurante.',
+      examples: [
+        { en: 'Do you have a table available for four?', es: '¿Tiene una mesa disponible para cuatro?' },
+        { en: 'What time do you close?', es: '¿A qué hora cierran?' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"El menú" in English is:', promptEs: '"El menú" en inglés es:',
       answer: 'menu', options: ['menu', 'check', 'tip', 'table'] },
@@ -49,6 +72,12 @@ const module: Module = {
       answer: 'tip', options: ['tip', 'check', 'menu', 'waiter'] },
     { id: 'q5', type: 'multiple-choice', promptEn: 'How do you tell someone about a food allergy?', promptEs: '¿Cómo le dices a alguien sobre una alergia a la comida?',
       answer: "I'm allergic to...", options: ["I'm allergic to...", 'Is this spicy?', 'I would like to order', 'What time do you close?'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "___ you have a table available?"', promptEs: 'Completa: "___ you have a table available?"',
+      answer: 'Do', options: ['Do', 'Can', 'Is', 'Are'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'How do you politely say what you want to order?', promptEs: '¿Cómo dices cortésmente lo que quieres ordenar?',
+      answer: 'I would like to order...', options: ['I would like to order...', 'Can I see the menu?', 'What time do you close?', 'Is this spicy?'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Mesa para dos" in English is:', promptEs: '"Mesa para dos" en inglés es:',
+      answer: 'table for two', options: ['table for two', 'the check', 'the tip', 'to go'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Getting a table at a restaurant',
@@ -90,6 +119,26 @@ const module: Module = {
         { speaker: 'student', en: 'Yes, what time do you close?', es: 'Sí, ¿a qué hora cierran?' },
         { speaker: 'tutor', en: 'We close at nine tonight. Have a good evening!', es: 'Cerramos a las nueve esta noche. ¡Que tenga buena noche!' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Order a Full Meal',
+      titleEs: 'Ordena una Comida Completa',
+      instructionsEn: 'Student: role-play ordering a complete meal without reading from a script — ask for the menu, order food, mention an allergy or ask if something is spicy, and ask for the check at the end. Tutor: play the waiter and respond naturally.',
+      instructionsEs: 'Estudiante: representa el pedido de una comida completa sin leer un guion — pide el menú, ordena comida, menciona una alergia o pregunta si algo es picante, y pide la cuenta al final. Tutor: haz de mesero y responde de forma natural.',
+    },
+    {
+      titleEn: 'At the Store',
+      titleEs: 'En la Tienda',
+      instructionsEn: 'Tutor: play a store clerk. Student: ask about store hours, what time the store closes, and use "Do you have...?" to ask about a specific product.',
+      instructionsEs: 'Tutor: haz de empleado de tienda. Estudiante: pregunta sobre el horario de la tienda, a qué hora cierra, y usa "Do you have...?" para preguntar sobre un producto específico.',
+    },
+    {
+      titleEn: 'Takeout Order',
+      titleEs: 'Pedido para Llevar',
+      instructionsEn: 'Student: imagine calling a restaurant to order takeout. Order two items "to go," mention if you have any allergies, and confirm the total before hanging up.',
+      instructionsEs: 'Estudiante: imagina que llamas a un restaurante para pedir comida para llevar. Ordena dos artículos "to go," menciona si tienes alguna alergia, y confirma el total antes de colgar.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'Can I see the ____?', promptEs: '¿Puedo ver el menú? (Can I see the ____?)', answer: 'menu' },

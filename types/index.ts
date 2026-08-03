@@ -49,6 +49,26 @@ export interface FillInBlankItem {
   answer: string
 }
 
+export interface GrammarExample {
+  en: string
+  es?: string
+}
+
+export interface GrammarPoint {
+  titleEn: string
+  titleEs?: string
+  explanationEn: string
+  explanationEs?: string
+  examples: GrammarExample[]
+}
+
+export interface PracticeActivity {
+  titleEn: string
+  titleEs?: string
+  instructionsEn: string
+  instructionsEs?: string
+}
+
 export interface Module {
   slug: string
   track: Exclude<Track, 'math'>
@@ -58,8 +78,10 @@ export interface Module {
   descriptionEs?: string
   icon: string
   vocab: VocabItem[]
+  grammar?: GrammarPoint[]
   quiz: QuizQuestion[]
   teachingScenarios: TeachingScenario[]
+  practiceActivities?: PracticeActivity[]
   worksheet: FillInBlankItem[]
 }
 

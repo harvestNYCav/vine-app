@@ -38,6 +38,31 @@ const module: Module = {
     { id: 'i-hope-to', en: 'I hope to...', es: 'Espero...',
       exampleEn: 'I hope to find a good job.', exampleEs: 'Espero encontrar un buen trabajo.' },
   ],
+  grammar: [
+    {
+      titleEn: 'Verb + -ing after enjoy, stop, start',
+      titleEs: 'Verbo + -ing después de enjoy, stop, start',
+      explanationEn: 'Some verbs are always followed by another verb ending in "-ing" (a gerund): enjoy, stop, start, keep. "Like" and "love" are flexible — both forms are correct: I like cooking = I like to cook.',
+      explanationEs: 'Algunos verbos siempre van seguidos de otro verbo terminado en "-ing" (un gerundio): enjoy, stop, start, keep. "Like" y "love" son flexibles — ambas formas son correctas: I like cooking = I like to cook.',
+      examples: [
+        { en: 'I enjoy walking in the park.', es: 'Disfruto caminar en el parque.' },
+        { en: 'I stopped smoking.', es: 'Dejé de fumar.' },
+        { en: 'I started studying English.', es: 'Empecé a estudiar inglés.' },
+      ],
+    },
+    {
+      titleEn: 'Verb + to + verb after want, need, have, plan, hope',
+      titleEs: 'Verbo + to + verbo después de want, need, have, plan, hope',
+      explanationEn: 'Other verbs are always followed by "to" + the base form of the next verb (an infinitive): want, need, have, plan, hope. Never add "-ing" after these.',
+      explanationEs: 'Otros verbos siempre van seguidos de "to" + la forma base del siguiente verbo (un infinitivo): want, need, have, plan, hope. Nunca agregues "-ing" después de estos.',
+      examples: [
+        { en: 'I want to learn English.', es: 'Quiero aprender inglés.' },
+        { en: 'I need to go to work.', es: 'Necesito ir al trabajo.' },
+        { en: 'I have to pick up my kids.', es: 'Tengo que recoger a mis hijos.' },
+        { en: 'I hope to find a good job.', es: 'Espero encontrar un buen trabajo.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: 'How do you say "Necesito ir al trabajo"?', promptEs: '¿Cómo se dice "Necesito ir al trabajo"?',
       answer: 'I need to go to work', options: ['I need to go to work', 'I want to go to work', 'I like to go to work', 'I stopped going to work'] },
@@ -49,6 +74,12 @@ const module: Module = {
       answer: 'to', options: ['to', 'ing', 'for', 'at'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"Empecé a estudiar inglés" in English is:', promptEs: '"Empecé a estudiar inglés" en inglés es:',
       answer: 'I started studying English', options: ['I started studying English', 'I stopped studying English', 'I need to study English', 'I enjoy English'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "I ___ smoking." (Dejé de fumar)', promptEs: 'Completa: "I ___ smoking." (Dejé de fumar)',
+      answer: 'stopped', options: ['stopped', 'stop', 'stopping', 'to stop'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Complete: "I hope ___ find a good job."', promptEs: 'Completa: "I hope ___ find a good job."',
+      answer: 'to', options: ['to', 'ing', 'for', 'at'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: 'Which verb is always followed by "-ing," not "to"?', promptEs: '¿Qué verbo siempre va seguido de "-ing," no "to"?',
+      answer: 'enjoy', options: ['enjoy', 'want', 'need', 'hope'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Talking about things you enjoy',
@@ -90,6 +121,26 @@ const module: Module = {
         { speaker: 'student', en: 'I hope to find a good job.', es: 'Espero encontrar un buen trabajo.' },
         { speaker: 'tutor', en: 'Wonderful hopes! You used "want to", "plan to", and "hope to" beautifully.', es: '¡Maravillosas esperanzas! Usaste "want to", "plan to" y "hope to" maravillosamente.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'My Free Time',
+      titleEs: 'Mi Tiempo Libre',
+      instructionsEn: 'Student: say three things you enjoy doing in your free time, using "I enjoy ...-ing" or "I like ...-ing" for each one.',
+      instructionsEs: 'Estudiante: di tres cosas que disfrutas hacer en tu tiempo libre, usando "I enjoy ...-ing" o "I like ...-ing" para cada una.',
+    },
+    {
+      titleEn: 'My To-Do List',
+      titleEs: 'Mi Lista de Pendientes',
+      instructionsEn: 'Student: list three real things you need to do or have to do this week, using "I need to..." or "I have to..." for each one.',
+      instructionsEs: 'Estudiante: enumera tres cosas reales que necesitas hacer o tienes que hacer esta semana, usando "I need to..." o "I have to..." para cada una.',
+    },
+    {
+      titleEn: 'Before and After',
+      titleEs: 'Antes y Después',
+      instructionsEn: 'Student: complete two true sentences about a habit — "I started ...-ing" (something you began doing) and "I stopped ...-ing" (something you no longer do). Tutor: ask one follow-up question about each.',
+      instructionsEs: 'Estudiante: completa dos oraciones verdaderas sobre un hábito — "I started ...-ing" (algo que empezaste a hacer) y "I stopped ...-ing" (algo que ya no haces). Tutor: haz una pregunta de seguimiento sobre cada una.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I like ____.', promptEs: 'Me gusta cocinar. (I like ____.)', answer: 'cooking' },

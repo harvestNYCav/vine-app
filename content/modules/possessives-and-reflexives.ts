@@ -38,6 +38,30 @@ const module: Module = {
     { id: 'whose-is-this', en: 'Whose is this?', es: '¿De quién es esto?',
       exampleEn: 'Whose is this jacket?', exampleEs: '¿De quién es esta chaqueta?' },
   ],
+  grammar: [
+    {
+      titleEn: 'Possessive adjectives: my, your, his, her, our, their',
+      titleEs: 'Adjetivos posesivos: my, your, his, her, our, their',
+      explanationEn: 'A possessive adjective goes directly before a noun to show who it belongs to. It never stands alone — it always needs a noun right after it: my house, her phone, their car.',
+      explanationEs: 'Un adjetivo posesivo va justo antes de un sustantivo para mostrar a quién pertenece. Nunca va solo — siempre necesita un sustantivo justo después: my house, her phone, their car.',
+      examples: [
+        { en: 'This is my house.', es: 'Esta es mi casa.' },
+        { en: 'This is his car. That is her phone.', es: 'Este es su carro (de él). Ese es su teléfono (de ella).' },
+        { en: 'That is their car.', es: 'Ese es su carro (de ellos).' },
+      ],
+    },
+    {
+      titleEn: '"Mine" and reflexive pronouns: myself, himself, ourselves',
+      titleEs: '"Mine" y pronombres reflexivos: myself, himself, ourselves',
+      explanationEn: '"Mine" replaces "my + noun" and stands alone with no noun after it: "This bag is mine" (not "This bag is mine bag"). Reflexive pronouns (myself, yourself, himself, herself, ourselves, themselves) show that someone did something alone, without help.',
+      explanationEs: '"Mine" reemplaza "my + sustantivo" y va sola sin sustantivo después: "This bag is mine" (no "This bag is mine bag"). Los pronombres reflexivos (myself, yourself, himself, herself, ourselves, themselves) muestran que alguien hizo algo solo, sin ayuda.',
+      examples: [
+        { en: 'This bag is mine.', es: 'Esta bolsa es mía.' },
+        { en: 'I made this myself.', es: 'Hice esto yo mismo.' },
+        { en: 'We cleaned the house ourselves.', es: 'Limpiamos la casa nosotros mismos.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"Mi" (before a noun) in English is:', promptEs: '"Mi" (antes de un sustantivo) en inglés es:',
       answer: 'my', options: ['my', 'mine', 'me', 'I'] },
@@ -49,6 +73,12 @@ const module: Module = {
       answer: 'myself', options: ['myself', 'my', 'mine', 'I'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"¿De quién es esto?" in English is:', promptEs: '"¿De quién es esto?" en inglés es:',
       answer: 'Whose is this?', options: ['Whose is this?', 'What is this?', 'Is this mine?', 'This is mine'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "That is ___ car." (de ellos)', promptEs: 'Completa: "That is ___ car." (de ellos)',
+      answer: 'their', options: ['their', 'they', 'them', 'theirs'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which word stands alone, with no noun after it?', promptEs: '¿Qué palabra va sola, sin sustantivo después?',
+      answer: 'mine', options: ['mine', 'my', 'myself', 'I'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Ella misma" in English is:', promptEs: '"Ella misma" en inglés es:',
+      answer: 'herself', options: ['herself', 'himself', 'her', 'hers'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Talking about your things and family',
@@ -96,6 +126,26 @@ const module: Module = {
         { speaker: 'student', en: 'We cleaned the house ourselves.', es: 'Limpiamos la casa nosotros mismos.' },
         { speaker: 'tutor', en: "Wonderful! You've practiced myself, himself, yourself, and ourselves — well done.", es: 'Maravilloso. Has practicado yo mismo, él mismo, tú mismo y nosotros mismos — bien hecho.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Whose Is It?',
+      titleEs: '¿De Quién Es?',
+      instructionsEn: 'Tutor: point to several real objects in the room and ask "Whose is this?" Student: answer using the correct possessive ("This is my..." or, for the tutor\'s things, "That is yours" / "That is the tutor\'s...").',
+      instructionsEs: 'Tutor: señala varios objetos reales en el salón y pregunta "Whose is this?" Estudiante: responde usando el posesivo correcto ("This is my..." o, para las cosas del tutor, "That is yours" / "That is the tutor\'s...").',
+    },
+    {
+      titleEn: 'Did You Do It Yourself?',
+      titleEs: '¿Lo Hiciste Tú Mismo?',
+      instructionsEn: 'Tutor: ask about three things the student may have done alone (cooked a meal, fixed something, cleaned the house) using "Did you do this yourself?" Student: answer with the correct reflexive pronoun.',
+      instructionsEs: 'Tutor: pregunta sobre tres cosas que el estudiante pudo haber hecho solo (cocinar una comida, arreglar algo, limpiar la casa) usando "Did you do this yourself?" Estudiante: responde con el pronombre reflexivo correcto.',
+    },
+    {
+      titleEn: 'Family Belongings',
+      titleEs: 'Pertenencias de la Familia',
+      instructionsEn: 'Student: describe four items belonging to different family members, using "his," "her," or "their" correctly for each one — for example, "This is his car. That is her phone."',
+      instructionsEs: 'Estudiante: describe cuatro objetos que pertenecen a diferentes familiares, usando "his," "her," o "their" correctamente para cada uno — por ejemplo, "This is his car. That is her phone."',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'This is ____ house.', promptEs: 'Esta es mi casa. (This is ____ house.)', answer: 'my' },

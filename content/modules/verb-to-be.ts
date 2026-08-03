@@ -38,6 +38,32 @@ const module: Module = {
     { id: 'contractions', en: "I'm / he isn't / they aren't", es: 'formas cortas de to be',
       exampleEn: "I'm tired. He isn't home. They aren't ready.", exampleEs: 'Estoy cansado. Él no está en casa. Ellos no están listos.' },
   ],
+  grammar: [
+    {
+      titleEn: 'The verb "to be": am, is, are',
+      titleEs: 'El verbo "to be": am, is, are',
+      explanationEn: 'The verb "to be" changes depending on the subject. Use "am" only with "I." Use "is" with he, she, it, or a single person/thing (your sister, the doctor). Use "are" with you, we, they, or more than one person/thing.',
+      explanationEs: 'El verbo "to be" cambia según el sujeto. Usa "am" solo con "I." Usa "is" con he, she, it, o una sola persona/cosa (your sister, the doctor). Usa "are" con you, we, they, o más de una persona/cosa.',
+      examples: [
+        { en: 'I am a student.', es: 'Yo soy estudiante.' },
+        { en: 'She is my neighbor.', es: 'Ella es mi vecina.' },
+        { en: 'We are ready.', es: 'Estamos listos.' },
+        { en: 'They are from Guatemala.', es: 'Ellos son de Guatemala.' },
+      ],
+    },
+    {
+      titleEn: 'Negatives, questions, and short forms',
+      titleEs: 'Negaciones, preguntas y formas cortas',
+      explanationEn: 'To make a negative, add "not" after am/is/are: I am not sure. He is not home. To ask a question, put am/is/are before the subject: Are you okay? Is she your sister? In everyday speech, people often use short forms: I\'m, he isn\'t, they aren\'t.',
+      explanationEs: 'Para hacer una negación, agrega "not" después de am/is/are: I am not sure. He is not home. Para hacer una pregunta, pon am/is/are antes del sujeto: Are you okay? Is she your sister? En el habla cotidiana, la gente suele usar formas cortas: I\'m, he isn\'t, they aren\'t.',
+      examples: [
+        { en: 'I am not sure.', es: 'No estoy seguro.' },
+        { en: 'Is she your sister?', es: '¿Es ella tu hermana?' },
+        { en: "He isn't home.", es: 'Él no está en casa.' },
+        { en: "They aren't ready.", es: 'Ellos no están listos.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: 'Complete: "I ___ a student."', promptEs: 'Completa: "I ___ a student."',
       answer: 'am', options: ['am', 'is', 'are', 'be'] },
@@ -49,6 +75,14 @@ const module: Module = {
       answer: 'Are you okay?', options: ['Are you okay?', 'Is you okay?', 'I am okay?', 'You are okay'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"Hay" in English is:', promptEs: '"Hay" en inglés es:',
       answer: 'There is / there are', options: ['There is / there are', 'It is', 'I am', 'They are'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "We ___ ready."', promptEs: 'Completa: "We ___ ready."',
+      answer: 'are', options: ['are', 'is', 'am', 'be'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Complete: "It ___ cold today."', promptEs: 'Completa: "It ___ cold today."',
+      answer: 'is', options: ['is', 'am', 'are', 'be'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Hay dos escuelas cerca de mi casa" in English is:', promptEs: '"Hay dos escuelas cerca de mi casa" en inglés es:',
+      answer: 'There are two schools near my house', options: ['There are two schools near my house', 'There is two schools near my house', 'They are two schools near my house', 'It is two schools near my house'] },
+    { id: 'q9', type: 'multiple-choice', promptEn: 'What is the short form of "they are not"?', promptEs: '¿Cuál es la forma corta de "they are not"?',
+      answer: "aren't", options: ["aren't", "isn't", "amn't", 'not are'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Introducing who you are',
@@ -96,6 +130,26 @@ const module: Module = {
         { speaker: 'student', en: "It is sunny, but it isn't warm.", es: 'Está soleado, pero no está cálido.' },
         { speaker: 'tutor', en: 'Perfect. You are using "it is" and "there is / there are" very well.', es: 'Perfecto. Estás usando "it is" y "there is / there are" muy bien.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'All About Me and My Family',
+      titleEs: 'Todo Sobre Mí y Mi Familia',
+      instructionsEn: 'Student: describe yourself and two or three family members using am/is/are — for example, "I am ... My sister is ... My parents are ..." Tutor: listen for the right form of "to be" for each subject and gently correct if needed.',
+      instructionsEs: 'Estudiante: descríbete a ti mismo y a dos o tres familiares usando am/is/are — por ejemplo, "I am ... My sister is ... My parents are ..." Tutor: escucha si usa la forma correcta de "to be" para cada sujeto y corrige con calma si es necesario.',
+    },
+    {
+      titleEn: 'Yes/No Question Drill',
+      titleEs: 'Práctica de Preguntas Sí/No',
+      instructionsEn: 'Tutor: ask yes/no questions using is/are, such as "Are you tired?", "Is it cold today?", "Are there stores near your house?" Student: answer in a full sentence, not just "yes" or "no." Then swap roles so the student asks the tutor.',
+      instructionsEs: 'Tutor: haz preguntas de sí/no usando is/are, como "Are you tired?", "Is it cold today?", "Are there stores near your house?" Estudiante: responde con una oración completa, no solo "yes" o "no." Luego cambien de papel para que el estudiante le pregunte al tutor.',
+    },
+    {
+      titleEn: 'Describe the Room',
+      titleEs: 'Describe el Salón',
+      instructionsEn: 'Student: look around the room and describe what you see using "There is" (for one thing) and "There are" (for more than one) — for example, "There is a table. There are two chairs." Aim for at least five sentences.',
+      instructionsEs: 'Estudiante: mira alrededor del salón y describe lo que ves usando "There is" (para una cosa) y "There are" (para más de una) — por ejemplo, "There is a table. There are two chairs." Intenta decir al menos cinco oraciones.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I ____ a student.', promptEs: 'Yo soy estudiante. (I ____ a student.)', answer: 'am' },
