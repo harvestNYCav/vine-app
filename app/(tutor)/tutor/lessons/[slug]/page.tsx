@@ -1,7 +1,7 @@
 import { getModule } from '@/content/modules'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { todayString, nextSaturday } from '@/lib/scheduling'
+import { todayString } from '@/lib/scheduling'
 import ModuleSlideDeck from '@/components/ModuleSlideDeck'
 import AssignToStudents from './AssignToStudents'
 import getDb from '@/lib/db'
@@ -24,7 +24,6 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
   if (!mod) notFound()
 
   const today = todayString()
-  const nextDate = nextSaturday()
 
   const session = await getSession()
   if (!session || session.role !== 'tutor') notFound()
@@ -66,11 +65,24 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
         </div>
         <p className="text-sm text-gray-600 mb-5">{mod.descriptionEn}</p>
 
+        {mod.grammar && mod.grammar.length > 0 && (
+          <div className="bg-amber-50 border border-amber-100 rounded-2xl p-4 mb-5">
+            <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">Grammar Focus</p>
+            <div className="space-y-3">
+              {mod.grammar.map((point, i) => (
+                <div key={i}>
+                  <p className="text-sm font-semibold text-gray-800">{point.titleEn}</p>
+                  <p className="text-sm text-gray-600 mt-0.5">{point.explanationEn}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <AssignToStudents
           moduleSlug={mod.slug}
           moduleTrack={mod.track}
           today={today}
-          nextDate={nextDate}
           students={students}
           rosterScope={rosterScope}
         />

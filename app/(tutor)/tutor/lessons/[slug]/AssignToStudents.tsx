@@ -15,14 +15,12 @@ interface Props {
   moduleSlug: string
   moduleTrack: Exclude<Track, 'math'>
   today: string
-  nextDate: string
   students: Student[]
   rosterScope: TutorRosterScope
 }
 
 interface PendingAssignment {
   date: string
-  which: 'today' | 'next'
   studentIds: string[]
   missingTrackStudents: Array<{ id: string; name: string }>
   collisions: AssignmentCollision[]
@@ -65,10 +63,10 @@ function parseCollisions(value: unknown): AssignmentCollision[] {
   })
 }
 
-export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextDate, students, rosterScope }: Props) {
+export default function AssignToStudents({ moduleSlug, moduleTrack, today, students, rosterScope }: Props) {
   const router = useRouter()
   const [checked, setChecked] = useState<Set<string>>(new Set())
-  const [saving, setSaving] = useState<'today' | 'next' | null>(null)
+  const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
   const [pendingAssignment, setPendingAssignment] = useState<PendingAssignment | null>(null)
 
@@ -84,7 +82,7 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
     setMessage(null)
   }
 
-  function beginAssignment(date: string, which: 'today' | 'next') {
+  function beginAssignment() {
     if (checked.size === 0) {
       setMessage('Select at least one student first.')
       return
@@ -92,8 +90,7 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
 
     const selectedStudents = students.filter(student => checked.has(student.id))
     void saveAssignment({
-      date,
-      which,
+      date: today,
       studentIds: selectedStudents.map(student => student.id),
       missingTrackStudents: [],
       collisions: [],
@@ -105,7 +102,7 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
     confirmTrackEnrollment: boolean,
     collisionAction?: CollisionAction,
   ) {
-    setSaving(assignment.which)
+    setSaving(true)
     setMessage(null)
     try {
       const res = await fetch('/vine-app/api/tutor/session', {
@@ -113,7 +110,6 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           moduleSlug,
-          date: assignment.date,
           studentIds: assignment.studentIds,
           confirmTrackEnrollment,
           collisionAction,
@@ -147,7 +143,7 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
     } catch {
       setMessage('Connection error. Try again.')
     } finally {
-      setSaving(null)
+      setSaving(false)
     }
   }
 
@@ -177,18 +173,11 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
 
       <div className="flex flex-col sm:flex-row gap-2">
         <button
-          onClick={() => beginAssignment(today, 'today')}
-          disabled={saving !== null}
+          onClick={() => beginAssignment()}
+          disabled={saving}
           className="flex-1 bg-amber-600 text-white text-sm font-semibold py-3 rounded-xl hover:bg-amber-700 disabled:opacity-50 transition-colors"
         >
-          {saving === 'today' ? 'Saving...' : "📌 Assign to Today's Session"}
-        </button>
-        <button
-          onClick={() => beginAssignment(nextDate, 'next')}
-          disabled={saving !== null}
-          className="flex-1 bg-white border border-amber-300 text-amber-700 text-sm font-semibold py-3 rounded-xl hover:bg-amber-50 disabled:opacity-50 transition-colors"
-        >
-          {saving === 'next' ? 'Saving...' : `📌 Assign to Next Session (${nextDate})`}
+          {saving ? 'Saving...' : "📌 Assign to Today's Session"}
         </button>
       </div>
 
@@ -233,34 +222,34 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, nextD
                 <button
                   type="button"
                   onClick={() => saveAssignment(pendingAssignment, true, 'replace')}
-                  disabled={saving !== null}
+                  disabled={saving}
                   className="rounded-xl bg-amber-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-amber-800 disabled:opacity-50"
                 >
-                  {saving === pendingAssignment.which ? 'Saving...' : 'Replace existing'}
+                  {saving ? 'Saving...' : 'Replace existing'}
                 </button>
                 <button
                   type="button"
                   onClick={() => saveAssignment(pendingAssignment, true, 'add')}
-                  disabled={saving !== null}
+                  disabled={saving}
                   className="rounded-xl border border-amber-500 bg-white px-4 py-2.5 text-sm font-semibold text-amber-900 hover:bg-amber-100 disabled:opacity-50"
                 >
-                  {saving === pendingAssignment.which ? 'Saving...' : 'Add on top'}
+                  {saving ? 'Saving...' : 'Add on top'}
                 </button>
               </>
             ) : (
               <button
                 type="button"
                 onClick={() => saveAssignment(pendingAssignment, true)}
-                disabled={saving !== null}
+                disabled={saving}
                 className="rounded-xl bg-amber-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-amber-800 disabled:opacity-50"
               >
-                {saving === pendingAssignment.which ? 'Saving...' : `Add ${trackLabel} and assign`}
+                {saving ? 'Saving...' : `Add ${trackLabel} and assign`}
               </button>
             )}
             <button
               type="button"
               onClick={() => setPendingAssignment(null)}
-              disabled={saving !== null}
+              disabled={saving}
               className="rounded-xl border border-amber-300 bg-white px-4 py-2.5 text-sm font-semibold text-amber-800 hover:bg-amber-100 disabled:opacity-50"
             >
               Cancel
