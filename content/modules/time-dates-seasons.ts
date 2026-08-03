@@ -81,63 +81,127 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Telling time',
-      text: 'Practice telling the time and talking about your daily schedule — when you wake up, work, and eat — using o\'clock and half past.',
-      script: [
-        { speaker: 'tutor', en: 'What time is it right now?', es: '¿Qué hora es ahora mismo?' },
-        { speaker: 'student', en: "It's three o'clock.", es: 'Son las tres en punto.' },
-        { speaker: 'tutor', en: 'Good. What time do you wake up in the morning?', es: '¿A qué hora te despiertas por la mañana?' },
-        { speaker: 'student', en: 'I wake up at half past six in the morning.', es: 'Me despierto a las seis y media de la mañana.' },
-        { speaker: 'tutor', en: 'And when do you work?', es: '¿Y cuándo trabajas?' },
-        { speaker: 'student', en: 'I work in the morning and in the afternoon.', es: 'Trabajo por la mañana y por la tarde.' },
-        { speaker: 'tutor', en: 'What time do you eat dinner in the evening?', es: '¿A qué hora cenas por la noche?' },
-        { speaker: 'student', en: 'I eat dinner at half past seven in the evening.', es: 'Ceno a las siete y media de la noche.' },
-        { speaker: 'tutor', en: 'Great job telling time and describing your schedule!', es: '¡Buen trabajo diciendo la hora y describiendo tu horario!' },
+      text: 'Practice telling the time using o\'clock and half past.',
+      wordBank: [
+        { en: "three o'clock", es: 'las tres en punto' },
+        { en: 'half past six', es: 'las seis y media' },
+        { en: 'half past seven', es: 'las siete y media' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What time is it?', es: '¿Qué hora es?' },
+          { speaker: 'student', en: "It's three o'clock.", es: 'Son las tres en punto.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What time do you wake up?', es: '¿A qué hora te despiertas?' },
+          { speaker: 'student', en: 'Half past six.', es: 'Las seis y media.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What time do you eat dinner?', es: '¿A qué hora cenas?' },
+          { speaker: 'student', en: 'Half past seven.', es: 'Las siete y media.' },
+        ],
       ] },
     { label: 'Part 2: Talking about the week',
-      text: 'Practice talking about which days you work (Monday through Friday) and what you like to do on the weekend.',
-      script: [
-        { speaker: 'tutor', en: 'What day is it today?', es: '¿Qué día es hoy?' },
-        { speaker: 'student', en: 'Today is Monday.', es: 'Hoy es lunes.' },
-        { speaker: 'tutor', en: 'Which days do you work?', es: '¿Qué días trabajas?' },
-        { speaker: 'student', en: 'I work Monday through Friday.', es: 'Trabajo de lunes a viernes.' },
-        { speaker: 'tutor', en: 'What do you do on the weekend?', es: '¿Qué haces en el fin de semana?' },
-        { speaker: 'student', en: 'On the weekend, I rest and see my family.', es: 'En el fin de semana, descanso y veo a mi familia.' },
-        { speaker: 'tutor', en: 'That sounds nice. Do you work every month?', es: 'Eso suena bien. ¿Trabajas cada mes?' },
-        { speaker: 'student', en: 'Yes, I work every month, Monday through Friday.', es: 'Sí, trabajo cada mes, de lunes a viernes.' },
-        { speaker: 'tutor', en: 'Perfect. Now you can talk about your whole week!', es: '¡Perfecto. Ahora puedes hablar de toda tu semana!' },
+      text: 'Practice talking about which days you work and what you do on the weekend.',
+      wordBank: [
+        { en: 'Monday', es: 'lunes' },
+        { en: 'Wednesday', es: 'miércoles' },
+        { en: 'Sunday', es: 'domingo' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What day is it today?', es: '¿Qué día es hoy?' },
+          { speaker: 'student', en: 'Today is Monday.', es: 'Hoy es lunes.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Which days do you work?', es: '¿Qué días trabajas?' },
+          { speaker: 'student', en: 'Monday through Friday.', es: 'De lunes a viernes.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What do you do on the weekend?', es: '¿Qué haces en el fin de semana?' },
+          { speaker: 'student', en: 'I rest with my family.', es: 'Descanso con mi familia.' },
+        ],
       ] },
     { label: 'Part 3: Seasons and important dates',
-      text: 'Practice talking about the seasons, the weather in each one, and sharing your birthday month and date.',
-      script: [
-        { speaker: 'tutor', en: 'What is the date today?', es: '¿Cuál es la fecha de hoy?' },
-        { speaker: 'student', en: 'Today is May 3rd.', es: 'Hoy es el 3 de mayo.' },
-        { speaker: 'tutor', en: 'Nice. When is your birthday?', es: 'Qué bien. ¿Cuándo es tu cumpleaños?' },
-        { speaker: 'student', en: 'My birthday is in January.', es: 'Mi cumpleaños es en enero.' },
-        { speaker: 'tutor', en: 'January is winter. Is it cold outside then?', es: 'Enero es invierno. ¿Hace frío afuera entonces?' },
-        { speaker: 'student', en: "Yes, it's very cold outside in January.", es: 'Sí, hace mucho frío afuera en enero.' },
-        { speaker: 'tutor', en: "What about summer? What's the weather like?", es: '¿Y en el verano? ¿Cómo es el clima?' },
-        { speaker: 'student', en: "In spring it's warm and in summer it's hot.", es: 'En primavera hace calor templado y en verano hace mucho calor.' },
-        { speaker: 'tutor', en: 'Excellent! You know the seasons and can share your birthday date.', es: '¡Excelente! Conoces las estaciones y puedes compartir la fecha de tu cumpleaños.' },
+      text: 'Practice sharing your birthday month and talking about the seasons.',
+      wordBank: [
+        { en: 'January', es: 'enero' },
+        { en: 'June', es: 'junio' },
+        { en: 'October', es: 'octubre' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'When is your birthday?', es: '¿Cuándo es tu cumpleaños?' },
+          { speaker: 'student', en: 'My birthday is in January.', es: 'Mi cumpleaños es en enero.' },
+        ],
+        [
+          { speaker: 'tutor', en: "What's the weather like in winter?", es: '¿Cómo es el clima en invierno?' },
+          { speaker: 'student', en: "It's very cold.", es: 'Hace mucho frío.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'And in summer?', es: '¿Y en verano?' },
+          { speaker: 'student', en: "It's hot.", es: 'Hace calor.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
-      titleEn: 'What Time Is It?',
-      titleEs: '¿Qué Hora Es?',
-      instructionsEn: 'Tutor: say a time in Spanish (or draw a clock). Student: say it in English using "o\'clock" or "half past." Then swap roles so the student gives the time and the tutor says it back.',
-      instructionsEs: 'Tutor: di una hora en español (o dibuja un reloj). Estudiante: dila en inglés usando "o\'clock" o "half past." Luego cambien de papel para que el estudiante dé la hora y el tutor la repita.',
+      titleEn: 'Parts of the Day',
+      titleEs: 'Partes del Día',
+      instructionsEn: 'Practice saying when you do things — in the morning, afternoon, or evening.',
+      instructionsEs: 'Practica decir cuándo haces cosas — por la mañana, por la tarde o por la noche.',
+      wordBank: [
+        { en: 'in the morning', es: 'por la mañana' },
+        { en: 'in the afternoon', es: 'por la tarde' },
+        { en: 'in the evening', es: 'por la noche' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'When do you work?', es: '¿Cuándo trabajas?' },
+          { speaker: 'student', en: 'In the morning.', es: 'Por la mañana.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'When do you eat dinner?', es: '¿Cuándo cenas?' },
+          { speaker: 'student', en: 'In the evening.', es: 'Por la noche.' },
+        ],
+      ],
     },
     {
-      titleEn: 'My Weekly Schedule',
-      titleEs: 'Mi Horario Semanal',
-      instructionsEn: 'Student: describe your real weekly schedule — which days you work, what you do on the weekend, and one thing you do "in the morning" and one thing you do "in the evening."',
-      instructionsEs: 'Estudiante: describe tu horario semanal real — qué días trabajas, qué haces en el fin de semana, y una cosa que haces "in the morning" y una que haces "in the evening."',
+      titleEn: "Today's Date",
+      titleEs: 'La Fecha de Hoy',
+      instructionsEn: "Practice asking for and saying today's date.",
+      instructionsEs: 'Practica preguntar y decir la fecha de hoy.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'What is the date today?', es: '¿Cuál es la fecha de hoy?' },
+          { speaker: 'tutor', en: "It's May 3rd.", es: 'Es el 3 de mayo.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+          { speaker: 'tutor', en: "You're welcome.", es: 'De nada.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Seasons and Special Dates',
-      titleEs: 'Estaciones y Fechas Especiales',
-      instructionsEn: 'Student: share your birthday month and today\'s date, then describe the weather in your favorite season using "It\'s cold/hot/warm..."',
-      instructionsEs: 'Estudiante: comparte el mes de tu cumpleaños y la fecha de hoy, y luego describe el clima en tu estación favorita usando "It\'s cold/hot/warm..."',
+      titleEn: 'Describe the Weather',
+      titleEs: 'Describe el Clima',
+      instructionsEn: 'Practice describing the weather in different seasons.',
+      instructionsEs: 'Practica describir el clima en diferentes estaciones.',
+      wordBank: [
+        { en: 'warm', es: 'templado' },
+        { en: 'cold', es: 'frío' },
+        { en: 'hot', es: 'caluroso' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: "What's the weather like in spring?", es: '¿Cómo es el clima en primavera?' },
+          { speaker: 'student', en: "It's warm.", es: 'Hace calor templado.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'And in fall?', es: '¿Y en otoño?' },
+          { speaker: 'student', en: "It's cold.", es: 'Hace frío.' },
+        ],
+      ],
     },
   ],
   worksheet: [

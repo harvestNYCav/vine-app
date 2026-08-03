@@ -81,63 +81,126 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Meeting a new neighbor',
-      text: 'You are meeting a new neighbor for the first time outside your apartment building. Introduce yourself, ask how they are doing, and find out their name.',
-      script: [
-        { speaker: 'tutor', en: "Hello! I don't think we've met. I live in this building too.", es: '¡Hola! Creo que no nos conocemos. Yo también vivo en este edificio.' },
-        { speaker: 'student', en: 'Hello! Nice to meet you.', es: '¡Hola! Mucho gusto.' },
-        { speaker: 'tutor', en: 'How are you today?', es: '¿Cómo estás hoy?' },
-        { speaker: 'student', en: 'I am fine, thank you. And you?', es: 'Estoy bien, gracias. ¿Y tú?' },
-        { speaker: 'tutor', en: "I am fine, thank you. What's your name?", es: 'Estoy bien, gracias. ¿Cómo te llamas?' },
-        { speaker: 'student', en: 'My name is Ana.', es: 'Me llamo Ana.' },
-        { speaker: 'tutor', en: 'Nice to meet you, Ana. I am your new neighbor.', es: 'Mucho gusto, Ana. Soy tu nueva vecina.' },
-        { speaker: 'student', en: 'Nice to meet you too.', es: 'Mucho gusto también.' },
-        { speaker: 'tutor', en: "I'm glad we finally introduced ourselves.", es: 'Me alegra que por fin nos hayamos presentado.' },
+      text: 'You meet a new neighbor outside your building.',
+      wordBank: [
+        { en: 'Ana', es: '(tu nombre)' },
+        { en: 'fine', es: 'bien' },
+        { en: 'good', es: 'bien' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: "Hello! I don't think we've met.", es: '¡Hola! Creo que no nos conocemos.' },
+          { speaker: 'student', en: 'Hello! Nice to meet you.', es: '¡Hola! Mucho gusto.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How are you?', es: '¿Cómo estás?' },
+          { speaker: 'student', en: 'Fine, thank you.', es: 'Bien, gracias.' },
+        ],
+        [
+          { speaker: 'tutor', en: "What's your name?", es: '¿Cómo te llamas?' },
+          { speaker: 'student', en: 'My name is Ana.', es: 'Me llamo Ana.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Nice to meet you, Ana!', es: '¡Mucho gusto, Ana!' },
+          { speaker: 'student', en: 'Nice to meet you too.', es: 'Mucho gusto también.' },
+        ],
       ] },
     { label: 'Part 2: Introducing a friend',
-      text: 'Your neighbor is now with you at a community event. Practice introducing them to a third person using "This is my friend..." and pronouns (he/she/they).',
-      script: [
-        { speaker: 'tutor', en: 'Ana, this is my friend Pedro.', es: 'Ana, este es mi amigo Pedro.' },
-        { speaker: 'student', en: 'Nice to meet you, Pedro.', es: 'Mucho gusto, Pedro.' },
-        { speaker: 'tutor', en: 'He lives in the next building.', es: 'Él vive en el edificio de al lado.' },
-        { speaker: 'student', en: 'Oh, he is my neighbor too!', es: '¡Ah, él también es mi vecino!' },
-        { speaker: 'tutor', en: 'Yes! And this is my friend Sara. She works with me.', es: 'Sí. Y esta es mi amiga Sara. Ella trabaja conmigo.' },
-        { speaker: 'student', en: 'Nice to meet you, Sara.', es: 'Mucho gusto, Sara.' },
-        { speaker: 'tutor', en: 'They are both very kind people.', es: 'Ellos son personas muy amables.' },
-        { speaker: 'student', en: "I can tell. I'm happy to meet them.", es: 'Se nota. Me da gusto conocerlos.' },
-        { speaker: 'tutor', en: 'Great! Now you know how to introduce your friends too.', es: '¡Genial! Ahora tú también sabes cómo presentar a tus amigos.' },
+      text: 'Your neighbor is with you. Introduce a friend using pronouns.',
+      wordBank: [
+        { en: 'friend', es: 'amigo/a' },
+        { en: 'neighbor', es: 'vecino/a' },
+        { en: 'coworker', es: 'compañero/a de trabajo' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'This is my friend Pedro.', es: 'Este es mi amigo Pedro.' },
+          { speaker: 'student', en: 'Nice to meet you, Pedro.', es: 'Mucho gusto, Pedro.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'He lives in the next building.', es: 'Él vive en el edificio de al lado.' },
+          { speaker: 'student', en: 'Oh, he is my neighbor too!', es: '¡Ah, él también es mi vecino!' },
+        ],
+        [
+          { speaker: 'tutor', en: 'This is my friend Sara. She works with me.', es: 'Esta es mi amiga Sara. Ella trabaja conmigo.' },
+          { speaker: 'student', en: 'Nice to meet you, Sara.', es: 'Mucho gusto, Sara.' },
+        ],
       ] },
     { label: 'Part 3: Saying goodbye',
-      text: 'The event is ending. Practice a polite goodbye and saying you will see them again soon.',
-      script: [
-        { speaker: 'tutor', en: "It's getting late. I should go home now.", es: 'Se está haciendo tarde. Debo irme a casa.' },
-        { speaker: 'student', en: 'Yes, me too.', es: 'Sí, yo también.' },
-        { speaker: 'tutor', en: 'Goodbye, Ana! It was nice to meet you.', es: '¡Adiós, Ana! Fue un placer conocerte.' },
-        { speaker: 'student', en: 'Goodbye! It was nice to meet you too.', es: '¡Adiós! También fue un placer conocerte.' },
-        { speaker: 'tutor', en: 'See you next week at the next event?', es: '¿Nos vemos la próxima semana en el próximo evento?' },
-        { speaker: 'student', en: 'Yes, see you next week!', es: '¡Sí, nos vemos la próxima semana!' },
-        { speaker: 'tutor', en: 'Perfect. Take care until then.', es: 'Perfecto. Cuídate hasta entonces.' },
-        { speaker: 'student', en: 'You too. Goodbye!', es: 'Tú también. ¡Adiós!' },
-        { speaker: 'tutor', en: "Goodbye! I'm glad we met today.", es: '¡Adiós! Me alegra que nos hayamos conocido hoy.' },
+      text: 'The event is ending. Say goodbye and that you will see them again.',
+      wordBank: [
+        { en: 'next week', es: 'la próxima semana' },
+        { en: 'tomorrow', es: 'mañana' },
+        { en: 'soon', es: 'pronto' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: "It's getting late. I should go now.", es: 'Se está haciendo tarde. Debo irme.' },
+          { speaker: 'student', en: 'Yes, me too.', es: 'Sí, yo también.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Goodbye! It was nice to meet you.', es: '¡Adiós! Fue un placer conocerte.' },
+          { speaker: 'student', en: 'Goodbye! Nice to meet you too.', es: '¡Adiós! Igualmente, un placer.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'See you next week?', es: '¿Nos vemos la próxima semana?' },
+          { speaker: 'student', en: 'Yes, see you next week!', es: '¡Sí, nos vemos la próxima semana!' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
       titleEn: 'Pronoun Swap',
       titleEs: 'Cambia el Pronombre',
-      instructionsEn: 'Tutor: say a sentence using a name (e.g., "Maria is my neighbor," "Carlos and Ana are my friends"). Student: repeat the sentence, replacing the name with the correct pronoun (she, he, they, we).',
-      instructionsEs: 'Tutor: di una oración usando un nombre (por ejemplo, "Maria is my neighbor," "Carlos and Ana are my friends"). Estudiante: repite la oración, reemplazando el nombre con el pronombre correcto (she, he, they, we).',
+      instructionsEn: 'Replace the name in each sentence with the correct pronoun.',
+      instructionsEs: 'Reemplaza el nombre en cada oración con el pronombre correcto.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Maria is my neighbor.', es: 'María es mi vecina.' },
+          { speaker: 'student', en: 'She is my neighbor.', es: 'Ella es mi vecina.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Carlos and Ana are my friends.', es: 'Carlos y Ana son mis amigos.' },
+          { speaker: 'student', en: 'They are my friends.', es: 'Ellos son mis amigos.' },
+        ],
+      ],
     },
     {
       titleEn: 'Greet Three Ways',
       titleEs: 'Saluda de Tres Maneras',
-      instructionsEn: 'Student: greet the tutor three different ways — a formal morning or afternoon greeting, a casual "Hi," and "How are you?" — and respond naturally each time the tutor greets you back.',
-      instructionsEs: 'Estudiante: saluda al tutor de tres maneras diferentes — un saludo formal de mañana o tarde, un "Hi" casual, y "How are you?" — y responde de forma natural cada vez que el tutor te salude.',
+      instructionsEn: 'Greet your tutor in the morning and ask how they are.',
+      instructionsEs: 'Saluda a tu tutor en la mañana y pregúntale cómo está.',
+      wordBank: [
+        { en: 'Good morning', es: 'Buenos días' },
+        { en: 'Good afternoon', es: 'Buenas tardes' },
+        { en: 'Hi', es: 'Hola' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Good morning!', es: '¡Buenos días!' },
+          { speaker: 'tutor', en: 'Good morning! How are you?', es: '¡Buenos días! ¿Cómo estás?' },
+        ],
+        [
+          { speaker: 'student', en: 'I am fine, thank you. And you?', es: 'Estoy bien, gracias. ¿Y tú?' },
+          { speaker: 'tutor', en: 'I am fine too.', es: 'Yo también estoy bien.' },
+        ],
+      ],
     },
     {
       titleEn: 'Introduce the Room',
       titleEs: 'Presenta el Salón',
-      instructionsEn: 'Student: imagine a third person just walked in. Introduce the tutor to them using "This is my friend...," then describe the tutor to that imaginary person using the correct pronoun (he/she).',
-      instructionsEs: 'Estudiante: imagina que una tercera persona acaba de entrar. Presenta al tutor usando "This is my friend...," y luego descríbelo a esa persona imaginaria usando el pronombre correcto (he/she).',
+      instructionsEn: 'A new person walks in. Introduce your tutor to them.',
+      instructionsEs: 'Una nueva persona entra. Presenta a tu tutor.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Who is this?', es: '¿Quién es este/esta?' },
+          { speaker: 'student', en: 'This is my teacher.', es: 'Este es mi maestro.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What does he do?', es: '¿A qué se dedica él?' },
+          { speaker: 'student', en: 'He teaches English.', es: 'Él enseña inglés.' },
+        ],
+      ],
     },
   ],
   worksheet: [

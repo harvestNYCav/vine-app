@@ -197,53 +197,69 @@ const module: Module = {
   teachingScenarios: [
     {
       label: 'Part 1: Finding the right size',
-      text: 'You are at a clothing store in New York. You need to find a coat for winter but you do not know your size in American sizes, and you need help asking about the fitting room.',
-      script: [
-        { speaker: 'tutor', en: "Let's practice shopping for a coat. I'll be the store clerk. What are you looking for?", es: 'Vamos a practicar cómo comprar un abrigo. Yo seré el empleado de la tienda. ¿Qué está buscando?' },
-        { speaker: 'student', en: 'I am looking for a warm coat for winter.', es: 'Estoy buscando un abrigo caliente para el invierno.' },
-        { speaker: 'tutor', en: 'Great, what size do you wear?', es: 'Muy bien, ¿qué talla usa?' },
-        { speaker: 'student', en: "I'm not sure. Do you have this in a medium?", es: 'No estoy segura. ¿Tiene esto en talla mediana?' },
-        { speaker: 'tutor', en: 'Yes, here is a medium. Would you like to try it on?', es: 'Sí, aquí tiene una mediana. ¿Le gustaría probársela?' },
-        { speaker: 'student', en: 'Yes, can I use the fitting room to try this on?', es: '¿Puedo usar el probador para probarme esto?' },
-        { speaker: 'tutor', en: "Of course, it's right over there.", es: 'Claro, está justo allí.' },
-        { speaker: 'student', en: 'This coat is too big. Do you have a smaller size?', es: 'Este abrigo es muy grande. ¿Tiene una talla más pequeña?' },
-        { speaker: 'tutor', en: 'Let me get you a small.', es: 'Le traigo una talla pequeña.' },
-        { speaker: 'student', en: "Thank you, that's much better.", es: 'Gracias, eso está mucho mejor.' },
-        { speaker: 'tutor', en: 'Perfect! You found your size and used the fitting room like a pro.', es: '¡Perfecto! Encontró su talla y usó el probador como una experta.' },
+      text: 'You are at a clothing store. You need a coat.',
+      wordBank: [
+        { en: 'small', es: 'pequeño' },
+        { en: 'medium', es: 'mediano' },
+        { en: 'large', es: 'grande' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Can I help you?', es: '¿Puedo ayudarle?' },
+          { speaker: 'student', en: 'I am looking for a coat.', es: 'Estoy buscando un abrigo.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What size?', es: '¿Qué talla?' },
+          { speaker: 'student', en: 'Medium, please.', es: 'Mediano, por favor.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Here you go. The fitting room is there.', es: 'Aquí tiene. El probador está allí.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How does it fit?', es: '¿Cómo le queda?' },
+          { speaker: 'student', en: 'Too big. Small, please.', es: 'Muy grande. Pequeño, por favor.' },
+        ],
       ],
     },
     {
       label: 'Part 2: Asking about colors and prices',
-      text: 'You found a coat you like but want to know if it comes in a different color, check the price tag, and ask if it is on sale.',
-      script: [
-        { speaker: 'tutor', en: "You like the coat! Now let's ask about colors and price. I'm the clerk again.", es: '¡Le gusta el abrigo! Ahora preguntemos sobre colores y precio. Yo soy el empleado otra vez.' },
-        { speaker: 'student', en: 'Do you have this in a different color?', es: '¿Tiene esto en otro color?' },
-        { speaker: 'tutor', en: 'What color do you want?', es: '¿Qué color quiere?' },
-        { speaker: 'student', en: 'Do you have this in blue?', es: '¿Tiene esto en azul?' },
-        { speaker: 'tutor', en: 'Yes, we have it in blue too.', es: 'Sí, también lo tenemos en azul.' },
-        { speaker: 'student', en: 'Let me check the price tag. Is this coat on sale?', es: 'Déjeme revisar la etiqueta de precio. ¿Este abrigo está en oferta?' },
-        { speaker: 'tutor', en: "Yes, it's on sale today.", es: 'Sí, está en oferta hoy.' },
-        { speaker: 'student', en: 'Is there a discount if I buy two?', es: '¿Hay un descuento si compro dos?' },
-        { speaker: 'tutor', en: "Yes, there's an extra ten percent off.", es: 'Sí, hay un diez por ciento adicional de descuento.' },
-        { speaker: 'student', en: "Great, I'll take the blue one.", es: 'Genial, me llevo el azul.' },
-        { speaker: 'tutor', en: 'Excellent! You asked about color, checked the price tag, and found a great discount.', es: '¡Excelente! Preguntó sobre el color, revisó la etiqueta de precio y encontró un buen descuento.' },
+      text: 'You like the coat. Ask about color and price.',
+      wordBank: [
+        { en: 'blue', es: 'azul' },
+        { en: 'black', es: 'negro' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Do you have this in blue?', es: '¿Tiene esto en azul?' },
+          { speaker: 'tutor', en: 'Yes, right here.', es: 'Sí, aquí está.' },
+        ],
+        [
+          { speaker: 'student', en: 'Is this on sale?', es: '¿Está en oferta?' },
+          { speaker: 'tutor', en: 'Yes, ten dollars off.', es: 'Sí, diez dólares de descuento.' },
+        ],
+        [
+          { speaker: 'student', en: "Great, I'll take it.", es: 'Genial, me lo llevo.' },
+          { speaker: 'tutor', en: 'Good choice!', es: '¡Buena elección!' },
+        ],
       ],
     },
     {
       label: 'Part 3: Paying and returns',
-      text: 'You are ready to buy the coat. Practice paying at the cash register, and asking about the store\'s return or exchange policy in case it does not fit.',
-      script: [
-        { speaker: 'tutor', en: "You're ready to buy. I'll be the cashier. Where do you pay for this?", es: 'Ya está lista para comprar. Yo seré el cajero. ¿Dónde paga esto?' },
-        { speaker: 'student', en: 'Where do I pay for this?', es: '¿Dónde pago esto?' },
-        { speaker: 'tutor', en: 'The cash register is at the front of the store.', es: 'La caja registradora está al frente de la tienda.' },
-        { speaker: 'student', en: 'Does this scarf match this coat?', es: '¿Esta bufanda hace juego con este abrigo?' },
-        { speaker: 'tutor', en: 'Yes, it matches very well.', es: 'Sí, hace juego muy bien.' },
-        { speaker: 'student', en: "Great, I'll take both. What if I need to return it?", es: 'Genial, me llevo los dos. ¿Y si necesito devolverlo?' },
-        { speaker: 'tutor', en: 'Our policy allows you to return or exchange items within 30 days with a receipt.', es: 'Nuestra política permite devolver o cambiar artículos dentro de 30 días con un recibo.' },
-        { speaker: 'student', en: "Good, I would like to return this coat if it doesn't fit, is that okay?", es: 'Bien, me gustaría devolver este abrigo si no me queda bien, ¿está bien?' },
-        { speaker: 'tutor', en: "Yes, that's no problem at all.", es: 'Sí, no hay ningún problema.' },
-        { speaker: 'student', en: 'Thank you very much!', es: '¡Muchas gracias!' },
-        { speaker: 'tutor', en: 'Wonderful! You paid at the register and learned about returns and exchanges.', es: '¡Maravilloso! Pagó en la caja registradora y aprendió sobre devoluciones y cambios.' },
+      text: 'You are ready to pay.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'Where do I pay?', es: '¿Dónde pago?' },
+          { speaker: 'tutor', en: 'At the cash register.', es: 'En la caja registradora.' },
+        ],
+        [
+          { speaker: 'student', en: 'Can I return this?', es: '¿Puedo devolver esto?' },
+          { speaker: 'tutor', en: 'Yes. You have 30 days. Bring your receipt.', es: 'Sí. Tiene 30 días. Traiga su recibo.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you very much!', es: '¡Muchas gracias!' },
+          { speaker: 'tutor', en: "You're welcome!", es: '¡De nada!' },
+        ],
       ],
     },
   ],
@@ -251,20 +267,62 @@ const module: Module = {
     {
       titleEn: 'Find the Right Fit',
       titleEs: 'Encuentra la Talla Correcta',
-      instructionsEn: 'Tutor: hand the student (imagined) clothing items that don\'t fit — too big, too small. Student: explain the problem and ask for a different size each time.',
-      instructionsEs: 'Tutor: dale al estudiante artículos de ropa imaginarios que no le quedan bien — muy grandes, muy pequeños. Estudiante: explica el problema y pide una talla diferente cada vez.',
+      instructionsEn: 'The tutor hands you clothes that do not fit. Say if it is too big or too small.',
+      instructionsEs: 'El tutor te da ropa que no te queda bien. Di si es muy grande o muy pequeña.',
+      wordBank: [
+        { en: 'too big', es: 'muy grande' },
+        { en: 'too small', es: 'muy pequeño' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Try this shirt.', es: 'Pruébate esta camisa.' },
+          { speaker: 'student', en: 'Too big.', es: 'Muy grande.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Try this one.', es: 'Prueba esta.' },
+          { speaker: 'student', en: 'Too small. Do you have a medium?', es: 'Muy pequeña. ¿Tiene una mediana?' },
+        ],
+      ],
     },
     {
-      titleEn: 'Shop for an Outfit',
-      titleEs: 'Compra un Conjunto',
-      instructionsEn: 'Student: pick two clothing items to shop for, without reading a script — ask about color options, try them on, and check the price tag. Tutor: play the store clerk.',
-      instructionsEs: 'Estudiante: elige dos artículos de ropa para comprar, sin leer un guion — pregunta sobre opciones de color, pruébatelos, y revisa la etiqueta de precio. Tutor: haz de empleado de la tienda.',
+      titleEn: 'Ask About Color',
+      titleEs: 'Pregunta Sobre el Color',
+      instructionsEn: 'Ask the clerk for a different color and check the price.',
+      instructionsEs: 'Pídele al empleado un color diferente y revisa el precio.',
+      wordBank: [
+        { en: 'red', es: 'rojo' },
+        { en: 'black', es: 'negro' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Do you have this in red?', es: '¿Tiene esto en rojo?' },
+          { speaker: 'tutor', en: 'Yes, right here.', es: 'Sí, aquí está.' },
+        ],
+        [
+          { speaker: 'student', en: 'What is the price?', es: '¿Cuál es el precio?' },
+          { speaker: 'tutor', en: 'Twenty dollars.', es: 'Veinte dólares.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Return Policy Roleplay',
-      titleEs: 'Representación de Política de Devolución',
-      instructionsEn: 'Student: practice returning or exchanging an item — explain the reason (wrong size, wrong color) and ask about the store\'s return policy.',
-      instructionsEs: 'Estudiante: practica devolver o cambiar un artículo — explica la razón (talla equivocada, color equivocado) y pregunta sobre la política de devoluciones de la tienda.',
+      titleEn: 'Return an Item',
+      titleEs: 'Devuelve un Artículo',
+      instructionsEn: 'Practice returning an item to the store.',
+      instructionsEs: 'Practica devolver un artículo a la tienda.',
+      wordBank: [
+        { en: 'wrong size', es: 'talla equivocada' },
+        { en: 'wrong color', es: 'color equivocado' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'I want to return this.', es: 'Quiero devolver esto.' },
+          { speaker: 'tutor', en: 'What is the problem?', es: '¿Cuál es el problema?' },
+        ],
+        [
+          { speaker: 'student', en: 'Wrong size.', es: 'Talla equivocada.' },
+          { speaker: 'tutor', en: 'No problem. Do you have your receipt?', es: 'No hay problema. ¿Tiene su recibo?' },
+        ],
+      ],
     },
   ],
   worksheet: [

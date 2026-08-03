@@ -83,63 +83,130 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Talking about things you enjoy',
-      text: 'Practice talking about hobbies and things you like doing in your free time, using "I like...", "I enjoy...", and "I love to...".',
-      script: [
-        { speaker: 'tutor', en: "Let's talk about your free time. What do you like doing?", es: 'Hablemos de tu tiempo libre. ¿Qué te gusta hacer?' },
-        { speaker: 'student', en: 'I like cooking.', es: 'Me gusta cocinar.' },
-        { speaker: 'tutor', en: 'Nice! Do you enjoy cooking for your family?', es: '¡Qué bien! ¿Disfrutas cocinar para tu familia?' },
-        { speaker: 'student', en: 'Yes, cooking for my family makes me happy.', es: 'Sí, cocinar para mi familia me hace feliz.' },
-        { speaker: 'tutor', en: 'That is wonderful. What else do you like to do?', es: 'Qué maravilloso. ¿Qué más te gusta hacer?' },
-        { speaker: 'student', en: 'I love to dance.', es: 'Me encanta bailar.' },
-        { speaker: 'tutor', en: 'Fun! And do you enjoy reading too?', es: '¡Divertido! ¿Y también disfrutas leer?' },
-        { speaker: 'student', en: 'Yes, I enjoy walking in the park, and reading helps me learn new words.', es: 'Sí, disfruto caminar en el parque, y leer me ayuda a aprender palabras nuevas.' },
-        { speaker: 'tutor', en: 'Great answers! You used "like", "enjoy", and "love to" perfectly.', es: '¡Excelentes respuestas! Usaste "like", "enjoy" y "love to" perfectamente.' },
+      text: 'Talk about what you like doing in your free time.',
+      wordBank: [
+        { en: 'cooking', es: 'cocinar' },
+        { en: 'dancing', es: 'bailar' },
+        { en: 'reading', es: 'leer' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you like doing?', es: '¿Qué te gusta hacer?' },
+          { speaker: 'student', en: 'I like cooking.', es: 'Me gusta cocinar.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you enjoy it?', es: '¿Lo disfrutas?' },
+          { speaker: 'student', en: 'Yes, I enjoy cooking a lot.', es: 'Sí, disfruto mucho cocinar.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What else do you love to do?', es: '¿Qué más te encanta hacer?' },
+          { speaker: 'student', en: 'I love to dance.', es: 'Me encanta bailar.' },
+        ],
       ] },
     { label: 'Part 2: Talking about daily obligations',
-      text: 'Practice talking about things you have to do or need to do each day, like picking up your kids or going to work.',
-      script: [
-        { speaker: 'tutor', en: 'Tell me about your day. What do you have to do this morning?', es: 'Cuéntame de tu día. ¿Qué tienes que hacer esta mañana?' },
-        { speaker: 'student', en: 'I need to go to work.', es: 'Necesito ir al trabajo.' },
-        { speaker: 'tutor', en: 'Okay. And what do you have to do after work?', es: 'Bien. ¿Y qué tienes que hacer después del trabajo?' },
-        { speaker: 'student', en: 'I have to pick up my kids.', es: 'Tengo que recoger a mis hijos.' },
-        { speaker: 'tutor', en: 'That is a busy day! Do you need to do anything else?', es: '¡Qué día tan ocupado! ¿Necesitas hacer algo más?' },
-        { speaker: 'student', en: 'Yes, I need to cook dinner for my family.', es: 'Sí, necesito cocinar la cena para mi familia.' },
-        { speaker: 'tutor', en: 'You are doing a lot! Did you stop doing anything to have more time?', es: '¡Haces mucho! ¿Dejaste de hacer algo para tener más tiempo?' },
-        { speaker: 'student', en: 'I stopped working on Sundays.', es: 'Dejé de trabajar los domingos.' },
-        { speaker: 'tutor', en: 'Smart! You explained your obligations very clearly.', es: '¡Inteligente! Explicaste tus obligaciones muy claramente.' },
+      text: 'Talk about things you need to do today.',
+      wordBank: [
+        { en: 'go to work', es: 'ir al trabajo' },
+        { en: 'pick up my kids', es: 'recoger a mis hijos' },
+        { en: 'cook dinner', es: 'cocinar la cena' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you need to do today?', es: '¿Qué necesitas hacer hoy?' },
+          { speaker: 'student', en: 'I need to go to work.', es: 'Necesito ir al trabajo.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What do you have to do after?', es: '¿Qué tienes que hacer después?' },
+          { speaker: 'student', en: 'I have to pick up my kids.', es: 'Tengo que recoger a mis hijos.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Anything else?', es: '¿Algo más?' },
+          { speaker: 'student', en: 'I have to cook dinner.', es: 'Tengo que cocinar la cena.' },
+        ],
       ] },
     { label: 'Part 3: Talking about goals and hopes',
-      text: 'Practice talking about your goals, like learning English or finding a good job, using "I want to...", "I plan to...", and "I hope to...".',
-      script: [
-        { speaker: 'tutor', en: "Let's talk about your goals. What do you want to do this year?", es: 'Hablemos de tus metas. ¿Qué quieres hacer este año?' },
-        { speaker: 'student', en: 'I want to learn English.', es: 'Quiero aprender inglés.' },
-        { speaker: 'tutor', en: 'That is a great goal! When did you start studying?', es: '¡Excelente meta! ¿Cuándo empezaste a estudiar?' },
-        { speaker: 'student', en: 'I started studying English last year.', es: 'Empecé a estudiar inglés el año pasado.' },
-        { speaker: 'tutor', en: 'Wonderful progress. What do you plan to do tonight to practice?', es: 'Progreso maravilloso. ¿Qué planeas hacer esta noche para practicar?' },
-        { speaker: 'student', en: 'I plan to study tonight.', es: 'Planeo estudiar esta noche.' },
-        { speaker: 'tutor', en: 'Good! And what do you hope to do in the future?', es: '¡Bien! ¿Y qué esperas hacer en el futuro?' },
-        { speaker: 'student', en: 'I hope to find a good job.', es: 'Espero encontrar un buen trabajo.' },
-        { speaker: 'tutor', en: 'Wonderful hopes! You used "want to", "plan to", and "hope to" beautifully.', es: '¡Maravillosas esperanzas! Usaste "want to", "plan to" y "hope to" maravillosamente.' },
+      text: 'Talk about your goals for this year.',
+      wordBank: [
+        { en: 'learn English', es: 'aprender inglés' },
+        { en: 'find a good job', es: 'encontrar un buen trabajo' },
+        { en: 'save money', es: 'ahorrar dinero' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you want to do this year?', es: '¿Qué quieres hacer este año?' },
+          { speaker: 'student', en: 'I want to learn English.', es: 'Quiero aprender inglés.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What do you plan to do tonight?', es: '¿Qué planeas hacer esta noche?' },
+          { speaker: 'student', en: 'I plan to study.', es: 'Planeo estudiar.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What do you hope to do in the future?', es: '¿Qué esperas hacer en el futuro?' },
+          { speaker: 'student', en: 'I hope to find a good job.', es: 'Espero encontrar un buen trabajo.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
       titleEn: 'My Free Time',
       titleEs: 'Mi Tiempo Libre',
-      instructionsEn: 'Student: say three things you enjoy doing in your free time, using "I enjoy ...-ing" or "I like ...-ing" for each one.',
-      instructionsEs: 'Estudiante: di tres cosas que disfrutas hacer en tu tiempo libre, usando "I enjoy ...-ing" o "I like ...-ing" para cada una.',
+      instructionsEn: 'Say one thing you enjoy doing in your free time.',
+      instructionsEs: 'Di algo que disfrutas hacer en tu tiempo libre.',
+      wordBank: [
+        { en: 'walking', es: 'caminar' },
+        { en: 'singing', es: 'cantar' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you enjoy doing?', es: '¿Qué disfrutas hacer?' },
+          { speaker: 'student', en: 'I enjoy walking in the park.', es: 'Disfruto caminar en el parque.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Nice! What else?', es: '¡Qué bien! ¿Qué más?' },
+          { speaker: 'student', en: 'I like to sing.', es: 'Me gusta cantar.' },
+        ],
+      ],
     },
     {
       titleEn: 'My To-Do List',
       titleEs: 'Mi Lista de Pendientes',
-      instructionsEn: 'Student: list three real things you need to do or have to do this week, using "I need to..." or "I have to..." for each one.',
-      instructionsEs: 'Estudiante: enumera tres cosas reales que necesitas hacer o tienes que hacer esta semana, usando "I need to..." o "I have to..." para cada una.',
+      instructionsEn: 'Say something you need to do this week.',
+      instructionsEs: 'Di algo que necesitas hacer esta semana.',
+      wordBank: [
+        { en: 'clean the house', es: 'limpiar la casa' },
+        { en: 'buy groceries', es: 'comprar comida' },
+        { en: 'pay bills', es: 'pagar las cuentas' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you need to do this week?', es: '¿Qué necesitas hacer esta semana?' },
+          { speaker: 'student', en: 'I need to buy groceries.', es: 'Necesito comprar comida.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Anything else?', es: '¿Algo más?' },
+          { speaker: 'student', en: 'I have to pay bills.', es: 'Tengo que pagar las cuentas.' },
+        ],
+      ],
     },
     {
       titleEn: 'Before and After',
       titleEs: 'Antes y Después',
-      instructionsEn: 'Student: complete two true sentences about a habit — "I started ...-ing" (something you began doing) and "I stopped ...-ing" (something you no longer do). Tutor: ask one follow-up question about each.',
-      instructionsEs: 'Estudiante: completa dos oraciones verdaderas sobre un hábito — "I started ...-ing" (algo que empezaste a hacer) y "I stopped ...-ing" (algo que ya no haces). Tutor: haz una pregunta de seguimiento sobre cada una.',
+      instructionsEn: 'Talk about something you started or stopped doing.',
+      instructionsEs: 'Habla de algo que empezaste o dejaste de hacer.',
+      wordBank: [
+        { en: 'smoking', es: 'fumar' },
+        { en: 'exercising', es: 'hacer ejercicio' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Did you start doing something new?', es: '¿Empezaste a hacer algo nuevo?' },
+          { speaker: 'student', en: 'I started exercising.', es: 'Empecé a hacer ejercicio.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Did you stop doing something?', es: '¿Dejaste de hacer algo?' },
+          { speaker: 'student', en: 'I stopped smoking.', es: 'Dejé de fumar.' },
+        ],
+      ],
     },
   ],
   worksheet: [

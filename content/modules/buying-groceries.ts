@@ -199,74 +199,131 @@ const module: Module = {
   teachingScenarios: [
     {
       label: 'Part 1: Finding items and asking prices',
-      text: 'You are at a supermarket in Queens. You need to buy rice, bread, and vegetables but do not know how to ask where things are or how much they cost.',
-      script: [
-        { speaker: 'tutor', en: "Let's practice finding items in the supermarket. I'll be a store employee. Ask me where the rice is.", es: 'Vamos a practicar cómo encontrar productos en el supermercado. Yo seré un empleado de la tienda. Pregúntame dónde está el arroz.' },
-        { speaker: 'student', en: 'Excuse me, where is the rice?', es: 'Disculpe, ¿dónde está el arroz?' },
-        { speaker: 'tutor', en: 'The rice is in aisle 5.', es: 'El arroz está en el pasillo 5.' },
-        { speaker: 'student', en: 'Thank you. Where is the bread?', es: 'Gracias. ¿Dónde está el pan?' },
-        { speaker: 'tutor', en: 'The bread is in aisle 3, next to the milk.', es: 'El pan está en el pasillo 3, al lado de la leche.' },
-        { speaker: 'student', en: 'Do you have any fresh vegetables?', es: '¿Tiene verduras frescas?' },
-        { speaker: 'tutor', en: 'Yes, the vegetables are in aisle 1.', es: 'Sí, las verduras están en el pasillo 1.' },
-        { speaker: 'student', en: 'How much does this cost?', es: '¿Cuánto cuesta esto?' },
-        { speaker: 'tutor', en: "That's on sale this week — it's two dollars.", es: 'Eso está en oferta esta semana — cuesta dos dólares.' },
-        { speaker: 'student', en: 'Great, thank you for your help!', es: '¡Genial, gracias por su ayuda!' },
-        { speaker: 'tutor', en: 'Well done! You asked where things are and how much they cost like a pro.', es: '¡Muy bien! Preguntaste dónde están las cosas y cuánto cuestan como un experto.' },
+      text: 'You are at a supermarket. Practice asking where things are and how much they cost.',
+      wordBank: [
+        { en: 'rice', es: 'arroz' },
+        { en: 'bread', es: 'pan' },
+        { en: 'vegetables', es: 'verduras' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Excuse me, where is the rice?', es: 'Disculpe, ¿dónde está el arroz?' },
+          { speaker: 'tutor', en: 'The rice is in aisle 5.', es: 'El arroz está en el pasillo 5.' },
+        ],
+        [
+          { speaker: 'student', en: 'Where is the bread?', es: '¿Dónde está el pan?' },
+          { speaker: 'tutor', en: 'The bread is in aisle 3.', es: 'El pan está en el pasillo 3.' },
+        ],
+        [
+          { speaker: 'student', en: 'How much does this cost?', es: '¿Cuánto cuesta esto?' },
+          { speaker: 'tutor', en: "It's two dollars.", es: 'Cuesta dos dólares.' },
+        ],
       ],
     },
     {
       label: 'Part 2: Asking for a specific amount',
-      text: 'You need a specific quantity of something (like two pounds of chicken) and want to know if the fish is fresh. Practice asking the person at the counter.',
-      script: [
-        { speaker: 'tutor', en: "Now let's practice asking for a specific amount. I'll be the person at the counter. Tell me what you would like.", es: 'Ahora vamos a practicar cómo pedir una cantidad específica. Yo seré la persona en el mostrador. Dime qué quisieras.' },
-        { speaker: 'student', en: 'I would like two pounds of chicken, please.', es: 'Quisiera dos libras de pollo, por favor.' },
-        { speaker: 'tutor', en: 'Of course. Anything else?', es: 'Claro. ¿Algo más?' },
-        { speaker: 'student', en: 'Do you have any fresh fish today?', es: '¿Tiene pescado fresco hoy?' },
-        { speaker: 'tutor', en: 'Yes, is this fish fresh? Let me check for you — yes, it came in this morning.', es: 'Sí, ¿este pescado está fresco? Déjeme revisar — sí, llegó esta mañana.' },
-        { speaker: 'student', en: 'I would like one pound of fish, please.', es: 'Quisiera una libra de pescado, por favor.' },
-        { speaker: 'tutor', en: 'One pound of fish, coming right up. Anything else?', es: 'Una libra de pescado, enseguida. ¿Algo más?' },
-        { speaker: 'student', en: "No, that's all. How much does this cost?", es: 'No, eso es todo. ¿Cuánto cuesta esto?' },
-        { speaker: 'tutor', en: 'That will be twelve dollars total.', es: 'Eso será doce dólares en total.' },
-        { speaker: 'student', en: 'Thank you very much.', es: 'Muchas gracias.' },
-        { speaker: 'tutor', en: 'Perfect! You asked for exact amounts and checked freshness just like a real customer.', es: '¡Perfecto! Pediste cantidades exactas y preguntaste por lo fresco como una verdadera clienta.' },
+      text: 'You need a specific quantity of food and want to know if it is fresh. Practice asking the person at the counter.',
+      wordBank: [
+        { en: 'chicken', es: 'pollo' },
+        { en: 'fish', es: 'pescado' },
+        { en: 'beef', es: 'carne de res' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'I would like two pounds of chicken, please.', es: 'Quisiera dos libras de pollo, por favor.' },
+          { speaker: 'tutor', en: 'Of course. Anything else?', es: 'Claro. ¿Algo más?' },
+        ],
+        [
+          { speaker: 'student', en: 'Is the fish fresh?', es: '¿El pescado está fresco?' },
+          { speaker: 'tutor', en: 'Yes, it came in this morning.', es: 'Sí, llegó esta mañana.' },
+        ],
+        [
+          { speaker: 'student', en: 'How much does this cost?', es: '¿Cuánto cuesta esto?' },
+          { speaker: 'tutor', en: 'Twelve dollars total.', es: 'Doce dólares en total.' },
+        ],
       ],
     },
     {
       label: 'Part 3: Checkout and paying',
-      text: 'You are in the checkout line. Practice asking for a bag, paying with cash or credit card, and asking for a receipt.',
-      script: [
-        { speaker: 'tutor', en: "Now let's practice checkout. I'll be the cashier and you're in the checkout line.", es: 'Ahora vamos a practicar el pago. Yo seré el cajero y tú estás en la fila de pago.' },
-        { speaker: 'student', en: 'Hi, the checkout line was very long today!', es: 'Hola, ¡la fila de pago estaba muy larga hoy!' },
-        { speaker: 'tutor', en: 'Yes, it is busy today. Will you be paying with cash or credit card?', es: '¿Va a pagar con efectivo o tarjeta de crédito?' },
-        { speaker: 'student', en: 'I would like to pay with credit card.', es: 'Quisiera pagar con tarjeta de crédito.' },
-        { speaker: 'tutor', en: 'Great. Do you need a bag for your groceries?', es: '¿Necesita una bolsa para sus compras?' },
-        { speaker: 'student', en: 'Yes, I need a bag, please.', es: 'Sí, necesito una bolsa, por favor.' },
-        { speaker: 'tutor', en: 'Here you go. Anything else?', es: 'Aquí tiene. ¿Algo más?' },
-        { speaker: 'student', en: 'Can I have a receipt, please?', es: '¿Me puede dar el recibo, por favor?' },
-        { speaker: 'tutor', en: 'Of course, here is your receipt.', es: 'Claro, aquí está su recibo.' },
-        { speaker: 'student', en: 'Thank you, have a good day!', es: 'Gracias, ¡que tenga un buen día!' },
-        { speaker: 'tutor', en: 'Excellent work! You handled the whole checkout — cash or card, bag, and receipt.', es: '¡Excelente trabajo! Manejaste todo el proceso de pago — efectivo o tarjeta, bolsa y recibo.' },
+      text: 'You are in the checkout line. Practice paying and asking for a bag and a receipt.',
+      wordBank: [
+        { en: 'cash', es: 'efectivo' },
+        { en: 'credit card', es: 'tarjeta de crédito' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Cash or credit card?', es: '¿Efectivo o tarjeta de crédito?' },
+          { speaker: 'student', en: 'Credit card, please.', es: 'Tarjeta de crédito, por favor.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you need a bag?', es: '¿Necesita una bolsa?' },
+          { speaker: 'student', en: 'Yes, please.', es: 'Sí, por favor.' },
+        ],
+        [
+          { speaker: 'student', en: 'Can I have a receipt?', es: '¿Me puede dar el recibo?' },
+          { speaker: 'tutor', en: 'Of course, here you go.', es: 'Claro, aquí tiene.' },
+        ],
       ],
     },
   ],
   practiceActivities: [
     {
-      titleEn: 'Build a Shopping List',
-      titleEs: 'Haz una Lista de Compras',
-      instructionsEn: 'Student: name five real grocery items you need, asking "Where is the...?" for each one. Tutor: answer with a made-up aisle number each time.',
-      instructionsEs: 'Estudiante: nombra cinco productos de compra reales que necesitas, preguntando "Where is the...?" para cada uno. Tutor: responde con un número de pasillo inventado cada vez.',
+      titleEn: 'Is It Expensive?',
+      titleEs: '¿Es Caro?',
+      instructionsEn: 'Practice asking if something is expensive, cheap, or on sale.',
+      instructionsEs: 'Practica preguntar si algo es caro, barato o está en oferta.',
+      wordBank: [
+        { en: 'expensive', es: 'caro' },
+        { en: 'cheap', es: 'barato' },
+        { en: 'on sale', es: 'en oferta' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Is this expensive?', es: '¿Esto es caro?' },
+          { speaker: 'tutor', en: "No, it's cheap.", es: 'No, es barato.' },
+        ],
+        [
+          { speaker: 'student', en: 'Is it on sale?', es: '¿Está en oferta?' },
+          { speaker: 'tutor', en: 'Yes, two dollars.', es: 'Sí, dos dólares.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Ask for an Amount',
-      titleEs: 'Pide una Cantidad',
-      instructionsEn: 'Student: practice asking for specific quantities of three different foods using "I would like ___ pounds of ___, please." Tutor: respond and ask one follow-up question each time (fresh or frozen? anything else?).',
-      instructionsEs: 'Estudiante: practica pedir cantidades específicas de tres alimentos diferentes usando "I would like ___ pounds of ___, please." Tutor: responde y haz una pregunta de seguimiento cada vez (¿fresco o congelado? ¿algo más?).',
+      titleEn: 'Ask for a Different Amount',
+      titleEs: 'Pide Otra Cantidad',
+      instructionsEn: 'Practice asking for fresh vegetables and a specific amount.',
+      instructionsEs: 'Practica pedir verduras frescas y una cantidad específica.',
+      wordBank: [
+        { en: 'tomatoes', es: 'tomates' },
+        { en: 'onions', es: 'cebollas' },
+        { en: 'potatoes', es: 'papas' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Do you have fresh tomatoes?', es: '¿Tiene tomates frescos?' },
+          { speaker: 'tutor', en: 'Yes, right here.', es: 'Sí, aquí están.' },
+        ],
+        [
+          { speaker: 'student', en: 'I would like two pounds, please.', es: 'Quisiera dos libras, por favor.' },
+          { speaker: 'tutor', en: 'Of course.', es: 'Claro.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Full Checkout',
-      titleEs: 'Pago Completo',
-      instructionsEn: 'Student: go through an entire checkout without reading a script — greet the cashier, answer cash or credit card, say whether you need a bag, and ask for a receipt.',
-      instructionsEs: 'Estudiante: completa todo el proceso de pago sin leer un guion — saluda al cajero, responde efectivo o tarjeta, di si necesitas una bolsa, y pide un recibo.',
+      titleEn: 'At the Checkout',
+      titleEs: 'En la Fila de Pago',
+      instructionsEn: 'Practice talking to the cashier at a busy checkout line.',
+      instructionsEs: 'Practica hablar con el cajero en una fila de pago muy ocupada.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'The checkout line is long today.', es: 'La fila de pago está larga hoy.' },
+          { speaker: 'tutor', en: "Yes, it's busy.", es: 'Sí, está ocupado.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you for your help.', es: 'Gracias por su ayuda.' },
+          { speaker: 'tutor', en: 'You are welcome.', es: 'De nada.' },
+        ],
+      ],
     },
   ],
   worksheet: [

@@ -1,8 +1,47 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { Module, VocabItem, TeachingScenario, GrammarPoint, PracticeActivity } from '@/types'
+import type { Module, VocabItem, TeachingScenario, GrammarPoint, PracticeActivity, WordBankItem, DialogueLine } from '@/types'
 import { shuffle } from '@/lib/study'
+
+function WordBank({ items, showEs }: { items: WordBankItem[]; showEs: boolean }) {
+  return (
+    <div className="text-left mb-8">
+      <p className="text-gray-400 text-sm uppercase tracking-wide mb-2">Choose one:</p>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item, i) => (
+          <span key={i} className="bg-gray-800 rounded-xl px-4 py-2">
+            <span className="text-lg font-semibold">{item.en}</span>
+            {showEs && item.es && <span className="text-amber-300 ml-2">{item.es}</span>}
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function DialogueChunks({ chunks, showEs }: { chunks: DialogueLine[][]; showEs: boolean }) {
+  return (
+    <div className="text-left space-y-6">
+      {chunks.map((chunk, chunkIndex) => (
+        <div key={chunkIndex} className="space-y-3">
+          {chunk.map((line, lineIndex) => (
+            <div key={lineIndex} className={line.speaker === 'tutor' ? 'text-amber-300' : 'text-white'}>
+              <span className="font-semibold uppercase text-sm tracking-wide mr-2">
+                {line.speaker === 'tutor' ? 'Tutor' : 'Student'}:
+              </span>
+              <span className="text-lg md:text-xl">{line.en}</span>
+              {showEs && line.es && <span className="block text-sm text-gray-500 italic">{line.es}</span>}
+            </div>
+          ))}
+          {chunkIndex < chunks.length - 1 && (
+            <p className="text-gray-400 italic text-sm">Now say it again together.</p>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
 
 type Slide =
   | { type: 'title' }
@@ -184,7 +223,18 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{slide.scenario.label}</h2>
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-8">{slide.scenario.text}</p>
 
-            {slide.scenario.script && (
+            {slide.scenario.wordBank && slide.scenario.wordBank.length > 0 && (
+              <WordBank items={slide.scenario.wordBank} showEs={mod.track === 'esl'} />
+            )}
+
+            {slide.scenario.chunks && (
+              <>
+                <DialogueChunks chunks={slide.scenario.chunks} showEs={mod.track === 'esl'} />
+                <p className="text-gray-400 italic pt-4">Now swap roles and read it again.</p>
+              </>
+            )}
+
+            {!slide.scenario.chunks && slide.scenario.script && (
               <div className="text-left space-y-4">
                 {slide.scenario.script.map((line, i) => (
                   <div key={i} className={line.speaker === 'tutor' ? 'text-amber-300' : 'text-white'}>
@@ -208,9 +258,20 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
             {mod.track === 'esl' && slide.activity.titleEs && (
               <p className="text-xl text-amber-300 mb-6">{slide.activity.titleEs}</p>
             )}
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">{slide.activity.instructionsEn}</p>
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-4">{slide.activity.instructionsEn}</p>
             {mod.track === 'esl' && slide.activity.instructionsEs && (
-              <p className="text-lg text-gray-400 italic leading-relaxed mt-4">{slide.activity.instructionsEs}</p>
+              <p className="text-lg text-gray-400 italic leading-relaxed mb-4">{slide.activity.instructionsEs}</p>
+            )}
+
+            {slide.activity.wordBank && slide.activity.wordBank.length > 0 && (
+              <WordBank items={slide.activity.wordBank} showEs={mod.track === 'esl'} />
+            )}
+
+            {slide.activity.chunks && (
+              <>
+                <DialogueChunks chunks={slide.activity.chunks} showEs={mod.track === 'esl'} />
+                <p className="text-gray-400 italic pt-4">Great job! Try it again.</p>
+              </>
             )}
           </div>
         )}

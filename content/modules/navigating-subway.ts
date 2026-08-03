@@ -200,70 +200,130 @@ const module: Module = {
   teachingScenarios: [
     {
       label: 'Part 1: Buying a MetroCard',
-      text: 'You need to take the subway from Jackson Heights, Queens to Manhattan for a job interview, but you do not know how to buy a MetroCard at the machine or find the right platform.',
-      script: [
-        { speaker: 'tutor', en: 'Excuse me, do you need help with the machine?', es: '¿Disculpe, necesita ayuda con la máquina?' },
-        { speaker: 'student', en: 'Yes, I need to buy a MetroCard.', es: 'Sí, necesito comprar una MetroCard.' },
-        { speaker: 'tutor', en: 'Okay, just insert your money here.', es: 'Bien, solo inserte su dinero aquí.' },
-        { speaker: 'student', en: 'Excuse me, where is the platform for the subway?', es: 'Disculpe, ¿dónde está el andén del metro?' },
-        { speaker: 'tutor', en: "It's downstairs, to the left.", es: 'Está abajo, a la izquierda.' },
-        { speaker: 'student', en: 'Thank you. I take the subway to a job interview today.', es: 'Gracias. Hoy tomo el metro para una entrevista de trabajo.' },
-        { speaker: 'tutor', en: 'Good luck with your interview! Do you know which train goes to Manhattan?', es: '¡Buena suerte con su entrevista! ¿Sabe qué tren va a Manhattan?' },
-        { speaker: 'student', en: 'No, which train goes to Manhattan?', es: 'No, ¿qué tren va a Manhattan?' },
-        { speaker: 'tutor', en: 'Take the uptown train from this platform.', es: 'Tome el tren uptown desde este andén.' },
-        { speaker: 'student', en: 'Thank you so much for your help!', es: '¡Muchas gracias por su ayuda!' },
-        { speaker: 'tutor', en: "You're welcome. Good luck at your interview!", es: 'De nada. ¡Buena suerte en su entrevista!' },
+      text: 'You need to buy a MetroCard and find the platform for the subway.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Do you need help with the machine?', es: '¿Necesita ayuda con la máquina?' },
+          { speaker: 'student', en: 'Yes, I need a MetroCard.', es: 'Sí, necesito una MetroCard.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Insert your money here.', es: 'Inserte su dinero aquí.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+        [
+          { speaker: 'student', en: 'Where is the platform?', es: '¿Dónde está el andén?' },
+          { speaker: 'tutor', en: "It's downstairs, to the left.", es: 'Está abajo, a la izquierda.' },
+        ],
       ],
     },
     {
       label: 'Part 2: Asking which train to take',
-      text: 'You are on the platform but you are not sure if you need the uptown or downtown train, or where to transfer. Practice asking another rider or a subway worker for help.',
-      script: [
-        { speaker: 'tutor', en: 'You look a little confused. Can I help?', es: 'Se ve un poco confundido. ¿Puedo ayudar?' },
-        { speaker: 'student', en: 'Yes, please. Which train goes to Times Square?', es: 'Sí, por favor. ¿Qué tren va a Times Square?' },
-        { speaker: 'tutor', en: 'You need the uptown train from this platform.', es: 'Necesita el tren uptown desde este andén.' },
-        { speaker: 'student', en: 'Is this the uptown or downtown platform?', es: '¿Este es el andén uptown o downtown?' },
-        { speaker: 'tutor', en: 'This is the downtown platform. Uptown is across the station.', es: 'Este es el andén downtown. Uptown está al otro lado de la estación.' },
-        { speaker: 'student', en: 'Do I need to transfer to another train?', es: '¿Necesito hacer transbordo a otro tren?' },
-        { speaker: 'tutor', en: 'Yes, transfer to the A train at Jay Street.', es: 'Sí, haga transbordo al tren A en Jay Street.' },
-        { speaker: 'student', en: 'Thank you, I understand now.', es: 'Gracias, ahora entiendo.' },
-        { speaker: 'tutor', en: 'You\'re welcome. Have a safe trip!', es: 'De nada. ¡Buen viaje!' },
+      text: "You're on the platform. Practice asking which train to take.",
+      wordBank: [
+        { en: 'uptown', es: 'hacia el norte' },
+        { en: 'downtown', es: 'hacia el sur' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Which train goes to Times Square?', es: '¿Qué tren va a Times Square?' },
+          { speaker: 'tutor', en: 'The uptown train.', es: 'El tren uptown.' },
+        ],
+        [
+          { speaker: 'student', en: 'Is this the uptown platform?', es: '¿Este es el andén uptown?' },
+          { speaker: 'tutor', en: 'No, this is downtown.', es: 'No, este es downtown.' },
+        ],
+        [
+          { speaker: 'student', en: 'Do I need to transfer?', es: '¿Necesito hacer transbordo?' },
+          { speaker: 'tutor', en: 'Yes, transfer to the A train.', es: 'Sí, haga transbordo al tren A.' },
+        ],
       ],
     },
     {
       label: 'Part 3: Asking for directions on the street',
-      text: 'You exit the subway station but do not recognize the street. Practice asking a stranger for directions to your job interview using turn left/right, straight ahead, corner, and block.',
-      script: [
-        { speaker: 'tutor', en: 'Excuse me, you look lost. Can I help you find something?', es: 'Disculpe, se ve perdido. ¿Puedo ayudarle a encontrar algo?' },
-        { speaker: 'student', en: 'Excuse me, where is Main Street?', es: 'Disculpe, ¿dónde está Main Street?' },
-        { speaker: 'tutor', en: 'Turn left at the corner.', es: 'Doble a la izquierda en la esquina.' },
-        { speaker: 'student', en: 'Turn left, and then what?', es: 'Doble a la izquierda, ¿y luego qué?' },
-        { speaker: 'tutor', en: 'Then go straight ahead for two blocks.', es: 'Luego siga derecho por dos cuadras.' },
-        { speaker: 'student', en: 'Straight ahead for two blocks. Then turn right?', es: 'Derecho por dos cuadras. ¿Luego doblo a la derecha?' },
-        { speaker: 'tutor', en: "Yes, turn right at the next corner and you'll see it.", es: 'Sí, doble a la derecha en la próxima esquina y lo verá.' },
-        { speaker: 'student', en: 'Thank you so much for the directions.', es: 'Muchas gracias por las direcciones.' },
-        { speaker: 'tutor', en: 'You\'re welcome. Good luck at your interview!', es: 'De nada. ¡Buena suerte en su entrevista!' },
+      text: 'You exit the station and ask a stranger for directions.',
+      wordBank: [
+        { en: 'left', es: 'izquierda' },
+        { en: 'right', es: 'derecha' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Excuse me, where is Main Street?', es: 'Disculpe, ¿dónde está Main Street?' },
+          { speaker: 'tutor', en: 'Turn left at the corner.', es: 'Doble a la izquierda en la esquina.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Then go straight ahead for two blocks.', es: 'Luego siga derecho por dos cuadras.' },
+          { speaker: 'student', en: 'Straight ahead, got it.', es: 'Derecho, entendido.' },
+        ],
+        [
+          { speaker: 'tutor', en: "Turn right at the next corner and you'll see it.", es: 'Doble a la derecha en la próxima esquina y lo verá.' },
+          { speaker: 'student', en: 'Thank you so much.', es: 'Muchas gracias.' },
+        ],
       ],
     },
   ],
   practiceActivities: [
     {
-      titleEn: 'Give Real Directions',
-      titleEs: 'Da Direcciones Reales',
-      instructionsEn: 'Student: give the tutor real directions from where you are right now to a nearby landmark (a store, the subway station), using turn left/right, straight ahead, block, and corner.',
-      instructionsEs: 'Estudiante: dale al tutor direcciones reales desde donde están ahora hasta un lugar cercano (una tienda, la estación de metro), usando turn left/right, straight ahead, block y corner.',
+      titleEn: 'Ask Where Something Is',
+      titleEs: 'Pregunta Dónde Está Algo',
+      instructionsEn: 'Practice asking a stranger where something is.',
+      instructionsEs: 'Practica preguntarle a un desconocido dónde está algo.',
+      wordBank: [
+        { en: 'exit', es: 'la salida' },
+        { en: 'pharmacy', es: 'la farmacia' },
+        { en: 'bank', es: 'el banco' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Excuse me, where is the exit?', es: 'Disculpe, ¿dónde está la salida?' },
+          { speaker: 'tutor', en: "It's over there.", es: 'Está por allá.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+          { speaker: 'tutor', en: 'You are welcome.', es: 'De nada.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Which Train?',
-      titleEs: '¿Qué Tren?',
-      instructionsEn: 'Tutor: name three different NYC destinations one at a time. Student: ask "Which train goes to...?" for each, and repeat back the tutor\'s uptown/downtown and transfer instructions to confirm understanding.',
-      instructionsEs: 'Tutor: nombra tres destinos diferentes de Nueva York, uno a la vez. Estudiante: pregunta "Which train goes to...?" para cada uno, y repite las instrucciones de uptown/downtown y transbordo del tutor para confirmar que entendió.',
+      titleEn: 'Which Train Goes There?',
+      titleEs: '¿Qué Tren Va Allí?',
+      instructionsEn: 'Practice asking which train goes to different places.',
+      instructionsEs: 'Practica preguntar qué tren va a diferentes lugares.',
+      wordBank: [
+        { en: 'Brooklyn', es: 'Brooklyn' },
+        { en: 'Queens', es: 'Queens' },
+        { en: 'Manhattan', es: 'Manhattan' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Which train goes to Brooklyn?', es: '¿Qué tren va a Brooklyn?' },
+          { speaker: 'tutor', en: 'The downtown train.', es: 'El tren downtown.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+          { speaker: 'tutor', en: 'You are welcome.', es: 'De nada.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Lost on the Platform',
-      titleEs: 'Perdido en el Andén',
-      instructionsEn: 'Tutor: play a stranger on the platform. Student: explain you\'re not sure if you\'re on the right platform and ask for help figuring out uptown vs. downtown and whether you need to transfer.',
-      instructionsEs: 'Tutor: haz de desconocido en el andén. Estudiante: explica que no estás seguro de si estás en el andén correcto y pide ayuda para saber si es uptown o downtown y si necesitas hacer transbordo.',
+      titleEn: 'How Far Is It?',
+      titleEs: '¿Qué Tan Lejos Está?',
+      instructionsEn: 'Practice saying how many blocks away a place is.',
+      instructionsEs: 'Practica decir a cuántas cuadras está un lugar.',
+      wordBank: [
+        { en: 'one block', es: 'una cuadra' },
+        { en: 'two blocks', es: 'dos cuadras' },
+        { en: 'three blocks', es: 'tres cuadras' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'How far is the store?', es: '¿Qué tan lejos está la tienda?' },
+          { speaker: 'student', en: 'Two blocks away.', es: 'A dos cuadras.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Thank you.', es: 'Gracias.' },
+          { speaker: 'student', en: 'You are welcome.', es: 'De nada.' },
+        ],
+      ],
     },
   ],
   worksheet: [

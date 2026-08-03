@@ -80,70 +80,119 @@ const module: Module = {
       answer: 'I prefer tea', options: ['I prefer tea', 'I like tea', 'I love tea', "I don't like tea"] },
   ],
   teachingScenarios: [
-    { label: 'Part 1: Talking about food',
-      text: 'You are at a restaurant or grocery store talking about food you like and don\'t like. Practice using "I like...", "I love...", and "I prefer...".',
-      script: [
-        { speaker: 'tutor', en: 'Welcome! I\'m the waiter tonight. Do you like spicy food?', es: '¡Bienvenido! Soy el mesero esta noche. ¿Te gusta la comida picante?' },
-        { speaker: 'student', en: "I don't like spicy food.", es: 'No me gusta la comida picante.' },
-        { speaker: 'tutor', en: 'I understand. What about coffee — do you like coffee?', es: 'Entiendo. ¿Y el café? ¿Te gusta el café?' },
-        { speaker: 'student', en: 'I like coffee.', es: 'Me gusta el café.' },
-        { speaker: 'tutor', en: 'Good choice. We also have tea. Do you prefer tea or coffee?', es: 'Buena elección. También tenemos té. ¿Prefieres el té o el café?' },
-        { speaker: 'student', en: 'I prefer tea over coffee.', es: 'Prefiero el té sobre el café.' },
-        { speaker: 'tutor', en: 'Perfect. For dinner, we have rice and beans — it\'s my favorite dish here.', es: 'Perfecto. Para la cena, tenemos arroz con frijoles — es mi plato favorito aquí.' },
-        { speaker: 'student', en: 'My favorite food is rice and beans too.', es: 'Mi comida favorita también es arroz con frijoles.' },
-        { speaker: 'tutor', en: 'Wonderful! Is there anything you don\'t like at all?', es: '¡Maravilloso! ¿Hay algo que no te guste nada?' },
-        { speaker: 'student', en: "I don't like the cold at all, but I love this restaurant.", es: 'No me gusta nada el frío, pero me encanta este restaurante.' },
-        { speaker: 'tutor', en: "I'm glad you love it! I'll bring your tea and rice and beans right away.", es: 'Me alegra que te encante. Te traigo tu té y arroz con frijoles enseguida.' },
-      ] },
-    { label: 'Part 2: Talking about hobbies',
-      text: 'Practice talking about activities you like doing in your free time, and asking the other person what they like to do.',
-      script: [
-        { speaker: 'tutor', en: 'What do you like to do on weekends?', es: '¿Qué te gusta hacer los fines de semana?' },
-        { speaker: 'student', en: 'I love dancing.', es: 'Me encanta bailar.' },
-        { speaker: 'tutor', en: "That's great! I really like this neighborhood's dance classes.", es: 'Qué bien. Me gusta mucho las clases de baile de este vecindario.' },
-        { speaker: 'student', en: 'I really like dancing on weekends.', es: 'Me gusta mucho bailar los fines de semana.' },
-        { speaker: 'tutor', en: 'Do you like other activities too, like sports or music?', es: '¿Te gustan otras actividades también, como los deportes o la música?' },
-        { speaker: 'student', en: 'He likes soccer. She likes music. I like music too.', es: 'A él le gusta el fútbol. A ella le gusta la música. A mí también me gusta la música.' },
-        { speaker: 'tutor', en: 'Nice! What do you like about music?', es: '¿Qué te gusta de la música?' },
-        { speaker: 'student', en: 'I like it a lot. It helps me relax.', es: 'Me gusta mucho. Me ayuda a relajarme.' },
-        { speaker: 'tutor', en: 'What do you like to do with your family?', es: '¿Qué te gusta hacer con tu familia?' },
-        { speaker: 'student', en: 'I like this food, and I love cooking with my family on weekends.', es: 'Me gusta esta comida, y me encanta cocinar con mi familia los fines de semana.' },
-        { speaker: 'tutor', en: 'Sounds like a perfect weekend. Thanks for sharing what you like to do!', es: 'Suena como un fin de semana perfecto. ¡Gracias por compartir lo que te gusta hacer!' },
-      ] },
-    { label: 'Part 3: Agreeing and sharing favorites',
-      text: 'Practice agreeing with someone using "Me too" or "Me neither," and talking about your favorite food, music, or activity.',
-      script: [
-        { speaker: 'tutor', en: 'Let\'s practice agreeing with each other. I like coffee.', es: 'Practiquemos estar de acuerdo. Me gusta el café.' },
-        { speaker: 'student', en: 'Me too!', es: '¡A mí también!' },
-        { speaker: 'tutor', en: "Great! Now, I don't like spicy food at all.", es: 'Genial. Ahora, no me gusta nada la comida picante.' },
-        { speaker: 'student', en: 'Me neither.', es: 'A mí tampoco.' },
-        { speaker: 'tutor', en: 'What is your favorite food?', es: '¿Cuál es tu comida favorita?' },
-        { speaker: 'student', en: 'My favorite food is rice and beans.', es: 'Mi comida favorita es arroz con frijoles.' },
-        { speaker: 'tutor', en: 'I tried that dish and I like it a lot too. What about music, do you have a favorite?', es: 'Probé ese plato y a mí también me gusta mucho. ¿Y la música, tienes una favorita?' },
-        { speaker: 'student', en: "I love music, but I don't like it at all when it's too loud.", es: 'Me encanta la música, pero no me gusta para nada cuando está muy alta.' },
-        { speaker: 'tutor', en: 'That makes sense. Me too — I prefer it a little quieter.', es: 'Tiene sentido. A mí también — prefiero que esté un poco más baja.' },
-        { speaker: 'student', en: 'Me too!', es: '¡A mí también!' },
-        { speaker: 'tutor', en: 'It\'s nice when we share the same favorites. Great practice today!', es: 'Es lindo cuando compartimos los mismos favoritos. ¡Buena práctica hoy!' },
-      ] },
+    {
+      label: 'Part 1: Talking about food',
+      text: 'You are at a restaurant. Practice saying what food you like and don\'t like.',
+      wordBank: [
+        { en: 'coffee', es: 'café' },
+        { en: 'tea', es: 'té' },
+        { en: 'spicy food', es: 'comida picante' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Do you like spicy food?', es: '¿Te gusta la comida picante?' },
+          { speaker: 'student', en: "I don't like spicy food.", es: 'No me gusta la comida picante.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you like coffee?', es: '¿Te gusta el café?' },
+          { speaker: 'student', en: 'I like coffee.', es: 'Me gusta el café.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you prefer tea or coffee?', es: '¿Prefieres el té o el café?' },
+          { speaker: 'student', en: 'I prefer tea.', es: 'Prefiero el té.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 2: Talking about hobbies',
+      text: 'Practice talking about what you like to do in your free time.',
+      wordBank: [
+        { en: 'dancing', es: 'bailar' },
+        { en: 'music', es: 'la música' },
+        { en: 'soccer', es: 'el fútbol' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you like to do on weekends?', es: '¿Qué te gusta hacer los fines de semana?' },
+          { speaker: 'student', en: 'I love dancing.', es: 'Me encanta bailar.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you like music too?', es: '¿Te gusta la música también?' },
+          { speaker: 'student', en: 'I like it a lot.', es: 'Me gusta mucho.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 3: Agreeing and sharing favorites',
+      text: 'Practice agreeing with someone using "Me too" or "Me neither."',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'I like coffee.', es: 'Me gusta el café.' },
+          { speaker: 'student', en: 'Me too!', es: '¡A mí también!' },
+        ],
+        [
+          { speaker: 'tutor', en: "I don't like spicy food.", es: 'No me gusta la comida picante.' },
+          { speaker: 'student', en: 'Me neither.', es: 'A mí tampoco.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What is your favorite food?', es: '¿Cuál es tu comida favorita?' },
+          { speaker: 'student', en: 'Rice and beans.', es: 'Arroz con frijoles.' },
+        ],
+      ],
+    },
   ],
   practiceActivities: [
     {
       titleEn: 'Favorites Interview',
       titleEs: 'Entrevista de Favoritos',
-      instructionsEn: 'Student: ask the tutor about four favorites — food, music, season, and a free-time activity — using "What do you like?" or "Do you like...?" Tutor: answer, then swap roles.',
-      instructionsEs: 'Estudiante: pregúntale al tutor sobre cuatro favoritos — comida, música, estación del año, y una actividad de tiempo libre — usando "What do you like?" o "Do you like...?" Tutor: responde, luego cambien de papel.',
+      instructionsEn: 'Ask your tutor about their favorite food and season.',
+      instructionsEs: 'Pregúntale a tu tutor sobre su comida y estación favorita.',
+      wordBank: [
+        { en: 'summer', es: 'verano' },
+        { en: 'winter', es: 'invierno' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'What do you like to eat?', es: '¿Qué te gusta comer?' },
+          { speaker: 'tutor', en: 'I like pizza.', es: 'Me gusta la pizza.' },
+        ],
+        [
+          { speaker: 'student', en: 'Do you like summer?', es: '¿Te gusta el verano?' },
+          { speaker: 'tutor', en: 'I love summer.', es: 'Me encanta el verano.' },
+        ],
+      ],
     },
     {
       titleEn: 'Agree or Disagree',
       titleEs: 'De Acuerdo o en Desacuerdo',
-      instructionsEn: 'Tutor: make five true statements about likes and dislikes one at a time ("I like coffee," "I don\'t like cold weather"). Student: respond genuinely with "Me too," "Me neither," or a different opinion ("I don\'t. I prefer...").',
-      instructionsEs: 'Tutor: haz cinco afirmaciones verdaderas sobre gustos y disgustos, una a la vez ("I like coffee," "I don\'t like cold weather"). Estudiante: responde con sinceridad usando "Me too," "Me neither," o una opinión diferente ("I don\'t. I prefer...").',
+      instructionsEn: 'The tutor says something they like or don\'t like. Say if you agree.',
+      instructionsEs: 'El tutor dice algo que le gusta o no le gusta. Di si estás de acuerdo.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: "I don't like cold weather.", es: 'No me gusta el frío.' },
+          { speaker: 'student', en: 'Me neither.', es: 'A mí tampoco.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'I love weekends.', es: 'Me encantan los fines de semana.' },
+          { speaker: 'student', en: 'Me too!', es: '¡A mí también!' },
+        ],
+      ],
     },
     {
       titleEn: 'Describe Someone You Know',
       titleEs: 'Describe a Alguien que Conoces',
-      instructionsEn: 'Student: describe what a family member or friend likes and doesn\'t like, using third-person forms — "He likes...", "She doesn\'t like...", "She loves..."',
-      instructionsEs: 'Estudiante: describe lo que le gusta y no le gusta a un familiar o amigo, usando formas en tercera persona — "He likes...", "She doesn\'t like...", "She loves..."',
+      instructionsEn: 'Describe what a family member likes, using "he" or "she."',
+      instructionsEs: 'Describe lo que le gusta a un familiar, usando "he" o "she."',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What does your brother like?', es: '¿Qué le gusta a tu hermano?' },
+          { speaker: 'student', en: 'He likes soccer.', es: 'A él le gusta el fútbol.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What does your sister like?', es: '¿Qué le gusta a tu hermana?' },
+          { speaker: 'student', en: 'She likes music.', es: 'A ella le gusta la música.' },
+        ],
+      ],
     },
   ],
   worksheet: [

@@ -83,69 +83,128 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Talking about your family and belongings',
-      text: 'Practice talking about what you have — how many children, whether you have a car, and where you live.',
-      script: [
-        { speaker: 'tutor', en: 'Tell me about your family. Do you have children?', es: 'Cuéntame de tu familia. ¿Tienes hijos?' },
-        { speaker: 'student', en: 'Yes, I have two children.', es: 'Sí, tengo dos hijos.' },
-        { speaker: 'tutor', en: 'Nice! Do you have a car?', es: '¡Qué bien! ¿Tienes un carro?' },
-        { speaker: 'student', en: "No, I don't have a car right now.", es: 'No, no tengo carro ahora mismo.' },
-        { speaker: 'tutor', en: 'That is okay. Does your husband have a car?', es: 'Está bien. ¿Tu esposo tiene un carro?' },
-        { speaker: 'student', en: 'Yes, he has a car for work.', es: 'Sí, él tiene un carro para el trabajo.' },
-        { speaker: 'tutor', en: 'Good. And where do you live — do you have a small apartment?', es: 'Bien. ¿Y dónde vives? ¿Tienes un apartamento pequeño?' },
-        { speaker: 'student', en: 'We have a small apartment near the school.', es: 'Tenemos un apartamento pequeño cerca de la escuela.' },
-        { speaker: 'tutor', en: 'Wonderful. Do your neighbors have children too?', es: 'Maravilloso. ¿Tus vecinos también tienen hijos?' },
-        { speaker: 'student', en: 'Yes, they have two cars and three children.', es: 'Sí, ellos tienen dos carros y tres hijos.' },
-        { speaker: 'tutor', en: 'Great practice talking about your family and belongings!', es: '¡Buena práctica hablando de tu familia y tus pertenencias!' },
+      text: 'Talk about your family and what you have.',
+      wordBank: [
+        { en: 'two children', es: 'dos hijos' },
+        { en: 'a car', es: 'un carro' },
+        { en: 'a small apartment', es: 'un apartamento pequeño' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Do you have children?', es: '¿Tienes hijos?' },
+          { speaker: 'student', en: 'Yes, I have two children.', es: 'Sí, tengo dos hijos.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have a car?', es: '¿Tienes un carro?' },
+          { speaker: 'student', en: "No, I don't have a car.", es: 'No, no tengo carro.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Does your husband have a car?', es: '¿Tu esposo tiene un carro?' },
+          { speaker: 'student', en: 'Yes, he has a car for work.', es: 'Sí, él tiene un carro para el trabajo.' },
+        ],
       ] },
-    { label: 'Part 2: At the doctor\'s office',
-      text: 'Practice telling a receptionist you have an appointment and describing that you have a headache or another common symptom.',
-      script: [
-        { speaker: 'tutor', en: 'Good morning! Welcome to the clinic. How can I help you?', es: '¡Buenos días! Bienvenido a la clínica. ¿Cómo puedo ayudarle?' },
-        { speaker: 'student', en: 'Good morning. I have an appointment at 3 o\'clock.', es: 'Buenos días. Tengo una cita a las 3.' },
-        { speaker: 'tutor', en: 'What is your name, please?', es: '¿Cuál es su nombre, por favor?' },
-        { speaker: 'student', en: 'My name is Maria Lopez.', es: 'Mi nombre es María López.' },
-        { speaker: 'tutor', en: 'Thank you. What is the problem today? Do you have a headache?', es: '¿Cuál es el problema hoy? ¿Tiene dolor de cabeza?' },
-        { speaker: 'student', en: 'Yes, I have a headache since this morning.', es: 'Sí, tengo dolor de cabeza desde esta mañana.' },
-        { speaker: 'tutor', en: 'I understand. Does your daughter have an appointment today too?', es: 'Entiendo. ¿Su hija también tiene una cita hoy?' },
-        { speaker: 'student', en: "No, she doesn't have an appointment. Just me.", es: 'No, ella no tiene cita. Solo yo.' },
-        { speaker: 'tutor', en: 'Okay. Do you have your insurance card with you?', es: '¿Tiene su tarjeta de seguro con usted?' },
-        { speaker: 'student', en: 'Yes, I have it here.', es: 'Sí, la tengo aquí.' },
-        { speaker: 'tutor', en: 'Perfect. Please have a seat — the doctor will see you soon.', es: 'Perfecto. Por favor, tome asiento; el doctor la atenderá pronto.' },
+    { label: "Part 2: At the doctor's office",
+      text: 'Tell the receptionist you have an appointment.',
+      wordBank: [
+        { en: "3 o'clock", es: 'las 3' },
+        { en: "10 o'clock", es: 'las 10' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'How can I help you?', es: '¿Cómo puedo ayudarle?' },
+          { speaker: 'student', en: "I have an appointment at 3 o'clock.", es: 'Tengo una cita a las 3.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What is the problem today?', es: '¿Cuál es el problema hoy?' },
+          { speaker: 'student', en: 'I have a headache.', es: 'Tengo dolor de cabeza.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have your insurance card?', es: '¿Tiene su tarjeta de seguro?' },
+          { speaker: 'student', en: 'Yes, I have it here.', es: 'Sí, la tengo aquí.' },
+        ],
       ] },
     { label: 'Part 3: At work or in a store',
-      text: 'Practice saying you have a question, telling someone you have a job, or explaining you don\'t have money with you right now.',
-      script: [
-        { speaker: 'tutor', en: 'Excuse me, can I help you find something?', es: 'Disculpe, ¿le puedo ayudar a encontrar algo?' },
-        { speaker: 'student', en: 'Yes, I have a question.', es: 'Sí, tengo una pregunta.' },
-        { speaker: 'tutor', en: 'Sure, go ahead.', es: 'Claro, adelante.' },
-        { speaker: 'student', en: 'Do you have milk on sale this week?', es: '¿Tienen leche en oferta esta semana?' },
-        { speaker: 'tutor', en: "Yes, we have milk on sale. It's near the front.", es: 'Sí, tenemos leche en oferta. Está cerca de la entrada.' },
-        { speaker: 'student', en: "Thank you. Oh no, I don't have any money with me today.", es: 'Gracias. Ay no, no tengo dinero conmigo hoy.' },
-        { speaker: 'tutor', en: 'That is alright, you can come back tomorrow. Do you have a job nearby?', es: 'Está bien, puede regresar mañana. ¿Tiene un trabajo cerca?' },
-        { speaker: 'student', en: 'Yes, I have a job in a restaurant close to here.', es: 'Sí, tengo un trabajo en un restaurante cerca de aquí.' },
-        { speaker: 'tutor', en: 'That is great! Maybe you can shop after work tomorrow.', es: '¡Qué bien! Tal vez pueda comprar después del trabajo mañana.' },
-        { speaker: 'student', en: "Yes, I'll come back tomorrow with money. Thank you!", es: 'Sí, regresaré mañana con dinero. ¡Gracias!' },
-        { speaker: 'tutor', en: 'Perfect! You practiced asking questions and talking about money and work.', es: 'Perfecto! Practicaste hacer preguntas y hablar sobre el dinero y el trabajo.' },
+      text: 'Ask a question at the store and talk about your job.',
+      wordBank: [
+        { en: 'milk', es: 'leche' },
+        { en: 'bread', es: 'pan' },
+        { en: 'eggs', es: 'huevos' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Can I help you?', es: '¿Le puedo ayudar?' },
+          { speaker: 'student', en: 'Yes, do you have milk on sale?', es: 'Sí, ¿tienen leche en oferta?' },
+        ],
+        [
+          { speaker: 'tutor', en: "Yes, it's near the front.", es: 'Sí, está cerca de la entrada.' },
+          { speaker: 'student', en: 'Thank you. I have a job nearby.', es: 'Gracias. Tengo un trabajo cerca.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have money with you today?', es: '¿Tiene dinero con usted hoy?' },
+          { speaker: 'student', en: "No, I don't have any money today.", es: 'No, no tengo dinero hoy.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
       titleEn: 'Family Inventory',
       titleEs: 'Inventario Familiar',
-      instructionsEn: 'Student: describe what three family members have — a car, a job, an apartment, children — using "has" for each person. Tutor: check that "has" (not "have") is used correctly every time.',
-      instructionsEs: 'Estudiante: describe lo que tienen tres familiares — un carro, un trabajo, un apartamento, hijos — usando "has" para cada persona. Tutor: revisa que se use "has" (no "have") correctamente cada vez.',
+      instructionsEn: 'Describe what a family member has.',
+      instructionsEs: 'Describe lo que tiene un familiar.',
+      wordBank: [
+        { en: 'a job', es: 'un trabajo' },
+        { en: 'a phone', es: 'un teléfono' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Does your sister have a job?', es: '¿Tu hermana tiene un trabajo?' },
+          { speaker: 'student', en: 'Yes, she has a job.', es: 'Sí, ella tiene un trabajo.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Does she have children?', es: '¿Ella tiene hijos?' },
+          { speaker: 'student', en: 'Yes, she has three children.', es: 'Sí, ella tiene tres hijos.' },
+        ],
+      ],
     },
     {
       titleEn: '20 Questions: Do You Have...?',
       titleEs: '20 Preguntas: Do You Have...?',
-      instructionsEn: 'Take turns asking "Do you have...?" or "Does he/she have...?" about real everyday items (a phone, a car, children, a job). Answer honestly with "I have..." or "I don\'t have..."',
-      instructionsEs: 'Túrnense para preguntar "Do you have...?" o "Does he/she have...?" sobre objetos cotidianos reales (un teléfono, un carro, hijos, un trabajo). Respondan con honestidad usando "I have..." o "I don\'t have..."',
+      instructionsEn: 'Ask your tutor if they have something.',
+      instructionsEs: 'Pregúntale a tu tutor si tiene algo.',
+      wordBank: [
+        { en: 'a phone', es: 'un teléfono' },
+        { en: 'a pen', es: 'un lapicero' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Do you have a phone?', es: '¿Tienes un teléfono?' },
+          { speaker: 'tutor', en: 'Yes, I have a phone.', es: 'Sí, tengo un teléfono.' },
+        ],
+        [
+          { speaker: 'student', en: 'Do you have a pen?', es: '¿Tienes un lapicero?' },
+          { speaker: 'tutor', en: "No, I don't have a pen.", es: 'No, no tengo un lapicero.' },
+        ],
+      ],
     },
     {
       titleEn: 'At the Front Desk',
       titleEs: 'En la Recepción',
-      instructionsEn: 'Tutor: play a receptionist at a new office (not a doctor\'s office this time — try a school or a bank). Student: explain you have an appointment, but you don\'t have a document they ask for, and answer their follow-up questions.',
-      instructionsEs: 'Tutor: haz de recepcionista en una oficina nueva (no un consultorio médico esta vez — prueba una escuela o un banco). Estudiante: explica que tienes una cita, pero que no tienes un documento que te piden, y responde sus preguntas de seguimiento.',
+      instructionsEn: 'Explain you have an appointment but not a document.',
+      instructionsEs: 'Explica que tienes una cita pero no tienes un documento.',
+      wordBank: [
+        { en: 'my ID', es: 'mi identificación' },
+        { en: 'the form', es: 'el formulario' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Do you have an appointment?', es: '¿Tiene una cita?' },
+          { speaker: 'student', en: 'Yes, I have an appointment.', es: 'Sí, tengo una cita.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have your ID?', es: '¿Tiene su identificación?' },
+          { speaker: 'student', en: "No, I don't have my ID today.", es: 'No, no tengo mi identificación hoy.' },
+        ],
+      ],
     },
   ],
   worksheet: [

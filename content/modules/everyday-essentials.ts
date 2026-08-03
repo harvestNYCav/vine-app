@@ -79,64 +79,117 @@ const module: Module = {
       answer: 'Can I use your phone?', options: ['Can I use your phone?', 'I need help', 'Where is the bathroom?', "I'm lost"] },
   ],
   teachingScenarios: [
-    { label: 'Part 1: Filling out a form',
-      text: 'You are filling out a form at a community office and need to give your phone number, address, and ID.',
-      script: [
-        { speaker: 'tutor', en: 'Hello! I can help you fill out this form. First, what is your phone number?', es: '¡Hola! Puedo ayudarte a llenar este formulario. Primero, ¿cuál es tu número de teléfono?' },
-        { speaker: 'student', en: 'My phone number is 555-0123.', es: 'Mi número de teléfono es 555-0123.' },
-        { speaker: 'tutor', en: 'Great. Now, what is your address?', es: 'Muy bien. Ahora, ¿cuál es tu dirección?' },
-        { speaker: 'student', en: 'My address is 45 Elm Street.', es: 'Mi dirección es 45 Elm Street.' },
-        { speaker: 'tutor', en: 'Thank you. Do you have an ID?', es: 'Gracias. ¿Tiene una identificación?' },
-        { speaker: 'student', en: 'Yes, here is my ID.', es: 'Sí, aquí está mi identificación.' },
-        { speaker: 'tutor', en: 'Perfect, let me check it.', es: 'Perfecto, déjeme revisarla.' },
-        { speaker: 'student', en: 'Is that everything you need?', es: '¿Eso es todo lo que necesita?' },
-        { speaker: 'tutor', en: "Yes, that's everything. Thank you for your patience!", es: 'Sí, eso es todo. ¡Gracias por su paciencia!' },
-      ] },
-    { label: 'Part 2: Asking for help at a public place',
-      text: 'You are at a library or community center and need to ask where the bathroom is and what the wifi password is.',
-      script: [
-        { speaker: 'tutor', en: 'Hi, welcome to the library. How can I help you?', es: 'Hola, bienvenido a la biblioteca. ¿Cómo puedo ayudarte?' },
-        { speaker: 'student', en: 'Excuse me, where is the bathroom?', es: 'Disculpe, ¿dónde está el baño?' },
-        { speaker: 'tutor', en: "It's down the hall, on the right.", es: 'Está al final del pasillo, a la derecha.' },
-        { speaker: 'student', en: 'Thank you. Also, is there free wifi here?', es: 'Gracias. También, ¿hay wifi gratis aquí?' },
-        { speaker: 'tutor', en: 'Yes, we have free wifi.', es: 'Sí, tenemos wifi gratis.' },
-        { speaker: 'student', en: 'What is the wifi password?', es: '¿Cuál es la contraseña del wifi?' },
-        { speaker: 'tutor', en: 'The password is on the card by the door.', es: 'La contraseña está en la tarjeta junto a la puerta.' },
-        { speaker: 'student', en: 'Thank you so much for your help.', es: 'Muchas gracias por su ayuda.' },
-        { speaker: 'tutor', en: "You're welcome. Enjoy your visit!", es: 'De nada. ¡Disfrute su visita!' },
-      ] },
-    { label: 'Part 3: Asking a stranger for help',
-      text: 'You lost your keys or wallet, or you are lost on the street. Practice asking a stranger for help and explaining the problem.',
-      script: [
-        { speaker: 'tutor', en: 'Excuse me, are you okay? You look worried.', es: 'Disculpe, ¿está bien? Se ve preocupado.' },
-        { speaker: 'student', en: 'Excuse me, I need help.', es: 'Disculpe, necesito ayuda.' },
-        { speaker: 'tutor', en: 'Of course, what happened?', es: 'Claro, ¿qué pasó?' },
-        { speaker: 'student', en: "I'm lost. Can you help me?", es: 'Estoy perdido. ¿Me puede ayudar?' },
-        { speaker: 'tutor', en: 'I can try. Where are you trying to go?', es: 'Puedo intentar. ¿A dónde intenta ir?' },
-        { speaker: 'student', en: 'I also lost my wallet. Can I use your phone?', es: 'También perdí mi cartera. ¿Puedo usar tu teléfono?' },
-        { speaker: 'tutor', en: 'Yes, of course, here you go.', es: 'Sí, claro, aquí tienes.' },
-        { speaker: 'student', en: 'Thank you. This is an emergency for me.', es: 'Gracias. Esto es una emergencia para mí.' },
-        { speaker: 'tutor', en: "I understand. Let's find help together. You'll be okay.", es: 'Entiendo. Busquemos ayuda juntos. Vas a estar bien.' },
-      ] },
+    {
+      label: 'Part 1: Filling out a form',
+      text: 'You are filling out a form at a community office.',
+      wordBank: [
+        { en: '555-0123', es: '(tu número)' },
+        { en: '45 Elm Street', es: '(tu dirección)' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What is your phone number?', es: '¿Cuál es tu número de teléfono?' },
+          { speaker: 'student', en: '555-0123.', es: '555-0123.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What is your address?', es: '¿Cuál es tu dirección?' },
+          { speaker: 'student', en: '45 Elm Street.', es: '45 Elm Street.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have an ID?', es: '¿Tiene una identificación?' },
+          { speaker: 'student', en: 'Yes, here it is.', es: 'Sí, aquí está.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 2: Asking for help at a public place',
+      text: 'You are at a library and need to ask where the bathroom is and the wifi password.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Welcome to the library. How can I help?', es: 'Bienvenido a la biblioteca. ¿Cómo puedo ayudarte?' },
+          { speaker: 'student', en: 'Excuse me, where is the bathroom?', es: 'Disculpe, ¿dónde está el baño?' },
+        ],
+        [
+          { speaker: 'tutor', en: "It's down the hall.", es: 'Está al final del pasillo.' },
+          { speaker: 'student', en: 'What is the wifi password?', es: '¿Cuál es la contraseña del wifi?' },
+        ],
+        [
+          { speaker: 'tutor', en: "It's on the card by the door.", es: 'Está en la tarjeta junto a la puerta.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 3: Asking a stranger for help',
+      text: 'You are lost on the street. Practice asking a stranger for help.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Excuse me, are you okay?', es: 'Disculpe, ¿está bien?' },
+          { speaker: 'student', en: 'Excuse me, I need help.', es: 'Disculpe, necesito ayuda.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Of course, what happened?', es: 'Claro, ¿qué pasó?' },
+          { speaker: 'student', en: "I'm lost. Can you help me?", es: 'Estoy perdido. ¿Me puede ayudar?' },
+        ],
+        [
+          { speaker: 'tutor', en: "I'll try. What do you need?", es: 'Voy a intentar. ¿Qué necesitas?' },
+          { speaker: 'student', en: 'Can I use your phone?', es: '¿Puedo usar tu teléfono?' },
+        ],
+      ],
+    },
   ],
   practiceActivities: [
     {
       titleEn: 'Fill Out My Form',
       titleEs: 'Llena Mi Formulario',
-      instructionsEn: 'Tutor: play an office worker filling out a form, asking for phone number, address, and ID one at a time. Student: answer each question in a full sentence, using real or practice information.',
-      instructionsEs: 'Tutor: haz de trabajador de oficina llenando un formulario, pidiendo número de teléfono, dirección e identificación uno a la vez. Estudiante: responde cada pregunta con una oración completa, usando información real o de práctica.',
+      instructionsEn: 'The tutor plays an office worker asking for your information.',
+      instructionsEs: 'El tutor hace de trabajador de oficina y pide tu información.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What is your name?', es: '¿Cómo te llamas?' },
+          { speaker: 'student', en: 'My name is...', es: 'Me llamo...' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have your ID?', es: '¿Tienes tu identificación?' },
+          { speaker: 'student', en: 'Yes, here it is.', es: 'Sí, aquí está.' },
+        ],
+      ],
     },
     {
       titleEn: 'Ask a Stranger for Help',
       titleEs: 'Pide Ayuda a un Desconocido',
-      instructionsEn: 'Tutor: describe three quick situations one at a time — you lost your wallet, you need the wifi password, you are lost on the street. Student: ask the right question for each situation.',
-      instructionsEs: 'Tutor: describe tres situaciones rápidas una a la vez — perdiste tu cartera, necesitas la contraseña del wifi, estás perdido en la calle. Estudiante: haz la pregunta correcta para cada situación.',
+      instructionsEn: 'The tutor describes a situation. Ask the right question.',
+      instructionsEs: 'El tutor describe una situación. Haz la pregunta correcta.',
+      wordBank: [
+        { en: 'my keys', es: 'mis llaves' },
+        { en: 'my wallet', es: 'mi cartera' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'You lost your keys.', es: 'Perdiste tus llaves.' },
+          { speaker: 'student', en: 'I lost my keys. Can you help me?', es: 'Perdí mis llaves. ¿Me puede ayudar?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'You need the wifi password.', es: 'Necesitas la contraseña del wifi.' },
+          { speaker: 'student', en: 'What is the wifi password?', es: '¿Cuál es la contraseña del wifi?' },
+        ],
+      ],
     },
     {
       titleEn: 'Emergency Practice',
       titleEs: 'Práctica de Emergencia',
-      instructionsEn: 'Tutor: describe a minor emergency (locked out of your apartment, lost your phone). Student: explain the situation and ask for exactly what you need, using today\'s vocabulary.',
-      instructionsEs: 'Tutor: describe una emergencia menor (te quedaste afuera de tu apartamento, perdiste tu teléfono). Estudiante: explica la situación y pide exactamente lo que necesitas, usando el vocabulario de hoy.',
+      instructionsEn: 'The tutor describes a minor emergency. Explain what you need.',
+      instructionsEs: 'El tutor describe una emergencia menor. Explica lo que necesitas.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'You are locked out of your apartment.', es: 'Te quedaste afuera de tu apartamento.' },
+          { speaker: 'student', en: 'This is an emergency. I need help.', es: 'Esto es una emergencia. Necesito ayuda.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'You lost your phone.', es: 'Perdiste tu teléfono.' },
+          { speaker: 'student', en: 'Can I use your phone?', es: '¿Puedo usar tu teléfono?' },
+        ],
+      ],
     },
   ],
   worksheet: [

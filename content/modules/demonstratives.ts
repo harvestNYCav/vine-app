@@ -81,66 +81,121 @@ const module: Module = {
       answer: 'this', options: ['this', 'that', 'these', 'those'] },
   ],
   teachingScenarios: [
-    { label: 'Part 1: Pointing out things at home',
-      text: 'Practice pointing out things near you at home — "This is my house," "These are my keys" — using this/these.',
-      script: [
-        { speaker: 'tutor', en: "Let's practice pointing at things in your home. What is this?", es: 'Practiquemos señalando cosas en tu casa. ¿Qué es esto?' },
-        { speaker: 'student', en: 'This is my house.', es: 'Esta es mi casa.' },
-        { speaker: 'tutor', en: 'Nice! And what about these things on the table?', es: '¡Bien! ¿Y qué hay de estas cosas en la mesa?' },
-        { speaker: 'student', en: 'These are my keys.', es: 'Estas son mis llaves.' },
-        { speaker: 'tutor', en: 'Good. Are your keys here or over there?', es: '¿Tus llaves están aquí o allá?' },
-        { speaker: 'student', en: 'My keys are here, on the table.', es: 'Mis llaves están aquí, en la mesa.' },
-        { speaker: 'tutor', en: 'Perfect. Now point to something across the room and tell me what it is.', es: 'Perfecto. Ahora señala algo al otro lado del cuarto y dime qué es.' },
-        { speaker: 'student', en: "That is my car... wait, that's a photo of my car!", es: 'Eso es mi carro... espera, ¡esa es una foto de mi carro!' },
-        { speaker: 'tutor', en: 'Good catch! This and these are for things nearby. That and those are for things far away.', es: '¡Buena corrección! This y these son para cosas cercanas. That y those son para cosas lejanas.' },
-        { speaker: 'student', en: 'This is my house, and that is my car in the photo.', es: 'Esta es mi casa, y ese es mi carro en la foto.' },
-        { speaker: 'tutor', en: 'Excellent! Now you know when to use this/these for near things and that/those for far things.', es: '¡Excelente! Ahora sabes cuándo usar this/these para cosas cercanas y that/those para cosas lejanas.' },
-      ] },
-    { label: 'Part 2: Comparing items in a store',
-      text: 'Practice comparing an item close to you with one far away on a shelf, like "I like this one" versus "I like that one."',
-      script: [
-        { speaker: 'tutor', en: 'Imagine we are in a shoe store. There are two pairs of shoes — one close to you, one far away on a shelf. Which do you like?', es: 'Imagina que estamos en una zapatería. Hay dos pares de zapatos, uno cerca de ti y otro lejos en un estante. ¿Cuál te gusta?' },
-        { speaker: 'student', en: 'I like this one.', es: 'Me gusta este.' },
-        { speaker: 'tutor', en: 'Why do you like this one?', es: '¿Por qué te gusta este?' },
-        { speaker: 'student', en: 'These are my favorite color.', es: 'Estos son de mi color favorito.' },
-        { speaker: 'tutor', en: 'Good sentence! Now look at the shoes over there. Do you like those?', es: '¡Buena oración! Ahora mira los zapatos allá. ¿Te gustan esos?' },
-        { speaker: 'student', en: 'I like that one too, but this one is cheaper.', es: 'También me gusta ese, pero este es más barato.' },
-        { speaker: 'tutor', en: 'Great comparison. So, this one here or that one there — which will you buy?', es: 'Buena comparación. Entonces, ¿este de aquí o ese de allá? ¿Cuál vas a comprar?' },
-        { speaker: 'student', en: 'I like this one. Those are nice, but these are better for me.', es: 'Me gusta este. Esos son bonitos, pero estos son mejores para mí.' },
-        { speaker: 'tutor', en: 'Perfect! You compared items near and far very well.', es: '¡Perfecto! Comparaste artículos cercanos y lejanos muy bien.' },
-      ] },
-    { label: 'Part 3: Asking about unfamiliar things',
-      text: 'You see something you don\'t recognize at the pharmacy or grocery store. Practice asking "What is this?" and "Is this yours?"',
-      script: [
-        { speaker: 'tutor', en: "Let's practice at the pharmacy. You see something on the shelf you don't recognize. What do you ask?", es: 'Practiquemos en la farmacia. Ves algo en el estante que no reconoces. ¿Qué preguntas?' },
-        { speaker: 'student', en: 'What is this?', es: '¿Qué es esto?' },
-        { speaker: 'tutor', en: "Good question! Now imagine you found something on the floor that isn't yours.", es: '¡Buena pregunta! Ahora imagina que encontraste algo en el piso que no es tuyo.' },
-        { speaker: 'student', en: 'Excuse me, is this yours?', es: 'Disculpe, ¿esto es suyo?' },
-        { speaker: 'tutor', en: 'Perfect. What if the pharmacist says yes, it is hers? What do you say?', es: 'Perfecto. ¿Y si la farmacéutica dice que sí, que es suyo? ¿Qué dices?' },
-        { speaker: 'student', en: 'Oh, okay. Then what is that, over there?', es: 'Ah, bueno. Entonces, ¿qué es eso, allá?' },
-        { speaker: 'tutor', en: 'That is medicine for a headache.', es: 'Eso es medicina para el dolor de cabeza.' },
-        { speaker: 'student', en: 'Thank you. I like this one better than that one.', es: 'Gracias. Me gusta este más que ese.' },
-        { speaker: 'tutor', en: 'Great! You asked about things you do not recognize very naturally.', es: '¡Genial! Preguntaste sobre cosas que no reconoces de forma muy natural.' },
-      ] },
+    {
+      label: 'Part 1: Pointing out things at home',
+      text: 'Practice pointing out things near you at home.',
+      wordBank: [
+        { en: 'keys', es: 'llaves' },
+        { en: 'phone', es: 'teléfono' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What is this?', es: '¿Qué es esto?' },
+          { speaker: 'student', en: 'This is my house.', es: 'Esta es mi casa.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'And these things on the table?', es: '¿Y estas cosas en la mesa?' },
+          { speaker: 'student', en: 'These are my keys.', es: 'Estas son mis llaves.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Are they here or over there?', es: '¿Están aquí o allá?' },
+          { speaker: 'student', en: 'Here, on the table.', es: 'Aquí, en la mesa.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 2: Comparing items in a store',
+      text: 'Practice comparing an item close to you with one far away on a shelf.',
+      wordBank: [
+        { en: 'cheaper', es: 'más barato' },
+        { en: 'my favorite color', es: 'mi color favorito' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Which shoes do you like?', es: '¿Cuáles zapatos te gustan?' },
+          { speaker: 'student', en: 'I like this one.', es: 'Me gusta este.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What about those, over there?', es: '¿Y esos, allá?' },
+          { speaker: 'student', en: 'I like that one too.', es: 'También me gusta ese.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'So which will you buy?', es: '¿Entonces cuál vas a comprar?' },
+          { speaker: 'student', en: 'This one. It is cheaper.', es: 'Este. Es más barato.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 3: Asking about unfamiliar things',
+      text: 'You see something you don\'t recognize at the pharmacy. Practice asking what it is and whether something is yours.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'You see something new on the shelf. What do you ask?', es: 'Ves algo nuevo en el estante. ¿Qué preguntas?' },
+          { speaker: 'student', en: 'What is this?', es: '¿Qué es esto?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'That is medicine for a headache.', es: 'Eso es medicina para el dolor de cabeza.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'You find something on the floor. What do you ask?', es: 'Encuentras algo en el piso. ¿Qué preguntas?' },
+          { speaker: 'student', en: 'Excuse me, is this yours?', es: 'Disculpe, ¿esto es suyo?' },
+        ],
+      ],
+    },
   ],
   practiceActivities: [
     {
       titleEn: 'Point and Say',
       titleEs: 'Señala y Di',
-      instructionsEn: 'Student: point to four real objects nearby and say "This is my..." or "These are my...", then point to two objects farther away and say "That is..." or "Those are..."',
-      instructionsEs: 'Estudiante: señala cuatro objetos reales cercanos y di "This is my..." o "These are my...", luego señala dos objetos más lejanos y di "That is..." o "Those are..."',
+      instructionsEn: 'Point to a real object near you and say what it is.',
+      instructionsEs: 'Señala un objeto real cerca de ti y di qué es.',
+      wordBank: [
+        { en: 'my keys', es: 'mis llaves' },
+        { en: 'my shoes', es: 'mis zapatos' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Point to something near you. What is it?', es: 'Señala algo cerca de ti. ¿Qué es?' },
+          { speaker: 'student', en: 'This is my phone.', es: 'Este es mi teléfono.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Now point to something far away.', es: 'Ahora señala algo lejos.' },
+          { speaker: 'student', en: 'That is my bag.', es: 'Esa es mi bolsa.' },
+        ],
+      ],
     },
     {
       titleEn: 'Lost and Found',
       titleEs: 'Objetos Perdidos',
-      instructionsEn: 'Tutor: hold up or point to several objects one at a time and ask "Is this yours?" Student: answer truthfully, then ask the tutor the same question about an object of theirs.',
-      instructionsEs: 'Tutor: sostén o señala varios objetos uno a la vez y pregunta "Is this yours?" Estudiante: responde con la verdad, y luego hazle al tutor la misma pregunta sobre un objeto suyo.',
+      instructionsEn: 'A tutor holds up an object. Say if it is yours.',
+      instructionsEs: 'El tutor sostiene un objeto. Di si es tuyo.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Is this yours?', es: '¿Esto es tuyo?' },
+          { speaker: 'student', en: 'Yes, this is mine.', es: 'Sí, esto es mío.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Is this yours?', es: '¿Esto es tuyo?' },
+          { speaker: 'student', en: 'No, that is not mine.', es: 'No, eso no es mío.' },
+        ],
+      ],
     },
     {
       titleEn: 'This One or That One?',
       titleEs: '¿Este o Ese?',
-      instructionsEn: 'Tutor: describe two similar items, one nearby and one across the room (two shirts, two chairs). Student: say which one you like using "I like this one" or "I like that one," and explain why in one more sentence.',
-      instructionsEs: 'Tutor: describe dos artículos similares, uno cerca y otro al otro lado del salón (dos camisas, dos sillas). Estudiante: di cuál te gusta usando "I like this one" o "I like that one," y explica por qué en una oración más.',
+      instructionsEn: 'Compare two similar items and say which one you like.',
+      instructionsEs: 'Compara dos artículos similares y di cuál te gusta.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Two shirts. One is near, one is far. Which do you like?', es: 'Dos camisas. Una está cerca, otra lejos. ¿Cuál te gusta?' },
+          { speaker: 'student', en: 'I like this one.', es: 'Me gusta esta.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Why do you like it?', es: '¿Por qué te gusta?' },
+          { speaker: 'student', en: 'These are my favorite color.', es: 'Estas son de mi color favorito.' },
+        ],
+      ],
     },
   ],
   worksheet: [

@@ -86,69 +86,127 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Introducing who you are',
-      text: 'Practice introducing yourself using "I am" — your name, where you are from, and your job — as if meeting someone new.',
-      script: [
-        { speaker: 'tutor', en: "Hi! I don't think we've met. I'm Mrs. Johnson.", es: 'Hola! Creo que no nos conocemos. Soy la Sra. Johnson.' },
-        { speaker: 'student', en: 'Hi, I am Maria.', es: 'Hola, yo soy María.' },
-        { speaker: 'tutor', en: 'Nice to meet you, Maria! Are you from around here?', es: 'Mucho gusto, María! ¿Eres de por aquí?' },
-        { speaker: 'student', en: 'I am from Honduras.', es: 'Soy de Honduras.' },
-        { speaker: 'tutor', en: 'Oh wonderful! And what do you do? Are you a student?', es: '¡Qué bien! ¿Y a qué te dedicas? ¿Eres estudiante?' },
-        { speaker: 'student', en: 'Yes, I am a student. I am also a mother.', es: 'Sí, soy estudiante. También soy madre.' },
-        { speaker: 'tutor', en: 'That is great. Is your husband from Honduras too?', es: 'Qué bueno. ¿Tu esposo también es de Honduras?' },
-        { speaker: 'student', en: 'No, he is from Guatemala.', es: 'No, él es de Guatemala.' },
-        { speaker: 'tutor', en: 'Wonderful. Well, we are happy to have you both here.', es: 'Maravilloso. Bueno, estamos felices de tenerlos a ambos aquí.' },
-        { speaker: 'student', en: 'Thank you! I am happy to be here too.', es: '¡Gracias! Yo también estoy feliz de estar aquí.' },
-        { speaker: 'tutor', en: 'Wonderful! You introduced yourself perfectly using "I am" and "is".', es: '¡Maravilloso! Te presentaste perfectamente usando "I am" e "is".' },
+      text: 'Meet someone new and introduce yourself.',
+      wordBank: [
+        { en: 'Maria', es: '(tu nombre)' },
+        { en: 'Honduras', es: 'Honduras' },
+        { en: 'a student', es: 'estudiante' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: "Hi! I'm Mrs. Johnson.", es: '¡Hola! Soy la Sra. Johnson.' },
+          { speaker: 'student', en: 'Hi, I am Maria.', es: 'Hola, yo soy María.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Are you from around here?', es: '¿Eres de por aquí?' },
+          { speaker: 'student', en: 'I am from Honduras.', es: 'Soy de Honduras.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What do you do?', es: '¿A qué te dedicas?' },
+          { speaker: 'student', en: 'I am a student.', es: 'Soy estudiante.' },
+        ],
       ] },
     { label: 'Part 2: Talking about how you feel',
-      text: 'Practice describing how you feel (happy, tired, sick) and asking someone else how they are feeling.',
-      script: [
-        { speaker: 'tutor', en: 'Hi Maria! How are you today? Are you okay?', es: '¡Hola María! ¿Cómo estás hoy? ¿Estás bien?' },
-        { speaker: 'student', en: 'I am tired. I worked all day.', es: 'Estoy cansada. Trabajé todo el día.' },
-        { speaker: 'tutor', en: 'I am sorry to hear that. Is your husband tired too?', es: 'Lo siento. ¿Tu esposo también está cansado?' },
-        { speaker: 'student', en: 'No, he is not tired. He is happy today.', es: 'No, él no está cansado. Él está feliz hoy.' },
-        { speaker: 'tutor', en: 'That is good! And the children — are they okay?', es: '¡Qué bueno! Y los niños, ¿están bien?' },
-        { speaker: 'student', en: 'They are okay, but they are tired too.', es: 'Ellos están bien, pero también están cansados.' },
-        { speaker: 'tutor', en: 'I understand. I am not tired today — I am happy!', es: 'Entiendo. Yo no estoy cansada hoy... ¡estoy feliz!' },
-        { speaker: 'student', en: 'Are you happy because it is Friday?', es: '¿Estás feliz porque es viernes?' },
-        { speaker: 'tutor', en: 'Yes! We are almost done for the week.', es: '¡Sí! Ya casi terminamos la semana.' },
-        { speaker: 'student', en: 'I am happy about that too!', es: '¡Yo también estoy feliz por eso!' },
-        { speaker: 'tutor', en: 'Wonderful! You did a great job talking about your feelings today.', es: '¡Maravilloso! Hiciste un gran trabajo hablando de tus sentimientos hoy.' },
+      text: 'Talk about how you feel today.',
+      wordBank: [
+        { en: 'tired', es: 'cansado/a' },
+        { en: 'happy', es: 'feliz' },
+        { en: 'sick', es: 'enfermo/a' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'How are you today?', es: '¿Cómo estás hoy?' },
+          { speaker: 'student', en: 'I am tired.', es: 'Estoy cansado/a.' },
+        ],
+        [
+          { speaker: 'tutor', en: "I'm sorry. Is your family okay?", es: 'Lo siento. ¿Está bien tu familia?' },
+          { speaker: 'student', en: 'Yes, they are okay.', es: 'Sí, están bien.' },
+        ],
+        [
+          { speaker: 'tutor', en: "That's good. I am happy today!", es: 'Qué bueno. ¡Yo estoy feliz hoy!' },
+          { speaker: 'student', en: 'I am happy too.', es: 'Yo también estoy feliz.' },
+        ],
       ] },
     { label: 'Part 3: Talking about the weather and everyday facts',
-      text: 'Practice using "It is..." for weather and "There is / there are..." to describe things around you, like a store on your street.',
-      script: [
-        { speaker: 'tutor', en: "Let's talk about the weather. It is cold today, right?", es: 'Hablemos del clima. Está frío hoy, ¿verdad?' },
-        { speaker: 'student', en: 'Yes, it is very cold today.', es: 'Sí, está muy frío hoy.' },
-        { speaker: 'tutor', en: 'Good! Now, tell me about your street. Is there a store nearby?', es: '¡Bien! Ahora, cuéntame sobre tu calle. ¿Hay una tienda cerca?' },
-        { speaker: 'student', en: 'There is a bank on this street.', es: 'Hay un banco en esta calle.' },
-        { speaker: 'tutor', en: 'Is there a school too?', es: '¿Hay una escuela también?' },
-        { speaker: 'student', en: 'Yes, there are two schools near my house.', es: 'Sí, hay dos escuelas cerca de mi casa.' },
-        { speaker: 'tutor', en: 'How many children are in your family?', es: '¿Cuántos niños hay en tu familia?' },
-        { speaker: 'student', en: 'There are two children in my family.', es: 'Hay dos niños en mi familia.' },
-        { speaker: 'tutor', en: 'Great sentence! And is it sunny or rainy today?', es: '¡Buena oración! ¿Y está soleado o lluvioso hoy?' },
-        { speaker: 'student', en: "It is sunny, but it isn't warm.", es: 'Está soleado, pero no está cálido.' },
-        { speaker: 'tutor', en: 'Perfect. You are using "it is" and "there is / there are" very well.', es: 'Perfecto. Estás usando "it is" y "there is / there are" muy bien.' },
+      text: 'Talk about the weather and what is on your street.',
+      wordBank: [
+        { en: 'cold', es: 'frío' },
+        { en: 'sunny', es: 'soleado' },
+        { en: 'rainy', es: 'lluvioso' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'It is cold today, right?', es: 'Hoy está frío, ¿verdad?' },
+          { speaker: 'student', en: 'Yes, it is very cold.', es: 'Sí, está muy frío.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Is there a store near you?', es: '¿Hay una tienda cerca de ti?' },
+          { speaker: 'student', en: 'There is a bank on my street.', es: 'Hay un banco en mi calle.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How many schools are nearby?', es: '¿Cuántas escuelas hay cerca?' },
+          { speaker: 'student', en: 'There are two schools.', es: 'Hay dos escuelas.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
       titleEn: 'All About Me and My Family',
       titleEs: 'Todo Sobre Mí y Mi Familia',
-      instructionsEn: 'Student: describe yourself and two or three family members using am/is/are — for example, "I am ... My sister is ... My parents are ..." Tutor: listen for the right form of "to be" for each subject and gently correct if needed.',
-      instructionsEs: 'Estudiante: descríbete a ti mismo y a dos o tres familiares usando am/is/are — por ejemplo, "I am ... My sister is ... My parents are ..." Tutor: escucha si usa la forma correcta de "to be" para cada sujeto y corrige con calma si es necesario.',
+      instructionsEn: 'Describe yourself and one family member.',
+      instructionsEs: 'Descríbete a ti mismo y a un familiar.',
+      wordBank: [
+        { en: 'sister', es: 'hermana' },
+        { en: 'brother', es: 'hermano' },
+        { en: 'parents', es: 'padres' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Tell me about yourself.', es: 'Cuéntame sobre ti.' },
+          { speaker: 'student', en: 'I am a mother.', es: 'Soy madre.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Tell me about your sister.', es: 'Cuéntame sobre tu hermana.' },
+          { speaker: 'student', en: 'My sister is a teacher.', es: 'Mi hermana es maestra.' },
+        ],
+      ],
     },
     {
       titleEn: 'Yes/No Question Drill',
       titleEs: 'Práctica de Preguntas Sí/No',
-      instructionsEn: 'Tutor: ask yes/no questions using is/are, such as "Are you tired?", "Is it cold today?", "Are there stores near your house?" Student: answer in a full sentence, not just "yes" or "no." Then swap roles so the student asks the tutor.',
-      instructionsEs: 'Tutor: haz preguntas de sí/no usando is/are, como "Are you tired?", "Is it cold today?", "Are there stores near your house?" Estudiante: responde con una oración completa, no solo "yes" o "no." Luego cambien de papel para que el estudiante le pregunte al tutor.',
+      instructionsEn: "Answer your tutor's yes/no questions in a full sentence.",
+      instructionsEs: 'Responde las preguntas de sí/no de tu tutor con una oración completa.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Are you tired?', es: '¿Estás cansado/a?' },
+          { speaker: 'student', en: 'No, I am not tired.', es: 'No, no estoy cansado/a.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Is it cold today?', es: '¿Está frío hoy?' },
+          { speaker: 'student', en: 'Yes, it is cold.', es: 'Sí, está frío.' },
+        ],
+      ],
     },
     {
       titleEn: 'Describe the Room',
       titleEs: 'Describe el Salón',
-      instructionsEn: 'Student: look around the room and describe what you see using "There is" (for one thing) and "There are" (for more than one) — for example, "There is a table. There are two chairs." Aim for at least five sentences.',
-      instructionsEs: 'Estudiante: mira alrededor del salón y describe lo que ves usando "There is" (para una cosa) y "There are" (para más de una) — por ejemplo, "There is a table. There are two chairs." Intenta decir al menos cinco oraciones.',
+      instructionsEn: 'Look around and describe what you see.',
+      instructionsEs: 'Mira alrededor y describe lo que ves.',
+      wordBank: [
+        { en: 'table', es: 'mesa' },
+        { en: 'chairs', es: 'sillas' },
+        { en: 'window', es: 'ventana' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What is in this room?', es: '¿Qué hay en este salón?' },
+          { speaker: 'student', en: 'There is a table.', es: 'Hay una mesa.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What else?', es: '¿Qué más?' },
+          { speaker: 'student', en: 'There are two chairs.', es: 'Hay dos sillas.' },
+        ],
+      ],
     },
   ],
   worksheet: [
