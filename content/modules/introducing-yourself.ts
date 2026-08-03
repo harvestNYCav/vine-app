@@ -108,6 +108,32 @@ const module: Module = {
       exampleEs: '¡Adiós! Fue un placer conocerte.',
     },
   ],
+  grammar: [
+    {
+      titleEn: 'Talking about yourself: I + verb',
+      titleEs: 'Hablar de ti mismo: I + verbo',
+      explanationEn: 'To share facts about yourself, use "I" followed by a verb. With "to be," use "am": I am Maria. I am thirty-five years old. With action verbs like live, speak, and work, the verb stays in its base form after "I": I live in Queens. I speak Spanish. I work as a cook.',
+      explanationEs: 'Para compartir datos sobre ti, usa "I" seguido de un verbo. Con "to be," usa "am": I am Maria. I am thirty-five years old. Con verbos de acción como live, speak y work, el verbo se mantiene en su forma base después de "I": I live in Queens. I speak Spanish. I work as a cook.',
+      examples: [
+        { en: 'I am Maria.', es: 'Yo soy María.' },
+        { en: 'I live in Queens.', es: 'Vivo en Queens.' },
+        { en: 'I speak Spanish and a little English.', es: 'Hablo español y un poco de inglés.' },
+        { en: 'I work as a cook.', es: 'Trabajo como cocinero.' },
+      ],
+    },
+    {
+      titleEn: 'Asking questions: question word + is/are + subject',
+      titleEs: 'Hacer preguntas: palabra interrogativa + is/are + sujeto',
+      explanationEn: 'For "to be" questions, put the question word first, then "is" or "are," then the subject: What is your name? Where are you from? How old are you? For questions about actions or routines, use "do": What do you do?',
+      explanationEs: 'Para preguntas con "to be," pon la palabra interrogativa primero, luego "is" o "are," y después el sujeto: What is your name? Where are you from? How old are you? Para preguntas sobre acciones o rutinas, usa "do": What do you do?',
+      examples: [
+        { en: 'What is your name?', es: '¿Cómo te llamas?' },
+        { en: 'Where are you from?', es: '¿De dónde eres?' },
+        { en: 'How old are you?', es: '¿Cuántos años tienes?' },
+        { en: 'What do you do?', es: '¿A qué te dedicas?' },
+      ],
+    },
+  ],
   quiz: [
     {
       id: 'q1',
@@ -148,6 +174,30 @@ const module: Module = {
       promptEs: '¿Cómo respondes cuando alguien pregunta "How are you?"',
       answer: 'I am fine, thank you',
       options: ['I am fine, thank you', 'Nice to meet you', 'My name is Carlos', 'I am from Queens'],
+    },
+    {
+      id: 'q6',
+      type: 'multiple-choice',
+      promptEn: 'Complete: "I ___ Spanish and a little English."',
+      promptEs: 'Completa: "I ___ Spanish and a little English."',
+      answer: 'speak',
+      options: ['speak', 'live', 'work', 'am'],
+    },
+    {
+      id: 'q7',
+      type: 'multiple-choice',
+      promptEn: 'How do you ask someone\'s age?',
+      promptEs: '¿Cómo preguntas la edad de alguien?',
+      answer: 'How old are you?',
+      options: ['How old are you?', 'What do you do?', 'Where do you live?', 'What is your name?'],
+    },
+    {
+      id: 'q8',
+      type: 'multiple-choice',
+      promptEn: '"Trabajo como cocinero" in English is:',
+      promptEs: '"Trabajo como cocinero" en inglés es:',
+      answer: 'I work as a cook',
+      options: ['I work as a cook', 'I am a cook', 'I live as a cook', 'I speak cook'],
     },
   ],
   teachingScenarios: [
@@ -195,6 +245,26 @@ const module: Module = {
         { speaker: 'student', en: 'Goodbye! See you later.', es: '¡Adiós! Hasta luego.' },
         { speaker: 'tutor', en: 'See you at the next event!', es: '¡Nos vemos en el próximo evento!' },
       ],
+    },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Introduce Yourself to a New Neighbor',
+      titleEs: 'Preséntate a un Vecino Nuevo',
+      instructionsEn: 'Tutor: play a new neighbor who just moved in. Student: walk up and introduce yourself, using at least four phrases from today\'s vocabulary (name, where you\'re from, where you live, your age, and your work). Tutor: ask at least two follow-up questions before switching roles and doing it again.',
+      instructionsEs: 'Tutor: haz el papel de un vecino nuevo que acaba de mudarse. Estudiante: acércate y preséntate, usando al menos cuatro frases del vocabulario de hoy (nombre, de dónde eres, dónde vives, tu edad y tu trabajo). Tutor: haz al menos dos preguntas de seguimiento antes de cambiar de papel y repetirlo.',
+    },
+    {
+      titleEn: 'Question Swap',
+      titleEs: 'Intercambio de Preguntas',
+      instructionsEn: 'Take turns asking each other the questions from today\'s vocabulary — What is your name? Where are you from? What do you do? How old are you? — and answer each one in a full sentence, not a single word.',
+      instructionsEs: 'Túrnense para hacerse las preguntas del vocabulario de hoy — What is your name? Where are you from? What do you do? How old are you? — y respondan cada una con una oración completa, no con una sola palabra.',
+    },
+    {
+      titleEn: 'Fix the Sentence',
+      titleEs: 'Corrige la Oración',
+      instructionsEn: 'Tutor: say these sentences aloud one at a time, each with a small mistake, and have the student correct it out loud. 1) "My name Maria." 2) "I from Mexico." 3) "I speaks English." 4) "How old you are?" 5) "I work cook." Student should say the corrected full sentence each time.',
+      instructionsEs: 'Tutor: di estas oraciones en voz alta una por una, cada una con un pequeño error, y pide al estudiante que la corrija en voz alta. 1) "My name Maria." 2) "I from Mexico." 3) "I speaks English." 4) "How old you are?" 5) "I work cook." El estudiante debe decir la oración completa corregida cada vez.',
     },
   ],
   worksheet: [

@@ -38,6 +38,29 @@ const module: Module = {
     { id: 'doesnt', en: "doesn't (he/she doesn't...)", es: 'no... (él/ella)',
       exampleEn: "She doesn't speak Spanish.", exampleEs: 'Ella no habla español.' },
   ],
+  grammar: [
+    {
+      titleEn: 'Present negatives: don\'t vs doesn\'t',
+      titleEs: 'Negaciones en presente: don\'t vs doesn\'t',
+      explanationEn: 'Use "don\'t" with I, you, we, and they. Use "doesn\'t" with he, she, or it. Both are followed by the base form of the verb — never add "-s" after "doesn\'t."',
+      explanationEs: 'Usa "don\'t" con I, you, we y they. Usa "doesn\'t" con he, she, o it. Ambos van seguidos de la forma base del verbo — nunca agregues "-s" después de "doesn\'t."',
+      examples: [
+        { en: "I don't speak much English.", es: 'No hablo mucho inglés.' },
+        { en: "She doesn't speak Spanish.", es: 'Ella no habla español.' },
+      ],
+    },
+    {
+      titleEn: 'Other negatives: didn\'t, can\'t, am not/isn\'t/aren\'t',
+      titleEs: 'Otras negaciones: didn\'t, can\'t, am not/isn\'t/aren\'t',
+      explanationEn: 'For the past, use "didn\'t" + base verb. For ability or permission, use "can\'t" + base verb. For "to be," use "am not," "isn\'t," or "aren\'t" depending on the subject — no extra "do/does" needed with "to be."',
+      explanationEs: 'Para el pasado, usa "didn\'t" + verbo base. Para habilidad o permiso, usa "can\'t" + verbo base. Para "to be," usa "am not," "isn\'t," o "aren\'t" según el sujeto — no se necesita "do/does" extra con "to be."',
+      examples: [
+        { en: "I didn't go to work yesterday.", es: 'No fui al trabajo ayer.' },
+        { en: "I can't come tomorrow.", es: 'No puedo venir mañana.' },
+        { en: 'I am not from here.', es: 'No soy de aquí.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"No sé" in English is:', promptEs: '"No sé" en inglés es:',
       answer: "I don't know", options: ["I don't know", "I don't understand", "I can't", "I am not"] },
@@ -49,6 +72,12 @@ const module: Module = {
       answer: 'never', options: ['never', 'nothing', 'nobody', 'not yet'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"Todavía no" in English is:', promptEs: '"Todavía no" en inglés es:',
       answer: 'not yet', options: ['not yet', 'never', 'nothing', 'no one'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: '"No fui al trabajo ayer" in English is:', promptEs: '"No fui al trabajo ayer" en inglés es:',
+      answer: "I didn't go to work yesterday", options: ["I didn't go to work yesterday", "I don't go to work", "I can't go to work", "I am not going to work"] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Complete: "I ___ from here." (to be)', promptEs: 'Completa: "I ___ from here." (to be)',
+      answer: 'am not', options: ['am not', "don't", "doesn't", "can't"] },
+    { id: 'q8', type: 'multiple-choice', promptEn: 'Which word means "no one"?', promptEs: '¿Qué palabra significa "no one"?',
+      answer: 'nobody', options: ['nobody', 'nothing', 'never', 'not yet'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Saying you don\'t understand',
@@ -90,6 +119,26 @@ const module: Module = {
         { speaker: 'student', en: 'Nobody is helping me right now.', es: 'No hay nadie ayudándome ahora.' },
         { speaker: 'tutor', en: "I can help you. Let's finish it together, no rush at all.", es: 'Yo puedo ayudarte. Terminémoslo juntos, sin ninguna prisa.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'True or False About Me',
+      titleEs: 'Verdadero o Falso Sobre Mí',
+      instructionsEn: 'Tutor: make statements about the student, some true and some false ("You have three children," "You don\'t speak Spanish"). Student: correct the false ones using the right negative form (don\'t/doesn\'t/didn\'t/can\'t/am not).',
+      instructionsEs: 'Tutor: haz afirmaciones sobre el estudiante, algunas verdaderas y otras falsas ("You have three children," "You don\'t speak Spanish"). Estudiante: corrige las falsas usando la forma negativa correcta (don\'t/doesn\'t/didn\'t/can\'t/am not).',
+    },
+    {
+      titleEn: 'What I Can\'t Do This Week',
+      titleEs: 'Lo Que No Puedo Hacer Esta Semana',
+      instructionsEn: 'Student: list three real things you can\'t do this week and briefly explain why for each one, using "I can\'t... because..."',
+      instructionsEs: 'Estudiante: enumera tres cosas reales que no puedes hacer esta semana y explica brevemente por qué en cada una, usando "I can\'t... because..."',
+    },
+    {
+      titleEn: 'Polite No',
+      titleEs: 'Un No Cortés',
+      instructionsEn: 'Tutor: offer the student several things one at a time (food, help, a ride, more time). Student: politely decline each one using "No, thank you," "Not yet," or "Nothing, thank you," matching the situation.',
+      instructionsEs: 'Tutor: ofrécele al estudiante varias cosas una a la vez (comida, ayuda, un aventón, más tiempo). Estudiante: rechaza cortésmente cada una usando "No, thank you," "Not yet," o "Nothing, thank you," según la situación.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I ____ have a car.', promptEs: 'No tengo carro. (I ____ have a car.)', answer: "don't" },

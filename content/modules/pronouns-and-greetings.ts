@@ -38,6 +38,29 @@ const module: Module = {
     { id: 'see-you-next-week', en: 'See you next week', es: 'Nos vemos la próxima semana',
       exampleEn: 'Thank you for today. See you next week!', exampleEs: 'Gracias por hoy. ¡Nos vemos la próxima semana!' },
   ],
+  grammar: [
+    {
+      titleEn: 'Subject pronouns: I, you, he/she, we, they',
+      titleEs: 'Pronombres de sujeto: I, you, he/she, we, they',
+      explanationEn: 'A subject pronoun replaces a person\'s name so you don\'t have to repeat it. Use "he" for a man or boy, "she" for a woman or girl, "we" when you include yourself with others, and "they" for two or more other people.',
+      explanationEs: 'Un pronombre de sujeto reemplaza el nombre de una persona para no repetirlo. Usa "he" para un hombre o niño, "she" para una mujer o niña, "we" cuando te incluyes a ti mismo con otros, y "they" para dos o más personas.',
+      examples: [
+        { en: 'He is my son. She is my daughter.', es: 'Él es mi hijo. Ella es mi hija.' },
+        { en: 'We are neighbors.', es: 'Nosotros somos vecinos.' },
+        { en: 'They are my friends.', es: 'Ellos son mis amigos.' },
+      ],
+    },
+    {
+      titleEn: 'Greetings for different times of day',
+      titleEs: 'Saludos para diferentes horas del día',
+      explanationEn: '"Hello" and "Hi" work at any time of day and in almost any situation. "Good morning" is used before noon, and "Good afternoon" from noon until evening — these sound a little more polite, which is useful with someone you don\'t know well.',
+      explanationEs: '"Hello" y "Hi" funcionan a cualquier hora del día y en casi cualquier situación. "Good morning" se usa antes del mediodía, y "Good afternoon" desde el mediodía hasta la noche — suenan un poco más corteses, lo cual es útil con alguien que no conoces bien.',
+      examples: [
+        { en: 'Hello! How are you?', es: '¡Hola! ¿Cómo estás?' },
+        { en: 'Good morning! Nice to see you.', es: '¡Buenos días! Qué gusto verte.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"Yo" in English is:', promptEs: '"Yo" en inglés es:',
       answer: 'I', options: ['I', 'you', 'he', 'we'] },
@@ -49,6 +72,12 @@ const module: Module = {
       answer: 'They', options: ['They', 'He', 'You', 'I'] },
     { id: 'q5', type: 'multiple-choice', promptEn: 'How do you say goodbye in English?', promptEs: '¿Cómo te despides en inglés?',
       answer: 'Goodbye', options: ['Goodbye', 'Hello', 'How are you?', 'Nice to meet you'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "___ is my daughter." ("Ella")', promptEs: 'Completa: "___ is my daughter." ("Ella")',
+      answer: 'She', options: ['She', 'He', 'They', 'We'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which greeting do you use before noon?', promptEs: '¿Qué saludo usas antes del mediodía?',
+      answer: 'Good morning', options: ['Good morning', 'Good afternoon', 'Goodbye', 'See you next week'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Nosotros somos vecinos" in English is:', promptEs: '"Nosotros somos vecinos" en inglés es:',
+      answer: 'We are neighbors', options: ['We are neighbors', 'They are neighbors', 'You are neighbors', 'I am a neighbor'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Meeting a new neighbor',
@@ -90,6 +119,26 @@ const module: Module = {
         { speaker: 'student', en: 'You too. Goodbye!', es: 'Tú también. ¡Adiós!' },
         { speaker: 'tutor', en: "Goodbye! I'm glad we met today.", es: '¡Adiós! Me alegra que nos hayamos conocido hoy.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Pronoun Swap',
+      titleEs: 'Cambia el Pronombre',
+      instructionsEn: 'Tutor: say a sentence using a name (e.g., "Maria is my neighbor," "Carlos and Ana are my friends"). Student: repeat the sentence, replacing the name with the correct pronoun (she, he, they, we).',
+      instructionsEs: 'Tutor: di una oración usando un nombre (por ejemplo, "Maria is my neighbor," "Carlos and Ana are my friends"). Estudiante: repite la oración, reemplazando el nombre con el pronombre correcto (she, he, they, we).',
+    },
+    {
+      titleEn: 'Greet Three Ways',
+      titleEs: 'Saluda de Tres Maneras',
+      instructionsEn: 'Student: greet the tutor three different ways — a formal morning or afternoon greeting, a casual "Hi," and "How are you?" — and respond naturally each time the tutor greets you back.',
+      instructionsEs: 'Estudiante: saluda al tutor de tres maneras diferentes — un saludo formal de mañana o tarde, un "Hi" casual, y "How are you?" — y responde de forma natural cada vez que el tutor te salude.',
+    },
+    {
+      titleEn: 'Introduce the Room',
+      titleEs: 'Presenta el Salón',
+      instructionsEn: 'Student: imagine a third person just walked in. Introduce the tutor to them using "This is my friend...," then describe the tutor to that imaginary person using the correct pronoun (he/she).',
+      instructionsEs: 'Estudiante: imagina que una tercera persona acaba de entrar. Presenta al tutor usando "This is my friend...," y luego descríbelo a esa persona imaginaria usando el pronombre correcto (he/she).',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: '____ am a student.', promptEs: 'Yo soy estudiante. (____ am a student.)', answer: 'I' },

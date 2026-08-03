@@ -38,6 +38,31 @@ const module: Module = {
     { id: 'help', en: 'Help!', es: '¡Ayuda!',
       exampleEn: 'Help! Someone call 911!', exampleEs: '¡Ayuda! ¡Alguien llame al 911!' },
   ],
+  grammar: [
+    {
+      titleEn: 'Describing symptoms: have / feel / hurts',
+      titleEs: 'Describir síntomas: have / feel / hurts',
+      explanationEn: 'Use "have" with a noun (a fever, a cough): I have a fever. Use "feel" with an adjective (sick, tired, dizzy): I feel sick. Use "possessive + body part + hurts" to say where it hurts: My stomach hurts. My head hurts.',
+      explanationEs: 'Usa "have" con un sustantivo (a fever, a cough): I have a fever. Usa "feel" con un adjetivo (sick, tired, dizzy): I feel sick. Usa "posesivo + parte del cuerpo + hurts" para decir dónde te duele: My stomach hurts. My head hurts.',
+      examples: [
+        { en: 'I have a fever.', es: 'Tengo fiebre.' },
+        { en: 'I feel sick.', es: 'Me siento mal.' },
+        { en: 'My stomach hurts.', es: 'Me duele el estómago.' },
+        { en: 'Do you have insurance?', es: '¿Tiene seguro médico?' },
+      ],
+    },
+    {
+      titleEn: 'Giving urgent commands: the imperative',
+      titleEs: 'Dar órdenes urgentes: el imperativo',
+      explanationEn: 'In an emergency, you often drop the subject and start with the base form of the verb — this is called the imperative. It sounds urgent and direct, which is exactly what you need when every second counts: Call 911! Help! Take this medicine twice a day.',
+      explanationEs: 'En una emergencia, muchas veces se omite el sujeto y se empieza con la forma base del verbo — esto se llama imperativo. Suena urgente y directo, que es exactamente lo que necesitas cuando cada segundo cuenta: Call 911! Help! Take this medicine twice a day.',
+      examples: [
+        { en: 'Call 911!', es: '¡Llame al 911!' },
+        { en: 'Help!', es: '¡Ayuda!' },
+        { en: 'Take this medicine twice a day.', es: 'Tome esta medicina dos veces al día.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"El hospital" in English is:', promptEs: '"El hospital" en inglés es:',
       answer: 'hospital', options: ['hospital', 'pharmacy', 'doctor', 'insurance'] },
@@ -49,6 +74,12 @@ const module: Module = {
       answer: 'pharmacy', options: ['pharmacy', 'hospital', 'emergency room', 'insurance'] },
     { id: 'q5', type: 'multiple-choice', promptEn: 'How do you say "Necesito ver a un doctor"?', promptEs: '¿Cómo se dice "Necesito ver a un doctor"?',
       answer: 'I need to see a doctor', options: ['I need to see a doctor', 'I feel sick', 'Call 911', 'Are you okay?'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "I ___ a fever."', promptEs: 'Completa: "I ___ a fever."',
+      answer: 'have', options: ['have', 'am', 'is', 'feel'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which sentence is an urgent command?', promptEs: '¿Cuál oración es una orden urgente?',
+      answer: 'Call 911!', options: ['Call 911!', 'I feel sick.', 'Are you okay?', 'I have insurance.'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Me duele la cabeza" in English is:', promptEs: '"Me duele la cabeza" en inglés es:',
+      answer: 'My head hurts', options: ['My head hurts', 'I have a headache pill', 'I feel head', 'Call the head'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Describing symptoms to a doctor',
@@ -90,6 +121,26 @@ const module: Module = {
         { speaker: 'student', en: 'Thank you very much for your help.', es: 'Muchas gracias por su ayuda.' },
         { speaker: 'tutor', en: 'You are welcome! Now you can confidently pick up medicine and talk about insurance at the pharmacy.', es: '¡De nada! Ahora puede recoger medicina y hablar sobre el seguro médico en la farmacia con confianza.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Describe Your Symptoms',
+      titleEs: 'Describe tus Síntomas',
+      instructionsEn: 'Tutor: name a situation one at a time — a fever, a stomach ache, a headache, a cough. Student: play the patient and describe how you feel to the doctor using "I feel...," "I have...," or "___ hurts."',
+      instructionsEs: 'Tutor: nombra una situación a la vez — fiebre, dolor de estómago, dolor de cabeza, tos. Estudiante: haz el papel de paciente y describe cómo te sientes al doctor usando "I feel...," "I have...," o "___ hurts."',
+    },
+    {
+      titleEn: 'Call for Help',
+      titleEs: 'Pide Ayuda',
+      instructionsEn: 'Tutor: describe an emergency scene — someone fell down, someone can\'t breathe, someone is badly hurt. Student: react with the right urgent language ("Help!", "Call 911!") and explain what happened to the 911 operator.',
+      instructionsEs: 'Tutor: describe una escena de emergencia — alguien se cayó, alguien no puede respirar, alguien está muy lastimado. Estudiante: reacciona con el lenguaje urgente correcto ("Help!", "Call 911!") y explica lo que pasó al operador de 911.',
+    },
+    {
+      titleEn: 'At the Pharmacy, Round Two',
+      titleEs: 'En la Farmacia, Segunda Ronda',
+      instructionsEn: 'Tutor: play the pharmacist again, but this time change the details — a different medicine, a different schedule (once a day, three times a day), and ask whether the student has insurance. Student: respond using today\'s vocabulary without reading from the earlier script.',
+      instructionsEs: 'Tutor: haz de farmacéutico otra vez, pero esta vez cambia los detalles — una medicina diferente, un horario diferente (una vez al día, tres veces al día), y pregunta si el estudiante tiene seguro médico. Estudiante: responde usando el vocabulario de hoy sin leer el guion anterior.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I feel ____.', promptEs: 'Me siento mal. (I feel ____.)', answer: 'sick' },

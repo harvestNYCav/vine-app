@@ -38,6 +38,28 @@ const module: Module = {
     { id: 'always-sometimes-never', en: 'always / sometimes / never', es: 'siempre / a veces / nunca',
       exampleEn: 'I always work on Mondays. I never work on Sundays.', exampleEs: 'Siempre trabajo los lunes. Nunca trabajo los domingos.' },
   ],
+  grammar: [
+    {
+      titleEn: 'Three basic tenses: present, past, future',
+      titleEs: 'Tres tiempos básicos: presente, pasado, futuro',
+      explanationEn: 'Use the simple present for routines and facts: I work. Use the simple past for things already finished, often with "-ed": I worked. Use "will" + the base verb for the future: I will work. Some verbs change form in the past instead of adding "-ed," like go → went.',
+      explanationEs: 'Usa el presente simple para rutinas y hechos: I work. Usa el pasado simple para cosas ya terminadas, a menudo con "-ed": I worked. Usa "will" + el verbo base para el futuro: I will work. Algunos verbos cambian de forma en el pasado en vez de agregar "-ed," como go → went.',
+      examples: [
+        { en: 'I work every day. I worked yesterday. I will work tomorrow.', es: 'Trabajo todos los días. Trabajé ayer. Trabajaré mañana.' },
+        { en: 'I go to church every Sunday. Yesterday I went to the store.', es: 'Voy a la iglesia todos los domingos. Ayer fui a la tienda.' },
+      ],
+    },
+    {
+      titleEn: 'Right now vs every day: "am + -ing" vs simple present',
+      titleEs: 'Ahora mismo vs todos los días: "am + -ing" vs presente simple',
+      explanationEn: 'Use "am/is/are + -ing" for something happening at this exact moment: I am working right now. Use the simple present for habits and things that are always true: I work every day. I always work on Mondays.',
+      explanationEs: 'Usa "am/is/are + -ing" para algo que sucede en este momento exacto: I am working right now. Usa el presente simple para hábitos y cosas que siempre son verdad: I work every day. I always work on Mondays.',
+      examples: [
+        { en: 'I am working right now.', es: 'Estoy trabajando ahora mismo.' },
+        { en: 'I always work on Mondays. I never work on Sundays.', es: 'Siempre trabajo los lunes. Nunca trabajo los domingos.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"Ayer" in English is:', promptEs: '"Ayer" en inglés es:',
       answer: 'yesterday', options: ['yesterday', 'today', 'tomorrow', 'always'] },
@@ -49,6 +71,12 @@ const module: Module = {
       answer: 'I am working', options: ['I am working', 'I worked', 'I will work', 'I work every day'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"Si llueve, me quedaré en casa" in English is:', promptEs: '"Si llueve, me quedaré en casa" en inglés es:',
       answer: 'If it rains, I will stay home', options: ['If it rains, I will stay home', 'It rained, I stayed home', 'It is raining now', 'I will rain today'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "I ___ at home yesterday."', promptEs: 'Completa: "I ___ at home yesterday."',
+      answer: 'was', options: ['was', 'am', 'will', 'go'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which word signals the future tense?', promptEs: '¿Qué palabra señala el tiempo futuro?',
+      answer: 'will', options: ['will', 'yesterday', 'always', 'was'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"La semana pasada" in English is:', promptEs: '"La semana pasada" en inglés es:',
+      answer: 'last week', options: ['last week', 'next week', 'every day', 'tomorrow'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Your daily routine',
@@ -90,6 +118,26 @@ const module: Module = {
         { speaker: 'student', en: 'If it rains, I will stay home.', es: 'Si llueve, me quedaré en casa.' },
         { speaker: 'tutor', en: "Excellent! You're ready to talk about the future.", es: '¡Excelente! Ya estás listo para hablar del futuro.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Yesterday, Today, Tomorrow',
+      titleEs: 'Ayer, Hoy, Mañana',
+      instructionsEn: 'Student: pick one everyday activity (work, cook, clean, study) and say it in all three tenses — "I ___ yesterday," "I ___ every day," and "I will ___ tomorrow." Tutor: check the correct verb form for each.',
+      instructionsEs: 'Estudiante: elige una actividad cotidiana (work, cook, clean, study) y dila en los tres tiempos — "I ___ yesterday," "I ___ every day," y "I will ___ tomorrow." Tutor: revisa la forma correcta del verbo en cada una.',
+    },
+    {
+      titleEn: 'Tell Me About Last Week',
+      titleEs: 'Cuéntame Sobre la Semana Pasada',
+      instructionsEn: 'Tutor: ask three real questions about last week — "Where were you?", "What did you do?", "Did you go anywhere?" Student: answer each one in the past tense with true information.',
+      instructionsEs: 'Tutor: haz tres preguntas reales sobre la semana pasada — "Where were you?", "What did you do?", "Did you go anywhere?" Estudiante: responde cada una en el tiempo pasado con información verdadera.',
+    },
+    {
+      titleEn: 'My Plans',
+      titleEs: 'Mis Planes',
+      instructionsEn: 'Student: describe two real plans using "will" — one for tomorrow and one for next week. Then make one true "If..., I will..." sentence about something that might happen this week.',
+      instructionsEs: 'Estudiante: describe dos planes reales usando "will" — uno para mañana y uno para la próxima semana. Luego di una oración verdadera con "If..., I will..." sobre algo que podría pasar esta semana.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I ____ to church every Sunday.', promptEs: 'Voy a la iglesia todos los domingos. (I ____ to church every Sunday.)', answer: 'go' },

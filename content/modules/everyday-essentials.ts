@@ -38,6 +38,28 @@ const module: Module = {
     { id: 'im-lost', en: "I'm lost", es: 'Estoy perdido / perdida',
       exampleEn: "Excuse me, I'm lost. Can you help me?", exampleEs: 'Disculpe, estoy perdido. ¿Me puede ayudar?' },
   ],
+  grammar: [
+    {
+      titleEn: 'Asking for personal information: "What is your...?"',
+      titleEs: 'Pedir información personal: "What is your...?"',
+      explanationEn: '"What is your...?" is the pattern used on almost every form and at almost every office desk. Just swap in the word you need: phone number, address, name.',
+      explanationEs: '"What is your...?" es el patrón que se usa en casi todos los formularios y en casi todos los mostradores de oficina. Solo cambia la palabra que necesitas: phone number, address, name.',
+      examples: [
+        { en: 'What is your phone number?', es: '¿Cuál es tu número de teléfono?' },
+        { en: 'What is your address?', es: '¿Cuál es tu dirección?' },
+      ],
+    },
+    {
+      titleEn: 'Softening a request: "Excuse me..." and "Can I...?"',
+      titleEs: 'Suavizar una petición: "Excuse me..." y "Can I...?"',
+      explanationEn: 'Starting a request with "Excuse me" is a polite way to get a stranger\'s attention before asking for help or directions. "Can I...?" politely asks for permission to do something.',
+      explanationEs: 'Empezar una petición con "Excuse me" es una manera cortés de llamar la atención de un desconocido antes de pedir ayuda o direcciones. "Can I...?" pide permiso cortésmente para hacer algo.',
+      examples: [
+        { en: 'Excuse me, where is the bathroom?', es: 'Disculpe, ¿dónde está el baño?' },
+        { en: 'Excuse me, can I use your phone?', es: 'Disculpe, ¿puedo usar tu teléfono?' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"La dirección" in English is:', promptEs: '"La dirección" en inglés es:',
       answer: 'address', options: ['address', 'phone number', 'ID', 'wallet'] },
@@ -49,6 +71,12 @@ const module: Module = {
       answer: "I'm lost", options: ["I'm lost", 'I need help', 'I lost my key', 'Where is it?'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"La contraseña" in English is:', promptEs: '"La contraseña" en inglés es:',
       answer: 'password', options: ['password', 'wifi', 'address', 'ID'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "Excuse me, ___ is the bathroom?"', promptEs: 'Completa: "Excuse me, ___ is the bathroom?"',
+      answer: 'where', options: ['where', 'what', 'who', 'when'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Which phrase politely starts a request to a stranger?', promptEs: '¿Qué frase empieza cortésmente una petición a un desconocido?',
+      answer: 'Excuse me', options: ['Excuse me', 'I need help', 'Where is it?', 'Yes please'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"¿Puedo usar tu teléfono?" in English is:', promptEs: '"¿Puedo usar tu teléfono?" en inglés es:',
+      answer: 'Can I use your phone?', options: ['Can I use your phone?', 'I need help', 'Where is the bathroom?', "I'm lost"] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Filling out a form',
@@ -90,6 +118,26 @@ const module: Module = {
         { speaker: 'student', en: 'Thank you. This is an emergency for me.', es: 'Gracias. Esto es una emergencia para mí.' },
         { speaker: 'tutor', en: "I understand. Let's find help together. You'll be okay.", es: 'Entiendo. Busquemos ayuda juntos. Vas a estar bien.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Fill Out My Form',
+      titleEs: 'Llena Mi Formulario',
+      instructionsEn: 'Tutor: play an office worker filling out a form, asking for phone number, address, and ID one at a time. Student: answer each question in a full sentence, using real or practice information.',
+      instructionsEs: 'Tutor: haz de trabajador de oficina llenando un formulario, pidiendo número de teléfono, dirección e identificación uno a la vez. Estudiante: responde cada pregunta con una oración completa, usando información real o de práctica.',
+    },
+    {
+      titleEn: 'Ask a Stranger for Help',
+      titleEs: 'Pide Ayuda a un Desconocido',
+      instructionsEn: 'Tutor: describe three quick situations one at a time — you lost your wallet, you need the wifi password, you are lost on the street. Student: ask the right question for each situation.',
+      instructionsEs: 'Tutor: describe tres situaciones rápidas una a la vez — perdiste tu cartera, necesitas la contraseña del wifi, estás perdido en la calle. Estudiante: haz la pregunta correcta para cada situación.',
+    },
+    {
+      titleEn: 'Emergency Practice',
+      titleEs: 'Práctica de Emergencia',
+      instructionsEn: 'Tutor: describe a minor emergency (locked out of your apartment, lost your phone). Student: explain the situation and ask for exactly what you need, using today\'s vocabulary.',
+      instructionsEs: 'Tutor: describe una emergencia menor (te quedaste afuera de tu apartamento, perdiste tu teléfono). Estudiante: explica la situación y pide exactamente lo que necesitas, usando el vocabulario de hoy.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'What is your phone ____?', promptEs: '¿Cuál es tu número de teléfono? (What is your phone ____?)', answer: 'number' },

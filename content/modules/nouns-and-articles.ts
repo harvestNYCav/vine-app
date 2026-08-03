@@ -38,6 +38,29 @@ const module: Module = {
     { id: 'money', en: 'money', es: 'el dinero',
       exampleEn: "I don't have much money.", exampleEs: 'No tengo mucho dinero.' },
   ],
+  grammar: [
+    {
+      titleEn: '"a" vs "an": listen to the sound, not the letter',
+      titleEs: '"a" vs "an": escucha el sonido, no la letra',
+      explanationEn: 'Use "an" when the next word starts with a vowel sound (a, e, i, o, u) and "a" when it starts with a consonant sound. This is about sound, not spelling: an apple, a car, an umbrella, a house.',
+      explanationEs: 'Usa "an" cuando la siguiente palabra empieza con un sonido de vocal (a, e, i, o, u) y "a" cuando empieza con un sonido de consonante. Esto se trata del sonido, no de la ortografía: an apple, a car, an umbrella, a house.',
+      examples: [
+        { en: 'I have a book. She has an apple.', es: 'Tengo un libro. Ella tiene una manzana.' },
+        { en: 'I need to buy a car.', es: 'Necesito comprar un carro.' },
+      ],
+    },
+    {
+      titleEn: 'Irregular plurals: child, woman, man',
+      titleEs: 'Plurales irregulares: child, woman, man',
+      explanationEn: 'Most nouns just add "-s" for the plural (book → books). But a few common nouns change completely: child becomes children, woman becomes women, and man becomes men. These are worth memorizing since they come up often.',
+      explanationEs: 'La mayoría de los sustantivos solo agregan "-s" para el plural (book → books). Pero algunos sustantivos comunes cambian completamente: child se convierte en children, woman se convierte en women, y man se convierte en men. Vale la pena memorizarlos porque aparecen con frecuencia.',
+      examples: [
+        { en: 'I have three books.', es: 'Tengo tres libros.' },
+        { en: 'The children are playing.', es: 'Los niños están jugando.' },
+        { en: 'The men are working outside.', es: 'Los hombres están trabajando afuera.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: 'Complete: "I have ___ book."', promptEs: 'Completa: "I have ___ book."',
       answer: 'a', options: ['a', 'an', 'the', 'some'] },
@@ -49,6 +72,12 @@ const module: Module = {
       answer: 'women', options: ['women', 'womans', 'womens', 'woman'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"El agua" in English is:', promptEs: '"El agua" en inglés es:',
       answer: 'water', options: ['water', 'money', 'house', 'book'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Which word uses "a," not "an"?', promptEs: '¿Qué palabra usa "a," no "an"?',
+      answer: 'car', options: ['car', 'apple', 'umbrella', 'orange'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'The plural of "man" is:', promptEs: 'El plural de "man" es:',
+      answer: 'men', options: ['men', 'mans', 'mens', 'man'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: 'Complete: "___ book is on the table." (a specific book you already mentioned)', promptEs: 'Completa: "___ book is on the table." (un libro específico que ya mencionaste)',
+      answer: 'The', options: ['The', 'A', 'An', 'Some'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: At the library',
@@ -90,6 +119,26 @@ const module: Module = {
         { speaker: 'student', en: 'Yes, I need some help this week.', es: 'Sí, necesito un poco de ayuda esta semana.' },
         { speaker: 'tutor', en: 'Good job practicing these everyday requests.', es: 'Buen trabajo practicando estas peticiones cotidianas.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'A or An?',
+      titleEs: '¿A o An?',
+      instructionsEn: 'Tutor: say nouns one at a time — apple, book, house, umbrella, orange, car, dog. Student: say "a" or "an" quickly before each one, based on the sound.',
+      instructionsEs: 'Tutor: di sustantivos uno a la vez — apple, book, house, umbrella, orange, car, dog. Estudiante: di "a" o "an" rápidamente antes de cada uno, según el sonido.',
+    },
+    {
+      titleEn: 'Describe What\'s Around You',
+      titleEs: 'Describe lo que te Rodea',
+      instructionsEn: 'Student: name five objects you can see right now, using "a" or "an" the first time you mention each one, then say a second sentence about it using "the" (e.g., "I see a book. The book is red.").',
+      instructionsEs: 'Estudiante: nombra cinco objetos que puedes ver ahora mismo, usando "a" o "an" la primera vez que mencionas cada uno, y luego di una segunda oración sobre él usando "the" (por ejemplo, "I see a book. The book is red.").',
+    },
+    {
+      titleEn: 'Plural Challenge',
+      titleEs: 'Reto de Plurales',
+      instructionsEn: 'Tutor: say the singular form of a noun from today (child, woman, man, book, apple). Student: give the plural form in a full sentence, such as "There are three children."',
+      instructionsEs: 'Tutor: di la forma singular de un sustantivo de hoy (child, woman, man, book, apple). Estudiante: da la forma plural en una oración completa, como "There are three children."',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I have ____ apple.', promptEs: 'Tengo una manzana. (I have ____ apple.)', answer: 'an' },

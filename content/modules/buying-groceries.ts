@@ -108,6 +108,28 @@ const module: Module = {
       exampleEs: 'Quisiera dos libras de pollo, por favor.',
     },
   ],
+  grammar: [
+    {
+      titleEn: 'Asking prices: "How much does this cost?"',
+      titleEs: 'Preguntar precios: "How much does this cost?"',
+      explanationEn: 'Use "How much does this cost?" (or the shorter "How much is this?") to ask a price. Use "I would like..." + an amount to ask for a specific quantity of something.',
+      explanationEs: 'Usa "How much does this cost?" (o la forma más corta "How much is this?") para preguntar un precio. Usa "I would like..." + una cantidad para pedir una cantidad específica de algo.',
+      examples: [
+        { en: 'Excuse me, how much does this cost?', es: 'Disculpe, ¿cuánto cuesta esto?' },
+        { en: 'I would like two pounds of chicken, please.', es: 'Quisiera dos libras de pollo, por favor.' },
+      ],
+    },
+    {
+      titleEn: '"Do you have...?" to ask what\'s available',
+      titleEs: '"Do you have...?" para preguntar qué hay disponible',
+      explanationEn: 'Use "Do you have...?" to ask whether a store carries something, and "Where is...?" once you know they do, to find where it is.',
+      explanationEs: 'Usa "Do you have...?" para preguntar si una tienda tiene algo, y "Where is...?" una vez que sabes que sí, para encontrar dónde está.',
+      examples: [
+        { en: 'Do you have any fresh tomatoes?', es: '¿Tiene tomates frescos?' },
+        { en: 'Excuse me, where is the milk?', es: 'Disculpe, ¿dónde está la leche?' },
+      ],
+    },
+  ],
   quiz: [
     {
       id: 'q1',
@@ -148,6 +170,30 @@ const module: Module = {
       promptEs: 'La persona que recibe tu pago en la tienda se llama:',
       answer: 'cashier',
       options: ['cashier', 'manager', 'customer', 'bagger'],
+    },
+    {
+      id: 'q6',
+      type: 'multiple-choice',
+      promptEn: 'Complete: "I would ___ two pounds of rice."',
+      promptEs: 'Completa: "I would ___ two pounds of rice."',
+      answer: 'like',
+      options: ['like', 'likes', 'liking', 'to like'],
+    },
+    {
+      id: 'q7',
+      type: 'multiple-choice',
+      promptEn: 'Which phrase asks if a store carries something?',
+      promptEs: '¿Qué frase pregunta si una tienda tiene algo?',
+      answer: 'Do you have...?',
+      options: ['Do you have...?', 'How much does this cost?', 'Where is the...?', 'Can I have a receipt?'],
+    },
+    {
+      id: 'q8',
+      type: 'multiple-choice',
+      promptEn: '"Barato" in English is:',
+      promptEs: '"Barato" en inglés es:',
+      answer: 'cheap',
+      options: ['cheap', 'expensive', 'fresh', 'on sale'],
     },
   ],
   teachingScenarios: [
@@ -201,6 +247,26 @@ const module: Module = {
         { speaker: 'student', en: 'Thank you, have a good day!', es: 'Gracias, ¡que tenga un buen día!' },
         { speaker: 'tutor', en: 'Excellent work! You handled the whole checkout — cash or card, bag, and receipt.', es: '¡Excelente trabajo! Manejaste todo el proceso de pago — efectivo o tarjeta, bolsa y recibo.' },
       ],
+    },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Build a Shopping List',
+      titleEs: 'Haz una Lista de Compras',
+      instructionsEn: 'Student: name five real grocery items you need, asking "Where is the...?" for each one. Tutor: answer with a made-up aisle number each time.',
+      instructionsEs: 'Estudiante: nombra cinco productos de compra reales que necesitas, preguntando "Where is the...?" para cada uno. Tutor: responde con un número de pasillo inventado cada vez.',
+    },
+    {
+      titleEn: 'Ask for an Amount',
+      titleEs: 'Pide una Cantidad',
+      instructionsEn: 'Student: practice asking for specific quantities of three different foods using "I would like ___ pounds of ___, please." Tutor: respond and ask one follow-up question each time (fresh or frozen? anything else?).',
+      instructionsEs: 'Estudiante: practica pedir cantidades específicas de tres alimentos diferentes usando "I would like ___ pounds of ___, please." Tutor: responde y haz una pregunta de seguimiento cada vez (¿fresco o congelado? ¿algo más?).',
+    },
+    {
+      titleEn: 'Full Checkout',
+      titleEs: 'Pago Completo',
+      instructionsEn: 'Student: go through an entire checkout without reading a script — greet the cashier, answer cash or credit card, say whether you need a bag, and ask for a receipt.',
+      instructionsEs: 'Estudiante: completa todo el proceso de pago sin leer un guion — saluda al cajero, responde efectivo o tarjeta, di si necesitas una bolsa, y pide un recibo.',
     },
   ],
   worksheet: [

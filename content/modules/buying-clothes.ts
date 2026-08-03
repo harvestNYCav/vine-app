@@ -108,6 +108,26 @@ const module: Module = {
       exampleEs: 'La caja registradora está al frente de la tienda.',
     },
   ],
+  grammar: [
+    {
+      titleEn: '"too" + adjective for a fit problem',
+      titleEs: '"too" + adjetivo para un problema de talla',
+      explanationEn: 'Use "too" before an adjective to say something is more than you want — a problem, not just a description. "This shirt is too big" means it doesn\'t fit, not just that it\'s a big shirt.',
+      explanationEs: 'Usa "too" antes de un adjetivo para decir que algo es más de lo que quieres — un problema, no solo una descripción. "This shirt is too big" significa que no te queda bien, no solo que es una camisa grande.',
+      examples: [
+        { en: 'This shirt is too big. Do you have a smaller size?', es: 'Esta camisa es muy grande. ¿Tiene una talla más pequeña?' },
+      ],
+    },
+    {
+      titleEn: '"Do you have this in...?" for color or size',
+      titleEs: '"Do you have this in...?" para color o talla',
+      explanationEn: 'Use "Do you have this in...?" to ask for the same item in a different color or size — swap in the word you need after "in."',
+      explanationEs: 'Usa "Do you have this in...?" para pedir el mismo artículo en otro color o talla — cambia la palabra que necesitas después de "in."',
+      examples: [
+        { en: 'Do you have this in blue? Do you have this in a size medium?', es: '¿Tiene esto en azul? ¿Tiene esto en talla mediana?' },
+      ],
+    },
+  ],
   quiz: [
     {
       id: 'q1',
@@ -148,6 +168,30 @@ const module: Module = {
       promptEs: '"El descuento" en inglés es:',
       answer: 'discount',
       options: ['discount', 'receipt', 'return', 'exchange'],
+    },
+    {
+      id: 'q6',
+      type: 'multiple-choice',
+      promptEn: 'Complete: "This shirt is ___ small."',
+      promptEs: 'Completa: "This shirt is ___ small."',
+      answer: 'too',
+      options: ['too', 'very', 'so', 'much'],
+    },
+    {
+      id: 'q7',
+      type: 'multiple-choice',
+      promptEn: 'Which phrase asks for a different color or size?',
+      promptEs: '¿Qué frase pide un color o talla diferente?',
+      answer: 'Do you have this in...?',
+      options: ['Do you have this in...?', 'I am looking for...', 'Can I try this on?', 'Is this on sale?'],
+    },
+    {
+      id: 'q8',
+      type: 'multiple-choice',
+      promptEn: '"La talla" in English is:',
+      promptEs: '"La talla" en inglés es:',
+      answer: 'size',
+      options: ['size', 'color', 'discount', 'price tag'],
     },
   ],
   teachingScenarios: [
@@ -201,6 +245,26 @@ const module: Module = {
         { speaker: 'student', en: 'Thank you very much!', es: '¡Muchas gracias!' },
         { speaker: 'tutor', en: 'Wonderful! You paid at the register and learned about returns and exchanges.', es: '¡Maravilloso! Pagó en la caja registradora y aprendió sobre devoluciones y cambios.' },
       ],
+    },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Find the Right Fit',
+      titleEs: 'Encuentra la Talla Correcta',
+      instructionsEn: 'Tutor: hand the student (imagined) clothing items that don\'t fit — too big, too small. Student: explain the problem and ask for a different size each time.',
+      instructionsEs: 'Tutor: dale al estudiante artículos de ropa imaginarios que no le quedan bien — muy grandes, muy pequeños. Estudiante: explica el problema y pide una talla diferente cada vez.',
+    },
+    {
+      titleEn: 'Shop for an Outfit',
+      titleEs: 'Compra un Conjunto',
+      instructionsEn: 'Student: pick two clothing items to shop for, without reading a script — ask about color options, try them on, and check the price tag. Tutor: play the store clerk.',
+      instructionsEs: 'Estudiante: elige dos artículos de ropa para comprar, sin leer un guion — pregunta sobre opciones de color, pruébatelos, y revisa la etiqueta de precio. Tutor: haz de empleado de la tienda.',
+    },
+    {
+      titleEn: 'Return Policy Roleplay',
+      titleEs: 'Representación de Política de Devolución',
+      instructionsEn: 'Student: practice returning or exchanging an item — explain the reason (wrong size, wrong color) and ask about the store\'s return policy.',
+      instructionsEs: 'Estudiante: practica devolver o cambiar un artículo — explica la razón (talla equivocada, color equivocado) y pregunta sobre la política de devoluciones de la tienda.',
     },
   ],
   worksheet: [

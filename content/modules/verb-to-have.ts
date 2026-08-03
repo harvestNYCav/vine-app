@@ -38,6 +38,31 @@ const module: Module = {
     { id: 'i-dont-have-any-money', en: "I don't have any money", es: 'No tengo dinero',
       exampleEn: "I don't have any money with me today.", exampleEs: 'No tengo dinero conmigo hoy.' },
   ],
+  grammar: [
+    {
+      titleEn: '"have" vs "has"',
+      titleEs: '"have" vs "has"',
+      explanationEn: 'Use "have" with I, you, we, and they. Use "has" with he, she, or it, and with one other person\'s name (Maria has, my neighbor has).',
+      explanationEs: 'Usa "have" con I, you, we y they. Usa "has" con he, she, o it, y con el nombre de otra persona (Maria has, my neighbor has).',
+      examples: [
+        { en: 'I have a car.', es: 'Tengo un carro.' },
+        { en: 'She has three children.', es: 'Ella tiene tres hijos.' },
+        { en: 'We have a small apartment.', es: 'Tenemos un apartamento pequeño.' },
+        { en: 'They have two cars.', es: 'Ellos tienen dos carros.' },
+      ],
+    },
+    {
+      titleEn: 'Questions and negatives: do/does + have',
+      titleEs: 'Preguntas y negaciones: do/does + have',
+      explanationEn: 'To ask a question, use "Do" (with I/you/we/they) or "Does" (with he/she/it) before the subject, and "have" stays in its base form. For a negative, add "don\'t" or "doesn\'t" before "have."',
+      explanationEs: 'Para hacer una pregunta, usa "Do" (con I/you/we/they) o "Does" (con he/she/it) antes del sujeto, y "have" se mantiene en su forma base. Para una negación, agrega "don\'t" o "doesn\'t" antes de "have."',
+      examples: [
+        { en: 'Do you have a pen?', es: '¿Tienes un lapicero?' },
+        { en: 'Does she have insurance?', es: '¿Tiene ella seguro médico?' },
+        { en: "I don't have a car.", es: 'No tengo carro.' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"Tengo" in English is:', promptEs: '"Tengo" en inglés es:',
       answer: 'I have', options: ['I have', 'I am', 'I need', 'I want'] },
@@ -49,6 +74,12 @@ const module: Module = {
       answer: 'I have an appointment', options: ['I have an appointment', 'I have a headache', 'I have a job', 'I have a question'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"No tengo dinero" in English is:', promptEs: '"No tengo dinero" en inglés es:',
       answer: "I don't have any money", options: ["I don't have any money", "I don't have a job", "I have a lot of money", "I need money"] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "They ___ two cars."', promptEs: 'Completa: "They ___ two cars."',
+      answer: 'have', options: ['have', 'has', 'is', 'are'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: 'Complete: "___ he have a car?"', promptEs: 'Completa: "___ he have a car?"',
+      answer: 'Does', options: ['Does', 'Do', 'Is', 'Has'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: '"Tengo una pregunta" in English is:', promptEs: '"Tengo una pregunta" en inglés es:',
+      answer: 'I have a question', options: ['I have a question', 'I have an appointment', 'I have a headache', 'I have a job'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Talking about your family and belongings',
@@ -96,6 +127,26 @@ const module: Module = {
         { speaker: 'student', en: "Yes, I'll come back tomorrow with money. Thank you!", es: 'Sí, regresaré mañana con dinero. ¡Gracias!' },
         { speaker: 'tutor', en: 'Perfect! You practiced asking questions and talking about money and work.', es: 'Perfecto! Practicaste hacer preguntas y hablar sobre el dinero y el trabajo.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Family Inventory',
+      titleEs: 'Inventario Familiar',
+      instructionsEn: 'Student: describe what three family members have — a car, a job, an apartment, children — using "has" for each person. Tutor: check that "has" (not "have") is used correctly every time.',
+      instructionsEs: 'Estudiante: describe lo que tienen tres familiares — un carro, un trabajo, un apartamento, hijos — usando "has" para cada persona. Tutor: revisa que se use "has" (no "have") correctamente cada vez.',
+    },
+    {
+      titleEn: '20 Questions: Do You Have...?',
+      titleEs: '20 Preguntas: Do You Have...?',
+      instructionsEn: 'Take turns asking "Do you have...?" or "Does he/she have...?" about real everyday items (a phone, a car, children, a job). Answer honestly with "I have..." or "I don\'t have..."',
+      instructionsEs: 'Túrnense para preguntar "Do you have...?" o "Does he/she have...?" sobre objetos cotidianos reales (un teléfono, un carro, hijos, un trabajo). Respondan con honestidad usando "I have..." o "I don\'t have..."',
+    },
+    {
+      titleEn: 'At the Front Desk',
+      titleEs: 'En la Recepción',
+      instructionsEn: 'Tutor: play a receptionist at a new office (not a doctor\'s office this time — try a school or a bank). Student: explain you have an appointment, but you don\'t have a document they ask for, and answer their follow-up questions.',
+      instructionsEs: 'Tutor: haz de recepcionista en una oficina nueva (no un consultorio médico esta vez — prueba una escuela o un banco). Estudiante: explica que tienes una cita, pero que no tienes un documento que te piden, y responde sus preguntas de seguimiento.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: 'I ____ two children.', promptEs: 'Tengo dos hijos. (I ____ two children.)', answer: 'have' },

@@ -38,6 +38,30 @@ const module: Module = {
     { id: 'there', en: 'there', es: 'allí / allá',
       exampleEn: 'The bus stop is over there.', exampleEs: 'La parada de autobús está allá.' },
   ],
+  grammar: [
+    {
+      titleEn: 'Near or far, one or many',
+      titleEs: 'Cerca o lejos, uno o varios',
+      explanationEn: 'English has four words for pointing things out, based on two questions: is it near or far, and is it one thing or more than one? Near + one = this. Far + one = that. Near + many = these. Far + many = those.',
+      explanationEs: 'El inglés tiene cuatro palabras para señalar cosas, según dos preguntas: ¿está cerca o lejos?, y ¿es una cosa o más de una? Cerca + una = this. Lejos + una = that. Cerca + varias = these. Lejos + varias = those.',
+      examples: [
+        { en: 'This is my house.', es: 'Esta es mi casa.' },
+        { en: 'That is my car.', es: 'Ese es mi carro.' },
+        { en: 'These are my keys.', es: 'Estas son mis llaves.' },
+        { en: 'Those are my shoes.', es: 'Esos son mis zapatos.' },
+      ],
+    },
+    {
+      titleEn: 'Asking about things you don\'t recognize',
+      titleEs: 'Preguntar sobre cosas que no reconoces',
+      explanationEn: '"What is this/that?" asks someone to identify something. "Is this/that yours?" asks who something belongs to. Use "this/that" (not "these/those") even if you\'re not sure yet whether it\'s one thing.',
+      explanationEs: '"What is this/that?" le pide a alguien que identifique algo. "Is this/that yours?" pregunta a quién pertenece algo. Usa "this/that" (no "these/those") incluso si todavía no estás seguro de si es una sola cosa.',
+      examples: [
+        { en: 'What is this? I don\'t know this word.', es: '¿Qué es esto? No conozco esta palabra.' },
+        { en: 'Excuse me, is this yours?', es: 'Disculpe, ¿esto es suyo?' },
+      ],
+    },
+  ],
   quiz: [
     { id: 'q1', type: 'multiple-choice', promptEn: '"Esto" (near, one thing) in English is:', promptEs: '"Esto" (cerca, una cosa) en inglés es:',
       answer: 'this', options: ['this', 'that', 'these', 'those'] },
@@ -49,6 +73,12 @@ const module: Module = {
       answer: 'That', options: ['That', 'This', 'These', 'Those'] },
     { id: 'q5', type: 'multiple-choice', promptEn: '"¿Qué es esto?" in English is:', promptEs: '"¿Qué es esto?" en inglés es:',
       answer: 'What is this?', options: ['What is this?', 'What is that?', 'Is this yours?', 'I like this one'] },
+    { id: 'q6', type: 'multiple-choice', promptEn: 'Complete: "___ are my shoes." (far away, plural)', promptEs: 'Completa: "___ are my shoes." (lejos, plural)',
+      answer: 'Those', options: ['Those', 'These', 'This', 'That'] },
+    { id: 'q7', type: 'multiple-choice', promptEn: '"¿Esto es tuyo?" in English is:', promptEs: '"¿Esto es tuyo?" en inglés es:',
+      answer: 'Is this yours?', options: ['Is this yours?', 'What is this?', 'I like this one', 'This is my house'] },
+    { id: 'q8', type: 'multiple-choice', promptEn: 'Which word is near and singular?', promptEs: '¿Qué palabra es cercana y singular?',
+      answer: 'this', options: ['this', 'that', 'these', 'those'] },
   ],
   teachingScenarios: [
     { label: 'Part 1: Pointing out things at home',
@@ -92,6 +122,26 @@ const module: Module = {
         { speaker: 'student', en: 'Thank you. I like this one better than that one.', es: 'Gracias. Me gusta este más que ese.' },
         { speaker: 'tutor', en: 'Great! You asked about things you do not recognize very naturally.', es: '¡Genial! Preguntaste sobre cosas que no reconoces de forma muy natural.' },
       ] },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Point and Say',
+      titleEs: 'Señala y Di',
+      instructionsEn: 'Student: point to four real objects nearby and say "This is my..." or "These are my...", then point to two objects farther away and say "That is..." or "Those are..."',
+      instructionsEs: 'Estudiante: señala cuatro objetos reales cercanos y di "This is my..." o "These are my...", luego señala dos objetos más lejanos y di "That is..." o "Those are..."',
+    },
+    {
+      titleEn: 'Lost and Found',
+      titleEs: 'Objetos Perdidos',
+      instructionsEn: 'Tutor: hold up or point to several objects one at a time and ask "Is this yours?" Student: answer truthfully, then ask the tutor the same question about an object of theirs.',
+      instructionsEs: 'Tutor: sostén o señala varios objetos uno a la vez y pregunta "Is this yours?" Estudiante: responde con la verdad, y luego hazle al tutor la misma pregunta sobre un objeto suyo.',
+    },
+    {
+      titleEn: 'This One or That One?',
+      titleEs: '¿Este o Ese?',
+      instructionsEn: 'Tutor: describe two similar items, one nearby and one across the room (two shirts, two chairs). Student: say which one you like using "I like this one" or "I like that one," and explain why in one more sentence.',
+      instructionsEs: 'Tutor: describe dos artículos similares, uno cerca y otro al otro lado del salón (dos camisas, dos sillas). Estudiante: di cuál te gusta usando "I like this one" o "I like that one," y explica por qué en una oración más.',
+    },
   ],
   worksheet: [
     { id: 'w1', promptEn: '____ is my house.', promptEs: 'Esta es mi casa. (____ is my house.)', answer: 'This' },

@@ -108,6 +108,29 @@ const module: Module = {
       exampleEs: 'Disculpe, ¿dónde está la estación de metro más cercana?',
     },
   ],
+  grammar: [
+    {
+      titleEn: 'Giving directions: commands with no subject',
+      titleEs: 'Dar direcciones: órdenes sin sujeto',
+      explanationEn: 'Directions are usually given as commands — start directly with the verb, with no "you" in front: Turn left. Go straight ahead. Take the uptown train.',
+      explanationEs: 'Las direcciones normalmente se dan como órdenes — empieza directamente con el verbo, sin "you" al frente: Turn left. Go straight ahead. Take the uptown train.',
+      examples: [
+        { en: 'Turn left at the light.', es: 'Dobla a la izquierda en el semáforo.' },
+        { en: 'Go straight ahead for two blocks.', es: 'Sigue derecho por dos cuadras.' },
+        { en: 'Take the uptown train to get to Manhattan.', es: 'Toma el tren uptown para ir a Manhattan.' },
+      ],
+    },
+    {
+      titleEn: '"Which" and "Where" for finding your way',
+      titleEs: '"Which" y "Where" para encontrar tu camino',
+      explanationEn: 'Use "Which train/bus goes to...?" when choosing between options. Use "Where is...?" when you need to locate something specific, like a station or a street.',
+      explanationEs: 'Usa "Which train/bus goes to...?" cuando eliges entre opciones. Usa "Where is...?" cuando necesitas ubicar algo específico, como una estación o una calle.',
+      examples: [
+        { en: 'Excuse me, which train goes to Times Square?', es: 'Disculpe, ¿qué tren va a Times Square?' },
+        { en: 'Excuse me, where is the nearest subway station?', es: 'Disculpe, ¿dónde está la estación de metro más cercana?' },
+      ],
+    },
+  ],
   quiz: [
     {
       id: 'q1',
@@ -148,6 +171,30 @@ const module: Module = {
       promptEs: '"La cuadra" en inglés es:',
       answer: 'block',
       options: ['block', 'corner', 'platform', 'exit'],
+    },
+    {
+      id: 'q6',
+      type: 'multiple-choice',
+      promptEn: 'Which word means the train is heading toward Brooklyn?',
+      promptEs: '¿Qué palabra significa que el tren va hacia Brooklyn?',
+      answer: 'downtown',
+      options: ['downtown', 'uptown', 'transfer', 'exit'],
+    },
+    {
+      id: 'q7',
+      type: 'multiple-choice',
+      promptEn: 'Complete: "___ train goes to Times Square?"',
+      promptEs: 'Completa: "___ train goes to Times Square?"',
+      answer: 'Which',
+      options: ['Which', 'Where', 'What', 'Who'],
+    },
+    {
+      id: 'q8',
+      type: 'multiple-choice',
+      promptEn: '"La esquina" in English is:',
+      promptEs: '"La esquina" en inglés es:',
+      answer: 'corner',
+      options: ['corner', 'block', 'platform', 'exit'],
     },
   ],
   teachingScenarios: [
@@ -197,6 +244,26 @@ const module: Module = {
         { speaker: 'student', en: 'Thank you so much for the directions.', es: 'Muchas gracias por las direcciones.' },
         { speaker: 'tutor', en: 'You\'re welcome. Good luck at your interview!', es: 'De nada. ¡Buena suerte en su entrevista!' },
       ],
+    },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'Give Real Directions',
+      titleEs: 'Da Direcciones Reales',
+      instructionsEn: 'Student: give the tutor real directions from where you are right now to a nearby landmark (a store, the subway station), using turn left/right, straight ahead, block, and corner.',
+      instructionsEs: 'Estudiante: dale al tutor direcciones reales desde donde están ahora hasta un lugar cercano (una tienda, la estación de metro), usando turn left/right, straight ahead, block y corner.',
+    },
+    {
+      titleEn: 'Which Train?',
+      titleEs: '¿Qué Tren?',
+      instructionsEn: 'Tutor: name three different NYC destinations one at a time. Student: ask "Which train goes to...?" for each, and repeat back the tutor\'s uptown/downtown and transfer instructions to confirm understanding.',
+      instructionsEs: 'Tutor: nombra tres destinos diferentes de Nueva York, uno a la vez. Estudiante: pregunta "Which train goes to...?" para cada uno, y repite las instrucciones de uptown/downtown y transbordo del tutor para confirmar que entendió.',
+    },
+    {
+      titleEn: 'Lost on the Platform',
+      titleEs: 'Perdido en el Andén',
+      instructionsEn: 'Tutor: play a stranger on the platform. Student: explain you\'re not sure if you\'re on the right platform and ask for help figuring out uptown vs. downtown and whether you need to transfer.',
+      instructionsEs: 'Tutor: haz de desconocido en el andén. Estudiante: explica que no estás seguro de si estás en el andén correcto y pide ayuda para saber si es uptown o downtown y si necesitas hacer transbordo.',
     },
   ],
   worksheet: [

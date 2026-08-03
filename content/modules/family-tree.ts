@@ -108,6 +108,27 @@ const module: Module = {
       exampleEs: '¿Cuántos hijos tienes? Tengo dos.',
     },
   ],
+  grammar: [
+    {
+      titleEn: '"I have" / "I don\'t have" + family member',
+      titleEs: '"I have" / "I don\'t have" + familiar',
+      explanationEn: 'Use "I have..." to say who is in your family, and "I don\'t have any..." to say you don\'t have a certain family member. Add "-s" to make family words plural when there\'s more than one.',
+      explanationEs: 'Usa "I have..." para decir quién está en tu familia, y "I don\'t have any..." para decir que no tienes cierto familiar. Agrega "-s" para hacer plurales las palabras de familia cuando hay más de uno.',
+      examples: [
+        { en: 'I have two brothers and one sister.', es: 'Tengo dos hermanos y una hermana.' },
+        { en: "I don't have any brothers.", es: 'No tengo hermanos.' },
+      ],
+    },
+    {
+      titleEn: 'Asking "How many...?"',
+      titleEs: 'Preguntar "How many...?"',
+      explanationEn: '"How many" + a plural noun + "do you have?" asks for a count. Answer with "I have" + the number.',
+      explanationEs: '"How many" + un sustantivo plural + "do you have?" pregunta por una cantidad. Responde con "I have" + el número.',
+      examples: [
+        { en: 'How many children do you have? I have two.', es: '¿Cuántos hijos tienes? Tengo dos.' },
+      ],
+    },
+  ],
   quiz: [
     {
       id: 'q1',
@@ -148,6 +169,30 @@ const module: Module = {
       promptEs: '"La hija" en inglés es:',
       answer: 'daughter',
       options: ['daughter', 'sister', 'mother', 'grandmother'],
+    },
+    {
+      id: 'q6',
+      type: 'multiple-choice',
+      promptEn: 'Complete: "I ___ two brothers and one sister."',
+      promptEs: 'Completa: "I ___ two brothers and one sister."',
+      answer: 'have',
+      options: ['have', 'has', 'am', 'are'],
+    },
+    {
+      id: 'q7',
+      type: 'multiple-choice',
+      promptEn: '"Mis abuelos" in English is:',
+      promptEs: '"Mis abuelos" en inglés es:',
+      answer: 'my grandparents',
+      options: ['my grandparents', 'my parents', 'my cousins', 'my aunts'],
+    },
+    {
+      id: 'q8',
+      type: 'multiple-choice',
+      promptEn: 'Which question asks how many kids someone has?',
+      promptEs: '¿Qué pregunta pregunta cuántos hijos tiene alguien?',
+      answer: 'How many children do you have?',
+      options: ['How many children do you have?', 'Do you have children?', "What is your child's name?", 'Where are your children?'],
     },
   ],
   teachingScenarios: [
@@ -195,6 +240,26 @@ const module: Module = {
         { speaker: 'student', en: 'How many children do you have?', es: '¿Cuántos hijos tienes?' },
         { speaker: 'tutor', en: 'I have two children! Great job describing your extended family and asking questions back.', es: '¡Tengo dos hijos! Buen trabajo describiendo tu familia extendida y haciendo preguntas también.' },
       ],
+    },
+  ],
+  practiceActivities: [
+    {
+      titleEn: 'My Family Tree',
+      titleEs: 'Mi Árbol Genealógico',
+      instructionsEn: 'Student: describe your immediate family in at least five sentences — parents, siblings, spouse, children — using "I have..." and "I don\'t have..."',
+      instructionsEs: 'Estudiante: describe a tu familia inmediata en al menos cinco oraciones — padres, hermanos, esposo/a, hijos — usando "I have..." y "I don\'t have..."',
+    },
+    {
+      titleEn: 'Guess Who',
+      titleEs: 'Adivina Quién',
+      instructionsEn: 'Tutor: describe a family member using a relationship clue without naming the word (e.g., "my father\'s brother"). Student: guess the English word (uncle). Then swap roles.',
+      instructionsEs: 'Tutor: describe a un familiar usando una pista de parentesco sin decir la palabra (por ejemplo, "my father\'s brother"). Estudiante: adivina la palabra en inglés (uncle). Luego cambien de papel.',
+    },
+    {
+      titleEn: 'Ask About My Family',
+      titleEs: 'Pregunta Sobre Mi Familia',
+      instructionsEn: 'Student: ask the tutor "How many children do you have?" and two more follow-up questions about the tutor\'s family, practicing natural back-and-forth conversation.',
+      instructionsEs: 'Estudiante: pregúntale al tutor "How many children do you have?" y dos preguntas de seguimiento más sobre la familia del tutor, practicando una conversación natural.',
     },
   ],
   worksheet: [
