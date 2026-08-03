@@ -81,63 +81,127 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: At the library',
-      text: 'You are at the public library and want to ask for a specific book. Practice using "a," "an," and "the" when talking about books.',
-      script: [
-        { speaker: 'tutor', en: 'Welcome to the library! Can I help you find a book?', es: '¡Bienvenido a la biblioteca! ¿Puedo ayudarte a encontrar un libro?' },
-        { speaker: 'student', en: 'Yes, I am looking for a book about New York.', es: 'Sí, estoy buscando un libro sobre Nueva York.' },
-        { speaker: 'tutor', en: 'Great, this is a good book for that.', es: 'Muy bien, este es un buen libro para eso.' },
-        { speaker: 'student', en: 'Thank you! Is this the only book about New York?', es: '¡Gracias! ¿Es este el único libro sobre Nueva York?' },
-        { speaker: 'tutor', en: 'No, these are three more books about the city.', es: 'No, estos son tres libros más sobre la ciudad.' },
-        { speaker: 'student', en: 'Perfect, I will take a book and the map too.', es: 'Perfecto, voy a llevar un libro y también el mapa.' },
-        { speaker: 'tutor', en: 'Good choice. Do you need an English dictionary too?', es: 'Buena elección. ¿También necesitas un diccionario de inglés?' },
-        { speaker: 'student', en: 'Yes, please. I need some help with new words.', es: 'Sí, por favor. Necesito un poco de ayuda con palabras nuevas.' },
-        { speaker: 'tutor', en: 'Here you go. Enjoy the books!', es: 'Aquí tienes. ¡Disfruta los libros!' },
+      text: 'You are at the library looking for a book.',
+      wordBank: [
+        { en: 'New York', es: 'Nueva York' },
+        { en: 'cooking', es: 'cocina' },
+        { en: 'gardening', es: 'jardinería' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Can I help you find a book?', es: '¿Puedo ayudarte a encontrar un libro?' },
+          { speaker: 'student', en: "I'm looking for a book about New York.", es: 'Busco un libro sobre Nueva York.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Here is a good book for that.', es: 'Aquí hay un buen libro para eso.' },
+          { speaker: 'student', en: 'Thank you! Do you have an English dictionary?', es: '¡Gracias! ¿Tiene un diccionario de inglés?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Yes, right here. Enjoy the books!', es: 'Sí, aquí está. ¡Disfruta los libros!' },
+          { speaker: 'student', en: 'Thank you very much.', es: 'Muchas gracias.' },
+        ],
       ] },
     { label: 'Part 2: Talking about people you know',
-      text: 'Practice describing the men, women, and children in your building or neighborhood, using the correct plural forms.',
-      script: [
-        { speaker: 'tutor', en: 'Tell me about the people in your building.', es: 'Cuéntame sobre las personas en tu edificio.' },
-        { speaker: 'student', en: 'There are many families. The children play outside every day.', es: 'Hay muchas familias. Los niños juegan afuera todos los días.' },
-        { speaker: 'tutor', en: "That's nice. What about the adults?", es: '¡Qué bonito! ¿Y los adultos?' },
-        { speaker: 'student', en: 'The women meet in the morning, and the men meet in the evening.', es: 'Las mujeres se reúnen en la mañana, y los hombres se reúnen en la tarde.' },
-        { speaker: 'tutor', en: 'Do you know a woman or a man there well?', es: '¿Conoces bien a una mujer o a un hombre allí?' },
-        { speaker: 'student', en: 'Yes, I know one woman and one man very well. They are kind.', es: 'Sí, conozco bien a una mujer y a un hombre. Son amables.' },
-        { speaker: 'tutor', en: 'And how many children live in your building?', es: '¿Y cuántos niños viven en tu edificio?' },
-        { speaker: 'student', en: 'I think there are ten children in total.', es: 'Creo que hay diez niños en total.' },
-        { speaker: 'tutor', en: 'It sounds like a friendly neighborhood.', es: 'Suena como un vecindario amigable.' },
+      text: 'Talk about the people in your building.',
+      wordBank: [
+        { en: 'ten', es: 'diez' },
+        { en: 'five', es: 'cinco' },
+        { en: 'twenty', es: 'veinte' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Tell me about your building.', es: 'Cuéntame sobre tu edificio.' },
+          { speaker: 'student', en: 'The children play outside every day.', es: 'Los niños juegan afuera todos los días.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How many children live there?', es: '¿Cuántos niños viven ahí?' },
+          { speaker: 'student', en: 'Ten children.', es: 'Diez niños.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'And the women and men — are they friendly?', es: '¿Y las mujeres y los hombres son amables?' },
+          { speaker: 'student', en: 'Yes, very kind.', es: 'Sí, muy amables.' },
+        ],
       ] },
     { label: 'Part 3: Everyday requests at home',
-      text: 'Practice simple requests like asking for some water or explaining you don\'t have much money right now.',
-      script: [
-        { speaker: 'tutor', en: 'Excuse me, can I have some water, please?', es: '¿Me puede dar agua, por favor?' },
-        { speaker: 'student', en: 'Of course, here is some water for you.', es: 'Claro, aquí tienes agua.' },
-        { speaker: 'tutor', en: 'Thank you. Now imagine you need to ask me for water. Try it.', es: 'Gracias. Ahora imagina que necesitas pedirme agua. Inténtalo.' },
-        { speaker: 'student', en: 'Can I have some water, please?', es: '¿Me puede dar agua, por favor?' },
-        { speaker: 'tutor', en: "Very good! Now, what if you don't have much money this week?", es: '¡Muy bien! Ahora, ¿qué pasa si no tienes mucho dinero esta semana?' },
-        { speaker: 'student', en: "I don't have much money right now.", es: 'No tengo mucho dinero ahora mismo.' },
-        { speaker: 'tutor', en: 'That is a clear way to explain it. Do you need some help?', es: 'Esa es una manera clara de explicarlo. ¿Necesitas un poco de ayuda?' },
-        { speaker: 'student', en: 'Yes, I need some help this week.', es: 'Sí, necesito un poco de ayuda esta semana.' },
-        { speaker: 'tutor', en: 'Good job practicing these everyday requests.', es: 'Buen trabajo practicando estas peticiones cotidianas.' },
+      text: 'Practice simple requests using "some."',
+      wordBank: [
+        { en: 'water', es: 'agua' },
+        { en: 'help', es: 'ayuda' },
+        { en: 'money', es: 'dinero' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Can I help you?', es: '¿Puedo ayudarte?' },
+          { speaker: 'student', en: 'Can I have some water, please?', es: '¿Me puede dar agua, por favor?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Of course. Do you need anything else?', es: 'Claro. ¿Necesitas algo más?' },
+          { speaker: 'student', en: 'I need some help.', es: 'Necesito un poco de ayuda.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'No problem.', es: 'No hay problema.' },
+          { speaker: 'student', en: "I don't have much money right now.", es: 'No tengo mucho dinero ahora mismo.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
       titleEn: 'A or An?',
       titleEs: '¿A o An?',
-      instructionsEn: 'Tutor: say nouns one at a time — apple, book, house, umbrella, orange, car, dog. Student: say "a" or "an" quickly before each one, based on the sound.',
-      instructionsEs: 'Tutor: di sustantivos uno a la vez — apple, book, house, umbrella, orange, car, dog. Estudiante: di "a" o "an" rápidamente antes de cada uno, según el sonido.',
+      instructionsEn: 'Your tutor says a word. Say "a" or "an" before it.',
+      instructionsEs: 'Tu tutor dice una palabra. Di "a" o "an" antes de ella.',
+      wordBank: [
+        { en: 'apple', es: 'manzana' },
+        { en: 'car', es: 'carro' },
+        { en: 'umbrella', es: 'paraguas' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Apple.', es: 'Manzana.' },
+          { speaker: 'student', en: 'An apple.', es: 'Una manzana.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Car.', es: 'Carro.' },
+          { speaker: 'student', en: 'A car.', es: 'Un carro.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Describe What\'s Around You',
+      titleEn: "Describe What's Around You",
       titleEs: 'Describe lo que te Rodea',
-      instructionsEn: 'Student: name five objects you can see right now, using "a" or "an" the first time you mention each one, then say a second sentence about it using "the" (e.g., "I see a book. The book is red.").',
-      instructionsEs: 'Estudiante: nombra cinco objetos que puedes ver ahora mismo, usando "a" o "an" la primera vez que mencionas cada uno, y luego di una segunda oración sobre él usando "the" (por ejemplo, "I see a book. The book is red.").',
+      instructionsEn: 'Name something you see, then describe it using "the."',
+      instructionsEs: 'Nombra algo que ves, y luego descríbelo usando "the."',
+      wordBank: [
+        { en: 'book', es: 'libro' },
+        { en: 'chair', es: 'silla' },
+        { en: 'table', es: 'mesa' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you see?', es: '¿Qué ves?' },
+          { speaker: 'student', en: 'I see a book.', es: 'Veo un libro.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Tell me more.', es: 'Cuéntame más.' },
+          { speaker: 'student', en: 'The book is red.', es: 'El libro es rojo.' },
+        ],
+      ],
     },
     {
       titleEn: 'Plural Challenge',
       titleEs: 'Reto de Plurales',
-      instructionsEn: 'Tutor: say the singular form of a noun from today (child, woman, man, book, apple). Student: give the plural form in a full sentence, such as "There are three children."',
-      instructionsEs: 'Tutor: di la forma singular de un sustantivo de hoy (child, woman, man, book, apple). Estudiante: da la forma plural en una oración completa, como "There are three children."',
+      instructionsEn: 'Your tutor says one person. Say the group.',
+      instructionsEs: 'Tu tutor dice una persona. Di el grupo.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'One child.', es: 'Un niño.' },
+          { speaker: 'student', en: 'Three children.', es: 'Tres niños.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'One woman.', es: 'Una mujer.' },
+          { speaker: 'student', en: 'Two women.', es: 'Dos mujeres.' },
+        ],
+      ],
     },
   ],
   worksheet: [

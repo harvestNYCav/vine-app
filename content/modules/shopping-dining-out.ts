@@ -81,63 +81,126 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Getting a table at a restaurant',
-      text: 'You arrive at a restaurant with your family. Practice asking if there is a table available and asking for a table for a certain number of people.',
-      script: [
-        { speaker: 'tutor', en: 'Welcome! How many people are in your group?', es: '¡Bienvenidos! ¿Cuántas personas son en su grupo?' },
-        { speaker: 'student', en: 'Do you have a table available for four?', es: '¿Tiene una mesa disponible para cuatro?' },
-        { speaker: 'tutor', en: 'Let me check... yes, we do.', es: 'Déjeme revisar... sí, tenemos.' },
-        { speaker: 'student', en: 'We need a table for two, actually, please.', es: 'En realidad, necesitamos una mesa para dos, por favor.' },
-        { speaker: 'tutor', en: 'No problem, right this way.', es: 'No hay problema, por aquí por favor.' },
-        { speaker: 'student', en: 'Thank you very much.', es: 'Muchas gracias.' },
-        { speaker: 'tutor', en: 'Here is your table. Your waitress will be with you shortly.', es: 'Aquí está su mesa. Su mesera vendrá pronto.' },
-        { speaker: 'student', en: 'Great, thank you.', es: 'Perfecto, gracias.' },
-        { speaker: 'tutor', en: 'Enjoy your meal when she arrives!', es: '¡Disfruten su comida cuando ella llegue!' },
+      text: 'You arrive at a restaurant and ask for a table.',
+      wordBank: [
+        { en: 'two', es: 'dos' },
+        { en: 'four', es: 'cuatro' },
+        { en: 'six', es: 'seis' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Welcome! How many people?', es: '¡Bienvenidos! ¿Cuántas personas?' },
+          { speaker: 'student', en: 'A table for two, please.', es: 'Una mesa para dos, por favor.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Right this way.', es: 'Por aquí, por favor.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Here is your table.', es: 'Aquí está su mesa.' },
+          { speaker: 'student', en: 'Great, thank you.', es: 'Perfecto, gracias.' },
+        ],
       ] },
     { label: 'Part 2: Ordering food and asking about ingredients',
-      text: 'The waiter brings the menu. Practice ordering food, asking if a dish is spicy, and mentioning a food allergy.',
-      script: [
-        { speaker: 'tutor', en: 'Hello, here is the menu. Can I get you something to drink first?', es: 'Hola, aquí está el menú. ¿Le traigo algo de tomar primero?' },
-        { speaker: 'student', en: 'Can I see the menu again, please? I need a moment.', es: '¿Puedo ver el menú otra vez, por favor? Necesito un momento.' },
-        { speaker: 'tutor', en: 'Of course, take your time.', es: 'Claro, tómese su tiempo.' },
-        { speaker: 'student', en: 'I would like to order the chicken.', es: 'Quisiera ordenar el pollo.' },
-        { speaker: 'tutor', en: 'Good choice. Do you have any allergies?', es: 'Buena elección. ¿Tiene alguna alergia?' },
-        { speaker: 'student', en: "Yes, I'm allergic to peanuts.", es: 'Sí, soy alérgico a los cacahuates.' },
-        { speaker: 'tutor', en: "Thank you for telling me, I'll let the kitchen know.", es: 'Gracias por decirme, le avisaré a la cocina.' },
-        { speaker: 'student', en: 'Also, is this dish spicy?', es: 'También, ¿este plato es picante?' },
-        { speaker: 'tutor', en: "No, it's not spicy at all. I'll bring your order soon.", es: 'No, no es nada picante. Le traeré su orden pronto.' },
+      text: 'The waiter brings the menu. Practice ordering food and mentioning a food allergy.',
+      wordBank: [
+        { en: 'chicken', es: 'pollo' },
+        { en: 'fish', es: 'pescado' },
+        { en: 'rice', es: 'arroz' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Can I get you something to drink first?', es: '¿Le traigo algo de tomar primero?' },
+          { speaker: 'student', en: 'Water, please.', es: 'Agua, por favor.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What would you like to order?', es: '¿Qué quisiera ordenar?' },
+          { speaker: 'student', en: 'The chicken, please.', es: 'El pollo, por favor.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have any allergies?', es: '¿Tiene alguna alergia?' },
+          { speaker: 'student', en: "Yes, I'm allergic to peanuts.", es: 'Sí, soy alérgico a los cacahuates.' },
+        ],
+        [
+          { speaker: 'student', en: 'Is this spicy?', es: '¿Esto es picante?' },
+          { speaker: 'tutor', en: "No, it's not spicy.", es: 'No, no es picante.' },
+        ],
       ] },
-    { label: 'Part 3: Paying and asking about store hours',
-      text: 'You are ready to leave. Practice asking for the check, talking about the tip, and later asking a nearby store what time it closes.',
-      script: [
-        { speaker: 'tutor', en: 'How was everything today?', es: '¿Cómo estuvo todo hoy?' },
-        { speaker: 'student', en: 'It was great. Can I have the check, please?', es: 'Estuvo delicioso. ¿Me trae la cuenta, por favor?' },
-        { speaker: 'tutor', en: 'Of course, here you go.', es: 'Claro, aquí tiene.' },
-        { speaker: 'student', en: 'Should I leave a tip for the waitress?', es: '¿Debería dejar una propina para la mesera?' },
-        { speaker: 'tutor', en: 'Yes, a tip is usually appreciated.', es: 'Sí, una propina normalmente se aprecia.' },
-        { speaker: 'student', en: 'Great, thank you.', es: 'Perfecto, gracias.' },
-        { speaker: 'tutor', en: 'Hi there, can I help you?', es: 'Hola, ¿le puedo ayudar?' },
-        { speaker: 'student', en: 'Yes, what time do you close?', es: 'Sí, ¿a qué hora cierran?' },
-        { speaker: 'tutor', en: 'We close at nine tonight. Have a good evening!', es: 'Cerramos a las nueve esta noche. ¡Que tenga buena noche!' },
+    { label: 'Part 3: Paying',
+      text: 'You are ready to leave. Practice asking for the check and leaving a tip.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'Can I have the check, please?', es: '¿Me trae la cuenta, por favor?' },
+          { speaker: 'tutor', en: 'Of course, here you go.', es: 'Claro, aquí tiene.' },
+        ],
+        [
+          { speaker: 'student', en: 'Should I leave a tip?', es: '¿Debería dejar una propina?' },
+          { speaker: 'tutor', en: 'Yes, that is appreciated.', es: 'Sí, se aprecia.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you very much.', es: 'Muchas gracias.' },
+          { speaker: 'tutor', en: 'You are welcome!', es: '¡De nada!' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
-      titleEn: 'Order a Full Meal',
-      titleEs: 'Ordena una Comida Completa',
-      instructionsEn: 'Student: role-play ordering a complete meal without reading from a script — ask for the menu, order food, mention an allergy or ask if something is spicy, and ask for the check at the end. Tutor: play the waiter and respond naturally.',
-      instructionsEs: 'Estudiante: representa el pedido de una comida completa sin leer un guion — pide el menú, ordena comida, menciona una alergia o pregunta si algo es picante, y pide la cuenta al final. Tutor: haz de mesero y responde de forma natural.',
-    },
-    {
       titleEn: 'At the Store',
       titleEs: 'En la Tienda',
-      instructionsEn: 'Tutor: play a store clerk. Student: ask about store hours, what time the store closes, and use "Do you have...?" to ask about a specific product.',
-      instructionsEs: 'Tutor: haz de empleado de tienda. Estudiante: pregunta sobre el horario de la tienda, a qué hora cierra, y usa "Do you have...?" para preguntar sobre un producto específico.',
+      instructionsEn: 'Practice asking a store what time it closes.',
+      instructionsEs: 'Practica preguntarle a una tienda a qué hora cierra.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'What time do you close?', es: '¿A qué hora cierran?' },
+          { speaker: 'tutor', en: 'We close at nine.', es: 'Cerramos a las nueve.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+          { speaker: 'tutor', en: 'You are welcome.', es: 'De nada.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Takeout Order',
+      titleEn: 'Ask About a Product',
+      titleEs: 'Pregunta Sobre un Producto',
+      instructionsEn: 'Practice asking a store clerk if they have something you need.',
+      instructionsEs: 'Practica preguntarle a un empleado de tienda si tiene algo que necesitas.',
+      wordBank: [
+        { en: 'bread', es: 'pan' },
+        { en: 'milk', es: 'leche' },
+        { en: 'coffee', es: 'café' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'Do you have bread?', es: '¿Tiene pan?' },
+          { speaker: 'tutor', en: 'Yes, right here.', es: 'Sí, aquí está.' },
+        ],
+        [
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+          { speaker: 'tutor', en: 'You are welcome.', es: 'De nada.' },
+        ],
+      ],
+    },
+    {
+      titleEn: 'Order Takeout',
       titleEs: 'Pedido para Llevar',
-      instructionsEn: 'Student: imagine calling a restaurant to order takeout. Order two items "to go," mention if you have any allergies, and confirm the total before hanging up.',
-      instructionsEs: 'Estudiante: imagina que llamas a un restaurante para pedir comida para llevar. Ordena dos artículos "to go," menciona si tienes alguna alergia, y confirma el total antes de colgar.',
+      instructionsEn: 'Practice ordering food to go over the phone.',
+      instructionsEs: 'Practica ordenar comida para llevar por teléfono.',
+      wordBank: [
+        { en: 'soup', es: 'sopa' },
+        { en: 'salad', es: 'ensalada' },
+        { en: 'rice', es: 'arroz' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'I would like the soup, to go.', es: 'Quisiera la sopa, para llevar.' },
+          { speaker: 'tutor', en: 'Anything else?', es: '¿Algo más?' },
+        ],
+        [
+          { speaker: 'student', en: "That's all, thank you.", es: 'Eso es todo, gracias.' },
+          { speaker: 'tutor', en: 'Your total is ten dollars.', es: 'Su total es diez dólares.' },
+        ],
+      ],
     },
   ],
   worksheet: [

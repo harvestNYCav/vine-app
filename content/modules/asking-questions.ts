@@ -82,68 +82,118 @@ const module: Module = {
       answer: 'How many children do you have?', options: ['How many children do you have?', 'How much is this?', 'How old are you?', 'What time is it?'] },
   ],
   teachingScenarios: [
-    { label: 'Part 1: Basic questions when meeting someone or feeling lost',
-      text: 'Practice asking basic questions like "Who is that?", "What is this?", and "Where do you live?" in a conversation.',
-      script: [
-        { speaker: 'tutor', en: "Let's practice meeting someone new. Imagine we just met at a party. Who is that over there?", es: 'Practiquemos conocer a alguien nuevo. Imagina que nos acabamos de conocer en una fiesta. ¿Quién es ese de allá?' },
-        { speaker: 'student', en: 'Who is that?', es: '¿Quién es ese?' },
-        { speaker: 'tutor', en: "That's my neighbor. Now imagine you see something you don't recognize on the table.", es: 'Ese es mi vecino. Ahora imagina que ves algo que no reconoces en la mesa.' },
-        { speaker: 'student', en: 'What is this?', es: '¿Qué es esto?' },
-        { speaker: 'tutor', en: "Good question! Now let's say you're lost in a new neighborhood and want to know where I live.", es: '¡Buena pregunta! Ahora digamos que estás perdido en un vecindario nuevo y quieres saber dónde vivo.' },
-        { speaker: 'student', en: 'Where do you live?', es: '¿Dónde vives?' },
-        { speaker: 'tutor', en: 'I live nearby. What if you needed to know when your appointment is?', es: 'Vivo cerca. ¿Qué tal si necesitaras saber cuándo es tu cita?' },
-        { speaker: 'student', en: 'When is your appointment?', es: '¿Cuándo es tu cita?' },
-        { speaker: 'tutor', en: 'Perfect, and if someone is late, you could ask why.', es: 'Perfecto, y si alguien llega tarde, podrías preguntar por qué.' },
-        { speaker: 'student', en: 'Why are you late?', es: '¿Por qué llegas tarde?' },
-        { speaker: 'tutor', en: 'Excellent! You now have who, what, where, and when ready for any conversation.', es: '¡Excelente! Ahora tienes quién, qué, dónde y cuándo listos para cualquier conversación.' },
-      ] },
-    { label: 'Part 2: Asking about prices and quantities',
-      text: 'You are shopping and need to ask how much something costs and how many of something you can buy.',
-      script: [
-        { speaker: 'tutor', en: "I'm the cashier today. Welcome to the store! How can I help you?", es: 'Soy el cajero hoy. ¡Bienvenido a la tienda! ¿Cómo puedo ayudarte?' },
-        { speaker: 'student', en: 'How much is this?', es: '¿Cuánto cuesta esto?' },
-        { speaker: 'tutor', en: "It's five dollars. Are you buying more than one?", es: 'Cuesta cinco dólares. ¿Vas a comprar más de uno?' },
-        { speaker: 'student', en: 'How many can I buy?', es: '¿Cuántos puedo comprar?' },
-        { speaker: 'tutor', en: 'You can buy as many as you like! Do you have children, by the way?', es: '¡Puedes comprar tantos como quieras! Por cierto, ¿tienes hijos?' },
-        { speaker: 'student', en: 'How many children do you have?', es: '¿Cuántos hijos tienes?' },
-        { speaker: 'tutor', en: 'I have two! Now, is the pharmacy far from here?', es: '¡Tengo dos! Ahora, ¿la farmacia está lejos de aquí?' },
-        { speaker: 'student', en: 'Is it far from here?', es: '¿Está lejos de aquí?' },
-        { speaker: 'tutor', en: 'No, just two blocks. Do you know what time it is, by chance?', es: 'No, solo dos cuadras. ¿Sabes qué hora es, por casualidad?' },
-        { speaker: 'student', en: 'What time is it?', es: '¿Qué hora es?' },
-        { speaker: 'tutor', en: 'It\'s almost closing time. Great job asking about prices and quantities today!', es: 'Ya casi es hora de cerrar. ¡Buen trabajo preguntando sobre precios y cantidades hoy!' },
-      ] },
-    { label: 'Part 3: Politely asking for help',
-      text: 'You need help with a form or directions. Practice "Can you help me?", "Could you please help me?", and asking if someone speaks Spanish.',
-      script: [
-        { speaker: 'tutor', en: "Let's imagine you need help with a form at an office. I'll be the clerk.", es: 'Imaginemos que necesitas ayuda con un formulario en una oficina. Yo seré el empleado.' },
-        { speaker: 'student', en: 'Excuse me, can you help me?', es: 'Disculpe, ¿puedes ayudarme?' },
-        { speaker: 'tutor', en: 'Of course. What do you need?', es: 'Claro. ¿Qué necesitas?' },
-        { speaker: 'student', en: 'Could you please help me fill out this form?', es: '¿Podría ayudarme a llenar este formulario, por favor?' },
-        { speaker: 'tutor', en: 'Yes, I can help with that. Do you need directions somewhere too?', es: 'Sí, puedo ayudarte con eso. ¿También necesitas indicaciones a algún lugar?' },
-        { speaker: 'student', en: 'Where is the bathroom?', es: '¿Dónde está el baño?' },
-        { speaker: 'tutor', en: 'It\'s down the hall. Is there anything else?', es: 'Está al final del pasillo. ¿Hay algo más?' },
-        { speaker: 'student', en: 'Excuse me, do you speak Spanish?', es: 'Disculpe, ¿habla español?' },
-        { speaker: 'tutor', en: 'A little bit! Between English and Spanish, we\'ll understand each other just fine.', es: 'Un poco. Entre inglés y español, nos entenderemos bien.' },
-      ] },
+    {
+      label: 'Part 1: Basic questions when meeting someone or feeling lost',
+      text: 'Practice basic questions like "Who is that?" and "Where do you live?"',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'We just met at a party. Who is that over there?', es: 'Nos acabamos de conocer en una fiesta. ¿Quién es ese de allá?' },
+          { speaker: 'student', en: 'Who is that?', es: '¿Quién es ese?' },
+        ],
+        [
+          { speaker: 'tutor', en: "That's my neighbor. Where do you live?", es: 'Ese es mi vecino. ¿Dónde vives?' },
+          { speaker: 'student', en: 'Where do you live?', es: '¿Dónde vives?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'I live nearby. And why are you late today?', es: 'Vivo cerca. ¿Y por qué llegas tarde hoy?' },
+          { speaker: 'student', en: 'Why are you late?', es: '¿Por qué llegas tarde?' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 2: Asking about prices and quantities',
+      text: 'You are shopping. Practice asking how much something costs and how many you can buy.',
+      wordBank: [
+        { en: 'five dollars', es: 'cinco dólares' },
+        { en: 'ten dollars', es: 'diez dólares' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Welcome to the store! How can I help you?', es: '¡Bienvenido a la tienda! ¿Cómo puedo ayudarte?' },
+          { speaker: 'student', en: 'How much is this?', es: '¿Cuánto cuesta esto?' },
+        ],
+        [
+          { speaker: 'tutor', en: "It's five dollars. Buying more than one?", es: 'Cuesta cinco dólares. ¿Vas a comprar más de uno?' },
+          { speaker: 'student', en: 'How many can I buy?', es: '¿Cuántos puedo comprar?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'As many as you like! Do you know what time it is?', es: '¡Tantos como quieras! ¿Sabes qué hora es?' },
+          { speaker: 'student', en: 'What time is it?', es: '¿Qué hora es?' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 3: Politely asking for help',
+      text: 'You need help with a form at an office. Practice asking politely.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: "I'm the clerk. How can I help?", es: 'Soy el empleado. ¿Cómo puedo ayudar?' },
+          { speaker: 'student', en: 'Excuse me, can you help me?', es: 'Disculpe, ¿puedes ayudarme?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Of course. What do you need?', es: 'Claro. ¿Qué necesitas?' },
+          { speaker: 'student', en: 'Could you please help me fill out this form?', es: '¿Podría ayudarme a llenar este formulario, por favor?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Yes, I can help with that.', es: 'Sí, puedo ayudarte con eso.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+      ],
+    },
   ],
   practiceActivities: [
     {
       titleEn: 'Interview Your Tutor',
       titleEs: 'Entrevista a tu Tutor',
-      instructionsEn: 'Student: ask the tutor at least six different WH- questions from today\'s vocabulary (who, what, where, when, why, how, how much, how many). Tutor: answer each one in a full sentence. Then swap roles so the tutor interviews the student.',
-      instructionsEs: 'Estudiante: hazle al tutor al menos seis preguntas diferentes del vocabulario de hoy (who, what, where, when, why, how, how much, how many). Tutor: responde cada una con una oración completa. Luego cambien de papel para que el tutor entreviste al estudiante.',
+      instructionsEn: 'Ask your tutor a few WH- questions.',
+      instructionsEs: 'Hazle a tu tutor algunas preguntas con WH-.',
+      wordBank: [
+        { en: 'What', es: 'Qué' },
+        { en: 'Where', es: 'Dónde' },
+        { en: 'How many', es: 'Cuántos' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'What is your favorite food?', es: '¿Cuál es tu comida favorita?' },
+          { speaker: 'tutor', en: 'Pizza.', es: 'La pizza.' },
+        ],
+        [
+          { speaker: 'student', en: 'How many children do you have?', es: '¿Cuántos hijos tienes?' },
+          { speaker: 'tutor', en: 'Two.', es: 'Dos.' },
+        ],
+      ],
     },
     {
       titleEn: 'Ask a Stranger',
       titleEs: 'Pregúntale a un Desconocido',
-      instructionsEn: 'Tutor: describe three real-life situations one at a time — you are lost on the street, you are at a doctor\'s office, you are at a store and want to know the price of something. Student: ask the question you would actually use in each situation.',
-      instructionsEs: 'Tutor: describe tres situaciones de la vida real, una a la vez — estás perdido en la calle, estás en el consultorio de un médico, estás en una tienda y quieres saber el precio de algo. Estudiante: haz la pregunta que realmente usarías en cada situación.',
+      instructionsEn: 'The tutor describes a situation. Ask the right question.',
+      instructionsEs: 'El tutor describe una situación. Haz la pregunta correcta.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'You are lost on the street.', es: 'Estás perdido en la calle.' },
+          { speaker: 'student', en: 'Excuse me, where is the bus stop?', es: 'Disculpe, ¿dónde está la parada de autobús?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'You want to know the price of something.', es: 'Quieres saber el precio de algo.' },
+          { speaker: 'student', en: 'How much is this?', es: '¿Cuánto cuesta esto?' },
+        ],
+      ],
     },
     {
       titleEn: 'Polite Request Practice',
       titleEs: 'Práctica de Peticiones Corteses',
-      instructionsEn: 'Student: make three polite requests to the tutor using "Can you...?" or "Could you please...?" for everyday classroom tasks — for example, asking the tutor to repeat something, spell a word, or speak more slowly. Tutor: respond naturally each time.',
-      instructionsEs: 'Estudiante: haz tres peticiones corteses al tutor usando "Can you...?" o "Could you please...?" para tareas cotidianas del salón — por ejemplo, pedirle al tutor que repita algo, deletree una palabra o hable más despacio. Tutor: responde de forma natural cada vez.',
+      instructionsEn: 'Make a polite request to your tutor.',
+      instructionsEs: 'Haz una petición cortés a tu tutor.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'Can you repeat that, please?', es: '¿Puedes repetir eso, por favor?' },
+          { speaker: 'tutor', en: 'Sure, no problem.', es: 'Claro, no hay problema.' },
+        ],
+        [
+          { speaker: 'student', en: 'Could you please speak more slowly?', es: '¿Podría hablar más despacio, por favor?' },
+          { speaker: 'tutor', en: 'Of course.', es: 'Claro que sí.' },
+        ],
+      ],
     },
   ],
   worksheet: [

@@ -83,63 +83,120 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Describing symptoms to a doctor',
-      text: 'You are at a clinic and need to describe how you feel — that you feel sick, have a fever, or something hurts.',
-      script: [
-        { speaker: 'tutor', en: "I'll be the doctor at the clinic. Tell me how you feel.", es: 'Yo seré el doctor en la clínica. Dígame cómo se siente.' },
-        { speaker: 'student', en: 'I feel sick today.', es: 'Me siento mal hoy.' },
-        { speaker: 'tutor', en: 'I am sorry to hear that. Do you have a fever?', es: 'Lo siento. ¿Tiene fiebre?' },
-        { speaker: 'student', en: 'Yes, I have a fever and a cough.', es: 'Sí, tengo fiebre y tos.' },
-        { speaker: 'tutor', en: 'Does anything hurt?', es: '¿Le duele algo?' },
-        { speaker: 'student', en: 'My stomach hurts.', es: 'Me duele el estómago.' },
-        { speaker: 'tutor', en: 'I see. When did you start feeling sick?', es: 'Entiendo. ¿Cuándo empezó a sentirse mal?' },
-        { speaker: 'student', en: 'I need to see a doctor because I feel sick and my stomach hurts.', es: 'Necesito ver a un doctor porque me siento mal y me duele el estómago.' },
-        { speaker: 'tutor', en: 'Thank you for explaining your symptoms so clearly. I can help you feel better.', es: 'Gracias por explicar sus síntomas tan claramente. Puedo ayudarle a sentirse mejor.' },
+      text: 'You are at a clinic and need to describe how you feel.',
+      wordBank: [
+        { en: 'stomach', es: 'estómago' },
+        { en: 'head', es: 'cabeza' },
+        { en: 'back', es: 'espalda' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'How do you feel?', es: '¿Cómo se siente?' },
+          { speaker: 'student', en: 'I feel sick.', es: 'Me siento mal.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have a fever?', es: '¿Tiene fiebre?' },
+          { speaker: 'student', en: 'Yes, I have a fever.', es: 'Sí, tengo fiebre.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Does anything hurt?', es: '¿Le duele algo?' },
+          { speaker: 'student', en: 'My stomach hurts.', es: 'Me duele el estómago.' },
+        ],
       ] },
     { label: 'Part 2: A medical emergency',
-      text: 'Someone near you is badly hurt. Practice calling for help, saying "Call 911," and asking "Are you okay?"',
-      script: [
-        { speaker: 'tutor', en: "Now let's practice an emergency. I'll pretend to be hurt on the street. What do you say first?", es: 'Ahora vamos a practicar una emergencia. Yo fingiré estar lastimado en la calle. ¿Qué dice primero?' },
-        { speaker: 'student', en: 'Are you okay?', es: '¿Estás bien?' },
-        { speaker: 'tutor', en: "No, I'm hurt badly! Please help.", es: '¡No, estoy muy lastimado! Por favor ayúdeme.' },
-        { speaker: 'student', en: 'Help! Someone call 911!', es: '¡Ayuda! ¡Alguien llame al 911!' },
-        { speaker: 'tutor', en: 'Good, you are calling for help. What do you tell the 911 operator?', es: 'Bien, está pidiendo ayuda. ¿Qué le dice al operador de 911?' },
-        { speaker: 'student', en: 'Call 911, it is an emergency! We need an ambulance.', es: '¡Llame al 911, es una emergencia! Necesitamos una ambulancia.' },
-        { speaker: 'tutor', en: 'The ambulance is coming. Where should they take me?', es: 'La ambulancia está llegando. ¿Adónde deben llevarme?' },
-        { speaker: 'student', en: 'We need to go to the emergency room.', es: 'Necesitamos ir a la sala de emergencias.' },
-        { speaker: 'tutor', en: 'Excellent! You knew exactly how to ask for help and call for emergency care.', es: '¡Excelente! Supo exactamente cómo pedir ayuda y llamar para atención de emergencia.' },
+      text: 'Someone near you is badly hurt. Practice calling for help.',
+      chunks: [
+        [
+          { speaker: 'student', en: 'Are you okay?', es: '¿Estás bien?' },
+          { speaker: 'tutor', en: "No, I'm hurt badly!", es: '¡No, estoy muy lastimado!' },
+        ],
+        [
+          { speaker: 'student', en: 'Help! Call 911!', es: '¡Ayuda! ¡Llame al 911!' },
+          { speaker: 'tutor', en: 'Good, keep calling for help.', es: 'Bien, siga pidiendo ayuda.' },
+        ],
+        [
+          { speaker: 'student', en: 'We need an ambulance.', es: 'Necesitamos una ambulancia.' },
+          { speaker: 'tutor', en: "It's coming.", es: 'Está llegando.' },
+        ],
       ] },
     { label: 'Part 3: At the pharmacy',
       text: 'Practice picking up medicine at the pharmacy and answering questions about insurance.',
-      script: [
-        { speaker: 'tutor', en: "Let's practice the pharmacy. I'll be the pharmacist. How can I help you?", es: 'Vamos a practicar en la farmacia. Yo seré el farmacéutico. ¿Cómo puedo ayudarle?' },
-        { speaker: 'student', en: 'I need to pick up medicine at the pharmacy.', es: 'Necesito recoger medicina en la farmacia.' },
-        { speaker: 'tutor', en: 'Sure, what is your name, and do you have insurance?', es: 'Claro, ¿cuál es su nombre, y tiene seguro médico?' },
-        { speaker: 'student', en: 'Yes, I have insurance.', es: 'Sí, tengo seguro médico.' },
-        { speaker: 'tutor', en: 'Great, here are your pills. Take this medicine twice a day.', es: 'Muy bien, aquí están sus pastillas. Tome esta medicina dos veces al día.' },
-        { speaker: 'student', en: 'Twice a day, thank you. What if I do not have insurance next time?', es: 'Dos veces al día, gracias. ¿Y si no tengo seguro médico la próxima vez?' },
-        { speaker: 'tutor', en: 'We can talk about payment options without insurance too.', es: 'También podemos hablar de opciones de pago sin seguro médico.' },
-        { speaker: 'student', en: 'Thank you very much for your help.', es: 'Muchas gracias por su ayuda.' },
-        { speaker: 'tutor', en: 'You are welcome! Now you can confidently pick up medicine and talk about insurance at the pharmacy.', es: '¡De nada! Ahora puede recoger medicina y hablar sobre el seguro médico en la farmacia con confianza.' },
+      chunks: [
+        [
+          { speaker: 'student', en: 'I need to pick up medicine.', es: 'Necesito recoger medicina.' },
+          { speaker: 'tutor', en: 'What is your name?', es: '¿Cuál es su nombre?' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have insurance?', es: '¿Tiene seguro médico?' },
+          { speaker: 'student', en: 'Yes, I have insurance.', es: 'Sí, tengo seguro médico.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Take this medicine twice a day.', es: 'Tome esta medicina dos veces al día.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
-      titleEn: 'Describe Your Symptoms',
-      titleEs: 'Describe tus Síntomas',
-      instructionsEn: 'Tutor: name a situation one at a time — a fever, a stomach ache, a headache, a cough. Student: play the patient and describe how you feel to the doctor using "I feel...," "I have...," or "___ hurts."',
-      instructionsEs: 'Tutor: nombra una situación a la vez — fiebre, dolor de estómago, dolor de cabeza, tos. Estudiante: haz el papel de paciente y describe cómo te sientes al doctor usando "I feel...," "I have...," o "___ hurts."',
+      titleEn: 'How Do You Feel?',
+      titleEs: '¿Cómo Te Sientes?',
+      instructionsEn: 'Practice describing how you feel using "I feel..."',
+      instructionsEs: 'Practica describir cómo te sientes usando "I feel..."',
+      wordBank: [
+        { en: 'dizzy', es: 'mareado' },
+        { en: 'tired', es: 'cansado' },
+        { en: 'sick', es: 'mal' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'How do you feel today?', es: '¿Cómo te sientes hoy?' },
+          { speaker: 'student', en: 'I feel dizzy.', es: 'Me siento mareado.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'I am sorry to hear that.', es: 'Lo siento.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Call for Help',
-      titleEs: 'Pide Ayuda',
-      instructionsEn: 'Tutor: describe an emergency scene — someone fell down, someone can\'t breathe, someone is badly hurt. Student: react with the right urgent language ("Help!", "Call 911!") and explain what happened to the 911 operator.',
-      instructionsEs: 'Tutor: describe una escena de emergencia — alguien se cayó, alguien no puede respirar, alguien está muy lastimado. Estudiante: reacciona con el lenguaje urgente correcto ("Help!", "Call 911!") y explica lo que pasó al operador de 911.',
+      titleEn: 'Where Do We Go?',
+      titleEs: '¿Adónde Vamos?',
+      instructionsEn: 'Practice saying where to go for help in an emergency.',
+      instructionsEs: 'Practica decir adónde ir para pedir ayuda en una emergencia.',
+      wordBank: [
+        { en: 'hospital', es: 'hospital' },
+        { en: 'emergency room', es: 'sala de emergencias' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Where should we go?', es: '¿Adónde deberíamos ir?' },
+          { speaker: 'student', en: 'We need to go to the hospital.', es: 'Necesitamos ir al hospital.' },
+        ],
+        [
+          { speaker: 'tutor', en: "I'll call an ambulance.", es: 'Llamaré a una ambulancia.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+      ],
     },
     {
-      titleEn: 'At the Pharmacy, Round Two',
-      titleEs: 'En la Farmacia, Segunda Ronda',
-      instructionsEn: 'Tutor: play the pharmacist again, but this time change the details — a different medicine, a different schedule (once a day, three times a day), and ask whether the student has insurance. Student: respond using today\'s vocabulary without reading from the earlier script.',
-      instructionsEs: 'Tutor: haz de farmacéutico otra vez, pero esta vez cambia los detalles — una medicina diferente, un horario diferente (una vez al día, tres veces al día), y pregunta si el estudiante tiene seguro médico. Estudiante: responde usando el vocabulario de hoy sin leer el guion anterior.',
+      titleEn: "What's Wrong?",
+      titleEs: '¿Qué Tiene?',
+      instructionsEn: 'Practice telling the doctor a different symptom.',
+      instructionsEs: 'Practica decirle al doctor un síntoma diferente.',
+      wordBank: [
+        { en: 'a cough', es: 'tos' },
+        { en: 'a headache', es: 'dolor de cabeza' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: "What's wrong?", es: '¿Qué tiene?' },
+          { speaker: 'student', en: 'I have a cough.', es: 'Tengo tos.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Take care of yourself.', es: 'Cuídese.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+      ],
     },
   ],
   worksheet: [

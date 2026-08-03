@@ -80,63 +80,120 @@ const module: Module = {
   ],
   teachingScenarios: [
     { label: 'Part 1: Your daily routine',
-      text: 'Practice talking about things you do every day — waking up, going to work, taking the bus — using the present tense.',
-      script: [
-        { speaker: 'tutor', en: 'Tell me, what do you do every day?', es: 'Dime, ¿qué haces todos los días?' },
-        { speaker: 'student', en: 'I work every day.', es: 'Trabajo todos los días.' },
-        { speaker: 'tutor', en: 'Good. How do you get to work?', es: 'Bien. ¿Cómo llegas al trabajo?' },
-        { speaker: 'student', en: 'I take the bus every day.', es: 'Tomo el autobús todos los días.' },
-        { speaker: 'tutor', en: 'Do you always take the bus, or sometimes something else?', es: '¿Siempre tomas el autobús, o a veces algo más?' },
-        { speaker: 'student', en: 'I always take the bus. I never drive.', es: 'Siempre tomo el autobús. Nunca manejo.' },
-        { speaker: 'tutor', en: 'And right now, what are you doing?', es: '¿Y ahora mismo, qué estás haciendo?' },
-        { speaker: 'student', en: 'I am working right now, at this moment.', es: 'Estoy trabajando ahora mismo, en este momento.' },
-        { speaker: 'tutor', en: "Great, you're using the present tense very well.", es: 'Muy bien, estás usando el tiempo presente muy bien.' },
+      text: 'Talk about what you do every day.',
+      wordBank: [
+        { en: 'work', es: 'trabajar' },
+        { en: 'walk', es: 'caminar' },
+        { en: 'cook', es: 'cocinar' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you do every day?', es: '¿Qué haces todos los días?' },
+          { speaker: 'student', en: 'I work every day.', es: 'Trabajo todos los días.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How do you get to work?', es: '¿Cómo llegas al trabajo?' },
+          { speaker: 'student', en: 'I take the bus.', es: 'Tomo el autobús.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What are you doing right now?', es: '¿Qué estás haciendo ahora mismo?' },
+          { speaker: 'student', en: 'I am working right now.', es: 'Estoy trabajando ahora mismo.' },
+        ],
       ] },
     { label: 'Part 2: What happened yesterday or last week',
-      text: 'Practice talking about something that already happened, like a doctor\'s visit last week or what you did yesterday, using the past tense.',
-      script: [
-        { speaker: 'tutor', en: 'Tell me about yesterday. What did you do?', es: 'Cuéntame sobre ayer. ¿Qué hiciste?' },
-        { speaker: 'student', en: 'Yesterday I worked.', es: 'Ayer trabajé.' },
-        { speaker: 'tutor', en: 'And did anything happen last week?', es: '¿Y pasó algo la semana pasada?' },
-        { speaker: 'student', en: 'I saw the doctor last week.', es: 'Vi al doctor la semana pasada.' },
-        { speaker: 'tutor', en: 'I hope everything was okay. Where were you?', es: 'Espero que todo estuviera bien. ¿Dónde estabas?' },
-        { speaker: 'student', en: "I was at the doctor's office in the morning.", es: 'Yo estaba en el consultorio del doctor en la mañana.' },
-        { speaker: 'tutor', en: 'And after that, did you go anywhere else?', es: '¿Y después de eso, fuiste a algún otro lugar?' },
-        { speaker: 'student', en: 'Yes, I went to the store after.', es: 'Sí, fui a la tienda después.' },
-        { speaker: 'tutor', en: 'Very good, you told that whole story in the past tense.', es: 'Muy bien, contaste toda esa historia en el tiempo pasado.' },
+      text: 'Talk about something that already happened.',
+      wordBank: [
+        { en: 'yesterday', es: 'ayer' },
+        { en: 'last week', es: 'la semana pasada' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What did you do yesterday?', es: '¿Qué hiciste ayer?' },
+          { speaker: 'student', en: 'I worked yesterday.', es: 'Ayer trabajé.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Did anything happen last week?', es: '¿Pasó algo la semana pasada?' },
+          { speaker: 'student', en: 'I saw the doctor last week.', es: 'Vi al doctor la semana pasada.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Where were you?', es: '¿Dónde estabas?' },
+          { speaker: 'student', en: "I was at the doctor's office.", es: 'Estaba en el consultorio del doctor.' },
+        ],
       ] },
     { label: 'Part 3: Future plans and a simple "if"',
-      text: 'Practice talking about plans for tomorrow or next week, and one simple "if" plan, like "If I have time next week, I will visit my family."',
-      script: [
-        { speaker: 'tutor', en: 'What are your plans for tomorrow?', es: '¿Cuáles son tus planes para mañana?' },
-        { speaker: 'student', en: 'I will work tomorrow.', es: 'Trabajaré mañana.' },
-        { speaker: 'tutor', en: 'And what about next week?', es: '¿Y qué tal la próxima semana?' },
-        { speaker: 'student', en: 'I will start my new job next week.', es: 'Empezaré mi nuevo trabajo la próxima semana.' },
-        { speaker: 'tutor', en: "That's exciting! What if you have some free time next week?", es: '¡Qué emocionante! ¿Y si tienes algo de tiempo libre la próxima semana?' },
-        { speaker: 'student', en: 'If I have time next week, I will visit my family.', es: 'Si tengo tiempo la próxima semana, visitaré a mi familia.' },
-        { speaker: 'tutor', en: 'And what will you do if it rains that day?', es: '¿Y qué harás si llueve ese día?' },
-        { speaker: 'student', en: 'If it rains, I will stay home.', es: 'Si llueve, me quedaré en casa.' },
-        { speaker: 'tutor', en: "Excellent! You're ready to talk about the future.", es: '¡Excelente! Ya estás listo para hablar del futuro.' },
+      text: 'Talk about plans for tomorrow and next week.',
+      wordBank: [
+        { en: 'tomorrow', es: 'mañana' },
+        { en: 'next week', es: 'la próxima semana' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What are your plans for tomorrow?', es: '¿Cuáles son tus planes para mañana?' },
+          { speaker: 'student', en: 'I will work tomorrow.', es: 'Trabajaré mañana.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What about next week?', es: '¿Y la próxima semana?' },
+          { speaker: 'student', en: 'I will start my new job.', es: 'Empezaré mi nuevo trabajo.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What will you do if it rains?', es: '¿Qué harás si llueve?' },
+          { speaker: 'student', en: 'If it rains, I will stay home.', es: 'Si llueve, me quedaré en casa.' },
+        ],
       ] },
   ],
   practiceActivities: [
     {
       titleEn: 'Yesterday, Today, Tomorrow',
       titleEs: 'Ayer, Hoy, Mañana',
-      instructionsEn: 'Student: pick one everyday activity (work, cook, clean, study) and say it in all three tenses — "I ___ yesterday," "I ___ every day," and "I will ___ tomorrow." Tutor: check the correct verb form for each.',
-      instructionsEs: 'Estudiante: elige una actividad cotidiana (work, cook, clean, study) y dila en los tres tiempos — "I ___ yesterday," "I ___ every day," y "I will ___ tomorrow." Tutor: revisa la forma correcta del verbo en cada una.',
+      instructionsEn: 'Say one activity in the past and the future.',
+      instructionsEs: 'Di una actividad en el pasado y en el futuro.',
+      wordBank: [
+        { en: 'cook', es: 'cocinar' },
+        { en: 'clean', es: 'limpiar' },
+        { en: 'study', es: 'estudiar' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Yesterday, you...?', es: '¿Ayer, tú...?' },
+          { speaker: 'student', en: 'I cooked yesterday.', es: 'Ayer cociné.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Tomorrow, you will...?', es: '¿Mañana, tú...?' },
+          { speaker: 'student', en: 'I will cook tomorrow.', es: 'Cocinaré mañana.' },
+        ],
+      ],
     },
     {
       titleEn: 'Tell Me About Last Week',
       titleEs: 'Cuéntame Sobre la Semana Pasada',
-      instructionsEn: 'Tutor: ask three real questions about last week — "Where were you?", "What did you do?", "Did you go anywhere?" Student: answer each one in the past tense with true information.',
-      instructionsEs: 'Tutor: haz tres preguntas reales sobre la semana pasada — "Where were you?", "What did you do?", "Did you go anywhere?" Estudiante: responde cada una en el tiempo pasado con información verdadera.',
+      instructionsEn: 'Answer real questions about last week.',
+      instructionsEs: 'Responde preguntas reales sobre la semana pasada.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Where were you last week?', es: '¿Dónde estabas la semana pasada?' },
+          { speaker: 'student', en: 'I was at home.', es: 'Estaba en casa.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What did you do?', es: '¿Qué hiciste?' },
+          { speaker: 'student', en: 'I cleaned my house.', es: 'Limpié mi casa.' },
+        ],
+      ],
     },
     {
       titleEn: 'My Plans',
       titleEs: 'Mis Planes',
-      instructionsEn: 'Student: describe two real plans using "will" — one for tomorrow and one for next week. Then make one true "If..., I will..." sentence about something that might happen this week.',
-      instructionsEs: 'Estudiante: describe dos planes reales usando "will" — uno para mañana y uno para la próxima semana. Luego di una oración verdadera con "If..., I will..." sobre algo que podría pasar esta semana.',
+      instructionsEn: 'Share one real plan for next week.',
+      instructionsEs: 'Comparte un plan real para la próxima semana.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What is one plan for next week?', es: '¿Cuál es un plan para la próxima semana?' },
+          { speaker: 'student', en: 'I will visit my family.', es: 'Visitaré a mi familia.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'When will you visit them?', es: '¿Cuándo los visitarás?' },
+          { speaker: 'student', en: 'If I have time, I will visit them.', es: 'Si tengo tiempo, los visitaré.' },
+        ],
+      ],
     },
   ],
   worksheet: [

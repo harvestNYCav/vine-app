@@ -80,64 +80,121 @@ const module: Module = {
       answer: 'nobody', options: ['nobody', 'nothing', 'never', 'not yet'] },
   ],
   teachingScenarios: [
-    { label: 'Part 1: Saying you don\'t understand',
-      text: 'Practice a moment where you need to say you don\'t understand or don\'t know something, like at a doctor\'s office or in a class.',
-      script: [
-        { speaker: 'tutor', en: "Hello, I'm the doctor today. How are you feeling?", es: 'Hola, soy el doctor hoy. ¿Cómo te sientes?' },
-        { speaker: 'student', en: "I don't understand the question.", es: 'No entiendo la pregunta.' },
-        { speaker: 'tutor', en: "That's okay, let's go slowly. Do you have pain here?", es: 'Está bien, vamos despacio. ¿Tienes dolor aquí?' },
-        { speaker: 'student', en: "I don't know.", es: 'No sé.' },
-        { speaker: 'tutor', en: 'No problem. I am not going to rush you.', es: 'No hay problema. No voy a apurarte.' },
-        { speaker: 'student', en: "I'm sorry, I don't understand.", es: 'Lo siento, no entiendo.' },
-        { speaker: 'tutor', en: "Let's try again slowly. Have you taken this medicine before?", es: 'Intentemos otra vez despacio. ¿Has tomado esta medicina antes?' },
-        { speaker: 'student', en: "I don't know the answer.", es: 'No sé la respuesta.' },
-        { speaker: 'tutor', en: "That's alright — it's normal not to understand everything at first. We'll figure it out together.", es: 'Está bien — es normal no entender todo al principio. Lo resolveremos juntos.' },
-      ] },
-    { label: 'Part 2: Saying what you don\'t have or can\'t do',
-      text: 'Practice explaining that you don\'t have something (like money or a car) or that you can\'t do something (like come tomorrow).',
-      script: [
-        { speaker: 'tutor', en: "Let's imagine you're talking to your boss about tomorrow. Can you come to work?", es: 'Imaginemos que hablas con tu jefe sobre mañana. ¿Puedes venir al trabajo?' },
-        { speaker: 'student', en: "I can't come tomorrow.", es: 'No puedo venir mañana.' },
-        { speaker: 'tutor', en: 'I understand. Do you have a car to get here usually?', es: 'Entiendo. ¿Tienes carro para llegar aquí normalmente?' },
-        { speaker: 'student', en: "I don't have a car.", es: 'No tengo carro.' },
-        { speaker: 'tutor', en: 'That\'s fine. Do you have any money for the bus this week?', es: 'Está bien. ¿Tienes dinero para el autobús esta semana?' },
-        { speaker: 'student', en: "I don't have any money.", es: 'No tengo dinero.' },
-        { speaker: 'tutor', en: 'Thanks for telling me. Did you go to work yesterday?', es: 'Gracias por decirme. ¿Fuiste al trabajo ayer?' },
-        { speaker: 'student', en: "I didn't go to work yesterday.", es: 'No fui al trabajo ayer.' },
-        { speaker: 'tutor', en: "No problem — she doesn't come in on Mondays either, so we'll adjust the schedule together.", es: 'No hay problema — ella tampoco viene los lunes, así que ajustaremos el horario juntos.' },
-      ] },
-    { label: 'Part 3: Politely declining',
-      text: 'Someone offers you something. Practice politely saying no, using "No, thank you," "nothing," and "not yet."',
-      script: [
-        { speaker: 'tutor', en: 'Would you like some coffee?', es: '¿Te gustaría un poco de café?' },
-        { speaker: 'student', en: 'No, thank you.', es: 'No, gracias.' },
-        { speaker: 'tutor', en: 'Okay. What about something to eat? Nothing at all?', es: 'Está bien. ¿Y algo de comer? ¿Nada en absoluto?' },
-        { speaker: 'student', en: 'Nothing, thank you.', es: 'Nada, gracias.' },
-        { speaker: 'tutor', en: 'Have you finished the form yet?', es: '¿Ya terminaste el formulario?' },
-        { speaker: 'student', en: 'Not yet.', es: 'Todavía no.' },
-        { speaker: 'tutor', en: 'No problem, take your time. Is anybody helping you with it?', es: 'No hay problema, tómate tu tiempo. ¿Alguien te está ayudando con eso?' },
-        { speaker: 'student', en: 'Nobody is helping me right now.', es: 'No hay nadie ayudándome ahora.' },
-        { speaker: 'tutor', en: "I can help you. Let's finish it together, no rush at all.", es: 'Yo puedo ayudarte. Terminémoslo juntos, sin ninguna prisa.' },
-      ] },
+    {
+      label: 'Part 1: Saying you don\'t understand',
+      text: 'Practice a moment at the doctor\'s office where you need to say you don\'t understand.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'How are you feeling today?', es: '¿Cómo te sientes hoy?' },
+          { speaker: 'student', en: "I don't understand.", es: 'No entiendo.' },
+        ],
+        [
+          { speaker: 'tutor', en: "Let's go slowly. Do you have pain here?", es: 'Vamos despacio. ¿Tienes dolor aquí?' },
+          { speaker: 'student', en: "I don't know.", es: 'No sé.' },
+        ],
+        [
+          { speaker: 'tutor', en: "No problem, we'll figure it out together.", es: 'No hay problema, lo resolveremos juntos.' },
+          { speaker: 'student', en: 'Thank you.', es: 'Gracias.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 2: Saying what you don\'t have or can\'t do',
+      text: 'Practice explaining that you don\'t have something or can\'t do something.',
+      wordBank: [
+        { en: 'a car', es: 'un carro' },
+        { en: 'any money', es: 'dinero' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Can you come to work tomorrow?', es: '¿Puedes venir al trabajo mañana?' },
+          { speaker: 'student', en: "I can't come tomorrow.", es: 'No puedo venir mañana.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you have a car?', es: '¿Tienes carro?' },
+          { speaker: 'student', en: "I don't have a car.", es: 'No tengo carro.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Did you go to work yesterday?', es: '¿Fuiste al trabajo ayer?' },
+          { speaker: 'student', en: "I didn't go yesterday.", es: 'No fui ayer.' },
+        ],
+      ],
+    },
+    {
+      label: 'Part 3: Politely declining',
+      text: 'Someone offers you something. Practice politely saying no.',
+      wordBank: [
+        { en: 'coffee', es: 'café' },
+        { en: 'something to eat', es: 'algo de comer' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Would you like some coffee?', es: '¿Te gustaría un poco de café?' },
+          { speaker: 'student', en: 'No, thank you.', es: 'No, gracias.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Have you finished the form yet?', es: '¿Ya terminaste el formulario?' },
+          { speaker: 'student', en: 'Not yet.', es: 'Todavía no.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Is anybody helping you?', es: '¿Alguien te está ayudando?' },
+          { speaker: 'student', en: 'Nobody, right now.', es: 'Nadie, ahora mismo.' },
+        ],
+      ],
+    },
   ],
   practiceActivities: [
     {
       titleEn: 'True or False About Me',
       titleEs: 'Verdadero o Falso Sobre Mí',
-      instructionsEn: 'Tutor: make statements about the student, some true and some false ("You have three children," "You don\'t speak Spanish"). Student: correct the false ones using the right negative form (don\'t/doesn\'t/didn\'t/can\'t/am not).',
-      instructionsEs: 'Tutor: haz afirmaciones sobre el estudiante, algunas verdaderas y otras falsas ("You have three children," "You don\'t speak Spanish"). Estudiante: corrige las falsas usando la forma negativa correcta (don\'t/doesn\'t/didn\'t/can\'t/am not).',
+      instructionsEn: 'The tutor makes a statement about you. Correct it if it is false.',
+      instructionsEs: 'El tutor hace una afirmación sobre ti. Corrígela si es falsa.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'You speak French.', es: 'Hablas francés.' },
+          { speaker: 'student', en: "I don't speak French.", es: 'No hablo francés.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'You have five children.', es: 'Tienes cinco hijos.' },
+          { speaker: 'student', en: "I don't have five children.", es: 'No tengo cinco hijos.' },
+        ],
+      ],
     },
     {
       titleEn: 'What I Can\'t Do This Week',
       titleEs: 'Lo Que No Puedo Hacer Esta Semana',
-      instructionsEn: 'Student: list three real things you can\'t do this week and briefly explain why for each one, using "I can\'t... because..."',
-      instructionsEs: 'Estudiante: enumera tres cosas reales que no puedes hacer esta semana y explica brevemente por qué en cada una, usando "I can\'t... because..."',
+      instructionsEn: 'Say one real thing you can\'t do this week and why.',
+      instructionsEs: 'Di algo real que no puedes hacer esta semana y por qué.',
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What can\'t you do this week?', es: '¿Qué no puedes hacer esta semana?' },
+          { speaker: 'student', en: "I can't come on Friday.", es: 'No puedo venir el viernes.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Why not?', es: '¿Por qué no?' },
+          { speaker: 'student', en: 'I have to work.', es: 'Tengo que trabajar.' },
+        ],
+      ],
     },
     {
       titleEn: 'Polite No',
       titleEs: 'Un No Cortés',
-      instructionsEn: 'Tutor: offer the student several things one at a time (food, help, a ride, more time). Student: politely decline each one using "No, thank you," "Not yet," or "Nothing, thank you," matching the situation.',
-      instructionsEs: 'Tutor: ofrécele al estudiante varias cosas una a la vez (comida, ayuda, un aventón, más tiempo). Estudiante: rechaza cortésmente cada una usando "No, thank you," "Not yet," o "Nothing, thank you," según la situación.',
+      instructionsEn: 'The tutor offers you something. Politely decline.',
+      instructionsEs: 'El tutor te ofrece algo. Rechaza cortésmente.',
+      wordBank: [
+        { en: 'a ride', es: 'un aventón' },
+        { en: 'more time', es: 'más tiempo' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Do you need a ride?', es: '¿Necesitas un aventón?' },
+          { speaker: 'student', en: 'No, thank you.', es: 'No, gracias.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Do you want more time?', es: '¿Quieres más tiempo?' },
+          { speaker: 'student', en: 'Not yet, thank you.', es: 'Todavía no, gracias.' },
+        ],
+      ],
     },
   ],
   worksheet: [

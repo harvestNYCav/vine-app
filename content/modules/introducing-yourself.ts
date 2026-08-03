@@ -203,68 +203,137 @@ const module: Module = {
   teachingScenarios: [
     {
       label: 'Part 1: Meeting someone new',
-      text: 'You just arrived at a church community event in Queens. You want to meet the people there but do not know how to introduce yourself or start a conversation in English.',
-      script: [
-        { speaker: 'tutor', en: 'Good morning! Welcome to our church group.', es: '¡Buenos días! Bienvenido a nuestro grupo de la iglesia.' },
-        { speaker: 'student', en: 'Good morning! Thank you.', es: '¡Buenos días! Gracias.' },
-        { speaker: 'tutor', en: 'What is your name?', es: '¿Cómo te llamas?' },
-        { speaker: 'student', en: 'My name is Rosa.', es: 'Me llamo Rosa.' },
-        { speaker: 'tutor', en: 'Nice to meet you, Rosa!', es: '¡Mucho gusto, Rosa!' },
-        { speaker: 'student', en: 'Nice to meet you too.', es: 'Mucho gusto también.' },
-        { speaker: 'tutor', en: 'How are you today?', es: '¿Cómo estás hoy?' },
-        { speaker: 'student', en: 'I am fine, thank you. And you?', es: 'Estoy bien, gracias. ¿Y tú?' },
-        { speaker: 'tutor', en: 'I am fine, thank you. I am glad you came today.', es: 'Estoy bien, gracias. Me alegra que hayas venido hoy.' },
+      text: 'You are at a community event. Someone says hello.',
+      wordBank: [
+        { en: 'Rosa', es: '(su nombre)' },
+        { en: 'fine', es: 'bien' },
+        { en: 'good', es: 'bien' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Good morning!', es: '¡Buenos días!' },
+          { speaker: 'student', en: 'Good morning!', es: '¡Buenos días!' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What is your name?', es: '¿Cómo te llamas?' },
+          { speaker: 'student', en: 'My name is Rosa.', es: 'Me llamo Rosa.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Nice to meet you, Rosa!', es: '¡Mucho gusto, Rosa!' },
+          { speaker: 'student', en: 'Nice to meet you too.', es: 'Mucho gusto también.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How are you?', es: '¿Cómo estás?' },
+          { speaker: 'student', en: 'Fine, thank you.', es: 'Bien, gracias.' },
+        ],
       ],
     },
     {
       label: 'Part 2: Sharing more about yourself',
-      text: 'The conversation continues. Practice sharing where you are from, where you live now, what languages you speak, and your age.',
-      script: [
-        { speaker: 'tutor', en: 'So Rosa, where are you from?', es: 'Entonces Rosa, ¿de dónde eres?' },
-        { speaker: 'student', en: 'I am from Mexico.', es: 'Soy de México.' },
-        { speaker: 'tutor', en: 'And where do you live now?', es: '¿Y dónde vives ahora?' },
-        { speaker: 'student', en: 'I live in Queens, New York.', es: 'Vivo en Queens, Nueva York.' },
-        { speaker: 'tutor', en: 'What languages do you speak?', es: '¿Qué idiomas hablas?' },
-        { speaker: 'student', en: 'I speak Spanish and a little English.', es: 'Hablo español y un poco de inglés.' },
-        { speaker: 'tutor', en: 'How old are you?', es: '¿Cuántos años tienes?' },
-        { speaker: 'student', en: 'I am thirty-five years old.', es: 'Tengo treinta y cinco años.' },
-        { speaker: 'tutor', en: 'Thank you for sharing all of that with me.', es: 'Gracias por compartir todo eso conmigo.' },
+      text: 'Rosa keeps talking. Practice sharing where you are from and what you speak.',
+      wordBank: [
+        { en: 'Mexico', es: 'México' },
+        { en: 'Queens', es: 'Queens' },
+        { en: 'Spanish', es: 'español' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Where are you from?', es: '¿De dónde eres?' },
+          { speaker: 'student', en: 'I am from Mexico.', es: 'Soy de México.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Where do you live now?', es: '¿Dónde vives ahora?' },
+          { speaker: 'student', en: 'I live in Queens.', es: 'Vivo en Queens.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'What languages do you speak?', es: '¿Qué idiomas hablas?' },
+          { speaker: 'student', en: 'Spanish, and a little English.', es: 'Español, y un poco de inglés.' },
+        ],
       ],
     },
     {
       label: 'Part 3: Talking about work and saying goodbye',
-      text: 'The person asks what you do for work. Practice describing your job, then practice a polite goodbye as the event ends.',
-      script: [
-        { speaker: 'tutor', en: 'What do you do, Rosa?', es: '¿A qué te dedicas, Rosa?' },
-        { speaker: 'student', en: 'I work as a cook.', es: 'Trabajo como cocinera.' },
-        { speaker: 'tutor', en: 'That sounds like hard work. Do you like it?', es: 'Eso suena a trabajo duro. ¿Te gusta?' },
-        { speaker: 'student', en: 'Yes, I like it very much.', es: 'Sí, me gusta mucho.' },
-        { speaker: 'tutor', en: "It's getting late, and the event is ending.", es: 'Se está haciendo tarde, y el evento está terminando.' },
-        { speaker: 'student', en: 'Yes, I should go home now.', es: 'Sí, debo irme a casa ahora.' },
-        { speaker: 'tutor', en: 'Goodbye, Rosa! It was nice to meet you.', es: '¡Adiós, Rosa! Fue un placer conocerte.' },
-        { speaker: 'student', en: 'Goodbye! See you later.', es: '¡Adiós! Hasta luego.' },
-        { speaker: 'tutor', en: 'See you at the next event!', es: '¡Nos vemos en el próximo evento!' },
+      text: 'Practice describing your job, then say goodbye.',
+      wordBank: [
+        { en: 'cook', es: 'cocinero/a' },
+        { en: 'thirty-five', es: 'treinta y cinco' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'What do you do?', es: '¿A qué te dedicas?' },
+          { speaker: 'student', en: 'I work as a cook.', es: 'Trabajo como cocinera.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'How old are you?', es: '¿Cuántos años tienes?' },
+          { speaker: 'student', en: 'I am thirty-five.', es: 'Tengo treinta y cinco años.' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Goodbye! Nice to meet you.', es: '¡Adiós! Fue un placer conocerte.' },
+          { speaker: 'student', en: 'Goodbye! See you later.', es: '¡Adiós! Hasta luego.' },
+        ],
       ],
     },
   ],
   practiceActivities: [
     {
-      titleEn: 'Introduce Yourself to a New Neighbor',
-      titleEs: 'Preséntate a un Vecino Nuevo',
-      instructionsEn: 'Tutor: play a new neighbor who just moved in. Student: walk up and introduce yourself, using at least four phrases from today\'s vocabulary (name, where you\'re from, where you live, your age, and your work). Tutor: ask at least two follow-up questions before switching roles and doing it again.',
-      instructionsEs: 'Tutor: haz el papel de un vecino nuevo que acaba de mudarse. Estudiante: acércate y preséntate, usando al menos cuatro frases del vocabulario de hoy (nombre, de dónde eres, dónde vives, tu edad y tu trabajo). Tutor: haz al menos dos preguntas de seguimiento antes de cambiar de papel y repetirlo.',
+      titleEn: 'Meet a New Neighbor',
+      titleEs: 'Conoce a un Vecino Nuevo',
+      instructionsEn: 'Practice saying your name and where you are from to a new neighbor.',
+      instructionsEs: 'Practica decir tu nombre y de dónde eres a un vecino nuevo.',
+      wordBank: [
+        { en: '(your name)', es: '(tu nombre)' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: 'Hi! I am your new neighbor.', es: '¡Hola! Soy tu nuevo vecino.' },
+          { speaker: 'student', en: 'Hi! My name is...', es: '¡Hola! Me llamo...' },
+        ],
+        [
+          { speaker: 'tutor', en: 'Where are you from?', es: '¿De dónde eres?' },
+          { speaker: 'student', en: 'I am from...', es: 'Soy de...' },
+        ],
+      ],
     },
     {
-      titleEn: 'Question Swap',
-      titleEs: 'Intercambio de Preguntas',
-      instructionsEn: 'Take turns asking each other the questions from today\'s vocabulary — What is your name? Where are you from? What do you do? How old are you? — and answer each one in a full sentence, not a single word.',
-      instructionsEs: 'Túrnense para hacerse las preguntas del vocabulario de hoy — What is your name? Where are you from? What do you do? How old are you? — y respondan cada una con una oración completa, no con una sola palabra.',
+      titleEn: 'Ask the Questions',
+      titleEs: 'Haz las Preguntas',
+      instructionsEn: 'Now you ask the questions. Your tutor answers.',
+      instructionsEs: 'Ahora tú haces las preguntas. Tu tutor responde.',
+      wordBank: [
+        { en: 'What', es: 'Qué' },
+        { en: 'Where', es: 'Dónde' },
+        { en: 'How old', es: 'Cuántos años' },
+      ],
+      chunks: [
+        [
+          { speaker: 'student', en: 'What is your name?', es: '¿Cómo te llamas?' },
+          { speaker: 'tutor', en: 'My name is...', es: 'Me llamo...' },
+        ],
+        [
+          { speaker: 'student', en: 'How old are you?', es: '¿Cuántos años tienes?' },
+          { speaker: 'tutor', en: 'I am... years old.', es: 'Tengo... años.' },
+        ],
+      ],
     },
     {
-      titleEn: 'Fix the Sentence',
-      titleEs: 'Corrige la Oración',
-      instructionsEn: 'Tutor: say these sentences aloud one at a time, each with a small mistake, and have the student correct it out loud. 1) "My name Maria." 2) "I from Mexico." 3) "I speaks English." 4) "How old you are?" 5) "I work cook." Student should say the corrected full sentence each time.',
-      instructionsEs: 'Tutor: di estas oraciones en voz alta una por una, cada una con un pequeño error, y pide al estudiante que la corrija en voz alta. 1) "My name Maria." 2) "I from Mexico." 3) "I speaks English." 4) "How old you are?" 5) "I work cook." El estudiante debe decir la oración completa corregida cada vez.',
+      titleEn: 'Say It Right',
+      titleEs: 'Dilo Bien',
+      instructionsEn: 'Your tutor says a sentence with a small mistake. Say it correctly.',
+      instructionsEs: 'Tu tutor dice una oración con un pequeño error. Dila correctamente.',
+      wordBank: [
+        { en: 'My name is...', es: 'Me llamo...' },
+        { en: 'I am from...', es: 'Soy de...' },
+      ],
+      chunks: [
+        [
+          { speaker: 'tutor', en: '"My name Maria." — What is the right way?', es: '"My name Maria." — ¿Cuál es la forma correcta?' },
+          { speaker: 'student', en: 'My name is Maria.', es: 'Me llamo Maria.' },
+        ],
+        [
+          { speaker: 'tutor', en: '"I from Mexico." — What is the right way?', es: '"I from Mexico." — ¿Cuál es la forma correcta?' },
+          { speaker: 'student', en: 'I am from Mexico.', es: 'Soy de México.' },
+        ],
+      ],
     },
   ],
   worksheet: [

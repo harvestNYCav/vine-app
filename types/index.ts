@@ -36,10 +36,17 @@ export interface DialogueLine {
   es?: string
 }
 
+export interface WordBankItem {
+  en: string
+  es?: string
+}
+
 export interface TeachingScenario {
   label: string
   text: string
+  wordBank?: WordBankItem[]
   script?: DialogueLine[]
+  chunks?: DialogueLine[][]
 }
 
 export interface FillInBlankItem {
@@ -67,6 +74,8 @@ export interface PracticeActivity {
   titleEs?: string
   instructionsEn: string
   instructionsEs?: string
+  wordBank?: WordBankItem[]
+  chunks?: DialogueLine[][]
 }
 
 export interface Module {
