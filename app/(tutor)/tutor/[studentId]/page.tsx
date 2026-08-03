@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { ALL_MODULES, getModule } from '@/content/modules'
 import { SKILLS } from '@/lib/math'
 import { filterModulesByTracks, getStudentTracks } from '@/lib/tracks'
-import { todayString, nextSaturday } from '@/lib/scheduling'
+import { todayString } from '@/lib/scheduling'
 import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
 import { getMathExamsForGrade } from '@/content/math-exams'
@@ -33,9 +33,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const student = { id: rawStudent.id as string, name: rawStudent.name as string, last_active: rawStudent.last_active as number }
 
   const today = todayString()
-  const nextDate = nextSaturday()
 
-  const [tracks, settings, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, nextSessionResult, examProgressResult, elaExamProgressResult] = await Promise.all([
+  const [tracks, settings, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, examProgressResult, elaExamProgressResult] = await Promise.all([
     getStudentTracks(db, studentId),
     getStudentSettings(db, studentId),
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
@@ -44,7 +43,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     db.execute({ sql: 'SELECT * FROM math_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT session_type, COUNT(*) as count FROM math_sessions WHERE user_id = ? GROUP BY session_type', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ? ORDER BY created_at, id', args: [studentId, today] }),
-    db.execute({ sql: 'SELECT * FROM sessions WHERE student_id = ? AND date = ? ORDER BY created_at, id', args: [studentId, nextDate] }),
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
@@ -53,10 +51,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const todayLessons = (todaySessionResult.rows as unknown as ScheduledLessonRow[]).flatMap(row => {
     const module = getModule(String(row.module_slug))
     return module ? [{ sessionId: row.id, module, homeworkAssigned: Number(row.homework_assigned) === 1 }] : []
-  })
-  const nextLessons = (nextSessionResult.rows as unknown as ScheduledLessonRow[]).flatMap(row => {
-    const module = getModule(String(row.module_slug))
-    return module ? [{ sessionId: row.id, module }] : []
   })
 
   type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
@@ -129,21 +123,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
             </div>
           ) : (
             <p className="text-sm text-gray-400">No lesson assigned yet</p>
-          )}
-        </div>
-        <div>
-          <p className="text-xs text-amber-600 font-medium uppercase tracking-wide mb-0.5">Next Session · {nextDate}</p>
-          {nextLessons.length > 0 ? (
-            <div className="space-y-2">
-              {nextLessons.map(lesson => (
-                <div key={lesson.sessionId} className="rounded-xl border border-gray-100 px-3 py-2">
-                  <p className="font-semibold text-gray-800">{lesson.module.titleEn}</p>
-                  {lesson.module.track === 'esl' && <p className="text-sm text-gray-500">{lesson.module.titleEs}</p>}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-sm text-gray-400">Not planned yet</p>
           )}
         </div>
         <Link href="/tutor/lessons" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">

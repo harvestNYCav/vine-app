@@ -8,10 +8,6 @@ import {
   AssignmentStudentNotFoundError,
 } from '@/lib/tutor-lesson-assignment'
 
-function isValidDate(value: unknown): value is string {
-  return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
-}
-
 export async function POST(req: NextRequest) {
   const session = await getSession()
   if (!session || session.role !== 'tutor') {
@@ -20,7 +16,6 @@ export async function POST(req: NextRequest) {
 
   const {
     moduleSlug,
-    date: rawDate,
     studentIds,
     confirmTrackEnrollment,
     collisionAction: rawCollisionAction,
@@ -32,7 +27,7 @@ export async function POST(req: NextRequest) {
   if (!Array.isArray(studentIds) || studentIds.length === 0 || !studentIds.every(id => typeof id === 'string')) {
     return NextResponse.json({ error: 'Select at least one student' }, { status: 400 })
   }
-  const date = isValidDate(rawDate) ? rawDate : todayString()
+  const date = todayString()
   const collisionAction = rawCollisionAction === 'replace' || rawCollisionAction === 'add'
     ? rawCollisionAction
     : undefined
