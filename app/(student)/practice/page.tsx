@@ -21,6 +21,7 @@ export default async function PracticePage({
   const { mode, skill, lang } = await searchParams
 
   const session = await getSession()
+  if (session?.role === 'parent') redirect('/family')
   const db = await getDb()
   const tracks = await getStudentTracks(db, session!.userId)
   if (tracks.length === 0) redirect('/tracks')

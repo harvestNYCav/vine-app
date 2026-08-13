@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { TRACKS } from '@/lib/tracks'
 import { GRADE_LEVELS } from '@/lib/grade-levels'
+import type { TutorPairing } from '@/lib/tutor-pairings'
 import type { GradeLevel, Track } from '@/types'
 
 interface TutorOption {
@@ -18,6 +19,7 @@ export default function AdminStudentControls({
   initialMathSpanishEnabled,
   initialGradeLevel,
   tutors,
+  pairings,
 }: {
   studentId: string
   initialTutorIds: string[]
@@ -25,6 +27,7 @@ export default function AdminStudentControls({
   initialMathSpanishEnabled: boolean
   initialGradeLevel: GradeLevel | null
   tutors: TutorOption[]
+  pairings: TutorPairing[]
 }) {
   const router = useRouter()
   const [tutorIds, setTutorIds] = useState<string[]>(initialTutorIds)
@@ -81,6 +84,38 @@ export default function AdminStudentControls({
 
   return (
     <div className="space-y-3">
+      <div>
+        <p className="text-xs font-medium text-gray-500 mb-1">Most common pairings</p>
+        {pairings.length === 0 ? (
+          <p className="text-xs text-gray-400">No sessions taught yet</p>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {pairings.slice(0, 4).map(pairing => {
+              const alreadyAssigned = tutorIds.includes(pairing.tutorId)
+              const known = tutors.some(tutor => tutor.id === pairing.tutorId)
+              return (
+                <button
+                  key={pairing.tutorId}
+                  type="button"
+                  onClick={() => known && toggleTutor(pairing.tutorId)}
+                  disabled={!known}
+                  title={`${pairing.sessionDays} session ${pairing.sessionDays === 1 ? 'day' : 'days'} · last ${pairing.lastDate}${
+                    known ? (alreadyAssigned ? ' · click to unassign' : ' · click to assign') : ''
+                  }`}
+                  className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors disabled:cursor-default disabled:opacity-60 ${
+                    alreadyAssigned
+                      ? 'border-emerald-300 bg-emerald-50 text-emerald-800'
+                      : 'border-gray-200 bg-white text-gray-600'
+                  }`}
+                >
+                  {pairing.tutorName} · {pairing.sessionDays}× · {pairing.lastDate.slice(5)}
+                </button>
+              )
+            })}
+          </div>
+        )}
+      </div>
+
       <div>
         <p className="text-xs font-medium text-gray-500 mb-1">Tutors</p>
         {tutors.length === 0 ? (
