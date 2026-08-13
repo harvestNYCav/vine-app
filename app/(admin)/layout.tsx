@@ -5,8 +5,11 @@ import AdminLogoutButton from './AdminLogoutButton'
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const session = await getSession()
   if (!session) redirect('/')
-  if (session.role === 'student') redirect('/home')
-  if (session.role === 'tutor') redirect('/tutor')
+  // Allowlist the role rather than excluding known others, so a new role can
+  // never fall through into the admin dashboard.
+  if (session.role !== 'admin') {
+    redirect(session.role === 'tutor' ? '/tutor' : session.role === 'parent' ? '/family' : '/home')
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">

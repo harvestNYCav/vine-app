@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidatePath } from 'next/cache'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { normalizeTracks } from '@/lib/tracks'
@@ -123,5 +124,7 @@ export async function PATCH(req: NextRequest) {
     transaction.close()
   }
 
+  // Tracks, grade and tutors change what the student, tutor and admin pages show.
+  revalidatePath('/', 'layout')
   return NextResponse.json({ ok: true })
 }

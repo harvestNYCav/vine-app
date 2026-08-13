@@ -14,12 +14,17 @@ async function seedTestAccounts(db: Client): Promise<void> {
   const now = Date.now()
   const pinHash = await bcrypt.hash(TEST_ACCOUNT_PIN, 10)
   const tutorId = randomUUID()
+  const parentId = randomUUID()
   const studentRows = TEST_STUDENTS.map(student => ({ ...student, id: randomUUID() }))
 
   await db.batch([
     {
       sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
       args: [tutorId, 'TestTutor', pinHash, 'tutor', now, now],
+    },
+    {
+      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+      args: [parentId, 'TestParent', pinHash, 'parent', now, now],
     },
     ...studentRows.map(student => ({
       sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
@@ -35,10 +40,22 @@ async function seedTestAccounts(db: Client): Promise<void> {
         sql: 'INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, updated_at) VALUES (?, 0, 3, ?)',
         args: [student.id, now],
       })),
+    ...studentRows.map(student => ({
+      sql: 'INSERT INTO parent_students (parent_id, student_id, created_at) VALUES (?, ?, ?)',
+      args: [parentId, student.id, now],
+    })),
+    {
+      sql: 'INSERT INTO parent_settings (user_id, spanish_enabled, updated_at) VALUES (?, 1, ?)',
+      args: [parentId, now],
+    },
   ])
 }
 
-export async function deleteUserProfile(db: Client, userId: string, role: 'student' | 'tutor'): Promise<void> {
+export async function deleteUserProfile(
+  db: Client,
+  userId: string,
+  role: 'student' | 'tutor' | 'parent',
+): Promise<void> {
   const statements = [
     { sql: 'DELETE FROM user_tracks WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM student_settings WHERE user_id = ?', args: [userId] },
@@ -59,11 +76,18 @@ export async function deleteUserProfile(db: Client, userId: string, role: 'stude
     statements.push(
       { sql: 'DELETE FROM student_tutors WHERE student_id = ?', args: [userId] },
       { sql: 'DELETE FROM attendance WHERE student_id = ?', args: [userId] },
+      { sql: 'DELETE FROM parent_students WHERE student_id = ?', args: [userId] },
     )
-  } else {
+  } else if (role === 'tutor') {
     statements.push(
       { sql: 'DELETE FROM student_tutors WHERE tutor_id = ?', args: [userId] },
       { sql: 'DELETE FROM sessions WHERE tutor_id = ?', args: [userId] },
+      { sql: 'DELETE FROM tutor_check_ins WHERE tutor_id = ?', args: [userId] },
+    )
+  } else {
+    statements.push(
+      { sql: 'DELETE FROM parent_students WHERE parent_id = ?', args: [userId] },
+      { sql: 'DELETE FROM parent_settings WHERE user_id = ?', args: [userId] },
     )
   }
 
@@ -74,6 +98,7 @@ export async function deleteUserProfile(db: Client, userId: string, role: 'stude
 export async function resetDatabase(db: Client): Promise<void> {
   await db.batch([
     { sql: 'DELETE FROM attendance', args: [] },
+    { sql: 'DELETE FROM tutor_check_ins', args: [] },
     { sql: 'DELETE FROM sessions', args: [] },
     { sql: 'DELETE FROM math_sessions', args: [] },
     { sql: 'DELETE FROM math_attempts', args: [] },
@@ -90,6 +115,8 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM admin_email_allowlist', args: [] },
     { sql: 'DELETE FROM student_settings', args: [] },
     { sql: 'DELETE FROM student_tutors', args: [] },
+    { sql: 'DELETE FROM parent_students', args: [] },
+    { sql: 'DELETE FROM parent_settings', args: [] },
     { sql: 'DELETE FROM user_tracks', args: [] },
     { sql: 'DELETE FROM users', args: [] },
   ])

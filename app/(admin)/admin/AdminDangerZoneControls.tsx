@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 interface ProfileOption {
   id: string
   name: string
-  role: 'student' | 'tutor'
+  role: 'student' | 'tutor' | 'parent'
 }
 
 export default function AdminDangerZoneControls({ profiles }: { profiles: ProfileOption[] }) {

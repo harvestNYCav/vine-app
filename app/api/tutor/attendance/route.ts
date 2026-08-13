@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
+import { setStudentCheckIn } from '@/lib/check-ins'
 
 export async function GET() {
   const session = await getSession()
@@ -34,10 +35,9 @@ export async function POST(req: NextRequest) {
   }
 
   const db = await getDb()
-  await db.execute({
-    sql: 'INSERT OR REPLACE INTO attendance (session_date, student_id, present) VALUES (?, ?, ?)',
-    args: [sessionDate, studentId, present ? 1 : 0],
-  })
+  // Same write path as the check-in page so the admin board always knows who
+  // marked a student, whichever screen the tutor used.
+  await setStudentCheckIn(db, { date: sessionDate, studentId, present, recordedBy: session.userId })
 
   return NextResponse.json({ ok: true })
 }

@@ -40,7 +40,7 @@ async function initSchema(db: Client): Promise<void> {
       name TEXT NOT NULL,
       email TEXT,
       pin_hash TEXT NOT NULL,
-      role TEXT NOT NULL CHECK(role IN ('student', 'tutor', 'admin')),
+      role TEXT NOT NULL CHECK(role IN ('student', 'tutor', 'admin', 'parent')),
       created_at INTEGER NOT NULL,
       last_active INTEGER NOT NULL,
       CHECK(role != 'admin' OR email IS NOT NULL)
@@ -64,6 +64,19 @@ async function initSchema(db: Client): Promise<void> {
       user_id TEXT PRIMARY KEY,
       math_spanish_enabled INTEGER NOT NULL DEFAULT 0,
       grade_level INTEGER CHECK(grade_level BETWEEN 3 AND 8),
+      updated_at INTEGER NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS parent_students (
+      parent_id TEXT NOT NULL,
+      student_id TEXT NOT NULL,
+      created_at INTEGER NOT NULL,
+      PRIMARY KEY (parent_id, student_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS parent_settings (
+      user_id TEXT PRIMARY KEY,
+      spanish_enabled INTEGER NOT NULL DEFAULT 0,
       updated_at INTEGER NOT NULL
     );
 
@@ -145,6 +158,14 @@ async function initSchema(db: Client): Promise<void> {
       student_id TEXT NOT NULL,
       present INTEGER NOT NULL DEFAULT 0,
       PRIMARY KEY (session_date, student_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS tutor_check_ins (
+      session_date TEXT NOT NULL,
+      tutor_id TEXT NOT NULL,
+      present INTEGER NOT NULL DEFAULT 0,
+      recorded_at INTEGER NOT NULL,
+      PRIMARY KEY (session_date, tutor_id)
     );
 
     CREATE TABLE IF NOT EXISTS math_progress (
@@ -255,8 +276,11 @@ async function initSchema(db: Client): Promise<void> {
     'grade_level',
     'INTEGER CHECK(grade_level BETWEEN 3 AND 8)',
   )
+  await ensureColumn(db, 'attendance', 'recorded_by', 'TEXT')
+  await ensureColumn(db, 'attendance', 'recorded_at', 'INTEGER')
   await backfillExistingMathStudentGradeLevels(db)
-  await ensureUsersTableSupportsAdminRole(db)
+  await ensureUsersTableSupportsRole(db, 'admin')
+  await ensureUsersTableSupportsRole(db, 'parent')
   await ensureSessionsTableSupportsStudentId(db)
   await ensureSessionsTableSupportsMultipleLessons(db)
   await seedDefaultAdminAllowlistIfEmpty(db)
@@ -319,14 +343,14 @@ async function backfillExistingMathStudentGradeLevels(db: Client): Promise<void>
   ], 'write')
 }
 
-async function ensureUsersTableSupportsAdminRole(db: Client): Promise<void> {
+async function ensureUsersTableSupportsRole(db: Client, role: 'admin' | 'parent'): Promise<void> {
   const result = await db.execute({
     sql: "SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'users'",
     args: [],
   })
   const tableSql = String(result.rows[0]?.sql ?? '')
   const roleCheck = tableSql.match(/CHECK\s*\(\s*role\s+IN\s*\(([^)]*)\)\s*\)/i)
-  if (!roleCheck || /['"]admin['"]/i.test(roleCheck[1])) return
+  if (!roleCheck || new RegExp(`['"]${role}['"]`, 'i').test(roleCheck[1])) return
 
   await db.executeMultiple(`
     DROP TABLE IF EXISTS users_schema_migration;
@@ -336,7 +360,7 @@ async function ensureUsersTableSupportsAdminRole(db: Client): Promise<void> {
       name TEXT NOT NULL,
       email TEXT,
       pin_hash TEXT NOT NULL,
-      role TEXT NOT NULL CHECK(role IN ('student', 'tutor', 'admin')),
+      role TEXT NOT NULL CHECK(role IN ('student', 'tutor', 'admin', 'parent')),
       created_at INTEGER NOT NULL,
       last_active INTEGER NOT NULL,
       CHECK(role != 'admin' OR email IS NOT NULL)
