@@ -142,6 +142,18 @@ function isCountMode(type: SessionType | null): boolean {
   return type === 'flat_10' || type === 'flat_25' || type === 'custom'
 }
 
+// A selected-skills session has no single "current skill", so its summary has to
+// report the skills the student actually drilled rather than their placement.
+function practicedSkillsFrom(
+  problems: Attempt[],
+  mastery: Record<string, number>,
+): Array<{ tag: string; mastery: number }> {
+  const practiced = new Set(problems.map(problem => problem.skill_tag))
+  return SKILLS
+    .filter(skill => practiced.has(skill.tag))
+    .map(skill => ({ tag: skill.tag, mastery: mastery[skill.tag] ?? 0 }))
+}
+
 function fmtTime(ms: number): string {
   const s = Math.round(ms / 1000)
   return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, '0')}`
@@ -185,6 +197,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     total: number; correct: number; accuracy: number
     isDiagnostic: boolean; sessionType: SessionType
     currentSkill: string | null; mastery: number
+    practicedSkills: Array<{ tag: string; mastery: number }>
   } | null>(null)
   const [historyList, setHistoryList] = useState<MathSessionRecord[]>(initialHistory)
   const [customQCount, setCustomQCount] = useState(10)
@@ -192,11 +205,15 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     initialSkillFocus ? [initialSkillFocus] : SKILLS.map(s => s.tag)
   )
   const [homeTick, setHomeTick] = useState(0)
+  const [confirmQuit, setConfirmQuit] = useState(false)
   const [lbType, setLbType] = useState<SessionType>('practice_5')
   const [lbData, setLbData] = useState<LeaderboardData | null>(null)
   const [lbLoading, setLbLoading] = useState(false)
 
   // ── engine state (refs) ───────────────────────────────────────────────
+  // Last progress the server confirmed. Quitting a session rolls the engine back
+  // to this, because a discarded session was never recorded.
+  const serverProgressRef = useRef<InitialProgress>(initialProgress)
   const masteryRef = useRef<Record<string, number>>(initialProgress.skill_mastery)
   const currentSkillRef = useRef<string | null>(initialProgress.current_skill)
   const diagDoneRef = useRef(initialProgress.diagnostic_done)
@@ -447,6 +464,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
       }
       discardMathDraft()
       mathAttemptIdRef.current = null
+      serverProgressRef.current = data.progress
       masteryRef.current = data.progress.skill_mastery
       currentSkillRef.current = data.progress.current_skill
       diagDoneRef.current = data.progress.diagnostic_done
@@ -466,11 +484,61 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
         sessionType: data.record.session_type as SessionType,
         currentSkill,
         mastery,
+        practicedSkills: practicedSkillsFrom(sessionProblemsRef.current, masteryRef.current),
       })
     } catch (err) {
       console.warn('Failed to finish math attempt:', err)
       setHistoryList(prev => [localRecord, ...prev])
     }
+  }
+
+  async function cancelMathAttempt(attemptId: string) {
+    try {
+      await fetch('/vine-app/api/math/attempt', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'cancel', attemptId }),
+      })
+    } catch (err) {
+      // The attempt expires on its own, so a failed cancel is not worth blocking on.
+      console.warn('Failed to cancel math attempt:', err)
+    }
+  }
+
+  // Leaving a session the student never meant to start must not count: nothing is
+  // recorded, and the engine returns to the last progress the server confirmed.
+  function quitSession() {
+    clearTimers()
+    finishStartedRef.current = true
+    const attemptId = mathAttemptIdRef.current
+    discardMathDraft()
+    if (attemptId) void cancelMathAttempt(attemptId)
+
+    const progress = serverProgressRef.current
+    masteryRef.current = progress.skill_mastery
+    currentSkillRef.current = progress.current_skill
+    diagDoneRef.current = progress.diagnostic_done
+    totalProblemsRef.current = progress.total_problems
+    totalCorrectRef.current = progress.total_correct
+    mistakeProfileRef.current = progress.mistake_profile
+    skillCountsRef.current = progress.skill_attempt_counts
+
+    mathAttemptIdRef.current = null
+    sessionTypeRef.current = null
+    sessionProblemsRef.current = []
+    plannedProblemsRef.current = []
+    plannedProblemIndexRef.current = 0
+    mistakeQueueRef.current = []
+    awaitingNextRef.current = false
+    currentProblemRef.current = null
+    diagTierRef.current = []
+    diagTierCorrectRef.current = 0
+    diagSkillIndexRef.current = 0
+
+    setCurrentProblem(null)
+    setAnswerState('idle')
+    setFeedbackMsg('')
+    goHome()
   }
 
   async function loadLeaderboard(type: SessionType) {
@@ -489,6 +557,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     if (finishStartedRef.current) return
     finishStartedRef.current = true
     clearTimers()
+    setConfirmQuit(false)
     const problems = sessionProblemsRef.current
     const total = problems.length
     const correct = problems.filter(p => p.isCorrect).length
@@ -509,7 +578,16 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     }
 
     setHistoryList(prev => [record, ...prev])
-    setResultData({ total, correct, accuracy, isDiagnostic: type === 'diagnostic', sessionType: type, currentSkill, mastery })
+    setResultData({
+      total,
+      correct,
+      accuracy,
+      isDiagnostic: type === 'diagnostic',
+      sessionType: type,
+      currentSkill,
+      mastery,
+      practicedSkills: practicedSkillsFrom(problems, masteryRef.current),
+    })
     setScreen('results')
 
     void finishMathAttempt(record)
@@ -704,7 +782,9 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     mistakeQueueRef.current = []
     if (type !== 'custom') pinnedTagsRef.current = null
 
-    const tag = currentSkillRef.current
+    // Selected-skills sessions drill whatever the student picked, so they must
+    // not move the adaptive placement the way a normal session does.
+    const tag = type === 'custom' ? null : currentSkillRef.current
     if (tag) {
       const count = skillCountsRef.current[tag] || 0
       if ((masteryRef.current[tag] ?? 0) >= MASTERY_THRESHOLD && count >= MIN_ATTEMPTS) {
@@ -733,6 +813,7 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
 
   function goHome() {
     clearTimers()
+    setConfirmQuit(false)
     setHomeTick(t => t + 1)
     setScreen('home')
   }
@@ -742,12 +823,12 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     function handleKey(e: KeyboardEvent) {
       if (e.key === 'Enter') submitAnswer()
     }
-    if (screen === 'problem') {
+    if (screen === 'problem' && !confirmQuit) {
       window.addEventListener('keydown', handleKey)
       return () => window.removeEventListener('keydown', handleKey)
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [screen])
+  }, [screen, confirmQuit])
 
   // ── screens ──────────────────────────────────────────────────────────
 
@@ -779,6 +860,35 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     </div>
   )
 
+  if (screen === 'problem' && confirmQuit) {
+    const answered = sessionProblemsRef.current.length
+    return (
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <h2 className="text-xl font-bold text-green-800">{isSpanish ? '¿Salir de la sesión?' : 'Quit this session?'}</h2>
+        <p className="text-gray-600 text-sm mt-3">
+          {answered === 0
+            ? (isSpanish
+              ? 'Todavía no has respondido nada, así que no se guardará nada.'
+              : 'You have not answered anything yet, so nothing will be saved.')
+            : (isSpanish
+              ? `Se descartarán tus ${answered} ${answered === 1 ? 'respuesta' : 'respuestas'} y no contarán para tu progreso.`
+              : `Your ${answered} answered ${answered === 1 ? 'problem' : 'problems'} will be discarded and will not count toward your progress.`)}
+        </p>
+        <div className="flex gap-3 mt-8">
+          <button
+            onClick={() => setConfirmQuit(false)}
+            className="flex-1 bg-green-700 text-white font-semibold py-3 rounded-2xl active:scale-95 transition-transform"
+          >
+            {isSpanish ? 'Seguir practicando' : 'Keep practicing'}
+          </button>
+          <button onClick={quitSession} className="flex-1 bg-gray-100 text-gray-700 font-medium py-3 rounded-2xl">
+            {isSpanish ? 'Salir sin guardar' : 'Quit without saving'}
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   if (screen === 'problem' && currentProblem) {
     const [a, b] = currentProblem.operands
     const skillObj = getSkillByTag(currentProblem.skill_tag)
@@ -788,6 +898,17 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     const showTimer = type !== 'diagnostic'
     return (
       <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div className="flex items-center justify-between mb-3">
+          <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
+            {type ? (isSpanish ? SESSION_LABELS_ES : SESSION_LABELS)[type] ?? '' : ''}
+          </span>
+          <button
+            onClick={() => setConfirmQuit(true)}
+            className="text-xs font-semibold text-gray-400 hover:text-gray-600 px-2 py-1 rounded-lg"
+          >
+            {isSpanish ? 'Salir ✕' : 'Quit ✕'}
+          </button>
+        </div>
         {showTimer && (
           <div className="w-full bg-gray-200 rounded-full h-2 mb-5">
             <div className="h-2 rounded-full transition-all bg-green-500" style={{ width: `${timerWidth}%` }} />
@@ -849,7 +970,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
   }
 
   if (screen === 'results' && resultData) {
-    const { total, correct, accuracy, isDiagnostic, sessionType, currentSkill: sk, mastery: m } = resultData
+    const { total, correct, accuracy, isDiagnostic, sessionType, currentSkill: sk, mastery: m, practicedSkills } = resultData
+    const isSelectedSkills = sessionType === 'custom'
     const skillObj = sk ? getSkillByTag(sk) : null
     const lastType = lastSessionTypeRef.current
     return (
@@ -869,7 +991,33 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
             </div>
           ))}
         </div>
-        {skillObj && (
+        {isSelectedSkills ? (
+          practicedSkills.length > 0 && (
+            <div className="bg-green-50 rounded-2xl p-4 mt-5 border border-green-100 space-y-3">
+              <p className="text-xs font-semibold text-green-800 uppercase tracking-wide">
+                {isSpanish ? 'Habilidades practicadas' : 'Skills practiced'}
+              </p>
+              {practicedSkills.map(practiced => {
+                const practicedSkill = getSkillByTag(practiced.tag)
+                return (
+                  <div key={practiced.tag}>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm font-semibold text-green-800">
+                        {practicedSkill ? getSkillLabel(practicedSkill, isSpanish) : practiced.tag}
+                      </span>
+                      <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">
+                        {Math.round(practiced.mastery * 100)}% {isSpanish ? 'dominio' : 'mastery'}
+                      </span>
+                    </div>
+                    <div className="w-full bg-green-200 rounded-full h-2 mt-2">
+                      <div className="bg-green-600 h-2 rounded-full transition-all" style={{ width: `${practiced.mastery * 100}%` }} />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          )
+        ) : skillObj && (
           <div className="bg-green-50 rounded-2xl p-4 mt-5 border border-green-100">
             <div className="flex justify-between items-center">
               <span className="text-sm font-semibold text-green-800">{getSkillLabel(skillObj, isSpanish)}</span>

@@ -1,12 +1,12 @@
 import { notFound } from 'next/navigation'
-import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { getSkillByTag, getSkillLabel } from '@/lib/math'
 import { SKILL_LESSONS } from '@/content/math-skills'
 import LangToggle from '../../LangToggle'
 import { Suspense } from 'react'
 import { getStudentTracks } from '@/lib/tracks'
-import { getStudentSettings } from '@/lib/student-settings'
+import { resolveStudentViewResult } from '@/lib/student-view'
+import StudentViewFallback from '@/components/StudentViewFallback'
 
 function LangToggleWrapper({ currentLang }: { currentLang: 'en' | 'es' }) {
   return (
@@ -30,19 +30,19 @@ export default async function SkillPage({
   const lesson = SKILL_LESSONS[tag]
   if (!skill || !lesson) notFound()
 
-  const session = await getSession()
   const db = await getDb()
-  const [tracks, settings] = await Promise.all([
-    getStudentTracks(db, session!.userId),
-    getStudentSettings(db, session!.userId),
-  ])
+  const resolution = await resolveStudentViewResult(db)
+  if (resolution.status !== 'ok') return <StudentViewFallback resolution={resolution} />
+  const view = resolution.view
+  const readOnly = view.readOnly
+  const tracks = await getStudentTracks(db, view.studentId)
   if (!tracks.includes('math')) notFound()
-  const canUseSpanish = settings.mathSpanishEnabled
+  const canUseSpanish = view.spanishEnabled
   const isSpanish = canUseSpanish && lang === 'es'
 
   const mathResult = await db.execute({
     sql: 'SELECT skill_mastery, skill_attempt_counts FROM math_progress WHERE user_id = ?',
-    args: [session!.userId],
+    args: [view.studentId],
   })
   const mathRow = mathResult.rows[0]
 
@@ -57,7 +57,10 @@ export default async function SkillPage({
     <div className="max-w-lg mx-auto w-full px-4 py-6">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
-        <a href={`/vine-app/modules?mode=math${isSpanish ? '&lang=es' : ''}`} className="text-gray-400 hover:text-gray-600 text-2xl">←</a>
+        <a
+          href={`${readOnly ? '/vine-app/family/lessons' : '/vine-app/modules'}?mode=math${isSpanish ? '&lang=es' : ''}`}
+          className="text-gray-400 hover:text-gray-600 text-2xl"
+        >←</a>
         <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl">
           {lesson.emoji}
         </div>
@@ -73,7 +76,9 @@ export default async function SkillPage({
         <div className="bg-green-50 rounded-2xl p-4 border border-green-100 mb-5">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-semibold text-green-800">
-              {isSpanish ? 'Tu dominio' : 'Your mastery'}
+              {readOnly
+                ? `${view.studentName}${isSpanish ? ': dominio' : "'s mastery"}`
+                : isSpanish ? 'Tu dominio' : 'Your mastery'}
             </span>
             <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">{pct}%</span>
           </div>
@@ -125,11 +130,13 @@ export default async function SkillPage({
       </div>
 
       {/* Practice button */}
-      <a href={`/vine-app/practice?mode=math&skill=${tag}${isSpanish ? '&lang=es' : ''}`} className="block">
-        <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow active:scale-95 transition-transform">
-          {isSpanish ? 'Practicar esta habilidad 📝' : 'Practice this skill 📝'}
-        </button>
-      </a>
+      {!readOnly && (
+        <a href={`/vine-app/practice?mode=math&skill=${tag}${isSpanish ? '&lang=es' : ''}`} className="block">
+          <button className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-2xl shadow active:scale-95 transition-transform">
+            {isSpanish ? 'Practicar esta habilidad 📝' : 'Practice this skill 📝'}
+          </button>
+        </a>
+      )}
     </div>
   )
 }

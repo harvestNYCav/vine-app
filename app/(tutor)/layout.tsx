@@ -8,8 +8,11 @@ import { getTutorRosterScope } from '@/lib/tutor-roster-server'
 export default async function TutorLayout({ children }: { children: React.ReactNode }) {
   const session = await getSession()
   if (!session) redirect('/')
-  if (session.role === 'student') redirect('/home')
-  if (session.role === 'admin') redirect('/admin')
+  // Allowlist the role rather than excluding known others, so a new role can
+  // never fall through into the tutor dashboard.
+  if (session.role !== 'tutor') {
+    redirect(session.role === 'admin' ? '/admin' : session.role === 'parent' ? '/family' : '/home')
+  }
   const rosterScope = await getTutorRosterScope(session.userId)
 
   return (
@@ -21,6 +24,7 @@ export default async function TutorLayout({ children }: { children: React.ReactN
           <p className="text-amber-100 text-xs">Tutor: {session.name}</p>
         </div>
         <nav className="flex items-center gap-3">
+          <Link href="/tutor/check-in" className="text-amber-200 text-xs hover:text-white">Check-in</Link>
           <Link href="/tutor/lessons" className="text-amber-200 text-xs hover:text-white">Lessons</Link>
           <Link href="/tutor/cohort" className="text-amber-200 text-xs hover:text-white">Cohort</Link>
           <TutorLogoutButton />

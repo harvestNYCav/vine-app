@@ -200,6 +200,21 @@ export async function POST(req: NextRequest) {
     })
   }
 
+  if (action === 'cancel') {
+    const cancelledAttemptId = typeof body.attemptId === 'string' ? body.attemptId : ''
+    if (!cancelledAttemptId) {
+      return NextResponse.json({ error: 'Invalid attempt' }, { status: 400 })
+    }
+    // Closing the attempt without touching progress keeps an abandoned drill out
+    // of the student's history and stops it from being finished later.
+    const db = await getDb()
+    await db.execute({
+      sql: 'UPDATE math_attempts SET finished_at = ? WHERE id = ? AND user_id = ? AND finished_at IS NULL',
+      args: [Date.now(), cancelledAttemptId, session.userId],
+    })
+    return NextResponse.json({ ok: true })
+  }
+
   if (action !== 'finish') {
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 })
   }

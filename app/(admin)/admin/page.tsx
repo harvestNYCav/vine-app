@@ -1,13 +1,17 @@
+import Link from 'next/link'
 import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import { getStudentTracks } from '@/lib/tracks'
 import { getStudentTutorIds } from '@/lib/tutors'
 import { getStudentSettings } from '@/lib/student-settings'
+import { listParentsForAdmin } from '@/lib/parents'
+import { loadTutorPairingRecords, summarizeTutorPairings } from '@/lib/tutor-pairings'
 import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
 import AdminCreateStudentForm from './AdminCreateStudentForm'
+import AdminParentControls from './AdminParentControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 
@@ -21,10 +25,12 @@ function formatLastActive(value: number) {
 
 export default async function AdminPage() {
   const db = await getDb()
-  const [studentsResult, tutorsResult, adminAllowlistResult] = await Promise.all([
+  const [studentsResult, tutorsResult, adminAllowlistResult, parents, pairingRecords] = await Promise.all([
     db.execute({ sql: "SELECT id, name, last_active FROM users WHERE role = 'student' ORDER BY name", args: [] }),
     db.execute({ sql: "SELECT id, name FROM users WHERE role = 'tutor' ORDER BY name", args: [] }),
     db.execute({ sql: 'SELECT email, created_at FROM admin_email_allowlist ORDER BY created_at DESC', args: [] }),
+    listParentsForAdmin(db),
+    loadTutorPairingRecords(db),
   ])
 
   type StudentRow = { id: string; name: string; last_active: number }
@@ -43,9 +49,11 @@ export default async function AdminPage() {
     createdAt: Number(row.created_at),
   }))
   const tutorNameById = new Map(tutors.map(tutor => [tutor.id, tutor.name]))
+  const pairingsByStudent = summarizeTutorPairings(pairingRecords, tutorNameById)
   const resettableProfiles = [
     ...students.map(student => ({ id: student.id, name: student.name, role: 'student' as const })),
     ...tutors.map(tutor => ({ id: tutor.id, name: tutor.name, role: 'tutor' as const })),
+    ...parents.map(parent => ({ id: parent.id, name: parent.name, role: 'parent' as const })),
   ]
 
   const studentData = await Promise.all(students.map(async student => {
@@ -102,12 +110,24 @@ export default async function AdminPage() {
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-6">
-      <div className="mb-6">
-        <p className="text-sm text-slate-500">Program overview</p>
-        <h1 className="text-2xl font-bold text-slate-900">Students</h1>
+      <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p className="text-sm text-slate-500">Program overview</p>
+          <h1 className="text-2xl font-bold text-slate-900">Students</h1>
+        </div>
+        <Link
+          href="/admin/check-ins"
+          className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+        >
+          Check-ins →
+        </Link>
       </div>
 
       <AdminCreateStudentForm />
+      <AdminParentControls
+        parents={parents}
+        students={students.map(student => ({ id: student.id, name: student.name }))}
+      />
       <AdminAllowlistControls initialEmails={adminAllowlist} />
       <AdminDangerZoneControls profiles={resettableProfiles} />
 
@@ -194,6 +214,7 @@ export default async function AdminPage() {
                 initialMathSpanishEnabled={student.settings.mathSpanishEnabled}
                 initialGradeLevel={student.settings.gradeLevel}
                 tutors={tutors}
+                pairings={pairingsByStudent.get(student.id) ?? []}
               />
             </div>
           </section>

@@ -1,4 +1,3 @@
-import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import { getSkillLabel, SKILLS } from '@/lib/math'
@@ -6,7 +5,9 @@ import { SKILL_LESSONS } from '@/content/math-skills'
 import ModeToggle from '../ModeToggle'
 import LangToggle from '../LangToggle'
 import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
-import { getStudentSettings } from '@/lib/student-settings'
+import { resolveStudentViewResult } from '@/lib/student-view'
+import StudentViewFallback from '@/components/StudentViewFallback'
+import ViewLink from '@/components/ViewLink'
 import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import { redirect } from 'next/navigation'
 import { Suspense } from 'react'
@@ -31,33 +32,42 @@ export default async function ModulesPage({
 }) {
   const { mode, lang } = await searchParams
 
-  const session = await getSession()
-  if (!session) redirect('/')
-  if (session.role === 'tutor') redirect('/tutor')
-  if (session.role === 'admin') redirect('/admin')
   const db = await getDb()
-  const tracks = await getStudentTracks(db, session.userId)
-  if (tracks.length === 0) redirect('/tracks')
+  const resolution = await resolveStudentViewResult(db)
+  if (resolution.status !== 'ok') return <StudentViewFallback resolution={resolution} />
+  const view = resolution.view
+  const readOnly = view.readOnly
+  const tracks = await getStudentTracks(db, view.studentId)
+  if (tracks.length === 0) {
+    if (!readOnly) redirect('/tracks')
+    return (
+      <div className="mx-auto w-full max-w-lg px-4 py-10">
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-amber-800">
+          {view.studentName} has no tracks assigned yet.
+        </div>
+      </div>
+    )
+  }
 
   const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
-  if (!tracks.includes(currentMode)) redirect(firstTrackPath(tracks))
+  if (!tracks.includes(currentMode)) redirect(readOnly ? '/family' : firstTrackPath(tracks))
 
   if (currentMode === 'math') {
-    const [mathResult, settings, examProgressResult] = await Promise.all([
+    const settings = view.settings
+    const [mathResult, examProgressResult] = await Promise.all([
       db.execute({
         sql: 'SELECT skill_mastery, diagnostic_done FROM math_progress WHERE user_id = ?',
-        args: [session.userId],
+        args: [view.studentId],
       }),
-      getStudentSettings(db, session.userId),
       db.execute({
         sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?',
-        args: [session.userId],
+        args: [view.studentId],
       }),
     ])
     const mathRow = mathResult.rows[0]
     const mastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
     const diagDone = mathRow ? Number(mathRow.diagnostic_done) === 1 : false
-    const canUseSpanish = settings.mathSpanishEnabled
+    const canUseSpanish = view.spanishEnabled
     const isSpanish = canUseSpanish && lang === 'es'
     const assignedExams = getMathExamsForGrade(settings.gradeLevel)
     type ExamProgressRow = { exam_id: string; section_slug: string; completed_at: number | null }
@@ -80,10 +90,16 @@ export default async function ModulesPage({
 
         {!diagDone && (
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-5">
-            <p className="text-sm text-amber-800 font-medium">{isSpanish ? 'Completa el diagnóstico primero' : 'Complete the diagnostic first'}</p>
-            <p className="text-xs text-amber-700 mt-0.5">
-              {isSpanish ? 'Ve a Práctica → Matemáticas para encontrar tu nivel inicial.' : 'Go to Practice → Math to find your starting level.'}
+            <p className="text-sm text-amber-800 font-medium">
+              {readOnly
+                ? `${view.studentName} has not taken the diagnostic yet`
+                : isSpanish ? 'Completa el diagnóstico primero' : 'Complete the diagnostic first'}
             </p>
+            {!readOnly && (
+              <p className="text-xs text-amber-700 mt-0.5">
+                {isSpanish ? 'Ve a Práctica → Matemáticas para encontrar tu nivel inicial.' : 'Go to Practice → Math to find your starting level.'}
+              </p>
+            )}
           </div>
         )}
 
@@ -117,30 +133,33 @@ export default async function ModulesPage({
             {assignedExams.map(exam => {
               const completed = examProgress.filter(row => row.exam_id === exam.id && row.completed_at).length
               const useSpanish = isSpanish && exam.supportedLanguages.includes('es')
-              return (
-                <Link key={exam.id} href={`/math/exams/${exam.slug}${useSpanish ? '?lang=es' : ''}`} className="block">
-                  <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50 p-4 shadow-sm transition-shadow hover:shadow-md">
-                    <div className="flex items-center gap-4">
-                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100 text-2xl">🗽</div>
-                      <div className="min-w-0 flex-1">
-                        <p className="font-semibold text-gray-800">{useSpanish ? exam.title.es : exam.title.en}</p>
-                        <p className="mt-0.5 text-xs text-gray-500">
-                          {exam.year} · {exam.sections.length} {useSpanish ? 'áreas de aprendizaje' : 'learning sections'} · {exam.standardsFramework}
-                          {isSpanish && !useSpanish ? ' · Solo en inglés' : ''}
-                        </p>
-                      </div>
-                      <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
-                        completed > 0 ? 'bg-green-100 text-green-700' : 'bg-white text-gray-500'
-                      }`}>
-                        {completed}/{exam.sections.length}
-                      </span>
+              const card = (
+                <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100 text-2xl">🗽</div>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-gray-800">{useSpanish ? exam.title.es : exam.title.en}</p>
+                      <p className="mt-0.5 text-xs text-gray-500">
+                        {exam.year} · {exam.sections.length} {useSpanish ? 'áreas de aprendizaje' : 'learning sections'} · {exam.standardsFramework}
+                        {isSpanish && !useSpanish ? ' · Solo en inglés' : ''}
+                      </p>
                     </div>
-                    {completed > 0 && (
-                      <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-blue-100">
-                        <div className="h-full rounded-full bg-blue-600" style={{ width: `${completed / exam.sections.length * 100}%` }} />
-                      </div>
-                    )}
+                    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                      completed > 0 ? 'bg-green-100 text-green-700' : 'bg-white text-gray-500'
+                    }`}>
+                      {completed}/{exam.sections.length}
+                    </span>
                   </div>
+                  {completed > 0 && (
+                    <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-blue-100">
+                      <div className="h-full rounded-full bg-blue-600" style={{ width: `${completed / exam.sections.length * 100}%` }} />
+                    </div>
+                  )}
+                </div>
+              )
+              return readOnly ? <div key={exam.id}>{card}</div> : (
+                <Link key={exam.id} href={`/math/exams/${exam.slug}${useSpanish ? '?lang=es' : ''}`} className="block">
+                  {card}
                 </Link>
               )
             })}
@@ -158,7 +177,10 @@ export default async function ModulesPage({
             const pct = Math.round(m * 100)
             const lesson = SKILL_LESSONS[skill.tag]
             return (
-              <a key={skill.tag} href={`/vine-app/skills/${skill.tag}${isSpanish ? '?lang=es' : ''}`}>
+              <a
+                key={skill.tag}
+                href={`/vine-app${readOnly ? '/family' : ''}/skills/${skill.tag}${isSpanish ? '?lang=es' : ''}`}
+              >
                 <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl flex-shrink-0">
                     {lesson?.emoji ?? '🔢'}
@@ -180,7 +202,11 @@ export default async function ModulesPage({
                   <div className="flex-shrink-0">
                     {pct >= 85 && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">{isSpanish ? 'Dominado ✓' : 'Mastered ✓'}</span>}
                     {pct > 0 && pct < 85 && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full font-medium">{isSpanish ? 'En progreso' : 'In progress'}</span>}
-                    {pct === 0 && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">{isSpanish ? 'Empezar →' : 'Start →'}</span>}
+                    {pct === 0 && (
+                      <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">
+                        {readOnly ? (isSpanish ? 'Sin empezar' : 'Not started') : isSpanish ? 'Empezar →' : 'Start →'}
+                      </span>
+                    )}
                   </div>
                 </div>
               </a>
@@ -192,16 +218,16 @@ export default async function ModulesPage({
   }
 
   // English modes
-  const [taughtSlugs, settings, mpResult, elaExamProgressResult] = await Promise.all([
-    getTaughtModuleSlugsForStudent(db, session.userId),
-    getStudentSettings(db, session.userId),
+  const settings = view.settings
+  const [taughtSlugs, mpResult, elaExamProgressResult] = await Promise.all([
+    getTaughtModuleSlugsForStudent(db, view.studentId),
     db.execute({
       sql: 'SELECT * FROM module_progress WHERE user_id = ?',
-      args: [session.userId],
+      args: [view.studentId],
     }),
     db.execute({
       sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?',
-      args: [session.userId],
+      args: [view.studentId],
     }),
   ])
   const visibleModules = ALL_MODULES.filter(mod => mod.track === currentMode && taughtSlugs.has(mod.slug))
@@ -259,30 +285,31 @@ export default async function ModulesPage({
                   && sectionSlugs.has(row.section_slug)
                   && row.completed_at
                 ).length
-                return (
-                  <Link key={exam.id} href={`/ela/exams/${exam.slug}`} className="block">
-                    <div className="rounded-2xl border border-purple-100 bg-gradient-to-br from-white to-purple-50 p-4 shadow-sm transition-shadow hover:shadow-md">
-                      <div className="flex items-center gap-4">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-purple-100 text-2xl">📖</div>
-                        <div className="min-w-0 flex-1">
-                          <p className="font-semibold text-gray-800">{exam.title}</p>
-                          <p className="mt-0.5 text-xs text-gray-500">
-                            {exam.year} · {exam.sections.length} passage lessons · {exam.standardsFramework}
-                          </p>
-                        </div>
-                        <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
-                          completed > 0 ? 'bg-green-100 text-green-700' : 'bg-white text-gray-500'
-                        }`}>
-                          {completed}/{exam.sections.length}
-                        </span>
+                const card = (
+                  <div className="rounded-2xl border border-purple-100 bg-gradient-to-br from-white to-purple-50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-purple-100 text-2xl">📖</div>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-semibold text-gray-800">{exam.title}</p>
+                        <p className="mt-0.5 text-xs text-gray-500">
+                          {exam.year} · {exam.sections.length} passage lessons · {exam.standardsFramework}
+                        </p>
                       </div>
-                      {completed > 0 && (
-                        <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-purple-100">
-                          <div className="h-full rounded-full bg-purple-600" style={{ width: `${completed / exam.sections.length * 100}%` }} />
-                        </div>
-                      )}
+                      <span className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                        completed > 0 ? 'bg-green-100 text-green-700' : 'bg-white text-gray-500'
+                      }`}>
+                        {completed}/{exam.sections.length}
+                      </span>
                     </div>
-                  </Link>
+                    {completed > 0 && (
+                      <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-purple-100">
+                        <div className="h-full rounded-full bg-purple-600" style={{ width: `${completed / exam.sections.length * 100}%` }} />
+                      </div>
+                    )}
+                  </div>
+                )
+                return readOnly ? <div key={exam.id}>{card}</div> : (
+                  <Link key={exam.id} href={`/ela/exams/${exam.slug}`} className="block">{card}</Link>
                 )
               })}
             </div>
@@ -309,7 +336,7 @@ export default async function ModulesPage({
         {visibleModules.map(mod => {
           const status = getStatus(mod.slug)
           return (
-            <a key={mod.slug} href={`/vine-app/modules/${mod.slug}`}>
+            <ViewLink key={mod.slug} href={`/vine-app/modules/${mod.slug}`} readOnly={readOnly}>
               <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center text-2xl flex-shrink-0">
                   {MODULE_EMOJIS[mod.icon]}
@@ -321,10 +348,14 @@ export default async function ModulesPage({
                 <div className="text-right flex-shrink-0">
                   {status === 'homework-done' && <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-medium">Homework done ✓</span>}
                   {status === 'reviewed' && <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full font-medium">Reviewed</span>}
-                  {status === 'not-started' && <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Start →</span>}
+                  {status === 'not-started' && (
+                    <span className="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">
+                      {readOnly ? 'Not started' : 'Start →'}
+                    </span>
+                  )}
                 </div>
               </div>
-            </a>
+            </ViewLink>
           )
         })}
         </div>

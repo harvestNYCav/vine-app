@@ -8,7 +8,7 @@ import { isValidEmail, normalizeEmail } from '@/lib/email-verification'
 import { loginCanCreateMissingAccount, normalizeStudentName } from '@/lib/student-accounts'
 import type { Role } from '@/types'
 
-const ROLES = new Set<Role>(['student', 'tutor', 'admin'])
+const ROLES = new Set<Role>(['student', 'tutor', 'admin', 'parent'])
 
 export async function POST(req: NextRequest) {
   let phase = 'reading the request'
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 
     phase = 'opening the database'
     const db = await getDb()
-    const normalizedName = role === 'student' ? normalizeStudentName(name) : name.trim()
+    const normalizedName = role === 'student' || role === 'parent' ? normalizeStudentName(name) : name.trim()
     const normalizedEmail = normalizeEmail(email)
 
     if (role === 'admin') {
@@ -63,7 +63,9 @@ export async function POST(req: NextRequest) {
     if (!rawUser) {
       if (!loginCanCreateMissingAccount(role)) {
         return NextResponse.json({
-          error: 'Student account not found. Ask an admin to create it before signing in.',
+          error: role === 'parent'
+            ? 'Parent account not found. Ask an admin to create it before signing in.'
+            : 'Student account not found. Ask an admin to create it before signing in.',
         }, { status: 404 })
       }
 

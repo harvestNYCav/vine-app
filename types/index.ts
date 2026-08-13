@@ -1,4 +1,4 @@
-export type Role = 'student' | 'tutor' | 'admin'
+export type Role = 'student' | 'tutor' | 'admin' | 'parent'
 export type Track = 'ela' | 'esl' | 'math'
 export type GradeLevel = 3 | 4 | 5 | 6 | 7 | 8
 

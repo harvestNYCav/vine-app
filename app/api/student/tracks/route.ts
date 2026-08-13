@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidatePath } from 'next/cache'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { firstTrackPath, getStudentTracks, normalizeTracks, setStudentTracks } from '@/lib/tracks'
@@ -32,5 +33,8 @@ export async function POST(req: NextRequest) {
 
   const db = await getDb()
   await setStudentTracks(db, session.userId, tracks)
+  // Track membership decides what every learner page renders, so drop any cached
+  // route data rather than letting a removed track linger.
+  revalidatePath('/', 'layout')
   return NextResponse.json({ ok: true, nextPath: firstTrackPath(tracks) })
 }

@@ -55,6 +55,20 @@ To refresh or extend the public releases, run `scripts/import_nysed_math_mc.py`,
 
 Rebuild the ELA catalog and crops with `scripts/import_nysed_ela_mc.py`. The importer must match the pinned official release/count matrix, reject answer metadata in student assets, verify every passage page reference, and reproduce the same output offline before generated content is committed.
 
+## Parent Accounts
+
+- `parent` is a fourth role in `users`. Parent logins are provisioned by an admin only; `loginCanCreateMissingAccount` refuses to mint one at the PIN pad.
+- `parent_students` links a parent to one or more students; `parent_settings.spanish_enabled` is the parent's own Spanish toggle, deliberately independent of `student_settings.math_spanish_enabled`.
+- `app/(parent)/family/**` is a read-only mirror: each route renders the same learner page component (`home`, `modules`, `progress`, `skills/[tag]`), so the parent view cannot drift from what the student sees.
+- `lib/student-view.ts` resolves who a learner page is about. Students see themselves and can act; parents see a linked student with `readOnly` set, which turns interactive links into plain markup.
+- Read-only is enforced at the data layer too: every mutating API requires `role === 'student'` (or `tutor`/`admin`), and each route group's layout allowlists its own role.
+
+## Check-ins
+
+- `tutor_check_ins` stores a tutor's own presence per session date; student presence stays in `attendance`, which now also records `recorded_by` and `recorded_at`.
+- `app/(tutor)/tutor/check-in` writes both through `lib/check-ins.ts`; `app/(admin)/admin/check-ins` reads the same day for any date. A person nobody has marked is `present: null`, which is not the same as absent.
+- `lib/tutor-pairings.ts` summarizes `sessions` into each student's most frequent tutors so admins can repeat a working pairing when assigning the week.
+
 ## Maintenance Notes
 - Keep generated output, editor metadata, virtual environments, local credentials, and machine-specific assistant settings out of Git.
 - Prefer adding focused tests around stable entry points before changing application behavior.
