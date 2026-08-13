@@ -1,12 +1,16 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 import { TRACKS } from '@/lib/tracks'
 import type { Track } from '@/types'
 
+const BASE_PATH = '/vine-app'
+
+function withBasePath(href: string) {
+  return href.startsWith(BASE_PATH) ? href : `${BASE_PATH}${href}`
+}
+
 export default function TrackSelectionClient({ initialTracks }: { initialTracks: Track[] }) {
-  const router = useRouter()
   const isSetup = initialTracks.length === 0
   const [selected, setSelected] = useState<Track[]>(initialTracks)
   const [error, setError] = useState('')
@@ -39,8 +43,10 @@ export default function TrackSelectionClient({ initialTracks }: { initialTracks:
       setSaving(false)
       return
     }
-    router.push(isSetup ? data.nextPath || '/home' : '/home')
-    router.refresh()
+    // A full document load, not a soft push: every cached client route for the
+    // old track list is dropped, so removed tracks disappear right away instead
+    // of lingering until the next manual refresh.
+    window.location.assign(withBasePath(isSetup ? data.nextPath || '/home' : '/home'))
   }
 
   return (

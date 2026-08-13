@@ -1,4 +1,3 @@
-import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import LogoutButton from '../LogoutButton'
@@ -9,7 +8,9 @@ import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import HomeGreeting from './HomeGreeting'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
-import { getStudentSettings } from '@/lib/student-settings'
+import { resolveStudentViewResult } from '@/lib/student-view'
+import StudentViewFallback from '@/components/StudentViewFallback'
+import ViewLink from '@/components/ViewLink'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -37,29 +38,41 @@ function getStreak(activityLog: Array<{ date: string }>): number {
 }
 
 export default async function HomePage() {
-  const session = await getSession()
-  if (!session) redirect('/')
-  if (session.role === 'tutor') redirect('/tutor')
-  if (session.role === 'admin') redirect('/admin')
   const db = await getDb()
+  const resolution = await resolveStudentViewResult(db)
+  if (resolution.status !== 'ok') return <StudentViewFallback resolution={resolution} />
+  const view = resolution.view
+  const readOnly = view.readOnly
 
-  const tracks = await getStudentTracks(db, session.userId)
-  if (tracks.length === 0) redirect('/tracks')
-  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, session.userId)
+  const tracks = await getStudentTracks(db, view.studentId)
+  if (tracks.length === 0) {
+    if (!readOnly) redirect('/tracks')
+    return (
+      <div className="mx-auto w-full max-w-lg px-4 py-10">
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
+          <h1 className="text-xl font-bold text-amber-800">{view.studentName} has no tracks yet</h1>
+          <p className="mt-2 text-sm text-amber-700">
+            Lessons appear here once a program admin assigns ELA, ESL or Math.
+          </p>
+        </div>
+      </div>
+    )
+  }
+  const taughtSlugs = await getTaughtModuleSlugsForStudent(db, view.studentId)
   const visibleModules = filterModulesByTracks(ALL_MODULES, tracks).filter(mod => taughtSlugs.has(mod.slug))
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
   const hasMath = tracks.includes('math')
   const hasEla = tracks.includes('ela')
-  const settings = await getStudentSettings(db, session.userId)
+  const settings = view.settings
 
   const [mpResult, alResult, vmResult, mathResult, msResult, examProgressResult, elaExamProgressResult] = await Promise.all([
-    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [session.userId] }),
-    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [session.userId] }),
-    db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [session.userId] }),
-    db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [session.userId] }),
-    db.execute({ sql: 'SELECT started_at FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [session.userId] }),
-    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM math_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
-    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM ela_exam_section_progress WHERE user_id = ?', args: [session.userId] }),
+    db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [view.studentId] }),
+    db.execute({ sql: 'SELECT * FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 30', args: [view.studentId] }),
+    db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [view.studentId] }),
+    db.execute({ sql: 'SELECT total_problems, total_correct, diagnostic_done FROM math_progress WHERE user_id = ?', args: [view.studentId] }),
+    db.execute({ sql: 'SELECT started_at FROM math_sessions WHERE user_id = ? ORDER BY started_at DESC LIMIT 30', args: [view.studentId] }),
+    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM math_exam_section_progress WHERE user_id = ?', args: [view.studentId] }),
+    db.execute({ sql: 'SELECT exam_id, section_slug, completed_at FROM ela_exam_section_progress WHERE user_id = ?', args: [view.studentId] }),
   ])
 
   type ModuleProgressRow = { module_slug: string; vocab_viewed_at: number | null; homework_completed_at: number | null }
@@ -115,14 +128,14 @@ export default async function HomePage() {
       <div className="flex justify-between items-start mb-6">
         <div>
           <HomeGreeting />
-          <h1 className="text-2xl font-bold text-green-800">{session.name} 👋</h1>
+          <h1 className="text-2xl font-bold text-green-800">{view.studentName} 👋</h1>
         </div>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1 bg-orange-100 px-3 py-1.5 rounded-full">
             <span className="text-lg">🔥</span>
             <span className="font-bold text-orange-700">{streak}</span>
           </div>
-          <LogoutButton />
+          {!readOnly && <LogoutButton />}
         </div>
       </div>
 
@@ -142,7 +155,7 @@ export default async function HomePage() {
         </div>
       </div>
 
-      <a href="/vine-app/tracks" className="block mb-4">
+      <ViewLink href="/vine-app/tracks" readOnly={readOnly} className="block mb-4">
         <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
           <div>
             <p className="text-xs uppercase text-gray-400 font-semibold">Tracks</p>
@@ -150,14 +163,14 @@ export default async function HomePage() {
               {tracks.map(track => track.toUpperCase()).join(' · ')}
             </p>
           </div>
-          <span className="text-gray-300 text-lg">→</span>
+          {!readOnly && <span className="text-gray-300 text-lg">→</span>}
         </div>
-      </a>
+      </ViewLink>
 
       {/* Math Practice Banner */}
       {hasMath && (
         <div className="mb-4 space-y-3">
-          <a href="/vine-app/practice?mode=math" className="block">
+          <ViewLink href="/vine-app/practice?mode=math" readOnly={readOnly} className="block">
             <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">➕</span>
@@ -166,15 +179,15 @@ export default async function HomePage() {
                   <p className="text-xs text-gray-500">
                     {mathProgressRow && Number(mathProgressRow.total_problems) > 0
                       ? `${Number(mathProgressRow.total_problems)} problems · ${Math.round(Number(mathProgressRow.total_correct) / Number(mathProgressRow.total_problems) * 100)}% accuracy`
-                      : 'Find your starting level'}
+                      : readOnly ? 'No practice yet' : 'Find your starting level'}
                   </p>
                 </div>
               </div>
-              <span className="text-gray-300 text-lg">→</span>
+              {!readOnly && <span className="text-gray-300 text-lg">→</span>}
             </div>
-          </a>
+          </ViewLink>
           {currentExam ? (
-            <a href={`/vine-app/math/exams/${currentExam.slug}`} className="block">
+            <ViewLink href={`/vine-app/math/exams/${currentExam.slug}`} readOnly={readOnly} className="block">
               <div className="flex items-center justify-between rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-4 shadow-sm">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🗽</span>
@@ -183,9 +196,9 @@ export default async function HomePage() {
                     <p className="text-xs text-gray-500">{completedExamSections}/{currentExam.sections.length} exam sections completed</p>
                   </div>
                 </div>
-                <span className="text-gray-300 text-lg">→</span>
+                {!readOnly && <span className="text-gray-300 text-lg">→</span>}
               </div>
-            </a>
+            </ViewLink>
           ) : (
             <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
               <p className="text-sm font-semibold text-amber-800">
@@ -206,7 +219,7 @@ export default async function HomePage() {
       {hasEla && (
         <div className="mb-4">
           {currentElaExam ? (
-            <a href={`/vine-app/ela/exams/${currentElaExam.slug}`} className="block">
+            <ViewLink href={`/vine-app/ela/exams/${currentElaExam.slug}`} readOnly={readOnly} className="block">
               <div className="flex items-center justify-between rounded-2xl border border-purple-100 bg-gradient-to-r from-purple-50 to-white p-4 shadow-sm">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">📖</span>
@@ -215,9 +228,9 @@ export default async function HomePage() {
                     <p className="text-xs text-gray-500">{completedElaExamSections}/{currentElaExam.sections.length} passage lessons completed</p>
                   </div>
                 </div>
-                <span className="text-gray-300 text-lg">→</span>
+                {!readOnly && <span className="text-gray-300 text-lg">→</span>}
               </div>
-            </a>
+            </ViewLink>
           ) : (
             <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
               <p className="text-sm font-semibold text-amber-800">
@@ -244,7 +257,7 @@ export default async function HomePage() {
           {visibleModules.map(mod => {
             const status = getModuleStatus(mod.slug)
             return (
-              <a key={mod.slug} href={`/vine-app/modules/${mod.slug}`}>
+              <ViewLink key={mod.slug} href={`/vine-app/modules/${mod.slug}`} readOnly={readOnly}>
                 <div className={`rounded-2xl p-4 border-2 ${statusColors[status]} shadow-sm hover:shadow-md transition-shadow`}>
                   <div className="text-2xl mb-2">{MODULE_EMOJIS[mod.icon] ?? '💬'}</div>
                   <p className="font-semibold text-sm text-gray-800 leading-tight">{mod.titleEn}</p>
@@ -253,7 +266,7 @@ export default async function HomePage() {
                   {status === 'reviewed' && <p className="text-xs text-yellow-600 mt-1 font-medium">Reviewed</p>}
                   {status === 'not-started' && <p className="text-xs text-gray-400 mt-1">Not started</p>}
                 </div>
-              </a>
+              </ViewLink>
             )
           })}
         </div>

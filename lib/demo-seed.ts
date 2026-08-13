@@ -43,8 +43,11 @@ function cleanupStatements(userIds: string[]): InStatement[] {
     }
     statements.push(
       { sql: 'DELETE FROM student_tutors WHERE student_id = ? OR tutor_id = ?', args: [userId, userId] },
+      { sql: 'DELETE FROM parent_students WHERE student_id = ? OR parent_id = ?', args: [userId, userId] },
+      { sql: 'DELETE FROM parent_settings WHERE user_id = ?', args: [userId] },
       { sql: 'DELETE FROM sessions WHERE student_id = ? OR tutor_id = ?', args: [userId, userId] },
       { sql: 'DELETE FROM attendance WHERE student_id = ?', args: [userId] },
+      { sql: 'DELETE FROM tutor_check_ins WHERE tutor_id = ?', args: [userId] },
       { sql: 'DELETE FROM tutor_notes WHERE student_id = ? OR tutor_id = ?', args: [userId, userId] },
       { sql: 'DELETE FROM users WHERE id = ?', args: [userId] },
     )

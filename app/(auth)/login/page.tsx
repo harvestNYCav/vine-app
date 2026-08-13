@@ -14,7 +14,7 @@ import {
 function LoginForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const role = (searchParams.get('role') || 'student') as 'student' | 'tutor' | 'admin'
+  const role = (searchParams.get('role') || 'student') as 'student' | 'tutor' | 'admin' | 'parent'
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -28,7 +28,7 @@ function LoginForm() {
   const pinSubmissionStartedRef = useRef(false)
 
   const handleNameSubmit = () => {
-    const normalizedName = role === 'student' ? normalizePersonName(name) : name.trim()
+    const normalizedName = role === 'student' || role === 'parent' ? normalizePersonName(name) : name.trim()
     if (normalizedName.length < 2) {
       setError('Please enter your name')
       return
@@ -143,6 +143,8 @@ function LoginForm() {
         router.push('/tutor')
       } else if (role === 'admin') {
         router.push('/admin')
+      } else if (role === 'parent') {
+        router.push('/family')
       } else {
         router.push('/home')
       }
@@ -166,7 +168,10 @@ function LoginForm() {
           </div>
           <h1 className="text-2xl font-bold text-green-800">Vine</h1>
           <p className="text-sm text-gray-500 mt-1">
-            {role === 'tutor' ? 'Tutor Login' : role === 'admin' ? 'Admin Login' : 'Student Login'}
+            {role === 'tutor' ? 'Tutor Login'
+              : role === 'admin' ? 'Admin Login'
+              : role === 'parent' ? 'Parent Login'
+              : 'Student Login'}
           </p>
         </div>
 
@@ -302,7 +307,9 @@ function LoginForm() {
                 ? `Email verified: ${email}`
                 : role === 'student'
                   ? 'Your program admin creates student accounts'
-                  : `(New? We'll create your account)`}
+                  : role === 'parent'
+                    ? 'Your program admin creates parent accounts'
+                    : `(New? We'll create your account)`}
             </p>
 
             {/* PIN Dots */}

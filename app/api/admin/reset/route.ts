@@ -19,15 +19,15 @@ export async function DELETE(req: NextRequest) {
 
   const db = await getDb()
   const userResult = await db.execute({
-    sql: "SELECT id, role FROM users WHERE id = ? AND role IN ('student', 'tutor')",
+    sql: "SELECT id, role FROM users WHERE id = ? AND role IN ('student', 'tutor', 'parent')",
     args: [userId],
   })
   const user = userResult.rows[0]
   if (!user) {
-    return NextResponse.json({ error: 'Student or tutor profile not found.' }, { status: 404 })
+    return NextResponse.json({ error: 'Student, tutor or parent profile not found.' }, { status: 404 })
   }
 
-  await deleteUserProfile(db, String(user.id), user.role as 'student' | 'tutor')
+  await deleteUserProfile(db, String(user.id), user.role as 'student' | 'tutor' | 'parent')
   return NextResponse.json({ ok: true })
 }
 
