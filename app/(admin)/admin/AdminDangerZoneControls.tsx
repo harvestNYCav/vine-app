@@ -11,6 +11,7 @@ interface ProfileOption {
 
 export default function AdminDangerZoneControls({ profiles }: { profiles: ProfileOption[] }) {
   const router = useRouter()
+  const [selectedId, setSelectedId] = useState('')
   const [pendingProfile, setPendingProfile] = useState<ProfileOption | null>(null)
   const [resetOpen, setResetOpen] = useState(false)
   const [resetText, setResetText] = useState('')
@@ -34,6 +35,7 @@ export default function AdminDangerZoneControls({ profiles }: { profiles: Profil
     }
     setMessage(`${pendingProfile.name} was deleted.`)
     setPendingProfile(null)
+    setSelectedId('')
     router.refresh()
   }
 
@@ -66,27 +68,41 @@ export default function AdminDangerZoneControls({ profiles }: { profiles: Profil
         <div className="rounded-lg border border-slate-200 p-3">
           <p className="text-sm font-semibold text-slate-800 mb-2">Delete one profile</p>
           {profiles.length === 0 ? (
-            <p className="text-sm text-slate-400">No student or tutor profiles to delete.</p>
+            <p className="text-sm text-slate-400">No student, tutor or parent profiles to delete.</p>
           ) : (
-            <div className="space-y-2">
-              {profiles.map(profile => (
-                <div key={profile.id} className="flex items-center justify-between gap-3 rounded-lg bg-slate-50 px-3 py-2">
-                  <div className="min-w-0">
-                    <p className="truncate text-sm font-semibold text-slate-800">{profile.name}</p>
-                    <p className="text-xs text-slate-400">{profile.role}</p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setPendingProfile(profile)
-                      setMessage('')
-                    }}
-                    className="text-xs font-semibold text-red-600 hover:text-red-700"
-                  >
-                    Delete
-                  </button>
-                </div>
-              ))}
+            <div className="flex flex-wrap items-end gap-2">
+              <label className="block min-w-0 flex-1 text-xs font-semibold text-slate-600">
+                <span className="mb-1 block">Profile</span>
+                <select
+                  value={selectedId}
+                  onChange={event => {
+                    setSelectedId(event.target.value)
+                    setPendingProfile(null)
+                    setMessage('')
+                  }}
+                  className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 outline-none focus:border-slate-500"
+                >
+                  <option value="">Choose a profile</option>
+                  {profiles.map(profile => (
+                    <option key={profile.id} value={profile.id}>
+                      {profile.name} · {profile.role}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <button
+                type="button"
+                disabled={!selectedId}
+                onClick={() => {
+                  const profile = profiles.find(candidate => candidate.id === selectedId)
+                  if (!profile) return
+                  setPendingProfile(profile)
+                  setMessage('')
+                }}
+                className="rounded-lg border border-red-200 bg-white px-4 py-2 text-sm font-semibold text-red-600 hover:bg-red-50 disabled:opacity-50"
+              >
+                Delete
+              </button>
             </div>
           )}
         </div>
