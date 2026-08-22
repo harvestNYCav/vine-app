@@ -12,6 +12,7 @@ import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
 import AdminCreateStudentForm from './AdminCreateStudentForm'
 import AdminParentControls from './AdminParentControls'
+import AdminPinResetControls from './AdminPinResetControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 
@@ -129,6 +130,7 @@ export default async function AdminPage() {
         students={students.map(student => ({ id: student.id, name: student.name }))}
       />
       <AdminAllowlistControls initialEmails={adminAllowlist} />
+      <AdminPinResetControls profiles={resettableProfiles} />
       <AdminDangerZoneControls profiles={resettableProfiles} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">

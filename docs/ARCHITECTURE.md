@@ -63,6 +63,11 @@ Rebuild the ELA catalog and crops with `scripts/import_nysed_ela_mc.py`. The imp
 - `lib/student-view.ts` resolves who a learner page is about. Students see themselves and can act; parents see a linked student with `readOnly` set, which turns interactive links into plain markup.
 - Read-only is enforced at the data layer too: every mutating API requires `role === 'student'` (or `tutor`/`admin`), and each route group's layout allowlists its own role.
 
+## Admin Account Maintenance
+
+- `lib/pin-reset.ts` sets a new PIN for a student, tutor or parent. Admins are excluded on purpose: an admin PIN is only half of their sign-in, so letting one admin overwrite another's would be a takeover rather than a reset.
+- A reset rehashes the PIN in place. It does not end sessions that are already signed in, because `getSession` verifies a signed token without reading the database.
+
 ## Check-ins
 
 - `tutor_check_ins` stores a tutor's own presence per session date; student presence stays in `attendance`, which now also records `recorded_by` and `recorded_at`.
