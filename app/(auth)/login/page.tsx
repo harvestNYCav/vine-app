@@ -3,7 +3,14 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
+import LangToggle from '@/components/LangToggle'
 import { normalizePersonName } from '@/lib/names'
+import {
+  isAuthRole,
+  loginErrorMessage,
+  LOGIN_COPY,
+  normalizeAuthLang,
+} from '@/lib/auth-copy'
 import {
   appendPinDigit,
   deleteLastPinDigit,
@@ -14,7 +21,10 @@ import {
 function LoginForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const role = (searchParams.get('role') || 'student') as 'student' | 'tutor' | 'admin' | 'parent'
+  const rawRole = searchParams.get('role')
+  const role = isAuthRole(rawRole) ? rawRole : 'student'
+  const language = normalizeAuthLang(searchParams.get('lang'))
+  const copy = LOGIN_COPY[language]
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -30,7 +40,7 @@ function LoginForm() {
   const handleNameSubmit = () => {
     const normalizedName = role === 'student' || role === 'parent' ? normalizePersonName(name) : name.trim()
     if (normalizedName.length < 2) {
-      setError('Please enter your name')
+      setError(copy.nameRequired)
       return
     }
     setName(normalizedName)
@@ -40,7 +50,7 @@ function LoginForm() {
 
   const requestAdminCode = async () => {
     if (!email.includes('@')) {
-      setError('Please enter a valid email')
+      setError(copy.emailInvalid)
       return
     }
     setLoading(true)
@@ -54,14 +64,14 @@ function LoginForm() {
       })
       const data = await res.json()
       if (!res.ok) {
-        setError(data.error || 'Could not send verification code')
+        setError(data.error || copy.sendCodeFailed)
         setLoading(false)
         return
       }
       setDevCode(data.devCode || '')
       setStep('code')
     } catch {
-      setError('Connection error. Please try again.')
+      setError(copy.connectionError)
     } finally {
       setLoading(false)
     }
@@ -69,7 +79,7 @@ function LoginForm() {
 
   const handleCodeSubmit = () => {
     if (!/^\d{6}$/.test(emailCode)) {
-      setError('Enter the 6-digit verification code')
+      setError(copy.codeInvalid)
       return
     }
     setError('')
@@ -131,7 +141,7 @@ function LoginForm() {
       })
       const data = await res.json()
       if (!res.ok) {
-        setError(data.error || 'Something went wrong')
+        setError(loginErrorMessage(language, data.code, data.error))
         setPin('')
         setLoading(false)
         pinSubmissionStartedRef.current = false
@@ -149,7 +159,7 @@ function LoginForm() {
         router.push('/home')
       }
     } catch {
-      setError('Connection error. Please try again.')
+      setError(copy.connectionError)
       setPin('')
       setLoading(false)
       pinSubmissionStartedRef.current = false
@@ -161,32 +171,31 @@ function LoginForm() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-amber-50">
       <div className="w-full max-w-sm">
+        <div className="mb-2 flex justify-end">
+          <LangToggle currentLang={language} />
+        </div>
+
         {/* Header */}
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow">
             <span className="text-3xl">🌿</span>
           </div>
           <h1 className="text-2xl font-bold text-green-800">Vine</h1>
-          <p className="text-sm text-gray-500 mt-1">
-            {role === 'tutor' ? 'Tutor Login'
-              : role === 'admin' ? 'Admin Login'
-              : role === 'parent' ? 'Parent Login'
-              : 'Student Login'}
-          </p>
+          <p className="text-sm text-gray-500 mt-1">{copy.title[role]}</p>
         </div>
 
         {step === 'name' && (
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Your name
+                {copy.nameLabel}
               </label>
               <input
                 type="text"
                 value={name}
                 onChange={e => setName(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && handleNameSubmit()}
-                placeholder="e.g. Maria"
+                placeholder={copy.namePlaceholder}
                 className="w-full border-2 border-green-200 rounded-xl px-4 py-3 text-lg focus:outline-none focus:border-green-500 bg-white"
                 autoFocus
               />
@@ -196,13 +205,13 @@ function LoginForm() {
               onClick={handleNameSubmit}
               className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform"
             >
-              Continue
+              {copy.continueButton}
             </button>
             <button
               onClick={() => router.back()}
               className="w-full text-gray-500 text-sm py-2"
             >
-              ← Go back
+              {copy.goBack}
             </button>
           </div>
         )}
@@ -210,11 +219,11 @@ function LoginForm() {
         {step === 'email' && (
           <div className="space-y-4">
             <p className="text-center text-gray-700 font-medium">
-              Hello, {name}
+              {copy.greeting(name)}
             </p>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Admin email
+                {copy.emailLabel}
               </label>
               <input
                 type="email"
@@ -232,13 +241,13 @@ function LoginForm() {
               disabled={loading}
               className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform disabled:opacity-60"
             >
-              {loading ? 'Sending...' : 'Send verification code'}
+              {loading ? copy.sending : copy.sendCode}
             </button>
             <button
               onClick={() => { setStep('name'); setEmail(''); setError('') }}
               className="w-full text-gray-500 text-sm py-2"
             >
-              ← Change name
+              {copy.changeName}
             </button>
           </div>
         )}
@@ -246,11 +255,11 @@ function LoginForm() {
         {step === 'code' && (
           <div className="space-y-4">
             <p className="text-center text-gray-700 font-medium">
-              Check {email}
+              {copy.checkEmail(email)}
             </p>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Verification code
+                {copy.codeLabel}
               </label>
               <input
                 type="text"
@@ -265,7 +274,7 @@ function LoginForm() {
             </div>
             {devCode && (
               <p className="text-center text-xs text-amber-700 bg-amber-100 rounded-xl px-3 py-2">
-                Dev code: {devCode}
+                {copy.devCode}: {devCode}
               </p>
             )}
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
@@ -273,14 +282,14 @@ function LoginForm() {
               onClick={handleCodeSubmit}
               className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform"
             >
-              Continue
+              {copy.continueButton}
             </button>
             <button
               onClick={requestAdminCode}
               disabled={loading}
               className="w-full text-gray-500 text-sm py-2 disabled:opacity-60"
             >
-              {loading ? 'Sending...' : 'Send a new code'}
+              {loading ? copy.sending : copy.sendNewCode}
             </button>
           </div>
         )}
@@ -294,22 +303,22 @@ function LoginForm() {
             tabIndex={-1}
           >
             <p className="text-center text-gray-700 font-medium">
-              Hello, {name}! 👋
+              {copy.pinGreeting(name)}
             </p>
             <p id="pin-entry-heading" className="text-center text-gray-500 text-sm">
-              Enter your 4-digit PIN
+              {copy.pinPrompt}
             </p>
             <p className="text-center text-xs text-gray-400">
-              Use the number keys or keypad
+              {copy.pinHint}
             </p>
             <p className="text-center text-xs text-gray-400">
               {role === 'admin'
-                ? `Email verified: ${email}`
+                ? copy.emailVerified(email)
                 : role === 'student'
-                  ? 'Your program admin creates student accounts'
+                  ? copy.adminCreatesStudents
                   : role === 'parent'
-                    ? 'Your program admin creates parent accounts'
-                    : `(New? We'll create your account)`}
+                    ? copy.adminCreatesParents
+                    : copy.tutorSelfSignup}
             </p>
 
             {/* PIN Dots */}
@@ -328,8 +337,8 @@ function LoginForm() {
 
             <p className="sr-only" role="status" aria-live="polite">
               {pin.length === 0
-                ? 'No PIN digits entered'
-                : `${pin.length} of ${PIN_LENGTH} PIN digits entered`}
+                ? copy.noPinDigits
+                : copy.pinDigitsEntered(pin.length, PIN_LENGTH)}
             </p>
 
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
@@ -344,7 +353,7 @@ function LoginForm() {
                     else if (key !== '') handlePinDigit(key)
                   }}
                   disabled={loading || key === ''}
-                  aria-label={key === '⌫' ? 'Delete last PIN digit' : key ? `Enter ${key}` : undefined}
+                  aria-label={key === '⌫' ? copy.deleteDigit : key ? copy.enterDigit(key) : undefined}
                   className={`h-16 text-2xl font-semibold rounded-xl transition-all active:scale-95 ${
                     key === ''
                       ? 'invisible'
@@ -366,7 +375,7 @@ function LoginForm() {
               }}
               className="w-full text-gray-500 text-sm py-2"
             >
-              {role === 'admin' ? '← Change verification code' : '← Change name'}
+              {role === 'admin' ? copy.changeCode : copy.changeName}
             </button>
           </div>
         )}
