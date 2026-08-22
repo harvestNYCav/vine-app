@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     const { name, pin, role, email, emailCode } = await req.json()
 
     if (!name || !pin || pin.length !== 4 || !/^\d{4}$/.test(pin) || !ROLES.has(role)) {
-      return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
+      return NextResponse.json({ error: 'Invalid request', code: 'invalid_request' }, { status: 400 })
     }
 
     phase = 'opening the database'
@@ -66,6 +66,7 @@ export async function POST(req: NextRequest) {
           error: role === 'parent'
             ? 'Parent account not found. Ask an admin to create it before signing in.'
             : 'Student account not found. Ask an admin to create it before signing in.',
+          code: role === 'parent' ? 'parent_not_found' : 'student_not_found',
         }, { status: 404 })
       }
 
@@ -136,7 +137,7 @@ export async function POST(req: NextRequest) {
       }
       const valid = await bcrypt.compare(pin, user.pin_hash)
       if (!valid) {
-        return NextResponse.json({ error: 'Wrong PIN' }, { status: 401 })
+        return NextResponse.json({ error: 'Wrong PIN', code: 'wrong_pin' }, { status: 401 })
       }
       phase = 'updating the account'
       if (attachedAdminEmail) {
@@ -180,6 +181,7 @@ export async function POST(req: NextRequest) {
     console.error('Login failed:', { phase, error })
     return NextResponse.json({
       error: `Could not log in while ${phase}. Please try again or contact an admin.`,
+      code: 'server_error',
     }, { status: 500 })
   }
 }
