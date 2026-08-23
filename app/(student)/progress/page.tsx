@@ -2,8 +2,8 @@ import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import { getSkillLabel, SKILLS } from '@/lib/math'
 import ModeToggle from '../ModeToggle'
-import LangToggle from '../LangToggle'
-import { firstTrackPath, getStudentTracks } from '@/lib/tracks'
+import LangToggle from '@/components/LangToggle'
+import { firstAvailableMode, firstTrackPath, getStudentTracks } from '@/lib/tracks'
 import { resolveStudentViewResult } from '@/lib/student-view'
 import StudentViewFallback from '@/components/StudentViewFallback'
 import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
@@ -61,7 +61,12 @@ export default async function ProgressPage({
     )
   }
 
-  const currentMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
+  // A parent has no track picker, so a mode their child is not enrolled in falls
+  // back to one the child does have instead of bouncing them off the page.
+  const requestedMode: Track = mode === 'math' ? 'math' : mode === 'ela' ? 'ela' : 'esl'
+  const currentMode: Track = readOnly && !tracks.includes(requestedMode)
+    ? firstAvailableMode(tracks) ?? requestedMode
+    : requestedMode
   if (!tracks.includes(currentMode)) redirect(readOnly ? '/family' : firstTrackPath(tracks))
 
   if (currentMode === 'math') {

@@ -6,7 +6,7 @@ import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getStudentTracks } from '@/lib/tracks'
-import LangToggle from '../../../../LangToggle'
+import LangToggle from '@/components/LangToggle'
 import NYSEDAttribution from '../../NYSEDAttribution'
 import { studentCanAccessMathExam } from '@/lib/math-exam-access'
 
