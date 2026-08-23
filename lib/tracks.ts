@@ -60,6 +60,18 @@ export function firstTrackPath(tracks: Track[]): string {
   return '/tracks'
 }
 
+/**
+ * The track a mode-less learner page should fall back to. Read-only views render
+ * this instead of redirecting, because a parent has no way to pick a track and
+ * would otherwise be bounced off every page their child is not enrolled in.
+ */
+export function firstAvailableMode(tracks: Track[]): Track | null {
+  if (tracks.includes('esl')) return 'esl'
+  if (tracks.includes('ela')) return 'ela'
+  if (tracks.includes('math')) return 'math'
+  return null
+}
+
 export function firstPracticePath(tracks: Track[]): string {
   if (tracks.includes('esl')) return '/practice?mode=esl'
   if (tracks.includes('ela')) return '/practice?mode=ela'
