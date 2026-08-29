@@ -40,35 +40,24 @@ function summarizeEmailDeliveryError(error: EmailDeliveryError): string {
 export async function POST(req: NextRequest) {
   let phase = 'reading the request'
   try {
-    const { name, email } = await req.json()
-    const normalizedName = typeof name === 'string' ? name.trim() : ''
+    const { email } = await req.json()
     const normalizedEmail = normalizeEmail(email)
 
-    if (normalizedName.length < 2 || !isValidEmail(normalizedEmail)) {
-      return NextResponse.json({ error: 'Enter a valid name and email' }, { status: 400 })
+    if (!isValidEmail(normalizedEmail)) {
+      return NextResponse.json({ error: 'Enter a valid email' }, { status: 400 })
     }
 
     phase = 'opening the database'
     const db = await getDb()
     phase = 'checking the admin account'
+    // The email is the admin's identity, so an existing account is found by it
+    // and anything else is a signup that has to be approved first.
     const adminResult = await db.execute({
-      sql: 'SELECT id, email FROM users WHERE LOWER(name) = LOWER(?) AND role = ?',
-      args: [normalizedName, 'admin'],
+      sql: "SELECT id FROM users WHERE role = 'admin' AND LOWER(email) = LOWER(?)",
+      args: [normalizedEmail],
     })
-    const admin = adminResult.rows[0]
 
-    if (!admin) {
-      const adminWithEmailResult = await db.execute({
-        sql: "SELECT name FROM users WHERE role = 'admin' AND LOWER(email) = LOWER(?)",
-        args: [normalizedEmail],
-      })
-      const adminWithEmail = adminWithEmailResult.rows[0]
-      if (adminWithEmail) {
-        return NextResponse.json({
-          error: `This email already belongs to an admin account. Sign in with the admin name "${adminWithEmail.name}".`,
-        }, { status: 409 })
-      }
-
+    if (!adminResult.rows[0]) {
       const countResult = await db.execute({
         sql: "SELECT COUNT(*) as count FROM users WHERE role = 'admin'",
         args: [],
@@ -84,18 +73,6 @@ export async function POST(req: NextRequest) {
             error: 'This email is not approved for admin signup. Ask an existing admin to approve it first.',
           }, { status: 403 })
         }
-      }
-    } else if (admin.email && String(admin.email).toLowerCase() !== normalizedEmail) {
-      return NextResponse.json({ error: 'Email does not match this admin account' }, { status: 401 })
-    } else if (!admin.email) {
-      const allowlistResult = await db.execute({
-        sql: 'SELECT email FROM admin_email_allowlist WHERE email = ?',
-        args: [normalizedEmail],
-      })
-      if (!allowlistResult.rows[0]) {
-        return NextResponse.json({
-          error: 'This email is not approved for admin signup. Ask an existing admin to approve it first.',
-        }, { status: 403 })
       }
     }
 
