@@ -63,6 +63,12 @@ Rebuild the ELA catalog and crops with `scripts/import_nysed_ela_mc.py`. The imp
 - `lib/student-view.ts` resolves who a learner page is about. Students see themselves and can act; parents see a linked student with `readOnly` set, which turns interactive links into plain markup.
 - Read-only is enforced at the data layer too: every mutating API requires `role === 'student'` (or `tutor`/`admin`), and each route group's layout allowlists its own role.
 
+## Admin Sign-in
+
+- An admin is identified by their verified email, not a name: the login screen asks for email, then the emailed code, then a PIN. Both `app/api/auth/admin-email` and `app/api/auth/login` look the account up by `LOWER(email)`.
+- `users.name` is `NOT NULL`, and a new admin has no separate name to give, so the verified email is stored as the display name. Admins created before this keep whatever name they had.
+- The first admin bootstraps freely; after that the email must be on `admin_email_allowlist`.
+
 ## Admin Account Maintenance
 
 - `lib/pin-reset.ts` sets a new PIN for a student, tutor or parent. Admins are excluded on purpose: an admin PIN is only half of their sign-in, so letting one admin overwrite another's would be a takeover rather than a reset.

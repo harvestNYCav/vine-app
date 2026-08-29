@@ -58,7 +58,6 @@ interface LoginCopy {
   continueButton: string
   goBack: string
   changeName: string
-  greeting: (name: string) => string
   emailLabel: string
   emailInvalid: string
   sendCode: string
@@ -99,7 +98,6 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
     continueButton: 'Continue',
     goBack: '← Go back',
     changeName: '← Change name',
-    greeting: name => `Hello, ${name}`,
     emailLabel: 'Admin email',
     emailInvalid: 'Please enter a valid email',
     sendCode: 'Send verification code',
@@ -138,7 +136,6 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
     continueButton: 'Continuar',
     goBack: '← Volver',
     changeName: '← Cambiar nombre',
-    greeting: name => `Hola, ${name}`,
     emailLabel: 'Correo del administrador',
     emailInvalid: 'Escribe un correo electrónico válido',
     sendCode: 'Enviar código de verificación',

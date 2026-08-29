@@ -31,12 +31,15 @@ function LoginForm() {
   const [emailCode, setEmailCode] = useState('')
   const [devCode, setDevCode] = useState('')
   const [pin, setPin] = useState('')
-  const [step, setStep] = useState<'name' | 'email' | 'code' | 'pin'>('name')
+  const [step, setStep] = useState<'name' | 'email' | 'code' | 'pin'>(
+    role === 'admin' ? 'email' : 'name',
+  )
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const pinPanelRef = useRef<HTMLDivElement>(null)
   const pinSubmissionStartedRef = useRef(false)
 
+  // Only students, tutors and parents reach this step; admins start at email.
   const handleNameSubmit = () => {
     const normalizedName = role === 'student' || role === 'parent' ? normalizePersonName(name) : name.trim()
     if (normalizedName.length < 2) {
@@ -45,7 +48,7 @@ function LoginForm() {
     }
     setName(normalizedName)
     setError('')
-    setStep(role === 'admin' ? 'email' : 'pin')
+    setStep('pin')
   }
 
   const requestAdminCode = async () => {
@@ -60,7 +63,7 @@ function LoginForm() {
       const res = await fetch('/vine-app/api/auth/admin-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name.trim(), email: email.trim() }),
+        body: JSON.stringify({ email: email.trim() }),
       })
       const data = await res.json()
       if (!res.ok) {
@@ -137,7 +140,11 @@ function LoginForm() {
       const res = await fetch('/vine-app/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name.trim(), pin, role, email: email.trim(), emailCode }),
+        body: JSON.stringify(
+          role === 'admin'
+            ? { pin, role, email: email.trim(), emailCode }
+            : { name: name.trim(), pin, role },
+        ),
       })
       const data = await res.json()
       if (!res.ok) {
@@ -218,9 +225,6 @@ function LoginForm() {
 
         {step === 'email' && (
           <div className="space-y-4">
-            <p className="text-center text-gray-700 font-medium">
-              {copy.greeting(name)}
-            </p>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 {copy.emailLabel}
@@ -244,10 +248,10 @@ function LoginForm() {
               {loading ? copy.sending : copy.sendCode}
             </button>
             <button
-              onClick={() => { setStep('name'); setEmail(''); setError('') }}
+              onClick={() => router.back()}
               className="w-full text-gray-500 text-sm py-2"
             >
-              {copy.changeName}
+              {copy.goBack}
             </button>
           </div>
         )}
@@ -302,9 +306,11 @@ function LoginForm() {
             aria-labelledby="pin-entry-heading"
             tabIndex={-1}
           >
-            <p className="text-center text-gray-700 font-medium">
-              {copy.pinGreeting(name)}
-            </p>
+            {role !== 'admin' && (
+              <p className="text-center text-gray-700 font-medium">
+                {copy.pinGreeting(name)}
+              </p>
+            )}
             <p id="pin-entry-heading" className="text-center text-gray-500 text-sm">
               {copy.pinPrompt}
             </p>
