@@ -50,11 +50,14 @@ test('admin provisioning hashes the PIN and atomically rejects case and whitespa
       );
     `)
 
-    const attempts = await Promise.all([
-      createStudentAccount(db, { name: 'Jamie  Chen', pin: '1234' }),
-      createStudentAccount(db, { name: ' jamie chen ', pin: '2345' }),
-      createStudentAccount(db, { name: 'JAMIE   CHEN', pin: '3456' }),
-    ])
+    const candidates = [
+      { name: 'Jamie  Chen', pin: '1234', stored: 'Jamie Chen' },
+      { name: ' jamie chen ', pin: '2345', stored: 'jamie chen' },
+      { name: 'JAMIE   CHEN', pin: '3456', stored: 'JAMIE CHEN' },
+    ]
+    const attempts = await Promise.all(
+      candidates.map(candidate => createStudentAccount(db, { name: candidate.name, pin: candidate.pin })),
+    )
     assert.equal(attempts.filter(result => result.ok).length, 1)
     assert.equal(attempts.filter(result => !result.ok && result.reason === 'conflict').length, 2)
 
@@ -63,13 +66,16 @@ test('admin provisioning hashes the PIN and atomically rejects case and whitespa
       args: [],
     })
     assert.equal(stored.rows.length, 1)
-    assert.equal(String(stored.rows[0].name), 'Jamie Chen')
-    assert.equal(Number(stored.rows[0].last_active), 0)
-    assert.equal(String(stored.rows[0].pin_hash).includes('1234'), false)
 
-    const successfulAttemptIndex = attempts.findIndex(result => result.ok)
-    const successfulPin = ['1234', '2345', '3456'][successfulAttemptIndex]
-    assert.equal(await bcrypt.compare(successfulPin, String(stored.rows[0].pin_hash)), true)
+    // Which attempt reaches the write lock first is up to the scheduler, so the
+    // assertions follow the winner. Whoever wins keeps their own capitalisation
+    // with whitespace collapsed; the other two are rejected case-insensitively
+    // instead of overwriting it.
+    const winner = candidates[attempts.findIndex(result => result.ok)]
+    assert.equal(String(stored.rows[0].name), winner.stored)
+    assert.equal(Number(stored.rows[0].last_active), 0)
+    assert.equal(String(stored.rows[0].pin_hash).includes(winner.pin), false)
+    assert.equal(await bcrypt.compare(winner.pin, String(stored.rows[0].pin_hash)), true)
   } finally {
     db.close()
     rmSync(directory, { recursive: true, force: true })
