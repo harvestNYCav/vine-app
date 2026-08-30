@@ -15,13 +15,17 @@ export async function POST(req: NextRequest) {
   try {
     const { name, pin, role, email, emailCode } = await req.json()
 
-    if (!name || !pin || pin.length !== 4 || !/^\d{4}$/.test(pin) || !ROLES.has(role)) {
+    // Admins sign in with their verified email, so they never supply a name.
+    const namelessRole = role === 'admin'
+    if ((!namelessRole && !name) || !pin || pin.length !== 4 || !/^\d{4}$/.test(pin) || !ROLES.has(role)) {
       return NextResponse.json({ error: 'Invalid request', code: 'invalid_request' }, { status: 400 })
     }
 
     phase = 'opening the database'
     const db = await getDb()
-    const normalizedName = role === 'student' || role === 'parent' ? normalizeStudentName(name) : name.trim()
+    const normalizedName = namelessRole
+      ? ''
+      : role === 'student' || role === 'parent' ? normalizeStudentName(name) : String(name).trim()
     const normalizedEmail = normalizeEmail(email)
 
     if (role === 'admin') {
@@ -50,15 +54,19 @@ export async function POST(req: NextRequest) {
     }
 
     phase = 'loading the account'
-    const userResult = await db.execute({
-      sql: 'SELECT * FROM users WHERE LOWER(name) = LOWER(?) AND role = ?',
-      args: [normalizedName, role],
-    })
+    const userResult = namelessRole
+      ? await db.execute({
+          sql: "SELECT * FROM users WHERE role = 'admin' AND LOWER(email) = LOWER(?)",
+          args: [normalizedEmail],
+        })
+      : await db.execute({
+          sql: 'SELECT * FROM users WHERE LOWER(name) = LOWER(?) AND role = ?',
+          args: [normalizedName, role],
+        })
     const rawUser = userResult.rows[0]
 
     let user: { id: string; name: string; email: string | null; pin_hash: string; role: Role; created_at: number; last_active: number } | undefined
     let createdAdmin = false
-    let attachedAdminEmail = false
 
     if (!rawUser) {
       if (!loginCanCreateMissingAccount(role)) {
@@ -77,17 +85,6 @@ export async function POST(req: NextRequest) {
         })
         const adminCount = Number(adminResult.rows[0]?.count ?? 0)
         if (adminCount > 0) {
-          const adminWithEmailResult = await db.execute({
-            sql: "SELECT name FROM users WHERE role = 'admin' AND LOWER(email) = LOWER(?)",
-            args: [normalizedEmail],
-          })
-          const adminWithEmail = adminWithEmailResult.rows[0]
-          if (adminWithEmail) {
-            return NextResponse.json({
-              error: `This email already belongs to an admin account. Sign in with the admin name "${adminWithEmail.name}".`,
-            }, { status: 409 })
-          }
-
           const allowlistResult = await db.execute({
             sql: 'SELECT email FROM admin_email_allowlist WHERE email = ?',
             args: [normalizedEmail],
@@ -102,30 +99,17 @@ export async function POST(req: NextRequest) {
       const pinHash = await bcrypt.hash(pin, 10)
       const id = randomUUID()
       const now = Date.now()
+      // users.name is required, and an admin has no separate one to give, so the
+      // verified email is what the app calls them.
+      const displayName = namelessRole ? normalizedEmail : normalizedName
       phase = 'creating the account'
       await db.execute({
         sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, ?, ?, ?, ?, ?)',
-        args: [id, normalizedName, role === 'admin' ? normalizedEmail : null, pinHash, role, now, now],
+        args: [id, displayName, role === 'admin' ? normalizedEmail : null, pinHash, role, now, now],
       })
-      user = { id, name: normalizedName, email: role === 'admin' ? normalizedEmail : null, pin_hash: pinHash, role, created_at: now, last_active: now }
+      user = { id, name: displayName, email: role === 'admin' ? normalizedEmail : null, pin_hash: pinHash, role, created_at: now, last_active: now }
       createdAdmin = role === 'admin'
     } else {
-      const userEmail = rawUser.email ? String(rawUser.email).toLowerCase() : null
-      if (role === 'admin' && userEmail && userEmail !== normalizedEmail) {
-        return NextResponse.json({ error: 'Email does not match this admin account' }, { status: 401 })
-      }
-      if (role === 'admin' && !userEmail) {
-        const allowlistResult = await db.execute({
-          sql: 'SELECT email FROM admin_email_allowlist WHERE email = ?',
-          args: [normalizedEmail],
-        })
-        if (!allowlistResult.rows[0]) {
-          return NextResponse.json({
-            error: 'This email is not approved for admin signup. Ask an existing admin to approve it first.',
-          }, { status: 403 })
-        }
-        attachedAdminEmail = true
-      }
       user = {
         id: rawUser.id as string,
         name: rawUser.name as string,
@@ -140,14 +124,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: 'Wrong PIN', code: 'wrong_pin' }, { status: 401 })
       }
       phase = 'updating the account'
-      if (attachedAdminEmail) {
-        await db.execute({
-          sql: 'UPDATE users SET email = ?, last_active = ? WHERE id = ?',
-          args: [normalizedEmail, Date.now(), user.id],
-        })
-      } else {
-        await db.execute({ sql: 'UPDATE users SET last_active = ? WHERE id = ?', args: [Date.now(), user.id] })
-      }
+      await db.execute({ sql: 'UPDATE users SET last_active = ? WHERE id = ?', args: [Date.now(), user.id] })
     }
 
     if (role === 'admin') {
