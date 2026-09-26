@@ -42,6 +42,9 @@ export default function WorksheetClient({ mod, userId }: Props) {
   const [matchingItems] = useState(() => getMatchingItems(mod))
   const [shuffledEs, setShuffledEs] = useState(() => matchingItems.map(v => v.es ?? ''))
   const hasMatching = matchingItems.length > 0
+  // ESL homework tests English, so keep phone browsers set to Spanish from auto-translating the
+  // questions and answer choices. Section instructions and buttons stay translatable.
+  const lessonTranslate = mod.track === 'esl' ? 'no' : undefined
 
   useEffect(() => {
     // Shuffle only after mount so the server-rendered and hydrated option order match.
@@ -150,7 +153,7 @@ export default function WorksheetClient({ mod, userId }: Props) {
         <section>
           <h2 className="font-bold text-gray-700 mb-1">1. Matching</h2>
           <p className="text-xs text-gray-400 mb-3">Match each English word to its Spanish translation.</p>
-          <div className="space-y-3">
+          <div className="space-y-3" translate={lessonTranslate}>
             {matchingItems.map(item => (
               <div key={item.id} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 p-3">
                 <p className="font-medium text-gray-800 flex-1">{item.en}</p>
@@ -174,7 +177,7 @@ export default function WorksheetClient({ mod, userId }: Props) {
       <section>
         <h2 className="font-bold text-gray-700 mb-1">{hasMatching ? '2.' : '1.'} Fill in the Blank</h2>
         <p className="text-xs text-gray-400 mb-3">Write the missing word in English.</p>
-        <div className="space-y-3">
+        <div className="space-y-3" translate={lessonTranslate}>
           {mod.worksheet.map(q => (
             <div key={q.id} className="bg-white rounded-xl border border-gray-100 p-3">
               <p className="font-medium text-gray-800">{q.promptEn}</p>

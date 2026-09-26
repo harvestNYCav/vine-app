@@ -69,7 +69,9 @@ export default function FlashcardsClient({ mod }: Props) {
       </p>
 
       {/* Card */}
+      {/* Keep browser auto-translate off the English being taught; the controls stay translatable. */}
       <button
+        translate={isEsl ? 'no' : undefined}
         onClick={() => { if (isEsl) setFlipped(!flipped) }}
         className={`w-full rounded-3xl p-8 text-center shadow-md border-2 transition-all min-h-[200px] flex flex-col items-center justify-center mb-6 ${
           isEsl && flipped

@@ -219,7 +219,8 @@ export default function MatchingGameClient({ mod }: Props) {
       ) : !mounted ? (
         <div className="text-center py-12 text-gray-400">Shuffling tiles…</div>
       ) : (
-        <div className="grid grid-cols-2 gap-3">
+        // Matching is ESL-only: keep browser auto-translate from turning the English tiles into Spanish.
+        <div className="grid grid-cols-2 gap-3" translate="no">
           <div className="space-y-2">
             {enTiles.map(item => (
               <button
