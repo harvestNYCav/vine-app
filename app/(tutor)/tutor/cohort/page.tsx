@@ -198,8 +198,8 @@ export default async function CohortPage() {
                   <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-sm font-bold text-amber-700 flex-shrink-0">
                     {student.name.charAt(0).toUpperCase()}
                   </div>
-                  <span className="text-sm font-medium text-gray-700 w-20 flex-shrink-0">{student.name}</span>
-                  <div className="flex gap-1.5 flex-wrap">
+                  <span className="text-sm font-medium text-gray-700 w-24 sm:w-40 flex-shrink-0 break-words leading-tight">{student.name}</span>
+                  <div className="flex-1 min-w-0 flex gap-1.5 flex-wrap">
                     {(moduleProgressByStudent.get(student.id) ?? []).map(r => {
                       const mod = getModule(r.module_slug)
                       if (!mod) return null
