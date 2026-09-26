@@ -4,7 +4,7 @@ import { getSession } from '@/lib/auth'
 import { localDateKey } from '@/lib/dates'
 import { getModule } from '@/content/modules'
 import { getStudentTracks } from '@/lib/tracks'
-import { getMatchingItems } from '@/lib/worksheet'
+import { gradeHomework, gradeQuiz, scoreAnswers } from '@/lib/lesson-answers'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
@@ -123,19 +123,17 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Every quiz question must be answered' }, { status: 400 })
     }
 
-    const graded = mod.quiz.map(question => ({
-      questionId: question.id,
-      correct: String(answerByQuestionId.get(question.id) ?? '') === question.answer,
-    }))
-    const score = Math.round((graded.filter(result => result.correct).length / mod.quiz.length) * 100)
+    const results = gradeQuiz(mod, answerByQuestionId)
+    const score = scoreAnswers(results)
+    const savedAnswers = JSON.stringify(results)
 
     await db.execute({
       sql: `
-        INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count)
-        VALUES (?, ?, NULL, ?, ?, 0)
-        ON CONFLICT(user_id, module_slug) DO UPDATE SET practice_completed_at = ?, practice_score = ?
+        INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count, practice_answers)
+        VALUES (?, ?, NULL, ?, ?, 0, ?)
+        ON CONFLICT(user_id, module_slug) DO UPDATE SET practice_completed_at = ?, practice_score = ?, practice_answers = ?
       `,
-      args: [session.userId, moduleSlug, Date.now(), score, Date.now(), score],
+      args: [session.userId, moduleSlug, Date.now(), score, savedAnswers, Date.now(), score, savedAnswers],
     })
     await db.execute({
       sql: `
@@ -146,7 +144,7 @@ export async function POST(req: NextRequest) {
       args: [session.userId, today],
     })
 
-    return NextResponse.json({ ok: true, score })
+    return NextResponse.json({ ok: true, score, results })
   }
 
   if (type === 'homework_completed') {
@@ -168,7 +166,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
     }
 
-    const matchingItems = getMatchingItems(mod)
     const matchingByVocabId = new Map(
       matchingAnswers
         .filter((item): item is { vocabId: string; selectedEs: unknown } =>
@@ -176,9 +173,6 @@ export async function POST(req: NextRequest) {
         )
         .map(item => [item.vocabId, item.selectedEs])
     )
-    const matchingCorrect = matchingItems.filter(
-      vocab => String(matchingByVocabId.get(vocab.id) ?? '') === vocab.es
-    ).length
 
     const fillInByQuestionId = new Map(
       fillInBlankAnswers
@@ -187,20 +181,17 @@ export async function POST(req: NextRequest) {
         )
         .map(item => [item.questionId, item.answer])
     )
-    const fillInBlankCorrect = mod.worksheet.filter(
-      question => String(fillInByQuestionId.get(question.id) ?? '').trim().toLowerCase() === question.answer.trim().toLowerCase()
-    ).length
-
-    const total = matchingItems.length + mod.worksheet.length
-    const score = total > 0 ? Math.round(((matchingCorrect + fillInBlankCorrect) / total) * 100) : 0
+    const results = gradeHomework(mod, matchingByVocabId, fillInByQuestionId)
+    const score = scoreAnswers(results)
+    const savedAnswers = JSON.stringify(results)
 
     await db.execute({
       sql: `
-        INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count, homework_completed_at, homework_score)
-        VALUES (?, ?, NULL, NULL, NULL, 0, ?, ?)
-        ON CONFLICT(user_id, module_slug) DO UPDATE SET homework_completed_at = ?, homework_score = ?
+        INSERT INTO module_progress (user_id, module_slug, vocab_viewed_at, practice_completed_at, practice_score, teach_session_count, homework_completed_at, homework_score, homework_answers)
+        VALUES (?, ?, NULL, NULL, NULL, 0, ?, ?, ?)
+        ON CONFLICT(user_id, module_slug) DO UPDATE SET homework_completed_at = ?, homework_score = ?, homework_answers = ?
       `,
-      args: [session.userId, moduleSlug, Date.now(), score, Date.now(), score],
+      args: [session.userId, moduleSlug, Date.now(), score, savedAnswers, Date.now(), score, savedAnswers],
     })
     await db.execute({
       sql: `
@@ -211,7 +202,7 @@ export async function POST(req: NextRequest) {
       args: [session.userId, today],
     })
 
-    return NextResponse.json({ ok: true, score })
+    return NextResponse.json({ ok: true, score, results })
   }
 
   if (type !== 'vocab_viewed' && type !== 'practice_completed') {
