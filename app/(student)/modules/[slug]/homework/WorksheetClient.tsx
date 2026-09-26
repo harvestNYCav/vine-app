@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { Module } from '@/types'
+import AnswerReview, { correctCountLabel } from '@/components/AnswerReview'
+import { toAnswerResults, type AnswerResult } from '@/lib/lesson-answers'
 import { getMatchingItems } from '@/lib/worksheet'
 import { clearDraft, loadDraft, LONG_FORM_DRAFT_TTL_MS, saveDraft, userDraftKey } from '@/lib/resumable-work'
 
@@ -51,6 +53,7 @@ export default function WorksheetClient({ mod, userId }: Props) {
   const [fillIn, setFillIn] = useState<Record<string, string>>({})
   const [submitting, setSubmitting] = useState(false)
   const [score, setScore] = useState<number | null>(null)
+  const [results, setResults] = useState<AnswerResult[]>([])
   const [draftLoaded, setDraftLoaded] = useState(false)
   const [error, setError] = useState('')
 
@@ -106,6 +109,7 @@ export default function WorksheetClient({ mod, userId }: Props) {
       } catch {
         // The server result is authoritative even if local cleanup fails.
       }
+      setResults(toAnswerResults(json.results))
       setScore(json.score)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Homework could not be saved. Your answers are still here.')
@@ -124,7 +128,14 @@ export default function WorksheetClient({ mod, userId }: Props) {
         <h2 className="text-2xl font-bold text-green-800 mb-2">Homework Complete!</h2>
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 my-6">
           <p className="text-5xl font-bold text-green-700 mb-1">{score}%</p>
+          {results.length > 0 && <p className="text-sm text-gray-500">{correctCountLabel(results)}</p>}
         </div>
+        {results.length > 0 && (
+          <div className="mb-6">
+            <h3 className="mb-3 text-left font-bold text-gray-700">Your answers</h3>
+            <AnswerReview results={results} />
+          </div>
+        )}
         <a href={`/vine-app/modules/${mod.slug}`} className="block">
           <button className="w-full bg-gray-100 text-gray-700 text-base font-medium py-3 rounded-2xl">
             ← Back to lesson
