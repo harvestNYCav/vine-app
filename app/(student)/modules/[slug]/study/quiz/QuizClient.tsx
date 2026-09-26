@@ -108,7 +108,8 @@ export default function QuizClient({ mod, userId }: Props) {
         <h1 className="font-bold text-green-800">{mod.titleEn} — Quick Check</h1>
       </div>
 
-      <div className="space-y-4">
+      {/* Keep browser auto-translate off the English being tested; Submit stays translatable. */}
+      <div className="space-y-4" translate={mod.track === 'esl' ? 'no' : undefined}>
         {mod.quiz.map((q, index) => (
           <div key={q.id} className="bg-white rounded-xl border border-gray-100 p-4">
             <p className="text-xs text-gray-400 mb-1">Question {index + 1} of {mod.quiz.length}</p>

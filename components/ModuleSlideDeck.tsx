@@ -117,7 +117,12 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
         <span>{mod.titleEn}</span>
       </div>
 
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 text-center">
+      {/* ESL lessons teach English, so stop phone browsers set to Spanish from auto-translating the
+          lesson itself. The Back/Next controls outside this region stay translatable. */}
+      <div
+        translate={mod.track === 'esl' ? 'no' : undefined}
+        className="flex-1 flex flex-col items-center justify-center px-6 py-10 text-center"
+      >
         {slide.type === 'title' && (
           <>
             {mod.track === 'esl' && <p className="text-2xl md:text-3xl text-amber-300 mb-3">{mod.titleEs}</p>}
