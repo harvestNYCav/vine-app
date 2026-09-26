@@ -11,6 +11,14 @@ import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
+import ExamAssignButton from './ExamAssignButton'
+import {
+  assignmentResult,
+  examSectionKey,
+  getExamSectionResults,
+  listExamAssignmentsForDate,
+} from '@/lib/exam-assignments'
+import { describeExamSection } from '@/lib/exam-sections'
 import AnswerReview from '@/components/AnswerReview'
 import { parseAnswerResults } from '@/lib/lesson-answers'
 
@@ -93,6 +101,15 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
+  const [todayExamAssignments, examSectionResults] = await Promise.all([
+    listExamAssignmentsForDate(db, studentId, today),
+    getExamSectionResults(db, studentId),
+  ])
+  const todayExamSections = todayExamAssignments.flatMap(assignment => {
+    const info = describeExamSection(assignment)
+    return info ? [{ assignment, info, result: assignmentResult(assignment, examSectionResults) }] : []
+  })
+  const assignedTodayKeys = new Set(todayExamAssignments.map(examSectionKey))
 
   type ScheduledLessonRow = { id: string; module_slug: string; homework_assigned: number | bigint }
   const todayLessons = (todaySessionResult.rows as unknown as ScheduledLessonRow[]).flatMap(row => {
@@ -185,13 +202,50 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                 )
               })}
             </div>
-          ) : (
+          ) : todayExamSections.length === 0 && (
             <p className="text-sm text-gray-400">No lesson assigned yet</p>
+          )}
+          {todayExamSections.length > 0 && (
+            <div className={`space-y-3 ${todayLessons.length > 0 ? 'mt-3' : ''}`}>
+              {todayExamSections.map(({ assignment, info, result }) => (
+                <div
+                  key={assignment.id}
+                  className={`rounded-xl border p-3 ${result ? 'border-green-200 bg-green-50/60' : 'border-amber-100 bg-amber-50/50'}`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">{info.subjectLabel} exam · {info.year}</p>
+                      <p className="font-semibold text-gray-800">{info.emoji} {info.title}</p>
+                    </div>
+                    {result && (
+                      <span className="flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700">✓ Finished · {result.percentage}%</span>
+                    )}
+                  </div>
+                  <div className="mt-2 flex items-center justify-between gap-2">
+                    <p className="text-xs text-gray-500">
+                      {result ? `${result.latestPoints}/${result.latestPossible} points` : 'Not finished yet'}
+                    </p>
+                    <ExamAssignButton
+                      studentId={studentId}
+                      subject={assignment.subject}
+                      examId={assignment.examId}
+                      sectionSlug={assignment.sectionSlug}
+                      assigned
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           )}
         </div>
         <Link href="/tutor/lessons" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">
           📚 Browse Lessons to Assign →
         </Link>
+        {(tracks.includes('math') || tracks.includes('ela')) && settings.gradeLevel && (
+          <a href="#exam-sections" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">
+            📝 Assign an Exam Section ↓
+          </a>
+        )}
       </div>
 
       {/* Tutor Notes */}
@@ -255,6 +309,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         </div>
       )}
 
+      <div id="exam-sections" className="scroll-mt-4" />
       {tracks.includes('ela') && (
         <div className="mb-6">
           <h3 className="mb-3 font-bold text-gray-700">📖 ELA Exam Progress</h3>
@@ -273,6 +328,13 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                     <span>{section.emoji}</span>
                     <span className="flex-1 text-xs font-medium text-gray-700">{exam.year} · {section.title}</span>
                     <span className={`text-xs font-bold ${percentage ? 'text-purple-700' : 'text-gray-300'}`}>{percentage}%</span>
+                    <ExamAssignButton
+                      studentId={studentId}
+                      subject="ela"
+                      examId={exam.id}
+                      sectionSlug={section.slug}
+                      assigned={assignedTodayKeys.has(examSectionKey({ subject: 'ela', examId: exam.id, sectionSlug: section.slug }))}
+                    />
                   </div>
                   <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-100">
                     <div className="h-full rounded-full bg-purple-600" style={{ width: `${percentage}%` }} />
@@ -310,6 +372,13 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                       <span>{section.emoji}</span>
                       <span className="flex-1 text-xs font-medium text-gray-700">{exam.year} · {section.title.en}</span>
                       <span className={`text-xs font-bold ${percentage ? 'text-blue-700' : 'text-gray-300'}`}>{percentage}%</span>
+                      <ExamAssignButton
+                        studentId={studentId}
+                        subject="math"
+                        examId={exam.id}
+                        sectionSlug={section.slug}
+                        assigned={assignedTodayKeys.has(examSectionKey({ subject: 'math', examId: exam.id, sectionSlug: section.slug }))}
+                      />
                     </div>
                     <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-100">
                       <div className="h-full rounded-full bg-blue-600" style={{ width: `${percentage}%` }} />
