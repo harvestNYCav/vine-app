@@ -12,6 +12,23 @@ import { getElaExamsForGrade } from '@/content/ela-exams'
 import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
 
+type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
+
+// The three things a student does with a lesson, in the order they appear on the student's lesson page.
+function LessonSteps({ progress }: { progress: ModProgressRow | undefined }) {
+  return (
+    <div className="flex gap-2 mt-1 flex-wrap">
+      <span className={`text-xs px-1.5 py-0.5 rounded ${progress?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'text-gray-300'}`}>📖 Reviewed</span>
+      <span className={`text-xs px-1.5 py-0.5 rounded ${progress?.practice_completed_at ? 'bg-purple-100 text-purple-600' : 'text-gray-300'}`}>✅ Quick Check</span>
+      <span className={`text-xs px-1.5 py-0.5 rounded ${progress?.homework_completed_at ? 'bg-green-100 text-green-600' : 'text-gray-300'}`}>📓 Homework{progress?.homework_score ? ` ${progress.homework_score}%` : ''}</span>
+    </div>
+  )
+}
+
+function completedStepCount(progress: ModProgressRow | undefined) {
+  return [progress?.vocab_viewed_at, progress?.practice_completed_at, progress?.homework_completed_at].filter(Boolean).length
+}
+
 function mathMasteryColor(v: number) {
   if (v >= 0.75) return 'bg-green-500'
   if (v >= 0.4) return 'bg-yellow-400'
@@ -53,7 +70,6 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     return module ? [{ sessionId: row.id, module, homeworkAssigned: Number(row.homework_assigned) === 1 }] : []
   })
 
-  type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
   type MathSessionCountRow = { session_type: string; count: number }
   type ExamProgressRow = { exam_id: string; section_slug: string; attempts: number; best_points: number; best_possible: number }
@@ -113,13 +129,30 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
           <p className="text-xs text-amber-600 font-medium uppercase tracking-wide mb-0.5">Today</p>
           {todayLessons.length > 0 ? (
             <div className="space-y-3">
-              {todayLessons.map(lesson => (
-                <div key={lesson.sessionId} className="rounded-xl border border-amber-100 bg-amber-50/50 p-3">
-                  <p className="font-semibold text-gray-800">{lesson.module.titleEn}</p>
-                  {lesson.module.track === 'esl' && <p className="text-sm text-gray-500 mb-2">{lesson.module.titleEs}</p>}
-                  <HomeworkButton sessionId={lesson.sessionId} initialAssigned={lesson.homeworkAssigned} />
-                </div>
-              ))}
+              {todayLessons.map(lesson => {
+                // Show the student's own progress here too, so a tutor can see a scheduled lesson is
+                // finished without hunting for it in the full Lessons list below.
+                const progress = moduleProgress.find(mp => mp.module_slug === lesson.module.slug)
+                const finished = completedStepCount(progress) === 3
+                return (
+                  <div
+                    key={lesson.sessionId}
+                    className={`rounded-xl border p-3 ${finished ? 'border-green-200 bg-green-50/60' : 'border-amber-100 bg-amber-50/50'}`}
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <p className="font-semibold text-gray-800">{lesson.module.titleEn}</p>
+                      {finished && (
+                        <span className="flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700">✓ Finished</span>
+                      )}
+                    </div>
+                    {lesson.module.track === 'esl' && <p className="text-sm text-gray-500">{lesson.module.titleEs}</p>}
+                    <div className="mb-3">
+                      <LessonSteps progress={progress} />
+                    </div>
+                    <HomeworkButton sessionId={lesson.sessionId} initialAssigned={lesson.homeworkAssigned} />
+                  </div>
+                )
+              })}
             </div>
           ) : (
             <p className="text-sm text-gray-400">No lesson assigned yet</p>
@@ -149,17 +182,12 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
             </div>
           ) : visibleModules.map(mod => {
             const p = moduleProgress.find(mp => mp.module_slug === mod.slug)
-            const steps = [!!p?.vocab_viewed_at, !!p?.practice_completed_at, !!p?.homework_completed_at]
-            const completed = steps.filter(Boolean).length
+            const completed = completedStepCount(p)
             return (
               <div key={mod.slug} className="bg-white rounded-xl p-3 border border-gray-100 flex items-center gap-3">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-gray-700">{mod.titleEn}</p>
-                  <div className="flex gap-2 mt-1 flex-wrap">
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'text-gray-300'}`}>📖 Reviewed</span>
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.practice_completed_at ? 'bg-purple-100 text-purple-600' : 'text-gray-300'}`}>✅ Quick Check</span>
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${p?.homework_completed_at ? 'bg-green-100 text-green-600' : 'text-gray-300'}`}>📓 Homework{p?.homework_score ? ` ${p.homework_score}%` : ''}</span>
-                  </div>
+                  <LessonSteps progress={p} />
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center flex-shrink-0 text-xs font-bold"
                   style={{
