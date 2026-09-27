@@ -270,6 +270,9 @@ async function initSchema(db: Client): Promise<void> {
   await ensureColumn(db, 'users', 'email', 'TEXT')
   await ensureColumn(db, 'module_progress', 'homework_completed_at', 'INTEGER')
   await ensureColumn(db, 'module_progress', 'homework_score', 'INTEGER')
+  // JSON arrays of graded answers from the latest Quick Check / Homework (see lib/lesson-answers.ts).
+  await ensureColumn(db, 'module_progress', 'practice_answers', 'TEXT')
+  await ensureColumn(db, 'module_progress', 'homework_answers', 'TEXT')
   await ensureColumn(
     db,
     'student_settings',

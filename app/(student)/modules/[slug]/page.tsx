@@ -5,6 +5,8 @@ import getDb from '@/lib/db'
 import { getStudentTracks } from '@/lib/tracks'
 import { getTaughtModuleSlugsForStudent } from '@/lib/scheduling'
 import { formatWordCount } from '@/lib/study'
+import { parseAnswerResults } from '@/lib/lesson-answers'
+import AnswerReview, { correctCountLabel } from '@/components/AnswerReview'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -53,10 +55,17 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
     vocab_viewed_at: number | null
     homework_completed_at: number | null
     homework_score: number | null
+    practice_answers: string | null
+    homework_answers: string | null
   } | undefined
 
   const reviewed = !!progress?.vocab_viewed_at
   const homeworkDone = !!progress?.homework_completed_at
+  // The latest graded attempts, so the student can come back and see what they missed.
+  const pastAttempts = [
+    { label: '📓 Homework', results: parseAnswerResults(progress?.homework_answers) },
+    { label: '✅ Quick Check', results: parseAnswerResults(progress?.practice_answers) },
+  ].filter(attempt => attempt.results.length > 0)
 
   return (
     <div className="max-w-lg mx-auto w-full px-4 py-6">
@@ -103,6 +112,25 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
           </button>
         </a>
       </div>
+
+      {pastAttempts.length > 0 && (
+        <div className="mt-8">
+          <h2 className="mb-3 font-bold text-gray-700">Your last answers</h2>
+          <div className="space-y-3">
+            {pastAttempts.map(attempt => (
+              <details key={attempt.label} className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
+                <summary className="cursor-pointer font-semibold text-gray-800">
+                  {attempt.label}
+                  <span className="ml-2 text-sm font-normal text-gray-500">{correctCountLabel(attempt.results)}</span>
+                </summary>
+                <div className="mt-3">
+                  <AnswerReview results={attempt.results} />
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }
