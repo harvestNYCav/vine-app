@@ -11,8 +11,10 @@ import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
+import AnswerReview from '@/components/AnswerReview'
+import { parseAnswerResults } from '@/lib/lesson-answers'
 
-type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null }
+type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null; practice_answers: string | null; homework_answers: string | null }
 
 // The three things a student does with a lesson, in the order they appear on the student's lesson page.
 function LessonSteps({ progress }: { progress: ModProgressRow | undefined }) {
@@ -21,6 +23,34 @@ function LessonSteps({ progress }: { progress: ModProgressRow | undefined }) {
       <span className={`text-xs px-1.5 py-0.5 rounded ${progress?.vocab_viewed_at ? 'bg-blue-100 text-blue-600' : 'text-gray-300'}`}>📖 Reviewed</span>
       <span className={`text-xs px-1.5 py-0.5 rounded ${progress?.practice_completed_at ? 'bg-purple-100 text-purple-600' : 'text-gray-300'}`}>✅ Quick Check</span>
       <span className={`text-xs px-1.5 py-0.5 rounded ${progress?.homework_completed_at ? 'bg-green-100 text-green-600' : 'text-gray-300'}`}>📓 Homework{progress?.homework_score ? ` ${progress.homework_score}%` : ''}</span>
+    </div>
+  )
+}
+
+// What the student got wrong on their latest Quick Check and Homework, collapsed so the page stays
+// scannable. Attempts saved before answers were recorded have no breakdown and are skipped.
+function MissedAnswers({ progress }: { progress: ModProgressRow | undefined }) {
+  const attempts = [
+    { label: '✅ Quick Check', results: parseAnswerResults(progress?.practice_answers) },
+    { label: '📓 Homework', results: parseAnswerResults(progress?.homework_answers) },
+  ].flatMap(attempt => {
+    const missed = attempt.results.filter(result => !result.correct).length
+    return missed > 0 ? [{ ...attempt, missed }] : []
+  })
+  if (attempts.length === 0) return null
+
+  return (
+    <div className="mt-2 space-y-1">
+      {attempts.map(attempt => (
+        <details key={attempt.label} className="text-sm">
+          <summary className="cursor-pointer text-red-600">
+            {attempt.label}: {attempt.missed} missed
+          </summary>
+          <div className="mt-2">
+            <AnswerReview results={attempt.results} onlyMissed answerLabel="Student answered" />
+          </div>
+        </details>
+      ))}
     </div>
   )
 }
@@ -148,6 +178,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                     {lesson.module.track === 'esl' && <p className="text-sm text-gray-500">{lesson.module.titleEs}</p>}
                     <div className="mb-3">
                       <LessonSteps progress={progress} />
+                      <MissedAnswers progress={progress} />
                     </div>
                     <HomeworkButton sessionId={lesson.sessionId} initialAssigned={lesson.homeworkAssigned} />
                   </div>
@@ -188,6 +219,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                 <div className="flex-1">
                   <p className="text-sm font-medium text-gray-700">{mod.titleEn}</p>
                   <LessonSteps progress={p} />
+                  <MissedAnswers progress={p} />
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center flex-shrink-0 text-xs font-bold"
                   style={{
