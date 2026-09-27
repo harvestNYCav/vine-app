@@ -16,6 +16,7 @@ import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import Link from 'next/link'
 import { formatWordCount } from '@/lib/study'
+import AssignedExamSections from '@/components/AssignedExamSections'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -107,6 +108,15 @@ export default async function ModulesPage({
             )}
           </div>
         )}
+
+        <AssignedExamSections
+          db={db}
+          studentId={view.studentId}
+          subject="math"
+          gradeLevel={settings.gradeLevel}
+          readOnly={readOnly}
+          isSpanish={isSpanish}
+        />
 
         <section className="mb-8">
           <div className="mb-3 flex items-end justify-between">
@@ -257,6 +267,16 @@ export default async function ModulesPage({
         <ModeToggle currentMode={currentMode} availableTracks={tracks} />
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'ESL'}</p>
+
+      {currentMode === 'ela' && (
+        <AssignedExamSections
+          db={db}
+          studentId={view.studentId}
+          subject="ela"
+          gradeLevel={settings.gradeLevel}
+          readOnly={readOnly}
+        />
+      )}
 
       {currentMode === 'ela' && (
         <section className="mb-8">

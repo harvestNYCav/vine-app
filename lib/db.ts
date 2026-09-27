@@ -1,5 +1,6 @@
 import { createClient, type Client } from '@libsql/client'
 import { seedDefaultAdminAllowlistIfEmpty } from './admin-allowlist'
+import { EXAM_ASSIGNMENTS_TABLE_SQL } from './exam-assignments'
 
 let client: Client | null = null
 let initialized = false
@@ -267,6 +268,7 @@ async function initSchema(db: Client): Promise<void> {
       created_at INTEGER NOT NULL
     );
   `)
+  await db.execute(EXAM_ASSIGNMENTS_TABLE_SQL)
   await ensureColumn(db, 'users', 'email', 'TEXT')
   await ensureColumn(db, 'module_progress', 'homework_completed_at', 'INTEGER')
   await ensureColumn(db, 'module_progress', 'homework_score', 'INTEGER')
