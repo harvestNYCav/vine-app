@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type {
   ElaExamDefinition,
   ElaExamSectionDefinition,
@@ -117,6 +117,18 @@ export default function ExamPracticeClient({
     }
   }
 
+  // The section page's "Practice" button is the student's go-ahead, so start straight away rather
+  // than asking them to press "Begin practice" on a second screen. The ref keeps React's
+  // development double-mount from starting twice.
+  const autoStarted = useRef(false)
+  useEffect(() => {
+    if (autoStarted.current) return
+    autoStarted.current = true
+    void startAttempt()
+    // startAttempt only needs to run once, on arrival.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   async function checkAnswer() {
     if (!attemptId || !question || !answer.trim()) return
     const submittedAnswer = answer.trim()
@@ -201,30 +213,24 @@ export default function ExamPracticeClient({
         <Link href={sectionHref} className="text-sm font-medium text-gray-500 hover:text-gray-700">
           ← Back to lesson
         </Link>
-        <div className="mt-5 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+        <div className="mt-5 rounded-2xl border border-gray-100 bg-white p-6 text-center shadow-sm">
           <div className="text-4xl">{section.emoji}</div>
-          <p className="mt-4 text-xs font-bold uppercase tracking-wider text-blue-600">
-            New York released ELA practice
-          </p>
-          <h1 className="mt-1 text-2xl font-bold text-green-800">{section.title}</h1>
-          <p className="mt-2 text-sm leading-relaxed text-gray-600">
-            {section.questionIds.length} multiple-choice questions from the {exam.year} released test,
-            graded automatically.
-          </p>
-
-          <div className="mt-5">
-            <CollapsiblePassage passage={section.passage} passageLabel={section.passageLabel} />
-          </div>
-
-          <button
-            type="button"
-            onClick={() => void startAttempt()}
-            disabled={loading}
-            className="mt-5 w-full rounded-2xl bg-green-700 py-4 text-lg font-semibold text-white shadow disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            {loading ? 'Preparing…' : 'Begin practice'}
-          </button>
-          {error && <p role="alert" className="mt-3 text-sm font-medium text-red-600">{error}</p>}
+          <h1 className="mt-3 text-2xl font-bold text-green-800">{section.title}</h1>
+          {error ? (
+            <>
+              <p role="alert" className="mt-3 text-sm font-medium text-red-600">{error}</p>
+              <button
+                type="button"
+                onClick={() => void startAttempt()}
+                disabled={loading}
+                className="mt-5 w-full rounded-2xl bg-green-700 py-4 text-lg font-semibold text-white shadow disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {loading ? 'Preparing…' : 'Try again'}
+              </button>
+            </>
+          ) : (
+            <p className="mt-3 text-sm text-gray-500">Preparing your practice…</p>
+          )}
         </div>
         <div className="mt-5">
           <NYSEDAttribution exam={exam} />
