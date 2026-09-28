@@ -12,6 +12,7 @@ import { getElaExamsForGrade } from '@/content/ela-exams'
 import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
 import ExamAssignButton from './ExamAssignButton'
+import AssignLessonsPicker from './AssignLessonsPicker'
 import {
   assignmentResult,
   examSectionKey,
@@ -238,6 +239,19 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
             </div>
           )}
         </div>
+        {visibleModules.length > 0 && (
+          <AssignLessonsPicker
+            studentId={studentId}
+            groups={(['esl', 'ela'] as const).flatMap(track => {
+              const lessons = visibleModules.filter(mod => mod.track === track)
+              return lessons.length > 0 ? [{
+                label: track.toUpperCase(),
+                lessons: lessons.map(mod => ({ slug: mod.slug, title: mod.titleEn, subtitle: track === 'esl' ? mod.titleEs : undefined })),
+              }] : []
+            })}
+            scheduledSlugs={todayLessons.map(lesson => lesson.module.slug)}
+          />
+        )}
         <Link href="/tutor/lessons" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">
           📚 Browse Lessons to Assign →
         </Link>

@@ -6,7 +6,9 @@ import { join } from 'node:path'
 import { createClient, type Client } from '@libsql/client'
 import { ensureSessionsTableSupportsMultipleLessons } from '../lib/db'
 import {
+  assignLessonsToStudent,
   assignTutorLesson,
+  AssignmentStudentNotFoundError,
   markSessionHomeworkAssigned,
 } from '../lib/tutor-lesson-assignment'
 
@@ -448,4 +450,45 @@ test('the session migration preserves rows and permits distinct lessons on one s
     db.close()
     rmSync(directory, { recursive: true, force: true })
   }
+})
+
+test('assigning several lessons to one student adds them alongside existing ones', async () => {
+  await withFixture(async db => {
+    await db.execute({
+      sql: `INSERT INTO sessions (id, student_id, date, module_slug, tutor_id, homework_assigned, created_at)
+            VALUES ('existing', 'esl-student', '2026-09-27', 'greetings', 'tutor', 1, 1)`,
+      args: [],
+    })
+
+    const added = await assignLessonsToStudent(db, {
+      studentId: 'esl-student',
+      moduleSlugs: ['greetings', 'tenses', 'family-tree', 'tenses'],
+      date: '2026-09-27',
+      tutorId: 'tutor',
+      now: 10,
+    })
+
+    assert.deepEqual(added, ['tenses', 'family-tree'])
+    const rows = await db.execute({
+      sql: "SELECT id, module_slug, homework_assigned FROM sessions WHERE student_id = 'esl-student' ORDER BY created_at, id",
+      args: [],
+    })
+    assert.deepEqual(rows.rows.map(row => [row.module_slug, Number(row.homework_assigned)]), [
+      ['greetings', 1],
+      ['tenses', 0],
+      ['family-tree', 0],
+    ])
+    assert.equal(rows.rows[0].id, 'existing')
+  })
+})
+
+test('assigning several lessons to an unknown student changes nothing', async () => {
+  await withFixture(async db => {
+    await assert.rejects(
+      assignLessonsToStudent(db, { studentId: 'tutor', moduleSlugs: ['tenses'], date: '2026-09-27', tutorId: 'tutor' }),
+      AssignmentStudentNotFoundError,
+    )
+    const rows = await db.execute({ sql: 'SELECT COUNT(*) AS count FROM sessions', args: [] })
+    assert.equal(Number(rows.rows[0].count), 0)
+  })
 })
