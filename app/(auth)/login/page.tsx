@@ -35,6 +35,8 @@ function LoginForm() {
     role === 'admin' ? 'email' : 'name',
   )
   const [error, setError] = useState('')
+  // A new tutor's sign-up is not a failure, so it is shown as a notice instead.
+  const [notice, setNotice] = useState('')
   const [loading, setLoading] = useState(false)
   const pinPanelRef = useRef<HTMLDivElement>(null)
   const pinSubmissionStartedRef = useRef(false)
@@ -136,6 +138,7 @@ function LoginForm() {
   const handleLogin = async () => {
     setLoading(true)
     setError('')
+    setNotice('')
     try {
       const res = await fetch('/vine-app/api/auth/login', {
         method: 'POST',
@@ -148,7 +151,9 @@ function LoginForm() {
       })
       const data = await res.json()
       if (!res.ok) {
-        setError(loginErrorMessage(language, data.code, data.error))
+        const message = loginErrorMessage(language, data.code, data.error)
+        if (data.code === 'tutor_pending_approval') setNotice(message)
+        else setError(message)
         setPin('')
         setLoading(false)
         pinSubmissionStartedRef.current = false
@@ -324,7 +329,7 @@ function LoginForm() {
                   ? copy.adminCreatesStudents
                   : role === 'parent'
                     ? copy.adminCreatesParents
-                    : copy.tutorSelfSignup}
+                    : copy.tutorSignupNeedsApproval}
             </p>
 
             {/* PIN Dots */}
@@ -347,6 +352,11 @@ function LoginForm() {
                 : copy.pinDigitsEntered(pin.length, PIN_LENGTH)}
             </p>
 
+            {notice && (
+              <p className="text-center text-sm text-amber-800 bg-amber-100 rounded-xl px-3 py-2" role="status">
+                {notice}
+              </p>
+            )}
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
 
             {/* PIN Pad */}
@@ -378,6 +388,7 @@ function LoginForm() {
                 setStep(role === 'admin' ? 'code' : 'name')
                 setPin('')
                 setError('')
+                setNotice('')
               }}
               className="w-full text-gray-500 text-sm py-2"
             >

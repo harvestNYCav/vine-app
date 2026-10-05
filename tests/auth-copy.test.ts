@@ -34,6 +34,7 @@ test('a sign-in failure is shown in the reader\'s language when the server names
   assert.equal(loginErrorMessage('es', 'wrong_pin', 'Wrong PIN'), 'PIN incorrecto')
   assert.equal(loginErrorMessage('en', 'wrong_pin', 'Wrong PIN'), 'Wrong PIN')
   assert.match(loginErrorMessage('es', 'parent_not_found', 'Parent account not found.'), /cuenta de familia/)
+  assert.match(loginErrorMessage('es', 'tutor_pending_approval', 'Needs approval.'), /aprobar tu cuenta de tutor/)
 })
 
 test('an unrecognized failure still says something instead of going blank', () => {
