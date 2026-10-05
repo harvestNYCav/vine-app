@@ -95,13 +95,10 @@ function waitForWriteRetry(attempt: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, delayMs))
 }
 
-export async function assignTutorLesson(
-  db: Client,
-  input: AssignTutorLessonInput,
-): Promise<TutorLessonAssignmentResult> {
+async function withWriteRetry<T>(write: () => Promise<T>): Promise<T> {
   for (let attempt = 0; ; attempt += 1) {
     try {
-      return await assignTutorLessonInWriteTransaction(db, input)
+      return await write()
     } catch (error) {
       if (!isSqliteBusyError(error) || attempt >= MAX_WRITE_TRANSACTION_ATTEMPTS - 1) {
         throw error
@@ -109,6 +106,67 @@ export async function assignTutorLesson(
       await waitForWriteRetry(attempt)
     }
   }
+}
+
+export async function assignTutorLesson(
+  db: Client,
+  input: AssignTutorLessonInput,
+): Promise<TutorLessonAssignmentResult> {
+  return withWriteRetry(() => assignTutorLessonInWriteTransaction(db, input))
+}
+
+interface AssignLessonsToStudentInput {
+  studentId: string
+  moduleSlugs: string[]
+  date: string
+  tutorId: string
+  now?: number
+}
+
+// Schedules several lessons for one student on one day, as the tutor's "Assign lessons" picker
+// does. Lessons are always added alongside whatever is already scheduled (never replacing it), and
+// ones already on the schedule are left untouched. Returns the slugs that were newly added.
+export async function assignLessonsToStudent(
+  db: Client,
+  input: AssignLessonsToStudentInput,
+): Promise<string[]> {
+  const moduleSlugs = [...new Set(input.moduleSlugs)]
+  return withWriteRetry(async () => {
+    const transaction = await db.transaction('write')
+    try {
+      const student = await transaction.execute({
+        sql: "SELECT id FROM users WHERE role = 'student' AND id = ?",
+        args: [input.studentId],
+      })
+      if (student.rows.length === 0) {
+        throw new AssignmentStudentNotFoundError([input.studentId])
+      }
+
+      const existing = await transaction.execute({
+        sql: 'SELECT module_slug FROM sessions WHERE student_id = ? AND date = ?',
+        args: [input.studentId, input.date],
+      })
+      const alreadyScheduled = new Set(existing.rows.map(row => String(row.module_slug)))
+      const added = moduleSlugs.filter(slug => !alreadyScheduled.has(slug))
+
+      const now = input.now ?? Date.now()
+      if (added.length > 0) {
+        // Step created_at by one per lesson so the schedule lists them in the order they were sent.
+        await transaction.batch(added.map((moduleSlug, index) => ({
+          sql: `
+            INSERT INTO sessions (id, student_id, date, module_slug, tutor_id, homework_assigned, created_at)
+            VALUES (?, ?, ?, ?, ?, 0, ?)
+            ON CONFLICT(student_id, date, module_slug) DO NOTHING
+          `,
+          args: [randomUUID(), input.studentId, input.date, moduleSlug, input.tutorId, now + index],
+        })))
+      }
+      await transaction.commit()
+      return added
+    } finally {
+      transaction.close()
+    }
+  })
 }
 
 async function assignTutorLessonInWriteTransaction(
