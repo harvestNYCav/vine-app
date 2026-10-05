@@ -69,6 +69,13 @@ Rebuild the ELA catalog and crops with `scripts/import_nysed_ela_mc.py`. The imp
 - `users.name` is `NOT NULL`, and a new admin has no separate name to give, so the verified email is stored as the display name. Admins created before this keep whatever name they had.
 - The first admin bootstraps freely; after that the email must be on `admin_email_allowlist`.
 
+## Tutor Approval
+
+- Tutors still sign up themselves at the PIN pad, but signing up only records a row in `tutor_signup_requests` (name + hashed PIN). No `users` row and no session exist until an admin approves it, so a pending tutor never appears in rosters, check-ins, assignment pickers or PIN resets.
+- `lib/tutor-approvals.ts` owns the flow. Signing in again with the same name and PIN reports `tutor_pending_approval`; a different PIN gets `wrong_pin` and cannot replace the waiting request.
+- Admins approve or decline from the "Tutor approvals" section of `/admin` via `app/api/admin/tutor-requests`. Approval creates the tutor with the PIN they chose; declining discards the request, and the person may sign up again.
+- Tutors who already had accounts before this change are unaffected.
+
 ## Admin Account Maintenance
 
 - `lib/pin-reset.ts` sets a new PIN for a student, tutor or parent. Admins are excluded on purpose: an admin PIN is only half of their sign-in, so letting one admin overwrite another's would be a takeover rather than a reset.
