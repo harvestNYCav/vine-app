@@ -6,6 +6,7 @@ import { getStudentTutorIds } from '@/lib/tutors'
 import { getStudentSettings } from '@/lib/student-settings'
 import { listParentsForAdmin } from '@/lib/parents'
 import { loadTutorPairingRecords, summarizeTutorPairings } from '@/lib/tutor-pairings'
+import { listTutorSignupRequests } from '@/lib/tutor-approvals'
 import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
@@ -13,6 +14,7 @@ import AdminDangerZoneControls from './AdminDangerZoneControls'
 import AdminCreateStudentForm from './AdminCreateStudentForm'
 import AdminParentControls from './AdminParentControls'
 import AdminPinResetControls from './AdminPinResetControls'
+import AdminTutorApprovalControls from './AdminTutorApprovalControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 
@@ -26,12 +28,13 @@ function formatLastActive(value: number) {
 
 export default async function AdminPage() {
   const db = await getDb()
-  const [studentsResult, tutorsResult, adminAllowlistResult, parents, pairingRecords] = await Promise.all([
+  const [studentsResult, tutorsResult, adminAllowlistResult, parents, pairingRecords, tutorSignupRequests] = await Promise.all([
     db.execute({ sql: "SELECT id, name, last_active FROM users WHERE role = 'student' ORDER BY name", args: [] }),
     db.execute({ sql: "SELECT id, name FROM users WHERE role = 'tutor' ORDER BY name", args: [] }),
     db.execute({ sql: 'SELECT email, created_at FROM admin_email_allowlist ORDER BY created_at DESC', args: [] }),
     listParentsForAdmin(db),
     loadTutorPairingRecords(db),
+    listTutorSignupRequests(db),
   ])
 
   type StudentRow = { id: string; name: string; last_active: number }
@@ -124,6 +127,7 @@ export default async function AdminPage() {
         </Link>
       </div>
 
+      <AdminTutorApprovalControls requests={tutorSignupRequests} />
       <AdminCreateStudentForm />
       <AdminParentControls
         parents={parents}

@@ -56,9 +56,10 @@ export function validateNewStudentAccount(value: unknown):
 }
 
 export function loginCanCreateMissingAccount(role: Role): boolean {
-  // Student and parent accounts are provisioned by an admin, so a typo at the PIN
-  // pad must not silently mint a second account.
-  return role !== 'student' && role !== 'parent'
+  // Student and parent accounts are provisioned by an admin, and a new tutor waits
+  // for an admin's approval (lib/tutor-approvals.ts), so a typo at the PIN pad must
+  // not silently mint an account. Admins are gated by a verified, allowlisted email.
+  return role === 'admin'
 }
 
 export async function createStudentAccount(

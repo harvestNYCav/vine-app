@@ -29,7 +29,8 @@ test('student account input trims and collapses whitespace while preserving a 4-
 
 test('missing student accounts cannot be created by login', () => {
   assert.equal(loginCanCreateMissingAccount('student'), false)
-  assert.equal(loginCanCreateMissingAccount('tutor'), true)
+  // A new tutor becomes a sign-up request instead; see tests/tutor-approvals.test.ts.
+  assert.equal(loginCanCreateMissingAccount('tutor'), false)
   assert.equal(loginCanCreateMissingAccount('admin'), true)
 })
 
