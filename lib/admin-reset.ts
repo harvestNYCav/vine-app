@@ -116,6 +116,7 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM vocab_progress', args: [] },
     { sql: 'DELETE FROM admin_email_verifications', args: [] },
     { sql: 'DELETE FROM admin_email_allowlist', args: [] },
+    { sql: 'DELETE FROM tutor_signup_requests', args: [] },
     { sql: 'DELETE FROM student_settings', args: [] },
     { sql: 'DELETE FROM student_tutors', args: [] },
     { sql: 'DELETE FROM parent_students', args: [] },

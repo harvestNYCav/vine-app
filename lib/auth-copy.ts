@@ -75,7 +75,7 @@ interface LoginCopy {
   emailVerified: (email: string) => string
   adminCreatesStudents: string
   adminCreatesParents: string
-  tutorSelfSignup: string
+  tutorSignupNeedsApproval: string
   noPinDigits: string
   pinDigitsEntered: (entered: number, total: number) => string
   deleteDigit: string
@@ -115,7 +115,7 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
     emailVerified: email => `Email verified: ${email}`,
     adminCreatesStudents: 'Your program admin creates student accounts',
     adminCreatesParents: 'Your program admin creates parent accounts',
-    tutorSelfSignup: "(New? We'll create your account)",
+    tutorSignupNeedsApproval: '(New? An admin approves your account before you can sign in)',
     noPinDigits: 'No PIN digits entered',
     pinDigitsEntered: (entered, total) => `${entered} of ${total} PIN digits entered`,
     deleteDigit: 'Delete last PIN digit',
@@ -153,7 +153,7 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
     emailVerified: email => `Correo verificado: ${email}`,
     adminCreatesStudents: 'El administrador del programa crea las cuentas de estudiante',
     adminCreatesParents: 'El administrador del programa crea las cuentas de familia',
-    tutorSelfSignup: '(¿Eres nuevo? Crearemos tu cuenta)',
+    tutorSignupNeedsApproval: '(¿Eres nuevo? Un administrador aprueba tu cuenta antes de que puedas entrar)',
     noPinDigits: 'No has escrito ningún dígito del PIN',
     pinDigitsEntered: (entered, total) => `${entered} de ${total} dígitos del PIN escritos`,
     deleteDigit: 'Borrar el último dígito del PIN',
@@ -164,7 +164,7 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
 }
 
 /**
- * Sign-in failures a student or parent can actually hit. The server sends a
+ * Sign-in failures a student, parent or tutor can actually hit. The server sends a
  * stable code alongside its English message so the translated page does not have
  * to match on prose; anything without a known code falls back to that message.
  */
@@ -174,6 +174,7 @@ export const LOGIN_ERROR_COPY: Record<AuthLang, Record<string, string>> = {
     student_not_found: 'Student account not found. Ask an admin to create it before signing in.',
     parent_not_found: 'Parent account not found. Ask an admin to create it before signing in.',
     wrong_pin: 'Wrong PIN',
+    tutor_pending_approval: 'Thanks! An admin needs to approve your tutor account. Once they do, sign in with this name and PIN.',
     server_error: 'Could not sign in. Please try again or contact an admin.',
   },
   es: {
@@ -181,6 +182,7 @@ export const LOGIN_ERROR_COPY: Record<AuthLang, Record<string, string>> = {
     student_not_found: 'No encontramos esa cuenta de estudiante. Pide a un administrador que la cree antes de entrar.',
     parent_not_found: 'No encontramos esa cuenta de familia. Pide a un administrador que la cree antes de entrar.',
     wrong_pin: 'PIN incorrecto',
+    tutor_pending_approval: '¡Gracias! Un administrador tiene que aprobar tu cuenta de tutor. Cuando la apruebe, entra con este nombre y PIN.',
     server_error: 'No se pudo iniciar sesión. Inténtalo de nuevo o contacta a un administrador.',
   },
 }

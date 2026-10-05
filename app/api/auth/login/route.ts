@@ -6,6 +6,7 @@ import { createSession, COOKIE_NAME } from '@/lib/auth'
 import { getStudentTracks } from '@/lib/tracks'
 import { isValidEmail, normalizeEmail } from '@/lib/email-verification'
 import { loginCanCreateMissingAccount, normalizeStudentName } from '@/lib/student-accounts'
+import { requestTutorSignup } from '@/lib/tutor-approvals'
 import type { Role } from '@/types'
 
 const ROLES = new Set<Role>(['student', 'tutor', 'admin', 'parent'])
@@ -69,6 +70,18 @@ export async function POST(req: NextRequest) {
     let createdAdmin = false
 
     if (!rawUser) {
+      if (role === 'tutor') {
+        phase = 'recording the tutor sign-up'
+        const signup = await requestTutorSignup(db, normalizedName, pin)
+        if (signup === 'wrong_pin') {
+          return NextResponse.json({ error: 'Wrong PIN', code: 'wrong_pin' }, { status: 401 })
+        }
+        return NextResponse.json({
+          error: 'An admin needs to approve your tutor account before you can sign in.',
+          code: 'tutor_pending_approval',
+        }, { status: 403 })
+      }
+
       if (!loginCanCreateMissingAccount(role)) {
         return NextResponse.json({
           error: role === 'parent'
