@@ -2,7 +2,7 @@ import { getModule } from '@/content/modules'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { todayString } from '@/lib/scheduling'
-import ModuleSlideDeck from '@/components/ModuleSlideDeck'
+import TrackedTutorDeck from '@/components/TrackedTutorDeck'
 import AssignToStudents from './AssignToStudents'
 import getDb from '@/lib/db'
 import { normalizeTracks } from '@/lib/tracks'
@@ -108,7 +108,9 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
         <p className="text-xs text-gray-400 mt-4 text-center">Preview the full lesson below ↓</p>
       </div>
 
-      <ModuleSlideDeck mod={mod} variant="tutor" />
+      <div id="deck">
+        <TrackedTutorDeck mod={mod} />
+      </div>
     </div>
   )
 }

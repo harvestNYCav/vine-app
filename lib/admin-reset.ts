@@ -82,7 +82,9 @@ export async function deleteUserProfile(
   } else if (role === 'tutor') {
     statements.push(
       { sql: 'DELETE FROM student_tutors WHERE tutor_id = ?', args: [userId] },
+      { sql: 'DELETE FROM session_wrap_ups WHERE session_id IN (SELECT id FROM sessions WHERE tutor_id = ?)', args: [userId] },
       { sql: 'DELETE FROM sessions WHERE tutor_id = ?', args: [userId] },
+      { sql: 'DELETE FROM lesson_deck_progress WHERE tutor_id = ?', args: [userId] },
       { sql: 'DELETE FROM exam_assignments WHERE tutor_id = ?', args: [userId] },
       { sql: 'DELETE FROM tutor_check_ins WHERE tutor_id = ?', args: [userId] },
     )
@@ -101,6 +103,8 @@ export async function resetDatabase(db: Client): Promise<void> {
   await db.batch([
     { sql: 'DELETE FROM attendance', args: [] },
     { sql: 'DELETE FROM tutor_check_ins', args: [] },
+    { sql: 'DELETE FROM session_wrap_ups', args: [] },
+    { sql: 'DELETE FROM lesson_deck_progress', args: [] },
     { sql: 'DELETE FROM sessions', args: [] },
     { sql: 'DELETE FROM exam_assignments', args: [] },
     { sql: 'DELETE FROM math_sessions', args: [] },

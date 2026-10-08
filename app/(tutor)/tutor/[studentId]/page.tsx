@@ -11,6 +11,9 @@ import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
+import SessionWrapUpForm from './SessionWrapUpForm'
+import { getDeckProgressForDate, getSessionWrapUps, type DeckProgress } from '@/lib/session-metrics'
+import { getLessonAgenda } from '@/lib/lesson-agenda'
 import ExamAssignButton from './ExamAssignButton'
 import AssignLessonsPicker from './AssignLessonsPicker'
 import {
@@ -62,6 +65,12 @@ function MissedAnswers({ progress }: { progress: ModProgressRow | undefined }) {
       ))}
     </div>
   )
+}
+
+function describeDeckProgress(progress: DeckProgress | undefined): string | null {
+  if (!progress) return null
+  const minutes = Math.round(progress.activeMs / 60_000)
+  return `reached ${progress.furthestSection} (slide ${progress.furthestSlide + 1} of ${progress.slideCount}), about ${minutes} min on screen`
 }
 
 function completedStepCount(progress: ModProgressRow | undefined) {
@@ -117,6 +126,11 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     const module = getModule(String(row.module_slug))
     return module ? [{ sessionId: row.id, module, homeworkAssigned: Number(row.homework_assigned) === 1 }] : []
   })
+
+  const [wrapUps, deckProgress] = await Promise.all([
+    getSessionWrapUps(db, todayLessons.map(lesson => lesson.sessionId)),
+    getDeckProgressForDate(db, today, todayLessons.map(lesson => lesson.module.slug)),
+  ])
 
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
   type MathSessionCountRow = { session_type: string; count: number }
@@ -198,7 +212,22 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                       <LessonSteps progress={progress} />
                       <MissedAnswers progress={progress} />
                     </div>
-                    <HomeworkButton sessionId={lesson.sessionId} initialAssigned={lesson.homeworkAssigned} />
+                    <div className="flex items-center justify-between gap-2">
+                      <HomeworkButton sessionId={lesson.sessionId} initialAssigned={lesson.homeworkAssigned} />
+                      <Link
+                        href={`/tutor/lessons/${lesson.module.slug}#deck`}
+                        className="text-sm font-medium text-amber-700 hover:text-amber-800"
+                      >
+                        Present lesson →
+                      </Link>
+                    </div>
+                    <SessionWrapUpForm
+                      sessionId={lesson.sessionId}
+                      sections={getLessonAgenda(lesson.module).map(item => item.label)}
+                      defaultQuizTotal={lesson.module.inPersonQuiz?.length || null}
+                      deckSummary={describeDeckProgress(deckProgress.get(lesson.module.slug))}
+                      initialWrapUp={wrapUps.get(lesson.sessionId) ?? null}
+                    />
                   </div>
                 )
               })}

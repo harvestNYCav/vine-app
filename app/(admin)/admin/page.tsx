@@ -119,12 +119,20 @@ export default async function AdminPage() {
           <p className="text-sm text-slate-500">Program overview</p>
           <h1 className="text-2xl font-bold text-slate-900">Students</h1>
         </div>
-        <Link
-          href="/admin/check-ins"
-          className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
-        >
-          Check-ins →
-        </Link>
+        <div className="flex flex-wrap gap-2">
+          <a
+            href="/vine-app/api/admin/session-metrics"
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+          >
+            Download session data (CSV)
+          </a>
+          <Link
+            href="/admin/check-ins"
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+          >
+            Check-ins →
+          </Link>
+        </div>
       </div>
 
       <AdminTutorApprovalControls requests={tutorSignupRequests} />
