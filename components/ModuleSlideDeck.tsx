@@ -6,7 +6,7 @@ import type {
   FillInBlankItem, ListeningActivity, InPersonQuizItem,
 } from '@/types'
 import { shuffle } from '@/lib/study'
-import { getLessonAgenda, totalAgendaMinutes } from '@/lib/lesson-agenda'
+import { getLessonAgenda, slideSection, totalAgendaMinutes } from '@/lib/lesson-agenda'
 
 function WordBank({ items, showEs }: { items: WordBankItem[]; showEs: boolean }) {
   return (
@@ -134,9 +134,11 @@ interface Props {
   onFinish?: () => void
   initialIndex?: number
   onIndexChange?: (index: number) => void
+  // Fires for every slide shown, including the first, with the agenda section it belongs to.
+  onSlideView?: (view: { index: number; count: number; section: string }) => void
 }
 
-export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex = 0, onIndexChange }: Props) {
+export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex = 0, onIndexChange, onSlideView }: Props) {
   const slides = useMemo(() => buildSlides(mod), [mod])
   const [index, setIndex] = useState(() => Math.min(Math.max(0, initialIndex), slides.length - 1))
   const firedFinish = useRef(false)
@@ -149,6 +151,10 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
       onFinish?.()
     }
   }, [isLast, variant, onFinish])
+
+  useEffect(() => {
+    onSlideView?.({ index, count: slides.length, section: slideSection(slides[index].type) })
+  }, [index, slides, onSlideView])
 
   function moveTo(nextIndex: number) {
     const clamped = Math.min(Math.max(0, nextIndex), slides.length - 1)

@@ -21,6 +21,28 @@ export function getLessonAgenda(mod: Module): AgendaItem[] {
   return items
 }
 
+// The agenda section each kind of deck slide belongs to, so "where the tutor stopped" reads in the
+// same terms as the agenda.
+const SLIDE_SECTIONS: Record<string, string> = {
+  title: 'Start',
+  agenda: 'Start',
+  vocab: 'Vocabulary',
+  grammar: 'Grammar focus',
+  pronunciation: 'Pronunciation, matching & copying',
+  matching: 'Pronunciation, matching & copying',
+  transcription: 'Pronunciation, matching & copying',
+  classWorksheet: 'In-class worksheet',
+  scenario: 'Role-play',
+  listening: 'Listening & writing',
+  practice: 'Guided practice',
+  inPersonQuiz: 'In-person quiz',
+  wrapup: 'Wrap-up',
+}
+
+export function slideSection(slideType: string): string {
+  return SLIDE_SECTIONS[slideType] ?? slideType
+}
+
 export function totalAgendaMinutes(items: AgendaItem[]): number {
   return items.reduce((sum, item) => sum + item.minutes, 0)
 }
