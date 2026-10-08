@@ -211,6 +211,68 @@ const module: Module = {
     { id: 'w4', promptEn: 'The ____ are playing outside.', promptEs: 'Los niños están jugando afuera. (The ____ are playing outside.)', answer: 'children' },
     { id: 'w5', promptEn: 'Can I have ____ water?', promptEs: '¿Me puede dar agua? (Can I have ____ water?)', answer: 'some' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'She has ____ car.', promptEs: 'Ella tiene un carro. (She has ____ car.)', answer: 'a' },
+    { id: 'cw2', promptEn: 'I want ____ orange.', promptEs: 'Quiero una naranja. (I want ____ orange.)', answer: 'an' },
+    { id: 'cw3', promptEn: 'Close ____ door, please.', promptEs: 'Cierra la puerta, por favor. (Close ____ door, please.)', answer: 'the' },
+    { id: 'cw4', promptEn: 'Two ____ are at the store. (woman)', promptEs: 'Dos mujeres están en la tienda. (Two ____ are at the store.)', answer: 'women' },
+    { id: 'cw5', promptEn: 'Three ____ work here. (man)', promptEs: 'Tres hombres trabajan aquí. (Three ____ work here.)', answer: 'men' },
+    { id: 'cw6', promptEn: 'I have two ____. (book)', promptEs: 'Tengo dos libros. (I have two ____.)', answer: 'books' },
+    { id: 'cw7', promptEn: '____ are my apples.', promptEs: 'Estas son mis manzanas. (____ are my apples.)', answer: 'These' },
+    { id: 'cw8', promptEn: 'I need ____ money for the bus.', promptEs: 'Necesito algo de dinero para el autobús. (I need ____ money.)', answer: 'some' },
+  ],
+  listening: [
+    {
+      titleEn: 'At the Library',
+      titleEs: 'En la biblioteca',
+      script: [
+        { speaker: 'Librarian', en: 'Hello! Can I help you?' },
+        { speaker: 'Pablo', en: 'Yes. I want a book for my child.' },
+        { speaker: 'Librarian', en: 'How old is your child?' },
+        { speaker: 'Pablo', en: 'She is six. She likes books about animals.' },
+        { speaker: 'Librarian', en: 'The children\'s books are on the second floor.' },
+        { speaker: 'Pablo', en: 'Thank you. Do you have an English dictionary too?' },
+        { speaker: 'Librarian', en: 'Yes. The dictionaries are next to the computers.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'Who is the book for?', promptEs: '¿Para quién es el libro?', answer: 'His child (his daughter)' },
+        { id: 'l1q2', promptEn: 'How old is the child?', promptEs: '¿Cuántos años tiene la niña?', answer: 'Six' },
+        { id: 'l1q3', promptEn: 'Where are the children\'s books?', promptEs: '¿Dónde están los libros para niños?', answer: 'On the second floor' },
+        { id: 'l1q4', promptEn: 'What else does Pablo want?', promptEs: '¿Qué más quiere Pablo?', answer: 'An English dictionary' },
+      ],
+    },
+    {
+      titleEn: 'In the Kitchen',
+      titleEs: 'En la cocina',
+      script: [
+        { speaker: 'Mom', en: 'Can you bring me the apples, please?' },
+        { speaker: 'Son', en: 'Sure. How many apples do you need?' },
+        { speaker: 'Mom', en: 'Three apples and an onion.' },
+        { speaker: 'Son', en: 'Here they are. Do you want some water?' },
+        { speaker: 'Mom', en: 'Yes, please. And where is the big pot?' },
+        { speaker: 'Son', en: 'The pot is under the sink.' },
+        { speaker: 'Mom', en: 'Thank you! The children are hungry.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'How many apples does Mom need?', promptEs: '¿Cuántas manzanas necesita la mamá?', answer: 'Three' },
+        { id: 'l2q2', promptEn: 'What else does Mom need?', promptEs: '¿Qué más necesita la mamá?', answer: 'An onion' },
+        { id: 'l2q3', promptEn: 'Where is the big pot?', promptEs: '¿Dónde está la olla grande?', answer: 'Under the sink' },
+        { id: 'l2q4', promptEn: 'Who is hungry?', promptEs: '¿Quién tiene hambre?', answer: 'The children' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "un libro"', answer: 'a book' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "una manzana"', answer: 'an apple' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in English: "los niños"', answer: 'the children' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in Spanish: "These are my keys."', answer: 'Estas son mis llaves.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'This is a big house.', answer: 'This is a big house.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'I have an apple.', answer: 'I have an apple.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'The women are at work.', answer: 'The women are at work.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Write "a" or "an": ___ egg', promptEs: 'Escribe "a" o "an": ___ egg', answer: 'an' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What is the plural of "child"?', promptEs: '¿Cuál es el plural de "child"?', answer: 'children' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Name two things in this room.', promptEs: 'Nombra dos cosas en este salón.', answer: 'a table, a chair... (Answers will vary.)' },
+  ],
 }
 
 export default module

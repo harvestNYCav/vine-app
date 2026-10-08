@@ -328,6 +328,67 @@ const module: Module = {
     { id: 'w4', promptEn: 'This is my ____. She is my father\'s sister.', promptEs: 'Esta es mi tía. (This is my ____.)', answer: 'aunt' },
     { id: 'w5', promptEn: 'My ____ is one year old.', promptEs: 'Mi bebé tiene un año. (My ____ is one year old.)', answer: 'baby' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'My ____ is my mother\'s mother.', promptEs: 'Mi abuela es la mamá de mi mamá. (My ____ is my mother\'s mother.)', answer: 'grandmother' },
+    { id: 'cw2', promptEn: 'My uncle\'s son is my ____.', promptEs: 'El hijo de mi tío es mi primo. (... is my ____.)', answer: 'cousin' },
+    { id: 'cw3', promptEn: 'My father\'s brother is my ____.', promptEs: 'El hermano de mi papá es mi tío. (... is my ____.)', answer: 'uncle' },
+    { id: 'cw4', promptEn: 'I have one ____. Her name is Ana. (hija)', promptEs: 'Tengo una hija. (I have one ____.)', answer: 'daughter' },
+    { id: 'cw5', promptEn: 'My ____ is a good man. We are married. (esposo)', promptEs: 'Mi esposo es un buen hombre. (My ____ is a good man.)', answer: 'husband' },
+    { id: 'cw6', promptEn: 'I don\'t ____ any sisters.', promptEs: 'No tengo hermanas. (I don\'t ____ any sisters.)', answer: 'have' },
+    { id: 'cw7', promptEn: 'How many ____ do you have? (hermanos)', promptEs: '¿Cuántos hermanos tienes? (How many ____ do you have?)', answer: 'brothers' },
+    { id: 'cw8', promptEn: 'My ____ are 3 and 7 years old. (niños)', promptEs: 'Mis niños tienen 3 y 7 años. (My ____ are 3 and 7.)', answer: 'kids' },
+  ],
+  listening: [
+    {
+      titleEn: 'A Family Photo',
+      titleEs: 'Una foto familiar',
+      script: [
+        { speaker: 'Rita', en: 'Look at this photo. This is my family.' },
+        { speaker: 'Sam', en: 'Who is the man with the hat?' },
+        { speaker: 'Rita', en: 'That is my father. And this is my mom next to him.' },
+        { speaker: 'Sam', en: 'Who are the children?' },
+        { speaker: 'Rita', en: 'They are my sister\'s kids. A boy and a girl.' },
+        { speaker: 'Sam', en: 'And the baby?' },
+        { speaker: 'Rita', en: 'That is my son, Leo. He was one year old in this photo.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'Who is the man with the hat?', promptEs: '¿Quién es el hombre con sombrero?', answer: 'Rita\'s father' },
+        { id: 'l1q2', promptEn: 'Who is next to him?', promptEs: '¿Quién está al lado de él?', answer: 'Rita\'s mom' },
+        { id: 'l1q3', promptEn: 'Whose kids are in the photo?', promptEs: '¿De quién son los niños en la foto?', answer: 'Rita\'s sister\'s' },
+        { id: 'l1q4', promptEn: 'What is the baby\'s name?', promptEs: '¿Cómo se llama el bebé?', answer: 'Leo' },
+      ],
+    },
+    {
+      titleEn: 'Talking About Family',
+      titleEs: 'Hablando de la familia',
+      script: [
+        { speaker: 'Tutor', en: 'Do you have a big family, Jorge?' },
+        { speaker: 'Jorge', en: 'Yes! I have four brothers and two sisters.' },
+        { speaker: 'Tutor', en: 'Wow. Are you married?' },
+        { speaker: 'Jorge', en: 'Yes. My wife\'s name is Paula. We have three children.' },
+        { speaker: 'Tutor', en: 'Do your parents live in New York?' },
+        { speaker: 'Jorge', en: 'No. My parents and grandparents live in Puebla, Mexico.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'How many brothers does Jorge have?', promptEs: '¿Cuántos hermanos tiene Jorge?', answer: 'Four' },
+        { id: 'l2q2', promptEn: 'What is his wife\'s name?', promptEs: '¿Cómo se llama su esposa?', answer: 'Paula' },
+        { id: 'l2q3', promptEn: 'How many children do they have?', promptEs: '¿Cuántos hijos tienen?', answer: 'Three' },
+        { id: 'l2q4', promptEn: 'Where do his parents live?', promptEs: '¿Dónde viven sus padres?', answer: 'In Puebla, Mexico' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "mi hermana"', answer: 'my sister' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "los abuelos"', answer: 'the grandparents' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "my aunt and uncle"', answer: 'mi tía y mi tío' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Tengo dos hijos."', answer: 'I have two children (sons).' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'This is my mother.', answer: 'This is my mother.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'I have three cousins.', answer: 'I have three cousins.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'How many children do you have?', answer: 'How many children do you have?' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'What do you call your sister\'s son? (sobrino)', promptEs: '¿Cómo llamas al hijo de tu hermana?', answer: 'nephew' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'How many brothers and sisters do you have?', promptEs: '¿Cuántos hermanos tienes?', answer: 'I have ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Who lives with you?', promptEs: '¿Quién vive contigo?', answer: 'My ___ lives with me. (Answers will vary.)' },
+  ],
 }
 
 export default module

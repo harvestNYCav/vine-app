@@ -333,6 +333,67 @@ const module: Module = {
     { id: 'w4', promptEn: 'Do you ____ any fresh tomatoes?', promptEs: '¿Tiene tomates frescos? (Do you ____ any fresh tomatoes?)', answer: 'have' },
     { id: 'w5', promptEn: 'Can I ____ a receipt, please?', promptEs: '¿Me puede dar el recibo? (Can I ____ a receipt, please?)', answer: 'have' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'The rice is in ____ 5.', promptEs: 'El arroz está en el pasillo 5. (The rice is in ____ 5.)', answer: 'aisle' },
+    { id: 'cw2', promptEn: 'The chicken is ____ today. It is cheap!', promptEs: 'El pollo está en oferta hoy. (The chicken is ____ today.)', answer: 'on sale' },
+    { id: 'cw3', promptEn: 'These bananas are very ____. (frescas)', promptEs: 'Estos plátanos están muy frescos. (These bananas are very ____.)', answer: 'fresh' },
+    { id: 'cw4', promptEn: 'The ____ gives me my change.', promptEs: 'El cajero me da mi cambio. (The ____ gives me my change.)', answer: 'cashier' },
+    { id: 'cw5', promptEn: 'Do you need a ____ for your groceries?', promptEs: '¿Necesita una bolsa? (Do you need a ____?)', answer: 'bag' },
+    { id: 'cw6', promptEn: 'Cash or ____ card?', promptEs: '¿Efectivo o tarjeta de crédito? (Cash or ____ card?)', answer: 'credit' },
+    { id: 'cw7', promptEn: 'Steak is ____. Rice is cheap.', promptEs: 'La carne es cara. El arroz es barato. (Steak is ____.)', answer: 'expensive' },
+    { id: 'cw8', promptEn: 'The ____ line is very long today.', promptEs: 'La fila para pagar es muy larga hoy. (The ____ line...)', answer: 'checkout' },
+  ],
+  listening: [
+    {
+      titleEn: 'At the Supermarket',
+      titleEs: 'En el supermercado',
+      script: [
+        { speaker: 'Customer', en: 'Excuse me. Where is the bread?' },
+        { speaker: 'Worker', en: 'It is in aisle 3, next to the cereal.' },
+        { speaker: 'Customer', en: 'Thank you. Do you have fresh fish?' },
+        { speaker: 'Worker', en: 'Yes, in the back of the store. Salmon is on sale today.' },
+        { speaker: 'Customer', en: 'How much does it cost?' },
+        { speaker: 'Worker', en: 'Nine dollars a pound.' },
+        { speaker: 'Customer', en: 'Great. I would like two pounds.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'Where is the bread?', promptEs: '¿Dónde está el pan?', answer: 'In aisle 3 (next to the cereal)' },
+        { id: 'l1q2', promptEn: 'What is on sale?', promptEs: '¿Qué está en oferta?', answer: 'Salmon' },
+        { id: 'l1q3', promptEn: 'How much is one pound?', promptEs: '¿Cuánto cuesta una libra?', answer: 'Nine dollars' },
+        { id: 'l1q4', promptEn: 'How many pounds does the customer want?', promptEs: '¿Cuántas libras quiere el cliente?', answer: 'Two' },
+      ],
+    },
+    {
+      titleEn: 'Paying at Checkout',
+      titleEs: 'Pagando en la caja',
+      script: [
+        { speaker: 'Cashier', en: 'Hi. Did you find everything?' },
+        { speaker: 'Mrs. Lee', en: 'Yes, thank you.' },
+        { speaker: 'Cashier', en: 'Your total is 32 dollars and 50 cents. Cash or credit card?' },
+        { speaker: 'Mrs. Lee', en: 'Cash, please. Here is 40 dollars.' },
+        { speaker: 'Cashier', en: 'Your change is 7 dollars and 50 cents. Do you want a bag?' },
+        { speaker: 'Mrs. Lee', en: 'No, I have my own bag. Can I have the receipt, please?' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What is the total?', promptEs: '¿Cuál es el total?', answer: '$32.50' },
+        { id: 'l2q2', promptEn: 'How does Mrs. Lee pay?', promptEs: '¿Cómo paga la Sra. Lee?', answer: 'With cash' },
+        { id: 'l2q3', promptEn: 'How much is her change?', promptEs: '¿Cuánto es su cambio?', answer: '$7.50' },
+        { id: 'l2q4', promptEn: 'Why doesn\'t she need a bag?', promptEs: '¿Por qué no necesita una bolsa?', answer: 'She has her own bag.' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "¿Cuánto cuesta esto?"', answer: 'How much does this cost?' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "el recibo"', answer: 'the receipt' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Is it on sale?"', answer: '¿Está en oferta?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Quisiera una libra de queso."', answer: 'I would like a pound of cheese.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'Where is the milk?', answer: 'Where is the milk?' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'The apples are fresh.', answer: 'The apples are fresh.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'I will pay with cash.', answer: 'I will pay with cash.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Opposite of "expensive"?', promptEs: '¿Lo contrario de "expensive"?', answer: 'cheap' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Write three things you buy every week.', promptEs: 'Escribe tres cosas que compras cada semana.', answer: 'milk, eggs, bread... (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Ask a worker where the eggs are.', promptEs: 'Pregúntale a un empleado dónde están los huevos.', answer: 'Excuse me, where are the eggs?' },
+  ],
 }
 
 export default module

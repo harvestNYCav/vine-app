@@ -203,6 +203,68 @@ const module: Module = {
     { id: 'w4', promptEn: 'Right now I ____ working.', promptEs: 'Ahora mismo estoy trabajando. (Right now I ____ working.)', answer: 'am' },
     { id: 'w5', promptEn: 'If it rains, I ____ stay home.', promptEs: 'Si llueve, me quedaré en casa. (If it rains, I ____ stay home.)', answer: 'will' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'I ____ at a restaurant every day.', promptEs: 'Trabajo en un restaurante todos los días. (I ____ at a restaurant every day.)', answer: 'work' },
+    { id: 'cw2', promptEn: 'Last week I ____ at a restaurant.', promptEs: 'La semana pasada trabajé en un restaurante. (Last week I ____ ...)', answer: 'worked' },
+    { id: 'cw3', promptEn: 'Next week I ____ work at a restaurant.', promptEs: 'La próxima semana trabajaré... (Next week I ____ work...)', answer: 'will' },
+    { id: 'cw4', promptEn: 'Yesterday it ____ very cold.', promptEs: 'Ayer hacía mucho frío. (Yesterday it ____ very cold.)', answer: 'was' },
+    { id: 'cw5', promptEn: 'My kids ____ at the park yesterday.', promptEs: 'Mis hijos estaban en el parque ayer. (My kids ____ at the park yesterday.)', answer: 'were' },
+    { id: 'cw6', promptEn: 'She is ____ dinner right now. (cook)', promptEs: 'Ella está cocinando la cena ahora mismo. (She is ____ dinner right now.)', answer: 'cooking' },
+    { id: 'cw7', promptEn: 'I ____ drink coffee at night. (0%)', promptEs: 'Nunca tomo café en la noche. (I ____ drink coffee at night.)', answer: 'never' },
+    { id: 'cw8', promptEn: 'If I have time, I ____ call you.', promptEs: 'Si tengo tiempo, te llamaré. (If I have time, I ____ call you.)', answer: 'will' },
+  ],
+  listening: [
+    {
+      titleEn: 'Last Weekend',
+      titleEs: 'El fin de semana pasado',
+      script: [
+        { speaker: 'Teresa', en: 'Hi, Marco! What did you do last weekend?' },
+        { speaker: 'Marco', en: 'On Saturday I worked all day. On Sunday I went to the beach.' },
+        { speaker: 'Teresa', en: 'Was it hot?' },
+        { speaker: 'Marco', en: 'Yes, it was very hot. My kids were very happy.' },
+        { speaker: 'Teresa', en: 'Nice! I stayed home. I was tired.' },
+        { speaker: 'Marco', en: 'What will you do next weekend?' },
+        { speaker: 'Teresa', en: 'I will visit my sister in New Jersey.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What did Marco do on Saturday?', promptEs: '¿Qué hizo Marco el sábado?', answer: 'He worked all day.' },
+        { id: 'l1q2', promptEn: 'Where did Marco go on Sunday?', promptEs: '¿A dónde fue Marco el domingo?', answer: 'To the beach' },
+        { id: 'l1q3', promptEn: 'Why did Teresa stay home?', promptEs: '¿Por qué se quedó Teresa en casa?', answer: 'She was tired.' },
+        { id: 'l1q4', promptEn: 'What will Teresa do next weekend?', promptEs: '¿Qué hará Teresa el próximo fin de semana?', answer: 'Visit her sister in New Jersey' },
+      ],
+    },
+    {
+      titleEn: 'A Busy Day',
+      titleEs: 'Un día ocupado',
+      script: [
+        { speaker: 'Leo', en: 'Hello? Hi, Mom. I am driving right now.' },
+        { speaker: 'Mom', en: 'Okay. Where are you going?' },
+        { speaker: 'Leo', en: 'I am going to work. I always start at 8.' },
+        { speaker: 'Mom', en: 'Are you coming to dinner tomorrow?' },
+        { speaker: 'Leo', en: 'Yes. If I finish early, I will come at 6.' },
+        { speaker: 'Mom', en: 'Good. I will make rice and beans.' },
+        { speaker: 'Leo', en: 'Great! See you tomorrow.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What is Leo doing right now?', promptEs: '¿Qué está haciendo Leo ahora mismo?', answer: 'He is driving (to work).' },
+        { id: 'l2q2', promptEn: 'What time does Leo always start work?', promptEs: '¿A qué hora empieza Leo a trabajar siempre?', answer: 'At 8' },
+        { id: 'l2q3', promptEn: 'When will Leo come to dinner if he finishes early?', promptEs: '¿A qué hora vendrá Leo si termina temprano?', answer: 'At 6 (tomorrow)' },
+        { id: 'l2q4', promptEn: 'What will Mom make?', promptEs: '¿Qué preparará la mamá?', answer: 'Rice and beans' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Ayer fui a la tienda."', answer: 'Yesterday I went to the store.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Mañana trabajaré."', answer: 'Tomorrow I will work.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "I am eating right now."', answer: 'Estoy comiendo ahora mismo.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "la semana pasada"', answer: 'last week' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'I go to work every day.', answer: 'I go to work every day.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Yesterday was Sunday.', answer: 'Yesterday was Sunday.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'I will see you next week.', answer: 'I will see you next week.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'What is the past of "go"?', promptEs: '¿Cuál es el pasado de "go"?', answer: 'went' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What did you do yesterday?', promptEs: '¿Qué hiciste ayer?', answer: 'Yesterday I ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What will you do tomorrow?', promptEs: '¿Qué harás mañana?', answer: 'Tomorrow I will ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

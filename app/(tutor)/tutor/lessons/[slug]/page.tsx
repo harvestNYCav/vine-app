@@ -9,6 +9,7 @@ import { normalizeTracks } from '@/lib/tracks'
 import { getSession } from '@/lib/auth'
 import { filterTutorRosterStudents, getTutorStudentIds } from '@/lib/tutor-roster'
 import { getTutorRosterScope } from '@/lib/tutor-roster-server'
+import { getLessonAgenda, totalAgendaMinutes } from '@/lib/lesson-agenda'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -49,6 +50,7 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
     tracks: normalizeTracks(String(row.tracks ?? '').split(',').filter(Boolean)),
   }))
   const students = filterTutorRosterStudents(allStudents, assignedStudentIds, rosterScope)
+  const agenda = mod.track === 'esl' ? getLessonAgenda(mod) : []
 
   return (
     <div>
@@ -76,6 +78,22 @@ export default async function LessonPreviewPage({ params }: { params: Promise<{ 
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {agenda.length > 0 && (
+          <div className="bg-white border border-gray-200 rounded-2xl p-4 mb-5">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+              Session plan (~{totalAgendaMinutes(agenda)} min)
+            </p>
+            <ol className="space-y-1">
+              {agenda.map((item, i) => (
+                <li key={i} className="flex justify-between text-sm text-gray-700">
+                  <span>{i + 1}. {item.label}</span>
+                  <span className="text-gray-500">{item.minutes} min</span>
+                </li>
+              ))}
+            </ol>
           </div>
         )}
 

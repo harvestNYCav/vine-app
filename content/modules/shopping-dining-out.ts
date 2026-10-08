@@ -210,6 +210,68 @@ const module: Module = {
     { id: 'w4', promptEn: 'I want my food ____.', promptEs: 'Quiero mi comida para llevar. (I want my food ____.)', answer: 'to go' },
     { id: 'w5', promptEn: 'What time do you ____?', promptEs: '¿A qué hora cierran? (What time do you ____?)', answer: 'close' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'A table for ____, please. (2)', promptEs: 'Una mesa para dos, por favor. (A table for ____, please.)', answer: 'two' },
+    { id: 'cw2', promptEn: 'Do you have a table ____?', promptEs: '¿Tiene una mesa disponible? (Do you have a table ____?)', answer: 'available' },
+    { id: 'cw3', promptEn: 'Is this ____? I don\'t like hot food.', promptEs: '¿Esto es picante? (Is this ____?)', answer: 'spicy' },
+    { id: 'cw4', promptEn: 'I\'m ____ to peanuts.', promptEs: 'Soy alérgico al maní. (I\'m ____ to peanuts.)', answer: 'allergic' },
+    { id: 'cw5', promptEn: 'We leave a ____ for the waiter.', promptEs: 'Dejamos una propina para el mesero. (We leave a ____ ...)', answer: 'tip' },
+    { id: 'cw6', promptEn: 'The ____ brings our food.', promptEs: 'La mesera trae nuestra comida. (The ____ brings our food.)', answer: 'waitress' },
+    { id: 'cw7', promptEn: 'What are your store ____?', promptEs: '¿Cuál es el horario de la tienda? (What are your store ____?)', answer: 'hours' },
+    { id: 'cw8', promptEn: 'I would like to ____ the soup.', promptEs: 'Me gustaría pedir la sopa. (I would like to ____ the soup.)', answer: 'order' },
+  ],
+  listening: [
+    {
+      titleEn: 'Dinner at a Restaurant',
+      titleEs: 'Cena en un restaurante',
+      script: [
+        { speaker: 'Waiter', en: 'Good evening. How many people?' },
+        { speaker: 'Clara', en: 'A table for three, please.' },
+        { speaker: 'Waiter', en: 'Here is the menu. What would you like to drink?' },
+        { speaker: 'Clara', en: 'Three waters, please. Is the chicken soup spicy?' },
+        { speaker: 'Waiter', en: 'No, it is not spicy.' },
+        { speaker: 'Clara', en: 'Good. I would like to order the chicken soup and a salad.' },
+        { speaker: 'Waiter', en: 'Anything else?' },
+        { speaker: 'Clara', en: 'No, thank you. My son is allergic to fish, so no fish, please.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'How many people are eating?', promptEs: '¿Cuántas personas van a comer?', answer: 'Three' },
+        { id: 'l1q2', promptEn: 'What do they drink?', promptEs: '¿Qué toman?', answer: 'Water' },
+        { id: 'l1q3', promptEn: 'What does Clara order?', promptEs: '¿Qué pide Clara?', answer: 'Chicken soup and a salad' },
+        { id: 'l1q4', promptEn: 'What is her son allergic to?', promptEs: '¿A qué es alérgico su hijo?', answer: 'Fish' },
+      ],
+    },
+    {
+      titleEn: 'Calling a Bakery',
+      titleEs: 'Llamando a una panadería',
+      script: [
+        { speaker: 'Baker', en: 'Hello, Sunny Bakery.' },
+        { speaker: 'José', en: 'Hi. What time do you close today?' },
+        { speaker: 'Baker', en: 'We close at 8 p.m.' },
+        { speaker: 'José', en: 'Do you have birthday cakes?' },
+        { speaker: 'Baker', en: 'Yes. Chocolate and vanilla. They are 25 dollars.' },
+        { speaker: 'José', en: 'Great. I want a chocolate cake to go. I will come at 6.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What time does the bakery close?', promptEs: '¿A qué hora cierra la panadería?', answer: 'At 8 p.m.' },
+        { id: 'l2q2', promptEn: 'What kinds of cake do they have?', promptEs: '¿Qué tipos de pastel tienen?', answer: 'Chocolate and vanilla' },
+        { id: 'l2q3', promptEn: 'How much is a cake?', promptEs: '¿Cuánto cuesta un pastel?', answer: '25 dollars' },
+        { id: 'l2q4', promptEn: 'What time will José come?', promptEs: '¿A qué hora vendrá José?', answer: 'At 6' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "La cuenta, por favor."', answer: 'Can I have the check, please?' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "para llevar"', answer: 'to go' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Can I see the menu?"', answer: '¿Puedo ver el menú?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Soy alérgica a la leche."', answer: "I'm allergic to milk." },
+    { id: 'iq5', kind: 'dictation', promptEn: 'A table for two, please.', answer: 'A table for two, please.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'I would like the chicken.', answer: 'I would like the chicken.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'What time do you close?', answer: 'What time do you close?' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'What do you say to ask for the bill?', promptEs: '¿Qué dices para pedir la cuenta?', answer: 'Can I have the check, please?' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What is your favorite restaurant food?', promptEs: '¿Cuál es tu comida favorita en un restaurante?', answer: 'I like ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Order a drink. Write what you say.', promptEs: 'Pide una bebida. Escribe lo que dices.', answer: 'I would like a ___, please. (Answers will vary.)' },
+  ],
 }
 
 export default module

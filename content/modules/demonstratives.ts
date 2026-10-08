@@ -205,6 +205,67 @@ const module: Module = {
     { id: 'w4', promptEn: '____ are my shoes.', promptEs: 'Esos son mis zapatos. (____ are my shoes.)', answer: 'Those' },
     { id: 'w5', promptEn: 'What is ____?', promptEs: '¿Qué es esto? (What is ____?)', answer: 'this' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'I like ____ one. (near me)', promptEs: 'Me gusta este. (I like ____ one.)', answer: 'this' },
+    { id: 'cw2', promptEn: 'I like ____ one over there. (far)', promptEs: 'Me gusta ese de allá. (I like ____ one over there.)', answer: 'that' },
+    { id: 'cw3', promptEn: '____ apples here are fresh.', promptEs: 'Estas manzanas aquí están frescas. (____ apples here are fresh.)', answer: 'These' },
+    { id: 'cw4', promptEn: '____ houses over there are big.', promptEs: 'Esas casas de allá son grandes. (____ houses over there...)', answer: 'Those' },
+    { id: 'cw5', promptEn: 'Is ____ yours? (one thing, near)', promptEs: '¿Esto es tuyo? (Is ____ yours?)', answer: 'this' },
+    { id: 'cw6', promptEn: 'What is ____ over there?', promptEs: '¿Qué es eso de allá? (What is ____ over there?)', answer: 'that' },
+    { id: 'cw7', promptEn: 'Come ____, please. (to me)', promptEs: 'Ven aquí, por favor. (Come ____, please.)', answer: 'here' },
+    { id: 'cw8', promptEn: 'Put the bags over ____.', promptEs: 'Pon las bolsas allá. (Put the bags over ____.)', answer: 'there' },
+  ],
+  listening: [
+    {
+      titleEn: 'At the Market',
+      titleEs: 'En el mercado',
+      script: [
+        { speaker: 'Customer', en: 'Excuse me. How much are these tomatoes?' },
+        { speaker: 'Seller', en: 'These are two dollars a pound.' },
+        { speaker: 'Customer', en: 'And those mangoes over there?' },
+        { speaker: 'Seller', en: 'Those are one dollar each.' },
+        { speaker: 'Customer', en: 'What is this? I don\'t know this fruit.' },
+        { speaker: 'Seller', en: 'That is a dragon fruit. It is sweet.' },
+        { speaker: 'Customer', en: 'I like this one. I will take it.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'How much are the tomatoes?', promptEs: '¿Cuánto cuestan los tomates?', answer: 'Two dollars a pound' },
+        { id: 'l1q2', promptEn: 'How much is one mango?', promptEs: '¿Cuánto cuesta un mango?', answer: 'One dollar' },
+        { id: 'l1q3', promptEn: 'What fruit does the customer not know?', promptEs: '¿Qué fruta no conoce el cliente?', answer: 'Dragon fruit' },
+        { id: 'l1q4', promptEn: 'Is the dragon fruit sweet or sour?', promptEs: '¿La pitaya es dulce o agria?', answer: 'Sweet' },
+      ],
+    },
+    {
+      titleEn: 'Moving Day',
+      titleEs: 'Día de mudanza',
+      script: [
+        { speaker: 'Ray', en: 'Are these boxes yours?' },
+        { speaker: 'Kim', en: 'Yes, these are my boxes. They are books.' },
+        { speaker: 'Ray', en: 'And that big box by the door?' },
+        { speaker: 'Kim', en: 'That is my sister\'s box. It is her TV.' },
+        { speaker: 'Ray', en: 'Where do I put those chairs?' },
+        { speaker: 'Kim', en: 'Put those chairs here, in the kitchen, please.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What is in Kim\'s boxes?', promptEs: '¿Qué hay en las cajas de Kim?', answer: 'Books' },
+        { id: 'l2q2', promptEn: 'Where is the big box?', promptEs: '¿Dónde está la caja grande?', answer: 'By the door' },
+        { id: 'l2q3', promptEn: 'Whose TV is in the big box?', promptEs: '¿De quién es la televisión en la caja grande?', answer: 'Kim\'s sister\'s' },
+        { id: 'l2q4', promptEn: 'Where do the chairs go?', promptEs: '¿Dónde van las sillas?', answer: 'In the kitchen' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Esta es mi casa."', answer: 'This is my house.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Esos son mis zapatos."', answer: 'Those are my shoes.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "What is this?"', answer: '¿Qué es esto?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Me gusta ese."', answer: 'I like that one.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'These are my keys.', answer: 'These are my keys.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Is that your car?', answer: 'Is that your car?' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'I like this one.', answer: 'I like this one.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Plural of "this"?', promptEs: '¿Plural de "this"?', answer: 'these' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Plural of "that"?', promptEs: '¿Plural de "that"?', answer: 'those' },
+    { id: 'iq10', kind: 'short-answer', promptEn: '(Tutor points to an object far away.) What is that?', promptEs: '¿Qué es eso?', answer: 'That is a ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

@@ -204,6 +204,67 @@ const module: Module = {
     { id: 'w4', promptEn: 'I have ____ money today.', promptEs: 'No tengo dinero hoy. (I have ____ money today.)', answer: 'no' },
     { id: 'w5', promptEn: 'I ____ come to work tomorrow.', promptEs: 'No puedo venir al trabajo mañana. (I ____ come to work tomorrow.)', answer: "can't" },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'I ____ not hungry.', promptEs: 'No tengo hambre. (I ____ not hungry.)', answer: 'am' },
+    { id: 'cw2', promptEn: 'He ____ like coffee.', promptEs: 'A él no le gusta el café. (He ____ like coffee.)', answer: "doesn't" },
+    { id: 'cw3', promptEn: 'We ____ work on Sunday.', promptEs: 'No trabajamos el domingo. (We ____ work on Sunday.)', answer: "don't" },
+    { id: 'cw4', promptEn: 'I ____ understand. Can you repeat?', promptEs: 'No entiendo. ¿Puede repetir? (I ____ understand.)', answer: "don't" },
+    { id: 'cw5', promptEn: 'There is ____ in the fridge. (nada)', promptEs: 'No hay nada en el refrigerador. (There is ____ in the fridge.)', answer: 'nothing' },
+    { id: 'cw6', promptEn: '____ is home. (nadie)', promptEs: 'Nadie está en casa. (____ is home.)', answer: 'Nobody' },
+    { id: 'cw7', promptEn: 'I am not finished ____.', promptEs: 'Todavía no he terminado. (I am not finished ____.)', answer: 'yet' },
+    { id: 'cw8', promptEn: 'She is ____ late. She is always on time.', promptEs: 'Ella nunca llega tarde. (She is ____ late.)', answer: 'never' },
+  ],
+  listening: [
+    {
+      titleEn: 'At the Bank',
+      titleEs: 'En el banco',
+      script: [
+        { speaker: 'Teller', en: 'Do you have an account here?' },
+        { speaker: 'Hugo', en: 'No, I don\'t. I want to open one.' },
+        { speaker: 'Teller', en: 'Do you have an ID?' },
+        { speaker: 'Hugo', en: 'Yes, but I don\'t have my passport today.' },
+        { speaker: 'Teller', en: 'That is okay. Your ID card is fine.' },
+        { speaker: 'Hugo', en: 'Sorry, I don\'t understand. Can you speak slowly?' },
+        { speaker: 'Teller', en: 'Of course. No problem. Your ID card is fine.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'Does Hugo have an account at the bank?', promptEs: '¿Hugo tiene una cuenta en el banco?', answer: 'No, he doesn\'t.' },
+        { id: 'l1q2', promptEn: 'What does Hugo want to do?', promptEs: '¿Qué quiere hacer Hugo?', answer: 'Open an account' },
+        { id: 'l1q3', promptEn: 'What doesn\'t Hugo have today?', promptEs: '¿Qué no tiene Hugo hoy?', answer: 'His passport' },
+        { id: 'l1q4', promptEn: 'What does Hugo ask the teller to do?', promptEs: '¿Qué le pide Hugo al cajero?', answer: 'Speak slowly' },
+      ],
+    },
+    {
+      titleEn: 'Saying No Politely',
+      titleEs: 'Decir que no con cortesía',
+      script: [
+        { speaker: 'Boss', en: 'Can you work on Saturday, Ana?' },
+        { speaker: 'Ana', en: 'I\'m sorry, I can\'t. I have English class on Saturday.' },
+        { speaker: 'Boss', en: 'What about Sunday?' },
+        { speaker: 'Ana', en: 'I never work on Sunday. It is my family day.' },
+        { speaker: 'Boss', en: 'Okay. Did you finish the report?' },
+        { speaker: 'Ana', en: 'Not yet. I didn\'t have time yesterday. I will finish it today.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'Why can\'t Ana work on Saturday?', promptEs: '¿Por qué Ana no puede trabajar el sábado?', answer: 'She has English class.' },
+        { id: 'l2q2', promptEn: 'Does Ana work on Sunday?', promptEs: '¿Ana trabaja los domingos?', answer: 'No, never. It is her family day.' },
+        { id: 'l2q3', promptEn: 'Did Ana finish the report?', promptEs: '¿Ana terminó el reporte?', answer: 'Not yet' },
+        { id: 'l2q4', promptEn: 'When will Ana finish the report?', promptEs: '¿Cuándo terminará Ana el reporte?', answer: 'Today' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "No entiendo."', answer: "I don't understand." },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Él no tiene carro."', answer: "He doesn't have a car." },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "I didn\'t go to work."', answer: 'No fui al trabajo.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "No puedo venir mañana."', answer: "I can't come tomorrow." },
+    { id: 'iq5', kind: 'dictation', promptEn: 'I don\'t know.', answer: 'I don\'t know.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'She doesn\'t speak English yet.', answer: 'She doesn\'t speak English yet.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'Nobody is at home.', answer: 'Nobody is at home.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Make it negative: "I like fish."', promptEs: 'Hazlo negativo: "I like fish."', answer: "I don't like fish." },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Make it negative: "He works on Monday."', promptEs: 'Hazlo negativo: "He works on Monday."', answer: "He doesn't work on Monday." },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What can\'t you do?', promptEs: '¿Qué no puedes hacer?', answer: 'I can\'t ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

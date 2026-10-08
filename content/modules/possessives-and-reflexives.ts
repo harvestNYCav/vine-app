@@ -202,6 +202,67 @@ const module: Module = {
     { id: 'w4', promptEn: '____ is this coat?', promptEs: '¿De quién es este abrigo? (____ is this coat?)', answer: 'Whose' },
     { id: 'w5', promptEn: 'They cleaned the house ____.', promptEs: 'Limpiaron la casa ellos mismos. (They cleaned the house ____.)', answer: 'themselves' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'Carlos lost ____ wallet. (de él)', promptEs: 'Carlos perdió su cartera. (Carlos lost ____ wallet.)', answer: 'his' },
+    { id: 'cw2', promptEn: 'Ana is with ____ mother. (de ella)', promptEs: 'Ana está con su mamá. (Ana is with ____ mother.)', answer: 'her' },
+    { id: 'cw3', promptEn: 'We love ____ new apartment.', promptEs: 'Nos encanta nuestro apartamento nuevo. (We love ____ new apartment.)', answer: 'our' },
+    { id: 'cw4', promptEn: 'The kids have ____ toys.', promptEs: 'Los niños tienen sus juguetes. (The kids have ____ toys.)', answer: 'their' },
+    { id: 'cw5', promptEn: 'Is this ____ phone? (de ti)', promptEs: '¿Es este tu teléfono? (Is this ____ phone?)', answer: 'your' },
+    { id: 'cw6', promptEn: 'This is ____ car. (de Maria)', promptEs: 'Este es el carro de María. (This is ____ car.)', answer: "Maria's" },
+    { id: 'cw7', promptEn: 'She cut ____ in the kitchen.', promptEs: 'Ella se cortó en la cocina. (She cut ____ in the kitchen.)', answer: 'herself' },
+    { id: 'cw8', promptEn: 'I live by ____.', promptEs: 'Vivo solo. (I live by ____.)', answer: 'myself' },
+  ],
+  listening: [
+    {
+      titleEn: 'Lost and Found',
+      titleEs: 'Objetos perdidos',
+      script: [
+        { speaker: 'Teacher', en: 'Whose umbrella is this?' },
+        { speaker: 'Lucia', en: 'It is not mine. Maybe it is Pedro\'s.' },
+        { speaker: 'Pedro', en: 'Yes, it is mine! Thank you.' },
+        { speaker: 'Teacher', en: 'And whose jacket is this?' },
+        { speaker: 'Lucia', en: 'That is my sister\'s jacket. Her name is Rosa.' },
+        { speaker: 'Teacher', en: 'Please give it to her. And these keys?' },
+        { speaker: 'Pedro', en: 'Those are our keys. Mine and my wife\'s.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'Whose umbrella is it?', promptEs: '¿De quién es el paraguas?', answer: 'Pedro\'s' },
+        { id: 'l1q2', promptEn: 'Whose jacket is it?', promptEs: '¿De quién es la chaqueta?', answer: 'Lucia\'s sister\'s (Rosa\'s)' },
+        { id: 'l1q3', promptEn: 'What is the name of Lucia\'s sister?', promptEs: '¿Cómo se llama la hermana de Lucía?', answer: 'Rosa' },
+        { id: 'l1q4', promptEn: 'Whose keys are they?', promptEs: '¿De quién son las llaves?', answer: 'Pedro and his wife\'s' },
+      ],
+    },
+    {
+      titleEn: 'I Did It Myself',
+      titleEs: 'Lo hice yo mismo',
+      script: [
+        { speaker: 'Beto', en: 'Your kitchen is beautiful! Who painted it?' },
+        { speaker: 'Luz', en: 'I painted it myself.' },
+        { speaker: 'Beto', en: 'Wow! And the table?' },
+        { speaker: 'Luz', en: 'My husband made it himself.' },
+        { speaker: 'Beto', en: 'Do your kids help?' },
+        { speaker: 'Luz', en: 'Yes. They clean their rooms by themselves now.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'Who painted the kitchen?', promptEs: '¿Quién pintó la cocina?', answer: 'Luz (she painted it herself)' },
+        { id: 'l2q2', promptEn: 'Who made the table?', promptEs: '¿Quién hizo la mesa?', answer: 'Her husband' },
+        { id: 'l2q3', promptEn: 'What do the kids clean?', promptEs: '¿Qué limpian los niños?', answer: 'Their rooms' },
+        { id: 'l2q4', promptEn: 'Do the kids need help to clean?', promptEs: '¿Los niños necesitan ayuda para limpiar?', answer: 'No. They clean by themselves.' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Es mío."', answer: 'It is mine.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "su casa (de ellos)"', answer: 'their house' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Whose book is this?"', answer: '¿De quién es este libro?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Lo hice yo mismo."', answer: 'I did it myself.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'This is my brother\'s car.', answer: 'This is my brother\'s car.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Our house is small.', answer: 'Our house is small.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'She lives by herself.', answer: 'She lives by herself.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Complete: "He hurt ___."', promptEs: 'Completa: "He hurt ___."', answer: 'himself' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Complete: "This bag is not yours. It is ___." (de mí)', promptEs: 'Completa: "It is ___." (de mí)', answer: 'mine' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What is your mother\'s name?', promptEs: '¿Cómo se llama tu mamá?', answer: 'My mother\'s name is ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

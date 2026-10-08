@@ -216,6 +216,65 @@ const module: Module = {
     { id: 'w4', promptEn: '____ you okay?', promptEs: '¿Estás bien? (____ you okay?)', answer: 'Are' },
     { id: 'w5', promptEn: 'It ____ cold today.', promptEs: 'Está frío hoy. (It ____ cold today.)', answer: 'is' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'We ____ ready.', promptEs: 'Estamos listos. (We ____ ready.)', answer: 'are' },
+    { id: 'cw2', promptEn: 'He ____ tired after work.', promptEs: 'Él está cansado después del trabajo. (He ____ tired after work.)', answer: 'is' },
+    { id: 'cw3', promptEn: 'I ____ not sure.', promptEs: 'No estoy seguro. (I ____ not sure.)', answer: 'am' },
+    { id: 'cw4', promptEn: '____ she your sister?', promptEs: '¿Es ella tu hermana? (____ she your sister?)', answer: 'Is' },
+    { id: 'cw5', promptEn: 'There ____ two banks on this street.', promptEs: 'Hay dos bancos en esta calle. (There ____ two banks...)', answer: 'are' },
+    { id: 'cw6', promptEn: 'There ____ a pharmacy on the corner.', promptEs: 'Hay una farmacia en la esquina. (There ____ a pharmacy...)', answer: 'is' },
+    { id: 'cw7', promptEn: 'They ____ not home. (short form)', promptEs: 'Ellos no están en casa. (They ____ home.)', answer: "aren't" },
+    { id: 'cw8', promptEn: '____ happy today. (I am → short form)', promptEs: 'Estoy feliz hoy. (____ happy today.)', answer: "I'm" },
+  ],
+  listening: [
+    {
+      titleEn: 'How Are You Today?',
+      titleEs: '¿Cómo estás hoy?',
+      script: [
+        { speaker: 'Lina', en: 'Hi, Omar! Are you okay? You look tired.' },
+        { speaker: 'Omar', en: 'Yes, I am tired. My baby is sick.' },
+        { speaker: 'Lina', en: 'Oh no! Is she at home?' },
+        { speaker: 'Omar', en: 'Yes, she is home with my wife.' },
+        { speaker: 'Lina', en: 'I am sorry. Are you working today?' },
+        { speaker: 'Omar', en: 'No, I\'m not. I am going home now.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'How is Omar?', promptEs: '¿Cómo está Omar?', answer: 'He is tired.' },
+        { id: 'l1q2', promptEn: 'Who is sick?', promptEs: '¿Quién está enfermo?', answer: 'His baby (daughter)' },
+        { id: 'l1q3', promptEn: 'Who is with the baby?', promptEs: '¿Quién está con la bebé?', answer: 'His wife' },
+        { id: 'l1q4', promptEn: 'Is Omar working today?', promptEs: '¿Omar trabaja hoy?', answer: 'No, he isn\'t.' },
+      ],
+    },
+    {
+      titleEn: 'The Weather Report',
+      titleEs: 'El reporte del tiempo',
+      script: [
+        { speaker: 'Reporter', en: 'Good morning, New York! It is Monday.' },
+        { speaker: 'Reporter', en: 'Today it is cold and windy. It is 40 degrees.' },
+        { speaker: 'Reporter', en: 'Tomorrow it is warm and sunny.' },
+        { speaker: 'Reporter', en: 'There are clouds on Wednesday, and there is rain on Thursday.' },
+        { speaker: 'Reporter', en: 'The weekend is beautiful. Have a great week!' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What day is it today?', promptEs: '¿Qué día es hoy?', answer: 'Monday' },
+        { id: 'l2q2', promptEn: 'How is the weather today?', promptEs: '¿Cómo está el clima hoy?', answer: 'Cold and windy (40 degrees)' },
+        { id: 'l2q3', promptEn: 'How is the weather tomorrow?', promptEs: '¿Cómo estará el clima mañana?', answer: 'Warm and sunny' },
+        { id: 'l2q4', promptEn: 'Which day is there rain?', promptEs: '¿Qué día hay lluvia?', answer: 'Thursday' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Estoy cansado."', answer: 'I am tired.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Ellos son de Guatemala."', answer: 'They are from Guatemala.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "There is a bank here."', answer: 'Hay un banco aquí.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "¿Estás bien?"', answer: 'Are you okay?' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'She is my neighbor.', answer: 'She is my neighbor.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'It is hot today.', answer: 'It is hot today.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'We are not ready.', answer: 'We are not ready.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Write the short form of "he is not".', promptEs: 'Escribe la forma corta de "he is not".', answer: "he isn't" },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'How are you today?', promptEs: '¿Cómo estás hoy?', answer: 'I am ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'How is the weather today?', promptEs: '¿Cómo está el clima hoy?', answer: 'It is ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

@@ -78,6 +78,37 @@ export interface PracticeActivity {
   chunks?: DialogueLine[][]
 }
 
+// Read aloud by the tutor; the student only hears it and writes answers on paper.
+export interface ListeningLine {
+  speaker: string
+  en: string
+  es?: string
+}
+
+export interface ListeningQuestion {
+  id: string
+  promptEn: string
+  promptEs?: string
+  answer: string
+}
+
+export interface ListeningActivity {
+  titleEn: string
+  titleEs?: string
+  script: ListeningLine[]
+  questions: ListeningQuestion[]
+}
+
+export type InPersonQuizKind = 'translate' | 'dictation' | 'short-answer'
+
+export interface InPersonQuizItem {
+  id: string
+  kind: InPersonQuizKind
+  promptEn: string
+  promptEs?: string
+  answer: string
+}
+
 export interface Module {
   slug: string
   track: Exclude<Track, 'math'>
@@ -92,6 +123,10 @@ export interface Module {
   teachingScenarios: TeachingScenario[]
   practiceActivities?: PracticeActivity[]
   worksheet: FillInBlankItem[]
+  // In-class, on-paper activities that stretch a lesson to the 2-hour session.
+  classWorksheet?: FillInBlankItem[]
+  listening?: ListeningActivity[]
+  inPersonQuiz?: InPersonQuizItem[]
 }
 
 export interface VocabProgress {

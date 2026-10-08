@@ -1,8 +1,12 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { Module, VocabItem, TeachingScenario, GrammarPoint, PracticeActivity, WordBankItem, DialogueLine } from '@/types'
+import type {
+  Module, VocabItem, TeachingScenario, GrammarPoint, PracticeActivity, WordBankItem, DialogueLine,
+  FillInBlankItem, ListeningActivity, InPersonQuizItem,
+} from '@/types'
 import { shuffle } from '@/lib/study'
+import { getLessonAgenda, totalAgendaMinutes } from '@/lib/lesson-agenda'
 
 function WordBank({ items, showEs }: { items: WordBankItem[]; showEs: boolean }) {
   return (
@@ -43,8 +47,36 @@ function DialogueChunks({ chunks, showEs }: { chunks: DialogueLine[][]; showEs: 
   )
 }
 
+function AnswerKey({ answers }: { answers: string[] }) {
+  return (
+    <div className="text-left mt-8 border-t border-gray-700 pt-4">
+      <p className="text-gray-500 text-sm uppercase tracking-wide mb-2">Answer key (tutor only)</p>
+      <ol className="list-decimal list-inside space-y-1 text-gray-400">
+        {answers.map((answer, i) => <li key={i}>{answer}</li>)}
+      </ol>
+    </div>
+  )
+}
+
+const QUIZ_KIND_LABELS: Record<InPersonQuizItem['kind'], string> = {
+  translate: 'Translate',
+  dictation: 'Dictation',
+  'short-answer': 'Answer the question',
+}
+
+function matchingLetter(index: number): string {
+  return String.fromCharCode(65 + index)
+}
+
+function chunk<T>(items: T[], size: number): T[][] {
+  const chunks: T[][] = []
+  for (let i = 0; i < items.length; i += size) chunks.push(items.slice(i, i + size))
+  return chunks
+}
+
 type Slide =
   | { type: 'title' }
+  | { type: 'agenda' }
   | { type: 'vocab'; items: VocabItem[]; part: number; total: number }
   | { type: 'grammar'; point: GrammarPoint; index: number; total: number }
   | { type: 'pronunciation'; items: VocabItem[] }
@@ -52,10 +84,14 @@ type Slide =
   | { type: 'transcription'; items: VocabItem[] }
   | { type: 'scenario'; scenario: TeachingScenario; index: number; total: number }
   | { type: 'practice'; activity: PracticeActivity; index: number; total: number }
+  | { type: 'classWorksheet'; items: FillInBlankItem[]; start: number; part: number; total: number }
+  | { type: 'listening'; activity: ListeningActivity; index: number; total: number }
+  | { type: 'inPersonQuiz'; items: InPersonQuizItem[]; start: number; part: number; total: number }
   | { type: 'wrapup' }
 
 function buildSlides(mod: Module): Slide[] {
   const slides: Slide[] = [{ type: 'title' }]
+  if (mod.track === 'esl') slides.push({ type: 'agenda' })
   const chunkSize = 4
   const chunks: VocabItem[][] = []
   for (let i = 0; i < mod.vocab.length; i += chunkSize) {
@@ -69,12 +105,24 @@ function buildSlides(mod: Module): Slide[] {
     slides.push({ type: 'matching', enItems: mod.vocab, esItems: shuffle(mod.vocab) })
     slides.push({ type: 'transcription', items: mod.vocab })
   }
+  const worksheetChunks = chunk(mod.classWorksheet ?? [], 8)
+  worksheetChunks.forEach((items, i) =>
+    slides.push({ type: 'classWorksheet', items, start: i * 8, part: i + 1, total: worksheetChunks.length })
+  )
   mod.teachingScenarios.forEach((scenario, i) =>
     slides.push({ type: 'scenario', scenario, index: i + 1, total: mod.teachingScenarios.length })
+  )
+  const listening = mod.listening ?? []
+  listening.forEach((activity, i) =>
+    slides.push({ type: 'listening', activity, index: i + 1, total: listening.length })
   )
   const practiceActivities = mod.practiceActivities ?? []
   practiceActivities.forEach((activity, i) =>
     slides.push({ type: 'practice', activity, index: i + 1, total: practiceActivities.length })
+  )
+  const quizChunks = chunk(mod.inPersonQuiz ?? [], 5)
+  quizChunks.forEach((items, i) =>
+    slides.push({ type: 'inPersonQuiz', items, start: i * 5, part: i + 1, total: quizChunks.length })
   )
   slides.push({ type: 'wrapup' })
   return slides
@@ -126,6 +174,24 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
             {mod.track === 'esl' && <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-2">{mod.descriptionEs}</p>}
           </>
         )}
+
+        {slide.type === 'agenda' && (() => {
+          const agenda = getLessonAgenda(mod)
+          return (
+            <div className="w-full max-w-xl">
+              <p className="text-amber-300 text-lg mb-2">Today&apos;s Plan</p>
+              <h2 className="text-4xl font-bold mb-8">About {totalAgendaMinutes(agenda)} minutes</h2>
+              <ol className="text-left space-y-3">
+                {agenda.map((item, i) => (
+                  <li key={i} className="flex justify-between border-b border-gray-700 pb-3 text-xl md:text-2xl">
+                    <span>{i + 1}. {item.label}</span>
+                    <span className="text-amber-300">{item.minutes} min</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )
+        })()}
 
         {slide.type === 'vocab' && (
           <div className="w-full max-w-3xl">
@@ -184,19 +250,28 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
         {slide.type === 'matching' && (
           <div className="w-full max-w-3xl">
             <p className="text-amber-300 text-lg mb-2">Matching Practice</p>
-            <p className="text-gray-400 mb-6">Student: draw a line matching each English word to its Spanish translation.</p>
+            <p className="text-gray-400 mb-6">
+              Student: match each English word to its Spanish translation. Write the number and letter in your notebook (for example, 1-C).
+            </p>
             <div className="grid grid-cols-2 gap-x-8">
-              <div className="space-y-3 text-left">
-                {slide.enItems.map(item => (
-                  <p key={item.id} className="text-xl md:text-2xl font-semibold">{item.en}</p>
+              <ol className="space-y-3 text-left">
+                {slide.enItems.map((item, i) => (
+                  <li key={item.id} className="text-xl md:text-2xl font-semibold">{i + 1}. {item.en}</li>
                 ))}
-              </div>
-              <div className="space-y-3 text-left">
-                {slide.esItems.map(item => (
-                  <p key={item.id} className="text-xl md:text-2xl text-amber-300">{item.es}</p>
+              </ol>
+              <ol className="space-y-3 text-left">
+                {slide.esItems.map((item, i) => (
+                  <li key={item.id} className="text-xl md:text-2xl text-amber-300">{matchingLetter(i)}. {item.es}</li>
                 ))}
-              </div>
+              </ol>
             </div>
+            {variant === 'tutor' && (
+              <AnswerKey
+                answers={slide.enItems.map(item =>
+                  matchingLetter(slide.esItems.findIndex(esItem => esItem.id === item.id))
+                )}
+              />
+            )}
           </div>
         )}
 
@@ -276,6 +351,84 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
           </div>
         )}
 
+        {slide.type === 'classWorksheet' && (
+          <div className="w-full max-w-3xl">
+            <p className="text-amber-300 text-lg mb-2">
+              In-Class Worksheet{slide.total > 1 ? ` ${slide.part}/${slide.total}` : ''}
+            </p>
+            <p className="text-gray-400 mb-6">Student: write the missing word for each sentence in your notebook.</p>
+            <ol className="text-left space-y-4">
+              {slide.items.map((item, i) => (
+                <li key={item.id} className="border-b border-gray-700 pb-3">
+                  <p className="text-xl md:text-2xl font-semibold">{slide.start + i + 1}. {item.promptEn}</p>
+                  {item.promptEs && <p className="text-base text-amber-300 mt-1">{item.promptEs}</p>}
+                </li>
+              ))}
+            </ol>
+            {variant === 'tutor' && <AnswerKey answers={slide.items.map(item => item.answer)} />}
+          </div>
+        )}
+
+        {slide.type === 'listening' && (
+          <div className="w-full max-w-2xl">
+            <p className="text-amber-300 text-lg mb-2">Listening &amp; Writing {slide.index}/{slide.total}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">{slide.activity.titleEn}</h2>
+            {slide.activity.titleEs && <p className="text-xl text-amber-300 mb-4">{slide.activity.titleEs}</p>}
+            <p className="text-gray-400 mb-6">
+              {variant === 'tutor'
+                ? 'Tutor: read the whole dialogue aloud twice. The student listens, then writes answers to the questions in their notebook.'
+                : 'Listen to your tutor read a dialogue. Then write your answers in your notebook.'}
+            </p>
+            {variant === 'tutor' && (
+              <div className="text-left space-y-2 mb-8 bg-gray-800 rounded-2xl p-5">
+                {slide.activity.script.map((line, i) => (
+                  <p key={i} className="text-lg md:text-xl">
+                    <span className="font-semibold text-amber-300 mr-2">{line.speaker}:</span>
+                    {line.en}
+                  </p>
+                ))}
+              </div>
+            )}
+            <ol className="text-left space-y-3">
+              {slide.activity.questions.map((question, i) => (
+                <li key={question.id} className="border-b border-gray-700 pb-3">
+                  <p className="text-xl md:text-2xl font-semibold">{i + 1}. {question.promptEn}</p>
+                  {question.promptEs && <p className="text-base text-amber-300 mt-1">{question.promptEs}</p>}
+                </li>
+              ))}
+            </ol>
+            {variant === 'tutor' && <AnswerKey answers={slide.activity.questions.map(question => question.answer)} />}
+          </div>
+        )}
+
+        {slide.type === 'inPersonQuiz' && (
+          <div className="w-full max-w-3xl">
+            <p className="text-amber-300 text-lg mb-2">
+              In-Person Quiz{slide.total > 1 ? ` ${slide.part}/${slide.total}` : ''}
+            </p>
+            <p className="text-gray-400 mb-6">
+              {variant === 'tutor'
+                ? 'Tutor: read each item aloud. For dictation, say the sentence twice slowly. The student writes every answer on paper with no help.'
+                : 'Write each answer on paper. For dictation, listen and write the sentence your tutor says.'}
+            </p>
+            <ol className="text-left space-y-4">
+              {slide.items.map((item, i) => (
+                <li key={item.id} className="border-b border-gray-700 pb-3">
+                  <p className="text-sm uppercase tracking-wide text-gray-500">{QUIZ_KIND_LABELS[item.kind]}</p>
+                  <p className="text-xl md:text-2xl font-semibold">
+                    {slide.start + i + 1}.{' '}
+                    {item.kind === 'dictation' && variant === 'student' ? 'Listen and write the sentence.' : item.promptEn}
+                  </p>
+                  {item.promptEs && !(item.kind === 'dictation' && variant === 'student') && (
+                    <p className="text-base text-amber-300 mt-1">{item.promptEs}</p>
+                  )}
+                </li>
+              ))}
+            </ol>
+            {variant === 'tutor' && <AnswerKey answers={slide.items.map(item => item.answer)} />}
+          </div>
+        )}
+
         {slide.type === 'wrapup' && (
           <div className="w-full max-w-xl">
             <div className="text-6xl mb-6">🎉</div>
@@ -284,7 +437,9 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
             </h2>
             {variant === 'tutor' ? (
               <>
-                <p className="text-xl text-gray-300 mb-8">Assign this week&apos;s homework worksheet before wrapping up.</p>
+                <p className="text-xl text-gray-300 mb-8">{mod.inPersonQuiz?.length
+                    ? "Collect and check the quiz, then assign this week's homework worksheet."
+                    : "Assign this week's homework worksheet before wrapping up."}</p>
                 <a href="/vine-app/tutor/lessons">
                   <button className="bg-amber-500 text-gray-900 text-lg font-semibold px-8 py-4 rounded-2xl hover:bg-amber-400">
                     End Presentation

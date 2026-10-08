@@ -333,6 +333,66 @@ const module: Module = {
     { id: 'w4', promptEn: 'The pharmacy is one ____ from here.', promptEs: 'La farmacia está a una ____ de aquí.', answer: 'block' },
     { id: 'w5', promptEn: 'Go straight ____, then turn right at the bank.', promptEs: 'Sigue ____, luego dobla a la derecha en el banco.', answer: 'ahead' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'I need to add money to my ____.', promptEs: 'Necesito ponerle dinero a mi MetroCard. (... to my ____.)', answer: 'MetroCard' },
+    { id: 'cw2', promptEn: 'Central Park is north. Take the ____ train.', promptEs: 'Toma el tren hacia el norte. (Take the ____ train.)', answer: 'uptown' },
+    { id: 'cw3', promptEn: 'Wall Street is south. Take the ____ train.', promptEs: 'Toma el tren hacia el sur. (Take the ____ train.)', answer: 'downtown' },
+    { id: 'cw4', promptEn: '____ to the 7 train at Times Square.', promptEs: 'Cambia al tren 7 en Times Square. (____ to the 7 train...)', answer: 'Transfer' },
+    { id: 'cw5', promptEn: 'Use the ____ on 42nd Street.', promptEs: 'Usa la salida de la calle 42. (Use the ____ on 42nd Street.)', answer: 'exit' },
+    { id: 'cw6', promptEn: 'The bank is on the ____ of 5th Avenue.', promptEs: 'El banco está en la esquina de la Quinta Avenida. (... on the ____ ...)', answer: 'corner' },
+    { id: 'cw7', promptEn: 'Turn ____ at the light. (derecha)', promptEs: 'Dobla a la derecha en el semáforo. (Turn ____ at the light.)', answer: 'right' },
+    { id: 'cw8', promptEn: '____ train goes to Brooklyn?', promptEs: '¿Qué tren va a Brooklyn? (____ train goes to Brooklyn?)', answer: 'Which' },
+  ],
+  listening: [
+    {
+      titleEn: 'Which Train?',
+      titleEs: '¿Qué tren?',
+      script: [
+        { speaker: 'Rider', en: 'Excuse me. Which train goes to the Bronx Zoo?' },
+        { speaker: 'Worker', en: 'Take the 2 train uptown.' },
+        { speaker: 'Rider', en: 'Where is the platform?' },
+        { speaker: 'Worker', en: 'Go downstairs and turn left.' },
+        { speaker: 'Rider', en: 'Do I need to transfer?' },
+        { speaker: 'Worker', en: 'No. Get off at West Farms Square. Then walk three blocks.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'Where does the rider want to go?', promptEs: '¿A dónde quiere ir el pasajero?', answer: 'The Bronx Zoo' },
+        { id: 'l1q2', promptEn: 'Which train should the rider take?', promptEs: '¿Qué tren debe tomar el pasajero?', answer: 'The 2 train uptown' },
+        { id: 'l1q3', promptEn: 'How do you get to the platform?', promptEs: '¿Cómo llegas a la plataforma?', answer: 'Go downstairs and turn left.' },
+        { id: 'l1q4', promptEn: 'How many blocks does the rider walk?', promptEs: '¿Cuántas cuadras camina el pasajero?', answer: 'Three' },
+      ],
+    },
+    {
+      titleEn: 'Directions to the Clinic',
+      titleEs: 'Direcciones a la clínica',
+      script: [
+        { speaker: 'Woman', en: 'Excuse me, where is the health clinic?' },
+        { speaker: 'Man', en: 'Exit the subway on 116th Street.' },
+        { speaker: 'Man', en: 'Go straight ahead two blocks.' },
+        { speaker: 'Man', en: 'Turn right at the corner. There is a pharmacy.' },
+        { speaker: 'Man', en: 'The clinic is next to the pharmacy.' },
+        { speaker: 'Woman', en: 'Straight two blocks, turn right, next to the pharmacy. Thank you!' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What street is the exit on?', promptEs: '¿En qué calle está la salida?', answer: '116th Street' },
+        { id: 'l2q2', promptEn: 'How many blocks straight ahead?', promptEs: '¿Cuántas cuadras derecho?', answer: 'Two' },
+        { id: 'l2q3', promptEn: 'Turn left or right at the corner?', promptEs: '¿A la izquierda o a la derecha en la esquina?', answer: 'Right' },
+        { id: 'l2q4', promptEn: 'What is next to the clinic?', promptEs: '¿Qué está al lado de la clínica?', answer: 'A pharmacy' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Dobla a la izquierda."', answer: 'Turn left.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Sigue derecho."', answer: 'Go straight ahead.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Where is the exit?"', answer: '¿Dónde está la salida?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "¿Qué tren va a Queens?"', answer: 'Which train goes to Queens?' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'Take the downtown train.', answer: 'Take the downtown train.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Turn right at the corner.', answer: 'Turn right at the corner.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'The store is two blocks from here.', answer: 'The store is two blocks from here.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Opposite of "uptown"?', promptEs: '¿Lo contrario de "uptown"?', answer: 'downtown' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Which train do you take to come here?', promptEs: '¿Qué tren tomas para venir aquí?', answer: 'I take the ___ train. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Give directions from the door to the bathroom.', promptEs: 'Da direcciones de la puerta al baño.', answer: 'Go straight, turn ___. (Answers will vary.)' },
+  ],
 }
 
 export default module
