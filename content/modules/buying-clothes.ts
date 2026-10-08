@@ -332,6 +332,67 @@ const module: Module = {
     { id: 'w4', promptEn: 'Can I ____ on this jacket?', promptEs: '¿Me puedo probar esta chaqueta? (Can I ____ on this jacket?)', answer: 'try' },
     { id: 'w5', promptEn: 'Is there a ____ on these shoes?', promptEs: '¿Hay un descuento en estos zapatos? (Is there a ____ on these shoes?)', answer: 'discount' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'What ____ are you? Medium or large?', promptEs: '¿Qué talla eres? (What ____ are you?)', answer: 'size' },
+    { id: 'cw2', promptEn: 'The ____ room is in the back.', promptEs: 'El probador está atrás. (The ____ room is in the back.)', answer: 'fitting' },
+    { id: 'cw3', promptEn: 'These pants are too ____. I need a bigger size.', promptEs: 'Estos pantalones son muy pequeños. (... too ____.)', answer: 'small' },
+    { id: 'cw4', promptEn: 'I want to ____ this shirt. Here is my receipt.', promptEs: 'Quiero devolver esta camisa. (I want to ____ this shirt.)', answer: 'return' },
+    { id: 'cw5', promptEn: 'Look at the price ____.', promptEs: 'Mira la etiqueta del precio. (Look at the price ____.)', answer: 'tag' },
+    { id: 'cw6', promptEn: 'This bag ____ my shoes.', promptEs: 'Esta bolsa combina con mis zapatos. (This bag ____ my shoes.)', answer: 'matches' },
+    { id: 'cw7', promptEn: 'What ____ do you want? Red or black?', promptEs: '¿Qué color quieres? (What ____ do you want?)', answer: 'color' },
+    { id: 'cw8', promptEn: 'Please pay at the cash ____.', promptEs: 'Por favor pague en la caja. (... at the cash ____.)', answer: 'register' },
+  ],
+  listening: [
+    {
+      titleEn: 'Shopping for a Coat',
+      titleEs: 'Comprando un abrigo',
+      script: [
+        { speaker: 'Clerk', en: 'Can I help you?' },
+        { speaker: 'Elsa', en: 'Yes. I am looking for a winter coat.' },
+        { speaker: 'Clerk', en: 'What size are you?' },
+        { speaker: 'Elsa', en: 'Medium. Do you have this coat in black?' },
+        { speaker: 'Clerk', en: 'Yes. Here it is. You can try it on in the fitting room.' },
+        { speaker: 'Elsa', en: 'It is too big. Do you have a small?' },
+        { speaker: 'Clerk', en: 'Yes. And it is on sale. Twenty percent off!' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What is Elsa looking for?', promptEs: '¿Qué busca Elsa?', answer: 'A winter coat' },
+        { id: 'l1q2', promptEn: 'What color does she want?', promptEs: '¿Qué color quiere?', answer: 'Black' },
+        { id: 'l1q3', promptEn: 'What is the problem with the medium?', promptEs: '¿Cuál es el problema con la talla mediana?', answer: 'It is too big.' },
+        { id: 'l1q4', promptEn: 'How much is the discount?', promptEs: '¿De cuánto es el descuento?', answer: 'Twenty percent' },
+      ],
+    },
+    {
+      titleEn: 'Making an Exchange',
+      titleEs: 'Haciendo un cambio',
+      script: [
+        { speaker: 'Mario', en: 'Hi. I want to exchange these shoes.' },
+        { speaker: 'Clerk', en: 'What is the problem?' },
+        { speaker: 'Mario', en: 'They are too small. I need a size 10.' },
+        { speaker: 'Clerk', en: 'Do you have the receipt?' },
+        { speaker: 'Mario', en: 'Yes, here it is. I bought them on Friday.' },
+        { speaker: 'Clerk', en: 'Okay. Here is a size 10. Please try them on.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What does Mario want to exchange?', promptEs: '¿Qué quiere cambiar Mario?', answer: 'Shoes' },
+        { id: 'l2q2', promptEn: 'What is the problem?', promptEs: '¿Cuál es el problema?', answer: 'They are too small.' },
+        { id: 'l2q3', promptEn: 'What size does he need?', promptEs: '¿Qué talla necesita?', answer: 'Size 10' },
+        { id: 'l2q4', promptEn: 'When did he buy them?', promptEs: '¿Cuándo los compró?', answer: 'On Friday' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Es muy grande."', answer: 'It is too big.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "¿Me lo puedo probar?"', answer: 'Can I try it on?' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "I am looking for a dress."', answer: 'Estoy buscando un vestido.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "¿Lo tiene en rojo?"', answer: 'Do you have this in red?' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'Where is the fitting room?', answer: 'Where is the fitting room?' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'These shoes are on sale.', answer: 'These shoes are on sale.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'I want to return this shirt.', answer: 'I want to return this shirt.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Opposite of "too big"?', promptEs: '¿Lo contrario de "too big"?', answer: 'too small' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What color is your shirt today?', promptEs: '¿De qué color es tu camisa hoy?', answer: 'My shirt is ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Ask for a smaller size. Write what you say.', promptEs: 'Pide una talla más pequeña. Escribe lo que dices.', answer: 'Do you have this in a smaller size? / Do you have a small?' },
+  ],
 }
 
 export default module

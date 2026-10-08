@@ -210,6 +210,68 @@ const module: Module = {
     { id: 'w4', promptEn: 'Nice to meet ____.', promptEs: 'Mucho gusto. (Nice to meet ____.)', answer: 'you' },
     { id: 'w5', promptEn: 'Goodbye! See ____ later.', promptEs: '¡Adiós! Nos vemos. (Goodbye! See ____ later.)', answer: 'you' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'Maria is my sister. ____ is a teacher.', promptEs: 'María es mi hermana. Ella es maestra. (____ is a teacher.)', answer: 'She' },
+    { id: 'cw2', promptEn: 'Carlos is my friend. ____ is from Peru.', promptEs: 'Carlos es mi amigo. Él es de Perú. (____ is from Peru.)', answer: 'He' },
+    { id: 'cw3', promptEn: 'My husband and I live here. ____ live in Queens.', promptEs: 'Mi esposo y yo vivimos aquí. (____ live in Queens.)', answer: 'We' },
+    { id: 'cw4', promptEn: 'The children are at school. ____ are happy.', promptEs: 'Los niños están en la escuela. (____ are happy.)', answer: 'They' },
+    { id: 'cw5', promptEn: 'Good ____! (It is 3 p.m.)', promptEs: '¡Buenas tardes! (Good ____!)', answer: 'afternoon' },
+    { id: 'cw6', promptEn: 'What\'s your ____?', promptEs: '¿Cómo te llamas? (What\'s your ____?)', answer: 'name' },
+    { id: 'cw7', promptEn: 'This is my ____, Pedro.', promptEs: 'Este es mi amigo, Pedro. (This is my ____, Pedro.)', answer: 'friend' },
+    { id: 'cw8', promptEn: 'See you next ____!', promptEs: '¡Nos vemos la próxima semana! (See you next ____!)', answer: 'week' },
+  ],
+  listening: [
+    {
+      titleEn: 'A New Neighbor',
+      titleEs: 'Un vecino nuevo',
+      script: [
+        { speaker: 'Elena', en: 'Hi! Are you new here?' },
+        { speaker: 'David', en: 'Yes. Hello! My name is David.' },
+        { speaker: 'Elena', en: 'Nice to meet you, David. I am Elena. I live in apartment 4B.' },
+        { speaker: 'David', en: 'Nice to meet you too. I live in 5A with my wife.' },
+        { speaker: 'Elena', en: 'What\'s her name?' },
+        { speaker: 'David', en: 'Her name is Sofia. She is from Colombia.' },
+        { speaker: 'Elena', en: 'Welcome! See you later.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What is the man\'s name?', promptEs: '¿Cómo se llama el hombre?', answer: 'David' },
+        { id: 'l1q2', promptEn: 'Which apartment does Elena live in?', promptEs: '¿En qué apartamento vive Elena?', answer: '4B' },
+        { id: 'l1q3', promptEn: 'Who lives with David?', promptEs: '¿Quién vive con David?', answer: 'His wife, Sofia' },
+        { id: 'l1q4', promptEn: 'Where is Sofia from?', promptEs: '¿De dónde es Sofía?', answer: 'Colombia' },
+      ],
+    },
+    {
+      titleEn: 'Introducing a Friend',
+      titleEs: 'Presentando a un amigo',
+      script: [
+        { speaker: 'Teacher', en: 'Good evening, everyone! How are you?' },
+        { speaker: 'Jorge', en: 'I am fine, thank you. This is my friend Marta.' },
+        { speaker: 'Teacher', en: 'Hello, Marta. Nice to meet you.' },
+        { speaker: 'Marta', en: 'Nice to meet you. I am Jorge\'s friend from work.' },
+        { speaker: 'Teacher', en: 'Are you a student here too?' },
+        { speaker: 'Marta', en: 'Yes. We are in the Saturday class.' },
+        { speaker: 'Teacher', en: 'Wonderful. See you next week!' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What time of day is it: morning or evening?', promptEs: '¿Qué hora del día es: mañana o noche?', answer: 'Evening' },
+        { id: 'l2q2', promptEn: 'Who is Marta?', promptEs: '¿Quién es Marta?', answer: 'Jorge\'s friend from work' },
+        { id: 'l2q3', promptEn: 'Which class are they in?', promptEs: '¿En qué clase están?', answer: 'The Saturday class' },
+        { id: 'l2q4', promptEn: 'When will the teacher see them again?', promptEs: '¿Cuándo los verá la maestra otra vez?', answer: 'Next week' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Ella es mi amiga."', answer: 'She is my friend.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Nosotros somos estudiantes."', answer: 'We are students.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Good afternoon."', answer: 'Buenas tardes.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Hasta la próxima semana."', answer: 'See you next week.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'Hello, how are you?', answer: 'Hello, how are you?' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'This is my friend Ana.', answer: 'This is my friend Ana.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'They are from Mexico.', answer: 'They are from Mexico.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Which word do you use for a man: he or she?', promptEs: '¿Qué palabra usas para un hombre: he o she?', answer: 'he' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What do you say at 8 a.m.?', promptEs: '¿Qué dices a las 8 a.m.?', answer: 'Good morning' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'How are you?', promptEs: '¿Cómo estás?', answer: 'I am fine, thank you. (Answers will vary.)' },
+  ],
 }
 
 export default module

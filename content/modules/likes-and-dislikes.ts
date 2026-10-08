@@ -202,6 +202,65 @@ const module: Module = {
     { id: 'w4', promptEn: '____ you like pizza?', promptEs: '¿Te gusta la pizza? (____ you like pizza?)', answer: 'Do' },
     { id: 'w5', promptEn: 'I ____ dancing.', promptEs: 'Me encanta bailar. (I ____ dancing.)', answer: 'love' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'He ____ soccer. (like)', promptEs: 'A él le gusta el fútbol. (He ____ soccer.)', answer: 'likes' },
+    { id: 'cw2', promptEn: 'I ____ tea to coffee.', promptEs: 'Prefiero el té al café. (I ____ tea to coffee.)', answer: 'prefer' },
+    { id: 'cw3', promptEn: 'My ____ food is tacos.', promptEs: 'Mi comida favorita son los tacos. (My ____ food is tacos.)', answer: 'favorite' },
+    { id: 'cw4', promptEn: 'I don\'t like cold weather at ____.', promptEs: 'No me gusta el frío para nada. (... at ____.)', answer: 'all' },
+    { id: 'cw5', promptEn: 'She doesn\'t ____ fish.', promptEs: 'A ella no le gusta el pescado. (She doesn\'t ____ fish.)', answer: 'like' },
+    { id: 'cw6', promptEn: '"I love music." "Me ____!"', promptEs: '"Me encanta la música." "¡Yo también!"', answer: 'too' },
+    { id: 'cw7', promptEn: '"I don\'t like rain." "Me ____."', promptEs: '"No me gusta la lluvia." "Yo tampoco."', answer: 'neither' },
+    { id: 'cw8', promptEn: 'What do you ____ to do on Sunday?', promptEs: '¿Qué te gusta hacer el domingo? (What do you ____ to do...?)', answer: 'like' },
+  ],
+  listening: [
+    {
+      titleEn: 'Ordering Lunch',
+      titleEs: 'Pidiendo el almuerzo',
+      script: [
+        { speaker: 'Mia', en: 'What do you want for lunch, Tomás?' },
+        { speaker: 'Tomás', en: 'I love pizza! Do you like pizza?' },
+        { speaker: 'Mia', en: 'Not really. I prefer soup and salad.' },
+        { speaker: 'Tomás', en: 'Do you like spicy food?' },
+        { speaker: 'Mia', en: 'No, I don\'t like spicy food at all.' },
+        { speaker: 'Tomás', en: 'Me neither. Let\'s get soup today.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What does Tomás love?', promptEs: '¿Qué le encanta a Tomás?', answer: 'Pizza' },
+        { id: 'l1q2', promptEn: 'What does Mia prefer?', promptEs: '¿Qué prefiere Mia?', answer: 'Soup and salad' },
+        { id: 'l1q3', promptEn: 'Does Mia like spicy food?', promptEs: '¿A Mia le gusta la comida picante?', answer: 'No, not at all.' },
+        { id: 'l1q4', promptEn: 'What will they eat today?', promptEs: '¿Qué comerán hoy?', answer: 'Soup' },
+      ],
+    },
+    {
+      titleEn: 'Free Time',
+      titleEs: 'Tiempo libre',
+      script: [
+        { speaker: 'Ivan', en: 'What do you like to do in your free time?' },
+        { speaker: 'Grace', en: 'I really like dancing. My favorite music is salsa.' },
+        { speaker: 'Ivan', en: 'Me too! I like salsa a lot.' },
+        { speaker: 'Grace', en: 'Does your wife like dancing?' },
+        { speaker: 'Ivan', en: 'No, she doesn\'t. She likes reading and gardening.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What does Grace really like?', promptEs: '¿Qué le gusta mucho a Grace?', answer: 'Dancing' },
+        { id: 'l2q2', promptEn: 'What is Grace\'s favorite music?', promptEs: '¿Cuál es la música favorita de Grace?', answer: 'Salsa' },
+        { id: 'l2q3', promptEn: 'Does Ivan like salsa?', promptEs: '¿A Ivan le gusta la salsa?', answer: 'Yes, a lot.' },
+        { id: 'l2q4', promptEn: 'What does Ivan\'s wife like?', promptEs: '¿Qué le gusta a la esposa de Ivan?', answer: 'Reading and gardening' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Me gusta el café."', answer: 'I like coffee.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "A ella le gusta bailar."', answer: 'She likes dancing. / She likes to dance.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Me neither."', answer: 'Yo tampoco.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Mi color favorito es el azul."', answer: 'My favorite color is blue.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'I don\'t like cold weather.', answer: 'I don\'t like cold weather.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Do you like music?', answer: 'Do you like music?' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'He likes to play soccer.', answer: 'He likes to play soccer.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: '"I love pizza." Agree with this sentence.', promptEs: '"I love pizza." Responde que estás de acuerdo.', answer: 'Me too!' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What is your favorite food?', promptEs: '¿Cuál es tu comida favorita?', answer: 'My favorite food is ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What don\'t you like?', promptEs: '¿Qué no te gusta?', answer: 'I don\'t like ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

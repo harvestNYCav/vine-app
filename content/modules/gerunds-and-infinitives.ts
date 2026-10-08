@@ -216,6 +216,67 @@ const module: Module = {
     { id: 'w4', promptEn: 'I want ____ learn English.', promptEs: 'Quiero aprender inglés. (I want ____ learn English.)', answer: 'to' },
     { id: 'w5', promptEn: 'I enjoy ____ in the park.', promptEs: 'Disfruto caminar en el parque. (I enjoy ____ in the park.)', answer: 'walking' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'I enjoy ____ books. (read)', promptEs: 'Disfruto leer libros. (I enjoy ____ books.)', answer: 'reading' },
+    { id: 'cw2', promptEn: 'She stopped ____ at night. (work)', promptEs: 'Ella dejó de trabajar de noche. (She stopped ____ at night.)', answer: 'working' },
+    { id: 'cw3', promptEn: 'I plan ____ visit my family.', promptEs: 'Planeo visitar a mi familia. (I plan ____ visit my family.)', answer: 'to' },
+    { id: 'cw4', promptEn: 'We hope ____ buy a house.', promptEs: 'Esperamos comprar una casa. (We hope ____ buy a house.)', answer: 'to' },
+    { id: 'cw5', promptEn: 'He started ____ English last year. (study)', promptEs: 'Él empezó a estudiar inglés el año pasado. (He started ____ English.)', answer: 'studying' },
+    { id: 'cw6', promptEn: 'I love ____ for my family. (cook)', promptEs: 'Me encanta cocinar para mi familia. (I love ____ for my family.)', answer: 'cooking' },
+    { id: 'cw7', promptEn: 'You need ____ rest.', promptEs: 'Necesitas descansar. (You need ____ rest.)', answer: 'to' },
+    { id: 'cw8', promptEn: 'I like ____ in the park. (run)', promptEs: 'Me gusta correr en el parque. (I like ____ in the park.)', answer: 'running' },
+  ],
+  listening: [
+    {
+      titleEn: 'Weekend Plans',
+      titleEs: 'Planes para el fin de semana',
+      script: [
+        { speaker: 'Nora', en: 'What do you like doing on weekends, Sam?' },
+        { speaker: 'Sam', en: 'I enjoy playing soccer with my friends.' },
+        { speaker: 'Nora', en: 'Nice. I like cooking. I want to learn new recipes.' },
+        { speaker: 'Sam', en: 'Do you have to work this Saturday?' },
+        { speaker: 'Nora', en: 'No, but I need to clean my apartment.' },
+        { speaker: 'Sam', en: 'I plan to visit my brother on Sunday.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What does Sam enjoy doing?', promptEs: '¿Qué disfruta hacer Sam?', answer: 'Playing soccer (with his friends)' },
+        { id: 'l1q2', promptEn: 'What does Nora like?', promptEs: '¿Qué le gusta a Nora?', answer: 'Cooking' },
+        { id: 'l1q3', promptEn: 'What does Nora need to do?', promptEs: '¿Qué necesita hacer Nora?', answer: 'Clean her apartment' },
+        { id: 'l1q4', promptEn: 'Who will Sam visit on Sunday?', promptEs: '¿A quién visitará Sam el domingo?', answer: 'His brother' },
+      ],
+    },
+    {
+      titleEn: 'Goals for the New Year',
+      titleEs: 'Metas para el año nuevo',
+      script: [
+        { speaker: 'Tutor', en: 'What are your goals this year, Carla?' },
+        { speaker: 'Carla', en: 'I want to speak better English.' },
+        { speaker: 'Tutor', en: 'That is a great goal. Anything else?' },
+        { speaker: 'Carla', en: 'I hope to get a new job. I stopped working at the factory.' },
+        { speaker: 'Tutor', en: 'What kind of job do you want?' },
+        { speaker: 'Carla', en: 'I love helping people. I plan to work in a hospital.' },
+        { speaker: 'Tutor', en: 'Then you need to practice English every day!' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What is Carla\'s first goal?', promptEs: '¿Cuál es la primera meta de Carla?', answer: 'To speak better English' },
+        { id: 'l2q2', promptEn: 'Where did Carla stop working?', promptEs: '¿Dónde dejó de trabajar Carla?', answer: 'At the factory' },
+        { id: 'l2q3', promptEn: 'What does Carla love doing?', promptEs: '¿Qué le encanta hacer a Carla?', answer: 'Helping people' },
+        { id: 'l2q4', promptEn: 'Where does Carla plan to work?', promptEs: '¿Dónde planea trabajar Carla?', answer: 'In a hospital' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Quiero aprender inglés."', answer: 'I want to learn English.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Me gusta bailar."', answer: 'I like dancing. / I like to dance.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "I have to work."', answer: 'Tengo que trabajar.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "Dejé de fumar."', answer: 'I stopped smoking.' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'I need to go to the store.', answer: 'I need to go to the store.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'She enjoys reading at night.', answer: 'She enjoys reading at night.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'We hope to travel next year.', answer: 'We hope to travel next year.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Complete: "I enjoy ___ (swim)."', promptEs: 'Completa: "I enjoy ___ (swim)."', answer: 'swimming' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What do you like doing on the weekend?', promptEs: '¿Qué te gusta hacer el fin de semana?', answer: 'I like ___-ing. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What do you want to do this year?', promptEs: '¿Qué quieres hacer este año?', answer: 'I want to ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

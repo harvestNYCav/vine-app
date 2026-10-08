@@ -211,6 +211,66 @@ const module: Module = {
     { id: 'w4', promptEn: 'It is very cold in ____.', promptEs: 'Hace mucho frío en invierno. (It is very cold in ____.)', answer: 'winter' },
     { id: 'w5', promptEn: 'What is the ____ today?', promptEs: '¿Cuál es la fecha de hoy? (What is the ____ today?)', answer: 'date' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'It is ____ past four. (4:30)', promptEs: 'Son las cuatro y media. (It is ____ past four.)', answer: 'half' },
+    { id: 'cw2', promptEn: 'I eat breakfast ____ the morning.', promptEs: 'Desayuno en la mañana. (I eat breakfast ____ the morning.)', answer: 'in' },
+    { id: 'cw3', promptEn: 'What ____ is it today? (día)', promptEs: '¿Qué día es hoy? (What ____ is it today?)', answer: 'day' },
+    { id: 'cw4', promptEn: 'My ____ is in May. (cumpleaños)', promptEs: 'Mi cumpleaños es en mayo. (My ____ is in May.)', answer: 'birthday' },
+    { id: 'cw5', promptEn: 'The flowers grow in ____.', promptEs: 'Las flores crecen en primavera. (... in ____.)', answer: 'spring' },
+    { id: 'cw6', promptEn: 'It is very hot in ____.', promptEs: 'Hace mucho calor en verano. (... in ____.)', answer: 'summer' },
+    { id: 'cw7', promptEn: 'December is the last ____ of the year.', promptEs: 'Diciembre es el último mes del año. (... the last ____ ...)', answer: 'month' },
+    { id: 'cw8', promptEn: 'I work Monday ____ Friday.', promptEs: 'Trabajo de lunes a viernes. (Monday ____ Friday.)', answer: 'through' },
+  ],
+  listening: [
+    {
+      titleEn: 'Making an Appointment',
+      titleEs: 'Haciendo una cita',
+      script: [
+        { speaker: 'Receptionist', en: 'Good afternoon, Smile Dental. How can I help you?' },
+        { speaker: 'Mr. Torres', en: 'I need an appointment, please.' },
+        { speaker: 'Receptionist', en: 'Can you come on Tuesday, March 12th?' },
+        { speaker: 'Mr. Torres', en: 'Yes. What time?' },
+        { speaker: 'Receptionist', en: 'At half past three in the afternoon.' },
+        { speaker: 'Mr. Torres', en: '3:30 on Tuesday. Perfect. Thank you!' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What kind of office is it?', promptEs: '¿Qué tipo de oficina es?', answer: 'A dentist (dental office)' },
+        { id: 'l1q2', promptEn: 'What day is the appointment?', promptEs: '¿Qué día es la cita?', answer: 'Tuesday' },
+        { id: 'l1q3', promptEn: 'What is the date?', promptEs: '¿Cuál es la fecha?', answer: 'March 12th' },
+        { id: 'l1q4', promptEn: 'What time is the appointment?', promptEs: '¿A qué hora es la cita?', answer: '3:30 (half past three) in the afternoon' },
+      ],
+    },
+    {
+      titleEn: 'Favorite Seasons',
+      titleEs: 'Estaciones favoritas',
+      script: [
+        { speaker: 'Diana', en: 'What is your favorite season, Felipe?' },
+        { speaker: 'Felipe', en: 'I like summer. It\'s hot outside and I go to the beach.' },
+        { speaker: 'Diana', en: 'I prefer fall. The leaves are beautiful in October.' },
+        { speaker: 'Felipe', en: 'When is your birthday?' },
+        { speaker: 'Diana', en: 'In October too! October 20th.' },
+        { speaker: 'Felipe', en: 'My birthday is in winter, in January. It\'s very cold!' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What is Felipe\'s favorite season?', promptEs: '¿Cuál es la estación favorita de Felipe?', answer: 'Summer' },
+        { id: 'l2q2', promptEn: 'What season does Diana prefer?', promptEs: '¿Qué estación prefiere Diana?', answer: 'Fall' },
+        { id: 'l2q3', promptEn: 'When is Diana\'s birthday?', promptEs: '¿Cuándo es el cumpleaños de Diana?', answer: 'October 20th' },
+        { id: 'l2q4', promptEn: 'In which month is Felipe\'s birthday?', promptEs: '¿En qué mes es el cumpleaños de Felipe?', answer: 'January' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Son las dos en punto."', answer: "It's two o'clock." },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "el fin de semana"', answer: 'the weekend' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "It\'s cold outside."', answer: 'Hace frío afuera.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "invierno"', answer: 'winter' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'It is half past seven.', answer: 'It is half past seven.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Today is Saturday.', answer: 'Today is Saturday.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'My birthday is in June.', answer: 'My birthday is in June.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'What time is it now?', promptEs: '¿Qué hora es ahora?', answer: 'It is ___. (Check the clock.)' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What is the date today?', promptEs: '¿Cuál es la fecha de hoy?', answer: 'Today is ___. (Check the date.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'When is your birthday?', promptEs: '¿Cuándo es tu cumpleaños?', answer: 'My birthday is ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

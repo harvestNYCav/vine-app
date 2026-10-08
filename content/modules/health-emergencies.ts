@@ -206,6 +206,68 @@ const module: Module = {
     { id: 'w4', promptEn: 'Call ____!', promptEs: '¡Llame al 911! (Call ____!)', answer: '911' },
     { id: 'w5', promptEn: 'I need to see a ____.', promptEs: 'Necesito ver a un doctor. (I need to see a ____.)', answer: 'doctor' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'Take him to the ____. He is very sick.', promptEs: 'Llévalo al hospital. (Take him to the ____.)', answer: 'hospital' },
+    { id: 'cw2', promptEn: 'Call an ____! She can\'t walk.', promptEs: '¡Llama una ambulancia! (Call an ____!)', answer: 'ambulance' },
+    { id: 'cw3', promptEn: 'I need to buy ____ for my cough.', promptEs: 'Necesito comprar medicina para mi tos. (I need to buy ____ ...)', answer: 'medicine' },
+    { id: 'cw4', promptEn: 'You can buy pills at the ____.', promptEs: 'Puedes comprar pastillas en la farmacia. (... at the ____.)', answer: 'pharmacy' },
+    { id: 'cw5', promptEn: 'Do you have health ____?', promptEs: '¿Tiene seguro médico? (Do you have health ____?)', answer: 'insurance' },
+    { id: 'cw6', promptEn: 'My back ____. (duele)', promptEs: 'Me duele la espalda. (My back ____.)', answer: 'hurts' },
+    { id: 'cw7', promptEn: 'I have ____ in my chest. (dolor)', promptEs: 'Tengo dolor en el pecho. (I have ____ in my chest.)', answer: 'pain' },
+    { id: 'cw8', promptEn: 'Are you ____? (bien)', promptEs: '¿Estás bien? (Are you ____?)', answer: 'okay' },
+  ],
+  listening: [
+    {
+      titleEn: 'At the Doctor',
+      titleEs: 'Con el doctor',
+      script: [
+        { speaker: 'Doctor', en: 'Hello. What is the problem today?' },
+        { speaker: 'Patient', en: 'I feel sick. I have a fever and my throat hurts.' },
+        { speaker: 'Doctor', en: 'When did it start?' },
+        { speaker: 'Patient', en: 'Two days ago.' },
+        { speaker: 'Doctor', en: 'Take this medicine two times a day. Drink a lot of water.' },
+        { speaker: 'Patient', en: 'Can I go to work?' },
+        { speaker: 'Doctor', en: 'No. Stay home and rest for three days.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What are the patient\'s symptoms?', promptEs: '¿Cuáles son los síntomas del paciente?', answer: 'A fever and a sore throat' },
+        { id: 'l1q2', promptEn: 'When did it start?', promptEs: '¿Cuándo empezó?', answer: 'Two days ago' },
+        { id: 'l1q3', promptEn: 'How often should the patient take the medicine?', promptEs: '¿Cada cuánto debe tomar la medicina?', answer: 'Two times a day' },
+        { id: 'l1q4', promptEn: 'How many days should the patient stay home?', promptEs: '¿Cuántos días debe quedarse en casa?', answer: 'Three' },
+      ],
+    },
+    {
+      titleEn: 'Calling 911',
+      titleEs: 'Llamando al 911',
+      script: [
+        { speaker: 'Operator', en: '911. What is your emergency?' },
+        { speaker: 'Caller', en: 'Help! My neighbor fell down. He can\'t get up.' },
+        { speaker: 'Operator', en: 'What is the address?' },
+        { speaker: 'Caller', en: '340 West 50th Street, apartment 2C.' },
+        { speaker: 'Operator', en: 'Is he breathing?' },
+        { speaker: 'Caller', en: 'Yes, but his leg hurts a lot.' },
+        { speaker: 'Operator', en: 'An ambulance is coming. Stay with him.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What happened to the neighbor?', promptEs: '¿Qué le pasó al vecino?', answer: 'He fell down (and can\'t get up).' },
+        { id: 'l2q2', promptEn: 'What is the apartment number?', promptEs: '¿Cuál es el número del apartamento?', answer: '2C' },
+        { id: 'l2q3', promptEn: 'What hurts?', promptEs: '¿Qué le duele?', answer: 'His leg' },
+        { id: 'l2q4', promptEn: 'What is coming?', promptEs: '¿Qué viene?', answer: 'An ambulance' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Me siento enfermo."', answer: 'I feel sick.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Tengo fiebre."', answer: 'I have a fever.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "My head hurts."', answer: 'Me duele la cabeza.' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "¡Llama al 911!"', answer: 'Call 911!' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'I need to see a doctor.', answer: 'I need to see a doctor.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Where is the emergency room?', answer: 'Where is the emergency room?' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'My stomach hurts.', answer: 'My stomach hurts.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Where do you buy medicine?', promptEs: '¿Dónde compras medicina?', answer: 'At the pharmacy' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Your friend falls down. What do you ask?', promptEs: 'Tu amigo se cae. ¿Qué le preguntas?', answer: 'Are you okay?' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'Tell the doctor one symptom.', promptEs: 'Dile al doctor un síntoma.', answer: 'I have a ___. / My ___ hurts. (Answers will vary.)' },
+  ],
 }
 
 export default module

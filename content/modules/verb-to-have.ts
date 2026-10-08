@@ -214,6 +214,67 @@ const module: Module = {
     { id: 'w4', promptEn: 'I ____ an appointment today.', promptEs: 'Tengo una cita hoy. (I ____ an appointment today.)', answer: 'have' },
     { id: 'w5', promptEn: "I don't ____ any money.", promptEs: 'No tengo dinero. (I don\'t ____ any money.)', answer: 'have' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'He ____ a new job.', promptEs: 'Él tiene un trabajo nuevo. (He ____ a new job.)', answer: 'has' },
+    { id: 'cw2', promptEn: 'We ____ a small apartment.', promptEs: 'Tenemos un apartamento pequeño. (We ____ a small apartment.)', answer: 'have' },
+    { id: 'cw3', promptEn: '____ she have a car?', promptEs: '¿Ella tiene carro? (____ she have a car?)', answer: 'Does' },
+    { id: 'cw4', promptEn: 'They ____ three kids.', promptEs: 'Ellos tienen tres hijos. (They ____ three kids.)', answer: 'have' },
+    { id: 'cw5', promptEn: 'I don\'t ____ time today.', promptEs: 'No tengo tiempo hoy. (I don\'t ____ time today.)', answer: 'have' },
+    { id: 'cw6', promptEn: 'She ____ have a phone. (negative)', promptEs: 'Ella no tiene teléfono. (She ____ have a phone.)', answer: "doesn't" },
+    { id: 'cw7', promptEn: 'I have a ____. Can I ask you? (pregunta)', promptEs: 'Tengo una pregunta. (I have a ____.)', answer: 'question' },
+    { id: 'cw8', promptEn: 'I have an ____ at 3 p.m. (cita)', promptEs: 'Tengo una cita a las 3 p.m. (I have an ____ at 3 p.m.)', answer: 'appointment' },
+  ],
+  listening: [
+    {
+      titleEn: 'At the Clinic',
+      titleEs: 'En la clínica',
+      script: [
+        { speaker: 'Receptionist', en: 'Good morning. Do you have an appointment?' },
+        { speaker: 'Mrs. Ruiz', en: 'Yes, I have an appointment at 10.' },
+        { speaker: 'Receptionist', en: 'Do you have your insurance card?' },
+        { speaker: 'Mrs. Ruiz', en: 'Yes, here it is. My son has an appointment too.' },
+        { speaker: 'Receptionist', en: 'What is the problem?' },
+        { speaker: 'Mrs. Ruiz', en: 'I have a headache. He has a cough.' },
+        { speaker: 'Receptionist', en: 'Okay. Please have a seat.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What time is the appointment?', promptEs: '¿A qué hora es la cita?', answer: 'At 10' },
+        { id: 'l1q2', promptEn: 'What card does she have?', promptEs: '¿Qué tarjeta tiene ella?', answer: 'Her insurance card' },
+        { id: 'l1q3', promptEn: 'What problem does Mrs. Ruiz have?', promptEs: '¿Qué problema tiene la Sra. Ruiz?', answer: 'A headache' },
+        { id: 'l1q4', promptEn: 'What does her son have?', promptEs: '¿Qué tiene su hijo?', answer: 'A cough' },
+      ],
+    },
+    {
+      titleEn: 'A Big Family',
+      titleEs: 'Una familia grande',
+      script: [
+        { speaker: 'Jin', en: 'Do you have children, Marisol?' },
+        { speaker: 'Marisol', en: 'Yes, I have four children. Two boys and two girls.' },
+        { speaker: 'Jin', en: 'Wow! Do you have a big house?' },
+        { speaker: 'Marisol', en: 'No, we don\'t. We have a small apartment.' },
+        { speaker: 'Jin', en: 'Does your husband have a job?' },
+        { speaker: 'Marisol', en: 'Yes, he has a job in construction.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'How many children does Marisol have?', promptEs: '¿Cuántos hijos tiene Marisol?', answer: 'Four' },
+        { id: 'l2q2', promptEn: 'How many girls does she have?', promptEs: '¿Cuántas niñas tiene?', answer: 'Two' },
+        { id: 'l2q3', promptEn: 'Do they have a big house?', promptEs: '¿Tienen una casa grande?', answer: 'No. They have a small apartment.' },
+        { id: 'l2q4', promptEn: 'Where does her husband work?', promptEs: '¿Dónde trabaja su esposo?', answer: 'In construction' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Tengo dos hijos."', answer: 'I have two children.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Ella tiene dolor de cabeza."', answer: 'She has a headache.' },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Do you have a pen?"', answer: '¿Tienes un bolígrafo / una pluma?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "No tengo dinero."', answer: "I don't have any money." },
+    { id: 'iq5', kind: 'dictation', promptEn: 'He has a new car.', answer: 'He has a new car.' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'Do you have a question?', answer: 'Do you have a question?' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'We have an appointment today.', answer: 'We have an appointment today.' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'Write "have" or "has": My sister ___ a dog.', promptEs: 'Escribe "have" o "has": My sister ___ a dog.', answer: 'has' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'Do you have children?', promptEs: '¿Tienes hijos?', answer: 'Yes, I have ___. / No, I don\'t. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What do you have in your bag?', promptEs: '¿Qué tienes en tu bolsa?', answer: 'I have ___. (Answers will vary.)' },
+  ],
 }
 
 export default module

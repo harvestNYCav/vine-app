@@ -199,6 +199,68 @@ const module: Module = {
     { id: 'w4', promptEn: 'I am ____.', promptEs: 'Estoy perdido. (I am ____.)', answer: 'lost' },
     { id: 'w5', promptEn: 'Can I use your ____?', promptEs: '¿Puedo usar tu teléfono? (Can I use your ____?)', answer: 'phone' },
   ],
+  classWorksheet: [
+    { id: 'cw1', promptEn: 'What is your ____? (dirección)', promptEs: '¿Cuál es tu dirección? (What is your ____?)', answer: 'address' },
+    { id: 'cw2', promptEn: 'Can I see your ____, please? (identificación)', promptEs: '¿Puedo ver su identificación? (Can I see your ____?)', answer: 'ID' },
+    { id: 'cw3', promptEn: 'What is the wifi ____?', promptEs: '¿Cuál es la contraseña del wifi? (What is the wifi ____?)', answer: 'password' },
+    { id: 'cw4', promptEn: 'I lost my ____. My money is in it.', promptEs: 'Perdí mi cartera. (I lost my ____.)', answer: 'wallet' },
+    { id: 'cw5', promptEn: 'I can\'t open the door. I don\'t have my ____.', promptEs: 'No tengo mi llave. (I don\'t have my ____.)', answer: 'key' },
+    { id: 'cw6', promptEn: 'Check the ____ for letters.', promptEs: 'Revisa el buzón. (Check the ____ for letters.)', answer: 'mailbox' },
+    { id: 'cw7', promptEn: '____ me, where is the restroom?', promptEs: 'Disculpe, ¿dónde está el baño? (____ me...)', answer: 'Excuse' },
+    { id: 'cw8', promptEn: 'This is an ____! Call 911!', promptEs: '¡Es una emergencia! (This is an ____!)', answer: 'emergency' },
+  ],
+  listening: [
+    {
+      titleEn: 'Filling Out a Form',
+      titleEs: 'Llenando un formulario',
+      script: [
+        { speaker: 'Clerk', en: 'What is your name, please?' },
+        { speaker: 'Mr. Díaz', en: 'Rafael Díaz.' },
+        { speaker: 'Clerk', en: 'What is your address?' },
+        { speaker: 'Mr. Díaz', en: '125 Grand Street, Brooklyn.' },
+        { speaker: 'Clerk', en: 'And your phone number?' },
+        { speaker: 'Mr. Díaz', en: '718-555-0142.' },
+        { speaker: 'Clerk', en: 'Can I see your ID?' },
+        { speaker: 'Mr. Díaz', en: 'Yes, here it is.' },
+      ],
+      questions: [
+        { id: 'l1q1', promptEn: 'What is the man\'s first name?', promptEs: '¿Cuál es el nombre del hombre?', answer: 'Rafael' },
+        { id: 'l1q2', promptEn: 'What is his street?', promptEs: '¿Cuál es su calle?', answer: 'Grand Street' },
+        { id: 'l1q3', promptEn: 'Write his phone number.', promptEs: 'Escribe su número de teléfono.', answer: '718-555-0142' },
+        { id: 'l1q4', promptEn: 'What does the clerk want to see?', promptEs: '¿Qué quiere ver el empleado?', answer: 'His ID' },
+      ],
+    },
+    {
+      titleEn: 'I\'m Lost',
+      titleEs: 'Estoy perdida',
+      script: [
+        { speaker: 'Sara', en: 'Excuse me. I need help. I\'m lost.' },
+        { speaker: 'Man', en: 'Where do you want to go?' },
+        { speaker: 'Sara', en: 'To the library. My phone has no battery.' },
+        { speaker: 'Man', en: 'The library is two blocks from here.' },
+        { speaker: 'Sara', en: 'Thank you. Can I use your phone? I need to call my son.' },
+        { speaker: 'Man', en: 'Sure, here you go.' },
+      ],
+      questions: [
+        { id: 'l2q1', promptEn: 'What is Sara\'s problem?', promptEs: '¿Cuál es el problema de Sara?', answer: 'She is lost.' },
+        { id: 'l2q2', promptEn: 'Where does Sara want to go?', promptEs: '¿A dónde quiere ir Sara?', answer: 'To the library' },
+        { id: 'l2q3', promptEn: 'Why can\'t Sara use her phone?', promptEs: '¿Por qué Sara no puede usar su teléfono?', answer: 'It has no battery.' },
+        { id: 'l2q4', promptEn: 'Who does Sara want to call?', promptEs: '¿A quién quiere llamar Sara?', answer: 'Her son' },
+      ],
+    },
+  ],
+  inPersonQuiz: [
+    { id: 'iq1', kind: 'translate', promptEn: 'Write in English: "Necesito ayuda."', answer: 'I need help.' },
+    { id: 'iq2', kind: 'translate', promptEn: 'Write in English: "Estoy perdido."', answer: "I'm lost." },
+    { id: 'iq3', kind: 'translate', promptEn: 'Write in Spanish: "Where is the bathroom?"', answer: '¿Dónde está el baño?' },
+    { id: 'iq4', kind: 'translate', promptEn: 'Write in English: "¿Puedo usar su teléfono?"', answer: 'Can I use your phone?' },
+    { id: 'iq5', kind: 'dictation', promptEn: 'What is your phone number?', answer: 'What is your phone number?' },
+    { id: 'iq6', kind: 'dictation', promptEn: 'I lost my keys.', answer: 'I lost my keys.' },
+    { id: 'iq7', kind: 'dictation', promptEn: 'What is the wifi password?', answer: 'What is the wifi password?' },
+    { id: 'iq8', kind: 'short-answer', promptEn: 'What number do you call in an emergency?', promptEs: '¿Qué número llamas en una emergencia?', answer: '911' },
+    { id: 'iq9', kind: 'short-answer', promptEn: 'What is your address?', promptEs: '¿Cuál es tu dirección?', answer: 'My address is ___. (Answers will vary.)' },
+    { id: 'iq10', kind: 'short-answer', promptEn: 'What is your phone number?', promptEs: '¿Cuál es tu número de teléfono?', answer: 'My phone number is ___. (Answers will vary.)' },
+  ],
 }
 
 export default module
