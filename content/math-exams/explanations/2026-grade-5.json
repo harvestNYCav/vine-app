@@ -94,7 +94,7 @@
       }
     },
     "nysed-2026-g5-mc-q11": {
-      "inputHash": "de3abe3bcdc567a0cf3a7df1fc84eb3f3fe134a60f73e4a22b5e3632c1edac2d",
+      "inputHash": "7aac2053d128545c84e769c166417f76525bfd93c2fc5897950c7e5a70432066",
       "explanation": {
         "text": {
           "en": "Rewrite 1/4 as 2/8 so the fractions have a common denominator. Then 7 3/8 − 5 2/8 = 2 1/8 yards remain.",
@@ -117,8 +117,8 @@
       "inputHash": "475f91c34876dd3cb08354b48a1f35e48a8d2c94f6ca08c0ef4782da7482d74c",
       "explanation": {
         "text": {
-          "en": "Compare the eight table entries with the six marks already plotted. A second mark is missing at 3/4 and at 1 2/4, giving choice D.",
-          "es": "Se comparan los ocho datos con las seis marcas ya trazadas. Falta una segunda marca en 3/4 y en 1 2/4, lo que da la opción D."
+          "en": "The table lists 3/4 twice, but the plot has only one X at 3/4, and the table value 1 2/4 has no X yet. The student must add 3/4 and 1 2/4, choice D.",
+          "es": "La tabla tiene 3/4 dos veces, pero el diagrama tiene solo una X en 3/4, y el valor 1 2/4 todavía no tiene X. El alumno debe agregar 3/4 y 1 2/4, la opción D."
         },
         "source": "vine-authored"
       }
@@ -234,7 +234,7 @@
       }
     },
     "nysed-2026-g5-mc-q28": {
-      "inputHash": "ae5968a9f71b4de9f418e9f31b375f69c1432c90b3fe145dd3eb44f2ba349c1e",
+      "inputHash": "c5ac498f00e78a8d92c415e4c9f76d060e11e2b495016442f888db2341246e73",
       "explanation": {
         "text": {
           "en": "Convert every amount to cups: 4 pints = 8 cups, 8 fluid ounces = 1 cup, and 16 fluid ounces = 2 cups. Then 3 + 8 + 1 + 2 = 14 cups.",

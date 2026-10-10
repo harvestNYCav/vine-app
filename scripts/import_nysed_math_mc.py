@@ -1726,6 +1726,331 @@ _VERIFIED_MODERN_CROP_REPAIRS: dict[
     tuple[int, int, str, int],
     dict[str, Any],
 ] = {
+    # Remaining source-verified October 2026 crop findings.
+    (2016, 6, 'en', 42): {
+        "sourcePdfSha256": 'f58e644f4ba3e7614bf40ab5f3c527f66cd9e66986be53afa14d0ad8b0ac66c8',
+        "sourcePage": 25,
+        "oldBox": (28.0, 49.95, 584.0, 594.8),
+        "newBox": (28.0, 49.95, 584.0, 640.0),
+    },
+    (2024, 7, 'en', 5): {
+        "sourcePdfSha256": '408c3e67ad9928d081858bbf0c37a5875a1bde243ddcd6be38c9ddb8a9684737',
+        "sourcePage": 8,
+        "oldBox": (28.0, 548.55, 584.0, 702.372),
+        "newBox": (28.0, 548.55, 584.0, 710.0),
+        "footerMask": (498.0, 705.0),
+    },
+    (2024, 7, 'es', 5): {
+        "sourcePdfSha256": '7d5913318ceb35bb77e90cdf5cbcf7e9c74b7eb1e5cfcb2629edf16396905976',
+        "sourcePage": 8,
+        "oldBox": (28.0, 555.528, 584.0, 702.372),
+        "newBox": (28.0, 555.528, 584.0, 710.0),
+        "footerMask": (517.0, 705.0),
+    },
+    # Remaining source-verified October 2026 crop findings.
+    (2014, 4, 'en', 49): {
+        "sourcePdfSha256": '3b255d702cdddbefbf4dc812a748596a8d10f46ec4dc68e1831f079d187c488a',
+        "sourcePage": 42,
+        "oldBox": (30.0, 72.711, 573.0, 645.2),
+        "newBox": (30.0, 72.711, 573.0, 674),
+    },
+    (2015, 3, 'en', 10): {
+        "sourcePdfSha256": 'c9e2d250ca7205ea5979ea9c74c2186c874bce103ac63499289ae1530e4d4af9',
+        "sourcePage": 14,
+        "oldBox": (30.0, 76.913, 573.0, 590.0),
+        "newBox": (30.0, 76.913, 573.0, 619),
+    },
+    (2015, 4, 'en', 11): {
+        "sourcePdfSha256": 'e0a32e4c5853c779935e4c4930773a1c88564692030624b12371ef121e6f8a5e',
+        "sourcePage": 13,
+        "oldBox": (30.0, 412.453, 573.0, 662.6),
+        "newBox": (30.0, 412.453, 573.0, 692),
+    },
+    (2015, 6, 'en', 3): {
+        "sourcePdfSha256": '7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6',
+        "sourcePage": 7,
+        "oldBox": (30.0, 77.94, 573.0, 645.8),
+        "newBox": (30.0, 77.94, 573.0, 675),
+    },
+    (2015, 7, 'en', 21): {
+        "sourcePdfSha256": 'b0aa156031c76884c8a381ea69a0c6ff00e0bed04f67a387c1c8541e657f9a8a',
+        "sourcePage": 19,
+        "oldBox": (30.0, 76.913, 573.0, 308.05),
+        "newBox": (30.0, 66.0, 573.0, 308.05),
+    },
+    (2017, 3, 'es', 24): {
+        "sourcePdfSha256": 'b27aabaf4965eac58d1d7cbbf2d204bed1460c58744673493aca2a1753d1292a',
+        "sourcePage": 19,
+        "oldBox": (28.0, 436.95, 584.0, 698.6),
+        "newBox": (28.0, 436.95, 584.0, 724.0),
+        "footerMask": (516, 706),
+    },
+    (2017, 4, 'es', 32): {
+        "sourcePdfSha256": '90d349564682731a1543a298b1141bcf919edb1494800eef8a25e5f0ae629f2d',
+        "sourcePage": 25,
+        "oldBox": (28.0, 507.15, 584.0, 701.372),
+        "newBox": (28.0, 507.15, 584.0, 724.0),
+        "footerMask": (518.4893999999999, 706.3725),
+    },
+    (2017, 6, 'en', 17): {
+        "sourcePdfSha256": '2f9ecf29734cbdf46d40da58126ca0d98329c5b72582ec023481b6eddeb0086f',
+        "sourcePage": 15,
+        "oldBox": (28.0, 263.25, 584.0, 698.6),
+        "newBox": (28.0, 263.25, 584.0, 724.0),
+        "footerMask": (495, 706),
+    },
+    (2017, 6, 'es', 17): {
+        "sourcePdfSha256": '8c464ae6cc63b4edbae96ba3649900b09f30b6bca5481db8c1e50afa50b1b0c8',
+        "sourcePage": 15,
+        "oldBox": (28.0, 263.7, 584.0, 702.372),
+        "newBox": (28.0, 263.7, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2017, 7, 'en', 33): {
+        "sourcePdfSha256": '943edf43943948bc58023351f96f57dff7a9b8575684ffa3a953fd9ce1d80be1',
+        "sourcePage": 24,
+        "oldBox": (28.0, 520.65, 584.0, 704.372),
+        "newBox": (28.0, 520.65, 584.0, 724.0),
+        "footerMask": (495.9559, 709.3725),
+    },
+    (2017, 7, 'es', 33): {
+        "sourcePdfSha256": '49d6b646280839e1d3de8d1bc263c246c912badc6e0f1e32290a163ba1bfc6b1',
+        "sourcePage": 24,
+        "oldBox": (28.0, 520.65, 584.0, 702.372),
+        "newBox": (28.0, 520.65, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2018, 4, 'es', 30): {
+        "sourcePdfSha256": 'a2b3c6122ce85468f2f02c219e588f98e9a2f12f645271519fb142a9f244d069',
+        "sourcePage": 13,
+        "oldBox": (28.0, 520.65, 584.0, 702.372),
+        "newBox": (28.0, 520.65, 584.0, 724.0),
+        "footerMask": (512.32617, 707.3725),
+    },
+    (2018, 6, 'es', 33): {
+        "sourcePdfSha256": '33aeb8376606e7686673757592713a9c393c90ec3550b23130cee52431144619',
+        "sourcePage": 24,
+        "oldBox": (28.0, 505.8, 584.0, 702.372),
+        "newBox": (28.0, 505.8, 584.0, 724.0),
+        "footerMask": (517.66107, 707.3725),
+    },
+    (2019, 3, 'en', 3): {
+        "sourcePdfSha256": '09901750f1c47789dd9a5159b286544069cfa40ff41184666a5f7885e5e17d89',
+        "sourcePage": 7,
+        "oldBox": (28.0, 555.528, 584.0, 702.372),
+        "newBox": (28.0, 555.528, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2019, 3, 'es', 3): {
+        "sourcePdfSha256": '49484c615685c6b448660447be533d39f0b24b1d563823998ebf5c58df32d911',
+        "sourcePage": 7,
+        "oldBox": (28.0, 551.7, 584.0, 698.6),
+        "newBox": (28.0, 551.7, 584.0, 724.0),
+        "footerMask": (516, 706),
+    },
+    (2019, 4, 'en', 3): {
+        "sourcePdfSha256": '80a83f977768ed7cbb38a10aaa8d381308e4cdd086351dc78054b0c5a7c581e1',
+        "sourcePage": 7,
+        "oldBox": (28.0, 531.9, 584.0, 698.6),
+        "newBox": (28.0, 531.9, 584.0, 724.0),
+        "footerMask": (495, 706),
+    },
+    (2019, 4, 'es', 3): {
+        "sourcePdfSha256": '53c63c8f1a51da9ab53afc95e708e552de862b1a13b5a8328f47712794f43714',
+        "sourcePage": 7,
+        "oldBox": (28.0, 532.8, 584.0, 698.6),
+        "newBox": (28.0, 532.8, 584.0, 724.0),
+        "footerMask": (516, 706),
+    },
+    (2019, 5, 'en', 36): {
+        "sourcePdfSha256": '0b61754b4f88d2ce15b249d209a16096d5e4e03dd46b40a343cd15b2ac51ce5a',
+        "sourcePage": 22,
+        "oldBox": (28.0, 562.05, 584.0, 702.372),
+        "newBox": (28.0, 562.05, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2021, 3, 'en', 11): {
+        "sourcePdfSha256": 'e30dca3b47fb2b0fdd7a2cf79f8bc6abcfbe2f006c2578c70524e969762c5e06',
+        "sourcePage": 10,
+        "oldBox": (28.0, 504.9, 584.0, 702.372),
+        "newBox": (28.0, 504.9, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2021, 3, 'es', 11): {
+        "sourcePdfSha256": 'cbae596ab28ecbfcb975c9ec295cb05b1e351518877870c2ac28783b00de01e3',
+        "sourcePage": 10,
+        "oldBox": (28.0, 518.4, 584.0, 702.372),
+        "newBox": (28.0, 518.4, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2021, 6, 'en', 9): {
+        "sourcePdfSha256": '4c00227b610379b914e87e91550c846a0d7a2eb08d7153a977a6f80c5304388c',
+        "sourcePage": 12,
+        "oldBox": (28.0, 487.8, 584.0, 702.372),
+        "newBox": (28.0, 487.8, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2021, 8, 'en', 20): {
+        "sourcePdfSha256": '4ab3604545f22d09f11266ff0432c914e7f84301884acf17b0b0e99f95a2fa3f',
+        "sourcePage": 21,
+        "oldBox": (28.0, 535.05, 584.0, 702.372),
+        "newBox": (28.0, 535.05, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2022, 7, 'en', 21): {
+        "sourcePdfSha256": 'c1347a62cfac2ef48c5cd9d323cfe23fce7c6f93dde03b725a04c91b8be5ad51',
+        "sourcePage": 12,
+        "oldBox": (28.0, 536.85, 584.0, 702.372),
+        "newBox": (28.0, 536.85, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2022, 7, 'es', 21): {
+        "sourcePdfSha256": 'd00fb9e2e02a47b544f4da66e4603d6bba073da7e0296c1efdbb01c9b035d8b4',
+        "sourcePage": 12,
+        "oldBox": (28.0, 536.85, 584.0, 702.372),
+        "newBox": (28.0, 536.85, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2022, 8, 'en', 16): {
+        "sourcePdfSha256": '4b30ca7017f9c13d8ee1fd0364879326de3c25635589176da38fe38f7152d140',
+        "sourcePage": 13,
+        "oldBox": (28.0, 495.9, 584.0, 702.372),
+        "newBox": (28.0, 495.9, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2022, 8, 'es', 16): {
+        "sourcePdfSha256": 'b64683538203266e67cf25d273ab32d1d0c8cabaa2d58bf38d347bb285e6e26a',
+        "sourcePage": 13,
+        "oldBox": (28.0, 495.9, 584.0, 702.372),
+        "newBox": (28.0, 495.9, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2023, 4, 'es', 35): {
+        "sourcePdfSha256": '49b739ba18e6398249122a03c4be414df3a81defec17da4aeb18eb7759ab01cf',
+        "sourcePage": 21,
+        "oldBox": (28.0, 563.85, 584.0, 702.372),
+        "newBox": (28.0, 563.85, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2023, 5, 'es', 21): {
+        "sourcePdfSha256": '50324b3e7a06cd9549a7f00c72fcc78e59ec00620ead0f35082f0378d08a0d50',
+        "sourcePage": 13,
+        "oldBox": (28.0, 489.6, 584.0, 702.372),
+        "newBox": (28.0, 489.6, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2023, 8, 'en', 20): {
+        "sourcePdfSha256": '81f80d3561f525988c0e454f8ccde3cba20789d837c050c9af756fc2a388be90',
+        "sourcePage": 12,
+        "oldBox": (28.0, 546.652, 584.0, 702.372),
+        "newBox": (28.0, 546.652, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2024, 3, 'es', 4): {
+        "sourcePdfSha256": 'f206b3d974600d592c8d6ceff417dee48d0c960b6889e7efb1fa006aee90e2c9',
+        "sourcePage": 8,
+        "oldBox": (28.0, 445.877, 584.0, 702.372),
+        "newBox": (28.0, 445.877, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2024, 3, 'es', 13): {
+        "sourcePdfSha256": 'f206b3d974600d592c8d6ceff417dee48d0c960b6889e7efb1fa006aee90e2c9',
+        "sourcePage": 11,
+        "oldBox": (28.0, 525.552, 584.0, 702.372),
+        "newBox": (28.0, 525.552, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2024, 7, 'es', 17): {
+        "sourcePdfSha256": '7d5913318ceb35bb77e90cdf5cbcf7e9c74b7eb1e5cfcb2629edf16396905976',
+        "sourcePage": 12,
+        "oldBox": (28.0, 530.276, 584.0, 702.372),
+        "newBox": (28.0, 530.276, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2024, 8, 'en', 20): {
+        "sourcePdfSha256": '0b169e962dea3eb1e94963c3081070d7d23ee5b90931bfe60aeab8f6e15f958e',
+        "sourcePage": 14,
+        "oldBox": (28.0, 561.56, 584.0, 702.372),
+        "newBox": (28.0, 561.56, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2024, 8, 'es', 12): {
+        "sourcePdfSha256": '351de623a83331401c79114127c415bd872ae98310b526a18367c2cb3fe73af4',
+        "sourcePage": 12,
+        "oldBox": (28.0, 576.677, 584.0, 702.372),
+        "newBox": (28.0, 576.677, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2024, 8, 'es', 20): {
+        "sourcePdfSha256": '351de623a83331401c79114127c415bd872ae98310b526a18367c2cb3fe73af4',
+        "sourcePage": 14,
+        "oldBox": (28.0, 555.677, 584.0, 702.372),
+        "newBox": (28.0, 555.677, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2025, 4, 'en', 22): {
+        "sourcePdfSha256": 'ba607cb0ef15adce0f99dc188691cf2a14d2aa38d047e3dd25f0e1d3f6e72668',
+        "sourcePage": 11,
+        "oldBox": (28.0, 555.528, 584.0, 702.372),
+        "newBox": (28.0, 555.528, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2025, 4, 'es', 22): {
+        "sourcePdfSha256": '52318e7ff15d7b443c277693fff65188c022fa35724707211553a5983303932b',
+        "sourcePage": 11,
+        "oldBox": (28.0, 555.528, 584.0, 702.372),
+        "newBox": (28.0, 555.528, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2026, 3, 'es', 6): {
+        "sourcePdfSha256": '0336e99b509d1f0340f314d522d21afca3e815f77b6676a4f0ebcbbb646b2f49',
+        "sourcePage": 6,
+        "oldBox": (28.0, 466.276, 584.0, 702.372),
+        "newBox": (28.0, 466.276, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2026, 4, 'es', 16): {
+        "sourcePdfSha256": '4ea059353db688b8ed51322657677c55f7f873ca09eb51330d94e52591f199f6',
+        "sourcePage": 11,
+        "oldBox": (28.0, 499.152, 584.0, 702.372),
+        "newBox": (28.0, 499.152, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2026, 4, 'es', 20): {
+        "sourcePdfSha256": '4ea059353db688b8ed51322657677c55f7f873ca09eb51330d94e52591f199f6',
+        "sourcePage": 13,
+        "oldBox": (28.0, 366.652, 584.0, 702.372),
+        "newBox": (28.0, 366.652, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2026, 5, 'en', 11): {
+        "sourcePdfSha256": 'eccb44ac1dd35dac28ba3d6cc47297794e3b44a2435b858506bf497d7db84c2b',
+        "sourcePage": 8,
+        "oldBox": (28.0, 486.9, 584.0, 702.372),
+        "newBox": (28.0, 486.9, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2026, 5, 'en', 28): {
+        "sourcePdfSha256": 'eccb44ac1dd35dac28ba3d6cc47297794e3b44a2435b858506bf497d7db84c2b',
+        "sourcePage": 15,
+        "oldBox": (28.0, 459.45, 584.0, 702.372),
+        "newBox": (28.0, 459.45, 584.0, 724.0),
+        "footerMask": (498.7822, 707.3725),
+    },
+    (2026, 5, 'es', 11): {
+        "sourcePdfSha256": 'a5556321582dc1fc0baa2571ce2b28744804ad39ed9c42875d0d42697b403f18',
+        "sourcePage": 8,
+        "oldBox": (28.0, 493.877, 584.0, 702.372),
+        "newBox": (28.0, 493.877, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
+    (2026, 8, 'es', 10): {
+        "sourcePdfSha256": 'a474080c09c5dc7d150231400a3c587f00b3d18800f8b3c0e40a6acba424d33b',
+        "sourcePage": 11,
+        "oldBox": (28.0, 57.776, 584.0, 702.372),
+        "newBox": (28.0, 57.776, 584.0, 724.0),
+        "footerMask": (517.6611, 707.3725),
+    },
     # October 2026: full source pages confirm these previously clipped choices.
     (2019, 4, 'en', 37): {
         "sourcePdfSha256": '80a83f977768ed7cbb38a10aaa8d381308e4cdd086351dc78054b0c5a7c581e1',
@@ -1952,6 +2277,11 @@ _VERIFIED_MODERN_CROP_REPAIRS: dict[
 # matching official English release. Coordinates remain in source-page points
 # and are validated against the exact crop before rendering.
 _VERIFIED_TEXT_OVERLAY_REPAIRS: dict[tuple[str, int], dict[str, Any]] = {
+    # October review: source-verified missing operators, diagrams, and labels.
+    ('642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d', 15): {'policyId': '2017-g5-es-q15-source-figure-v1', 'sourcePage': 14, 'box': (28.0, 257.85, 584.0, 702.372), 'fontSize': 20, 'clearRects': (), 'texts': (('+', 355, 341, 'mm'),)},
+    ('642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d', 17): {'policyId': '2017-g5-es-q17-source-figure-v1', 'sourcePage': 15, 'box': (28.0, 245.7, 584.0, 702.372), 'fontSize': 11, 'clearRects': (), 'texts': (), 'lines': ((174, 325.574593, 286.7337, 325.574593), (174, 325.574593, 174, 387.713593), (174, 387.713593, 286.7337, 387.713593), (286.7337, 325.574593, 286.7337, 387.713593), (174, 325.574593, 197, 306.574593), (197, 306.574593, 309.7337, 306.574593), (286.7337, 325.574593, 309.7337, 306.574593), (309.7337, 306.574593, 309.7337, 368.713593), (286.7337, 387.713593, 309.7337, 368.713593))},
+    ('8c464ae6cc63b4edbae96ba3649900b09f30b6bca5481db8c1e50afa50b1b0c8', 46): {'policyId': '2017-g6-es-q46-source-figure-v1', 'sourcePage': 35, 'box': (28.0, 50.85, 584.0, 702.372), 'fontSize': 10, 'clearRects': (), 'texts': (('5', 193, 275, 'mm'), ('5', 447.7, 275, 'mm'), ('5', 193, 491, 'mm'), ('5', 448.8, 491, 'mm')), 'lines': ((103, 266, 264, 266), (103, 266, 103, 105), (264, 266, 260, 264), (264, 266, 260, 268), (103, 105, 101, 109), (103, 105, 105, 109), (357.7, 266, 518.7, 266), (357.7, 266, 357.7, 105), (518.7, 266, 514.7, 264), (518.7, 266, 514.7, 268), (357.7, 105, 355.7, 109), (357.7, 105, 359.7, 109), (103, 482, 264, 482), (103, 482, 103, 321), (264, 482, 260, 480), (264, 482, 260, 484), (103, 321, 101, 325), (103, 321, 105, 325), (358.8, 482, 519.8, 482), (358.8, 482, 358.8, 321), (519.8, 482, 515.8, 480), (519.8, 482, 515.8, 484), (358.8, 321, 356.8, 325), (358.8, 321, 360.8, 325))},
+    ('da113197f9b860958b80b8859dafc9665a6d94dba9a0f22327c770118605944f', 4): {'policyId': '2017-g8-en-q4-source-figure-v1', 'sourcePage': 12, 'box': (28.0, 50.85, 584.0, 702.372), 'fontSize': 11, 'clearRects': ((216, 132, 313, 189), (316, 132, 412, 189)), 'texts': (('Number of', 264, 145, 'mm'), ('Months', 264, 159, 'mm'), ('(t)', 264, 175, 'mm'), ('Total Amount', 364, 145, 'mm'), ('Deposited', 364, 159, 'mm'), ('(a)', 364, 175, 'mm'))},
     (
         "8c8c706ee38a63b81ba4ae0c8a3234d65c00f43e8fe68fb0d8f533caa1ecc187",
         32,
@@ -2154,6 +2484,12 @@ def verified_text_overlay_repairs(
                 or anchor not in {"lt", "mm"}
             ):
                 raise ImportFailure(f"Verified text-overlay text is invalid for q{number}")
+        for line in record.get("lines", ()):
+            if len(line) != 4 or not all(
+                box[0] <= x <= box[2] and box[1] <= y <= box[3]
+                for x, y in ((line[0], line[1]), (line[2], line[3]))
+            ):
+                raise ImportFailure(f"Verified diagram-overlay line is invalid for q{number}")
         selected[number] = record
     return selected
 
@@ -2192,6 +2528,10 @@ def apply_verified_text_overlay(
             font=font,
             anchor=anchor,
         )
+    for x0, y0, x1, y1 in record.get("lines", ()):
+        draw.line((round((x0 - box[0]) * x_scale), round((y0 - box[1]) * y_scale),
+                   round((x1 - box[0]) * x_scale), round((y1 - box[1]) * y_scale)),
+                  fill=(20, 20, 20), width=max(1, round(y_scale * 0.8)))
     return result
 
 

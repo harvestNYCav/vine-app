@@ -15,15 +15,16 @@
     "nysed-2015-g4-mc-q2": {
       "inputHash": "4e3dac1e309924b5595d11b119b9ba5077a0b72e977c98b268a39af5bc5cf631",
       "description": {
-        "en": "Question 2. Taylor is measuring leaves for an art project. A leaf is shown above a horizontal measurement line whose endpoints align with the leaf’s left and right ends; the line measures 3 1/2 inches. What is the length of this leaf? Choices: A: 3 1/4 inches; B: 3 1/2 inches; C: 4 1/4 inches; D: 4 1/2 inches."
+        "en": "Question 2. Taylor is measuring leaves for an art project. A leaf is shown above a horizontal measurement line whose endpoints align with the leaf’s left and right ends. Use the scale-matched measurement guide below. What is the length of this leaf? Choices: A: 3 1/4 inches; B: 3 1/2 inches; C: 4 1/4 inches; D: 4 1/2 inches."
       },
       "requiredSourceTokens": {
         "en": [
-          "the line measures 3 1/2 inches",
+          "Use the scale-matched measurement guide below",
           "A: 3 1/4 inches",
           "B: 3 1/2 inches",
           "C: 4 1/4 inches",
-          "D: 4 1/2 inches"
+          "D: 4 1/2 inches",
+          "Question 2. Taylor is measuring leaves for an art project. A leaf is shown above a horizontal measurement line whose endpoints align with the leaf’s left and right ends. Use the scale-matched measurement guide below. What is the length of this leaf? Choices: A: 3 1/4 inches; B: 3 1/2 inches; C: 4 1/4 inches; D: 4 1/2 inches."
         ]
       }
     },
@@ -60,7 +61,7 @@
     "nysed-2015-g4-mc-q8": {
       "inputHash": "d5086cb4193c98822671a658234b192fa6ac9bf40d27240dd516b0a6d0dc6d89",
       "description": {
-        "en": "Question 8. Carolina moved the hand of a spinner 270 degrees. A diagram shows a three-quarter counterclockwise turn from an upward-pointing position to a left-pointing position. What fraction of a complete turn through a circle is 270 degrees? Choices: A: 3/360; B: 27/360; C: 90/360; D: 270/360."
+        "en": "Question 8. Carolina moved the hand of a spinner 270 degrees. A diagram shows a three-quarter clockwise turn from an upward-pointing position to a left-pointing position. What fraction of a complete turn through a circle is 270 degrees? Choices: A: 3/360; B: 27/360; C: 90/360; D: 270/360."
       }
     },
     "nysed-2015-g4-mc-q9": {
@@ -76,7 +77,7 @@
       }
     },
     "nysed-2015-g4-mc-q11": {
-      "inputHash": "8ebe80edae85a46eebc938c2c5835f8fc2a53b261a47eebd3a4baa09c4830e83",
+      "inputHash": "07487e53cd9e91085a300ca3aafd0729d88c7a1aa781eada927db9f46526aa78",
       "description": {
         "en": "Question 11. A fraction strip is divided into 5 equal parts, and the first 3 parts are shaded. Which expression represents the amount of the fraction strip that is shaded? Choices: A: 1/5 + 1/5; B: 1/5 + 1/5 + 1/5; C: 3/5 + 3/5 + 3/5; D: 3/5 + 2/5."
       }

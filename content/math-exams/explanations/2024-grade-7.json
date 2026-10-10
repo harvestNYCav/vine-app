@@ -24,7 +24,7 @@
       }
     },
     "nysed-2024-g7-mc-q5": {
-      "inputHash": "998f967dd736f2e6a655b0af026f30f8ccc4c3caadcb2c7f002c46c05f8bce88",
+      "inputHash": "94a9a5862194ad21a1913b51147593fb37481e445515e957067eca2832a5e896",
       "explanation": {
         "text": {
           "en": "The distance between the temperatures is 32 - (-2) = 34 degrees because subtracting a negative adds its opposite. The difference is 34°C, choice B.",
@@ -94,7 +94,7 @@
       }
     },
     "nysed-2024-g7-mc-q17": {
-      "inputHash": "6f2d18385f9be382b262eb117aa33612f9bac0aeaa27726f3c7bb7afbefdb1dd",
+      "inputHash": "60c913f0da277d10f8e7f6c27c748fc1480a6808862dc09448b06f96b64ea622",
       "explanation": {
         "text": {
           "en": "The second movie sold 150 × 1.40 = 210 tickets, so both movies sold 150 + 210 = 360 tickets. Multiplying 360 × $13.50 gives $4,860, choice D.",
@@ -197,8 +197,8 @@
       "inputHash": "e0fe3904e1be1e88b1627702072a5d29b8fbdb78ceb16fa40e45979a0cc94796",
       "explanation": {
         "text": {
-          "en": "Combine the coefficients of x: 17(1/3)x - (7/2)x = (17/3 - 7/2)x. Using sixths gives (34/6 - 21/6)x = 13x/6, choice C.",
-          "es": "Combina los coeficientes de x: 17(1/3)x - (7/2)x = (17/3 - 7/2)x. Al usar sextos se obtiene (34/6 - 21/6)x = 13x/6, opción C."
+          "en": "17(1/3) means 17 × 1/3 = 17/3, not the mixed number 17 1/3. So 17(1/3)x − (7/2)x = (17/3 − 7/2)x = (34/6 − 21/6)x = 13x/6, choice C.",
+          "es": "17(1/3) significa 17 × 1/3 = 17/3, no el número mixto 17 1/3. Así, 17(1/3)x − (7/2)x = (17/3 − 7/2)x = (34/6 − 21/6)x = 13x/6, la opción C."
         },
         "source": "vine-authored"
       }

@@ -220,15 +220,15 @@ class ImportedMathExplanationValidationTests(unittest.TestCase):
                         expected[(question_id, language)] = text
                         superscript_question_ids.add(question_id)
 
-        self.assertEqual(len(superscript_question_ids), 62)
-        self.assertEqual(len(expected), 123)
+        self.assertEqual(len(superscript_question_ids), 71)
+        self.assertEqual(len(expected), 141)
         self.assertEqual(
             sum(language == "en" for _, language in expected),
-            61,
+            70,
         )
         self.assertEqual(
             sum(language == "es" for _, language in expected),
-            62,
+            71,
         )
         self.assertIn("nysed-2019-g8-mc-q9", superscript_question_ids)
 

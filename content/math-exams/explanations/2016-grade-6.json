@@ -37,8 +37,8 @@
       "inputHash": "d9d60893d984080aff84dff5118efd6fc135c0549f53951564ab91e47a74723b",
       "explanation": {
         "text": {
-        "en": "Point F is at (1, 0.5), one unit right and one-half unit up from the origin. Point G is at (−1, −0.5), one unit left and one-half unit down; plane A shows both locations.",
-        "es": "El punto F está en (1, 0.5), una unidad a la derecha y media unidad arriba del origen. El punto G está en (−1, −0.5), una unidad a la izquierda y media unidad abajo; el plano A muestra ambas ubicaciones."
+          "en": "Point F is at (1, 0.5), one unit right and one-half unit up from the origin. Point G is at (−1, −0.5), one unit left and one-half unit down; plane A shows both locations.",
+          "es": "El punto F está en (1, 0.5), una unidad a la derecha y media unidad arriba del origen. El punto G está en (−1, −0.5), una unidad a la izquierda y media unidad abajo; el plano A muestra ambas ubicaciones."
         },
         "source": "vine-authored"
       }
@@ -234,7 +234,7 @@
       }
     },
     "nysed-2016-g6-mc-q42": {
-      "inputHash": "f1af14e33dd92509122e4f7991f21f8804c37fcdc3096e471c815265b0b9937d",
+      "inputHash": "dd62b5e6204c726a02a97061ab054ed88096070ca520983310009f4bc242b655",
       "explanation": {
         "text": {
           "en": "The given points form three corners of a rectangle with horizontal and vertical sides. The fourth corner shares x = 30 with (30, 13) and y = 3 with (5, 3), so it is (30, 3).",

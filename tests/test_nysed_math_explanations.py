@@ -176,11 +176,11 @@ class NysedMathExplanationTests(unittest.TestCase):
         self.assertEqual(set(overrides), set(OFFICIAL_RATIONALE_OVERRIDE_QUESTION_IDS))
         self.assertEqual(
             sum(item.source == "official-nysed" for item in overrides.values()),
-            92,
+            89,
         )
         self.assertEqual(
             sum(item.source == "official-nysed-corrected" for item in overrides.values()),
-            5,
+            49,
         )
         grade_5_8_ids = {
             question_id
@@ -191,16 +191,50 @@ class NysedMathExplanationTests(unittest.TestCase):
             grade_5_8_ids & OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS
         )
         grade_5_8_extraction_repairs = grade_5_8_ids - grade_5_8_semantic_ids
-        self.assertEqual(len(grade_5_8_ids), 74)
+        self.assertEqual(len(grade_5_8_ids), 107)
         self.assertEqual(
             grade_5_8_semantic_ids,
             {
                 "nysed-2013-g6-mc-q14",
+                "nysed-2013-g6-mc-q47",
+                "nysed-2013-g6-mc-q48",
+                "nysed-2013-g6-mc-q61",
+                "nysed-2013-g7-mc-q1",
+                "nysed-2013-g7-mc-q10",
+                "nysed-2013-g7-mc-q11",
+                "nysed-2013-g7-mc-q12",
+                "nysed-2013-g7-mc-q6",
+                "nysed-2013-g7-mc-q8",
+                "nysed-2013-g7-mc-q9",
+                "nysed-2013-g8-mc-q2",
+                "nysed-2013-g8-mc-q3",
+                "nysed-2013-g8-mc-q5",
+                "nysed-2013-g8-mc-q61",
+                "nysed-2014-g5-mc-q10",
+                "nysed-2014-g5-mc-q14",
+                "nysed-2014-g5-mc-q19",
                 "nysed-2014-g5-mc-q44",
+                "nysed-2014-g6-mc-q11",
+                "nysed-2014-g6-mc-q12",
+                "nysed-2014-g6-mc-q18",
+                "nysed-2014-g6-mc-q20",
+                "nysed-2014-g6-mc-q28",
+                "nysed-2014-g6-mc-q36",
+                "nysed-2014-g6-mc-q39",
+                "nysed-2014-g6-mc-q48",
+                "nysed-2014-g6-mc-q49",
+                "nysed-2014-g6-mc-q5",
+                "nysed-2014-g6-mc-q54",
                 "nysed-2014-g7-mc-q1",
+                "nysed-2014-g7-mc-q14",
+                "nysed-2014-g7-mc-q16",
+                "nysed-2014-g7-mc-q3",
+                "nysed-2014-g8-mc-q13",
+                "nysed-2014-g8-mc-q16",
+                "nysed-2014-g8-mc-q27",
             },
         )
-        self.assertEqual(len(grade_5_8_extraction_repairs), 71)
+        self.assertEqual(len(grade_5_8_extraction_repairs), 70)
 
         expected_restored_notation = {
             "nysed-2013-g5-mc-q1": "(3/4) × (1/2) = 3/8",
@@ -222,7 +256,6 @@ class NysedMathExplanationTests(unittest.TestCase):
             "nysed-2013-g8-mc-q50": "y = 3x² - 2",
             "nysed-2014-g5-mc-q7": "(2/3) × (5/2) = 10/6 = 1 4/6",
             "nysed-2014-g5-mc-q9": "(1/2) × (1/3) = 1/6",
-            "nysed-2014-g5-mc-q10": "1/10 of what it represents",
             "nysed-2014-g5-mc-q13": "618/30 = 20 18/30 = 20 3/5",
             "nysed-2014-g5-mc-q16": "(7/8) × (3/16) = 21/128",
             "nysed-2014-g5-mc-q23": "(5/12) × (5/6) = 25/72",
@@ -326,7 +359,7 @@ class NysedMathExplanationTests(unittest.TestCase):
             (2016, 5, 14): ("2 × 4 × 3 = 24", "2 × 4 × 3 = 24"),
             (2016, 5, 40): ("3 of the 5 rows", "3 de las 5 filas"),
             (2016, 5, 45): ("4 + 12 ÷ 2", "4 + 12 ÷ 2"),
-            (2023, 6, 22): ("h = 7", "h = 7"),
+            (2023, 6, 22): ("b = 7", "b = 7"),
             (2017, 6, 13): ("Graph B", "gráfica B"),
             (2016, 6, 14): ("G is at (−1, −0.5)", "G está en (−1, −0.5)"),
             (2023, 7, 16): ("about 85 to 96", "aproximadamente 85 a 96"),

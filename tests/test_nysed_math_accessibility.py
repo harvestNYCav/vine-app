@@ -288,7 +288,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
              ("$17.50", "$70.00", "$8.75", "$35.00")),
             (2017, 7, "en", 21, "2017-g7-en-q21-expression-v1", (869, 494),
              "d341325a0a85ba300eec346c82d7bb6fae275917ef6789b46e5791ebf51ba068",
-             ("−1/2(−3/2x + 6x + 1) − 3x",)),
+             ("−(1/2) × (−(3/2)x + 6x + 1) − 3x",)),
             (2019, 5, "es", 32, "2019-g5-es-q32-denominator-v1", (569, 416),
              "3c4ee4fbdc5b5b5c025e1e6e77afbd382e6db12733cb2abc87ccd23127c72218",
              ("2/5 + 3/7",)),
@@ -317,11 +317,11 @@ class NysedMathAccessibilityTests(unittest.TestCase):
         cases = (
             (2021, 5, "en", 3, ("D: 4 5/16",)),
             (2023, 7, "es", 8, ("D: 6 2/3",)),
-            (2024, 8, "en", 20, ("D: y = 1/5x³",)),
+            (2024, 8, "en", 20, ("D: y = (1/5)x³",)),
             (2017, 7, "en", 33, ("D: 13",)),
             (2017, 7, "es", 14, ("B: 3.583̅", "C: 3.58̅3̅", "D: 3.5̅8̅3̅")),
             (2019, 7, "es", 2, ("A: 0.583", "B: 0.583̅")),
-            (2018, 5, "en", 3, ("3 unit cubes by 2 unit cubes by 2 unit cubes", "8 unit cubes by 6 unit cubes by 7 unit cubes", "8 unit cubes by 8 unit cubes by 7 unit cubes")),
+            (2018, 5, "en", 3, ("3 unit cubes by 3 unit cubes by 2 unit cubes", "8 unit cubes by 6 unit cubes by 8 unit cubes", "8 unit cubes by 8 unit cubes by 8 unit cubes")),
             (2019, 7, "es", 5, ("1/2 de un vaso",)),
             (2023, 5, "es", 18, ("Prisma A", "1 cubo", "3 cubos")),
             (2023, 5, "en", 31, ("4 unit cubes wide", "3 unit cubes high", "6 unit cubes deep")),
@@ -466,7 +466,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                 2015,
                 4,
                 2,
-                {"en": ("the line measures 3 1/2 inches", "B: 3 1/2 inches")},
+                {"en": ("Use the scale-matched measurement guide below", "B: 3 1/2 inches")},
                 {"en": ("the line measures 4 1/2 inches",)},
             ),
             (
@@ -514,12 +514,12 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                     "en": (
                         "A: An open circle at −3 with the bold ray extending to the left",
                         "B: An open circle at −3 with the bold ray extending to the right",
-                        "C: An open circle at −5 with the bold ray extending to the left",
-                        "D: An open circle at −5 with the bold ray extending to the right",
+                        "C: An open circle at −5 with the bold ray extending to the right",
+                        "D: An open circle at −5 with the bold ray extending to the left",
                     ),
                     "es": (
                         "A: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la izquierda, con flecha hacia valores menores",
-                        "D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la derecha, con flecha hacia valores mayores",
+                        "D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la izquierda, con flecha hacia valores menores",
                     ),
                 },
                 {
@@ -554,8 +554,8 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                 8,
                 22,
                 {
-                    "en": ("The corresponding vertices are A and D, B and E, and C and F",),
-                    "es": ("Los vértices correspondientes son A y D, B y E, y C y F",),
+                    "en": ("Triangle DEF has vertices D(4, 0), E(6, −4), and F(2, −2)",),
+                    "es": ("El triángulo DEF tiene vértices D(4, 0), E(6, −4) y F(2, −2)",),
                 },
                 {
                     "en": ("A and E, B and D, and C and F",),
@@ -827,14 +827,14 @@ class NysedMathAccessibilityTests(unittest.TestCase):
             "en": (
                 "two identical horizontal layers",
                 "5 cubes form one horizontal row",
-                "first, third, and fifth positions",
-                "each layer contains 8 cubes",
+                "in front of the first cube and one in front of the fourth cube",
+                "another extra cube is behind the first cube",
             ),
             "es": (
                 "dos capas horizontales idénticas",
                 "5 cubos forman una fila horizontal",
-                "posiciones primera, tercera y quinta",
-                "cada capa contiene 8 cubos",
+                "delante del primero y otro delante del cuarto",
+                "otro cubo adicional está detrás del primero",
             ),
         }
         for language, phrases in expected.items():

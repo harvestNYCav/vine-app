@@ -58,7 +58,7 @@
       "explanation": {
         "text": {
           "en": "Because the requested ratio compares rye bagels first to plain bagels second, place 13 before 8. With 13 rye and 8 plain bagels, the ratio is 13:8, choice B.",
-          "es": "Se coloca 13 antes de 8 porque la razón solicitada compara primero los bagels de centeno con los simples. Con 13 de centeno y 8 simples, la razón es 13:8, la opción B."
+          "es": "Se coloca 13 antes de 8 porque la razón solicitada compara primero los panes de centeno con los panes comunes. Con 13 de centeno y 8 comunes, la razón es 13:8, la opción B."
         },
         "source": "vine-authored"
       }
@@ -84,7 +84,7 @@
       }
     },
     "nysed-2021-g6-mc-q9": {
-      "inputHash": "1e535a8c6258bec9eaaced8980bed36b14f8fbf116f19201f3c2611a1812a2d8",
+      "inputHash": "16a2940511405d5aef543ff26eb98ab49dca6ebad3c4f2cade336f7825808864",
       "explanation": {
         "text": {
           "en": "The interval from −2 to −1 is divided into 5 equal parts, so each step is 0.2. Point A is two steps right of −2: −2 + 0.4 = −1.6, choice C.",
@@ -127,8 +127,8 @@
       "inputHash": "996ec6a478ae490c9b046b1bbe86ee63cfac99ef4b2447ec4e7751da8486c2d1",
       "explanation": {
         "text": {
-          "en": "Evaluate the exponent first: 3^3 = 27. The numerator is 143 − 35 = 108, and 108 ÷ 27 = 4, so the value is choice A.",
-          "es": "Primero se evalúa el exponente: 3^3 = 27. El numerador es 143 − 35 = 108, y 108 ÷ 27 = 4, así que el valor es la opción A."
+          "en": "Evaluate the exponent first: 3³ = 27. The numerator is 143 − 35 = 108, and 108 ÷ 27 = 4, so the value is choice A.",
+          "es": "Primero se evalúa el exponente: 3³ = 27. El numerador es 143 − 35 = 108, y 108 ÷ 27 = 4, así que el valor es la opción A."
         },
         "source": "vine-authored"
       }
@@ -167,8 +167,8 @@
       "inputHash": "90d099ab347b457d20e719384709f131034b585514a9628f50762036f8740983",
       "explanation": {
         "text": {
-          "en": "The range includes every temperature from the closed endpoint at −52°F through the closed endpoint at 108°F, with no arrows extending beyond them. Number line D shows exactly that interval.",
-          "es": "El rango incluye todas las temperaturas desde el extremo cerrado en −52°F hasta el extremo cerrado en 108°F, sin flechas que se extiendan más allá. La recta D muestra exactamente ese intervalo."
+          "en": "The range includes every temperature from −52°F through 108°F and nothing outside it. Number line D is the only one that is bold exactly from the closed point at −52 to the closed point at 108.",
+          "es": "El rango incluye todas las temperaturas desde −52 °F hasta 108 °F y ninguna fuera de ese intervalo. La recta D es la única resaltada exactamente desde el punto cerrado en −52 hasta el punto cerrado en 108."
         },
         "source": "vine-authored"
       }

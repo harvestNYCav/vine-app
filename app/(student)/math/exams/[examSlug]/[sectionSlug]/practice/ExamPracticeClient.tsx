@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { getMathExamStudentNotice } from '@/content/math-exams/student-notices'
+import MeasurementGuide from './MeasurementGuide'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import type {
@@ -311,6 +312,8 @@ export default function ExamPracticeClient({
             loading="eager"
           />
         </div>
+
+        <MeasurementGuide questionId={question.id} isSpanish={isSpanish} />
 
         <div className="mt-5">
           <fieldset>

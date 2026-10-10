@@ -38,7 +38,7 @@
       "explanation": {
         "text": {
           "en": "The round pan has radius 5 inches, so its area is π(5²) ≈ 78.5 square inches. The rectangle's area is 10 × 7 = 70, making the round pan about 8.5 square inches greater.",
-          "es": "El molde redondo tiene radio de 5 pulgadas, así que su área es π(5²) ≈ 78.5 pulgadas cuadradas. El área del rectángulo es 10 × 7 = 70, por lo que el molde redondo es aproximadamente 8.5 pulgadas cuadradas mayor."
+          "es": "El fuente redondo tiene radio de 5 pulgadas, así que su área es π(5²) ≈ 78.5 pulgadas cuadradas. El área del rectángulo es 10 × 7 = 70, por lo que el fuente redondo es aproximadamente 8.5 pulgadas cuadradas mayor."
         },
         "source": "vine-authored"
       }
@@ -87,8 +87,8 @@
       "inputHash": "f2a73aea5c6ecce1fbadfb1c8fd4450bd7ee36f95d3e22f35a51cc1c3aead0f2",
       "explanation": {
         "text": {
-          "en": "A 20% discount leaves 80% of the price, so the sale price is 0.8p. It can also be written as p − 0.2p, making expressions B and D equivalent.",
-          "es": "Un descuento del 20% deja el 80% del precio, así que el precio de oferta es 0.8p. También se puede escribir como p − 0.2p, por lo que las expresiones B y D son equivalentes."
+          "en": "A 20% discount leaves 80% of the price, so the sale price is 0.8p. It can also be written as p − 0.2p. Expression B (0.8p) and Expression D (p − 0.2p) both represent the sale price, which is choice C.",
+          "es": "Un descuento del 20% deja el 80% del precio, así que el precio de oferta es 0.8p. También se escribe p − 0.2p. La Expresión B (0.8p) y la Expresión D (p − 0.2p) representan el precio de oferta: opción C."
         },
         "source": "vine-authored"
       }
@@ -157,8 +157,8 @@
       "inputHash": "f7a70a4b8284b1864c3b488b30413193cd2eaec5a4177fedf7310e87c35fa26b",
       "explanation": {
         "text": {
-          "en": "Manny pays $4.25 for shoes plus $2.50 for each of b games, and cannot exceed $25. The inequality is 4.25 + 2.5b ≤ 25.",
-          "es": "Manny paga $4.25 por los zapatos más $2.50 por cada uno de b juegos y no puede exceder $25. La desigualdad es 4.25 + 2.5b ≤ 25."
+          "en": "Manny pays $4.25 for shoes plus $2.50 for each of x games, and cannot exceed $25. The inequality is 4.25 + 2.5x ≤ 25.",
+          "es": "Manny paga $4.25 por los zapatos más $2.50 por cada uno de x juegos y no puede exceder $25. La desigualdad es 4.25 + 2.5x ≤ 25."
         },
         "source": "vine-authored"
       }
@@ -168,7 +168,7 @@
       "explanation": {
         "text": {
           "en": "Randomly selecting students from every homeroom includes students across the whole school and avoids favoring one grade, transportation group, or elective. Thus three random students per homeroom gives the most representative sample.",
-          "es": "Seleccionar al azar estudiantes de cada salón base incluye alumnos de toda la escuela y evita favorecer un grado, medio de transporte o clase optativa. Por lo tanto, tres estudiantes al azar por salón producen la muestra más representativa."
+          "es": "Seleccionar al azar estudiantes de cada clase del curso incluye alumnos de toda la escuela y evita favorecer un grado, medio de transporte o clase optativa. Por lo tanto, tres estudiantes al azar por salón producen la muestra más representativa."
         },
         "source": "vine-authored"
       }
@@ -237,8 +237,8 @@
       "inputHash": "cea1d95e57688723cd65a103b7c35c39fb187ef615ecb7a7ab75caacf48888e7",
       "explanation": {
         "text": {
-        "en": "The h hats cost $9.95h, and shipping adds $5.00. Because the total is less than $125, the inequality is 9.95h + 5 < 125.",
-        "es": "Los h sombreros cuestan $9.95h y el envío suma $5.00. Como el total es menor que $125, la desigualdad es 9.95h + 5 < 125."
+          "en": "The h hats cost $9.95h, and shipping adds $5.00. Because the total is less than $125, the inequality is 9.95h + 5 < 125.",
+          "es": "Los h gorras cuestan $9.95h y el envío suma $5.00. Como el total es menor que $125, la desigualdad es 9.95h + 5 < 125."
         },
         "source": "vine-authored"
       }
@@ -258,7 +258,7 @@
       "explanation": {
         "text": {
           "en": "After 30 cups are used, x − 30 remain. Since 15% of that remainder is 90, 0.15(x − 30) = 90, so x − 30 = 600 and x = 630 cups.",
-          "es": "Después de usar 30 vasos, quedan x − 30. Como el 15% de esa cantidad es 90, 0.15(x − 30) = 90, así que x − 30 = 600 y x = 630 vasos."
+          "es": "Después de usar 30 tazas, quedan x − 30. Como el 15% de esa cantidad es 90, 0.15(x − 30) = 90, así que x − 30 = 600 y x = 630 tazas."
         },
         "source": "vine-authored"
       }

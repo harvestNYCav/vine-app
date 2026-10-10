@@ -90,7 +90,7 @@
       }
     },
     "nysed-2024-g7-mc-q5": {
-      "inputHash": "666488e4638c0d35a17a0133408a984536af6161463a43b5ce503eadb9f89954",
+      "inputHash": "f64064ef0b47e4aaf00c2c3c564ca1293846110a9ca2d82af58694cc50f80cb9",
       "description": {
         "en": "Question 5. On average, ocean temperatures around the world range from −2°C to 32°C. What is the difference between the two ocean temperatures? Choices: A: −34°C. B: 34°C. C: −30°C. D: 30°C.",
         "es": "Pregunta 5. En promedio, las temperaturas de los océanos de todo el mundo varían entre −2 °C y 32 °C. ¿Cuál es la diferencia entre las dos temperaturas de los océanos? Opciones: A: −34 °C B: 34 °C C: −30 °C D: 30 °C"
@@ -391,7 +391,7 @@
       }
     },
     "nysed-2024-g7-mc-q17": {
-      "inputHash": "3b787252fa5fc935ec2e9c1cfee11dbc2f7d152192ec16d1fbc5a55f85eb582f",
+      "inputHash": "1915f41e3d9ac262272ca38c1a150bdf606a304541489933bd30b5daa9cf7ab2",
       "description": {
         "en": "Question 17. There were two movies shown at a theater. A total of 150 tickets were sold for the first movie, and 40% more tickets were sold for the second movie than for the first movie. If each ticket sold for $13.50, what was the total amount of ticket sales, in dollars, for both movies? Choices: A: $2,565.00. B: $2,835.00. C: $4,590.00. D: $4,860.00.",
         "es": "Pregunta 17. Se exhibieron dos películas en un cine. Se vendió un total de 150 boletos para la primera película y, para la segunda película, se vendió un 40 % más de boletos que para la primera película. Si cada boleto se vendió por $13.50, ¿cuál fue la cantidad total de venta de boletos, en dólares, para las dos películas? Opciones: A: $2,565.00 B: $2,835.00 C: $4,590.00 D: $4,860.00"
@@ -428,7 +428,7 @@
     "nysed-2024-g7-mc-q21": {
       "inputHash": "f35ea3cde7d8a8dd8a6d21f7dae469837af16c64ef4dacc54a5702cd759d2e1f",
       "description": {
-        "en": "Question 21. The table represents a proportional relationship between x and y. The column headings are x and y. The ordered pairs given by the rows are (9, 2.25), (13, 3.25), (17, 4.25), and (21, 5.25). Which equation represents this proportional relationship? Choices: A: y = x. B: y = 4x. C: y = 1/4x. D: y = 9/4x.",
+        "en": "Question 21. The table represents a proportional relationship between x and y. The column headings are x and y. The ordered pairs given by the rows are (9, 2.25), (13, 3.25), (17, 4.25), and (21, 5.25). Which equation represents this proportional relationship? Choices: A: y = x. B: y = 4x. C: y = (1/4)x. D: y = (9/4)x.",
         "es": "Pregunta 21. La siguiente tabla representa una relación proporcional entre x y y. La tabla tiene dos columnas, x y y. Sus pares de valores, por fila, son: x = 9, y = 2.25; x = 13, y = 3.25; x = 17, y = 4.25; x = 21, y = 5.25. ¿Cuál ecuación representa esta relación proporcional? Opciones: A: y = x B: y = 4x C: y = (1/4)x D: y = (9/4)x"
       },
       "requiredSourceTokens": {
@@ -439,14 +439,15 @@
           "(21, 5.25)",
           "y = x",
           "y = 4x",
-          "y = 1/4x",
-          "y = 9/4x",
+          "y = (1/4)x",
+          "y = (9/4)x",
           "A: y = x",
           "B: y = 4x",
-          "C: y = 1/4x",
-          "D: y = 9/4x",
+          "C: y = (1/4)x",
+          "D: y = (9/4)x",
           "1/4",
-          "9/4"
+          "9/4",
+          "Question 21. The table represents a proportional relationship between x and y. The column headings are x and y. The ordered pairs given by the rows are (9, 2.25), (13, 3.25), (17, 4.25), and (21, 5.25). Which equation represents this proportional relationship? Choices: A: y = x. B: y = 4x. C: y = (1/4)x. D: y = (9/4)x."
         ],
         "es": [
           "x = 9, y = 2.25",
@@ -537,8 +538,8 @@
     "nysed-2024-g7-mc-q30": {
       "inputHash": "571561986f5141e2f58407d57ad490a41790eed7d2744f9a13047f8e28d76455",
       "description": {
-        "en": "Question 30. Which graph represents the solution to the inequality 4 − 4x > 16? Each choice is a horizontal number line labeled at every integer from −6 through 0, with arrows showing that the line continues in both directions. Choices: A: An open circle at −3 with the bold ray extending to the left. B: An open circle at −3 with the bold ray extending to the right. C: An open circle at −5 with the bold ray extending to the left. D: An open circle at −5 with the bold ray extending to the right.",
-        "es": "Pregunta 30. ¿Qué gráfico representa la solución a la desigualdad 4 − 4x > 16? Opciones: A: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la izquierda, con flecha hacia valores menores. B: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la derecha, con flecha hacia valores mayores. C: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la izquierda, con flecha hacia valores menores. D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la derecha, con flecha hacia valores mayores."
+        "en": "Question 30. Which graph represents the solution to the inequality 4 − 4x > 16? Each choice is a horizontal number line labeled at every integer from −6 through 0, with arrows showing that the line continues in both directions. Choices: A: An open circle at −3 with the bold ray extending to the left. B: An open circle at −3 with the bold ray extending to the right. C: An open circle at −5 with the bold ray extending to the right. D: An open circle at −5 with the bold ray extending to the left.",
+        "es": "Pregunta 30. ¿Qué gráfico representa la solución a la desigualdad 4 − 4x > 16? Opciones: A: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la izquierda, con flecha hacia valores menores. B: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la derecha, con flecha hacia valores mayores. C: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la derecha, con flecha hacia valores mayores. D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la izquierda, con flecha hacia valores menores."
       },
       "requiredSourceTokens": {
         "en": [
@@ -551,8 +552,9 @@
           "extending to the left",
           "A: An open circle at −3 with the bold ray extending to the left",
           "B: An open circle at −3 with the bold ray extending to the right",
-          "C: An open circle at −5 with the bold ray extending to the left",
-          "D: An open circle at −5 with the bold ray extending to the right"
+          "C: An open circle at −5 with the bold ray extending to the right",
+          "D: An open circle at −5 with the bold ray extending to the left",
+          "Question 30. Which graph represents the solution to the inequality 4 − 4x > 16? Each choice is a horizontal number line labeled at every integer from −6 through 0, with arrows showing that the line continues in both directions. Choices: A: An open circle at −3 with the bold ray extending to the left. B: An open circle at −3 with the bold ray extending to the right. C: An open circle at −5 with the bold ray extending to the right. D: An open circle at −5 with the bold ray extending to the left."
         ],
         "es": [
           "4 − 4x > 16",
@@ -567,8 +569,9 @@
           "círculo abierto en −5",
           "A: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la izquierda, con flecha hacia valores menores",
           "B: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la derecha, con flecha hacia valores mayores",
-          "C: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la izquierda, con flecha hacia valores menores",
-          "D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la derecha, con flecha hacia valores mayores"
+          "C: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la derecha, con flecha hacia valores mayores",
+          "D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la izquierda, con flecha hacia valores menores",
+          "Pregunta 30. ¿Qué gráfico representa la solución a la desigualdad 4 − 4x > 16? Opciones: A: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la izquierda, con flecha hacia valores menores. B: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −3 y el tramo resaltado se extiende desde −3 hacia la derecha, con flecha hacia valores mayores. C: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la derecha, con flecha hacia valores mayores. D: Recta numérica con marcas etiquetadas −6, −5, −4, −3, −2, −1 y 0; hay un círculo abierto en −5 y el tramo resaltado se extiende desde −5 hacia la izquierda, con flecha hacia valores menores."
         ]
       }
     },

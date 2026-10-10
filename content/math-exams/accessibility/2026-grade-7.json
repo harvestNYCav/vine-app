@@ -729,7 +729,7 @@
       "inputHash": "579adfcf4a639a367c77aaeb92877648a25416938424dd15b3e092bbed09fbbb",
       "description": {
         "en": "Question 21. An artist is paid $20.00 to work at a birthday party, plus $5.00 for each portrait painted during the party. The artist would like to earn at least $200.00 at the party. Which inequality represents the number of portraits, x, the artist should paint to earn at least $200.00? Choices: A: 20x + 5 ≤ 200 B: 20x + 5 < 200 C: 5x + 20 ≥ 200 D: 5x + 20 > 200",
-        "es": "Pregunta 21. Un artista recibe $20.00 para trabajar en una fiesta de cumpleaños, más $5.00 por cada retrato pintado durante la fiesta. Al artista le gustaría ganar al menos $200.00 en la fiesta. ¿Qué desigualdad representa la cantidad de retratos, x, que el artista debe pintar para ganar al menos $200.00? Opciones: A: 20x + 5 ≥ 200 B: 20x + 5 < 200 C: 5x + 20 ≥ 200 D: 5x + 20 > 200"
+        "es": "Pregunta 21. Un artista recibe $20.00 para trabajar en una fiesta de cumpleaños, más $5.00 por cada retrato pintado durante la fiesta. Al artista le gustaría ganar al menos $200.00 en la fiesta. ¿Qué desigualdad representa la cantidad de retratos, x, que el artista debe pintar para ganar al menos $200.00? Opciones: A: 20x + 5 ≤ 200 B: 20x + 5 < 200 C: 5x + 20 ≥ 200 D: 5x + 20 > 200"
       },
       "requiredSourceTokens": {
         "en": [
@@ -753,15 +753,15 @@
           "$20.00",
           "$5.00",
           "$200.00",
-          "20x + 5 ≥ 200",
+          "20x + 5 ≤ 200",
           "20x + 5 < 200",
           "5x + 20 ≥ 200",
           "5x + 20 > 200",
-          "A: 20x + 5 ≥ 200",
+          "A: 20x + 5 ≤ 200",
           "B: 20x + 5 < 200",
           "C: 5x + 20 ≥ 200",
           "D: 5x + 20 > 200",
-          "5 ≥ 200",
+          "5 ≤ 200",
           "5 < 200",
           "20 ≥ 200",
           "20 > 200"
@@ -1079,12 +1079,12 @@
     "nysed-2026-g7-mc-q32": {
       "inputHash": "1da10248c39025f5ac715ef80b1f998e4ab0c38d4c3bafbeafedffd5dddd20b3",
       "description": {
-        "en": "Question 32. Which expression is equivalent to −1/4(12x − 6)? Choices: A: 3x + 6. B: 3x − 6. C: −3x + 1 1/2. D: −3x − 1 1/2.",
+        "en": "Question 32. Which expression is equivalent to −(1/4)(12x − 6)? Choices: A: 3x + 6. B: 3x − 6. C: −3x + 1 1/2. D: −3x − 1 1/2.",
         "es": "Pregunta 32. ¿Qué expresión es equivalente a −(1/4)(12x − 6)? Opciones: A: 3x + 6 B: 3x − 6 C: −3x + 1 1/2 D: −3x − 1 1/2"
       },
       "requiredSourceTokens": {
         "en": [
-          "−1/4(12x − 6)",
+          "−(1/4)(12x − 6)",
           "3x + 6",
           "3x − 6",
           "−3x + 1 1/2",
@@ -1095,7 +1095,8 @@
           "D: −3x − 1 1/2",
           "1/4",
           "(12x − 6)",
-          "1 1/2"
+          "1 1/2",
+          "Question 32. Which expression is equivalent to −(1/4)(12x − 6)? Choices: A: 3x + 6. B: 3x − 6. C: −3x + 1 1/2. D: −3x − 1 1/2."
         ],
         "es": [
           "−(1/4)(12x − 6)",

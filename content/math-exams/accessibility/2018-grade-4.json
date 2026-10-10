@@ -31,8 +31,8 @@
     "nysed-2018-g4-mc-q4": {
       "inputHash": "b22f7148e039b332b7f7b3abd1f7003634f95aee4a9ce33ad034309690067213",
       "description": {
-        "en": "Question 4. A toy car is shown above a measurement line whose endpoint-to-endpoint span measures 2 1/4 inches. What is the length, in inches, of the toy car? Choices: A: 2 1/4; B: 2 1/2; C: 3 1/4; D: 3 3/4.",
-        "es": "Pregunta 4. Se muestra un auto de juguete sobre una línea de medición cuya distancia de extremo a extremo mide 2 1/4 pulgadas. ¿Cuál es la longitud, en pulgadas, del auto de juguete? Opciones: A: 2 1/4; B: 2 1/2; C: 3 1/4; D: 3 3/4."
+        "en": "Question 4. A toy car is shown above a measurement line with endpoints aligned to the car’s ends; use the scale-matched guide below. What is the length, in inches, of the toy car? Choices: A: 2 1/4; B: 2 1/2; C: 3 1/4; D: 3 3/4.",
+        "es": "Pregunta 4. Se muestra un auto de juguete sobre una línea de medición cuyos extremos coinciden con los del auto; usa la guía de medición a escala de abajo. ¿Cuál es la longitud, en pulgadas, del auto de juguete? Opciones: A: 2 1/4; B: 2 1/2; C: 3 1/4; D: 3 3/4."
       }
     },
     "nysed-2018-g4-mc-q12": {
@@ -113,7 +113,7 @@
       }
     },
     "nysed-2018-g4-mc-q30": {
-      "inputHash": "177eeb3e2e22dad4b36e755274b87137e98aee2f95062b1cb71fb7716f986253",
+      "inputHash": "ac61b58599cf91de205e5d76ab72fc60d002559e7345885ce4b655980890a2e8",
       "description": {
         "en": "Question 30. Which statement is true? Choices: A: 4/12 > 5/8 because 5/8 is greater than 1/2 and 4/12 is closer to 1 than 1/2; B: 4/12 < 5/8 because 4/12 is less than 1/2 and 5/8 is greater than 1/2; C: 5/8 > 4/12 because 4/12 and 5/8 are both closer to 1 than 1/2; D: 5/8 < 4/12 because 5/8 and 4/12 are both less than 1/2.",
         "es": "Pregunta 30. ¿Qué afirmación es verdadera? Opciones: A: 4/12 > 5/8 porque 5/8 es mayor que 1/2 y 4/12 es más cercano a 1 que 1/2; B: 4/12 < 5/8 porque 4/12 es menor que 1/2 y 5/8 es mayor que 1/2; C: 5/8 > 4/12 porque tanto 4/12 como 5/8 son más cercanos a 1 que 1/2; D: 5/8 < 4/12 porque tanto 5/8 como 4/12 son menores que 1/2."
@@ -123,8 +123,8 @@
       "inputHash": "81ed0a1df44aeef3f3d42b883c735de73348e185babad1c646dd4a022da4f042",
       "verbatimSingleLetterChoices": true,
       "description": {
-        "en": "Question 31. Four outlined block capital letters are shown. Letter A has one vertical line of symmetry; letter D has one horizontal line; letter H has one vertical and one horizontal line; and letter Y has one vertical line. Which letter has the greatest number of lines of symmetry? Choices: A: A; B: D; C: H; D: Y.",
-        "es": "Pregunta 31. Se muestran cuatro letras mayúsculas de imprenta delineadas. La letra A tiene una línea vertical de simetría; la D tiene una línea horizontal; la H tiene una línea vertical y una horizontal; y la Y tiene una línea vertical. ¿Qué letra tiene la mayor cantidad de líneas de simetría? Opciones: A: A; B: D; C: H; D: Y."
+        "en": "Question 31. Four outlined block capital letters are shown. Which letter has the greatest number of lines of symmetry? Choices: A: A; B: D; C: H; D: Y.",
+        "es": "Pregunta 31. Se muestran cuatro letras mayúsculas de imprenta delineadas. ¿Qué letra tiene la mayor cantidad de líneas de simetría? Opciones: A: A; B: D; C: H; D: Y."
       }
     },
     "nysed-2018-g4-mc-q32": {
