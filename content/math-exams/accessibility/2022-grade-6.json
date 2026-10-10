@@ -88,41 +88,15 @@
     "nysed-2022-g6-mc-q3": {
       "inputHash": "537f9abd8b8f93586e51c3c69345266da779c715e76c49bd002bb4b7151fb302",
       "description": {
-        "en": "Question 3. The net of a rectangular prism is shown below. A vertical strip of four rectangular faces has width 8 cm. From top to bottom, the faces measure 8 cm by 3 cm, 8 cm by 5 cm, 8 cm by 3 cm, and 8 cm by 5 cm. A 3 cm by 5 cm rectangular face is attached to each side of the second face in the strip. Dotted fold lines separate adjacent faces. What is the surface area, in square centimeters, of the rectangular prism? Choices: A: 60. B: 79. C: 158. D: 360.",
-        "es": "Pregunta 3. A continuación se muestra la representación bidimensional de un prisma rectangular. La red del prisma está formada por seis rectángulos. En el centro hay un rectángulo de 8 cm de ancho y 5 cm de alto. Unido a cada lado vertical del rectángulo central hay un rectángulo lateral de 3 cm de ancho y 5 cm de alto. Unido al borde superior del rectángulo central hay un rectángulo de 8 cm por 3 cm. Unido al borde inferior del rectángulo central hay un rectángulo de 8 cm por 3 cm, y debajo de este hay otro rectángulo de 8 cm por 5 cm. Las líneas punteadas horizontales y verticales indican los dobleces entre las caras. Las dimensiones señaladas son 8 cm, 3 cm y 5 cm. ¿Cuál es el área de superficie, en centímetros cuadrados, del prisma rectangular? Opciones: A: 60 B: 79 C: 158 D: 360"
+        "en": "Question 3. The net of a rectangular prism is shown as a vertical strip of four rectangular faces, with an additional face attached to each side of the second face. Dotted fold lines separate adjacent faces. The printed dimensions are 8 cm along the top of the strip, 3 cm across the right attached face, 5 cm along its outer vertical edge, and 3 cm beside the third face in the strip. What is the surface area, in square centimeters, of the rectangular prism? Choices: A: 60. B: 79. C: 158. D: 360.",
+        "es": "Pregunta 3. El desarrollo plano de un prisma rectangular tiene una franja vertical de cuatro caras rectangulares, con otra cara unida a cada lado de la segunda cara. Líneas punteadas separan las caras. Las medidas rotuladas son 8 cm arriba de la franja, 3 cm a lo ancho de la cara lateral derecha, 5 cm junto a su borde vertical exterior y 3 cm junto a la tercera cara de la franja. ¿Cuál es el área de superficie, en centímetros cuadrados, del prisma rectangular? Opciones: A: 60 B: 79 C: 158 D: 360"
       },
       "requiredSourceTokens": {
         "en": [
-          "8 cm",
-          "3 cm",
-          "5 cm",
-          "8 cm by 3 cm",
-          "8 cm by 5 cm",
-          "3 cm by 5 cm",
-          "60",
-          "79",
-          "158",
-          "360",
-          "A: 60",
-          "B: 79",
-          "C: 158",
-          "D: 360"
+          "Question 3. The net of a rectangular prism is shown as a vertical strip of four rectangular faces, with an additional face attached to each side of the second face. Dotted fold lines separate adjacent faces. The printed dimensions are 8 cm along the top of the strip, 3 cm across the right attached face, 5 cm along its outer vertical edge, and 3 cm beside the third face in the strip. What is the surface area, in square centimeters, of the rectangular prism? Choices: A: 60. B: 79. C: 158. D: 360."
         ],
         "es": [
-          "8 cm",
-          "3 cm",
-          "5 cm",
-          "8 cm por 3 cm",
-          "8 cm por 5 cm",
-          "3 cm de ancho y 5 cm de alto",
-          "60",
-          "79",
-          "158",
-          "360",
-          "A: 60",
-          "B: 79",
-          "C: 158",
-          "D: 360"
+          "Pregunta 3. El desarrollo plano de un prisma rectangular tiene una franja vertical de cuatro caras rectangulares, con otra cara unida a cada lado de la segunda cara. Líneas punteadas separan las caras. Las medidas rotuladas son 8 cm arriba de la franja, 3 cm a lo ancho de la cara lateral derecha, 5 cm junto a su borde vertical exterior y 3 cm junto a la tercera cara de la franja. ¿Cuál es el área de superficie, en centímetros cuadrados, del prisma rectangular? Opciones: A: 60 B: 79 C: 158 D: 360"
         ]
       }
     },

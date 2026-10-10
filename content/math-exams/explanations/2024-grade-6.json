@@ -27,8 +27,8 @@
       "inputHash": "0068b30520c93b206f945d3ba2236c725fe099553738e2ca859208a405833830",
       "explanation": {
         "text": {
-          "en": "The points have the same x-coordinate, so their distance is the vertical change between y = -8 and y = 4. That distance is |4 - (-8)| = 12 units, choice C.",
-          "es": "Los puntos tienen la misma coordenada x, así que su distancia es el cambio vertical entre y = -8 e y = 4. Esa distancia es |4 - (-8)| = 12 unidades, la opción C."
+          "en": "The points have the same x-coordinate and are on opposite sides of the x-axis, at y = −8 and y = 4. Add their distances from that axis: |−8| + |4| = 8 + 4 = 12 units, choice C.",
+          "es": "Los puntos tienen la misma coordenada x y están en lados opuestos del eje x, en y = −8 e y = 4. Suma sus distancias a ese eje: |−8| + |4| = 8 + 4 = 12 unidades, la opción C."
         },
         "source": "vine-authored"
       }
@@ -37,8 +37,8 @@
       "inputHash": "bb30acb6f47b96943ff617c7b35d086e5544c8f5806c7b8770b9d7e69aa570e1",
       "explanation": {
         "text": {
-          "en": "The symbol ≥ includes -3, so the graph needs a closed point at -3. Values greater than -3 lie to the right, which is the graph in choice B.",
-          "es": "El símbolo ≥ incluye -3, por lo que la gráfica necesita un punto cerrado en -3. Los valores mayores que -3 están a la derecha, como muestra la opción B."
+          "en": "The symbol ≥ includes −3, so the graph needs a closed point at −3. Values greater than −3 lie to the right, which is the graph in choice B.",
+          "es": "El símbolo ≥ incluye −3, por lo que la gráfica necesita un punto cerrado en −3. Los valores mayores que −3 están a la derecha, como muestra la opción B."
         },
         "source": "vine-authored"
       }
@@ -67,8 +67,8 @@
       "inputHash": "5ff4ee8d53db2d7cdbe57b8ec12279f0ad6f31cc9b1c0c81263cd58f89c73a0c",
       "explanation": {
         "text": {
-          "en": "The opposite of a number is found by changing its sign, or multiplying it by -1. Therefore the opposite of -2 1/2 is -(-2 1/2) = 2 1/2, which is choice B.",
-          "es": "El opuesto de un número se obtiene cambiando su signo, o multiplicándolo por -1. Por eso, el opuesto de -2 1/2 es -(-2 1/2) = 2 1/2, que es la opción B."
+          "en": "The opposite of a number is found by changing its sign, or multiplying it by −1. Therefore the opposite of −2 1/2 is -(−2 1/2) = 2 1/2, which is choice B.",
+          "es": "El opuesto de un número se obtiene cambiando su signo, o multiplicándolo por −1. Por eso, el opuesto de −2 1/2 es -(−2 1/2) = 2 1/2, que es la opción B."
         },
         "source": "vine-authored"
       }
@@ -107,8 +107,8 @@
       "inputHash": "a00ebc7c38ef15170a5f4bb6f88d0dea84f9de8bae01bec6a13379aaee50e243",
       "explanation": {
         "text": {
-          "en": "Reflecting a point over the x-axis keeps its x-coordinate and changes the sign of its y-coordinate. Thus (-4, 6) becomes (-4, -6), choice B.",
-          "es": "Al reflejar sobre el eje x, (-4, 6) se convierte en (-4, -6) porque la coordenada x se conserva y la coordenada y cambia de signo. Por eso, corresponde a la opción B."
+          "en": "Reflecting a point over the x-axis keeps its x-coordinate and changes the sign of its y-coordinate. Thus (−4, 6) becomes (−4, −6), choice B.",
+          "es": "Al reflejar sobre el eje x, (−4, 6) se convierte en (−4, −6) porque la coordenada x se conserva y la coordenada y cambia de signo. Por eso, corresponde a la opción B."
         },
         "source": "vine-authored"
       }
@@ -127,8 +127,8 @@
       "inputHash": "12c45e3458482ba34329fef55b8c5205a24f53f00842661f5675adb94a719216",
       "explanation": {
         "text": {
-          "en": "Both numbers are negative, so both lie left of 0. Also -9/20 = -0.45 and -21/24 = -0.875; because -0.45 is greater, -9/20 lies to the right of -21/24, as stated in choice B.",
-          "es": "Ambos números son negativos, así que están a la izquierda de 0. Además, -9/20 = -0.45 y -21/24 = -0.875; como -0.45 es mayor, -9/20 está a la derecha de -21/24, como indica la opción B."
+          "en": "Both numbers are negative, so both lie left of 0. Also −9/20 = −0.45 and −21/24 = −0.875; because −0.45 is greater, −9/20 lies to the right of −21/24, as stated in choice B.",
+          "es": "Ambos números son negativos, así que están a la izquierda de 0. Además, −9/20 = −0.45 y −21/24 = −0.875; como −0.45 es mayor, −9/20 está a la derecha de −21/24, como indica la opción B."
         },
         "source": "vine-authored"
       }

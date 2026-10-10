@@ -52,8 +52,16 @@
     "nysed-2022-g4-mc-q16": {
       "inputHash": "661af98b57969fb05bf16973a6085f4fa2db4e160254dba333558621c6c416a4",
       "description": {
-        "en": "Question 16. A line plot has one X at 1 1/4 miles, two Xs at 2 miles, one X at 2 2/4 miles, and one X at 3 miles. What total distance did Mark run? Choices: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4 miles.",
-        "es": "Pregunta 16. Un diagrama lineal tiene una X en 1 1/4 millas, dos X en 2 millas, una X en 2 2/4 millas y una X en 3 millas. ¿Qué distancia total corrió Mark? Opciones: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4 millas."
+        "en": "Question 16. A line plot has one X at 1 1/4 miles, two Xs at 2 miles, one X at 2 2/4 miles, and one X at 3 miles. What total distance did Mark run? Choices: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4.",
+        "es": "Pregunta 16. Un diagrama lineal tiene una X en 1 1/4 millas, dos X en 2 millas, una X en 2 2/4 millas y una X en 3 millas. ¿Qué distancia total corrió Mark? Opciones: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 16. A line plot has one X at 1 1/4 miles, two Xs at 2 miles, one X at 2 2/4 miles, and one X at 3 miles. What total distance did Mark run? Choices: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4."
+        ],
+        "es": [
+          "Pregunta 16. Un diagrama lineal tiene una X en 1 1/4 millas, dos X en 2 millas, una X en 2 2/4 millas y una X en 3 millas. ¿Qué distancia total corrió Mark? Opciones: A: 8 1/4; B: 8 3/4; C: 10 2/4; D: 10 3/4."
+        ]
       }
     },
     "nysed-2022-g4-mc-q17": {

@@ -595,31 +595,14 @@
       "inputHash": "24d63c72ea67e604deab15435aebc08597b2c902afe75a624e4e5fe3c740e40e",
       "description": {
         "en": "Question 30. A middle school principal wants to change the lunch menu at the school. The principal surveys the students to determine how the students would feel about the changes. Which survey method will produce the best representative sample? Choices: A: survey every fifth student who rides in a car to school. B: survey 3 randomly selected students from every homeroom. C: survey every tenth seventh-grade student during lunch. D: survey 5 randomly selected students from every art, drama, and music class.",
-        "es": "Pregunta 30. Un director de escuela intermedia quiere cambiar el menú del almuerzo en la escuela. El director realiza una encuesta a los alumnos para determinar cómo se sentirían con los cambios. ¿Qué método de encuesta produciría la muestra más representativa? Opciones: A: encuestar a cada quinto alumno que llega en auto a la escuela B: encuestar a 3 alumnos seleccionados al azar de cada clase del curso C: encuestar a cada décimo alumno de séptimo grado durante el almuerzo D: encuestar a 5 alumnos seleccionados al azar de cada clase de arte, teatro y música"
+        "es": "Pregunta 30. Un director de escuela intermedia quiere cambiar el menú del almuerzo en la escuela. El director realiza una encuesta a los alumnos para determinar cómo se sentirían con los cambios. ¿Qué método de encuesta producirá la muestra más representativa? Opciones: A: encuestar a cada quinto alumno que llega en auto a la escuela B: encuestar a 3 alumnos seleccionados al azar de cada clase del curso C: encuestar a cada décimo alumno de séptimo grado durante el almuerzo D: encuestar a 5 alumnos seleccionados al azar de cada clase de arte, teatro y música"
       },
       "requiredSourceTokens": {
         "en": [
-          "every fifth student",
-          "3 randomly selected students",
-          "every tenth seventh-grade student",
-          "5 randomly selected students",
-          "A: survey every fifth student who rides in a car to school",
-          "B: survey 3 randomly selected students from every homeroom",
-          "C: survey every tenth seventh-grade student during lunch",
-          "D: survey 5 randomly selected students from every art, drama, and music class"
+          "Question 30. A middle school principal wants to change the lunch menu at the school. The principal surveys the students to determine how the students would feel about the changes. Which survey method will produce the best representative sample? Choices: A: survey every fifth student who rides in a car to school. B: survey 3 randomly selected students from every homeroom. C: survey every tenth seventh-grade student during lunch. D: survey 5 randomly selected students from every art, drama, and music class."
         ],
         "es": [
-          "cada quinto alumno",
-          "3 alumnos",
-          "cada clase del curso",
-          "cada décimo alumno",
-          "séptimo grado",
-          "5 alumnos",
-          "cada clase de arte, teatro y música",
-          "A: encuestar a cada quinto alumno que llega en auto a la escuela",
-          "B: encuestar a 3 alumnos seleccionados al azar de cada clase del curso",
-          "C: encuestar a cada décimo alumno de séptimo grado durante el almuerzo",
-          "D: encuestar a 5 alumnos seleccionados al azar de cada clase de arte, teatro y música"
+          "Pregunta 30. Un director de escuela intermedia quiere cambiar el menú del almuerzo en la escuela. El director realiza una encuesta a los alumnos para determinar cómo se sentirían con los cambios. ¿Qué método de encuesta producirá la muestra más representativa? Opciones: A: encuestar a cada quinto alumno que llega en auto a la escuela B: encuestar a 3 alumnos seleccionados al azar de cada clase del curso C: encuestar a cada décimo alumno de séptimo grado durante el almuerzo D: encuestar a 5 alumnos seleccionados al azar de cada clase de arte, teatro y música"
         ]
       }
     },

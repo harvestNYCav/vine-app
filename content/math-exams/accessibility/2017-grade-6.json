@@ -93,48 +93,14 @@
       "inputHash": "70de501ae6649c1fa31e5e090417a53d7b8663dde482bce090e8d6c9b5f36a96",
       "description": {
         "en": "Question 3. The model below represents a division problem. A horizontal number line has arrows at both ends and is marked in increments of 1/3 from 0 through 4; the integers 0, 1, 2, 3, and 4 are labeled. Beneath it is a bar extending from 0 to 3 and partitioned into thirds by dashed lines. The portion from 0 through 2 1/3 is shaded, and the portion from 2 1/3 through 3 is unshaded. Braces beneath the bar mark consecutive groups from 0 to 2/3, from 2/3 to 1 1/3, from 1 1/3 to 2, and from 2 to 2 2/3; each brace is labeled 2/3. Which equation is represented by the model? Choices: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 2/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3",
-        "es": "Pregunta 3. El siguiente modelo representa un problema de división. Una recta numérica horizontal, con flechas en ambos extremos, está marcada desde 0 hasta 4. Entre cada par de números enteros hay tres intervalos iguales, de modo que las marcas representan tercios. Debajo aparece una barra rectangular desde 0 hasta 3, dividida en tercios. La parte desde 0 hasta 2 1/3 está sombreada de gris; desde 2 1/3 hasta 3 queda sin sombrear. Debajo de la barra hay cuatro llaves consecutivas, cada una de longitud 2/3: las tres primeras cubren por completo la parte sombreada, desde 0 hasta 2, y la cuarta comienza en 2, cubre el último 1/3 sombreado y continúa otro 1/3 dentro de la parte no sombreada. Cada llave está rotulada 2/3. ¿A qué ecuación representa el modelo? Opciones: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 2/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3"
+        "es": "Pregunta 3. El siguiente modelo representa un problema de división. Una recta numérica horizontal, con flechas en ambos extremos, está marcada desde 0 hasta 4. Entre cada par de números enteros hay tres intervalos iguales, de modo que las marcas representan tercios. Debajo aparece una barra rectangular desde 0 hasta 3, dividida en tercios. La parte desde 0 hasta 2 1/3 está sombreada de gris; desde 2 1/3 hasta 3 queda sin sombrear. Debajo de la barra hay cuatro llaves consecutivas: de 0 a 2/3, de 2/3 a 1 1/3, de 1 1/3 a 2 y de 2 a 2 2/3. Cada llave está rotulada 2/3. ¿A qué ecuación representa el modelo? Opciones: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 2/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3"
       },
       "requiredSourceTokens": {
         "en": [
-          "1/3",
-          "2 1/3",
-          "2/3",
-          "1 1/3",
-          "2 2/3",
-          "2 1/3 ÷ 2/3 = 3 1/2",
-          "2 1/3 ÷ 2/3 = 3 1/3",
-          "7/1 ÷ 1/3 = 2 1/3",
-          "2/3 ÷ 3 1/2 = 2 1/3",
-          "A: 2 1/3 ÷ 2/3 = 3 1/2",
-          "B: 2 1/3 ÷ 2/3 = 3 1/3",
-          "C: 7/1 ÷ 1/3 = 2 1/3",
-          "D: 2/3 ÷ 3 1/2 = 2 1/3",
-          "3 1/2",
-          "3 1/3",
-          "7/1",
           "Question 3. The model below represents a division problem. A horizontal number line has arrows at both ends and is marked in increments of 1/3 from 0 through 4; the integers 0, 1, 2, 3, and 4 are labeled. Beneath it is a bar extending from 0 to 3 and partitioned into thirds by dashed lines. The portion from 0 through 2 1/3 is shaded, and the portion from 2 1/3 through 3 is unshaded. Braces beneath the bar mark consecutive groups from 0 to 2/3, from 2/3 to 1 1/3, from 1 1/3 to 2, and from 2 to 2 2/3; each brace is labeled 2/3. Which equation is represented by the model? Choices: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 2/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3"
         ],
         "es": [
-          "0",
-          "4",
-          "2 1/3",
-          "3",
-          "2/3",
-          "2",
-          "1/3",
-          "2 1/3 ÷ 2/3 = 3 1/2",
-          "2 1/3 ÷ 2/3 = 3 1/3",
-          "7/1 ÷ 1/3 = 2 1/3",
-          "2/3 ÷ 3 1/2 = 2 1/3",
-          "A: 2 1/3 ÷ 2/3 = 3 1/2",
-          "B: 2 1/3 ÷ 2/3 = 3 1/3",
-          "C: 7/1 ÷ 1/3 = 2 1/3",
-          "D: 2/3 ÷ 3 1/2 = 2 1/3",
-          "3 1/2",
-          "3 1/3",
-          "7/1",
-          "Pregunta 3. El siguiente modelo representa un problema de división. Una recta numérica horizontal, con flechas en ambos extremos, está marcada desde 0 hasta 4. Entre cada par de números enteros hay tres intervalos iguales, de modo que las marcas representan tercios. Debajo aparece una barra rectangular desde 0 hasta 3, dividida en tercios. La parte desde 0 hasta 2 1/3 está sombreada de gris; desde 2 1/3 hasta 3 queda sin sombrear. Debajo de la barra hay cuatro llaves consecutivas, cada una de longitud 2/3: las tres primeras cubren por completo la parte sombreada, desde 0 hasta 2, y la cuarta comienza en 2, cubre el último 1/3 sombreado y continúa otro 1/3 dentro de la parte no sombreada. Cada llave está rotulada 2/3. ¿A qué ecuación representa el modelo? Opciones: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 2/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3"
+          "Pregunta 3. El siguiente modelo representa un problema de división. Una recta numérica horizontal, con flechas en ambos extremos, está marcada desde 0 hasta 4. Entre cada par de números enteros hay tres intervalos iguales, de modo que las marcas representan tercios. Debajo aparece una barra rectangular desde 0 hasta 3, dividida en tercios. La parte desde 0 hasta 2 1/3 está sombreada de gris; desde 2 1/3 hasta 3 queda sin sombrear. Debajo de la barra hay cuatro llaves consecutivas: de 0 a 2/3, de 2/3 a 1 1/3, de 1 1/3 a 2 y de 2 a 2 2/3. Cada llave está rotulada 2/3. ¿A qué ecuación representa el modelo? Opciones: A: 2 1/3 ÷ 2/3 = 3 1/2 B: 2 1/3 ÷ 2/3 = 3 1/3 C: 7/1 ÷ 1/3 = 2 1/3 D: 2/3 ÷ 3 1/2 = 2 1/3"
         ]
       }
     },
@@ -1351,35 +1317,17 @@
       }
     },
     "nysed-2017-g6-mc-q46": {
-      "inputHash": "c648e14e522a10b9b707debd5d60b5bdb76b916aa4baad77e86257e28b36a79a",
+      "inputHash": "d61ac76715435148eb34a24b5a4776da3fc8f38d07d82609053deb13d56a5871",
       "description": {
-        "en": "Question 46. Which coordinate grid shows point M plotted at (4, 3)? Each choice is a first-quadrant coordinate grid with the horizontal x-axis and vertical y-axis numbered from 0 through 7 in increments of 1. Choices: A: Point M is plotted at (7, 0), on the x-axis. B: Point M is plotted at (4, 3). C: Point M is plotted at (0, 7), on the y-axis. D: Point M is plotted at (3, 4).",
-        "es": "Pregunta 46. ¿Qué cuadrícula de coordenadas muestra el punto M trazado en (4, 3)? Cada opción presenta un plano de coordenadas en el primer cuadrante, con el eje x horizontal hacia la derecha y el eje y vertical hacia arriba; las líneas de la cuadrícula marcan unidades enteras. Opciones: A: El punto M está en (7, 0), sobre el eje x. B: El punto M está en (4, 3), cuatro unidades a la derecha y tres unidades hacia arriba. C: El punto M está en (0, 7), sobre el eje y. D: El punto M está en (3, 4), tres unidades a la derecha y cuatro unidades hacia arriba."
+        "en": "Question 46. Which coordinate grid shows point M plotted at (4, 3)? Each choice is a first-quadrant grid with horizontal x-axis and vertical y-axis labeled from 0 through 7 at unit intervals. Choices: A: M is on the horizontal axis at its label 7. B: M is where the vertical grid line above horizontal-axis label 4 crosses the horizontal grid line beside vertical-axis label 3. C: M is on the vertical axis at its label 7. D: M is where the vertical grid line above horizontal-axis label 3 crosses the horizontal grid line beside vertical-axis label 4.",
+        "es": "Pregunta 46. ¿Qué cuadrícula de coordenadas muestra el punto M trazado en (4, 3)? Cada opción tiene un eje x horizontal y un eje y vertical, rotulados de 0 a 7 en intervalos de una unidad. Opciones: A: M está sobre el eje horizontal en su rótulo 7. B: M está donde la línea vertical sobre el rótulo 4 del eje horizontal cruza la línea horizontal junto al rótulo 3 del eje vertical. C: M está sobre el eje vertical en su rótulo 7. D: M está donde la línea vertical sobre el rótulo 3 del eje horizontal cruza la línea horizontal junto al rótulo 4 del eje vertical."
       },
       "requiredSourceTokens": {
         "en": [
-          "(4, 3)",
-          "0 through 7",
-          "1",
-          "(7, 0)",
-          "(0, 7)",
-          "(3, 4)",
-          "A: Point M is plotted at (7, 0), on the x-axis",
-          "B: Point M is plotted at (4, 3)",
-          "C: Point M is plotted at (0, 7), on the y-axis",
-          "D: Point M is plotted at (3, 4)"
+          "Question 46. Which coordinate grid shows point M plotted at (4, 3)? Each choice is a first-quadrant grid with horizontal x-axis and vertical y-axis labeled from 0 through 7 at unit intervals. Choices: A: M is on the horizontal axis at its label 7. B: M is where the vertical grid line above horizontal-axis label 4 crosses the horizontal grid line beside vertical-axis label 3. C: M is on the vertical axis at its label 7. D: M is where the vertical grid line above horizontal-axis label 3 crosses the horizontal grid line beside vertical-axis label 4."
         ],
         "es": [
-          "(4, 3)",
-          "(7, 0)",
-          "(0, 7)",
-          "(3, 4)",
-          "eje x",
-          "eje y",
-          "A: El punto M está en (7, 0), sobre el eje x",
-          "B: El punto M está en (4, 3), cuatro unidades a la derecha y tres unidades hacia arriba",
-          "C: El punto M está en (0, 7), sobre el eje y",
-          "D: El punto M está en (3, 4), tres unidades a la derecha y cuatro unidades hacia arriba"
+          "Pregunta 46. ¿Qué cuadrícula de coordenadas muestra el punto M trazado en (4, 3)? Cada opción tiene un eje x horizontal y un eje y vertical, rotulados de 0 a 7 en intervalos de una unidad. Opciones: A: M está sobre el eje horizontal en su rótulo 7. B: M está donde la línea vertical sobre el rótulo 4 del eje horizontal cruza la línea horizontal junto al rótulo 3 del eje vertical. C: M está sobre el eje vertical en su rótulo 7. D: M está donde la línea vertical sobre el rótulo 3 del eje horizontal cruza la línea horizontal junto al rótulo 4 del eje vertical."
         ]
       }
     },

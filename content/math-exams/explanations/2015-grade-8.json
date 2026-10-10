@@ -114,7 +114,7 @@
       }
     },
     "nysed-2015-g8-mc-q29": {
-      "inputHash": "c2482f18b329f6c44652226c282eefcfcec7ca482e937891598a6d817023f42a",
+      "inputHash": "4e84afbfede14a1e94126b92659145ee681f56b93859dc609ba33b9bb0d859fa",
       "explanation": {
         "text": {
           "en": "A rate of 3°C per hour means the graph must rise 3 degrees for each 1-hour move right. Graph D rises from 20°C at hour 0 to 26°C at hour 2, giving (26 − 20)/(2 − 0) = 3.",
@@ -124,7 +124,7 @@
       }
     },
     "nysed-2015-g8-mc-q30": {
-      "inputHash": "4a7c65d721c647b618911fe2b9b970ef9570bdb1b7b60e0b38ad202892c58c39",
+      "inputHash": "c1a5e85b1c2c2792a1b9229dcb071c45d57082b7d538a3a51b4172ae7bb153d4",
       "explanation": {
         "text": {
           "en": "Use V = (1/3)πr²h: V = (1/3)π(1.2)²(2.9) = 1.392π ≈ 4.4 cubic inches. This matches the choice showing about 4.4 cubic inches.",
@@ -134,7 +134,7 @@
       }
     },
     "nysed-2015-g8-mc-q35": {
-      "inputHash": "90b9ad36f41853ed2b17ad2c84fa0be7cc76d37ffb48a3e700eaccbe89e9552c",
+      "inputHash": "10883964f3d9591226e6e3e8acaaba212ac157efadb2a5d65c5aea465c35ae50",
       "explanation": {
         "text": {
           "en": "The slope through (0, −1) and (4, 2) is (2 − (−1))/(4 − 0) = 3/4. Since the y-intercept is −1, the equation is y = (3/4)x − 1.",
@@ -144,7 +144,7 @@
       }
     },
     "nysed-2015-g8-mc-q36": {
-      "inputHash": "b6887e64532e42fc6d7590ce2806d45a80672b2c3a6b2752d05849ddcdd6444e",
+      "inputHash": "323bfd8586ec76fd6320b6706bb85016fd72b5aea307de64f8b82d638f190129",
       "explanation": {
         "text": {
           "en": "Substitution gives 5(−6) + 3(8) = −6 and 2(−6) + 8 = −4, so (−6, 8) satisfies both equations. The equations have different slopes, so this intersection is the only solution.",
@@ -154,7 +154,7 @@
       }
     },
     "nysed-2015-g8-mc-q38": {
-      "inputHash": "ae7270d70942f0be914d332c00f878711fdc896e003659f173338b6687c31a7f",
+      "inputHash": "aed3deb5ff15a10e6c111b8ec8dcb5ccaac72148070bbf33cba9faabca940e6c",
       "explanation": {
         "text": {
           "en": "Using the y-intercept point (0, −2) and (4, 12), the slope is (12 − (−2))/(4 − 0) = 14/4 = 7/2. Thus, the line is y = (7/2)x − 2.",
@@ -164,7 +164,7 @@
       }
     },
     "nysed-2015-g8-mc-q42": {
-      "inputHash": "9a70cf28bcd4c9d193e498d4a742bfcfb5618a76c7124a3ca9c3b9acdede8577",
+      "inputHash": "f9776e7cbe6cc790b4b3775e6bf815e10926989cdddad4dbf6df7da0ee5de46a",
       "explanation": {
         "text": {
           "en": "Every plane cross-section of a prism is bounded by straight line segments, so it cannot produce two solids with circular bases. Cones, cylinders, and spheres can all be sliced to create circular faces.",
@@ -174,7 +174,7 @@
       }
     },
     "nysed-2015-g8-mc-q45": {
-      "inputHash": "33fa1eae165563864ae8b2860c73e91d756d2190720de806aeff2f090c807e68",
+      "inputHash": "e918b0a129b4ef77738ed41a9d2c3781c933b6cf1423715ea514b8efb7595e00",
       "explanation": {
         "text": {
           "en": "Function 1 has slope 3/4 and y-intercept 1. Using the grid, function 2 rises less than 3 units for every 4 units to the right and crosses the y-axis below 0, so function 1 has both the greater rate of change and the greater intercept.",
@@ -184,7 +184,7 @@
       }
     },
     "nysed-2015-g8-mc-q46": {
-      "inputHash": "3726f99a16c0b2059065f9c183dd61e9f7186cbca59d64347b749194f46856ba",
+      "inputHash": "09ad093f21decdd5d61b680f0aa941e04b6d60473c6f5cf1102504b236c704b2",
       "explanation": {
         "text": {
           "en": "The radius is half the 14-centimeter diameter, so r = 7. Using 112π = π(7²)h gives 112 = 49h and h = 112/49 = 16/7 centimeters.",
@@ -194,7 +194,7 @@
       }
     },
     "nysed-2015-g8-mc-q47": {
-      "inputHash": "d3aa7223aef8c7d072ea4ad79640db245b3db2861cb0ecd24ba532de337db1ed",
+      "inputHash": "42ef10f7944dfbf91778a17281d242eaea689dcdb016afc2a28ec06e732e1fc3",
       "explanation": {
         "text": {
           "en": "Figure L is a 4-by-3 rectangle, while figure M is a 3-by-3 square. Rotations, reflections, and translations preserve side lengths, so they cannot transform these noncongruent figures into each other.",
@@ -204,7 +204,7 @@
       }
     },
     "nysed-2015-g8-mc-q49": {
-      "inputHash": "4175110b613159f34a3fa84f83c28fc5bdcc6509778b9b63fac5e2b7260ddd0c",
+      "inputHash": "d6c23b26b907ff9123edd5729bc3c187e52cb3699ac75fad3e73dc4dbf80dbc1",
       "explanation": {
         "text": {
           "en": "The two nonparallel lines intersect exactly once, at (−2, 2). That point is the unique solution because it is the only ordered pair lying on both lines simultaneously.",
@@ -214,7 +214,7 @@
       }
     },
     "nysed-2015-g8-mc-q53": {
-      "inputHash": "6e07aabcc2b8bcdd2ee5a7524c53580243e5566de8a8ca747e3c37cc46f1b018",
+      "inputHash": "0a1b2f6de9ef22f30ca32936248a8f76aacfc7c095adcfaacb831d2e8feb1010",
       "explanation": {
         "text": {
           "en": "The variable x counts years after 1976, and 2020 − 1976 = 44. Therefore, the prediction uses y = −0.054(44) + 44.54.",
@@ -224,7 +224,7 @@
       }
     },
     "nysed-2015-g8-mc-q54": {
-      "inputHash": "9f1aee7b2e627229d6c26b3ed54140f01efe6d40c76dc8d28204b1eb2af1ebbc",
+      "inputHash": "d18643f987d98da282ce1e31c506bd774bc61deb821fa4b99eb8f6217446ca88",
       "explanation": {
         "text": {
           "en": "The pool's radius is 18 ÷ 2 = 9 feet, and 6 inches = 0.5 foot, so the water depth is 4.5 − 0.5 = 4 feet. The volume is π(9²)(4) = 324π ≈ 1,018 cubic feet.",

@@ -400,45 +400,15 @@
     "nysed-2026-g5-mc-q13": {
       "inputHash": "b78edf95532041466a3030f1fd1c5f6560af1b6c102c4064db1c7ed20badff49",
       "description": {
-        "en": "Question 13. A student records the time they spend reading each day for 8 days. They start to make a line plot using the data collected. The data table and the line plot are described below. The table is titled “TIME SPENT READING (HOURS)” and contains 8 values in four rows and two columns: first row, 1 3/4 and 1 1/4; second row, 3/4 and 3/4; third row, 2/4 and 1 2/4; fourth row, 0 and 2. The line plot is titled “TIME SPENT READING.” Its horizontal number line, labeled “Time (hours),” has arrows pointing left and right and tick marks every 1/4 hour from 0 through 2. The ticks at 0, 1, and 2 are labeled. One X is plotted above each of 0, 2/4, 3/4, 1 1/4, 1 3/4, and 2. What data points does the student need to add to complete the line plot? Choices: A: 1/4 and 1 2/4. B: 2/4 and 1 1/4. C: 3/4 and 1 3/4. D: 3/4 and 1 2/4.",
-        "es": "Pregunta 13. Un alumno registra el tiempo que dedica a leer cada día, durante 8 días. Comienza por hacer un diagrama lineal con los datos reunidos. A continuación, se muestran la tabla de datos y el diagrama lineal. La tabla se titula “TIEMPO DEDICADO A LEER (HORAS)” y contiene ocho valores, distribuidos en cuatro filas y dos columnas: primera fila, 1 3/4 y 1 1/4; segunda fila, 3/4 y 3/4; tercera fila, 2/4 y 1 2/4; cuarta fila, 0 y 2. El diagrama lineal se titula “TIEMPO DEDICADO A LEER”. Su eje horizontal, con flechas en ambos extremos, se titula “Tiempo (en horas)” y va de 0 a 2, con marcas cada 1/4 de hora. Las marcas correspondientes a 0, 1 y 2 están rotuladas. Hay una X sobre cada uno de estos valores: 0, 2/4, 3/4, 1 1/4, 1 3/4 y 2. ¿Qué puntos de datos necesita agregar el alumno para completar el diagrama lineal? Opciones: A: 1/4 y 1 2/4. B: 2/4 y 1 1/4. C: 3/4 y 1 3/4. D: 3/4 y 1 2/4."
+        "en": "Question 13. A student records the time they spend reading each day for 8 days. They start to make a line plot using the data collected. The data table and the line plot are described below. The table is titled “TIME SPENT READING (HOURS)” and contains 8 values in four rows and two columns: first row, 1 3/4 and 1 1/4; second row, 3/4 and 3/4; third row, 2/4 and 1 2/4; fourth row, 0 and 2. The line plot is titled “TIME SPENT READING.” Its horizontal number line, labeled “Time (hours),” has arrows pointing left and right and four equal intervals between successive whole-number labels from 0 through 2. The ticks at 0, 1, and 2 are labeled. One X is plotted above 0, the second and third ticks after 0, the first and third ticks after 1, and 2. What data points does the student need to add to complete the line plot? Choices: A: 1/4 and 1 2/4. B: 2/4 and 1 1/4. C: 3/4 and 1 3/4. D: 3/4 and 1 2/4.",
+        "es": "Pregunta 13. Un alumno registra el tiempo que dedica a leer cada día, durante 8 días. Comienza por hacer un diagrama lineal con los datos reunidos. A continuación, se muestran la tabla de datos y el diagrama lineal. La tabla se titula “TIEMPO DEDICADO A LEER (HORAS)” y contiene ocho valores, distribuidos en cuatro filas y dos columnas: primera fila, 1 3/4 y 1 1/4; segunda fila, 3/4 y 3/4; tercera fila, 2/4 y 1 2/4; cuarta fila, 0 y 2. El diagrama lineal se titula “TIEMPO DEDICADO A LEER”. Su eje horizontal, con flechas en ambos extremos, se titula “Tiempo (en horas)” y va de 0 a 2, con cuatro intervalos iguales entre cada par de números enteros consecutivos. Las marcas correspondientes a 0, 1 y 2 están rotuladas. Hay una X sobre 0, sobre la segunda y tercera marca después de 0, sobre la primera y tercera marca después de 1 y sobre 2. ¿Qué puntos de datos necesita agregar el alumno para completar el diagrama lineal? Opciones: A: 1/4 y 1 2/4. B: 2/4 y 1 1/4. C: 3/4 y 1 3/4. D: 3/4 y 1 2/4."
       },
       "requiredSourceTokens": {
         "en": [
-          "8",
-          "1 3/4",
-          "1 1/4",
-          "3/4",
-          "2/4",
-          "1 2/4",
-          "0",
-          "2",
-          "1/4",
-          "1",
-          "A: 1/4 and 1 2/4",
-          "B: 2/4 and 1 1/4",
-          "C: 3/4 and 1 3/4",
-          "D: 3/4 and 1 2/4"
+          "Question 13. A student records the time they spend reading each day for 8 days. They start to make a line plot using the data collected. The data table and the line plot are described below. The table is titled “TIME SPENT READING (HOURS)” and contains 8 values in four rows and two columns: first row, 1 3/4 and 1 1/4; second row, 3/4 and 3/4; third row, 2/4 and 1 2/4; fourth row, 0 and 2. The line plot is titled “TIME SPENT READING.” Its horizontal number line, labeled “Time (hours),” has arrows pointing left and right and four equal intervals between successive whole-number labels from 0 through 2. The ticks at 0, 1, and 2 are labeled. One X is plotted above 0, the second and third ticks after 0, the first and third ticks after 1, and 2. What data points does the student need to add to complete the line plot? Choices: A: 1/4 and 1 2/4. B: 2/4 and 1 1/4. C: 3/4 and 1 3/4. D: 3/4 and 1 2/4."
         ],
         "es": [
-          "8",
-          "1 3/4",
-          "1 1/4",
-          "3/4",
-          "2/4",
-          "1 2/4",
-          "0",
-          "2",
-          "1/4",
-          "1",
-          "1/4 y 1 2/4",
-          "2/4 y 1 1/4",
-          "3/4 y 1 3/4",
-          "3/4 y 1 2/4",
-          "A: 1/4 y 1 2/4",
-          "B: 2/4 y 1 1/4",
-          "C: 3/4 y 1 3/4",
-          "D: 3/4 y 1 2/4"
+          "Pregunta 13. Un alumno registra el tiempo que dedica a leer cada día, durante 8 días. Comienza por hacer un diagrama lineal con los datos reunidos. A continuación, se muestran la tabla de datos y el diagrama lineal. La tabla se titula “TIEMPO DEDICADO A LEER (HORAS)” y contiene ocho valores, distribuidos en cuatro filas y dos columnas: primera fila, 1 3/4 y 1 1/4; segunda fila, 3/4 y 3/4; tercera fila, 2/4 y 1 2/4; cuarta fila, 0 y 2. El diagrama lineal se titula “TIEMPO DEDICADO A LEER”. Su eje horizontal, con flechas en ambos extremos, se titula “Tiempo (en horas)” y va de 0 a 2, con cuatro intervalos iguales entre cada par de números enteros consecutivos. Las marcas correspondientes a 0, 1 y 2 están rotuladas. Hay una X sobre 0, sobre la segunda y tercera marca después de 0, sobre la primera y tercera marca después de 1 y sobre 2. ¿Qué puntos de datos necesita agregar el alumno para completar el diagrama lineal? Opciones: A: 1/4 y 1 2/4. B: 2/4 y 1 1/4. C: 3/4 y 1 3/4. D: 3/4 y 1 2/4."
         ]
       }
     },

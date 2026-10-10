@@ -17,8 +17,8 @@
       "inputHash": "b4ebf168e633fe6e7cae5b7a79e1385745f4538eb5ff2cea1efd1579b5cb1025",
       "explanation": {
         "text": {
-          "en": "Divide the coefficients and subtract the exponents: (1.6/0.2) × 10^(5−2) = 8 × 10³.",
-          "es": "Se dividen los coeficientes y se restan los exponentes: (1.6/0.2) × 10^(5−2) = 8 × 10³."
+          "en": "Divide the coefficients and subtract the exponents: (1.6/0.2) × 10⁽⁵⁻²⁾ = 8 × 10³.",
+          "es": "Se dividen los coeficientes y se restan los exponentes: (1.6/0.2) × 10⁽⁵⁻²⁾ = 8 × 10³."
         },
         "source": "vine-authored"
       }
@@ -227,8 +227,8 @@
       "inputHash": "4a770b96eb4231ddc0fca4f4634cccd66c4c0c04993a806182c2016db8adc388",
       "explanation": {
         "text": {
-          "en": "When multiplying powers with the same base, add exponents: 7⁻⁸ × 7³ = 7^(−8+3) = 7⁻⁵.",
-          "es": "Al multiplicar potencias de la misma base, se suman los exponentes: 7⁻⁸ × 7³ = 7^(−8+3) = 7⁻⁵."
+          "en": "When multiplying powers with the same base, add exponents: 7⁻⁸ × 7³ = 7⁽⁻⁸⁺³⁾ = 7⁻⁵.",
+          "es": "Al multiplicar potencias de la misma base, se suman los exponentes: 7⁻⁸ × 7³ = 7⁽⁻⁸⁺³⁾ = 7⁻⁵."
         },
         "source": "vine-authored"
       }

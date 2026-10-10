@@ -87,8 +87,8 @@
       "inputHash": "c42876637dc485b9b06ab95de941bd8fd2d7026c485f4897e1d472a0f31fb14b",
       "explanation": {
         "text": {
-          "en": "When multiplying powers with the same base, add exponents: (15³)(15⁻⁷) = 15^(3−7) = 15⁻⁴ = 1/15⁴.",
-          "es": "Al multiplicar potencias de la misma base se suman los exponentes: (15³)(15⁻⁷) = 15^(3−7) = 15⁻⁴ = 1/15⁴."
+          "en": "When multiplying powers with the same base, add exponents: (15³)(15⁻⁷) = 15⁽³⁻⁷⁾ = 15⁻⁴ = 1/15⁴.",
+          "es": "Al multiplicar potencias de la misma base se suman los exponentes: (15³)(15⁻⁷) = 15⁽³⁻⁷⁾ = 15⁻⁴ = 1/15⁴."
         },
         "source": "vine-authored"
       }
@@ -108,7 +108,7 @@
       "explanation": {
         "text": {
           "en": "Distribute: −(1/3)(6y + 6) + 21 = 3y becomes −2y − 2 + 21 = 3y. Thus 19 = 5y and y = 19/5.",
-          "es": "Se distribuye: −(1/3)(6y + 6) + 21 = 3y se convierte en −2y − 2 + 21 = 3y. Así, 19 = 5y y y = 19/5."
+          "es": "Se distribuye: −(1/3)(6y + 6) + 21 = 3y se convierte en −2y − 2 + 21 = 3y. Así, 19 = 5y, de modo que y = 19/5."
         },
         "source": "vine-authored"
       }
@@ -177,8 +177,8 @@
       "inputHash": "eec47fcf7889f8a720eacf670ecff27d5c333681ebfd3fa47a6d27d83af68a0e",
       "explanation": {
         "text": {
-          "en": "The original product is 4⁻⁵ × 4⁸ = 4³. Choice C gives 4²/4⁻¹ = 4^(2−(−1)) = 4³, so it is equivalent.",
-          "es": "El producto original es 4⁻⁵ × 4⁸ = 4³. La opción C da 4²/4⁻¹ = 4^(2−(−1)) = 4³, así que es equivalente."
+          "en": "The original product is 4⁻⁵ × 4⁸ = 4³. Choice C gives 4²/4⁻¹ = 4⁽²⁻⁽⁻¹⁾⁾ = 4³, so it is equivalent.",
+          "es": "El producto original es 4⁻⁵ × 4⁸ = 4³. La opción C da 4²/4⁻¹ = 4⁽²⁻⁽⁻¹⁾⁾ = 4³, así que es equivalente."
         },
         "source": "vine-authored"
       }

@@ -78,7 +78,7 @@
       "explanation": {
         "text": {
           "en": "The number of 1/3-pound portions in 4 pounds is 4 ÷ 1/3 = 4 × 3 = 12 fills.",
-          "es": "La cantidad de porciones de 1/3 de libra en 4 libras es 4 ÷ 1/3 = 4 × 3 = 12 llenados."
+          "es": "La cantidad de porciones de 1/3 de libra en 4 libras es 4 ÷ 1/3 = 4 × 3 = 12, así que Jack puede llenar el comedero 12 veces."
         },
         "source": "vine-authored"
       }
@@ -118,7 +118,7 @@
       "explanation": {
         "text": {
           "en": "Sharing equally among 8 classrooms requires 1,648 ÷ 8 = 206, so each classroom receives $206.",
-          "es": "Repartir por igual entre 8 aulas requiere 1,648 ÷ 8 = 206, así que cada salón recibe $206."
+          "es": "Repartir por igual entre 8 aulas requiere 1,648 ÷ 8 = 206, así que cada aula recibe $206."
         },
         "source": "vine-authored"
       }
@@ -128,7 +128,7 @@
       "explanation": {
         "text": {
           "en": "Add the five amounts shown by the marks on the line plot. Group equal fractions to make the addition easier. The total is 1/4 + 1/4 + 1/2 + 1/2 + 3/4 = 1/2 + 1 + 3/4 = 2 1/4 cups.",
-          "es": "Suma las cinco cantidades indicadas por las marcas del diagrama de puntos. Agrupa las fracciones iguales para facilitar la suma. El total es 1/4 + 1/4 + 1/2 + 1/2 + 3/4 = 1/2 + 1 + 3/4 = 2 1/4 tazas."
+          "es": "Suma las cinco cantidades indicadas por las marcas del diagrama lineal. Agrupa las fracciones iguales para facilitar la suma. El total es 1/4 + 1/4 + 1/2 + 1/2 + 3/4 = 1/2 + 1 + 3/4 = 2 1/4 tazas."
         },
         "source": "vine-authored"
       }
@@ -197,8 +197,8 @@
       "inputHash": "fc0cf5af8a4e624e316d5c2462ccfabc97356ed637d7ac109219b9151f2b4f27",
       "explanation": {
         "text": {
-          "en": "The whole-number part 482 is “four hundred eighty-two,” and 0.073 is “seventy-three thousandths” because 73 occupies the thousandths place. Together they form choice D.",
-          "es": "La parte entera 482 es “cuatrocientos ochenta y dos” y 0.073 es “setenta y tres milésimas” porque 73 ocupa hasta el lugar de los milésimas. Juntas forman la opción D."
+          "en": "The whole-number part 482 is “four hundred eighty-two,” and 0.073 is “seventy-three thousandths” because the last digit, 3, is in the thousandths place. Together they form choice D.",
+          "es": "La parte entera 482 es “cuatrocientos ochenta y dos” y 0.073 es “setenta y tres milésimas” porque el último dígito, 3, está en el lugar de las milésimas. Juntas forman la opción D."
         },
         "source": "vine-authored"
       }

@@ -38,7 +38,7 @@
       "explanation": {
         "text": {
           "en": "The round pan has radius 5 inches, so its area is π(5²) ≈ 78.5 square inches. The rectangle's area is 10 × 7 = 70, making the round pan about 8.5 square inches greater.",
-          "es": "El fuente redondo tiene radio de 5 pulgadas, así que su área es π(5²) ≈ 78.5 pulgadas cuadradas. El área del rectángulo es 10 × 7 = 70, por lo que el fuente redondo es aproximadamente 8.5 pulgadas cuadradas mayor."
+          "es": "La fuente redonda tiene un radio de 5 pulgadas, así que el área de su base es π(5²) ≈ 78.5 pulgadas cuadradas. El área de la base de la fuente rectangular es 10 × 7 = 70 pulgadas cuadradas, por lo que el área de la base de la fuente redonda es aproximadamente 8.5 pulgadas cuadradas mayor."
         },
         "source": "vine-authored"
       }
@@ -168,7 +168,7 @@
       "explanation": {
         "text": {
           "en": "Randomly selecting students from every homeroom includes students across the whole school and avoids favoring one grade, transportation group, or elective. Thus three random students per homeroom gives the most representative sample.",
-          "es": "Seleccionar al azar estudiantes de cada clase del curso incluye alumnos de toda la escuela y evita favorecer un grado, medio de transporte o clase optativa. Por lo tanto, tres estudiantes al azar por salón producen la muestra más representativa."
+          "es": "Seleccionar al azar alumnos de cada clase del curso incluye alumnos de toda la escuela y evita favorecer un grado, medio de transporte o clase optativa. Por lo tanto, tres alumnos al azar de cada clase del curso producen la muestra más representativa."
         },
         "source": "vine-authored"
       }
@@ -238,7 +238,7 @@
       "explanation": {
         "text": {
           "en": "The h hats cost $9.95h, and shipping adds $5.00. Because the total is less than $125, the inequality is 9.95h + 5 < 125.",
-          "es": "Los h gorras cuestan $9.95h y el envío suma $5.00. Como el total es menor que $125, la desigualdad es 9.95h + 5 < 125."
+          "es": "Las h gorras cuestan $9.95h y el envío suma $5.00. Como el total es menor que $125, la desigualdad es 9.95h + 5 < 125."
         },
         "source": "vine-authored"
       }
@@ -257,8 +257,8 @@
       "inputHash": "a56774554d507a7622cc466d7cb3603e5621ed2db6d8b019253be2cf4335bbf1",
       "explanation": {
         "text": {
-          "en": "After 30 cups are used, x − 30 remain. Since 15% of that remainder is 90, 0.15(x − 30) = 90, so x − 30 = 600 and x = 630 cups.",
-          "es": "Después de usar 30 tazas, quedan x − 30. Como el 15% de esa cantidad es 90, 0.15(x − 30) = 90, así que x − 30 = 600 y x = 630 tazas."
+          "en": "Let x be the original number of cups. After 30 cups are used, x − 30 remain. Since 15% of that remainder is 90, 0.15(x − 30) = 90, so x − 30 = 600 and x = 630 cups.",
+          "es": "Sea x el número original de tazas. Después de usar 30 tazas, quedan x − 30. Como el 15% de esa cantidad es 90, 0.15(x − 30) = 90, así que x − 30 = 600 y x = 630 tazas."
         },
         "source": "vine-authored"
       }

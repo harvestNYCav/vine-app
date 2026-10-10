@@ -7,8 +7,8 @@
       "inputHash": "c6d5c51c3e9075b5318222306e26450f28eb3626a2d54c21f50b6fe1effe566b",
       "explanation": {
         "text": {
-          "en": "Moving the decimal in 0.000007 six places to the right produces the coefficient 7. Because the original number is less than 1, the exponent is negative: 0.000007 = 7 × 10^-6, choice A.",
-          "es": "Al mover el punto decimal de 0.000007 seis lugares a la derecha se obtiene el coeficiente 7. Como el número original es menor que 1, el exponente es negativo: 0.000007 = 7 × 10^-6, la opción A."
+          "en": "Moving the decimal in 0.000007 six places to the right produces the coefficient 7. Because the original number is less than 1, the exponent is negative: 0.000007 = 7 × 10⁻⁶, choice A.",
+          "es": "Al mover el punto decimal de 0.000007 seis lugares a la derecha se obtiene el coeficiente 7. Como el número original es menor que 1, el exponente es negativo: 0.000007 = 7 × 10⁻⁶, la opción A."
         },
         "source": "vine-authored"
       }
@@ -17,8 +17,8 @@
       "inputHash": "57f2d6daee38b5d567a2574ae9f6952d79cdd9aba283f48b683278eb2d772539",
       "explanation": {
         "text": {
-          "en": "Graph D has every required piece: a rising straight segment from x = -5 to -3, a horizontal segment from -3 to 0, a falling straight segment from 0 to 3, and then a rising curved segment from 3 to 5. Thus D matches all four intervals.",
-          "es": "La gráfica D tiene cada tramo requerido: un segmento recto creciente de x = -5 a -3, uno horizontal de -3 a 0, uno recto decreciente de 0 a 3 y luego una curva creciente de 3 a 5. Por eso D cumple los cuatro intervalos."
+          "en": "Graph D has every required piece: a rising straight segment from x = −5 to −3, a horizontal segment from −3 to 0, a falling straight segment from 0 to 3, and then a rising curved segment from 3 to 5. Thus D matches all four intervals.",
+          "es": "La gráfica D tiene cada tramo requerido: un segmento recto creciente de x = −5 a −3, uno horizontal de −3 a 0, uno recto decreciente de 0 a 3 y luego una curva creciente de 3 a 5. Por eso D cumple los cuatro intervalos."
         },
         "source": "vine-authored"
       }
@@ -47,8 +47,8 @@
       "inputHash": "f4a1d11b11df7b3f5516f2f34f96f6b619a4ebb713f2c8c1cc31bdb88bbed34b",
       "explanation": {
         "text": {
-          "en": "Choices A and B are both the same 180° rotation, and reflecting across both axes in C also sends (x, y) to (-x, -y), which maps F onto G. For D, the vertex (-5, 2) becomes (5, 2) and then (2, -5), which is not a vertex of G. Therefore D does not work.",
-          "es": "Las opciones A y B son la misma rotación de 180°, y las dos reflexiones de C también transforman (x, y) en (-x, -y), llevando F a G. En D, el vértice (-5, 2) pasa a (5, 2) y luego a (2, -5), que no es vértice de G. Por lo tanto, D no funciona."
+          "en": "Choices A and B are both the same 180° rotation, and reflecting across both axes in C also sends (x, y) to (-x, -y), which maps F onto G. For D, the vertex (−5, 2) becomes (5, 2) and then (2, −5), which is not a vertex of G. Therefore D does not work.",
+          "es": "Las opciones A y B son la misma rotación de 180°, y las dos reflexiones de C también transforman (x, y) en (-x, -y), llevando F a G. En D, el vértice (−5, 2) pasa a (5, 2) y luego a (2, −5), que no es vértice de G. Por lo tanto, D no funciona."
         },
         "source": "vine-authored"
       }
@@ -57,8 +57,8 @@
       "inputHash": "f86fec862315fcc9b21ab0a31258a1855555661568507d9f1b5db3fc5307926f",
       "explanation": {
         "text": {
-          "en": "A linear function has the variable only to the first power. In y = x^2 + 9, the term x^2 makes the graph quadratic rather than a straight line. Therefore the function is nonlinear for the reason stated in choice D.",
-          "es": "En una función lineal, la variable aparece solo a la primera potencia. En y = x^2 + 9, el término x^2 hace que la gráfica sea cuadrática y no una recta. Por lo tanto, la función es no lineal por la razón indicada en la opción D."
+          "en": "A linear function has the variable only to the first power. In y = x² + 9, the term x² makes the graph quadratic rather than a straight line. Therefore the function is nonlinear for the reason stated in choice D.",
+          "es": "En una función lineal, la variable aparece solo a la primera potencia. En y = x² + 9, el término x² hace que la gráfica sea cuadrática y no una recta. Por lo tanto, la función es no lineal por la razón indicada en la opción D."
         },
         "source": "vine-authored"
       }
@@ -67,8 +67,8 @@
       "inputHash": "626761d1b736b2445ad809b2f186314d10620fcc905b04a42e2c331c138f5661",
       "explanation": {
         "text": {
-          "en": "The required intersection is (3/2, 0). Substituting x = 3/2 into choice B gives y = (4/3)(3/2) - 2 = 2 - 2 = 0. Its slope 4/3 differs from line n's slope -2/3, so the lines meet exactly once, at that point.",
-          "es": "La intersección requerida es (3/2, 0). Al sustituir x = 3/2 en la opción B se obtiene y = (4/3)(3/2) - 2 = 2 - 2 = 0. Su pendiente 4/3 es distinta de la pendiente -2/3 de n, así que las rectas se cruzan una sola vez, en ese punto."
+          "en": "The required intersection is (3/2, 0). Substituting x = 3/2 into choice B gives y = (4/3)(3/2) − 2 = 2 − 2 = 0. Its slope 4/3 differs from line n's slope −2/3, so the lines meet exactly once, at that point.",
+          "es": "La intersección requerida es (3/2, 0). Al sustituir x = 3/2 en la opción B se obtiene y = (4/3)(3/2) − 2 = 2 − 2 = 0. Su pendiente 4/3 es distinta de la pendiente −2/3 de n, así que las rectas se cruzan una sola vez, en ese punto."
         },
         "source": "vine-authored"
       }
@@ -77,8 +77,8 @@
       "inputHash": "77b0d2592e6bb126d472d32fb74e5a331ad8b4c303051bd5751d03ddfc2ff5e2",
       "explanation": {
         "text": {
-          "en": "For Function F, the rate of change is (24 - 18) ÷ (6 - 4) = 6 ÷ 2 = 3. In y = 4x + 2, Function G has rate of change 4. Since 4 > 3, G's rate is greater, which is choice D.",
-          "es": "Para la Función F, la tasa de cambio es (24 - 18) ÷ (6 - 4) = 6 ÷ 2 = 3. En y = 4x + 2, la Función G tiene tasa de cambio 4. Como 4 > 3, la tasa de G es mayor, que es la opción D."
+          "en": "For Function F, the rate of change is (24 − 18) ÷ (6 − 4) = 6 ÷ 2 = 3. In y = 4x + 2, Function G has rate of change 4. Since 4 > 3, G's rate is greater, which is choice D.",
+          "es": "Para la Función F, la tasa de cambio es (24 − 18) ÷ (6 − 4) = 6 ÷ 2 = 3. En y = 4x + 2, la Función G tiene tasa de cambio 4. Como 4 > 3, la tasa de G es mayor, que es la opción D."
         },
         "source": "vine-authored"
       }
@@ -87,8 +87,8 @@
       "inputHash": "233aa113b3ed38d35d57a72e7095b3caf85aaba87b2f19f4ea3896051a1a415a",
       "explanation": {
         "text": {
-          "en": "Subtract 5 from both sides of (2/3)x + 5 = 1 to get (2/3)x = -4. Multiplying both sides by 3/2 gives x = -4 × 3/2 = -6. Therefore choice A is the solution.",
-          "es": "Se resta 5 de ambos lados de (2/3)x + 5 = 1 para obtener (2/3)x = -4. Al multiplicar ambos lados por 3/2 resulta x = -4 × 3/2 = -6. Por lo tanto, la solución es la opción A."
+          "en": "Subtract 5 from both sides of (2/3)x + 5 = 1 to get (2/3)x = −4. Multiplying both sides by 3/2 gives x = −4 × 3/2 = −6. Therefore choice A is the solution.",
+          "es": "Se resta 5 de ambos lados de (2/3)x + 5 = 1 para obtener (2/3)x = −4. Al multiplicar ambos lados por 3/2 resulta x = −4 × 3/2 = −6. Por lo tanto, la solución es la opción A."
         },
         "source": "vine-authored"
       }
@@ -97,8 +97,8 @@
       "inputHash": "36557452fc3693ce89be07af406597ada5f5608e6fde06d55cc8b42a3aaf0db4",
       "explanation": {
         "text": {
-          "en": "Substitute 11 hours for x in the model: y = 100 - 8.9(11) = 100 - 97.9 = 2.1. The predicted remaining battery power is therefore 2.1%, choice B.",
-          "es": "Se sustituyen 11 horas por x en el modelo: y = 100 - 8.9(11) = 100 - 97.9 = 2.1. Por lo tanto, el porcentaje de energía restante previsto es 2.1%, la opción B."
+          "en": "Substitute 11 hours for x in the model: y = 100 − 8.9(11) = 100 − 97.9 = 2.1. The predicted remaining battery power is therefore 2.1%, choice B.",
+          "es": "Se sustituyen 11 horas por x en el modelo: y = 100 − 8.9(11) = 100 − 97.9 = 2.1. Por lo tanto, el porcentaje de energía restante previsto es 2.1%, la opción B."
         },
         "source": "vine-authored"
       }
@@ -137,8 +137,8 @@
       "inputHash": "10bf2fcf323b93e8c1d06bc4bf059a324acce151a47fe7c51d769900a0d341e4",
       "explanation": {
         "text": {
-          "en": "A 90° clockwise rotation sends (x, y) to (y, -x), and a dilation by 1/2 then halves both coordinates. For example, F(-4, -2) becomes (-2, 4) and then (-1, 2), exactly F'. Therefore this is the sequence in choice D.",
-          "es": "Una rotación de 90° en sentido horario transforma (x, y) en (y, -x), y una dilatación de 1/2 divide después ambas coordenadas entre 2. Por ejemplo, F(-4, -2) pasa a (-2, 4) y luego a (-1, 2), que es F'. Por lo tanto, esta es la opción D."
+          "en": "A 90° clockwise rotation sends (x, y) to (y, -x), and a dilation by 1/2 then halves both coordinates. For example, F(−4, −2) becomes (−2, 4) and then (−1, 2), exactly F'. Therefore this is the sequence in choice D.",
+          "es": "Una rotación de 90° en sentido horario transforma (x, y) en (y, -x), y una dilatación de 1/2 divide después ambas coordenadas entre 2. Por ejemplo, F(−4, −2) pasa a (−2, 4) y luego a (−1, 2), que es F'. Por lo tanto, esta es la opción D."
         },
         "source": "vine-authored"
       }
@@ -147,8 +147,8 @@
       "inputHash": "aa56c40f6a55a4894a2c481d060a970eb79cfe40c1c9c6b45861e5a339377883",
       "explanation": {
         "text": {
-          "en": "Apply the exponent rules: (2^4)^3 = 2^12, while 2^2 × 2^n = 2^(2+n). Equal bases require equal exponents, so 2 + n = 12 and n = 10. Therefore choice C is correct.",
-          "es": "Se aplican las reglas de exponentes: (2^4)^3 = 2^12, mientras que 2^2 × 2^n = 2^(2+n). Con bases iguales, los exponentes deben ser iguales: 2 + n = 12 y n = 10. Por lo tanto, la opción C es correcta."
+          "en": "Apply the exponent rules: (2⁴)³ = 2¹², while 2² × 2ⁿ = 2⁽²⁺ⁿ⁾. Equal bases require equal exponents, so 2 + n = 12 and n = 10. Therefore choice C is correct.",
+          "es": "Se aplican las reglas de exponentes: (2⁴)³ = 2¹², mientras que 2² × 2ⁿ = 2⁽²⁺ⁿ⁾. Con bases iguales, los exponentes deben ser iguales: 2 + n = 12 y n = 10. Por lo tanto, la opción C es correcta."
         },
         "source": "vine-authored"
       }
@@ -167,8 +167,8 @@
       "inputHash": "f858567bff102a71813461cf96f636861da0d30cd630692754cde7b505c568bc",
       "explanation": {
         "text": {
-          "en": "Reflection across the y-axis changes each x-coordinate from x to -x. Only x = 0 remains unchanged because -0 = 0. Of the listed vertices, (0, 3) is the only one with x-coordinate 0, so choice A is correct.",
-          "es": "La reflexión sobre el eje y cambia cada coordenada x por -x. Solo x = 0 queda igual porque -0 = 0. Entre los vértices dados, (0, 3) es el único cuya coordenada x es 0; por eso la opción A es correcta."
+          "en": "Reflection across the y-axis changes each x-coordinate from x to -x. Only x = 0 remains unchanged because −0 = 0. Of the listed vertices, (0, 3) is the only one with x-coordinate 0, so choice A is correct.",
+          "es": "La reflexión sobre el eje y cambia cada coordenada x por -x. Solo x = 0 queda igual porque −0 = 0. Entre los vértices dados, (0, 3) es el único cuya coordenada x es 0; por eso la opción A es correcta."
         },
         "source": "vine-authored"
       }
@@ -187,8 +187,8 @@
       "inputHash": "c41d77f7f981de605eebeb12ee45ec25faffd695396b6d8a167f7522dde9f64e",
       "explanation": {
         "text": {
-          "en": "For a high temperature of 0°F, substitute x = 0 into the model: y = -5.9(0) + 850 = 850. Thus the model predicts about 850 fluid ounces of hot coffee, exactly the statement in choice D.",
-          "es": "Para una temperatura máxima de 0°F, se sustituye x = 0 en el modelo: y = -5.9(0) + 850 = 850. Por lo tanto, el modelo predice unas 850 onzas líquidas de café caliente, exactamente lo que afirma la opción D."
+          "en": "For a high temperature of 0°F, substitute x = 0 into the model: y = −5.9(0) + 850 = 850. Thus the model predicts about 850 fluid ounces of hot coffee, exactly the statement in choice D.",
+          "es": "Para una temperatura máxima de 0°F, se sustituye x = 0 en el modelo: y = −5.9(0) + 850 = 850. Por lo tanto, el modelo predice unas 850 onzas líquidas de café caliente, exactamente lo que afirma la opción D."
         },
         "source": "vine-authored"
       }
@@ -197,8 +197,8 @@
       "inputHash": "684787874a0cb353b4a1008835f2f3b11d32c6136886e36114cfeec6414c265f",
       "explanation": {
         "text": {
-          "en": "Translate P(2, 4) two units left and down to (0, 2), then reflect across the x-axis to get (0, -2), which is T. The same operations map Q, R, and S to U, V, and W. This is the sequence in choice C.",
-          "es": "Se traslada P(2, 4) dos unidades a la izquierda y hacia abajo para obtener (0, 2), y luego se refleja sobre el eje x para obtener (0, -2), que es T. Las mismas operaciones llevan Q, R y S a U, V y W. Por lo tanto, esta es la opción C."
+          "en": "Translate P(2, 4) two units left and down to (0, 2), then reflect across the x-axis to get (0, −2), which is T. The same operations map Q, R, and S to U, V, and W. This is the sequence in choice C.",
+          "es": "Se traslada P(2, 4) dos unidades a la izquierda y hacia abajo para obtener (0, 2), y luego se refleja sobre el eje x para obtener (0, −2), que es T. Las mismas operaciones llevan Q, R y S a U, V y W. Por lo tanto, esta es la opción C."
         },
         "source": "vine-authored"
       }
@@ -207,8 +207,8 @@
       "inputHash": "0b24cb6f26be3d29d91dadeccc0bedc43e4d003679b73c184294c0d5b01e3744",
       "explanation": {
         "text": {
-          "en": "Box J has surface area 2(3 × 4.5 + 3 × 2 + 4.5 × 2) = 57 square feet. Box F is a 3-foot cube, so its surface area is 6(3 × 3) = 54 square feet. The difference is 57 - 54 = 3, choice B.",
-          "es": "El área de superficie de la caja J es 2(3 × 4.5 + 3 × 2 + 4.5 × 2) = 57 pies cuadrados. La caja F es un cubo de 3 pies, así que su área es 6(3 × 3) = 54. La diferencia es 57 - 54 = 3, la opción B."
+          "en": "Box J has surface area 2(3 × 4.5 + 3 × 2 + 4.5 × 2) = 57 square feet. Box F is a 3-foot cube, so its surface area is 6(3 × 3) = 54 square feet. The difference is 57 − 54 = 3, choice B.",
+          "es": "El área de superficie de la caja J es 2(3 × 4.5 + 3 × 2 + 4.5 × 2) = 57 pies cuadrados. La caja F es un cubo de 3 pies, así que su área es 6(3 × 3) = 54. La diferencia es 57 − 54 = 3, la opción B."
         },
         "source": "vine-authored"
       }
@@ -217,8 +217,8 @@
       "inputHash": "0b91eaf457e7ae402d57b6c1499d295ee78c1ed043f5e69062a4e7e421dabc4a",
       "explanation": {
         "text": {
-          "en": "Write the factor 2 as 2^1, then combine exponents: 2^2 × 2^1 ÷ 2^4 = 2^(2+1-4) = 2^-1. Therefore the equivalent expression is 2^-1, choice B.",
-          "es": "Se escribe el factor 2 como 2^1 y se combinan los exponentes: 2^2 × 2^1 ÷ 2^4 = 2^(2+1-4) = 2^-1. Por lo tanto, la expresión equivalente es 2^-1, la opción B."
+          "en": "Write the factor 2 as 2¹, then combine exponents: 2² × 2¹ ÷ 2⁴ = 2⁽²⁺¹⁻⁴⁾ = 2⁻¹. Therefore the equivalent expression is 2⁻¹, choice B.",
+          "es": "Se escribe el factor 2 como 2¹ y se combinan los exponentes: 2² × 2¹ ÷ 2⁴ = 2⁽²⁺¹⁻⁴⁾ = 2⁻¹. Por lo tanto, la expresión equivalente es 2⁻¹, la opción B."
         },
         "source": "vine-authored"
       }
@@ -227,8 +227,8 @@
       "inputHash": "28e5cedb36de518831d9d16a8395230e09fa1a39116ce3a106d222717187da06",
       "explanation": {
         "text": {
-          "en": "The radius is 4 ÷ 2 = 2 cm. The cone is 3 cm tall, so the cylinder height is 10 - 3 = 7 cm. The volumes are π(2^2)(7) = 28π and (1/3)π(2^2)(3) = 4π; together they equal 32π, choice A.",
-          "es": "El radio es 4 ÷ 2 = 2 cm. El cono mide 3 cm de alto, así que el cilindro mide 10 - 3 = 7 cm. Los volúmenes son π(2^2)(7) = 28π y (1/3)π(2^2)(3) = 4π; juntos suman 32π, la opción A."
+          "en": "The radius is 4 ÷ 2 = 2 cm. The cone is 3 cm tall, so the cylinder height is 10 − 3 = 7 cm. The volumes are π(2²)(7) = 28π and (1/3)π(2²)(3) = 4π; together they equal 32π, choice A.",
+          "es": "El radio es 4 ÷ 2 = 2 cm. El cono mide 3 cm de alto, así que el cilindro mide 10 − 3 = 7 cm. Los volúmenes son π(2²)(7) = 28π y (1/3)π(2²)(3) = 4π; juntos suman 32π, la opción A."
         },
         "source": "vine-authored"
       }
@@ -238,7 +238,7 @@
       "explanation": {
         "text": {
           "en": "Rotations, reflections, and translations preserve every side length. Figure A has a side 3 units long, from (9, 2) to (9, 5). Figure B’s horizontal and vertical sides measure 5, 7, and 4 units, and its slanted side is longer than its vertical change of 4 units. None is 3 units long. The figures are not congruent, so choice C is true.",
-          "es": "Las rotaciones, reflexiones y traslaciones conservan todas las longitudes. A tiene un lado de 3 unidades, de (9, 2) a (9, 5). Los lados horizontales y verticales de B miden 5, 7 y 4; su lado inclinado es más largo que su cambio vertical de 4. Ninguno mide 3. Las figuras no son congruentes, así que C es verdadera."
+          "es": "Las rotaciones, reflexiones y traslaciones conservan todas las longitudes. La Figura A tiene un lado de 3 unidades, de (9, 2) a (9, 5). Los lados horizontales y verticales de la Figura B miden 5, 7 y 4; su lado inclinado es más largo que su cambio vertical de 4. Ninguno mide 3. Las figuras no son congruentes, así que la opción C es verdadera."
         },
         "source": "vine-authored"
       }
@@ -247,8 +247,8 @@
       "inputHash": "8f9e4828a50f4d94d129e9d7f3179b57788e314309ea1d5868d175fbfe4b1a9c",
       "explanation": {
         "text": {
-          "en": "Add the equations 2x + 3y = 6 and x - 3y = 9 to eliminate y: 3x = 15, so x = 5. Substituting into x - 3y = 9 gives 5 - 3y = 9, so y = -4/3. The solution is (5, -4/3), choice C.",
-          "es": "Se suman 2x + 3y = 6 y x - 3y = 9 para eliminar y: 3x = 15, así que x = 5. Al sustituir en x - 3y = 9 se obtiene 5 - 3y = 9, de donde y = -4/3. La solución es (5, -4/3), la opción C."
+          "en": "Add the equations 2x + 3y = 6 and x − 3y = 9 to eliminate y: 3x = 15, so x = 5. Substituting into x − 3y = 9 gives 5 − 3y = 9, so y = −4/3. The solution is (5, −4/3), choice C.",
+          "es": "Se suman 2x + 3y = 6 y x − 3y = 9 para eliminar y: 3x = 15, así que x = 5. Al sustituir en x − 3y = 9 se obtiene 5 − 3y = 9, de donde y = −4/3. La solución es (5, −4/3), la opción C."
         },
         "source": "vine-authored"
       }
@@ -267,8 +267,8 @@
       "inputHash": "cdf76fa2109c811cdd18160927d8ef03c22098f39562fe5fd4500fa9341f1cbe",
       "explanation": {
         "text": {
-          "en": "Distribute and solve: 5c + 4 = 2c - 10, so 3c + 4 = -10 and 3c = -14. Thus c = -14/3 = -4 2/3, which is choice A.",
-          "es": "Se distribuye y se resuelve: 5c + 4 = 2c - 10, así que 3c + 4 = -10 y 3c = -14. Por lo tanto, c = -14/3 = -4 2/3, que es la opción A."
+          "en": "Distribute and solve: 5c + 4 = 2c - 10, so 3c + 4 = −10 and 3c = −14. Thus c = −14/3 = −4 2/3, which is choice A.",
+          "es": "Se distribuye y se resuelve: 5c + 4 = 2c - 10, así que 3c + 4 = −10 y 3c = −14. Por lo tanto, c = −14/3 = −4 2/3, que es la opción A."
         },
         "source": "vine-authored"
       }
@@ -307,8 +307,8 @@
       "inputHash": "dae467f9dba937e32ba5447ceef0ba90065789704b596a00879e8d7ec0ac3e7c",
       "explanation": {
         "text": {
-          "en": "Divide the dust particle's mass by one electron's mass: (7.5 × 10^-10) ÷ (9.1 × 10^-31) = (7.5/9.1) × 10^21 ≈ 0.824 × 10^21 = 8.24 × 10^20. Thus choice C is the approximate number of electrons.",
-          "es": "Se divide la masa de la partícula entre la de un electrón: (7.5 × 10^-10) ÷ (9.1 × 10^-31) = (7.5/9.1) × 10^21 ≈ 0.824 × 10^21 = 8.24 × 10^20. Por lo tanto, la cantidad aproximada es la opción C."
+          "en": "Divide the dust particle's mass by one electron's mass: (7.5 × 10⁻¹⁰) ÷ (9.1 × 10⁻³¹) = (7.5/9.1) × 10²¹ ≈ 0.824 × 10²¹ = 8.24 × 10²⁰. Thus choice C is the approximate number of electrons.",
+          "es": "Se divide la masa de la partícula entre la de un electrón: (7.5 × 10⁻¹⁰) ÷ (9.1 × 10⁻³¹) = (7.5/9.1) × 10²¹ ≈ 0.824 × 10²¹ = 8.24 × 10²⁰. Por lo tanto, la cantidad aproximada es la opción C."
         },
         "source": "vine-authored"
       }
@@ -317,8 +317,8 @@
       "inputHash": "eaa00ddcc91254fc89d9024be87cf46df86e27eb149b7be36e63195a6a9cfc0e",
       "explanation": {
         "text": {
-          "en": "Photographer A's graph has y-intercept $25, so A's equipment fee is $25. For B, the hourly rate is ($110 - $80) ÷ (4 - 2) = $15; using $80 = 15(2) + b gives b = $50. A's fee is therefore $25 less than B's, choice C.",
-          "es": "La gráfica de A tiene intersección con y en $25, así que ese es su cargo de equipo. Para B, la tarifa es ($110 - $80) ÷ (4 - 2) = $15; con $80 = 15(2) + b se obtiene b = $50. El cargo de A es $25 menor que el de B, la opción C."
+          "en": "Photographer A's graph has y-intercept $25, so A's equipment fee is $25. For B, the hourly rate is ($110 - $80) ÷ (4 − 2) = $15; using $80 = 15(2) + b gives b = $50. A's fee is therefore $25 less than B's, choice C.",
+          "es": "La gráfica de A tiene intersección con y en $25, así que ese es su cargo de equipo. Para B, la tarifa es ($110 - $80) ÷ (4 − 2) = $15; con $80 = 15(2) + b se obtiene b = $50. El cargo de A es $25 menor que el de B, la opción C."
         },
         "source": "vine-authored"
       }
@@ -337,8 +337,8 @@
       "inputHash": "18f233dec23adb632073018eec2c6509aabb294d2b20a1afa8268634a53b7966",
       "explanation": {
         "text": {
-          "en": "Convert to the same power of ten: 4.5 × 10^2 = 0.45 × 10^3. Then (0.45 + 6.0) × 10^3 = 6.45 × 10^3. Its coefficient is between 1 and 10, so this is scientific notation, choice C.",
-          "es": "Se convierten los términos a la misma potencia de diez: 4.5 × 10^2 = 0.45 × 10^3. Luego, (0.45 + 6.0) × 10^3 = 6.45 × 10^3. El coeficiente está entre 1 y 10, así que es notación científica, la opción C."
+          "en": "Convert to the same power of ten: 4.5 × 10² = 0.45 × 10³. Then (0.45 + 6.0) × 10³ = 6.45 × 10³. Its coefficient is between 1 and 10, so this is scientific notation, choice C.",
+          "es": "Se convierten los términos a la misma potencia de diez: 4.5 × 10² = 0.45 × 10³. Luego, (0.45 + 6.0) × 10³ = 6.45 × 10³. El coeficiente está entre 1 y 10, así que es notación científica, la opción C."
         },
         "source": "vine-authored"
       }
@@ -347,8 +347,8 @@
       "inputHash": "e6f3cd1ad580b0326e75f7b97182f106e7697829ad9b1801b6ef31395f9e7d2c",
       "explanation": {
         "text": {
-          "en": "The slope through (2, -2) and (-4, 13) is [13 - (-2)] ÷ (-4 - 2) = 15/-6 = -2.5. Using (2, -2) gives y = -2.5x + 3. At x = -6, y = -2.5(-6) + 3 = 18, so (-6, 18), choice A, lies on the line.",
-          "es": "La pendiente entre (2, -2) y (-4, 13) es [13 - (-2)] ÷ (-4 - 2) = 15/-6 = -2.5. Con (2, -2), la recta es y = -2.5x + 3. Si x = -6, y = -2.5(-6) + 3 = 18; por eso (-6, 18), la opción A, está en la recta."
+          "en": "The slope through (2, −2) and (−4, 13) is [13 − (−2)] ÷ (−4 − 2) = 15/-6 = −2.5. Using (2, −2) gives y = −2.5x + 3. At x = −6, y = −2.5(−6) + 3 = 18, so (−6, 18), choice A, lies on the line.",
+          "es": "La pendiente entre (2, −2) y (−4, 13) es [13 − (−2)] ÷ (−4 − 2) = 15/-6 = −2.5. Con (2, −2), la recta es y = −2.5x + 3. Si x = −6, y = −2.5(−6) + 3 = 18; por eso (−6, 18), la opción A, está en la recta."
         },
         "source": "vine-authored"
       }
