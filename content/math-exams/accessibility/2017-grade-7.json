@@ -525,43 +525,45 @@
     "nysed-2017-g7-mc-q21": {
       "inputHash": "5c91794b751812eb0a1b29f352e2041a8de4d56184e38e637648872d82e8b27b",
       "description": {
-        "en": "Question 21. Which expression is equivalent to the expression below? Expression: −1/2(−3/2x + 6x + 1) − 3x. Choices: A: 3/2x − 1/2. B: 6 3/4x − 1/2. C: −3/4x + 1/2. D: −5 1/4x − 1/2.",
-        "es": "Pregunta 21. ¿Qué expresión es equivalente a la expresión que se muestra a continuación? Expresión: −1/2(−3/2 x + 6x + 1) − 3x. Opciones: A: 3/2 x − 1/2 B: 6 3/4 x − 1/2 C: −3/4 x + 1/2 D: −5 1/4 x − 1/2"
+        "en": "Question 21. Which expression is equivalent to the expression below? Expression: −(1/2) × (−(3/2)x + 6x + 1) − 3x. Choices: A: (3/2)x − 1/2. B: (6 3/4)x − 1/2. C: −(3/4)x + 1/2. D: −(5 1/4)x − 1/2.",
+        "es": "Pregunta 21. ¿Qué expresión es equivalente a la expresión que se muestra a continuación? Expresión: −(1/2) × (−(3/2)x + 6x + 1) − 3x. Opciones: A: (3/2)x − 1/2 B: (6 3/4)x − 1/2 C: −(3/4)x + 1/2 D: −(5 1/4)x − 1/2"
       },
       "requiredSourceTokens": {
         "en": [
-          "3/2x − 1/2",
-          "6 3/4x − 1/2",
-          "−3/4x + 1/2",
-          "−5 1/4x − 1/2",
-          "−1/2(−3/2x + 6x + 1) − 3x",
-          "A: 3/2x − 1/2",
-          "B: 6 3/4x − 1/2",
-          "C: −3/4x + 1/2",
-          "D: −5 1/4x − 1/2",
+          "(3/2)x − 1/2",
+          "(6 3/4)x − 1/2",
+          "−(3/4)x + 1/2",
+          "−(5 1/4)x − 1/2",
+          "−(1/2) × (−(3/2)x + 6x + 1) − 3x",
+          "A: (3/2)x − 1/2",
+          "B: (6 3/4)x − 1/2",
+          "C: −(3/4)x + 1/2",
+          "D: −(5 1/4)x − 1/2",
           "1/2",
-          "(−3/2x + 6x + 1)",
+          "(−(3/2)x + 6x + 1)",
           "3/2",
           "6 3/4",
           "3/4",
-          "5 1/4"
+          "5 1/4",
+          "Question 21. Which expression is equivalent to the expression below? Expression: −(1/2) × (−(3/2)x + 6x + 1) − 3x. Choices: A: (3/2)x − 1/2. B: (6 3/4)x − 1/2. C: −(3/4)x + 1/2. D: −(5 1/4)x − 1/2."
         ],
         "es": [
-          "−1/2(−3/2 x + 6x + 1) − 3x",
-          "3/2 x − 1/2",
-          "6 3/4 x − 1/2",
-          "−3/4 x + 1/2",
-          "−5 1/4 x − 1/2",
-          "A: 3/2 x − 1/2",
-          "B: 6 3/4 x − 1/2",
-          "C: −3/4 x + 1/2",
-          "D: −5 1/4 x − 1/2",
+          "−(1/2) × (−(3/2)x + 6x + 1) − 3x",
+          "(3/2)x − 1/2",
+          "(6 3/4)x − 1/2",
+          "−(3/4)x + 1/2",
+          "−(5 1/4)x − 1/2",
+          "A: (3/2)x − 1/2",
+          "B: (6 3/4)x − 1/2",
+          "C: −(3/4)x + 1/2",
+          "D: −(5 1/4)x − 1/2",
           "1/2",
-          "(−3/2 x + 6x + 1)",
+          "(−(3/2)x + 6x + 1)",
           "3/2",
           "6 3/4",
           "3/4",
-          "5 1/4"
+          "5 1/4",
+          "Pregunta 21. ¿Qué expresión es equivalente a la expresión que se muestra a continuación? Expresión: −(1/2) × (−(3/2)x + 6x + 1) − 3x. Opciones: A: (3/2)x − 1/2 B: (6 3/4)x − 1/2 C: −(3/4)x + 1/2 D: −(5 1/4)x − 1/2"
         ]
       }
     },
@@ -791,7 +793,7 @@
       }
     },
     "nysed-2017-g7-mc-q33": {
-      "inputHash": "dabab7312a9d85cff78106e726a08d5beb730ec6a967d3604e44c6d9dea8c99c",
+      "inputHash": "079619c0b15851bb7a0b68863f8c1cb94f059fa450a7b86ffbeaf210d452a86c",
       "description": {
         "en": "Question 33. A vehicle uses 1 1/8 gallons of gasoline to travel 13 1/2 miles. At this rate, how many miles can the vehicle travel per gallon of gasoline? Choices: A: 16/243. B: 4/3. C: 12. D: 13.",
         "es": "Pregunta 33. Un vehículo consume 1 1/8 galones de gasolina para recorrer 13 1/2 millas. A esta tasa, ¿cuántas millas puede recorrer el vehículo por galón de gasolina? Opciones: A: 16/243 B: 4/3 C: 12 D: 13"
@@ -829,7 +831,7 @@
     "nysed-2017-g7-mc-q34": {
       "inputHash": "27394395f686a0bb6cfd5dc94275675437cbc14acecc77dd5753034e30ccea6a",
       "description": {
-        "en": "Question 34. A bowling team participates in a two-day tournament and records the scores for each team member on both days. Two horizontal box plots titled “Bowling Team Scores” share a number line labeled “Bowling Scores.” The number line has evenly spaced tick marks, with 175, 200, and 225 labeled. Friday’s box plot is positioned to the right of Saturday’s: its median line is to the right of Saturday’s median line. The Friday and Saturday boxes have equal horizontal widths, so their interquartile ranges are equal. Friday’s left whisker begins to the right of Saturday’s left whisker, and Friday’s right whisker ends to the right of Saturday’s right whisker. Which conclusion can be drawn from the box plots? Choices: A: The scores on Friday and the scores on Saturday have the same median and interquartile range. B: The scores on Friday have a greater median and a greater interquartile range than the scores on Saturday. C: The scores on Friday have a greater interquartile range than the scores on Saturday, but both data sets have the same median. D: The scores on Friday have a greater median than the scores on Saturday, but both data sets have the same interquartile range.",
+        "en": "Question 34. A bowling team participates in a two-day tournament and records the scores for each team member on both days. Two horizontal box plots titled “Bowling Team Scores” share a number line labeled “Bowling Scores.” The number line has evenly spaced tick marks, with 175, 200, and 225 labeled. Friday: minimum 185, first quartile 200, median 215, third quartile 220, maximum 230. Saturday: minimum 175, first quartile 190, median 205, third quartile 210, maximum between 220 and 225. Ticks are 5 points apart. Which conclusion can be drawn from the box plots? Choices: A: The scores on Friday and the scores on Saturday have the same median and interquartile range. B: The scores on Friday have a greater median and a greater interquartile range than the scores on Saturday. C: The scores on Friday have a greater interquartile range than the scores on Saturday, but both data sets have the same median. D: The scores on Friday have a greater median than the scores on Saturday, but both data sets have the same interquartile range.",
         "es": "Pregunta 34. Un equipo de bolos participa en un torneo de dos días y registra los puntajes de cada miembro del equipo para ambos días. Los puntajes se representan mediante dos diagramas de caja horizontales sobre una misma recta numérica titulada «Puntajes de bolos». La recta tiene marcas igualmente espaciadas de 5 puntos; están rotuladas 175, 200 y 225. Para el viernes, el extremo inferior está en 185, el primer cuartil en 200, la mediana en 215, el tercer cuartil en 220 y el extremo superior en 230. Para el sábado, el extremo inferior está en 175, el primer cuartil en 190, la mediana en 205, el tercer cuartil en 210 y el extremo superior está entre 220 y 225. ¿Qué conclusión puede sacarse a partir de los diagramas de caja? Opciones: A: Los puntajes del viernes y los puntajes del sábado tienen la misma mediana y el mismo rango intercuartil. B: Los puntajes del viernes tienen una mediana mayor y un rango intercuartil mayor que los puntajes del sábado. C: Los puntajes del viernes tienen un rango intercuartil mayor que los puntajes del sábado, pero ambos conjuntos de datos tienen la misma mediana. D: Los puntajes del viernes tienen una mediana mayor que los puntajes del sábado, pero ambos conjuntos de datos tienen el mismo rango intercuartil."
       },
       "requiredSourceTokens": {

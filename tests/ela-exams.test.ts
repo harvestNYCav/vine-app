@@ -29,6 +29,30 @@ const root = process.cwd()
 const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]
 const GRADES = [3, 4, 5, 6, 7, 8] as const
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-ela-2014-g3-mc-q2',
+  'nysed-ela-2014-g3-mc-q3',
+  'nysed-ela-2014-g3-mc-q14',
+  'nysed-ela-2014-g3-mc-q6',
+  'nysed-ela-2014-g3-mc-q5',
+  'nysed-ela-2014-g4-mc-q13',
+  'nysed-ela-2014-g4-mc-q9',
+  'nysed-ela-2014-g4-mc-q15',
+  'nysed-ela-2014-g5-mc-q3',
+  'nysed-ela-2013-g5-mc-q2',
+  'nysed-ela-2014-g5-mc-q2',
+  'nysed-ela-2014-g5-mc-q20',
+  'nysed-ela-2014-g6-mc-q5',
+  'nysed-ela-2014-g6-mc-q9',
+  'nysed-ela-2014-g6-mc-q11',
+  'nysed-ela-2014-g6-mc-q14',
+  'nysed-ela-2014-g6-mc-q16',
+  'nysed-ela-2013-g7-mc-q2',
+  'nysed-ela-2013-g7-mc-q4',
+  'nysed-ela-2014-g7-mc-q8',
+  'nysed-ela-2014-g8-mc-q19',
+  'nysed-ela-2014-g8-mc-q15',
+  'nysed-ela-2013-g8-mc-q1',
+  'nysed-ela-2014-g8-mc-q13',
   'nysed-ela-2013-g4-mc-q2',
   'nysed-ela-2013-g6-mc-q5',
   'nysed-ela-2014-g3-mc-q12',
@@ -579,7 +603,7 @@ test('reviewed transcript manifest, sidecars, generated catalog, and passage byt
       assert.deepEqual(transcriptParagraphMarkers(transcript.text), review.paragraphMarkers)
 
       const visualDescriptionCount = transcript.text.split('\n').filter(line =>
-        /^\[(?:Illustration|Diagram|Photograph|Map|Chart|Text box|Sidebar|Caption):\s+\S.+\]$/i.test(line.trim()),
+        /^\[(?:Illustration|Diagram|Photographs?|Map|Chart|Table|Text box|Sidebar|Caption):\s+\S.+\]$/i.test(line.trim()),
       ).length
       assert.equal(visualDescriptionCount, review.visualDescriptionCount)
       assert.equal(sidecar.source, review.source)
@@ -676,8 +700,8 @@ test('active ELA questions have substantive sourced explanations with server-onl
   }
 
   assert.deepEqual(explanationSourceCounts, {
-    'official-nysed': 145,
-    'official-nysed-corrected': 4,
+    'official-nysed': 121,
+    'official-nysed-corrected': 28,
     'vine-authored': 1_434,
   })
 })

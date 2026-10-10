@@ -119,7 +119,7 @@
     "nysed-2013-g6-mc-q24": {
       "inputHash": "51aabdf406c2bc28fac58ad1dd7a3b0769527a08d633bd07fea05129f05143ac",
       "description": {
-        "en": "Question 24. A printer makes more than 3 copies of a book every hour. Which graph represents the number of books made in 4 hours? Each choice is a horizontal number line labeled at the even numbers 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, and 20, with tick marks every 2 units and arrows at both ends. Choices: A: An open circle at 3 with the ray extending to the left. B: An open circle at 4 with the ray extending to the right. C: An open circle at 7 with the ray extending to the right. D: An open circle at 12 with the ray extending to the right."
+        "en": "Question 24. A printer makes more than 3 copies of a book every hour. Which graph represents the number of books made in 4 hours? Each choice is a horizontal number line labeled at the even numbers 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, and 20, with tick marks every 2 units and arrows at both ends. Choices: A: An open circle at 3 with the ray extending to the right. B: An open circle at 4 with the ray extending to the right. C: An open circle at 7 with the ray extending to the right. D: An open circle at 12 with the ray extending to the right."
       },
       "requiredSourceTokens": {
         "en": [
@@ -130,10 +130,11 @@
           "open circle at 4",
           "open circle at 7",
           "open circle at 12",
-          "A: An open circle at 3 with the ray extending to the left",
+          "A: An open circle at 3 with the ray extending to the right",
           "B: An open circle at 4 with the ray extending to the right",
           "C: An open circle at 7 with the ray extending to the right",
-          "D: An open circle at 12 with the ray extending to the right"
+          "D: An open circle at 12 with the ray extending to the right",
+          "Question 24. A printer makes more than 3 copies of a book every hour. Which graph represents the number of books made in 4 hours? Each choice is a horizontal number line labeled at the even numbers 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, and 20, with tick marks every 2 units and arrows at both ends. Choices: A: An open circle at 3 with the ray extending to the right. B: An open circle at 4 with the ray extending to the right. C: An open circle at 7 with the ray extending to the right. D: An open circle at 12 with the ray extending to the right."
         ]
       }
     },

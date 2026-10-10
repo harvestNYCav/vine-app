@@ -204,7 +204,7 @@
     "nysed-2014-g7-mc-q10": {
       "inputHash": "f86a803018cd657912d3dc417b52148aec9baaec139f4ba729d6b2a9f762a624",
       "description": {
-        "en": "Question 10. Which tree diagram shows all of the possible outcomes for tossing a coin and rolling a number pyramid that has four sides labeled 1 through 4? In each description, H means heads and T means tails. Choices: A: The coin-toss level has only one branch, H. From H, four branches lead to 1, 2, 3, and 4 for the number-pyramid roll. B: The coin-toss level branches to H and T. From H, two branches lead to 1 and 2; from T, two branches lead to 3 and 4. C: The coin-toss level branches to H and T. From H, four branches lead to 1, 1, 2, and 2; from T, four branches lead to 3, 3, 4, and 4. D: The coin-toss level branches to H and T. From each of H and T, four branches lead to 1, 2, 3, and 4."
+        "en": "Question 10. Which tree diagram shows all of the possible outcomes for tossing a coin and rolling a fair number pyramid that has four sides labeled 1 through 4? In each description, H means heads and T means tails. Choices: A: The coin-toss level has only one branch, H. From H, four branches lead to 1, 2, 3, and 4 for the number-pyramid roll. B: The coin-toss level branches to H and T. From H, two branches lead to 1 and 2; from T, two branches lead to 3 and 4. C: The coin-toss level branches to H and T. From H, four branches lead to 1, 1, 2, and 2; from T, four branches lead to 3, 3, 4, and 4. D: The coin-toss level branches to H and T. From each of H and T, four branches lead to 1, 2, 3, and 4."
       },
       "requiredSourceTokens": {
         "en": [

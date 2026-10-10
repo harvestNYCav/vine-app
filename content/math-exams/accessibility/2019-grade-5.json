@@ -193,15 +193,14 @@
     "nysed-2019-g5-mc-q18": {
       "inputHash": "1bb4d6fe072c03b40da5813ac10cfc86222f968991998a33403f16cc1881fa3e",
       "description": {
-        "en": "Question 18. Which expression cannot be used to determine the volume of the rectangular prism? The prism is built from equal unit cubes arranged 6 cubes across, 4 cubes high, and 3 cubes deep, for a total of 72 unit cubes. Choices: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6",
-        "es": "Pregunta 18. ¿Qué expresión no puede usarse para determinar el volumen del prisma rectangular que se muestra a continuación? El prisma está formado por cubos unitarios. La cara frontal tiene 6 cubos de ancho y 4 cubos de alto; el prisma tiene 3 cubos de profundidad. Por tanto, hay 24 cubos en cada capa horizontal, 18 cubos en cada capa vertical paralela a la cara frontal dividida por la altura, y 12 cubos en cada sección de 3 por 4. Opciones: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6"
+        "en": "Question 18. Which expression cannot be used to determine the volume of the rectangular prism? The prism is built from equal unit cubes arranged 6 cubes across, 4 cubes high, and 3 cubes deep. Choices: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6",
+        "es": "Pregunta 18. ¿Qué expresión no puede usarse para determinar el volumen del prisma rectangular que se muestra a continuación? El prisma está formado por cubos unitarios. La cara frontal tiene 6 cubos de ancho y 4 cubos de alto; el prisma tiene 3 cubos de profundidad. Opciones: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6"
       },
       "requiredSourceTokens": {
         "en": [
           "6",
           "4",
           "3",
-          "72",
           "12 × 6",
           "18 × 4",
           "6 × 3 × 4",
@@ -209,13 +208,13 @@
           "A: 12 × 6",
           "B: 18 × 4",
           "C: 6 × 3 × 4",
-          "D: 6 × 4 × 6"
+          "D: 6 × 4 × 6",
+          "Question 18. Which expression cannot be used to determine the volume of the rectangular prism? The prism is built from equal unit cubes arranged 6 cubes across, 4 cubes high, and 3 cubes deep. Choices: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6"
         ],
         "es": [
           "6",
           "4",
           "3",
-          "24",
           "18",
           "12",
           "12 × 6",
@@ -225,7 +224,8 @@
           "A: 12 × 6",
           "B: 18 × 4",
           "C: 6 × 3 × 4",
-          "D: 6 × 4 × 6"
+          "D: 6 × 4 × 6",
+          "Pregunta 18. ¿Qué expresión no puede usarse para determinar el volumen del prisma rectangular que se muestra a continuación? El prisma está formado por cubos unitarios. La cara frontal tiene 6 cubos de ancho y 4 cubos de alto; el prisma tiene 3 cubos de profundidad. Opciones: A: 12 × 6 B: 18 × 4 C: 6 × 3 × 4 D: 6 × 4 × 6"
         ]
       }
     },
@@ -671,7 +671,7 @@
       }
     },
     "nysed-2019-g5-mc-q36": {
-      "inputHash": "a933ea188fb97ece238b49f00741edb07417d2db52c77a7785a5078f09e493f8",
+      "inputHash": "62c3c7b73d068172fb5c8b36ffc91fd9df66d195e2e8c1dd354f75c2a115fd02",
       "description": {
         "en": "Question 36. What is 482.073 expressed in word form? Choices: A: four eighty-two and seventy-three thousandths. B: four hundred eighty-two thousand seventy-three. C: four hundred eighty-two and seventy-three hundredths. D: four hundred eighty-two and seventy-three thousandths.",
         "es": "Pregunta 36. ¿Cómo se expresa 482.073 en palabras? Opciones: A: cuatro ochenta y dos y setenta y tres milésimas. B: cuatrocientos ochenta y dos mil setenta y tres. C: cuatrocientos ochenta y dos y setenta y tres centésimas. D: cuatrocientos ochenta y dos y setenta y tres milésimas."

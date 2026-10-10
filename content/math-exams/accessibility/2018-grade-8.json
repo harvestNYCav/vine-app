@@ -314,7 +314,7 @@
       "inputHash": "6aace7ef4564ca699e0e767c6cd1a7701ec7114480b9287adcbdf1af863f89a7",
       "description": {
         "en": "Question 11. On a coordinate plane, rectangle ABCD is rotated 90° clockwise about the origin to form rectangle WXYZ. The coordinate grid has unit squares. Rectangle ABCD is left of the y-axis and above the x-axis, with A(−5, 6) at the upper left, B(−2, 6) at the upper right, C(−2, 1) at the lower right, and D(−5, 1) at the lower left. Rectangle WXYZ is right of the y-axis and above the x-axis, with Z(1, 5) at the upper left, W(6, 5) at the upper right, X(6, 2) at the lower right, and Y(1, 2) at the lower left. Right-angle marks appear at every vertex of both rectangles. Which statement about the relationship between rectangle ABCD and rectangle WXYZ is true? Choices: A: Segment DA ≅ segment YZ. B: Segment DC ≅ segment XY. C: Segment BC ≅ segment YZ. D: Segment AB ≅ segment WX.",
-        "es": "Pregunta 11. En el plano de coordenadas a continuación, el rectángulo ABCD se rota 90° en sentido del reloj alrededor del origen para formar el rectángulo WXYZ. Los ejes x e y se intersectan en el origen y la cuadrícula avanza en unidades de 1. El rectángulo ABCD está a la izquierda del eje y y sobre el eje x: A = (−5, 6), B = (−2, 6), C = (−2, 1) y D = (−5, 1). El rectángulo WXYZ está a la derecha del eje y y sobre el eje x: W = (6, 5), X = (6, 2), Y = (1, 2) y Z = (1, 5). La rotación establece las correspondencias A → W, B → X, C → Y y D → Z. ¿Qué afirmación sobre la relación entre el rectángulo ABCD y el rectángulo WXYZ es verdadera? Opciones: A: El segmento DA es congruente con el segmento YZ: DA ≅ YZ. B: El segmento DC es congruente con el segmento XY: DC ≅ XY. C: El segmento BC es congruente con el segmento YZ: BC ≅ YZ. D: El segmento AB es congruente con el segmento WX: AB ≅ WX."
+        "es": "Pregunta 11. En el plano de coordenadas a continuación, el rectángulo ABCD se rota 90° en sentido del reloj alrededor del origen para formar el rectángulo WXYZ. Los ejes x e y se intersectan en el origen y la cuadrícula avanza en unidades de 1. El rectángulo ABCD está a la izquierda del eje y y sobre el eje x: A = (−5, 6), B = (−2, 6), C = (−2, 1) y D = (−5, 1). El rectángulo WXYZ está a la derecha del eje y y sobre el eje x: W = (6, 5), X = (6, 2), Y = (1, 2) y Z = (1, 5). ¿Qué afirmación sobre la relación entre el rectángulo ABCD y el rectángulo WXYZ es verdadera? Opciones: A: El segmento DA es congruente con el segmento YZ: DA ≅ YZ. B: El segmento DC es congruente con el segmento XY: DC ≅ XY. C: El segmento BC es congruente con el segmento YZ: BC ≅ YZ. D: El segmento AB es congruente con el segmento WX: AB ≅ WX."
       },
       "requiredSourceTokens": {
         "en": [
@@ -354,10 +354,6 @@
           "X = (6, 2)",
           "Y = (1, 2)",
           "Z = (1, 5)",
-          "A → W",
-          "B → X",
-          "C → Y",
-          "D → Z",
           "DA ≅ YZ",
           "DC ≅ XY",
           "BC ≅ YZ",
@@ -373,7 +369,8 @@
           "(6, 5)",
           "(6, 2)",
           "(1, 2)",
-          "(1, 5)"
+          "(1, 5)",
+          "Pregunta 11. En el plano de coordenadas a continuación, el rectángulo ABCD se rota 90° en sentido del reloj alrededor del origen para formar el rectángulo WXYZ. Los ejes x e y se intersectan en el origen y la cuadrícula avanza en unidades de 1. El rectángulo ABCD está a la izquierda del eje y y sobre el eje x: A = (−5, 6), B = (−2, 6), C = (−2, 1) y D = (−5, 1). El rectángulo WXYZ está a la derecha del eje y y sobre el eje x: W = (6, 5), X = (6, 2), Y = (1, 2) y Z = (1, 5). ¿Qué afirmación sobre la relación entre el rectángulo ABCD y el rectángulo WXYZ es verdadera? Opciones: A: El segmento DA es congruente con el segmento YZ: DA ≅ YZ. B: El segmento DC es congruente con el segmento XY: DC ≅ XY. C: El segmento BC es congruente con el segmento YZ: BC ≅ YZ. D: El segmento AB es congruente con el segmento WX: AB ≅ WX."
         ]
       }
     },
@@ -743,7 +740,7 @@
       "inputHash": "642544fb2f41ebb9c9e180ae5827e5ebea10e30c14f8a245903d84d96bb610c1",
       "description": {
         "en": "Question 31. The scatter plot below shows the average points scored per game by players of different ages in an adult basketball league. The graph is titled “POINTS SCORED BY BASKETBALL PLAYERS.” The horizontal axis is labeled “Age (years)” and spans ages 18 through 24, with grid lines every 0.5 year. The vertical axis is labeled “Average Points Scored per Game” and spans 19 through 28 points, with grid lines every 1 point and labels at 20, 22, 24, and 26. The nine plotted points are (18.5, 20), (19, 22), (19.5, 20.5), (20.5, 21.5), (20.5, 23.5), (21.5, 26), (22, 24), (22.5, 27), and (23, 20). Which statement best describes the association between a player’s age, in years, and the average points scored per game? Choices: A: There is no association. B: There is a nonlinear association. C: There is a positive linear association and one outlier. D: There is a negative linear association and one outlier.",
-        "es": "Pregunta 31. El siguiente diagrama de dispersión muestra el promedio de puntos anotados por partido por jugadores de diferentes edades en una liga de baloncesto de adultos. El diagrama se titula «PUNTOS ANOTADOS POR LOS JUGADORES DE BALONCESTO». El eje x representa la edad, en años, y está marcado de 18 a 24 en incrementos de 1 año, con líneas intermedias cada 0.5 año. El eje y representa el promedio de puntos anotados por partido; está marcado en 20, 22, 24 y 26, con líneas intermedias cada punto. Los nueve puntos son (18.5, 20), (19, 22), (19.5, 20.5), (20.5, 21.5), (20.5, 23.5), (21.5, 26), (22, 24), (22.5, 27) y (23, 20). Ocho puntos siguen, en general, una tendencia ascendente a medida que aumenta la edad; el punto (23, 20) está separado por debajo de esa tendencia. ¿Qué afirmación describe mejor la asociación entre la edad de un jugador, en años, y el promedio de puntos anotados por partido? Opciones: A: No hay asociación. B: Hay una asociación no lineal. C: Hay una asociación lineal positiva y un valor atípico. D: Hay una asociación lineal negativa y un valor atípico."
+        "es": "Pregunta 31. El siguiente diagrama de dispersión muestra el promedio de puntos anotados por partido por jugadores de diferentes edades en una liga de baloncesto de adultos. El diagrama se titula «PUNTOS ANOTADOS POR LOS JUGADORES DE BALONCESTO». El eje x representa la edad, en años, y está marcado de 18 a 24 en incrementos de 1 año, con líneas intermedias cada 0.5 año. El eje y representa el promedio de puntos anotados por partido; está marcado en 20, 22, 24 y 26, con líneas intermedias cada punto. Los nueve puntos son (18.5, 20), (19, 22), (19.5, 20.5), (20.5, 21.5), (20.5, 23.5), (21.5, 26), (22, 24), (22.5, 27) y (23, 20). ¿Qué afirmación describe mejor la asociación entre la edad de un jugador, en años, y el promedio de puntos anotados por partido? Opciones: A: No hay asociación. B: Hay una asociación no lineal. C: Hay una asociación lineal positiva y un valor atípico. D: Hay una asociación lineal negativa y un valor atípico."
       },
       "requiredSourceTokens": {
         "en": [
@@ -967,8 +964,8 @@
     "nysed-2018-g8-mc-q37": {
       "inputHash": "bb4ade48538b45d738060e7dee50351a9894268d912ef4560c55b5c7105b4028",
       "description": {
-        "en": "Question 37. The dimensions of a square right pyramid are represented. Its square base measures 4 units by 4 units, and its perpendicular vertical height from the base to the top vertex is 10 units. The pyramid is sliced by a vertical plane that passes through the top vertex and is perpendicular to the base. The plane crosses the base along a segment of length 4 units, producing a plane section with a height of 10 units. What is the resulting two-dimensional shape and the area of the plane section? Choices: A: a triangle with an area of 20 square units. B: a triangle with an area of 40 square units. C: a rectangle with an area of 16 square units. D: a rectangle with an area of 40 square units.",
-        "es": "Pregunta 37. Las dimensiones de una pirámide recta cuadrada se muestran a continuación. La base es un cuadrado de 4 unidades por 4 unidades y la altura perpendicular desde el centro de la base hasta el vértice superior es de 10 unidades. Un plano vertical atraviesa el vértice superior y una sección de la base, y es perpendicular a la base. La intersección del plano con la pirámide forma una sección triangular cuya base mide 4 unidades y cuya altura perpendicular mide 10 unidades. ¿Cuál es la figura bidimensional que se forma y el área de la sección del plano? Opciones: A: un triángulo con un área de 20 unidades cuadradas B: un triángulo con un área de 40 unidades cuadradas C: un rectángulo con un área de 16 unidades cuadradas D: un rectángulo con un área de 40 unidades cuadradas"
+        "en": "Question 37. The dimensions of a square right pyramid are represented. Its square base measures 4 units by 4 units, and its perpendicular vertical height from the base to the top vertex is 10 units. The pyramid is sliced by a vertical plane that passes through the top vertex and is perpendicular to the base. The plane runs parallel to a side of the square base. What is the resulting two-dimensional shape and the area of the plane section? Choices: A: a triangle with an area of 20 square units. B: a triangle with an area of 40 square units. C: a rectangle with an area of 16 square units. D: a rectangle with an area of 40 square units.",
+        "es": "Pregunta 37. Las dimensiones de una pirámide recta cuadrada se muestran a continuación. La base es un cuadrado de 4 unidades por 4 unidades y la altura perpendicular desde el centro de la base hasta el vértice superior es de 10 unidades. Un plano vertical atraviesa el vértice superior y una sección de la base, y es perpendicular a la base. El plano es paralelo a un lado de la base cuadrada. ¿Cuál es la figura bidimensional que se forma y el área de la sección del plano? Opciones: A: un triángulo con un área de 20 unidades cuadradas B: un triángulo con un área de 40 unidades cuadradas C: un rectángulo con un área de 16 unidades cuadradas D: un rectángulo con un área de 40 unidades cuadradas"
       },
       "requiredSourceTokens": {
         "en": [
@@ -986,15 +983,14 @@
         "es": [
           "4 unidades por 4 unidades",
           "10 unidades",
-          "base mide 4 unidades",
-          "altura perpendicular mide 10 unidades",
           "20 unidades cuadradas",
           "40 unidades cuadradas",
           "16 unidades cuadradas",
           "A: un triángulo con un área de 20 unidades cuadradas",
           "B: un triángulo con un área de 40 unidades cuadradas",
           "C: un rectángulo con un área de 16 unidades cuadradas",
-          "D: un rectángulo con un área de 40 unidades cuadradas"
+          "D: un rectángulo con un área de 40 unidades cuadradas",
+          "Pregunta 37. Las dimensiones de una pirámide recta cuadrada se muestran a continuación. La base es un cuadrado de 4 unidades por 4 unidades y la altura perpendicular desde el centro de la base hasta el vértice superior es de 10 unidades. Un plano vertical atraviesa el vértice superior y una sección de la base, y es perpendicular a la base. El plano es paralelo a un lado de la base cuadrada. ¿Cuál es la figura bidimensional que se forma y el área de la sección del plano? Opciones: A: un triángulo con un área de 20 unidades cuadradas B: un triángulo con un área de 40 unidades cuadradas C: un rectángulo con un área de 16 unidades cuadradas D: un rectángulo con un área de 40 unidades cuadradas"
         ]
       }
     },

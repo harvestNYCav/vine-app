@@ -17,8 +17,8 @@
       "inputHash": "ed69133a57cf9a1d2643c35d1aa84f4f4b118396dd78bd780efe1b85e99a2435",
       "explanation": {
         "text": {
-          "en": "The vertical plane passes through the pyramid’s apex and intersects the base in a line segment. Therefore those three boundary points form a triangle.",
-          "es": "El plano vertical pasa por el vértice de la pirámide e interseca la base en un segmento. Por lo tanto, esos tres puntos del borde forman un triángulo."
+          "en": "The vertical plane passes through the pyramid’s apex and intersects the base in a line segment. The cross-section has three corners: the apex and the two ends of that segment. Therefore it is a triangle.",
+          "es": "El plano vertical pasa por el vértice de la pirámide e interseca la base en un segmento. La sección tiene tres vértices: el vértice superior y los dos extremos del segmento. Por lo tanto, es un triángulo."
         },
         "source": "vine-authored"
       }
@@ -127,8 +127,8 @@
       "inputHash": "90c8b0c5192a1334aa08ebc574f7f6196b3a19cd80626ddd3fd1602abb026734",
       "explanation": {
         "text": {
-          "en": "Expand the right side: h(3x − 4) = 3hx − 4h. For parallel unequal equations, 3h must equal −12, so h = −4; then the constants are 16 and 8, making the equation have no solution.",
-          "es": "Desarrollamos el lado derecho: h(3x − 4) = 3hx − 4h. Para obtener ecuaciones paralelas distintas, 3h debe ser −12, así que h = −4; entonces las constantes son 16 y 8, y no hay solución."
+          "en": "Expand the right side: h(3x − 4) = 3hx − 4h. For no solution, the x-terms must match while the constants differ. Thus 3h = −12, so h = −4. The constants then become 16 and 8, which are unequal, so there is no solution.",
+          "es": "Desarrolla el lado derecho: h(3x − 4) = 3hx − 4h. Para que no haya solución, los términos con x deben coincidir y las constantes ser distintas. Entonces 3h = −12, así que h = −4. Las constantes son 16 y 8, que no son iguales, por lo que no hay solución."
         },
         "source": "vine-authored"
       }

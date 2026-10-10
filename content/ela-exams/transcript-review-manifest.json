@@ -80,7 +80,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "656e83cc8e0d59fb17ef905519f4206a6d589e38e03d603c2ba2bb73cf48be05",
       "passageImageSha256": "c4566afc7354238cad455f7df697f66e46d81653484dccbd49a4bee522da6f6b",
-      "textSha256": "ec9d7b1a8716aa0b70f3a024818f043eb20b0f8908c3d596bc1006f37dad726c",
+      "textSha256": "7e1582403f608234ba5c10fcab43f56a35aabf840e1c78aafa70d56756579aec",
       "paragraphMarkers": [
         1,
         2,
@@ -92,7 +92,7 @@
         8,
         9
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2013-grade-6-mc-v1",
@@ -101,7 +101,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "154db498faaadf8d5165bbc4e6e184abc6c98e07447902fd6cd0693c66554858",
       "passageImageSha256": "d1a50f756fbe8d8b08142b3abd3d83f32d0c5345dd116168f68b17321068d1a6",
-      "textSha256": "ceb18fab1c5c2ba052d10e38cb9b0c9078245572c1884cf628d7bbb7e6cb44b3",
+      "textSha256": "d59071b77e34858131ccfda9cd7ad7f60921f8cc4f3ca0af728771cb4c94dfcc",
       "paragraphMarkers": [
         5,
         10,
@@ -115,7 +115,7 @@
         55,
         60
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2013-grade-7-mc-v1",
@@ -124,7 +124,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7d9140bd761519e9b6ced09ffc3d2ddebc2391fe3cdafe5b9fa8ab57b29eae7b",
       "passageImageSha256": "c79b27539e7fa7782f6208e45c02bc30f767a492f4ae7b76f239c12d239fd6b4",
-      "textSha256": "e8c8e43ac2e50e2036ca19feaa1bb7c95b35b974b798cd3d92cfb981bf855f34",
+      "textSha256": "b20050cfa94671ddf04a9090f68d47aec553b9c24a28edf7a71595fa63f8d77b",
       "paragraphMarkers": [
         5,
         10,
@@ -140,7 +140,7 @@
         60,
         65
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2013-grade-8-mc-v1",
@@ -201,7 +201,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
       "passageImageSha256": "e55d348699ef81492741865870ecfb29c9d27f19c9b437f6e4484449aa66d42a",
-      "textSha256": "2468c1d601a1e3e53666966c4d41160c713b073ce09ba70977b3f97e77e61489",
+      "textSha256": "757033188f6de1795a932270ccb4bb8240616086fbc4b1c4d24f6f9bcbf758fd",
       "paragraphMarkers": [
         1,
         2,
@@ -224,7 +224,7 @@
         19,
         20
       ],
-      "visualDescriptionCount": 2
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2014-grade-3-mc-v1",
@@ -233,7 +233,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
       "passageImageSha256": "0650eb3b4a98b9cf573df403d71c1d35a9864cae8e94b1c1d9c5e267827b307f",
-      "textSha256": "f04831b5c2829130b74c7257dec180699b8810ad604caffea5db06e47e1e2385",
+      "textSha256": "fb1d264eb73ddb700e697b1d7dfe2c0b60ed0bfacd630eadc8dcd8760eaa9d07",
       "paragraphMarkers": [
         1,
         2,
@@ -274,7 +274,7 @@
         37,
         38
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2014-grade-4-mc-v1",
@@ -283,7 +283,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
       "passageImageSha256": "a4664fd8f5985917c3ae4edc74d9b3f88a7858f0d26aea1f295d6ca75231ec7e",
-      "textSha256": "ca6d6ff9d959742a2c657f29da6bf4eadd5bed46f9d6dd08ee8b45b8d556815f",
+      "textSha256": "a741e73a1e5fb0e45e9a502eba814c461e0f1737dcd42c54b65f805eb03397ae",
       "paragraphMarkers": [
         1,
         2,
@@ -299,7 +299,7 @@
         12,
         13
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2014-grade-4-mc-v1",
@@ -365,7 +365,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
       "passageImageSha256": "1dfc6456ffdb9505a9392f836e17c4ab0b6bf652e57b6d4789ed83f7357cd272",
-      "textSha256": "2647c59b0652aa4f6ca8c632d3f0eca3c4dae8ede1533ba68823bc10a8537d32",
+      "textSha256": "78fd15c0ca97e096f40d8b2c32d95c70fa4f3c0a4103e93f7f28736010751ab2",
       "paragraphMarkers": [
         1,
         2,
@@ -435,7 +435,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
       "passageImageSha256": "eda3b38f6ef044e2b22b812b914b31f5aed322112a3eca1b1a2881d381f91d69",
-      "textSha256": "73fa340c828a866b5d3d9dbb4a977bf50fca7aabcb82f9abef4a17da437b2de6",
+      "textSha256": "db07830b8453c6606b1e8c003d789298109f3fe0d8567a3d22190b0eb22b46ec",
       "paragraphMarkers": [
         1,
         2,
@@ -525,7 +525,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
       "passageImageSha256": "6bdd107c4be94eac78274ba2a4e97862fbb9d7242acff4b4fcff102dd5712b8c",
-      "textSha256": "e735cf369aab7b6cdd208f5c8795142d5f6636df9fa99622093da7dbea408991",
+      "textSha256": "e6e442121332070c94b314288f0dd9e86b156b9c5a46a141437561159483ea65",
       "paragraphMarkers": [
         5,
         10,
@@ -541,7 +541,7 @@
         60,
         65
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2014-grade-7-mc-v1",
@@ -550,7 +550,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
       "passageImageSha256": "f9bd8a633fd1709150fe448b837839cf3173341476103939262aaca3e6b28047",
-      "textSha256": "f59f58f1944008dc55ef16400d445b908a09ab8b2eedcd325bd21659664d3997",
+      "textSha256": "d12b2c0bafc95c020e1dcd75956559793e9584b1973abfb9d5d7e5bd8ede80b0",
       "paragraphMarkers": [
         5,
         10,
@@ -590,7 +590,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
       "passageImageSha256": "58b4c904b34203b4d34bc40be416e93528e5e16a895438f358248764eb506dd6",
-      "textSha256": "14ca94accc171ac730554ed1f3776d205a0a7d9ea6ae0e288bfed77bdf930680",
+      "textSha256": "dbc9c6863f455d9ca56a23c94ad411ad4aabd16c1f7af28767735d4346f80638",
       "paragraphMarkers": [
         5,
         10,
@@ -608,7 +608,7 @@
         70,
         75
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2014-grade-8-mc-v1",
@@ -648,7 +648,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
       "passageImageSha256": "a078f8400ddea5c8ae31a4d48c51e25cbc8d8c59776311383e25dc52fea8f294",
-      "textSha256": "e978dbabf5a9f2f1bb17a75a1fe6b74cd7ed8e7a6b276f753b5c1c8804226dfe",
+      "textSha256": "2ffedf6e9e6d390c26a2ab9227cffaf4199b80ad145c39cf7d1cb32f2a30ce15",
       "paragraphMarkers": [
         5,
         10,
@@ -665,7 +665,7 @@
         65,
         70
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2015-grade-3-mc-v1",
@@ -717,7 +717,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "68d5695c54474f86a820183a7127b6b409e34ce9e18cd4726fb7887ea68611de",
       "passageImageSha256": "70eaf7193bac6419866131da525bcb898f19e50c073bfbd491bdfbdbd5bac196",
-      "textSha256": "123ca8a800b1e55b3569f2ecb8b6acb333da7c606ec08768e336794b459842f4",
+      "textSha256": "d678dfea7294661f95c0a29b7e76eb099835f7b5af4fd1fb5c1aae0a6319752e",
       "paragraphMarkers": [
         1,
         2,
@@ -732,7 +732,7 @@
         11,
         12
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2015-grade-3-mc-v1",
@@ -769,7 +769,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "dc83061599c8dd6572781a368575e83d6432870285e1040371793cbda0f8108d",
       "passageImageSha256": "896d9ba9d98e79c13554be592c2678c2c0df7236279bf21df0ba94a2229d7dbc",
-      "textSha256": "2205a2a264eb9c70faec52af438b2418e28f96852ffbe654bfabe9cb545c6a1c",
+      "textSha256": "0b77601fdedaedad7603c4cb64f4e9cb7e152682724c6f7494e950a01cea8da5",
       "paragraphMarkers": [
         1,
         2,
@@ -795,7 +795,7 @@
         22,
         23
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2015-grade-4-mc-v1",
@@ -804,7 +804,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "dc83061599c8dd6572781a368575e83d6432870285e1040371793cbda0f8108d",
       "passageImageSha256": "305af198f08abc01f7d2ea2072b85431ccad4c1c2c0eb2b6a7168a37392ee49d",
-      "textSha256": "318efad31f1adb22c91a45da012c89373dac705740fc066e7c734bcd46c33c71",
+      "textSha256": "7cc242648636c4231b670ceca9900ee9ec77063422310967d50484f55b82e6c6",
       "paragraphMarkers": [
         1,
         2,
@@ -812,7 +812,7 @@
         4,
         5
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2015-grade-4-mc-v1",
@@ -848,7 +848,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "9ff46890d4d9fb734f966d5727a704853b96f1279a435912c0248a5928102a04",
       "passageImageSha256": "b6cccf3f438be562024b3c4e58ea1725d9dd94a4bb35cbbf4fa667cb6d0abc10",
-      "textSha256": "234deb2c859453e04fa22b1373257f3ddc7801a4b35b9309d3c1cdd91517a021",
+      "textSha256": "ab4de6aeabcef1530811e1e84e385c1f89f10fa154a2b3915b91918465f3a9ec",
       "paragraphMarkers": [
         1,
         2,
@@ -931,7 +931,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "b953e7edaf153661766717c8a68af12c1c51fd733f21b9ecb324bba9a1db1655",
       "passageImageSha256": "6fed11cad5b5fde387c49077f08020fdc5d679c29681c3e428ebd7655d8c420c",
-      "textSha256": "2185853e757d69e447ba109bb37ab4c821a0cadad166260ddce0aa13c22954b1",
+      "textSha256": "35b260b755eedd44b9a8c799cacaf9460d85bef3ee746c7a7d96a2c36c757893",
       "paragraphMarkers": [
         5,
         10,
@@ -1026,7 +1026,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "9ac337956a3980544004e316c733fee236cae6afa964df2af4602f7fcdeb24cd",
       "passageImageSha256": "246f4a52aa4ad17ef86c1b4d585e1c38709a24bd3825d5aaec190b0af446c14b",
-      "textSha256": "cd4d15154023227f43bb636fa16c0a2dbd08722cfb3f9da4411143501ff6c531",
+      "textSha256": "06ad1e1ee0f5c1296ac2d117d53c2221097ac399d3ddd550164903fcee70b4df",
       "paragraphMarkers": [
         5,
         10,
@@ -1040,7 +1040,7 @@
         55,
         60
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2015-grade-7-mc-v1",
@@ -1383,7 +1383,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "1ab84bda55804d949c3e78ac4ae012d7f0d3e71f2acf3a4bd1f12d9ebeb45fbf",
       "passageImageSha256": "efb18b22f49f0dbfa1eff6a8aca55b8a305b065392a13cf1f78f6c0a3adac273",
-      "textSha256": "9e2402062ba856bd59668bf8980059aefade8825caea033ebc24c58b26fa089e",
+      "textSha256": "4b51f60c5c00fa1379f77990c170fa9221856ccb1744536966bfbd07776b294b",
       "paragraphMarkers": [
         1,
         2,
@@ -1463,7 +1463,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "1ab84bda55804d949c3e78ac4ae012d7f0d3e71f2acf3a4bd1f12d9ebeb45fbf",
       "passageImageSha256": "43b2a895deb7b033f778d29989a9900ddcea4caab62198af08a773925d114765",
-      "textSha256": "72a735ef55656945bf82e9eaf0e1fd87c5ba5d75d866efe528153c7edfb1bcb1",
+      "textSha256": "1675bd5098e4042568380ba5c5d3de466d7bd5d6cddc2c1f0eaaf5ecba72e869",
       "paragraphMarkers": [
         1,
         2,
@@ -1494,7 +1494,7 @@
         27,
         28
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2016-grade-6-mc-v1",
@@ -1600,7 +1600,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "0401a2a7e7c3171ee1fec5663618967bd169df54cf594e3d8ca43029ea18fabb",
       "passageImageSha256": "0fb2524c80ec6f8ddb5a85cbc11d3455a4a7e8aea436eeee70a68ca9929f22cd",
-      "textSha256": "00bb4c875e1eaa00a44bd3afd2204bd8878114de689a3a9edf212493f778d25e",
+      "textSha256": "f365d0431576d018524f23c83af4be89b2041e018a36e4600d4d47c66b19dec6",
       "paragraphMarkers": [
         5,
         10,
@@ -1615,7 +1615,7 @@
         55,
         60
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2016-grade-7-mc-v1",
@@ -1768,7 +1768,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "c66ca7e9ecdb3551374f4d7a19e4623c050efb7cc982c978fd2bacdb923724f6",
       "passageImageSha256": "ddf223caa615835501b77871f61ede651a4e64761ebf4f8ffa1186b86950619b",
-      "textSha256": "cd1e7d4cfa56bba72ac452bc70eb4fd1d1cc3100b6d742f387c524a94a9d7d98",
+      "textSha256": "ebdc99fc4d9e97ac63e9b652d808efbc8d8b01ef228646e5efafe3e437c540cb",
       "paragraphMarkers": [
         5,
         10,
@@ -1796,7 +1796,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ae2f6e12cf2d20a3b365f4d019ed6cb4ebd259912db38d32101fb394281acbbe",
       "passageImageSha256": "804ff17330a2032ef1ab072885799558eaca623f6822f0abbb62a911b54c65d9",
-      "textSha256": "4b0507cd45b087f5a7916f3ced41759c23325183ad5f3858d3f449f9a2f06686",
+      "textSha256": "170a874bd4739e117a607a6f077d7d7ba7db52323f76bce07be584aa42705f3b",
       "paragraphMarkers": [
         1,
         2,
@@ -1858,7 +1858,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ae2f6e12cf2d20a3b365f4d019ed6cb4ebd259912db38d32101fb394281acbbe",
       "passageImageSha256": "5794bebccafb3b5744da25ab28ba6e7ddd459c88a1c3c073871fbb3aada80101",
-      "textSha256": "0263d527664ad21ec90e137251edfd9eab4fc9ee28f0cbd1af5822827f7aeb4b",
+      "textSha256": "50c5bdf50ac4eb1e46c45f67ed85488b3796f31ad94c1d7f325be062f7da55b2",
       "paragraphMarkers": [
         1,
         2,
@@ -2010,7 +2010,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "28c327840d12dbe51555c48ce94a02abeace76e10f78f62cd316d71338cddd9c",
       "passageImageSha256": "3ae3c55edfb9251110ddecd773ca835674119cbf342996e5e796626ae841d5c0",
-      "textSha256": "312fe628854b3dfcdf28387553f457ddeab975fee80cd7a3450e8d5177b3c1b9",
+      "textSha256": "077a5e0a4855fcf3bb4b5a392db4d9d63a42b34862a90ebba176574fdd325180",
       "paragraphMarkers": [
         1,
         2,
@@ -2051,7 +2051,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "28c327840d12dbe51555c48ce94a02abeace76e10f78f62cd316d71338cddd9c",
       "passageImageSha256": "520870d2157243c6e7eed6d8bbcf6043f9aee82184d986d257524f9d8260bf1c",
-      "textSha256": "13e007a6835d82024892c93170c2f2a425414120446d119849fa187cd8c245c5",
+      "textSha256": "2144e0e40c967e4611b63726fe6934b481daf45fa92187dea73ea36967d8e784",
       "paragraphMarkers": [
         1,
         2,
@@ -2076,7 +2076,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "28c327840d12dbe51555c48ce94a02abeace76e10f78f62cd316d71338cddd9c",
       "passageImageSha256": "4f371d531f94b60bb9ec0960d922aa12a0c8d50666485afe05c62bfb9c94a5f9",
-      "textSha256": "df5298625a78598ea22dc1aeb7570b471241a49e6a5c15cecf338106155b71c0",
+      "textSha256": "e10c6c4eb2ff4a8e69204695bbbb02ff2cf70a032f19e79203423c45d1153456",
       "paragraphMarkers": [
         1,
         2,
@@ -2099,7 +2099,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
       "passageImageSha256": "6098838793e0fe552b85e926c8b6fee0cca45e0f0ae5b45519f5fa401c32daec",
-      "textSha256": "9c2082edc9cecf5b18c4542821d4839a7a33936d4c911b17db51f169842247d8",
+      "textSha256": "38a39b63f93b69eee1612424ea231421d4e1e24bfee23bdcd7f6ccec802b7b37",
       "paragraphMarkers": [
         5,
         10,
@@ -2146,7 +2146,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
       "passageImageSha256": "73106e436a65cb9b6d1ceb5365f13f6637ab0d04e6d6cf62674d9f84acb8a952",
-      "textSha256": "c31251c97534936e7910fcb697c28e7175481918ffa4247f56d41817124ebb09",
+      "textSha256": "aae48516ba8be46d736d8617e8c7c821702d4a0f8d9fd9183458b04f4b49c49a",
       "paragraphMarkers": [
         5,
         10,
@@ -2169,7 +2169,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
       "passageImageSha256": "ee7e50f5c0f401ab2f8ed49828a80f6ec09e32fb552a307eef765ffe661bf86f",
-      "textSha256": "6055867bcb47ba993ed91a82c78f58e6404e4e59e345ba06e21f42cb3af64841",
+      "textSha256": "310adbc25f50842abb484404eb9be0f935dbc0e5a51d70290a7cbd2044ad96d1",
       "paragraphMarkers": [
         5,
         10,
@@ -2192,7 +2192,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
       "passageImageSha256": "b7306cd7c1a54d143ebcf417a20c18169bf0eef92a651d93877efc1cf1ff023b",
-      "textSha256": "94ab7d82cd7fd3c4ca222276a2bda7d246d716086a573c2b605b07ff6794a2b1",
+      "textSha256": "b8b43df1c3fca703d9f8061428ce2076caf396ca67e5dc89e5fd7960f7b46d54",
       "paragraphMarkers": [
         5,
         10,
@@ -2241,7 +2241,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
       "passageImageSha256": "ab451bab0dc2fb1bd4d745eb083e4eaa538f9d7e97c3f87c7884899fa01fa978",
-      "textSha256": "1e24cd7070a4e4e165e4c9ef5d4e5043bf52ea50c9ebf1071dbe3f38deddfc8a",
+      "textSha256": "c69a30bd3cbbd1953c267bbea4b69adb96ea6a565bb376adf6d1c89f12d83544",
       "paragraphMarkers": [
         5,
         10,
@@ -2266,7 +2266,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
       "passageImageSha256": "f987de0296309c804966dbc2543a3dffa9682ccc14dc28c7ae6a334a0849e3ba",
-      "textSha256": "cea9630cd3ee72924fb1c4c21d83db165bd6172729d0dc6b43d216702375b64f",
+      "textSha256": "22c8bdc34b912d17966f6e5570082722099b93a6ff551bc2347d2449185d1b5b",
       "paragraphMarkers": [
         10,
         15,
@@ -2288,7 +2288,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
       "passageImageSha256": "431d53f9db0db8408cd1d7f4e1db3e3ecbaff6586e5ab814b7870acf76e1faa1",
-      "textSha256": "e25fd16c5ed11a24e394e2803d826f54f149384da6dfd1ea6ad68baeaf5d936f",
+      "textSha256": "bb76d60be11ad44a5e9b0d2f5e27203a17f2e97894893dd3686dc17882f9b170",
       "paragraphMarkers": [
         5,
         10,
@@ -2313,7 +2313,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
       "passageImageSha256": "26f8f8e359fab25e7e75de45b665dbcf2ce46a3ce3235049b63568a6b429b7b1",
-      "textSha256": "68370415e32108eaaa391a154bf6a77795a5c454c630f1ed8c0b04235d33608b",
+      "textSha256": "f1fba07321b6644cac5cb630389880ccc330d4af3282e1053fddbcb28d6d6805",
       "paragraphMarkers": [
         10,
         15,
@@ -2339,7 +2339,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
       "passageImageSha256": "082c09a0b21159f08835cc228fa8537ea629f62bf807ff442cea49ca9c73c7b1",
-      "textSha256": "100e55fce46cef5d37a249c03217308f29f3a005997fea14ec61d06b58ed6807",
+      "textSha256": "12dcd61319c782007e39ab7779f1729884e72b8238c635e11f1b08e645a4ebde",
       "paragraphMarkers": [
         10,
         15,
@@ -2362,7 +2362,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
       "passageImageSha256": "292716f0280add30fedc05accd516edf65749c134f0dd48e8b53c743d70c2f42",
-      "textSha256": "40a608cd63817f7d2a2a4cc6a4334c2cf213f6918841c8ae586bfd4a6b564a5f",
+      "textSha256": "2c93b8ece686fd9474fe6a74190bc6f35b0c62892acb6c0c26e65a8346342315",
       "paragraphMarkers": [
         10,
         15,
@@ -2486,7 +2486,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "216465767efecfbd77ff8fcf81c201c752ab69fbd5f5505bd120f38f18ecbce4",
       "passageImageSha256": "a5af8b4fb4ca519148b3bfb6d265e7f9ce7d01c2a3d81e7bfec62e4be4234914",
-      "textSha256": "7be80fd32b2d5aeb32b5f66450323605cd2a998e23a865399e3c108596f387a2",
+      "textSha256": "602c5294b7b25a695c05b15936f644650af6dd8183fad9a83ac1e0fbd75fb08e",
       "paragraphMarkers": [
         1,
         2,
@@ -2549,7 +2549,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "e1787392509748c02633c2318e17d1967f8e3277bc8ee0dc607197e4189d94a5",
       "passageImageSha256": "75e2921abaa0f2234a6c70a7fa2d840bd1741a55b2899db4fcdb3e4771070417",
-      "textSha256": "a590c01ef4164659de0cdf5075addcfd5494d450e2222c9a099671a25d82eee1",
+      "textSha256": "4a447c2f728eb22ecc18137306cede30607eb7ce1aa27efb54732cf664da1e6e",
       "paragraphMarkers": [
         1,
         2,
@@ -2564,7 +2564,7 @@
         11,
         12
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2018-grade-5-mc-v1",
@@ -2925,7 +2925,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "85964b191ff0991362a05cd43aa6b30f8741d6ef8357c73fc8d1c69688fba923",
       "passageImageSha256": "1129d4dd102f316705e0b531d9eee50b86cc6d6f00d68a0c86e8da13d79893bf",
-      "textSha256": "45e44452594598c88dec39ade8e400ef63c30f494dd11d665c3f6b5d57f8950b",
+      "textSha256": "2ece3604b430c851981eadb99471503e44543e15a21d25275371e63981cc1b3c",
       "paragraphMarkers": [
         1,
         2,
@@ -2980,7 +2980,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f3ba908fe5f371a53c6f8e4c60e1e042d48d4edf4f90756a5a247ae3a810d504",
       "passageImageSha256": "c3f0884a2a9c5b55765edfc21a502f95a71024dd5232fec299d483ed281f3b6b",
-      "textSha256": "de37122d9fe5b1f6f8b98e7a1a4e07c29ba42b5a8f548a97ac34c1ec6aa454e4",
+      "textSha256": "ce1186b15fe695e76000ed7c4dd35ac4cae8d608d76e9de95db1ea9fe29f124c",
       "paragraphMarkers": [
         1,
         2,
@@ -3048,7 +3048,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f3ba908fe5f371a53c6f8e4c60e1e042d48d4edf4f90756a5a247ae3a810d504",
       "passageImageSha256": "74193771c130bf89cec0fa95a25dd348aab28b23e9a10a38c1dacaf7cd29727b",
-      "textSha256": "e95f6804de43d19dddc0141030a25ccbd5431c771d54ab5e0798d491d97d495e",
+      "textSha256": "1d23b9003b407a308f78966d941eb9368d4a50a7b9684242e6ab5f2a4dc7be68",
       "paragraphMarkers": [
         1,
         2,
@@ -3102,7 +3102,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "67f316ecaf723d7aa9bc073b59f61bccfa9087542188d8fb704636feae01b404",
       "passageImageSha256": "8d1f89d6719b377c7faa5e24cec3ff02b19603fec0e61885ba14ed3bdbb076bd",
-      "textSha256": "70c4ebb2776912671a2f02d3314f6626050bf4ab51aec693852ec79fa34f7ea6",
+      "textSha256": "8475c88fe791a9807990e2747535566470f5be69173c81d20e4654f621a1ba16",
       "paragraphMarkers": [
         1,
         2,
@@ -3484,7 +3484,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "1e590bb1a0c7665e80d530c7a80eaba46976620676aebf22e8f2d22a43243b03",
       "passageImageSha256": "a24c63a4a3f5c9fa394b5816c5aea8d9dabd5f3fc2de632d63f79f7f892c8cd1",
-      "textSha256": "28f92dad67b2d27b1e274a31106107f921c9e5fc30251ed9fa0ee8b3e26cdcea",
+      "textSha256": "0a9e44c6c9fa65bc84a0d6adff03644a09f28194e31c94e0738aab61e5b2f183",
       "paragraphMarkers": [
         1,
         2,
@@ -4228,7 +4228,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "ac2ed9ed3d33b08d7ad295c0f84584ce7f0eb1a41c6f9d4780cc092ebd049ba3",
       "passageImageSha256": "94f2495d766f3c807b621dd6d05cd0b8e0620f4731fededf8c398b6d51061b2e",
-      "textSha256": "1303ea2060260e60a19695e5d7a8e002ef8a7fa55c2ada76cdd1b700a0861e47",
+      "textSha256": "728d7c219bbe7bc649d6f89f42eb7b7f6a8425de186b463cb53f00f21597e48b",
       "paragraphMarkers": [
         1,
         2,
@@ -4242,7 +4242,7 @@
         10,
         11
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2022-grade-7-mc-v1",
@@ -4389,10 +4389,10 @@
     {
       "examId": "nysed-ela-2023-grade-3-mc-v1",
       "stimulusId": "nysed-ela-2023-g3-stimulus-19-23",
-      "inputHash": "675ebccb9f845d1d50ce74496d5b13f553a69a8ca69da403ce4c7e296fa991ef",
+      "inputHash": "1ff8e0f9e44340296fd1137bac726dc1fb3c96c079988a5350cd5f03cc8d9a5f",
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "d95524077a534813d2772f0e4218604f68f037d2f6b49fd89a84b8190fc4b50a",
-      "passageImageSha256": "d5f6bffde21740748b24cea9cef2bcfc79155b988dba2da149ac94717e3b502a",
+      "passageImageSha256": "55a8990c7da8db580363c4b18e1e346cff9d576e152fb5f15877169f79a3b158",
       "textSha256": "b80197d71e0ae5bff68580b1e9568ba91ae944f7915ea5bc306aaefd6975dee0",
       "paragraphMarkers": [
         1,
@@ -4446,10 +4446,10 @@
     {
       "examId": "nysed-ela-2023-grade-3-mc-v1",
       "stimulusId": "nysed-ela-2023-g3-stimulus-26-31",
-      "inputHash": "de9ce6e66013f56d1b11f8790bb93ac3f37711bc678257b44ff6ecf68cd36b92",
+      "inputHash": "48b1e1f73acfb441ae02a900f6193c64aa4f1868b4059ed148c04c9c5a70570f",
       "source": "official-pdf-text",
       "sourcePdfSha256": "d95524077a534813d2772f0e4218604f68f037d2f6b49fd89a84b8190fc4b50a",
-      "passageImageSha256": "4d4ba33c5a758ab42d8851b5206e9bc4b9baadff40a629370ccc0012fc6e178f",
+      "passageImageSha256": "0b5c02d381c20064c2b4e38c63c29dd14177004a0791788b4a630866df369f8b",
       "textSha256": "4a58d5b83ab93a397391fb19e44fae2aa0521fe233af5da6b8683e9ec94fa8ac",
       "paragraphMarkers": [
         1,
@@ -4565,7 +4565,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "a730182f385f005969b086ac22cd0a20dc94aaffceaa50a63e774f4cdd11b686",
       "passageImageSha256": "28399f4eb5210d55946cbf740a7b50149d7bce5e87f603f0c4e6370ffe4354da",
-      "textSha256": "3d46bf93d332dc0dab0772d43cf8f971e6a8c7b22963fbf347b7a03ecdd9cf90",
+      "textSha256": "cfb9ca708ce00be5a4a3a36691f3246427adf752ce02dac60b491d2e4ed1ebe2",
       "paragraphMarkers": [
         1,
         2,
@@ -4676,7 +4676,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "b39dd1e1e8f7a50fc2a5b7eb4e9c377bbee9c42a27d1981d2ba93af5cfb67145",
       "passageImageSha256": "0dfe3b377f424b83542fe61cc53ffc0c55e6add65b9abd9e2e7a6ce83fa36031",
-      "textSha256": "6796dce4db15db6f4de15004fe7aa04e0184d9bb182f25274b87c1556dca4668",
+      "textSha256": "057ff86bebe948cda7036f66e0b0956c3233a447011f18c9e071fb263bf0ce75",
       "paragraphMarkers": [
         1,
         2,
@@ -4730,7 +4730,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "b39dd1e1e8f7a50fc2a5b7eb4e9c377bbee9c42a27d1981d2ba93af5cfb67145",
       "passageImageSha256": "8c11a423f28b3161b9b6a42041f3283028e95ecb3d6ae204fe4cd868d3d4cf1d",
-      "textSha256": "640d3c17373387b61a313a55cbd20f65ece82cd5dc7128e6f03fa14ee03a69d6",
+      "textSha256": "3d5aa549e3d00f52086d7d037ca93668d4b3819a2d34bc0627d1c89c9008b7dc",
       "paragraphMarkers": [
         1,
         2,
@@ -4756,7 +4756,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
       "passageImageSha256": "fb36c4f9b62a7aa1eba14d2360246fcbf17e08351085f8e19b232ff4db2ebfdf",
-      "textSha256": "20354e9cb4d5aadda3480af7fd4c7636aaf21aed5c0b1236e53749d8b302951b",
+      "textSha256": "e3bf9c8ce6cc586ed3c83b77b190da172b2cd2c6741d5c58b173f052b31c03dd",
       "paragraphMarkers": [
         1,
         2,
@@ -4784,7 +4784,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
       "passageImageSha256": "ef4ff71dfd80daade6c31da69446d7d4efda55e614b1ed966bc05e36423584e2",
-      "textSha256": "c78705a35498b774323aaae4c3639d3e78b37d4d4774abba6358defe4a8dfcff",
+      "textSha256": "4f76a215701cfbfcc1ccb9bc45cb28eb80dd85bb5fdf8aa91a8fa205624f6a9b",
       "paragraphMarkers": [
         5,
         10,
@@ -4803,7 +4803,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
       "passageImageSha256": "4d418edee190a9e9729cff3ea22d3a47577991ee01d9f5ab5d1946f1faabb12e",
-      "textSha256": "1ba10f9aae751695a82ddcd526895adde7d68093948e35fc61f9100d539ee373",
+      "textSha256": "8e603223b6816b627f6077c56667708981a0d3d8c7dfb18ac3c0a7660eeaa55b",
       "paragraphMarkers": [
         1,
         2,
@@ -4824,7 +4824,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
       "passageImageSha256": "a928bba94ace202f84f39c9c6ce8bc78ae9a55a390093019b6034aa539d5285f",
-      "textSha256": "1d03a49635099a65aa96f8747b3562c13e099007deca17bff45e96cf7cf2c9ed",
+      "textSha256": "8c3bb6cc30dffbb5b0e6df0a9ff3c0c5f6f2a3618ecc76842547c2bf6269b793",
       "paragraphMarkers": [
         1,
         2,
@@ -4852,7 +4852,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a8b8dd01c2545bbe3e666917cc09aa223506e69adc7293060551129ec80ef14c",
       "passageImageSha256": "8d9809ed25695708899913f48556d5af52bf3220d761607b7bb0c78c5ae883da",
-      "textSha256": "2c58b85f3a2184ba4aee120949693f7fa68734ec0497bb631e057e97e103e9fd",
+      "textSha256": "ff5a177335b48ed97e622d580eb2b5a6d9b7418d23b7a30977ab7b170ea5d024",
       "paragraphMarkers": [
         1,
         2,
@@ -4885,7 +4885,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a8b8dd01c2545bbe3e666917cc09aa223506e69adc7293060551129ec80ef14c",
       "passageImageSha256": "53d3c929f928c4977f4d8e90122147327633ab15a1d72685dd513a40daf98acc",
-      "textSha256": "dbfe654c7ce130673b8c5782d367020c926111417732c69e273c8c102d0ebd9f",
+      "textSha256": "84f04a2072cb308443fdbb2780daf240d59852e441ab4f1204e87d2dc59716ec",
       "paragraphMarkers": [
         1,
         2,
@@ -4907,7 +4907,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a8b8dd01c2545bbe3e666917cc09aa223506e69adc7293060551129ec80ef14c",
       "passageImageSha256": "224149c19802981864cc034e2bb05066439093d740b52ff84593d9bca9039aae",
-      "textSha256": "8dccb195c78a2ef58469bfece591e56b3a6e06313d23bd068027a4e76c67b5aa",
+      "textSha256": "334e826dc16a1cb076cfd60580de9482c7854817477ef4c53b45ef9a41b47671",
       "paragraphMarkers": [
         1,
         2,
@@ -4931,7 +4931,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a8b8dd01c2545bbe3e666917cc09aa223506e69adc7293060551129ec80ef14c",
       "passageImageSha256": "48f9fd636c0ab96875b600ff0e14ef66c329a363b5e7bd8ff200048eccb7343c",
-      "textSha256": "2b163d060e4d80f532003eaae7bb28faed6e15127db59011d769744a11d00e21",
+      "textSha256": "4cf8260af3e5135faa7a278e76fcdd874e9e1e392e16ed60296cba61a6969542",
       "paragraphMarkers": [
         1,
         2,
@@ -5300,7 +5300,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "bbca99ab7905cc388417360ea69d905bf85fbe8231a561f6007cbe5ba77c9bdf",
       "passageImageSha256": "74eaa5644ac4394e0ec457c314f4dfd63be2b6d1321ebeff9e82db81b35c3aef",
-      "textSha256": "ebfa58098ed8f85e287c4b8b33c43abd51c63a8a966d069949f11b02fbb5fc54",
+      "textSha256": "48416356f197ffdecfc7bed6da4a75f578589c07169cb1e8c583ce96ea6e0cd5",
       "paragraphMarkers": [
         1,
         2,
@@ -5324,7 +5324,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "10462cd9a66abc6cfbefe0a17f9bcd830342700ce9d8428244c6c04cb55d94ea",
       "passageImageSha256": "aada6f336d6e1a446f5f15bbb948929106889960bb82884e41261e3b11869c7f",
-      "textSha256": "39517d3794356a45921704d265e537b3d0a57b7d34a4bab643b9c64529e2128b",
+      "textSha256": "e8dc16a11bed3a532ef640df034183c6671d2199f58ea4f8f2c2965f0dfb7923",
       "paragraphMarkers": [
         1,
         2,
@@ -5346,7 +5346,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "10462cd9a66abc6cfbefe0a17f9bcd830342700ce9d8428244c6c04cb55d94ea",
       "passageImageSha256": "be7e445cc411a4a362e5529ba6f99489baef4dd3436f21b89d6566effc6ce39c",
-      "textSha256": "b9df26650ab6939989521730f571dd27c710d36166399aaabeb58dde7a947497",
+      "textSha256": "c40a9ab75199c42cecb9af92c9778a571229a00d3439962d0cfa99029b4b557e",
       "paragraphMarkers": [
         1,
         2,
@@ -5421,7 +5421,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "452bfde106eb2a5d73eb7ba0fe367664297075ecfb360c53f284c9102e913c22",
       "passageImageSha256": "2ec0c4b3c12f8f49249cf61f4266f99b42ce725741e67c0996be943a5473c682",
-      "textSha256": "608bcef28b6182d23e8aeaee9e8dd740d81b4255e2a20b18a0f968373522255e",
+      "textSha256": "e4e644678ebdd923f9d329ba61079376019e3b17ec498369c57b678c86cc95f1",
       "paragraphMarkers": [
         1,
         2,
@@ -5443,7 +5443,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "452bfde106eb2a5d73eb7ba0fe367664297075ecfb360c53f284c9102e913c22",
       "passageImageSha256": "cee69f6ad6890a6da88d49aea6feb759b17d92eab57084bb8bb2e633ced16294",
-      "textSha256": "1effb541512356da4067b900f4a4036ba0f8e737a21a45a3485434097e2a21c6",
+      "textSha256": "72dfa3df8154e2e4c1855c7c28feb10bb0a6540d02b71e8fd46602216d13354d",
       "paragraphMarkers": [
         1,
         2,
@@ -5471,7 +5471,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "452bfde106eb2a5d73eb7ba0fe367664297075ecfb360c53f284c9102e913c22",
       "passageImageSha256": "8253bb21e89e0c0e0c67396ec6988c96d7b49c5ce24fe7e95e77b410cfdc4d74",
-      "textSha256": "3317ed0c510d7f981a0dbb8c096280d770663355984754b75bde507873664135",
+      "textSha256": "2f53bdfce27e7bb89bada72345642e57d3690fe55728acc298bc05789dfdda4a",
       "paragraphMarkers": [
         1,
         2,
@@ -5486,7 +5486,7 @@
         11,
         12
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2024-grade-8-mc-v1",
@@ -5528,7 +5528,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f423c705395638759cdcea8e0fdd4a65f5c1b1b3df3e9073d7b9e64ac1661bd3",
       "passageImageSha256": "123ddf9345c69a74d69ad37ab9f5c22b0ab35081d969a71bc6bc0b4c465641b6",
-      "textSha256": "aebf2f470805cfdbf0f51cde40e829a1c75f0f12efeeabfcd986670eef11dddc",
+      "textSha256": "0ed0cf4983ec6d9f096ef0357d85d6fa17bd8b4f06738059baa334588faffb7b",
       "paragraphMarkers": [
         1,
         2,
@@ -5558,7 +5558,7 @@
         26,
         27
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2025-grade-3-mc-v1",
@@ -5567,7 +5567,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "f423c705395638759cdcea8e0fdd4a65f5c1b1b3df3e9073d7b9e64ac1661bd3",
       "passageImageSha256": "55c793d92130cb7a00dac0b9628f2b6f34b230da5dc04b811b992e5426841c44",
-      "textSha256": "1310759591e718ebb55f87214ecbf9837f00db21a513c5849566800d364cc4c9",
+      "textSha256": "f9042530fef8582a1830e145f9cc5ffa6d194cec920e54581470f1d4ebf28bc2",
       "paragraphMarkers": [
         1,
         2,
@@ -5581,7 +5581,7 @@
         10,
         11
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2025-grade-3-mc-v1",
@@ -5590,7 +5590,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f423c705395638759cdcea8e0fdd4a65f5c1b1b3df3e9073d7b9e64ac1661bd3",
       "passageImageSha256": "4cb387538c1471ef4efbc7176c2a2f2c585f0ce482504143385f382b5983b7a6",
-      "textSha256": "f098f30106217ce63e5f458dc99e067904b936b7648f5279a5bb7e59ff3f94ac",
+      "textSha256": "8606c7d17c9a6dfbc97c8a188af7c8b9727a4177684a1235b3676b4c06d76219",
       "paragraphMarkers": [
         1,
         2,
@@ -5617,7 +5617,7 @@
         23,
         24
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2025-grade-4-mc-v1",
@@ -5744,7 +5744,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ef047fa3986775c1d270e45ec4a3f935e0e05f79d707467a2879cf7187ed2e91",
       "passageImageSha256": "5289fb638caedea8a16b367d3949199d1495241c837c126acc5fbca45ae918d3",
-      "textSha256": "19fc728e9a55d537a8d86ef03d67b5f7c0f87d35d017909212469ba062ba4e03",
+      "textSha256": "4aa4165b83e058d97d0e41131e54f78d7cbec1d22b9a64bdc590ea26899c9a0a",
       "paragraphMarkers": [
         1,
         2,
@@ -5761,7 +5761,7 @@
         13,
         14
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2025-grade-5-mc-v1",
@@ -5770,7 +5770,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ef047fa3986775c1d270e45ec4a3f935e0e05f79d707467a2879cf7187ed2e91",
       "passageImageSha256": "4e1047fb5adb66f5b911d09147f2ed50b11df2c5f180c088e557b0e582e325fe",
-      "textSha256": "e184ee8d5baf1c61c234160f634ec784e9d3b4dce9d3f2bbc61d50a1115bd113",
+      "textSha256": "5c23fd159a09a025cffac33871dca567198513c8f95aba51eb66bed8d609a33e",
       "paragraphMarkers": [
         1,
         2,
@@ -5788,7 +5788,7 @@
         14,
         15
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2025-grade-6-mc-v1",
@@ -5821,7 +5821,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "734c8ac722ece5fe182bcd36652c8ae8617124eccf03b6de16ae71c3244907ea",
       "passageImageSha256": "96e68c34a1169f493c957d5bbb04ce5ba4b2593d13aff0bbce3789904b2dbc5d",
-      "textSha256": "5c5db934ad48c9b10bb039b5b40f7b4534fbf31362429c2c26296dbf6041c57a",
+      "textSha256": "bd1ae2a12308f6ab577e3b63dd8b8e02001e00bd483f575eb4e0ee0df4cefba7",
       "paragraphMarkers": [
         1,
         2,
@@ -5839,7 +5839,7 @@
         14,
         15
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2025-grade-6-mc-v1",
@@ -5872,7 +5872,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
       "passageImageSha256": "562d946185c7ddef0838beaacb6805146399842df36ee2c368ea4e029408558d",
-      "textSha256": "ea7f150c44c9f85e6b0b29dc9e141a06acc68464c7d2ad176bc133a0ce9835ee",
+      "textSha256": "b6082f20a73136fe5b6a69cd7ee7186f9d5f0cff5b60a7266ddf7b684fbc7006",
       "paragraphMarkers": [
         1,
         2,
@@ -5898,7 +5898,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
       "passageImageSha256": "67d04a2c1d7dda28e0b2e81c631fd7dda831bf5555587d8df53520d60dccb217",
-      "textSha256": "aacd2fc7d306bb55cd641b6fd3fcde4d6054bfc47ae0e8aa7e05c069be600e24",
+      "textSha256": "babc91139032c75af77f07e57bc7aae74d9c2b2792d4102658c70bdeb8189926",
       "paragraphMarkers": [
         1,
         2,
@@ -5919,7 +5919,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
       "passageImageSha256": "adcad9ceb9ab1b960f194a91ee6464bd7a5e1cfae0a027e207e9e86f8298d48f",
-      "textSha256": "a99be272a19e3b134ed2c334e8bcc8f14295bcff88de251f0a45f567d07dbbba",
+      "textSha256": "bf7924d5f9956154ae6d1aa9c11ccaba1c91f39ce277865dbb22e79d65ff25c9",
       "paragraphMarkers": [
         1,
         2,
@@ -5949,7 +5949,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
       "passageImageSha256": "773619ecbb9ff0e56d3b4498808d298b18069307b86c0beee9758795e9208d0b",
-      "textSha256": "39191d1ace5a3f71fbf90b290839a13e82c43cae0a6156228a576a2721f4e8ce",
+      "textSha256": "f6e40945cd14aa70982d0a1f58c4cd1a13eb8c81a61de5f654deb65c9ca015c5",
       "paragraphMarkers": [
         1,
         2,
@@ -5972,7 +5972,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "5e037c48bd40d85ee1ce5994b53d3b004d3aa14b5c73014599c80511c3deb27b",
       "passageImageSha256": "ec24e50e6b110d801415cbaa2aa15dc8dae22143e6127f89ca17845076f3f72e",
-      "textSha256": "06359e1b3e464bd217bbd43ba1295a824ad6b6a69fefa0eccfced520d72a7807",
+      "textSha256": "a933dda53a2db73891344a5b1437ddc445ca7018518ba478c83d6d6c3872e900",
       "paragraphMarkers": [
         1,
         2,
@@ -5999,7 +5999,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "5e037c48bd40d85ee1ce5994b53d3b004d3aa14b5c73014599c80511c3deb27b",
       "passageImageSha256": "da9840d1f397b65b762ebd5f64d40b52aa0a2227ba02615bb76e6e86a259d330",
-      "textSha256": "9fb97d545c317866dbcf2a353b770f4792abebff2e26676da02cc47cd1ed5eed",
+      "textSha256": "d3bbd63119991e7612f12e85bc7c3d20bcb2ef2852a0f53be55a889d22605745",
       "paragraphMarkers": [
         1,
         2,
@@ -6047,7 +6047,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "5e037c48bd40d85ee1ce5994b53d3b004d3aa14b5c73014599c80511c3deb27b",
       "passageImageSha256": "1e459630ee790a1d030674edee67ac1cab9eeb939697f111bdeb26da6874d13d",
-      "textSha256": "d58aa74917f4439981b7967a5abf2af1fe9c3663fc0ae2ce64f67391f2984ae9",
+      "textSha256": "b81b2ffdb98b02ca8155632a89383d75b6b0b7c2f518600c9710beeffcbfe987",
       "paragraphMarkers": [
         1,
         2,
@@ -6220,7 +6220,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
       "passageImageSha256": "8b892ea1cb014baeeab810e60fcd3afdacbe3909db658806c01276e5988966b9",
-      "textSha256": "55d0bcacd4587f166458b5acafa8b47263ff420249c52528691936595db53344",
+      "textSha256": "3db535f3a6ed615fbcfd11b250b4df35a2884cd3345a5208937c5634ec374a27",
       "paragraphMarkers": [
         1,
         2,
@@ -6249,7 +6249,7 @@
         25,
         26
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2026-grade-4-mc-v1",
@@ -6258,7 +6258,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
       "passageImageSha256": "5683c6b97598b8cd830029e88cb2ee4f55d5a60a1d5c3cafac3668ef5c81d46f",
-      "textSha256": "24e8b1473902719b54c814bbf30d72f60bcef138ea5e0205cfaabefc75f0bdef",
+      "textSha256": "ef8a63f8c5d33695737a598492d6a5ecf685fe7a5ff32482894153caafef813b",
       "paragraphMarkers": [
         1,
         2,
@@ -6273,7 +6273,7 @@
         11,
         12
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2026-grade-4-mc-v1",
@@ -6282,7 +6282,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
       "passageImageSha256": "5b051500d467b37958547a19b53ddc4d156f3bb347072072d63ad9d946d86328",
-      "textSha256": "84a6040a0b760bb3c2dee07b34a1e91b85c3e2d5d3cb6a783bcfae46b47b6e0f",
+      "textSha256": "68a0d545f34fb1f41091a3088baaacb460078a94635cf0cf9ab6bdc53fd6734e",
       "paragraphMarkers": [
         1,
         2,
@@ -6301,7 +6301,7 @@
         15,
         16
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 6
     },
     {
       "examId": "nysed-ela-2026-grade-4-mc-v1",
@@ -6310,7 +6310,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
       "passageImageSha256": "509f4650faaa3db12f447939cf135debdb20027c2b9d75f6084dd214612b3e6f",
-      "textSha256": "e8573641782ab505cb7b52d4e3eeb4e8d52eeb81e268592c9578976faed51512",
+      "textSha256": "8464bc080234e950afc20fc72bd6f8545038e3a33926ccd97f487eb202945237",
       "paragraphMarkers": [
         1,
         2,
@@ -6326,7 +6326,7 @@
         12,
         13
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2026-grade-5-mc-v1",
@@ -6390,7 +6390,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
       "passageImageSha256": "0fbe24201ebc0b1d0de82f7bdc9cfb6bdf9963249592f2e0fefe6d36fc21ff3d",
-      "textSha256": "71649285c80192dfbfbae56dbf3dd96f955781b158638b9fcd972b7265390c2e",
+      "textSha256": "4819dde32bbdf82c373ba1739419923476124955469b6d379637036ae3e0d096",
       "paragraphMarkers": [
         1,
         2,
@@ -6448,7 +6448,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "af7b7da4a4c7f75ad3e82f0f42cad7f4c068d693315ff1356bef1723cdd19ce1",
       "passageImageSha256": "76ac76b161d5df99ac591c1cbac19389f1ca1cb86f03f8f331aee0441f6a608a",
-      "textSha256": "2f33374298d13aa3454ef9e75dec663af5e9f5aafd0115d902243271a3ee58ac",
+      "textSha256": "9cfb35382890ef599080f4fc59953bd1cda7c6179371839d1f24e5a4a119f5f2",
       "paragraphMarkers": [
         1,
         2,
@@ -6478,7 +6478,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "af7b7da4a4c7f75ad3e82f0f42cad7f4c068d693315ff1356bef1723cdd19ce1",
       "passageImageSha256": "84ff0a5643385ba835f9346c5eff24e40dc2ff511207bc688d9b0690b1eaae62",
-      "textSha256": "e0a4f7022b81e91f5c7a9a3dc3cddf23200252c1b90f6d15ca82fdd7159ce6f2",
+      "textSha256": "3c63315247b2e18dc304c6fccda8553d7340f0af8b1f9993204c41dac0687097",
       "paragraphMarkers": [
         1,
         2,
@@ -6522,7 +6522,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "af7b7da4a4c7f75ad3e82f0f42cad7f4c068d693315ff1356bef1723cdd19ce1",
       "passageImageSha256": "728b53921be115d655f5d2a2ed4d39d74d6c39a2ba1b097ec0c951a2d06dc6a3",
-      "textSha256": "929ea6ac7f317c51a373a0c6137bced1b82abf21bfc3341a116e2a75d6f07878",
+      "textSha256": "072b37df50a1b8bbfa099e15b5b07d89ffdbb59087ed81f18306ac98bf9210cc",
       "paragraphMarkers": [
         1,
         2,
@@ -6550,7 +6550,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "95c3b143f0ea3ac37f3c03c0abcca455dabfbc40d05cf8c78f7cfd46fc2bcf44",
       "passageImageSha256": "19fcd7d671a48e87aa64bb0b450032c4029e438e986f65df8a21bc7e4ba4e658",
-      "textSha256": "7db26db9271c2b66ef86bb7ae60cff2d928874f4776e39809fe580e6ff621f4c",
+      "textSha256": "5903e867c35d6490e32c484fa586cd7c0d9a7d2a4c2957777858099c8e32211c",
       "paragraphMarkers": [
         1,
         2,
@@ -6578,7 +6578,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "95c3b143f0ea3ac37f3c03c0abcca455dabfbc40d05cf8c78f7cfd46fc2bcf44",
       "passageImageSha256": "8e1ff42c34cd386192c57da88d428da2463129d90b8b352245b5e41e5f2d9174",
-      "textSha256": "4f430fc247c99f8856aada078020e0ff30f8255fba3a90a5dde44c9855cca767",
+      "textSha256": "9b83e7a041f7d7b50200092d7ebe00643d2ce5015d871f38887c1e533d1735af",
       "paragraphMarkers": [
         1,
         2,
@@ -6689,7 +6689,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
       "passageImageSha256": "34aa462156a7050a48c2ca7469feae715262c59f7e19f25774ccfdf8683d4023",
-      "textSha256": "4697cbb83f4c62930eae4929b61d6ed41055043c8696147580b13469a0fac464",
+      "textSha256": "9a7fde31429267e68394f773aca5b0dde3565650ea4eaaffdf4bf60e5195c47b",
       "paragraphMarkers": [
         1,
         2,
@@ -6733,7 +6733,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
       "passageImageSha256": "01df7b72e0eb76cdb0b07aeb3e16c5f66565509ed998a7d88f513b23ab065dee",
-      "textSha256": "d83a0c3cac8fa934f8c33da34220a5925df08c1f32ed133a79abcfc6cc1cadae",
+      "textSha256": "282761cd2cf0fc45935b0e06dadfdc0f4789d27d49e0af8ba7b89f6a7d855264",
       "paragraphMarkers": [
         1,
         2,
@@ -6760,7 +6760,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
       "passageImageSha256": "60ae1fbe3d885440698c17cd525776d077c11e8b3b9669e4b92b04029c91a5c3",
-      "textSha256": "62d7b35fd2f42e916fca72c3fbf3e36a68d13b327607aea4989c994d6f588bfe",
+      "textSha256": "510e79260643433e1f073a40cbb40c4e2dc8b738dc5ac5db82b64735b759349c",
       "paragraphMarkers": [
         1,
         2,
@@ -6787,7 +6787,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
       "passageImageSha256": "c9350af0ce1060a63f31fe81fff3aa169d98b24349a999c2d3d5783db9ca18ee",
-      "textSha256": "3b2769e0741d9de3fa31a939c5b015d5e3ce23d782f78568cd9dc0f969d835dc",
+      "textSha256": "72c27dc0038f5da617747e97d28024e7dc14508ffcd63f1b5df58b460fc294d6",
       "paragraphMarkers": [
         1,
         2,
@@ -6812,7 +6812,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ebdb0a9ed22a9bd2d3201178880b394f4eaa6cd41f51ccb809ae8084acc1e5cf",
       "passageImageSha256": "0cbceca74e77d58dd223f67963bc670aa5c674c2a6659be1e7550fd06c34d8e0",
-      "textSha256": "58388b5cd60052b0883bf608547319901b046640e318e54b44fea1de4161d323",
+      "textSha256": "b1f3c5f5cf610b211cc46194f088c17eb679d79bc47cd1ed541615c91625db3f",
       "paragraphMarkers": [
         1,
         2,

@@ -118,7 +118,7 @@
       "explanation": {
         "text": {
           "en": "The full rectangular-prism volume is 15 × 8 × 6 = 720 cubic inches. Because the flower box is filled 3/4 full, it contains (3/4)(720) = 540 cubic inches of soil.",
-          "es": "El volumen completo del prisma rectangular es 15 × 8 × 6 = 720 pulgadas cúbicas. Como la jardinera se llena hasta 3/4 de su capacidad, contiene (3/4)(720) = 540 pulgadas cúbicas de tierra."
+          "es": "El volumen completo del prisma rectangular es 15 × 8 × 6 = 720 pulgadas cúbicas. Como el macetero se llena hasta 3/4 de su capacidad, contiene (3/4)(720) = 540 pulgadas cúbicas de tierra."
         },
         "source": "vine-authored"
       }
@@ -247,8 +247,8 @@
       "inputHash": "d6aafe19800b439c3ba503b28d34965f69ee508707cbb2a71ee8e105e35ec516",
       "explanation": {
         "text": {
-        "en": "The original vertices are A(2,2), B(4,4), and C(−4,2). A dilation by factor 2 about the origin doubles each coordinate, giving A′(4,4), B′(8,8), and C′(−8,4).",
-        "es": "Los vértices originales son A(2,2), B(4,4) y C(−4,2). Una dilatación de factor 2 con centro en el origen duplica cada coordenada y da A′(4,4), B′(8,8) y C′(−8,4)."
+          "en": "The original vertices are A(2,2), B(4,4), and C(−4,2). A dilation by factor 2 about the origin doubles each coordinate, giving A′(4,4), B′(8,8), and C′(−8,4).",
+          "es": "Los vértices originales son A(2,2), B(4,4) y C(−4,2). Una dilatación de factor 2 con centro en el origen duplica cada coordenada y da A′(4,4), B′(8,8) y C′(−8,4)."
         },
         "source": "vine-authored"
       }

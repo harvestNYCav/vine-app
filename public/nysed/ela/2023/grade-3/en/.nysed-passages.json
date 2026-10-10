@@ -1,5 +1,5 @@
 {
-  "passageScriptVersion": "ela-passage-1",
+  "passageScriptVersion": "ela-passage-2",
   "passageDpi": 160,
   "passageEncoding": "smallest-of-lossless-and-webp-q90",
   "passageSourcePdfSha256": "d95524077a534813d2772f0e4218604f68f037d2f6b49fd89a84b8190fc4b50a",
@@ -34,12 +34,12 @@
     },
     "nysed-ela-2023-g3-stimulus-19-23": {
       "width": 1082,
-      "height": 4278,
+      "height": 4340,
       "pageCount": 4
     },
     "nysed-ela-2023-g3-stimulus-26-31": {
       "width": 1087,
-      "height": 3998,
+      "height": 4053,
       "pageCount": 3
     }
   }
