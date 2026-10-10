@@ -69,7 +69,7 @@
     "nysed-2016-g4-mc-q17": {
       "inputHash": "49363a10f7cfca0e808094512ec1f4fb297b8a90e2012e6eee24c20996f48f35",
       "description": {
-        "en": "Question 17. Which angle has a measure of 45°? Choices: A: an acute angle between a left-pointing horizontal ray and a diagonal ray pointing up and left at a 45-degree-looking slant; B: a narrower acute angle between a left-pointing horizontal ray and a steeper ray pointing up and left; C: a wide obtuse angle between a right-pointing horizontal ray and a shallow ray pointing up and left; D: an obtuse angle between a right-pointing horizontal ray and a 45-degree-looking ray pointing up and left."
+        "en": "Question 17. Which angle has a measure of 45°? Choices: A: an acute angle between a left-pointing horizontal ray and a diagonal ray pointing up and left; B: a wider acute angle between a left-pointing horizontal ray and a steeper ray pointing up and left; C: a wide obtuse angle between a right-pointing horizontal ray and a shallow ray pointing up and left; D: an obtuse angle between a right-pointing horizontal ray and a diagonal ray pointing up and left."
       }
     },
     "nysed-2016-g4-mc-q18": {
@@ -81,14 +81,13 @@
     "nysed-2016-g4-mc-q23": {
       "inputHash": "0113c84d372c2ec1fc68ae99df6a8ec580d2042783d717c894438760c30df399",
       "description": {
-        "en": "Question 23. «In December, a toy store sold 934 puzzles. Each puzzle cost $6, including tax. What was the total cost of the puzzles sold, including tax? Choices: A: $5,434; B: $5,484; C: $5,604; D: $5,684."
+        "en": "Question 23. In December, a toy store sold 934 puzzles. Each puzzle cost $6, including tax. What was the total cost of the puzzles sold, including tax? Choices: A: $5,434; B: $5,484; C: $5,604; D: $5,684."
       }
     },
     "nysed-2016-g4-mc-q24": {
-      "inputHash": "c222b4afdc628281e15e01b35cc12962de15ceeb0ee7d0bff7409dd04d75508a",
-      "verbatimThreeChoices": true,
+      "inputHash": "52af5d104d1aea296ddcbeddc5b7033fa31ca32073cb94cf393fe77214f548f1",
       "description": {
-        "en": "Question 24. Which figure appears to show a pair of perpendicular lines? Choices: A: two separate lines with different shallow slopes; B: a horizontal line and a vertical line intersecting at a square corner; C: two separate horizontal parallel lines."
+        "en": "Question 24. Which figure appears to show a pair of perpendicular lines? Choices: A: two separate lines with different shallow slopes; B: a horizontal line and a vertical line intersecting at a square corner; C: two separate horizontal parallel lines. D: a horizontal line and a slanted line intersecting at angles that are not right angles."
       }
     },
     "nysed-2016-g4-mc-q25": {
@@ -136,13 +135,13 @@
     "nysed-2016-g4-mc-q32": {
       "inputHash": "2cfc231408b60f7aa1a4812d5a4038ee8be2d3ec92c503b1c846e4d3b86db6ef",
       "description": {
-        "en": "Question 32. What is the value of the expression below? 28 x 42 Choices: A: 420; B: 816; C: 1166; D: 1,176."
+        "en": "Question 32. What is the value of the expression below? 28 × 42 Choices: A: 420; B: 816; C: 1,166; D: 1,176."
       }
     },
     "nysed-2016-g4-mc-q33": {
       "inputHash": "fb0e89fb27c1248792e42fed86e45e3e0ceb4340e5ea0887803683974a612b6a",
       "description": {
-        "en": "Question 33. A line plot titled Lengths of String is marked in eighths of a foot from 0 to 1. It shows 1 X at 1/8, 1 at 2/8, 1 at 3/8, 2 at 4/8, 2 at 7/8, and 1 at 1. What was the total length, in feet, of string that Mario used? Choices: A: 25/8; B: 36/8; C: 48/8; D: 64/8."
+        "en": "Question 33. The line plot shows the lengths of string Mario used for an art project. A line plot titled Lengths of String is marked in eighths of a foot from 0 to 1. It shows 1 X at 1/8, 1 at 2/8, 1 at 3/8, 2 at 4/8, 2 at 7/8, and 1 at 1. What was the total length, in feet, of string that Mario used? Choices: A: 25/8; B: 36/8; C: 48/8; D: 64/8."
       }
     },
     "nysed-2016-g4-mc-q34": {

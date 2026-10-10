@@ -84,7 +84,7 @@
       }
     },
     "nysed-2026-g8-mc-q10": {
-      "inputHash": "a3c97e318305ea382c460b24872b15f88e62ba078ef581d1782de7a3ebce8fd8",
+      "inputHash": "7305694583d8ebb37343c17fdc55a2f992b9b673b453fd6d52efa631f4d09db8",
       "explanation": {
         "text": {
           "en": "A 90° counterclockwise rotation sends (x, y) to (-y, x); for example, J(2, 8) becomes (-8, 2). Dilating by 1/2 then sends it to (-4, 1) = P and maps the other vertices likewise, so choice D shows similarity without congruence.",

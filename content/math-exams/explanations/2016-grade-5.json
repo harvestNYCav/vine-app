@@ -87,14 +87,14 @@
       "inputHash": "6ddea69d90e28f2613a8d2fa5b2be2ea7398b99da1c502f596536bf4782e69dd",
       "explanation": {
         "text": {
-        "en": "The first prism has volume 3 × 3 × 3 = 27 cubic feet. The second has volume 2 × 4 × 3 = 24 cubic feet, so the difference is 27 − 24 = 3 cubic feet.",
-        "es": "El primer prisma tiene un volumen de 3 × 3 × 3 = 27 pies cúbicos. El segundo tiene un volumen de 2 × 4 × 3 = 24 pies cúbicos, así que la diferencia es 27 − 24 = 3 pies cúbicos."
+          "en": "The first prism has volume 3 × 3 × 3 = 27 cubic feet. The second has volume 2 × 4 × 3 = 24 cubic feet, so the difference is 27 − 24 = 3 cubic feet.",
+          "es": "El primer prisma tiene un volumen de 3 × 3 × 3 = 27 pies cúbicos. El segundo tiene un volumen de 2 × 4 × 3 = 24 pies cúbicos, así que la diferencia es 27 − 24 = 3 pies cúbicos."
         },
         "source": "vine-authored"
       }
     },
     "nysed-2016-g5-mc-q15": {
-      "inputHash": "0107fbbc9e2b7ef217af9701f7f1123cb3387a63d4dcff697b34dd75c922645f",
+      "inputHash": "bc16f2f930dfde9bd98a8b5112a89ff30c50600565e9507994e6658e114900cf",
       "explanation": {
         "text": {
           "en": "The four greatest plotted weights are 2 1/2, 2 1/4, 2, and 2 ounces. Their sum is 2 1/2 + 2 1/4 + 2 + 2 = 8 3/4 ounces.",
@@ -207,8 +207,8 @@
       "inputHash": "12d473594bc1bb3b26d595e565931e1ddd74d63f166262dd459b64028374c261",
       "explanation": {
         "text": {
-        "en": "Model A shades 7 of the 10 columns and 3 of the 5 rows. Their overlap represents 7/10 × 3/5 = 21/50 square meter, the rectangle's area.",
-        "es": "El modelo A sombrea 7 de las 10 columnas y 3 de las 5 filas. Su superposición representa 7/10 × 3/5 = 21/50 de metro cuadrado, el área del rectángulo."
+          "en": "Model A shades 7 of the 10 columns and 3 of the 5 rows. Their overlap represents 7/10 × 3/5 = 21/50 square meter, the rectangle's area.",
+          "es": "El modelo A sombrea 7 de las 10 columnas y 3 de las 5 filas. Su superposición representa 7/10 × 3/5 = 21/50 de metro cuadrado, el área del rectángulo."
         },
         "source": "vine-authored"
       }
@@ -237,8 +237,8 @@
       "inputHash": "3e54e50c643682ef6536ad754d6ce9a41140af846ace37698ad9503910696f23",
       "explanation": {
         "text": {
-          "en": "The plot shows two rocks at 1/4 kilogram, three at 2/4, and two at 3/4. Their total is 2(1/4) + 3(2/4) + 2(3/4) = 14/4 = 3 1/2 kilograms.",
-          "es": "La gráfica muestra dos rocas de 1/4 de kilogramo, tres de 2/4 y dos de 3/4. El total es 2(1/4) + 3(2/4) + 2(3/4) = 14/4 = 3 1/2 kilogramos."
+          "en": "The plot shows two rocks at 1/4 kilogram, three at 2/4, and two at 3/4. Their total is 1/4 + 1/4 + 2/4 + 2/4 + 2/4 + 3/4 + 3/4 = 14/4 = 3 1/2 kilograms.",
+          "es": "La gráfica muestra dos rocas de 1/4 de kilogramo, tres de 2/4 y dos de 3/4. El total es 1/4 + 1/4 + 2/4 + 2/4 + 2/4 + 3/4 + 3/4 = 14/4 = 3 1/2 kilogramos."
         },
         "source": "vine-authored"
       }
@@ -257,8 +257,8 @@
       "inputHash": "2d037f92fcebcd1d00c7912be084c09bdad199c1db9bab25967da312ec92ff69",
       "explanation": {
         "text": {
-        "en": "Evaluate inside the parentheses first: 5 − 2 = 3. Then 4 × 3 = 12, while the division by 2 remains, so the expression is equivalent to 4 + 12 ÷ 2.",
-        "es": "Primero se evalúa dentro de los paréntesis: 5 − 2 = 3. Luego, 4 × 3 = 12, mientras que la división entre 2 permanece, así que la expresión equivale a 4 + 12 ÷ 2."
+          "en": "Evaluate inside the parentheses first: 5 − 2 = 3. Then 4 × 3 = 12, while the division by 2 remains, so the expression is equivalent to 4 + 12 ÷ 2.",
+          "es": "Primero se evalúa dentro de los paréntesis: 5 − 2 = 3. Luego, 4 × 3 = 12, mientras que la división entre 2 permanece, así que la expresión equivale a 4 + 12 ÷ 2."
         },
         "source": "vine-authored"
       }

@@ -385,25 +385,26 @@
       }
     },
     "nysed-2023-g8-mc-q20": {
-      "inputHash": "8f14ad59ce1ab689829ca2f7affe9c60cc3f6ab09177b6f20b47b57a9b5443ec",
+      "inputHash": "f49bd2136fac44a8fe4d75041cc6d28410e081c11220d5511c49370de26a685c",
       "description": {
-        "en": "Question 20. Which equation represents the graph of a line on a coordinate plane that passes through the x-intercept at (9,0) and the y-intercept at (0,−5)? Choices: A: y = −9/5x − 5. B: y = 9/5x − 5. C: y = −5/9x − 5. D: y = 5/9x − 5.",
+        "en": "Question 20. Which equation represents the graph of a line on a coordinate plane that passes through the x-intercept at (9,0) and the y-intercept at (0,−5)? Choices: A: y = −(9/5)x − 5. B: y = (9/5)x − 5. C: y = −(5/9)x − 5. D: y = (5/9)x − 5.",
         "es": "Pregunta 20. ¿Qué ecuación representa el gráfico de una recta en un plano de coordenadas que atraviesa la intersección con el eje x en (9, 0) y la intersección con el eje y en (0, −5)? Opciones: A: y = −(9/5)x − 5 B: y = (9/5)x − 5 C: y = −(5/9)x − 5 D: y = (5/9)x − 5."
       },
       "requiredSourceTokens": {
         "en": [
           "(9,0)",
           "(0,−5)",
-          "y = −9/5x − 5",
-          "y = 9/5x − 5",
-          "y = −5/9x − 5",
-          "y = 5/9x − 5",
-          "A: y = −9/5x − 5",
-          "B: y = 9/5x − 5",
-          "C: y = −5/9x − 5",
-          "D: y = 5/9x − 5",
+          "y = −(9/5)x − 5",
+          "y = (9/5)x − 5",
+          "y = −(5/9)x − 5",
+          "y = (5/9)x − 5",
+          "A: y = −(9/5)x − 5",
+          "B: y = (9/5)x − 5",
+          "C: y = −(5/9)x − 5",
+          "D: y = (5/9)x − 5",
           "9/5",
-          "5/9"
+          "5/9",
+          "Question 20. Which equation represents the graph of a line on a coordinate plane that passes through the x-intercept at (9,0) and the y-intercept at (0,−5)? Choices: A: y = −(9/5)x − 5. B: y = (9/5)x − 5. C: y = −(5/9)x − 5. D: y = (5/9)x − 5."
         ],
         "es": [
           "(9, 0)",
@@ -652,7 +653,7 @@
     "nysed-2023-g8-mc-q33": {
       "inputHash": "fa78865346446f154d4c0a0aed60b018a091d28b62b36a508008231516eeeb86",
       "description": {
-        "en": "Question 33. The graph of a line is on a coordinate plane with axes labeled x and y and grid marks in increments of 1. The line has arrowheads at both ends, rises from lower left to upper right, and passes through the marked points (0,1) and (6,4). It crosses the x-axis at (−2,0). Which equation represents the graph of the line? Choices: A: y = 1/2x + 1. B: y = 1/2x − 2. C: y = 2x + 1. D: y = 2x − 2.",
+        "en": "Question 33. The graph of a line is on a coordinate plane with axes labeled x and y and grid marks in increments of 1. The line has arrowheads at both ends, rises from lower left to upper right, and passes through the marked points (0,1) and (6,4). It crosses the x-axis at (−2,0). Which equation represents the graph of the line? Choices: A: y = (1/2)x + 1. B: y = (1/2)x − 2. C: y = 2x + 1. D: y = 2x − 2.",
         "es": "Pregunta 33. En el siguiente plano de coordenadas se muestra el gráfico de una recta. Los ejes x e y tienen marcas de una unidad. La recta asciende de izquierda a derecha, tiene flechas en ambos extremos y pasa por los puntos marcados (0, 1) y (6, 4). También cruza el eje x en (−2, 0). ¿Qué ecuación representa el gráfico de la recta? Opciones: A: y = (1/2)x + 1 B: y = (1/2)x − 2 C: y = 2x + 1 D: y = 2x − 2"
       },
       "requiredSourceTokens": {
@@ -660,15 +661,16 @@
           "(0,1)",
           "(6,4)",
           "(−2,0)",
-          "y = 1/2x + 1",
-          "y = 1/2x − 2",
+          "y = (1/2)x + 1",
+          "y = (1/2)x − 2",
           "y = 2x + 1",
           "y = 2x − 2",
-          "A: y = 1/2x + 1",
-          "B: y = 1/2x − 2",
+          "A: y = (1/2)x + 1",
+          "B: y = (1/2)x − 2",
           "C: y = 2x + 1",
           "D: y = 2x − 2",
-          "1/2"
+          "1/2",
+          "Question 33. The graph of a line is on a coordinate plane with axes labeled x and y and grid marks in increments of 1. The line has arrowheads at both ends, rises from lower left to upper right, and passes through the marked points (0,1) and (6,4). It crosses the x-axis at (−2,0). Which equation represents the graph of the line? Choices: A: y = (1/2)x + 1. B: y = (1/2)x − 2. C: y = 2x + 1. D: y = 2x − 2."
         ],
         "es": [
           "(0, 1)",

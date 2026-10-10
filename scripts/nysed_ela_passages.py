@@ -10,7 +10,7 @@ from typing import Any, Sequence
 
 import numpy as np
 import pdfplumber
-from PIL import Image, ImageStat
+from PIL import Image, ImageDraw, ImageStat
 
 try:
     from scripts.import_nysed_math_mc import (
@@ -30,7 +30,7 @@ except ModuleNotFoundError:  # pragma: no cover - permits direct script executio
     )
 
 
-PASSAGE_SCRIPT_VERSION = "ela-passage-1"
+PASSAGE_SCRIPT_VERSION = "ela-passage-2"
 PASSAGE_WEBP_QUALITY = 90
 
 
@@ -112,7 +112,10 @@ def _footer_cutoff(gray: np.ndarray) -> int:
         span = float(columns[-1] - columns[0] + 1) / float(width)
         center = float(columns[0] + columns[-1]) / 2.0 / float(width)
         max_row_fraction = float(group_ink.sum(axis=1).max()) / float(width)
-        wide_rule = span >= 0.72 and max_row_fraction >= 0.12
+        # A full line of prose can span the page too. Only a thin ink band is
+        # a rule; otherwise short last paragraphs disappear at page joins.
+        thin_band = end - start + 1 <= max(3, round(height * 0.003))
+        wide_rule = thin_band and span >= 0.72 and max_row_fraction >= 0.12
         right_footer_label = center >= 0.78 and span <= 0.24
         if wide_rule or right_footer_label:
             return max(1, start - max(5, round(height * 0.004)))
@@ -319,6 +322,21 @@ def render_passage_assets(
                             resolution=dpi,
                             antialias=True,
                         ).original.convert("RGB")
+                    # A short final paragraph can share the footer's vertical
+                    # band. Remove only the positioned GO ON label, not that
+                    # entire band (which would discard the paragraph).
+                    page = pdf.pages[page_index]
+                    footer_words = [word for word in page.extract_words()
+                                    if word['top'] > page.height * 0.87
+                                    and word['x0'] > page.width * 0.75
+                                    and word['text'] in {'GO', 'ON'}]
+                    if {word['text'] for word in footer_words} == {'GO', 'ON'}:
+                        drawing = ImageDraw.Draw(rendered_pages[page_index])
+                        sx = rendered_pages[page_index].width / page.width
+                        sy = rendered_pages[page_index].height / page.height
+                        for word in footer_words:
+                            drawing.rectangle(((word['x0'] - 2) * sx, (word['top'] - 2) * sy,
+                                               (word['x1'] + 2) * sx, (word['bottom'] + 2) * sy), fill='white')
                 page_images.append(rendered_pages[page_index])
             stitched = stitch_passage_pages(
                 page_images,

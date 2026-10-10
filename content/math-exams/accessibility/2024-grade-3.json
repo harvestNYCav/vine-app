@@ -22,7 +22,7 @@
       }
     },
     "nysed-2024-g3-mc-q4": {
-      "inputHash": "2db4dc9ada901e5d8acf97aa00d3d3503e6a2e3af580b5e82a3cd96226f4b167",
+      "inputHash": "a94ecfc65c2414d3a43252d60b07578d9632f49ea8a0ca7476e73efb01cc780a",
       "description": {
         "en": "Question 4. A number line from 0 to 1 is divided into 6 equal intervals, and point P is at the fourth tick after 0. Which fraction represents P? Choices: A: 2/6; B: 4/6; C: 3/7; D: 5/7.",
         "es": "Pregunta 4. Una recta de 0 a 1 está dividida en 6 intervalos iguales y P está en la cuarta marca después de 0. ¿Qué fracción representa P? Opciones: A: 2/6; B: 4/6; C: 3/7; D: 5/7."
@@ -50,7 +50,7 @@
       }
     },
     "nysed-2024-g3-mc-q13": {
-      "inputHash": "6c98e34b8dc595293280641fee6758a6f9c7bb93eb1d7d7d2ef11c0eba233dbf",
+      "inputHash": "93ed0a1e47d97c311f040d25e4749b08a6278865d6a8e552fe0022686c0f7f9c",
       "description": {
         "en": "Question 13. A wall is covered without gaps by 100 square pictures, each with side length 1 foot. What is the wall’s total area? Choices: A: 1 foot; B: 100 feet; C: 1 square foot; D: 100 square feet.",
         "es": "Pregunta 13. Una pared se cubre sin huecos con 100 dibujos cuadrados, cada uno con lados de 1 pie. ¿Cuál es el área total? Opciones: A: 1 pie; B: 100 pies; C: 1 pie cuadrado; D: 100 pies cuadrados."
@@ -73,8 +73,8 @@
     "nysed-2024-g3-mc-q23": {
       "inputHash": "5e6880092fd8e4ca109f505eb623db73629738adc78f46d5392f3512a9fa2e72",
       "description": {
-        "en": "Question 23. A rectangle has 5 rows and 7 columns of unit squares. Which expression cannot find its area? Choices: A: 5 + 5 + 5 + 5 + 5 + 5 + 5; B: 7 + 7 + 7 + 7 + 7; C: 5 × 7 × 5 × 7; D: 7 × 5.",
-        "es": "Pregunta 23. Un rectángulo tiene 5 filas y 7 columnas de cuadrados unitarios. ¿Qué expresión no halla su área? Opciones: A: 5 + 5 + 5 + 5 + 5 + 5 + 5; B: 7 + 7 + 7 + 7 + 7; C: 5 × 7 × 5 × 7; D: 7 × 5."
+        "en": "Question 23. A rectangle has 5 rows and 7 columns of squares; each square is 1 square centimeter. Which expression cannot find its area in square centimeters? Choices: A: 5 + 5 + 5 + 5 + 5 + 5 + 5; B: 7 + 7 + 7 + 7 + 7; C: 5 × 7 × 5 × 7; D: 7 × 5.",
+        "es": "Pregunta 23. Un rectángulo tiene 5 filas y 7 columnas de cuadrados; cada cuadrado es 1 centímetro cuadrado. ¿Qué expresión no halla su área en centímetros cuadrados? Opciones: A: 5 + 5 + 5 + 5 + 5 + 5 + 5; B: 7 + 7 + 7 + 7 + 7; C: 5 × 7 × 5 × 7; D: 7 × 5."
       }
     },
     "nysed-2024-g3-mc-q25": {
@@ -87,8 +87,8 @@
     "nysed-2024-g3-mc-q26": {
       "inputHash": "dbacb0af3c4f6716036b61644018d8ca8c166c65d85febf1f9f446e4d0eed4ea",
       "description": {
-        "en": "Question 26. Which square is divided into parts that each have area 1/4 of the whole? Choices: A: one horizontal midline, with offset vertical splits in each half; B: both corner-to-corner diagonals; C: three parallel diagonal lines forming strips; D: a horizontal midline, with the bottom half split into thirds.",
-        "es": "Pregunta 26. ¿Qué cuadrado está dividido en partes de 1/4 del entero cada una? Opciones: A: línea media horizontal y divisiones verticales desplazadas en cada mitad; B: ambas diagonales de esquina a esquina; C: tres líneas diagonales paralelas que forman franjas; D: línea media horizontal y mitad inferior dividida en tercios."
+        "en": "Question 26. Which square is divided into parts that each have area 1/4 of the whole? Choices: A: one horizontal midline, with offset vertical splits in each half; B: both corner-to-corner diagonals; C: three parallel diagonal lines forming strips; D: a horizontal line one-third of the way down, with the lower two-thirds divided into three equal vertical strips.",
+        "es": "Pregunta 26. ¿Qué cuadrado está dividido en partes de 1/4 del entero cada una? Opciones: A: línea media horizontal y divisiones verticales desplazadas en cada mitad; B: ambas diagonales de esquina a esquina; C: tres líneas diagonales paralelas que forman franjas; D: una línea horizontal a un tercio de la parte superior y los dos tercios inferiores divididos en tres franjas verticales iguales."
       }
     },
     "nysed-2024-g3-mc-q27": {

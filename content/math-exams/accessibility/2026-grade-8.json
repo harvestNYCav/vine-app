@@ -285,8 +285,8 @@
     "nysed-2026-g8-mc-q8": {
       "inputHash": "0c3f504feacde8c225c5cf4e02d310d03a8c060331fbf8ee7ea86fe97f3846d6",
       "description": {
-        "en": "Question 8. A line is graphed on a coordinate plane. Both axes have integer grid lines. The labeled x-values run from −7 through 7, and the labeled y-values run from −7 through 7. The line has arrows at both ends, rises from left to right, crosses the y-axis at (0, −3), and crosses the x-axis at (6, 0). It also passes through points such as (2, −2) and (4, −1). Which equation represents the line shown on the coordinate plane? Choices: A: y = 1/2x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −1/2x + 3",
-        "es": "Pregunta 8. Una recta se puso en un gráfico en el plano de coordenadas. Ambos ejes están marcados en incrementos de 1, con valores visibles de −7 a 7. La recta asciende de izquierda a derecha, tiene flechas en ambos extremos, corta el eje y en (0, −3) y corta el eje x en (6, 0). También pasa, entre otros, por los puntos (2, −2) y (4, −1). ¿Qué ecuación representa la recta que se muestra en el plano de coordenadas? Opciones: A: y = 1/2x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −1/2x + 3"
+        "en": "Question 8. A line is graphed on a coordinate plane. Both axes have integer grid lines. The labeled x-values run from −7 through 7, and the labeled y-values run from −7 through 7. The line has arrows at both ends, rises from left to right, crosses the y-axis at (0, −3), and crosses the x-axis at (6, 0). It also passes through points such as (2, −2) and (4, −1). Which equation represents the line shown on the coordinate plane? Choices: A: y = (1/2)x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −(1/2)x + 3",
+        "es": "Pregunta 8. Una recta se puso en un gráfico en el plano de coordenadas. Ambos ejes están marcados en incrementos de 1, con valores visibles de −7 a 7. La recta asciende de izquierda a derecha, tiene flechas en ambos extremos, corta el eje y en (0, −3) y corta el eje x en (6, 0). También pasa, entre otros, por los puntos (2, −2) y (4, −1). ¿Qué ecuación representa la recta que se muestra en el plano de coordenadas? Opciones: A: y = (1/2)x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −(1/2)x + 3"
       },
       "requiredSourceTokens": {
         "en": [
@@ -294,15 +294,16 @@
           "(6, 0)",
           "(2, −2)",
           "(4, −1)",
-          "y = 1/2x − 3",
+          "y = (1/2)x − 3",
           "y = 3x − 1/2",
           "y = −3x + 6",
-          "y = −1/2x + 3",
-          "A: y = 1/2x − 3",
+          "y = −(1/2)x + 3",
+          "A: y = (1/2)x − 3",
           "B: y = 3x − 1/2",
           "C: y = −3x + 6",
-          "D: y = −1/2x + 3",
-          "1/2"
+          "D: y = −(1/2)x + 3",
+          "1/2",
+          "Question 8. A line is graphed on a coordinate plane. Both axes have integer grid lines. The labeled x-values run from −7 through 7, and the labeled y-values run from −7 through 7. The line has arrows at both ends, rises from left to right, crosses the y-axis at (0, −3), and crosses the x-axis at (6, 0). It also passes through points such as (2, −2) and (4, −1). Which equation represents the line shown on the coordinate plane? Choices: A: y = (1/2)x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −(1/2)x + 3"
         ],
         "es": [
           "−7 a 7",
@@ -310,20 +311,21 @@
           "(6, 0)",
           "(2, −2)",
           "(4, −1)",
-          "y = 1/2x − 3",
+          "y = (1/2)x − 3",
           "y = 3x − 1/2",
           "y = −3x + 6",
-          "y = −1/2x + 3",
-          "A: y = 1/2x − 3",
+          "y = −(1/2)x + 3",
+          "A: y = (1/2)x − 3",
           "B: y = 3x − 1/2",
           "C: y = −3x + 6",
-          "D: y = −1/2x + 3",
-          "1/2"
+          "D: y = −(1/2)x + 3",
+          "1/2",
+          "Pregunta 8. Una recta se puso en un gráfico en el plano de coordenadas. Ambos ejes están marcados en incrementos de 1, con valores visibles de −7 a 7. La recta asciende de izquierda a derecha, tiene flechas en ambos extremos, corta el eje y en (0, −3) y corta el eje x en (6, 0). También pasa, entre otros, por los puntos (2, −2) y (4, −1). ¿Qué ecuación representa la recta que se muestra en el plano de coordenadas? Opciones: A: y = (1/2)x − 3 B: y = 3x − 1/2 C: y = −3x + 6 D: y = −(1/2)x + 3"
         ]
       }
     },
     "nysed-2026-g8-mc-q10": {
-      "inputHash": "7e563ae8aa78f05180d1dbdcdfc9d6b6557b696dffaa74c24d0a22bab10944c1",
+      "inputHash": "803b6739c13d424e88a96668c4a32b820410db2baea1a2440cf2f0a879182ae5",
       "description": {
         "en": "Question 10. Rectangles JKLM and PQRS are shown on a coordinate plane. Rectangle JKLM has vertices J(2, 8), K(2, 4), L(8, 4), and M(8, 8). Rectangle PQRS has vertices P(−4, 1), Q(−2, 1), R(−2, 4), and S(−4, 4). Which sequence of transformations can be used to show rectangle JKLM is similar but not congruent to rectangle PQRS? Choices: A: A reflection of rectangle JKLM over the y-axis, followed by a dilation by a scale factor of 2 centered at the origin. B: A reflection of rectangle JKLM over the y-axis, followed by a dilation by a scale factor of 1/2 centered at the origin. C: A 90° counterclockwise rotation of rectangle JKLM about the origin, followed by a dilation by a scale factor of 2 centered at the origin. D: A 90° counterclockwise rotation of rectangle JKLM about the origin, followed by a dilation by a scale factor of 1/2 centered at the origin.",
         "es": "Pregunta 10. Los rectángulos JKLM y PQRS se representan en un plano de coordenadas. El rectángulo JKLM tiene vértices J(2, 8), K(2, 4), L(8, 4) y M(8, 8). El rectángulo PQRS tiene vértices P(−4, 1), Q(−2, 1), R(−2, 4) y S(−4, 4). ¿Qué secuencia de transformaciones se puede usar para mostrar que el rectángulo JKLM es similar, pero no congruente al rectángulo PQRS? Opciones: A: Una reflexión del rectángulo JKLM sobre el eje y, seguida de una dilatación por un factor de escala de 2 centrado en el origen. B: Una reflexión del rectángulo JKLM sobre el eje y, seguida de una dilatación por un factor de escala de 1/2 centrado en el origen. C: Una rotación en sentido contrario a las agujas del reloj de 90° del rectángulo JKLM alrededor del origen, seguida de una dilatación por un factor de escala de 2 centrado en el origen. D: Una rotación en sentido contrario a las agujas del reloj de 90° del rectángulo JKLM alrededor del origen, seguida de una dilatación por un factor de escala de 1/2 centrado en el origen."
@@ -385,7 +387,7 @@
     "nysed-2026-g8-mc-q11": {
       "inputHash": "d58d13a834e64c8d181b0d334231a4ffd8e91c650c983e9d0ad9a3967298a83e",
       "description": {
-        "en": "Question 11. Which relation is not a function? Choices: A: A coordinate graph contains the five points (1, 2), (2, 2), (3, 2), (4, 2), and (5, 2). B: A coordinate graph contains the five points (0, 1), (1, 3), (2, 4), (3, 2), and (4, 4). C: A coordinate graph contains an upward-opening parabola symmetric about the y-axis, with vertex (0, 0). Each vertical line intersects the curve at no more than one point. D: A coordinate graph contains two rays beginning at (0, 0): one extends up and to the right through (1, 1), (2, 2), (3, 3), and (4, 4), and the other extends down and to the right through (1, −1), (2, −2), (3, −3), and (4, −4). Thus, for each x > 0, the graph has two points with that x-coordinate.",
+        "en": "Question 11. Which relation is not a function? Choices: A: A coordinate graph contains the five points (1, 2), (2, 2), (3, 2), (4, 2), and (5, 2). B: A coordinate graph contains the five points (0, 1), (1, 3), (2, 4), (3, 2), and (4, 4). C: A coordinate graph contains an upward-opening parabola symmetric about the y-axis, with vertex (0, 0). D: A coordinate graph contains two rays beginning at (0, 0): one extends up and to the right through (1, 1), (2, 2), (3, 3), and (4, 4), and the other extends down and to the right through (1, −1), (2, −2), (3, −3), and (4, −4).",
         "es": "Pregunta 11. ¿Qué relación no es una función? Opciones: A: Plano de coordenadas con cinco puntos: (1, 2), (2, 2), (3, 2), (4, 2) y (5, 2). B: Plano de coordenadas con cinco puntos: (0, 1), (1, 3), (2, 4), (3, 2) y (4, 4). C: Plano de coordenadas con una parábola que abre hacia arriba, es simétrica respecto del eje y y tiene vértice en (0, 0). Sus dos ramas continúan hacia arriba, indicadas por flechas. D: Plano de coordenadas con dos rayos que parten del punto (0, 0): uno se extiende hacia arriba y a la derecha, pasando por (1, 1), (2, 2), (3, 3) y (4, 4); el otro se extiende hacia abajo y a la derecha, pasando por (1, −1), (2, −2), (3, −3) y (4, −4). Ambos extremos derechos tienen flechas."
       },
       "requiredSourceTokens": {
@@ -404,13 +406,11 @@
           "(2, −2)",
           "(3, −3)",
           "(4, −4)",
-          "x > 0",
           "A: A coordinate graph contains the five points (1, 2), (2, 2), (3, 2), (4, 2), and (5, 2)",
           "B: A coordinate graph contains the five points (0, 1), (1, 3), (2, 4), (3, 2), and (4, 4)",
-          "C: A coordinate graph contains an upward-opening parabola symmetric about the y-axis, with vertex (0, 0). Each vertical line intersects the curve at no more than one point",
-          "D: A coordinate graph contains two rays beginning at (0, 0): one extends up and to the right through (1, 1), (2, 2), (3, 3), and (4, 4), and the other extends down and to the right through (1, −1), (2, −2), (3, −3), and (4, −4). Thus, for each x > 0, the graph has two points with that x-coordinate",
           "(1, 1)",
-          "(3, 3)"
+          "(3, 3)",
+          "Question 11. Which relation is not a function? Choices: A: A coordinate graph contains the five points (1, 2), (2, 2), (3, 2), (4, 2), and (5, 2). B: A coordinate graph contains the five points (0, 1), (1, 3), (2, 4), (3, 2), and (4, 4). C: A coordinate graph contains an upward-opening parabola symmetric about the y-axis, with vertex (0, 0). D: A coordinate graph contains two rays beginning at (0, 0): one extends up and to the right through (1, 1), (2, 2), (3, 3), and (4, 4), and the other extends down and to the right through (1, −1), (2, −2), (3, −3), and (4, −4)."
         ],
         "es": [
           "(1, 2)",
@@ -571,8 +571,8 @@
     "nysed-2026-g8-mc-q17": {
       "inputHash": "5f306c00b471f384a18c7754780413b629f4b566cb8b4a3a62bac9a4b1a0ba9f",
       "description": {
-        "en": "Question 17. Triangle ABC and triangle EFG are shown. In triangle ABC, angle A is 76°, angle B is 39°, and angle C is 65°. Side AB is 188 cm, side AC is 132 cm, and side BC is 201 cm. In triangle EFG, angle E is 76° and angle G is 65°. Side FE is 94 cm and side EG is 66 cm; angle F and side FG are not labeled with measurements. Corresponding vertices are A and E, B and F, and C and G. Which statement describes the measurements of angle F and side FG for triangle EFG? Choices: A: Angle F is 39° and side FG is 201 cm. B: Angle F is 19.5° and side FG is 201 cm. C: Angle F is 19.5° and side FG is 100.5 cm. D: Angle F is 39° and side FG is 100.5 cm.",
-        "es": "Pregunta 17. A continuación, se muestran el triángulo ABC y el triángulo EFG. En el triángulo ABC, AB mide 188 cm, AC mide 132 cm y BC mide 201 cm; el ángulo A mide 76°, el ángulo B mide 39° y el ángulo C mide 65°. En el triángulo EFG, FE mide 94 cm, EG mide 66 cm, el ángulo E mide 76° y el ángulo G mide 65°; no se indican la medida del ángulo F ni la longitud FG. Los vértices correspondientes por posición y medidas son A con E, B con F y C con G. ¿Qué afirmación describe las medidas del ángulo F y el lado FG del triángulo EFG? Opciones: A: El ángulo F mide 39° y el lado FG mide 201 cm. B: El ángulo F mide 19.5° y el lado FG mide 201 cm. C: El ángulo F mide 19.5° y el lado FG mide 100.5 cm. D: El ángulo F mide 39° y el lado FG mide 100.5 cm."
+        "en": "Question 17. Triangle ABC and triangle EFG are shown. In triangle ABC, angle A is 76°, angle B is 39°, and angle C is 65°. Side AB is 188 cm, side AC is 132 cm, and side BC is 201 cm. In triangle EFG, angle E is 76° and angle G is 65°. Side FE is 94 cm and side EG is 66 cm; angle F and side FG are not labeled with measurements. Which statement describes the measurements of angle F and side FG for triangle EFG? Choices: A: Angle F is 39° and side FG is 201 cm. B: Angle F is 19.5° and side FG is 201 cm. C: Angle F is 19.5° and side FG is 100.5 cm. D: Angle F is 39° and side FG is 100.5 cm.",
+        "es": "Pregunta 17. A continuación, se muestran el triángulo ABC y el triángulo EFG. En el triángulo ABC, AB mide 188 cm, AC mide 132 cm y BC mide 201 cm; el ángulo A mide 76°, el ángulo B mide 39° y el ángulo C mide 65°. En el triángulo EFG, FE mide 94 cm, EG mide 66 cm, el ángulo E mide 76° y el ángulo G mide 65°; no se indican la medida del ángulo F ni la longitud FG. ¿Qué afirmación describe las medidas del ángulo F y el lado FG del triángulo EFG? Opciones: A: El ángulo F mide 39° y el lado FG mide 201 cm. B: El ángulo F mide 19.5° y el lado FG mide 201 cm. C: El ángulo F mide 19.5° y el lado FG mide 100.5 cm. D: El ángulo F mide 39° y el lado FG mide 100.5 cm."
       },
       "requiredSourceTokens": {
         "en": [
@@ -753,8 +753,8 @@
     "nysed-2026-g8-mc-q22": {
       "inputHash": "b1cf5841159662617a710e5c12d23cb29e31a6a5db3da3b46b185755a7b30c81",
       "description": {
-        "en": "Question 22. Triangle ABC and triangle DEF on a coordinate plane are congruent. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−3, 5), B(−5, 1), and C(−1, 3). Triangle DEF has vertices D(4, 0), E(6, −4), and F(2, −2). The corresponding vertices are A and D, B and E, and C and F. Which sequence of transformations will map triangle ABC onto triangle DEF? Choices: A: a reflection over the x-axis and then a translation 1 unit right and 5 units down B: a reflection over the x-axis and then a translation 5 units right and 1 unit down C: a reflection over the y-axis and then a translation 5 units right and 1 unit down D: a reflection over the y-axis and then a translation 1 unit right and 5 units down",
-        "es": "Pregunta 22. El triángulo ABC y el triángulo DEF que se representan en un plano de coordenadas son congruentes. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−3, 5), B(−5, 1) y C(−1, 3). El triángulo DEF tiene vértices D(4, 0), E(6, −4) y F(2, −2). Los vértices correspondientes son A y D, B y E, y C y F. ¿Qué secuencia de transformaciones mapeará el triángulo ABC sobre el triángulo DEF? Opciones: A: Una reflexión sobre el eje x y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo. B: Una reflexión sobre el eje x y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. C: Una reflexión sobre el eje y y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. D: Una reflexión sobre el eje y y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo."
+        "en": "Question 22. Triangle ABC and triangle DEF on a coordinate plane are congruent. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−3, 5), B(−5, 1), and C(−1, 3). Triangle DEF has vertices D(4, 0), E(6, −4), and F(2, −2). Which sequence of transformations will map triangle ABC onto triangle DEF? Choices: A: a reflection over the x-axis and then a translation 1 unit right and 5 units down B: a reflection over the x-axis and then a translation 5 units right and 1 unit down C: a reflection over the y-axis and then a translation 5 units right and 1 unit down D: a reflection over the y-axis and then a translation 1 unit right and 5 units down",
+        "es": "Pregunta 22. El triángulo ABC y el triángulo DEF que se representan en un plano de coordenadas son congruentes. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−3, 5), B(−5, 1) y C(−1, 3). El triángulo DEF tiene vértices D(4, 0), E(6, −4) y F(2, −2). ¿Qué secuencia de transformaciones mapeará el triángulo ABC sobre el triángulo DEF? Opciones: A: Una reflexión sobre el eje x y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo. B: Una reflexión sobre el eje x y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. C: Una reflexión sobre el eje y y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. D: Una reflexión sobre el eje y y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo."
       },
       "requiredSourceTokens": {
         "en": [
@@ -778,7 +778,8 @@
           "(4, 0)",
           "(6, −4)",
           "(2, −2)",
-          "The corresponding vertices are A and D, B and E, and C and F"
+          "Triangle DEF has vertices D(4, 0), E(6, −4), and F(2, −2)",
+          "Question 22. Triangle ABC and triangle DEF on a coordinate plane are congruent. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−3, 5), B(−5, 1), and C(−1, 3). Triangle DEF has vertices D(4, 0), E(6, −4), and F(2, −2). Which sequence of transformations will map triangle ABC onto triangle DEF? Choices: A: a reflection over the x-axis and then a translation 1 unit right and 5 units down B: a reflection over the x-axis and then a translation 5 units right and 1 unit down C: a reflection over the y-axis and then a translation 5 units right and 1 unit down D: a reflection over the y-axis and then a translation 1 unit right and 5 units down"
         ],
         "es": [
           "A(−3, 5)",
@@ -803,7 +804,8 @@
           "(4, 0)",
           "(6, −4)",
           "(2, −2)",
-          "Los vértices correspondientes son A y D, B y E, y C y F"
+          "El triángulo DEF tiene vértices D(4, 0), E(6, −4) y F(2, −2)",
+          "Pregunta 22. El triángulo ABC y el triángulo DEF que se representan en un plano de coordenadas son congruentes. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−3, 5), B(−5, 1) y C(−1, 3). El triángulo DEF tiene vértices D(4, 0), E(6, −4) y F(2, −2). ¿Qué secuencia de transformaciones mapeará el triángulo ABC sobre el triángulo DEF? Opciones: A: Una reflexión sobre el eje x y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo. B: Una reflexión sobre el eje x y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. C: Una reflexión sobre el eje y y luego una traslación de 5 unidades a la derecha y 1 unidad hacia abajo. D: Una reflexión sobre el eje y y luego una traslación de 1 unidad a la derecha y 5 unidades hacia abajo."
         ]
       }
     },
@@ -845,8 +847,8 @@
     "nysed-2026-g8-mc-q25": {
       "inputHash": "ef36cc8c99c942e088100956d494cf5f4641129b258b5f674899c4c41e04d1d3",
       "description": {
-        "en": "Question 25. Triangle ABC is rotated clockwise about the origin to create triangle XYZ on a coordinate plane. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−2, 3), B(−5, 1), and C(−2, 1). Triangle XYZ has vertices X(3, 2), Y(1, 5), and Z(1, 2). Side AC is vertical and corresponds to side XZ; side BC is horizontal and corresponds to side YZ; side AB corresponds to side XY. Which statement is correct? Choices: A: ∠A ≅ ∠Y B: ∠B ≅ ∠Y C: ∠B ≅ ∠Z D: ∠C ≅ ∠X",
-        "es": "Pregunta 25. El triángulo ABC se rota en sentido de las agujas del reloj alrededor del origen para crear el triángulo XYZ en un plano de coordenadas. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−2, 3), B(−5, 1) y C(−2, 1); el segmento AC es vertical y el segmento BC es horizontal. El triángulo XYZ tiene vértices X(3, 2), Y(1, 5) y Z(1, 2); el segmento YZ es vertical y el segmento ZX es horizontal. La rotación establece las correspondencias A con X, B con Y y C con Z. ¿Qué afirmación es correcta? Opciones: A: ∠A ≅ ∠Y. B: ∠B ≅ ∠Y. C: ∠B ≅ ∠Z. D: ∠C ≅ ∠X."
+        "en": "Question 25. Triangle ABC is rotated clockwise about the origin to create triangle XYZ on a coordinate plane. The x-axis is horizontal and the y-axis is vertical. Triangle ABC has vertices A(−2, 3), B(−5, 1), and C(−2, 1). Triangle XYZ has vertices X(3, 2), Y(1, 5), and Z(1, 2). Side AC is vertical, BC is horizontal, and AB slopes upward. In triangle XYZ, YZ is vertical, ZX is horizontal, and XY slopes downward. Which statement is correct? Choices: A: ∠A ≅ ∠Y B: ∠B ≅ ∠Y C: ∠B ≅ ∠Z D: ∠C ≅ ∠X",
+        "es": "Pregunta 25. El triángulo ABC se rota en sentido de las agujas del reloj alrededor del origen para crear el triángulo XYZ en un plano de coordenadas. El eje x es horizontal y aumenta hacia la derecha; el eje y es vertical y aumenta hacia arriba. El triángulo ABC tiene vértices A(−2, 3), B(−5, 1) y C(−2, 1); el segmento AC es vertical y el segmento BC es horizontal. El triángulo XYZ tiene vértices X(3, 2), Y(1, 5) y Z(1, 2); el segmento YZ es vertical y el segmento ZX es horizontal. ¿Qué afirmación es correcta? Opciones: A: ∠A ≅ ∠Y. B: ∠B ≅ ∠Y. C: ∠B ≅ ∠Z. D: ∠C ≅ ∠X."
       },
       "requiredSourceTokens": {
         "en": [

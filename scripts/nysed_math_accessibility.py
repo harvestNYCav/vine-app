@@ -75,7 +75,6 @@ _MISSING_FI_ES_RE = re.compile(
     re.IGNORECASE,
 )
 _REVERSED_AXIS_RE = re.compile(r"srewolF\s+fo\s+rebmuN", re.IGNORECASE)
-_VERIFIED_THREE_CHOICE_QUESTION_ID = "nysed-2016-g4-mc-q24"
 _VERIFIED_SINGLE_LETTER_CHOICE_QUESTION_IDS = frozenset(
     {"nysed-2017-g4-mc-q27", "nysed-2018-g4-mc-q31"}
 )
@@ -380,19 +379,8 @@ def load_math_exam_accessibility(
             raise MathAccessibilityError(
                 f"verbatimEvaluativeChoices for {question_id} must be true when present"
             )
-        if question_id == _VERIFIED_THREE_CHOICE_QUESTION_ID:
-            if raw_item.get("verbatimThreeChoices") is not True:
-                raise MathAccessibilityError(
-                    f"verbatimThreeChoices for {question_id} must be true"
-                )
-            verbatim_three_choices = True
-        elif "verbatimThreeChoices" in raw_item:
-            raise MathAccessibilityError(
-                "verbatimThreeChoices is only permitted for "
-                f"{_VERIFIED_THREE_CHOICE_QUESTION_ID}"
-            )
-        else:
-            verbatim_three_choices = False
+        if "verbatimThreeChoices" in raw_item:
+            raise MathAccessibilityError("verbatimThreeChoices is only permitted for verified source variants; none exist")
         verbatim_stem_answer_language = raw_item.get(
             "verbatimAnswerLanguageInStem", False
         )
@@ -441,8 +429,6 @@ def load_math_exam_accessibility(
         expected_item_keys = {"inputHash", "description"}
         if allowed_evaluation is True:
             expected_item_keys.add("verbatimEvaluativeChoices")
-        if verbatim_three_choices is True:
-            expected_item_keys.add("verbatimThreeChoices")
         if verbatim_stem_answer_language is True:
             expected_item_keys.add("verbatimAnswerLanguageInStem")
         if verbatim_short_question is True:
@@ -475,9 +461,7 @@ def load_math_exam_accessibility(
                 allow_verbatim_stem_answer_language=verbatim_stem_answer_language,
                 allow_verbatim_short_question=verbatim_short_question,
                 allow_verbatim_single_letter_choices=verbatim_single_letter_choices,
-                expected_choice_labels=("A", "B", "C")
-                if verbatim_three_choices
-                else ("A", "B", "C", "D"),
+                expected_choice_labels=("A", "B", "C", "D"),
                 required_source_tokens=required_source_tokens[language],
             )
             for language in language_list

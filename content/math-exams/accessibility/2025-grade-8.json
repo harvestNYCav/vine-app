@@ -153,7 +153,7 @@
     "nysed-2025-g8-mc-q8": {
       "inputHash": "e9d3027beb9fc5392cf8e34b0d9980ee8543a8095bed1bde2729ab25e75390d9",
       "description": {
-        "en": "Question 8. The graph of a line is shown below. On a coordinate plane, x is the horizontal axis and y is the vertical axis. The labeled x-values run from −4 through 6, and the labeled y-values run from −1 through 5. A line with arrowheads at both ends decreases from left to right. It crosses the y-axis at (0, 3) and the x-axis at (6, 0); it also passes through points such as (2, 2) and (4, 1). What is the equation of the line? Choices: A: y = −2x + 3 B: y = −2x + 6 C: y = −1/2x + 3 D: y = −1/2x + 6",
+        "en": "Question 8. The graph of a line is shown below. On a coordinate plane, x is the horizontal axis and y is the vertical axis. The labeled x-values run from −4 through 6, and the labeled y-values run from −1 through 5. A line with arrowheads at both ends decreases from left to right. It crosses the y-axis at (0, 3) and the x-axis at (6, 0); it also passes through points such as (2, 2) and (4, 1). What is the equation of the line? Choices: A: y = −2x + 3 B: y = −2x + 6 C: y = −(1/2)x + 3 D: y = −(1/2)x + 6",
         "es": "Pregunta 8. A continuación, se muestra el gráfico de una línea. El plano de coordenadas tiene el eje x horizontal y el eje y vertical. La recta desciende de izquierda a derecha, tiene flechas en ambos extremos, corta el eje y en (0, 3) y corta el eje x en (6, 0). También pasa por puntos de la cuadrícula como (2, 2) y (4, 1). ¿Cuál es la ecuación de la línea? Opciones: A: y = −2x + 3 B: y = −2x + 6 C: y = −(1/2)x + 3 D: y = −(1/2)x + 6"
       },
       "requiredSourceTokens": {
@@ -166,13 +166,14 @@
           "(4, 1)",
           "y = −2x + 3",
           "y = −2x + 6",
-          "y = −1/2x + 3",
-          "y = −1/2x + 6",
+          "y = −(1/2)x + 3",
+          "y = −(1/2)x + 6",
           "A: y = −2x + 3",
           "B: y = −2x + 6",
-          "C: y = −1/2x + 3",
-          "D: y = −1/2x + 6",
-          "1/2"
+          "C: y = −(1/2)x + 3",
+          "D: y = −(1/2)x + 6",
+          "1/2",
+          "Question 8. The graph of a line is shown below. On a coordinate plane, x is the horizontal axis and y is the vertical axis. The labeled x-values run from −4 through 6, and the labeled y-values run from −1 through 5. A line with arrowheads at both ends decreases from left to right. It crosses the y-axis at (0, 3) and the x-axis at (6, 0); it also passes through points such as (2, 2) and (4, 1). What is the equation of the line? Choices: A: y = −2x + 3 B: y = −2x + 6 C: y = −(1/2)x + 3 D: y = −(1/2)x + 6"
         ],
         "es": [
           "(0, 3)",
@@ -333,8 +334,8 @@
     "nysed-2025-g8-mc-q17": {
       "inputHash": "a353ac5207eac958ea2ea364c5ce72c89019910676a4e5b84d190585a421d87d",
       "description": {
-        "en": "Question 17. Rectangle JKLM is graphed on a coordinate plane. Its vertices are J(1, 4), K(1, 1), L(3, 1), and M(3, 4). The rectangle will be translated 5 units right and 2 units up to produce rectangle J′K′L′M′. Thus, its translated vertices are J′(6, 6), K′(6, 3), L′(8, 3), and M′(8, 6). Which statement about the line segments of rectangle J′K′L′M′ is true? Choices: A: J′K′ ∥ J′M′. B: J′K′ ∥ L′M′. C: K′L′ ∥ J′K′. D: K′L′ ∥ L′M′.",
-        "es": "Pregunta 17. El rectángulo JKLM se representa en un plano de coordenadas. Sus vértices son J(1, 4), K(1, 1), L(3, 1) y M(3, 4). El rectángulo JKLM se trasladará 5 unidades hacia la derecha y 2 unidades hacia arriba para crear el rectángulo J′K′L′M′. Por lo tanto, los vértices trasladados son J′(6, 6), K′(6, 3), L′(8, 3) y M′(8, 6). ¿Qué afirmación acerca de los segmentos de línea del rectángulo J′K′L′M′ es verdadera? Opciones: A: El segmento J′K′ es paralelo al segmento J′M′. B: El segmento J′K′ es paralelo al segmento L′M′. C: El segmento K′L′ es paralelo al segmento J′K′. D: El segmento K′L′ es paralelo al segmento L′M′."
+        "en": "Question 17. Rectangle JKLM is graphed on a coordinate plane. Its vertices are J(1, 4), K(1, 1), L(3, 1), and M(3, 4). The rectangle will be translated 5 units right and 2 units up to produce rectangle J′K′L′M′. Which statement about the line segments of rectangle J′K′L′M′ is true? Choices: A: J′K′ ∥ J′M′. B: J′K′ ∥ L′M′. C: K′L′ ∥ J′K′. D: K′L′ ∥ L′M′.",
+        "es": "Pregunta 17. El rectángulo JKLM se representa en un plano de coordenadas. Sus vértices son J(1, 4), K(1, 1), L(3, 1) y M(3, 4). El rectángulo JKLM se trasladará 5 unidades hacia la derecha y 2 unidades hacia arriba para crear el rectángulo J′K′L′M′. ¿Qué afirmación acerca de los segmentos de línea del rectángulo J′K′L′M′ es verdadera? Opciones: A: El segmento J′K′ es paralelo al segmento J′M′. B: El segmento J′K′ es paralelo al segmento L′M′. C: El segmento K′L′ es paralelo al segmento J′K′. D: El segmento K′L′ es paralelo al segmento L′M′."
       },
       "requiredSourceTokens": {
         "en": [
@@ -344,10 +345,6 @@
           "M(3, 4)",
           "5 units right",
           "2 units up",
-          "J′(6, 6)",
-          "K′(6, 3)",
-          "L′(8, 3)",
-          "M′(8, 6)",
           "J′K′ ∥ J′M′",
           "J′K′ ∥ L′M′",
           "K′L′ ∥ J′K′",
@@ -360,10 +357,7 @@
           "(1, 1)",
           "(3, 1)",
           "(3, 4)",
-          "(6, 6)",
-          "(6, 3)",
-          "(8, 3)",
-          "(8, 6)"
+          "Question 17. Rectangle JKLM is graphed on a coordinate plane. Its vertices are J(1, 4), K(1, 1), L(3, 1), and M(3, 4). The rectangle will be translated 5 units right and 2 units up to produce rectangle J′K′L′M′. Which statement about the line segments of rectangle J′K′L′M′ is true? Choices: A: J′K′ ∥ J′M′. B: J′K′ ∥ L′M′. C: K′L′ ∥ J′K′. D: K′L′ ∥ L′M′."
         ],
         "es": [
           "J(1, 4)",
@@ -372,10 +366,6 @@
           "M(3, 4)",
           "5 unidades",
           "2 unidades",
-          "J′(6, 6)",
-          "K′(6, 3)",
-          "L′(8, 3)",
-          "M′(8, 6)",
           "J′K′",
           "J′M′",
           "L′M′",
@@ -388,10 +378,7 @@
           "(1, 1)",
           "(3, 1)",
           "(3, 4)",
-          "(6, 6)",
-          "(6, 3)",
-          "(8, 3)",
-          "(8, 6)"
+          "Pregunta 17. El rectángulo JKLM se representa en un plano de coordenadas. Sus vértices son J(1, 4), K(1, 1), L(3, 1) y M(3, 4). El rectángulo JKLM se trasladará 5 unidades hacia la derecha y 2 unidades hacia arriba para crear el rectángulo J′K′L′M′. ¿Qué afirmación acerca de los segmentos de línea del rectángulo J′K′L′M′ es verdadera? Opciones: A: El segmento J′K′ es paralelo al segmento J′M′. B: El segmento J′K′ es paralelo al segmento L′M′. C: El segmento K′L′ es paralelo al segmento J′K′. D: El segmento K′L′ es paralelo al segmento L′M′."
         ]
       }
     },
@@ -670,7 +657,7 @@
       "inputHash": "a79c2638ac6752a5363098dd802631c7e330f2c9a12cb683e0a702f064e7d722",
       "description": {
         "en": "Question 34. Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS. On a coordinate plane, trapezoid ABCD has vertices A(−6, −1), B(−3, −1), C(−2, −3), and D(−7, −3), connected in that order. Its horizontal bases are AB and DC. Trapezoid PQRS has vertices P(6, 1), Q(3, 1), R(2, 3), and S(7, 3), connected in that order. Its horizontal bases are QP and RS. Which statement about the trapezoids is true? Choices: A: Angle A is congruent to angle S. B: Angle C is congruent to angle Q. C: Side BC is congruent to side QR. D: Side DC is congruent to side RQ.",
-        "es": "Pregunta 34. El trapezoide ABCD se rotó 180° alrededor del origen para crear el trapezoide PQRS, como se muestra a continuación. En un plano de coordenadas con ejes x e y marcados en unidades enteras, el trapezoide ABCD tiene vértices A(−6, −1), B(−3, −1), C(−2, −3) y D(−7, −3). Sus bases horizontales son AB y DC. El trapezoide PQRS tiene vértices P(6, 1), Q(3, 1), R(2, 3) y S(7, 3). Sus bases horizontales son PQ y RS. La rotación de 180° relaciona A con P, B con Q, C con R y D con S. ¿Qué afirmación acerca de los trapezoides es verdadera? Opciones: A: El ángulo A es congruente con el ángulo S. B: El ángulo C es congruente con el ángulo Q. C: El lado BC es congruente con el lado QR. D: El lado DC es congruente con el lado RQ."
+        "es": "Pregunta 34. El trapezoide ABCD se rotó 180° alrededor del origen para crear el trapezoide PQRS, como se muestra a continuación. En un plano de coordenadas con ejes x e y marcados en unidades enteras, el trapezoide ABCD tiene vértices A(−6, −1), B(−3, −1), C(−2, −3) y D(−7, −3). Sus bases horizontales son AB y DC. El trapezoide PQRS tiene vértices P(6, 1), Q(3, 1), R(2, 3) y S(7, 3). Sus bases horizontales son PQ y RS. ¿Qué afirmación acerca de los trapezoides es verdadera? Opciones: A: El ángulo A es congruente con el ángulo S. B: El ángulo C es congruente con el ángulo Q. C: El lado BC es congruente con el lado QR. D: El lado DC es congruente con el lado RQ."
       },
       "requiredSourceTokens": {
         "en": [
@@ -713,10 +700,6 @@
           "Q(3, 1)",
           "R(2, 3)",
           "S(7, 3)",
-          "A con P",
-          "B con Q",
-          "C con R",
-          "D con S",
           "ángulo A",
           "ángulo S",
           "ángulo C",
@@ -736,7 +719,8 @@
           "(6, 1)",
           "(3, 1)",
           "(2, 3)",
-          "(7, 3)"
+          "(7, 3)",
+          "Pregunta 34. El trapezoide ABCD se rotó 180° alrededor del origen para crear el trapezoide PQRS, como se muestra a continuación. En un plano de coordenadas con ejes x e y marcados en unidades enteras, el trapezoide ABCD tiene vértices A(−6, −1), B(−3, −1), C(−2, −3) y D(−7, −3). Sus bases horizontales son AB y DC. El trapezoide PQRS tiene vértices P(6, 1), Q(3, 1), R(2, 3) y S(7, 3). Sus bases horizontales son PQ y RS. ¿Qué afirmación acerca de los trapezoides es verdadera? Opciones: A: El ángulo A es congruente con el ángulo S. B: El ángulo C es congruente con el ángulo Q. C: El lado BC es congruente con el lado QR. D: El lado DC es congruente con el lado RQ."
         ]
       }
     },

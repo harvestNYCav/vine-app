@@ -452,29 +452,31 @@
     "nysed-2025-g5-mc-q29": {
       "inputHash": "1035df4c9530aa8b03dbef19dc26a8d7382380c149ab52122d171452d961ac96",
       "description": {
-        "en": "Question 29. The figure is made of unit cubes arranged in two identical horizontal layers. In each layer, 5 cubes form one horizontal row. One additional cube extends perpendicularly from the first, third, and fifth positions of that row, all on the same side, so each layer contains 8 cubes. The layers are directly above one another. What is the volume, in cubic units, of the figure? Choices: A: 16; B: 20; C: 24; D: 30.",
-        "es": "Pregunta 29. La figura está hecha de cubos unitarios dispuestos en dos capas horizontales idénticas. En cada capa, 5 cubos forman una fila horizontal. Un cubo adicional se extiende perpendicularmente desde las posiciones primera, tercera y quinta de esa fila, todos hacia el mismo lado, por lo que cada capa contiene 8 cubos. Las capas están directamente una sobre la otra. ¿Cuál es el volumen, en unidades cúbicas, de la figura? Opciones: A: 16; B: 20; C: 24; D: 30."
+        "en": "Question 29. The figure is made of unit cubes arranged in two identical horizontal layers. In each layer, 5 cubes form one horizontal row. One extra cube is in front of the first cube and one in front of the fourth cube; another extra cube is behind the first cube. The layers are directly above one another. What is the volume, in cubic units, of the figure? Choices: A: 16; B: 20; C: 24; D: 30.",
+        "es": "Pregunta 29. La figura está hecha de cubos unitarios dispuestos en dos capas horizontales idénticas. En cada capa, 5 cubos forman una fila horizontal. Hay un cubo adicional delante del primero y otro delante del cuarto; otro cubo adicional está detrás del primero. Las capas están directamente una sobre la otra. ¿Cuál es el volumen, en unidades cúbicas, de la figura? Opciones: A: 16; B: 20; C: 24; D: 30."
       },
       "requiredSourceTokens": {
         "en": [
           "5 cubes form one horizontal row",
-          "first, third, and fifth positions",
-          "each layer contains 8 cubes",
+          "in front of the first cube and one in front of the fourth cube",
+          "another extra cube is behind the first cube",
           "two identical horizontal layers",
           "A: 16",
           "B: 20",
           "C: 24",
-          "D: 30"
+          "D: 30",
+          "Question 29. The figure is made of unit cubes arranged in two identical horizontal layers. In each layer, 5 cubes form one horizontal row. One extra cube is in front of the first cube and one in front of the fourth cube; another extra cube is behind the first cube. The layers are directly above one another. What is the volume, in cubic units, of the figure? Choices: A: 16; B: 20; C: 24; D: 30."
         ],
         "es": [
           "5 cubos forman una fila horizontal",
-          "posiciones primera, tercera y quinta",
-          "cada capa contiene 8 cubos",
+          "delante del primero y otro delante del cuarto",
+          "otro cubo adicional está detrás del primero",
           "dos capas horizontales idénticas",
           "A: 16",
           "B: 20",
           "C: 24",
-          "D: 30"
+          "D: 30",
+          "Pregunta 29. La figura está hecha de cubos unitarios dispuestos en dos capas horizontales idénticas. En cada capa, 5 cubos forman una fila horizontal. Hay un cubo adicional delante del primero y otro delante del cuarto; otro cubo adicional está detrás del primero. Las capas están directamente una sobre la otra. ¿Cuál es el volumen, en unidades cúbicas, de la figura? Opciones: A: 16; B: 20; C: 24; D: 30."
         ]
       }
     },

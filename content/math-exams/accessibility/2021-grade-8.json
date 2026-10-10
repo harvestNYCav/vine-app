@@ -549,7 +549,7 @@
       "inputHash": "4a75f7ad1ee55b7a1a45c47a9332f1c64883707f0d322916989dc7b8389b8fb6",
       "description": {
         "en": "Question 15. On a coordinate plane, the graph of a line passes through the origin and the point (10, 14). What is the equation of the line? Choices: A: y = (5/7)x. B: y = (7/5)x. C: y = x + 5/7. D: y = x + 7/5.",
-        "es": "Pregunta 15. En un plano de coordenadas, el gráfico de una recta atraviesa el origen y el punto (10, 14). ¿Cuál es la ecuación de la recta? Opciones: A: y = 5/7x. B: y = 7/5x. C: y = x + 5/7. D: y = x + 7/5."
+        "es": "Pregunta 15. En un plano de coordenadas, el gráfico de una recta atraviesa el origen y el punto (10, 14). ¿Cuál es la ecuación de la recta? Opciones: A: y = (5/7)x. B: y = (7/5)x. C: y = x + 5/7. D: y = x + 7/5."
       },
       "requiredSourceTokens": {
         "en": [
@@ -569,16 +569,17 @@
         ],
         "es": [
           "(10, 14)",
-          "y = 5/7x",
-          "y = 7/5x",
+          "y = (5/7)x",
+          "y = (7/5)x",
           "y = x + 5/7",
           "y = x + 7/5",
-          "A: y = 5/7x",
-          "B: y = 7/5x",
+          "A: y = (5/7)x",
+          "B: y = (7/5)x",
           "C: y = x + 5/7",
           "D: y = x + 7/5",
           "5/7",
-          "7/5"
+          "7/5",
+          "Pregunta 15. En un plano de coordenadas, el gráfico de una recta atraviesa el origen y el punto (10, 14). ¿Cuál es la ecuación de la recta? Opciones: A: y = (5/7)x. B: y = (7/5)x. C: y = x + 5/7. D: y = x + 7/5."
         ]
       }
     },
@@ -721,7 +722,7 @@
       }
     },
     "nysed-2021-g8-mc-q20": {
-      "inputHash": "294b348c372cf484a48b53e9372a817ca6cbc316c7eeaaa084a9274bf76b1830",
+      "inputHash": "e2ab788898eb334a1d8737710b3a09aa97817b4ee8b66cc22373f1aa1e3ee616",
       "description": {
         "en": "Question 20. A flower vase is in the shape of a cylinder and has a diameter of 5 inches and a height of 7 inches. Which equation could be used to determine the volume, in cubic inches, of the vase? Choices: A: V = π(5)²(7). B: V = π(7)²(5). C: V = π(7)²(2.5). D: V = π(2.5)²(7).",
         "es": "Pregunta 20. Un florero tiene forma de cilindro, un diámetro de 5 pulgadas y una altura de 7 pulgadas. ¿Qué ecuación podría usarse para determinar el volumen, en pulgadas cúbicas, del florero? Opciones: A: V = π(5)²(7) B: V = π(7)²(5) C: V = π(7)²(2.5) D: V = π(2.5)²(7)"
@@ -801,7 +802,7 @@
       "inputHash": "b97ab2a5b6edb23e6e33fea03af33c71fbfb8d1472ef26b21a9675d9f3b3dc7e",
       "description": {
         "en": "Question 22. Which expression is equivalent to (5⁻²)⁵ × 5⁴? Choices: A: 5¹². B: 5⁷. C: 1/5⁶. D: 1/5⁴⁰.",
-        "es": "Pregunta 22. ¿Qué expresión es equivalente a (5⁻²)⁵ × 5⁴? Opciones: A: 5¹² B: 5⁻⁷ C: 1/5⁶ D: 1/5⁴⁰"
+        "es": "Pregunta 22. ¿Qué expresión es equivalente a (5⁻²)⁵ × 5⁴? Opciones: A: 5¹² B: 5⁷ C: 1/5⁶ D: 1/5⁴⁰"
       },
       "requiredSourceTokens": {
         "en": [
@@ -821,16 +822,17 @@
         "es": [
           "(5⁻²)⁵ × 5⁴",
           "5¹²",
-          "5⁻⁷",
+          "5⁷",
           "1/5⁶",
           "1/5⁴⁰",
           "A: 5¹²",
-          "B: 5⁻⁷",
+          "B: 5⁷",
           "C: 1/5⁶",
           "D: 1/5⁴⁰",
           "(5⁻²)",
           "5⁴",
-          "1/5"
+          "1/5",
+          "Pregunta 22. ¿Qué expresión es equivalente a (5⁻²)⁵ × 5⁴? Opciones: A: 5¹² B: 5⁷ C: 1/5⁶ D: 1/5⁴⁰"
         ]
       }
     },

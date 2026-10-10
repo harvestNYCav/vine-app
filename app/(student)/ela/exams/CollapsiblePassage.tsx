@@ -37,6 +37,12 @@ export default function CollapsiblePassage({
       </summary>
 
       <div className={`border-t border-blue-200 bg-white ${compact ? 'p-2.5' : 'p-3'}`}>
+        {/\/nysed\/ela\/201[3-5]\//.test(passage.src) && (
+          <p role="note" className="mb-2 rounded-lg bg-blue-50 p-2 text-xs leading-relaxed text-blue-950">
+            Original booklet headers may show “XX” or different question numbers. Follow the
+            question numbers in Vine; line and paragraph references still match this passage.
+          </p>
+        )}
         <p className="mb-2 text-xs leading-relaxed text-gray-600">
           Original line and paragraph numbers are preserved. PDF page breaks have been removed for a
           continuous reading view. Every passage includes a reviewed text transcript.

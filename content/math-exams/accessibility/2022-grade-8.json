@@ -119,8 +119,8 @@
     "nysed-2022-g8-mc-q4": {
       "inputHash": "056bdb76b4dbff881417a47288c527d229bec419a45f766d38378170a2858e30",
       "description": {
-        "en": "Question 4. Which equation represents the line shown on the coordinate plane below? The x-axis is labeled at −8, −6, −4, −2, 2, 4, 6, and 8, and the y-axis is labeled at −8, −6, −4, −2, 2, 4, 6, 8, and 10. A line with arrows at both ends rises from lower left to upper right. It contains marked points at (−4, −6), (0, 4), and (2, 9). Choices: A: y = 2/5x + 4 B: y = 2/3x + 4 C: y = 3/2x + 4 D: y = 5/2x + 4",
-        "es": "Pregunta 4. ¿Qué ecuación representa la recta que se muestra en el siguiente plano de coordenadas? El eje x es horizontal y el eje y es vertical. La recta asciende de izquierda a derecha, corta el eje y en el punto marcado (0, 4) y también contiene los puntos marcados (2, 9) y (−4, −6). Tiene flechas en ambos extremos, por lo que continúa en las dos direcciones. Opciones: A: y = 2/5x + 4 B: y = 2/3x + 4 C: y = 3/2x + 4 D: y = 5/2x + 4"
+        "en": "Question 4. Which equation represents the line shown on the coordinate plane below? The x-axis is labeled at −8, −6, −4, −2, 2, 4, 6, and 8, and the y-axis is labeled at −8, −6, −4, −2, 2, 4, 6, 8, and 10. A line with arrows at both ends rises from lower left to upper right. It contains marked points at (−4, −6), (0, 4), and (2, 9). Choices: A: y = (2/5)x + 4 B: y = (2/3)x + 4 C: y = (3/2)x + 4 D: y = (5/2)x + 4",
+        "es": "Pregunta 4. ¿Qué ecuación representa la recta que se muestra en el siguiente plano de coordenadas? El eje x es horizontal y el eje y es vertical. La recta asciende de izquierda a derecha, corta el eje y en el punto marcado (0, 4) y también contiene los puntos marcados (2, 9) y (−4, −6). Tiene flechas en ambos extremos, por lo que continúa en las dos direcciones. Opciones: A: y = (2/5)x + 4 B: y = (2/3)x + 4 C: y = (3/2)x + 4 D: y = (5/2)x + 4"
       },
       "requiredSourceTokens": {
         "en": [
@@ -132,35 +132,37 @@
           "(−4, −6)",
           "(0, 4)",
           "(2, 9)",
-          "y = 2/5x + 4",
-          "y = 2/3x + 4",
-          "y = 3/2x + 4",
-          "y = 5/2x + 4",
-          "A: y = 2/5x + 4",
-          "B: y = 2/3x + 4",
-          "C: y = 3/2x + 4",
-          "D: y = 5/2x + 4",
+          "y = (2/5)x + 4",
+          "y = (2/3)x + 4",
+          "y = (3/2)x + 4",
+          "y = (5/2)x + 4",
+          "A: y = (2/5)x + 4",
+          "B: y = (2/3)x + 4",
+          "C: y = (3/2)x + 4",
+          "D: y = (5/2)x + 4",
           "2/5",
           "2/3",
           "3/2",
-          "5/2"
+          "5/2",
+          "Question 4. Which equation represents the line shown on the coordinate plane below? The x-axis is labeled at −8, −6, −4, −2, 2, 4, 6, and 8, and the y-axis is labeled at −8, −6, −4, −2, 2, 4, 6, 8, and 10. A line with arrows at both ends rises from lower left to upper right. It contains marked points at (−4, −6), (0, 4), and (2, 9). Choices: A: y = (2/5)x + 4 B: y = (2/3)x + 4 C: y = (3/2)x + 4 D: y = (5/2)x + 4"
         ],
         "es": [
           "(0, 4)",
           "(2, 9)",
           "(−4, −6)",
-          "y = 2/5x + 4",
-          "y = 2/3x + 4",
-          "y = 3/2x + 4",
-          "y = 5/2x + 4",
-          "A: y = 2/5x + 4",
-          "B: y = 2/3x + 4",
-          "C: y = 3/2x + 4",
-          "D: y = 5/2x + 4",
+          "y = (2/5)x + 4",
+          "y = (2/3)x + 4",
+          "y = (3/2)x + 4",
+          "y = (5/2)x + 4",
+          "A: y = (2/5)x + 4",
+          "B: y = (2/3)x + 4",
+          "C: y = (3/2)x + 4",
+          "D: y = (5/2)x + 4",
           "2/5",
           "2/3",
           "3/2",
-          "5/2"
+          "5/2",
+          "Pregunta 4. ¿Qué ecuación representa la recta que se muestra en el siguiente plano de coordenadas? El eje x es horizontal y el eje y es vertical. La recta asciende de izquierda a derecha, corta el eje y en el punto marcado (0, 4) y también contiene los puntos marcados (2, 9) y (−4, −6). Tiene flechas en ambos extremos, por lo que continúa en las dos direcciones. Opciones: A: y = (2/5)x + 4 B: y = (2/3)x + 4 C: y = (3/2)x + 4 D: y = (5/2)x + 4"
         ]
       }
     },
@@ -416,7 +418,7 @@
       }
     },
     "nysed-2022-g8-mc-q16": {
-      "inputHash": "5745d9c163a271d31ef9e8d9a563fc69dd986ca8b286906a76413ca7c981aba3",
+      "inputHash": "11ada0508688baeb93a93ed9b7413d7f66a4e70d3b900a444e54b97350f6e59c",
       "description": {
         "en": "Question 16. What is the solution to the equation −1/3(6y + 6) + 21 = 3y? Choices: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5",
         "es": "Pregunta 16. ¿Cuál es la solución de la ecuación que se muestra a continuación? −(1/3)(6y + 6) + 21 = 3y. Opciones: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5"
@@ -567,23 +569,24 @@
     "nysed-2022-g8-mc-q25": {
       "inputHash": "ac1f29ed0f03c73a27ba16d57156ca469aa506c3597b97b214164f9d1afd12ed",
       "description": {
-        "en": "Question 25. A line is graphed on an x-y coordinate plane. The line descends from upper left to lower right, has arrows at both ends, and passes through the marked intercepts (0, 8) and (10, 0). What is the equation of the line? Choices: A: y = −4/5x + 8 B: y = 4/5x + 10 C: y = −5/4x + 8 D: y = 5/4x + 10",
+        "en": "Question 25. A line is graphed on an x-y coordinate plane. The line descends from upper left to lower right, has arrows at both ends, and passes through the marked intercepts (0, 8) and (10, 0). What is the equation of the line? Choices: A: y = −(4/5)x + 8 B: y = (4/5)x + 10 C: y = −(5/4)x + 8 D: y = (5/4)x + 10",
         "es": "Pregunta 25. Se grafica una recta en el plano de coordenadas que se muestra a continuación. Los ejes x y y están marcados en incrementos de 2. La recta desciende de izquierda a derecha, tiene flechas en ambos extremos, cruza el eje y en el punto cerrado (0, 8) y cruza el eje x en el punto cerrado (10, 0). ¿Cuál es la ecuación de la recta? Opciones: A: y = −(4/5)x + 8 B: y = (4/5)x + 10 C: y = −(5/4)x + 8 D: y = (5/4)x + 10"
       },
       "requiredSourceTokens": {
         "en": [
           "(0, 8)",
           "(10, 0)",
-          "y = −4/5x + 8",
-          "y = 4/5x + 10",
-          "y = −5/4x + 8",
-          "y = 5/4x + 10",
-          "A: y = −4/5x + 8",
-          "B: y = 4/5x + 10",
-          "C: y = −5/4x + 8",
-          "D: y = 5/4x + 10",
+          "y = −(4/5)x + 8",
+          "y = (4/5)x + 10",
+          "y = −(5/4)x + 8",
+          "y = (5/4)x + 10",
+          "A: y = −(4/5)x + 8",
+          "B: y = (4/5)x + 10",
+          "C: y = −(5/4)x + 8",
+          "D: y = (5/4)x + 10",
           "4/5",
-          "5/4"
+          "5/4",
+          "Question 25. A line is graphed on an x-y coordinate plane. The line descends from upper left to lower right, has arrows at both ends, and passes through the marked intercepts (0, 8) and (10, 0). What is the equation of the line? Choices: A: y = −(4/5)x + 8 B: y = (4/5)x + 10 C: y = −(5/4)x + 8 D: y = (5/4)x + 10"
         ],
         "es": [
           "(0, 8)",
@@ -715,7 +718,7 @@
       "inputHash": "1872eb1fc1fe3cd9c3697018403f395a7ebe86e2bf475dfcd13162ee41b2b0c6",
       "description": {
         "en": "Question 36. Lines l and m are parallel and intersect transversal p. Lines l and m are horizontal, with l above m, and transversal p slopes downward from left to right across both lines. At the intersection with l, the interior angle below l and to the right of p is labeled (3n + 16)°. At the intersection with m, the interior angle above m and to the left of p is labeled (5n + 4)°. What is the value of n? Choices: A: 6. B: 10. C: 20. D: 24.",
-        "es": "Pregunta 36. Las rectas l y m son paralelas e intersecan la transversal p. Las rectas l y m son horizontales, con l arriba de m, y la transversal p desciende de izquierda a derecha al cruzar ambas. En la intersección con l, el ángulo interior situado debajo de l y a la derecha de p mide (3n + 16)°. En la intersección con m, el ángulo interior situado encima de m y a la izquierda de p mide (5n + 4)°. Estos dos ángulos son alternos internos. ¿Cuál es el valor de n? Opciones: A: 6 B: 10 C: 20 D: 24"
+        "es": "Pregunta 36. Las rectas l y m son paralelas e intersecan la transversal p. Las rectas l y m son horizontales, con l arriba de m, y la transversal p desciende de izquierda a derecha al cruzar ambas. En la intersección con l, el ángulo interior situado debajo de l y a la derecha de p mide (3n + 16)°. En la intersección con m, el ángulo interior situado encima de m y a la izquierda de p mide (5n + 4)°. ¿Cuál es el valor de n? Opciones: A: 6 B: 10 C: 20 D: 24"
       },
       "requiredSourceTokens": {
         "en": [

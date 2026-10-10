@@ -144,7 +144,7 @@
     "nysed-2016-g6-mc-q18": {
       "inputHash": "88990783639b4e65ad0f672c275ca96643264553fcf0190a473393b8f6d8a148",
       "description": {
-        "en": "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3; points halfway between consecutive integers are marked with filled dots. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is at 1/2. D: N is at −1/2, and M is at 2."
+        "en": "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is between 0 and 1, a little left of halfway. D: N is at −1/2, and M is at 2."
       },
       "requiredSourceTokens": {
         "en": [
@@ -157,8 +157,9 @@
           "−2",
           "A: M is at −1/2, and N is at 5/2",
           "B: N is at −5/2, and M is at 1/2",
-          "C: M is at −2, and N is at 1/2",
-          "D: N is at −1/2, and M is at 2"
+          "C: M is at −2, and N is between 0 and 1, a little left of halfway",
+          "D: N is at −1/2, and M is at 2",
+          "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is between 0 and 1, a little left of halfway. D: N is at −1/2, and M is at 2."
         ]
       }
     },
@@ -493,7 +494,7 @@
       }
     },
     "nysed-2016-g6-mc-q42": {
-      "inputHash": "675a94c40dd1833858725e9c93b7f8de425271313b4c5b8700982c20e90a2013",
+      "inputHash": "fb42173fe1a6e662fb386ff66ec08cde0d4447931a4d1bb291d60b9924e447b6",
       "description": {
         "en": "Question 42. Bronson is using a coordinate plane to design a rectangular swimming pool. He will plot points on the coordinate plane to mark the vertices of the rectangular pool bottom. If Bronson plots the first three points at (5, 3), (5, 13), and (30, 13), what would be the coordinates of the fourth point? A blank square coordinate grid is provided for working out the problem; it has evenly spaced horizontal and vertical grid lines and no visible axis labels or plotted points. Choices: A: (30, 5). B: (20, 13). C: (5, 28). D: (30, 3)."
       },

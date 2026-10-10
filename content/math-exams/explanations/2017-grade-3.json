@@ -67,8 +67,8 @@
       "inputHash": "ddf709981defa336a59faa78f8407518e5a49a9dd7d16afd4097fe283d5d7e2f",
       "explanation": {
         "text": {
-          "en": "The mile from 0 to 1 is divided into 8 equal intervals. The school is at the fourth interval, which represents 4/8 mile.",
-          "es": "La milla de 0 a 1 está dividida en 8 intervalos iguales. La escuela está en el cuarto intervalo, que representa 4/8 de milla."
+          "en": "The mile from 0 to 1 is divided into 8 equal intervals. The school is at the fourth tick mark after 0, which represents 4/8 mile.",
+          "es": "La milla de 0 a 1 está dividida en 8 intervalos iguales. La escuela está en el cuarta marca después de 0, que representa 4/8 de milla."
         },
         "source": "vine-authored"
       }
@@ -144,7 +144,7 @@
       }
     },
     "nysed-2017-g3-mc-q24": {
-      "inputHash": "49705c41b701228691c4265b39091dc7841564ea660891187c0b4d53a0974a6f",
+      "inputHash": "3aa03ac8dcc1368b4171654df554ef0499c051c68e3f4e3b4124db6f6ee8ef87",
       "explanation": {
         "text": {
           "en": "Substituting 8 into pair A gives 4 × 8 = 32 and 32 ÷ 8 = 4. Both equations are true related facts.",

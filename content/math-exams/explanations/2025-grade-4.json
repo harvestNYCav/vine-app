@@ -57,8 +57,8 @@
       "inputHash": "52a96b1071ab720cd4d7b6b75fc2d39034d26ca2c21cf4811a6b606027ec29a5",
       "explanation": {
         "text": {
-          "en": "Regroup the whole-number factor: 8 × 3/5 = (8×3) × 1/5 = 24 × 1/5. Therefore, the two expressions are equivalent.",
-          "es": "Se reagrupa el factor entero porque 3/5 = 3 × 1/5: 8 × 3/5 = (8 × 3) × 1/5 = 24 × 1/5."
+          "en": "Since 3/5 = 3 × 1/5, 8 × 3/5 = 8 × 3 × 1/5 = 24 × 1/5, so choice C is equivalent.",
+          "es": "Como 3/5 = 3 × 1/5, 8 × 3/5 = 8 × 3 × 1/5 = 24 × 1/5, así que la opción C es equivalente."
         },
         "source": "vine-authored"
       }
@@ -74,11 +74,11 @@
       }
     },
     "nysed-2025-g4-mc-q22": {
-      "inputHash": "ae04fac39146dcfd1e36a9f00fa52bac3616506934e2e14aba7523ba52f5aa84",
+      "inputHash": "67e743564b5ba2000a33591dce18af793e54563b6702c666222b8e91c8468af1",
       "explanation": {
         "text": {
-          "en": "A rectangle's area is length times width, so 6w = 24. Dividing by 6 gives w = 4 inches.",
-          "es": "El área de un rectángulo es largo por ancho, así que 6w = 24. Al dividir entre 6 se obtiene w = 4 pulgadas."
+          "en": "Area = length × width, so 6 × ? = 24. Since 24 ÷ 6 = 4, the width is 4 inches, choice A.",
+          "es": "Área = largo × ancho, así que 6 × ? = 24. Como 24 ÷ 6 = 4, el ancho es 4 pulgadas, la opción A."
         },
         "source": "vine-authored"
       }
@@ -97,8 +97,8 @@
       "inputHash": "5dddb39cfefef821bc44c28c6c9015d62b0789ed019706f2b057fa268d591369",
       "explanation": {
         "text": {
-          "en": "Six cookies are 2 times the number of friends, so 6 = 2f. Dividing the 6 cookies into groups of 2 gives the equivalent equation 6 ÷ 2 = f.",
-          "es": "Seis galletas son 2 veces el número de amigos, así que 6 = 2f. Dividir las 6 galletas en grupos de 2 da la ecuación equivalente 6 ÷ 2 = f."
+          "en": "Six cookies are 2 times the number of friends, so 6 = 2 × f. Dividing 6 by 2 finds f: 6 ÷ 2 = f, choice A.",
+          "es": "Seis galletas son 2 veces la cantidad de amigos, así que 6 = 2 × f. Al dividir 6 entre 2 se halla f: 6 ÷ 2 = f, la opción A."
         },
         "source": "vine-authored"
       }
@@ -148,7 +148,7 @@
       "explanation": {
         "text": {
           "en": "Rectangles have four right angles. Figures A and C each show four right angles, while B and D have slanted non-right angles.",
-          "es": "Los rectángulos tienen cuatro ángulos rectos. Las figuras A y C muestran cuatro ángulos rectos cada una; por lo tanto, ambas son rectángulos."
+          "es": "Los rectángulos tienen cuatro ángulos rectos. Las figuras A y C muestran cuatro ángulos rectos cada una, mientras que B y D tienen ángulos inclinados que no son rectos; por lo tanto, A y C son rectángulos, la opción B."
         },
         "source": "vine-authored"
       }
@@ -157,8 +157,8 @@
       "inputHash": "71d61225a3c26269766a2d7829d77fd8efaf64cb881946756ba9d91f34160247",
       "explanation": {
         "text": {
-          "en": "Use the distributive property: 87 × 36 = 87(30 + 6) = 2,610 + 522 = 3,132.",
-          "es": "Se usa la propiedad distributiva: 87 × 36 = 87(30 + 6) = 2,610 + 522 = 3,132."
+          "en": "Break the second factor into parts, multiply, and add the partial products: 87 × 36 = (87 × 30) + (87 × 6) = 2,610 + 522 = 3,132, choice D.",
+          "es": "Descompón un factor, multiplica cada parte y suma los productos parciales: 87 × 36 = (87 × 30) + (87 × 6) = 2,610 + 522 = 3,132, la opción D."
         },
         "source": "vine-authored"
       }
@@ -177,8 +177,8 @@
       "inputHash": "0445fc711b90bbda8c124dd029ab1973d2f7d1437910998add35fc3d6159ab8b",
       "explanation": {
         "text": {
-          "en": "Since 57 ÷ 6 = 9.5, multiplying both dividend and quotient by 10 gives 570 ÷ 6 = 95.",
-          "es": "Como 57 ÷ 6 = 9.5, multiplicar por 10 el dividendo y el cociente da 570 ÷ 6 = 95."
+          "en": "Break 570 into 540 + 30. 540 ÷ 6 = 90 and 30 ÷ 6 = 5, so 570 ÷ 6 = 90 + 5 = 95, choice C. Check: 6 × 95 = 570.",
+          "es": "Se descompone 570 en 540 + 30. 540 ÷ 6 = 90 y 30 ÷ 6 = 5, así que 570 ÷ 6 = 90 + 5 = 95, la opción C. Comprobación: 6 × 95 = 570."
         },
         "source": "vine-authored"
       }
@@ -187,8 +187,8 @@
       "inputHash": "042890b1ac102f7efe8d8e2c5c482708b4a02fb55e5d9ff425f5669f650ab753",
       "explanation": {
         "text": {
-          "en": "School H has 2(126) + 3(174) = 252 + 522 = 774 students in those grades. School G has 126 + 174 = 300, so H has 774 − 300 = 474 more.",
-          "es": "La escuela H tiene 2(126) + 3(174) = 252 + 522 = 774 estudiantes de esos grados. La escuela G tiene 126 + 174 = 300, así que H tiene 774 − 300 = 474 más."
+          "en": "School H has 2 × 126 = 252 third graders and 3 × 174 = 522 fourth graders, or 774 in all. School G has 126 + 174 = 300, so H has 774 − 300 = 474 more, choice B.",
+          "es": "La escuela H tiene 2 × 126 = 252 alumnos de tercer grado y 3 × 174 = 522 de cuarto, o 774 en total. G tiene 126 + 174 = 300, así que H tiene 774 − 300 = 474 más, la opción B."
         },
         "source": "vine-authored"
       }

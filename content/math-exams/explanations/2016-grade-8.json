@@ -27,8 +27,8 @@
       "inputHash": "65846b4e11806aa167b0c752a030f83b02c130d6fe5aed5a51b775e3ce6edbd2",
       "explanation": {
         "text": {
-          "en": "Divide the city population by 15: (6 × 10^5) ÷ 15 = 0.4 × 10^5 = 4 × 10^4 people.",
-          "es": "Se divide la población de la ciudad entre 15: (6 × 10^5) ÷ 15 = 0.4 × 10^5 = 4 × 10^4 personas."
+          "en": "Divide the city population by 15: (6 × 10⁵) ÷ 15 = 0.4 × 10⁵ = 4 × 10⁴ people.",
+          "es": "Se divide la población de la ciudad entre 15: (6 × 10⁵) ÷ 15 = 0.4 × 10⁵ = 4 × 10⁴ personas."
         },
         "source": "vine-authored"
       }
@@ -107,8 +107,8 @@
       "inputHash": "16821bf417f65ba571b95c528206e6118c15a9a317234f6e3e2065df79a27f1e",
       "explanation": {
         "text": {
-          "en": "Multiplying powers with base 5 means adding exponents: 5^(−8) × 5^4 = 5^(−4). A negative exponent gives 5^(−4) = 1/5^4.",
-          "es": "Al multiplicar potencias de base 5 se suman los exponentes: 5^(−8) × 5^4 = 5^(−4). El exponente negativo da 5^(−4) = 1/5^4."
+          "en": "Multiplying powers with base 5 means adding exponents: 5^(−8) × 5⁴ = 5^(−4). A negative exponent gives 5^(−4) = 1/5⁴.",
+          "es": "Al multiplicar potencias de base 5 se suman los exponentes: 5^(−8) × 5⁴ = 5^(−4). El exponente negativo da 5^(−4) = 1/5⁴."
         },
         "source": "vine-authored"
       }
@@ -127,8 +127,8 @@
       "inputHash": "81621b36620f976c5c4f9c26ee1b9c9a7c62bf79909dd56ca4016460abe84653",
       "explanation": {
         "text": {
-          "en": "Ellentown has 3 × 10^3 = 3,000 students. Dividing Pengrove's 30,000 by 3,000 gives 30,000 ÷ 3,000 = 10 times as many.",
-          "es": "Ellentown tiene 3 × 10^3 = 3,000 estudiantes. Al dividir 30,000 entre 3,000 se obtiene 30,000 ÷ 3,000 = 10 veces esa cantidad."
+          "en": "Ellentown has 3 × 10³ = 3,000 students. Dividing Pengrove's 30,000 by 3,000 gives 30,000 ÷ 3,000 = 10 times as many.",
+          "es": "Ellentown tiene 3 × 10³ = 3,000 estudiantes. Al dividir 30,000 entre 3,000 se obtiene 30,000 ÷ 3,000 = 10 veces esa cantidad."
         },
         "source": "vine-authored"
       }
@@ -187,8 +187,8 @@
       "inputHash": "5f7fa6392b18627a6b1763a71b47273f4e617c0a55192cac5a63a6651e886566",
       "explanation": {
         "text": {
-          "en": "Compare the downloads by division: (4 × 10^6) ÷ (8 × 10^5) = (4/8) × 10 = 0.5 × 10 = 5.",
-          "es": "Se comparan las descargas mediante división: (4 × 10^6) ÷ (8 × 10^5) = (4/8) × 10 = 0.5 × 10 = 5."
+          "en": "Compare the downloads by division: (4 × 10⁶) ÷ (8 × 10⁵) = (4/8) × 10 = 0.5 × 10 = 5.",
+          "es": "Se comparan las descargas mediante división: (4 × 10⁶) ÷ (8 × 10⁵) = (4/8) × 10 = 0.5 × 10 = 5."
         },
         "source": "vine-authored"
       }
@@ -247,8 +247,8 @@
       "inputHash": "9ecee19b16ece9404c6bb4538235cb4aea7a4c6df4396d890ffcd1f3d461e6e3",
       "explanation": {
         "text": {
-          "en": "First, (4.8 × 10^8) ÷ (1.2 × 10^4) = 4 × 10^4. Then (4 × 10^4)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088.",
-          "es": "Primero, (4.8 × 10^8) ÷ (1.2 × 10^4) = 4 × 10^4. Luego, (4 × 10^4)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088."
+          "en": "First, (4.8 × 10⁸) ÷ (1.2 × 10⁴) = 4 × 10⁴. Then (4 × 10⁴)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088.",
+          "es": "Primero, (4.8 × 10⁸) ÷ (1.2 × 10⁴) = 4 × 10⁴. Luego, (4 × 10⁴)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088."
         },
         "source": "vine-authored"
       }
@@ -274,7 +274,7 @@
       }
     },
     "nysed-2016-g8-mc-q41": {
-      "inputHash": "a389f9a58d2416e58568ba812d9e1794bc3ccd8f4e760b9353e4a550b9caa7c8",
+      "inputHash": "03123a1c53d243f7eb6d1d0b1bacef5689f353fe65ab36022fd07761643db7af",
       "explanation": {
         "text": {
           "en": "A strong linear association places the points close to the line of best fit. Plot D qualifies because its points cluster around the downward-sloping line k, indicating a strong negative linear association.",

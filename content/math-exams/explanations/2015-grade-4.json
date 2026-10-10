@@ -37,8 +37,8 @@
       "inputHash": "c74580250e3e1edf2317b214fec17da8cdf6924b40eb49fbc05c271b013b7fc1",
       "explanation": {
         "text": {
-          "en": "Using ray CE as the protractor's 0-degree baseline, ray CD meets the 40-degree mark. Therefore, angle DCE measures 40°.",
-          "es": "Al usar el rayo CE como línea de 0 grados del transportador, el rayo CD llega a la marca de 40 grados. Por lo tanto, el ángulo DCE mide 40°."
+          "en": "Place a protractor’s center on C with its 0° line on ray CE; ray CD passes through 40°. As a check, angle BCE is a right angle (90°), and angle DCE is a little less than half of it, so 40°, not 50°, makes sense.",
+          "es": "Coloca el centro del transportador en C con la línea de 0° sobre CE; CD pasa por 40°. Como comprobación, BCE es un ángulo recto (90°) y DCE es un poco menor que su mitad, por lo que 40°, no 50°, es razonable."
         },
         "source": "vine-authored"
       }
@@ -104,7 +104,7 @@
       }
     },
     "nysed-2015-g4-mc-q11": {
-      "inputHash": "440c86011d1e9735253a3b76c5e2ecf6895c0e505a61172bab3f81a297657e18",
+      "inputHash": "0c22d505dc1873a2ecc4518b73cf1d56975d83f13330914082c29aad697834be",
       "explanation": {
         "text": {
           "en": "Three of the 5 equal parts are shaded, so the shaded amount is 3/5. Adding one fifth for each shaded part gives 1/5 + 1/5 + 1/5 = 3/5.",
@@ -137,8 +137,8 @@
       "inputHash": "ad90256424ea1876eb842ea8a38fa62bc31a963d556a4d3e9745dbf26181b0a6",
       "explanation": {
         "text": {
-          "en": "The octagon's opposite sides run in the same directions, so they are parallel. Each exterior turn is 45°, making each interior angle 180° − 45° = 135°.",
-          "es": "Los lados opuestos del octágono siguen las mismas direcciones, así que son paralelos. Cada giro exterior mide 45°, por lo que cada ángulo interior mide 180° − 45° = 135°."
+          "en": "The octagon’s opposite sides run in the same direction, so they are parallel. Each corner is wider than a right angle (an obtuse angle), so it cannot measure 45°. The angles measure 135°.",
+          "es": "Los lados opuestos del octágono van en la misma dirección, así que son paralelos. Cada esquina es más amplia que un ángulo recto (es obtusa), por lo que no puede medir 45°. Los ángulos miden 135°."
         },
         "source": "vine-authored"
       }

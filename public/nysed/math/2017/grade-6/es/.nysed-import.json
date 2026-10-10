@@ -99,7 +99,7 @@
         28.0,
         263.7,
         584.0,
-        702.372
+        724.0
       ]
     },
     "18": {
@@ -338,7 +338,8 @@
     }
   },
   "verifiedTextOverlays": {
-    "34": "2017-g6-es-q34-table-values-v1"
+    "34": "2017-g6-es-q34-table-values-v1",
+    "46": "2017-g6-es-q46-source-figure-v1"
   },
   "outputs": {
     "1": {
@@ -383,7 +384,7 @@
     },
     "17": {
       "width": 1150,
-      "height": 967
+      "height": 984
     },
     "18": {
       "width": 1095,
@@ -489,5 +490,11 @@
       "width": 1135,
       "height": 368
     }
+  },
+  "verifiedFooterMasks": {
+    "17": [
+      517.6611,
+      707.3725
+    ]
   }
 }

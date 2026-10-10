@@ -67,14 +67,56 @@ const DOMAIN_CODES = new Set<MathDomainCode>([
 ])
 const RELEASE_YEARS = new Set([2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const DEFAULT_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C', 'D']
-const THREE_CHOICE_QUESTION_ID = 'nysed-2016-g4-mc-q24'
-const THREE_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C']
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-2013-g3-mc-q2',
+  'nysed-2013-g4-mc-q11',
+  'nysed-2013-g4-mc-q4',
   'nysed-2013-g4-mc-q8',
   'nysed-2013-g6-mc-q14',
+  'nysed-2013-g6-mc-q47',
+  'nysed-2013-g6-mc-q48',
+  'nysed-2013-g6-mc-q61',
+  'nysed-2013-g7-mc-q1',
+  'nysed-2013-g7-mc-q10',
+  'nysed-2013-g7-mc-q11',
+  'nysed-2013-g7-mc-q12',
+  'nysed-2013-g7-mc-q6',
+  'nysed-2013-g7-mc-q8',
+  'nysed-2013-g7-mc-q9',
+  'nysed-2013-g8-mc-q2',
+  'nysed-2013-g8-mc-q3',
+  'nysed-2013-g8-mc-q5',
+  'nysed-2013-g8-mc-q61',
+  'nysed-2014-g3-mc-q14',
+  'nysed-2014-g3-mc-q29',
+  'nysed-2014-g3-mc-q6',
+  'nysed-2014-g4-mc-q15',
   'nysed-2014-g4-mc-q29',
+  'nysed-2014-g4-mc-q36',
+  'nysed-2014-g4-mc-q42',
+  'nysed-2014-g4-mc-q44',
+  'nysed-2014-g5-mc-q10',
+  'nysed-2014-g5-mc-q14',
+  'nysed-2014-g5-mc-q19',
   'nysed-2014-g5-mc-q44',
+  'nysed-2014-g6-mc-q11',
+  'nysed-2014-g6-mc-q12',
+  'nysed-2014-g6-mc-q18',
+  'nysed-2014-g6-mc-q20',
+  'nysed-2014-g6-mc-q28',
+  'nysed-2014-g6-mc-q36',
+  'nysed-2014-g6-mc-q39',
+  'nysed-2014-g6-mc-q48',
+  'nysed-2014-g6-mc-q49',
+  'nysed-2014-g6-mc-q5',
+  'nysed-2014-g6-mc-q54',
   'nysed-2014-g7-mc-q1',
+  'nysed-2014-g7-mc-q14',
+  'nysed-2014-g7-mc-q16',
+  'nysed-2014-g7-mc-q3',
+  'nysed-2014-g8-mc-q13',
+  'nysed-2014-g8-mc-q16',
+  'nysed-2014-g8-mc-q27',
 ])
 const SPANISH_RELEASE_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const STANDARD_PATTERN = /^(CCSS|NGLS)\.Math\.Content\.(?:NY-)?([3-8])\.(OA|NBT|NF|MD|G|RP|NS|EE|F|SP)\.(?:[A-Z]\.)?\d+[a-z]?$/
@@ -186,16 +228,6 @@ function validDateOnly(value: unknown): value is string {
 }
 
 function choiceLabelsForQuestion(question: RawQuestion): MathExamChoice[] {
-  if (question.id === THREE_CHOICE_QUESTION_ID) {
-    invariant(
-      Array.isArray(question.choiceLabels)
-        && question.choiceLabels.length === THREE_CHOICE_LABELS.length
-        && question.choiceLabels.every((label, index) => label === THREE_CHOICE_LABELS[index]),
-      `${question.id} must use its verified A-C choice labels`,
-    )
-    return [...THREE_CHOICE_LABELS]
-  }
-
   invariant(
     question.choiceLabels === undefined,
     `${question.id} has unexpected choice labels`,
@@ -436,12 +468,12 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
   })
 
   invariant(
-    explanationSourceCounts['official-nysed'] === 223,
-    'catalog must contain exactly 223 unmodified official NYSED rationales',
+    explanationSourceCounts['official-nysed'] === 179,
+    'catalog must contain exactly 179 unmodified official NYSED rationales',
   )
   invariant(
-    explanationSourceCounts['official-nysed-corrected'] === 5,
-    'catalog must contain exactly 5 official NYSED rationales corrected by Vine',
+    explanationSourceCounts['official-nysed-corrected'] === 49,
+    'catalog must contain exactly 49 official NYSED rationales corrected by Vine',
   )
   invariant(
     explanationSourceCounts['vine-authored'] === 1_611,

@@ -313,7 +313,7 @@
       }
     },
     "nysed-2024-g8-mc-q12": {
-      "inputHash": "93afef4a26a5571d4113886cca728a0df01cd195be6bd4d45a63e3bc7859dee2",
+      "inputHash": "3185762b7464bd8f85bc245a9bfa8564f5828dd0d4d47b66751d3f6715966732",
       "description": {
         "en": "Question 12. Which value of x makes the equation x³ = 64 true? Choices: A: 4 B: 8 C: 16 D: 32",
         "es": "Pregunta 12. ¿Qué valor de x hace que la ecuación x³ = 64 sea verdadera? Opciones: A: 4 B: 8 C: 16 D: 32"
@@ -457,36 +457,38 @@
       }
     },
     "nysed-2024-g8-mc-q20": {
-      "inputHash": "e554d7914eafd1737a0dc1261d6dffcbce91624be67a3999aa2c9df3597d1897",
+      "inputHash": "4180c9e59aa26cf80836e06a60cd4a6a32891b375aa824eec43f940f5615212a",
       "description": {
-        "en": "Question 20. Which equation represents a linear function? Choices: A: y = 1/2x − 3 B: y = x² + 5 C: y = x² + 2x D: y = 1/5x³",
-        "es": "Pregunta 20. ¿Qué ecuación representa una función lineal? Opciones: A: y = 1/2 x − 3. B: y = x² + 5. C: y = x² + 2x. D: y = 1/5 x³."
+        "en": "Question 20. Which equation represents a linear function? Choices: A: y = (1/2)x − 3 B: y = x² + 5 C: y = x² + 2x D: y = (1/5)x³",
+        "es": "Pregunta 20. ¿Qué ecuación representa una función lineal? Opciones: A: y = (1/2)x − 3. B: y = x² + 5. C: y = x² + 2x. D: y = (1/5)x³."
       },
       "requiredSourceTokens": {
         "en": [
-          "y = 1/2x − 3",
+          "y = (1/2)x − 3",
           "y = x² + 5",
           "y = x² + 2x",
-          "D: y = 1/5x³",
-          "A: y = 1/2x − 3",
+          "D: y = (1/5)x³",
+          "A: y = (1/2)x − 3",
           "B: y = x² + 5",
           "C: y = x² + 2x",
           "1/2",
-          "1/5"
+          "1/5",
+          "Question 20. Which equation represents a linear function? Choices: A: y = (1/2)x − 3 B: y = x² + 5 C: y = x² + 2x D: y = (1/5)x³"
         ],
         "es": [
-          "y = 1/2 x − 3",
+          "y = (1/2)x − 3",
           "1/2",
           "y = x² + 5",
           "x²",
           "y = x² + 2x",
-          "y = 1/5 x³",
+          "y = (1/5)x³",
           "1/5",
           "x³",
-          "A: y = 1/2 x − 3",
+          "A: y = (1/2)x − 3",
           "B: y = x² + 5",
           "C: y = x² + 2x",
-          "D: y = 1/5 x³"
+          "D: y = (1/5)x³",
+          "Pregunta 20. ¿Qué ecuación representa una función lineal? Opciones: A: y = (1/2)x − 3. B: y = x² + 5. C: y = x² + 2x. D: y = (1/5)x³."
         ]
       }
     },
