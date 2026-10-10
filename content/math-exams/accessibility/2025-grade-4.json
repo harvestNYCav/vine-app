@@ -59,8 +59,16 @@
     "nysed-2025-g4-mc-q22": {
       "inputHash": "0da9d5af086dd6fedbd5614e8c0382ec982e758831953cc70cf0c01f0687d080",
       "description": {
-        "en": "Question 22. A rectangle has length 6 inches and area 24 square inches. What is its width? Choices: A: 4; B: 6; C: 18; D: 30 inches.",
-        "es": "Pregunta 22. Un rectángulo mide 6 pulgadas de largo y tiene un área de 24 pulgadas cuadradas. ¿Cuál es su ancho? Opciones: A: 4; B: 6; C: 18; D: 30 pulgadas."
+        "en": "Question 22. A rectangle has length 6 inches and area 24 square inches. What is its width? Choices: A: 4; B: 6; C: 18; D: 30.",
+        "es": "Pregunta 22. Un rectángulo mide 6 pulgadas de largo y tiene un área de 24 pulgadas cuadradas. ¿Cuál es su ancho? Opciones: A: 4; B: 6; C: 18; D: 30."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 22. A rectangle has length 6 inches and area 24 square inches. What is its width? Choices: A: 4; B: 6; C: 18; D: 30."
+        ],
+        "es": [
+          "Pregunta 22. Un rectángulo mide 6 pulgadas de largo y tiene un área de 24 pulgadas cuadradas. ¿Cuál es su ancho? Opciones: A: 4; B: 6; C: 18; D: 30."
+        ]
       }
     },
     "nysed-2025-g4-mc-q24": {
@@ -108,8 +116,16 @@
     "nysed-2025-g4-mc-q31": {
       "inputHash": "e361cb07e938d49723f42fe21dc3847f6ef8fb5bfbd2f0361b60ec65fbcede05",
       "description": {
-        "en": "Question 31. Four quadrilaterals are shown. Figure A has four equal-looking sides and four right angles. Figure B is diamond-shaped, with four equal-looking sides and no right angles. Figure C is a tall four-sided figure with four right angles. Figure D is slanted, with two pairs of parallel sides and no right angles. Which two appear to be rectangles? Choices: A: figures B and D; B: figures A and C; C: figures B and C; D: figures A and D.",
-        "es": "Pregunta 31. Se muestran cuatro cuadriláteros. La figura A tiene cuatro lados que parecen iguales y cuatro ángulos rectos. La figura B tiene forma de diamante, con cuatro lados que parecen iguales y ningún ángulo recto. La figura C es una figura alta de cuatro lados con cuatro ángulos rectos. La figura D está inclinada, con dos pares de lados paralelos y ningún ángulo recto. ¿Cuáles dos parecen rectángulos? Opciones: A: figuras B y D; B: figuras A y C; C: figuras B y C; D: figuras A y D."
+        "en": "Question 31. Four quadrilaterals are shown. Figure A has horizontal top and bottom sides and vertical left and right sides, all equal-looking in length. Figure B has four sloping equal-looking sides, with vertices at the top, bottom, left, and right. Figure C has short horizontal top and bottom sides and long vertical left and right sides. Figure D has horizontal top and bottom sides and two sides that slant in the same direction. Which two appear to be rectangles? Choices: A: figures B and D; B: figures A and C; C: figures B and C; D: figures A and D.",
+        "es": "Pregunta 31. Se muestran cuatro cuadriláteros. La figura A tiene lados superior e inferior horizontales y lados izquierdo y derecho verticales, todos de longitudes que parecen iguales. La figura B tiene cuatro lados inclinados que parecen iguales, con vértices arriba, abajo, a la izquierda y a la derecha. La figura C tiene lados superior e inferior horizontales cortos y lados izquierdo y derecho verticales largos. La figura D tiene lados superior e inferior horizontales y dos lados que se inclinan en la misma dirección. ¿Cuáles dos parecen rectángulos? Opciones: A: figuras B y D; B: figuras A y C; C: figuras B y C; D: figuras A y D."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 31. Four quadrilaterals are shown. Figure A has horizontal top and bottom sides and vertical left and right sides, all equal-looking in length. Figure B has four sloping equal-looking sides, with vertices at the top, bottom, left, and right. Figure C has short horizontal top and bottom sides and long vertical left and right sides. Figure D has horizontal top and bottom sides and two sides that slant in the same direction. Which two appear to be rectangles? Choices: A: figures B and D; B: figures A and C; C: figures B and C; D: figures A and D."
+        ],
+        "es": [
+          "Pregunta 31. Se muestran cuatro cuadriláteros. La figura A tiene lados superior e inferior horizontales y lados izquierdo y derecho verticales, todos de longitudes que parecen iguales. La figura B tiene cuatro lados inclinados que parecen iguales, con vértices arriba, abajo, a la izquierda y a la derecha. La figura C tiene lados superior e inferior horizontales cortos y lados izquierdo y derecho verticales largos. La figura D tiene lados superior e inferior horizontales y dos lados que se inclinan en la misma dirección. ¿Cuáles dos parecen rectángulos? Opciones: A: figuras B y D; B: figuras A y C; C: figuras B y C; D: figuras A y D."
+        ]
       }
     },
     "nysed-2025-g4-mc-q32": {

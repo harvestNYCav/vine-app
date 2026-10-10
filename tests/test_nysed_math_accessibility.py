@@ -325,7 +325,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
             (2019, 7, "es", 5, ("1/2 de un vaso",)),
             (2023, 5, "es", 18, ("Prisma A", "1 cubo", "3 cubos")),
             (2023, 5, "en", 31, ("4 unit cubes wide", "3 unit cubes high", "6 unit cubes deep")),
-            (2017, 5, "es", 15, ("23 celdas sombreadas",)),
+            (2017, 5, "es", 15, ("las 2 columnas de la izquierda y las 3 celdas superiores",)),
             (2018, 5, "es", 2, ("42 de 100", "2 cuadrados inferiores", "3/10")),
             (2018, 7, "en", 1, ("B: 0.53̅", "C: 0.5̅3̅")),
             (2023, 8, "es", 7, ("1.25 > 0.3", "1.25 < 0.3")),

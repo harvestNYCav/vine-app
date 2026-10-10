@@ -101,8 +101,16 @@
     "nysed-2025-g3-mc-q28": {
       "inputHash": "69b2218d9eab3ff7579a2a98ea2771200f61d4bb8c05d875ce49c18567e9958e",
       "description": {
-        "en": "Question 28. An L-shaped playground has a bottom rectangle 9 meters by 4 meters and an upper-left rectangle 3 meters wide by 3 meters high, making total left height 7. What is its area? Choices: A: 23; B: 32; C: 45; D: 63 square meters.",
-        "es": "Pregunta 28. Un parque en L tiene un rectángulo inferior de 9 por 4 metros y uno superior izquierdo de 3 por 3, para una altura izquierda total de 7. ¿Cuál es su área? Opciones: A: 23; B: 32; C: 45; D: 63 metros cuadrados."
+        "en": "Question 28. An L-shaped playground has these labeled outside edges: top 3 meters, left 7 meters, right 4 meters, and bottom 9 meters. The two inside edges of the L are not labeled. What is its area, in square meters? Choices: A: 23; B: 32; C: 45; D: 63.",
+        "es": "Pregunta 28. Un parque en forma de L tiene estos lados exteriores rotulados: superior 3 metros, izquierdo 7 metros, derecho 4 metros e inferior 9 metros. Los dos lados interiores de la L no están rotulados. ¿Cuál es su área, en metros cuadrados? Opciones: A: 23; B: 32; C: 45; D: 63."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 28. An L-shaped playground has these labeled outside edges: top 3 meters, left 7 meters, right 4 meters, and bottom 9 meters. The two inside edges of the L are not labeled. What is its area, in square meters? Choices: A: 23; B: 32; C: 45; D: 63."
+        ],
+        "es": [
+          "Pregunta 28. Un parque en forma de L tiene estos lados exteriores rotulados: superior 3 metros, izquierdo 7 metros, derecho 4 metros e inferior 9 metros. Los dos lados interiores de la L no están rotulados. ¿Cuál es su área, en metros cuadrados? Opciones: A: 23; B: 32; C: 45; D: 63."
+        ]
       }
     },
     "nysed-2025-g3-mc-q29": {

@@ -1,0 +1,934 @@
+{
+  "policyVersion": "nysed-image-finishing-1",
+  "images": {
+    "/vine-app/nysed/ela/2016/grade-3/en/q03.webp": {
+      "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+      "inputSize": [
+        1195,
+        628
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        307
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-6/en/q06.webp": {
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "inputSize": [
+        1196,
+        809
+      ],
+      "crop": [
+        0,
+        0,
+        1196,
+        446
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-6/en/q07.webp": {
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "inputSize": [
+        1171,
+        1453
+      ],
+      "crop": [
+        0,
+        0,
+        1171,
+        418
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-6/en/q24.webp": {
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "inputSize": [
+        1195,
+        634
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        515
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-6/en/q28.webp": {
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "inputSize": [
+        1150,
+        1453
+      ],
+      "crop": [
+        0,
+        0,
+        1150,
+        305
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-6/en/q35.webp": {
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "inputSize": [
+        1187,
+        696
+      ],
+      "crop": [
+        0,
+        0,
+        1187,
+        306
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-6/en/q42.webp": {
+      "sourcePdfSha256": "e0a127a119c987b11c3d6c9e5178f0b11cbf6f610d7e259b15e72e3282b79d38",
+      "inputSize": [
+        1195,
+        775
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        332
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-7/en/q10.webp": {
+      "sourcePdfSha256": "0401a2a7e7c3171ee1fec5663618967bd169df54cf594e3d8ca43029ea18fabb",
+      "inputSize": [
+        1198,
+        777
+      ],
+      "crop": [
+        0,
+        0,
+        1198,
+        412
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-7/en/q12.webp": {
+      "sourcePdfSha256": "0401a2a7e7c3171ee1fec5663618967bd169df54cf594e3d8ca43029ea18fabb",
+      "inputSize": [
+        1195,
+        1131
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        550
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-7/en/q37.webp": {
+      "sourcePdfSha256": "0401a2a7e7c3171ee1fec5663618967bd169df54cf594e3d8ca43029ea18fabb",
+      "inputSize": [
+        1195,
+        938
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        440
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-7/en/q42.webp": {
+      "sourcePdfSha256": "0401a2a7e7c3171ee1fec5663618967bd169df54cf594e3d8ca43029ea18fabb",
+      "inputSize": [
+        1160,
+        1127
+      ],
+      "crop": [
+        0,
+        0,
+        1160,
+        305
+      ]
+    },
+    "/vine-app/nysed/math/2016/grade-3/en/q22.webp": {
+      "sourcePdfSha256": "a3a5e69e8f5baee262924d36c53f59c9d5d1278bdcebca633845b21fbca493ab",
+      "inputSize": [
+        1176,
+        980
+      ],
+      "crop": [
+        0,
+        0,
+        1176,
+        397
+      ]
+    },
+    "/vine-app/nysed/math/2016/grade-6/en/q13.webp": {
+      "sourcePdfSha256": "f58e644f4ba3e7614bf40ab5f3c527f66cd9e66986be53afa14d0ad8b0ac66c8",
+      "inputSize": [
+        1204,
+        1103
+      ],
+      "crop": [
+        0,
+        0,
+        1204,
+        388
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-3/en/q06.webp": {
+      "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+      "inputSize": [
+        1195,
+        690
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        310
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-3/en/q15.webp": {
+      "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+      "inputSize": [
+        1196,
+        801
+      ],
+      "crop": [
+        0,
+        0,
+        1196,
+        434
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-3/en/q18.webp": {
+      "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+      "inputSize": [
+        1160,
+        802
+      ],
+      "crop": [
+        0,
+        0,
+        1160,
+        306
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-3/en/q31.webp": {
+      "sourcePdfSha256": "f3473abbaf5a2bab89c04f26a54bd33cb7b24450d9c4f12d86367c536818c471",
+      "inputSize": [
+        1195,
+        713
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        307
+      ]
+    },
+    "/vine-app/nysed/ela/2016/grade-5/en/q03.webp": {
+      "sourcePdfSha256": "1ab84bda55804d949c3e78ac4ae012d7f0d3e71f2acf3a4bd1f12d9ebeb45fbf",
+      "inputSize": [
+        1195,
+        798
+      ],
+      "crop": [
+        0,
+        0,
+        1195,
+        417
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q14.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        603
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        576
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q15.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        436
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        409
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q16.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        330
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        303
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q17.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        386
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        359
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q18.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        636
+      ],
+      "crop": [
+        21,
+        0,
+        1087,
+        636
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q19.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        456
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        429
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q20.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        424
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        397
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q21.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        320
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        293
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q22.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        1032
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        1005
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q23.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        330
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        303
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q24.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        356
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        329
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q25.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        1066
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        1039
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q26.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        707
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        680
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q27.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        464
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        437
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-6/en/q28.webp": {
+      "sourcePdfSha256": "7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6",
+      "inputSize": [
+        1108,
+        305
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        278
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-7/en/q21.webp": {
+      "sourcePdfSha256": "b0aa156031c76884c8a381ea69a0c6ff00e0bed04f67a387c1c8541e657f9a8a",
+      "inputSize": [
+        1108,
+        538
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        511
+      ],
+      "clearRects": [
+        [
+          100,
+          0,
+          200,
+          20
+        ]
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q29.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        1065
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        1038
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q30.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        353
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        326
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q35.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        406
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        379
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q36.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        456
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        429
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q38.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        421
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        394
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q42.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        349
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        322
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q45.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        1110
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        1083
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q46.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        414
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        387
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q47.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        1042
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        1015
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q49.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        954
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        927
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q53.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        436
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        409
+      ]
+    },
+    "/vine-app/nysed/math/2015/grade-8/en/q54.webp": {
+      "sourcePdfSha256": "0f67f014cfc2faf014ee6238934a1557f02960d67f6060941e86806bd333942b",
+      "inputSize": [
+        1108,
+        383
+      ],
+      "crop": [
+        0,
+        0,
+        1108,
+        356
+      ]
+    },
+    "/vine-app/nysed/ela/2013/grade-3/en/passage-1-6.webp": {
+      "sourcePdfSha256": "e4e50659dbad011e1baafece07d3393e15b1225775069bd29b92d9e492a65e41",
+      "inputSize": [
+        1088,
+        1707
+      ],
+      "crop": [
+        0,
+        105,
+        1088,
+        1707
+      ]
+    },
+    "/vine-app/nysed/ela/2013/grade-4/en/passage-1-5.webp": {
+      "sourcePdfSha256": "5155bd2172eb921376855d51a3a8f3d7bcb045ffa13d97ee55a7746cb9c85774",
+      "inputSize": [
+        1085,
+        3130
+      ],
+      "crop": [
+        0,
+        105,
+        1085,
+        3130
+      ]
+    },
+    "/vine-app/nysed/ela/2013/grade-5/en/passage-1-6.webp": {
+      "sourcePdfSha256": "656e83cc8e0d59fb17ef905519f4206a6d589e38e03d603c2ba2bb73cf48be05",
+      "inputSize": [
+        1098,
+        2328
+      ],
+      "crop": [
+        0,
+        105,
+        1098,
+        2328
+      ]
+    },
+    "/vine-app/nysed/ela/2013/grade-7/en/passage-1-7.webp": {
+      "sourcePdfSha256": "7d9140bd761519e9b6ced09ffc3d2ddebc2391fe3cdafe5b9fa8ab57b29eae7b",
+      "inputSize": [
+        1118,
+        2762
+      ],
+      "crop": [
+        0,
+        105,
+        1118,
+        2762
+      ]
+    },
+    "/vine-app/nysed/ela/2013/grade-8/en/passage-1-7.webp": {
+      "sourcePdfSha256": "b1684db0e405ae878368207509d68a3b17413385519ba702a8f6dd67a4dad7c8",
+      "inputSize": [
+        1082,
+        2814
+      ],
+      "crop": [
+        0,
+        105,
+        1082,
+        2814
+      ]
+    },
+    "/vine-app/nysed/ela/2013/grade-6/en/passage-1-5.webp": {
+      "sourcePdfSha256": "154db498faaadf8d5165bbc4e6e184abc6c98e07447902fd6cd0693c66554858",
+      "inputSize": [
+        1111,
+        2704
+      ],
+      "crop": [
+        0,
+        105,
+        1111,
+        2704
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-3/en/passage-5-9.webp": {
+      "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
+      "inputSize": [
+        1109,
+        3357
+      ],
+      "crop": [
+        0,
+        105,
+        1109,
+        3357
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-3/en/passage-1-4.webp": {
+      "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
+      "inputSize": [
+        1104,
+        2743
+      ],
+      "crop": [
+        0,
+        105,
+        1104,
+        2743
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-3/en/passage-10-16.webp": {
+      "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
+      "inputSize": [
+        1090,
+        4050
+      ],
+      "crop": [
+        0,
+        105,
+        1090,
+        4050
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-4/en/passage-6-11.webp": {
+      "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
+      "inputSize": [
+        1083,
+        3073
+      ],
+      "crop": [
+        0,
+        105,
+        1083,
+        3073
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-4/en/passage-1-5.webp": {
+      "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
+      "inputSize": [
+        1094,
+        2799
+      ],
+      "crop": [
+        0,
+        105,
+        1094,
+        2799
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-4/en/passage-12-17.webp": {
+      "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
+      "inputSize": [
+        1112,
+        2777
+      ],
+      "crop": [
+        0,
+        105,
+        1112,
+        2777
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-5/en/passage-8-14.webp": {
+      "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
+      "inputSize": [
+        1098,
+        2176
+      ],
+      "crop": [
+        0,
+        105,
+        1098,
+        2176
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-5/en/passage-15-21.webp": {
+      "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
+      "inputSize": [
+        1102,
+        2873
+      ],
+      "crop": [
+        0,
+        105,
+        1102,
+        2873
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-5/en/passage-1-7.webp": {
+      "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
+      "inputSize": [
+        1095,
+        2987
+      ],
+      "crop": [
+        0,
+        105,
+        1095,
+        2987
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-7/en/passage-8-12.webp": {
+      "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
+      "inputSize": [
+        1100,
+        1878
+      ],
+      "crop": [
+        0,
+        105,
+        1100,
+        1878
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-7/en/passage-13-19.webp": {
+      "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
+      "inputSize": [
+        1119,
+        2569
+      ],
+      "crop": [
+        0,
+        105,
+        1119,
+        2569
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-7/en/passage-1-7.webp": {
+      "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
+      "inputSize": [
+        1134,
+        2903
+      ],
+      "crop": [
+        0,
+        105,
+        1134,
+        2903
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-8/en/passage-8-14.webp": {
+      "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
+      "inputSize": [
+        1113,
+        3074
+      ],
+      "crop": [
+        0,
+        105,
+        1113,
+        3074
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-8/en/passage-15-21.webp": {
+      "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
+      "inputSize": [
+        1098,
+        4151
+      ],
+      "crop": [
+        0,
+        105,
+        1098,
+        4151
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-8/en/passage-1-7.webp": {
+      "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
+      "inputSize": [
+        1115,
+        3518
+      ],
+      "crop": [
+        0,
+        105,
+        1115,
+        3518
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-6/en/passage-1-6.webp": {
+      "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
+      "inputSize": [
+        1116,
+        1465
+      ],
+      "crop": [
+        0,
+        105,
+        1116,
+        1465
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-6/en/passage-7-13.webp": {
+      "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
+      "inputSize": [
+        1098,
+        2549
+      ],
+      "crop": [
+        0,
+        105,
+        1098,
+        2549
+      ]
+    },
+    "/vine-app/nysed/ela/2014/grade-6/en/passage-14-19.webp": {
+      "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
+      "inputSize": [
+        1089,
+        2009
+      ],
+      "crop": [
+        0,
+        105,
+        1089,
+        2009
+      ]
+    },
+    "/vine-app/nysed/ela/2023/grade-7/en/passage-22-26.webp": {
+      "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
+      "inputSize": [
+        990,
+        2378
+      ],
+      "gap": [
+        1093,
+        32
+      ]
+    }
+  }
+}

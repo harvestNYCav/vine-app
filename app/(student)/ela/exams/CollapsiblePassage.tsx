@@ -37,7 +37,7 @@ export default function CollapsiblePassage({
       </summary>
 
       <div className={`border-t border-blue-200 bg-white ${compact ? 'p-2.5' : 'p-3'}`}>
-        {/\/nysed\/ela\/201[3-5]\//.test(passage.src) && (
+        {/\/nysed\/ela\//.test(passage.src) && (
           <p role="note" className="mb-2 rounded-lg bg-blue-50 p-2 text-xs leading-relaxed text-blue-950">
             Original booklet headers may show “XX” or different question numbers. Follow the
             question numbers in Vine; line and paragraph references still match this passage.

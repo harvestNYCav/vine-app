@@ -49,20 +49,11 @@
     "nysed-2015-g6-mc-q3": {
       "inputHash": "f498f8721bbb7435d1fc9f470177921fba0d9e4efa55968e78c0349b0a3f67dd",
       "description": {
-        "en": "Question 3. A rectangular prism is drawn as a tall box whose height is greater than the side lengths of its rectangular base. Hidden back and bottom edges are dashed. Which figure represents the net of the rectangular prism? Choices: A: A horizontal strip of four tall rectangles with alternating narrow and wide widths; two congruent small base rectangles are attached above and below the same narrow rectangle in the strip. B: A horizontal strip made of one narrow tall rectangle between two wide tall rectangles; congruent narrow rectangles extend above and below the central rectangle, forming a vertical column. C: A horizontal strip of four short rectangles with alternating wide and narrow widths; two congruent tall rectangles are attached above and below the same narrow rectangle in the strip. D: A cross made from a small central rectangle, tall narrow rectangles directly above and below it, and short wide rectangles directly to its left and right."
+        "en": "Question 3. A rectangular prism is drawn as a tall box whose height is greater than the side lengths of its rectangular base. Hidden back and bottom edges are dashed. Which figure represents the net of the rectangular prism? Choices: A: A horizontal strip of four tall rectangles with alternating narrow and wide widths; two congruent small base rectangles are attached above and below the same narrow rectangle in the strip. B: A horizontal strip made of one narrow tall rectangle between two wide tall rectangles; congruent narrow rectangles extend above and below the central rectangle, forming a vertical column. C: A horizontal strip of four congruent short rectangles; two congruent tall rectangles are attached above and below the third rectangle in the strip. D: A cross with three congruent small rectangles in a horizontal row and tall rectangles directly above and below the middle rectangle."
       },
       "requiredSourceTokens": {
         "en": [
-          "four tall rectangles",
-          "two congruent small base rectangles",
-          "one narrow tall rectangle between two wide tall rectangles",
-          "four short rectangles",
-          "two congruent tall rectangles",
-          "small central rectangle",
-          "A: A horizontal strip of four tall rectangles with alternating narrow and wide widths; two congruent small base rectangles are attached above and below the same narrow rectangle in the strip",
-          "B: A horizontal strip made of one narrow tall rectangle between two wide tall rectangles; congruent narrow rectangles extend above and below the central rectangle, forming a vertical column",
-          "C: A horizontal strip of four short rectangles with alternating wide and narrow widths; two congruent tall rectangles are attached above and below the same narrow rectangle in the strip",
-          "D: A cross made from a small central rectangle, tall narrow rectangles directly above and below it, and short wide rectangles directly to its left and right"
+          "Question 3. A rectangular prism is drawn as a tall box whose height is greater than the side lengths of its rectangular base. Hidden back and bottom edges are dashed. Which figure represents the net of the rectangular prism? Choices: A: A horizontal strip of four tall rectangles with alternating narrow and wide widths; two congruent small base rectangles are attached above and below the same narrow rectangle in the strip. B: A horizontal strip made of one narrow tall rectangle between two wide tall rectangles; congruent narrow rectangles extend above and below the central rectangle, forming a vertical column. C: A horizontal strip of four congruent short rectangles; two congruent tall rectangles are attached above and below the third rectangle in the strip. D: A cross with three congruent small rectangles in a horizontal row and tall rectangles directly above and below the middle rectangle."
         ]
       }
     },
@@ -282,7 +273,7 @@
       }
     },
     "nysed-2015-g6-mc-q14": {
-      "inputHash": "9378585c7df74d6ad922bc246d283ccba7e5dc1364b07820997e6f44f829588a",
+      "inputHash": "6d2139b9cc83030aeea5ea0c54ef451fd9ad9f36cdb2e5a95851fa8bdd64ed76",
       "description": {
         "en": "Question 14. Madison and Pedro each created a number pattern that began with the number 0. Madison used the rule “Add 4.” Pedro used the rule “Add 12.” Which statement is true about each corresponding pair of numbers in the two patterns? Choices: A: Each number in Pedro’s pattern is 8 less than the corresponding number in Madison’s pattern. B: Each number in Pedro’s pattern is 8 more than the corresponding number in Madison’s pattern. C: Each number in Pedro’s pattern is 3 times less than the corresponding number in Madison’s pattern. D: Each number in Pedro’s pattern is 3 times more than the corresponding number in Madison’s pattern."
       },
@@ -303,7 +294,7 @@
       }
     },
     "nysed-2015-g6-mc-q15": {
-      "inputHash": "ddd65a71668b4efb54a2f64091c12f5759e41504bdab7980ff809abb6a321251",
+      "inputHash": "1d8baa0add94be2ea95fd978c6a6095e511714366ed3b31c73227803b225100c",
       "description": {
         "en": "Question 15. Kelly saves $5 every week. Which expression represents the amount of money, in dollars, Kelly will save in w weeks? Choices: A: 5 + w. B: 5 − w. C: 5w. D: 5/w."
       },
@@ -323,7 +314,7 @@
       }
     },
     "nysed-2015-g6-mc-q16": {
-      "inputHash": "d1341b8e724328d2bf2408e5a9ed88969eaab46748f242e654900e9f765f6d9f",
+      "inputHash": "b6519479e17b0259254cb5c13e9a32a271de0d52b3ddcc91a36e49346aa5901e",
       "description": {
         "en": "Question 16. What is the greatest common factor of 56 and 92? Choices: A: 2. B: 4. C: 7. D: 8."
       },
@@ -343,7 +334,7 @@
       }
     },
     "nysed-2015-g6-mc-q17": {
-      "inputHash": "54feaa7b8fd1e043341e04c5389a59aa0d2d50729636a60c7ff000a4863ddefd",
+      "inputHash": "d50e6719a4144567fca87802ee4adc80f12716b62ab9466d98620e79dcaf6b83",
       "description": {
         "en": "Question 17. A museum has an aquarium in the shape of a right rectangular prism that is 22.9 meters long, 7.5 meters wide, and 4.6 meters high. What is the volume, rounded to the nearest cubic meter, of the aquarium? Choices: A: 280. B: 623. C: 790. D: 1,288."
       },
@@ -364,7 +355,7 @@
       }
     },
     "nysed-2015-g6-mc-q18": {
-      "inputHash": "4cfc7d3e3755be73e0c64b139afec3dd9bc57a56da83a4e9d22ad887205a6032",
+      "inputHash": "e4b2b77cd53b49a30a41ffdb332e4b9f1dbbe9858edaa1bee61acc0fd33d4a1e",
       "description": {
         "en": "Question 18. The right rectangular prism described below is made of equal-sized cubes. The side length of each cube is 2 1/2 inches. The prism is 5 cubes wide, 4 cubes high, and 2 cubes deep, for a total arrangement of 5 by 4 by 2 cubes. What is the volume, in cubic inches, of the right rectangular prism? Choices: A: 50. B: 100. C: 250. D: 625."
       },
@@ -388,7 +379,7 @@
       }
     },
     "nysed-2015-g6-mc-q19": {
-      "inputHash": "6645640651c33c6bbf8550cd487ae063afa75013206bdf95ad8c6144c5364fd5",
+      "inputHash": "51f81ac2e811ffad93bcb7635a573372b1fb4bf093a4170ae2d3a9d7096583dd",
       "description": {
         "en": "Question 19. The water level in an ocean bay changes at an average rate of 3 meters per hour. At this rate, how many hours would it take for the water level to change 12 meters? Choices: A: 1/4. B: 1/3. C: 4. D: 36."
       },
@@ -408,7 +399,7 @@
       }
     },
     "nysed-2015-g6-mc-q20": {
-      "inputHash": "fecbc530c0522fcf9d9ce60ec5aab15cdb1eeccfc3f9cb34eb8b3cf7564a1735",
+      "inputHash": "e2153f964a302a092b4afcb1f48d006642a79789a98f78a3c0f87959412a346a",
       "description": {
         "en": "Question 20. A company paid $48 for 2 cases of printer paper. Each case contained 12 packages of paper. Next month the company’s office manager needs to order 180 packages of the same paper. If the price per package does not change, what would be the total cost of next month’s order? Choices: A: $90. B: $360. C: $720. D: $1,140."
       },
@@ -430,7 +421,7 @@
       }
     },
     "nysed-2015-g6-mc-q21": {
-      "inputHash": "f8bdc423cdd4e85f047c0ddf665b8886e0bb0eb04eb34a7dbe082070a8f029d6",
+      "inputHash": "c468d35ead8345ab807ffdc3c7f9f6cc222c237c96c76c200dd0dde6515018ad",
       "description": {
         "en": "Question 21. Which two expressions are equivalent for any value of y? Choices: A: 3(3y + 3) and 6y + 6. B: 3(3y + 3) and 9y + 6. C: 9(y + 3) and 12 + 9y. D: 9(y + 3) and 27 + 9y."
       },
@@ -453,7 +444,7 @@
       }
     },
     "nysed-2015-g6-mc-q22": {
-      "inputHash": "92c026282d0d0216ba1fc300f373685562b102f8c7b45c5bca79529df6b8fe0e",
+      "inputHash": "9fa8c433866900cc94c7fe1e49786ae585ddf7d2771deb2b6cbee9467b367329",
       "description": {
         "en": "Question 22. There are five houses on Maple Street and five houses on Oak Street, arranged from left to right. The first house on Maple Street is numbered 6. Each house number on Maple Street is six more than the house number to its left. The first house on Oak Street is numbered 4. Each house number on Oak Street is eight more than the house number to its left. How much greater is the house number of the last house on Oak Street than the house number of the last house on Maple Street? Choices: A: 2. B: 6. C: 8. D: 10."
       },
@@ -475,7 +466,7 @@
       }
     },
     "nysed-2015-g6-mc-q23": {
-      "inputHash": "38bf89ac1845ee48467987cf997a91072a81df273ddae4fe5d64a1531ced3c04",
+      "inputHash": "c44b3c11a6f5a58e0f4e29151934819987934b61e66ca9ddfe569cfacffb8bf2",
       "description": {
         "en": "Question 23. Which equation has the solution x = 2? Choices: A: 2x − 3 = 19. B: 3x + 2 = 8. C: 4x − 4 = −4. D: 5x + 1 = 10."
       },
@@ -494,7 +485,7 @@
       }
     },
     "nysed-2015-g6-mc-q24": {
-      "inputHash": "34594b93ea61fc7121aece5b8f5c6f03a03d5d06550d20fcd100136a1f503c7d",
+      "inputHash": "722576764afc06d4b23e76850a1a2e3132e41647e643defc8d992b2f6b357369",
       "description": {
         "en": "Question 24. At a concert, 20% of the audience members were teenagers. If the number of teenagers at the concert was 360, what was the total number of audience members? Choices: A: 432. B: 450. C: 1,800. D: 7,200."
       },
@@ -514,7 +505,7 @@
       }
     },
     "nysed-2015-g6-mc-q25": {
-      "inputHash": "00d6d04e4d2242d714032cc163f05ec609fb6656b0ed9d73e3c71ef8d0308fb9",
+      "inputHash": "056e2705a335f4caa4a368dfa1f22c2e496077ece529e1a34659d6c9fddd0c06",
       "description": {
         "en": "Question 25. The net below represents a three-dimensional object. The net consists of three rectangles arranged vertically in a single strip. A triangle is attached to the left side of the middle rectangle, and a congruent triangle is attached to its right side. Dashed fold lines separate the middle rectangle from the rectangles above and below it and from the two triangles. Which three-dimensional object can be formed from the net? Choices: A: A square pyramid with one quadrilateral base and four triangular faces meeting at one apex. B: A triangular prism with two parallel triangular bases joined by three rectangular faces. C: A rectangular prism with six rectangular faces. D: A triangular pyramid with four triangular faces."
       },
@@ -534,7 +525,7 @@
       }
     },
     "nysed-2015-g6-mc-q26": {
-      "inputHash": "c7da0735bbd6665382d6ff45f04194eddf34105fb69e0267b8c0efcfbaba7c2b",
+      "inputHash": "1e79fdcb260de66b488eb67de897390b75d7b60c21487624fe7e11c8b52e4fb2",
       "description": {
         "en": "Question 26. The trapezoid below has an area of 21.66 square inches. Its horizontal top base is 4.6 in. long. Perpendicular dashed segments from both endpoints of the top base to the bottom base show a height of 3.8 in. These segments form a central unshaded rectangle. The bottom base extends 1.1 in. beyond the rectangle on each side, forming two shaded right-triangular sections. The diagram is not drawn to scale. What is the total area of the shaded sections of the trapezoid? Choices: A: 2.09 square inches B: 4.18 square inches C: 4.86 square inches D: 8.74 square inches"
       },
@@ -556,7 +547,7 @@
       }
     },
     "nysed-2015-g6-mc-q27": {
-      "inputHash": "1cf6ba783e1892d1d4de296301dba8512ea1d3491686d432e49704a6f3451940",
+      "inputHash": "3b842a10788e81a03bce03f058cf3375dd81ca9e653a50cec852d0972676db64",
       "description": {
         "en": "Question 27. Which expression is equivalent to the expression below? g + g + g + g + g + g Choices: A: 6 + g B: g⁶ C: 6g D: g/6"
       },
@@ -575,7 +566,7 @@
       }
     },
     "nysed-2015-g6-mc-q28": {
-      "inputHash": "756c9260cc52690406034eafbab8112274ac7a36c45ecce18746ea75f996dc89",
+      "inputHash": "a98d725415149696d8fe4cdf609db9e62c4c8bcf210c63533dc5774ac2838447",
       "description": {
         "en": "Question 28. Keith wants to plot −8 and −9 on a number line. Which statement is true? Choices: A: Keith should plot −8 to the left of −9 because −8 < −9. B: Keith should plot −8 to the left of −9 because −8 > −9. C: Keith should plot −9 to the left of −8 because −9 < −8. D: Keith should plot −9 to the left of −8 because −9 > −8."
       },

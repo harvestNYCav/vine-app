@@ -59,7 +59,7 @@
     },
     "nysed-2013-g5-mc-q3": {
       "rawRationaleSha256": "54e4bb0a94a37002bdfe86a8966076ff4f6d63a1d16ab19c702ee80295604ea7",
-      "text": "1/12 - The student correctly added the unlike fractions and subtracted their sum from 1: 3/4 + 1/6 = 9/12 + 2/12 = 11/12, and 1 - 11/12 = 1/12. Therefore Mr. Morris put up 1/12 of the fence on Wednesday.",
+      "text": "1/12 - The student correctly added the unlike fractions and subtracted their sum from 1: 3/4 + 1/6 = 9/12 + 2/12 = 11/12, and 1 − 11/12 = 1/12. Therefore Mr. Morris put up 1/12 of the fence on Wednesday.",
       "source": "official-nysed"
     },
     "nysed-2013-g5-mc-q4": {
@@ -74,7 +74,7 @@
     },
     "nysed-2013-g6-mc-q14": {
       "rawRationaleSha256": "37cdaab064ec91e0b2a819d08ef4880d56d1e7a402fad175b3f5033518a3b60b",
-      "text": "“40.5 cm²” The trapezoid can be decomposed into a 6-by-4.5 rectangle and two congruent triangles. The difference between the bases is 9 - 4.5 = 4.5, so each triangle has base 2.25. The two triangles have combined area 2(1/2 × 2.25 × 6) = 13.5 cm², and the rectangle has area 6 × 4.5 = 27 cm². Thus the total area is 13.5 + 27 = 40.5 cm².",
+      "text": "“40.5 cm²” The trapezoid can be decomposed into a 6-by-4.5 rectangle and two congruent triangles. The difference between the bases is 9 − 4.5 = 4.5, so each triangle has base 2.25. The two triangles have combined area 2(1/2 × 2.25 × 6) = 13.5 cm², and the rectangle has area 6 × 4.5 = 27 cm². Thus the total area is 13.5 + 27 = 40.5 cm².",
       "source": "official-nysed-corrected"
     },
     "nysed-2013-g6-mc-q2": {
@@ -89,7 +89,7 @@
     },
     "nysed-2013-g7-mc-q2": {
       "rawRationaleSha256": "0cfbc6e00f96787fba68fca35e66ff97f4bd59f19ac9f73b4dc9ed665ad7148f",
-      "text": "“9/20” The student correctly evaluated the expression. The additive inverses 3/8 and -3/8 cancel, leaving -4/5 + 5/4 = -16/20 + 25/20 = 9/20.",
+      "text": "“9/20” The student correctly evaluated the expression. The additive inverses 3/8 and −3/8 cancel, leaving −4/5 + 5/4 = −16/20 + 25/20 = 9/20.",
       "source": "official-nysed"
     },
     "nysed-2013-g7-mc-q5": {
@@ -135,7 +135,7 @@
     "nysed-2014-g3-mc-q14": {
       "rawRationaleSha256": "76e3bf7b04be21f9cf97f6e28e42b0878327c6942d58840ae702e9fa251d972f",
       "text": "J and M are 3/8 apart. The number line is divided into eighths, and there are three equal intervals from J to M. Three lengths of 1/8 add to 3/8.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g3-mc-q26": {
       "rawRationaleSha256": "bf78056b77413c4944a9366068085e8842b28d345d4709b1089ddd8018dccf36",
@@ -200,7 +200,7 @@
     "nysed-2014-g4-mc-q42": {
       "rawRationaleSha256": "fec304206d37661545881728c99007cd22f7d199b927ce362e11248fa665f039",
       "text": "5/6 is greater than 3/4. Rewrite both fractions with denominator 12: 5/6 = 10/12 and 3/4 = 9/12. Since 10/12 > 9/12, 5/6 > 3/4.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g4-mc-q49": {
       "rawRationaleSha256": "545115da97eff27057343e7aa32ff81b2100e69f2230a4120ace42695e055870",
@@ -244,7 +244,7 @@
     },
     "nysed-2014-g5-mc-q44": {
       "rawRationaleSha256": "dc3baf492c342e86395e403fe5efeb52019966ffdd60dfdbd074971ea469d56f",
-      "text": "“23” There are 12 inches in 1 foot, so 6 feet 3 inches equals (6 × 12) + 3 = 75 inches. Michele's father is therefore 75 - 52 = 23 inches taller than Michele.",
+      "text": "“23” There are 12 inches in 1 foot, so 6 feet 3 inches equals (6 × 12) + 3 = 75 inches. Michele's father is therefore 75 − 52 = 23 inches taller than Michele.",
       "source": "official-nysed-corrected"
     },
     "nysed-2014-g5-mc-q49": {
@@ -269,7 +269,7 @@
     },
     "nysed-2014-g6-mc-q10": {
       "rawRationaleSha256": "027f363edd1e33212bdf48bf66863422bb1934ee1d9a85b538a503a91aca29b4",
-      "text": "“138” This is the correct value of the expression when c = 5 and d = 4. Substitution and the order of operations give 6(5²) - 5(4) + 8 = 150 - 20 + 8 = 138.",
+      "text": "“138” This is the correct value of the expression when c = 5 and d = 4. Substitution and the order of operations give 6(5²) − 5(4) + 8 = 150 − 20 + 8 = 138.",
       "source": "official-nysed"
     },
     "nysed-2014-g6-mc-q23": {
@@ -304,12 +304,12 @@
     },
     "nysed-2014-g8-mc-q19": {
       "rawRationaleSha256": "0caba1a0863d53bd57970a0ffd3481a027fa4f8cfd854bef559c549d9044ab93",
-      "text": "“y = (2/5)x - 2” This is the correct equation for the graph. Using the points (0, -2) and (5, 0), the slope is (0 - (-2))/(5 - 0) = 2/5, and the graph's y-intercept is -2.",
+      "text": "“y = (2/5)x − 2” This is the correct equation for the graph. Using the points (0, −2) and (5, 0), the slope is (0 − (−2))/(5 − 0) = 2/5, and the graph's y-intercept is −2.",
       "source": "official-nysed"
     },
     "nysed-2014-g8-mc-q25": {
       "rawRationaleSha256": "931de9577bdcfbd32eb7ddc1e2fd8f40979ea2c9545dcbf8dff3e17e282fe954",
-      "text": "“y = -(2/3)x - 1/2” This equation represents a linear function because it has the form y = mx + b, with constant slope -2/3 and y-intercept -1/2.",
+      "text": "“y = −(2/3)x − 1/2” This equation represents a linear function because it has the form y = mx + b, with constant slope −2/3 and y-intercept −1/2.",
       "source": "official-nysed"
     },
     "nysed-2014-g8-mc-q4": {
@@ -319,7 +319,7 @@
     },
     "nysed-2014-g8-mc-q6": {
       "rawRationaleSha256": "c3ac9ff0257e33025aee1e6dfc4088a7f730888e545d9463fac6bd51401de6b7",
-      "text": "“8.17 × 10⁸ miles” The student correctly rewrote 9.1 × 10⁸ as 91 × 10⁷ and subtracted: (91 - 9.3) × 10⁷ = 81.7 × 10⁷ = 8.17 × 10⁸.",
+      "text": "“8.17 × 10⁸ miles” The student correctly rewrote 9.1 × 10⁸ as 91 × 10⁷ and subtracted: (91 − 9.3) × 10⁷ = 81.7 × 10⁷ = 8.17 × 10⁸.",
       "source": "official-nysed"
     },
     "nysed-2014-g8-mc-q7": {
@@ -330,7 +330,7 @@
     "nysed-2014-g5-mc-q10": {
       "rawRationaleSha256": "68f447dc4e76c0b882bb27e1fde276f52b3080ffd3e5f591c72b4f9f9b0cf72c",
       "text": "In 136.25, the 6 is in the ones place, so it represents 6 ones. One-tenth of 6 ones is 6 tenths. Thus the 6 in the other number represents six tenths.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g5-mc-q43": {
       "rawRationaleSha256": "8767b3cb16efc41082decd493cfce1d8f510bda29a31673cdc98e60c53f71c96",
@@ -490,7 +490,7 @@
     "nysed-2013-g3-mc-q2": {
       "rawRationaleSha256": "adf3a8e2a9c8df8392a5a70d66d7bb9202f47ce4eb303628787932bb536bd3ac",
       "text": "□ × 4 = 36 models an unknown factor multiplied by 4 to make 36. Dividing 36 by 4 finds that factor: 36 ÷ 4 = 9, and 9 × 4 = 36.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g3-mc-q6": {
       "rawRationaleSha256": "10ca912a457e43bb88359ab7d9a6846f09ba26514e60c1de5e7d362be85ca332",
@@ -499,18 +499,18 @@
     },
     "nysed-2014-g3-mc-q29": {
       "rawRationaleSha256": "b7a458d701f532afaed5478713a365cde6247af321fd475c6de4108785e749d1",
-      "text": "“42”; This is the correct result when a side length 6 feet is multiplied by a side length 7 feet to get an area of 42 square feet. The student may have understood that the two side lengths of the rectangular bathroom floor should be multiplied to find the area. The student who selects this response understands to multiply side lengths to determine rectangular area. 6 × 7 = 42 square feet.",
+      "text": "“42”; This is the correct result when a side length 6 feet is multiplied by a side length 7 feet to get an area of 42 square feet. The student may have understood that the two side lengths of the rectangular bathroom floor should be multiplied to find the area. The student who selects this response understands how to multiply side lengths to determine rectangular area: 6 × 7 = 42 square feet.",
       "source": "official-nysed-corrected"
     },
     "nysed-2014-g4-mc-q44": {
       "rawRationaleSha256": "c21fe176a063f936922f7e8f9e9a0b9d9836c77a7971575e859b2fadbc23833e",
       "text": "The two printer cartridges and printer cost 2 × $28 + $85 = $141. Subtract that cost from the amount paid: $150 − $141 = $9 in change.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g4-mc-q4": {
       "rawRationaleSha256": "3bbd7c8c05f0986142a56a0fa9e4e328492eefcfce5bf88dea5e475def00cf7a",
       "text": "Each mile is 5,280 feet, so 6 miles is 6 × 5,280 feet. 6 × 5,000 = 30,000 and 6 × 280 = 1,680, so 30,000 + 1,680 = 31,680 feet.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g4-mc-q15": {
       "rawRationaleSha256": "248bfe5c1f01915af4be0807058e5a74f1bb4df6faa6ff3e3353045b7d8e4eb8",
@@ -525,7 +525,7 @@
     "nysed-2013-g4-mc-q11": {
       "rawRationaleSha256": "f0f6bfeabf8aba5fba026ddc527e156af9277967ca75558f3121c8086fe85d8a",
       "text": "January’s distance is 825 ÷ 3 = 275 miles. February’s distance is 4 times January’s, so 4 × 275 = 1,100 miles.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g5-mc-q14": {
       "rawRationaleSha256": "f4b068ef2dc743c89e73fdd95f08171fc80f7a355f6d90810b2c849a308778d9",
@@ -540,22 +540,22 @@
     "nysed-2014-g6-mc-q5": {
       "rawRationaleSha256": "97339065f9da2b368cf9ed5b36dd35474736edd78442d405999b9d813763794c",
       "text": "Substitute 7 for m in 4m + 8: 4(7) + 8 = 28 + 8 = 36. This equals the other side of the equation, so m = 7 makes the equation true.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g6-mc-q12": {
       "rawRationaleSha256": "e2836ea7418a232c7183c26febf371c7fdad10888fe4e5ff4cb877ef4cdbaa98",
       "text": "Felicity babysat 2 × 10 = 20 hours in all. Divide her total earnings by the hours worked: $180 ÷ 20 = $9 per hour.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g6-mc-q20": {
       "rawRationaleSha256": "dfc9e5fc0c390700d06c90a108a5318002376918caa85bf87d1f46aa07286810",
       "text": "Machine S is cleaned after 12, 24, 36, … weeks. Machine T is cleaned after 8, 16, 24, 32, … weeks. The first positive number in both lists is 24: 12 × 2 = 24 and 8 × 3 = 24. Both machines will next be cleaned in the same week after 24 weeks.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g6-mc-q48": {
       "rawRationaleSha256": "18d2e6c37b02b1c1b842c8b74d4a6ab042989a20808f9d594c1aff138fd2e5c6",
       "text": "For each point, x is twice y. At F(0, 0), 2 × 0 = 0. At G(4, 2), 2 × 2 = 4. At H(6, 3), 2 × 3 = 6. Therefore the x-coordinate is 2 times the y-coordinate.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g6-mc-q47": {
       "rawRationaleSha256": "542b0c17be6620c79f7ee4ec520799641a8f69e9fffcb4b16144c6f5c6ade9dc",
@@ -579,8 +579,8 @@
     },
     "nysed-2014-g6-mc-q49": {
       "rawRationaleSha256": "2ac4c677daff5e78b5fc8442d65b1e1be7d5dfb9bf462a753856f3adce258077",
-      "text": "The vertical side from (4, 3) to (4, −4) is 3 − (−4) = 7 units long. The horizontal side from (4, 3) to (−2, 3) is 4 − (−2) = 6 units long. The rectangle is 7 units by 6 units.",
-      "source": "official-nysed-corrected"
+      "text": "The vertical side from (4, 3) to (4, −4) is |3| + |−4| = 7 units long. The horizontal side from (4, 3) to (−2, 3) is |4| + |−2| = 6 units long. The rectangle is 7 units by 6 units.",
+      "source": "vine-authored"
     },
     "nysed-2014-g6-mc-q11": {
       "rawRationaleSha256": "d4e692c0940d375a3d462937506eb590089eac497693e2c9f6c775e1e5b9fce8",
@@ -604,73 +604,73 @@
     },
     "nysed-2014-g6-mc-q39": {
       "rawRationaleSha256": "f999b46b3ede4e49c03b26b528269fde03c84ac24ac29d01b8f4aed3c0fb64a6",
-      "text": "“10x −2y ”; This response represents an expression that is equivalent to the given expression. The student may have used a method such as the one below. 8x −2y + x + x = (8x + x + x)−2y = 10x −2y. A student who selects this response understands how to apply the properties of operations to generate equivalent expressions.",
+      "text": "“10x − 2y”; This response represents an expression that is equivalent to the given expression. The student may have used a method such as the one below. 8x − 2y + x + x = (8x + x + x) − 2y = 10x − 2y. A student who selects this response understands how to apply the properties of operations to generate equivalent expressions.",
       "source": "official-nysed-corrected"
     },
     "nysed-2013-g7-mc-q1": {
       "rawRationaleSha256": "cdcb36f9445f3eb074b0b6f7606ab4a0d64e671c3334541c362cfe9cdc06a001",
       "text": "Three of the six equally likely faces are even: 2, 4, and 6. The probability of an even number is 3/6 = 1/2. Over 300 rolls, about (1/2) × 300 = 150 even results are expected. This is an estimate, not a guarantee of exactly 150.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g7-mc-q6": {
       "rawRationaleSha256": "168189b94e790074cac0de0b12278ebf483a78f66ab527395f70e9b9dc2906d7",
       "text": "Add the expressions and combine like terms: (2x − 5y) + (x + y) = (2x + x) + (−5y + y) = 3x − 4y.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g7-mc-q8": {
       "rawRationaleSha256": "54e028ac9c5ac302bf193014d5bb943406a81c1800a9c5e13a6b641f10a58544",
       "text": "The 20% discount is $1,080 × 0.20 = $216, so the discounted price is $1,080 − $216 = $864. Tax on that price is $864 × 0.08 = $69.12. The total is $864 + $69.12 = $933.12.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g7-mc-q9": {
       "rawRationaleSha256": "2551a5e3e16f04635bfb0eaa852565bcc7139c156240b727191fa46864003563",
       "text": "The discount is $40 − $25 = $15. Compare the discount with the original price: 15 ÷ 40 = 0.375. Convert to a percent: 0.375 × 100% = 37.5%.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g7-mc-q10": {
       "rawRationaleSha256": "300fa6dc49483ff5ff22078adf01722290eea9152b723bc8a0ad98be9ac2da47",
-      "text": "Rewrite 0.88x as x − 0.12x. This shows that the amount is 12% less than x: subtract 12% of x from the original amount.",
-      "source": "official-nysed-corrected"
+      "text": "Rewrite 0.88x as x − 0.12x, so the value went down by 0.12x. As a percent, 0.12 = 12/100 = 12%, so this is a 12% decrease, not a 0.12% decrease.",
+      "source": "vine-authored"
     },
     "nysed-2013-g7-mc-q11": {
       "rawRationaleSha256": "1b84b902f1606030828f397b8a2db006e7016ffbdf04941676db46132814d07a",
       "text": "Divide money spent by games played: $18 ÷ 4 = $4.50 per game, and $27 ÷ 6 = $4.50 per game. The constant of proportionality is 4.5.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g7-mc-q12": {
       "rawRationaleSha256": "b36899221fea419a5c03151ed2966acd1fc3c8ba43863bd323e9219992041cb0",
       "text": "Tax is $72.60 × 0.08 = $5.808, or $5.81 rounded to cents. The tip is based on the pretax cost: $72.60 × 0.20 = $14.52. Add the service charge, tax, and tip: $72.60 + $5.81 + $14.52 = $92.93.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g7-mc-q3": {
       "rawRationaleSha256": "54119ecbf8689f7029ed6b9ed86e5d4e02b417a335a241fa8699430377d31ff6",
-      "text": "“4x – 3”; This response represents the correct equivalent expression. (7x −5)−(3x −2) = 7x −3x −5−(−2) = 4x −3",
+      "text": "“4x − 3”; This response represents the correct equivalent expression. (7x − 5) −(3x − 2) = 7x − 3x − 5 −(− 2) = 4x − 3",
       "source": "official-nysed-corrected"
     },
     "nysed-2014-g7-mc-q14": {
       "rawRationaleSha256": "3abbe1bf7d73f3987746bb2e5bb21da05e5715c9c622719608f3c4832ff8d977",
       "text": "The monthly cost must be less than $60: 0.05t + 30 < 60. Subtract 30 from both sides to get 0.05t < 30. Divide both sides by 0.05 to get t < 600. Heather can send fewer than 600 texts.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g7-mc-q16": {
       "rawRationaleSha256": "0b64c40ec0bb3bf9dba0779353afaed0dc6ae81f3bcaf0f0051e9ec0aaeb2f28",
       "text": "Let x be the price of one sweater. Four sweaters and a $20 skirt cost $160, so 4x + 20 = 160. Subtract 20: 4x = 140. Divide by 4: x = 35. Each sweater costs $35.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g8-mc-q3": {
       "rawRationaleSha256": "2776c0f04ee7f2b138296106af34a782a087d5ceb659b0afbcef3745076ed7bf",
       "text": "Distribute 2 in 2(x − 3) = 2x + 5 to get 2x − 6 = 2x + 5. Subtract 2x from both sides: −6 = 5, which is false. Equivalently, adding 6 gives 0 = 11. No value of x can make the equation true, so there is no solution.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g8-mc-q61": {
       "rawRationaleSha256": "acfe0556ca382dcab38eac363be1116ea69a4643aa1d3d8d9dd2090dd4d5ef94",
       "text": "Divide each count by the total of 75 students, then multiply by 100 to express it as a percent. For example, boys who ate in the cafeteria make up (16/75) × 100% ≈ 21%. Applying this to all entries gives table B, whose grand total is 100%.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g8-mc-q16": {
       "rawRationaleSha256": "4ed8346fa647a15296e8b7cc0c69c1b708a58286dc8608971b8193dc343b00be",
       "text": "Add the two equations, 3x + 4y = −2 and 2x − 4y = −8. The y-terms cancel, leaving 5x = −10, so x = −2. Substitute into the first equation: 3(−2) + 4y = −2, then −6 + 4y = −2, so 4y = 4 and y = 1.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2013-g8-mc-q2": {
       "rawRationaleSha256": "82167cbb147fb701641ff1310ccd4c874c3ba10c2fc1a4385c0dbb3c917d2abd",
@@ -685,12 +685,42 @@
     "nysed-2014-g8-mc-q13": {
       "rawRationaleSha256": "84a94a1c3ea2d193eb8ec689b5981147dcc103901a509710b2cf8c39c0b2defe",
       "text": "The three adjacent angles on straight line G–N–L total 180°, so ∠FNM = 180° − 60° − 47° = 73°. Angles HNK and FNM are vertical angles, so they have equal measures. Therefore ∠HNK = 73°.",
-      "source": "official-nysed-corrected"
+      "source": "vine-authored"
     },
     "nysed-2014-g8-mc-q27": {
       "rawRationaleSha256": "4d74bcc8f8455055612a7adc3d281de28502b05cbde72cf3a9b0ef11c824aacf",
       "text": "“There is a strong positive relationship between the cost of rent and the size of the office space.” This answer correctly describes the relationship that would be conveyed about the given data by the line of best fit. The student may have informally fit a straight line to the data and then observed that this line had a strong positive relationship between the variables. The student who selects this response understands how to informally fit a straight line, for scatter plots that suggest a linear association, and informally assess the model fit by judging the closeness of the data points to the line.",
       "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g3-mc-q3": {
+      "rawRationaleSha256": "3112c95baf1a515d49f0c0603feaff877077046a97f4cf72f9ab6cc5779f644d",
+      "text": "This is the correct result when one part of a whole consisting of two equal-sized parts is shaded. The student may have understood that the denominator meant the whole consisted of two equal-sized parts and the numerator meant that one of those parts was shaded. The student who selects this response understands that a fraction 1/b is the quantity formed by 1 part when a whole is partitioned into b equal parts.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g3-mc-q25": {
+      "rawRationaleSha256": "707e79a60938f9563c1b65623379fef3e34edbd6195515e1c9e586e122414e3d",
+      "text": "“9 × ? = 72”; This is the correct number sentence that can be used to determine 72 ÷ 9. The student may have understood that the unknown factor in the multiplication equation is equal to the quotient of 72 ÷ 9. The student who selects this response understands how to interpret division as an unknown-factor problem.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q27": {
+      "rawRationaleSha256": "3d1127aad7be8f348b1c8ba5bcb94e8d5c81afa4923b7c005e7277ddffd75c10",
+      "text": "“(5 × 8) − 3”; This response correctly represents the given phrase as a numerical expression. The given phrase describes a calculation in which the product of 8 and 5 is found first and 3 is then subtracted from the product. A student who selects this response understands how to write a simple expression that records calculations with numbers.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g5-mc-q32": {
+      "rawRationaleSha256": "6768c82c4fcae11bedada8c27f87ec2cff4baeda99e917a6985c86a0b9d49538",
+      "text": "“rhombus”; This is the correct figure that could match Jim’s description. The student may have known that a rhombus is a quadrilateral with sides of equal length and could have two equal obtuse and two acute equal angles. The student who selects this response understands how to classify two-dimensional figures in a hierarchy based on properties.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q29": {
+      "rawRationaleSha256": "a08103fa8e80f1f9ee27cda1022457400bc0753742bef51d6cad37eae06d80b2",
+      "text": "“n + 3 = 7”; This response represents the correct equation that is true when n = 4; when replacing the variable n with 4, the result is a true statement, 4 + 3 = 7. A student who selects this response understands how to use substitution to determine whether a given number makes an equation true.",
+      "source": "official-nysed"
+    },
+    "nysed-2014-g6-mc-q40": {
+      "rawRationaleSha256": "d17378828a936a005fb6bfc6dc677ccf3464df58655370d1d1d1845de97b2c3b",
+      "text": "“the area of a rectangle with side lengths 1.3 and x”; This phrase is best represented by the given expression. The student may have observed that the area of a rectangle is the product of the side lengths, which are 1.3 and x, leading to the expression 1.3x. A student who selects this response understands how to represent numbers and write expressions in the context of a real-world problem.",
+      "source": "official-nysed"
     }
   }
 }

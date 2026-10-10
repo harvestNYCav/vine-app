@@ -51,7 +51,7 @@
       }
     },
     "nysed-2016-g6-mc-q13": {
-      "inputHash": "884983507734de649d2d9fcfd2e06c394b82801ea87f749919f361dae53a01a0",
+      "inputHash": "b9d934133627512d2693b53d6f31b009c8d0471a4b6a1a13f85e8c3a6e1672ff",
       "description": {
         "en": "Question 13. An art teacher had 2/3 gallon of paint to pour into containers. If he poured 1/8 gallon of paint into each container until he ran out of paint, how many containers had paint in them, including the one that was partially filled? Choices: A: 1. B: 3. C: 5. D: 6."
       },
@@ -144,22 +144,11 @@
     "nysed-2016-g6-mc-q18": {
       "inputHash": "88990783639b4e65ad0f672c275ca96643264553fcf0190a473393b8f6d8a148",
       "description": {
-        "en": "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is between 0 and 1, a little left of halfway. D: N is at −1/2, and M is at 2."
+        "en": "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is between 0 and 1, about one-third of the way from 0 to 1. D: N is at −1/2, and M is at 2."
       },
       "requiredSourceTokens": {
         "en": [
-          "−1/2",
-          "5/2",
-          "−3",
-          "3",
-          "−5/2",
-          "1/2",
-          "−2",
-          "A: M is at −1/2, and N is at 5/2",
-          "B: N is at −5/2, and M is at 1/2",
-          "C: M is at −2, and N is between 0 and 1, a little left of halfway",
-          "D: N is at −1/2, and M is at 2",
-          "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is between 0 and 1, a little left of halfway. D: N is at −1/2, and M is at 2."
+          "Question 18. Point M represents the opposite of −1/2, and point N represents the opposite of 5/2. Which number line correctly shows points M and N? Each horizontal number line increases from left to right, has arrows at both ends, and has integer ticks from −3 through 3. Choices: A: M is at −1/2, and N is at 5/2. B: N is at −5/2, and M is at 1/2. C: M is at −2, and N is between 0 and 1, about one-third of the way from 0 to 1. D: N is at −1/2, and M is at 2."
         ]
       }
     },

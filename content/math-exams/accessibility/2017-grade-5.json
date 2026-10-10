@@ -401,43 +401,15 @@
     "nysed-2017-g5-mc-q15": {
       "inputHash": "68942fdf7f64481c7da25bdc112ba571f927f02fb84ca12e0f45ac36006a54ae",
       "description": {
-        "en": "Question 15. The decimal grids described below are shaded to model an expression. Each grid is a 10-by-10 array of 100 equal squares, so a fully shaded grid represents 1. To the left of a plus sign are two fully shaded grids and a third grid with 23 shaded squares: its leftmost 2 columns are completely shaded, and the top 3 squares of the next column are shaded. To the right of the plus sign are one fully shaded grid and another grid with its leftmost 9 columns completely shaded, for 90 shaded squares. What is the value of the expression modeled by the decimal grids? Choices: A: 3.29 B: 3.32 C: 4.10 D: 4.13",
-        "es": "Pregunta 15. Las siguientes cuadrillas de decimales están sombreadas para modelar una expresión. Hay cinco cuadrillas, cada una dividida en 10 filas y 10 columnas, con 100 celdas en total. De izquierda a derecha: la primera cuadrilla está completamente sombreada; la segunda está completamente sombreada; en la tercera están sombreadas las 2 columnas de la izquierda y las 3 celdas superiores de la columna siguiente, para un total de 23 celdas sombreadas; la cuarta está completamente sombreada; en la quinta están sombreadas las 9 columnas de la izquierda y la columna de la derecha está en blanco. Hay un signo de suma entre la tercera y la cuarta cuadrilla. ¿Cuál es el valor de la expresión que modelan las cuadrillas de decimales? Opciones: A: 3.29 B: 3.32 C: 4.10 D: 4.13"
+        "en": "Question 15. The decimal grids described below are shaded to model an expression. Each grid has 10 rows and 10 columns of equal squares. To the left of a plus sign are two fully shaded grids and a third grid where the leftmost 2 columns are completely shaded, and the top 3 squares of the next column are shaded. To the right of the plus sign are one fully shaded grid and another grid with its leftmost 9 columns completely shaded. What is the value of the expression modeled by the decimal grids? Choices: A: 3.29 B: 3.32 C: 4.10 D: 4.13",
+        "es": "Pregunta 15. Las siguientes cuadrillas de decimales están sombreadas para modelar una expresión. Hay cinco cuadrillas, cada una dividida en 10 filas y 10 columnas. De izquierda a derecha: la primera cuadrilla está completamente sombreada; la segunda está completamente sombreada; en la tercera están sombreadas las 2 columnas de la izquierda y las 3 celdas superiores de la columna siguiente; la cuarta está completamente sombreada; en la quinta están sombreadas las 9 columnas de la izquierda y la columna de la derecha está en blanco. Hay un signo de suma entre la tercera y la cuarta cuadrilla. ¿Cuál es el valor de la expresión que modelan las cuadrillas de decimales? Opciones: A: 3.29 B: 3.32 C: 4.10 D: 4.13"
       },
       "requiredSourceTokens": {
         "en": [
-          "10-by-10",
-          "100",
-          "1",
-          "23",
-          "2",
-          "3",
-          "90",
-          "3.29",
-          "3.32",
-          "4.10",
-          "4.13",
-          "A: 3.29",
-          "B: 3.32",
-          "C: 4.10",
-          "D: 4.13"
+          "Question 15. The decimal grids described below are shaded to model an expression. Each grid has 10 rows and 10 columns of equal squares. To the left of a plus sign are two fully shaded grids and a third grid where the leftmost 2 columns are completely shaded, and the top 3 squares of the next column are shaded. To the right of the plus sign are one fully shaded grid and another grid with its leftmost 9 columns completely shaded. What is the value of the expression modeled by the decimal grids? Choices: A: 3.29 B: 3.32 C: 4.10 D: 4.13"
         ],
         "es": [
-          "cinco cuadrillas",
-          "10 filas",
-          "10 columnas",
-          "100 celdas",
-          "2 columnas",
-          "9 columnas",
-          "3.29",
-          "3.32",
-          "4.10",
-          "4.13",
-          "23 celdas sombreadas",
-          "A: 3.29",
-          "B: 3.32",
-          "C: 4.10",
-          "D: 4.13"
+          "Pregunta 15. Las siguientes cuadrillas de decimales están sombreadas para modelar una expresión. Hay cinco cuadrillas, cada una dividida en 10 filas y 10 columnas. De izquierda a derecha: la primera cuadrilla está completamente sombreada; la segunda está completamente sombreada; en la tercera están sombreadas las 2 columnas de la izquierda y las 3 celdas superiores de la columna siguiente; la cuarta está completamente sombreada; en la quinta están sombreadas las 9 columnas de la izquierda y la columna de la derecha está en blanco. Hay un signo de suma entre la tercera y la cuarta cuadrilla. ¿Cuál es el valor de la expresión que modelan las cuadrillas de decimales? Opciones: A: 3.29 B: 3.32 C: 4.10 D: 4.13"
         ]
       }
     },

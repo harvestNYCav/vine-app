@@ -267,118 +267,62 @@
       }
     },
     "nysed-2015-g8-mc-q29": {
-      "inputHash": "b35fe1551ca8401f3f2ebef1509f43d65d1527b08444e2134229760c5b405e73",
+      "inputHash": "7b12e17ee7895de83281c50be636ae379539b7441175ca3fd9104db5614caf45",
       "description": {
-        "en": "Question 29. During an experiment, the temperature of a substance increased at a constant rate of three degrees Celsius (°C) per hour. Which graph represents this relationship? Each choice is a graph titled “SUBSTANCE TEMPERATURE,” with Time (hours) on the horizontal axis and Temperature (°C) on the vertical axis. Time is marked in 1-hour intervals, and temperature is marked in 1°C intervals beginning at 20°C. Choices: A: An increasing straight ray starts at (0, 20) and passes through (3, 21). B: An increasing straight ray starts at (0, 20) and passes through (1, 21), (2, 22), (3, 23), and (4, 24). C: An increasing straight ray starts at (0, 20) and passes through (1, 22), (2, 24), and (3, 26). D: An increasing straight ray starts at (0, 20) and passes through (1, 23) and (2, 26). Calculators are allowed."
+        "en": "Question 29. During an experiment, the temperature of a substance increased at a constant rate of three degrees Celsius (°C) per hour. Which graph represents this relationship? Each choice is a graph titled “SUBSTANCE TEMPERATURE,” with Time (hours) on the horizontal axis and Temperature (°C) on the vertical axis. Time is marked in 1-hour intervals, and temperature is marked in 1°C intervals beginning at 20°C. Choices: A: An increasing straight ray starts at (0, 20) and passes through (3, 21). B: An increasing straight ray starts at (0, 20) and passes through (1, 21), (2, 22), (3, 23), and (4, 24). C: An increasing straight ray starts at (0, 20) and passes through (1, 22), (2, 24), and (3, 26). D: An increasing straight ray starts at (0, 20) and passes through (1, 23) and (2, 26)."
       },
       "requiredSourceTokens": {
         "en": [
-          "°C",
-          "1°C",
-          "20°C",
-          "(0, 20)",
-          "(3, 21)",
-          "(1, 21)",
-          "(2, 22)",
-          "(3, 23)",
-          "(4, 24)",
-          "(1, 22)",
-          "(2, 24)",
-          "(3, 26)",
-          "(1, 23)",
-          "(2, 26)",
-          "A: An increasing straight ray starts at (0, 20) and passes through (3, 21)",
-          "B: An increasing straight ray starts at (0, 20) and passes through (1, 21), (2, 22), (3, 23), and (4, 24)",
-          "C: An increasing straight ray starts at (0, 20) and passes through (1, 22), (2, 24), and (3, 26)",
-          "D: An increasing straight ray starts at (0, 20) and passes through (1, 23) and (2, 26). Calculators are allowed"
+          "Question 29. During an experiment, the temperature of a substance increased at a constant rate of three degrees Celsius (°C) per hour. Which graph represents this relationship? Each choice is a graph titled “SUBSTANCE TEMPERATURE,” with Time (hours) on the horizontal axis and Temperature (°C) on the vertical axis. Time is marked in 1-hour intervals, and temperature is marked in 1°C intervals beginning at 20°C. Choices: A: An increasing straight ray starts at (0, 20) and passes through (3, 21). B: An increasing straight ray starts at (0, 20) and passes through (1, 21), (2, 22), (3, 23), and (4, 24). C: An increasing straight ray starts at (0, 20) and passes through (1, 22), (2, 24), and (3, 26). D: An increasing straight ray starts at (0, 20) and passes through (1, 23) and (2, 26)."
         ]
       }
     },
     "nysed-2015-g8-mc-q30": {
-      "inputHash": "91e08a5b0ecd05c41b8238a0fac0c9ecd063f4b1e7e570d0e3072766437c0220",
+      "inputHash": "880a3228c09340f7a629f83aa9516924104ad4f2ef2f35ad1cebb4ee09ab1ba5",
       "description": {
-        "en": "Question 30. A cone has a radius of 1.2 inches and a height of 2.9 inches. What is the volume, to the nearest tenth of a cubic inch, of the cone? Calculators are allowed. Choices: A: 3.6. B: 4.4. C: 10.6. D: 13.1."
+        "en": "Question 30. A cone has a radius of 1.2 inches and a height of 2.9 inches. What is the volume, to the nearest tenth of a cubic inch, of the cone? Choices: A: 3.6. B: 4.4. C: 10.6. D: 13.1."
       },
       "requiredSourceTokens": {
         "en": [
-          "1.2 inches",
-          "2.9 inches",
-          "3.6",
-          "4.4",
-          "10.6",
-          "13.1",
-          "A: 3.6",
-          "B: 4.4",
-          "C: 10.6",
-          "D: 13.1"
+          "Question 30. A cone has a radius of 1.2 inches and a height of 2.9 inches. What is the volume, to the nearest tenth of a cubic inch, of the cone? Choices: A: 3.6. B: 4.4. C: 10.6. D: 13.1."
         ]
       }
     },
     "nysed-2015-g8-mc-q35": {
-      "inputHash": "36bfc2b907b2939476fb03eea738806eb7bc9e916bbbd65797ea5d56f8b34c50",
+      "inputHash": "e68d6f9be8d66609975a84d68293e3c1ff69017aa7d47a929caa59d97b8f3e1e",
       "description": {
-        "en": "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Calculators are allowed. Choices: A: y = 2x − 6. B: y = 3/4x − 1. C: y = 1/4x + 1. D: y = 4/3x − 10/3."
+        "en": "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Choices: A: y = 2x − 6. B: y = 3/4x − 1. C: y = 1/4x + 1. D: y = 4/3x − 10/3."
       },
       "requiredSourceTokens": {
         "en": [
-          "(4, 2)",
-          "(0, −1)",
-          "y = 2x − 6",
-          "y = 3/4x − 1",
-          "y = 1/4x + 1",
-          "y = 4/3x − 10/3",
-          "A: y = 2x − 6",
-          "B: y = 3/4x − 1",
-          "C: y = 1/4x + 1",
-          "D: y = 4/3x − 10/3",
-          "3/4",
-          "1/4",
-          "4/3",
-          "10/3"
+          "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Choices: A: y = 2x − 6. B: y = 3/4x − 1. C: y = 1/4x + 1. D: y = 4/3x − 10/3."
         ]
       }
     },
     "nysed-2015-g8-mc-q36": {
-      "inputHash": "da4eafe95990a7f6b31302574c533755ecac594da5cb6fd4a0926d5215a5338b",
+      "inputHash": "af19bbbf2ca7a45c16cc2249cecd0c40c7c25fa03e797e5a5972e28c45ebcf15",
       "description": {
-        "en": "Question 36. A system of equations is given: 5x + 3y = −6 and 2x + y = −4. Which statement about the ordered pair (−6, 8) is true? Calculators are allowed. Choices: A: It is the only solution to the system. B: It is not a solution to either equation. C: It is one of many solutions to the system. D: It is a solution to the first but not the second equation."
+        "en": "Question 36. A system of equations is given: 5x + 3y = −6 and 2x + y = −4. Which statement about the ordered pair (−6, 8) is true? Choices: A: It is the only solution to the system. B: It is not a solution to either equation. C: It is one of many solutions to the system. D: It is a solution to the first but not the second equation."
       },
       "requiredSourceTokens": {
         "en": [
-          "5x + 3y = −6",
-          "2x + y = −4",
-          "(−6, 8)",
-          "A: It is the only solution to the system",
-          "B: It is not a solution to either equation",
-          "C: It is one of many solutions to the system",
-          "D: It is a solution to the first but not the second equation"
+          "Question 36. A system of equations is given: 5x + 3y = −6 and 2x + y = −4. Which statement about the ordered pair (−6, 8) is true? Choices: A: It is the only solution to the system. B: It is not a solution to either equation. C: It is one of many solutions to the system. D: It is a solution to the first but not the second equation."
         ]
       }
     },
     "nysed-2015-g8-mc-q38": {
-      "inputHash": "9b3814167291b90b4ee51b33985e08eb150508cf6eb5de883e375947cb8a8853",
+      "inputHash": "653e48dab9157c3e0ff7a8418b862041a2713eae29e17c35c3795433a8eb72d9",
       "description": {
-        "en": "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Calculators are allowed. Choices: A: y = 5/2x − 2. B: y = 7/2x − 2. C: y = 2x − 2. D: y = 6x − 2."
+        "en": "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Choices: A: y = 5/2x − 2. B: y = 7/2x − 2. C: y = 2x − 2. D: y = 6x − 2."
       },
       "requiredSourceTokens": {
         "en": [
-          "(4, 12)",
-          "−2",
-          "y = 5/2x − 2",
-          "y = 7/2x − 2",
-          "y = 2x − 2",
-          "y = 6x − 2",
-          "A: y = 5/2x − 2",
-          "B: y = 7/2x − 2",
-          "C: y = 2x − 2",
-          "D: y = 6x − 2",
-          "5/2",
-          "7/2"
+          "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Choices: A: y = 5/2x − 2. B: y = 7/2x − 2. C: y = 2x − 2. D: y = 6x − 2."
         ]
       }
     },
     "nysed-2015-g8-mc-q42": {
-      "inputHash": "28de2c3c84e172762b8b85eba677f2e62114d4c796c258ca88ec064fe5e49ac7",
+      "inputHash": "39cf22d19611cdbfd34b2b14286a68d8a4cc4430c25ca86ce6d2280efba4bb11",
       "description": {
         "en": "Question 42. A solid object was sliced to form two new objects. Each of the two new objects had a circular base. Which shape could not have been the original object? Choices: A: cone. B: cylinder. C: prism. D: sphere."
       },
@@ -397,7 +341,7 @@
       }
     },
     "nysed-2015-g8-mc-q45": {
-      "inputHash": "9763702e553ec8988b59e0125c6e5d858aed78e5437c483c099adcafffce9628",
+      "inputHash": "63a524641da902e9b30f589df2864438041a49a6ddf4d5149d89befbd60a0198",
       "description": {
         "en": "Question 45. Function 1 is defined by the equation y = (3/4)x + 1, and function 2 is represented by a coordinate graph. The graph has x- and y-axes marked in increments of 2 from −10 to 10, with the square grid extending from −12 to 12 on each axis. Function 2 is an increasing straight line with arrows at both ends. It crosses the y-axis at (0, −3) and crosses the x-axis between 4 and 6, at approximately (5.1, 0). Which statement about the functions is true? Choices: A: Function 1 has the greater rate of change and the greater y-intercept. B: Function 2 has the greater rate of change and the greater y-intercept. C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept. D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept."
       },
@@ -422,7 +366,7 @@
       }
     },
     "nysed-2015-g8-mc-q46": {
-      "inputHash": "c5060a91f7185c20673817bc740b82650ac801e78354f623ce49e9d451b437b4",
+      "inputHash": "0729f06bc10edee969ca3d3d4e48ceb26782e3c0f06485f3fce5f0f3032e83da",
       "description": {
         "en": "Question 46. A cylinder has a diameter of 14 centimeters and a volume of 112π cubic centimeters. What is the height, in centimeters, of the cylinder? Choices: A: 16. B: 4. C: 16/7. D: 4/7."
       },
@@ -442,7 +386,7 @@
       }
     },
     "nysed-2015-g8-mc-q47": {
-      "inputHash": "7cf6651ff85ff7aca978148eaf211ca15854704984bb651a1ed8c8a99b9d8a37",
+      "inputHash": "f6feeaa4e6725092255b1ac334b76b99d3ae547c3436e1f878df934b9f5ebc6d",
       "description": {
         "en": "Question 47. Figure L and figure M are shown on a coordinate grid with x- and y-axes marked in units of 1 from −5 to 5. Figure L is a rectangle in the third quadrant with vertices (−5, −2), (−1, −2), (−1, −5), and (−5, −5); it is 4 units wide and 3 units high. Figure M is a square in the first quadrant with vertices (2, 2), (5, 2), (5, 5), and (2, 5); it is 3 units wide and 3 units high. Maria wants to transform figure L to figure M using only rotations, reflections, and translations. Which statement is true? Choices: A: The transformation can be done with a reflection followed by a rotation. B: The transformation can be done with a reflection followed by a translation. C: The transformation cannot be done because figure L is not congruent to figure M. D: The transformation cannot be done because figures L and M are in different quadrants."
       },
@@ -472,7 +416,7 @@
       }
     },
     "nysed-2015-g8-mc-q49": {
-      "inputHash": "124542b9a8f92a21bb4c23abe84d681ee89ec5844ef47444d32e10687a8746a9",
+      "inputHash": "d879a82977f73c377f43c661bf609e5f47df4232e233f8ffde48b16b2992b62e",
       "description": {
         "en": "Question 49. Which statement explains why the point (−2, 2) is the solution to the system of linear equations graphed on a coordinate plane? The x- and y-axes are marked in increments of 2 from −10 to 10, and the square grid extends from −12 to 12 on each axis. Two straight lines with arrows at both ends intersect at (−2, 2). The increasing line crosses the x-axis at (−4, 0) and the y-axis at (0, 4). The decreasing line crosses the y-axis at (0, −4) and passes through approximately (−5.33, 12) and (2.67, −12). Choices: A: It lies on the graph of only one of the equations. B: It lies in the second quadrant of the coordinate plane. C: It is the only point that satisfies both equations simultaneously. D: It is one of many points that satisfies both equations simultaneously."
       },
@@ -499,7 +443,7 @@
       }
     },
     "nysed-2015-g8-mc-q53": {
-      "inputHash": "c259810c300fbd48ada7015618a5f25d18076c703e3acb7077c860f95f173422",
+      "inputHash": "60b875a66a8bb139f26a9aeecea5df14ad4d4a1fc5de9ca21904561c5430d4e4",
       "description": {
         "en": "Question 53. The winning time for the men’s 400-meter race in each of the Olympic Games from 1976 to 1996 can be modeled by the equation y = −0.054x + 44.54, where x is the number of years after 1976 and y is the winning time in seconds. If the relationship continues, which equation could be used to predict the winning time in the year 2020? Choices: A: y = −0.054(1976) + 44.54. B: y = −0.054(2020) + 44.54. C: y = −0.054(24) + 44.54. D: y = −0.054(44) + 44.54."
       },
@@ -526,7 +470,7 @@
       }
     },
     "nysed-2015-g8-mc-q54": {
-      "inputHash": "c390f098b79fadf866ef4100db4e2e27db211b28500c9549a1ab89390e0be4a7",
+      "inputHash": "7e0c94fd051d13f0d5536ab0cb798396a0c1d86962953cdd2dffe9ea0d7bdb6b",
       "description": {
         "en": "Question 54. An above-ground swimming pool in the shape of a cylinder has a diameter of 18 feet and a height of 4.5 feet. If the pool is filled with water to 6 inches from the top of the pool, what is the volume, to the nearest cubic foot, of the water in the pool? Choices: A: 226. B: 452. C: 1,018. D: 4,072."
       },

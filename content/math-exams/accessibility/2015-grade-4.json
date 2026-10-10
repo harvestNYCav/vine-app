@@ -37,7 +37,12 @@
     "nysed-2015-g4-mc-q4": {
       "inputHash": "63381b8d0f4a51b6e3d9bd48ee3e338fc8cb7ee67ba9bec74d88e53be5dc7359",
       "description": {
-        "en": "Question 4. A diagram has horizontal line ACE through C, vertical ray CB, and diagonal ray CD rising to the right. Angle DCE is the acute angle between diagonal ray CD and right-pointing ray CE; it is visibly smaller than half of the right angle BCE. What is the measure of angle DCE? Choices: A: 40°; B: 50°; C: 90°; D: 130°."
+        "en": "Question 4. A diagram has horizontal line ACE through C, vertical ray CB, and diagonal ray CD rising to the right. Angle DCE is between diagonal ray CD and right-pointing ray CE. What is the measure of angle DCE? Choices: A: 40°; B: 50°; C: 90°; D: 130°."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 4. A diagram has horizontal line ACE through C, vertical ray CB, and diagonal ray CD rising to the right. Angle DCE is between diagonal ray CD and right-pointing ray CE. What is the measure of angle DCE? Choices: A: 40°; B: 50°; C: 90°; D: 130°."
+        ]
       }
     },
     "nysed-2015-g4-mc-q5": {

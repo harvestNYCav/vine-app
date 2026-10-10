@@ -227,8 +227,8 @@
       "inputHash": "9ea1e1a2d3fc105b3c190f2c5e3e869ac7eb156e9dfff2065a290e101eb3e90f",
       "explanation": {
         "text": {
-          "en": "At $8.75 per hour, Kim-Ly earns $8.75 for 1 hour, $17.50 for 2, $26.25 for 3, and $35.00 for 4. Table D matches these earnings.",
-          "es": "A $8.75 por hora, Kim-Ly gana $8.75 por 1 hora, $17.50 por 2, $26.25 por 3 y $35.00 por 4. La tabla D muestra esas ganancias."
+          "en": "Kim-Ly earns $17.50 for 2 hours, so her unit rate is $17.50 ÷ 2 = $8.75 per hour. Multiplying by the number of hours gives $8.75 for 1 hour, $17.50 for 2, $26.25 for 3, and $35.00 for 4. Table D matches these earnings.",
+          "es": "Kim-Ly gana $17.50 por 2 horas, así que su tasa unitaria es $17.50 ÷ 2 = $8.75 por hora. Al multiplicar por el número de horas, obtiene $8.75 por 1 hora, $17.50 por 2, $26.25 por 3 y $35.00 por 4. La tabla D muestra esas ganancias."
         },
         "source": "vine-authored"
       }
@@ -344,7 +344,7 @@
       }
     },
     "nysed-2017-g6-mc-q46": {
-      "inputHash": "18cffe995d4148965bad2a3e7e3fec9973d6c96ad650c517a798915312e5f368",
+      "inputHash": "37afbc19abb08c88832e45acf6c86b76508485f597269ba2298c2560d506c41c",
       "explanation": {
         "text": {
           "en": "An ordered pair (x, y) moves x units horizontally, then y units vertically. Graph B marks 4 units right and 3 units up; therefore it represents (4, 3).",

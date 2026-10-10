@@ -548,27 +548,11 @@
     "nysed-2016-g8-mc-q36": {
       "inputHash": "654a92fa78adbe27375fd8ebac8c026b1803d8dfc56b9f837e4b660ea2317b01",
       "description": {
-        "en": "Question 36. Two friends work at different companies, P and S. Both companies use the number of hours that an employee works to calculate that employee’s vacation hours. The relationship between the number of hours worked and the number of vacation hours for employees at each company is shown in a table and graph, respectively. The COMPANY P table has columns Hours Worked and Vacation Hours and contains the rows (10, 0.4), (20, 0.8), (30, 1.2), (40, 1.6), and (50, 2.0). The COMPANY S graph has Hours Worked on the x-axis and Vacation Hours on the y-axis. The labeled x-axis values are 0, 20, 40, 60, 80, 100, and 120, with grid lines continuing to 140; the labeled y-axis values are 1 through 9, with grid lines continuing to 10. A straight ray begins at (0, 0), passes through grid intersections (50, 3) and (100, 6), and continues with an arrow to about (140, 8.4). Which statement describes the difference in each friend’s vacation hours if both work 2,080 hours? Choices: A: The friend at company S will have about 42 more vacation hours than the friend at company P. B: The friend at company S will have about 46 more vacation hours than the friend at company P. C: The friend at company P will have about eight more vacation hours than the friend at company S. D: The friend at company P will have about nine more vacation hours than the friend at company S."
+        "en": "Question 36. Two friends work at different companies, P and S. Both companies use the number of hours that an employee works to calculate that employee’s vacation hours. The relationship between the number of hours worked and the number of vacation hours for employees at each company is shown in a table and graph, respectively. The COMPANY P table has columns Hours Worked and Vacation Hours and contains the rows (10, 0.4), (20, 0.8), (30, 1.2), (40, 1.6), and (50, 2.0). The COMPANY S graph has Hours Worked on the x-axis and Vacation Hours on the y-axis. The labeled x-axis values are 0, 20, 40, 60, 80, 100, and 120, with grid lines continuing to 140; the labeled y-axis values are 1 through 9, with grid lines continuing to 10. A straight ray begins at (0, 0), passes through about (50, 3) and the grid intersection (100, 6), and continues with an arrow to about (140, 8.4). Which statement describes the difference in each friend’s vacation hours if both work 2,080 hours? Choices: A: The friend at company S will have about 42 more vacation hours than the friend at company P. B: The friend at company S will have about 46 more vacation hours than the friend at company P. C: The friend at company P will have about eight more vacation hours than the friend at company S. D: The friend at company P will have about nine more vacation hours than the friend at company S."
       },
       "requiredSourceTokens": {
         "en": [
-          "(10, 0.4)",
-          "(20, 0.8)",
-          "(30, 1.2)",
-          "(40, 1.6)",
-          "(50, 2.0)",
-          "(50, 3)",
-          "(140, 8.4)",
-          "2,080",
-          "42",
-          "46",
-          "eight",
-          "nine",
-          "A: The friend at company S will have about 42 more vacation hours than the friend at company P",
-          "B: The friend at company S will have about 46 more vacation hours than the friend at company P",
-          "C: The friend at company P will have about eight more vacation hours than the friend at company S",
-          "D: The friend at company P will have about nine more vacation hours than the friend at company S",
-          "Question 36. Two friends work at different companies, P and S. Both companies use the number of hours that an employee works to calculate that employee’s vacation hours. The relationship between the number of hours worked and the number of vacation hours for employees at each company is shown in a table and graph, respectively. The COMPANY P table has columns Hours Worked and Vacation Hours and contains the rows (10, 0.4), (20, 0.8), (30, 1.2), (40, 1.6), and (50, 2.0). The COMPANY S graph has Hours Worked on the x-axis and Vacation Hours on the y-axis. The labeled x-axis values are 0, 20, 40, 60, 80, 100, and 120, with grid lines continuing to 140; the labeled y-axis values are 1 through 9, with grid lines continuing to 10. A straight ray begins at (0, 0), passes through grid intersections (50, 3) and (100, 6), and continues with an arrow to about (140, 8.4). Which statement describes the difference in each friend’s vacation hours if both work 2,080 hours? Choices: A: The friend at company S will have about 42 more vacation hours than the friend at company P. B: The friend at company S will have about 46 more vacation hours than the friend at company P. C: The friend at company P will have about eight more vacation hours than the friend at company S. D: The friend at company P will have about nine more vacation hours than the friend at company S."
+          "Question 36. Two friends work at different companies, P and S. Both companies use the number of hours that an employee works to calculate that employee’s vacation hours. The relationship between the number of hours worked and the number of vacation hours for employees at each company is shown in a table and graph, respectively. The COMPANY P table has columns Hours Worked and Vacation Hours and contains the rows (10, 0.4), (20, 0.8), (30, 1.2), (40, 1.6), and (50, 2.0). The COMPANY S graph has Hours Worked on the x-axis and Vacation Hours on the y-axis. The labeled x-axis values are 0, 20, 40, 60, 80, 100, and 120, with grid lines continuing to 140; the labeled y-axis values are 1 through 9, with grid lines continuing to 10. A straight ray begins at (0, 0), passes through about (50, 3) and the grid intersection (100, 6), and continues with an arrow to about (140, 8.4). Which statement describes the difference in each friend’s vacation hours if both work 2,080 hours? Choices: A: The friend at company S will have about 42 more vacation hours than the friend at company P. B: The friend at company S will have about 46 more vacation hours than the friend at company P. C: The friend at company P will have about eight more vacation hours than the friend at company S. D: The friend at company P will have about nine more vacation hours than the friend at company S."
         ]
       }
     },
@@ -655,68 +639,11 @@
     "nysed-2016-g8-mc-q41": {
       "inputHash": "8bb8e11f485574a4c55c34fb486b16d600a0092ce4a1e8c37c0b298a358eaf54",
       "description": {
-        "en": "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y coordinate grid marked in increments of 1, with numbered values shown at even integers from 0 through 10. Choices: A: A scatter plot with an overall positive association but points spread noticeably around the trend. The visible points are approximately (1,4), (1,1), (2,4), (2,1), (3,5), (3,2), (3,3), (4,7), (4,3), (5,7), (5,5), (6,5), (6,9), (7,7), (7,10), (8,7), (8,8), and (9,10). Line k rises from about (0,6) toward (7,12), lying above most of the data rather than through their center. B: A scatter plot with a strong negative association. The visible points descend from the upper left toward the lower right, including points near (1,10), (1,7), (2,10), (2,7), (3,9), (3,6), (4,9), (4,4), (5,8), (5,4), (6,6), (6,4), (7,6), (7,5), (8,4), and (9,4). Line k descends from about (0,10) toward the lower right and lies above much of the lower-right data. C: A scatter plot with a strong positive association. The visible points rise from the lower left toward the upper right, including points near (0,2), (1,1), (1,3), (2,4), (2,2), (3,5), (3,3), (4,5), (5,7), (5,4), (6,8), (6,5), (7,9), (7,7), (8,8), (8,10), and (9,8). Line k rises from about (2,0) to about (11,10), lying below most of the data rather than through their center. D: A scatter plot with a strong negative association. The visible points cluster closely around a descending line from the upper left toward the lower right, including points near (0,10), (0,8), (1,10), (1,9), (2,7), (2,9), (3,8), (3,6), (4,7), (4,5), (5,5), (5,4), and (6,5). Line k descends through the center of the cluster from about (0,10) toward the lower right."
+        "en": "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y grid with unit spacing and even-numbered labels from 0 through 10. The following point locations are approximate readings of the diagrams, not printed coordinate labels. Choices: A: Points near (0.5, 4), (1, 1), (1.6, 3.8), (2, 1.3), (2.8, 5.2), (3, 2), (3.2, 3), (3.8, 6.7), (4.2, 2.5), (5, 7.2), (5.1, 4.4), (6, 4.5), (6.3, 8.7), (7, 10), (7, 6.9), (8, 7.2), (8.5, 9.8), (8.8, 8). Line k passes approximately through (0, 5) and (7, 12). B: Points near (0.5, 6.9), (1, 10), (1.6, 7.1), (2, 9.6), (2.9, 8.9), (2.7, 5.8), (3.1, 8), (3.8, 4.2), (4.2, 8.4), (5, 6.4), (5, 3.8), (6, 6.4), (6.3, 5.2), (6.1, 2.2), (7, 4), (7, 0.8), (8, 3.8), (8.5, 1). Line k passes approximately through (0, 10) and (10, 0). C: Points near (0.5, 2.2), (0.7, 1.3), (1.4, 2.7), (2.2, 3.7), (2.4, 2), (3, 3.3), (3.4, 5.4), (4.2, 5.4), (4.7, 4), (5.1, 7.3), (5.5, 5.4), (6.1, 6.8), (6.3, 7.8), (6.9, 9.1), (7.4, 6.9), (7.9, 8.4), (8.4, 10), (9, 8). Line k passes approximately through (2, 0) and (12, 10). D: Points near (0.5, 8), (1, 10), (1.5, 8.5), (2, 7), (2.4, 9), (3, 7.8), (3.2, 7), (3.8, 5.3), (4.2, 7.3), (4.6, 4), (5, 5.3), (6, 5.3), (6.3, 3.3), (7, 2), (7.2, 4.4), (7.4, 3.5), (7.9, 1.5), (8.7, 1.3). Line k passes approximately through (0, 10) and (10, 0)."
       },
       "requiredSourceTokens": {
         "en": [
-          "1",
-          "0",
-          "10",
-          "(1,4)",
-          "(1,1)",
-          "(2,4)",
-          "(2,1)",
-          "(3,5)",
-          "(3,2)",
-          "(3,3)",
-          "(4,7)",
-          "(4,3)",
-          "(5,7)",
-          "(5,5)",
-          "(6,5)",
-          "(6,9)",
-          "(7,7)",
-          "(7,10)",
-          "(8,7)",
-          "(8,8)",
-          "(9,10)",
-          "(0,6)",
-          "(7,12)",
-          "(1,10)",
-          "(1,7)",
-          "(2,10)",
-          "(2,7)",
-          "(3,9)",
-          "(3,6)",
-          "(4,9)",
-          "(4,4)",
-          "(5,8)",
-          "(5,4)",
-          "(6,6)",
-          "(6,4)",
-          "(7,6)",
-          "(7,5)",
-          "(8,4)",
-          "(9,4)",
-          "(0,10)",
-          "(0,2)",
-          "(1,3)",
-          "(2,2)",
-          "(4,5)",
-          "(6,8)",
-          "(7,9)",
-          "(8,10)",
-          "(9,8)",
-          "(2,0)",
-          "(11,10)",
-          "(0,8)",
-          "(1,9)",
-          "(2,9)",
-          "(3,8)",
-          "A: A scatter plot with an overall positive association but points spread noticeably around the trend. The visible points are approximately (1,4), (1,1), (2,4), (2,1), (3,5), (3,2), (3,3), (4,7), (4,3), (5,7), (5,5), (6,5), (6,9), (7,7), (7,10), (8,7), (8,8), and (9,10). Line k rises from about (0,6) toward (7,12), lying above most of the data rather than through their center",
-          "B: A scatter plot with a strong negative association. The visible points descend from the upper left toward the lower right, including points near (1,10), (1,7), (2,10), (2,7), (3,9), (3,6), (4,9), (4,4), (5,8), (5,4), (6,6), (6,4), (7,6), (7,5), (8,4), and (9,4). Line k descends from about (0,10) toward the lower right and lies above much of the lower-right data",
-          "C: A scatter plot with a strong positive association. The visible points rise from the lower left toward the upper right, including points near (0,2), (1,1), (1,3), (2,4), (2,2), (3,5), (3,3), (4,5), (5,7), (5,4), (6,8), (6,5), (7,9), (7,7), (8,8), (8,10), and (9,8). Line k rises from about (2,0) to about (11,10), lying below most of the data rather than through their center",
-          "D: A scatter plot with a strong negative association. The visible points cluster closely around a descending line from the upper left toward the lower right, including points near (0,10), (0,8), (1,10), (1,9), (2,7), (2,9), (3,8), (3,6), (4,7), (4,5), (5,5), (5,4), and (6,5). Line k descends through the center of the cluster from about (0,10) toward the lower right"
+          "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y grid with unit spacing and even-numbered labels from 0 through 10. The following point locations are approximate readings of the diagrams, not printed coordinate labels. Choices: A: Points near (0.5, 4), (1, 1), (1.6, 3.8), (2, 1.3), (2.8, 5.2), (3, 2), (3.2, 3), (3.8, 6.7), (4.2, 2.5), (5, 7.2), (5.1, 4.4), (6, 4.5), (6.3, 8.7), (7, 10), (7, 6.9), (8, 7.2), (8.5, 9.8), (8.8, 8). Line k passes approximately through (0, 5) and (7, 12). B: Points near (0.5, 6.9), (1, 10), (1.6, 7.1), (2, 9.6), (2.9, 8.9), (2.7, 5.8), (3.1, 8), (3.8, 4.2), (4.2, 8.4), (5, 6.4), (5, 3.8), (6, 6.4), (6.3, 5.2), (6.1, 2.2), (7, 4), (7, 0.8), (8, 3.8), (8.5, 1). Line k passes approximately through (0, 10) and (10, 0). C: Points near (0.5, 2.2), (0.7, 1.3), (1.4, 2.7), (2.2, 3.7), (2.4, 2), (3, 3.3), (3.4, 5.4), (4.2, 5.4), (4.7, 4), (5.1, 7.3), (5.5, 5.4), (6.1, 6.8), (6.3, 7.8), (6.9, 9.1), (7.4, 6.9), (7.9, 8.4), (8.4, 10), (9, 8). Line k passes approximately through (2, 0) and (12, 10). D: Points near (0.5, 8), (1, 10), (1.5, 8.5), (2, 7), (2.4, 9), (3, 7.8), (3.2, 7), (3.8, 5.3), (4.2, 7.3), (4.6, 4), (5, 5.3), (6, 5.3), (6.3, 3.3), (7, 2), (7.2, 4.4), (7.4, 3.5), (7.9, 1.5), (8.7, 1.3). Line k passes approximately through (0, 10) and (10, 0)."
         ]
       }
     },

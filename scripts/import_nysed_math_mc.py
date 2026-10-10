@@ -52,6 +52,12 @@ import pdfplumber
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageStat
 
 try:
+    from scripts.nysed_image_finishing import finish_reviewed_image, finishing_cache_policy
+except ModuleNotFoundError:
+    from nysed_image_finishing import finish_reviewed_image, finishing_cache_policy
+
+
+try:
     from scripts.nysed_math_accessibility import (
         DEFAULT_MATH_ACCESSIBILITY_ROOT,
         MathAccessibilityError,
@@ -2280,7 +2286,7 @@ _VERIFIED_TEXT_OVERLAY_REPAIRS: dict[tuple[str, int], dict[str, Any]] = {
     # October review: source-verified missing operators, diagrams, and labels.
     ('642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d', 15): {'policyId': '2017-g5-es-q15-source-figure-v1', 'sourcePage': 14, 'box': (28.0, 257.85, 584.0, 702.372), 'fontSize': 20, 'clearRects': (), 'texts': (('+', 355, 341, 'mm'),)},
     ('642a84bfe71eca05c10dcfabea2f5abacd7abd041067ae136446c46fbb87ea1d', 17): {'policyId': '2017-g5-es-q17-source-figure-v1', 'sourcePage': 15, 'box': (28.0, 245.7, 584.0, 702.372), 'fontSize': 11, 'clearRects': (), 'texts': (), 'lines': ((174, 325.574593, 286.7337, 325.574593), (174, 325.574593, 174, 387.713593), (174, 387.713593, 286.7337, 387.713593), (286.7337, 325.574593, 286.7337, 387.713593), (174, 325.574593, 197, 306.574593), (197, 306.574593, 309.7337, 306.574593), (286.7337, 325.574593, 309.7337, 306.574593), (309.7337, 306.574593, 309.7337, 368.713593), (286.7337, 387.713593, 309.7337, 368.713593))},
-    ('8c464ae6cc63b4edbae96ba3649900b09f30b6bca5481db8c1e50afa50b1b0c8', 46): {'policyId': '2017-g6-es-q46-source-figure-v1', 'sourcePage': 35, 'box': (28.0, 50.85, 584.0, 702.372), 'fontSize': 10, 'clearRects': (), 'texts': (('5', 193, 275, 'mm'), ('5', 447.7, 275, 'mm'), ('5', 193, 491, 'mm'), ('5', 448.8, 491, 'mm')), 'lines': ((103, 266, 264, 266), (103, 266, 103, 105), (264, 266, 260, 264), (264, 266, 260, 268), (103, 105, 101, 109), (103, 105, 105, 109), (357.7, 266, 518.7, 266), (357.7, 266, 357.7, 105), (518.7, 266, 514.7, 264), (518.7, 266, 514.7, 268), (357.7, 105, 355.7, 109), (357.7, 105, 359.7, 109), (103, 482, 264, 482), (103, 482, 103, 321), (264, 482, 260, 480), (264, 482, 260, 484), (103, 321, 101, 325), (103, 321, 105, 325), (358.8, 482, 519.8, 482), (358.8, 482, 358.8, 321), (519.8, 482, 515.8, 480), (519.8, 482, 515.8, 484), (358.8, 321, 356.8, 325), (358.8, 321, 360.8, 325))},
+    ('8c464ae6cc63b4edbae96ba3649900b09f30b6bca5481db8c1e50afa50b1b0c8', 46): {'policyId': '2017-g6-es-q46-source-figure-v2', 'sourcePage': 35, 'box': (28.0, 50.85, 584.0, 702.372), 'fontSize': 11, 'clearRects': (), 'texts': (('5', 193, 275.5, 'mm'), ('5', 447.7, 275.5, 'mm'), ('5', 193, 491.5, 'mm'), ('5', 448.8, 491.5, 'mm')), 'lines': ((103, 266, 264, 266), (103, 266, 103, 105), (264, 266, 260, 264), (264, 266, 260, 268), (103, 105, 101, 109), (103, 105, 105, 109), (357.7, 266, 518.7, 266), (357.7, 266, 357.7, 105), (518.7, 266, 514.7, 264), (518.7, 266, 514.7, 268), (357.7, 105, 355.7, 109), (357.7, 105, 359.7, 109), (103, 482, 264, 482), (103, 482, 103, 321), (264, 482, 260, 480), (264, 482, 260, 484), (103, 321, 101, 325), (103, 321, 105, 325), (358.8, 482, 519.8, 482), (358.8, 482, 358.8, 321), (519.8, 482, 515.8, 480), (519.8, 482, 515.8, 484), (358.8, 321, 356.8, 325), (358.8, 321, 360.8, 325))},
     ('da113197f9b860958b80b8859dafc9665a6d94dba9a0f22327c770118605944f', 4): {'policyId': '2017-g8-en-q4-source-figure-v1', 'sourcePage': 12, 'box': (28.0, 50.85, 584.0, 702.372), 'fontSize': 11, 'clearRects': ((216, 132, 313, 189), (316, 132, 412, 189)), 'texts': (('Number of', 264, 145, 'mm'), ('Months', 264, 159, 'mm'), ('(t)', 264, 175, 'mm'), ('Total Amount', 364, 145, 'mm'), ('Deposited', 364, 159, 'mm'), ('(a)', 364, 175, 'mm'))},
     (
         "8c8c706ee38a63b81ba4ae0c8a3234d65c00f43e8fe68fb0d8f533caa1ecc187",
@@ -2687,6 +2693,9 @@ def render_question_crops(
             for number, (source_page, box) in sorted(boxes.items())
         },
     }
+    finishing_policy = finishing_cache_policy(public_directory, "q")
+    if finishing_policy:
+        expected_manifest["imageFinishingPolicy"] = finishing_policy
     if mask_selectable_footers:
         expected_manifest["selectableFooterMask"] = "selectable-footer-lane-v1"
     if verified_footer_masks:
@@ -2777,6 +2786,7 @@ def render_question_crops(
                         record=text_overlay_repairs[number],
                     )
                 question = trim_trailing_whitespace(trim_white(raw_question))
+                question = finish_reviewed_image(question, asset=f"{public_directory}/q{number:02d}.webp", source_sha256=source_pdf_sha256)
                 validate_image(question, f"{pdf_path.name} question {number}")
                 temporary = unique_temp_path(destination.parent, f".{destination.name}.", ".tmp")
                 try:

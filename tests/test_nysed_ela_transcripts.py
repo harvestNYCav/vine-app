@@ -171,7 +171,9 @@ class TranscriptTextValidationTests(unittest.TestCase):
 
     def test_allows_reviewed_nested_single_quotation_context(self) -> None:
         text = validate_transcript_text(
-            substantive_transcript('He said, “You mean ‘thunderstorm,’ ” and corrected the word.'),
+            substantive_transcript('He said, “You mean ‘thunderstorm,’ ” and corrected the word.')
+            + '\n[Sidebar: concocting = making by mixing parts.]'
+            + '\n[Sidebar: psychologist = person who studies how people act and feel.]',
             stimulus_id="nysed-ela-2023-g3-stimulus-26-31",
         )
 

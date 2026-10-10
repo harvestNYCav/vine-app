@@ -8,7 +8,7 @@ export const MATH_MEASUREMENT_GUIDES: Readonly<Record<string, MathMeasurementGui
   'nysed-2015-g4-mc-q2': { kind: 'ruler', lengths: [3.5] },
   'nysed-2018-g4-mc-q4': { kind: 'ruler', lengths: [2.25] },
   'nysed-2023-g4-mc-q9': { kind: 'ruler', lengths: [4.25] },
-  'nysed-2019-g4-mc-q38': { kind: 'ruler', lengths: [1.5, 2.25, 2.25, 2.75] },
+  'nysed-2019-g4-mc-q38': { kind: 'ruler', lengths: [2.25, 2.75, 1.5, 2.25] },
   'nysed-2015-g4-mc-q4': { kind: 'protractor', degrees: 40, zeroSide: 'right' },
   'nysed-2016-g4-mc-q28': { kind: 'protractor', degrees: 42, zeroSide: 'right' },
   'nysed-2019-g4-mc-q36': { kind: 'protractor', degrees: 55, zeroSide: 'right' },
