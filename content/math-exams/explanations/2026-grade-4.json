@@ -77,8 +77,8 @@
       "inputHash": "b00c640b8a4088bb78e991bb9e90c485921234621d48f745980fde32de8e7d2b",
       "explanation": {
         "text": {
-          "en": "Compare the hundred-thousands and ten-thousands digits. Since 369,254 has 369 thousand and 368,459 has 368 thousand, 369,254 > 368,459.",
-          "es": "Comparamos los dígitos de las centenas y decenas de millar. Como 369,254 tiene 369 mil y 368,459 tiene 368 mil, 369,254 > 368,459."
+          "en": "Compare digits from left to right. In 369,254 and 368,459, the hundred-thousands and ten-thousands digits match. The thousands digits are 9 and 8, so 369,254 > 368,459, choice B.",
+          "es": "Se comparan los dígitos de izquierda a derecha. En 369,254 y 368,459, coinciden las centenas y decenas de millar. Los dígitos de los millares son 9 y 8, así que 369,254 > 368,459, la opción B."
         },
         "source": "vine-authored"
       }

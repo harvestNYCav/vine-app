@@ -106,19 +106,10 @@ APP_PUBLIC_PREFIX = "/vine-app/nysed/math"
 YEARS = (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026)
 GRADES = (3, 4, 5, 6, 7, 8)
 CHOICES = ("A", "B", "C", "D")
-VERIFIED_CHOICE_LABEL_VARIANTS: dict[str, dict[str, Any]] = {
-    # The official 2016 Grade 4 q24 crop genuinely contains only figures A-C.
-    # Keep the exception tied to both the reviewed source PDF and exact crop so
-    # a changed release or render fails closed and requires a fresh audit.
-    "nysed-2016-g4-mc-q24": {
-        "year": 2016,
-        "grade": 4,
-        "number": 24,
-        "sourcePdfSha256": "3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455",
-        "questionImageSha256": "185985912b8e9d3bf333598892d6efe3e6392d7202e683745534d4f551ade225",
-        "choiceLabels": ("A", "B", "C"),
-    },
-}
+# All released questions have four choices. The former q24 exception was a
+# truncated crop, not an exception in the official source.
+VERIFIED_CHOICE_LABEL_VARIANTS: dict[str, dict[str, Any]] = {}
+
 SUPPORTED_DOMAINS = frozenset(("OA", "NBT", "NF", "MD", "G", "RP", "NS", "EE", "F", "SP"))
 SCRIPT_VERSION = "14"
 OCR_CACHE_VERSION = "12"
@@ -1735,6 +1726,94 @@ _VERIFIED_MODERN_CROP_REPAIRS: dict[
     tuple[int, int, str, int],
     dict[str, Any],
 ] = {
+    # October 2026: full source pages confirm these previously clipped choices.
+    (2019, 4, 'en', 37): {
+        "sourcePdfSha256": '80a83f977768ed7cbb38a10aaa8d381308e4cdd086351dc78054b0c5a7c581e1',
+        "sourcePage": 20,
+        "oldBox": (28.0, 414.45, 584.0, 625.4),
+        "newBox": (28.0, 414.45, 584.0, 708),
+        "footerMask": (495.0, 700.0),
+    },
+    (2019, 4, 'es', 37): {
+        "sourcePdfSha256": '53c63c8f1a51da9ab53afc95e708e552de862b1a13b5a8328f47712794f43714',
+        "sourcePage": 20,
+        "oldBox": (28.0, 411.75, 584.0, 636.8),
+        "newBox": (28.0, 411.75, 584.0, 722),
+        "footerMask": (495.0, 700.0),
+    },
+    (2016, 4, 'en', 24): {
+        "sourcePdfSha256": '3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455',
+        "sourcePage": 19,
+        "oldBox": (28.0, 208.8, 584.0, 612.2),
+        "newBox": (28.0, 208.8, 584.0, 695),
+    },
+    (2022, 7, 'en', 35): {
+        "sourcePdfSha256": 'c1347a62cfac2ef48c5cd9d323cfe23fce7c6f93dde03b725a04c91b8be5ad51',
+        "sourcePage": 21,
+        "oldBox": (28.0, 281.7, 584.0, 611.6),
+        "newBox": (28.0, 281.7, 584.0, 685),
+    },
+    (2022, 7, 'es', 35): {
+        "sourcePdfSha256": 'd00fb9e2e02a47b544f4da66e4603d6bba073da7e0296c1efdbb01c9b035d8b4',
+        "sourcePage": 21,
+        "oldBox": (28.0, 281.7, 584.0, 611.6),
+        "newBox": (28.0, 281.7, 584.0, 685),
+    },
+    (2015, 6, 'en', 18): {
+        "sourcePdfSha256": '7505822af044bdadc1a4334a4d7d162916f9f48992949e4c6142e067fbfea4e6',
+        "sourcePage": 18,
+        "oldBox": (30.0, 410.653, 573.0, 669.2),
+        "newBox": (30.0, 410.653, 573.0, 697),
+    },
+    (2017, 5, 'en', 33): {
+        "sourcePdfSha256": 'dff62ac8c81902d880d3ecc9490c33be63022e5c4adbc6f85a7796902f5bdd46',
+        "sourcePage": 27,
+        "oldBox": (28.0, 269.1, 584.0, 595.4),
+        "newBox": (28.0, 269.1, 584.0, 670),
+    },
+    (2016, 8, 'en', 41): {
+        "sourcePdfSha256": 'c340042edf847c9a2f7c77772ccddc8ce2a5ddd61bb160ff926b71157b0229a6',
+        "sourcePage": 29,
+        "oldBox": (28.0, 222.3, 584.0, 582.8),
+        "newBox": (28.0, 222.3, 584.0, 650),
+    },
+    (2015, 7, 'en', 2): {
+        "sourcePdfSha256": 'b0aa156031c76884c8a381ea69a0c6ff00e0bed04f67a387c1c8541e657f9a8a',
+        "sourcePage": 6,
+        "oldBox": (30.0, 77.913, 573.0, 596.0),
+        "newBox": (30.0, 77.913, 573.0, 672),
+    },
+    (2015, 3, 'en', 5): {
+        "sourcePdfSha256": 'c9e2d250ca7205ea5979ea9c74c2186c874bce103ac63499289ae1530e4d4af9',
+        "sourcePage": 9,
+        "oldBox": (30.0, 75.518, 573.0, 584.6),
+        "newBox": (30.0, 75.518, 573.0, 695),
+    },
+    (2014, 7, 'en', 19): {
+        "sourcePdfSha256": '23317f14860dcbcf66e0a4a27b6fb7a0b5280723a7458591c43e64b853291f80',
+        "sourcePage": 38,
+        "oldBox": (30.0, 65.629, 573.0, 668.0),
+        "newBox": (30.0, 65.629, 573.0, 718),
+    },
+    (2016, 5, 'en', 15): {
+        "sourcePdfSha256": '3be09f6036180bf30b69b1ba61be8ffb98a95ce1d29e70bbbcdfb6225004208b',
+        "sourcePage": 13,
+        "oldBox": (28.0, 342.45, 584.0, 694.4),
+        "newBox": (28.0, 342.45, 584.0, 713),
+        "footerMask": (495.0, 700.0),
+    },
+    (2016, 7, 'en', 16): {
+        "sourcePdfSha256": 'fe449be6e594e3804b97029da11e78891db5ea5db8ab6c86dd0fb38c8de16c4f',
+        "sourcePage": 12,
+        "oldBox": (28.0, 479.7, 584.0, 608.6),
+        "newBox": (28.0, 479.7, 584.0, 675),
+    },
+    (2016, 7, 'en', 15): {
+        "sourcePdfSha256": 'fe449be6e594e3804b97029da11e78891db5ea5db8ab6c86dd0fb38c8de16c4f',
+        "sourcePage": 12,
+        "oldBox": (28.0, 279.0, 584.0, 479.7),
+        "newBox": (28.0, 266.0, 584.0, 479.7),
+    },
     # The official 2021 Grade 4 q3 fraction denominators overlap the vertical
     # lane occupied by the page's GO ON footer. The ordinary footer boundary
     # clips both denominators. These source- and geometry-pinned repairs extend

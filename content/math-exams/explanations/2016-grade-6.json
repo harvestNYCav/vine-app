@@ -237,8 +237,8 @@
       "inputHash": "f1af14e33dd92509122e4f7991f21f8804c37fcdc3096e471c815265b0b9937d",
       "explanation": {
         "text": {
-          "en": "A rectangle’s opposite vertices share coordinates. The missing vertex must have x = 30 like (30, 13) and y = 3 like (5, 3), so its coordinates are (30, 3).",
-          "es": "Los vértices opuestos de un rectángulo comparten coordenadas. El vértice faltante debe tener x = 30 como (30, 13) y y = 3 como (5, 3), así que sus coordenadas son (30, 3)."
+          "en": "The given points form three corners of a rectangle with horizontal and vertical sides. The fourth corner shares x = 30 with (30, 13) and y = 3 with (5, 3), so it is (30, 3).",
+          "es": "Los puntos dados forman tres vértices de un rectángulo con lados horizontales y verticales. El cuarto vértice comparte x = 30 con (30, 13) y y = 3 con (5, 3), así que es (30, 3)."
         },
         "source": "vine-authored"
       }

@@ -137,8 +137,8 @@
       "inputHash": "3430b7b91b110f381df0ccb5870f001682729cd335ec5a878cd442cdc996d7f8",
       "explanation": {
         "text": {
-          "en": "Function A is y = 2n + 3, so its rate is 2 and initial value is 3. Function B is y = 3x + 2, so B has the greater rate, 3, but the smaller initial value, 2.",
-          "es": "La función A es y = 2n + 3, así que su tasa es 2 y su valor inicial 3. La función B es y = 3x + 2, por lo que B tiene la mayor tasa, 3, pero el menor valor inicial, 2."
+          "en": "Function A is y = 2x + 3, so its rate is 2 and initial value is 3. Function B is y = 3x + 2, so B has the greater rate, 3, but the smaller initial value, 2.",
+          "es": "La función A es y = 2x + 3, así que su tasa es 2 y su valor inicial 3. La función B es y = 3x + 2, por lo que B tiene la mayor tasa, 3, pero el menor valor inicial, 2."
         },
         "source": "vine-authored"
       }

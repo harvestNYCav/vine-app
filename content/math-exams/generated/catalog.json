@@ -1216,8 +1216,8 @@
           },
           "explanation": {
             "text": {
-              "en": "Compare the hundred-thousands and ten-thousands digits. Since 369,254 has 369 thousand and 368,459 has 368 thousand, 369,254 > 368,459.",
-              "es": "Comparamos los dígitos de las centenas y decenas de millar. Como 369,254 tiene 369 mil y 368,459 tiene 368 mil, 369,254 > 368,459."
+              "en": "Compare digits from left to right. In 369,254 and 368,459, the hundred-thousands and ten-thousands digits match. The thousands digits are 9 and 8, so 369,254 > 368,459, choice B.",
+              "es": "Se comparan los dígitos de izquierda a derecha. En 369,254 y 368,459, coinciden las centenas y decenas de millar. Los dígitos de los millares son 9 y 8, así que 369,254 > 368,459, la opción B."
             },
             "source": "vine-authored"
           }
@@ -11952,8 +11952,8 @@
           },
           "explanation": {
             "text": {
-              "en": "Compare the hundredths digits in each pair. Since 27 hundredths is less than 36 hundredths, 0.27 < 0.36 is true, which is choice C.",
-              "es": "Se comparan las centésimas de cada par. Como 27 centésimas es menor que 36 centésimas, 0.27 < 0.36 es verdadero, la opción C."
+              "en": "Write the decimals as hundredths. Since 27 hundredths is less than 36 hundredths, 0.27 < 0.36 is true, choice C. Equivalently, compare tenths first: 2 tenths is less than 3 tenths.",
+              "es": "Se expresan los decimales como centésimas. Como 27 centésimas es menor que 36 centésimas, 0.27 < 0.36 es verdadero, la opción C. También se pueden comparar primero las décimas: 2 décimas es menor que 3 décimas."
             },
             "source": "vine-authored"
           }
@@ -18126,8 +18126,8 @@
           },
           "explanation": {
             "text": {
-              "en": "Function A is y = 2n + 3, so its rate is 2 and initial value is 3. Function B is y = 3x + 2, so B has the greater rate, 3, but the smaller initial value, 2.",
-              "es": "La función A es y = 2n + 3, así que su tasa es 2 y su valor inicial 3. La función B es y = 3x + 2, por lo que B tiene la mayor tasa, 3, pero el menor valor inicial, 2."
+              "en": "Function A is y = 2x + 3, so its rate is 2 and initial value is 3. Function B is y = 3x + 2, so B has the greater rate, 3, but the smaller initial value, 2.",
+              "es": "La función A es y = 2x + 3, así que su tasa es 2 y su valor inicial 3. La función B es y = 3x + 2, por lo que B tiene la mayor tasa, 3, pero el menor valor inicial, 2."
             },
             "source": "vine-authored"
           }
@@ -20229,8 +20229,8 @@
           },
           "explanation": {
             "text": {
-              "en": "Rewrite 3/10 as 30/100, then add the like denominators. The sum is 30/100 + 27/100 = 57/100, choice D.",
-              "es": "Se reescribe 3/10 como 30/100 y luego se suman los denominadores iguales. La suma es 30/100 + 27/100 = 57/100, la opción D."
+              "en": "Rewrite 3/10 as 30/100. With equal denominators, add the numerators and keep the denominator: 30/100 + 27/100 = 57/100, choice D.",
+              "es": "Se reescribe 3/10 como 30/100. Con denominadores iguales, se suman los numeradores y se conserva el denominador: 30/100 + 27/100 = 57/100, la opción D."
             },
             "source": "vine-authored"
           }
@@ -21890,12 +21890,12 @@
             "en": {
               "src": "/vine-app/nysed/math/2022/grade-7/en/q35.webp",
               "width": 1143,
-              "height": 725
+              "height": 847
             },
             "es": {
               "src": "/vine-app/nysed/math/2022/grade-7/es/q35.webp",
-              "width": 1039,
-              "height": 725
+              "width": 1041,
+              "height": 847
             }
           },
           "alt": {
@@ -29114,12 +29114,12 @@
             "en": {
               "src": "/vine-app/nysed/math/2019/grade-4/en/q37.webp",
               "width": 979,
-              "height": 424
+              "height": 641
             },
             "es": {
               "src": "/vine-app/nysed/math/2019/grade-4/es/q37.webp",
               "width": 999,
-              "height": 456
+              "height": 673
             }
           },
           "alt": {
@@ -40216,7 +40216,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2017/grade-5/en/q33.webp",
               "width": 1137,
-              "height": 717
+              "height": 827
             },
             "es": {
               "src": "/vine-app/nysed/math/2017/grade-5/es/q33.webp",
@@ -45421,17 +45421,12 @@
             "en": {
               "src": "/vine-app/nysed/math/2016/grade-4/en/q24.webp",
               "width": 904,
-              "height": 775
+              "height": 1033
             }
           },
           "alt": {
-            "en": "Question 24. Which figure appears to show a pair of perpendicular lines? Choices: A: two separate lines with different shallow slopes; B: a horizontal line and a vertical line intersecting at a square corner; C: two separate horizontal parallel lines."
+            "en": "Question 24. Which figure appears to show a pair of perpendicular lines? Choices: A: two separate lines with different shallow slopes; B: a horizontal line and a vertical line intersecting at a square corner; C: two separate horizontal parallel lines. D: a horizontal line and a slanted line intersecting at angles that are not right angles."
           },
-          "choiceLabels": [
-            "A",
-            "B",
-            "C"
-          ],
           "explanation": {
             "text": {
               "en": "Perpendicular lines intersect to form a 90° angle. In figure B, the vertical and horizontal lines meet at a right angle, so they are perpendicular.",
@@ -46049,8 +46044,8 @@
           "image": {
             "en": {
               "src": "/vine-app/nysed/math/2016/grade-5/en/q15.webp",
-              "width": 884,
-              "height": 782
+              "width": 1207,
+              "height": 823
             }
           },
           "alt": {
@@ -47186,8 +47181,8 @@
           ],
           "explanation": {
             "text": {
-              "en": "A rectangle’s opposite vertices share coordinates. The missing vertex must have x = 30 like (30, 13) and y = 3 like (5, 3), so its coordinates are (30, 3).",
-              "es": "Los vértices opuestos de un rectángulo comparten coordenadas. El vértice faltante debe tener x = 30 como (30, 13) y y = 3 como (5, 3), así que sus coordenadas son (30, 3)."
+              "en": "The given points form three corners of a rectangle with horizontal and vertical sides. The fourth corner shares x = 30 with (30, 13) and y = 3 with (5, 3), so it is (30, 3).",
+              "es": "Los puntos dados forman tres vértices de un rectángulo con lados horizontales y verticales. El cuarto vértice comparte x = 30 con (30, 13) y y = 3 con (5, 3), así que es (30, 3)."
             },
             "source": "vine-authored"
           }
@@ -47700,7 +47695,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2016/grade-7/en/q15.webp",
               "width": 674,
-              "height": 411
+              "height": 440
             }
           },
           "alt": {
@@ -47727,7 +47722,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2016/grade-7/en/q16.webp",
               "width": 1157,
-              "height": 285
+              "height": 430
             }
           },
           "alt": {
@@ -49026,7 +49021,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2016/grade-8/en/q41.webp",
               "width": 1195,
-              "height": 799
+              "height": 913
             }
           },
           "alt": {
@@ -49272,7 +49267,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2015/grade-3/en/q05.webp",
               "width": 1108,
-              "height": 1131
+              "height": 1376
             }
           },
           "alt": {
@@ -51567,7 +51562,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2015/grade-6/en/q18.webp",
               "width": 1108,
-              "height": 574
+              "height": 636
             }
           },
           "alt": {
@@ -51918,7 +51913,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2015/grade-7/en/q02.webp",
               "width": 1108,
-              "height": 1151
+              "height": 1320
             }
           },
           "alt": {
@@ -56697,7 +56692,7 @@
             "en": {
               "src": "/vine-app/nysed/math/2014/grade-7/en/q19.webp",
               "width": 1066,
-              "height": 1338
+              "height": 1450
             }
           },
           "alt": {
