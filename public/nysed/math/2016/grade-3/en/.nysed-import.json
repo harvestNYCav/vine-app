@@ -285,7 +285,7 @@
     },
     "22": {
       "width": 1176,
-      "height": 980
+      "height": 397
     },
     "23": {
       "width": 725,
@@ -343,5 +343,6 @@
       "width": 1173,
       "height": 375
     }
-  }
+  },
+  "imageFinishingPolicy": "nysed-image-finishing-1:7e24018c28ad75bbe3f778d2d998e8eb750b142a1826ae5e9798b25018334d1d"
 }

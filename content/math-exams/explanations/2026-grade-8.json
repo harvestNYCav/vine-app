@@ -7,8 +7,8 @@
       "inputHash": "c3bd2774b1690d28fb1b93b8b4d63c09bf56fc7cc9ed3d116b8d5d24809b6eba",
       "explanation": {
         "text": {
-          "en": "Vertex A is at (-2, 3). Translating 4 units left subtracts 4 from x, and translating 2 units up adds 2 to y, so A′ = (-2 - 4, 3 + 2) = (-6, 5), choice D.",
-          "es": "El vértice A está en (-2, 3). Trasladar 4 unidades a la izquierda resta 4 a x, y subir 2 unidades suma 2 a y, así que A′ = (-2 - 4, 3 + 2) = (-6, 5), la opción D."
+          "en": "Vertex A is at (−2, 3). Translating 4 units left subtracts 4 from x, and translating 2 units up adds 2 to y, so A′ = (−2 − 4, 3 + 2) = (−6, 5), choice D.",
+          "es": "El vértice A está en (−2, 3). Trasladar 4 unidades a la izquierda resta 4 a x, y subir 2 unidades suma 2 a y, así que A′ = (−2 − 4, 3 + 2) = (−6, 5), la opción D."
         },
         "source": "vine-authored"
       }
@@ -27,8 +27,8 @@
       "inputHash": "f97497a42c8f229c3937b04c5b0a1bc3292d8153a143ae788b55003b4c115c99",
       "explanation": {
         "text": {
-          "en": "When powers with the same base are divided, subtract the exponents. Thus 12²⁰ ÷ 12⁴ = 12^(20 - 4) = 12¹⁶, which is choice D.",
-          "es": "Al dividir potencias con la misma base, se restan los exponentes. Por lo tanto, 12²⁰ ÷ 12⁴ = 12^(20 - 4) = 12¹⁶, que es la opción D."
+          "en": "When powers with the same base are divided, subtract the exponents. Thus 12²⁰ ÷ 12⁴ = 12⁽²⁰⁻⁴⁾ = 12¹⁶, which is choice D.",
+          "es": "Al dividir potencias con la misma base, se restan los exponentes. Por lo tanto, 12²⁰ ÷ 12⁴ = 12⁽²⁰⁻⁴⁾ = 12¹⁶, que es la opción D."
         },
         "source": "vine-authored"
       }
@@ -37,8 +37,8 @@
       "inputHash": "f65e86dc2c3a16d2a1a89209a0f1ded49cd9f0d02e69bfcc26f0a5dbe813356b",
       "explanation": {
         "text": {
-          "en": "In y = -2x + 29, the slope -2 means ticket sales decrease by about 2 each day. Substituting x = 12 gives y = -2(12) + 29 = 5 tickets, so choice D is the valid prediction.",
-          "es": "En y = -2x + 29, la pendiente -2 significa que las ventas disminuyen aproximadamente 2 entradas por día. Al sustituir x = 12, y = -2(12) + 29 = 5 entradas, así que la opción D es la predicción válida."
+          "en": "In y = −2x + 29, the slope −2 means ticket sales decrease by about 2 each day. Substituting x = 12 gives y = −2(12) + 29 = 5 tickets, so choice D is the valid prediction.",
+          "es": "En y = −2x + 29, la pendiente −2 significa que las ventas disminuyen aproximadamente 2 entradas por día. Al sustituir x = 12, y = −2(12) + 29 = 5 entradas, así que la opción D es la predicción válida."
         },
         "source": "vine-authored"
       }
@@ -77,8 +77,8 @@
       "inputHash": "d59eaeae94559eb7351c549a0dae712eb109d3ec10c4eb530d8a0fd88ac0ec5b",
       "explanation": {
         "text": {
-          "en": "The line crosses the y-axis at -3 and rises 3 units while running 6 units right, giving slope 3/6 = 1/2. Its equation is y = (1/2)x - 3, choice A.",
-          "es": "La recta cruza el eje y en -3 y sube 3 unidades al avanzar 6 unidades a la derecha, de modo que la pendiente es 3/6 = 1/2. Su ecuación es y = (1/2)x - 3, la opción A."
+          "en": "The line crosses the y-axis at −3 and rises 3 units while running 6 units right, giving slope 3/6 = 1/2. Its equation is y = (1/2)x − 3, choice A.",
+          "es": "La recta cruza el eje y en −3 y sube 3 unidades al avanzar 6 unidades a la derecha, de modo que la pendiente es 3/6 = 1/2. Su ecuación es y = (1/2)x − 3, la opción A."
         },
         "source": "vine-authored"
       }
@@ -87,8 +87,8 @@
       "inputHash": "7305694583d8ebb37343c17fdc55a2f992b9b673b453fd6d52efa631f4d09db8",
       "explanation": {
         "text": {
-          "en": "A 90° counterclockwise rotation sends (x, y) to (-y, x); for example, J(2, 8) becomes (-8, 2). Dilating by 1/2 then sends it to (-4, 1) = P and maps the other vertices likewise, so choice D shows similarity without congruence.",
-          "es": "Una rotación de 90° en sentido antihorario lleva (x, y) a (-y, x); por ejemplo, J(2, 8) pasa a (-8, 2). Una dilatación de 1/2 lo lleva después a (-4, 1) = P y transforma igual los demás vértices, así que la opción D demuestra semejanza sin congruencia."
+          "en": "A 90° counterclockwise rotation sends (x, y) to (-y, x); for example, J(2, 8) becomes (−8, 2). Dilating by 1/2 then sends it to (−4, 1) = P and maps the other vertices likewise, so choice D shows similarity without congruence.",
+          "es": "Una rotación de 90° en sentido antihorario lleva (x, y) a (-y, x); por ejemplo, J(2, 8) pasa a (−8, 2). Una dilatación de 1/2 lo lleva después a (−4, 1) = P y transforma igual los demás vértices, así que la opción D demuestra semejanza sin congruencia."
         },
         "source": "vine-authored"
       }
@@ -107,8 +107,8 @@
       "inputHash": "f5128c837c6b0a05bf779f266cfc22f8b96936865fc3561953cda241731b0337",
       "explanation": {
         "text": {
-          "en": "In choice B, distributing on the right gives 2(x - 1) = 2x - 2. Both sides are therefore the identical expression 2x - 2, so every value of x is a solution and there are infinitely many solutions.",
-          "es": "En la opción B, al distribuir en el lado derecho se obtiene 2(x - 1) = 2x - 2. Ambos lados son la misma expresión 2x - 2, así que todo valor de x es solución y hay infinitas soluciones."
+          "en": "In choice B, distributing on the right gives 2(x − 1) = 2x − 2. Both sides are therefore the identical expression 2x − 2, so every value of x is a solution and there are infinitely many solutions.",
+          "es": "En la opción B, al distribuir en el lado derecho se obtiene 2(x − 1) = 2x − 2. Ambos lados son la misma expresión 2x − 2, así que todo valor de x es solución y hay infinitas soluciones."
         },
         "source": "vine-authored"
       }
@@ -157,8 +157,8 @@
       "inputHash": "353f835087a5ab202805b7337afc3189e4c6ef3736db78253afba40a00a6351e",
       "explanation": {
         "text": {
-          "en": "From x = -6 through x = 2 the graph is horizontal, so the function is constant there. To the right of x = 2 the graph rises as x increases, so the function is increasing when x > 2, choice C.",
-          "es": "Desde x = -6 hasta x = 2 la gráfica es horizontal, así que la función es constante allí. A la derecha de x = 2, la gráfica sube cuando x aumenta, por lo que la función es creciente cuando x > 2, la opción C."
+          "en": "From x = −6 through x = 2 the graph is horizontal, so the function is constant there. To the right of x = 2 the graph rises as x increases, so the function is increasing when x > 2, choice C.",
+          "es": "Desde x = −6 hasta x = 2 la gráfica es horizontal, así que la función es constante allí. A la derecha de x = 2, la gráfica sube cuando x aumenta, por lo que la función es creciente cuando x > 2, la opción C."
         },
         "source": "vine-authored"
       }
@@ -177,8 +177,8 @@
       "inputHash": "528d09fa5492cc1b223d4b7c9e3281a7b68bbddc9b24e1d43ae0a2c9796f309d",
       "explanation": {
         "text": {
-          "en": "The slope through (0, 9) and (3, 0) is (0 - 9)/(3 - 0) = -3. Because (0, 9) gives a y-intercept of 9, the equation is y = -3x + 9, choice B.",
-          "es": "La pendiente entre (0, 9) y (3, 0) es (0 - 9)/(3 - 0) = -3. Como (0, 9) da una intersección con y de 9, la ecuación es y = -3x + 9, la opción B."
+          "en": "The slope through (0, 9) and (3, 0) is (0 − 9)/(3 − 0) = −3. Because (0, 9) gives a y-intercept of 9, the equation is y = −3x + 9, choice B.",
+          "es": "La pendiente entre (0, 9) y (3, 0) es (0 − 9)/(3 − 0) = −3. Como (0, 9) da una intersección con y de 9, la ecuación es y = −3x + 9, la opción B."
         },
         "source": "vine-authored"
       }
@@ -187,8 +187,8 @@
       "inputHash": "610e4224a8c49a30d253c1550757689482ee5d0bacfbf318239380ba3448b483",
       "explanation": {
         "text": {
-          "en": "Distribute and solve: 3x - 2 = 7x + 35, so -37 = 4x. Dividing by 4 gives x = -37/4, which is choice A.",
-          "es": "Se distribuye y se resuelve: 3x - 2 = 7x + 35, de modo que -37 = 4x. Al dividir entre 4 se obtiene x = -37/4, que es la opción A."
+          "en": "Distribute and solve: 3x − 2 = 7x + 35, so −37 = 4x. Dividing by 4 gives x = −37/4, which is choice A.",
+          "es": "Se distribuye y se resuelve: 3x − 2 = 7x + 35, de modo que −37 = 4x. Al dividir entre 4 se obtiene x = −37/4, que es la opción A."
         },
         "source": "vine-authored"
       }
@@ -197,8 +197,8 @@
       "inputHash": "f9baf94e9be5c889aa50c67599987690bd1afe8cd0be4b486644609ce7127910",
       "explanation": {
         "text": {
-          "en": "Reflecting over the y-axis sends A(-3, 5) to (3, 5). Translating that image 1 unit right and 5 units down gives (4, 0), which is D, and the same sequence maps B and C to E and F; therefore choice D is correct.",
-          "es": "Reflejar sobre el eje y lleva A(-3, 5) a (3, 5). Trasladar esa imagen 1 unidad a la derecha y 5 hacia abajo da (4, 0), que es D, y la misma secuencia lleva B y C a E y F; por eso corresponde la opción D."
+          "en": "Reflecting over the y-axis sends A(−3, 5) to (3, 5). Translating that image 1 unit right and 5 units down gives (4, 0), which is D, and the same sequence maps B and C to E and F; therefore choice D is correct.",
+          "es": "Reflejar sobre el eje y lleva A(−3, 5) a (3, 5). Trasladar esa imagen 1 unidad a la derecha y 5 hacia abajo da (4, 0), que es D, y la misma secuencia lleva B y C a E y F; por eso corresponde la opción D."
         },
         "source": "vine-authored"
       }
@@ -207,8 +207,8 @@
       "inputHash": "d2ccfdff5a3950811d33e1d173b19de4b75e28ca8b05b28786aa2dee37584b9c",
       "explanation": {
         "text": {
-          "en": "The angles labeled (4x - 15)° and 115° are vertical angles, so they are equal. Solving 4x - 15 = 115 gives 4x = 130 and x = 32.5, choice C.",
-          "es": "Los ángulos marcados (4x - 15)° y 115° son ángulos opuestos por el vértice, así que son iguales. Al resolver 4x - 15 = 115 se obtiene 4x = 130 y x = 32.5, la opción C."
+          "en": "The angles labeled (4x − 15)° and 115° are vertical angles, so they are equal. Solving 4x − 15 = 115 gives 4x = 130 and x = 32.5, choice C.",
+          "es": "Los ángulos marcados (4x − 15)° y 115° son ángulos opuestos por el vértice, así que son iguales. Al resolver 4x − 15 = 115 se obtiene 4x = 130 y x = 32.5, la opción C."
         },
         "source": "vine-authored"
       }
@@ -217,8 +217,8 @@
       "inputHash": "99909460c11c31f2747218819b074c4ed4c879242011680472c72626966e41de",
       "explanation": {
         "text": {
-          "en": "The clockwise rotation sends A(-2, 3) to X(3, 2), B(-5, 1) to Y(1, 5), and C(-2, 1) to Z(1, 2). Rotations preserve angle measure, so corresponding angles B and Y are congruent, choice B.",
-          "es": "La rotación en sentido horario lleva A(-2, 3) a X(3, 2), B(-5, 1) a Y(1, 5) y C(-2, 1) a Z(1, 2). Las rotaciones conservan los ángulos, así que B e Y son congruentes, la opción B."
+          "en": "The clockwise rotation sends A(−2, 3) to X(3, 2), B(−5, 1) to Y(1, 5), and C(−2, 1) to Z(1, 2). Rotations preserve angle measure, so corresponding angles B and Y are congruent, choice B.",
+          "es": "La rotación en sentido horario lleva A(−2, 3) a X(3, 2), B(−5, 1) a Y(1, 5) y C(−2, 1) a Z(1, 2). Las rotaciones conservan los ángulos, así que B e Y son congruentes, la opción B."
         },
         "source": "vine-authored"
       }
@@ -227,8 +227,8 @@
       "inputHash": "e1e222621de30bce52f37c1450419dba5ed596acc0c60c1af23aeae633b27168",
       "explanation": {
         "text": {
-          "en": "The line crosses the y-axis at 4. Using the intercepts (0, 4) and (6, 0), its slope is (0 - 4)/(6 - 0) = -4/6 = -2/3, so choice C gives both the correct rate of change and y-intercept.",
-          "es": "La recta cruza el eje y en 4. Con las intersecciones (0, 4) y (6, 0), su pendiente es (0 - 4)/(6 - 0) = -4/6 = -2/3, así que la opción C da la tasa de cambio y la intersección correctas."
+          "en": "The line crosses the y-axis at 4. Using the intercepts (0, 4) and (6, 0), its slope is (0 − 4)/(6 − 0) = −4/6 = −2/3, so choice C gives both the correct rate of change and y-intercept.",
+          "es": "La recta cruza el eje y en 4. Con las intersecciones (0, 4) y (6, 0), su pendiente es (0 − 4)/(6 − 0) = −4/6 = −2/3, así que la opción C da la tasa de cambio y la intersección correctas."
         },
         "source": "vine-authored"
       }
@@ -247,8 +247,8 @@
       "inputHash": "49153b2d5e912f57784824546addc389c4f5eaef92a265ea9bd936a07aac0be0",
       "explanation": {
         "text": {
-          "en": "A translation preserves lengths, so A′B′ has the same length as AB. Points A(-4, 3) and B(-4, -3) differ vertically by |3 - (-3)| = 6 units, making choice B correct.",
-          "es": "Una traslación conserva las longitudes, así que A′B′ mide lo mismo que AB. Los puntos A(-4, 3) y B(-4, -3) difieren verticalmente por |3 - (-3)| = 6 unidades, por lo que corresponde la opción B."
+          "en": "A translation preserves lengths, so A′B′ has the same length as AB. Points A(−4, 3) and B(−4, −3) differ vertically by |3 − (−3)| = 6 units, making choice B correct.",
+          "es": "Una traslación conserva las longitudes, así que A′B′ mide lo mismo que AB. Los puntos A(−4, 3) y B(−4, −3) difieren verticalmente por |3 − (−3)| = 6 unidades, por lo que corresponde la opción B."
         },
         "source": "vine-authored"
       }
@@ -277,8 +277,8 @@
       "inputHash": "a155296976e040910c8accf8e1a8f613065d0b3b8b81afc3292055b0a589d366",
       "explanation": {
         "text": {
-          "en": "Distributing gives 7 + 2x = 5x - 10 + 2, or 7 + 2x = 5x - 8. Adding 8 and subtracting 2x yields 15 = 3x, so x = 5, choice B.",
-          "es": "Al distribuir se obtiene 7 + 2x = 5x - 10 + 2, o 7 + 2x = 5x - 8. Al sumar 8 y restar 2x queda 15 = 3x, así que x = 5, la opción B."
+          "en": "Distributing gives 7 + 2x = 5x − 10 + 2, or 7 + 2x = 5x − 8. Adding 8 and subtracting 2x yields 15 = 3x, so x = 5, choice B.",
+          "es": "Al distribuir se obtiene 7 + 2x = 5x − 10 + 2, o 7 + 2x = 5x − 8. Al sumar 8 y restar 2x queda 15 = 3x, así que x = 5, la opción B."
         },
         "source": "vine-authored"
       }
@@ -317,8 +317,8 @@
       "inputHash": "e341ef3e244f2b36db161831be16f7d11f387e9ca63d308769369439fbdeda4d",
       "explanation": {
         "text": {
-          "en": "Expanding both sides gives 8x + 10 = 10x + 5 - 2x = 8x + 5. Subtracting 8x leaves the false statement 10 = 5, so no value of x works and choice A is true.",
-          "es": "Al desarrollar ambos lados se obtiene 8x + 10 = 10x + 5 - 2x = 8x + 5. Al restar 8x queda la afirmación falsa 10 = 5, así que ningún valor de x funciona y la opción A es verdadera."
+          "en": "Expanding both sides gives 8x + 10 = 10x + 5 − 2x = 8x + 5. Subtracting 8x leaves the false statement 10 = 5, so no value of x works and choice A is true.",
+          "es": "Al desarrollar ambos lados se obtiene 8x + 10 = 10x + 5 − 2x = 8x + 5. Al restar 8x queda la afirmación falsa 10 = 5, así que ningún valor de x funciona y la opción A es verdadera."
         },
         "source": "vine-authored"
       }

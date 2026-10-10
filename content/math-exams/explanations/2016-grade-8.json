@@ -107,8 +107,8 @@
       "inputHash": "16821bf417f65ba571b95c528206e6118c15a9a317234f6e3e2065df79a27f1e",
       "explanation": {
         "text": {
-          "en": "Multiplying powers with base 5 means adding exponents: 5^(−8) × 5⁴ = 5^(−4). A negative exponent gives 5^(−4) = 1/5⁴.",
-          "es": "Al multiplicar potencias de base 5 se suman los exponentes: 5^(−8) × 5⁴ = 5^(−4). El exponente negativo da 5^(−4) = 1/5⁴."
+          "en": "Multiplying powers with base 5 means adding exponents: 5⁻⁸ × 5⁴ = 5⁻⁴. A negative exponent gives 5⁻⁴ = 1/5⁴.",
+          "es": "Al multiplicar potencias de base 5 se suman los exponentes: 5⁻⁸ × 5⁴ = 5⁻⁴. El exponente negativo da 5⁻⁴ = 1/5⁴."
         },
         "source": "vine-authored"
       }
@@ -227,8 +227,8 @@
       "inputHash": "03603320048f63d045a302084f6f4daf3ea1f96ebf6205313a9cac7cf4f165eb",
       "explanation": {
         "text": {
-          "en": "Company P earns 0.4 ÷ 10 = 0.04 vacation hour per work hour, while the graph for S shows 0.06. At 2,080 hours, the difference is (0.06 − 0.04)(2,080) = 41.6, about 42 hours in favor of S.",
-          "es": "La compañía P da 0.4 ÷ 10 = 0.04 hora de vacaciones por hora trabajada, y S da 0.06. Con 2,080 horas, la diferencia es (0.06 − 0.04)(2,080) = 41.6, unas 42 horas más en S."
+          "en": "Company P earns 0.4 ÷ 10 = 0.04 vacation hour per work hour, while the graph for S passes through (100, 6), so S earns 6 ÷ 100 = 0.06 vacation hour per work hour. At 2,080 hours, the difference is (0.06 − 0.04)(2,080) = 41.6, about 42 hours in favor of S.",
+          "es": "La compañía P da 0.4 ÷ 10 = 0.04 hora de vacaciones por hora trabajada, y la gráfica de S pasa por (100, 6), así que S da 6 ÷ 100 = 0.06 hora de vacaciones por hora trabajada. Con 2,080 horas, la diferencia es (0.06 − 0.04)(2,080) = 41.6, unas 42 horas más en S."
         },
         "source": "vine-authored"
       }
@@ -247,8 +247,8 @@
       "inputHash": "9ecee19b16ece9404c6bb4538235cb4aea7a4c6df4396d890ffcd1f3d461e6e3",
       "explanation": {
         "text": {
-          "en": "First, (4.8 × 10⁸) ÷ (1.2 × 10⁴) = 4 × 10⁴. Then (4 × 10⁴)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088.",
-          "es": "Primero, (4.8 × 10⁸) ÷ (1.2 × 10⁴) = 4 × 10⁴. Luego, (4 × 10⁴)(2.2 × 10^(−6)) = 8.8 × 10^(−2) = 0.088."
+          "en": "First, (4.8 × 10⁸) ÷ (1.2 × 10⁴) = 4 × 10⁴. Then (4 × 10⁴)(2.2 × 10⁻⁶) = 8.8 × 10⁻² = 0.088.",
+          "es": "Primero, (4.8 × 10⁸) ÷ (1.2 × 10⁴) = 4 × 10⁴. Luego, (4 × 10⁴)(2.2 × 10⁻⁶) = 8.8 × 10⁻² = 0.088."
         },
         "source": "vine-authored"
       }

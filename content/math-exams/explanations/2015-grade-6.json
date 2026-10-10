@@ -134,7 +134,7 @@
       }
     },
     "nysed-2015-g6-mc-q14": {
-      "inputHash": "23e6c828d4d590ba131e65a664259b3cf13e2b1437c992e9c62f756c65435e68",
+      "inputHash": "2abcd1861b800a1ad18e65f4aeca9417d75ff8cba356735437840a61ea5762e7",
       "explanation": {
         "text": {
           "en": "At step n, Madison's number is 4n and Pedro's is 12n. Since 12n = 3(4n), every Pedro number is three times its corresponding Madison number.",
@@ -144,7 +144,7 @@
       }
     },
     "nysed-2015-g6-mc-q15": {
-      "inputHash": "75144a92cddeb9c6da94eb2484fb3bcfc4bbe322032d89adf23485ad01eca319",
+      "inputHash": "5b7c37bacd8d0fd88f02e635d69704eac9b2b904bbebd379d3d5f04d5c781ae9",
       "explanation": {
         "text": {
           "en": "Kelly saves $5 for each of w weeks, so repeated addition is represented by multiplication. Her total savings are 5 × w = 5w dollars.",
@@ -154,7 +154,7 @@
       }
     },
     "nysed-2015-g6-mc-q16": {
-      "inputHash": "ad77b411481a3a20b5e166983f9736611f92cc0edc9b26f977cc08cff378d655",
+      "inputHash": "fd5cab54f19275f95a2a3e6df323af6d4f0b884749d7955864541e8ea8de4cb2",
       "explanation": {
         "text": {
           "en": "The prime factorizations are 56 = 2³ × 7 and 92 = 2² × 23. Their greatest shared factor is 2² = 4.",
@@ -164,7 +164,7 @@
       }
     },
     "nysed-2015-g6-mc-q17": {
-      "inputHash": "ff452fa08ffbf0b802ce8b8cd955f6143ce9b0af76cf2331b857ac370a68fb23",
+      "inputHash": "87b49d3c071da1248a19fc2e98c445609a9330e921c2234fb3549f4e9a5a58d0",
       "explanation": {
         "text": {
           "en": "Multiply the aquarium's dimensions: 22.9 × 7.5 × 4.6 = 790.05 cubic meters. Rounded to the nearest cubic meter, the volume is 790.",
@@ -174,7 +174,7 @@
       }
     },
     "nysed-2015-g6-mc-q18": {
-      "inputHash": "8525722851a2ec84b31ddebd169568861948862c60ba452cbd333140b7f2133f",
+      "inputHash": "8e2c6b429f9981e93c92dc59a6a42df8b31dbcf03b782dbaad62410d43b6279e",
       "explanation": {
         "text": {
           "en": "The prism is 5 cubes long, 4 cubes high, and 2 cubes deep, so it contains 5 × 4 × 2 = 40 cubes. Each 2 1/2-inch cube has volume 2.5³ = 15.625, giving 40 × 15.625 = 625 cubic inches.",
@@ -184,7 +184,7 @@
       }
     },
     "nysed-2015-g6-mc-q19": {
-      "inputHash": "90bf3ec5dee5ddd806e6f980ebe688024299bf59f363e63980110af4a4246698",
+      "inputHash": "c8bf3357b3ad09771c3b22fd96da140e15d81fc4a6a3db70bb10e81dd7e10940",
       "explanation": {
         "text": {
           "en": "At 3 meters per hour, the time for a 12-meter change is distance divided by rate. Thus, 12 ÷ 3 = 4 hours.",
@@ -194,7 +194,7 @@
       }
     },
     "nysed-2015-g6-mc-q20": {
-      "inputHash": "bba6c3caf6ea922c7a8e14d6d5719d0f587f53cbd5bf5b7435ba219aa3f00475",
+      "inputHash": "6313caa09bd039e6ce3287997f35cde5ce2c9cd29cbaeb923fea3a009839440e",
       "explanation": {
         "text": {
           "en": "Two cases contain 2 × 12 = 24 packages, so each package costs $48 ÷ 24 = $2. Ordering 180 packages therefore costs 180 × $2 = $360.",
@@ -204,7 +204,7 @@
       }
     },
     "nysed-2015-g6-mc-q21": {
-      "inputHash": "c7819aad4f1ee5a7461be13f0bfeee54a8379ec3fadffee4a434717fb1e4dd6f",
+      "inputHash": "aee367d3d1280dda6542d7177a17b0853d1c1579c3808532f2fc236171bff6d3",
       "explanation": {
         "text": {
           "en": "Distribute 9 across y + 3: 9(y + 3) = 9y + 27. By commutativity, this is the same as 27 + 9y.",
@@ -214,7 +214,7 @@
       }
     },
     "nysed-2015-g6-mc-q22": {
-      "inputHash": "a1d65b57675f21e7056cb641bfc6b306effb4e25ce07664cf5259a04be65c2a1",
+      "inputHash": "ea0d3f841e8acccc927b490bc49a83d584360929965071b32d830fcbc5da63d9",
       "explanation": {
         "text": {
           "en": "Maple's fifth number is 6 + 4(6) = 30, while Oak's fifth number is 4 + 4(8) = 36. The last Oak number is 36 − 30 = 6 greater.",
@@ -224,7 +224,7 @@
       }
     },
     "nysed-2015-g6-mc-q23": {
-      "inputHash": "a6e21feae6beaafc62321a35eae1bb5ee501ea9658b4cef776fc0928fb162229",
+      "inputHash": "8e27eb9b2e858e988b2fa4200031a31123e2f768172fed0db131d966e8424bbc",
       "explanation": {
         "text": {
           "en": "Substitute x = 2 into 3x + 2 = 8: 3(2) + 2 = 6 + 2 = 8. Thus, x = 2 satisfies that equation.",
@@ -234,7 +234,7 @@
       }
     },
     "nysed-2015-g6-mc-q24": {
-      "inputHash": "5c5a80887c19f04760bc6785bf6dfee668e62878de17e295e105a47a053ee97c",
+      "inputHash": "9d768291a8fe88503bcba34a7b24f0d813f28411ebf31a9e05740328217e9332",
       "explanation": {
         "text": {
           "en": "If 360 is 20% of the audience, then 0.20 × total = 360. Dividing gives total = 360 ÷ 0.20 = 1,800 people.",
@@ -244,7 +244,7 @@
       }
     },
     "nysed-2015-g6-mc-q25": {
-      "inputHash": "a8cd722a13ed130547293810979b8ea929beb53a51b736ab135a010e8fe56b34",
+      "inputHash": "e2491b1d6cc43aa7f38652508a1fc38081e4082d21a55891cc1c4b4d18f596dd",
       "explanation": {
         "text": {
           "en": "The net has three rectangular faces that wrap around and two congruent triangular ends. It forms the solid in B because those are exactly the faces of a triangular prism.",
@@ -254,7 +254,7 @@
       }
     },
     "nysed-2015-g6-mc-q26": {
-      "inputHash": "89e645ca254611528fbfe83781c40f232a46ab6644f1eedde45b6d793642d09d",
+      "inputHash": "8b19249a20c5041c94d3cd40de664e3161459db454a7145fba0bf92ee7274fa6",
       "explanation": {
         "text": {
           "en": "Each shaded end is a triangle with base 1.1 inches and height 3.8 inches. Their combined area is 2 × (1/2 × 1.1 × 3.8) = 4.18 square inches.",
@@ -264,7 +264,7 @@
       }
     },
     "nysed-2015-g6-mc-q27": {
-      "inputHash": "26194ce80f9360838b5f6d2bb56feda15144e9c912e831a21ee434629f504e0e",
+      "inputHash": "1e543a44611d9b101683ab299f909fd9dfa015696c60d630ed2c1261b3a315cf",
       "explanation": {
         "text": {
           "en": "The expression adds six identical terms g. Repeated addition gives g + g + g + g + g + g = 6g.",
@@ -274,7 +274,7 @@
       }
     },
     "nysed-2015-g6-mc-q28": {
-      "inputHash": "808e16b2f54a210e4e2a7041b1bc1e823967e80c4e77d7ee28fa20dab5e8ee70",
+      "inputHash": "ef2123ebe8604ff71e6010bbe12591de661a31eff989aa8b29712528d9ac73a1",
       "explanation": {
         "text": {
           "en": "On a number line, smaller numbers lie farther left. Since −9 < −8, −9 must be plotted to the left of −8.",

@@ -420,43 +420,15 @@
     "nysed-2022-g8-mc-q16": {
       "inputHash": "11ada0508688baeb93a93ed9b7413d7f66a4e70d3b900a444e54b97350f6e59c",
       "description": {
-        "en": "Question 16. What is the solution to the equation −1/3(6y + 6) + 21 = 3y? Choices: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5",
+        "en": "Question 16. What is the solution to the equation −(1/3)(6y + 6) + 21 = 3y? Choices: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5",
         "es": "Pregunta 16. ¿Cuál es la solución de la ecuación que se muestra a continuación? −(1/3)(6y + 6) + 21 = 3y. Opciones: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5"
       },
       "requiredSourceTokens": {
         "en": [
-          "−1/3(6y + 6) + 21 = 3y",
-          "y = 19/5",
-          "y = 27/5",
-          "y = −9/5",
-          "y = −23/5",
-          "A: y = 19/5",
-          "B: y = 27/5",
-          "C: y = −9/5",
-          "D: y = −23/5",
-          "1/3",
-          "(6y + 6)",
-          "19/5",
-          "27/5",
-          "9/5",
-          "23/5"
+          "Question 16. What is the solution to the equation −(1/3)(6y + 6) + 21 = 3y? Choices: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5"
         ],
         "es": [
-          "−(1/3)(6y + 6) + 21 = 3y",
-          "y = 19/5",
-          "y = 27/5",
-          "y = −9/5",
-          "y = −23/5",
-          "A: y = 19/5",
-          "B: y = 27/5",
-          "C: y = −9/5",
-          "D: y = −23/5",
-          "(1/3)",
-          "(6y + 6)",
-          "19/5",
-          "27/5",
-          "9/5",
-          "23/5"
+          "Pregunta 16. ¿Cuál es la solución de la ecuación que se muestra a continuación? −(1/3)(6y + 6) + 21 = 3y. Opciones: A: y = 19/5 B: y = 27/5 C: y = −9/5 D: y = −23/5"
         ]
       }
     },

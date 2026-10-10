@@ -11,34 +11,14 @@
       "inputHash": "18406e77cd71dfa51ce74c08845cf5d4c7104e312a345bbbfd560f092df8f03d",
       "description": {
         "en": "Question 1. Mr. Joseph paid a total of $540.00 for a new gaming system and games. He paid $300.00 for the gaming system and $60.00 for each game. How many games did Mr. Joseph buy? Choices: A: 3. B: 4. C: 5. D: 9.",
-        "es": "Pregunta 1. El Sr. Joseph pagó un total de $540.00 por una nueva consola de videojuegos y juegos. Pagó $300.00 por la consola de videojuegos y $60.00 por cada juego. ¿Cuántos juegos compró el Sr. Joseph? Opciones: A: 3 juegos. B: 4 juegos. C: 5 juegos. D: 9 juegos."
+        "es": "Pregunta 1. El Sr. Joseph pagó un total de $540.00 por una nueva consola de videojuegos y juegos. Pagó $300.00 por la consola de videojuegos y $60.00 por cada juego. ¿Cuántos juegos compró el Sr. Joseph? Opciones: A: 3. B: 4. C: 5. D: 9."
       },
       "requiredSourceTokens": {
         "en": [
-          "$540.00",
-          "$300.00",
-          "$60.00",
-          "3",
-          "4",
-          "5",
-          "9",
-          "A: 3",
-          "B: 4",
-          "C: 5",
-          "D: 9"
+          "Question 1. Mr. Joseph paid a total of $540.00 for a new gaming system and games. He paid $300.00 for the gaming system and $60.00 for each game. How many games did Mr. Joseph buy? Choices: A: 3. B: 4. C: 5. D: 9."
         ],
         "es": [
-          "$540.00",
-          "$300.00",
-          "$60.00",
-          "3",
-          "4",
-          "5",
-          "9",
-          "A: 3 juegos",
-          "B: 4 juegos",
-          "C: 5 juegos",
-          "D: 9 juegos"
+          "Pregunta 1. El Sr. Joseph pagó un total de $540.00 por una nueva consola de videojuegos y juegos. Pagó $300.00 por la consola de videojuegos y $60.00 por cada juego. ¿Cuántos juegos compró el Sr. Joseph? Opciones: A: 3. B: 4. C: 5. D: 9."
         ]
       }
     },
@@ -173,32 +153,14 @@
       "inputHash": "3a152a6a4e0410348cb2c006604d2c9ab56801a7f40ec2eaa4dd820f9d825d4f",
       "description": {
         "en": "Question 5. A water hose is being used to fill a 3,000-gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in 2 1/2 hours, how many gallons of water were added to the pool per hour? Choices: A: 300. B: 600. C: 1,200. D: 7,500.",
-        "es": "Pregunta 5. Se está usando una manguera de agua para llenar una piscina de 3,000 galones. El agua fluye a una tasa constante a través de la manguera. Si la piscina se llena por completo en 2 1/2 horas, ¿cuántos galones de agua se agregaron a la piscina por hora? Opciones: A: 300 galones por hora. B: 600 galones por hora. C: 1,200 galones por hora. D: 7,500 galones por hora."
+        "es": "Pregunta 5. Se está usando una manguera de agua para llenar una piscina de 3,000 galones. El agua fluye a una tasa constante a través de la manguera. Si la piscina se llena por completo en 2 1/2 horas, ¿cuántos galones de agua se agregaron a la piscina por hora? Opciones: A: 300. B: 600. C: 1,200. D: 7,500."
       },
       "requiredSourceTokens": {
         "en": [
-          "3,000-gallon",
-          "2 1/2",
-          "300",
-          "600",
-          "1,200",
-          "7,500",
-          "A: 300",
-          "B: 600",
-          "C: 1,200",
-          "D: 7,500"
+          "Question 5. A water hose is being used to fill a 3,000-gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in 2 1/2 hours, how many gallons of water were added to the pool per hour? Choices: A: 300. B: 600. C: 1,200. D: 7,500."
         ],
         "es": [
-          "3,000",
-          "2 1/2",
-          "300",
-          "600",
-          "1,200",
-          "7,500",
-          "A: 300 galones por hora",
-          "B: 600 galones por hora",
-          "C: 1,200 galones por hora",
-          "D: 7,500 galones por hora"
+          "Pregunta 5. Se está usando una manguera de agua para llenar una piscina de 3,000 galones. El agua fluye a una tasa constante a través de la manguera. Si la piscina se llena por completo en 2 1/2 horas, ¿cuántos galones de agua se agregaron a la piscina por hora? Opciones: A: 300. B: 600. C: 1,200. D: 7,500."
         ]
       }
     },
@@ -206,34 +168,14 @@
       "inputHash": "7b5a04042d1f5f73b3d6338092104c026d3e662bfe7d15af9aa2d2a031ba98b0",
       "description": {
         "en": "Question 6. Shameka is saving for a new scooter that costs $248.00. She has already saved $100.00. She wants to buy the scooter in 8 weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal? Choices: A: $16.45. B: $18.50. C: $31.00. D: $43.50.",
-        "es": "Pregunta 6. Shameka está ahorrando para comprar una motoneta nueva que cuesta $248.00. Ya ha ahorrado $100.00. Quiere comprar la motoneta en 8 semanas ahorrando la misma cantidad de dinero cada semana. ¿Cuál es la menor cantidad de dinero, en dólares, que Shameka puede ahorrar cada semana para alcanzar su objetivo? Opciones: A: $16.45 por semana. B: $18.50 por semana. C: $31.00 por semana. D: $43.50 por semana."
+        "es": "Pregunta 6. Shameka está ahorrando para comprar una motoneta nueva que cuesta $248.00. Ya ha ahorrado $100.00. Quiere comprar la motoneta en 8 semanas ahorrando la misma cantidad de dinero cada semana. ¿Cuál es la menor cantidad de dinero, en dólares, que Shameka puede ahorrar cada semana para alcanzar su objetivo? Opciones: A: $16.45. B: $18.50. C: $31.00. D: $43.50."
       },
       "requiredSourceTokens": {
         "en": [
-          "$248.00",
-          "$100.00",
-          "8",
-          "$16.45",
-          "$18.50",
-          "$31.00",
-          "$43.50",
-          "A: $16.45",
-          "B: $18.50",
-          "C: $31.00",
-          "D: $43.50"
+          "Question 6. Shameka is saving for a new scooter that costs $248.00. She has already saved $100.00. She wants to buy the scooter in 8 weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal? Choices: A: $16.45. B: $18.50. C: $31.00. D: $43.50."
         ],
         "es": [
-          "$248.00",
-          "$100.00",
-          "8",
-          "$16.45",
-          "$18.50",
-          "$31.00",
-          "$43.50",
-          "A: $16.45 por semana",
-          "B: $18.50 por semana",
-          "C: $31.00 por semana",
-          "D: $43.50 por semana"
+          "Pregunta 6. Shameka está ahorrando para comprar una motoneta nueva que cuesta $248.00. Ya ha ahorrado $100.00. Quiere comprar la motoneta en 8 semanas ahorrando la misma cantidad de dinero cada semana. ¿Cuál es la menor cantidad de dinero, en dólares, que Shameka puede ahorrar cada semana para alcanzar su objetivo? Opciones: A: $16.45. B: $18.50. C: $31.00. D: $43.50."
         ]
       }
     },
@@ -282,42 +224,14 @@
       "inputHash": "5a4dcc095637c303c729f10ecfdc0088e3ca34492e1cace098b24c08f4e32ba9",
       "description": {
         "en": "Question 8. A student can choose one food item and one type of juice for breakfast. The available food items are egg, toast, pancakes, and sausage. The available types of juice are apple, grape, and orange. How many different breakfast combinations of one food item and one type of juice are available for the student to choose from? Choices: A: 3. B: 4. C: 7. D: 12.",
-        "es": "Pregunta 8. Un alumno puede elegir un alimento y un tipo de jugo para el desayuno. Los alimentos disponibles son huevos, tostadas, panqueques y salchichas. Los tipos de jugo disponibles son manzana, uva y naranja. ¿Cuántas combinaciones diferentes de desayuno de un alimento y un tipo de jugo están disponibles para que elija el alumno? Opciones: A: 3 combinaciones. B: 4 combinaciones. C: 7 combinaciones. D: 12 combinaciones."
+        "es": "Pregunta 8. Un alumno puede elegir un alimento y un tipo de jugo para el desayuno. Los alimentos disponibles son huevos, tostadas, panqueques y salchichas. Los tipos de jugo disponibles son manzana, uva y naranja. ¿Cuántas combinaciones diferentes de desayuno de un alimento y un tipo de jugo están disponibles para que elija el alumno? Opciones: A: 3. B: 4. C: 7. D: 12."
       },
       "requiredSourceTokens": {
         "en": [
-          "egg",
-          "toast",
-          "pancakes",
-          "sausage",
-          "apple",
-          "grape",
-          "orange",
-          "3",
-          "4",
-          "7",
-          "12",
-          "A: 3",
-          "B: 4",
-          "C: 7",
-          "D: 12"
+          "Question 8. A student can choose one food item and one type of juice for breakfast. The available food items are egg, toast, pancakes, and sausage. The available types of juice are apple, grape, and orange. How many different breakfast combinations of one food item and one type of juice are available for the student to choose from? Choices: A: 3. B: 4. C: 7. D: 12."
         ],
         "es": [
-          "huevos",
-          "tostadas",
-          "panqueques",
-          "salchichas",
-          "manzana",
-          "uva",
-          "naranja",
-          "3",
-          "4",
-          "7",
-          "12",
-          "A: 3 combinaciones",
-          "B: 4 combinaciones",
-          "C: 7 combinaciones",
-          "D: 12 combinaciones"
+          "Pregunta 8. Un alumno puede elegir un alimento y un tipo de jugo para el desayuno. Los alimentos disponibles son huevos, tostadas, panqueques y salchichas. Los tipos de jugo disponibles son manzana, uva y naranja. ¿Cuántas combinaciones diferentes de desayuno de un alimento y un tipo de jugo están disponibles para que elija el alumno? Opciones: A: 3. B: 4. C: 7. D: 12."
         ]
       }
     },

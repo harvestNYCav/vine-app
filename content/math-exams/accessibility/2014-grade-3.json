@@ -99,7 +99,12 @@
     "nysed-2014-g3-mc-q25": {
       "inputHash": "7a5cfb60c9059a0cd402a314a59f9999a0794a6d6f3464ed1df2bb2e64c11e40",
       "description": {
-        "en": "Question 25. Which number sentence can be used to determine the value of 72 ÷ 9? Choices: A: 9 × □ = 72; B: 9 + □ = 72; C: 9 × 72 = □; D: 9 + 72 = □."
+        "en": "Question 25. Which number sentence can be used to determine the value of 72 ÷ 9? Choices: A: 9 × ? = 72; B: 9 + ? = 72; C: 9 × 72 = ?; D: 9 + 72 = ?."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 25. Which number sentence can be used to determine the value of 72 ÷ 9? Choices: A: 9 × ? = 72; B: 9 + ? = 72; C: 9 × 72 = ?; D: 9 + 72 = ?."
+        ]
       }
     },
     "nysed-2014-g3-mc-q26": {

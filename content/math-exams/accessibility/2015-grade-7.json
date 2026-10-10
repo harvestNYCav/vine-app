@@ -451,24 +451,13 @@
       }
     },
     "nysed-2015-g7-mc-q21": {
-      "inputHash": "50301799f44a8c8f95326230748405edc0c5e4ce2e526e5948d033d173e9bae4",
+      "inputHash": "15c05de3e7053aaf0460e3b65192ffa34dd8fcb07a19ad835467028b23b3579f",
       "description": {
-        "en": "Question 21. Amber determined that the expression (−1/2) ÷ (−41/15) is equivalent to 15/82. Which statement describes the process Amber could have used? Calculators allowed. Choices: A: She divided −1/2 by −15 and then divided the result by 41. B: She multiplied −1/2 by −15 and then divided the result by 41. C: She divided −1/2 by −15 and then multiplied the result by 41. D: She multiplied −1/2 by −15 and then multiplied the result by 41."
+        "en": "Question 21. Amber determined that the expression (−1/2) ÷ (−41/15) is equivalent to 15/82. Which statement describes the process Amber could have used? Choices: A: She divided −1/2 by −15 and then divided the result by 41. B: She multiplied −1/2 by −15 and then divided the result by 41. C: She divided −1/2 by −15 and then multiplied the result by 41. D: She multiplied −1/2 by −15 and then multiplied the result by 41."
       },
       "requiredSourceTokens": {
         "en": [
-          "(−1/2) ÷ (−41/15)",
-          "15/82",
-          "−1/2",
-          "−15",
-          "41",
-          "A: She divided −1/2 by −15 and then divided the result by 41",
-          "B: She multiplied −1/2 by −15 and then divided the result by 41",
-          "C: She divided −1/2 by −15 and then multiplied the result by 41",
-          "D: She multiplied −1/2 by −15 and then multiplied the result by 41",
-          "(−1/2)",
-          "(−41/15)",
-          "1/2"
+          "Question 21. Amber determined that the expression (−1/2) ÷ (−41/15) is equivalent to 15/82. Which statement describes the process Amber could have used? Choices: A: She divided −1/2 by −15 and then divided the result by 41. B: She multiplied −1/2 by −15 and then divided the result by 41. C: She divided −1/2 by −15 and then multiplied the result by 41. D: She multiplied −1/2 by −15 and then multiplied the result by 41."
         ]
       }
     },

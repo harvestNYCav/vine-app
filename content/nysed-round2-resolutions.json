@@ -1,0 +1,2916 @@
+{
+  "schemaVersion": 1,
+  "review": "NYSED Round 2",
+  "baseCommit": "4dbc8959d0a206c34d7edc78584de70ac97342ef",
+  "findingsSha256": "90809f1c8ce0667f20dd1e2965d9f756575f509f9e8af2be95eef914bfd9caaf",
+  "findingCount": 174,
+  "answerKeyCount": 3422,
+  "answerKeysSha256": "72b3a898a61089d993531d49757cc6ca6ca660175192fea889ec3d1e167d023c",
+  "findings": [
+    {
+      "index": 0,
+      "id": "nysed-ela-2014-g3-mc-q14",
+      "category": "explanation",
+      "severity": "high",
+      "finding": "Explanation names the wrong answer choice. It says \"Students who choose “B”\" but KEY is C. B is \"The details give examples of kids enjoying the snow\"; the explanation actually argues for C (exercise). Regression introduced by the PR (old text said \"C\"). Cross-ref round-1 hat finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 1,
+      "id": "nysed-ela-2023-g3-mc-q4",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "Round-1 finding not addressed although ledger says fixed. The explanation still hedges (\"rather than conclusively proving their current heights\") and misattributes the earlier measurement to \"The mark\".",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2023-grade-3.json",
+        "content/ela-exams/explanations/2023-grade-3.json"
+      ]
+    },
+    {
+      "index": 2,
+      "id": "nysed-ela-2024-g3-mc-q26",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "Round-1 finding not addressed although ledger says fixed. The explanation still argues against its own key (\"Choice C is the closest fit... although Molly reluctantly accepts...\") and omits the evidence.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2024-grade-3.json",
+        "content/ela-exams/explanations/2024-grade-3.json"
+      ]
+    },
+    {
+      "index": 3,
+      "id": "nysed-ela-2026-g3-mc-q3",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Round-1 finding not addressed although ledger says fixed. Explanation still says choice A \"describes his purpose rather than the exact meaning of the word\" — an abstract hedge against the key for 3rd graders.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2026-grade-3.json",
+        "content/ela-exams/explanations/2026-grade-3.json"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "nysed-ela-2022-g4-mc-q5",
+      "category": "passage",
+      "severity": "medium",
+      "finding": "New table transcript (nysed-ela-2022-g4-stimulus-1-6) mis-transcribes the Jacana row label as \"(a marsh bird)\". The image says \"(a small bird)\". The table's size cues (large bird / small bird / mother owl much bigger) are what distractor C (\"sizes of father birds\") plays on, so the wrong word changes table content the item uses. Cross-ref round-1 high table finding.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2022-grade-4.json",
+        "content/ela-exams/explanations/2022-grade-4.json"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "nysed-ela-2023-g4-mc-q31",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "The fix replaced the whole explanation with the one-sentence suggestion, deleting the evidence. It now only asserts the fact \"captures the article's broad focus\" without saying what that focus is. The article never literally says \"thousands of years\" (it says \"dates back centuries\" and \"ancient Etruscans\"), so a 4th grader cannot see why C is right. Cross-ref round-1 finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2023-grade-4.json",
+        "content/ela-exams/explanations/2023-grade-4.json"
+      ]
+    },
+    {
+      "index": 6,
+      "id": "nysed-ela-2014-g3-mc-q5",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The misquote fix left a verbless clause: \"...moves the baby to her shoulder, and two other otters “tumbling over and over.”\" Also \"two other otters\" vs passage \"Two otters\". Cross-ref round-1 finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 7,
+      "id": "nysed-ela-2021-g5-mc-q16",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The quote fix created a tense clash: \"he turns and “marched back”\". The round-1 suggested wording had the same problem. Cross-ref round-1 finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2021-grade-5.json",
+        "content/ela-exams/explanations/2021-grade-5.json"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "nysed-ela-2021-g5-mc-q1",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Person mismatch in the corrected quote: \"The narrator says they “held our breath”\".",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2021-grade-5.json",
+        "content/ela-exams/explanations/2021-grade-5.json"
+      ]
+    },
+    {
+      "index": 9,
+      "id": "nysed-ela-2014-g3-mc-q6",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover spaced hyphen used as a dash in the edited official rationale (\"want the fish - Maggie tossed...\"). Early readers/screen readers may read it as a hyphen.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "nysed-ela-2016-g3-mc-q3",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover (retained-cosmetic) whitespace: crops for 2016 g3 q3, q6, q15, q18, q31 still have ~40-55% blank space below choice D. 2016 g5 q3 has the same bottom whitespace. Content complete. Cross-ref round-1 formatting finding.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-3.json",
+        "content/ela-exams/explanations/2016-grade-3.json"
+      ]
+    },
+    {
+      "index": 11,
+      "id": "nysed-ela-2025-g3-stimulus-19-23",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new \"predators\" gloss is placed after the heading \"Many Different Dens\", between the heading and paragraph 8. In the image the box follows paragraph 7 and comes before that heading. A screen reader hears the heading, then an unrelated gloss, then para 8. Cross-ref round-1 finding (\"after paragraph 7\").",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2025-grade-3.json"
+    },
+    {
+      "index": 12,
+      "id": "nysed-ela-2013-g5-stimulus-1-6",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new wind-tunnel diagram description is inserted after the heading \"How Does NASA Use Wind Tunnels for Aircraft?\", splitting that heading from paragraph 3. In the booklet, the diagram sits beside paragraph 2 under \"How do Wind Tunnels Work?\". Cross-ref round-1 finding (\"After paragraph 2\").",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2013-grade-5.json"
+    },
+    {
+      "index": 13,
+      "id": "nysed-ela-2021-g5-stimulus-15-21",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The 2021 duplicate of the 2019 MacTavish passage still has the page-break blank line that was removed from 2019 (\"Gregor examined the old\" / blank / \"sheep with spindly legs...\"). 2021 q16 in this packet uses this passage. Cross-ref round-1 2019 g5 para 4 finding.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2021-grade-5.json"
+    },
+    {
+      "index": 14,
+      "id": "nysed-ela-2021-g5-stimulus-8-14",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The 2021 duplicate of the 2019 snowflake passage still has the page-break blank line removed from 2019 (\"He waited for another\" / blank / \"season of snow.\"). Cross-ref round-1 2019 g5 para 7 finding.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2021-grade-5.json"
+    },
+    {
+      "index": 15,
+      "id": "nysed-ela-2026-g5-stimulus-22-27",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "The 2026 g4 [Sidebar:] fix was not applied to other grade 3-5 transcripts. Many glosses are still bare lines, and several are split mid-definition across two lines. This is the same problem round-1 flagged for 2026 g4 (fossil fuels). The round-1 premise that 2022-2025 transcripts already use markers is also only partly true.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2026-grade-5.json"
+    },
+    {
+      "index": 16,
+      "id": "nysed-ela-2026-g4-stimulus-20-24",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The \"Balloon Firsts\" table is paraphrased as a \"[Chart: ...]\" rather than transcribed. Wording differs from the image (\"on a hot-air balloon\" -> \"in\", \"First time humans take flight in hydrogen balloon\" -> \"humans first fly in a hydrogen balloon\", \"First balloon flight in the United States\" -> \"the first balloon flight takes place...\"). This is the same class as the 2018 g4 snow-leopard table that this PR made verbatim.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2026-grade-4.json"
+    },
+    {
+      "index": 17,
+      "id": "nysed-ela-2026-g4-stimulus-26-31",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "The diagram title is now read twice: the heading line \"How Solar Panels Power a School\" is followed by \"[Diagram: How Solar Panels Power a School. ...\".",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2026-grade-4.json"
+    },
+    {
+      "index": 18,
+      "id": "nysed-ela-2023-g3-stimulus-19-23",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The regenerated facsimile header reads \"Read this story. Then answer questions 19 through 25.\" The app has only questions 19-23 for this passage. The new booklet-number note in CollapsiblePassage.tsx only renders for /nysed/ela/201[3-5]/ images, so 2023 passages get no explanation.",
+      "status": "fixed",
+      "resolution": "Corrected ruler choice order and bilingual notice; explain booklet question numbering for every released year.",
+      "contentPath": "content/ela-exams/transcripts/2023-grade-3.json"
+    },
+    {
+      "index": 19,
+      "id": "nysed-ela-2022-g6-mc-q11",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "Leftover from the round-1 finding. The explanation justifies B mainly by its position ('Immediately after', 'beside Merlin’s statement') and never explains how fear causes the ignorance. It also concedes that distractor D's habits 'help explain why bats are hard to observe', which paragraph 5 links directly to bats being misunderstood. A student could leave thinking D is just as good, or learn a 'pick the nearest sentence' strategy.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2022-grade-6.json",
+        "content/ela-exams/explanations/2022-grade-6.json"
+      ]
+    },
+    {
+      "index": 20,
+      "id": "nysed-ela-2026-g6-mc-q20",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation says the keepers 'help them join wild herds'. In the passage, older previously released orphans introduce the newcomers to the wild herds. The keepers take them into the wild and show them what to eat.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2026-grade-6.json",
+        "content/ela-exams/explanations/2026-grade-6.json"
+      ]
+    },
+    {
+      "index": 21,
+      "id": "nysed-ela-2014-g6-mc-q15",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the explanation's closing quotation mark is still an opening curly quote.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2014-grade-6.json"
+      ]
+    },
+    {
+      "index": 22,
+      "id": "nysed-ela-2016-g6-mc-q6",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still runs to the bottom of the PDF page, leaving a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-6.json",
+        "content/ela-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 23,
+      "id": "nysed-ela-2016-g6-mc-q7",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still runs to the bottom of the PDF page, leaving a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-6.json",
+        "content/ela-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 24,
+      "id": "nysed-ela-2016-g6-mc-q24",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still runs to the bottom of the PDF page, leaving a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-6.json",
+        "content/ela-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 25,
+      "id": "nysed-ela-2016-g6-mc-q28",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still runs to the bottom of the PDF page, leaving a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-6.json",
+        "content/ela-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 26,
+      "id": "nysed-ela-2016-g6-mc-q35",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still runs to the bottom of the PDF page, leaving a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-6.json",
+        "content/ela-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 27,
+      "id": "nysed-ela-2016-g6-mc-q42",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still runs to the bottom of the PDF page, leaving a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-6.json",
+        "content/ela-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 28,
+      "id": "nysed-ela-2016-g7-mc-q10",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still includes a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-7.json",
+        "content/ela-exams/explanations/2016-grade-7.json"
+      ]
+    },
+    {
+      "index": 29,
+      "id": "nysed-ela-2016-g7-mc-q12",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still includes a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-7.json",
+        "content/ela-exams/explanations/2016-grade-7.json"
+      ]
+    },
+    {
+      "index": 30,
+      "id": "nysed-ela-2016-g7-mc-q37",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still includes a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-7.json",
+        "content/ela-exams/explanations/2016-grade-7.json"
+      ]
+    },
+    {
+      "index": 31,
+      "id": "nysed-ela-2016-g7-mc-q42",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the crop still includes a large blank area below choice D. Content is complete.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2016-grade-7.json",
+        "content/ela-exams/explanations/2016-grade-7.json"
+      ]
+    },
+    {
+      "index": 32,
+      "id": "nysed-ela-2017-g7-mc-q10",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The rewritten explanation is nearly circular. It restates the answer ('must raise the heavy block') without pointing to a context clue, and it adds an unstated action ('before carrying it'). The passage's real clues, the shoulder pad and the 100-pound weight, are not mentioned.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2017-grade-7.json",
+        "content/ela-exams/explanations/2017-grade-7.json"
+      ]
+    },
+    {
+      "index": 33,
+      "id": "nysed-ela-2024-g7-mc-q36",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation adds an unsupported claim that the call is 'a sound unlike any other animal’s'. Paragraph 3 only compares it to a kazoo and a crow.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2024-grade-7.json",
+        "content/ela-exams/explanations/2024-grade-7.json"
+      ]
+    },
+    {
+      "index": 34,
+      "id": "nysed-ela-2024-g7-mc-q37",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Alt choice A drops the closing period that appears inside the quotation in the image. Round 1 fixed B and D but missed this.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2024-grade-7.json",
+        "content/ela-exams/explanations/2024-grade-7.json"
+      ]
+    },
+    {
+      "index": 35,
+      "id": "nysed-ela-2015-g7-mc-q6",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Several rewritten explanations use single curly quotes as the main quotation marks. Most explanations use double quotes. With single quotes, the closing mark looks the same as an apostrophe, which can confuse English learners. Same pattern in nysed-ela-2017-g7-mc-q33, nysed-ela-2017-g7-mc-q36, nysed-ela-2015-g8-mc-q20, nysed-ela-2016-g8-mc-q4, and nysed-ela-2016-g8-mc-q29.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2015-grade-7.json",
+        "content/ela-exams/explanations/2015-grade-7.json"
+      ]
+    },
+    {
+      "index": 36,
+      "id": "nysed-ela-2017-g6-stimulus-36-42",
+      "category": "passage",
+      "severity": "low",
+      "finding": "Leftover from round 1 (spacing fix 'palm fronds.¹' not applied): the footnote marker is a detached plain digit, so it reads like a stray number at the end of line 25.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2017-grade-6.json"
+    },
+    {
+      "index": 37,
+      "id": "nysed-ela-2017-g8-stimulus-22-28",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The receptor fix introduced a run-together word: the space before 'receptors' is missing, so a screen reader says 'TRPA1receptors'.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2017-grade-8.json"
+    },
+    {
+      "index": 38,
+      "id": "nysed-ela-2023-g6-stimulus-1-7",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new superscript conversion is incomplete. The first glossary entry still starts with a plain '1', while the inline marker and the second entry were converted.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2023-grade-6.json"
+    },
+    {
+      "index": 39,
+      "id": "nysed-ela-2023-g6-stimulus-29-35",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new superscript conversion is incomplete. The fourth glossary entry was left as a plain digit.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2023-grade-6.json"
+    },
+    {
+      "index": 40,
+      "id": "nysed-ela-2025-g7-stimulus-29-35",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new superscript conversion is incomplete. The third glossary entry was left as a plain digit.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2025-grade-7.json"
+    },
+    {
+      "index": 41,
+      "id": "nysed-ela-2014-g7-stimulus-1-7",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new Tibetan photo description is inserted in the middle of a sentence, so the screen-reader text breaks the sentence apart.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2014-grade-7.json"
+    },
+    {
+      "index": 42,
+      "id": "nysed-ela-2014-g8-stimulus-1-7",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The new bison illustration description is inserted in the middle of a sentence.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2014-grade-8.json"
+    },
+    {
+      "index": 43,
+      "id": "nysed-ela-2023-g7-stimulus-22-26",
+      "category": "passage",
+      "severity": "low",
+      "finding": "The transcript now has the correct stanza breaks, but the passage facsimile image has no visible stanza break between lines 16 and 17, where the PDF page break was removed. Lines 9-24 look like one 16-line block. Question 23 refers to 'lines 1 through 16 (the first two stanzas)', so the image and transcript disagree.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/transcripts/2023-grade-7.json"
+    },
+    {
+      "index": 44,
+      "id": "nysed-ela-2017-g7-stimulus-8-14",
+      "category": "passage",
+      "severity": "low",
+      "finding": "Several transcripts the PR edited (footers removed, captions added) still have flattened plain-digit footnote markers, while other g6-g7 transcripts in this PR were converted to superscripts. In this transcript the convention is mixed: 'aspic. 1' and '1aspic' are plain, but 'frappé²' and '² frappé' are superscript. There is also a stray space in 'Food Fads .'. The same leftover appears in nysed-ela-2013-g6-stimulus-1-5 ('bogged1', '1bogged'), nysed-ela-2017-g6-stimulus-15-21 ('chubasco.”1'), nysed-ela-2017-g7-stimulus-1-7 ('diurnal 1 fishes', 'wrasses2'), nysed-ela-2014-g8-stimulus-1-7 ('cinch1', 'nickered2', 'lope3'), and nysed-ela-2017-g8-stimulus-1-7 ('Scallop1', 'Packard,2'). Screen readers read these as numbers, for example 'wrasses two'.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2017-grade-7.json"
+    },
+    {
+      "index": 45,
+      "id": "nysed-ela-2013-g6-stimulus-1-5",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1: the 2013-2014 passage images still show the template header 'Read this article. Then answer questions XX through XX.' and an internal item code ('206014P'; '207014P' in nysed-ela-2013-g7-stimulus-1-7). A UI note now explains it, but the facsimile still shows the placeholder.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/ela-exams/transcripts/2013-grade-6.json"
+    },
+    {
+      "index": 46,
+      "id": "nysed-2023-g4-mc-q25",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "Alt text (en and es) gives the answer. It gives an approximate degree measure for every angle, including 'D: an acute angle of about 60 degrees', and the question asks which angle measures 60°.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2023-grade-4.json",
+        "content/math-exams/explanations/2023-grade-4.json"
+      ]
+    },
+    {
+      "index": 47,
+      "id": "nysed-2023-g4-mc-q31",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "Alt text (en and es) misdescribes triangle A as 'scalene'. It is isosceles. The alt also sorts the triangles by type ('equilateral-looking' for B, 'scalene' for A and D), which tells screen-reader users which triangles can have a line of symmetry. That is the reasoning the item tests.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2023-grade-4.json",
+        "content/math-exams/explanations/2023-grade-4.json"
+      ]
+    },
+    {
+      "index": 48,
+      "id": "nysed-2025-g3-mc-q28",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "Alt text (en and es) does the key reasoning step for the student. It splits the L-shape into a 9×4 rectangle and a 3×3 rectangle and gives the derived height '3 meters high' (7 − 4), which the image does not show. It also drops 'in square meters' from the stem and puts the unit only on choice D.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2025-grade-3.json",
+        "content/math-exams/explanations/2025-grade-3.json"
+      ]
+    },
+    {
+      "index": 49,
+      "id": "nysed-2017-g4-mc-q4",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "Alt text (en and es) names the figures as 'one ray' and 'two parallel line segments'. Identifying the ray, the segments, and that they are parallel is exactly what the choices test, so the alt rules out B, C, and D.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-4.json",
+        "content/math-exams/explanations/2017-grade-4.json"
+      ]
+    },
+    {
+      "index": 50,
+      "id": "nysed-2014-g3-mc-q3",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): a PDF line-break hyphen leaves a space inside a word.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 51,
+      "id": "nysed-2014-g3-mc-q25",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): a PDF line-break hyphen leaves a space inside a word.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 52,
+      "id": "nysed-2014-g3-mc-q25",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Alt choices use □, but the crop prints '___?___' blanks, and the explanation uses '9 × ? = 72'. This is the same mismatch PR #13 fixed in 2016-g3-q8.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 53,
+      "id": "nysed-2014-g3-mc-q29",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (not resolved): the worked equation still dangles after the final sentence. The PR only appended ' square feet.' The 'understands to multiply' wording (missing 'how') also remains.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 54,
+      "id": "nysed-2016-g3-mc-q22",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): more than half the crop is empty white space below choice D.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-3.json",
+        "content/math-exams/explanations/2016-grade-3.json"
+      ]
+    },
+    {
+      "index": 55,
+      "id": "nysed-2017-g4-mc-q44",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-source): explanation[es] says 'residuo', but the Spanish crop and alt[es] say 'remanente'. ELL students see two different words for the remainder.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-4.json",
+        "content/math-exams/explanations/2017-grade-4.json"
+      ]
+    },
+    {
+      "index": 56,
+      "id": "nysed-2018-g4-mc-q3",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the explanation pairs 'Como...' with a redundant 'por lo tanto'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2018-grade-4.json",
+        "content/math-exams/explanations/2018-grade-4.json"
+      ]
+    },
+    {
+      "index": 57,
+      "id": "nysed-2026-g3-mc-q15",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): explanation[es] has an extra sentence with no English counterpart.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-3.json",
+        "content/math-exams/explanations/2026-grade-3.json"
+      ]
+    },
+    {
+      "index": 58,
+      "id": "nysed-2026-g3-mc-q19",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): explanation[es] has an extra sentence with no English counterpart.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-3.json",
+        "content/math-exams/explanations/2026-grade-3.json"
+      ]
+    },
+    {
+      "index": 59,
+      "id": "nysed-2026-g3-mc-q30",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): explanation[es] has an extra sentence with no English counterpart.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-3.json",
+        "content/math-exams/explanations/2026-grade-3.json"
+      ]
+    },
+    {
+      "index": 60,
+      "id": "nysed-2019-g4-mc-q38",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partially resolved): the explanation still just states the four lengths and never says how they are found. A ruler guide now exists, so the explanation can point to it.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-4.json",
+        "content/math-exams/explanations/2019-grade-4.json"
+      ]
+    },
+    {
+      "index": 61,
+      "id": "nysed-2017-g3-mc-q9",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "A gender-agreement error was introduced by the fix. Also, alt[es] uses cardinal 'marca 4' while the explanation uses ordinal 'cuarta marca'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-3.json",
+        "content/math-exams/explanations/2017-grade-3.json"
+      ]
+    },
+    {
+      "index": 62,
+      "id": "nysed-2022-g4-mc-q32",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "A gender-agreement error was introduced when 'bolígrafos' was replaced with 'lapiceras'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2022-grade-4.json",
+        "content/math-exams/explanations/2022-grade-4.json"
+      ]
+    },
+    {
+      "index": 63,
+      "id": "nysed-2023-g4-mc-q31",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The NEW explanation[es] switched from the crop's term 'línea de simetría' to 'eje de simetría' and uses 'línea punteada', while the Spanish crop says 'línea de puntos' and 'línea de simetría'. alt[es] has the same mismatch in its stem.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2023-grade-4.json",
+        "content/math-exams/explanations/2023-grade-4.json"
+      ]
+    },
+    {
+      "index": 64,
+      "id": "nysed-2016-g4-mc-q24",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The newly added alt for choice D states the property being tested ('angles that are not right angles'), and B's 'at a square corner' does the same. The C/D separator is also a period instead of the semicolon used elsewhere.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-4.json",
+        "content/math-exams/explanations/2016-grade-4.json"
+      ]
+    },
+    {
+      "index": 65,
+      "id": "nysed-2015-g4-mc-q4",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Alt text gives the 40°-vs-50° comparison the student is supposed to make.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2015-grade-4.json",
+        "content/math-exams/explanations/2015-grade-4.json"
+      ]
+    },
+    {
+      "index": 66,
+      "id": "nysed-2025-g4-mc-q31",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Alt text (en and es) labels each figure 'four right angles' or 'no right angles'. That is the classification the item tests (rectangles have four right angles). PR #13 removed the same kind of pre-classification from 2017-g4-q36.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2025-grade-4.json",
+        "content/math-exams/explanations/2025-grade-4.json"
+      ]
+    },
+    {
+      "index": 67,
+      "id": "nysed-2026-g4-mc-q20",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Alt text (en and es) states which figures have four right angles. That is the determination the item asks for, the same pattern as 2025-g4-q31.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-4.json",
+        "content/math-exams/explanations/2026-grade-4.json"
+      ]
+    },
+    {
+      "index": 68,
+      "id": "nysed-2026-g3-mc-q19",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The alt stem changes the question's meaning. The crop asks which number line shows 6/8 'in the correct location', but the alt asks which shows 6/8 'at the stated location'.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-3.json",
+        "content/math-exams/explanations/2026-grade-3.json"
+      ]
+    },
+    {
+      "index": 69,
+      "id": "nysed-2021-g4-mc-q22",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Several alts attach the unit only to choice D, even though the crop's choices are bare numbers and the unit is in the stem. A screen-reader user hears D as the only choice with a unit. Same pattern in 2022-g4-q16 ('D: 10 3/4 miles'), 2023-g4-q9 ('D: 5 1/2 inches'), 2025-g4-q22 ('D: 30 inches'), and 2025-g3-q28 ('D: 63 square meters').",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2021-grade-4.json",
+        "content/math-exams/explanations/2021-grade-4.json"
+      ]
+    },
+    {
+      "index": 70,
+      "id": "nysed-2013-g3-mc-q2",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Explanations that were fully rewritten by Vine are still labeled 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. No NYSED wording remains. Same for 2014-g3-q14, 2013-g4-q4, 2013-g4-q11, 2014-g4-q42, and 2014-g4-q44.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-3.json"
+      ]
+    },
+    {
+      "index": 71,
+      "id": "nysed-2019-g4-mc-q38",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The ruler guide draws the four segments sorted by length (1 1/2, 2 1/4, 2 1/4, 2 3/4), but the picture shows them top to bottom as about 2 1/4, 2 3/4, 1 1/2, 2 1/4. The guide says it 'reproduces the original measurement', so students cannot match guide segments to picture segments. The sorted order also hints that two segments are equal.",
+      "status": "fixed",
+      "resolution": "Corrected ruler choice order and bilingual notice; explain booklet question numbering for every released year.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-4.json",
+        "content/math-exams/explanations/2019-grade-4.json"
+      ]
+    },
+    {
+      "index": 72,
+      "id": "nysed-2017-g4-mc-q24",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] calls the plot 'La gráfica C', but the Spanish crop and alt[es] call it 'diagrama lineal'. PR #13 fixed this exact mismatch in 2026-g4-q7 ('La gráfica' changed to 'El diagrama').",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-4.json",
+        "content/math-exams/explanations/2017-grade-4.json"
+      ]
+    },
+    {
+      "index": 73,
+      "id": "nysed-2019-g4-mc-q38",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says 'La gráfica C', but the Spanish crop says 'diagrama lineal'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-4.json",
+        "content/math-exams/explanations/2019-grade-4.json"
+      ]
+    },
+    {
+      "index": 74,
+      "id": "nysed-2019-g3-mc-q3",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says 'estudiantes', but the Spanish crop and alt[es] say 'alumnos'. This is the same kind of noun mismatch PR #13 fixed elsewhere (vasos/tazas, camisa/camiseta).",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-3.json",
+        "content/math-exams/explanations/2019-grade-3.json"
+      ]
+    },
+    {
+      "index": 75,
+      "id": "nysed-2021-g4-mc-q23",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says the statement is 'exactamente la comparación de la opción B', but it quotes the comparison without the 'más que' wording that the crop and the fixed alt[es] use.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2021-grade-4.json",
+        "content/math-exams/explanations/2021-grade-4.json"
+      ]
+    },
+    {
+      "index": 76,
+      "id": "nysed-2017-g4-mc-q36",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Number agreement error in the Spanish explanation.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-4.json",
+        "content/math-exams/explanations/2017-grade-4.json"
+      ]
+    },
+    {
+      "index": 77,
+      "id": "nysed-2017-g4-mc-q32",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The Spanish explanation uses the present tense, while the crop uses the past ('caminó'), and the phrase 'cada uno de 5 días' is awkward.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-4.json",
+        "content/math-exams/explanations/2017-grade-4.json"
+      ]
+    },
+    {
+      "index": 78,
+      "id": "nysed-2014-g5-mc-q27",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): stray space inside the opening quote, and an en dash used as the minus sign.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-5.json"
+      ]
+    },
+    {
+      "index": 79,
+      "id": "nysed-2014-g5-mc-q32",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): PDF hyphenation break.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-5.json"
+      ]
+    },
+    {
+      "index": 80,
+      "id": "nysed-2016-g5-mc-q15",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "The alt supplies tick values that are not printed. Reading the 2nd and 4th ticks (1 3/4 and 2 1/4) is part of the task, since the four heaviest eggs include the one at 2 1/4.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-5.json",
+        "content/math-exams/explanations/2016-grade-5.json"
+      ]
+    },
+    {
+      "index": 81,
+      "id": "nysed-2016-g5-mc-q40",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Alt choices A–C give derived totals of shaded cells (21, 30, 12). For A, the total is the product 7 × 3 the item asks students to model. D has no total, so the choices are described inconsistently.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-5.json",
+        "content/math-exams/explanations/2016-grade-5.json"
+      ]
+    },
+    {
+      "index": 82,
+      "id": "nysed-2017-g5-mc-q14",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partial fix): one 'pulsera' remains, while the Spanish item uses 'brazalete'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-5.json",
+        "content/math-exams/explanations/2017-grade-5.json"
+      ]
+    },
+    {
+      "index": 83,
+      "id": "nysed-2017-g5-mc-q15",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] calls the grids 'cuadrículas', but the Spanish question and alt[es] say 'cuadrillas (de decimales)'. Round 1 flagged the same kind of terminology mismatch on other items.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-5.json",
+        "content/math-exams/explanations/2017-grade-5.json"
+      ]
+    },
+    {
+      "index": 84,
+      "id": "nysed-2017-g5-mc-q15",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "alt[en] adds interpretation the student is meant to supply: that a full grid represents 1, plus derived counts of shaded squares (23 and 90). alt[es] also gives 'un total de 23 celdas sombreadas'.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-5.json",
+        "content/math-exams/explanations/2017-grade-5.json"
+      ]
+    },
+    {
+      "index": 85,
+      "id": "nysed-2017-g5-mc-q21",
+      "category": "explanation-es",
+      "severity": "medium",
+      "finding": "Regression: the fix replaced the whole Spanish explanation with only the second sentence. It no longer shows how 17/20 is obtained, which is the core skill. EN still shows the conversion, so EN and ES now differ in content.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-5.json",
+        "content/math-exams/explanations/2017-grade-5.json"
+      ]
+    },
+    {
+      "index": 86,
+      "id": "nysed-2017-g5-mc-q28",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partial fix): still doesn't show rewriting 2/4 and 3/4 as eighths before jumping to 16/8 and 12/8.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-5.json",
+        "content/math-exams/explanations/2017-grade-5.json"
+      ]
+    },
+    {
+      "index": 87,
+      "id": "nysed-2018-g5-mc-q34",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "alt[es] states the interpretation the student must make: each circle represents 5/8 and the model repeats 5 times. That is the structure of key D. alt[en] doesn't do this.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2018-grade-5.json",
+        "content/math-exams/explanations/2018-grade-5.json"
+      ]
+    },
+    {
+      "index": 88,
+      "id": "nysed-2018-g5-mc-q34",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-source): the product is written as 5 × 5/8, while the keyed choice prints 5/8 × 5.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2018-grade-5.json",
+        "content/math-exams/explanations/2018-grade-5.json"
+      ]
+    },
+    {
+      "index": 89,
+      "id": "nysed-2019-g5-mc-q20",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): '12 llenados' is unnatural.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-5.json",
+        "content/math-exams/explanations/2019-grade-5.json"
+      ]
+    },
+    {
+      "index": 90,
+      "id": "nysed-2019-g5-mc-q28",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partial fix): 'salón' remains in the second clause.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-5.json",
+        "content/math-exams/explanations/2019-grade-5.json"
+      ]
+    },
+    {
+      "index": 91,
+      "id": "nysed-2019-g5-mc-q29",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] calls the graph 'diagrama de puntos', but the Spanish question and alt[es] say 'diagrama lineal'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-5.json",
+        "content/math-exams/explanations/2019-grade-5.json"
+      ]
+    },
+    {
+      "index": 92,
+      "id": "nysed-2019-g5-mc-q36",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The fix introduced a gender-agreement error, 'los milésimas'. Both languages also imprecisely say '73' occupies the thousandths place; only the 3 does.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-5.json",
+        "content/math-exams/explanations/2019-grade-5.json"
+      ]
+    },
+    {
+      "index": 93,
+      "id": "nysed-2021-g5-mc-q9",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partial fix): the first sentence still says 'Un lote'. The explanation also drops 'líquidas' from the later 'onzas'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2021-grade-5.json",
+        "content/math-exams/explanations/2021-grade-5.json"
+      ]
+    },
+    {
+      "index": 94,
+      "id": "nysed-2023-g5-mc-q21",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Grade 5 explanation uses side-by-side parentheses for multiplication, the notation round 1 flagged and this PR fixed on 2019 g5 q3/q13/q26/q37.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2023-grade-5.json",
+        "content/math-exams/explanations/2023-grade-5.json"
+      ]
+    },
+    {
+      "index": 95,
+      "id": "nysed-2025-g5-mc-q5",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The pre-answer Spanish notice says the English question says «decenas». It says 'tens'; «decenas» is the translation. Polish only.",
+      "status": "fixed",
+      "resolution": "Corrected ruler choice order and bilingual notice; explain booklet question numbering for every released year.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2025-grade-5.json",
+        "content/math-exams/explanations/2025-grade-5.json"
+      ]
+    },
+    {
+      "index": 96,
+      "id": "nysed-2026-g5-mc-q13",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "The alt supplies tick values that are not printed, so the student doesn't have to read the plot. Only 0, 1 and 2 are labeled, but the alt gives every tick as a fraction and names the fraction under each X.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-5.json",
+        "content/math-exams/explanations/2026-grade-5.json"
+      ]
+    },
+    {
+      "index": 97,
+      "id": "nysed-2026-g5-mc-q28",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says 'onzas líquidas', but the Spanish crop and alt[es] say 'onzas fluidas'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-5.json",
+        "content/math-exams/explanations/2026-grade-5.json"
+      ]
+    },
+    {
+      "index": 98,
+      "id": "nysed-2014-g6-mc-q5",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "Explanations fully rewritten by Vine still carry the 'official-nysed-corrected' source, which the UI labels 'Official NYSED rationale, corrected by Vine'. None of NYSED's text remains. Same for nysed-2014-g5-mc-q10, nysed-2014-g6-mc-q12, q20, q48 and q49.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-6.json"
+      ]
+    },
+    {
+      "index": 99,
+      "id": "nysed-2014-g6-mc-q29",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): a stray copy of the equation is at the end.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-6.json"
+      ]
+    },
+    {
+      "index": 100,
+      "id": "nysed-2014-g6-mc-q39",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partial fix): the minus-sign spacing and the quoted-answer spacing were not tidied.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-6.json"
+      ]
+    },
+    {
+      "index": 101,
+      "id": "nysed-2014-g6-mc-q40",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): the explanation starts with a stray colon.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-6.json"
+      ]
+    },
+    {
+      "index": 102,
+      "id": "nysed-2014-g6-mc-q49",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The rewritten explanation subtracts negatives ('3 − (−4)', '4 − (−2)'), which is grade 7 (7.NS.1c). Grade 6 (6.NS.8) uses absolute values for points on opposite sides of an axis.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-6.json"
+      ]
+    },
+    {
+      "index": 103,
+      "id": "nysed-2015-g6-mc-q3",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The alt misdescribes distractor nets C and D (measured from the now-complete crop). In C the four strip rectangles are all the same width (~89 px), not 'alternating wide and narrow'. In D the left and right rectangles are congruent to the central one (77x88 px), not 'short wide'.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2015-grade-6.json",
+        "content/math-exams/explanations/2015-grade-6.json"
+      ]
+    },
+    {
+      "index": 104,
+      "id": "nysed-2015-g6-mc-q14",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-source): the page footer 'calculators allowed' sits below the item frame. Round 1 said the same applies to q15–q28.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2015-grade-6.json",
+        "content/math-exams/explanations/2015-grade-6.json"
+      ]
+    },
+    {
+      "index": 105,
+      "id": "nysed-2015-g6-mc-q18",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The re-crop shows choice D but cuts the item frame. Its left and right borders run off the bottom edge with no bottom border.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2015-grade-6.json",
+        "content/math-exams/explanations/2015-grade-6.json"
+      ]
+    },
+    {
+      "index": 106,
+      "id": "nysed-2016-g6-mc-q13",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): about 700 px of blank space below the last choice.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-6.json",
+        "content/math-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 107,
+      "id": "nysed-2016-g6-mc-q18",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (partial fix): the alt places C's point N 'a little left of halfway', but it sits about one-third of the way from 0 to 1.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-6.json",
+        "content/math-exams/explanations/2016-grade-6.json"
+      ]
+    },
+    {
+      "index": 108,
+      "id": "nysed-2017-g6-mc-q3",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "The alt[es] brace description is misleading and gives away the reasoning. It says the first three braces 'cover completely the shaded part, from 0 to 2' (the shaded part runs to 2 1/3). It then says the fourth brace covers the last shaded 1/3 plus another unshaded 1/3, which is the 'half of a group' conclusion.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-6.json",
+        "content/math-exams/explanations/2017-grade-6.json"
+      ]
+    },
+    {
+      "index": 109,
+      "id": "nysed-2017-g6-mc-q34",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "Regression: the rewrite removed the unit-rate step ($17.50 ÷ 2 = $8.75), the core idea of the item. The explanation now just asserts '$8.75 per hour' in both EN and ES.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-6.json",
+        "content/math-exams/explanations/2017-grade-6.json"
+      ]
+    },
+    {
+      "index": 110,
+      "id": "nysed-2017-g6-mc-q46",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "The alt gives each plotted M as an ordered pair. For an item whose skill is reading and plotting (x, y), that turns choice B into a string match with the stem. alt[es] also spells out what (4, 3) means ('cuatro unidades a la derecha y tres unidades hacia arriba').",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-6.json",
+        "content/math-exams/explanations/2017-grade-6.json"
+      ]
+    },
+    {
+      "index": 111,
+      "id": "nysed-2017-g6-mc-q46",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The restored '5' x-axis label in the Spanish crop is visibly smaller, lighter and higher than the other digits, so it looks pasted in. It is correctly placed and legible.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-6.json",
+        "content/math-exams/explanations/2017-grade-6.json"
+      ]
+    },
+    {
+      "index": 112,
+      "id": "nysed-2018-g6-mc-q33",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] uses 'encestes', which doesn't appear in the Spanish question ('canastas que anotó' / 'canastas intentadas').",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2018-grade-6.json",
+        "content/math-exams/explanations/2018-grade-6.json"
+      ]
+    },
+    {
+      "index": 113,
+      "id": "nysed-2022-g6-mc-q3",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "alt[en] and alt[es] give the dimensions of every face, but only 8 cm, 3 cm (twice) and 5 cm are printed. Matching the unlabeled faces to the prism's dimensions is part of the surface-area task. explanation[es] also says 'área superficial' while the question says 'área de superficie'.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2022-grade-6.json",
+        "content/math-exams/explanations/2022-grade-6.json"
+      ]
+    },
+    {
+      "index": 114,
+      "id": "nysed-2024-g6-mc-q4",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-cosmetic): ASCII hyphens are used as minus signs.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2024-grade-6.json",
+        "content/math-exams/explanations/2024-grade-6.json"
+      ]
+    },
+    {
+      "index": 115,
+      "id": "nysed-2024-g6-mc-q4",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation subtracts a negative ('|4 - (-8)|'), which is grade 7 (7.NS.1c). Grade 6 finds distance across the axis by adding absolute values.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2024-grade-6.json",
+        "content/math-exams/explanations/2024-grade-6.json"
+      ]
+    },
+    {
+      "index": 116,
+      "id": "nysed-2025-g6-mc-q13",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The fixed alt states that each strip rectangle is 2 cm wide, but only the top square's width is printed. Inferring the strip widths from the square is part of the task. This follows round 1's own suggested wording.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2025-grade-6.json",
+        "content/math-exams/explanations/2025-grade-6.json"
+      ]
+    },
+    {
+      "index": 117,
+      "id": "nysed-2013-g7-mc-q10",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "The rewrite drops the step that turns 0.12 into 12%. That conversion is exactly what distractor A (0.12% decrease) tests, so a student who picked A gets no explanation of the error. The old official text had 'multiply by 100 to convert to a percent'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 118,
+      "id": "nysed-2013-g7-mc-q1",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 119,
+      "id": "nysed-2013-g7-mc-q6",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 120,
+      "id": "nysed-2013-g7-mc-q8",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 121,
+      "id": "nysed-2013-g7-mc-q9",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 122,
+      "id": "nysed-2013-g7-mc-q10",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 123,
+      "id": "nysed-2013-g7-mc-q11",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 124,
+      "id": "nysed-2013-g7-mc-q12",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-7.json"
+      ]
+    },
+    {
+      "index": 125,
+      "id": "nysed-2014-g7-mc-q14",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-7.json"
+      ]
+    },
+    {
+      "index": 126,
+      "id": "nysed-2014-g7-mc-q16",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is labeled source 'official-nysed-corrected', which the UI shows as 'Official NYSED rationale, corrected by Vine'. But the NEW text is a complete Vine rewrite and keeps none of NYSED's rationale wording, so the text is attributed to NYSED when NYSED did not write it.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-7.json"
+      ]
+    },
+    {
+      "index": 127,
+      "id": "nysed-2014-g7-mc-q3",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover spacing and dash artifacts in the official rationale. The key uses an en dash, and the minus signs are spaced irregularly, so '−5−(−2)' is hard to parse.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-7.json"
+      ]
+    },
+    {
+      "index": 128,
+      "id": "nysed-2015-g7-mc-q21",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The re-crop extended the top margin and now includes a stray blue internal item-ID annotation, '144070151_2', above the stem. The alt also inserts the page-footer text 'Calculators allowed.' between the stem and the choices.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2015-grade-7.json",
+        "content/math-exams/explanations/2015-grade-7.json"
+      ]
+    },
+    {
+      "index": 129,
+      "id": "nysed-2017-g7-mc-q21",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation uses the same ambiguous 'a/bx' notation that the alt fix just removed. '−9/4x' and '−21/4x' can be read as −9/(4x), and '−5 1/4x' is unclear.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-7.json",
+        "content/math-exams/explanations/2017-grade-7.json"
+      ]
+    },
+    {
+      "index": 130,
+      "id": "nysed-2017-g7-mc-q34",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The new alt (EN, and the existing ES) names each feature, such as 'first quartile 200, median 215, third quartile 220'. Identifying the median line and quartile box edges is part of the skill this box-plot item assesses, and the plot prints no such labels. ES alt also calls the axis label 'Puntajes de bolos' the title and leaves out the chart title 'PUNTAJES DEL EQUIPO DE BOLOS'.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-7.json",
+        "content/math-exams/explanations/2017-grade-7.json"
+      ]
+    },
+    {
+      "index": 131,
+      "id": "nysed-2017-g7-mc-q34",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says 'rangos intercuartílicos', but the Spanish choices use 'rango intercuartil'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-7.json",
+        "content/math-exams/explanations/2017-grade-7.json"
+      ]
+    },
+    {
+      "index": 132,
+      "id": "nysed-2017-g7-mc-q46",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says 'el largo', but the Spanish item says 'La longitud del rectángulo'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-7.json",
+        "content/math-exams/explanations/2017-grade-7.json"
+      ]
+    },
+    {
+      "index": 133,
+      "id": "nysed-2018-g7-mc-q22",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The fix created a grammar error, 'la del Sra. Barry' (contracted masculine 'del' before 'Sra.'). This is a leftover of the round-1 finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2018-grade-7.json",
+        "content/math-exams/explanations/2018-grade-7.json"
+      ]
+    },
+    {
+      "index": 134,
+      "id": "nysed-2019-g7-mc-q4",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The fix swapped 'molde' for 'fuente' but kept masculine agreement. 'El fuente redondo' (twice) is ungrammatical, because fuente is feminine. It also says the pan, not its area, is '8.5 pulgadas cuadradas mayor'. This is a leftover of the round-1 finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-7.json",
+        "content/math-exams/explanations/2019-grade-7.json"
+      ]
+    },
+    {
+      "index": 135,
+      "id": "nysed-2019-g7-mc-q30",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Only half fixed. The closing sentence still says 'por salón', which does not match choice B's 'cada clase del curso'. It also mixes 'estudiantes' with the item's 'alumnos'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-7.json",
+        "content/math-exams/explanations/2019-grade-7.json"
+      ]
+    },
+    {
+      "index": 136,
+      "id": "nysed-2019-g7-mc-q30",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "alt[es] uses the conditional 'produciría', but the Spanish crop prints the future 'producirá'. The sibling item 2021 q23 has it right.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-7.json",
+        "content/math-exams/explanations/2019-grade-7.json"
+      ]
+    },
+    {
+      "index": 137,
+      "id": "nysed-2019-g7-mc-q38",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The fix swapped 'sombreros' for 'gorras' but kept the masculine article, so it reads 'Los h gorras'. This is a leftover of the round-1 finding.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-7.json",
+        "content/math-exams/explanations/2019-grade-7.json"
+      ]
+    },
+    {
+      "index": 138,
+      "id": "nysed-2019-g7-mc-q40",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The variable x is used without being defined in both EN and ES.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2019-grade-7.json",
+        "content/math-exams/explanations/2019-grade-7.json"
+      ]
+    },
+    {
+      "index": 139,
+      "id": "nysed-2021-g7-mc-q23",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "'Stratified random sample' / 'muestra aleatoria estratificada' is vocabulary above grade 7, because stratified sampling is not in the grade 7 standards. A simpler phrase would serve ELL students better.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2021-grade-7.json",
+        "content/math-exams/explanations/2021-grade-7.json"
+      ]
+    },
+    {
+      "index": 140,
+      "id": "nysed-2022-g7-mc-q35",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] says 'alturas' and 'equipo A', but the Spanish item says 'estaturas' and 'Equipo A'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2022-grade-7.json",
+        "content/math-exams/explanations/2022-grade-7.json"
+      ]
+    },
+    {
+      "index": 141,
+      "id": "nysed-2026-g7-mc-q1",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (ledger 'retained-source'). alt[es] adds 'juegos' to every choice, but the Spanish crop shows bare numbers. The English alt has bare numbers, so the two alts are inconsistent.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-7.json",
+        "content/math-exams/explanations/2026-grade-7.json"
+      ]
+    },
+    {
+      "index": 142,
+      "id": "nysed-2026-g7-mc-q1",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] calls it 'el sistema', but the Spanish item says 'consola de videojuegos'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-7.json",
+        "content/math-exams/explanations/2026-grade-7.json"
+      ]
+    },
+    {
+      "index": 143,
+      "id": "nysed-2026-g7-mc-q5",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (ledger 'retained-source'). alt[es] adds 'galones por hora' to every choice, but the crop does not show it.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-7.json",
+        "content/math-exams/explanations/2026-grade-7.json"
+      ]
+    },
+    {
+      "index": 144,
+      "id": "nysed-2026-g7-mc-q6",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (ledger 'retained-source'). alt[es] adds 'por semana' to every choice, but the crop does not show it.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-7.json",
+        "content/math-exams/explanations/2026-grade-7.json"
+      ]
+    },
+    {
+      "index": 145,
+      "id": "nysed-2026-g7-mc-q8",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (ledger 'retained-source'). alt[es] adds 'combinaciones' to every choice, but the crop does not show it.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2026-grade-7.json",
+        "content/math-exams/explanations/2026-grade-7.json"
+      ]
+    },
+    {
+      "index": 146,
+      "id": "nysed-2016-g8-mc-q41",
+      "category": "fidelity",
+      "severity": "medium",
+      "finding": "The crop was re-rendered complete, but the alt still describes the old clipped crop. It also contains evaluative statements that hand over the answer.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-8.json",
+        "content/math-exams/explanations/2016-grade-8.json"
+      ]
+    },
+    {
+      "index": 147,
+      "id": "nysed-2016-g8-mc-q11",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from the round-1 caret pattern (2016 q3): the caret→superscript conversion handled only positive exponents, so a single equation now mixes notations.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-8.json",
+        "content/math-exams/explanations/2016-grade-8.json"
+      ]
+    },
+    {
+      "index": 148,
+      "id": "nysed-2016-g8-mc-q38",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover caret notation for negative exponents next to converted superscripts (cross-ref the round-1 pattern on 2016 q3).",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-8.json",
+        "content/math-exams/explanations/2016-grade-8.json"
+      ]
+    },
+    {
+      "index": 149,
+      "id": "nysed-2021-g8-mc-q22",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "The explanation still uses caret notation (cross-ref the round-1 pattern on 2016 q3), while the alt and crop use superscripts.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2021-grade-8.json",
+        "content/math-exams/explanations/2021-grade-8.json"
+      ]
+    },
+    {
+      "index": 150,
+      "id": "nysed-2021-g8-mc-q20",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "The explanation uses caret notation (cross-ref the round-1 pattern on 2016 q3), while the choices print superscripts.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2021-grade-8.json",
+        "content/math-exams/explanations/2021-grade-8.json"
+      ]
+    },
+    {
+      "index": 151,
+      "id": "nysed-2024-g8-mc-q12",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "The explanation uses caret notation (cross-ref the round-1 pattern on 2016 q3).",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2024-grade-8.json",
+        "content/math-exams/explanations/2024-grade-8.json"
+      ]
+    },
+    {
+      "index": 152,
+      "id": "nysed-2024-g8-mc-q20",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "The explanation uses caret notation (cross-ref the round-1 pattern on 2016 q3) and an ASCII hyphen as the minus sign.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2024-grade-8.json",
+        "content/math-exams/explanations/2024-grade-8.json"
+      ]
+    },
+    {
+      "index": 153,
+      "id": "nysed-2025-g8-mc-q8",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Leftover from the round-1 finding: the explanation still ends with an ambiguous inline fraction. Only the alts were fixed.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2025-grade-8.json",
+        "content/math-exams/explanations/2025-grade-8.json"
+      ]
+    },
+    {
+      "index": 154,
+      "id": "nysed-2018-g8-mc-q24",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The 'boleto'→'entrada' fix created a gender-agreement error.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2018-grade-8.json",
+        "content/math-exams/explanations/2018-grade-8.json"
+      ]
+    },
+    {
+      "index": 155,
+      "id": "nysed-2016-g8-mc-q36",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The new alt calls (50, 3) a 'grid intersection', but the graph's vertical gridlines are every 20 hours, so x = 50 falls mid-cell.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-8.json",
+        "content/math-exams/explanations/2016-grade-8.json"
+      ]
+    },
+    {
+      "index": 156,
+      "id": "nysed-2016-g8-mc-q36",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation asserts Company S's rate without showing where it comes from. That is the key reading step separating A (≈42) from B (≈46).",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2016-grade-8.json",
+        "content/math-exams/explanations/2016-grade-8.json"
+      ]
+    },
+    {
+      "index": 157,
+      "id": "nysed-2023-g8-mc-q34",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "explanation[es] uses 'razón de cambio' while the Spanish item and choices say 'tasa de cambio'. It also drops 'Función', so bare 'A'/'B' read like answer-choice letters ('A tiene la mayor razón de cambio' even though the key is B).",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2023-grade-8.json",
+        "content/math-exams/explanations/2023-grade-8.json"
+      ]
+    },
+    {
+      "index": 158,
+      "id": "nysed-2017-g8-mc-q34",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "The new explanation[es] uses bare 'A' and 'B' for the figures, which reads like answer-choice letters (the key is C). The en text and the Spanish item say 'Figura A' and 'Figura B'.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-8.json",
+        "content/math-exams/explanations/2017-grade-8.json"
+      ]
+    },
+    {
+      "index": 159,
+      "id": "nysed-2022-g8-mc-q16",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "alt[en] paraphrases the stem and writes the coefficient ambiguously. alt[es] already uses the clearer form.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2022-grade-8.json",
+        "content/math-exams/explanations/2022-grade-8.json"
+      ]
+    },
+    {
+      "index": 160,
+      "id": "nysed-2022-g8-mc-q16",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "In explanation[es], the variable y next to the conjunction 'y' makes a confusing run for English learners.",
+      "status": "fixed",
+      "resolution": "Revised complete explanations, preserving the evidence and calculation steps; checked language agreement and consistent notation.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2022-grade-8.json",
+        "content/math-exams/explanations/2022-grade-8.json"
+      ]
+    },
+    {
+      "index": 161,
+      "id": "nysed-2017-g8-mc-q50",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "The updated alt[es] sentence for Airplane A is redundant and awkward: 'continúa' appears twice.",
+      "status": "fixed",
+      "resolution": "Corrected source-faithful, neutral question descriptions; removed inferred answers and restored printed details.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2017-grade-8.json",
+        "content/math-exams/explanations/2017-grade-8.json"
+      ]
+    },
+    {
+      "index": 162,
+      "id": "nysed-2013-g8-mc-q3",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is now entirely Vine-written, but it is still labeled official-nysed-corrected. The UI shows 'Official NYSED rationale, corrected by Vine', which attributes Vine's wording to NYSED.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-8.json"
+      ]
+    },
+    {
+      "index": 163,
+      "id": "nysed-2013-g8-mc-q61",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is now a full Vine rewrite but is labeled official-nysed-corrected, so students see 'Official NYSED rationale, corrected by Vine'.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2013-grade-8.json"
+      ]
+    },
+    {
+      "index": 164,
+      "id": "nysed-2014-g8-mc-q13",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is now a full Vine rewrite but is labeled official-nysed-corrected.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-8.json"
+      ]
+    },
+    {
+      "index": 165,
+      "id": "nysed-2014-g8-mc-q16",
+      "category": "explanation",
+      "severity": "low",
+      "finding": "The explanation is now a full Vine rewrite but is labeled official-nysed-corrected.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2014-grade-8.json"
+      ]
+    },
+    {
+      "index": 166,
+      "id": "nysed-2015-g8-mc-q29",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Leftover from round 1 (retained-source): the crop still includes the page footer 'calculators allowed', and the alts mention it inconsistently across Book 2.",
+      "status": "fixed",
+      "resolution": "Added exact-source and geometry-pinned image finishing; removed trailing blank areas, calculator footers, template headers and item codes; restored stanza gap and matched graph-label type.",
+      "contentPath": "content/math-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/math-exams/accessibility/2015-grade-8.json",
+        "content/math-exams/explanations/2015-grade-8.json"
+      ]
+    },
+    {
+      "index": 167,
+      "id": "nysed-ela-2014-g3-mc-q14",
+      "category": "explanation",
+      "severity": "high",
+      "finding": "Explanation now opens “Students who choose “B”” but the key is C (regression from PR #13). Corpus-wide scan: this is the only explanation whose chosen letter contradicts its key.",
+      "status": "fixed",
+      "resolution": "Addressed the detailed findings summarized by this entry, including the wrong letter, retained ELA hedges, and Spanish agreement errors.",
+      "contentPath": "content/ela-exams/generated/catalog.json",
+      "sidecarPaths": [
+        "content/ela-exams/accessibility/2014-grade-3.json"
+      ]
+    },
+    {
+      "index": 168,
+      "id": "nysed-ela-2023-g3-mc-q4 / nysed-ela-2024-g3-mc-q26 / nysed-ela-2026-g3-mc-q3",
+      "category": "explanation",
+      "severity": "medium",
+      "finding": "Ledger marks these fixed, but the explanation text is byte-identical to the pre-PR version (only the inputHash changed). The hedges against the key remain.",
+      "status": "fixed",
+      "resolution": "Addressed the detailed findings summarized by this entry, including the wrong letter, retained ELA hedges, and Spanish agreement errors."
+    },
+    {
+      "index": 169,
+      "id": "nysed-ela-2022-g4 stimulus-1-6",
+      "category": "passage",
+      "severity": "medium",
+      "finding": "Restored table reads “Jacana (a marsh bird)”; the image says “(a small bird)”. tests/test_nysed_review_repairs.py:166 asserts the wrong text.",
+      "status": "fixed",
+      "resolution": "Reconciled passage wording, glossary formatting and reading order against the passage images.",
+      "contentPath": "content/ela-exams/transcripts/2022-grade-4.json"
+    },
+    {
+      "index": 170,
+      "id": "math explanations (7 items)",
+      "category": "explanation-es",
+      "severity": "low",
+      "finding": "Noun swaps introduced Spanish agreement errors: 2019 G7 Q38 “Los h gorras”, 2019 G7 Q4 “El fuente redondo”, 2018 G8 Q24 “del entrada”, 2017 G3 Q9 “el cuarta marca”, 2022 G4 Q32 “los 4 lapiceras”, 2019 G5 Q36 “los milésimas”, 2018 G7 Q22 “la del Sra. Barry”.",
+      "status": "fixed",
+      "resolution": "Addressed the detailed findings summarized by this entry, including the wrong letter, retained ELA hedges, and Spanish agreement errors."
+    },
+    {
+      "index": 171,
+      "id": "official-nysed-corrected labeling",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "24 math and 5 ELA explanations labeled “Official NYSED rationale, corrected by Vine” now share <40% of their text with the NYSED original; they are effectively Vine-authored.",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals."
+    },
+    {
+      "index": 172,
+      "id": "nysed-2019-g4-mc-q38 measurement guide",
+      "category": "fidelity",
+      "severity": "low",
+      "finding": "Ruler guide lists segments sorted (1½, 2¼, 2¼, 2¾); the picture order is 2¼, 2¾, 1½, 2¼. Answer unaffected.",
+      "status": "fixed",
+      "resolution": "Corrected ruler choice order and bilingual notice; explain booklet question numbering for every released year."
+    },
+    {
+      "index": 173,
+      "id": "content/ela-exams/README.md, content/math-exams/README.md",
+      "category": "formatting",
+      "severity": "low",
+      "finding": "Provenance counts are stale: ELA README says 145 official / 4 corrected (catalog: 121 / 28); math README says 5 corrected (catalog: 49).",
+      "status": "fixed",
+      "resolution": "Relabeled full rewrites as Vine-authored with explicit source-pinned legacy allowlists and reconciled provenance totals."
+    }
+  ],
+  "priorUnresolvedVerifications": [
+    {
+      "verificationIndex": 2,
+      "id": "nysed-ela-2014-g3-mc-q5",
+      "previousVerdict": "partially-resolved",
+      "issue": "misquote \"tumble over and over\"",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 4,
+      "id": "nysed-ela-2014-g3-mc-q14",
+      "previousVerdict": "made-worse",
+      "issue": "says kids remove hats (passage: sweat under hats)",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 6,
+      "id": "nysed-ela-2016-g3-mc-q3",
+      "previousVerdict": "not-resolved",
+      "issue": "crop has ~40-55% blank space below choice D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 7,
+      "id": "nysed-ela-2016-g3-mc-q6",
+      "previousVerdict": "not-resolved",
+      "issue": "crop has ~40-55% blank space below choice D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 8,
+      "id": "nysed-ela-2016-g3-mc-q15",
+      "previousVerdict": "not-resolved",
+      "issue": "crop has ~40-55% blank space below choice D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 9,
+      "id": "nysed-ela-2016-g3-mc-q18",
+      "previousVerdict": "not-resolved",
+      "issue": "crop has ~40-55% blank space below choice D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 10,
+      "id": "nysed-ela-2016-g3-mc-q31",
+      "previousVerdict": "not-resolved",
+      "issue": "crop has ~40-55% blank space below choice D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 16,
+      "id": "nysed-ela-2023-g3-mc-q4",
+      "previousVerdict": "not-resolved",
+      "issue": "confusing hedge undercuts key; unclear \"The mark\"",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 19,
+      "id": "nysed-ela-2024-g3-mc-q26",
+      "previousVerdict": "not-resolved",
+      "issue": "hedges against its own key",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 20,
+      "id": "nysed-ela-2026-g3-mc-q3",
+      "previousVerdict": "not-resolved",
+      "issue": "argues against key (\"describes his purpose rather than the exact meaning\")",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 28,
+      "id": "nysed-ela-2022-g4-mc-q5",
+      "previousVerdict": "partially-resolved",
+      "issue": "transcript omits MORE FABULOUS FATHERS table (high)",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 29,
+      "id": "nysed-ela-2023-g4-mc-q31",
+      "previousVerdict": "partially-resolved",
+      "issue": "\"thousands-year history\" ungrammatical",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 50,
+      "id": "nysed-ela-2021-g5-mc-q16",
+      "previousVerdict": "partially-resolved",
+      "issue": "quoted phrase tense mismatch",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 65,
+      "id": "nysed-ela-2025-g3-stimulus-19-23",
+      "previousVerdict": "partially-resolved",
+      "issue": "missing \"flexible\" and \"predators\" glosses",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 77,
+      "id": "nysed-ela-2013-g5-stimulus-1-6",
+      "previousVerdict": "partially-resolved",
+      "issue": "wind-tunnel diagram and rocket drawing missing",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 96,
+      "id": "nysed-ela-2014-g6-mc-q15",
+      "previousVerdict": "not-resolved",
+      "issue": "Closing quotation mark is an opening curly quote",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 99,
+      "id": "nysed-ela-2016-g6-mc-q6",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 100,
+      "id": "nysed-ela-2016-g6-mc-q7",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 101,
+      "id": "nysed-ela-2016-g6-mc-q24",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 102,
+      "id": "nysed-ela-2016-g6-mc-q28",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 103,
+      "id": "nysed-ela-2016-g6-mc-q35",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 104,
+      "id": "nysed-ela-2016-g6-mc-q42",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 111,
+      "id": "nysed-ela-2022-g6-mc-q11",
+      "previousVerdict": "partially-resolved",
+      "issue": "Did not explain why B beats D; fear/ignorance reasoning ran backward",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 121,
+      "id": "nysed-ela-2016-g7-mc-q10",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 122,
+      "id": "nysed-ela-2016-g7-mc-q12",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 123,
+      "id": "nysed-ela-2016-g7-mc-q37",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 124,
+      "id": "nysed-ela-2016-g7-mc-q42",
+      "previousVerdict": "not-resolved",
+      "issue": "Crop runs to bottom of PDF page leaving large blank area",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 135,
+      "id": "nysed-ela-2021-g7-mc-q8",
+      "previousVerdict": "partially-resolved",
+      "issue": "2021 reprints 2018 items (duplicates); use 2021 text to fix 2018 q29/q33",
+      "status": "retained-official-release",
+      "resolution": "The explanation corrections were already verified. Keep both official releases; an official reprint is not a content defect."
+    },
+    {
+      "verificationIndex": 136,
+      "id": "nysed-ela-2021-g7-mc-q28",
+      "previousVerdict": "partially-resolved",
+      "issue": "2021 reprints 2018 items (duplicates); use 2021 text to fix 2018 q29/q33",
+      "status": "retained-official-release",
+      "resolution": "The explanation corrections were already verified. Keep both official releases; an official reprint is not a content defect."
+    },
+    {
+      "verificationIndex": 175,
+      "id": "nysed-ela-2013-g6-stimulus-1-5",
+      "previousVerdict": "partially-resolved",
+      "issue": "Placeholder header 'questions XX through XX' and internal item code in 2013-2014 passage images",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 180,
+      "id": "nysed-ela-2017-g6-stimulus-36-42",
+      "previousVerdict": "partially-resolved",
+      "issue": "Book/Page footer and stray spaces incl. 'palm fronds.¹'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 184,
+      "id": "nysed-ela-2013-g7-stimulus-1-7",
+      "previousVerdict": "partially-resolved",
+      "issue": "Placeholder header 'XX through XX' and item code",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 196,
+      "id": "nysed-ela-2017-g8-stimulus-22-28",
+      "previousVerdict": "partially-resolved",
+      "issue": "Garbled subscript receptor names, 'jalape ño', ‘“hot’’’",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 204,
+      "id": "nysed-2014-g3-mc-q3",
+      "previousVerdict": "not-resolved",
+      "issue": "'equal- sized' line-break hyphen artifact",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 209,
+      "id": "nysed-2014-g3-mc-q25",
+      "previousVerdict": "not-resolved",
+      "issue": "'unknown- factor' hyphen artifact",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 211,
+      "id": "nysed-2014-g3-mc-q29",
+      "previousVerdict": "not-resolved",
+      "issue": "loose worked equation appended after final sentence",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 219,
+      "id": "nysed-2016-g3-mc-q22",
+      "previousVerdict": "not-resolved",
+      "issue": "~600 px empty space below D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 222,
+      "id": "nysed-2017-g3-mc-q9",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation says 'fourth interval' instead of tick",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 250,
+      "id": "nysed-2026-g3-mc-q15",
+      "previousVerdict": "not-resolved",
+      "issue": "extra redundant Spanish sentence",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 251,
+      "id": "nysed-2026-g3-mc-q19",
+      "previousVerdict": "not-resolved",
+      "issue": "extra redundant Spanish sentence",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 253,
+      "id": "nysed-2026-g3-mc-q30",
+      "previousVerdict": "not-resolved",
+      "issue": "extra redundant Spanish sentence",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 283,
+      "id": "nysed-2017-g4-mc-q44",
+      "previousVerdict": "not-resolved",
+      "issue": "explanation[es] 'residuo' vs crop 'remanente'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 284,
+      "id": "nysed-2018-g4-mc-q3",
+      "previousVerdict": "not-resolved",
+      "issue": "redundant 'Como... por lo tanto'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 300,
+      "id": "nysed-2019-g4-mc-q38",
+      "previousVerdict": "partially-resolved",
+      "issue": "no ruler; explanation just asserts lengths; alt gave lengths",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 306,
+      "id": "nysed-2022-g4-mc-q32",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation[es] 'bolígrafos' vs 'lapiceras'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 335,
+      "id": "nysed-2014-g5-mc-q27",
+      "previousVerdict": "not-resolved",
+      "issue": "Stray space inside opening quotation mark",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 336,
+      "id": "nysed-2014-g5-mc-q32",
+      "previousVerdict": "not-resolved",
+      "issue": "PDF hyphenation 'two- dimensional'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 342,
+      "id": "nysed-2017-g5-mc-q14",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation[es] says 'pulseras' instead of 'brazaletes'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 346,
+      "id": "nysed-2017-g5-mc-q28",
+      "previousVerdict": "partially-resolved",
+      "issue": "Raised-dot multiplication and missing step converting 2/4, 3/4 to eighths",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 351,
+      "id": "nysed-2018-g5-mc-q34",
+      "previousVerdict": "not-resolved",
+      "issue": "Product written 5 × 5/8 while key prints 5/8 × 5",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 355,
+      "id": "nysed-2019-g5-mc-q20",
+      "previousVerdict": "not-resolved",
+      "issue": "'12 llenados' unnatural Spanish",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 357,
+      "id": "nysed-2019-g5-mc-q28",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation[es] 'salones' vs 'aulas'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 360,
+      "id": "nysed-2019-g5-mc-q36",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation[es] masculine 'milésimos' vs printed 'milésimas'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 364,
+      "id": "nysed-2021-g5-mc-q9",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation[es] 'lote(s)' vs 'tanda(s)'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 388,
+      "id": "nysed-2014-g6-mc-q29",
+      "previousVerdict": "not-resolved",
+      "issue": "Stray trailing '4 + 3 = 7'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 390,
+      "id": "nysed-2014-g6-mc-q39",
+      "previousVerdict": "partially-resolved",
+      "issue": "Uneven minus spacing; equation runs on; quoted answer untidy",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 391,
+      "id": "nysed-2014-g6-mc-q40",
+      "previousVerdict": "not-resolved",
+      "issue": "Explanation starts with stray colon",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 397,
+      "id": "nysed-2015-g6-mc-q14",
+      "previousVerdict": "not-resolved",
+      "issue": "Page footer 'calculators allowed' in crop",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 400,
+      "id": "nysed-2016-g6-mc-q13",
+      "previousVerdict": "not-resolved",
+      "issue": "~700 px blank space below last choice",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 401,
+      "id": "nysed-2016-g6-mc-q18",
+      "previousVerdict": "partially-resolved",
+      "issue": "Alt put C's N at 1/2; 'halfway points marked with filled dots' false",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 436,
+      "id": "nysed-2024-g6-mc-q4",
+      "previousVerdict": "not-resolved",
+      "issue": "ASCII hyphen used as minus sign",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 469,
+      "id": "nysed-2018-g7-mc-q22",
+      "previousVerdict": "partially-resolved",
+      "issue": "'Sr. Barry' vs 'Sra. Barry'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 470,
+      "id": "nysed-2019-g7-mc-q4",
+      "previousVerdict": "partially-resolved",
+      "issue": "'molde' vs 'fuente'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 473,
+      "id": "nysed-2019-g7-mc-q30",
+      "previousVerdict": "partially-resolved",
+      "issue": "'salon base' vs 'clase del curso'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 474,
+      "id": "nysed-2019-g7-mc-q38",
+      "previousVerdict": "partially-resolved",
+      "issue": "'sombreros' vs 'gorras'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 492,
+      "id": "nysed-2026-g7-mc-q1",
+      "previousVerdict": "not-resolved",
+      "issue": "alt[es] adds 'juegos' to choices",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 493,
+      "id": "nysed-2026-g7-mc-q5",
+      "previousVerdict": "not-resolved",
+      "issue": "alt[es] adds 'galones por hora'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 494,
+      "id": "nysed-2026-g7-mc-q6",
+      "previousVerdict": "not-resolved",
+      "issue": "alt[es] adds 'por semana'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 495,
+      "id": "nysed-2026-g7-mc-q8",
+      "previousVerdict": "not-resolved",
+      "issue": "alt[es] adds 'combinaciones'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 506,
+      "id": "nysed-2015-g8-mc-q29",
+      "previousVerdict": "not-resolved",
+      "issue": "Book-2 crops include 'calculators allowed' footer; alt mentions it inconsistently",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 507,
+      "id": "nysed-2016-g8-mc-q3",
+      "previousVerdict": "partially-resolved",
+      "issue": "Caret exponent notation in vine-authored explanations (pattern, en+es)",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 520,
+      "id": "nysed-2018-g8-mc-q24",
+      "previousVerdict": "partially-resolved",
+      "issue": "explanation[es] said 'boleto' but item says 'entrada'",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    },
+    {
+      "verificationIndex": 551,
+      "id": "nysed-2025-g8-mc-q8",
+      "previousVerdict": "partially-resolved",
+      "issue": "Ambiguous inline fractions in explanation final equation and alt[en] C/D",
+      "status": "fixed",
+      "resolution": "Addressed by the corresponding Round 2 correction, including pattern-wide and cosmetic fixes."
+    }
+  ],
+  "verification": {
+    "automatedTests": 319,
+    "pythonTests": 196,
+    "nodeTests": 123,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "sourceVerifiedLegacyRationales": {
+      "math": 228,
+      "ela": 149
+    },
+    "sourceRegeneratedImageRepairs": 72,
+    "browserChecks": 38,
+    "recordedAnswerFeedbackChecks": 4,
+    "freshLocalStudentAccounts": 7,
+    "answerKeysUnchanged": true
+  }
+}

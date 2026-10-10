@@ -20,9 +20,9 @@ REPAIRED_CROPS = {
     (2015, 3, 'en', 10): (1108, 1205),
     (2015, 4, 'en', 11): (1108, 621),
     (2015, 6, 'en', 3): (1108, 1327),
-    (2015, 6, 'en', 18): (1108, 636),
+    (2015, 6, 'en', 18): (1066, 636),
     (2015, 7, 'en', 2): (1108, 1320),
-    (2015, 7, 'en', 21): (1108, 538),
+    (2015, 7, 'en', 21): (1108, 511),
     (2015, 7, 'en', 25): (1108, 586),
     (2015, 7, 'en', 27): (1108, 337),
     (2016, 4, 'en', 24): (904, 1033),
@@ -95,7 +95,7 @@ REPAIRED_CROPS = {
 
 class ReviewedContentTests(unittest.TestCase):
     def test_reviewed_diagram_repairs_keep_the_verified_pixels(self):
-        expected = [('public/nysed/math/2017/grade-5/es/q15.webp', '4dd8163133288419859428fd52b028d8e622179417c992009eb9478afeca0a12'), ('public/nysed/math/2017/grade-5/es/q17.webp', '725dbc2ea6694c40886645a144bbe4f139b57af4e2d4001ae4f3a64d4e14b81f'), ('public/nysed/math/2017/grade-6/es/q46.webp', 'da7c405b7a9b907c053418a41df217fd3e95a0749113ce631a91ebf19220eb76'), ('public/nysed/math/2017/grade-8/en/q04.webp', 'a75f2683513935a20c95c6d4455b369cef69aace83c09eee58280b9e1215d70b')]
+        expected = [('public/nysed/math/2017/grade-5/es/q15.webp', '4dd8163133288419859428fd52b028d8e622179417c992009eb9478afeca0a12'), ('public/nysed/math/2017/grade-5/es/q17.webp', '725dbc2ea6694c40886645a144bbe4f139b57af4e2d4001ae4f3a64d4e14b81f'), ('public/nysed/math/2017/grade-6/es/q46.webp', 'e22f5196fadc721b34962109e879e9255577419a2e974b0240282b77bba2a84b'), ('public/nysed/math/2017/grade-8/en/q04.webp', 'a75f2683513935a20c95c6d4455b369cef69aace83c09eee58280b9e1215d70b')]
         for path, digest in expected:
             self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), digest)
 
@@ -163,7 +163,7 @@ class ReviewedContentTests(unittest.TestCase):
         passage = next(s for s in exam['stimuli'] if s['id'].endswith('stimulus-1-6'))
         text = passage['passage']['transcript']['text']
         for value in ['MORE FABULOUS FATHERS', 'Father’s Unusual Actions', 'Seahorse:',
-                      'Great Horned Owl:', 'Rhea (a large bird):', 'Jacana (a marsh bird):',
+                      'Great Horned Owl:', 'Rhea (a large bird):', 'Jacana (a small bird):',
                       'Carries the eggs in his pouch and gives birth', 'Protects the nest']:
             self.assertIn(value, text)
 
