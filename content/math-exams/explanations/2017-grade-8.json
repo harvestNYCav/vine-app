@@ -34,7 +34,7 @@
       }
     },
     "nysed-2017-g8-mc-q4": {
-      "inputHash": "5c200e97c469b1a0f1fefd0b9c426924c4b1d85c1050416a3f59a3bc13afae83",
+      "inputHash": "d3404747a2389f0c755e0a5b6e40a88ff18169a3a21c65e46ddb9d0afeaf13ff",
       "explanation": {
         "text": {
           "en": "From 4 to 8 months, the total rises from $1,500 to $2,500, so the monthly deposit is ($2,500 - $1,500) ÷ 4 = $250. The initial $500 is the value at t = 0, giving a = 250t + 500, choice C.",
@@ -237,8 +237,8 @@
       "inputHash": "12247b039840817eef7b5f6285313aa97c4a8a05d28977d1a0c817fce1d3bd9b",
       "explanation": {
         "text": {
-          "en": "Rotations, reflections, and translations preserve all side lengths. Figure A's top side runs from x = 2 to x = 9, a length of 7, while Figure B's top side runs from x = -7 to x = -2, a length of 5. The figures are not congruent, so choice C is true.",
-          "es": "Las rotaciones, reflexiones y traslaciones conservan todas las longitudes. El lado superior de A va de x = 2 a x = 9 y mide 7, mientras que el de B va de x = -7 a x = -2 y mide 5. Las figuras no son congruentes; por eso C es verdadera."
+          "en": "Rotations, reflections, and translations preserve every side length. Figure A has a side 3 units long, from (9, 2) to (9, 5). Figure B’s horizontal and vertical sides measure 5, 7, and 4 units, and its slanted side is longer than its vertical change of 4 units. None is 3 units long. The figures are not congruent, so choice C is true.",
+          "es": "Las rotaciones, reflexiones y traslaciones conservan todas las longitudes. A tiene un lado de 3 unidades, de (9, 2) a (9, 5). Los lados horizontales y verticales de B miden 5, 7 y 4; su lado inclinado es más largo que su cambio vertical de 4. Ninguno mide 3. Las figuras no son congruentes, así que C es verdadera."
         },
         "source": "vine-authored"
       }
@@ -367,8 +367,8 @@
       "inputHash": "3eff1a3ce7fe0c3b97a1393fe0593e455983f136978177d0c562ce08c965a89c",
       "explanation": {
         "text": {
-          "en": "Speed is the slope of each distance-time graph. Airplane A travels 6 miles per minute and B travels 4 miles per minute. For C, the coefficient in y = (27/6)x is 27/6 = 4.5 miles per minute. Since 4 < 4.5 < 6, C is slower than A but faster than B, choice D.",
-          "es": "La velocidad es la pendiente de cada gráfica. El avión A recorre 6 millas por minuto y B recorre 4. Para C, el coeficiente de y = (27/6)x es 27/6 = 4.5 millas por minuto. Como 4 < 4.5 < 6, C es más lento que A y más rápido que B, la opción D."
+          "en": "Speed is the slope of each distance-time graph. At 5 minutes, airplane A has traveled about 26 miles, giving a speed of about 5.2 miles per minute. B travels 4 miles per minute. For C, y = (27/6)x gives 27/6 = 4.5 miles per minute. Thus C is slower than A but faster than B, choice D.",
+          "es": "La velocidad es la pendiente de cada gráfica. A los 5 minutos, A ha recorrido unas 26 millas, aproximadamente 5.2 millas por minuto. B recorre 4 millas por minuto. Para C, y = (27/6)x da 27/6 = 4.5 millas por minuto. Por eso C es más lento que A y más rápido que B, la opción D."
         },
         "source": "vine-authored"
       }

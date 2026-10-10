@@ -387,13 +387,13 @@
     "nysed-2023-g6-mc-q22": {
       "inputHash": "9a7caba60bf53f3c5f930f2b1ff56a49c35b3c0de605fc6487597492d1bd6a54",
       "description": {
-        "en": "Question 22. What is the value of the expression 5h + c³ when h = 7 and c = 4? Choices: A: 24. B: 47. C: 76. D: 99.",
+        "en": "Question 22. What is the value of the expression 5b + c³ when b = 7 and c = 4? Choices: A: 24. B: 47. C: 76. D: 99.",
         "es": "Pregunta 22. ¿Cuál es el valor de la expresión 5b + c³ si b = 7 y c = 4? Opciones: A: 24 B: 47 C: 76 D: 99"
       },
       "requiredSourceTokens": {
         "en": [
-          "5h + c³",
-          "h = 7",
+          "5b + c³",
+          "b = 7",
           "c = 4",
           "24",
           "47",
@@ -402,7 +402,8 @@
           "A: 24",
           "B: 47",
           "C: 76",
-          "D: 99"
+          "D: 99",
+          "Question 22. What is the value of the expression 5b + c³ when b = 7 and c = 4? Choices: A: 24. B: 47. C: 76. D: 99."
         ],
         "es": [
           "5b + c³",

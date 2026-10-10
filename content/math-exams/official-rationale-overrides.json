@@ -134,8 +134,8 @@
     },
     "nysed-2014-g3-mc-q14": {
       "rawRationaleSha256": "76e3bf7b04be21f9cf97f6e28e42b0878327c6942d58840ae702e9fa251d972f",
-      "text": "“J and M”; This is the correct pair of points on the number line with a distance of 3/8 between them. The student may have understood that the number line represents eighths and counted three tick marks from J to M. The student who selects this response understands how to recognize a fraction a/b on a number line diagram by marking off a lengths 1/b from 0. The student recognizes that the resulting interval has size a/b.",
-      "source": "official-nysed"
+      "text": "J and M are 3/8 apart. The number line is divided into eighths, and there are three equal intervals from J to M. Three lengths of 1/8 add to 3/8.",
+      "source": "official-nysed-corrected"
     },
     "nysed-2014-g3-mc-q26": {
       "rawRationaleSha256": "bf78056b77413c4944a9366068085e8842b28d345d4709b1089ddd8018dccf36",
@@ -199,8 +199,8 @@
     },
     "nysed-2014-g4-mc-q42": {
       "rawRationaleSha256": "fec304206d37661545881728c99007cd22f7d199b927ce362e11248fa665f039",
-      "text": "“5/6”; This represents the correct fraction that is greater than 3/4. The student may have found a common denominator to compare the fractions or may have compared the fractions to benchmark fractions. The student who selects this response understands how to compare two fractions with different numerators and different denominators by creating common denominators or numerators, or by comparing to a benchmark fraction. 10/12 > 9/12, or 5/6 is closer to 1 than 3/4.",
-      "source": "official-nysed"
+      "text": "5/6 is greater than 3/4. Rewrite both fractions with denominator 12: 5/6 = 10/12 and 3/4 = 9/12. Since 10/12 > 9/12, 5/6 > 3/4.",
+      "source": "official-nysed-corrected"
     },
     "nysed-2014-g4-mc-q49": {
       "rawRationaleSha256": "545115da97eff27057343e7aa32ff81b2100e69f2230a4120ace42695e055870",
@@ -329,8 +329,8 @@
     },
     "nysed-2014-g5-mc-q10": {
       "rawRationaleSha256": "68f447dc4e76c0b882bb27e1fde276f52b3080ffd3e5f591c72b4f9f9b0cf72c",
-      "text": "“six tenths” This is the correct value represented by the 6 in the other number. In a multi-digit number, a digit in one place represents 10 times as much as it represents in the place to its right and 1/10 of what it represents in the place to its left.",
-      "source": "official-nysed"
+      "text": "In 136.25, the 6 is in the ones place, so it represents 6 ones. One-tenth of 6 ones is 6 tenths. Thus the 6 in the other number represents six tenths.",
+      "source": "official-nysed-corrected"
     },
     "nysed-2014-g5-mc-q43": {
       "rawRationaleSha256": "8767b3cb16efc41082decd493cfce1d8f510bda29a31673cdc98e60c53f71c96",
@@ -486,6 +486,211 @@
       "rawRationaleSha256": "8a460777999fc98d1371510c63e8ba2befa490869d640275adfd520e63b0121f",
       "text": "This is the graph of a function because every input has exactly one output. Equivalently, each vertical line intersects the graph at most once.",
       "source": "official-nysed"
+    },
+    "nysed-2013-g3-mc-q2": {
+      "rawRationaleSha256": "adf3a8e2a9c8df8392a5a70d66d7bb9202f47ce4eb303628787932bb536bd3ac",
+      "text": "□ × 4 = 36 models an unknown factor multiplied by 4 to make 36. Dividing 36 by 4 finds that factor: 36 ÷ 4 = 9, and 9 × 4 = 36.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g3-mc-q6": {
+      "rawRationaleSha256": "10ca912a457e43bb88359ab7d9a6846f09ba26514e60c1de5e7d362be85ca332",
+      "text": "“4”; This is the correct number of seashells in each of Mallory’s groups. The student may have found the number of seashells in each of Mallory’s groups by multiplying to find the total number of seashells each girl had and then multiplied or divided to find the number of seashells in Mallory’s groups. The student who selects this response understands how to use multiplication and division within 100 to solve word problems involving equal groups. First, 3 × 8 = 24 seashells. Then 24 ÷ 6 = 4 seashells in each group. Check: 6 × 4 = 24.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g3-mc-q29": {
+      "rawRationaleSha256": "b7a458d701f532afaed5478713a365cde6247af321fd475c6de4108785e749d1",
+      "text": "“42”; This is the correct result when a side length 6 feet is multiplied by a side length 7 feet to get an area of 42 square feet. The student may have understood that the two side lengths of the rectangular bathroom floor should be multiplied to find the area. The student who selects this response understands to multiply side lengths to determine rectangular area. 6 × 7 = 42 square feet.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g4-mc-q44": {
+      "rawRationaleSha256": "c21fe176a063f936922f7e8f9e9a0b9d9836c77a7971575e859b2fadbc23833e",
+      "text": "The two printer cartridges and printer cost 2 × $28 + $85 = $141. Subtract that cost from the amount paid: $150 − $141 = $9 in change.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g4-mc-q4": {
+      "rawRationaleSha256": "3bbd7c8c05f0986142a56a0fa9e4e328492eefcfce5bf88dea5e475def00cf7a",
+      "text": "Each mile is 5,280 feet, so 6 miles is 6 × 5,280 feet. 6 × 5,000 = 30,000 and 6 × 280 = 1,680, so 30,000 + 1,680 = 31,680 feet.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g4-mc-q15": {
+      "rawRationaleSha256": "248bfe5c1f01915af4be0807058e5a74f1bb4df6faa6ff3e3353045b7d8e4eb8",
+      "text": "“3,000 + 10,000 + 9 + 800”; This is the correct response that shows 13,809 written in expanded form. The student may have understood that in expanded form, each digit in the number 13,809 should be written to show its place value. The student who selects this response understands how to read and write multi-digit whole numbers using expanded form.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g4-mc-q36": {
+      "rawRationaleSha256": "accaec03bb3e1700472d3f3679f9de952c78b60fe4f25d3d63a55ea1babd6bef",
+      "text": "“41,523”; This is the correct response that shows a number with a digit 5 that has a value ten times greater than the value of the digit 5 in the number 41,253. The student may understand that the value of the digit 5 in the number 41,253 is 50, that the value of the digit 5 in the number 41,523 is 500, and that 500 is ten times as great as 50. The student who selects this response recognizes that in a multi-digit whole number, a digit in one place represents ten times the value it represents in the place to its right.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g4-mc-q11": {
+      "rawRationaleSha256": "f0f6bfeabf8aba5fba026ddc527e156af9277967ca75558f3121c8086fe85d8a",
+      "text": "January’s distance is 825 ÷ 3 = 275 miles. February’s distance is 4 times January’s, so 4 × 275 = 1,100 miles.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g5-mc-q14": {
+      "rawRationaleSha256": "f4b068ef2dc743c89e73fdd95f08171fc80f7a355f6d90810b2c849a308778d9",
+      "text": "“240”; This response represents a correct conversion from ounces to pounds. Using the relationship “1 pound = 16 ounces,” the student may have divided 3,840 ounces by 16 to obtain a result of 240 pounds. A student who selects this response understands how to correctly convert among different-sized standard measurement units.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g5-mc-q19": {
+      "rawRationaleSha256": "65d2aec4104c6e38e9ac8b69c74631ba17d030f30cbea91c55ad18246d7b6dd7",
+      "text": "“45”; This response represents the correct volume of the figure. The student may have counted the number of unit cubes in one layer of the rectangular prism and then used addition or multiplication to determine the total number of unit cubes as the volume, in cubic centimeters, of the figure. Alternatively, the student may have applied the formula for volume of a rectangular prism, using the length, width, and height values determined by counting the number of unit cubes along each dimension of the figure. 5 × 3 × 3 = 45. A student who selects this response understands how to measure the volume of a figure by counting unit cubes.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q5": {
+      "rawRationaleSha256": "97339065f9da2b368cf9ed5b36dd35474736edd78442d405999b9d813763794c",
+      "text": "Substitute 7 for m in 4m + 8: 4(7) + 8 = 28 + 8 = 36. This equals the other side of the equation, so m = 7 makes the equation true.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q12": {
+      "rawRationaleSha256": "e2836ea7418a232c7183c26febf371c7fdad10888fe4e5ff4cb877ef4cdbaa98",
+      "text": "Felicity babysat 2 × 10 = 20 hours in all. Divide her total earnings by the hours worked: $180 ÷ 20 = $9 per hour.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q20": {
+      "rawRationaleSha256": "dfc9e5fc0c390700d06c90a108a5318002376918caa85bf87d1f46aa07286810",
+      "text": "Machine S is cleaned after 12, 24, 36, … weeks. Machine T is cleaned after 8, 16, 24, 32, … weeks. The first positive number in both lists is 24: 12 × 2 = 24 and 8 × 3 = 24. Both machines will next be cleaned in the same week after 24 weeks.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q48": {
+      "rawRationaleSha256": "18d2e6c37b02b1c1b842c8b74d4a6ab042989a20808f9d594c1aff138fd2e5c6",
+      "text": "For each point, x is twice y. At F(0, 0), 2 × 0 = 0. At G(4, 2), 2 × 2 = 4. At H(6, 3), 2 × 3 = 6. Therefore the x-coordinate is 2 times the y-coordinate.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g6-mc-q47": {
+      "rawRationaleSha256": "542b0c17be6620c79f7ee4ec520799641a8f69e9fffcb4b16144c6f5c6ade9dc",
+      "text": "“|−6| + |3|” The student was able to correctly identify the expression which represents the distance, in units, between the two points. In this case, the distance between the points can be found by adding the absolute value of the two x-coordinates. Students may have drawn a sketch of these two coordinates and determined the distance graphically, and then selected the expression that matched the findings from their sketch.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g6-mc-q61": {
+      "rawRationaleSha256": "63717779cb8b5b1af5c013a45ddf254063d003cab187a1e38d35dc119f1c4dbc",
+      "text": "“point B” The student was able to correctly graph the point (3, −1) and determine that point B is 5 units from point G. The student may have used the graph to count the number of units between point B and point G. The student may also have added the absolute values of the x-coordinates of point B, located at (−2, −1) and point G: |3| + |−2| = 5.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g6-mc-q48": {
+      "rawRationaleSha256": "e75dd557bae595f2f4192b6e69ad83af39bc1095e2623b612d6d54dfc4b5c58c",
+      "text": "“6x − 8” The student has correctly identified the expression that records both the operation of subtraction and multiplication. The student correctly translates the “product of 6 and a number, x” as the operation of multiplication as well as the phrase “8 less than” (“8 subtracted from”) to identify the correct expression, 6x − 8.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q54": {
+      "rawRationaleSha256": "a56937ae40696ed4b35940c12805db224ce35661c57306b1ddb83ae0e6a89b17",
+      "text": "“Amy and Bart saw the same number of whales.” This statement is true based on the given points plotted on the grid. The student may have observed that the y-coordinate is the same for the points labeled as “Amy” and “Bart,” and that the y-axis measures the number of whales seen on the trip. A student who selects this response understands how to interpret coordinate values of points in the context of the situation.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q49": {
+      "rawRationaleSha256": "2ac4c677daff5e78b5fc8442d65b1e1be7d5dfb9bf462a753856f3adce258077",
+      "text": "The vertical side from (4, 3) to (4, −4) is 3 − (−4) = 7 units long. The horizontal side from (4, 3) to (−2, 3) is 4 − (−2) = 6 units long. The rectangle is 7 units by 6 units.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q11": {
+      "rawRationaleSha256": "d4e692c0940d375a3d462937506eb590089eac497693e2c9f6c775e1e5b9fce8",
+      "text": "“8(2a + 3b)”; This answer represents an expression that is equivalent to the given expression. The student may have used a method such as the one below. 16a + 24b = 8(2a)+ 8(3b) = 8(2a + 3b). A student who selects this response understands how to apply the distributive property to generate equivalent expressions.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q18": {
+      "rawRationaleSha256": "435efd2396e08fc95d42d01750937632a685dee00a604b0773d93c255f42721c",
+      "text": "“19m”; This response correctly shows an expression that is equivalent to the given expression. The student may have used a method such as the one below. 3(6m)+ m = 18m + m = 19m. A student who selects this response understands how to apply the properties of operations to generate equivalent expressions.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q28": {
+      "rawRationaleSha256": "d4cc78b380b71600ed749ed963ff5032503c5a21840111d2f582042917f5bb48",
+      "text": "“18”; This response represents the correct value of the given expression when z = 7. The student may have used a method such as the one below. 3(7)−3 = 18. A student who selects this response understands how to evaluate expressions at specific values of their variables, using the correct order of operations.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q36": {
+      "rawRationaleSha256": "4d919e9daae63fdc638a3919a5702e04c67057113fbe7ba9ddb7a11db8208b52",
+      "text": "“5d + 5”; This answer represents an expression that is equivalent to the given expression. The student may have made this determination using the distributive property, as shown below: 5(d +1) = 5d + 5. A student who selects this response understands how to apply the distributive property to generate equivalent expressions.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g6-mc-q39": {
+      "rawRationaleSha256": "f999b46b3ede4e49c03b26b528269fde03c84ac24ac29d01b8f4aed3c0fb64a6",
+      "text": "“10x −2y ”; This response represents an expression that is equivalent to the given expression. The student may have used a method such as the one below. 8x −2y + x + x = (8x + x + x)−2y = 10x −2y. A student who selects this response understands how to apply the properties of operations to generate equivalent expressions.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q1": {
+      "rawRationaleSha256": "cdcb36f9445f3eb074b0b6f7606ab4a0d64e671c3334541c362cfe9cdc06a001",
+      "text": "Three of the six equally likely faces are even: 2, 4, and 6. The probability of an even number is 3/6 = 1/2. Over 300 rolls, about (1/2) × 300 = 150 even results are expected. This is an estimate, not a guarantee of exactly 150.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q6": {
+      "rawRationaleSha256": "168189b94e790074cac0de0b12278ebf483a78f66ab527395f70e9b9dc2906d7",
+      "text": "Add the expressions and combine like terms: (2x − 5y) + (x + y) = (2x + x) + (−5y + y) = 3x − 4y.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q8": {
+      "rawRationaleSha256": "54e028ac9c5ac302bf193014d5bb943406a81c1800a9c5e13a6b641f10a58544",
+      "text": "The 20% discount is $1,080 × 0.20 = $216, so the discounted price is $1,080 − $216 = $864. Tax on that price is $864 × 0.08 = $69.12. The total is $864 + $69.12 = $933.12.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q9": {
+      "rawRationaleSha256": "2551a5e3e16f04635bfb0eaa852565bcc7139c156240b727191fa46864003563",
+      "text": "The discount is $40 − $25 = $15. Compare the discount with the original price: 15 ÷ 40 = 0.375. Convert to a percent: 0.375 × 100% = 37.5%.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q10": {
+      "rawRationaleSha256": "300fa6dc49483ff5ff22078adf01722290eea9152b723bc8a0ad98be9ac2da47",
+      "text": "Rewrite 0.88x as x − 0.12x. This shows that the amount is 12% less than x: subtract 12% of x from the original amount.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q11": {
+      "rawRationaleSha256": "1b84b902f1606030828f397b8a2db006e7016ffbdf04941676db46132814d07a",
+      "text": "Divide money spent by games played: $18 ÷ 4 = $4.50 per game, and $27 ÷ 6 = $4.50 per game. The constant of proportionality is 4.5.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g7-mc-q12": {
+      "rawRationaleSha256": "b36899221fea419a5c03151ed2966acd1fc3c8ba43863bd323e9219992041cb0",
+      "text": "Tax is $72.60 × 0.08 = $5.808, or $5.81 rounded to cents. The tip is based on the pretax cost: $72.60 × 0.20 = $14.52. Add the service charge, tax, and tip: $72.60 + $5.81 + $14.52 = $92.93.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g7-mc-q3": {
+      "rawRationaleSha256": "54119ecbf8689f7029ed6b9ed86e5d4e02b417a335a241fa8699430377d31ff6",
+      "text": "“4x – 3”; This response represents the correct equivalent expression. (7x −5)−(3x −2) = 7x −3x −5−(−2) = 4x −3",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g7-mc-q14": {
+      "rawRationaleSha256": "3abbe1bf7d73f3987746bb2e5bb21da05e5715c9c622719608f3c4832ff8d977",
+      "text": "The monthly cost must be less than $60: 0.05t + 30 < 60. Subtract 30 from both sides to get 0.05t < 30. Divide both sides by 0.05 to get t < 600. Heather can send fewer than 600 texts.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g7-mc-q16": {
+      "rawRationaleSha256": "0b64c40ec0bb3bf9dba0779353afaed0dc6ae81f3bcaf0f0051e9ec0aaeb2f28",
+      "text": "Let x be the price of one sweater. Four sweaters and a $20 skirt cost $160, so 4x + 20 = 160. Subtract 20: 4x = 140. Divide by 4: x = 35. Each sweater costs $35.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g8-mc-q3": {
+      "rawRationaleSha256": "2776c0f04ee7f2b138296106af34a782a087d5ceb659b0afbcef3745076ed7bf",
+      "text": "Distribute 2 in 2(x − 3) = 2x + 5 to get 2x − 6 = 2x + 5. Subtract 2x from both sides: −6 = 5, which is false. Equivalently, adding 6 gives 0 = 11. No value of x can make the equation true, so there is no solution.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g8-mc-q61": {
+      "rawRationaleSha256": "acfe0556ca382dcab38eac363be1116ea69a4643aa1d3d8d9dd2090dd4d5ef94",
+      "text": "Divide each count by the total of 75 students, then multiply by 100 to express it as a percent. For example, boys who ate in the cafeteria make up (16/75) × 100% ≈ 21%. Applying this to all entries gives table B, whose grand total is 100%.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g8-mc-q16": {
+      "rawRationaleSha256": "4ed8346fa647a15296e8b7cc0c69c1b708a58286dc8608971b8193dc343b00be",
+      "text": "Add the two equations, 3x + 4y = −2 and 2x − 4y = −8. The y-terms cancel, leaving 5x = −10, so x = −2. Substitute into the first equation: 3(−2) + 4y = −2, then −6 + 4y = −2, so 4y = 4 and y = 1.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g8-mc-q2": {
+      "rawRationaleSha256": "82167cbb147fb701641ff1310ccd4c874c3ba10c2fc1a4385c0dbb3c917d2abd",
+      "text": "“Reflection over the y-axis and translation 2 units down.” The student correctly identified that a reflection over the y-axis, followed by a translation 2 units down, would transform triangle A to triangle B. The student who selects this response successfully determined a sequence of transformations that will take triangle A to triangle B.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2013-g8-mc-q5": {
+      "rawRationaleSha256": "22bfa590f1ebc94c9e066bfdb414c273e3a42f6823f3a9f9a8924a402c63f4d9",
+      "text": "The student correctly determined that the graph does not represent a function of x. The student who selects this response understands the graph of a function is the set of ordered pairs consisting of an input and exactly one corresponding output. The following two ordered pairs (1.5, 1) and (1.5, 3) are each part of the graph shown and are one example where an input, 1.5, has more than one corresponding output, 1 and 3.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g8-mc-q13": {
+      "rawRationaleSha256": "84a94a1c3ea2d193eb8ec689b5981147dcc103901a509710b2cf8c39c0b2defe",
+      "text": "The three adjacent angles on straight line G–N–L total 180°, so ∠FNM = 180° − 60° − 47° = 73°. Angles HNK and FNM are vertical angles, so they have equal measures. Therefore ∠HNK = 73°.",
+      "source": "official-nysed-corrected"
+    },
+    "nysed-2014-g8-mc-q27": {
+      "rawRationaleSha256": "4d74bcc8f8455055612a7adc3d281de28502b05cbde72cf3a9b0ef11c824aacf",
+      "text": "“There is a strong positive relationship between the cost of rent and the size of the office space.” This answer correctly describes the relationship that would be conveyed about the given data by the line of best fit. The student may have informally fit a straight line to the data and then observed that this line had a strong positive relationship between the variables. The student who selects this response understands how to informally fit a straight line, for scatter plots that suggest a linear association, and informally assess the model fit by judging the closeness of the data points to the line.",
+      "source": "official-nysed-corrected"
     }
   }
 }

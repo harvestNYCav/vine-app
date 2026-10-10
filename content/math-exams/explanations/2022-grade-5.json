@@ -127,8 +127,8 @@
       "inputHash": "ec56af6dd07c23e07f9f3e773b5913a2ccb82db4e04e6e14cbe7dab1ea95a3fe",
       "explanation": {
         "text": {
-          "en": "Rewrite 3/10 as 30/100, then add the like denominators. The sum is 30/100 + 27/100 = 57/100, choice D.",
-          "es": "Se reescribe 3/10 como 30/100 y luego se suman los denominadores iguales. La suma es 30/100 + 27/100 = 57/100, la opción D."
+          "en": "Rewrite 3/10 as 30/100. With equal denominators, add the numerators and keep the denominator: 30/100 + 27/100 = 57/100, choice D.",
+          "es": "Se reescribe 3/10 como 30/100. Con denominadores iguales, se suman los numeradores y se conserva el denominador: 30/100 + 27/100 = 57/100, la opción D."
         },
         "source": "vine-authored"
       }
@@ -137,8 +137,8 @@
       "inputHash": "7e0ada7a31ba01ae798730f845e37fdd9aee3a1651fe8c78e203c7d607eda818",
       "explanation": {
         "text": {
-          "en": "Dividing by 10^3 = 1,000 moves the decimal point three places left. Thus 425.378 ÷ 1,000 = 0.425378, so the decimal lies to the left of the 4, as stated in choice A.",
-          "es": "Dividir entre 10^3 = 1,000 mueve el punto decimal tres lugares a la izquierda. Así, 425.378 ÷ 1,000 = 0.425378, por lo que el punto queda a la izquierda del 4, como dice la opción A."
+          "en": "Dividing by 10³ = 1,000 moves the decimal point three places left. Thus 425.378 ÷ 1,000 = 0.425378, so the decimal lies to the left of the 4, as stated in choice A.",
+          "es": "Dividir entre 10³ = 1,000 mueve el punto decimal tres lugares a la izquierda. Así, 425.378 ÷ 1,000 = 0.425378, por lo que el punto queda a la izquierda del 4, como dice la opción A."
         },
         "source": "vine-authored"
       }

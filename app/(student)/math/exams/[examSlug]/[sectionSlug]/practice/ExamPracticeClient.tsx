@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+import { getMathExamStudentNotice } from '@/content/math-exams/student-notices'
+import MeasurementGuide from './MeasurementGuide'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import type {
@@ -275,6 +277,7 @@ export default function ExamPracticeClient({
   if (!question) return null
   const questionImage = isSpanish ? (question.image.es ?? question.image.en) : question.image.en
   const questionAlt = isSpanish ? question.image.alt.es : question.image.alt.en
+  const studentNotice = getMathExamStudentNotice(question.id, isSpanish ? 'es' : 'en')
 
   return (
     <div className="mx-auto w-full max-w-lg px-4 py-5">
@@ -292,6 +295,12 @@ export default function ExamPracticeClient({
       </div>
 
       <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
+        {studentNotice && (
+          <aside aria-label="Corrección de la traducción" className="mb-4 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">
+            <p className="font-bold">Corrección de Vine — antes de responder</p>
+            <p className="mt-2 leading-relaxed">{studentNotice}</p>
+          </aside>
+        )}
         <div className="overflow-hidden rounded-xl border border-gray-100 bg-white">
           <Image
             src={questionImage.src}
@@ -303,6 +312,8 @@ export default function ExamPracticeClient({
             loading="eager"
           />
         </div>
+
+        <MeasurementGuide questionId={question.id} isSpanish={isSpanish} />
 
         <div className="mt-5">
           <fieldset>

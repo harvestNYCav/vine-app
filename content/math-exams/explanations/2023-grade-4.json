@@ -87,8 +87,8 @@
       "inputHash": "6d5ba4830767d00d03e8848aa9f1b5832e82e25d4e9b8cfa950a699ad05ad297",
       "explanation": {
         "text": {
-          "en": "The right side is 15 × 1/6 = 15/6, while the left is x × 3/6. Solving 3x/6 = 15/6 gives 3x = 15, so x = 5.",
-          "es": "El lado derecho es 15 × 1/6 = 15/6 y el izquierdo es x × 3/6. Al resolver 3x/6 = 15/6 se obtiene 3x = 15, así que x = 5."
+          "en": "The right side is 15 × 1/6 = 15/6, which is 15 sixths. Each 3/6 is 3 sixths, and 15 ÷ 3 = 5, so 5 × 3/6 = 15/6. The missing value is 5, choice B.",
+          "es": "El lado derecho es 15 × 1/6 = 15/6, o sea 15 sextos. Cada 3/6 son 3 sextos y 15 ÷ 3 = 5, así que 5 × 3/6 = 15/6. El valor que falta es 5, la opción B."
         },
         "source": "vine-authored"
       }
@@ -117,8 +117,8 @@
       "inputHash": "63be2cfd99992f51f3c9bac6eaf9add280765e374a6b779fe03a0b60b6d6123e",
       "explanation": {
         "text": {
-          "en": "With a protractor centered at each vertex, angle D reaches the 60° mark. The other drawings are much smaller than, equal to, or greater than 90°.",
-          "es": "Al centrar un transportador en cada vértice, el ángulo D muestra una medida de 60°. Los otros dibujos son mucho menores que, iguales a, o mayores que 90°."
+          "en": "Measuring with a protractor gives 60° for angle D. Angle A is much smaller than 60°, B is a right angle (90°), and C is obtuse (greater than 90°), so only D measures 60°.",
+          "es": "Al medir con un transportador, el ángulo D mide 60°. A es mucho menor que 60°, B es recto (90°) y C es obtuso (mayor que 90°), así que solo D mide 60°."
         },
         "source": "vine-authored"
       }
@@ -147,8 +147,8 @@
       "inputHash": "8bbe9ad1629d7b4bce354aa8657d60440d1ac425ed02ccd4edf64ff86b04ddbb",
       "explanation": {
         "text": {
-          "en": "In triangle B, the dotted line passes through the top vertex and the midpoint of the opposite side. Reflecting across it matches the two halves, so it is a line of symmetry.",
-          "es": "En el triángulo B, la línea punteada pasa por el vértice superior y el punto medio del lado opuesto. Al reflejar sobre ella coinciden las dos mitades, así que es una línea de simetría."
+          "en": "Triangle B looks equilateral. Its dotted line goes from the bottom-right vertex through the midpoint of the opposite (left) side. Folding along that line makes the two halves match, so it is a line of symmetry, choice B.",
+          "es": "El triángulo B parece equilátero. Su línea punteada va del vértice inferior derecho al punto medio del lado opuesto (el izquierdo). Al doblar por esa línea, las dos mitades coinciden, así que es un eje de simetría, la opción B."
         },
         "source": "vine-authored"
       }
@@ -184,7 +184,7 @@
       }
     },
     "nysed-2023-g4-mc-q35": {
-      "inputHash": "d5b8101cd36df99043834aef5517243dd222181ff92f67cf6f6ece6423b94187",
+      "inputHash": "008cb139c8ef6df5dfdfa81d3af30167dba7b982500e43803311a16bbf175e45",
       "explanation": {
         "text": {
           "en": "Break 11 into 10 + 1: 24 × 11 = 24 × 10 + 24 × 1 = 240 + 24 = 264. Thus the product is 264.",

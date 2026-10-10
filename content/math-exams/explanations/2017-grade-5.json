@@ -108,13 +108,13 @@
       "explanation": {
         "text": {
           "en": "Five yards equals 5 × 36 = 180 inches. Since each bracelet uses 18 inches, Mia can make 180 ÷ 18 = 10 bracelets.",
-          "es": "Cinco yardas equivalen a 5 × 36 = 180 pulgadas. Como cada pulsera usa 18 pulgadas, Mia puede hacer 180 ÷ 18 = 10 pulseras."
+          "es": "Cinco yardas equivalen a 5 × 36 = 180 pulgadas. Como cada pulsera usa 18 pulgadas, Mia puede hacer 180 ÷ 18 = 10 brazaletes."
         },
         "source": "vine-authored"
       }
     },
     "nysed-2017-g5-mc-q15": {
-      "inputHash": "6213eb5e97ae8c0cb45c219be8af01898126ca56bbfe33d24936dfcc21228401",
+      "inputHash": "43a1a91148847dadbed855e0711ade3e8ecff901b16bac0ce565ad782cc05c27",
       "explanation": {
         "text": {
           "en": "The grids to the left of the plus sign show 2.23, and those to the right show 1.90. Adding the modeled decimals gives 2.23 + 1.90 = 4.13.",
@@ -134,7 +134,7 @@
       }
     },
     "nysed-2017-g5-mc-q17": {
-      "inputHash": "db50d418069c493e11ffde4cff22df89b7f1c70c256e7a78a6e7db958ae69fd8",
+      "inputHash": "6cbc907ecef28660f2c57c2dec7d62ae1a328d47796b4d0b684384fab905fd7c",
       "explanation": {
         "text": {
           "en": "The number of unit cubes needed to fill a three-dimensional box measures the space inside it. Therefore, that measurement is the box's volume.",
@@ -148,7 +148,7 @@
       "explanation": {
         "text": {
           "en": "Convert to twentieths: 3/5 = 12/20 and 1/4 = 5/20. Soccer and volleyball account for 17/20, so basketball accounts for 1 − 17/20 = 3/20.",
-          "es": "Se convierte a veinteavos: 3/5 = 12/20 y 1/4 = 5/20. El fútbol y el voleibol representan 17/20, así que el baloncesto representa 1 − 17/20 = 3/20."
+          "es": "El fútbol y el vóleibol representan 17/20, así que el básquetbol representa 1 − 17/20 = 3/20."
         },
         "source": "vine-authored"
       }
@@ -217,8 +217,8 @@
       "inputHash": "a0c1de1502c256f5f27b17c67dcaa4ac170f93dc8e9136cc43652882d5ce1199",
       "explanation": {
         "text": {
-          "en": "The plotted pieces total (1 + 4·4 + 5 + 2·6 + 7)/8 = 41/8 = 5 1/8 feet. Adding the 1 foot left over gives an original length of 6 1/8 feet.",
-          "es": "Las piezas de la gráfica suman (1 + 4·4 + 5 + 2·6 + 7)/8 = 41/8 = 5 1/8 pies. Al sumar el pie que sobró se obtiene una longitud original de 6 1/8 pies."
+          "en": "Add the plotted lengths: 1/8 + 4 × 2/4 + 5/8 + 2 × 3/4 + 7/8 = 1/8 + 16/8 + 5/8 + 12/8 + 7/8 = 41/8 = 5 1/8 feet. Adding the 1 foot left over gives an original length of 6 1/8 feet.",
+          "es": "Suma las longitudes: 1/8 + 4 × 2/4 + 5/8 + 2 × 3/4 + 7/8 = 1/8 + 16/8 + 5/8 + 12/8 + 7/8 = 41/8 = 5 1/8 pies. Al sumar el pie que sobró, la longitud original es 6 1/8 pies."
         },
         "source": "vine-authored"
       }
@@ -244,7 +244,7 @@
       }
     },
     "nysed-2017-g5-mc-q33": {
-      "inputHash": "628b9d1f9dc56fe2d84049d3d34b2a79f59afe0f446488a48afda2c706ca9248",
+      "inputHash": "f509b4fcd2c560fd4680c112838e2b2628200f6f71b26f2b79d0c57e0962c062",
       "explanation": {
         "text": {
           "en": "The base contains 4 × 3 = 12 unit squares, so one layer has 12 unit cubes. Multiplying by the 2 layers gives (4 × 3) × 2 = 24 cubic units.",

@@ -8,7 +8,7 @@
       "explanation": {
         "text": {
           "en": "A probability of 0.13 is much closer to 0 than to 1, so rain has a small but nonzero chance. That likelihood is described as unlikely.",
-          "es": "Una probabilidad de 0.13 está mucho más cerca de 0 que de 1, así que hay una posibilidad pequeña pero no nula de lluvia. Por lo tanto, se describe como poco probable."
+          "es": "Una probabilidad de 0.13 está mucho más cerca de 0 que de 1, así que hay una posibilidad pequeña pero no nula de lluvia. Por lo tanto, se describe como improbable."
         },
         "source": "vine-authored"
       }
@@ -94,7 +94,7 @@
       }
     },
     "nysed-2022-g7-mc-q21": {
-      "inputHash": "668fb2dbfdd52174a67c2e02e9862cd467dbea0afe15fe519f43c8c0b26d1642",
+      "inputHash": "39b71a77fb3fffb87d34a23426de6da2124f970d59346284bc4f9d62f88fffc1",
       "explanation": {
         "text": {
           "en": "After decreasing 15°F from 4°F, the temperature is 4 − 15 = −11°F. It must then increase 11°F to reach 0°F.",
@@ -174,7 +174,7 @@
       }
     },
     "nysed-2022-g7-mc-q35": {
-      "inputHash": "8fb23122e92029c175a410bccd4410da8481d5e7d0df291ec48a43fc85d18127",
+      "inputHash": "44585a11ade14e1d28b982cf14b9aebf3b71c8112b14dfcaac026360390d321c",
       "explanation": {
         "text": {
           "en": "Team A's heights total 550 inches, so its mean is 550/8 = 68.75. Team B's total is 544, giving 544/8 = 68, so Team A has the greater mean.",
@@ -207,8 +207,8 @@
       "inputHash": "bb48011c9cd1a19acf2daf23cec61c415d2e54880c12f96b7d24a61411a37ebb",
       "explanation": {
         "text": {
-        "en": "Each side of a square is one-fourth of its perimeter. Dividing 48y − 16 by 4 gives 12y − 4 feet per side.",
-        "es": "Cada lado de un cuadrado es la cuarta parte de su perímetro. Al dividir 48y − 16 entre 4 se obtiene 12y − 4 pies por lado."
+          "en": "Each side of a square is one-fourth of its perimeter. Dividing 48y − 16 by 4 gives 12y − 4 feet per side.",
+          "es": "Cada lado de un cuadrado es la cuarta parte de su perímetro. Al dividir 48y − 16 entre 4 se obtiene 12y − 4 pies por lado."
         },
         "source": "vine-authored"
       }

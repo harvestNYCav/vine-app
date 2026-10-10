@@ -70,6 +70,16 @@ class ElaPassageStitchTests(unittest.TestCase):
         self.assertEqual(first.size, second.size)
         self.assertTrue(np.array_equal(np.asarray(first), np.asarray(second)))
 
+    def test_wide_final_paragraph_is_not_mistaken_for_a_footer_rule(self) -> None:
+        page = synthetic_passage_page(1)
+        draw = ImageDraw.Draw(page)
+        # A last line of prose can extend across most of the page below 87.5%.
+        draw.rectangle((50, 702, 550, 712), fill=(0, 180, 0))
+        stitched = stitch_passage_pages([page], dpi=160, label="low final paragraph")
+        pixels = np.asarray(stitched)
+        green = (pixels[:, :, 1] > 120) & (pixels[:, :, 0] < 80)
+        self.assertGreater(int(green.sum()), 5_000)
+
     def test_normalizes_minor_source_page_width_differences(self) -> None:
         first = synthetic_passage_page(1)
         second = synthetic_passage_page(2).resize((601, 800))

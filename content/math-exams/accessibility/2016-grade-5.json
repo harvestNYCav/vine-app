@@ -198,7 +198,7 @@
       }
     },
     "nysed-2016-g5-mc-q15": {
-      "inputHash": "5994f069bfd7d768aa04fd60e5caa92ecb6c3636ef3453cf8ee9d5d9288a26f9",
+      "inputHash": "54081cf5db7c415ce7ec693c854000aa245086eed1a6d3a674fe489e9466be88",
       "description": {
         "en": "Question 15. The line plot shows the weights of ten eggs laid by one hen. It is titled “EGGS LAID BY ONE HEN,” and its horizontal axis is labeled “Weight (ounces).” The axis has five equally spaced tick marks from 1 1/2 through 2 1/2 ounces, representing 1 1/2, 1 3/4, 2, 2 1/4, and 2 1/2. There are 2 X marks at 1 1/2, 4 X marks at 1 3/4, 2 X marks at 2, 1 X mark at 2 1/4, and 1 X mark at 2 1/2. What is the total weight, in ounces, of the four heaviest eggs? Choices: A: 4 B: 7 C: 8 1/2 D: 8 3/4"
       },
@@ -432,7 +432,7 @@
     "nysed-2016-g5-mc-q40": {
       "inputHash": "245e53c2dd6089b7253d139f41ff4fe258c10ef24c78fb0005e0cca3f611b879",
       "description": {
-        "en": "Question 40. Which model shows one way to determine the area of a rectangle that is 7/10 meter long and 3/5 meter wide? Each choice is a 1 m by 1 m square grid divided into 10 equal columns and 5 equal rows. Choices: A: The rectangular region formed by the leftmost 7 columns and the top 3 rows is shaded, for a total of 21 shaded small rectangles. B: All 10 columns in the top 3 rows are shaded, for a total of 30 shaded small rectangles. C: The rectangular region formed by the leftmost 6 columns and the top 2 rows is shaded, for a total of 12 shaded small rectangles. D: The leftmost 7 columns in only the top row are shaded, for a total of 7 shaded small rectangles."
+        "en": "Question 40. Which model shows one way to determine the area of a rectangle that is 7/10 meter long and 3/5 meter wide? Each choice is a 1 m by 1 m square grid divided into 10 equal columns and 5 equal rows. Choices: A: The rectangular region formed by the leftmost 7 columns and the top 3 rows is shaded, for a total of 21 shaded small rectangles. B: All 10 columns in the top 3 rows are shaded, for a total of 30 shaded small rectangles. C: The rectangular region formed by the leftmost 6 columns and the top 2 rows is shaded, for a total of 12 shaded small rectangles. D: The leftmost 7 rectangles in the top row are shaded, and the leftmost column is shaded in the top 3 rows, forming an L shape."
       },
       "requiredSourceTokens": {
         "en": [
@@ -448,13 +448,12 @@
           "leftmost 6 columns",
           "top 2 rows",
           "12 shaded small rectangles",
-          "7 shaded small rectangles",
           "A: The rectangular region formed by the leftmost 7 columns and the top 3 rows is shaded, for a total of 21 shaded small rectangles",
           "B: All 10 columns in the top 3 rows are shaded, for a total of 30 shaded small rectangles",
           "C: The rectangular region formed by the leftmost 6 columns and the top 2 rows is shaded, for a total of 12 shaded small rectangles",
-          "D: The leftmost 7 columns in only the top row are shaded, for a total of 7 shaded small rectangles",
           "7/10",
-          "3/5"
+          "3/5",
+          "Question 40. Which model shows one way to determine the area of a rectangle that is 7/10 meter long and 3/5 meter wide? Each choice is a 1 m by 1 m square grid divided into 10 equal columns and 5 equal rows. Choices: A: The rectangular region formed by the leftmost 7 columns and the top 3 rows is shaded, for a total of 21 shaded small rectangles. B: All 10 columns in the top 3 rows are shaded, for a total of 30 shaded small rectangles. C: The rectangular region formed by the leftmost 6 columns and the top 2 rows is shaded, for a total of 12 shaded small rectangles. D: The leftmost 7 rectangles in the top row are shaded, and the leftmost column is shaded in the top 3 rows, forming an L shape."
         ]
       }
     },

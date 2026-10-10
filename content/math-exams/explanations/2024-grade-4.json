@@ -127,8 +127,8 @@
       "inputHash": "7ea759c6224fba2d1aaa5a43401abd76da99881e1b02f1c7b7c6437a6ee062f5",
       "explanation": {
         "text": {
-          "en": "Multiplying 2,470 by 3 gives 2,000(3) + 400(3) + 70(3) = 6,000 + 1,200 + 210 = 7,410. This is choice C.",
-          "es": "Al multiplicar 2,470 por 3 se obtiene 2,000(3) + 400(3) + 70(3) = 6,000 + 1,200 + 210 = 7,410. Esta es la opción C."
+          "en": "Break the first factor into thousands, hundreds, and tens, then multiply each part and add: 2,470 × 3 = (2,000 × 3) + (400 × 3) + (70 × 3) = 6,000 + 1,200 + 210 = 7,410, choice C.",
+          "es": "Descompón un factor, multiplica cada parte y suma los productos parciales: 2,470 × 3 = (2,000 × 3) + (400 × 3) + (70 × 3) = 6,000 + 1,200 + 210 = 7,410, la opción C."
         },
         "source": "vine-authored"
       }

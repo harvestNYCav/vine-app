@@ -84,8 +84,8 @@
     "nysed-2018-g5-mc-q3": {
       "inputHash": "fbea0ed7798d2d3438de5dba0e0b315e289e593ca64aecf3b699eb49390f9c32",
       "description": {
-        "en": "Question 3. Jake used 1-centimeter cubes to build a right rectangular prism that has a volume of 24 cubic centimeters. Which figure could represent the prism that Jake built? Each figure has a key stating that one unit cube equals 1 cubic cm. Choices: A: A rectangular prism measuring 3 unit cubes by 2 unit cubes by 2 unit cubes. B: A long rectangular prism measuring 12 unit cubes by 2 unit cubes by 1 unit cube. C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 7 unit cubes. D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 7 unit cubes.",
-        "es": "Pregunta 3. Jake usó cubos de 1 centímetro para construir un prisma rectangular recto que tiene un volumen de 24 centímetros cúbicos. ¿Qué figura podría representar el prisma que construyó Jake? En cada opción, una referencia indica que cada cubo representa 1 centímetro cúbico. Opciones: A: Prisma rectangular formado por 3 cubos de largo, 2 cubos de ancho y 2 cubos de alto. B: Prisma rectangular alargado formado por 12 cubos de largo, 2 cubos de ancho y 1 cubo de alto. C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 7 cubos de alto. D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 7 cubos de alto."
+        "en": "Question 3. Jake used 1-centimeter cubes to build a right rectangular prism that has a volume of 24 cubic centimeters. Which figure could represent the prism that Jake built? Each figure has a key stating that one unit cube equals 1 cubic cm. Choices: A: A rectangular prism measuring 3 unit cubes by 3 unit cubes by 2 unit cubes. B: A long rectangular prism measuring 12 unit cubes by 2 unit cubes by 1 unit cube. C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 8 unit cubes. D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 8 unit cubes.",
+        "es": "Pregunta 3. Jake usó cubos de 1 centímetro para construir un prisma rectangular recto que tiene un volumen de 24 centímetros cúbicos. ¿Qué figura podría representar el prisma que construyó Jake? En cada opción, una referencia indica que cada cubo representa 1 centímetro cúbico. Opciones: A: Prisma rectangular formado por 3 cubos de largo, 3 cubos de ancho y 2 cubos de alto. B: Prisma rectangular alargado formado por 12 cubos de largo, 2 cubos de ancho y 1 cubo de alto. C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 8 cubos de alto. D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 8 cubos de alto."
       },
       "requiredSourceTokens": {
         "en": [
@@ -98,13 +98,14 @@
           "1",
           "6",
           "8",
-          "3 unit cubes by 2 unit cubes by 2 unit cubes",
-          "8 unit cubes by 6 unit cubes by 7 unit cubes",
-          "8 unit cubes by 8 unit cubes by 7 unit cubes",
-          "A: A rectangular prism measuring 3 unit cubes by 2 unit cubes by 2 unit cubes",
+          "3 unit cubes by 3 unit cubes by 2 unit cubes",
+          "8 unit cubes by 6 unit cubes by 8 unit cubes",
+          "8 unit cubes by 8 unit cubes by 8 unit cubes",
+          "A: A rectangular prism measuring 3 unit cubes by 3 unit cubes by 2 unit cubes",
           "B: A long rectangular prism measuring 12 unit cubes by 2 unit cubes by 1 unit cube",
-          "C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 7 unit cubes",
-          "D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 7 unit cubes"
+          "C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 8 unit cubes",
+          "D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 8 unit cubes",
+          "Question 3. Jake used 1-centimeter cubes to build a right rectangular prism that has a volume of 24 cubic centimeters. Which figure could represent the prism that Jake built? Each figure has a key stating that one unit cube equals 1 cubic cm. Choices: A: A rectangular prism measuring 3 unit cubes by 3 unit cubes by 2 unit cubes. B: A long rectangular prism measuring 12 unit cubes by 2 unit cubes by 1 unit cube. C: A large rectangular prism measuring 8 unit cubes by 6 unit cubes by 8 unit cubes. D: A rectangular prism measuring 8 unit cubes by 8 unit cubes by 8 unit cubes."
         ],
         "es": [
           "1 centímetro",
@@ -117,12 +118,13 @@
           "1 cubo de alto",
           "8 cubos de largo",
           "6 cubos de ancho",
-          "7 cubos de alto",
+          "8 cubos de alto",
           "8 cubos de ancho",
-          "A: Prisma rectangular formado por 3 cubos de largo, 2 cubos de ancho y 2 cubos de alto",
+          "A: Prisma rectangular formado por 3 cubos de largo, 3 cubos de ancho y 2 cubos de alto",
           "B: Prisma rectangular alargado formado por 12 cubos de largo, 2 cubos de ancho y 1 cubo de alto",
-          "C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 7 cubos de alto",
-          "D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 7 cubos de alto"
+          "C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 8 cubos de alto",
+          "D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 8 cubos de alto",
+          "Pregunta 3. Jake usó cubos de 1 centímetro para construir un prisma rectangular recto que tiene un volumen de 24 centímetros cúbicos. ¿Qué figura podría representar el prisma que construyó Jake? En cada opción, una referencia indica que cada cubo representa 1 centímetro cúbico. Opciones: A: Prisma rectangular formado por 3 cubos de largo, 3 cubos de ancho y 2 cubos de alto. B: Prisma rectangular alargado formado por 12 cubos de largo, 2 cubos de ancho y 1 cubo de alto. C: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 6 cubos de ancho y 8 cubos de alto. D: Prisma rectangular grande formado por una matriz de numerosos cubos unitarios, con 8 cubos de largo, 8 cubos de ancho y 8 cubos de alto."
         ]
       }
     },

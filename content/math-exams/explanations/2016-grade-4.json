@@ -134,7 +134,7 @@
       }
     },
     "nysed-2016-g4-mc-q24": {
-      "inputHash": "deb2fc34cfd920eeb4d7288567ac1176e51b722639e50788e61a84e493589225",
+      "inputHash": "103acb0d3c70954da14dcdf89a8f47beb6c8c973fff9f4e26edbe0d486bbee12",
       "explanation": {
         "text": {
           "en": "Perpendicular lines intersect to form a 90° angle. In figure B, the vertical and horizontal lines meet at a right angle, so they are perpendicular.",
@@ -177,8 +177,8 @@
       "inputHash": "5fff43d51d16cc821fb0517751c19999b1140f16c752f9e0a3ec7099b22c4f04",
       "explanation": {
         "text": {
-          "en": "The angle is acute and appears slightly smaller than a 45° angle. Therefore, 42° best matches that size; 36° is too small and 138° and 142° are obtuse.",
-          "es": "El ángulo es agudo y parece un poco menor que un ángulo de 45°. Por lo tanto, 42° se aproxima mejor; 36° es demasiado pequeño y 138° y 142° son obtusos."
+          "en": "The angle is acute, so 138° and 142° are out. Measure with a protractor centered on the vertex and with 0° on the horizontal ray: the slanted ray passes through 42°, not 36°.",
+          "es": "El ángulo es agudo, así que se descartan 138° y 142°. Mide con el centro del transportador en el vértice y 0° sobre la semirrecta horizontal: la semirrecta inclinada pasa por 42°, no por 36°."
         },
         "source": "vine-authored"
       }

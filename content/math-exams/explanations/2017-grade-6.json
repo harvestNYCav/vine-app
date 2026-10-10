@@ -27,8 +27,8 @@
       "inputHash": "e7cc0a5feee5a7c45a5e6d8eb9f4df3cc754c87fbcd6242d37e755314d38e2ad",
       "explanation": {
         "text": {
-          "en": "Dividing 2 1/3 by 2/3 gives (7/3) × (3/2) = 7/2 = 3 1/2. Model A shows three whole groups of 2/3 and half of another group.",
-          "es": "Dividir 2 1/3 entre 2/3 da (7/3) × (3/2) = 7/2 = 3 1/2. El modelo A muestra tres grupos completos de 2/3 y la mitad de otro grupo."
+          "en": "The model shows three whole groups of 2/3 and half of another group. Thus 2 1/3 ÷ 2/3 = 3 1/2, which matches equation A.",
+          "es": "El modelo muestra tres grupos completos de 2/3 y la mitad de otro grupo. Por eso 2 1/3 ÷ 2/3 = 3 1/2, que coincide con la ecuación A."
         },
         "source": "vine-authored"
       }
@@ -47,8 +47,8 @@
       "inputHash": "d42de389796bbcb217572556064f431256e6e8a5a7861d9249754865cc85a007",
       "explanation": {
         "text": {
-          "en": "Using Q(6, −2), R(4, −7), and S(2, −5), the coordinate-area calculation is 1/2|6(−2) + 4(−3) + 2(5)| = 1/2|−14| = 7 square units.",
-          "es": "Con Q(6, −2), R(4, −7) y S(2, −5), el cálculo del área por coordenadas es 1/2|6(−2) + 4(−3) + 2(5)| = 1/2|−14| = 7 unidades cuadradas."
+          "en": "The enclosing rectangle is 4 units wide and 5 units tall, so its area is 20 square units. Subtract the three right triangles outside QRS: (1/2) × 2 × 5 = 5, (1/2) × 2 × 2 = 2, and (1/2) × 4 × 3 = 6 square units. That leaves 20 − (5 + 2 + 6) = 7 square units.",
+          "es": "El rectángulo que rodea QRS mide 4 por 5 unidades, con área de 20 unidades cuadradas. Resta los tres triángulos rectángulos exteriores: (1/2) × 2 × 5 = 5, (1/2) × 2 × 2 = 2 y (1/2) × 4 × 3 = 6. Quedan 20 − (5 + 2 + 6) = 7 unidades cuadradas."
         },
         "source": "vine-authored"
       }
@@ -57,8 +57,8 @@
       "inputHash": "c15db3ee1face4060c7038295c86caf53fe197f3ee36adc1b07fb5a249828941",
       "explanation": {
         "text": {
-          "en": "For F(3, 2) and G(4, 4), FG² = 1² + 2² = 5. Choice C puts H at (5, 1), and FH² = 2² + (−1)² = 5, so those sides are equal.",
-          "es": "Para F(3, 2) y G(4, 4), FG² = 1² + 2² = 5. La opción C coloca H en (5, 1), y FH² = 2² + (−1)² = 5, así que esos lados son iguales."
+          "en": "From F(3, 2), G is 1 unit right and 2 units up. The point (5, 1) is 2 units right and 1 unit down: the same two steps turned sideways, so it is the same distance from F. The other choices take different steps: (1, 2) is 2 left, (4, 2) is 1 right, and (2, 5) is 1 left and 3 up.",
+          "es": "Desde F(3, 2), G está 1 unidad a la derecha y 2 arriba. (5, 1) está 2 a la derecha y 1 abajo: son los mismos pasos girados, así que la distancia a F es igual. Las otras opciones tienen pasos distintos: (1, 2) está 2 a la izquierda; (4, 2), 1 a la derecha; y (2, 5), 1 a la izquierda y 3 arriba."
         },
         "source": "vine-authored"
       }
@@ -67,8 +67,8 @@
       "inputHash": "028011c81bb50fe81b61d9b4d14092f322f3256c1d75359d8e37018be3dc812f",
       "explanation": {
         "text": {
-        "en": "Each book costs $10, so total cost is y = 10x. Graph B passes through the origin and (5, 50), giving the required constant rate of 10 dollars per book.",
-        "es": "Cada libro cuesta $10, así que el costo total es y = 10x. La gráfica B pasa por el origen y por (5, 50), lo que da la tasa constante requerida de 10 dólares por libro."
+          "en": "Each book costs $10, so total cost is y = 10x. Graph B passes through the origin and (5, 50), giving the required constant rate of 10 dollars per book.",
+          "es": "Cada libro cuesta $10, así que el costo total es y = 10x. La gráfica B pasa por el origen y por (5, 50), lo que da la tasa constante requerida de 10 dólares por libro."
         },
         "source": "vine-authored"
       }
@@ -77,8 +77,8 @@
       "inputHash": "7a3dde89495d2cdf17f932db85952cde321078e990f41004acd28dde03fad406",
       "explanation": {
         "text": {
-          "en": "In table C, every first-column student count divided by its second-column adult count equals 8: 96/12 = 8, 120/15 = 8, and 136/17 = 8. Therefore each row has the required 8-to-1 ratio.",
-          "es": "En la tabla C, cada cantidad de estudiantes de la primera columna dividida entre la cantidad de adultos de la segunda da 8: 96/12 = 8, 120/15 = 8 y 136/17 = 8. Por tanto, cada fila tiene la razón requerida de 8 a 1."
+          "en": "In table C, each number of students divided by the number of adults equals 8: 96/12 = 8, 120/15 = 8, and 136/17 = 8.",
+          "es": "En la tabla C, cada cantidad de alumnos dividida entre la cantidad de adultos da 8: 96/12 = 8, 120/15 = 8 y 136/17 = 8."
         },
         "source": "vine-authored"
       }
@@ -104,7 +104,7 @@
       }
     },
     "nysed-2017-g6-mc-q17": {
-      "inputHash": "e1420a0ccea2887292555adb2ad656f36bc831e589e4d57be5a7e69dfc533759",
+      "inputHash": "8e56b5de9ee55e85c67ba0213005aaa2c28e9f53db6781769ab6b043216de33f",
       "explanation": {
         "text": {
           "en": "For side lengths 3, 4, and 6, the three different face areas are 3 × 4 = 12, 3 × 6 = 18, and 4 × 6 = 24, matching the prism shown.",
@@ -117,8 +117,8 @@
       "inputHash": "b4471e5c78a2d9739a4566ea7f2dba22171d1de56955e6ad52edd8395fcd2583",
       "explanation": {
         "text": {
-          "en": "$240,000 is 60% of original value x, so 240,000/x = 60/100, equivalently 0.60x = 240,000. Choice A shows this proportion.",
-          "es": "$240,000 representa el 60% del valor original x, así que 240,000/x = 60/100, o 0.60x = 240,000. La opción A muestra esta proporción."
+          "en": "$240,000 is 60% of this year’s sales, x, so 240,000/x = 60/100. This proportion compares last year’s sales with the whole amount for this year.",
+          "es": "$240,000 es el 60% de las ventas de este año, x, así que 240,000/x = 60/100. Esta proporción compara las ventas del año pasado con el total de este año."
         },
         "source": "vine-authored"
       }
@@ -207,8 +207,8 @@
       "inputHash": "6aeb56ab2f367b9f176d3a965a280a454058fef7334d37cca275cdcd0db54c69",
       "explanation": {
         "text": {
-          "en": "The surface area is 2(12·9 + 9·2 + 2·12) = 2(108 + 18 + 24) = 300 square units because the prism has two of each face.",
-          "es": "El área de superficie es 2(12·9 + 9·2 + 2·12) = 2(108 + 18 + 24) = 300 unidades cuadradas porque el prisma tiene dos caras de cada tipo."
+          "en": "The surface area is 2(12·9 + 9·2 + 2·12) = 2(108 + 18 + 24) = 300 square inches because the prism has two of each face.",
+          "es": "El área de superficie es 2(12·9 + 9·2 + 2·12) = 2(108 + 18 + 24) = 300 pulgadas cuadradas porque el prisma tiene dos caras de cada tipo."
         },
         "source": "vine-authored"
       }
@@ -227,8 +227,8 @@
       "inputHash": "9ea1e1a2d3fc105b3c190f2c5e3e869ac7eb156e9dfff2065a290e101eb3e90f",
       "explanation": {
         "text": {
-          "en": "The unit rate is $17.50 ÷ 2 = $8.75 per hour. Table D follows it: 1 hour costs $8.75, 2 cost $17.50, 3 cost $26.25, and 4 cost $35.",
-          "es": "La tasa unitaria es $17.50 ÷ 2 = $8.75 por hora. La tabla D la sigue: 1 hora cuesta $8.75, 2 cuestan $17.50, 3 cuestan $26.25 y 4 cuestan $35."
+          "en": "At $8.75 per hour, Kim-Ly earns $8.75 for 1 hour, $17.50 for 2, $26.25 for 3, and $35.00 for 4. Table D matches these earnings.",
+          "es": "A $8.75 por hora, Kim-Ly gana $8.75 por 1 hora, $17.50 por 2, $26.25 por 3 y $35.00 por 4. La tabla D muestra esas ganancias."
         },
         "source": "vine-authored"
       }
@@ -287,8 +287,8 @@
       "inputHash": "c99dd462769249c76942b755a46467a7a834c6f4fd925bdf53270491c9c739c1",
       "explanation": {
         "text": {
-          "en": "Volume is length × width × height, so V = 12 × 6.5 × 1.25 = 78 × 1.25 = 97.5 cubic units.",
-          "es": "El volumen es largo × ancho × altura, así que V = 12 × 6.5 × 1.25 = 78 × 1.25 = 97.5 unidades cúbicas."
+          "en": "Volume is length × width × height, so V = 12 × 6.5 × 1.25 = 78 × 1.25 = 97.5 cubic centimeters.",
+          "es": "El volumen es largo × ancho × altura, así que V = 12 × 6.5 × 1.25 = 78 × 1.25 = 97.5 centímetros cúbicos."
         },
         "source": "vine-authored"
       }
@@ -307,8 +307,8 @@
       "inputHash": "23887b1104080a9b3f0a80d787f9ee46392352cb6f68f91ef9c16b2c8df6d7a9",
       "explanation": {
         "text": {
-          "en": "Lateral area is 8(3 + 4 + 5) = 96. The two triangular bases add 2(1/2·3·4) = 12, giving 96 + 12 = 108 square units.",
-          "es": "El área lateral es 8(3 + 4 + 5) = 96. Las dos bases triangulares suman 2(1/2·3·4) = 12, para un total de 96 + 12 = 108 unidades cuadradas."
+          "en": "Lateral area is 8(3 + 4 + 5) = 96. The two triangular bases add 2(1/2·3·4) = 12, giving 96 + 12 = 108 square feet.",
+          "es": "El área lateral es 8(3 + 4 + 5) = 96. Las dos bases triangulares suman 2(1/2·3·4) = 12, para un total de 96 + 12 = 108 pies cuadrados."
         },
         "source": "vine-authored"
       }
@@ -344,7 +344,7 @@
       }
     },
     "nysed-2017-g6-mc-q46": {
-      "inputHash": "7cdb16761063342eb7cbe1772d92cb438937b367ddd4d9705a053d04ca404b46",
+      "inputHash": "18cffe995d4148965bad2a3e7e3fec9973d6c96ad650c517a798915312e5f368",
       "explanation": {
         "text": {
           "en": "An ordered pair (x, y) moves x units horizontally, then y units vertically. Graph B marks 4 units right and 3 units up; therefore it represents (4, 3).",
@@ -367,8 +367,8 @@
       "inputHash": "0ab652e1f8edbdf645ac6b798c884f2718bb016b426dc93e3e04810b23ffb1f4",
       "explanation": {
         "text": {
-          "en": "At $5.95 per sandwich, x sandwiches cost 5.95x. Equating that amount to the $71.40 bill gives 5.95x = 71.40.",
-          "es": "A $5.95 por sándwich, x sándwiches cuestan 5.95x. Al igualar esa cantidad con la cuenta de $71.40 se obtiene 5.95x = 71.40."
+          "en": "Each sandwich costs $5.95. If x sandwiches were sold, the shop received 5.95x dollars. Setting this equal to its $71.40 in sales gives 5.95x = 71.40.",
+          "es": "Cada sándwich cuesta $5.95. Si se vendieron x sándwiches, la sandwichería recibió 5.95x dólares. Al igualar esa cantidad con los $71.40 de ventas, resulta 5.95x = 71.40."
         },
         "source": "vine-authored"
       }

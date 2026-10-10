@@ -10,6 +10,8 @@ import {
 } from '../content/math-exams/index'
 import { MATH_EXAM_QUESTIONS } from '../content/math-exams/catalog-runtime'
 import rawCatalog from '../content/math-exams/generated/catalog.json'
+import { getMathExamStudentNotice } from '../content/math-exams/student-notices'
+import { MATH_MEASUREMENT_GUIDES } from '../content/math-exams/measurement-guides'
 import {
   buildMathExamCatalog,
   type RawMathExamCatalog,
@@ -28,11 +30,55 @@ const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024,
 const GRADES = [3, 4, 5, 6, 7, 8] as const
 const SPANISH_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
+  'nysed-2013-g3-mc-q2',
+  'nysed-2013-g4-mc-q11',
+  'nysed-2013-g4-mc-q4',
   'nysed-2013-g4-mc-q8',
   'nysed-2013-g6-mc-q14',
+  'nysed-2013-g6-mc-q47',
+  'nysed-2013-g6-mc-q48',
+  'nysed-2013-g6-mc-q61',
+  'nysed-2013-g7-mc-q1',
+  'nysed-2013-g7-mc-q10',
+  'nysed-2013-g7-mc-q11',
+  'nysed-2013-g7-mc-q12',
+  'nysed-2013-g7-mc-q6',
+  'nysed-2013-g7-mc-q8',
+  'nysed-2013-g7-mc-q9',
+  'nysed-2013-g8-mc-q2',
+  'nysed-2013-g8-mc-q3',
+  'nysed-2013-g8-mc-q5',
+  'nysed-2013-g8-mc-q61',
+  'nysed-2014-g3-mc-q14',
+  'nysed-2014-g3-mc-q29',
+  'nysed-2014-g3-mc-q6',
+  'nysed-2014-g4-mc-q15',
   'nysed-2014-g4-mc-q29',
+  'nysed-2014-g4-mc-q36',
+  'nysed-2014-g4-mc-q42',
+  'nysed-2014-g4-mc-q44',
+  'nysed-2014-g5-mc-q10',
+  'nysed-2014-g5-mc-q14',
+  'nysed-2014-g5-mc-q19',
   'nysed-2014-g5-mc-q44',
+  'nysed-2014-g6-mc-q11',
+  'nysed-2014-g6-mc-q12',
+  'nysed-2014-g6-mc-q18',
+  'nysed-2014-g6-mc-q20',
+  'nysed-2014-g6-mc-q28',
+  'nysed-2014-g6-mc-q36',
+  'nysed-2014-g6-mc-q39',
+  'nysed-2014-g6-mc-q48',
+  'nysed-2014-g6-mc-q49',
+  'nysed-2014-g6-mc-q5',
+  'nysed-2014-g6-mc-q54',
   'nysed-2014-g7-mc-q1',
+  'nysed-2014-g7-mc-q14',
+  'nysed-2014-g7-mc-q16',
+  'nysed-2014-g7-mc-q3',
+  'nysed-2014-g8-mc-q13',
+  'nysed-2014-g8-mc-q16',
+  'nysed-2014-g8-mc-q27',
 ])
 const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2013: [10, 11, 11, 12, 12, 12],
@@ -200,63 +246,38 @@ test('runtime catalog validation rejects leaked keys and generic or mismatched e
     /explanation source that does not match its release/,
   )
 
-  const missingVerifiedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
-  const missingVerifiedQuestion = missingVerifiedLabels.exams
-    .find(exam => exam.year === 2016 && exam.grade === 4)!
-    .questions.find(question => question.number === 24)!
-  delete missingVerifiedQuestion.choiceLabels
-  assert.throws(
-    () => buildMathExamCatalog(missingVerifiedLabels),
-    /must use its verified A-C choice labels/,
-  )
-
-  const alteredVerifiedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
-  const alteredVerifiedQuestion = alteredVerifiedLabels.exams
-    .find(exam => exam.year === 2016 && exam.grade === 4)!
-    .questions.find(question => question.number === 24)!
-  alteredVerifiedQuestion.choiceLabels = ['A', 'B', 'C', 'D']
-  assert.throws(
-    () => buildMathExamCatalog(alteredVerifiedLabels),
-    /must use its verified A-C choice labels/,
-  )
-
   const unexpectedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
   unexpectedLabels.exams[0].questions[0].choiceLabels = ['A', 'B', 'C']
   assert.throws(
     () => buildMathExamCatalog(unexpectedLabels),
     /has unexpected choice labels/,
   )
-
-  const unavailableKey = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
-  const unavailableKeyQuestion = unavailableKey.exams
-    .find(exam => exam.year === 2016 && exam.grade === 4)!
-    .questions.find(question => question.number === 24)!
-  unavailableKeyQuestion.correct = 'D'
-  assert.throws(
-    () => buildMathExamCatalog(unavailableKey),
-    /has an unavailable answer key/,
-  )
 })
 
-test('the verified three-choice item exposes only A-C and rejects unavailable submissions', () => {
-  const threeChoiceQuestion = getMathExamQuestion('nysed-2016-g4-mc-q24')!
-  assert.deepEqual(threeChoiceQuestion.choiceLabels, ['A', 'B', 'C'])
-  assert.deepEqual(toPublicMathExamQuestion(threeChoiceQuestion).choiceLabels, ['A', 'B', 'C'])
-  assert.equal(normalizeMathChoiceAnswer(threeChoiceQuestion, ' b '), 'B')
-  assert.equal(normalizeMathChoiceAnswer(threeChoiceQuestion, 'D'), null)
-
-  const ordinaryQuestions = MATH_EXAM_QUESTIONS.filter(
-    question => question.id !== threeChoiceQuestion.id,
-  )
-  assert.equal(ordinaryQuestions.length, MATH_EXAM_QUESTIONS.length - 1)
-  for (const question of ordinaryQuestions) {
+test('all source questions expose four choices, including repaired 2016 grade 4 q24', () => {
+  for (const question of MATH_EXAM_QUESTIONS) {
     assert.deepEqual(question.choiceLabels, ['A', 'B', 'C', 'D'], question.id)
   }
+  const repaired = getMathExamQuestion('nysed-2016-g4-mc-q24')!
+  assert.deepEqual(toPublicMathExamQuestion(repaired).choiceLabels, ['A', 'B', 'C', 'D'])
+  assert.equal(normalizeMathChoiceAnswer(repaired, 'D'), 'D')
+  assert.match(repaired.image.alt.en, /D: a horizontal line and a slanted line/)
+  assert(repaired.image.en.height > 1000, 'the crop must include the fourth diagram')
+})
 
-  const ordinaryQuestion = ordinaryQuestions.find(
-    question => question.grading.mode === 'choice' && question.grading.correct === 'D',
-  )!
-  assert.equal(normalizeMathChoiceAnswer(ordinaryQuestion, 'D'), 'D')
+test('source translation corrections are available before Spanish answers without revealing a choice', () => {
+  const cases = [
+    ['nysed-2025-g5-mc-q5', 'decenas', 'D'],
+    ['nysed-2023-g6-mc-q12', 'restar 14 al producto', 'C'],
+  ]
+  for (const [id, correction, key] of cases) {
+    assert(getMathExamStudentNotice(id, 'es')!.includes(correction))
+    assert.equal(getMathExamStudentNotice(id, 'en'), undefined)
+    assert.doesNotMatch(getMathExamStudentNotice(id, 'es')!, /(?:opción|respuesta)\s+[A-D]/i)
+    const q = getMathExamQuestion(id)!
+    assert.equal(q.grading.mode === 'choice' && q.grading.correct, key)
+  }
+  assert.equal(getMathExamStudentNotice('nysed-2025-g5-mc-q6', 'es'), undefined)
 })
 
 test('grade filters expose only the assigned grade and sort newest first', () => {
@@ -334,7 +355,7 @@ test('reviewed Math explanations retain the corrected mathematical relationships
   assert.equal(trapezoid.grading.explanationSource, 'official-nysed-corrected')
 
   const ratioTable = getMathExamQuestion('nysed-2017-g6-mc-q14')!
-  assert.match(ratioTable.grading.explanation.en, /first-column student count divided by its second-column adult count/i)
+  assert.match(ratioTable.grading.explanation.en, /number of students divided by the number of adults equals 8/i)
   assert.match(ratioTable.grading.explanation.en, /96\/12 = 8/)
 
   const bicyclists = getMathExamQuestion('nysed-2017-g6-mc-q41')!
@@ -462,8 +483,8 @@ test('active questions are one-point multiple choice and belong to one section',
   }
 
   assert.deepEqual(explanationSourceCounts, {
-    'official-nysed': 223,
-    'official-nysed-corrected': 5,
+    'official-nysed': 179,
+    'official-nysed-corrected': 49,
     'vine-authored': 1_611,
   })
 
@@ -518,4 +539,35 @@ test('all 3,131 referenced WebPs exist with exact dimensions and no orphaned que
 test('answer normalization accepts harmless formatting differences', () => {
   assert.equal(normalizeMathAnswer(' $1,234. '), '1234')
   assert.equal(normalizeMathAnswer(' 1 / 2 '), '1/2')
+})
+
+test('physical-tool items have scale-matched measurement guides', () => {
+  assert.equal(Object.keys(MATH_MEASUREMENT_GUIDES).length, 8)
+  for (const [id, guide] of Object.entries(MATH_MEASUREMENT_GUIDES)) {
+    const question = getMathExamQuestion(id)!
+    assert.ok(question, id)
+    assert.ok(question.image.en, id)
+    if (guide.kind === 'ruler') {
+      assert.ok(guide.lengths.length >= 1)
+      assert.ok(guide.lengths.every(length => length > 0 && length <= 5 && Number.isInteger(length * 4)))
+    } else {
+      assert.ok(guide.degrees > 0 && guide.degrees < 180)
+      assert.ok(['left', 'right'].includes(guide.zeroSide))
+    }
+  }
+  assert.deepEqual(MATH_MEASUREMENT_GUIDES['nysed-2019-g4-mc-q38'], { kind: 'ruler', lengths: [1.5, 2.25, 2.25, 2.75] })
+  assert.deepEqual(MATH_MEASUREMENT_GUIDES['nysed-2022-g4-mc-q22'], { kind: 'protractor', degrees: 161, zeroSide: 'left' })
+})
+
+test('all misleading Spanish source translations are corrected before answering', () => {
+  for (const [id, phrase] of [
+    ['nysed-2017-g3-mc-q23', '1 unidad cuadrada'],
+    ['nysed-2017-g3-mc-q27', '1 unidad cuadrada'],
+    ['nysed-2026-g4-mc-q1', 'forma desarrollada'],
+    ['nysed-2025-g5-mc-q5', 'decenas'],
+    ['nysed-2023-g6-mc-q12', 'restar 14 al producto'],
+  ]) {
+    assert.ok(getMathExamStudentNotice(id, 'es')?.includes(phrase))
+    assert.equal(getMathExamStudentNotice(id, 'en'), undefined)
+  }
 })

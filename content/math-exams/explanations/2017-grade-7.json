@@ -107,8 +107,8 @@
       "inputHash": "186cd5350ddb11960b112636252b46638285783bec6245e76ebbcc437d8fb551",
       "explanation": {
         "text": {
-          "en": "Each set contains 12 forks. Since 128 ÷ 12 = 10 2/3, ten sets are not enough, so the restaurant must buy the next whole number, 11 sets.",
-          "es": "Cada juego contiene 12 tenedores. Como 128 ÷ 12 = 10 2/3, diez juegos no son suficientes; por tanto, el restaurante debe comprar el siguiente número entero, 11 juegos."
+          "en": "Mr. Santino still needs 406 − 278 = 128 forks. Since 128 ÷ 12 = 10 2/3, ten sets (120 forks) are not enough, so he must buy 11 sets.",
+          "es": "El Sr. Santino todavía necesita 406 − 278 = 128 tenedores. Como 128 ÷ 12 = 10 2/3, diez juegos (120 tenedores) no son suficientes; por tanto, debe comprar 11 juegos."
         },
         "source": "vine-authored"
       }
@@ -157,8 +157,8 @@
       "inputHash": "18e2bc0e89ef9a0c7dfba157a85594ba1928036e0966d4381ce45952cabc3436",
       "explanation": {
         "text": {
-          "en": "Compare the probabilities: 2/3 ≈ 0.667, 4/5 = 0.8, 3/8 = 0.375, and 1/2 = 0.5. The smallest is 3/8, so the Bulldogs are least likely to win.",
-          "es": "Comparamos las probabilidades: 2/3 ≈ 0.667, 4/5 = 0.8, 3/8 = 0.375 y 1/2 = 0.5. La menor es 3/8, así que los Bulldogs tienen la menor probabilidad de ganar."
+          "en": "Compare the probabilities: 2/3 ≈ 0.667, 4/5 = 0.8, 3/8 = 0.375, and 1/2 = 0.5. The smallest is 3/8, so the Bulldogs are least likely to play in the championship game.",
+          "es": "Comparamos las probabilidades: 2/3 ≈ 0.667, 4/5 = 0.8, 3/8 = 0.375 y 1/2 = 0.5. La menor es 3/8, así que los Bulldogs tienen la menor probabilidad de jugar en el juego del campeonato."
         },
         "source": "vine-authored"
       }
@@ -178,7 +178,7 @@
       "explanation": {
         "text": {
           "en": "The company means are 122/5 = 24.4, 99/5 = 19.8, 75/5 = 15, and 95/5 = 19 minutes. Company 1 has the greatest mean commute time, 24.4 minutes.",
-          "es": "Los promedios de las compañías son 122/5 = 24.4, 99/5 = 19.8, 75/5 = 15 y 95/5 = 19 minutos. La compañía 1 tiene el mayor promedio, 24.4 minutos."
+          "es": "Los promedios de las empresas son 122/5 = 24.4, 99/5 = 19.8, 75/5 = 15 y 95/5 = 19 minutos. La Empresa 1 tiene el mayor promedio, 24.4 minutos."
         },
         "source": "vine-authored"
       }
@@ -214,7 +214,7 @@
       }
     },
     "nysed-2017-g7-mc-q33": {
-      "inputHash": "341c6e20944686ad4d6d70258d74f244ceb6c47a73f3adac3084e745d7d9822e",
+      "inputHash": "9396078852bcecd091c7ff4b5056ab98a205aecd91897890dd8c7fcc04372ed3",
       "explanation": {
         "text": {
           "en": "Convert the quantities: 1 1/8 = 9/8 gallons and 13 1/2 = 27/2 miles. The rate is (27/2) ÷ (9/8) = (27/2)(8/9) = 12 miles per gallon.",
@@ -277,8 +277,8 @@
       "inputHash": "e388e4d6f9e017f06645e5f6447a131994c101b420a271ff3da576dfdbdf8180",
       "explanation": {
         "text": {
-          "en": "Circumference is C = 2πr. With radius 5, C = 2π(5) = 10π ≈ 31.4 units.",
-          "es": "La circunferencia es C = 2πr. Con radio 5, C = 2π(5) = 10π ≈ 31.4 unidades."
+          "en": "Circumference is C = 2πr. With radius 5, C = 2π(5) = 10π ≈ 31.4 yards.",
+          "es": "La circunferencia es C = 2πr. Con radio 5, C = 2π(5) = 10π ≈ 31.4 yardas."
         },
         "source": "vine-authored"
       }
@@ -297,8 +297,8 @@
       "inputHash": "dd9d1f12fc377d75bb0982d59e6d90139731d0b141c3d7d9a1797269e3c44f37",
       "explanation": {
         "text": {
-          "en": "The plan costs $125 + 6($72.50) = $560. That is $60 above the $500 budget, and 60/500 = 0.12, so the plan is 12% over budget.",
-          "es": "El plan cuesta $125 + 6($72.50) = $560. Son $60 más que el presupuesto de $500, y 60/500 = 0.12, así que el plan supera el presupuesto en un 12%."
+          "en": "The plan costs $125 + 6($72.50) = $560. That is $60 more than the original $500 cost, and 60/500 = 0.12, so the payment plan is a 12% increase.",
+          "es": "El plan cuesta $125 + 6($72.50) = $560. Son $60 más que el costo original de $500, y 60/500 = 0.12, así que el plan de pago representa un aumento del 12%."
         },
         "source": "vine-authored"
       }
@@ -347,8 +347,8 @@
       "inputHash": "5263f8fa463da7f2781677181c648078d8b83e65e7412ea214576d07c8cd4ba7",
       "explanation": {
         "text": {
-          "en": "The width is 6 2/3 = 20/3, and the length is twice that, 40/3. The perimeter is 2(20/3 + 40/3) = 2(60/3) = 40 units.",
-          "es": "El ancho es 6 2/3 = 20/3 y el largo es el doble, 40/3. El perímetro es 2(20/3 + 40/3) = 2(60/3) = 40 unidades."
+          "en": "The width is 6 2/3 = 20/3, and the length is twice that, 40/3. The perimeter is 2(20/3 + 40/3) = 2(60/3) = 40 inches.",
+          "es": "El ancho es 6 2/3 = 20/3 y el largo es el doble, 40/3. El perímetro es 2(20/3 + 40/3) = 2(60/3) = 40 pulgadas."
         },
         "source": "vine-authored"
       }
