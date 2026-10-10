@@ -10,6 +10,7 @@ import {
 } from '../content/math-exams/index'
 import { MATH_EXAM_QUESTIONS } from '../content/math-exams/catalog-runtime'
 import rawCatalog from '../content/math-exams/generated/catalog.json'
+import { getMathExamStudentNotice } from '../content/math-exams/student-notices'
 import {
   buildMathExamCatalog,
   type RawMathExamCatalog,
@@ -200,63 +201,38 @@ test('runtime catalog validation rejects leaked keys and generic or mismatched e
     /explanation source that does not match its release/,
   )
 
-  const missingVerifiedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
-  const missingVerifiedQuestion = missingVerifiedLabels.exams
-    .find(exam => exam.year === 2016 && exam.grade === 4)!
-    .questions.find(question => question.number === 24)!
-  delete missingVerifiedQuestion.choiceLabels
-  assert.throws(
-    () => buildMathExamCatalog(missingVerifiedLabels),
-    /must use its verified A-C choice labels/,
-  )
-
-  const alteredVerifiedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
-  const alteredVerifiedQuestion = alteredVerifiedLabels.exams
-    .find(exam => exam.year === 2016 && exam.grade === 4)!
-    .questions.find(question => question.number === 24)!
-  alteredVerifiedQuestion.choiceLabels = ['A', 'B', 'C', 'D']
-  assert.throws(
-    () => buildMathExamCatalog(alteredVerifiedLabels),
-    /must use its verified A-C choice labels/,
-  )
-
   const unexpectedLabels = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
   unexpectedLabels.exams[0].questions[0].choiceLabels = ['A', 'B', 'C']
   assert.throws(
     () => buildMathExamCatalog(unexpectedLabels),
     /has unexpected choice labels/,
   )
-
-  const unavailableKey = structuredClone(rawCatalog) as unknown as RawMathExamCatalog
-  const unavailableKeyQuestion = unavailableKey.exams
-    .find(exam => exam.year === 2016 && exam.grade === 4)!
-    .questions.find(question => question.number === 24)!
-  unavailableKeyQuestion.correct = 'D'
-  assert.throws(
-    () => buildMathExamCatalog(unavailableKey),
-    /has an unavailable answer key/,
-  )
 })
 
-test('the verified three-choice item exposes only A-C and rejects unavailable submissions', () => {
-  const threeChoiceQuestion = getMathExamQuestion('nysed-2016-g4-mc-q24')!
-  assert.deepEqual(threeChoiceQuestion.choiceLabels, ['A', 'B', 'C'])
-  assert.deepEqual(toPublicMathExamQuestion(threeChoiceQuestion).choiceLabels, ['A', 'B', 'C'])
-  assert.equal(normalizeMathChoiceAnswer(threeChoiceQuestion, ' b '), 'B')
-  assert.equal(normalizeMathChoiceAnswer(threeChoiceQuestion, 'D'), null)
-
-  const ordinaryQuestions = MATH_EXAM_QUESTIONS.filter(
-    question => question.id !== threeChoiceQuestion.id,
-  )
-  assert.equal(ordinaryQuestions.length, MATH_EXAM_QUESTIONS.length - 1)
-  for (const question of ordinaryQuestions) {
+test('all source questions expose four choices, including repaired 2016 grade 4 q24', () => {
+  for (const question of MATH_EXAM_QUESTIONS) {
     assert.deepEqual(question.choiceLabels, ['A', 'B', 'C', 'D'], question.id)
   }
+  const repaired = getMathExamQuestion('nysed-2016-g4-mc-q24')!
+  assert.deepEqual(toPublicMathExamQuestion(repaired).choiceLabels, ['A', 'B', 'C', 'D'])
+  assert.equal(normalizeMathChoiceAnswer(repaired, 'D'), 'D')
+  assert.match(repaired.image.alt.en, /D: a horizontal line and a slanted line/)
+  assert(repaired.image.en.height > 1000, 'the crop must include the fourth diagram')
+})
 
-  const ordinaryQuestion = ordinaryQuestions.find(
-    question => question.grading.mode === 'choice' && question.grading.correct === 'D',
-  )!
-  assert.equal(normalizeMathChoiceAnswer(ordinaryQuestion, 'D'), 'D')
+test('source translation corrections are available before Spanish answers without revealing a choice', () => {
+  const cases = [
+    ['nysed-2025-g5-mc-q5', 'decenas', 'D'],
+    ['nysed-2023-g6-mc-q12', 'restar 14 al producto', 'C'],
+  ]
+  for (const [id, correction, key] of cases) {
+    assert(getMathExamStudentNotice(id, 'es')!.includes(correction))
+    assert.equal(getMathExamStudentNotice(id, 'en'), undefined)
+    assert.doesNotMatch(getMathExamStudentNotice(id, 'es')!, /(?:opción|respuesta)\s+[A-D]/i)
+    const q = getMathExamQuestion(id)!
+    assert.equal(q.grading.mode === 'choice' && q.grading.correct, key)
+  }
+  assert.equal(getMathExamStudentNotice('nysed-2025-g5-mc-q6', 'es'), undefined)
 })
 
 test('grade filters expose only the assigned grade and sort newest first', () => {

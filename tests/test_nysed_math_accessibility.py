@@ -1055,7 +1055,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                     root=root,
                 )
 
-    def test_loader_requires_the_verified_three_choice_flag(self) -> None:
+    def test_repaired_q24_requires_all_four_choices(self) -> None:
         question_id = "nysed-2016-g4-mc-q24"
         input_hash = "d" * 64
         english = (
@@ -1085,7 +1085,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
             root = Path(directory)
             path = root / "2016-grade-4.json"
             path.write_text(json.dumps(record), encoding="utf-8")
-            with self.assertRaisesRegex(MathAccessibilityError, "must be true"):
+            with self.assertRaisesRegex(MathAccessibilityError, "ordered"):
                 load_math_exam_accessibility(
                     year=2016,
                     grade=4,
@@ -1096,7 +1096,8 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                     root=root,
                 )
 
-            record["questions"][question_id]["verbatimThreeChoices"] = True
+            record["questions"][question_id]["description"]["en"] += " D: a horizontal line crossing a slanted line."
+            record["questions"][question_id]["description"]["es"] += " D: una recta horizontal que cruza una recta inclinada."
             path.write_text(json.dumps(record), encoding="utf-8")
             loaded = load_math_exam_accessibility(
                 year=2016,
@@ -1107,7 +1108,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                 expected_numbers={question_id: 24},
                 root=root,
             )
-            self.assertEqual(loaded[question_id]["en"], english)
+            self.assertIn("D: a horizontal line", loaded[question_id]["en"])
 
     def test_loader_limits_single_letter_choice_flags_to_two_audited_questions(self) -> None:
         root = Path(__file__).resolve().parents[1]

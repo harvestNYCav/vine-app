@@ -59,26 +59,12 @@ class MarkerDpiRetryTests(unittest.TestCase):
 
 
 class VerifiedChoiceLabelTests(unittest.TestCase):
-    def test_three_choice_variant_requires_exact_source_and_crop_hashes(self) -> None:
-        labels = verified_choice_labels_for_question(
+    def test_clipped_crop_is_not_a_three_choice_source_variant(self) -> None:
+        self.assertIsNone(verified_choice_labels_for_question(
             question_id="nysed-2016-g4-mc-q24",
             source_pdf_sha256="3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455",
             question_image_sha256="185985912b8e9d3bf333598892d6efe3e6392d7202e683745534d4f551ade225",
-        )
-        self.assertEqual(labels, ["A", "B", "C"])
-
-        with self.assertRaisesRegex(ImportFailure, "choice-label source changed"):
-            verified_choice_labels_for_question(
-                question_id="nysed-2016-g4-mc-q24",
-                source_pdf_sha256="0" * 64,
-                question_image_sha256="185985912b8e9d3bf333598892d6efe3e6392d7202e683745534d4f551ade225",
-            )
-        with self.assertRaisesRegex(ImportFailure, "choice-label crop changed"):
-            verified_choice_labels_for_question(
-                question_id="nysed-2016-g4-mc-q24",
-                source_pdf_sha256="3d7f1449506b430ef2c8fdacddc2db38fd03a568bbab4cac1c5d5b22affd3455",
-                question_image_sha256="0" * 64,
-            )
+        ))
 
     def test_ordinary_question_has_no_raw_choice_label_override(self) -> None:
         self.assertIsNone(

@@ -67,8 +67,6 @@ const DOMAIN_CODES = new Set<MathDomainCode>([
 ])
 const RELEASE_YEARS = new Set([2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const DEFAULT_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C', 'D']
-const THREE_CHOICE_QUESTION_ID = 'nysed-2016-g4-mc-q24'
-const THREE_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C']
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
   'nysed-2013-g4-mc-q8',
   'nysed-2013-g6-mc-q14',
@@ -186,16 +184,6 @@ function validDateOnly(value: unknown): value is string {
 }
 
 function choiceLabelsForQuestion(question: RawQuestion): MathExamChoice[] {
-  if (question.id === THREE_CHOICE_QUESTION_ID) {
-    invariant(
-      Array.isArray(question.choiceLabels)
-        && question.choiceLabels.length === THREE_CHOICE_LABELS.length
-        && question.choiceLabels.every((label, index) => label === THREE_CHOICE_LABELS[index]),
-      `${question.id} must use its verified A-C choice labels`,
-    )
-    return [...THREE_CHOICE_LABELS]
-  }
-
   invariant(
     question.choiceLabels === undefined,
     `${question.id} has unexpected choice labels`,
