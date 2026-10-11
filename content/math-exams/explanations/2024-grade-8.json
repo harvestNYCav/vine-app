@@ -27,8 +27,8 @@
       "inputHash": "433f97ccb4eb0582d0c8702ec72de828623226cc99880701ecba24a4d4563b8b",
       "explanation": {
         "text": {
-          "en": "Rotations and reflections preserve angle measures, so the 40° angle in the image is also an angle of the original triangle. The third angle is 180° - 115° - 40° = 25°, choice A.",
-          "es": "Las rotaciones y reflexiones conservan las medidas de los ángulos, así que el ángulo de 40° de la imagen también pertenece al triángulo original. El tercer ángulo es 180° - 115° - 40° = 25°, opción A."
+          "en": "Rotations and reflections preserve angle measures, so the 40° angle in the image is also an angle of the original triangle. The third angle is 180° − 115° − 40° = 25°, choice A.",
+          "es": "Las rotaciones y reflexiones conservan las medidas de los ángulos, así que el ángulo de 40° de la imagen también pertenece al triángulo original. El tercer ángulo es 180° − 115° − 40° = 25°, opción A."
         },
         "source": "vine-authored"
       }
@@ -47,8 +47,8 @@
       "inputHash": "8675a647389d763b4c87fcae2eeac2b38c51f900e4955119cb46add363fc42b4",
       "explanation": {
         "text": {
-          "en": "Electrician B's hourly rate is $150 - $130 = $20, and the initial fee is $130 − 3($20) = $70. Electrician A has a $25 hourly rate and a $50 initial fee, so A's fee is lower but A's rate is higher, choice C.",
-          "es": "La tarifa por hora del electricista B es $150 - $130 = $20, y su cargo inicial es $130 − 3($20) = $70. El electricista A cobra $25 por hora y $50 inicialmente, así que su cargo inicial es menor pero su tarifa por hora es mayor, opción C."
+          "en": "Electrician B's hourly rate is $150 − $130 = $20, and the initial fee is $130 − 3($20) = $70. Electrician A has a $25 hourly rate and a $50 initial fee, so A's fee is lower but A's rate is higher, choice C.",
+          "es": "La tarifa por hora del electricista B es $150 − $130 = $20, y su tarifa inicial es $130 − 3($20) = $70. El electricista A cobra $25 por hora y $50 inicialmente, así que su tarifa inicial es menor pero su tarifa por hora es mayor, opción C."
         },
         "source": "vine-authored"
       }
@@ -97,8 +97,8 @@
       "inputHash": "595e98edcf719fcd567b06282621cd0c3b326ffe60b241621581847a6929387c",
       "explanation": {
         "text": {
-          "en": "Reflecting (x, y) over the x-axis gives (x, -y), and then rotating 180° gives (-x, y). This moves the left trapezoid to its mirror image on the right, so the sequence in choice A works.",
-          "es": "Al reflejar (x, y) sobre el eje x se obtiene (x, -y), y luego una rotación de 180° da (-x, y). Esto lleva el trapecio izquierdo a su imagen reflejada a la derecha, por lo que funciona la secuencia de la opción A."
+          "en": "Reflecting (x, y) over the x-axis gives (x, −y), and then rotating 180° gives (−x, y). This moves the left trapezoid to its mirror image on the right, so the sequence in choice A works.",
+          "es": "Al reflejar (x, y) sobre el eje x se obtiene (x, −y), y luego una rotación de 180° da (−x, y). Esto lleva el trapecio izquierdo a su imagen reflejada a la derecha, por lo que funciona la secuencia de la opción A."
         },
         "source": "vine-authored"
       }

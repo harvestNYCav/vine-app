@@ -37,8 +37,8 @@
       "inputHash": "d3404747a2389f0c755e0a5b6e40a88ff18169a3a21c65e46ddb9d0afeaf13ff",
       "explanation": {
         "text": {
-          "en": "From 4 to 8 months, the total rises from $1,500 to $2,500, so the monthly deposit is ($2,500 - $1,500) ÷ 4 = $250. The initial $500 is the value at t = 0, giving a = 250t + 500, choice C.",
-          "es": "De 4 a 8 meses, el total aumenta de $1,500 a $2,500, así que el depósito mensual es ($2,500 - $1,500) ÷ 4 = $250. Los $500 iniciales corresponden a t = 0; por eso a = 250t + 500, la opción C."
+          "en": "From 4 to 8 months, the total rises from $1,500 to $2,500, so the monthly deposit is ($2,500 − $1,500) ÷ 4 = $250. The initial $500 is the value at t = 0, giving a = 250t + 500, choice C.",
+          "es": "De 4 a 8 meses, el total aumenta de $1,500 a $2,500, así que el depósito mensual es ($2,500 − $1,500) ÷ 4 = $250. Los $500 iniciales corresponden a t = 0; por eso a = 250t + 500, la opción C."
         },
         "source": "vine-authored"
       }
@@ -47,8 +47,8 @@
       "inputHash": "f4a1d11b11df7b3f5516f2f34f96f6b619a4ebb713f2c8c1cc31bdb88bbed34b",
       "explanation": {
         "text": {
-          "en": "Choices A and B are both the same 180° rotation, and reflecting across both axes in C also sends (x, y) to (-x, -y), which maps F onto G. For D, the vertex (−5, 2) becomes (5, 2) and then (2, −5), which is not a vertex of G. Therefore D does not work.",
-          "es": "Las opciones A y B son la misma rotación de 180°, y las dos reflexiones de C también transforman (x, y) en (-x, -y), llevando F a G. En D, el vértice (−5, 2) pasa a (5, 2) y luego a (2, −5), que no es vértice de G. Por lo tanto, D no funciona."
+          "en": "Choices A and B are both the same 180° rotation, and reflecting across both axes in C also sends (x, y) to (−x, −y), which maps F onto G. For D, the vertex (−5, 2) becomes (5, 2) and then (2, −5), which is not a vertex of G. Therefore D does not work.",
+          "es": "Las opciones A y B son la misma rotación de 180°, y las dos reflexiones de C también transforman (x, y) en (−x, −y), llevando F a G. En D, el vértice (−5, 2) pasa a (5, 2) y luego a (2, −5), que no es vértice de G. Por lo tanto, D no funciona."
         },
         "source": "vine-authored"
       }
@@ -137,8 +137,8 @@
       "inputHash": "10bf2fcf323b93e8c1d06bc4bf059a324acce151a47fe7c51d769900a0d341e4",
       "explanation": {
         "text": {
-          "en": "A 90° clockwise rotation sends (x, y) to (y, -x), and a dilation by 1/2 then halves both coordinates. For example, F(−4, −2) becomes (−2, 4) and then (−1, 2), exactly F'. Therefore this is the sequence in choice D.",
-          "es": "Una rotación de 90° en sentido horario transforma (x, y) en (y, -x), y una dilatación de 1/2 divide después ambas coordenadas entre 2. Por ejemplo, F(−4, −2) pasa a (−2, 4) y luego a (−1, 2), que es F'. Por lo tanto, esta es la opción D."
+          "en": "A 90° clockwise rotation sends (x, y) to (y, −x), and a dilation by 1/2 then halves both coordinates. For example, F(−4, −2) becomes (−2, 4) and then (−1, 2), exactly F′. Therefore this is the sequence in choice D.",
+          "es": "Una rotación de 90° en sentido horario transforma (x, y) en (y, −x), y una dilatación de 1/2 divide después ambas coordenadas entre 2. Por ejemplo, F(−4, −2) pasa a (−2, 4) y luego a (−1, 2), que es F′. Por lo tanto, esta es la opción D."
         },
         "source": "vine-authored"
       }
@@ -167,8 +167,8 @@
       "inputHash": "f858567bff102a71813461cf96f636861da0d30cd630692754cde7b505c568bc",
       "explanation": {
         "text": {
-          "en": "Reflection across the y-axis changes each x-coordinate from x to -x. Only x = 0 remains unchanged because −0 = 0. Of the listed vertices, (0, 3) is the only one with x-coordinate 0, so choice A is correct.",
-          "es": "La reflexión sobre el eje y cambia cada coordenada x por -x. Solo x = 0 queda igual porque −0 = 0. Entre los vértices dados, (0, 3) es el único cuya coordenada x es 0; por eso la opción A es correcta."
+          "en": "Reflection across the y-axis changes each x-coordinate from x to −x. Only x = 0 remains unchanged because −0 = 0. Of the listed vertices, (0, 3) is the only one with x-coordinate 0, so choice A is correct.",
+          "es": "La reflexión sobre el eje y cambia cada coordenada x por −x. Solo x = 0 queda igual porque −0 = 0. Entre los vértices dados, (0, 3) es el único cuya coordenada x es 0; por eso la opción A es correcta."
         },
         "source": "vine-authored"
       }
@@ -267,8 +267,8 @@
       "inputHash": "cdf76fa2109c811cdd18160927d8ef03c22098f39562fe5fd4500fa9341f1cbe",
       "explanation": {
         "text": {
-          "en": "Distribute and solve: 5c + 4 = 2c - 10, so 3c + 4 = −10 and 3c = −14. Thus c = −14/3 = −4 2/3, which is choice A.",
-          "es": "Se distribuye y se resuelve: 5c + 4 = 2c - 10, así que 3c + 4 = −10 y 3c = −14. Por lo tanto, c = −14/3 = −4 2/3, que es la opción A."
+          "en": "Distribute and solve: 5c + 4 = 2c − 10, so 3c + 4 = −10 and 3c = −14. Thus c = −14/3 = −4 2/3, which is choice A.",
+          "es": "Se distribuye y se resuelve: 5c + 4 = 2c − 10, así que 3c + 4 = −10 y 3c = −14. Por lo tanto, c = −14/3 = −4 2/3, que es la opción A."
         },
         "source": "vine-authored"
       }
@@ -317,8 +317,8 @@
       "inputHash": "eaa00ddcc91254fc89d9024be87cf46df86e27eb149b7be36e63195a6a9cfc0e",
       "explanation": {
         "text": {
-          "en": "Photographer A's graph has y-intercept $25, so A's equipment fee is $25. For B, the hourly rate is ($110 - $80) ÷ (4 − 2) = $15; using $80 = 15(2) + b gives b = $50. A's fee is therefore $25 less than B's, choice C.",
-          "es": "La gráfica de A tiene intersección con y en $25, así que ese es su cargo de equipo. Para B, la tarifa es ($110 - $80) ÷ (4 − 2) = $15; con $80 = 15(2) + b se obtiene b = $50. El cargo de A es $25 menor que el de B, la opción C."
+          "en": "Photographer A's graph has y-intercept $25, so A's equipment fee is $25. For B, the hourly rate is ($110 − $80) ÷ (4 − 2) = $15; using $80 = 15(2) + b gives b = $50. A's fee is therefore $25 less than B's, choice C.",
+          "es": "La gráfica de A tiene intersección con y en $25, así que ese es su cargo de equipo. Para B, la tarifa es ($110 − $80) ÷ (4 − 2) = $15; con $80 = 15(2) + b se obtiene b = $50. El cargo de A es $25 menor que el de B, la opción C."
         },
         "source": "vine-authored"
       }
@@ -347,8 +347,8 @@
       "inputHash": "e6f3cd1ad580b0326e75f7b97182f106e7697829ad9b1801b6ef31395f9e7d2c",
       "explanation": {
         "text": {
-          "en": "The slope through (2, −2) and (−4, 13) is [13 − (−2)] ÷ (−4 − 2) = 15/-6 = −2.5. Using (2, −2) gives y = −2.5x + 3. At x = −6, y = −2.5(−6) + 3 = 18, so (−6, 18), choice A, lies on the line.",
-          "es": "La pendiente entre (2, −2) y (−4, 13) es [13 − (−2)] ÷ (−4 − 2) = 15/-6 = −2.5. Con (2, −2), la recta es y = −2.5x + 3. Si x = −6, y = −2.5(−6) + 3 = 18; por eso (−6, 18), la opción A, está en la recta."
+          "en": "The slope through (2, −2) and (−4, 13) is [13 − (−2)] ÷ (−4 − 2) = 15/(−6) = −2.5. Using (2, −2) gives y = −2.5x + 3. At x = −6, y = −2.5(−6) + 3 = 18, so (−6, 18), choice A, lies on the line.",
+          "es": "La pendiente entre (2, −2) y (−4, 13) es [13 − (−2)] ÷ (−4 − 2) = 15/(−6) = −2.5. Con (2, −2), la recta es y = −2.5x + 3. Si x = −6, y = −2.5(−6) + 3 = 18; por eso (−6, 18), la opción A, está en la recta."
         },
         "source": "vine-authored"
       }

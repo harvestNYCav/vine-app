@@ -139,14 +139,14 @@
       "inputHash": "387b91e8b168ad98054586d0d900fb73c08d24a77e0dd68373d92ed7e2fb38c7",
       "description": {
         "en": "Question 19. Which number line shows 6/8 at the correct location? Choices: A: 0 to 1 in 6 equal intervals, with 6/8 at the second tick after 0; B: 0 to 1 in 8 equal intervals, with 6/8 at the second tick; C: 0 to 1 in 8 equal intervals, with 6/8 at the sixth tick; D: 0 to 1 in 6 equal intervals, with 6/8 at the fourth tick.",
-        "es": "Pregunta 19. ¿Qué recta numérica muestra 6/8 en la ubicación indicada? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: en 8 intervalos iguales, con 6/8 en la segunda marca; C: en 8 intervalos iguales, con 6/8 en la sexta marca; D: en 6 intervalos iguales, con 6/8 en la cuarta marca."
+        "es": "Pregunta 19. ¿Qué recta numérica muestra la fracción 6/8 en la ubicación correcta? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: de 0 a 1 en 8 intervalos iguales, con 6/8 en la segunda marca después de 0; C: de 0 a 1 en 8 intervalos iguales, con 6/8 en la sexta marca después de 0; D: de 0 a 1 en 6 intervalos iguales, con 6/8 en la cuarta marca después de 0."
       },
       "requiredSourceTokens": {
         "en": [
           "Question 19. Which number line shows 6/8 at the correct location? Choices: A: 0 to 1 in 6 equal intervals, with 6/8 at the second tick after 0; B: 0 to 1 in 8 equal intervals, with 6/8 at the second tick; C: 0 to 1 in 8 equal intervals, with 6/8 at the sixth tick; D: 0 to 1 in 6 equal intervals, with 6/8 at the fourth tick."
         ],
         "es": [
-          "Pregunta 19. ¿Qué recta numérica muestra 6/8 en la ubicación indicada? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: en 8 intervalos iguales, con 6/8 en la segunda marca; C: en 8 intervalos iguales, con 6/8 en la sexta marca; D: en 6 intervalos iguales, con 6/8 en la cuarta marca."
+          "Pregunta 19. ¿Qué recta numérica muestra la fracción 6/8 en la ubicación correcta? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: de 0 a 1 en 8 intervalos iguales, con 6/8 en la segunda marca después de 0; C: de 0 a 1 en 8 intervalos iguales, con 6/8 en la sexta marca después de 0; D: de 0 a 1 en 6 intervalos iguales, con 6/8 en la cuarta marca después de 0."
         ]
       }
     },
@@ -216,8 +216,16 @@
     "nysed-2026-g3-mc-q30": {
       "inputHash": "4b136f8af8f5ca963a4128420b12699688329ff5217894e11cc676c35253c2ea",
       "description": {
-        "en": "Question 30. Which shape is divided into equal parts that each have an area of 1/4 of the whole? Choices: A: a circle crossed through its center by two slanted lines, forming narrow top and bottom regions and wider left and right regions; B: a rotated square divided into four same-size smaller square regions; C: a triangle divided by a vertical line from the top vertex to the base and a horizontal line near the top; D: a rectangle crossed by three parallel slanted segments, forming diagonal bands.",
-        "es": "Pregunta 30. ¿Qué forma está dividida en partes iguales, cada una con un área de 1/4 del entero? Opciones: A: un círculo atravesado por su centro por dos líneas inclinadas, que forman regiones estrechas arriba y abajo y regiones más anchas a la izquierda y a la derecha; B: un cuadrado girado dividido en cuatro regiones cuadradas más pequeñas del mismo tamaño; C: un triángulo dividido por una línea vertical desde el vértice superior hasta la base y una línea horizontal cerca de la parte superior; D: un rectángulo atravesado por tres segmentos inclinados paralelos, que forman franjas diagonales."
+        "en": "Question 30. Which shape is divided into equal parts that each have an area of 1/4 of the whole? Choices: A: a circle with two straight lines crossing at its center in an X shape that is taller than it is wide; B: a square turned to stand on one corner, divided by two crossing lines into four smaller squares; C: a triangle divided by a vertical line from the top vertex to the base and a horizontal line halfway between the top vertex and the base; D: a rectangle crossed by three parallel slanted segments, forming diagonal bands.",
+        "es": "Pregunta 30. ¿Qué forma está dividida en partes iguales, cada una con un área de 1/4 del entero? Opciones: A: un círculo con dos líneas rectas que se cruzan en el centro formando una X más alta que ancha; B: un cuadrado apoyado sobre un vértice, dividido por dos líneas que se cruzan en cuatro cuadrados más pequeños; C: un triángulo dividido por una línea vertical desde el vértice superior hasta la base y una línea horizontal a media altura entre el vértice superior y la base; D: un rectángulo atravesado por tres segmentos inclinados paralelos, que forman franjas diagonales."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 30. Which shape is divided into equal parts that each have an area of 1/4 of the whole? Choices: A: a circle with two straight lines crossing at its center in an X shape that is taller than it is wide; B: a square turned to stand on one corner, divided by two crossing lines into four smaller squares; C: a triangle divided by a vertical line from the top vertex to the base and a horizontal line halfway between the top vertex and the base; D: a rectangle crossed by three parallel slanted segments, forming diagonal bands."
+        ],
+        "es": [
+          "Pregunta 30. ¿Qué forma está dividida en partes iguales, cada una con un área de 1/4 del entero? Opciones: A: un círculo con dos líneas rectas que se cruzan en el centro formando una X más alta que ancha; B: un cuadrado apoyado sobre un vértice, dividido por dos líneas que se cruzan en cuatro cuadrados más pequeños; C: un triángulo dividido por una línea vertical desde el vértice superior hasta la base y una línea horizontal a media altura entre el vértice superior y la base; D: un rectángulo atravesado por tres segmentos inclinados paralelos, que forman franjas diagonales."
+        ]
       }
     }
   }

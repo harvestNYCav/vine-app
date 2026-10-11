@@ -87,8 +87,8 @@
       "inputHash": "7305694583d8ebb37343c17fdc55a2f992b9b673b453fd6d52efa631f4d09db8",
       "explanation": {
         "text": {
-          "en": "A 90° counterclockwise rotation sends (x, y) to (-y, x); for example, J(2, 8) becomes (−8, 2). Dilating by 1/2 then sends it to (−4, 1) = P and maps the other vertices likewise, so choice D shows similarity without congruence.",
-          "es": "Una rotación de 90° en sentido antihorario lleva (x, y) a (-y, x); por ejemplo, J(2, 8) pasa a (−8, 2). Una dilatación de 1/2 lo lleva después a (−4, 1) = P y transforma igual los demás vértices, así que la opción D demuestra semejanza sin congruencia."
+          "en": "A 90° counterclockwise rotation sends (x, y) to (−y, x); for example, J(2, 8) becomes (−8, 2). Dilating by 1/2 then sends it to (−4, 1) = P and maps the other vertices likewise, so choice D shows similarity without congruence.",
+          "es": "Una rotación de 90° en sentido contrario a las agujas del reloj lleva (x, y) a (−y, x); por ejemplo, J(2, 8) pasa a (−8, 2). Una dilatación de 1/2 lo lleva después a (−4, 1) = P y transforma igual los demás vértices, así que la opción D demuestra semejanza sin congruencia."
         },
         "source": "vine-authored"
       }
@@ -147,8 +147,8 @@
       "inputHash": "23d6861a011da76532741f44a156a40deaceb92ab204e7a1d9b2398f10757a3d",
       "explanation": {
         "text": {
-          "en": "The third angle is F = 180° - 76° - 65° = 39°. The corresponding sides show a scale factor of 1/2 from ABC to EFG, so FG = 201 ÷ 2 = 100.5 cm; both results appear in choice D.",
-          "es": "El tercer ángulo es F = 180° - 76° - 65° = 39°. Los lados correspondientes muestran un factor de escala de 1/2 de ABC a EFG, así que FG = 201 ÷ 2 = 100.5 cm; ambos resultados aparecen en la opción D."
+          "en": "The third angle is F = 180° − 76° − 65° = 39°. The corresponding sides show a scale factor of 1/2 from ABC to EFG, so FG = 201 ÷ 2 = 100.5 cm; both results appear in choice D.",
+          "es": "El tercer ángulo es F = 180° − 76° − 65° = 39°. Los lados correspondientes muestran un factor de escala de 1/2 de ABC a EFG, así que FG = 201 ÷ 2 = 100.5 cm; ambos resultados aparecen en la opción D."
         },
         "source": "vine-authored"
       }
@@ -237,8 +237,8 @@
       "inputHash": "65935766bc218c3b51f3f7a9e88d1339000be815c5ab478b72491bd7a07c5357",
       "explanation": {
         "text": {
-          "en": "The hourly charge is the variable rate: Company A charges $49 per hour, while the coefficient of h shows Company B charges $99 per hour. Since $99 - $49 = $50, Company B charges $50 more per hour, choice B.",
-          "es": "El cargo por hora es la tasa variable: la Empresa A cobra $49 por hora, mientras que el coeficiente de h muestra que la Empresa B cobra $99. Como $99 - $49 = $50, la Empresa B cobra $50 más por hora, la opción B."
+          "en": "The hourly charge is the variable rate: Company A charges $49 per hour, while the coefficient of h shows Company B charges $99 per hour. Since $99 − $49 = $50, Company B charges $50 more per hour, choice B.",
+          "es": "El cargo por hora es la tasa variable: la Empresa A cobra $49 por hora, mientras que el coeficiente de h muestra que la Empresa B cobra $99. Como $99 − $49 = $50, la Empresa B cobra $50 más por hora, la opción B."
         },
         "source": "vine-authored"
       }
@@ -267,8 +267,8 @@
       "inputHash": "a8e773f1160a5a9ad2e845a55b112768ca67d87074e00823935cb01b084c30d1",
       "explanation": {
         "text": {
-          "en": "Angle 3 and its adjacent acute angle form a linear pair, so that acute angle is 180° - 128° = 52°. Parallel lines make the corresponding angle at line a also 52°, and the three angles below line a sum to 180°: 52° + angle 2 + 79° = 180°, so angle 2 = 49°, choice A.",
-          "es": "El ángulo 3 y su ángulo agudo adyacente forman un par lineal, así que ese ángulo mide 180° - 128° = 52°. Por las paralelas, el ángulo correspondiente en a también mide 52°, y 52° + ángulo 2 + 79° = 180°; entonces el ángulo 2 mide 49°, la opción A."
+          "en": "Angle 3 and its adjacent acute angle form a linear pair, so that acute angle is 180° − 128° = 52°. Parallel lines make the corresponding angle at line a also 52°, and the three angles below line a sum to 180°: 52° + angle 2 + 79° = 180°, so angle 2 = 49°, choice A.",
+          "es": "El ángulo 3 y su ángulo agudo adyacente forman un par lineal, así que ese ángulo mide 180° − 128° = 52°. Por las paralelas, el ángulo correspondiente en a también mide 52°, y 52° + ángulo 2 + 79° = 180°; entonces el ángulo 2 mide 49°, la opción A."
         },
         "source": "vine-authored"
       }

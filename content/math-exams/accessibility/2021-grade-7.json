@@ -642,13 +642,12 @@
     "nysed-2021-g7-mc-q18": {
       "inputHash": "be95d5a18ab06ba5ac6e588ea85ae7a7c0a0d8e44aefd0c852f2cad074a3a5e6",
       "description": {
-        "en": "Question 18. What is 1/2% of [(-0.5) × (-1/4)]? Choices: A: 0.000625. B: 0.00025. C: 0.065. D: 0.025.",
+        "en": "Question 18. What is 1/2% of [(−0.5) × (−1/4)]? Choices: A: 0.000625. B: 0.00025. C: 0.065. D: 0.025.",
         "es": "Pregunta 18. ¿Cuánto es 1/2 % de [(−0.5) × (−1/4)]? Opciones: A: 0.000625 B: 0.00025 C: 0.065 D: 0.025"
       },
       "requiredSourceTokens": {
         "en": [
           "1/2%",
-          "[(-0.5) × (-1/4)]",
           "0.000625",
           "0.00025",
           "0.065",
@@ -658,8 +657,7 @@
           "C: 0.065",
           "D: 0.025",
           "1/2",
-          "(-0.5)",
-          "(-1/4)"
+          "Question 18. What is 1/2% of [(−0.5) × (−1/4)]? Choices: A: 0.000625. B: 0.00025. C: 0.065. D: 0.025."
         ],
         "es": [
           "1/2 %",
@@ -674,7 +672,8 @@
           "D: 0.025",
           "1/2",
           "(−0.5)",
-          "(−1/4)"
+          "(−1/4)",
+          "Pregunta 18. ¿Cuánto es 1/2 % de [(−0.5) × (−1/4)]? Opciones: A: 0.000625 B: 0.00025 C: 0.065 D: 0.025"
         ]
       }
     },
@@ -751,21 +750,17 @@
     "nysed-2021-g7-mc-q21": {
       "inputHash": "6fb6f7da8c98a81e230de1fd7ac69d2bcef492972804800f22cb11d319f228a3",
       "description": {
-        "en": "Question 21. What value will make the equation true? -2.1 - ? = -1 1/2. Choices: A: 3.6. B: 0.6. C: -0.6. D: -3.6.",
+        "en": "Question 21. What value will make the equation true? −2.1 - ? = −1 1/2. Choices: A: 3.6. B: 0.6. C: −0.6. D: −3.6.",
         "es": "Pregunta 21. ¿Qué valor hará que la ecuación sea verdadera? La ecuación es −2.1 − ? = −1 1/2. Opciones: A: 3.6 B: 0.6 C: −0.6 D: −3.6"
       },
       "requiredSourceTokens": {
         "en": [
-          "-2.1 - ? = -1 1/2",
           "3.6",
           "0.6",
-          "-0.6",
-          "-3.6",
           "A: 3.6",
           "B: 0.6",
-          "C: -0.6",
-          "D: -3.6",
-          "1 1/2"
+          "1 1/2",
+          "Question 21. What value will make the equation true? −2.1 - ? = −1 1/2. Choices: A: 3.6. B: 0.6. C: −0.6. D: −3.6."
         ],
         "es": [
           "−2.1 − ? = −1 1/2",
@@ -777,7 +772,8 @@
           "B: 0.6",
           "C: −0.6",
           "D: −3.6",
-          "1 1/2"
+          "1 1/2",
+          "Pregunta 21. ¿Qué valor hará que la ecuación sea verdadera? La ecuación es −2.1 − ? = −1 1/2. Opciones: A: 3.6 B: 0.6 C: −0.6 D: −3.6"
         ]
       }
     },

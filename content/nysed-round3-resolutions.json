@@ -1,0 +1,958 @@
+{
+  "reviewRound": 3,
+  "reviewedBase": "d0b8239e976e8ede46b9ecc7aa393a93a17c2842",
+  "findingCount": 105,
+  "summary": {
+    "fixed": 104,
+    "sourceArtifactsRetained": 1,
+    "answerKeyCount": 3422,
+    "answerKeySha256": "72b3a898a61089d993531d49757cc6ca6ca660175192fea889ec3d1e167d023c"
+  },
+  "findings": [
+    {
+      "id": "nysed-ela-2022-g6-mc-q11",
+      "severity": "medium",
+      "category": "explanation",
+      "issue": "Leftover from the round-2 medium finding. The rewrite still doesn't explain how fear causes the 'ignorance' the question asks about. It misstates Merlin's words, adds a claim the article never makes, and dismisses distractor D circularly, even though the article ties D's fact to bats being misunderstood.",
+      "index": 0,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-ela-2017-g7-stimulus-1-7",
+      "severity": "medium",
+      "category": "passage",
+      "issue": "Footnotes ³ and ⁴ were left as plain, space-separated digits inside a sentence. They read as quantities ('3 hunters', '4 ways'). The PR converted ¹ and ² in the same passage. Cross-ref the round-2 footnote-convention finding.",
+      "index": 1,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2015-g7-stimulus-8-14",
+      "severity": "low",
+      "category": "passage",
+      "issue": "Other transcripts still use flattened plain-digit footnote markers, the pattern the round-2 finding said to convert (ledger: fixed). These passages are outside this packet; they were found by a catalog scan.",
+      "index": 2,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2015-g8-mc-q20",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The round-2 single-quote finding named 2015 g8 q20, 2016 g8 q4 and 2016 g8 q29 as having the same pattern. These three were not changed. They still use straight single quotes as the main quotation marks, so the closing mark looks like an apostrophe (e.g. 'park's 'rural feeling.'').",
+      "index": 3,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-ela-2015-g3-stimulus-1-6",
+      "severity": "low",
+      "category": "passage",
+      "issue": "The 'injera bread' gloss sits after paragraph 13. In the image it is a box beside paragraph 7, where the mouse says 'injera bread'. A screen-reader user hears the definition six paragraphs after the word. The placement predates the PR, which only wrapped the line in [Sidebar: ...].",
+      "index": 4,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2021-g5-stimulus-1-7",
+      "severity": "low",
+      "category": "passage",
+      "issue": "A page-break blank line splits a sentence mid-word-group. This is the same class the PR fixed in the other two 2021 g5 passages (MacTavish, snowflake), but it was missed here.",
+      "index": 5,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2014-g6-stimulus-14-19",
+      "severity": "low",
+      "category": "passage",
+      "issue": "A page-break blank line splits a sentence in the carousel passage used by 2014 g6 q15.",
+      "index": 6,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2014-g8-stimulus-8-14",
+      "severity": "low",
+      "category": "passage",
+      "issue": "A page-break blank line splits a sentence.",
+      "index": 7,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2013-g8-stimulus-1-7",
+      "severity": "low",
+      "category": "passage",
+      "issue": "A page-break blank line splits a question sentence.",
+      "index": 8,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2014-g8-stimulus-1-7",
+      "severity": "low",
+      "category": "passage",
+      "issue": "The bison illustration was moved out of mid-sentence, but the ¹ cinch / ² nickered footnotes and a blank line still split a sentence in the same passage. The screen reader goes 'something Rowdy and I' → two definitions → 'had been working on.' Same class as the bison and Tibetan-photo findings.",
+      "index": 9,
+      "status": "fixed",
+      "resolution": "Repaired footnote markers and reading order without changing passage prose or source line/paragraph references; synchronized the reviewed transcript hashes."
+    },
+    {
+      "id": "nysed-ela-2014-g3-mc-q5",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "Faulty parallelism in the rewritten clause makes the mother otter the subject of 'describes'.",
+      "index": 10,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-ela-2014-g3-mc-q14",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The fixed explanation ends with 'physically demanding'. That is above grade-3 and ELL level. It also never names the main idea the question asks about (para 19: the kids are 'getting good exercise').",
+      "index": 11,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2023-g4-mc-q31",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "The rewritten alt (en and es) describes triangle B as having only 'two equal-looking sloping sides'. In the crop, B looks equilateral. The dotted line from the lower-right vertex to the middle of the left side is a line of symmetry only because the right side and the bottom side are equal. Because the alt leaves this out, it describes an isosceles triangle with a different base. For that shape the dotted line would NOT be a symmetry line, so a screen-reader user cannot identify the key B. This is a regression from the PR #14 neutralization.",
+      "index": 12,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2023-g4-mc-q31",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "PR #14 introduced a gender-agreement error when it replaced 'eje' with 'línea'.",
+      "index": 13,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2023-g4-mc-q31",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Left over from the round-2 finding: the alt[es] still says 'línea punteada', but the Spanish crop says 'línea de puntos'. The explanation[es] was updated to 'línea de puntos', so the alt and the explanation now disagree.",
+      "index": 14,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2026-g3-mc-q30",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "The alt (en and es) hands over the answer. Choice B is described as 'four same-size smaller square regions' / 'del mismo tamaño', which is exactly the equal-parts property the item tests. Choice A is pre-judged as unequal ('narrow top and bottom regions and wider left and right regions'). This is the pattern PR #13/#14 removed elsewhere, such as the 2023-g4-q25 degree measures and the 2025-g4-q31 right-angle labels.",
+      "index": 15,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2026-g3-mc-q30",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The alt (en and es) for choice C misplaces the horizontal line. It says the line is 'near the top', but in the crop it sits halfway down the triangle.",
+      "index": 16,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2026-g3-mc-q19",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Left over from the round-2 finding, which the ledger marks fixed: only alt[en] was corrected. The alt[es] stem still says 'ubicación indicada' (the indicated location), but the Spanish crop asks for 'la ubicación correcta'. This changes the meaning of the question. Choices B–D also drop 'de 0 a 1', which en includes.",
+      "index": 17,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2016-g4-mc-q24",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "Left over from the round-2 finding: the C/D separator in the alt is still a period, while every other separator is a semicolon.",
+      "index": 18,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2023-g4-mc-q9",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Removing 'inches' from choice D was right, but the alt stem does not keep the printed unit. As a result, the alt (en and es) never says what unit the choices are in.",
+      "index": 19,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2017-g3-mc-q9",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Left over from the optional half of the round-2 finding: the alt[es] uses cardinal tick numbers, but the explanation[es] now uses ordinals. Spanish-reading students hear two different ways of naming the same tick.",
+      "index": 20,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2019-g3-mc-q29",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "The explanation[es], which PR #14 touched for the minus sign, uses different nouns and verbs from the Spanish crop and alt[es]. PR #13 and #14 fixed this same kind of mismatch elsewhere (gráfica→diagrama lineal, estudiantes→alumnos).",
+      "index": 21,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2021-g4-mc-q23",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "The rewrite brings in the crop's wording but presents a restatement of the previous equation as a conclusion ('4 × 6 = 24. Por lo tanto, 24 = 4 × 6.'). That is circular, and it no longer mirrors the English, which concludes '24 is 4 times as many as 6'.",
+      "index": 22,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2025-g4-mc-q31",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The neutral alt for Figure B ('four sloping equal-looking sides, with vertices at the top, bottom, left, and right') also fits a square rotated 45°, which IS a rectangle. In the crop, B is clearly taller than it is wide, so its angles are visibly not right angles. A screen-reader user cannot rule out B, and so cannot choose between choices B and C.",
+      "index": 23,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2025-g4-mc-q31",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "The explanation[es] ends with a clause that has no English counterpart, the same pattern PR #14 removed in 2026-g3-q15, q19 and q30. Both languages also say the angles are 'slanted' (slanted non-right angles / ángulos inclinados). An angle cannot be slanted; the sides are.",
+      "index": 24,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2014-g3-mc-q3",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The alt for choice C states that the regions are 'unequal', which is the judgment the item tests (1/2 requires two equal parts). Together with 'smaller top triangle' (A) and 'small top segment' (B), the alt marks every distractor as unequal and leaves D unmarked.",
+      "index": 25,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2019-g4-mc-q38",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The English explanation calls the tool the 'Vine ruler guide'. The on-screen panel heading (MeasurementGuide.tsx) is 'Vine measurement guide', the Spanish explanation says 'guía de medición de Vine' and the alt says 'scale-matched guide'. Students may look for a panel that does not exist under that name.",
+      "index": 26,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2016-g6-mc-q18",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "Alt choices A, B and D still state fraction values for the dots, but those values aren't printed. Only the integers −3 to 3 are labeled. For the key (B), this turns the item into a text match with the opposites the student computes (1/2 and −5/2), so the student never reads the number line. Choice C is now described by position, so the four choices are also described inconsistently. The round-2 tick-value findings (2016-g5 q15, 2026-g5 q13) were rated medium for the same pattern.",
+      "index": 27,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2024-g6-mc-q18",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion missed the first minus in '-(−2 1/2)'. It is still an ASCII hyphen next to a U+2212 minus, in both EN and ES.",
+      "index": 28,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2014-g6-mc-q48",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The alt gives every plotted point as an ordered pair, so the student doesn't read any coordinates from the grid. PR#14 removed ordered-pair notation from 2017-g6 q46 for the same reason.",
+      "index": 29,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2015-g6-mc-q25",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The alt names each drawn solid and counts its faces, but the drawings are unlabeled. Choice B's text mirrors the net's description (three rectangles and two congruent triangles), so the item becomes a text match. Recognizing the solid from its drawing is the task.",
+      "index": 30,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2015-g6-mc-q3",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Choice A calls its two small rectangles 'base rectangles', which tells the student they are the prism's bases. No other choice gets a role label like this. The text was not touched by the PR#14 C/D fix.",
+      "index": 31,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2022-g6-mc-q3",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The new alt[es] replaces the Spanish crop's printed stem term with a different one. The crop says 'representación bidimensional', but the alt says 'desarrollo plano'. alt[en] keeps the crop's 'The net of a rectangular prism'.",
+      "index": 32,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2017-g5-mc-q15",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "With the 'full grid = 1' and 23/90 hints rightly removed from the alt, the place-value reasoning now appears nowhere. The explanation only asserts that the grids 'show 2.23' and '1.90'.",
+      "index": 33,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2025-g6-mc-q13",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "Round 2 deliberately left an inference to the student: the strip rectangles are as wide as the 2 cm square. The explanation never shows that step. It just asserts 'dimensions are 2 cm, 2 cm, and 5 cm'. It also writes '2×2' and '2×5' without spaces, unlike every other explanation.",
+      "index": 34,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2014-g6-mc-q49",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The new grade-6 wording adds absolute values without saying why: each pair of endpoints is on opposite sides of an axis. A student could take away a rule ('add the absolute values') that fails for points on the same side. 2024-g6 q4 (same fix type) states the reason.",
+      "index": 35,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2017-g5-mc-q21",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The restored ES explanation now shows '12/20 + 5/20 = 17/20', but EN still skips that addition, so the two languages differ slightly.",
+      "index": 36,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2017-g6-mc-q46",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "Both explanations call the answer a 'graph', but the question calls the choices coordinate grids. In ES, 'gráfica' doesn't match the crop's 'cuadrilla de coordenadas'. This is the same kind of term mismatch that round 2 fixed elsewhere ('cuadrículas' → 'cuadrillas').",
+      "index": 37,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2019-g5-mc-q20",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "ES was fixed to a natural sentence, but EN still ends with '12 fills'. That noun use is awkward for English learners and no longer matches the ES wording.",
+      "index": 38,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2013-g5-mc-q3",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "This official rationale opens with an ASCII hyphen right after a fraction ('1/12 - The student...'). The same paragraph now uses '−' as a minus sign ('1 − 11/12'), so a young reader may read the opening as '1/12 minus'. Other official rationales put the answer in quotation marks instead.",
+      "index": 39,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2017-g5-mc-q14",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "In the Spanish crop, the digits of choice A '90' overlap: the 9 and 0 are kerned into each other. The EN crop renders '90' cleanly. It's still readable but cramped. This is probably a source-PDF artifact, but it is the only cramped choice in this packet.",
+      "index": 40,
+      "status": "source-artifact-retained",
+      "resolution": "Retained: verified the overlapping 90 on page 14 of the hash-matched official Spanish PDF. It is original typography, not a rendering regression; the accessible choice remains 90."
+    },
+    {
+      "id": "nysed-2024-g7-mc-q14",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "The EN alt names the box-plot features: 'a minimum at 61, a first quartile at 67, a median at 75, a third quartile at 78, and a maximum at 82'. The plot prints no such labels. The item asks only for the interquartile range, so naming Q1 and Q3 hands a screen-reader user the box-plot reading step and leaves only 78 − 67. This is the same leak PR #14 removed from 2017 q34. Here it is stronger, because finding Q1 and Q3 is the whole task.",
+      "index": 41,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2018-g7-mc-q28",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Leftover of the round-2 2017 q34 finding, which was fixed only on that item. The EN and ES alts name the five-number summary: 'the minimum is 5 miles, the first quartile is 10 miles, the median is 15 miles, the third quartile is 20 miles...' (ES: 'el valor mínimo ... el primer cuartil ... la mediana ... el tercer cuartil ... el valor máximo'). The item asks students to compare IQR and range from the plots, so identifying the quartile box edges is part of the skill being tested.",
+      "index": 42,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2018-g7-mc-q28",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "Leftover of the round-2 2017 q34 terminology finding, which was fixed only on that item. explanation[es] says 'el rango intercuartílico', but the ES choices say 'rango intercuartil'.",
+      "index": 43,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2024-g7-mc-q14",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "Same terminology mismatch as above: explanation[es] says 'rango intercuartílico', but the ES stem asks for 'el rango intercuartil'.",
+      "index": 44,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2013-g7-mc-q2",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The explanation source is 'official-nysed', which should mean NYSED's own rationale. Every sentence has been reworded, though, and a computation step NYSED never printed was added. By the round-3 rule, the label overstates the provenance.",
+      "index": 45,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2014-g7-mc-q3",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "Leftover from the round-2 finding: the equation spacing is still irregular. A new artifact also detaches the negative sign from 2 in '(− 2)', which can read as subtracting 2 from nothing.",
+      "index": 46,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2019-g7-mc-q4",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "Round 2 fixed this in ES only. explanation[en] still says the pan, not its area, is greater, and gives the rectangle's area without units.",
+      "index": 47,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2018-g7-mc-q29",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion missed the hyphens inside the absolute-value bars, so the same expression mixes '-' and '−'. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 48,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g7-mc-q6",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The leading minus sign was not converted, so the expression mixes '-' and '−'. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 49,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g7-mc-q16",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The conversion was partial, so both equations mix hyphen-minus and '−'. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 50,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g7-mc-q21",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The explanation conversion was partial: the subtraction before z and the '-z' were left as hyphens. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 51,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g7-mc-q21",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[en] uses ASCII hyphens for every minus sign, while the crop and alt[es] use true minus signs. Some screen readers announce '-' as 'dash' or 'hyphen' rather than 'minus', which matters on a negative-number item.",
+      "index": 52,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g7-mc-q18",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[en] uses ASCII hyphens for the negative numbers, while the crop and alt[es] use minus signs. Screen readers may read '-' as 'dash'.",
+      "index": 53,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2026-g7-mc-q1",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The subtraction still uses a hyphen in EN and ES. The round-2 suggested text had '$540 − $300', but PR #14 rewrote the ES sentence and kept the hyphen. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 54,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2026-g7-mc-q6",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The subtraction still uses a hyphen in EN and ES. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 55,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2026-g7-mc-q36",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The explanation was re-converted in PR #14 but '100% - 25%' kept its hyphen, while 'x − 0.25x' in the same text uses '−'. The caret/minus normalization in PR #14 skipped some hyphen-minus contexts: after a letter or '%' or '$', after '|', at the start of an expression, and before a variable.",
+      "index": 56,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g7-mc-q23",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "Leftover of the round-2 2019 q30 finding, a sibling item with identical content where this was fixed. The ES explanation still mixes 'estudiantes' with the item's 'alumnos'.",
+      "index": 57,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2026-g7-mc-q2",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "The ES explanation calls the students 'estudiantes', but the ES item says 'alumnos', which is the same mismatch round 2 fixed on 2019 q30.",
+      "index": 58,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2018-g7-mc-q39",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "The ES explanation uses 'precio rebajado' and 'descuento de 20%', but the ES item says 'precio con descuento' and 'descuento del 20 %'. This is the same kind of item-vocabulary mismatch round 2 fixed elsewhere (e.g., 'el largo'/'la longitud').",
+      "index": 59,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2018-g8-mc-q40",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "The alt (en and es) ends with a summary sentence that does the student's task. It states which segments rise and which fall, which is exactly the increasing intervals asked for (choice B).",
+      "index": 60,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2015-g8-mc-q47",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "The alt states the measured dimensions of both figures and names L a rectangle and M a square. That is the non-congruence reasoning the item tests (KEY C), and none of these measurements are printed in the crop.",
+      "index": 61,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q35",
+      "severity": "medium",
+      "category": "formatting",
+      "issue": "The two equations in the alt (en and es) run together with no separator. A screen reader voices it as one chain, '… = 6 x − 3y = 9', which sounds like '6x − 3y'.",
+      "index": 62,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2016-g8-mc-q41",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The rewritten alt says the grids have 'unit spacing'. In the crop the gridlines are every 2 units: each plot has a 6 × 6 grid spanning 0 to 12, with lines at 2, 4, 6, 8, and 10.",
+      "index": 63,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2015-g8-mc-q45",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "The alt puts the x-intercept of function 2 at about (5.1, 0). The drawn line crosses at x ≈ 5. It passes the lattice points (0, −3), (5, 0), and (10, 3), a slope of 3/5.",
+      "index": 64,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2018-g8-mc-q7",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[en] adds a deduction that is not printed in the figure: that every side is 11.6 cm. Only the top side is labeled. alt[es] correctly leaves this out, so the two alts are also inconsistent.",
+      "index": 65,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2018-g8-mc-q7",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "Two problems in the explanation (en and es). First, the subtraction still uses an ASCII hyphen right after the newly converted superscript, while other explanations in this pass use '−'. Second, it says each corner triangle has two 8.2 cm legs without showing where the unlabeled horizontal leg comes from.",
+      "index": 66,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q43",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion was partial. One expression now mixes an ASCII hyphen and a true minus sign (en and es).",
+      "index": 67,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q46",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion was partial. The divisor keeps an ASCII hyphen right next to converted minus signs (en and es).",
+      "index": 68,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q37",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion was partial. The same sentence uses a hyphen in '2c - 10' and a true minus in '−10' (en and es).",
+      "index": 69,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2018-g8-mc-q39",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The subtraction between the converted scientific-notation terms still uses an ASCII hyphen (en and es).",
+      "index": 70,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q5",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The coordinate rule keeps ASCII hyphens while the vertex coordinates in the next sentence were converted to '−' (en and es).",
+      "index": 71,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q20",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The rotation rule keeps an ASCII hyphen next to converted coordinates. The explanation also writes F′ with an ASCII apostrophe, while the alt uses the prime 'F′' (en and es).",
+      "index": 72,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q26",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "Within two sentences, the same negation is written with a hyphen in '-x' and a true minus in '−0' (en and es).",
+      "index": 73,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2014-g8-mc-q19",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The alt writes the fractional slopes as '2/5x'. A screen reader can read that as 2/(5x). Other alts in this packet parenthesize, e.g. 2014 q25 '−(2/3)x' and 2015 q45 '(3/4)x'. The alt also paraphrases the stem.",
+      "index": 74,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2015-g8-mc-q35",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The alt touched by PR #14 still writes fractional coefficients without parentheses, so they can be misread as 3/(4x) and so on. The explanation correctly writes '(3/4)x'.",
+      "index": 75,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2015-g8-mc-q38",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The alt touched by PR #14 still writes fractional coefficients without parentheses. The explanation correctly writes '(7/2)x'.",
+      "index": 76,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2018-g8-mc-q19",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "Function W's fractional slope is written without parentheses in both alts, and en and es format it differently.",
+      "index": 77,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2017-g8-mc-q28",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[es] gives a different temperature range for the scatter points than alt[en]. The crop matches en: the leftmost point is at about 13–14 °F.",
+      "index": 78,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2014-g8-mc-q13",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The relabeled Vine explanation says 'the three adjacent angles on straight line G–N–L' without naming them. A grade-8 reader has to work out which three angles are meant: ∠GNF, ∠FNM, and ∠MNL.",
+      "index": 79,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2026-g8-mc-q18",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "Both alts give away the answer by describing the rays as decreasing or increasing. alt[es] even uses the choice wording 'creciente/decreciente'. The crop shows only line segments on a grid.",
+      "index": 80,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2026-g8-mc-q23",
+      "severity": "medium",
+      "category": "fidelity",
+      "issue": "Both alts name the angle relationship ('vertical angle' / 'opuesto por el vértice'). The crop does not print it, and recognizing it is the skill the item tests.",
+      "index": 81,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2024-g8-mc-q35",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Both alts label the printed measurements as 'radius' and 'diameter'. alt[es] also spells out the inference. The crop prints only '3.5 cm' and '7 cm' on dashed segments, and the explanation says spotting the diameter is the key step.",
+      "index": 82,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q11",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[es] adds the computed slope, which is a solving step that is not printed and is not in alt[en]. Both alts also list the key point (4, −2) as one of the sample points on the line.",
+      "index": 83,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q13",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[es] gives the rectangles' widths and heights, which are not printed and which hand over the 1/2 ratio. alt[en] does not include them. All four choices use 1/2, so the impact is small, but the alt breaks the no-measured-lengths rule and the two languages differ.",
+      "index": 84,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2022-g8-mc-q16",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "Left over from the round-2 finding: alt[en] still folds the equation into the question instead of following the crop's 'shown below' wording.",
+      "index": 85,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2019-g8-mc-q2",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[en] has the same stem paraphrase as the 2022 q16 finding. alt[es] follows its crop.",
+      "index": 86,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q2",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "This is the same item as 2019 q2, with the same alt[en] stem paraphrase.",
+      "index": 87,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q16",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[en] has the same stem paraphrase as the 2022 q16 finding. alt[es] follows its crop.",
+      "index": 88,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2026-g8-mc-q32",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "alt[en] writes the coefficient as an ambiguous inline fraction, the same pattern fixed on 2022 q16 and 2025 q8. In both alts, the mixed-number choices can be read aloud as improper fractions.",
+      "index": 89,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2024-g8-mc-q10",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "In choices C and D, the alts move the exponent inside the parentheses. The value is the same, but the alts do not match the printed choices.",
+      "index": 90,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2019-g8-mc-q37",
+      "severity": "low",
+      "category": "fidelity",
+      "issue": "alt[es] wraps the stem in 'La pregunta dice: “…”'. This wrapper is not in the crop or in alt[en].",
+      "index": 91,
+      "status": "fixed",
+      "resolution": "Corrected the reviewed description in every supported language; retained the diagram geometry, labels and choices without supplying the tested conclusion."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q7",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "PR#14 changed hyphens to true minus signs but missed the final equation, so one sentence mixes the two.",
+      "index": 92,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q11",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion missed '-x', so each sentence mixes '−' and '-'.",
+      "index": 93,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q16",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The minus-sign conversion missed the restated equation. The same explanation uses '−3' and '−9'.",
+      "index": 94,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2024-g8-mc-q7",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "Only one of the two subtractions was converted to a minus sign, so the same sentence uses both '-' and '−'.",
+      "index": 95,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2026-g8-mc-q10",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The rotation rule kept a hyphen, while the coordinates in the same sentence use '−'.",
+      "index": 96,
+      "status": "fixed",
+      "resolution": "Normalized arithmetic minus signs across reviewed math alts and explanations, preserving compound-word hyphens; added fail-closed import checks."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q13",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The explanation writes the image vertex with an ASCII apostrophe instead of the prime used in the crop, the alt, and the choices. To English learners it can look like a possessive.",
+      "index": 97,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2022-g8-mc-q35",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "Converting the caret to superscripts produced a nested superscript exponent that is hard to read at superscript size. The double negative inside it is the step the student needs to see. The value is still correct (2 − (−1) = 3).",
+      "index": 98,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2021-g8-mc-q4",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "The explanation uses the radii 2.25 and 1.5 without saying they are half of the given diameters. Using the diameter instead of the radius gives distractor C (75.2), so this is the step most students need. Also, 2.25 equals 1.5², which may confuse students who see '(2.25)²' next to '(1.5)²'.",
+      "index": 99,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2024-g8-mc-q7",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "explanation[es] calls the starting fee 'cargo inicial', but the stem and all choices say 'tarifa inicial'. English learners may not connect the two.",
+      "index": 100,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2026-g8-mc-q10",
+      "severity": "low",
+      "category": "explanation-es",
+      "issue": "explanation[es] says 'en sentido antihorario', but the item and choices say 'en sentido contrario a las agujas del reloj'.",
+      "index": 101,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "nysed-2023-g8-mc-q34",
+      "severity": "low",
+      "category": "explanation",
+      "issue": "After the round-2 fix, explanation[es] ends with 'la opción B' but explanation[en] does not name the choice, so the two languages no longer match.",
+      "index": 102,
+      "status": "fixed",
+      "resolution": "Repaired the explanation or notation, retaining the correct choice and providing the missing reasoning; synchronized source records and generated content."
+    },
+    {
+      "id": "math 2015-grade-7-mc q15–q20, q22–q24, q26, q28 [en]",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "PR #14 removed the “calculators allowed” footer from the 2015 G6/G8 Book-2 crops and G7 q21, but these 11 G7 crops still show it.",
+      "index": 103,
+      "status": "fixed",
+      "resolution": "Removed only the calculators-allowed footer from all 11 crops using exact-source, geometry-pinned rendering; every retained pixel is identical. Refreshed dimensions and source hashes."
+    },
+    {
+      "id": "app/(student)/ela/exams/CollapsiblePassage.tsx:40",
+      "severity": "low",
+      "category": "formatting",
+      "issue": "The passage note (“Original booklet headers may show “XX” or different question numbers…”) now renders on all 242 ELA passages. The XX headers were removed from the images in this PR, and 2016–2026 use official numbering, so the note is stale/irrelevant almost everywhere; at most it applies to 2013–2015 release-ordinal numbering.",
+      "index": 104,
+      "status": "fixed",
+      "resolution": "Limited the numbering note to 2013–2015 releases and removed the obsolete XX reference."
+    }
+  ]
+}

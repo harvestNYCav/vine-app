@@ -117,8 +117,8 @@
       "inputHash": "43a1a91148847dadbed855e0711ade3e8ecff901b16bac0ce565ad782cc05c27",
       "explanation": {
         "text": {
-          "en": "The grids to the left of the plus sign show 2.23, and those to the right show 1.90. Adding the modeled decimals gives 2.23 + 1.90 = 4.13.",
-          "es": "Las cuadrillas a la izquierda del signo de suma muestran 2.23 y las de la derecha muestran 1.90. Al sumar los decimales modelados se obtiene 2.23 + 1.90 = 4.13."
+          "en": "Each full grid is 1, each column is 0.1, and each small square is 0.01. Left of the plus sign: 2 + 0.2 + 0.03 = 2.23. Right of the plus sign: 1 + 0.9 = 1.90. Adding gives 2.23 + 1.90 = 4.13.",
+          "es": "Cada cuadrilla completa es 1, cada columna es 0.1 y cada cuadrito es 0.01. A la izquierda del signo de suma: 2 + 0.2 + 0.03 = 2.23. A la derecha: 1 + 0.9 = 1.90. Al sumar se obtiene 2.23 + 1.90 = 4.13."
         },
         "source": "vine-authored"
       }
@@ -147,7 +147,7 @@
       "inputHash": "1c75c8dfa32212202f9565c39c78645ee136ad9450e0b2542a6811dac8152130",
       "explanation": {
         "text": {
-          "en": "Convert to twentieths: 3/5 = 12/20 and 1/4 = 5/20. Soccer and volleyball account for 17/20, so basketball accounts for 1 − 17/20 = 3/20.",
+          "en": "Convert to twentieths: 3/5 = 12/20 and 1/4 = 5/20. Soccer and volleyball account for 12/20 + 5/20 = 17/20, so basketball accounts for 1 − 17/20 = 3/20.",
           "es": "Se convierte a veinteavos: 3/5 = 12/20 y 1/4 = 5/20. El fútbol y el vóleibol representan 12/20 + 5/20 = 17/20, así que el básquetbol representa 1 − 17/20 = 3/20."
         },
         "source": "vine-authored"

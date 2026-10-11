@@ -426,7 +426,7 @@
     "nysed-2014-g8-mc-q19": {
       "inputHash": "66dd46ff08c6165b03a4a583c49374b33768b5598bc29ab6272b9152b3b83801",
       "description": {
-        "en": "Question 19. Which equation represents the line on the coordinate grid? Both axes run from −10 to 10 with grid lines every 2 units. The line rises from left to right, extends in both directions with arrowheads, and passes through the labeled points (0, −2) and (5, 0). Choices: A: y = 2/5x − 2 B: y = 2/5x + 5 C: y = −2/5x − 2 D: y = −2/5x + 5"
+        "en": "Question 19. Which equation represents the line shown on the coordinate grid below? Both axes run from −10 to 10 with grid lines every 2 units. The line rises from left to right, extends in both directions with arrowheads, and passes through the labeled points (0, −2) and (5, 0). Choices: A: y = (2/5)x − 2 B: y = (2/5)x + 5 C: y = −(2/5)x − 2 D: y = −(2/5)x + 5"
       },
       "requiredSourceTokens": {
         "en": [
@@ -435,15 +435,8 @@
           "2 units",
           "(0, −2)",
           "(5, 0)",
-          "y = 2/5x − 2",
-          "y = 2/5x + 5",
-          "y = −2/5x − 2",
-          "y = −2/5x + 5",
-          "A: y = 2/5x − 2",
-          "B: y = 2/5x + 5",
-          "C: y = −2/5x − 2",
-          "D: y = −2/5x + 5",
-          "2/5"
+          "2/5",
+          "Question 19. Which equation represents the line shown on the coordinate grid below? Both axes run from −10 to 10 with grid lines every 2 units. The line rises from left to right, extends in both directions with arrowheads, and passes through the labeled points (0, −2) and (5, 0). Choices: A: y = (2/5)x − 2 B: y = (2/5)x + 5 C: y = −(2/5)x − 2 D: y = −(2/5)x + 5"
         ]
       }
     },

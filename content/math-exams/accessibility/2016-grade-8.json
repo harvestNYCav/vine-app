@@ -81,7 +81,7 @@
     "nysed-2016-g8-mc-q4": {
       "inputHash": "1198d4eabff8b91d3ab563220986f94fd7310f89a0fc1422cdb5fa34ddd17925",
       "description": {
-        "en": "Question 4. Pentagon P and pentagon Q are congruent and are drawn on a coordinate plane. Both axes are marked in increments of 1. Pentagon P has vertices (1, 2), (1, 5), (2, 5), (2, 4), and (3, 2), connected in that order and then back to (1, 2). Pentagon Q has vertices (-3, -5), (-2, -3), (-2, -2), (-1, -2), and (-1, -5), connected in that order and then back to (-3, -5). Which sequence could be used to transform pentagon P to pentagon Q? Choices: A: a 180° clockwise rotation about the origin. B: a translation four units left and then a reflection over the x-axis. C: a reflection over the y-axis and then a translation seven units down. D: a translation seven units down and then a 90° clockwise rotation about the origin."
+        "en": "Question 4. Pentagon P and pentagon Q are congruent and are drawn on a coordinate plane. Both axes are marked in increments of 1. Pentagon P has vertices (1, 2), (1, 5), (2, 5), (2, 4), and (3, 2), connected in that order and then back to (1, 2). Pentagon Q has vertices (−3, −5), (−2, −3), (−2, −2), (−1, −2), and (−1, −5), connected in that order and then back to (−3, −5). Which sequence could be used to transform pentagon P to pentagon Q? Choices: A: a 180° clockwise rotation about the origin. B: a translation four units left and then a reflection over the x-axis. C: a reflection over the y-axis and then a translation seven units down. D: a translation seven units down and then a 90° clockwise rotation about the origin."
       },
       "requiredSourceTokens": {
         "en": [
@@ -90,11 +90,6 @@
           "(2, 5)",
           "(2, 4)",
           "(3, 2)",
-          "(-3, -5)",
-          "(-2, -3)",
-          "(-2, -2)",
-          "(-1, -2)",
-          "(-1, -5)",
           "180°",
           "four units left",
           "seven units down",
@@ -102,35 +97,24 @@
           "A: a 180° clockwise rotation about the origin",
           "B: a translation four units left and then a reflection over the x-axis",
           "C: a reflection over the y-axis and then a translation seven units down",
-          "D: a translation seven units down and then a 90° clockwise rotation about the origin"
+          "D: a translation seven units down and then a 90° clockwise rotation about the origin",
+          "Question 4. Pentagon P and pentagon Q are congruent and are drawn on a coordinate plane. Both axes are marked in increments of 1. Pentagon P has vertices (1, 2), (1, 5), (2, 5), (2, 4), and (3, 2), connected in that order and then back to (1, 2). Pentagon Q has vertices (−3, −5), (−2, −3), (−2, −2), (−1, −2), and (−1, −5), connected in that order and then back to (−3, −5). Which sequence could be used to transform pentagon P to pentagon Q? Choices: A: a 180° clockwise rotation about the origin. B: a translation four units left and then a reflection over the x-axis. C: a reflection over the y-axis and then a translation seven units down. D: a translation seven units down and then a 90° clockwise rotation about the origin."
         ]
       }
     },
     "nysed-2016-g8-mc-q5": {
       "inputHash": "cc820f0668877a9c1e1f7eb275559983b9d92d1d12a9ce59edcd811ead2ea31a",
       "description": {
-        "en": "Question 5. The graph of a system of equations is drawn on a coordinate plane whose numbered tick marks increase by 2. One decreasing line crosses the y-axis at (0, 10) and the x-axis at (5, 0), then continues with arrows upward to the left and downward to the right. The other decreasing line passes through the origin (0, 0) and approximately through (-12, 6) and (12, -6), continuing with arrows in both directions. The two lines intersect at approximately (6.7, -3.3). What system of equations represents the graph? Choices: A: y = -2x + 10 and y = -(1/3)x. B: y = -2x + 10 and y = -(1/2)x. C: y = -(1/2)x + 10 and y = -2x. D: y = -(1/3)x + 10 and y = -2x."
+        "en": "Question 5. The graph of a system of equations is drawn on a coordinate plane whose numbered tick marks increase by 2. One decreasing line crosses the y-axis at (0, 10) and the x-axis at (5, 0), then continues with arrows upward to the left and downward to the right. The other decreasing line passes through the origin (0, 0) and approximately through (−12, 6) and (12, −6), continuing with arrows in both directions. The two lines intersect at approximately (6.7, −3.3). What system of equations represents the graph? Choices: A: y = −2x + 10 and y = −(1/3)x. B: y = −2x + 10 and y = −(1/2)x. C: y = −(1/2)x + 10 and y = −2x. D: y = −(1/3)x + 10 and y = −2x."
       },
       "requiredSourceTokens": {
         "en": [
           "(0, 10)",
           "(5, 0)",
           "(0, 0)",
-          "(-12, 6)",
-          "(12, -6)",
-          "(6.7, -3.3)",
-          "y = -2x + 10",
-          "y = -(1/3)x",
-          "y = -(1/2)x",
-          "y = -(1/2)x + 10",
-          "y = -2x",
-          "y = -(1/3)x + 10",
-          "A: y = -2x + 10 and y = -(1/3)x",
-          "B: y = -2x + 10 and y = -(1/2)x",
-          "C: y = -(1/2)x + 10 and y = -2x",
-          "D: y = -(1/3)x + 10 and y = -2x",
           "(1/3)",
-          "(1/2)"
+          "(1/2)",
+          "Question 5. The graph of a system of equations is drawn on a coordinate plane whose numbered tick marks increase by 2. One decreasing line crosses the y-axis at (0, 10) and the x-axis at (5, 0), then continues with arrows upward to the left and downward to the right. The other decreasing line passes through the origin (0, 0) and approximately through (−12, 6) and (12, −6), continuing with arrows in both directions. The two lines intersect at approximately (6.7, −3.3). What system of equations represents the graph? Choices: A: y = −2x + 10 and y = −(1/3)x. B: y = −2x + 10 and y = −(1/2)x. C: y = −(1/2)x + 10 and y = −2x. D: y = −(1/3)x + 10 and y = −2x."
         ]
       }
     },
@@ -639,11 +623,11 @@
     "nysed-2016-g8-mc-q41": {
       "inputHash": "8bb8e11f485574a4c55c34fb486b16d600a0092ce4a1e8c37c0b298a358eaf54",
       "description": {
-        "en": "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y grid with unit spacing and even-numbered labels from 0 through 10. The following point locations are approximate readings of the diagrams, not printed coordinate labels. Choices: A: Points near (0.5, 4), (1, 1), (1.6, 3.8), (2, 1.3), (2.8, 5.2), (3, 2), (3.2, 3), (3.8, 6.7), (4.2, 2.5), (5, 7.2), (5.1, 4.4), (6, 4.5), (6.3, 8.7), (7, 10), (7, 6.9), (8, 7.2), (8.5, 9.8), (8.8, 8). Line k passes approximately through (0, 5) and (7, 12). B: Points near (0.5, 6.9), (1, 10), (1.6, 7.1), (2, 9.6), (2.9, 8.9), (2.7, 5.8), (3.1, 8), (3.8, 4.2), (4.2, 8.4), (5, 6.4), (5, 3.8), (6, 6.4), (6.3, 5.2), (6.1, 2.2), (7, 4), (7, 0.8), (8, 3.8), (8.5, 1). Line k passes approximately through (0, 10) and (10, 0). C: Points near (0.5, 2.2), (0.7, 1.3), (1.4, 2.7), (2.2, 3.7), (2.4, 2), (3, 3.3), (3.4, 5.4), (4.2, 5.4), (4.7, 4), (5.1, 7.3), (5.5, 5.4), (6.1, 6.8), (6.3, 7.8), (6.9, 9.1), (7.4, 6.9), (7.9, 8.4), (8.4, 10), (9, 8). Line k passes approximately through (2, 0) and (12, 10). D: Points near (0.5, 8), (1, 10), (1.5, 8.5), (2, 7), (2.4, 9), (3, 7.8), (3.2, 7), (3.8, 5.3), (4.2, 7.3), (4.6, 4), (5, 5.3), (6, 5.3), (6.3, 3.3), (7, 2), (7.2, 4.4), (7.4, 3.5), (7.9, 1.5), (8.7, 1.3). Line k passes approximately through (0, 10) and (10, 0)."
+        "en": "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y grid with grid lines every 2 units, labeled 2, 4, 6, 8, and 10 on each axis. The following point locations are approximate readings of the diagrams, not printed coordinate labels. Choices: A: Points near (0.5, 4), (1, 1), (1.6, 3.8), (2, 1.3), (2.8, 5.2), (3, 2), (3.2, 3), (3.8, 6.7), (4.2, 2.5), (5, 7.2), (5.1, 4.4), (6, 4.5), (6.3, 8.7), (7, 10), (7, 6.9), (8, 7.2), (8.5, 9.8), (8.8, 8). Line k passes approximately through (0, 5) and (7, 12). B: Points near (0.5, 6.9), (1, 10), (1.6, 7.1), (2, 9.6), (2.9, 8.9), (2.7, 5.8), (3.1, 8), (3.8, 4.2), (4.2, 8.4), (5, 6.4), (5, 3.8), (6, 6.4), (6.3, 5.2), (6.1, 2.2), (7, 4), (7, 0.8), (8, 3.8), (8.5, 1). Line k passes approximately through (0, 10) and (10, 0). C: Points near (0.5, 2.2), (0.7, 1.3), (1.4, 2.7), (2.2, 3.7), (2.4, 2), (3, 3.3), (3.4, 5.4), (4.2, 5.4), (4.7, 4), (5.1, 7.3), (5.5, 5.4), (6.1, 6.8), (6.3, 7.8), (6.9, 9.1), (7.4, 6.9), (7.9, 8.4), (8.4, 10), (9, 8). Line k passes approximately through (2, 0) and (12, 10). D: Points near (0.5, 8), (1, 10), (1.5, 8.5), (2, 7), (2.4, 9), (3, 7.8), (3.2, 7), (3.8, 5.3), (4.2, 7.3), (4.6, 4), (5, 5.3), (6, 5.3), (6.3, 3.3), (7, 2), (7.2, 4.4), (7.4, 3.5), (7.9, 1.5), (8.7, 1.3). Line k passes approximately through (0, 10) and (10, 0)."
       },
       "requiredSourceTokens": {
         "en": [
-          "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y grid with unit spacing and even-numbered labels from 0 through 10. The following point locations are approximate readings of the diagrams, not printed coordinate labels. Choices: A: Points near (0.5, 4), (1, 1), (1.6, 3.8), (2, 1.3), (2.8, 5.2), (3, 2), (3.2, 3), (3.8, 6.7), (4.2, 2.5), (5, 7.2), (5.1, 4.4), (6, 4.5), (6.3, 8.7), (7, 10), (7, 6.9), (8, 7.2), (8.5, 9.8), (8.8, 8). Line k passes approximately through (0, 5) and (7, 12). B: Points near (0.5, 6.9), (1, 10), (1.6, 7.1), (2, 9.6), (2.9, 8.9), (2.7, 5.8), (3.1, 8), (3.8, 4.2), (4.2, 8.4), (5, 6.4), (5, 3.8), (6, 6.4), (6.3, 5.2), (6.1, 2.2), (7, 4), (7, 0.8), (8, 3.8), (8.5, 1). Line k passes approximately through (0, 10) and (10, 0). C: Points near (0.5, 2.2), (0.7, 1.3), (1.4, 2.7), (2.2, 3.7), (2.4, 2), (3, 3.3), (3.4, 5.4), (4.2, 5.4), (4.7, 4), (5.1, 7.3), (5.5, 5.4), (6.1, 6.8), (6.3, 7.8), (6.9, 9.1), (7.4, 6.9), (7.9, 8.4), (8.4, 10), (9, 8). Line k passes approximately through (2, 0) and (12, 10). D: Points near (0.5, 8), (1, 10), (1.5, 8.5), (2, 7), (2.4, 9), (3, 7.8), (3.2, 7), (3.8, 5.3), (4.2, 7.3), (4.6, 4), (5, 5.3), (6, 5.3), (6.3, 3.3), (7, 2), (7.2, 4.4), (7.4, 3.5), (7.9, 1.5), (8.7, 1.3). Line k passes approximately through (0, 10) and (10, 0)."
+          "Question 41. Line k is the line of best fit for a set of data on a scatter plot. The data show a strong linear association. Which scatter plot best represents these data and line k? Each choice uses an x-y grid with grid lines every 2 units, labeled 2, 4, 6, 8, and 10 on each axis. The following point locations are approximate readings of the diagrams, not printed coordinate labels. Choices: A: Points near (0.5, 4), (1, 1), (1.6, 3.8), (2, 1.3), (2.8, 5.2), (3, 2), (3.2, 3), (3.8, 6.7), (4.2, 2.5), (5, 7.2), (5.1, 4.4), (6, 4.5), (6.3, 8.7), (7, 10), (7, 6.9), (8, 7.2), (8.5, 9.8), (8.8, 8). Line k passes approximately through (0, 5) and (7, 12). B: Points near (0.5, 6.9), (1, 10), (1.6, 7.1), (2, 9.6), (2.9, 8.9), (2.7, 5.8), (3.1, 8), (3.8, 4.2), (4.2, 8.4), (5, 6.4), (5, 3.8), (6, 6.4), (6.3, 5.2), (6.1, 2.2), (7, 4), (7, 0.8), (8, 3.8), (8.5, 1). Line k passes approximately through (0, 10) and (10, 0). C: Points near (0.5, 2.2), (0.7, 1.3), (1.4, 2.7), (2.2, 3.7), (2.4, 2), (3, 3.3), (3.4, 5.4), (4.2, 5.4), (4.7, 4), (5.1, 7.3), (5.5, 5.4), (6.1, 6.8), (6.3, 7.8), (6.9, 9.1), (7.4, 6.9), (7.9, 8.4), (8.4, 10), (9, 8). Line k passes approximately through (2, 0) and (12, 10). D: Points near (0.5, 8), (1, 10), (1.5, 8.5), (2, 7), (2.4, 9), (3, 7.8), (3.2, 7), (3.8, 5.3), (4.2, 7.3), (4.6, 4), (5, 5.3), (6, 5.3), (6.3, 3.3), (7, 2), (7.2, 4.4), (7.4, 3.5), (7.9, 1.5), (8.7, 1.3). Line k passes approximately through (0, 10) and (10, 0)."
         ]
       }
     },
