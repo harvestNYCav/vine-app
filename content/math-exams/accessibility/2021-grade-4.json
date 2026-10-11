@@ -157,8 +157,16 @@
     "nysed-2021-g4-mc-q22": {
       "inputHash": "93d21e8d7507fca4ab89993943082cb4b2ddb656e8c1066cb92ddfcb683d7cba",
       "description": {
-        "en": "Question 22. What is the measure, in degrees, of an angle equivalent to 1/360 of a circle? Choices: A: 1; B: 90; C: 180; D: 360 degrees.",
-        "es": "Pregunta 22. ¿Cuánto mide, en grados, un ángulo equivalente a 1/360 de un círculo? Opciones: A: 1; B: 90; C: 180; D: 360 grados."
+        "en": "Question 22. What is the measure, in degrees, of an angle equivalent to 1/360 of a circle? Choices: A: 1; B: 90; C: 180; D: 360.",
+        "es": "Pregunta 22. ¿Cuánto mide, en grados, un ángulo equivalente a 1/360 de un círculo? Opciones: A: 1; B: 90; C: 180; D: 360."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 22. What is the measure, in degrees, of an angle equivalent to 1/360 of a circle? Choices: A: 1; B: 90; C: 180; D: 360."
+        ],
+        "es": [
+          "Pregunta 22. ¿Cuánto mide, en grados, un ángulo equivalente a 1/360 de un círculo? Opciones: A: 1; B: 90; C: 180; D: 360."
+        ]
       }
     },
     "nysed-2021-g4-mc-q23": {

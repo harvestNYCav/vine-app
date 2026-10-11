@@ -138,8 +138,16 @@
     "nysed-2026-g3-mc-q19": {
       "inputHash": "387b91e8b168ad98054586d0d900fb73c08d24a77e0dd68373d92ed7e2fb38c7",
       "description": {
-        "en": "Question 19. Which number line shows 6/8 at the stated location? Choices: A: 0 to 1 in 6 equal intervals, with 6/8 at the second tick after 0; B: 0 to 1 in 8 equal intervals, with 6/8 at the second tick; C: 0 to 1 in 8 equal intervals, with 6/8 at the sixth tick; D: 0 to 1 in 6 equal intervals, with 6/8 at the fourth tick.",
+        "en": "Question 19. Which number line shows 6/8 at the correct location? Choices: A: 0 to 1 in 6 equal intervals, with 6/8 at the second tick after 0; B: 0 to 1 in 8 equal intervals, with 6/8 at the second tick; C: 0 to 1 in 8 equal intervals, with 6/8 at the sixth tick; D: 0 to 1 in 6 equal intervals, with 6/8 at the fourth tick.",
         "es": "Pregunta 19. ¿Qué recta numérica muestra 6/8 en la ubicación indicada? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: en 8 intervalos iguales, con 6/8 en la segunda marca; C: en 8 intervalos iguales, con 6/8 en la sexta marca; D: en 6 intervalos iguales, con 6/8 en la cuarta marca."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 19. Which number line shows 6/8 at the correct location? Choices: A: 0 to 1 in 6 equal intervals, with 6/8 at the second tick after 0; B: 0 to 1 in 8 equal intervals, with 6/8 at the second tick; C: 0 to 1 in 8 equal intervals, with 6/8 at the sixth tick; D: 0 to 1 in 6 equal intervals, with 6/8 at the fourth tick."
+        ],
+        "es": [
+          "Pregunta 19. ¿Qué recta numérica muestra 6/8 en la ubicación indicada? Opciones: A: de 0 a 1 en 6 intervalos iguales, con 6/8 en la segunda marca después de 0; B: en 8 intervalos iguales, con 6/8 en la segunda marca; C: en 8 intervalos iguales, con 6/8 en la sexta marca; D: en 6 intervalos iguales, con 6/8 en la cuarta marca."
+        ]
       }
     },
     "nysed-2026-g3-mc-q20": {

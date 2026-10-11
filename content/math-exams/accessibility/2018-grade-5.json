@@ -647,35 +647,14 @@
       "inputHash": "673a323a5c8d90bb9264396f576af1a8400b0f2144d679753e2d1ccd8d8d7e77",
       "description": {
         "en": "Question 34. Which expression could be represented by the shaded parts of the model below? The model consists of five equal circles separated by plus signs. Each circle is divided into 8 equal sectors, and 5 of the 8 sectors in each circle are shaded. Choices: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5",
-        "es": "Pregunta 34. ¿Qué expresión podría estar representada por las partes sombreadas del siguiente modelo? El modelo contiene cinco círculos del mismo tamaño separados por signos de suma. Cada círculo está dividido en 8 sectores iguales: 5 sectores están sombreados de gris y 3 sectores no están sombreados. Por tanto, cada círculo representa visualmente 5/8, y ese mismo modelo se repite 5 veces. Opciones: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5"
+        "es": "Pregunta 34. ¿Qué expresión podría estar representada por las partes sombreadas del siguiente modelo? El modelo contiene cinco círculos del mismo tamaño separados por signos de suma. Cada círculo está dividido en 8 sectores iguales: 5 sectores están sombreados de gris y 3 sectores no están sombreados. Opciones: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5"
       },
       "requiredSourceTokens": {
         "en": [
-          "5/8 + 5/5",
-          "5/8 × 5/5",
-          "5/8 + 5",
-          "5/8 × 5",
-          "A: 5/8 + 5/5",
-          "B: 5/8 × 5/5",
-          "C: 5/8 + 5",
-          "D: 5/8 × 5",
-          "5/8",
-          "5/5"
+          "Question 34. Which expression could be represented by the shaded parts of the model below? The model consists of five equal circles separated by plus signs. Each circle is divided into 8 equal sectors, and 5 of the 8 sectors in each circle are shaded. Choices: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5"
         ],
         "es": [
-          "5",
-          "8",
-          "5/8",
-          "3",
-          "5/8 + 5/5",
-          "5/8 × 5/5",
-          "5/8 + 5",
-          "5/8 × 5",
-          "A: 5/8 + 5/5",
-          "B: 5/8 × 5/5",
-          "C: 5/8 + 5",
-          "D: 5/8 × 5",
-          "5/5"
+          "Pregunta 34. ¿Qué expresión podría estar representada por las partes sombreadas del siguiente modelo? El modelo contiene cinco círculos del mismo tamaño separados por signos de suma. Cada círculo está dividido en 8 sectores iguales: 5 sectores están sombreados de gris y 3 sectores no están sombreados. Opciones: A: 5/8 + 5/5 B: 5/8 × 5/5 C: 5/8 + 5 D: 5/8 × 5"
         ]
       }
     },

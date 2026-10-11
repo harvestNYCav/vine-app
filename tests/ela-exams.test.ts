@@ -28,35 +28,39 @@ import {
 const root = process.cwd()
 const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]
 const GRADES = [3, 4, 5, 6, 7, 8] as const
+const VINE_AUTHORED_LEGACY_RATIONALE_IDS = new Set([
+  "nysed-ela-2014-g3-mc-q14",
+  "nysed-ela-2014-g3-mc-q2",
+  "nysed-ela-2014-g3-mc-q3",
+  "nysed-ela-2014-g4-mc-q13",
+  "nysed-ela-2014-g4-mc-q9"
+])
+
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
-  'nysed-ela-2014-g3-mc-q2',
-  'nysed-ela-2014-g3-mc-q3',
-  'nysed-ela-2014-g3-mc-q14',
-  'nysed-ela-2014-g3-mc-q6',
-  'nysed-ela-2014-g3-mc-q5',
-  'nysed-ela-2014-g4-mc-q13',
-  'nysed-ela-2014-g4-mc-q9',
-  'nysed-ela-2014-g4-mc-q15',
-  'nysed-ela-2014-g5-mc-q3',
-  'nysed-ela-2013-g5-mc-q2',
-  'nysed-ela-2014-g5-mc-q2',
-  'nysed-ela-2014-g5-mc-q20',
-  'nysed-ela-2014-g6-mc-q5',
-  'nysed-ela-2014-g6-mc-q9',
-  'nysed-ela-2014-g6-mc-q11',
-  'nysed-ela-2014-g6-mc-q14',
-  'nysed-ela-2014-g6-mc-q16',
-  'nysed-ela-2013-g7-mc-q2',
-  'nysed-ela-2013-g7-mc-q4',
-  'nysed-ela-2014-g7-mc-q8',
-  'nysed-ela-2014-g8-mc-q19',
-  'nysed-ela-2014-g8-mc-q15',
-  'nysed-ela-2013-g8-mc-q1',
-  'nysed-ela-2014-g8-mc-q13',
-  'nysed-ela-2013-g4-mc-q2',
-  'nysed-ela-2013-g6-mc-q5',
-  'nysed-ela-2014-g3-mc-q12',
-  'nysed-ela-2014-g7-mc-q15',
+  "nysed-ela-2013-g4-mc-q2",
+  "nysed-ela-2013-g5-mc-q2",
+  "nysed-ela-2013-g6-mc-q5",
+  "nysed-ela-2013-g7-mc-q2",
+  "nysed-ela-2013-g7-mc-q4",
+  "nysed-ela-2013-g8-mc-q1",
+  "nysed-ela-2014-g3-mc-q12",
+  "nysed-ela-2014-g3-mc-q5",
+  "nysed-ela-2014-g3-mc-q6",
+  "nysed-ela-2014-g4-mc-q15",
+  "nysed-ela-2014-g5-mc-q2",
+  "nysed-ela-2014-g5-mc-q20",
+  "nysed-ela-2014-g5-mc-q3",
+  "nysed-ela-2014-g6-mc-q11",
+  "nysed-ela-2014-g6-mc-q14",
+  "nysed-ela-2014-g6-mc-q15",
+  "nysed-ela-2014-g6-mc-q16",
+  "nysed-ela-2014-g6-mc-q5",
+  "nysed-ela-2014-g6-mc-q9",
+  "nysed-ela-2014-g7-mc-q15",
+  "nysed-ela-2014-g7-mc-q8",
+  "nysed-ela-2014-g8-mc-q13",
+  "nysed-ela-2014-g8-mc-q15",
+  "nysed-ela-2014-g8-mc-q19"
 ])
 const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2013: [6, 5, 6, 5, 7, 7],
@@ -641,17 +645,18 @@ test('reviewed ELA explanations preserve the passage evidence without overstatin
   assert.equal(leftovers.grading.explanationSource, 'official-nysed-corrected')
 
   const height = getElaExamQuestion('nysed-ela-2023-g3-mc-q4')!
-  assert.match(height.grading.explanation, /earlier measurement/i)
-  assert.match(height.grading.explanation, /rather than conclusively proving their current heights/i)
+  assert.match(height.grading.explanation, /red mark.*higher than the blue/i)
+  assert.match(height.grading.explanation, /compares the boys.*heights/i)
 
   const apples = getElaExamQuestion('nysed-ela-2024-g3-mc-q26')!
-  assert.match(apples.grading.explanation, /reluctantly accepts/i)
-  assert.match(apples.grading.explanation, /rather than intentionally deciding to trust him/i)
-  assert.doesNotMatch(apples.grading.explanation, /trusting what others contribute brings/i)
+  assert.match(apples.grading.explanation, /Sam.*apples were the missing ingredient/i)
+  assert.match(apples.grading.explanation, /trust/i)
+  assert.doesNotMatch(apples.grading.explanation, /rather than intentionally/i)
 
   const glanced = getElaExamQuestion('nysed-ela-2026-g3-mc-q3')!
-  assert.match(glanced.grading.explanation, /“Glanced” means looked briefly/)
-  assert.match(glanced.grading.explanation, /purpose rather than the exact meaning/i)
+  assert.match(glanced.grading.explanation, /Glanced.*means took a quick look/)
+  assert.match(glanced.grading.explanation, /looking for something that could help/i)
+  assert.doesNotMatch(glanced.grading.explanation, /purpose rather than the exact meaning/i)
 })
 
 test('active ELA questions have substantive sourced explanations with server-only grading', () => {
@@ -671,7 +676,7 @@ test('active ELA questions have substantive sourced explanations with server-onl
     assert.match(question.grading.correct, /^[A-D]$/)
     assert.ok(question.grading.explanation.replace(/[^\p{L}\p{N}]/gu, '').length >= 40)
     assert.doesNotMatch(question.grading.explanation, genericFallback)
-    const expectedSource = exam.year >= 2015
+    const expectedSource = exam.year >= 2015 || VINE_AUTHORED_LEGACY_RATIONALE_IDS.has(question.id)
       ? 'vine-authored'
       : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
         ? 'official-nysed-corrected'
@@ -700,9 +705,9 @@ test('active ELA questions have substantive sourced explanations with server-onl
   }
 
   assert.deepEqual(explanationSourceCounts, {
-    'official-nysed': 121,
-    'official-nysed-corrected': 28,
-    'vine-authored': 1_434,
+    'official-nysed': 120,
+    'official-nysed-corrected': 24,
+    'vine-authored': 1439,
   })
 })
 

@@ -13,6 +13,12 @@ import pdfplumber
 from PIL import Image, ImageDraw, ImageStat
 
 try:
+    from scripts.nysed_image_finishing import finish_reviewed_image, finishing_cache_policy
+except ModuleNotFoundError:
+    from nysed_image_finishing import finish_reviewed_image, finishing_cache_policy
+
+
+try:
     from scripts.import_nysed_math_mc import (
         PDF_RENDER_LOCK,
         ImportFailure,
@@ -280,6 +286,9 @@ def render_passage_assets(
         "passageSourcePdfSha256": sha256_file(pdf_path),
         "passages": passage_basis,
     }
+    finishing_policy = finishing_cache_policy(public_directory, "passage")
+    if finishing_policy:
+        expected_manifest["imageFinishingPolicy"] = finishing_policy
     existing_basis = {key: existing_manifest.get(key) for key in expected_manifest}
     reuse_allowed = not force and existing_basis == expected_manifest
     results: dict[str, PassageImageResult] = {}
@@ -343,6 +352,7 @@ def render_passage_assets(
                 dpi=dpi,
                 label=f"{pdf_path.name} {stimulus_id}",
             )
+            stitched = finish_reviewed_image(stitched, asset=f"{public_directory.rstrip('/')}/{destination.name}", source_sha256=sha256_file(pdf_path))
             lossless_temporary = unique_temp_path(
                 destination.parent,
                 f".{destination.name}.lossless.",

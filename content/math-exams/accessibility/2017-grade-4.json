@@ -31,8 +31,16 @@
     "nysed-2017-g4-mc-q4": {
       "inputHash": "6f1b3dc443ce28cba2814db60474e21e8216e1cf6a0cb77552ab5b768433f780",
       "description": {
-        "en": "Question 4. A figure shows one ray slanting upward to the right and crossing two parallel line segments that slant downward to the right. Which statement best describes the figure? Choices: A: The ray appears to be perpendicular to 2 line segments that appear to be parallel; B: The ray appears to be parallel to 2 line segments that appear to be perpendicular; C: The line segment appears to be perpendicular to 2 lines that appear to be parallel; D: The line segment appears to be parallel to 2 lines that appear to be perpendicular.",
-        "es": "Pregunta 4. Una figura muestra una semirrecta inclinada hacia arriba y a la derecha que cruza dos segmentos lineales paralelos inclinados hacia abajo y a la derecha. ¿Qué afirmación describe mejor la figura? Opciones: A: La semirrecta parece ser perpendicular a 2 segmentos lineales paralelos; B: La semirrecta parece ser paralela a 2 segmentos lineales perpendiculares; C: El segmento lineal parece ser perpendicular a 2 líneas paralelas; D: El segmento lineal parece ser paralelo a 2 líneas perpendiculares."
+        "en": "Question 4. One stroke starts with a dot at the lower left and ends with an arrow at the upper right. It crosses two strokes that have dots at both ends and slope downward to the right at the same tilt. Which statement best describes the figure? Choices: A: The ray appears to be perpendicular to 2 line segments that appear to be parallel; B: The ray appears to be parallel to 2 line segments that appear to be perpendicular; C: The line segment appears to be perpendicular to 2 lines that appear to be parallel; D: The line segment appears to be parallel to 2 lines that appear to be perpendicular.",
+        "es": "Pregunta 4. Un trazo empieza con un punto abajo a la izquierda y termina con una flecha arriba a la derecha. Cruza dos trazos que tienen puntos en ambos extremos y se inclinan hacia abajo y a la derecha con la misma inclinación. ¿Qué afirmación describe mejor la figura? Opciones: A: La semirrecta parece ser perpendicular a 2 segmentos lineales paralelos; B: La semirrecta parece ser paralela a 2 segmentos lineales perpendiculares; C: El segmento lineal parece ser perpendicular a 2 líneas paralelas; D: El segmento lineal parece ser paralelo a 2 líneas perpendiculares."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 4. One stroke starts with a dot at the lower left and ends with an arrow at the upper right. It crosses two strokes that have dots at both ends and slope downward to the right at the same tilt. Which statement best describes the figure? Choices: A: The ray appears to be perpendicular to 2 line segments that appear to be parallel; B: The ray appears to be parallel to 2 line segments that appear to be perpendicular; C: The line segment appears to be perpendicular to 2 lines that appear to be parallel; D: The line segment appears to be parallel to 2 lines that appear to be perpendicular."
+        ],
+        "es": [
+          "Pregunta 4. Un trazo empieza con un punto abajo a la izquierda y termina con una flecha arriba a la derecha. Cruza dos trazos que tienen puntos en ambos extremos y se inclinan hacia abajo y a la derecha con la misma inclinación. ¿Qué afirmación describe mejor la figura? Opciones: A: La semirrecta parece ser perpendicular a 2 segmentos lineales paralelos; B: La semirrecta parece ser paralela a 2 segmentos lineales perpendiculares; C: El segmento lineal parece ser perpendicular a 2 líneas paralelas; D: El segmento lineal parece ser paralelo a 2 líneas perpendiculares."
+        ]
       }
     },
     "nysed-2017-g4-mc-q5": {

@@ -29,56 +29,59 @@ const root = process.cwd()
 const YEARS = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]
 const GRADES = [3, 4, 5, 6, 7, 8] as const
 const SPANISH_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
+const VINE_AUTHORED_LEGACY_RATIONALE_IDS = new Set([
+  "nysed-2013-g3-mc-q2",
+  "nysed-2013-g4-mc-q11",
+  "nysed-2013-g4-mc-q4",
+  "nysed-2013-g7-mc-q1",
+  "nysed-2013-g7-mc-q10",
+  "nysed-2013-g7-mc-q11",
+  "nysed-2013-g7-mc-q12",
+  "nysed-2013-g7-mc-q6",
+  "nysed-2013-g7-mc-q8",
+  "nysed-2013-g7-mc-q9",
+  "nysed-2013-g8-mc-q3",
+  "nysed-2013-g8-mc-q61",
+  "nysed-2014-g3-mc-q14",
+  "nysed-2014-g4-mc-q42",
+  "nysed-2014-g4-mc-q44",
+  "nysed-2014-g5-mc-q10",
+  "nysed-2014-g6-mc-q12",
+  "nysed-2014-g6-mc-q20",
+  "nysed-2014-g6-mc-q48",
+  "nysed-2014-g6-mc-q49",
+  "nysed-2014-g6-mc-q5",
+  "nysed-2014-g7-mc-q14",
+  "nysed-2014-g7-mc-q16",
+  "nysed-2014-g8-mc-q13",
+  "nysed-2014-g8-mc-q16"
+])
+
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
-  'nysed-2013-g3-mc-q2',
-  'nysed-2013-g4-mc-q11',
-  'nysed-2013-g4-mc-q4',
-  'nysed-2013-g4-mc-q8',
-  'nysed-2013-g6-mc-q14',
-  'nysed-2013-g6-mc-q47',
-  'nysed-2013-g6-mc-q48',
-  'nysed-2013-g6-mc-q61',
-  'nysed-2013-g7-mc-q1',
-  'nysed-2013-g7-mc-q10',
-  'nysed-2013-g7-mc-q11',
-  'nysed-2013-g7-mc-q12',
-  'nysed-2013-g7-mc-q6',
-  'nysed-2013-g7-mc-q8',
-  'nysed-2013-g7-mc-q9',
-  'nysed-2013-g8-mc-q2',
-  'nysed-2013-g8-mc-q3',
-  'nysed-2013-g8-mc-q5',
-  'nysed-2013-g8-mc-q61',
-  'nysed-2014-g3-mc-q14',
-  'nysed-2014-g3-mc-q29',
-  'nysed-2014-g3-mc-q6',
-  'nysed-2014-g4-mc-q15',
-  'nysed-2014-g4-mc-q29',
-  'nysed-2014-g4-mc-q36',
-  'nysed-2014-g4-mc-q42',
-  'nysed-2014-g4-mc-q44',
-  'nysed-2014-g5-mc-q10',
-  'nysed-2014-g5-mc-q14',
-  'nysed-2014-g5-mc-q19',
-  'nysed-2014-g5-mc-q44',
-  'nysed-2014-g6-mc-q11',
-  'nysed-2014-g6-mc-q12',
-  'nysed-2014-g6-mc-q18',
-  'nysed-2014-g6-mc-q20',
-  'nysed-2014-g6-mc-q28',
-  'nysed-2014-g6-mc-q36',
-  'nysed-2014-g6-mc-q39',
-  'nysed-2014-g6-mc-q48',
-  'nysed-2014-g6-mc-q49',
-  'nysed-2014-g6-mc-q5',
-  'nysed-2014-g6-mc-q54',
-  'nysed-2014-g7-mc-q1',
-  'nysed-2014-g7-mc-q14',
-  'nysed-2014-g7-mc-q16',
-  'nysed-2014-g7-mc-q3',
-  'nysed-2014-g8-mc-q13',
-  'nysed-2014-g8-mc-q16',
-  'nysed-2014-g8-mc-q27',
+  "nysed-2013-g4-mc-q8",
+  "nysed-2013-g6-mc-q14",
+  "nysed-2013-g6-mc-q47",
+  "nysed-2013-g6-mc-q48",
+  "nysed-2013-g6-mc-q61",
+  "nysed-2013-g8-mc-q2",
+  "nysed-2013-g8-mc-q5",
+  "nysed-2014-g3-mc-q29",
+  "nysed-2014-g3-mc-q6",
+  "nysed-2014-g4-mc-q15",
+  "nysed-2014-g4-mc-q29",
+  "nysed-2014-g4-mc-q36",
+  "nysed-2014-g5-mc-q14",
+  "nysed-2014-g5-mc-q19",
+  "nysed-2014-g5-mc-q44",
+  "nysed-2014-g6-mc-q11",
+  "nysed-2014-g6-mc-q18",
+  "nysed-2014-g6-mc-q28",
+  "nysed-2014-g6-mc-q36",
+  "nysed-2014-g6-mc-q39",
+  "nysed-2014-g6-mc-q54",
+  "nysed-2014-g7-mc-q1",
+  "nysed-2014-g7-mc-q3",
+  "nysed-2014-g8-mc-q27"
 ])
 const EXPECTED_COUNTS: Record<number, readonly number[]> = {
   2013: [10, 11, 11, 12, 12, 12],
@@ -350,7 +353,7 @@ test('reviewed Math explanations retain the corrected mathematical relationships
   assert.equal(grade5Conversion.grading.explanationSource, 'official-nysed-corrected')
 
   const trapezoid = getMathExamQuestion('nysed-2013-g6-mc-q14')!
-  assert.match(trapezoid.grading.explanation.en, /9 - 4\.5 = 4\.5/)
+  assert.match(trapezoid.grading.explanation.en, /9 − 4\.5 = 4\.5/)
   assert.doesNotMatch(trapezoid.grading.explanation.en, /9\.5\s*[−-]\s*4\.5/)
   assert.equal(trapezoid.grading.explanationSource, 'official-nysed-corrected')
 
@@ -429,7 +432,7 @@ test('active questions are one-point multiple choice and belong to one section',
     assert.equal(question.type, 'multiple-choice')
     assert.equal(question.points, 1)
     assert.equal(question.grading.mode, 'choice')
-    const expectedSource = exam.year >= 2015
+    const expectedSource = exam.year >= 2015 || VINE_AUTHORED_LEGACY_RATIONALE_IDS.has(question.id)
       ? 'vine-authored'
       : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
         ? 'official-nysed-corrected'
@@ -484,8 +487,8 @@ test('active questions are one-point multiple choice and belong to one section',
 
   assert.deepEqual(explanationSourceCounts, {
     'official-nysed': 179,
-    'official-nysed-corrected': 49,
-    'vine-authored': 1_611,
+    'official-nysed-corrected': 24,
+    'vine-authored': 1636,
   })
 
   const prerequisiteAlignments = MATH_EXAM_QUESTIONS.flatMap(question => {
@@ -555,7 +558,7 @@ test('physical-tool items have scale-matched measurement guides', () => {
       assert.ok(['left', 'right'].includes(guide.zeroSide))
     }
   }
-  assert.deepEqual(MATH_MEASUREMENT_GUIDES['nysed-2019-g4-mc-q38'], { kind: 'ruler', lengths: [1.5, 2.25, 2.25, 2.75] })
+  assert.deepEqual(MATH_MEASUREMENT_GUIDES['nysed-2019-g4-mc-q38'], { kind: 'ruler', lengths: [2.25, 2.75, 1.5, 2.25] })
   assert.deepEqual(MATH_MEASUREMENT_GUIDES['nysed-2022-g4-mc-q22'], { kind: 'protractor', degrees: 161, zeroSide: 'left' })
 })
 

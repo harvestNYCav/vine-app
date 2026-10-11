@@ -17,10 +17,10 @@
     {
       "examId": "nysed-ela-2013-grade-3-mc-v1",
       "stimulusId": "nysed-ela-2013-g3-stimulus-1-6",
-      "inputHash": "503ae31e9f04cc5df82822178d537c1b3823c0279bdeb6c0d173aee7b8e6cbb1",
+      "inputHash": "06b260611d8b58943b6658b36f4661c021bb6102946cfeb581cc7707cf477061",
       "source": "official-pdf-text",
       "sourcePdfSha256": "e4e50659dbad011e1baafece07d3393e15b1225775069bd29b92d9e492a65e41",
-      "passageImageSha256": "888247af0c4f52a2581715bde11e2998baea994a29d35d62e41c0562a9474fef",
+      "passageImageSha256": "816de5f38dd4162c80ff45c9ccda7d03a7bba823bf7191c2d8d61220b73f76ea",
       "textSha256": "e63f6e40c6f154cace0418993b262698d40abac2fb7d255e742a119043b9bff1",
       "paragraphMarkers": [
         1,
@@ -37,10 +37,10 @@
     {
       "examId": "nysed-ela-2013-grade-4-mc-v1",
       "stimulusId": "nysed-ela-2013-g4-stimulus-1-5",
-      "inputHash": "3f1ab7360496891c91777fff85a56008429f26020facbd1492e5ecbfc20ed044",
+      "inputHash": "d0b5f81d332b05dfb22d23c39406e8b5d0a6a78616c61a6b0da5883c0998ec5c",
       "source": "official-pdf-text",
       "sourcePdfSha256": "5155bd2172eb921376855d51a3a8f3d7bcb045ffa13d97ee55a7746cb9c85774",
-      "passageImageSha256": "a44f7fa95a398289ee09ac5891eb232c9e433ac634f5b2fc41ec8325fb30d97e",
+      "passageImageSha256": "f250d29179f194da424c048d98d2f8b63c2c90e3e0a77d17b0d62ad95cc5907b",
       "textSha256": "3ac24bafe7c96ec325412b93c1d01ed62e55020e09f73f00c447cc0106cbde36",
       "paragraphMarkers": [
         1,
@@ -76,11 +76,11 @@
     {
       "examId": "nysed-ela-2013-grade-5-mc-v1",
       "stimulusId": "nysed-ela-2013-g5-stimulus-1-6",
-      "inputHash": "a514cd5693d87058706dffb56eaf450aa4b0e9cce5e505ea0aa86cd7d46bdce0",
+      "inputHash": "079a9d78a7575584de4bc317538fd3e1a8a8666ab69df6c0e87c7908b070e15f",
       "source": "official-pdf-text",
       "sourcePdfSha256": "656e83cc8e0d59fb17ef905519f4206a6d589e38e03d603c2ba2bb73cf48be05",
-      "passageImageSha256": "c4566afc7354238cad455f7df697f66e46d81653484dccbd49a4bee522da6f6b",
-      "textSha256": "7e1582403f608234ba5c10fcab43f56a35aabf840e1c78aafa70d56756579aec",
+      "passageImageSha256": "9bd7f9d8ddda22611db506fe64196aa6f954d556a04b5b8b48daaac6518c8225",
+      "textSha256": "15bda21959eebb36b0d5245805c5f60044ef5f2eccec9b6e1af91950f78dae9d",
       "paragraphMarkers": [
         1,
         2,
@@ -97,11 +97,11 @@
     {
       "examId": "nysed-ela-2013-grade-6-mc-v1",
       "stimulusId": "nysed-ela-2013-g6-stimulus-1-5",
-      "inputHash": "f4c62b7cf1f03bc1f3cde28cbc47b7f82597fef6570e409b188da7931da91b59",
+      "inputHash": "36508ec672fa113bc4cbc93ac7a1ccca7839c6666a85edf8b6d860786afe74ae",
       "source": "official-pdf-text",
       "sourcePdfSha256": "154db498faaadf8d5165bbc4e6e184abc6c98e07447902fd6cd0693c66554858",
-      "passageImageSha256": "d1a50f756fbe8d8b08142b3abd3d83f32d0c5345dd116168f68b17321068d1a6",
-      "textSha256": "d59071b77e34858131ccfda9cd7ad7f60921f8cc4f3ca0af728771cb4c94dfcc",
+      "passageImageSha256": "2fcdacdf6374323e98f70057f9fc5dcab7f6076bd94dc872b867a59bd29ee6b2",
+      "textSha256": "b5ce075e746a03c021f3d2d63c224ff02ff0c72deb8eda5813b72eeec82a6460",
       "paragraphMarkers": [
         5,
         10,
@@ -120,10 +120,10 @@
     {
       "examId": "nysed-ela-2013-grade-7-mc-v1",
       "stimulusId": "nysed-ela-2013-g7-stimulus-1-7",
-      "inputHash": "0aecf9c7766454700c25b2b4df8eec00543dac348224d458d6baa80d3b944142",
+      "inputHash": "327c27766bc5ac73bd11048585fd7b3e6d059c0b810400361efbc2d663cdc7e5",
       "source": "official-pdf-text",
       "sourcePdfSha256": "7d9140bd761519e9b6ced09ffc3d2ddebc2391fe3cdafe5b9fa8ab57b29eae7b",
-      "passageImageSha256": "c79b27539e7fa7782f6208e45c02bc30f767a492f4ae7b76f239c12d239fd6b4",
+      "passageImageSha256": "fbf484199c8468ae06d7ac511ae83a5f16c0c6af12e9f07de6ed37c9f957b138",
       "textSha256": "b20050cfa94671ddf04a9090f68d47aec553b9c24a28edf7a71595fa63f8d77b",
       "paragraphMarkers": [
         5,
@@ -145,10 +145,10 @@
     {
       "examId": "nysed-ela-2013-grade-8-mc-v1",
       "stimulusId": "nysed-ela-2013-g8-stimulus-1-7",
-      "inputHash": "4e6999cc5db78a058e8841802c2ab019974fd5efef385985515858c917c409de",
+      "inputHash": "9948b077a17b610b29d96d3a97548f6ed5b4f87df6251291335dc9216f91dbc6",
       "source": "official-pdf-text",
       "sourcePdfSha256": "b1684db0e405ae878368207509d68a3b17413385519ba702a8f6dd67a4dad7c8",
-      "passageImageSha256": "8568b51aa5023f53df5bbccb9fb0faedac4675241293717228d2dc1605528f64",
+      "passageImageSha256": "586944357ca9e9afed9fbd4a3be95576706628794263ebcb0b6b13ecc512c5c8",
       "textSha256": "831696c7d68e8dd5fb1c2932cc21ebef9bbc1870d4f38ccecb268f48444bf0cd",
       "paragraphMarkers": [
         5,
@@ -170,10 +170,10 @@
     {
       "examId": "nysed-ela-2014-grade-3-mc-v1",
       "stimulusId": "nysed-ela-2014-g3-stimulus-1-4",
-      "inputHash": "b2358f7847a75b51a1d45b666e20a7ed5e90a73218dd2ce6000e6346e3996935",
+      "inputHash": "d187895165a41d9b9ee517b1f1e948a06314c86776c8754fcd0175aecd5c2e5a",
       "source": "official-pdf-text",
       "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
-      "passageImageSha256": "37a04b6e096d480f8ed5602f6960116a4fc73810f7012a5f45d4a11d9a68b8b7",
+      "passageImageSha256": "5fefb0d764600ea4ba1be1945dcacb59c747fd18613c90074c1bb540313dd8ff",
       "textSha256": "36db3472b39f2106b38b57af34077592de7b300b02fd0ab9dd612ae06719972a",
       "paragraphMarkers": [
         1,
@@ -197,10 +197,10 @@
     {
       "examId": "nysed-ela-2014-grade-3-mc-v1",
       "stimulusId": "nysed-ela-2014-g3-stimulus-10-16",
-      "inputHash": "fafff8867652ac916f8cbea92e9e6318fef6ac214ddfddb1638ab564b54b54b8",
+      "inputHash": "4da47816316d1e3f389d4a2c48790bddb88f25a76dcda90d4d3041973cbb30e9",
       "source": "official-pdf-text",
       "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
-      "passageImageSha256": "e55d348699ef81492741865870ecfb29c9d27f19c9b437f6e4484449aa66d42a",
+      "passageImageSha256": "3f1ffcb6a6aa8978297c19413471e49dd7d35755f46367232e01909acc45e990",
       "textSha256": "757033188f6de1795a932270ccb4bb8240616086fbc4b1c4d24f6f9bcbf758fd",
       "paragraphMarkers": [
         1,
@@ -229,10 +229,10 @@
     {
       "examId": "nysed-ela-2014-grade-3-mc-v1",
       "stimulusId": "nysed-ela-2014-g3-stimulus-5-9",
-      "inputHash": "331fdcf803a47d0e8e18705fb90af750993d1d7f3262c0472710c762f9c54214",
+      "inputHash": "419d6032114c4d5bcbe48134d09d969918849dc04d639b3657217806af7cd456",
       "source": "official-pdf-text",
       "sourcePdfSha256": "bd0acf94a70b8219e8b88c576e477b255adcf1b0ceec65fd526a8c1070907a50",
-      "passageImageSha256": "0650eb3b4a98b9cf573df403d71c1d35a9864cae8e94b1c1d9c5e267827b307f",
+      "passageImageSha256": "b6bc8c360ab8efc1aefd5bf3e6a20982941dd5e677fd208a6b4c887618a0968e",
       "textSha256": "fb1d264eb73ddb700e697b1d7dfe2c0b60ed0bfacd630eadc8dcd8760eaa9d07",
       "paragraphMarkers": [
         1,
@@ -279,10 +279,10 @@
     {
       "examId": "nysed-ela-2014-grade-4-mc-v1",
       "stimulusId": "nysed-ela-2014-g4-stimulus-1-5",
-      "inputHash": "e9c25746053af97b3ce39e61ebec4712d20a322d01bb5ae19c5ff69b499f1c15",
+      "inputHash": "0006035f5ec672ef7c21789f2d02f8372c9546128538aa9ae9ba46aa899ae088",
       "source": "official-pdf-text",
       "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
-      "passageImageSha256": "a4664fd8f5985917c3ae4edc74d9b3f88a7858f0d26aea1f295d6ca75231ec7e",
+      "passageImageSha256": "2662129ef7f3c73b6d7551dd0374b7f5cf87284b2fce61a0473026248d9bc2b0",
       "textSha256": "a741e73a1e5fb0e45e9a502eba814c461e0f1737dcd42c54b65f805eb03397ae",
       "paragraphMarkers": [
         1,
@@ -304,10 +304,10 @@
     {
       "examId": "nysed-ela-2014-grade-4-mc-v1",
       "stimulusId": "nysed-ela-2014-g4-stimulus-12-17",
-      "inputHash": "7c27f641295e54a0747f2fdb605c8d35ea2cc1436a7b49f9ddc0df29cb69fa49",
+      "inputHash": "302f65dbbc9f2f6d444f44b45a661718c8f0112dcdc22acfb7e4ad701f7adb48",
       "source": "official-pdf-text",
       "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
-      "passageImageSha256": "5db87e0436d752570d9f9d01090d8a5092e8a83c44f2e20de89292d3622c8f99",
+      "passageImageSha256": "df149a15aeb17a9156a70f3604ee954ffdb5ee3e6796f452ef115f374bfd61c1",
       "textSha256": "1030dfe0c05513e8a3c55bde5f2c5269c5b36da79a4e530f5a8e8d606af7edac",
       "paragraphMarkers": [
         1,
@@ -335,10 +335,10 @@
     {
       "examId": "nysed-ela-2014-grade-4-mc-v1",
       "stimulusId": "nysed-ela-2014-g4-stimulus-6-11",
-      "inputHash": "8405b79a79705f763e57ff81e3d715de83063c1accbcb6b39af2a71f17f91877",
+      "inputHash": "d6b0beae4860746769d51f49c35c471b7a2978d15d4228f803e41573ab4b8984",
       "source": "official-pdf-text",
       "sourcePdfSha256": "1beb939702e3782b42608ddcd097884e04fc50e43265a2e1009d1bd8b9ea460e",
-      "passageImageSha256": "1125e0e1360cfbd79460c88f0a15978eb94bb7e94777867333e0b3a5d6cd18c6",
+      "passageImageSha256": "0b95dea350e9c71de8cf14a6e4f2b01f4a5e06e412c698c72f0a5cc4e1bfa619",
       "textSha256": "bcd364e0292d222f67b109628d70f8233545b3273ff35d3c29b48e02cf906a49",
       "paragraphMarkers": [
         1,
@@ -361,10 +361,10 @@
     {
       "examId": "nysed-ela-2014-grade-5-mc-v1",
       "stimulusId": "nysed-ela-2014-g5-stimulus-1-7",
-      "inputHash": "67af7fef8ed784a6d1a8ad2a7ab84fa59a9c20de01a9a62cd37ffdbaa07124dc",
+      "inputHash": "09285d62d2fd12554f8b0dfb0a248fae76db7db6d8bb2c2064bd2173b4688061",
       "source": "official-pdf-text",
       "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
-      "passageImageSha256": "1dfc6456ffdb9505a9392f836e17c4ab0b6bf652e57b6d4789ed83f7357cd272",
+      "passageImageSha256": "9b918c7e1f02847b3933cc8d5e1f35e7de5aef9d44378e645037d1da4c15863a",
       "textSha256": "78fd15c0ca97e096f40d8b2c32d95c70fa4f3c0a4103e93f7f28736010751ab2",
       "paragraphMarkers": [
         1,
@@ -399,10 +399,10 @@
     {
       "examId": "nysed-ela-2014-grade-5-mc-v1",
       "stimulusId": "nysed-ela-2014-g5-stimulus-15-21",
-      "inputHash": "f742c75655ed2099a2eb64c27b49cd4a56b17ff3b5f7f33ea96cfa1e9c42fc61",
+      "inputHash": "f7a87468b1d369a82e32afd6b2532ea60b931b5a2f259f77013e6572f1c284c8",
       "source": "official-pdf-text",
       "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
-      "passageImageSha256": "fe1bf14adec4bc4ac0992bf044bfd4d466229e4b55b30b86a01b1cbf8079594b",
+      "passageImageSha256": "a25a9f9e9f257ebeed1717bec083b5edc536a4542ec85aeb9d1e5333545e4c80",
       "textSha256": "862b61285c3ec960305c89981a5b551edf416648f1eaec470d5a12688ed5d7ff",
       "paragraphMarkers": [
         1,
@@ -431,10 +431,10 @@
     {
       "examId": "nysed-ela-2014-grade-5-mc-v1",
       "stimulusId": "nysed-ela-2014-g5-stimulus-8-14",
-      "inputHash": "c4e795ff2665f72c7860d61a2326fcc3e1f1b15778389295efad949f0e2cac9b",
+      "inputHash": "b5ac5a596feea9054f8fbafebea8496fadd7ee2cb278ca57091d718f6f153030",
       "source": "official-pdf-text",
       "sourcePdfSha256": "f6c2670c17137fd860473b663f23b408a18784ff6384876e926291bcdaa2b79d",
-      "passageImageSha256": "eda3b38f6ef044e2b22b812b914b31f5aed322112a3eca1b1a2881d381f91d69",
+      "passageImageSha256": "bfc1a6258e4401bb1ae2647cc9bd5ac4de666f265f67ea13348debc31d01eabe",
       "textSha256": "db07830b8453c6606b1e8c003d789298109f3fe0d8567a3d22190b0eb22b46ec",
       "paragraphMarkers": [
         1,
@@ -458,10 +458,10 @@
     {
       "examId": "nysed-ela-2014-grade-6-mc-v1",
       "stimulusId": "nysed-ela-2014-g6-stimulus-1-6",
-      "inputHash": "f5088a78f1e72602a37a5c9593d7dcaa21ed97e625ce33b40ddd5c855f3eff11",
+      "inputHash": "996aa1f4f9c51d83a3a5af0ec28cfedb57f3745c25bef23e2bd7f4f0cdec402c",
       "source": "official-pdf-text",
       "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
-      "passageImageSha256": "7d2a41c0be4403e36f7c8df61c6274bd6909fca75344e9a26801b2036066b7ab",
+      "passageImageSha256": "55fab4522795a3c1f740e2e42bb1c552040df1867adf402e5bebe75d0333b0a6",
       "textSha256": "5a5f4825ce11930799685d4f9335436727223c274b4bf798d228142df31fdd8b",
       "paragraphMarkers": [
         5,
@@ -476,10 +476,10 @@
     {
       "examId": "nysed-ela-2014-grade-6-mc-v1",
       "stimulusId": "nysed-ela-2014-g6-stimulus-14-19",
-      "inputHash": "88175a9612f34e46cd260155d7506a050aa008374ffab1a17f907fe3de9544bd",
+      "inputHash": "0ed22a1213f59deccbdb46b3fc504b778d6246ed4b31ea123cdfdfae7b77b824",
       "source": "official-pdf-text",
       "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
-      "passageImageSha256": "948bb02614c0e118e895e61858cd5972a3312eaf29b07783e20ef7815bf1b39d",
+      "passageImageSha256": "574254bd61958bef2fe46da647774ef6613870e8ae63f49b0c627ad20501065e",
       "textSha256": "ce5703f79b1bcf68025a4cc7ff652420dc03c43021b6ddb0c4d8c20fa8deee10",
       "paragraphMarkers": [
         5,
@@ -497,10 +497,10 @@
     {
       "examId": "nysed-ela-2014-grade-6-mc-v1",
       "stimulusId": "nysed-ela-2014-g6-stimulus-7-13",
-      "inputHash": "a29304f150df4c5250ea994e2db20f840bb4942589c213806fffe81beba5566a",
+      "inputHash": "8e691e6f6cea8a53ed49456c55620da0a829c2a03227628a0c96cef64c8c4da5",
       "source": "official-pdf-text",
       "sourcePdfSha256": "70de4f0a73eb971477e12072f082c13cc5608dcf8cba9fab5a3f4e95667d576b",
-      "passageImageSha256": "b6c62a889d9a1dfdda6c4385d5d756f0e834c80b506b8fbb731a531263ed0059",
+      "passageImageSha256": "0786cccd0db0958885386db8ad85f0d8e30e7a87e7acaa75f83ed1c54ee81a5e",
       "textSha256": "3fc585121fb85db2448b680fa51940af54e0463b582cf46d9910a66b45ea4d11",
       "paragraphMarkers": [
         5,
@@ -521,11 +521,11 @@
     {
       "examId": "nysed-ela-2014-grade-7-mc-v1",
       "stimulusId": "nysed-ela-2014-g7-stimulus-1-7",
-      "inputHash": "9d45b4a17d8db7fbc544cb20fe95ec84e4aa5470963511d366afbdde91f23c27",
+      "inputHash": "36e3592db6e18e5b3d0eaad9fb1021e552e1862cdd2e328409c0b01a2468c3c2",
       "source": "official-pdf-text",
       "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
-      "passageImageSha256": "6bdd107c4be94eac78274ba2a4e97862fbb9d7242acff4b4fcff102dd5712b8c",
-      "textSha256": "e6e442121332070c94b314288f0dd9e86b156b9c5a46a141437561159483ea65",
+      "passageImageSha256": "2636015ce4dbf909df24192dc5e3380d3169853e3b3aa2ef04e2556b4fe604bc",
+      "textSha256": "183e2cecdb10fa3f7c19447661185db50b775847116d97c2308c6d6f2c3326fe",
       "paragraphMarkers": [
         5,
         10,
@@ -546,10 +546,10 @@
     {
       "examId": "nysed-ela-2014-grade-7-mc-v1",
       "stimulusId": "nysed-ela-2014-g7-stimulus-13-19",
-      "inputHash": "61ba4d80cda693dc88a1514cec5ae22e971c583f6f5f4d895ad64c1d59bb40ea",
+      "inputHash": "cc3f9f7b70fec19fc2f089b13f6c4c276e25e7313b3eaba1da1fca7b4bb6d46b",
       "source": "official-pdf-text",
       "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
-      "passageImageSha256": "f9bd8a633fd1709150fe448b837839cf3173341476103939262aaca3e6b28047",
+      "passageImageSha256": "1e3d930b773725ed3a35ef121af53d57ea3019c63bf4ab8c8da551c106e8d722",
       "textSha256": "d12b2c0bafc95c020e1dcd75956559793e9584b1973abfb9d5d7e5bd8ede80b0",
       "paragraphMarkers": [
         5,
@@ -566,10 +566,10 @@
     {
       "examId": "nysed-ela-2014-grade-7-mc-v1",
       "stimulusId": "nysed-ela-2014-g7-stimulus-8-12",
-      "inputHash": "52a9733cc0fc30d987d1996c883960665ab01b294d7f39785387e6c8c10bbe0c",
+      "inputHash": "6cf8d150c8da43cb70a420741a7cfdea2e5c33bb09ba58425773c18ee0007116",
       "source": "official-pdf-text",
       "sourcePdfSha256": "74e772422837e49f90107ce4443725b570e69f29c4d2504e38fcf9fd847f93e3",
-      "passageImageSha256": "8cdbf437e72c5438bbf7be3315a71e264c88d107919a08e4694181c128ba5f6c",
+      "passageImageSha256": "dca523ed286b6a903a20c7ca3c8304d06d46156444d5341e52727ee45d00bdce",
       "textSha256": "f247b83920d265b13200590eacdc664e073e876693de6cfa67a81cd13df3ace7",
       "paragraphMarkers": [
         5,
@@ -586,11 +586,11 @@
     {
       "examId": "nysed-ela-2014-grade-8-mc-v1",
       "stimulusId": "nysed-ela-2014-g8-stimulus-1-7",
-      "inputHash": "25b18752acff414fa4d89689ef811a9be10c647b1c2951b48e1c457d026227a1",
+      "inputHash": "9b6818f732757cf1ac21e6dcf1ad89ce7fa8e00463d3bcff6bebde5ad10f4cfd",
       "source": "official-pdf-text",
       "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
-      "passageImageSha256": "58b4c904b34203b4d34bc40be416e93528e5e16a895438f358248764eb506dd6",
-      "textSha256": "dbc9c6863f455d9ca56a23c94ad411ad4aabd16c1f7af28767735d4346f80638",
+      "passageImageSha256": "42329749fcbf5700e7d3f3eb603827352726fde56b8aa5fc7e6b16aeb5584b92",
+      "textSha256": "5b31b0069a5046698f536f49894cd98c260d74038717d423f152c6043709fefd",
       "paragraphMarkers": [
         5,
         10,
@@ -613,10 +613,10 @@
     {
       "examId": "nysed-ela-2014-grade-8-mc-v1",
       "stimulusId": "nysed-ela-2014-g8-stimulus-15-21",
-      "inputHash": "680e29f34a97592cdeda932a228ac1a2eadc6c176aad6d59f14f417922e9ac37",
+      "inputHash": "89044ad84afcd5f97de030e403953fb22b9aa91327e185149fa3bff5f38451ae",
       "source": "official-pdf-text",
       "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
-      "passageImageSha256": "1c2266218468dea4ac8f5d56ffba23f0db76a30a3c821f04d0c74f710400e974",
+      "passageImageSha256": "2730d770176efbe97acd626a9ebfebba6d1fad926a1f65a1dcc39e5a7d85d601",
       "textSha256": "cc3d76c11b102ddaf4183fedf96a9308ff7949b85a46a0064fac5a9be39afe68",
       "paragraphMarkers": [
         5,
@@ -644,10 +644,10 @@
     {
       "examId": "nysed-ela-2014-grade-8-mc-v1",
       "stimulusId": "nysed-ela-2014-g8-stimulus-8-14",
-      "inputHash": "56135db72223b13c7d1a29508d9c581d4108cddde34e9665cd6404d13b388fb9",
+      "inputHash": "89cffaa9856d59739a372f2b816aabfea9775958c08a2dcc641b2f65611915c5",
       "source": "official-pdf-text",
       "sourcePdfSha256": "9060dd4216190bb3c9e105cd346d1a4599a64f0422646615d7b2c91fd326ddbb",
-      "passageImageSha256": "a078f8400ddea5c8ae31a4d48c51e25cbc8d8c59776311383e25dc52fea8f294",
+      "passageImageSha256": "2b8ecb9e2d3ddec18c0b8c98d00813e61203f4558772059a48bb012cd425a08d",
       "textSha256": "2ffedf6e9e6d390c26a2ab9227cffaf4199b80ad145c39cf7d1cb32f2a30ce15",
       "paragraphMarkers": [
         5,
@@ -674,7 +674,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "68d5695c54474f86a820183a7127b6b409e34ce9e18cd4726fb7887ea68611de",
       "passageImageSha256": "2f30d4676b477a3f440c3ecef0c6e37000babf93bb7e705fc21d39c41b9cf0bf",
-      "textSha256": "acb52b1460febdb1cd2fd3275ce552467c61068f7d56ca82f0ee4a8bb9d75297",
+      "textSha256": "c044667d0931b96586057e543b1b7ce72b4c907c3a22c114c2128e23ac514eae",
       "paragraphMarkers": [
         1,
         2,
@@ -708,7 +708,7 @@
         30,
         31
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2015-grade-3-mc-v1",
@@ -2099,7 +2099,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
       "passageImageSha256": "6098838793e0fe552b85e926c8b6fee0cca45e0f0ae5b45519f5fa401c32daec",
-      "textSha256": "38a39b63f93b69eee1612424ea231421d4e1e24bfee23bdcd7f6ccec802b7b37",
+      "textSha256": "43b4cfa553c41c99cfdebc80284d0066d9bced0ccff58810629ddec9e2516e2e",
       "paragraphMarkers": [
         5,
         10,
@@ -2146,7 +2146,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "7df6afde06f64915f3c5e7c78578f8d76d7989a6de345c73b0c66516ac1a1a66",
       "passageImageSha256": "73106e436a65cb9b6d1ceb5365f13f6637ab0d04e6d6cf62674d9f84acb8a952",
-      "textSha256": "aae48516ba8be46d736d8617e8c7c821702d4a0f8d9fd9183458b04f4b49c49a",
+      "textSha256": "cebd202d62aa8edd7e1a7a17c745786ce31d2a48549b3c7c3ba60f77abf0cea4",
       "paragraphMarkers": [
         5,
         10,
@@ -2192,7 +2192,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
       "passageImageSha256": "b7306cd7c1a54d143ebcf417a20c18169bf0eef92a651d93877efc1cf1ff023b",
-      "textSha256": "b8b43df1c3fca703d9f8061428ce2076caf396ca67e5dc89e5fd7960f7b46d54",
+      "textSha256": "6b2743937627d85b742c5ca9b1b2d667adedbe649ee7ccfa56ce3b2af884785d",
       "paragraphMarkers": [
         5,
         10,
@@ -2266,7 +2266,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "1a82289c343fb50e431e280072a55a3c1c2227d009ed31490a622b6b91d89599",
       "passageImageSha256": "f987de0296309c804966dbc2543a3dffa9682ccc14dc28c7ae6a334a0849e3ba",
-      "textSha256": "22c8bdc34b912d17966f6e5570082722099b93a6ff551bc2347d2449185d1b5b",
+      "textSha256": "9d01d6d53d7648302af8063a50070efd58cd51b0a03b5c2f9a47c5febb6dbb93",
       "paragraphMarkers": [
         10,
         15,
@@ -2288,7 +2288,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
       "passageImageSha256": "431d53f9db0db8408cd1d7f4e1db3e3ecbaff6586e5ab814b7870acf76e1faa1",
-      "textSha256": "bb76d60be11ad44a5e9b0d2f5e27203a17f2e97894893dd3686dc17882f9b170",
+      "textSha256": "5a38b0be8ec704dc04429d45bad7c46fd168f5519b05df9f2e9fdf07ea0a2fb4",
       "paragraphMarkers": [
         5,
         10,
@@ -2313,7 +2313,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a74c3e732456613f97876dc6e5a35870fe49ea1f3518369690117218e09415f7",
       "passageImageSha256": "26f8f8e359fab25e7e75de45b665dbcf2ce46a3ce3235049b63568a6b429b7b1",
-      "textSha256": "f1fba07321b6644cac5cb630389880ccc330d4af3282e1053fddbcb28d6d6805",
+      "textSha256": "de53b86d95e2ae1b210c5ee3eb264d74e77578deb2f0cc291504f45334a6b53f",
       "paragraphMarkers": [
         10,
         15,
@@ -2464,7 +2464,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "216465767efecfbd77ff8fcf81c201c752ab69fbd5f5505bd120f38f18ecbce4",
       "passageImageSha256": "2481e5dcf4c9644dd6c3f2e713018257853bba5b4384d0a5f93f3848a3a2c916",
-      "textSha256": "68ee5eadf150637acbd7b2d92adb9db38607c699047bb3f5dad906744bd07392",
+      "textSha256": "a40180e94aeb91731a9d81116b61016364c891836e494dca4d125d74f7c7e865",
       "paragraphMarkers": [
         1,
         2,
@@ -2477,7 +2477,7 @@
         9,
         10
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2018-grade-4-mc-v1",
@@ -2510,7 +2510,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "e1787392509748c02633c2318e17d1967f8e3277bc8ee0dc607197e4189d94a5",
       "passageImageSha256": "f83e6da142364638bc50d163cad8b9ef87fd96a7bc911dae38aa06ed2d98fb7d",
-      "textSha256": "c3c596d58d5daad7c730c0b9155aca679c715a23df6f8636e72299dd80c77a55",
+      "textSha256": "581b517da983ede220e0ca9ef7d494adc5db8e15780863f36c234a2fc29b32b3",
       "paragraphMarkers": [
         1,
         2,
@@ -2540,7 +2540,7 @@
         26,
         27
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2018-grade-5-mc-v1",
@@ -2980,7 +2980,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "f3ba908fe5f371a53c6f8e4c60e1e042d48d4edf4f90756a5a247ae3a810d504",
       "passageImageSha256": "c3f0884a2a9c5b55765edfc21a502f95a71024dd5232fec299d483ed281f3b6b",
-      "textSha256": "ce1186b15fe695e76000ed7c4dd35ac4cae8d608d76e9de95db1ea9fe29f124c",
+      "textSha256": "6a0fc29a93c9989fe117bcf7c781dc2e0ea9a01a23ee5d10d6747df7ad1febd7",
       "paragraphMarkers": [
         1,
         2,
@@ -3006,7 +3006,7 @@
         22,
         23
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 5
     },
     {
       "examId": "nysed-ela-2019-grade-5-mc-v1",
@@ -3462,7 +3462,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "1e590bb1a0c7665e80d530c7a80eaba46976620676aebf22e8f2d22a43243b03",
       "passageImageSha256": "1c8cfb046ba8c9c5b709c7ece17f260d47b991356df1b45b3504a4a3f214b68c",
-      "textSha256": "051e8ffb54660273f9789c3989a4d7e8b102a3d770db61a4d1eebb26c14fde23",
+      "textSha256": "977d8fd5f917d16d7a81e6ffd2be5611a03f4cd756afbeaa01486c0eca601510",
       "paragraphMarkers": [
         1,
         2,
@@ -3475,7 +3475,7 @@
         9,
         10
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2021-grade-4-mc-v1",
@@ -3508,7 +3508,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "e5eb7049f22509cef18f51cb060a0cda93d4c00088e35b2e3cd2660034c77d86",
       "passageImageSha256": "41fee013ed2a821d2735fd0c8d6764ae37a169f0eb35f49b0ca44e30a6f710d1",
-      "textSha256": "d3dec1ca00334a00166da9fe32bcfe9793297a96424fe218571d96d1da641b46",
+      "textSha256": "44eefb3c1e5cde745982e49107893b408b6c5bc36649f820f2ae0e979650858c",
       "paragraphMarkers": [
         1,
         2,
@@ -3529,7 +3529,7 @@
         17,
         18
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2021-grade-5-mc-v1",
@@ -3538,7 +3538,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "e5eb7049f22509cef18f51cb060a0cda93d4c00088e35b2e3cd2660034c77d86",
       "passageImageSha256": "fe50d3c4c03147e9f2e9c7a1a32e2df14153fd24cf57b112892e7c3d6a25c5ea",
-      "textSha256": "de37122d9fe5b1f6f8b98e7a1a4e07c29ba42b5a8f548a97ac34c1ec6aa454e4",
+      "textSha256": "6a0fc29a93c9989fe117bcf7c781dc2e0ea9a01a23ee5d10d6747df7ad1febd7",
       "paragraphMarkers": [
         1,
         2,
@@ -3564,7 +3564,7 @@
         22,
         23
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 5
     },
     {
       "examId": "nysed-ela-2021-grade-5-mc-v1",
@@ -3606,7 +3606,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "e5eb7049f22509cef18f51cb060a0cda93d4c00088e35b2e3cd2660034c77d86",
       "passageImageSha256": "3cd720bf6275b2c8941246f4b0dceb7d5eedd8ecb84330b5a5599c04e7d58259",
-      "textSha256": "e95f6804de43d19dddc0141030a25ccbd5431c771d54ab5e0798d491d97d495e",
+      "textSha256": "1d23b9003b407a308f78966d941eb9368d4a50a7b9684242e6ab5f2a4dc7be68",
       "paragraphMarkers": [
         1,
         2,
@@ -4008,7 +4008,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "eefb0f795262fa4b68e66e3b34957cf73eb88ed4927d8a6072350a512fbd7007",
       "passageImageSha256": "f7d4423f8a700812827286f4513f86eba2e2c10f61f4ca0ec1bccaa07ae8f0ef",
-      "textSha256": "d6cf0e3e616555bf3128ddd513c4cf4dfd72f1bde1dcc8b442b9099005bf8058",
+      "textSha256": "331f5ccde76dc6c6ce4883cb3afe7db1020f377ae7e35b21cb0d3159f4ee8213",
       "paragraphMarkers": [
         1,
         2,
@@ -4047,7 +4047,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "9040c839cdaa09ef0946561edae9f21e30aea6897fe46ae31a4711f61f34654a",
       "passageImageSha256": "25bc070ad1d537fe0b311b3dd120cc516b8e024ccf312b208d704acb59f54453",
-      "textSha256": "fdb115c1f560e6e5ae1e4e1e8483dbc9ea6978c29b30519aed7a140ba779f550",
+      "textSha256": "43dd77d9846760b55ad2891c1586c0b79ba7f41bd5776e55dffd760ff0117438",
       "paragraphMarkers": [
         1,
         2,
@@ -4071,7 +4071,7 @@
         20,
         21
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2022-grade-5-mc-v1",
@@ -4080,7 +4080,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "9040c839cdaa09ef0946561edae9f21e30aea6897fe46ae31a4711f61f34654a",
       "passageImageSha256": "f8800dd401ca7fa6bb6b258c6aaf607777c18e74e4450909ef087b88247ad13b",
-      "textSha256": "5a67d3d424d37d9e3b1bf167c45d7b396482a1a2b4c640148f07f524596227f9",
+      "textSha256": "c1f20c1211ef3ff3d3e01ee7f079cbbc58bcebfc1f595f792df4323e1ab87cb9",
       "paragraphMarkers": [
         1,
         2,
@@ -4090,7 +4090,7 @@
         6,
         25
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2022-grade-5-mc-v1",
@@ -4099,7 +4099,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "9040c839cdaa09ef0946561edae9f21e30aea6897fe46ae31a4711f61f34654a",
       "passageImageSha256": "2775f91ba0a176770eb50d5827ada757d3ac1c3791c0bd5b76fd946e49676015",
-      "textSha256": "ba560e52b398672d47ed2f1407d7056ee346792d57cd9c6f17bb59bbacb692b4",
+      "textSha256": "a27d70a52ea60832d1b40cf727a1a344a4a7b5a13e09eb9643f1cf22af73bc04",
       "paragraphMarkers": [
         1,
         2,
@@ -4125,7 +4125,7 @@
         22,
         23
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2022-grade-6-mc-v1",
@@ -4393,7 +4393,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "d95524077a534813d2772f0e4218604f68f037d2f6b49fd89a84b8190fc4b50a",
       "passageImageSha256": "55a8990c7da8db580363c4b18e1e346cff9d576e152fb5f15877169f79a3b158",
-      "textSha256": "b80197d71e0ae5bff68580b1e9568ba91ae944f7915ea5bc306aaefd6975dee0",
+      "textSha256": "f986ff9847a16034df6faf4c56c90debbc8952726e5515d565b38672ac60113a",
       "paragraphMarkers": [
         1,
         2,
@@ -4441,7 +4441,7 @@
         44,
         45
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 4
     },
     {
       "examId": "nysed-ela-2023-grade-3-mc-v1",
@@ -4450,7 +4450,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "d95524077a534813d2772f0e4218604f68f037d2f6b49fd89a84b8190fc4b50a",
       "passageImageSha256": "0b5c02d381c20064c2b4e38c63c29dd14177004a0791788b4a630866df369f8b",
-      "textSha256": "4a58d5b83ab93a397391fb19e44fae2aa0521fe233af5da6b8683e9ec94fa8ac",
+      "textSha256": "519b36ea91e792ec1576876ca43a09ba56fce13e8087c1e7c5dfcf99b5b15cab",
       "paragraphMarkers": [
         1,
         2,
@@ -4496,7 +4496,7 @@
         42,
         43
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2023-grade-4-mc-v1",
@@ -4586,7 +4586,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ee05ce5ade536c4937131cbf89b240cf7c50fa7a061a8b52f2d2d67b46fdb80d",
       "passageImageSha256": "c80d16d4bd71b52ee834593dc3b4c3557b3074ba202e2103bd5b1777e8dc6c4e",
-      "textSha256": "c2f8c2dac54e06a6e9b68bc2e7c177e43b89ae96c97a12dabf7474b1e2c589a1",
+      "textSha256": "4d93499992b6338345862fce48fcbec336e35044926b65a81f262bae6af4134d",
       "paragraphMarkers": [
         1,
         2,
@@ -4615,7 +4615,7 @@
         25,
         26
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2023-grade-5-mc-v1",
@@ -4649,7 +4649,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "ee05ce5ade536c4937131cbf89b240cf7c50fa7a061a8b52f2d2d67b46fdb80d",
       "passageImageSha256": "800cb5012931507aba75aee7214348be26f735063cd13e72b694b4d36643d762",
-      "textSha256": "c1d685d3fd3dc96aa298846d54ebaf8b30bf873bb5cbae262a9fb6f16daab3f3",
+      "textSha256": "8c3a0b5aab887ccd57b9660707e21b50d8e5e4e90b5c3644fdb459d92b650da7",
       "paragraphMarkers": [
         1,
         2,
@@ -4667,7 +4667,7 @@
         14,
         15
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2023-grade-6-mc-v1",
@@ -4676,7 +4676,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "b39dd1e1e8f7a50fc2a5b7eb4e9c377bbee9c42a27d1981d2ba93af5cfb67145",
       "passageImageSha256": "0dfe3b377f424b83542fe61cc53ffc0c55e6add65b9abd9e2e7a6ce83fa36031",
-      "textSha256": "057ff86bebe948cda7036f66e0b0956c3233a447011f18c9e071fb263bf0ce75",
+      "textSha256": "a1643cba9181c7af296380ce738748e56485aee15e8a9af324807ccd81789af7",
       "paragraphMarkers": [
         1,
         2,
@@ -4730,7 +4730,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "b39dd1e1e8f7a50fc2a5b7eb4e9c377bbee9c42a27d1981d2ba93af5cfb67145",
       "passageImageSha256": "8c11a423f28b3161b9b6a42041f3283028e95ecb3d6ae204fe4cd868d3d4cf1d",
-      "textSha256": "3d5aa549e3d00f52086d7d037ca93668d4b3819a2d34bc0627d1c89c9008b7dc",
+      "textSha256": "7f2daeb7b703272ecc174143c44880649bc81bba1d8ac954551e0439959b85bd",
       "paragraphMarkers": [
         1,
         2,
@@ -4780,10 +4780,10 @@
     {
       "examId": "nysed-ela-2023-grade-7-mc-v1",
       "stimulusId": "nysed-ela-2023-g7-stimulus-22-26",
-      "inputHash": "6dad4147cba77898e9b530c1e4fdefcc90a3e09795cfc6137451b6ee8881f2a7",
+      "inputHash": "166e69f9ac902dfca2892ffe778b75b099ad544512dc92a2b23f9a561dc20644",
       "source": "official-pdf-text",
       "sourcePdfSha256": "a83ce3fe3fb2f2d3342a12c522ecbba05c1272d305c5d6a8590d5370fe06d3cb",
-      "passageImageSha256": "ef4ff71dfd80daade6c31da69446d7d4efda55e614b1ed966bc05e36423584e2",
+      "passageImageSha256": "2535ad8246937f402951df3272bc97f1c49a95f63af989f4b74293bf0a6ba01d",
       "textSha256": "4f76a215701cfbfcc1ccb9bc45cb28eb80dd85bb5fdf8aa91a8fa205624f6a9b",
       "paragraphMarkers": [
         5,
@@ -4964,7 +4964,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a5ebcc36a9784e3a446759cc5761d1cc64108ba4e6d89c0ced2a4144074bd55f",
       "passageImageSha256": "4e4561904a661cf4d4f4415d9e7a7c46db952634153ef9de4af4a0e51e71e9e5",
-      "textSha256": "11c28cc561fe7c94b6db2eb7ade3a694c1500faa2592208ef743eaf45c3919b8",
+      "textSha256": "844f2a0d8303199057af5e53c154785f9d63819c687ad995ba4ee147c827169e",
       "paragraphMarkers": [
         1,
         2,
@@ -4998,7 +4998,7 @@
         30,
         31
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 5
     },
     {
       "examId": "nysed-ela-2024-grade-3-mc-v1",
@@ -5007,7 +5007,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "a5ebcc36a9784e3a446759cc5761d1cc64108ba4e6d89c0ced2a4144074bd55f",
       "passageImageSha256": "f8787c104806e34501a649a593e63424e5cf6eaca74a3cec821931973ff093d8",
-      "textSha256": "2248be35fe3049c2af9cadaafa4093847c8468c97a5eeb94bfee5c949feda4d2",
+      "textSha256": "5b273fa4413befe34a3314fd66b8b3762bc8a8ca72ae6fb8f77e856e9d13cfb7",
       "paragraphMarkers": [
         1,
         2,
@@ -5037,7 +5037,7 @@
         26,
         27
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2024-grade-3-mc-v1",
@@ -5046,7 +5046,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "a5ebcc36a9784e3a446759cc5761d1cc64108ba4e6d89c0ced2a4144074bd55f",
       "passageImageSha256": "6a6ecfb8c12da797a0996e2b4deee7b6fc9497a55149f07021478e3cd8a06aa2",
-      "textSha256": "932a927575aa1f3b1ee638437b0cd6f476b71168ff9fb549871ce16391f61500",
+      "textSha256": "3dc52d76cfbd010d51466c6bd9bf69971835d124ede5ce4299d4146bf2a0775e",
       "paragraphMarkers": [
         1,
         2,
@@ -5073,7 +5073,7 @@
         23,
         24
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2024-grade-4-mc-v1",
@@ -5164,7 +5164,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "69e11b3841c5c70bac9ff5c3ec9017bd06e37e3651742c253378f198148bc034",
       "passageImageSha256": "e66fc9aabaded124cb392cdd0a8ffad1bc07eb71a4c668091ea4f15a8e7b0914",
-      "textSha256": "bc03d1fa62f71ceefa709841bc2953fd22dccb66bf477ec513ce05c894db4c99",
+      "textSha256": "76578b8273ce20d9d01aff86ae247ac3ef79154d5f2fb1ecb2ee8300187b1b17",
       "paragraphMarkers": [
         1,
         2,
@@ -5186,7 +5186,7 @@
         18,
         19
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 5
     },
     {
       "examId": "nysed-ela-2024-grade-5-mc-v1",
@@ -5211,7 +5211,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "69e11b3841c5c70bac9ff5c3ec9017bd06e37e3651742c253378f198148bc034",
       "passageImageSha256": "b3e1fca05bbeb891a5b9745d5cdbc339afb79249b2f230451f69845983298fd5",
-      "textSha256": "e9fa97904b13b336652b0b6d6a55f4526e0afa3aa07d0e47a96739a3302cf056",
+      "textSha256": "eb9d28179791ab4c14d82af4520a35dbcf287926e268ecc0bc3f97d8548256e2",
       "paragraphMarkers": [
         1,
         2,
@@ -5229,7 +5229,7 @@
         14,
         15
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 4
     },
     {
       "examId": "nysed-ela-2024-grade-6-mc-v1",
@@ -5567,7 +5567,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "f423c705395638759cdcea8e0fdd4a65f5c1b1b3df3e9073d7b9e64ac1661bd3",
       "passageImageSha256": "55c793d92130cb7a00dac0b9628f2b6f34b230da5dc04b811b992e5426841c44",
-      "textSha256": "f9042530fef8582a1830e145f9cc5ffa6d194cec920e54581470f1d4ebf28bc2",
+      "textSha256": "7876966d5cb0239cebd29c312e7e4d3253dc4340509556b5296a0b62f909320f",
       "paragraphMarkers": [
         1,
         2,
@@ -5919,7 +5919,7 @@
       "source": "official-pdf-text",
       "sourcePdfSha256": "0fb81a810cbe907494231871bf189a4f2230a6b76da87baa486ba504a24ac31d",
       "passageImageSha256": "adcad9ceb9ab1b960f194a91ee6464bd7a5e1cfae0a027e207e9e86f8298d48f",
-      "textSha256": "bf7924d5f9956154ae6d1aa9c11ccaba1c91f39ce277865dbb22e79d65ff25c9",
+      "textSha256": "0ef9bd4b1e7fd4b4213fdab216615f5b62bd085a119a44c7eb986b2e658d9843",
       "paragraphMarkers": [
         1,
         2,
@@ -6076,7 +6076,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "eb18b321db0dbf11639b772b8538553c7821bd1dd14ae9d8a2fd947445e1dbba",
       "passageImageSha256": "bb7a574626a9a599bae025da206e588ea92366a22aa813e51ca10377c1f50d63",
-      "textSha256": "87337fcce17f7d5ea0ea03c97986156cedb5e7db3f1863c3553b2ad6f5714b2f",
+      "textSha256": "e4a5abd3f56b1ed3190a1cfa65ef0891de23e1f5c8d9386ce6f1c6f980c1a5be",
       "paragraphMarkers": [
         1,
         2,
@@ -6103,7 +6103,7 @@
         23,
         24
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2026-grade-3-mc-v1",
@@ -6136,7 +6136,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "eb18b321db0dbf11639b772b8538553c7821bd1dd14ae9d8a2fd947445e1dbba",
       "passageImageSha256": "1fecbebfd35264a8135d31b8a95409af7602a0c736174926cf96e8009b877eb9",
-      "textSha256": "93c82c7f20de6d194f8626e7ac50eb68682973a6d9861c9dea88c89ff4d59522",
+      "textSha256": "43bcfadb2a91f3c2fe82b0dde6a398eae1740c740b2360803c6c32eb47d6972d",
       "paragraphMarkers": [
         1,
         2,
@@ -6172,7 +6172,7 @@
         32,
         33
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 4
     },
     {
       "examId": "nysed-ela-2026-grade-3-mc-v1",
@@ -6181,7 +6181,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "eb18b321db0dbf11639b772b8538553c7821bd1dd14ae9d8a2fd947445e1dbba",
       "passageImageSha256": "fe1f237c97597850becdf1978c501018355cfbf719abbafb9e0635e5013b8314",
-      "textSha256": "ac2bef558034b67f3112a27895b23e6d6cde34137521bfae11005a3cba57a2e7",
+      "textSha256": "dc7e17c43af28710587d6954d0eabcbf977b7d67a4d6f227ad574912c3bfc807",
       "paragraphMarkers": [
         1,
         2,
@@ -6211,7 +6211,7 @@
         26,
         27
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2026-grade-4-mc-v1",
@@ -6282,7 +6282,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
       "passageImageSha256": "5b051500d467b37958547a19b53ddc4d156f3bb347072072d63ad9d946d86328",
-      "textSha256": "68a0d545f34fb1f41091a3088baaacb460078a94635cf0cf9ab6bdc53fd6734e",
+      "textSha256": "3c127345c65461adeca3b49202783763de642afac2533d35f782fabab7315a05",
       "paragraphMarkers": [
         1,
         2,
@@ -6310,7 +6310,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "7060ac2bfa25234d258ee3121778516209c2d763f3510a6ed5bf379b59ba8fc5",
       "passageImageSha256": "509f4650faaa3db12f447939cf135debdb20027c2b9d75f6084dd214612b3e6f",
-      "textSha256": "8464bc080234e950afc20fc72bd6f8545038e3a33926ccd97f487eb202945237",
+      "textSha256": "75f67afc2e8c9603dd9a29cd2abca70e4885901f7e4995f10436cc2004601572",
       "paragraphMarkers": [
         1,
         2,
@@ -6335,7 +6335,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
       "passageImageSha256": "7c8fb74f0691c976126b8716e0cbeabd00a04df0014d876e6cfc3d7cc3ba098c",
-      "textSha256": "0277795b1960aa8b059c135f650bd1a30efd74c225d84a1b47625e4302d78dea",
+      "textSha256": "59baa4399c22591ca83d38901b80bf0d5d80522b008eeb791fc2f531263f9eb0",
       "paragraphMarkers": [
         1,
         2,
@@ -6355,7 +6355,7 @@
         16,
         17
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 4
     },
     {
       "examId": "nysed-ela-2026-grade-5-mc-v1",
@@ -6364,7 +6364,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
       "passageImageSha256": "e18c4496a651c956d72171c30291a0b799781a70dc7950bf9ad786e8b24098c9",
-      "textSha256": "b9767243a13f81426960739104d96da38d7e71bec48d1f44ea5f4ea3180266bc",
+      "textSha256": "a725391b00a511d15ddecfab10bd01d205740262df84f4caa90d0bcbf71eeaa7",
       "paragraphMarkers": [
         1,
         2,
@@ -6381,7 +6381,7 @@
         13,
         14
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 2
     },
     {
       "examId": "nysed-ela-2026-grade-5-mc-v1",
@@ -6390,7 +6390,7 @@
       "source": "mixed-official-pdf-text-and-ocr",
       "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
       "passageImageSha256": "0fbe24201ebc0b1d0de82f7bdc9cfb6bdf9963249592f2e0fefe6d36fc21ff3d",
-      "textSha256": "4819dde32bbdf82c373ba1739419923476124955469b6d379637036ae3e0d096",
+      "textSha256": "e10a7bce5affc03f0c7ecb5337457667d1229adefe85dd2b7ad2b310539d0786",
       "paragraphMarkers": [
         1,
         2,
@@ -6411,7 +6411,7 @@
         17,
         18
       ],
-      "visualDescriptionCount": 1
+      "visualDescriptionCount": 3
     },
     {
       "examId": "nysed-ela-2026-grade-5-mc-v1",
@@ -6420,7 +6420,7 @@
       "source": "passage-image-ocr",
       "sourcePdfSha256": "4980228af07e50362314700f92eb125f30857b08a7373576265f14be290d4425",
       "passageImageSha256": "ec17c6e8007ce7ae93b230b149bb728f35007d8eab51abd651f71c92688c3386",
-      "textSha256": "8e041efdf2f68c0fa473706c5d17b3ef72c111d11a2e8c084e9acb488f05438a",
+      "textSha256": "9520d6d200253781e6fb2fd8b631de7570fbfd215379c7e8b8a1eede1b8ae016",
       "paragraphMarkers": [
         1,
         2,
@@ -6439,7 +6439,7 @@
         15,
         16
       ],
-      "visualDescriptionCount": 0
+      "visualDescriptionCount": 1
     },
     {
       "examId": "nysed-ela-2026-grade-6-mc-v1",

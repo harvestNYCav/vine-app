@@ -67,56 +67,59 @@ const DOMAIN_CODES = new Set<MathDomainCode>([
 ])
 const RELEASE_YEARS = new Set([2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const DEFAULT_CHOICE_LABELS: MathExamChoice[] = ['A', 'B', 'C', 'D']
+const VINE_AUTHORED_LEGACY_RATIONALE_IDS = new Set([
+  "nysed-2013-g3-mc-q2",
+  "nysed-2013-g4-mc-q11",
+  "nysed-2013-g4-mc-q4",
+  "nysed-2013-g7-mc-q1",
+  "nysed-2013-g7-mc-q10",
+  "nysed-2013-g7-mc-q11",
+  "nysed-2013-g7-mc-q12",
+  "nysed-2013-g7-mc-q6",
+  "nysed-2013-g7-mc-q8",
+  "nysed-2013-g7-mc-q9",
+  "nysed-2013-g8-mc-q3",
+  "nysed-2013-g8-mc-q61",
+  "nysed-2014-g3-mc-q14",
+  "nysed-2014-g4-mc-q42",
+  "nysed-2014-g4-mc-q44",
+  "nysed-2014-g5-mc-q10",
+  "nysed-2014-g6-mc-q12",
+  "nysed-2014-g6-mc-q20",
+  "nysed-2014-g6-mc-q48",
+  "nysed-2014-g6-mc-q49",
+  "nysed-2014-g6-mc-q5",
+  "nysed-2014-g7-mc-q14",
+  "nysed-2014-g7-mc-q16",
+  "nysed-2014-g8-mc-q13",
+  "nysed-2014-g8-mc-q16"
+])
+
 const CORRECTED_OFFICIAL_RATIONALE_IDS = new Set([
-  'nysed-2013-g3-mc-q2',
-  'nysed-2013-g4-mc-q11',
-  'nysed-2013-g4-mc-q4',
-  'nysed-2013-g4-mc-q8',
-  'nysed-2013-g6-mc-q14',
-  'nysed-2013-g6-mc-q47',
-  'nysed-2013-g6-mc-q48',
-  'nysed-2013-g6-mc-q61',
-  'nysed-2013-g7-mc-q1',
-  'nysed-2013-g7-mc-q10',
-  'nysed-2013-g7-mc-q11',
-  'nysed-2013-g7-mc-q12',
-  'nysed-2013-g7-mc-q6',
-  'nysed-2013-g7-mc-q8',
-  'nysed-2013-g7-mc-q9',
-  'nysed-2013-g8-mc-q2',
-  'nysed-2013-g8-mc-q3',
-  'nysed-2013-g8-mc-q5',
-  'nysed-2013-g8-mc-q61',
-  'nysed-2014-g3-mc-q14',
-  'nysed-2014-g3-mc-q29',
-  'nysed-2014-g3-mc-q6',
-  'nysed-2014-g4-mc-q15',
-  'nysed-2014-g4-mc-q29',
-  'nysed-2014-g4-mc-q36',
-  'nysed-2014-g4-mc-q42',
-  'nysed-2014-g4-mc-q44',
-  'nysed-2014-g5-mc-q10',
-  'nysed-2014-g5-mc-q14',
-  'nysed-2014-g5-mc-q19',
-  'nysed-2014-g5-mc-q44',
-  'nysed-2014-g6-mc-q11',
-  'nysed-2014-g6-mc-q12',
-  'nysed-2014-g6-mc-q18',
-  'nysed-2014-g6-mc-q20',
-  'nysed-2014-g6-mc-q28',
-  'nysed-2014-g6-mc-q36',
-  'nysed-2014-g6-mc-q39',
-  'nysed-2014-g6-mc-q48',
-  'nysed-2014-g6-mc-q49',
-  'nysed-2014-g6-mc-q5',
-  'nysed-2014-g6-mc-q54',
-  'nysed-2014-g7-mc-q1',
-  'nysed-2014-g7-mc-q14',
-  'nysed-2014-g7-mc-q16',
-  'nysed-2014-g7-mc-q3',
-  'nysed-2014-g8-mc-q13',
-  'nysed-2014-g8-mc-q16',
-  'nysed-2014-g8-mc-q27',
+  "nysed-2013-g4-mc-q8",
+  "nysed-2013-g6-mc-q14",
+  "nysed-2013-g6-mc-q47",
+  "nysed-2013-g6-mc-q48",
+  "nysed-2013-g6-mc-q61",
+  "nysed-2013-g8-mc-q2",
+  "nysed-2013-g8-mc-q5",
+  "nysed-2014-g3-mc-q29",
+  "nysed-2014-g3-mc-q6",
+  "nysed-2014-g4-mc-q15",
+  "nysed-2014-g4-mc-q29",
+  "nysed-2014-g4-mc-q36",
+  "nysed-2014-g5-mc-q14",
+  "nysed-2014-g5-mc-q19",
+  "nysed-2014-g5-mc-q44",
+  "nysed-2014-g6-mc-q11",
+  "nysed-2014-g6-mc-q18",
+  "nysed-2014-g6-mc-q28",
+  "nysed-2014-g6-mc-q36",
+  "nysed-2014-g6-mc-q39",
+  "nysed-2014-g6-mc-q54",
+  "nysed-2014-g7-mc-q1",
+  "nysed-2014-g7-mc-q3",
+  "nysed-2014-g8-mc-q27"
 ])
 const SPANISH_RELEASE_YEARS = new Set([2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026])
 const STANDARD_PATTERN = /^(CCSS|NGLS)\.Math\.Content\.(?:NY-)?([3-8])\.(OA|NBT|NF|MD|G|RP|NS|EE|F|SP)\.(?:[A-Z]\.)?\d+[a-z]?$/
@@ -334,7 +337,7 @@ function validateRawExam(exam: RawExam) {
         || question.explanation?.source === 'vine-authored',
       `${question.id} has a bad explanation source`,
     )
-    const expectedExplanationSource: MathExplanationSource = exam.year >= 2015
+    const expectedExplanationSource: MathExplanationSource = exam.year >= 2015 || VINE_AUTHORED_LEGACY_RATIONALE_IDS.has(question.id)
       ? 'vine-authored'
       : CORRECTED_OFFICIAL_RATIONALE_IDS.has(question.id)
         ? 'official-nysed-corrected'
@@ -472,12 +475,12 @@ export function buildMathExamCatalog(rawCatalog: RawMathExamCatalog) {
     'catalog must contain exactly 179 unmodified official NYSED rationales',
   )
   invariant(
-    explanationSourceCounts['official-nysed-corrected'] === 49,
-    'catalog must contain exactly 49 official NYSED rationales corrected by Vine',
+    explanationSourceCounts['official-nysed-corrected'] === 24,
+    'catalog must contain exactly 24 official NYSED rationales corrected by Vine',
   )
   invariant(
-    explanationSourceCounts['vine-authored'] === 1_611,
-    'catalog must contain exactly 1,611 Vine-authored explanations',
+    explanationSourceCounts['vine-authored'] === 1636,
+    'catalog must contain exactly 1,636 Vine-authored explanations',
   )
 
   exams.sort((a, b) => b.year - a.year || a.grade - b.grade)

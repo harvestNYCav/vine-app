@@ -147,8 +147,8 @@
       "inputHash": "0b32c669013996405f2a2f05daee17a532df79a9a52a9342fb0d85ff6f14eea5",
       "explanation": {
         "text": {
-          "en": "First combine inside: −(3/2)x + 6x + 1 = (9/2)x + 1. Multiplying by −1/2 and then subtracting 3x gives −9/4x − 1/2 − 3x = −21/4x − 1/2 = −5 1/4x − 1/2.",
-          "es": "Primero combinamos dentro: −(3/2)x + 6x + 1 = (9/2)x + 1. Al multiplicar por −1/2 y luego restar 3x queda −9/4x − 1/2 − 3x = −21/4x − 1/2 = −5 1/4x − 1/2."
+          "en": "First combine inside: −(3/2)x + 6x + 1 = (9/2)x + 1. Multiplying by −1/2 and then subtracting 3x gives −(9/4)x − 1/2 − 3x = −(21/4)x − 1/2 = −(5 1/4)x − 1/2.",
+          "es": "Primero combinamos dentro: −(3/2)x + 6x + 1 = (9/2)x + 1. Al multiplicar por −1/2 y luego restar 3x queda −(9/4)x − 1/2 − 3x = −(21/4)x − 1/2 = −(5 1/4)x − 1/2."
         },
         "source": "vine-authored"
       }
@@ -228,7 +228,7 @@
       "explanation": {
         "text": {
           "en": "Friday’s median is 215, while Saturday’s is 205. Both interquartile ranges are 20: 220 − 200 = 20 and 210 − 190 = 20. Therefore only the statement in choice D is true.",
-          "es": "La mediana del viernes es 215 y la del sábado es 205. Ambos rangos intercuartílicos son 20: 220 − 200 = 20 y 210 − 190 = 20. Por tanto, solo la afirmación de la opción D es verdadera."
+          "es": "La mediana del viernes es 215 y la del sábado es 205. Ambos rangos intercuartiles son 20: 220 − 200 = 20 y 210 − 190 = 20. Por tanto, solo la afirmación de la opción D es verdadera."
         },
         "source": "vine-authored"
       }
@@ -348,7 +348,7 @@
       "explanation": {
         "text": {
           "en": "The width is 6 2/3 = 20/3, and the length is twice that, 40/3. The perimeter is 2(20/3 + 40/3) = 2(60/3) = 40 inches.",
-          "es": "El ancho es 6 2/3 = 20/3 y el largo es el doble, 40/3. El perímetro es 2(20/3 + 40/3) = 2(60/3) = 40 pulgadas."
+          "es": "El ancho es 6 2/3 = 20/3 y la longitud es el doble, 40/3. El perímetro es 2(20/3 + 40/3) = 2(60/3) = 40 pulgadas."
         },
         "source": "vine-authored"
       }

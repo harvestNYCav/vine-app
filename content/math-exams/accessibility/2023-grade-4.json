@@ -38,8 +38,16 @@
     "nysed-2023-g4-mc-q9": {
       "inputHash": "3def23603df686e5b05792ab33cac52a2b2e078dfaa2868ed6031880b75fad00",
       "description": {
-        "en": "Question 9. A measurement bracket beneath a pencil spans its length; use the scale-matched measurement guide below. What is the pencil’s length? Choices: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2 inches.",
-        "es": "Pregunta 9. Un corchete de medición debajo de un lápiz abarca su longitud; usa la guía de medición a escala de abajo. ¿Cuál es la longitud del lápiz? Opciones: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2 pulgadas."
+        "en": "Question 9. A measurement bracket beneath a pencil spans its length; use the scale-matched measurement guide below. What is the pencil’s length? Choices: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2.",
+        "es": "Pregunta 9. Un corchete de medición debajo de un lápiz abarca su longitud; usa la guía de medición a escala de abajo. ¿Cuál es la longitud del lápiz? Opciones: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 9. A measurement bracket beneath a pencil spans its length; use the scale-matched measurement guide below. What is the pencil’s length? Choices: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2."
+        ],
+        "es": [
+          "Pregunta 9. Un corchete de medición debajo de un lápiz abarca su longitud; usa la guía de medición a escala de abajo. ¿Cuál es la longitud del lápiz? Opciones: A: 4 1/4; B: 4 1/2; C: 5 1/4; D: 5 1/2."
+        ]
       }
     },
     "nysed-2023-g4-mc-q10": {
@@ -87,8 +95,16 @@
     "nysed-2023-g4-mc-q25": {
       "inputHash": "5323b965e5758a77e960cdaec6c105949b330da72638af1c677da13a96eadaae",
       "description": {
-        "en": "Question 25. Which angle measures 60 degrees? Choices: A: a very narrow acute angle of about 6 degrees; B: a right angle; C: an obtuse angle of about 120 degrees; D: an acute angle of about 60 degrees.",
-        "es": "Pregunta 25. ¿Qué ángulo mide 60 grados? Opciones: A: un ángulo agudo muy estrecho de unos 6 grados; B: un ángulo recto; C: un ángulo obtuso de unos 120 grados; D: un ángulo agudo de unos 60 grados."
+        "en": "Question 25. Which angle measures 60 degrees? Choices: A: from a vertex at the right, one ray points left and the other points slightly upward to the left; B: from a lower-right vertex, one ray points left and the other points straight up; C: from a lower-left vertex, one ray points right and the other slopes steeply upward to the left; D: from a lower-left vertex, one ray points right and the other slopes steeply upward to the right. Each angle has an arc at its vertex; no degree values are printed on the diagrams.",
+        "es": "Pregunta 25. ¿Qué ángulo mide 60 grados? Opciones: A: desde un vértice a la derecha, una semirrecta apunta a la izquierda y la otra ligeramente hacia arriba y a la izquierda; B: desde un vértice inferior derecho, una semirrecta apunta a la izquierda y la otra verticalmente hacia arriba; C: desde un vértice inferior izquierdo, una semirrecta apunta a la derecha y la otra se inclina pronunciadamente hacia arriba y a la izquierda; D: desde un vértice inferior izquierdo, una semirrecta apunta a la derecha y la otra se inclina pronunciadamente hacia arriba y a la derecha. Cada ángulo tiene un arco en su vértice; los diagramas no tienen medidas en grados rotuladas."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 25. Which angle measures 60 degrees? Choices: A: from a vertex at the right, one ray points left and the other points slightly upward to the left; B: from a lower-right vertex, one ray points left and the other points straight up; C: from a lower-left vertex, one ray points right and the other slopes steeply upward to the left; D: from a lower-left vertex, one ray points right and the other slopes steeply upward to the right. Each angle has an arc at its vertex; no degree values are printed on the diagrams."
+        ],
+        "es": [
+          "Pregunta 25. ¿Qué ángulo mide 60 grados? Opciones: A: desde un vértice a la derecha, una semirrecta apunta a la izquierda y la otra ligeramente hacia arriba y a la izquierda; B: desde un vértice inferior derecho, una semirrecta apunta a la izquierda y la otra verticalmente hacia arriba; C: desde un vértice inferior izquierdo, una semirrecta apunta a la derecha y la otra se inclina pronunciadamente hacia arriba y a la izquierda; D: desde un vértice inferior izquierdo, una semirrecta apunta a la derecha y la otra se inclina pronunciadamente hacia arriba y a la derecha. Cada ángulo tiene un arco en su vértice; los diagramas no tienen medidas en grados rotuladas."
+        ]
       }
     },
     "nysed-2023-g4-mc-q29": {
@@ -108,8 +124,16 @@
     "nysed-2023-g4-mc-q31": {
       "inputHash": "166336f13882c51596bab0ef7f5fda5f38bcf968baf4b06e2091e9a017845f99",
       "description": {
-        "en": "Question 31. In which triangle does the dotted line appear to be a line of symmetry? Choices: A: a sideways scalene triangle, line through its upper-right vertex; B: an equilateral-looking triangle, line from the midpoint of its left side through the opposite vertex; C: a right triangle, horizontal line through it; D: a scalene triangle, diagonal line through its lower-right vertex.",
-        "es": "Pregunta 31. ¿En qué triángulo la línea punteada parece ser un eje de simetría? Opciones: A: triángulo escaleno de lado, línea por el vértice superior derecho; B: triángulo de aspecto equilátero, línea desde el punto medio del lado izquierdo al vértice opuesto; C: triángulo rectángulo, línea horizontal; D: triángulo escaleno, línea diagonal por el vértice inferior derecho."
+        "en": "Question 31. In which triangle does the dotted line appear to be a line of symmetry? Choices: A: the triangle points left, with a vertical right side and two equal-looking sloping sides; the dotted line passes through the upper-right vertex and the lower sloping side. B: the triangle points up, with a horizontal bottom side and two equal-looking sloping sides; the dotted line passes through the lower-right vertex and the middle of the left sloping side. C: the triangle has a horizontal bottom side, a vertical right side, and a side sloping upward to the right; the dotted line crosses horizontally through the two nonhorizontal sides. D: the triangle has a horizontal bottom side, a long side rising shallowly to the right, and a shorter side rising steeply to the right; the dotted line passes through the lower-right vertex and the long sloping side.",
+        "es": "Pregunta 31. ¿En qué triángulo la línea punteada parece ser una línea de simetría? Opciones: A: el triángulo apunta a la izquierda, con un lado derecho vertical y dos lados inclinados que parecen iguales; la línea punteada pasa por el vértice superior derecho y el lado inclinado inferior. B: el triángulo apunta hacia arriba, con un lado inferior horizontal y dos lados inclinados que parecen iguales; la línea punteada pasa por el vértice inferior derecho y el centro del lado inclinado izquierdo. C: el triángulo tiene un lado inferior horizontal, un lado derecho vertical y un lado inclinado hacia arriba y a la derecha; la línea punteada cruza horizontalmente los dos lados no horizontales. D: el triángulo tiene un lado inferior horizontal, un lado largo que sube ligeramente hacia la derecha y un lado más corto que sube pronunciadamente hacia la derecha; la línea punteada pasa por el vértice inferior derecho y el lado inclinado largo."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 31. In which triangle does the dotted line appear to be a line of symmetry? Choices: A: the triangle points left, with a vertical right side and two equal-looking sloping sides; the dotted line passes through the upper-right vertex and the lower sloping side. B: the triangle points up, with a horizontal bottom side and two equal-looking sloping sides; the dotted line passes through the lower-right vertex and the middle of the left sloping side. C: the triangle has a horizontal bottom side, a vertical right side, and a side sloping upward to the right; the dotted line crosses horizontally through the two nonhorizontal sides. D: the triangle has a horizontal bottom side, a long side rising shallowly to the right, and a shorter side rising steeply to the right; the dotted line passes through the lower-right vertex and the long sloping side."
+        ],
+        "es": [
+          "Pregunta 31. ¿En qué triángulo la línea punteada parece ser una línea de simetría? Opciones: A: el triángulo apunta a la izquierda, con un lado derecho vertical y dos lados inclinados que parecen iguales; la línea punteada pasa por el vértice superior derecho y el lado inclinado inferior. B: el triángulo apunta hacia arriba, con un lado inferior horizontal y dos lados inclinados que parecen iguales; la línea punteada pasa por el vértice inferior derecho y el centro del lado inclinado izquierdo. C: el triángulo tiene un lado inferior horizontal, un lado derecho vertical y un lado inclinado hacia arriba y a la derecha; la línea punteada cruza horizontalmente los dos lados no horizontales. D: el triángulo tiene un lado inferior horizontal, un lado largo que sube ligeramente hacia la derecha y un lado más corto que sube pronunciadamente hacia la derecha; la línea punteada pasa por el vértice inferior derecho y el lado inclinado largo."
+        ]
       }
     },
     "nysed-2023-g4-mc-q32": {
