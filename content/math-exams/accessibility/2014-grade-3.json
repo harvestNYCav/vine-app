@@ -21,7 +21,12 @@
     "nysed-2014-g3-mc-q3": {
       "inputHash": "1baef139c8016be4c06001e872d33c5749e0ff63984969b05db45a7eaf8bc72a",
       "description": {
-        "en": "Question 3. Which figure is 1/2 shaded? Choices: A: a triangle divided by a horizontal line, with the smaller top triangle shaded; B: a circle divided by a horizontal chord near the top, with the small top segment shaded; C: an irregular five-sided figure divided into two unequal regions, with the smaller left region shaded; D: a rectangle divided by a diagonal from one corner to the opposite corner, with one of the two triangles shaded."
+        "en": "Question 3. Which figure is 1/2 shaded? Choices: A: a triangle divided by a horizontal line, with the smaller top triangle shaded; B: a circle divided by a horizontal chord near the top, with the small top segment shaded; C: a five-sided figure split by a line from its top corner to its bottom corner into a shaded triangle on the left and an unshaded four-sided region on the right; D: a rectangle divided by a diagonal from one corner to the opposite corner, with one of the two triangles shaded."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 3. Which figure is 1/2 shaded? Choices: A: a triangle divided by a horizontal line, with the smaller top triangle shaded; B: a circle divided by a horizontal chord near the top, with the small top segment shaded; C: a five-sided figure split by a line from its top corner to its bottom corner into a shaded triangle on the left and an unshaded four-sided region on the right; D: a rectangle divided by a diagonal from one corner to the opposite corner, with one of the two triangles shaded."
+        ]
       }
     },
     "nysed-2014-g3-mc-q4": {

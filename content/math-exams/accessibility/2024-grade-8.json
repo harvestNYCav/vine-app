@@ -264,8 +264,8 @@
     "nysed-2024-g8-mc-q10": {
       "inputHash": "ec67666726421dd005792458da53896d21d34abac01cc1e3e657b8b43301802f",
       "description": {
-        "en": "Question 10. A sphere has a radius of 4 inches. A cone has a radius of 3 inches and a height of 8 inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone? Choices: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8²)(3)] D: π[(4/3)(4²) − (1/3)(8²)(3)]",
-        "es": "Pregunta 10. Una esfera tiene un radio de 4 pulgadas. Un cono tiene un radio de 3 pulgadas y una altura de 8 pulgadas. ¿Qué expresión representa la diferencia de volumen, en pulgadas cúbicas, entre la esfera y el cono? Opciones: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8²)(3)] D: π[(4/3)(4²) − (1/3)(8²)(3)]"
+        "en": "Question 10. A sphere has a radius of 4 inches. A cone has a radius of 3 inches and a height of 8 inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone? Choices: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8)²(3)] D: π[(4/3)(4²) − (1/3)(8)²(3)]",
+        "es": "Pregunta 10. Una esfera tiene un radio de 4 pulgadas. Un cono tiene un radio de 3 pulgadas y una altura de 8 pulgadas. ¿Qué expresión representa la diferencia de volumen, en pulgadas cúbicas, entre la esfera y el cono? Opciones: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8)²(3)] D: π[(4/3)(4²) − (1/3)(8)²(3)]"
       },
       "requiredSourceTokens": {
         "en": [
@@ -274,20 +274,16 @@
           "8 inches",
           "π[(4/3)(4³) − (1/3)(3²)(8)]",
           "π[(4/3)(4²) − (1/3)(3²)(8)]",
-          "π[(4/3)(4³) − (1/3)(8²)(3)]",
-          "π[(4/3)(4²) − (1/3)(8²)(3)]",
           "A: π[(4/3)(4³) − (1/3)(3²)(8)]",
           "B: π[(4/3)(4²) − (1/3)(3²)(8)]",
-          "C: π[(4/3)(4³) − (1/3)(8²)(3)]",
-          "D: π[(4/3)(4²) − (1/3)(8²)(3)]",
           "(4/3)",
           "(4³)",
           "(1/3)",
           "(3²)",
           "(8)",
           "(4²)",
-          "(8²)",
-          "(3)"
+          "(3)",
+          "Question 10. A sphere has a radius of 4 inches. A cone has a radius of 3 inches and a height of 8 inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone? Choices: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8)²(3)] D: π[(4/3)(4²) − (1/3)(8)²(3)]"
         ],
         "es": [
           "4 pulgadas",
@@ -295,20 +291,16 @@
           "8 pulgadas",
           "π[(4/3)(4³) − (1/3)(3²)(8)]",
           "π[(4/3)(4²) − (1/3)(3²)(8)]",
-          "π[(4/3)(4³) − (1/3)(8²)(3)]",
-          "π[(4/3)(4²) − (1/3)(8²)(3)]",
           "A: π[(4/3)(4³) − (1/3)(3²)(8)]",
           "B: π[(4/3)(4²) − (1/3)(3²)(8)]",
-          "C: π[(4/3)(4³) − (1/3)(8²)(3)]",
-          "D: π[(4/3)(4²) − (1/3)(8²)(3)]",
           "(4/3)",
           "(4³)",
           "(1/3)",
           "(3²)",
           "(8)",
           "(4²)",
-          "(8²)",
-          "(3)"
+          "(3)",
+          "Pregunta 10. Una esfera tiene un radio de 4 pulgadas. Un cono tiene un radio de 3 pulgadas y una altura de 8 pulgadas. ¿Qué expresión representa la diferencia de volumen, en pulgadas cúbicas, entre la esfera y el cono? Opciones: A: π[(4/3)(4³) − (1/3)(3²)(8)] B: π[(4/3)(4²) − (1/3)(3²)(8)] C: π[(4/3)(4³) − (1/3)(8)²(3)] D: π[(4/3)(4²) − (1/3)(8)²(3)]"
         ]
       }
     },
@@ -724,8 +716,8 @@
     "nysed-2024-g8-mc-q35": {
       "inputHash": "216b5f6cb12f27129cdb9613e912269884668ca440763a319c03418ec7fd3ea7",
       "description": {
-        "en": "Question 35. A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are provided. The large can is a right circular cylinder with height 10 cm and radius 3.5 cm; the radius is represented by a dashed segment from the center of its circular top to the rim. The small can is a right circular cylinder with height 6 cm and diameter 7 cm; the diameter is represented by a dashed segment across the circular top. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of π? Choices: A: 4π. B: 49π. C: 73.5π. D: 155.5π.",
-        "es": "Pregunta 35. Un fabricante produce latas cilíndricas de dos tamaños. Las dimensiones de cada lata se presentan en un diagrama. La lata grande es un cilindro de 10 cm de altura; en la base circular superior, un segmento punteado va desde el centro hasta el borde y mide 3.5 cm, por lo que esa medida es el radio. La lata pequeña es un cilindro de 6 cm de altura; un segmento punteado atraviesa toda la base circular superior de un borde al opuesto, pasa por el centro y mide 7 cm, por lo que esa medida es el diámetro. ¿Cuál es la diferencia entre el volumen, en centímetros cúbicos, de la lata grande y la lata pequeña en términos de π? Opciones: A: 4π. B: 49π. C: 73.5π. D: 155.5π."
+        "en": "Question 35. A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are provided. The large can has height 10 cm; a dashed segment labeled 3.5 cm goes from the center dot of its circular top to the rim. The small can has height 6 cm; a dashed segment labeled 7 cm goes across its circular top from edge to edge through the center. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of π? Choices: A: 4π. B: 49π. C: 73.5π. D: 155.5π.",
+        "es": "Pregunta 35. Un fabricante produce latas cilíndricas de dos tamaños. Las dimensiones de cada lata se presentan en un diagrama. La lata grande es un cilindro de 10 cm de altura; en la base circular superior, un segmento punteado va desde el centro hasta el borde y mide 3.5 cm. La lata pequeña es un cilindro de 6 cm de altura; un segmento punteado atraviesa toda la base circular superior de un borde al opuesto, pasa por el centro y mide 7 cm. ¿Cuál es la diferencia entre el volumen, en centímetros cúbicos, de la lata grande y la lata pequeña en términos de π? Opciones: A: 4π. B: 49π. C: 73.5π. D: 155.5π."
       },
       "requiredSourceTokens": {
         "en": [
@@ -740,7 +732,8 @@
           "A: 4π",
           "B: 49π",
           "C: 73.5π",
-          "D: 155.5π"
+          "D: 155.5π",
+          "Question 35. A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are provided. The large can has height 10 cm; a dashed segment labeled 3.5 cm goes from the center dot of its circular top to the rim. The small can has height 6 cm; a dashed segment labeled 7 cm goes across its circular top from edge to edge through the center. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of π? Choices: A: 4π. B: 49π. C: 73.5π. D: 155.5π."
         ],
         "es": [
           "10 cm",
@@ -754,7 +747,8 @@
           "A: 4π",
           "B: 49π",
           "C: 73.5π",
-          "D: 155.5π"
+          "D: 155.5π",
+          "Pregunta 35. Un fabricante produce latas cilíndricas de dos tamaños. Las dimensiones de cada lata se presentan en un diagrama. La lata grande es un cilindro de 10 cm de altura; en la base circular superior, un segmento punteado va desde el centro hasta el borde y mide 3.5 cm. La lata pequeña es un cilindro de 6 cm de altura; un segmento punteado atraviesa toda la base circular superior de un borde al opuesto, pasa por el centro y mide 7 cm. ¿Cuál es la diferencia entre el volumen, en centímetros cúbicos, de la lata grande y la lata pequeña en términos de π? Opciones: A: 4π. B: 49π. C: 73.5π. D: 155.5π."
         ]
       }
     },

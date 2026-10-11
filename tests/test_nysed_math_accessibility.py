@@ -569,7 +569,7 @@ class NysedMathAccessibilityTests(unittest.TestCase):
                 {
                     "en": (
                         "crosses the y-axis at (0, −3)",
-                        "crosses the x-axis between 4 and 6, at approximately (5.1, 0)",
+                        "crosses the x-axis at about (5, 0)",
                     )
                 },
                 {"en": ("the x-axis at (4, 0)",)},

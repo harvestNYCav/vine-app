@@ -57,8 +57,8 @@
       "inputHash": "3eb7dcec1c2b283de88e0ab06dec5228cba75df202267f36dc5822d6b636cffc",
       "explanation": {
         "text": {
-          "en": "View the octagon as a 28-by-28 square with four corner right triangles removed. Each triangle has legs 8.2 cm, so the area is 28² - 4[1/2(8.2)(8.2)] = 649.52 square centimeters, which rounds to 650, choice C.",
-          "es": "Se considera el octágono como un cuadrado de 28 por 28 al que se quitan cuatro triángulos rectángulos con catetos de 8.2 cm. El área es 28² - 4[1/2(8.2)(8.2)] = 649.52 cm², que se redondea a 650, la opción C."
+          "en": "View the octagon as a 28-by-28 square with four corner right triangles removed. Each triangle has a vertical leg of 8.2 cm and a horizontal leg of (28 − 11.6) ÷ 2 = 8.2 cm. The area is 28² − 4 × (1/2)(8.2)(8.2) = 649.52 square centimeters, which rounds to 650, choice C.",
+          "es": "Se considera el octágono como un cuadrado de 28 por 28 al que se quitan cuatro triángulos rectángulos. Cada triángulo tiene un cateto vertical de 8.2 cm y un cateto horizontal de (28 − 11.6) ÷ 2 = 8.2 cm. El área es 28² − 4 × (1/2)(8.2)(8.2) = 649.52 centímetros cuadrados, que se redondea a 650, la opción C."
         },
         "source": "vine-authored"
       }
@@ -67,8 +67,8 @@
       "inputHash": "8d5c936ba77745c2651d48449f500c641b10b484b7560b5225ad4134ca17756c",
       "explanation": {
         "text": {
-          "en": "The points show a moderate negative trend with a y-intercept near 6. Choice A, y = -(3/4)x + 6, has that direction and passes through the center of the data near (4, 3), so it is the best model.",
-          "es": "Los puntos muestran una tendencia negativa moderada y una intersección con y cercana a 6. La opción A, y = -(3/4)x + 6, tiene esa dirección y pasa por el centro de los datos cerca de (4, 3); por eso es el mejor modelo."
+          "en": "The points show a moderate negative trend with a y-intercept near 6. Choice A, y = −(3/4)x + 6, has that direction and passes through the center of the data near (4, 3), so it is the best model.",
+          "es": "Los puntos muestran una tendencia negativa moderada y una intersección con y cercana a 6. La opción A, y = −(3/4)x + 6, tiene esa dirección y pasa por el centro de los datos cerca de (4, 3); por eso es el mejor modelo."
         },
         "source": "vine-authored"
       }
@@ -257,8 +257,8 @@
       "inputHash": "4fbf3b59d2f2469559c2ec7e7ac8433e354b4f9228a56c389199facef0212490",
       "explanation": {
         "text": {
-          "en": "Rewrite 3.0 × 10⁻⁵ as 0.3 × 10⁻⁴. Then 5.0 × 10⁻⁴ - 0.3 × 10⁻⁴ = 4.7 × 10⁻⁴ meters, which is choice D.",
-          "es": "Se reescribe 3.0 × 10⁻⁵ como 0.3 × 10⁻⁴. Luego, 5.0 × 10⁻⁴ - 0.3 × 10⁻⁴ = 4.7 × 10⁻⁴ metros, que es la opción D."
+          "en": "Rewrite 3.0 × 10⁻⁵ as 0.3 × 10⁻⁴. Then 5.0 × 10⁻⁴ − 0.3 × 10⁻⁴ = 4.7 × 10⁻⁴ meters, which is choice D.",
+          "es": "Se reescribe 3.0 × 10⁻⁵ como 0.3 × 10⁻⁴. Luego, 5.0 × 10⁻⁴ − 0.3 × 10⁻⁴ = 4.7 × 10⁻⁴ metros, que es la opción D."
         },
         "source": "vine-authored"
       }

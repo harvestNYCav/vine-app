@@ -176,7 +176,7 @@ class NysedMathExplanationTests(unittest.TestCase):
         self.assertEqual(set(overrides), set(OFFICIAL_RATIONALE_OVERRIDE_QUESTION_IDS))
         self.assertEqual(
             sum(item.source == "official-nysed" for item in overrides.values()),
-            95,
+            97,
         )
         self.assertEqual(
             sum(item.source == "official-nysed-corrected" for item in overrides.values()),
@@ -246,7 +246,7 @@ class NysedMathExplanationTests(unittest.TestCase):
             "nysed-2013-g6-mc-q2": "6³ + 7 × 4 = 216 + 28 = 244",
             "nysed-2013-g6-mc-q13": "(1/2) ÷ (2/3)",
             "nysed-2013-g6-mc-q27": "w = 2/12",
-            "nysed-2013-g7-mc-q2": "−16/20 + 25/20 = 9/20",
+            "nysed-2013-g7-mc-q2": "3/8 + (−4/5) + (−3/8) + 5/4 = 9/20",
             "nysed-2013-g7-mc-q5": "(2/15) ÷ (1/3)",
             "nysed-2013-g7-mc-q7": "Dividing (2/3)(y + 57) = 178 by 2/3",
             "nysed-2013-g8-mc-q6": "4⁸ ÷ 4⁻⁴",
@@ -254,7 +254,7 @@ class NysedMathExplanationTests(unittest.TestCase):
             "nysed-2013-g8-mc-q19": "(8 × 10⁴)/(4 × 10⁶)",
             "nysed-2013-g8-mc-q25": "1.08 × 10⁸",
             "nysed-2013-g8-mc-q49": "V = πr²h",
-            "nysed-2013-g8-mc-q50": "y = 3x² - 2",
+            "nysed-2013-g8-mc-q50": "y = 3x² − 2",
             "nysed-2014-g5-mc-q7": "(2/3) × (5/2) = 10/6 = 1 4/6",
             "nysed-2014-g5-mc-q9": "(1/2) × (1/3) = 1/6",
             "nysed-2014-g5-mc-q13": "618/30 = 20 18/30 = 20 3/5",

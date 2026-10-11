@@ -3,6 +3,11 @@
 
 from __future__ import annotations
 
+try:
+    from scripts.nysed_content_checks import validate_math_minus_signs
+except ModuleNotFoundError:
+    from nysed_content_checks import validate_math_minus_signs
+
 import hashlib
 import json
 import re
@@ -183,6 +188,10 @@ def validate_math_accessibility_description(
             f"{language} accessibility description for {question_id} must be a string"
         )
     text = normalize_math_accessibility_text(value)
+    try:
+        validate_math_minus_signs(text, question_id=question_id)
+    except ValueError as exc:
+        raise MathAccessibilityError(str(exc)) from exc
     minimum_description_length = 50 if allow_verbatim_short_question else 80
     if not minimum_description_length <= len(text) <= 6_000:
         raise MathAccessibilityError(

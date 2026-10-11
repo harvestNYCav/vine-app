@@ -299,8 +299,8 @@
     "nysed-2024-g7-mc-q14": {
       "inputHash": "cfe8aebb2f10e43bbaa7af53bdbd824ca30b85f3b3acc7c9ec3eab2efcc310c3",
       "description": {
-        "en": "Question 14. A teacher records the test scores for the students in her class. The results are shown in a box plot titled “STUDENTS’ TEST SCORES.” The horizontal number line is labeled “Test Scores,” extends in both directions, and has tick marks at every whole number from 60 through 85, with 60, 65, 70, 75, 80, and 85 labeled. The box plot has a minimum at 61, a first quartile at 67, a median at 75, a third quartile at 78, and a maximum at 82. Based on these data, what is the interquartile range? Choices: A: 3. B: 8. C: 11. D: 21.",
-        "es": "Pregunta 14. Una maestra registra los puntajes de los exámenes de los alumnos de su clase. Los resultados se muestran en el siguiente diagrama de caja. Diagrama titulado «PUNTAJES DE EXÁMENES DE LOS ALUMNOS». Una recta numérica horizontal con flechas en ambos extremos está etiquetada «Puntajes de los exámenes». Tiene marcas para cada punto entero y etiquetas numéricas en 60, 65, 70, 75, 80 y 85. El diagrama de caja está sobre la recta: el extremo izquierdo del bigote está en 61, el borde izquierdo de la caja está en 67, la línea de la mediana está en 75, el borde derecho de la caja está en 78 y el extremo derecho del bigote está en 82. Según estos datos, ¿cuál es el rango intercuartil? Opciones: A: 3 B: 8 C: 11 D: 21"
+        "en": "Question 14. A teacher records the test scores for the students in her class. The results are shown in a box plot titled “STUDENTS’ TEST SCORES.” The horizontal number line is labeled “Test Scores,” extends in both directions, and has tick marks at every whole number from 60 through 85, with 60, 65, 70, 75, 80, and 85 labeled. The box plot has a left whisker end at 61, a box from 67 to 78 with a vertical line inside the box at 75, and a right whisker end at 82. Based on these data, what is the interquartile range? Choices: A: 3. B: 8. C: 11. D: 21.",
+        "es": "Pregunta 14. Una maestra registra los puntajes de los exámenes de los alumnos de su clase. Los resultados se muestran en el siguiente diagrama de caja. Diagrama titulado «PUNTAJES DE EXÁMENES DE LOS ALUMNOS». Una recta numérica horizontal con flechas en ambos extremos está etiquetada «Puntajes de los exámenes». Tiene marcas para cada punto entero y etiquetas numéricas en 60, 65, 70, 75, 80 y 85. El diagrama de caja está sobre la recta: el extremo izquierdo del bigote está en 61, el borde izquierdo de la caja está en 67, la línea vertical dentro de la caja está en 75, el borde derecho de la caja está en 78 y el extremo derecho del bigote está en 82. Según estos datos, ¿cuál es el rango intercuartil? Opciones: A: 3 B: 8 C: 11 D: 21"
       },
       "requiredSourceTokens": {
         "en": [
@@ -321,7 +321,8 @@
           "A: 3",
           "B: 8",
           "C: 11",
-          "D: 21"
+          "D: 21",
+          "Question 14. A teacher records the test scores for the students in her class. The results are shown in a box plot titled “STUDENTS’ TEST SCORES.” The horizontal number line is labeled “Test Scores,” extends in both directions, and has tick marks at every whole number from 60 through 85, with 60, 65, 70, 75, 80, and 85 labeled. The box plot has a left whisker end at 61, a box from 67 to 78 with a vertical line inside the box at 75, and a right whisker end at 82. Based on these data, what is the interquartile range? Choices: A: 3. B: 8. C: 11. D: 21."
         ],
         "es": [
           "60",
@@ -341,7 +342,8 @@
           "A: 3",
           "B: 8",
           "C: 11",
-          "D: 21"
+          "D: 21",
+          "Pregunta 14. Una maestra registra los puntajes de los exámenes de los alumnos de su clase. Los resultados se muestran en el siguiente diagrama de caja. Diagrama titulado «PUNTAJES DE EXÁMENES DE LOS ALUMNOS». Una recta numérica horizontal con flechas en ambos extremos está etiquetada «Puntajes de los exámenes». Tiene marcas para cada punto entero y etiquetas numéricas en 60, 65, 70, 75, 80 y 85. El diagrama de caja está sobre la recta: el extremo izquierdo del bigote está en 61, el borde izquierdo de la caja está en 67, la línea vertical dentro de la caja está en 75, el borde derecho de la caja está en 78 y el extremo derecho del bigote está en 82. Según estos datos, ¿cuál es el rango intercuartil? Opciones: A: 3 B: 8 C: 11 D: 21"
         ]
       }
     },

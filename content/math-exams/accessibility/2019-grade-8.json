@@ -42,7 +42,7 @@
     "nysed-2019-g8-mc-q2": {
       "inputHash": "9046bab0d17501e5b6c3255320c52ebd68fcc63992d779526e484187cbad66ca",
       "description": {
-        "en": "Question 2. What is the value of the expression (1.6 × 10⁵)/(0.2 × 10²)? Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷",
+        "en": "Question 2. What is the value of the expression shown below? (1.6 × 10⁵)/(0.2 × 10²). Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷",
         "es": "Pregunta 2. ¿Cuál es el valor de la siguiente expresión? (1.6 × 10⁵)/(0.2 × 10²) Opciones: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
       },
       "requiredSourceTokens": {
@@ -59,7 +59,8 @@
           "(1.6 × 10⁵)",
           "(0.2 × 10²)",
           "10³",
-          "10⁷"
+          "10⁷",
+          "Question 2. What is the value of the expression shown below? (1.6 × 10⁵)/(0.2 × 10²). Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
         ],
         "es": [
           "(1.6 × 10⁵)/(0.2 × 10²)",
@@ -74,7 +75,8 @@
           "(1.6 × 10⁵)",
           "(0.2 × 10²)",
           "10³",
-          "10⁷"
+          "10⁷",
+          "Pregunta 2. ¿Cuál es el valor de la siguiente expresión? (1.6 × 10⁵)/(0.2 × 10²) Opciones: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
         ]
       }
     },
@@ -960,7 +962,7 @@
       "inputHash": "35037c55707067f46e322576bc53edda08dc04c77644cae491e098451ce0bd79",
       "description": {
         "en": "Question 37. Which expression is equivalent to (7⁻⁸)(7³)? Choices: A: 49⁻⁵ B: 49⁻¹¹ C: 7⁻⁵ D: 7⁻¹¹",
-        "es": "Pregunta 37. La pregunta dice: “¿Qué expresión es equivalente a (7⁻⁸)(7³)?” Opciones: A: 49⁻⁵ B: 49⁻¹¹ C: 7⁻⁵ D: 7⁻¹¹"
+        "es": "Pregunta 37. ¿Qué expresión es equivalente a (7⁻⁸)(7³)? Opciones: A: 49⁻⁵ B: 49⁻¹¹ C: 7⁻⁵ D: 7⁻¹¹"
       },
       "requiredSourceTokens": {
         "en": [
@@ -974,7 +976,8 @@
           "C: 7⁻⁵",
           "D: 7⁻¹¹",
           "(7⁻⁸)",
-          "(7³)"
+          "(7³)",
+          "Question 37. Which expression is equivalent to (7⁻⁸)(7³)? Choices: A: 49⁻⁵ B: 49⁻¹¹ C: 7⁻⁵ D: 7⁻¹¹"
         ],
         "es": [
           "(7⁻⁸)(7³)",
@@ -987,7 +990,8 @@
           "C: 7⁻⁵",
           "D: 7⁻¹¹",
           "(7⁻⁸)",
-          "(7³)"
+          "(7³)",
+          "Pregunta 37. ¿Qué expresión es equivalente a (7⁻⁸)(7³)? Opciones: A: 49⁻⁵ B: 49⁻¹¹ C: 7⁻⁵ D: 7⁻¹¹"
         ]
       }
     },

@@ -215,7 +215,7 @@
     "nysed-2018-g8-mc-q7": {
       "inputHash": "5d609d3c9a818ae470fb7c8e94f57f45597afd82700b2cf3a8a6f34fded5e511",
       "description": {
-        "en": "Question 7. An octagon has eight congruent sides. Its measures are rounded to the nearest tenth of a centimeter. The octagon is oriented with horizontal top and bottom sides, vertical left and right sides, and four slanted corner sides. Its total width and total height are each 28 cm. The top horizontal side is 11.6 cm; because all eight sides are congruent, each side is 11.6 cm. Dashed horizontal segments connect the upper endpoints of the two vertical sides and the lower endpoints of the two vertical sides. A perpendicular dashed vertical segment from the upper-left endpoint of the top side to the upper dashed horizontal segment is 8.2 cm. A perpendicular dashed vertical segment from the lower-left endpoint of the bottom side to the lower dashed horizontal segment is also 8.2 cm. What is the area, to the nearest square centimeter, of the octagon? Choices: A: 392. B: 487. C: 650. D: 720.",
+        "en": "Question 7. An octagon has eight congruent sides. Its measures are rounded to the nearest tenth of a centimeter. The octagon is oriented with horizontal top and bottom sides, vertical left and right sides, and four slanted corner sides. Its total width and total height are each 28 cm. The top horizontal side is labeled 11.6 cm. Dashed horizontal segments connect the upper endpoints of the two vertical sides and the lower endpoints of the two vertical sides. A perpendicular dashed vertical segment from the upper-left endpoint of the top side to the upper dashed horizontal segment is 8.2 cm. A perpendicular dashed vertical segment from the lower-left endpoint of the bottom side to the lower dashed horizontal segment is also 8.2 cm. What is the area, to the nearest square centimeter, of the octagon? Choices: A: 392. B: 487. C: 650. D: 720.",
         "es": "Pregunta 7. El octágono que se muestra a continuación tiene ocho lados congruentes. Las medidas indicadas del octágono están redondeadas al décimo de centímetro más cercano. El octágono tiene lados superior e inferior horizontales, lados izquierdo y derecho verticales y cuatro lados diagonales en las esquinas. Su anchura total y su altura total miden 28 cm. El lado superior mide 11.6 cm. Dos segmentos horizontales punteados unen los extremos superiores de los lados verticales y los extremos inferiores de esos lados. Desde el extremo izquierdo del lado superior baja perpendicularmente un segmento punteado de 8.2 cm hasta el segmento horizontal punteado superior. Desde el extremo izquierdo del lado inferior sube perpendicularmente otro segmento punteado de 8.2 cm hasta el segmento horizontal punteado inferior. Los marcadores de ángulo recto señalan estas intersecciones perpendiculares y las cuatro esquinas de la región rectangular central. ¿Cuál es el área del octágono, redondeada al centímetro cuadrado más cercano? Opciones: A: 392. B: 487. C: 650. D: 720."
       },
       "requiredSourceTokens": {
@@ -230,7 +230,8 @@
           "A: 392",
           "B: 487",
           "C: 650",
-          "D: 720"
+          "D: 720",
+          "Question 7. An octagon has eight congruent sides. Its measures are rounded to the nearest tenth of a centimeter. The octagon is oriented with horizontal top and bottom sides, vertical left and right sides, and four slanted corner sides. Its total width and total height are each 28 cm. The top horizontal side is labeled 11.6 cm. Dashed horizontal segments connect the upper endpoints of the two vertical sides and the lower endpoints of the two vertical sides. A perpendicular dashed vertical segment from the upper-left endpoint of the top side to the upper dashed horizontal segment is 8.2 cm. A perpendicular dashed vertical segment from the lower-left endpoint of the bottom side to the lower dashed horizontal segment is also 8.2 cm. What is the area, to the nearest square centimeter, of the octagon? Choices: A: 392. B: 487. C: 650. D: 720."
         ],
         "es": [
           "28 cm",
@@ -243,7 +244,8 @@
           "A: 392",
           "B: 487",
           "C: 650",
-          "D: 720"
+          "D: 720",
+          "Pregunta 7. El octágono que se muestra a continuación tiene ocho lados congruentes. Las medidas indicadas del octágono están redondeadas al décimo de centímetro más cercano. El octágono tiene lados superior e inferior horizontales, lados izquierdo y derecho verticales y cuatro lados diagonales en las esquinas. Su anchura total y su altura total miden 28 cm. El lado superior mide 11.6 cm. Dos segmentos horizontales punteados unen los extremos superiores de los lados verticales y los extremos inferiores de esos lados. Desde el extremo izquierdo del lado superior baja perpendicularmente un segmento punteado de 8.2 cm hasta el segmento horizontal punteado superior. Desde el extremo izquierdo del lado inferior sube perpendicularmente otro segmento punteado de 8.2 cm hasta el segmento horizontal punteado inferior. Los marcadores de ángulo recto señalan estas intersecciones perpendiculares y las cuatro esquinas de la región rectangular central. ¿Cuál es el área del octágono, redondeada al centímetro cuadrado más cercano? Opciones: A: 392. B: 487. C: 650. D: 720."
         ]
       }
     },
@@ -519,12 +521,11 @@
     "nysed-2018-g8-mc-q19": {
       "inputHash": "baa03c065f6f9453c0e73362988d0cbd4fd120e8eedc31ef748fa6e466c4c9c8",
       "description": {
-        "en": "Question 19. Functions W and Z are both linear functions of x. Function W is given by y = −1/16x + 30. Function Z is given by a table: the x-values are 0, 1, 2, 3, and the corresponding y-values are 15.8, 15.76, 15.72, 15.68. Which statement comparing the functions is true? Choices: A: The slope of Function W is equal to the slope of Function Z. B: The slope of Function W is less than the slope of Function Z. C: The y-intercept of Function W is equal to the y-intercept of Function Z. D: The y-intercept of Function W is less than the y-intercept of Function Z.",
-        "es": "Pregunta 19. Las funciones W y Z son funciones lineales de x. La Función W está dada por y = −1/16 x + 30. La Función Z se presenta en una tabla: para x = 0, y = 15.8; para x = 1, y = 15.76; para x = 2, y = 15.72; y para x = 3, y = 15.68. ¿Qué afirmación que compara las funciones es verdadera? Opciones: A: La pendiente de la Función W es igual a la pendiente de la Función Z. B: La pendiente de la Función W es menor que la pendiente de la Función Z. C: La intersección con el eje y de la Función W es igual a la intersección con el eje y de la Función Z. D: La intersección con el eje y de la Función W es menor que la intersección con el eje y de la Función Z."
+        "en": "Question 19. Functions W and Z are both linear functions of x. Function W is given by y = −(1/16)x + 30. Function Z is given by a table: the x-values are 0, 1, 2, 3, and the corresponding y-values are 15.8, 15.76, 15.72, 15.68. Which statement comparing the functions is true? Choices: A: The slope of Function W is equal to the slope of Function Z. B: The slope of Function W is less than the slope of Function Z. C: The y-intercept of Function W is equal to the y-intercept of Function Z. D: The y-intercept of Function W is less than the y-intercept of Function Z.",
+        "es": "Pregunta 19. Las funciones W y Z son funciones lineales de x. La Función W está dada por y = −(1/16)x + 30. La Función Z se presenta en una tabla: para x = 0, y = 15.8; para x = 1, y = 15.76; para x = 2, y = 15.72; y para x = 3, y = 15.68. ¿Qué afirmación que compara las funciones es verdadera? Opciones: A: La pendiente de la Función W es igual a la pendiente de la Función Z. B: La pendiente de la Función W es menor que la pendiente de la Función Z. C: La intersección con el eje y de la Función W es igual a la intersección con el eje y de la Función Z. D: La intersección con el eje y de la Función W es menor que la intersección con el eje y de la Función Z."
       },
       "requiredSourceTokens": {
         "en": [
-          "y = −1/16x + 30",
           "0, 1, 2, 3",
           "15.8, 15.76, 15.72, 15.68",
           "equal to",
@@ -533,10 +534,10 @@
           "B: The slope of Function W is less than the slope of Function Z",
           "C: The y-intercept of Function W is equal to the y-intercept of Function Z",
           "D: The y-intercept of Function W is less than the y-intercept of Function Z",
-          "1/16"
+          "1/16",
+          "Question 19. Functions W and Z are both linear functions of x. Function W is given by y = −(1/16)x + 30. Function Z is given by a table: the x-values are 0, 1, 2, 3, and the corresponding y-values are 15.8, 15.76, 15.72, 15.68. Which statement comparing the functions is true? Choices: A: The slope of Function W is equal to the slope of Function Z. B: The slope of Function W is less than the slope of Function Z. C: The y-intercept of Function W is equal to the y-intercept of Function Z. D: The y-intercept of Function W is less than the y-intercept of Function Z."
         ],
         "es": [
-          "y = −1/16 x + 30",
           "x = 0",
           "y = 15.8",
           "x = 1",
@@ -549,7 +550,8 @@
           "B: La pendiente de la Función W es menor que la pendiente de la Función Z",
           "C: La intersección con el eje y de la Función W es igual a la intersección con el eje y de la Función Z",
           "D: La intersección con el eje y de la Función W es menor que la intersección con el eje y de la Función Z",
-          "1/16"
+          "1/16",
+          "Pregunta 19. Las funciones W y Z son funciones lineales de x. La Función W está dada por y = −(1/16)x + 30. La Función Z se presenta en una tabla: para x = 0, y = 15.8; para x = 1, y = 15.76; para x = 2, y = 15.72; y para x = 3, y = 15.68. ¿Qué afirmación que compara las funciones es verdadera? Opciones: A: La pendiente de la Función W es igual a la pendiente de la Función Z. B: La pendiente de la Función W es menor que la pendiente de la Función Z. C: La intersección con el eje y de la Función W es igual a la intersección con el eje y de la Función Z. D: La intersección con el eje y de la Función W es menor que la intersección con el eje y de la Función Z."
         ]
       }
     },
@@ -1081,8 +1083,8 @@
     "nysed-2018-g8-mc-q40": {
       "inputHash": "b9df3860ed5c670badd43d71677eaf02a4a382fe68ed6776bfd2773b031928fa",
       "description": {
-        "en": "Question 40. A function of x is graphed on a coordinate plane. The horizontal axis is labeled x, and the vertical axis is labeled y. Both axes have unit grid spacing. Five vertices are connected consecutively by straight line segments: (−4, −4) to (−2, 1), then to (0, −1), then to (2, 1), and then to (4, −4). Thus, the graph rises from (−4, −4) to (−2, 1), falls to (0, −1), rises to (2, 1), and falls to (4, −4). Over which intervals is the function increasing? Choices: A: −4 < x < −2 and −1 < x < 1 B: −4 < x < −2 and 0 < x < 2 C: −2 < x < 0 and 2 < x < 4 D: −2 < x < −1 and 2 < x < 4",
-        "es": "Pregunta 40. En el plano de coordenadas, se muestra una función de x. El eje horizontal está etiquetado x y el eje vertical está etiquetado y. La gráfica es una línea poligonal continua formada por segmentos rectos que conectan, de izquierda a derecha, los puntos (−4, −4), (−2, 1), (0, −1), (2, 1) y (4, −4). Por lo tanto, la función sube desde (−4, −4) hasta (−2, 1), baja hasta (0, −1), sube hasta (2, 1) y baja hasta (4, −4). ¿Sobre qué intervalos aumenta la función? Opciones: A: −4 < x < −2 y −1 < x < 1 B: −4 < x < −2 y 0 < x < 2 C: −2 < x < 0 y 2 < x < 4 D: −2 < x < −1 y 2 < x < 4"
+        "en": "Question 40. A function of x is graphed on a coordinate plane. The horizontal axis is labeled x, and the vertical axis is labeled y. Both axes have unit grid spacing. Five vertices are connected consecutively by straight line segments: (−4, −4) to (−2, 1), then to (0, −1), then to (2, 1), and then to (4, −4). Over which intervals is the function increasing? Choices: A: −4 < x < −2 and −1 < x < 1 B: −4 < x < −2 and 0 < x < 2 C: −2 < x < 0 and 2 < x < 4 D: −2 < x < −1 and 2 < x < 4",
+        "es": "Pregunta 40. En el plano de coordenadas, se muestra una función de x. El eje horizontal está etiquetado x y el eje vertical está etiquetado y. La gráfica es una línea poligonal continua formada por segmentos rectos que conectan, de izquierda a derecha, los puntos (−4, −4), (−2, 1), (0, −1), (2, 1) y (4, −4). ¿Sobre qué intervalos aumenta la función? Opciones: A: −4 < x < −2 y −1 < x < 1 B: −4 < x < −2 y 0 < x < 2 C: −2 < x < 0 y 2 < x < 4 D: −2 < x < −1 y 2 < x < 4"
       },
       "requiredSourceTokens": {
         "en": [
@@ -1100,7 +1102,8 @@
           "A: −4 < x < −2 and −1 < x < 1",
           "B: −4 < x < −2 and 0 < x < 2",
           "C: −2 < x < 0 and 2 < x < 4",
-          "D: −2 < x < −1 and 2 < x < 4"
+          "D: −2 < x < −1 and 2 < x < 4",
+          "Question 40. A function of x is graphed on a coordinate plane. The horizontal axis is labeled x, and the vertical axis is labeled y. Both axes have unit grid spacing. Five vertices are connected consecutively by straight line segments: (−4, −4) to (−2, 1), then to (0, −1), then to (2, 1), and then to (4, −4). Over which intervals is the function increasing? Choices: A: −4 < x < −2 and −1 < x < 1 B: −4 < x < −2 and 0 < x < 2 C: −2 < x < 0 and 2 < x < 4 D: −2 < x < −1 and 2 < x < 4"
         ],
         "es": [
           "(−4, −4)",
@@ -1117,7 +1120,8 @@
           "A: −4 < x < −2 y −1 < x < 1",
           "B: −4 < x < −2 y 0 < x < 2",
           "C: −2 < x < 0 y 2 < x < 4",
-          "D: −2 < x < −1 y 2 < x < 4"
+          "D: −2 < x < −1 y 2 < x < 4",
+          "Pregunta 40. En el plano de coordenadas, se muestra una función de x. El eje horizontal está etiquetado x y el eje vertical está etiquetado y. La gráfica es una línea poligonal continua formada por segmentos rectos que conectan, de izquierda a derecha, los puntos (−4, −4), (−2, 1), (0, −1), (2, 1) y (4, −4). ¿Sobre qué intervalos aumenta la función? Opciones: A: −4 < x < −2 y −1 < x < 1 B: −4 < x < −2 y 0 < x < 2 C: −2 < x < 0 y 2 < x < 4 D: −2 < x < −1 y 2 < x < 4"
         ]
       }
     }

@@ -291,11 +291,11 @@
     "nysed-2015-g8-mc-q35": {
       "inputHash": "e68d6f9be8d66609975a84d68293e3c1ff69017aa7d47a929caa59d97b8f3e1e",
       "description": {
-        "en": "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Choices: A: y = 2x − 6. B: y = 3/4x − 1. C: y = 1/4x + 1. D: y = 4/3x − 10/3."
+        "en": "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Choices: A: y = 2x − 6. B: y = (3/4)x − 1. C: y = (1/4)x + 1. D: y = (4/3)x − 10/3."
       },
       "requiredSourceTokens": {
         "en": [
-          "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Choices: A: y = 2x − 6. B: y = 3/4x − 1. C: y = 1/4x + 1. D: y = 4/3x − 10/3."
+          "Question 35. A line contains the points (4, 2) and (0, −1). What is the equation of the line? Choices: A: y = 2x − 6. B: y = (3/4)x − 1. C: y = (1/4)x + 1. D: y = (4/3)x − 10/3."
         ]
       }
     },
@@ -313,11 +313,11 @@
     "nysed-2015-g8-mc-q38": {
       "inputHash": "653e48dab9157c3e0ff7a8418b862041a2713eae29e17c35c3795433a8eb72d9",
       "description": {
-        "en": "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Choices: A: y = 5/2x − 2. B: y = 7/2x − 2. C: y = 2x − 2. D: y = 6x − 2."
+        "en": "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Choices: A: y = (5/2)x − 2. B: y = (7/2)x − 2. C: y = 2x − 2. D: y = 6x − 2."
       },
       "requiredSourceTokens": {
         "en": [
-          "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Choices: A: y = 5/2x − 2. B: y = 7/2x − 2. C: y = 2x − 2. D: y = 6x − 2."
+          "Question 38. What is the equation of the line that passes through point (4, 12) and has a y-intercept of −2? Choices: A: y = (5/2)x − 2. B: y = (7/2)x − 2. C: y = 2x − 2. D: y = 6x − 2."
         ]
       }
     },
@@ -343,7 +343,7 @@
     "nysed-2015-g8-mc-q45": {
       "inputHash": "63a524641da902e9b30f589df2864438041a49a6ddf4d5149d89befbd60a0198",
       "description": {
-        "en": "Question 45. Function 1 is defined by the equation y = (3/4)x + 1, and function 2 is represented by a coordinate graph. The graph has x- and y-axes marked in increments of 2 from −10 to 10, with the square grid extending from −12 to 12 on each axis. Function 2 is an increasing straight line with arrows at both ends. It crosses the y-axis at (0, −3) and crosses the x-axis between 4 and 6, at approximately (5.1, 0). Which statement about the functions is true? Choices: A: Function 1 has the greater rate of change and the greater y-intercept. B: Function 2 has the greater rate of change and the greater y-intercept. C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept. D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept."
+        "en": "Question 45. Function 1 is defined by the equation y = (3/4)x + 1, and function 2 is represented by a coordinate graph. The graph has x- and y-axes marked in increments of 2 from −10 to 10, with the square grid extending from −12 to 12 on each axis. Function 2 is an increasing straight line with arrows at both ends. It crosses the y-axis at (0, −3) and crosses the x-axis at about (5, 0). Which statement about the functions is true? Choices: A: Function 1 has the greater rate of change and the greater y-intercept. B: Function 2 has the greater rate of change and the greater y-intercept. C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept. D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept."
       },
       "requiredSourceTokens": {
         "en": [
@@ -354,14 +354,15 @@
           "12",
           "(0, −3)",
           "crosses the y-axis at (0, −3)",
-          "crosses the x-axis between 4 and 6, at approximately (5.1, 0)",
           "Function 1",
           "Function 2",
           "A: Function 1 has the greater rate of change and the greater y-intercept",
           "B: Function 2 has the greater rate of change and the greater y-intercept",
           "C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept",
           "D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept",
-          "(3/4)"
+          "(3/4)",
+          "crosses the x-axis at about (5, 0)",
+          "Question 45. Function 1 is defined by the equation y = (3/4)x + 1, and function 2 is represented by a coordinate graph. The graph has x- and y-axes marked in increments of 2 from −10 to 10, with the square grid extending from −12 to 12 on each axis. Function 2 is an increasing straight line with arrows at both ends. It crosses the y-axis at (0, −3) and crosses the x-axis at about (5, 0). Which statement about the functions is true? Choices: A: Function 1 has the greater rate of change and the greater y-intercept. B: Function 2 has the greater rate of change and the greater y-intercept. C: Function 1 has the greater rate of change, and function 2 has the greater y-intercept. D: Function 2 has the greater rate of change, and function 1 has the greater y-intercept."
         ]
       }
     },
@@ -388,7 +389,7 @@
     "nysed-2015-g8-mc-q47": {
       "inputHash": "f6feeaa4e6725092255b1ac334b76b99d3ae547c3436e1f878df934b9f5ebc6d",
       "description": {
-        "en": "Question 47. Figure L and figure M are shown on a coordinate grid with x- and y-axes marked in units of 1 from −5 to 5. Figure L is a rectangle in the third quadrant with vertices (−5, −2), (−1, −2), (−1, −5), and (−5, −5); it is 4 units wide and 3 units high. Figure M is a square in the first quadrant with vertices (2, 2), (5, 2), (5, 5), and (2, 5); it is 3 units wide and 3 units high. Maria wants to transform figure L to figure M using only rotations, reflections, and translations. Which statement is true? Choices: A: The transformation can be done with a reflection followed by a rotation. B: The transformation can be done with a reflection followed by a translation. C: The transformation cannot be done because figure L is not congruent to figure M. D: The transformation cannot be done because figures L and M are in different quadrants."
+        "en": "Question 47. Figure L and figure M are shown on a coordinate grid with x- and y-axes marked in units of 1 from −5 to 5. Figure L is a four-sided figure in the third quadrant with vertices (−5, −2), (−1, −2), (−1, −5), and (−5, −5). Figure M is a four-sided figure in the first quadrant with vertices (2, 2), (5, 2), (5, 5), and (2, 5). Maria wants to transform figure L to figure M using only rotations, reflections, and translations. Which statement is true? Choices: A: The transformation can be done with a reflection followed by a rotation. B: The transformation can be done with a reflection followed by a translation. C: The transformation cannot be done because figure L is not congruent to figure M. D: The transformation cannot be done because figures L and M are in different quadrants."
       },
       "requiredSourceTokens": {
         "en": [
@@ -398,8 +399,6 @@
           "(−1, −2)",
           "(−1, −5)",
           "(−5, −5)",
-          "4 units wide",
-          "3 units high",
           "(2, 2)",
           "(5, 2)",
           "(5, 5)",
@@ -411,7 +410,8 @@
           "A: The transformation can be done with a reflection followed by a rotation",
           "B: The transformation can be done with a reflection followed by a translation",
           "C: The transformation cannot be done because figure L is not congruent to figure M",
-          "D: The transformation cannot be done because figures L and M are in different quadrants"
+          "D: The transformation cannot be done because figures L and M are in different quadrants",
+          "Question 47. Figure L and figure M are shown on a coordinate grid with x- and y-axes marked in units of 1 from −5 to 5. Figure L is a four-sided figure in the third quadrant with vertices (−5, −2), (−1, −2), (−1, −5), and (−5, −5). Figure M is a four-sided figure in the first quadrant with vertices (2, 2), (5, 2), (5, 5), and (2, 5). Maria wants to transform figure L to figure M using only rotations, reflections, and translations. Which statement is true? Choices: A: The transformation can be done with a reflection followed by a rotation. B: The transformation can be done with a reflection followed by a translation. C: The transformation cannot be done because figure L is not congruent to figure M. D: The transformation cannot be done because figures L and M are in different quadrants."
         ]
       }
     },

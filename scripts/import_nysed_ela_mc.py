@@ -19,6 +19,11 @@ Deterministic cache-only verification::
 
 from __future__ import annotations
 
+try:
+    from scripts.nysed_content_checks import validate_explanation_choice
+except ModuleNotFoundError:
+    from nysed_content_checks import validate_explanation_choice
+
 import argparse
 import calendar
 import dataclasses
@@ -192,14 +197,15 @@ CORRECTED_OFFICIAL_RATIONALES = {(2014, 3, 2): 'Students who choose “C” use 
                'the syrup from being grainy.',
  (2014, 3, 14): 'Students who choose “C” recognize that snowshoeing gives the children exercise. Paragraph '
                 '18 describes the “extra hard work” that makes them unzip their jackets and sweat under '
-                'their hats. These details show that snowshoeing is physically demanding.',
+                'their hats. These details show that snowshoeing is hard work, which supports the main idea '
+                'that the kids get good exercise (paragraph 19).',
  (2014, 3, 6): 'Students who choose “A” show an understanding of the text by recognizing that both animals '
                'want the fish—Maggie tossed the fish to the otter, but a gull grabbed it away. The '
                'paragraphs support this answer by showing that “the otter came closer,” but “a gull dipped, '
                'seized the fish, and looped high into the sky.”',
  (2014, 3, 5): 'Students who choose “A” show an understanding of the text by recognizing that the '
-               'descriptions of the otters show them engaged in fun activities. The text says that the '
-               'mother floats on her back, moves the baby to her shoulder, and describes how “Two otters '
+               'descriptions of the otters show them engaged in fun activities. The text describes the '
+               'mother floating on her back and moving the baby to her shoulder. It also says, “Two otters '
                'wrestled, tumbling over and over.”',
  (2014, 4, 13): 'The narrator says he is “not machine oriented.” Paragraphs 2 through 4 show him pushing the '
                 'mower, studying its parts, and struggling before he gets it started. These details show '
@@ -1116,6 +1122,14 @@ def validate_exam(exam: dict[str, Any]) -> None:
             )
         except (ElaExplanationError, TypeError, ValueError) as exc:
             raise ImportFailure(f"Invalid explanation in {question['id']}: {exc}") from exc
+        try:
+            validate_explanation_choice(
+                validated_explanation.text,
+                correct=question["correct"],
+                question_id=str(question["id"]),
+            )
+        except ValueError as exc:
+            raise ImportFailure(str(exc)) from exc
         corrected_id = (
             year,
             grade,

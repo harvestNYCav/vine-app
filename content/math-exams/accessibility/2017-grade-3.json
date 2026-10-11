@@ -53,7 +53,15 @@
       "inputHash": "2e6d4cda7b0916e34ad7bb29a0102c0941caf607912ecf6e4b967a09b56fcf11",
       "description": {
         "en": "Question 9. Erin walked 1 mile from her house to the library. A number line from 0 to 1 is divided into 8 equal intervals. Erin’s house is at 0, the fire station at the first tick after 0, the park at the third tick after 0, the school at the fourth tick after 0, the market at the fifth tick after 0, and the library at 1. Which place is 4/8 mile from Erin’s house? Choices: A: the fire station; B: the park; C: the school; D: the market.",
-        "es": "Pregunta 9. Erin caminó 1 milla desde su casa hasta la biblioteca. Una recta numérica de 0 a 1 se divide en 8 intervalos iguales. La casa de Erin está en 0, la estación de bomberos en la marca 1 después de 0, el parque en la marca 3 después de 0, la escuela en la marca 4 después de 0, el mercado en la marca 5 después de 0 y la biblioteca en 1. ¿Qué lugar se encuentra a 4/8 de milla de la casa de Erin? Opciones: A: la estación de bomberos; B: el parque; C: la escuela; D: el mercado."
+        "es": "Pregunta 9. Erin caminó 1 milla desde su casa hasta la biblioteca. Una recta numérica de 0 a 1 se divide en 8 intervalos iguales. La casa de Erin está en 0, la estación de bomberos en la primera marca después de 0, el parque en la tercera marca después de 0, la escuela en la cuarta marca después de 0, el mercado en la quinta marca después de 0 y la biblioteca en 1. ¿Qué lugar se encuentra a 4/8 de milla de la casa de Erin? Opciones: A: la estación de bomberos; B: el parque; C: la escuela; D: el mercado."
+      },
+      "requiredSourceTokens": {
+        "en": [
+          "Question 9. Erin walked 1 mile from her house to the library. A number line from 0 to 1 is divided into 8 equal intervals. Erin’s house is at 0, the fire station at the first tick after 0, the park at the third tick after 0, the school at the fourth tick after 0, the market at the fifth tick after 0, and the library at 1. Which place is 4/8 mile from Erin’s house? Choices: A: the fire station; B: the park; C: the school; D: the market."
+        ],
+        "es": [
+          "Pregunta 9. Erin caminó 1 milla desde su casa hasta la biblioteca. Una recta numérica de 0 a 1 se divide en 8 intervalos iguales. La casa de Erin está en 0, la estación de bomberos en la primera marca después de 0, el parque en la tercera marca después de 0, la escuela en la cuarta marca después de 0, el mercado en la quinta marca después de 0 y la biblioteca en 1. ¿Qué lugar se encuentra a 4/8 de milla de la casa de Erin? Opciones: A: la estación de bomberos; B: el parque; C: la escuela; D: el mercado."
+        ]
       }
     },
     "nysed-2017-g3-mc-q13": {

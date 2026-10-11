@@ -43,7 +43,7 @@
     "nysed-2021-g8-mc-q2": {
       "inputHash": "240e1358afbda5cda4e0f7021024aabb29aa84e076d0216eabd780012fb64eac",
       "description": {
-        "en": "Question 2. What is the value of the expression (1.6 × 10⁵)/(0.2 × 10²)? Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷",
+        "en": "Question 2. What is the value of the expression shown below? (1.6 × 10⁵)/(0.2 × 10²). Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷",
         "es": "Pregunta 2. ¿Cuál es el valor de la siguiente expresión? (1.6 × 10⁵)/(0.2 × 10²) Opciones: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
       },
       "requiredSourceTokens": {
@@ -60,7 +60,8 @@
           "(1.6 × 10⁵)",
           "(0.2 × 10²)",
           "10³",
-          "10⁷"
+          "10⁷",
+          "Question 2. What is the value of the expression shown below? (1.6 × 10⁵)/(0.2 × 10²). Choices: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
         ],
         "es": [
           "(1.6 × 10⁵)/(0.2 × 10²)",
@@ -75,7 +76,8 @@
           "(1.6 × 10⁵)",
           "(0.2 × 10²)",
           "10³",
-          "10⁷"
+          "10⁷",
+          "Pregunta 2. ¿Cuál es el valor de la siguiente expresión? (1.6 × 10⁵)/(0.2 × 10²) Opciones: A: 0.8 × 10³ B: 8 × 10³ C: 0.8 × 10⁷ D: 8 × 10⁷"
         ]
       }
     },
@@ -386,8 +388,8 @@
     "nysed-2021-g8-mc-q11": {
       "inputHash": "a6fc6324bbee3414d5e0228554b2e94f527590cf0459dd89fe947cc8297cb0d7",
       "description": {
-        "en": "Question 11. A line is graphed on a coordinate plane. The line has arrows at both ends, rises from left to right, crosses the y-axis at (0, −4), and passes through (2, −3) and (4, −2). Line y = −x + 2 will be graphed on the same coordinate plane to create a system of equations. What is the solution to that system of equations? Choices: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2).",
-        "es": "Pregunta 11. Se traza una recta en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. La recta ascendente pasa por (0, −4), (2, −3) y (4, −2), por lo que sube 1 unidad por cada 2 unidades que avanza hacia la derecha; tiene flechas en ambos extremos. La recta y = −x + 2 se trazará en el mismo plano de coordenadas para crear un sistema de ecuaciones. ¿Cuál es la solución de ese sistema de ecuaciones? Opciones: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2)."
+        "en": "Question 11. A line is graphed on a coordinate plane. The line has arrows at both ends, rises from left to right, and passes through (−2, −5), (0, −4), and (2, −3). Line y = −x + 2 will be graphed on the same coordinate plane to create a system of equations. What is the solution to that system of equations? Choices: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2).",
+        "es": "Pregunta 11. Se traza una recta en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. La recta ascendente pasa por (−2, −5), (0, −4) y (2, −3); tiene flechas en ambos extremos. La recta y = −x + 2 se trazará en el mismo plano de coordenadas para crear un sistema de ecuaciones. ¿Cuál es la solución de ese sistema de ecuaciones? Opciones: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2)."
       },
       "requiredSourceTokens": {
         "en": [
@@ -400,21 +402,21 @@
           "A: (−2, 4)",
           "B: (0, −4)",
           "C: (2, −4)",
-          "D: (4, −2)"
+          "D: (4, −2)",
+          "Question 11. A line is graphed on a coordinate plane. The line has arrows at both ends, rises from left to right, and passes through (−2, −5), (0, −4), and (2, −3). Line y = −x + 2 will be graphed on the same coordinate plane to create a system of equations. What is the solution to that system of equations? Choices: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2)."
         ],
         "es": [
           "(0, −4)",
           "(2, −3)",
           "(4, −2)",
-          "1 unidad",
-          "2 unidades",
           "y = −x + 2",
           "(−2, 4)",
           "(2, −4)",
           "A: (−2, 4)",
           "B: (0, −4)",
           "C: (2, −4)",
-          "D: (4, −2)"
+          "D: (4, −2)",
+          "Pregunta 11. Se traza una recta en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. La recta ascendente pasa por (−2, −5), (0, −4) y (2, −3); tiene flechas en ambos extremos. La recta y = −x + 2 se trazará en el mismo plano de coordenadas para crear un sistema de ecuaciones. ¿Cuál es la solución de ese sistema de ecuaciones? Opciones: A: (−2, 4). B: (0, −4). C: (2, −4). D: (4, −2)."
         ]
       }
     },
@@ -455,7 +457,7 @@
       "inputHash": "875e602179c04230bd3b8e092ed4109a80f4c6440227312ca75b8f132a462b78",
       "description": {
         "en": "Question 13. Rectangle A′B′C′D′ is similar to rectangle ABCD on a coordinate plane. Rectangle ABCD has vertices A(2, 4), B(6, 4), C(6, 2), and D(2, 2). Rectangle A′B′C′D′ has vertices A′(−1, 2), B′(−3, 2), C′(−3, 1), and D′(−1, 1). Which sequence of transformations maps rectangle ABCD onto rectangle A′B′C′D′? Choices: A: a translation 8 units to the left, then a dilation by a scale factor of 1/2 with a center of dilation at the origin. B: a reflection over the y-axis, then a dilation by a scale factor of 1/2 with a center of dilation at the origin. C: a dilation by a scale factor of 1/2 with a center of dilation at the origin, then a 90° counterclockwise rotation about the origin. D: a 90° counterclockwise rotation about the origin, then a dilation by a scale factor of 1/2 with a center of dilation at the origin.",
-        "es": "Pregunta 13. El rectángulo A′B′C′D′ es similar al rectángulo ABCD, como se muestra en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. El rectángulo ABCD tiene A en (2, 4), B en (6, 4), C en (6, 2) y D en (2, 2); mide 4 unidades de ancho y 2 unidades de alto. El rectángulo A′B′C′D′ tiene A′ en (−1, 2), B′ en (−3, 2), C′ en (−3, 1) y D′ en (−1, 1); mide 2 unidades de ancho y 1 unidad de alto. ¿Qué secuencia de transformaciones mapea el rectángulo ABCD en el rectángulo A′B′C′D′? Opciones: A: una traslación de 8 unidades hacia la izquierda, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. B: una reflexión sobre el eje y, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. C: una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen, luego una rotación de 90° en sentido contrario al reloj alrededor del origen. D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen."
+        "es": "Pregunta 13. El rectángulo A′B′C′D′ es similar al rectángulo ABCD, como se muestra en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. El rectángulo ABCD tiene A en (2, 4), B en (6, 4), C en (6, 2) y D en (2, 2). El rectángulo A′B′C′D′ tiene A′ en (−1, 2), B′ en (−3, 2), C′ en (−3, 1) y D′ en (−1, 1). ¿Qué secuencia de transformaciones mapea el rectángulo ABCD en el rectángulo A′B′C′D′? Opciones: A: una traslación de 8 unidades hacia la izquierda, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. B: una reflexión sobre el eje y, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. C: una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen, luego una rotación de 90° en sentido contrario al reloj alrededor del origen. D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen."
       },
       "requiredSourceTokens": {
         "en": [
@@ -481,7 +483,8 @@
           "(−1, 2)",
           "(−3, 2)",
           "(−3, 1)",
-          "(−1, 1)"
+          "(−1, 1)",
+          "Question 13. Rectangle A′B′C′D′ is similar to rectangle ABCD on a coordinate plane. Rectangle ABCD has vertices A(2, 4), B(6, 4), C(6, 2), and D(2, 2). Rectangle A′B′C′D′ has vertices A′(−1, 2), B′(−3, 2), C′(−3, 1), and D′(−1, 1). Which sequence of transformations maps rectangle ABCD onto rectangle A′B′C′D′? Choices: A: a translation 8 units to the left, then a dilation by a scale factor of 1/2 with a center of dilation at the origin. B: a reflection over the y-axis, then a dilation by a scale factor of 1/2 with a center of dilation at the origin. C: a dilation by a scale factor of 1/2 with a center of dilation at the origin, then a 90° counterclockwise rotation about the origin. D: a 90° counterclockwise rotation about the origin, then a dilation by a scale factor of 1/2 with a center of dilation at the origin."
         ],
         "es": [
           "A′B′C′D′",
@@ -490,13 +493,10 @@
           "(6, 4)",
           "(6, 2)",
           "(2, 2)",
-          "4 unidades",
-          "2 unidades",
           "(−1, 2)",
           "(−3, 2)",
           "(−3, 1)",
           "(−1, 1)",
-          "1 unidad",
           "8 unidades",
           "1/2",
           "90°",
@@ -504,7 +504,8 @@
           "A: una traslación de 8 unidades hacia la izquierda, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen",
           "B: una reflexión sobre el eje y, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen",
           "C: una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen, luego una rotación de 90° en sentido contrario al reloj alrededor del origen",
-          "D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen"
+          "D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen",
+          "Pregunta 13. El rectángulo A′B′C′D′ es similar al rectángulo ABCD, como se muestra en el siguiente plano de coordenadas. El plano tiene los ejes x e y y una cuadrícula de unidades. El rectángulo ABCD tiene A en (2, 4), B en (6, 4), C en (6, 2) y D en (2, 2). El rectángulo A′B′C′D′ tiene A′ en (−1, 2), B′ en (−3, 2), C′ en (−3, 1) y D′ en (−1, 1). ¿Qué secuencia de transformaciones mapea el rectángulo ABCD en el rectángulo A′B′C′D′? Opciones: A: una traslación de 8 unidades hacia la izquierda, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. B: una reflexión sobre el eje y, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen. C: una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen, luego una rotación de 90° en sentido contrario al reloj alrededor del origen. D: una rotación de 90° en sentido contrario al reloj alrededor del origen, luego una dilatación por un factor de escala de 1/2 con un centro de dilatación en el origen."
         ]
       }
     },
@@ -586,7 +587,7 @@
     "nysed-2021-g8-mc-q16": {
       "inputHash": "eea056fedae5022a587e2b0b78fdfd7570ada25369bbb6ac6994db25dd6f4c89",
       "description": {
-        "en": "Question 16. Which statement about the solution to the equation 3 = −(1/3)x is true? Choices: A: There is no solution. B: There is only one solution, x = −1. C: There is only one solution, x = −9. D: There are an infinite number of solutions.",
+        "en": "Question 16. Which statement about the solution to the equation shown below is true? 3 = −(1/3)x. Choices: A: There is no solution. B: There is only one solution, x = −1. C: There is only one solution, x = −9. D: There are an infinite number of solutions.",
         "es": "Pregunta 16. ¿Qué afirmación sobre la solución de la ecuación que se muestra a continuación es verdadera? La ecuación es 3 = −(1/3)x. Opciones: A: No hay solución. B: Hay solo una solución, x = −1. C: Hay solo una solución, x = −9. D: Hay una cantidad infinita de soluciones."
       },
       "requiredSourceTokens": {
@@ -598,7 +599,8 @@
           "B: There is only one solution, x = −1",
           "C: There is only one solution, x = −9",
           "D: There are an infinite number of solutions",
-          "(1/3)"
+          "(1/3)",
+          "Question 16. Which statement about the solution to the equation shown below is true? 3 = −(1/3)x. Choices: A: There is no solution. B: There is only one solution, x = −1. C: There is only one solution, x = −9. D: There are an infinite number of solutions."
         ],
         "es": [
           "3 = −(1/3)x",
@@ -608,7 +610,8 @@
           "B: Hay solo una solución, x = −1",
           "C: Hay solo una solución, x = −9",
           "D: Hay una cantidad infinita de soluciones",
-          "(1/3)"
+          "(1/3)",
+          "Pregunta 16. ¿Qué afirmación sobre la solución de la ecuación que se muestra a continuación es verdadera? La ecuación es 3 = −(1/3)x. Opciones: A: No hay solución. B: Hay solo una solución, x = −1. C: Hay solo una solución, x = −9. D: Hay una cantidad infinita de soluciones."
         ]
       }
     },

@@ -21,6 +21,7 @@ from scripts.import_nysed_math_mc import (
 from scripts.nysed_math_explanations import (
     MATH_EXPLANATION_POLICY_VERSION,
     MathQuestionExplanationInput,
+    VINE_AUTHORED_LEGACY_RATIONALE_IDS,
     math_question_explanation_input_hash,
 )
 
@@ -294,9 +295,13 @@ class ImportedMathExplanationValidationTests(unittest.TestCase):
         self.assertEqual(
             legacy,
             EXPECTED_OFFICIAL_EXPLANATION_TOTAL
-            + EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL,
+            + EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL
+            + len(VINE_AUTHORED_LEGACY_RATIONALE_IDS),
         )
-        self.assertEqual(total - legacy, EXPECTED_VINE_EXPLANATION_TOTAL)
+        self.assertEqual(
+            total - legacy + len(VINE_AUTHORED_LEGACY_RATIONALE_IDS),
+            EXPECTED_VINE_EXPLANATION_TOTAL,
+        )
 
 
 if __name__ == "__main__":

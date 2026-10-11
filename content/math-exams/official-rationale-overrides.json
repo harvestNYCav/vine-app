@@ -9,7 +9,7 @@
     },
     "nysed-2013-g3-mc-q4": {
       "rawRationaleSha256": "277637afb8332437b79231638fc0eb49bb2a33d89c96b0606a86bb4dd89accb9",
-      "text": "2/8 - This response correctly identifies a valid comparison. The student understands that the denominator shows the number of parts of the whole and when the denominators are the same the numerators can be used directly to compare the fractions. Since 4 is greater than 2, 4/8 > 2/8.",
+      "text": "“2/8” This response correctly identifies a valid comparison. The student understands that the denominator shows the number of parts of the whole and when the denominators are the same the numerators can be used directly to compare the fractions. Since 4 is greater than 2, 4/8 > 2/8.",
       "source": "official-nysed"
     },
     "nysed-2013-g3-mc-q8": {
@@ -39,12 +39,12 @@
     },
     "nysed-2013-g4-mc-q8": {
       "rawRationaleSha256": "e6ff9a8e53cf5f915fa48659cbd87349c53246968130f8766e32b078d9027834",
-      "text": "41 - This response indicates a clear understanding of number patterns that arise from a rule; the student may have continued the pattern with precision. Or in continuing the pattern, the student may have recognized that each number in the pattern was 1 less than a multiple of 7. Since 42 is a multiple of 7, the correct response is 41.",
+      "text": "“41” This response indicates a clear understanding of number patterns that arise from a rule; the student may have continued the pattern with precision. Or in continuing the pattern, the student may have recognized that each number in the pattern was 1 less than a multiple of 7. Since 42 is a multiple of 7, the correct response is 41.",
       "source": "official-nysed-corrected"
     },
     "nysed-2013-g5-mc-q1": {
       "rawRationaleSha256": "a616cf059896cc11acf03913ee3e5f1608fda7df074133ca73176b6fce94ac5d",
-      "text": "3/8 - The student has correctly identified the area of the shaded part of the square. The side lengths of the shaded rectangle are 3/4 foot and 1/2 foot, and (3/4) × (1/2) = 3/8 square foot. A student may also count the equal tiles and see that 3/8 of the square is shaded.",
+      "text": "“3/8” The student has correctly identified the area of the shaded part of the square. The side lengths of the shaded rectangle are 3/4 foot and 1/2 foot, and (3/4) × (1/2) = 3/8 square foot. A student may also count the equal tiles and see that 3/8 of the square is shaded.",
       "source": "official-nysed"
     },
     "nysed-2013-g5-mc-q10": {
@@ -59,7 +59,7 @@
     },
     "nysed-2013-g5-mc-q3": {
       "rawRationaleSha256": "54e4bb0a94a37002bdfe86a8966076ff4f6d63a1d16ab19c702ee80295604ea7",
-      "text": "1/12 - The student correctly added the unlike fractions and subtracted their sum from 1: 3/4 + 1/6 = 9/12 + 2/12 = 11/12, and 1 − 11/12 = 1/12. Therefore Mr. Morris put up 1/12 of the fence on Wednesday.",
+      "text": "“1/12” The student correctly added the unlike fractions and subtracted their sum from 1: 3/4 + 1/6 = 9/12 + 2/12 = 11/12, and 1 − 11/12 = 1/12. Therefore Mr. Morris put up 1/12 of the fence on Wednesday.",
       "source": "official-nysed"
     },
     "nysed-2013-g5-mc-q4": {
@@ -89,7 +89,7 @@
     },
     "nysed-2013-g7-mc-q2": {
       "rawRationaleSha256": "0cfbc6e00f96787fba68fca35e66ff97f4bd59f19ac9f73b4dc9ed665ad7148f",
-      "text": "“9/20” The student correctly evaluated the expression. The additive inverses 3/8 and −3/8 cancel, leaving −4/5 + 5/4 = −16/20 + 25/20 = 9/20.",
+      "text": "“9/20” The student determined the correct value of the expression. Students who recognized the presence of additive inverses were rewarded with a simpler expression to calculate. 3/8 + (−4/5) + (−3/8) + 5/4 = 9/20.",
       "source": "official-nysed"
     },
     "nysed-2013-g7-mc-q5": {
@@ -124,7 +124,7 @@
     },
     "nysed-2013-g8-mc-q50": {
       "rawRationaleSha256": "671ac6e2b707c96706f0a3c118b1e0582fdf724ea5088fb196cc40df657e2213",
-      "text": "“y = 3x² - 2” The student correctly determined that this equation does not represent a linear function. A linear function has x raised only to the first power in the form y = mx + b; here x is squared.",
+      "text": "“y = 3x² − 2” The student correctly determined that this equation does not represent a linear function. A linear function has x raised only to the first power in the form y = mx + b; here x is squared.",
       "source": "official-nysed"
     },
     "nysed-2013-g8-mc-q6": {
@@ -579,7 +579,7 @@
     },
     "nysed-2014-g6-mc-q49": {
       "rawRationaleSha256": "2ac4c677daff5e78b5fc8442d65b1e1be7d5dfb9bf462a753856f3adce258077",
-      "text": "The vertical side from (4, 3) to (4, −4) is |3| + |−4| = 7 units long. The horizontal side from (4, 3) to (−2, 3) is |4| + |−2| = 6 units long. The rectangle is 7 units by 6 units.",
+      "text": "The endpoints (4, 3) and (4, −4) are on opposite sides of the x-axis, so the vertical side is |3| + |−4| = 7 units long. The endpoints (4, 3) and (−2, 3) are on opposite sides of the y-axis, so the horizontal side is |4| + |−2| = 6 units long. The rectangle is 7 units by 6 units.",
       "source": "vine-authored"
     },
     "nysed-2014-g6-mc-q11": {
@@ -644,7 +644,7 @@
     },
     "nysed-2014-g7-mc-q3": {
       "rawRationaleSha256": "54119ecbf8689f7029ed6b9ed86e5d4e02b417a335a241fa8699430377d31ff6",
-      "text": "“4x − 3”; This response represents the correct equivalent expression. (7x − 5) −(3x − 2) = 7x − 3x − 5 −(− 2) = 4x − 3",
+      "text": "“4x − 3”; This response represents the correct equivalent expression. (7x − 5) − (3x − 2) = 7x − 3x − 5 − (−2) = 4x − 3.",
       "source": "official-nysed-corrected"
     },
     "nysed-2014-g7-mc-q14": {
@@ -684,7 +684,7 @@
     },
     "nysed-2014-g8-mc-q13": {
       "rawRationaleSha256": "84a94a1c3ea2d193eb8ec689b5981147dcc103901a509710b2cf8c39c0b2defe",
-      "text": "The three adjacent angles on straight line G–N–L total 180°, so ∠FNM = 180° − 60° − 47° = 73°. Angles HNK and FNM are vertical angles, so they have equal measures. Therefore ∠HNK = 73°.",
+      "text": "Angles GNF, FNM, and MNL together make the straight angle GNL, so 60° + ∠FNM + 47° = 180° and ∠FNM = 73°. Angles HNK and FNM are vertical angles, so ∠HNK = 73°.",
       "source": "vine-authored"
     },
     "nysed-2014-g8-mc-q27": {
@@ -720,6 +720,16 @@
     "nysed-2014-g6-mc-q40": {
       "rawRationaleSha256": "d17378828a936a005fb6bfc6dc677ccf3464df58655370d1d1d1845de97b2c3b",
       "text": "“the area of a rectangle with side lengths 1.3 and x”; This phrase is best represented by the given expression. The student may have observed that the area of a rectangle is the product of the side lengths, which are 1.3 and x, leading to the expression 1.3x. A student who selects this response understands how to represent numbers and write expressions in the context of a real-world problem.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g4-mc-q1": {
+      "rawRationaleSha256": "619616ce5e3b53dafddcd994c3125beb5b899e855f216709f225293b8164a661",
+      "text": "“16,472” This response indicates the student has a clear understanding of converting a multi-digit whole number from a number name to standard form, using principles of place value and the meanings of the digits in each place.",
+      "source": "official-nysed"
+    },
+    "nysed-2013-g4-mc-q10": {
+      "rawRationaleSha256": "af5efa3ae1c4d49cfbe8dc7aed549cc37df12748c26bef5cf8fb33b46e7d63bb",
+      "text": "“10” This response indicates a clear understanding of place value and the ability to apply concepts of place value and multiplicative comparison to recognize that a digit in one place represents ten times what it represents in the place to its right. The student either understands that 700 × 10 = 7,000 or 7,000 ÷ 700 = 10.",
       "source": "official-nysed"
     }
   }

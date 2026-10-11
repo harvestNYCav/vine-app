@@ -51,8 +51,9 @@ _EN_REASONING_RE = re.compile(
 )
 _ES_REASONING_RE = re.compile(
     r"\b(?:porque|ya\s+que|por\s+lo\s+tanto|as[ií]\s+que|entonces|lo\s+que|"
-    r"da|resulta|equivale|representa|muestra|significa|sustitu(?:ir|yendo)|"
-    r"calcul(?:ar|ando)|divid(?:ir|iendo)|multiplic(?:ar|ando)|sum(?:ar|ando)|"
+    r"da|resulta|equivale|representan?|muestran?|significa|sustitu(?:ir|yendo)|"
+    r"calcul(?:ar|ando)|divid(?:ir|iendo|e|en)|multiplic(?:ar|ando)|sum(?:ar|ando)|"
+    r"cuentan?|agregar|redondean?|es\s+igual\s+a|"
     r"rest(?:ar|ando)|simplific(?:ar|ando)|compar(?:ar|ando)|cont(?:ar|ando)|"
     r"med(?:ir|iendo)|convert(?:ir|iendo)|resolv(?:er|iendo)|evalu(?:ar|ando))\b|"
     r"[=×÷+−<>]",
@@ -74,6 +75,8 @@ OFFICIAL_RATIONALE_OVERRIDE_QUESTION_IDS = frozenset({'nysed-2013-g3-mc-q1',
            'nysed-2013-g3-mc-q4',
            'nysed-2013-g3-mc-q8',
            'nysed-2013-g3-mc-q9',
+           'nysed-2013-g4-mc-q1',
+           'nysed-2013-g4-mc-q10',
            'nysed-2013-g4-mc-q11',
            'nysed-2013-g4-mc-q3',
            'nysed-2013-g4-mc-q4',
@@ -488,9 +491,16 @@ def validate_math_question_explanation(value: Any, *, question_id: str) -> Local
     if source not in _SOURCES:
         raise MathExplanationError(f"Explanation source for {question_id} is invalid")
     localized = _exact_keys(record["text"], {"en", "es"}, label=f"Localized explanation for {question_id}")
+    # The 2013–2014 releases are English-only. Their reviewed legacy rewrites
+    # intentionally repeat English in both fields, like the official rationales.
+    spanish_field_language = (
+        "English"
+        if question_id in VINE_AUTHORED_LEGACY_RATIONALE_IDS and localized["es"] == localized["en"]
+        else "Spanish"
+    )
     return LocalizedMathExplanation(
         en=_validate_text(localized["en"], question_id=question_id, language="English", source=source),
-        es=_validate_text(localized["es"], question_id=question_id, language="Spanish", source=source),
+        es=_validate_text(localized["es"], question_id=question_id, language=spanish_field_language, source=source),
         source=source,
     )
 

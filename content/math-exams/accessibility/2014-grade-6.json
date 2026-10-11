@@ -509,13 +509,10 @@
     "nysed-2014-g6-mc-q48": {
       "inputHash": "cda03ba9669214a85d2569c5c1d652eb9e20cdee66c86654f389eccacaf7a2e8",
       "description": {
-        "en": "Question 48. Points F, G, and H are represented on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y. Both axes begin at 0, and the labeled values 1 through 7 increase by 1. Point F is at (0, 0), point G is at (4, 2), and point H is at (6, 3). Which statement is true for each of the points? Choices: A: The x-coordinate is 1/2 the y-coordinate. B: The x-coordinate is 2 times the y-coordinate. C: The x-coordinate is 2 more than the y-coordinate. D: The x-coordinate is 3 more than the y-coordinate."
+        "en": "Question 48. Points F, G, and H are represented on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y. Both axes begin at 0, and the labeled values 1 through 7 increase by 1. F is at the origin. G is where the vertical grid line above x-axis label 4 meets the horizontal grid line beside y-axis label 2. H is where the vertical line above 6 meets the horizontal line beside 3. Which statement is true for each of the points? Choices: A: The x-coordinate is 1/2 the y-coordinate. B: The x-coordinate is 2 times the y-coordinate. C: The x-coordinate is 2 more than the y-coordinate. D: The x-coordinate is 3 more than the y-coordinate."
       },
       "requiredSourceTokens": {
         "en": [
-          "(0, 0)",
-          "(4, 2)",
-          "(6, 3)",
           "1/2",
           "2 times",
           "2 more",
@@ -523,7 +520,8 @@
           "A: The x-coordinate is 1/2 the y-coordinate",
           "B: The x-coordinate is 2 times the y-coordinate",
           "C: The x-coordinate is 2 more than the y-coordinate",
-          "D: The x-coordinate is 3 more than the y-coordinate"
+          "D: The x-coordinate is 3 more than the y-coordinate",
+          "Question 48. Points F, G, and H are represented on a coordinate grid. The horizontal axis is labeled x and the vertical axis is labeled y. Both axes begin at 0, and the labeled values 1 through 7 increase by 1. F is at the origin. G is where the vertical grid line above x-axis label 4 meets the horizontal grid line beside y-axis label 2. H is where the vertical line above 6 meets the horizontal line beside 3. Which statement is true for each of the points? Choices: A: The x-coordinate is 1/2 the y-coordinate. B: The x-coordinate is 2 times the y-coordinate. C: The x-coordinate is 2 more than the y-coordinate. D: The x-coordinate is 3 more than the y-coordinate."
         ]
       }
     },

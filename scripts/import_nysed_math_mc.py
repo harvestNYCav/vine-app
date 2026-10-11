@@ -23,6 +23,11 @@ Tesseract is used only when a released PDF stores question numbers as images
 
 from __future__ import annotations
 
+try:
+    from scripts.nysed_content_checks import validate_math_minus_signs, validate_explanation_choice
+except ModuleNotFoundError:
+    from nysed_content_checks import validate_math_minus_signs, validate_explanation_choice
+
 import argparse
 import calendar
 import dataclasses
@@ -79,6 +84,7 @@ try:
         MathExplanationError,
         MathQuestionExplanationInput,
         OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS,
+        VINE_AUTHORED_LEGACY_RATIONALE_IDS,
         extract_official_math_rationale,
         load_official_math_rationale_overrides,
         load_math_exam_explanations,
@@ -93,6 +99,7 @@ except ModuleNotFoundError:  # pragma: no cover - permits direct script executio
         MathExplanationError,
         MathQuestionExplanationInput,
         OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS,
+        VINE_AUTHORED_LEGACY_RATIONALE_IDS,
         extract_official_math_rationale,
         load_official_math_rationale_overrides,
         load_math_exam_explanations,
@@ -136,9 +143,9 @@ EXPECTED_MC_COUNTS: dict[int, tuple[int, int, int, int, int, int]] = {
     2026: (27, 31, 31, 31, 34, 34),
 }
 EXPECTED_GRAND_TOTAL = 1839
-EXPECTED_OFFICIAL_EXPLANATION_TOTAL = 223
-EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL = 5
-EXPECTED_VINE_EXPLANATION_TOTAL = 1611
+EXPECTED_OFFICIAL_EXPLANATION_TOTAL = 179
+EXPECTED_OFFICIAL_CORRECTED_EXPLANATION_TOTAL = 24
+EXPECTED_VINE_EXPLANATION_TOTAL = 1636
 EXPECTED_REVIEWED_ACCESSIBILITY_QUESTION_TOTAL = 1_839
 EXPECTED_REVIEWED_ACCESSIBILITY_LOCALIZATION_TOTAL = 3_131
 EXPECTED_GRADE_5_8_ACCESSIBILITY_QUESTION_TOTAL = 1_277
@@ -3469,9 +3476,20 @@ def validate_imported_question_explanation(
         )
     except (MathExplanationError, TypeError, ValueError) as exc:
         raise ImportFailure(f"Invalid explanation in {question_id}: {exc}") from exc
+    for localized_text in (explanation.en, explanation.es):
+        try:
+            validate_math_minus_signs(localized_text, question_id=question_id)
+            if "correct" in question:
+                validate_explanation_choice(
+                    localized_text, correct=question["correct"], question_id=question_id,
+                )
+        except ValueError as exc:
+            raise ImportFailure(str(exc)) from exc
     if year <= 2014:
         expected_source = (
-            "official-nysed-corrected"
+            "vine-authored"
+            if question_id in VINE_AUTHORED_LEGACY_RATIONALE_IDS
+            else "official-nysed-corrected"
             if question_id in OFFICIAL_RATIONALE_SEMANTIC_CORRECTION_IDS
             else "official-nysed"
         )

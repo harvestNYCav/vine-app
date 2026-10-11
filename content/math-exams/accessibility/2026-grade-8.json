@@ -612,15 +612,12 @@
     "nysed-2026-g8-mc-q18": {
       "inputHash": "d56976e59ab3b2505d6bc8418dc62b526bc9817f3a90e1ea49f65ddf4b01905a",
       "description": {
-        "en": "Question 18. The graph of a function is drawn on a coordinate plane. From the left, a ray slopes downward as x increases until reaching (−6, 5). The graph is then horizontal at y = 5 from x = −6 through x = 2. Beginning at (2, 5), a ray slopes upward as x increases. Which statement is true about the function? Choices: A: The function is constant when x is less than −6. B: The function is decreasing when x is greater than 2. C: The function is increasing when x is greater than 2. D: The function is decreasing when x is between the values of −6 and 2.",
-        "es": "Pregunta 18. A continuación, se muestra el gráfico de una función en un plano de coordenadas. La gráfica es lineal por tramos y tiene flechas en sus dos extremos. Desde la izquierda, un tramo decreciente llega al punto (−6, 5). Luego, un tramo horizontal, y = 5, se extiende desde x = −6 hasta x = 2. A partir del punto (2, 5), un tramo creciente continúa hacia la derecha. ¿Qué afirmación es verdadera sobre la función? Opciones: A: La función es constante cuando x es menor que −6. B: La función es decreciente cuando x es mayor que 2. C: La función es creciente cuando x es mayor que 2. D: La función es decreciente cuando x está entre los valores de −6 y 2."
+        "en": "Question 18. The graph of a function is shown on a coordinate plane. A ray with an arrow at its upper-left end passes through about (−8, 8) and ends at (−6, 5). A horizontal segment connects (−6, 5) to (2, 5). A ray starts at (2, 5) and passes through (4, 6), (6, 7), and (8, 8), with an arrow at its upper-right end. Which statement is true about the function? Choices: A: The function is constant when x is less than −6. B: The function is decreasing when x is greater than 2. C: The function is increasing when x is greater than 2. D: The function is decreasing when x is between the values of −6 and 2.",
+        "es": "Pregunta 18. A continuación, se muestra el gráfico de una función en un plano de coordenadas. Una semirrecta con una flecha en su extremo superior izquierdo pasa aproximadamente por (−8, 8) y termina en (−6, 5). Un segmento horizontal une (−6, 5) con (2, 5). Una semirrecta comienza en (2, 5) y pasa por (4, 6), (6, 7) y (8, 8), con una flecha en su extremo superior derecho. ¿Qué afirmación es verdadera sobre la función? Opciones: A: La función es constante cuando x es menor que −6. B: La función es decreciente cuando x es mayor que 2. C: La función es creciente cuando x es mayor que 2. D: La función es decreciente cuando x está entre los valores de −6 y 2."
       },
       "requiredSourceTokens": {
         "en": [
           "(−6, 5)",
-          "y = 5",
-          "x = −6",
-          "x = 2",
           "(2, 5)",
           "x is less than −6",
           "x is greater than 2",
@@ -628,13 +625,11 @@
           "A: The function is constant when x is less than −6",
           "B: The function is decreasing when x is greater than 2",
           "C: The function is increasing when x is greater than 2",
-          "D: The function is decreasing when x is between the values of −6 and 2"
+          "D: The function is decreasing when x is between the values of −6 and 2",
+          "Question 18. The graph of a function is shown on a coordinate plane. A ray with an arrow at its upper-left end passes through about (−8, 8) and ends at (−6, 5). A horizontal segment connects (−6, 5) to (2, 5). A ray starts at (2, 5) and passes through (4, 6), (6, 7), and (8, 8), with an arrow at its upper-right end. Which statement is true about the function? Choices: A: The function is constant when x is less than −6. B: The function is decreasing when x is greater than 2. C: The function is increasing when x is greater than 2. D: The function is decreasing when x is between the values of −6 and 2."
         ],
         "es": [
           "(−6, 5)",
-          "y = 5",
-          "x = −6",
-          "x = 2",
           "(2, 5)",
           "x es menor que −6",
           "x es mayor que 2",
@@ -642,7 +637,8 @@
           "A: La función es constante cuando x es menor que −6",
           "B: La función es decreciente cuando x es mayor que 2",
           "C: La función es creciente cuando x es mayor que 2",
-          "D: La función es decreciente cuando x está entre los valores de −6 y 2"
+          "D: La función es decreciente cuando x está entre los valores de −6 y 2",
+          "Pregunta 18. A continuación, se muestra el gráfico de una función en un plano de coordenadas. Una semirrecta con una flecha en su extremo superior izquierdo pasa aproximadamente por (−8, 8) y termina en (−6, 5). Un segmento horizontal une (−6, 5) con (2, 5). Una semirrecta comienza en (2, 5) y pasa por (4, 6), (6, 7) y (8, 8), con una flecha en su extremo superior derecho. ¿Qué afirmación es verdadera sobre la función? Opciones: A: La función es constante cuando x es menor que −6. B: La función es decreciente cuando x es mayor que 2. C: La función es creciente cuando x es mayor que 2. D: La función es decreciente cuando x está entre los valores de −6 y 2."
         ]
       }
     },
@@ -812,8 +808,8 @@
     "nysed-2026-g8-mc-q23": {
       "inputHash": "8e7dfa4a405f7ab08251681a71e9f811908a503c74b6009d7f09f4cb7b130317",
       "description": {
-        "en": "Question 23. Two intersecting lines create four angles. One line is horizontal, and the other rises from lower left to upper right. The upper-left angle is labeled (4x − 15)°, and its vertical angle, the lower-right angle, is labeled 115°. What is the value of x? Choices: A: 20 B: 26.25 C: 32.5 D: 48.75",
-        "es": "Pregunta 23. Dos líneas que se intersecan crean cuatro ángulos. Una línea es horizontal, con flechas en ambos extremos, y la otra asciende de izquierda a derecha, también con flechas en ambos extremos. El ángulo situado arriba de la línea horizontal y a la izquierda de la línea inclinada mide (4x − 15)°. El ángulo opuesto por el vértice, situado debajo de la línea horizontal y a la derecha de la línea inclinada, mide 115°. ¿Cuál es el valor de x? Opciones: A: 20. B: 26.25. C: 32.5. D: 48.75."
+        "en": "Question 23. Two intersecting lines create four angles. One line is horizontal, and the other rises from lower left to upper right. The upper-left angle is labeled (4x − 15)°, and the lower-right angle is labeled 115°. What is the value of x? Choices: A: 20 B: 26.25 C: 32.5 D: 48.75",
+        "es": "Pregunta 23. Dos líneas que se intersecan crean cuatro ángulos. Una línea es horizontal, con flechas en ambos extremos, y la otra asciende de izquierda a derecha, también con flechas en ambos extremos. El ángulo situado arriba de la línea horizontal y a la izquierda de la línea inclinada mide (4x − 15)°. El ángulo situado debajo de la línea horizontal y a la derecha de la línea inclinada mide 115°. ¿Cuál es el valor de x? Opciones: A: 20. B: 26.25. C: 32.5. D: 48.75."
       },
       "requiredSourceTokens": {
         "en": [
@@ -827,7 +823,8 @@
           "B: 26.25",
           "C: 32.5",
           "D: 48.75",
-          "(4x − 15)"
+          "(4x − 15)",
+          "Question 23. Two intersecting lines create four angles. One line is horizontal, and the other rises from lower left to upper right. The upper-left angle is labeled (4x − 15)°, and the lower-right angle is labeled 115°. What is the value of x? Choices: A: 20 B: 26.25 C: 32.5 D: 48.75"
         ],
         "es": [
           "(4x − 15)°",
@@ -840,7 +837,8 @@
           "B: 26.25",
           "C: 32.5",
           "D: 48.75",
-          "(4x − 15)"
+          "(4x − 15)",
+          "Pregunta 23. Dos líneas que se intersecan crean cuatro ángulos. Una línea es horizontal, con flechas en ambos extremos, y la otra asciende de izquierda a derecha, también con flechas en ambos extremos. El ángulo situado arriba de la línea horizontal y a la izquierda de la línea inclinada mide (4x − 15)°. El ángulo situado debajo de la línea horizontal y a la derecha de la línea inclinada mide 115°. ¿Cuál es el valor de x? Opciones: A: 20. B: 26.25. C: 32.5. D: 48.75."
         ]
       }
     },
@@ -1102,38 +1100,30 @@
     "nysed-2026-g8-mc-q32": {
       "inputHash": "9914945dadaacca943873b58cd9ce5b17819205a1398accfc097be639e47dc00",
       "description": {
-        "en": "Question 32. An equation is 1/2(14 + 4x) = 5(x − 2) + 2. What value of x makes the equation true? Choices: A: 2 1/7. B: 5. C: 6 1/3. D: 7.",
-        "es": "Pregunta 32. A continuación, se muestra una ecuación: ½(14 + 4x) = 5(x − 2) + 2. ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: 2 1/7 B: 5 C: 6 1/3 D: 7"
+        "en": "Question 32. An equation is shown below. (1/2)(14 + 4x) = 5(x − 2) + 2. What value of x makes the equation true? Choices: A: 2 and 1/7. B: 5. C: 6 and 1/3. D: 7.",
+        "es": "Pregunta 32. A continuación, se muestra una ecuación: (1/2)(14 + 4x) = 5(x − 2) + 2. ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: 2 y 1/7 B: 5 C: 6 y 1/3 D: 7"
       },
       "requiredSourceTokens": {
         "en": [
-          "1/2(14 + 4x) = 5(x − 2) + 2",
           "x",
-          "2 1/7",
           "5",
-          "6 1/3",
           "7",
-          "A: 2 1/7",
           "B: 5",
-          "C: 6 1/3",
           "D: 7",
           "1/2",
           "(14 + 4x)",
-          "(x − 2)"
+          "(x − 2)",
+          "Question 32. An equation is shown below. (1/2)(14 + 4x) = 5(x − 2) + 2. What value of x makes the equation true? Choices: A: 2 and 1/7. B: 5. C: 6 and 1/3. D: 7."
         ],
         "es": [
-          "½(14 + 4x) = 5(x − 2) + 2",
           "x",
-          "2 1/7",
           "5",
-          "6 1/3",
           "7",
-          "A: 2 1/7",
           "B: 5",
-          "C: 6 1/3",
           "D: 7",
           "(14 + 4x)",
-          "(x − 2)"
+          "(x − 2)",
+          "Pregunta 32. A continuación, se muestra una ecuación: (1/2)(14 + 4x) = 5(x − 2) + 2. ¿Qué valor de x hace que la ecuación sea verdadera? Opciones: A: 2 y 1/7 B: 5 C: 6 y 1/3 D: 7"
         ]
       }
     },
