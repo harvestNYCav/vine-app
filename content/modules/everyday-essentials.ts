@@ -194,7 +194,7 @@ const module: Module = {
   ],
   worksheet: [
     { id: 'w1', promptEn: 'What is your phone ____?', promptEs: '¿Cuál es tu número de teléfono? (What is your phone ____?)', answer: 'number' },
-    { id: 'w2', promptEn: 'Where is the ____?', promptEs: '¿Dónde está el baño? (Where is the ____?)', answer: 'bathroom' },
+    { id: 'w2', promptEn: 'Where is the ____?', promptEs: '¿Dónde está el baño? (Where is the ____?)', answer: 'bathroom', acceptedAnswers: ['restroom'] },
     { id: 'w3', promptEn: 'I need ____.', promptEs: 'Necesito ayuda. (I need ____.)', answer: 'help' },
     { id: 'w4', promptEn: 'I am ____.', promptEs: 'Estoy perdido. (I am ____.)', answer: 'lost' },
     { id: 'w5', promptEn: 'Can I use your ____?', promptEs: '¿Puedo usar tu teléfono? (Can I use your ____?)', answer: 'phone' },

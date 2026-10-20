@@ -329,7 +329,7 @@ const module: Module = {
   worksheet: [
     { id: 'w1', promptEn: 'Excuse me, ____ train goes to Manhattan?', promptEs: 'Disculpe, ¿____ tren va a Manhattan?', answer: 'which' },
     { id: 'w2', promptEn: 'Wait for the train on the ____.', promptEs: 'Espera el tren en el ____.', answer: 'platform' },
-    { id: 'w3', promptEn: 'Turn ____ at the corner, then go straight.', promptEs: 'Dobla a la ____ en la esquina, luego sigue derecho.', answer: 'left' },
+    { id: 'w3', promptEn: 'Turn ____ at the corner, then go straight.', promptEs: 'Dobla a la ____ en la esquina, luego sigue derecho.', answer: 'left', acceptedAnswers: ['right'] },
     { id: 'w4', promptEn: 'The pharmacy is one ____ from here.', promptEs: 'La farmacia está a una ____ de aquí.', answer: 'block' },
     { id: 'w5', promptEn: 'Go straight ____, then turn right at the bank.', promptEs: 'Sigue ____, luego dobla a la derecha en el banco.', answer: 'ahead' },
   ],

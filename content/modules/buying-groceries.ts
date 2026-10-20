@@ -331,7 +331,7 @@ const module: Module = {
     { id: 'w2', promptEn: 'How ____ does this cost?', promptEs: '¿Cuánto cuesta esto? (How ____ does this cost?)', answer: 'much' },
     { id: 'w3', promptEn: 'I would ____ two pounds of rice.', promptEs: 'Quisiera dos libras de arroz. (I would ____ two pounds...)', answer: 'like' },
     { id: 'w4', promptEn: 'Do you ____ any fresh tomatoes?', promptEs: '¿Tiene tomates frescos? (Do you ____ any fresh tomatoes?)', answer: 'have' },
-    { id: 'w5', promptEn: 'Can I ____ a receipt, please?', promptEs: '¿Me puede dar el recibo? (Can I ____ a receipt, please?)', answer: 'have' },
+    { id: 'w5', promptEn: 'Can I ____ a receipt, please?', promptEs: '¿Me puede dar el recibo? (Can I ____ a receipt, please?)', answer: 'have', acceptedAnswers: ['get'] },
   ],
   classWorksheet: [
     { id: 'cw1', promptEn: 'The rice is in ____ 5.', promptEs: 'El arroz está en el pasillo 5. (The rice is in ____ 5.)', answer: 'aisle' },

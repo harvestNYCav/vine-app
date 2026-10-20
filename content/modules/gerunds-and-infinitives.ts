@@ -210,7 +210,7 @@ const module: Module = {
     },
   ],
   worksheet: [
-    { id: 'w1', promptEn: 'I like ____.', promptEs: 'Me gusta cocinar. (I like ____.)', answer: 'cooking' },
+    { id: 'w1', promptEn: 'I like ____.', promptEs: 'Me gusta cocinar. (I like ____.)', answer: 'cooking', acceptedAnswers: ['to cook'] },
     { id: 'w2', promptEn: 'I need ____ go to work.', promptEs: 'Necesito ir al trabajo. (I need ____ go to work.)', answer: 'to' },
     { id: 'w3', promptEn: 'I have ____ pick up my kids.', promptEs: 'Tengo que recoger a mis hijos. (I have ____ pick up my kids.)', answer: 'to' },
     { id: 'w4', promptEn: 'I want ____ learn English.', promptEs: 'Quiero aprender inglés. (I want ____ learn English.)', answer: 'to' },

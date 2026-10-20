@@ -324,7 +324,7 @@ const module: Module = {
   worksheet: [
     { id: 'w1', promptEn: 'I ____ two brothers.', promptEs: 'Tengo dos hermanos. (I ____ two brothers.)', answer: 'have' },
     { id: 'w2', promptEn: 'My ____ works in construction.', promptEs: 'Mi padre trabaja en construcción. (My ____ works in construction.)', answer: 'father' },
-    { id: 'w3', promptEn: 'How many ____ do you have?', promptEs: '¿Cuántos hijos tienes? (How many ____ do you have?)', answer: 'children' },
+    { id: 'w3', promptEn: 'How many ____ do you have?', promptEs: '¿Cuántos hijos tienes? (How many ____ do you have?)', answer: 'children', acceptedAnswers: ['kids'] },
     { id: 'w4', promptEn: 'This is my ____. She is my father\'s sister.', promptEs: 'Esta es mi tía. (This is my ____.)', answer: 'aunt' },
     { id: 'w5', promptEn: 'My ____ is one year old.', promptEs: 'Mi bebé tiene un año. (My ____ is one year old.)', answer: 'baby' },
   ],

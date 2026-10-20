@@ -206,7 +206,7 @@ const module: Module = {
   worksheet: [
     { id: 'w1', promptEn: 'Can I see the ____?', promptEs: '¿Puedo ver el menú? (Can I see the ____?)', answer: 'menu' },
     { id: 'w2', promptEn: 'I would ____ to order the chicken.', promptEs: 'Quisiera ordenar el pollo. (I would ____ to order the chicken.)', answer: 'like' },
-    { id: 'w3', promptEn: 'Can I have the ____, please?', promptEs: '¿Me trae la cuenta, por favor? (Can I have the ____, please?)', answer: 'check' },
+    { id: 'w3', promptEn: 'Can I have the ____, please?', promptEs: '¿Me trae la cuenta, por favor? (Can I have the ____, please?)', answer: 'check', acceptedAnswers: ['bill'] },
     { id: 'w4', promptEn: 'I want my food ____.', promptEs: 'Quiero mi comida para llevar. (I want my food ____.)', answer: 'to go' },
     { id: 'w5', promptEn: 'What time do you ____?', promptEs: '¿A qué hora cierran? (What time do you ____?)', answer: 'close' },
   ],

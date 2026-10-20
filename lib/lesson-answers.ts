@@ -18,6 +18,42 @@ function answerFor(answers: Map<string, unknown>, id: string) {
   return String(answers.get(id) ?? '')
 }
 
+// Each contraction and its full form are the same answer. Ambiguous ones ('s, 'd) are left out,
+// since "Maria's" is a possessive and "I'd" can mean "I had" or "I would".
+const CONTRACTIONS: [RegExp, string][] = Object.entries({
+  "don't": 'do not',
+  "doesn't": 'does not',
+  "didn't": 'did not',
+  "can't": 'cannot',
+  "won't": 'will not',
+  "isn't": 'is not',
+  "aren't": 'are not',
+  "wasn't": 'was not',
+  "weren't": 'were not',
+  "haven't": 'have not',
+  "hasn't": 'has not',
+  "couldn't": 'could not',
+  "wouldn't": 'would not',
+  "shouldn't": 'should not',
+  "i'm": 'i am',
+  "you're": 'you are',
+  "we're": 'we are',
+  "they're": 'they are',
+}).map(([short, long]) => [new RegExp(`(?<![\\w'])${short}(?![\\w'])`, 'g'), long])
+
+// Phone keyboards type curly apostrophes (’), so they count as straight ones. Beginners often drop
+// the apostrophe in "o'clock" altogether.
+export function normalizeAnswer(text: string) {
+  let normalized = text.trim().toLowerCase().replace(/[‘’ʼ`´]/g, "'").replace(/\s+/g, ' ')
+  for (const [short, long] of CONTRACTIONS) normalized = normalized.replace(short, long)
+  return normalized.replace(/\bcan not\b/g, 'cannot').replace(/\bo ?clock\b/g, "o'clock")
+}
+
+function isAcceptedAnswer(answer: string, expected: string, acceptedAnswers: string[] = []) {
+  const normalized = normalizeAnswer(answer)
+  return [expected, ...acceptedAnswers].some(option => normalizeAnswer(option) === normalized)
+}
+
 export function gradeQuiz(mod: Module, answerByQuestionId: Map<string, unknown>): AnswerResult[] {
   return mod.quiz.map(question => {
     const answer = answerFor(answerByQuestionId, question.id)
@@ -56,7 +92,7 @@ export function gradeHomework(
       prompt: question.promptEn,
       answer,
       expected: question.answer,
-      correct: answer.trim().toLowerCase() === question.answer.trim().toLowerCase(),
+      correct: isAcceptedAnswer(answer, question.answer, question.acceptedAnswers),
     }
   })
   return [...matching, ...fillIn]

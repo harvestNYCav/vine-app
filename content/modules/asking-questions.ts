@@ -200,7 +200,7 @@ const module: Module = {
     { id: 'w1', promptEn: '____ is your name?', promptEs: '¿Cómo te llamas? (____ is your name?)', answer: 'What' },
     { id: 'w2', promptEn: '____ do you live?', promptEs: '¿Dónde vives? (____ do you live?)', answer: 'Where' },
     { id: 'w3', promptEn: '____ much does this cost?', promptEs: '¿Cuánto cuesta esto? (____ much does this cost?)', answer: 'How' },
-    { id: 'w4', promptEn: '____ you help me?', promptEs: '¿Puedes ayudarme? (____ you help me?)', answer: 'Can' },
+    { id: 'w4', promptEn: '____ you help me?', promptEs: '¿Puedes ayudarme? (____ you help me?)', answer: 'Can', acceptedAnswers: ['Could'] },
     { id: 'w5', promptEn: '____ time is it?', promptEs: '¿Qué hora es? (____ time is it?)', answer: 'What' },
   ],
   classWorksheet: [

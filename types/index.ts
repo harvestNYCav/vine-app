@@ -54,6 +54,8 @@ export interface FillInBlankItem {
   promptEn: string
   promptEs?: string
   answer: string
+  // Other answers that are also correct (a synonym the lesson teaches, or another word that fits).
+  acceptedAnswers?: string[]
 }
 
 export interface GrammarExample {
