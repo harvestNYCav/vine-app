@@ -1,0 +1,1714 @@
+{
+  "description": "Vocabulary and grammar each ESL lesson introduces, in teaching order (ALL_MODULES in content/modules/index.ts, ESL track only). Source: each lesson's declared `vocab` and `grammar` fields. Vocabulary already declared in an earlier lesson is listed under review_vocabulary with the lesson that first introduced it.",
+  "scaffolding_rule": "A lesson may use vocabulary/grammar from its own entry or any earlier lesson. Very high-frequency function words (articles, pronouns, and, or, the, a, numbers 1-10, yes/no, please, thank you) and the proper names of people/places are generally acceptable; flag content words and grammar structures that are not introduced yet.",
+  "lessons": [
+    {
+      "lesson": "01",
+      "slug": "introducing-yourself",
+      "file": "content/modules/introducing-yourself.ts",
+      "title": "Introducing Yourself",
+      "new_vocabulary": [
+        {
+          "en": "My name is...",
+          "es": "Me llamo... / Mi nombre es..."
+        },
+        {
+          "en": "Nice to meet you",
+          "es": "Mucho gusto"
+        },
+        {
+          "en": "I am from...",
+          "es": "Soy de..."
+        },
+        {
+          "en": "I live in...",
+          "es": "Vivo en..."
+        },
+        {
+          "en": "I speak...",
+          "es": "Hablo..."
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?"
+        },
+        {
+          "en": "I am fine, thank you",
+          "es": "Estoy bien, gracias"
+        },
+        {
+          "en": "What is your name?",
+          "es": "¿Cómo te llamas?"
+        },
+        {
+          "en": "Good morning / Good afternoon",
+          "es": "Buenos días / Buenas tardes"
+        },
+        {
+          "en": "How old are you?",
+          "es": "¿Cuántos años tienes?"
+        },
+        {
+          "en": "I am ... years old",
+          "es": "Tengo ... años"
+        },
+        {
+          "en": "What do you do?",
+          "es": "¿A qué te dedicas?"
+        },
+        {
+          "en": "I work as a...",
+          "es": "Trabajo como..."
+        },
+        {
+          "en": "Goodbye / See you later",
+          "es": "Adiós / Hasta luego"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Talking about yourself: I + verb",
+          "rule": "To share facts about yourself, use \"I\" followed by a verb. With \"to be,\" use \"am\": I am Maria. I am thirty-five years old. With action verbs like live, speak, and work, the verb stays in its base form after \"I\": I live in Queens. I speak Spanish. I work as a cook.",
+          "examples": [
+            "I am Maria.",
+            "I live in Queens.",
+            "I speak Spanish and a little English.",
+            "I work as a cook."
+          ]
+        },
+        {
+          "title": "Asking questions: question word + is/are + subject",
+          "rule": "For \"to be\" questions, put the question word first, then \"is\" or \"are,\" then the subject: What is your name? Where are you from? How old are you? For questions about actions or routines, use \"do\": What do you do?",
+          "examples": [
+            "What is your name?",
+            "Where are you from?",
+            "How old are you?",
+            "What do you do?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "slug": "pronouns-and-greetings",
+      "file": "content/modules/pronouns-and-greetings.ts",
+      "title": "Pronouns and Greetings",
+      "new_vocabulary": [
+        {
+          "en": "I",
+          "es": "yo"
+        },
+        {
+          "en": "you",
+          "es": "tú / usted"
+        },
+        {
+          "en": "he / she",
+          "es": "él / ella"
+        },
+        {
+          "en": "we / they",
+          "es": "nosotros / ellos"
+        },
+        {
+          "en": "Hello / Hi",
+          "es": "Hola"
+        },
+        {
+          "en": "This is my friend...",
+          "es": "Este es mi amigo... / Esta es mi amiga..."
+        },
+        {
+          "en": "See you next week",
+          "es": "Nos vemos la próxima semana"
+        }
+      ],
+      "review_vocabulary": [
+        {
+          "en": "Good morning / Good afternoon",
+          "es": "Buenos días / Buenas tardes",
+          "first_introduced_in": "01"
+        },
+        {
+          "en": "How are you?",
+          "es": "¿Cómo estás?",
+          "first_introduced_in": "01"
+        },
+        {
+          "en": "I am fine, thank you",
+          "es": "Estoy bien, gracias",
+          "first_introduced_in": "01"
+        },
+        {
+          "en": "Nice to meet you",
+          "es": "Mucho gusto",
+          "first_introduced_in": "01"
+        },
+        {
+          "en": "What's your name?",
+          "es": "¿Cómo te llamas?",
+          "first_introduced_in": "01"
+        },
+        {
+          "en": "My name is...",
+          "es": "Me llamo...",
+          "first_introduced_in": "01"
+        },
+        {
+          "en": "Goodbye / See you later",
+          "es": "Adiós / Hasta luego",
+          "first_introduced_in": "01"
+        }
+      ],
+      "new_grammar": [
+        {
+          "title": "Subject pronouns: I, you, he/she, we, they",
+          "rule": "A subject pronoun replaces a person's name so you don't have to repeat it. Use \"he\" for a man or boy, \"she\" for a woman or girl, \"we\" when you include yourself with others, and \"they\" for two or more other people.",
+          "examples": [
+            "He is my son. She is my daughter.",
+            "We are neighbors.",
+            "They are my friends."
+          ]
+        },
+        {
+          "title": "Greetings for different times of day",
+          "rule": "\"Hello\" and \"Hi\" work at any time of day and in almost any situation. \"Good morning\" is used before noon, and \"Good afternoon\" from noon until evening — these sound a little more polite, which is useful with someone you don't know well.",
+          "examples": [
+            "Hello! How are you?",
+            "Good morning! Nice to see you."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "slug": "nouns-and-articles",
+      "file": "content/modules/nouns-and-articles.ts",
+      "title": "Nouns and Articles",
+      "new_vocabulary": [
+        {
+          "en": "a / an",
+          "es": "un / una"
+        },
+        {
+          "en": "the",
+          "es": "el / la / los / las"
+        },
+        {
+          "en": "book / books",
+          "es": "el libro / los libros"
+        },
+        {
+          "en": "an apple / apples",
+          "es": "una manzana / manzanas"
+        },
+        {
+          "en": "house",
+          "es": "la casa"
+        },
+        {
+          "en": "car",
+          "es": "el carro / el coche"
+        },
+        {
+          "en": "woman / women",
+          "es": "la mujer / las mujeres"
+        },
+        {
+          "en": "man / men",
+          "es": "el hombre / los hombres"
+        },
+        {
+          "en": "child / children",
+          "es": "el niño / los niños"
+        },
+        {
+          "en": "This is a...",
+          "es": "Esto es un/una..."
+        },
+        {
+          "en": "These are...",
+          "es": "Estos son... / Estas son..."
+        },
+        {
+          "en": "some",
+          "es": "algunos / algunas / un poco de"
+        },
+        {
+          "en": "water",
+          "es": "el agua"
+        },
+        {
+          "en": "money",
+          "es": "el dinero"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "\"a\" vs \"an\": listen to the sound, not the letter",
+          "rule": "Use \"an\" when the next word starts with a vowel sound (a, e, i, o, u) and \"a\" when it starts with a consonant sound. This is about sound, not spelling: an apple, a car, an umbrella, a house.",
+          "examples": [
+            "I have a book. She has an apple.",
+            "I need to buy a car."
+          ]
+        },
+        {
+          "title": "Irregular plurals: child, woman, man",
+          "rule": "Most nouns just add \"-s\" for the plural (book → books). But a few common nouns change completely: child becomes children, woman becomes women, and man becomes men. These are worth memorizing since they come up often.",
+          "examples": [
+            "I have three books.",
+            "The children are playing.",
+            "The men are working outside."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "slug": "tenses",
+      "file": "content/modules/tenses.ts",
+      "title": "Tenses",
+      "new_vocabulary": [
+        {
+          "en": "today / now",
+          "es": "hoy / ahora"
+        },
+        {
+          "en": "yesterday",
+          "es": "ayer"
+        },
+        {
+          "en": "tomorrow",
+          "es": "mañana"
+        },
+        {
+          "en": "I work / I worked / I will work",
+          "es": "Trabajo / Trabajé / Trabajaré"
+        },
+        {
+          "en": "I am ...-ing (right now)",
+          "es": "Estoy + -ando/-iendo (ahora mismo)"
+        },
+        {
+          "en": "was / were",
+          "es": "estaba (yo, él, ella) / estaban (tú, nosotros, ellos)"
+        },
+        {
+          "en": "will",
+          "es": "(verbo en futuro)"
+        },
+        {
+          "en": "go / went",
+          "es": "ir / fui (pasado)"
+        },
+        {
+          "en": "every day",
+          "es": "todos los días"
+        },
+        {
+          "en": "last week",
+          "es": "la semana pasada"
+        },
+        {
+          "en": "next week",
+          "es": "la próxima semana"
+        },
+        {
+          "en": "If..., I will...",
+          "es": "Si..., (verbo en futuro)..."
+        },
+        {
+          "en": "The house was built in 1990.",
+          "es": "La casa fue construida en 1990."
+        },
+        {
+          "en": "always / sometimes / never",
+          "es": "siempre / a veces / nunca"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Three basic tenses: present, past, future",
+          "rule": "Use the simple present for routines and facts: I work. Use the simple past for things already finished, often with \"-ed\": I worked. Use \"will\" + the base verb for the future: I will work. Some verbs change form in the past instead of adding \"-ed,\" like go → went.",
+          "examples": [
+            "I work every day. I worked yesterday. I will work tomorrow.",
+            "I go to church every Sunday. Yesterday I went to the store."
+          ]
+        },
+        {
+          "title": "Right now vs every day: \"am + -ing\" vs simple present",
+          "rule": "Use \"am/is/are + -ing\" for something happening at this exact moment: I am working right now. Use the simple present for habits and things that are always true: I work every day. I always work on Mondays.",
+          "examples": [
+            "I am working right now.",
+            "I always work on Mondays. I never work on Sundays."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "slug": "gerunds-and-infinitives",
+      "file": "content/modules/gerunds-and-infinitives.ts",
+      "title": "Gerunds and Infinitives",
+      "new_vocabulary": [
+        {
+          "en": "I like ...-ing",
+          "es": "Me gusta + gerundio"
+        },
+        {
+          "en": "I want to...",
+          "es": "Quiero..."
+        },
+        {
+          "en": "I need to...",
+          "es": "Necesito..."
+        },
+        {
+          "en": "I have to...",
+          "es": "Tengo que..."
+        },
+        {
+          "en": "I enjoy ...-ing",
+          "es": "Disfruto + gerundio"
+        },
+        {
+          "en": "I stopped ...-ing",
+          "es": "Dejé de..."
+        },
+        {
+          "en": "I started ...-ing",
+          "es": "Empecé a..."
+        },
+        {
+          "en": "working",
+          "es": "trabajando / el trabajar"
+        },
+        {
+          "en": "reading",
+          "es": "leyendo / el leer"
+        },
+        {
+          "en": "cooking",
+          "es": "cocinando / el cocinar"
+        },
+        {
+          "en": "I love to...",
+          "es": "Me encanta..."
+        },
+        {
+          "en": "I like to...",
+          "es": "Me gusta..."
+        },
+        {
+          "en": "I plan to...",
+          "es": "Planeo..."
+        },
+        {
+          "en": "I hope to...",
+          "es": "Espero..."
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Verb + -ing after enjoy, stop, start",
+          "rule": "Some verbs are always followed by another verb ending in \"-ing\" (a gerund): enjoy, stop, start, keep. \"Like\" and \"love\" are flexible — both forms are correct: I like cooking = I like to cook.",
+          "examples": [
+            "I enjoy walking in the park.",
+            "I stopped smoking.",
+            "I started studying English."
+          ]
+        },
+        {
+          "title": "Verb + to + verb after want, need, have, plan, hope",
+          "rule": "Other verbs are always followed by \"to\" + the base form of the next verb (an infinitive): want, need, have, plan, hope. Never add \"-ing\" after these.",
+          "examples": [
+            "I want to learn English.",
+            "I need to go to work.",
+            "I have to pick up my kids.",
+            "I hope to find a good job."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "slug": "verb-to-be",
+      "file": "content/modules/verb-to-be.ts",
+      "title": "The Verb \"To Be\"",
+      "new_vocabulary": [
+        {
+          "en": "I am",
+          "es": "yo soy / estoy"
+        },
+        {
+          "en": "you are",
+          "es": "tú eres / estás"
+        },
+        {
+          "en": "he / she is",
+          "es": "él / ella es / está"
+        },
+        {
+          "en": "we are",
+          "es": "nosotros somos / estamos"
+        },
+        {
+          "en": "they are",
+          "es": "ellos son / están"
+        },
+        {
+          "en": "I am not",
+          "es": "yo no soy / no estoy"
+        },
+        {
+          "en": "Is he/she...?",
+          "es": "¿Es/Está él/ella...?"
+        },
+        {
+          "en": "Are you...?",
+          "es": "¿Eres/Estás tú...?"
+        },
+        {
+          "en": "I am happy",
+          "es": "Estoy feliz"
+        },
+        {
+          "en": "I am tired",
+          "es": "Estoy cansado / cansada"
+        },
+        {
+          "en": "It is...",
+          "es": "Es... / Está..."
+        },
+        {
+          "en": "There is / there are",
+          "es": "Hay"
+        },
+        {
+          "en": "I'm / he isn't / they aren't",
+          "es": "formas cortas de to be"
+        }
+      ],
+      "review_vocabulary": [
+        {
+          "en": "I am from...",
+          "es": "Soy de...",
+          "first_introduced_in": "01"
+        }
+      ],
+      "new_grammar": [
+        {
+          "title": "The verb \"to be\": am, is, are",
+          "rule": "The verb \"to be\" changes depending on the subject. Use \"am\" only with \"I.\" Use \"is\" with he, she, it, or a single person/thing (your sister, the doctor). Use \"are\" with you, we, they, or more than one person/thing.",
+          "examples": [
+            "I am a student.",
+            "She is my neighbor.",
+            "We are ready.",
+            "They are from Guatemala."
+          ]
+        },
+        {
+          "title": "Negatives, questions, and short forms",
+          "rule": "To make a negative, add \"not\" after am/is/are: I am not sure. He is not home. To ask a question, put am/is/are before the subject: Are you okay? Is she your sister? In everyday speech, people often use short forms: I'm, he isn't, they aren't.",
+          "examples": [
+            "I am not sure.",
+            "Is she your sister?",
+            "He isn't home.",
+            "They aren't ready."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "slug": "verb-to-have",
+      "file": "content/modules/verb-to-have.ts",
+      "title": "The Verb \"To Have\"",
+      "new_vocabulary": [
+        {
+          "en": "I have",
+          "es": "tengo"
+        },
+        {
+          "en": "you have",
+          "es": "tú tienes"
+        },
+        {
+          "en": "he / she has",
+          "es": "él / ella tiene"
+        },
+        {
+          "en": "we have",
+          "es": "nosotros tenemos"
+        },
+        {
+          "en": "they have",
+          "es": "ellos tienen"
+        },
+        {
+          "en": "I don't have",
+          "es": "no tengo"
+        },
+        {
+          "en": "Do you have...?",
+          "es": "¿Tienes...?"
+        },
+        {
+          "en": "Does he/she have...?",
+          "es": "¿Tiene él/ella...?"
+        },
+        {
+          "en": "I have two children",
+          "es": "Tengo dos hijos"
+        },
+        {
+          "en": "I have an appointment",
+          "es": "Tengo una cita"
+        },
+        {
+          "en": "I have a headache",
+          "es": "Tengo dolor de cabeza"
+        },
+        {
+          "en": "I have a job",
+          "es": "Tengo un trabajo"
+        },
+        {
+          "en": "I have a question",
+          "es": "Tengo una pregunta"
+        },
+        {
+          "en": "I don't have any money",
+          "es": "No tengo dinero"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "\"have\" vs \"has\"",
+          "rule": "Use \"have\" with I, you, we, and they. Use \"has\" with he, she, or it, and with one other person's name (Maria has, my neighbor has).",
+          "examples": [
+            "I have a car.",
+            "She has three children.",
+            "We have a small apartment.",
+            "They have two cars."
+          ]
+        },
+        {
+          "title": "Questions and negatives: do/does + have",
+          "rule": "To ask a question, use \"Do\" (with I/you/we/they) or \"Does\" (with he/she/it) before the subject, and \"have\" stays in its base form. For a negative, add \"don't\" or \"doesn't\" before \"have.\"",
+          "examples": [
+            "Do you have a pen?",
+            "Does she have insurance?",
+            "I don't have a car."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "slug": "demonstratives",
+      "file": "content/modules/demonstratives.ts",
+      "title": "This/That, These/Those",
+      "new_vocabulary": [
+        {
+          "en": "this",
+          "es": "esto / este / esta"
+        },
+        {
+          "en": "that",
+          "es": "eso / ese / esa"
+        },
+        {
+          "en": "these",
+          "es": "estos / estas"
+        },
+        {
+          "en": "those",
+          "es": "esos / esas"
+        },
+        {
+          "en": "This is my house",
+          "es": "Esta es mi casa"
+        },
+        {
+          "en": "That is my car",
+          "es": "Ese es mi carro"
+        },
+        {
+          "en": "These are my keys",
+          "es": "Estas son mis llaves"
+        },
+        {
+          "en": "Those are my shoes",
+          "es": "Esos son mis zapatos"
+        },
+        {
+          "en": "Is this yours?",
+          "es": "¿Esto es tuyo?"
+        },
+        {
+          "en": "What is this?",
+          "es": "¿Qué es esto?"
+        },
+        {
+          "en": "I like this one",
+          "es": "Me gusta este / esta"
+        },
+        {
+          "en": "I like that one",
+          "es": "Me gusta ese / esa"
+        },
+        {
+          "en": "here",
+          "es": "aquí"
+        },
+        {
+          "en": "there",
+          "es": "allí / allá"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Near or far, one or many",
+          "rule": "English has four words for pointing things out, based on two questions: is it near or far, and is it one thing or more than one? Near + one = this. Far + one = that. Near + many = these. Far + many = those.",
+          "examples": [
+            "This is my house.",
+            "That is my car.",
+            "These are my keys.",
+            "Those are my shoes."
+          ]
+        },
+        {
+          "title": "Asking about things you don't recognize",
+          "rule": "\"What is this/that?\" asks someone to identify something. \"Is this/that yours?\" asks who something belongs to. Use \"this/that\" (not \"these/those\") even if you're not sure yet whether it's one thing.",
+          "examples": [
+            "What is this? I don't know this word.",
+            "Excuse me, is this yours?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "slug": "likes-and-dislikes",
+      "file": "content/modules/likes-and-dislikes.ts",
+      "title": "Likes and Dislikes",
+      "new_vocabulary": [
+        {
+          "en": "I like...",
+          "es": "Me gusta..."
+        },
+        {
+          "en": "I don't like...",
+          "es": "No me gusta..."
+        },
+        {
+          "en": "I love...",
+          "es": "Me encanta..."
+        },
+        {
+          "en": "I don't like ... at all",
+          "es": "No me gusta nada..."
+        },
+        {
+          "en": "I prefer...",
+          "es": "Prefiero..."
+        },
+        {
+          "en": "Do you like...?",
+          "es": "¿Te gusta...?"
+        },
+        {
+          "en": "my favorite...",
+          "es": "mi favorito / mi favorita"
+        },
+        {
+          "en": "I really like...",
+          "es": "Me gusta mucho..."
+        },
+        {
+          "en": "I like it a lot",
+          "es": "Me gusta mucho"
+        },
+        {
+          "en": "I don't like it at all",
+          "es": "No me gusta para nada"
+        },
+        {
+          "en": "What do you like?",
+          "es": "¿Qué te gusta?"
+        },
+        {
+          "en": "I like this food",
+          "es": "Me gusta esta comida"
+        },
+        {
+          "en": "she likes / he likes",
+          "es": "a ella le gusta / a él le gusta"
+        },
+        {
+          "en": "Me too / Me neither",
+          "es": "A mí también / A mí tampoco"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "like/love + noun or -ing, and \"likes\" for he/she",
+          "rule": "You can follow \"like\" or \"love\" with a noun (I like coffee) or with a verb ending in \"-ing\" (I love dancing) — both are correct. Remember to add \"-s\" for he/she: he likes, she likes.",
+          "examples": [
+            "I like coffee.",
+            "I love dancing.",
+            "He likes soccer. She likes music."
+          ]
+        },
+        {
+          "title": "Agreeing: Me too / Me neither",
+          "rule": "Use \"Me too\" to agree with a positive statement (something someone likes). Use \"Me neither\" to agree with a negative statement (something someone doesn't like).",
+          "examples": [
+            "\"I like coffee.\" \"Me too!\"",
+            "\"I don't like the cold.\" \"Me neither.\""
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "slug": "negation",
+      "file": "content/modules/negation.ts",
+      "title": "Negation",
+      "new_vocabulary": [
+        {
+          "en": "not",
+          "es": "no"
+        },
+        {
+          "en": "I don't...",
+          "es": "No... (presente)"
+        },
+        {
+          "en": "I didn't...",
+          "es": "No... (pasado)"
+        },
+        {
+          "en": "I can't...",
+          "es": "No puedo..."
+        },
+        {
+          "en": "no",
+          "es": "no"
+        },
+        {
+          "en": "never",
+          "es": "nunca"
+        },
+        {
+          "en": "nothing",
+          "es": "nada"
+        },
+        {
+          "en": "nobody / no one",
+          "es": "nadie"
+        },
+        {
+          "en": "not yet",
+          "es": "todavía no"
+        },
+        {
+          "en": "I don't know",
+          "es": "No sé"
+        },
+        {
+          "en": "I don't understand",
+          "es": "No entiendo"
+        },
+        {
+          "en": "doesn't (he/she doesn't...)",
+          "es": "no... (él/ella)"
+        }
+      ],
+      "review_vocabulary": [
+        {
+          "en": "I am not...",
+          "es": "No soy... / No estoy...",
+          "first_introduced_in": "06"
+        },
+        {
+          "en": "I don't have...",
+          "es": "No tengo...",
+          "first_introduced_in": "07"
+        }
+      ],
+      "new_grammar": [
+        {
+          "title": "Present negatives: don't vs doesn't",
+          "rule": "Use \"don't\" with I, you, we, and they. Use \"doesn't\" with he, she, or it. Both are followed by the base form of the verb — never add \"-s\" after \"doesn't.\"",
+          "examples": [
+            "I don't speak much English.",
+            "She doesn't speak Spanish."
+          ]
+        },
+        {
+          "title": "Other negatives: didn't, can't, am not/isn't/aren't",
+          "rule": "For the past, use \"didn't\" + base verb. For ability or permission, use \"can't\" + base verb. For \"to be,\" use \"am not,\" \"isn't,\" or \"aren't\" depending on the subject — no extra \"do/does\" needed with \"to be.\"",
+          "examples": [
+            "I didn't go to work yesterday.",
+            "I can't come tomorrow.",
+            "I am not from here."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "11",
+      "slug": "asking-questions",
+      "file": "content/modules/asking-questions.ts",
+      "title": "Asking Questions",
+      "new_vocabulary": [
+        {
+          "en": "who",
+          "es": "quién"
+        },
+        {
+          "en": "what",
+          "es": "qué"
+        },
+        {
+          "en": "where",
+          "es": "dónde"
+        },
+        {
+          "en": "when",
+          "es": "cuándo"
+        },
+        {
+          "en": "why",
+          "es": "por qué"
+        },
+        {
+          "en": "how",
+          "es": "cómo"
+        },
+        {
+          "en": "how much",
+          "es": "cuánto"
+        },
+        {
+          "en": "how many",
+          "es": "cuántos"
+        },
+        {
+          "en": "Can you help me?",
+          "es": "¿Puedes ayudarme?"
+        },
+        {
+          "en": "Could you please help me?",
+          "es": "¿Podría ayudarme, por favor?"
+        },
+        {
+          "en": "Do you speak Spanish?",
+          "es": "¿Hablas español?"
+        },
+        {
+          "en": "Is it far from here?",
+          "es": "¿Está lejos de aquí?"
+        },
+        {
+          "en": "What time is it?",
+          "es": "¿Qué hora es?"
+        },
+        {
+          "en": "Where is the...?",
+          "es": "¿Dónde está el/la...?"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Question word order: WH-word + verb + subject",
+          "rule": "With \"to be,\" put the WH-word first, then is/are, then the subject: Where is the bathroom? Who is that? With action verbs, use \"do/does\" between the WH-word and the subject: Where do you live? What do you do? Notice the verb after \"do\" stays in its base form.",
+          "examples": [
+            "Where is the bathroom?",
+            "Who is that?",
+            "Where do you live?",
+            "How many children do you have?"
+          ]
+        },
+        {
+          "title": "Polite requests: Can/Could + you + verb",
+          "rule": "\"Can you...?\" and \"Could you please...?\" are both used to politely ask someone to do something. \"Could you please...?\" sounds a little more formal and extra polite — useful with a stranger, a clerk, or someone official. After can/could, the verb stays in its base form: Can you help me? Could you please help me fill out this form?",
+          "examples": [
+            "Can you help me?",
+            "Could you please help me fill out this form?",
+            "Do you speak Spanish?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "12",
+      "slug": "possessives-and-reflexives",
+      "file": "content/modules/possessives-and-reflexives.ts",
+      "title": "Possessives and Reflexives",
+      "new_vocabulary": [
+        {
+          "en": "my",
+          "es": "mi / mis"
+        },
+        {
+          "en": "your",
+          "es": "tu / tus"
+        },
+        {
+          "en": "his / her",
+          "es": "su / sus (de él / de ella)"
+        },
+        {
+          "en": "our",
+          "es": "nuestro / nuestra"
+        },
+        {
+          "en": "their",
+          "es": "su / sus (de ellos)"
+        },
+        {
+          "en": "mine",
+          "es": "mío / mía"
+        },
+        {
+          "en": "Maria's house",
+          "es": "la casa de María"
+        },
+        {
+          "en": "myself",
+          "es": "yo mismo / yo misma"
+        },
+        {
+          "en": "yourself",
+          "es": "tú mismo / tú misma"
+        },
+        {
+          "en": "himself / herself",
+          "es": "él mismo / ella misma"
+        },
+        {
+          "en": "ourselves",
+          "es": "nosotros mismos"
+        },
+        {
+          "en": "themselves",
+          "es": "ellos mismos"
+        },
+        {
+          "en": "by myself",
+          "es": "yo solo / yo sola"
+        },
+        {
+          "en": "Whose is this?",
+          "es": "¿De quién es esto?"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Possessive adjectives: my, your, his, her, our, their",
+          "rule": "A possessive adjective goes directly before a noun to show who it belongs to. It never stands alone — it always needs a noun right after it: my house, her phone, their car.",
+          "examples": [
+            "This is my house.",
+            "This is his car. That is her phone.",
+            "That is their car."
+          ]
+        },
+        {
+          "title": "\"Mine\" and reflexive pronouns: myself, himself, ourselves",
+          "rule": "\"Mine\" replaces \"my + noun\" and stands alone with no noun after it: \"This bag is mine\" (not \"This bag is mine bag\"). Reflexive pronouns (myself, yourself, himself, herself, ourselves, themselves) show that someone did something alone, without help.",
+          "examples": [
+            "This bag is mine.",
+            "I made this myself.",
+            "We cleaned the house ourselves."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "13",
+      "slug": "everyday-essentials",
+      "file": "content/modules/everyday-essentials.ts",
+      "title": "Everyday Essentials",
+      "new_vocabulary": [
+        {
+          "en": "phone number",
+          "es": "el número de teléfono"
+        },
+        {
+          "en": "address",
+          "es": "la dirección"
+        },
+        {
+          "en": "ID / identification",
+          "es": "la identificación"
+        },
+        {
+          "en": "bathroom / restroom",
+          "es": "el baño"
+        },
+        {
+          "en": "Where is the bathroom?",
+          "es": "¿Dónde está el baño?"
+        },
+        {
+          "en": "key",
+          "es": "la llave"
+        },
+        {
+          "en": "wallet",
+          "es": "la cartera"
+        },
+        {
+          "en": "wifi / internet",
+          "es": "el wifi / internet"
+        },
+        {
+          "en": "password",
+          "es": "la contraseña"
+        },
+        {
+          "en": "mailbox / mail",
+          "es": "el buzón / el correo"
+        },
+        {
+          "en": "I need help",
+          "es": "Necesito ayuda"
+        },
+        {
+          "en": "emergency",
+          "es": "la emergencia"
+        },
+        {
+          "en": "Can I use your phone?",
+          "es": "¿Puedo usar tu teléfono?"
+        },
+        {
+          "en": "I'm lost",
+          "es": "Estoy perdido / perdida"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Asking for personal information: \"What is your...?\"",
+          "rule": "\"What is your...?\" is the pattern used on almost every form and at almost every office desk. Just swap in the word you need: phone number, address, name.",
+          "examples": [
+            "What is your phone number?",
+            "What is your address?"
+          ]
+        },
+        {
+          "title": "Softening a request: \"Excuse me...\" and \"Can I...?\"",
+          "rule": "Starting a request with \"Excuse me\" is a polite way to get a stranger's attention before asking for help or directions. \"Can I...?\" politely asks for permission to do something.",
+          "examples": [
+            "Excuse me, where is the bathroom?",
+            "Excuse me, can I use your phone?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "14",
+      "slug": "time-dates-seasons",
+      "file": "content/modules/time-dates-seasons.ts",
+      "title": "Time, Dates and Seasons",
+      "new_vocabulary": [
+        {
+          "en": "o'clock",
+          "es": "en punto"
+        },
+        {
+          "en": "half past",
+          "es": "y media"
+        },
+        {
+          "en": "in the morning / afternoon / evening",
+          "es": "por la mañana / por la tarde / por la noche"
+        },
+        {
+          "en": "What day is it?",
+          "es": "¿Qué día es?"
+        },
+        {
+          "en": "Monday through Friday",
+          "es": "de lunes a viernes"
+        },
+        {
+          "en": "weekend",
+          "es": "el fin de semana"
+        },
+        {
+          "en": "month",
+          "es": "el mes"
+        },
+        {
+          "en": "What is the date today?",
+          "es": "¿Cuál es la fecha de hoy?"
+        },
+        {
+          "en": "January",
+          "es": "enero"
+        },
+        {
+          "en": "birthday",
+          "es": "el cumpleaños"
+        },
+        {
+          "en": "spring / summer",
+          "es": "la primavera / el verano"
+        },
+        {
+          "en": "fall / winter",
+          "es": "el otoño / el invierno"
+        },
+        {
+          "en": "It's cold / hot outside",
+          "es": "Hace frío / calor afuera"
+        }
+      ],
+      "review_vocabulary": [
+        {
+          "en": "What time is it?",
+          "es": "¿Qué hora es?",
+          "first_introduced_in": "11"
+        }
+      ],
+      "new_grammar": [
+        {
+          "title": "Telling time: \"It's ... o'clock\" and \"half past ...\"",
+          "rule": "For an exact hour, say \"It's\" + the number + \"o'clock\": It's three o'clock. For thirty minutes past the hour, say \"half past\" + the number: It's half past three (3:30).",
+          "examples": [
+            "It's three o'clock.",
+            "It's half past three."
+          ]
+        },
+        {
+          "title": "Use \"in\" before parts of the day, months, and seasons",
+          "rule": "Use \"in\" before \"the morning/afternoon/evening,\" before a month, and before a season: I work in the morning. My birthday is in January. It gets cold in the winter.",
+          "examples": [
+            "I work in the morning.",
+            "My birthday is in June.",
+            "It gets cold in the fall and very cold in the winter."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "15",
+      "slug": "shopping-dining-out",
+      "file": "content/modules/shopping-dining-out.ts",
+      "title": "Shopping & Dining Out",
+      "new_vocabulary": [
+        {
+          "en": "menu",
+          "es": "el menú"
+        },
+        {
+          "en": "Can I see the menu?",
+          "es": "¿Puedo ver el menú?"
+        },
+        {
+          "en": "I would like to order...",
+          "es": "Quisiera ordenar..."
+        },
+        {
+          "en": "waiter / waitress",
+          "es": "el mesero / la mesera"
+        },
+        {
+          "en": "table for two",
+          "es": "mesa para dos"
+        },
+        {
+          "en": "Do you have a table available?",
+          "es": "¿Tiene una mesa disponible?"
+        },
+        {
+          "en": "check / bill",
+          "es": "la cuenta"
+        },
+        {
+          "en": "Can I have the check, please?",
+          "es": "¿Me trae la cuenta, por favor?"
+        },
+        {
+          "en": "tip",
+          "es": "la propina"
+        },
+        {
+          "en": "to go / take-out",
+          "es": "para llevar"
+        },
+        {
+          "en": "Is this spicy?",
+          "es": "¿Esto es picante?"
+        },
+        {
+          "en": "I'm allergic to...",
+          "es": "Soy alérgico/a a..."
+        },
+        {
+          "en": "store hours",
+          "es": "el horario de la tienda"
+        },
+        {
+          "en": "What time do you close?",
+          "es": "¿A qué hora cierran?"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Polite requests: \"Can I...?\" and \"I would like to...\"",
+          "rule": "\"Can I...?\" politely asks for something (a menu, the check). \"I would like to...\" is a polite way to state what you want, often used when ordering: I would like to order the chicken.",
+          "examples": [
+            "Can I see the menu?",
+            "I would like to order the chicken.",
+            "Can I have the check, please?"
+          ]
+        },
+        {
+          "title": "Asking about a business: \"Do you have...?\" and \"What time do you...?\"",
+          "rule": "Use \"Do you have...?\" to ask if a place has something available (a table, a product). Use \"What time do you...?\" to ask about a store or restaurant's schedule.",
+          "examples": [
+            "Do you have a table available for four?",
+            "What time do you close?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "16",
+      "slug": "navigating-subway",
+      "file": "content/modules/navigating-subway.ts",
+      "title": "Getting Around: Subway & Directions",
+      "new_vocabulary": [
+        {
+          "en": "subway",
+          "es": "el metro / el subterráneo"
+        },
+        {
+          "en": "MetroCard",
+          "es": "la tarjeta MetroCard"
+        },
+        {
+          "en": "platform",
+          "es": "el andén"
+        },
+        {
+          "en": "uptown",
+          "es": "hacia el norte / uptown"
+        },
+        {
+          "en": "downtown",
+          "es": "hacia el sur / downtown"
+        },
+        {
+          "en": "transfer",
+          "es": "hacer transbordo / cambiar de tren"
+        },
+        {
+          "en": "exit",
+          "es": "la salida"
+        },
+        {
+          "en": "Which train goes to...?",
+          "es": "¿Qué tren va a...?"
+        },
+        {
+          "en": "turn left",
+          "es": "dobla a la izquierda"
+        },
+        {
+          "en": "turn right",
+          "es": "dobla a la derecha"
+        },
+        {
+          "en": "straight ahead",
+          "es": "derecho / todo recto"
+        },
+        {
+          "en": "corner",
+          "es": "la esquina"
+        },
+        {
+          "en": "block",
+          "es": "la cuadra"
+        },
+        {
+          "en": "Excuse me, where is...?",
+          "es": "Disculpe, ¿dónde está...?"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Giving directions: commands with no subject",
+          "rule": "Directions are usually given as commands — start directly with the verb, with no \"you\" in front: Turn left. Go straight ahead. Take the uptown train.",
+          "examples": [
+            "Turn left at the light.",
+            "Go straight ahead for two blocks.",
+            "Take the uptown train to get to Manhattan."
+          ]
+        },
+        {
+          "title": "\"Which\" and \"Where\" for finding your way",
+          "rule": "Use \"Which train/bus goes to...?\" when choosing between options. Use \"Where is...?\" when you need to locate something specific, like a station or a street.",
+          "examples": [
+            "Excuse me, which train goes to Times Square?",
+            "Excuse me, where is the nearest subway station?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "17",
+      "slug": "buying-groceries",
+      "file": "content/modules/buying-groceries.ts",
+      "title": "Buying Groceries",
+      "new_vocabulary": [
+        {
+          "en": "aisle",
+          "es": "el pasillo"
+        },
+        {
+          "en": "How much does this cost?",
+          "es": "¿Cuánto cuesta esto?"
+        },
+        {
+          "en": "receipt",
+          "es": "el recibo"
+        },
+        {
+          "en": "cashier",
+          "es": "el cajero / la cajera"
+        },
+        {
+          "en": "bag",
+          "es": "la bolsa"
+        },
+        {
+          "en": "on sale",
+          "es": "en oferta / en descuento"
+        },
+        {
+          "en": "cash or credit card",
+          "es": "efectivo o tarjeta de crédito"
+        },
+        {
+          "en": "fresh",
+          "es": "fresco / fresca"
+        },
+        {
+          "en": "pound",
+          "es": "la libra"
+        },
+        {
+          "en": "checkout line",
+          "es": "la fila de pago"
+        },
+        {
+          "en": "expensive / cheap",
+          "es": "caro / barato"
+        },
+        {
+          "en": "I would like...",
+          "es": "Quisiera... / Me gustaría..."
+        }
+      ],
+      "review_vocabulary": [
+        {
+          "en": "Where is the...?",
+          "es": "¿Dónde está el/la...?",
+          "first_introduced_in": "11"
+        },
+        {
+          "en": "Do you have...?",
+          "es": "¿Tiene...?",
+          "first_introduced_in": "07"
+        }
+      ],
+      "new_grammar": [
+        {
+          "title": "Asking prices: \"How much does this cost?\"",
+          "rule": "Use \"How much does this cost?\" (or the shorter \"How much is this?\") to ask a price. Use \"I would like...\" + an amount to ask for a specific quantity of something.",
+          "examples": [
+            "Excuse me, how much does this cost?",
+            "I would like two pounds of chicken, please."
+          ]
+        },
+        {
+          "title": "\"Do you have...?\" to ask what's available",
+          "rule": "Use \"Do you have...?\" to ask whether a store carries something, and \"Where is...?\" once you know they do, to find where it is.",
+          "examples": [
+            "Do you have any fresh tomatoes?",
+            "Excuse me, where is the milk?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "18",
+      "slug": "family-tree",
+      "file": "content/modules/family-tree.ts",
+      "title": "Family",
+      "new_vocabulary": [
+        {
+          "en": "mother / mom",
+          "es": "la madre / mamá"
+        },
+        {
+          "en": "father / dad",
+          "es": "el padre / papá"
+        },
+        {
+          "en": "brother",
+          "es": "el hermano"
+        },
+        {
+          "en": "sister",
+          "es": "la hermana"
+        },
+        {
+          "en": "son",
+          "es": "el hijo"
+        },
+        {
+          "en": "daughter",
+          "es": "la hija"
+        },
+        {
+          "en": "grandparents",
+          "es": "los abuelos"
+        },
+        {
+          "en": "I have... / I don't have...",
+          "es": "Tengo... / No tengo..."
+        },
+        {
+          "en": "husband / wife",
+          "es": "el esposo / la esposa"
+        },
+        {
+          "en": "children / kids",
+          "es": "los hijos / los niños"
+        },
+        {
+          "en": "cousin",
+          "es": "el primo / la prima"
+        },
+        {
+          "en": "aunt / uncle",
+          "es": "la tía / el tío"
+        },
+        {
+          "en": "baby",
+          "es": "el bebé"
+        },
+        {
+          "en": "How many children do you have?",
+          "es": "¿Cuántos hijos tienes?"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "\"I have\" / \"I don't have\" + family member",
+          "rule": "Use \"I have...\" to say who is in your family, and \"I don't have any...\" to say you don't have a certain family member. Add \"-s\" to make family words plural when there's more than one.",
+          "examples": [
+            "I have two brothers and one sister.",
+            "I don't have any brothers."
+          ]
+        },
+        {
+          "title": "Asking \"How many...?\"",
+          "rule": "\"How many\" + a plural noun + \"do you have?\" asks for a count. Answer with \"I have\" + the number.",
+          "examples": [
+            "How many children do you have? I have two."
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "19",
+      "slug": "buying-clothes",
+      "file": "content/modules/buying-clothes.ts",
+      "title": "Buying Clothes",
+      "new_vocabulary": [
+        {
+          "en": "size",
+          "es": "la talla / el tamaño"
+        },
+        {
+          "en": "fitting room",
+          "es": "el probador"
+        },
+        {
+          "en": "too big / too small",
+          "es": "muy grande / muy pequeño"
+        },
+        {
+          "en": "Do you have this in...?",
+          "es": "¿Tiene esto en...?"
+        },
+        {
+          "en": "return / exchange",
+          "es": "devolver / cambiar"
+        },
+        {
+          "en": "discount",
+          "es": "el descuento"
+        },
+        {
+          "en": "try on",
+          "es": "probarse"
+        },
+        {
+          "en": "I am looking for...",
+          "es": "Estoy buscando..."
+        },
+        {
+          "en": "color",
+          "es": "el color"
+        },
+        {
+          "en": "price tag",
+          "es": "la etiqueta de precio"
+        },
+        {
+          "en": "pay",
+          "es": "pagar"
+        },
+        {
+          "en": "match / matches",
+          "es": "combinar / hace juego"
+        },
+        {
+          "en": "cash register",
+          "es": "la caja registradora"
+        }
+      ],
+      "review_vocabulary": [
+        {
+          "en": "on sale",
+          "es": "en oferta",
+          "first_introduced_in": "17"
+        }
+      ],
+      "new_grammar": [
+        {
+          "title": "\"too\" + adjective for a fit problem",
+          "rule": "Use \"too\" before an adjective to say something is more than you want — a problem, not just a description. \"This shirt is too big\" means it doesn't fit, not just that it's a big shirt.",
+          "examples": [
+            "This shirt is too big. Do you have a smaller size?"
+          ]
+        },
+        {
+          "title": "\"Do you have this in...?\" for color or size",
+          "rule": "Use \"Do you have this in...?\" to ask for the same item in a different color or size — swap in the word you need after \"in.\"",
+          "examples": [
+            "Do you have this in blue? Do you have this in a size medium?"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": "20",
+      "slug": "health-emergencies",
+      "file": "content/modules/health-emergencies.ts",
+      "title": "Health Needs & Emergencies",
+      "new_vocabulary": [
+        {
+          "en": "doctor",
+          "es": "el doctor / la doctora"
+        },
+        {
+          "en": "hospital",
+          "es": "el hospital"
+        },
+        {
+          "en": "I feel sick",
+          "es": "Me siento mal"
+        },
+        {
+          "en": "pain / it hurts",
+          "es": "el dolor / me duele"
+        },
+        {
+          "en": "I have a fever",
+          "es": "Tengo fiebre"
+        },
+        {
+          "en": "Call 911",
+          "es": "Llame al 911"
+        },
+        {
+          "en": "emergency room",
+          "es": "la sala de emergencias"
+        },
+        {
+          "en": "ambulance",
+          "es": "la ambulancia"
+        },
+        {
+          "en": "medicine / pills",
+          "es": "la medicina / las pastillas"
+        },
+        {
+          "en": "pharmacy",
+          "es": "la farmacia"
+        },
+        {
+          "en": "insurance",
+          "es": "el seguro médico"
+        },
+        {
+          "en": "I need to see a doctor",
+          "es": "Necesito ver a un doctor"
+        },
+        {
+          "en": "Are you okay?",
+          "es": "¿Estás bien?"
+        },
+        {
+          "en": "Help!",
+          "es": "¡Ayuda!"
+        }
+      ],
+      "review_vocabulary": [],
+      "new_grammar": [
+        {
+          "title": "Describing symptoms: have / feel / hurts",
+          "rule": "Use \"have\" with a noun (a fever, a cough): I have a fever. Use \"feel\" with an adjective (sick, tired, dizzy): I feel sick. Use \"possessive + body part + hurts\" to say where it hurts: My stomach hurts. My head hurts.",
+          "examples": [
+            "I have a fever.",
+            "I feel sick.",
+            "My stomach hurts.",
+            "Do you have insurance?"
+          ]
+        },
+        {
+          "title": "Giving urgent commands: the imperative",
+          "rule": "In an emergency, you often drop the subject and start with the base form of the verb — this is called the imperative. It sounds urgent and direct, which is exactly what you need when every second counts: Call 911! Help! Take this medicine twice a day.",
+          "examples": [
+            "Call 911!",
+            "Help!",
+            "Take this medicine twice a day."
+          ]
+        }
+      ]
+    }
+  ]
+}

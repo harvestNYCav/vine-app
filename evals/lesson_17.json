@@ -1,0 +1,291 @@
+{
+  "lesson": "17",
+  "slug": "buying-groceries",
+  "file": "content/modules/buying-groceries.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "Answer keys are mostly sound, but the in-person quiz key for \"¿Cuánto cuesta esto?\" rejects the \"How much is this?\" form the grammar slide teaches, and there are several small English/Spanish slips (\"Pay at the cashier\", frescas/frescos, \"está ocupado\").",
+    "level_fit": "Sentences are short and A1-A2 friendly; a few tutor lines (\"Will you be paying...\", \"it came in this morning\") are above level.",
+    "scaffolding": "Two in-person quiz answers depend on untaught food words (cheese, eggs) and the plural \"where are\", and background lines use untaught words (change, steak, busy, cereal).",
+    "timing": "Fourteen vocab items, eight worksheet items, three three-chunk role-plays, two short listenings and a ten-item quiz fit the two-hour agenda, with vocab slightly dense for 15 minutes.",
+    "tutor_usability": "Clear dialogues and keys a volunteer can run, with minor confusions such as a practice title that doesn't match its content and single-answer keys that don't list accepted variants.",
+    "relevance_sensitivity": "Highly practical and nothing asks for sensitive disclosure; the payment practice assumes a credit card and omits debit/EBT, which many learners actually use."
+  },
+  "findings": [
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-person quiz, item 1 (iq1)",
+      "quote": "How much does this cost?",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key gives only \"How much does this cost?\", but the grammar slide explicitly teaches \"How much is this?\" as an equivalent way to ask a price. A volunteer reading the key may mark the taught alternative wrong.",
+      "suggested_fix": "Change the key to \"How much does this cost? / How much is this? (both correct)\".",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-person quiz, item 2 (iq2)",
+      "quote": "the receipt",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The key lists only \"the receipt\"; a volunteer may mark \"receipt\" or \"a receipt\" wrong.",
+      "suggested_fix": "Key: \"(the) receipt\" - accept with or without an article.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "Write in English: \"Quisiera una libra de queso.\"",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer requires \"cheese\", which is not introduced in this or any earlier lesson; learners cannot produce the correct translation from what was taught.",
+      "suggested_fix": "Use a taught food word, e.g. \"Quisiera una libra de pollo.\" -> \"I would like a pound of chicken.\" (or \"arroz\" -> rice).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-person quiz, item 10 (iq10)",
+      "quote": "Ask a worker where the eggs are.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on the untaught word \"eggs\" and on the plural \"Where are the...?\", while the lesson only drills \"Where is the...?\" with singular nouns. Learners will likely write \"Where is the eggs?\" or be unable to name the item.",
+      "suggested_fix": "Use a taught singular item: \"Ask a worker where the rice is.\" with key \"(Excuse me,) where is the rice?\"; also accept answers with or without \"Excuse me\".",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Vocabulary (cashier)",
+      "quote": "Pay at the cashier at the front of the store.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "\"Pay at the cashier\" is unidiomatic: you pay the cashier (a person) or pay at the register/checkout. The Spanish \"Paga en la caja\" treats the word as a place, blurring cashier (person) vs caja (register).",
+      "suggested_fix": "Use \"Pay the cashier at the front of the store.\" / \"Pague al cajero al frente de la tienda.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-class worksheet, item 3 (cw3)",
+      "quote": "These bananas are very ____. (frescas)",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The hint uses feminine \"frescas\" but the Spanish prompt says \"Estos plátanos están muy frescos\" (masculine), so the two Spanish cues disagree.",
+      "suggested_fix": "Change the hint to \"(frescos)\" to match \"plátanos\".",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Guided practice: At the Checkout",
+      "quote": "Sí, está ocupado.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "\"Está ocupado\" means occupied/busy (a person or a seat), not a crowded store; the instruction \"una fila de pago muy ocupada\" is also unnatural Spanish. \"busy\" itself is untaught.",
+      "suggested_fix": "Use \"Sí, hay mucha gente.\" and \"una fila de pago muy larga\"; also gloss \"busy\" for the tutor.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-class worksheet, item 7 (cw7)",
+      "quote": "Steak is ____. Rice is cheap.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "\"Steak\" is untaught, and the Spanish \"La carne\" means meat, not steak, so the cue and the English don't match.",
+      "suggested_fix": "Use a taught word: \"Beef is ____. Rice is cheap.\" / \"La carne de res es cara.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › In-class worksheet, item 4 (cw4)",
+      "quote": "The ____ gives me my change.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "\"change\" (money returned) is not taught before it appears here (it also appears in Listening 2); the answer is still recoverable from the Spanish cue.",
+      "suggested_fix": "Add \"change = el cambio\" to the vocab or use \"The ____ takes my money.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Role-play: Part 2: Asking for a specific amount",
+      "quote": "Yes, it came in this morning.",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "Tutor line uses the untaught irregular past \"came in\"; similarly \"Anything else?\" and \"here you go\" in Part 3 are unintroduced.",
+      "suggested_fix": "Simplify to \"Yes, it is very fresh.\"; keep \"Anything else?\" but gloss it on the slide.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Vocabulary (cash-credit)",
+      "quote": "Will you be paying with cash or credit card?",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "The future progressive \"Will you be paying\" is not taught and is long for A1; the role-play itself uses the simpler \"Cash or credit card?\".",
+      "suggested_fix": "Use \"Cash or credit card?\" or \"Do you want to pay with cash or credit card?\".",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Listening 1: At the Supermarket",
+      "quote": "It is in aisle 3, next to the cereal.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "\"next to\", \"cereal\" and \"in the back of the store\" are untaught; no answer strictly depends on them since the key marks \"next to the cereal\" as optional.",
+      "suggested_fix": "Pre-teach \"next to\" and \"in the back\" on the slide, or simplify to \"It is in aisle 3.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Guided practice: Ask for a Different Amount",
+      "quote": "Ask for a Different Amount",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The title suggests changing an amount, but the activity is asking whether a store has fresh tomatoes and ordering two pounds; the volunteer may not know what 'different' refers to.",
+      "suggested_fix": "Retitle \"Fresh Vegetables\" / \"Verduras Frescas\", or tell the tutor to have the student swap the amount (one, three, five pounds) and the vegetable.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "17",
+      "section": "Tutor slides › Role-play: Part 3: Checkout and paying",
+      "quote": "Credit card, please.",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "Payment practice only offers cash or credit card; many recent migrants are unbanked or pay with debit or EBT/SNAP, the most common grocery payments for this group.",
+      "suggested_fix": "Add \"debit card\" (tarjeta de débito) to the word bank and let the student choose \"Cash, please\" or \"Debit card, please\"; optionally mention EBT as a tutor note.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "17",
+      "section": "Student app › Homework worksheet, item 5 (w5)",
+      "quote": "Can I ____ a receipt, please?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The auto-graded key accepts only \"have\", but \"Can I get a receipt, please?\" is equally correct (and closer to \"¿Me puede dar...?\"). A learner who knows \"get\" is marked wrong with no tutor to correct it.",
+      "suggested_fix": "Accept \"have\" and \"get\", or add the cue word \"(have)\" to the prompt.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B31",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w5 is graded by exact match against the single key 'have', so the equally natural 'Can I get a receipt, please?' is marked wrong, and the Spanish hint '¿Me puede dar...?' doesn't rule out 'get'.",
+      "resolved": "acceptedAnswers added to the homework item in content/modules; checked against the real grader. Now accepts 'get'."
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "lesson": "18",
+  "slug": "family-tree",
+  "file": "content/modules/family-tree.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 5,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 2
+  },
+  "score_rationale": {
+    "accuracy": "The English is mostly correct, but the grammar rule overgeneralizes '-s' plurals despite 'children', and three keys (w3, cw8, iq2) reject synonyms the lesson itself teaches.",
+    "level_fit": "The sentences are short and concrete at A1 level, with a few stray words (married, hat, siblings).",
+    "scaffolding": "Two graded answers depend on untaught words ('grandmother' in cw1, 'nephew' in iq8), and some background words are not in the curriculum map.",
+    "timing": "14 vocab items, 2 grammar points, 8 worksheet items, 3 short role-plays, 2 listenings, 3 guided practices and a 10-item quiz fit the agenda comfortably.",
+    "tutor_usability": "Model dialogues and the Spanish support are clear. The tutor would need to patch a few keys and the untaught answers on the fly.",
+    "relevance_sensitivity": "The topic is practical, but the graded quiz items iq9 and iq10 and every role-play ask about the learner's real family and household (including relatives left in Mexico), with no made-up option."
+  },
+  "findings": [
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-person quiz, item 9 (iq9)",
+      "quote": "How many brothers and sisters do you have?",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "A graded in-person quiz item tells learners to answer about their own siblings, with no option to answer about someone else. For recent migrants this can bring up family separation or loss. iq10 has the same problem: 'Who lives with you?' asks about the household, which can expose separation, shared or crowded housing, or who is and isn't in the country.",
+      "suggested_fix": "Ask about a made-up person instead, e.g. 'Look at the picture. How many brothers does Jorge have?' (from Listening 2), or add 'Answer about yourself or a made-up family.' Also fix iq10: replace 'Who lives with you?' with 'Who lives with Rita?' or a picture-based family question.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "graded",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_graded"
+      ],
+      "verifier_id": "B32",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "iq9 is a graded in-person quiz item that asks learners how many siblings they have, and neither the item nor the section says they can answer about someone else or make up an answer, so it is a graded question asking for family details."
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Add \"-s\" to make family words plural when there\\'s more than one.",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The rule is wrong for 'child', which takes the irregular plural 'children' (taught in Lesson 03), and 'children' is this lesson's main counting word. Learners who follow the rule will produce 'childs'.",
+      "suggested_fix": "Add: 'Most family words add -s (brothers, sisters, cousins). Be careful: one child, two children.' Update explanationEs to match: 'Cuidado: one child, two children.'",
+      "wrong_english": true,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "wrong_english"
+      ],
+      "verifier_id": "B34",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Grammar focus 1 gives the plural rule as plain 'add -s' with no exception, yet 'child/children' is the lesson's main counting word (including graded item w3), so the rule as stated is factually wrong for the key word and would lead learners to say 'childs'."
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › Role-play: Part 1: Talking about your immediate family",
+      "quote": "They want to know about your parents and siblings.",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "All three role-plays, and the guided practice 'Do You Have...?', tell learners to describe their own parents, siblings, spouse, children and extended family. Nothing says they may invent a family. For migrants this can touch on separation, divorce or a death.",
+      "suggested_fix": "Add to each role-play and the guided practice: 'You can talk about your real family or a made-up family.' Also offer a picture of a made-up family tree to talk about. Same fix for 'Practice talking about your husband/wife and children.' (Part 2) and 'Practice saying which family members you do and do not have.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "required",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_required"
+      ],
+      "verifier_id": "B35",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The Part 1 role-play is a core tutor activity, not marked optional, and its prompt and tutor lines ('Tell me about your parents', 'Where does your sister live?') ask learners about their real family with no way to invent a family or skip; Part 2 does the same for spouse and children."
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › Role-play: Part 3: Talking about extended family",
+      "quote": "Are your grandparents here?",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "Asking whether relatives are 'here', with the model answer 'No, they stayed in Mexico.', invites learners to talk about which relatives they left behind. That touches on family separation and migration history.",
+      "suggested_fix": "Ask a neutral question instead, e.g. 'Where do your grandparents live?' with 'You can answer about a made-up family.' Or have learners describe a pictured family. The vocab example 'My grandparents stayed in Mexico.' could also be made neutral, e.g. 'My grandparents live in Puebla.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "required",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_required"
+      ],
+      "verifier_id": "B36",
+      "verifier_verdict": "downgrade-to-major",
+      "verifier_reason": "The concern is real ('Are your grandparents here?' / 'No, they stayed in Mexico.' points learners toward relatives they left behind), but it is one scripted line in an ungraded role-play framed as 'Your friend asks', with a ready-made answer and no instruction to give real details, so it is not a required or graded disclosure.",
+      "verifier_overruled": "An ungraded tutor-led activity counts as required unless the lesson marks it optional; this one is not marked, so it stays a blocker."
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-person quiz, item 2 (iq2)",
+      "quote": "the grandparents",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key requires 'the grandparents', but the vocabulary slide teaches 'grandparents' = 'los abuelos'. A volunteer tutor following the key could mark the taught answer 'grandparents' wrong.",
+      "suggested_fix": "Change the key to 'grandparents (or: the grandparents)'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-class worksheet, item 7 (cw7)",
+      "quote": "How many ____ do you have? (hermanos)",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'hermanos' can mean 'brothers' or 'brothers and sisters', but the key accepts only 'brothers'. A tutor may need to accept 'brothers and sisters' on the spot.",
+      "suggested_fix": "Use '(hermanos varones)' as the cue, or accept 'brothers / brothers and sisters'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-class worksheet, item 1 (cw1)",
+      "quote": "grandmother",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer is 'grandmother', but the lesson and the curriculum map teach only 'grandparents'. Learners have no way to produce 'grandmother'.",
+      "suggested_fix": "Add 'grandmother / grandfather' to the vocab, or change the item to 'My mother\\'s parents are my ____.' with the answer 'grandparents'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-person quiz, item 8 (iq8)",
+      "quote": "What do you call your sister\\'s son? (sobrino)",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer is 'nephew', which is not taught in this lesson or anywhere earlier in the curriculum map, so learners can't get it right.",
+      "suggested_fix": "Replace it with a taught word, e.g. 'What do you call your father\\'s sister? (tía)' with the answer 'aunt', or add 'nephew / niece' to the vocab.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-person quiz, item 3 (iq3)",
+      "quote": "mi tía y mi tío",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'mis tíos' is an equally natural Spanish translation and isn't in the key.",
+      "suggested_fix": "Change the key to 'mi tía y mi tío (or: mis tíos)'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › In-class worksheet, item 5 (cw5)",
+      "quote": "We are married.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'married' is not in the curriculum map. The Spanish cue '(esposo)' means the answer doesn't depend on it. Listening 2 also uses 'Are you married?'.",
+      "suggested_fix": "Drop 'We are married.' or gloss it as '(casados)'. Also gloss 'married' in the Listening 2 script, or replace it with 'Do you have a wife?'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › Role-play: Part 1: Talking about your immediate family",
+      "quote": "no siblings",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'siblings' is not taught, and the Spanish gloss 'ningún hermano' is stiff. Learners would naturally say 'no tengo hermanos'. The script also uses untaught 'parents' ('Tell me about your parents.').",
+      "suggested_fix": "Change the word bank entry to 'no brothers or sisters' = 'no tengo hermanos'. Add 'parents' = 'los padres' to the vocab, since it also appears in q3, Listening 2 and l2q4.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Tutor slides › Listening 1: A Family Photo",
+      "quote": "Who is the man with the hat?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'hat' is not taught. The question's Spanish gloss ('sombrero') keeps l1q1 answerable, but the script line is unglossed.",
+      "suggested_fix": "Add 'hat = sombrero' to a word box on the listening slide, or say 'Who is the man on the left?'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "18",
+      "section": "Student app › Online quiz, Q8 (q8)",
+      "quote": "¿Qué pregunta pregunta cuántos hijos tiene alguien?",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The Spanish prompt is awkward ('pregunta pregunta').",
+      "suggested_fix": "Use '¿Cuál pregunta es para saber cuántos hijos tiene alguien?'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "18",
+      "section": "Student app › Homework worksheet, item 3 (w3)",
+      "quote": "How many ____ do you have?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The auto-graded key accepts only 'children', but the lesson teaches 'children / kids' as synonyms for 'los hijos / los niños', so 'kids' (and 'sons') are valid and would be marked wrong with no tutor there. cw8 has the reverse problem: its key accepts only 'kids', although the lesson teaches 'children' for the same word.",
+      "suggested_fix": "Accept 'children' and 'kids' (and 'sons') for w3, or add '(children)' to the prompt as the cue. For cw8, accept 'kids' or 'children'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B33",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w3's only key is 'children' with exact-match grading, while the vocab teaches 'children / kids' and the quiz glosses the same question as asking 'how many kids', so a correct 'kids' answer is marked wrong.",
+      "resolved": "acceptedAnswers added to the homework item in content/modules; checked against the real grader. Now accepts 'kids'.",
+      "resolved_residual": "cw8 on the tutor slides (also in this finding) is unchanged."
+    }
+  ]
+}

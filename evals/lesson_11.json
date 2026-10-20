@@ -1,0 +1,283 @@
+{
+  "lesson": "11",
+  "slug": "asking-questions",
+  "file": "content/modules/asking-questions.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "Most keys are right, but the homework key rejects 'Could', one listening line and its key are unidiomatic, and the grammar slides have a misfiled example, a misleading title and mixed tú/usted Spanish.",
+    "level_fit": "The questions are short and A1-appropriate. Only the 'WH-' jargon in the instructions is above beginner level.",
+    "scaffolding": "The target question words are well introduced, but both listenings and one dictation depend on untaught words (post office, bank, husband, Saturday, free, volunteers, repeat).",
+    "timing": "The content fits the two-hour agenda. The three role-plays are very short for 25 minutes, but a tutor can recycle them.",
+    "tutor_usability": "Most slides can be run from the page, but the role-play chunks have students echo the tutor's questions in incoherent exchanges, and several keys are too narrow for an untrained volunteer to grade.",
+    "relevance_sensitivity": "Store, office, directions and class-signup contexts are practical. The only personal disclosure is a graded 'Where do you live?' item that offers no made-up option."
+  },
+  "findings": [
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Role-play: Part 2: Asking about prices and quantities",
+      "quote": "As many as you like! Do you know what time it is?",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "In the role-play chunks the student line just repeats the tutor's question instead of answering it. Here the store clerk asks the customer for the time and the 'answer' is 'What time is it?'. In Part 1 the tutor asks 'Where do you live?' and the student's line is 'Where do you live?', followed by a random 'why are you late today?' at a party. A volunteer can't run this as a real conversation.",
+      "suggested_fix": "Rewrite each chunk so the tutor sets up a situation and the student asks the target question, e.g. tutor: 'You want to know the time. Ask me.' student: 'Excuse me, what time is it?' tutor: 'It's three o'clock.' Also in Role-play: Part 1 ('I live nearby. And why are you late today?').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Listening 1: Lost in the City",
+      "quote": "No. It is about five minutes walking.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'It is about five minutes walking' is unidiomatic English, and it is also the model answer for question 3 (l1q3: 'About five minutes walking').",
+      "suggested_fix": "Change the line to 'No. It is about five minutes away.' (or 'It is a five-minute walk.') and update the l1q3 key to match.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Listening 1: Lost in the City, question 2 (l1q2)",
+      "quote": "What is next to the post office?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The listening answers depend on words that are not in the curriculum map through lesson 11: 'post office' (l1q1), 'next to' and 'bank' (l1q2), 'minutes'/'walking' (l1q3) and 'close' (l1q4).",
+      "suggested_fix": "Pre-teach 'post office, bank, next to, minutes, close' with Spanish glosses in a word bank before the listening, or add them to the vocab list.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Listening 2: Signing Up for Classes, question 4 (l2q4)",
+      "quote": "Volunteers teach the class.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answers depend on untaught words: 'husband' (l2q1), 'Saturday' (l2q2), 'free' (l2q3) and 'volunteers' (l2q4). None of them is in the curriculum map up to this lesson.",
+      "suggested_fix": "Give a pre-listening word bank: husband = esposo, Saturday = sábado, free = gratis, volunteers = voluntarios. Or simplify the answers to taught words.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › In-person quiz, item 7 (iq7)",
+      "quote": "Could you please repeat that?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "In the dictation the learner has to spell 'repeat', which is not in the curriculum map. It only appears once in a guided-practice line, so the graded answer depends on an untaught word.",
+      "suggested_fix": "Dictate a taught sentence such as 'Could you please help me?', or add 'Can you repeat that, please?' to the vocab list so it is formally introduced.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › In-person quiz, item 3 (iq3)",
+      "quote": "Write in Spanish: \"Why are you late?\"",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The key gives only '¿Por qué llegas tarde?'. A volunteer may mark down equally correct usted or regional forms ('¿Por qué llega tarde?', '¿Por qué vienes tarde?').",
+      "suggested_fix": "Add to the key: '(Accept any correct Spanish, e.g. ¿Por qué llega tarde?)'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "11",
+      "section": "Student app › Homework worksheet, item 1 (w1)",
+      "quote": "¿Cómo te llamas? (____ is your name?)",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The Spanish cue '¿Cómo...?' pushes learners toward the classic L1 error 'How is your name?', and there is no tutor at home to correct it.",
+      "suggested_fix": "Use the cue '¿Cuál es tu nombre? (____ is your name?)', or add a note: '¿Cómo te llamas? = What is your name? (not How)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Grammar focus 2",
+      "quote": "Do you speak Spanish?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The 'Polite requests: Can/Could + you + verb' slide lists 'Do you speak Spanish?' as an example. That is a yes/no do-question, not a can/could request, which muddles the rule.",
+      "suggested_fix": "Replace it with a can/could example, e.g. 'Can you repeat that, please?' / '¿Puedes repetir eso, por favor?', and move 'Do you speak Spanish?' to Grammar focus 1 as a do-question.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Question word order: WH-word + verb + subject",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The title formula does not fit do-questions: 'Where do you live?' is WH-word + do + subject + verb. The explanation also never gives a 'does' example.",
+      "suggested_fix": "Retitle it 'Question word order: WH-word + is/are + subject, or WH-word + do/does + subject + verb', and add an example such as 'Where does she work?'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Vocabulary (can-you)",
+      "quote": "Disculpe, ¿puedes ayudarme?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The Spanish mixes formal 'Disculpe' (usted) with informal '¿puedes?' (tú). The 'do-you' item is also inconsistent: '¿Hablas español?' vs. its example 'Disculpe, ¿habla español?'.",
+      "suggested_fix": "Use 'Disculpe, ¿puede ayudarme?' (or 'Disculpa, ¿puedes ayudarme?') consistently. Also in Role-play: Part 3, chunk 1.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › In-class worksheet, item 3 (cw3)",
+      "quote": "____ are you sad? (razón)",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'sad' is not in the curriculum map (lesson 6 taught happy/tired). The answer 'Why' does not depend on it.",
+      "suggested_fix": "Use a taught adjective: '____ are you tired? (razón)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Guided practice: Ask a Stranger",
+      "quote": "Excuse me, where is the bus stop?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The student line uses untaught 'bus stop'. Guided practice: Polite Request Practice also uses untaught 'repeat' and 'speak more slowly'. These are useful phrases, but they have no word bank.",
+      "suggested_fix": "Add word banks: bus stop = parada de autobús; repeat = repetir; slowly = despacio.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › Guided practice: Interview Your Tutor",
+      "quote": "Hazle a tu tutor algunas preguntas con WH-.",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "'WH- questions' is ESL jargon that beginners and untrained volunteers may not understand, especially in the Spanish instruction.",
+      "suggested_fix": "Write 'Hazle a tu tutor preguntas con What, Where, How many (qué, dónde, cuántos).' and 'Ask your tutor questions with What, Where, How many.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "11",
+      "section": "Tutor slides › In-person quiz, item 10 (iq10)",
+      "quote": "I live in ___. (Answers will vary.)",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "The graded item asks the learner to say where they live. For some recent migrants, giving a location can feel sensitive, and no alternative is offered.",
+      "suggested_fix": "Add 'You can use a real or made-up city or neighborhood' / 'Puedes usar una ciudad o barrio real o inventado.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "11",
+      "section": "Student app › Homework worksheet, item 4 (w4)",
+      "quote": "____ you help me?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The auto-graded key accepts only 'Can', but 'Could' is equally correct English for this blank. The lesson teaches 'Could you please help me?' as the extra-polite form, so a learner working alone who writes 'Could' is marked wrong.",
+      "suggested_fix": "Make the item unambiguous, e.g. '____ you help me? (Can / Could — use the short, everyday word)', or accept both 'Can' and 'Could'. Also in Tutor slides › In-person quiz, item 4 (iq4): the key for '¿Puede ayudarme?' should read 'Can you help me? / Could you help me?'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B18",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w4 is an auto-graded homework blank whose key is only 'Can', yet 'Could you help me?' is correct English for '¿Puedes ayudarme?', and the lesson's own grammar note teaches that both Can you and Could you are used to ask for help, so a learner who writes 'Could' is marked wrong.",
+      "resolved": "acceptedAnswers added to the homework item in content/modules; checked against the real grader. Now accepts 'Could'."
+    }
+  ]
+}

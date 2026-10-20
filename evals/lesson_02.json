@@ -1,0 +1,301 @@
+{
+  "lesson": "02",
+  "slug": "pronouns-and-greetings",
+  "file": "content/modules/pronouns-and-greetings.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 5,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 5
+  },
+  "score_rationale": {
+    "accuracy": "Two answer keys reject greetings the lesson itself teaches (q2 accepts only 'Nice to meet you' though 'Hello' is an option; iq9 keys only 'Good morning' though the grammar says 'Hello' works any time), plus small Spanish gaps.",
+    "level_fit": "Most items are short A1 sentences, but several tutor lines ('I don't think we've met', 'It's getting late. I should go now.') are above A1.",
+    "scaffolding": "Third-person -s verbs, 'Good evening', 'wife/his' and 'Saturday' are needed for answers but never taught in lessons 01-02.",
+    "timing": "The amount of content per section fits the two-hour agenda comfortably.",
+    "tutor_usability": "Two guided practices have confusing role logic or instructions that don't match the dialogue, and some in-class Spanish prompts give the answer away.",
+    "relevance_sensitivity": "Neighbors, friends, coworkers and class greetings are practical, and nothing asks for disclosure of status, family separation or trauma."
+  },
+  "findings": [
+    {
+      "lesson": "02",
+      "section": "Student app › Online quiz, Q2 (q2)",
+      "quote": "How do you greet someone you are meeting for the first time?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The distractor 'Hello' is also a correct greeting for a first meeting; the lesson's own role-play has the student say 'Hello! Nice to meet you.' and the grammar says Hello works in almost any situation. Auto-graded with no tutor, so a correct learner is marked wrong.",
+      "suggested_fix": "Ask 'What do you say after someone tells you their name for the first time?' and replace 'Hello' with a non-greeting distractor such as 'See you next week'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B02",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Q2 is an auto-graded single-answer multiple-choice item that accepts only 'Nice to meet you', yet the distractor 'Hello' is also a correct way to greet someone you meet for the first time, as the lesson itself shows (its grammar note says 'Hello' works 'in almost any situation' and its role-play answers a first meeting with 'Hello! Nice to meet you.'), so the key is too narrow."
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › In-person quiz, item 9 (iq9)",
+      "quote": "What do you say at 8 a.m.?",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "Key is only 'Good morning', but the grammar slide teaches that 'Hello' and 'Hi' work at any time of day, so the key rejects valid answers the lesson teaches.",
+      "suggested_fix": "Ask 'Which greeting is only for before noon: Good morning or Good afternoon?' or set the key to 'Good morning (Hello / Hi also correct)'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Listening 2: Introducing a Friend, question 1 (l2q1)",
+      "quote": "Good evening, everyone! How are you?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The l2q1 answer ('Evening') depends on 'Good evening', which is never taught; the greeting grammar only covers Good morning/Good afternoon 'until evening' and leaves learners with no evening greeting.",
+      "suggested_fix": "Add 'Good evening / Buenas noches' to vocab and to the greetings grammar slide, or change the script line to 'Good afternoon' and the question to 'morning or afternoon?'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Listening 1: A New Neighbor, question 3 (l1q3)",
+      "quote": "His wife, Sofia",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The key needs 'wife' and the possessive 'his', neither taught yet (the script's 'Her name is' is also untaught).",
+      "suggested_fix": "Key as 'Sofia (his wife)' and tell the tutor to accept 'Sofia', or add 'wife / esposa' to the word list before the listening.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Listening 2: Introducing a Friend, question 3 (l2q3)",
+      "quote": "The Saturday class",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'Saturday'; days of the week are not taught in lessons 01-02.",
+      "suggested_fix": "Gloss 'Saturday = sábado' on the slide before reading, or ask a question answerable with taught words (e.g. 'Is Marta a student? yes/no').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Guided practice: Introduce the Room",
+      "quote": "He teaches English.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The student must produce third-person -s verbs (teaches; also 'What does he do?'), but lessons 01-02 only teach 'I + base verb'. Third-person -s also appears in role-play lines 'He lives in the next building.' and 'She works with me.'",
+      "suggested_fix": "Use only 'be' sentences the lesson teaches: 'He is my teacher. He is nice.' / 'She is my teacher.' Or add a short grammar note on he/she + verb-s before this activity.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "evaluator_severity": "major",
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Vocabulary (we-they)",
+      "quote": "nosotros / ellos",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "'they' and 'we' are glossed only with masculine forms, so learners may think 'they' is only for men; the grammar never says 'they' covers women too. Similarly 'you' is not shown as plural (ustedes).",
+      "suggested_fix": "Use 'nosotros / nosotras' and 'ellos / ellas', and gloss 'you' as 'tú / usted / ustedes'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Role-play: Part 1: Meeting a new neighbor",
+      "quote": "Mucho gusto también.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Unnatural Spanish for 'Nice to meet you too'; native speakers say 'Igualmente' or 'El gusto es mío'.",
+      "suggested_fix": "Change to 'Igualmente.' or 'El gusto es mío.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Listening 2: Introducing a Friend, question 4 (l2q4)",
+      "quote": "¿Cuándo los verá la maestra otra vez?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The English 'Teacher' has no gender, but the Spanish assumes a female teacher, while elsewhere the lesson uses 'maestro'.",
+      "suggested_fix": "Use '¿Cuándo los verá el/la maestro/a otra vez?' or name the teacher.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Role-play: Part 1: Meeting a new neighbor",
+      "quote": "Hello! I don't think we've met.",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "Present perfect contraction is well above A1 for a tutor model line; also in Part 3: 'It's getting late. I should go now.'",
+      "suggested_fix": "Use 'Hello! I am your new neighbor.' and 'It is late. Goodbye!'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Listening 1: A New Neighbor",
+      "quote": "Hi! Are you new here?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Background script uses untaught words (new, apartment, wife, Welcome) that no answer depends on except as noted elsewhere.",
+      "suggested_fix": "Pre-teach 'new', 'apartment' and 'Welcome' with Spanish glosses on the slide.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Guided practice: Introduce the Room",
+      "quote": "A new person walks in. Introduce your tutor to them.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The tutor is both the person being introduced and the one asking 'Who is this?', so the role logic is confusing; the model answers also assume a male tutor ('Este es mi maestro', 'What does he do?').",
+      "suggested_fix": "Have the student introduce a classmate or a photo of a person, and give both forms: 'This is my teacher. He / She is ...'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Guided practice: Greet Three Ways",
+      "quote": "Greet your tutor in the morning and ask how they are.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Title promises three ways and the word bank lists Good afternoon and Hi, but the instructions and dialogue cover only one morning greeting; sessions may not be in the morning.",
+      "suggested_fix": "Instruct: 'Greet your tutor three ways: Good morning, Good afternoon, Hi. Then ask How are you?' and repeat the dialogue with each greeting.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Role-play: Part 2: Introducing a friend",
+      "quote": "Your neighbor is with you. Introduce a friend using pronouns.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The setup tells the student to introduce a friend, but in the dialogue the tutor does all introducing and the student only replies.",
+      "suggested_fix": "Add a chunk where the student says 'This is my friend ___. He/She is ...', using the word bank.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › Role-play: Part 1: Meeting a new neighbor",
+      "quote": "My name is Ana.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Word bank marks 'Ana' as '(tu nombre)', but the next tutor line is hard-coded 'Nice to meet you, Ana!', so tutors may read it verbatim rather than using the student's name.",
+      "suggested_fix": "Write the lines as 'My name is ___.' and 'Nice to meet you, ___!' with a note to use the student's name or a made-up one.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "02",
+      "section": "Tutor slides › In-class worksheet, item 1 (cw1)",
+      "quote": "María es mi hermana. Ella es maestra. (____ is a teacher.)",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The Spanish prompt shown to the student contains the pronoun ('Ella'), so the item tests translation, not choosing the pronoun from the name; also in cw2 ('Él es de Perú'). 'sister' is also untaught.",
+      "suggested_fix": "Translate only the first sentence in promptEs ('María es mi hermana.'), as cw3 and cw4 already do.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    }
+  ]
+}

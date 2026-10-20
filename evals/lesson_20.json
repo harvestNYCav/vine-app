@@ -1,0 +1,191 @@
+{
+  "lesson": "20",
+  "slug": "health-emergencies",
+  "file": "content/modules/health-emergencies.ts",
+  "scores": {
+    "accuracy": 4,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "Answer keys and the have/feel/hurts rule are correct; the imperative explanation is slightly misleading, a few role-play lines are unnatural or assigned to the wrong speaker, and one Spanish prompt drops 'a'.",
+    "level_fit": "Most sentences are short and A1-A2 friendly, but the imperative explanation uses idioms like 'every second counts' and the listening questions use 'should' and 'How often'.",
+    "scaffolding": "The core vocabulary is introduced before practice, but two listening answers depend on untaught words ('throat', 'fell down'), and role-play lines use untaught phrases like 'pick up' and 'twice a day'.",
+    "timing": "The amount of material fits the two-hour agenda; the three role-plays are only three exchanges each, which is thin for 25 minutes, but a tutor can repeat them.",
+    "tutor_usability": "A volunteer can mostly run it from the page; the emergency role-play mixes tutor feedback into the dialogue and gives the hurt person the ambulance line, and a few in-class keys list only one of several valid answers.",
+    "relevance_sensitivity": "Clinic, pharmacy and 911 situations are very practical; the pharmacy role-play assumes the learner has health insurance and gives no answer for learners who don't."
+  },
+  "findings": [
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Listening 1: At the Doctor, question 1 (l1q1)",
+      "quote": "I feel sick. I have a fever and my throat hurts.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'throat', which no lesson from 01 to 20 introduces (only stomach, head and back appear here, in a word bank). The key also says 'a sore throat', a phrase that appears nowhere in the script or the lesson.",
+      "suggested_fix": "Change the script to a taught body part ('I have a fever and my head hurts.') and the key to 'A fever and a headache / his head hurts'. Or add 'throat / garganta' to the role-play word bank and change the key to 'A fever and his throat hurts'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Listening 2: Calling 911, question 1 (l2q1)",
+      "quote": "My neighbor fell down.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer 'He fell down' depends on 'fall / fell down' and 'can't get up', which are not in the curriculum map up to lesson 20 ('neighbor' is also untaught). A learner can't answer 'What happened?' without knowing them.",
+      "suggested_fix": "Pre-teach 'fall down / fell down (caerse / se cayó)' and 'neighbor (vecino)' in a word bank on the listening slide, or change l2q1 to something taught, such as 'What does the caller need?' (key: 'Help / an ambulance').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › In-class worksheet, item 1 (cw1)",
+      "quote": "Take him to the ____. He is very sick.",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "'emergency room' and 'doctor' also fit the English sentence, and both are taught in this lesson; the key gives only 'hospital'. Likewise cw3 'I need to buy ____ for my cough.' accepts only 'medicine', though 'pills' (also taught) fits. The Spanish hint points to one answer, but a volunteer may mark a correct English answer wrong.",
+      "suggested_fix": "Change the keys to 'hospital (also OK: emergency room, doctor)' for cw1 and 'medicine (also OK: pills)' for cw3.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Grammar focus 2",
+      "quote": "In an emergency, you often drop the subject and start with the base form of the verb",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The explanation suggests the imperative is something you 'often' do in emergencies. The imperative never has a subject and is used everywhere, as the lesson's own non-urgent example 'Take this medicine twice a day' shows. 'Help!' is more an exclamation than a clear base-verb command. 'Every second counts' is also too idiomatic for A1-A2.",
+      "suggested_fix": "Rewrite as: 'To tell someone to do something, start with the verb. There is no subject (no I, you). Call 911! Take this medicine. Stay here.' Replace 'Help!' as an example with 'Help me!' (also in explanationEs).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Role-play: Part 2: A medical emergency",
+      "quote": "Good, keep calling for help.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The tutor plays the hurt person, but this line is tutor feedback mixed into the dialogue. The hurt person also answers 'It's coming.' about the ambulance, which they wouldn't know. 'No, I'm hurt badly!' is a little unnatural ('I'm badly hurt' / 'I'm hurt!').",
+      "suggested_fix": "Make the tutor a 911 operator or a second bystander for chunks 2 and 3 (e.g. Operator: 'OK. An ambulance is coming.'), or change the lines to the hurt person's words: 'My leg hurts! Please call 911.' Use 'No, I'm hurt!' in chunk 1.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Role-play: Part 3: At the pharmacy",
+      "quote": "Yes, I have insurance.",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "The only student answer assumes the learner has health insurance. Many recent migrants don't, and the lesson gives no way to say so.",
+      "suggested_fix": "Add an alternative student line: 'No, I don't have insurance. How much is it?' and a tutor note that either answer is fine and learners may answer as a made-up person.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Role-play: Part 3: At the pharmacy",
+      "quote": "I need to pick up medicine.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Role-play and listening lines use untaught phrases where no answer depends on them: 'pick up', 'twice a day', 'Does anything hurt?', 'Two days ago', 'Stay with him', 'breathing'.",
+      "suggested_fix": "Add 'pick up = recoger' and 'twice a day = dos veces al día' to the Part 3 word bank, or simplify to 'I need my medicine.' and 'Take this medicine two times a day.' (matching listening 1).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › In-class worksheet, item 2 (cw2)",
+      "quote": "¡Llama una ambulancia!",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Standard Spanish uses 'llamar a': '¡Llama a una ambulancia!' This also doesn't match the formal 'Llame' in the vocabulary.",
+      "suggested_fix": "Use '¡Llame a una ambulancia! (Call an ____!)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Listening 1: At the Doctor, question 3 (l1q3)",
+      "quote": "How often should the patient take the medicine?",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "Listening questions use untaught 'How often' and 'should' (also l1q4 'How many days should the patient stay home?'). The Spanish line helps, but the English is above A1.",
+      "suggested_fix": "Simplify to 'How many times a day does the patient take the medicine?' and 'How many days does the patient stay home?'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "20",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Do you have insurance?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "This example sits under 'Describing symptoms: have / feel / hurts' but isn't a symptom, which muddies the have + noun rule.",
+      "suggested_fix": "Replace with a symptom example: 'I have a cough. / Tengo tos.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}

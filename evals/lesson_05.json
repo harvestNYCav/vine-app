@@ -1,0 +1,228 @@
+{
+  "lesson": "05",
+  "slug": "gerunds-and-infinitives",
+  "file": "content/modules/gerunds-and-infinitives.ts",
+  "scores": {
+    "accuracy": 2,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "The grammar focus wrongly says 'start' always takes -ing, and several answer keys (w1, cw5, cw6, cw8) reject the valid 'to + verb' form the lesson itself teaches.",
+    "level_fit": "Sentences are short, high-frequency and A1-friendly, though -ing spelling changes (running, swimming) and third-person 'enjoys' come in without support.",
+    "scaffolding": "The target patterns are modeled before practice, but listening answers depend on untaught words (soccer, apartment, factory, hospital), and consonant doubling is tested without being taught.",
+    "timing": "The volume fits the two-hour agenda; only the 10-item in-person quiz with three dictations is tight for 10 minutes.",
+    "tutor_usability": "Easy to run from the slides, but a volunteer gets a wrong rule about 'start' and narrow keys with no note that 'to + verb' is also correct after like/love/start.",
+    "relevance_sensitivity": "Work, chores, shopping and goals are practical with no status or legal questions; model lines assume the learner has children nearby, and nothing tells the tutor that made-up answers are fine."
+  },
+  "findings": [
+    {
+      "lesson": "05",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Some verbs are always followed by another verb ending in \"-ing\" (a gerund): enjoy, stop, start, keep.",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "Incorrect grammar explanation: 'start' is not always followed by -ing. 'I started to study English' is just as correct as 'I started studying English'. (Also, 'stop + to' is grammatical but means something else: 'I stopped to smoke' = I paused in order to smoke.) The same error is in explanationEs and the title 'Verb + -ing after enjoy, stop, start'.",
+      "suggested_fix": "Rewrite as: 'Some verbs are followed by a verb ending in -ing: enjoy, stop. Like, love and start can take either form: I like cooking = I like to cook; I started studying = I started to study.' Update explanationEs and the title the same way, and drop 'keep' or add it to the vocab.",
+      "wrong_english": true,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "wrong_english"
+      ],
+      "verifier_id": "B05",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The explanation says enjoy, stop, start and keep are 'always followed by' a gerund, but 'start' also correctly takes the to-infinitive ('I started to study English' is standard English), so the rule taught in Grammar focus 1 is factually wrong."
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › In-class worksheet, item 5 (cw5)",
+      "quote": "He started ____ English last year. (study)",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "Wrong answer key: the key accepts only 'studying', but 'He started to study English last year' is also correct English. A tutor following the key (and the incorrect grammar rule) will mark a correct answer wrong.",
+      "suggested_fix": "Change the answer to 'studying / to study', or change the verb to 'enjoy' or 'stop' (e.g. 'He stopped ____ at the factory. (work)'), which only take -ing.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › Listening 1: Weekend Plans, question 1 (l1q1)",
+      "quote": "I enjoy playing soccer with my friends.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "Listening answers depend on content words no lesson 01-05 introduces: 'soccer' (l1q1), 'clean' and 'apartment' (l1q3, 'I need to clean my apartment.'), 'factory' (l2q2) and 'hospital' (l2q4). An A1 learner cannot catch or write these answers.",
+      "suggested_fix": "Pre-teach these words on a short word-bank slide before Listening 1 and 2, or change the script to taught words (e.g. 'I enjoy cooking', 'I need to go to work', 'I stopped working at night').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › In-person quiz, item 8 (iq8)",
+      "quote": "Complete: \"I enjoy ___ (swim).\"",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer 'swimming' depends on the double-consonant spelling rule (swim → swimming), which the lesson never teaches; 'swim' itself is also untaught. Also in cw8 ('running').",
+      "suggested_fix": "Add one line to Grammar focus 1: 'Short verbs ending in vowel + consonant double the last letter: run → running, swim → swimming.' Or use verbs with no spelling change (walk → walking, read → reading).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › In-person quiz, item 9 (iq9)",
+      "quote": "I like ___-ing. (Answers will vary.)",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The model answer suggests only the -ing form is correct, so a volunteer may mark 'I like to swim' wrong, though the lesson teaches both forms.",
+      "suggested_fix": "Change to 'I like ___-ing. / I like to ___. (Answers will vary.)'",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ],
+      "verifier_id": "B07",
+      "verifier_verdict": "downgrade-to-major",
+      "verifier_reason": "The iq9 model answer 'I like ___-ing.' leaves out 'I like to ___', which the lesson itself says is equally correct, so a volunteer could mark a right answer wrong; but it is a tutor-run in-person item whose English is accurate and which says 'Answers will vary', not an auto-graded student-app key, so it is not a blocker."
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › In-person quiz, item 6 (iq6)",
+      "quote": "She enjoys reading at night.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "This graded dictation needs third-person 'enjoys', but every model in the lesson uses 'I'; the -s ending is not practiced. iq7 also uses untaught 'travel'.",
+      "suggested_fix": "Change to 'I enjoy reading at night.' and 'We hope to visit my family next year.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › Vocabulary (i-like-ing)",
+      "quote": "Me gusta + gerundio",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Misleading Spanish gloss: in Spanish 'gerundio' means the -ando/-iendo form, and 'Me gusta cocinando' is wrong; Spanish uses the infinitive (Me gusta cocinar). It also makes the matching slide confusing, since 'I like to...' is glossed 'Me gusta...'. Same problem in 'Disfruto + gerundio' (i-enjoy-ing).",
+      "suggested_fix": "Use 'Me gusta + verbo (en inglés: -ing)' and 'Disfruto + verbo (en inglés: -ing)', or simply 'Me gusta cocinar (I like cooking)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › Vocabulary (working)",
+      "quote": "Working helps me support my family.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The vocab examples for working/reading/cooking use a gerund as the subject ('Reading helps me...', 'Cooking ... makes me happy'), a structure the grammar slides never explain, with untaught words (helps, support, makes).",
+      "suggested_fix": "Use the taught pattern instead: 'I like working.', 'I enjoy reading.', 'I love cooking.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › Role-play: Part 2: Talking about daily obligations",
+      "quote": "I have to pick up my kids.",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "The model student line (also the vocab example for 'I have to...') assumes the learner has children with them; learners separated from their children may find copying it painful, and nothing tells the tutor they can change it.",
+      "suggested_fix": "Add a tutor note: 'Learners can talk about a made-up person or change any detail.' Offer neutral word-bank options such as 'go to the store' or 'go to class'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "05",
+      "section": "Tutor slides › In-class worksheet, item 5 (cw5)",
+      "quote": "(He started ____ English.)",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The Spanish-line prompt drops 'last year', so it does not match the English prompt or the Spanish sentence ('el año pasado').",
+      "suggested_fix": "Change to '(He started ____ English last year.)'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "05",
+      "section": "Student app › Homework worksheet, item 1 (w1)",
+      "quote": "Me gusta cocinar. (I like ____.)",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "Wrong answer key in auto-graded homework: the lesson teaches 'I like cooking = I like to cook', but the grader accepts only 'cooking', so a learner who types 'to cook' is marked wrong with no tutor present to correct it.",
+      "suggested_fix": "Use a verb that only takes -ing: 'I enjoy ____. (Disfruto cocinar.)' with answer 'cooking'. Also in cw6 ('I love ____ for my family. (cook)', also valid: 'to cook') and cw8 ('I like ____ in the park. (run)', also valid: 'to run'): switch those to enjoy/stop or list both answers, e.g. 'cooking / to cook'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B06",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w1 is a free-text homework fill-in that gradeHomework marks right only on a trimmed, case-insensitive exact match to 'cooking', yet the lesson's own explanation says 'I like cooking = I like to cook', so a learner who types the correct 'to cook' is marked wrong with no tutor there.",
+      "resolved": "acceptedAnswers added to the homework item in content/modules; checked against the real grader. Now accepts 'to cook'.",
+      "resolved_residual": "cw6/cw8 on the tutor slides (also in this finding) are unchanged."
+    }
+  ]
+}

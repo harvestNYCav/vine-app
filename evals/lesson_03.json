@@ -1,0 +1,257 @@
+{
+  "lesson": "03",
+  "slug": "nouns-and-articles",
+  "file": "content/modules/nouns-and-articles.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "English and the two grammar explanations are correct, but two online-quiz items and one homework item have 'the' as an equally correct answer that the auto-grader rejects.",
+    "level_fit": "Most sentences are short A1 patterns, though the listening scripts and role-plays add longer lines with words like dictionary, second floor, onion and sink.",
+    "scaffolding": "Core drills use the lesson's own vocab, but several graded answers (listening, dictation, Spanish translation) need words no lesson has taught yet, such as second floor, onion, under the sink, big and keys.",
+    "timing": "The agenda totals exactly 120 minutes and the material fits, although the guided-practice drills give only two sample items each, so the tutor has to make up more to fill 15 minutes.",
+    "tutor_usability": "The scripts are easy to read aloud, but the grammar slides never explain when to use 'the', 'some' or 'these are', yet many graded items test them, so an untrained volunteer has nothing to explain from.",
+    "relevance_sensitivity": "Library, kitchen and building settings are practical and nothing asks about status; one scripted role-play line has the learner say they don't have much money, which is a small, avoidable disclosure."
+  },
+  "findings": [
+    {
+      "lesson": "03",
+      "section": "Student app › Online quiz, Q1 (q1)",
+      "quote": "Complete: \"I have ___ book.\"",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "'I have the book.' is correct English, so the distractor 'the' is also a correct answer, but only 'a' is accepted. The Spanish prompt only repeats the English, so nothing tells the learner it means 'un libro'. Same problem in Q2 (q2): 'Which word goes before \"apple\"?' accepts only 'an', but 'the apple' is also correct.",
+      "suggested_fix": "Remove 'the' from the options in q1 and q2 (e.g. options ['a', 'an', 'some'] for q1 is still risky, so use ['a', 'an']), or add the Spanish meaning to the prompt: 'Completa: \"I have ___ book.\" (Tengo un libro.)' and for q2 '¿Qué palabra va antes de \"apple\" para decir \"una manzana\"?'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B03",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Q1 is an auto-graded multiple-choice item with options a/an/the/some and no context such as a Spanish cue or a non-specific hint, so 'I have the book.' is also grammatical, yet the key accepts only 'a', which makes the key too narrow."
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Grammar focus 1-2",
+      "quote": "The book is on the table.",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The two grammar slides cover only a/an and irregular plurals. Nothing explains when to use 'the' (a specific thing) or 'some' (an amount of water, money, help), or 'This is' vs 'These are'. These are tested in q8, w3, w5, cw3, cw7, cw8 and iq3, so a volunteer has no rule to teach before the practice.",
+      "suggested_fix": "Add a third grammar slide, e.g. '\"a\" vs \"the\" vs \"some\"': 'Use a/an for one thing (any one): I have a book. Use the for a specific thing we both know: The book is on the table. Use some with water, money, help: I need some water. This is + one thing; These are + two or more.' Include the Spanish version.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Listening 2: In the Kitchen, question 3 (l2q3)",
+      "quote": "The pot is under the sink.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answers to l2q2 ('An onion') and l2q3 ('Under the sink') depend on onion, pot, under and sink, none of which any lesson has taught, so learners can't write the answers correctly.",
+      "suggested_fix": "Use lesson words: 'Three apples and some water.' / 'Where is the book?' 'The book is on the table.', and change the questions to match (l2q2 answer 'Some water', l2q3 answer 'On the table'). Or add onion/pot/sink to a word bank shown before listening.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Listening 1: At the Library, question 3 (l1q3)",
+      "quote": "The children\\'s books are on the second floor.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer 'On the second floor' depends on 'second floor', which has not been taught (and the answer to l1q1, 'His child (his daughter)', uses untaught 'his' and 'daughter').",
+      "suggested_fix": "Write the line as 'The children\\'s books are on the table.' with answer 'On the table', or pre-teach 'second floor' in a word bank. Change the l1q1 answer to 'Her child' or simply 'His child'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "Write in Spanish: \"These are my keys.\"",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The translation depends on 'keys' (llaves), which is not taught in this or any earlier lesson, so a learner cannot produce the expected answer 'Estas son mis llaves.'",
+      "suggested_fix": "Use a taught noun: 'Write in Spanish: \"These are my books.\"' with answer 'Estos son mis libros.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › In-person quiz, item 5 (iq5)",
+      "quote": "This is a big house.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "This dictation requires spelling 'big', which no lesson has taught, so the learner cannot write the full answer correctly.",
+      "suggested_fix": "Dictate 'This is a house.' or 'This is a car.' instead.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Vocabulary",
+      "quote": "I don't have much money.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Several vocabulary example sentences use untaught words and structures: don't, much, need to buy, beautiful, good school, my documents. Nothing is graded on them, but they make the first exposure harder for A1 learners.",
+      "suggested_fix": "Use simpler examples built from lesson words: 'I need some money.', 'I have a car.', 'This is a house.', 'These are my books.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › In-class worksheet, item 3 (cw3)",
+      "quote": "Close ____ door, please.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Untaught words show up in worksheet and quiz items: close, door (cw3), orange (cw2), store (cw4), egg (iq8), umbrella/orange (q6). The articles can still be worked out from the spelling, so no answer depends on them, but the learner may not understand the sentence.",
+      "suggested_fix": "Use taught nouns where possible (e.g. cw3 'Open ____ book, please.' or '____ car is here.'), or gloss each new word in the Spanish hint.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Role-play: Part 1: At the library",
+      "quote": "I'm looking for a book about New York.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The role-plays use many untaught phrases: I'm looking for, about, dictionary, Enjoy, Tell me about your building, friendly, kind, anything else. They are scripted lines, so no answer depends on them, but they go beyond A1.",
+      "suggested_fix": "Simplify the student lines, e.g. 'I want a book, please.' / 'Do you have a book about New York?', and add 'dictionary' and 'friendly' to the word banks.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Role-play: Part 3: Everyday requests at home",
+      "quote": "I don't have much money right now.",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "The learner is scripted to say they are short of money, as an odd reply to 'No problem.' It does not fit the dialogue and nudges a small financial disclosure; 'Can I help you?' also sounds odd as a request 'at home'.",
+      "suggested_fix": "Set the scene at a store or cafe and end with a neutral 'some' request, e.g. tutor: 'Here you are.' student: 'Thank you. Can I have some apples, too?'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Guided practice: A or An?",
+      "quote": "Your tutor says a word. Say \"a\" or \"an\" before it.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Each guided-practice drill gives only two sample exchanges and a 3-word bank, which is far too little for a 15-minute block. A volunteer has to invent more words on the spot.",
+      "suggested_fix": "List 8-10 cue words per drill from the lesson (book, apple, house, car, umbrella, orange, egg, child, woman, man) so the tutor can read straight down the list.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "03",
+      "section": "Tutor slides › Vocabulary",
+      "quote": "Esto es un/una...",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The gloss uses neutral 'Esto es' but the example translation uses 'Esta es una buena escuela', so the Spanish is inconsistent. The practice titles also use English-style title case ('Describe lo que te Rodea', 'Reto de Plurales'), which is not normal in Spanish.",
+      "suggested_fix": "Gloss as 'Este es un... / Esta es una...' to match the example. Write 'Describe lo que te rodea' and 'Reto de plurales'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "rejected_findings": [
+    {
+      "lesson": "03",
+      "section": "Student app › Homework worksheet, item 5 (w5)",
+      "quote": "Can I have ____ water?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "'Can I have the water?' is also correct, and the Spanish hint '¿Me puede dar agua?' has no word for 'some', so it does not rule 'the' out. The auto-grader accepts only 'some'.",
+      "suggested_fix": "Change the Spanish hint to '¿Me puede dar un poco de agua?' so it clearly asks for 'some', or accept both 'some' and 'the'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B04",
+      "verifier_verdict": "rejected",
+      "verifier_reason": "The Spanish hint '¿Me puede dar agua?' has no article, which marks the water as an unspecified amount, and the same worksheet signals 'the' with 'El' (w3: 'El libro' → 'The'), so the hint points to 'some' and the single key 'some' is not too narrow."
+    }
+  ]
+}

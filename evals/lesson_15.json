@@ -1,0 +1,203 @@
+{
+  "lesson": "15",
+  "slug": "shopping-dining-out",
+  "file": "content/modules/shopping-dining-out.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "English and grammar are correct, but two answer keys reject a form the lesson teaches (w3 auto-grades 'bill' as wrong, iq2 omits 'take-out'), and a few Spanish and wording details are inconsistent.",
+    "level_fit": "Phrases are short, formulaic and right for A1-A2; only a few idioms ('Right this way', 'that is appreciated') go beyond beginner level.",
+    "scaffolding": "Target phrases are introduced before practice, but the bakery listening answers depend on untaught words (cake, chocolate, vanilla, 25 dollars), and 'would like + noun' is used without being taught.",
+    "timing": "The amount of content fits the two-hour agenda; the role-play and practice chunks are short, but a tutor can recycle them with the word banks.",
+    "tutor_usability": "Easy to run from the slides with clear dialogues and word banks; some single-answer keys are too narrow for an untrained volunteer to grade fairly.",
+    "relevance_sensitivity": "Restaurant, take-out and store situations are very practical and nothing asks for sensitive disclosure; the only gap is that the role-play makes tipping sound optional."
+  },
+  "findings": [
+    {
+      "lesson": "15",
+      "section": "Tutor slides › In-person quiz, item 2 (iq2)",
+      "quote": "Write in English: \"para llevar\"",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key lists only 'to go', but vocab 'to-go' teaches 'to go / take-out' for 'para llevar'. A volunteer reading the single-answer key would mark 'take-out' wrong, so the key rejects an answer the lesson itself teaches.",
+      "suggested_fix": "Change the answer to 'to go / take-out'. Also in iq1 ('La cuenta, por favor.'): accept 'The check, please.' and 'The bill, please.' as well as 'Can I have the check, please?'. And in iq8, add 'Can I have the bill, please?'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › Listening 2: Calling a Bakery, question 2 (l2q2)",
+      "quote": "Yes. Chocolate and vanilla. They are 25 dollars.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answers to l2q2 ('Chocolate and vanilla') and l2q3 ('25 dollars') depend on words no lesson from 01 to 15 introduces: cake, chocolate, vanilla, dollars, and the number 25 (the map only covers numbers 1-10). 'Dollars' first appears later in Guided practice, after this listening.",
+      "suggested_fix": "Add a pre-listening word bank: cake / pastel, chocolate / chocolate, vanilla / vainilla, dollars / dólares, 25 = twenty-five. Or change it to taught items, e.g. 'Yes. Bread and coffee. They are ten dollars.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › Role-play: Part 3: Paying",
+      "quote": "Yes, that is appreciated.",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "This makes a tip sound optional. In US sit-down restaurants a tip of about 15-20% is expected, and newcomers often don't know this. 'Appreciated' (a passive form) is also untaught.",
+      "suggested_fix": "Change it to 'Yes. In the U.S., people leave a tip of 15 to 20 percent.' and add a tutor note explaining that tipping is expected at sit-down restaurants but not at counter or take-out places.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › Role-play: Part 3: Paying",
+      "quote": "Should I leave a tip?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The student line uses the modal 'should', which the curriculum map hasn't introduced yet. Background role-play line only.",
+      "suggested_fix": "Change it to a taught form, e.g. 'Do I leave a tip?' or 'Do I need to leave a tip?' (need to is from lesson 05).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › Listening 1: Dinner at a Restaurant",
+      "quote": "Here is the menu. What would you like to drink?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Untaught words appear in background lines: 'drink' (also 'Can I get you something to drink first?' in Role-play Part 2), 'Right this way.' (Part 1), 'p.m.' (Listening 2, 'We close at 8 p.m.') and 'total' (Guided practice: Order Takeout). No graded answer depends on them except that l1q2 asks 'What do they drink?'.",
+      "suggested_fix": "Add 'drink / bebida / tomar' to the Part 2 word bank, and add a short tutor gloss for 'Right this way = Por aquí' and 'p.m. = de la tarde/noche' (or say 'at 8 in the evening', taught in lesson 14).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › Vocabulary (waiter-waitress)",
+      "quote": "The waitress brought our food.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The vocab examples use irregular past forms that aren't taught yet: 'brought' here, and 'left' in the tip example ('We left a good tip for the waitress.'). Lesson 04 teaches only go/went.",
+      "suggested_fix": "Use the present tense: 'The waitress brings our food.' and 'We leave a good tip for the waitress.' (this matches cw5 and cw6).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › In-class worksheet, item 3 (cw3)",
+      "quote": "Is this ____? I don\\'t like hot food.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "'Hot' was taught in lesson 14 as temperature ('It's hot outside'), and here it is used to mean spicy without any explanation, which may confuse learners. The Spanish cue also leaves out the second sentence.",
+      "suggested_fix": "Change it to 'Is this ____? I don't like spicy food.', or add a note: 'hot can mean spicy (picante) or high temperature (caliente)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › In-class worksheet, item 4 (cw4)",
+      "quote": "Soy alérgico al maní. (I\\'m ____ to peanuts.)",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The Spanish word for peanuts doesn't match: here it is 'maní', but the vocab and the role-play use 'cacahuates'. Learners may think these are two different foods.",
+      "suggested_fix": "Use one word across the whole lesson, or give both once: 'cacahuates / maní (peanuts)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "15",
+      "section": "Tutor slides › In-person quiz, item 10 (iq10)",
+      "quote": "I would like a ___, please. (Answers will vary.)",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The key expects 'I would like + noun', but the grammar slide teaches only 'I would like to + verb' ('I would like to order...'). 'I would like + noun' shows up in practice ('I would like the soup, to go.') and in iq6 but is never explained.",
+      "suggested_fix": "Add a third example to Grammar focus 1: 'I would like a water, please. (would like + thing)', and a line saying 'would like' can be followed by a noun or by 'to + verb'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "15",
+      "section": "Student app › Homework worksheet, item 3 (w3)",
+      "quote": "Can I have the ____, please?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The auto-grader accepts only 'check', but the lesson teaches 'check / bill' as equal choices (vocab 'check-bill', and iq8 even says 'ask for the bill'). A learner who types 'bill' is marked wrong, and no tutor is there to fix it.",
+      "suggested_fix": "Make the blank take only one word, e.g. change the cue to '(check)', or rewrite it as 'Can I have the ____, please? (la cuenta = check)'. The grader allows only one string, so the prompt has to name the word it wants.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B26",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w3 is a free-text fill-in with answer 'check', graded by an exact match with no alternate answers, but the vocab item teaches 'check / bill' as equal, so a learner who writes 'bill' is marked wrong.",
+      "resolved": "acceptedAnswers added to the homework item in content/modules; checked against the real grader. Now accepts 'bill'."
+    }
+  ]
+}

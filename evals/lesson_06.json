@@ -1,0 +1,290 @@
+{
+  "lesson": "06",
+  "slug": "verb-to-be",
+  "file": "content/modules/verb-to-be.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 2
+  },
+  "score_rationale": {
+    "accuracy": "Grammar explanations and most keys are correct, but one in-class item is unanswerable as written (the blank sits in front of a printed 'not'), one quiz key rejects the 'I'm' short form that the lesson teaches, and the Spanish says weather 'está frío' where it should be 'hace frío'.",
+    "level_fit": "Sentences are short and fit A1, though a non-word distractor and some role-play phrases ('around here', 'How many ... nearby') add load.",
+    "scaffolding": "am/is/are are introduced before they are practiced, but the weather-report listening keys depend on day names and weather words (windy, warm) that have never been taught, and the dialogue keys depend on 'baby' and 'wife'.",
+    "timing": "The volume fits the two-hour agenda; two listening scripts with eight questions is tight for 20 minutes but workable.",
+    "tutor_usability": "Mostly runnable from the slides, but the tutor has to fix cw7 on the fly, and one role-play answer doesn't match its question.",
+    "relevance_sensitivity": "The content is practical (feelings, weather, the street), but a guided practice requires learners to describe a real family member, and a role-play asks about the learner's family."
+  },
+  "findings": [
+    {
+      "lesson": "06",
+      "section": "Tutor slides › In-class worksheet, item 7 (cw7)",
+      "quote": "They ____ not home. (short form)",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The prompt already prints 'not' after the blank, so the key \"aren't\" produces \"They aren't not home.\" The Spanish line's frame ('They ____ home.') is different from the English one, so the item contradicts itself.",
+      "suggested_fix": "Change promptEn to \"They ____ home. (are not → short form)\" so it matches the promptEs frame, and keep the answer \"aren't\".",
+      "wrong_english": false,
+      "key_issue": "wrong",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_wrong"
+      ],
+      "verifier_id": "B08",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "cw7 has the prompt 'They ____ not home. (short form)' with the answer \"aren't\", so the keyed sentence reads 'They aren't not home.', an ungrammatical double negative, and the Spanish frame does not match the English prompt; that makes this graded item's key factually wrong English."
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Guided practice: All About Me and My Family",
+      "quote": "Describe yourself and one family member.",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "The instructions require learners to describe themselves and a real family member, with no alternative. For recent migrants this can bring up family separation. The word bank (parents) and the model line 'I am a mother.' push toward real personal details.",
+      "suggested_fix": "Retitle the activity 'All About a Person' and change the instructions to 'Describe a person: you, a friend, or a made-up person.' Swap the model lines for a picture or a made-up character (e.g., 'This is Ana. She is a teacher.'), and say that made-up answers are fine.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "required",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_required"
+      ],
+      "verifier_id": "B09",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The guided-practice activity is not marked optional, and it requires learners to describe themselves and a real family member (the model answers are 'Tell me about your sister' / 'My sister is a teacher'), with no option to describe a made-up or pictured person, so it is a required family-disclosure prompt."
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Role-play: Part 2: Talking about how you feel",
+      "quote": "I'm sorry. Is your family okay?",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "The tutor's scripted question asks about the learner's own family. For migrants separated from relatives this may be painful, and it's only implied that a made-up answer is allowed.",
+      "suggested_fix": "Change the line to 'Is your friend okay?' / 'Yes, she is okay.', or add a tutor note that the learner can answer about a made-up person.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "optional",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_required_not_marked_optional"
+      ],
+      "evaluator_severity": "major"
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › In-person quiz, item 1 (iq1)",
+      "quote": "I am tired.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key gives only the full form, but the lesson teaches \"I'm tired.\" in its short-forms vocab item, so a correct short-form answer would be marked wrong against the key.",
+      "suggested_fix": "Change the answer to \"I am tired. / I'm tired.\" Also in l1q4: accept \"No, he is not.\" as well as \"No, he isn't.\"",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Listening 2: The Weather Report, question 1 (l2q1)",
+      "quote": "What day is it today?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answers 'Monday' (l2q1) and 'Thursday' (l2q4) need the days of the week, which no lesson 01-06 introduces.",
+      "suggested_fix": "Put the days in a word bank on the listening slide, or rewrite the questions to use taught words (today/tomorrow) and answer with 'cold', 'sunny' and the like.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Listening 2: The Weather Report, question 2 (l2q2)",
+      "quote": "Cold and windy (40 degrees)",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The keys depend on 'windy' (l2q2) and 'warm' (l2q3), which are never taught. Part 3's word bank only has cold, sunny and rainy.",
+      "suggested_fix": "Change the script to 'Today it is cold and rainy' and 'Tomorrow it is sunny' (the word-bank words), or add windy and warm to a word bank on the listening slide.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Listening 1: How Are You Today?, question 2 (l1q2)",
+      "quote": "His baby (daughter)",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answers 'His baby' (l1q2) and 'His wife' (l1q3) need 'baby' and 'wife', which no lesson 01-06 introduces.",
+      "suggested_fix": "Add 'baby' and 'wife' to a word bank on the listening slide, or rewrite the script with taught words (e.g., 'My child is sick' / 'she is home with my sister').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › In-person quiz, item 6 (iq6)",
+      "quote": "It is hot today.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The dictation needs learners to spell 'hot', which is never taught. The lesson only uses 'cold'.",
+      "suggested_fix": "Change the dictation to 'It is cold today.' or 'It is sunny today.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Vocabulary (it-is)",
+      "quote": "Está frío hoy.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "For weather, Spanish says 'Hace frío hoy'. 'Está frío' describes an object (the coffee is cold), so it models the wrong it-is equivalence.",
+      "suggested_fix": "Use 'Hace frío hoy.' Also in the role-play Part 3 ('Hoy está frío, ¿verdad?', 'Sí, está muy frío.'), the yes/no drill, w5, and the vocab es note ('Es... / Está...' should add 'Hace... (clima)').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Listening 2: The Weather Report",
+      "quote": "Tomorrow it is warm and sunny.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Present 'is' for a future forecast sounds unnatural. A forecast would say 'will be', which lesson 04 taught. 'there is rain on Thursday' is also awkward.",
+      "suggested_fix": "Use 'Tomorrow it will be sunny.' and 'It will be rainy on Thursday.', or keep the report to today only so it stays in the present.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Role-play: Part 3: Talking about the weather and everyday facts",
+      "quote": "There is a bank on my street.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The tutor asks 'Is there a store near you?' and the model answer is about a bank, so the answer doesn't match the question.",
+      "suggested_fix": "Change it to 'Yes, there is a store on my street.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Role-play: Part 3: Talking about the weather and everyday facts",
+      "quote": "How many schools are nearby?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The role-play lines use structures and words that haven't been taught ('How many', 'nearby', 'around here', 'store'). No answer key depends on them.",
+      "suggested_fix": "Change it to 'Are there schools near you?' and change 'Are you from around here?' (Part 1) to 'Where are you from?' (lesson 01).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Guided practice: All About Me and My Family",
+      "quote": "My sister is a teacher.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'teacher' and 'mother' appear in the model lines but aren't in the word bank or in any earlier lesson.",
+      "suggested_fix": "Add 'teacher' and 'mother' to the activity's word bank, or use taught nouns (student, man, woman).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "06",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Use \"are\" with you, we, they, or more than one person/thing.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Neither grammar slide explains the there is / there are rule (singular vs plural), yet q8, cw5 and cw6 test it.",
+      "suggested_fix": "Add one sentence and an example: 'Use \"there is\" for one thing and \"there are\" for two or more: There is a bank. There are two banks.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "06",
+      "section": "Student app › Online quiz, Q9 (q9)",
+      "quote": "amn't",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "A non-English form as a distractor can teach beginners a word that doesn't exist, and nobody is there to correct it.",
+      "suggested_fix": "Replace it with a real form like \"isn't\" or \"they not\", or use \"I'm\" as the distractor.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}

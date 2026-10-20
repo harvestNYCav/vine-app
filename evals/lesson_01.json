@@ -1,0 +1,268 @@
+{
+  "lesson": "01",
+  "slug": "introducing-yourself",
+  "file": "content/modules/introducing-yourself.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 2,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "English and grammar explanations are correct, but online quiz q8 offers 'I am a cook' as a distractor even though it is an equally valid translation, and there are a few small Spanish nits.",
+    "level_fit": "Most lines are short A1 chunks, but Listening 2 ('I have to go', 'When will they see each other again?') is above a first-lesson level.",
+    "scaffolding": "Listening 2 and the in-person quiz require untaught words (nurse, son, next Saturday, waiter) and third-person 'She is' to answer, in the very first lesson.",
+    "timing": "The agenda adds up to exactly 120 minutes with no slack for welcome or wrap-up, and 14 vocabulary chunks in 15 minutes is tight for absolute beginners.",
+    "tutor_usability": "Mostly runnable from the page, though the role-play 'Rosa' identity is confusing and a different Rosa appears in Listening 2.",
+    "relevance_sensitivity": "Practical, everyday introductions; the graded self-questions about origin and job have no made-up-persona option, which can be uncomfortable for recent migrants without work."
+  },
+  "findings": [
+    {
+      "lesson": "01",
+      "section": "Student app › Online quiz, Q8 (q8)",
+      "quote": "I am a cook",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "'I am a cook' is also a correct English rendering of 'Trabajo como cocinero', but the auto-graded quiz marks it wrong.",
+      "suggested_fix": "Replace the distractor 'I am a cook' with a clearly wrong option such as 'I am from a cook' or 'I cook as a work'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B01",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Q8 is an auto-graded multiple-choice item whose options include 'I am a cook', a natural and accurate English rendering of 'Trabajo como cocinero', but the key accepts only 'I work as a cook', so there are two defensible answers and the key is too narrow for the student app."
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Listening 2: Talking About Work, question 2 (l2q2)",
+      "quote": "I work as a nurse at a hospital.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer to l2q2 ('She is a nurse.') depends on 'nurse' (and 'hospital'), which are not taught in lesson 01, and on third-person 'She is', which is not taught either.",
+      "suggested_fix": "Have Rosa say 'I work as a cook.' (taught) and key l2q2 as 'A cook' / 'She works as a cook'; accept short answers.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Listening 2: Talking About Work, question 3 (l2q3)",
+      "quote": "My son is 8 years old and my daughter is 12.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "l2q3 depends on 'son'/'daughter'/'children', which are untaught; the exchange also models asking about family in a lesson about introducing yourself.",
+      "suggested_fix": "Replace with taught language, e.g. Mr. Kim: 'How old are you, Rosa?' Rosa: 'I am thirty-five years old.' and key l2q3 'How old is Rosa?' -> '35 (years old)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Listening 2: Talking About Work, question 4 (l2q4)",
+      "quote": "When will they see each other again?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The question uses untaught 'will' and 'each other', and the answer 'Next Saturday' depends on untaught 'next' and days of the week.",
+      "suggested_fix": "Drop l2q4 or replace it with a taught item, e.g. 'What does Rosa say at the end?' -> 'Goodbye! See you later.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "Write in English: \"Trabajo como mesero.\"",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer needs 'waiter', which is never taught (the lesson only teaches 'cook'); the key also omits valid 'I am a waiter' / 'server'.",
+      "suggested_fix": "Use 'Trabajo como cocinero.' -> 'I work as a cook.', or add 'waiter' to vocab; accept 'I am a waiter/server' too.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Listening 2: Talking About Work, question 1 (l2q1)",
+      "quote": "She is fine.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "Key expects full third-person sentences ('She is fine.', also l2q2 'She is a nurse.') though 'she is' is untaught; a beginner answering 'Fine' or 'I am fine' could be marked wrong by a volunteer reading the key.",
+      "suggested_fix": "Key short answers: 'Fine (She is fine.)'; add a tutor note that one-word answers are correct. Also in l2q2.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › In-person quiz, item 10 (iq10)",
+      "quote": "I work as a ___. (Answers will vary.)",
+      "category": "relevance_sensitivity",
+      "severity": "major",
+      "issue": "Graded self-questions (iq9 origin, iq10 job) assume the learner has a job and require real personal answers; recent migrants may be unemployed or uneasy discussing work, and no made-up option is offered.",
+      "suggested_fix": "Add a note: 'You can answer about yourself or about a made-up person (e.g. Carmen from Honduras, a cook).' and accept 'I am looking for work.' Also in iq9 and Role-play Part 3 'Practice describing your job'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Listening 2: Talking About Work",
+      "quote": "Nice! Well, I have to go. See you later!",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "Background script includes untaught chunks ('I have to go', 'Well', 'That is great', 'Very good') that a first-lesson learner has not seen.",
+      "suggested_fix": "Simplify to 'Goodbye, Rosa! See you later!'; replace 'That is great' with 'Nice!'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Role-play: Part 2: Sharing more about yourself",
+      "quote": "What languages do you speak?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Role-play and practice lines use untaught content words ('languages', 'now', 'too' in Part 1, 'neighbor' in Guided practice); no graded answer depends on them.",
+      "suggested_fix": "Add 'language' and 'neighbor' to vocab or rephrase: 'Do you speak English?' -> 'I speak Spanish and a little English.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Listening 1: Meeting at the Community Center, question 1 (l1q1)",
+      "quote": "What is the woman\\'s name?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Question uses untaught 'woman' and possessive 's (also 'Where does Luis live now?' uses third-person 'does'); the Spanish prompt helps, so answers don't depend on it.",
+      "suggested_fix": "Rephrase as 'What is her name? (Ana / Luis?)' or keep and have the tutor point to the Spanish prompt.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Role-play: Part 1: Meeting someone new",
+      "quote": "Mucho gusto también.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Awkward Spanish for 'Nice to meet you too'; native speakers say 'Igualmente' or 'El gusto es mío'.",
+      "suggested_fix": "Change to 'Igualmente.' or 'El gusto es mío.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Guided practice: Say It Right",
+      "quote": "Me llamo Maria.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Missing accent in the Spanish name 'María' (inconsistent with the vocab example).",
+      "suggested_fix": "Write 'Me llamo María.'; also in Student app › Homework worksheet, item 1 (w1) promptEs.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Role-play: Part 2: Sharing more about yourself",
+      "quote": "Rosa keeps talking. Practice sharing where you are from and what you speak.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "In Part 1 the student says 'My name is Rosa', so 'Rosa keeps talking' is confusing about who Rosa is; a different Rosa (a nurse with children) then appears in Listening 2.",
+      "suggested_fix": "Write 'The conversation continues. Practice sharing...' and rename the Listening 2 character (e.g. 'Carmen').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "01",
+      "section": "Tutor slides › Vocabulary",
+      "quote": "Good morning / Good afternoon",
+      "category": "timing",
+      "severity": "minor",
+      "issue": "14 vocabulary entries (several of them paired, like this one) in 15 minutes, and an agenda that totals exactly 120 minutes with no time for welcome or wrap-up, is tight for absolute beginners.",
+      "suggested_fix": "Add a tutor note marking optional items (e.g. Listening 2, Guided practice 'Say It Right') to skip if time runs short.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}

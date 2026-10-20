@@ -1,0 +1,215 @@
+{
+  "lesson": "08",
+  "slug": "demonstratives",
+  "file": "content/modules/demonstratives.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 5
+  },
+  "score_rationale": {
+    "accuracy": "The core grammar and all quiz and worksheet keys are correct, but one guided-practice model sentence is ungrammatical ('These are my favorite color' for one shirt), and the store role-play mixes plural shoes with 'this one / that one'.",
+    "level_fit": "Sentences are short and A1-appropriate, and the instructions are simple; only the listening scripts add market and moving vocabulary that goes beyond beginner load.",
+    "scaffolding": "The target demonstratives build well on 'This is a... / These are...' from lesson 03, but several listening answers depend on untaught words (dollar, pound, sweet/sour, kitchen, possessive 's).",
+    "timing": "The content fits the two-hour agenda; the role-plays are only three short exchanges each for 25 minutes, but a tutor can easily repeat them with real objects.",
+    "tutor_usability": "Most of it can be run from the page with realia; a tutor must patch the plural/singular mix-ups on the fly and has narrow keys for a few listening and quiz items.",
+    "relevance_sensitivity": "Market, pharmacy, store, lost-and-found and moving contexts are practical, and nothing asks learners to disclose personal, family or status details."
+  },
+  "findings": [
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Guided practice: This One or That One? (practiceActivities[2])",
+      "quote": "These are my favorite color.",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The student has just chosen one shirt ('I like this one'), so the plural 'These are' is wrong. The lesson's own rule says one thing takes this/that, so the model answer teaches the error the lesson is trying to prevent. The Spanish 'Estas son de mi color favorito' repeats it.",
+      "suggested_fix": "Change it to 'It is my favorite color.' / 'Es de mi color favorito.' (or 'This one is my favorite color.' / 'Esta es de mi color favorito.').",
+      "wrong_english": true,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "wrong_english"
+      ],
+      "verifier_id": "B12",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The student picked one shirt ('I like this one') and the tutor asks 'Why do you like it?', so the model answer 'These are my favorite color.' uses the wrong plural demonstrative and verb (it should be 'It is / This is my favorite color.'), a grammar error in a lesson that teaches this/these, and the Spanish 'Estas son' repeats it."
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Listening 2: Moving Day, question 3 (l2q3)",
+      "quote": "Kim\\'s sister\\'s",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The question uses the untaught 'Whose', and the key requires a double possessive 's ('Kim's sister's'). Possessive 's has not been taught. Learners who say 'her sister' or 'Kim's sister' would understand the script, but this key rejects them.",
+      "suggested_fix": "Change the question to 'Is the TV Kim's or her sister's?', or accept 'Her sister's / Kim's sister / Her sister' in the key. Or replace it with 'Is the big box here or by the door?'",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides",
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Role-play: Part 2: Comparing items in a store (teachingScenarios[1])",
+      "quote": "I like that one too.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The tutor asks about shoes, a plural, and points to 'those, over there', but the student answers with the singular 'this one' / 'that one' (chunks 1-3). This contradicts the lesson's near/far, one/many rule right after it is taught, and a beginner can't tell when 'those' turns into 'that one'.",
+      "suggested_fix": "Use a single item: 'Which bag do you like?' / 'I like this one.' / 'What about that one, over there?' / 'I like that one too.' / 'This one. It is cheaper.' Or keep the shoes and make every line plural: 'I like these.' / 'I like those too.' / 'These. They are cheaper.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Listening 1: At the Market, question 1 (l1q1)",
+      "quote": "Two dollars a pound",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'dollars' and 'a pound', and the question uses 'How much'. None of these are in the curriculum through lesson 08. Also in l1q2 ('One dollar') and l1q4, where the learner must choose between 'sweet' and 'sour', both untaught. Also in l2q4, whose answer 'In the kitchen' depends on the untaught 'kitchen'.",
+      "suggested_fix": "Add 'dollar', 'pound', 'how much', 'sweet' and 'kitchen' to the listening slide as a pre-taught word bank with Spanish (dólar, libra, ¿cuánto?, dulce, cocina). Or rewrite the questions so the answer is a demonstrative or here/there, e.g. 'Are the mangoes here or over there?' → 'Over there'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "I like that one.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key gives only 'I like that one.', but 'I like that.' is also an acceptable translation of 'Me gusta ese.' A volunteer grading against the key may mark it wrong.",
+      "suggested_fix": "Change the key to 'I like that one. (Also accept: I like that.)'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Listening 2: Moving Day",
+      "quote": "Yes, these are my boxes. They are books.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Read literally, 'They are books' says the boxes are books. 'It is her TV' says the same about the box. Beginners take model sentences literally.",
+      "suggested_fix": "Change it to 'Yes, these are my boxes. The books are in them.' (or 'They have books in them.'), and change 'It is her TV.' to 'Her TV is in it.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Vocabulary (that)",
+      "quote": "eso / ese / esa",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Spanish has a three-way distinction (este / ese / aquel), and 'that' / 'those' also cover aquel / aquella / aquello and aquellos / aquellas, especially for 'over there'. Leaving these out may make Spanish speakers think English has a separate word for 'aquel'. Also in 'those': 'esos / esas'.",
+      "suggested_fix": "Change it to 'eso / ese / esa / aquel / aquella' and, for those, 'esos / esas / aquellos / aquellas'. Add a note to the grammar slide: English has only two distances. 'That' = ese and aquel.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Guided practice: Lost and Found (practiceActivities[1])",
+      "quote": "Yes, this is mine.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The student has to say 'mine', which is never taught. Possessive pronouns appear only inside the chunk 'Is this yours?'. Also in 'No, that is not mine.'",
+      "suggested_fix": "Add a word bank to this activity: 'mine = mío / mía', 'yours = tuyo / suyo'. Or let the student answer 'Yes, this is my phone.' / 'No, that is not my phone.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Role-play: Part 3: Asking about unfamiliar things (teachingScenarios[2])",
+      "quote": "That is medicine for a headache.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Background lines use untaught content words that no answer depends on: 'medicine' here; also 'on the table' (teachingScenarios[0]), 'fresh' (cw3), 'big' (cw4), 'Come' (cw7), 'Put' (cw8), and 'better than' in the vocab example for 'I like this one'.",
+      "suggested_fix": "Add 'medicine = medicina' and 'table = mesa' to the word banks of those role-plays, and add a Spanish gloss in parentheses after the untaught words in the worksheet prompts.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › In-class worksheet, item 4 (cw4)",
+      "quote": "Esas casas de allá son grandes. (____ houses over there...)",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The English prompt in parentheses is cut off ('...'), unlike every other item, which repeats the full sentence.",
+      "suggested_fix": "Change it to 'Esas casas de allá son grandes. (____ houses over there are big.)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "08",
+      "section": "Tutor slides › Vocabulary (is-this-yours)",
+      "quote": "Disculpe, ¿esto es suyo?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The headword translation uses informal 'tuyo' but the example uses formal 'suyo', with no explanation. Both are correct, but a beginner may think they are different English phrases.",
+      "suggested_fix": "Change the headword to '¿Esto es tuyo? / ¿Esto es suyo?' (informal / formal), or use 'tuyo' in both.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}

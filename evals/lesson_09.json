@@ -1,0 +1,248 @@
+{
+  "lesson": "09",
+  "slug": "likes-and-dislikes",
+  "file": "content/modules/likes-and-dislikes.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 3
+  },
+  "score_rationale": {
+    "accuracy": "Most English and keys are correct, but iq3's key rejects the taught 'A mí tampoco', and several Spanish lines use 'Yo también/tampoco' after gustar or are calques.",
+    "level_fit": "Short, high-frequency sentences fit A1, with only a few idioms ('Not really', 'Let's get') that go beyond it.",
+    "scaffolding": "The target structures are introduced before practice, but listening and quiz answers depend on untaught words (soup, salad, gardening, color, blue, weather).",
+    "timing": "The overall volume fits two hours, though the role-play section is thin for 25 minutes and a tutor will need to extend it.",
+    "tutor_usability": "It is easy to run from the slides, but the near-duplicate vocab makes the matching slide ambiguous, and the -s rule doesn't warn about 'doesn't like'.",
+    "relevance_sensitivity": "Food and hobby topics are practical and low-risk, but one guided activity tells learners to talk about family members and assumes they have siblings."
+  },
+  "findings": [
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Guided practice: Describe Someone You Know",
+      "quote": "Describe what a family member likes, using \"he\" or \"she.\"",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "This optional activity tells learners to talk about a family member, and the scripted questions assume they have a brother and a sister. For recent migrants who may be separated from family, that can be painful.",
+      "suggested_fix": "Change the instructions to 'Describe what a friend, a neighbor, or a made-up person likes, using \"he\" or \"she.\"', and the tutor lines to 'What does your friend like?' / 'What does your neighbor like?'. This also removes the untaught words 'brother' and 'sister'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "required",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_required"
+      ],
+      "verifier_id": "B13",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The guided-practice activity has no optional marker and no alternative: its instructions tell learners to describe a family member, and its scripted prompts ask 'What does your brother like?' and 'What does your sister like?', so it is a required family disclosure that also assumes they have siblings."
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › In-person quiz, item 3 (iq3)",
+      "quote": "Write in Spanish: \"Me neither.\"",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key gives only 'Yo tampoco.', but the lesson teaches 'Me neither' = 'A mí tampoco' (vocab me-too-me-neither, grammar 2, role-play Part 3). A tutor grading from the key would mark the taught answer wrong.",
+      "suggested_fix": "Change the answer to 'A mí tampoco. / Yo tampoco.' (A mí tampoco is the one taught in this lesson).",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Listening 1: Ordering Lunch, question 2 (l1q2)",
+      "quote": "Soup and salad",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'soup' and 'salad', which no lesson up to 09 introduces. l1q4 ('Soup') depends on 'soup' too, and the script also uses untaught 'lunch' and 'Let's get'.",
+      "suggested_fix": "Change Mia's line to food words the lesson already uses, e.g. 'Not really. I prefer rice and beans.', and key l1q2 'Rice and beans' and l1q4 to match, or add soup and salad to the word bank. Also in Listening 2, question 4 (l2q4): its key 'Reading and gardening' depends on untaught 'gardening'; change it to 'reading and cooking' (cooking is from lesson 05).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "Mi color favorito es el azul.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "To translate this, the learner needs 'color' and 'blue', and no lesson up to 09 teaches either.",
+      "suggested_fix": "Use taught words: 'Mi comida favorita es arroz con frijoles.' → 'My favorite food is rice and beans.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › In-person quiz, item 5 (iq5)",
+      "quote": "like cold weather.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "This dictation item asks the learner to spell 'weather', which is never taught. The vocab teaches 'the cold' instead.",
+      "suggested_fix": "Dictate 'I don't like the cold.', which matches the vocab example. Also in cw4 and the Agree or Disagree activity, where 'cold weather' is only background.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › In-class worksheet, item 6 (cw6)",
+      "quote": "¡Yo también!",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "With gustar/encantar verbs, the right Spanish reply to 'Me encanta la música' is '¡A mí también!', not '¡Yo también!'. It also contradicts the lesson's own vocab ('A mí también / A mí tampoco').",
+      "suggested_fix": "Change it to '¡A mí también!'. Also in cw7: change 'Yo tampoco.' to 'A mí tampoco.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Vocabulary (i-prefer)",
+      "quote": "I prefer tea over coffee.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The vocab example uses 'prefer ... over', but cw2 teaches 'prefer ... to'. The Spanish 'Prefiero el té sobre el café' is a calque; natural Spanish is 'Prefiero el té al café'.",
+      "suggested_fix": "Change the example to 'I prefer tea to coffee.' / 'Prefiero el té al café.' so it matches cw2.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "09",
+      "section": "Lesson title (titleEs)",
+      "quote": "Gustos y Disgustos",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "In Spanish, 'disgusto' means upset, annoyance or a quarrel, not 'dislike', so the title reads oddly.",
+      "suggested_fix": "Use 'Lo que me gusta y lo que no me gusta' or 'Gustos y preferencias'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Remember to add \"-s\" for he/she: he likes, she likes.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The rule never says that after 'doesn't' the verb drops the -s. cw5 ('She doesn't ____ fish.') and Listening 2 use 'doesn't', so learners who follow the rule will write 'doesn't likes'.",
+      "suggested_fix": "Add: 'But after doesn't, use like: She doesn't like fish.' and add that line as an example.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Pronunciation/Matching/Copying (i-really-like, i-like-it-a-lot)",
+      "quote": "Me gusta mucho",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "'I really like...' ('Me gusta mucho...') and 'I like it a lot' ('Me gusta mucho') have almost the same Spanish. 'I don't like ... at all' and 'I don't like it at all' are near duplicates too. On the matching slide the learner cannot tell which Spanish goes with which English.",
+      "suggested_fix": "Make the Spanish distinct, e.g. 'Me gusta mucho (+ cosa)...' vs 'Me gusta mucho (eso)', or merge the near-duplicate vocab items and replace them with new items such as 'I hate...'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Guided practice: Favorites Interview",
+      "quote": "Ask your tutor about their favorite food and season.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The instructions ask about a favorite 'season', a word never taught, and the scripted lines never use 'favorite' ('What do you like to eat?', 'Do you like summer?').",
+      "suggested_fix": "Change the instructions to 'Ask your tutor what food and weather they like.', or add the line 'What is your favorite food?' and drop 'season'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Vocabulary (i-like-it-a-lot)",
+      "quote": "I tried this dish and I like it a lot.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The vocab examples use untaught words: 'tried' and 'dish' here, 'neighborhood' in i-really-like, and 'weekends' in what-do-you-like.",
+      "suggested_fix": "Use taught words, e.g. 'I like this coffee a lot.' and 'I really like this house.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "09",
+      "section": "Tutor slides › Role-play: Part 2: Talking about hobbies",
+      "quote": "Practice talking about what you like to do in your free time.",
+      "category": "timing",
+      "severity": "minor",
+      "issue": "The three role-plays have only eight two-line exchanges in total, which is thin for the 25-minute slot. A volunteer tutor will run out of material after about 10 minutes.",
+      "suggested_fix": "Add a tutor note such as 'Repeat each exchange with new words from the word bank, then switch roles', and add 2-3 more chunks per part (e.g. 'Do you like rice and beans?', 'What is your favorite food?').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}

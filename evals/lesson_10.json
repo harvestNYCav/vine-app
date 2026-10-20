@@ -1,0 +1,297 @@
+{
+  "lesson": "10",
+  "slug": "negation",
+  "file": "content/modules/negation.ts",
+  "scores": {
+    "accuracy": 2,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 3
+  },
+  "score_rationale": {
+    "accuracy": "The grammar explanations are correct, but two online-quiz items have a second correct distractor, homework exact-match grading rejects valid full forms and curly apostrophes, and one model line misuses 'not yet'.",
+    "level_fit": "Sentences are short, high-frequency and A1-appropriate. A few idioms ('figure it out') and the present perfect add load.",
+    "scaffolding": "The core negatives build well on lessons 06 and 07, but listening answers depend on untaught words (account, passport, slowly, class), and w4 depends on an untaught 'have no + noun' pattern.",
+    "timing": "The volume fits the two-hour agenda. The role-plays are short for 25 minutes, but a tutor can easily recycle them with word-bank swaps.",
+    "tutor_usability": "It is mostly runnable from the page. The matching shows two identical 'no' targets, one role-play is mislabeled, and there is no double-negative warning a volunteer would need.",
+    "relevance_sensitivity": "The clinic, work, bank and declining contexts are practical, but one guided-practice item makes learners correct a statement about their own children."
+  },
+  "findings": [
+    {
+      "lesson": "10",
+      "section": "Student app › Online quiz, Q3 (q3)",
+      "quote": "Complete: \"She ___ speak Spanish.\"",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The distractor \"can't\" is also correct: \"She can't speak Spanish.\" is grammatical, and the lesson teaches can't + base verb. A learner who picks it is marked wrong, with no tutor to explain.",
+      "suggested_fix": "Replace \"can't\" with a clearly wrong option such as \"isn't\" plus \"not\" (options: doesn't / don't / isn't / not), or add a Spanish cue: 'Ella no habla español. She ___ speak Spanish.'",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B14",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The auto-graded q3 accepts only \"doesn't\", but \"She can't speak Spanish.\" is also grammatical and fits the prompt, which gives no cue for ability vs. habit; the lesson itself teaches \"can't\" + base verb, so a learner who picks \"can't\" is marked wrong for a correct answer."
+    },
+    {
+      "lesson": "10",
+      "section": "Student app › Online quiz, Q2 (q2)",
+      "quote": "Complete: \"I ___ have a car.\"",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The distractor \"didn't\" is also correct: \"I didn't have a car.\" is grammatical, and this lesson teaches didn't + base verb. The key accepts only \"don't\".",
+      "suggested_fix": "Replace \"didn't\" with a wrong option such as \"isn't\" or \"not\", or add a Spanish cue ('No tengo carro.') so only the present fits.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B15",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The auto-graded q2 has no time cue or Spanish meaning in either prompt, so the distractor \"didn't\" makes \"I didn't have a car.\" a grammatical answer (the lesson itself teaches didn't + base verb), yet only \"don't\" is accepted, which makes the key too narrow."
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Guided practice: True or False About Me",
+      "quote": "You have five children.",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "The learner must correct a statement about their own children. For recent migrants this can bring up family separation (children left behind, lost or detained), and the activity says the statements are about 'you', with no alternative.",
+      "suggested_fix": "Make it about a made-up person or picture ('Ana has five children.' → 'Ana doesn't have five children.'), or add a tutor note: 'Learners can answer about a made-up person.' Use neutral facts (languages, food, transport) for statements about the learner.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "required",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "disclosure_required"
+      ],
+      "verifier_id": "B17",
+      "verifier_verdict": "downgrade-to-major",
+      "verifier_reason": "The tutor-led, ungraded 'True or False About Me' activity does have learners confirm or deny 'You have five children', which touches on family, but it has no answer key, a tutor runs it live, and the model reply 'I don't have five children' reveals almost nothing, so it is a real sensitivity issue but not a required or graded disclosure.",
+      "verifier_overruled": "An ungraded tutor-led activity counts as required unless the lesson marks it optional; this one is not marked, so it stays a blocker."
+    },
+    {
+      "lesson": "10",
+      "section": "Student app › Homework worksheet, item 4 (w4)",
+      "quote": "I have ____ money today.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer 'no' depends on the 'have + no + noun' pattern, which the lesson never teaches or models: the 'no' card only shows 'No, thank you.', and the vocab and grammar model 'I don't have any money'. Self-study learners will likely write \"don't\" or \"not\".",
+      "suggested_fix": "Add a grammar example and vocab example such as 'I have no money. = I don't have any money.' with a note on no vs not (no + noun, not + verb/adjective), or change w4 to 'I ____ have money today.' (don't).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Listening 1: At the Bank, question 2 (l1q2)",
+      "quote": "Open an account",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "Listening answers depend on words no lesson from 01 to 10 introduces: 'open' and 'account' (l1q2), 'passport' (l1q3) and 'slowly' (l1q4). Also in Listening 2, l2q1: the answer 'She has English class.' depends on 'class' and 'Saturday', which are untaught.",
+      "suggested_fix": "Pre-teach account, open, passport, slowly, class and Saturday in a short word bank before each listening, or add them to the vocab list; or change the questions to ones answerable with taught words.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Guided practice: Polite No",
+      "quote": "Not yet, thank you.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'Not yet' does not answer 'Do you want more time?'. It means something hasn't happened yet, so this misteaches a target vocab item. The Spanish 'Todavía no, gracias.' is equally odd as a reply.",
+      "suggested_fix": "Change the tutor line to 'Are you finished?' / '¿Ya terminaste?' with the answer 'Not yet.', or keep the question and change the answer to 'No, thank you.'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Pronunciation/Matching/Copying (not)",
+      "quote": "This is not my bag.",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The 'not' card and the 'no' card both have the Spanish 'no', and both are among the first 8 vocab items used for matching (slides and homework). Learners see two identical 'no' targets, and 'No... (presente)' / 'No... (pasado)' are also hard to tell apart in matching. The lesson never explains when to use no vs not.",
+      "suggested_fix": "Give distinct Spanish cues, e.g. not: 'no (+ verbo/adjetivo): This is not my bag.' and no: 'no (respuesta / + sustantivo): No, thank you.', and add a one-line no vs not rule to the grammar.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › In-class worksheet, item 6 (cw6)",
+      "quote": "____ is home. (nadie)",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key gives only 'Nobody', but 'No one' is taught on the same vocab card ('nobody / no one') and is equally correct.",
+      "suggested_fix": "Change the key to 'Nobody / No one'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Vocabulary (not-yet)",
+      "quote": "I have not finished the form yet.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The model sentence for 'not yet' uses the present perfect, which no lesson teaches. It also appears in Role-play Part 3 ('Have you finished the form yet?'). No answer depends on it, but the vocab card is the main model for the word.",
+      "suggested_fix": "Use taught structures: 'Are you finished? Not yet.' or 'I am not finished yet.' (matching cw7).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Role-play: Part 3: Politely declining",
+      "quote": "Nobody, right now.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "This is an awkward, fragmentary reply with a stray comma. A natural answer is 'No, nobody is helping me right now.' or 'No one right now.'",
+      "suggested_fix": "Change it to 'No, nobody is helping me right now.' / 'No, nadie me está ayudando ahora.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Role-play: Part 3: Politely declining",
+      "quote": "Part 3: Politely declining",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Only the first exchange is a polite decline. The 'not yet' and 'nobody' exchanges don't match the label, and the word bank item 'something to eat' is never used.",
+      "suggested_fix": "Relabel it 'Part 3: Short negative answers', or replace chunks 2 and 3 with declines that use the word bank ('Would you like something to eat?' 'No, thank you. I'm not hungry.').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Vocabulary (nothing)",
+      "quote": "No hay nada en el refrigerador.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Spanish uses double negatives ('No hay nada', 'No tengo nada'), so Spanish speakers often say 'I don't have nothing'. The lesson never warns about this, and a volunteer tutor may not know to correct it.",
+      "suggested_fix": "Add a grammar note: 'In English use only one negative: I don't have anything / I have nothing (not: I don't have nothing).'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Role-play: Part 1: Saying you don't understand",
+      "quote": "we'll figure it out together",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "Untaught words and idioms appear in background lines where no answer depends on them: 'figure it out', 'pain', 'hungry' (cw1), 'fish' (iq8), 'French', 'breakfast', 'fridge', 'bag', 'a ride', 'teller', 'report'.",
+      "suggested_fix": "Simplify to 'No problem. We can go slowly.' and add a small word bank (hungry, fish, fridge, pain) where those words are needed for items.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "10",
+      "section": "Tutor slides › Vocabulary (lesson description)",
+      "quote": "decir lo que no tienes, y decir que no entiendes.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Spanish normally doesn't put a comma before 'y' in a list. The same English-style comma appears in the grammar explanationEs ('con he, she, o it').",
+      "suggested_fix": "Change it to 'decir lo que no tienes y decir que no entiendes' and 'con he, she o it'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "10",
+      "section": "Student app › Homework worksheet, item 1 (w1)",
+      "quote": "No tengo carro. (I ____ have a car.)",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "Homework fill-ins are graded by exact (case-insensitive) string match, so correct answers like \"do not\", \"did not\", \"cannot\", or \"don’t\" typed with a phone's curly apostrophe are marked wrong. Also in w2 (doesn't), w3 (didn't) and w5 (can't).",
+      "suggested_fix": "Accept alternatives (do not / does not / did not / cannot / can not, and both apostrophe types), or tell learners in promptEs 'Escribe la forma corta: don't'. Normalizing ’ to ' in grading would fix the apostrophe case for all lessons.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B16",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w1's only key is \"don't\" and gradeHomework only trims and lowercases before an exact match, so the correct answers \"do not\" and \"don’t\" (curly apostrophe, the iOS default) are marked wrong in the auto-graded homework; for w1 itself, \"did not\" and \"cannot\" would not be correct.",
+      "resolved": "Grader fix: lib/lesson-answers.ts now treats curly and straight apostrophes, and contractions and full forms, as the same answer. Now accepts 'do not' and 'don’t'."
+    }
+  ]
+}

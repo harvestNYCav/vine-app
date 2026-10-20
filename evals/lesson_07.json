@@ -1,0 +1,307 @@
+{
+  "lesson": "07",
+  "slug": "verb-to-have",
+  "file": "content/modules/verb-to-have.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 2
+  },
+  "score_rationale": {
+    "accuracy": "The grammar explanations and the online-quiz/homework keys are correct, but several tutor-slide keys are narrow, and iq3's key leaves out 'lapicero', the word the lesson teaches.",
+    "level_fit": "Sentences are short and A1-appropriate. Only a few phrases ('Can I ask you?', 'on sale', 'near the front') stretch beginners.",
+    "scaffolding": "have/has and do/does are taught before practice, but three graded answers depend on untaught words (cough, construction, new).",
+    "timing": "Fourteen vocab items, two 4-question listenings, three short role-plays and a 10-item in-person quiz fit the two-hour agenda, though the quiz is tight.",
+    "tutor_usability": "Mostly runnable from the slides, but the store role-play is incoherent, '20 Questions' doesn't match its activity, and 'have a seat' comes with no tutor note.",
+    "relevance_sensitivity": "The clinic, store and work contexts are practical, but a guided practice and a role-play require learners to talk about their real family, and a keyed quiz item asks whether they have children."
+  },
+  "findings": [
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "graded",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › In-person quiz, item 9 (iq9)",
+      "quote": "Do you have children?",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "A keyed quiz item asks the learner whether they have children. For recent migrants this can surface family separation (children left in the home country, lost custody, etc.), and there is no made-up-person alternative.",
+      "suggested_fix": "Ask about a person from the lesson instead: 'Does Marisol have children?' (key: 'Yes, she has four children.'), or say 'Answer for yourself or for a made-up person.'",
+      "severity_rules": [
+        "disclosure_graded"
+      ],
+      "verifier_id": "B10",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "iq9 is a required in-person quiz item with an answer key ('Yes, I have ___. / No, I don't.') that asks 'Do you have children?', and it isn't marked optional and offers no made-up-person alternative, so it is a graded question that makes learners disclose family."
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "family",
+      "item_status": "required",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › Guided practice: Family Inventory",
+      "quote": "Describe what a family member has.",
+      "category": "relevance_sensitivity",
+      "severity": "blocker",
+      "issue": "The instructions require the learner to describe a real family member (sister, her job, her children), with no alternative. That can bring up family separation for migrants.",
+      "suggested_fix": "Change to 'Describe what a person has. It can be a real or made-up person.' and give a picture/persona card (e.g. 'Ana: a job, a phone, three children'). Also in Role-play: Part 1 ('Talk about your family and what you have.', 'Does your husband have a car?', which also assumes the learner has a husband): give the student a made-up role card.",
+      "severity_rules": [
+        "disclosure_required"
+      ],
+      "verifier_id": "B11",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The Family Inventory guided practice is a fixed 15-minute step in the agenda and is not marked optional; its instructions and the tutor's scripted questions about the learner's sister's job and children require learners to talk about their real family, with no option to use an imaginary person or a picture."
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › In-person quiz, item 3 (iq3)",
+      "quote": "¿Tienes un bolígrafo / una pluma?",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The lesson teaches 'pen' = 'lapicero' (vocab, grammar, quiz q3, worksheet w3), but this key accepts only 'bolígrafo / pluma', so the exact word the lesson taught is not in the key.",
+      "suggested_fix": "Key: '¿Tienes un lapicero / un bolígrafo / una pluma? (also ¿Tiene usted...?)'.",
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "I don't have any money.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'No tengo dinero.' is also correctly translated as 'I don't have money.' or 'I have no money.', but the key gives only 'I don't have any money.'",
+      "suggested_fix": "Key: 'I don't have any money. / I don't have money. (Both are correct.)'",
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › In-class worksheet, item 6 (cw6)",
+      "quote": "She ____ have a phone. (negative)",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The hint says only '(negative)', so 'does not' is also correct, but the key accepts only \"doesn't\".",
+      "suggested_fix": "Change the hint to '(negative, short form)' or make the key \"doesn't / does not\".",
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › Listening 2: A Big Family, question 3 (l2q3)",
+      "quote": "No. They have a small apartment.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'No, they don't.' or just 'No.' is a correct answer to 'Do they have a big house?', but the key gives only the longer sentence.",
+      "suggested_fix": "Key: \"No, they don't. (They have a small apartment.)\"",
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "section": "Tutor slides › Listening 1: At the Clinic, question 4 (l1q4)",
+      "quote": "A cough",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "'cough' is not in this lesson or any earlier one, so the learner can't answer correctly from what has been taught.",
+      "suggested_fix": "Change the script line to 'He has a headache too.' and the key to 'A headache', or add 'I have a cough / Tengo tos' to vocab.",
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "section": "Tutor slides › Listening 2: A Big Family, question 4 (l2q4)",
+      "quote": "In construction",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The key depends on 'construction', which is untaught. Also, 'Where does her husband work?' asks for a place, but 'in construction' names a field of work.",
+      "suggested_fix": "Change the script to 'he has a job in a restaurant' (restaurant appears in the vocab example) and the key to 'In a restaurant'.",
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "section": "Tutor slides › In-person quiz, item 5 (iq5)",
+      "quote": "He has a new car.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "In a dictation the learner has to write every word, and 'new' has not been taught.",
+      "suggested_fix": "Use 'He has a car.' or 'She has two cars.'",
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › Role-play: Part 3: At work or in a store",
+      "quote": "Do you have money with you today?",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The dialogue doesn't hold together. The shopper asks about milk, then tells the clerk 'I have a job nearby', then the clerk asks whether the customer has money, which is odd and a little intrusive from a store clerk. A volunteer tutor can't model this as a realistic exchange.",
+      "suggested_fix": "Keep it in one coherent store scene, e.g. Clerk: 'Do you have a bag?' Student: \"No, I don't have a bag.\" / Student: 'I have a question. Do you have eggs?' Move 'I have a job' into a separate work scene.",
+      "severity_rules": []
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "section": "Tutor slides › Role-play: Part 3: At work or in a store",
+      "quote": "Yes, it's near the front.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The background role-play lines use untaught words and phrases ('near the front', 'on sale', 'nearby', 'insurance card', 'I have it here'). No graded answer depends on them.",
+      "suggested_fix": "Simplify to taught language, e.g. 'Yes, we have milk.' and 'Yes, I have it.', or add the phrases to the role-play word bank with Spanish.",
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "section": "Tutor slides › In-class worksheet, item 4 (cw4)",
+      "quote": "They ____ three kids.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The prompt uses 'kids' (the lesson teaches 'children'), and nearby items use other untaught words: 'new' (cw1), 'time' (cw5), 'dog' (iq8), 'bag' (iq10). No key depends on them, but they slow beginners down.",
+      "suggested_fix": "Use 'They ____ three children.', 'He ____ a job.', 'I don't ____ a car today.', 'My sister ___ a car.'",
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › In-class worksheet, item 7 (cw7)",
+      "quote": "I have a ____. Can I ask you? (pregunta)",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "'Can I ask you?' is incomplete/awkward (the natural phrase is 'Can I ask you something?'), and 'Can I' has not been taught.",
+      "suggested_fix": "Use 'Excuse me, I have a ____. (pregunta)', which matches the vocab example.",
+      "severity_rules": []
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › Listening 1: At the Clinic",
+      "quote": "Okay. Please have a seat.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "'have a seat' is an idiom ('siéntese'), not possession. In a lesson that teaches have = tener, learners may misread it as 'tener un asiento', and the tutor gets no note about it.",
+      "suggested_fix": "Use 'Okay. Please sit down.' or add a tutor note: 'have a seat = siéntese'.",
+      "severity_rules": []
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › Guided practice: 20 Questions: Do You Have...?",
+      "quote": "20 Questions: Do You Have...?",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "'20 Questions' is a guessing game, but the activity is just asking the tutor yes/no questions about two objects, so an untrained tutor won't know what to run.",
+      "suggested_fix": "Retitle it 'Do You Have...?' and add an instruction: 'Ask your tutor 5 questions with things in the room: a phone, a pen, a car, money...'",
+      "severity_rules": []
+    },
+    {
+      "lesson": "07",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "section": "Tutor slides › Guided practice: At the Front Desk",
+      "quote": "Do you have your ID?",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "ID questions can make learners without documents anxious. The script has the learner answer about their own ID with no note that this is pretend.",
+      "suggested_fix": "Use 'Do you have the form?' / \"No, I don't have the form.\", or add a tutor note that it's a pretend role and the learner doesn't share real details.",
+      "severity_rules": []
+    }
+  ]
+}

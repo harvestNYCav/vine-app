@@ -1,0 +1,238 @@
+{
+  "lesson": "14",
+  "slug": "time-dates-seasons",
+  "file": "content/modules/time-dates-seasons.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 4,
+    "scaffolding": 2,
+    "timing": 4,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "English and most keys are correct, but homework w2 depends on an apostrophe the exact-match grader rejects when typed on a phone, and a few Spanish translations are unnatural.",
+    "level_fit": "Sentences are short and A1-friendly, but the only times taught (o'clock and half past) can't express real clock times, and some self-study prompts use untaught phrasing.",
+    "scaffolding": "The lesson keeps using day names, eleven untaught months, ordinal dates and on/at, and graded listening and dictation answers depend on them.",
+    "timing": "The sections fit the two-hour agenda; the guided-practice dialogues are short, so a tutor will need to recycle them to fill 15 minutes.",
+    "tutor_usability": "A volunteer can run the slides, but would have to improvise how to say dates like \"12th\", why it's \"on Tuesday\" and \"at 3:30\", and how to handle iq8 when the clock shows an untaught time.",
+    "relevance_sensitivity": "Appointments, work days and weather are practical; the only concerns are model answers that assume the learner's family is present."
+  },
+  "findings": [
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Listening 1: Making an Appointment, question 2 (l1q2)",
+      "quote": "Can you come on Tuesday, March 12th?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "Graded answers depend on day names, month names and ordinal dates that lessons 01–14 never introduce. The vocab teaches only \"January\" and the phrase \"Monday through Friday\" (Sunday comes from lesson 04). But l1q2 needs \"Tuesday\", l1q3 needs \"March 12th\", l2q3 needs \"October 20th\", and dictation iq6 needs \"Saturday\". Nothing shows how to say \"12th\" or \"3rd\" out loud either.",
+      "suggested_fix": "Add vocab slides with all seven days, all twelve months and spoken ordinals (first, second, third ... twelfth, twentieth), plus a grammar note: say \"March twelfth\", not \"March twelve\". The same gap shows in the Guided practice \"Today's Date\" (\"It's May 3rd.\"), in cw4 and cw7 (May, December) and in iq6. If the lesson stays as is, change those answers to taught words.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Listening 1: Making an Appointment, question 1 (l1q1)",
+      "quote": "Good afternoon, Smile Dental. How can I help you?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer to \"What kind of office is it?\" (\"A dentist (dental office)\") depends only on the brand name \"Smile Dental\". \"Dental\", \"dentist\", \"office\" and \"kind of\" are not in the curriculum map up to lesson 14.",
+      "suggested_fix": "Make the office name a taught or cognate-friendly word the question can ask about directly, e.g. \"Good afternoon, City Clinic.\" with the question \"Where does Mr. Torres call? (a clinic)\". Or drop l1q1 and ask \"Who does Mr. Torres talk to?\".",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › In-person quiz, item 8 (iq8)",
+      "quote": "It is ___. (Check the clock.)",
+      "category": "level_fit",
+      "severity": "major",
+      "issue": "The lesson teaches only o'clock and half past, yet iq8 grades the real time and the role-plays ask for real times (\"What time do you wake up?\"). Most real times (4:17, 6:45) can't be said with what was taught. NYC speakers also usually say \"three-thirty\", not \"half past three\", so learners won't recognise the common form.",
+      "suggested_fix": "Add the digital pattern to Grammar focus 1 (\"It's three-thirty\", \"It's six fifteen\"). Or tell the tutor on iq8: \"Show a clock set to an o'clock or half-past time and ask what time it is.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › In-person quiz, item 2 (iq2)",
+      "quote": "the weekend",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "The key includes \"the\", so a volunteer may mark \"weekend\" wrong, even though the vocab item and q2 both teach it without the article.",
+      "suggested_fix": "Change the key to \"weekend / the weekend\".",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Grammar focus 2",
+      "quote": "Use \"in\" before \"the morning/afternoon/evening,\" before a month, and before a season",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The lesson teaches only \"in\", but its material keeps using \"on\" with days and the weekend (\"on Tuesday\", \"on the weekend\", \"I rest on the weekend\") and \"at\" with clock times (\"At half past three\", \"I wake up at half ___ six\"). It never explains either one. Spanish uses \"en\"/\"el\" in all of these, so learners will apply the one rule they were given and say \"in Monday\" or \"in three o'clock\". q6 even offers \"in\" and \"on\" as distractors.",
+      "suggested_fix": "Extend Grammar focus 2 into \"in / on / at\": in + month/season/the morning; on + a day/the weekend; at + a time (and at night). Use examples from the lesson: \"on Tuesday\", \"on the weekend\", \"at half past three\". Also note that \"in the evening\" is early night, and that late night is \"at night\", not \"in the night\".",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "evaluator_severity": "major",
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Vocabulary (spring-summer)",
+      "quote": "Hace calor templado en primavera y mucho calor en verano.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "\"Hace calor templado\" is not natural Spanish (\"calor\" and \"templado\" clash). It also comes back as the model translation of \"It's warm.\" in Guided practice: Describe the Weather.",
+      "suggested_fix": "Use \"Hace buen tiempo / Está templado en primavera y hace mucho calor en verano.\" and \"Está templado.\" (or \"Hace calorcito.\") for \"It's warm.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Vocabulary (weekend)",
+      "quote": "Descanso en el fin de semana.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Spanish speakers don't normally put \"en\" here; the natural forms are \"el fin de semana\" or \"los fines de semana\". The same pattern shows in Role-play Part 2: \"¿Qué haces en el fin de semana?\".",
+      "suggested_fix": "Change it to \"Descanso los fines de semana.\" and \"¿Qué haces el fin de semana?\".",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Listening 1: Making an Appointment",
+      "quote": "Haciendo una cita",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "A gerund used as a title is an anglicism in Spanish, and \"hacer una cita\" is less usual than \"pedir/sacar una cita\".",
+      "suggested_fix": "Use \"Pedir una cita\" as titleEs.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Listening 2: Favorite Seasons",
+      "quote": "The leaves are beautiful in October.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The listening scripts use untaught words (leaves, beautiful, beach, Perfect, go to the beach). No answer depends on them, but the tutor should know before playing the script.",
+      "suggested_fix": "Pre-teach \"beach\" and \"leaves\" with a picture, or simplify to \"I like October. It is not hot.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "14",
+      "section": "Tutor slides › Role-play: Part 2: Talking about the week",
+      "quote": "I rest with my family.",
+      "category": "relevance_sensitivity",
+      "severity": "minor",
+      "issue": "The model answer assumes the learner's family is here. For recent migrants who are separated from family, copying the model can be painful. The vocab example \"My son was born in January.\" has the same problem.",
+      "suggested_fix": "Use a neutral model such as \"I rest at home.\" or \"I go to church.\", and let the tutor say learners can answer about a made-up person. For the vocab example, use \"Ana was born in January.\"",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "14",
+      "section": "Student app › Online quiz, Q7 (q7)",
+      "quote": "Which season comes right after summer?",
+      "category": "level_fit",
+      "severity": "minor",
+      "issue": "The self-study prompts use untaught phrases: \"comes right after\" here, and the superlative \"coldest\" in q4. The Spanish line helps, but the English prompt is above the lesson's level.",
+      "suggested_fix": "Simplify the wording: \"Summer, ____, winter, spring.\" for q7 and \"It is very cold in ____.\" for q4.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "14",
+      "section": "Student app › Homework worksheet, item 2 (w2)",
+      "quote": "It is three ____.",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The key is \"o'clock\" with a straight apostrophe, and the homework grader only trims and lowercases before an exact match (lib/lesson-answers.ts). Phone keyboards (iOS smart punctuation) type a curly apostrophe (o’clock), and many beginners type \"oclock\" or \"o clock\". The correct answer gets marked wrong in self-study with no tutor there to overrule it.",
+      "suggested_fix": "Pick a w2 blank with no apostrophe, e.g. \"It is ____ o'clock. (3:00)\" with answer \"three\", or \"What ____ is it?\" style items. Otherwise the grader has to treat ’ and ' as the same character and accept \"oclock\".",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B25",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "w2's key is \"o'clock\" with a straight apostrophe, and the fill-in grader only trims and lowercases before an exact match, so the curly \"o’clock\" that iOS types by default, and the common \"oclock\", are both marked wrong in the auto-graded homework.",
+      "resolved": "Grader fix: lib/lesson-answers.ts now treats curly and straight apostrophes, and contractions and full forms, as the same answer. Now accepts 'o’clock' and 'oclock'."
+    }
+  ]
+}

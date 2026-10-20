@@ -1,0 +1,270 @@
+{
+  "findings": [
+    {
+      "structure": "Verb \"to be\" (am/is/are) in questions and statements",
+      "first_used_in": "01",
+      "quote": "For \"to be\" questions, put the question word first, then \"is\" or \"are,\" then the subject: What is your name? Where are you from? How old are you?",
+      "taught_in": "06",
+      "severity": "major",
+      "issue": "Lesson 01 teaches \"to be\" questions with is/are, and its first rule uses \"I am\". Lessons 02-05 then use is/are in core examples. The lesson that actually teaches the full am/is/are system comes fifth in line, at 06.",
+      "suggested_fix": "Move 06 verb-to-be to right after 02 so it is the third lesson. Keep 01's to-be lines as memorized chunks (My name is..., I am from...) and add a tutor note saying the full system comes two lessons later."
+    },
+    {
+      "structure": "Verb \"to be\" in subject-pronoun examples",
+      "first_used_in": "02",
+      "quote": "He is my son. She is my daughter.",
+      "taught_in": "06",
+      "severity": "major",
+      "issue": "All three pronoun examples depend on is/are (\"We are neighbors.\", \"They are my friends.\"). Learners have to understand he is / we are / they are before lesson 06 teaches them.",
+      "suggested_fix": "Put 06 right after 02. As a bridge, add a small preview item to 02 (\"he is / she is / we are / they are\") that points ahead to 06."
+    },
+    {
+      "structure": "Present continuous, was/were and other \"to be\" forms used inside the tenses lesson",
+      "first_used_in": "04",
+      "quote": "Use \"am/is/are + -ing\" for something happening at this exact moment: I am working right now.",
+      "taught_in": "06",
+      "severity": "major",
+      "issue": "The core topic of lesson 04 (present continuous, plus the past of \"to be\" in the vocab item \"was / were\") depends on am/is/are, which is not taught until 06. The tenses lesson relies on a later lesson.",
+      "suggested_fix": "Move 04 tenses until after 06 (and ideally after 09 and 14; see recommended order). Teach \"was / were\" there as the past of the am/is/are learners already know."
+    },
+    {
+      "structure": "Passive voice",
+      "first_used_in": "04",
+      "quote": "The house was built in 1990.",
+      "taught_in": "never",
+      "severity": "major",
+      "issue": "The passive voice is a B1-level structure. Here it appears as a lesson-04 vocabulary item, with no grammar explanation, in an A1-A2 course.",
+      "suggested_fix": "Remove it from 04. If you want to keep it, turn it into a recognition-only chunk in a late lesson (for example 13 or 20, for reading forms or signs) and label it \"recognize only\"."
+    },
+    {
+      "structure": "First conditional (If..., I will...)",
+      "first_used_in": "04",
+      "quote": "If..., I will...",
+      "taught_in": "never",
+      "severity": "major",
+      "issue": "A conditional shows up in lesson 04 as a vocabulary item, before learners have practised \"will\" and with no rule explaining it. That is a big level jump for A1.",
+      "suggested_fix": "Drop it from 04. If you need it, add it at the end of the course (for example 20: \"If you feel sick, call the doctor.\") after the simple future has been reviewed."
+    },
+    {
+      "structure": "All tenses packed into lesson 04 (present, past -ed and irregular, will future, present continuous)",
+      "first_used_in": "04",
+      "quote": "I work / I worked / I will work",
+      "taught_in": "04",
+      "severity": "major",
+      "issue": "Lesson 04 brings in four tenses at once, very early, before \"to be\", \"have\", negation or questions. The course has no separate step for the simple present.",
+      "suggested_fix": "Move 04 later (after 14 in the recommended order). Lessons 01-03 already preview the present (I live, I work), so 04 can review it. Split or flag the future and past items for tutors as \"intro only\"."
+    },
+    {
+      "structure": "Possessive adjectives (my/your/her/their)",
+      "first_used_in": "02",
+      "quote": "This is my friend...",
+      "taught_in": "12",
+      "severity": "major",
+      "issue": "my and your appear from lesson 01 (\"My name is...\", \"What is your name?\") onward. They are central to 08: every demonstrative example uses \"my\" (\"This is my house\", \"These are my keys\"). The lesson that teaches possessive adjectives is 12.",
+      "suggested_fix": "Move 12 possessives-and-reflexives before 08 (right after 03). At minimum, add \"my / your\" as preview vocabulary in 01 or 02."
+    },
+    {
+      "structure": "Possessive pronoun \"yours\"",
+      "first_used_in": "08",
+      "quote": "Is this yours?",
+      "taught_in": "never",
+      "severity": "minor",
+      "issue": "Lesson 08 teaches \"Is this yours?\" as a core question. Lesson 12 teaches only \"mine\". Yours/his/hers/ours/theirs are never taught.",
+      "suggested_fix": "Add \"yours\" (and optionally \"his / hers\") next to \"mine\" in 12. Place 12 before 08."
+    },
+    {
+      "structure": "Family vocabulary (son, daughter, sister, kids)",
+      "first_used_in": "02",
+      "quote": "He is my son. She is my daughter.",
+      "taught_in": "18",
+      "severity": "major",
+      "issue": "Learners need son/daughter to understand the he/she contrast in 02. sister (06: \"Is she your sister?\") and kids (05: \"I have to pick up my kids.\") also come before family words are taught in 18.",
+      "suggested_fix": "Add a small family preview to 02 (mother, father, son, daughter, brother, sister). Move 18 earlier, right after 07 to-have, since it is built on \"I have / I don't have\"."
+    },
+    {
+      "structure": "Days of the week and months",
+      "first_used_in": "04",
+      "quote": "I go to church every Sunday. Yesterday I went to the store.",
+      "taught_in": "never",
+      "severity": "minor",
+      "issue": "Sunday and Mondays (04) appear before 14. Lesson 14 only gives \"Monday through Friday\" and \"January\", and its own example uses June (\"My birthday is in June.\"). The full days and months are never taught.",
+      "suggested_fix": "Expand 14 to include all seven days and the twelve months as a list item. Move 04 to after 14."
+    },
+    {
+      "structure": "Numbers above 10 (ages, years, prices, phone numbers, times)",
+      "first_used_in": "01",
+      "quote": "I am Maria. I am thirty-five years old.",
+      "taught_in": "never",
+      "severity": "major",
+      "issue": "The scaffolding rule only exempts numbers 1-10. Larger numbers are needed in 01 (age), 04 (1990), 13 (phone number), 14 (time and dates) and 17 (prices), but no lesson teaches them.",
+      "suggested_fix": "Add a numbers block (11-100, saying years, saying prices) as preview vocabulary in 03 or 13. Alternatively, keep 01's age answer to a short form."
+    },
+    {
+      "structure": "Third-person -s in the simple present (regular verbs)",
+      "first_used_in": "03",
+      "quote": "I have a book. She has an apple.",
+      "taught_in": "never",
+      "severity": "major",
+      "issue": "has (03, 07), likes (09), doesn't (10), does (11, 17) and gets (14: \"It gets cold in the fall\") are all used, but no lesson states the general he/she/it + -s rule for the simple present. Lesson 09 covers it only for \"like\".",
+      "suggested_fix": "Widen 09's rule (\"Remember to add -s for he/she\") into a general simple-present rule with 3-4 common verbs (works, lives, speaks). Alternatively add it to 04 after the reorder."
+    },
+    {
+      "structure": "\"has\", infinitive and present continuous in the articles lesson examples",
+      "first_used_in": "03",
+      "quote": "The children are playing.",
+      "taught_in": "04",
+      "severity": "minor",
+      "issue": "The examples in lesson 03 use present continuous (taught in 04), \"has\" (07) and \"need to\" (05: \"I need to buy a car.\") to show articles and plurals.",
+      "suggested_fix": "Swap in to-be or noun-only examples: \"These are children.\", \"I have a car.\", \"The men are here.\""
+    },
+    {
+      "structure": "Gerunds and infinitives at lesson 05",
+      "first_used_in": "05",
+      "quote": "Some verbs are always followed by another verb ending in \"-ing\" (a gerund): enjoy, stop, start, keep.",
+      "taught_in": "05",
+      "severity": "major",
+      "issue": "Verb patterns are a level jump at lesson 05. They need the -ing form and the past (\"I stopped ...-ing\", \"I started ...-ing\") from 04. They also teach like/love + -ing before the likes lesson 09, and \"have to\" before 07 to-have.",
+      "suggested_fix": "Move 05 to after 04, 07 and 09 (position 15 in the recommended order). There it extends 09's like/love + -ing pattern."
+    },
+    {
+      "structure": "like/love + -ing and like/love to taught twice",
+      "first_used_in": "05",
+      "quote": "I like ...-ing",
+      "taught_in": "09",
+      "severity": "minor",
+      "issue": "Lesson 05 teaches \"I like ...-ing\", \"I like to...\" and \"I love to...\". Lesson 09 teaches \"I like...\" and \"I love...\" again as new vocabulary under a different label.",
+      "suggested_fix": "Teach 09 first. In 05, list the like/love items as review vocabulary, not new."
+    },
+    {
+      "structure": "Demonstratives this/these taught twice",
+      "first_used_in": "03",
+      "quote": "These are...",
+      "taught_in": "08",
+      "severity": "minor",
+      "issue": "Lesson 03 lists \"This is a...\" and \"These are...\" as new vocabulary. Lesson 08 teaches this/these as new again. Lesson 02's \"This is my friend...\" also uses this early.",
+      "suggested_fix": "Keep the 03 items as a labeled preview and mark this/these in 08 as review. Lesson 08 then adds that/those as the new contrast."
+    },
+    {
+      "structure": "do/does questions with action verbs",
+      "first_used_in": "01",
+      "quote": "What do you do?",
+      "taught_in": "11",
+      "severity": "minor",
+      "issue": "\"What do you do?\" (01), \"Do you like...?\" and \"What do you like?\" (09) all come before 11 explains WH + do/does + base verb. Lesson 07 teaches do/does only with \"have\".",
+      "suggested_fix": "Treat 01's question as a chunk. Move 07 earlier so do/does appears first with \"have\", and keep 11 as the place where the general rule is stated."
+    },
+    {
+      "structure": "Question word order taught twice",
+      "first_used_in": "01",
+      "quote": "Asking questions: question word + is/are + subject",
+      "taught_in": "11",
+      "severity": "minor",
+      "issue": "Lesson 01's second grammar point and lesson 11's \"Question word order: WH-word + verb + subject\" teach the same rule. The WH-words (who, what, where, how) are listed as new vocabulary only in 11.",
+      "suggested_fix": "Cut 01's point down to a chunk note and point to 11 for the rule. Alternatively, have 11 call the WH + is/are part review."
+    },
+    {
+      "structure": "Negatives with don't used before the negation lesson",
+      "first_used_in": "08",
+      "quote": "What is this? I don't know this word.",
+      "taught_in": "10",
+      "severity": "minor",
+      "issue": "\"don't\" + action verb appears in 08 and 09 (\"I don't like...\"), and \"I can't...\" appears in 10, all before the general negation and can rules. Lesson 07 introduces don't only with \"have\".",
+      "suggested_fix": "Accept these as chunks, or move 10 earlier. In the recommended order 10 still follows 07, so don't/doesn't is already familiar."
+    },
+    {
+      "structure": "Modal \"can\" for ability (I can / I can't)",
+      "first_used_in": "10",
+      "quote": "I can't...",
+      "taught_in": "never",
+      "severity": "minor",
+      "issue": "The negative \"can't\" (10) is taught before any positive \"can\". Lessons 11 and 13 teach can only for requests and permission (\"Can you help me?\", \"Can I...?\"), never for ability (\"I can speak English\").",
+      "suggested_fix": "Add \"I can / I can't\" for ability as one vocab item and one example in 10, or as a preview in 11."
+    },
+    {
+      "structure": "\"would like\" taught twice",
+      "first_used_in": "15",
+      "quote": "I would like to order...",
+      "taught_in": "15",
+      "severity": "minor",
+      "issue": "Lesson 17 lists \"I would like...\" as new vocabulary and repeats the would-like rule even though 15 already taught it. \"Do you have...?\" is also re-taught as new grammar in 15 and 19 after 07.",
+      "suggested_fix": "Mark \"I would like...\" in 17 as review_vocabulary from 15. Present 17's grammar as a quantity extension (\"two pounds of...\")."
+    },
+    {
+      "structure": "Imperative taught twice",
+      "first_used_in": "16",
+      "quote": "Directions are usually given as commands — start directly with the verb, with no \"you\" in front: Turn left. Go straight ahead. Take the uptown train.",
+      "taught_in": "16",
+      "severity": "minor",
+      "issue": "Lesson 20 teaches \"the imperative\" as a new grammar point even though 16 already taught commands with no subject.",
+      "suggested_fix": "In 20, describe it as a review of 16's commands, applied to emergencies."
+    },
+    {
+      "structure": "\"How many children do you have?\" taught twice",
+      "first_used_in": "11",
+      "quote": "How many children do you have?",
+      "taught_in": "18",
+      "severity": "minor",
+      "issue": "Lesson 11 uses this exact question as an example. Lesson 18 then lists it as new vocabulary with its own \"How many...?\" rule. Lesson 18's \"I have... / I don't have...\" also repeats 07.",
+      "suggested_fix": "With 18 placed before 11, have 11 treat it as review. Mark 18's \"I have... / I don't have...\" as review from 07."
+    },
+    {
+      "structure": "Comparatives/superlatives and color words",
+      "first_used_in": "16",
+      "quote": "Excuse me, where is the nearest subway station?",
+      "taught_in": "never",
+      "severity": "minor",
+      "issue": "\"nearest\" (16) and \"a smaller size\" (19) use superlative and comparative forms that are never taught. 19 asks \"Do you have this in blue?\" but no color words are taught, only \"color\".",
+      "suggested_fix": "In 19, add a small chunk list: basic colors plus \"bigger / smaller\". Teach \"nearest\" in 16 as a fixed phrase."
+    },
+    {
+      "structure": "Object pronouns (me, him, her, them)",
+      "first_used_in": "11",
+      "quote": "Can you help me?",
+      "taught_in": "never",
+      "severity": "minor",
+      "issue": "\"me\" is used in key survival requests (11, and \"Me too\" in 09), but object pronouns never get their own item, while subject, possessive and reflexive pronouns all do.",
+      "suggested_fix": "Add \"me / him / her / us / them\" as a preview line in 02 or 12."
+    },
+    {
+      "structure": "Irregular past tense beyond go/went",
+      "first_used_in": "12",
+      "quote": "I made this myself.",
+      "taught_in": "never",
+      "severity": "minor",
+      "issue": "Lesson 04 teaches only go/went as an irregular past. 12 uses \"made\", which learners have not met.",
+      "suggested_fix": "Swap in a regular verb (\"I cooked this myself.\") or add \"make / made\" to 04's past list."
+    },
+    {
+      "structure": "Insurance vocabulary before its lesson",
+      "first_used_in": "07",
+      "quote": "Does she have insurance?",
+      "taught_in": "20",
+      "severity": "minor",
+      "issue": "\"insurance\" appears in 07's example but is introduced in 20.",
+      "suggested_fix": "Use a known noun (\"Does she have a car?\") in 07, or gloss \"insurance\" there."
+    }
+  ],
+  "recommended_order": [
+    {"lesson": "01", "slug": "introducing-yourself"},
+    {"lesson": "02", "slug": "pronouns-and-greetings"},
+    {"lesson": "06", "slug": "verb-to-be"},
+    {"lesson": "03", "slug": "nouns-and-articles"},
+    {"lesson": "12", "slug": "possessives-and-reflexives"},
+    {"lesson": "08", "slug": "demonstratives"},
+    {"lesson": "07", "slug": "verb-to-have"},
+    {"lesson": "18", "slug": "family-tree"},
+    {"lesson": "09", "slug": "likes-and-dislikes"},
+    {"lesson": "11", "slug": "asking-questions"},
+    {"lesson": "13", "slug": "everyday-essentials"},
+    {"lesson": "14", "slug": "time-dates-seasons"},
+    {"lesson": "04", "slug": "tenses"},
+    {"lesson": "10", "slug": "negation"},
+    {"lesson": "05", "slug": "gerunds-and-infinitives"},
+    {"lesson": "15", "slug": "shopping-dining-out"},
+    {"lesson": "17", "slug": "buying-groceries"},
+    {"lesson": "19", "slug": "buying-clothes"},
+    {"lesson": "16", "slug": "navigating-subway"},
+    {"lesson": "20", "slug": "health-emergencies"}
+  ],
+  "recommended_order_rationale": "Moving \"to be\" (06) to third, and possessives (12) before demonstratives (08), means am/is/are and my/your are taught before the many lessons that rely on them. Placing family (18) right after to-have (07) gives it its \"I have\" frame and supports the family words previewed in 02. Tenses (04) and gerunds/infinitives (05) are the biggest early level jumps. They move to after likes, questions and time/days (09, 11, 14), so their -ing, past and days-of-week content builds on known material. Negation (10) follows 04 because it needs \"didn't\". With 16 before 20, the imperative in 20 becomes review."
+}

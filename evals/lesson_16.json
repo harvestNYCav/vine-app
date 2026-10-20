@@ -1,0 +1,296 @@
+{
+  "lesson": "16",
+  "slug": "navigating-subway",
+  "file": "content/modules/navigating-subway.ts",
+  "scores": {
+    "accuracy": 2,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 3
+  },
+  "score_rationale": {
+    "accuracy": "Several auto-graded keys are wrong or reject valid answers ('What train...' accepted English, 'right' in w3, MetroCard as the only way to ride), and the lesson teaches that uptown means 'toward Manhattan', which is false outside Brooklyn.",
+    "level_fit": "Sentences are short, imperative-based and suitable for A1-A2; only a few idioms ('got it', 'you'll see it') add extra load.",
+    "scaffolding": "The target vocabulary is introduced before practice, but two listening answers depend on untaught words ('downstairs', 'next to'), and background lines use untaught words such as 'light', 'insert' and 'clinic'.",
+    "timing": "Three short role-plays, three guided-practice dialogues, two short listenings and 18 worksheet/quiz items fit the two-hour agenda comfortably.",
+    "tutor_usability": "A volunteer can run it from the page, though a few keys are too narrow for in-person grading (e.g. iq9 assumes a train answer) and one Spanish prompt has a blank where the hint should be.",
+    "relevance_sensitivity": "Transit and directions are very practical and nothing asks for sensitive disclosures, but the lesson centers on buying and refilling a MetroCard, which the MTA has replaced with OMNY tap-to-pay."
+  },
+  "findings": [
+    {
+      "lesson": "16",
+      "section": "Student app › Online quiz, Q7 (q7)",
+      "quote": "Complete: \"___ train goes to Times Square?\"",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The distractor 'What' is also correct: 'What train goes to Times Square?' is natural, common English, but the auto-graded quiz accepts only 'Which'.",
+      "suggested_fix": "Replace the 'What' option with a clearly wrong one (e.g. 'When' or 'How'). Also in Student app › Homework worksheet, item 1 (w1) and Tutor slides › In-class worksheet, item 8 (cw8): accept both 'which' and 'what', or say in the grammar note that both are fine and change the blank so only one fits.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B27",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Q7 is an auto-graded multiple-choice item with answer 'Which', but 'What' is one of the listed options and 'What train goes to Times Square?' is grammatical, common English, so a correct choice is marked wrong."
+    },
+    {
+      "lesson": "16",
+      "section": "Student app › Online quiz, Q3 (q3)",
+      "quote": "Manhattan / north",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The key teaches that uptown means 'toward Manhattan'. Uptown means northbound; from Manhattan an uptown train goes to the Bronx, away from lower Manhattan, and Queens lines are not 'uptown' at all. Learners in the Bronx would take the wrong train.",
+      "suggested_fix": "Make the answer 'north' and the options 'north', 'south', 'east', 'west'. Also fix the vocab and grammar example 'Take the uptown train to get to Manhattan.' (e.g. 'Take the uptown train to go north.'), and in q6 change the prompt to 'Which word means the train is going south?'.",
+      "wrong_english": false,
+      "key_issue": "wrong",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_wrong"
+      ],
+      "verifier_id": "B28",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The only accepted answer for what 'uptown' means is 'Manhattan / north', but in NYC 'uptown' means northbound (in Manhattan, toward upper Manhattan and the Bronx, away from Manhattan rather than toward it), so the auto-graded quiz teaches a wrong meaning, and the vocab example 'Take the uptown train to get to Manhattan' repeats the error."
+    },
+    {
+      "lesson": "16",
+      "section": "Student app › Online quiz, Q1 (q1)",
+      "quote": "What do you need to ride the subway in NYC?",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The key says a MetroCard is what you need, but NYC has replaced the MetroCard with OMNY (tap a contactless card, phone or OMNY card), so the key is factually wrong, and 'Ticket' is a defensible answer in a self-graded quiz.",
+      "suggested_fix": "Change the prompt to 'Where do you buy a subway card?' or teach OMNY: answer 'an OMNY card or a bank card', options 'OMNY card', 'Passport', 'Driver's license', 'Library card'. Drop 'Ticket' as a distractor.",
+      "wrong_english": false,
+      "key_issue": "wrong",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_wrong"
+      ],
+      "verifier_id": "B29",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "The auto-graded q1 accepts only 'MetroCard', but the MTA stopped selling and refilling MetroCards after Dec 31, 2025 (amNY; NY1, 2025-12-31), so by 2026-10-20 OMNY is how riders pay, and the key teaches a fact that is now wrong."
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Vocabulary (metrocard)",
+      "quote": "I need to buy a MetroCard at the machine.",
+      "category": "relevance_sensitivity",
+      "severity": "major",
+      "issue": "The MTA has replaced the MetroCard with OMNY tap-to-pay, so recent migrants are taught to look for a card they can no longer buy. The whole first role-play and cw1 are built around it.",
+      "suggested_fix": "Replace 'MetroCard' with 'OMNY card' / 'tap your card or phone' in the vocab, Part 1 role-play ('Yes, I need an OMNY card.'; 'Tap your card here.'), cw1 ('I need to add money to my ____ card.' answer 'OMNY') and q1.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Listening 1: Which Train?, question 3 (l1q3)",
+      "quote": "Go downstairs and turn left.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'downstairs', which is not in this lesson's vocabulary or any earlier lesson in the curriculum map (it also appears untaught in the Part 1 role-play).",
+      "suggested_fix": "Add 'downstairs / upstairs' (abajo / arriba) to the vocab list, or accept 'turn left' as the full answer and change the script line to 'Go straight ahead and turn left.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Listening 2: Directions to the Clinic, question 4 (l2q4)",
+      "quote": "What is next to the clinic?",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The question and its answer depend on 'next to', which is not taught in this or any earlier lesson; 'clinic' is also untaught.",
+      "suggested_fix": "Add 'next to' (al lado de) to the vocab with an example, or reword the question to use taught words: 'What is on the corner?' (answer: A pharmacy).",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › In-person quiz, item 9 (iq9)",
+      "quote": "Which train do you take to come here?",
+      "category": "tutor_usability",
+      "severity": "major",
+      "issue": "It assumes every learner takes a train; learners who walk or take the bus have no answer that fits the key 'I take the ___ train.'",
+      "suggested_fix": "Add to the key: 'or I take the bus / I walk (answers will vary)', or ask 'Which train goes to Times Square?' using a map.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Vocabulary (exit)",
+      "quote": "Use the exit on the left side of the train.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Exits are in the station, not on the train; the sentence describes train doors, so the example models the word wrongly.",
+      "suggested_fix": "Use 'Use the exit on 42nd Street.' or 'The exit is on the left.' (Spanish: 'La salida está a la izquierda.').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Vocabulary (turn-left)",
+      "quote": "Turn left at the light.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'light' (traffic light) is untaught; it also appears in the grammar example and cw7, though no answer depends on it.",
+      "suggested_fix": "Use 'Turn left at the corner.' or add 'light / traffic light' (el semáforo) to the vocab.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Role-play: Part 1: Buying a MetroCard",
+      "quote": "Insert your money here.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'Insert' is untaught and formal for A1; likewise 'got it' and 'you'll see it' in Part 3 are untaught.",
+      "suggested_fix": "Use 'Put your money here.' / 'Tap your card here.' In Part 3 use 'Straight ahead. OK.' and 'Turn right at the next corner. It is there.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Role-play: Part 2: Asking which train to take",
+      "quote": "The uptown train.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "Answering 'Which train goes to Times Square?' with only a direction is unnatural; New Yorkers name a line ('The 1 train, uptown'). Same in the guided practice answer 'The downtown train.'",
+      "suggested_fix": "Change to 'The 1 train. Take it uptown.' and in guided practice 'The A train, downtown.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "16",
+      "section": "Student app › Homework worksheet, item 5 (w5)",
+      "quote": "Sigue ____, luego dobla a la derecha en el banco.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The Spanish prompt has a blank where 'derecho' should be, so it gives no hint and a learner may type 'derecho'; the English blank needs only 'ahead'.",
+      "suggested_fix": "Write the full Spanish: 'Sigue derecho, luego dobla a la derecha en el banco.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › Listening 1: Which Train?, question 3 (l1q3)",
+      "quote": "¿Cómo llegas a la plataforma?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The Spanish uses 'plataforma' while the lesson teaches 'el andén' for platform, which is inconsistent and may confuse learners.",
+      "suggested_fix": "Use '¿Cómo llegas al andén?'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "16",
+      "section": "Tutor slides › In-class worksheet, item 6 (cw6)",
+      "quote": "The bank is on the ____ of 5th Avenue.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "'On the corner of 5th Avenue' is incomplete English; a corner needs two streets.",
+      "suggested_fix": "Use 'The bank is on the ____ of 5th Avenue and 42nd Street.' and update the Spanish to match.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ],
+  "resolved_findings": [
+    {
+      "lesson": "16",
+      "section": "Student app › Homework worksheet, item 3 (w3)",
+      "quote": "Turn ____ at the corner, then go straight.",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "'right' fits the blank just as well as 'left', and the Spanish prompt also leaves the word blank ('Dobla a la ____'), so the auto-graded key rejects a valid answer the lesson teaches.",
+      "suggested_fix": "Put the hint in the Spanish prompt ('Dobla a la izquierda en la esquina...') or add '(izquierda)' to the English prompt, the way cw7 does with '(derecha)'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B30",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Neither the English nor the Spanish prompt ('Dobla a la ____ en la esquina') says which direction, so 'right', which the lesson also teaches, is just as correct, yet the auto-graded homework accepts only 'left'.",
+      "resolved": "acceptedAnswers added to the homework item in content/modules; checked against the real grader. Now accepts 'right'; neither prompt fixes the direction, and the lesson teaches both."
+    }
+  ]
+}

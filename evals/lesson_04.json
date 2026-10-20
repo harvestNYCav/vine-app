@@ -1,0 +1,227 @@
+{
+  "lesson": "04",
+  "slug": "tenses",
+  "file": "content/modules/tenses.ts",
+  "scores": {
+    "accuracy": 3,
+    "level_fit": 3,
+    "scaffolding": 3,
+    "timing": 3,
+    "tutor_usability": 3,
+    "relevance_sensitivity": 4
+  },
+  "score_rationale": {
+    "accuracy": "The answer keys are mostly sound, but the in-person translation keys allow only one word order and reject the taught 'I will work tomorrow.', and the was/were Spanish gloss conjugates wrongly.",
+    "level_fit": "The core tenses suit A1, but the passive 'was built' and the sheer number of structures in one lesson push past beginner level.",
+    "scaffolding": "Several graded answers depend on untaught words (eating, beach, tired, sister, rice and beans, driving), and irregular pasts like 'saw' appear without being taught.",
+    "timing": "The activity count fits two hours, but two 10-minute grammar slides can't carry the seven-plus structures the lesson tests.",
+    "tutor_usability": "Scripts and keys are clear, but was/were, if-clauses and frequency adverbs are tested without any grammar explanation the volunteer could teach from.",
+    "relevance_sensitivity": "The contexts are practical (work, store, doctor, bus). Guided practice demands 'real' answers with a family-visit model, and there is no made-up option."
+  },
+  "findings": [
+    {
+      "lesson": "04",
+      "section": "Tutor slides › In-person quiz, items 1–2 (iq1, iq2)",
+      "quote": "Tomorrow I will work.",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The translation keys give only one word order. 'I will work tomorrow.' and 'I went to the store yesterday.' are equally correct, and the lesson itself teaches 'I will work tomorrow.' (vocab example, grammar example, role-play Part 3). A volunteer marking against the key may mark the taught form wrong.",
+      "suggested_fix": "Change the keys to 'Tomorrow I will work. / I will work tomorrow.' (iq2) and 'Yesterday I went to the store. / I went to the store yesterday.' (also iq1), and add a note: 'The time word can go first or last.'",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Vocabulary (was-were)",
+      "quote": "estaba (yo, él, ella) / estaban (tú, nosotros, ellos)",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The Spanish gloss conjugates wrongly: 'tú' takes 'estabas' and 'nosotros' takes 'estábamos', not 'estaban'. It also makes was/were look like 'estaba' only, but the lesson uses was/were where Spanish needs fue/era/hacía: 'Yesterday was Sunday' (iq6), 'it was very cold' = 'hacía frío' (cw4), and 'was built' = 'fue construida' (vocab).",
+      "suggested_fix": "Use: 'was = estaba/estuvo/era/fue (I, he, she, it) / were = estabas, estábamos, estaban (you, we, they)', and add a tutor note that 'was/were' is the past of 'am/is/are'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › In-person quiz, item 3 (iq3)",
+      "quote": "Write in Spanish: \"I am eating right now.\"",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'eat/eating', which no lesson from 01 to 04 teaches. The learner can't translate the sentence without knowing that verb.",
+      "suggested_fix": "Use a taught verb: 'Write in Spanish: \"I am working right now.\"' with the key 'Estoy trabajando ahora mismo.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Listening 1: Last Weekend, questions 2–4 (l1q2, l1q3, l1q4)",
+      "quote": "On Sunday I went to the beach.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "Listening answers depend on content words that lessons 01–04 don't introduce: 'beach' (l1q2), 'tired' (l1q3, from lesson 06) and 'sister' (l1q4). The script also uses 'weekend', 'hot' and 'happy', which are untaught background words.",
+      "suggested_fix": "Rewrite with taught words, e.g. 'On Sunday I went to church.' / 'I stayed home. I was at home all day.' / 'I will go to the store.', or pre-teach beach, tired and sister on a vocab line before the listening.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Listening 2: A Busy Day, questions 1 and 4 (l2q1, l2q4)",
+      "quote": "Good. I will make rice and beans.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The l2q4 answer depends on 'rice and beans' and the l2q1 answer depends on 'driving'. Neither is taught in lessons 01–04 ('drive' isn't in the map at all). 'Mom', 'dinner', 'finish' and 'early' are untaught background words.",
+      "suggested_fix": "Pre-teach 'drive / driving' and 'rice and beans' in the vocab, or change the lines to taught verbs, e.g. 'I am working right now.' and 'I will cook tomorrow.' (the practice word bank has 'cook').",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Grammar focus 1–2",
+      "quote": "Three basic tenses: present, past, future",
+      "category": "timing",
+      "severity": "major",
+      "issue": "The two 10-minute grammar slides cover simple present, simple past, will-future and present continuous. The lesson also tests was/were (q6, cw4, cw5), 'If..., I will...' (q5, w5, cw8) and always/sometimes/never (cw7), but these appear only as vocab cards and no grammar slide explains them. That is too much for one A1 session, and a volunteer has nothing to explain from.",
+      "suggested_fix": "Move 'If..., I will...' and the frequency adverbs to a later lesson, or add a short grammar slide for was/were (I/he/she/it was; you/we/they were) with two examples. Keep this lesson to present, past (-ed, go/went, was/were) and will.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Vocabulary (was-built-passive)",
+      "quote": "The house was built in 1990.",
+      "category": "level_fit",
+      "severity": "major",
+      "issue": "The passive voice (was + past participle) is far beyond lesson 04 for A1 learners. Its vocab card repeats the same sentence as its own example, nothing explains it or practices it again, and 'built' is an irregular participle no one has taught. It also shows up on the pronunciation, matching and copying slides, which will confuse learners.",
+      "suggested_fix": "Remove this vocab item. Replace it with a taught-pattern card such as 'I was at home yesterday. / Yo estaba en casa ayer.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Guided practice: My Plans (also Guided practice: Tell Me About Last Week)",
+      "quote": "Share one real plan for next week.",
+      "category": "relevance_sensitivity",
+      "severity": "major",
+      "issue": "The instructions require 'real' answers and give no alternative, and the model answer steers to family ('I will visit my family.'). For learners separated from family, this can bring up family separation. 'Answer real questions about last week.' / 'Where were you last week?' also requires real personal disclosure.",
+      "suggested_fix": "Change the instructions to 'Share one plan for next week. It can be real or made up.' (Spanish: 'Puede ser real o inventado.'), apply the same change to 'Tell Me About Last Week', and change the model to 'I will go to the store.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Listening 2: A Busy Day (script)",
+      "quote": "Are you coming to dinner tomorrow?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "This uses present continuous for a future plan. Grammar focus 2 tells learners that '-ing' is only for 'something happening at this exact moment', so the script contradicts the rule just taught.",
+      "suggested_fix": "Change it to 'Will you come to dinner tomorrow?'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Role-play: Part 2: What happened yesterday or last week (also Vocabulary last-week example)",
+      "quote": "I saw the doctor last week.",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "The student line uses the irregular past 'saw', which the lesson never teaches. The grammar names only go → went as an irregular past. The tutor lines 'Did anything happen last week?' and 'What did you do yesterday?' use the untaught did-question form and the words 'anything' and 'happen'.",
+      "suggested_fix": "Use 'I went to the doctor last week.' (taught 'went'), and add a tutor note: 'What did you do? = ¿Qué hiciste? Answer with I + past verb.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › In-class worksheet, item 7 (cw7)",
+      "quote": "I ____ drink coffee at night. (0%)",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The '(0%)' clue is cryptic for beginners and volunteers, and 'coffee' and 'at night' are untaught words.",
+      "suggested_fix": "Use a word clue instead, e.g. '(nunca)' or '(always / sometimes / never)', and a taught frame like 'I ____ work on Sundays. (nunca)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "04",
+      "section": "Tutor slides › Guided practice: Yesterday, Today, Tomorrow",
+      "quote": "¿Ayer, tú...?",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The Spanish punctuation is wrong: the opening question mark should come after the introductory adverb. 'Ayer, ¿tú...?' is correct, and so is 'Mañana, ¿tú...?' in the next chunk. The title also promises 'Today', but no chunk practices it.",
+      "suggested_fix": "Write 'Ayer, ¿tú...?' and 'Mañana, ¿tú...?', and add a 'Today/Right now, you are...?' → 'I am cooking right now.' chunk, or retitle the activity 'Yesterday and Tomorrow'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}

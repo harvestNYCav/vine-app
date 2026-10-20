@@ -1,0 +1,282 @@
+{
+  "lesson": "19",
+  "slug": "buying-clothes",
+  "file": "content/modules/buying-clothes.ts",
+  "scores": {
+    "accuracy": 2,
+    "level_fit": 4,
+    "scaffolding": 3,
+    "timing": 4,
+    "tutor_usability": 4,
+    "relevance_sensitivity": 5
+  },
+  "score_rationale": {
+    "accuracy": "The online quiz accepts only 'too' where 'very' and 'so' are also correct, two in-person translation keys reject literal valid answers, and 'muy grande' is used as the gloss for 'too big', which works against the lesson's own too-vs-very point.",
+    "level_fit": "Sentences are short and A1-friendly; a few chunks ('How does it fit?', 'ten dollars off', 'I'll take it', 'Twenty percent off!') are idiomatic and unsupported.",
+    "scaffolding": "The target phrases are introduced well, but no clothing nouns (coat, shirt, jacket, pants, dress) are ever taught, and graded answers depend on 'dress', 'coat' and 'twenty percent'.",
+    "timing": "The content fits the two-hour agenda; the role-play chunks are short for 25 minutes but easy to repeat with other items.",
+    "tutor_usability": "Mostly runnable from the page, but the fit activity assumes the tutor brings real clothes, and the grammar slides give only one example each.",
+    "relevance_sensitivity": "Shopping, sizes and returns are practical daily-life tasks, and no item asks for personal or status information."
+  },
+  "findings": [
+    {
+      "lesson": "19",
+      "section": "Student app › Online quiz, Q6 (q6)",
+      "quote": "Complete: \"This shirt is ___ small.\"",
+      "category": "accuracy",
+      "severity": "blocker",
+      "issue": "The distractors 'very' and 'so' also make correct English ('This shirt is very small', 'This shirt is so small'). The item is auto-graded with no tutor present, so a learner who picks a correct answer is marked wrong.",
+      "suggested_fix": "Add context that forces 'too', e.g. 'This shirt is ___ small. It doesn't fit. I need a bigger size.', and replace 'very'/'so' with distractors that are clearly wrong, e.g. 'to', 'two', 'on'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_student_app"
+      ],
+      "verifier_id": "B37",
+      "verifier_verdict": "confirmed",
+      "verifier_reason": "Q6 has the bare prompt 'This shirt is ___ small.' with options too/very/so/much and only 'too' accepted, but 'very small' and 'so small' are also correct English and nothing in the prompt rules them out."
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › In-person quiz, item 1 (iq1)",
+      "quote": "Write in English: \"Es muy grande.\"",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'Es muy grande' literally means 'It is very big', which is a valid translation, but the key accepts only 'It is too big.'.",
+      "suggested_fix": "Change the prompt to 'Me queda demasiado grande.' / 'Es demasiado grande.' with key 'It is too big.', or accept 'It is very big / It is too big'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › In-person quiz, item 4 (iq4)",
+      "quote": "Write in English: \"¿Lo tiene en rojo?\"",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'¿Lo tiene en rojo?' is literally 'Do you have it in red?', but the key gives only 'Do you have this in red?'.",
+      "suggested_fix": "Set the key to 'Do you have this in red? / Do you have it in red?', or change the prompt to '¿Tiene esto en rojo?' to match the taught pattern.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › In-person quiz, item 10 (iq10)",
+      "quote": "Do you have this in a smaller size? / Do you have a small?",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "The key leaves out 'Do you have a smaller size?', which is the exact sentence the lesson teaches in the vocab and grammar examples.",
+      "suggested_fix": "Add 'Do you have a smaller size?' to the key and note 'accept any polite request for a smaller size'.",
+      "wrong_english": false,
+      "key_issue": "narrow",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": [
+        "key_narrow_tutor_slides"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Vocabulary (too-big-small)",
+      "quote": "muy grande / muy pequeño",
+      "category": "accuracy",
+      "severity": "major",
+      "issue": "'Muy' means 'very'. Glossing 'too big' as 'muy grande' blurs the too/very difference that grammar point 1 explicitly teaches, and it leads straight to the q6 and iq1 key problems. The same gloss is used in the grammar example, q2, w1, cw3 and the practice word bank.",
+      "suggested_fix": "Use 'demasiado grande / demasiado pequeño (me queda grande)' here and in the grammar example, q2, w1, cw3 and the 'Find the Right Fit' word bank.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › In-person quiz, item 3 (iq3)",
+      "quote": "Write in Spanish: \"I am looking for a dress.\"",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer depends on 'dress', which is never taught in this or any earlier lesson. No clothing nouns are in the vocab list at all.",
+      "suggested_fix": "Use a word the lesson uses, e.g. 'I am looking for a coat.' (Estoy buscando un abrigo.), and add a small clothing word bank (shirt, pants, coat, jacket, shoes, dress) to the vocab.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Listening 1: Shopping for a Coat, question 4 (l1q4)",
+      "quote": "Yes. And it is on sale. Twenty percent off!",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The answer 'Twenty percent' depends on 'twenty', 'percent' and 'off', none of which has been taught; the map allows only numbers 1-10.",
+      "suggested_fix": "Change the line to 'It is on sale. Ten dollars off!' and the key to 'Ten dollars', or teach 'percent off' with a vocab item first.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Listening 1: Shopping for a Coat, question 1 (l1q1)",
+      "quote": "Yes. I am looking for a winter coat.",
+      "category": "scaffolding",
+      "severity": "major",
+      "issue": "The key 'A winter coat' depends on 'coat', which is not a taught vocab item (it appears only inside example sentences). Most of the lesson relies on untaught clothing nouns (shirt, jacket, pants, coat).",
+      "suggested_fix": "Add a clothing-items vocab entry or word bank (coat/abrigo, shirt/camisa, jacket/chaqueta, pants/pantalones) before the listening.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "answer_depends",
+      "harm": false,
+      "severity_rules": [
+        "untaught_answer_depends"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Student app › Online quiz, Q7 (q7)",
+      "quote": "Which phrase asks for a different color or size?",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "Q7 tests the same thing with the same answer as Q4 ('How do you ask if a store has something in a different color?'), so one of the eight quiz slots is wasted.",
+      "suggested_fix": "Replace Q7 with an item on an untested word, e.g. '\"El probador\" in English is:' or a 'pay' / 'cash register' item.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Grammar focus 1",
+      "quote": "Use \"too\" before an adjective to say something is more than you want",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "'More than you want' is confusing for 'too small': a beginner reads it as 'bigger than you want'.",
+      "suggested_fix": "Say 'Use \"too\" + adjective when something is not right for you: too big, too small, too expensive. \"Too\" = demasiado, not \"very\" (muy).' Also add a second example such as 'These shoes are too small.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Role-play: Part 1: Finding the right size",
+      "quote": "How does it fit?",
+      "category": "scaffolding",
+      "severity": "minor",
+      "issue": "'Fit' is untaught. Other untaught background chunks: 'ten dollars off' and 'Great, I'll take it.' in Part 2. The learner's reply doesn't depend on them.",
+      "suggested_fix": "Use 'Is it OK?' or add 'fit / me queda' to the word bank; gloss 'off' and 'I'll take it' in the Part 2 word bank.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "background",
+      "harm": false,
+      "severity_rules": [
+        "untaught_background"
+      ]
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Guided practice: Find the Right Fit",
+      "quote": "The tutor hands you clothes that do not fit.",
+      "category": "tutor_usability",
+      "severity": "minor",
+      "issue": "The activity assumes the volunteer brings real clothing, and nothing on the page tells them to prepare it.",
+      "suggested_fix": "Add 'Use real clothes, or point to pictures of a big and a small shirt' to the instructions.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › In-class worksheet, item 1 (cw1)",
+      "quote": "¿Qué talla eres? (What ____ are you?)",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "'¿Qué talla eres?' is understandable but less natural than '¿Qué talla usas?', which the lesson's own vocab example uses.",
+      "suggested_fix": "Use '¿Qué talla usas? (What ____ are you?)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Vocabulary (match)",
+      "quote": "combinar / hace juego",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "The gloss mixes an infinitive ('combinar') with a conjugated phrase ('hace juego'), so it doesn't line up with 'match / matches'.",
+      "suggested_fix": "Use 'combinar / combina (hacer juego)'.",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    },
+    {
+      "lesson": "19",
+      "section": "Tutor slides › Guided practice: Find the Right Fit",
+      "quote": "Prueba esta.",
+      "category": "accuracy",
+      "severity": "minor",
+      "issue": "This is inconsistent with the reflexive 'Pruébate esta camisa.' in the line before; for clothing the reflexive 'pruébate' is the natural form.",
+      "suggested_fix": "Use 'Pruébate esta.'",
+      "wrong_english": false,
+      "key_issue": "none",
+      "disclosure": "none",
+      "item_status": "n/a",
+      "untaught": "none",
+      "harm": false,
+      "severity_rules": []
+    }
+  ]
+}
