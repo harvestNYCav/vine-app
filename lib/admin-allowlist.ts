@@ -8,6 +8,7 @@ export const DEFAULT_ADMIN_EMAIL_ALLOWLIST = [
   'shichengrao@gmail.com',
   'VineAdmin@harvest-nyc.com',
   'aldowiloto@gmail.com',
+  'rguen97@gmail.com'
 ]
 
 export async function seedDefaultAdminAllowlist(db: Client, createdBy = 'system'): Promise<void> {
