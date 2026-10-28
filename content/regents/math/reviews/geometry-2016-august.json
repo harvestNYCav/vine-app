@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "882ebb31f7ef5cd6c9cc63f4c59cd827bff7b1645b554f4df78f094f6359d59c",
+  "questions": {
+    "1": {
+      "prompt": "Lines ℓ, m, n, and p intersect line r as shown. Which pair of lines is parallel?",
+      "choices": ["ℓ ∥ n", "ℓ ∥ p", "m ∥ p", "m ∥ n"],
+      "explanation": "The 112° angle at ℓ is supplementary to the adjacent 68° angle, matching the 68° angle at p. Equal corresponding angles made with transversal r show ℓ ∥ p.",
+      "imageAlt": "Horizontal transversal r crosses four rising lines in left-to-right order ℓ, m, n, p. The marked angles are 112° above r to the left of ℓ, 78° below r to the left of m, 122° below r to the right of n, and 68° above r to the right of p."
+    },
+    "2": {
+      "prompt": "Which transformation would not always produce an image congruent to the original figure?",
+      "choices": ["translation", "dilation", "rotation", "reflection"],
+      "explanation": "Translations, rotations, and reflections preserve all distances. A dilation changes lengths whenever its scale factor is not 1, so its image is not always congruent.",
+      "imageAlt": "Text-only transformation question; the four options are transcribed in accessible text."
+    },
+    "3": {
+      "prompt": "If an equilateral triangle is continuously rotated around one of its medians, which three-dimensional object is generated?",
+      "choices": ["cone", "pyramid", "prism", "sphere"],
+      "explanation": "A median of an equilateral triangle is also an altitude. Rotating the triangle around that axis sweeps its base into a circular disk while the opposite vertex stays fixed, forming a cone.",
+      "imageAlt": "Text-only solid-of-revolution question; the four solid names are in accessible text."
+    },
+    "4": {
+      "prompt": "In triangle ABC, D lies on AC. Angle BDC is 100°, angle A is 50°, and angle DBC is 30°. Which statement is true?",
+      "choices": ["Triangle ABD is obtuse.", "Triangle ABC is isosceles.", "Angle ABD is 80°.", "Triangle ABD is scalene."],
+      "explanation": "Because A, D, C are collinear, angle ADB = 180°−100° = 80°. In triangle ABD, angle ABD = 180°−80°−50° = 50°. Triangle BDC has angle C = 180°−100°−30° = 50°. Thus angles A and C of ABC are equal, so ABC is isosceles.",
+      "imageAlt": "Triangle ABC has A at lower left, B above, C at lower right. Point D is on base AC, and segment BD splits the triangle. Angle BDC is 100°, angle A is 50°, and angle DBC is 30°."
+    },
+    "5": {
+      "prompt": "Which labeled point is the image of P after a 90° counterclockwise rotation about the origin?",
+      "choices": ["A", "B", "C", "D"],
+      "explanation": "P is to the right of the y-axis and below the x-axis. A 90° counterclockwise rotation sends (x,y) to (−y,x), placing its image in quadrant I. Point A has the corresponding swapped distances from the axes; B does not.",
+      "imageAlt": "Coordinate axes with unlabeled scale. P is in quadrant IV, farther right than below the x-axis. A and B are in quadrant I; A is higher and nearer the y-axis, while B is lower and farther right. C is in quadrant III near the y-axis; D is in quadrant III farther left and nearer the x-axis."
+    },
+    "6": {
+      "prompt": "In right triangle ABC with right angle C, cos A = √21/5. What is sin B?",
+      "choices": ["√21/5", "√21/2", "2/5", "5/√21"],
+      "explanation": "Angles A and B are complementary, so sin B = cos A = √21/5.",
+      "imageAlt": "Text-only trigonometry question; the radical and fraction choices are in accessible text."
+    },
+    "7": {
+      "prompt": "Which given information is not enough to prove quadrilateral ABCD is a parallelogram?",
+      "choices": ["AB ≅ CD and AB ∥ DC", "AB ≅ CD and BC ≅ DA", "AB ≅ CD and BC ∥ AD", "AB ∥ DC and BC ∥ AD"],
+      "explanation": "One pair of opposite sides both congruent and parallel proves a parallelogram, as do both pairs of opposite sides congruent or both pairs parallel. But AB ≅ CD and the other pair BC ∥ AD do not force AB ∥ CD; an isosceles trapezoid can satisfy those facts.",
+      "imageAlt": "Quadrilateral A-B-C-D is drawn with A lower left, B upper left, C upper right, and D lower right. Both diagonals AC and BD cross inside. No side lengths or parallel markings are drawn; the four information sets are in the choices."
+    },
+    "8": {
+      "prompt": "An equilateral triangle has side length 20. What is its height, to the nearest tenth?",
+      "choices": ["10.0", "11.5", "17.3", "23.1"],
+      "explanation": "The altitude bisects the 20-unit base, giving a right triangle with hypotenuse 20 and horizontal leg 10. The height is √(20²−10²) = 10√3 ≈ 17.3.",
+      "imageAlt": "Text-only equilateral-triangle question; side length and all numerical options are in accessible text."
+    },
+    "9": {
+      "prompt": "Triangle AEC is similar to triangle DEF; FE is perpendicular to CE. Which sequence of transformations maps triangle AEC to triangle DEF?",
+      "choices": ["Rotate 180° about E, then translate horizontally.", "Rotate 90° counterclockwise about E, then translate horizontally.", "Rotate 180° about E, then dilate by factor 2 centered at E.", "Rotate 90° counterclockwise about E, then dilate by factor 2 centered at E."],
+      "explanation": "The small right triangle has EC = 4 and CA = 3; the large has EF = 8 and FD = 6. Rotating 90° counterclockwise about E turns the upward leg EC leftward, and dilating by 2 sends lengths 4→8 and 3→6, matching E to E, C to F, and A to D.",
+      "imageAlt": "Small right triangle E-C-A sits above and to the right of E, with EC vertical length 4 and CA horizontal length 3. Large right triangle E-F-D sits left and above E, with EF horizontal length 8 to the left and FD vertical length 6 upward. Right angles are at C and F."
+    },
+    "10": {
+      "prompt": "In right triangle ABC, C is the right angle and D divides hypotenuse AB with AD = 4 and DB = 6. Which length of AC makes CD perpendicular to AB?",
+      "choices": ["2√6", "2√10", "2√15", "4√2"],
+      "explanation": "With altitude CD to the hypotenuse, the leg theorem gives AC² = AD·AB. Since AB = 4+6 = 10, AC² = 4·10 = 40, so AC = 2√10.",
+      "imageAlt": "Right triangle ABC has C at top, A and B at ends of horizontal hypotenuse AB, and D between them directly below C. AD is labeled 4 and DB 6. Segment CD is drawn; the question asks what AC must be for CD to be perpendicular to AB."
+    },
+    "11": {
+      "prompt": "Segment CD is the perpendicular bisector of AB at E. Which pair of segments does not have to be congruent?",
+      "choices": ["AD and BD", "AC and BC", "AE and BE", "DE and CE"],
+      "explanation": "Every point on the perpendicular bisector of AB is equally distant from A and B, so AD = BD and AC = BC. E is the midpoint of AB, so AE = BE. Nothing requires E to bisect CD, so DE and CE can differ.",
+      "imageAlt": "Text-only perpendicular-bisector question; all segment labels and four pairs are in accessible text."
+    },
+    "12": {
+      "prompt": "In triangle CHR, O lies on HR and D lies on CR, with angle H congruent to angle RDO. If RD = 4, RO = 6, and OH = 4, what is CD?",
+      "choices": ["2⅔", "6⅔", "11", "15"],
+      "explanation": "Triangles RDO and RHC are similar: they share angle R and angle D corresponds to angle H. Since RH = RO+OH = 10, RD/RH = RO/RC gives 4/10 = 6/RC. Hence RC = 15 and CD = RC−RD = 11.",
+      "imageAlt": "Large triangle C-H-R has C at top left, H bottom left, and R bottom right. Point O lies on base HR, and D lies on slanted side CR. Segment OD forms a smaller triangle RDO. RD is 4, RO is 6, and OH is 4; angle H equals angle RDO."
+    },
+    "13": {
+      "prompt": "A cross section of a regular pyramid contains its altitude. What shape is this cross section?",
+      "choices": ["circle", "square", "triangle", "rectangle"],
+      "explanation": "A plane through the pyramid's altitude passes through its apex. Its intersection with the base is a line segment, so the cross section has the apex and the two ends of that segment: a triangle.",
+      "imageAlt": "Text-only cross-section question; all four shape options are in accessible text."
+    },
+    "14": {
+      "prompt": "The diagonals of rhombus TEAM meet at P(2,1). The line containing diagonal TA is y = −x+3. What is the line containing diagonal EM?",
+      "choices": ["y = x−1", "y = x−3", "y = −x−1", "y = −x−3"],
+      "explanation": "A rhombus's diagonals are perpendicular. A line perpendicular to slope −1 has slope 1. Through P(2,1), its equation is y−1 = x−2, or y = x−1.",
+      "imageAlt": "Text-only rhombus-diagonal equation question; intersection point, given line, and all candidate equations are in accessible text."
+    },
+    "15": {
+      "prompt": "Triangle ABC has A(3,4), B(3,12), and area 24 square units. Which point could be C?",
+      "choices": ["(3,6)", "(8,−3)", "(−3,8)", "(6,3)"],
+      "explanation": "AB is vertical and has length 8. Area 24 requires a perpendicular distance 6 from C to the line x = 3, since (1/2)·8·6 = 24. The only listed point 6 units horizontally from x = 3 is (−3,8).",
+      "imageAlt": "Text-only coordinate-area question; the vertices, area, and all coordinate choices are in accessible text."
+    },
+    "16": {
+      "prompt": "What are the center and radius of x²+y²−4x+8y+11 = 0?",
+      "choices": ["center (2,−4), radius 3", "center (−2,4), radius 3", "center (2,−4), radius 9", "center (−2,4), radius 9"],
+      "explanation": "Complete the squares: (x−2)²+(y+4)² = 9. Thus the center is (2,−4) and the radius is √9 = 3.",
+      "imageAlt": "Text-only circle-equation question; the equation and each center-radius option are in accessible text."
+    },
+    "17": {
+      "prompt": "American white oak has density 752 kg per cubic meter. A cylindrical trunk has circumference 4.5 m and height 8 m. Approximately how many kilograms is the trunk?",
+      "choices": ["13", "9694", "13,536", "30,456"],
+      "explanation": "Use circumference 2πr = 4.5, so r = 4.5/(2π). The cylindrical volume is πr²·8 ≈ 12.89 m³. Multiplying by 752 kg/m³ gives about 9,694 kg.",
+      "imageAlt": "Text-only cylindrical-trunk word problem; density, circumference, height, and all answer options are in accessible text."
+    },
+    "18": {
+      "prompt": "P divides the directed segment from X(−6,−2) to Y(6,7) in the ratio 1:5. What are P's coordinates?",
+      "choices": ["(4,5½)", "(−½,−4)", "(−4½,0)", "(−4,−½)"],
+      "explanation": "A 1:5 division places P one-sixth of the way from X to Y. The displacement is (12,9), so P = (−6,−2)+(1/6)(12,9) = (−4,−1/2).",
+      "imageAlt": "Text-only directed-segment question; both endpoints, ratio, and coordinate options are in accessible text."
+    },
+    "19": {
+      "prompt": "In circle O, AB is a diameter, BC a chord, OC a radius, and minor arc BC measures 108°. Which students wrote correct formulas for sector COB? Amy: (3/10)π(BC)²; Beth: (108/360)π(OC)²; Carl: (3/10)π((1/2)AB)²; Dex: (108/360)π(1/2)(AB)².",
+      "choices": ["Amy and Dex", "Beth and Carl", "Carl and Amy", "Dex and Beth"],
+      "explanation": "A sector's area is its central-angle fraction times πr², and 108/360 = 3/10. OC is a radius, so Beth's formula works; half of diameter AB is a radius, so Carl's works. Amy uses a chord as radius, and Dex halves the squared diameter instead of squaring half the diameter.",
+      "imageAlt": "Circle centered at O has horizontal diameter A-O-B, point C on the lower arc, radius OC, chord BC, and minor arc BC labeled 108°. Four student formulas are transcribed in the prompt, preserving their parentheses and squared terms."
+    },
+    "20": {
+      "prompt": "Four tennis balls of diameter 6.7 cm are stacked in a minimum-size cylindrical can. What is the can's volume to the nearest cubic centimeter?",
+      "choices": ["236", "282", "564", "945"],
+      "explanation": "The minimum can has radius 6.7/2 = 3.35 cm and height 4·6.7 = 26.8 cm. Its volume is π(3.35)²(26.8) ≈ 945 cm³.",
+      "imageAlt": "Text-only tennis-ball cylinder problem; ball diameter, stack count, and all volume options are in accessible text."
+    },
+    "21": {
+      "prompt": "A′B′ has endpoints (4,−2) and (16,14) and is the image of AB under a dilation of scale factor 1/2 centered at the origin. What is AB's length?",
+      "choices": ["5", "10", "20", "40"],
+      "explanation": "The image length is √[(16−4)²+(14−(−2))²] = √(12²+16²) = 20. A dilation by 1/2 halves lengths, so the original AB is 40.",
+      "imageAlt": "Text-only dilation and distance question; image endpoints, scale factor, and all length choices are in accessible text."
+    },
+    "22": {
+      "prompt": "Triangles ABE and CBD are drawn with DB ≅ BE. Which additional statement proves their congruence using only SAS?",
+      "choices": ["angle CDB ≅ angle AEB", "angle AFD ≅ angle EFC", "AD ≅ CE", "AE ≅ CD"],
+      "explanation": "Given DB = BE, adding AD = CE makes AB = AD+DB equal to CB = CE+BE. The included angles ABE and CBD are the same angle at B, so SAS gives triangle ABE ≅ triangle CBD.",
+      "imageAlt": "B is at the lower-left right-angle corner. A and D lie above B on one vertical ray, with D between B and A; E and C lie to the right on one horizontal ray, with E between B and C. Segments A-E and D-C cross at F. DB equals BE; choice 3 adds AD equals CE."
+    },
+    "23": {
+      "prompt": "BC is a diameter of circle A, and D is any other point on the circle. Which statement must always be true?",
+      "choices": ["Triangle BCD is a right triangle.", "Triangle BCD is isosceles.", "Triangles BAD and CBD are similar.", "Triangles BAD and CAD are congruent."],
+      "explanation": "An inscribed angle that subtends a diameter is always 90°. Angle BDC subtends diameter BC, so triangle BCD is a right triangle regardless of where D lies on the rest of the circle.",
+      "imageAlt": "A circle has center A on slanted diameter C-A-B, with C at left and B at lower right. Point D is not drawn but is specified as another point on the circumference; any angle CDB would intercept the diameter."
+    },
+    "24": {
+      "prompt": "ABCD is a parallelogram. AB is extended through B to E, and CE is drawn. If CE ≅ BE and angle D = 112°, what is angle E?",
+      "choices": ["44°", "56°", "68°", "112°"],
+      "explanation": "Opposite angles in the parallelogram are equal, so angle ABC = 112°. Its exterior angle CBE is 180°−112° = 68°. In triangle CBE, CE = BE, so base angles CBE and BCE are both 68°. The remaining angle E is 180°−68°−68° = 44°.",
+      "imageAlt": "Parallelogram A-B-C-D has A lower left, B lower middle, C upper middle-right, D upper left. Base AB extends rightward to E; segment CE forms triangle B-C-E outside the parallelogram. Angle D is 112° and CE equals BE."
+    }
+  }
+}

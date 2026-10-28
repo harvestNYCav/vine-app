@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "500722551b8e94721a2346d7f0997a790d2eccf0f61da99f35e7761634c60848",
+  "questions": {
+    "1": {
+      "prompt": "A line reflection followed by a rotation maps triangle ABC onto triangle DEF. Which statement is always true?",
+      "choices": ["BC ≅ EF", "AC ≅ DE", "angle A ≅ angle F", "angle B ≅ angle D"],
+      "explanation": "The ordered triangle names give A↔D, B↔E, and C↔F. Both rigid motions preserve length, so corresponding sides BC and EF are congruent.",
+      "imageAlt": "Triangle ABC is at left, with A at top, B lower left, C lower right. Triangle DEF is at right, with D upper right, E lower right, F upper left. The transformation correspondence follows the ordered names, not the page positions."
+    },
+    "2": {
+      "prompt": "A circle is continuously rotated about one of its diameters. Which three-dimensional solid forms?",
+      "choices": ["cone", "prism", "sphere", "cylinder"],
+      "explanation": "As the circle rotates around its diameter, every point sweeps the surface or interior of a sphere.",
+      "imageAlt": "Printed solid-of-revolution question; rotating shape and axis are in accessible text."
+    },
+    "3": {
+      "prompt": "In triangle CER, points L and A lie on CE and ER, with LA parallel to CR. If CL = 3.5, LE = 7.5, and EA = 9.5, find AR to the nearest tenth.",
+      "choices": ["5.5", "4.4", "3.0", "2.8"],
+      "explanation": "The parallel segment divides the two sides proportionally: CL/LE = AR/EA. Thus 3.5/7.5 = AR/9.5, so AR = 9.5(3.5)/7.5 ≈ 4.4.",
+      "imageAlt": "Triangle CER has E at top, C lower left, R lower right. L lies on left side CE and A on right side ER; horizontal LA crosses the triangle parallel to horizontal base CR."
+    },
+    "4": {
+      "prompt": "Right triangle ABC has its right angle at B. Which trigonometric equation is always true?",
+      "choices": ["sin A = cos C", "cos A = sin A", "cos A = cos C", "tan A = tan C"],
+      "explanation": "The two acute angles A and C add to 90°. Sine of one angle equals cosine of its complement, so sin A = cos C.",
+      "imageAlt": "Right triangle has B lower left with right-angle mark, A lower right, and C directly above B. Its horizontal and vertical legs meet at B."
+    },
+    "5": {
+      "prompt": "In triangle ABC, AE bisects angle BAC, altitude BD meets AC at D, and AE and BD cross at F. If angle C = 50° and angle ABC = 60°, find angle FEB.",
+      "choices": ["35°", "40°", "55°", "85°"],
+      "explanation": "Angle A = 180° − 50° − 60° = 70°, so the bisector makes angle BAE = 35°. In triangle ABE, angle ABE = 60°, leaving angle AEB = 180° − 35° − 60° = 85°. F lies on AE, so angle FEB is the same 85° angle.",
+      "imageAlt": "Triangle ABC has A at top, B lower left, C lower right. E lies on base BC, D on side AC, and segment AE crosses altitude BD at F. AE bisects top angle BAC; BD meets AC at a right angle."
+    },
+    "6": {
+      "prompt": "Each copper heart pendant uses 0.75 cubic inch of copper. Copper weighs 0.323 pound per cubic inch and costs $3.68 per pound. What is the copper cost for 24 hearts?",
+      "choices": ["$5.81", "$21.40", "$66.24", "$205.08"],
+      "explanation": "Total volume is 24(0.75) = 18 cubic inches. That weighs 18(0.323) = 5.814 pounds, costing 5.814($3.68) ≈ $21.40.",
+      "imageAlt": "Printed density-and-cost question; volume per pendant, density, price, and count are all in accessible text."
+    },
+    "7": {
+      "prompt": "Right triangle LMN has right angle M, legs MN = 12 and LM = 16. Which ratio equals cos N?",
+      "choices": ["12/20", "16/20", "12/16", "16/12"],
+      "explanation": "The hypotenuse LN is √(12² + 16²) = 20. Relative to angle N, adjacent leg MN is 12, so cos N = 12/20.",
+      "imageAlt": "Right triangle has N lower left, M lower right with right-angle mark, L directly above M. Horizontal leg NM is labeled 12 and vertical leg ML is labeled 16."
+    },
+    "8": {
+      "prompt": "In triangle ABC, D lies on AB and E lies on AC. If DE is parallel to BC, which equation is always true?",
+      "choices": ["AD/DE = DB/BC", "AD/DE = AB/BC", "AD/BC = DE/DB", "AD/BC = DE/AB"],
+      "explanation": "Triangles ADE and ABC are similar because DE ∥ BC. Corresponding sides are AD↔AB and DE↔BC, giving AD/DE = AB/BC.",
+      "imageAlt": "Triangle ABC has A at top, B lower left, C lower right. D lies on side AB, E on side AC, and segment DE spans the triangle parallel to base BC."
+    },
+    "9": {
+      "prompt": "Which polygon does not always have congruent diagonals?",
+      "choices": ["square", "rectangle", "rhombus", "isosceles trapezoid"],
+      "explanation": "A rhombus can have diagonals of different lengths unless it is also a square. Squares, rectangles, and isosceles trapezoids always have congruent diagonals.",
+      "imageAlt": "Printed quadrilateral-property question; all four polygon types are in accessible text."
+    },
+    "10": {
+      "prompt": "A spherical lacrosse ball has circumference 19.9 cm. What is its volume to the nearest cubic centimeter?",
+      "choices": ["42", "133", "415", "1065"],
+      "explanation": "Use 19.9 = 2πr to get r ≈ 3.17 cm. Sphere volume is (4/3)πr³ ≈ 133 cubic centimeters.",
+      "imageAlt": "Printed sphere-volume question; circumference and requested rounding are in accessible text."
+    },
+    "11": {
+      "prompt": "Which polygon always has a minimum positive rotation of 180° about its center that maps it onto itself?",
+      "choices": ["rectangle", "square", "isosceles trapezoid", "regular pentagon"],
+      "explanation": "A non-square rectangle maps onto itself after a half-turn, 180°, and not after a smaller positive rotation. A square's minimum is 90°, a regular pentagon's is 72°, and a typical isosceles trapezoid has no nontrivial rotational symmetry.",
+      "imageAlt": "Four pictured and labeled shapes: a wider-than-tall rectangle, a square, an isosceles trapezoid with unequal bases, and a regular pentagon."
+    },
+    "12": {
+      "prompt": "From point D outside circle O, tangent DA has length 24 and secant D-C-B passes through the circle. If DC:CB = 4:5, find CB.",
+      "choices": ["36", "20", "16", "4"],
+      "explanation": "Let DC = 4k and CB = 5k, so whole secant DB = 9k. The tangent-secant theorem gives DA² = DC·DB, or 24² = (4k)(9k) = 36k². Thus k = 4 and CB = 5k = 20.",
+      "imageAlt": "Circle O has external point D at right. Tangent DA rises left to touch the circle at A and is labeled 24. Horizontal secant from D meets the circle first at C and farther left at B; DC is the external part and CB the internal part."
+    },
+    "13": {
+      "prompt": "What slope must any line perpendicular to 3x − 5y = 8 have?",
+      "choices": ["3/5", "5/3", "−3/5", "−5/3"],
+      "explanation": "Rewrite the line as y = (3/5)x − 8/5, so its slope is 3/5. A perpendicular line has the negative reciprocal slope, −5/3.",
+      "imageAlt": "Printed perpendicular-slope question; equation and signed fractional choices are in accessible text."
+    },
+    "14": {
+      "prompt": "For circle x² + y² + 2x − 16y + 49 = 0, what are its center and radius?",
+      "choices": ["center (1, −8), radius 4", "center (−1, 8), radius 4", "center (1, −8), radius 16", "center (−1, 8), radius 16"],
+      "explanation": "Complete squares: (x+1)²−1 + (y−8)²−64 +49 = 0, so (x+1)²+(y−8)² =16. The center is (−1,8) and radius 4.",
+      "imageAlt": "Printed circle-equation question; all squared and signed terms and each center-radius pair are in accessible text."
+    },
+    "15": {
+      "prompt": "In right triangle MDL, altitude DG is drawn to hypotenuse ML. If MG = 3 and GL = 24, find DG.",
+      "choices": ["8", "9", "√63", "√72"],
+      "explanation": "The altitude to a right triangle's hypotenuse is the geometric mean of the two hypotenuse segments: DG² = MG·GL = 3·24 = 72. Hence DG = √72.",
+      "imageAlt": "Right triangle MDL has hypotenuse ML horizontal from M at left to L at right, with right-angle vertex D above near M. G lies on ML between M and L, and altitude DG descends vertically to G."
+    },
+    "16": {
+      "prompt": "Segment AB is the perpendicular bisector of CD at M. Which statement is always true?",
+      "choices": ["CB ≅ DB", "CD ≅ AB", "triangle ACD ~ triangle BCD", "triangle ACM ~ triangle BCM"],
+      "explanation": "Every point on the perpendicular bisector of CD is equally distant from C and D. B lies on that bisector, so BC = BD.",
+      "imageAlt": "Printed perpendicular-bisector question; segment AB crosses CD at midpoint M at a right angle, and all four candidate relationships are in accessible text."
+    },
+    "17": {
+      "prompt": "In circle O, chords AC and BC make inscribed angle ACB = 70°. Radius OA = 9. Find the shaded sector AOB area.",
+      "choices": ["3.5π", "7π", "15.75π", "31.5π"],
+      "explanation": "Inscribed angle ACB intercepts arc AB, so central angle AOB is twice 70°, or 140°. Sector area is (140/360)π(9²) = 31.5π.",
+      "imageAlt": "Circle O has C at left, A upper right, and B lower right. Chords CA and CB meet at C with a 70° angle. Radii OA and OB bound the shaded sector on the right side of the circle."
+    },
+    "18": {
+      "prompt": "Quadrilateral BEST has diagonals intersecting at D. Which condition is not sufficient to prove BEST is a parallelogram?",
+      "choices": ["BD ≅ SD and ED ≅ TD", "BE ≅ ST and ES ≅ TB", "ES ≅ TB and BE ∥ TS", "ES ∥ BT and BE ∥ TS"],
+      "explanation": "The first condition says the diagonals bisect each other, the second says both pairs of opposite sides are congruent, and the fourth says both pairs are parallel; each proves a parallelogram. The third gives one pair of opposite sides congruent and the other pair parallel, which alone does not.",
+      "imageAlt": "Printed parallelogram-test question; ordered quadrilateral name, diagonal intersection, and all segment equalities and parallelities are available in accessible text."
+    },
+    "19": {
+      "prompt": "Line t is 3x − y = 6. Line m is its image after dilation by factor 1/2 centered at the origin. What is an equation of m?",
+      "choices": ["y = (3/2)x − 3", "y = (3/2)x − 6", "y = 3x + 3", "y = 3x − 3"],
+      "explanation": "The original line is y = 3x − 6. A dilation centered at the origin preserves slope 3 and halves the y-intercept −6 to −3. Thus m is y = 3x − 3.",
+      "imageAlt": "Printed line-dilation question; the original equation, scale factor, center, and each image equation are in accessible text."
+    },
+    "20": {
+      "prompt": "A cylindrical pool has diameter 16 feet and height 4 feet, but the water is 1/2 foot below the top. How many gallons does it contain, to the nearest gallon, if 1 cubic foot = 7.48 gallons?",
+      "choices": ["704", "804", "5264", "6016"],
+      "explanation": "Water depth is 4 − 0.5 = 3.5 feet and radius is 8 feet. Volume is π(8²)(3.5) = 224π cubic feet. Multiplying by 7.48 gives about 5264 gallons.",
+      "imageAlt": "Printed cylindrical-pool capacity question; diameter, height, unfilled top gap, and gallon conversion are in accessible text."
+    },
+    "21": {
+      "prompt": "Triangle TAP has area 36 cm². Joining the midpoints of its three sides forms triangle JOE. What is JOE's area?",
+      "choices": ["9", "12", "18", "27"],
+      "explanation": "The midpoint triangle has side lengths half those of the original, so its area is (1/2)² = 1/4 as large. One fourth of 36 cm² is 9 cm².",
+      "imageAlt": "Printed midpoint-triangle question; original area and construction of the inner triangle are in accessible text."
+    },
+    "22": {
+      "prompt": "Segment AB has endpoints A(−3,4) and B(5,2). It is dilated by factor 2 centered at (3,5). What are image endpoints A' and B'?",
+      "choices": ["A'(−7,5), B'(9,1)", "A'(−1,6), B'(7,4)", "A'(−6,8), B'(10,4)", "A'(−9,3), B'(7,−1)"],
+      "explanation": "For center C(3,5), each image point is C + 2(point−C). A−C = (−6,−1), so A' = (−9,3). B−C = (2,−3), so B' = (7,−1).",
+      "imageAlt": "Coordinate grid shows segment from A(−3,4) at upper left of the y-axis to B(5,2) at upper right. The dilation center (3,5) is specified in the question."
+    },
+    "23": {
+      "prompt": "In a circle, chords AD and BC are parallel; chords AC and DC are drawn; and line E-D-F is tangent at D. Which angle statement is always true?",
+      "choices": ["angle ADE ≅ angle CAD", "angle CDF ≅ angle ACB", "angle BCA ≅ angle DCA", "angle ADC ≅ angle ADE"],
+      "explanation": "The tangent-chord theorem gives angle CDF = angle DAC because each subtends chord DC. Since AD ∥ BC, alternate interior angles DAC and ACB are equal. Therefore angle CDF ≅ angle ACB.",
+      "imageAlt": "Circle has chord AD horizontal near the top from A left to D right and parallel chord BC horizontal near the bottom from B left to C right. Chords AC and DC meet at C. Tangent E-D-F slopes from upper left through D to lower right."
+    },
+    "24": {
+      "prompt": "In triangle ABC, D and E are midpoints of AB and AC, and DE is drawn. Which methods can prove triangle ABC similar to triangle ADE: I AA, II SSS, III SAS?",
+      "choices": ["I and II only", "II and III only", "I and III only", "I, II, and III"],
+      "explanation": "Midpoint theorem gives DE ∥ BC, proving AA similarity. Also AD/AB = AE/AC = 1/2 and shared angle A proves SAS. Finally DE/BC = 1/2 too, so all three side ratios match and SSS works.",
+      "imageAlt": "Triangle ABC has A at top, B lower left, C lower right. D is the midpoint of AB, E midpoint of AC, and horizontal-ish segment DE connects them inside parallel to base BC."
+    }
+  }
+}

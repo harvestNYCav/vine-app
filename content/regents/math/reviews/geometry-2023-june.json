@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "de7d5d33b5694f2fee0839d84a0ba5f1977092ff0fbd910bc11525a50c1de702",
+  "questions": {
+    "1": {
+      "prompt": "A plane passes through the vertex of a square pyramid and is perpendicular to its base. What shape is its cross section?",
+      "choices": ["square", "triangle", "pentagon", "rectangle"],
+      "explanation": "The slice passes through the apex and meets the base in a line segment. The two resulting sloped sides join that segment to the apex, forming a triangle.",
+      "imageAlt": "Square pyramid is drawn with one apex above a square base. The stated cutting plane passes through the apex and stands perpendicular to the base."
+    },
+    "2": {
+      "prompt": "Trapezoid ABCD has AB parallel to DC. Its image A'B'C'D' is formed by a 110° counterclockwise rotation about P. Which statement is always true?",
+      "choices": ["angle A ≅ angle D'", "AC ≅ B'D'", "A'B' ∥ D'C'", "B'A' ≅ C'D'"],
+      "explanation": "A rotation preserves parallel lines. Since AB ∥ DC, their image sides A'B' and D'C' are also parallel. The other choices compare parts that need not correspond or have equal measures.",
+      "imageAlt": "Original trapezoid ABCD appears to the upper-right of rotation center P, and its congruent rotated image A'B'C'D' appears to the upper-left. Corresponding vertices retain the same letters with primes."
+    },
+    "3": {
+      "prompt": "What is the volume of a right circular cone with height 7.2 cm and radius 2.5 cm, to the nearest tenth of a cubic centimeter?",
+      "choices": ["37.7", "47.1", "113.1", "141.4"],
+      "explanation": "Cone volume is (1/3)πr²h = (1/3)π(2.5²)(7.2) = 15π ≈ 47.1 cubic centimeters.",
+      "imageAlt": "Printed cone-volume question; radius, height, and units are in accessible text."
+    },
+    "4": {
+      "prompt": "Right triangle SUN has right angle N, hypotenuse SU = 13.6, and leg SN = 12.3. Find angle S to the nearest degree.",
+      "choices": ["25°", "42°", "48°", "65°"],
+      "explanation": "Relative to angle S, SN is adjacent and SU is the hypotenuse. Thus cos S = 12.3/13.6 and S ≈ 25°.",
+      "imageAlt": "Right triangle has S at lower left, N lower right with a right-angle mark, and U directly above N. Base SN is labeled 12.3 and sloping hypotenuse SU is labeled 13.6."
+    },
+    "5": {
+      "prompt": "In circle O, AB is a diameter and CB a chord. Inscribed angle B = 28°. What is the measure of minor arc BC?",
+      "choices": ["56°", "124°", "152°", "166°"],
+      "explanation": "Angle B intercepts arc AC, so arc AC = 2(28°) = 56°. Because A-to-B through C is a semicircle, arc BC = 180° − 56° = 124°.",
+      "imageAlt": "Circle with vertical diameter A-O-B, A at top and B at bottom. C lies on the upper-right circle. Chord BC slopes upward to C, creating a 28° angle at B between BA and BC."
+    },
+    "6": {
+      "prompt": "In parallelogram ABCD, diagonal B-E-D is drawn, E-F is perpendicular to side D-F-C, angle DAB = 111°, and angle DBC = 39°. Find angle DEF.",
+      "choices": ["30°", "51°", "60°", "120°"],
+      "explanation": "Adjacent parallelogram angles are supplementary, so angle ADC = 69°. Since AD ∥ BC, angle ADB = angle DBC = 39°. Thus angle EDF = 69° − 39° = 30°. Triangle DEF is right at F, giving angle DEF = 60°.",
+      "imageAlt": "Parallelogram has A upper left, B upper right, C lower right, D lower left. Diagonal DB passes through E. Point F lies on base DC below E, and EF meets DC at a right angle. At A the angle is 111°; at B the angle between BD and BC is 39°."
+    },
+    "7": {
+      "prompt": "In triangle ACT, E lies on CA and S lies on CT, with ES parallel to AT. Which proportion is always true?",
+      "choices": ["CE/CA = CS/ST", "CE/ES = EA/AT", "CE/EA = CS/ST", "CE/ST = EA/CS"],
+      "explanation": "A line parallel to one side of a triangle divides the other two sides proportionally. The upper segments CE and CS correspond, as do lower segments EA and ST, so CE/EA = CS/ST.",
+      "imageAlt": "Triangle ACT has C at top, A lower left, T lower right. E lies on left side CA, S on right side CT, and horizontal ES crosses the triangle parallel to horizontal base AT."
+    },
+    "8": {
+      "prompt": "Congruent triangles ABC and DEF are graphed. Which sequence maps triangle ABC onto triangle DEF?",
+      "choices": ["rotate 90° counterclockwise about the origin, then translate 8 units right", "rotate 90° counterclockwise about the origin, then reflect over the y-axis", "rotate 90° counterclockwise about the origin, then translate 4 units down", "rotate 90° clockwise about the origin, then reflect over the x-axis"],
+      "explanation": "The graph shows A(−2, 6), B(−2, 2), C(−5, 2) and corresponding D(2, −2), E(6, −2), F(6, −5). A 90° counterclockwise rotation sends (x,y) to (−y,x); adding 8 to the new x-coordinate sends all three vertices to D, E, F.",
+      "imageAlt": "Coordinate grid shows triangle ABC in quadrant II with A(−2,6), B(−2,2), C(−5,2), and triangle DEF in quadrant IV with D(2,−2), E(6,−2), F(6,−5). Corresponding order is A/D, B/E, C/F."
+    },
+    "9": {
+      "prompt": "Circle M has equation x² + y² + 6x − 2y + 1 = 0. What are its center and radius?",
+      "choices": ["center (3, −1), radius 9", "center (3, −1), radius 3", "center (−3, 1), radius 9", "center (−3, 1), radius 3"],
+      "explanation": "Complete the squares: (x + 3)² − 9 + (y − 1)² − 1 + 1 = 0, or (x + 3)² + (y − 1)² = 9. The center is (−3, 1) and radius 3.",
+      "imageAlt": "Printed circle-equation question; all signed terms and each center-radius pair are in accessible text."
+    },
+    "10": {
+      "prompt": "Parallelogram BETH has diagonals BT and HE. Which extra fact proves BETH is a rectangle?",
+      "choices": ["BT ⟂ HE", "BE ∥ HT", "BT ≅ HE", "BE ≅ ET"],
+      "explanation": "A parallelogram with congruent diagonals is a rectangle. Congruence of BT and HE is therefore sufficient; the other statements are already true or characterize different shapes.",
+      "imageAlt": "Parallelogram BETH is drawn as a rectangle-like outline with B upper left, H upper right, T lower right, E lower left. Diagonals BT and HE cross inside; drawing is not proof of right angles."
+    },
+    "11": {
+      "prompt": "A 3-foot by 10-foot garden needs mulch 3 inches deep. Each bag contains 2 cubic feet and costs $3.66. What is the cost of the minimum number of bags?",
+      "choices": ["$3.66", "$10.98", "$14.64", "$29.28"],
+      "explanation": "Three inches is 0.25 foot. Required volume is 3×10×0.25 = 7.5 cubic feet, so at least four 2-cubic-foot bags are needed. Cost is 4×$3.66 = $14.64.",
+      "imageAlt": "Printed garden-volume question; both horizontal dimensions, mulch depth, bag volume, and price are available in accessible text."
+    },
+    "12": {
+      "prompt": "Right triangles DOG and CAT are similar in that order, with angles G and T right angles. Which expression equals sin D?",
+      "choices": ["cos A", "sin A", "tan A", "cos C"],
+      "explanation": "The similarity order gives D↔C and O↔A. In a right triangle, C and A are complementary, so sin D = sin C = cos A.",
+      "imageAlt": "Small right triangle DOG at left has D above G, O right of G, and right angle G. Larger right triangle CAT at right has T at upper left with right angle, C upper right, and A below T."
+    },
+    "13": {
+      "prompt": "On a coordinate graph, triangle DEF is the image of triangle ABC after dilation by scale factor 1/3. Where is the center of dilation?",
+      "choices": ["(0, 0)", "(2, −3)", "(0, −2)", "(−4, 0)"],
+      "explanation": "Corresponding A(−10,6) and D(−2,0) satisfy D = C + (A−C)/3 for center C. Solving C = (3D−A)/2 gives C = (2,−3). The same center works for B→E and C→F.",
+      "imageAlt": "Coordinate grid shows large triangle ABC mostly above-left of origin, with A(−10,6), B(−1,6), C(−4,0). Smaller triangle DEF is near the origin, with D(−2,0), E(1,0), F(0,−2). Corresponding vertices are A/D, B/E, C/F."
+    },
+    "14": {
+      "prompt": "Triangle AHE is isosceles with vertex angle H. Points C and F lie on its left and right sides. Segments CB and FD are perpendicular to base AE at B and D. Which proportion is always true?",
+      "choices": ["AH/AC = EH/EF", "AC/EF = AB/ED", "AB/ED = CB/FE", "AD/AB = BE/DE"],
+      "explanation": "Right triangles ACB and EFD have equal acute base angles because AHE is isosceles, so they are similar. Their hypotenuses AC and EF correspond, as do base legs AB and ED; hence AC/EF = AB/ED.",
+      "imageAlt": "Isosceles triangle AHE has apex H above horizontal base A-B-D-E. C lies on left side AH directly above B; F lies on right side HE directly above D. Vertical CB and FD meet base AE at right angles."
+    },
+    "15": {
+      "prompt": "In rectangle ABCD, A(−1,−3) and B(6,5) are adjacent vertices. What is the slope of BC?",
+      "choices": ["−7/8", "7/8", "−8/7", "8/7"],
+      "explanation": "Slope AB = (5−(−3))/(6−(−1)) = 8/7. Adjacent rectangle sides are perpendicular, so slope BC is its negative reciprocal, −7/8.",
+      "imageAlt": "Printed rectangle-slope question; both signed coordinates and all slope fractions are in accessible text."
+    },
+    "16": {
+      "prompt": "Right triangle ABC has angle A = 90°, angle B = 18°, and side AC = 8. Find hypotenuse BC to the nearest tenth.",
+      "choices": ["2.5", "8.4", "24.6", "25.9"],
+      "explanation": "Side AC is opposite angle B and BC is the hypotenuse, so sin 18° = 8/BC. Thus BC = 8/sin 18° ≈ 25.9.",
+      "imageAlt": "Printed right-triangle trigonometry question; angle measures, side length, and target hypotenuse are in accessible text."
+    },
+    "17": {
+      "prompt": "An isosceles triangle has a base angle of 42°. What is an exterior angle at its vertex?",
+      "choices": ["42°", "84°", "96°", "138°"],
+      "explanation": "Both base angles are 42°, so the interior vertex angle is 180° − 84° = 96°. Its adjacent exterior angle is 180° − 96° = 84°.",
+      "imageAlt": "Printed isosceles-triangle angle question; base angle and target exterior vertex angle are in accessible text."
+    },
+    "18": {
+      "prompt": "Parallel lines AFKB and CHLM are crossed by collinear D-F-H-E. Segments FH ≅ LH and FL ≅ KL; LF bisects angle HFK. Which angle relation is always true?",
+      "choices": ["2(angle HLF) = angle CHE", "2(angle FLK) = angle LKB", "angle AFD = angle BKL", "angle DFK = angle KLF"],
+      "explanation": "Let α = angle HFL = angle LFK because LF bisects HFK. Since FH = LH, triangle FHL has angle FLH = α. Since FL = KL, triangle FLK has angle FKL = α. Thus angle KLF = 180° − 2α. Ray FD is opposite FH, so angle DFK = 180° − angle HFK = 180° − 2α as well.",
+      "imageAlt": "Two parallel horizontal lines: top A-F-K-B and bottom C-H-L-M. Slanted line D-F-H-E goes from above F through H to below. Segments F-L and L-K make a V between the lines. FH and LH are marked equal, as are FL and KL; LF bisects the angle between FH and FK at F."
+    },
+    "19": {
+      "prompt": "Line 6x + 3y = 3 is dilated by scale factor 2 centered at the origin. What is an equation of its image?",
+      "choices": ["y = −2x + 1", "y = −2x + 2", "y = −4x + 1", "y = −4x + 2"],
+      "explanation": "The original line is y = −2x + 1. Dilation about the origin preserves its slope and doubles its y-intercept from 1 to 2, so the image is y = −2x + 2.",
+      "imageAlt": "Printed line-dilation question; equation, scale factor, center, and all image equations are in accessible text."
+    },
+    "20": {
+      "prompt": "Which figure does not map onto itself after a 120° rotation about its center?",
+      "choices": ["equilateral triangle", "regular hexagon", "regular octagon", "regular nonagon"],
+      "explanation": "A regular octagon has rotational steps of 360°/8 = 45°, and 120° is not a multiple of 45°. The triangle, hexagon, and nonagon all have step sizes that divide 120°.",
+      "imageAlt": "Printed rotational-symmetry question; angle and all polygon names are in accessible text."
+    },
+    "21": {
+      "prompt": "In triangle ADF, B lies on AD and C lies on AF, with BC parallel to DF. Which statement must be true?",
+      "choices": ["AB/BC = BD/DF", "BC = (1/2)DF", "AB:AD = AC:CF", "angle ACB ≅ angle AFD"],
+      "explanation": "Parallel BC and DF make triangles ABC and ADF similar. Angle ACB, between CA and CB, corresponds to angle AFD, between FA and FD, so those angles are congruent.",
+      "imageAlt": "Triangle ADF has A lower left, D lower right, F above. B lies on base AD and C on side AF. Segment CB slants down-right parallel to outer side FD."
+    },
+    "22": {
+      "prompt": "In triangle ABC, M and N are midpoints of AB and AC. If MN = x + 13 and BC = 5x − 1, find MN.",
+      "choices": ["3.5", "9", "16.5", "22"],
+      "explanation": "The segment joining two side midpoints has half the third side's length. Thus x + 13 = (5x − 1)/2, yielding 2x + 26 = 5x − 1 and x = 9. Therefore MN = 22.",
+      "imageAlt": "Printed triangle-midsegment question; the midpoint relationships and both algebraic lengths are in accessible text."
+    },
+    "23": {
+      "prompt": "In isosceles trapezoid STAR, parallel bases ST and RA have diagonals SA and RT meeting at O. Which triangle pair is not always similar?",
+      "choices": ["triangle STO and triangle ARO", "triangle SOR and triangle TOA", "triangle SRA and triangle ATS", "triangle SRT and triangle TAS"],
+      "explanation": "Parallel bases and vertical angles make triangles STO and ARO similar. The trapezoid's symmetry gives congruent pairs SOR/TOA and SRT/TAS, hence those are similar. But triangles SRA and ATS generally have different angle sets, so similarity is not guaranteed.",
+      "imageAlt": "Isosceles trapezoid has shorter top base S-T and longer bottom base R-A; sloping legs S-R and T-A. Diagonals S-A and R-T cross at interior point O."
+    },
+    "24": {
+      "prompt": "Segment AB has endpoints A(0,4) and B(−4,6). What is the equation of its perpendicular bisector?",
+      "choices": ["y = −(1/2)x + 4", "y = −2x + 1", "y = 2x + 8", "y = 2x + 9"],
+      "explanation": "The midpoint is (−2,5). Slope AB = (6−4)/(−4−0) = −1/2, so the perpendicular slope is 2. The line through (−2,5) is y−5 = 2(x+2), or y = 2x + 9.",
+      "imageAlt": "Printed perpendicular-bisector question; endpoint coordinates and all four equations are available in accessible text."
+    }
+  }
+}

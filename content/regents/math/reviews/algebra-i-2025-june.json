@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "e622d0014b8ffd89585b18b725d115aea728bdad0eec3bf1fd095206ca5d4aae",
+  "questions": {
+    "1": {
+      "prompt": "The expression 10/√2 is equivalent to",
+      "choices": ["5", "20", "5√2", "10√2"],
+      "explanation": "Rationalize the denominator: 10/√2 = 10√2/2 = 5√2.",
+      "imageAlt": "Fraction ten over square root of two and all four numeric or radical answer choices are transcribed."
+    },
+    "2": {
+      "prompt": "A parabola is graphed on the axes. Over which interval is the parabola only increasing?",
+      "choices": ["[1, 4]", "[3, ∞)", "(−∞, 3]", "[−1, 1]"],
+      "explanation": "The upward-opening parabola reaches its minimum at x = 3. To the right of that vertex it rises as x increases, so it is increasing on [3, ∞).",
+      "imageAlt": "Upward-opening parabola on x-y axes with its vertex three grid units to the right of the y-axis and below the x-axis; it descends before x=3 and rises after x=3. All interval endpoints are transcribed."
+    },
+    "3": {
+      "prompt": "Which scenario represents an exponential relationship?",
+      "choices": ["Kirsten's New Year's resolution is to lose one pound each week.", "Sarah wants to increase her grade by 5 points each quarter.", "Tommy wants to reduce his spending by $50 each month.", "Dylan hopes to grow his business by 5% each month."],
+      "explanation": "A fixed 5% monthly increase multiplies the previous month's amount by 1.05, creating exponential growth. The other scenarios add or subtract a fixed amount each period, which is linear.",
+      "imageAlt": "All four scenarios are transcribed, preserving fixed amounts versus a percentage change."
+    },
+    "4": {
+      "prompt": "Andrea's geometry test scores are 82, 87, 90, 84. Joe's are 91, 78, 94, 67. Which statement about their scores is correct?",
+      "choices": ["Both Andrea's mean and standard deviation are higher than Joe's.", "Both Joe's mean and standard deviation are higher than Andrea's.", "Andrea's mean is higher than Joe's, but Joe's standard deviation is higher than Andrea's.", "Joe's mean is higher than Andrea's, but Andrea's standard deviation is higher than Joe's."],
+      "explanation": "Andrea's mean is 85.75, higher than Joe's 82.5. Joe's scores spread much farther from their mean; population standard deviations are about 10.78 for Joe and 3.03 for Andrea. Thus Andrea has the higher mean, while Joe has the higher standard deviation.",
+      "imageAlt": "Two-column score table is transcribed in the prompt: Andrea 82,87,90,84; Joe 91,78,94,67."
+    },
+    "5": {
+      "prompt": "Which polynomial has a degree of 3 and a leading coefficient of 2?",
+      "choices": ["2x² + 3x + 1", "6x³ + 3x² − 2x", "3x² + 2x + 2", "2x³ + x² + 4x"],
+      "explanation": "Degree 3 means the highest power is x³, and its coefficient must be 2. Only 2x³ + x² + 4x fits both conditions.",
+      "imageAlt": "All four candidate polynomials are transcribed with powers and leading coefficients."
+    },
+    "6": {
+      "prompt": "The expression (−3x² + 9) − (7x² − 5x + 4) is equivalent to",
+      "choices": ["−10x² + 5x + 5", "−10x² + 5x + 13", "−10x² − 5x + 5", "−10x² − 5x + 13"],
+      "explanation": "Distribute the subtraction sign: −3x² + 9 − 7x² + 5x − 4. Combine like terms to get −10x² + 5x + 5.",
+      "imageAlt": "Parenthesized polynomial subtraction and all four result trinomials are transcribed with signs and exponents."
+    },
+    "7": {
+      "prompt": "A table gives average tomato-plant height h(x), in inches, at x weeks after transplanting: (2,6), (4,12), (6,24), (9,51), (12,60), (16,64). Between weeks 4 and 12, what is the average rate of change in inches per week?",
+      "choices": ["6", "8", "48", "58"],
+      "explanation": "At week 4 the height is 12 inches, and at week 12 it is 60 inches. The average rate is (60 − 12)/(12 − 4) = 48/8 = 6 inches per week.",
+      "imageAlt": "All six week-height pairs from the table are transcribed in the prompt, including the week-4 and week-12 endpoints."
+    },
+    "8": {
+      "prompt": "Chloe is solving x² + 5x = 3x + 3. Her first step is x² + 2x − 3 = 0. Which property justifies this step?",
+      "choices": ["zero product property", "commutative property", "distributive property", "subtraction property of equality"],
+      "explanation": "Subtract 3x + 3 from both sides: x² + 5x − 3x − 3 = 0, which simplifies to x² + 2x − 3 = 0. This uses the subtraction property of equality.",
+      "imageAlt": "Given and first-step quadratic equations are transcribed with all four property names."
+    },
+    "9": {
+      "prompt": "Which function represents w(x) = |x| shifted 2 units to the right?",
+      "choices": ["g(x) = |x + 2|", "h(x) = |x − 2|", "q(x) = |x| + 2", "r(x) = |x| − 2"],
+      "explanation": "A horizontal shift right by 2 replaces x with x − 2 inside the absolute value. The shifted function is h(x) = |x − 2|.",
+      "imageAlt": "Original absolute-value function and all four inside-versus-outside shifts are transcribed."
+    },
+    "10": {
+      "prompt": "Given the system y + 4x = 5 and 2x − 3y = 10, which equation is a step in solving by substitution?",
+      "choices": ["2(5 − 4x) + 4x = 5", "2(5 + 4x) + 4x = 5", "2x − 3(5 − 4x) = 10", "2x − 3(5 + 4x) = 10"],
+      "explanation": "The first equation gives y = 5 − 4x. Substitute this expression for y in the second equation to obtain 2x − 3(5 − 4x) = 10.",
+      "imageAlt": "Two-equation system and four possible substitution steps are transcribed with signs and coefficients."
+    },
+    "11": {
+      "prompt": "Which equation is equivalent to x² − 6x = 27?",
+      "choices": ["(x − 3)² = 27 − 9", "(x − 3)² = 27 + 9", "(x − 3)² = 27 + 36", "(x − 3)² = 27 − 36"],
+      "explanation": "Complete the square by adding (6/2)² = 9 to both sides. Then x² − 6x + 9 = 27 + 9, or (x − 3)² = 27 + 9.",
+      "imageAlt": "Quadratic equation and four completed-square candidates are transcribed, preserving the plus/minus signs on the right."
+    },
+    "12": {
+      "prompt": "Box plots summarize the ages of athletes on a swim team and a track team. Which statement must be true?",
+      "choices": ["The IQR of both teams is the same.", "There are more athletes on the swim team than on the track team.", "The median age of the swim team is less than the median age of the track team.", "The range of ages of the swim team is smaller than the range of ages of the track team."],
+      "explanation": "The swim-team box runs from Q1 = 12 to Q3 = 16, so IQR = 4. The track-team box runs from Q1 = 10 to Q3 = 14, also IQR = 4. Box plots do not show sample size, the swim median is 13 versus track 12, and their ranges differ in the other direction.",
+      "imageAlt": "Swim box plot: minimum 9, Q1 12, median 13, Q3 16, maximum 17. Track box plot: minimum 8, Q1 10, median 12, Q3 14, maximum 15."
+    },
+    "13": {
+      "prompt": "A graph of f(x) starts with an open point at (0,15), rises to (6,30), stays level through (10,30), then rises to a closed point at (12,45). What is its domain?",
+      "choices": ["[0,12]", "[15,45]", "0 < x ≤ 12", "15 < x ≤ 45"],
+      "explanation": "The domain is the set of x-values on the graph. The open circle at x = 0 excludes 0, while the filled point at x = 12 includes 12, so 0 < x ≤ 12.",
+      "imageAlt": "Piecewise line graph with open left endpoint (0,15) and closed right endpoint (12,45), rising to (6,30), flat to (10,30), then rising again."
+    },
+    "14": {
+      "prompt": "The sum of 3 and √5 is",
+      "choices": ["rational, since the sum can be expressed as an integer", "rational, since the sum can be expressed as a nonterminating decimal", "irrational, since the sum can be expressed as a terminating decimal", "irrational, since the sum cannot be expressed as a terminating or repeating decimal"],
+      "explanation": "√5 is irrational. Adding the rational number 3 keeps the sum irrational, so its decimal form neither terminates nor repeats.",
+      "imageAlt": "Sum three plus square root of five and all four rationality reasons are transcribed."
+    },
+    "15": {
+      "prompt": "Which expression is equivalent to a⁸ − b⁶?",
+      "choices": ["(a⁴ − b³)²", "(a⁶ − b⁴)²", "(a⁴)² − (b³)²", "(a⁶)² − (b⁴)²"],
+      "explanation": "Rewrite each term as a square: a⁸ = (a⁴)² and b⁶ = (b³)². Their difference is (a⁴)² − (b³)²; squaring a difference would introduce a cross term.",
+      "imageAlt": "Difference a to the eighth minus b to the sixth and four nested-power expressions are transcribed."
+    },
+    "16": {
+      "prompt": "The sum of 2√27 and 4√12 is",
+      "choices": ["14√3", "34√3", "6√39", "8√39"],
+      "explanation": "Simplify each radical: 2√27 = 2·3√3 = 6√3, and 4√12 = 4·2√3 = 8√3. Their sum is 14√3.",
+      "imageAlt": "Radical terms two square roots of 27 and four square roots of 12, plus all radical result choices, are transcribed."
+    },
+    "17": {
+      "prompt": "Tim's age plus Jack's age is 44. Tim's age is 4 less than 7 times Jack's age, x. Which equation models this scenario?",
+      "choices": ["(7x − 4) + x = 44", "(4 − 7x) + x = 44", "7x − 4 = 44", "4 − 7x = 44"],
+      "explanation": "Jack is x years old, and Tim is 7x − 4 years old. Their ages sum to 44, so (7x − 4) + x = 44.",
+      "imageAlt": "Age relationship and four equations are fully transcribed, preserving the subtraction order."
+    },
+    "18": {
+      "prompt": "Given g(x) = 2^(x + 3)/(x² − 2), what is g(−2)?",
+      "choices": ["1", "1/3", "−1", "−1/3"],
+      "explanation": "Substitute x = −2: the numerator is 2^(−2 + 3) = 2, and the denominator is (−2)² − 2 = 2. Thus g(−2) = 2/2 = 1.",
+      "imageAlt": "Fraction with numerator two raised to x plus 3 and denominator x squared minus 2; negative-two input and all signed fraction choices are transcribed."
+    },
+    "19": {
+      "prompt": "Four graphs A–D are shown. Which graphs represent a function?",
+      "choices": ["A, only", "A and B, only", "A, B, and C, only", "A, B, C, and D"],
+      "explanation": "A downward-opening parabola (A) and a horizontal line (B) each pass the vertical-line test. The vertical line (C) and circle (D) have x-values with multiple y-values, so they are not functions.",
+      "imageAlt": "Graph A is a downward-opening parabola centered on the y-axis. B is a horizontal line above the x-axis. C is a vertical line right of the y-axis. D is a circle centered on the origin."
+    },
+    "20": {
+      "prompt": "Kinetic energy is K = (1/2)mv², where m is mass and v is velocity. What is m in terms of K and v?",
+      "choices": ["m = 2K/v²", "m = 2Kv²", "m = √(2Kv²)", "m = K/(2v²)"],
+      "explanation": "Multiply K = (1/2)mv² by 2 to get 2K = mv², then divide by v²: m = 2K/v².",
+      "imageAlt": "Kinetic-energy formula and all four expressions for m are transcribed with fraction denominators and radicals."
+    },
+    "21": {
+      "prompt": "The solution to 2(3x − 1)/3 = x + 2 is",
+      "choices": ["1/3", "2/3", "4/3", "8/3"],
+      "explanation": "Multiply both sides by 3: 2(3x − 1) = 3x + 6. Then 6x − 2 = 3x + 6, so 3x = 8 and x = 8/3.",
+      "imageAlt": "Equation with entire numerator 2 times (3x minus 1) over denominator 3, and four fractional choices, is transcribed."
+    },
+    "22": {
+      "prompt": "Which equation represents the sequence 12, 6, 3, 3/2, …, where a₁ = 12?",
+      "choices": ["aₙ = 12·(1/2)^(n−1)", "aₙ = 12·(1/2)^n", "aₙ = 12·2^(n−1)", "aₙ = 12·2^n"],
+      "explanation": "Each term is half the preceding term, so the common ratio is 1/2. A geometric sequence starting with 12 has aₙ = 12(1/2)^(n−1), which gives 12 at n = 1.",
+      "imageAlt": "Sequence twelve, six, three, three-halves and four geometric formulas with exponent n versus n-minus-one are transcribed."
+    },
+    "23": {
+      "prompt": "Which quadratic function has axis of symmetry x = 2? The choices include a graph of f(x), a formula j(x) = 2x² + 8x, a table for g(x), and a formula h(x) = x² − 4x − 5.",
+      "choices": ["Graph of f(x): upward-opening parabola with vertex at x = 3", "j(x) = 2x² + 8x", "Table of g(x): (−2,6), (−1,3), (0,2), (1,3), (2,6)", "h(x) = x² − 4x − 5"],
+      "explanation": "For h(x) = x² − 4x − 5, the axis is x = −b/(2a) = 4/2 = 2. The graph's vertex is at x = 3, the j formula has axis x = −2, and the g table is symmetric about x = 0.",
+      "imageAlt": "Choice 1 is a parabola with vertex three units right of the y-axis. Choice 2 is j(x)=2x²+8x. Choice 3 is the five-row g table with x −2 to 2 and outputs 6,3,2,3,6. Choice 4 is h(x)=x²−4x−5."
+    },
+    "24": {
+      "prompt": "A freight train passes Anna's house at 49 miles per hour. Each railroad car is 56 feet long. Which expression represents the number of railroad cars passing her house per minute?",
+      "choices": ["(49 mi/1 hr)·(1 mi/5280 ft)·(1 hr/60 min)·(1 car/56 ft)", "(49 mi/1 hr)·(1 mi/5280 ft)·(60 min/1 hr)·(1 car/56 ft)", "(49 mi/1 hr)·(5280 ft/1 mi)·(1 hr/60 min)·(1 car/56 ft)", "(49 mi/1 hr)·(5280 ft/1 mi)·(60 min/1 hr)·(1 car/56 ft)"],
+      "explanation": "Convert miles to feet with 5280 ft/mi, hours to minutes with 1 hr/60 min, then feet to cars with 1 car/56 ft. In the third expression all intermediate units cancel, leaving cars per minute.",
+      "imageAlt": "All four chains of unit fractions are transcribed with numerators and denominators; initial speed 49 miles per hour and car length 56 feet are retained."
+    }
+  }
+}

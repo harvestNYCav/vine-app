@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "05724ada9fb954fe5caf9171576cc6136ceb8fcbf4827b84d254d63b259da45a",
+  "questions": {
+    "1": {
+      "prompt": "A computer repair business pays one employee $22 per hour and models weekly profit as P(x)=8600−22x. What does x represent?",
+      "choices": ["computers repaired per week", "hours worked per week", "customers served per week", "days worked per week"],
+      "explanation": "Multiplying the hourly wage $22 by x gives the weekly wage cost subtracted from profit, so x must count hours worked that week.",
+      "imageAlt": "Hourly employee wage twenty-two dollars and profit model eight thousand six hundred minus twenty-two x are transcribed with all four units for x."
+    },
+    "2": {
+      "prompt": "To convert a 40-yard dash in 4.5 seconds to miles per hour, Peyton multiplies 40 yd/4.5 sec by 3 ft/1 yd, 5280 ft/1 mi, 60 sec/1 min, and 60 min/1 hr. Which conversion ratio is upside down?",
+      "choices": ["3 ft/1 yd", "5280 ft/1 mi", "60 sec/1 min", "60 min/1 hr"],
+      "explanation": "After yards cancel, the quantity has feet in its numerator. To convert feet to miles, use 1 mi/5280 ft so feet cancel; Peyton instead wrote the inverse.",
+      "imageAlt": "Entire five-factor unit-conversion product is transcribed with every numerator and denominator and all four candidate ratio choices."
+    },
+    "3": {
+      "prompt": "Which equation has the same solutions as 2x²+x−3=0?",
+      "choices": ["(2x−1)(x+3)=0", "(2x+1)(x−3)=0", "(2x−3)(x+1)=0", "(2x+3)(x−1)=0"],
+      "explanation": "Expand (2x+3)(x−1)=2x²+x−3, so its zero-product equation is equivalent to the original.",
+      "imageAlt": "Original quadratic and all four two-factor equations are transcribed with coefficients and signs."
+    },
+    "4": {
+      "prompt": "Krystal received $3000 at age 2, invested at 2% interest compounded annually with no deposits or withdrawals. Which expression gives the balance at age 18?",
+      "choices": ["3000(1+0.02)¹⁶", "3000(1−0.02)¹⁶", "3000(1+0.02)¹⁸", "3000(1−0.02)¹⁸"],
+      "explanation": "The deposit grows for 18−2=16 years at 2% per year. Compound growth uses multiplier 1.02, so the balance is 3000(1.02)¹⁶.",
+      "imageAlt": "Initial deposit three thousand dollars, ages two and eighteen, annual two-percent compounding, and all four growth-or-decay expressions with exponents sixteen or eighteen are transcribed."
+    },
+    "5": {
+      "prompt": "For x=−1,0,1,2,3, which f(x) table is linear?",
+      "choices": ["−3,−2,1,6,13", "1/2,1,2,4,8", "−3,−1,1,3,5", "−1,0,1,8,27"],
+      "explanation": "In choice 3, consecutive output differences are all +2 as x increases by 1. The other tables do not have constant first differences.",
+      "imageAlt": "Shared x inputs negative one through three and every output from all four tables are transcribed, including the one-half fraction and negative numbers."
+    },
+    "6": {
+      "prompt": "A function predicts the number of household online devices from the number of people in the household. What is the most appropriate input domain?",
+      "choices": ["integers", "whole numbers", "irrational numbers", "rational numbers"],
+      "explanation": "A household cannot contain a negative or fractional number of people. Whole numbers are the listed domain that permits nonnegative complete counts.",
+      "imageAlt": "Input is a count of people in a household; all four number-set domain choices are transcribed."
+    },
+    "7": {
+      "prompt": "Solve 7−(2/3)x<x−8.",
+      "choices": ["x>9", "x>−3/5", "x<9", "x<−3/5"],
+      "explanation": "Add 8 and (2/3)x to both sides: 15<(5/3)x. Multiply by positive 3/5 to get 9<x, or x>9.",
+      "imageAlt": "Strict inequality seven minus two-thirds x less than x minus eight and four strict bound choices are transcribed, preserving fraction signs."
+    },
+    "8": {
+      "prompt": "A car is worth v(x)=25,000(0.86)^x dollars after x years. To the nearest dollar, how much more is it worth after 2 years than after 3?",
+      "choices": ["2589", "6510", "15,901", "18,490"],
+      "explanation": "Subtract the third-year value from the second-year value: 25,000(0.86²−0.86³)=2,588.60, which rounds to $2,589.",
+      "imageAlt": "Exponential car-value model twenty-five thousand times zero-point-eight-six to the x, years two and three, and four dollar amounts are transcribed."
+    },
+    "9": {
+      "prompt": "A line on a coordinate graph crosses the y-axis at −3. Which function has the same y-intercept?",
+      "choices": ["y=(12−6x)/4", "27+3y=6x", "6y+x=18", "y+3=6x"],
+      "explanation": "At x=0, choice 4 gives y+3=0, so y=−3. The other equations have y-intercepts 3, −9, and 3.",
+      "imageAlt": "Graphed line crosses y-axis at negative three and rises to the right; four full algebraic equations are transcribed with fractions and signs."
+    },
+    "10": {
+      "prompt": "A rectangular paper has length 2x−6 and width 3x−5. Which expression is its area?",
+      "choices": ["5x−11", "6x²−28x+30", "10x−22", "6x²−6x−11"],
+      "explanation": "Multiply the dimensions: (2x−6)(3x−5)=6x²−10x−18x+30=6x²−28x+30.",
+      "imageAlt": "Both binomial dimensions and four area-expression choices are transcribed with all terms and exponents."
+    },
+    "11": {
+      "prompt": "A line passes through (3,11) and (−2,1). Which listed point is also on it?",
+      "choices": ["(2,1)", "(2,4)", "(2,6)", "(2,9)"],
+      "explanation": "Its slope is (11−1)/(3−(−2))=2, so the line is y=2x+5. At x=2 it has y=9.",
+      "imageAlt": "Both given coordinate points and all four candidate points with common x-coordinate two are transcribed."
+    },
+    "12": {
+      "prompt": "How does f(x)=3(x−2)²+1 compare with g(x)=x²?",
+      "choices": ["f is wider; vertex left 2 and up 1", "f is narrower; vertex right 2 and up 1", "f is narrower; vertex left 2 and up 1", "f is wider; vertex right 2 and up 1"],
+      "explanation": "The factor 3 vertically stretches the parabola, making it narrower. Replacing x by x−2 moves its vertex right 2, and adding 1 moves it up 1.",
+      "imageAlt": "Full transformed and parent quadratic formulas and four complete width-and-vertex-shift descriptions are transcribed."
+    },
+    "13": {
+      "prompt": "Carnival admission costs $4.50 plus $0.79 per ride. Connor can spend at most $16.00. Which inequality models r rides, and what is the maximum whole number of rides?",
+      "choices": ["0.79+4.50r≤16; 3 rides", "0.79+4.50r≤16; 4 rides", "4.50+0.79r≤16; 14 rides", "4.50+0.79r≤16; 15 rides"],
+      "explanation": "The admission is fixed, so 4.50+0.79r≤16. This gives r≤11.50/0.79≈14.56, hence the maximum whole number is 14 rides.",
+      "imageAlt": "Admission, per-ride price, at-most budget, and all four complete inequality-and-ride-count pairs are transcribed."
+    },
+    "14": {
+      "prompt": "Four box plots compare daily high temperatures. Ocean Beach has median about 77°F and IQR about 6°F; Whispering Palms median about 87°F and IQR about 10°F; Serene Shores median about 78°F and IQR about 3°F; Pelican Beach median about 85°F and IQR about 4°F. Which has median above 80°F and the smallest IQR?",
+      "choices": ["Ocean Beach", "Whispering Palms", "Serene Shores", "Pelican Beach"],
+      "explanation": "Only Whispering Palms and Pelican Beach have median temperatures above 80°F. Pelican Beach's box, measuring the interquartile range, is much narrower, so it has the smaller IQR.",
+      "imageAlt": "All four box plots are summarized with approximate median and box width on a common 70–100°F scale; candidate destinations are named in answer order."
+    },
+    "15": {
+      "prompt": "An inactive savings account has value y=5000(0.98)^x dollars after x years. What is the y-intercept and what does it mean?",
+      "choices": ["0.98, the percent of money initially", "0.98, the percent after x years", "5000, the initial account amount", "5000, the amount after x years"],
+      "explanation": "The y-intercept occurs at x=0. Since 0.98⁰=1, y=5000, the balance at the start of the period.",
+      "imageAlt": "Account value model five thousand times zero-point-nine-eight to the x and four intercept-and-meaning statements are transcribed."
+    },
+    "16": {
+      "prompt": "Given cylinder volume V=πr²h, solve for the positive radius r in terms of V and h.",
+      "choices": ["r=√(V/(πh))", "r=√(Vπh)", "r=2Vπh", "r=V/(2π)"],
+      "explanation": "Divide by πh to get r²=V/(πh). The positive radius is the principal square root, r=√(V/(πh)).",
+      "imageAlt": "Cylinder volume formula with radius squared and four candidate radius formulas are transcribed, preserving root scope and denominators."
+    },
+    "17": {
+      "prompt": "Which completed-square equation has the same solutions as x²+6x−7=0?",
+      "choices": ["(x+3)²=2", "(x−3)²=2", "(x−3)²=16", "(x+3)²=16"],
+      "explanation": "Rearrange to x²+6x=7 and add 9 on both sides: (x+3)²=16.",
+      "imageAlt": "Original quadratic and four completed-square equations retain the inside plus-or-minus sign and right-hand constants."
+    },
+    "18": {
+      "prompt": "Find the point satisfying both y=|x−3| and 3x+3y=27.",
+      "choices": ["(3,0), because it satisfies the absolute-value equation", "(9,0), because it satisfies the linear equation", "(6,3), because it satisfies both equations", "(3,0), (9,0), and (6,3), because each satisfies at least one equation"],
+      "explanation": "At (6,3), |6−3|=3 and 3·6+3·3=27. Each of the other named points satisfies only one equation, but a system solution must satisfy both.",
+      "imageAlt": "Both complete equations and all four full candidate-coordinate statements are transcribed; the distinction between one equation and both is retained."
+    },
+    "19": {
+      "prompt": "Miriam models bacteria by f(t)=n^(2t) and begins with n=16. Jessica models by g(t)=n^(4t). Which n makes Jessica's model match Miriam's for all t?",
+      "choices": ["32", "16", "8", "4"],
+      "explanation": "Miriam's function is 16^(2t)=(4²)^(2t)=4^(4t). Jessica must use base n=4 to get the same expression.",
+      "imageAlt": "Both exponential functions retain whole exponents two t and four t, Miriam's base sixteen, and all four possible Jessica bases are transcribed."
+    },
+    "20": {
+      "prompt": "A sequence has f(0)=2 and f(n+1)=−2f(n)+3 for n≥0. What is f(2)?",
+      "choices": ["1", "−11", "5", "17"],
+      "explanation": "Apply the recurrence twice: f(1)=−2·2+3=−1, then f(2)=−2(−1)+3=5.",
+      "imageAlt": "Starting value at n zero, signed recurrence negative two times previous term plus three, and four signed choices are transcribed."
+    },
+    "21": {
+      "prompt": "On the Moon a dropped rock's distance after t seconds is d(t)=0.8t² meters. What is its average speed from t=5 to t=10 seconds?",
+      "choices": ["12 m/s", "20 m/s", "60 m/s", "80 m/s"],
+      "explanation": "The rock travels d(10)=80 m and d(5)=20 m. The 60-meter increase over five seconds gives average speed 60/5=12 m/s.",
+      "imageAlt": "Distance model zero-point-eight t squared, five- to ten-second interval, and four speed values are transcribed."
+    },
+    "22": {
+      "prompt": "Factor p⁴−81 completely.",
+      "choices": ["(p²+9)(p²−9)", "(p²−9)(p²−9)", "(p²+9)(p+3)(p−3)", "(p+3)(p−3)(p+3)(p−3)"],
+      "explanation": "First use difference of squares: p⁴−81=(p²+9)(p²−9). Then factor p²−9=(p+3)(p−3). Over the reals, p²+9 does not factor further.",
+      "imageAlt": "Fourth power of p minus eighty-one and all four complete factorizations retain squared factors, repeated factors, and signs."
+    },
+    "23": {
+      "prompt": "In 2013 a letter up to 1 oz cost $0.46 to mail, plus $0.20 for each additional ounce. For integer weight z>1 ounces, which function gives cost c(z)?",
+      "choices": ["c(z)=0.46z+0.20", "c(z)=0.20z+0.46", "c(z)=0.46(z−1)+0.20", "c(z)=0.20(z−1)+0.46"],
+      "explanation": "The first ounce costs $0.46. There are z−1 additional ounces at $0.20 each, so c(z)=0.46+0.20(z−1).",
+      "imageAlt": "First-ounce cost forty-six cents, additional-ounce cost twenty cents, integer weight z greater than one, and all four complete cost formulas are transcribed."
+    },
+    "24": {
+      "prompt": "A polynomial has factors x, x−2, and x+5, so its zeros include 0, 2, and −5. Which of three graphed curves could represent it?",
+      "choices": ["Graph I only", "Graph II only", "Graphs I and III", "Graphs I, II, and III"],
+      "explanation": "Every specified factor makes the polynomial zero at its root. Graph I crosses the x-axis near −5, 0, and 2. Graph II is a parabola without all three intercepts, and Graph III crosses at different nonzero x-values.",
+      "imageAlt": "Graph I is a cubic crossing near x negative five, zero, and positive two. Graph II is a downward parabola with two intercepts. Graph III is a cubic crossing near negative two, zero, and positive five. All four graph-group choices are transcribed."
+    }
+  }
+}

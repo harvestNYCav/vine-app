@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "21d3be9eaa02e5d73b6f0c2aff7cf4df046d32f3cb21d3ad197a64f0de1bcf17",
+  "questions": {
+    "1": {
+      "prompt": "A carnival booth owner's profits declined only while he sold between 10 and 40 tickets. Which profit-versus-tickets graph could match?",
+      "choices": ["rises to 10 tickets, stays level through 40, then jumps and rises", "increases throughout ticket sales", "decreases from 10 to 40 tickets, then increases", "increases, then decreases for part of 20–50 tickets, then increases"],
+      "explanation": "Only the third graph slopes downward throughout the 10-to-40-ticket interval and slopes upward afterward. The others either rise or remain flat there, or decline over a different interval.",
+      "imageAlt": "Four profit-versus-number-of-tickets graphs are described in choices; both axes are labeled profit in tens of dollars and tickets sold. The third curve falls from approximately (10,3) to (40,1) then rises."
+    },
+    "2": {
+      "prompt": "A rectangular prism has surface area A=2ℓw+2hw+2ℓh. Which term does not depend on height h?",
+      "choices": ["A", "2ℓw", "2hw", "2ℓh"],
+      "explanation": "The term 2ℓw contains only length and width. The other two terms contain h, and total A changes when h changes.",
+      "imageAlt": "Full surface-area expression and four candidate terms are transcribed with length ell, width w, and height h distinguished."
+    },
+    "3": {
+      "prompt": "Which graph represents y=√(x−2)?",
+      "choices": ["upward parabola with vertex (0,−2)", "rising straight line", "upward parabola with vertex (0,2)", "square-root curve beginning at (2,0) and rising rightward"],
+      "explanation": "The radicand requires x−2≥0, so the graph begins at x=2 with y=0. A square-root function then rises to the right and flattens, matching the fourth graph.",
+      "imageAlt": "Radical bar covers the entire x minus two. Four graph choices are described, including two parabolas, a line, and a square-root curve beginning at positive x two."
+    },
+    "4": {
+      "prompt": "A sleep study plots average daily hours slept against age. Its line of best fit is y=−0.09x+9.24, where x is age in years. What does the rate of change mean?",
+      "choices": ["sleep increases 0.09 hour per year of age", "sleep decreases 0.09 hour per year of age", "sleep increases 9.24 hours per year of age", "sleep decreases 9.24 hours per year of age"],
+      "explanation": "The slope is −0.09 hour per year. Its negative sign indicates less average sleep as age rises, by about 0.09 hour for each additional year.",
+      "imageAlt": "Scatter plot shows a downward association between age about eight to thirty years and average sleep about eight-and-a-half to six-and-three-quarters hours. Model y equals negative 0.09 x plus 9.24 and four slope interpretations are transcribed."
+    },
+    "5": {
+      "prompt": "For f(x)=−2x²+32, Lynn says f(3)=14, Jude says 4, and Anne says ±4. Who is correct?",
+      "choices": ["Lynn only", "Jude only", "Anne only", "both Lynn and Jude"],
+      "explanation": "Evaluate the one function value: f(3)=−2(3²)+32=−18+32=14. Lynn is correct; a function's output at this input is not ±4.",
+      "imageAlt": "Quadratic negative two x squared plus thirty-two, input three, all three students' stated answers, and four student-selection choices are transcribed."
+    },
+    "6": {
+      "prompt": "Which expression is equivalent to 16x⁴−64?",
+      "choices": ["(4x²−8)²", "(8x²−32)²", "(4x²+8)(4x²−8)", "(8x²+32)(8x²−32)"],
+      "explanation": "Use difference of squares: 16x⁴−64=(4x²)²−8²=(4x²+8)(4x²−8).",
+      "imageAlt": "Fourth-power expression sixteen x to the fourth minus sixty-four and all four squared or factored candidates are transcribed with powers and coefficients."
+    },
+    "7": {
+      "prompt": "Bacteria population graph passes through (h,P)=(0,4),(1,8),(2,16),(3,32). Which equation represents it?",
+      "choices": ["P(h)=4(2)ʰ", "P(h)=(46/5)h+6/5", "P(h)=3h²+0.2h+4.2", "P(h)=(2/3)h³−h²+3h+4"],
+      "explanation": "The starting population is 4 and it doubles each hour: 4,8,16,32. The exponential rule is P(h)=4·2ʰ.",
+      "imageAlt": "Exponential-looking population curve with all four labeled points zero comma four, one comma eight, two comma sixteen, three comma thirty-two; four full candidate formulas are transcribed."
+    },
+    "8": {
+      "prompt": "Solve y=2x+8 and 3(−2x+y)=12.",
+      "choices": ["no solution", "infinitely many solutions", "(−1,6)", "(1/2,9)"],
+      "explanation": "Divide the second equation by 3 to get −2x+y=4, or y=2x+4. This line and y=2x+8 have the same slope but different intercepts, so they never meet.",
+      "imageAlt": "Both complete equations and four answer choices, including two ordered pairs and no/infinite-solution options, are transcribed."
+    },
+    "9": {
+      "prompt": "A mapping shows Jan→31, Feb→28 and 29, Mar→31, and Apr→30. Is it a function, and why?",
+      "choices": ["function because Feb has two outputs", "function because Jan and Mar share output 31", "not a function because Feb has two outputs", "not a function because Jan and Mar share output 31"],
+      "explanation": "A function gives each input exactly one output. February maps to both 28 and 29, so this mapping is not a function. Different inputs sharing 31 is allowed.",
+      "imageAlt": "Complete month-to-number mapping is transcribed: January to 31; February to both 28 and 29; March to 31; April to 30. All four function-classification statements are transcribed."
+    },
+    "10": {
+      "prompt": "Which polynomial function has zeros at −3, 0, and 4?",
+      "choices": ["f(x)=(x+3)(x²+4)", "f(x)=(x²−3)(x−4)", "f(x)=x(x+3)(x−4)", "f(x)=x(x−3)(x+4)"],
+      "explanation": "A zero r corresponds to factor x−r. Thus zeros −3, 0, and 4 require factors x+3, x, and x−4, giving x(x+3)(x−4).",
+      "imageAlt": "Three specified zeros and four complete factored polynomial formulas are transcribed, preserving signs and squared terms."
+    },
+    "11": {
+      "prompt": "Jordan earns $12 per mowing hour m and $14 per gardening hour g. He can work at most 40 hours and wants at least $250. Which system represents this?",
+      "choices": ["m+g≤40; 12m+14g≥250", "m+g≥40; 12m+14g≤250", "m+g≤40; 12m+14g≤250", "m+g≥40; 12m+14g≥250"],
+      "explanation": "At most 40 hours means m+g≤40. At least $250 of earnings means 12m+14g≥250.",
+      "imageAlt": "Hourly pay rates, mowing and gardening variables, maximum forty hours, minimum $250, and four complete inequality systems are transcribed with inclusive signs."
+    },
+    "12": {
+      "prompt": "Anne deposits $1000 at 1.3% annual interest, compounded yearly for two years without deposits or withdrawals. Which balance equation applies?",
+      "choices": ["A=1000(1−0.013)²", "A=1000(1+0.013)²", "A=1000(1−1.3)²", "A=1000(1+1.3)²"],
+      "explanation": "Convert 1.3% to 0.013 and add it to 1 for yearly growth. Two compounding periods give A=1000(1.013)².",
+      "imageAlt": "One-thousand-dollar principal, 1.3 percent annual rate, two years of annual compounding, and four candidate equations are transcribed with signs and decimals."
+    },
+    "13": {
+      "prompt": "Which listed value satisfies 47−4x<7?",
+      "choices": ["−13", "−10", "10", "11"],
+      "explanation": "Subtract 47: −4x<−40. Divide by −4 and reverse the inequality to get x>10, so 11 is the only listed solution.",
+      "imageAlt": "Strict inequality forty-seven minus four x less than seven and four signed integer candidates are transcribed."
+    },
+    "14": {
+      "prompt": "Which correlation coefficient indicates the strongest linear relationship?",
+      "choices": ["0.9", "0.5", "−0.3", "−0.8"],
+      "explanation": "Strength depends on the absolute value of r, not its sign. Of 0.9, 0.5, −0.3, and −0.8, the magnitude 0.9 is closest to 1.",
+      "imageAlt": "Four signed decimal correlation coefficients are transcribed."
+    },
+    "15": {
+      "prompt": "Twelve students' heights in inches are 61,67,72,62,65,59,60,79,60,61,64,63. Which statement best describes their spread?",
+      "choices": ["The data are evenly spread", "The median is 59.5", "The data are skewed because 59 is the only value below 60", "79 is an outlier and affects the standard deviation"],
+      "explanation": "Sorted data are 59,60,60,61,61,62,63,64,65,67,72,79. The median is 62.5, and 79 is far above the main cluster. With Q1=60.5 and Q3=66, the upper outlier fence is 74.25, so 79 is an outlier that increases spread measures such as standard deviation.",
+      "imageAlt": "All twelve height values and four complete statements are transcribed, preserving the high value seventy-nine and proposed median fifty-nine point five."
+    },
+    "16": {
+      "prompt": "A downward-opening parabola has vertex (15,25) and x-intercepts near 8 and 22. Which equation could represent it?",
+      "choices": ["q(x)=(1/2)(x+15)²−25", "q(x)=−(1/2)(x+15)²−25", "q(x)=(1/2)(x−15)²+25", "q(x)=−(1/2)(x−15)²+25"],
+      "explanation": "Vertex form is a(x−h)²+k. The graph's vertex gives h=15,k=25; opening downward requires a<0. The fourth equation has these features and x-intercepts near 15±√50≈8 and 22, consistent with the sketch.",
+      "imageAlt": "Parabola opens downward and peaks at x fifteen, y twenty-five; the x-axis crossings are near eight and twenty-two on the graph. All four vertex-form equations are transcribed with plus/minus signs and one-half coefficients."
+    },
+    "17": {
+      "prompt": "Table g has values g(0)=4,g(1)=−1,g(2)=−4,g(3)=−5,g(4)=−4,g(5)=−1,g(6)=4. Compare it with f(x)=(x−3)²+2. Which statement is true?",
+      "choices": ["same vertex", "same zeros", "same axis of symmetry", "intersect at two points"],
+      "explanation": "The g table mirrors around x=3 and has vertex (3,−5). The f equation has vertex (3,2). Their vertices differ, but both axes of symmetry are x=3.",
+      "imageAlt": "Full seven-row quadratic table is transcribed, symmetric about x three with minimum negative five; comparison quadratic is quantity x minus three squared plus two. Four relationship statements are transcribed."
+    },
+    "18": {
+      "prompt": "A sequence has f(1)=2 and f(n)=−5f(n−1)+2. Which set could be its range?",
+      "choices": ["{2,4,6,8,…}", "{2,−8,42,−208,…}", "{−8,−42,−208,1042,…}", "{−10,50,−250,1250,…}"],
+      "explanation": "Apply the recurrence: f(2)=−5(2)+2=−8, f(3)=−5(−8)+2=42, and f(4)=−5(42)+2=−208. The second set begins with these values.",
+      "imageAlt": "Initial value, recursive rule multiplying the previous term by negative five then adding two, and all four sequence sets are transcribed."
+    },
+    "19": {
+      "prompt": "Solve 4(x−7)=0.3(x+2)+2.11.",
+      "choices": ["8.3", "8.7", "3", "−3"],
+      "explanation": "Expand: 4x−28=0.3x+0.6+2.11=0.3x+2.71. Thus 3.7x=30.71 and x=8.3.",
+      "imageAlt": "Equation four times quantity x minus seven equals 0.3 times quantity x plus two plus 2.11, and four candidate solutions are transcribed."
+    },
+    "20": {
+      "prompt": "A worker must move 120 ft³ of dirt. Each wheelbarrow load carries 8 ft³ and takes 10 minutes. Which conversion product gives the hours needed?",
+      "choices": ["(120 ft³/1)·(10 min/1 load)·(60 min/1 hr)·(1 load/8 ft³)", "(120 ft³/1)·(60 min/1 hr)·(8 ft³/10 min)·(1/1 load)", "(120 ft³/1)·(1 load/10 min)·(8 ft³/1 load)·(1 hr/60 min)", "(120 ft³/1)·(1 load/8 ft³)·(10 min/1 load)·(1 hr/60 min)"],
+      "explanation": "Start with 120 ft³, multiply by 1 load/8 ft³, then 10 min/1 load, then 1 hr/60 min. Each intermediate unit cancels, leaving hours: 120/8·10/60=2.5 hours.",
+      "imageAlt": "All four full dimensional-analysis chains are transcribed with 120 cubic feet, eight cubic feet per load, ten minutes per load, and sixty minutes per hour; only one cancels cubic feet, loads, and minutes to leave hours."
+    },
+    "21": {
+      "prompt": "What kind of change characterizes every linear function over equal input intervals?",
+      "choices": ["equal factors", "unequal factors", "equal differences", "unequal differences"],
+      "explanation": "A linear function has a constant rate of change, so equal changes in input produce equal additive differences in output.",
+      "imageAlt": "Four alternatives compare equal or unequal factors versus differences over equal intervals."
+    },
+    "22": {
+      "prompt": "Solve x²−8x=10.",
+      "choices": ["4±√10", "4±√26", "−4±√10", "−4±√26"],
+      "explanation": "Complete the square by adding 16: (x−4)²=26. Taking square roots gives x−4=±√26, or x=4±√26.",
+      "imageAlt": "Quadratic equation x squared minus eight x equals ten and four plus-or-minus radical solution forms are transcribed."
+    },
+    "23": {
+      "prompt": "Blood flow rate is F=(p₁−p₂)/r, where p₁ is initial pressure, p₂ final pressure, and r resistance. Which formula cannot be derived?",
+      "choices": ["p₁=Fr+p₂", "p₂=p₁−Fr", "r=F(p₂−p₁)", "r=(p₁−p₂)/F"],
+      "explanation": "Multiplying by r gives Fr=p₁−p₂, so r=(p₁−p₂)/F. This also rearranges to choices 1 and 2. Choice 3 reverses the pressure difference and multiplies by F, so it is not equivalent.",
+      "imageAlt": "Original blood-flow fraction has initial pressure minus final pressure over resistance. Four rearranged formulas are transcribed with subscripts, fraction bars, and order of subtraction preserved."
+    },
+    "24": {
+      "prompt": "A thrown ball's height is h(t)=−16t²+24t feet, t seconds after release. What is the physically relevant time domain while the ball is in flight?",
+      "choices": ["0≤t≤1.5", "0≤t≤9", "0≤h(t)≤1.5", "0≤h(t)≤9"],
+      "explanation": "The ball is released at t=0 and returns to the ground when −16t²+24t=0, or t(−16t+24)=0. The second root is t=24/16=1.5 seconds, so time runs from 0 through 1.5.",
+      "imageAlt": "Height function negative sixteen t squared plus twenty-four t, with t in seconds and h in feet; four choices distinguish time t from height h and endpoints 1.5 versus 9."
+    }
+  }
+}

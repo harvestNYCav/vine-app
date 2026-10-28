@@ -1,0 +1,41 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "Read “Carmel Point” and answer questions 10–14. Vocabulary notes follow the poem.",
+    "questionIds": ["english-2018-june-q10", "english-2018-june-q11", "english-2018-june-q12", "english-2018-june-q13", "english-2018-june-q14"],
+    "passage": {
+      "title": "Carmel Point",
+      "credit": "—Robinson Jeffers · The Collected Poetry of Robinson Jeffers, Volume Three (1991), Stanford University Press",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "The extraordinary patience of things!"},
+        {"number": 2, "text": "This beautiful place defaced with a crop of surburban houses —"},
+        {"number": 3, "text": "How beautiful when we first beheld it,"},
+        {"number": 4, "text": "Unbroken field of poppy and lupin¹ walled with clean cliffs;"},
+        {"number": 5, "text": "No intrusion but two or three horses pasturing,"},
+        {"number": 6, "text": "Or a few milch² cows rubbing their flanks on the outcrop³ rock-heads —"},
+        {"number": 7, "text": "Now the spoiler has come: does it care?"},
+        {"number": 8, "text": "Not faintly. It has all time. It knows the people are a tide"},
+        {"number": 9, "text": "That swells and in time will ebb, and all"},
+        {"number": 10, "text": "Their works dissolve. Meanwhile the image of the pristine⁴ beauty"},
+        {"number": 11, "text": "Lives in the very grain of the granite,"},
+        {"number": 12, "text": "Safe as the endless ocean that climbs our cliff. — As for us:"},
+        {"number": 13, "text": "We must uncenter our minds from ourselves;"},
+        {"number": 14, "text": "We must unhumanize our views a little, and become confident"},
+        {"number": 15, "text": "As the rock and ocean that we were made from."},
+        {"number": null, "text": ""},
+        {"number": null, "text": "¹ poppy and lupin — brightly colored wildflowers"},
+        {"number": null, "text": "² milch — milk"},
+        {"number": null, "text": "³ outcrop — protruding"},
+        {"number": null, "text": "⁴ pristine — pure, unspoiled"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id":"english-2018-june-q10","number":10,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The word “defaced” (line 2) suggests that the narrator is","choices":[{"label":"1","text":"suspicious"},{"label":"2","text":"confused"},{"label":"3","text":"worried"},{"label":"4","text":"critical"}],"correct":"4","explanation":"“Defaced” means damaged in appearance. The narrator judges the new houses as spoiling a beautiful landscape, which conveys criticism.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-june-q11","number":11,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The description in lines 3 through 6 creates a mood of","choices":[{"label":"1","text":"despair"},{"label":"2","text":"amusement"},{"label":"3","text":"tranquility"},{"label":"4","text":"negativity"}],"correct":"3","explanation":"The open field, wildflowers, cliffs, and peacefully grazing animals evoke calm natural beauty, creating a tranquil mood.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-june-q12","number":12,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The metaphor in lines 8 through 10 suggests that","choices":[{"label":"1","text":"humanity’s impact is beneficial"},{"label":"2","text":"nature’s power is limited"},{"label":"3","text":"humanity’s influence is temporary"},{"label":"4","text":"nature’s significance is exaggerated"}],"correct":"3","explanation":"People are compared to a tide that swells and then ebbs, while their works dissolve. The metaphor suggests that human changes will not last forever.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-june-q13","number":13,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The words “uncenter” (line 13) and “unhumanize” (line 14) suggest that people should","choices":[{"label":"1","text":"become more tolerant"},{"label":"2","text":"recognize their superiority"},{"label":"3","text":"uphold their values"},{"label":"4","text":"become less egocentric"}],"correct":"4","explanation":"The narrator asks people to shift their minds away from themselves and consider the larger, enduring natural world, rather than making humanity the center of everything.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-june-q14","number":14,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The narrator implies that humans are","choices":[{"label":"1","text":"protective of their environment"},{"label":"2","text":"unaware of their insignificance"},{"label":"3","text":"perplexed by their surroundings"},{"label":"4","text":"satisfied with their indifference"}],"correct":"2","explanation":"The narrator contrasts temporary human works with enduring rock and ocean and urges people to stop centering themselves. This implies that people often fail to see how small their role is in nature’s long timescale.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

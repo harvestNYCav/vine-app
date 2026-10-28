@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "0bcf8f919ea161fec9c09c2b4f9b1308c76c13f3a2336d77fd84737cb5d162b7",
+  "questions": {
+    "1": {
+      "prompt": "Parallel horizontal lines F-A-D and E-H-C are crossed by collinear A-B-H, and segment BC is drawn. If angle FAB = 48° and angle ECB = 18°, find angle ABC.",
+      "choices": ["18°", "48°", "66°", "114°"],
+      "explanation": "The parallel lines show BA makes a 48° angle above the rightward horizontal at B. Likewise BC makes an 18° angle below it. Angle ABC is the sum, 48° + 18° = 66°.",
+      "imageAlt": "Top horizontal line is F-A-D; lower parallel line is E-H-C. Diagonal A-B-H runs down-left from A to H, and segment B-C runs down-right, forming triangle BHC between the lines. Given angle FAB is at A between leftward AF and downward AB; angle ECB is at C between leftward CE and upward CB."
+    },
+    "2": {
+      "prompt": "A cone has volume 108π and base diameter 12. What is its height?",
+      "choices": ["27", "9", "3", "4"],
+      "explanation": "The radius is 6. Use 108π = (1/3)π(6²)h = 12πh, giving h = 9.",
+      "imageAlt": "Printed cone-volume question; volume and diameter are in accessible text."
+    },
+    "3": {
+      "prompt": "Triangle JGR is similar to triangle MST in that order. Which statement is not always true?",
+      "choices": ["angle J ≅ angle M", "angle G ≅ angle T", "angle R ≅ angle T", "angle G ≅ angle S"],
+      "explanation": "The order of similar triangles gives J↔M, G↔S, and R↔T. Angle G does not necessarily correspond to angle T, so that equality need not hold.",
+      "imageAlt": "Printed triangle-similarity question; ordered triangle names and all angle pairs are in accessible text."
+    },
+    "4": {
+      "prompt": "In parallelogram ABCD, diagonals AC and BD meet at E. Which statement proves ABCD is a rectangle?",
+      "choices": ["AC ≅ BD", "AB ⟂ BD", "AC ⟂ BD", "AC bisects angle BCD"],
+      "explanation": "A parallelogram with congruent diagonals is a rectangle. Perpendicular diagonals or angle-bisecting diagonals are associated with a rhombus instead.",
+      "imageAlt": "Printed parallelogram-property question; diagonals and candidate relations are in accessible text."
+    },
+    "5": {
+      "prompt": "Directed segment PQ runs from P(−7,−5) to Q(5,3). Point A divides it with PA:AQ = 1:3. What are A's coordinates?",
+      "choices": ["(−1,−1)", "(2,1)", "(3,2)", "(−4,−3)"],
+      "explanation": "A is one fourth of the way from P to Q. Q−P = (12,8), so one fourth is (3,2). Add to P(−7,−5) to get A(−4,−3).",
+      "imageAlt": "Printed directed-segment problem; signed coordinates and the 1:3 ratio are in accessible text."
+    },
+    "6": {
+      "prompt": "In trapezoid ABCD, AB is parallel to CD and diagonals AC and BD meet at E. If AE = 5.2, AC = 11.7, and CD = 10.5, find AB to the nearest tenth.",
+      "choices": ["4.7", "6.5", "8.4", "13.1"],
+      "explanation": "EC = AC−AE = 11.7−5.2 = 6.5. Parallel bases make triangles ABE and CDE similar, so AB/CD = AE/EC. Thus AB = 10.5(5.2/6.5) = 8.4.",
+      "imageAlt": "Trapezoid has short top base A-B and longer bottom base D-C, with AB parallel to DC. Diagonals A-C and D-B cross at interior point E."
+    },
+    "7": {
+      "prompt": "Similar right triangles ABC and DEF have right angles B and E. In ABC, BC = 15 cm and hypotenuse AC = 17 cm. Find angle F to the nearest degree.",
+      "choices": ["28°", "41°", "62°", "88°"],
+      "explanation": "The order of similarity gives angle F = angle C. In triangle ABC, cos C = BC/AC = 15/17, so angle C ≈ 28°.",
+      "imageAlt": "Triangle ABC has B lower left with right-angle mark, A above B, C lower right; horizontal BC is labeled 15 cm and sloping AC 17 cm. Smaller similar triangle DEF is shown at right with right angle E and F at lower left."
+    },
+    "8": {
+      "prompt": "Line 2y = x + 8 is dilated about the origin by factor k. Its image is y − (1/2)x = 2. What is k?",
+      "choices": ["1/2", "2", "1/4", "4"],
+      "explanation": "The original is y = (1/2)x + 4; its image is y = (1/2)x + 2. A dilation about the origin preserves slope but multiplies the intercept by k, so 4k = 2 and k = 1/2.",
+      "imageAlt": "Printed line-dilation question; both equations and fractional scale choices are in accessible text."
+    },
+    "9": {
+      "prompt": "In trapezoid ABCD, AB ∥ CD. E, H, and F are midpoints of AD, AC, and BC respectively. If AB = 24, CD = 18, and AH = 10, find FH.",
+      "choices": ["9", "10", "12", "21"],
+      "explanation": "In triangle ABC, H and F are the midpoints of AC and BC. Segment HF is a midsegment, so it is half of AB: FH = 24/2 = 12. The other given measurements are not needed.",
+      "imageAlt": "Trapezoid has bottom base AB and top base DC. Diagonal AC rises from A lower left to C upper right. E is midpoint of left side AD, H midpoint of AC, and F midpoint of right side BC; segment E-H-F spans horizontally."
+    },
+    "10": {
+      "prompt": "Cone A has twice the base radius of cone B, while cone B has twice the height of cone A. How do their volumes compare?",
+      "choices": ["A is twice B", "A is four times B", "A equals B", "A is half of B"],
+      "explanation": "Cone volume is proportional to r²h. Doubling A's radius gives a factor of 4, while its height is half B's, giving factor 1/2. Hence VA/VB = 4(1/2) = 2.",
+      "imageAlt": "Printed comparison of cone dimensions; both radius and height relationships are in accessible text."
+    },
+    "11": {
+      "prompt": "Which rotation maps a regular hexagon onto itself?",
+      "choices": ["45°", "90°", "120°", "135°"],
+      "explanation": "A regular hexagon has rotational symmetry every 360°/6 = 60°. Among the choices, 120° is a multiple of 60°.",
+      "imageAlt": "Printed regular-hexagon rotation question; all angles are in accessible text."
+    },
+    "12": {
+      "prompt": "In triangle MAH, MT is the perpendicular bisector of base AH. Which statement is not always true?",
+      "choices": ["triangle MAH is isosceles", "triangle MAT is isosceles", "MT bisects angle AMH", "angle A and angle TMH are complementary"],
+      "explanation": "M is on AH's perpendicular bisector, so MA = MH and the large triangle is isosceles. MT also bisects the vertex angle, and right triangle MTH makes angle H complementary to angle TMH; angle A equals H. But triangle MAT is merely right at T and need not have equal sides.",
+      "imageAlt": "Triangle MAH has M above horizontal base A-T-H, with T the midpoint of AH. Vertical MT meets AH at a right angle and divides the large triangle into two congruent right triangles."
+    },
+    "13": {
+      "prompt": "In circle B, RT is a diameter, BE a radius, and RE a chord. If inscribed angle TRE = 15° and BE = 9, find the area of sector EBR.",
+      "choices": ["3.375π", "6.75π", "33.75π", "37.125π"],
+      "explanation": "Angle TRE intercepts arc TE, so central angle TBE = 2(15°) = 30°. Since RBT is a diameter, angle EBR = 180°−30° = 150°. Sector area is (150/360)π(9²) = 33.75π.",
+      "imageAlt": "Circle centered at B has diameter R-B-T from near top to bottom, radius B-E extending lower right, and chord R-E. Angle TRE is at R between diameter RT and chord RE."
+    },
+    "14": {
+      "prompt": "A solid clay brick is 8 inches by 3.5 inches by 2.25 inches. Clay weighs 1.055 oz/in³. Find its weight to the nearest ounce.",
+      "choices": ["66", "64", "63", "60"],
+      "explanation": "Volume is 8(3.5)(2.25) = 63 cubic inches. Weight is 63(1.055) = 66.465 ounces, rounding to 66.",
+      "imageAlt": "Printed rectangular-prism mass question; all dimensions, density, and units are in accessible text."
+    },
+    "15": {
+      "prompt": "Rhombus ABCD is rotated about P to rhombus KLMN in corresponding order. If angle CAD = 35°, find angle KNM.",
+      "choices": ["35°", "55°", "70°", "110°"],
+      "explanation": "Diagonal AC bisects angle A of the rhombus, so angle A = 2(35°) = 70°. Adjacent angle D = 180°−70° = 110°. Rotation maps D to N, so angle KNM at N is 110°.",
+      "imageAlt": "Rhombus ABCD is at left with diagonal AC and angle CAD at A marked 35°. Rotated rhombus KLMN is at right near rotation center P; diagonal KM and other diagonal NL are drawn. Ordered correspondence is A/K, B/L, C/M, D/N."
+    },
+    "16": {
+      "prompt": "Right triangle RST has altitude SV to hypotenuse RT. If RV = 4.1 and VT = 10.2, find ST to the nearest tenth.",
+      "choices": ["6.5", "7.7", "11.0", "12.1"],
+      "explanation": "The whole hypotenuse RT is 4.1 + 10.2 = 14.3. The leg-projection theorem gives ST² = RT·VT = 14.3(10.2), so ST ≈ 12.1.",
+      "imageAlt": "Right triangle has R at lower left, T lower right, and right-angle vertex S above. V lies on horizontal hypotenuse RT below S, and altitude SV descends to V."
+    },
+    "17": {
+      "prompt": "Congruent pentagons ABCDE and A''B''C''D''E'' are graphed. Which sequence maps the first onto the second?",
+      "choices": ["rotate 90° counterclockwise about origin, then reflect over x-axis", "rotate 90° counterclockwise about origin, then translate down 7 units", "reflect over y-axis, then over x-axis", "reflect over x-axis, then rotate 90° counterclockwise about origin"],
+      "explanation": "For example A(2,2) rotates 90° counterclockwise to (−2,2), then translates down 7 to A''(−2,−5). The same sequence maps the other vertices to their double-primed partners.",
+      "imageAlt": "Coordinate grid shows upright house-shaped pentagon ABCDE in quadrant I and same-sized left-pointing pentagon A''B''C''D''E'' in quadrant III. A is lower-left of original at (2,2), and A'' is lower-right of image at (−2,−5)."
+    },
+    "18": {
+      "prompt": "Rhombus ABCD has A(1,2), B(4,6), C(7,2), and D(4,−2). What is its area?",
+      "choices": ["20", "24", "25", "48"],
+      "explanation": "Horizontal diagonal AC has length 7−1 = 6, and vertical diagonal BD has length 6−(−2) = 8. Rhombus area is half the product of diagonals: (6·8)/2 = 24.",
+      "imageAlt": "Diamond-shaped rhombus on a coordinate grid has left vertex A(1,2), top B(4,6), right C(7,2), and bottom D(4,−2)."
+    },
+    "19": {
+      "prompt": "Which solids can have a triangular plane cross section: I cone, II cylinder, III cube, IV square pyramid?",
+      "choices": ["I only", "IV only", "I, II, and IV only", "I, III, and IV only"],
+      "explanation": "A plane through a cone's apex or a pyramid's apex can form a triangle. A plane slicing off one corner of a cube can also make a triangular cross section. A right cylinder's plane sections are curved or rectangular, not triangular.",
+      "imageAlt": "Printed solid-cross-section question; four solids and all combinations are in accessible text."
+    },
+    "20": {
+      "prompt": "A circle has center (2,−4) and is tangent to line x = −2. Which equation represents it?",
+      "choices": ["(x−2)² + (y+4)² = 4", "(x−2)² + (y+4)² = 16", "(x+2)² + (y−4)² = 4", "(x+2)² + (y−4)² = 16"],
+      "explanation": "The radius is the horizontal distance from center x = 2 to tangent line x = −2, which is 4. Thus (x−2)² + (y+4)² = 4² = 16.",
+      "imageAlt": "Printed circle-equation question; signed center, tangent line, squared terms, and all equations are in accessible text."
+    },
+    "21": {
+      "prompt": "For acute angles of a right triangle, sin(4x)° = cos(3x+13)°. What is the smaller angle measure?",
+      "choices": ["11°", "13°", "44°", "52°"],
+      "explanation": "The acute angles are complementary, so 4x + (3x+13) = 90. Then 7x = 77 and x = 11. The angles are 44° and 46°, so the smaller is 44°.",
+      "imageAlt": "Printed trigonometric-angle question; both expressions and all degree choices are in accessible text."
+    },
+    "22": {
+      "prompt": "Point R is in quadrant I. After a 90° clockwise rotation about the origin followed by reflection over the x-axis, which quadrant contains its image?",
+      "choices": ["I", "II", "III", "IV"],
+      "explanation": "The rotation maps (x,y) to (y,−x), and reflection over the x-axis maps that to (y,x). Both coordinates remain positive for R in quadrant I, so the image remains in quadrant I.",
+      "imageAlt": "Coordinate grid shows triangle PQR above the x-axis. Point R is to the right of the y-axis and above the x-axis, in quadrant I."
+    },
+    "23": {
+      "prompt": "In right triangle ABC, angle B is 90° and altitude BD meets hypotenuse AC at D. Which ratio equals cos A?",
+      "choices": ["AB/BC", "BD/BC", "BD/AB", "BC/AC"],
+      "explanation": "Triangles ABC and BDC are similar: their right angles are at B and D, and they share angle C. Therefore angle A corresponds to angle DBC. In smaller right triangle BDC, cos(DBC) = BD/BC.",
+      "imageAlt": "Right triangle has A lower left, C lower right, and right-angle vertex B above. D lies on horizontal hypotenuse AC beneath B, and altitude BD drops vertically from B to D."
+    },
+    "24": {
+      "prompt": "In triangle RST, L lies on RS and M on RT, with LM parallel to ST. If RL = 2, LS = 6, LM = 4, and ST = x+2, find ST.",
+      "choices": ["10", "12", "14", "16"],
+      "explanation": "Parallel LM and ST make triangles RLM and RST similar. RS = 2+6 = 8, so LM/ST = RL/RS = 2/8 = 1/4. With LM = 4, ST = 16.",
+      "imageAlt": "Triangle RST has base R-L-S horizontal, T high at upper right, and M on rising side RT. Segment LM rises from L to M parallel to outer side ST."
+    }
+  }
+}

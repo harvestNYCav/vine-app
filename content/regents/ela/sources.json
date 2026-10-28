@@ -1,0 +1,269 @@
+{
+  "sourceIndexUrl": "https://www.nysedregents.org/hsela/",
+  "administrations": [
+    {
+      "slug": "2026-august",
+      "year": 2026,
+      "administration": "august",
+      "standardsEra": "NGLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/826/reela-82026-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/826/reela-82026-sk.pdf"
+    },
+    {
+      "slug": "2026-june",
+      "year": 2026,
+      "administration": "june",
+      "standardsEra": "NGLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/626/reela-62026-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/626/reela-62026-sk.pdf"
+    },
+    {
+      "slug": "2026-january",
+      "year": 2026,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/126/reela-12026-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/126/reela-12026-sk.pdf"
+    },
+    {
+      "slug": "2025-august",
+      "year": 2025,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/825/reela-82025-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/825/reela-82025-sk.pdf"
+    },
+    {
+      "slug": "2025-june",
+      "year": 2025,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/625/reela-62025-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/625/reela-62025-sk.pdf"
+    },
+    {
+      "slug": "2025-january",
+      "year": 2025,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/125/reela-12025-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/125/reela-12025-sk.pdf"
+    },
+    {
+      "slug": "2024-august",
+      "year": 2024,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/824/reela-82024-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/824/reela-82024-sk.pdf"
+    },
+    {
+      "slug": "2024-june",
+      "year": 2024,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/624/reela-62024-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/624/reela-62024-sk.pdf"
+    },
+    {
+      "slug": "2024-january",
+      "year": 2024,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/124/reela-12024-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/124/reela-12024-sk.pdf"
+    },
+    {
+      "slug": "2023-august",
+      "year": 2023,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/823/reela82023-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/823/reela82023-sk-rev.pdf"
+    },
+    {
+      "slug": "2023-june",
+      "year": 2023,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/623/reela62023-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/623/reela62023-sk.pdf"
+    },
+    {
+      "slug": "2023-january",
+      "year": 2023,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/123/reela12023-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/123/reela12023-sk.pdf"
+    },
+    {
+      "slug": "2022-august",
+      "year": 2022,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/822/reela82022-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/822/reela82022-sk.pdf"
+    },
+    {
+      "slug": "2022-june",
+      "year": 2022,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/622/reela62022-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/622/reela62022-sk.pdf"
+    },
+    {
+      "slug": "2021-june",
+      "year": 2021,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/621/reela-v202-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/621/reela-v202-sk.pdf"
+    },
+    {
+      "slug": "2020-january",
+      "year": 2020,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/120/reela12020-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/120/reela12020-sk.pdf"
+    },
+    {
+      "slug": "2019-august",
+      "year": 2019,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/819/reela82019-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/819/reela82019-sk.pdf"
+    },
+    {
+      "slug": "2019-june",
+      "year": 2019,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/619/reela62019-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/619/reela62019-sk.pdf"
+    },
+    {
+      "slug": "2019-january",
+      "year": 2019,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/119/reela12019-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/119/reela12019-rg1.pdf"
+    },
+    {
+      "slug": "2018-august",
+      "year": 2018,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/818/reela82018-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/818/reela82018-rgw1.pdf"
+    },
+    {
+      "slug": "2018-june",
+      "year": 2018,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/618/reela62018-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/618/reela62018-key.pdf"
+    },
+    {
+      "slug": "2018-january",
+      "year": 2018,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/118/reela12018-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/118/reela12018-key.pdf"
+    },
+    {
+      "slug": "2017-august",
+      "year": 2017,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/817/reela82017-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/817/reela82017-rgw-key.pdf"
+    },
+    {
+      "slug": "2017-june",
+      "year": 2017,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/617/hsela62017-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/617/hsela62017-sk.pdf"
+    },
+    {
+      "slug": "2017-january",
+      "year": 2017,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/117/hsela12017-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/117/hsela12017-rgkey.pdf"
+    },
+    {
+      "slug": "2016-august",
+      "year": 2016,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/816/hsela82016-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/816/hsela82016-rgwa.pdf"
+    },
+    {
+      "slug": "2016-june",
+      "year": 2016,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/616/hsela62016-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/616/hsela62016-rgwsk.pdf"
+    },
+    {
+      "slug": "2016-january",
+      "year": 2016,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/116/hsela12016-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/116/hsela12016-rgw-sk.pdf"
+    },
+    {
+      "slug": "2015-august",
+      "year": 2015,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/815/hsela82015-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/815/hsela82015-rgwkey.pdf"
+    },
+    {
+      "slug": "2015-june",
+      "year": 2015,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/615/hsela62015-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/615/hsela62015-rgsk.pdf"
+    },
+    {
+      "slug": "2015-january",
+      "year": 2015,
+      "administration": "january",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/115/hsela12015-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/115/hsela12015-rg-sk.pdf"
+    },
+    {
+      "slug": "2014-august",
+      "year": 2014,
+      "administration": "august",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/814/hsela82014-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/814/hsela82014-rg-sk.pdf"
+    },
+    {
+      "slug": "2014-june",
+      "year": 2014,
+      "administration": "june",
+      "standardsEra": "CCLS",
+      "sourceUrl": "https://www.nysedregents.org/hsela/614/hsela62014-exam.pdf",
+      "answerKeyUrl": "https://www.nysedregents.org/hsela/614/hsela62014-sk.pdf"
+    }
+  ]
+}

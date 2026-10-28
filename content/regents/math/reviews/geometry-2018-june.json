@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "099a2beae9b3d7e31173aebb194f3e71164195ec7ed1605c811419ac80ac39bf",
+  "questions": {
+    "1": {
+      "prompt": "A counterclockwise rotation about X maps scalene triangle ABC onto RST in that vertex order. Which statement must be true?",
+      "choices": ["angle A ≅ angle R", "angle A ≅ angle S", "CB ≅ TR", "CA ≅ TS"],
+      "explanation": "The mapping order gives A↔R, B↔S, and C↔T. Rotations preserve corresponding angles, so angle A is congruent to angle R.",
+      "imageAlt": "Original triangle ABC lies below-left of rotation center X, with A lower left, B lower right, C above. Image triangle RST lies right of X, with R lower right, S upper right, T left."
+    },
+    "2": {
+      "prompt": "Parallel lines AB and D-E-F are crossed by A-C-E and B-C-D. If angle B = 43° and angle CEF = 152°, which statement is true?",
+      "choices": ["angle D = 28°", "angle A = 43°", "angle ACD = 71°", "angle BCE = 109°"],
+      "explanation": "Angle CED is 180°−152° = 28°, giving angle A = 28° by parallel lines. Triangle ABC then has angle ACB = 180°−28°−43° = 109°. Since CB and CD are opposite rays, angle ACD = 180°−109° = 71°.",
+      "imageAlt": "Top horizontal line A-B parallels lower horizontal ray D-E-F. Diagonal A-C-E descends right through intersection C; diagonal B-C-D descends left through C, forming an X between the lines."
+    },
+    "3": {
+      "prompt": "Figure 1 is reflected across line m to Figure 2, then across parallel line n to Figure 3. Which single transformation maps Figure 1 to Figure 3?",
+      "choices": ["dilation", "rotation", "reflection", "translation"],
+      "explanation": "The composition of reflections across two parallel lines is a translation perpendicular to those lines, by twice their separation.",
+      "imageAlt": "Two parallel diagonal lines m and n slant up-right. Figure 1 is left of m, Figure 2 between the lines and flipped, and Figure 3 right of n with the original orientation."
+    },
+    "4": {
+      "prompt": "Segments A-C-F and D-C-B intersect at C. Vertical lines AD and F-B-E are drawn. If angle D = 65°, angle CBE = 115°, DC = 7.2, AC = 9.6, and FC = 21.6, find CB.",
+      "choices": ["3.2", "4.8", "16.2", "19.2"],
+      "explanation": "Since B-F-E is straight, angle CBF = 180°−115° = 65° = angle D. With vertical angles at C, triangles ADC and FBC are similar. Corresponding sides give DC/CB = AC/FC = 9.6/21.6, so CB = 7.2(21.6/9.6) = 16.2.",
+      "imageAlt": "Left small triangle A-D-C has vertical AD, D above A, and C to their right. Right larger triangle F-B-C has vertical FB, F above B, and C to their left. A-C-F and D-C-B are straight crossing diagonals; E extends downward from B."
+    },
+    "5": {
+      "prompt": "Square RSTV has side RS = 9 cm. It is dilated by factor 3. What is the image perimeter in centimeters?",
+      "choices": ["12", "27", "36", "108"],
+      "explanation": "The image side is 3(9) = 27 cm. A square has four equal sides, so perimeter is 4(27) = 108 cm.",
+      "imageAlt": "Printed square-dilation problem; side length and scale factor are in accessible text."
+    },
+    "6": {
+      "prompt": "In right triangle ABC, hypotenuse AB = 26 cm and leg BC = 17.6 cm. Find angle B to the nearest degree.",
+      "choices": ["48°", "47°", "43°", "34°"],
+      "explanation": "BC is adjacent to angle B and AB is the hypotenuse. Thus cos B = 17.6/26 and B ≈ 47°.",
+      "imageAlt": "Printed right-triangle trigonometry problem; hypotenuse and leg lengths are in accessible text."
+    },
+    "7": {
+      "prompt": "A greenhouse is a 20-ft-wide, 12-ft-high, 45-ft-long rectangular prism with a half-cylinder roof of diameter 20 ft. What is total volume to the nearest cubic foot?",
+      "choices": ["17,869", "24,937", "39,074", "67,349"],
+      "explanation": "The prism volume is 20·12·45 = 10,800 cubic feet. The half-cylinder radius is 10, giving roof volume (1/2)π(10²)(45) = 2250π ≈ 7069. Total ≈ 17,869 cubic feet.",
+      "imageAlt": "Greenhouse drawing shows straight vertical walls 12 ft high, a 20-ft width across its front, a 45-ft length extending back, and a semicylindrical roof spanning that width."
+    },
+    "8": {
+      "prompt": "In a right triangle the acute angles satisfy sin(2x+4) = cos(46°). What is x?",
+      "choices": ["20", "21", "24", "25"],
+      "explanation": "The two acute angles are complementary, so (2x+4)°+46° = 90°. Then 2x = 40 and x = 20.",
+      "imageAlt": "Printed cofunction problem; both angle expressions and all choices are in accessible text."
+    },
+    "9": {
+      "prompt": "In the diagram, AB ∥ D-F-C and E-D-A ∥ C-B-G; E-F-B and A-G are drawn. Which relation is always true?",
+      "choices": ["triangle DEF ≅ triangle CBF", "triangle BAG ≅ triangle BAE", "triangle BAG ∼ triangle AEB", "triangle DEF ∼ triangle AEB"],
+      "explanation": "D lies on EA, F lies on EB, and DF is parallel to AB. Corresponding angles therefore match, so triangle DEF is similar to triangle AEB by AA. The diagrams do not establish equal size.",
+      "imageAlt": "Upper triangle E-A-B has E at top, A lower left, B lower right. Horizontal line D-F-C passes through sides EA at D and EB at F and extends right to C; AB is a parallel lower horizontal. A-G and C-B-G complete a lower diamond-like shape."
+    },
+    "10": {
+      "prompt": "A pyramid has rectangular base 4.6 cm by 9 cm and volume 82.8 cm³. What is its height?",
+      "choices": ["6", "2", "9", "18"],
+      "explanation": "Base area is 4.6·9 = 41.4 cm². Solve 82.8 = (1/3)(41.4)h to get h = 6 cm.",
+      "imageAlt": "Printed pyramid-volume question; base dimensions and volume are in accessible text."
+    },
+    "11": {
+      "prompt": "In right triangle AED, B lies on AD and C on AE, with BC ∥ DE. Which proportion is always true?",
+      "choices": ["AC/BC = DE/AE", "AB/AD = BC/DE", "AC/CE = BC/DE", "DE/BC = DB/AB"],
+      "explanation": "Triangles ABC and ADE are similar because BC ∥ DE. Corresponding sides satisfy AB/AD = AC/AE = BC/DE; the second choice states one such equality.",
+      "imageAlt": "Large right triangle AED has A left, E right on horizontal base, and D directly above E. C lies between A and E; B lies on sloping AD. Vertical BC is parallel to DE, creating a smaller right triangle ABC."
+    },
+    "12": {
+      "prompt": "Which equation is a line through (6,8) perpendicular to y = (3/2)x+5?",
+      "choices": ["y−8 = (3/2)(x−6)", "y−8 = −(2/3)(x−6)", "y+8 = (3/2)(x+6)", "y+8 = −(2/3)(x+6)"],
+      "explanation": "A line perpendicular to slope 3/2 has slope −2/3. Point-slope form through (6,8) is y−8 = −(2/3)(x−6).",
+      "imageAlt": "Printed perpendicular-line problem; given point, original equation, and all point-slope choices are in accessible text."
+    },
+    "13": {
+      "prompt": "Parallelogram ABCD has diagonals AC and BD meeting at E. What additional fact proves it is a rhombus?",
+      "choices": ["BD bisects AC", "AB ∥ CD", "AC ≅ BD", "AC ⟂ BD"],
+      "explanation": "A parallelogram with perpendicular diagonals is a rhombus. Diagonal bisection and opposite-side parallelism already hold for every parallelogram; congruent diagonals instead establish a rectangle.",
+      "imageAlt": "Parallelogram A-B-C-D has A lower left, B upper left, C upper right, D lower right. Diagonals AC and BD cross at interior point E."
+    },
+    "14": {
+      "prompt": "Directed segment DE runs from D(−4,−2) to E(1,8). F divides it with DF:FE = 2:3. What are F's coordinates?",
+      "choices": ["(−3,0)", "(−2,2)", "(−1,4)", "(2,4)"],
+      "explanation": "F is 2/5 of the way from D to E. The displacement E−D is (5,10), so F = (−4,−2)+(2/5)(5,10) = (−2,2).",
+      "imageAlt": "Printed directed-segment partition problem; signed endpoints and ratio are in accessible text."
+    },
+    "15": {
+      "prompt": "Triangle DAN has vertices D(−6,−1), A(6,3), and N(−3,10). What is its area?",
+      "choices": ["60", "120", "20√13", "40√13"],
+      "explanation": "Vectors DA = (12,4) and DN = (3,11). The triangle area is half the absolute determinant: |12·11−4·3|/2 = 120/2 = 60.",
+      "imageAlt": "Coordinate grid shows D lower left at (−6,−1), A right at (6,3), and N upper left at (−3,10), connected by three sloping sides. The coordinates are also in the prompt."
+    },
+    "16": {
+      "prompt": "Right triangle ABC has A(0,0), B(3,5), and C(0,5). It is rotated continuously about segment BC. Which pictured cone results?",
+      "choices": ["cone with base diameter 6 and height 5", "cone with base diameter 3 and height 5", "cone with base diameter 10 and height 3", "cone with base diameter 5 and height 3"],
+      "explanation": "BC is the rotation axis, so the cone's height is BC = 3. Point A is AC = 5 units from that axis, giving base radius 5 and diameter 10. That matches the third pictured cone.",
+      "imageAlt": "Grid shows A at origin, C at (0,5) directly above, and B at (3,5) right of C, so BC is horizontal length 3 and AC is perpendicular length 5. Choice 1 is a downward cone marked base diameter 6, height 5; choice 2 downward cone diameter 3, height 5; choice 3 right-pointing cone diameter 10, axis 3; choice 4 right-pointing cone diameter 5, axis 3."
+    },
+    "17": {
+      "prompt": "Chords AB and CD intersect at E inside circle O. If minor arc AC = 72° and angle AEC = 58°, what is minor arc DB?",
+      "choices": ["108°", "65°", "44°", "14°"],
+      "explanation": "For intersecting chords, angle AEC is half the sum of arcs AC and DB. So 58 = (72+m arc DB)/2, giving m arc DB = 44°.",
+      "imageAlt": "Circle O has A upper left, D upper right, B right-lower, C left-lower. Chord A-E-B descends right and chord C-E-D rises right; they meet at E above the center. Arc AC on the left is marked 72°, and angle AEC at the chord crossing is marked 58°."
+    },
+    "18": {
+      "prompt": "In triangle SRK, medians SC, KE, and RL meet at M. Which statement must always be true?",
+      "choices": ["3(MC) = SC", "MC = (1/3)(SM)", "RM = 2MC", "SM = KM"],
+      "explanation": "The medians meet at centroid M, which divides each median 2:1 from its vertex. Along SC, SM:MC = 2:1, so SC = 3MC.",
+      "imageAlt": "Triangle has S at top, R lower left, K lower right. C is midpoint of base RK, E midpoint of SR, and L midpoint of SK. Medians S-C, K-E, and R-L cross at interior point M."
+    },
+    "19": {
+      "prompt": "A regular pentagon rotates about its center. Which angle of rotation maps it onto itself?",
+      "choices": ["60°", "108°", "216°", "540°"],
+      "explanation": "A regular pentagon has fivefold rotational symmetry, with a basic turn of 360°/5 = 72°. The choice 216° is 3·72°, so it maps the pentagon onto itself.",
+      "imageAlt": "Five-sided regular polygon is drawn with one vertex at top and a horizontal bottom side; all rotational-angle options are in the choices."
+    },
+    "20": {
+      "prompt": "A circle on a coordinate grid has center (5,2) and radius 4. Which equation represents it?",
+      "choices": ["x²+10x+y²+4y = −13", "x²−10x+y²−4y = −13", "x²+10x+y²+4y = −25", "x²−10x+y²−4y = −25"],
+      "explanation": "The graph gives (x−5)²+(y−2)² = 4². Expanding produces x²−10x+y²−4y = −13.",
+      "imageAlt": "Coordinate graph shows a circle centered at O(5,2), extending horizontally from x=1 to x=9 and vertically from y=−2 to y=6. Center and radius are also in the prompt."
+    },
+    "21": {
+      "prompt": "In triangle PQR, S lies on PQ and T on QR, with ST ∥ PR. If PS = 2, SQ = 5, and TR = 5, find QR.",
+      "choices": ["7", "2", "12 1/2", "17 1/2"],
+      "explanation": "PQ = 2+5 = 7. Similar triangles QST and QPR have QT/QR = QS/QP = 5/7, so TR is the remaining 2/7 of QR. Since TR = 5, QR = 5·7/2 = 17.5.",
+      "imageAlt": "Triangle PQR has P lower left, R lower right, Q above P. S lies on side PQ between P and Q with PS 2 and SQ 5; T lies on QR with TR 5; horizontal ST is parallel to base PR."
+    },
+    "22": {
+      "prompt": "Circle O has radii OA and OB, central angle AOB = 120°, and radius 6 inches. Which expression gives length of minor arc AB?",
+      "choices": ["(120/360)(6π)", "120(6)", "(1/3)(36π)", "(1/3)(12π)"],
+      "explanation": "The 120° arc is one third of the circumference. Circumference is 2πr = 12π, so arc length is (1/3)(12π).",
+      "imageAlt": "Circle centered O has radius OA toward upper left and radius OB toward lower right, with the smaller central angle between them marked 120° and OB labeled 6."
+    },
+    "23": {
+      "prompt": "In right triangle ECF, CD is the altitude to hypotenuse EF. If EC = 10 and EF = 24, what is ED to the nearest tenth?",
+      "choices": ["4.2", "5.4", "15.5", "21.8"],
+      "explanation": "The leg-projection theorem gives EC² = ED·EF. Thus ED = 10²/24 ≈ 4.1667, rounding to 4.2.",
+      "imageAlt": "Printed right-triangle altitude problem; hypotenuse, leg, and altitude foot are identified in accessible text."
+    },
+    "24": {
+      "prompt": "Line MN has equation y = −3x+6 and is dilated by factor 2 centered at (0,6). Which equation can represent the image line?",
+      "choices": ["y = −3x+12", "y = −3x+6", "y = −6x+12", "y = −6x+6"],
+      "explanation": "The dilation center (0,6) lies on the original line. A line through the center maps onto itself under a dilation, so the image still has equation y = −3x+6.",
+      "imageAlt": "Printed line-dilation problem; original equation, center, factor, and every candidate equation are in accessible text."
+    }
+  }
+}

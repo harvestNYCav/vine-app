@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "047b10d25e3ca8f6ba3573d0ae86e4d8173cac8b2dc5f6871e83b02093bbeb6b",
+  "questions": {
+    "1": {
+      "prompt": "Graphed triangle R'S'T' is the image of triangle RST. Which rigid motion maps RST onto R'S'T'?",
+      "choices": ["a 90° clockwise rotation about the origin", "a translation 4 units right", "a reflection over the x-axis", "a reflection over the y-axis"],
+      "explanation": "Corresponding vertices are the same height and the same distance on opposite sides of the y-axis: R and R', S and S', T and T'. Reflecting across the y-axis maps all three pairs exactly.",
+      "imageAlt": "Coordinate grid shows triangle RST and its mirror triangle R'S'T' overlapping across the vertical y-axis. Each pair of corresponding vertices lies at the same height on opposite sides of that axis."
+    },
+    "2": {
+      "prompt": "Which regular polygon maps onto itself after a 60° rotation about its center?",
+      "choices": ["pentagon", "hexagon", "octagon", "decagon"],
+      "explanation": "A regular n-gon has a smallest nonzero rotational symmetry of 360°/n. For a hexagon, that angle is 360°/6 = 60°, so the rotation maps it onto itself.",
+      "imageAlt": "Printed regular-polygon question; accessible text includes the rotation angle and all polygon choices."
+    },
+    "3": {
+      "prompt": "A right triangle is continuously rotated around its 4-cm leg; the other leg is 7 cm. What solid forms?",
+      "choices": ["a cone with height 4 cm and radius 7 cm", "a cone with height 4 cm and radius 14 cm", "a pyramid with height 4 cm and base length 7 cm", "a pyramid with height 4 cm and base length 14 cm"],
+      "explanation": "The 4-cm leg is the rotation axis and becomes the cone's height. The perpendicular 7-cm leg sweeps out the circular base, making its radius 7 cm.",
+      "imageAlt": "Right triangle has vertical leg labeled 4 cm, horizontal leg labeled 7 cm, and a right-angle mark where those legs meet. The rotation axis is the 4-cm leg."
+    },
+    "4": {
+      "prompt": "In isosceles triangle AHP, AH ≅ PH, and AH extends through H to C. If angle A = (2x + 12)° and angle P = (3x − 8)°, find exterior angle CHP.",
+      "choices": ["52°", "76°", "104°", "128°"],
+      "explanation": "Since AH ≅ PH, base angles A and P are equal: 2x + 12 = 3x − 8, so x = 20 and both base angles are 52°. Exterior angle CHP equals their sum, 104°.",
+      "imageAlt": "Isosceles triangle AHP has base AP horizontal, H above it, and side AH extended beyond H to C. The equal sides are AH and PH; exterior angle CHP is between HC and HP."
+    },
+    "5": {
+      "prompt": "Triangle XYZ is a graphed image of triangle ABC after a dilation of scale factor 1/2. Which point is the center?",
+      "choices": ["(2, −1)", "(8, 3)", "(5, 1)", "(0, 0)"],
+      "explanation": "The center, a vertex, and its image lie on one line, with the image halfway from center to original. For A(−2, 5) and X(0, 2), the center satisfying X = (center + A)/2 is (2, −1). The same point works for B to Y and C to Z.",
+      "imageAlt": "Coordinate grid shows larger triangle ABC with A near (−2, 5), B near (8, 3), C near (6, −7), and smaller triangle XYZ with X(0, 2), Y(5, 1), Z(4, −4). Corresponding vertices are A-to-X, B-to-Y, C-to-Z."
+    },
+    "6": {
+      "prompt": "In a right triangle, the acute angles satisfy cos((5x + 7)°) = sin((3x + 3)°). Which equation must hold?",
+      "choices": ["5x + 7 = 3x + 3", "5x + 7 + 3x + 3 = 90", "5x + 7 + 3x + 3 = 180", "5x + 7 + 3x + 3 + x = 180"],
+      "explanation": "For acute angles, cosine of one equals sine of its complement. The two given angles therefore add to 90°: (5x + 7) + (3x + 3) = 90.",
+      "imageAlt": "Printed trigonometry equation question. The accessible text preserves each parenthesized angle expression and all four equations."
+    },
+    "7": {
+      "prompt": "A circle has radius 8 cm and central angle AOB = 140°. Find the length of minor arc AB to the nearest centimeter.",
+      "choices": ["10", "20", "25", "78"],
+      "explanation": "Arc length is the same fraction of the circumference as its central angle is of 360°: (140/360)(2π × 8) ≈ 19.55 cm. To the nearest centimeter, this is 20 cm.",
+      "imageAlt": "Circle centered at O has radius OB labeled 8 cm. Radius OA points left and radius OB points down-right, forming a 140-degree central angle that intercepts minor arc AB."
+    },
+    "8": {
+      "prompt": "A cone-shaped sandpile has both radius and height 3.5 feet. A wagon holds 5 cubic feet. What is the fewest whole trips needed to move all the sand?",
+      "choices": ["27", "14", "3", "9"],
+      "explanation": "The pile's volume is (1/3)πr²h = (1/3)π(3.5)²(3.5) ≈ 44.9 cubic feet. Dividing by 5 gives about 8.98 loads. Because a partial final load still requires a trip, Lucy needs 9 trips.",
+      "imageAlt": "Cone-shaped sandpile diagram marks a vertical height of 3.5 ft and a horizontal base radius of 3.5 ft."
+    },
+    "9": {
+      "prompt": "Segments BD and AE cross at C, and AB is parallel to DE. Which statement is not always true?",
+      "choices": ["∠ABC ≅ ∠EDC", "∠ACB ≅ ∠ECD", "triangle ABC is similar to triangle EDC", "triangle ABC is congruent to triangle EDC"],
+      "explanation": "Parallel lines give a pair of matching angles, and vertical angles at C are equal, so the two triangles are similar by AA. Their sizes need not match; congruence is not guaranteed.",
+      "imageAlt": "Two bow-tie triangles cross at C. A and E lie on one diagonal, B and D on the other. Side AB at left is parallel to side DE at right."
+    },
+    "10": {
+      "prompt": "A shed face has a 10-ft-wide rectangular base topped by isosceles triangle FEG. The triangle's height ED is 6 ft. Find base angle EGD to the nearest degree.",
+      "choices": ["34°", "40°", "50°", "56°"],
+      "explanation": "In the isosceles roof triangle, the altitude from E bisects its 10-ft base, so GD = 5 ft. In right triangle EGD, tan(∠EGD) = ED/GD = 6/5. The inverse tangent is about 50.2°, which rounds to 50°.",
+      "imageAlt": "A rectangular shed wall is 10 ft wide. Its triangular roof has apex E above midpoint D of horizontal base FG. Dashed altitude ED is labeled 6 ft, and the angle sought is at G between roof slope GE and horizontal GD."
+    },
+    "11": {
+      "prompt": "On a coordinate grid, triangle ABC maps to A'B'C', then A'B'C' maps to A''B''C''. Which transformation sequence matches the graphed positions?",
+      "choices": ["a translation followed by a rotation", "a rotation followed by a translation", "a line reflection followed by a rotation", "a translation followed by a line reflection"],
+      "explanation": "ABC and A'B'C' have the same orientation and height, with each corresponding point shifted right, so the first move is a translation. The third triangle reverses both horizontal and vertical directions from A'B'C', consistent with a 180° rotation.",
+      "imageAlt": "Coordinate grid shows congruent right triangles ABC and A'B'C' below the x-axis, the latter shifted right. Triangle A''B''C'' is above the x-axis and left of the y-axis, with the right-angle corner relocated by a half-turn."
+    },
+    "12": {
+      "prompt": "A line passes through (−1, −4) and (3, −1). Which equation has a perpendicular slope?",
+      "choices": ["y + 4 = (3/4)(x + 1)", "y − 4 = (4/3)(x − 1)", "y − 1 = −(3/4)(x + 3)", "y + 1 = −(4/3)(x − 3)"],
+      "explanation": "The given line has slope (−1 − (−4))/(3 − (−1)) = 3/4. A perpendicular line needs the negative reciprocal slope −4/3. Only y + 1 = −(4/3)(x − 3) has that slope.",
+      "imageAlt": "Printed coordinate and equation question. The accessible text preserves both negative coordinates and all fractional slopes."
+    },
+    "13": {
+      "prompt": "Similar right triangles DAY and NIT have AD = 6, DY = 6, and the larger triangle's hypotenuse IT = 16. Find TN.",
+      "choices": ["8", "8√2", "8√3", "16√2"],
+      "explanation": "DAY is a 45-45-90 triangle because its legs are both 6. NIT is similar, so its two legs are equal; with hypotenuse IT = 16, each leg is 16/√2 = 8√2. TN is one of those legs.",
+      "imageAlt": "Small right triangle DAY has a right angle at D and both legs AD and DY labeled 6. Larger right triangle NIT has right angle at N and sloping hypotenuse IT labeled 16; TN is its left vertical leg."
+    },
+    "14": {
+      "prompt": "A sphere has volume 333 cubic centimeters. What is its diameter to the nearest tenth of a centimeter?",
+      "choices": ["4.3", "5.2", "8.6", "10.4"],
+      "explanation": "Set 333 = (4/3)πr³. Then r = (3 × 333/(4π))^(1/3) ≈ 4.30 cm. The diameter is 2r ≈ 8.59 cm, or 8.6 cm to the nearest tenth.",
+      "imageAlt": "Printed sphere-volume question; the accessible text includes the cubic-centimeter unit and four diameter choices."
+    },
+    "15": {
+      "prompt": "Parallel horizontal lines BTS and MAVR are crossed by TV, and AE is perpendicular to TV at E. If angle STE = 38°, what is angle VAE?",
+      "choices": ["38°", "52°", "128°", "142°"],
+      "explanation": "TV makes a 38° acute angle with each horizontal parallel line. Since AE is perpendicular to TV, AE makes the complementary angle 90° − 38° = 52° with horizontal AV. Thus ∠VAE = 52°.",
+      "imageAlt": "Two horizontal parallel lines: B-T-S above and M-A-V-R below. Diagonal TV slopes down-right from T to V; A-E rises up-right to meet TV at right angle E. Angle STE is at T between rightward TS and downward TE."
+    },
+    "16": {
+      "prompt": "Segment RZ has endpoints R(6, 6) and Z(−12, −3). Point A divides it so RA:AZ = 5:4. What are A's coordinates?",
+      "choices": ["(−6, 0)", "(−2, 2)", "(0, 3)", "(−4, 1)"],
+      "explanation": "The 5:4 ratio puts A five ninths of the way from R to Z. The change is (−18, −9), and five ninths of that is (−10, −5). Add to R(6, 6) to get A(−4, 1).",
+      "imageAlt": "Printed segment-division question. Accessible text preserves both signed endpoints and the 5:4 ratio."
+    },
+    "17": {
+      "prompt": "In triangle ABC, D lies on AB and E lies on CB with DE parallel to AC. If BD = 9, DA = 3, and EC = 4, find BC.",
+      "choices": ["10", "12", "14", "16"],
+      "explanation": "Because DE is parallel to AC, triangles BDE and BAC are similar. Their side ratio is BD/BA = 9/(9 + 3) = 3/4, so BE = (3/4)BC. Therefore EC is the remaining one fourth of BC. Since EC = 4, BC = 16.",
+      "imageAlt": "Triangle ABC has B at top, A at lower left, C at lower right. D lies on BA, E lies on BC, and interior segment DE runs parallel to base AC."
+    },
+    "18": {
+      "prompt": "Triangle ABC maps to A'B'C' by a sequence of rigid motions. Which statement is always true?",
+      "choices": ["AB is parallel to A'B'", "AB is congruent to A'B'", "angle A has the same measure as angle B'", "the two triangles have the same orientation"],
+      "explanation": "Every rigid motion preserves length, so corresponding segment AB and A'B' are congruent. A rotation need not preserve parallelism of those two segments, and a reflection can reverse orientation.",
+      "imageAlt": "Printed rigid-motion question. Accessible text identifies corresponding vertices and all four possible properties."
+    },
+    "19": {
+      "prompt": "For the circle x² − 16x + y² + 20y = −155, find its center and radius.",
+      "choices": ["center (8, −10), radius 9", "center (−8, 10), radius 9", "center (8, −10), radius 3", "center (−8, 10), radius 3"],
+      "explanation": "Complete both squares: (x − 8)² − 64 + (y + 10)² − 100 = −155, giving (x − 8)² + (y + 10)² = 9. Thus the center is (8, −10) and radius is √9 = 3.",
+      "imageAlt": "Printed circle equation. Accessible text preserves both squared terms, signed linear coefficients, right side, and center-radius choices."
+    },
+    "20": {
+      "prompt": "Using the 2020 population and land-area table, order Connecticut, New Jersey, New York, and Pennsylvania by population density from smallest to largest. Connecticut: 3,605,944 people, 4,842 mi²; New Jersey: 9,288,994, 7,354 mi²; New York: 20,201,249, 47,126 mi²; Pennsylvania: 13,002,700, 44,743 mi².",
+      "choices": ["Pennsylvania, New York, Connecticut, New Jersey", "Connecticut, New Jersey, Pennsylvania, New York", "New York, Pennsylvania, New Jersey, Connecticut", "New Jersey, Connecticut, New York, Pennsylvania"],
+      "explanation": "Density is population divided by land area. The values are about 291 people/mi² for Pennsylvania, 429 for New York, 745 for Connecticut, and 1,263 for New Jersey. Increasing order is Pennsylvania, New York, Connecticut, New Jersey.",
+      "imageAlt": "Table titled 2020 State Population and Land Area lists four states with population and square-mile land area. Every row and value is transcribed in the accessible prompt."
+    },
+    "21": {
+      "prompt": "Line t has equation y = 2x − 1. After dilation by factor 3 centered at the origin, what is the image line's equation?",
+      "choices": ["y = 2x − 3", "y = 6x − 3", "y = 2x − 1", "y = 6x − 1"],
+      "explanation": "If (x, y) is on the original line, its image is (X, Y) = (3x, 3y). Since y = 2x − 1, multiply by 3 to get Y = 6x − 3 = 2X − 3. The slope stays 2 and the intercept becomes −3.",
+      "imageAlt": "Printed line-dilation question. The accessible text includes the original equation, scale factor, center, and all four image equations."
+    },
+    "22": {
+      "prompt": "ABCD is a parallelogram. Which added statement proves it is a rhombus?",
+      "choices": ["AB ≅ CD", "AD ∥ BC", "AD ≅ DC", "∠ADC ≅ ∠ABC"],
+      "explanation": "Opposite sides already are equal and parallel in every parallelogram. If adjacent sides AD and DC are also congruent, then all four sides are equal, so the parallelogram is a rhombus.",
+      "imageAlt": "Printed parallelogram proof question. The accessible choices distinguish opposite-side facts, an adjacent-side congruence, and opposite-angle congruence."
+    },
+    "23": {
+      "prompt": "Right triangle ABC has angle B = 90° and altitude BD to hypotenuse AC. If AD = 3 and CD = 12, find AB.",
+      "choices": ["6", "9", "3√5", "5√3"],
+      "explanation": "The whole hypotenuse is AC = AD + DC = 15. The leg-projection theorem gives AB² = AD × AC = 3 × 15 = 45, so AB = √45 = 3√5.",
+      "imageAlt": "Right triangle ABC has right angle at top vertex B, base AC as its hypotenuse, and altitude BD dropping to point D between A and C. Segment AD is 3 and DC is 12."
+    },
+    "24": {
+      "prompt": "In triangle GBT, medians GM, BR, and TE meet at centroid X. Which statement must hold?",
+      "choices": ["MX/GX = 1/3", "TX/EX = 2/1", "BX ≅ RX", "TM ≅ TR"],
+      "explanation": "A centroid divides each median in a 2:1 ratio measured from the vertex. On median TE, the segment from vertex T to centroid X is twice the segment from X to midpoint E, so TX/EX = 2/1.",
+      "imageAlt": "Triangle GBT has G lower left, B top, T lower right. E lies midway on GB, M midway on BT, and R midway on GT. Medians TE, GM, and BR meet at interior point X."
+    }
+  }
+}

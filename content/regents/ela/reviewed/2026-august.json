@@ -1,0 +1,147 @@
+{
+  "sections": [
+    {
+      "slug": "passage-b",
+      "title": "Reading Comprehension · Passage B",
+      "intro": "Read “Bats and Swallows” and answer questions 10–14.",
+      "questionIds": [
+        "english-2026-august-q10",
+        "english-2026-august-q11",
+        "english-2026-august-q12",
+        "english-2026-august-q13",
+        "english-2026-august-q14"
+      ],
+      "passage": {
+        "title": "Bats and Swallows",
+        "credit": "—Erica McAlpine · “Bats and Swallows” · www.theatlantic.com, January/February 2021",
+        "transcriptReviewStatus": "reviewed",
+        "lines": [
+          { "number": 1, "text": "Whatever the difference might be" },
+          { "number": 2, "text": "to one who knows," },
+          { "number": 3, "text": "we couldn’t see" },
+          { "number": 4, "text": "from where we stood in soft shadows" },
+          { "number": 5, "text": "any signs that they were swallows" },
+          { "number": null, "text": "" },
+          { "number": 6, "text": "or bats. That there were wings" },
+          { "number": 7, "text": "was without doubt;" },
+          { "number": 8, "text": "you could see small pointed things" },
+          { "number": 9, "text": "swooping out" },
+          { "number": 10, "text": "into the gloaming—" },
+          { "number": null, "text": "" },
+          { "number": 11, "text": "and sometimes back." },
+          { "number": 12, "text": "One seemed almost iridescent¹" },
+          { "number": 13, "text": "as I tried to track" },
+          { "number": 14, "text": "its crescent" },
+          { "number": 15, "text": "flight across the hill. The lack" },
+          { "number": null, "text": "" },
+          { "number": 16, "text": "of sound suggested" },
+          { "number": 17, "text": "bats to me;" },
+          { "number": 18, "text": "you strained to see if they nested" },
+          { "number": 19, "text": "somewhere below the" },
+          { "number": 20, "text": "terrace, having rested" },
+          { "number": null, "text": "" },
+          { "number": 21, "text": "your case on swallows." },
+          { "number": 22, "text": "We couldn’t be sure" },
+          { "number": 23, "text": "either way—and so it follows" },
+          { "number": 24, "text": "that neither of us knows." },
+          { "number": 25, "text": "But since it is in your nature" },
+          { "number": null, "text": "" },
+          { "number": 26, "text": "always to side one way" },
+          { "number": 27, "text": "or the other, you hold" },
+          { "number": 28, "text": "that they were swallows. I say" },
+          { "number": 29, "text": "the question never gets old," },
+          { "number": 30, "text": "that either, or both, hold sway." },
+          { "number": null, "text": "" },
+          { "number": null, "text": "¹ iridescent — shimmering" }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "english-2026-august-q10",
+      "number": 10,
+      "sectionSlug": "passage-b",
+      "sourcePage": 6,
+      "prompt": "Lines 1 through 6 introduce the idea that the “we” are",
+      "choices": [
+        { "label": "1", "text": "casual observers of the creatures" },
+        { "label": "2", "text": "skilled experts on the creatures" },
+        { "label": "3", "text": "unaware of the presence of the creatures" },
+        { "label": "4", "text": "unmoved by the behavior of the creatures" }
+      ],
+      "correct": "1",
+      "explanation": "The speakers can see that the creatures have wings but cannot tell whether they are swallows or bats (lines 1–6). They are watching informally, not identifying the animals as experts.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-august-q11",
+      "number": 11,
+      "sectionSlug": "passage-b",
+      "sourcePage": 6,
+      "prompt": "Lines 6 through 9 describe the creatures’",
+      "choices": [
+        { "label": "1", "text": "irregular appearance" },
+        { "label": "2", "text": "common features" },
+        { "label": "3", "text": "unusual activities" },
+        { "label": "4", "text": "consistent communication" }
+      ],
+      "correct": "2",
+      "explanation": "Lines 6–9 mention wings and small pointed shapes swooping through the air. These visible features fit either swallows or bats, which is why the speakers cannot decide between them.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-august-q12",
+      "number": 12,
+      "sectionSlug": "passage-b",
+      "sourcePage": 6,
+      "prompt": "Which phrase contributes to the understanding of the word “gloaming” (line 10)?",
+      "choices": [
+        { "label": "1", "text": "“soft shadows” (line 4)" },
+        { "label": "2", "text": "“without doubt” (line 7)" },
+        { "label": "3", "text": "“pointed things” (line 8)" },
+        { "label": "4", "text": "“swooping out” (line 9)" }
+      ],
+      "correct": "1",
+      "explanation": "“Gloaming” refers to twilight or dusk. The earlier phrase “soft shadows” gives a clue that the light is dim, making choice 1 the phrase that helps explain the word.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-august-q13",
+      "number": 13,
+      "sectionSlug": "passage-b",
+      "sourcePage": 6,
+      "prompt": "The use of imagery in lines 8 through 15 is meant to portray the narrator’s observation as",
+      "choices": [
+        { "label": "1", "text": "an intimidating situation" },
+        { "label": "2", "text": "an interesting lesson" },
+        { "label": "3", "text": "a beautiful encounter" },
+        { "label": "4", "text": "a typical experience" }
+      ],
+      "correct": "3",
+      "explanation": "The narrator describes the creature as almost “iridescent” and follows its “crescent” flight across the hill. These shimmering, graceful images make the sight feel beautiful rather than threatening or ordinary.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-august-q14",
+      "number": 14,
+      "sectionSlug": "passage-b",
+      "sourcePage": 6,
+      "prompt": "The use of the phrase “that either, or both, hold sway” (line 30) shows that",
+      "choices": [
+        { "label": "1", "text": "each companion is angry with the other" },
+        { "label": "2", "text": "each companion believes the other is mistaken" },
+        { "label": "3", "text": "the narrator is choosing to ignore the evidence" },
+        { "label": "4", "text": "the narrator believes no firm decision is necessary" }
+      ],
+      "correct": "4",
+      "explanation": "The narrator accepts that the animals could be swallows, bats, or both. Because the speakers lack enough evidence to know for sure, the narrator is comfortable leaving the question open rather than forcing a decision.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    }
+  ]
+}

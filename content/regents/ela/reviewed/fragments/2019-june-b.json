@@ -1,0 +1,59 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "Read “This Life” and answer questions 10–14. A vocabulary note follows the poem.",
+    "questionIds": ["english-2019-june-q10", "english-2019-june-q11", "english-2019-june-q12", "english-2019-june-q13", "english-2019-june-q14"],
+    "passage": {
+      "title": "This Life",
+      "credit": "—Rita Dove · from The Poets Laureate Anthology (2010), W. W. Norton & Company, Inc.",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "My grandmother told me there’d be good days"},
+        {"number": 2, "text": "to counter the dark ones,"},
+        {"number": 3, "text": "with blue skies in the heart as far"},
+        {"number": 4, "text": "as the soul could see. She said"},
+        {"number": 5, "text": "you could measure a life in as many ways"},
+        {"number": 6, "text": "as there were to bake a pound cake,"},
+        {"number": 7, "text": "but you still needed real butter and eggs"},
+        {"number": 8, "text": "for a good one—pound cake, that is,"},
+        {"number": 9, "text": "but I knew what she meant. She was always"},
+        {"number": 10, "text": "talking around corners like that;"},
+        {"number": 11, "text": "she knew words carried their treasures"},
+        {"number": 12, "text": "like a grape clusters around its own juice."},
+        {"number": 13, "text": "She loved words; she thought a book"},
+        {"number": 14, "text": "was a monument to the glory of creation"},
+        {"number": 15, "text": "and a library … well, sometimes"},
+        {"number": 16, "text": "just trying to describe Jubilation"},
+        {"number": 17, "text": "will get you a bit tongue, so let’s"},
+        {"number": 18, "text": "leave it at that. But my grandmother"},
+        {"number": 19, "text": "was nobody’s fool, and she’d tell anybody"},
+        {"number": 20, "text": "smart enough to listen. Don’t let a little pain"},
+        {"number": 21, "text": "stop you; try as hard as you can"},
+        {"number": 22, "text": "every minute you’re given or else"},
+        {"number": 23, "text": "sit down and shut-up—though in her opinion,"},
+        {"number": 24, "text": "keeping quiet in noisy times was a sin"},
+        {"number": 25, "text": "against everything God and democracy"},
+        {"number": 26, "text": "intended us for. I know she’d like"},
+        {"number": 27, "text": "where I’m standing right now. She’d say"},
+        {"number": 28, "text": "a man who could measure his life in deeds"},
+        {"number": 29, "text": "was larger inside than the vessel that carried him;"},
+        {"number": 30, "text": "she’d say he was a cluster of grapes."},
+        {"number": 31, "text": "My grandmother was only four feet ten"},
+        {"number": 32, "text": "but when she entered a room, even the books"},
+        {"number": 33, "text": "came to attention. Giants come in all sizes:"},
+        {"number": 34, "text": "Sometimes a moment is a monument;"},
+        {"number": 35, "text": "sometimes an institution breathes—"},
+        {"number": 36, "text": "like a library. Like this halcyon¹ day."},
+        {"number": null, "text": ""},
+        {"number": null, "text": "¹ halcyon — peaceful"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id": "english-2019-june-q10", "number": 10, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "Lines 1 through 4 establish the grandmother’s", "choices": [{"label": "1", "text": "questioning nature"}, {"label": "2", "text": "vivid imagination"}, {"label": "3", "text": "cautious attitude"}, {"label": "4", "text": "optimistic outlook"}], "correct": "4", "explanation": "The grandmother says good days will counter dark ones and imagines blue skies within the heart. She expects hope even during difficulty, showing optimism.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2019-june-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The figurative language in lines 9 and 10 highlights the grandmother’s", "choices": [{"label": "1", "text": "desire to avoid conflicts"}, {"label": "2", "text": "tendency to keep secrets"}, {"label": "3", "text": "strategy to impart wisdom"}, {"label": "4", "text": "ability to create humor"}], "correct": "3", "explanation": "The narrator says the grandmother talked “around corners,” using the pound-cake comparison to communicate a broader lesson indirectly. Figurative language was her way of teaching wisdom.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2019-june-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "Which phrase from the poem clarifies the narrator’s statement in line 30?", "choices": [{"label": "1", "text": "“there’d be good days” (line 1)"}, {"label": "2", "text": "“smart enough to listen” (line 20)"}, {"label": "3", "text": "“measure his life in deeds” (line 28)"}, {"label": "4", "text": "“sometimes an institution breathes” (line 35)"}], "correct": "3", "explanation": "The “cluster of grapes” metaphor evokes a person rich in meaningful accomplishments. The nearby phrase “measure his life in deeds” explains what that inner abundance means.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2019-june-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The personification in lines 32 and 33 emphasizes the grandmother’s", "choices": [{"label": "1", "text": "small size"}, {"label": "2", "text": "commanding presence"}, {"label": "3", "text": "family history"}, {"label": "4", "text": "successful career"}], "correct": "2", "explanation": "The books seem to stand at attention when the short grandmother enters. Giving books a human response emphasizes how commanding her presence is despite her physical size.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2019-june-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The overall tone of the poem can best be described as", "choices": [{"label": "1", "text": "objective"}, {"label": "2", "text": "skeptical"}, {"label": "3", "text": "respectful"}, {"label": "4", "text": "critical"}], "correct": "3", "explanation": "The speaker remembers the grandmother’s optimism, wisdom, and powerful presence with affection and admiration. That produces a respectful tone.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

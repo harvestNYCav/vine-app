@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "31d5faa4a83abc02c9d9d3d8a61e6e01043470e16446c8e9fcf36d8473f6ca84",
+  "questions": {
+    "1": {
+      "prompt": "A plane intersects a sphere. Which two-dimensional shape is formed by the cross section?",
+      "choices": ["rectangle", "triangle", "square", "circle"],
+      "explanation": "Every non-tangent plane that cuts through a sphere forms a circle where it meets the sphere.",
+      "imageAlt": "Printed sphere cross-section question; the plane and solid are described in accessible text."
+    },
+    "2": {
+      "prompt": "Segment AB has endpoints A(−5, 3) and B(7, −5). Point P divides AB with AP:PB = 3:1. What are P's coordinates?",
+      "choices": ["(−2, −3)", "(1, −1)", "(−2, 1)", "(4, −3)"],
+      "explanation": "The 3:1 ratio places P three fourths of the way from A to B. The displacement is (12, −8), and three fourths is (9, −6). Add this to A(−5, 3) to get P(4, −3).",
+      "imageAlt": "Printed segment-partition question; signed coordinates and the ratio are available in accessible text."
+    },
+    "3": {
+      "prompt": "A ladder reaches a house from a point 8 feet away from its base. The ladder length is 25 feet. To the nearest degree, what angle does the ladder make with the ground?",
+      "choices": ["18°", "19°", "71°", "72°"],
+      "explanation": "The 8-foot ground distance is adjacent to the angle, and the 25-foot ladder is the hypotenuse. Thus cos θ = 8/25, so θ ≈ 71.3°, which rounds to 71°.",
+      "imageAlt": "Printed ladder problem; the horizontal distance and sloping ladder length are specified in accessible text."
+    },
+    "4": {
+      "prompt": "A cylindrical cup has diameter 10 cm and total height 9 cm. It is filled with water to height 8 cm. What is the water volume to the nearest cubic centimeter?",
+      "choices": ["628", "707", "2513", "2827"],
+      "explanation": "The water's radius is 10/2 = 5 cm and its depth is 8 cm, not the cup's full 9 cm. Volume is π(5²)(8) = 200π ≈ 628 cubic centimeters.",
+      "imageAlt": "Upright cylinder has its top diameter labeled 10 cm and its full vertical height labeled 9 cm. The question separately states that water reaches only 8 cm."
+    },
+    "5": {
+      "prompt": "Which quadrilateral always has perpendicular diagonals?",
+      "choices": ["rectangle", "rhombus", "trapezoid", "parallelogram"],
+      "explanation": "The diagonals of every rhombus meet at right angles. An ordinary rectangle, trapezoid, or parallelogram need not have perpendicular diagonals.",
+      "imageAlt": "Printed quadrilateral-property question; all four shape names are in accessible text."
+    },
+    "6": {
+      "prompt": "Which regular polygon maps onto itself after a 300° rotation about its center?",
+      "choices": ["decagon", "nonagon", "octagon", "hexagon"],
+      "explanation": "A regular hexagon maps onto itself at multiples of 360°/6 = 60°. Since 300° is five 60° steps, it works for the hexagon.",
+      "imageAlt": "Printed rotational-symmetry question; the angle and polygon names are available in accessible text."
+    },
+    "7": {
+      "prompt": "A rectangle is continuously rotated about one of its sides, labeled S. Which three-dimensional figure is formed?",
+      "choices": ["rectangular prism", "square pyramid", "cylinder", "cone"],
+      "explanation": "The side S acts as a fixed axis. The opposite side sweeps a circle, and the whole rectangle sweeps out a cylinder.",
+      "imageAlt": "A tall rectangle is shown with its left vertical side marked S. That side is the axis of rotation."
+    },
+    "8": {
+      "prompt": "Find an equation of the line through (−2, 3) perpendicular to 4x − 5y = 6.",
+      "choices": ["y + 3 = −(5/4)(x − 2)", "y − 3 = −(5/4)(x + 2)", "y + 3 = (4/5)(x − 2)", "y − 3 = (4/5)(x + 2)"],
+      "explanation": "Rearrange 4x − 5y = 6 to y = (4/5)x − 6/5. Its perpendicular slope is −5/4. Point-slope form through (−2, 3) is y − 3 = −(5/4)(x + 2).",
+      "imageAlt": "Printed perpendicular-line question; negative coordinates and all slope fractions are preserved in accessible text."
+    },
+    "9": {
+      "prompt": "In circle P, AC is a diameter of length 12 and BP is a radius. Central angle APB = 110°. What is the area of shaded sector BPC?",
+      "choices": ["7π/6", "7π", "11π", "28π"],
+      "explanation": "Because AC is a diameter, angle APC is 180°. Hence central angle BPC is 180° − 110° = 70°. The radius is 6, so the sector area is (70/360)π(6²) = 7π.",
+      "imageAlt": "Circle centered at P has diameter A-P-C slanting from lower left to upper right. Radius PB extends upward. Angle APB is marked 110°, and the sector between PB and PC in the upper-right region is shaded."
+    },
+    "10": {
+      "prompt": "In triangle ABC, side BC is extended through C to D. If angle A = 30° and exterior angle ACD = 110°, what is the longest side of triangle ABC?",
+      "choices": ["AC", "BC", "AB", "CD"],
+      "explanation": "Interior angle C is 180° − 110° = 70°. Then angle B is 180° − 30° − 70° = 80°, the largest angle. Its opposite side AC is therefore longest in triangle ABC.",
+      "imageAlt": "Printed exterior-angle triangle question; the extension through C and both angle measures are given in accessible text."
+    },
+    "11": {
+      "prompt": "Right triangle ACT has angle A = 90°. Which expression always equals cos T?",
+      "choices": ["cos C", "sin C", "tan T", "sin T"],
+      "explanation": "The acute angles C and T are complementary, so the cosine of T equals the sine of C.",
+      "imageAlt": "Printed right-triangle trigonometry question; the right angle and all function choices are in accessible text."
+    },
+    "12": {
+      "prompt": "A solid-glass regular square pyramid has base area 36 cm², height 10 cm, and density 2.7 grams per cubic centimeter. What is its mass in grams?",
+      "choices": ["120", "324", "360", "972"],
+      "explanation": "Pyramid volume is one third of base area times height: (1/3)(36)(10) = 120 cm³. Mass is density times volume, 2.7(120) = 324 grams.",
+      "imageAlt": "Printed pyramid mass question; base area, height, density, and units are fully available in accessible text."
+    },
+    "13": {
+      "prompt": "For circle x² + y² + 12x = −27, what are its center and radius?",
+      "choices": ["center (6, 0), radius 3", "center (6, 0), radius 9", "center (−6, 0), radius 3", "center (−6, 0), radius 9"],
+      "explanation": "Complete the square: x² + 12x + 36 + y² = −27 + 36, so (x + 6)² + y² = 9. The center is (−6, 0) and the radius is √9 = 3.",
+      "imageAlt": "Printed circle-equation question; the signed x term, squared terms, and each center-radius pair are in accessible text."
+    },
+    "14": {
+      "prompt": "In triangle ABC, D lies on AB and E on AC, with DE parallel to BC. If AD = 12, DB = 8, and EC = 10, find AC.",
+      "choices": ["15", "22", "24", "25"],
+      "explanation": "Parallel DE and BC make triangles ADE and ABC similar. AB = 12 + 8 = 20, so AE/AC = AD/AB = 12/20 = 3/5. The remaining segment EC is 2/5 of AC and equals 10, giving AC = 25.",
+      "imageAlt": "Triangle ABC has A at top, B lower left, C lower right. D is on side AB, E on side AC, and horizontal DE lies across the triangle parallel to horizontal base BC."
+    },
+    "15": {
+      "prompt": "Inside square ABCD, triangle ABE is equilateral and segment CE is drawn. What is angle BEC?",
+      "choices": ["30°", "60°", "75°", "90°"],
+      "explanation": "At B, the square's corner is 90° and the equilateral triangle contributes angle ABE = 60°, leaving angle EBC = 30°. Also BE = AB = BC, so triangle BEC is isosceles. Its two base angles are (180° − 30°)/2 = 75°, including angle BEC.",
+      "imageAlt": "Square ABCD has A upper left, B upper right, C lower right, D lower left. E lies inside near the lower center. Segments AE and BE form an equilateral triangle with top side AB; segment CE connects E to C."
+    },
+    "16": {
+      "prompt": "In quadrilateral ADBE, DE is the perpendicular bisector of AB, meeting it at C. Which statement is always true?",
+      "choices": ["angle ADC ≅ angle BDC", "angle EAC ≅ angle DAC", "AD ≅ BE", "AE ≅ AD"],
+      "explanation": "D lies on the perpendicular bisector of AB, so AD = BD. Triangles ADC and BDC also share DC and have AC = BC, making them congruent by SSS. Thus corresponding angles ADC and BDC are equal.",
+      "imageAlt": "Kite-like quadrilateral has D at top, E at bottom, A left, and B right. Vertical DE crosses horizontal AB at its midpoint C at a right angle. Segments from D and E to A and B form the four outer sides."
+    },
+    "17": {
+      "prompt": "What is the image of point (4, 3) reflected over y = 1?",
+      "choices": ["(−2, 3)", "(−4, 3)", "(4, −1)", "(4, −3)"],
+      "explanation": "A reflection across the horizontal line y = 1 keeps x = 4. The original y = 3 is 2 units above the line, so the image is 2 units below at y = −1.",
+      "imageAlt": "Printed reflection question; the point, mirror line, and choices are in accessible text."
+    },
+    "18": {
+      "prompt": "A cone has base diameter 16 inches and slant height 17 inches. What is its volume in cubic inches?",
+      "choices": ["320π", "363π", "960π", "1280π"],
+      "explanation": "The radius is 8 inches. Radius, height, and slant height make a right triangle, so h = √(17² − 8²) = 15 inches. Cone volume is (1/3)π(8²)(15) = 320π.",
+      "imageAlt": "Downward-pointing cone has its circular top diameter labeled 16 in and a sloping side from rim to tip labeled 17 in. A dashed vertical height meets the diameter at a right angle."
+    },
+    "19": {
+      "prompt": "Horizontal lines ℓ and m cross slanted lines n and p to form a quadrilateral. Which angle-congruence pair is sufficient to prove it is a parallelogram?",
+      "choices": ["angle 1 ≅ angle 6 and angle 9 ≅ angle 14", "angle 5 ≅ angle 10 and angle 6 ≅ angle 9", "angle 5 ≅ angle 7 and angle 10 ≅ angle 15", "angle 6 ≅ angle 9 and angle 9 ≅ angle 11"],
+      "explanation": "Angles 6 and 9 are alternate interior angles for lines ℓ and m cut by n, so their congruence proves ℓ ∥ m. Angles 9 and 11 are corresponding angles for lines n and p cut by m, so their congruence proves n ∥ p. Both pairs of opposite sides are parallel.",
+      "imageAlt": "Shaded quadrilateral is bounded by horizontal ℓ on top and m below and slanted n at left and p at right. At upper-left crossing, angles 1,2,5,6 occupy upper-left, upper-right, lower-left, lower-right positions; upper-right crossing uses 3,4,7,8 in the same pattern; lower-left uses 9,10,13,14; lower-right uses 11,12,15,16."
+    },
+    "20": {
+      "prompt": "From external point T, secants TSR and TMH cross a circle. Their segments satisfy SR = 5, HM = 9, TM = 3, and TS = x. Which equation finds x?",
+      "choices": ["x(x + 5) = 36", "x(x + 5) = 27", "3x = 45", "5x = 27"],
+      "explanation": "The secant-secant theorem multiplies each external segment by its whole secant: TS·TR = TM·TH. Here TR = x + 5 and TH = 3 + 9 = 12, so x(x + 5) = 3(12) = 36.",
+      "imageAlt": "Circle has T outside at right. Upper secant runs T-S-R with external TS labeled x and internal SR labeled 5. Lower secant runs T-M-H with external TM labeled 3 and internal MH labeled 9."
+    },
+    "21": {
+      "prompt": "Trapezoid ABCD has A(2, 1), B(5, 4), and D(−2, 3). Which point could be vertex C?",
+      "choices": ["(1, 5)", "(4, 10)", "(−1, 6)", "(−3, 8)"],
+      "explanation": "Side AD has slope (3−1)/(−2−2) = −1/2. For C(−3, 8), side BC has slope (8−4)/(−3−5) = −1/2, making AD and BC parallel as required for this trapezoid.",
+      "imageAlt": "Coordinate grid shows A at (2,1), B up-right at (5,4), and D up-left at (−2,3). Sides AB and AD are drawn, leaving the fourth vertex C to be chosen."
+    },
+    "22": {
+      "prompt": "Congruent triangles ABC and DEC are shown. Which transformation maps triangle ABC onto triangle DEC?",
+      "choices": ["a rotation", "a line reflection", "a translation followed by a dilation", "a line reflection followed by a second line reflection"],
+      "explanation": "Corresponding vertex C stays fixed while A maps to D and B maps to E. The orientation reverses, which a single line reflection through C accomplishes; rotations and pairs of reflections preserve orientation.",
+      "imageAlt": "Triangle ABC lies below-left of shared vertex C, with A lower left and B directly below C. Congruent triangle DEC lies above-right of C, with D above-right and E directly right of C. The ordered correspondence is A/D, B/E, C/C."
+    },
+    "23": {
+      "prompt": "Triangle TAP is dilated by scale factor 0.5 to triangle T'A'P'. Which statement is true?",
+      "choices": ["angle T'A'P' is half angle TAP", "angle T'A'P' is twice angle TAP", "TA = 2(T'A')", "TA = (1/2)(T'A')"],
+      "explanation": "Dilation preserves angles and multiplies every length by 0.5. Hence T'A' = 0.5·TA, or equivalently TA = 2(T'A').",
+      "imageAlt": "Printed dilation question; scale factor, corresponding vertices, and all angle and length relationships are in accessible text."
+    },
+    "24": {
+      "prompt": "In triangle ABC, X lies on AB and Y lies on AC. Given angle AYX = angle B, which statement is not always true?",
+      "choices": ["AX/AC = XY/CB", "AY/AB = AX/AC", "(AY)(CB) = (XY)(AB)", "(AY)(AB) = (AC)(AX)"],
+      "explanation": "Triangles AYX and ABC share angle A and have angle Y = angle B, so they are similar with A↔A, Y↔B, X↔C. The valid ratio is AY/AB = AX/AC = XY/BC, yielding the first three choices. Cross-multiplying the middle equality gives (AY)(AC) = (AB)(AX), not (AY)(AB) = (AC)(AX).",
+      "imageAlt": "Large triangle ABC has A at top, B lower left, C lower right. X lies partway down AB, Y partway down AC, and segment XY spans the interior. The given angle AYX is at Y between YA and YX."
+    }
+  }
+}

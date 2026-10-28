@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "1b8247209043829c25183a0c92e677a4efd52e2328414c93be3b1355ebc5c940",
+  "questions": {
+    "1": {
+      "prompt": "A television commercial's cost is C(n)=110n+900 dollars for n airings. Which statement describes this model?",
+      "choices": ["It costs $0 to produce and $110 per airing up to $900.", "It costs $110 to produce and $900 per airing.", "It costs $900 to produce and $110 per airing.", "It costs $1010 to produce and can air unlimited times."],
+      "explanation": "The constant 900 is the initial cost before any airing, and the coefficient 110 adds $110 for each airing.",
+      "imageAlt": "Complete linear cost model C of n equals one hundred ten n plus nine hundred, with four production-versus-per-airing interpretations, is transcribed."
+    },
+    "2": {
+      "prompt": "A jogger's speed-versus-time graph is horizontal at 6 miles per hour from minute 9 through minute 12. What was she doing then?",
+      "choices": ["standing still", "increasing her speed", "decreasing her speed", "jogging at a constant rate"],
+      "explanation": "The horizontal segment means her speed did not change. It stays at 6 miles per hour throughout the 9–12 minute interval.",
+      "imageAlt": "Speed is plotted in miles per hour against minutes zero through twenty; the segment from nine through twelve minutes is flat at six miles per hour. All four motion choices are transcribed."
+    },
+    "3": {
+      "prompt": "A rectangle has area x⁴−9y². Which product could represent its length times width?",
+      "choices": ["(x−3y)(x+3y)", "(x²−3y)(x²+3y)", "(x²−3y)(x²−3y)", "(x⁴+y)(x−9y)"],
+      "explanation": "This is a difference of squares: x⁴−9y²=(x²)²−(3y)²=(x²−3y)(x²+3y).",
+      "imageAlt": "Fourth power of x minus nine y squared and all four candidate products are transcribed with powers, signs, and parentheses."
+    },
+    "4": {
+      "prompt": "Which input-output table represents a function?",
+      "choices": ["x: 2,4,2,4; f(x): 3,5,7,9", "x: 0,−1,0,1; f(x): 0,1,−1,0", "x: 3,5,7,9; f(x): 2,4,2,4", "x: 0,1,−1,0; f(x): 0,−1,0,1"],
+      "explanation": "Choice 3 has four distinct input values, each with exactly one output. The other tables assign different outputs to a repeated input.",
+      "imageAlt": "Every row of all four input-output tables is transcribed; repeated inputs in choices one, two, and four can be compared directly."
+    },
+    "5": {
+      "prompt": "A solid boundary line crosses the y-axis at 4 and falls 3 units for each unit right. The region to the right/above the line is shaded. Which inequality is graphed?",
+      "choices": ["y≥−3x+4", "y≤−3x+4", "y≥−4x−3", "y≤−4x−3"],
+      "explanation": "The line has equation y=−3x+4. A point in the shaded region, such as (5,0), satisfies 0≥−3·5+4. The solid line includes equality.",
+      "imageAlt": "Solid decreasing line has y-intercept four and slope negative three, with shading on the above-right side; all four signed inclusive inequalities are transcribed."
+    },
+    "6": {
+      "prompt": "Mo sold 165 total pounds of apples at $1.75/lb and peaches at $2.50/lb, earning $337.50. How many pounds of peaches did she sell?",
+      "choices": ["11", "18", "65", "100"],
+      "explanation": "If all 165 pounds were apples, revenue would be $288.75. Each peach pound adds $0.75, and ($337.50−$288.75)/$0.75=65 pounds.",
+      "imageAlt": "Total weight one hundred sixty-five pounds, both per-pound fruit prices, total revenue, and all four pound-count choices are transcribed."
+    },
+    "7": {
+      "prompt": "Morgan starts wrestling at age 5 in Division 1 and moves to the next division on each following odd birthday. Which age-versus-division step graph is correct?",
+      "choices": ["Division 1 for 5≤age<7, Division 2 for 7≤age<9, Division 3 for 9≤age<11, Division 4 for 11≤age<13, Division 5 for 13≤age<15", "Each lower-age endpoint is open and upper-age endpoint closed, assigning age 7 to Division 1", "Both endpoints of each two-year step are closed, assigning odd birthdays to two divisions", "Both endpoints of each two-year step are open, omitting odd birthdays"],
+      "explanation": "At his fifth birthday Morgan enters Division 1, and at age 7 he immediately enters Division 2. Each step therefore includes its left odd-age endpoint and excludes its right one, as graph 1 shows.",
+      "imageAlt": "Four step graphs show divisions one through five over ages five to fifteen. Choice one has closed circles at ages five, seven, nine, eleven, thirteen for new divisions and open circles at the next odd birthday; the other graphs reverse or mishandle endpoints."
+    },
+    "8": {
+      "prompt": "Which statement is not always true?",
+      "choices": ["The sum of two rational numbers is rational.", "The product of two irrational numbers is rational.", "The sum of a rational and an irrational is irrational.", "The product of a nonzero rational and an irrational is irrational."],
+      "explanation": "Two irrationals can have an irrational product: √2·√3=√6. They can also have a rational product, such as √2·√2=2, so choice 2 is not always true.",
+      "imageAlt": "All four full statements about sums and products of rational and irrational numbers are transcribed, including the nonzero condition in choice four."
+    },
+    "9": {
+      "prompt": "The square-root graph f(x)=√(x+4) begins at (−4,0) and continues right. What is its domain?",
+      "choices": ["{x|x>0}", "{x|x≥0}", "{x|x>−4}", "{x|x≥−4}"],
+      "explanation": "The radicand x+4 must be nonnegative, giving x≥−4. The filled starting point at x=−4 confirms the endpoint is included.",
+      "imageAlt": "Root bar covers x plus four; the curve begins at a filled point negative four comma zero and rises to the right. Four domain-set choices preserve strict versus inclusive endpoints."
+    },
+    "10": {
+      "prompt": "What are the zeros of f(x)=x²−13x−30?",
+      "choices": ["−10 and 3", "10 and −3", "−15 and 2", "15 and −2"],
+      "explanation": "Factor x²−13x−30=(x−15)(x+2), so the zeros are 15 and −2.",
+      "imageAlt": "Quadratic x squared minus thirteen x minus thirty and all four signed root pairs are transcribed."
+    },
+    "11": {
+      "prompt": "A photograph's area after enlargements 0,1,2,3,4 is 15,18.8,23.4,29.3,36.6 square inches. What is the average area-change rate from the original to enlargement 4, to the nearest tenth?",
+      "choices": ["4.3", "4.5", "5.4", "6.0"],
+      "explanation": "Use the endpoints of the interval: (36.6−15)/(4−0)=21.6/4=5.4 square inches per enlargement.",
+      "imageAlt": "Complete five-column enlargement-and-area table is transcribed, with areas fifteen, eighteen-point-eight, twenty-three-point-four, twenty-nine-point-three, thirty-six-point-six."
+    },
+    "12": {
+      "prompt": "A cubic graph crosses the x-axis at −2, 1, and 3. Which equations match? I: y=(x+2)(x²−4x−12); II: y=(x−3)(x²+x−2); III: y=(x−1)(x²−5x−6).",
+      "choices": ["I, only", "II, only", "I and II", "I and III"],
+      "explanation": "II factors further as (x−3)(x+2)(x−1), giving exactly the graphed roots −2, 1, and 3. I and III have different zeros.",
+      "imageAlt": "Cubic falls left and rises right, crossing x-axis near negative two, one, and three; all three complete candidate equations and four Roman-numeral groups are transcribed."
+    },
+    "13": {
+      "prompt": "A bacteria population is 25 at day 0, 15,625 at day 2, and 9,765,625 at day 4. Which function models f(t) bacteria at day t?",
+      "choices": ["f(t)=25^t", "f(t)=25^(t+1)", "f(t)=25t", "f(t)=25(t+1)"],
+      "explanation": "At t=0 the output must be 25=25¹; at t=2 it is 15,625=25³. Thus the exponent is t+1, so f(t)=25^(t+1).",
+      "imageAlt": "All three day-and-bacteria pairs and four formulas are transcribed, distinguishing 25 raised to t from 25 raised to the whole quantity t plus one."
+    },
+    "14": {
+      "prompt": "Which downward-opening quadratic has the largest maximum? Choice 1: h(x)=(3−x)(2+x). Choice 2: table x=−1,0,1,2,3,4 gives f(x)=−3,5,9,9,5,−3. Choice 3: k(x)=−5x²−12x+4. Choice 4: graphed g(x) peaks around y=4.5.",
+      "choices": ["h(x)=(3−x)(2+x)", "tabulated f(x)", "k(x)=−5x²−12x+4", "graphed g(x)"],
+      "explanation": "Complete the square for k: −5x²−12x+4=−5(x+1.2)²+11.2, so its maximum is 11.2. The table's maximum is about 9.5, h's is 6.25, and g's graph peaks near 4.5.",
+      "imageAlt": "All six rows of tabulated f are given; graphed g opens down and peaks near y four-point-five; algebraic formulas for h and k are complete, enabling comparison of all four maxima."
+    },
+    "15": {
+      "prompt": "For f(x)=3^x and g(x)=2x+5, which listed x satisfies f(x)<g(x)?",
+      "choices": ["−1", "2", "−3", "4"],
+      "explanation": "At x=−1, 3^(−1)=1/3 while 2(−1)+5=3, so f(x)<g(x). At x=2 the two equal 9, and the other listed values do not satisfy the strict inequality.",
+      "imageAlt": "Exponential three to the x, linear two x plus five, strict less-than comparison, and four signed x choices are transcribed."
+    },
+    "16": {
+      "prompt": "Ice-cream-bar and soda-can sales have a rising scatter plot with correlation coefficient r=0.96. Which conclusions follow? I: eating ice cream causes thirst; II: drinking soda causes hunger; III: ice cream and soda sales are strongly correlated.",
+      "choices": ["I, only", "III, only", "I and III", "II and III"],
+      "explanation": "A coefficient of 0.96 shows a strong positive association between the two sales counts. Correlation cannot establish either proposed causal claim, so only III follows.",
+      "imageAlt": "About ten scatter points rise from lower left to upper right near an upward best-fit line, with r equals positive zero-point-nine-six; all three full causal-or-correlation statements and four answer groups are transcribed."
+    },
+    "17": {
+      "prompt": "A comic book's value is V(t)=1350(1.017)^t dollars after t years. What is its yearly appreciation rate?",
+      "choices": ["17%", "1.7%", "1.017%", "0.017%"],
+      "explanation": "The growth factor 1.017 equals 1+0.017. As a percent, 0.017 is 1.7% per year.",
+      "imageAlt": "Value model 1350 times 1.017 to the t power and all four percentage choices are transcribed."
+    },
+    "18": {
+      "prompt": "Completing the square on an original quadratic gave (x−5/2)²=13/4. Which original equation could it have been?",
+      "choices": ["x²+5x+7=0", "x²+5x+3=0", "x²−5x+7=0", "x²−5x+3=0"],
+      "explanation": "Expand: x²−5x+25/4=13/4. Subtract 13/4 to obtain x²−5x+12/4=0, or x²−5x+3=0.",
+      "imageAlt": "Completed-square equation quantity x minus five-halves squared equals thirteen-fourths and all four signed quadratic choices are transcribed."
+    },
+    "19": {
+      "prompt": "A falling object's distance is d=(1/2)at², where a is acceleration and t is elapsed time. Solve for nonnegative t.",
+      "choices": ["t=√(da/2)", "t=√(2d/a)", "t=(da/d)²", "t=(2d/a)²"],
+      "explanation": "Multiply d=(1/2)at² by 2/a to get t²=2d/a. Time is nonnegative, so t=√(2d/a).",
+      "imageAlt": "Distance equation d equals one-half a t squared and four full formulas for t are transcribed, retaining square-root bars, numerators, denominators, and exponents."
+    },
+    "20": {
+      "prompt": "A 24-player team's sorted annual salaries (millions) are 0.5,0.5,0.6,0.7,0.75,0.8,1.0,1.0,1.1,1.25,1.3,1.4,1.4,1.8,2.5,3.7,3.8,4,4.2,4.6,5.1,6,6.3,7.2. A 25th player earns $10 million. What happens to median and mean?",
+      "choices": ["Both increase.", "Only median increases.", "Only mean increases.", "Neither changes."],
+      "explanation": "With 24 salaries, the median is the average of the 12th and 13th, both 1.4. With 25 salaries, the 13th is still 1.4. Adding $10 million, above the old mean, increases the mean only.",
+      "imageAlt": "All twenty-four salary figures from the original four-by-six table are transcribed in ascending order, with the new ten-million-dollar salary and all four median/mean outcomes."
+    },
+    "21": {
+      "prompt": "Solving 4(3x−1)²−17=83, a student has reached (3x−1)²=25. What is the correct next step?",
+      "choices": ["3x−1=±5", "3x−1=±25", "9x²−1=25", "9x²−6x+1=5"],
+      "explanation": "Take square roots of both sides of (3x−1)²=25, remembering both signs: 3x−1=±√25=±5.",
+      "imageAlt": "Original quadratic equation, student's two algebra steps ending in quantity three x minus one squared equals twenty-five, and four complete next-step choices are transcribed."
+    },
+    "22": {
+      "prompt": "A block pattern has 2 blocks in term 1, 6 in term 2, 10 in term 3, and 14 in term 4. Which formulas give the nth count? I: aₙ=n+4; II: a₁=2 and aₙ=aₙ₋₁+4; III: aₙ=4n−2.",
+      "choices": ["I and II", "I and III", "II and III", "III, only"],
+      "explanation": "The pattern starts at 2 and gains 4 each term, matching recurrence II. Its explicit formula is 2+4(n−1)=4n−2, matching III. Formula I gives 5, not 2, at n=1.",
+      "imageAlt": "The four block figures contain two, six, ten, and fourteen squares. All three full candidate formulas and all answer groups are transcribed."
+    },
+    "23": {
+      "prompt": "Solve x²−8x=24.",
+      "choices": ["x=4±2√10", "x=−4±2√10", "x=4±2√2", "x=−4±2√2"],
+      "explanation": "Add 16 to both sides: (x−4)²=40. Taking roots gives x−4=±√40=±2√10, hence x=4±2√10.",
+      "imageAlt": "Equation x squared minus eight x equals twenty-four and four complete plus-or-minus radical solution choices are transcribed."
+    },
+    "24": {
+      "prompt": "A celebration costs $750 for a band plus $2.25 in food per attendee. For p attendees, the average cost per person must be strictly between $2.75 and $3.25. What range of p works?",
+      "choices": ["225<p<325", "325<p<750", "500<p<1000", "750<p<1500"],
+      "explanation": "Average cost is 750/p+2.25. Subtract 2.25 from the target bounds to get 0.50<750/p<1.00; with p positive this yields 750<p<1500.",
+      "imageAlt": "Fixed band cost seven hundred fifty dollars, variable food cost two dollars twenty-five cents per person, strict average-cost bounds, and four open attendance intervals are transcribed."
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "d389c526bfdc03d1e51937a2a4110c4504f775b72c88fefba5dd73c0ac620abe",
+  "questions": {
+    "1": {
+      "prompt": "Rigid motions map quadrilateral ABCD onto JKLM in that vertex order. If angle A = 82°, angle B = 104°, and angle L = 121°, find angle M.",
+      "choices": ["53°", "82°", "104°", "121°"],
+      "explanation": "The mapping order gives C↔L and D↔M, so angle C = 121°. Interior angles of a quadrilateral total 360°, leaving angle D = 360°−82°−104°−121° = 53°. Thus angle M = 53°.",
+      "imageAlt": "Coordinate diagram shows quadrilateral A-B-C-D to the right of the y-axis and its congruent image J-K-L-M to the left. Their corresponding vertices follow the order A→J, B→K, C→L, D→M."
+    },
+    "2": {
+      "prompt": "Parallelogram HAND has diagonals HN and AD meeting at S. Which statement is always true?",
+      "choices": ["HN = (1/2)AD", "AS = (1/2)AD", "angle AHS ≅ angle ANS", "angle HDS ≅ angle NDS"],
+      "explanation": "Diagonals of a parallelogram bisect one another. S is the midpoint of AD, so AS is half of AD.",
+      "imageAlt": "Parallelogram has H upper left, A upper right, N lower right, D lower left. Diagonals H-N and A-D cross at interior point S."
+    },
+    "3": {
+      "prompt": "Congruent triangles ABC and A′B′C′ are shown on coordinate axes. Which rigid motion maps ABC to A′B′C′?",
+      "choices": ["90° counterclockwise rotation about origin", "translation 3 units left and 3 units up", "180° rotation about origin", "reflection over y = x"],
+      "explanation": "Reflection over y = x swaps each point's coordinates. For example, the graph shows A(5,2) mapping to A′(2,5); the other two vertices match the same rule.",
+      "imageAlt": "Triangle ABC is right of the y-axis with A about (5,2), B about (7,−2), and C about (2,−4). Triangle A′B′C′ is above-left with vertices about (2,5), (−2,7), and (−4,2), respectively."
+    },
+    "4": {
+      "prompt": "A parasail is seen from a boat at a 32° angle of elevation. A 129.5-meter cable runs from boat to parasail. Approximately how high above the lake is the man?",
+      "choices": ["68.6", "80.9", "109.8", "244.4"],
+      "explanation": "The cable is the hypotenuse and height is opposite the 32° angle. Height = 129.5sin(32°) ≈ 68.6 meters.",
+      "imageAlt": "Right-triangle picture shows boat at left on lake, vertical height at right beneath parasail, and sloping cable of 129.5 meters making a 32° angle with the water at the boat."
+    },
+    "5": {
+      "prompt": "A right hexagonal prism is sliced by a plane perpendicular to its base. What is the two-dimensional cross section?",
+      "choices": ["triangle", "rectangle", "pentagon", "hexagon"],
+      "explanation": "A perpendicular slice through a right prism is vertical. It intersects the top and bottom bases in parallel segments and has vertical sides, forming a rectangle.",
+      "imageAlt": "Upright six-sided prism has parallel hexagonal top and bottom and vertical lateral edges; slice direction is perpendicular to the bases."
+    },
+    "6": {
+      "prompt": "Segment AC has A(−5,2) and C(4,−10). Point B divides it with AB:BC = 1:2. What are B's coordinates?",
+      "choices": ["(−2,−2)", "(−1/2,−4)", "(0,−14/3)", "(1,−6)"],
+      "explanation": "B is one third of the way from A to C. C−A = (9,−12), so B = (−5,2)+(1/3)(9,−12) = (−2,−2).",
+      "imageAlt": "Grid shows segment from A(−5,2) in upper-left quadrant down-right to C(4,−10) in lower-right quadrant; endpoint coordinates are also in the prompt."
+    },
+    "7": {
+      "prompt": "A waffle cone has base diameter 6.6 cm and volume 54.45π cm³. What is its height in centimeters?",
+      "choices": ["3 3/4", "5", "15", "24 3/4"],
+      "explanation": "The radius is 3.3 cm. Use 54.45π = (1/3)π(3.3²)h = 3.63πh, so h = 15 cm.",
+      "imageAlt": "Printed cone-volume problem; diameter, volume, and mixed-number choices are in accessible text."
+    },
+    "8": {
+      "prompt": "Triangle PQR has P(2,3), Q(3,8), R(7,3). Which coordinate transformation preserves both distances and angles?",
+      "choices": ["(x,y)→(2x,3y)", "(x,y)→(x+2,3y)", "(x,y)→(2x,y+3)", "(x,y)→(x+2,y+3)"],
+      "explanation": "Adding constants to both coordinates translates every point by the same vector and preserves distances and angles. The other rules stretch at least one coordinate.",
+      "imageAlt": "Printed transformation-rule question; all vertices and coordinate rules are in accessible text."
+    },
+    "9": {
+      "prompt": "In triangle ABC, side AC extends through A to D. Exterior angle DAB = (180−3x)°, angle B = (6x−40)°, and angle C = (x+20)°. Find angle BAC.",
+      "choices": ["20°", "40°", "60°", "80°"],
+      "explanation": "The exterior-angle theorem gives 180−3x = (6x−40)+(x+20) = 7x−20, so x = 20. Angle BAC and exterior angle DAB are supplementary, hence angle BAC = 3x = 60°.",
+      "imageAlt": "D, A, C lie in that order on a horizontal line. B is above, connected to A and C. The exterior angle at A between AD and AB is 180−3x degrees; interior B and C angles are 6x−40 and x+20 degrees."
+    },
+    "10": {
+      "prompt": "A quarter-circle region centered at the origin lies between the negative x-axis and negative y-axis. What solid forms when it rotates continuously about the y-axis?",
+      "choices": ["cone", "sphere", "cylinder", "hemisphere"],
+      "explanation": "The quarter-disk sweeps around the y-axis through a full turn, filling the lower half of a sphere, which is a hemisphere.",
+      "imageAlt": "Coordinate axes show a quarter-circle arc in quadrant III from a point on the negative x-axis down to a point on the negative y-axis; the quarter-disk between the arc and axes is intended to rotate about the y-axis."
+    },
+    "11": {
+      "prompt": "Rectangle A′B′C′D′ is a dilation of ABCD centered at A with scale factor 2/3. Which statement is correct?",
+      "choices": ["image perimeter is 2/3 of original perimeter", "image perimeter is 3/2 of original perimeter", "image area is 2/3 of original area", "image area is 3/2 of original area"],
+      "explanation": "Perimeter scales linearly with a dilation factor, so it becomes 2/3 of the original. Area instead scales by (2/3)² = 4/9.",
+      "imageAlt": "Printed dilation-measurement question; scale factor and all perimeter and area ratios are in accessible text."
+    },
+    "12": {
+      "prompt": "Circle x²+y²−6x+2y = 6 has what center and radius?",
+      "choices": ["center (−3,1), radius 4", "center (3,−1), radius 4", "center (−3,1), radius 16", "center (3,−1), radius 16"],
+      "explanation": "Complete squares: (x−3)²+(y+1)² = 6+9+1 = 16. Thus center is (3,−1) and radius is √16 = 4.",
+      "imageAlt": "Printed circle-equation problem; all signs, centers, and radii are in accessible text."
+    },
+    "13": {
+      "prompt": "In triangle ABC, D lies on AC and E on BC, with DE ∥ AB. If CD = 15, AD = 9, and AB = 40, find DE.",
+      "choices": ["15", "24", "25", "30"],
+      "explanation": "CA = CD+DA = 24. Similar triangles CDE and CAB have DE/AB = CD/CA = 15/24, so DE = 40(15/24) = 25.",
+      "imageAlt": "Triangle has A lower left, B lower right, C above. D lies between A and C on the left side, E on right side CB, and segment DE runs parallel to base AB."
+    },
+    "14": {
+      "prompt": "Line 3x−5y = 4 is dilated about the origin by factor 5/3. How do image slope and y-intercept compare with the original?",
+      "choices": ["same slope, different y-intercept", "same y-intercept, different slope", "same slope and same y-intercept", "different slope and different y-intercept"],
+      "explanation": "The original line is y = (3/5)x−4/5. An origin-centered dilation preserves its slope and scales its nonzero intercept by 5/3, making the new intercept −4/3.",
+      "imageAlt": "Printed line-dilation comparison; equation and factor are in accessible text."
+    },
+    "15": {
+      "prompt": "Which transformation does not map a square onto itself?",
+      "choices": ["reflection across a diagonal", "90° clockwise rotation about its center", "180° rotation about one of its vertices", "reflection across the perpendicular bisector of one side"],
+      "explanation": "A half-turn about one vertex sends the rest of the square to a different location. The center, not a vertex, is the center of a square's rotational symmetries; its diagonals and side bisectors are reflection axes.",
+      "imageAlt": "Printed square-symmetry question; each axis or rotation center is in accessible text."
+    },
+    "16": {
+      "prompt": "In circle M, AC is a diameter, AB and BC are chords, and MB is a radius. Which statement is not true?",
+      "choices": ["triangle ABC is right", "triangle ABM is isosceles", "minor arc BC has measure equal to angle BMC", "minor arc AB has measure one-half of angle ACB"],
+      "explanation": "An inscribed angle is half the measure of its intercepted arc. Angle ACB intercepts arc AB, so arc AB is twice angle ACB, not half. The other facts follow from diameter AC, equal radii MA and MB, and central angle BMC.",
+      "imageAlt": "Circle centered M has diameter A-M-C sloping down-right from upper-left A to lower-right C. Point B lies on left-lower rim. Chords A-B and B-C complete inscribed triangle ABC, and radius M-B is drawn."
+    },
+    "17": {
+      "prompt": "Segments XS and YR intersect at Z. XY and RS are each perpendicular to YR, forming right triangles XYZ and SRZ. Which relation always holds?",
+      "choices": ["(XY)(SR) = (XZ)(RZ)", "triangle XYZ ≅ triangle SRZ", "XS ≅ YR", "XY/SR = YZ/RZ"],
+      "explanation": "The triangles have right angles at Y and R and vertical angles at Z, so they are similar by AA. Matching vertical legs XY↔SR and horizontal legs YZ↔RZ gives XY/SR = YZ/RZ.",
+      "imageAlt": "Horizontal Y-Z-R line has X directly above Y and S directly below R. Diagonal X-Z-S descends through Z, making two opposed right triangles with vertical legs XY and RS."
+    },
+    "18": {
+      "prompt": "Parallel horizontal lines A-B-C and E-F-G are crossed by B-F; triangle EBF has BF ≅ EF. If angle CBF = 42.5°, find angle EBF.",
+      "choices": ["42.5°", "68.75°", "95°", "137.5°"],
+      "explanation": "Parallel lines give angle EFB = angle CBF = 42.5°. Because BF = EF, triangle EBF has base BE and equal base angles at B and E. Each is (180°−42.5°)/2 = 68.75°.",
+      "imageAlt": "A-B-C is top horizontal line; E-F-G lower parallel line. Segment B-F slants down-right and extends past both lines. Segment B-E slants down-left, making triangle B-E-F between the lines."
+    },
+    "19": {
+      "prompt": "A parallelogram must be a rhombus if its diagonals have which property?",
+      "choices": ["congruent", "bisect each other", "do not bisect its angles", "perpendicular to each other"],
+      "explanation": "In a parallelogram, perpendicular diagonals force the adjacent sides to have equal length, so all four sides are equal and the figure is a rhombus.",
+      "imageAlt": "Printed parallelogram-property question; all candidate diagonal properties are in accessible text."
+    },
+    "20": {
+      "prompt": "Which line passes through (6,9) and is perpendicular to 4x−6y = 15?",
+      "choices": ["y−9 = −(3/2)(x−6)", "y−9 = (2/3)(x−6)", "y+9 = −(3/2)(x+6)", "y+9 = (2/3)(x+6)"],
+      "explanation": "Rearrange the given line to y = (2/3)x−5/2, so its slope is 2/3. The perpendicular slope is −3/2; point-slope form through (6,9) is y−9 = −(3/2)(x−6).",
+      "imageAlt": "Printed perpendicular-line question; point, original equation, and four signed point-slope forms are in accessible text."
+    },
+    "21": {
+      "prompt": "Cyclic quadrilateral ABCD has angle A = 80°, B = 75°, C = (y+30)°, and D = (x−10)°. Which pair of x and y is true?",
+      "choices": ["x=85, y=50", "x=90, y=45", "x=110, y=75", "x=115, y=70"],
+      "explanation": "Opposite angles of a cyclic quadrilateral sum to 180°. Therefore C = 100° gives y+30 = 100 and y = 70; D = 105° gives x−10 = 105 and x = 115.",
+      "imageAlt": "Circle O contains inscribed quadrilateral with A upper left, B upper right, C lower right, D lower left. Interior angles at A and B are 80° and 75°; angles at C and D are y+30 and x−10 degrees."
+    },
+    "22": {
+      "prompt": "A regular square pyramid has base perimeter 36 inches and height 15 inches. What is its volume in cubic inches?",
+      "choices": ["180", "405", "540", "1215"],
+      "explanation": "The square side is 36/4 = 9 inches, so base area is 81 square inches. Volume is (1/3)(81)(15) = 405 cubic inches.",
+      "imageAlt": "Printed square-pyramid volume question; base perimeter and height are in accessible text."
+    },
+    "23": {
+      "prompt": "Right triangle ABC has right angle B, hypotenuse AC = 12, and altitude BD to AC. If AD = 8, find BC.",
+      "choices": ["4√2", "4√3", "4√5", "4√6"],
+      "explanation": "The projection adjacent to BC is DC = AC−AD = 12−8 = 4. The leg theorem gives BC² = DC·AC = 4·12 = 48, so BC = 4√3.",
+      "imageAlt": "Right triangle has B lower left, A lower right, C above B. Hypotenuse C-D-A slopes down-right and is 12 long; D lies on it, with DA = 8. Altitude B-D meets the hypotenuse at a right angle."
+    },
+    "24": {
+      "prompt": "Two concentric circles have center O. Rays O-C-E and O-D-F show the same central angle in the inner and outer circles. If inner radius OC = 4 and outer radius OE = 6, how do arc EF and arc CD compare?",
+      "choices": ["EF is 2 units longer", "EF is 4 units longer", "EF is 1.5 times as long", "EF is 2.0 times as long"],
+      "explanation": "Both arcs subtend the same central angle, so their lengths are proportional to their radii. The outer-to-inner ratio is 6/4 = 1.5, making arc EF 1.5 times arc CD.",
+      "imageAlt": "Two nested circles share center O. One ray from O passes through inner-circle C and outer-circle E above-right; another passes through inner D and outer F below-right. The arcs CD and EF lie between the same rays."
+    }
+  }
+}

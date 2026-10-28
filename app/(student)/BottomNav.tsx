@@ -25,10 +25,14 @@ function BottomNavInner() {
   const normalizedPathname = pathname.startsWith(BASE_PATH)
     ? pathname.slice(BASE_PATH.length) || '/'
     : pathname
-  const activeMode = mode === 'math' || normalizedPathname.startsWith('/skills') || normalizedPathname.startsWith('/math')
+  const isMathRegents = /^\/regents\/(?:algebra-i|geometry|algebra-ii)(?:\/|$)/.test(normalizedPathname)
+  const isElaRegents = normalizedPathname === '/regents/english' || normalizedPathname.startsWith('/regents/english/')
+  const activeMode = isMathRegents || normalizedPathname.startsWith('/skills') || normalizedPathname.startsWith('/math')
     ? 'math'
-    : mode === 'ela' || normalizedPathname.startsWith('/ela/exams')
+    : isElaRegents || normalizedPathname.startsWith('/ela/exams')
     ? 'ela'
+    : mode === 'math' || mode === 'ela'
+    ? mode
     : null
 
   const buildHref = (href: string) => {
@@ -48,6 +52,7 @@ function BottomNavInner() {
             normalizedPathname.startsWith(item.href + '/') ||
             (item.href === '/modules' && (
               normalizedPathname.startsWith('/math/exams') || normalizedPathname.startsWith('/ela/exams')
+              || normalizedPathname.startsWith('/regents/')
             ))
           return (
             <a

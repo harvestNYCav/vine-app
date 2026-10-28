@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "aeec890c9919d8343b27ec55107322f8b827c93c7327b6edf0fe343303768c06",
+  "questions": {
+    "1": {
+      "prompt": "A hiker's distance from camp in miles at hours 0,1,2,3,4,5 is 0,2,3.5,4.5,5,5. Which hourly interval has the greatest rate of change?",
+      "choices": ["hour 0 to 1", "hour 1 to 2", "hour 2 to 3", "hour 3 to 4"],
+      "explanation": "The one-hour distance changes are 2, 1.5, 1, and 0.5 miles for the listed intervals. The greatest is 2 miles per hour from hour 0 to 1.",
+      "imageAlt": "Distance-versus-hours line graph passes through (0,0),(1,2),(2,3.5),(3,4.5),(4,5),(5,5). Horizontal axis is hours and vertical axis miles; four one-hour intervals are transcribed."
+    },
+    "2": {
+      "prompt": "What is a solution of an equation in two variables x and y?",
+      "choices": ["all x-values making y=0", "all y-values making x=0", "all ordered pairs (x,y) making the equation true", "only ordered pairs where its graph crosses the y-axis"],
+      "explanation": "A two-variable equation is satisfied by an ordered pair when substituting both its x- and y-values makes the equation true. The set of all such pairs is its solution set.",
+      "imageAlt": "Four definitions of a two-variable equation's solution are transcribed, contrasting x-only values, y-only values, all satisfying ordered pairs, and y-axis intersections."
+    },
+    "3": {
+      "prompt": "Which statistic cannot generally be determined from a box plot of test scores?",
+      "choices": ["lowest score", "median score", "highest score", "most frequently occurring score"],
+      "explanation": "A box plot shows the minimum, median, and maximum as part of its five-number summary. It does not show frequencies of individual scores, so the mode cannot be read from it.",
+      "imageAlt": "Four possible statistics are transcribed: minimum, median, maximum, and most frequent score."
+    },
+    "4": {
+      "prompt": "Which table could represent f(x)=−2x+6 when x=0,2,4,6?",
+      "choices": ["6,10,14,18", "4,6,8,10", "8,10,12,14", "6,2,−2,−6"],
+      "explanation": "Evaluate at the given inputs: f(0)=6, f(2)=2, f(4)=−2, and f(6)=−6. Those outputs appear in the fourth table.",
+      "imageAlt": "All four complete x-output tables are transcribed as output sequences for inputs zero, two, four, six; function is negative two x plus six."
+    },
+    "5": {
+      "prompt": "If f(n)=(n−1)²+3n, which statement is true?",
+      "choices": ["f(3)=−2", "f(−2)=3", "f(−2)=−15", "f(−15)=−2"],
+      "explanation": "Substitute n=−2: (−2−1)²+3(−2)=9−6=3. Thus f(−2)=3.",
+      "imageAlt": "Function quantity n minus one squared plus three n and four proposed input-output statements are transcribed with signed inputs."
+    },
+    "6": {
+      "prompt": "Six students' overall averages are 92,98,84,80,75,82; their corresponding math averages are 91,95,85,85,75,78. What is the correlation coefficient approximately closest to?",
+      "choices": ["−1", "1", "0", "0.5"],
+      "explanation": "Students with higher overall averages tend to have higher math averages, in a strong nearly linear pattern. The correlation is positive and near 1, not negative or weak.",
+      "imageAlt": "All six aligned overall/math average pairs are transcribed: (92,91),(98,95),(84,85),(80,85),(75,75),(82,78), with four candidate correlation values."
+    },
+    "7": {
+      "prompt": "Solve 2h+8>3h−6.",
+      "choices": ["h<14", "h<14/5", "h>14", "h>14/5"],
+      "explanation": "Subtract 2h and add 6 to get 14>h, equivalently h<14.",
+      "imageAlt": "Strict inequality two h plus eight greater than three h minus six, with four candidate bounds and signs transcribed."
+    },
+    "8": {
+      "prompt": "Which expression is equivalent to 36x²−100?",
+      "choices": ["4(3x−5)(3x−5)", "4(3x+5)(3x−5)", "2(9x−25)(9x−25)", "2(9x+25)(9x−25)"],
+      "explanation": "Factor out 4: 36x²−100=4(9x²−25). Then use difference of squares: 9x²−25=(3x+5)(3x−5).",
+      "imageAlt": "Quadratic thirty-six x squared minus one hundred and four full factorizations are transcribed with outer factors, coefficient values, and signs."
+    },
+    "9": {
+      "prompt": "To compare average rainfall in New York and Arizona during July through September, which unit is most suitable?",
+      "choices": ["feet per hour", "inches per hour", "inches per month", "feet per month"],
+      "explanation": "Rainfall for a monthly comparison is commonly measured in inches of rain per month. Hours are too short a time unit and feet too large a depth unit for this context.",
+      "imageAlt": "Two-state comparison across three months and all four rainfall depth-per-time units are transcribed."
+    },
+    "10": {
+      "prompt": "Which function defines −6,−10,−14,−18,… and satisfies f(6)=−26?",
+      "choices": ["f(x)=−4x−2", "f(x)=4x−2", "f(x)=−x+32", "f(x)=x−26"],
+      "explanation": "The sequence drops by 4 each step, so its slope is −4. At x=1 the value is −6, giving intercept −2 and rule f(x)=−4x−2; it also gives f(6)=−26.",
+      "imageAlt": "Four initial sequence terms, condition f of six equals negative twenty-six, and four complete linear formulas are transcribed."
+    },
+    "11": {
+      "prompt": "Which function has the greatest y-intercept?",
+      "choices": ["f(x)=3x", "2x+3y=12", "line of slope 2 passing through (1,−4)", "rising line graph crossing the y-axis at 5"],
+      "explanation": "The y-intercepts are 0 for f(x)=3x, 4 for 2x+3y=12, −6 for the line through (1,−4) with slope 2, and 5 for the graphed line. The graph's 5 is greatest.",
+      "imageAlt": "Three algebraic line descriptions and one graphed rising line are transcribed; the graph crosses the y-axis at five. The other line equations are shown in full."
+    },
+    "12": {
+      "prompt": "What is (2x+3)(4x²−5x+6)?",
+      "choices": ["8x³−2x²+3x+18", "8x³−2x²−3x+18", "8x³+2x²−3x+18", "8x³+2x²+3x+18"],
+      "explanation": "Multiply each term: 8x³−10x²+12x+12x²−15x+18. Combining like terms gives 8x³+2x²−3x+18.",
+      "imageAlt": "Full binomial-times-trinomial product and four cubic polynomial choices are transcribed, preserving exponents and every sign."
+    },
+    "13": {
+      "prompt": "Rocket heights at seconds 0,1,2,3,4,5,6,7 are 180,260,308,324,308,260,180,68 feet. Which conclusion is not valid?",
+      "choices": ["launched from 180 feet", "maximum at 3 seconds", "hit the ground after about 6 seconds", "above 300 feet for about 2 seconds"],
+      "explanation": "The table still shows the rocket 180 feet high at 6 seconds and 68 feet high at 7 seconds, so it had not hit the ground after approximately 6 seconds. The other statements agree with the starting, peak, and near-300-foot table values.",
+      "imageAlt": "Complete rocket time-height table is transcribed, including height 180 feet at six seconds and 68 feet at seven; four proposed conclusions are transcribed."
+    },
+    "14": {
+      "prompt": "A garage charges $3.50 for up to 2 hours, then x dollars per additional hour. Prices are 3 hours $9, 4 hours $14.50, 5 hours $20. Which equation can determine x?",
+      "choices": ["9.00+3x=20.00", "9.00+3.50x=20.00", "2x+3.50=14.50", "2x+9.00=14.50"],
+      "explanation": "Four hours includes two hours beyond the $3.50 base period. Thus $3.50+2x=$14.50, giving x=$5.50 per extra hour.",
+      "imageAlt": "Full parking-rate table for two through five hours is transcribed, including base two-hour charge, and all four candidate linear equations are transcribed."
+    },
+    "15": {
+      "prompt": "Which representation has constant rate of change −3?",
+      "choices": ["table (0,2),(1,5),(2,8),(3,11)", "relation {(1,5),(2,2),(3,−5),(4,4)}", "descending line graph with slope about −2", "equation 2y=−6x+10"],
+      "explanation": "Solve the fourth equation for y: y=−3x+5, so its slope is −3. The table rises by 3, the relation has inconsistent changes, and the graph's slope is not −3.",
+      "imageAlt": "All four representations are transcribed: complete increasing table, four ordered pairs, descending graph with approximate slope negative two, and equation two y equals negative six x plus ten."
+    },
+    "16": {
+      "prompt": "Kendal buys x boxes of 12 cookies each, keeps two boxes, and brings 60 cookies to a party. Which equation finds x?",
+      "choices": ["2x−12=60", "12x−2=60", "12x−24=60", "24−12x=60"],
+      "explanation": "She buys 12x cookies and keeps 2·12=24 of them. The amount taken to the party is 12x−24, so 12x−24=60.",
+      "imageAlt": "Cookie-box count, twelve cookies per box, two boxes kept, sixty cookies brought, and four complete equations are transcribed."
+    },
+    "17": {
+      "prompt": "Hot chocolate temperatures at minutes 0,2,4,6,8 are 150,108,78,56,41°F. Which expression best models T(m)?",
+      "choices": ["150(0.85)ᵐ", "150(1.15)ᵐ", "150(0.85)^(m−1)", "150(1.15)^(m−1)"],
+      "explanation": "The initial temperature is 150°F and the values decrease. The factor 0.85 per minute predicts T(2)=150(0.85)²≈108 and T(4)≈78, matching the table.",
+      "imageAlt": "Complete five-column temperature table with times zero through eight in two-minute steps and four exponential formulas are transcribed, including exponent m versus m minus one."
+    },
+    "18": {
+      "prompt": "As x increases beyond 25, which function eventually has the largest value?",
+      "choices": ["f(x)=1.5ˣ", "g(x)=1.5x+3", "h(x)=1.5x²", "k(x)=1.5x³+1.5x²"],
+      "explanation": "An exponential with base greater than 1 ultimately grows faster than every fixed-degree polynomial. At x=25 it is already about 25,251, above the cubic-plus-quadratic's roughly 24,375, and the gap widens for larger x.",
+      "imageAlt": "Four formulas are transcribed, distinguishing exponential 1.5 to the x from linear, quadratic, and cubic-plus-quadratic functions."
+    },
+    "19": {
+      "prompt": "Solve 3x²+10x=8.",
+      "choices": ["2/3 and −4", "−2/3 and 4", "4/3 and −2", "−4/3 and 2"],
+      "explanation": "Move 8 left: 3x²+10x−8=0=(3x−2)(x+4). Setting the factors to zero gives x=2/3 and x=−4.",
+      "imageAlt": "Quadratic equation three x squared plus ten x equals eight and four signed fractional/integer root pairs are transcribed."
+    },
+    "20": {
+      "prompt": "A song service charges a $5 membership plus $0.99 per song downloaded. Which domain is appropriate for the number of songs downloaded?",
+      "choices": ["positive rational numbers", "whole numbers at least 1", "integers at most 0", "whole numbers at most 1"],
+      "explanation": "The number of downloaded songs must be a whole count, not a fraction or negative. Since the question concerns downloading songs after membership, the listed appropriate choice is whole numbers 1,2,3,….",
+      "imageAlt": "Five-dollar membership, ninety-nine cents per song, and four candidate number sets are transcribed, including bounds and integer-versus-rational distinctions."
+    },
+    "21": {
+      "prompt": "Write f(x)=3x²+12x+11 in vertex form.",
+      "choices": ["f(x)=(3x+6)²−25", "f(x)=3(x+6)²−25", "f(x)=3(x+2)²−1", "f(x)=3(x+2)²+7"],
+      "explanation": "Factor 3 from the x terms and complete the square: 3(x²+4x)+11=3[(x+2)²−4]+11=3(x+2)²−1.",
+      "imageAlt": "Original quadratic and four complete vertex-form candidates are transcribed with inner versus outer factors, constants, and squares."
+    },
+    "22": {
+      "prompt": "Which system does not have the same solution as x+2y=5 and 2x+y=4?",
+      "choices": ["3x+6y=15; 2x+y=4", "4x+8y=20; 2x+y=4", "x+2y=5; 6x+3y=12", "x+2y=5; 4x+2y=12"],
+      "explanation": "The first equation stays the same in choice 4, but twice 2x+y=4 should be 4x+2y=8, not 12. The other choices are valid scalar multiples of an original equation.",
+      "imageAlt": "Original system and all four proposed two-equation systems are transcribed with coefficients and right-hand constants."
+    },
+    "23": {
+      "prompt": "A cubic graph crosses the x-axis at x=−3, 2, and 4, with left end down and right end up. Which factorization could match p(x)?",
+      "choices": ["(x+3)(x−2)(x−4)", "(x−3)(x+2)(x+4)", "(x+3)(x−5)(x−2)(x−4)", "(x−3)(x+5)(x+2)(x+4)"],
+      "explanation": "Each x-intercept r requires factor x−r, so the roots −3,2,4 give (x+3)(x−2)(x−4). This is cubic with positive leading coefficient, matching the end behavior.",
+      "imageAlt": "Curve crosses the horizontal axis at approximately negative three, positive two, positive four, with down-left/up-right cubic tails; four complete factorizations are transcribed."
+    },
+    "24": {
+      "prompt": "A portfolio's value is v(x)=30000(0.78)ˣ after x years. What is its yearly percentage change?",
+      "choices": ["decreases 78%", "decreases 22%", "increases 78%", "increases 22%"],
+      "explanation": "The factor 0.78 means the portfolio retains 78% of its value each year. The loss is 100%−78%=22% per year.",
+      "imageAlt": "Thirty-thousand-dollar initial value times 0.78 to the years exponent, and four increase/decrease percentages are transcribed."
+    }
+  }
+}

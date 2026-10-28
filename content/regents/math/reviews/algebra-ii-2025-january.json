@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "e5311cacc6010d94ecf30fcb21972037c8ccc0d1e0a0ea1026497983c16fe10a",
+  "questions": {
+    "1": {
+      "prompt": "What is the exact value of sin(8π/3)?",
+      "choices": ["1/2", "−1/2", "−√3/2", "√3/2"],
+      "explanation": "Subtract one full revolution: 8π/3 − 2π = 2π/3. The sine of 2π/3 is positive and equals √3/2.",
+      "imageAlt": "The sine angle is eight pi over three radians, and the answer choices include positive and negative one-half and square root of three over two."
+    },
+    "2": {
+      "prompt": "A teacher randomly divides students into two groups, grades the homework for one group but not the other, returns all homework, then compares their test scores. What type of data collection is this?",
+      "choices": ["an experiment", "an unbiased survey", "a simulation", "an observational study"],
+      "explanation": "The teacher deliberately applies a grading treatment to one randomly assigned group and compares outcomes with the other group. That is an experiment, not merely observation or a survey.",
+      "imageAlt": "The teacher randomly assigns students to groups that differ in whether their homework is graded, then compares test scores."
+    },
+    "3": {
+      "prompt": "Which expression equals (x − 2)² + 27(x − 2) − 90?",
+      "choices": ["(x + 30)(x − 3)", "(x + 28)(x − 5)", "(x − 30)(x + 3)", "(x − 2)(x + 25)(x − 90)"],
+      "explanation": "Let u = x − 2. Then u² + 27u − 90 = (u + 30)(u − 3) because 30·(−3) = −90. Substituting back gives (x + 28)(x − 5).",
+      "imageAlt": "A quadratic expression contains the square of x minus two, plus twenty-seven times x minus two, minus ninety."
+    },
+    "4": {
+      "prompt": "Given f(x) = 2x + 5/2 and g(x) = 3/x, what are the x-values solving f(x) = g(x)?",
+      "choices": ["(0.75, 4) or (−2, −1.5)", "x = 0.75 or x = −2", "y = −1.5 or y = 4", "(−2, 0.75)"],
+      "explanation": "Set 2x + 5/2 = 3/x with x ≠ 0. Multiplying by 2x gives 4x² + 5x − 6 = 0 = (4x − 3)(x + 2), so x = 3/4 = 0.75 or x = −2. The question asks for x-values, not coordinate pairs or y-values.",
+      "imageAlt": "The first function is two x plus five-halves; the second is three divided by x. The choices variously present x-values, y-values, or ordered pairs."
+    },
+    "5": {
+      "prompt": "Let f(x) = 2x³ − 3x² − 5x − 12 and g(x) = x − 3. What is the quotient f(x)/g(x)?",
+      "choices": ["2x² + 3x + 4", "2x³ + 3x² + 4x", "2x² − 9x + 22 − 78/(x − 3)", "2x³ − 9x² + 22x − 78"],
+      "explanation": "Synthetic division by x − 3 uses 3 with coefficients 2, −3, −5, −12. The resulting quotient is 2x² + 3x + 4 and the remainder is zero.",
+      "imageAlt": "The numerator is a cubic with coefficients two, negative three, negative five, negative twelve; the denominator is x minus three."
+    },
+    "6": {
+      "prompt": "Each day has a 50% chance of rain. Which simulation can estimate rainfall over the next seven days?",
+      "choices": ["Flip a coin seven times, count heads, and repeat 50 times.", "Roll a die seven times, count twos, and repeat 50 times.", "Roll two dice, count sums of seven, and repeat 50 times.", "Flip a coin 50 times and count heads."],
+      "explanation": "A fair coin gives a 50% outcome on each flip, matching one day's rain chance. Seven flips represent seven days; repeating the seven-flip trial many times estimates the distribution of outcomes. The other devices or trial lengths do not model both conditions.",
+      "imageAlt": "A seven-day simulation needs one fifty-percent trial for each day. The choices use coin flips or dice with differing numbers of trials."
+    },
+    "7": {
+      "prompt": "What are the solutions to 4x² − 7x − 2 = −10?",
+      "choices": ["−1/4, 2", "7/8 ± (√79/8)i", "7/8 ± √241/8", "7/8 ± (√143/8)i"],
+      "explanation": "Rearrange to 4x² − 7x + 8 = 0. Its discriminant is (−7)² − 4(4)(8) = −79. The quadratic formula gives x = [7 ± √(−79)]/8 = 7/8 ± (√79/8)i.",
+      "imageAlt": "The equation is four x squared minus seven x minus two equals negative ten. Answer choices include two real roots or complex conjugate pairs."
+    },
+    "8": {
+      "prompt": "If x − 5 is a factor of p(x) = ax⁴ + bx³ + cx² + dx + e, which statement must be true?",
+      "choices": ["p(−5) = 0", "p(−5) ≠ 0", "p(5) = 0", "p(5) ≠ 0"],
+      "explanation": "The factor theorem says x − c is a factor of p(x) exactly when p(c) = 0. Here c = 5, so p(5) = 0.",
+      "imageAlt": "A fourth-degree polynomial has x minus five as a factor; the four claims compare p of positive five and p of negative five with zero."
+    },
+    "9": {
+      "prompt": "In a city with 22 gas stations, prices are approximately normal with mean $2.12 and standard deviation $0.05. Which price range likely contains the middle 95%?",
+      "choices": ["$1.90–$2.34", "$1.97–$2.27", "$2.02–$2.22", "$2.07–$2.17"],
+      "explanation": "About 95% of a normal distribution lies within two standard deviations of the mean. Two standard deviations are $0.10, so the range is $2.12 − $0.10 to $2.12 + $0.10, or $2.02–$2.22.",
+      "imageAlt": "A normal price distribution has mean two dollars and twelve cents and standard deviation five cents; the question asks for the central ninety-five percent."
+    },
+    "10": {
+      "prompt": "Which expression equals (4x² − 5)/(x² − 1), for x ≠ ±1?",
+      "choices": ["4 − 1/(x² − 1)", "4 + 1/(x² − 1)", "4 − 9/(x² − 1)", "4 − 4/(x² − 1)"],
+      "explanation": "Rewrite the numerator as 4(x² − 1) − 1 = 4x² − 5. Dividing by x² − 1 gives 4 − 1/(x² − 1), with x = ±1 excluded.",
+      "imageAlt": "The rational expression has numerator four x squared minus five and denominator x squared minus one. Each option is four plus or minus a smaller rational term."
+    },
+    "11": {
+      "prompt": "For x > 0, simplify √x · ⁴√(x¹¹).",
+      "choices": ["x^(19/22)", "x^(11/8)", "x^(13/4)", "x^(2/11)"],
+      "explanation": "For positive x, √x = x^(1/2) and ⁴√(x¹¹) = x^(11/4). Multiplying adds exponents: 1/2 + 11/4 = 13/4.",
+      "imageAlt": "The product is the square root of x times the fourth root of x to the eleventh power, with positive x."
+    },
+    "12": {
+      "prompt": "Which expression equals i²(5x − 2i)², where i² = −1?",
+      "choices": ["−25x² + 20xi − 4", "−25x² + 20xi + 4", "25x² + 20xi + 4", "25x² + 4"],
+      "explanation": "First square the binomial: (5x − 2i)² = 25x² − 20xi + 4i² = 25x² − 20xi − 4. Multiplying by i² = −1 yields −25x² + 20xi + 4.",
+      "imageAlt": "The expression has i squared multiplying the entire squared binomial five x minus two i. The four choices differ in signs of the squared, imaginary, and constant terms."
+    },
+    "13": {
+      "prompt": "Let f(x) = (7/2)x² − 5x + 11 and g(x) = 3x² − 7x + 25. What is g(x) − 2f(x)?",
+      "choices": ["4x² − 3x − 3", "−4x² + 3x + 3", "4x² − 17x − 47", "−4x² − 17x + 47"],
+      "explanation": "Twice f(x) is 7x² − 10x + 22. Subtract it from g(x): (3x² − 7x + 25) − (7x² − 10x + 22) = −4x² + 3x + 3.",
+      "imageAlt": "Two quadratic formulas are given. The wording says two f of x is subtracted from g of x, meaning g minus two f."
+    },
+    "14": {
+      "prompt": "Beverage amounts are normal with mean 8.0 ounces and standard deviation 0.04 ounce. What percent, to the nearest tenth of a percent, lie between 7.9 and 8.11 ounces?",
+      "choices": ["99.5%", "99.4%", "99.1%", "97.6%"],
+      "explanation": "The lower z-score is (7.9 − 8.0)/0.04 = −2.5; the upper is (8.11 − 8.0)/0.04 = 2.75. The standard-normal area between them is approximately 0.9908, or 99.1% to the nearest tenth of a percent.",
+      "imageAlt": "A normal-distribution problem gives mean eight ounces, standard deviation 0.04 ounce, and asks for the proportion between 7.9 and 8.11 ounces."
+    },
+    "15": {
+      "prompt": "Solve the system 5x + 2y − z = −14, 7y − z = 31, and 5y + 4z − 5x = −23. What is x?",
+      "choices": ["−17", "2", "−1/5", "−7"],
+      "explanation": "From 7y − z = 31, z = 7y − 31. Substitute into the first equation to get x = y − 9. Substitute both into the third equation: 5y + 4(7y − 31) − 5(y − 9) = −23, so 28y = 56 and y = 2. Thus x = 2 − 9 = −7.",
+      "imageAlt": "A three-variable system has equations five x plus two y minus z equals negative fourteen; seven y minus z equals thirty-one; five y plus four z minus five x equals negative twenty-three."
+    },
+    "16": {
+      "prompt": "A graph shows radioactive mass falling from 50 grams at day 0 to about 6 grams at day 8. What is the approximate daily decay rate?",
+      "choices": ["23%", "95%", "5%", "77%"],
+      "explanation": "If the daily retained fraction is r, then 50r⁸ ≈ 6. Solving gives r ≈ (6/50)^(1/8) ≈ 0.767. The daily decay rate is 1 − r ≈ 0.233, about 23%.",
+      "imageAlt": "An exponential-decay graph has horizontal axis day zero through eight and vertical axis mass in grams. It starts at 50 grams, is around 25 grams by day 3, and is near 6 to 7 grams by day 8."
+    },
+    "17": {
+      "prompt": "If 4·10^(5x − 2) = 12, what is x?",
+      "choices": ["2.3/5", "(1/3)(log(12)/log(40) + 5)", "(log(3) + 2)/5", "(1/5)(log(12)/log(4) + 2)"],
+      "explanation": "Divide by 4 to get 10^(5x − 2) = 3. Take common logarithms: 5x − 2 = log(3), so x = [log(3) + 2]/5.",
+      "imageAlt": "Four times ten raised to the entire exponent five x minus two equals twelve. The answer choices include common-logarithm expressions."
+    },
+    "18": {
+      "prompt": "Of 152 students, the transportation-by-attendance table is: Car 6 late, 24 on time; Bus 20 late, 80 on time; Walk 4 late, 18 on time. Compare P(late | walked) with P(walked | late).",
+      "choices": ["P(late | walked) is greater than P(walked | late).", "P(late | walked) is less than P(walked | late).", "The two conditional probabilities are equal.", "P(late | walked) cannot be determined."],
+      "explanation": "There are 4 + 18 = 22 walkers, so P(late | walked) = 4/22 ≈ 0.182. There are 6 + 20 + 4 = 30 late students, so P(walked | late) = 4/30 ≈ 0.133. The first probability is greater.",
+      "imageAlt": "Table rows are Car, Bus, Walk and columns Late, On-Time. Counts are Car 6 and 24; Bus 20 and 80; Walk 4 and 18."
+    },
+    "19": {
+      "prompt": "If f(x) = ∛x + 4, what is f⁻¹(x)?",
+      "choices": ["∛(x − 4)", "(x − 4)³", "x³ + 1/4", "−∛x − 4"],
+      "explanation": "Set y = ∛x + 4 and interchange x and y: x = ∛y + 4. Then x − 4 = ∛y, so y = (x − 4)³.",
+      "imageAlt": "The cube-root sign covers only x; the plus four is outside the radical. The question asks for the inverse function."
+    },
+    "20": {
+      "prompt": "For S(x) = 1.7sin(bx) + 12 with period 12, what is b?",
+      "choices": ["π/6", "24π", "π/12", "6π"],
+      "explanation": "The period of sin(bx) is 2π/|b|. Set 2π/|b| = 12 to get |b| = π/6. The listed matching coefficient is b = π/6.",
+      "imageAlt": "The sine function has amplitude 1.7, coefficient b on x inside sine, vertical shift twelve, and stated period twelve."
+    },
+    "21": {
+      "prompt": "Jin squares both sides of √(4 − x) = x + 8. Which value is an extraneous solution?",
+      "choices": ["−5", "−12", "3", "4"],
+      "explanation": "Squaring gives 4 − x = (x + 8)², or x² + 17x + 60 = 0 = (x + 5)(x + 12). The candidates are −5 and −12. At x = −12, the original left side is 4 while the right side is −4, so −12 is extraneous.",
+      "imageAlt": "The square-root bar covers four minus x, and the other side is x plus eight; the question asks which value introduced by squaring fails in the original equation."
+    },
+    "22": {
+      "prompt": "Which expression is not equivalent to (x² + y²)²?",
+      "choices": ["(x² − y²)² + (2xy)²", "(x + y)⁴ + 2(xy)²", "x²(x² + 2y²) + (y²)²", "(2x² + y²)² − (3x⁴ + 2x²y²)"],
+      "explanation": "The target expands to x⁴ + 2x²y² + y⁴. Choices 1, 3, and 4 simplify to that expression. Choice 2 has extra x³y and xy³ terms from (x + y)⁴, so it is not generally equal to the target.",
+      "imageAlt": "The target is the square of the sum x squared plus y squared. Four algebraic expressions contain nested squares, a fourth power, or a subtraction."
+    },
+    "23": {
+      "prompt": "A trail-height graph has minimum −16 feet. Which transformations make the minimum −8 feet? I: y = f((1/2)x); II: y = f(x) + 8; III: y = (1/2)f(x).",
+      "choices": ["I only", "II only", "I and III", "II and III"],
+      "explanation": "Transformation I stretches the graph horizontally and does not change its y-values, leaving the minimum at −16. II shifts every height up 8 to a minimum of −8. III halves every height, also taking −16 to −8. Thus II and III work.",
+      "imageAlt": "The trail graph is a W-shaped quartic over roughly zero to six miles, with low points near negative sixteen feet and a central high point near positive nine feet. The three transformations are fully transcribed in the prompt."
+    },
+    "24": {
+      "prompt": "A fishing crew caught 350 pounds on Monday, and the daily catch rose 15% each day through Friday. Approximately how many pounds did they catch in total from Monday through Friday?",
+      "choices": ["411", "612", "1748", "2360"],
+      "explanation": "There are five daily catches: 350, 350(1.15), 350(1.15)², 350(1.15)³, and 350(1.15)⁴. Their geometric sum is about 2359.83 pounds, or approximately 2360 pounds.",
+      "imageAlt": "A five-day total begins with 350 pounds on Monday, followed by four days of catches each fifteen percent greater than the previous day."
+    }
+  }
+}

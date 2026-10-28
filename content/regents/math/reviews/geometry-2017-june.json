@@ -1,0 +1,131 @@
+{
+  "sourceSha256": "edbc91c945107d8ebc80aed709711eef8d02aac074fe3d9cdede266b038068c4",
+  "questions": {
+    "1": {
+      "prompt": "Congruent triangles ABC and DEF are graphed. Which sequence maps ABC onto DEF in the stated vertex order?",
+      "choices": ["reflect over x-axis, then translate", "reflect over y-axis, then translate", "rotate 180° about origin, then translate", "rotate 90° counterclockwise about origin, then translate"],
+      "explanation": "Reflecting the left triangle over the y-axis reverses its horizontal orientation while preserving its upright vertical side. A translation then carries the reflected triangle downward and right to DEF, matching A↔D, B↔E, and C↔F.",
+      "imageAlt": "Triangle ABC lies left of the y-axis and above the x-axis, with A above B on a vertical right side and C left of B. Triangle DEF lies right of the y-axis and below the x-axis, with D above E on a vertical left side and F right of E."
+    },
+    "2": {
+      "prompt": "Triangle PQR has P(−6,7), Q(2,1), and R(−1,−3). What is its area?",
+      "choices": ["10", "20", "25", "50"],
+      "explanation": "Vectors PQ = (8,−6) and PR = (5,−10). Their determinant has magnitude |8(−10)−(−6)(5)| = 50, so triangle area is half, 25.",
+      "imageAlt": "Coordinate graph shows P upper left at (−6,7), Q right at (2,1), and R below at (−1,−3), connected by three sides. All coordinates are in the prompt."
+    },
+    "3": {
+      "prompt": "Right triangle ABC has angle C = 90°. If cos B = 5/13, which other function equals 5/13?",
+      "choices": ["tan A", "tan B", "sin A", "sin B"],
+      "explanation": "The acute angles A and B are complementary. Their cofunction identity gives cos B = sin A, so sin A = 5/13.",
+      "imageAlt": "Printed right-triangle cofunction question; angle, ratio, and all functions are in accessible text."
+    },
+    "4": {
+      "prompt": "In a circle, major arc ABC from A through B to C measures 268°. What is inscribed angle ABC?",
+      "choices": ["134°", "92°", "68°", "46°"],
+      "explanation": "Angle ABC intercepts the other arc AC, which measures 360°−268° = 92°. An inscribed angle is half its intercepted arc, so angle ABC = 46°.",
+      "imageAlt": "Circle has A near upper right, B at left-lower rim, C at right-lower rim. Chords B-A and B-C make angle ABC at B. Major arc A-B-C runs the long way around through B; the shorter arc A-C lies on the right."
+    },
+    "5": {
+      "prompt": "In triangle MRO, P lies on MO and T on MR, with PT ∥ OR. If MR = 9, MP = 2, and PO = 4, find TR.",
+      "choices": ["4.5", "5", "3", "6"],
+      "explanation": "MO = 2+4 = 6. Similar triangles MPT and MOR give MT/MR = MP/MO = 2/6, so MT = 3. Therefore TR = MR−MT = 9−3 = 6.",
+      "imageAlt": "Large triangle has M at top, O lower left, R lower right. P lies on left side MO with MP 2 and PO 4; T lies on right side MR; horizontal PT parallels base OR. Full side MR is 9."
+    },
+    "6": {
+      "prompt": "A segment is dilated by factor 2 about a point not on it. How does its image compare?",
+      "choices": ["perpendicular and half the original length", "perpendicular and twice the original length", "parallel and twice the original length", "parallel and half the original length"],
+      "explanation": "A dilation maps a segment not through its center to a parallel segment and multiplies its length by the scale factor 2.",
+      "imageAlt": "Printed dilation-property question; center condition and all orientation-length combinations are in accessible text."
+    },
+    "7": {
+      "prompt": "Which figure always has exactly four reflection-symmetry lines?",
+      "choices": ["square", "rectangle", "regular octagon", "equilateral triangle"],
+      "explanation": "A square has two diagonal and two midline reflection axes, exactly four. A nonsquare rectangle has two, an equilateral triangle three, and a regular octagon eight.",
+      "imageAlt": "Printed reflection-symmetry question; all four polygon choices are in accessible text."
+    },
+    "8": {
+      "prompt": "In circle O, chord DF bisects chord BC at E. If BC = 12 and FE is 5 more than DE, find FE.",
+      "choices": ["13", "9", "6", "4"],
+      "explanation": "Since DF bisects BC, BE = CE = 6. Intersecting chords give DE·FE = BE·CE = 36. Let DE = d and FE = d+5; d(d+5) = 36 has positive solution d = 4, so FE = 9.",
+      "imageAlt": "Circle has chord C-E-B sloping down-right across its upper half and chord D-E-F sloping steeply down-right from near top D to lower-right F. They cross at E above center O."
+    },
+    "9": {
+      "prompt": "Given angle A ≅ angle EDF and side AB ≅ DE, which additional fact and method would not prove triangles ABC and DEF congruent?",
+      "choices": ["AC ≅ DF and SAS", "BC ≅ EF and SAS", "angle C ≅ angle F and AAS", "angle CBA ≅ angle FED and ASA"],
+      "explanation": "With angle A matched to D and AB matched to DE, adding BC ≅ EF gives two sides and a nonincluded angle. That is SSA, which does not generally prove congruence, despite the choice labeling it SAS.",
+      "imageAlt": "Triangle ABC lies above a horizontal A-D-B-E line with C above; triangle DEF lies below the line with D and E on it and F below. The given angle and side correspondences are in the prompt."
+    },
+    "10": {
+      "prompt": "In triangle ABC, D lies on AB and E on AC, with DE dividing those sides proportionally. Angle C = 26°, angle A = 82°, and DF bisects angle BDE, meeting BC at F. Find angle DFB.",
+      "choices": ["36°", "54°", "72°", "82°"],
+      "explanation": "Proportional division gives DE ∥ BC. The third angle of ABC is B = 180°−82°−26° = 72°. At D, angle BDE is supplementary to angle ADE = B, so it is 108°. Bisector DF makes angle BDF = 54°. Triangle DBF has angle B = 72°, leaving angle DFB = 54°.",
+      "imageAlt": "Large triangle has A top, B lower left, C lower right. D lies on AB, E on AC, with horizontal DE parallel to BC. F lies between B and C, and DF descends right from D to F."
+    },
+    "11": {
+      "prompt": "Which listed properties describe a parallelogram that must be a rhombus? I: diagonals are perpendicular bisectors of each other. II: diagonals bisect their vertex angles. III: diagonals make four congruent isosceles right triangles.",
+      "choices": ["I and II", "I and III", "II and III", "I, II, and III"],
+      "explanation": "I and II are standard rhombus properties. III forces the parallelogram to be a square, which is a special rhombus. Thus each statement describes a parallelogram that can be classified as a rhombus.",
+      "imageAlt": "Printed parallelogram-classification question; all three diagonal conditions and all combinations are in accessible text."
+    },
+    "12": {
+      "prompt": "Circle x²+y²−12y+20 = 0 has what center and radius?",
+      "choices": ["center (0,6), radius 4", "center (0,−6), radius 4", "center (0,6), radius 16", "center (0,−6), radius 16"],
+      "explanation": "Complete the square in y: x²+(y−6)² = 16. The center is (0,6) and radius is √16 = 4.",
+      "imageAlt": "Printed circle-equation question; equation and signed centers and radii are in accessible text."
+    },
+    "13": {
+      "prompt": "Right triangle RST has T = 90°, hypotenuse RS = 65, and leg ST = 60. Find angle S to the nearest degree.",
+      "choices": ["23°", "43°", "47°", "67°"],
+      "explanation": "Leg ST is adjacent to angle S, so cos S = 60/65 = 12/13. Thus S ≈ 22.6°, rounding to 23°.",
+      "imageAlt": "Right triangle has T lower left, S lower right, and R directly above T. Horizontal leg TS is 60 and sloping hypotenuse RS is 65."
+    },
+    "15": {
+      "prompt": "Segment RW has R(−4,5) and W(6,20). Point P divides it with RP:PW = 2:3. What are P's coordinates?",
+      "choices": ["(2,9)", "(0,11)", "(2,14)", "(10,2)"],
+      "explanation": "P is 2/5 of the way from R to W. W−R = (10,15), and (−4,5)+(2/5)(10,15) = (0,11).",
+      "imageAlt": "Printed coordinate-partition question; both endpoints and ratio are in accessible text."
+    },
+    "16": {
+      "prompt": "A square pyramid has height 7 and volume 84. What is the side length of its base?",
+      "choices": ["6", "12", "18", "36"],
+      "explanation": "Let base side be s. Pyramid volume is (1/3)s²h, so 84 = (1/3)s²(7). Thus s² = 36 and s = 6.",
+      "imageAlt": "Square-base pyramid drawing has apex above base center and dashed perpendicular height labeled 7."
+    },
+    "17": {
+      "prompt": "In triangle MNO, MS and OR bisect angles M and O and meet at T. Angle N = 40° and angle TMR = 28°. Find angle OTS.",
+      "choices": ["40°", "50°", "60°", "70°"],
+      "explanation": "Angle M = 2(28°) = 56°, leaving angle O = 180°−56°−40° = 84°. Since OR bisects O, angle MOT = 42°. In triangle MOT, angle MTO = 180°−28°−42° = 110°. Rays TM and TS are opposite along MS, so angle OTS = 180°−110° = 70°.",
+      "imageAlt": "Triangle has M lower left, N lower right, O top. R lies on base MN; S lies on side ON. Angle bisector O-R and bisector M-S cross at interior point T."
+    },
+    "18": {
+      "prompt": "Right triangle ABC has legs AC = 4 and AB = 6. What is the volume when it is rotated continuously about AB?",
+      "choices": ["32π", "48π", "96π", "144π"],
+      "explanation": "Rotating around leg AB forms a cone with height 6 and radius 4. Its volume is (1/3)π(4²)(6) = 32π.",
+      "imageAlt": "Right triangle has A lower left with right-angle mark, B to the right along horizontal AB labeled 6, and C above A along vertical AC labeled 4."
+    },
+    "19": {
+      "prompt": "Which equation is perpendicular to 2y = 3x−10 and passes through (−6,1)?",
+      "choices": ["y = −(2/3)x−5", "y = −(2/3)x−3", "y = (2/3)x+1", "y = (2/3)x+10"],
+      "explanation": "The given line's slope is 3/2, so the perpendicular slope is −2/3. In y = −(2/3)x+b, substitute (−6,1): 1 = 4+b, giving b = −3.",
+      "imageAlt": "Printed perpendicular-line problem; given equation, point, and all choices are in accessible text."
+    },
+    "20": {
+      "prompt": "Quadrilateral BLUE has BE ≅ UL. Which extra fact proves BLUE is a parallelogram?",
+      "choices": ["BL ∥ EU", "LU ∥ BE", "BE ≅ BL", "LU ≅ EU"],
+      "explanation": "BE and UL are opposite sides. If they are both congruent, as given, and parallel, as in the second choice, one pair of opposite sides is both congruent and parallel, sufficient for a parallelogram.",
+      "imageAlt": "Quadrilateral has B upper left, L upper right, U lower right, E lower left, with top BL and bottom EU drawn roughly horizontal. Sides BE and LU are the opposite slanted pair."
+    },
+    "21": {
+      "prompt": "A 20-foot ladder leans against a building at a 71° angle with level ground. How high does it reach, to the nearest foot?",
+      "choices": ["15", "16", "18", "19"],
+      "explanation": "The ladder is the hypotenuse and wall height is opposite the 71° ground angle, so height = 20sin(71°) ≈ 18.9 feet, rounding to 19.",
+      "imageAlt": "Printed ladder trigonometry problem; ladder length and ground angle are in accessible text."
+    },
+    "23": {
+      "prompt": "A solid metal railing is 27 feet long, 2.5 inches high overall, and 2.5 inches wide. Its cross section is a rectangle topped by a half-circle. What is its volume to the nearest cubic inch?",
+      "choices": ["151", "795", "1808", "2025"],
+      "explanation": "Convert length to 324 inches. The half-circle radius is 1.25 inches, leaving rectangular height 2.5−1.25 = 1.25. Cross-sectional area is 2.5(1.25)+(1/2)π(1.25²) ≈ 5.579 square inches. Volume ≈ 5.579(324) = 1808 cubic inches.",
+      "imageAlt": "Long rail has constant D-shaped cross section: flat base width 2.5 inches, vertical rectangular lower part, and semicircular top. Total height from base to rounded top is 2.5 inches; rail length is 27 feet."
+    }
+  }
+}

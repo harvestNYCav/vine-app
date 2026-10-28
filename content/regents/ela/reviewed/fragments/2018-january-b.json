@@ -1,0 +1,58 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "Read “Storm Warnings” and answer questions 10–14. Vocabulary notes follow the poem.",
+    "questionIds": ["english-2018-january-q10", "english-2018-january-q11", "english-2018-january-q12", "english-2018-january-q13", "english-2018-january-q14"],
+    "passage": {
+      "title": "Storm Warnings",
+      "credit": "—Adrienne Cecile Rich · “Storm Warnings,” Harper’s Magazine (April 1951)",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number":1,"text":"The glass¹ has been falling all the afternoon,"},
+        {"number":2,"text":"And knowing better than the instrument"},
+        {"number":3,"text":"What winds are walking overhead, what zone"},
+        {"number":4,"text":"Of gray unrest is moving across the land,"},
+        {"number":5,"text":"I leave the book upon a pillowed chair"},
+        {"number":6,"text":"And walk from window to closed window, watching"},
+        {"number":7,"text":"The stiff boughs strain against the blotted sky"},
+        {"number":null,"text":""},
+        {"number":8,"text":"And think again, as often when the air"},
+        {"number":9,"text":"Moves inward toward a silent core of waiting,"},
+        {"number":10,"text":"How with a single purpose time has traveled"},
+        {"number":11,"text":"Through currents of unguessed fatality"},
+        {"number":12,"text":"Into this polar realm, this present island."},
+        {"number":13,"text":"Weather abroad and weather in the heart"},
+        {"number":14,"text":"Alike come on regardless of prediction."},
+        {"number":null,"text":""},
+        {"number":15,"text":"Between foreseeing and averting change"},
+        {"number":16,"text":"Lies all the mastery of elements"},
+        {"number":17,"text":"Which clocks and weather-glasses cannot alter."},
+        {"number":18,"text":"Time in the hand is not control of time,"},
+        {"number":19,"text":"Nor shattered fragments of an instrument"},
+        {"number":20,"text":"The breaking of a cordon² of events."},
+        {"number":21,"text":"The wind will rise: we can only close the shutters."},
+        {"number":null,"text":""},
+        {"number":22,"text":"I draw the curtains as the sky goes black"},
+        {"number":23,"text":"And set a match to candles sheathed in glass"},
+        {"number":24,"text":"Against the keyhole draught,³ the insistent whine"},
+        {"number":25,"text":"Of weather through the unsealed aperture.⁴"},
+        {"number":26,"text":"This is our sole defense against the season;"},
+        {"number":27,"text":"These are the things that we have learned to do"},
+        {"number":28,"text":"Who live in zones of much inquietude.⁵"},
+        {"number":null,"text":""},
+        {"number":null,"text":"¹ glass — barometer"},
+        {"number":null,"text":"² cordon — string"},
+        {"number":null,"text":"³ draught — draft"},
+        {"number":null,"text":"⁴ aperture — an opening"},
+        {"number":null,"text":"⁵ inquietude — a disturbance"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id":"english-2018-january-q10","number":10,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The figurative language used in lines 9 through 11 suggests the","choices":[{"label":"1","text":"anticipation of life’s challenges"},{"label":"2","text":"questioning of life’s meaning"},{"label":"3","text":"appreciation of patience"},{"label":"4","text":"importance of solitude"}],"correct":"1","explanation":"The waiting air and time moving toward “unguessed fatality” evoke an approaching event that cannot yet be known, like a challenge that life is about to bring.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-january-q11","number":11,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The purpose of the repetition of “weather” in line 13 is to imply","choices":[{"label":"1","text":"an uncommon occurrence"},{"label":"2","text":"a personal connection"},{"label":"3","text":"a beneficial circumstance"},{"label":"4","text":"an unexplained phenomenon"}],"correct":"2","explanation":"“Weather abroad” describes the outer storm, while “weather in the heart” links it to the speaker’s inner feelings. The repetition makes the storm personal.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-january-q12","number":12,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The statement, “The wind will rise: we can only close the shutters” (line 21) most likely means we","choices":[{"label":"1","text":"can overcome problems by denying them"},{"label":"2","text":"cannot predict our emotions but we can learn to ignore them"},{"label":"3","text":"can control events by understanding them"},{"label":"4","text":"cannot prevent our distress but we can choose how to deal with it"}],"correct":"4","explanation":"The wind is beyond the speaker’s control, but closing the shutters is a deliberate response. Similarly, people cannot stop every distressing event but can choose their response.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-january-q13","number":13,"sectionSlug":"passage-b","sourcePage":6,"prompt":"Lines 27 and 28 convey a sense of","choices":[{"label":"1","text":"disinterest"},{"label":"2","text":"acceptance"},{"label":"3","text":"urgency"},{"label":"4","text":"terror"}],"correct":"2","explanation":"The speaker describes sheltering from storms as what people in unsettled places have learned to do. That matter-of-fact recognition conveys acceptance.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2018-january-q14","number":14,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The poem suggests that the narrator views storms as","choices":[{"label":"1","text":"having unpredictable results"},{"label":"2","text":"being frightening experiences"},{"label":"3","text":"being familiar events"},{"label":"4","text":"having destructive powers"}],"correct":"3","explanation":"The speaker says the same kind of unsettled weather returns and describes familiar protective acts—closing shutters, drawing curtains, lighting candles. Storms are a recurring part of life.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

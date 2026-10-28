@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "676ca34a5319d65a3944bb0cdecea9fbf66ca41901574fbd5a0a0bcf251c1f18",
+  "questions": {
+    "1": {
+      "prompt": "Which expression is equivalent to 100x² − 16?",
+      "choices": ["(50x − 8)(50x + 8)", "(50x − 8)(50x − 8)", "(10x − 4)(10x + 4)", "(10x − 4)(10x − 4)"],
+      "explanation": "100x² − 16 = (10x)² − 4², a difference of squares. Thus it factors as (10x − 4)(10x + 4).",
+      "imageAlt": "Expression 100x squared minus 16 and all four printed factor pairs are fully transcribed."
+    },
+    "2": {
+      "prompt": "Josie has $2.30 in dimes and quarters. She has two more dimes than quarters. Which equation can determine x, the number of quarters she has?",
+      "choices": ["0.35(2x + 2) = 2.30", "0.25(x + 2) + 0.10x = 2.30", "0.25x + 0.10(x + 2) = 2.30", "0.25x + 0.10(x − 2) = 2.30"],
+      "explanation": "If there are x quarters, there are x + 2 dimes. The total value in dollars is 0.25x + 0.10(x + 2), which must equal 2.30.",
+      "imageAlt": "Coin quantities and dollar values, the variable x for quarters, and all four equations are transcribed."
+    },
+    "3": {
+      "prompt": "If g(x) = −2x² + 16, then g(−3) equals",
+      "choices": ["−20", "−2", "34", "52"],
+      "explanation": "Substitute −3: g(−3) = −2(−3)² + 16 = −2(9) + 16 = −2.",
+      "imageAlt": "Function negative two x squared plus 16 and input negative three, with all signed options, are transcribed."
+    },
+    "4": {
+      "prompt": "What are the zeros of f(x) = x² − 8x − 20?",
+      "choices": ["10 and 2", "10 and −2", "−10 and 2", "−10 and −2"],
+      "explanation": "Factor x² − 8x − 20 = (x − 10)(x + 2). Setting each factor to zero gives x = 10 and x = −2.",
+      "imageAlt": "Quadratic x squared minus 8x minus 20 and four signed pairs of proposed zeros are transcribed."
+    },
+    "5": {
+      "prompt": "Which point lies on the graph of y = 3x² − (1/4)x + 3?",
+      "choices": ["(−2, 15.5)", "(−1, 5.75)", "(1, 6.25)", "(2, 15.5)"],
+      "explanation": "For x = −2, y = 3(4) − (1/4)(−2) + 3 = 12 + 0.5 + 3 = 15.5. The other listed points do not satisfy the equation.",
+      "imageAlt": "Quadratic with coefficient three and a negative one-fourth x term; all ordered pairs, negative signs, and decimals are transcribed."
+    },
+    "6": {
+      "prompt": "Given f(x) = x² and g(x) = 8x − 15 graphed on the same axes, which value(s) of x make f(x) = g(x)?",
+      "choices": ["3, only", "9, only", "3 and 5", "9 and 25"],
+      "explanation": "Set x² = 8x − 15, then rearrange to x² − 8x + 15 = 0. Factoring gives (x − 3)(x − 5) = 0, so x = 3 or 5.",
+      "imageAlt": "Two function formulas x squared and 8x minus 15, and all proposed intersection x-values, are transcribed."
+    },
+    "7": {
+      "prompt": "Which trinomial is written in standard form and has a constant term of five?",
+      "choices": ["x⁵ − 4x² + 10", "2x² + 6x⁴ + 5", "5x⁴ − 3x² + 1", "4x⁵ − 8x² + 5"],
+      "explanation": "Standard form lists powers from greatest to least. The last term must be +5. Only 4x⁵ − 8x² + 5 meets both requirements.",
+      "imageAlt": "Four three-term polynomials are transcribed in their original term order, with exponents and constants."
+    },
+    "8": {
+      "prompt": "When solving x² + 6x = −8, a student wrote x² + 6x + 8 = 0 as their first step. Which property justifies this step?",
+      "choices": ["associative property", "commutative property", "zero property of addition", "addition property of equality"],
+      "explanation": "The student added 8 to each side of the equation. Adding the same amount to both sides preserves equality, so this is the addition property of equality.",
+      "imageAlt": "Initial and resulting quadratic equations, including negative eight and plus eight, are transcribed."
+    },
+    "9": {
+      "prompt": "Four input-output tables are shown. Which table represents a linear function?",
+      "choices": ["f(x): for x = −2,−1,0,1,2,3, outputs 6,1,−2,−3,−2,1", "g(x): for x = −4,−3,−2,−1,0,1, outputs 3,2,1,0,1,2", "h(x): for x = −2,−1,0,1,2,3, outputs −1,−2,−4,−8,−16,−32", "j(x): for x = −3,−2,−1,0,1,2, outputs −11,−7,−3,1,5,9"],
+      "explanation": "The inputs in each table increase by 1. Only j(x) has a constant output difference, +4 each time, so it is linear. The other tables have changing differences or a constant ratio.",
+      "imageAlt": "All four six-row tables are transcribed in the choices, preserving each input and output, including negative values."
+    },
+    "10": {
+      "prompt": "What is the solution set to the equation 3x² = 24x?",
+      "choices": ["{8}", "{0, 8}", "{0, −8}", "{0, 8, −8}"],
+      "explanation": "Move all terms to one side and factor: 3x² − 24x = 3x(x − 8) = 0. The zero-product property gives x = 0 or x = 8.",
+      "imageAlt": "Equation 3x squared equals 24x and all four proposed solution sets are transcribed."
+    },
+    "11": {
+      "prompt": "A table gives radioactivity levels at t seconds: t = 0,1,2,3,4 with levels 20,10,5,2.5,1.25. What is the average rate of change in radioactivity level over 1 ≤ t ≤ 3?",
+      "choices": ["3.75", "−3.75", "4.6875", "−4.6875"],
+      "explanation": "Use the endpoint values at t = 1 and t = 3: (2.5 − 10)/(3 − 1) = −7.5/2 = −3.75 units per second.",
+      "imageAlt": "Time and radioactivity table values are fully transcribed in the prompt, including levels 10 at one second and 2.5 at three seconds."
+    },
+    "12": {
+      "prompt": "Fred read for 12, 16, 19, 27, and 29 minutes on Monday through Friday, respectively (days 1 through 5). What is the correlation coefficient, to the nearest thousandth, and strength of the linear model?",
+      "choices": ["0.984 and strong", "0.968 and strong", "0.984 and weak", "0.968 and weak"],
+      "explanation": "Using the pairs (1,12), (2,16), (3,19), (4,27), and (5,29), the Pearson correlation is about 0.983856, which rounds to 0.984. Being close to +1 means the linear relationship is strong and positive.",
+      "imageAlt": "Five-row table of day 1–5 and minutes read 12,16,19,27,29 is transcribed, along with each coefficient-and-strength choice."
+    },
+    "13": {
+      "prompt": "Given f(x) = x², which function shifts f(x) to the left 3 units?",
+      "choices": ["g(x) = x² + 3", "h(x) = x² − 3", "j(x) = (x − 3)²", "k(x) = (x + 3)²"],
+      "explanation": "A horizontal shift left by 3 replaces x with x + 3 inside the function. Thus f(x + 3) = (x + 3)².",
+      "imageAlt": "Parent quadratic x squared and four shifted function formulas are transcribed with signs and parentheses."
+    },
+    "14": {
+      "prompt": "A dot plot for 20 students shows the number of pets each owns. Which statement about the data is correct?",
+      "choices": ["The mean and the median are the same.", "The median and the mode are the same.", "The mean and the mode are the same.", "The mean, median, and mode are all the same."],
+      "explanation": "The dot counts are 0 pets: 1 student; 1: 4; 2: 6; 3: 4; 4: 3; 5: 2. The 10th and 11th values are both 2, so the median is 2. Two pets also occurs most often, making the mode 2. The mean is (0·1 + 1·4 + 2·6 + 3·4 + 4·3 + 5·2)/20 = 50/20 = 2.5.",
+      "imageAlt": "Dot plot counts: one dot over 0 pets, four over 1, six over 2, four over 3, three over 4, and two over 5; total 20 dots."
+    },
+    "15": {
+      "prompt": "The range of f(x) = |x + 2| − 5 is",
+      "choices": ["y ≥ −5", "y ≥ 2", "x ≥ −5", "x ≥ 2"],
+      "explanation": "An absolute value cannot be negative, so |x + 2| has minimum 0. Subtracting 5 gives minimum output −5, and every larger output occurs: y ≥ −5.",
+      "imageAlt": "Absolute-value function and all four x-versus-y inequality choices, including greater-than-or-equal signs, are transcribed."
+    },
+    "16": {
+      "prompt": "Which equation is always correct?",
+      "choices": ["a³ · aˣ = a^(3x)", "(a⁴)^x = a^(4 + x)", "(ab)^x = aˣbˣ", "aˣ · bʸ = (ab)^(x + y)"],
+      "explanation": "A power applied to a product distributes to each factor: (ab)^x = a^x b^x. The other choices misuse exponent addition, multiplication, or grouping.",
+      "imageAlt": "Four exponent-law equations are transcribed with all bases, exponent groups, and multiplication dots."
+    },
+    "17": {
+      "prompt": "The area of a trapezoid is A = (1/2)h(b₁ + b₂). The height h may be expressed as",
+      "choices": ["2A/(b₁ + b₂)", "(1/2)A(b₁ + b₂)", "(b₁ + b₂)/(2A)", "(1/2)A − (b₁ + b₂)"],
+      "explanation": "Multiply A = (1/2)h(b₁ + b₂) by 2, then divide by b₁ + b₂: h = 2A/(b₁ + b₂).",
+      "imageAlt": "Trapezoid area equation and four height formulas are transcribed, with each fraction denominator grouped in parentheses."
+    },
+    "18": {
+      "prompt": "Three functions are given: f(x) = −|x + 2| + 7; g(x) = (x − 3)² − 4; and h(x) as a table with input/output pairs (−4,5), (−3,0), (−2,−3), (−1,−4), (0,−3), (1,0), (2,5). Which functions have the same y-intercept?",
+      "choices": ["f(x) and g(x)", "g(x) and h(x)", "f(x) and h(x)", "The functions all have different y-intercepts."],
+      "explanation": "A y-intercept is the value at x = 0. f(0) = −|2| + 7 = 5, g(0) = (−3)² − 4 = 5, and the h table gives h(0) = −3. Thus f and g share the intercept.",
+      "imageAlt": "Both formulas and all seven input-output pairs in the h table are fully transcribed in the prompt."
+    },
+    "19": {
+      "prompt": "The sum of (x + 7)² and (x − 3)² is",
+      "choices": ["2x² + 58", "2x⁴ + 58", "2x² + 8x + 58", "2x⁴ + 8x² + 58"],
+      "explanation": "Expand each square: (x + 7)² = x² + 14x + 49 and (x − 3)² = x² − 6x + 9. Adding like terms yields 2x² + 8x + 58.",
+      "imageAlt": "Two squared binomials and all four polynomial sums, including degrees and coefficients, are transcribed."
+    },
+    "20": {
+      "prompt": "The product of 2√10 and 3√2 is",
+      "choices": ["12√5", "5√20", "24√5", "5√12"],
+      "explanation": "Multiply coefficients and radicals: (2√10)(3√2) = 6√20 = 6√(4·5) = 12√5.",
+      "imageAlt": "Radical factors two square roots of ten and three square roots of two, and all four radical results, are transcribed."
+    },
+    "21": {
+      "prompt": "When 6x³ − 2x + 8 is subtracted from 5x³ + 3x − 4, the result is",
+      "choices": ["x³ − 5x + 12", "x³ + x + 4", "−x³ + 5x − 12", "−x³ + x + 4"],
+      "explanation": "Subtract in the stated order: (5x³ + 3x − 4) − (6x³ − 2x + 8) = 5x³ + 3x − 4 − 6x³ + 2x − 8 = −x³ + 5x − 12.",
+      "imageAlt": "Both cubic expressions, the subtraction order, and all four result polynomials are transcribed."
+    },
+    "22": {
+      "prompt": "Three relations are shown. I is {(0,1), (1,2), (2,3), (3,4)}. II maps 3→3, 4→4, 5→5, and 6→6. III is a step graph made of horizontal segments with open left endpoints and closed right endpoints, except the segment starting at x = 0 has a closed left endpoint. Which relations represent a function?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "A relation is a function if each input has one output. I has unique first coordinates, and II gives each domain number one arrow. III's horizontal steps use open and closed endpoints so no shared x-value has two included y-values; it also passes the vertical-line test. Thus all three are functions.",
+      "imageAlt": "Relation I has four ordered pairs (0,1),(1,2),(2,3),(3,4). Relation II maps 3 to 3, 4 to 4, 5 to 5, 6 to 6. Relation III has four disjoint horizontal graph steps: left endpoints open and right endpoints closed at each shared x boundary, except a closed point at the start of its second step."
+    },
+    "23": {
+      "prompt": "Substitution is used to solve 4x − 7y = 7 and x − y = −1. Which equation is a correct first step when using this method?",
+      "choices": ["x = y − 1", "y = x − 1", "3x − 6y = 8", "5x − 8y = 6"],
+      "explanation": "Rearrange the second equation x − y = −1 by adding y: x = y − 1. This isolates one variable, ready to substitute into the other equation.",
+      "imageAlt": "Both equations of the system and four proposed first-step equations are transcribed with every sign."
+    },
+    "24": {
+      "prompt": "Usain Bolt ran 100 meters in 9.58 seconds. Which conversion gives his approximate speed in kilometers per hour?",
+      "choices": ["(9.58 sec/100 m) · (1000 m/1 km) · (1 min/60 sec) · (1 hr/60 min)", "(100 m/9.58 sec) · (60 sec/1 min) · (1000 m/1 km) · (60 min/1 hr)", "(100 m/9.58 sec) · (1 km/1000 m) · (1 min/60 sec) · (1 hr/60 min)", "(100 m/9.58 sec) · (60 sec/1 min) · (1 km/1000 m) · (60 min/1 hr)"],
+      "explanation": "Start with distance over time, 100 m/9.58 sec. Multiply by 60 sec/1 min to cancel seconds, 1 km/1000 m to cancel meters, and 60 min/1 hr to cancel minutes. The remaining units are km/hr.",
+      "imageAlt": "All four multi-factor conversions are transcribed, retaining the numerator and denominator of each unit fraction so cancellation can be checked."
+    }
+  }
+}

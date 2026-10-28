@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "c73ab2a15e5b284845b114239ce4aa7d4072b9c7f5e1f25370e33e7a706b38af",
+  "questions": {
+    "1": {
+      "prompt": "Segment AB is dilated by a scale factor of 5/2 centered at P, producing A′B′. Which statement is always true?",
+      "choices": ["PA ≅ AA′", "AB ∥ A′B′", "AB = A′B′", "(5/2)(A′B′) = AB"],
+      "explanation": "A dilation sends a segment not passing through its center to a parallel segment. The new length is (5/2)AB, so the segments are parallel but not the same length.",
+      "imageAlt": "Coordinate grid shows center P at (0,−2), original segment from A(2,2) to B(4,−2), and dilated segment from A′(5,8) to B′(10,−2). Corresponding endpoints lie on rays from P."
+    },
+    "2": {
+      "prompt": "Parallelogram CDEH has C(−5,5), D(2,5), E(−1,−1), and H(−8,−1). What are the coordinates of P, where diagonals CE and DH intersect?",
+      "choices": ["(−2,3)", "(−2,2)", "(−3,2)", "(−3,−2)"],
+      "explanation": "The diagonals of a parallelogram bisect one another. The midpoint of CE is ((−5−1)/2,(5−1)/2) = (−3,2).",
+      "imageAlt": "Coordinate and midpoint problem; all four vertices and candidate intersection coordinates are in the accessible text."
+    },
+    "3": {
+      "prompt": "The endpoints of QS are Q(−9,8) and S(9,−4). Point R is on QS so that QR:RS = 1:2. What are R's coordinates?",
+      "choices": ["(0,2)", "(3,0)", "(−3,4)", "(−6,6)"],
+      "explanation": "The 1:2 ratio puts R one third of the way from Q to S. One third of S−Q = (18,−12) is (6,−4); adding that to Q gives R(−3,4).",
+      "imageAlt": "Printed coordinate-partition question; endpoints and the 1:2 ratio are in accessible text."
+    },
+    "4": {
+      "prompt": "If the altitudes of a triangle meet at one of its vertices, what type of triangle is it?",
+      "choices": ["a right triangle", "an acute triangle", "an obtuse triangle", "an equilateral triangle"],
+      "explanation": "The altitudes meet at the orthocenter. In a right triangle, the two legs are themselves altitudes, so the orthocenter is the right-angle vertex.",
+      "imageAlt": "Printed question about triangle altitudes; all answer choices are in accessible text."
+    },
+    "5": {
+      "prompt": "In triangle ACD, DB is a median to AC, AB ≅ DB, and angle DAB = 32°. What is angle BDC?",
+      "choices": ["32°", "52°", "58°", "64°"],
+      "explanation": "Since AB = DB, triangle ABD has angle ADB = 32°, so angle ABD = 116°. The straight line AC makes angle DBC = 64°. The median makes AB = BC, and AB = DB, so BC = DB. Thus triangle BCD has equal base angles (180°−64°)/2 = 58°.",
+      "imageAlt": "A, B, C lie in that order on a horizontal segment, with D above and right of B. Segments AD, BD, and CD form the large triangle ACD and its median DB."
+    },
+    "6": {
+      "prompt": "Find the center and radius of the circle x² + y² = 8x − 6y + 39.",
+      "choices": ["center (−4,3), radius 64", "center (4,−3), radius 64", "center (−4,3), radius 8", "center (4,−3), radius 8"],
+      "explanation": "Move linear terms to the left and complete squares: (x−4)² + (y+3)² = 39+16+9 = 64. The center is (4,−3) and the radius is √64 = 8.",
+      "imageAlt": "Printed circle-equation problem; equation and center-radius options are in accessible text."
+    },
+    "7": {
+      "prompt": "In parallelogram ABCD, A-F-G-B are collinear, CF bisects angle DCB, and DG bisects angle ADC. They intersect at E. If angle B = 75°, find angle EFA.",
+      "choices": ["142.5°", "127.5°", "52.5°", "37.5°"],
+      "explanation": "Adjacent parallelogram angles are supplementary, so angle C = 105°. CF bisects C, making a 52.5° angle with CD. Since FA is parallel to CD but points the opposite way from FB, angle EFA is 180°−52.5° = 127.5°.",
+      "imageAlt": "Parallelogram A-B-C-D has A and B on the bottom, D and C on the top; F and G lie between A and B, in that order. Segment C-F and segment D-G cross at E inside the parallelogram."
+    },
+    "8": {
+      "prompt": "Which equation is perpendicular to the line 2y + 3x = 1?",
+      "choices": ["y = (2/3)x + 5/2", "y = (3/2)x + 2", "y = −(2/3)x + 1", "y = −(3/2)x + 1/2"],
+      "explanation": "The given line is y = −(3/2)x + 1/2, so its slope is −3/2. A perpendicular line has the negative reciprocal slope 2/3, which occurs in the first choice.",
+      "imageAlt": "Printed line-equation question; all slopes, signs, and intercepts are in accessible text."
+    },
+    "9": {
+      "prompt": "Triangles ABC and RST are graphed. Which rigid motion proves triangle ABC congruent to triangle RST in the stated vertex order?",
+      "choices": ["reflection over y = x", "180° rotation centered at (1,0)", "reflection over the x-axis followed by a translation 6 units right", "reflection over the x-axis followed by reflection over y = 1"],
+      "explanation": "A half-turn about (1,0) maps (x,y) to (2−x,−y). On the graph, A(−1,7) maps to R(3,−7), B(−3,2) to S(5,−2), and C(−1,2) to T(3,−2).",
+      "imageAlt": "Grid shows triangle A-B-C above and left of the origin with A(−1,7), B(−3,2), C(−1,2). Triangle R-S-T is below and right with R(3,−7), S(5,−2), T(3,−2)."
+    },
+    "10": {
+      "prompt": "Line y = −(1/4)x − 2 is dilated by scale factor 4 centered at the origin. Which statement about its image is true?",
+      "choices": ["slope −1/4 and y-intercept −8", "slope −1/4 and y-intercept −2", "slope −1 and y-intercept −8", "slope −1 and y-intercept −2"],
+      "explanation": "A dilation about the origin keeps the line's slope but multiplies its y-intercept by 4. The image therefore has slope −1/4 and y-intercept 4(−2) = −8.",
+      "imageAlt": "Printed line-dilation question; equation, scale factor, and candidate slopes and intercepts are in accessible text."
+    },
+    "11": {
+      "prompt": "Square MATH has side length 7 inches. What solid forms when it is continuously rotated around side AT?",
+      "choices": ["right cone with base diameter 7 inches", "right cylinder with diameter 7 inches", "right cone with base radius 7 inches", "right cylinder with radius 7 inches"],
+      "explanation": "Rotating a square around one of its sides makes a right cylinder. The fixed side is the axis and height; the opposite side sweeps a circle of radius equal to the square's side length, 7 inches.",
+      "imageAlt": "Printed solid-of-revolution question; side length and rotation axis AT are in accessible text."
+    },
+    "12": {
+      "prompt": "Circle O has radius 9 and central angle AOC = 120°. What is the area of the shaded sector, the rest of the circle outside that 120° sector?",
+      "choices": ["6π", "12π", "27π", "54π"],
+      "explanation": "The shaded major sector has angle 360°−120° = 240°. Its area is (240/360)π(9²) = 54π.",
+      "imageAlt": "Circle centered O has radii OA toward upper right and OC toward lower right, enclosing an unshaded 120° minor sector on the right. The complementary, larger sector is shaded gray."
+    },
+    "13": {
+      "prompt": "In quadrilateral QRST, diagonals QS and RT intersect at M. Which statement always proves QRST is a parallelogram?",
+      "choices": ["angle TQR and angle QRS are supplementary", "QM ≅ SM and QT ≅ RS", "QR ≅ TS and QT ≅ RS", "QR ≅ TS and QT ∥ RS"],
+      "explanation": "A quadrilateral is a parallelogram if both pairs of opposite sides are congruent. Here QR and TS are one opposite pair, and QT and RS are the other.",
+      "imageAlt": "Printed quadrilateral-property question; all side, angle, diagonal, and parallel relations are in accessible text."
+    },
+    "14": {
+      "prompt": "A standard golf ball has diameter 1.680 inches and material weight 0.6523 ounce per cubic inch. What is the ball's weight to the nearest hundredth of an ounce?",
+      "choices": ["1.10", "1.62", "2.48", "3.81"],
+      "explanation": "The radius is 0.840 inch. Sphere volume is (4/3)π(0.840)³ ≈ 2.4827 cubic inches. Multiplying by 0.6523 ounce per cubic inch gives about 1.619 ounces, or 1.62.",
+      "imageAlt": "Printed sphere-density word problem; diameter, material weight, units, and choices are in accessible text."
+    },
+    "15": {
+      "prompt": "Chelsea sits 8 feet from a tree. Her eye is 1.5 feet above ground and her angle of elevation to the top is 36°. How tall is the tree to the nearest foot?",
+      "choices": ["8", "7", "6", "4"],
+      "explanation": "The vertical rise from eye to treetop is 8tan(36°) ≈ 5.81 feet. Add her eye height: 5.81+1.5 ≈ 7.31 feet, which rounds to 7 feet.",
+      "imageAlt": "Printed angle-of-elevation word problem; horizontal distance, eye height, and angle are in accessible text."
+    },
+    "16": {
+      "prompt": "In right triangle ABC with right angle C, altitude CD meets hypotenuse AB at D. Which equation is always true?",
+      "choices": ["AD/AC = CD/BC", "AD/CD = BD/CD", "AC/CD = BC/CD", "AD/AC = AC/BD"],
+      "explanation": "The altitude creates similar triangles ADC and CDB. Corresponding ratios AD/AC and CD/BC are equal; both equal cos A in their respective right triangles.",
+      "imageAlt": "Triangle ABC has A at lower left, B at lower right, and C above. Horizontal AB is the hypotenuse. Vertical CD drops from C to point D on AB, making two smaller right triangles."
+    },
+    "17": {
+      "prompt": "An L-shaped countertop has an 8-foot top length, 5-foot right length, and 2-foot width on both arms. An 18-inch by 21-inch sink opening is removed. What installed area remains, to the nearest square foot?",
+      "choices": ["26", "23", "22", "19"],
+      "explanation": "The L has area 8(2)+5(2)−2(2) = 22 square feet, subtracting its overlapping corner once. The sink is 1.5 by 1.75 feet, area 2.625 square feet. Remaining area 22−2.625 = 19.375 rounds to 19 square feet.",
+      "imageAlt": "Top horizontal rectangle runs 8 feet left to right and is 2 feet deep; right vertical rectangle runs 5 feet top to bottom and is 2 feet wide. They overlap in a 2-by-2-foot upper-right corner. The rectangular sink opening lies in the horizontal arm."
+    },
+    "18": {
+      "prompt": "In isosceles triangle ADE with equal sides AD and AE, B lies on AD and C on AE. Triangle ABC is also isosceles with vertex A. If AB = 10, BD = 5, and DE = 12, find BC.",
+      "choices": ["6", "7", "8", "9"],
+      "explanation": "AB/AD = 10/(10+5) = 2/3. Because B and C lie the same fraction along the congruent sides, BC ∥ DE and triangles ABC and ADE are similar. Thus BC = (2/3)(12) = 8.",
+      "imageAlt": "Large isosceles triangle A-D-E has A at top and horizontal base DE. Points B and C lie on left and right sides at the same level, with horizontal segment BC parallel to DE."
+    },
+    "19": {
+      "prompt": "Right triangle ABC has right angle C and side lengths AC = 5, CB = 12, AB = 13. Which statement must be true?",
+      "choices": ["sin A = cos B", "sin A = tan B", "sin B = tan A", "sin B = cos B"],
+      "explanation": "The two acute angles A and B are complementary. The sine of one acute angle equals the cosine of its complement; here sin A = 12/13 and cos B = 12/13.",
+      "imageAlt": "Right triangle shows C at lower left, A directly above C, and B to the right of C. Vertical AC is 5, horizontal CB is 12, and sloping hypotenuse AB is 13."
+    },
+    "20": {
+      "prompt": "In right triangle RST, altitude TV is drawn to hypotenuse RS. If RV = 12 and RT = 18, find SV.",
+      "choices": ["6√5", "15", "6√6", "27"],
+      "explanation": "The right-triangle leg theorem gives RT² = RV·RS. Thus 18² = 12·RS, so RS = 27. Since V lies between R and S, SV = 27−12 = 15.",
+      "imageAlt": "Printed right-triangle altitude problem; triangle vertices, altitude foot, lengths, and all radical choices are in accessible text."
+    },
+    "21": {
+      "prompt": "Find the volume, in cubic centimeters, of a right square pyramid with base edges 64 cm and slant height 40 cm.",
+      "choices": ["8192.0", "13,653.3", "32,768.0", "54,613.3"],
+      "explanation": "The apex, base center, and midpoint of a base edge form a right triangle. Its horizontal leg is 32 cm, so pyramid height is √(40²−32²) = 24 cm. Volume is (1/3)(64²)(24) = 32,768 cubic centimeters.",
+      "imageAlt": "Printed square-pyramid volume question; base edge and slant height are in accessible text."
+    },
+    "22": {
+      "prompt": "Chords PQ and RS of circle O intersect at T. Which relationship must always be true?",
+      "choices": ["RT = TQ", "RT = TS", "RT + TS = PT + TQ", "RT × TS = PT × TQ"],
+      "explanation": "For two chords crossing inside a circle, the products of their segment lengths are equal. The segments of RS are RT and TS; those of PQ are PT and TQ.",
+      "imageAlt": "Circle O contains chord P-T-Q from upper left to right and chord R-T-S from left-lower edge to upper-right edge. The two chords cross at interior point T; center O lies below T."
+    },
+    "23": {
+      "prompt": "A rhombus is graphed on coordinate axes. Which transformation maps it onto itself?",
+      "choices": ["180° rotation about the origin", "reflection over y = (1/2)x + 1", "reflection over y = 0", "reflection over x = 0"],
+      "explanation": "The left and right vertices are mirror images across the y-axis, and the top and bottom vertices lie on that axis. Thus reflecting over x = 0 maps every vertex and edge onto the rhombus.",
+      "imageAlt": "Rhombus vertices are approximately (−4,1), (0,3), (4,1), and (0,−1), so its vertical diagonal is the y-axis and its horizontal diagonal is above the x-axis."
+    },
+    "24": {
+      "prompt": "A 15-foot ladder leans against a wall at an angle of 65° with the ground. Find the horizontal distance from wall to ladder base, to the nearest tenth of a foot.",
+      "choices": ["6.3", "7.0", "12.9", "13.6"],
+      "explanation": "The ladder is the hypotenuse and horizontal distance is adjacent to the 65° ground angle. Thus distance = 15cos(65°) ≈ 6.34 feet, or 6.3 feet.",
+      "imageAlt": "Printed right-triangle ladder problem; ladder length and ground angle are in accessible text."
+    }
+  }
+}

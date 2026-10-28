@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "04434d530a31c1a99f0cb3711cc1989f291c0f9ae8508a39ae53264336e03563",
+  "questions": {
+    "1": {
+      "prompt": "A triangle has perimeter 18. A similar triangle is made by dilation with scale factor 3. What is its perimeter?",
+      "choices": ["6", "18", "54", "162"],
+      "explanation": "Dilation multiplies every side length by 3, so it multiplies their sum, the perimeter, by 3. The image perimeter is 18 × 3 = 54.",
+      "imageAlt": "Printed perimeter-and-dilation question; original perimeter and scale factor are available in accessible text."
+    },
+    "2": {
+      "prompt": "From a ground point 200 feet from the center of the Washington Monument's base, the angle of elevation to its top is 70.19°. Find the monument's height to the nearest foot.",
+      "choices": ["188", "213", "555", "590"],
+      "explanation": "In the right-triangle model, the height is opposite the 70.19° angle and 200 feet is adjacent. Thus height = 200 tan 70.19° ≈ 555 feet.",
+      "imageAlt": "Photo of Washington Monument overlaid with a right triangle: horizontal distance from viewer to base is 200 ft, angle of elevation at viewer is 70.19 degrees, and monument height is the vertical side."
+    },
+    "3": {
+      "prompt": "On a coordinate graph, triangle EQA maps to triangle SUL. Which transformation sequence shows they are congruent?",
+      "choices": ["rotate EQA 90° counterclockwise about the origin, then translate 9 right and 1 down", "rotate EQA 90° counterclockwise about the origin, then reflect over x = 4", "reflect EQA over the x-axis, then rotate 90° clockwise about the origin", "translate EQA 10 right, then reflect over x = −1"],
+      "explanation": "The graph has E(−2, 5), Q(−2, 1), A(−5, 1). A 90° counterclockwise rotation sends them to (−5, −2), (−1, −2), (−1, −5). Translating 9 right and 1 down gives S(4, −3), U(8, −3), L(8, −6).",
+      "imageAlt": "Coordinate grid shows triangle EQA above and left of the origin, with E over Q and A left of Q. Triangle SUL is below and right of the origin, with S left of U and L below U."
+    },
+    "4": {
+      "prompt": "Two sides of a triangle have lengths 2 and 8. Which could be the third side?",
+      "choices": ["10", "7", "6", "4"],
+      "explanation": "The triangle inequality requires the third length x to satisfy 8 − 2 < x < 8 + 2, or 6 < x < 10. Only 7 is strictly within that interval.",
+      "imageAlt": "Printed triangle-inequality question. Accessible text includes both given lengths and all four possible third sides."
+    },
+    "5": {
+      "prompt": "Which listed angle rotates a regular octagon onto itself?",
+      "choices": ["36°", "90°", "144°", "160°"],
+      "explanation": "A regular octagon maps onto itself every 360°/8 = 45°. Ninety degrees is two such steps and is the only listed multiple of 45°.",
+      "imageAlt": "Printed rotational-symmetry question; the accessible text includes the octagon and all four angles."
+    },
+    "6": {
+      "prompt": "For the circle x² + y² − 6x + 2y = 14, find the center and radius.",
+      "choices": ["center (−3, 1), radius 5", "center (3, −1), radius 5", "center (−3, 1), radius √24", "center (3, −1), radius √24"],
+      "explanation": "Complete both squares: x² − 6x + y² + 2y = 14 becomes (x − 3)² + (y + 1)² = 14 + 9 + 1 = 24. Thus the center is (3, −1) and the radius is √24.",
+      "imageAlt": "Printed circle equation; accessible text preserves both squared terms and all center-radius choices."
+    },
+    "7": {
+      "prompt": "Right triangle HSF has right angle S, hypotenuse HF = 30, and leg FS = 23. Find angle F to the nearest degree.",
+      "choices": ["53°", "50°", "40°", "37°"],
+      "explanation": "FS is adjacent to angle F, so cos F = 23/30. Taking inverse cosine gives F ≈ 39.94°, or 40° to the nearest degree.",
+      "imageAlt": "Right triangle HSF has H and F on a horizontal base labeled 30, S above them, right-angle mark at S, and sloping leg SF labeled 23."
+    },
+    "8": {
+      "prompt": "In triangle CAB, D, E, and F are side midpoints, and DE, EF, FD are midsegments. Given CA = 14, CB = 20, and FB = 9, find the perimeter of quadrilateral DEFA.",
+      "choices": ["26", "32", "44", "52"],
+      "explanation": "D and E are midpoints, so DE = AB/2. Since F is the midpoint of AB and FB = 9, DE = 9 and FA = 9. Also EF = CA/2 = 7 and AD = CA/2 = 7. The perimeter is 9 + 7 + 9 + 7 = 32.",
+      "imageAlt": "Triangle CAB has C at top, A lower left, B lower right. D is midpoint of CA, E midpoint of CB, and F midpoint of AB. Midsegments DE, EF, and FD form an interior triangle; quadrilateral DEFA is on the lower-left."
+    },
+    "9": {
+      "prompt": "A square-pyramid candle has base side 6 cm and height 10 cm. If wax burns at 3.5 cubic centimeters per hour, about how many hours can it burn?",
+      "choices": ["103", "51", "34", "11"],
+      "explanation": "The pyramid's volume is (1/3)(6²)(10) = 120 cm³. At 3.5 cm³ per hour, burning time is 120/3.5 ≈ 34.3 hours, approximately 34 hours.",
+      "imageAlt": "Square pyramid diagram labels a vertical height of 10 cm and a base side of 6 cm."
+    },
+    "10": {
+      "prompt": "From exterior point S, tangent SR and secant S-T-U meet circle O. Arcs TU and RU are congruent, and minor arc TR measures 68°. What is angle S?",
+      "choices": ["22°", "34°", "39°", "78°"],
+      "explanation": "The equal arcs TU and RU share the remaining 360° − 68° = 292°, so each measures 146°. An exterior tangent-secant angle is half the difference of the intercepted arcs: (146° − 68°)/2 = 39°.",
+      "imageAlt": "Circle O has exterior point S at right. Secant S-T-U enters at near point T and exits at far point U; tangent S-R touches below T. Minor arc TR is labeled 68 degrees, and arcs TU and RU are stated congruent."
+    },
+    "11": {
+      "prompt": "Triangle RST has included angle S = 33° between sides RS = 7 and ST = 12. Find its area to the nearest tenth.",
+      "choices": ["22.9", "27.3", "35.2", "45.7"],
+      "explanation": "With two sides and included angle, area = (1/2)(7)(12)sin 33° = 42 sin 33° ≈ 22.9 square units.",
+      "imageAlt": "Printed triangle-area question; the two side lengths and included angle are provided in accessible text."
+    },
+    "12": {
+      "prompt": "Triangle ABC has A(−3, −2), B(−1, 2), C(4, 1). Its image has A'(−6, −2), B'(−2, 2), C'(8, 1). What transformation maps ABC to its image?",
+      "choices": ["dilation", "translation", "vertical stretch", "horizontal stretch"],
+      "explanation": "Each x-coordinate doubles while each y-coordinate stays unchanged: (x, y) maps to (2x, y). That is a horizontal stretch by factor 2, not a dilation, which would also change y.",
+      "imageAlt": "Coordinate grid shows triangle ABC crossing the y-axis. Every vertex's coordinates and its image coordinates are included in the accessible prompt."
+    },
+    "13": {
+      "prompt": "Which equation describes a line parallel to y = 4x + 6 and passing through (−3, 2)?",
+      "choices": ["y − 2 = 4(x + 3)", "y + 3 = 4(x − 2)", "y − 2 = −(1/4)(x + 3)", "y + 3 = −(1/4)(x − 2)"],
+      "explanation": "Parallel lines have the same slope 4. Point-slope form through (−3, 2) is y − 2 = 4[x − (−3)] = 4(x + 3).",
+      "imageAlt": "Printed parallel-line question. Accessible text preserves the original slope, signed point, and all four point-slope equations."
+    },
+    "14": {
+      "prompt": "What two-dimensional shape always forms when a plane cuts a right cylinder perpendicular to its base?",
+      "choices": ["circle", "triangle", "rhombus", "rectangle"],
+      "explanation": "A plane perpendicular to the circular base is vertical. Its intersection with the cylinder has two vertical side segments and horizontal segments in the top and bottom bases, forming a rectangle.",
+      "imageAlt": "Printed cylinder-cross-section question; the cutting plane orientation and all choices are stated in accessible text."
+    },
+    "15": {
+      "prompt": "In triangle KMP, C is on KM and E on KP with CE parallel to MP. If KC = 8, CM = 3, and CE = 12, find MP.",
+      "choices": ["24", "16.5", "15", "4.5"],
+      "explanation": "Triangles KCE and KMP are similar. KC/KM = 8/(8 + 3) = 8/11, so CE/MP = 8/11. Thus MP = 12 × 11/8 = 16.5.",
+      "imageAlt": "Triangle KMP has K at top, M lower left, P lower right. C lies on KM and E on KP; interior segment CE is parallel to base MP."
+    },
+    "16": {
+      "prompt": "A parallelogram must be a rectangle if its diagonals have which property?",
+      "choices": ["are perpendicular", "bisect each other", "bisect its angles", "are congruent"],
+      "explanation": "Every parallelogram's diagonals bisect each other, but equal-length diagonals force its angles to be right angles. Therefore a parallelogram with congruent diagonals is a rectangle.",
+      "imageAlt": "Printed parallelogram-property question; all four diagonal properties are available in accessible text."
+    },
+    "17": {
+      "prompt": "Point O divides segment CA so CO:OA = 1:4, with C(−2, −9) and A(3, 6). Find O.",
+      "choices": ["(2, 3)", "(1, 0)", "(0, −3)", "(−1, −6)"],
+      "explanation": "A 1:4 ratio puts O one fifth of the way from C to A. The change from C to A is (5, 15); one fifth is (1, 3). Add to C(−2, −9) to obtain O(−1, −6).",
+      "imageAlt": "Printed coordinate-ratio question. Accessible text preserves both signed endpoints, their order, and the 1:4 ratio."
+    },
+    "18": {
+      "prompt": "A spherical helium balloon has diameter 1.7 feet. Helium costs $0.80 per cubic foot. What does it cost to fill the balloon?",
+      "choices": ["$2.06", "$2.42", "$3.22", "$16.46"],
+      "explanation": "The radius is 0.85 ft. Sphere volume is (4/3)π(0.85)³ ≈ 2.573 ft³. At $0.80 per cubic foot, cost is approximately 2.573 × $0.80 = $2.06.",
+      "imageAlt": "Printed sphere-cost question; accessible text includes the diameter, price per cubic foot, and cost choices."
+    },
+    "19": {
+      "prompt": "Right triangle ABD has altitude BC to hypotenuse AD, with AC = 2.5 and CD = 4.3. Find BA to the nearest tenth.",
+      "choices": ["3.3", "3.4", "4.1", "5.4"],
+      "explanation": "The whole hypotenuse is AD = 2.5 + 4.3 = 6.8. By the leg-projection theorem, BA² = AC × AD = 2.5 × 6.8 = 17, so BA = √17 ≈ 4.1.",
+      "imageAlt": "Right triangle ABD has right angle at B above base AD. Altitude BC drops from B to C on AD, splitting the base into AC labeled 2.5 and CD labeled 4.3."
+    },
+    "20": {
+      "prompt": "Trapezoid ZOYD has parallel sides ZO and DY. If angle Z = 141° and angle Y = 73°, find angle D.",
+      "choices": ["39°", "73°", "107°", "141°"],
+      "explanation": "Angles Z and D are consecutive interior angles along one leg between parallel bases ZO and DY. They are supplementary, so D = 180° − 141° = 39°.",
+      "imageAlt": "Printed trapezoid-angle question. Accessible text preserves the vertex order Z-O-Y-D and the parallel-base relation."
+    },
+    "21": {
+      "prompt": "Triangle ABC is translated 5 left and 2 up to triangle PQR. Which statement is not always true?",
+      "choices": ["triangle PQR ≅ triangle ABC", "∠A ≅ ∠Q", "BQ = √29", "RQ = CB"],
+      "explanation": "The vertex order makes A correspond to P, B to Q, and C to R, so angle A matches angle P, not necessarily angle Q. A translation does preserve shape and side lengths; the displacement from B to Q is √(5² + 2²) = √29.",
+      "imageAlt": "Printed translation question; accessible text states the motion, corresponding triangle names, and all four claims."
+    },
+    "22": {
+      "prompt": "Congruent triangles PEN and PAL share vertex P in the diagram. Which rigid motion maps PEN to PAL?",
+      "choices": ["point reflection through P", "reflection over the angle bisector of ∠EPA", "rotation about P mapping PE onto PA", "translation along EA mapping E onto A"],
+      "explanation": "The triangles sit as mirror images on opposite sides of the bisector of angle EPA. Reflecting across that bisector fixes P and exchanges E with A and N with L. A rotation would not reverse their orientation as shown.",
+      "imageAlt": "Two congruent triangles share top vertex P. Left triangle PEN has outer vertex E left and lower vertex N; right triangle PAL has matching outer vertex A right and lower vertex L. They are symmetric across a line through P between them."
+    },
+    "23": {
+      "prompt": "A cone has height 8 inches and volume 75.4 cubic inches. What is its diameter to the nearest inch?",
+      "choices": ["9", "2", "3", "6"],
+      "explanation": "Use V = (1/3)πr²h: 75.4 = (8/3)πr², giving r² ≈ 9 and radius ≈ 3 inches. Diameter is twice the radius, about 6 inches.",
+      "imageAlt": "Printed cone-volume question; accessible text includes height, volume, unit, and all diameter choices."
+    },
+    "24": {
+      "prompt": "Line 5x − 2y = 10 is dilated by factor 2 about center (2, 0). Which statement describes its image?",
+      "choices": ["it is the original line", "it passes through (4, 0)", "it passes through (0, −10)", "it is perpendicular to the original line"],
+      "explanation": "The center (2, 0) lies on the original line since 5(2) − 2(0) = 10. A dilation centered on a line maps that line onto itself, so the image is the original line.",
+      "imageAlt": "Printed line-dilation question; accessible text preserves the original equation, center, factor, and all four descriptions."
+    }
+  }
+}

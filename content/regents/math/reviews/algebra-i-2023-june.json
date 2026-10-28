@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "b3a22c11c913010143252d40c48c4dfafc570ede0cc55516cdf7a1e26f25fbb4",
+  "questions": {
+    "1": {
+      "prompt": "The expression 9m² − 100 is equivalent to which product?",
+      "choices": ["(3m − 10)(3m + 10)", "(3m − 10)(3m − 10)", "(3m − 50)(3m + 50)", "(3m − 50)(3m − 50)"],
+      "explanation": "This is a difference of squares: 9m² − 100 = (3m)² − 10² = (3m − 10)(3m + 10).",
+      "imageAlt": "Difference of squares nine m squared minus one hundred and all four binomial products are transcribed."
+    },
+    "2": {
+      "prompt": "Which expression represents an irrational number?",
+      "choices": ["√16 + √1", "√25 + √4", "√36 + √7", "√49 + √9"],
+      "explanation": "√16+√1=5, √25+√4=7, and √49+√9=10 are integers. √36+√7=6+√7 remains irrational because √7 is irrational.",
+      "imageAlt": "All four radical sums are transcribed, preserving separate square-root signs over 16 and 1; 25 and 4; 36 and 7; 49 and 9."
+    },
+    "3": {
+      "prompt": "Which linear equation represents a line through the point (−3, −8)?",
+      "choices": ["y = 2x − 2", "y = 2x − 8", "y = 2x + 13", "y = 2x − 14"],
+      "explanation": "Substitute x=−3 into y=2x−2: y=−6−2=−8. This line contains the stated point.",
+      "imageAlt": "Point negative three comma negative eight and four slope-two line equations are transcribed with each intercept's sign."
+    },
+    "4": {
+      "prompt": "The expression (5x² − x + 4) − 3(x² − x − 2) is equivalent to which expression?",
+      "choices": ["2x² − 2x + 2", "2x² + 2x + 10", "2x⁴ − 2x² + 2", "2x⁴ − 2x² + 10"],
+      "explanation": "Distribute −3 to get 5x²−x+4−3x²+3x+6. Combining like terms gives 2x²+2x+10.",
+      "imageAlt": "Both parenthesized trinomials and all four polynomial answers are transcribed with exponents and signs."
+    },
+    "5": {
+      "prompt": "The 24th term of the sequence −5, −11, −17, −23, ... is ...",
+      "choices": ["−149", "−143", "133", "139"],
+      "explanation": "The arithmetic sequence decreases by 6 each term. Its 24th term is −5 + (24−1)(−6) = −5−138 = −143.",
+      "imageAlt": "First four negative sequence terms and the four signed numeric choices are transcribed."
+    },
+    "6": {
+      "prompt": "When completing the square for x² − 18x + 77 = 0, which equation is a correct step?",
+      "choices": ["(x − 9)² = 4", "(x − 3)² = 2", "x = ±13", "x − 9 = ±9"],
+      "explanation": "Move 77 right to get x²−18x=−77, then add (18/2)²=81 on both sides. This gives (x−9)²=4.",
+      "imageAlt": "Original quadratic and four proposed solving steps are transcribed, including squared binomials and plus-or-minus symbols."
+    },
+    "7": {
+      "prompt": "Which function will have the greatest value when x > 1?",
+      "choices": ["g(x) = 2(5)ˣ", "f(x) = 2x + 5", "h(x) = 2x² + 5", "k(x) = 2x³ + 5"],
+      "explanation": "The exponential function 2·5ˣ grows faster than the listed linear, quadratic, and cubic functions. It already has the largest value just above x=1 and stays above them as x increases.",
+      "imageAlt": "Four functions are transcribed: two times five to the x, two x plus five, two x squared plus five, and two x cubed plus five; condition x greater than one preserved."
+    },
+    "8": {
+      "prompt": "Mike uses b = 1300(2.65)ˣ to model bacterial growth. What does the exponent represent?",
+      "choices": ["the total number of bacteria currently present", "the percent at which the bacteria are growing", "the initial amount of bacteria", "the number of time periods"],
+      "explanation": "In an exponential model b=a(r)ˣ, the initial amount is 1300 and the growth factor is 2.65. The exponent x counts how many time periods the factor has been applied.",
+      "imageAlt": "Bacteria model with coefficient 1300, base 2.65, and exponent x plus all four interpretations are transcribed."
+    },
+    "9": {
+      "prompt": "A company ships 30,000 items each week. Which conversion product gives the approximate number shipped per minute?",
+      "choices": ["(30,000 items/1 week) · (7 days/1 week) · (60 min/1 hr) · (1 day/24 hrs)", "(30,000 items/1 week) · (1 week/7 days) · (1 day/24 hrs) · (1 hr/60 min)", "(1 week/30,000 items) · (1 week/7 days) · (1 day/24 hrs) · (1 hr/60 min)", "(1 week/30,000 items) · (7 days/1 week) · (24 hrs/1 day) · (60 min/1 hr)"],
+      "explanation": "Begin with items per week, then multiply by 1 week/7 days, 1 day/24 hours, and 1 hour/60 minutes. Week, day, and hour units cancel, leaving items per minute.",
+      "imageAlt": "Four complete chained unit-conversion products are transcribed, preserving numerator and denominator order for weeks, days, hours, and minutes."
+    },
+    "10": {
+      "prompt": "A function's graph crosses the x-axis at x=−3 and touches the x-axis at x=2, then turns upward. Which equation could represent it?",
+      "choices": ["f(x) = (x + 2)(x − 3)", "f(x) = (x − 2)(x + 3)", "f(x) = (x − 2)²(x + 3)", "f(x) = (x − 2)(x + 3)(x − 12)"],
+      "explanation": "Crossing at −3 gives a simple factor x+3. Touching and turning at 2 requires an even-multiplicity factor (x−2)². Their product is choice (3).",
+      "imageAlt": "Cubic-like graph falls left and rises right; it crosses the x-axis at negative three and touches/turns at positive two. All four candidate products are transcribed."
+    },
+    "11": {
+      "prompt": "If g(x) = −x² − x + 5, what is g(−4)?",
+      "choices": ["−15", "−7", "17", "25"],
+      "explanation": "Substitute −4: g(−4)=−(−4)²−(−4)+5=−16+4+5=−7.",
+      "imageAlt": "Negative x squared minus x plus five, input negative four, and all four signed outputs are transcribed."
+    },
+    "12": {
+      "prompt": "A rectangular popcorn box has a 6-inch by 4-inch base and height 8 inches. A larger box increases both base dimensions by x inches while height stays 8 inches. Which function gives its volume?",
+      "choices": ["V(x) = (6 + x)(4 + x)(8 + x)", "V(x) = (6 + x)(4 + x)(8)", "V(x) = (6 + x) + (4 + x) + (8 + x)", "V(x) = (6 + x) + (4 + x) + (8)"],
+      "explanation": "Volume of a rectangular prism is length times width times height. The new dimensions are 6+x, 4+x, and unchanged 8, so V(x)=(6+x)(4+x)(8).",
+      "imageAlt": "Original dimensions six by four by eight inches, changes to base only, and four product-versus-sum volume formulas are transcribed."
+    },
+    "13": {
+      "prompt": "The expression 300(4)ˣ⁺³ is equivalent to which expression?",
+      "choices": ["300(4)ˣ(4)³", "300(4ˣ)³", "300(4)ˣ + 300(4)³", "300ˣ(4)³"],
+      "explanation": "Use the exponent rule a^(x+3)=aˣa³. Thus 300·4^(x+3)=300·4ˣ·4³.",
+      "imageAlt": "The exponent on four is the entire sum x plus three. All four proposed expressions preserve their parentheses and exponents."
+    },
+    "14": {
+      "prompt": "Ashley has 7 quarters and d dimes. She needs at least $3.00 for lunch. Which inequality determines enough dimes?",
+      "choices": ["1.75 + d ≥ 3.00", "1.75 + 0.10d ≥ 3.00", "1.75 + d ≤ 3.00", "1.75 + 0.10d ≤ 3.00"],
+      "explanation": "Seven quarters total $1.75, and d dimes total $0.10d. At least $3 means the total must be greater than or equal to 3: 1.75+0.10d≥3.00.",
+      "imageAlt": "Seven-quarter total $1.75, dime value $0.10 each, at-least condition, and all four inequalities are transcribed with relation signs."
+    },
+    "15": {
+      "prompt": "The area of a trapezoid is A = (1/2)(b₁ + b₂)h. Express height h in terms of A, b₁, and b₂.",
+      "choices": ["2A − b₁ − b₂", "(2A − b₁)/b₂", "(1/2)A − b₁ − b₂", "2A/(b₁ + b₂)"],
+      "explanation": "Multiply both sides by 2: 2A=(b₁+b₂)h. Divide by the sum of the bases to get h=2A/(b₁+b₂).",
+      "imageAlt": "Trapezoid area formula one-half times sum of bases times height and all four solved forms are transcribed with fraction groupings."
+    },
+    "16": {
+      "prompt": "The function f(x)=|x| is multiplied by k to make g(x)=k|x|. If k=1/2, how does g's graph compare with f's?",
+      "choices": ["g is a reflection of f over the y-axis", "g is a reflection of f over the x-axis", "g is wider than f", "g is narrower than f"],
+      "explanation": "Multiplying all y-values by positive 1/2 vertically compresses the V-shaped graph. Its arms rise more slowly, so g appears wider than f.",
+      "imageAlt": "Absolute-value parent function, half-height multiplier k equals one-half, and four reflection-or-width choices are transcribed."
+    },
+    "17": {
+      "prompt": "A survey table shows male: SUV 21, sports car 38, total 59; female: SUV 135, sports car 46, total 181; totals: SUV 156, sports car 84, all 240. Of adults preferring sports cars, about what percent were male?",
+      "choices": ["15.8", "45.2", "64.4", "82.6"],
+      "explanation": "Of the 84 adults who preferred sports cars, 38 were male. Compute 38/84×100≈45.2%.",
+      "imageAlt": "The two-way survey table, including all male, female, and preference totals, is fully transcribed in the prompt."
+    },
+    "18": {
+      "prompt": "What is the solution set of 2x² = 72?",
+      "choices": ["{9, 4}", "{−4, 9}", "{6}", "{±6}"],
+      "explanation": "Divide by 2 to get x²=36. Both x=6 and x=−6 square to 36, so the solution set is {±6}.",
+      "imageAlt": "Equation two x squared equals seventy-two and all four sets of candidate roots are transcribed, including both signs in choice four."
+    },
+    "19": {
+      "prompt": "Three quadratics are given: I. f(x)=(x+2)²+5; II. g table for x=−4,−3,−2,−1,0,1 has outputs −3,2,5,5,2,−3; III. h graph is a downward parabola with vertex (−2,5). Which have the same vertex?",
+      "choices": ["I and II, only", "II and III, only", "I and III, only", "I, II, and III"],
+      "explanation": "Function f has vertex (−2,5), and the graphed h has vertex (−2,5). The equal g outputs at x=−2 and −1 show g's axis of symmetry is halfway between them, x=−1.5, so g has a different vertex.",
+      "imageAlt": "Function I is vertex form with vertex negative two comma five; the complete six-column g table and the downward h graph with vertex negative two comma five are transcribed."
+    },
+    "20": {
+      "prompt": "What is the domain of f(x)=x²+x−12?",
+      "choices": ["(−∞,−4]", "(−∞,∞)", "[−4,3]", "[3,∞)"],
+      "explanation": "A polynomial is defined for every real input x. Its domain is all real numbers, written (−∞,∞).",
+      "imageAlt": "Quadratic function and all four interval choices are transcribed with infinity and endpoint brackets."
+    },
+    "21": {
+      "prompt": "A son's weekly allowance is $10 in the first year. Each later year, his father doubles the previous year's weekly allowance and subtracts 8. Which recursive formula gives future allowances?",
+      "choices": ["aₙ=2n−8", "aₙ=2(n+1)−8", "a₁=10; aₙ₊₁=2aₙ−8", "a₁=10; aₙ₊₁=2(aₙ−8)"],
+      "explanation": "Set the initial weekly allowance a₁ to 10. To produce the next year's amount, double the prior amount aₙ and then subtract 8: aₙ₊₁=2aₙ−8.",
+      "imageAlt": "Initial allowance ten dollars and four formulas are transcribed, preserving the difference between doubling then subtracting eight and doubling after subtraction."
+    },
+    "22": {
+      "prompt": "What is the solution to 4 − (2/5)x ≥ (1/3)x + 15?",
+      "choices": ["x ≤ 11", "x ≥ 11", "x ≤ −15", "x ≥ −15"],
+      "explanation": "Subtract 15 and add (2/5)x to both sides: −11 ≥ [(1/3)+(2/5)]x = (11/15)x. Multiplying by positive 15/11 yields −15 ≥ x, equivalently x≤−15.",
+      "imageAlt": "Inequality four minus two-fifths x greater than or equal to one-third x plus fifteen, with all four signed-bound choices transcribed."
+    },
+    "23": {
+      "prompt": "Which statement is correct about the polynomial 3x² + 5x − 2?",
+      "choices": ["It is a third-degree polynomial with a constant term of −2.", "It is a third-degree polynomial with a leading coefficient of 3.", "It is a second-degree polynomial with a constant term of 2.", "It is a second-degree polynomial with a leading coefficient of 3."],
+      "explanation": "The highest exponent is 2, so this polynomial is second-degree. The coefficient of its leading term 3x² is 3; its constant is −2.",
+      "imageAlt": "Polynomial three x squared plus five x minus two and all four degree, leading-coefficient, and constant-term claims are transcribed."
+    },
+    "24": {
+      "prompt": "A store models profit p(n), where n is the number of boxes of nails sold in one day. What is a reasonable domain for n?",
+      "choices": ["nonnegative integers", "rational numbers", "real numbers", "integers"],
+      "explanation": "A store can sell zero or a whole number of boxes, but not a negative or fractional count of boxes. Therefore n should be a nonnegative integer.",
+      "imageAlt": "Profit function input n counts boxes sold in a day; all four numeric-domain categories are transcribed."
+    }
+  }
+}

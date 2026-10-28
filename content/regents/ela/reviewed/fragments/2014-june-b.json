@@ -1,0 +1,53 @@
+{
+  "sections": [{
+    "slug": "passage-b",
+    "title": "Reading Comprehension · Passage B",
+    "intro": "Read “Give Us Our Peace” and answer questions 11–14.",
+    "questionIds": ["english-2014-june-q11", "english-2014-june-q12", "english-2014-june-q13", "english-2014-june-q14"],
+    "passage": {
+      "title": "Give Us Our Peace",
+      "credit": "—Langston Hughes · from The Chicago Defender, August 25, 1945",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "Give us a peace equal to the war"},
+        {"number": 2, "text": "Or else our souls will be unsatisfied,"},
+        {"number": 3, "text": "And we will wonder what we have fought for"},
+        {"number": 4, "text": "And why the many died."},
+        {"number": null, "text": ""},
+        {"number": 5, "text": "Give us a peace accepting every challenge—"},
+        {"number": 6, "text": "The challenge of the poor, the black, of all denied,"},
+        {"number": 7, "text": "The challenge of the vast colonial world"},
+        {"number": 8, "text": "That long has had so little justice by its side."},
+        {"number": null, "text": ""},
+        {"number": 9, "text": "Give us a peace that dares us to be wise."},
+        {"number": 10, "text": "Give us a peace that dares us to be strong."},
+        {"number": 11, "text": "Give us a peace that dares us still uphold"},
+        {"number": 12, "text": "Throughout the peace our battle against wrong."},
+        {"number": null, "text": ""},
+        {"number": 13, "text": "Give us a peace that is not cheaply used,"},
+        {"number": 14, "text": "A peace that is no clever scheme,"},
+        {"number": 15, "text": "A people’s peace for which men can enthuse,"},
+        {"number": 16, "text": "A peace that brings reality to our dream."},
+        {"number": null, "text": ""},
+        {"number": 17, "text": "Give us a peace that will produce great schools—"},
+        {"number": 18, "text": "As the war produced great armament,"},
+        {"number": 19, "text": "A peace that will wipe out our slums—"},
+        {"number": 20, "text": "As war wiped out our foes on evil bent."},
+        {"number": null, "text": ""},
+        {"number": 21, "text": "Give us a peace that will enlist"},
+        {"number": 22, "text": "A mighty army serving human kind,"},
+        {"number": 23, "text": "Not just an army geared to kill,"},
+        {"number": 24, "text": "But trained to help the living mind—"},
+        {"number": null, "text": ""},
+        {"number": 25, "text": "An army trained to shape our common good"},
+        {"number": 26, "text": "And bring about a world of brotherhood."}
+      ]
+    }
+  }],
+  "questions": [
+    {"id": "english-2014-june-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The prevailing tone of the poem is", "choices": [{"label": "1", "text": "demanding"}, {"label": "2", "text": "angry"}, {"label": "3", "text": "celebratory"}, {"label": "4", "text": "proud"}], "correct": "1", "explanation": "The repeated command “Give us a peace” presses for a peace worthy of the wartime sacrifices and one that addresses injustice. Its insistent requests make the prevailing tone demanding, not celebratory.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2014-june-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "What is most likely not a purpose of repeating “Give us a peace” throughout the poem?", "choices": [{"label": "1", "text": "to provide a unified structure"}, {"label": "2", "text": "to emphasize a central idea"}, {"label": "3", "text": "to solicit the people’s loyalty"}, {"label": "4", "text": "to introduce the poet’s requests"}], "correct": "3", "explanation": "The refrain organizes the stanzas and introduces each request for a just peace, reinforcing the central idea. The speaker addresses what peace should accomplish; he does not ask people to pledge loyalty to him or anyone else.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2014-june-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The military references throughout the poem serve to", "choices": [{"label": "1", "text": "recall the heroic cause of war"}, {"label": "2", "text": "stress the destructive nature of war"}, {"label": "3", "text": "rally the people for a new form of war"}, {"label": "4", "text": "warn the people of an impending war"}], "correct": "3", "explanation": "The speaker reuses words such as “battle,” “army,” and “trained” for a peacetime campaign against poverty and injustice. He calls people to organized service for human welfare rather than another violent conflict.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2014-june-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The poet’s purpose in the poem can best be described as", "choices": [{"label": "1", "text": "a condemnation of war"}, {"label": "2", "text": "an appeal for justice"}, {"label": "3", "text": "an argument for colonial values"}, {"label": "4", "text": "a criticism of education"}], "correct": "2", "explanation": "The poem demands a peace that confronts the denial of rights to poor and Black people and brings justice to the colonial world (lines 5–8). It also asks for schools and an end to slums. Its main purpose is an appeal for justice.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

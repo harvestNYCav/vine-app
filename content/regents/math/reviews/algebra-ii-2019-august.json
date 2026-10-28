@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "7baaba435a40950acf2600c5628a3ff72bd53f0f731675fbb35451703f4158c2",
+  "questions": {
+    "1": {
+      "prompt": "When (x + 2)² + 4(x + 2) + 3 is factored into two binomials, what is the result?",
+      "choices": ["(x + 3)(x + 1)", "(x + 5)(x + 3)", "(x + 2)(x + 2)", "(x + 6)(x + 1)"],
+      "explanation": "Let u = x + 2. Then u² + 4u + 3 = (u + 1)(u + 3). Substituting back gives (x + 3)(x + 5).",
+      "imageAlt": "The original expression contains the repeated binomial x plus two, once squared and once multiplied by four."
+    },
+    "2": {
+      "prompt": "A geometric sequence starts at 8 and has fourth term 216. What is the sum of its first 12 terms?",
+      "choices": ["236,192", "708,584", "2,125,760", "6,377,288"],
+      "explanation": "The common ratio satisfies 8r³ = 216, so r = 3. The sum is 8(3¹² − 1)/(3 − 1) = 4(531,441 − 1) = 2,125,760.",
+      "imageAlt": "The first term is eight, the fourth term is two hundred sixteen, and the requested series contains twelve terms."
+    },
+    "3": {
+      "prompt": "Perry paid $1,500 for property; it was worth $3,000 after 5 years and $6,000 after 10 years. If that growth continues, which function type models its value after 30 years?",
+      "choices": ["exponential function", "linear function", "quadratic function", "trigonometric function"],
+      "explanation": "The value doubles every five years rather than increasing by a fixed dollar amount. A constant multiplicative factor over equal time intervals is exponential growth.",
+      "imageAlt": "The property values at years zero, five, and ten are fifteen hundred, three thousand, and six thousand dollars."
+    },
+    "4": {
+      "prompt": "If a³ + 27 = (a + 3)(a² + ma + 9), what is m?",
+      "choices": ["−9", "−3", "3", "6"],
+      "explanation": "Use the sum-of-cubes identity a³ + 3³ = (a + 3)(a² − 3a + 9). Thus the coefficient m is −3.",
+      "imageAlt": "The equation factors a cubed plus twenty-seven into a plus three times a quadratic with middle term m times a."
+    },
+    "5": {
+      "prompt": "If cos θ = −3/4 and θ is in Quadrant III, what is sin θ?",
+      "choices": ["−√7/4", "√7/4", "−5/4", "5/4"],
+      "explanation": "From sin²θ + cos²θ = 1, sin²θ = 1 − 9/16 = 7/16. Sine is negative in Quadrant III, so sin θ = −√7/4.",
+      "imageAlt": "Cosine theta is negative three-fourths, and theta lies in the third quadrant."
+    },
+    "6": {
+      "prompt": "Puppies are randomly assigned to two equal groups to test an infection drug. One group receives the drug, the other a placebo, and veterinarians monitor them. Which study method is this?",
+      "choices": ["census", "observational study", "survey", "controlled experiment"],
+      "explanation": "Researchers impose different treatments and randomly assign the puppies, with the placebo group serving as a control. That makes this a controlled experiment.",
+      "imageAlt": "One randomly assigned group gets the new drug and the other gets a placebo before outcomes are monitored."
+    },
+    "7": {
+      "prompt": "Which expression is equivalent to 2 − (x − 1)/(x + 2)?",
+      "choices": ["1 − 3/(x + 2)", "1 + 3/(x + 2)", "1 − 1/(x + 2)", "1 + 1/(x + 2)"],
+      "explanation": "Rewrite x − 1 as (x + 2) − 3. Then 2 − [(x + 2) − 3]/(x + 2) = 2 − 1 + 3/(x + 2) = 1 + 3/(x + 2), for x ≠ −2.",
+      "imageAlt": "The expression is two minus a fraction with numerator x minus one and denominator x plus two."
+    },
+    "8": {
+      "prompt": "Which end-behavior and intercept description could represent f(x) = 4x²(x + a) − x − a when a is an integer?",
+      "choices": ["Left end up, right end up, 3 x-intercepts", "Left end down, right end up, 3 x-intercepts", "Left end up, right end down, 4 x-intercepts", "Left end down, right end up, 4 x-intercepts"],
+      "explanation": "Factor f(x) = (x + a)(4x² − 1) = (x + a)(2x − 1)(2x + 1). Its positive cubic leading term makes the left end fall and right end rise. Integer a cannot equal ±1/2, so the three roots are distinct.",
+      "imageAlt": "Choice 1 has both ends up and three intercepts; choice 2 has left end down, right end up and three; choice 3 has left up, right down and four; choice 4 has left down, right up and four."
+    },
+    "9": {
+      "prompt": "Medication doses on days 1–4 are 2000, 1680, 1411.2, and 1185.4 mg. Which recursive rule best models mₙ?",
+      "choices": ["m₁ = 2000; mₙ = mₙ₋₁ − 320", "mₙ = 2000(0.84)^(n−1)", "m₁ = 2000; mₙ = 0.84mₙ₋₁", "mₙ = 2000(0.84)^(n+1)"],
+      "explanation": "Each dose is about 84% of the preceding dose: 1680/2000 = 0.84 and 1411.2/1680 = 0.84. A recursive model specifies the first term and multiplies the previous term by 0.84.",
+      "imageAlt": "A four-column dosage table lists day one two thousand, day two sixteen hundred eighty, day three fourteen hundred eleven point two, and day four about eleven hundred eighty-five point four milligrams."
+    },
+    "10": {
+      "prompt": "Which expression is equivalent to (9x² − 2)/(3x + 1)?",
+      "choices": ["3x − 1 − 1/(3x + 1)", "3x − 1 + 1/(3x + 1)", "3x + 1 − 1/(3x + 1)", "3x + 1 + 1/(3x + 1)"],
+      "explanation": "Since (3x − 1)(3x + 1) = 9x² − 1, the numerator 9x² − 2 is one less. Dividing gives 3x − 1 − 1/(3x + 1), where x ≠ −1/3.",
+      "imageAlt": "The numerator is nine x squared minus two and the denominator is three x plus one."
+    },
+    "11": {
+      "prompt": "If f(x) is an even function, which function must also be even?",
+      "choices": ["f(x − 2)", "f(x) + 3", "f(x + 1)", "f(x + 1) + 3"],
+      "explanation": "For g(x) = f(x) + 3, g(−x) = f(−x) + 3 = f(x) + 3 = g(x). Horizontal shifts need not preserve symmetry about the y-axis.",
+      "imageAlt": "The answer choices shift an even function horizontally or add three vertically."
+    },
+    "12": {
+      "prompt": "Melissa wants to move from a city with mean annual temperature 75°F to one with 62°F. In cosine graphs of monthly temperatures, which feature should she compare?",
+      "choices": ["amplitude", "horizontal shift", "period", "midline"],
+      "explanation": "The midline gives the central or average temperature across the annual cycle. Amplitude describes the seasonal swing, while phase and period describe timing.",
+      "imageAlt": "The two annual mean temperatures are seventy-five and sixty-two degrees Fahrenheit; the graphs model seasonal temperatures as cosine waves."
+    },
+    "13": {
+      "prompt": "Given P(A or B) = 0.3, P(A and B) = 0.2, and P(A | B) = 0.8, find P(B).",
+      "choices": ["0.1", "0.25", "0.375", "0.667"],
+      "explanation": "By definition P(A | B) = P(A ∩ B)/P(B). Thus 0.8 = 0.2/P(B), so P(B) = 0.25. The union probability is extra information.",
+      "imageAlt": "The stated probabilities are union three-tenths, intersection two-tenths, and conditional A given B eight-tenths."
+    },
+    "14": {
+      "prompt": "Given y > 0, simplify √(3x²y) · ∛(27x³y²).",
+      "choices": ["81x⁵y³", "3^1.5 x²y", "3^(5/2)x²y^(5/3)", "3^(3/2)x²y^(7/6)"],
+      "explanation": "Combining powers gives √3 · 3 = 3^(3/2) and y^(1/2)y^(2/3) = y^(7/6). The exam's keyed x² form assumes x ≥ 0: √(x²)·∛(x³) = |x|x, which equals x² only for nonnegative x. Because the printed condition says only y > 0, negative x is a mathematical exception not represented by the choices.",
+      "imageAlt": "A square root covers three x squared y and is multiplied by a cube root covering twenty-seven x cubed y squared. The printed condition restricts y but not x."
+    },
+    "15": {
+      "prompt": "What is the solution set of 10/(x² − 2x) + 4/x = 5/(x − 2)?",
+      "choices": ["{0, 2}", "{0}", "{2}", "{}"],
+      "explanation": "The original denominators exclude x = 0 and x = 2. Multiplying by x(x − 2) gives 10 + 4(x − 2) = 5x, whose sole candidate is x = 2. It is excluded, so there is no solution.",
+      "imageAlt": "The first denominator is x squared minus two x, the second is x, and the right-hand denominator is x minus two."
+    },
+    "16": {
+      "prompt": "What are all ordered-pair solutions to x² + y² = 5 and y = 2x?",
+      "choices": ["x = 1 and x = −1", "x = 1", "(1, 2) and (−1, −2)", "(1, 2) only"],
+      "explanation": "Substitute y = 2x: x² + 4x² = 5, so x² = 1. For x = 1 or −1, y = 2x gives (1, 2) and (−1, −2).",
+      "imageAlt": "The system is a circle x squared plus y squared equals five and a line y equals two x."
+    },
+    "17": {
+      "prompt": "What is the balance, to the nearest ten cents, after $5,000 earns 3.5% annual interest compounded monthly for 6 years?",
+      "choices": ["$5,177.80", "$5,941.30", "$6,146.30", "$6,166.50"],
+      "explanation": "Use A = 5000(1 + 0.035/12)^(12·6). This is about $6,166.5, rounded to the nearest ten cents.",
+      "imageAlt": "The principal is five thousand dollars, annual rate three point five percent, compounding monthly for six years."
+    },
+    "18": {
+      "prompt": "Coffee cools by F(t) = Fₛ + (F₀ − Fₛ)e^(−kt), with F₀ = 195°F, room temperature Fₛ = 68°F, and k = 0.05 per minute. To the nearest minute, when will it reach at most 120°F?",
+      "choices": ["7", "10", "11", "18"],
+      "explanation": "Set 120 = 68 + 127e^(−0.05t). Then e^(−0.05t) = 52/127 and t = −ln(52/127)/0.05 ≈ 17.9 minutes, so the nearest minute is 18.",
+      "imageAlt": "The cooling model uses surrounding temperature sixty-eight, starting temperature one hundred ninety-five, and exponential decay constant zero point zero five."
+    },
+    "19": {
+      "prompt": "IQ scores are normally distributed with mean 100 and standard deviation 15. About what percentage of people score above 130?",
+      "choices": ["2%", "31%", "48%", "95%"],
+      "explanation": "A score of 130 is (130 − 100)/15 = 2 standard deviations above the mean. The normal upper tail beyond z = 2 is about 2.3%, closest to 2%.",
+      "imageAlt": "The threshold one hundred thirty is thirty points above the mean one hundred, and the standard deviation is fifteen."
+    },
+    "20": {
+      "prompt": "How many solutions does ln(x + 2) = e^(x−1) have on (−2, 3]?",
+      "choices": ["1", "2", "3", "0"],
+      "explanation": "Graph or compare h(x) = ln(x + 2) − e^(x−1). It is negative near x = −2, positive at x = 0, and negative again at x = 3, producing two crossings on the interval. The curve reaches only one peak, so there are no further crossings.",
+      "imageAlt": "The logarithm is natural log of x plus two, and the exponential is e raised to x minus one, on the interval greater than negative two through three."
+    },
+    "21": {
+      "prompt": "A cubic f(x) = ax³ + bx² + cx + d has roots −1, 1, and 2. If a = 1, what is b?",
+      "choices": ["1", "2", "−1", "−2"],
+      "explanation": "With leading coefficient 1, f(x) = (x + 1)(x − 1)(x − 2) = (x² − 1)(x − 2) = x³ − 2x² − x + 2. Therefore b = −2.",
+      "imageAlt": "The roots are plus or minus one and two, and the coefficient of x cubed is one."
+    },
+    "22": {
+      "prompt": "For t(A) = ln(A/5000)/0.0105, compare the average rates of change of t on dollar intervals [6000, 8000] and [9000, 12000].",
+      "choices": ["Cannot compare because the intervals have different sizes", "The rates are equal", "The rate is larger on [6000, 8000]", "The rate is larger on [9000, 12000]"],
+      "explanation": "The first average rate is ln(8000/6000)/(0.0105·2000); the second is ln(12000/9000)/(0.0105·3000). Both logarithms equal ln(4/3), but the first divides by 2000 rather than 3000, so it is larger.",
+      "imageAlt": "Time in years is the natural logarithm of investment amount divided by five thousand, all divided by zero point zero one zero five. Two distinct amount intervals are compared."
+    },
+    "23": {
+      "prompt": "What is the inverse of f(x) = x/(x + 2), for x ≠ −2?",
+      "choices": ["f⁻¹(x) = 2x/(x − 1)", "f⁻¹(x) = −2x/(x − 1)", "f⁻¹(x) = x/(x − 2)", "f⁻¹(x) = −x/(x − 2)"],
+      "explanation": "Let y = x/(x + 2). Then y(x + 2) = x, so x(y − 1) = −2y and x = −2y/(y − 1). Swapping variable names gives f⁻¹(x) = −2x/(x − 1), with x ≠ 1.",
+      "imageAlt": "The original function has x divided by x plus two; the four inverse candidates have numerator plus or minus x or two x."
+    },
+    "24": {
+      "prompt": "A bear population is P(t) = 3500(1.025)^t for t years. Which equivalent function makes its monthly growth rate visible?",
+      "choices": ["P(t) = 3500(1.00206)^(12t)", "P(t) = 3500(1.00206)^(t/12)", "P(t) = 3500(1.34489)^(12t)", "P(t) = 3500(1.34489)^(t/12)"],
+      "explanation": "The monthly multiplier is the twelfth root of the annual multiplier: 1.025^(1/12) ≈ 1.00206. Since t years contain 12t months, the equivalent model is 3500(1.00206)^(12t), to the displayed precision.",
+      "imageAlt": "The original model starts at thirty-five hundred bears and grows by a factor of one point zero two five per year. The proposed monthly versions change both the base and exponent."
+    }
+  }
+}

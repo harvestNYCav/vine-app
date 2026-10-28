@@ -8,6 +8,8 @@ import { gradeHomework, gradeQuiz, scoreAnswers } from '@/lib/lesson-answers'
 import { getStudentSettings } from '@/lib/student-settings'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
+import { getStudentRegentsCourses } from '@/lib/regents-courses'
+import { assignedRegentsSectionKeys } from '@/lib/regents-progress'
 
 export async function GET() {
   const session = await getSession()
@@ -24,6 +26,9 @@ export async function GET() {
     getStudentTracks(db, session.userId),
     getStudentSettings(db, session.userId),
   ])
+  const regentsCourses = settings.highSchoolGradeLevel
+    ? await getStudentRegentsCourses(db, session.userId)
+    : []
   const assignedMathExamIds = new Set(
     tracks.includes('math') ? getMathExamsForGrade(settings.gradeLevel).map(exam => exam.id) : [],
   )
@@ -34,15 +39,25 @@ export async function GET() {
         )
       : [],
   )
+  const assignedRegentsMathSectionKeys = assignedRegentsSectionKeys(
+    regentsCourses, tracks, settings.highSchoolGradeLevel, 'math',
+  )
+  const assignedRegentsElaSectionKeys = assignedRegentsSectionKeys(
+    regentsCourses, tracks, settings.highSchoolGradeLevel, 'ela',
+  )
 
   return NextResponse.json({
     moduleProgress: mp.rows,
     vocabProgress: vp.rows,
     teachingSessions: ts.rows,
     activityLog: al.rows,
-    mathExamProgress: mathExamProgress.rows.filter(row => assignedMathExamIds.has(String(row.exam_id))),
+    mathExamProgress: mathExamProgress.rows.filter(row =>
+      assignedMathExamIds.has(String(row.exam_id))
+      || assignedRegentsMathSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
+    ),
     elaExamProgress: elaExamProgress.rows.filter(row =>
       assignedElaSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
+      || assignedRegentsElaSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
     ),
   })
 }

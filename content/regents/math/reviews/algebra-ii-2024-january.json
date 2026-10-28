@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "5ec5f60073a23e9d6c245dd02c356e5e83c4b0cc545c117fdb803a37b0932a24",
+  "questions": {
+    "1": {
+      "prompt": "A cafeteria manager observes where employees get lunch—at the cafeteria, from home, or from an outside vendor—to estimate the proportions in each group. How should this data collection be classified?",
+      "choices": ["a census", "an experiment", "an observational study", "a simulation"],
+      "explanation": "The manager records employees' existing behavior without assigning a treatment or changing what they do. That makes it an observational study, not an experiment or simulation.",
+      "imageAlt": "Employees' lunchtime choices are recorded as they occur; nobody is assigned to a lunch group."
+    },
+    "2": {
+      "prompt": "Which graph has imaginary roots?",
+      "choices": ["Graph 1: upward-opening parabola with its vertex below the x-axis, crossing the x-axis twice to the right of the y-axis", "Graph 2: downward-opening parabola entirely below the x-axis, with no x-intercepts", "Graph 3: downward-opening parabola touching the x-axis once at its vertex, left of the y-axis", "Graph 4: downward-opening parabola with its vertex above the x-axis, crossing the x-axis twice"],
+      "explanation": "A quadratic has nonreal roots when its parabola never meets the x-axis. Graph 2 opens downward and stays entirely below the x-axis; each other graph crosses or touches it.",
+      "imageAlt": "Graph 1 is an upward parabola crossing the x-axis twice. Graph 2 is a downward parabola entirely below the x-axis. Graph 3 is a downward parabola tangent to the x-axis. Graph 4 is a downward parabola crossing the x-axis twice."
+    },
+    "3": {
+      "prompt": "Given 3 is a root of f(x) = x⁴ − x³ − 21x² + 45x, what are the other unique roots?",
+      "choices": ["−5, only", "−5 and 0", "−3, 1 and 5", "−5, −3 and 0"],
+      "explanation": "Factor out x and then divide the cubic by x − 3: f(x) = x(x − 3)(x − 3)(x + 5). The distinct roots are 0, 3, and −5, so the other unique roots are −5 and 0.",
+      "imageAlt": "The polynomial is x to the fourth minus x cubed minus twenty-one x squared plus forty-five x. One known root is three."
+    },
+    "4": {
+      "prompt": "Given p ≠ q and p = (1/2)^q, which logarithmic equation is equivalent?",
+      "choices": ["log base p of (1/2) = q", "log base q of p = 1/2", "log base 1/2 of p = q", "log base 1/2 of q = p"],
+      "explanation": "The rule a^b = c is equivalent to log base a of c = b. Here the base is 1/2, the result is p, and the exponent is q.",
+      "imageAlt": "The exponential equation is p equals one-half raised to q. The choices change the base, argument, and result of the logarithm."
+    },
+    "5": {
+      "prompt": "Which graph best represents the graph of f(x) = (x + a)²(x − b), where a and b are positive real numbers?",
+      "choices": ["Graph 1: cubic with left end down and right end up; touches the x-axis left of the y-axis and crosses it to the right", "Graph 2: cubic with left end down and right end up; crosses the x-axis left of, at, and right of the y-axis", "Graph 3: cubic with left end up and right end down; touches the x-axis left of the y-axis and crosses it to the right", "Graph 4: cubic with left end up and right end down; crosses the x-axis left of, at, and right of the y-axis"],
+      "explanation": "The double root x = −a makes the cubic touch, not cross, the x-axis to the left of the y-axis. The simple root x = b makes it cross to the right. Its positive leading coefficient sends the left end down and the right end up. Only graph 1 has all three features.",
+      "imageAlt": "Graph 1: left end down, touches the x-axis at a negative x, then crosses at a positive x, right end up. Graph 2: left end down and right end up but crosses at three roots. Graph 3: touches at a negative x and crosses at a positive x but left end up and right end down. Graph 4: left end up and right end down, crossing three times."
+    },
+    "6": {
+      "prompt": "For t > 0, the populations y = 3t + 6 and y = (1.82)^t are equal at approximately what time t?",
+      "choices": ["−1.9", "0.3", "5.1", "21.3"],
+      "explanation": "Set 3t + 6 = 1.82^t and solve numerically. Near t = 5.1, the line is 21.3 and the exponential value is about 21.2, making 5.1 the listed positive solution.",
+      "imageAlt": "One population model is linear, three times t plus six. The other is exponential, 1.82 to the t power. The question restricts t to positive values."
+    },
+    "7": {
+      "prompt": "Given y = −2x and x² + y² = 5, which intersection point is in Quadrant II?",
+      "choices": ["(1, −2)", "(−2, 1)", "(−1, 1)", "(−1, 2)"],
+      "explanation": "Substitute y = −2x into the circle equation: x² + 4x² = 5, so x = ±1. Quadrant II requires x < 0 and y > 0; x = −1 gives y = 2.",
+      "imageAlt": "The system is a line y equals negative two x and a circle x squared plus y squared equals five. The four choices are ordered pairs."
+    },
+    "8": {
+      "prompt": "Which expression is equivalent to (2x⁴ − 5x² + 3x − 2)/(x − 3)?",
+      "choices": ["2x³ − 5x − 12 − 38/(x − 3)", "2x³ + 6x² + 13x + 42 + 124/(x − 3)", "2x³ − 5x + 18 − 56/(x − 3)", "2x³ − 6x² + 13x − 36 + 106/(x − 3)"],
+      "explanation": "Synthetic division by x − 3 on coefficients 2, 0, −5, 3, −2 produces quotient 2x³ + 6x² + 13x + 42 and remainder 124. Write the original as quotient plus 124/(x − 3).",
+      "imageAlt": "The numerator is two x to the fourth minus five x squared plus three x minus two; the denominator is x minus three. Every choice has a cubic quotient and a fractional remainder."
+    },
+    "9": {
+      "prompt": "Which equation describes the parabola with focus (−3, 2) and directrix y = 0?",
+      "choices": ["y = (1/4)(x + 3)² + 1", "y = (1/4)(x − 3)² + 1", "y = (1/8)(x + 3)² + 1", "y = (1/8)(x − 3)² + 1"],
+      "explanation": "The vertex is halfway between the focus and directrix, at (−3, 1). The focus is one unit above the vertex, so p = 1 and (x + 3)² = 4(y − 1). Solving for y gives y = (x + 3)²/4 + 1.",
+      "imageAlt": "The focus is negative three comma two, and the horizontal directrix is y equals zero. Choices vary the horizontal shift and the coefficient one-fourth or one-eighth."
+    },
+    "10": {
+      "prompt": "What is the seventh term of the geometric sequence √6, −2√3, 2√6, −4√3, ...?",
+      "choices": ["6√6", "−6√3", "8√6", "−8√3"],
+      "explanation": "The common ratio is (−2√3)/√6 = −√2. Thus a₇ = √6·(−√2)⁶ = √6·8 = 8√6.",
+      "imageAlt": "The first four terms alternate positive and negative: square root of six, negative two square root of three, two square root of six, negative four square root of three."
+    },
+    "11": {
+      "prompt": "Spaghetti cooking times are approximately normal with mean 9.82 minutes and standard deviation 1.4 minutes. Which interval contains the middle 95% of times?",
+      "choices": ["(8.42, 11.22)", "(7.02, 12.62)", "(9.35, 10.29)", "(6.82, 11.32)"],
+      "explanation": "The empirical rule places about 95% of a normal distribution within two standard deviations of its mean. Compute 9.82 ± 2(1.4) = 9.82 ± 2.8, giving (7.02, 12.62).",
+      "imageAlt": "The normal distribution has mean nine point eight two minutes and standard deviation one point four minutes. The question asks for the middle ninety-five percent."
+    },
+    "12": {
+      "prompt": "If f(x) = 2x² + 7x − 15 and g(x) = 3 − 2x, what is f(x)/g(x) for all defined values?",
+      "choices": ["−x − 5", "−x + 5", "x − 5", "x + 5"],
+      "explanation": "Factor the numerator: 2x² + 7x − 15 = (2x − 3)(x + 5). Since 3 − 2x = −(2x − 3), the quotient is −(x + 5) = −x − 5, with x ≠ 3/2.",
+      "imageAlt": "The numerator is two x squared plus seven x minus fifteen; the denominator is three minus two x. The result is undefined where the denominator is zero."
+    },
+    "13": {
+      "prompt": "Which equation is equivalent to P = 210x^(4/3)y^(7/3)?",
+      "choices": ["P = ∛(210x⁴y⁷)", "P = 70xy²∛(xy)", "P = 210xy²∛(xy)", "P = 210xy²∛(x³y⁵)"],
+      "explanation": "Split the exponents into integer and fractional parts: x^(4/3) = x·∛x and y^(7/3) = y²·∛y. Multiplying gives P = 210xy²∛(xy).",
+      "imageAlt": "The original product is two hundred ten times x raised to four-thirds times y raised to seven-thirds. Radical bars in the choices cover different products."
+    },
+    "14": {
+      "prompt": "Between 1995 and 2018, the average gallon-of-milk cost is modeled by P(t) = −0.0004t³ + 0.0114t² − 0.0150t + 2.6602, where t is years after January 1995. In which year did this model reach its maximum?",
+      "choices": ["1995", "2013", "2014", "2018"],
+      "explanation": "On 0 ≤ t ≤ 23, the model reaches its high point near t = 18: P(18) ≈ 3.751, while P(19) ≈ 3.747 and P(23) ≈ 3.479. Eighteen years after 1995 is 2013.",
+      "imageAlt": "The cubic cost model has a negative coefficient on t cubed, positive coefficient on t squared, and covers years 1995 through 2018."
+    },
+    "15": {
+      "prompt": "A roast's temperature after t hours is F = 325 − 185e^(−0.4t) degrees Fahrenheit. What was its temperature when placed in the oven?",
+      "choices": ["325", "200", "185", "140"],
+      "explanation": "The initial temperature is F(0). Since e⁰ = 1, F(0) = 325 − 185 = 140 degrees Fahrenheit.",
+      "imageAlt": "The temperature model subtracts one hundred eighty-five times e to the negative zero point four t from three hundred twenty-five. Initial means t equals zero."
+    },
+    "16": {
+      "prompt": "What are the roots of x² + 6x + 10 = 0 in simplest a + bi form?",
+      "choices": ["−3 ± 2i", "−6 ± i", "−3 ± i", "−3 ± i√2"],
+      "explanation": "Complete the square: x² + 6x + 10 = (x + 3)² + 1. Thus (x + 3)² = −1, so x = −3 ± i.",
+      "imageAlt": "The quadratic has coefficients one, six, and ten and is set equal to zero. All four answer pairs use imaginary i."
+    },
+    "17": {
+      "prompt": "Which equation does not represent an identity?",
+      "choices": ["x² − y² = (x + y)(x − y)", "(x − y)² = (x − y)(x − y)", "(x + y)² = x² + 2xy + y²", "(x + y)³ = x³ + 3xy + y³"],
+      "explanation": "The cube expands to x³ + 3x²y + 3xy² + y³, not x³ + 3xy + y³. The other equations hold for all x and y.",
+      "imageAlt": "The four proposed identities compare a difference of squares, a squared difference, a squared sum, and a cubed sum with their purported expansions."
+    },
+    "18": {
+      "prompt": "Two surveys each drew 100 samples: one used 5 teens per sample and the other 50. Their sample-proportion standard deviations were 0.207 and 0.057, respectively. Which statement best explains the difference?",
+      "choices": ["The smaller sample of 5 had a smaller margin of error and should be more accurate.", "The smaller sample of 5 had a bigger margin of error and should be more accurate.", "The larger sample of 50 had a smaller margin of error and should be more accurate.", "The larger sample of 50 had a bigger margin of error and should be more accurate."],
+      "explanation": "The 50-teen samples produced a much tighter distribution of estimates (SD 0.057 versus 0.207). A larger sample generally reduces sampling variability and margin of error, so it provides a more precise estimate.",
+      "imageAlt": "Two dot plots estimate the proportion of teens using social media daily. The 5-teen samples have mean 0.732, SD 0.207, and estimates spread from 0 to 1. The 50-teen samples have mean 0.742, SD 0.057, and cluster roughly between 0.6 and 0.9."
+    },
+    "19": {
+      "prompt": "Given f(x) = x³ − 3 and f⁻¹(x) = ∛(x − 3b), what is b?",
+      "choices": ["1", "−1", "3", "−3"],
+      "explanation": "From y = x³ − 3, solve for x: x = ∛(y + 3), so f⁻¹(x) = ∛(x + 3). Therefore −3b = 3 and b = −1.",
+      "imageAlt": "The inverse function's cube-root bar extends over x minus three times b. The original function is x cubed minus three."
+    },
+    "20": {
+      "prompt": "A $22,000 car has a $4,000 down payment and a six-year loan at 6.24% annual interest. Using R = Pi/[1 − (1 + i)^(−t)], with P the loan amount, i the monthly rate, and t the number of months, what is the monthly payment?",
+      "choices": ["$298.31", "$300.36", "$307.35", "$367.10"],
+      "explanation": "The loan principal is P = 22,000 − 4,000 = 18,000, the monthly rate is i = 0.0624/12 = 0.0052, and t = 6·12 = 72. Substitution gives R ≈ $300.355, which rounds to $300.36.",
+      "imageAlt": "The payment formula is principal times monthly interest rate divided by one minus the quantity one plus monthly interest rate raised to negative number of months."
+    },
+    "21": {
+      "prompt": "If tan θ = −4/3 and π/2 < θ < π, what is sec θ?",
+      "choices": ["−5/3", "−3/5", "4/5", "5/3"],
+      "explanation": "θ is in Quadrant II, where x is negative and y is positive. A triangle with tangent y/x = −4/3 has hypotenuse 5, so cos θ = −3/5 and sec θ = 1/cos θ = −5/3.",
+      "imageAlt": "Tangent is negative four-thirds, and theta is between pi over two and pi, placing it in Quadrant II. Choices are fractions for secant."
+    },
+    "22": {
+      "prompt": "For 7/(x + 7) + 4x/(x − 7) = (3x + 7)/(x − 7), Joan multiplies both sides by the least common denominator. Which statement about extraneous solutions is true?",
+      "choices": ["−14 is an extraneous solution.", "7 and −7 are extraneous solutions.", "7 is an extraneous solution.", "There are no extraneous solutions."],
+      "explanation": "Multiplying by (x + 7)(x − 7) gives x² + 7x − 98 = (x + 14)(x − 7) = 0. The candidate x = 7 makes the original denominator x − 7 zero, so it is extraneous; x = −14 is valid.",
+      "imageAlt": "The first denominator is x plus seven; the next two denominators are x minus seven. These exclude x equal to negative seven and positive seven from the original equation."
+    },
+    "23": {
+      "prompt": "Michelle deposits $250 on the first of each month for three years, from July 1, 2019 through June 1, 2022. The account grows 0.15% monthly. Which expression gives the balance just after the final deposit?",
+      "choices": ["250(1.0015)³", "250(1.0015)³⁶", "[250 − 250(1.0015)³]/[1 − 1.0015]", "[250 − 250(1.0015)³⁶]/[1 − 1.0015]"],
+      "explanation": "There are 36 deposits. The final one has no interest yet, while the first has grown for 35 months, so the balance is 250[1 + 1.0015 + ⋯ + (1.0015)³⁵]. The geometric-sum formula is 250[1 − (1.0015)³⁶]/[1 − 1.0015].",
+      "imageAlt": "Each monthly deposit is two hundred fifty dollars, and the monthly growth factor is 1.0015. The requested balance is immediately after deposit number thirty-six."
+    },
+    "24": {
+      "prompt": "A red-tailed hawk population is modeled by H(t) = 50(1.19)^t, where t is years. Which function approximates the same growth using a monthly rate?",
+      "choices": ["H(t) = 50(1.015)^(12t)", "H(t) = 50(1.15)^(t/12)", "H(t) = 50(1.19)^(12t)", "H(t) = 50(1.19)^(t/12)"],
+      "explanation": "The monthly growth factor is the twelfth root of 1.19, approximately 1.015. There are 12t months in t years, so the equivalent monthly form is about 50(1.015)^(12t).",
+      "imageAlt": "The original population starts at fifty and is multiplied by 1.19 each year. The choices use various monthly factors and exponents."
+    }
+  }
+}

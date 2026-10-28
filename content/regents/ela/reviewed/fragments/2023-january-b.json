@@ -1,0 +1,48 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "Read “Big Jigsaw” and answer questions 11–14. A vocabulary note follows the poem.",
+    "questionIds": ["english-2023-january-q11", "english-2023-january-q12", "english-2023-january-q13", "english-2023-january-q14"],
+    "passage": {
+      "title": "Big Jigsaw",
+      "credit": "—Chris Forhan · “Big Jigsaw” · from The New American Poets: A Bread Loaf Anthology (2000), University Press of New England",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "I’ve hunched so long above this puzzle"},
+        {"number": 2, "text": "laid out on my gouged and ink-stained workbench,"},
+        {"number": 3, "text": "I think, at last, it’s unsolvable,"},
+        {"number": 4, "text": "that the only meaning it holds is told"},
+        {"number": 5, "text": "in the moments I feel on the verge"},
+        {"number": 6, "text": "of understanding, and it turns me back."},
+        {"number": null, "text": ""},
+        {"number": 7, "text": "The pieces: so small, so many. How they"},
+        {"number": 8, "text": "belong together is beyond me,"},
+        {"number": 9, "text": "though early on my mind inclined"},
+        {"number": 10, "text": "toward an idyllic scene: a yellow field,"},
+        {"number": 11, "text": "all jonquils,¹ a sea, the wide horizon…"},
+        {"number": null, "text": ""},
+        {"number": 12, "text": "The dog’s dish is empty. My wife and children"},
+        {"number": 13, "text": "sleep. The house is hushed, except"},
+        {"number": 14, "text": "for the stout hall clock that ticks its minutes."},
+        {"number": 15, "text": "Here in my patch of lamplight, time"},
+        {"number": 16, "text": "dawdles, waiting for me to catch up,"},
+        {"number": 17, "text": "though a few small hairs on my wrist"},
+        {"number": 18, "text": "have gone white, and evening’s blank encircles me."},
+        {"number": null, "text": ""},
+        {"number": 19, "text": "Who made this puzzle? If I sought him out"},
+        {"number": 20, "text": "would he hear my plea and reveal its logic?"},
+        {"number": 21, "text": "But the hour is late, my vision strained."},
+        {"number": 22, "text": "How could I look for him now, though he were"},
+        {"number": 23, "text": "waiting for me, and knew me by name?"},
+        {"number": null, "text": ""},
+        {"number": null, "text": "¹ jonquils — a type of yellow daffodil"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id": "english-2023-january-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The opening stanza conveys a sense of", "choices": [{"label": "1", "text": "disorder"}, {"label": "2", "text": "weakness"}, {"label": "3", "text": "loneliness"}, {"label": "4", "text": "frustration"}], "correct": "4", "explanation": "After long work, the speaker thinks the puzzle may be unsolvable and says each near-understanding turns him back. That repeated failure conveys frustration.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2023-january-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "As used in the poem, the word “idyllic” (line 10) most nearly means", "choices": [{"label": "1", "text": "charmingly beautiful"}, {"label": "2", "text": "shrouded in mystery"}, {"label": "3", "text": "full of surprises"}, {"label": "4", "text": "unexpectedly simple"}], "correct": "1", "explanation": "The imagined scene has a yellow field, flowers, a sea, and a wide horizon. These pleasing images make “idyllic” mean charmingly beautiful.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2023-january-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "In lines 15 and 16, the phrase “time/dawdles, waiting for me to catch up” implies that the narrator is", "choices": [{"label": "1", "text": "wishing the family would wake up"}, {"label": "2", "text": "suffering from fatigue"}, {"label": "3", "text": "lost in thought"}, {"label": "4", "text": "annoyed by the stillness of the night"}], "correct": "3", "explanation": "Absorbed in the puzzle, the speaker feels as if time itself slows and waits for his mind. This suggests deep preoccupation with his thoughts.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2023-january-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "In the context of the poem as a whole, the jigsaw puzzle represents", "choices": [{"label": "1", "text": "a need for justifying choices"}, {"label": "2", "text": "the experience of being human"}, {"label": "3", "text": "the pleasure of solving problems"}, {"label": "4", "text": "a regret about trusting memory"}], "correct": "2", "explanation": "The speaker searches for the puzzle’s meaning, notices aging and the passing of time, and wonders whether its maker knows him. The puzzle becomes a metaphor for trying to understand human existence.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

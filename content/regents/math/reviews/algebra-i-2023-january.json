@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "53a4a89d944730f22b54502fdc356447b7648226f9b8c4bb3a5c50bebd44f5e3",
+  "questions": {
+    "1": {
+      "prompt": "When 2x(x − 4) − 3(x + 5) is written in simplest form, what is the result?",
+      "choices": ["2x² − 11x − 15", "2x² − 11x + 5", "2x² − 3x − 19", "2x² − 3x + 1"],
+      "explanation": "Distribute both factors: 2x²−8x−3x−15. Combining the x terms gives 2x²−11x−15.",
+      "imageAlt": "Original expression two x times x minus four minus three times x plus five, with all four signed quadratic choices transcribed."
+    },
+    "2": {
+      "prompt": "The point (3,w) is on the graph of y=2x+7. What is w?",
+      "choices": ["−2", "−4", "10", "13"],
+      "explanation": "At x=3, y=2(3)+7=13. Because the point lies on the graph, w=13.",
+      "imageAlt": "Ordered pair three comma w and equation y equals two x plus seven, with all four signed numeric choices transcribed."
+    },
+    "3": {
+      "prompt": "Students rewrite 2x³+3x+4x²+1 in standard form. Alexa writes 4x²+3x+2x³+1; Carol writes 2x³+3x+4x²+1; Ryan writes 2x³+4x²+3x+1; Eric writes 1+2x³+3x+4x². Which student's response is correct?",
+      "choices": ["Alexa", "Carol", "Ryan", "Eric"],
+      "explanation": "Standard form lists polynomial terms in descending exponent order: cubic, quadratic, linear, then constant. Ryan's 2x³+4x²+3x+1 follows that order.",
+      "imageAlt": "Original four-term polynomial and each student's full reordered expression are transcribed in the prompt."
+    },
+    "4": {
+      "prompt": "Given f(x)=−3x²+10, what is f(−2)?",
+      "choices": ["−26", "−2", "22", "46"],
+      "explanation": "Substitute −2 before squaring: f(−2)=−3(−2)²+10=−3(4)+10=−2.",
+      "imageAlt": "Function negative three x squared plus ten, input negative two, and four signed outputs are transcribed."
+    },
+    "5": {
+      "prompt": "Which relation is a function?",
+      "choices": ["{(1,3), (2,1), (3,1), (4,7)}", "Table: inputs −6, −4, 7, 7 have outputs −2, 2, 3, 5", "Circle centered at the origin on an x-y coordinate plane", "Mapping: 3→4, 6→5 and 6→7, 8 has no arrow, 11→7"],
+      "explanation": "A function assigns each input exactly one output. In choice (1), the x-values 1,2,3,4 are distinct. The table repeats input 7 with different outputs, the circle fails the vertical-line test, and the mapping assigns 6 two outputs.",
+      "imageAlt": "All four relation representations are transcribed: ordered pairs with unique inputs; table repeating input seven; circle graph; and mapping where six points to both five and seven."
+    },
+    "6": {
+      "prompt": "A box plot has minimum 14, first quartile 18, median 22, third quartile 36, and maximum 46. What is the third quartile?",
+      "choices": ["18", "22", "36", "46"],
+      "explanation": "The third quartile is the right edge of the box; it aligns with 36 on the number line.",
+      "imageAlt": "Box plot whiskers at 14 and 46, box edges at 18 and 36, median at 22; number-line labels and four choices are transcribed."
+    },
+    "7": {
+      "prompt": "What is the solution to 2+3(2a+1)=3(a+2)?",
+      "choices": ["1/7", "1/3", "−3/7", "−1/3"],
+      "explanation": "Expand: 2+6a+3=3a+6, so 6a+5=3a+6. Subtract 3a and 5 to get 3a=1; therefore a=1/3.",
+      "imageAlt": "Linear equation with both parenthesized sums and all four signed fraction answers are transcribed."
+    },
+    "8": {
+      "prompt": "Three friends tracked messages received each hour. Emily's number increased by 8 every hour. Jessica's number doubled every hour. Chris received 3, 10, 0, then 15 messages in successive hours. Whose pattern is linear?",
+      "choices": ["Emily, only", "Jessica, only", "Emily and Chris", "Jessica and Chris"],
+      "explanation": "Emily adds a constant 8 messages per hour, which is a linear pattern. Jessica multiplies by 2 (exponential), while Chris's consecutive changes are +7, −10, and +15, not constant.",
+      "imageAlt": "All three friends' hourly patterns and all four combinations of names are transcribed in the prompt and choices."
+    },
+    "9": {
+      "prompt": "Which expression is equivalent to (x+4)²(x+4)³?",
+      "choices": ["(x+4)⁶", "(x+4)⁵", "(x²+16)⁶", "(x²+16)⁵"],
+      "explanation": "The factors have the same base x+4, so add the exponents: 2+3=5. The product is (x+4)⁵.",
+      "imageAlt": "Two powers of the same full binomial x plus four and all four powered-binomial choices are transcribed."
+    },
+    "10": {
+      "prompt": "Caitlin graphs f(x)=ax², where a is a positive integer. If she multiplies a by −2, how does the new graph compare with f?",
+      "choices": ["narrower and open downward", "narrower and open upward", "wider and open downward", "wider and open upward"],
+      "explanation": "The new coefficient −2a is negative, so the parabola opens downward. Its absolute value is twice as large as a, making the graph narrower.",
+      "imageAlt": "Original upward parabola coefficient a, multiplier negative two, and four width-direction combinations are transcribed."
+    },
+    "11": {
+      "prompt": "Sunny buys a car for $29,873. It depreciates 20% annually. Which expression gives its value after t years?",
+      "choices": ["29,873(0.20)ᵗ", "29,873(20)ᵗ", "29,873(1−0.20)ᵗ", "29,873(1+0.20)ᵗ"],
+      "explanation": "A 20% annual loss leaves 80% of the previous value each year. Multiply the original price by (1−0.20)ᵗ, equivalently 0.8ᵗ.",
+      "imageAlt": "Original price 29,873 dollars, annual depreciation 20 percent, and all four exponential expressions are transcribed with signs."
+    },
+    "12": {
+      "prompt": "If f(x)=x²+2x+1 and g(x)=7x−5, for which values of x is f(x)=g(x)?",
+      "choices": ["−1 and 6", "−6 and −1", "−3 and −2", "2 and 3"],
+      "explanation": "Set the formulas equal and move all terms left: x²+2x+1−7x+5=x²−5x+6=0. Factor (x−2)(x−3)=0, so x is 2 or 3.",
+      "imageAlt": "Both function formulas and four ordered pairs of possible x solutions are transcribed."
+    },
+    "13": {
+      "prompt": "Skyler's earnings f(x) depend on x, the number of lawns completely mowed. What is a reasonable domain for x?",
+      "choices": ["real numbers", "rational numbers", "irrational numbers", "natural numbers"],
+      "explanation": "Completely mowed lawns are counted in whole-number increments, not fractions or negative amounts. Of the listed options, natural numbers best describe possible counts.",
+      "imageAlt": "Input x counts completed lawns; four domain types are transcribed, including natural numbers."
+    },
+    "14": {
+      "prompt": "Which expression is equivalent to 2x²+8x−10?",
+      "choices": ["2(x−1)(x+5)", "2(x+1)(x−5)", "2(x−1)(x−5)", "2(x+1)(x+5)"],
+      "explanation": "Factor out 2: 2(x²+4x−5). Numbers 5 and −1 multiply to −5 and sum to 4, so the expression is 2(x−1)(x+5).",
+      "imageAlt": "Quadratic two x squared plus eight x minus ten and all four signed factorizations are transcribed."
+    },
+    "15": {
+      "prompt": "A ball's height in feet after t seconds is h(t)=−16t²+6t+3. What does the number 3 represent?",
+      "choices": ["the ball's maximum height", "the height from which the ball is thrown", "seconds until the ball reaches the ground", "seconds until the ball reaches maximum height"],
+      "explanation": "At t=0, h(0)=3. This is the ball's initial height, so it was thrown from 3 feet above the ground.",
+      "imageAlt": "Height formula with constant plus three and four possible meanings, distinguishing height in feet from time in seconds, are transcribed."
+    },
+    "16": {
+      "prompt": "A basketball tournament begins with 32 teams. After 0,1,2,3,4,5 rounds, the teams remaining are 32,16,8,4,2,1. Which function type models this relationship?",
+      "choices": ["absolute value", "exponential", "linear", "quadratic"],
+      "explanation": "Each round halves the number of teams, a constant ratio rather than a constant difference. The pattern is exponential: f(x)=32(1/2)ˣ.",
+      "imageAlt": "Full six-column rounds-versus-teams table is transcribed in the prompt; four function types are transcribed in choices."
+    },
+    "17": {
+      "prompt": "A geometric sequence has first term 4 and common ratio −3. What is its fifth term?",
+      "choices": ["324", "108", "−108", "−324"],
+      "explanation": "Use a₅=a₁r⁴=4(−3)⁴=4·81=324. Four multiplications by a negative number give a positive fifth term.",
+      "imageAlt": "Geometric sequence first term four, negative-three common ratio, fifth-term request, and all four signed numeric choices are transcribed."
+    },
+    "18": {
+      "prompt": "Energy Q is given by Q=mC(T_f−T_i), with mass m, specific heat capacity C, initial temperature T_i, and final temperature T_f. Which equation solves for T_f?",
+      "choices": ["T_f=Q/(mC)−T_i", "T_f=Q/(mC)+T_i", "T_f=(T_i+Q)/(mC)", "T_f=(Q−mC)/T_i"],
+      "explanation": "Divide Q=mC(T_f−T_i) by mC to get Q/(mC)=T_f−T_i. Add T_i, yielding T_f=Q/(mC)+T_i.",
+      "imageAlt": "Energy formula and all four solved forms preserve fraction bars, parentheses, and initial-versus-final temperature subscripts."
+    },
+    "19": {
+      "prompt": "Using completing the square, which equation is equivalent to x²−12x−10=0?",
+      "choices": ["(x+6)²=−26", "(x+6)²=46", "(x−6)²=−26", "(x−6)²=46"],
+      "explanation": "Move −10 to the right: x²−12x=10. Add (−12/2)²=36 to both sides, producing (x−6)²=46.",
+      "imageAlt": "Original quadratic and four completed-square equations are transcribed with both signs in the binomial and both right-side constants."
+    },
+    "20": {
+      "prompt": "Which quadratic has the smallest minimum? Choice f is f(x)=6x²+5x−2. Choice h is a table with x=0,1,2,3,4,5 and h(x)=6,2,0,0,2,6. Choice g is g(x)=6(x−2)²−2. Choice j is an upward parabola whose vertex is (0,0).",
+      "choices": ["f(x)=6x²+5x−2", "h(x) with the table in the prompt", "g(x)=6(x−2)²−2", "j(x) with vertex (0,0)"],
+      "explanation": "Complete the square for f: f(x)=6(x+5/12)²−73/24, so its minimum is about −3.04. The others have minimum −0.25 for h (its table is symmetric about x=2.5), −2 for g, and 0 for j. Thus f is smallest.",
+      "imageAlt": "All four quadratics are represented in the prompt: f formula, complete h table, g vertex-form formula, and j upward graph with vertex at origin."
+    },
+    "21": {
+      "prompt": "A sequence is defined by a₁=3 and aₙ=−4+aₙ₋₁. Which representation gives the same sequence?",
+      "choices": ["3, 7, 11, 15, 19, ...", "3, −1, −5, −9, −13, ...", "aₙ=4n−1", "aₙ=4−n"],
+      "explanation": "The recurrence starts at 3 and subtracts 4 each time: 3, −1, −5, −9, −13, ... .",
+      "imageAlt": "Initial term and recurrence subtracting four from the previous term are transcribed, along with two sequences and two explicit formulas."
+    },
+    "22": {
+      "prompt": "If the zeros of g(x) are {−3,0,4}, which function could represent g?",
+      "choices": ["g(x)=(x+3)(x−4)", "g(x)=(x−3)(x+4)", "g(x)=x(x+3)(x−4)", "g(x)=x(x−3)(x+4)"],
+      "explanation": "A zero at 0 requires a factor x; zeros at −3 and 4 require factors x+3 and x−4. Their product is x(x+3)(x−4).",
+      "imageAlt": "Zero set negative three, zero, positive four and all four factored candidate functions are transcribed."
+    },
+    "23": {
+      "prompt": "A snail moves about 72 feet per day. Morgan multiplies (72 feet/1 day)·(1 day/24 hours)·(1 hour/60 minutes)·(12 inches/1 foot). What are the converted rate's units?",
+      "choices": ["hours/inch", "minutes/inch", "inches/hour", "inches/minute"],
+      "explanation": "In the product, feet, days, and hours each cancel between a numerator and denominator. Inches remain on top and minutes below, so the units are inches per minute.",
+      "imageAlt": "All four unit-conversion factors and their numerator-denominator positions are transcribed in the prompt; choices list four possible compound units."
+    },
+    "24": {
+      "prompt": "Ben sells hot dogs and pretzels. Each hot dog costs $0.50 and each pretzel $0.40; he has at most $100 to spend daily and wants to sell at least 200 items. With h hot dogs and p pretzels, which inequality belongs in a feasible system?",
+      "choices": ["h+p≤200", "h+p≥200", "0.50h+0.40p≥200", "0.50h+0.40p≤200"],
+      "explanation": "The number of items sold is h+p. At least 200 items means h+p≥200. The spending limit is a separate inequality, 0.50h+0.40p≤100, which is not among these choices.",
+      "imageAlt": "Hot-dog and pretzel unit costs, $100 budget, minimum 200 items, and all four count-versus-cost inequalities are transcribed."
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "03adb35c2d87760a8b8d8e802a8e9c8f6bf2008e686e4b708fbbbc30ce2770f1",
+  "questions": {
+    "1": {
+      "prompt": "Which expression is equivalent to 2c∛c?",
+      "choices": ["2c^(4/3)", "2c^(3/4)", "(2c)^(4/3)", "(2c)^(3/4)"],
+      "explanation": "The cube root of c is c^(1/3). Multiplying by c adds the exponents on c, giving 2c^(1 + 1/3) = 2c^(4/3); the coefficient 2 is not inside the power.",
+      "imageAlt": "The printed expression is two times c times the cube root of c. The choices distinguish whether the exponent applies only to c or to the entire product two c."
+    },
+    "2": {
+      "prompt": "Which investigation technique is most often used to determine the cause and effect of a medication?",
+      "choices": ["observational study", "survey", "controlled experiment", "census"],
+      "explanation": "A controlled experiment assigns a medication treatment and compares outcomes against a control or comparison condition. This design can support a cause-and-effect conclusion; the other methods only observe or describe.",
+      "imageAlt": "A text-only question asks which study design best determines the causal effect of a medication."
+    },
+    "3": {
+      "prompt": "Solve 5·2^(19x) = 50 for x.",
+      "choices": ["x = log(50)/19", "x = log₂(10)/19", "x = log₂(45)/19", "x = 5/19"],
+      "explanation": "Divide by 5 to get 2^(19x) = 10. Take base-2 logarithms: 19x = log₂(10), so x = log₂(10)/19.",
+      "imageAlt": "The equation has five times two raised to the entire exponent nineteen x, equal to fifty."
+    },
+    "4": {
+      "prompt": "A city's population from 1999 to 2014 is modeled by P(t) = 256,485(0.965)^t, where t is years since 1999. Which statement is not true?",
+      "choices": ["The estimated population was 256,485 in 1999.", "The decay rate was 0.35%.", "The decay factor is 0.965.", "The population declined over 15 years."],
+      "explanation": "The multiplier 0.965 means 96.5% remains each year, so the yearly decay rate is 1 − 0.965 = 0.035 = 3.5%, not 0.35%. At t = 0 the model starts at 256,485, and 2014 is 15 years after 1999.",
+      "imageAlt": "The population model starts at 256,485 and multiplies by 0.965 once per year for the fifteen years from 1999 to 2014."
+    },
+    "5": {
+      "prompt": "Random samples from the same pet-owner population were surveyed: Chris sampled 942, John 410, Brooke 800, and Shane 100. Whose survey likely has the smallest margin of error?",
+      "choices": ["Brooke", "Chris", "John", "Shane"],
+      "explanation": "For comparable random samples from the same population, margin of error decreases as sample size increases, roughly proportional to 1/√n. Chris sampled the most people, 942, so his survey is likely to have the smallest margin of error.",
+      "imageAlt": "Four random pet-owner surveys have sample sizes Brooke 800, Chris 942, John 410, and Shane 100."
+    },
+    "6": {
+      "prompt": "Let i be the imaginary unit and a = i³, b = i², and c = i. Simplify 2ax² + 3bx − cx.",
+      "choices": ["−2ix² − 3x + ix", "−2ix² − 3ix", "−2ix² − 3x − ix", "−8ix³ − 3x − ix"],
+      "explanation": "Powers of i cycle: i² = −1 and i³ = −i. Substituting gives 2(−i)x² + 3(−1)x − ix = −2ix² − 3x − ix.",
+      "imageAlt": "The coefficients are defined by powers of i: a is i cubed, b is i squared, and c is i. The expression is two a x squared plus three b x minus c x."
+    },
+    "7": {
+      "prompt": "Which sequence has common ratio 1/2, assuming a is nonzero?",
+      "choices": ["−a/4, −a/8, −a/16, −a/32, ...", "a/32, a/16, a/8, a/4, ...", "20a, (39/2)a, 19a, (37/2)a, ...", "22a, 22.5a, 23a, 23.5a, ..."],
+      "explanation": "In choice 1, dividing each term by the previous term gives (−a/8)/(−a/4) = 1/2, and the same ratio continues. Choice 2 has ratio 2, while choices 3 and 4 change by a constant difference instead.",
+      "imageAlt": "The first sequence is negative one-fourth a, negative one-eighth a, negative one-sixteenth a, negative one-thirty-second a. The remaining sequences are transcribed in the choices."
+    },
+    "8": {
+      "prompt": "What is the result of dividing 2x³ + 6x² + 7x + 2 by x + 1?",
+      "choices": ["2x² + 4x + 3 − 1/(x + 1)", "2x² + 4x + 3 + 5/(x + 1)", "2x² + 8x − 15 + 17/(x + 1)", "2x² + 8x + 15 − 13/(x + 1)"],
+      "explanation": "Synthetic division by x + 1 uses −1 with coefficients 2, 6, 7, 2. It gives quotient 2x² + 4x + 3 and remainder −1, so the result is 2x² + 4x + 3 − 1/(x + 1).",
+      "imageAlt": "The dividend is two x cubed plus six x squared plus seven x plus two; the divisor is x plus one. The choices give quotients with a fractional remainder term."
+    },
+    "9": {
+      "prompt": "For social-media websites F and I, P(F) = 0.71, P(I) = 0.52, and P(F or I) = 0.77. What is P(F and I)?",
+      "choices": ["0.06", "0.19", "0.46", "0.96"],
+      "explanation": "Use the addition rule: P(F or I) = P(F) + P(I) − P(F and I). Therefore P(F and I) = 0.71 + 0.52 − 0.77 = 0.46.",
+      "imageAlt": "A probability question lists 0.71 for F, 0.52 for I, and 0.77 for F or I, then asks for the overlap F and I."
+    },
+    "10": {
+      "prompt": "Let f(x) = (x − 2)²(x + 3). The strictly defined table for g(x) is: g(−3)=0, g(−2)=1, g(−1)=−2, g(0)=−6, g(1)=−1, g(2)=0. Assess statements I: both functions have the same x-intercepts; II: both functions have a y-intercept at y = −6.",
+      "choices": ["I only", "II only", "I and II", "neither I nor II"],
+      "explanation": "The zeros of f are x = 2 and x = −3, and the strictly defined table shows g = 0 at exactly those listed x-values, so I holds. But f(0) = (−2)²(3) = 12, whereas g(0) = −6, so II is false.",
+      "imageAlt": "The table defines g only at x values negative three, negative two, negative one, zero, one, and two, with values zero, one, negative two, negative six, negative one, and zero."
+    },
+    "11": {
+      "prompt": "How many solutions does 3^x − 8 = 1/(x² − 4) have?",
+      "choices": ["1", "2", "3", "0"],
+      "explanation": "The rational function is undefined at x = −2 and x = 2, splitting the domain into three intervals. Comparing the two graphs shows an intersection on (−2, 0), another on (0, 2), and one on (2, ∞), for three solutions (approximately −1.968, 1.758, and 2.112).",
+      "imageAlt": "The first function is three to the x power minus eight. The second is one divided by x squared minus four, so x equals negative two and positive two are excluded."
+    },
+    "12": {
+      "prompt": "Which binomial is a factor of g³ + 6g² + g − 14?",
+      "choices": ["g − 1", "g − 2", "g + 1", "g + 2"],
+      "explanation": "By the factor theorem, g + 2 is a factor if the polynomial equals zero at g = −2. Substitution gives (−2)³ + 6(−2)² − 2 − 14 = −8 + 24 − 2 − 14 = 0.",
+      "imageAlt": "A cubic polynomial in g has terms g cubed, plus six g squared, plus g, minus fourteen."
+    },
+    "13": {
+      "prompt": "The sequence has a₁ = 8 and aₙ = 2aₙ₋₁. Which explicit formula describes it?",
+      "choices": ["aₙ = 2^n", "aₙ = 2(4^n)", "aₙ = 2^(n + 2)", "aₙ = 8^n"],
+      "explanation": "Starting at a₁ = 8 and doubling each term gives aₙ = 8·2^(n − 1). Since 8 = 2³, this simplifies to 2^(n + 2).",
+      "imageAlt": "The recursive sequence starts with a subscript one equal to eight and each following term is twice the preceding term."
+    },
+    "14": {
+      "prompt": "What is the exact value of tan(−5π/6)?",
+      "choices": ["1/√3", "−1/√3", "√3", "−√3"],
+      "explanation": "Tangent has period π, so tan(−5π/6) = tan(π/6) = 1/√3. Equivalently, sine and cosine are both negative at −150°, making their ratio positive.",
+      "imageAlt": "The angle is negative five pi over six radians; answer choices are positive or negative one over square root three or square root three."
+    },
+    "15": {
+      "prompt": "Given m ≠ 0 and (17^(1/m))^n = 17², what is n in terms of m?",
+      "choices": ["2m", "2/m", "m/2", "2^m"],
+      "explanation": "The power-of-a-power rule gives (17^(1/m))^n = 17^(n/m). Equal positive bases imply n/m = 2, so n = 2m.",
+      "imageAlt": "Seventeen is raised to the one-over-m power inside parentheses, and that entire quantity is raised to n; the result equals seventeen squared."
+    },
+    "16": {
+      "prompt": "Joe has won 8 of 10 tennis matches. If he wins x more consecutive matches, which equation sets his final winning percentage to 90%?",
+      "choices": ["(8 + x)/x = 0.90", "8/(10 + x) = 0.90", "8/10 + x = 0.90", "(8 + x)/(10 + x) = 0.90"],
+      "explanation": "Winning x additional matches changes the number of wins to 8 + x and total matches to 10 + x. The win fraction is therefore (8 + x)/(10 + x), set equal to 0.90.",
+      "imageAlt": "The starting record is eight wins in ten matches, and x denotes additional consecutive wins. The choices divide various win totals by x, ten plus x, or use a separate addition."
+    },
+    "17": {
+      "prompt": "In the system 3x + 2y = 1, 2y + z = 2, and 2x − 2z = −6, what is x?",
+      "choices": ["1", "−1", "−4", "4"],
+      "explanation": "From 2y + z = 2, write 2y = 2 − z. Substitute into 3x + 2y = 1 to get 3x − z = −1, or z = 3x + 1. The third equation simplifies to z = x + 3. Equating them gives 3x + 1 = x + 3, so x = 1.",
+      "imageAlt": "A three-variable linear system is printed: three x plus two y equals one; two y plus z equals two; two x minus two z equals negative six."
+    },
+    "18": {
+      "prompt": "The point (2, −3) lies on y = f(x). Which point must lie on y = f(x − 4) + 1?",
+      "choices": ["(1, 1)", "(−2, −2)", "(3, −7)", "(6, −2)"],
+      "explanation": "The input x − 4 shifts the graph four units right, moving x = 2 to x = 6. Adding 1 shifts the output up from −3 to −2. Thus (6, −2) lies on the transformed graph.",
+      "imageAlt": "The original point is x two, y negative three. The transformed function is f of x minus four, then plus one outside the function."
+    },
+    "19": {
+      "prompt": "Which statement describes the end behavior of y = log(x − 3)?",
+      "choices": ["As x → −∞, y → −∞; as x → ∞, y → ∞.", "As x → 3, y → −∞; as x → ∞, y → ∞.", "As x → −∞, y → 0; as x → ∞, y → ∞.", "As x → 3, y → 0; as x → ∞, y → ∞."],
+      "explanation": "The domain is x > 3. As x approaches 3 from the right, x − 3 approaches zero from above, so its logarithm tends to negative infinity. As x grows without bound, log(x − 3) grows without bound.",
+      "imageAlt": "The logarithm takes x minus three as its argument. Two choices refer to x approaching negative infinity, outside the domain; the other two refer to approaching three."
+    },
+    "20": {
+      "prompt": "Black-bear population is modeled by B = 5835.943(1.026)^t, where t is years since 2010. Which equivalent model uses a five-year growth factor?",
+      "choices": ["B = 5835.943(1.005147)^(t/5)", "B = 5835.943(1.005147)^(5t)", "B = 5835.943(1.136938)^(t/5)", "B = 5835.943(1.136938)^(5t)"],
+      "explanation": "Over five years, the factor is 1.026⁵ ≈ 1.136938. The number of five-year periods in t years is t/5, so B ≈ 5835.943(1.136938)^(t/5).",
+      "imageAlt": "The original annual model uses factor 1.026 to the t power. The proposed five-year models use bases 1.005147 or 1.136938 and exponents t divided by five or five t."
+    },
+    "21": {
+      "prompt": "Which expressions equal zero for all real x and y? I: (x² + y²)² + (x² + y²)² − 2(x² + y²)². II: (x² + y²)² − (x² − y²)². III: (x² + y²)² − (x² − y²)² − (2xy)².",
+      "choices": ["I only", "III only", "I and II only", "I and III only"],
+      "explanation": "I is A + A − 2A = 0 with A = (x² + y²)². By difference of squares, II = 4x²y², which is not always zero. III subtracts (2xy)² = 4x²y² from II, making it zero for all real x and y.",
+      "imageAlt": "Three expressions labeled I, II, and III involve squares of x squared plus y squared, x squared minus y squared, and two x y. Each is fully transcribed in the accessible prompt."
+    },
+    "22": {
+      "prompt": "What kind of solutions does 1/x − 1/5 = x/5 have?",
+      "choices": ["rational solutions", "irrational solutions", "imaginary solutions", "no solutions"],
+      "explanation": "Since x ≠ 0, multiply by 5x to get 5 − x = x², or x² + x − 5 = 0. Its discriminant is 1 + 20 = 21, positive but not a perfect square, so both real solutions (−1 ± √21)/2 are irrational.",
+      "imageAlt": "A rational equation has one divided by x minus one-fifth on the left and x divided by five on the right."
+    },
+    "23": {
+      "prompt": "For x ≠ ±4y, simplify (x² + 3xy − 28y²)/(16y² − x²).",
+      "choices": ["−1 − (7/4)y", "(x − 7y)/(4y − x)", "(x + 7y)/(x + 4y)", "(−x − 7y)/(x + 4y)"],
+      "explanation": "Factor the numerator as (x + 7y)(x − 4y) and the denominator as (4y − x)(4y + x) = −(x − 4y)(x + 4y). Cancel the common factor under the stated exclusions to obtain −(x + 7y)/(x + 4y), equivalent to choice 4.",
+      "imageAlt": "The numerator is x squared plus three x y minus twenty-eight y squared. The denominator is sixteen y squared minus x squared, and x may not equal either positive or negative four y."
+    },
+    "24": {
+      "prompt": "Which equation represents a parabola with focus (−2, 1) and directrix y = 5?",
+      "choices": ["(x + 2)² = −8(y − 3)", "(x + 2)² = 5(y − 1)", "(x + 2)² = −8(y − 1)", "(x + 2)² = 8(y − 3)"],
+      "explanation": "The vertex is halfway between focus y = 1 and directrix y = 5, at (−2, 3). The focus is 2 units below the vertex, so p = −2. Using (x − h)² = 4p(y − k) gives (x + 2)² = −8(y − 3).",
+      "imageAlt": "The focus is negative two, one and the directrix is the horizontal line y equals five. The answer choices vary the sign and vertical shift in a parabolic equation."
+    }
+  }
+}

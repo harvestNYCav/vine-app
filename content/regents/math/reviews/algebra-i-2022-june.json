@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "d63ac9825e8213cb83d76e6763fa9f27ba2d53879647f6bc97415ea7b65d4a8c",
+  "questions": {
+    "1": {
+      "prompt": "Which correlation shows a causal relationship?",
+      "choices": ["The more minutes an athlete is on the playing field, the more goals he scores.", "The more gasoline that you purchase at the pump, the more you pay.", "The longer a shopper stays at the mall, the more purchases she makes.", "As the price of a gift increases, the size of the gift box increases."],
+      "explanation": "At a fixed price per unit, buying more gasoline directly increases the total amount paid. The other correlations need not be causal: time on a field or in a mall does not guarantee goals or purchases, and price alone does not determine box size.",
+      "imageAlt": "Four correlation statements are fully transcribed, preserving the gasoline-volume and payment relationship."
+    },
+    "2": {
+      "prompt": "Given f(x)=3x−5, which statement is true?",
+      "choices": ["f(0)=0", "f(3)=4", "f(4)=3", "f(5)=0"],
+      "explanation": "Substitute x=3: f(3)=3(3)−5=9−5=4. The other proposed values do not equal 3x−5 at their inputs.",
+      "imageAlt": "Linear function three x minus five and four claimed input-output evaluations are transcribed."
+    },
+    "3": {
+      "prompt": "A mixed-greens salad costs $5.75, and each additional topping costs $0.75. Which function gives cost c(s) for s toppings?",
+      "choices": ["c(s)=5.75s+0.75", "c(s)=0.75s+5.75", "c(s)=5.00s+0.75", "c(s)=0.75s+5.00"],
+      "explanation": "The base salad is $5.75 even with zero toppings. Each of s toppings adds $0.75, so c(s)=5.75+0.75s.",
+      "imageAlt": "Base salad price $5.75, topping price $0.75, and all four candidate cost formulas are transcribed."
+    },
+    "4": {
+      "prompt": "Which expression is equivalent to x²+5x−6?",
+      "choices": ["(x+3)(x−2)", "(x+2)(x−3)", "(x−6)(x+1)", "(x+6)(x−1)"],
+      "explanation": "The two numbers multiplying to −6 and adding to 5 are 6 and −1. Therefore x²+5x−6=(x+6)(x−1).",
+      "imageAlt": "Original quadratic and four signed binomial products are transcribed."
+    },
+    "5": {
+      "prompt": "Peter has $100 to spend on drinks. Lemonade bottles cost $2 each and juice boxes cost $0.50 each. If x is lemonade bottles and y is juice boxes, which inequality models the budget?",
+      "choices": ["0.50x+2y≤100", "0.50x+2y≥100", "2x+0.50y≤100", "2x+0.50y≥100"],
+      "explanation": "Lemonade costs 2x dollars and juice costs 0.50y dollars. Spending no more than $100 means 2x+0.50y≤100.",
+      "imageAlt": "Each drink's unit price, x and y labels, $100 limit, and all four inequalities preserve coefficients and relation signs."
+    },
+    "6": {
+      "prompt": "Which domain is most appropriate for a function representing the number of items placed in a laundry basket each day of January?",
+      "choices": ["integers", "whole numbers", "rational numbers", "irrational numbers"],
+      "explanation": "An item count cannot be fractional or negative, and zero items is possible on a day. Whole numbers include 0 and positive integers, so they are the best choice.",
+      "imageAlt": "Item-count situation and all four numeric-domain categories are transcribed."
+    },
+    "7": {
+      "prompt": "What is the solution to (3/2)b+5<17?",
+      "choices": ["b<8", "b>8", "b<18", "b>18"],
+      "explanation": "Subtract 5 to obtain (3/2)b<12. Multiply by positive 2/3: b<8; the inequality direction stays the same.",
+      "imageAlt": "Three-halves b plus five strictly less than seventeen, with all four inequality choices and bounds transcribed."
+    },
+    "8": {
+      "prompt": "Four tables use x=1,2,3,4,5. Their outputs are f: 6,9,12,15,18; h: 2,7,12,17,22; k: 4,16,64,256,1024; p: −9.5,−12,−14.5,−17,−19.5. Which table shows an exponential relationship?",
+      "choices": ["f(x)", "h(x)", "k(x)", "p(x)"],
+      "explanation": "Every increase of 1 in x multiplies k's output by 4: 4,16,64,256,1024. A constant multiplicative factor identifies exponential growth; the other tables have constant additive differences.",
+      "imageAlt": "All four five-row tables are fully transcribed in the prompt, preserving positive and negative values."
+    },
+    "9": {
+      "prompt": "Which expression is not equivalent to (5²ˣ)³?",
+      "choices": ["(5ˣ)⁶", "(5³ˣ)²", "(5⁵)ˣ", "(5²)³ˣ"],
+      "explanation": "The original equals 5^(2x·3)=5^(6x). Choices (1), (2), and (4) also give 5^(6x), but (5⁵)ˣ=5^(5x), so choice (3) differs.",
+      "imageAlt": "Each power-of-a-power expression preserves the complete exponents 2x, 3, x, 6, 3x, 2, 5, and 3x as printed."
+    },
+    "10": {
+      "prompt": "Which relation is a function?",
+      "choices": ["Table: (−1,1),(0,0),(1,1),(1,2),(2,4),(3,9)", "Piecewise y=x for −1<x≤2, and y=x² for 2≤x<4", "An increasing S-shaped curve through the origin, with only one y-value for each x", "Set {(0,1),(2,3),(3,2),(3,4)}"],
+      "explanation": "The S-shaped graph passes the vertical-line test, so it is a function. The table repeats x=1 with outputs 1 and 2; the piecewise rule gives both 2 and 4 at x=2; the set repeats x=3 with outputs 2 and 4.",
+      "imageAlt": "All four relation representations are transcribed: a repeated-input table, overlapping piecewise domains at x equals two, a single-valued S curve, and a repeated-input ordered-pair set."
+    },
+    "11": {
+      "prompt": "For the line Ax+By=C, which expression gives y in terms of A, B, C, and x?",
+      "choices": ["(C−Ax)/B", "(C−A)/(Bx)", "(C−A)/(x+B)", "(C−B)/(Ax)"],
+      "explanation": "Subtract Ax: By=C−Ax. Divide by B to isolate y, giving y=(C−Ax)/B.",
+      "imageAlt": "Standard-form line equation and all four fractional expressions preserve complete numerators and denominators."
+    },
+    "12": {
+      "prompt": "What are the zeros of f(x)=(2x−4)(3x+4)?",
+      "choices": ["{−4/3, 2}", "{−4, 4}", "{−2, 4/3}", "{−4, 2}"],
+      "explanation": "Set each factor to zero. From 2x−4=0, x=2; from 3x+4=0, x=−4/3. Both are zeros.",
+      "imageAlt": "Both linear factors and all four zero sets are transcribed with signed fractions."
+    },
+    "13": {
+      "prompt": "Joe has d dimes and 2d+5 nickels, totaling $1.45. Which equation determines d?",
+      "choices": ["0.10d+0.05(2d+5)=1.45", "0.10(2d+5)+0.05d=1.45", "d+(2d+5)=1.45", "(d−5)+2d=1.45"],
+      "explanation": "Dimes contribute $0.10d. The 2d+5 nickels contribute $0.05(2d+5). Their values sum to $1.45, yielding choice (1).",
+      "imageAlt": "Dime count d, nickel count two d plus five, total $1.45, and all four proposed equations preserve coin values."
+    },
+    "14": {
+      "prompt": "Donna's grade 8–12 exam scores are 90,92,87,94,95. Andrew's are 78,96,87,94,93. Which comparison is correct?",
+      "choices": ["Andrew has a higher mean than Donna.", "Donna and Andrew have the same median.", "Andrew has a larger interquartile range than Donna.", "Donna's third quartile is greater than Andrew's."],
+      "explanation": "Sorted scores are Donna: 87,90,92,94,95 and Andrew: 78,87,93,94,96. Excluding each median, Donna's IQR is 94.5−88.5=6; Andrew's is 95−82.5=12.5. Andrew's IQR is larger.",
+      "imageAlt": "Both complete grade-by-grade score tables for Donna and Andrew are transcribed in the prompt, and all four comparison claims are transcribed."
+    },
+    "15": {
+      "prompt": "The first term in an arithmetic sequence is 5 and the fifth is 17. What is the common difference?",
+      "choices": ["2.4", "12", "3", "4"],
+      "explanation": "There are four equal steps from the first to fifth term. The total increase is 17−5=12, so each step is 12/4=3.",
+      "imageAlt": "First term five, fifth term seventeen, and four candidate differences are transcribed."
+    },
+    "16": {
+      "prompt": "A quadratic and a linear function are graphed on the same axes. Which situation is not possible?",
+      "choices": ["They do not intersect.", "They intersect at one point.", "They intersect at two points.", "They intersect at three points."],
+      "explanation": "Set the line's equation equal to the quadratic's equation. The result is a quadratic equation, which can have at most two real solutions. Thus the graphs cannot intersect at three points.",
+      "imageAlt": "All four possible counts of intersections, from zero through three, are transcribed."
+    },
+    "17": {
+      "prompt": "Which expression is equivalent to (m−3)²?",
+      "choices": ["m²+9", "m²−9", "m²−6m+9", "m²−6m−9"],
+      "explanation": "Multiply (m−3)(m−3): m²−3m−3m+9=m²−6m+9.",
+      "imageAlt": "Squared binomial m minus three and all four signed quadratic expansions are transcribed."
+    },
+    "18": {
+      "prompt": "Why is (3,−4) a solution of 2y+3x=1? Andrea says it appears in a calculator table, Bill says substitution makes the equation true, and Christine says the line passes through the point. Which students are correct?",
+      "choices": ["Andrea and Bill, only", "Bill and Christine, only", "Andrea and Christine, only", "Andrea, Bill, and Christine"],
+      "explanation": "Substitution gives 2(−4)+3(3)=−8+9=1. Thus the point satisfies the equation, appears in its table when x=3, and lies on its graph. All three explanations are valid.",
+      "imageAlt": "Point three comma negative four, line equation, and the three complete types of student justification are transcribed."
+    },
+    "19": {
+      "prompt": "Four quadratics are shown. f table: (−4,−4),(−2,4),(−1,5),(0,4),(2,−4). g(x)=−(x−4)²+5. h is a downward parabola with vertex (1,4). j(x)=−(1/2)x²+x+4. Which statement is true?",
+      "choices": ["The maximum of f is less than the maximum of j.", "The maximum of g is less than the maximum of h.", "The maximum of f equals the maximum of g.", "The maximum of h equals the maximum of j."],
+      "explanation": "The f table reaches its maximum 5 at x=−1. The vertex form of g shows a maximum of 5 at x=4. Meanwhile h's maximum is 4 and j's is 4.5, so only f and g have equal maxima.",
+      "imageAlt": "All five f-table pairs, g and j formulas, and h graph's downward shape and vertex one comma four are transcribed in the prompt."
+    },
+    "20": {
+      "prompt": "Which polynomial has degree 6, leading coefficient 7, and constant term 4?",
+      "choices": ["6x⁷−x⁵+2x+4", "4+x+7x⁶−3x²", "7x⁴+6+x²", "5x+4x⁶+7"],
+      "explanation": "In choice (2), the highest-degree term is 7x⁶, so its degree is 6 and leading coefficient 7; the constant term is 4. The other choices fail at least one requirement.",
+      "imageAlt": "All four polynomials are transcribed with every exponent, coefficient, and constant term."
+    },
+    "21": {
+      "prompt": "For A=P(1±r)ᵗ, which statement correctly interprets the annual rate?",
+      "choices": ["A=P(1.025)ᵗ means increasing at 25%.", "A=P(1.0052)ᵗ means increasing at 52%.", "A=P(0.86)ᵗ means decreasing at 14%.", "A=P(0.68)ᵗ means decreasing at 68%."],
+      "explanation": "A multiplier of 0.86 means 86% of the balance remains after each year, a 14% decrease. By comparison, 1.025 means 2.5% growth, 1.0052 means 0.52% growth, and 0.68 means 32% decrease.",
+      "imageAlt": "General interest model and all four decimal growth or decay factors with claimed percentage rates are transcribed."
+    },
+    "22": {
+      "prompt": "Tim runs 50 kilometers in 4.5 hours. Which product converts this rate to minutes per mile?",
+      "choices": ["(4.5 hr/50 km)·(1.609 km/1 mi)·(60 min/1 hr)", "(50 km/4.5 hr)·(1 mi/1.609 km)·(60 min/1 hr)", "(50 km/4.5 hr)·(1 mi/1.609 km)·(1 hr/60 min)", "(4.5 hr/50 km)·(1 mi/1.609 km)·(60 min/1 hr)"],
+      "explanation": "Start with hours per kilometer, multiply by 1.609 kilometers per mile, then by 60 minutes per hour. Hours and kilometers cancel, leaving minutes per mile.",
+      "imageAlt": "All four complete unit-conversion chains preserve 4.5 hours, 50 kilometers, 1.609 kilometers per mile, and 60 minutes per hour in their printed numerator-denominator order."
+    },
+    "23": {
+      "prompt": "When (x−1)/2−a/4=3a/4 is solved for x, what expression results?",
+      "choices": ["3a/2+1", "a+1", "(4a+1)/2", "2a+1"],
+      "explanation": "Multiply every term by 4: 2(x−1)−a=3a. Then 2x−2=4a, so 2x=4a+2 and x=2a+1.",
+      "imageAlt": "Original equation retains separate denominators two and four, and all four solved expressions preserve their fraction groupings."
+    },
+    "24": {
+      "prompt": "If a₁=−3 and aₙ=−3aₙ₋₁−2, what is a₄?",
+      "choices": ["−107", "−95", "55", "67"],
+      "explanation": "Apply the recurrence: a₂=−3(−3)−2=7, a₃=−3(7)−2=−23, and a₄=−3(−23)−2=67.",
+      "imageAlt": "Initial term negative three, recurrence negative three times previous term minus two, and four signed answer choices are transcribed."
+    }
+  }
+}

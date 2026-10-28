@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "d2a975151751f487dc63725a0a789f463ade726e92d4075676d3648f18a8acd1",
+  "questions": {
+    "1": {
+      "prompt": "A scatter plot relates the number of family members to a family's weekly grocery bill. Bills generally rise as family size rises: families of 3–5 mostly spend about $100–$300, while families of 7–9 mostly spend about $200–$430. What is the most appropriate predicted bill for a family of 6?",
+      "choices": ["$100", "$300", "$400", "$500"],
+      "explanation": "The scatter plot shows a positive association. At six members, a prediction near the middle of the neighboring bills is reasonable; $300 fits the plotted trend better than $100, $400, or $500.",
+      "imageAlt": "Scatter plot: horizontal axis is family members 1 through 9 and vertical axis is weekly grocery bill in dollars 0 through 600. Points at 2–5 members mostly range from about $120 to $300; points at 7–9 members range from about $200 to $430. The requested prediction is for 6 members, with choices $100, $300, $400, and $500."
+    },
+    "2": {
+      "prompt": "The function g(x)=−2x²+3x. What is g(−3)?",
+      "choices": ["−27", "−9", "27", "45"],
+      "explanation": "Substitute −3 for x: g(−3)=−2(−3)²+3(−3)=−18−9=−27.",
+      "imageAlt": "The quadratic function has coefficient negative two on x squared and positive three on x; evaluate at negative three. All four signed answer choices are transcribed."
+    },
+    "3": {
+      "prompt": "Which expression results in a rational number?",
+      "choices": ["√121−√21", "√25·√50", "√36÷√225", "3√5+2√5"],
+      "explanation": "√36÷√225=6÷15=2/5, which is rational. The other expressions still contain a nonzero irrational square-root term.",
+      "imageAlt": "Four radical expressions are transcribed with their square-root bars, multiplication, division, subtraction, and addition intact."
+    },
+    "4": {
+      "prompt": "Textbooks cost $116 each and laptops cost $439 each. A department has $6500 and buys 30 textbooks. What is the greatest number of whole laptops it can buy?",
+      "choices": ["6", "7", "11", "12"],
+      "explanation": "The textbooks cost 30·116=$3480, leaving $3020. Six laptops cost $2634, while seven cost $3073, more than remains, so six is the maximum.",
+      "imageAlt": "Budget $6500, thirty $116 textbooks, $439 laptops, and four whole-number laptop choices are fully transcribed."
+    },
+    "5": {
+      "prompt": "Solve (3/5)(x+4/3)=1.04.",
+      "choices": ["3.0 with 6 repeating", "0.4", "−0.4 with 8 repeating", "−0.709 with 3 repeating"],
+      "explanation": "Multiply both sides by 5/3: x+4/3=1.04·5/3=26/15. Subtract 4/3=20/15 to get x=6/15=0.4.",
+      "imageAlt": "Equation three-fifths times the quantity x plus four-thirds equals 1.04. Repeating-digit bars in distractors are described explicitly; 0.4 is a terminating decimal."
+    },
+    "6": {
+      "prompt": "The area of a rectangle is 3x²−10x−8. Which expression also represents that area?",
+      "choices": ["(3x+2)(x−4)", "(3x+2)(x+4)", "(3x+4)(x−2)", "(3x−4)(x+2)"],
+      "explanation": "Expand (3x+2)(x−4): 3x²−12x+2x−8=3x²−10x−8. The other products do not match the middle and constant terms.",
+      "imageAlt": "Area polynomial three x squared minus ten x minus eight and all four binomial products are transcribed with signs."
+    },
+    "7": {
+      "prompt": "Which relation does not represent a function?",
+      "choices": ["Table: (1,3.2),(2,4),(3,5.1),(4,6),(5,7.4),(6,8.8)", "Upright V-shaped graph, with one y-value for each x", "Equation y=3√(x+1)−2", "Mapping: 1→4 and 5; 2→6 and 7; 3→8 and 9"],
+      "explanation": "In the mapping, each input has two arrows to different outputs, so it fails the definition of a function. Each other representation assigns only one output to an input.",
+      "imageAlt": "All four relation representations are described: six distinct-input table pairs, upright V graph, square-root equation, and mapping in which 1, 2, and 3 each point to two outputs."
+    },
+    "8": {
+      "prompt": "Britney changes 3x²−8−10x=3(2x+3) into 3x²−10x−8=6x+9. Which properties justify these steps? I associative addition; II commutative addition; III additive identity; IV distributive property.",
+      "choices": ["I and III", "I and IV", "II and III", "II and IV"],
+      "explanation": "Moving −10x before −8 on the left changes the order of added terms, using commutativity of addition (II). Expanding 3(2x+3) to 6x+9 uses the distributive property (IV).",
+      "imageAlt": "Both complete equations, the four named properties I–IV, and all four property-pair choices are transcribed."
+    },
+    "9": {
+      "prompt": "The graph of y=(1/2)x²−x−4 marks A(−2,0), B(0,−4), and C(4,0). Which marked points determine the zeros of the function?",
+      "choices": ["A only", "B only", "A and C only", "A, B, and C"],
+      "explanation": "Zeros occur where y=0, at the x-intercepts. A and C lie on the x-axis, while B has y=−4.",
+      "imageAlt": "Upward-opening parabola through labeled points A negative two comma zero, B zero comma negative four, and C four comma zero; A and C are x-intercepts. Four point-selection choices are transcribed."
+    },
+    "10": {
+      "prompt": "The parent function is f(x)=x³. How is g(x)=(x−1)³−2 translated from f?",
+      "choices": ["1 unit left and 2 units down", "1 unit left and 2 units up", "1 unit right and 2 units down", "1 unit right and 2 units up"],
+      "explanation": "Replacing x with x−1 shifts the cubic one unit right; subtracting 2 outside shifts it two units down.",
+      "imageAlt": "Parent cubic x cubed, transformed cubic quantity x minus one cubed minus two, and four horizontal-vertical shift choices are transcribed."
+    },
+    "11": {
+      "prompt": "If C=2a²−5 and D=3−a, what is C−2D?",
+      "choices": ["2a²+a−8", "2a²−a−8", "2a²+2a−11", "2a²−a−11"],
+      "explanation": "Substitute and distribute: C−2D=(2a²−5)−2(3−a)=2a²−5−6+2a=2a²+2a−11.",
+      "imageAlt": "Definitions of C and D, expression C minus two D, and four quadratic choices are transcribed with powers and signs."
+    },
+    "12": {
+      "prompt": "A laptop originally costs $1250. Its value is $1000 after one year, $800 after two, and $640 after three. Which function models its value after x years?",
+      "choices": ["1000(1.2)ˣ", "1000(0.8)ˣ", "1250(1.2)ˣ", "1250(0.8)ˣ"],
+      "explanation": "The starting value is $1250, and each year the value is 80% of the previous year: 1000/1250=0.8. Thus V(x)=1250(0.8)ˣ.",
+      "imageAlt": "Laptop value table: year zero $1250, year one $1000, year two $800, year three $640; all four exponential model choices are transcribed."
+    },
+    "13": {
+      "prompt": "A ball's height in meters is h(x)=−4.9x²+6x+5, where x is time in seconds. What does the constant 5 represent?",
+      "choices": ["the initial height of the ball", "the time the ball hits the ground", "the time the ball reaches its maximum height", "the maximum height of the ball"],
+      "explanation": "At time x=0, h(0)=5. Therefore the constant term gives the ball's starting height, in meters.",
+      "imageAlt": "Height function negative 4.9 x squared plus six x plus five with time in seconds and height in meters; four physical interpretations of the constant are transcribed."
+    },
+    "14": {
+      "prompt": "For f(x)=2x²+6x−12, the domain is integers −2≤x≤1. What is the range?",
+      "choices": ["{−32,−20,−12,−4}", "{−16,−12,−4}", "{−32,−4}", "{−16,−4}"],
+      "explanation": "Use only integer inputs −2,−1,0,1. Their outputs are −16,−16,−12,−4, so the distinct range values are {−16,−12,−4}.",
+      "imageAlt": "Quadratic function, integer domain from negative two through one inclusive, and four candidate finite sets are transcribed."
+    },
+    "15": {
+      "prompt": "When x²+8x−33=0 is solved by completing the square, which equation results?",
+      "choices": ["(x+4)²=49", "(x−4)²=49", "(x+4)²=17", "(x−4)²=17"],
+      "explanation": "Move −33: x²+8x=33. Add (8/2)²=16 to both sides, giving x²+8x+16=49, or (x+4)²=49.",
+      "imageAlt": "Original quadratic equation and all four completed-square equations are transcribed with their plus or minus signs and right-hand numbers."
+    },
+    "16": {
+      "prompt": "Pumpkin weights at weeks 6,7,8,9 are Liam: 2.4,5.5,8.6,11.7 pounds and Patricia: 2.5,3.8,5.8,8.8 pounds. If Liam continues linear growth and Patricia exponential growth, whose pumpkin is heavier in weeks 10 and 13?",
+      "choices": ["Liam in both weeks", "Patricia in both weeks", "Liam in week 10; Patricia in week 13", "Patricia in week 10; Liam in week 13"],
+      "explanation": "Liam gains 3.1 pounds weekly, so he reaches 14.8 in week 10 and 24.1 in week 13. Patricia's weights multiply by about 1.52 weekly, yielding about 13.4 in week 10 and 47 in week 13. Liam is heavier first, but Patricia's exponential growth overtakes him.",
+      "imageAlt": "Complete four-week weight table is transcribed: Liam 2.4, 5.5, 8.6, 11.7; Patricia 2.5, 3.8, 5.8, 8.8 pounds for weeks 6 through 9. Four week-10/week-13 comparison choices are transcribed."
+    },
+    "17": {
+      "prompt": "A graph begins at a filled point (−1,5), descends to (about 1.5,0), then rises to the right indefinitely. What is the domain?",
+      "choices": ["all positive real numbers", "all positive integers", "x≥0", "x≥−1"],
+      "explanation": "The leftmost point at x=−1 is included because it is filled. The graph continues to the right without bound, so the domain is all x≥−1.",
+      "imageAlt": "Piecewise linear graph has a filled left endpoint at x equals negative one, descends to an x-axis vertex, then has an arrow continuing right. Domain choices include all positive reals, positive integers, x at least zero, and x at least negative one."
+    },
+    "18": {
+      "prompt": "Which pair of equations has (−1,2) as a solution?",
+      "choices": ["y=x+3 and y=2ˣ", "y=x−1 and y=2x", "y=x²−3x−2 and y=4x+6", "2x+3y=−4 and y=−(1/2)x−3/2"],
+      "explanation": "For x=−1, the third pair gives y=(−1)²−3(−1)−2=2 and y=4(−1)+6=2. Both equations hold at (−1,2).",
+      "imageAlt": "Point negative one comma two and all eight equations across four pairs are transcribed, including exponent, square, and one-half coefficients."
+    },
+    "19": {
+      "prompt": "The sequence is 8, 20, 50, 125, 312.5, …, with a₁=8. Which recurrence represents it?",
+      "choices": ["aₙ=aₙ₋₁+a₁", "aₙ=2.5(aₙ₋₁)", "aₙ=a₁+1.5(aₙ₋₁)", "aₙ=(a₁)(aₙ₋₁)"],
+      "explanation": "Each term is 2.5 times the preceding term: 20/8=50/20=2.5. Thus aₙ=2.5aₙ₋₁ for n>1.",
+      "imageAlt": "Sequence with first term eight and successive terms twenty, fifty, one hundred twenty-five, and three hundred twelve point five; all four recursive formulas are transcribed."
+    },
+    "20": {
+      "prompt": "Electrical power is P=I²R, where I is current and R is resistance. Solve for I in terms of P and R, taking the nonnegative current.",
+      "choices": ["I=(P/R)²", "I=√(P/R)", "I=(P−R)²", "I=√(P−R)"],
+      "explanation": "Divide by R to obtain I²=P/R. Taking the nonnegative square root gives I=√(P/R).",
+      "imageAlt": "Power equation P equals I squared times R and four candidate formulas for I are transcribed with fraction bars, square roots, and exponents."
+    },
+    "21": {
+      "prompt": "A line graph f crosses the y-axis at 7 and the x-axis at 7, q(x)=(x−1)²−6, and a table gives p(2)=5,p(3)=4,p(4)=3,p(5)=4,p(6)=5. When x=4, which functions have the same output?",
+      "choices": ["f and q only", "f and p only", "q and p only", "f, q, and p"],
+      "explanation": "Read f(4)=3 from the graph. Also q(4)=(4−1)²−6=3 and p(4)=3 from the table. All three match.",
+      "imageAlt": "Decreasing line graph f crosses both axes at seven and has value three when x is four. Quadratic q of x equals quantity x minus one squared minus six. Table p has pairs (2,5),(3,4),(4,3),(5,4),(6,5)."
+    },
+    "22": {
+      "prompt": "For y+3x=−4 and 2x−3y=−21, which equation results by substituting an expression for y into the second equation?",
+      "choices": ["2(−3x−4)+3x=−21", "2(3x−4)+3x=−21", "2x−3(−3x−4)=−21", "2x−3(3x−4)=−21"],
+      "explanation": "The first equation gives y=−3x−4. Replacing y in 2x−3y=−21 yields 2x−3(−3x−4)=−21.",
+      "imageAlt": "Both original linear equations and four substitution candidates are transcribed with all negative signs and parentheses."
+    },
+    "23": {
+      "prompt": "Materials A and B decay with A(t)=1000(0.5)²ᵗ and B(t)=1000(0.25)ᵗ, where t is days. When are their amounts equal?",
+      "choices": ["initial day only", "day 2 only", "day 5 only", "every day"],
+      "explanation": "Because (0.5)²=0.25, A(t)=1000((0.5)²)ᵗ=1000(0.25)ᵗ=B(t) for every t.",
+      "imageAlt": "Two decay models are transcribed: A uses one-half raised to exponent two t, and B uses one-fourth raised to exponent t; both begin at one thousand. Four timing choices are transcribed."
+    },
+    "24": {
+      "prompt": "In the unit conversion (3 miles/1 hour)·(1 hour/60 minutes)·(5280 feet/1 mile)·(12 inches/1 foot), what are the final units?",
+      "choices": ["minutes per foot", "minutes per inch", "feet per minute", "inches per minute"],
+      "explanation": "Miles, hours, and feet cancel between numerators and denominators. Inches remain in the numerator and minutes in the denominator, so the result is inches per minute.",
+      "imageAlt": "Full chain of four unit fractions is transcribed in order: miles per hour, hours per minute, feet per mile, and inches per foot. Four possible final unit ratios are transcribed."
+    }
+  }
+}

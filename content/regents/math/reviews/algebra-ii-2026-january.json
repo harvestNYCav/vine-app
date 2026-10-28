@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "a207c261c44d20adf6962b964b42a22793575c5e9ee4900efc4d6ba6afe68aed",
+  "questions": {
+    "1": {
+      "prompt": "What is t if 27^(6 − t) = 9^(t − 1)?",
+      "choices": ["7/2", "19/5", "8", "4"],
+      "explanation": "Write both sides with base 3: 3^(18 − 3t) = 3^(2t − 2). Equating exponents gives 18 − 3t = 2t − 2, so 5t = 20 and t = 4.",
+      "imageAlt": "The equation has 27 raised to the entire exponent 6 minus t, equal to 9 raised to the entire exponent t minus 1."
+    },
+    "2": {
+      "prompt": "Which expression is equivalent to (x − 4)² − 5(x − 4) + 6?",
+      "choices": ["(x − 2)(x − 1)", "(x + 2)(x − 3)", "(x − 10)(x − 5)", "(x − 6)(x − 7)"],
+      "explanation": "Let u = x − 4. Then u² − 5u + 6 = (u − 2)(u − 3). Substituting x − 4 back gives (x − 6)(x − 7).",
+      "imageAlt": "The expression contains the square of the entire quantity x minus 4, minus five times that same quantity, plus six."
+    },
+    "3": {
+      "prompt": "Researchers tested whether classical music reduces math anxiety. They randomly divided 100 students into two groups in identical rooms. Both groups took a math test and rated their anxiety. One group then listened to classical music for 10 minutes while the other sat quietly; afterward both groups repeated the test and anxiety rating. Is this an observational study or an experiment?",
+      "choices": ["Observational study, because the participants completed a survey about math anxiety.", "Observational study, because the researchers watched the participants take math tests.", "Experiment, because one group was randomly assigned to listen to classical music while the other group was not.", "Experiment, because the participants took a math test."],
+      "explanation": "The researchers imposed a treatment—listening to classical music—and randomly assigned participants to treatment and comparison groups. That makes this an experiment, regardless of the surveys and tests used to measure outcomes.",
+      "imageAlt": "A study randomly assigns one of two student groups to listen to classical music. The other group sits quietly; both groups are tested and surveyed before and after."
+    },
+    "4": {
+      "prompt": "Which of four graphs represents y = log_(1/2)(x)?",
+      "choices": ["Decreasing logarithmic curve with x-intercept (1/2, 0).", "Decreasing logarithmic curve with x-intercept (1, 0).", "Increasing logarithmic curve with x-intercept (1/2, 0).", "Increasing logarithmic curve with x-intercept (1, 0)."],
+      "explanation": "A logarithm with base between 0 and 1 decreases as x increases. Also log_(1/2)(1) = 0, so the graph crosses the x-axis at (1, 0).",
+      "imageAlt": "Four logarithmic graph choices are shown: choices 1 and 2 decrease, while 3 and 4 increase. Choices 1 and 3 pass through (one-half, zero); choices 2 and 4 pass through (one, zero)."
+    },
+    "5": {
+      "prompt": "A graph of Cape Cod tides gives water height h(t), in meters, t hours since high tide. The high tides are about 3.4 meters at t = 0, 12, and 24; low tides are about 0.4 meter at t = 6 and 18. Which equation models the height?",
+      "choices": ["h(t) = 1.9cos((π/6)t) + 1.5", "h(t) = 1.5cos((π/6)t) + 1.9", "h(t) = 1.9cos((π/12)t) + 1.5", "h(t) = 1.5cos((π/12)t) + 1.9"],
+      "explanation": "The amplitude is (3.4 − 0.4)/2 = 1.5 and the midline is (3.4 + 0.4)/2 = 1.9. High tides are 12 hours apart, so the angular coefficient is 2π/12 = π/6. Since t = 0 is a high tide, use a positive cosine: h(t) = 1.5cos((π/6)t) + 1.9.",
+      "imageAlt": "Cape Cod tide graph: horizontal axis is time 0 to 24 hours; vertical axis is height 0 to 4 meters. Peaks are near (0, 3.4), (12, 3.4), and (24, 3.4); troughs near (6, 0.4) and (18, 0.4)."
+    },
+    "6": {
+      "prompt": "What are the solutions to 3x² − 4x + 2 = 0?",
+      "choices": ["x = 2/3 ± (√2/3)i", "x = 2/3 ± √10/3", "x = 2/3 ± √2/3", "x = 2/3 ± (√10/3)i"],
+      "explanation": "The discriminant is (−4)² − 4(3)(2) = −8. The quadratic formula gives x = (4 ± √(−8))/6 = 2/3 ± (√2/3)i.",
+      "imageAlt": "The quadratic equation is three x squared minus four x plus two equals zero; answer choices are pairs of real or complex values."
+    },
+    "7": {
+      "prompt": "Which expression is equivalent to sin(2π/3)?",
+      "choices": ["sin(4π/3)", "cos(π/6)", "tan(π/3)", "csc(2π/3)"],
+      "explanation": "sin(2π/3) = sin(π/3) = √3/2. By the cofunction identity, cos(π/6) is also √3/2.",
+      "imageAlt": "The question asks for an expression equal to the sine of two pi over three radians."
+    },
+    "8": {
+      "prompt": "Given f⁻¹(x) = ∛(4x + 1), which function represents f(x)?",
+      "choices": ["f(x) = ∛((1/4)x − 1)", "f(x) = (4x + 1)³", "f(x) = (x³ − 1)/4", "f(x) = x³/4 − 1"],
+      "explanation": "Set y = ∛(4x + 1) and interchange x and y: x = ∛(4y + 1). Cubing gives x³ = 4y + 1, so y = (x³ − 1)/4.",
+      "imageAlt": "The inverse is the cube root of the entire quantity four x plus one. The choices contain cube roots or cubics with different shifts and scaling."
+    },
+    "9": {
+      "prompt": "Senior heights are approximately normally distributed with mean 64.7 inches and standard deviation 4.267 inches. What is the probability a randomly selected senior is between 65 and 68 inches tall?",
+      "choices": ["0.085", "0.177", "0.252", "0.271"],
+      "explanation": "Convert the endpoints to z-scores: (65 − 64.7)/4.267 ≈ 0.070 and (68 − 64.7)/4.267 ≈ 0.773. The standard-normal area between those z-scores is approximately 0.252.",
+      "imageAlt": "A normal-distribution question gives mean 64.7 inches, standard deviation 4.267 inches, and asks for the probability between 65 and 68 inches."
+    },
+    "10": {
+      "prompt": "Consider the system (x + 1)² + (y − 4)² = 9 and x = 2. How are the x- and y-values of its solution classified?",
+      "choices": ["one rational and one imaginary", "both rational", "one rational and one irrational", "both irrational"],
+      "explanation": "Substitute x = 2: 3² + (y − 4)² = 9, so (y − 4)² = 0 and y = 4. The sole solution is (2, 4), and both coordinates are rational.",
+      "imageAlt": "The first equation is a circle centered at negative one, four, with radius three; the second equation is x equals two."
+    },
+    "11": {
+      "prompt": "Which of these expressions equal 36x⁴ − 9x²? I: x²(6x + 3)(6x − 3); II: 36(x² − 1/2)(x² + 1/2); III: 9(2x² + x)(2x² − x); IV: 36x²(x − 1/2)(x + 1/2).",
+      "choices": ["I and II only", "I and III only", "I, II, and III only", "I, III, and IV only"],
+      "explanation": "I, III, and IV all expand to 36x⁴ − 9x² by the difference-of-squares identity. II instead expands to 36x⁴ − 9, missing the x² factor in its second term.",
+      "imageAlt": "Four candidate factorizations labeled I through IV are fully transcribed in the accessible prompt and compared in the choices."
+    },
+    "12": {
+      "prompt": "A $1,250 deposit earns 1.86% annual interest, modeled by A(t) = 1250(1.0186)^t for t years. Which expression best models equivalent monthly growth?",
+      "choices": ["1250(0.001550)^t", "1250(0.001550)^(t/12)", "1250(1.001537)^(12t)", "1250(1.001537)^(t/12)"],
+      "explanation": "One monthly multiplier is the twelfth root of the annual multiplier: 1.0186^(1/12) ≈ 1.001537. There are 12t months in t years, so the equivalent model is approximately 1250(1.001537)^(12t).",
+      "imageAlt": "The annual growth model is 1,250 times 1.0186 to the t power. The monthly choices contrast bases 0.001550 and 1.001537, and exponents t, t divided by 12, or 12t."
+    },
+    "13": {
+      "prompt": "Which graph represents a function with remainder zero when divided by x − 4?",
+      "choices": ["Graph 1: rising cubic crossing the x-axis near x = −1, 2, and 4.", "Graph 2: falling cubic crossing the x-axis near x = −4, −1, and 2.", "Graph 3: rising cubic crossing the x-axis near x = −4, −1, and 2.", "Graph 4: rising cubic touching the x-axis near x = −4 and crossing near x = 1."],
+      "explanation": "By the remainder theorem, dividing f(x) by x − 4 leaves remainder f(4). A zero remainder means the graph has an x-intercept at x = 4. Only graph 1 does.",
+      "imageAlt": "Four cubic graphs are labeled 1 through 4. Graph 1 crosses the x-axis at about negative one, two, and four; graph 2 crosses at about negative four, negative one, and two; graph 3 crosses at about negative four, negative one, and two; graph 4 touches near negative four and crosses near one."
+    },
+    "14": {
+      "prompt": "Given a > 0, simplify (∛a · ⁵√(a²)) / √a.",
+      "choices": ["a^(2/13)", "a^(7/30)", "a^(4/15)", "a^(7/3)"],
+      "explanation": "Write each radical as a fractional exponent: a^(1/3) · a^(2/5) / a^(1/2) = a^(1/3 + 2/5 − 1/2) = a^(7/30).",
+      "imageAlt": "The numerator is the cube root of a times the fifth root of a squared; the denominator is the square root of a, and a is positive."
+    },
+    "15": {
+      "prompt": "A sketch of f(x) crosses the x-axis at −a and −b/c, touches the x-axis at d, and falls on both ends, where a, b, c, d > 0. Which function could represent it?",
+      "choices": ["f(x) = −(x + a)(cx + b)(x − d)²", "f(x) = −(x + a)(bx + c)(2x − d)", "f(x) = −(x − a)(cx − b)(x + d)²", "f(x) = −(x − a)(bx − c)(2x + d)"],
+      "explanation": "The graph crosses at the two negative roots −a and −b/c, so it needs factors x + a and cx + b. It only touches at positive d, so x − d has even multiplicity. A negative leading coefficient in this degree-four product makes both ends fall.",
+      "imageAlt": "A quartic-looking graph falls at both ends, crosses the x-axis at labeled negative a and negative b over c, and touches but does not cross at labeled positive d."
+    },
+    "16": {
+      "prompt": "Of 447 surveyed students, the job-status table has columns Below 70%, 70%–79%, 80%–89%, and 90%–100%. The 'Has a Job' counts are 35, 73, 78, 52; the 'Does Not Have a Job' counts are 42, 62, 70, 35. What is P(has a job | average 90%–100%), rounded to the nearest hundredth?",
+      "choices": ["0.11", "0.12", "0.59", "0.60"],
+      "explanation": "Condition on the 90%–100% column, which has 52 + 35 = 87 students. Of these, 52 have a job, so the probability is 52/87 ≈ 0.5977, or 0.60 to the nearest hundredth.",
+      "imageAlt": "Two-row table, with four grade-average columns: Has a Job has counts 35, 73, 78, 52; Does Not Have a Job has counts 42, 62, 70, 35. The column labels and condition are fully stated in the accessible prompt."
+    },
+    "17": {
+      "prompt": "For x ≠ 1/3, simplify (3x³ − 4x² − 17x + 6)/(3x − 1).",
+      "choices": ["(x + 3)(x − 2)", "(x − 3)(x + 2)", "(x − 3)(x − 2)", "x² − x − 6 + 12/(3x − 1)"],
+      "explanation": "The numerator factors as (3x − 1)(x² − x − 6) = (3x − 1)(x − 3)(x + 2). Since x ≠ 1/3, cancel 3x − 1 to obtain (x − 3)(x + 2).",
+      "imageAlt": "The fraction has a cubic numerator three x cubed minus four x squared minus seventeen x plus six, over three x minus one; x cannot equal one third."
+    },
+    "18": {
+      "prompt": "Three students start solving x² − 4x = 9. Max takes square roots and writes √(x² − 4x) = √9, then x − 2x = 3. Gus adds 4 to both sides, giving x² − 4x + 4 = 9 + 4. Rosie factors x(x − 4) = 9, then writes x = 9 and x − 4 = 9. Whose steps are correct?",
+      "choices": ["Max only", "Gus only", "Max and Rosie only", "Gus and Rosie only"],
+      "explanation": "Gus correctly adds 4 to both sides to complete the square. Max incorrectly distributes the square root over a difference, and Rosie misuses the zero-product property even though the product equals 9, not zero.",
+      "imageAlt": "The board shows Max's square-root steps, Gus's addition of four to each side, and Rosie's factoring and two subsequent equations. All steps are transcribed in the accessible prompt."
+    },
+    "19": {
+      "prompt": "A laptop bought for $700 depreciates about 33.3% each year. Which recursive formula gives its value aₙ after n years?",
+      "choices": ["a₀ = 700; aₙ = 0.667aₙ₋₁", "a₀ = 700; aₙ = 0.333aₙ₋₁", "aₙ = 700(0.667)^(n − 1)", "aₙ = 700(0.333)^(n − 1)"],
+      "explanation": "Each year the laptop retains 1 − 0.333 = 0.667 of the previous year's value. Start at purchase with a₀ = 700, then multiply the preceding term by 0.667: aₙ = 0.667aₙ₋₁. Choices 3 and 4 are explicit, not recursive.",
+      "imageAlt": "Two choices give an initial value and recursive rule; two give explicit formulas. The purchase price is 700 dollars and the annual depreciation rate is 33.3 percent."
+    },
+    "20": {
+      "prompt": "A parabola has directrix y = 7 and a focus 6 units vertically away from it. Which point could be the vertex?",
+      "choices": ["(5, 13)", "(2, 1)", "(3, 10)", "(4, 6)"],
+      "explanation": "The vertex lies halfway between the horizontal directrix and the focus. If the focus is 6 units above y = 7, its y-coordinate is 13 and the vertex has y = 10; if below, the vertex has y = 4. Of the listed points, only (3, 10) is possible.",
+      "imageAlt": "A text question gives horizontal directrix y equals seven and a focus six vertical units from it; the choices are four coordinate pairs."
+    },
+    "21": {
+      "prompt": "How many values of x satisfy x/(x − 1) = −|2x − 3| + 5?",
+      "choices": ["1", "2", "3", "0"],
+      "explanation": "For x < 3/2, the equation becomes x/(x − 1) = 2x + 2 and yields (1 ± √17)/4; both meet x < 3/2. For x ≥ 3/2, it becomes x/(x − 1) = 8 − 2x and yields (9 ± √17)/4; only (9 + √17)/4 meets x ≥ 3/2. None equals the excluded value x = 1, so there are three solutions.",
+      "imageAlt": "The left side is x divided by x minus one; the right side is negative absolute value of two x minus three, plus five."
+    },
+    "22": {
+      "prompt": "An angle in standard position ends in Quadrant II and has tan(θ) = −√6. What is cos(θ)?",
+      "choices": ["1/√6", "−√7", "−1/37", "−1/√7"],
+      "explanation": "Take opposite side √6 and adjacent side −1, giving hypotenuse √(6 + 1) = √7. Cosine is adjacent over hypotenuse, so cos(θ) = −1/√7.",
+      "imageAlt": "The tangent is negative square root of six and the angle terminates in Quadrant II. The cosine choices are four signed radicals or fractions."
+    },
+    "23": {
+      "prompt": "Miranda pays $400 for her first year at a gym. The membership cost rises 8% each year after that. What total, to the nearest dollar, will she pay for six years?",
+      "choices": ["635", "2592", "2934", "4320"],
+      "explanation": "The six yearly charges are 400(1.08)^k for k = 0 through 5. Their geometric sum is 400[(1.08)^6 − 1]/0.08 ≈ $2,934.37, or $2,934 to the nearest dollar.",
+      "imageAlt": "A six-year membership starts at 400 dollars in year one and each subsequent yearly charge is eight percent higher."
+    },
+    "24": {
+      "prompt": "A bacteria population p(t), in thousands, grows exponentially over t hours. The graph includes (0.25, 4.76), (0.75, 6.72), and (1.5, 11.31). Which statement is true?",
+      "choices": ["The population can be modeled by p(t) = 2(4)^t.", "The population can be modeled by p(t) = 3.92t + 3.78.", "The population approximately doubled every hour.", "The population approximately doubled every half hour."],
+      "explanation": "The ratio from t = 0.25 to 0.75 is 6.72/4.76 ≈ 1.41 over half an hour, and from 0.75 to 1.5 is 11.31/6.72 ≈ 1.68 over three quarters of an hour. Both are consistent with a factor of about 2 over a full hour: 2^0.5 ≈ 1.41 and 2^0.75 ≈ 1.68. Thus the population approximately doubles each hour.",
+      "imageAlt": "The graph rises exponentially and marks the coordinates (0.25, 4.76), (0.75, 6.72), and (1.5, 11.31), where t is hours and p(t) is thousands of bacteria."
+    }
+  }
+}

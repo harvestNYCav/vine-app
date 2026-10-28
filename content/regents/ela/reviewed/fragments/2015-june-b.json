@@ -1,0 +1,51 @@
+{
+  "sections": [{
+    "slug": "passage-b",
+    "title": "Reading Comprehension · Passage B",
+    "intro": "Read the poem “Machines” and answer questions 11–14. Vocabulary notes follow the poem.",
+    "questionIds": ["english-2015-june-q11", "english-2015-june-q12", "english-2015-june-q13", "english-2015-june-q14"],
+    "passage": {
+      "title": "Machines",
+      "credit": "—Daniel Whitehead Hicky · from Bright Harbor, 1932 · Henry Holt and Company",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number":1,"text":"I hear them grinding, grinding, through the night,"},
+        {"number":2,"text":"The gaunt machines with arteries of fire,"},
+        {"number":3,"text":"Muscled with iron, boweled with smoldering light;"},
+        {"number":4,"text":"I watch them pulsing, swinging, climbing higher,"},
+        {"number":5,"text":"Derrick¹ on derrick, wheel on rhythmic wheel,"},
+        {"number":6,"text":"Swift band on whirring band, lever on lever,"},
+        {"number":7,"text":"Shouting their songs in raucous notes of steel,"},
+        {"number":8,"text":"Blinding a village with light, damming a river."},
+        {"number":9,"text":"I hear them grinding, grinding, hour on hour,"},
+        {"number":10,"text":"Cleaving the night in twain,² shattering the dark"},
+        {"number":11,"text":"With all the rasping torrents of their power,"},
+        {"number":12,"text":"Groaning and belching spark on crimson spark."},
+        {"number":13,"text":"I cannot hear my voice above their cry"},
+        {"number":14,"text":"Shaking the earth and thundering to the sky."},
+        {"number":15,"text":"Slowly the dawn comes up. No motors stir"},
+        {"number":16,"text":"The brightening hilltops as the sunrise flows"},
+        {"number":17,"text":"In yellow tides where daybreak’s lavender"},
+        {"number":18,"text":"Clings to a waiting valley. No derrick throws"},
+        {"number":19,"text":"The sun into the heavens and no pulley"},
+        {"number":20,"text":"Unfolds the wildflowers thirsting for the day;"},
+        {"number":21,"text":"No wheel unravels ferns deep in a gulley;"},
+        {"number":22,"text":"No engine starts the brook upon its way."},
+        {"number":23,"text":"The butterflies drift idly, wing to wing,"},
+        {"number":24,"text":"Knowing no measured rhythm they must follow;"},
+        {"number":25,"text":"No turbine drives the white clouds as they swing"},
+        {"number":26,"text":"Across the cool blue meadows of the swallow."},
+        {"number":27,"text":"With all the feathered silence of a swan"},
+        {"number":28,"text":"They whirr and beat—the engines of the dawn."},
+        {"number":null,"text":"¹ derrick — a large machine used for lifting"},
+        {"number":null,"text":"² twain — two"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id":"english-2015-june-q11","number":11,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The figurative language in lines 2 and 3 contributes to the poem’s meaning by","choices":[{"label":"1","text":"expressing a frustration with the loss of nature"},{"label":"2","text":"establishing a parallel between man and machine"},{"label":"3","text":"affirming the essential human need for machines"},{"label":"4","text":"illustrating the struggle for society’s survival"}],"correct":"2","explanation":"Calling machines “gaunt,” giving them “arteries,” and describing them as “muscled” likens their parts to a human body. This establishes a parallel between people and machines.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-june-q12","number":12,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The description of the machines’ songs as “raucous” (line 7) conveys that the songs are","choices":[{"label":"1","text":"extremely harsh"},{"label":"2","text":"largely misunderstood"},{"label":"3","text":"deeply inspirational"},{"label":"4","text":"highly engaging"}],"correct":"1","explanation":"The machines grind, rasp, groan, and drown out the speaker’s voice. “Raucous” adds to that picture of loud, harsh noise.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-june-q13","number":13,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The poet’s use of “groaning and belching” (line 12) is used to convey","choices":[{"label":"1","text":"his affection for most machines"},{"label":"2","text":"the importance of inventions"},{"label":"3","text":"his desire for progress"},{"label":"4","text":"the difficult work of machines"}],"correct":"4","explanation":"The strained bodily sounds make the machines seem to labor as they throw sparks and grind through the night. They convey effort and difficult work, not affection.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-june-q14","number":14,"sectionSlug":"passage-b","sourcePage":6,"prompt":"A central idea reinforced by lines 27 and 28 is that nature","choices":[{"label":"1","text":"contributes to its own destruction"},{"label":"2","text":"accomplishes its tasks with ease"},{"label":"3","text":"endorses the notion of progress"},{"label":"4","text":"reveals the mysteries of life"}],"correct":"2","explanation":"The dawn’s “engines” work with the “feathered silence of a swan,” contrasting with the noisy, laboring factory machines. Nature brings about morning smoothly and quietly.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

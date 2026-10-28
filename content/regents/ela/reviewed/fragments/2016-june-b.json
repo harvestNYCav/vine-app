@@ -1,0 +1,35 @@
+{
+  "sections":[{"slug":"passage-b","title":"Reading Comprehension · Passage B","intro":"Read “Assembly Line” and answer questions 11–14.","questionIds":["english-2016-june-q11","english-2016-june-q12","english-2016-june-q13","english-2016-june-q14"],"passage":{"title":"Assembly Line","credit":"—Shu Ting · from A Splintered Mirror: Chinese Poetry from the Democracy Movement (1991), translated by Carolyn Kizer, North Point Press","transcriptReviewStatus":"reviewed","lines":[
+    {"number":1,"text":"In time’s assembly line"},
+    {"number":2,"text":"Night presses against night."},
+    {"number":3,"text":"We come off the factory night-shift"},
+    {"number":4,"text":"In line as we march towards home."},
+    {"number":5,"text":"Over our heads in a row"},
+    {"number":6,"text":"The assembly line of stars"},
+    {"number":7,"text":"Stretches across the sky."},
+    {"number":8,"text":"Beside us, little trees"},
+    {"number":9,"text":"Stand numb in assembly lines."},
+    {"number":null,"text":""},
+    {"number":10,"text":"The stars must be exhausted"},
+    {"number":11,"text":"After thousands of years"},
+    {"number":12,"text":"Of journeys which never change."},
+    {"number":13,"text":"The little trees are all sick,"},
+    {"number":14,"text":"Choked on smog and monotony,"},
+    {"number":15,"text":"Stripped of their color and shape."},
+    {"number":16,"text":"It’s not hard to feel for them;"},
+    {"number":17,"text":"We share the same tempo and rhythm."},
+    {"number":null,"text":""},
+    {"number":18,"text":"Yes, I’m numb to my own existence"},
+    {"number":19,"text":"As if, like the trees and stars"},
+    {"number":20,"text":"—perhaps just out of habit"},
+    {"number":21,"text":"—perhaps just out of sorrow,"},
+    {"number":22,"text":"I’m unable to show concern"},
+    {"number":23,"text":"For my own manufactured fate."}
+  ]}}],
+  "questions":[
+    {"id":"english-2016-june-q11","number":11,"sectionSlug":"passage-b","sourcePage":5,"prompt":"In the first stanza, a main idea is strengthened through the poet’s use of","choices":[{"label":"1","text":"repetition"},{"label":"2","text":"simile"},{"label":"3","text":"allusion"},{"label":"4","text":"understatement"}],"correct":"1","explanation":"The repeated “assembly line” links workers, stars, and trees in a shared pattern of mechanical repetition.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-june-q12","number":12,"sectionSlug":"passage-b","sourcePage":5,"prompt":"Line 17 contributes to a central idea by pointing out a parallel between","choices":[{"label":"1","text":"profit and industrialization"},{"label":"2","text":"humans and nature"},{"label":"3","text":"recreation and production"},{"label":"4","text":"sound and motion"}],"correct":"2","explanation":"The speaker says people share the same tempo and rhythm as exhausted stars and sick trees, making a parallel between humans and nature.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-june-q13","number":13,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The structure and language of lines 20 and 21 suggests the narrator’s","choices":[{"label":"1","text":"bitterness"},{"label":"2","text":"determination"},{"label":"3","text":"selfishness"},{"label":"4","text":"uncertainty"}],"correct":"4","explanation":"The two parallel lines begin “perhaps” and offer alternative reasons, habit or sorrow, showing the narrator is unsure why he has become numb.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-june-q14","number":14,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The phrase “manufactured fate” (line 23) emphasizes the narrator’s","choices":[{"label":"1","text":"resignation to life"},{"label":"2","text":"desire for control"},{"label":"3","text":"hope for change"},{"label":"4","text":"rejection of nature"}],"correct":"1","explanation":"The speaker describes his life as if it were produced by an assembly line and says he is numb to it, conveying resignation rather than agency.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

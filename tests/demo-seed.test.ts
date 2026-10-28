@@ -11,6 +11,7 @@ const DEMO_NAMES = ['Maria', 'Carlos', 'Sarah']
 const USER_ID_TABLES = [
   'user_tracks',
   'student_settings',
+  'student_regents_courses',
   'vocab_progress',
   'module_progress',
   'teaching_sessions',
@@ -62,6 +63,11 @@ test('demo seed matches the current schema and safely replaces its own prior rec
     })
     assert.equal(firstUsers.rows.length, 3)
     const firstIds = firstUsers.rows.map(row => String(row.id))
+
+    await db.execute({
+      sql: 'INSERT INTO student_regents_courses (user_id, course, assigned_at) VALUES (?, ?, ?)',
+      args: [firstIds[0], 'algebra-i', Date.now()],
+    })
 
     runSeed(databaseUrl)
 

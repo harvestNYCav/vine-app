@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "c34293fe535536c6ca19e1a9cb1e05b67885df09d37e636853a8ec15300aca10",
+  "questions": {
+    "1": {
+      "prompt": "Evan changes 12x²−7x=6−2(x²−1) to 12x²−7x=6−2x²+2. Which property justifies that step?",
+      "choices": ["subtraction property of equality", "multiplication property of equality", "associative property of multiplication", "distributive property of multiplication over subtraction"],
+      "explanation": "Multiplying −2 by both terms inside x²−1 gives −2x²+2. This is the distributive property.",
+      "imageAlt": "Original and expanded equations are transcribed with squared x and negative signs, along with four named algebraic properties."
+    },
+    "2": {
+      "prompt": "A $400 bond's value V(x), in hundreds of dollars, is 4 at year 0, 5.4 at year 1, 7.29 at year 2, and 9.84 at year 3. Which approximate model and description fit?",
+      "choices": ["V(x)=4(0.65)ˣ and it grows", "V(x)=4(0.65)ˣ and it decays", "V(x)=4(1.35)ˣ and it grows", "V(x)=4(1.35)ˣ and it decays"],
+      "explanation": "Each year's value is about 1.35 times the previous value: 5.4/4=1.35 and 7.29/5.4=1.35. Because the factor exceeds 1, this is exponential growth, V(x)=4(1.35)ˣ.",
+      "imageAlt": "Complete bond-value table for years zero through three is transcribed in hundreds of dollars; four exponential models with growth-or-decay labels are transcribed."
+    },
+    "3": {
+      "prompt": "Alicia buys H half-gallons of ice cream at $3.50 each and P cone packages at $2.50 each. She buys 14 items for $43. Which system models this?",
+      "choices": ["3.50H+2.50P=43; H+P=14", "3.50P+2.50H=43; P+H=14", "3.50H+2.50P=14; H+P=43", "3.50P+2.50H=14; P+H=43"],
+      "explanation": "The cost equation uses each item's own price: 3.50H+2.50P=43. Counting items gives H+P=14.",
+      "imageAlt": "Prices and variables for H half-gallons and P cone packages, fourteen-item and forty-three-dollar totals, and all four complete two-equation systems are transcribed."
+    },
+    "4": {
+      "prompt": "A downward-opening parabola is graphed. Is the relation a function, and which line test explains why?",
+      "choices": ["a function because it passes the horizontal line test", "a function because it passes the vertical line test", "not a function because it fails the horizontal line test", "not a function because it fails the vertical line test"],
+      "explanation": "Every vertical line meets this parabola at at most one point, so each x has one y and the relation is a function. Some horizontal lines meet it twice, but that test concerns one-to-one functions, not whether it is a function.",
+      "imageAlt": "Downward-opening parabola with one y-value at each x but two x-values for many y-values; all four function and line-test statements are transcribed."
+    },
+    "5": {
+      "prompt": "Ian adds $10 to a jar every month. Which function type best models the total amount after a given number of months?",
+      "choices": ["linear", "exponential", "quadratic", "square root"],
+      "explanation": "A fixed $10 is added for each equal one-month step, so the total changes at a constant rate and is linear.",
+      "imageAlt": "Monthly fixed ten-dollar deposits and four candidate function types are transcribed."
+    },
+    "6": {
+      "prompt": "Which ordered pair is not a solution of y=x³−x?",
+      "choices": ["(−4,−60)", "(−3,−24)", "(−2,−6)", "(−1,−2)"],
+      "explanation": "For x=−1, x³−x=−1−(−1)=0, not −2. The other pairs give −60, −24, and −6 as listed.",
+      "imageAlt": "Cubic equation y equals x cubed minus x and four negative-coordinate pairs are transcribed."
+    },
+    "7": {
+      "prompt": "Emma's lemonade profit was P(c)=0.50c−9.96 dollars for c cups. She raises the selling price by $0.25 per cup without changing expenses. Which new profit function applies?",
+      "choices": ["P(c)=0.25c−9.96", "P(c)=0.50c−9.71", "P(c)=0.50c−10.21", "P(c)=0.75c−9.96"],
+      "explanation": "The per-cup revenue rises from $0.50 to $0.75, while the fixed $9.96 cost stays unchanged. The new profit is 0.75c−9.96.",
+      "imageAlt": "Original fifty-cents-per-cup profit model with fixed cost nine dollars and ninety-six cents, quarter-dollar price increase, and four complete new equations are transcribed."
+    },
+    "8": {
+      "prompt": "Is √576·√684 rational or irrational, and why?",
+      "choices": ["irrational because both factors are irrational", "rational because both factors are rational", "irrational because one factor is irrational", "rational because one factor is rational"],
+      "explanation": "√576=24 is rational, while 684 is not a perfect square, so √684 is irrational. A nonzero rational number times this irrational radical remains irrational.",
+      "imageAlt": "Product of square roots of five hundred seventy-six and six hundred eighty-four, with all four rationality-and-reason choices transcribed."
+    },
+    "9": {
+      "prompt": "Which expression is equivalent to y⁴−100?",
+      "choices": ["(y²−10)²", "(y²−50)²", "(y²+10)(y²−10)", "(y²+50)(y²−50)"],
+      "explanation": "Treat y⁴−100 as (y²)²−10². The difference-of-squares identity gives (y²+10)(y²−10).",
+      "imageAlt": "Fourth power of y minus one hundred and four factored or squared expressions are transcribed with squared exponents."
+    },
+    "10": {
+      "prompt": "Where do y=x²−3 and y=3x−4 intersect approximately?",
+      "choices": ["(0.38,−2.85) only", "(2.62,3.85) only", "(0.38,−2.85) and (2.62,3.85)", "(0.38,−2.85) and (3.85,2.62)"],
+      "explanation": "Equate the expressions: x²−3=3x−4, so x²−3x+1=0. The roots are (3±√5)/2≈0.38 and 2.62; substituting into either equation gives y≈−2.85 and 3.85.",
+      "imageAlt": "Parabola y equals x squared minus three and line y equals three x minus four, with four choices containing one or two approximate ordered pairs."
+    },
+    "11": {
+      "prompt": "A toy rocket's height is h(t)=−4.9t²+50t+2 meters t seconds after launch. What was its initial height?",
+      "choices": ["0", "2", "4.9", "50"],
+      "explanation": "Initial height is height at t=0. Substitution gives h(0)=2 meters.",
+      "imageAlt": "Quadratic height expression negative 4.9 t squared plus fifty t plus two, time measured from launch, and four possible initial heights are transcribed."
+    },
+    "12": {
+      "prompt": "For f(x)=2x²−8 with domain {−2,3,5}, what is the range?",
+      "choices": ["{−16,4,92}", "{−16,10,42}", "{0,10,42}", "{0,4,92}"],
+      "explanation": "Evaluate each input: f(−2)=2·4−8=0, f(3)=2·9−8=10, and f(5)=2·25−8=42. The range is {0,10,42}.",
+      "imageAlt": "Quadratic two x squared minus eight, domain negative two, three, and five, and four finite-set range choices are transcribed."
+    },
+    "13": {
+      "prompt": "What polynomial is twice the sum of 4x²−x+1 and −6x²+x−4?",
+      "choices": ["−2x²−3", "−4x²−3", "−4x²−6", "−2x²+x−5"],
+      "explanation": "The sum is (4−6)x²+(−1+1)x+(1−4)=−2x²−3. Twice that is −4x²−6.",
+      "imageAlt": "Both full quadratics and all four candidate polynomials are transcribed with coefficients, exponents, and negative signs."
+    },
+    "14": {
+      "prompt": "Solve 3(x−4)²=27.",
+      "choices": ["1 and 7", "−1 and −7", "4±√24", "−4±√24"],
+      "explanation": "Divide by 3: (x−4)²=9. Thus x−4=±3, giving x=1 or x=7.",
+      "imageAlt": "Equation three times quantity x minus four squared equals twenty-seven; all four candidate solution forms are transcribed."
+    },
+    "15": {
+      "prompt": "For equations A: 5x+9y=12 and B: 4x−3y=8, which proposed operation eliminates a variable?",
+      "choices": ["multiply A by −1/3, then add B", "multiply B by 3, then add A", "multiply A by 2 and B by −6, then add", "multiply B by 5 and A by 4, then add"],
+      "explanation": "Multiplying B by 3 changes its y-term to −9y. Adding A's +9y cancels y, leaving an equation in x only.",
+      "imageAlt": "Both complete linear equations and all four multiplier-and-addition procedures are transcribed, including the negative one-third and negative six multipliers."
+    },
+    "16": {
+      "prompt": "Fifteen candy-bar sales counts, in order, are 0,35,38,41,43,45,50,53,53,55,68,68,68,72,120. Which statement is false?",
+      "choices": ["The mode is the best measure of central tendency", "The data have two outliers", "The median is 53", "The range is 120"],
+      "explanation": "The median is the eighth value, 53, and the range is 120−0=120. Using quartiles Q1=41 and Q3=68, the fences are 0.5 and 108.5, making 0 and 120 outliers. Because of these extremes, the median is more representative than the mode, so the mode claim is false.",
+      "imageAlt": "All fifteen sorted sales values are transcribed, including zero and one hundred twenty; four claims about mode, outliers, median, and range are transcribed."
+    },
+    "17": {
+      "prompt": "For integers x in {−2,−1,0,1,2}, which values solve −2(x−5)<10?",
+      "choices": ["0,1,2", "1,2", "−2,−1,0", "−2,−1"],
+      "explanation": "Expand to −2x+10<10, so −2x<0. Dividing by −2 reverses the sign: x>0. From the given integer set, that leaves 1 and 2.",
+      "imageAlt": "Restricted integer set from negative two through two inclusive, strict inequality negative two times quantity x minus five less than ten, and four possible subsets are transcribed."
+    },
+    "18": {
+      "prompt": "A square-design sequence contains 3 squares in design 1, 5 in design 2, 7 in design 3, and 9 in design 4. Which recursive formula represents its count?",
+      "choices": ["y=2x+1", "y=2x+3", "a₁=3; aₙ=aₙ₋₁+2", "a₁=1; aₙ=aₙ₋₁+2"],
+      "explanation": "The first design has 3 squares and each new design adds 2. A recursive rule must state a₁=3 and aₙ=aₙ₋₁+2.",
+      "imageAlt": "Four interlocking-diamond designs contain respectively three, five, seven, and nine squares; two explicit and two recursive formula choices are transcribed."
+    },
+    "19": {
+      "prompt": "Shift f(x)=2x²−1 left by 3 units. What is g(x)?",
+      "choices": ["2(x−3)²−1", "2(x+3)²−1", "2x²+2", "2x²−4"],
+      "explanation": "A shift left by 3 replaces x with x+3 in the original function. Thus g(x)=2(x+3)²−1.",
+      "imageAlt": "Original quadratic two x squared minus one, left-three-unit instruction, and four transformed expressions are transcribed."
+    },
+    "20": {
+      "prompt": "Compare solutions of y=−(1/2)x+1 and y=x−5 with solutions of y>−(1/2)x+1 and y<x−5. Which system has more solutions?",
+      "choices": ["both have infinitely many", "the equation system has more", "the inequality system has more", "both have only one"],
+      "explanation": "The two distinct lines intersect once, so the equation system has one ordered-pair solution. The strict inequalities overlap whenever x>4, with infinitely many y-values between the lines, so the inequality system has more.",
+      "imageAlt": "Two complete linear equations and their corresponding strict inequalities are transcribed with one-half slopes and signs; four comparisons of solution counts are transcribed."
+    },
+    "21": {
+      "prompt": "An inherited account is modeled by A(t)=5000(1.013)^(t+25). Which equivalent function uses exponent rules?",
+      "choices": ["5000[(1.013ᵗ)]²⁵", "5000[(1.013)ᵗ+(1.013)²⁵]", "(5000)ᵗ(1.013)²⁵", "5000(1.013)ᵗ(1.013)²⁵"],
+      "explanation": "The exponent t+25 is a sum, so a^(t+25)=aᵗa²⁵. Keep the 5000 coefficient unchanged to obtain 5000(1.013)ᵗ(1.013)²⁵.",
+      "imageAlt": "Account model five thousand times 1.013 to exponent t plus twenty-five, with four proposed equations preserving or altering the coefficient, addition, and exponents."
+    },
+    "22": {
+      "prompt": "Solve (2/3)((1/4)x−2)=(1/5)((4/3)x−1).",
+      "choices": ["−10", "−2", "−9.0909…", "−11.333…"],
+      "explanation": "Multiply by 30 to clear denominators: 5x−40=8x−6. Therefore −34=3x and x=−34/3=−11.333….",
+      "imageAlt": "Both nested fractional expressions are transcribed with numerators and denominators: two-thirds times one-fourth x minus two, equals one-fifth times four-thirds x minus one. Decimal distractors with repeating bars are rendered as ellipses."
+    },
+    "23": {
+      "prompt": "Which quadratic has the greatest maximum over all real x?",
+      "choices": ["f(x)=−x²+2x+4", "Table k: (−1,−1),(0,3),(1,5),(2,5),(3,3),(4,−1)", "g(x)=−(x−5)²+5", "Table h: (−2,−9),(−1,−3),(0,1),(1,3),(2,3),(3,1)"],
+      "explanation": "f and g each have maximum 5. The k table has constant second differences −2, so k(x)=−x²+3x+3 and its vertex is at x=1.5, where k=5.25. The h table similarly gives h(x)=−x²+3x+1, maximum 3.25. Thus k has the largest maximum, even though its vertex lies between listed x-values.",
+      "imageAlt": "All four quadratic representations are transcribed, including both full six-row tables. Table k's listed values peak at five for x one and two, and table h's listed values peak at three for x one and two; the question asks maximum over real numbers, not only listed rows."
+    },
+    "24": {
+      "prompt": "A line graph gives voting percentages in presidential elections from 1996 to 2012 for age groups 18–29, 30–44, 45–64, and 65+. Which statement does not correctly interpret the graph?",
+      "choices": ["For ages 18–29, the largest increase was 2000–2004", "From 1996 to 2012, only two groups had positive average rates of change", "About 70% of people 45 and older voted in 2004", "All shown voting rates stayed between 35% and 75%"],
+      "explanation": "The endpoints show three groups increased from 1996 to 2012: ages 18–29 rose 39.6% to 45.0%, ages 30–44 rose 56.9% to 59.5%, and ages 65+ rose 69.1% to 72.0%. Only ages 45–64 fell slightly, from 68.2% to 67.9%. Therefore the claim that only two groups had positive average change is incorrect.",
+      "imageAlt": "Line graph for elections 1996, 2000, 2004, 2008, 2012 has four age-group lines. Endpoints: ages 18–29 39.6 to 45.0 percent; 30–44 56.9 to 59.5; 45–64 68.2 to 67.9; 65 and older 69.1 to 72.0. Younger group rises most from 2000 to 2004; both older groups are near 70 percent in 2004. All four interpretation statements are transcribed."
+    }
+  }
+}

@@ -13,6 +13,8 @@ import type { Track } from '@/types'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import Link from 'next/link'
+import RegentsProgressCards from '@/components/regents/RegentsProgressCards'
+import { getStudentRegentsCourses } from '@/lib/regents-courses'
 
 const SESSION_LABELS: Record<string, string> = {
   practice_5: '5 min', practice_10: '10 min',
@@ -50,6 +52,7 @@ export default async function ProgressPage({
   const view = resolution.view
   const readOnly = view.readOnly
   const tracks = await getStudentTracks(db, view.studentId)
+  const regentsCourses = await getStudentRegentsCourses(db, view.studentId)
   if (tracks.length === 0) {
     if (!readOnly) redirect('/tracks')
     return (
@@ -135,7 +138,11 @@ export default async function ProgressPage({
           </div>
         </div>
 
-        <div className="mb-6">
+        {settings.highSchoolGradeLevel && (
+          <RegentsProgressCards courses={regentsCourses} subject="math" progress={examProgress} readOnly={readOnly} />
+        )}
+
+        {!settings.highSchoolGradeLevel && <div className="mb-6">
           <h3 className="font-bold text-gray-700">{isSpanish ? 'Lecciones del examen de Nueva York' : 'New York Exam Lessons'}</h3>
           <p className="mb-3 mt-1 text-xs text-gray-500">
             {isSpanish
@@ -195,7 +202,7 @@ export default async function ProgressPage({
               )
             }))}
           </div>
-        </div>
+        </div>}
 
         {/* Skill mastery */}
         <div className="mb-6">
@@ -338,7 +345,11 @@ export default async function ProgressPage({
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA progress' : 'ESL progress'}</p>
 
-      {currentMode === 'ela' && (
+      {currentMode === 'ela' && settings.highSchoolGradeLevel && (
+        <RegentsProgressCards courses={regentsCourses} subject="ela" progress={elaExamProgress} readOnly={readOnly} />
+      )}
+
+      {currentMode === 'ela' && !settings.highSchoolGradeLevel && (
         <section className="mb-6">
           <h2 className="font-bold text-gray-700">New York ELA exam lessons</h2>
           <p className="mb-3 mt-1 text-xs text-gray-500">Best scores from released multiple-choice practice for your assigned grade.</p>

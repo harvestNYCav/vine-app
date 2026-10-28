@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "236bb928c5bbeb0528c11d9f8352d138c1ed796a23af73e6664a28a12864698f",
+  "questions": {
+    "1": {
+      "prompt": "A rectangular postcard is folded in half lengthwise and rotated continuously about its folded edge. Which solid is generated?",
+      "choices": ["cone", "pyramid", "cylinder", "rectangular prism"],
+      "explanation": "The folded postcard is still a rectangle. As it rotates about one side, every point at a fixed distance from that side traces a circle. The full rotation sweeps out a cylinder.",
+      "imageAlt": "The four answer choices are unlabeled drawings: choice 1 is a cone, choice 2 a pyramid, choice 3 a cylinder, and choice 4 a rectangular prism. These shapes are named in the accessible choices."
+    },
+    "2": {
+      "prompt": "A 3-inch line segment is dilated by scale factor 6 about its midpoint. What is the image length?",
+      "choices": ["9 inches", "2 inches", "15 inches", "18 inches"],
+      "explanation": "A dilation multiplies every length by its scale factor, regardless of its center. The image length is 3·6 = 18 inches.",
+      "imageAlt": "Text-only dilation question; original length, scale factor, and all four options are in accessible text."
+    },
+    "3": {
+      "prompt": "Kevin starts with x²+4x = −(y²−20). His steps are: 1, x²+4x = −y²+20; 2, x²+4x+4 = −y²+20−4; 3, (x+2)² = −y²+20−4; 4, (x+2)²+y² = 16. In which step did he first make an error?",
+      "choices": ["Step 1", "Step 2", "Step 3", "Step 4"],
+      "explanation": "Step 1 correctly distributes the negative sign. To complete the square, adding 4 on the left requires adding 4 on the right, but Step 2 subtracts 4. The correct equation after that step would have −y²+24 on the right.",
+      "imageAlt": "The printed worked solution is fully transcribed in the prompt, including the incorrect subtraction of 4 in Step 2."
+    },
+    "4": {
+      "prompt": "Which transformation maps segment OA to an image parallel to OA?",
+      "choices": ["translation 2 units down", "reflection across the x-axis", "reflection across the y-axis", "90° clockwise rotation about the origin"],
+      "explanation": "A translation moves every point by the same vector and preserves a segment's direction and slope. The reflected and quarter-turned images of this slanted segment have different slopes.",
+      "imageAlt": "Coordinate axes show O at the origin and A above and right of O, so OA slants upward to the right. The possible transformations are fully named in the choices."
+    },
+    "5": {
+      "prompt": "Using the four pairs of triangles described in the choices, which pair cannot be proved similar from the given marks and measurements?",
+      "choices": ["Right triangles ABC and RST have corresponding leg lengths 12 and 9 versus 4 and 3.", "Triangles CDE and LMN have two pairs of corresponding marked congruent angles.", "Triangles FGH and IJK have angle G ≅ angle J; GH = 16, FH = 32, JK = 2, and IK = 8.", "Triangles XYZ and RST have two corresponding side pairs marked congruent and the included angles marked congruent."],
+      "explanation": "Pair 1 is similar by proportional right-triangle legs, pair 2 by AA, and pair 4 by SAS with corresponding marked sides and the included angle. Pair 3 gives two side measurements in each triangle and one marked angle that is not between both measured sides. That SSA information does not establish triangle similarity.",
+      "imageAlt": "Four graphical answer sets are transcribed in the choices. In set 3, G and J are marked congruent, while one triangle labels GH 16 and FH 32 and the other labels JK 2 and IK 8; those measurements do not establish proportional triangles."
+    },
+    "6": {
+      "prompt": "A cone of diameter 8 cm and altitude 8 cm is cut from a wooden cube with edge 8.5 cm. Which expression gives the remaining volume?",
+      "choices": ["(8.5)³−π(8)²(8)", "(8.5)³−π(4)²(8)", "(8.5)³−(1/3)π(8)²(8)", "(8.5)³−(1/3)π(4)²(8)"],
+      "explanation": "Subtract the cone's volume from the cube's. The cone's radius is half its 8-cm diameter, or 4 cm, and its volume is (1/3)πr²h = (1/3)π(4)²(8).",
+      "imageAlt": "Text-only solid-volume question; all dimensions and the four algebraic expressions, including cube powers and the cone factor 1/3, are in accessible text."
+    },
+    "7": {
+      "prompt": "Two right triangles must be congruent if which condition holds?",
+      "choices": ["One acute angle in each is congruent.", "Their hypotenuses have equal lengths.", "Their corresponding legs are congruent.", "Their areas are equal."],
+      "explanation": "Both right angles are equal. If the two corresponding leg pairs are also equal, the right triangles are congruent by SAS (the right angle lies between the legs). A single angle, hypotenuse, or area alone does not determine a right triangle.",
+      "imageAlt": "Text-only right-triangle congruence question; every condition is in accessible text."
+    },
+    "8": {
+      "prompt": "Triangle ABC is graphed with A(2,3), B(−2,2), C(−1,−2), and A′B′C′ with A′(−6,4), B′(−4,−4), C′(4,−2). Which sequence maps ABC onto A′B′C′?",
+      "choices": ["reflection and translation", "rotation and reflection", "translation and dilation", "dilation and rotation"],
+      "explanation": "The image sides are twice the originals, so a dilation is needed. Dilate about the origin by 2 and then rotate 90° counterclockwise: A(2,3)→(4,6)→(−6,4), B(−2,2)→(−4,4)→(−4,−4), and C(−1,−2)→(−2,−4)→(4,−2).",
+      "imageAlt": "Coordinate graph shows original triangle A(2,3), B(−2,2), C(−1,−2) and larger rotated image A′(−6,4), B′(−4,−4), C′(4,−2). All six coordinates are transcribed in the prompt."
+    },
+    "9": {
+      "prompt": "In parallelogram ABCD, diagonals AC and BD meet at E. Which statement does not prove ABCD is a rhombus?",
+      "choices": ["AC ≅ DB", "AB ≅ BC", "AC ⟂ DB", "AC bisects angle DCB"],
+      "explanation": "Congruent diagonals are a property of a rectangle, which need not have four equal sides. The other conditions force a parallelogram to be a rhombus: adjacent sides equal, perpendicular diagonals, or a diagonal bisecting a vertex angle.",
+      "imageAlt": "Text-only parallelogram-property question; all four geometric conditions are in accessible text."
+    },
+    "10": {
+      "prompt": "In circle O, radii OB and OC and chords AB, BC, AC are drawn. Which statement must always be true?",
+      "choices": ["angle BAC ≅ angle BOC", "angle BAC = (1/2) angle BOC", "Triangles BAC and BOC are both isosceles.", "Area of triangle BAC is twice area of triangle BOC."],
+      "explanation": "The inscribed angle BAC and central angle BOC intercept the same arc BC. By the inscribed-angle theorem, the inscribed angle measures half the central angle.",
+      "imageAlt": "Circle centered O has A on the left arc, B upper right, C lower right. Radii OB and OC form central angle BOC; chords AB and AC form inscribed angle BAC, and chord BC connects the two right-hand points."
+    },
+    "11": {
+      "prompt": "A 20-foot support post leans against a wall at a 70° angle with the ground. How high does it reach, to the nearest tenth of a foot?",
+      "choices": ["6.8", "6.9", "18.7", "18.8"],
+      "explanation": "The post is the hypotenuse and the wall height is opposite the 70° ground angle. Thus height = 20 sin 70° ≈ 18.7939, which rounds to 18.8 feet.",
+      "imageAlt": "Text-only right-triangle word problem; the 20-foot length, 70° ground angle, and all height options are in accessible text."
+    },
+    "12": {
+      "prompt": "Segment NY has endpoints N(−11,5) and Y(5,−7). Which equation is its perpendicular bisector?",
+      "choices": ["y+1 = (4/3)(x+3)", "y+1 = −(3/4)(x+3)", "y−6 = (4/3)(x−8)", "y−6 = −(3/4)(x−8)"],
+      "explanation": "The midpoint is ((−11+5)/2,(5−7)/2) = (−3,−1). The segment's slope is (−7−5)/(5−(−11)) = −3/4, so a perpendicular line has slope 4/3. Through (−3,−1), it is y+1 = (4/3)(x+3).",
+      "imageAlt": "Text-only coordinate-bisector question; endpoints and every equation are in accessible text."
+    },
+    "13": {
+      "prompt": "In triangle RST, altitude SU of length h meets RT at U. If UT = 12 and RT = 42, what h makes angle RST a right angle?",
+      "choices": ["6√3", "6√10", "6√14", "6√35"],
+      "explanation": "If angle S is right, RT is the hypotenuse and the altitude theorem gives h² = RU·UT. RU = 42−12 = 30, so h² = 30·12 = 360 and h = 6√10.",
+      "imageAlt": "Triangle RST has horizontal base RT, R left and T right, with S above and altitude SU straight down to U between R and T. SU is h, UT is 12, and full RT is 42."
+    },
+    "14": {
+      "prompt": "Triangle ABC has A(4,5), B(2,1), C(7,3). What is the slope of the altitude from A to BC?",
+      "choices": ["2/5", "5/2", "−1/2", "−5/2"],
+      "explanation": "BC has slope (3−1)/(7−2) = 2/5. An altitude to BC is perpendicular, so its slope is the negative reciprocal, −5/2.",
+      "imageAlt": "Coordinate graph plots A(4,5), B(2,1), and C(7,3), connected as a triangle. The altitude from A would be perpendicular to the rising segment BC."
+    },
+    "15": {
+      "prompt": "In the diagram, right triangles ERM and JTM are similar, with E corresponding to J, R to T, and M to M. Which trigonometric statement is always true?",
+      "choices": ["cos J = RM/RE", "cos R = JM/JT", "tan T = RM/EM", "tan E = TM/JM"],
+      "explanation": "In triangle ERM, tan E = opposite/adjacent = RM/EM. In similar triangle JTM, angle J corresponds to E, so tan E = tan J = TM/JM. Only the fourth ratio uses the matching opposite and adjacent sides.",
+      "imageAlt": "Horizontal J-M-E has M between J and E. Vertical M-T-R has T between M and R and is perpendicular to J-M-E. Segments J-T and E-R form two right triangles, JTM on the left and ERM on the right; their similarity is given."
+    },
+    "16": {
+      "prompt": "Which transformation proves graphed rectangle ABCD congruent to rectangle KLMN?",
+      "choices": ["rotation", "translation", "reflection across the x-axis", "reflection across the y-axis"],
+      "explanation": "Each corresponding vertex has the same x-coordinate and opposite y-coordinate: A maps to K, B to L, C to M, and D to N. That is reflection across the x-axis, which preserves size and shape.",
+      "imageAlt": "Coordinate grid shows tilted rectangle ABCD and matching tilted rectangle KLMN mirrored above and below the horizontal x-axis. Pairs A-K, B-L, C-M, D-N have equal horizontal positions and opposite vertical positions."
+    },
+    "17": {
+      "prompt": "Segments DB and AF cross at C; AD and the straight line F-B-E are drawn. AC = 6, DC = 4, FC = 15, angle D = 65°, and angle CBE = 115°. What is CB?",
+      "choices": ["10", "12", "17", "22.5"],
+      "explanation": "Because F, B, E are collinear, angle CBF = 180°−115° = 65°, equal to angle D. The angles at C are vertical, so triangles ADC and FBC are similar. Corresponding sides give DC/CB = AC/FC = 6/15, hence 4/CB = 6/15 and CB = 10.",
+      "imageAlt": "A-D is a vertical segment on the left, and F-B-E is vertical on the right with B between F and E. Diagonals A-F and D-B cross at C. AC is 6, DC is 4, FC is 15, angle at D is 65°, and exterior angle CBE below B is 115°."
+    },
+    "18": {
+      "prompt": "Seawater contains about 1.2 ounces of salt per liter. How many gallons of seawater, to the nearest tenth, contain 1 pound of salt?",
+      "choices": ["3.3", "3.5", "4.7", "13.3"],
+      "explanation": "One pound is 16 ounces, requiring 16/1.2 ≈ 13.333 liters. At about 3.785 liters per gallon, this is 13.333/3.785 ≈ 3.5 gallons to the nearest tenth.",
+      "imageAlt": "Text-only seawater conversion problem; salt concentration, target salt mass, and all gallon options are in accessible text."
+    },
+    "19": {
+      "prompt": "EA is the perpendicular bisector of ZT, with ZE and TE drawn. Which conclusion cannot be proved?",
+      "choices": ["EA bisects angle ZET.", "Triangle EZT is equilateral.", "EA is a median of triangle EZT.", "Angle Z ≅ angle T."],
+      "explanation": "E lies on the perpendicular bisector of ZT, so EZ = ET and triangle EZT is isosceles. That proves equal base angles, and its line to midpoint A is both a median and angle bisector. Nothing establishes ZT = EZ = ET, so it need not be equilateral.",
+      "imageAlt": "Triangle E-Z-T has E at top, horizontal base Z-T, and A at the midpoint of Z-T. Segment E-A descends vertically and perpendicularly to the base. The side lengths are not marked equal."
+    },
+    "20": {
+      "prompt": "A full hemispherical water tank has inside diameter 10 ft. Water weighs 62.4 lb per cubic foot. What is the water's weight to the nearest pound?",
+      "choices": ["16,336", "32,673", "130,690", "261,381"],
+      "explanation": "The radius is 5 ft. Hemisphere volume is (2/3)πr³ = (2/3)π(5³) ≈ 261.8 ft³. Multiplying by 62.4 lb/ft³ gives about 16,336 lb.",
+      "imageAlt": "Text-only hemisphere word problem; inside diameter, water density, and weight options are in accessible text."
+    },
+    "21": {
+      "prompt": "In triangle ABC, D lies on AB and E on CB, with DE ∥ AC. If AD = 24, DB = 12, and DE = 4, what is AC?",
+      "choices": ["8", "12", "16", "72"],
+      "explanation": "Since DE ∥ AC, triangles DBE and ABC are similar. AB = AD+DB = 36, so DE/AC = DB/AB = 12/36 = 1/3. Thus AC = 3·4 = 12.",
+      "imageAlt": "Triangle A-B-C has A upper left, C lower left, and B far right. D lies on slanted AB near B; E lies on horizontal CB below D. Segment DE is parallel to AC. AD is 24, DB is 12, and DE is 4."
+    },
+    "22": {
+      "prompt": "Triangle RST has vertices R(−2,7), S(−5,1), and T(7,−5) on a coordinate grid. What is its area in square units?",
+      "choices": ["9√3+15", "9√5+15", "45", "90"],
+      "explanation": "Use the shoelace formula: area = (1/2)|−2(1−(−5))−5((−5)−7)+7(7−1)| = (1/2)|−12+60+42| = 45 square units.",
+      "imageAlt": "Coordinate graph plots R(−2,7) above-left of the origin, S(−5,1) just above-left, and T(7,−5) below-right, joined as triangle RST. All vertex coordinates are transcribed in the prompt."
+    },
+    "23": {
+      "prompt": "Chord AB of circle O has A(3,3), B(3,−7), and its midpoint is 2 units from the circle's center. Which could be the circle's equation?",
+      "choices": ["(x−1)²+(y+2)² = 29", "(x+5)²+(y−2)² = 29", "(x−1)²+(y−2)² = 25", "(x−5)²+(y+2)² = 25"],
+      "explanation": "AB is vertical with midpoint (3,−2), so the center lies horizontally 2 units away at (1,−2) or (5,−2). Half the chord is 5, giving radius² = 5²+2² = 29. Choice 1 has center (1,−2) and radius² 29.",
+      "imageAlt": "Coordinate graph shows vertical chord AB at x = 3, from A(3,3) to B(3,−7). Its midpoint is (3,−2), and the circle's center must be 2 units horizontally from that midpoint. All equation options are transcribed in accessible text."
+    },
+    "24": {
+      "prompt": "What is the area of a circle sector with radius 8 inches and central angle 60°?",
+      "choices": ["8π/3", "16π/3", "32π/3", "64π/3"],
+      "explanation": "The sector is 60/360 = 1/6 of the circle. Its area is (1/6)π(8²) = 64π/6 = 32π/3 square inches.",
+      "imageAlt": "Text-only sector-area question; radius, central angle, and all fractional-π options are in accessible text."
+    }
+  }
+}

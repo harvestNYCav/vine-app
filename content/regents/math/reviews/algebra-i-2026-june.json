@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "01a277f5baa931069ffb94b81e62d108f26383ff06578384575c1dea708391c5",
+  "questions": {
+    "1": {
+      "prompt": "What is the 20th term of the arithmetic sequence 4, 7, 10, 13, ...?",
+      "choices": ["61", "64", "79", "83"],
+      "explanation": "The sequence starts at 4 and increases by 3 each time. Its 20th term is 4 + (20 − 1) × 3 = 4 + 57 = 61.",
+      "imageAlt": "Facsimile of an arithmetic-sequence question; the sequence and all four answer choices are fully reproduced in accessible text."
+    },
+    "2": {
+      "prompt": "What is the value of x in the equation 0.5x − 4 = 8 − x?",
+      "choices": ["6", "8", "18", "24"],
+      "explanation": "Add x to both sides and add 4 to both sides to get 1.5x = 12. Dividing by 1.5 gives x = 8.",
+      "imageAlt": "Facsimile of a linear-equation question; the decimal coefficient, subtraction signs, and choices are fully reproduced in accessible text."
+    },
+    "3": {
+      "prompt": "The binomial 4x² − 25 is equivalent to which expression?",
+      "choices": ["4(x + 5)(x − 5)", "4(x − 5)(x − 5)", "(2x − 5)(2x + 5)", "(2x − 5)(2x − 5)"],
+      "explanation": "This is a difference of squares: 4x² − 25 = (2x)² − 5². Using a² − b² = (a − b)(a + b) gives (2x − 5)(2x + 5).",
+      "imageAlt": "Facsimile of a difference-of-squares question; exponents, signs, factors, and all four choices are fully reproduced in accessible text."
+    },
+    "4": {
+      "prompt": "A function is defined by the set of points {(3, −4), (−4, 3), (1, 1), (x, 2)}. What is a possible value for x?",
+      "choices": ["1", "2", "3", "−4"],
+      "explanation": "A function cannot assign two different outputs to the same input. The inputs 3, −4, and 1 are already used with outputs other than 2, so x must be a new input. Among the choices, only 2 works.",
+      "imageAlt": "Facsimile of a set-of-ordered-pairs question; all coordinates, including negative signs, are fully reproduced in accessible text."
+    },
+    "5": {
+      "prompt": "The expression (4xy²)³ is equivalent to which expression?",
+      "choices": ["12x³y⁶", "12x³y⁸", "64x³y⁶", "64x³y⁸"],
+      "explanation": "Apply the exponent to every factor: 4³ = 64, x³ remains x³, and (y²)³ = y⁶. Therefore (4xy²)³ = 64x³y⁶.",
+      "imageAlt": "Facsimile of an exponent-rules question; all exponents and four expression choices are fully reproduced in accessible text."
+    },
+    "6": {
+      "prompt": "Allison was asked to write a third-degree trinomial with a leading coefficient of 4 and a constant term of 5. Which expression satisfies these conditions?",
+      "choices": ["4x³ − 5", "3x⁴ + 5", "4x³ + 8x² + 5", "3x⁴ + 2x³ − 5"],
+      "explanation": "A trinomial has three terms, third degree means its highest exponent is 3, the x³ coefficient must be 4, and the constant must be +5. Only 4x³ + 8x² + 5 meets all four conditions.",
+      "imageAlt": "Facsimile of a polynomial-classification question; all coefficients, exponents, signs, and choices are fully reproduced in accessible text."
+    },
+    "7": {
+      "prompt": "Given the sequence 128, 64, 32, ..., which formula could be used to find the nth term of this sequence?",
+      "choices": ["aₙ = 128(−2)ⁿ⁻¹", "aₙ = 128(1/2)ⁿ⁻¹", "aₙ = 128 − 2(n − 1)", "aₙ = 128 + (1/2)(n − 1)"],
+      "explanation": "Each term is half the preceding term, so this is a geometric sequence with first term 128 and common ratio 1/2. The nth-term formula is aₙ = 128(1/2)ⁿ⁻¹.",
+      "imageAlt": "Facsimile of a geometric-sequence question; the one-half fraction and n-minus-one exponents are fully represented in accessible choices."
+    },
+    "8": {
+      "prompt": "When a bicyclist increases the pressure on the brakes, the speed of the bicycle decreases. This relationship can best be described as what?",
+      "choices": ["negative correlation and causal relationship", "negative correlation and non-causal relationship", "positive correlation and causal relationship", "positive correlation and non-causal relationship"],
+      "explanation": "As brake pressure rises, speed falls, so the variables move in opposite directions: a negative relationship. Braking directly slows the bicycle, making the relationship causal.",
+      "imageAlt": "Facsimile of a correlation-and-causation question; the full scenario and all four category choices are reproduced in accessible text."
+    },
+    "9": {
+      "prompt": "A garden club plans to plant 40 flowering plants. Daffodils cost $4 each and tulips cost $5 each; all prices include tax. The club has $170 to spend. Which equation finds the number of daffodils, d, that the club purchases?",
+      "choices": ["4d + 5(170 − d) = 40", "4d + 5(40 − d) = 170", "5d + 4(170 − d) = 40", "5d + 4(40 − d) = 170"],
+      "explanation": "If d of the 40 plants are daffodils, then 40 − d are tulips. Daffodils cost 4d dollars and tulips cost 5(40 − d) dollars. Setting their total to $170 gives 4d + 5(40 − d) = 170.",
+      "imageAlt": "Facsimile of a plant-cost word problem; the quantities, variable d, prices, and all equations are reproduced in accessible text."
+    },
+    "10": {
+      "prompt": "A function is defined as h(x) = x² − 3x + 1. What is the value of h(−1)?",
+      "choices": ["1", "2", "3", "5"],
+      "explanation": "Substitute −1 for x: h(−1) = (−1)² − 3(−1) + 1 = 1 + 3 + 1 = 5.",
+      "imageAlt": "Facsimile of a function-evaluation question; the exponent, negative input, and all choices are reproduced in accessible text."
+    },
+    "11": {
+      "prompt": "The zeros of p(x) = x(3x + 2)(x − 5) are which values?",
+      "choices": ["−2/3 and 5, only", "2/3 and −5, only", "−2/3, 0, 5", "2/3, 0, −5"],
+      "explanation": "A product is zero when any factor is zero. The factors yield x = 0, 3x + 2 = 0 or x = −2/3, and x − 5 = 0 or x = 5. All three are zeros.",
+      "imageAlt": "Facsimile of a polynomial-zeros question; the factorization, signed fractions, zero, and all answer choices are reproduced in accessible text."
+    },
+    "12": {
+      "prompt": "If f(x) = 1.25ˣ and g(x) = 3x + 10, what is the smallest positive integer x for which f(x) > g(x)?",
+      "choices": ["18", "19", "67", "69"],
+      "explanation": "At x = 18, 1.25¹⁸ ≈ 55.51 < 3(18) + 10 = 64. At x = 19, 1.25¹⁹ ≈ 69.39 > 3(19) + 10 = 67. The ratio 1.25ˣ/(3x + 10) increases for positive integers x, so if the exponential value is still smaller at 18, it was also smaller at every earlier positive integer. Thus 19 is the first solution.",
+      "imageAlt": "Facsimile of an exponential-versus-linear comparison; the exponent on 1.25 and the strict greater-than sign are reproduced in accessible text."
+    },
+    "13": {
+      "prompt": "What is an equation of the line that passes through the points (2, 5) and (−2, −1)?",
+      "choices": ["y − 5 = (2/3)(x − 2)", "y − 5 = (3/2)(x − 2)", "y − 2 = (2/3)(x − 5)", "y − 2 = (3/2)(x − 5)"],
+      "explanation": "The slope is (5 − (−1))/(2 − (−2)) = 6/4 = 3/2. Using point (2, 5) in point-slope form gives y − 5 = (3/2)(x − 2).",
+      "imageAlt": "Facsimile of a line-equation question; the signed coordinates, fractional slopes, and all four equations are reproduced in accessible text."
+    },
+    "14": {
+      "prompt": "At a local high school, students named the sport they like to watch most. The table has male counts of 40 football, 35 basketball, and 15 baseball, and female counts of 20 football, 40 basketball, and 10 baseball. Approximately what percentage of female students preferred basketball?",
+      "choices": ["35%", "40%", "53%", "57%"],
+      "explanation": "There are 20 + 40 + 10 = 70 female students in the table, and 40 chose basketball. The percentage is 40/70 × 100 ≈ 57.1%, or approximately 57%.",
+      "imageAlt": "Table of favorite sports: columns football, basketball, baseball; male row 40, 35, 15; female row 20, 40, 10."
+    },
+    "15": {
+      "prompt": "Which equation yields the same solutions as x² − 10x − 24 = 0?",
+      "choices": ["(x + 5)² = 1", "(x − 5)² = 1", "(x + 5)² = 49", "(x − 5)² = 49"],
+      "explanation": "Move −24 to the other side: x² − 10x = 24. Completing the square adds (10/2)² = 25 to both sides, giving (x − 5)² = 49.",
+      "imageAlt": "Facsimile of a completing-the-square question; all signs, squared expressions, and choices are reproduced in accessible text."
+    },
+    "16": {
+      "prompt": "The function f(x) is shifted three units right and four units up. What is the resulting function?",
+      "choices": ["f(x − 3) + 4", "f(x + 3) + 4", "f(x + 4) − 3", "f(x − 4) − 3"],
+      "explanation": "A horizontal shift three units to the right replaces x with x − 3 inside the function. A vertical shift four units up adds 4 outside, giving f(x − 3) + 4.",
+      "imageAlt": "Facsimile of a function-transformation question; all inner and outer shifts and their signs are reproduced in accessible choices."
+    },
+    "17": {
+      "prompt": "Hana changes x² − 8x = 3 into x² − 8x + 16 = 3 + 16. Which property did she use?",
+      "choices": ["distributive property", "commutative property", "additive inverse property", "addition property of equality"],
+      "explanation": "Hana adds the same number, 16, to both sides of the equation. Adding the same quantity to each side preserves equality; this is the addition property of equality.",
+      "imageAlt": "Facsimile of Hana's two displayed equation steps; both equations and the four property names are reproduced in accessible text."
+    },
+    "18": {
+      "prompt": "The ordered data set is 28, 28, 28, 28, 32, 32, 34, 34, 40, 42. What is its upper quartile?",
+      "choices": ["28", "32", "34", "42"],
+      "explanation": "There are ten values, so the upper half consists of the last five: 32, 34, 34, 40, 42. The median of those five values is the third one, 34, which is the upper quartile.",
+      "imageAlt": "Facsimile of an ordered-data-set question; all ten values and the four choices are reproduced in accessible text."
+    },
+    "19": {
+      "prompt": "When −3x² + 7x − 1 is subtracted from 2x² − 3x + 10, what is the result?",
+      "choices": ["5x² + 4x + 9", "5x² − 10x + 11", "−5x² + 4x + 9", "−5x² + 10x − 11"],
+      "explanation": "Subtract the entire first polynomial: (2x² − 3x + 10) − (−3x² + 7x − 1) = 2x² − 3x + 10 + 3x² − 7x + 1 = 5x² − 10x + 11.",
+      "imageAlt": "Facsimile of a polynomial-subtraction question; the subtraction order, signs, exponents, and all choices are reproduced in accessible text."
+    },
+    "20": {
+      "prompt": "The value of a home in Buffalo is modeled by V(t) = 96,949(1.0448)ᵗ, where V(t) is its value after t years. What is the percent increase in its value each year?",
+      "choices": ["1.0448%", "0.0448%", "0.448%", "4.48%"],
+      "explanation": "An exponential growth factor has the form 1 + r. Here r = 1.0448 − 1 = 0.0448. Converting to a percentage gives 0.0448 × 100 = 4.48% each year.",
+      "imageAlt": "Facsimile of a home-value growth-model question; the 1.0448 growth factor, exponent t, and all percentages are reproduced in accessible text."
+    },
+    "21": {
+      "prompt": "A rod is an old English distance unit equivalent to 5.5 yards. How many inches are in 2.5 rods? Use 1 yard = 3 feet.",
+      "choices": ["66", "165", "198", "495"],
+      "explanation": "Convert rods to yards, feet, and then inches: 2.5 × 5.5 × 3 × 12 = 495 inches. The factor of 12 converts each foot to inches.",
+      "imageAlt": "Facsimile of a rod-to-inches conversion question; both given unit conversions and all numeric choices are reproduced in accessible text."
+    },
+    "22": {
+      "prompt": "When solving 2x² − 3x − 6 = 0 using the quadratic formula, what are the solutions?",
+      "choices": ["(3 ± √57)/4", "(3 ± √39)/4", "(−3 ± √57)/4", "(−3 ± √39)/4"],
+      "explanation": "For a = 2, b = −3, and c = −6, the quadratic formula gives x = [−b ± √(b² − 4ac)]/(2a). Thus x = [3 ± √(9 + 48)]/4 = (3 ± √57)/4.",
+      "imageAlt": "Facsimile of a quadratic-formula question; radicals, plus-minus signs, numerators, denominator 4, and all choices are reproduced in accessible text."
+    },
+    "23": {
+      "prompt": "For which function is the axis of symmetry x = −4?",
+      "choices": ["f(x) = −x² − 4x − 1", "g(x) = −x² + 8x + 5", "h(x) = x² + 8x + 3", "k(x) = x² + x − 4"],
+      "explanation": "For a quadratic ax² + bx + c, the axis of symmetry is x = −b/(2a). For h(x) = x² + 8x + 3, this is −8/(2 × 1) = −4. The other choices give different axes.",
+      "imageAlt": "Facsimile of a quadratic-axis question; all four function coefficients, signs, and exponents are reproduced in accessible text."
+    },
+    "24": {
+      "prompt": "In simplest radical form, what is the product of 2√6 and 5√3?",
+      "choices": ["10", "21", "30√2", "10√18"],
+      "explanation": "Multiply the coefficients and radicals: (2√6)(5√3) = 10√18. Since √18 = √(9 × 2) = 3√2, the product in simplest radical form is 30√2.",
+      "imageAlt": "Facsimile of a radical-multiplication question; both factors and all four radical choices are reproduced in accessible text."
+    }
+  }
+}

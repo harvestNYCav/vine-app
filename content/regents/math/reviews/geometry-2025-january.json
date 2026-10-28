@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "01cf962037d7ec0f1baf896a0d70a64cb409df5dac7e24c0bdc280ee75db7f79",
+  "questions": {
+    "1": {
+      "prompt": "On the graph, triangle AB'C' is a dilation of triangle ABC, with vertex A unchanged. What are its scale factor and center?",
+      "choices": ["1/2 about the origin", "2 about the origin", "1/2 about vertex A", "2 about vertex A"],
+      "explanation": "A stays fixed, so it is the dilation center. From A, B' lies twice as far as B and C' twice as far as C on the same rays, so the scale factor is 2.",
+      "imageAlt": "Coordinate grid shows small right triangle ABC inside larger triangle AB'C'. Both share lower vertex A. B and B' lie on the same vertical ray from A, while C and C' lie on the same diagonal ray; B' and C' are twice as far from A."
+    },
+    "2": {
+      "prompt": "Segment PQ has P(−2, 6) and Q(3, −4). Point A divides it with PA:AQ = 2:3. What are A's coordinates?",
+      "choices": ["(1, 0)", "(2, −2)", "(−1, 4)", "(0, 2)"],
+      "explanation": "The 2:3 ratio puts A two fifths of the way from P to Q. The displacement is (5, −10), and two fifths is (2, −4). Adding to P(−2, 6) gives A(0, 2).",
+      "imageAlt": "Printed coordinate-division question. Accessible text preserves both signed endpoints, their order, and the 2:3 ratio."
+    },
+    "3": {
+      "prompt": "On the coordinate graph, congruent parallelograms ABCD and RSTU are shown. Which listed transformation sequence maps ABCD to RSTU?",
+      "choices": ["reflect over the x-axis, then translate 10 left and 1 up", "translate 4 down, then reflect over the y-axis", "reflect over the y-axis, then translate 2 down", "translate 10 left, then reflect over the x-axis"],
+      "explanation": "Translate ABCD four units down, bringing A to (2, 0). Reflect over the y-axis to send that point to R(−2, 0). The same steps map B, C, and D to S, T, and U.",
+      "imageAlt": "Coordinate grid shows ABCD to the right and above the origin, with A upper-left and B upper-right. RSTU lies left and below the origin, with R upper-right and S upper-left."
+    },
+    "4": {
+      "prompt": "Right triangle ABC has angle C = 90°, AC = 7.7, and angle B = 24°. Find hypotenuse AB to the nearest tenth.",
+      "choices": ["18.9", "17.3", "8.4", "3.1"],
+      "explanation": "AC is opposite angle B, so sin 24° = 7.7/AB. Therefore AB = 7.7/sin 24° ≈ 18.9.",
+      "imageAlt": "Printed trigonometry question; accessible text identifies the right angle, opposite side, and requested hypotenuse."
+    },
+    "5": {
+      "prompt": "Triangles PQR and LMN have PQ ≅ LM. Which additional fact is sufficient to prove the triangles congruent?",
+      "choices": ["QR ≅ MN and ∠R ≅ ∠N", "QR ≅ MN and ∠Q ≅ ∠M", "QR ≅ MN and ∠P ≅ ∠L", "QR ≅ MN and ∠P ≅ ∠M"],
+      "explanation": "Given PQ ≅ LM and QR ≅ MN, the included angles are Q and M. If those angles also match, side-angle-side (SAS) proves the triangles congruent.",
+      "imageAlt": "Printed triangle-congruence question. Accessible text preserves the given side pair and each additional side-angle pair."
+    },
+    "6": {
+      "prompt": "A circle satisfies x² + 6y = 4x − y² + 12. What are its center and radius?",
+      "choices": ["center (2, −3), radius 5", "center (−2, 3), radius 5", "center (2, −3), radius 25", "center (−2, 3), radius 25"],
+      "explanation": "Move terms and complete squares: x² − 4x + y² + 6y = 12 becomes (x − 2)² + (y + 3)² = 12 + 4 + 9 = 25. The center is (2, −3) and radius is √25 = 5.",
+      "imageAlt": "Printed circle equation. Accessible text preserves the squared terms, signed linear terms, and center-radius choices."
+    },
+    "7": {
+      "prompt": "A square of side length 3 rotates continuously around one of its sides. Which solid and volume result?",
+      "choices": ["cube, volume 9", "cube, volume 27", "cylinder, volume 27π", "cylinder, volume 54π"],
+      "explanation": "Rotation around a side produces a cylinder with height 3 and radius 3. Its volume is πr²h = π(3²)(3) = 27π.",
+      "imageAlt": "Printed square-rotation question; accessible text includes the side length, rotation axis, and all solid-volume choices."
+    },
+    "8": {
+      "prompt": "Line k is 4y + 3 = 7x. Which equation is perpendicular to k and passes through (−5, 2)?",
+      "choices": ["y + 2 = (4/7)(x − 5)", "y − 2 = (4/7)(x + 5)", "y + 2 = −(4/7)(x − 5)", "y − 2 = −(4/7)(x + 5)"],
+      "explanation": "Rewriting line k gives slope 7/4. A perpendicular line has negative reciprocal slope −4/7. Through (−5, 2), its point-slope equation is y − 2 = −(4/7)(x + 5).",
+      "imageAlt": "Printed perpendicular-line question. Accessible text preserves all plus and minus signs, fractions, and the given point."
+    },
+    "9": {
+      "prompt": "In scalene triangle JKL, median LM is drawn to side KJ. Which statement must hold?",
+      "choices": ["LM = KM", "KM = (1/2)KJ", "LM ⟂ KJ", "∠KLM ≅ ∠JLM"],
+      "explanation": "A median meets the opposite side at its midpoint, so M is halfway along KJ. Therefore KM is half of KJ. A median need not be perpendicular or bisect the vertex angle.",
+      "imageAlt": "Scalene triangle JKL has K at lower left, J lower right, and L above. M is not drawn but is described as the midpoint of base KJ where median LM would meet it."
+    },
+    "10": {
+      "prompt": "In circle O, chord KA meets diameter YN at S. Minor arcs YK and YA measure 120° and 105°. What is angle ASN?",
+      "choices": ["22.5°", "75°", "97.5°", "120°"],
+      "explanation": "Because YN is a diameter, semicircular arc Y-A-N is 180°, so arc AN is 180° − 105° = 75°. For intersecting chords inside a circle, angle ASN is half the sum of intercepted arcs AN and YK: (75° + 120°)/2 = 97.5°.",
+      "imageAlt": "Circle centered at O has diameter YN sloping from lower-left Y through O to upper-right N. Chord KA slopes from upper-left K to lower-right A and crosses the diameter at interior point S."
+    },
+    "11": {
+      "prompt": "Triangle ABC has coordinates A(−3, 4), B(−5, −1), and C(3, −2). What is its area?",
+      "choices": ["16", "20", "21", "24"],
+      "explanation": "Use vectors AB = (−2, −5) and AC = (6, −6). The area is half the absolute determinant: (1/2)|(-2)(-6) − (-5)(6)| = (1/2)(42) = 21.",
+      "imageAlt": "Coordinate grid shows triangle with A upper left at (−3, 4), B lower left at (−5, −1), and C lower right at (3, −2)."
+    },
+    "12": {
+      "prompt": "In triangle ABC, DE is a midsegment and BD ≅ DE. Which statement must hold?",
+      "choices": ["triangle ABC is isosceles", "triangle ABC is scalene", "BD ≅ BE", "DA ≅ EC"],
+      "explanation": "Because D and E are side midpoints, BD = AB/2 and DE = AC/2. The given BD = DE implies AB/2 = AC/2, hence AB = AC. Triangle ABC is isosceles.",
+      "imageAlt": "Triangle ABC has B at top, A lower left, C lower right. D lies halfway on BA and E halfway on BC; segment DE joins them parallel to base AC."
+    },
+    "13": {
+      "prompt": "Parallel vertical lines JKL and MNOP are shown. K, R, N are collinear, OR ≅ ON, and angle POR = 116°. Find angle LKN.",
+      "choices": ["58°", "116°", "122°", "128°"],
+      "explanation": "At O, OP and ON are opposite rays, so angle RON = 180° − 116° = 64°. In isosceles triangle RON, base angles at R and N are (180° − 64°)/2 = 58°. The angle between upward KL and downward-right KN is supplementary to that 58° angle because the vertical lines are parallel, giving 122°.",
+      "imageAlt": "Two vertical parallel lines, J-K-L at left and M-N-O-P at right. K, R, N lie on one descending diagonal; segment RO runs up-right from R to O. Triangle RON is between the lines, and OP continues vertically upward from O."
+    },
+    "14": {
+      "prompt": "Similar squares ABCD and WXYZ have side-length ratio 2:5. If AB = x + 3 and WX = 3x + 5, what is the perimeter of ABCD?",
+      "choices": ["8", "20", "32", "80"],
+      "explanation": "Corresponding sides satisfy (x + 3)/(3x + 5) = 2/5. Cross-multiplying gives 5x + 15 = 6x + 10, so x = 5 and AB = 8. The square's perimeter is 4 × 8 = 32.",
+      "imageAlt": "Printed square-similarity question. Accessible text preserves the 2:5 direction, both side expressions, and choices."
+    },
+    "15": {
+      "prompt": "In parallelogram ABCD, diagonals AC and BD meet at E. Which transformation maps triangle ABC onto triangle CDA?",
+      "choices": ["reflection over AC", "reflection over DB", "90° clockwise rotation about E", "180° clockwise rotation about E"],
+      "explanation": "The diagonals of a parallelogram bisect each other, so E is its center of half-turn symmetry. A 180° rotation about E sends A to C, B to D, and C to A, mapping ABC exactly onto CDA.",
+      "imageAlt": "Parallelogram ABCD has A upper left, B upper right, C lower right, D lower left. Diagonals AC and BD cross at central point E."
+    },
+    "16": {
+      "prompt": "A square pyramid has volume 175 and height 21. What is the perimeter of its square base?",
+      "choices": ["5", "10", "20", "25"],
+      "explanation": "For base side s, V = (1/3)s²h, so 175 = (1/3)s²(21) = 7s². Thus s² = 25, s = 5, and the base perimeter is 4s = 20.",
+      "imageAlt": "Square-based pyramid diagram shows its vertical altitude down to the base center. Volume and height are specified in accessible text."
+    },
+    "17": {
+      "prompt": "A corner fish tank is a quarter of a cylinder with radius 22 inches along each wall and height 27 inches. Using 231 cubic inches per gallon, how many gallons does it hold to the nearest gallon?",
+      "choices": ["44", "59", "89", "178"],
+      "explanation": "The perpendicular walls form a quarter-circle base of radius 22 inches. Volume is (1/4)π(22²)(27) ≈ 10,264 cubic inches. Divide by 231 cubic inches per gallon to get about 44.4 gallons, or 44 gallons.",
+      "imageAlt": "Corner tank diagram shows two straight sides along perpendicular walls, each 22 inches from corner to curved front, and a vertical tank height of 27 inches. The curved front makes the horizontal cross-section a quarter circle."
+    },
+    "18": {
+      "prompt": "Line m is y = −2x + 8. What is its image equation after dilation by 1/2 about the origin?",
+      "choices": ["y = −x + 4", "y = −2x + 4", "y = −x + 8", "y = −2x + 8"],
+      "explanation": "A dilation centered at the origin preserves the line's slope and halves its y-intercept. Thus slope remains −2 while intercept 8 becomes 4, giving y = −2x + 4.",
+      "imageAlt": "Printed line-dilation question. Accessible text preserves the negative slope, positive intercept, one-half factor, and all four equations."
+    },
+    "19": {
+      "prompt": "In right triangle RST, altitude SV drops to hypotenuse RT. Which proportion must be true?",
+      "choices": ["RT/ST = ST/VT", "VR/VT = VT/VS", "RV/SV = SV/RT", "TR/VR = VR/SR"],
+      "explanation": "By the leg-projection theorem, ST² = RT × VT. Dividing by ST × VT gives RT/ST = ST/VT, which is the first proportion.",
+      "imageAlt": "Right triangle RST has right angle at top vertex S and horizontal hypotenuse RT. Altitude SV drops vertically from S to point V between R and T."
+    },
+    "20": {
+      "prompt": "A circle has diameter 36 cm. A central angle intercepts arc length 12π cm. What is the angle in radians?",
+      "choices": ["π/6", "π/3", "2π/3", "3π/2"],
+      "explanation": "Arc length satisfies s = rθ when θ is in radians. The radius is 18 cm, so θ = 12π/18 = 2π/3 radians.",
+      "imageAlt": "Printed arc-length question; accessible text includes diameter, arc length, units, and radian choices."
+    },
+    "21": {
+      "prompt": "Which listed rotation about its center maps a regular nonagon onto itself?",
+      "choices": ["60°", "90°", "180°", "200°"],
+      "explanation": "A regular nonagon has nine equal rotational positions, separated by 360°/9 = 40°. A 200° turn is five 40° steps, so it maps the figure onto itself.",
+      "imageAlt": "Printed regular-nonagon symmetry question; accessible text includes all four rotations."
+    },
+    "22": {
+      "prompt": "Two sides of a triangle have lengths 2 and 7. Which could be the third side?",
+      "choices": ["9", "8", "5", "4"],
+      "explanation": "The triangle inequality requires |7 − 2| < x < 7 + 2, or 5 < x < 9. Among the choices, only 8 lies strictly inside that interval.",
+      "imageAlt": "Printed triangle-inequality question. Accessible text includes both given lengths and each candidate third side."
+    },
+    "23": {
+      "prompt": "A car tire has diameter 2¼ feet. Approximately how many rotations will it make over one mile?",
+      "choices": ["373", "747", "1328", "2347"],
+      "explanation": "One rotation covers the tire circumference, πd = 2.25π ≈ 7.07 feet. A mile is 5280 feet, so rotations ≈ 5280/(2.25π) ≈ 747.",
+      "imageAlt": "Photograph shows a car tire with a ruler indicating its diameter. The exact diameter of 2¼ feet is given in accessible text."
+    },
+    "24": {
+      "prompt": "Quadrilateral TOWN has opposite sides OW ≅ TN and OT ≅ WN. Which extra fact proves it is a rhombus?",
+      "choices": ["ON ⟂ TW", "TO ⟂ OW", "OW ∥ TN", "ON and TW bisect each other"],
+      "explanation": "Both pairs of opposite sides are congruent, which already makes TOWN a parallelogram. A parallelogram with perpendicular diagonals is a rhombus. ON and TW are its diagonals, so ON ⟂ TW is sufficient.",
+      "imageAlt": "Printed quadrilateral proof question. Accessible text preserves vertex order, both opposite-side congruences, and all diagonal or side conditions."
+    }
+  }
+}

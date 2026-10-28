@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "9ab886b495dbcb4dec70a3bb82c4dc2f6f83bc68f3db92872caf695a27fdbb4c",
+  "questions": {
+    "1": {
+      "prompt": "When factored, x³ − 36x is equivalent to",
+      "choices": ["(x + 6)(x − 6)", "(x + 18)(x − 18)", "x(x + 6)(x − 6)", "x(x + 18)(x − 18)"],
+      "explanation": "Factor out x first: x³ − 36x = x(x² − 36). Then factor the difference of squares: x(x + 6)(x − 6).",
+      "imageAlt": "Cubic x cubed minus 36x and four difference-of-squares factorizations are transcribed."
+    },
+    "2": {
+      "prompt": "Which equation represents the line through (−1, 8) and (4, −2)?",
+      "choices": ["y = −2x + 6", "y = −2x + 10", "y = −0.5x + 7.5", "y = −0.5x + 8.5"],
+      "explanation": "The slope is (−2 − 8)/(4 − (−1)) = −10/5 = −2. Using (−1,8), 8 = −2(−1) + b implies b = 6, so y = −2x + 6.",
+      "imageAlt": "Both signed ordered pairs and all four line equations are fully transcribed."
+    },
+    "3": {
+      "prompt": "A geometric sequence is 1/2, 2, 8, 32, ... . What is its common ratio?",
+      "choices": ["1/4", "2", "1/2", "4"],
+      "explanation": "Divide a term by the previous term: 2 ÷ (1/2) = 4, and 8 ÷ 2 = 4. The common ratio is 4.",
+      "imageAlt": "Sequence begins with one-half then 2, 8, 32; all four proposed ratios, including fractions, are transcribed."
+    },
+    "4": {
+      "prompt": "What is the constant term of 2x³ − x + 5 + 4x²?",
+      "choices": ["5", "2", "3", "4"],
+      "explanation": "A constant term has no x factor. In this polynomial, the standalone term is +5.",
+      "imageAlt": "Polynomial terms and their exponents, with four numerical choices, are transcribed."
+    },
+    "5": {
+      "prompt": "A landscaping company charges a set fee for a spring cleanup plus an hourly labor rate. Its cost is C(x) = 55x + 80. What does 55 represent?",
+      "choices": ["the set fee for the cleanup", "the hourly labor rate for a cleanup", "the profit earned by the company for one cleanup", "the number of hours of labor required for one cleanup"],
+      "explanation": "In C(x) = 55x + 80, the coefficient 55 is multiplied by x, the number of hours. It adds $55 for each hour of labor; 80 is the fixed fee.",
+      "imageAlt": "Cost model C(x)=55x+80 and all four interpretations are transcribed."
+    },
+    "6": {
+      "prompt": "Which expression is equivalent to (5x² − 2x + 4) − (3x² + 3x − 1)?",
+      "choices": ["2x² + x + 3", "2x² − 5x + 5", "2x⁴ + x² + 3", "2x⁴ − 5x² + 5"],
+      "explanation": "Distribute the minus sign: 5x² − 2x + 4 − 3x² − 3x + 1. Combining like terms gives 2x² − 5x + 5.",
+      "imageAlt": "Both parenthesized polynomials and all four possible result polynomials are transcribed, including signs and powers."
+    },
+    "7": {
+      "prompt": "A system of inequalities is graphed. Which point is a solution to the system?",
+      "choices": ["(1, 1)", "(2, −2)", "(1, 8)", "(4, 2)"],
+      "explanation": "The solid rising boundary is y = 2x − 1 with shading below it; the dashed falling boundary is y = −3x + 4 with shading above it. (4,2) lies below 2(4) − 1 = 7 and above −3(4) + 4 = −8. The points (1,1) and (2,−2) lie on the excluded dashed boundary, and (1,8) lies above the solid boundary.",
+      "imageAlt": "Coordinate graph: solid rising line through (0,−1) and (1,1), with shading on or below it; dashed falling line through (0,4), (1,1), and (2,−2), with shading strictly above it. The crosshatched overlap extends to the right between the two lines."
+    },
+    "8": {
+      "prompt": "In an arithmetic sequence, the first term is 25 and the third term is 15. What is the tenth term?",
+      "choices": ["−20", "−25", "70", "75"],
+      "explanation": "From term 1 to term 3 there are two equal steps totaling 15 − 25 = −10, so the common difference is −5. The tenth term is 25 + 9(−5) = −20.",
+      "imageAlt": "First term 25, third term 15, and all signed tenth-term choices are transcribed."
+    },
+    "9": {
+      "prompt": "When p = 2l + 2w is solved for w, the result is",
+      "choices": ["w = (2l + p)/2", "w = (p − 2l)/2", "w = p/2 + l", "w = l − p/2"],
+      "explanation": "Subtract 2l from both sides: p − 2l = 2w. Divide by 2 to get w = (p − 2l)/2.",
+      "imageAlt": "Perimeter equation and all four formulas for w are transcribed with complete fraction numerators and denominators."
+    },
+    "10": {
+      "prompt": "Market Street Pizza sold thin-crust pizzas: plain 300, veggie 80, meat-only 120, the works 100; and deep-dish pizzas: plain 200, veggie 25, meat-only 105, the works 70. Of all pizzas sold, what percent were plain, deep-dish pizzas?",
+      "choices": ["20%", "30%", "40%", "50%"],
+      "explanation": "The table totals 300 + 80 + 120 + 100 + 200 + 25 + 105 + 70 = 1000 pizzas. Plain deep-dish pizzas number 200, so 200/1000 = 20%.",
+      "imageAlt": "Two-way pizza-sales table is completely transcribed in the prompt; the plain/deep-dish intersection is 200."
+    },
+    "11": {
+      "prompt": "When solving −2(3x − 5) = (9/2)x − 2, the solution is",
+      "choices": ["8/7", "10/11", "−16/21", "−16/3"],
+      "explanation": "Expand to −6x + 10 = 4.5x − 2. Add 6x and 2 to obtain 12 = 10.5x; hence x = 12/10.5 = 24/21 = 8/7.",
+      "imageAlt": "Negative two times (3x minus 5) equals nine-halves x minus 2; all signed fractional choices are transcribed."
+    },
+    "12": {
+      "prompt": "The expression x^(2a + b) is equivalent to",
+      "choices": ["x^(2a) + x^b", "x^a + x^(a + b)", "x^a · x^(a + b)", "x^(a + b) · x^(a + b)"],
+      "explanation": "When multiplying powers with the same base, add exponents: x^a · x^(a + b) = x^(a + a + b) = x^(2a + b).",
+      "imageAlt": "Exponent group two a plus b and all four sum-or-product expressions are transcribed with parentheses around exponent groups."
+    },
+    "13": {
+      "prompt": "A table gives f(0)=0.0625, f(1)=0.125, f(2)=0.25, f(3)=0.5, f(4)=1, and f(5)=2. How is this function best described?",
+      "choices": ["linear", "quadratic", "exponential", "absolute value"],
+      "explanation": "Each time x increases by 1, f(x) doubles. A constant multiplicative ratio of 2 means an exponential function.",
+      "imageAlt": "All six input-output table pairs and the four function families are transcribed."
+    },
+    "14": {
+      "prompt": "Stephanie is solving x² − 12 = 7x − 8. Her first step is x² − 4 = 7x. Which property justifies this step?",
+      "choices": ["associative property", "commutative property", "distributive property", "addition property of equality"],
+      "explanation": "Adding 8 to both sides changes −12 to −4 on the left and removes −8 on the right. This is the addition property of equality.",
+      "imageAlt": "Both displayed equations and four property names are transcribed."
+    },
+    "15": {
+      "prompt": "What is the sum of 8√3 and √3?",
+      "choices": ["8√6", "9√6", "7√3", "9√3"],
+      "explanation": "Both terms have the same radical √3, so add coefficients: 8√3 + 1√3 = 9√3.",
+      "imageAlt": "Radical terms eight square roots of three and one square root of three, and all four radical choices, are transcribed."
+    },
+    "16": {
+      "prompt": "Four dot plots each show scores for 20 students. The mode is 80 and the median is 85. Which dot plot correctly represents this data?",
+      "choices": ["Plot I: counts at scores 65,70,75,80,85,90,95,100 are 1,1,1,6,2,5,3,1", "Plot II: counts at scores 60,65,70,75,80,85,95,100 are 1,1,4,2,3,6,2,1", "Plot III: counts at scores 60,65,70,75,80,85,90,95,100 are 1,2,2,2,6,2,2,2,1", "Plot IV: counts at scores 70,75,80,85,90 are 3,3,4,6,4"],
+      "explanation": "Plot I has six scores of 80, more than any other score, so its mode is 80. Among 20 values, its 10th and 11th values are both 85, so the median is 85. The other plots do not satisfy both conditions.",
+      "imageAlt": "All dot counts at each score in plots I–IV are transcribed in the answer choices; each plot has 20 dots."
+    },
+    "17": {
+      "prompt": "A function is graphed with an open left endpoint at x = −2 and an arrow continuing right. What is its domain?",
+      "choices": ["{x | x > −2}", "{x | x ≥ −2}", "{x | x > −4}", "{x | x ≥ −4}"],
+      "explanation": "The graph begins at x = −2 with an open circle, so −2 is excluded. It extends indefinitely to the right, giving x > −2.",
+      "imageAlt": "Increasing curve begins at an open circle at (−2,−4) and continues rightward with an arrow. All strict-versus-inclusive domain options are transcribed."
+    },
+    "18": {
+      "prompt": "Which ordered pair is a solution to y − 1 = 2(x + 1/4)?",
+      "choices": ["(0.75, 0)", "(1.25, 4)", "(2.5, −6.5)", "(4, −9.5)"],
+      "explanation": "For x = 1.25, the right side is 2(1.25 + 0.25) = 3. Then y − 1 = 3, so y = 4. Thus (1.25, 4) satisfies the equation.",
+      "imageAlt": "Equation y minus one equals two times (x plus one-fourth) and all four ordered pairs are transcribed with signed decimals."
+    },
+    "19": {
+      "prompt": "Elena runs 50 meters in 7 seconds. Which expression converts her speed to inches per minute?",
+      "choices": ["(7 sec/50 meters)·(60 sec/1 min)·(1 meter/39.37 in)", "(7 sec/50 meters)·(1 min/60 sec)·(39.37 in/1 meter)", "(50 meters/7 sec)·(60 sec/1 min)·(1 meter/39.37 in)", "(50 meters/7 sec)·(60 sec/1 min)·(39.37 in/1 meter)"],
+      "explanation": "Start with 50 meters per 7 seconds. The factors 60 sec/1 min and 39.37 in/1 meter cancel seconds and meters, leaving inches per minute.",
+      "imageAlt": "All four three-factor unit conversions are transcribed with the 50-meter distance, seven-second time, 60-second minute, and 39.37 inches per meter."
+    },
+    "20": {
+      "prompt": "The highest August temperatures in a town were 86, 78, 84, 95, 81, 77, 88, and 93 degrees Fahrenheit in years 1990–1997, respectively. What is the interquartile range?",
+      "choices": ["7", "10", "11", "18"],
+      "explanation": "Sort the data: 77, 78, 81, 84, 86, 88, 93, 95. The lower-half median is Q1 = (78 + 81)/2 = 79.5; the upper-half median is Q3 = (88 + 93)/2 = 90.5. The IQR is 90.5 − 79.5 = 11.",
+      "imageAlt": "Year-temperature table values are transcribed in the prompt in original chronological order."
+    },
+    "21": {
+      "prompt": "The function f(x) = x² is multiplied by k, where k < −1. Which graph could represent g(x) = kf(x)?",
+      "choices": ["Graph (1): wide upward-opening parabola centered at the origin", "Graph (2): wide downward-opening parabola centered at the origin", "Graph (3): narrow upward-opening parabola centered at the origin", "Graph (4): narrow downward-opening parabola centered at the origin"],
+      "explanation": "A negative k reflects x² across the x-axis, so the parabola opens downward. Since |k| > 1, it is vertically stretched and therefore narrower than y = x². Only graph (4) shows both features.",
+      "imageAlt": "Four parabolas all have vertices at the origin: choices 1 and 3 open upward, 2 and 4 downward; choices 1 and 2 are wide, 3 and 4 narrow."
+    },
+    "22": {
+      "prompt": "Which number-line graph solves 6.4 − 4x ≥ −2.8?",
+      "choices": ["open circle at 2.3, arrow right", "closed circle at 2.3, arrow right", "open circle at 2.3, arrow left", "closed circle at 2.3, arrow left"],
+      "explanation": "Subtract 6.4: −4x ≥ −9.2. Dividing by −4 reverses the inequality, yielding x ≤ 2.3. The endpoint 2.3 is included, with shading left.",
+      "imageAlt": "All four number lines use endpoint 2.3; choices 1 and 3 are open, 2 and 4 closed; choices 1 and 2 point right, 3 and 4 point left."
+    },
+    "23": {
+      "prompt": "A pond has eight more fish than frogs, and at least 20 fish and frogs in total. If x is the number of frogs, which inequality represents the situation?",
+      "choices": ["x + 8x ≥ 20", "2x + 8 ≥ 20", "x + 8x ≤ 20", "2x + 8 ≤ 20"],
+      "explanation": "There are x frogs and x + 8 fish. Their total is x + (x + 8) = 2x + 8. 'At least 20' means greater than or equal to 20.",
+      "imageAlt": "Frogs x, fish x plus eight, total at least 20, and all four inequalities are transcribed."
+    },
+    "24": {
+      "prompt": "Which graph represents a function that is always decreasing over the entire interval −3 < x < 3?",
+      "choices": ["Graph (1): rising line through the interval, then turns downward to the right of x = 3", "Graph (2): downward parabola rising until x = 0 then falling", "Graph (3): curve rising throughout its shown domain", "Graph (4): descending line across −3 < x < 3, with a downward jump and another descending ray to the right"],
+      "explanation": "Across −3 < x < 3, graph (4) is a line with negative slope, so every increase in x lowers the output. Graphs (1) and (3) rise over that interval, and graph (2) rises before its vertex then falls afterward.",
+      "imageAlt": "Four coordinate graphs: 1 rises to a peak right of x=3 then falls; 2 is an upside-down parabola with vertex on the y-axis; 3 rises from left to right; 4 slopes downward across the requested interval, with a jump at about x=4 farther right."
+    }
+  }
+}

@@ -9,6 +9,9 @@ import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
+import RegentsProgressCards from '@/components/regents/RegentsProgressCards'
+import { getStudentRegentsCourses } from '@/lib/regents-courses'
+import { assignedRegentsSectionKeys } from '@/lib/regents-progress'
 import { getStudentSettings } from '@/lib/student-settings'
 import HomeworkButton from './HomeworkButton'
 import SessionWrapUpForm from './SessionWrapUpForm'
@@ -99,9 +102,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
   const today = todayString()
 
-  const [tracks, settings, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, examProgressResult, elaExamProgressResult] = await Promise.all([
+  const [tracks, settings, regentsCourses, mpResult, vpResult, laResult, mathResult, mathSessionResult, todaySessionResult, examProgressResult, elaExamProgressResult] = await Promise.all([
     getStudentTracks(db, studentId),
     getStudentSettings(db, studentId),
+    getStudentRegentsCourses(db, studentId),
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM vocab_progress WHERE user_id = ? ORDER BY incorrect_count DESC LIMIT 5', args: [studentId] }),
     db.execute({ sql: 'SELECT date FROM activity_log WHERE user_id = ? ORDER BY date DESC LIMIT 1', args: [studentId] }),
@@ -145,6 +149,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const assignedExams = getMathExamsForGrade(settings.gradeLevel)
   const elaExamProgress = elaExamProgressResult.rows as unknown as ExamProgressRow[]
   const assignedElaExams = getElaExamsForGrade(settings.gradeLevel)
+  const regentsMathKeys = assignedRegentsSectionKeys(regentsCourses, tracks, settings.highSchoolGradeLevel, 'math')
+  const regentsElaKeys = assignedRegentsSectionKeys(regentsCourses, tracks, settings.highSchoolGradeLevel, 'ela')
+  const regentsMathProgress = examProgress.filter(row => regentsMathKeys.has(`${row.exam_id}:${row.section_slug}`))
+  const regentsElaProgress = elaExamProgress.filter(row => regentsElaKeys.has(`${row.exam_id}:${row.section_slug}`))
   const visibleModules = filterModulesByTracks(ALL_MODULES, tracks)
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
 
@@ -353,7 +361,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       )}
 
       <div id="exam-sections" className="scroll-mt-4" />
-      {tracks.includes('ela') && (
+      {tracks.includes('ela') && settings.highSchoolGradeLevel && (
+        <RegentsProgressCards courses={regentsCourses} subject="ela" progress={regentsElaProgress} readOnly />
+      )}
+      {tracks.includes('ela') && !settings.highSchoolGradeLevel && (
         <div className="mb-6">
           <h3 className="mb-3 font-bold text-gray-700">📖 ELA Exam Progress</h3>
           <p className="mb-2 text-[11px] leading-relaxed text-gray-400">
@@ -397,7 +408,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       {/* Math Progress */}
       <div className="mb-6">
         <h3 className="font-bold text-gray-700 mb-3">➕ Math Progress</h3>
-        {tracks.includes('math') && (
+        {tracks.includes('math') && settings.highSchoolGradeLevel && (
+          <RegentsProgressCards courses={regentsCourses} subject="math" progress={regentsMathProgress} readOnly />
+        )}
+        {tracks.includes('math') && !settings.highSchoolGradeLevel && (
           <div className="mb-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">New York exam lessons</p>
             <p className="mb-2 mt-1 text-[11px] leading-relaxed text-gray-400">

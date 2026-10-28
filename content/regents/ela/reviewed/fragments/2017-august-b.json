@@ -1,0 +1,34 @@
+{
+  "sections":[{"slug":"passage-b","title":"Reading Comprehension · Passage B","intro":"Read “I Am Vertical” and answer questions 11–14. A vocabulary note follows the poem.","questionIds":["english-2017-august-q11","english-2017-august-q12","english-2017-august-q13","english-2017-august-q14"],"passage":{"title":"I Am Vertical","credit":"—Sylvia Plath · from Uncollected Poems (1965), Turret Books","transcriptReviewStatus":"reviewed","lines":[
+    {"number":1,"text":"But I would rather be horizontal."},
+    {"number":2,"text":"I am not a tree with my root in the soil"},
+    {"number":3,"text":"Sucking up minerals and motherly love"},
+    {"number":4,"text":"So that each March I may gleam into leaf,"},
+    {"number":5,"text":"Nor am I the beauty of a garden bed"},
+    {"number":6,"text":"Attracting my share of Ahs and spectacularly painted,"},
+    {"number":7,"text":"Unknowing I must soon unpetal."},
+    {"number":8,"text":"Compared with me, a tree is immortal"},
+    {"number":9,"text":"And a flower-head not tall, but more startling,"},
+    {"number":10,"text":"And I want the one’s longevity and the other’s daring."},
+    {"number":null,"text":""},
+    {"number":11,"text":"Tonight, in the infinitesimal¹ light of the stars,"},
+    {"number":12,"text":"The trees and flowers have been strewing their cool odors."},
+    {"number":13,"text":"I walk among them, but none of them are noticing."},
+    {"number":14,"text":"Sometimes I think that when I am sleeping"},
+    {"number":15,"text":"I must most perfectly resemble them—"},
+    {"number":16,"text":"Thoughts gone dim."},
+    {"number":17,"text":"It is more natural to me, lying down."},
+    {"number":18,"text":"Then the sky and I are in open conversation,"},
+    {"number":19,"text":"And I shall be useful when I lie down finally:"},
+    {"number":20,"text":"Then the trees may touch me for once, and the flowers"},
+    {"number":21,"text":"have time for me."},
+    {"number":null,"text":""},
+    {"number":null,"text":"¹ infinitesimal — very small"}
+  ]}}],
+  "questions":[
+    {"id":"english-2017-august-q11","number":11,"sectionSlug":"passage-b","sourcePage":5,"prompt":"The word “unpetal” in line 7 suggests","choices":[{"label":"1","text":"inspiration"},{"label":"2","text":"invisibility"},{"label":"3","text":"isolation"},{"label":"4","text":"impermanence"}],"correct":"4","explanation":"A flower that “unpetals” loses its petals soon after blooming. The invented verb highlights how brief its beauty is.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2017-august-q12","number":12,"sectionSlug":"passage-b","sourcePage":5,"prompt":"Lines 11 through 13 reveal the narrator’s awareness of","choices":[{"label":"1","text":"the limited time people exist on earth"},{"label":"2","text":"the unexpected changes that affect one’s life"},{"label":"3","text":"her anxiety over the shifting of seasons"},{"label":"4","text":"her insignificance in the eyes of nature"}],"correct":"4","explanation":"As the speaker walks among trees and flowers beneath the stars, she notices that none of them notice her. Nature’s indifference makes her feel small.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2017-august-q13","number":13,"sectionSlug":"passage-b","sourcePage":5,"prompt":"In lines 14 through 16, the narrator suggests that","choices":[{"label":"1","text":"consciousness is a barrier to connecting with nature"},{"label":"2","text":"nature’s ability to impress surpasses human’s imagination"},{"label":"3","text":"the future depends on natural forces beyond human control"},{"label":"4","text":"nature’s cruelty causes one to feel helpless"}],"correct":"1","explanation":"The speaker thinks she most resembles trees and flowers when sleeping, with her thoughts dimmed. Ordinary human consciousness seems to separate her from nature.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2017-august-q14","number":14,"sectionSlug":"passage-b","sourcePage":5,"prompt":"Throughout the poem, the tone can best be described as","choices":[{"label":"1","text":"envious"},{"label":"2","text":"skeptical"},{"label":"3","text":"hostile"},{"label":"4","text":"indignant"}],"correct":"1","explanation":"The speaker says she wants the tree’s longevity and the flower’s daring and wishes to connect with them, expressing envy of their qualities.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

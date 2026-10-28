@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "97f8e33cb01081b380dd10d08a57253a690cae6c77d358decf9d9ffd32c6901b",
+  "questions": {
+    "1": {
+      "prompt": "Which expression equals (x + 2)² − 5(x + 2) + 6?",
+      "choices": ["x(x − 1)", "(x − 3)(x − 2)", "(x − 4)(x + 3)", "(x − 6)(x + 1)"],
+      "explanation": "Let u = x + 2. Then u² − 5u + 6 = (u − 2)(u − 3). Substituting back gives x(x − 1).",
+      "imageAlt": "The whole quantity x plus two is squared and also multiplied by negative five, then six is added."
+    },
+    "2": {
+      "prompt": "To the nearest tenth, solve 4300e^(0.07x) − 123 = 5000.",
+      "choices": ["1.1", "2.5", "6.3", "68.5"],
+      "explanation": "Add 123 and divide by 4300: e^(0.07x) = 5123/4300. Take natural logs to get x = ln(5123/4300)/0.07 ≈ 2.5.",
+      "imageAlt": "The equation uses four thousand three hundred times e raised to zero point zero seven x, minus one hundred twenty-three, equal to five thousand."
+    },
+    "3": {
+      "prompt": "A car's value t years after purchase is V = 38,000(0.84)^t. Which statement is true?",
+      "choices": ["It increases 84% each year.", "It decreases 84% each year.", "It increases 16% each year.", "It decreases 16% each year."],
+      "explanation": "A yearly multiplier of 0.84 means the car retains 84% of its previous value. The loss is 1 − 0.84 = 0.16, or 16%, each year.",
+      "imageAlt": "The value model starts at thirty-eight thousand dollars and multiplies by zero point eight four to the power of years."
+    },
+    "4": {
+      "prompt": "Which function represents exponential decay?",
+      "choices": ["p(x) = (1/4)^(−x)", "g(x) = 1.8^(−x)", "r(x) = 2.3^(2x)", "s(x) = 4^(x/2)"],
+      "explanation": "1.8^(−x) = (1/1.8)^x has a positive base between zero and one, so it decreases as x grows. The other choices can be rewritten with effective bases above one and grow.",
+      "imageAlt": "The four exponential expressions have bases one-fourth, one point eight, two point three, and four; the first two have negative exponents, but only the second has an effective base below one."
+    },
+    "5": {
+      "prompt": "Which expression equals (x⁴ − 5x² + 4x + 14)/(x + 2)?",
+      "choices": ["x³ − 2x² − x + 6 + 2/(x + 2)", "x³ − 5x + 4 − 14/(x + 2)", "x³ + 2x² − x + 2 + 18/(x + 2)", "x³ + 2x² − 9x + 22 − 30/(x + 2)"],
+      "explanation": "Divide the numerator by x + 2, including a zero coefficient for x³. Synthetic division with −2 yields quotient x³ − 2x² − x + 6 and remainder 2, giving choice 1.",
+      "imageAlt": "The numerator is x to the fourth minus five x squared plus four x plus fourteen; the denominator is x plus two."
+    },
+    "6": {
+      "prompt": "What is the sum of the first 20 terms of −2 + 6 − 18 + 54 − ⋯?",
+      "choices": ["−610", "−59", "1,743,392,200", "2,324,522,934"],
+      "explanation": "This is geometric with first term −2 and ratio −3. The finite sum is S₂₀ = −2[1 − (−3)²⁰]/[1 − (−3)] = [3²⁰ − 1]/2 = 1,743,392,200.",
+      "imageAlt": "The first four terms are negative two, positive six, negative eighteen, positive fifty-four, so the common ratio is negative three."
+    },
+    "7": {
+      "prompt": "If f(x) = 2x⁴ − x³ − 16x + 8, what is true about f(1/2) and a linear factor?",
+      "choices": ["f(1/2) = 0 and 2x + 1 is a factor.", "f(1/2) = 0 and 2x − 1 is a factor.", "f(1/2) ≠ 0 and 2x + 1 is not a factor.", "f(1/2) ≠ 0 and 2x − 1 is a factor."],
+      "explanation": "Substitute x = 1/2: 2(1/16) − 1/8 − 16(1/2) + 8 = 0. By the factor theorem, x − 1/2, equivalently 2x − 1 up to a constant, is a factor.",
+      "imageAlt": "The polynomial is two x to the fourth minus x cubed minus sixteen x plus eight; the evaluation point is one-half."
+    },
+    "8": {
+      "prompt": "If (6 − ki)² = 27 − 36i, what is k?",
+      "choices": ["−36", "−3", "3", "6"],
+      "explanation": "Expand: (6 − ki)² = 36 − 12ki − k². Match imaginary parts with 27 − 36i: −12k = −36, so k = 3. The real part also checks: 36 − 9 = 27.",
+      "imageAlt": "The square is of the complex number six minus k times i; its stated value is twenty-seven minus thirty-six i."
+    },
+    "9": {
+      "prompt": "What is the solution set of (x + 2)/x + x/3 = (2x² + 6)/(3x)?",
+      "choices": ["{−3}", "{−3, 0}", "{3}", "{0, 3}"],
+      "explanation": "The original requires x ≠ 0. Multiplying by 3x gives 3(x + 2) + x² = 2x² + 6, or x(3 − x) = 0. Reject x = 0 because of the denominators, leaving {3}.",
+      "imageAlt": "The three denominators are x, three, and three x. Zero is excluded before solving."
+    },
+    "10": {
+      "prompt": "How many real intersections do y = x/4 − 8 and y = x²/2 + 2x have?",
+      "choices": ["1", "2", "3", "0"],
+      "explanation": "Equating the expressions gives x²/2 + (7/4)x + 8 = 0. Multiplying by four gives 2x² + 7x + 32 = 0, whose discriminant 7² − 4(2)(32) = −207 is negative. There are no real intersections.",
+      "imageAlt": "One equation is a line with slope one-fourth and intercept negative eight. The other is an upward parabola one-half x squared plus two x."
+    },
+    "11": {
+      "prompt": "Which equation is a polynomial identity?",
+      "choices": ["x³ + y³ = (x + y)³", "x³ + y³ = (x + y)(x² − xy + y²)", "x³ + y³ = (x + y)(x² − xy − y²)", "x³ + y³ = (x − y)(x² + xy + y²)"],
+      "explanation": "The sum-of-cubes factorization is x³ + y³ = (x + y)(x² − xy + y²). Expanding its right side cancels the mixed terms and leaves x³ + y³.",
+      "imageAlt": "All four choices claim a factorization of x cubed plus y cubed, but differ in factor signs and the sign of y squared."
+    },
+    "12": {
+      "prompt": "For x > 0, which expression equals x^(1/5)/x^(1/2)?",
+      "choices": ["∛x", "−¹⁰√(x³)", "1/¹⁰√(x³)", "∛(x¹⁰)"],
+      "explanation": "Subtract exponents when dividing: x^(1/5 − 1/2) = x^(−3/10). A negative exponent moves the power to the denominator, giving 1/¹⁰√(x³).",
+      "imageAlt": "The numerator is x raised to one-fifth and the denominator x raised to one-half. The choices use cube or tenth roots."
+    },
+    "13": {
+      "prompt": "A bike pedal makes 60 revolutions per minute. Its height is modeled by h(t) = 5sin(kt), with t in seconds. What is k?",
+      "choices": ["1", "2π", "60", "π/30"],
+      "explanation": "Sixty revolutions per minute is one revolution per second, so the period is one second. For sin(kt), period = 2π/k; setting this equal to 1 gives k = 2π.",
+      "imageAlt": "The sinusoidal graph ranges from negative five to five, starts at zero rising, and completes five full cycles during t from zero to five seconds."
+    },
+    "14": {
+      "prompt": "Which statement about data collection is most accurate?",
+      "choices": ["Surveying every tenth student entering the library about parenting styles gives unbiased results.", "An observational study determines the cause of an outcome.", "Margin of error increases as sample size increases.", "A random sample of a school's students can represent the opinions of its student population."],
+      "explanation": "A random sample gives each student a chance to be selected and can support an estimate for the whole school. Sampling only library entrants may be biased; observational studies do not establish causation, and larger samples generally reduce margin of error.",
+      "imageAlt": "The choices contrast a library-only sample, an observational study, margin of error with sample size, and a random sample from the school population."
+    },
+    "15": {
+      "prompt": "If f(x) = x/2 + 2, what is f⁻¹(x)?",
+      "choices": ["−x/2 − 2", "x/2 − 1", "2x − 4", "2x + 2"],
+      "explanation": "Start with y = x/2 + 2, subtract 2, then double: x = 2y − 4. Swapping the variable names gives f⁻¹(x) = 2x − 4.",
+      "imageAlt": "The original line halves x and adds two; the answer choices change slope and intercept."
+    },
+    "16": {
+      "prompt": "For f(x) = x⁴ − x³ − 6x², where is f(x) > 0?",
+      "choices": ["x < −2 only", "x < −2 or x > 3", "x < −2 or 0 ≤ x ≤ 3", "x > 3 only"],
+      "explanation": "Factor f(x) = x²(x² − x − 6) = x²(x − 3)(x + 2). Except at x = 0, the x² factor is positive; (x − 3)(x + 2) is positive for x < −2 or x > 3.",
+      "imageAlt": "The polynomial is x to the fourth minus x cubed minus six x squared; the inequality is strictly greater than zero."
+    },
+    "17": {
+      "prompt": "For which approximate x-values does log(x + 5) = |x − 1| − 3?",
+      "choices": ["5 and 1", "−2.41 and 0.41", "−2.41 and 5", "5 only"],
+      "explanation": "The domain is x > −5. At x = 5, log(10) = 1 and |4| − 3 = 1. A numerical graph or solver finds the other intersection near x = −2.41; the two solutions match choice 3.",
+      "imageAlt": "The logarithm is common log of x plus five. The other side is absolute value of x minus one, then minus three."
+    },
+    "18": {
+      "prompt": "Which cubic has exactly one real root and f(x) → −∞ as x → ∞, given a > 0 and b > 0?",
+      "choices": ["(x − a)(x² + b)", "(a − x)(x² + b)", "(a − x²)(x² + b)", "(x − a)(b − x²)"],
+      "explanation": "Because x² + b is always positive, (a − x)(x² + b) has just one real root, x = a. Its leading term is −x³, so it falls to −∞ as x increases. The other choices have the wrong degree, extra roots, or the wrong end behavior.",
+      "imageAlt": "All candidate expressions use positive constants a and b. One choice multiplies the linear factor a minus x by the always-positive quadratic x squared plus b."
+    },
+    "19": {
+      "prompt": "A simulation of 400 surveys of 200 responses each has sample-proportion mean 0.654 and standard deviation 0.035. What is the approximate margin of error for the middle 95%?",
+      "choices": ["0.01", "0.02", "0.05", "0.07"],
+      "explanation": "The middle 95% of an approximately normal distribution extends about two standard deviations on either side of the mean. Thus the margin of error is about 2(0.035) = 0.07.",
+      "imageAlt": "The simulated proportions cluster around 0.654, with most between roughly 0.58 and 0.72. The plot states samples equals four hundred and SD equals zero point zero three five."
+    },
+    "20": {
+      "prompt": "If cos A = √5/3 and tan A < 0, what is sin A?",
+      "choices": ["2/3", "−√5/3", "−2/3", "3/√5"],
+      "explanation": "Since cosine is positive but tangent negative, sine must be negative. The Pythagorean identity gives sin²A = 1 − (√5/3)² = 4/9, so sin A = −2/3.",
+      "imageAlt": "Cosine is positive square root of five over three; tangent is negative. The choices differ in sign and numerator."
+    },
+    "21": {
+      "prompt": "A tree farm starts with 150 trees. Each year 20% are cut down and 80 seedlings planted. Which recursive formula models aₙ after n years?",
+      "choices": ["a₁ = 150; aₙ = 0.2aₙ₋₁ + 80", "a₁ = 150; aₙ = 0.8aₙ₋₁ + 80", "aₙ = 150(0.2)^n + 80", "aₙ = 150(0.8)^n + 80"],
+      "explanation": "After cutting 20%, 80% of the previous year's trees remain. Add 80 new seedlings, giving aₙ = 0.8aₙ₋₁ + 80 with starting value 150. The last two choices are not recursive.",
+      "imageAlt": "The starting count is one hundred fifty trees, the yearly retention factor is zero point eight, and eighty seedlings are added afterward."
+    },
+    "22": {
+      "prompt": "Which equation describes the parabola with focus (4, −3) and directrix y = 1?",
+      "choices": ["(x − 1)² = 4(y + 3)", "(x − 1)² = −8(y − 3)", "(x + 4)² = 4(y − 3)", "(x − 4)² = −8(y + 1)"],
+      "explanation": "The vertex lies midway between y = −3 and y = 1, at (4, −1). The focus is two units below it, so p = −2. In (x − h)² = 4p(y − k), substitute h = 4, k = −1, p = −2 to obtain (x − 4)² = −8(y + 1).",
+      "imageAlt": "The focus is four comma negative three; the horizontal directrix is y equals one, so the parabola opens downward."
+    },
+    "23": {
+      "prompt": "A deferred loan balance is f(x) = 35,000(1.0325)^x after x years. Which approximately equivalent function shows a monthly growth rate?",
+      "choices": ["35,000(1.0027)^(12x)", "35,000(1.0027)^(x/12)", "35,000(1.0325)^(12x)", "35,000(1.0325)^(x/12)"],
+      "explanation": "One year contains 12 months, so x years contain 12x monthly compounding periods. The monthly multiplier is (1.0325)^(1/12) ≈ 1.0027. Thus f(x) ≈ 35,000(1.0027)^(12x).",
+      "imageAlt": "The balance starts at thirty-five thousand and grows by the annual factor 1.0325. The alternatives vary the rate base and the exponent 12x or x divided by twelve."
+    },
+    "24": {
+      "prompt": "Which graph shows a quadratic function with two imaginary zeros?",
+      "choices": ["Graph 1: upward-opening parabola touching the x-axis at a positive x-value", "Graph 2: downward-opening parabola entirely below the x-axis, with no x-intercepts", "Graph 3: wavy nonquadratic curve entirely above the x-axis", "Graph 4: sideways parabola opening right, with its vertex on the x-axis left of the y-axis"],
+      "explanation": "A quadratic with two nonreal zeros has no x-intercepts. Graph 2 is a downward-opening parabola wholly below the x-axis. Graph 1 touches the axis and graph 3 is not quadratic; graph 4 is a sideways parabola, not a function of x.",
+      "imageAlt": "Graph 1 is an upward parabola tangent to the x-axis. Graph 2 is a downward parabola entirely below the x-axis. Graph 3 is a wavy nonquadratic curve above the axis. Graph 4 is a sideways parabola, failing the vertical-line test."
+    }
+  }
+}

@@ -1,20 +1,26 @@
 import type { Client } from '@libsql/client'
-import { normalizeGradeLevel } from './grade-levels'
+import { normalizeGradeLevel, normalizeHighSchoolGradeLevel, type HighSchoolGradeLevel, type StudentSchoolGradeLevel } from './grade-levels'
 import type { GradeLevel } from '@/types'
 
 export interface StudentSettings {
   mathSpanishEnabled: boolean
   gradeLevel: GradeLevel | null
+  highSchoolGradeLevel: HighSchoolGradeLevel | null
 }
 
 export const DEFAULT_STUDENT_SETTINGS: StudentSettings = {
   mathSpanishEnabled: false,
   gradeLevel: null,
+  highSchoolGradeLevel: null,
+}
+
+export function studentSchoolGradeLevel(settings: Pick<StudentSettings, 'gradeLevel' | 'highSchoolGradeLevel'>): StudentSchoolGradeLevel | null {
+  return settings.highSchoolGradeLevel ?? settings.gradeLevel
 }
 
 export async function getStudentSettings(db: Client, userId: string): Promise<StudentSettings> {
   const result = await db.execute({
-    sql: 'SELECT math_spanish_enabled, grade_level FROM student_settings WHERE user_id = ?',
+    sql: 'SELECT math_spanish_enabled, grade_level, high_school_grade_level FROM student_settings WHERE user_id = ?',
     args: [userId],
   })
   const row = result.rows[0]
@@ -22,19 +28,24 @@ export async function getStudentSettings(db: Client, userId: string): Promise<St
   return {
     mathSpanishEnabled: Number(row.math_spanish_enabled) === 1,
     gradeLevel: normalizeGradeLevel(Number(row.grade_level)),
+    highSchoolGradeLevel: normalizeHighSchoolGradeLevel(Number(row.high_school_grade_level)),
   }
 }
 
 export async function setStudentSettings(db: Client, userId: string, settings: StudentSettings): Promise<void> {
+  if (settings.gradeLevel !== null && settings.highSchoolGradeLevel !== null) {
+    throw new Error('A student cannot have both a Grade 3–8 and a high school grade')
+  }
   await db.execute({
     sql: `
-      INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, updated_at)
-      VALUES (?, ?, ?, ?)
+      INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, high_school_grade_level, updated_at)
+      VALUES (?, ?, ?, ?, ?)
       ON CONFLICT(user_id) DO UPDATE SET
         math_spanish_enabled = excluded.math_spanish_enabled,
         grade_level = excluded.grade_level,
+        high_school_grade_level = excluded.high_school_grade_level,
         updated_at = excluded.updated_at
     `,
-    args: [userId, settings.mathSpanishEnabled ? 1 : 0, settings.gradeLevel, Date.now()],
+    args: [userId, settings.mathSpanishEnabled ? 1 : 0, settings.gradeLevel, settings.highSchoolGradeLevel, Date.now()],
   })
 }

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "3738971b2d8832c3c1209db8a9232149b77392470581a5da72f11c192898ab00",
+  "questions": {
+    "1": {
+      "prompt": "The Island Kayak Company charges $35 per person plus $245 for a tour guide. Which function gives the total cost C(x) for x club members?",
+      "choices": ["C(x)=35x", "C(x)=35x+245", "C(x)=35(x+245)", "C(x)=35+(x+245)"],
+      "explanation": "The per-person part costs 35x dollars, and the guide is one fixed $245 charge. Add them: C(x)=35x+245.",
+      "imageAlt": "The $35 per-person and $245 fixed-guide charges and four total-cost formulas are transcribed."
+    },
+    "2": {
+      "prompt": "Which expression is equivalent to 3(x+4)−(2x+7)?",
+      "choices": ["x+5", "x−10", "x−3", "x+11"],
+      "explanation": "Distribute: 3x+12−2x−7. Combine like terms to get x+5.",
+      "imageAlt": "Parenthesized original expression and all four linear results are transcribed with signs."
+    },
+    "3": {
+      "prompt": "K(x)=2x²−5x+3. What is K(−3)?",
+      "choices": ["54", "36", "0", "−18"],
+      "explanation": "Substitute −3: 2(−3)²−5(−3)+3=18+15+3=36.",
+      "imageAlt": "Quadratic K with negative five x, input negative three, and all signed answer values are transcribed."
+    },
+    "4": {
+      "prompt": "Which mapping relation is not a function?",
+      "choices": ["1→A, 2→B, 3→C", "A→3, B→4, C→3", "2→12, 4→8, 6→10", "6→10 and 6→12; 8→10"],
+      "explanation": "In choice (4), one input, 6, points to two different outputs, 10 and 12. A function must assign exactly one output to each input.",
+      "imageAlt": "All four arrow diagrams are transcribed, particularly choice four's two arrows from input six to outputs ten and twelve."
+    },
+    "5": {
+      "prompt": "Tony's investment grew from $1140 on January 1 to $1824 on the same date three years later. Its average rate of change was $19 per what unit?",
+      "choices": ["day", "month", "quarter", "year"],
+      "explanation": "The increase is $1824−$1140=$684. Three years contain 36 months, and $684/36=$19 per month.",
+      "imageAlt": "Beginning and ending investment values, three-year interval, and four time-unit choices are transcribed."
+    },
+    "6": {
+      "prompt": "What is the solution to 3(x−8)+4x=8x+4?",
+      "choices": ["12", "28", "−12", "−28"],
+      "explanation": "Expand to 3x−24+4x=8x+4, so 7x−24=8x+4. Subtract 7x and 4 to get x=−28.",
+      "imageAlt": "Equation with three times x minus eight and four x, and four signed numeric choices are transcribed."
+    },
+    "7": {
+      "prompt": "Ice cream cones cost $1.50, milkshakes $2.00, and Donna can spend $19. She must buy 5 cones. Which inequality determines the maximum milkshakes m she can buy?",
+      "choices": ["1.50(5)+2.00m≥19.00", "1.50(5)+2.00m≤19.00", "1.50c+2.00(5)≥19.00", "1.50c+2.00(5)≤19.00"],
+      "explanation": "The five required cones cost 1.50(5), and m milkshakes cost 2.00m. Their total cannot exceed her $19 budget, so 1.50(5)+2.00m≤19.00.",
+      "imageAlt": "Fixed five-cone count, both unit prices, $19 budget, and four inequalities retain coefficients and inequality directions."
+    },
+    "8": {
+      "prompt": "What is the standard-form product of (3+x)(2x−5)?",
+      "choices": ["3x−2", "2x²+x−15", "2x²−11x−15", "6x−15+2x²−5x"],
+      "explanation": "Expand: 3(2x−5)+x(2x−5)=6x−15+2x²−5x. Combine like terms and order powers to get 2x²+x−15.",
+      "imageAlt": "Both binomial factors and four proposed products are transcribed with all signs and exponents."
+    },
+    "9": {
+      "prompt": "If x=2, y=3√2, and w=2√8, which expression is rational?",
+      "choices": ["x+y", "y−w", "w·y", "y÷x"],
+      "explanation": "The product is (2√8)(3√2)=6√16=24, an integer. The other choices still contain a nonzero multiple of √2 and are irrational.",
+      "imageAlt": "Values x two, y three times square root two, w two times square root eight, and all four operations are transcribed."
+    },
+    "10": {
+      "prompt": "Which product is equivalent to 4x²−3x−27?",
+      "choices": ["(2x+9)(2x−3)", "(2x−9)(2x+3)", "(4x+9)(x−3)", "(4x−9)(x+3)"],
+      "explanation": "Expand choice (3): (4x+9)(x−3)=4x²−12x+9x−27=4x²−3x−27.",
+      "imageAlt": "Quadratic four x squared minus three x minus twenty-seven and all four signed binomial products are transcribed."
+    },
+    "11": {
+      "prompt": "Let f(x)=(2/3)x−4 and g(x)=(1/4)x+1. Which statements are true? I. f(4)=g(4); II. at x=12, f(x)=g(x); III. their graphs meet at (12,4); IV. their graphs meet at (4,12).",
+      "choices": ["II, only", "IV, only", "I and IV", "II and III"],
+      "explanation": "At x=12, f(12)=8−4=4 and g(12)=3+1=4, so the graphs intersect at (12,4). Statements II and III are true; x=4 does not give equal outputs.",
+      "imageAlt": "Both fractional-slope line formulas, four Roman-numeral claims, and all four combinations are transcribed."
+    },
+    "12": {
+      "prompt": "Which sketch represents f(x)=x(x+6)(x+3)?",
+      "choices": ["Cubic graph crossing the x-axis at −6, −3, and 0, falling left and rising right", "Cubic graph crossing at 0 and positive x-values, falling left and rising right", "Sideways S-shaped curve opening to the right", "Sideways S-shaped curve shifted upward and opening to the right"],
+      "explanation": "Each factor gives a zero: x=0, −6, or −3. The leading term is positive x³, so the left tail falls and the right tail rises. Only sketch (1) matches.",
+      "imageAlt": "Four sketches: the first has three zeros negative six, negative three, zero with cubic end behavior; second has nonnegative zeros; third and fourth are sideways curves."
+    },
+    "13": {
+      "prompt": "Starting from p(x)=x², what shift produces f(x)=(x−k)²+5 when k>0?",
+      "choices": ["k units left and 5 up", "k units left and 5 down", "k units right and 5 up", "k units right and 5 down"],
+      "explanation": "Subtracting k inside the square shifts the parabola right by k; adding 5 outside shifts it up by 5.",
+      "imageAlt": "Parent x squared, transformed squared binomial x minus k plus five, positivity of k, and all four directional choices are transcribed."
+    },
+    "14": {
+      "prompt": "Which expression equals (−4x²)³?",
+      "choices": ["−12x⁶", "−12x⁵", "−64x⁶", "−64x⁵"],
+      "explanation": "Cube both coefficient and variable power: (−4)³=−64 and (x²)³=x⁶, so the result is −64x⁶.",
+      "imageAlt": "Negative four x squared inside parentheses raised to the third power, and all four signed monomials are transcribed."
+    },
+    "15": {
+      "prompt": "Which function has the smallest y-intercept? A table for h has (−2,1/4),(−1,1/2),(0,1),(1,2),(2,4). A graph of k is an upward parabola crossing the y-axis at −2.",
+      "choices": ["g(x)=2x−6", "h(x) from the table", "f(x)=√x−2", "k(x) from the graph"],
+      "explanation": "Evaluate at x=0: g(0)=−6, h(0)=1, f(0)=−2, and the k graph crosses the y-axis at −2. The smallest value is −6, from g.",
+      "imageAlt": "All five h-table pairs and k graph's y-intercept are transcribed in the prompt; g and f formulas preserve negative constants and square root."
+    },
+    "16": {
+      "prompt": "What domain fits a function comparing number of emails sent, x, with cell-phone data used, y?",
+      "choices": ["integers", "whole numbers", "rational numbers", "irrational numbers"],
+      "explanation": "The number of emails sent is a count: it can be zero or a positive whole number, not a fraction or a negative number. Thus whole numbers are appropriate.",
+      "imageAlt": "Input x counts emails sent; four number-set choices are transcribed."
+    },
+    "17": {
+      "prompt": "Eric deposits $500 in an account paying 3.5% interest compounded yearly. What function type models the balance after 10 years?",
+      "choices": ["linear", "quadratic", "absolute value", "exponential"],
+      "explanation": "Compounding multiplies the balance by 1.035 each year. Repeated multiplication follows an exponential model, such as 500(1.035)ᵗ.",
+      "imageAlt": "Initial 500 dollars, 3.5 percent annual compounding, ten-year period, and four function types are transcribed."
+    },
+    "18": {
+      "prompt": "For the sequence 4,7,10,13,... and arithmetic formula aₙ=a₁+(n−1)d, which variable is replaced by 3 when finding the tenth term?",
+      "choices": ["a₁", "n", "aₙ", "d"],
+      "explanation": "Consecutive terms increase by 3, so 3 is the common difference d. The tenth term uses n=10 and a₁=4.",
+      "imageAlt": "Four sequence terms, full arithmetic-term formula with subscripts, and four variable choices are transcribed."
+    },
+    "19": {
+      "prompt": "Data set A is 2,5,5,6,6,6,7,8,9. Box plot B has minimum 4, first quartile 5, median 6, third quartile 9, maximum 10. Which comparison is true?",
+      "choices": ["median of A > median of B", "range of A < range of B", "upper quartile of A < upper quartile of B", "lower quartile of A > lower quartile of B"],
+      "explanation": "A's upper half is 6,7,8,9, so its upper quartile is (7+8)/2=7.5. B's box plot marks upper quartile 9. Therefore A's upper quartile is less than B's.",
+      "imageAlt": "All nine A values and B's five-number summary are transcribed in the prompt, as are four inequalities comparing statistics."
+    },
+    "20": {
+      "prompt": "Which system has the same solution as x+3y=10 and −2x−2y=4?",
+      "choices": ["−x+y=6; 2x+6y=20", "−x+y=14; 2x+6y=20", "x+y=6; 2x+6y=20", "x+y=14; 2x+6y=20"],
+      "explanation": "Divide the second original equation by −2 to get x+y=−2. Subtract it from x+3y=10: 2y=12, so y=6 and x=−8. These values satisfy −x+y=14 and 2x+6y=20, the second system.",
+      "imageAlt": "Both original line equations and all four candidate systems are transcribed with signs and constants."
+    },
+    "21": {
+      "prompt": "A triangle pattern has 3,5,7,9 triangles in its first four figures. Which recursive formula represents the counts?",
+      "choices": ["y=2x+3", "y=3x+2", "a₁=2; aₙ=aₙ₋₁+3", "a₁=3; aₙ=aₙ₋₁+2"],
+      "explanation": "The first figure has 3 triangles, and each new figure adds 2. The recurrence is a₁=3 and aₙ=aₙ₋₁+2.",
+      "imageAlt": "Four adjacent-triangle drawings contain three, five, seven, and nine small triangles; four formulas preserve starting terms and recurrence increments."
+    },
+    "22": {
+      "prompt": "Which polynomial has leading coefficient 3 and constant term −4?",
+      "choices": ["3−2x³−4x", "7x³−3x⁵−4", "4−7x+3x³", "−4x²+3x⁴−4"],
+      "explanation": "Choice (4) has highest-power term 3x⁴, so its leading coefficient is 3; its term without x is −4. The other choices fail one or both properties.",
+      "imageAlt": "All four candidate polynomials preserve term signs, powers, coefficients, and constants."
+    },
+    "23": {
+      "prompt": "Sarah bicycles at 22.7 miles per hour. What is her approximate speed in kilometers per minute?",
+      "choices": ["0.2", "0.6", "36.5", "36.6"],
+      "explanation": "Convert using about 1.609 kilometers per mile and 60 minutes per hour: 22.7×1.609/60≈0.609 kilometers per minute, or 0.6 to the nearest tenth.",
+      "imageAlt": "Speed 22.7 miles per hour, target kilometers per minute, and four numeric choices are transcribed."
+    },
+    "24": {
+      "prompt": "Which ordered pair is not on the line through the other three?",
+      "choices": ["(16,18)", "(12,12)", "(9,10)", "(3,6)"],
+      "explanation": "The points (3,6), (9,10), and (12,12) have slope 2/3 and lie on y=(2/3)x+4. At x=16, that line gives 44/3, not 18, so (16,18) is off the line.",
+      "imageAlt": "All four ordered pairs are transcribed with exact coordinates."
+    }
+  }
+}

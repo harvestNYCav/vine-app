@@ -1,0 +1,40 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "This poem was written by a revered 8th-century Chinese poet. Read “A Dream of Mountaineering” and answer questions 11–14. Vocabulary notes follow the poem.",
+    "questionIds": ["english-2022-june-q11", "english-2022-june-q12", "english-2022-june-q13", "english-2022-june-q14"],
+    "passage": {
+      "title": "A Dream of Mountaineering",
+      "credit": "—Po Chü–I · “A Dream of Mountaineering” · from A Hundred and Seventy Chinese Poems (1918), translated by Arthur Waley, Constable and Company Ltd.",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "At night, in my dream, I stoutly climbed a mountain,"},
+        {"number": 2, "text": "Going out alone with my staff of holly-wood.¹"},
+        {"number": 3, "text": "A thousand crags, a hundred hundred valleys—"},
+        {"number": 4, "text": "In my dream-journey none were unexplored"},
+        {"number": 5, "text": "And all the while my feet never grew tired"},
+        {"number": 6, "text": "And my step was as strong as in my young days."},
+        {"number": 7, "text": "Can it be that when the mind travels backward"},
+        {"number": 8, "text": "The body also returns to its old state?"},
+        {"number": 9, "text": "And can it be, as between body and soul,"},
+        {"number": 10, "text": "That the body may languish, while the soul is still strong?"},
+        {"number": 11, "text": "Soul and body—both are vanities:²"},
+        {"number": 12, "text": "Dreaming and waking—both alike unreal."},
+        {"number": 13, "text": "In the day my feet are palsied³ and tottering;"},
+        {"number": 14, "text": "In the night my steps go striding over the hills."},
+        {"number": 15, "text": "As day and night are divided in equal parts—"},
+        {"number": 16, "text": "Between the two, I *get* as much as I *lose*."},
+        {"number": null, "text": ""},
+        {"number": null, "text": "¹ staff of holly-wood — a walking stick"},
+        {"number": null, "text": "² vanities — superficial things"},
+        {"number": null, "text": "³ palsied — shaking"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id": "english-2022-june-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "Lines 5 and 13 serve to emphasize a contrast between", "choices": [{"label": "1", "text": "illusion and reality"}, {"label": "2", "text": "calm and stress"}, {"label": "3", "text": "instinct and reason"}, {"label": "4", "text": "belief and doubt"}], "correct": "1", "explanation": "In the dream, the speaker’s feet never tire; by day, they shake and stagger. The contrast separates the dream’s illusion of youthful strength from waking reality.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2022-june-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "As used in line 10, “languish” most nearly means", "choices": [{"label": "1", "text": "communicate"}, {"label": "2", "text": "deteriorate"}, {"label": "3", "text": "survive"}, {"label": "4", "text": "forget"}], "correct": "2", "explanation": "The speaker contrasts a body weakened by age with a soul that still feels strong. “Languish” means the body deteriorates or loses vigor.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2022-june-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "Lines 15 and 16 suggest that “day and night”", "choices": [{"label": "1", "text": "reflect failure"}, {"label": "2", "text": "nourish creativity"}, {"label": "3", "text": "cause conflict"}, {"label": "4", "text": "ensure balance"}], "correct": "4", "explanation": "The speaker loses physical strength during waking daylight but regains freedom of movement in dreams. Dividing life between day and night lets him gain as much as he loses.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2022-june-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The tone of the poem can best be described as", "choices": [{"label": "1", "text": "desperate"}, {"label": "2", "text": "forgiving"}, {"label": "3", "text": "reflective"}, {"label": "4", "text": "insensitive"}], "correct": "3", "explanation": "The speaker thoughtfully compares his dream journeys with his daytime limitations and asks what they mean for body and soul. That questioning creates a reflective tone.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

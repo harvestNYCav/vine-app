@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "33d51b540521f1708ae32fc9e1af39d89f9c60549fbae4bd77641e2ce7cce8c6",
+  "questions": {
+    "1": {
+      "prompt": "If f(x)=(3x+4)/2, then what is f(8)?",
+      "choices": ["21", "16", "14", "4"],
+      "explanation": "Substitute 8 for x: f(8)=[3(8)+4]/2=(24+4)/2=14.",
+      "imageAlt": "Whole numerator three x plus four over denominator two, input eight, and four numeric choices are transcribed."
+    },
+    "2": {
+      "prompt": "If x≠0, what is the common ratio of x, 2x², 4x³, 8x⁴, 16x⁵, ...?",
+      "choices": ["2x", "2", "x", "(1/2)x"],
+      "explanation": "Divide any term by its predecessor: 2x²/x=2x. The next quotients, such as 4x³/(2x²), are also 2x.",
+      "imageAlt": "Five sequence terms preserve coefficients and increasing powers of x; all four possible ratios are transcribed."
+    },
+    "3": {
+      "prompt": "The expression 36x²−9 is equivalent to which product?",
+      "choices": ["(6x−3)²", "(18x−4.5)²", "(6x+3)(6x−3)", "(18x+4.5)(18x−4.5)"],
+      "explanation": "This is a difference of squares: (6x)²−3²=(6x+3)(6x−3).",
+      "imageAlt": "Difference of squares thirty-six x squared minus nine and all four signed product or square choices are transcribed."
+    },
+    "4": {
+      "prompt": "Given R={(−4,2),(3,6),(x,8),(−1,4)}, which value of x makes R a function?",
+      "choices": ["−4", "−1", "3", "0"],
+      "explanation": "A function cannot assign two different outputs to the same input. The existing x-values are −4, 3, and −1, so x must be a new value; 0 is the only such choice.",
+      "imageAlt": "All four ordered pairs and candidate x-values are transcribed, preserving negative signs."
+    },
+    "5": {
+      "prompt": "If (K,−5) lies on 3x+y=7, what is K?",
+      "choices": ["−8", "−4", "22", "4"],
+      "explanation": "Substitute x=K and y=−5: 3K−5=7. Therefore 3K=12 and K=4.",
+      "imageAlt": "Point K comma negative five and line equation three x plus y equals seven, with four signed choices transcribed."
+    },
+    "6": {
+      "prompt": "Which expression is equivalent to (1/3)x(6x²−3x+9)?",
+      "choices": ["2x²−x+3", "2x²+3x+3", "2x³−x²+3x", "2x³+3x²+3x"],
+      "explanation": "Distribute x/3: (x/3)(6x²)=2x³, (x/3)(−3x)=−x², and (x/3)(9)=3x. The result is 2x³−x²+3x.",
+      "imageAlt": "One-third times x multiplies the entire trinomial; all four candidate polynomials are transcribed with powers and signs."
+    },
+    "7": {
+      "prompt": "Four graphs of polynomial functions are shown. Which graph has zeros of 2 and −3?",
+      "choices": ["Graph (1): upward parabola crossing near x=−2 and x=3", "Graph (2): upward parabola with both crossings left of the y-axis", "Graph (3): upward parabola crossing x=−3 and x=2", "Graph (4): upward parabola with both crossings right of the y-axis"],
+      "explanation": "Zeros occur where the curve meets the x-axis. Graph (3) crosses at x=−3 and x=2, exactly the requested pair.",
+      "imageAlt": "Four upward parabolas: graph one crosses at approximately negative two and positive three; graph two crosses twice left of the y-axis; graph three crosses at negative three and positive two; graph four crosses twice right of the y-axis."
+    },
+    "8": {
+      "prompt": "What is the constant term of 4d+6+3d²?",
+      "choices": ["6", "2", "3", "4"],
+      "explanation": "The constant term has no d attached. In this polynomial, that term is 6.",
+      "imageAlt": "Polynomial four d plus six plus three d squared and four numeric choices are transcribed."
+    },
+    "9": {
+      "prompt": "Emily invests $600 in an account earning 2.4% interest each year, with no deposits or withdrawals. Which expression gives the amount after 4 years?",
+      "choices": ["600(1+0.24)⁴", "600(1−0.24)⁴", "600(1+0.024)⁴", "600(1−0.024)⁴"],
+      "explanation": "Convert 2.4% to decimal 0.024. Annual growth multiplies the balance by 1+0.024 four times, giving 600(1+0.024)⁴.",
+      "imageAlt": "Initial 600 dollars, annual 2.4 percent interest, four-year period, and all four exponential products preserve signs and decimal placements."
+    },
+    "10": {
+      "prompt": "Three data displays are shown. I is a dot plot with counts at 0:2, 1:4, 2:2, 3:3, 4:2, 5:1, 6:1. II is a box plot with minimum 0, first quartile 1, median 2, third quartile 4, maximum 6. III is a frequency histogram with counts at 0:1, 1:3, 2:5, 3:3, 4:4, 5:3, 6:2. Which displays have median 2?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "Display I has 15 data points, with the 8th at 2. Display II marks its median line at 2. Display III has 21 values, and its 11th falls in the 3 bar, so only I and II have median 2.",
+      "imageAlt": "All dot-plot counts, box-plot five-number summary, and histogram frequencies are transcribed in the prompt; choices identify all combinations of I, II, and III."
+    },
+    "11": {
+      "prompt": "Arrange f(x)=−5x², g(x)=0.5x², and h(x)=3x² from narrowest graph to widest.",
+      "choices": ["f, g, h", "g, h, f", "h, f, g", "f, h, g"],
+      "explanation": "For y=ax², larger |a| means a narrower parabola. The absolute coefficients are 5, 3, and 0.5, so the order is f, h, g.",
+      "imageAlt": "All three signed quadratic coefficients and all four orderings are transcribed."
+    },
+    "12": {
+      "prompt": "A lunch survey table shows females: cheeseburgers 32, pizza 44, hot dogs 24; males: cheeseburgers 36, pizza 30, hot dogs 34. What percent of all students preferred pizza?",
+      "choices": ["30", "37", "44", "74"],
+      "explanation": "Pizza was chosen by 44+30=74 students. There were 32+44+24+36+30+34=200 students overall, so 74/200×100=37%.",
+      "imageAlt": "Entire two-row, three-food survey table is transcribed in the prompt, with all four percentage choices."
+    },
+    "13": {
+      "prompt": "Which situation could be modeled by a linear function?",
+      "choices": ["A car's value depreciates by 7% annually.", "A gym charges a $50 initial fee and then $30 monthly.", "Bacteria in a lab double weekly.", "Money in a bank account increases by 0.1% monthly."],
+      "explanation": "The gym adds a fixed $30 for every month after a $50 start, giving a constant rate and a linear model. The other situations change by a percentage or factor each period.",
+      "imageAlt": "Four scenarios are transcribed with all exact fees, percentages, and time periods."
+    },
+    "14": {
+      "prompt": "Which function has the smallest y-intercept? A table for g gives (−2,3),(0,1),(1,0),(3,−2). A graph of k is an upward parabola with vertex (0,−2).",
+      "choices": ["g(x) from the table", "h(x)=√x−3", "k(x) from the graph", "f(x)=x²+2x−1"],
+      "explanation": "At x=0, the y-intercepts are g(0)=1, h(0)=−3, k(0)=−2, and f(0)=−1. The smallest is −3, from h.",
+      "imageAlt": "The g table and k graph vertex are transcribed in the prompt; h is square root of x then minus three, and f is x squared plus two x minus one."
+    },
+    "15": {
+      "prompt": "When solving x²−10x−13=0 by completing the square, which equation is a correct step?",
+      "choices": ["(x−5)²=38", "(x−5)²=12", "(x−10)²=38", "(x−10)²=12"],
+      "explanation": "Move −13 to the right: x²−10x=13. Add (−10/2)²=25 to both sides, obtaining (x−5)²=38.",
+      "imageAlt": "Original quadratic and all four squared-binomial equations are transcribed with constants 38 and 12."
+    },
+    "16": {
+      "prompt": "When 3x²+7x−6+2x³ is in standard form, what is its leading coefficient?",
+      "choices": ["7", "2", "3", "−6"],
+      "explanation": "Standard form begins with the highest power, 2x³, followed by 3x²+7x−6. The coefficient of the leading term is 2.",
+      "imageAlt": "All four original polynomial terms, including cubic term 2x cubed, and numeric choices are transcribed."
+    },
+    "17": {
+      "prompt": "Which equations have the same solution? I. 10(x−5)=−15; II. 4+2(x−2)=9; III. (1/3)x=3/2.",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "Equation I gives x=3.5. Equation II gives 2x=9 and x=4.5; equation III gives x=(3/2)·3=4.5. Thus II and III share the solution.",
+      "imageAlt": "All three equations are transcribed with negative fifteen and the one-third and three-halves fractions; choices list each combination."
+    },
+    "18": {
+      "prompt": "An organism has C(d)=120·2³ᵈ cells after d days. Which expression is equivalent?",
+      "choices": ["C(d)=240³ᵈ", "C(d)=960·2ᵈ", "C(d)=120·6ᵈ", "C(d)=120·8ᵈ"],
+      "explanation": "Apply (a^b)^d=a^(bd): 2^(3d)=(2³)^d=8^d. Keep the 120 multiplier, so C(d)=120·8^d.",
+      "imageAlt": "Original 120 times two raised to the product three d, with four alternative exponential models fully transcribed."
+    },
+    "19": {
+      "prompt": "George rewrites 10x²−12x−16x=6 as 2(5x²−14x)=2(3), then 5x²−14x=3. Which properties justify those steps? A addition property of equality; B division property of equality; C commutative property of addition; D distributive property.",
+      "choices": ["A and C", "A and B", "D and C", "D and B"],
+      "explanation": "Factoring 2 out of each side uses the distributive property in reverse (D). Dividing both sides by 2 to remove the common factor uses the division property of equality (B).",
+      "imageAlt": "Original and two rewritten equations, four property labels, and all paired-property choices are fully transcribed."
+    },
+    "20": {
+      "prompt": "A sequence has a₁=−2 and aₙ=3aₙ₋₁+1. What is a₄?",
+      "choices": ["−41", "−14", "22", "67"],
+      "explanation": "Apply the rule successively: a₂=3(−2)+1=−5, a₃=3(−5)+1=−14, and a₄=3(−14)+1=−41.",
+      "imageAlt": "Initial value negative two, recurrence three times previous term plus one, and four signed values are transcribed."
+    },
+    "21": {
+      "prompt": "A swimmer finishes 1500 meters in 15.42 minutes. One meter is about 3.281 feet. Which product converts speed to miles per hour?",
+      "choices": ["(1500 m/15.42 min)·(60 min/1 hr)·(1 m/3.281 ft)·(1 mile/5280 ft)", "(1500 m/15.42 min)·(60 min/1 hr)·(3.281 ft/1 m)·(1 mile/5280 ft)", "(1500 m/15.42 min)·(3.281 ft/1 m)·(1 mile/5280 ft)", "(1500 m/15.42 min)·(60 min/1 hr)·(1 mile/5280 ft)"],
+      "explanation": "Multiply meters per minute by 60 minutes per hour, 3.281 feet per meter, and 1 mile per 5280 feet. All intermediate units cancel, leaving miles per hour.",
+      "imageAlt": "All four conversion chains preserve 1500 meters per 15.42 minutes, 60 minutes per hour, 3.281 feet per meter, and 5280 feet per mile with numerators and denominators."
+    },
+    "22": {
+      "prompt": "A graph of rocket height h(t) starts at (0,0), peaks at (2,64), and returns to ground at (4,0), with closed endpoints. What is its domain?",
+      "choices": ["(0,4)", "[0,4]", "(0,64)", "[0,64]"],
+      "explanation": "The horizontal coordinate t represents time. The graph includes every time from launch at t=0 through landing at t=4, including both endpoints, so the domain is [0,4].",
+      "imageAlt": "Downward parabolic rocket path through (0,0), (2,64), and (4,0) with filled points at launch and landing; time axis extends from zero to five seconds."
+    },
+    "23": {
+      "prompt": "Electronic-device hours and math scores are (3,85),(1,99),(4,81),(0,98),(3,90),(7,65),(5,78),(2,90). What is the correlation coefficient to the nearest hundredth?",
+      "choices": ["−0.98", "−0.95", "0.98", "0.95"],
+      "explanation": "Computing the Pearson correlation from the eight pairs gives r≈−0.9772, which rounds to −0.98. The negative sign matches the downward trend as device time increases.",
+      "imageAlt": "All eight time-and-score pairs from the original table are transcribed in the prompt, along with four signed decimal correlations."
+    },
+    "24": {
+      "prompt": "The volume of a trapezoidal prism is V=(1/2)a(b+c)h. Which equation solves for b?",
+      "choices": ["b=V/(2ah)+c", "b=V/(2ah)−c", "b=2V/(ah)+c", "b=2V/(ah)−c"],
+      "explanation": "Multiply by 2 and divide by ah: 2V/(ah)=b+c. Subtract c to isolate b, giving b=2V/(ah)−c.",
+      "imageAlt": "Prism volume formula with one-half times a times b plus c times h, and four solved formulas preserve fraction bars and plus/minus c."
+    }
+  }
+}

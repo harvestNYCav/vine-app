@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "a3bef99b3467bc90018ff884f4f5ea8f4cb7b904f3b5a4219b47488a8dea65cb",
+  "questions": {
+    "1": {
+      "prompt": "Which expression equals sin 30°?",
+      "choices": ["tan 30°", "sin 60°", "cos 60°", "cos 30°"],
+      "explanation": "Sine of an angle equals cosine of its complement. The complement of 30° is 60°, so sin 30° = cos 60°.",
+      "imageAlt": "Printed trigonometric-identity question; all angles and functions are in accessible text."
+    },
+    "2": {
+      "prompt": "In triangle SRA, K lies on SR and P lies on SA. Segment KP is drawn so angle SKP ≅ angle SRA. If SK = 10, SP = 8, and PA = 6, find KR to the nearest tenth.",
+      "choices": ["4.8", "7.5", "8.0", "13.3"],
+      "explanation": "Triangles SKP and SRA share angle S and have the given equal angles at K and R, so they are similar. SA = 8 + 6 = 14, and SK/SR = SP/SA = 8/14. Thus SR = 10(14)/8 = 17.5, and KR = SR − SK = 7.5.",
+      "imageAlt": "Large triangle SRA has S at top, R lower left, and A lower right. K lies on SR and P on SA; segment KP spans the interior parallel in appearance to RA. The congruent angles are SKP at K and SRA at R."
+    },
+    "3": {
+      "prompt": "A coordinate graph shows an axis-aligned rectangle extending vertically from y = −2 to y = 6. Reflection over which line maps the rectangle onto itself?",
+      "choices": ["y = 2", "y = 10", "y = (1/2)x − 3", "y = −(1/2)x + 7"],
+      "explanation": "The horizontal midline is halfway between the rectangle's top and bottom: (6 + (−2))/2 = 2. Reflecting over y = 2 swaps those edges and maps the rectangle onto itself.",
+      "imageAlt": "Coordinate grid with an axis-aligned rectangle. Its top horizontal edge is at y = 6, bottom at y = −2, left edge at x = 2, and right edge at x = 18."
+    },
+    "4": {
+      "prompt": "A roof has two congruent rectangular faces, each 40 feet by 16 feet. Shingles are sold in bundles covering 33 1/3 square feet each. What is the minimum number of bundles needed to cover both faces?",
+      "choices": ["20", "2", "39", "4"],
+      "explanation": "The roof area is 2(40)(16) = 1280 square feet. Each bundle covers 33 1/3 = 100/3 square feet, so 1280 ÷ (100/3) = 38.4. Because bundles are whole, purchase 39.",
+      "imageAlt": "Two views of a pitched roof show its two rectangular sloping faces. One face is labeled 40 ft along its length and 16 ft along its slope; the other is congruent. The triangular end walls are not shingled."
+    },
+    "5": {
+      "prompt": "Which equation is perpendicular to y − 3x = 4?",
+      "choices": ["y = −(1/3)x − 4", "y = (1/3)x + 4", "y = −3x + 4", "y = 3x − 4"],
+      "explanation": "Rewrite the given line as y = 3x + 4; its slope is 3. A perpendicular line has slope −1/3, which is the first choice.",
+      "imageAlt": "Printed line-slope question; the equation and signed fractional slopes are available in accessible text."
+    },
+    "6": {
+      "prompt": "A ventilation tunnel is dug from ground level to a vertical mine shaft. The horizontal ground distance is 50 feet, and the tunnel makes a 47° angle with the ground. Find the tunnel length to the nearest foot.",
+      "choices": ["47", "54", "68", "73"],
+      "explanation": "The tunnel is the hypotenuse and the 50-foot ground distance is adjacent to 47°. Thus cos 47° = 50/L, so L = 50/cos 47° ≈ 73 feet.",
+      "imageAlt": "Right-triangle mine diagram: horizontal ground segment from the top of the vertical shaft to the tunnel entrance is labeled 50 ft. A diagonal tunnel descends from the entrance to the shaft bottom and makes a 47° angle with the horizontal ground."
+    },
+    "7": {
+      "prompt": "Triangle BLU has vertices B(−3, −2), L(−2, 5), and U(1, 1). What is its area?",
+      "choices": ["11", "12.5", "14", "17.1"],
+      "explanation": "From B, vectors BL = (1, 7) and BU = (4, 3). The area is half the absolute determinant: |1·3 − 7·4|/2 = 25/2 = 12.5 square units.",
+      "imageAlt": "Coordinate grid shows B at (−3, −2), L at (−2, 5), and U at (1, 1). Connecting the points makes a narrow triangle left of the y-axis, with U just right of it."
+    },
+    "8": {
+      "prompt": "Triangle CAR maps onto triangle BUS by rigid motions. If AR = 3x + 4, RC = 5x − 10, CA = 2x + 6, and SB = 4x − 4, find SB.",
+      "choices": ["6", "16", "20", "28"],
+      "explanation": "The ordered names give C↔B, A↔U, and R↔S, so side RC corresponds to SB. Set 5x − 10 = 4x − 4 to get x = 6. Then SB = 4(6) − 4 = 20.",
+      "imageAlt": "Triangle CAR at left has C upper left, A lower left, and R at right. Its rigid-motion image triangle BUS at right has B upper right, U upper left, and S below. Corresponding vertices are C/B, A/U, and R/S."
+    },
+    "9": {
+      "prompt": "Triangle GHJ is dilated by scale factor 1/2 centered at B to triangle CDF. If angle DFC = 40°, what is angle HJG?",
+      "choices": ["20°", "40°", "60°", "80°"],
+      "explanation": "Dilation preserves angle measures. The vertex order gives J↔F, so angle HJG corresponds to angle DFC and also measures 40°.",
+      "imageAlt": "Larger triangle GHJ is above smaller triangle CDF. G and C are left base vertices, H and D top vertices, J and F right base vertices. Dilation center B lies below the smaller triangle."
+    },
+    "10": {
+      "prompt": "Directed segment AJ has endpoints A(5, 7) and J(−10, −8). E lies on AJ with AE:EJ = 2:3. What are E's coordinates?",
+      "choices": ["(1, −1)", "(−5, −3)", "(−4, −2)", "(−1, 1)"],
+      "explanation": "A 2:3 split puts E two fifths of the way from A to J. The displacement J−A is (−15, −15); two fifths is (−6, −6). Add to A(5, 7) to obtain E(−1, 1).",
+      "imageAlt": "Printed directed-segment question; signed coordinates, ratio, and choices are in accessible text."
+    },
+    "11": {
+      "prompt": "A truck rests on a 75-foot-long tipping ramp raised 30° above the ground. What is the height x of its upper end, to the nearest tenth of a foot?",
+      "choices": ["68.7", "65.0", "43.3", "37.5"],
+      "explanation": "The height is opposite the 30° tipping angle, and the 75-foot ramp is the hypotenuse. Hence x = 75 sin 30° = 75(0.5) = 37.5 feet.",
+      "imageAlt": "Truck on an inclined rectangular ramp. A dashed vertical line marks upper-end height x, a dashed horizontal ground line runs to the lower ramp end, and a 30° angle is stated between ramp and ground. The ramp length is 75 ft."
+    },
+    "12": {
+      "prompt": "In right triangle MET, altitude ES is drawn from right-angle vertex E to hypotenuse MT. If ME = 6 and SM = 4, find MT.",
+      "choices": ["9", "8", "5", "4"],
+      "explanation": "The leg-projection theorem gives ME² = MT × MS. Substitute 6² = MT × 4, so MT = 9.",
+      "imageAlt": "Right triangle MET has M at lower left, T lower right, and right-angle vertex E above. S lies on hypotenuse MT, and altitude ES descends from E to S."
+    },
+    "13": {
+      "prompt": "In square CASH, diagonals AH and CS intersect at Z. Which angle-measure statement is true?",
+      "choices": ["angle ACZ > angle ZCH", "angle ACZ < angle ASZ", "angle AZC = angle SHC", "angle AZC = angle ZCH"],
+      "explanation": "The diagonals of a square are perpendicular, so angle AZC is 90°. The corner angle SHC of the square is also 90°, making those measures equal.",
+      "imageAlt": "Square CASH has A upper left, S upper right, H lower right, and C lower left. Both diagonals AH and CS are drawn and intersect at center Z."
+    },
+    "14": {
+      "prompt": "From external point C, secants CFD and CHE cut circle O at near points F and H and far points D and E. If arc DE = 136° and angle C = 44°, what is the measure of arc FH?",
+      "choices": ["46°", "48°", "68°", "88°"],
+      "explanation": "For two secants meeting outside a circle, angle C equals half the difference of the intercepted arcs. Thus 44 = (136 − arc FH)/2, so arc FH = 136 − 88 = 48°.",
+      "imageAlt": "Point C is left of circle O. Upper secant passes through near point F and far point D; lower secant passes through near point H and far point E. Arc DE is the far-right arc, and arc FH is the short near-left arc."
+    },
+    "15": {
+      "prompt": "A right circular cylinder has diameter 8 inches and height 12 inches. Which cross section is perpendicular to its base and passes through the base's center?",
+      "choices": ["circle of radius 4 in", "circle of radius 8 in", "rectangle 4 in by 12 in", "rectangle 8 in by 12 in"],
+      "explanation": "A vertical plane through the cylinder's central axis cuts a rectangle. Its width is the entire base diameter, 8 inches, and its height is the cylinder height, 12 inches.",
+      "imageAlt": "Four pictured choices: (1) circle with center-to-edge segment labeled 4, (2) circle with center-to-edge segment labeled 8, (3) rectangle width 4 and height 12 with right-angle corners, (4) rectangle width 8 and height 12 with right-angle corners."
+    },
+    "16": {
+      "prompt": "Line AB passes through A(−2, 6) and B(4, 0). Dilation by scale factor 1/2 about the origin maps it to line CD. Which equation represents CD?",
+      "choices": ["y = −x + 4", "y = −x + 2", "y = −(1/2)x + 4", "y = −(1/2)x + 2"],
+      "explanation": "The original slope is (0−6)/(4−(−2)) = −1, and its y-intercept is 4. A dilation centered at the origin preserves slope and halves the intercept, so the image is y = −x + 2.",
+      "imageAlt": "Coordinate grid shows a descending line through A(−2, 6), B(4, 0), and the y-intercept (0, 4). The scale factor and center are given in text."
+    },
+    "17": {
+      "prompt": "In parallelogram ABCD, diagonals AC and BD are perpendicular, AC = 12, and BD = 16. What is the perimeter?",
+      "choices": ["10", "24", "40", "56"],
+      "explanation": "Parallelogram diagonals bisect each other. Their perpendicular half-lengths are 6 and 8, making each side the hypotenuse of a right triangle: √(6² + 8²) = 10. Four sides give perimeter 40.",
+      "imageAlt": "Printed parallelogram question; perpendicular diagonals and their full lengths are specified in accessible text."
+    },
+    "18": {
+      "prompt": "Right triangle CAT has angle A = 90°. Altitude AE drops to hypotenuse CT at E. Which proportion is always true?",
+      "choices": ["CE/AE = AE/ET", "AE/CE = AE/ET", "AC/CE = AT/ET", "CE/AC = AC/ET"],
+      "explanation": "The altitude to a right triangle's hypotenuse is the geometric mean of the two hypotenuse segments: AE² = CE × ET. This rearranges to CE/AE = AE/ET.",
+      "imageAlt": "Right triangle CAT has C left, T right, and right-angle vertex A above the hypotenuse CT. Point E lies between C and T, and altitude AE drops vertically to CT."
+    },
+    "19": {
+      "prompt": "A rectangular sandbox is 43 inches long and 30 inches wide. It is filled 9 inches deep with sand sold in 0.5-cubic-foot bags. What is the minimum number of bags needed?",
+      "choices": ["14", "13", "7", "4"],
+      "explanation": "The sand volume is 43×30×9 = 11,610 cubic inches, or 11,610/1,728 ≈ 6.72 cubic feet. At 0.5 cubic foot per bag, 6.72/0.5 ≈ 13.44, so 14 whole bags are needed.",
+      "imageAlt": "Printed volume-and-unit-conversion question; dimensions, bag volume, and choices are all in accessible text."
+    },
+    "20": {
+      "prompt": "Parallelogram EATK has diagonals ET and AK. Which extra condition always proves it is a rhombus?",
+      "choices": ["EA ⟂ AT", "EA ≅ AT", "ET ≅ AK", "ET ≅ AT"],
+      "explanation": "EA and AT are adjacent sides. If they are congruent in a parallelogram, opposite sides are congruent as well, making all four sides equal and the figure a rhombus.",
+      "imageAlt": "Printed parallelogram-property question; ordered vertices, named diagonals, and every segment comparison are in accessible text."
+    },
+    "21": {
+      "prompt": "Horizontal lines ABCD and EHK are parallel. Transversal MBHP crosses them at B and H, and transversal NCHL at C and H. If BC ≅ BH and angle NCD = 62°, find angle PHK.",
+      "choices": ["118°", "68°", "62°", "56°"],
+      "explanation": "Angle BCH is vertical to angle NCD, so angle BCH = 62°. Triangle BCH has BC = BH, making the base angle BHC also 62°. Then its angle CBH is 180° − 62° − 62° = 56°. Because the horizontal lines are parallel, angle PHK corresponds to angle CBH, so it is 56°.",
+      "imageAlt": "Two horizontal parallel lines: upper A-B-C-D and lower E-H-K. A diagonal M-B-H-P slopes down to the right, while diagonal N-C-H-L slopes down to the left. B and C lie on the upper line, H on the lower; BC and BH are marked congruent. Angle NCD is at C between upward-right CN and rightward CD."
+    },
+    "22": {
+      "prompt": "Distinct non-right triangles YEG and POM have angle G ≅ angle M. Which additional statement always proves triangle YEG ≅ triangle POM?",
+      "choices": ["angle E ≅ angle O and angle Y ≅ angle P", "YG ≅ PM and YE ≅ PO", "a sequence of rigid motions maps angle E onto angle O and segment YE onto segment PO", "a sequence of rigid motions maps Y to P and segment YG onto segment PM"],
+      "explanation": "The third statement supplies angle E ≅ angle O and side YE ≅ PO. Together with the given angle G ≅ angle M, that is two corresponding angles and a non-included corresponding side, establishing congruence by AAS.",
+      "imageAlt": "Printed congruence question; the given angle pair and all four candidate facts are available in accessible text."
+    },
+    "23": {
+      "prompt": "Triangles ABD and CBE share vertex B. A, E, B are collinear; B, D, C are collinear; segments AD and CE cross at F; and angle ADB ≅ angle CEB. Which statement cannot be proven?",
+      "choices": ["triangle ADB ≅ triangle CEB", "angle EAF ≅ angle DCF", "triangle ADB ~ triangle CEB", "triangle EAF ~ triangle DCF"],
+      "explanation": "Triangles ADB and CEB have the given equal angles at D and E and share the angle at B, so they are similar by AA. Similarity also gives the angle equality at A and C, and the smaller triangles EAF and DCF are similar. No equal side lengths are given, so congruence of the large triangles cannot be proved.",
+      "imageAlt": "B, D, C lie in that order on a horizontal base. A is above D; E lies on slanted side BA. Vertical AD and diagonal EC intersect at F. Large triangles ABD and CBE overlap, and the specified equal angles are ADB at D and CEB at E."
+    },
+    "24": {
+      "prompt": "A cylindrical water tank must hold at least 100,000 gallons and have height exactly 30 feet. One cubic foot holds 7.48 gallons. What minimum diameter is needed, to the nearest foot?",
+      "choices": ["12", "24", "65", "75"],
+      "explanation": "The tank needs at least 100,000/7.48 ≈ 13,369 cubic feet. With V = πr²(30), r = √(13,369/(30π)) ≈ 11.91 feet. The diameter is about 23.82 feet, which rounds to 24 feet.",
+      "imageAlt": "Printed cylinder-capacity question; gallon target, exact height, conversion factor, and choices are fully in accessible text."
+    }
+  }
+}

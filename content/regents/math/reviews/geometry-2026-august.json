@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "f70ed8b4ed6474248b0c88062b3268908a637b38c91c94fe29680ece35c12bb5",
+  "questions": {
+    "1": {
+      "prompt": "Triangle R'S'T' is the image of triangle RST. Which transformation would make the two triangles congruent?",
+      "choices": ["a vertical stretch with a scale factor of 4", "a horizontal stretch with a scale factor of 3", "a translation 3 units right and 4 units up", "a dilation centered at the origin with a scale factor of 3"],
+      "explanation": "A translation moves every point the same distance and direction without changing any length or angle. Each listed stretch or dilation changes at least one length, so only the translation guarantees congruent triangles.",
+      "imageAlt": "Printed transformation question. The complete prompt and all four transformations are provided as accessible text."
+    },
+    "2": {
+      "prompt": "Right triangle ABC has angle B = 90°, AB = 10.3, and hypotenuse AC = 14.8. What is angle C to the nearest degree?",
+      "choices": ["35°", "44°", "46°", "55°"],
+      "explanation": "AB is opposite angle C and AC is the hypotenuse, so sin C = 10.3/14.8. Taking the inverse sine gives C ≈ 44.1°, or 44° to the nearest degree.",
+      "imageAlt": "Right triangle ABC has vertical side AB, horizontal side BC, sloping hypotenuse AC, and a right-angle mark at B."
+    },
+    "3": {
+      "prompt": "Scalene triangle ABC maps to KLM by a rotation, and triangle XYZ maps to KLM by a translation. Which statement must be true?",
+      "choices": ["BC ≅ XY", "KM ≅ YZ", "∠A ≅ ∠L", "∠B ≅ ∠Y"],
+      "explanation": "Both transformations preserve angles. The name order says B corresponds to L in the first mapping, and Y corresponds to L in the second. Therefore angle B is congruent to angle Y.",
+      "imageAlt": "Printed correspondence question with no separate diagram. The accessible text preserves the triangle-name order and all congruence symbols."
+    },
+    "4": {
+      "prompt": "A solid metal sphere has diameter 3.5 cm and density 10.5 grams per cubic centimeter. What is its mass to the nearest tenth of a gram?",
+      "choices": ["134.7", "179.6", "235.7", "1885.7"],
+      "explanation": "The radius is 3.5/2 = 1.75 cm. Volume is (4/3)π(1.75)³ ≈ 22.45 cm³, and mass is density times volume: 10.5 × 22.45 ≈ 235.7 grams.",
+      "imageAlt": "Printed sphere-density question. Diameter, density, units, and choices are fully available in accessible text."
+    },
+    "5": {
+      "prompt": "In triangle ABC, D is the midpoint of AC and E is the midpoint of BC. Medians AE and BD meet at F. Which statement is always true?",
+      "choices": ["AE = 3(FE)", "BF = 3(FD)", "AF = BF", "AD = BE"],
+      "explanation": "The medians meet at the centroid F. A centroid divides each median in a 2:1 ratio measured from the vertex, so AF = 2FE and AE = AF + FE = 3FE.",
+      "imageAlt": "Triangle ABC has A at the top, B at lower left, and C at lower right. D is midway along AC and E midway along BC. The medians AE and BD cross at F."
+    },
+    "6": {
+      "prompt": "A square rotates continuously around one of its sides. Which three-dimensional solid is formed?",
+      "choices": ["cube", "sphere", "cylinder", "pyramid"],
+      "explanation": "The fixed side becomes the axis. Every point on the opposite side traces a circle of constant radius, so the swept solid has circular bases and a constant cross-section: a cylinder.",
+      "imageAlt": "Printed solid-of-revolution question. The square's rotation axis and choices are described in accessible text."
+    },
+    "7": {
+      "prompt": "In triangle TRU, side RU extends through U to E. The exterior angle TUE measures 120°, and angle R is twice angle T. What is angle R?",
+      "choices": ["40°", "60°", "80°", "120°"],
+      "explanation": "By the exterior-angle theorem, angle R plus angle T is 120°. If angle T is x, angle R is 2x, so 3x = 120 and angle R = 80°.",
+      "imageAlt": "Triangle TRU has R and U on a horizontal base, T above them, and the base extended right from U to E. The exterior angle at U is TUE."
+    },
+    "8": {
+      "prompt": "A graphed hexagon has a horizontal line of reflection symmetry. Which line maps the hexagon onto itself?",
+      "choices": ["y = −1", "x = −1", "the y-axis", "the x-axis"],
+      "explanation": "The top horizontal side is at y = 4 and the bottom is at y = −6. Their midpoint is y = (4 − 6)/2 = −1. The left and right inward vertices also lie at y = −1, so reflecting across y = −1 preserves the hexagon.",
+      "imageAlt": "Coordinate grid shows a six-sided figure with top edge at y = 4, bottom edge at y = −6, and inward vertices on y = −1. Its left and right sides lean in opposite directions."
+    },
+    "9": {
+      "prompt": "In scalene triangle MAT, H lies on MT, and MH ≅ TH ≅ AH. Which angle is always congruent to angle HTA?",
+      "choices": ["∠MAH", "∠TAH", "∠AMH", "∠THA"],
+      "explanation": "Within triangle AHT, sides TH and AH are congruent. The angles opposite those equal sides are the angles at A and T, so ∠TAH ≅ ∠HTA.",
+      "imageAlt": "Scalene triangle MAT has M at upper left, A at upper right, and T below. H is on side MT, and segment AH joins A to H. The printed statement marks MH, TH, and AH congruent."
+    },
+    "10": {
+      "prompt": "A rectangular pyramid has a 16-by-12 base and volume 1536 cubic units. What is its height?",
+      "choices": ["24", "16", "12", "8"],
+      "explanation": "For a pyramid, V = (1/3)Bh. The base area is 16 × 12 = 192, so 1536 = (1/3)(192)h = 64h. Thus h = 24.",
+      "imageAlt": "Printed rectangular-pyramid question; both base dimensions and volume are available in accessible text."
+    },
+    "11": {
+      "prompt": "Right triangle ABC has angle C = 90°, hypotenuse AB = 24 inches, and angle B = 37°. Find BC to the nearest inch.",
+      "choices": ["14", "18", "19", "30"],
+      "explanation": "BC is adjacent to angle B, so cos 37° = BC/24. Therefore BC = 24 cos 37° ≈ 19.17 inches, or 19 inches to the nearest inch.",
+      "imageAlt": "Right triangle ABC has horizontal leg BC, vertical leg CA, hypotenuse BA labeled 24 inches, a right-angle mark at C, and a 37-degree angle at B."
+    },
+    "12": {
+      "prompt": "Segment RT has endpoints R(−5, 6) and T(3, 2). Point S lies on RT with RS:ST = 3:1. What are S's coordinates?",
+      "choices": ["(−3, 5)", "(−1, 4)", "(0, 3)", "(1, 3)"],
+      "explanation": "A 3:1 ratio places S three fourths of the way from R to T. The displacement is (8, −4), and three fourths is (6, −3). Add this to R(−5, 6) to get S(1, 3).",
+      "imageAlt": "Printed coordinate-division question. Both signed endpoints, the 3:1 ratio, and four coordinate choices are available in accessible text."
+    },
+    "13": {
+      "prompt": "Which sequence of transformations maps the graphed trapezoid ABCD onto trapezoid EFGH?",
+      "choices": ["translate 8 units down, then rotate 90° counterclockwise about the origin", "reflect over the x-axis, then translate 8 units right", "rotate 180° about the origin", "reflect over y = x"],
+      "explanation": "Reflecting the upper trapezoid across the x-axis moves it below the axis and reverses its top and bottom edge positions. Translating that reflection 8 units right aligns every corresponding vertex with EFGH.",
+      "imageAlt": "Coordinate grid shows trapezoid ABCD above and left of the origin, with A and B on its shorter top base and D and C on its longer bottom base. Trapezoid EFGH is below and right of the origin, with E and F on its shorter bottom base and H and G on its longer top base."
+    },
+    "14": {
+      "prompt": "In parallelogram PARK, angle P = (3x + 42)° and angle K = (5x − 22)°. What is angle R?",
+      "choices": ["138°", "102°", "78°", "42°"],
+      "explanation": "P and K are adjacent angles in the named parallelogram, so they sum to 180°: (3x + 42) + (5x − 22) = 180. This gives x = 20 and angle P = 102°. Opposite angle R is also 102°.",
+      "imageAlt": "Printed parallelogram-angle question. The accessible text identifies the vertex order PARK and preserves both angle expressions."
+    },
+    "15": {
+      "prompt": "Triangle CEM has vertices C(−2, −1), E(−2, 4), and M(3, 4). What is its perimeter?",
+      "choices": ["10 + 5√2", "15√2", "12.5", "25"],
+      "explanation": "CE is vertical with length 5 and EM is horizontal with length 5. By the Pythagorean theorem, CM = √(5² + 5²) = 5√2. The perimeter is 5 + 5 + 5√2 = 10 + 5√2.",
+      "imageAlt": "Coordinate grid shows C at (−2, −1), E at (−2, 4), and M at (3, 4), forming a right triangle with vertical CE and horizontal EM."
+    },
+    "16": {
+      "prompt": "What is the slope of the perpendicular bisector of segment MT with endpoints M(−2, −7) and T(3, 8)?",
+      "choices": ["1/3", "−1/3", "3", "−3"],
+      "explanation": "The slope of MT is (8 − (−7))/(3 − (−2)) = 15/5 = 3. A line perpendicular to MT has the negative reciprocal slope, −1/3.",
+      "imageAlt": "Printed coordinate-slope question. Signed coordinates and all fraction choices are available in accessible text."
+    },
+    "17": {
+      "prompt": "Right triangles SLW and LOW share side LW. Given angle S = 45°, angle LWO = 30°, and SW = 18√2, find OW.",
+      "choices": ["9", "9√2", "9√3", "18"],
+      "explanation": "Triangle SLW is a 45-45-90 triangle with hypotenuse SW = 18√2, so its leg LW = 18. In right triangle LOW, LW is the hypotenuse and OW is adjacent to the 30° angle at W. Thus OW = 18 cos 30° = 9√3.",
+      "imageAlt": "Point S is above L and W; triangle SLW is right-angled at L and has hypotenuse SW. Triangle LOW is right-angled at O with vertical leg OL and horizontal leg OW; diagonal LW is its hypotenuse."
+    },
+    "18": {
+      "prompt": "Which equation represents a circle centered at (0, −4) with diameter 30?",
+      "choices": ["x² + (y − 4)² = 225", "x² + (y + 4)² = 225", "x² + (y − 4)² = 900", "x² + (y + 4)² = 900"],
+      "explanation": "The radius is half the diameter, 15, so r² = 225. In (x − h)² + (y − k)² = r², center (0, −4) gives x² + (y + 4)² = 225.",
+      "imageAlt": "Printed circle-equation question. The accessible text preserves the negative center coordinate, diameter, squared terms, and four choices."
+    },
+    "19": {
+      "prompt": "Jane fills an 8-inch-square-base baking pan with batter to a height of 1.5 inches. About how many cups is that, if 1 cup = 14.4375 cubic inches? The pan is 2 inches deep.",
+      "choices": ["7", "2", "9", "4"],
+      "explanation": "Batter volume is 8 × 8 × 1.5 = 96 cubic inches; the full 2-inch pan depth is not used. Divide 96 by 14.4375 cubic inches per cup to get about 6.65 cups, which is approximately 7 cups.",
+      "imageAlt": "Printed baking-pan volume question. Accessible text includes the square base, full depth, batter depth, and cup conversion."
+    },
+    "20": {
+      "prompt": "In right triangle WSA, altitude SD to hypotenuse WA is 16 and leg SA is 34. Find WD to the nearest tenth.",
+      "choices": ["4.3", "6.8", "7.5", "8.5"],
+      "explanation": "In right triangle SDA, DA = √(34² − 16²) = 30. The altitude-to-hypotenuse theorem gives SD² = WD × DA, so WD = 16²/30 ≈ 8.53, or 8.5 to the nearest tenth.",
+      "imageAlt": "Right triangle WSA has right angle at S and hypotenuse WA along the bottom. Altitude SD drops from S to point D on WA. SD is labeled 16 and sloping leg SA is labeled 34."
+    },
+    "21": {
+      "prompt": "Quadrilateral WXYZ is the image of ABCD after a dilation by scale factor 1/2. Which statement is always true?",
+      "choices": ["AB = (1/2)WX", "m∠W = (1/2)m∠A", "area of WXYZ = (1/2)(area of ABCD)", "perimeter of WXYZ = (1/2)(perimeter of ABCD)"],
+      "explanation": "A dilation by 1/2 halves every side length, so the perimeter is also halved. Angles remain equal, and area scales by (1/2)² = 1/4, not 1/2.",
+      "imageAlt": "Printed dilation question. The accessible text preserves the one-half scale factor and each distinct statement about side length, angle, area, or perimeter."
+    },
+    "22": {
+      "prompt": "Triangle AHL has sides AH = 10 and HL = 12 with included angle H = 40°. What is its area to the nearest square unit?",
+      "choices": ["39", "46", "60", "77"],
+      "explanation": "Use the area formula with two sides and their included angle: A = (1/2)(10)(12)sin 40° = 60 sin 40° ≈ 38.57. Rounded to the nearest square unit, the area is 39.",
+      "imageAlt": "Printed triangle-area question. The two side lengths, included angle, units, and choices are available in accessible text."
+    },
+    "23": {
+      "prompt": "Parallelogram ABCD has diagonals AC and BD meeting at E. Which extra fact is sufficient to prove ABCD is a rhombus?",
+      "choices": ["AE ≅ EC", "AC ≅ BD", "m∠DEC = 90°", "m∠CDA = 90°"],
+      "explanation": "A parallelogram is a rhombus if its diagonals are perpendicular. Angle DEC is formed by the diagonals; if it is 90°, the diagonals are perpendicular. The other conditions are already true for every parallelogram or would instead establish a rectangle.",
+      "imageAlt": "Printed parallelogram proof question. The accessible text states the diagonal intersection and preserves each segment-congruence or right-angle choice."
+    },
+    "24": {
+      "prompt": "The line y = −2x − 6 is dilated by scale factor 1/2 about center (−1, −4). What is an equation of its image?",
+      "choices": ["y = −x − 3", "y = −x − 6", "y = −2x − 3", "y = −2x − 6"],
+      "explanation": "The center (−1, −4) lies on the line because −2(−1) − 6 = −4. A dilation centered on a line maps that line onto itself, so the image still has equation y = −2x − 6.",
+      "imageAlt": "Printed line-dilation question. The accessible text preserves the negative slope, intercept, center coordinates, one-half factor, and four equations."
+    }
+  }
+}

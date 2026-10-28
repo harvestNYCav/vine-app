@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "53e0a3c4c4bad19a2db85b2c481c6e8f00eb7004239fe199eec5fcf9e77d4788",
+  "questions": {
+    "1": {
+      "prompt": "A bacteria population is modeled by P(t)=300·2^(4t), where t is hours. Which expression is equivalent?",
+      "choices": ["300·8ᵗ", "300·16ᵗ", "300ᵗ·2⁴", "300^(2t)·2^(2t)"],
+      "explanation": "Use the power-of-a-power rule: 2^(4t)=(2⁴)ᵗ=16ᵗ. The model is therefore 300·16ᵗ.",
+      "imageAlt": "Population model three hundred times two to the power four t; all four candidate expressions are transcribed, including the different bases and exponents."
+    },
+    "2": {
+      "prompt": "At exercise times 0,1,2,3,4 minutes, four students' heart rates (bpm) are shown. Which student's table best represents a linear model?",
+      "choices": ["Student 1: 60,65,70,75,80", "Student 2: 62,70,83,88,90", "Student 3: 58,65,70,75,79", "Student 4: 62,65,66,73,75"],
+      "explanation": "Equal one-minute steps must change the heart rate by a constant amount for a linear model. Student 1's rates rise by exactly 5 bpm each minute; the other tables have varying differences.",
+      "imageAlt": "Four complete heart-rate tables for times zero through four minutes are transcribed as four choice sequences. Student 1: 60,65,70,75,80; Student 2: 62,70,83,88,90; Student 3: 58,65,70,75,79; Student 4: 62,65,66,73,75."
+    },
+    "3": {
+      "prompt": "Factor m²−12m−64.",
+      "choices": ["(m−8)(m−8)", "(m−8)(m+8)", "(m−16)(m+4)", "(m+16)(m−4)"],
+      "explanation": "The needed numbers multiply to −64 and add to −12: −16 and 4. Therefore m²−12m−64=(m−16)(m+4).",
+      "imageAlt": "Quadratic m squared minus twelve m minus sixty-four and four factored products are transcribed with every sign."
+    },
+    "4": {
+      "prompt": "Solve −2(1−4x)=3x+8.",
+      "choices": ["6/11", "2", "−10/7", "−2"],
+      "explanation": "Distribute: −2+8x=3x+8. Subtract 3x and add 2 to get 5x=10, so x=2.",
+      "imageAlt": "Equation negative two times quantity one minus four x equals three x plus eight, with fraction and signed-number choices."
+    },
+    "5": {
+      "prompt": "A curve's graph has a local maximum at (−3,6), passes through (0,0), has a local minimum near (1,−2), and rises rightward. What is f(−3)?",
+      "choices": ["6", "2", "−2", "−4"],
+      "explanation": "Read the graph at x=−3: the point on the curve is at height y=6, so f(−3)=6.",
+      "imageAlt": "Cubic-like graph on a unit grid: the curve reaches a local maximum at x negative three and y six, crosses the origin, then bottoms near one comma negative two before rising. Four y-value choices are transcribed."
+    },
+    "6": {
+      "prompt": "If f(x)=x² has domain {0,1,4,9}, what is its range?",
+      "choices": ["{0,1,2,3}", "{0,1,16,81}", "{0,−1,1,−2,2,−3,3}", "{0,−1,1,−16,16,−81,81}"],
+      "explanation": "Square each allowed input: 0²=0, 1²=1, 4²=16, and 9²=81. The range is {0,1,16,81}.",
+      "imageAlt": "Function x squared, four-element domain zero, one, four, nine, and all four candidate range sets are transcribed."
+    },
+    "7": {
+      "prompt": "Which expression is equivalent to 4x²−25?",
+      "choices": ["(4x−5)(x+5)", "(4x+5)(x−5)", "(2x+5)(2x−5)", "(2x−5)(2x−5)"],
+      "explanation": "This is a difference of squares: 4x²−25=(2x)²−5²=(2x+5)(2x−5).",
+      "imageAlt": "Difference of squares four x squared minus twenty-five and all four binomial products are transcribed."
+    },
+    "8": {
+      "prompt": "Relative to f(x)=x², how is g(x)=(x−2)²+3 translated?",
+      "choices": ["2 units up and 3 units right", "2 units down and 3 units up", "2 units right and 3 units up", "2 units left and 3 units right"],
+      "explanation": "The x−2 inside the square moves the parabola 2 units right. The +3 outside moves it 3 units up.",
+      "imageAlt": "Parent function x squared and transformed function quantity x minus two squared plus three, with all four directional-shift descriptions."
+    },
+    "9": {
+      "prompt": "Lizzy has 30 dimes D and quarters Q totaling $4.80. Which system models the number of coins and their total value?",
+      "choices": ["D+Q=4.80; 0.10D+0.25Q=30", "D+Q=30; 0.10D+0.25Q=4.80", "D+Q=30; 0.25D+0.10Q=4.80", "D+Q=4.80; 0.25D+0.10Q=30"],
+      "explanation": "Counting coins gives D+Q=30. Values are $0.10 per dime and $0.25 per quarter, so 0.10D+0.25Q=4.80.",
+      "imageAlt": "Thirty total coins, $4.80 total value, variables D for dimes and Q for quarters, and all four complete two-equation systems are transcribed."
+    },
+    "10": {
+      "prompt": "Gretchen has at most $50. Ride tickets cost $1.25 and game tickets $2. She wants a minimum of 10 rides and at least 12 games. Which system describes numbers r of ride tickets and g of game tickets?",
+      "choices": ["1.25r+2g<50; r≤10; g>12", "1.25r+2g≤50; r≥10; g≥12", "1.25r+2g≤50; r≥10; g>12", "1.25r+2g<50; r≤10; g≥12"],
+      "explanation": "The spending cannot exceed $50, so 1.25r+2g≤50. A minimum of 10 and at least 12 mean r≥10 and g≥12, including those boundary values.",
+      "imageAlt": "Full ticket-cost story and four systems of inequalities are transcribed, preserving strict versus inclusive inequality signs."
+    },
+    "11": {
+      "prompt": "Three functions are shown: graph f crosses the y-axis at 1; g(x)=3ˣ+2; table h includes h(0)=−1. Which statement about y-intercepts is true?",
+      "choices": ["h's y-intercept is greater than f's", "f's y-intercept is greater than g's", "h's y-intercept is greater than both g's and f's", "g's y-intercept is greater than both f's and h's"],
+      "explanation": "At x=0, f(0)=1 from the graph, g(0)=3⁰+2=3, and h(0)=−1 from the table. Since 3 is greatest, g has the greatest y-intercept.",
+      "imageAlt": "Exponential graph f has y-intercept one. Equation g of x equals three to the x plus two. Table h has pairs (−5,30),(−4,14),(−3,6),(−2,2),(−1,0),(0,−1),(1,−1.5),(2,−1.75). Four y-intercept comparison statements are transcribed."
+    },
+    "12": {
+      "prompt": "Olivia's conversion chain from gallons to teaspoons is (4 quarts/1 gallon)·(2 pints/1 quart)·(2 cups/1 pint)·((1/4 cup)/4 tablespoons)·(3 teaspoons/1 tablespoon). Which ratio is incorrectly oriented in the chain?",
+      "choices": ["4 quarts/1 gallon", "2 pints/1 quart", "(1/4 cup)/4 tablespoons", "3 teaspoons/1 tablespoon"],
+      "explanation": "After the cups-per-pint ratio, cups are in the numerator. To cancel cups, the next ratio needs cups in the denominator and tablespoons in the numerator. The fourth factor is numerically equivalent to 1 but is written upside down for this conversion chain.",
+      "imageAlt": "Full five-factor conversion chain is transcribed with gallon, quart, pint, cup, tablespoon, and teaspoon units. The fourth factor is one-quarter cup divided by four tablespoons, so its cup unit cannot cancel the preceding numerator cup."
+    },
+    "13": {
+      "prompt": "If y=3x³+x²−5 and z=x²−12, which polynomial equals 2(y+z)?",
+      "choices": ["6x³+4x²−34", "6x³+3x²−17", "6x³+3x²−22", "6x³+2x²−17"],
+      "explanation": "First combine y+z=3x³+2x²−17. Multiplying by 2 gives 6x³+4x²−34.",
+      "imageAlt": "Both given polynomials, expression two times their sum, and four cubic polynomial choices are transcribed with powers and signs."
+    },
+    "14": {
+      "prompt": "In a club survey, 45 of 60 males prefer snowboarding rather than skiing. What is the relative frequency that a male prefers skiing?",
+      "choices": ["0.125", "0.25", "0.333…", "0.405405…"],
+      "explanation": "Of 60 males, 60−45=15 prefer skiing. The relative frequency among males is 15/60=0.25. The female information is not needed.",
+      "imageAlt": "Survey states 60 males, 45 male snowboarders, and 22 of 60 females preferring skiing; it asks for male-skiing relative frequency. Four decimal choices, including repeating decimals, are transcribed."
+    },
+    "15": {
+      "prompt": "For g(x)=5x when x≤3 and g(x)=x²+4 when x>3, how should the graph show the two points at x=3?",
+      "choices": ["open at (3,15) and open at (3,13)", "closed at (3,15) and closed at (3,13)", "open at (3,15) and closed at (3,13)", "closed at (3,15) and open at (3,13)"],
+      "explanation": "The 5x branch includes x=3, so (3,15) is closed. The x²+4 branch requires x>3, so its boundary value (3,13) is open.",
+      "imageAlt": "Piecewise function: five x for x less than or equal to three; x squared plus four for x greater than three. Four open/closed endpoint descriptions at (3,15) and (3,13) are transcribed."
+    },
+    "16": {
+      "prompt": "For f(x)=2x²+x−3, which equation can determine its zeros?",
+      "choices": ["0=(2x−3)(x+1)", "0=(2x+3)(x−1)", "0=2x(x+1)−3", "0=2x(x−1)−3(x+1)"],
+      "explanation": "Zeros satisfy f(x)=0. Factor 2x²+x−3=(2x+3)(x−1), giving 0=(2x+3)(x−1).",
+      "imageAlt": "Quadratic two x squared plus x minus three and four candidate equations for its zeros are transcribed with every sign and factor."
+    },
+    "17": {
+      "prompt": "A dog shelter's daily expenses are E(x)=30+2.40x, where food costs $2.40 per dog and there is at least one dog. Which statements are correct? I: x is the number of dogs. II: x is the number of volunteers. III: 30 is total daily expenses. IV: 30 is nonfood daily expenses.",
+      "choices": ["I and III", "I and IV", "II and III", "II and IV"],
+      "explanation": "The $2.40x term is food cost for x dogs, making I true. The fixed $30 is the nonfood portion, not the total when dogs are present, so IV is true and III false.",
+      "imageAlt": "Shelter cost model thirty plus two dollars and forty cents times x, four numbered interpretations I–IV, and four statement-pair choices are fully transcribed."
+    },
+    "18": {
+      "prompt": "Which point is not a solution of 3y+2=x²−5x+17?",
+      "choices": ["(−2,10)", "(−1,7)", "(2,3)", "(5,5)"],
+      "explanation": "For (−2,10), the left side is 3(10)+2=32, but the right side is (−2)²−5(−2)+17=31. The unequal values show this point is not a solution; the other points satisfy the equation.",
+      "imageAlt": "Equation three y plus two equals x squared minus five x plus seventeen and four coordinate pairs are transcribed with negative signs."
+    },
+    "19": {
+      "prompt": "Functions f and g are graphed and cross at two points. What are the solutions to f(x)=g(x)?",
+      "choices": ["the x-intercepts", "the y-intercepts", "the x-values of the points of intersection", "the y-values of the points of intersection"],
+      "explanation": "An input x solves f(x)=g(x) precisely when both graphs have the same y-value at that input. That occurs at their intersections, and the solutions are the intersections' x-values.",
+      "imageAlt": "Graph shows a piecewise straight-line f and a decreasing curved g crossing each other at two points; their separate intercepts are also visible. Choices distinguish intercepts from x- and y-coordinates of intersections."
+    },
+    "20": {
+      "prompt": "For the arithmetic sequence −27,−12,3,18,… with a₁=−27, what expression gives aₙ?",
+      "choices": ["15−27n", "15−27(n−1)", "−27+15n", "−27+15(n−1)"],
+      "explanation": "The common difference is 15. An arithmetic sequence has aₙ=a₁+(n−1)d, so aₙ=−27+15(n−1).",
+      "imageAlt": "Four signed terms of the sequence, first-term notation, and four candidate nth-term expressions are transcribed with parentheses."
+    },
+    "21": {
+      "prompt": "A random sample of track athletes shows that as foot size decreases, average running speed decreases. Which conclusion is best supported?",
+      "choices": ["Smaller feet cause slower running", "The sample proves a causal relationship", "The sample shows a correlation between foot size and running speed", "There is no correlation"],
+      "explanation": "The variables change together in the sample, so the data support a positive association or correlation. The observation alone does not establish that foot size causes a change in speed.",
+      "imageAlt": "Observed association between athlete foot size and average running speed is fully stated; answer choices distinguish causation, correlation, and no correlation."
+    },
+    "22": {
+      "prompt": "Which system has the same solution as x−y=3 and 2x−3y=−1?",
+      "choices": ["−2x−2y=−6; 2x−3y=−1", "−2x+2y=3; 2x−3y=−1", "2x−2y=6; 2x−3y=−1", "3x+3y=9; 2x−3y=−1"],
+      "explanation": "Multiply the first original equation x−y=3 by 2 to obtain 2x−2y=6. Keeping the second equation unchanged preserves the same solution set.",
+      "imageAlt": "Original two-equation system and all four proposed systems are transcribed with coefficients and signs. The second equation stays two x minus three y equals negative one throughout."
+    },
+    "23": {
+      "prompt": "Which situations are best modeled exponentially? I: bacteria culture doubles daily. II: a plant grows one inch every four days. III: town population declines by 5% every three years.",
+      "choices": ["I only", "II only", "I and II", "I and III"],
+      "explanation": "Doubling by a constant factor and decreasing by a fixed percentage are exponential changes, so I and III qualify. Adding one inch at fixed intervals is linear, not exponential.",
+      "imageAlt": "All three situations and four roman-numeral combination choices are transcribed, preserving daily doubling, fixed-inch growth, and percentage decline."
+    },
+    "24": {
+      "prompt": "A box has dimensions 2x, 3x+1, and 5x−6. In the standard-form polynomial for its volume, what is the coefficient of the second term?",
+      "choices": ["−13", "13", "−26", "26"],
+      "explanation": "The volume is 2x(3x+1)(5x−6)=2x(15x²−13x−6)=30x³−26x²−12x. The second term is −26x², so its coefficient is −26.",
+      "imageAlt": "Rectangular-box dimensions two x, three x plus one, and five x minus six are transcribed with four signed coefficient choices."
+    }
+  }
+}

@@ -4,7 +4,8 @@ import { mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { createClient } from '@libsql/client'
-import { normalizeGradeLevel } from '../lib/grade-levels'
+import { normalizeGradeLevel, normalizeHighSchoolGradeLevel, normalizeStudentSchoolGradeLevel } from '../lib/grade-levels'
+import { getStudentSettings, setStudentSettings, studentSchoolGradeLevel } from '../lib/student-settings'
 
 test('grade normalization accepts only Grades 3 through 8', () => {
   assert.equal(normalizeGradeLevel(3), 3)
@@ -13,6 +14,17 @@ test('grade normalization accepts only Grades 3 through 8', () => {
   assert.equal(normalizeGradeLevel(9), null)
   assert.equal(normalizeGradeLevel('3'), null)
   assert.equal(normalizeGradeLevel(null), null)
+})
+
+test('school grade normalization distinguishes Grades 9–12 from grade-specific exams', () => {
+  assert.equal(normalizeHighSchoolGradeLevel(9), 9)
+  assert.equal(normalizeHighSchoolGradeLevel(12), 12)
+  assert.equal(normalizeHighSchoolGradeLevel(8), null)
+  assert.equal(normalizeHighSchoolGradeLevel(13), null)
+  assert.equal(normalizeStudentSchoolGradeLevel(3), 3)
+  assert.equal(normalizeStudentSchoolGradeLevel(10), 10)
+  assert.equal(normalizeStudentSchoolGradeLevel('10'), null)
+  assert.equal(normalizeGradeLevel(10), null)
 })
 
 test('the grade migration preserves prior Math access without guessing an ELA grade', async () => {
@@ -78,9 +90,29 @@ test('the grade migration preserves prior Math access without guessing an ELA gr
     })
     assert.equal(Number(migration.rows[0]?.count), 1)
 
+    await setStudentSettings(db, 'existing-ela', {
+      mathSpanishEnabled: false,
+      gradeLevel: null,
+      highSchoolGradeLevel: 11,
+    })
+    const highSchoolSettings = await getStudentSettings(db, 'existing-ela')
+    assert.equal(highSchoolSettings.gradeLevel, null)
+    assert.equal(highSchoolSettings.highSchoolGradeLevel, 11)
+    assert.equal(studentSchoolGradeLevel(highSchoolSettings), 11)
+
+    await assert.rejects(setStudentSettings(db, 'existing-ela', {
+      mathSpanishEnabled: false,
+      gradeLevel: 8,
+      highSchoolGradeLevel: 11,
+    }))
+
     await assert.rejects(db.execute({
       sql: 'UPDATE student_settings SET grade_level = 9 WHERE user_id = ?',
       args: ['existing-math'],
+    }))
+    await assert.rejects(db.execute({
+      sql: 'UPDATE student_settings SET high_school_grade_level = 8 WHERE user_id = ?',
+      args: ['existing-ela'],
     }))
     db.close()
   } finally {

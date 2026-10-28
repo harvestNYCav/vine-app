@@ -1,0 +1,58 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "Read “The Gift” and answer questions 11–14.",
+    "questionIds": ["english-2021-june-q11", "english-2021-june-q12", "english-2021-june-q13", "english-2021-june-q14"],
+    "passage": {
+      "title": "The Gift",
+      "credit": "—Li–Young Lee · “The Gift,” from Rose (1986), BOA Editions, Ltd.",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "To pull the metal splinter from my palm"},
+        {"number": 2, "text": "my father recited a story in a low voice."},
+        {"number": 3, "text": "I watched his lovely face and not the blade."},
+        {"number": 4, "text": "Before the story ended, he’d removed"},
+        {"number": 5, "text": "the iron sliver I thought I’d die from."},
+        {"number": null, "text": ""},
+        {"number": 6, "text": "I can’t remember the tale,"},
+        {"number": 7, "text": "but hear his voice still, a well"},
+        {"number": 8, "text": "of dark water, a prayer."},
+        {"number": 9, "text": "And I recall his hands,"},
+        {"number": 10, "text": "two measures of tenderness"},
+        {"number": 11, "text": "he laid against my face,"},
+        {"number": 12, "text": "the flames of discipline"},
+        {"number": 13, "text": "he raised above my head."},
+        {"number": null, "text": ""},
+        {"number": 14, "text": "Had you entered that afternoon"},
+        {"number": 15, "text": "you would have thought you saw a man"},
+        {"number": 16, "text": "planting something in a boy’s palm,"},
+        {"number": 17, "text": "a silver tear, a tiny flame."},
+        {"number": 18, "text": "Had you followed that boy"},
+        {"number": 19, "text": "you would have arrived here,"},
+        {"number": 20, "text": "where I bend over my wife’s right hand."},
+        {"number": null, "text": ""},
+        {"number": 21, "text": "Look how I shave her thumbnail down"},
+        {"number": 22, "text": "so carefully she feels no pain."},
+        {"number": 23, "text": "Watch as I lift the splinter out."},
+        {"number": 24, "text": "I was seven when my father"},
+        {"number": 25, "text": "took my hand like this,"},
+        {"number": 26, "text": "and I did not hold that shard"},
+        {"number": 27, "text": "between my fingers and think,"},
+        {"number": 28, "text": "*Metal that will bury me,*"},
+        {"number": 29, "text": "christen it Little Assassin,"},
+        {"number": 30, "text": "Ore Going Deep for My Heart."},
+        {"number": 31, "text": "And I did not lift up my wound and cry,"},
+        {"number": 32, "text": "*Death visited here!*"},
+        {"number": 33, "text": "I did what a child does"},
+        {"number": 34, "text": "when he’s given something to keep."},
+        {"number": 35, "text": "I kissed my father."}
+      ]
+    }
+  }],
+  "questions": [
+    {"id": "english-2021-june-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "The figurative language in lines 6 through 11 reflects the father’s", "choices": [{"label": "1", "text": "hesitation about inflicting pain"}, {"label": "2", "text": "pride about removing the splinter"}, {"label": "3", "text": "need to earn his son’s respect"}, {"label": "4", "text": "ability to calm his son"}], "correct": "4", "explanation": "The father’s low storytelling voice is remembered as a soothing “well of dark water, a prayer,” and his hands as “measures of tenderness.” These images show how he calms the frightened child while removing the splinter.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2021-june-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "Lines 21 through 23 reveal that the narrator", "choices": [{"label": "1", "text": "is worried that he might harm his wife"}, {"label": "2", "text": "is reassured by his wife’s confidence"}, {"label": "3", "text": "has mastered his father’s technique"}, {"label": "4", "text": "has forgotten his childhood trauma"}], "correct": "3", "explanation": "The adult narrator carefully removes his wife’s splinter so that she “feels no pain,” echoing the gentle care his father gave him. He has learned and now applies that technique.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2021-june-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "In line 26, “shard” most nearly means", "choices": [{"label": "1", "text": "wooden chip"}, {"label": "2", "text": "shiny object"}, {"label": "3", "text": "jagged piece"}, {"label": "4", "text": "small tool"}], "correct": "3", "explanation": "The “shard” is the metal splinter removed from the child’s palm. In this context it is a sharp, jagged piece of metal.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2021-june-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "Lines 33 through 35 convey a sense of", "choices": [{"label": "1", "text": "longing"}, {"label": "2", "text": "gratitude"}, {"label": "3", "text": "uncertainty"}, {"label": "4", "text": "accomplishment"}], "correct": "2", "explanation": "Instead of dwelling on the injury, the child responds to what his father has given him by kissing him. That affectionate response expresses gratitude for the father’s care.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

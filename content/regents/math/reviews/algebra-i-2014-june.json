@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "76a498db5d0f3d2cae9e35c7af8253dd6089cbd2f20af9f4e31212abb2596242",
+  "questions": {
+    "1": {
+      "prompt": "Emily changes 4(3x²+2)−9=8x²+7 to 4(3x²+2)=8x²+16. Which property justifies this first step?",
+      "choices": ["addition property of equality", "commutative property of addition", "multiplication property of equality", "distributive property of multiplication over addition"],
+      "explanation": "Emily added 9 to both sides: the −9 on the left disappears and 7+9=16 on the right. Adding the same number to both sides is the addition property of equality.",
+      "imageAlt": "Both complete equations in Emily's first step and all four named properties are transcribed, preserving the squared terms and changed constants."
+    },
+    "2": {
+      "prompt": "C(n) analyzes traffic through an intersection, where n is the count of observed vehicles in a time interval. Which input domain is most appropriate?",
+      "choices": ["{…,−2,−1,0,1,2,3,…}", "{−2,−1,0,1,2,3}", "{0,1/2,1,1 1/2,2,2 1/2}", "{0,1,2,3,…}"],
+      "explanation": "A count of vehicles cannot be negative or fractional. Any nonnegative whole-number count is possible, so the domain is {0,1,2,3,…}.",
+      "imageAlt": "Input n is a vehicle count; the four domain sets are described completely, distinguishing negatives, half counts, finite sets, and all nonnegative integers."
+    },
+    "3": {
+      "prompt": "If A=3x²+5x−6 and B=−2x²−6x+7, what is A−B?",
+      "choices": ["−5x²−11x+13", "5x²+11x−13", "−5x²−x+1", "5x²−x+1"],
+      "explanation": "Subtract every term of B: 3x²+5x−6+2x²+6x−7=5x²+11x−13.",
+      "imageAlt": "Both full quadratic definitions and all four three-term differences are transcribed with signs."
+    },
+    "4": {
+      "prompt": "Which graph shows the solution of y+x>2 and y≤3x−2?",
+      "choices": ["Both boundaries solid; overlap opens right", "Descending boundary dashed and rising boundary solid; overlap opens right between them", "Both boundaries solid; overlap opens left", "Descending boundary dashed and rising boundary solid; overlap opens left between them"],
+      "explanation": "Rewrite the first inequality as y>2−x, so its descending boundary is dashed and shading is above it. The second has a solid rising boundary y=3x−2 and shading below it. Their shared region opens right, as in graph 2.",
+      "imageAlt": "Required dashed descending line has y-intercept two; solid steep rising line has y-intercept negative two. Four choices vary solid/dashed status and whether the crosshatched overlap opens left or right."
+    },
+    "5": {
+      "prompt": "Which x satisfies (7/3)(x+9/28)=20?",
+      "choices": ["8.25", "8.89", "19.25", "44.92"],
+      "explanation": "Multiply by 3/7: x+9/28=60/7=240/28. Subtract 9/28 to get x=231/28=8.25.",
+      "imageAlt": "Seven-thirds multiplying the whole quantity x plus nine-twenty-eighths equals twenty, with four decimal choices, is transcribed."
+    },
+    "6": {
+      "prompt": "A compound-interest account's balances at years 0,10,20,30,40,50 are $380.00,$562.49,$832.63,$1232.49,$1824.39,$2700.54. What type of function best models them?",
+      "choices": ["linear with a negative rate", "linear with a positive rate", "exponential decay", "exponential growth"],
+      "explanation": "Over each equal 10-year span, the balances multiply by about the same factor, roughly 1.48, rather than increase by a fixed dollar amount. Since the factor exceeds 1, this is exponential growth.",
+      "imageAlt": "Complete six-row year-and-balance table is transcribed, preserving cents, together with all four model-type choices."
+    },
+    "7": {
+      "prompt": "Manufacturing r radios costs c(r)=5.25r+125 dollars, including start-up cost and per-radio spending. What does 5.25 mean?",
+      "choices": ["start-up cost", "profit from one radio", "amount spent to manufacture each radio", "average number of radios manufactured"],
+      "explanation": "The coefficient of r changes total cost by $5.25 whenever one more radio is made. It is the manufacturing cost per radio; $125 is the start-up cost.",
+      "imageAlt": "Linear cost function five-point-two-five r plus one hundred twenty-five and all four interpretations of its coefficient are transcribed."
+    },
+    "8": {
+      "prompt": "Which equation has the same solutions as x²−6x−12=0?",
+      "choices": ["(x+3)²=21", "(x−3)²=21", "(x+3)²=3", "(x−3)²=3"],
+      "explanation": "Move −12 to the right and complete the square: x²−6x=12, then add 9 to get (x−3)²=21.",
+      "imageAlt": "Original quadratic and four completed-square equations are transcribed with exact signs and right-hand values."
+    },
+    "9": {
+      "prompt": "A ball thrown from a 48-foot cliff has a height graph that rises to a maximum at about 2.5 seconds and then falls to the ground at about 5.5 seconds. Over which interval is its height always decreasing?",
+      "choices": ["0≤x≤2.5", "0<x<5.5", "2.5<x<5.5", "x≥2"],
+      "explanation": "The graph begins falling only after its peak near x=2.5 and continues downward until it reaches the ground near x=5.5. That is the interval 2.5<x<5.5.",
+      "imageAlt": "Height-versus-seconds parabola begins at 48 feet, peaks near (2.5,148), and reaches zero near 5.5 seconds; all four interval choices are transcribed with strict/inclusive bounds."
+    },
+    "10": {
+      "prompt": "What are the roots of x²+4x−16=0?",
+      "choices": ["2±2√5", "−2±2√5", "2±4√5", "−2±4√5"],
+      "explanation": "Complete the square: x²+4x=16, so (x+2)²=20. Thus x=−2±√20=−2±2√5.",
+      "imageAlt": "Quadratic x squared plus four x minus sixteen equals zero and four complete signed radical root pairs are transcribed."
+    },
+    "11": {
+      "prompt": "A scatter plot has points approximately (1,8),(2,8),(3,5),(4,3),(5,4),(6,1),(8,1). What correlation coefficient best describes its linear fit, to the nearest hundredth?",
+      "choices": ["1.00", "0.93", "−0.93", "−1.00"],
+      "explanation": "The points trend strongly downward as x increases, so the coefficient is negative and close to −1. They are not perfectly collinear, making −0.93 the plausible value rather than −1.00.",
+      "imageAlt": "Seven plotted coordinates are transcribed approximately, showing a strong but imperfect downward trend; all four signed coefficient choices are listed."
+    },
+    "12": {
+      "prompt": "If a function's zeros are −6 and 5, which factored function could it be?",
+      "choices": ["f(x)=(x+5)(x+6)", "f(x)=(x+5)(x−6)", "f(x)=(x−5)(x+6)", "f(x)=(x−5)(x−6)"],
+      "explanation": "The factor x+6 vanishes at −6, and x−5 vanishes at 5. Their product is choice 3.",
+      "imageAlt": "Specified negative-six and positive-five zeros and all four signed binomial products are transcribed."
+    },
+    "13": {
+      "prompt": "Let L=√2, M=3√3, N=√16, and P=√9. Which sum is rational?",
+      "choices": ["L+M", "M+N", "N+P", "P+L"],
+      "explanation": "N=√16=4 and P=√9=3, so N+P=7 is rational. Each other listed sum contains an uncanceled irrational term.",
+      "imageAlt": "All four variable definitions, with radical bars and coefficient three, plus four possible sums are transcribed."
+    },
+    "14": {
+      "prompt": "Given the system 2x+2y=16 and 3x−y=4, which listed system has the same solution?",
+      "choices": ["2x+2y=16; 6x−2y=4", "2x+2y=16; 6x−2y=8", "x+y=16; 3x−y=4", "6x+6y=48; 6x+2y=8"],
+      "explanation": "Multiplying 3x−y=4 by 2 gives 6x−2y=8. Paired with the unchanged first equation, this is an equivalent system.",
+      "imageAlt": "Original two equations and all four complete candidate systems are transcribed with exact coefficients, constants, and signs."
+    },
+    "15": {
+      "prompt": "A function F has table pairs (3,9),(4,17),(6,65),(7,129),(8,257). Which formula matches?",
+      "choices": ["F(x)=3^x", "F(x)=3x", "F(x)=2^x+1", "F(x)=2x+3"],
+      "explanation": "At x=3, 2³+1=9; at x=4, 2⁴+1=17; and at x=8, 2⁸+1=257. The same formula matches every row.",
+      "imageAlt": "All five x and F(x) table rows are transcribed, plus four formulas distinguishing exponentiation from multiplication and the outside plus one."
+    },
+    "16": {
+      "prompt": "John has four more nickels than dimes, with $1.25 total. If x is the number of dimes, which equation finds x?",
+      "choices": ["0.10(x+4)+0.05x=1.25", "0.05(x+4)+0.10x=1.25", "0.10(4x)+0.05x=1.25", "0.05(4x)+0.10x=1.25"],
+      "explanation": "There are x dimes worth $0.10 each and x+4 nickels worth $0.05 each. Their values add to 0.10x+0.05(x+4)=1.25.",
+      "imageAlt": "Four-more-nickels relation, dime variable x, total one dollar twenty-five cents, and all four complete coin-value equations are transcribed."
+    },
+    "17": {
+      "prompt": "For f(x)=x/3+9, which statement is always true?",
+      "choices": ["f(x)<0", "f(x)>0", "If x<0, then f(x)<0.", "If x>0, then f(x)>0."],
+      "explanation": "When x>0, the term x/3 is positive, and adding 9 keeps f(x) positive. For sufficiently negative x, f(x) can be negative, so the unconditional statements fail.",
+      "imageAlt": "Function one-third x plus nine and four full conditional or unconditional positivity statements are transcribed."
+    },
+    "18": {
+      "prompt": "The Jamison trip graph gives elapsed hours and miles (1,40),(2,110),(4,180),(6,230),(8,350),(10,390). Which listed interval has the greatest average speed?",
+      "choices": ["hours 1 to 2", "hours 2 to 4", "hours 6 to 8", "hours 8 to 10"],
+      "explanation": "Average speeds are (110−40)/1=70, (180−110)/2=35, (350−230)/2=60, and (390−350)/2=20 miles per hour. The first-to-second-hour interval is fastest.",
+      "imageAlt": "All six labeled time-and-distance graph points are transcribed in miles and hours, together with four time intervals."
+    },
+    "19": {
+      "prompt": "Christopher's quiz scores were Semester 1: 78,91,88,83,94; Semester 2: 91,96,80,77,88,85,92. Which statement is correct?",
+      "choices": ["Semester 1 has a greater interquartile range.", "Semester 1 has a greater median.", "Semester 2 has a greater mean.", "Semester 2 has a greater third quartile."],
+      "explanation": "Semester 1's mean is 434/5=86.8; Semester 2's is 609/7=87. The medians are both 88, the IQRs are equal at 12, and Semester 2's third quartile 92 is below Semester 1's 92.5.",
+      "imageAlt": "All twelve scores are transcribed by semester, along with all four full comparisons of IQR, median, mean, and upper quartile."
+    },
+    "20": {
+      "prompt": "Four labeled graph points are A=(2,0), B=(0,2), C=(−2,0), and D=(−1,−2). Which point gives f(2)?",
+      "choices": ["A", "B", "C", "D"],
+      "explanation": "The input is the x-coordinate. At x=2, the labeled point is A, whose y-coordinate is 0, so f(2)=0.",
+      "imageAlt": "All four labeled coordinate points are transcribed from the graph, distinguishing A at x two, B at x zero, C at x negative two, and D at x negative one."
+    },
+    "21": {
+      "prompt": "A sunflower is 3 inches tall at week 0 and grows 2 inches weekly. Which formulas give height f(n) after n weeks? I: f(n)=2n+3; II: f(n)=2n+3(n−1); III: f(0)=3 and f(n)=f(n−1)+2.",
+      "choices": ["I and II", "II, only", "III, only", "I and III"],
+      "explanation": "Starting at 3 and adding 2 per week gives explicit formula 2n+3 and the stated recurrence in III. Formula II does not give 3 at n=0.",
+      "imageAlt": "Initial sunflower height three inches, weekly growth two inches, all three complete explicit or recursive formulas, and all four answer groups are transcribed."
+    },
+    "22": {
+      "prompt": "A cell plan costs $60 per month for up to 1 GB, plus $0.05 per additional megabyte. If d is additional megabytes and c is total monthly cost, which equation fits?",
+      "choices": ["c=60−0.05d", "c=60.05d", "c=60d−0.05", "c=60+0.05d"],
+      "explanation": "The base charge is $60 and each extra megabyte adds $0.05, so c=60+0.05d.",
+      "imageAlt": "Sixty-dollar monthly base, five-cent extra-megabyte rate, data variable d, cost variable c, and four complete linear equations are transcribed."
+    },
+    "23": {
+      "prompt": "For a cone, V=(1/3)πr²h. Express positive radius r in terms of volume V and height h.",
+      "choices": ["r=√(3V/(πh))", "r=√(V/(3πh))", "r=3√(V/(πh))", "r=(1/3)√(V/(πh))"],
+      "explanation": "Multiply the volume equation by 3/(πh) to obtain r²=3V/(πh). The positive radius is r=√(3V/(πh)).",
+      "imageAlt": "Cone volume formula one-third pi r squared h and four candidate radius expressions preserve the radical's full numerator and denominator."
+    },
+    "24": {
+      "prompt": "An expanding square-block pattern has 12 shaded squares in term 1, 16 in term 2, and 20 in term 3. Which formula gives the number aₙ of shaded squares in term n?",
+      "choices": ["aₙ=4n+12", "aₙ=4n+8", "aₙ=4n+4", "aₙ=4n+2"],
+      "explanation": "The shaded count rises by 4 each term, so aₙ=12+4(n−1)=4n+8. This yields 12, 16, and 20 for the pictured terms.",
+      "imageAlt": "Three square-grid diagrams grow from six-by-six to eight-by-eight to ten-by-ten; shaded X-like diagonals contain twelve, sixteen, and twenty squares. All four linear formulas are transcribed."
+    }
+  }
+}

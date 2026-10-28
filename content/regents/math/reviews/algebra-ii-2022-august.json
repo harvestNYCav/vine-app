@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "53622d7ad90e3195138a3ddfd3734d3e0b436102303570b15197ce8e2e005f25",
+  "questions": {
+    "1": {
+      "prompt": "A coffee chain surveyed customers only at its Staten Island ferry terminal location; 70% said speed of service mattered most. Which group can the chain reasonably infer this is true for?",
+      "choices": ["Most of its customers in New York State", "Coffee drinkers generally", "Most of its customers at the Staten Island ferry terminal", "Most of its customers at transportation terminals and stations"],
+      "explanation": "The sample came only from the Staten Island ferry terminal location. It can support an inference about that location's customers, not customers at other locations or coffee drinkers in general.",
+      "imageAlt": "The survey was administered to customers at one ferry-terminal branch, and seventy percent of those surveyed prioritized fast service."
+    },
+    "2": {
+      "prompt": "Which expression equals (x − 2i)²?",
+      "choices": ["x² + 4", "x² − 4", "x² − 2xi − 4", "x² − 4xi − 4"],
+      "explanation": "Expand: (x − 2i)² = x² − 4xi + 4i². Since i² = −1, the last term is −4, giving x² − 4xi − 4.",
+      "imageAlt": "The entire complex binomial x minus two i is squared, where i squared equals negative one."
+    },
+    "3": {
+      "prompt": "A tide is modeled in feet by H(t) = 4.8sin[(π/6)(t + 3)] + 5.1. What is its amplitude?",
+      "choices": ["π/6", "4.8", "3", "5.1"],
+      "explanation": "In A sin(B(t + C)) + D, the amplitude is |A|. The coefficient outside sine is 4.8, so the tide's amplitude is 4.8 feet.",
+      "imageAlt": "The sine term has coefficient four point eight; inside the sine is pi over six times t plus three, and the vertical shift is five point one."
+    },
+    "4": {
+      "prompt": "Liem watched band auditions, rated each singer's animation, and recorded applause without changing anything. What type of study was this?",
+      "choices": ["experimental", "observational", "a sample survey", "a random assignment"],
+      "explanation": "Liem merely observed and measured singers' behavior and audience response; he did not assign a treatment or intervene. This is an observational study.",
+      "imageAlt": "For five nights Liem rated each lead singer's animation on a one-to-five scale and noted applause; no singer was assigned a behavior."
+    },
+    "5": {
+      "prompt": "On a unit circle, the terminal side of θ passes through (−√3/2, 1/2). What is θ in degrees?",
+      "choices": ["30°", "120°", "135°", "150°"],
+      "explanation": "The point has negative cosine and positive sine, so θ is in Quadrant II. A sine of 1/2 has reference angle 30°, giving θ = 180° − 30° = 150°.",
+      "imageAlt": "Point A is on the unit circle in Quadrant II, with x coordinate negative square root of three over two and y coordinate one-half; θ is measured counterclockwise from the positive x-axis."
+    },
+    "6": {
+      "prompt": "For f(x) = 2x³ + x² − 18x − 9, which statement is true?",
+      "choices": ["2x − 1 is a factor.", "x − 3 is a factor.", "f(3) ≠ f(−1/2).", "f(1/2) = 0."],
+      "explanation": "Evaluate f(3) = 2(27) + 9 − 54 − 9 = 0. By the factor theorem, x − 3 is a factor. In fact f(x) = (2x + 1)(x − 3)(x + 3).",
+      "imageAlt": "The cubic is two x cubed plus x squared minus eighteen x minus nine. The choices test factors or compare function values."
+    },
+    "7": {
+      "prompt": "Which sketch could represent the function m(x) = −log₁₀₀(x − 2)?",
+      "choices": ["Graph 1: decreasing logarithmic curve with a vertical asymptote left of the y-axis; crosses the x-axis left of the y-axis", "Graph 2: increasing logarithmic curve with a vertical asymptote well right of the y-axis; crosses the x-axis farther right", "Graph 3: increasing logarithmic curve with a vertical asymptote just right of the y-axis; crosses the x-axis to the right", "Graph 4: decreasing logarithmic curve with a vertical asymptote right of the y-axis; crosses the x-axis to the right"],
+      "explanation": "The domain is x > 2, so the vertical asymptote is to the right of the y-axis. With a negative logarithm, the graph decreases from +∞ near x = 2 and crosses the x-axis at x = 3. Only graph 4 has that shape and position.",
+      "imageAlt": "Graph 1 is a decreasing logarithmic curve with its vertical asymptote left of the y-axis. Graphs 2 and 3 increase to the right of positive vertical asymptotes; graph 2 is shifted farther right than graph 3. Graph 4 decreases to the right of the y-axis, rising without bound near a positive vertical asymptote and crossing the x-axis farther right."
+    },
+    "8": {
+      "prompt": "Which equation has roots 3 + i and 3 − i?",
+      "choices": ["x² − 6x + 10 = 0", "x² + 6x − 10 = 0", "x² − 10x + 6 = 0", "x² + 10x − 6 = 0"],
+      "explanation": "The roots have sum 6 and product (3 + i)(3 − i) = 9 − i² = 10. A monic quadratic with these roots is x² − 6x + 10 = 0.",
+      "imageAlt": "The two given roots are conjugates, three plus i and three minus i. The equations vary the signs and magnitudes of linear and constant terms."
+    },
+    "9": {
+      "prompt": "Enrollment starts at 12,000 and grows continuously at 2.5% per year. Which expression gives the years until it reaches 15,000?",
+      "choices": ["ln(1.25)/0.25", "ln(3000)/0.025", "ln(1.25)/2.5", "ln(1.25)/0.025"],
+      "explanation": "Continuous growth gives 15,000 = 12,000e^(0.025t), so e^(0.025t) = 1.25. Taking natural logarithms yields t = ln(1.25)/0.025.",
+      "imageAlt": "The growth is continuous, not yearly compounding; the initial enrollment is twelve thousand and the target is fifteen thousand."
+    },
+    "10": {
+      "prompt": "How many points of intersection do y = e^x and xy = 20 have?",
+      "choices": ["1", "2", "3", "0"],
+      "explanation": "Substitute y = e^x to get xe^x = 20. Since e^x > 0, x must be positive. On x > 0, xe^x increases continuously from 0 to infinity, so it equals 20 exactly once.",
+      "imageAlt": "One curve is y equals e to the x; the other relation is x times y equals twenty."
+    },
+    "11": {
+      "prompt": "A substance decays as A(t) = 50(0.5)^(t/3) grams after t days. Which statement is false?",
+      "choices": ["In 20 days no substance remains.", "After two half-lives 25% remains.", "It can also be written A(t) = 50(2)^(−t/3).", "After one week less than 10 g remains."],
+      "explanation": "Exponential decay approaches zero but never reaches exactly zero after a finite time. At t = 20 days, 50(0.5)^(20/3) is still positive, so the first statement is false. The other statements follow from the three-day half-life.",
+      "imageAlt": "The initial amount is fifty grams, and the exponent t divided by three means the substance halves every three days."
+    },
+    "12": {
+      "prompt": "A parabola has vertex (2, 1) and focus (2, −3). Which equation represents it?",
+      "choices": ["y = (1/16)(x − 2)² + 1", "y = −(1/16)(x + 2)² − 1", "y = −(1/16)(x − 2)² + 1", "y = −(1/16)(x − 2)² − 3"],
+      "explanation": "The focus is four units below the vertex, so p = −4. Standard form (x − h)² = 4p(y − k) becomes (x − 2)² = −16(y − 1), or y = −(x − 2)²/16 + 1.",
+      "imageAlt": "Vertex two comma one and focus two comma negative three share a vertical axis; the parabola opens downward."
+    },
+    "13": {
+      "prompt": "Which expression equals [a·∛(2b²)]·∛(4a²b)?",
+      "choices": ["2ab∛(a²)", "2ab", "2ab∛(2a²)", "2a²b∛(2b)"],
+      "explanation": "Combine the cube roots: a·∛(2b²·4a²b) = a·∛(8a²b³). Extract the perfect cubes 8 and b³ to get 2ab∛(a²).",
+      "imageAlt": "The first factor is a outside a cube root of two b squared; the second is a cube root of four a squared b."
+    },
+    "14": {
+      "prompt": "For f(x) = 3^(x − 1) + 2, what happens to f(x) as x → −∞?",
+      "choices": ["f(x) → −1", "f(x) → 0", "f(x) → 2", "f(x) → −∞"],
+      "explanation": "As x decreases without bound, the positive exponential 3^(x − 1) approaches zero. Adding 2 means the function approaches the horizontal asymptote y = 2.",
+      "imageAlt": "The exponent on three is x minus one, and two is added outside the exponential."
+    },
+    "15": {
+      "prompt": "For defined x, which expression equals (x² + 3x)/(x² + 5x + 6)?",
+      "choices": ["1 − x/(x + 2)", "x/(x + 2)", "3x/(5x + 6)", "1 + 1/(2x + 6)"],
+      "explanation": "Factor numerator x(x + 3) and denominator (x + 2)(x + 3). Cancel the common factor to obtain x/(x + 2), while retaining the original restrictions x ≠ −2, −3.",
+      "imageAlt": "The rational expression has numerator x squared plus three x and denominator x squared plus five x plus six."
+    },
+    "16": {
+      "prompt": "Which recursive formula gives 64, 48, 36, ...?",
+      "choices": ["aₙ = 64(0.75)^(n−1)", "a₁ = 64; aₙ = aₙ₋₁ − 16", "aₙ = 64 + (n − 1)(−16)", "a₁ = 64; aₙ = 0.75aₙ₋₁"],
+      "explanation": "Each term is 0.75 times the previous one: 48/64 = 36/48 = 0.75. A recursive formula starts with a₁ = 64 and multiplies the preceding term by 0.75.",
+      "imageAlt": "The first three terms are sixty-four, forty-eight, and thirty-six. The alternatives include explicit and recursive arithmetic or geometric rules."
+    },
+    "17": {
+      "prompt": "Which expression equals (x³ − 2)/(x − 2)?",
+      "choices": ["x²", "x² + 2x + 4 + 6/(x − 2)", "x² − 2", "x² − 2x + 4 − 10/(x − 2)"],
+      "explanation": "Dividing x³ + 0x² + 0x − 2 by x − 2 gives quotient x² + 2x + 4 and remainder 6. Thus the rational expression is the quotient plus 6/(x − 2).",
+      "imageAlt": "The numerator is x cubed minus two, not x cubed minus eight; the denominator is x minus two."
+    },
+    "18": {
+      "prompt": "What is the solution set of 4/(k² − 8k + 12) = k/(k − 2) + 1/(k − 6)?",
+      "choices": ["{−1, 6}", "{1, −6}", "{−1}", "{1}"],
+      "explanation": "Factor the left denominator as (k − 2)(k − 6), so k ≠ 2, 6. Multiplying through gives 4 = k(k − 6) + (k − 2), or k² − 5k − 6 = (k − 6)(k + 1) = 0. Reject k = 6 because it makes a denominator zero; k = −1 remains.",
+      "imageAlt": "The left denominator is k squared minus eight k plus twelve; the two right denominators are k minus two and k minus six."
+    },
+    "19": {
+      "prompt": "Given x⁶ + y⁶ = (x² + y²)(x⁴ − x²y² + y⁴), which additional equation is always true?",
+      "choices": ["x⁶ + y⁶ = x²(x⁴ − x²y² + y⁴) + y²(x⁴ − x²y² + y⁴)", "x⁶ + y⁶ = (x² + y²)(x² − y²)(x² − y²)", "(x³ + y³)² = (x² + y²)(x⁴ − x²y² + y⁴)", "(x⁶ + y⁶) − (x² + y²) = x⁴ − x²y² + y⁴"],
+      "explanation": "Distribute the common factor (x² + y²) across the second polynomial. The result is x²(x⁴ − x²y² + y⁴) + y²(x⁴ − x²y² + y⁴), exactly choice 1.",
+      "imageAlt": "The given sum-of-sixth-powers identity is a product of x squared plus y squared and x to the fourth minus x squared y squared plus y to the fourth."
+    },
+    "20": {
+      "prompt": "For p(θ) = 3sin(θ/2) on −π < θ < π, how does p change over the interval?",
+      "choices": ["decreases, then increases", "increases, then decreases", "decreases throughout", "increases throughout"],
+      "explanation": "Halving the interval gives −π/2 < θ/2 < π/2. Sine increases throughout that interval, and multiplying by positive 3 preserves the increase.",
+      "imageAlt": "The function is three times sine of one-half theta, and theta runs strictly between negative pi and pi."
+    },
+    "21": {
+      "prompt": "Yearly savings are $59,000, $64,900, $71,390, $78,529, and $86,381.90. Which expression sums the five years?",
+      "choices": ["[59,000 − 59,000(1.1)⁵]/(1 − 1.1)", "[59,000 − 59,000(0.1)⁵]/(1 − 0.1)", "Σ from n=1 to 5 of 59,000(1.1)^n", "Σ from n=1 to 5 of 59,000(0.1)^(n−1)"],
+      "explanation": "Each year is 1.1 times the previous year. The sum is 59,000[1 + 1.1 + 1.1² + 1.1³ + 1.1⁴], whose geometric-series formula is 59,000[1 − (1.1)⁵]/[1 − 1.1].",
+      "imageAlt": "The table lists five yearly dollar amounts beginning at fifty-nine thousand and increasing by ten percent each year."
+    },
+    "22": {
+      "prompt": "A train was on time 64 of its first 80 days. If its next x days are all on time, which equation raises its overall on-time rate to 90%?",
+      "choices": ["64/(80 + x) = 90/100", "(64 + x)/(80 + x) = 90/100", "(64 + x)/80 = 90/100", "x/(80 + x) = 90/100"],
+      "explanation": "The new on-time count is 64 + x, and the new total day count is 80 + x. Their ratio must equal 90/100, giving (64 + x)/(80 + x) = 90/100.",
+      "imageAlt": "The train has sixty-four on-time days out of eighty so far, and every one of the additional x days is on time."
+    },
+    "23": {
+      "prompt": "For f(x) = −(2/5)x + 4, which statement about f⁻¹(x) is true?",
+      "choices": ["Its slope is 5/2.", "Its slope is 2/5.", "It passes through (6, −5).", "Its y-intercept is (0, −4)."],
+      "explanation": "Solving y = −(2/5)x + 4 for x gives x = −(5/2)(y − 4), so f⁻¹(x) = −(5/2)x + 10. At x = 6, its value is −15 + 10 = −5, so (6, −5) lies on the inverse.",
+      "imageAlt": "The original line has negative slope two-fifths and intercept four. The inverse statements test slope, a point, and intercept."
+    },
+    "24": {
+      "prompt": "A substance follows A(t) = A₀(0.5)^(t/0.0803). Which equivalent form uses a daily multiplier to the t power?",
+      "choices": ["A₀(0.000178)^t", "A₀(0.945861)^t", "A₀(0.04015)^t", "A₀(1.08361)^t"],
+      "explanation": "Use the power rule: (0.5)^(t/0.0803) = [(0.5)^(1/0.0803)]^t. The daily multiplier (0.5)^(1/0.0803) is approximately 0.000178.",
+      "imageAlt": "The original model starts at A sub zero and raises one-half to t divided by zero point zero eight zero three. The choices provide four possible bases raised to t."
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "4a9c2bfa3a623b7b01acc4dee1b935b3f3c754f5cd0d2e067e4028f8d06c9403",
+  "questions": {
+    "1": {
+      "prompt": "A jersey company charges a one-time $250 setup fee and $23 per printed jersey. Which expression gives the total for x jerseys?",
+      "choices": ["23x", "23+250x", "23x+250", "23(x+250)"],
+      "explanation": "The jerseys cost 23x dollars and the setup is one fixed $250 fee. Add them to get 23x+250.",
+      "imageAlt": "One-time setup cost 250 dollars, per-jersey cost 23 dollars, and all four total-cost expressions are transcribed."
+    },
+    "2": {
+      "prompt": "Which table represents a function?",
+      "choices": ["Pairs (2,−3),(3,0),(4,−3),(2,1)", "Pairs (1,2),(1,3),(1,4),(1,5)", "Pairs (−3,0),(−2,1),(−3,2),(2,3)", "Pairs (−2,−4),(0,2),(2,4),(4,6)"],
+      "explanation": "A function assigns one output to each input. Only choice (4) has four distinct x-values; the other tables repeat an x-value with different y-values.",
+      "imageAlt": "All four x-y tables are fully transcribed as ordered-pair lists, including repeated x-values in the first three choices."
+    },
+    "3": {
+      "prompt": "Which expression is equivalent to 2(x²−1)+3x(x−4)?",
+      "choices": ["5x²−5", "5x²−6", "5x²−12x−1", "5x²−12x−2"],
+      "explanation": "Distribute: 2x²−2+3x²−12x. Combine the quadratic terms to get 5x²−12x−2.",
+      "imageAlt": "Original parentheses and all four signed quadratic expressions are transcribed with exponents."
+    },
+    "4": {
+      "prompt": "What x satisfies 4/3=(x+10)/15?",
+      "choices": ["−6", "5", "10", "30"],
+      "explanation": "Multiply both sides by 15: x+10=20. Subtract 10, giving x=10.",
+      "imageAlt": "Fraction four-thirds equals fraction x plus ten over fifteen, and all four signed numeric choices are transcribed."
+    },
+    "5": {
+      "prompt": "Josh graphs f(x)=−3(x−1)²+2 and g(x)=−3(x−1)²−5. Where is g's vertex relative to f's?",
+      "choices": ["7 units below", "7 units above", "7 units to the right", "7 units to the left"],
+      "explanation": "Both parabolas have x-coordinate 1 at the vertex. Their y-coordinates are 2 and −5, a difference of −7, so g's vertex is 7 units below f's.",
+      "imageAlt": "Both vertex-form parabolas preserve the negative-three coefficient, x minus one square, and constants plus two versus minus five."
+    },
+    "6": {
+      "prompt": "Senior-trip survey: boys chose Niagara Falls 56, Darien Lake 74, New York City 103; girls chose Niagara Falls 71, Darien Lake 92, New York City 88. To the nearest percent, what percent of boys chose Niagara Falls?",
+      "choices": ["12", "24", "44", "56"],
+      "explanation": "There are 56+74+103=233 boys surveyed. Of these, 56 chose Niagara Falls, and 56/233×100≈24%.",
+      "imageAlt": "All six boy/girl and destination counts from the table are transcribed in the prompt."
+    },
+    "7": {
+      "prompt": "A graph of population size N versus time t rises slowly at first, then increasingly steeply in a smooth upward curve. Which function type does it show?",
+      "choices": ["linear", "exponential", "square root", "absolute value"],
+      "explanation": "The graph's growth rate increases as time passes, creating the characteristic upward-curving shape of exponential growth. A linear graph would be straight, and square-root growth would flatten.",
+      "imageAlt": "Population-versus-time graph begins above zero and curves upward with increasing slope; four function-type choices are transcribed."
+    },
+    "8": {
+      "prompt": "Which product is equivalent to 16x²−81?",
+      "choices": ["(8x−9)(8x+9)", "(8x−9)(8x−9)", "(4x−9)(4x+9)", "(4x−9)(4x−9)"],
+      "explanation": "Use difference of squares: 16x²−81=(4x)²−9²=(4x−9)(4x+9).",
+      "imageAlt": "Quadratic sixteen x squared minus eighty-one and four signed factorizations are transcribed."
+    },
+    "9": {
+      "prompt": "A landscaping owner wants the average time workers spend mowing one lawn. Which rate is appropriate?",
+      "choices": ["lawns per employee", "lawns per day", "employee per lawns", "hours per lawn"],
+      "explanation": "The question asks for time for each lawn, so the units must be a time unit divided by lawns. Hours per lawn has exactly those units.",
+      "imageAlt": "Average mowing-time question and all four candidate units are transcribed."
+    },
+    "10": {
+      "prompt": "A ball's height above ground is h(t)=−16t²+64t+80, where t is seconds after being thrown. When does it hit the ground?",
+      "choices": ["5", "2", "80", "144"],
+      "explanation": "Set height to zero: −16t²+64t+80=0. Divide by −16 to get t²−4t−5=0=(t−5)(t+1). The physically meaningful time is t=5 seconds.",
+      "imageAlt": "Quadratic height formula with negative sixteen t squared, positive sixty-four t, and initial height eighty, with four times transcribed."
+    },
+    "11": {
+      "prompt": "Which equation is equivalent to y=x²+24x−18?",
+      "choices": ["y=(x+12)²−162", "y=(x+12)²+126", "y=(x−12)²−162", "y=(x−12)²+126"],
+      "explanation": "Complete the square: x²+24x−18=(x+12)²−144−18=(x+12)²−162.",
+      "imageAlt": "Original quadratic and four vertex-form equations retain squared binomials and signed constants."
+    },
+    "12": {
+      "prompt": "When x(x−5)(2x+3) is written as a standard-form polynomial, which statement is true?",
+      "choices": ["Its constant term is 2.", "Its leading coefficient is 2.", "Its degree is 2.", "It has 2 terms."],
+      "explanation": "The leading terms multiply as x·x·2x=2x³, so the resulting cubic's leading coefficient is 2. The factor x makes its constant term 0.",
+      "imageAlt": "Full three-factor product and four claims about its constant, leading coefficient, degree, and number of terms are transcribed."
+    },
+    "13": {
+      "prompt": "City population is P(t)=3810(1.0005)⁷ᵗ. Which function is approximately equivalent?",
+      "choices": ["P(t)=3810(0.1427)ᵗ", "P(t)=3810(1.0035)ᵗ", "P(t)=26,670(0.1427)ᵗ", "P(t)=26,670(1.0035)ᵗ"],
+      "explanation": "Rewrite (1.0005)^(7t)=[(1.0005)^7]^t. The new base is about 1.0035, while the leading 3810 stays unchanged.",
+      "imageAlt": "Initial coefficient 3810, base 1.0005, exponent seven t, and all four approximate models preserve decimals and coefficients."
+    },
+    "14": {
+      "prompt": "A descending line g and a cubic-like curve f are graphed; they intersect at about x=−2, −1, and 2. For which listed x is f(x) not equal to g(x)?",
+      "choices": ["−1", "2", "3", "−2"],
+      "explanation": "Equality occurs where the two graphs cross. The listed x-values −2, −1, and 2 are crossing points, whereas at x=3 the curve and line have different heights.",
+      "imageAlt": "Descending line and a curve with a local peak left of the y-axis and trough right of it; three intersections appear near x negative two, negative one, and positive two."
+    },
+    "15": {
+      "prompt": "A box plot has minimum 1, first quartile 4, median 5, third quartile 6, maximum 8. What is its range?",
+      "choices": ["7", "2", "3", "4"],
+      "explanation": "Range is maximum minus minimum: 8−1=7. The box edges and median are not needed.",
+      "imageAlt": "Box plot on a zero-to-ten number line has whiskers at one and eight, box edges four and six, and median five."
+    },
+    "16": {
+      "prompt": "Which expression is not equivalent to 2x²+10x+12?",
+      "choices": ["(2x+4)(x+3)", "(2x+6)(x+2)", "(2x+3)(x+4)", "2(x+3)(x+2)"],
+      "explanation": "Choice (3) expands to 2x²+11x+12, not the requested 2x²+10x+12. Each other product expands to the requested polynomial.",
+      "imageAlt": "Original quadratic and all four product forms are transcribed with coefficients and plus signs."
+    },
+    "17": {
+      "prompt": "A table for r has (−4,−12),(−3,−15),(−2,−16),(−1,−15),(0,−12),(1,−7). Also q(x)=x²+2x−8. Which function has the smaller minimum?",
+      "choices": ["q, minimum −9", "q, minimum −1", "r, minimum −16", "r, minimum −2"],
+      "explanation": "The r table is symmetric about x=−2 and reaches −16 there. Completing the square gives q(x)=(x+1)²−9, whose minimum is −9. Since −16<−9, r has the smaller minimum.",
+      "imageAlt": "All six r-table pairs and complete q quadratic are transcribed in the prompt, with four function-and-minimum choices."
+    },
+    "18": {
+      "prompt": "A child's distance from home d(t) starts at 10 yards at t=0, decreases steadily to 4 at t=2, briefly rises then returns to 4 at t=3, rises to 8 at t=4, and stays at 8 through t=6. When is the child constantly moving closer to home?",
+      "choices": ["0≤t≤2", "2≤t≤3", "3≤t≤4", "4≤t≤6"],
+      "explanation": "Moving closer means distance from home decreases continuously. Only from 0 to 2 seconds does d(t) fall without reversing or flattening.",
+      "imageAlt": "Distance-time graph passes (0,10), (2,4), a small hump between two and three, (3,4), (4,8), and (6,8); four time intervals are transcribed."
+    },
+    "19": {
+      "prompt": "If a₁=6 and aₙ=3+2(aₙ₋₁)², what is a₂?",
+      "choices": ["75", "147", "180", "900"],
+      "explanation": "For n=2, the preceding term is a₁=6. Compute a₂=3+2(6)²=3+72=75.",
+      "imageAlt": "Recurrence includes a square on the entire previous term; initial term six and four candidate values are transcribed."
+    },
+    "20": {
+      "prompt": "A rectangular patio's length is 7 feet more than its width w. Which function gives area A(w)?",
+      "choices": ["A(w)=w+7", "A(w)=w²+7w", "A(w)=4w+14", "A(w)=4w²+28w"],
+      "explanation": "Length is w+7. Area is width times length: A(w)=w(w+7)=w²+7w.",
+      "imageAlt": "Width w, length w plus seven feet, and four candidate area functions are transcribed."
+    },
+    "21": {
+      "prompt": "A dolphin's jump is graphed with time x and distance above or below sea level y. Which set best represents the domain of the graph?",
+      "choices": ["integers", "positive integers", "real numbers", "positive real numbers"],
+      "explanation": "Elapsed time varies continuously and cannot be negative during the jump. Positive real numbers best match those possible time inputs among the choices.",
+      "imageAlt": "Time is the input axis; sea-level distance is output. All four integer-versus-real, positive-versus-unrestricted domains are transcribed."
+    },
+    "22": {
+      "prompt": "Which system has the same solution as x−4y=−10 and x+y=5?",
+      "choices": ["5x=10; x+y=5", "−5y=−5; x+y=5", "−3x=−30; x+y=5", "−5y=−5; x−4y=−10"],
+      "explanation": "Subtract the first equation from the second: 5y=15, so y=3 and then x=2. Choice (1) states 5x=10, which gives x=2, together with x+y=5, so it has the same solution.",
+      "imageAlt": "Original two linear equations and all four replacement systems retain their signs and constants."
+    },
+    "23": {
+      "prompt": "What is the range of h(x)=2x²−2x−4?",
+      "choices": ["(0.5,∞)", "(−4.5,∞)", "[0.5,∞)", "[−4.5,∞)"],
+      "explanation": "Complete the square: h(x)=2(x−0.5)²−4.5. The squared term is nonnegative, so the minimum −4.5 is attained and included in the range.",
+      "imageAlt": "Quadratic h and four interval choices preserve negative and positive bounds and open or closed brackets."
+    },
+    "24": {
+      "prompt": "A geometric sequence has first term 5 and third term 245. Which listed value is a common ratio?",
+      "choices": ["7", "49", "120", "240"],
+      "explanation": "The third term is a₁r², so 5r²=245 and r²=49. Both 7 and −7 satisfy this, but 7 is the listed option.",
+      "imageAlt": "First term five, third term two hundred forty-five, and four candidate positive ratios are transcribed."
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "sections": [
+    {
+      "slug": "passage-b",
+      "title": "Reading Comprehension · Passage B",
+      "intro": "Read “Naming the Birds” and answer questions 11–14.",
+      "questionIds": ["english-2025-june-q11", "english-2025-june-q12", "english-2025-june-q13", "english-2025-june-q14"],
+      "passage": {
+        "title": "Naming the Birds",
+        "credit": "—W. Todd Kaneko · “Naming the Birds” · Orion Magazine, Summer 2020 · orionmagazine.org",
+        "transcriptReviewStatus": "reviewed",
+        "lines": [
+          {"number": 1, "text": "The beach is noiseless,"},
+          {"number": 2, "text": "stretching behind my father’s house,"},
+          {"number": 3, "text": "a mile of stones and driftwood"},
+          {"number": null, "text": ""},
+          {"number": 4, "text": "for those herons, ghostlike,"},
+          {"number": 5, "text": "carefully picking their way"},
+          {"number": 6, "text": "down the shoreline,"},
+          {"number": null, "text": ""},
+          {"number": 7, "text": "all knees and neck,"},
+          {"number": 8, "text": "looking for crabs or something"},
+          {"number": 9, "text": "they lost in the surf, and my father"},
+          {"number": null, "text": ""},
+          {"number": 10, "text": "points at them and says their names"},
+          {"number": 11, "text": "like he is making a wish."},
+          {"number": 12, "text": "Then they are all gone and it’s just me"},
+          {"number": null, "text": ""},
+          {"number": 13, "text": "and the seagulls hover overhead"},
+          {"number": 14, "text": "saying their own names,"},
+          {"number": 15, "text": "the sky making those sounds"},
+          {"number": null, "text": ""},
+          {"number": 16, "text": "airplanes make when the world"},
+          {"number": 17, "text": "has nothing left to say to you."},
+          {"number": null, "text": ""},
+          {"number": 18, "text": "I have no memory of any wish"},
+          {"number": 19, "text": "of mine coming true, no knowledge"},
+          {"number": 20, "text": "of how a man turns to another man"},
+          {"number": 21, "text": "and promises never to leave him,"},
+          {"number": null, "text": ""},
+          {"number": 22, "text": "but the other day I named the shadow"},
+          {"number": 23, "text": "of a cardinal through a frosty window"},
+          {"number": null, "text": ""},
+          {"number": 24, "text": "for my son, described it so he would"},
+          {"number": 25, "text": "know it when he sees one for himself."}
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {"id": "english-2025-june-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The herons’ searching for something “they lost” (line 9) implies", "choices": [{"label": "1", "text": "the speaker’s admiration of their efforts"}, {"label": "2", "text": "the speaker’s fears for their survival"}, {"label": "3", "text": "a competition between the speaker and them"}, {"label": "4", "text": "a parallel between the speaker and them"}], "correct": "4", "explanation": "The herons appear to search for something lost in the surf. Later the speaker recalls a father who is gone and admits he cannot remember a wish coming true, creating a parallel between their searching and his sense of loss.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-june-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "In the context of the poem as a whole, line 12 signals that the", "choices": [{"label": "1", "text": "waves are forceful and the beach is calm"}, {"label": "2", "text": "speaker is thinking about a past event"}, {"label": "3", "text": "father is looking at the birds but not talking"}, {"label": "4", "text": "birds are too far away for the speaker to hear"}], "correct": "2", "explanation": "“Then they are all gone and it’s just me” shifts from the remembered scene with the father and herons to the speaker's present solitude. It reveals that the earlier scene is a memory.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-june-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The descriptions of the “herons” (line 4) and the “seagulls” (line 13) suggest a", "choices": [{"label": "1", "text": "contrast between what is remembered and what is present"}, {"label": "2", "text": "comparison between the habits of the two species"}, {"label": "3", "text": "regard for the presence of such beautiful birds"}, {"label": "4", "text": "recognition of the significance of the past and its lessons"}], "correct": "1", "explanation": "The herons appear in the remembered moment when the father is present; after they vanish, seagulls hover over the speaker alone. The two bird descriptions mark a contrast between remembered company and present solitude.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-june-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The naming of the birds throughout the poem serves to", "choices": [{"label": "1", "text": "affirm a respect for nature"}, {"label": "2", "text": "create a link between generations"}, {"label": "3", "text": "exemplify the importance of words"}, {"label": "4", "text": "distinguish the species of birds"}], "correct": "2", "explanation": "The speaker's father once named the herons for him, and the speaker later names a cardinal for his own son. Repeating the act passes a bond across generations.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

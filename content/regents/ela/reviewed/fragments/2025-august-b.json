@@ -1,0 +1,48 @@
+{
+  "sections": [
+    {
+      "slug": "passage-b",
+      "title": "Reading Comprehension · Passage B",
+      "intro": "Read “A Blessing” and answer questions 10–14.",
+      "questionIds": ["english-2025-august-q10", "english-2025-august-q11", "english-2025-august-q12", "english-2025-august-q13", "english-2025-august-q14"],
+      "passage": {
+        "title": "A Blessing",
+        "credit": "—James Wright · “A Blessing” · from Above the River: The Complete Poems (1992), Wesleyan University Press",
+        "transcriptReviewStatus": "reviewed",
+        "lines": [
+          {"number": 1, "text": "Just off the highway to Rochester, Minnesota,"},
+          {"number": 2, "text": "Twilight bounds softly forth on the grass."},
+          {"number": 3, "text": "And the eyes of those two Indian ponies"},
+          {"number": 4, "text": "Darken with kindness."},
+          {"number": 5, "text": "They have come gladly out of the willows"},
+          {"number": 6, "text": "To welcome my friend and me."},
+          {"number": 7, "text": "We step over the barbed wire into the pasture"},
+          {"number": 8, "text": "Where they have been grazing all day, alone."},
+          {"number": 9, "text": "They ripple tensely, they can hardly contain their happiness"},
+          {"number": 10, "text": "That we have come."},
+          {"number": 11, "text": "They bow shyly as wet swans. They love each other."},
+          {"number": 12, "text": "There is no loneliness like theirs."},
+          {"number": 13, "text": "At home once more,"},
+          {"number": 14, "text": "They begin munching the young tufts of spring in the darkness."},
+          {"number": 15, "text": "I would like to hold the slenderer one in my arms,"},
+          {"number": 16, "text": "For she has walked over to me"},
+          {"number": 17, "text": "And nuzzled my left hand."},
+          {"number": 18, "text": "She is black and white,"},
+          {"number": 19, "text": "Her mane falls wild on her forehead,"},
+          {"number": 20, "text": "And the light breeze moves me to caress her long ear"},
+          {"number": 21, "text": "That is delicate as the skin over a girl’s wrist."},
+          {"number": 22, "text": "Suddenly I realize"},
+          {"number": 23, "text": "That if I stepped out of my body I would break"},
+          {"number": 24, "text": "Into blossom."}
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {"id": "english-2025-august-q10", "number": 10, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "The act of stepping “over the barbed wire” (line 7) represents the", "choices": [{"label": "1", "text": "crossing into a dangerous region"}, {"label": "2", "text": "passage to an imaginary landscape"}, {"label": "3", "text": "entrance into a more natural world"}, {"label": "4", "text": "pathway to an unpleasant territory"}], "correct": "3", "explanation": "The speaker leaves the highway side and steps into a pasture with grazing ponies, grass, willows, and spring growth. Crossing the fence marks entry into the animals' natural setting.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-august-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "The statement “they ripple tensely” (line 9) reflects the ponies’ reaction to the", "choices": [{"label": "1", "text": "nearness of the road"}, {"label": "2", "text": "possibility of escape"}, {"label": "3", "text": "recognition of their owners"}, {"label": "4", "text": "arrival of visitors"}], "correct": "4", "explanation": "The same line says the ponies can hardly contain their happiness “That we have come.” Their physical tension expresses excitement at the two visitors' arrival.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-august-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "The simile in line 11 suggests the ponies’", "choices": [{"label": "1", "text": "feathery manes"}, {"label": "2", "text": "graceful necks"}, {"label": "3", "text": "shining eyes"}, {"label": "4", "text": "glistening coats"}], "correct": "2", "explanation": "“They bow shyly as wet swans” compares the ponies' movement to swans lowering their long necks. The comparison suggests graceful necks rather than feathers or coat texture.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-august-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "The poem is primarily developed through the use of", "choices": [{"label": "1", "text": "imagery to describe an intense experience"}, {"label": "2", "text": "transitions to emphasize changing seasons"}, {"label": "3", "text": "exaggeration to enhance an interesting event"}, {"label": "4", "text": "contrasts to compare differing viewpoints"}], "correct": "1", "explanation": "Images of twilight, grass, the ponies' eyes, the nuzzled hand, and the delicate ear make the encounter vivid. That sensory imagery carries the speaker's intense feeling through the final blossom image.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-august-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 6, "prompt": "The title of the poem highlights the", "choices": [{"label": "1", "text": "beauty of the land"}, {"label": "2", "text": "relationship between the ponies"}, {"label": "3", "text": "friendship between the visitors"}, {"label": "4", "text": "significance of the encounter"}], "correct": "4", "explanation": "The speaker treats meeting and touching the ponies as a gift so powerful that it inspires the image of breaking “Into blossom.” The title names the importance of that encounter.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

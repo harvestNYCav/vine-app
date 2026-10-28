@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "39de6167ca78ec27913463cb9cf4396130f5a78eedac8291a6227c23fe38d667",
+  "questions": {
+    "1": {
+      "prompt": "For f(x)=(x−2)²+4, at what x-value does the minimum occur?",
+      "choices": ["−2", "2", "−4", "4"],
+      "explanation": "The square (x−2)² is smallest when it is zero, at x=2. Then the function has its minimum value 4.",
+      "imageAlt": "The squared expression f of x equals quantity x minus two squared plus four and all four signed x-value choices are transcribed."
+    },
+    "2": {
+      "prompt": "A gas-sales graph plots cost in dollars against number of gallons. Its line runs through (0,0), (4,15), (8,30), and (12,45). Which statement is justified?",
+      "choices": ["If 10 gallons of gas was purchased, $35 was paid.", "For every gallon of gas purchased, $3.75 was paid.", "For every 2 gallons of gas purchased, $5.00 was paid.", "If zero gallons of gas were purchased, zero miles were driven."],
+      "explanation": "The slope of the cost-versus-gallons graph is 15÷4=$3.75 per gallon. Ten gallons would cost $37.50, and the graph provides no information about miles driven.",
+      "imageAlt": "Cost is on the vertical axis and gallons on the horizontal. The straight line passes through the origin and points (4,15), (8,30), (12,45); all four complete statements are transcribed."
+    },
+    "3": {
+      "prompt": "A movie earns y=119.67(0.61)^x million dollars in week x after release. How much more revenue, in millions, was earned in week 3 than week 5?",
+      "choices": ["37.27", "27.16", "17.06", "10.11"],
+      "explanation": "Subtract the week-5 revenue from the week-3 revenue: 119.67(0.61)³−119.67(0.61)⁵≈17.06 million dollars.",
+      "imageAlt": "Exponential revenue model y equals 119.67 times 0.61 to the x power, weeks three and five, and four numerical choices are transcribed."
+    },
+    "4": {
+      "prompt": "Which of these expressions produce an irrational number? I: −5/8+3/5; II: 1/2+√2; III: √5·√5; IV: 3·√49.",
+      "choices": ["II, only", "III, only", "I, III, IV", "II, III, IV"],
+      "explanation": "I is a sum of rational fractions, III equals 5, and IV equals 21. Adding rational 1/2 to irrational √2 leaves II irrational.",
+      "imageAlt": "All four Roman-numeral expressions are transcribed, preserving negative fractions, square-root signs, multiplication, and all grouping choices."
+    },
+    "5": {
+      "prompt": "A solid line on a coordinate graph crosses the y-axis at −3, rises 2 for every unit right, and is shaded above the line. Which inequality does it show?",
+      "choices": ["y≤2x−3", "y≥2x−3", "y≤−3x+2", "y≥−3x+2"],
+      "explanation": "The boundary line is y=2x−3. Its solid stroke includes equality, and the region above it has y-values at least 2x−3.",
+      "imageAlt": "Solid line with slope two and y-intercept negative three; the upper-left side is shaded. All four inequalities retain their signs and inclusive comparisons."
+    },
+    "6": {
+      "prompt": "Michael's uncle uses the simple-interest formula I=Prt. Solve it for the interest rate r.",
+      "choices": ["(I−P)/t", "(P−I)/t", "I/(Pt)", "Pt/I"],
+      "explanation": "Divide both sides of I=Prt by the product Pt to isolate r, giving r=I/(Pt).",
+      "imageAlt": "The complete formula I equals P times r times t and four candidate fractional expressions for r are transcribed with their numerators and denominators."
+    },
+    "7": {
+      "prompt": "Which equation is equivalent to y−34=x(x−12)?",
+      "choices": ["y=(x−17)(x+2)", "y=(x−17)(x−2)", "y=(x−6)²+2", "y=(x−6)²−2"],
+      "explanation": "Add 34 and complete the square: y=x²−12x+34=(x−6)²−36+34=(x−6)²−2.",
+      "imageAlt": "Original equation and four complete factored or vertex-form equations are transcribed, retaining all signs, parentheses, and exponents."
+    },
+    "8": {
+      "prompt": "In the savings-account model A=1300(1.02)^n, what does the factor 1.02 represent?",
+      "choices": ["0.02% decay", "0.02% growth", "2% decay", "2% growth"],
+      "explanation": "Because 1.02=1+0.02, each period multiplies the balance by 1 plus 2%, representing 2% growth.",
+      "imageAlt": "Exponential savings equation with growth factor one-point-zero-two and all four percentage-and-direction choices are transcribed."
+    },
+    "9": {
+      "prompt": "What are the zeros of f(x)=2x²−4x−6?",
+      "choices": ["3 and −1", "3 and 1", "−3 and 1", "−3 and −1"],
+      "explanation": "Factor 2x²−4x−6=2(x−3)(x+1). Setting either factor to zero gives x=3 or x=−1.",
+      "imageAlt": "Quadratic with coefficient two, middle term negative four x, constant negative six, and four signed root pairs are transcribed."
+    },
+    "10": {
+      "prompt": "What is the result when (2x−3)² is subtracted from 5x²?",
+      "choices": ["x²−12x−9", "x²−12x+9", "x²+12x−9", "x²+12x+9"],
+      "explanation": "Expand the square first: 5x²−(4x²−12x+9)=x²+12x−9.",
+      "imageAlt": "Five x squared minus quantity two x minus three squared, and all four quadratic choices with exact signs, are transcribed."
+    },
+    "11": {
+      "prompt": "A 10 ft by 12 ft rectangular patio is to have 50% more area by increasing each dimension by x feet. Which equation determines x?",
+      "choices": ["(10+x)(12+x)=120", "(10+x)(12+x)=180", "(15+x)(18+x)=180", "15·18=120+x²"],
+      "explanation": "The original area is 10·12=120 square feet, so 50% more is 180. The new dimensions are 10+x and 12+x, making (10+x)(12+x)=180.",
+      "imageAlt": "Original patio dimensions ten and twelve feet, fifty-percent area increase, equal added length x, and all four full equation choices are transcribed."
+    },
+    "12": {
+      "prompt": "Factor x³−13x²−30x completely.",
+      "choices": ["x(x+3)(x−10)", "x(x−3)(x−10)", "x(x+2)(x−15)", "x(x−2)(x+15)"],
+      "explanation": "First factor out x. The remaining x²−13x−30 factors as (x+2)(x−15), whose constants multiply to −30 and sum to −13.",
+      "imageAlt": "Cubic with x cubed minus thirteen x squared minus thirty x, and all four three-factor products, are transcribed."
+    },
+    "13": {
+      "prompt": "A postcard cost 1, 6, 14, 24, and 35 cents in 1898, 1971, 1985, 2006, and 2012, respectively. Which interval had the greatest average cost increase per year?",
+      "choices": ["1898–1971", "1971–1985", "1985–2006", "2006–2012"],
+      "explanation": "The last interval rises 11 cents in 6 years, about 1.83 cents per year. Earlier interval rates are 5/73, 8/14, and 10/21 cents per year, all smaller.",
+      "imageAlt": "Complete five-row table is transcribed as year and postcard cost in cents: 1898 one, 1971 six, 1985 fourteen, 2006 twenty-four, 2012 thirty-five; all four intervals are listed."
+    },
+    "14": {
+      "prompt": "When solving x²−8x−7=0 by completing the square, which equation is a valid step?",
+      "choices": ["(x−4)²=9", "(x−4)²=23", "(x−8)²=9", "(x−8)²=23"],
+      "explanation": "Move −7 to the right to get x²−8x=7. Add 16 to each side, producing (x−4)²=23.",
+      "imageAlt": "Quadratic equation x squared minus eight x minus seven equals zero and four squared-binomial equations are transcribed."
+    },
+    "15": {
+      "prompt": "A construction company uses f(p) to model a project's cost, where p is the number of people working on the project. What is a reasonable domain for p?",
+      "choices": ["positive integers", "positive real numbers", "both positive and negative integers", "both positive and negative real numbers"],
+      "explanation": "Workers are counted in whole people, cannot be negative, and the project has at least one worker. Thus p takes positive integer values.",
+      "imageAlt": "People-count input p and all four proposed domains are transcribed, distinguishing positive whole counts from fractional or negative values."
+    },
+    "16": {
+      "prompt": "For x=−2,−1,0,1,2,3, a function table gives f(x)=1/9,1/3,1,3,9,27. Which function matches?",
+      "choices": ["f(x)=3x", "f(x)=x+3", "f(x)=−x³", "f(x)=3^x"],
+      "explanation": "Each increase of 1 in x multiplies the output by 3, and f(0)=1. That is the pattern of 3^x, including 3^(−2)=1/9.",
+      "imageAlt": "All six input-output pairs are transcribed, including fractional outputs one-ninth and one-third; four function formulas retain multiplication and exponent notation."
+    },
+    "17": {
+      "prompt": "For h(x)=x/2+3 and j(x)=|x|, which x-value makes h(x)=j(x)?",
+      "choices": ["−2", "2", "3", "−6"],
+      "explanation": "At x=−2, h(−2)=−1+3=2 and j(−2)=|−2|=2. The other listed inputs give unequal outputs.",
+      "imageAlt": "Half of x plus three and the absolute-value function of x are transcribed with all four signed candidate inputs."
+    },
+    "18": {
+      "prompt": "Which recursive definition generates 3, 7, 15, 31, …?",
+      "choices": ["f(1)=3; f(n+1)=2f(n)+3", "f(1)=3; f(n+1)=2f(n)−1", "f(1)=3; f(n+1)=2f(n)+1", "f(1)=3; f(n+1)=3f(n)−2"],
+      "explanation": "Each term is twice the previous term plus 1: 2·3+1=7, 2·7+1=15, and 2·15+1=31.",
+      "imageAlt": "Sequence three, seven, fifteen, thirty-one and all four complete recurrences, including starting term, multiplier, and signed adjustment, are transcribed."
+    },
+    "19": {
+      "prompt": "What is the range of y=5^x for real x?",
+      "choices": ["y<0", "y>0", "y≤0", "y≥0"],
+      "explanation": "A positive base raised to any real power is strictly positive. The values approach zero but never equal it, so y>0.",
+      "imageAlt": "Exponential function five to the x power and four positive-or-negative range inequalities, including strict and inclusive endpoints, are transcribed."
+    },
+    "20": {
+      "prompt": "An increasing, concave-down graph y=f(x) passes through approximately (−2,1), (−1,2), (2,3), and (7,4). Which graph represents y=f(x+1)−2?",
+      "choices": ["Same curve shifted left 1 and down 2; corresponding points (−3,−1), (−2,0), (1,1), (6,2)", "Same curve shifted left 1 and up 2; corresponding points (−3,3), (−2,4), (1,5), (6,6)", "Same curve shifted right 1 and down 2; corresponding points (−1,−1), (0,0), (3,1), (8,2)", "Same curve shifted right 1 and up 2; corresponding points (−1,3), (0,4), (3,5), (8,6)"],
+      "explanation": "Replacing x with x+1 shifts a graph one unit left, and subtracting 2 shifts it two units down. The first graph has both translations.",
+      "imageAlt": "Original concave-down increasing curve is anchored near (−2,1), (−1,2), (2,3), (7,4). Each graph choice is described by the direction and amount of translation plus corresponding anchor coordinates."
+    },
+    "21": {
+      "prompt": "Given 4x+2y=22 and −2x+2y=−8, which pair could not be obtained by equivalent transformations to solve for x and y?",
+      "choices": ["4x+2y=22; 2x−2y=8", "4x+2y=22; −4x+4y=−16", "12x+6y=66; 6x−6y=24", "8x+4y=44; −8x+8y=−8"],
+      "explanation": "In the fourth pair, the first equation is doubled correctly, but multiplying the second original equation by 4 should give −8x+8y=−32, not −8. The other pairs use valid nonzero multiples of the originals.",
+      "imageAlt": "Original two-equation system and all four complete proposed systems are transcribed with coefficients and constants; choice four ends in negative eight, not negative thirty-two."
+    },
+    "22": {
+      "prompt": "A graphed upward-opening parabola has a minimum at approximately (3,−7). Which listed function has a lower minimum value?",
+      "choices": ["y=x²−6x+7", "y=|x+3|−6", "y=x²−2x−10", "y=|x−8|+2"],
+      "explanation": "Complete the square for choice 3: x²−2x−10=(x−1)²−11, so its minimum is −11. The other choices have minima −2, −6, and 2, none below the graphed minimum near −7.",
+      "imageAlt": "Upward-opening parabola has vertex about three units right and seven units below the origin. All four complete quadratic or absolute-value formulas are transcribed."
+    },
+    "23": {
+      "prompt": "Three situations are considered: I, a sunflower grows 3.5 cm per day for 28 days; II, a car's value depreciates 15% per year; III, bacteria triples every two days. Which situations have equal differences over equal time intervals?",
+      "choices": ["I, only", "II, only", "I and III", "II and III"],
+      "explanation": "The sunflower gains a fixed 3.5 cm each day, so equal time intervals yield equal differences. A fixed percentage depreciation and repeated tripling produce equal ratios, not equal differences.",
+      "imageAlt": "All three situations are transcribed with the fixed three-point-five-centimeter daily growth, fifteen-percent yearly depreciation, and two-day tripling; all four Roman-numeral answer groups are listed."
+    },
+    "24": {
+      "prompt": "Which of four residual scatter plots indicates the best linear fit: (1) a U-shaped pattern, (2) a mostly downward then upward pattern, (3) points randomly scattered close to zero, or (4) a wavelike clustered pattern?",
+      "choices": ["U-shaped residual pattern", "Residuals descend and then rise", "Residuals randomly scattered close to zero", "Wavelike clustered residual pattern"],
+      "explanation": "A good linear fit leaves small residuals with no discernible pattern. Choice 3 has points randomly distributed just above and below zero, unlike the systematic curves or clusters in the others.",
+      "imageAlt": "Four residual plots are distinguished by their essential patterns: one broad U, one descending then rising, one near-zero random horizontal band, and one wavelike cluster arrangement."
+    }
+  }
+}

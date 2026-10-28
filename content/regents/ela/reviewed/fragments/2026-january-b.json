@@ -1,0 +1,72 @@
+{
+  "sections": [
+    {
+      "slug": "passage-b",
+      "title": "Reading Comprehension · Passage B",
+      "intro": "Read “To a Snake” and answer questions 10–14.",
+      "questionIds": ["english-2026-january-q10", "english-2026-january-q11", "english-2026-january-q12", "english-2026-january-q13", "english-2026-january-q14"],
+      "passage": {
+        "title": "To a Snake",
+        "credit": "—Jeffrey Harrison · “To a Snake” · from Into Daylight (2014), Tupelo Press",
+        "transcriptReviewStatus": "reviewed",
+        "lines": [
+          {"number": 1, "text": "I knew you were not poisonous"},
+          {"number": 2, "text": "when I saw you in the side garden;"},
+          {"number": 3, "text": "even your name—milk snake—"},
+          {"number": 4, "text": "sounds harmless, and yet your pattern"},
+          {"number": 5, "text": "of copper splotches outlined in black"},
+          {"number": 6, "text": "frightened me, and the way you were"},
+          {"number": 7, "text": "curled in loops; and it offended me"},
+          {"number": 8, "text": "that you were so close to the house"},
+          {"number": 9, "text": "and clearly living underneath it"},
+          {"number": 10, "text": "if not inside, in the cellar, where I"},
+          {"number": 11, "text": "have found your torn shed skins."},
+          {"number": null, "text": ""},
+          {"number": 12, "text": "You must have been frightened too"},
+          {"number": 13, "text": "when I caught you in the webbing"},
+          {"number": 14, "text": "of the lacrosse stick and flung you"},
+          {"number": 15, "text": "into the woods, where you landed"},
+          {"number": 16, "text": "dangling from a vine-covered branch,"},
+          {"number": 17, "text": "shamelessly twisted. Now I"},
+          {"number": 18, "text": "am the one who is ashamed, unable"},
+          {"number": 19, "text": "to untangle my feelings,"},
+          {"number": 20, "text": "braided into my DNA or buried"},
+          {"number": 21, "text": "deep in the part of my brain"},
+          {"number": 22, "text": "that is most like yours."}
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "english-2026-january-q10", "number": 10, "sectionSlug": "passage-b", "sourcePage": 7,
+      "prompt": "The speaker’s reaction to the snake (lines 1 through 6) was triggered by",
+      "choices": [{"label": "1", "text": "curiosity"}, {"label": "2", "text": "coloring"}, {"label": "3", "text": "movement"}, {"label": "4", "text": "aggression"}],
+      "correct": "2", "explanation": "Although the speaker knows the milk snake is not poisonous, its copper splotches outlined in black frighten the speaker. Its coloring, not an aggressive act, triggers that initial reaction.", "explanationSource": "vine-authored", "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-january-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7,
+      "prompt": "The word “if” in line 10 indicates the speaker",
+      "choices": [{"label": "1", "text": "provokes a response from the snake"}, {"label": "2", "text": "tolerates that the snake lives near the garden"}, {"label": "3", "text": "respects the needs of the snake"}, {"label": "4", "text": "resents that the snake goes into the cellar"}],
+      "correct": "4", "explanation": "The speaker is offended that the snake lives under the house and suspects it may even enter the cellar, where shed skins have been found. “If not inside” conveys this unwelcome possibility.", "explanationSource": "vine-authored", "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-january-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7,
+      "prompt": "The use of “the lacrosse stick” (line 14) to move the snake most likely suggests",
+      "choices": [{"label": "1", "text": "hastiness"}, {"label": "2", "text": "precision"}, {"label": "3", "text": "creativity"}, {"label": "4", "text": "sensitivity"}],
+      "correct": "1", "explanation": "The speaker catches the snake in the stick's webbing and immediately flings it into the woods. That improvised, forceful action suggests a hurried response to fear rather than careful or gentle handling.", "explanationSource": "vine-authored", "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-january-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7,
+      "prompt": "The phrase “shamelessly twisted” (line 17) emphasizes the speaker’s",
+      "choices": [{"label": "1", "text": "pride in the quick reaction"}, {"label": "2", "text": "surprise at the snake’s inaction"}, {"label": "3", "text": "guilt surrounding the violent act"}, {"label": "4", "text": "certainty about the snake’s survival"}],
+      "correct": "3", "explanation": "The speaker calls the flung snake “shamelessly twisted,” then immediately says “Now I am the one who is ashamed.” That contrast reveals guilt about having thrown the animal into the woods.", "explanationSource": "vine-authored", "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-january-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7,
+      "prompt": "Lines 17 through 22 demonstrate a shift in mood from",
+      "choices": [{"label": "1", "text": "boredom to excitement"}, {"label": "2", "text": "innocence to vengeance"}, {"label": "3", "text": "courage to bitterness"}, {"label": "4", "text": "hesitancy to regret"}],
+      "correct": "4", "explanation": "The speaker initially hesitates over mixed feelings about the harmless but frightening snake. After flinging it away, the speaker explicitly feels ashamed and cannot untangle those feelings, so regret replaces the earlier uncertainty.", "explanationSource": "vine-authored", "readiness": "reviewed"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "b0038e51912837083f1d7f8f4669cf502bbc47dfd9f5878241047d216f50bb67",
+  "questions": {
+    "1": {
+      "prompt": "A two-dimensional cross section of a three-dimensional object is a triangle. Which object cannot make such a cross section?",
+      "choices": ["cone", "cylinder", "pyramid", "rectangular prism"],
+      "explanation": "A plane through a cone's tip, a pyramid's faces, or a corner of a rectangular prism can make a triangular slice. A plane slicing a right circular cylinder cannot make a three-straight-sided triangular cross section.",
+      "imageAlt": "Printed cross-section question; all candidate solids are in accessible text."
+    },
+    "2": {
+      "prompt": "Triangle DEF maps to D′E′F′. Which transformation will not preserve congruence?",
+      "choices": ["reflection through the origin", "reflection over y = x", "dilation of scale factor 1 centered at (2,3)", "dilation of scale factor 3/2 centered at origin"],
+      "explanation": "Reflections preserve lengths, and a dilation by factor 1 changes nothing. A dilation by 3/2 multiplies every side length by 3/2, producing a similar but generally noncongruent triangle.",
+      "imageAlt": "Printed transformation question; every motion and scale factor is in accessible text."
+    },
+    "3": {
+      "prompt": "Square RSTV has R(−1,5), S(−3,1), T(−7,3), and V(−5,7). What is its perimeter?",
+      "choices": ["√20", "√40", "4√20", "4√40"],
+      "explanation": "One side RS has length √[(-3+1)²+(1−5)²] = √(4+16) = √20. Four equal sides give perimeter 4√20.",
+      "imageAlt": "Printed coordinate-square problem; four signed vertices and radical choices are in accessible text."
+    },
+    "4": {
+      "prompt": "In circle O, chord CD is parallel to diameter AOB, and minor arc CD measures 130°. What is minor arc AC?",
+      "choices": ["25°", "50°", "65°", "115°"],
+      "explanation": "The upper semicircle from A to B measures 180°. Parallel chord and diameter make the two side arcs AC and DB equal, so each is (180°−130°)/2 = 25°.",
+      "imageAlt": "Circle has horizontal diameter A-O-B from left to right. A shorter horizontal chord C-D lies above it; top arc CD is 130°. Side arc AC is between left endpoints of chord and diameter."
+    },
+    "5": {
+      "prompt": "Segments AD and BE cross at C, with AB ∥ DE. If CD = 6.6 cm, DE = 3.4 cm, CE = 4.2 cm, and BC = 5.25 cm, find AC to the nearest hundredth.",
+      "choices": ["2.70", "3.34", "5.28", "8.25"],
+      "explanation": "Triangles ABC and DEC are similar by the parallel bases and vertical angles. Corresponding sides give AC/CD = BC/CE = 5.25/4.2 = 1.25. Thus AC = 1.25(6.6) = 8.25 cm.",
+      "imageAlt": "Two opposed triangles share crossing point C. Left triangle A-B-C has A lower left, B upper left, and C right of them. Right triangle D-E-C has D upper right and E lower right, with AB parallel to DE."
+    },
+    "6": {
+      "prompt": "A rectangle is centered at (4,0) on a coordinate grid. Which transformation does not map it onto itself?",
+      "choices": ["reflection over x-axis", "reflection over x = 4", "180° rotation about origin", "180° rotation about (4,0)"],
+      "explanation": "The rectangle's symmetry center is (4,0), so a half-turn there works. A half-turn about the origin would move its center to (−4,0), not onto the original rectangle.",
+      "imageAlt": "Axis-aligned rectangle lies to the right of the y-axis, spanning equal distances above and below the x-axis; its vertical midline is x=4 and center is (4,0)."
+    },
+    "7": {
+      "prompt": "In triangle ACD, B lies on AC, E on AD, and BE ∥ CD. If AB = 1, BC = 3.5, and AD = 18, find AE to the nearest tenth.",
+      "choices": ["14.0", "5.1", "3.3", "4.0"],
+      "explanation": "AC = 1+3.5 = 4.5. Similar triangles ABE and ACD give AE/AD = AB/AC = 1/4.5, so AE = 18/4.5 = 4.0.",
+      "imageAlt": "Large triangle A-C-D has A near upper left, C lower left, D far right. B lies near A on side AC, E lies near A on side AD, and short segment BE runs parallel to base CD."
+    },
+    "8": {
+      "prompt": "Parallelogram ROCK has angle C = 70°. Segment OS meets bottom side RK at S, and angle ROS = 65°. Find angle KSO.",
+      "choices": ["45°", "110°", "115°", "135°"],
+      "explanation": "Opposite angle R equals angle C, 70°. In triangle ROS, angle RSO = 180°−70°−65° = 45°. R-S-K is straight, so angle KSO is the exterior supplement, 135°.",
+      "imageAlt": "Parallelogram has R lower left, O upper left, C upper right, K lower right. Point S lies between R and K on horizontal bottom side; segment O-S slopes down-right. Angle ROS is at O between OR and OS."
+    },
+    "9": {
+      "prompt": "Triangles GRS and ART have angle GRS ≅ ART, with GR = 36, SR = 45, AR = 15, RT = 18. Which similarity statement is correct?",
+      "choices": ["GRS ∼ ART by AA", "GRS ∼ ART by SAS", "GRS ∼ ART by SSS", "GRS is not similar to ART"],
+      "explanation": "The given angles at R match, but the adjacent side ratios do not: GR/AR = 36/15 = 2.4 whereas SR/RT = 45/18 = 2.5. SAS similarity fails, and no other sufficient information is given, so the triangles are not similar.",
+      "imageAlt": "Triangle GRS is left of R with G above and S left on a horizontal base; triangle ART is right of R with A above and T right on the same baseline. The marked angles at R lie between each triangle's two labeled sides."
+    },
+    "10": {
+      "prompt": "Line 4y = 3x+7 is dilated about the origin. Which equation could represent its image?",
+      "choices": ["3x−4y = 9", "3x+4y = 9", "4x−3y = 9", "4x+3y = 9"],
+      "explanation": "The original slope is 3/4, and only 3x−4y = 9 has that slope. Caution: its intercept is −9/4 rather than +7/4, so it would require a negative scale factor, −9/7. If dilations in this course require a positive factor, none of the listed choices is valid; the official key selects the slope match.",
+      "imageAlt": "Printed line-dilation question; original and all candidate equations are in accessible text."
+    },
+    "11": {
+      "prompt": "Triangle ABC has angle B = 62°, and side AC extends through C to D. Which value of exterior angle x at C makes AB ≅ CB?",
+      "choices": ["59°", "62°", "118°", "121°"],
+      "explanation": "If AB = CB, the base angles at A and C are equal. Each is (180°−62°)/2 = 59°. Exterior angle x supplements C, so x = 180°−59° = 121°.",
+      "imageAlt": "Triangle has A left and C right on horizontal base, B above between them. Base extends right from C to D. Angle x is outside the triangle between CB and CD."
+    },
+    "12": {
+      "prompt": "PA is tangent to circle T at A, and secant P-B-C passes through the circle. If PB = 3 and BC = 15, find PA.",
+      "choices": ["3√5", "3√6", "3", "9"],
+      "explanation": "The tangent-secant theorem gives PA² = PB·PC. The whole secant PC = 3+15 = 18, so PA = √(3·18) = √54 = 3√6.",
+      "imageAlt": "Circle centered T lies left of external point P. Tangent P-A touches upper-right rim at A; secant P-B-C runs left through near point B and far point C."
+    },
+    "13": {
+      "prompt": "A 10-by-6 rectangle rotates around a straight line and forms a solid with volume 150π. Which rotation axis could produce it?",
+      "choices": ["one long side", "one short side", "vertical line of symmetry", "horizontal line of symmetry"],
+      "explanation": "The vertical symmetry line runs through the midpoint of the 10-unit length. Rotation about it makes a cylinder of radius 5 and height 6, with volume π(5²)(6) = 150π.",
+      "imageAlt": "Horizontal rectangle is labeled 10 along its bottom and 6 along its left side. The vertical symmetry line would pass through the midpoint of the long horizontal dimension; the horizontal symmetry line through mid-height."
+    },
+    "14": {
+      "prompt": "If ABCD is a parallelogram, which fact would prove it is a rhombus?",
+      "choices": ["angle ABC ≅ angle CDA", "AC ≅ BD", "AC ⟂ BD", "AB ⟂ CD"],
+      "explanation": "A parallelogram with perpendicular diagonals is a rhombus. Opposite angles are already congruent, while congruent diagonals indicate a rectangle; AB and CD are opposite parallel sides.",
+      "imageAlt": "Printed parallelogram-property question; all proposed angle, diagonal, and side relations are in accessible text."
+    },
+    "15": {
+      "prompt": "A wheelchair ramp rises 1 inch for every 12 inches of horizontal run. What is its inclination x to the nearest hundredth of a degree?",
+      "choices": ["4.76", "4.78", "85.22", "85.24"],
+      "explanation": "The tangent of the ground angle is rise/run = 1/12. Therefore x = arctan(1/12) ≈ 4.76°.",
+      "imageAlt": "Shallow right triangle shows a 12-inch horizontal run, a 1-inch vertical rise at its right end, and sloping ramp above. Angle x is between ramp and ground at left."
+    },
+    "16": {
+      "prompt": "In triangle ABC, D, E, F are midpoints of AB, BC, CA, respectively. What is area(CFE):area(CAB)?",
+      "choices": ["1:1", "1:2", "1:3", "1:4"],
+      "explanation": "Segments CF and CE are each half of corresponding sides CA and CB. Triangle CFE is a 1/2-scale copy of CAB, so its area is (1/2)² = 1/4 of the large triangle: ratio 1:4.",
+      "imageAlt": "Triangle A-B-C has horizontal base AB and top vertex C. D is midpoint of AB, E midpoint of BC, F midpoint of CA. Midsegment F-E is parallel to AB, forming small top triangle CFE."
+    },
+    "17": {
+      "prompt": "Segment AB has endpoints A(−8,−2) and B(16,6). P lies on it with AP:PB = 3:5. What are P's coordinates?",
+      "choices": ["(1,1)", "(7,3)", "(9.6,3.6)", "(6.4,2.8)"],
+      "explanation": "P is 3/8 of the way from A to B. The displacement is (24,8), and A+(3/8)(24,8) = (−8,−2)+(9,3) = (1,1).",
+      "imageAlt": "Printed coordinate-partition problem; endpoints and 3:5 ratio are in accessible text."
+    },
+    "18": {
+      "prompt": "Triangle KLM has altitude LN to side KM, with KM = 16. Which measurements make KLM a right triangle with KM as hypotenuse?",
+      "choices": ["LM=13 and KN=6", "LM=12 and NM=9", "KL=11 and KN=7", "LN=8 and NM=10"],
+      "explanation": "For a right triangle with altitude to its hypotenuse, leg LM satisfies LM² = NM·KM. The second choice gives 12² = 9·16 = 144, so it meets the required relation. The other pairs do not satisfy their corresponding leg or altitude theorem.",
+      "imageAlt": "Triangle KLM has K left and M right on horizontal base KM of length 16, L above, and altitude L-N dropping vertically to N between K and M."
+    },
+    "19": {
+      "prompt": "Right triangle ABC has A = 32°, B = 90°, and hypotenuse AC = 6.2 cm. Find BC to the nearest tenth of a centimeter.",
+      "choices": ["3.3", "3.9", "5.3", "11.7"],
+      "explanation": "BC is opposite angle A. Thus BC = AC·sin A = 6.2sin(32°) ≈ 3.3 cm.",
+      "imageAlt": "Printed right-triangle trigonometry problem; angle, right angle, and hypotenuse are in accessible text."
+    },
+    "20": {
+      "prompt": "2010 populations and densities: Florida 18,801,310 at 350.6 people/mi²; Illinois 12,830,632 at 231.1; New York 19,378,102 at 411.2; Pennsylvania 12,702,379 at 283.9. Which area order, largest to smallest, is correct?",
+      "choices": ["Illinois, Florida, New York, Pennsylvania", "New York, Florida, Illinois, Pennsylvania", "New York, Florida, Pennsylvania, Illinois", "Pennsylvania, New York, Florida, Illinois"],
+      "explanation": "Area = population/density. Approximate areas are Illinois 55,520, Florida 53,626, New York 47,125, and Pennsylvania 44,742 square miles. Their order is Illinois, Florida, New York, Pennsylvania.",
+      "imageAlt": "Four-row table gives state, 2010 population density in people per square mile, and 2010 population. All row values are also in the accessible prompt."
+    },
+    "21": {
+      "prompt": "In a right triangle, sin(40−x)° = cos(3x)°. What is x?",
+      "choices": ["10", "15", "20", "25"],
+      "explanation": "The arguments represent complementary acute angles, so (40−x)+3x = 90. Then 2x = 50 and x = 25.",
+      "imageAlt": "Printed right-triangle cofunction problem; both expressions and all choices are in accessible text."
+    },
+    "22": {
+      "prompt": "A regular decagon rotates n degrees about its center and maps onto itself. Which n could work?",
+      "choices": ["10°", "150°", "225°", "252°"],
+      "explanation": "A ten-sided regular polygon has rotational symmetry every 360°/10 = 36°. Since 252° = 7·36°, it maps the decagon onto itself.",
+      "imageAlt": "Printed rotational-symmetry question; ten sides and all angle choices are in accessible text."
+    },
+    "23": {
+      "prompt": "A circle has diameter 32 and a sector area of 512π/3. What is the sector's central angle in radians?",
+      "choices": ["π/3", "4π/3", "16π/3", "64π/3"],
+      "explanation": "Radius is 16, so full area is 256π. The sector fraction is (512π/3)/(256π) = 2/3. Its angle is (2/3)(2π) = 4π/3 radians.",
+      "imageAlt": "Printed sector-area question; diameter, fractional π area, and radian choices are in accessible text."
+    },
+    "24": {
+      "prompt": "A graphed segment has endpoints (−2,4) and (2,−4). What is the equation of its perpendicular bisector?",
+      "choices": ["y+2x=0", "y−2x=0", "2y+x=0", "2y−x=0"],
+      "explanation": "The segment midpoint is (0,0), and its slope is (−4−4)/(2−(−2)) = −2. The perpendicular slope is 1/2, so its bisector through the origin is y = x/2, or 2y−x = 0.",
+      "imageAlt": "Coordinate graph shows segment descending steeply from (−2,4) in quadrant II through the origin to (2,−4) in quadrant IV. Endpoint coordinates are also in the prompt."
+    }
+  }
+}

@@ -17,6 +17,8 @@ import { getElaExamsForGrade } from '@/content/ela-exams'
 import Link from 'next/link'
 import { formatWordCount } from '@/lib/study'
 import AssignedExamSections from '@/components/AssignedExamSections'
+import RegentsCourseCards from '@/components/regents/RegentsCourseCards'
+import { getStudentRegentsCourses } from '@/lib/regents-courses'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -39,6 +41,7 @@ export default async function ModulesPage({
   const view = resolution.view
   const readOnly = view.readOnly
   const tracks = await getStudentTracks(db, view.studentId)
+  const regentsCourses = await getStudentRegentsCourses(db, view.studentId)
   if (tracks.length === 0) {
     if (!readOnly) redirect('/tracks')
     return (
@@ -94,7 +97,7 @@ export default async function ModulesPage({
         </div>
         <p className="text-gray-500 text-sm mb-6">{isSpanish ? 'Lecciones de habilidades matemáticas' : 'Math skill lessons'}</p>
 
-        {!diagDone && (
+        {!settings.highSchoolGradeLevel && !diagDone && (
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-5">
             <p className="text-sm text-amber-800 font-medium">
               {readOnly
@@ -109,16 +112,20 @@ export default async function ModulesPage({
           </div>
         )}
 
-        <AssignedExamSections
+        {settings.highSchoolGradeLevel && (
+          <RegentsCourseCards courses={regentsCourses} subject="math" readOnly={readOnly} />
+        )}
+
+        {!settings.highSchoolGradeLevel && <AssignedExamSections
           db={db}
           studentId={view.studentId}
           subject="math"
           gradeLevel={settings.gradeLevel}
           readOnly={readOnly}
           isSpanish={isSpanish}
-        />
+        />}
 
-        <section className="mb-8">
+        {!settings.highSchoolGradeLevel && <section className="mb-8">
           <div className="mb-3 flex items-end justify-between">
             <div>
               <h2 className="font-bold text-gray-800">
@@ -180,7 +187,7 @@ export default async function ModulesPage({
             })}
           </div>
           )}
-        </section>
+        </section>}
 
         <div className="mb-3">
           <h2 className="font-bold text-gray-800">{isSpanish ? 'Habilidades aritméticas' : 'Arithmetic skills'}</h2>
@@ -268,7 +275,11 @@ export default async function ModulesPage({
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'ESL'}</p>
 
-      {currentMode === 'ela' && (
+      {currentMode === 'ela' && settings.highSchoolGradeLevel && (
+        <RegentsCourseCards courses={regentsCourses} subject="ela" readOnly={readOnly} />
+      )}
+
+      {currentMode === 'ela' && !settings.highSchoolGradeLevel && (
         <AssignedExamSections
           db={db}
           studentId={view.studentId}
@@ -278,7 +289,7 @@ export default async function ModulesPage({
         />
       )}
 
-      {currentMode === 'ela' && (
+      {currentMode === 'ela' && !settings.highSchoolGradeLevel && (
         <section className="mb-8">
           <div className="mb-3 flex items-end justify-between">
             <div>

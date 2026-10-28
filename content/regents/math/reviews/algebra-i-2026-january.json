@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "6e46d54e11c27faa873a187fe132f3579669d41dcf055b855bc62a3c48206a6f",
+  "questions": {
+    "1": {
+      "prompt": "A parabola is graphed on the axes. What are the equation of the axis of symmetry and the coordinates of the vertex of this parabola?",
+      "choices": ["x = 3 and (3, −4)", "y = 3 and (3, −4)", "x = −4 and (−4, 3)", "y = −4 and (−4, 3)"],
+      "explanation": "The lowest point of the upward-opening parabola is (3, −4). The vertical line through that vertex is its axis of symmetry, x = 3.",
+      "imageAlt": "Upward-opening parabola on an x-y grid. Its vertex is three grid units right of the y-axis and four units below the x-axis. The branches mirror across a vertical line through that vertex."
+    },
+    "2": {
+      "prompt": "The product of √25 and √2 will result in",
+      "choices": ["an irrational number", "a rational number", "a natural number", "an integer"],
+      "explanation": "√25 = 5, so the product is 5√2. Since √2 is irrational and multiplying it by nonzero rational 5 does not make it rational, the product is irrational.",
+      "imageAlt": "The radical product square root of 25 times square root of 2 and all four number classifications are transcribed."
+    },
+    "3": {
+      "prompt": "When f(x) = |4x + 2| and g(x) = 3x + 5 are graphed on the same set of axes, for which value of x is f(x) = g(x)?",
+      "choices": ["1", "2", "3", "14"],
+      "explanation": "For the positive choice values, 4x + 2 is positive, so |4x + 2| = 4x + 2. Solve 4x + 2 = 3x + 5 to get x = 3. (The other absolute-value branch has no matching solution.)",
+      "imageAlt": "Absolute-value function f(x)=|4x+2| and line g(x)=3x+5 with four proposed x-values are transcribed."
+    },
+    "4": {
+      "prompt": "The expression x² − 26x − 120 is equivalent to",
+      "choices": ["(x + 4)(x − 30)", "(x − 4)(x + 30)", "(x − 20)(x + 6)", "(x + 20)(x − 6)"],
+      "explanation": "Find factors of −120 that sum to −26: 4 and −30. Therefore x² − 26x − 120 = (x + 4)(x − 30).",
+      "imageAlt": "Quadratic x squared minus 26x minus 120 and four pairs of binomial factors, including every sign, are transcribed."
+    },
+    "5": {
+      "prompt": "The expression 3 − 2√5 + 6√5 is equivalent to",
+      "choices": ["7√5", "7√10", "3 + 4√5", "3 + 4√10"],
+      "explanation": "Combine like radical terms: −2√5 + 6√5 = 4√5. The separate constant 3 remains, giving 3 + 4√5.",
+      "imageAlt": "Expression three minus two square roots of five plus six square roots of five, with all four radical choices, is transcribed."
+    },
+    "6": {
+      "prompt": "Students were asked to write a polynomial with degree 3, leading coefficient 2, and constant term −6. Which expression satisfies all three conditions?",
+      "choices": ["4x − 6 + 3x²", "3x² − 6x + 4", "4 − 6x + 2x³", "4x² + 2x³ − 6"],
+      "explanation": "The highest power must be x³ with coefficient 2, and the term without x must be −6. Only 4x² + 2x³ − 6 has all three properties.",
+      "imageAlt": "Required degree three, leading coefficient two, and constant negative six; all polynomial terms and exponents are transcribed."
+    },
+    "7": {
+      "prompt": "Which graph below represents a function?",
+      "choices": ["Graph (1): five isolated points at (1,1), (2,2), (3,2), (4,4), and (5,4)", "Graph (2): horizontal segments from open (1,1) to closed (3,1), open (3,3) to closed (4,3), and closed (4,5) to closed (5,5)", "Graph (3): isolated points at (1,1), (2,2), (2,3), (4,2), (4,3), and (5,4)", "Graph (4): vertical segments at x = 1, x = 3, and x = 5"],
+      "explanation": "A graph represents a function when each x-value has exactly one y-value. In graph (1), the five points have different x-coordinates. Graphs (2)–(4) have at least one x-value with more than one included y-value.",
+      "imageAlt": "Four coordinate graphs: graph 1 has five individual points with x-coordinates 1 through 5; graph 2 has three horizontal segments, with two closed points above x=4; graph 3 has two separate points above each of x=2 and x=4; graph 4 has three vertical segments."
+    },
+    "8": {
+      "prompt": "The function v(t) = 500(1.08)^t models the value of a diamond ring, in dollars, t years after it is purchased. What was the original price of the ring, in dollars?",
+      "choices": ["$108", "$460", "$500", "$540"],
+      "explanation": "The original price is the value at t = 0. Since (1.08)^0 = 1, v(0) = 500 × 1 = $500.",
+      "imageAlt": "Diamond ring value model v(t)=500 times 1.08 to the t, and all four dollar amounts, are transcribed."
+    },
+    "9": {
+      "prompt": "The surface area of a cylinder is S = 2πr² + 2πrh, where r is the radius and h is the height. What is h expressed in terms of S, π, and r?",
+      "choices": ["h = (S − 2πr²)/(2πr)", "h = S − r", "h = (2πr² − S)/(2πr)", "h = r − S"],
+      "explanation": "Subtract 2πr² from both sides: S − 2πr² = 2πrh. Divide by 2πr to isolate h: h = (S − 2πr²)/(2πr).",
+      "imageAlt": "Cylinder surface-area formula and all answer expressions are transcribed with parentheses identifying the entire fraction numerators and denominator 2πr."
+    },
+    "10": {
+      "prompt": "Mason uses substitution to solve 3x − y = 10 and 2x + 5y = 1. Which equation could he have used?",
+      "choices": ["2(3x − 10) + 5x = 1", "2(−3x + 10) + 5x = 1", "2x + 5(3x − 10) = 1", "2x + 5(−3x + 10) = 1"],
+      "explanation": "From 3x − y = 10, solve for y to get y = 3x − 10. Substitute that expression for y in 2x + 5y = 1, giving 2x + 5(3x − 10) = 1.",
+      "imageAlt": "System 3x minus y equals 10 and 2x plus 5y equals 1; four candidate substitution equations, including signs and coefficients, are transcribed."
+    },
+    "11": {
+      "prompt": "Which graph represents the solution to the inequality 4 + 3x > 9 − 7x?",
+      "choices": ["Number line with an open circle at 2 and arrow to the left", "Number line with an open circle at 2 and arrow to the right", "Number line with an open circle at 1/2 and arrow to the right", "Number line with an open circle at 1/2 and arrow to the left"],
+      "explanation": "Add 7x and subtract 4: 10x > 5. Dividing by positive 10 gives x > 1/2, shown by an open circle at 1/2 and shading to the right.",
+      "imageAlt": "Four number-line choices: (1) x less than 2, (2) x greater than 2, (3) x greater than one-half, and (4) x less than one-half. Every endpoint is an open circle."
+    },
+    "12": {
+      "prompt": "When solving 3(2x + 5) − 8 = 7x + 10, the first step could be 3(2x + 5) = 7x + 18. Which property justifies this step?",
+      "choices": ["addition property of equality", "commutative property of addition", "multiplication property of equality", "distributive property of multiplication over addition"],
+      "explanation": "Adding 8 to both sides removes the −8 on the left and changes 10 to 18 on the right. Adding equal amounts to both sides is the addition property of equality.",
+      "imageAlt": "Both algebraic equations and four property names are fully transcribed."
+    },
+    "13": {
+      "prompt": "Which table of values best models an exponential decay function?",
+      "choices": ["Table (1): inputs −2, −1, 0, 1, 2, 3; outputs 7, 4, 1, −2, −5, −8", "Table (2): inputs 0, 1, 2, 3, 4, 5; outputs 200, 180, 162, 146, 131, 118", "Table (3): inputs 0, 0.5, 1, 1.5, 2, 2.5; outputs 200, 210, 220, 231, 242, 254", "Table (4): inputs −3, −2, −1, 0, 1, 2; outputs −2, −5, −6, −5, −2, 3"],
+      "explanation": "An exponential decay pattern multiplies by a factor between 0 and 1 for equal input steps. Table (2) starts 200, 180, 162, each 0.9 times the previous value; later values are rounded versions of the same 10% decrease. Table (1) has constant differences, table (3) grows, and table (4) is not a decay pattern.",
+      "imageAlt": "Four six-row input-output tables are completely transcribed in the answer choices, preserving their input steps and output values."
+    },
+    "14": {
+      "prompt": "If f(x) = √(x + 1) + 5, then what is the value of f(3)?",
+      "choices": ["9", "7", "3", "10"],
+      "explanation": "Substitute 3 under the radical: f(3) = √(3 + 1) + 5 = √4 + 5 = 2 + 5 = 7.",
+      "imageAlt": "Radical bar covers x plus 1, with plus 5 outside the radical; all four numeric choices are transcribed."
+    },
+    "15": {
+      "prompt": "Isabella wants to shift the graph of f(x) = (x + 5)² − 2 left 3 units. Which function represents the shifted graph?",
+      "choices": ["g(x) = (x + 2)² − 2", "g(x) = (x + 8)² − 2", "g(x) = (x + 5)² − 5", "g(x) = (x + 5)² + 1"],
+      "explanation": "A left shift by 3 replaces x with x + 3 inside f: g(x) = f(x + 3) = ((x + 3) + 5)² − 2 = (x + 8)² − 2.",
+      "imageAlt": "Original squared-binomial function and four shift formulas are fully transcribed, preserving inner and outer signs."
+    },
+    "16": {
+      "prompt": "What are the zeros of f(x) = x(x² − 36)?",
+      "choices": ["0, only", "6, only", "6 and −6, only", "0, 6, and −6"],
+      "explanation": "Factor the difference of squares: f(x) = x(x − 6)(x + 6). Setting each factor to zero gives x = 0, 6, and −6.",
+      "imageAlt": "Factored setup x times x squared minus 36 and all proposed sets of signed zeros are transcribed."
+    },
+    "17": {
+      "prompt": "The point (x, −6) lies on the parabola y = −x² − x + 6. The value of x can be",
+      "choices": ["−3 or 2", "−4 or 3", "3, only", "−4, only"],
+      "explanation": "Set y = −6: −6 = −x² − x + 6. Rearranging gives x² + x − 12 = 0 = (x + 4)(x − 3), so x = −4 or 3.",
+      "imageAlt": "Point has y-coordinate negative six; parabola y equals negative x squared minus x plus six; every proposed x-value is transcribed."
+    },
+    "18": {
+      "prompt": "The concession-stand table summarizes 400 purchases at a football game. Rows hot dogs, pizza, no food; columns soda, water, coffee. Counts are hot dogs 50, 62, 46; pizza 120, 58, 4; no food 30, 20, 10. Of the people making a purchase, what is the relative frequency of buying pizza and water?",
+      "choices": ["0.58", "0.35", "0.455", "0.145"],
+      "explanation": "The joint count for pizza and water is 58 out of all 400 purchases. Relative frequency is 58/400 = 0.145.",
+      "imageAlt": "Two-way table totals: hot dogs 158, pizza 182, no food 60; soda 200, water 140, coffee 60; grand total 400. The pizza-and-water cell is 58; all cells are also transcribed in the prompt."
+    },
+    "19": {
+      "prompt": "Theodore's speed in Canada was 104 kilometers per hour. He converts it using (104 km/1 hr) · (1 hr/60 min) · (1 min/60 sec) · (0.6214 mi/1 km) · (5280 ft/1 mi). Assuming he did all the work correctly, what would the units be for his rate?",
+      "choices": ["feet per second", "feet per minute", "seconds per foot", "minutes per foot"],
+      "explanation": "Cancel km with km, hours with hours, minutes with minutes, and miles with miles. Feet remain in the numerator and seconds in the denominator, giving feet per second.",
+      "imageAlt": "Full five-factor dimensional-analysis product is transcribed with unit numerators and denominators, plus all four unit choices."
+    },
+    "20": {
+      "prompt": "Which expression is equivalent to (−2x²)³?",
+      "choices": ["−2x⁵", "−2x⁶", "−8x⁵", "−8x⁶"],
+      "explanation": "Raise both factors to the third power: (−2)³ = −8 and (x²)³ = x⁶. The result is −8x⁶.",
+      "imageAlt": "Parentheses around negative two x squared with an outer third power, and four signed monomial choices, are transcribed."
+    },
+    "21": {
+      "prompt": "The table gives the amount of a radioactive substance remaining: 2000 750 g, 2001 450 g, 2005 219 g, 2010 85 g, 2014 25 g, 2017 12 g, and 2019 8 g. To the nearest tenth, what is the average rate of change in grams per year from 2000 to 2014?",
+      "choices": ["39.1", "51.8", "−39.1", "−51.8"],
+      "explanation": "Use the endpoint values: (25 − 750)/(2014 − 2000) = −725/14 ≈ −51.7857, which rounds to −51.8 grams per year.",
+      "imageAlt": "Year and amount-remaining table is fully transcribed in the prompt, including the 750-gram and 25-gram endpoints."
+    },
+    "22": {
+      "prompt": "When 2x² − 3x + 4 is subtracted from x² + 2x − 5, the result is",
+      "choices": ["x² − 5x + 9", "x² − x + 1", "−x² + 5x − 9", "−x² − x − 1"],
+      "explanation": "Subtract the entire first polynomial: (x² + 2x − 5) − (2x² − 3x + 4) = x² + 2x − 5 − 2x² + 3x − 4 = −x² + 5x − 9.",
+      "imageAlt": "Both polynomials, subtraction order, negative signs, and all four result polynomials are transcribed."
+    },
+    "23": {
+      "prompt": "Which equation has the same solution as x² − 6x = 24?",
+      "choices": ["(x − 3)² = 24", "(x − 6)² = 24", "(x − 3)² = 33", "(x − 6)² = 60"],
+      "explanation": "Complete the square by adding (6/2)² = 9 to both sides: x² − 6x + 9 = 24 + 9, so (x − 3)² = 33.",
+      "imageAlt": "Original quadratic equation and all four squared-binomial equations, including constants, are transcribed."
+    },
+    "24": {
+      "prompt": "In a sequence, the first term is −2 and the common ratio is −3. The fourth term is",
+      "choices": ["−162", "−11", "24", "54"],
+      "explanation": "For a geometric sequence, a₄ = a₁r³. Thus a₄ = (−2)(−3)³ = (−2)(−27) = 54.",
+      "imageAlt": "Geometric-sequence first term negative two, common ratio negative three, and all signed choices are transcribed."
+    }
+  }
+}

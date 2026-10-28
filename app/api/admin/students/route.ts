@@ -3,7 +3,8 @@ import { revalidatePath } from 'next/cache'
 import getDb from '@/lib/db'
 import { getSession } from '@/lib/auth'
 import { normalizeTracks } from '@/lib/tracks'
-import { normalizeGradeLevel } from '@/lib/grade-levels'
+import { normalizeGradeLevel, normalizeHighSchoolGradeLevel, normalizeStudentSchoolGradeLevel } from '@/lib/grade-levels'
+import { normalizeRegentsCourses, regentsCourseAssignmentStatements, regentsCoursesMatchPlacement } from '@/lib/regents-courses'
 import { createStudentAccount } from '@/lib/student-accounts'
 
 export async function POST(req: NextRequest) {
@@ -52,9 +53,13 @@ export async function PATCH(req: NextRequest) {
     tracks: rawTracks,
     mathSpanishEnabled: rawMathSpanishEnabled,
     gradeLevel: rawGradeLevel,
+    regentsCourses: rawRegentsCourses,
   } = rawBody as Record<string, unknown>
   const tracks = normalizeTracks(rawTracks)
+  const schoolGradeLevel = normalizeStudentSchoolGradeLevel(rawGradeLevel)
   const gradeLevel = normalizeGradeLevel(rawGradeLevel)
+  const highSchoolGradeLevel = normalizeHighSchoolGradeLevel(rawGradeLevel)
+  const regentsCourses = normalizeRegentsCourses(rawRegentsCourses === undefined ? [] : rawRegentsCourses)
   const tutorIds = Array.isArray(rawTutorIds)
     ? [...new Set(rawTutorIds.filter((id): id is string => typeof id === 'string' && id.length > 0))]
     : []
@@ -67,11 +72,17 @@ export async function PATCH(req: NextRequest) {
   ) {
     return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }
-  if (rawGradeLevel !== null && gradeLevel === null) {
-    return NextResponse.json({ error: 'Grade level must be a number from 3 through 8, or unassigned' }, { status: 400 })
+  if (rawGradeLevel !== null && schoolGradeLevel === null) {
+    return NextResponse.json({ error: 'Grade level must be a number from 3 through 12, or unassigned' }, { status: 400 })
   }
-  if ((tracks.includes('math') || tracks.includes('ela')) && gradeLevel === null) {
+  if ((tracks.includes('math') || tracks.includes('ela')) && schoolGradeLevel === null) {
     return NextResponse.json({ error: 'Choose a grade level for students in the Math or ELA track' }, { status: 400 })
+  }
+  if (regentsCourses === null) {
+    return NextResponse.json({ error: 'Regents courses must be a list of available courses' }, { status: 400 })
+  }
+  if (!regentsCoursesMatchPlacement(regentsCourses, tracks, highSchoolGradeLevel)) {
+    return NextResponse.json({ error: 'Regents courses require a high school grade and the matching Math or ELA track' }, { status: 400 })
   }
 
   const db = await getDb()
@@ -109,15 +120,17 @@ export async function PATCH(req: NextRequest) {
       })),
       {
         sql: `
-          INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, updated_at)
-          VALUES (?, ?, ?, ?)
+          INSERT INTO student_settings (user_id, math_spanish_enabled, grade_level, high_school_grade_level, updated_at)
+          VALUES (?, ?, ?, ?, ?)
           ON CONFLICT(user_id) DO UPDATE SET
             math_spanish_enabled = excluded.math_spanish_enabled,
             grade_level = excluded.grade_level,
+            high_school_grade_level = excluded.high_school_grade_level,
             updated_at = excluded.updated_at
         `,
-        args: [studentId, rawMathSpanishEnabled ? 1 : 0, gradeLevel, now],
+        args: [studentId, rawMathSpanishEnabled ? 1 : 0, gradeLevel, highSchoolGradeLevel, now],
       },
+      ...regentsCourseAssignmentStatements(studentId, regentsCourses, now),
     ])
     await transaction.commit()
   } finally {

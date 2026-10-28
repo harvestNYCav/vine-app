@@ -15,6 +15,7 @@ const DEMO_USERS = [
 const USER_ID_TABLES = [
   'user_tracks',
   'student_settings',
+  'student_regents_courses',
   'vocab_progress',
   'module_progress',
   'teaching_sessions',

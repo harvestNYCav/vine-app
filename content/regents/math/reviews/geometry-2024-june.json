@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "d5d9844597ac891e34320ad492f0127de941c3b06c8ade3d0696abd472f1fbae",
+  "questions": {
+    "1": {
+      "prompt": "Triangle BRI is the image of triangle JOE after a translation. Triangle CAT is the image of triangle BRI after a line reflection. Which statement is always true?",
+      "choices": ["angle R ≅ angle T", "angle J ≅ angle A", "JE ≅ RI", "OE ≅ AT"],
+      "explanation": "The ordered names give J→B→C, O→R→A, and E→I→T. Both transformations preserve lengths, so side OE corresponds to AT and OE ≅ AT.",
+      "imageAlt": "Three congruent triangles: JOE at lower left, BRI above it, and CAT at upper right. In the first two, corresponding vertices are J/B, O/R, E/I. The reflected CAT has C lower right, A upper right, and T at left."
+    },
+    "2": {
+      "prompt": "A right cylinder is cut parallel to its base. What is the shape of the cross section?",
+      "choices": ["cone", "circle", "triangle", "rectangle"],
+      "explanation": "A plane parallel to a cylinder's circular base makes a cross section congruent to that base, so the section is a circle.",
+      "imageAlt": "Printed cross-section question; the solid and orientation of the cut are fully described in text."
+    },
+    "3": {
+      "prompt": "What is the minimum rotation, in degrees, that maps a regular hexagon onto itself?",
+      "choices": ["45°", "72°", "60°", "120°"],
+      "explanation": "A regular hexagon has six evenly spaced vertices. One step is 360° ÷ 6 = 60°, the smallest positive rotation that maps it onto itself.",
+      "imageAlt": "Printed rotational-symmetry question; all numbers and choices are in accessible text."
+    },
+    "4": {
+      "prompt": "A sphere is inscribed inside a cube whose edge length is 18. What is the sphere's volume in terms of π?",
+      "choices": ["108π", "432π", "972π", "7776π"],
+      "explanation": "The sphere's diameter equals the cube's edge, 18, so its radius is 9. Its volume is (4/3)π(9³) = 972π.",
+      "imageAlt": "A sphere touches all six faces of a cube. The cube's right vertical edge is labeled 18, equal to the sphere's diameter."
+    },
+    "5": {
+      "prompt": "Segments EM and HA intersect at J, EA is perpendicular to HA, and EM is perpendicular to HM. If EA = 7.2, EJ = 9, AJ = 5.4, and HM = 3.29, find MJ to the nearest hundredth.",
+      "choices": ["2.47", "2.63", "4.11", "4.39"],
+      "explanation": "Right triangles EAJ and HMJ are similar: their angles at J are vertical angles. EA corresponds to HM and AJ to MJ, so MJ/5.4 = 3.29/7.2. Thus MJ = 5.4(3.29)/7.2 = 2.4675 ≈ 2.47.",
+      "imageAlt": "Crossing segments EM and HA meet at J. Triangle EAJ lies lower left with right angle at A; triangle HJM lies upper right with right angle at M. EA and HM are the corresponding outer legs, while AJ and MJ lie on the same line."
+    },
+    "6": {
+      "prompt": "Which equation represents the line through (2, −7) perpendicular to y = (3/4)x + 4?",
+      "choices": ["y + 7 = (3/4)(x − 2)", "y − 7 = (3/4)(x + 2)", "y + 7 = −(4/3)(x − 2)", "y − 7 = −(4/3)(x + 2)"],
+      "explanation": "The given slope is 3/4, so a perpendicular line has slope −4/3. Point-slope form through (2, −7) is y − (−7) = −(4/3)(x − 2), or y + 7 = −(4/3)(x − 2).",
+      "imageAlt": "Printed coordinate-geometry question; signed coordinates, slope fractions, and all four equations are in accessible text."
+    },
+    "7": {
+      "prompt": "Triangle RHM has angle R = 110° and angle M = 40°. Reflect it over side HM, mapping R to R' and forming quadrilateral RHR'M. Which statement is always true?",
+      "choices": ["Quadrilateral RHR'M is a parallelogram", "angle MHR' = 40°", "angle HMR' = 40°", "MR ≅ HR'"],
+      "explanation": "Reflection over HM fixes M and H and preserves angles. The 40° angle HMR maps to angle HMR', so angle HMR' is also 40°.",
+      "imageAlt": "Triangle RHM has M at lower left, H at right, and R above. Angle at R is labeled 110° and angle at M 40°. The reflection line is side HM; reflected vertex R' would lie below that side."
+    },
+    "8": {
+      "prompt": "A cone-shaped funnel has radius 6 cm and height 13 cm. Each cookie needs 2 cubic centimeters of melted chocolate. If the funnel is completely filled, what is the maximum number of whole cookies it can decorate?",
+      "choices": ["78", "245", "490", "735"],
+      "explanation": "The funnel holds (1/3)π(6²)(13) = 156π ≈ 490.09 cm³. At 2 cm³ per cookie, that is about 245.04, so it can completely decorate 245 cookies.",
+      "imageAlt": "A conical funnel points downward, with a 6 cm radius marked across half its open circular top and a 13 cm vertical height marked alongside it. A handle extends to the right."
+    },
+    "9": {
+      "prompt": "In circle O, chords CT and BN intersect at A. Chords CB and NT are also drawn. Which statement is always true?",
+      "choices": ["NT/TA = CB/BA", "angle BAC ≅ angle ATN", "NA/AB = TA/AC", "angle BCA ≅ angle NTA"],
+      "explanation": "Triangles ABC and ATN are similar: the angles at A are vertical, and the inscribed angles at B and T intercept the same arc CN. Corresponding sides are BC↔TN and BA↔TA, giving NT/TA = CB/BA.",
+      "imageAlt": "Circle O has C at left, B near bottom, N upper right, and T at right. Chord CT and chord BN cross at interior point A. Additional chords CB at lower left and NT at upper right form triangles ABC and ATN."
+    },
+    "10": {
+      "prompt": "In triangle ABC, ray BF continues side BC through B to F. Segment AB bisects angle FBD, and BD is perpendicular to AC at D. If angle C = 42°, find angle A.",
+      "choices": ["24°", "33°", "48°", "66°"],
+      "explanation": "In right triangle BDC, angle DBC = 90° − 42° = 48°. BF is opposite BC, so angle FBD = 180° − 48° = 132°. AB bisects that angle, making angle ABD = 66°. Right triangle ABD then has angle A = 90° − 66° = 24°.",
+      "imageAlt": "A and C are endpoints of a horizontal base, with D between them and B directly above D. Segment BD is perpendicular to AC. F lies on the extension of CB beyond B toward upper left; AB connects A to B and bisects angle FBD."
+    },
+    "11": {
+      "prompt": "In circle O, radius OA = 6 and central angle COA = 100°. What is the area of the shaded major sector?",
+      "choices": ["10π", "26π", "10π/3", "26π/3"],
+      "explanation": "The unshaded minor sector is 100°, so the shaded major sector is 360° − 100° = 260°. Its area is (260/360)π(6²) = 26π.",
+      "imageAlt": "Circle centered at O has radius OA extending right and radius OC extending upward-left. The 100° minor sector between OA and OC is white; the rest of the circle is shaded. OA is labeled 6."
+    },
+    "12": {
+      "prompt": "In rectangle ABCD, diagonal AC is drawn. Angle ACD = 37° and BC = 7.6 cm. Find AC to the nearest tenth of a centimeter.",
+      "choices": ["4.6", "9.5", "10.1", "12.6"],
+      "explanation": "Opposite sides of a rectangle are equal, so AD = BC = 7.6 cm. In right triangle ACD, AD is opposite the 37° angle at C and AC is the hypotenuse. Thus sin 37° = 7.6/AC, giving AC ≈ 12.6 cm.",
+      "imageAlt": "Printed rectangle question; vertex order, diagonal, angle, and length are fully specified in text."
+    },
+    "13": {
+      "prompt": "A cylindrical jar needs volume 1180 cm³ and height 10 cm. What diameter should it have, to the nearest tenth of a centimeter?",
+      "choices": ["3.8", "6.1", "10.9", "12.3"],
+      "explanation": "Use 1180 = πr²(10), so r = √(118/π) ≈ 6.13 cm. The diameter is twice the radius, about 12.26 cm, which rounds to 12.3 cm.",
+      "imageAlt": "Printed cylindrical-jar question; volume, height, and units are in accessible text."
+    },
+    "14": {
+      "prompt": "Triangle KLM is dilated by scale factor 3 to triangle DRS. Which statement is not always true?",
+      "choices": ["angle K ≅ angle D", "KM = (1/3)DS", "area of triangle DRS is 3 times area of triangle KLM", "perimeter of triangle DRS is 3 times perimeter of triangle KLM"],
+      "explanation": "Dilation by factor 3 triples every length and the perimeter, but it multiplies area by 3² = 9. Therefore the claim that the new area is only 3 times the old area is false.",
+      "imageAlt": "Printed dilation question; scale factor, ordered triangle names, and every statement are in accessible text."
+    },
+    "15": {
+      "prompt": "A 4-foot by 7-foot rectangle is rotated continuously about one of its 4-foot sides. What three-dimensional solid results?",
+      "choices": ["cylinder of height 7 ft and radius 4 ft", "cylinder of height 4 ft and radius 7 ft", "cone of height 7 ft and radius 7 ft", "cone of height 4 ft and radius 7 ft"],
+      "explanation": "The 4-foot side is the axis of rotation, so it becomes the cylinder's height. The perpendicular 7-foot side sweeps out a circular base of radius 7 feet.",
+      "imageAlt": "Printed solid-of-revolution question; rectangle dimensions and axis side are in accessible text."
+    },
+    "16": {
+      "prompt": "In right triangle ABC, altitude CD is drawn to hypotenuse AB. If AD = 4 and CD = 8, find BD.",
+      "choices": ["√48", "√80", "12", "16"],
+      "explanation": "The altitude-to-hypotenuse theorem gives CD² = AD × BD. Substitute 8² = 4BD, so BD = 64/4 = 16.",
+      "imageAlt": "Printed altitude-to-hypotenuse question; the right triangle, altitude, and given lengths are specified in accessible text."
+    },
+    "17": {
+      "prompt": "ABCD is a parallelogram. What extra fact is sufficient to prove it is a rectangle?",
+      "choices": ["AB ≅ BC", "AB ∥ CD", "AC ≅ BD", "AC ⟂ BD"],
+      "explanation": "A parallelogram with congruent diagonals is a rectangle. Equal adjacent sides or perpendicular diagonals would instead establish a rhombus, while opposite sides are already parallel.",
+      "imageAlt": "Printed parallelogram-property question; all segment relationships are in accessible text."
+    },
+    "18": {
+      "prompt": "Segment APB has endpoints A(−5, 4) and B(7, −4). What are P's coordinates if AP:PB = 1:3?",
+      "choices": ["(−2, 2)", "(−1.1, 3)", "(1, 0)", "(4, −2)"],
+      "explanation": "The ratio 1:3 places P one fourth of the way from A to B. B−A = (12, −8); one fourth is (3, −2). Add to A to get P = (−2, 2).",
+      "imageAlt": "Printed partition-of-segment question; signed coordinates and ratio are in accessible text."
+    },
+    "19": {
+      "prompt": "Segments AB and CD intersect at E, and CA is parallel to DB. Which statement is always true?",
+      "choices": ["AE ≅ BE", "CA ≅ DB", "triangle AEC ~ triangle BED", "triangle AEC ≅ triangle BED"],
+      "explanation": "Angles AEC and BED are vertical angles. Because CA ∥ DB, corresponding angles formed by transversal AB are equal. Thus triangles AEC and BED are similar by AA, though not necessarily congruent.",
+      "imageAlt": "Horizontal segment AB runs left to right through E. Slanted segment CD runs from C above-left through E to D below-right. Vertical segments CA at left and DB at right are parallel, creating two opposite triangles AEC and BED."
+    },
+    "20": {
+      "prompt": "If sin(3x + 9)° = cos(5x − 7)°, what is x?",
+      "choices": ["8", "11", "33", "42"],
+      "explanation": "Sine and cosine of complementary angles are equal here, so (3x + 9) + (5x − 7) = 90. Then 8x + 2 = 90 and x = 11.",
+      "imageAlt": "Printed trigonometric equation; both angle expressions and degree signs are in accessible text."
+    },
+    "21": {
+      "prompt": "Which set of integers could be the side lengths of an isosceles triangle?",
+      "choices": ["{1, 1, 3}", "{2, 2, 5}", "{3, 3, 6}", "{4, 4, 7}"],
+      "explanation": "An isosceles triangle has two equal sides and must satisfy the triangle inequality. The first three sets fail because the equal sides sum to no more than the third side. Only 4 + 4 > 7, so {4, 4, 7} works.",
+      "imageAlt": "Printed triangle-inequality question; each integer triple is in accessible text."
+    },
+    "22": {
+      "prompt": "Altitude CD is drawn from the right-angle vertex C to hypotenuse AB in right triangle ABC. Which proportion can always be used to find AC?",
+      "choices": ["AC/CD = CD/AD", "CD/AC = AC/AB", "AC/CD = CD/BC", "AB/AC = AC/AD"],
+      "explanation": "A leg is the geometric mean of the whole hypotenuse and the adjacent hypotenuse segment: AC² = AB × AD. Rearranging gives AB/AC = AC/AD.",
+      "imageAlt": "Right triangle ABC has A lower left, B lower right, and right-angle vertex C above the base. Point D lies on hypotenuse AB, and altitude CD drops vertically from C to D."
+    },
+    "23": {
+      "prompt": "Which congruence statement is sufficient to prove parallelogram MARK is a rhombus?",
+      "choices": ["MA ≅ MK", "MA ≅ KR", "angle K ≅ angle A", "angle R ≅ angle A"],
+      "explanation": "In parallelogram MARK, MA and MK are adjacent sides. If they are equal, opposite-side congruence makes all four sides equal, so it is a rhombus. The other listed relations hold in an ordinary parallelogram or are not sufficient.",
+      "imageAlt": "Printed parallelogram-property question; the ordered vertices and all segment and angle comparisons are in accessible text."
+    },
+    "24": {
+      "prompt": "Line y = −2x + 3 is dilated by scale factor 4 centered at (0, 3). What is the equation of its image?",
+      "choices": ["y = −2x + 3", "y = −2x + 12", "y = −8x + 3", "y = −8x + 12"],
+      "explanation": "The dilation center (0, 3) lies on the line. A dilation about a point on a line maps that line onto itself, so its equation remains y = −2x + 3.",
+      "imageAlt": "Printed line-dilation question; line equation, scale factor, center, and all four image equations are in accessible text."
+    }
+  }
+}

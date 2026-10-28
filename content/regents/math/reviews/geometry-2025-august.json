@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "0c1cf8a1a9f3b0a33c2858548da8b6fb91580f638c9fddf471cc0fe84d25cb47",
+  "questions": {
+    "1": {
+      "prompt": "An equilateral triangle rotates continuously around one of its altitudes. What three-dimensional object forms?",
+      "choices": ["cone", "sphere", "cylinder", "pyramid"],
+      "explanation": "The altitude is the fixed axis. The triangle's base sweeps a circle while its sloping sides sweep a surface tapering to one vertex, producing a cone.",
+      "imageAlt": "Printed solid-of-revolution question. The triangle and its altitude rotation are fully described in accessible text."
+    },
+    "2": {
+      "prompt": "Quadrilateral BDGF rotates 90° clockwise about the origin and then reflects over the y-axis, producing quadrilateral MQSP. Which segment is the image of BD?",
+      "choices": ["MP", "PS", "MQ", "SQ"],
+      "explanation": "The vertex order identifies corresponding points: B maps to M and D maps to Q. Therefore segment BD maps to segment MQ.",
+      "imageAlt": "Coordinate plane shows original parallelogram BDGF in the first quadrant and image MQSP below the x-axis. Original B is lower left and D upper left; image M and Q are the corresponding endpoints of the left transformed edge."
+    },
+    "3": {
+      "prompt": "In right triangle JOE, hypotenuse JO = 31.8 and angle J = 38°. What is EJ to the nearest tenth?",
+      "choices": ["19.6", "25.1", "40.4", "51.7"],
+      "explanation": "EJ is adjacent to angle J, so cos 38° = EJ/31.8. Hence EJ = 31.8 cos 38° ≈ 25.1.",
+      "imageAlt": "Printed trigonometry question without a separate diagram; accessible text identifies the hypotenuse and angle."
+    },
+    "4": {
+      "prompt": "A hemisphere has radius 8 cm. What is its volume to the nearest cubic centimeter?",
+      "choices": ["201", "268", "1072", "2145"],
+      "explanation": "A hemisphere has half a sphere's volume: V = (2/3)πr³. With r = 8, V = (2/3)π(512) ≈ 1072 cubic centimeters.",
+      "imageAlt": "Hemisphere diagram shows a horizontal circular base and a radius from its center to the rim labeled 8 cm."
+    },
+    "5": {
+      "prompt": "In parallelogram ABCD, diagonals AC and BD meet at E. Which added fact is sufficient to prove it is a rhombus?",
+      "choices": ["AE ≅ EC", "AC ≅ BD", "AB ⟂ BC", "AC ⟂ BD"],
+      "explanation": "A parallelogram whose diagonals are perpendicular is a rhombus. AE ≅ EC is already true for all parallelograms; equal diagonals or perpendicular adjacent sides can instead characterize a rectangle.",
+      "imageAlt": "Printed parallelogram proof question; accessible text preserves each segment-congruence and perpendicular condition."
+    },
+    "6": {
+      "prompt": "In trapezoid JOSH, bases JO and HS are parallel. Angles J = 65°, O = 30°, OSA = 80°, and SHU = 60°. Find angle HSA.",
+      "choices": ["55°", "60°", "65°", "70°"],
+      "explanation": "Consecutive interior angles O and S along leg OS sum to 180°, so the whole angle HSO is 150°. Segment SA splits that angle, with OSA = 80°. Therefore HSA = 150° − 80° = 70°.",
+      "imageAlt": "Trapezoid JOSH has shorter top base HS parallel to bottom base JO. U and A lie on bottom base between J and O. Segments HU and SA descend from H and S; angle OSA is the 80-degree portion at S between SO and SA."
+    },
+    "7": {
+      "prompt": "In triangle ABC, D lies on AB and E on CB, with DE parallel to AC. If AD = 8, DB = 4, and DE = 6, find AC.",
+      "choices": ["24", "18", "12", "10"],
+      "explanation": "Triangles BDE and BAC are similar. Their corresponding side ratio is BD/BA = 4/(8 + 4) = 1/3, so DE/AC = 1/3. Since DE = 6, AC = 18.",
+      "imageAlt": "Triangle ABC has B at top, A lower left, C lower right. D lies on BA and E on BC; interior segment DE is parallel to base AC."
+    },
+    "8": {
+      "prompt": "A graphed circle has center (2, −1) and radius 5. Which equation represents it?",
+      "choices": ["(x − 2)² + (y + 1)² = 25", "(x − 2)² + (y + 1)² = 16", "(x + 2)² + (y − 1)² = 25", "(x + 2)² + (y − 1)² = 16"],
+      "explanation": "In standard form, (x − h)² + (y − k)² = r². Center (2, −1) and radius 5 give (x − 2)² + (y + 1)² = 25.",
+      "imageAlt": "Coordinate grid shows a circle centered at C(2, −1). It extends five grid units horizontally from its center, to x = −3 and x = 7."
+    },
+    "9": {
+      "prompt": "Graphed triangle D'E'F' is the image of triangle DEF. Which listed transformation maps DEF to D'E'F'?",
+      "choices": ["reflection over y = x", "reflection over y = −x", "point reflection through the origin", "translation 4 units left and 4 units down"],
+      "explanation": "Each image vertex has both coordinates negated from the corresponding original vertex; for example, D near (2, 2) maps to D' near (−2, −2). This is a 180° turn, also called a point reflection through the origin.",
+      "imageAlt": "Coordinate grid has triangle DEF in the first quadrant and congruent triangle D'E'F' in the third quadrant. Corresponding vertices are on opposite rays through the origin."
+    },
+    "10": {
+      "prompt": "From exterior point P, secants P-C-A and P-D-B meet a circle. If PA = 17, PD = 10, and DB = 12, find PC to the nearest tenth.",
+      "choices": ["7.1", "7.7", "12.9", "14.2"],
+      "explanation": "The entire lower secant is PB = PD + DB = 10 + 12 = 22. The secant-secant theorem gives PC × PA = PD × PB, so PC × 17 = 10 × 22 and PC = 220/17 ≈ 12.9.",
+      "imageAlt": "Circle with exterior point P on the right. Upper secant runs P through near point C to far point A; lower secant runs P through near point D to far point B."
+    },
+    "11": {
+      "prompt": "In the diagram, CD is parallel to AB and CB bisects angle ABD. Which statement must hold?",
+      "choices": ["CD ≅ AB", "AB ≅ BD", "triangle CDB is right", "triangle CDB is isosceles"],
+      "explanation": "Because CB bisects ∠ABD, angles ABC and CBD are equal. Since AB ∥ CD, alternate interior angles ABC and BCD are equal. Thus angles CBD and BCD in triangle CDB are equal, making that triangle isosceles.",
+      "imageAlt": "A and B are endpoints of a lower horizontal segment. C and D are endpoints of a parallel upper horizontal segment. Diagonal CB connects upper-left C to lower-right B, and BD joins lower-right B to upper-right D."
+    },
+    "12": {
+      "prompt": "Line h is y = (2/3)x − 4. Which equation is perpendicular to h and passes through (6, 1)?",
+      "choices": ["y − 1 = (2/3)(x − 6)", "y + 1 = (2/3)(x + 6)", "y − 1 = −(3/2)(x − 6)", "y + 1 = −(3/2)(x + 6)"],
+      "explanation": "The negative reciprocal of slope 2/3 is −3/2. Point-slope form through (6, 1) is y − 1 = −(3/2)(x − 6).",
+      "imageAlt": "Printed perpendicular-line question. Accessible text preserves the two-thirds and negative three-halves slopes and each point-slope equation."
+    },
+    "13": {
+      "prompt": "A solid-oak square pyramid has base side 8.2 cm, height 17.4 cm, and density 0.77 g/cm³. What is its mass to the nearest gram?",
+      "choices": ["300", "506", "637", "901"],
+      "explanation": "Volume of the pyramid is (1/3)(8.2²)(17.4) ≈ 390.0 cm³. Multiplying by 0.77 g/cm³ gives about 300.3 g, which rounds to 300 g.",
+      "imageAlt": "Square-based pyramid diagram labels its vertical height 17.4 cm and one base side 8.2 cm."
+    },
+    "14": {
+      "prompt": "In triangle ABC, DE is a midsegment. If DE = x + 3 and AC = 3x − 5, find DE.",
+      "choices": ["28", "14", "7", "4"],
+      "explanation": "A midsegment is half the length of the parallel third side, so x + 3 = (3x − 5)/2. Solving gives x = 11 and DE = 11 + 3 = 14.",
+      "imageAlt": "Triangle ABC has B at top and AC as base. D and E are midpoints of AB and BC; horizontal midsegment DE joins them parallel to AC."
+    },
+    "15": {
+      "prompt": "Isosceles right triangle DUG has right angle at G and hypotenuse DU = 10√2. What is leg GU?",
+      "choices": ["5", "5√2", "10", "10√2"],
+      "explanation": "A 45-45-90 triangle has hypotenuse equal to a leg times √2. Therefore GU = (10√2)/√2 = 10.",
+      "imageAlt": "Printed isosceles-right-triangle question. Accessible text identifies the right angle, hypotenuse, and radical length."
+    },
+    "16": {
+      "prompt": "Triangle RST has sides RS = 9 cm and RT = 8 cm with included angle TRS = 55°. What is its area to the nearest square centimeter?",
+      "choices": ["59", "36", "29", "21"],
+      "explanation": "Use the included-angle area formula: A = (1/2)(8)(9)sin 55° = 36 sin 55° ≈ 29.49 cm². This is 29 cm² to the nearest square centimeter.",
+      "imageAlt": "Triangle RST has R at top, T lower left, S lower right. Sides RT and RS are labeled 8 cm and 9 cm, and their included angle at R is marked 55 degrees."
+    },
+    "17": {
+      "prompt": "Triangle ABC is dilated by factor 2 onto triangle RST on the graph. What is the dilation center?",
+      "choices": ["(1, −1)", "(2, 1)", "(3, 3)", "(0, 0)"],
+      "explanation": "Under a factor-2 dilation, an image point equals center + 2(original − center), so center = 2(original) − image. On the graph, A(1, 5) maps to R(0, 9), giving center 2(1, 5) − (0, 9) = (2, 1).",
+      "imageAlt": "Coordinate grid shows smaller triangle ABC in the first quadrant and larger triangle RST extending left and right above it. A near (1, 5) corresponds to R near (0, 9); B corresponds to S and C corresponds to T."
+    },
+    "18": {
+      "prompt": "Triangle ABC has A(−2, 3), B(−2, −1), and C(6, −1). What is its perimeter?",
+      "choices": ["16", "92", "16√5", "12 + 4√5"],
+      "explanation": "AB is vertical with length 4 and BC is horizontal with length 8. AC = √(8² + 4²) = √80 = 4√5. Add the three sides to obtain 12 + 4√5.",
+      "imageAlt": "Printed coordinate-perimeter question. Accessible text preserves each signed coordinate and radical choice."
+    },
+    "19": {
+      "prompt": "Segments GT and PF cross at E, and angle P is congruent to angle F. Which proportion must be true?",
+      "choices": ["PE/FE = FT/PG", "GE/TE = FT/PG", "PE/GE = TE/FE", "PE/FE = PG/FT"],
+      "explanation": "Angles P and F are equal, and the angles at E are vertical, so triangles PGE and FTE are similar with P ↔ F, G ↔ T, E ↔ E. Corresponding sides give PE/FE = PG/FT.",
+      "imageAlt": "Two bow-tie triangles meet at E. P and G are the upper-left and lower-left endpoints, while T and F are upper-right and lower-right. Segment PF crosses segment GT at E; outer sides PG and TF complete the triangles."
+    },
+    "20": {
+      "prompt": "A 10-ft by 4-ft section of sidewalk is 4 inches deep. Concrete mix yields 0.6 cubic foot per bag. What minimum whole number of bags fills the section?",
+      "choices": ["22", "23", "26", "27"],
+      "explanation": "Convert 4 inches to 1/3 foot. The sidewalk volume is 10 × 4 × (1/3) = 13⅓ cubic feet. At 0.6 cubic foot per bag, that is 13⅓/0.6 ≈ 22.22 bags; round up to 23 whole bags.",
+      "imageAlt": "Printed concrete-volume question; accessible text includes both feet and inches, bag yield, and all choices."
+    },
+    "21": {
+      "prompt": "The line 4x − 6y = 24 is dilated by factor 3 about the origin. Which equation represents its image?",
+      "choices": ["y = (2/3)x − 12", "y = (2/3)x − 4", "y = 2x − 12", "y = 2x − 4"],
+      "explanation": "Rewrite the original as y = (2/3)x − 4. A dilation about the origin keeps its slope but multiplies its y-intercept by 3, giving y = (2/3)x − 12.",
+      "imageAlt": "Printed line-dilation question. Accessible text preserves the original equation, factor, center, and fractional-slope choices."
+    },
+    "22": {
+      "prompt": "A rhombus on a coordinate plane has center (1, 0). Which transformation does not map it onto itself?",
+      "choices": ["rotate 180° about the origin", "rotate 180° about (1, 0)", "reflect over y = (1/2)x − 1/2", "reflect over y = −2x + 2"],
+      "explanation": "The two diagonal lines through the rhombus's center are axes of reflection, and a half-turn about its center (1, 0) also preserves it. A half-turn about the origin instead moves the center to (−1, 0), so it does not map the figure onto itself.",
+      "imageAlt": "Coordinate grid shows a slanted rhombus centered one unit right of the origin. Its top and bottom edges are horizontal; its diagonals cross at (1, 0) along lines with slopes one-half and negative two."
+    },
+    "23": {
+      "prompt": "Right triangle HAY has hypotenuse HY = 25, leg YA = 20, and altitude AL to HY. What is AL?",
+      "choices": ["9", "12", "15", "16"],
+      "explanation": "The other leg is HA = √(25² − 20²) = 15. Compute area two ways: (1/2)(15)(20) = (1/2)(25)(AL), so AL = 300/25 = 12.",
+      "imageAlt": "Right triangle HAY has right angle at top vertex A and horizontal hypotenuse HY along the bottom. Altitude AL drops from A to point L between H and Y."
+    },
+    "24": {
+      "prompt": "Square ABCD has area 36. It is dilated by scale factor 1/2 centered at A. What is the area of its image?",
+      "choices": ["9", "18", "72", "144"],
+      "explanation": "Area scales by the square of a linear scale factor. Here (1/2)² = 1/4, so the image area is 36 × 1/4 = 9.",
+      "imageAlt": "Printed square-dilation question. Accessible text includes the original area, scale factor, center, and choices."
+    }
+  }
+}

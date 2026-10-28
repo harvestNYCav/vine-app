@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "60e28287aea9158e3f160bbd674e536dd3180544dc7936ccdcc30c25f3cfdffb",
+  "questions": {
+    "1": {
+      "prompt": "What is the correct factorization of x² + 4x − 12?",
+      "choices": ["(x + 3)(x − 4)", "(x − 3)(x + 4)", "(x + 2)(x − 6)", "(x − 2)(x + 6)"],
+      "explanation": "The needed factors of −12 sum to +4: −2 and +6. Thus x² + 4x − 12 = (x − 2)(x + 6).",
+      "imageAlt": "Quadratic x squared plus four x minus twelve and all four signed factor pairs are transcribed."
+    },
+    "2": {
+      "prompt": "Which situation can be modeled by a linear function?",
+      "choices": ["A printer can print one page every three seconds.", "A bank account earns 0.5% interest each year, compounded annually.", "The number of cells in an organism doubles every four days.", "Attendance at a professional sports team's games decreases by 1.5% each year."],
+      "explanation": "Printing one page every three seconds adds a fixed number of pages per unit of time, a constant rate characteristic of a linear function. The other choices describe repeated percentage or multiplicative changes.",
+      "imageAlt": "Four situations are transcribed, preserving fixed page rate, annual compounding, doubling, and percentage decline."
+    },
+    "3": {
+      "prompt": "Which expression is equivalent to 3(x² − 2x + 3) − (4x² + 3x − 1)?",
+      "choices": ["−x² + x + 2", "−x² − 8x + 7", "−x² − 3x + 8", "−x² − 9x + 10"],
+      "explanation": "Distribute: 3x² − 6x + 9 − 4x² − 3x + 1. Combine like terms to get −x² − 9x + 10.",
+      "imageAlt": "Full parenthesized subtraction and all four signed quadratic results are transcribed."
+    },
+    "4": {
+      "prompt": "At Adelynn's first birthday party, each guest brought $1 in coins for her piggy bank. Guests brought nickels, dimes, and quarters totaling $28. There were twice as many dimes as nickels and 12 more quarters than nickels. If x is the number of nickels, which equation can determine x?",
+      "choices": ["0.05x + 0.10x + 0.25x = 28", "0.05x + 0.10(2x) + 0.25(x + 12) = 28", "0.05(2x) + 0.10x + 0.25(x + 12) = 28", "0.05(x + 12) + 0.10(2x) + 0.25x = 28"],
+      "explanation": "The counts are x nickels, 2x dimes, and x + 12 quarters. Multiply each count by its coin value and set their sum to 28 dollars: 0.05x + 0.10(2x) + 0.25(x + 12) = 28.",
+      "imageAlt": "Coin-count relationships and all four equations are transcribed with correct values 0.05, 0.10, and 0.25."
+    },
+    "5": {
+      "prompt": "A student creates a fourth-degree trinomial with leading coefficient 2 and constant value 5. Which trinomial could it be?",
+      "choices": ["2x⁴ + 3x² + 5", "2x⁴ + 5x + 3", "4x² − 3x + 5", "4x³ − 5x² + 3"],
+      "explanation": "Fourth degree requires an x⁴ leading term, its coefficient must be 2, and the constant term must be 5. Only 2x⁴ + 3x² + 5 has all three properties.",
+      "imageAlt": "Each candidate's degree, leading coefficient, and constant term are transcribed in the four polynomial choices."
+    },
+    "6": {
+      "prompt": "When solving 4x² − 16 = 0, Laura wrote 4x² = 16 as her first step. Which property justifies this?",
+      "choices": ["distributive property of multiplication over addition", "multiplication property of equality", "commutative property of addition", "addition property of equality"],
+      "explanation": "Laura added 16 to both sides: 4x² − 16 + 16 = 0 + 16. Adding the same number to both sides uses the addition property of equality.",
+      "imageAlt": "Original and first-step equations, along with four named properties, are transcribed."
+    },
+    "7": {
+      "prompt": "Which expression results in an irrational number?",
+      "choices": ["√3 · √3", "−2/3 + 1/4", "5 · √81", "1/3 + √3"],
+      "explanation": "The first expression equals 3, the second is a sum of rational fractions, and the third equals 5·9 = 45. Adding rational 1/3 to irrational √3 remains irrational.",
+      "imageAlt": "All four expressions are transcribed with radicals and fractional signs: square root three times itself; negative two-thirds plus one-fourth; five times square root 81; one-third plus square root three."
+    },
+    "8": {
+      "prompt": "Which equation has the same solutions as x² + 6x − 18 = 0?",
+      "choices": ["(x + 3)² = 24", "(x + 3)² = 27", "(x + 6)² = 24", "(x + 6)² = 27"],
+      "explanation": "Rearrange to x² + 6x = 18, then add (6/2)² = 9 to each side. This gives (x + 3)² = 27.",
+      "imageAlt": "Quadratic and four completed-square equations are transcribed, retaining squared binomials and constants."
+    },
+    "9": {
+      "prompt": "Eight football players' heights in inches are 76, 70, 72, 70, 69, 71, 78, 74. Which box plot represents these data?",
+      "choices": ["Plot (1): minimum 65, Q1 70, median 75, Q3 80, maximum 85", "Plot (2): minimum 65, Q1 70, median 71.5, Q3 75, maximum 85", "Plot (3): minimum 69, Q1 70, median 71.5, Q3 75, maximum 78", "Plot (4): minimum 69, Q1 70, median 72.5, Q3 75, maximum 78"],
+      "explanation": "Sorted heights are 69, 70, 70, 71, 72, 74, 76, 78. The five-number summary is min 69, Q1 = (70+70)/2 = 70, median = (71+72)/2 = 71.5, Q3 = (74+76)/2 = 75, max 78. Plot (3) matches.",
+      "imageAlt": "All four box plots' five-number summaries are transcribed in the choices; the original eight heights are in the prompt."
+    },
+    "10": {
+      "prompt": "A bookstore's profit was $50 for 100 books sold, $275 for 250, $350 for 300, and $425 for 350. What is the average rate of change in dollars per book between 100 and 350 books sold?",
+      "choices": ["0.50", "0.67", "1.50", "2.00"],
+      "explanation": "Use the two specified endpoints: (425 − 50)/(350 − 100) = 375/250 = $1.50 per book.",
+      "imageAlt": "Book-sales and profit table is fully transcribed in the prompt, including the 100- and 350-book endpoints."
+    },
+    "11": {
+      "prompt": "If f(x) = x², which function shifts its graph 4 units right and 3 units down?",
+      "choices": ["g(x) = (x + 4)² + 3", "j(x) = (x + 4)² − 3", "h(x) = (x − 4)² − 3", "k(x) = (x − 4)² + 3"],
+      "explanation": "Right 4 replaces x with x − 4 inside the square, and down 3 subtracts 3 outside. The result is (x − 4)² − 3.",
+      "imageAlt": "Four horizontal and vertical shifts of x squared are transcribed with signs and squared parentheses."
+    },
+    "12": {
+      "prompt": "A plumber's charge is p(h) = 45 + 90h. What does the y-intercept mean?",
+      "choices": ["$45 to come to the house", "$45 per hour that he works", "$90 to come to the house", "$90 per hour that he works"],
+      "explanation": "The y-intercept is p(0) = 45, the charge before any hours of work. It is the $45 fee to come to the house; 90 is the hourly charge.",
+      "imageAlt": "Cost function p(h)=45+90h and all four fee-versus-hourly interpretations are transcribed."
+    },
+    "13": {
+      "prompt": "What is the solution to 2m − 4 ≤ 3(2m + 4)?",
+      "choices": ["m ≤ −2", "m ≥ −2", "m ≤ −4", "m ≥ −4"],
+      "explanation": "Expand to 2m − 4 ≤ 6m + 12. Subtract 2m and 12: −16 ≤ 4m. Divide by positive 4 to get −4 ≤ m, or m ≥ −4.",
+      "imageAlt": "Inequality with less-than-or-equal sign and all four signed bound choices are transcribed."
+    },
+    "14": {
+      "prompt": "A prom-theme survey has girls' counts: Beach Party 86, Hollywood 112, Broadway 68; boys' counts: Beach Party 123, Hollywood 77, Broadway 79. About what percent of students who chose Broadway were girls?",
+      "choices": ["26", "27", "46", "68"],
+      "explanation": "Of Broadway voters, 68 were girls and 79 boys, for 147 total. The requested percentage is 68/147 × 100 ≈ 46.3%, or about 46%.",
+      "imageAlt": "All six girls-versus-boys theme counts are transcribed in the prompt, including Broadway 68 girls and 79 boys."
+    },
+    "15": {
+      "prompt": "The sum of 2√54 and 2√6 is",
+      "choices": ["4√60", "8√15", "7√6", "8√6"],
+      "explanation": "Since √54 = √(9·6) = 3√6, the first term is 6√6. Add 2√6 to obtain 8√6.",
+      "imageAlt": "Two radical terms and all four radical sum choices are transcribed."
+    },
+    "16": {
+      "prompt": "The functions f(x) = x² − 5x − 14 and g(x) = x + 2 are graphed together. What are the solutions to f(x) = g(x)?",
+      "choices": ["−14 and 0", "0 and 2", "−2 and 8", "−2 and 7"],
+      "explanation": "Set x² − 5x − 14 = x + 2, giving x² − 6x − 16 = 0. Factor as (x − 8)(x + 2) = 0, so x = 8 or −2.",
+      "imageAlt": "Quadratic and linear functions and four pairs of possible intersection x-values are transcribed."
+    },
+    "17": {
+      "prompt": "If x = 4a² − a + 3 and y = a − 5, which polynomial equals xy?",
+      "choices": ["−17a² − 2a − 15", "−17a² + 8a − 15", "4a³ − 21a² − 2a − 15", "4a³ − 21a² + 8a − 15"],
+      "explanation": "Multiply (4a² − a + 3)(a − 5): 4a³ − 20a² − a² + 5a + 3a − 15. Combine to get 4a³ − 21a² + 8a − 15.",
+      "imageAlt": "Both expressions for x and y and all four polynomial products are transcribed with every coefficient and sign."
+    },
+    "18": {
+      "prompt": "What is an equation of the line through (3, 7) with slope 2?",
+      "choices": ["y − 7 = 2(x − 3)", "y − 3 = 2(x − 7)", "y + 7 = 2(x + 3)", "y + 3 = 2(x + 7)"],
+      "explanation": "Point-slope form is y − y₁ = m(x − x₁). With m = 2 and (x₁,y₁) = (3,7), this gives y − 7 = 2(x − 3).",
+      "imageAlt": "Coordinate (3,7), slope two, and four point-slope equations are transcribed."
+    },
+    "19": {
+      "prompt": "Which geometric sequence has common ratio −3?",
+      "choices": ["−10, −7, −4, −1, ...", "14, 11, 8, 5, ...", "−2, −6, −18, −54, ...", "4, −12, 36, −108, ..."],
+      "explanation": "A common ratio of −3 means multiply each term by −3. In choice (4), 4·(−3)=−12, then −12·(−3)=36, then 36·(−3)=−108.",
+      "imageAlt": "All four sequences are transcribed with negative signs and term order."
+    },
+    "20": {
+      "prompt": "Solve 6 − ax = ax − 2 for x in terms of a, where a ≠ 0.",
+      "choices": ["4a", "4/a", "2a", "2/a"],
+      "explanation": "Add ax and 2 to obtain 8 = 2ax. Since a ≠ 0, divide by 2a: x = 4/a.",
+      "imageAlt": "Equation six minus ax equals ax minus two, restriction a not equal zero, and four product-versus-fraction choices are transcribed."
+    },
+    "21": {
+      "prompt": "Which function has zeros −1, 3, and −4?",
+      "choices": ["f(x) = (x + 1)(x − 3)(x − 4)", "g(x) = (x − 1)(x + 3)(x − 4)", "h(x) = (x + 1)(x − 3)(x + 4)", "k(x) = (x − 1)(x + 3)(x + 4)"],
+      "explanation": "A zero r produces factor x − r. Zeros −1, 3, −4 correspond to x + 1, x − 3, x + 4, respectively, so h(x) has the stated zeros.",
+      "imageAlt": "Three signed zeros and all four factored cubic functions are transcribed, retaining all factor signs."
+    },
+    "22": {
+      "prompt": "The expression 5^(a + 2b) is equivalent to",
+      "choices": ["5^a · 5² · 5^b", "5^a · 25^b", "25^(2ab)", "25^(a + 2b)"],
+      "explanation": "Split the sum in the exponent: 5^(a + 2b) = 5^a · 5^(2b). Since 5^(2b) = (5²)^b = 25^b, the result is 5^a · 25^b.",
+      "imageAlt": "Base five raised to a plus two b and four equivalent-expression candidates are transcribed with exponent grouping."
+    },
+    "23": {
+      "prompt": "In an arithmetic sequence, the first term is 4 and the third term is −2. What is the common difference?",
+      "choices": ["−1", "−2", "−3", "−6"],
+      "explanation": "Two common-difference steps take the sequence from 4 to −2, a total change of −6. Thus 2d = −6 and d = −3.",
+      "imageAlt": "First term four, third term negative two, and four signed difference choices are transcribed."
+    },
+    "24": {
+      "prompt": "A swimming pool holds about 3240 cubic feet. One cubic foot holds about 7.5 gallons, and one truck load holds 6000 gallons. Which expression calculates the number of truck loads needed?",
+      "choices": ["(3240 ft³/1 pool)·(1 ft³/7.5 gal)·(6000 gal/1 truck load)", "(3240 ft³/1 pool)·(1 ft³/7.5 gal)·(1 truck load/6000 gal)", "(3240 ft³/1 pool)·(7.5 gal/1 ft³)·(6000 gal/1 truck load)", "(3240 ft³/1 pool)·(7.5 gal/1 ft³)·(1 truck load/6000 gal)"],
+      "explanation": "Convert cubic feet to gallons with 7.5 gal/ft³, then gallons to truck loads with 1 truck load/6000 gal. These factors cancel ft³ and gal, leaving truck loads per pool.",
+      "imageAlt": "All four dimension-conversion products are transcribed with exact numerator and denominator units, volume 3240 cubic feet, 7.5 gallons per cubic foot, and 6000 gallons per load."
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "54125f2946430c1adb3bd614f6e6e9d9c04a3dc8627729169b838f8d92bb5899",
+  "questions": {
+    "1": {
+      "prompt": "What is the seventh term of the sequence −2, 6, −18, 54, ...?",
+      "choices": ["−1458", "−4374", "1458", "4374"],
+      "explanation": "Each term is multiplied by −3. The seventh term is −2(−3)^6 = −2(729) = −1458.",
+      "imageAlt": "The sequence begins negative two, six, negative eighteen, fifty-four, and continues to the seventh term."
+    },
+    "2": {
+      "prompt": "For x ≠ 0, m(x) = 12x^(8a) and p(x) = 3x^(2a). What is m(x)/p(x)?",
+      "choices": ["9x^(4a)", "4x^(6a)", "4x⁶", "4x⁴"],
+      "explanation": "Divide coefficients and subtract the exponents on the same base: (12/3)x^(8a − 2a) = 4x^(6a).",
+      "imageAlt": "A fraction has m of x over p of x, with m of x equal to twelve x to the eight a power and p of x equal to three x to the two a power."
+    },
+    "3": {
+      "prompt": "What is the inverse of f(x) = 2x + 6?",
+      "choices": ["f⁻¹(x) = −2(x + 3)", "f⁻¹(x) = x − 3", "f⁻¹(x) = x/2 − 3", "f⁻¹(x) = x/2 + 3"],
+      "explanation": "Set y = 2x + 6, interchange x and y, and solve x = 2y + 6. Thus y = (x − 6)/2 = x/2 − 3.",
+      "imageAlt": "The original linear function has slope two and y-intercept six; the four inverse-function choices have different slopes and shifts."
+    },
+    "4": {
+      "prompt": "Which expression is equivalent to ∛(16x⁶)?",
+      "choices": ["4x³", "4x²", "2x²∛2", "2x³∛2"],
+      "explanation": "Factor the radicand as 8 · 2 · (x²)³. Its cube root is 2x²∛2, including for negative x because x² is nonnegative.",
+      "imageAlt": "The cube-root bar covers the entire expression sixteen x to the sixth power."
+    },
+    "5": {
+      "prompt": "Mary measures the height and shoe size of every tenth person entering her school to investigate an association between those variables. What type of study is this?",
+      "choices": ["a census", "an observational study", "a simulation", "a controlled experiment"],
+      "explanation": "Mary records measurements without assigning a treatment or changing anyone's conditions, so this is an observational study. Sampling every tenth person is not a census of everyone.",
+      "imageAlt": "Mary measures two existing traits—height and shoe size—for every tenth person entering her school."
+    },
+    "6": {
+      "prompt": "For all values where defined, which expression cannot be rewritten as (x − 6)(x + 2)?",
+      "choices": ["[(x + 2)(x² − 2x − 24)]/(x + 4)", "x(x + 2) − 6(x + 2)", "[(x − 2)(x² − 4x − 12)]/(x − 6)", "(x + 4)(x − 2) − 2(3x + 2)"],
+      "explanation": "In choice 3, x² − 4x − 12 = (x − 6)(x + 2), so after cancellation the expression is (x − 2)(x + 2), not (x − 6)(x + 2). The other three simplify to the target expression wherever they are defined.",
+      "imageAlt": "The target product is x minus six times x plus two. Two choices are rational expressions with denominators x plus four and x minus six; two are differences of products."
+    },
+    "7": {
+      "prompt": "Light-bulb lifespans are normally distributed with mean 2,387 hours and standard deviation 238 hours. To the nearest tenth of a percent, what percent last more than 2,750 hours?",
+      "choices": ["6.4%", "15.9%", "43.6%", "93.6%"],
+      "explanation": "The z-score is (2750 − 2387)/238 ≈ 1.525. The area to the right under the standard normal curve is about 0.064, or 6.4% to the nearest tenth of a percent.",
+      "imageAlt": "A normal-distribution question gives a mean of 2,387 hours and standard deviation of 238 hours and asks for the upper-tail percent above 2,750 hours."
+    },
+    "8": {
+      "prompt": "What is the solution set of 2/x³ + 1/x = 6/x³?",
+      "choices": ["{−2, 0, 2}", "{2}", "{−2, 2}", "{0, 2}"],
+      "explanation": "The denominator requires x ≠ 0. Multiply both sides by x³: 2 + x² = 6, so x² = 4 and x = −2 or 2. Both are allowed, while zero is not.",
+      "imageAlt": "The equation has two divided by x cubed plus one divided by x on the left, and six divided by x cubed on the right."
+    },
+    "9": {
+      "prompt": "Solve 9e^(x − 2) = 36 for x.",
+      "choices": ["x = ln(36)/ln(9e) + 2", "x = ln(4) − 2", "x = ln(4) + 2", "x = ln(4/e) + 2"],
+      "explanation": "Divide by 9 to get e^(x − 2) = 4. Taking the natural logarithm gives x − 2 = ln(4), so x = ln(4) + 2.",
+      "imageAlt": "The exponential equation is nine times e raised to the entire exponent x minus two, equal to thirty-six."
+    },
+    "10": {
+      "prompt": "Reynaldo scored 40 on his first test and expects 100 on each additional test. Which equation determines the number x of additional tests needed for an average of 80?",
+      "choices": ["(40 + 100x)/(x + 1) = 80", "(40 + 100x)/x = 80", "(40 + 100 + x)/x = 80", "(40 + 100 + x)/(x + 1) = 80"],
+      "explanation": "The total points after x additional tests are 40 + 100x, and there are x + 1 tests altogether including the first. Average equals total points divided by test count, so (40 + 100x)/(x + 1) = 80.",
+      "imageAlt": "The original score is forty and each additional score is one hundred; the four equations differ in their numerators and whether they divide by x or x plus one."
+    },
+    "11": {
+      "prompt": "For f(x) = ln(x + 5), what is the smallest integer x for which f(x) is defined?",
+      "choices": ["−5", "−4", "−1", "0"],
+      "explanation": "A natural logarithm needs a positive argument. Therefore x + 5 > 0, or x > −5; the smallest integer meeting that condition is −4.",
+      "imageAlt": "The logarithm contains x plus five as its entire argument, and the question asks for the smallest integer in its domain."
+    },
+    "12": {
+      "prompt": "For x ≠ 1/2, which expression equals (6x³ + 7x² − 9x − 1)/(2x − 1)?",
+      "choices": ["3x² − 2x − 4", "3x² + 5x − 7 − 8/(2x − 1)", "3x² + 2x + 5 − 6/(2x − 1)", "3x² + 5x − 2 − 3/(2x − 1)"],
+      "explanation": "Polynomial division gives quotient 3x² + 5x − 2 and remainder −3. Thus the fraction is 3x² + 5x − 2 − 3/(2x − 1), provided x ≠ 1/2.",
+      "imageAlt": "A rational expression has cubic numerator six x cubed plus seven x squared minus nine x minus one, denominator two x minus one, and excludes x equal to one-half."
+    },
+    "13": {
+      "prompt": "The graph of p(x) touches the x-axis at −a and crosses it at b, where a > 0 and b > 0. It falls to the left and rises to the right. Which equation could represent p(x)?",
+      "choices": ["p(x) = (x + a)(x − b)", "p(x) = (x + a)²(x − b)", "p(x) = (x − a)(x + b)", "p(x) = (x − a)²(x + b)"],
+      "explanation": "A touch at x = −a needs an even-multiplicity factor (x + a)². A crossing at x = b needs (x − b) to an odd power. Their product is a positive-leading cubic, consistent with the graph's end behavior.",
+      "imageAlt": "The curve rises from below on the left, touches the x-axis at the labeled point negative a, dips below, then crosses the x-axis at labeled positive b and rises to the right."
+    },
+    "14": {
+      "prompt": "Let f(x) = (1/2)x³ + 3x² − 4x and g(x) = 5log₃(x + 10). Which listed value, rounded to the nearest tenth, is not a solution of f(x) = g(x)?",
+      "choices": ["−6.9", "−1.4", "2.2", "9.8"],
+      "explanation": "The logarithm requires x > −10. The graphs of f and g intersect near −6.9, −1.4, and 2.2, but not near 9.8. At x = 9.8, f(x) is about 719.5 while g(x) is about 13.6, far apart.",
+      "imageAlt": "A cubic polynomial and a base-three logarithm are compared at the proposed x-values negative 6.9, negative 1.4, 2.2, and 9.8."
+    },
+    "15": {
+      "prompt": "A logarithmic-looking graph f(x) has a vertical asymptote at x = 0 and crosses the x-axis near x = 1. Which displayed graph represents f(x + 3)?",
+      "choices": ["Graph 1: same shape with asymptote x = 0, shifted upward.", "Graph 2: same shape with asymptote x = 0, shifted downward.", "Graph 3: same shape with asymptote near x = 3, shifted right.", "Graph 4: same shape with asymptote near x = −3, shifted left."],
+      "explanation": "Replacing x by x + 3 shifts a graph three units to the left. The original vertical asymptote at x = 0 moves to x = −3, matching graph 4; the shape and vertical position otherwise stay the same.",
+      "imageAlt": "The original increasing logarithmic curve approaches the y-axis from the right and crosses the x-axis near one. Choice 1 is shifted up, choice 2 down, choice 3 right, and choice 4 left, each retaining the same logarithmic shape."
+    },
+    "16": {
+      "prompt": "Which listed value is one solution of the system x² + y² = 20 and y = x − 6?",
+      "choices": ["x = 2", "(4, −2)", "y = −4", "(4, 2)"],
+      "explanation": "For (4, −2), the line gives −2 = 4 − 6 and the circle gives 4² + (−2)² = 16 + 4 = 20. So this ordered pair satisfies both equations.",
+      "imageAlt": "The system consists of x squared plus y squared equals twenty and y equals x minus six. The answer choices include single-coordinate claims and two ordered pairs."
+    },
+    "17": {
+      "prompt": "A survey of 100 tenth graders found: 7 eat breakfast and walk to school; 53 eat breakfast and do not walk; 10 do not eat breakfast and walk; 30 neither eat breakfast nor walk. What is P(walks to school or eats breakfast)?",
+      "choices": ["0.07", "0.70", "0.77", "0.84"],
+      "explanation": "The union includes everyone except the 30 students who do neither. Thus 100 − 30 = 70 students walk or eat breakfast, giving probability 70/100 = 0.70. Equivalently, add the three included table cells 7 + 53 + 10.",
+      "imageAlt": "Two-way table: Eats Breakfast and Walks, 7; Eats Breakfast and Does Not Walk, 53; Does Not Eat and Walks, 10; Does Not Eat and Does Not Walk, 30."
+    },
+    "18": {
+      "prompt": "A $34,950 vehicle depreciates 9.2% per year. Which recursive formula models its value aₙ after n years?",
+      "choices": ["aₙ = 34,950(1.092)^n", "aₙ = 34,950(0.921)^n", "a₀ = 34,950; aₙ = 1.092aₙ₋₁", "a₀ = 34,950; aₙ = 0.908aₙ₋₁"],
+      "explanation": "A 9.2% annual loss means retaining 1 − 0.092 = 0.908 of the prior year's value. A recursive model gives the purchase value a₀ = 34,950 and then aₙ = 0.908aₙ₋₁.",
+      "imageAlt": "The choices include two explicit exponential formulas and two initial-value-plus-recursion formulas. The vehicle starts at 34,950 dollars and depreciates 9.2 percent each year."
+    },
+    "19": {
+      "prompt": "Factor completely (3x − 1)² − 5(3x − 1) + 6.",
+      "choices": ["(3x − 3)(3x − 4)", "3x(3x − 7)", "3(x − 1)(3x − 4)", "(3x + 1)(3x − 2)"],
+      "explanation": "Let u = 3x − 1. Then u² − 5u + 6 = (u − 2)(u − 3) = (3x − 3)(3x − 4). Factor 3x − 3 once more to get 3(x − 1)(3x − 4).",
+      "imageAlt": "The expression is the square of three x minus one, minus five times three x minus one, plus six. It asks for complete factorization."
+    },
+    "20": {
+      "prompt": "A substance's mass after t minutes is E(t) = 26·2^(t/20) grams. Assess statements I: initial mass is 26 grams; II: mass doubles every 20 days; III: mass after 3 hours is about 29 grams. Which are true?",
+      "choices": ["I only", "III only", "I and II only", "I and III only"],
+      "explanation": "At t = 0, E(0) = 26 grams, so I is true. Increasing t by 20 doubles the mass, but t is measured in minutes, not days, so II is false. Three hours is 180 minutes and E(180) = 26·2⁹ = 13,312 grams, not 29, so III is false.",
+      "imageAlt": "The exponential model is twenty-six times two raised to t divided by twenty, with t measured in minutes. The three statements mention initial mass, a doubling time in days, and mass after three hours."
+    },
+    "21": {
+      "prompt": "For x > 0, simplify ∛(9x²) · √(9x).",
+      "choices": ["9⁵x^(7/2)", "9⁶x³", "9^(1/6)x^(1/3)", "9^(5/6)x^(7/6)"],
+      "explanation": "Write the radicals as powers: (9x²)^(1/3)(9x)^(1/2) = 9^(1/3 + 1/2)x^(2/3 + 1/2) = 9^(5/6)x^(7/6).",
+      "imageAlt": "The product is the cube root of nine x squared multiplied by the square root of nine x, with x positive."
+    },
+    "22": {
+      "prompt": "The readership of an online article is modeled by N(t) = 2(1.0098)^t, with t in minutes since posting. Which equivalent equation uses a growth factor per second?",
+      "choices": ["N(t) = 2(1.000163)^(t/60)", "N(t) = 2(1.000163)^(60t)", "N(t) = 2(1.79524)^(t/60)", "N(t) = 2(1.79524)^(60t)"],
+      "explanation": "A minute contains 60 seconds. The per-second multiplier is 1.0098^(1/60) ≈ 1.000163, and t minutes contain 60t seconds, giving N(t) ≈ 2(1.000163)^(60t).",
+      "imageAlt": "The original model is two times 1.0098 raised to t, where t is minutes. The alternatives use base 1.000163 or 1.79524 with exponent t over sixty or sixty t."
+    },
+    "23": {
+      "prompt": "Which equation represents a parabola with focus (2, −5) and directrix y = 3?",
+      "choices": ["(x − 2)² = −16(y + 1)", "(x − 2)² = −16(y − 1)", "(x + 2)² = −16(y − 1)", "(x − 2)² = 16(y + 1)"],
+      "explanation": "The vertex lies halfway between the focus's y-value −5 and the directrix y = 3, at (2, −1). The focus is four units below the vertex, so p = −4. In (x − h)² = 4p(y − k), this gives (x − 2)² = −16(y + 1).",
+      "imageAlt": "The focus is at x two, y negative five; the directrix is the horizontal line y equals three. The choices vary the vertex and direction of opening."
+    },
+    "24": {
+      "prompt": "Which graph could show a fourth-degree polynomial with exactly two nonreal (imaginary) roots?",
+      "choices": ["Graph 1: both ends rise; the curve crosses the x-axis twice.", "Graph 2: both ends rise; the curve crosses the x-axis four times.", "Graph 3: left end rises and right end falls; the curve crosses once and touches once.", "Graph 4: a U-shaped curve stays above the x-axis."],
+      "explanation": "A fourth-degree polynomial has four complex roots counting multiplicity. Graph 1 has the required even-degree end behavior and exactly two real x-intercepts; the remaining two roots are a nonreal conjugate pair. Graph 2 has four real intercepts, graph 3 has odd-degree end behavior, and graph 4 has no real intercepts, so a fourth-degree version would have four nonreal roots rather than two.",
+      "imageAlt": "Four graph sketches: first has both ends rising and two x-axis crossings; second has both ends rising and four crossings; third has opposite end directions with one crossing and one touching point; fourth is U-shaped and stays above the x-axis."
+    }
+  }
+}

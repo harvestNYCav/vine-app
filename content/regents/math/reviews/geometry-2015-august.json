@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "ace503dd474c94f6f19d94d7a3d3a55456cf397703048b140f2e194dae8de689",
+  "questions": {
+    "1": {
+      "prompt": "A parallelogram must be a rectangle when which condition holds?",
+      "choices": ["Its diagonals are perpendicular.", "Its diagonals are congruent.", "Its opposite sides are parallel.", "Its opposite sides are congruent."],
+      "explanation": "Congruent diagonals in a parallelogram guarantee right angles, so it is a rectangle. Perpendicular diagonals may instead describe a non-square rhombus; opposite sides parallel or congruent hold in every parallelogram.",
+      "imageAlt": "Text-only parallelogram-property question; all four conditions are in accessible text."
+    },
+    "2": {
+      "prompt": "Triangle A′B′C′ is the image of triangle ABC. Which transformation would not always make the triangles congruent?",
+      "choices": ["reflection across the x-axis", "translation left 5 and down 4", "dilation centered at the origin with scale factor 2", "rotation 270° counterclockwise about the origin"],
+      "explanation": "Reflection, translation, and rotation are rigid motions and preserve all distances. A factor-2 dilation doubles every side, so a nondegenerate triangle and its image are similar but not congruent.",
+      "imageAlt": "Text-only transformation question; all four transformations are in accessible text."
+    },
+    "3": {
+      "prompt": "A rectangle is rotated continuously around one of its sides w. Which solid forms?",
+      "choices": ["pyramid", "rectangular prism", "cone", "cylinder"],
+      "explanation": "The side w is the rotation axis. The opposite side traces a circular surface, and the rectangle sweeps out a solid cylinder.",
+      "imageAlt": "A horizontal rectangle is pictured with its right vertical side labeled w as the rotation axis."
+    },
+    "4": {
+      "prompt": "For 0° < x < 90°, which expression is always equal to sin x?",
+      "choices": ["cos(90°−x)", "cos(45°−x)", "cos(2x)", "cos x"],
+      "explanation": "The sine and cosine cofunction identity states sin x = cos(90°−x), because the two acute angles in a right triangle are complementary.",
+      "imageAlt": "Text-only trigonometric-identity question; angle interval and all four expressions are in accessible text."
+    },
+    "5": {
+      "prompt": "A square has vertices (−1,−1), (5,−1), (5,5), and (−1,5). Reflection across which line does not carry it onto itself?",
+      "choices": ["x = 5", "y = 2", "y = x", "x+y = 4"],
+      "explanation": "The square is centered at (2,2). Its symmetry lines include y = 2 and both diagonals y = x and x+y = 4. The line x = 5 passes through its right edge, not its center, so reflecting over it moves the square elsewhere.",
+      "imageAlt": "Coordinate graph shows an axis-aligned square with corners (−1,−1), (5,−1), (5,5), and (−1,5), centered at (2,2). All candidate reflection lines are transcribed in the choices."
+    },
+    "6": {
+      "prompt": "Dilation centered at A maps triangle ABC to triangle ADE, with B on AD and C on AE. Which statement is always true?",
+      "choices": ["2AB = AD", "AD ⟂ DE", "AC = CE", "BC ∥ DE"],
+      "explanation": "Under a dilation, the image of segment BC is segment DE. A dilation preserves the direction of a line not through its center, so BC is parallel to DE. The other numerical and right-angle claims require extra information about the scale factor or shape.",
+      "imageAlt": "Large triangle A-D-E has A at top, D lower left, E lower right. Smaller triangle A-B-C shares A; B lies between A and D on the left side, and C lies between A and E on the right side. Segments BC and DE run across their respective triangles."
+    },
+    "7": {
+      "prompt": "Rectangle ABCD is reflected to A′B′C′D′ and then transformed to A″B″C″D″ as shown. What are the two transformation types in order?",
+      "choices": ["reflection, then rotation", "reflection, then translation", "translation, then rotation", "translation, then reflection"],
+      "explanation": "The original rectangle above the x-axis maps to an equally placed rectangle below it with top and bottom labels swapped, which is a reflection. The final rectangle is vertical and retains its side lengths but turns relative to A′B′C′D′, so the second move is a rotation.",
+      "imageAlt": "Coordinate graph shows horizontal ABCD in quadrant II, its same-size reflected A′B′C′D′ directly below the x-axis in quadrant III, and a vertical A″B″C″D″ in quadrant IV. Label order changes first as a mirror image, then by a quarter-turn."
+    },
+    "8": {
+      "prompt": "In parallelogram FRED, side ED is extended through D to A. Segment AF is drawn with AF ≅ DF. If angle R = 124°, what is angle AFD?",
+      "choices": ["124°", "112°", "68°", "56°"],
+      "explanation": "Opposite angle D of the parallelogram is 124°, so exterior angle ADF on the straight base is 180°−124° = 56°. In isosceles triangle AFD, AF = DF makes the base angles at A and D equal to 56°. The apex angle AFD is 180°−56°−56° = 68°.",
+      "imageAlt": "Parallelogram F-R-E-D has F upper left, R upper right, E lower right, D lower left. Its lower side E-D extends left through D to A, and A-F forms triangle A-F-D outside the parallelogram. AF equals DF, and angle R is 124°."
+    },
+    "9": {
+      "prompt": "What is the radius of the circle x²+4x+y²−6y−12 = 0?",
+      "choices": ["25", "16", "5", "4"],
+      "explanation": "Complete the squares: (x+2)²+(y−3)² = 12+4+9 = 25. The radius is √25 = 5.",
+      "imageAlt": "Text-only circle-equation question; full equation and all numerical choices are in accessible text."
+    },
+    "10": {
+      "prompt": "Segment MN has M(−6,1) and N(3,−5). Which line through P(6,1) is parallel to MN?",
+      "choices": ["y = −(2/3)x+5", "y = −(2/3)x−3", "y = (3/2)x+7", "y = (3/2)x−8"],
+      "explanation": "MN has slope (−5−1)/(3−(−6)) = −6/9 = −2/3. A parallel line has the same slope. Substituting P(6,1) into y = −(2/3)x+b gives 1 = −4+b, so b = 5.",
+      "imageAlt": "Coordinate graph shows M(−6,1) and N(3,−5) joined by a descending segment, and P(6,1) to the right. All coordinates and candidate equations are in accessible text."
+    },
+    "11": {
+      "prompt": "A square is to fit inside a circle of diameter 7 inches. What is the greatest possible side length, to the nearest tenth of an inch?",
+      "choices": ["3.5", "4.9", "5.0", "6.9"],
+      "explanation": "The largest inscribed square has its diagonal equal to the circle's diameter, 7. If its side is s, s√2 = 7, so s = 7/√2 ≈ 4.9497. To the nearest tenth this is 4.9 inches.",
+      "imageAlt": "Text-only inscribed-square question; circle diameter and all side-length options are in accessible text."
+    },
+    "12": {
+      "prompt": "A common tangent AC touches circle O at A and circle P at C. Centers O and P are joined by a line meeting AC at B. If OA = 4, AB = 5, and PC = 10, what is BC?",
+      "choices": ["6.4", "8", "12.5", "16"],
+      "explanation": "Radii to tangent points are perpendicular to AC, so right triangles OAB and PCB are similar by AA. Corresponding sides give OA/PC = AB/BC, or 4/10 = 5/BC. Thus BC = 12.5.",
+      "imageAlt": "Small circle O is left and large circle P right. A slanted common tangent touches the small circle at lower point A and large circle at upper point C, crossing horizontal center line O-B-P at B. OA is 4, tangent segment AB is 5, and radius PC is 10."
+    },
+    "13": {
+      "prompt": "Which single transformation maps triangle A in quadrant I onto congruent triangle B in quadrant II?",
+      "choices": ["line reflection", "rotation", "dilation", "translation"],
+      "explanation": "The two triangles have the same size but different orientation. A 90° counterclockwise rotation about the origin turns triangle A's horizontal side into triangle B's vertical side and maps all its vertices to B. Translation would keep side directions unchanged, and dilation would not make this turn.",
+      "imageAlt": "On a coordinate grid, triangle A is in quadrant I with a long horizontal upper side and short vertical left side. Congruent triangle B is in quadrant II with a long vertical left side and short horizontal lower side, positioned as a quarter-turn of A around the origin."
+    },
+    "14": {
+      "prompt": "Triangle DEF is formed from triangle ABC by a 180° rotation and dilation. AB = 3, BC = 5.5, AC = 4.5, DE = 6, EF = 11, FD = 9. Which angle relationship always holds?",
+      "choices": ["angle A / angle D = 1/2", "angle C / angle F = 2", "angle A / angle C = angle F / angle D", "angle B / angle E = angle C / angle F"],
+      "explanation": "Rotation and dilation preserve angle measures. The side pairs AB↔DE, BC↔EF, and AC↔DF show A↔D, B↔E, and C↔F. Hence angle B/angle E = 1 and angle C/angle F = 1, so the fourth equation must hold.",
+      "imageAlt": "Small triangle ABC points upward with AB 3, BC 5.5, AC 4.5. Larger rotated triangle DEF points downward with DE 6, EF 11, FD 9, twice the corresponding side lengths. Angle-ratio expressions are transcribed in the choices."
+    },
+    "15": {
+      "prompt": "Quadrilateral ABCD is inscribed in circle P. Angle A is 110° and angle B is 72°. What is angle ADC?",
+      "choices": ["70°", "72°", "108°", "110°"],
+      "explanation": "Opposite angles in a cyclic quadrilateral are supplementary. Angle D is opposite angle B, so angle ADC = 180°−72° = 108°.",
+      "imageAlt": "Circle centered P contains cyclic quadrilateral A-B-C-D with A upper left, B upper right, C bottom, and D left. Interior angle A is labeled 110° and interior angle B is 72°; angle ADC is the interior angle at D."
+    },
+    "16": {
+      "prompt": "A full hemispherical water tank has diameter 10 ft, and water weighs 62.4 lb per cubic foot. What is the total water weight to the nearest pound?",
+      "choices": ["16,336", "32,673", "130,690", "261,381"],
+      "explanation": "The radius is 5 ft. A hemisphere's volume is (2/3)πr³ = (2/3)π(125) ≈ 261.8 ft³. Multiplying by 62.4 lb/ft³ gives about 16,336 lb.",
+      "imageAlt": "Text-only hemisphere word problem; diameter, water density, and all weight options are in accessible text."
+    },
+    "17": {
+      "prompt": "Triangle ABC is similar to triangle ADE, with D on AB and E on AC. Which measurements are consistent with the similarity?",
+      "choices": ["AD=3, AB=6, AE=4, AC=12", "AD=5, AB=8, AE=7, AC=10", "AD=3, AB=9, AE=5, AC=10", "AD=2, AB=6, AE=5, AC=15"],
+      "explanation": "Corresponding side ratios must match: AD/AB = AE/AC. Only choice 4 has 2/6 = 5/15 = 1/3. The other pairs give unequal ratios.",
+      "imageAlt": "Large triangle ABC has A at top, B lower left, C lower right. D lies on AB and E on AC, with DE parallel to BC, forming smaller triangle ADE. All four sets of proposed side lengths are transcribed in the choices."
+    },
+    "18": {
+      "prompt": "Triangle FGH is inscribed in circle O. Radius OH = 6 and chord FH ≅ radius OG. What is the area of sector FOH?",
+      "choices": ["2π", "(3/2)π", "6π", "24π"],
+      "explanation": "OF, OH, and OG are all radii of length 6, and FH = OG = 6. Thus triangle FOH is equilateral, making central angle FOH = 60°. Its sector area is (60/360)π(6²) = 6π.",
+      "imageAlt": "Circle centered O has vertical diameter F-O-G, with F top and G bottom; H lies on the right arc. Radii OF, OH, OG are drawn, OH is labeled 6, and chord FH is marked equal to radius OG."
+    },
+    "19": {
+      "prompt": "Segments AB and CD intersect at E, and AC ∥ BD. Given triangle AEC similar to triangle BED, which proportion is true?",
+      "choices": ["CE/DE = EB/EA", "AE/BE = AC/BD", "EC/AE = BE/ED", "ED/EC = AC/BD"],
+      "explanation": "The similarity order AEC ~ BED gives A↔B, E↔E, C↔D. Therefore corresponding sides AE and BE have the same ratio as AC and BD: AE/BE = AC/BD.",
+      "imageAlt": "Upper triangle A-E-C and lower triangle B-E-D meet at crossing E. A and B lie on one straight diagonal, C and D on another, and top segment AC is parallel to lower segment BD. The four proportions are transcribed in accessible text."
+    },
+    "20": {
+      "prompt": "A triangle is dilated about the origin by factor 3. Which statement is true?",
+      "choices": ["The image area is nine times the original area.", "The image perimeter is nine times the original perimeter.", "Each image side slope is three times its original slope.", "Each image angle is three times its original angle."],
+      "explanation": "A scale factor of 3 multiplies lengths and perimeter by 3, but areas by 3² = 9. Slopes of corresponding sides and angle measures are preserved.",
+      "imageAlt": "Text-only dilation-properties question; scale factor and all four claims are in accessible text."
+    },
+    "21": {
+      "prompt": "A regular square pyramid has volume 2,592,276 m³ and height 146.5 m. What is one base-side length, to the nearest meter?",
+      "choices": ["73", "77", "133", "230"],
+      "explanation": "For square base side s, V = (1/3)s²h. Thus s = √(3V/h) = √(3·2,592,276/146.5) ≈ 230.4 m, which rounds to 230 m.",
+      "imageAlt": "Text-only square-pyramid volume problem; volume, height, and all side-length options are in accessible text."
+    },
+    "22": {
+      "prompt": "What type of quadrilateral has consecutive vertices (−3,1), (0,3), (5,2), and (−1,−2)?",
+      "choices": ["rhombus", "rectangle", "square", "trapezoid"],
+      "explanation": "The first side has slope (3−1)/(0−(−3)) = 2/3, and the opposite side from (5,2) to (−1,−2) has slope (−2−2)/(−1−5) = 2/3. The other two sides have slopes −1/5 and −3/2, so exactly one opposite pair is parallel: a trapezoid.",
+      "imageAlt": "Text-only coordinate-classification question; all four ordered vertices and shape choices are in accessible text."
+    },
+    "23": {
+      "prompt": "Dilation about origin maps triangle ACD to ABE, where A(0,0), B(3,0), C(4.5,0), D(0,6), E(0,4). What is BE/CD?",
+      "choices": ["2/3", "3/2", "3/4", "4/3"],
+      "explanation": "The image factor is AB/AC = 3/4.5 = 2/3, also AE/AD = 4/6 = 2/3. Corresponding segment BE is therefore 2/3 of CD.",
+      "imageAlt": "Coordinate graph shows large right triangle A-C-D with A origin, C(4.5,0) on x-axis, D(0,6) on y-axis. Smaller right triangle A-B-E has B(3,0), E(0,4), and its hypotenuse BE is parallel to CD."
+    },
+    "24": {
+      "prompt": "Line y = 3x−1 is dilated by factor 2 about (3,8). Which is its image?",
+      "choices": ["y = 3x−8", "y = 3x−4", "y = 3x−2", "y = 3x−1"],
+      "explanation": "The dilation center (3,8) lies on the line because 3·3−1 = 8. A dilation centered at a point on a line maps that line to itself, so its equation remains y = 3x−1.",
+      "imageAlt": "Text-only line-dilation question; original equation, scale factor, center, and all candidate equations are in accessible text."
+    }
+  }
+}

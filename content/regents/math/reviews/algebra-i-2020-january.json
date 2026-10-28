@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "211d94e91c8c05f092e523c309458495aa553d14b8c6fdd838b587e2d05a7c2d",
+  "questions": {
+    "1": {
+      "prompt": "If f(x)=2(3ˣ)+1, what is f(2)?",
+      "choices": ["13", "19", "37", "54"],
+      "explanation": "Evaluate the power first: 3²=9. Then f(2)=2(9)+1=19.",
+      "imageAlt": "The three is raised to x before multiplying by two; the function and all four numeric choices are transcribed."
+    },
+    "2": {
+      "prompt": "A badminton tournament starts with 64 players; half are eliminated after every round. Which equation gives players left after 3 rounds?",
+      "choices": ["y=64(1−0.5)³", "y=64(1+0.5)³", "y=64(1−0.3)^0.5", "y=64(1+0.3)^0.5"],
+      "explanation": "Half the players remain after each round, so the multiplier is 1−0.5=0.5. Apply it for three rounds: y=64(0.5)³=8.",
+      "imageAlt": "Start of 64 players, one-half eliminated each round, three rounds, and four exponential models preserve bases and exponents."
+    },
+    "3": {
+      "prompt": "Given 7x+2≥58, which number is not in the solution set?",
+      "choices": ["6", "8", "10", "12"],
+      "explanation": "Subtract 2 and divide by 7 to obtain x≥8. Of the choices, only 6 is below 8.",
+      "imageAlt": "Inequality seven x plus two greater than or equal to 58 and four candidate numbers are transcribed."
+    },
+    "4": {
+      "prompt": "Which table could represent a function?",
+      "choices": ["f pairs (1,4),(2,2),(3,4),(2,6)", "g pairs (1,2),(2,4),(3,6),(4,2)", "h pairs (2,6),(0,4),(1,6),(2,2)", "k pairs (2,2),(3,2),(4,6),(3,6)"],
+      "explanation": "A function gives each input one output. The g table has distinct inputs 1,2,3,4, whereas the other tables repeat an input with two different outputs.",
+      "imageAlt": "Every x-output pair in all four tables is transcribed, including repeated conflicting inputs in f, h, and k."
+    },
+    "5": {
+      "prompt": "Which x makes (x−3)/4+2/3=17/12 true?",
+      "choices": ["8", "6", "0", "4"],
+      "explanation": "Convert 2/3 to 8/12 and subtract: (x−3)/4=9/12=3/4. Thus x−3=3 and x=6.",
+      "imageAlt": "Three fractions retain denominators four, three, and twelve; x minus three is the full first numerator."
+    },
+    "6": {
+      "prompt": "Which expression is equivalent to 18x²−50?",
+      "choices": ["2(3x+5)²", "2(3x−5)²", "2(3x−5)(3x+5)", "2(3x−25)(3x+25)"],
+      "explanation": "Factor 2 first: 18x²−50=2(9x²−25). The parenthesis is a difference of squares, so it becomes 2(3x−5)(3x+5).",
+      "imageAlt": "Original quadratic and four factored products are transcribed with squares, signs, and outer coefficient two."
+    },
+    "7": {
+      "prompt": "f(x)=x²−6x+9 and g(x)=f(x)+k are graphed. Both open upward; f has vertex (3,0) and g has vertex (3,−2). What is k?",
+      "choices": ["0", "2", "−3", "−2"],
+      "explanation": "Adding k shifts the graph vertically without changing its x-coordinate. The vertex moves from y=0 to y=−2, a shift down 2, so k=−2.",
+      "imageAlt": "Two same-shape upward parabolas share axis x equals three; f vertex is at y zero and g vertex at y negative two."
+    },
+    "8": {
+      "prompt": "A shaded-block pattern has 12 blocks in figure 1, 16 in figure 2, and 20 in figure 3. Each figure extends both diagonals of an X pattern. How many shaded blocks will figure 35 have?",
+      "choices": ["55", "148", "420", "805"],
+      "explanation": "The number of shaded blocks grows by 4 each figure: 12,16,20,... . Figure 35 has 12+34·4=148 blocks.",
+      "imageAlt": "Figure one is a 6-by-6 grid with a shaded X of 12 cells; figure two an 8-by-8 grid with 16 shaded cells; figure three a 10-by-10 grid with 20 shaded cells."
+    },
+    "9": {
+      "prompt": "What are the zeros of f(x)=x³−9x²?",
+      "choices": ["9, only", "0 and 9", "0 and 3, only", "−3, 0, and 3"],
+      "explanation": "Factor x³−9x²=x²(x−9). It equals zero at x=0 or x=9.",
+      "imageAlt": "Cubic expression x cubed minus nine x squared and all four candidate zero sets are transcribed."
+    },
+    "10": {
+      "prompt": "Tablet-activity survey: boys, 138 playing games and 46 watching videos (184 total); girls, 54 playing games and 142 watching videos (196 total). Of the 192 students who played games more, about what percent were boys?",
+      "choices": ["41", "56", "72", "75"],
+      "explanation": "Of the 192 game-preferring students, 138 were boys. Compute 138/192×100=71.875%, about 72%.",
+      "imageAlt": "Full boys/girls by playing-games/watching-videos table and totals 192, 188, and 380 are transcribed in the prompt."
+    },
+    "11": {
+      "prompt": "Which statement best describes solutions of a two-variable equation?",
+      "choices": ["The ordered pairs must lie on the graphed equation.", "The ordered pairs must lie near the graphed equation.", "The ordered pairs must have x=0 for one coordinate.", "The ordered pairs must have y=0 for one coordinate."],
+      "explanation": "A solution pair makes the equation true, so its point is exactly on the equation's graph. It need not be an x- or y-intercept.",
+      "imageAlt": "Four statements about graph membership and zero coordinates are fully transcribed."
+    },
+    "12": {
+      "prompt": "Which product is equivalent to x²−10x+24?",
+      "choices": ["(x+12)(x−2)", "(x−12)(x+2)", "(x+6)(x+4)", "(x−6)(x−4)"],
+      "explanation": "The factors of +24 that add to −10 are −6 and −4. Therefore x²−10x+24=(x−6)(x−4).",
+      "imageAlt": "Original quadratic and all four signed binomial products are transcribed."
+    },
+    "13": {
+      "prompt": "f(x)=−x²−4x−4. The graph of g is an upward parabola with vertex (0,−4) and x-intercepts about −2 and 2. Which statement is true?",
+      "choices": ["The minimum of g is greater than the maximum of f.", "f and g have the same y-intercept.", "f and g have the same roots.", "f(−4)=g(−4)."],
+      "explanation": "The formula gives f(0)=−4. The g graph crosses the y-axis at its vertex (0,−4), so g(0)=−4 as well. Their y-intercepts match.",
+      "imageAlt": "The g parabola opens upward with vertex at (0,−4) and roots near −2 and 2; f formula is negative x squared minus four x minus four."
+    },
+    "14": {
+      "prompt": "V(t)=12,000(0.75)ᵗ models a motorcycle's value t years after purchase. Which statement is true?",
+      "choices": ["It cost $9000 when purchased.", "It cost $12,000 when purchased.", "Its value decreases 75% each year.", "Its value decreases 0.25% each year."],
+      "explanation": "At purchase t=0, so V(0)=12,000·(0.75)⁰=$12,000. The 0.75 factor means the value retains 75% and decreases 25% each year.",
+      "imageAlt": "Original price model twelve thousand times 0.75 to t and all four price or depreciation claims are transcribed."
+    },
+    "15": {
+      "prompt": "What are the solutions to (x+4)²−2=7?",
+      "choices": ["−4±√5", "4±√5", "−1 and −7", "1 and 7"],
+      "explanation": "Add 2: (x+4)²=9. Taking both square roots gives x+4=±3, so x=−1 or x=−7.",
+      "imageAlt": "Squared binomial x plus four, subtract two equals seven, and all four root choices preserve radical and plus-or-minus notation."
+    },
+    "16": {
+      "prompt": "Which expression is not equivalent to −4x³+x²−6x+8?",
+      "choices": ["x²(−4x+1)−2(3x−4)", "x(−4x²−x+6)+8", "−4x³+(x−2)(x−4)", "−4(x³−2)+x(x−6)"],
+      "explanation": "Expanding choice (2) gives −4x³−x²+6x+8, which changes the signs of the x² and x terms. The other choices expand to the stated polynomial.",
+      "imageAlt": "Original four-term cubic and all four alternative expressions are transcribed with complete parentheses, powers, and signs."
+    },
+    "17": {
+      "prompt": "Which situation could be modeled by a linear equation?",
+      "choices": ["A car's value decreases by 10% yearly.", "Fish in a lake double every 5 years.", "Two liters of water evaporate from a pool every day.", "The body's caffeine amount decreases by one-third every 2 hours."],
+      "explanation": "Losing a fixed 2 liters per day is a constant additive rate, so it can be modeled linearly. The other situations repeatedly multiply by a percentage or factor.",
+      "imageAlt": "All four rate-of-change scenarios preserve the exact percentages, doubling period, two-liter loss, and one-third caffeine decrease."
+    },
+    "18": {
+      "prompt": "What is the range of f(x)=|x+3|−5?",
+      "choices": ["[−5,∞)", "(−5,∞)", "[3,∞)", "(3,∞)"],
+      "explanation": "The absolute-value term is never negative and equals 0 at x=−3. The minimum output is therefore −5, included in the range [−5,∞).",
+      "imageAlt": "Absolute-value expression x plus three then minus five and four interval choices preserve open and closed endpoints."
+    },
+    "19": {
+      "prompt": "A laboratory model is t(m)=2·3²ᵐ⁺¹. Compare I. 6·3²ᵐ; II. 6·6²ᵐ; III. 6·9ᵐ. Which are equivalent to t(m)?",
+      "choices": ["I, only", "II, only", "I and III", "II and III"],
+      "explanation": "Split the exponent: 2·3^(2m+1)=2·3·3^(2m)=6·3^(2m). Also 3^(2m)=(3²)^m=9^m. Thus I and III are equivalent, but II changes the base to 6.",
+      "imageAlt": "Original exponent is the entire sum two m plus one; three Roman-numeral alternatives preserve bases three, six, nine and exponents."
+    },
+    "20": {
+      "prompt": "Which system has the same solutions as 3x−y=7 and 2x+3y=12?",
+      "choices": ["6x−2y=14; −6x+9y=36", "18x−6y=42; 4x+6y=24", "−9x−3y=−21; 2x+3y=12", "3x−y=7; x+y=2"],
+      "explanation": "Choice (2) multiplies the first equation by 6 and the second by 2. Multiplying each whole equation by a nonzero constant preserves exactly the same solutions.",
+      "imageAlt": "Both original equations and all four candidate equation pairs are transcribed with signs and constants."
+    },
+    "21": {
+      "prompt": "A paramecium population is P(t)=3·2ᵗ, with t days since first observed. Which domain covers the first two weeks?",
+      "choices": ["t≥0", "t≤2", "0≤t≤2", "0≤t≤14"],
+      "explanation": "Two weeks are 14 days. Time starts at observation, t=0, and runs through day 14, so the bounded domain is 0≤t≤14.",
+      "imageAlt": "Population model three times two to the t, day-count variable, two-week interval, and four possible time domains are transcribed."
+    },
+    "22": {
+      "prompt": "Data: 65,70,70,70,70,80,80,80,85,90,90,95,95,95,100. Display I is a dot plot with frequencies 65:1,70:4,80:3,85:1,90:2,95:3,100:1. Display II is a box plot with min 65,Q1 70,median 80,Q3 95,max 100. Display III is a histogram with intervals 61–71:5,71–81:3,81–91:3,91–101:4. Which displays are correct?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "Display I's dots match every repeated value. The sorted 15 values give median 80, Q1 70, Q3 95, min 65, max 100, matching II. Grouping by III's intervals gives counts 5,3,3,4, so all three are correct.",
+      "imageAlt": "Full fifteen-value set, dot-plot counts, box-plot five-number summary, and histogram interval frequencies are transcribed in the prompt."
+    },
+    "23": {
+      "prompt": "A sequence has a₁=5 and aₙ₊₁=2aₙ−7. What is a₄?",
+      "choices": ["−9", "−1", "8", "15"],
+      "explanation": "Apply the recurrence: a₂=2(5)−7=3, a₃=2(3)−7=−1, and a₄=2(−1)−7=−9.",
+      "imageAlt": "First term five and recurrence twice the previous term minus seven, with four signed candidates, are transcribed."
+    },
+    "24": {
+      "prompt": "Which polynomial has leading coefficient 4 and degree 3?",
+      "choices": ["3x⁴−2x²+4x−7", "4+x−4x²+5x³", "4x⁴−3x³+2x²", "2x+x²+4x³"],
+      "explanation": "Choice (4) has highest-degree term 4x³, so its degree is 3 and its leading coefficient is 4. The other choices have either degree 4 or leading coefficient 5.",
+      "imageAlt": "All four polynomial choices preserve each term's coefficient, exponent, and sign."
+    }
+  }
+}

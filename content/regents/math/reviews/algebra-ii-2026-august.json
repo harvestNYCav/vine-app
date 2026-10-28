@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "441ce9b24720db4443b7e890af13db166dc974e8ddbecbf08f2516c7a895a23d",
+  "questions": {
+    "1": {
+      "prompt": "The expression (2/3)√(−108) is equivalent to which expression?",
+      "choices": ["−24√3", "−4√3", "4i√3", "24i√3"],
+      "explanation": "Since √(−108) = i√108 = 6i√3, multiplying by 2/3 gives (2/3)(6i√3) = 4i√3.",
+      "imageAlt": "The printed expression is two-thirds times the square root of negative 108. The answer choices are available as accessible text below the image."
+    },
+    "2": {
+      "prompt": "Which statement is true about the graph of y = √(9 − 2x)?",
+      "choices": ["The x-intercept is (4, 0).", "The y-intercept is (0, 3).", "It is always increasing.", "The y-values are always negative."],
+      "explanation": "At x = 0, y = √9 = 3, so the y-intercept is (0, 3). The x-intercept is (4.5, 0), and a square root cannot be negative here.",
+      "imageAlt": "A text-only graph-properties question about y equal to the square root of the entire quantity 9 minus 2x."
+    },
+    "3": {
+      "prompt": "An exponential function that contains the points (0, 20) and (1, 10) is which function?",
+      "choices": ["f(x) = 10(2)^x", "f(x) = 10(0.5)^x", "f(x) = 20(0.5)^x", "f(x) = 20(2)^x"],
+      "explanation": "In f(x) = ab^x, the value at x = 0 is a = 20. The factor from x = 0 to x = 1 is 10/20 = 0.5, so b = 0.5 and f(x) = 20(0.5)^x.",
+      "imageAlt": "The printed question gives the exponential-function points (0, 20) and (1, 10), with four equations as choices."
+    },
+    "4": {
+      "prompt": "If A and B are two events such that P(A and B) = 0.2, P(A) = 0.3, and P(B) = 0.4, what is P(A or B)?",
+      "choices": ["0.9", "0.7", "0.5", "0.1"],
+      "explanation": "The addition rule avoids counting the overlap twice: P(A or B) = P(A) + P(B) − P(A and B) = 0.3 + 0.4 − 0.2 = 0.5.",
+      "imageAlt": "A text-only probability question gives intersection probability 0.2 and individual probabilities 0.3 and 0.4."
+    },
+    "5": {
+      "prompt": "Which value of x is in the solution set of f(x) < g(x) if f(x) = ∛x and g(x) = x³ − 4x?",
+      "choices": ["1", "2", "0", "−1"],
+      "explanation": "Test the listed values in the strict inequality. At x = −1, f(−1) = −1 while g(−1) = (−1)³ − 4(−1) = 3, and −1 < 3. At x = 0 the functions are equal; at x = 1 or 2, f(x) is greater than g(x).",
+      "imageAlt": "The functions are the cube root of x and x cubed minus 4x; the inequality is strict, f(x) less than g(x)."
+    },
+    "6": {
+      "prompt": "Consider the recursive formula a₁ = 200 and aₙ = (0.8)aₙ₋₁. What is a₄?",
+      "choices": ["202.4", "159", "102.4", "81.92"],
+      "explanation": "Each term is 0.8 times the preceding term. Starting at a₁ = 200 gives a₂ = 160, a₃ = 128, and a₄ = 102.4. Equivalently, a₄ = 200(0.8)³.",
+      "imageAlt": "The printed recursive formula begins with a subscript 1 equal to 200 and multiplies each preceding term by 0.8."
+    },
+    "7": {
+      "prompt": "Antonella is solving (x − 4)² + (y + 1)² = 25 and y = −x + 4. Her work is: Step 1, (x − 4)² + (−x + 4 + 1)² = 25; Step 2, (x − 4)² + (−x + 5)² = 25; Step 3, x² − 8x + 16 − x² − 10x + 25 = 25. Which statement best describes her work?",
+      "choices": ["In step 1, she substituted incorrectly.", "In step 2, she added incorrectly.", "In step 3, she multiplied incorrectly.", "Her work is correct."],
+      "explanation": "The substitution in step 1 and the simplification in step 2 are valid. But (−x + 5)² expands to x² − 10x + 25, not −x² − 10x + 25. The sign on x² is the step-3 error.",
+      "imageAlt": "A two-equation system and three printed algebra steps are fully transcribed in the accessible prompt. The student must determine which step, if any, contains an error."
+    },
+    "8": {
+      "prompt": "Given a > 0 and b > 0, simplify √(a⁶b⁵) / ∛(a⁵b³).",
+      "choices": ["a^(4/3)b^(3/2)", "a^(−4/15)b^(−3/5)", "(ab)^(17/6)", "a^(1/3)b^(2/3)"],
+      "explanation": "For positive a and b, the numerator is a³b^(5/2) and the denominator is a^(5/3)b. Subtract exponents when dividing: 3 − 5/3 = 4/3 and 5/2 − 1 = 3/2. The result is a^(4/3)b^(3/2).",
+      "imageAlt": "A fraction has the square root of a to the sixth times b to the fifth in its numerator, and the cube root of a to the fifth times b cubed in its denominator. Both variables are positive."
+    },
+    "9": {
+      "prompt": "Which statement is true for the graph of y = −x³ − 2x² + 11x + 12?",
+      "choices": ["As x → ∞, y → −∞.", "−3 is a zero.", "It always increases on the interval (−1, 3).", "y > 0 on the interval (−4, −1)."],
+      "explanation": "The leading term is −x³, which dominates for large positive x, so y decreases without bound as x approaches positive infinity. Substituting x = −3 gives −12 rather than zero; the other interval claims also do not hold throughout their intervals.",
+      "imageAlt": "A cubic polynomial has leading term negative x cubed, followed by negative 2x squared, plus 11x plus 12. The answer choices describe end behavior, a possible zero, and intervals."
+    },
+    "10": {
+      "prompt": "What is the solution set of 4x^(3/2) − 2 = 30?",
+      "choices": ["{16√2}", "{−4, 4}", "{16/3}", "{4}"],
+      "explanation": "Add 2 and divide by 4 to obtain x^(3/2) = 8. For real x in this expression, x ≥ 0. Raising both sides to the 2/3 power gives x = 8^(2/3) = 4, and 4·4^(3/2) − 2 = 30.",
+      "imageAlt": "The equation is 4 times x raised to the three-halves power, minus 2, equals 30. The four proposed solution sets are transcribed below."
+    },
+    "11": {
+      "prompt": "What is the value of 2tan(5π/3)?",
+      "choices": ["−2/√3", "2/√3", "−2√3", "2√3"],
+      "explanation": "The angle 5π/3 is 300°, where tangent is −√3. Multiplying by 2 gives 2tan(5π/3) = −2√3.",
+      "imageAlt": "A trigonometry question asks for twice the tangent of five pi over three radians."
+    },
+    "12": {
+      "prompt": "Mark purchased a new car for $26,700. It depreciates 12% per year. Which equation models its value V(t), t years after purchase?",
+      "choices": ["V(t) = 26,700(1.12)^(t − 1)", "V(t) = 26,700(1.12)^t", "V(t) = 26,700(0.88)^(t − 1)", "V(t) = 26,700(0.88)^t"],
+      "explanation": "A 12% annual decrease leaves 1 − 0.12 = 0.88 of the previous value each year. At t = 0, the value should be the purchase price, so the exponent is t, not t − 1. Thus V(t) = 26,700(0.88)^t.",
+      "imageAlt": "A new car costs 26,700 dollars and loses 12 percent of its value yearly. The four models use either growth or decay factors and exponents t or t minus 1."
+    },
+    "13": {
+      "prompt": "A survey of 250 students cross-tabulates favorite subject and pets at home. In the 'Do Not Have Pets at Home' row, 52 prefer Math, 49 Science, 28 English, and 15 Social Studies (row total 144). In the 'Have Pets at Home' row, the counts are 27, 35, 14, and 30 (row total 106). What is the probability, rounded to the nearest thousandth, that a randomly chosen student prefers Math and does not have pets at home?",
+      "choices": ["0.208", "0.316", "0.658", "0.892"],
+      "explanation": "The intersection of 'Math' and 'Do Not Have Pets at Home' contains 52 students. Out of all 250 surveyed students, the probability is 52/250 = 0.208, already to the nearest thousandth.",
+      "imageAlt": "The two-way table has columns Math, Science, English, Social Studies, and Total. Have-pets row: 27, 35, 14, 30, total 106. No-pets row: 52, 49, 28, 15, total 144. Column totals: 79, 84, 42, 45; grand total 250."
+    },
+    "14": {
+      "prompt": "For the polynomial p(x), it is determined that p(5) = 0. Which conclusion about p(x) must be true?",
+      "choices": ["x − 5 is a factor of p(x).", "x + 5 is a factor of p(x).", "When p(x) is divided by 5 the remainder is 0.", "x = −5 is a zero of p(x)."],
+      "explanation": "The factor theorem says p(c) = 0 exactly when x − c is a factor of p(x). Since p(5) = 0, x − 5 must be a factor. Nothing given requires −5 to be a zero.",
+      "imageAlt": "A text-only factor-theorem question states that p of 5 equals zero."
+    },
+    "15": {
+      "prompt": "Given sin(θ) = 21/29 and θ is an angle in standard position terminating in Quadrant II, what is tan(θ)?",
+      "choices": ["21/20", "−21/20", "−20/29", "29/21"],
+      "explanation": "Use a reference triangle with opposite side 21 and hypotenuse 29. The adjacent side has magnitude √(29² − 21²) = 20. In Quadrant II, cosine and the adjacent x-coordinate are negative, so tan(θ) = opposite/adjacent = −21/20.",
+      "imageAlt": "The sine ratio is positive 21 over 29 and the terminal side is in Quadrant II. The four choices are signed fractions."
+    },
+    "16": {
+      "prompt": "What is the solution set of 6/k + (k + 2)/(k + 3) = 2/(k² + 3k)?",
+      "choices": ["{−3, 0}", "{−4}", "{−4, 4}", "{4}"],
+      "explanation": "The denominators exclude k = 0 and k = −3. Multiply by k(k + 3): 6(k + 3) + k(k + 2) = 2. This simplifies to k² + 8k + 16 = 0, or (k + 4)² = 0. Thus the only allowed solution is k = −4.",
+      "imageAlt": "The rational equation has denominators k, k plus 3, and k squared plus 3k. The proposed solution sets are available below."
+    },
+    "17": {
+      "prompt": "The weights of 500 ketchup packets are approximately normally distributed with a mean of 0.95 ounces and a standard deviation of 0.04 ounces. Approximately how many weigh between 0.91 and 0.99 ounces?",
+      "choices": ["68", "79", "341", "475"],
+      "explanation": "Both endpoints are one standard deviation from the mean: 0.91 = 0.95 − 0.04 and 0.99 = 0.95 + 0.04. About 68.3% of a normal distribution lies within one standard deviation, so 0.683 × 500 ≈ 341 packets.",
+      "imageAlt": "A normal-distribution word problem has 500 packets, mean 0.95 ounce, standard deviation 0.04 ounce, and asks for the count between 0.91 and 0.99 ounce."
+    },
+    "18": {
+      "prompt": "A counselor surveys 50 randomly chosen juniors from the 503 juniors at her school. Of those surveyed, 38% say they plan to attend a SUNY school. What is the parameter of interest?",
+      "choices": ["the mean number of juniors who plan to attend a SUNY school", "the 38 students who responded yes to the survey", "the proportion of students who are not planning to attend a SUNY school", "the proportion of all juniors from this high school who plan to attend a SUNY school"],
+      "explanation": "A parameter describes the full population, not the sample of 50. The counselor wants to estimate the proportion among all 503 juniors who plan to attend a SUNY school. The sample's 38% is a statistic used to estimate that parameter.",
+      "imageAlt": "A sampling question distinguishes all 503 juniors at one school from a random sample of 50, of whom 38 percent plan to attend a SUNY school."
+    },
+    "19": {
+      "prompt": "Pickleball participation grew by 59% over three years from 2020 to 2023. The model is P(t) = 5.6(1.59)^(t/3), with P(t) in millions and t in years since 2020. Which equivalent model uses a yearly growth factor?",
+      "choices": ["P(t) = 5.6(1.167)^t", "P(t) = 5.6(1.167)^(3t)", "P(t) = 5.6(4.019)^t", "P(t) = 5.6(4.019)^(3t)"],
+      "explanation": "Rewrite (1.59)^(t/3) as [(1.59)^(1/3)]^t. The cube root of 1.59 is about 1.167, so the yearly multiplier is 1.167 and P(t) ≈ 5.6(1.167)^t.",
+      "imageAlt": "The original model is 5.6 times 1.59 raised to the t-over-three power. The choices replace it with bases 1.167 or 4.019 and exponents t or 3t."
+    },
+    "20": {
+      "prompt": "What are the solutions to (x² + 7)/2 = −x?",
+      "choices": ["−1 ± i√6", "−2 ± i√6", "−1 ± 2i√6", "−1 ± i√3"],
+      "explanation": "Multiply by 2 and rearrange to get x² + 2x + 7 = 0. The quadratic formula gives x = [−2 ± √(4 − 28)]/2 = [−2 ± 2i√6]/2 = −1 ± i√6.",
+      "imageAlt": "The equation has a fraction with numerator x squared plus 7 and denominator 2, equal to negative x. The choices are pairs of complex solutions."
+    },
+    "21": {
+      "prompt": "What is the completely factored form of x⁶ − 63x³ − 64?",
+      "choices": ["(x − 64)(x + 1)", "(x³ − 64)(x³ + 1)", "(x + 8)(x − 8)(x + 1)(x − 1)", "(x − 4)(x² + 4x + 16)(x + 1)(x² − x + 1)"],
+      "explanation": "Treat x³ as one variable: (x³ − 64)(x³ + 1) expands to x⁶ − 63x³ − 64. This is not fully factored because 64 = 4³ and 1 = 1³. Apply difference and sum of cubes to obtain (x − 4)(x² + 4x + 16)(x + 1)(x² − x + 1).",
+      "imageAlt": "A factoring question starts with x to the sixth minus 63x cubed minus 64. Four candidate products are printed below."
+    },
+    "22": {
+      "prompt": "Which function is odd?",
+      "choices": ["y = sin(2x)", "y = sin(x) + 2", "y = cos(−x)", "y = cos(x)"],
+      "explanation": "Sine is odd: sin(−u) = −sin(u). Therefore sin(2(−x)) = −sin(2x). A vertical shift breaks this symmetry, while cosine is even, including cos(−x).",
+      "imageAlt": "A text-only odd-function question compares sine and cosine functions, including a vertical shift and a negative input."
+    },
+    "23": {
+      "prompt": "What is the inverse of f(x) = 2^(x + 1)?",
+      "choices": ["f⁻¹(x) = log₂(x − 1)", "f⁻¹(x) = log₂(x) − 1", "f⁻¹(x) = −2^(x + 1)", "f⁻¹(x) = −2^(−x + 1)"],
+      "explanation": "Write y = 2^(x + 1), swap x and y, and solve x = 2^(y + 1). Taking base-2 logarithms gives log₂(x) = y + 1, so y = log₂(x) − 1. The inverse has domain x > 0.",
+      "imageAlt": "The function is two raised to the entire exponent x plus 1. The choices include two logarithmic expressions and two negative exponential expressions."
+    },
+    "24": {
+      "prompt": "Given a > 0 and b > 0, which function's graph has a period of 4b and a maximum of 2a?",
+      "choices": ["y = (3a/2)cos(4bx) + a/2", "y = −(3a/2)cos((π/(2b))x) + a/2", "y = a cos(4bx) + a", "y = cos((π/(2b))x) + 2a"],
+      "explanation": "A cosine function with angular coefficient π/(2b) has period 2π divided by π/(2b), which is 4b. In choice 2, the amplitude is 3a/2 and the vertical shift is a/2, giving maximum 3a/2 + a/2 = 2a. The negative sign reflects the cosine but does not change its maximum.",
+      "imageAlt": "A trigonometric-model question asks for period four times b and maximum twice a, with a and b positive. The four printed functions include cosine coefficients 4b or pi over 2b, amplitudes involving a, and vertical shifts."
+    }
+  }
+}

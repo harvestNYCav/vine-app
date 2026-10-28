@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "6ee6f91b1ba4c9bed8591248f451ee0055ac8055eb73b774322afe6dcfa527df",
+  "questions": {
+    "1": {
+      "prompt": "Right triangle RST has right angle S. What solid forms when it is rotated around leg RS?",
+      "choices": ["square-based pyramid", "isosceles triangle", "right triangle", "cone"],
+      "explanation": "Rotating the right triangle about leg RS makes that leg the axis and sweeps the other leg ST into a circular base. The slanted hypotenuse sweeps the cone's lateral surface.",
+      "imageAlt": "Right triangle has R directly above S and T to the right of S, with right angle at S. The vertical leg RS is the specified axis of rotation."
+    },
+    "2": {
+      "prompt": "Triangle JKL has J(5,1), K(−2,−3), and L(−4,1). Which transformation does not make a congruent image?",
+      "choices": ["translate 2 right and 2 down", "rotate 180° counterclockwise about the origin", "reflect across the x-axis", "dilate by factor 2 about the origin"],
+      "explanation": "Translations, rotations, and reflections preserve all side lengths. A dilation by factor 2 doubles each length, so the image is not congruent to the original triangle.",
+      "imageAlt": "Text-only coordinate-transformation question; all vertices and transformation options are in accessible text."
+    },
+    "3": {
+      "prompt": "Circle Q has center (3,−2) and passes through R(7,1). What is its diameter?",
+      "choices": ["50", "25", "10", "5"],
+      "explanation": "The radius is the center-to-R distance √[(7−3)²+(1−(−2))²] = √(4²+3²) = 5. The diameter is twice the radius, 10.",
+      "imageAlt": "Text-only circle-distance question; center, point on circle, and all diameter options are in accessible text."
+    },
+    "4": {
+      "prompt": "Congruent hexagon 1 maps to congruent hexagon 2, then to hexagon 3. Which transformations occur in order?",
+      "choices": ["reflection, then translation", "rotation, then translation", "translation, then reflection", "translation, then rotation"],
+      "explanation": "Hexagons 1 and 2 have identical orientation and label order, so sliding 1 right and up maps it to 2: a translation. Hexagon 3 has the same size but has turned sideways with labels following the turn, so mapping 2 to 3 is a rotation.",
+      "imageAlt": "On axes, upright hexagon 1 is in quadrant II with A at top and D at bottom. Upright hexagon 2 is in quadrant I with the same label arrangement. Sideways hexagon 3 is in quadrant IV, with A″ at the right and D″ at the left; it is a quarter-turn of figure 2."
+    },
+    "5": {
+      "prompt": "From a point on level ground 20 ft from a tree's base, the angle of elevation to its top is 34°. What is the tree's height to the nearest tenth of a foot?",
+      "choices": ["29.7", "16.6", "13.5", "11.2"],
+      "explanation": "The tree height is opposite the 34° angle and the 20-ft ground distance is adjacent. Thus height = 20 tan 34° ≈ 13.49 ft, which rounds to 13.5 ft.",
+      "imageAlt": "Diagram forms a right triangle: horizontal ground runs 20 ft from an observer to the tree base, vertical tree is the unknown height, and dashed line of sight to its top makes 34° with the ground."
+    },
+    "6": {
+      "prompt": "Which pictured solid can have the same type of planar cross section as a sphere?",
+      "choices": ["rectangular prism", "cone", "square pyramid", "triangular prism"],
+      "explanation": "A sphere's nondegenerate plane cross sections are circles. A cone can also have a circular cross section when cut by a plane parallel to its circular base. The other listed solids have flat polygonal faces and polygonal sections.",
+      "imageAlt": "The image-only options show choice 1 a rectangular prism, choice 2 a right circular cone, choice 3 a square pyramid, and choice 4 a triangular prism. These solids are named in the accessible choices."
+    },
+    "7": {
+      "prompt": "A full rectangular shipping container measures 12 ft by 8.5 ft by 4 ft. Its contents weigh 0.25 lb per cubic foot. What is the contents' weight?",
+      "choices": ["1,632 lb", "408 lb", "102 lb", "92 lb"],
+      "explanation": "The container volume is 12·8.5·4 = 408 ft³. At 0.25 lb per cubic foot, its contents weigh 408·0.25 = 102 lb.",
+      "imageAlt": "Text-only prism and density problem; dimensions, weight rate, and all weight choices are in accessible text."
+    },
+    "8": {
+      "prompt": "In circle A, chords CD and EF cross at G, and chords CE and FD are drawn. Which statement is not always true?",
+      "choices": ["CG ≅ FG", "angle CEG ≅ angle FDG", "CE/EG = FD/DG", "triangle CEG ~ triangle FDG"],
+      "explanation": "Angles CEG and FDG subtend the same arc CF, and angles CGE and FGD are vertical, so triangles CEG and FDG are similar. Their corresponding sides yield CE/EG = FD/DG. Nothing in the diagram forces the intersecting-chord pieces CG and FG to be equal.",
+      "imageAlt": "Circle centered A has C upper left, F top, D right, E lower left. Chord C-G-D and chord E-G-F cross at interior point G; chords C-E and F-D complete two triangles, C-E-G and F-D-G. No equal-length marks appear."
+    },
+    "9": {
+      "prompt": "Which line is perpendicular to 2x−y = 7?",
+      "choices": ["y = −(1/2)x+6", "y = (1/2)x+6", "y = −2x+6", "y = 2x+6"],
+      "explanation": "Rewrite the given line as y = 2x−7, so its slope is 2. A perpendicular line has negative-reciprocal slope −1/2, which only the first choice has.",
+      "imageAlt": "Text-only perpendicular-slope question; given line and all candidate equations are in accessible text."
+    },
+    "10": {
+      "prompt": "Which regular polygon has smallest nonzero rotational symmetry angle 45°?",
+      "choices": ["octagon", "decagon", "hexagon", "pentagon"],
+      "explanation": "A regular n-gon maps onto itself after a minimum rotation of 360°/n. Setting 360°/n = 45° gives n = 8, an octagon.",
+      "imageAlt": "Text-only rotational-symmetry question; angle and all polygon names are in accessible text."
+    },
+    "11": {
+      "prompt": "In triangle ADC, E lies on AD and B on AC with EB ∥ DC. If AE = 9, ED = 5, and AB = 9.2, what is AC to the nearest tenth?",
+      "choices": ["5.1", "5.2", "14.3", "14.4"],
+      "explanation": "Since EB ∥ DC, triangles AEB and ADC are similar. AD = 9+5 = 14, so AB/AC = AE/AD = 9/14. Thus AC = 9.2·14/9 ≈ 14.311, or 14.3.",
+      "imageAlt": "Large triangle A-D-C has A top, D lower left, C lower right. E lies on AD with AE 9 and ED 5, B lies on AC with AB 9.2, and segment EB is parallel to base DC."
+    },
+    "12": {
+      "prompt": "In scalene right triangle ABC, angle C is 90°. Which equation always holds?",
+      "choices": ["sin A = sin B", "cos A = cos B", "cos A = sin C", "sin A = cos B"],
+      "explanation": "The two acute angles A and B are complementary, so sin A = cos(90°−A) = cos B. The scalene condition rules out relying on A = B.",
+      "imageAlt": "Right triangle has C lower left, A directly above C, B to the right of C. The right angle is at C; no side lengths are shown."
+    },
+    "13": {
+      "prompt": "Quadrilateral ABCD has diagonals AC and BD. Which condition is not sufficient to prove it a parallelogram?",
+      "choices": ["AC and BD bisect each other", "AB ≅ CD and BC ≅ AD", "AB ≅ CD and AB ∥ CD", "AB ≅ CD and BC ∥ AD"],
+      "explanation": "Diagonals bisecting each other, both opposite side pairs congruent, or one opposite pair both congruent and parallel each prove a parallelogram. In choice 4, the congruent side pair AB and CD differs from the parallel side pair BC and AD; an isosceles trapezoid can satisfy both without being a parallelogram.",
+      "imageAlt": "Text-only quadrilateral-properties question; all segment and parallel/congruence conditions are in accessible text."
+    },
+    "14": {
+      "prompt": "For circle x²+y²+6y = 7, what are its center and radius?",
+      "choices": ["center (0,3), radius 4", "center (0,−3), radius 4", "center (0,3), radius 16", "center (0,−3), radius 16"],
+      "explanation": "Complete the square in y: x²+(y+3)² = 7+9 = 16. The center is (0,−3) and the radius is √16 = 4.",
+      "imageAlt": "Text-only circle-equation question; full equation and every center-radius choice are in accessible text."
+    },
+    "15": {
+      "prompt": "Triangles ABC and DEF have AB = 9, BC = 15, DE = 6, EF = 10, and angle B ≅ angle E. Which statement follows?",
+      "choices": ["angle CAB ≅ angle DEF", "AB/CB = FE/DE", "triangle ABC ~ triangle DEF", "AB/DE = FE/CB"],
+      "explanation": "The two sides adjacent to angle B have ratios AB/DE = 9/6 = 3/2 and BC/EF = 15/10 = 3/2. Their included angles B and E are congruent, so SAS similarity proves triangle ABC ~ triangle DEF, with A↔D, B↔E, and C↔F.",
+      "imageAlt": "Large triangle ABC has A lower left, B lower right, C top; smaller triangle DEF has D lower right, E top, F lower left. The given corresponding side lengths are AB 9, BC 15, DE 6, EF 10, and the included angles B and E are equal."
+    },
+    "16": {
+      "prompt": "Triangle ABC is dilated by factor 3 to A′B′C′. Which statement is true?",
+      "choices": ["3A′B′ = AB", "B′C′ = 3BC", "angle A′ = 3·angle A", "3·angle C′ = angle C"],
+      "explanation": "Dilation multiplies side lengths by its scale factor but leaves angles unchanged. Therefore the image side B′C′ has length 3BC.",
+      "imageAlt": "Text-only dilation question; factor and all length/angle relations are in accessible text."
+    },
+    "17": {
+      "prompt": "Points A-B-C-D lie on one line, E-F-G on another, and BF and CF form scalene triangle BFC. Which additional equality proves line ABCD ∥ line EFG?",
+      "choices": ["angle CFG ≅ angle FCB", "angle ABF ≅ angle BFC", "angle EFB ≅ angle CFB", "angle CBF ≅ angle GFC"],
+      "explanation": "Angles CFG and FCB are alternate interior angles formed by transversal CF with the lower line FG and upper line CB. If those angles are congruent, the converse of the alternate-interior-angle theorem proves the two lines parallel.",
+      "imageAlt": "Upper horizontal line has A-B-C-D left to right; lower horizontal line has E-F-G left to right. Slanted segments BF and CF meet at F below B and C, forming triangle BFC. Choice 1 compares the angle between FC and FG at F with the angle between CF and CB at C."
+    },
+    "18": {
+      "prompt": "Segment CD is the image of AB under a dilation of scale factor k centered at E, with A corresponding to C. Which ratio equals k?",
+      "choices": ["EC/EA", "BA/EA", "EA/BA", "EA/EC"],
+      "explanation": "A dilation centered at E scales every center-to-point distance by k. Since A maps to C, EC = k·EA and k = EC/EA.",
+      "imageAlt": "Coordinate graph places center E above-left of image segment CD, which is shorter and nearer E than original segment AB. Points E-C-A lie on one ray in that order, and E-D-B on another; A maps to C and B maps to D."
+    },
+    "19": {
+      "prompt": "A gallon of paint covers about 450 ft². How many gallons must be bought to paint all outer faces of a cube with side 12 ft?",
+      "choices": ["1", "2", "3", "4"],
+      "explanation": "The cube's surface area is 6·12² = 864 ft². One gallon covers 450 ft², so 864/450 ≈ 1.92 gallons are needed. Whole gallons must be purchased, so buy 2.",
+      "imageAlt": "Text-only cube surface-area problem; edge length, coverage rate, and gallon choices are in accessible text."
+    },
+    "20": {
+      "prompt": "In circle O, AC is a diameter and CD is tangent at C, perpendicular to AC. Chords AB, BC, AE, CE are drawn. Which angle equality is not always true?",
+      "choices": ["angle ACB ≅ angle BCD", "angle ABC ≅ angle ACD", "angle BAC ≅ angle DCB", "angle CBA ≅ angle AEC"],
+      "explanation": "By the tangent-chord theorem, angle BCD equals inscribed angle BAC because both intercept arc BC; it need not equal angle ACB, which intercepts arc AB. The other choices follow from the diameter and the tangent's perpendicularity or from two inscribed angles intercepting diameter AC.",
+      "imageAlt": "Circle O has diameter A-O-C slanting from upper-left A to lower-right C. B is on the upper-right arc and E on the left arc. Chords AB, BC, AE, CE are drawn. Tangent CD begins at C and goes upward-right, perpendicular to diameter AC."
+    },
+    "21": {
+      "prompt": "Triangles ABC and DEC are similar in that order. If AC = 12, DC = 7, DE = 5, and perimeter of ABC is 30, what is perimeter of DEC?",
+      "choices": ["12.5", "14.0", "14.8", "17.5"],
+      "explanation": "The similarity order gives AC corresponding to DC. The smaller-to-larger scale factor is DC/AC = 7/12, and perimeters scale by the same factor. Thus perimeter DEC = 30·7/12 = 17.5.",
+      "imageAlt": "Large triangle ABC lies left of C with A high, B lower left, C lower middle. Smaller triangle DEC lies right of C with D high, E lower right. A↔D, B↔E, and C↔C are the given corresponding vertices."
+    },
+    "22": {
+      "prompt": "Line 3y = −2x+8 is dilated about the origin. Which equation could be its image?",
+      "choices": ["2x+3y = 5", "2x−3y = 5", "3x+2y = 5", "3x−2y = 5"],
+      "explanation": "The original line is 2x+3y = 8, with slope −2/3. A dilation about the origin preserves slope, so an image line has the form 2x+3y = c, with changed intercept c. Choice 1 has that form (a scale factor 5/8).",
+      "imageAlt": "Text-only line-dilation question; original equation and all four candidate equations are in accessible text."
+    },
+    "23": {
+      "prompt": "A circle of radius 5 is divided into 24 equal sectors and rearranged into an almost-rectangle of length x. What is x to the nearest integer?",
+      "choices": ["31", "16", "12", "10"],
+      "explanation": "Alternating sectors approximate a rectangle whose length is half the circle's circumference. Thus x ≈ (1/2)(2πr) = πr = 5π ≈ 15.7, rounding to 16.",
+      "imageAlt": "Diagram sequence shows a circle sliced into 24 equal narrow wedges, those wedges pulled into two alternating rows, then interleaved as an almost-rectangle. The bottom length of the final arrangement is labeled x; the circle radius is 5."
+    },
+    "24": {
+      "prompt": "Which evidence is sufficient to prove triangle DEF congruent to triangle ABC?",
+      "choices": ["AB = DE and BC = EF", "angle D ≅ A, angle B ≅ E, and angle C ≅ F", "One sequence of rigid motions maps AB onto DE, BC onto EF, and AC onto DF.", "One sequence of rigid motions maps A onto D, AB onto DE, and angle B onto angle E."],
+      "explanation": "A single sequence of rigid motions that maps all three sides of ABC onto the corresponding sides of DEF maps the whole triangle, proving congruence. Two side lengths alone or three angle equalities do not fix size; the last choice leaves the third vertex's distance undetermined.",
+      "imageAlt": "Two unlabeled-size triangles ABC (left) and DEF (right) are drawn in different orientations with no equal-length marks. Each proposed kind of congruence evidence is fully transcribed in the choices."
+    }
+  }
+}

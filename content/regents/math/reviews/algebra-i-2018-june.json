@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "2d41378d5e704667e5cb18ce4a8023f1266257ee7ff7ecf772c1290a232b8893",
+  "questions": {
+    "1": {
+      "prompt": "Solve 4p+2<2(p+5).",
+      "choices": ["p>−6", "p<−6", "p>4", "p<4"],
+      "explanation": "Distribute and simplify: 4p+2<2p+10, so 2p<8 and p<4.",
+      "imageAlt": "Strict inequality four p plus two is less than two times quantity p plus five; all four inequality choices are transcribed with their directions."
+    },
+    "2": {
+      "prompt": "If k(x)=2x²−3√x, what is k(9)?",
+      "choices": ["315", "307", "159", "153"],
+      "explanation": "Substitute 9 into both terms: k(9)=2(9²)−3√9=162−9=153, which is choice 4.",
+      "imageAlt": "Function two x squared minus three times the square root of x, input nine, and four three-digit choices are transcribed."
+    },
+    "3": {
+      "prompt": "Simplify 3(x²+2x−3)−4(4x²−7x+5).",
+      "choices": ["−13x−22x+11", "−13x²+34x−29", "19x²−22x+11", "19x²+34x−29"],
+      "explanation": "Distribute to get 3x²+6x−9−16x²+28x−20. Combining like terms gives −13x²+34x−29.",
+      "imageAlt": "Two parenthesized polynomials, multiplication by three and subtraction of four times the second, and all four polynomial answer choices are transcribed."
+    },
+    "4": {
+      "prompt": "What are the zeros of p(x)=x²−2x−24?",
+      "choices": ["−8 and 3", "−6 and 4", "−4 and 6", "−3 and 8"],
+      "explanation": "Factor p(x)=(x−6)(x+4). Setting either factor to zero gives x=6 or x=−4.",
+      "imageAlt": "Quadratic x squared minus two x minus twenty-four and four signed pairs of proposed zeros are transcribed."
+    },
+    "5": {
+      "prompt": "A box plot of Orlando's average monthly high temperatures has minimum about 71°F, first quartile 75°F, median 83°F, third quartile 90°F, and maximum about 92°F. What is the third quartile?",
+      "choices": ["92", "90", "83", "71"],
+      "explanation": "The third quartile is the right edge of the box, which aligns with 90°F. The right whisker extends farther, to about 92°F.",
+      "imageAlt": "Horizontal box plot on Fahrenheit axis 70 to 95: left whisker about 71, box from 75 to 90, median at 83, and right whisker about 92. Four numeric choices are transcribed."
+    },
+    "6": {
+      "prompt": "Strawberries cost $1.60 per pound and raspberries $1.75 per pound. Joy has at most $10. Which inequality describes x pounds of strawberries and y pounds of raspberries?",
+      "choices": ["1.60x+1.75y≤10", "1.60x+1.75y≥10", "1.75x+1.60y≤10", "1.75x+1.60y≥10"],
+      "explanation": "The two costs add to 1.60x+1.75y. Spending no more than $10 means that sum is at most 10, so use ≤.",
+      "imageAlt": "Both berry prices, x and y definitions, $10 budget, and all four cost inequalities are transcribed with coefficient order and inequality directions."
+    },
+    "7": {
+      "prompt": "Seats per theater row increase by a constant amount. Row 3 has 31 seats and row 6 has 37 seats. How many seats are in row 20?",
+      "choices": ["65", "67", "69", "71"],
+      "explanation": "Across three rows the count rises by 6, or 2 seats per row. Row 20 is 14 rows after row 6, so it has 37+14·2=65 seats.",
+      "imageAlt": "Row three has thirty-one seats, row six thirty-seven seats, constant rate, and four two-digit choices are transcribed."
+    },
+    "8": {
+      "prompt": "Which ordered pair is not a solution of f(x)=x²−3x+4?",
+      "choices": ["(0,4)", "(1.5,1.75)", "(5,14)", "(−1,6)"],
+      "explanation": "At x=−1, f(−1)=1+3+4=8, not 6. The other three pairs match the function.",
+      "imageAlt": "Quadratic x squared minus three x plus four and four coordinate pairs are transcribed, including decimal coordinates and negative one."
+    },
+    "9": {
+      "prompt": "Favorite-sport survey table: girls chose basketball 42, soccer 58, tennis 20; boys chose basketball 84, soccer 41, tennis 5. What percent of all students chose soccer?",
+      "choices": ["39.6%", "41.4%", "50.4%", "58.6%"],
+      "explanation": "Soccer received 58+41=99 votes. All sports total 42+58+20+84+41+5=250 votes. The percent is 99/250·100=39.6%.",
+      "imageAlt": "Complete two-row, three-sport table is transcribed with girls 42,58,20 and boys 84,41,5 for basketball, soccer, tennis respectively; all four percentages are transcribed."
+    },
+    "10": {
+      "prompt": "Factor x²−14x+49.",
+      "choices": ["(x−7)²", "(x+7)²", "(x−7)(x+7)", "(x−7)(x+2)"],
+      "explanation": "Because 49=7² and −14x=−2·7x, the trinomial is the perfect square (x−7)².",
+      "imageAlt": "Trinomial x squared minus fourteen x plus forty-nine and four products or squares are transcribed."
+    },
+    "11": {
+      "prompt": "The relation {(0,1),(2,3),(5,8),(7,2)} is a function. Which pair can be added while keeping it a function?",
+      "choices": ["(0,2)", "(5,3)", "(7,0)", "(1,3)"],
+      "explanation": "A function cannot assign a second output to an existing input. Inputs 0, 5, and 7 already occur, while input 1 is new, so (1,3) can be added.",
+      "imageAlt": "All four original ordered pairs and four proposed additional pairs are transcribed, preserving repeated versus new first coordinates."
+    },
+    "12": {
+      "prompt": "Rewrite x²−6x=12 as (x+p)²=q, where q is constant. What is p?",
+      "choices": ["−12", "−9", "−3", "9"],
+      "explanation": "Half the coefficient −6 is −3. Adding 9 completes the square: (x−3)²=21, so p=−3.",
+      "imageAlt": "Original quadratic equation, target completed-square form with p and q, and four signed p choices are transcribed."
+    },
+    "13": {
+      "prompt": "Which quadratic has the smallest minimum value?",
+      "choices": ["h(x)=x²+2x−6", "Graph g: upward parabola with vertex (2,−10)", "k(x)=(x+5)(x+2)", "Table f: (−1,−2),(0,−5),(1,−6),(2,−5),(3,−2)"],
+      "explanation": "The graph's vertex is at y=−10. By comparison, h has minimum −7 at x=−1, k has minimum −2.25 at x=−3.5, and the table f has minimum −6. Thus g is lowest.",
+      "imageAlt": "All four quadratic representations are transcribed: h equation x squared plus two x minus six; g graph with upward vertex at (2,−10); k factored equation; f table values −2,−5,−6,−5,−2 at x −1 through 3."
+    },
+    "14": {
+      "prompt": "Which situation is not linear?",
+      "choices": ["$10 gym joining fee plus $10 per month", "$2.50 cab initial fee plus $3 per mile", "restaurant employee earns $12.50 per hour", "$12,000 car loses 15% of its value per year"],
+      "explanation": "A fixed percentage loss each year multiplies the remaining value by 0.85, making the car's value exponential. The other choices add a fixed amount per month, mile, or hour and are linear.",
+      "imageAlt": "Four complete real-world cost or value descriptions are transcribed, including fixed fees, fixed per-unit rates, and 15 percent yearly depreciation."
+    },
+    "15": {
+      "prompt": "A race is 15 kilometers. Sara ran I: 10 miles; II: 44,880 feet; III: 15,560 yards. Which training runs are at least 15 kilometers?",
+      "choices": ["I only", "II only", "I and III", "II and III"],
+      "explanation": "Fifteen kilometers is about 9.32 miles. Run I is 10 miles; run II is 44,880/5280=8.5 miles; run III is 15,560/1760≈8.84 miles. Only I reaches the race length.",
+      "imageAlt": "Fifteen-kilometer race and three numbered training distances are fully transcribed with units: ten miles, 44,880 feet, 15,560 yards. Four combinations are transcribed."
+    },
+    "16": {
+      "prompt": "What is the range of f(x)=x²+2 over all real x?",
+      "choices": ["(−∞,∞)", "[0,∞)", "[2,∞)", "(−∞,2]"],
+      "explanation": "Since x²≥0 for every real x, x²+2≥2. The value 2 occurs at x=0, and all larger values occur, so the range is [2,∞).",
+      "imageAlt": "Function x squared plus two and four interval choices are transcribed with open or closed endpoints and infinity symbols."
+    },
+    "17": {
+      "prompt": "Mike's weekly pay is 2.50a+290 dollars, where a is the number of phone accessories sold. What is the constant term and its meaning?",
+      "choices": ["2.50a, guaranteed weekly pay", "2.50a, pay earned from selling a accessories", "290, guaranteed weekly pay", "290, pay earned from selling a accessories"],
+      "explanation": "The constant term is $290 because it does not depend on a. At a=0, Mike still receives $290, his guaranteed weekly amount.",
+      "imageAlt": "Pay expression two dollars and fifty cents times a plus two hundred ninety, definition of a, and four term-and-meaning choices are transcribed."
+    },
+    "18": {
+      "prompt": "A cubic graph crosses the x-axis at x=−3, x=−1, and x=1 and rises to the right. Which factored function could match it?",
+      "choices": ["(x−3)(x−1)(x+1)", "(x+3)(x+1)(x−1)", "(x−3)(x−1)(x+3)", "(x+3)(x+1)(x−3)"],
+      "explanation": "The x-intercepts correspond to factors x+3, x+1, and x−1. Their product also has positive leading coefficient, matching the graph's right-end rise.",
+      "imageAlt": "Cubic graph crosses the x-axis at approximately negative three, negative one, and positive one; left end points down and right end up. Four complete factored cubics are transcribed."
+    },
+    "19": {
+      "prompt": "Polynomials I: 15x⁴−6x+3x²−1; II: 12x³+8x+4; III: 2x⁵+8x²+10x. Which student's claim about standard form is correct?",
+      "choices": ["Tyler: I and II because coefficients decrease", "Susan: only II because all numbers decrease", "Fred: II and III because exponents decrease", "Alyssa: II and III because each has three terms"],
+      "explanation": "Standard form lists powers in descending order. I has x before x², so it is not in standard form. II has powers 3,1,0 and III has 5,2,1; Fred identifies both and gives the right reason.",
+      "imageAlt": "All three polynomials and all four named students' full claims are transcribed, preserving exponent order and each student's stated reason."
+    },
+    "20": {
+      "prompt": "Which graph is not always increasing throughout −2<x<2?",
+      "choices": ["upward-sloping line", "two upward-sloping pieces with an upward jump at x=−2", "downward-opening parabola with vertex at x=0", "piecewise line rising to a peak near x=3 and then falling"],
+      "explanation": "The downward-opening parabola rises until x=0, then falls between 0 and 2. It is therefore not increasing over the entire interval. The other graphs rise throughout −2<x<2.",
+      "imageAlt": "Four graph choices are described: rising straight line; two rising pieces with an upward jump at x negative two; downward-opening parabola peaking at x zero; and a line rising until a peak to the right of x two. Asked interval is strictly between negative two and two."
+    },
+    "21": {
+      "prompt": "An ice cream shop's profit is P(c)=0.87c, where c is the number of cones sold. What is an appropriate domain?",
+      "choices": ["integers c≤0", "integers c≥0", "rational numbers c≤0", "rational numbers c≥0"],
+      "explanation": "A count of cones must be a whole number and cannot be negative. Thus c can be any nonnegative integer.",
+      "imageAlt": "Profit function eighty-seven cents per cone and four domains are transcribed, distinguishing integer versus rational and nonpositive versus nonnegative."
+    },
+    "22": {
+      "prompt": "How many real-number solutions does 4x²+2x+5=0 have?",
+      "choices": ["one", "two", "zero", "infinitely many"],
+      "explanation": "The discriminant is b²−4ac=2²−4(4)(5)=−76. A negative discriminant means no real-number roots.",
+      "imageAlt": "Quadratic equation four x squared plus two x plus five equals zero and four possible counts of real roots are transcribed."
+    },
+    "23": {
+      "prompt": "From rectangle perimeter p=2ℓ+2w, which formulas for length ℓ are correct? I: ℓ=(1/2)p−w; II: ℓ=(1/2)(p−2w); III: ℓ=(p−2w)/2.",
+      "choices": ["I and II only", "II and III only", "I and III only", "I, II, and III"],
+      "explanation": "Subtract 2w and divide by 2: ℓ=(p−2w)/2=p/2−w. All three listed expressions are algebraically identical.",
+      "imageAlt": "Perimeter formula p equals two length plus two width and all three proposed solved formulas are transcribed with fraction bars and parentheses. Four combinations of I, II, III are transcribed."
+    },
+    "24": {
+      "prompt": "If aₙ=n·aₙ₋₁ and a₁=1, what is a₅?",
+      "choices": ["5", "20", "120", "720"],
+      "explanation": "Apply the recurrence: a₂=2, a₃=3·2=6, a₄=4·6=24, and a₅=5·24=120.",
+      "imageAlt": "Recursive definition a sub n equals n times a sub n minus one, initial term a sub one equals one, and four numeric choices are transcribed."
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "c3fdcaef0e892666bd3102ff03688dfa202c463d1f9b6ae50f46b2f76ef10dba",
+  "questions": {
+    "1": {
+      "prompt": "To estimate how often students exercise each week with the least bias, a school surveys every fifth student who is where?",
+      "choices": ["entering the gym", "in the junior class", "entering the library", "entering the building"],
+      "explanation": "Students entering the building include the broad school population, whereas a gym, library, or single class can overrepresent a particular group. Sampling every fifth entrant to the building is the least biased listed method.",
+      "imageAlt": "The survey concerns exercise habits of all students at a school; the possible sampling locations are the gym, junior class, library, and building entrance."
+    },
+    "2": {
+      "prompt": "For x ≠ −3, which expression equals (2x³ + 3x² − 4x + 5)/(x + 3)?",
+      "choices": ["2x³ + 9x² + 23x + 74", "2x² − 3x + 5 − 10/(x + 3)", "2x³ − 3x² + 5x − 10", "2x² + 9x + 23 + 74/(x + 3)"],
+      "explanation": "Dividing 2x³ + 3x² − 4x + 5 by x + 3 gives quotient 2x² − 3x + 5 and remainder −10. The equivalent form is quotient plus remainder over x + 3.",
+      "imageAlt": "The numerator is two x cubed plus three x squared minus four x plus five; the denominator is x plus three. The given domain excludes negative three."
+    },
+    "3": {
+      "prompt": "In a table of sports fans, 14 football fans prefer wings, 20 prefer pizza, and 6 prefer hot dogs. What is the probability a fan prefers pizza given that the fan prefers football?",
+      "choices": ["1/2", "1/5", "5/8", "13/25"],
+      "explanation": "Restrict the group to football fans: 14 + 20 + 6 = 40. Of those, 20 prefer pizza, so the conditional probability is 20/40 = 1/2.",
+      "imageAlt": "Two-way table: football row has wings 14, pizza 20, hot dogs 6; baseball row has wings 6, pizza 12, hot dogs 42. The condition is that the fan prefers football."
+    },
+    "4": {
+      "prompt": "If f(x) = 12x − 4, what is f⁻¹(x)?",
+      "choices": ["(x + 1)/3", "x/3 + 1", "(x + 4)/12", "x/12 + 4"],
+      "explanation": "Set y = 12x − 4 and solve for x: x = (y + 4)/12. Exchange the variable names to obtain f⁻¹(x) = (x + 4)/12.",
+      "imageAlt": "The function multiplies its input by twelve then subtracts four. The inverse choices have different additions and divisors."
+    },
+    "5": {
+      "prompt": "A downward-opening parabola shown on the graph has vertex (1, 5) and passes through (0, 4). Which listed point lies on both it and x + y = 4?",
+      "choices": ["(4, 0)", "(1, 5)", "(2, 2)", "(3, 1)"],
+      "explanation": "The graph also passes through (3, 1), and 3 + 1 = 4, so this point satisfies both the quadratic graph and the line. The vertex (1, 5), for example, does not satisfy x + y = 4.",
+      "imageAlt": "A coordinate grid shows a downward-opening parabola with vertex at one comma five, y-intercept four, and a point at three comma one. The line to test is x plus y equals four."
+    },
+    "6": {
+      "prompt": "What is the solution of 2(3^(x + 4)) = 56?",
+      "choices": ["x = log₃(28) − 4", "x = −1", "x = log(25) − 4", "x = log(56)/log(6) − 4"],
+      "explanation": "Divide by 2 to get 3^(x + 4) = 28. Taking base-three logarithms gives x + 4 = log₃(28), hence x = log₃(28) − 4.",
+      "imageAlt": "The exponent on three is the whole quantity x plus four; the entire power is multiplied by two and equals fifty-six."
+    },
+    "7": {
+      "prompt": "In a laptop survey, 45% wanted a large screen, 31% a fast processor, and 58% one or both. What percentage wanted both?",
+      "choices": ["76%", "14%", "77%", "18%"],
+      "explanation": "Use inclusion–exclusion: P(screen ∩ processor) = 45% + 31% − 58% = 18%.",
+      "imageAlt": "The three percentages are forty-five for a large screen, thirty-one for a fast processor, and fifty-eight for at least one of them."
+    },
+    "8": {
+      "prompt": "Quadratic f has discriminant 8, and g has discriminant −16. The graph of h crosses the x-axis twice; the graph of j stays above it. Which functions have imaginary roots?",
+      "choices": ["g and h", "g and j", "f and h", "f and j"],
+      "explanation": "A negative discriminant means nonreal roots, so g has imaginary roots. A parabola with no x-intercepts also has nonreal roots; that is j. The positive discriminant for f and two intercepts for h indicate real roots.",
+      "imageAlt": "Graph h is a downward-opening parabola crossing the x-axis twice. Graph j is an upward-opening parabola whose vertex is above the x-axis, so it does not meet that axis. Function f has discriminant positive eight, and g negative sixteen."
+    },
+    "9": {
+      "prompt": "Americium has a half-life of 25 minutes. Starting with amount A₀, which expression gives the amount remaining after t minutes?",
+      "choices": ["A₀(1/2)^(t/25)", "A₀(25)^(t/2)", "25(1/2)^t", "A₀(1/2)^(25t)"],
+      "explanation": "The amount is multiplied by 1/2 once per 25-minute period. After t minutes there have been t/25 half-lives, so the remaining amount is A₀(1/2)^(t/25).",
+      "imageAlt": "The initial amount is A sub zero, the decay factor is one-half, and the half-life lasts twenty-five minutes. The answer forms differ in base, starting amount, and exponent."
+    },
+    "10": {
+      "prompt": "Which function has the greatest y-intercept?",
+      "choices": ["f(x) = 4sin(2x)", "g(x) = 3x⁴ + 2x³ + 7", "h(x) = 5e^(2x) + 3", "j(x) = 6log₂(3x + 4)"],
+      "explanation": "A y-intercept is the value at x = 0. The four values are 0, 7, 8, and 6log₂(4) = 12, respectively. Thus j has the greatest y-intercept.",
+      "imageAlt": "Choices are sine, polynomial, exponential, and logarithmic functions. The logarithm in the fourth choice has base two and argument three x plus four."
+    },
+    "11": {
+      "prompt": "A frog population is modeled after t years by P = 12,150(0.962)^t. Which model uses d decades instead?",
+      "choices": ["P = 12,150(0.461)^d", "P = 12,150(0.679)^d", "P = 12,150(0.996)^d", "P = 12,150(0.998)^d"],
+      "explanation": "One decade has ten years, so t = 10d. Then (0.962)^t = [(0.962)^10]^d. Since 0.962^10 ≈ 0.679, the decade model uses 0.679^d.",
+      "imageAlt": "The yearly model starts at twelve thousand one hundred fifty frogs and multiplies by 0.962 each year. The requested unit is decades."
+    },
+    "12": {
+      "prompt": "What is tan θ when sin θ = 2/5 and θ is in Quadrant II?",
+      "choices": ["−√21/5", "−√21/2", "−2/√21", "2/√21"],
+      "explanation": "With opposite side 2 and hypotenuse 5, the adjacent side has magnitude √(25 − 4) = √21. Cosine is negative in Quadrant II, so tan θ = 2/(−√21) = −2/√21.",
+      "imageAlt": "Sine is two-fifths and theta is in Quadrant II, where cosine and tangent are negative. The choices contain square root of twenty-one."
+    },
+    "13": {
+      "prompt": "A normally distributed population has mean 23 and standard deviation 1.2. What percentage falls below 21, to the nearest hundredth?",
+      "choices": ["0.05", "4.78", "8.29", "91.30"],
+      "explanation": "The z-score is (21 − 23)/1.2 ≈ −1.667. The standard normal cumulative probability below this z-score is about 0.0478, or 4.78%.",
+      "imageAlt": "The cutoff twenty-one is two units below the mean twenty-three; the standard deviation is one point two. The choices are percentages."
+    },
+    "14": {
+      "prompt": "A kindergarten enrollment model is y = a(b)^x, with x years after 2015. It begins with 105 students in 2015 and decreases exponentially. Which statement is true?",
+      "choices": ["a is positive and b is negative", "a is negative and b is positive", "Both a and b are positive", "Both a and b are negative"],
+      "explanation": "At x = 0, y = a = 105, so a is positive. Exponential decrease uses a growth factor between 0 and 1, so b is also positive.",
+      "imageAlt": "The exponential model has an initial value of one hundred five students at x equals zero and decreases as x increases."
+    },
+    "15": {
+      "prompt": "What is the solution set of √[3(x + 6)] = x?",
+      "choices": ["{6, −3}", "{−6, 3}", "{6}", "{−3}"],
+      "explanation": "Squaring yields 3(x + 6) = x², or (x − 6)(x + 3) = 0. But a square root cannot equal the negative candidate −3. Only x = 6 checks in the original equation.",
+      "imageAlt": "The square-root bar covers the entire product three times the quantity x plus six; the square root equals x."
+    },
+    "16": {
+      "prompt": "A family borrows $45,000 at 6.75% annual interest and will repay it monthly over five years. Using the given fixed-loan payment formula, what is the monthly payment?",
+      "choices": ["$262.99", "$252.13", "$915.24", "$885.76"],
+      "explanation": "Use P = 45,000, monthly rate 0.0675/12, and n = 5·12 = 60 payments. The payment formula M = P·i(1 + i)^n/[(1 + i)^n − 1] gives about $885.76.",
+      "imageAlt": "The displayed formula is monthly payment equals principal times monthly rate times one plus monthly rate to the number of payments, divided by that power minus one."
+    },
+    "17": {
+      "prompt": "A $50 item is discounted by 10% each week. In how many weeks will its price first be less than half its original price?",
+      "choices": ["7", "6", "5", "4"],
+      "explanation": "After n weekly discounts, the price is 50(0.9)^n. Six discounts give about $26.57, still above $25; seven give about $23.91, below half price. Thus it first happens in week 7.",
+      "imageAlt": "The original price is fifty dollars, a ten-percent discount is applied every Monday, and the threshold is under twenty-five dollars."
+    },
+    "18": {
+      "prompt": "On the displayed graph, in which interval is f(x) always positive?",
+      "choices": ["(−2, 4)", "(0, 10)", "(−12, −5)", "(−10, 0)"],
+      "explanation": "The graph lies above the x-axis from its left intercept near x = −10 until it reaches zero at x = 0. The open interval (−10, 0) stays entirely above the axis.",
+      "imageAlt": "The curve crosses the x-axis near x negative ten, rises to a high point near negative five, reaches the x-axis at zero, stays below it until near positive ten, and rises again."
+    },
+    "19": {
+      "prompt": "If f(x) = (x² + 3x + 2)(x² − 4x + 3) and g(x) = x² − 9, how many real solutions does f(x) = g(x) have?",
+      "choices": ["1", "2", "6", "4"],
+      "explanation": "Subtracting gives x⁴ − x³ − 8x² + x + 15 = 0. A graph or numerical solver shows this quartic crosses zero twice, at approximately x = 1.512 and x = 3; its other two roots are nonreal. So there are two real solutions.",
+      "imageAlt": "The first function is a product of two quadratics; the second is x squared minus nine. The question asks for a count of real intersections."
+    },
+    "20": {
+      "prompt": "Which expression is a factor of x⁴ − x³ − 11x² + 5x + 30?",
+      "choices": ["x + 2", "x − 2", "x + 5", "x − 5"],
+      "explanation": "By the factor theorem, x + 2 is a factor if the polynomial equals zero at x = −2. Substitution gives 16 + 8 − 44 − 10 + 30 = 0.",
+      "imageAlt": "The fourth-degree polynomial is x to the fourth minus x cubed minus eleven x squared plus five x plus thirty."
+    },
+    "21": {
+      "prompt": "Which expression is equivalent to (x² + 6)/(x² + 4)?",
+      "choices": ["6/4", "1 + 10/(x² + 4)", "1 − 2/(x² + 4)", "1 + 2/(x² + 4)"],
+      "explanation": "Write the numerator as (x² + 4) + 2. Dividing term by term gives 1 + 2/(x² + 4).",
+      "imageAlt": "The numerator is x squared plus six; the denominator is x squared plus four. The choices rewrite it as a constant plus or minus a rational remainder."
+    },
+    "22": {
+      "prompt": "A manufacturer has cost C(x) = 0.18x³ + 0.02x² + 4x + 180, sale price S(x) = 95.4 − 6x, and revenue R(x) = xS(x). Which expression models profit R(x) − C(x)?",
+      "choices": ["0.18x³ + 6.02x² + 91.4x + 180", "0.18x³ − 5.98x² − 91.4x + 180", "−0.18x³ − 6.02x² + 91.4x − 180", "0.18x³ + 5.98x² + 99.4x + 180"],
+      "explanation": "Revenue is x(95.4 − 6x) = 95.4x − 6x². Subtract every cost term: R − C = −0.18x³ − 6.02x² + 91.4x − 180.",
+      "imageAlt": "Cost is a cubic polynomial with positive terms; revenue is quantity sold times the linear price ninety-five point four minus six x. Profit subtracts cost from revenue."
+    },
+    "23": {
+      "prompt": "Which function is even?",
+      "choices": ["f(x) = x³ + 2", "f(x) = x² + 1", "f(x) = |x + 2|", "f(x) = sin(2x)"],
+      "explanation": "An even function has f(−x) = f(x). For x² + 1, (−x)² + 1 = x² + 1. The other listed functions do not have this symmetry.",
+      "imageAlt": "The choices are a shifted cubic, a quadratic with x squared, a shifted absolute value, and sine of two x."
+    },
+    "24": {
+      "prompt": "A cubic graph touches the x-axis at x = −2, then turns back below it before crossing at x = 3. Which linear factor appears twice?",
+      "choices": ["x − 2", "x + 2", "x − 3", "x + 3"],
+      "explanation": "At a repeated root of even multiplicity, the graph touches the x-axis and turns around rather than crossing. The touch point is x = −2, corresponding to the factor x + 2 twice.",
+      "imageAlt": "The cubic rises from the lower left, touches the x-axis at x negative two, dips below it, and crosses the x-axis near x positive three before rising to the upper right."
+    }
+  }
+}

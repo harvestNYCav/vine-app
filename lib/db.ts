@@ -1,6 +1,7 @@
 import { createClient, type Client } from '@libsql/client'
 import { seedDefaultAdminAllowlistIfEmpty } from './admin-allowlist'
 import { EXAM_ASSIGNMENTS_TABLE_SQL } from './exam-assignments'
+import { STUDENT_REGENTS_COURSES_TABLE_SQL } from './regents-courses'
 import { TUTOR_SIGNUP_REQUESTS_TABLE_SQL } from './tutor-approvals'
 import { LESSON_DECK_PROGRESS_TABLE_SQL, SESSION_WRAP_UPS_TABLE_SQL } from './session-metrics'
 
@@ -67,6 +68,7 @@ async function initSchema(db: Client): Promise<void> {
       user_id TEXT PRIMARY KEY,
       math_spanish_enabled INTEGER NOT NULL DEFAULT 0,
       grade_level INTEGER CHECK(grade_level BETWEEN 3 AND 8),
+      high_school_grade_level INTEGER CHECK(high_school_grade_level BETWEEN 9 AND 12),
       updated_at INTEGER NOT NULL
     );
 
@@ -271,6 +273,7 @@ async function initSchema(db: Client): Promise<void> {
     );
   `)
   await db.execute(EXAM_ASSIGNMENTS_TABLE_SQL)
+  await db.execute(STUDENT_REGENTS_COURSES_TABLE_SQL)
   await db.execute(TUTOR_SIGNUP_REQUESTS_TABLE_SQL)
   await db.execute(LESSON_DECK_PROGRESS_TABLE_SQL)
   await db.execute(SESSION_WRAP_UPS_TABLE_SQL)
@@ -285,6 +288,12 @@ async function initSchema(db: Client): Promise<void> {
     'student_settings',
     'grade_level',
     'INTEGER CHECK(grade_level BETWEEN 3 AND 8)',
+  )
+  await ensureColumn(
+    db,
+    'student_settings',
+    'high_school_grade_level',
+    'INTEGER CHECK(high_school_grade_level BETWEEN 9 AND 12)',
   )
   await ensureColumn(db, 'attendance', 'recorded_by', 'TEXT')
   await ensureColumn(db, 'attendance', 'recorded_at', 'INTEGER')

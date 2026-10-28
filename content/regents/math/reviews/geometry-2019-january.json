@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "f5f3e48bd7c05a90dd3f9a56f5633c776d363a60d231312f6b148b656c6b935c",
+  "questions": {
+    "1": {
+      "prompt": "A dilation centered at (0,0) maps segment DB of length 4.5 to D′B′ of length 18. What is the scale factor?",
+      "choices": ["1/5", "5", "1/4", "4"],
+      "explanation": "A dilation multiplies lengths by its scale factor. Divide image length by original length: 18/4.5 = 4.",
+      "imageAlt": "Printed length-and-dilation question; lengths and all fractional choices are in accessible text."
+    },
+    "2": {
+      "prompt": "Triangle ABC has side lengths BC = 13, CA = 15, and AB = 16. A 90° clockwise rotation about P maps it to triangle DEF. If DE = 2x−1, find x.",
+      "choices": ["7", "7.5", "8", "8.5"],
+      "explanation": "Rotation preserves length, and the triangle order gives A↔D and B↔E, so DE corresponds to AB = 16. Solve 2x−1 = 16 to get x = 8.5.",
+      "imageAlt": "Left triangle ABC has B at left, C above, and A lower right, with BC labeled 13, CA 15, and AB 16. Rotated image DEF is to the right of center P, with DE labeled 2x−1."
+    },
+    "3": {
+      "prompt": "Triangle ABC has A(−2,0), B(2,−4), C(4,2); triangle DEF has D(4,0), E(−4,8), F(−8,−4). Which transformation sequence maps ABC onto DEF?",
+      "choices": ["dilate by factor 2 centered at A", "dilate by factor 1/2 centered at A", "dilate by factor 2 centered at origin, then rotate 180° about origin", "dilate by factor 1/2 centered at origin, then rotate 180° about origin"],
+      "explanation": "Dilation by 2 about the origin followed by a half-turn sends (x,y) to (−2x,−2y). Thus A(−2,0) maps to D(4,0), B(2,−4) to E(−4,8), and C(4,2) to F(−8,−4).",
+      "imageAlt": "Coordinate graph shows small triangle ABC with A(−2,0), B(2,−4), C(4,2) and larger triangle DEF with D(4,0), E(−4,8), F(−8,−4); the vertex coordinates are also in the prompt."
+    },
+    "4": {
+      "prompt": "A rhombus has noncongruent diagonals. Which motion would not map it onto itself?",
+      "choices": ["reflection over its shorter diagonal", "reflection over its longer diagonal", "90° clockwise rotation about the diagonal intersection", "180° counterclockwise rotation about the diagonal intersection"],
+      "explanation": "Either diagonal is a reflection axis of a rhombus, and a half-turn exchanges opposite vertices. A 90° turn would exchange the long and short diagonals, so it only works for a square; this rhombus is not a square.",
+      "imageAlt": "Slanted non-square rhombus is drawn with both diagonals crossing at their common midpoint. One diagonal runs from lower left to upper right and is visibly longer than the other."
+    },
+    "5": {
+      "prompt": "In circle O, K, A, T, I, and E lie on the circle. Triangles KAE and ITE are drawn. KE ≅ EI and angle EKA ≅ angle EIT. Which statement about the triangles is always true?",
+      "choices": ["neither congruent nor similar", "similar but not congruent", "right triangles", "congruent"],
+      "explanation": "Angles EAK and ETI intercept congruent chords KE and EI, so those angles are congruent. Together with the given equal angles EKA and EIT, the triangles are similar by AA. Their corresponding sides KE and EI are equal, so the similarity factor is 1 and the triangles are congruent.",
+      "imageAlt": "Circle has K at lower left, A at upper left, T at upper right, I at lower right, and E near the bottom between K and I. Chords K-A, A-E, E-K form left triangle; chords I-T, T-E, E-I form right triangle."
+    },
+    "6": {
+      "prompt": "Right triangle ABC has D on hypotenuse AB and E on leg CB, with AC ∥ DE. If AB = 15, BC = 12, and EC = 7, find BD.",
+      "choices": ["8.75", "6.25", "5", "4"],
+      "explanation": "EB = BC−EC = 12−7 = 5. Parallel AC and DE make triangles DBE and ABC similar, so BD/AB = BE/BC = 5/12. Therefore BD = 15(5/12) = 6.25.",
+      "imageAlt": "Large right triangle has A upper left, C lower left with the right angle, and B lower right. E lies on horizontal CB and D on sloping AB; vertical DE is parallel to AC."
+    },
+    "7": {
+      "prompt": "Rhombus VENU has diagonals VN = 12 and EU = 16. What is its perimeter?",
+      "choices": ["80", "40", "20", "10"],
+      "explanation": "Rhombus diagonals bisect perpendicularly, making right-triangle legs 6 and 8. Each rhombus side is √(6²+8²) = 10, so its perimeter is 4(10) = 40.",
+      "imageAlt": "Printed rhombus-diagonal problem; both diagonal lengths are in accessible text."
+    },
+    "8": {
+      "prompt": "Right triangle ABC has right angle C and angle B = 61°. Right triangle RST has right angle T and angle R = 29°. Which proposed proportion is not correct?",
+      "choices": ["AB/RS = RT/AC", "BC/ST = AB/RS", "BC/ST = AC/RT", "AB/AC = RS/RT"],
+      "explanation": "The triangles have matching angles A↔R (29°), B↔S (61°), and C↔T (90°), so corresponding sides are AB↔RS, AC↔RT, and BC↔ST. AB/RS should equal AC/RT, not its reciprocal RT/AC.",
+      "imageAlt": "Triangle ABC has horizontal AC and vertical CB meeting at right angle C, with 61° at top vertex B. Triangle RST has vertical RT and horizontal TS meeting at right angle T, with 29° at top vertex R."
+    },
+    "9": {
+      "prompt": "A craft-fair tent has an 8-by-8-foot square footprint, 9-foot-tall vertical legs, and a square-pyramid roof of height 3 feet. What volume of space does it occupy, in cubic feet?",
+      "choices": ["256", "640", "672", "768"],
+      "explanation": "The rectangular portion has volume 8·8·9 = 576 cubic feet. The pyramidal roof adds (1/3)(8·8)(3) = 64. Total volume is 640 cubic feet.",
+      "imageAlt": "Tent diagram shows a square 8-ft by 8-ft base, vertical sides 9 ft tall, and a pyramid roof rising another 3 ft above the side walls."
+    },
+    "10": {
+      "prompt": "In right triangle KMI, altitude IG meets hypotenuse KM at G. If KG = 9 and IG = 12, find IM.",
+      "choices": ["15", "16", "20", "25"],
+      "explanation": "The altitude theorem gives IG² = KG·GM, so 12² = 9·GM and GM = 16. In right triangle IGM, IM = √(12²+16²) = 20.",
+      "imageAlt": "Right triangle KMI has I above horizontal hypotenuse K-G-M. IG drops vertically from right-angle vertex I to G on KM, making a right angle at G."
+    },
+    "11": {
+      "prompt": "A 6-inch-long, 5-inch-wide rectangle is continuously rotated about its longer side. Which solid results?",
+      "choices": ["rectangular prism 6 by 6 by 5 inches", "rectangular prism 6 by 5 by 5 inches", "cylinder of radius 5 inches and height 6 inches", "cylinder of radius 6 inches and height 5 inches"],
+      "explanation": "The 6-inch side is the rotation axis and cylinder height. The opposite side is 5 inches away from it, so the cylinder radius is 5 inches.",
+      "imageAlt": "Printed solid-of-revolution question; rectangle dimensions, axis, and each solid choice are in accessible text."
+    },
+    "12": {
+      "prompt": "Which statement about every parallelogram is always true?",
+      "choices": ["diagonals are congruent", "diagonals bisect each other", "diagonals are perpendicular", "diagonals bisect their respective angles"],
+      "explanation": "Opposite sides of a parallelogram are parallel, and its diagonals meet at their common midpoint, so they bisect each other. The other properties require a special parallelogram such as a rectangle or rhombus.",
+      "imageAlt": "Printed parallelogram-property question; all proposed diagonal properties are in accessible text."
+    },
+    "13": {
+      "prompt": "A point is one-half mile from a monument base, and its angle of elevation to the top is 11.87°. What is the monument height to the nearest foot?",
+      "choices": ["543", "555", "1086", "1110"],
+      "explanation": "One-half mile is 2640 feet. With horizontal distance as the adjacent leg, height = 2640tan(11.87°) ≈ 555 feet.",
+      "imageAlt": "Printed elevation-angle problem; distance and angle are in accessible text."
+    },
+    "14": {
+      "prompt": "A sector of a circle of radius 15 cm has area 75π cm². What is its central angle?",
+      "choices": ["72°", "120°", "144°", "180°"],
+      "explanation": "The full circle area is π(15²) = 225π. The sector is 75π/225π = 1/3 of the circle, so its central angle is (1/3)(360°) = 120°.",
+      "imageAlt": "Printed sector-area problem; radius and sector area are in accessible text."
+    },
+    "15": {
+      "prompt": "M divides AB with AM:MB = 1:2. If A(−1,−3) and B(8,9), what are M's coordinates?",
+      "choices": ["(2,1)", "(5/3,0)", "(5,5)", "(23/3,8)"],
+      "explanation": "The 1:2 ratio places M one third of the way from A to B. B−A = (9,12), and A+(1/3)(9,12) = (2,1).",
+      "imageAlt": "Printed segment-partition question; signed endpoint coordinates, ratio, and fractional options are in accessible text."
+    },
+    "16": {
+      "prompt": "In triangle ABC, AC extends through C to D, and BE meets AC at E. Numbered angles are shown. Which equation is always true?",
+      "choices": ["m∠1 = m∠3 + m∠2", "m∠5 = m∠3 − m∠2", "m∠6 = m∠3 − m∠2", "m∠7 = m∠3 + m∠2"],
+      "explanation": "Angle 7 is the exterior angle at E of triangle EBC. Its remote interior angles are 3 at B and 2 at C, so the exterior-angle theorem gives m∠7 = m∠3 + m∠2.",
+      "imageAlt": "A, E, C, D lie in that order on a horizontal line, with B above E. Segments AB, BE, and BC form triangle ABC split at E. Angle 5 is at A; angles 6 and 3 split B; angles 7 and 4 are at E on either side of BE; angles 2 and 1 lie at C inside and outside triangle ABC."
+    },
+    "17": {
+      "prompt": "Right triangle ABC has right angle C, AC = 8, and hypotenuse AB = 17. Which equation determines angle A?",
+      "choices": ["sin A = 8/17", "tan A = 8/15", "cos A = 15/17", "tan A = 15/8"],
+      "explanation": "The missing leg is BC = √(17²−8²) = 15. Relative to angle A, BC is opposite and AC is adjacent, so tan A = BC/AC = 15/8.",
+      "imageAlt": "Triangle has C at lower left with a right-angle mark, A to its right along horizontal leg CA labeled 8, and B directly above C. Sloping hypotenuse BA is labeled 17."
+    },
+    "18": {
+      "prompt": "Francisco needs two right-triangle glass pieces with side lengths 5-12-13 and 9-12-15, plus a trapezoid of height 12 and parallel bases 6 and 20 inches. Glass sheets are 12 inches wide. What minimum sheet length gives enough glass?",
+      "choices": ["20", "25", "29", "34"],
+      "explanation": "The triangles have areas (1/2)(5)(12) = 30 and (1/2)(9)(12) = 54 square inches. The trapezoid area is (1/2)(6+20)(12) = 156. Total area 240 square inches needs length 240/12 = 20 inches. The two triangles fill the trapezoid's side cutouts, so the pieces fit in a 12-by-20 rectangle.",
+      "imageAlt": "First right triangle is 12 inches high with base 5 and hypotenuse 13. Second is 12 high with base 9 and hypotenuse 15. Trapezoid is 12 high, top base 6, bottom base 20, left slanted side 13 and right slanted side 15. Its two side cutouts match the two triangles."
+    },
+    "19": {
+      "prompt": "Quadrilateral NAVY is split by diagonal AY. Angles YNA = 30°, YAN = 38°, AVY = 94°, and VAY = 46°. Which segment is shortest?",
+      "choices": ["AY", "NY", "VA", "VY"],
+      "explanation": "In triangle NAY, AY is opposite 30° and is shorter than NY, opposite 38°. In triangle AVY, angle Y = 180°−94°−46° = 40°; VA is opposite 40°, shorter than VY opposite 46° and AY opposite 94°. Thus VA is shorter than all three alternatives.",
+      "imageAlt": "N and A are lower left and right; Y and V are upper middle and upper right. Dashed diagonal Y-A divides quadrilateral N-A-V-Y. At N the angle to Y is 30°, at A the angle between AN and AY is 38° and between AY and AV is 46°, and at V the angle is 94°."
+    },
+    "20": {
+      "prompt": "What is an equation of a circle centered at (1,4) with diameter 10?",
+      "choices": ["x²−2x+y²−8y = 8", "x²+2x+y²+8y = 8", "x²−2x+y²−8y = 83", "x²+2x+y²+8y = 83"],
+      "explanation": "The radius is 5, so (x−1)²+(y−4)² = 25. Expanding and subtracting the constants gives x²−2x+y²−8y = 8.",
+      "imageAlt": "Printed circle-equation question; center, diameter, and all signs and constants in the choices are in accessible text."
+    },
+    "21": {
+      "prompt": "Triangle ABC has altitude CG to side AB and median CM to side AB. Which expression is its area?",
+      "choices": ["(BC)(AC)/2", "(GC)(BC)/2", "(CM)(AB)/2", "(GC)(AB)/2"],
+      "explanation": "Triangle area is half the product of a chosen base and its perpendicular height. With AB as base, the altitude CG is the perpendicular height, so area is (AB)(GC)/2.",
+      "imageAlt": "On a coordinate grid, A is lower left, B upper right, C lower right. G and M lie on sloping side AB, with G closer to A and M near the midpoint. CG meets AB perpendicularly at G; CM is the median to midpoint M."
+    },
+    "22": {
+      "prompt": "In right triangle ABC, angle C = 90° and AC ≠ BC. Which trigonometric ratio equals sin B?",
+      "choices": ["cos A", "cos B", "tan A", "tan B"],
+      "explanation": "The acute angles are complementary, so sin B = cos(90°−B) = cos A. Unequal legs rule out an accidental equality from a 45°-45° triangle.",
+      "imageAlt": "Printed complementary-angle trigonometry question; right angle and unequal-leg condition are in accessible text."
+    },
+    "23": {
+      "prompt": "A cone has base radius 2.5 cm and slant height 6.5 cm. What is its volume in cubic centimeters?",
+      "choices": ["12.5π", "13.5π", "30.0π", "37.5π"],
+      "explanation": "The radius, height, and slant height form a right triangle, so h = √(6.5²−2.5²) = 6 cm. Cone volume is (1/3)πr²h = (1/3)π(2.5²)(6) = 12.5π.",
+      "imageAlt": "Cone drawing has a vertical central height to the base center, a radius of 2.5 from base center to right rim, and a slant segment from apex to right rim labeled 6.5; the height-radius angle is marked 90°."
+    },
+    "24": {
+      "prompt": "What equation is the image of y = (3/2)x−4 after dilation by factor 3/4 centered at the origin?",
+      "choices": ["y = (9/8)x−4", "y = (9/8)x−3", "y = (3/2)x−4", "y = (3/2)x−3"],
+      "explanation": "A dilation about the origin preserves the slope of a line while multiplying its y-intercept by the factor. Thus slope remains 3/2 and intercept becomes (3/4)(−4) = −3.",
+      "imageAlt": "Printed line-dilation question; original equation, factor, and each fractional slope and intercept are in accessible text."
+    }
+  }
+}

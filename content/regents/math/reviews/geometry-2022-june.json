@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "85e81b693fd5f23cb29587c9c86e7be13c519b93260cf1f8918ce3825f61cdd0",
+  "questions": {
+    "1": {
+      "prompt": "Triangle ABC has A(−2,1), B(2,4), and C(2,−3). Dilation centered at the origin maps A to A'(−4,2). What are B's image coordinates?",
+      "choices": ["(8,4)", "(4,8)", "(4,−6)", "(1,2)"],
+      "explanation": "A(−2,1) maps to (−4,2), so the dilation factor is 2. Multiply both coordinates of B(2,4) by 2 to get B'(4,8).",
+      "imageAlt": "Coordinate graph shows triangle A(−2,1), B(2,4), C(2,−3). Segment BC is vertical to the right of the y-axis, and A is just left of it."
+    },
+    "2": {
+      "prompt": "A plane cuts a square pyramid parallel to its base. What shape is the cross section?",
+      "choices": ["circle", "square", "triangle", "pentagon"],
+      "explanation": "A slice parallel to a pyramid's square base is a smaller, similar square.",
+      "imageAlt": "Square pyramid has one apex over a square base; the cutting plane is stated to be parallel to the base."
+    },
+    "3": {
+      "prompt": "Right triangle CDE is the dilation image of right triangle CAB, centered at C, with scale factor DE/AB. Which equation is always true?",
+      "choices": ["sin A = CE/CD", "cos A = CD/CE", "sin A = DE/CD", "cos A = DE/CE"],
+      "explanation": "The dilation preserves angles and maps A to D, B to E, and C to itself. In right triangle CDE, the side opposite angle D is CE and hypotenuse is CD. Hence sin A = sin D = CE/CD.",
+      "imageAlt": "Large right triangle CAB has A above B on a vertical leg, C to the right on a horizontal leg, and a right angle at B. Smaller triangle CDE lies inside it with D on CA, E on CB, vertical DE parallel to AB, and right angle at E."
+    },
+    "4": {
+      "prompt": "What is the smallest positive rotation that maps a regular pentagon onto itself?",
+      "choices": ["72°", "108°", "144°", "360°"],
+      "explanation": "A regular pentagon has five identical positions around its center, so the minimum rotation is 360°/5 = 72°.",
+      "imageAlt": "Printed rotational-symmetry question; the polygon and angles are in accessible text."
+    },
+    "5": {
+      "prompt": "Congruent triangles ABC and A'B'C' are graphed. Which transformation maps ABC onto A'B'C'?",
+      "choices": ["reflect over y = −x", "reflect over y = −x + 2", "rotate 180° about (1,1)", "rotate 180° about the origin"],
+      "explanation": "Corresponding points have midpoint (1,1): for example A(6,2) and A'(−4,0). A 180° rotation centered at (1,1) maps each vertex of ABC onto its primed partner.",
+      "imageAlt": "Coordinate grid shows triangle ABC upper right of the origin with A(6,2), B(2,6), C(5,6), and triangle A'B'C' lower left with A'(−4,0), B'(0,−4), C'(−3,−4). The primed and unprimed triangles have opposite orientations around the point (1,1)."
+    },
+    "6": {
+      "prompt": "Scalene right triangle TMR has right angle M. Which equation is always true?",
+      "choices": ["sin M = cos T", "sin R = cos R", "sin T = cos R", "sin T = cos M"],
+      "explanation": "The two acute angles T and R sum to 90°. Sine of T equals cosine of its complement R.",
+      "imageAlt": "Printed right-triangle trigonometry question; right-angle vertex and all function equations are in accessible text."
+    },
+    "7": {
+      "prompt": "In isosceles triangle AED, AE ≅ DE. Points A, B, C, D lie in that order on its base AD, and segments EB and EC are drawn. Which statement is always true?",
+      "choices": ["EB ≅ EC", "AC ≅ DB", "angle EBA ≅ angle ECD", "angle EAC ≅ angle EDB"],
+      "explanation": "AE = DE makes the base angles at A and D of triangle AED equal. Ray AC follows AD from A and ray DB follows DA from D, so angle EAC and angle EDB are precisely those equal base angles.",
+      "imageAlt": "Large triangle AED has E at top and A-B-C-D collinear along the horizontal base. Interior segments EB and EC descend from E to B and C, dividing the large triangle into three parts."
+    },
+    "8": {
+      "prompt": "Right triangle ABC has perpendicular legs AC = 8 and CB = 15. It rotates continuously about AC. What solid results?",
+      "choices": ["right cone of radius 15 and height 8", "right cone of radius 8 and height 15", "right cylinder of radius 15 and height 8", "right cylinder of radius 8 and height 15"],
+      "explanation": "Rotating a right triangle about leg AC makes a cone. The axis AC gives height 8, and the perpendicular leg CB sweeps a base circle of radius 15.",
+      "imageAlt": "Right triangle has C lower left with a right-angle mark, A directly above C on vertical leg length 8, and B to the right on horizontal leg length 15. The rotation axis is AC."
+    },
+    "9": {
+      "prompt": "Lines k and ℓ cross slanted lines m and n at the four vertices A, B, D, C of quadrilateral ABCD. Which angle facts suffice to prove it is a parallelogram?",
+      "choices": ["angle 1 ≅ angle 3", "angle 4 ≅ angle 7", "angle 2 ≅ angle 5 and angle 5 ≅ angle 7", "angle 1 ≅ angle 3 and angle 3 ≅ angle 4"],
+      "explanation": "Angles 2 and 5 are alternate interior angles along transversal m, proving k ∥ ℓ. Angles 5 and 7 are corresponding angles along transversal ℓ, proving m ∥ n. Both pairs of opposite sides are parallel.",
+      "imageAlt": "Horizontal k passes through top vertices A then B; horizontal ℓ through lower vertices D then C. Slanted m passes through A and D; slanted n through B and C. At A, angle 1 is above-left and 2 below-right; at B, 3 above-left and 4 below-right; at D, 5 above-left and 6 below-right; at C, 7 above-left and 8 below-right."
+    },
+    "10": {
+      "prompt": "Which coordinate transformation does not always preserve distance?",
+      "choices": ["(x,y) → (x+2,y)", "(x,y) → (−y,−x)", "(x,y) → (2x,y−1)", "(x,y) → (3−x,2−y)"],
+      "explanation": "The map (2x,y−1) doubles horizontal differences while leaving vertical differences unchanged, so it changes some distances. The other maps are translations, reflections, or a half-turn and preserve distance.",
+      "imageAlt": "Printed coordinate-transformation question; all signed formulas and factors are in accessible text."
+    },
+    "11": {
+      "prompt": "Segments EF and HG are parallel. EF = 5, HG = 12, FI = 1.4x+3, and HI = 6.1x−6.5. Find HI.",
+      "choices": ["1", "5", "10", "24"],
+      "explanation": "The crossing lines make triangles EFI and GHI similar, so FI/HI = EF/HG = 5/12. Solve (1.4x+3)/(6.1x−6.5) = 5/12 to get x = 5. Then HI = 6.1(5) − 6.5 = 24.",
+      "imageAlt": "A small triangle EFI lies upper-left of crossing point I, and a larger triangle GHI lies lower-right. E-I-G are collinear, F-I-H are collinear, and outer segments EF and HG are parallel. EF is labeled 5 and HG 12."
+    },
+    "12": {
+      "prompt": "A solid-maple square pyramid has base side 4.5 cm, height 10 cm, and density 0.676 g/cm³. Find its mass to the nearest tenth of a gram.",
+      "choices": ["45.6", "67.5", "136.9", "202.5"],
+      "explanation": "Base area is 4.5² = 20.25 cm². Pyramid volume is (1/3)(20.25)(10) = 67.5 cm³. Mass is 67.5(0.676) = 45.63 g, or 45.6 g.",
+      "imageAlt": "Sketch of square pyramid with apex above a square base; base side, height, and density are fully specified in accessible text."
+    },
+    "13": {
+      "prompt": "In right triangle EFG, altitude FH meets hypotenuse EG at H. If FH = 9 and leg EF = 15, find EG.",
+      "choices": ["6.75", "12", "18.75", "25"],
+      "explanation": "Right triangle EFH has hypotenuse EF = 15 and leg FH = 9, so EH = √(15²−9²) = 12. The leg-projection theorem gives EF² = EH·EG, so EG = 225/12 = 18.75.",
+      "imageAlt": "Right triangle EFG has horizontal hypotenuse E-H-G with E left and G right. Right-angle vertex F lies above H, and altitude FH descends to the hypotenuse."
+    },
+    "14": {
+      "prompt": "In triangle ABC, D lies on AB and E on AC, with DE parallel to BC. Which statement is always true?",
+      "choices": ["angles ADE and ABC are right angles", "triangle ADE ~ triangle ABC", "DE = (1/2)BC", "AD ≅ DB"],
+      "explanation": "Parallel DE and BC give equal corresponding angles at D/B and E/C, while angle A is shared. Thus triangles ADE and ABC are similar by AA; no fixed scale factor or right angle is given.",
+      "imageAlt": "Triangle ABC has A at top, B lower left, C lower right. D lies on AB, E on AC, and horizontal segment DE runs between them parallel to base BC."
+    },
+    "15": {
+      "prompt": "If one exterior angle of a triangle is acute, what type must the triangle be?",
+      "choices": ["right", "acute", "obtuse", "equiangular"],
+      "explanation": "An exterior angle and its adjacent interior angle are supplementary. If the exterior angle is less than 90°, the adjacent interior angle exceeds 90°, so the triangle is obtuse.",
+      "imageAlt": "Printed exterior-angle question; the acute condition and triangle types are in accessible text."
+    },
+    "16": {
+      "prompt": "Which pictured pair of triangles cannot always be proved congruent from the markings?",
+      "choices": ["triangles ABC and DBC: AC = CD, BC shared, both angles at C right", "triangles EFG and HIG: angle E = angle H, FG = GI, angles EGF and HGI vertical", "triangles KLJ and MJL: KL = JM, KJ = ML, JL shared", "triangles NOP and RSP: ON = RS, OP = SP, angle NPO = angle RPS"],
+      "explanation": "Choices 1, 2, and 3 establish congruence by SAS, AAS, and SSS. Choice 4 gives two sides and a nonincluded angle (SSA), which can describe different triangles, so congruence is not guaranteed.",
+      "imageAlt": "Four separate pairs of triangle sketches. First shares vertical side BC with equal base halves AC and CD and right angles at C. Second has equal marked end angles E and H, vertical angles at G, and equal short sides FG and GI. Third has a common diagonal JL and matching one-tick and two-tick opposite sides. Fourth has two matching side pairs ON/RS and OP/SP, with marked equal angles at P not between those two sides."
+    },
+    "17": {
+      "prompt": "A vertical tree grows on a hill. The angle between its upward trunk and the downhill slope is 100°. The slope from tree base to hill bottom is 140 feet. Find the vertical drop to the hill bottom, to the nearest foot.",
+      "choices": ["24", "25", "70", "138"],
+      "explanation": "The angle between the downward vertical drop and downhill slope is 180°−100° = 80°. The 140-foot slope is the hypotenuse, so vertical drop x = 140 cos 80° ≈ 24 feet.",
+      "imageAlt": "Tree stands vertically at the upper-left edge of a downhill slope. The angle between upward trunk and slope descending right is labeled 100°. A dashed vertical drop x descends from the tree base to a horizontal baseline; slope to the right endpoint is labeled 140 ft."
+    },
+    "18": {
+      "prompt": "Congruent triangles LET and L''E''T'' are graphed. Which sequence maps LET to L''E''T''?",
+      "choices": ["reflect over the y-axis, then over the x-axis", "rotate 180° about the origin", "rotate 90° counterclockwise about the origin, then reflect over the y-axis", "reflect over the x-axis, then rotate 90° clockwise about the origin"],
+      "explanation": "The graph shows, for example, L(−3,6) mapping to L''(6,−3), which swaps x and y. A 90° counterclockwise rotation sends (x,y) to (−y,x); reflecting over the y-axis then sends it to (y,x), matching all three image vertices.",
+      "imageAlt": "Coordinate grid shows LET upper-left, with L(−3,6), E(−1,3), T(−5,1), and image L''E''T'' lower-right, with L''(6,−3), E''(3,−1), T''(1,−5)."
+    },
+    "19": {
+      "prompt": "Diameter R-O-Q of circle O continues through Q to external point P, and tangent PA touches at A. If minor arc RA = 100°, find angle P.",
+      "choices": ["10°", "20°", "40°", "50°"],
+      "explanation": "Because RQ is a diameter, arc RA plus arc AQ is 180°, so arc AQ = 80°. Central angle AOP = angle AOQ = 80°. Radius OA is perpendicular to tangent AP, so right triangle OAP has angle P = 90°−80° = 10°.",
+      "imageAlt": "Printed circle-tangent configuration without a diagram on this page. R, O, Q, P lie in that order on one line, with R and Q opposite ends of a diameter, P outside beyond Q, and tangent PA touching the circle at A."
+    },
+    "20": {
+      "prompt": "Segment JM has J(−5,1) and M(7,−9). Which equation is its perpendicular bisector?",
+      "choices": ["y−4 = (5/6)(x+1)", "y+4 = (5/6)(x−1)", "y−4 = (6/5)(x+1)", "y+4 = (6/5)(x−1)"],
+      "explanation": "The midpoint is (1,−4). Slope JM is (−9−1)/(7−(−5)) = −5/6, so the perpendicular slope is 6/5. Through (1,−4), the bisector is y+4 = (6/5)(x−1).",
+      "imageAlt": "Printed perpendicular-bisector question; signed endpoints and fractional equation choices are in accessible text."
+    },
+    "21": {
+      "prompt": "In the figure, ABCD is a parallelogram, E-B-A are collinear, B-H-C are collinear, EB ≅ FB, and EF ⟂ FH. If angle E = 62° and angle C = 51°, find angle FHB.",
+      "choices": ["79°", "76°", "73°", "62°"],
+      "explanation": "Triangle EBF is isosceles with EB = FB, so its base angles at E and F are 62° and its vertex angle EBF is 56°. In the parallelogram, angle ABC = 180°−51° = 129°, so angle FBH = 129°−56° = 73°. Since EF ⟂ FH, angle BFH = 90°−62° = 28°. Triangle FBH then gives angle FHB = 180°−73°−28° = 79°.",
+      "imageAlt": "Large overlapping figure: E, A, B lie on a slanted line at left; B, H, C on a rising line at top; C, D, F on a slanted line at right. ABCD is the central parallelogram. Segment EF crosses the bottom from E to F, BF joins B to F, FH joins F to H, and AD joins A to D. EB and FB are marked equal; EF and FH meet at a right angle at F."
+    },
+    "22": {
+      "prompt": "P divides directed segment from A(−4,−1) to B(6,4) in ratio AP:PB = 2:3. Find P.",
+      "choices": ["(−1,1)", "(0,1)", "(1,0)", "(2,2)"],
+      "explanation": "P is two fifths of the way from A to B. B−A = (10,5), and two fifths is (4,2). Add to A(−4,−1) to get P(0,1).",
+      "imageAlt": "Printed directed-segment question; endpoint coordinates and partition ratio are in accessible text."
+    },
+    "23": {
+      "prompt": "A line is dilated by factor 1/3 centered at a point on that line. Which statement about its image is correct?",
+      "choices": ["its slope is multiplied by 1/3", "its y-intercept is multiplied by 1/3", "both slope and y-intercept are multiplied by 1/3", "the image and preimage are the same line"],
+      "explanation": "A dilation centered on the line fixes the center and carries every other point to another point on the same line. Thus the entire image line coincides with the original line.",
+      "imageAlt": "Printed line-dilation question; scale factor, center location, and all claims are in accessible text."
+    },
+    "24": {
+      "prompt": "In circle O, tangent AB is drawn from external B, line B-C-O-E is a secant, and A-O-D is a diameter. Angle OBA = 36° and radius OC = 10. Find the shaded sector DOE area.",
+      "choices": ["3π/10", "3π", "10π", "15π"],
+      "explanation": "Radius OA is perpendicular to tangent BA, so right triangle AOB has angle AOB = 90°−36° = 54°. Angles AOB and DOE are vertical angles because A-O-D and B-O-E are straight lines, so sector DOE has central angle 54°. Its area is (54/360)π(10²) = 15π.",
+      "imageAlt": "Circle O has external point B above-right. Tangent BA touches at A upper-left; secant B-C-O-E slopes from B through near circle point C and center O to far point E lower-left. Diameter A-O-D ends at D lower-right. The small sector between OE and OD along the bottom is shaded."
+    }
+  }
+}

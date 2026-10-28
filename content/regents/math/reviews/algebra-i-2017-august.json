@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "eeac6448a5b590ac5ebfa5e07b77acc6ad5d62cbbdbf20d65cb6a5c7e62cbca2",
+  "questions": {
+    "1": {
+      "prompt": "Jennifer changes 2(6x²−3)=11x²−x to 12x²−6=11x²−x. Which property justifies this first step?",
+      "choices": ["identity property of multiplication", "multiplication property of equality", "commutative property of multiplication", "distributive property of multiplication over subtraction"],
+      "explanation": "Multiplying 2 by each term inside the parentheses gives 12x²−6. That is distribution over subtraction.",
+      "imageAlt": "Original and expanded equations with x squared terms, plus all four named algebraic properties, are transcribed."
+    },
+    "2": {
+      "prompt": "For which x do j(x)=3x−2 and b(x)=|x+2| have equal outputs?",
+      "choices": ["−2", "2", "2/3", "4"],
+      "explanation": "At x=2, j(2)=3(2)−2=4 and b(2)=|2+2|=4. The other listed values do not give equal outputs.",
+      "imageAlt": "Linear function three x minus two, absolute-value function magnitude of x plus two, and four candidate inputs including two-thirds are transcribed."
+    },
+    "3": {
+      "prompt": "Which expression is equivalent to 49x²−36?",
+      "choices": ["(7x−6)²", "(24.5x−18)²", "(7x−6)(7x+6)", "(24.5x−18)(24.5x+18)"],
+      "explanation": "This is a difference of squares: (7x)²−6²=(7x−6)(7x+6).",
+      "imageAlt": "Expression forty-nine x squared minus thirty-six and four factored choices are transcribed, preserving the numerical coefficients and squares."
+    },
+    "4": {
+      "prompt": "If f(x)=(1/2)x²−((1/4)x+3), what is f(8)?",
+      "choices": ["11", "17", "27", "33"],
+      "explanation": "Substitute 8: (1/2)(64)−((1/4)(8)+3)=32−(2+3)=27.",
+      "imageAlt": "Function one-half x squared minus the quantity one-fourth x plus three, input eight, and four numeric choices are transcribed with fraction structure intact."
+    },
+    "5": {
+      "prompt": "A helicopter's graph gives heights (seconds,feet): (0,46),(5,19),(10,20),(15,14),(20,17). Which five-second interval has the slowest average rate of change in height?",
+      "choices": ["0–5 seconds", "5–10 seconds", "10–15 seconds", "15–20 seconds"],
+      "explanation": "The average changes per second are −27/5, +1/5, −6/5, and +3/5 feet. The smallest change in magnitude is +1/5 foot per second during 5–10 seconds.",
+      "imageAlt": "Height-versus-time graph labeled at all five points: zero seconds forty-six feet; five nineteen; ten twenty; fifteen fourteen; twenty seventeen. Four adjacent five-second intervals are transcribed."
+    },
+    "6": {
+      "prompt": "For f(x)=kx² and g(x)=|kx|, k is a positive integer. If k is replaced by 1/2, what happens to the graphs?",
+      "choices": ["both become wider", "f narrows and g shifts left", "both shift vertically", "f shifts left and g becomes wider"],
+      "explanation": "Changing the coefficient from a positive integer to 1/2 reduces the steepness of both y=kx² and y=|kx|. Both graphs are vertically compressed and therefore appear wider.",
+      "imageAlt": "Quadratic k x squared and absolute-value magnitude of k x, positive-integer k replaced by one-half, and four graph-change descriptions are transcribed."
+    },
+    "7": {
+      "prompt": "A cubic graph crosses the x-axis at x=−1 and touches it at x=2 before rising to the right. Which polynomial could represent it?",
+      "choices": ["P(x)=(x+1)(x−2)²", "P(x)=(x−1)(x+2)²", "P(x)=(x+1)(x−2)", "P(x)=(x−1)(x+2)"],
+      "explanation": "A crossing at −1 needs factor x+1. Touching and turning at 2 means an even-multiplicity root, supplied by (x−2)². Their product has the observed cubic end behavior.",
+      "imageAlt": "Graph of cubic P crosses the horizontal axis at negative one, touches at positive two, has left tail down and right tail up. Four proposed products are transcribed, including squared versus unsquared factors."
+    },
+    "8": {
+      "prompt": "Which situation does not describe a causal relationship?",
+      "choices": ["Higher radio volume makes sound louder", "Faster typing makes a research paper have more pages", "A car running for less time uses less gasoline", "A runner's slower pace makes finishing take longer"],
+      "explanation": "Typing speed changes how quickly a paper is produced, not necessarily how many pages its content requires. The other pairs have a direct physical or definitional cause-and-effect connection.",
+      "imageAlt": "All four complete situations are transcribed, contrasting radio volume, typing speed and page count, engine running time and fuel use, and running pace and finish time."
+    },
+    "9": {
+      "prompt": "A plumber charges c(t)=125t+95 dollars for a house call and t hours of repair. Which statements are true? I: house call fee $95; II: $125 per hour; III: t is the number of hours.",
+      "choices": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+      "explanation": "The constant $95 is the fixed house-call fee, 125 is the hourly rate, and t counts the repair hours. All three statements match the model.",
+      "imageAlt": "Cost function one hundred twenty-five t plus ninety-five and all three numbered interpretations and four combinations are transcribed."
+    },
+    "10": {
+      "prompt": "What is the domain of {(4,2),(1,1),(0,0),(1,−1),(4,−2)}?",
+      "choices": ["{0,1,4}", "{−2,−1,0,1,2}", "{−2,−1,0,1,2,4}", "{−2,−1,0,0,1,1,1,2,4,4}"],
+      "explanation": "The domain is the set of first coordinates, without duplicates: 4,1,0,1,4 become {0,1,4}.",
+      "imageAlt": "All five ordered pairs are transcribed with repeated first coordinates and signed second coordinates; four proposed domain sets are transcribed."
+    },
+    "11": {
+      "prompt": "Solve 2+(4/9)x≥4+x.",
+      "choices": ["x≤−18/5", "x≥−18/5", "x≤54/5", "x≥54/5"],
+      "explanation": "Subtract 2 and x: −(5/9)x≥2. Dividing by the negative −5/9 reverses the inequality, giving x≤−18/5.",
+      "imageAlt": "Inclusive inequality two plus four-ninths x greater than or equal to four plus x, and four fraction-bound choices are transcribed with inequality directions."
+    },
+    "12": {
+      "prompt": "Konnor burns 6 Calories per treadmill minute t and 5 Calories per stationary-bike minute b. Which expression is the Calories burned on the bike?",
+      "choices": ["b", "5b", "45−b", "250−5b"],
+      "explanation": "Bike calories equal the bike's rate, 5 Calories per minute, multiplied by b minutes: 5b. The total-time and target-calorie information do not change that expression.",
+      "imageAlt": "Exercise context states forty-five total minutes and two-hundred-fifty target Calories, treadmill six Calories per minute, bike five per minute, variables t and b; four expression choices are transcribed."
+    },
+    "13": {
+      "prompt": "Which x satisfies (5/6)(3/8−x)=16?",
+      "choices": ["−19.575", "−18.825", "−16.3125", "−15.6875"],
+      "explanation": "Multiply by 6/5: 3/8−x=96/5=19.2. Then x=0.375−19.2=−18.825.",
+      "imageAlt": "Equation five-sixths times quantity three-eighths minus x equals sixteen; four negative decimal answers are transcribed."
+    },
+    "14": {
+      "prompt": "A population starts at 100 cells and triples each hour. Which function gives p(t) after t hours?",
+      "choices": ["p(t)=3(100)ᵗ", "p(t)=100(3)ᵗ", "p(t)=3t+100", "p(t)=100t+3"],
+      "explanation": "The initial value is 100 and each hour multiplies it by 3. After t hours, p(t)=100·3ᵗ.",
+      "imageAlt": "Initial one-hundred cells and hourly tripling, with four full candidate population models transcribed and exponents intact."
+    },
+    "15": {
+      "prompt": "A block sequence shows 1 block in design 1, 3 in design 2, 6 in design 3, and 10 in design 4. It follows a₁=1 and aₙ=aₙ₋₁+n. How many blocks are in design 7?",
+      "choices": ["13", "21", "28", "36"],
+      "explanation": "Continue by adding the design number: a₅=10+5=15, a₆=15+6=21, and a₇=21+7=28.",
+      "imageAlt": "Four triangular arrangements contain one, three, six, and ten blocks. The initial value and recursive addition of n are transcribed, with four candidate seventh counts."
+    },
+    "16": {
+      "prompt": "A $15,000 car depreciates 19% yearly, so V=15000(0.81)ᵗ. Which expression is equivalent?",
+      "choices": ["V=15000(0.9)^(9t)", "V=15000(0.9)^(2t)", "V=15000(0.9)^(t/9)", "V=15000(0.9)^(t/2)"],
+      "explanation": "Since 0.81=(0.9)², (0.81)ᵗ=((0.9)²)ᵗ=(0.9)^(2t). The $15,000 coefficient remains unchanged.",
+      "imageAlt": "Original depreciation model fifteen thousand times 0.81 to the t, with four 0.9-base candidate models differing only in exponent 9t, 2t, t/9, and t/2."
+    },
+    "17": {
+      "prompt": "A book report starts at a maximum grade of 100, and the teacher deducts 10 points for each day late. Which function type describes the grade?",
+      "choices": ["linear", "quadratic", "exponential growth", "exponential decay"],
+      "explanation": "The grade drops by the same 10 points for every additional day late, a constant rate of change. That is linear decrease, not percentage-based exponential decay.",
+      "imageAlt": "Maximum grade one hundred and fixed deduction ten points per late day, with four function-type choices transcribed."
+    },
+    "18": {
+      "prompt": "The graph h is a V with vertex (−4,2) and slope magnitude 2, while g(x)=2|x+4|−3. Which statements are true? I: g has a lower minimum than h. II: h(x)<g(x) for all x. III: g(x)≠h(x) for every x.",
+      "choices": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+      "explanation": "The graph gives h(x)=2|x+4|+2. Compared with g(x)=2|x+4|−3, g is exactly 5 units below h for every x, so g's minimum is lower, h<g is false, and the functions never equal.",
+      "imageAlt": "Absolute-value graph h is an upward V with vertex negative four comma two and arms rising two units per horizontal unit. Equation g equals two times magnitude of x plus four minus three. All three comparison statements and four combinations are transcribed."
+    },
+    "19": {
+      "prompt": "What are the zeros of f(x)=2x³+12x−10x²?",
+      "choices": ["{2,3}", "{−1,6}", "{0,2,3}", "{0,−1,6}"],
+      "explanation": "Factor 2x³−10x²+12x=2x(x²−5x+6)=2x(x−2)(x−3). Thus the zeros are 0, 2, and 3.",
+      "imageAlt": "Cubic terms two x cubed plus twelve x minus ten x squared, and four proposed sets of zeros are transcribed."
+    },
+    "20": {
+      "prompt": "How many of these equations represent the line through (2,3) and (4,−7): 5x+y=13; y+7=−5(x−4); y=−5x+13; y−7=5(x−4)?",
+      "choices": ["1", "2", "3", "4"],
+      "explanation": "The slope through the points is (−7−3)/(4−2)=−5, and using (2,3) gives y=−5x+13. The first three equations simplify to that line. The fourth has positive slope 5, so exactly three match.",
+      "imageAlt": "Both coordinate points and all four complete candidate line equations are transcribed with signs, parentheses, and one-step count choices."
+    },
+    "21": {
+      "prompt": "Ebola cases grow 11% daily from 1 initial case; SARS cases grow 4% daily from 30 initial cases. Which disease has more modeled cases on days 10 and 53?",
+      "choices": ["Ebola on both days", "SARS on both days", "SARS on day 10, Ebola on day 53", "Ebola on day 10, SARS on day 53"],
+      "explanation": "Model the counts by E(t)=1.11ᵗ and S(t)=30(1.04)ᵗ. At day 10, E≈2.84 while S≈44.4, so SARS is higher. By day 53, E≈252 and S≈240, so Ebola is higher.",
+      "imageAlt": "Both starting case counts, daily percentage growth rates, and four day-ten/day-fifty-three comparison choices are transcribed."
+    },
+    "22": {
+      "prompt": "A linear regression reports slope −1.15785, intercept 139.3171772, correlation r=−0.896557832, and r²=0.8038159461. Which relationship best describes x and y?",
+      "choices": ["strong negative correlation", "strong positive correlation", "weak negative correlation", "weak positive correlation"],
+      "explanation": "The correlation coefficient is about −0.90. Its negative sign means an inverse association, and its magnitude close to 1 means the association is strong.",
+      "imageAlt": "All four regression statistics and four strength-and-direction phrases are transcribed, preserving the negative sign on r."
+    },
+    "23": {
+      "prompt": "Gina's age is x, and Abigail is one year younger. The difference between the square of Gina's age and eight times Abigail's age is 17. Which equation models this?",
+      "choices": ["(x+1)²−8x=17", "(x−1)²−8x=17", "x²−8(x+1)=17", "x²−8(x−1)=17"],
+      "explanation": "Gina's squared age is x². Abigail's age is x−1, so eight times it is 8(x−1). Subtracting gives x²−8(x−1)=17.",
+      "imageAlt": "Consecutive-age story and all four equations are transcribed, distinguishing the squared older age from eight times the younger age."
+    },
+    "24": {
+      "prompt": "Which proposed system does not have the same solution as 4x+3y=10 and −6x−5y=−16?",
+      "choices": ["−12x−9y=−30; 12x+10y=32", "20x+15y=50; −18x−15y=−48", "24x+18y=60; −24x−20y=−64", "40x+30y=100; 36x+30y=−96"],
+      "explanation": "The first equation in choice 4 is ten times the original first equation. But multiplying the original second equation by −6 gives 36x+30y=+96, not −96. Thus choice 4 changes the system's solution; the other systems are valid scalar multiples.",
+      "imageAlt": "Original two-equation system and four complete proposed systems are transcribed with all coefficients and right-hand signs; one proposal has positive x and y coefficients but negative ninety-six on the right."
+    }
+  }
+}

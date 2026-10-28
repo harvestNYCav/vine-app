@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "43369476f43d2a3aeed18b24882d8854ea5e85f439db920c3adf60f199503cbd",
+  "questions": {
+    "1": {
+      "prompt": "Which product is equivalent to w⁴−36?",
+      "choices": ["(w²−18)(w²−18)", "(w²+18)(w²−18)", "(w²−6)(w²−6)", "(w²+6)(w²−6)"],
+      "explanation": "Treat w⁴−36 as (w²)²−6². The difference-of-squares formula gives (w²+6)(w²−6).",
+      "imageAlt": "Fourth power w to the fourth minus thirty-six and four products of squared-w binomials are transcribed."
+    },
+    "2": {
+      "prompt": "If f(x)=4x+5, what is f(−3)?",
+      "choices": ["−2", "−7", "17", "4"],
+      "explanation": "Substitute −3 for x: f(−3)=4(−3)+5=−12+5=−7, so the answer is choice 2.",
+      "imageAlt": "Linear function four x plus five, input negative three, and four signed candidate values are transcribed."
+    },
+    "3": {
+      "prompt": "Which relation is not a function?",
+      "choices": ["Table of pairs (−10,−2),(−6,2),(−2,6),(1,9),(5,13)", "Equation 3x+2y=4", "V-shaped graph with one y-value for each x", "Mapping 1→A, 2→A and 2→B, 3→C"],
+      "explanation": "Choice (4) sends the same input 2 to two different outputs, A and B. That violates the one-output-per-input condition for a function. The table, equation, and V graph each give one y for each x.",
+      "imageAlt": "All four relation representations are transcribed: distinct-input table, line equation, upright V-shaped graph, and mapping with two arrows from input two."
+    },
+    "4": {
+      "prompt": "Compare f(x)=(x−2)²+4 and g(x)=(x−5)²+4. How is g's graph shifted from f's?",
+      "choices": ["3 units left", "3 units right", "5 units left", "5 units right"],
+      "explanation": "The f vertex is (2,4), while the g vertex is (5,4). The x-coordinate increases by 3 with no vertical change, so g is shifted 3 units right.",
+      "imageAlt": "Both vertex-form functions and four horizontal-shift choices are transcribed with x minus two versus x minus five."
+    },
+    "5": {
+      "prompt": "Write 6x⁵+8x−3x³+7x⁷ in standard form. Anne writes 7x⁷+6x⁵−3x³+8x; Bob writes −3x³+6x⁵+7x⁷+8x; Carrie writes 8x+7x⁷+6x⁵−3x³; Dylan writes 8x−3x³+6x⁵+7x⁷. Which student is correct?",
+      "choices": ["Anne", "Bob", "Carrie", "Dylan"],
+      "explanation": "Standard form orders terms by descending powers: x⁷, x⁵, x³, then x. Anne's expression has that order while preserving every coefficient and sign.",
+      "imageAlt": "Original polynomial and all four students' full rewrites are transcribed in the prompt with powers and signs."
+    },
+    "6": {
+      "prompt": "A table gives f(0)=1, f(1)=3, f(2)=9, and f(3)=27. Which function type best models it?",
+      "choices": ["exponential growth", "exponential decay", "linear with positive rate", "linear with negative rate"],
+      "explanation": "Every one-step increase in x multiplies the output by 3: 1,3,9,27. This is exponential growth, modeled by f(x)=3ˣ.",
+      "imageAlt": "All four x-output table pairs and the four function-type choices are transcribed."
+    },
+    "7": {
+      "prompt": "Which expression results in a rational number?",
+      "choices": ["√2·√18", "5·√5", "√2+√2", "3√2+2√3"],
+      "explanation": "Multiply radicals in choice (1): √2·√18=√36=6, a rational integer. The other expressions retain nonzero irrational radicals.",
+      "imageAlt": "All four radical products and sums are transcribed with square-root signs over their exact radicands."
+    },
+    "8": {
+      "prompt": "A cubic graph falls left, rises right, and crosses the x-axis at −2, 1, and 2. Which function could represent it?",
+      "choices": ["f(x)=(x+1)(x²+2)", "f(x)=(x−1)(x²−2)", "f(x)=(x−1)(x²−4)", "f(x)=(x+1)(x²+4)"],
+      "explanation": "The shown zeros are −2, 1, and 2. Choice (3) factors as (x−1)(x−2)(x+2), giving exactly those three zeros and positive-cubic end behavior.",
+      "imageAlt": "Graph has left tail down and right tail up, local maximum left of y-axis, local minimum right of y-axis, and x-intercepts negative two, one, two."
+    },
+    "9": {
+      "prompt": "From p²+5=8p−7, Kate writes p²+12=8p. Which property did she use?",
+      "choices": ["associative property", "commutative property", "distributive property", "addition property of equality"],
+      "explanation": "Kate added 7 to both sides, changing 5 to 12 and −7 to 0. Adding the same quantity on both sides is the addition property of equality.",
+      "imageAlt": "Original and rewritten equations preserve squared p and constants; four named properties are transcribed."
+    },
+    "10": {
+      "prompt": "A ride requires height x to be greater than 42 inches and no more than 57 inches. Which inequality models it?",
+      "choices": ["42<x≤57", "42>x≥57", "42<x or x≤57", "42>x or x≥57"],
+      "explanation": "Greater than 42 excludes 42, while no more than 57 includes 57. Both restrictions must hold together, giving 42<x≤57.",
+      "imageAlt": "Strict lower bound 42 inches, inclusive upper bound 57 inches, and all four combined inequality statements are transcribed."
+    },
+    "11": {
+      "prompt": "Which situation can be modeled by a linear function?",
+      "choices": ["Bacteria triple daily.", "A cell phone loses 3.5% of value yearly.", "An amusement park admits 50 people every 30 minutes.", "A baseball tournament eliminates half the teams each round."],
+      "explanation": "Admitting a fixed 50 people per 30 minutes gives a constant additive rate, characteristic of a linear function. The other choices repeatedly multiply by a factor or percentage.",
+      "imageAlt": "Four scenarios preserve triple-per-day, 3.5 percent annual depreciation, 50 people per 30 minutes, and half-teams-per-round details."
+    },
+    "12": {
+      "prompt": "Survey: of males, 23 prefer pizza and 42 burgers; of females, 31 prefer pizza and 26 burgers. Of burger-preferring people, approximately what percent were female?",
+      "choices": ["21.3", "38.2", "45.6", "61.9"],
+      "explanation": "Among burger-preferring people, 26 were female and 42 male, for 68 total. The requested percent is 26/68×100≈38.2%.",
+      "imageAlt": "Complete gender-by-pizza-or-burgers table is transcribed in the prompt, including 42 male and 26 female burger preferences."
+    },
+    "13": {
+      "prompt": "Solve 3a+7b>2a−8b for a.",
+      "choices": ["a>−b", "a<−b", "a<−15b", "a>−15b"],
+      "explanation": "Subtract 2a from both sides and then subtract 7b: a>−8b−7b=−15b.",
+      "imageAlt": "Original two-variable strict inequality and four solved inequalities preserve direction and coefficients."
+    },
+    "14": {
+      "prompt": "Three functions are shown: A is g(x)=−(3/2)x+4; B is f(x)=(x+2)(x+6); C is a downward-opening parabola h with vertex near (−3,1) and roots near −4 and −2. Which statement is true?",
+      "choices": ["B and C have the same zeros.", "A and B have the same y-intercept.", "B has a minimum and C has a maximum.", "C has a maximum and A has a minimum."],
+      "explanation": "B opens upward because its leading coefficient is positive, so it has a minimum. C opens downward, so it has a maximum. A is a line and has neither a global minimum nor maximum.",
+      "imageAlt": "Linear formula A, factored upward quadratic B, and downward quadratic graph C with its approximate vertex and roots are transcribed."
+    },
+    "15": {
+      "prompt": "Nicci's sister is 7 years less than twice Nicci's age a. Their ages sum to 41. Which equation represents this?",
+      "choices": ["a+(7−2a)=41", "a+(2a−7)=41", "2a−7=41", "a=2a−7"],
+      "explanation": "The sister's age is 2a−7. Add Nicci's own age a and set the sum to 41: a+(2a−7)=41.",
+      "imageAlt": "Age relationship seven less than twice a, total 41, and all four equations preserve parentheses and signs."
+    },
+    "16": {
+      "prompt": "Town populations were 2013:3810, 2014:3943, 2015:4081, 2016:4224, with 2013 represented by x=0. For P(x)=abˣ and b rounded to the nearest thousandth, which statements hold? I. a=3810; II. a=4224; III. b=0.035; IV. b=1.035.",
+      "choices": ["I and III", "I and IV", "II and III", "II and IV"],
+      "explanation": "At x=0, P(0)=a=3810. The year-to-year multiplier is approximately 3943/3810≈1.0349, which rounds to b=1.035. Thus I and IV hold.",
+      "imageAlt": "All four year-population pairs, initial-time convention, exponential model, and four numbered parameter claims are transcribed."
+    },
+    "17": {
+      "prompt": "Which product equals 4w²−11w−3?",
+      "choices": ["(2w+1)(2w−3)", "(2w−1)(2w+3)", "(4w+1)(w−3)", "(4w−1)(w+3)"],
+      "explanation": "Expand (4w+1)(w−3)=4w²−12w+w−3=4w²−11w−3.",
+      "imageAlt": "Quadratic four w squared minus eleven w minus three and four signed factor pairs are transcribed."
+    },
+    "18": {
+      "prompt": "Which ordered pair is not on y=3x²−x+7?",
+      "choices": ["(−1.5,15.25)", "(0.5,7.25)", "(1.25,10.25)", "(2.5,23.25)"],
+      "explanation": "At x=1.25, the formula gives 3(1.25)²−1.25+7=10.4375, not 10.25. The other three listed pairs satisfy the formula.",
+      "imageAlt": "Quadratic equation and all four decimal ordered pairs are transcribed, preserving every sign and decimal digit."
+    },
+    "19": {
+      "prompt": "Three sequences are I. 2,4,6,8,10,...; II. 2,4,8,16,32,...; III. a,a+2,a+4,a+6,a+8,... . Which are arithmetic?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "Sequences I and III add the same amount, 2, at each step. Sequence II doubles, so it is geometric rather than arithmetic.",
+      "imageAlt": "All three complete starting patterns and four combination choices are transcribed."
+    },
+    "20": {
+      "prompt": "C(w) is the cost of a grocery-store package of beef weighing w pounds. What is the most appropriate domain?",
+      "choices": ["integers", "rational numbers", "positive integers", "positive rational numbers"],
+      "explanation": "A package must weigh more than zero and can weigh a fraction of a pound. Among these choices, positive rational numbers best model package weights.",
+      "imageAlt": "Weight w in pounds and four number-set choices are transcribed with positive and rational qualifiers."
+    },
+    "21": {
+      "prompt": "What are the roots of x²−5x−4=0?",
+      "choices": ["1 and 4", "(5±√41)/2", "−1 and −4", "(−5±√41)/2"],
+      "explanation": "The quadratic formula gives x=[5±√(25+16)]/2=(5±√41)/2.",
+      "imageAlt": "Quadratic with negative five x and negative four, and all four root sets preserve the square-root 41 and fraction denominators."
+    },
+    "22": {
+      "prompt": "New York Knicks heights in inches are 84,80,87,75,77,79,80,74,76,80,80,82,82. What is their population standard deviation, approximately?",
+      "choices": ["3.5", "13", "79.7", "80"],
+      "explanation": "The 13 heights have mean about 79.69. The population standard deviation, √[Σ(x−mean)²/13], is about 3.49 inches, which rounds to 3.5.",
+      "imageAlt": "All thirteen player heights from the table and four numeric statistics choices are transcribed."
+    },
+    "23": {
+      "prompt": "A decaying bacteria population is f(t)=1000(0.98)ᵗ. What is its rate of decay?",
+      "choices": ["98%", "2%", "0.98%", "0.02%"],
+      "explanation": "The population retains 98% each time period, so it loses 100%−98%=2% per period.",
+      "imageAlt": "Decay model with multiplier 0.98 and all four percentage choices are transcribed."
+    },
+    "24": {
+      "prompt": "Bamboo grows 91 centimeters per day. About how many inches per hour is that?",
+      "choices": ["1.49", "3.79", "9.63", "35.83"],
+      "explanation": "Convert centimeters to inches and days to hours: (91 cm/day)(1 in/2.54 cm)(1 day/24 hr)≈1.49 inches per hour.",
+      "imageAlt": "Original rate 91 centimeters per day, desired inches per hour, and four decimal choices are transcribed."
+    }
+  }
+}

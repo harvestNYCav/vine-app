@@ -59,6 +59,7 @@ export async function deleteUserProfile(
   const statements = [
     { sql: 'DELETE FROM user_tracks WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM student_settings WHERE user_id = ?', args: [userId] },
+    { sql: 'DELETE FROM student_regents_courses WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM vocab_progress WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM module_progress WHERE user_id = ?', args: [userId] },
     { sql: 'DELETE FROM teaching_sessions WHERE user_id = ?', args: [userId] },
@@ -122,6 +123,7 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM admin_email_allowlist', args: [] },
     { sql: 'DELETE FROM tutor_signup_requests', args: [] },
     { sql: 'DELETE FROM student_settings', args: [] },
+    { sql: 'DELETE FROM student_regents_courses', args: [] },
     { sql: 'DELETE FROM student_tutors', args: [] },
     { sql: 'DELETE FROM parent_students', args: [] },
     { sql: 'DELETE FROM parent_settings', args: [] },

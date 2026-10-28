@@ -11,6 +11,7 @@ import { getElaExamsForGrade } from '@/content/ela-exams'
 import { resolveStudentViewResult } from '@/lib/student-view'
 import StudentViewFallback from '@/components/StudentViewFallback'
 import ViewLink from '@/components/ViewLink'
+import { getStudentRegentsCourses, REGENTS_COURSE_OPTIONS } from '@/lib/regents-courses'
 
 const MODULE_EMOJIS: Record<string, string> = {
   Hand: '👋', Train: '🚇', ShoppingCart: '🛒', Users: '👨‍👩‍👧', Shirt: '👕', MessageSquare: '💬',
@@ -64,6 +65,9 @@ export default async function HomePage() {
   const hasMath = tracks.includes('math')
   const hasEla = tracks.includes('ela')
   const settings = view.settings
+  const regentsCourses = settings.highSchoolGradeLevel
+    ? await getStudentRegentsCourses(db, view.studentId)
+    : []
 
   const [mpResult, alResult, vmResult, mathResult, msResult, examProgressResult, elaExamProgressResult] = await Promise.all([
     db.execute({ sql: 'SELECT * FROM module_progress WHERE user_id = ?', args: [view.studentId] }),
@@ -186,7 +190,24 @@ export default async function HomePage() {
               {!readOnly && <span className="text-gray-300 text-lg">→</span>}
             </div>
           </ViewLink>
-          {currentExam ? (
+          {settings.highSchoolGradeLevel ? (
+            regentsCourses.filter(course => course !== 'english').length ? (
+              regentsCourses.filter(course => course !== 'english').map(course => (
+                <ViewLink key={course} href={`/vine-app/regents/${course}`} readOnly={readOnly} className="block">
+                  <div className="flex items-center justify-between rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-4 shadow-sm">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">📐</span>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-800">{REGENTS_COURSE_OPTIONS.find(option => option.id === course)?.label} Regents</p>
+                        <p className="text-xs text-gray-500">Released exam lessons and multiple-choice practice</p>
+                      </div>
+                    </div>
+                    {!readOnly && <span className="text-gray-300 text-lg">→</span>}
+                  </div>
+                </ViewLink>
+              ))
+            ) : <p className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">An admin needs to assign a Regents Math course.</p>
+          ) : currentExam ? (
             <ViewLink href={`/vine-app/math/exams/${currentExam.slug}`} readOnly={readOnly} className="block">
               <div className="flex items-center justify-between rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-white p-4 shadow-sm">
                 <div className="flex items-center gap-3">
@@ -218,7 +239,22 @@ export default async function HomePage() {
 
       {hasEla && (
         <div className="mb-4">
-          {currentElaExam ? (
+          {settings.highSchoolGradeLevel ? (
+            regentsCourses.includes('english') ? (
+              <ViewLink href="/vine-app/regents/english" readOnly={readOnly} className="block">
+                <div className="flex items-center justify-between rounded-2xl border border-purple-100 bg-gradient-to-r from-purple-50 to-white p-4 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">📖</span>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-800">English Language Arts Regents</p>
+                      <p className="text-xs text-gray-500">Released passage lessons and multiple-choice practice</p>
+                    </div>
+                  </div>
+                  {!readOnly && <span className="text-gray-300 text-lg">→</span>}
+                </div>
+              </ViewLink>
+            ) : <p className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">An admin needs to assign the English Language Arts Regents course.</p>
+          ) : currentElaExam ? (
             <ViewLink href={`/vine-app/ela/exams/${currentElaExam.slug}`} readOnly={readOnly} className="block">
               <div className="flex items-center justify-between rounded-2xl border border-purple-100 bg-gradient-to-r from-purple-50 to-white p-4 shadow-sm">
                 <div className="flex items-center gap-3">

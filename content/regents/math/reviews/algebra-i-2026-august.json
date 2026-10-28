@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "a96a2c42e812296c717e847b224b5ce106ce6996ebdda2c8a530195c9d55e6e0",
+  "questions": {
+    "1": {
+      "prompt": "The monarch butterfly population doubled every day during the month of June. Which kind of function best describes this situation?",
+      "choices": ["linear", "quadratic", "exponential growth", "exponential decay"],
+      "explanation": "Doubling multiplies the population by the same factor, 2, each day. Repeated multiplication by a factor greater than 1 is exponential growth.",
+      "imageAlt": "The butterfly population doubles daily; the question and four function-type choices are reproduced in accessible text."
+    },
+    "2": {
+      "prompt": "The solution to 3x − 4 = 2.6x + 8.2 is",
+      "choices": ["30.5", "10.5", "21.5", "3.05"],
+      "explanation": "Subtract 2.6x from both sides and add 4: 0.4x = 12.2. Dividing by 0.4 gives x = 30.5.",
+      "imageAlt": "Equation 3x minus 4 equals 2.6x plus 8.2, with all four numeric choices transcribed."
+    },
+    "3": {
+      "prompt": "Given 2x + y = 6 and x = 4y + 12, when solving by substitution, which equation could be a step in solving this system?",
+      "choices": ["2(4y + 12) + y = 6", "2(−4y − 12) + y = 6", "x = 4(−6 + 2x) + 12", "x = 4(6 + 2x) + 12"],
+      "explanation": "The second equation gives x = 4y + 12. Replace x with 4y + 12 in 2x + y = 6 to obtain 2(4y + 12) + y = 6.",
+      "imageAlt": "System 2x plus y equals 6 and x equals 4y plus 12; every substitution equation and its signs are transcribed."
+    },
+    "4": {
+      "prompt": "Which inequality represents 80 decreased by a number is less than 100?",
+      "choices": ["80 − n > 100", "80 − n < 100", "n − 80 < 100", "n − 80 > 100"],
+      "explanation": "'80 decreased by a number' is 80 − n. 'Is less than 100' means < 100, giving 80 − n < 100.",
+      "imageAlt": "The phrases decreased by and less than, and all four inequality signs and subtraction orders, are transcribed."
+    },
+    "5": {
+      "prompt": "Dave bought a new car for $29,500. As soon as he drove it off the car lot, it began to depreciate in value. He was told that the car's value would continue to decline at an average yearly rate of 17.5% for the first 5 years. The function V(t) represents the value of Dave's car in t years, where t ≤ 5. Which function correctly models this situation?",
+      "choices": ["V(t) = 29,500(1 + 1.75)^t", "V(t) = 29,500(1 − 1.75)^t", "V(t) = 29,500(1 + 0.175)^t", "V(t) = 29,500(1 − 0.175)^t"],
+      "explanation": "A yearly decline of 17.5% leaves 100% − 17.5% = 82.5% of the previous value each year. The factor is 0.825 = 1 − 0.175, so V(t) = 29,500(1 − 0.175)^t for t ≤ 5.",
+      "imageAlt": "Car starts at 29,500 dollars and loses 17.5 percent annually for at most five years; all growth and decay factors are transcribed."
+    },
+    "6": {
+      "prompt": "Which expression is equivalent to 400 − x²?",
+      "choices": ["(200 − x)(200 + x)", "(x − 200)(x + 200)", "(20 − x)(20 + x)", "(x − 20)(x + 20)"],
+      "explanation": "Since 400 = 20², use the difference-of-squares identity a² − b² = (a − b)(a + b). Thus 400 − x² = (20 − x)(20 + x).",
+      "imageAlt": "Difference of squares 400 minus x squared and all four factorizations are transcribed."
+    },
+    "7": {
+      "prompt": "The scatter plot shows the relationship between the number of internet-connected devices and the number of members in a household. For a household that has six members, what would be the best estimate for the number of internet-connected devices?",
+      "choices": ["6", "10", "14", "18"],
+      "explanation": "The points show a positive trend of roughly 1.5 to 2 devices per household member. Near six members, that trend is about 10 devices; 6 is too low, while 14 and 18 are above the likely trend.",
+      "imageAlt": "Scatter plot: horizontal axis household members 2 to 10; vertical axis internet-connected devices 2 to 20. Points trend upward. At x=5 there are points near y=6, 7, 10, 12, 13; at x=7 near y=7, 9, 11, 12, 13. Estimate at six members from the overall trend."
+    },
+    "8": {
+      "prompt": "What is the equation of the axis of symmetry for y = −x² + 6x?",
+      "choices": ["y = 9", "x = 9", "y = 3", "x = 3"],
+      "explanation": "For y = ax² + bx + c, the axis is x = −b/(2a). Here a = −1 and b = 6, so x = −6/(−2) = 3.",
+      "imageAlt": "Quadratic y equals negative x squared plus 6x; horizontal and vertical axis choices are transcribed."
+    },
+    "9": {
+      "prompt": "The first step in solving a quadratic equation is shown: x² − 2x + 3 = −12 becomes x² − 2x + 15 = 0. Which property was used?",
+      "choices": ["additive identity", "addition property of equality", "commutative property of addition", "associative property of addition"],
+      "explanation": "The same number, 12, was added to each side: 3 becomes 15 and −12 becomes 0. This is the addition property of equality.",
+      "imageAlt": "Both displayed equations, x squared minus 2x plus 3 equals negative 12 and x squared minus 2x plus 15 equals zero, are transcribed."
+    },
+    "10": {
+      "prompt": "A fourth-degree polynomial with a leading coefficient of eight and a constant term of twelve written in standard form is",
+      "choices": ["12 + 5x² + 8x⁴", "8x⁴ + 5x² + 12", "12 + 6x + 5x² + 8x³", "8x³ + 5x² + 6x + 12"],
+      "explanation": "Fourth degree requires an x⁴ term, the coefficient of that leading term must be 8, and the constant must be 12. Standard form lists powers in descending order, so 8x⁴ + 5x² + 12 fits.",
+      "imageAlt": "Four polynomial choices with terms and exponents in their printed order are transcribed."
+    },
+    "11": {
+      "prompt": "If g(x) = x² − x, then what is the value of g(−4)?",
+      "choices": ["−20", "−12", "12", "20"],
+      "explanation": "Substitute x = −4: g(−4) = (−4)² − (−4) = 16 + 4 = 20.",
+      "imageAlt": "Function g of x equals x squared minus x and input negative four, with all signed choices transcribed."
+    },
+    "12": {
+      "prompt": "A cookie recipe requires 1¾ cups of flour to make 25 cookies. Using the same recipe, how many ounces of flour are needed to make 75 cookies? Use 1 cup = 8 ounces.",
+      "choices": ["10.72", "14", "32.16", "42"],
+      "explanation": "Seventy-five cookies are three times 25, so the flour needed is 3 × 1¾ = 5¼ cups. At 8 ounces per cup, 5¼ × 8 = 42 ounces.",
+      "imageAlt": "Mixed number one and three-fourths cups for 25 cookies, target 75 cookies, and one cup equals eight ounces are transcribed."
+    },
+    "13": {
+      "prompt": "The product of 3√7 and √7 is",
+      "choices": ["rational, because the product is 21", "rational, because the product of two irrational numbers is always rational", "irrational, because the product of two irrational numbers is always irrational", "irrational, because √7 is a nonrepeating, nonterminating decimal"],
+      "explanation": "Multiply 3√7 · √7 = 3 · 7 = 21, an integer and therefore rational. Products of irrational numbers are not always rational, so the specific computation—not a universal rule—is the reason.",
+      "imageAlt": "Radical factors three times square root of seven and square root of seven, plus all rational-versus-irrational reasons, are transcribed."
+    },
+    "14": {
+      "prompt": "Three functions f(x), g(x), and h(x) are shown. Which function or functions will always increase over the interval 1 ≤ x ≤ 4?",
+      "choices": ["g(x), only", "h(x), only", "f(x) and g(x)", "f(x) and h(x)"],
+      "explanation": "f(x) = 3(2)^x increases for all x because its base is greater than 1. The graph of g(x) is on the rising right-hand arm of a V throughout 1 ≤ x ≤ 4. The table for h decreases from 4 to 3 as x goes from 1 to 2, so h does not always increase there.",
+      "imageAlt": "Three representations: f(x)=3 times 2 to the x; g(x) is a V-shaped graph with its vertex left of the y-axis and a rising right arm over x from 1 to 4; h table has x values −1,0,1,2,3,4,5 and outputs 12,7,4,3,4,7,12."
+    },
+    "15": {
+      "prompt": "The zeros of f(x) = x(x + 2)(x − 4) are",
+      "choices": ["{2, −4}", "{−2, 4}", "{0, 2, −4}", "{0, −2, 4}"],
+      "explanation": "Set each factor equal to zero: x = 0, x + 2 = 0 gives x = −2, and x − 4 = 0 gives x = 4. The zeros are {0, −2, 4}.",
+      "imageAlt": "Factored polynomial x times x plus 2 times x minus 4 and every signed set of proposed zeros are transcribed."
+    },
+    "16": {
+      "prompt": "Three expressions are shown: I. 2^(x + 6); II. 4^(x + 3); III. 16 · 2^(x + 2). Which of these expressions are equivalent for all values of x?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "Expression III is 2⁴ · 2^(x + 2) = 2^(x + 6), so it equals I. Expression II is (2²)^(x + 3) = 2^(2x + 6), which is not the same for all x.",
+      "imageAlt": "The three exponential expressions are fully transcribed, including bases 2, 4, and 16 and exponent groups x+6, x+3, and x+2."
+    },
+    "17": {
+      "prompt": "When using the method of completing the square to solve x² + 4x − 11 = 0, which equation is a correct step in the process?",
+      "choices": ["(x + 2)² = −7", "(x − 2)² = −7", "(x + 2)² = 15", "(x − 2)² = 15"],
+      "explanation": "First write x² + 4x = 11. Add (4/2)² = 4 to both sides: x² + 4x + 4 = 15, so (x + 2)² = 15.",
+      "imageAlt": "Quadratic x squared plus 4x minus 11 equals zero and all four squared-binomial equations are transcribed."
+    },
+    "18": {
+      "prompt": "George and Henry are in a bowling league. Their top scores from each of the last nine weeks are listed. George: 198, 101, 167, 202, 185, 103, 192, 200, 198. Henry: 210, 126, 194, 200, 172, 98, 215, 114, 202. Which statement correctly describes the relationship between George and Henry's bowling scores?",
+      "choices": ["George's standard deviation is less than Henry's, but George's mean is greater than Henry's.", "George's standard deviation is greater than Henry's, but George's mean is less than Henry's.", "George's standard deviation and mean are both less than Henry's.", "George's standard deviation and mean are both greater than Henry's."],
+      "explanation": "George's mean is 1546/9 ≈ 171.78; Henry's mean is 1531/9 ≈ 170.11. Their population standard deviations are approximately 38.6 and 42.7, respectively. George therefore has the higher mean but the lower spread.",
+      "imageAlt": "Two-row bowling-score table: George 198,101,167,202,185,103,192,200,198; Henry 210,126,194,200,172,98,215,114,202. All comparison options are transcribed."
+    },
+    "19": {
+      "prompt": "The mapping shown demonstrates a relation. Which statement about this relation is true?",
+      "choices": ["It is a function because each element of the domain maps onto only one element of the range.", "It is a function because each element of the range maps onto only one element of the domain.", "It is not a function because each element of the domain maps onto only one element of the range.", "It is not a function because each element of the range maps onto only one element of the domain."],
+      "explanation": "A function assigns exactly one output to each input. The arrows are A→1, B→1, C→3, and D→2; every domain element has only one arrow, even though A and B share an output.",
+      "imageAlt": "Mapping diagram: left domain A,B,C,D; right range 1,2,3. Arrows A to 1, B to 1, C to 3, D to 2."
+    },
+    "20": {
+      "prompt": "The function f(x) = |x + 6| − 5 is shifted to the right 2 units to make the function g(x). Which function represents g(x)?",
+      "choices": ["g(x) = |x + 4| − 5", "g(x) = |x + 8| − 5", "g(x) = |x + 6| − 3", "g(x) = |x + 6| − 7"],
+      "explanation": "A shift right by 2 replaces x with x − 2: g(x) = f(x − 2) = |(x − 2) + 6| − 5 = |x + 4| − 5.",
+      "imageAlt": "Absolute-value function f(x)=absolute value of x+6 minus 5; all four transformed formulas are transcribed."
+    },
+    "21": {
+      "prompt": "The table shows the average cost for one dozen large eggs: 2009 $1.34, 2010 $2.65, 2011 $2.65, 2012 $2.68, 2013 $2.68, 2014 $2.00, 2015 $2.11, and 2016 $2.08. What is the average rate of change of the cost, in dollars per year, from 2009 to 2016 rounded to the nearest hundredth?",
+      "choices": ["−0.11", "−0.10", "0.10", "0.11"],
+      "explanation": "Average rate of change uses the endpoints: (2.08 − 1.34)/(2016 − 2009) = 0.74/7 ≈ 0.1057 dollars per year, which rounds to $0.11 per year.",
+      "imageAlt": "Egg-cost table with years 2009–2016 and costs 1.34,2.65,2.65,2.68,2.68,2.00,2.11,2.08 dollars; all signed rate choices are transcribed."
+    },
+    "22": {
+      "prompt": "Which ordered pair represents a point on the graph of y = x² − 7x − 10?",
+      "choices": ["(−10, 0)", "(10, 0)", "(3.5, −22.5)", "(3.5, −22.25)"],
+      "explanation": "Substitute x = 3.5: y = 3.5² − 7(3.5) − 10 = 12.25 − 24.5 − 10 = −22.25. Thus (3.5, −22.25) lies on the graph.",
+      "imageAlt": "Quadratic y=x squared minus 7x minus 10; four ordered pairs and their negative signs and decimals are transcribed."
+    },
+    "23": {
+      "prompt": "When factored completely, x⁴ − 5x³ − 36x² is",
+      "choices": ["x(x³ − 5x² − 36x)", "x²(x² − 5x − 36)", "x²(x − 9)(x + 4)", "(x² − 9)(x² + 4)"],
+      "explanation": "First factor out the greatest common factor x²: x²(x² − 5x − 36). The quadratic factors because −9 × 4 = −36 and −9 + 4 = −5, yielding x²(x − 9)(x + 4).",
+      "imageAlt": "Polynomial x to the fourth minus 5x cubed minus 36x squared and all four progressively factored forms are transcribed."
+    },
+    "24": {
+      "prompt": "When 3x² − 2x + 1 is subtracted from 4x² + 5x − 6, the result is",
+      "choices": ["−x² + 3x − 5", "−x² − 7x + 7", "x² + 3x − 5", "x² + 7x − 7"],
+      "explanation": "The subtraction order matters: (4x² + 5x − 6) − (3x² − 2x + 1) = 4x² + 5x − 6 − 3x² + 2x − 1 = x² + 7x − 7.",
+      "imageAlt": "Both trinomials, subtraction order, and all four result polynomials are fully transcribed."
+    }
+  }
+}

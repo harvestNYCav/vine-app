@@ -3,7 +3,8 @@ import getDb from '@/lib/db'
 import { ALL_MODULES } from '@/content/modules'
 import { getStudentTracks } from '@/lib/tracks'
 import { getStudentTutorIds } from '@/lib/tutors'
-import { getStudentSettings } from '@/lib/student-settings'
+import { getStudentSettings, studentSchoolGradeLevel } from '@/lib/student-settings'
+import { getStudentRegentsCourses, REGENTS_COURSE_OPTIONS } from '@/lib/regents-courses'
 import { listParentsForAdmin } from '@/lib/parents'
 import { loadTutorPairingRecords, summarizeTutorPairings } from '@/lib/tutor-pairings'
 import { listTutorSignupRequests } from '@/lib/tutor-approvals'
@@ -17,6 +18,7 @@ import AdminPinResetControls from './AdminPinResetControls'
 import AdminTutorApprovalControls from './AdminTutorApprovalControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
+import { assignedRegentsSectionKeys } from '@/lib/regents-progress'
 
 function formatLastActive(value: number) {
   if (!value) return 'No activity yet'
@@ -61,15 +63,16 @@ export default async function AdminPage() {
   ]
 
   const studentData = await Promise.all(students.map(async student => {
-    const [tracks, tutorIds, settings, modulesResult, vocabResult, reviewedResult, mathResult, examProgressResult, elaExamProgressResult] = await Promise.all([
+    const [tracks, tutorIds, settings, regentsCourses, modulesResult, vocabResult, reviewedResult, mathResult, examProgressResult, elaExamProgressResult] = await Promise.all([
       getStudentTracks(db, student.id),
       getStudentTutorIds(db, student.id),
       getStudentSettings(db, student.id),
+      getStudentRegentsCourses(db, student.id),
       db.execute({ sql: 'SELECT module_slug, homework_completed_at FROM module_progress WHERE user_id = ?', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM vocab_progress WHERE user_id = ? AND correct_count >= 3', args: [student.id] }),
       db.execute({ sql: 'SELECT COUNT(*) as count FROM module_progress WHERE user_id = ? AND vocab_viewed_at IS NOT NULL', args: [student.id] }),
       db.execute({ sql: 'SELECT total_problems, total_correct FROM math_progress WHERE user_id = ?', args: [student.id] }),
-      db.execute({ sql: 'SELECT exam_id FROM math_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
+      db.execute({ sql: 'SELECT exam_id, section_slug FROM math_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
       db.execute({ sql: 'SELECT exam_id, section_slug FROM ela_exam_section_progress WHERE user_id = ? AND completed_at IS NOT NULL', args: [student.id] }),
     ])
     type ModuleProgressRow = { module_slug: string; homework_completed_at: number | null }
@@ -86,6 +89,7 @@ export default async function AdminPage() {
       tracks,
       tutorIds,
       settings,
+      regentsCourses,
       completedLessons,
       totalLessons: chosenEnglishModules.length,
       vocabMastered: Number(vocabResult.rows[0]?.count ?? 0),
@@ -93,10 +97,26 @@ export default async function AdminPage() {
       mathProblems,
       mathAccuracy: mathProblems ? Math.round(mathCorrect / mathProblems * 100) : 0,
       examSectionsCompleted: (() => {
+        if (settings.highSchoolGradeLevel) {
+          const assignedSectionKeys = assignedRegentsSectionKeys(
+            regentsCourses, tracks, settings.highSchoolGradeLevel, 'math',
+          )
+          return examProgressResult.rows.filter(row =>
+            assignedSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
+          ).length
+        }
         const assignedExamIds = new Set(getMathExamsForGrade(settings.gradeLevel).map(exam => exam.id))
         return examProgressResult.rows.filter(row => assignedExamIds.has(String(row.exam_id))).length
       })(),
       elaExamSectionsCompleted: (() => {
+        if (settings.highSchoolGradeLevel) {
+          const assignedSectionKeys = assignedRegentsSectionKeys(
+            regentsCourses, tracks, settings.highSchoolGradeLevel, 'ela',
+          )
+          return elaExamProgressResult.rows.filter(row =>
+            assignedSectionKeys.has(`${String(row.exam_id)}:${String(row.section_slug)}`)
+          ).length
+        }
         const assignedSectionKeys = new Set(getElaExamsForGrade(settings.gradeLevel).flatMap(exam =>
           exam.sections.map(section => `${exam.id}:${section.slug}`)
         ))
@@ -187,8 +207,17 @@ export default async function AdminPage() {
                       }
                     </p>
                     <p className="mt-1 text-xs font-semibold text-slate-600">
-                      Grade level: {student.settings.gradeLevel ? `Grade ${student.settings.gradeLevel}` : 'Not assigned'}
+                      Grade level: {studentSchoolGradeLevel(student.settings)
+                        ? `Grade ${studentSchoolGradeLevel(student.settings)}`
+                        : 'Not assigned'}
                     </p>
+                    {student.regentsCourses.length > 0 && (
+                      <p className="mt-1 text-xs text-slate-600">
+                        Regents courses: {student.regentsCourses.map(course =>
+                          REGENTS_COURSE_OPTIONS.find(option => option.id === course)?.label ?? course,
+                        ).join(', ')}
+                      </p>
+                    )}
                   </div>
                   <div className="flex gap-1">
                     {student.tracks.length === 0 ? (
@@ -226,7 +255,8 @@ export default async function AdminPage() {
                 initialTutorIds={student.tutorIds}
                 initialTracks={student.tracks}
                 initialMathSpanishEnabled={student.settings.mathSpanishEnabled}
-                initialGradeLevel={student.settings.gradeLevel}
+                initialGradeLevel={studentSchoolGradeLevel(student.settings)}
+                initialRegentsCourses={student.regentsCourses}
                 tutors={tutors}
                 pairings={pairingsByStudent.get(student.id) ?? []}
               />

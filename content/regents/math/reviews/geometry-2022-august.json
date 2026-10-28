@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "cde6d44126dfb9f987e70acdf3a19d6257c84a6c67fba49de014bbf8ff0933ca",
+  "questions": {
+    "1": {
+      "prompt": "Triangle ABC is reflected over line ℓ to triangle DEF. If angle A = 40° and angle B = 95°, what is angle F?",
+      "choices": ["40°", "45°", "85°", "95°"],
+      "explanation": "Triangle ABC has angle C = 180° − 40° − 95° = 45°. Reflection preserves angles, and ordered vertices give C↔F, so angle F is 45°.",
+      "imageAlt": "Triangle ABC is left of slanted reflection line ℓ, with A lower left, B upper left, C upper right. Reflected triangle DEF is right of the line, with D bottom, E at right, F upper left."
+    },
+    "2": {
+      "prompt": "In triangle ABC, X lies on AB and Y lies on CB. Which information proves triangle BXY similar to triangle BAC?",
+      "choices": ["angle B is a right angle", "XY ∥ AC", "triangle ABC is isosceles", "AX ≅ CY"],
+      "explanation": "Both triangles share angle B. If XY ∥ AC, corresponding angles at X and A and at Y and C are equal, giving AA similarity.",
+      "imageAlt": "Triangle ABC has B lower right, A upper right, and C left. X is on BA, Y on BC, and interior segment XY joins them, visually parallel to AC only if the stated extra fact holds."
+    },
+    "3": {
+      "prompt": "Quadrilateral MATH is congruent to quadrilateral WXYZ. Which statement is always true?",
+      "choices": ["MA ≅ XY", "angle H = angle W", "WXYZ can be mapped onto MATH by a sequence of rigid motions", "MATH and WXYZ have the same shape but not necessarily the same size"],
+      "explanation": "Congruent figures have the same shape and size, and one can be mapped exactly onto the other using translations, rotations, and reflections. The ordered letters do not support the other proposed correspondences.",
+      "imageAlt": "Printed congruence-definition question; ordered quadrilateral names and all candidate statements are in accessible text."
+    },
+    "4": {
+      "prompt": "A quadrilateral has perpendicular but noncongruent diagonals. What could it be?",
+      "choices": ["square", "rhombus", "rectangle", "isosceles trapezoid"],
+      "explanation": "A rhombus has perpendicular diagonals, and a non-square rhombus has diagonals of different lengths. A square's diagonals are congruent, and the other shapes need not have perpendicular diagonals.",
+      "imageAlt": "Printed quadrilateral-property question; the diagonal conditions and all shapes are in accessible text."
+    },
+    "5": {
+      "prompt": "Which regular polygon has minimum positive rotational symmetry angle 36°?",
+      "choices": ["pentagon", "octagon", "nonagon", "decagon"],
+      "explanation": "A regular n-gon has smallest rotation 360°/n. Solving 360°/n = 36° gives n = 10, a decagon.",
+      "imageAlt": "Printed rotational-symmetry question; angle and polygon names are in accessible text."
+    },
+    "6": {
+      "prompt": "On a coordinate graph, triangle RST is the dilation image of triangle ABC centered at P. What is the scale factor?",
+      "choices": ["1/3", "2", "3", "2/3"],
+      "explanation": "Corresponding horizontal sides BC and ST measure 9 and 3 grid units. Image length divided by original length is 3/9 = 1/3.",
+      "imageAlt": "Coordinate grid shows large triangle ABC below-left of point P and smaller triangle RST between ABC and P. Both are right triangles with vertical right sides AB and RS and horizontal bases BC and ST. BC spans 9 grid units and ST spans 3."
+    },
+    "7": {
+      "prompt": "Right triangle ABC has right angle C, leg CB = 13, and hypotenuse AB = 16. Find angle A to the nearest degree.",
+      "choices": ["36°", "39°", "51°", "54°"],
+      "explanation": "Side CB is opposite angle A, so sin A = 13/16. Therefore A ≈ 54°.",
+      "imageAlt": "Right triangle has C lower left with right-angle mark, B lower right, and A directly above C. Horizontal leg CB is labeled 13 and sloping hypotenuse AB is labeled 16."
+    },
+    "8": {
+      "prompt": "A square pyramid is 107 yards high with base side 197 yards. What is its volume to the nearest cubic yard?",
+      "choices": ["751,818", "1,384,188", "2,076,212", "4,152,563"],
+      "explanation": "Volume is one third of base area times height: (1/3)(197²)(107) = 4,152,563/3 ≈ 1,384,188 cubic yards.",
+      "imageAlt": "Photograph of the Pyramid of Memphis, a large square-based pyramidal building. The numerical base side and height are stated in accessible text."
+    },
+    "9": {
+      "prompt": "A square has vertices (−1,2), (−1,−2), (3,−2), and (3,2). Which transformation does not map it onto itself?",
+      "choices": ["reflect over the y-axis", "reflect over the x-axis", "rotate 180° about (1,0)", "reflect over y = x − 1"],
+      "explanation": "The square's center is (1,0), not on the y-axis. Reflection across x = 0 sends its horizontal range [−1,3] to [−3,1], a different square. The other listed transformations are symmetries of this square.",
+      "imageAlt": "Axis-aligned square on a coordinate grid has left edge x = −1, right edge x = 3, top y = 2, and bottom y = −2. Its center is one unit right of the y-axis."
+    },
+    "10": {
+      "prompt": "Scalene triangle XYZ is similar to triangle QRS in that order, with angle X = 90°. Which equation is always true?",
+      "choices": ["sin Y = sin S", "cos R = cos Z", "cos Y = sin Q", "sin R = cos Z"],
+      "explanation": "Similarity gives Y↔R, so sin R = sin Y. In the right triangle, Y and Z are complementary; therefore sin Y = cos Z and sin R = cos Z.",
+      "imageAlt": "Printed right-triangle similarity question; ordered vertex correspondence and all trigonometric equations are in accessible text."
+    },
+    "11": {
+      "prompt": "A plane cuts a cylinder perpendicular to its circular bases. What is the cross-section shape?",
+      "choices": ["rectangle", "parabola", "triangle", "circle"],
+      "explanation": "A vertical slice perpendicular to both circular bases cuts two parallel vertical sides and two horizontal chords, forming a rectangle.",
+      "imageAlt": "Upright right circular cylinder is drawn with horizontal top and bottom circles and vertical sides. The cutting plane is specified as perpendicular to its bases."
+    },
+    "12": {
+      "prompt": "Line p is y = (1/3)x + 4 and line q is y = (2/3)x + 8. Which statement is true?",
+      "choices": ["a dilation of 1/2 about the origin maps q to p", "a dilation of 2 about the origin maps p to q", "q cannot be a dilation image of p because the lines are not parallel", "q cannot be a dilation image of p because neither line passes through the origin"],
+      "explanation": "A dilation maps a line not through its center to a parallel line, preserving slope. The slopes 1/3 and 2/3 differ, so q cannot be a dilation image of p.",
+      "imageAlt": "Printed line-dilation question; both equations, scale factors, and all claims are in accessible text."
+    },
+    "13": {
+      "prompt": "Segment SC has endpoints S(−7,3) and C(2,−6). M divides SC with SM:MC = 1:2. Find M.",
+      "choices": ["(−4,0)", "(0,−4)", "(−1,−3)", "(−5/2,−3/2)"],
+      "explanation": "The 1:2 ratio puts M one third of the way from S to C. The displacement is (9,−9), so one third is (3,−3). Add to S(−7,3) to get M(−4,0).",
+      "imageAlt": "Printed segment-partition question; signed coordinates, ratio, and fractional-coordinate choice are in accessible text."
+    },
+    "14": {
+      "prompt": "Rectangle WIND has vertices W(−4,2), I(4,0), N(3,−4), and D(−5,−2). What is its area?",
+      "choices": ["17", "31", "32", "34"],
+      "explanation": "Adjacent vectors WI = (8,−2) and WD = (−1,−4) are perpendicular. Their cross-product magnitude gives area |8(−4) − (−2)(−1)| = 34 square units.",
+      "imageAlt": "Tilted rectangle is graphed with W upper left at (−4,2), I right at (4,0), N lower right at (3,−4), and D lower left at (−5,−2)."
+    },
+    "15": {
+      "prompt": "In parallelogram ABCD, E lies on DC and EB bisects angle ABC. If angle A = 40°, find angle BED.",
+      "choices": ["40°", "70°", "110°", "140°"],
+      "explanation": "Adjacent angles of a parallelogram sum to 180°, so angle B = 140°. The bisector gives angle ABE = 70°. Since AB ∥ DE, angle BED is supplementary to angle ABE, so it is 110°.",
+      "imageAlt": "Parallelogram has A lower left, B lower right, C upper right, D upper left. E lies on top side DC, and EB descends to B, bisecting angle ABC at B."
+    },
+    "16": {
+      "prompt": "Similar right triangles ABC and RST have corresponding hypotenuses AB = 4 and RS = 16. The ratio 1:16 compares their corresponding what?",
+      "choices": ["legs", "areas", "volumes", "perimeters"],
+      "explanation": "The linear scale ratio is 4:16 = 1:4. Areas scale by its square, giving 1²:4² = 1:16.",
+      "imageAlt": "Printed similar-triangle scale question; corresponding hypotenuse lengths and all quantity types are in accessible text."
+    },
+    "17": {
+      "prompt": "In parallelogram ABCD, E lies on AB and F on DC. Segment EF bisects diagonal DB at M. Which methods prove triangle EMB congruent to triangle FMD?",
+      "choices": ["ASA only", "AAS only", "both ASA and AAS", "neither ASA nor AAS"],
+      "explanation": "Because AB ∥ DC, corresponding or alternate angles at E/F and B/D are equal; angles EMB and FMD are vertical. The bisection gives BM = DM. Using the angles at B/D and M with included BM/DM is ASA; using the angles at E/F and M with nonincluded BM/DM is AAS.",
+      "imageAlt": "Slanted parallelogram A-B-C-D has E on top side AB and F on bottom side DC. Diagonal D-B rises right; segment E-F descends right and crosses the diagonal at midpoint M."
+    },
+    "18": {
+      "prompt": "In circle O, chords AD and BC intersect at E; chords AB and CD are also drawn. Which statement must always hold?",
+      "choices": ["AB ≅ CD", "AD ≅ BC", "angle B ≅ angle C", "angle A ≅ angle C"],
+      "explanation": "Angle BAD at A and angle BCD at C both intercept the same arc BD. Inscribed angles subtending the same arc are congruent, so angle A ≅ angle C.",
+      "imageAlt": "Circle has A upper left, B lower left, C upper right, and D lower right. Chords AD and BC cross at interior E; chords AB and CD form the left and right sides. Angle A is between AB and AD; angle C between CB and CD."
+    },
+    "19": {
+      "prompt": "Circle x² + y² − 12y − 20.25 = 0 has what center and radius?",
+      "choices": ["center (0,6), radius 7.5", "center (0,−6), radius 7.5", "center (0,12), radius 4.5", "center (0,−12), radius 4.5"],
+      "explanation": "Complete the square: x² + (y−6)² = 20.25 + 36 = 56.25. The center is (0,6) and radius √56.25 = 7.5.",
+      "imageAlt": "Printed circle-equation question; squared terms, signed decimal, and center-radius choices are in accessible text."
+    },
+    "20": {
+      "prompt": "Rectangle ABCD has diagonal BD. Its vertical symmetry line ℓ and horizontal symmetry line m intersect at E. Which sequence maps triangle ABD onto triangle CDB?",
+      "choices": ["reflect over ℓ, then rotate 180° about E", "reflect over ℓ, then reflect over m", "rotate 180° about B", "reflect over BD"],
+      "explanation": "Reflecting across vertical ℓ and then horizontal m is a half-turn about their intersection E. It sends A→C, B→D, and D→B, exactly the correspondence from ABD to CDB.",
+      "imageAlt": "Wide rectangle has A upper left, B upper right, C lower right, D lower left. Diagonal DB rises from D to B through center E. Dashed vertical line ℓ and horizontal line m cross at E."
+    },
+    "21": {
+      "prompt": "An L-shaped solid-oak countertop has two 3-foot-wide arms, one 10 feet long and one 12 feet long. It is 3 inches thick, and oak weighs about 44 lb/ft³. What is its approximate weight?",
+      "choices": ["630", "730", "750", "870"],
+      "explanation": "The arms' plan area is 10·3 + 12·3 minus their overlapping 3·3 corner, or 57 ft². Thickness 3 inches is 0.25 foot, so volume is 14.25 ft³. Weight is 14.25·44 = 627 pounds, approximately 630.",
+      "imageAlt": "L-shaped countertop has outer arm lengths 10 ft and 12 ft meeting at a corner. Each arm has 3 ft width, and the slab edge is labeled 3 in thick. The 3-by-3-foot corner belongs to both arm measurements."
+    },
+    "22": {
+      "prompt": "In triangle ABC, T lies on AB and V on AC, with angle ATV = angle ABC. If AT = 4, TB = 5, AV = 6, and BC = 18, find the perimeter of quadrilateral TBCV.",
+      "choices": ["38.5", "39.5", "40.5", "44.9"],
+      "explanation": "Triangles ATV and ABC share angle A and have equal angles at T/B, so they are similar. AB = 9, giving scale AT/AB = 4/9. Then TV = (4/9)·18 = 8 and AC = 6·9/4 = 13.5, so VC = 7.5. Perimeter is TB + BC + CV + VT = 5 + 18 + 7.5 + 8 = 38.5.",
+      "imageAlt": "Triangle ABC has A at top, B lower left, C lower right. T lies on side AB and V on AC. Horizontal-ish line TV passes through both points, and base BC runs from B to C. Quadrilateral T-B-C-V is the portion below TV."
+    },
+    "23": {
+      "prompt": "A circle centered at the origin passes through A(−3,4). Which equation is tangent to the circle at A?",
+      "choices": ["y − 4 = (4/3)(x + 3)", "y − 4 = (3/4)(x + 3)", "y + 4 = (4/3)(x − 3)", "y + 4 = (3/4)(x − 3)"],
+      "explanation": "Radius OA has slope 4/(−3) = −4/3. A tangent is perpendicular, so its slope is 3/4. Through A(−3,4), its equation is y − 4 = (3/4)(x + 3).",
+      "imageAlt": "Coordinate axes pass through circle center O at the origin. Point A(−3,4) is on the upper-left circle; the tangent sought touches there."
+    },
+    "24": {
+      "prompt": "Cyclic quadrilateral ABCD has angle A = 2x°, angle B = (x−10)°, and angle C = (x+15)°. What is angle D?",
+      "choices": ["55°", "70°", "110°", "135°"],
+      "explanation": "Opposite angles of an inscribed quadrilateral are supplementary: 2x + (x+15) = 180, so x = 55. Then angle B = 45°, and its opposite angle D = 180° − 45° = 135°.",
+      "imageAlt": "Quadrilateral is inscribed in circle O with A near top, B right, C lower left, D upper left. Interior angles at A, B, C are labeled 2x°, (x−10)°, and (x+15)°; angle D is unmarked."
+    }
+  }
+}

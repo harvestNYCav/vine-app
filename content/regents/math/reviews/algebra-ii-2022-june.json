@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "f8efadcc83916addcdd9b95cff6cb4e6870101704ad5c203ad75778e0e41fba7",
+  "questions": {
+    "1": {
+      "prompt": "For positive x, which expression equals x^(3/4)?",
+      "choices": ["⁴√(x³)", "∛(x⁴)", "(x³)⁴", "3(x⁴)"],
+      "explanation": "A fractional exponent x^(m/n) means the nth root of x to the mth power. Thus x^(3/4) = ⁴√(x³).",
+      "imageAlt": "The original exponent is three-fourths; the radical choices exchange the root index and exponent."
+    },
+    "2": {
+      "prompt": "A school wants students' opinions on changing its mascot's name. Which proposed survey gives the most appropriate sample?",
+      "choices": ["Random senior homerooms only", "Every tenth student entering art classes", "Every fourth student entering the cafeteria during each lunch period", "All varsity sports team members"],
+      "explanation": "The cafeteria sampling plan reaches students from multiple grades and lunch periods, rather than restricting the sample to seniors, art students, or athletes. It is the most representative listed approach.",
+      "imageAlt": "The intended population is the entire school; the four plans sample seniors, art classes, cafeteria entrants throughout lunch periods, or varsity athletes."
+    },
+    "3": {
+      "prompt": "For x ≠ −3, which expression equals (2x³ + 7x² − 3x − 25)/(x + 3)?",
+      "choices": ["2x² + x − 6 − 7/(x + 3)", "2x² + 13x − 36 + 83/(x + 3)", "2x² + x − 13", "x² + 4x − 15 + 20/(x + 3)"],
+      "explanation": "Divide by x + 3 using −3 in synthetic division: coefficients 2, 7, −3, −25 yield quotient 2x² + x − 6 and remainder −7. The result is quotient minus 7/(x + 3).",
+      "imageAlt": "The numerator is two x cubed plus seven x squared minus three x minus twenty-five, and the denominator is x plus three; x cannot equal negative three."
+    },
+    "4": {
+      "prompt": "In a group of 40, 20 have brown hair, 22 have blue eyes, and 15 have both. How many have neither feature?",
+      "choices": ["0", "13", "27", "32"],
+      "explanation": "By inclusion–exclusion, 20 + 22 − 15 = 27 have brown hair or blue eyes. The remaining 40 − 27 = 13 have neither.",
+      "imageAlt": "The group has forty people; twenty have brown hair, twenty-two blue eyes, and fifteen are counted in both groups."
+    },
+    "5": {
+      "prompt": "An increasing exponential h(x) stays above the x-axis. A second graph reflects it below the x-axis while retaining its left-to-right positions. Which transformation gives the second graph?",
+      "choices": ["y = h(x) − 2", "y = h(x − 2)", "y = −h(x)", "y = h(−x)"],
+      "explanation": "Negating every output of h reflects its graph across the x-axis. The new graph is below the x-axis and decreases as x increases, matching y = −h(x).",
+      "imageAlt": "The original graph is an increasing exponential approaching y equals zero from above on the left and crossing the y-axis near one. The target graph is its mirror across the x-axis, approaching zero from below on the left and crossing near negative one."
+    },
+    "6": {
+      "prompt": "For polynomial p(x), if p(3) = 0, what follows?",
+      "choices": ["x + 3 is a factor", "x − 3 is a factor", "Division by 3 has remainder zero", "Division by −3 has remainder zero"],
+      "explanation": "The factor theorem says p(a) = 0 exactly when x − a is a factor. With a = 3, x − 3 is a factor of p(x).",
+      "imageAlt": "The stated zero of p is at x equals three. The choices distinguish the polynomial factors x plus three and x minus three from division by constants."
+    },
+    "7": {
+      "prompt": "Solve 5e^(x + 2) = 7.",
+      "choices": ["−2 + ln(7/5)", "ln(7)/ln(5) − 2", "−3/5", "−2 + ln(2)"],
+      "explanation": "Divide by 5: e^(x + 2) = 7/5. Taking natural logarithms gives x + 2 = ln(7/5), so x = −2 + ln(7/5).",
+      "imageAlt": "The exponent of e is the whole quantity x plus two; five multiplies the exponential and the result equals seven."
+    },
+    "8": {
+      "prompt": "Solve x + 2y − z = 1, −x − 3y + 2z = 0, and 2x − 4y + z = 10.",
+      "choices": ["(1, 1, 2)", "(3, −1, 0)", "(5, −1, 2)", "(3, 5, 8)"],
+      "explanation": "Substitute (3, −1, 0): the left sides are 3 − 2 = 1, −3 + 3 = 0, and 6 + 4 = 10, satisfying all three equations.",
+      "imageAlt": "The system consists of three linear equations in x, y, and z, with right sides one, zero, and ten."
+    },
+    "9": {
+      "prompt": "Using the displayed fixed-loan formula, what is the monthly payment on a $240,000 mortgage over 15 years at 4.5% annual interest?",
+      "choices": ["$1,379.09", "$1,604.80", "$1,835.98", "$9,011.94"],
+      "explanation": "The monthly interest rate is 0.045/12 = 0.00375 and the number of payments is 15·12 = 180. In M = P·i(1 + i)^n/[(1 + i)^n − 1], substitute P = 240,000, i = 0.00375, n = 180 to obtain about $1,835.98.",
+      "imageAlt": "The payment formula multiplies principal by monthly interest and by one plus monthly interest to the number of payments, then divides by that same power minus one."
+    },
+    "10": {
+      "prompt": "For f(x) = (x − 3)² and g(x) = (x + 3)², what is f(x) − g(x)?",
+      "choices": ["−18", "0", "−12x", "2x² − 12x − 18"],
+      "explanation": "Expand each square: f(x) = x² − 6x + 9 and g(x) = x² + 6x + 9. Subtracting cancels x² and 9, leaving −12x.",
+      "imageAlt": "Both functions are squares of binomials, one shifted by minus three and the other by plus three; the problem asks for their difference."
+    },
+    "11": {
+      "prompt": "Carbon-14 mass follows f(t) = 50(0.5)^(t/5715) grams after t years. Which statements are true? I: The mass halves each year. II: The original mass is 50 g.",
+      "choices": ["I, only", "II, only", "I and II", "neither I nor II"],
+      "explanation": "The exponent t/5715 means one halving happens every 5,715 years, not every year, so I is false. At t = 0, f(0) = 50, making II true.",
+      "imageAlt": "The entire question, both Roman-numeral statements, and the four answer choices are visible in the repaired crop. The half-life denominator is five thousand seven hundred fifteen years."
+    },
+    "12": {
+      "prompt": "On [2, 4], a graph has g(2) ≈ 6 and g(4) ≈ 10, while a table has t(2) = −5 and t(4) = 3. How do their average rates of change compare?",
+      "choices": ["g's is greater", "They are equal", "g's is twice t's", "g's is half t's"],
+      "explanation": "From the graph, g changes by about 4 over 2 units, for average rate about 2. The table gives t's rate [3 − (−5)]/(4 − 2) = 4. Thus g's average rate is half of t's.",
+      "imageAlt": "The graph of g rises exponentially, with plotted values about six at x equals two and ten at x equals four. The table gives t(-1)=3, t(0)=5, t(1)=2, t(2)=-5, t(3)=-1, t(4)=3."
+    },
+    "13": {
+      "prompt": "A parabola has directrix y = 3 and vertex (2, 1). Which point is its focus?",
+      "choices": ["(2, −1)", "(2, 0)", "(2, 2)", "(2, 5)"],
+      "explanation": "The vertex is two units below the horizontal directrix. The focus must be two units on the opposite side of the vertex along x = 2, at (2, −1).",
+      "imageAlt": "The horizontal directrix is at y equals three, while the vertex is two comma one, so the parabola opens downward."
+    },
+    "14": {
+      "prompt": "Heights of 3,300 students are approximately normal with mean 65.5 inches and standard deviation 2.9 inches. About how many are between 64 and 68 inches?",
+      "choices": ["1660", "1070", "2244", "1640"],
+      "explanation": "Convert endpoints to z-scores: (64 − 65.5)/2.9 ≈ −0.52 and (68 − 65.5)/2.9 ≈ 0.86. The standard-normal probability between them is about 0.503; multiplying by 3,300 gives about 1,660 students.",
+      "imageAlt": "The total is three thousand three hundred students, the mean sixty-five point five inches, and the standard deviation two point nine inches."
+    },
+    "15": {
+      "prompt": "Which statement about f(x) = −log(x + 4) + 2 is true?",
+      "choices": ["f has y-intercept (0, 2).", "−f has y-intercept (0, 2).", "As x → ∞, f(x) → ∞.", "As x → −4, f(x) → ∞."],
+      "explanation": "The domain is x > −4. As x approaches −4 from the right, x + 4 approaches zero and log(x + 4) approaches −∞; the negative sign makes f(x) approach +∞.",
+      "imageAlt": "The logarithm's argument is x plus four; the negative sign is outside the logarithm, and two is added afterward."
+    },
+    "16": {
+      "prompt": "To determine whether room-darkening shades cause longer sleep, which data-collection method is most appropriate?",
+      "choices": ["census", "survey", "observational study", "controlled experiment"],
+      "explanation": "Testing a causal claim requires comparing groups under controlled conditions, ideally with random assignment to shades or a control condition. A survey or observation alone can show association but not establish cause.",
+      "imageAlt": "The research question asks whether the shades cause longer sleep, rather than merely whether the two are associated."
+    },
+    "17": {
+      "prompt": "What is the inverse of f(x) = −6x + 1/2?",
+      "choices": ["f⁻¹(x) = 6x − 1/2", "f⁻¹(x) = 1/(−6x + 1/2)", "f⁻¹(x) = −x/6 + 1/12", "f⁻¹(x) = −x/6 + 2"],
+      "explanation": "From y = −6x + 1/2, solve x = (1/2 − y)/6 = 1/12 − y/6. Swap variable names to get f⁻¹(x) = −x/6 + 1/12.",
+      "imageAlt": "The function is linear with slope negative six and y-intercept one-half. One distractor takes a reciprocal instead of finding the inverse."
+    },
+    "18": {
+      "prompt": "Which expression equals (x² + 12)/(x² + 3)?",
+      "choices": ["10/(x² + 3)", "1 + 9/(x² + 3)", "x + 9", "4"],
+      "explanation": "Write x² + 12 as (x² + 3) + 9. Dividing by x² + 3 gives 1 + 9/(x² + 3).",
+      "imageAlt": "The numerator is x squared plus twelve and the denominator x squared plus three."
+    },
+    "19": {
+      "prompt": "A counterclockwise angle θ has its terminal side in Quadrant II on a unit-circle diagram. Which listed number could be its radian measure?",
+      "choices": ["1", "2", "65.4", "114.6"],
+      "explanation": "A Quadrant II angle in one turn has radians between π/2 ≈ 1.57 and π ≈ 3.14. Of the listed values, 2 lies in that interval and matches the drawn terminal side.",
+      "imageAlt": "The terminal side extends up and left from the origin to a point on the circle. θ is measured counterclockwise from the positive x-axis into Quadrant II; the diagram marks a one-unit radius."
+    },
+    "20": {
+      "prompt": "Thunder Bay water depth is d(t) = 5sin[(π/6)(t − 5)] + 7 feet, t hours after midnight. Which statement is false?",
+      "choices": ["Low tide occurred at 2 a.m.", "The maximum depth was 12 feet.", "At 9 a.m. the depth was approximately 11 feet.", "The high-to-low depth difference is 14 feet."],
+      "explanation": "The midline is 7 and amplitude 5, so high tide is 12 feet and low tide is 2 feet. Their difference is 10 feet, not 14. The other statements agree with the model: at t = 2 the sine is −1, and at t = 9 the depth is about 11.3 feet.",
+      "imageAlt": "The sinusoidal depth model has amplitude five, shift seven, and phase term pi over six times t minus five. The question asks for the false statement."
+    },
+    "21": {
+      "prompt": "A sequence is defined by aₙ = aₙ₋₁ + log base (n + 1) of (n − 1), with a₁ = 8. What is a₃?",
+      "choices": ["8", "8.5", "9.2", "10"],
+      "explanation": "For n = 2, log₃(1) = 0, so a₂ = 8. For n = 3, log₄(2) = 1/2, so a₃ = 8 + 0.5 = 8.5.",
+      "imageAlt": "The recurrence adds a logarithm whose base is n plus one and whose argument is n minus one; the initial term is eight."
+    },
+    "22": {
+      "prompt": "Which function has a maximum y-value of 4 and midline y = 1?",
+      "choices": ["Graph f", "g(x) = −3cos(x) + 1", "Graph h", "j(x) = 4sin(x) + 1"],
+      "explanation": "For g(x) = −3cos x + 1, the amplitude is 3 and midline is 1, so the maximum is 1 + 3 = 4. The other functions lack that amplitude-and-midline combination.",
+      "imageAlt": "Graph f is an inverted V with peak at y four, not a sinusoid. Graph h is W-shaped and rises without bound at both ends. Choice g is negative three cosine x plus one; choice j is four sine x plus one."
+    },
+    "23": {
+      "prompt": "Which expression equals (x + yi)(x² − xyi − y²), where i² = −1?",
+      "choices": ["x³ + y³i", "x³ − xy² − (xy² + y³)i", "x³ − 2xy² − y³i", "x³ − y³i"],
+      "explanation": "Expand the product. The terms −x²yi and +x²yi cancel, and −xy² plus −xy²i² = −xy² + xy² also cancel. Only x³ − y³i remains.",
+      "imageAlt": "The first factor is x plus y times i; the second is x squared minus x y i minus y squared."
+    },
+    "24": {
+      "prompt": "A $500 investment follows P(t) = 500(1.03)^t for t years. Which function approximates the same growth using a monthly rate?",
+      "choices": ["P(t) = 500(1.00247)^(12t)", "P(t) = 500(1.00247)^t", "P(t) = 500(1.03)^(12t)", "P(t) = 500(1.03)^(t/12)"],
+      "explanation": "The monthly growth factor is the twelfth root of 1.03, about 1.00247. There are 12t months in t years, so the monthly expression is approximately 500(1.00247)^(12t).",
+      "imageAlt": "The yearly growth factor is one point zero three; the four choices vary the factor and whether the exponent counts months or years."
+    }
+  }
+}

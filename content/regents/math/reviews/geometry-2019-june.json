@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "3adc3d1e48801eb717d04ddb32572db8e5aeb6c240803a3de5ccbe5b2befeb38",
+  "questions": {
+    "1": {
+      "prompt": "Triangles ABC, A′B′C′, and A″B″C″ are graphed as a sequence of rigid-motion images. Which type of motion first maps ABC to A′B′C′ and then maps A′B′C′ to A″B″C″?",
+      "choices": ["rotation followed by another rotation", "translation followed by a reflection", "reflection followed by a translation", "reflection followed by a rotation"],
+      "explanation": "The first triangle flips over the x-axis, taking A(−4,2) to A′(−4,−2), for example. The second is a 90° counterclockwise rotation of the first about the origin, taking A′(−4,−2) to A″(2,−4).",
+      "imageAlt": "On a coordinate grid, ABC is an upward-pointing triangle above the x-axis with A(−4,2), B(−3,4), C(−2,2). A′B′C′ is below it with A′(−4,−2), B′(−3,−4), C′(−2,−2). A″B″C″ points right in quadrant IV with A″(2,−4), B″(4,−3), C″(2,−2)."
+    },
+    "2": {
+      "prompt": "Which New York county had the greatest population density in 2000? Broome: population 200,536, area 706.82 mi²; Dutchess: 280,150, 801.59 mi²; Niagara: 219,846, 522.95 mi²; Saratoga: 200,635, 811.84 mi².",
+      "choices": ["Broome", "Dutchess", "Niagara", "Saratoga"],
+      "explanation": "Divide population by area for each county. The approximate densities are Broome 284, Dutchess 349, Niagara 420, and Saratoga 247 people per square mile. Niagara is greatest.",
+      "imageAlt": "Table has four rows: Broome 200,536 and 706.82 square miles; Dutchess 280,150 and 801.59; Niagara 219,846 and 522.95; Saratoga 200,635 and 811.84. The table values are also in the prompt."
+    },
+    "3": {
+      "prompt": "If a rectangle is continuously rotated around one of its sides, what three-dimensional figure forms?",
+      "choices": ["rectangular prism", "cylinder", "sphere", "cone"],
+      "explanation": "The fixed side becomes an axis, and the opposite side traces a circular surface at constant radius. The resulting solid is a cylinder.",
+      "imageAlt": "Printed solid-of-revolution question; motion and all solid choices are in accessible text."
+    },
+    "4": {
+      "prompt": "Parallelogram MATH has M(−2,3), A(4,3), T(2,−3), and H(−4,−3). Which transformation carries it onto itself?",
+      "choices": ["reflection over y = x", "reflection over y = −x", "90° counterclockwise rotation about the origin", "180° counterclockwise rotation about the origin"],
+      "explanation": "A half-turn about the origin sends M(−2,3) to T(2,−3) and A(4,3) to H(−4,−3). Thus all four vertices swap with opposite vertices and the parallelogram maps onto itself.",
+      "imageAlt": "Slanted parallelogram has top horizontal side from M(−2,3) to A(4,3) and bottom horizontal side from H(−4,−3) to T(2,−3), crossing both coordinate axes."
+    },
+    "5": {
+      "prompt": "A dilation centered at the origin maps segment CD, with C(6,−4) and D(2,−8), to C′D′, with C′(9,−6) and D′(3,−12). What is the scale factor?",
+      "choices": ["3/2", "2/3", "3", "1/3"],
+      "explanation": "Each image coordinate is 3/2 of its original: for instance, (6,−4) becomes (9,−6). Therefore the dilation factor is 3/2.",
+      "imageAlt": "Printed coordinate-dilation question; all original and image endpoints are in accessible text."
+    },
+    "6": {
+      "prompt": "A tent is a right square pyramid with floor side length 8 feet and central height 6 feet. What is its volume in cubic feet?",
+      "choices": ["48", "128", "192", "384"],
+      "explanation": "The square base area is 8² = 64 square feet. Pyramid volume is (1/3)Bh = (1/3)(64)(6) = 128 cubic feet.",
+      "imageAlt": "Printed square-pyramid volume problem; base and height measurements are in accessible text."
+    },
+    "7": {
+      "prompt": "Line −3x + 4y = 8 is dilated about the origin. Which equation could represent its image?",
+      "choices": ["y = (4/3)x + 8", "y = (3/4)x + 8", "y = −(3/4)x − 8", "y = −(4/3)x − 8"],
+      "explanation": "The original line is y = (3/4)x + 2. A dilation centered at the origin preserves slope 3/4 and scales the intercept. A factor of 4 changes intercept 2 to 8, producing y = (3/4)x + 8.",
+      "imageAlt": "Printed line-dilation problem; original equation and all four slopes and intercepts are in accessible text."
+    },
+    "8": {
+      "prompt": "Segments AC and BD intersect at E. Which information is always sufficient to prove triangles ABE and CDE congruent?",
+      "choices": ["AB ∥ CD", "AB ≅ CD and BE ≅ DE", "E is midpoint of AC", "BD and AC bisect each other"],
+      "explanation": "If the two crossing segments bisect each other, AE = CE and BE = DE. Angles AEB and CED are vertical angles and therefore equal. Side-angle-side proves the triangles congruent.",
+      "imageAlt": "A and D are above crossing point E, while B and C are below. Segment A-E-C slopes down to the right and segment B-E-D slopes up to the right, forming opposing triangles ABE and CDE."
+    },
+    "9": {
+      "prompt": "The expression sin 57° equals which expression?",
+      "choices": ["tan 33°", "cos 33°", "tan 57°", "cos 57°"],
+      "explanation": "Sine and cosine are cofunctions: sin θ = cos(90°−θ). Since 90°−57° = 33°, sin 57° = cos 33°.",
+      "imageAlt": "Printed trigonometric-identity question; each function and angle is in accessible text."
+    },
+    "10": {
+      "prompt": "What is the volume of a hemisphere with diameter 12.6 cm, to the nearest tenth of a cubic centimeter?",
+      "choices": ["523.7", "1047.4", "4189.6", "8379.2"],
+      "explanation": "The radius is 6.3 cm. Half a sphere's volume is (2/3)πr³, so (2/3)π(6.3)³ ≈ 523.7 cubic centimeters.",
+      "imageAlt": "Printed hemisphere-volume question; diameter, unit, and rounding instruction are in accessible text."
+    },
+    "11": {
+      "prompt": "In triangle ABC, D lies on BA, E lies on BC, and DE is drawn. If BD = 5, DA = 12, and BE = 7, what must BC equal so that AC ∥ DE?",
+      "choices": ["23.8", "16.8", "15.6", "8.6"],
+      "explanation": "BA = BD+DA = 17. With DE ∥ AC, triangles BDE and BAC are similar. Thus BD/BA = BE/BC, so 5/17 = 7/BC and BC = 7(17)/5 = 23.8.",
+      "imageAlt": "Triangle ABC has B at top and horizontal base AC. D lies partway down left side BA, E on right side BC, and segment DE is drawn horizontally between the sides."
+    },
+    "12": {
+      "prompt": "Which condition guarantees that a quadrilateral is a parallelogram?",
+      "choices": ["one pair of sides parallel and one pair of angles congruent", "one pair of sides congruent and one pair of angles congruent", "one pair of sides both parallel and congruent", "congruent diagonals"],
+      "explanation": "A quadrilateral is a parallelogram if one pair of opposite sides is both parallel and congruent. The other listed facts alone do not guarantee both pairs of opposite sides parallel.",
+      "imageAlt": "Printed quadrilateral-property question; all proposed conditions are in accessible text."
+    },
+    "13": {
+      "prompt": "Chords JT and ER of circle O intersect at M. If EM = 8 and RM = 15, which values could be JM and TM, respectively?",
+      "choices": ["12 and 9.5", "14 and 8.5", "16 and 7.5", "18 and 6.5"],
+      "explanation": "The intersecting-chords theorem gives JM·TM = EM·RM = 8(15) = 120. Only 16·7.5 = 120.",
+      "imageAlt": "Circle centered O contains chord J-M-T descending from upper left to right and chord R-M-E rising from lower left to upper right. The chords intersect at M, above the center O."
+    },
+    "14": {
+      "prompt": "Triangles JOE and SAM have angle E ≅ angle M and segment EJ ≅ segment MS. Which additional mapping would not always prove triangle JOE congruent to triangle SAM?",
+      "choices": ["angle J onto angle S", "angle O onto angle A", "segment EO onto segment MA", "segment JO onto segment SA"],
+      "explanation": "Mapping JO to SA adds a side opposite the given angle, creating the ambiguous side-side-angle situation. The other choices add either a second angle or the side adjacent to the given angle, allowing AAS, ASA, or SAS congruence.",
+      "imageAlt": "Printed triangle-congruence question; named vertices and all proposed mapped angles and sides are in accessible text."
+    },
+    "15": {
+      "prompt": "Right triangle ABC has right angle C. E lies on AC and ED is perpendicular to hypotenuse AB at D. If AB = 9, BC = 6, and DE = 4, find AE.",
+      "choices": ["5", "6", "7", "8"],
+      "explanation": "Triangles ADE and ACB are similar: they share angle A and have right angles D and C. Their corresponding sides give DE/BC = AE/AB, so 4/6 = AE/9 and AE = 6.",
+      "imageAlt": "Large right triangle has A lower left, C lower right, and B directly above C. E is between A and C; DE runs from E up-left to point D on sloping hypotenuse AB and meets AB at a right angle."
+    },
+    "16": {
+      "prompt": "Which equation represents a line parallel to −2x + 3y = −4 and passing through (1,3)?",
+      "choices": ["y − 3 = −(3/2)(x − 1)", "y − 3 = (2/3)(x − 1)", "y + 3 = −(3/2)(x + 1)", "y + 3 = (2/3)(x + 1)"],
+      "explanation": "Rearrange the original to y = (2/3)x−4/3, so its slope is 2/3. Point-slope form through (1,3) is y−3 = (2/3)(x−1).",
+      "imageAlt": "Printed parallel-line problem; original line, point, and four point-slope equations are in accessible text."
+    },
+    "17": {
+      "prompt": "Rhombus TIGE has diagonals TG and IE intersecting at R. Its perimeter is 68 and TG = 16. What is IE?",
+      "choices": ["15", "30", "34", "52"],
+      "explanation": "Each side is 68/4 = 17. Rhombus diagonals are perpendicular bisectors, so half of TG is 8 and half of IE is the other leg of a right triangle with hypotenuse 17. It is √(17²−8²) = 15; therefore IE = 30.",
+      "imageAlt": "Slanted rhombus has vertices T upper left, I upper right, G lower right, E lower left. Diagonal TG slopes down-right and diagonal IE slopes up-right; they meet at interior point R."
+    },
+    "18": {
+      "prompt": "Two secants ABP and CDP are drawn from an external point P to circle O. If arc AC measures 72° and arc BD measures 34°, what is angle P?",
+      "choices": ["19°", "38°", "53°", "106°"],
+      "explanation": "An angle formed by two secants outside a circle is half the difference between the intercepted far and near arcs. Here angle P = (72°−34°)/2 = 19°.",
+      "imageAlt": "Printed external-secant angle problem; the two secants and both intercepted arc measures are in accessible text."
+    },
+    "19": {
+      "prompt": "Point C partitions the directed segment from A(−8,4) to B(10,−2) with AC:CB = 2:1. What are C's coordinates?",
+      "choices": ["(1,1)", "(−2,2)", "(2,−2)", "(4,0)"],
+      "explanation": "A 2:1 partition places C two thirds of the way from A to B. B−A = (18,−6), so C = (−8,4)+(2/3)(18,−6) = (4,0).",
+      "imageAlt": "Printed directed-segment question; both endpoints and ratio are in accessible text."
+    },
+    "20": {
+      "prompt": "Circle x² + 8x + y² − 12y = 144 has what center and radius?",
+      "choices": ["center (4,−6), radius 12", "center (−4,6), radius 12", "center (4,−6), radius 14", "center (−4,6), radius 14"],
+      "explanation": "Complete the squares: (x+4)²+(y−6)² = 144+16+36 = 196. Therefore the center is (−4,6) and the radius is √196 = 14.",
+      "imageAlt": "Printed circle-equation question; equation and all candidate centers and radii are in accessible text."
+    },
+    "21": {
+      "prompt": "In parallelogram PQRS, QP extends to T and ST is drawn. If ST ≅ SP and angle R = 130°, find angle PST.",
+      "choices": ["130°", "80°", "65°", "50°"],
+      "explanation": "Opposite angle P equals angle R, 130°. Because Q-P-T is a straight line, triangle SPT has angle SPT = 180°−130° = 50°. ST = SP makes base angles at P and T both 50°, leaving angle PST = 80°.",
+      "imageAlt": "Parallelogram has bottom side Q-P and top side R-S, with Q, P, T collinear from left to right. Segment S-T descends to T, forming triangle SPT outside the parallelogram on its right."
+    },
+    "22": {
+      "prompt": "A 12-foot ladder leans against a building and reaches a window 10 feet above the ground. What angle does it make with the ground, to the nearest degree?",
+      "choices": ["34", "40", "50", "56"],
+      "explanation": "The ladder is the 12-foot hypotenuse and the 10-foot wall height is opposite the ground angle. Thus sin θ = 10/12, giving θ ≈ 56°.",
+      "imageAlt": "Printed right-triangle ladder problem; ladder and window heights are in accessible text."
+    },
+    "23": {
+      "prompt": "In equilateral triangle ABC, E and F are midpoints of AC and BC. If EF = 2x+8 and AB = 7x−2, what is the perimeter of trapezoid ABFE?",
+      "choices": ["36", "60", "100", "120"],
+      "explanation": "EF is a midsegment, so EF = AB/2. Solve 2x+8 = (7x−2)/2 to get x = 6. Then AB = 40, EF = 20, and AE = BF = 20 because the original triangle is equilateral. The trapezoid perimeter is 40+20+20+20 = 100.",
+      "imageAlt": "Equilateral triangle has base A-B horizontal and vertex C above. E is midpoint of side AC and F midpoint of side BC; horizontal segment EF divides off a smaller top triangle, leaving trapezoid A-B-F-E."
+    },
+    "24": {
+      "prompt": "Which information is not sufficient to prove a parallelogram is a square?",
+      "choices": ["diagonals congruent and perpendicular", "diagonals congruent and one pair of adjacent sides congruent", "diagonals perpendicular and one pair of adjacent sides congruent", "diagonals perpendicular and one pair of adjacent sides perpendicular"],
+      "explanation": "Perpendicular diagonals and congruent adjacent sides establish a rhombus, which could have non-right angles. A square also requires the rectangle property: right angles or congruent diagonals. The other choices provide both rhombus and rectangle properties.",
+      "imageAlt": "Printed parallelogram-property question; every diagonal and side condition is in accessible text."
+    }
+  }
+}

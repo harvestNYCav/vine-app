@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "6f7c8bc557124fa82cc22109294df99196053cdccb9a17151a7d85805d7fb870",
+  "questions": {
+    "1": {
+      "prompt": "Which expression is equivalent to 16x²−36?",
+      "choices": ["4(2x−3)(2x−3)", "4(2x+3)(2x−3)", "(4x−6)(4x−6)", "(4x+6)(4x+6)"],
+      "explanation": "Factor out 4 to get 4(4x²−9). The remaining difference of squares is (2x+3)(2x−3), so the result is 4(2x+3)(2x−3).",
+      "imageAlt": "Quadratic sixteen x squared minus thirty-six and four complete factored products are transcribed with the outer factor four where shown."
+    },
+    "2": {
+      "prompt": "What is the solution set of (x−2)(x−a)=0?",
+      "choices": ["−2 and a", "−2 and −a", "2 and a", "2 and −a"],
+      "explanation": "The zero-product property gives x−2=0 or x−a=0. Thus x=2 or x=a.",
+      "imageAlt": "Product of factors x minus two and x minus a equals zero, with four signed pairs of possible roots."
+    },
+    "3": {
+      "prompt": "A linear relationship has correlation coefficient r=−0.524. Which summary fits best?",
+      "choices": ["strong positive correlation", "strong negative correlation", "moderate positive correlation", "moderate negative correlation"],
+      "explanation": "The negative sign indicates a negative association. The magnitude about 0.52 is moderate rather than close to 1, so the relationship is moderately negative.",
+      "imageAlt": "Correlation coefficient negative zero point five two four and four strength-and-direction descriptions are transcribed."
+    },
+    "4": {
+      "prompt": "Boyle's Law gives P₁V₁=P₂V₂. Solve for P₂.",
+      "choices": ["P₁V₁V₂", "V₂/(P₁V₁)", "(P₁V₁)/V₂", "(P₁V₂)/V₁"],
+      "explanation": "Divide both sides of P₁V₁=P₂V₂ by V₂. This isolates P₂=(P₁V₁)/V₂.",
+      "imageAlt": "Boyle's Law with pressure and volume subscripts one and two, and four candidate formulas with products or fraction bars, are transcribed."
+    },
+    "5": {
+      "prompt": "Music survey table lists hip-hop, alternative, classic rock counts: middle school 28,18,4; high school 22,22,6; college 16,20,14. What percent of college students prefer classic rock?",
+      "choices": ["14%", "28%", "33%", "58%"],
+      "explanation": "The college row totals 16+20+14=50 students, of whom 14 prefer classic rock. The percentage is 14/50·100=28%.",
+      "imageAlt": "Complete three-school-level by three-music-type table is transcribed, with college counts sixteen hip-hop, twenty alternative, fourteen classic rock. Four percentages are transcribed."
+    },
+    "6": {
+      "prompt": "Which function has zeros −4 and 2?",
+      "choices": ["f(x)=x²+7x−8", "upward parabola crossing at x=−2 and x=4", "g(x)=x²−7x−8", "upward parabola crossing at x=−4 and x=2"],
+      "explanation": "A zero is an x-intercept. The fourth graph crosses the x-axis at −4 and 2; the second graph crosses at −2 and 4, and the equations have other roots.",
+      "imageAlt": "All four representations are described: equations x squared plus seven x minus eight and x squared minus seven x minus eight; two upward parabolas whose x-intercepts are negative two and four, or negative four and two."
+    },
+    "7": {
+      "prompt": "Simplify 2(3g−4)−(8g+3).",
+      "choices": ["−2g−1", "−2g−5", "−2g−7", "−2g−11"],
+      "explanation": "Distribute: 6g−8−8g−3. Combine like terms to obtain −2g−11.",
+      "imageAlt": "Expression two times quantity three g minus four, minus quantity eight g plus three, and four signed linear answers are transcribed."
+    },
+    "8": {
+      "prompt": "A one-ounce letter costs 49 cents; each additional ounce costs 21 cents. Which recursion gives postage aₙ in cents for an n-ounce letter?",
+      "choices": ["a₁=49; aₙ=aₙ₋₁+21", "a₁=0; aₙ=49aₙ₋₁+21", "a₁=21; aₙ=aₙ₋₁+49", "a₁=0; aₙ=21aₙ₋₁+49"],
+      "explanation": "The first ounce costs 49 cents, so a₁=49. Every later ounce adds 21 cents, giving aₙ=aₙ₋₁+21.",
+      "imageAlt": "Postage rates and all four initial-value-plus-recurrence choices are transcribed, preserving addition versus multiplication and the first-ounce amount."
+    },
+    "9": {
+      "prompt": "A car's remaining distance D from Buffalo after t hours is D=280−59t miles. What does 59 represent?",
+      "choices": ["distance from Albany", "speed of the car", "distance between Albany and Buffalo", "number of hours driving"],
+      "explanation": "The coefficient −59 is the rate at which the distance from Buffalo decreases, in miles per hour. Thus the car's speed toward Buffalo is 59 mph.",
+      "imageAlt": "Distance equation two hundred eighty minus fifty-nine times hours and four interpretations of the number fifty-nine are transcribed."
+    },
+    "10": {
+      "prompt": "C(f)=(5/9)(f−32) converts Fahrenheit f to Celsius. What is C(68)?",
+      "choices": ["20° Celsius", "20° Fahrenheit", "154° Celsius", "154° Fahrenheit"],
+      "explanation": "Substitute f=68: C(68)=(5/9)(68−32)=(5/9)·36=20 degrees Celsius.",
+      "imageAlt": "Fahrenheit-to-Celsius formula five-ninths times quantity f minus thirty-two, input sixty-eight, and four number-and-temperature-unit answers are transcribed."
+    },
+    "11": {
+      "prompt": "Which situation is exponential growth?",
+      "choices": ["water tank fills 2 gallons per minute", "vine grows 6 inches per week", "fly population doubles every month", "car drives at constant 25 miles per hour"],
+      "explanation": "Doubling each month multiplies the population by a fixed factor of 2, which is exponential growth. The other situations add a fixed amount in each time interval and are linear.",
+      "imageAlt": "All four complete real-world rate descriptions are transcribed, including fixed gallon, inch, and mile rates versus monthly population doubling."
+    },
+    "12": {
+      "prompt": "What is the minimum of y=|x+3|−2?",
+      "choices": ["−2", "2", "3", "−3"],
+      "explanation": "An absolute value cannot be negative, and |x+3|=0 at x=−3. Thus the least y is 0−2=−2.",
+      "imageAlt": "Absolute-value function magnitude of x plus three minus two, and four signed numerical choices are transcribed."
+    },
+    "13": {
+      "prompt": "How are the number of pages printed and the amount of ink used by a printer related?",
+      "choices": ["positive correlation, not causal", "positive correlation, causal", "negative correlation, not causal", "negative correlation, causal"],
+      "explanation": "Printing more pages directly consumes more ink, so the variables tend to increase together and the relationship is causal as well as positive.",
+      "imageAlt": "Printer pages and ink use are named, with four choices covering positive or negative correlation and causal or noncausal interpretations."
+    },
+    "14": {
+      "prompt": "A musical-note frequency sequence is f(n)=6(16)ⁿ hertz. Which function generates the same sequence?",
+      "choices": ["g(n)=12(2)^(4n)", "h(n)=6(2)^(4n)", "p(n)=12(4)^(2n)", "k(n)=6(8)^(2n)"],
+      "explanation": "Because 16=2⁴, 6·16ⁿ=6·(2⁴)ⁿ=6·2^(4n). The coefficient must remain 6.",
+      "imageAlt": "Original frequency expression six times sixteen to the n and all four candidate formulas are transcribed with bases, coefficients, and exponents."
+    },
+    "15": {
+      "prompt": "Which listed x solves 13−36x²=−12?",
+      "choices": ["36/25", "25/36", "−6/5", "−5/6"],
+      "explanation": "Rearrange to 36x²=25, so x²=25/36 and x=±5/6. Among the choices, only −5/6 appears.",
+      "imageAlt": "Quadratic equation thirteen minus thirty-six x squared equals negative twelve, and four positive or negative fractional choices are transcribed with numerator-denominator order."
+    },
+    "16": {
+      "prompt": "Which point satisfies both 2y<−12x+4 and y<−6x+4?",
+      "choices": ["(1,1/2)", "(0,6)", "(−1/2,5)", "(−3,2)"],
+      "explanation": "At (−3,2), the first inequality reads 4<40 and the second 2<22, so both hold. At (−1/2,5), the first becomes equality, not the required strict inequality; the others also fail.",
+      "imageAlt": "Both strict linear inequalities and four complete ordered pairs are transcribed, including one-half coordinates and negative x-values."
+    },
+    "17": {
+      "prompt": "If f(x)=x² becomes g(x)=ax² with a>1, how does g's graph compare?",
+      "choices": ["opens upward and wider", "opens upward and narrower", "opens downward and wider", "opens downward and narrower"],
+      "explanation": "A positive a preserves the upward opening. Multiplying y-values by a factor greater than 1 vertically stretches the parabola, making it narrower.",
+      "imageAlt": "Parent parabola x squared, transformed a x squared with a greater than one, and all four opening-and-width choices are transcribed."
+    },
+    "18": {
+      "prompt": "Andy begins with $310 and withdraws $30 each week. Which expression gives the amount left after w weeks, usable at w=8?",
+      "choices": ["310−8w", "280+30(w−1)", "310w−30", "280−30(w−1)"],
+      "explanation": "After week 1 he has $280. Each additional week removes $30, so after w weeks the balance is 280−30(w−1). At w=8 it gives $70, matching 310−8·30.",
+      "imageAlt": "Starting balance three hundred ten dollars, thirty-dollar withdrawal each week, target eight weeks, and four algebraic expressions with w are transcribed."
+    },
+    "19": {
+      "prompt": "Factory daily cost is c(x)=200+16x, where x counts complete products. Which set best describes the domain?",
+      "choices": ["integers", "positive real numbers", "positive rational numbers", "whole numbers"],
+      "explanation": "The number of complete products cannot be fractional or negative, but zero products is possible. Thus x belongs to the whole numbers 0,1,2,….",
+      "imageAlt": "Cost model two hundred plus sixteen per product and four domain-set types are transcribed, including whole numbers and positive rationals."
+    },
+    "20": {
+      "prompt": "Dot plots count soccer and basketball players by ages 6–12. Soccer counts at ages 6,7,8,9,10,11,12 are 3,4,2,2,3,2,2; basketball counts are 1,1,2,3,3,4,4. Which statement is correct?",
+      "choices": ["soccer ages are skewed right", "soccer ages have less spread", "both sports have the same median age", "basketball ages have a greater mean age"],
+      "explanation": "Both plots include ages 6 through 12, but basketball has more players at older ages, especially 11 and 12. The mean soccer age is 156/18≈8.67, while basketball's is 178/18≈9.89, so basketball's mean is greater.",
+      "imageAlt": "All dot-plot counts are transcribed by age: soccer three, four, two, two, three, two, two; basketball one, one, two, three, three, four, four at ages six through twelve. Four distribution comparisons are transcribed."
+    },
+    "21": {
+      "prompt": "An age-versus-resting-heart-rate graph descends linearly from (0,112) to (20,72) beats/min, then stays at 72 through age 50. Which statement is not supported?",
+      "choices": ["A 10-year-old has the same average rate as a 20-year-old", "A 20-year-old has the same rate as a 30-year-old", "A 40-year-old may have the same rate for ten years", "The average rate for teenagers steadily decreases"],
+      "explanation": "On the descending segment, the modeled age-10 rate is 92 beats/min, while the age-20 rate is 72. They are not the same. From ages 20 to 50 the graph is flat, supporting the other age comparisons.",
+      "imageAlt": "Piecewise graph begins at open point age zero, 112 beats/min, slopes down to closed point age twenty, 72, then remains horizontal through age fifty, 72. Four age-comparison statements are transcribed."
+    },
+    "22": {
+      "prompt": "When completing the square for 2x²−12x+6=0, which equation is a correct step?",
+      "choices": ["(x−3)²=6", "(x−3)²=−6", "(x−3)²=3", "(x−3)²=−3"],
+      "explanation": "Divide by 2: x²−6x+3=0, so x²−6x=−3. Add 9 to both sides to obtain (x−3)²=6.",
+      "imageAlt": "Original quadratic with leading coefficient two and four completed-square equations are transcribed with positive or negative right-hand sides."
+    },
+    "23": {
+      "prompt": "Plan A's savings graph rises linearly from (10 weeks,$20) to (60 weeks,$120). Plan B is f(x)=0.01+0.05x² dollars after x weeks. Nancy chooses Plan B for the greatest savings after one year. Is she right?",
+      "choices": ["right because B is exponential and grows faster", "right because B is quadratic and grows faster", "wrong because A is higher after one year", "wrong because B is quadratic and grows slower"],
+      "explanation": "A year is about 52 weeks. Plan A's graph gives about $104 at week 52, while Plan B gives 0.01+0.05(52²)=$135.21. Plan B is quadratic, not exponential, and is higher then, so Nancy's choice is correct for the reason in choice 2.",
+      "imageAlt": "Plan A line graph has weeks on horizontal axis and savings dollars on vertical axis, passing through ten comma twenty and sixty comma one hundred twenty. Plan B formula 0.01 plus 0.05 times weeks squared and all four judgments are transcribed."
+    },
+    "24": {
+      "prompt": "A marathon runner's weekly mileage is M(w)=120(0.90)^(w−1), where w is weeks since training began. Which statement about the model is true?",
+      "choices": ["miles increase 90% each week", "miles are 10% of the previous week", "M(w) is the total mileage run in a given week", "w is the weeks left until the marathon"],
+      "explanation": "M(w) outputs miles for week w, so it represents that week's total mileage. The 0.90 factor means each week is 90% of the preceding week's mileage, a 10% decrease; w counts elapsed weeks, not remaining weeks.",
+      "imageAlt": "Weekly mileage model one hundred twenty times 0.90 raised to w minus one, with w defined as weeks since training began; four interpretations of the factor, output, and input are transcribed."
+    }
+  }
+}

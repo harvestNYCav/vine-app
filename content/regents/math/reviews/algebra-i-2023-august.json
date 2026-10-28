@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "1c7248dc2bffca9aa4419a96a561f75ab42866076c5d1188ae24ce9e1c48665c",
+  "questions": {
+    "1": {
+      "prompt": "A café owner tracks the number of customers during business hours. Based on the graph, when did the owner see a continual change in customers? The graph rises from 0 customers at 6:00 a.m. to 80 at 8:00 a.m., falls to 30 at 10:00 a.m., rises to 80 at 1:00 p.m., then falls to 10 at 4:00 p.m.",
+      "choices": ["increase in customers from 6:00 to 11:00", "increase in customers from 12:00 to 3:00", "decrease in customers from 1:00 to 4:00", "decrease in customers from 11:00 to 2:00"],
+      "explanation": "From 1:00 p.m. through 4:00 p.m., the graph goes down without turning upward. Each other interval includes a change in direction.",
+      "imageAlt": "Customer-count graph: 6 a.m. 0, 8 a.m. 80, 10 a.m. 30, 1 p.m. 80, 4 p.m. 10; the curve rises, falls, rises, then falls. All four time-interval choices are transcribed."
+    },
+    "2": {
+      "prompt": "The expression (3x² + 4x − 8) + 2(11 − 5x) is equivalent to which expression?",
+      "choices": ["3x² − x + 5", "3x² − x + 14", "3x² − 6x + 14", "3x² + 14x + 14"],
+      "explanation": "Distribute the 2 to obtain 22 − 10x. Then combine like terms: 3x² + (4x − 10x) + (−8 + 22) = 3x² − 6x + 14.",
+      "imageAlt": "Original parenthesized expression and four quadratic choices are transcribed with all signs and coefficients."
+    },
+    "3": {
+      "prompt": "Which point is a solution to y = x³ − 2x?",
+      "choices": ["(−3, −21)", "(−2, 10)", "(1, 1)", "(4, 2)"],
+      "explanation": "At x = −3, x³ − 2x = −27 + 6 = −21, matching the point (−3, −21). The other listed y-values do not match the formula at their x-values.",
+      "imageAlt": "Cubic equation y equals x cubed minus two x and all four ordered pairs are transcribed."
+    },
+    "4": {
+      "prompt": "What is the value of x in the equation 5(2x − 4)/3 + 9 = 14?",
+      "choices": ["1.9", "3.5", "5.3", "8.9"],
+      "explanation": "Subtract 9, then multiply by 3/5: 2x − 4 = 3. Thus 2x = 7 and x = 3.5.",
+      "imageAlt": "The numerator 5(2x minus 4) is over denominator 3, followed by plus 9 equals 14; all four decimal choices are transcribed."
+    },
+    "5": {
+      "prompt": "The graph of y = f(x) is an upward-opening parabola with vertex (0, 0). Which graph represents y = f(x − 2) + 1?",
+      "choices": ["Upward parabola with vertex (2, 1)", "Upward parabola with vertex (−2, 1)", "Upward parabola with vertex (2, −1)", "Upward parabola with vertex (−2, −1)"],
+      "explanation": "Replacing x with x − 2 shifts the original parabola two units right, and adding 1 shifts it one unit up. The new vertex is (2, 1).",
+      "imageAlt": "Original upward parabola has vertex at the origin. The four choice graphs have vertices (2,1), (−2,1), (2,−1), and (−2,−1), in that order."
+    },
+    "6": {
+      "prompt": "The length of a rectangular flat-screen television is six inches less than twice its width, x. If its area is 1100 square inches, which equation determines the width?",
+      "choices": ["x(2x − 6) = 1100", "x(6 − 2x) = 1100", "2x + 2(2x − 6) = 1100", "2x + 2(6 − 2x) = 1100"],
+      "explanation": "The width is x and the length is 2x − 6. Area equals width times length, giving x(2x − 6) = 1100.",
+      "imageAlt": "Rectangle width x, length two x minus six, area 1100 square inches. All four proposed equations are transcribed."
+    },
+    "7": {
+      "prompt": "A box plot has minimum 15, first quartile 30, median 50, third quartile 60, and maximum 75. Which number represents the third quartile?",
+      "choices": ["30", "50", "60", "75"],
+      "explanation": "The third quartile is the right edge of the box, which aligns with 60 on the number line.",
+      "imageAlt": "Box plot on number line 10 to 85: left whisker 15, box from 30 to 60, median line 50, right whisker 75."
+    },
+    "8": {
+      "prompt": "What is the product of (2x + 7) and (x − 3)?",
+      "choices": ["2x² − 21", "2x² + x − 21", "2x² + 4x − 21", "2x² + 13x − 21"],
+      "explanation": "Multiply the terms: 2x² − 6x + 7x − 21. The middle terms combine to x, so the product is 2x² + x − 21.",
+      "imageAlt": "Both binomial factors and all four quadratic products are transcribed, including signs and coefficients."
+    },
+    "9": {
+      "prompt": "What is the degree of the polynomial 2x + x³ + 5x²?",
+      "choices": ["1", "2", "3", "4"],
+      "explanation": "The highest exponent of x in the polynomial is 3, from the x³ term. Therefore its degree is 3.",
+      "imageAlt": "Polynomial two x plus x cubed plus five x squared and degree choices one through four are transcribed."
+    },
+    "10": {
+      "prompt": "What is the solution to −3(x − 6) > 2x − 2?",
+      "choices": ["x > 4", "x < 4", "x > −16", "x < −16"],
+      "explanation": "Distribute and rearrange: −3x + 18 > 2x − 2, so 20 > 5x. Dividing by positive 5 yields x < 4.",
+      "imageAlt": "Inequality negative three times x minus six greater than two x minus two and all four strict inequality choices are transcribed."
+    },
+    "11": {
+      "prompt": "Three expressions are shown: I. (x³)³; II. x⁴ · x⁵; III. x¹⁰ · x⁻¹. Which expressions are equivalent for all positive values of x?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "A power of a power multiplies exponents: (x³)³ = x⁹. Multiplying like bases adds exponents: x⁴·x⁵ = x⁹ and x¹⁰·x⁻¹ = x⁹. All three are equivalent.",
+      "imageAlt": "Roman numeral expressions preserve powers: parenthesized x cubed raised to third; x to fourth times x to fifth; x to tenth times x to negative first."
+    },
+    "12": {
+      "prompt": "Jim uses A = P(1 + 0.05)ᵗ to find the amount of money A after t years for investment P. Which phrase describes the yearly rate of change?",
+      "choices": ["decreasing by 5%", "decreasing by 0.05%", "increasing by 5%", "increasing by 0.05%"],
+      "explanation": "The annual multiplier is 1.05 = 1 + 0.05. Each year the amount grows by 0.05 of its previous value, or 5%.",
+      "imageAlt": "Exponential investment equation A equals P times one plus 0.05 raised to t, and all four percentage-change phrases are transcribed."
+    },
+    "13": {
+      "prompt": "What are the zeros of m(x) = x(x² − 16)?",
+      "choices": ["−4 and 4, only", "−8 and 8, only", "−4, 0, and 4", "−8, 0, and 8"],
+      "explanation": "Factor the difference of squares: m(x) = x(x − 4)(x + 4). The product is zero when x is 0, 4, or −4.",
+      "imageAlt": "Function x times x squared minus sixteen and all four zero sets are transcribed with signs."
+    },
+    "14": {
+      "prompt": "For which function is the y-intercept smallest? f is tabulated at x = −4, −2, 0, 2, 4 with outputs 5, 4, 3, 2, 1. h is tabulated at x = −1, 0, 1, 2, 3 with outputs 3, 2, 3, 6, 11.",
+      "choices": ["f(x)", "g(x) = |x| + 4", "h(x)", "k(x) = 5ˣ"],
+      "explanation": "A y-intercept is the output at x = 0. The four values are f(0)=3, g(0)=4, h(0)=2, and k(0)=5⁰=1. The smallest belongs to k.",
+      "imageAlt": "Both tables are fully transcribed in the prompt; the choices include f, absolute value x plus four, h, and five to the x power."
+    },
+    "15": {
+      "prompt": "An upward-opening parabola crosses the x-axis at x = −1 and x = 3. What is a possible factorization of the function?",
+      "choices": ["f(x) = (x − 1)(x + 3)", "f(x) = (x + 1)(x − 3)", "f(x) = (x + 1)(x − 4)", "f(x) = (x − 1)(x + 4)"],
+      "explanation": "The x-intercepts are zeros −1 and 3, so the factors are x + 1 and x − 3. Their product also opens upward because its leading coefficient is positive.",
+      "imageAlt": "Parabola opens upward, has x-intercepts negative one and positive three, and vertex near (1,−4); all four factorizations are transcribed."
+    },
+    "16": {
+      "prompt": "The range of f(x) = x² + 2x − 5 is the set of all real numbers that are ...",
+      "choices": ["less than or equal to −6", "greater than or equal to −6", "less than or equal to −1", "greater than or equal to −1"],
+      "explanation": "Complete the square: x² + 2x − 5 = (x + 1)² − 6. Since the squared term cannot be negative, the minimum output is −6, so y ≥ −6.",
+      "imageAlt": "Quadratic equation and all four range inequalities are transcribed, retaining the negative six and negative one bounds."
+    },
+    "17": {
+      "prompt": "Tables give four functions for x = 0, 1, 2, 3, 4. Their outputs are f: 6, 7, 10, 15, 22; g: 0, −2, −2, 0, 4; h: 1, 2, 4, 8, 16; j: 2, 5, 8, 11, 14. Which table best represents an exponential function?",
+      "choices": ["f(x)", "g(x)", "h(x)", "j(x)"],
+      "explanation": "For each increase of 1 in x, h's output doubles: 1, 2, 4, 8, 16. A constant multiplicative factor identifies an exponential function. The other tables do not have a constant nonzero ratio.",
+      "imageAlt": "All four tables for x zero through four and their output sequences are transcribed in the prompt."
+    },
+    "18": {
+      "prompt": "If f(x) = x² + 3x, then which statement is true?",
+      "choices": ["f(1) = f(−1)", "f(2) = f(−2)", "f(1) = f(2)", "f(−1) = f(−2)"],
+      "explanation": "f(−1) = 1 − 3 = −2 and f(−2) = 4 − 6 = −2, so those two function values are equal.",
+      "imageAlt": "Quadratic function x squared plus three x and all four pairs of function evaluations are transcribed."
+    },
+    "19": {
+      "prompt": "Jack did 10 push-ups on the first day of a fitness program. Each later day he did 9 less than twice the previous day's number. If aₙ is push-ups on day n, which recursive formula models this?",
+      "choices": ["a₁ = 10; aₙ = 2aₙ₋₁ − 9", "a₁ = 10; aₙ = 9 − 2aₙ₋₁", "a₁ = 10; aₙ = 2(n − 1) − 9", "a₁ = 10; aₙ = 9 − 2(n − 1)"],
+      "explanation": "Start with a₁=10. To get each later day's count, double the preceding count aₙ₋₁, then subtract 9, yielding aₙ = 2aₙ₋₁ − 9.",
+      "imageAlt": "First-day value ten and recurrence relationships are transcribed, distinguishing previous term a sub n minus one from day index n minus one."
+    },
+    "20": {
+      "prompt": "Which equation is equivalent to x² − 6x + 4 = 0?",
+      "choices": ["(x − 3)² = −4", "(x − 3)² = 5", "(x − 3)² = 6", "(x − 3)² = 9"],
+      "explanation": "Move 4 to the right: x² − 6x = −4. Add 9 to both sides to complete the square, giving (x − 3)² = 5.",
+      "imageAlt": "Original quadratic and four completed-square equations are transcribed, retaining the squared binomial and all right-hand constants."
+    },
+    "21": {
+      "prompt": "What is the equation of the line through (6, −3) with slope −4/3?",
+      "choices": ["3y = −4x + 15", "3y = −4x + 6", "−3y = 4x + 15", "−3y = 4x + 6"],
+      "explanation": "Using y=mx+b, substitute the point and slope: −3 = (−4/3)(6)+b = −8+b, so b=5. Therefore y=−4x/3+5, or 3y=−4x+15.",
+      "imageAlt": "Point six comma negative three, slope negative four-thirds, and four line equations are transcribed with all signs."
+    },
+    "22": {
+      "prompt": "G(m) is the amount of gasoline consumed by a car traveling m miles. An appropriate domain for m would be ...",
+      "choices": ["integers", "rational numbers", "nonnegative integers", "nonnegative rational numbers"],
+      "explanation": "Distance traveled cannot be negative, and it can include fractional miles. Nonnegative rational numbers are the best of the listed domains.",
+      "imageAlt": "Gasoline function of miles and all four domain categories are transcribed, including nonnegative and rational qualifiers."
+    },
+    "23": {
+      "prompt": "Reported polio cases in Nigeria by year were 2006:1129, 2007:285, 2008:798, 2009:388, 2010:21, 2011:62, 2012:122, 2013:53, 2014:60, 2015:0. What was the average rate of change, to the nearest hundredth, in cases per year from 2006 to 2013?",
+      "choices": ["−0.01", "−125.44", "−134.50", "−153.71"],
+      "explanation": "Use the specified endpoints: (53 − 1129)/(2013 − 2006) = −1076/7 ≈ −153.71 reported cases per year.",
+      "imageAlt": "Full year-and-case table from 2006 through 2015 is transcribed in the prompt, with 2006 1129 cases and 2013 53 cases."
+    },
+    "24": {
+      "prompt": "Gas in England cost 1.35 euros per liter; one dollar equaled 0.622 euros; and one liter equaled 0.264 gallon. Which product gives the cost in dollars per gallon?",
+      "choices": ["(1.35 euros/1 L) · (1 L/0.264 gal) · ($1.00/0.622 euros)", "(1.35 euros/1 L) · ($1.00/0.622 euros) · (0.264 gal/1 L)", "(1.35 euros/1 L) · (1 L/0.264 gal) · (0.622 euros/$1.00)", "(1.35 euros/1 L) · (0.622 euros/$1.00) · (0.264 gal/1 L)"],
+      "explanation": "Start with euros per liter. Multiply by liters per gallon and dollars per euro so the euros and liters cancel: (1.35 euros/L)(1 L/0.264 gal)($1/0.622 euros). The remaining units are dollars per gallon.",
+      "imageAlt": "All four unit-conversion products are transcribed with 1.35 euros per liter, 0.622 euros per dollar, and 0.264 gallon per liter."
+    }
+  }
+}

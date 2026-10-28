@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "07b2d02f3b438f5b6f813854ad2ebd466639c3518be14b5f756deca76780366e",
+  "questions": {
+    "1": {
+      "prompt": "Which pictured shape cannot be a cross section of a right circular cone?",
+      "choices": ["square", "triangle", "domed curved shape", "ellipse"],
+      "explanation": "A plane through a cone can make triangular and curved sections such as circles or ellipses. A cone has a curved lateral surface, so a flat slice cannot have four straight sides forming a square.",
+      "imageAlt": "The problem shows an upright right circular cone. Its image-only choices are transcribed as choice 1 square, choice 2 triangle, choice 3 a domed shape with a straight base and curved top, and choice 4 an ellipse."
+    },
+    "2": {
+      "prompt": "What line is perpendicular to y = −(1/2)x−5 and passes through (6,−4)?",
+      "choices": ["y = −(1/2)x+4", "y = −(1/2)x−1", "y = 2x+14", "y = 2x−16"],
+      "explanation": "The perpendicular slope is the negative reciprocal of −1/2, which is 2. Write y = 2x+b; substituting (6,−4) gives −4 = 12+b, so b = −16.",
+      "imageAlt": "Text-only perpendicular-line question; the given equation, point, and all four equations are in accessible text."
+    },
+    "3": {
+      "prompt": "In parallelogram QRST, diagonal TR is crossed at W by UV, where U lies on TS and V on QR. If angle S = 60°, angle SRT = 83°, and angle TWU = 35°, what is angle WVQ?",
+      "choices": ["37°", "60°", "72°", "83°"],
+      "explanation": "In triangle TSR, the angle at T is 180°−60°−83° = 37°. Since TS ∥ QR, angle WRV at R is also 37°. Vertical angles make angle RWV = angle TWU = 35°. In triangle WVR, angle WVR = 108°, so its exterior angle WVQ is 180°−108° = 72°.",
+      "imageAlt": "Parallelogram QRST has Q lower left, R lower right, S upper right, T upper left. U is on upper side TS and V on lower side QR. Diagonal T-W-R crosses segment U-W-V at W. Angle S is 60°, angle SRT at R is 83°, and angle TWU at W is 35°."
+    },
+    "4": {
+      "prompt": "A 14-by-16-by-10-inch rectangular fish tank holds 1680 cubic inches of water. What percent is empty?",
+      "choices": ["10%", "25%", "50%", "75%"],
+      "explanation": "The tank's capacity is 14·16·10 = 2240 cubic inches. Empty volume is 2240−1680 = 560, and 560/2240 = 1/4 = 25%.",
+      "imageAlt": "Text-only prism-volume question; dimensions, water volume, and all percentage options are in accessible text."
+    },
+    "5": {
+      "prompt": "Which coordinate transformation changes a triangle's perimeter?",
+      "choices": ["(x,y)→(y,x)", "(x,y)→(x,−y)", "(x,y)→(4x,4y)", "(x,y)→(x+2,y−5)"],
+      "explanation": "Swapping coordinates and negating y are reflections, and adding fixed amounts is a translation; all preserve lengths. Multiplying both coordinates by 4 is a dilation of factor 4 and multiplies the perimeter by 4.",
+      "imageAlt": "Text-only transformation question; all four coordinate rules are in accessible text."
+    },
+    "6": {
+      "prompt": "Line FE bisects AC at B, and line GE bisects BD at C, where A-B-C-D are collinear. Which statement is always true?",
+      "choices": ["AB ≅ DC", "FB ≅ EB", "BD bisects GE at C", "AC bisects FE at B"],
+      "explanation": "Because FE bisects AC at B, AB = BC. Because GE bisects BD at C, BC = CD. Therefore AB = CD by transitivity; no midpoint fact about FE or GE follows.",
+      "imageAlt": "Horizontal line has points A, B, C, D in that left-to-right order. One slanted line passes through F below-left, B, E above; another passes through G below-right, C, E above. B is the midpoint of AC and C is the midpoint of BD."
+    },
+    "7": {
+      "prompt": "A regular square pyramid has base side 6 inches and altitude 12 inches. What is its volume in cubic inches?",
+      "choices": ["72", "144", "288", "432"],
+      "explanation": "The square base area is 6² = 36. Pyramid volume is (1/3)·base area·height = (1/3)·36·12 = 144 cubic inches.",
+      "imageAlt": "Upright square pyramid has one base edge labeled 6 inches; its perpendicular altitude is stated as 12 inches."
+    },
+    "8": {
+      "prompt": "Triangle ABC has A(−2,−2), B(−6,−3), C(−1,−6), and triangle DEF has D(2,2), E(6,3), F(1,6). Which sequence maps ABC onto DEF?",
+      "choices": ["reflect across the x-axis, then across the y-axis", "rotate 180° about the origin, then reflect across y = x", "rotate 90° clockwise about the origin, then reflect across the y-axis", "translate 8 right and 1 up, then rotate 90° counterclockwise about the origin"],
+      "explanation": "Reflecting over the x-axis changes (x,y) to (x,−y), then reflecting over the y-axis changes it to (−x,−y). Thus A(−2,−2)→D(2,2), B(−6,−3)→E(6,3), and C(−1,−6)→F(1,6).",
+      "imageAlt": "Coordinate graph plots triangle ABC in quadrant III with A(−2,−2), B(−6,−3), C(−1,−6), and congruent triangle DEF in quadrant I at D(2,2), E(6,3), F(1,6). All six coordinates are in the prompt."
+    },
+    "9": {
+      "prompt": "In triangle ABC, angle A is the complement of angle B. Which statement is always true?",
+      "choices": ["tan A = tan B", "sin A = sin B", "cos A = tan B", "sin A = cos B"],
+      "explanation": "Complementary angles sum to 90°. The cofunction identity gives sin A = cos(90°−A) = cos B.",
+      "imageAlt": "Text-only complementary-angle question; all four trigonometric equations are in accessible text."
+    },
+    "10": {
+      "prompt": "A line through (1,1) and (5,7) is dilated by factor 3 centered at the origin. What is true of its image line?",
+      "choices": ["It is perpendicular to the original.", "It is parallel to the original.", "It passes through the origin.", "It is the original line."],
+      "explanation": "A dilation about the origin sends the points to (3,3) and (15,21). The slope remains (21−3)/(15−3) = 3/2, the same as the original line's (7−1)/(5−1) = 3/2. The original does not pass through the origin, so its image is a distinct parallel line.",
+      "imageAlt": "Text-only line-dilation question; both source points, scale factor, and all relationship options are in accessible text."
+    },
+    "11": {
+      "prompt": "Quadrilateral ABCD has A(−2,6), B(4,3), C(2,−1), D(−4,2). It is rotated 90° counterclockwise about the origin. Is distance preserved, and which listed image coordinate is correct?",
+      "choices": ["no; C′(1,2)", "no; D′(2,4)", "yes; A′(6,2)", "yes; B′(−3,4)"],
+      "explanation": "A rotation is a rigid motion, so it preserves distance. A 90° counterclockwise rotation maps (x,y) to (−y,x). In particular B(4,3) maps to B′(−3,4), matching the fourth choice.",
+      "imageAlt": "Coordinate graph shows quadrilateral A(−2,6), B(4,3), C(2,−1), D(−4,2), connected A-B-C-D. All coordinates needed to evaluate the four answer choices are transcribed in the prompt."
+    },
+    "12": {
+      "prompt": "In circle O, shaded sector LOM has area 2π cm². Segment NL is a diameter of length 6 cm. What is inscribed angle N?",
+      "choices": ["10°", "20°", "40°", "80°"],
+      "explanation": "The radius is 3 cm, so the full circle has area 9π cm². The shaded sector's fraction is 2π/9π = 2/9, making central angle LOM = (2/9)·360° = 80°. Angle N intercepts shaded arc LM and is half that, 40°.",
+      "imageAlt": "Circle centered at O has L at lower left, M at upper left, and N at upper right. L-O-N is a straight diameter of length 6 cm. Radii OL and OM bound the shaded left-hand sector with area 2π cm²; chords N-L and N-M form the inscribed angle at N."
+    },
+    "13": {
+      "prompt": "Triangles ABC and DEF are to be proved similar by SAS, with AB = 6 and AC = 8. Which additional data suffice?",
+      "choices": ["DE = 9, DF = 12, and angle A ≅ angle D", "DE = 8, DF = 10, and angle A ≅ angle D", "DE = 36, DF = 64, and angle C ≅ angle F", "DE = 15, DF = 20, and angle C ≅ angle F"],
+      "explanation": "SAS similarity requires two corresponding side ratios and their included angles. AB/DE = 6/9 = 2/3 and AC/DF = 8/12 = 2/3, while angle A between AB and AC equals angle D between DE and DF.",
+      "imageAlt": "Small triangle ABC has A lower left, C lower right, B above, with AB labeled 6 and AC labeled 8. Larger triangle DEF is arranged similarly with D lower left, F lower right, E above. Candidate lengths and angle equalities are fully transcribed in the choices."
+    },
+    "14": {
+      "prompt": "A basketball has diameter 9.5 inches and a tennis ball has diameter 2.5 inches. About how many times greater is the basketball's volume?",
+      "choices": ["3591", "65", "55", "4"],
+      "explanation": "Sphere volume scales with the cube of diameter. The ratio is (9.5/2.5)³ = 3.8³ ≈ 54.9, or about 55 times.",
+      "imageAlt": "Text-only sphere-volume comparison; both diameters and all numerical choices are in accessible text."
+    },
+    "15": {
+      "prompt": "One side of a regular pentagon has endpoints (−1,4) and (2,3). What is its perimeter?",
+      "choices": ["√10", "5√10", "5√2", "25√2"],
+      "explanation": "The side length is √[(2−(−1))²+(3−4)²] = √(3²+1²) = √10. A regular pentagon has five equal sides, so the perimeter is 5√10.",
+      "imageAlt": "Text-only regular-pentagon distance problem; endpoints and all radical choices are in accessible text."
+    },
+    "16": {
+      "prompt": "In right triangle ABC, angle C is 90°, AB = 14, and AC = 9. What is angle A to the nearest degree?",
+      "choices": ["33°", "40°", "50°", "57°"],
+      "explanation": "AB is the hypotenuse, and AC is adjacent to angle A. Thus cos A = AC/AB = 9/14, giving A = arccos(9/14) ≈ 50°.",
+      "imageAlt": "Right triangle ABC has C at lower left, A directly above C, and B at lower right. AC is vertical length 9, AB is slanted hypotenuse length 14, and the right angle is at C."
+    },
+    "17": {
+      "prompt": "Find the center and radius of x²+6x+y²−4y = 23.",
+      "choices": ["center (3,−2), radius 36", "center (3,−2), radius 6", "center (−3,2), radius 36", "center (−3,2), radius 6"],
+      "explanation": "Complete the squares: x²+6x+9+y²−4y+4 = 23+9+4, so (x+3)²+(y−2)² = 36. The center is (−3,2) and radius is √36 = 6.",
+      "imageAlt": "Text-only circle-equation question; the original equation and all center-radius choices are in accessible text."
+    },
+    "18": {
+      "prompt": "Triangle RST has R(−2,−3), S(8,2), and T(4,5). What type of triangle is it?",
+      "choices": ["right", "acute", "obtuse", "equiangular"],
+      "explanation": "The squared side lengths are RT² = 6²+8² = 100, ST² = 4²+3² = 25, and RS² = 10²+5² = 125. Since 100+25 = 125, the triangle is right, with the right angle at T.",
+      "imageAlt": "Text-only coordinate-triangle classification question; all three vertices and all four type choices are in accessible text."
+    },
+    "19": {
+      "prompt": "Clay weighs 0.075 lb per cubic inch. What is the weight, to the nearest pound, of a solid clay sphere of radius 4 inches?",
+      "choices": ["34", "20", "15", "4"],
+      "explanation": "A sphere of radius 4 has volume (4/3)π(4³) ≈ 268.1 cubic inches. At 0.075 lb per cubic inch, it weighs about 268.1·0.075 ≈ 20.1 lb, which rounds to 20 lb.",
+      "imageAlt": "Text-only sphere-density question; radius, weight per cubic inch, and all weight options are in accessible text."
+    },
+    "20": {
+      "prompt": "The similarity ratio of triangle BOY to triangle GRL is 1:2. If BO = x+3 and GR = 3x−1, what is GR?",
+      "choices": ["5", "7", "10", "20"],
+      "explanation": "Corresponding sides BO and GR have ratio 1:2, so 2(x+3) = 3x−1. Solving gives x = 7, and GR = 3(7)−1 = 20.",
+      "imageAlt": "Text-only similar-triangle algebra question; ratio, corresponding side expressions, and choices are in accessible text."
+    },
+    "21": {
+      "prompt": "In circle O, D-O-B lie on a diameter. A, B, C, D lie on the circle, and a tangent passes through D. Which angle is an angle inscribed in a semicircle and therefore right?",
+      "choices": ["angle AOB", "angle BAC", "angle DCB", "angle FDB"],
+      "explanation": "An angle inscribed in a semicircle must have endpoints on a diameter. Angle DCB has vertex C on the circle and intercepts diameter DB, so it is 90°. Angle AOB is central and angle FDB uses a tangent, not two chords.",
+      "imageAlt": "Circle centered O has D on upper-left circumference, B on lower-right, with D-O-B collinear as a diameter. C is near top and A lower left. Chords D-C, C-B, A-C, and A-B are shown; a tangent line F-D-E touches at D, and radius A-O is drawn."
+    },
+    "22": {
+      "prompt": "CD is an altitude to hypotenuse AB of right triangle ABC. Which lengths do not yield CD = 6√2?",
+      "choices": ["AD = 2 and DB = 36", "AD = 3 and AB = 24", "AD = 6 and DB = 12", "AD = 8 and AB = 17"],
+      "explanation": "The altitude theorem gives CD² = AD·DB. A 6√2 altitude has square 72. Choices 1, 3, and 4 give products 2·36 = 72, 6·12 = 72, and 8·(17−8) = 72. Choice 2 gives DB = 24−3 = 21 and product 3·21 = 63, so it does not work.",
+      "imageAlt": "Right triangle ABC has C at top as the right-angle vertex and A-B as a horizontal hypotenuse. D lies between A and B, with CD perpendicular to AB. Four candidate segment lengths are fully transcribed in the choices."
+    },
+    "23": {
+      "prompt": "How many circular necklaces of radius 10 cm can be made from 1000 cm of wire?",
+      "choices": ["15", "16", "31", "32"],
+      "explanation": "Each necklace needs circumference 2πr = 20π ≈ 62.83 cm. Then 1000/(20π) ≈ 15.9, so only 15 complete necklaces can be made.",
+      "imageAlt": "Text-only circumference-and-division question; radius, total wire length, and all integer choices are in accessible text."
+    },
+    "24": {
+      "prompt": "In triangle SCU, T lies on SU and O lies on CU. Angle C ≅ angle OTU. If TU = 4, OU = 5, and OC = 7, what is ST?",
+      "choices": ["5.6", "8.75", "11", "15"],
+      "explanation": "Triangles SCU and TOU are similar by angle C = angle T and their shared angle U. CU = OC+OU = 12, so the large-to-small ratio CU/TU = 12/4 = 3. Corresponding SU/OU = 3 gives SU = 15, and ST = SU−TU = 15−4 = 11.",
+      "imageAlt": "Large triangle S-C-U has S upper left, C lower left, U lower right. O lies on base C-U, with OC 7 and OU 5; T lies on slanted side S-U, with TU 4. Segment O-T forms smaller triangle T-O-U. Angle C of the large triangle equals angle O-T-U of the small triangle."
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "b493970a686ef8cbb511d003b310bfca654b7d2a43cb602105137a88b8b1356f",
+  "questions": {
+    "1": {
+      "prompt": "For the line f(x)=−2x+b, if b increases by 4, in which direction does its graph shift by 4 units?",
+      "choices": ["right", "up", "left", "down"],
+      "explanation": "The constant b is the y-intercept. Adding 4 to b raises every output by 4, shifting the line up four units.",
+      "imageAlt": "Line formula negative two x plus b and all four shift directions are transcribed."
+    },
+    "2": {
+      "prompt": "Rowan starts with $50 and adds $5 weekly; Jonah starts with $10 and adds $15 weekly. Each graphs jar amount versus time. Which statement is true?",
+      "choices": ["Rowan's graph has a steeper slope than Jonah's.", "Rowan's graph always lies above Jonah's.", "Jonah's graph has a steeper slope than Rowan's.", "Jonah's graph always lies above Rowan's."],
+      "explanation": "Slope is the weekly change in jar amount. Jonah adds $15 per week versus Rowan's $5, so Jonah's graph is steeper even though he starts with less money.",
+      "imageAlt": "Rowan's initial fifty dollars and five-dollar weekly addition, Jonah's initial ten dollars and fifteen-dollar weekly addition, and all four complete graph statements are transcribed."
+    },
+    "3": {
+      "prompt": "At a basketball game adult tickets cost $3.00 and student tickets $1.50. If a adult tickets and s student tickets are sold, which expression gives total ticket revenue?",
+      "choices": ["4.50as", "4.50(a+s)", "(3.00a)(1.50s)", "3.00a+1.50s"],
+      "explanation": "Adult revenue is 3.00a and student revenue is 1.50s. Add those two amounts to get 3.00a+1.50s.",
+      "imageAlt": "Adult and student ticket prices, respective count variables a and s, and all four complete algebraic expressions are transcribed."
+    },
+    "4": {
+      "prompt": "A cubic graph crosses the x-axis at approximately −4, −2, and 1, with its right end rising. Which function could represent it?",
+      "choices": ["f(x)=(x+2)(x²+3x−4)", "f(x)=(x−2)(x²+3x−4)", "f(x)=(x+2)(x²+3x+4)", "f(x)=(x−2)(x²+3x+4)"],
+      "explanation": "The graph's zeros require factors (x+4), (x+2), and (x−1). Since x²+3x−4=(x+4)(x−1), multiplying by x+2 gives choice 1.",
+      "imageAlt": "Cubic crosses the horizontal axis near negative four, negative two, and positive one, with positive-leading-coefficient end behavior; all four factored-form choices retain coefficients and signs."
+    },
+    "5": {
+      "prompt": "Chewing gum costs $0.75 per pack and juice $1.25 per bottle. Julia has at most $22, must buy 7 gum packs, and buys b juice bottles. Which inequality limits b?",
+      "choices": ["0.75b+1.25(7)≥22", "0.75b+1.25(7)≤22", "0.75(7)+1.25b≥22", "0.75(7)+1.25b≤22"],
+      "explanation": "Seven gum packs cost 0.75·7, and b bottles cost 1.25b. The combined spending cannot exceed $22, so 0.75(7)+1.25b≤22.",
+      "imageAlt": "Gum price seventy-five cents, juice price one dollar twenty-five cents, seven gum packs, twenty-two-dollar budget, and four inequalities with exact variable-price pairings and inclusive signs are transcribed."
+    },
+    "6": {
+      "prompt": "Which graph shows the simultaneous solution to y≤x+3 and y≥−2x−2?",
+      "choices": ["Overlap shaded to the upper left of the two crossing solid lines", "Overlap shaded to the lower left of the two crossing solid lines", "Overlap shaded to the right between the two crossing solid lines, including (0,0)", "Overlap shaded above the crossing solid lines"],
+      "explanation": "The origin satisfies both inequalities: 0≤3 and 0≥−2. The solution is below y=x+3 and above y=−2x−2, the overlapping region opening to the right in graph 3. Both boundaries are solid because equality is allowed.",
+      "imageAlt": "Two solid boundary lines have slopes plus one and negative two and intercepts three and negative two. The valid overlap is the wedge to the right that includes the origin; four graph options are distinguished by their overlap regions."
+    },
+    "7": {
+      "prompt": "Benin has 9.05 million people and grows 3.1% each year. Which expression estimates its population seven years from now?",
+      "choices": ["(9.05×10⁶)(1−0.31)⁷", "(9.05×10⁶)(1+0.31)⁷", "(9.05×10⁶)(1+0.031)⁷", "(9.05×10⁶)(1−0.031)⁷"],
+      "explanation": "Convert 3.1% to 0.031. Growth multiplies the current population by 1+0.031 each year, so after seven years the expression is (9.05×10⁶)(1.031)⁷.",
+      "imageAlt": "Initial population nine-point-zero-five million, annual positive growth three-point-one percent, seven-year horizon, and all four full exponential expressions are transcribed."
+    },
+    "8": {
+      "prompt": "A phone plan charges $62 base fee including 2 GB, plus $30 per GB beyond 2 GB. For total data g>2, which equation gives cost C?",
+      "choices": ["C=30+62(2−g)", "C=30+62(g−2)", "C=62+30(2−g)", "C=62+30(g−2)"],
+      "explanation": "The number of overage gigabytes is g−2. Multiply that by $30 and add the $62 base fee: C=62+30(g−2).",
+      "imageAlt": "Sixty-two-dollar base fee, thirty-dollar charge per gigabyte beyond two, total gigabytes g greater than two, and all four full cost equations are transcribed."
+    },
+    "9": {
+      "prompt": "Which listed expressions equal 4x²−4x−120? I: 2(2x²−2x−60); II: 4(x²−x−30); III: 4(x+6)(x−5); IV: 4x(x−1)−120.",
+      "choices": ["I and II, only", "II and IV, only", "I, II, and IV", "II, III, and IV"],
+      "explanation": "Distributing I, II, and IV each gives 4x²−4x−120. Expression III expands to 4(x²+x−30)=4x²+4x−120, so its middle-term sign is wrong.",
+      "imageAlt": "Target quadratic and all four Roman-numeral expressions are transcribed with exponents, factors, signs, and answer groups."
+    },
+    "10": {
+      "prompt": "A store sold 20 candles for $355.60. Small candles cost $10.98 and large ones $27.98. How many large candles were sold?",
+      "choices": ["6", "8", "10", "12"],
+      "explanation": "If all 20 candles were small, revenue would be $219.60. Each large candle adds $17.00 more, and the extra $136.00 equals 8·$17.00. Thus eight were large.",
+      "imageAlt": "Twenty total candles, revenue three hundred fifty-five dollars sixty cents, both candle prices, and all four whole-number choices are transcribed."
+    },
+    "11": {
+      "prompt": "Which representations are functions? I: table (2,6),(3,−12),(4,7),(5,5),(2,−6). II: ordered pairs (1,1),(2,1),(3,2),(4,3),(5,5),(6,8),(7,13). III: sideways parabola opening right. IV: y=2x+1.",
+      "choices": ["I and II", "II and IV", "III, only", "IV, only"],
+      "explanation": "I assigns two outputs to x=2, so it is not a function. III fails the vertical-line test. II has distinct inputs, and IV gives one output for each x, so both are functions.",
+      "imageAlt": "All five rows of table I, all seven ordered pairs of II, the right-opening sideways parabola III, and linear equation IV are fully described; four answer groups are listed."
+    },
+    "12": {
+      "prompt": "If f(x)=√(2x+3)/(6x−5), what is f(1/2)?",
+      "choices": ["1", "−2", "−1", "13/3"],
+      "explanation": "Substitute x=1/2: the numerator is √4=2 and the denominator is 3−5=−2. Their quotient is −1.",
+      "imageAlt": "The square-root bar covers two x plus three in the numerator, while the denominator is six x minus five; the input one-half and four signed choices are transcribed."
+    },
+    "13": {
+      "prompt": "What are the zeros of f(x)=3x²−3x−6?",
+      "choices": ["−1 and −2", "1 and −2", "1 and 2", "−1 and 2"],
+      "explanation": "Factor 3x²−3x−6=3(x−2)(x+1). The factors vanish at x=2 and x=−1.",
+      "imageAlt": "Quadratic three x squared minus three x minus six and all four signed root-pair choices are transcribed."
+    },
+    "14": {
+      "prompt": "Which recursion has first term 10 and common difference 4?",
+      "choices": ["f(1)=10; f(x)=f(x−1)+4", "f(1)=4; f(x)=f(x−1)+10", "f(1)=10; f(x)=4f(x−1)", "f(1)=4; f(x)=10f(x−1)"],
+      "explanation": "An arithmetic sequence with common difference 4 adds 4 to each preceding term. Starting at 10 gives f(1)=10 and f(x)=f(x−1)+4.",
+      "imageAlt": "First term ten, common difference four, and all four recursive formulas are transcribed with starting values, addition or multiplication, and previous-term notation."
+    },
+    "15": {
+      "prompt": "A preheated kiln is at 200°F at hour 0. Its graph passes through (1,700), (1.5,900), (2.5,1300), (5,1640), and (8,1800), where coordinates are hours and °F. Which interval has the greatest average temperature-change rate?",
+      "choices": ["0 to 1 hour", "1 to 1.5 hours", "2.5 to 5 hours", "5 to 8 hours"],
+      "explanation": "From 0 to 1 hour the rate is (700−200)/1=500°F per hour. The other listed rates are 400, 136, and about 53°F per hour, so the first interval is greatest.",
+      "imageAlt": "Kiln-temperature graph is transcribed with initial point zero hours at two hundred degrees Fahrenheit and five labeled points (1,700), (1.5,900), (2.5,1300), (5,1640), (8,1800); four time intervals are listed."
+    },
+    "16": {
+      "prompt": "Which graph represents the piecewise function f(x)=|x| for x<1 and f(x)=√x for x≥1?",
+      "choices": ["V-shaped left branch with a steep straight rising branch on the right", "V-shaped absolute-value graph through the origin up to x=1, then a rising concave-down square-root branch", "Curved left branch reaching the origin, then a rising square-root branch", "Curved left branch reaching the origin, then a straight rising right branch"],
+      "explanation": "For x<1, |x| makes a V with vertex at (0,0). At x=1 the rule changes to √x, which starts at (1,1) and rises while flattening. Only graph 2 combines those pieces.",
+      "imageAlt": "Piecewise rule is transcribed with strict x less than one for absolute value and inclusive x at least one for square root. Each graph option describes whether its left side is V-shaped or curved and whether its right side is straight or concave-down."
+    },
+    "17": {
+      "prompt": "For f(x)=x²−2x−8 and g(x)=x/4−1, which values of x make f(x)=g(x)?",
+      "choices": ["−1.75 and −1.438", "−1.75 and 4", "−1.438 and 0", "4 and 0"],
+      "explanation": "Set the functions equal and clear fractions: 4x²−9x−28=0=(4x+7)(x−4). Hence x=−7/4=−1.75 or x=4.",
+      "imageAlt": "Quadratic and one-fourth-x linear function are transcribed with all four numeric root pairs, including negative decimal choices."
+    },
+    "18": {
+      "prompt": "Company A pays $10,000 the first month and increases its monthly payment by $5,000. Company B pays $500 the first month and doubles its monthly payment each month. At which monthly payment does B first exceed A?",
+      "choices": ["6", "7", "8", "9"],
+      "explanation": "In month n, A pays 10,000+5,000(n−1) and B pays 500·2^(n−1). In month 7, B's $32,000 is below A's $40,000; in month 8, B's $64,000 exceeds A's $45,000 for the first time.",
+      "imageAlt": "Both companies' starting monthly payments and monthly arithmetic-versus-doubling changes are transcribed with four candidate month numbers."
+    },
+    "19": {
+      "prompt": "Team A's runs were 4,8,5,12,3,9,5,2; Team B's were 5,9,11,4,6,11,2,7. Which comparison of their means and standard deviations is true?",
+      "choices": ["mean A < mean B; standard deviation A > standard deviation B", "mean A > mean B; standard deviation A < standard deviation B", "mean A < mean B; standard deviation A < standard deviation B", "mean A > mean B; standard deviation A > standard deviation B"],
+      "explanation": "A's mean is 48/8=6 and B's is 55/8=6.875, so A's mean is smaller. The squared deviations sum to 80 for A and 74.875 for B, giving A the larger standard deviation.",
+      "imageAlt": "All eight season scores for each team are transcribed in order, along with four complete paired mean-and-standard-deviation comparisons."
+    },
+    "20": {
+      "prompt": "Complete the square for f(x)=x²−12x+7 in the form f(x)=(x−a)²+b. What is a?",
+      "choices": ["6", "−6", "12", "−12"],
+      "explanation": "x²−12x+7=(x−6)²−36+7=(x−6)²−29. Comparing with (x−a)²+b gives a=6.",
+      "imageAlt": "Original quadratic, required vertex form with x minus a squared, and four signed possible a-values are transcribed."
+    },
+    "21": {
+      "prompt": "Compare g(x)=−x²−x+6 with table n(x): x=−3,−2,−1,0,1,2,3,4,5 gives n=−7,0,5,8,9,8,5,0,−7. Which statement is true?",
+      "choices": ["On −1≤x≤1, n's average rate of change is less than g's.", "g's y-intercept exceeds n's.", "g has a greater maximum than n.", "The sum of n's zeros exceeds the sum of g's zeros."],
+      "explanation": "The table shows n's zeros at −2 and 4, whose sum is 2. Factor g(x)=−(x+3)(x−2), so its zeros are −3 and 2, summing to −1. Thus n's root sum is greater.",
+      "imageAlt": "Complete nine-column n table, quadratic g, and all four full comparison statements are transcribed; n has visible zero outputs at x negative two and four."
+    },
+    "22": {
+      "prompt": "For which listed values of P and W is P+W rational?",
+      "choices": ["P=1/√3; W=1/√6", "P=1/√4; W=1/√9", "P=1/√6; W=1/√10", "P=1/√25; W=1/√2"],
+      "explanation": "In choice 2, √4=2 and √9=3, so the sum is 1/2+1/3=5/6, a rational number. Each other choice contains an uncanceled irrational reciprocal root.",
+      "imageAlt": "All eight fractions in four P-and-W pairs are transcribed with separate square-root denominators three, six, four, nine, ten, twenty-five, and two."
+    },
+    "23": {
+      "prompt": "Solve (x+3)²=7.",
+      "choices": ["3±√7", "7±√3", "−3±√7", "−7±√3"],
+      "explanation": "Taking both square roots gives x+3=±√7. Subtract 3 to obtain x=−3±√7.",
+      "imageAlt": "Equation quantity x plus three squared equals seven and all four plus-or-minus radical solution forms are transcribed."
+    },
+    "24": {
+      "prompt": "Which trinomial equals 3(x−2)²−2(x−1)?",
+      "choices": ["3x²−2x−10", "3x²−2x−14", "3x²−14x+10", "3x²−14x+14"],
+      "explanation": "Expand and combine: 3(x²−4x+4)−2x+2=3x²−12x+12−2x+2=3x²−14x+14.",
+      "imageAlt": "Three times quantity x minus two squared, minus two times the unsquared quantity x minus one, and all four quadratic choices are transcribed."
+    }
+  }
+}

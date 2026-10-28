@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "1c5e911225d837989706c0032e5c0f9c4999f642a3764d7772715da17fc55fed",
+  "questions": {
+    "1": {
+      "prompt": "Austin's population was 629 in 1850, 14,575 in 1890, 29,860 in 1910, 132,459 in 1950, 251,808 in 1970, 494,290 in 1990, and 790,390 in 2010. Which listed period had the greatest average population increase per year?",
+      "choices": ["1850 to 1910", "1990 to 2010", "1950 to 1970", "1890 to 1970"],
+      "explanation": "Compare population change divided by elapsed years. For 1990–2010, (790,390 − 494,290)/20 = 14,805 people per year. This exceeds 1950–1970's about 5,967 per year and the longer intervals' rates.",
+      "imageAlt": "The full table gives year–population pairs: 1850–629; 1870–4,428; 1890–14,575; 1910–29,860; 1930–53,120; 1950–132,459; 1970–251,808; 1990–494,290; 2010–790,390."
+    },
+    "2": {
+      "prompt": "Which expression is not equivalent to 36x⁶ − 25y⁴?",
+      "choices": ["6²(x³)² − 5²(y²)²", "(6x³ − 5y²)(6x³ + 5y²)", "(6x⁶ − 5y⁴)(6x⁶ + 5y⁴)", "(3·2x³ − 5y²)(3·2x³ + 5y²)"],
+      "explanation": "The expression is a difference of squares: (6x³)² − (5y²)². Choice 3 instead squares 6x⁶ and 5y⁴ when multiplied, producing 36x¹² − 25y⁸.",
+      "imageAlt": "The original is thirty-six x to the sixth minus twenty-five y to the fourth. The four choices use squared powers or paired conjugate factors."
+    },
+    "3": {
+      "prompt": "What are the zeros of s(x) = x⁴ − 9x² + 3x³ − 27x − 10x² + 90?",
+      "choices": ["{−3, −2, 5}", "{−2, 3, 5}", "{−3, −2, 3, 5}", "{−5, −3, 2, 3}"],
+      "explanation": "Group the terms as (x² − 9)(x² + 3x − 10). Factor further to (x − 3)(x + 3)(x + 5)(x − 2). The four zeros are −5, −3, 2, and 3.",
+      "imageAlt": "The polynomial deliberately lists two separate negative x-squared terms: negative nine x squared and negative ten x squared."
+    },
+    "4": {
+      "prompt": "An angle in standard position has terminal side through (−2, −3). What is tan θ?",
+      "choices": ["2/3", "3/2", "−2/√13", "−3/√13"],
+      "explanation": "For a point (x, y) on the terminal side, tan θ = y/x. Here (−3)/(−2) = 3/2, positive in Quadrant III.",
+      "imageAlt": "The terminal-side point has x coordinate negative two and y coordinate negative three, placing the angle in Quadrant III."
+    },
+    "5": {
+      "prompt": "The monthly temperature model is T(m) = −23cos((π/6)m) + 56. What is its range in degrees Fahrenheit?",
+      "choices": ["[−23, 23]", "[33, 79]", "[−23, 56]", "[−79, 33]"],
+      "explanation": "Cosine varies from −1 to 1. Multiplying by −23 gives values from −23 to 23, then adding 56 shifts that interval to [33, 79].",
+      "imageAlt": "The temperature function has amplitude twenty-three, vertical shift fifty-six, and cosine input pi over six times the month number."
+    },
+    "6": {
+      "prompt": "Which expression equals a·⁵√(a⁴)?",
+      "choices": ["a", "a^(9/5)", "a^(9/4)", "a^(1/5)"],
+      "explanation": "The fifth root of a⁴ is a^(4/5). Multiplying by a¹ adds exponents: 1 + 4/5 = 9/5, so the expression is a^(9/5).",
+      "imageAlt": "The expression is a outside a fifth-root radical containing a to the fourth; the options use different rational exponents."
+    },
+    "7": {
+      "prompt": "Which expression equals 3i(ai − 6i²)?",
+      "choices": ["3a + 18i", "3a − 18i", "−3a + 18i", "−3a − 18i"],
+      "explanation": "Distribute 3i to get 3ai² − 18i³. Since i² = −1 and i³ = −i, this simplifies to −3a + 18i.",
+      "imageAlt": "The expression has three i multiplied by the parentheses a i minus six i squared."
+    },
+    "8": {
+      "prompt": "A logarithmic graph has a vertical asymptote at x = −a and is shifted upward by c. Which equation represents it?",
+      "choices": ["h(x) = log(x + a) + c", "h(x) = log(x − a) + c", "h(x) = log(x + a) − c", "h(x) = log(x − a) − c"],
+      "explanation": "Replacing x by x + a shifts the logarithm left to an asymptote at x = −a. Adding c shifts the entire curve upward, giving log(x + a) + c.",
+      "imageAlt": "The increasing logarithmic curve approaches a vertical line at the marked x value negative a. It is drawn above the corresponding unshifted log shape, with positive c marked on the vertical axis."
+    },
+    "9": {
+      "prompt": "Which listed function has f(x) → −∞ as x → −∞?",
+      "choices": ["Graph 1", "Graph 2", "f(x) = 5(4)^(−x)", "f(x) = −log₅(−x)"],
+      "explanation": "As x becomes very negative, −x grows without bound. Then log₅(−x) also grows without bound, and its negative approaches −∞. The two graphed left ends and the exponential all rise instead.",
+      "imageAlt": "Graph 1 has both ends pointing upward. Graph 2 rises on the left and falls on the right. Choice 3 is a positive exponential five times four raised to negative x. Choice 4 is negative log base five of negative x."
+    },
+    "10": {
+      "prompt": "Which expression equals (x² + 3)² − 2(x² + 3) − 24?",
+      "choices": ["(x² + 9)(x² − 1)", "(x² − 3)(x² + 7)", "x⁴ − 2x² − 21", "x⁴ + 4x² − 9"],
+      "explanation": "Let u = x² + 3. Then u² − 2u − 24 = (u − 6)(u + 4). Substituting back gives (x² − 3)(x² + 7).",
+      "imageAlt": "The repeated quantity in the original is the whole parenthesis x squared plus three, once squared and once multiplied by negative two."
+    },
+    "11": {
+      "prompt": "Solve the system x + y + z = 2, x − 2y − z = −4, and x − 9y + z = −18.",
+      "choices": ["(−2, 2, 2)", "(−2, −2, 6)", "(0, 2, 0)", "(0, 2, 4)"],
+      "explanation": "For (0, 2, 0), the left sides are 2, −4, and −18, matching all three equations. The other listed triples fail at least one equation.",
+      "imageAlt": "Three linear equations use variables x, y, z and right sides two, negative four, and negative eighteen. Choices are ordered triples."
+    },
+    "12": {
+      "prompt": "What are the roots of x² − 4x = −13?",
+      "choices": ["2 ± 3i", "2 ± 6i", "2 ± √17", "2 ± i√13"],
+      "explanation": "Add 4 to both sides after completing the square: (x − 2)² = −9. Taking square roots gives x − 2 = ±3i, so x = 2 ± 3i.",
+      "imageAlt": "The quadratic equation is x squared minus four x equals negative thirteen. The answer choices include complex conjugate pairs."
+    },
+    "13": {
+      "prompt": "Which expression equals (2x³ + 2x − 7)/(2x + 4)?",
+      "choices": ["x² − 2x + 5 − 27/(2x + 4)", "x² − 1 − 3/(2x + 4)", "x² + 2x + 5 + 13/(2x + 4)", "x² + 2x − 3 + 5/(2x + 4)"],
+      "explanation": "Polynomial division of 2x³ + 0x² + 2x − 7 by 2x + 4 gives quotient x² − 2x + 5 and remainder −27. Write quotient minus 27/(2x + 4).",
+      "imageAlt": "The numerator is two x cubed plus two x minus seven, with no x-squared term. The denominator is two x plus four."
+    },
+    "14": {
+      "prompt": "A celebrity's followers, in thousands, were 3.1, 7.5, 29.7, 49.7, 200.3, 680.3, 5200.3, 8109.3, and 12107.1 at 2, 11, 16, 20, 27, 35, 47, 50, and 52 months after January 2015. What does exponential regression predict for June 1, 2018?",
+      "choices": ["13,000,000", "5,420,000", "1,850,000", "790,000"],
+      "explanation": "June 2018 is 41 months after January 2015. Exponential regression on the table gives approximately y = 1.768(1.1848)^x thousand followers. At x = 41, this predicts about 1851 thousand, or 1,850,000 followers.",
+      "imageAlt": "The table pairs months 2, 11, 16, 20, 27, 35, 47, 50, 52 with follower counts in thousands 3.1, 7.5, 29.7, 49.7, 200.3, 680.3, 5200.3, 8109.3, 12107.1."
+    },
+    "15": {
+      "prompt": "Luminescence decays according to I = I₀e^[3(−t/0.6)]. Which expression best approximates this function?",
+      "choices": ["I = I₀e^(−t/0.18)", "I = I₀e^(5t)", "I = I₀(0.0067)^t", "I = I₀(0.0497)^(0.6t)"],
+      "explanation": "The exponent 3(−t/0.6) equals −5t, so I = I₀(e^(−5))^t. Since e^(−5) ≈ 0.0067, this is approximately I₀(0.0067)^t.",
+      "imageAlt": "The original exponential is initial intensity times e raised to three times the parenthesis negative t divided by zero point six."
+    },
+    "16": {
+      "prompt": "Student heights are normal with mean 68.1 inches and standard deviation 3.4 inches. Approximately what percent are below 60 inches or above 75 inches?",
+      "choices": ["0.86%", "1.26%", "2.12%", "2.98%"],
+      "explanation": "The two z-scores are (60 − 68.1)/3.4 ≈ −2.38 and (75 − 68.1)/3.4 ≈ 2.03. The lower-tail probability is about 0.86% and the upper-tail probability about 2.12%. Adding the disjoint tails gives about 2.98%.",
+      "imageAlt": "The normal curve is centered at sixty-eight point one inches with standard deviation three point four; the requested regions are below sixty and above seventy-five."
+    },
+    "17": {
+      "prompt": "A simulation drew 500 samples of 100 seniors with assumed musical-interest proportion 0.43. What is the closest standard deviation of the sample proportions?",
+      "choices": ["0.02", "0.05", "0.09", "0.43"],
+      "explanation": "The standard deviation of sample proportions is approximately √[p(1 − p)/n] = √[0.43·0.57/100] ≈ 0.0495, closest to 0.05. The dot plot's spread is consistent with this value.",
+      "imageAlt": "A dot plot of five hundred simulated proportions is centered near 0.43 and spans roughly 0.28 to 0.58, with most values between about 0.34 and 0.52. Each simulated survey contains one hundred seniors."
+    },
+    "18": {
+      "prompt": "For f(x) = cos x, which statement is true?",
+      "choices": ["2f(x) and f(2x) are even functions.", "f(2x) and f(x) + 2 are odd functions.", "2f(x) and f(x + π/2) are odd functions.", "f(x) + 2 is odd and f(x + π/2) is even."],
+      "explanation": "Cosine is even: cos(−x) = cos x. Multiplying by two or replacing x by 2x preserves evenness, so both 2f(x) and f(2x) are even. In contrast, f(x + π/2) = −sin x is odd.",
+      "imageAlt": "The base function is cosine. The options classify scaled cosine, cosine of two x, vertically shifted cosine, and cosine shifted left by pi over two as even or odd."
+    },
+    "19": {
+      "prompt": "Solve (x + 3)/(x − 5) + 6/(x + 2) = (6 + 10x)/[(x − 5)(x + 2)].",
+      "choices": ["{−6}", "{5}", "{−6, 5}", "{−5, 6}"],
+      "explanation": "The original excludes x = 5 and x = −2. Multiplying by (x − 5)(x + 2) gives (x + 3)(x + 2) + 6(x − 5) = 6 + 10x, which simplifies to x² + x − 30 = (x + 6)(x − 5) = 0. Discard x = 5 because it makes a denominator zero; x = −6 remains.",
+      "imageAlt": "The denominators are x minus five, x plus two, and their product. The third numerator is six plus ten x."
+    },
+    "20": {
+      "prompt": "For positive x and y, which of I: (y/x³)^(−1), II: ∛(x⁹)·y^(−1), and III: [x⁶·⁴√(y⁸)]/(x³y³) equal x³/y?",
+      "choices": ["I and II, only", "I and III, only", "II and III, only", "I, II, and III"],
+      "explanation": "I reciprocates y/x³ to x³/y. II has ∛(x⁹) = x³ and y^(−1) = 1/y. III has ⁴√(y⁸) = y² for positive y, so x⁶y²/(x³y³) = x³/y. All three are equivalent.",
+      "imageAlt": "Three expressions use a reciprocal, a cube root of x to the ninth times reciprocal y, and a quotient with x to the sixth times fourth root of y to the eighth over x cubed y cubed."
+    },
+    "21": {
+      "prompt": "If f⁻¹(x) = (2/3)x + 1/6, what is f(x)?",
+      "choices": ["f(x) = −(2/3)x + 1/6", "f(x) = −(3/2)x + 1/4", "f(x) = (3/2)x − 1/4", "f(x) = (3/2)x − 1/6"],
+      "explanation": "Set y = (2/3)x + 1/6 and solve for x: y − 1/6 = (2/3)x, so x = (3/2)y − 1/4. Swap variable names to get f(x) = (3/2)x − 1/4.",
+      "imageAlt": "The inverse function has positive slope two-thirds and y-intercept one-sixth. The four candidate originals vary slope sign and intercept."
+    },
+    "22": {
+      "prompt": "How many of these three equations are identities? I: x² + y² = (x² − y²) + (2xy)². II: x³ + y³ = (x − y) + (x² − xy + y²). III: x⁴ + y⁴ = (x − y)(x − y)(x² + y²).",
+      "choices": ["1", "2", "3", "0"],
+      "explanation": "None holds for every x and y. For example, set x = y = 1: I says 2 = 4, II says 2 = 1, and III says 2 = 0. Thus zero equations are identities.",
+      "imageAlt": "The three proposed equations involve squares and a squared 2xy term, a sum of cubes compared with a sum rather than product, and fourth powers compared with two factors x minus y."
+    },
+    "23": {
+      "prompt": "A parabola has focus (0, 6) and directrix y = 4. What is its equation?",
+      "choices": ["y² = 4(x − 5)", "x² = 4(y − 5)", "y² = 8(x − 5)", "x² = 8(y − 6)"],
+      "explanation": "The vertex is halfway between y = 6 and y = 4, at (0, 5). The focus is one unit above the vertex, so p = 1. In standard form (x − h)² = 4p(y − k), this gives x² = 4(y − 5).",
+      "imageAlt": "The focus is on the y-axis at height six, and the directrix is the horizontal line y equals four; the parabola opens upward."
+    },
+    "24": {
+      "prompt": "A family deposits $500 on each of a child's birthdays 1 through 21, earning 4% annually. Which expression gives the balance immediately after the 21st deposit?",
+      "choices": ["S₂₁ = 500(1.04)²¹", "S₂₁ = 500(1 − 1.04²¹)/(1 − 1.04)", "S₂₁ = 500(1.04)²⁰ + 500", "S₂₁ = 500(1 − 0.04²¹)/(1 − 1.04)"],
+      "explanation": "There are 21 deposits. The first grows for 20 years and the last for 0 years, giving 500[(1.04)²⁰ + ⋯ + 1.04 + 1]. The geometric-series formula is 500[1 − (1.04)²¹]/[1 − 1.04].",
+      "imageAlt": "Deposits of five hundred dollars occur at birthdays one through twenty-one inclusive. The annual interest multiplier is 1.04; the balance is requested just after the last deposit."
+    }
+  }
+}

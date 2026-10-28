@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "41d68c673226ef370a9ca557b042df6fab7e2681db94107fc925c87e4813f413",
+  "questions": {
+    "1": {
+      "prompt": "Which value is a zero of a(x) = x³ + 3x² − 4x − 12?",
+      "choices": ["−12", "−3", "3", "0"],
+      "explanation": "Factor by grouping: x³ + 3x² − 4x − 12 = x²(x + 3) − 4(x + 3) = (x + 3)(x − 2)(x + 2). A zero makes one factor equal zero, so −3 is a zero; the other zeros, −2 and 2, are not listed.",
+      "imageAlt": "A text-only polynomial question. The polynomial is a(x) = x cubed plus 3x squared minus 4x minus 12. The four choices are negative 12, negative 3, positive 3, and 0, in that order."
+    },
+    "2": {
+      "prompt": "Annie, Brianna, Chandra, Dee, Evan, and Fe are the six candidates running for office in Parkway High School’s student organization. If Brianna and Dee are running for president and P is the set of candidates running for president, what is P′, the complement of P?",
+      "choices": ["{}", "{Annie, Brianna, Chandra, Dee, Evan, Fe}", "{Brianna, Dee}", "{Annie, Chandra, Evan, Fe}"],
+      "explanation": "The universe is all six candidates, while P contains Brianna and Dee. The complement P′ consists of candidates in the universe who are not in P: Annie, Chandra, Evan, and Fe.",
+      "imageAlt": "A text-only set-complement question. The universe has Annie, Brianna, Chandra, Dee, Evan, and Fe. The president set P contains Brianna and Dee. Choices are the empty set; all six candidates; Brianna and Dee; or Annie, Chandra, Evan, and Fe."
+    },
+    "3": {
+      "prompt": "A man wants to have his car repaired but does not want to spend more than $1500 for the repairs. The mechanic says that the parts needed will cost $930 and the labor will cost an additional $65 per hour. Which inequality could be used to find the greatest number of hours, h, the mechanic can work without exceeding this man’s budget?",
+      "choices": ["995h ≤ 1500", "65 + 930h > 505", "930 + 65h ≤ 1500", "930 + 65h > 1500"],
+      "explanation": "The parts cost a fixed $930, and h hours of labor cost 65h dollars. Together the cost is 930 + 65h. Because the man will spend no more than $1500, the required inequality is 930 + 65h ≤ 1500.",
+      "imageAlt": "A text-only budget question. Parts cost 930 dollars, labor costs 65 dollars per hour, and total cost may not exceed 1500 dollars. The four inequalities are 995h less than or equal to 1500; 65 plus 930h greater than 505; 930 plus 65h less than or equal to 1500; and 930 plus 65h greater than 1500."
+    },
+    "4": {
+      "prompt": "Given x ≠ −1, (x³ + 5x² + 2x − 8)/(x + 1) is equivalent to which expression?",
+      "choices": ["x² + 4x + 2 − 10/(x + 1)", "x² + 6x + 8", "x² + 6x − 4 − 4/(x + 1)", "x² + 4x − 2 − 6/(x + 1)"],
+      "explanation": "Divide x³ + 5x² + 2x − 8 by x + 1. Synthetic division using −1 gives quotient x² + 4x − 2 and remainder −6. Thus the original expression equals x² + 4x − 2 − 6/(x + 1), with x ≠ −1.",
+      "imageAlt": "A polynomial-division question. The numerator is x cubed plus 5x squared plus 2x minus 8, divided by x plus 1, with x not equal to negative 1. The choices are x squared plus 4x plus 2 minus 10 over x plus 1; x squared plus 6x plus 8; x squared plus 6x minus 4 minus 4 over x plus 1; and x squared plus 4x minus 2 minus 6 over x plus 1."
+    },
+    "5": {
+      "prompt": "The expression k³ · ∛(8k²) can be rewritten as which expression?",
+      "choices": ["2k^(11/3)", "2k^(5/3)", "24k²", "4k^(11/3)"],
+      "explanation": "The cube root of 8k² is 2k^(2/3). Multiplying by k³ adds the exponents of k: 3 + 2/3 = 11/3. Therefore k³ · ∛(8k²) = 2k^(11/3).",
+      "imageAlt": "An exponent question. The given expression is k cubed multiplied by the cube root of 8k squared. The choices are 2 times k to the eleven-thirds power; 2 times k to the five-thirds power; 24k squared; and 4 times k to the eleven-thirds power."
+    },
+    "6": {
+      "prompt": "The graph of y = f(x) is a square-root-shaped curve that begins at (4, 2) and rises to the right. Which pictured graph represents y = f(x + 2) − 3?",
+      "choices": ["A rising curve starting six grid units right of the y-axis and one unit below the x-axis", "A rising curve starting two grid units right of the y-axis and one unit below the x-axis", "A rising curve starting two grid units right of the y-axis and above the x-axis", "A rising curve starting six grid units right of the y-axis and above the x-axis"],
+      "explanation": "Replacing x by x + 2 shifts the graph two units left; subtracting 3 shifts it three units down. Its starting point moves from (4, 2) to (2, −1), and the curve still rises to the right. That is graph 2.",
+      "imageAlt": "The original square-root-shaped graph starts at (4, 2) and increases to the right. Four pictured answers have the same increasing shape. Graph 1 starts about six units to the right of the y-axis and one unit below the x-axis. Graph 2 starts two units right and one unit below. Graph 3 starts two units right and above the x-axis. Graph 4 starts about six units right and above the x-axis."
+    },
+    "7": {
+      "prompt": "What is the growth rate of the function y = 475(1.038)^x?",
+      "choices": ["1.038%", "0.038%", "3.8%", "38%"],
+      "explanation": "An exponential growth function has multiplier 1 + r. Here 1 + r = 1.038, so r = 0.038. Converting to a percent gives 0.038 × 100% = 3.8%.",
+      "imageAlt": "A text-only exponential-growth question. The function is y equals 475 times 1.038 raised to the x power. The four possible growth rates are 1.038 percent, 0.038 percent, 3.8 percent, and 38 percent."
+    },
+    "8": {
+      "prompt": "What are the solutions to the system (x − 5)² + y² − 16 = 0 and x + y − 9 = 0?",
+      "choices": ["x = 5 and x = 9", "(5, 4), only", "(9, 0), only", "(5, 4) and (9, 0)"],
+      "explanation": "The line gives y = 9 − x. Substitute into the circle: (x − 5)² + (9 − x)² = 16. Expanding and simplifying gives x² − 14x + 45 = 0, or (x − 5)(x − 9) = 0. For x = 5, y = 4; for x = 9, y = 0. Both ordered pairs solve the system.",
+      "imageAlt": "A two-equation system. The first equation is the quantity x minus 5 squared, plus y squared, minus 16, equals zero. The second is x plus y minus 9 equals zero. Choices are x equals 5 and x equals 9 without y-values; only the point (5, 4); only the point (9, 0); or both points (5, 4) and (9, 0)."
+    },
+    "9": {
+      "prompt": "The sum of the first five terms of the geometric sequence 800, 600, 450, ... is which value?",
+      "choices": ["253.125", "300", "2440.625", "2500"],
+      "explanation": "The common ratio is 600/800 = 3/4. The next two terms are 450 × 3/4 = 337.5 and 337.5 × 3/4 = 253.125. Adding the first five terms gives 800 + 600 + 450 + 337.5 + 253.125 = 2440.625.",
+      "imageAlt": "A text-only geometric-sequence question. The first three terms are 800, 600, and 450, followed by an ellipsis. The four sum choices are 253.125, 300, 2440.625, and 2500."
+    },
+    "10": {
+      "prompt": "The number of hours per day of total screen time on electronic devices for the 3000 students at Lakeside High School is approximately normally distributed with a mean of 4.6 hours and a standard deviation of 2.5 hours. Approximately how many students at the school spent more than 5 hours per day on electronic devices?",
+      "choices": ["1691", "1309", "880", "863"],
+      "explanation": "Standardize 5 hours: z = (5 − 4.6)/2.5 = 0.16. The standard normal area above z = 0.16 is about 0.4364. Therefore about 3000 × 0.4364 = 1309 students spent more than 5 hours per day on devices.",
+      "imageAlt": "A text-only normal-distribution problem. There are 3000 students, mean screen time 4.6 hours, standard deviation 2.5 hours, and the question asks for the number with more than 5 hours. Choices: 1691, 1309, 880, 863."
+    },
+    "11": {
+      "prompt": "What is the solution set to 4x/(4x − 3) + 2/x = 3/(4x − 3)?",
+      "choices": ["{−2}", "{3/4}", "{−2, 3/4}", "{}"],
+      "explanation": "The denominators require x ≠ 0 and x ≠ 3/4. Subtract 3/(4x − 3) from both sides: (4x − 3)/(4x − 3) + 2/x = 0, so 1 + 2/x = 0. Multiplying by x gives x + 2 = 0, hence x = −2, which is allowed.",
+      "imageAlt": "A rational-equation question. Four x divided by four x minus three, plus two divided by x, equals three divided by four x minus three. The set choices are negative two only; three-fourths only; negative two and three-fourths; and the empty set."
+    },
+    "12": {
+      "prompt": "A graphed cubic polynomial b(x) touches the x-axis at x = −3, falls to a local minimum, then rises and crosses the x-axis near x = 3. Which statement is true for this function?",
+      "choices": ["The leading coefficient of this function is negative.", "A real root is repeated since it has a multiplicity greater than 1.", "The function is increasing over the domain −3 < x < 1.", "As x → −∞, b(x) → ∞."],
+      "explanation": "At x = −3 the cubic touches the x-axis and turns back instead of crossing it. That behavior means the root at −3 has even multiplicity, so it is repeated. The left end goes down and the right end goes up, and the graph decreases between x = −3 and its minimum near x = 1.",
+      "imageAlt": "Coordinate graph of a cubic b(x). Its left end points downward. It rises to touch the x-axis at a local maximum at approximately (−3, 0), turns downward to a local minimum near (1, −9), then rises, crosses the x-axis near x = 3, and continues upward. The four statements concern a negative leading coefficient, a repeated real root, increase on −3 < x < 1, and b(x) tending to positive infinity as x tends to negative infinity."
+    },
+    "13": {
+      "prompt": "An angle θ is drawn in standard position with 0 ≤ θ < 2π. Its initial side is on the positive x-axis, and its terminal side is in quadrant IV about 60° below the positive x-axis. Which value could be its radian measure?",
+      "choices": ["5π/6", "5π/3", "4π/3", "−π/3"],
+      "explanation": "A quadrant-IV angle reached by a counterclockwise rotation of about 300° is 5π/3 radians. The angle −π/3 is coterminal with it but is outside the required interval 0 ≤ θ < 2π; the other positive choices end in quadrants II or III.",
+      "imageAlt": "Coordinate axes show an angle θ in standard position. A curved arrow begins at the positive x-axis and sweeps counterclockwise almost one full turn to a ray extending down and right in quadrant IV, about 60 degrees below the x-axis. The domain is zero inclusive to two pi exclusive. Choices are five pi over six, five pi over three, four pi over three, and negative pi over three."
+    },
+    "14": {
+      "prompt": "The graphed sinusoidal function f(x) has maximum 3 and completes two cycles over a 2π interval. The function g is defined by g(x) = 2sin(3x). Which statement is true?",
+      "choices": ["f has a greater maximum and a higher frequency than g.", "f has a smaller maximum and a higher frequency than g.", "f has a greater maximum and a lower frequency than g.", "f has a smaller maximum and a lower frequency than g."],
+      "explanation": "The graph of f peaks at 3 and repeats every π, so it completes two cycles per 2π. The function g(x) = 2sin(3x) peaks at 2 and completes three cycles per 2π. Thus f has the greater maximum but the lower frequency.",
+      "imageAlt": "A sinusoidal graph f(x) oscillates about the x-axis between y = −3 and y = 3. It makes two complete cycles from x = 0 to x = 2π, with period π. The comparison function is g(x) = 2 sin(3x), which has maximum 2 and period 2π/3. The four choices compare whether f has a greater or smaller maximum and a higher or lower frequency than g."
+    },
+    "15": {
+      "prompt": "The expression (1/x²)^(−3/4), x ≠ 0, is equivalent to which expression?",
+      "choices": ["(⁴√(x²))³", "(∛(x²))⁴", "−(⁴√(1/x²))³", "−(∛(1/x²))⁴"],
+      "explanation": "A negative exponent takes the reciprocal, so (1/x²)^(−3/4) = (x²)^(3/4). A power of 3/4 means take the fourth root and then cube: (⁴√(x²))³. No negative sign is introduced.",
+      "imageAlt": "A fractional-exponent question. The original expression is the quantity one over x squared raised to negative three-fourths, with x not zero. The four choices are the fourth root of x squared, cubed; the cube root of x squared, to the fourth power; the negative of the fourth root of one over x squared, cubed; and the negative of the cube root of one over x squared, to the fourth power."
+    },
+    "16": {
+      "prompt": "The expression 3xy − 27x³y³ is equivalent to which expression?",
+      "choices": ["3xy(1 + 9x²y²)", "3xy(1 + 9xy)(1 − 9xy)", "3xy(1 + xy)(1 − xy)", "3xy(1 + 3xy)(1 − 3xy)"],
+      "explanation": "Factor out the common factor 3xy: 3xy − 27x³y³ = 3xy(1 − 9x²y²). The remaining factor is a difference of squares, 1 − (3xy)² = (1 + 3xy)(1 − 3xy).",
+      "imageAlt": "A text-only factoring question. The expression is 3xy minus 27x cubed y cubed. The four choices factor out 3xy and then use either 1 plus 9x squared y squared, the pair 1 plus and minus 9xy, the pair 1 plus and minus xy, or the pair 1 plus and minus 3xy."
+    },
+    "17": {
+      "prompt": "If f(x) = x² + x + 3 and g(x) = x² − 8x + 1, then f(x) · g(x) is equal to which polynomial?",
+      "choices": ["x⁴ − 9x³ − 4x² − 23x + 3", "x⁴ − 7x³ + 5x² − 23x + 3", "x⁴ − 7x³ − 4x² − 25x + 3", "x⁴ − 7x³ − 4x² − 23x + 3"],
+      "explanation": "Distribute each term of x² + x + 3 across x² − 8x + 1. The x³ terms combine to −7x³; the x² terms are x² − 8x² + 3x² = −4x²; and the x terms are x − 24x = −23x. Including the leading and constant terms gives x⁴ − 7x³ − 4x² − 23x + 3.",
+      "imageAlt": "A text-only polynomial multiplication question. The factors are x squared plus x plus 3 and x squared minus 8x plus 1. The four candidate polynomials are provided as accessible answer choices below the image."
+    },
+    "18": {
+      "prompt": "Researchers want to see if drivers are more distracted by talking on a cell phone than talking to a passenger. From a group of 100 college students, half were randomly assigned to drive in a simulator while talking on a cell phone. The other half drove in a simulator while talking to a passenger. Researchers recorded whether or not the drivers safely exited a simulated highway at the designated exit. Is this an observational study?",
+      "choices": ["No, because researchers randomly assigned a treatment on students.", "Yes, because the researchers observed what students were doing while driving.", "No, because the researchers should have randomly assigned some students to drive without talking.", "Yes, because the students were divided into two groups of equal size."],
+      "explanation": "This is an experiment, not an observational study. Researchers actively assigned participants to the cell-phone or passenger-talking condition at random and then measured the driving outcome. Merely recording the result does not make a randomized experiment observational.",
+      "imageAlt": "A text-only study-design question. One hundred college students were randomly assigned to two simulator conditions: talking by cell phone or talking to a passenger. The outcome was whether they exited safely. The choices say no because of assigned treatment; yes because researchers observed drivers; no because a no-talking group was not assigned; or yes because groups had equal size."
+    },
+    "19": {
+      "prompt": "If f(x) = 3^x, then f⁻¹(x) equals which expression?",
+      "choices": ["log₃(x)", "log₃(3)", "3^(−x)", "x³"],
+      "explanation": "Write y = 3^x, exchange x and y to find the inverse, and solve x = 3^y for y. Taking the base-3 logarithm gives y = log₃(x), so f⁻¹(x) = log₃(x).",
+      "imageAlt": "A text-only inverse-function question. The original function is three raised to the x power. Choices are log base three of x; log base three of 3; three to the negative x power; and x cubed."
+    },
+    "20": {
+      "prompt": "Given f(x) = |x + 1| − 2 and g(x) = −∛(x − 3), what are the solutions to f(x) = g(x)?",
+      "choices": ["{−3, 1, 3}", "{2, 3}", "{−5, 2}", "{−5, 1, 2}"],
+      "explanation": "For x ≥ −1, f(x) = x − 1. Let t = x − 1; cubing t = −∛(t − 2) gives t³ + t − 2 = (t − 1)(t² + t + 2) = 0, so the only real solution on this branch is x = 2. For x < −1, f(x) = −x − 3. Let u = x + 3; cubing u = ∛(u − 6) gives u³ − u + 6 = (u + 2)(u² − 2u + 3) = 0, so x = −5 is the only real solution there. The solution set is {−5, 2}.",
+      "imageAlt": "An equation between an absolute-value function and a negative cube-root function. f(x) is the absolute value of x plus 1, minus 2. g(x) is the negative cube root of the entire quantity x minus 3; the radical bar covers x minus 3. The candidate solution sets are negative 3, 1, and 3; 2 and 3; negative 5 and 2; and negative 5, 1, and 2."
+    },
+    "21": {
+      "prompt": "The expression 3xi² − 2yi³ + 7xi⁶ − 4yi⁵, in simplest a + bi form, is which expression?",
+      "choices": ["−10x − 2yi", "10x + 2yi", "10x − 6y", "4xyi¹⁶"],
+      "explanation": "Use the four-term cycle of powers of i: i² = −1, i³ = −i, i⁶ = −1, and i⁵ = i. Substitution gives −3x + 2yi − 7x − 4yi, which combines to −10x − 2yi.",
+      "imageAlt": "A complex-number simplification question. The expression is 3x times i squared minus 2y times i cubed plus 7x times i to the sixth minus 4y times i to the fifth. The choices are negative 10x minus 2yi; positive 10x plus 2yi; 10x minus 6y; and 4xy times i to the sixteenth."
+    },
+    "22": {
+      "prompt": "Which values of a and b will make f(x) = sin(ax) + b an odd function?",
+      "choices": ["a = 1, b = 0", "a = 1, b = 4", "a = 3, b = 1", "a = 3, b = 4"],
+      "explanation": "Sine is odd, so sin(a(−x)) = −sin(ax) for any constant a. The vertical shift b must be zero to keep f(−x) = −f(x). Among the listed pairs, only a = 1 and b = 0 satisfies that condition.",
+      "imageAlt": "A text-only odd-function question. The function is sine of a times x, plus b. The four parameter pairs are a equals 1 with b equals 0; a equals 1 with b equals 4; a equals 3 with b equals 1; and a equals 3 with b equals 4."
+    },
+    "23": {
+      "prompt": "When solved for x, what is the solution to a(10^x) = 60, where a > 1?",
+      "choices": ["x = log(60)/a", "x = log(60)/log(10a)", "x = log(60)", "x = log(60/a)"],
+      "explanation": "Divide both sides of a·10^x = 60 by a to obtain 10^x = 60/a. Taking the common logarithm of each side gives x = log(60/a).",
+      "imageAlt": "A logarithm question. The equation is a multiplied by ten to the x power equals 60, with a greater than 1. The choices are log 60 divided by a; log 60 divided by log of 10a; log 60; and log of the quantity 60 divided by a."
+    },
+    "24": {
+      "prompt": "Potassium-42 is a radioisotope of potassium that has a half-life of 12.4 hours. Which expression approximates the amount of a 500-gram sample of potassium-42 remaining after t hours?",
+      "choices": ["500(0.1670)^t", "500(0.9456)^t", "500(1.0575)^t", "500(1.5609)^t"],
+      "explanation": "The decay model is A(t) = 500(1/2)^(t/12.4). Rewriting it as 500[(1/2)^(1/12.4)]^t gives an hourly multiplier of about 0.9456. Therefore A(t) ≈ 500(0.9456)^t.",
+      "imageAlt": "A text-only radioactive-decay problem. A 500-gram potassium-42 sample has a 12.4-hour half-life, and t measures elapsed hours. The candidate models multiply 500 by 0.1670, 0.9456, 1.0575, or 1.5609 raised to the t power."
+    }
+  }
+}

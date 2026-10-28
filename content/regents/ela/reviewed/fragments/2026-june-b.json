@@ -1,0 +1,126 @@
+{
+  "sections": [
+    {
+      "slug": "passage-b",
+      "title": "Reading Comprehension · Passage B",
+      "intro": "Read “Combing” and answer questions 11–14. The vocabulary note follows the poem.",
+      "questionIds": [
+        "english-2026-june-q11",
+        "english-2026-june-q12",
+        "english-2026-june-q13",
+        "english-2026-june-q14"
+      ],
+      "passage": {
+        "title": "Combing",
+        "credit": "—Gladys Cardiff · “Combing” · from Voices Under One Sky (1994), The Crossing Press",
+        "transcriptReviewStatus": "reviewed",
+        "lines": [
+          { "number": 1, "text": "Bending, I bow my head" },
+          { "number": 2, "text": "and lay my hands upon" },
+          { "number": 3, "text": "her hair, combing, and think" },
+          { "number": 4, "text": "how women do this for" },
+          { "number": 5, "text": "each other. My daughter’s hair" },
+          { "number": 6, "text": "curls against the comb," },
+          { "number": 7, "text": "wet and fragrant—orange" },
+          { "number": 8, "text": "parings.¹ Her face, downcast," },
+          { "number": 9, "text": "is quiet for one so young." },
+          { "number": null, "text": "" },
+          { "number": 10, "text": "I take her place. Beneath" },
+          { "number": 11, "text": "my mother’s hands I feel" },
+          { "number": 12, "text": "the braids drawn up tight" },
+          { "number": 13, "text": "as piano wires and singing," },
+          { "number": 14, "text": "vinegar-rinsed. Sitting" },
+          { "number": 15, "text": "before the oven I hear" },
+          { "number": 16, "text": "the orange coils tick" },
+          { "number": 17, "text": "the early hour before school." },
+          { "number": null, "text": "" },
+          { "number": 18, "text": "She combed her grandmother" },
+          { "number": 19, "text": "Mathilda’s hair using" },
+          { "number": 20, "text": "a comb made out of bone." },
+          { "number": 21, "text": "Mathilda rocked her oak wood" },
+          { "number": 22, "text": "chair, her face downcast," },
+          { "number": 23, "text": "intent on tearing rags" },
+          { "number": 24, "text": "in strips to braid a cotton" },
+          { "number": 25, "text": "rug from bits of orange" },
+          { "number": 26, "text": "and brown. A simple act." },
+          { "number": null, "text": "" },
+          { "number": 27, "text": "Preparing hair. Something" },
+          { "number": 28, "text": "women do for each other," },
+          { "number": 29, "text": "plaiting the generations." },
+          { "number": null, "text": "" },
+          { "number": null, "text": "¹ parings — peelings" }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "english-2026-june-q11",
+      "number": 11,
+      "sectionSlug": "passage-b",
+      "sourcePage": 7,
+      "prompt": "As used in the first stanza, the words “bending,” “bow,” and “lay my hands” help establish",
+      "choices": [
+        { "label": "1", "text": "a simple amusement women share to pass the time" },
+        { "label": "2", "text": "a tedious routine with which women must help one another" },
+        { "label": "3", "text": "the power struggle between women of different ages" },
+        { "label": "4", "text": "the shared respect women bestow upon one another" }
+      ],
+      "correct": "4",
+      "explanation": "The speaker bends and bows while gently laying her hands on her daughter’s hair. Those almost ceremonial gestures frame combing as a caring, respectful act shared among the women, not a chore or contest.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-june-q12",
+      "number": 12,
+      "sectionSlug": "passage-b",
+      "sourcePage": 7,
+      "prompt": "The phrase “I take her place” (line 10) reflects a shift in",
+      "choices": [
+        { "label": "1", "text": "time" },
+        { "label": "2", "text": "goals" },
+        { "label": "3", "text": "attitude" },
+        { "label": "4", "text": "expectations" }
+      ],
+      "correct": "1",
+      "explanation": "In the first stanza, the speaker is combing her daughter’s hair. At line 10, she remembers being the child under her own mother’s hands, so the poem moves from the present to an earlier time.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-june-q13",
+      "number": 13,
+      "sectionSlug": "passage-b",
+      "sourcePage": 7,
+      "prompt": "As used in line 29, the word “plaiting” most nearly means",
+      "choices": [
+        { "label": "1", "text": "defining" },
+        { "label": "2", "text": "intertwining" },
+        { "label": "3", "text": "rewarding" },
+        { "label": "4", "text": "imitating" }
+      ],
+      "correct": "2",
+      "explanation": "To plait hair is to braid strands together. The final line uses that action figuratively: the shared hair-care ritual intertwines the lives of daughter, mother, and grandmother across generations.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    },
+    {
+      "id": "english-2026-june-q14",
+      "number": 14,
+      "sectionSlug": "passage-b",
+      "sourcePage": 7,
+      "prompt": "The poem is primarily developed through the use of",
+      "choices": [
+        { "label": "1", "text": "hyperbole" },
+        { "label": "2", "text": "allusions" },
+        { "label": "3", "text": "parallels" },
+        { "label": "4", "text": "paradox" }
+      ],
+      "correct": "3",
+      "explanation": "Each stanza connects a similar scene across generations: the speaker combs her daughter’s hair, remembers her mother combing hers, and recalls a grandmother’s hair being combed. These parallel acts build the poem’s theme.",
+      "explanationSource": "vine-authored",
+      "readiness": "reviewed"
+    }
+  ]
+}

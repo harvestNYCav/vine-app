@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "2c2fe4d8b9ac054f53f3fb19b2ad833c4e4bb074f41fdea8342f28a5a3b1eec9",
+  "questions": {
+    "1": {
+      "prompt": "Parallel lines A-E-F-B and C-G-D have segments GE and GF drawn. If angle EFG = 32° and angle AEG = 137°, find angle EGF.",
+      "choices": ["11°", "43°", "75°", "105°"],
+      "explanation": "A-E-F is straight, so triangle EFG has angle GEF = 180°−137° = 43°. Its remaining angle EGF is 180°−43°−32° = 105°.",
+      "imageAlt": "Two parallel horizontal lines: top points A, E, F, B in that order; lower points C, G, D. Segments E-G and F-G make triangle EFG between the lines."
+    },
+    "2": {
+      "prompt": "Triangle ABC is reflected to DEF, then DEF is translated to XYZ. How are ABC and XYZ always related?",
+      "choices": ["congruent and similar", "congruent but not similar", "similar but not congruent", "neither similar nor congruent"],
+      "explanation": "A reflection and a translation are both rigid motions: they preserve side lengths and angles. Therefore the first and last triangles are congruent, and all congruent triangles are also similar.",
+      "imageAlt": "Printed transformation question; both motion types and all relationship choices are in accessible text."
+    },
+    "3": {
+      "prompt": "An isosceles right triangle with both legs 6 is rotated around one leg. Which solid forms?",
+      "choices": ["cylinder with diameter 6", "cylinder with diameter 12", "cone with diameter 6", "cone with diameter 12"],
+      "explanation": "Rotating a right triangle around one leg forms a cone. The other 6-unit leg is its base radius, making the diameter 12.",
+      "imageAlt": "Printed solid-of-revolution question; the rotating triangle and all diameter choices are in accessible text."
+    },
+    "4": {
+      "prompt": "In regular hexagon ABCDEF, diagonals AD, BE, and CF meet at G. Reflect triangle ABG over BG, then rotate it 180° about G. Which triangle is its image?",
+      "choices": ["FEG", "AFG", "CBG", "DEG"],
+      "explanation": "Reflection over BG sends A to C while fixing B and G, giving triangle CBG. The half-turn about G then sends C to F and B to E, yielding triangle FEG.",
+      "imageAlt": "Regular flat-topped hexagon has A left, B upper left, C upper right, D right, E lower right, F lower left, and G at center. Opposite-vertex diagonals A-D, B-E, and C-F pass through G."
+    },
+    "5": {
+      "prompt": "A right cylinder is cut perpendicular to its base. What shape is the cross section?",
+      "choices": ["circle", "cylinder", "rectangle", "triangular prism"],
+      "explanation": "A plane perpendicular to the circular base is vertical; its slice through a right cylinder has straight vertical sides and horizontal top and bottom, making a rectangle.",
+      "imageAlt": "Printed cross-section question; cutting direction and shape choices are in accessible text."
+    },
+    "6": {
+      "prompt": "A springboard is supported 8 inches above its base and makes a 16.5° angle with the base. What is the board length x, to the nearest tenth of an inch?",
+      "choices": ["2.3", "8.3", "27.0", "28.2"],
+      "explanation": "The 8-inch support is opposite the 16.5° angle and the board is the hypotenuse. So sin 16.5° = 8/x, giving x = 8/sin 16.5° ≈ 28.2 inches.",
+      "imageAlt": "Right-triangle side view: vertical spring at left labeled 8 inches, horizontal base to the right, and sloping board x from spring top to right end. The angle between board and base at right is 16.5°."
+    },
+    "7": {
+      "prompt": "In right triangle ABC, altitude BD meets hypotenuse AC at D. If BD = 4, AD = x−6, and CD = x, find CD.",
+      "choices": ["5", "2", "8", "11"],
+      "explanation": "The altitude-to-hypotenuse theorem gives BD² = AD·CD, so 16 = x(x−6). The positive solution is x = 8, hence CD = 8.",
+      "imageAlt": "Large right triangle has A at left and C at right along horizontal hypotenuse A-D-C, with B above D. Altitude B-D drops vertically to the hypotenuse, dividing it into AD and DC."
+    },
+    "8": {
+      "prompt": "Rhombus STAR has S(−1,2), T(2,3), A(3,0), and R(0,−1). What is its perimeter?",
+      "choices": ["√34", "4√34", "√10", "4√10"],
+      "explanation": "Adjacent vertices S and T differ by (3,1), so a side is √(3²+1²) = √10. All four rhombus sides are equal; perimeter is 4√10.",
+      "imageAlt": "Printed coordinate-rhombus problem; signed vertex coordinates and radical options are in accessible text."
+    },
+    "9": {
+      "prompt": "Similar right triangles HAR and NTY have right angles at H and N, respectively. If AR = 13 and HR = 12, what is angle Y to the nearest degree?",
+      "choices": ["23°", "25°", "65°", "67°"],
+      "explanation": "The similarity order makes angle Y correspond to angle R. In triangle HAR, cos R = HR/AR = 12/13, so angle R ≈ 22.6°, rounding to 23°.",
+      "imageAlt": "Large triangle HAR has H lower left with a right angle, A directly above H, R to the right; sloping AR is 13 and horizontal HR is 12. Smaller triangle NTY has right angle N at upper right and Y at left."
+    },
+    "10": {
+      "prompt": "A-K-S and N-K-C are collinear; triangles KAN and KSC have AN ≅ SC. Which extra statement proves them congruent by AAS?",
+      "choices": ["AS and NC bisect each other", "K is midpoint of NC", "AS ⟂ CN", "AN ∥ SC"],
+      "explanation": "Angles AKN and SKC are vertical angles. If AN ∥ SC, angles KAN and KSC are congruent by alternate interior angles. Together with the given nonincluded side AN ≅ SC, AAS proves the triangles congruent.",
+      "imageAlt": "Two crossing straight segments A-K-S and N-K-C form an X. Triangle KAN is on the upper-left side and triangle KSC is on the lower-right side, with outer sides AN and SC."
+    },
+    "11": {
+      "prompt": "Which line is perpendicular to y = (2/3)x+1?",
+      "choices": ["3x+2y = 12", "3x−2y = 12", "y = (3/2)x+2", "y = −(2/3)x+4"],
+      "explanation": "A perpendicular line to slope 2/3 has slope −3/2. Rearranging 3x+2y = 12 gives y = −(3/2)x+6.",
+      "imageAlt": "Printed perpendicular-line problem; original and candidate equations are in accessible text."
+    },
+    "12": {
+      "prompt": "In triangle ABC, D is on AB and E is on CB with DE ∥ AC. EB is 3 more than DB; AB = 14 and CB = 21. Find AD.",
+      "choices": ["6", "8", "9", "12"],
+      "explanation": "Let DB = d, so EB = d+3. Similar triangles BDE and BAC give d/14 = (d+3)/21. Then 21d = 14d+42, so d = 6 and AD = 14−6 = 8.",
+      "imageAlt": "Triangle has A at top, C lower left, B lower right. D lies on sloping side AB and E on horizontal CB; DE runs parallel to AC, forming smaller triangle DBE at B."
+    },
+    "13": {
+      "prompt": "Quadrilateral MATH has both pairs of opposite sides congruent and parallel. Which statement is always true?",
+      "choices": ["MT ≅ AH", "MT ⟂ AH", "angle MHT ≅ angle ATH", "angle MAT ≅ angle MHT"],
+      "explanation": "The given side facts make MATH a parallelogram. Its opposite angles at A and H are congruent, so angle MAT equals angle MHT.",
+      "imageAlt": "Printed parallelogram-property question; all vertex and angle names are in accessible text."
+    },
+    "14": {
+      "prompt": "Quadrilateral TAEO is circumscribed around circle D. R is midpoint of TA and tangent segments HO ≅ PE. If AP = 10 and EO = 12, find perimeter TAEO.",
+      "choices": ["56", "64", "72", "76"],
+      "explanation": "Tangents from A give AR = AP = 10, and R is midpoint of TA, so TA = 20. Tangents from T give TH = TR = 10. Tangents from E and O give EP = EZ and OH = OZ. Since OH = EP and EO = EZ+ZO = 12, each is 6. Thus AE = 10+6 = 16 and OT = 10+6 = 16; perimeter is 20+12+16+16 = 64.",
+      "imageAlt": "Trapezoid-like quadrilateral T-A-E-O surrounds a circle, tangent at R on top TA, P on right AE, Z on bottom OE, H on left OT. R is midpoint of TA; circle center is D."
+    },
+    "15": {
+      "prompt": "Directed segment A-B-C has endpoints A(−8,7) and C(7,−13). If AB:BC = 3:2, what are B's coordinates?",
+      "choices": ["(1,−5)", "(−2,−1)", "(−3,0)", "(3,−6)"],
+      "explanation": "B lies 3/5 of the way from A to C. The displacement C−A is (15,−20), so B = (−8,7)+(3/5)(15,−20) = (1,−5).",
+      "imageAlt": "Printed directed-segment partition question; signed endpoints and ratio are in accessible text."
+    },
+    "16": {
+      "prompt": "In triangle ABC, D lies on AB and E on BC, with DE ∥ AC and AD:DB = 3:5. If DB = 6.3 and AC = 9.4, find DE to the nearest tenth.",
+      "choices": ["3.8", "5.6", "5.9", "15.7"],
+      "explanation": "Because DE ∥ AC, triangles BDE and BAC are similar. The ratio BD/BA is 5/(3+5) = 5/8, so DE = (5/8)(9.4) = 5.875, rounding to 5.9.",
+      "imageAlt": "Large triangle A-B-C has B above horizontal base A-C. D lies on side AB, E on side BC, and horizontal DE is parallel to base AC."
+    },
+    "17": {
+      "prompt": "Rectangle ABCD has A(7,1), B(9,3), C(3,9), D(1,7). Which motion will not map it onto itself?",
+      "choices": ["reflection over y = x", "reflection over y = −x+10", "180° rotation about (6,6)", "180° rotation about (5,5)"],
+      "explanation": "The rectangle's center is midpoint of opposite vertices A and C: ((7+3)/2,(1+9)/2) = (5,5). A half-turn about (5,5) works, but one about (6,6) does not. The two listed reflection lines are its symmetry axes.",
+      "imageAlt": "Tilted rectangle has A(7,1) at bottom, B(9,3) at right, C(3,9) at top, and D(1,7) at left on a coordinate grid; its center is (5,5)."
+    },
+    "18": {
+      "prompt": "A circle has diameter 10 cm and a 30° central angle. What is the area of that 30° sector to the nearest tenth of a square centimeter?",
+      "choices": ["5.2", "6.5", "13.1", "26.2"],
+      "explanation": "The radius is 5 cm. Sector area is (30/360)π(5²) = 25π/12 ≈ 6.5 square centimeters.",
+      "imageAlt": "Circle diagram shows a 10-cm diameter through its center and a separate radius making a 30° central angle with the diameter's rightward ray."
+    },
+    "19": {
+      "prompt": "A child's tent is a square pyramid with base side 60 inches and height 84 inches. What is its volume to the nearest cubic foot?",
+      "choices": ["35", "58", "82", "175"],
+      "explanation": "Convert to feet: base side 5 ft and height 7 ft. Pyramid volume is (1/3)(5²)(7) = 58⅓ cubic feet, rounding to 58.",
+      "imageAlt": "Printed tent-volume question; square base and height dimensions are in accessible text."
+    },
+    "20": {
+      "prompt": "In right triangle ABC with right angle B, altitude BD meets hypotenuse AC at D. Which proportion must always hold?",
+      "choices": ["AD/AB = BC/AC", "AD/AB = AB/AC", "BD/BC = AB/AD", "AB/BC = BD/AC"],
+      "explanation": "The right-triangle leg theorem says AB² = AD·AC. Dividing by AB·AC gives AD/AB = AB/AC, the second proportion.",
+      "imageAlt": "Right triangle has A lower left, B lower right with a right angle, and C directly above B. Hypotenuse AC slopes upward right; D lies on AC and altitude BD runs from B to D."
+    },
+    "21": {
+      "prompt": "Circle O has equation x²+y²+4x−8y = −16. Which statement best describes it?",
+      "choices": ["center (2,−4), tangent to x-axis", "center (2,−4), tangent to y-axis", "center (−2,4), tangent to x-axis", "center (−2,4), tangent to y-axis"],
+      "explanation": "Completing squares gives (x+2)²+(y−4)² = 4. The center is (−2,4) and radius 2. Its distance from the y-axis is |−2| = 2, so it is tangent to the y-axis.",
+      "imageAlt": "Printed circle-equation question; equation and all candidate centers and axes are in accessible text."
+    },
+    "22": {
+      "prompt": "In triangle ABC, BD is the perpendicular bisector of segment AC, with D on AC. Which can be proved: I, BD is a median; II, BD bisects angle ABC; III, ABC is isosceles?",
+      "choices": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+      "explanation": "The perpendicular bisector meets AC at its midpoint, so BD is a median. B lies on that bisector, hence BA = BC and ABC is isosceles. In an isosceles triangle, the median from the apex B also bisects its vertex angle, so all three statements hold.",
+      "imageAlt": "Printed triangle-bisector question; the midpoint and perpendicular conditions and all three claims are in accessible text."
+    },
+    "23": {
+      "prompt": "Triangle RJM has area 6 and perimeter 12. A dilation of scale factor 3 produces R′J′M′. What are the image's area and perimeter?",
+      "choices": ["area 9, perimeter 15", "area 18, perimeter 36", "area 54, perimeter 36", "area 54, perimeter 108"],
+      "explanation": "Lengths, including perimeter, scale by 3: 12·3 = 36. Area scales by the square of the factor: 6·3² = 54.",
+      "imageAlt": "Printed dilation and measurement question; original area, perimeter, factor, and all paired choices are in accessible text."
+    },
+    "24": {
+      "prompt": "If sin(2x+7)° = cos(4x−7)°, what is x?",
+      "choices": ["7", "15", "21", "30"],
+      "explanation": "For the angles given by the answer choices, equal sine and cosine here are cofunctions, so their acute arguments sum to 90°. Thus (2x+7)+(4x−7) = 90, giving 6x = 90 and x = 15.",
+      "imageAlt": "Printed cofunction question; both angle expressions and all numeric choices are in accessible text."
+    }
+  }
+}

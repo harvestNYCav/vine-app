@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "4d17ca622547fca4b8cab0b5b8dca82ffc98a91aec87c2c8c2f11d36c6b529ba",
+  "questions": {
+    "1": {
+      "prompt": "Which expression is equivalent to the fourth root of 81x⁸y⁶?",
+      "choices": ["3x²y^(3/2)", "3x⁴y²", "9x²y^(3/2)", "9x⁴y²"],
+      "explanation": "The fourth root of 81 is 3, of x⁸ is x², and of y⁶ is y^(3/2) under the usual nonnegative-variable convention used by the choices. Thus the keyed form is 3x²y^(3/2). Strictly for negative real y, the principal fourth root is 3x²|y|^(3/2), a domain nuance the original choices do not represent.",
+      "imageAlt": "The radical is a fourth root covering the entire product eighty-one x to the eighth y to the sixth. The original question does not specify y's sign."
+    },
+    "2": {
+      "prompt": "Chet's account is P(n) = 1200(1.002)^n and his debt is Q(n) = 100n after n months. Which formula gives his net worth R(n)?",
+      "choices": ["1200(1.002)^n + 100n", "1200(1.002)^(12n) + 100n", "1200(1.002)^n − 100n", "1200(1.002)^(12n) − 100n"],
+      "explanation": "Net worth is assets minus debt, P(n) − Q(n). Because n already counts months in the account model, keep exponent n and subtract 100n.",
+      "imageAlt": "Both functions use n months: the asset balance starts at twelve hundred with monthly factor 1.002, and debt is one hundred times n."
+    },
+    "3": {
+      "prompt": "Emmeline starts with (5x)² + (5x² − 5)². Her steps are 1: 25x² + (5x² − 5)²; 2: 25x² + 25x² + 25; 3: 50x² + 25; 4: 75x². Which assessment is correct?",
+      "choices": ["All steps are correct.", "Only step 2 is mistaken.", "Steps 2 and 4 are mistaken.", "Only step 4 is mistaken."],
+      "explanation": "Step 2 expands (5x² − 5)² incorrectly; its correct expansion is 25x⁴ − 50x² + 25, not 25x² + 25. Even taking step 3 as written, step 4 incorrectly turns 50x² + 25 into 75x². Both steps 2 and 4 contain errors.",
+      "imageAlt": "The student's written chain shows step one keeping the second binomial squared, step two replacing it with twenty-five x squared plus twenty-five, and step four combining fifty x squared plus twenty-five as seventy-five x squared."
+    },
+    "4": {
+      "prompt": "Susan invests $2,000 at 3.2% annual interest compounded monthly. Which expression best represents its value after t years?",
+      "choices": ["2000(1.003)^(12t)", "2000(1.032)^(t/12)", "2064^(t/12)", "2000(1.032)^t/12"],
+      "explanation": "Monthly compounding uses a monthly factor 1 + 0.032/12 ≈ 1.002667, approximated by 1.003 in the choices. There are 12t monthly periods, giving 2000(1.003)^(12t).",
+      "imageAlt": "The annual interest is three point two percent and compounding is monthly, so the number of compounding periods is twelve times the years."
+    },
+    "5": {
+      "prompt": "Which choice has end behavior f(x) → ∞ as x → −∞ and f(x) → −∞ as x → ∞?",
+      "choices": ["f(x) = x⁴ + 2x² + 1", "Graph 2", "f(x) = −x³ + 2x − 6", "Graph 4"],
+      "explanation": "An odd-degree polynomial with a negative leading coefficient rises on the left and falls on the right. The function −x³ + 2x − 6 has exactly that behavior; the other choices have left or right ends pointing the wrong way.",
+      "imageAlt": "Choice 2 is a cubic-like curve with left end down and right end up. Choice 4 has both ends down. Choice 1 is a positive quartic with both ends up. Choice 3 has negative x cubed as its leading term."
+    },
+    "6": {
+      "prompt": "Which expression equals (x + a)² + 5(x + a) + 4?",
+      "choices": ["(a + 1)(a + 4)", "(x + 1)(x + 4)", "(x + a + 1)(x + a + 4)", "x² + a² + 5x + 5a + 4"],
+      "explanation": "Let u = x + a. Then u² + 5u + 4 = (u + 1)(u + 4). Substituting x + a back gives (x + a + 1)(x + a + 4).",
+      "imageAlt": "The repeated quantity is x plus a, once squared and once multiplied by five."
+    },
+    "7": {
+      "prompt": "For x ≠ −2, which expression equals (2x² + 5x + 8)/(x + 2)?",
+      "choices": ["2x² + 9/(x + 2)", "2x + 7/(x + 2)", "2x + 1 + 6/(x + 2)", "2x + 9 − 10/(x + 2)"],
+      "explanation": "Divide 2x² + 5x + 8 by x + 2. The quotient is 2x + 1 and the remainder is 6, so the equivalent form is 2x + 1 + 6/(x + 2).",
+      "imageAlt": "The numerator is two x squared plus five x plus eight and the denominator x plus two, excluding x equals negative two."
+    },
+    "8": {
+      "prompt": "Which situation best describes conditional probability?",
+      "choices": ["An event occurring two or more times", "An event occurring only once", "Two independent events occurring together", "An event occurring given that another event has already occurred"],
+      "explanation": "Conditional probability is the probability of one event under the condition that another event is known to have occurred, written P(A | B).",
+      "imageAlt": "The four definitions compare repeated events, one-time events, simultaneous independent events, and an event conditioned on another event."
+    },
+    "9": {
+      "prompt": "Which expression is not a solution for t in 2^t = √10?",
+      "choices": ["(1/2)log₂(10)", "log₂(√10)", "log₄(10)", "log₁₀(4)"],
+      "explanation": "Taking base-two logs gives t = log₂(√10) = (1/2)log₂(10). By change of base, this also equals log₄(10). But log₁₀(4) is the reciprocal of log₄(10), not the same value.",
+      "imageAlt": "The equation has two raised to t equal to square root of ten; choices use logarithms with bases two, four, or ten."
+    },
+    "10": {
+      "prompt": "What is the solution set of x = √(3x + 40)?",
+      "choices": ["{−5, 8}", "{8}", "{−4, 10}", "{}"],
+      "explanation": "Squaring gives x² = 3x + 40, so (x − 8)(x + 5) = 0. Check the original: x = −5 cannot equal a nonnegative square root, while x = 8 works. The solution set is {8}.",
+      "imageAlt": "The square-root bar covers three x plus forty; the square root itself equals x."
+    },
+    "11": {
+      "prompt": "A table records 13 left-handed males and 11 left-handed females. What is P(male | left-handed)?",
+      "choices": ["13/200", "13/100", "13/50", "13/24"],
+      "explanation": "Given left-handedness, the sample space is only the 13 + 11 = 24 left-handed people. Thirteen of those are male, so the conditional probability is 13/24.",
+      "imageAlt": "The two-way table shows male right-handed 87, male left-handed 13, female right-handed 89, and female left-handed 11."
+    },
+    "12": {
+      "prompt": "Hot chocolate cools according to N(x) = 90(0.86)^x + 69 degrees Fahrenheit, where x is minutes. What is its average temperature change per minute on [0, 6]?",
+      "choices": ["−8.93", "−0.11", "0.11", "8.93"],
+      "explanation": "The average rate is [N(6) − N(0)]/6. Here N(0) = 159 and N(6) ≈ 105.42, so the rate is (105.42 − 159)/6 ≈ −8.93 degrees per minute.",
+      "imageAlt": "The temperature model has initial excess temperature ninety, decay multiplier zero point eight six per minute, and surrounding temperature sixty-nine."
+    },
+    "13": {
+      "prompt": "Which recursive formula models 40, 30, 22.5, ...?",
+      "choices": ["gₙ = 40(3/4)^n", "g₁ = 40; gₙ = gₙ₋₁ − 10", "gₙ = 40(3/4)^(n−1)", "g₁ = 40; gₙ = (3/4)gₙ₋₁"],
+      "explanation": "The ratio of consecutive terms is 30/40 = 22.5/30 = 3/4. A recursive rule starts with g₁ = 40 and multiplies the previous term by 3/4.",
+      "imageAlt": "The three sequence terms are forty, thirty, and twenty-two point five; two choices are explicit and two use a preceding term."
+    },
+    "14": {
+      "prompt": "A candy maker claims 45% blue candies per 65-candy bag. In 200 simulated bags, the blue count had mean 29.270 and SD 3.936. Bonnie's bag has 24 blue candies. What is supported?",
+      "choices": ["The company is not meeting its standard.", "Bonnie's bag is so rare the company should not worry.", "The company should change its claim to 37% blue.", "Bonnie's count lies within the middle 95% of simulations supporting the claim."],
+      "explanation": "The simulated middle 95% is roughly mean ± two SDs, or 29.270 ± 7.872, about 21.4 to 37.1 blue candies. A count of 24 is inside that interval, so one such bag does not contradict the 45% claim.",
+      "imageAlt": "The dot plot of two hundred simulated 65-candy bags is centered near twenty-nine blue candies, with most counts from roughly twenty-two to thirty-seven; 24 appears within the dense part of the plot."
+    },
+    "15": {
+      "prompt": "Which investigation technique is best for determining whether one variable has an impact on a population?",
+      "choices": ["observational study", "random survey", "controlled experiment", "formal interview"],
+      "explanation": "A controlled experiment varies a factor while holding other conditions comparable, allowing a causal effect to be tested. The other methods mainly observe or ask rather than manipulate the factor.",
+      "imageAlt": "The question seeks the impact of a single variable, a causal question; choices include observational and experimental approaches."
+    },
+    "16": {
+      "prompt": "As θ increases from −π/2 to 0 radians, what happens to cos θ?",
+      "choices": ["decreases from 1 to 0", "decreases from 0 to −1", "increases from −1 to 0", "increases from 0 to 1"],
+      "explanation": "cos(−π/2) = 0 and cos(0) = 1. Cosine rises throughout this interval, so it increases from 0 to 1.",
+      "imageAlt": "The angle interval runs from negative pi over two to zero, both in or at the edge of Quadrant IV."
+    },
+    "17": {
+      "prompt": "Which pattern is geometric? I: 16, −12, 9, −6.75, ...; II: 1, 4, 9, 16, ...; III: 6, 18, 30, 42, ...; IV: 1/2, 2/3, 3/4, 4/5, ...",
+      "choices": ["I", "II", "III", "IV"],
+      "explanation": "Pattern I multiplies by −3/4 each time: 16(−3/4) = −12 and −12(−3/4) = 9. The other patterns do not have a constant ratio.",
+      "imageAlt": "Four sequences are shown, including alternating-sign pattern I, square numbers in II, an arithmetic progression in III, and consecutive-fraction pattern IV."
+    },
+    "18": {
+      "prompt": "For x + y + z = 9, x − y − z = −1, and x − y + z = 21, which listed value is not one coordinate of the solution (x, y, z)?",
+      "choices": ["−8", "−6", "11", "4"],
+      "explanation": "Add the first two equations to get 2x = 8, so x = 4. Subtract the second from the third to get 2z = 22, so z = 11. Then y = 9 − 4 − 11 = −6. The coordinates are 4, −6, 11; −8 is absent.",
+      "imageAlt": "The three right-hand sides are nine, negative one, and twenty-one; the answer choices are negative eight, negative six, eleven, and four."
+    },
+    "19": {
+      "prompt": "Which statement about polynomial zeros is true?",
+      "choices": ["(x² − 1)(x + a) has zeros 1 and −a only.", "x³ − ax² + 16x − 16a has zeros 4 and a only.", "(x² + 25)(x + a) has zeros ±5 and −a.", "x³ − ax² − 9x + 9a has zeros ±3 and a."],
+      "explanation": "Group x³ − ax² − 9x + 9a as x²(x − a) − 9(x − a) = (x − a)(x² − 9) = (x − a)(x − 3)(x + 3). Its zeros are a, 3, and −3. The other statements omit or misidentify zeros.",
+      "imageAlt": "The four claims involve factored quadratics or cubics with parameter a. The last cubic has terms x cubed, negative a x squared, negative nine x, and positive nine a."
+    },
+    "20": {
+      "prompt": "For a solution of 2(2x − 1) = 5x² written as a + bi, what is b?",
+      "choices": ["(√6/5)i", "√6/5", "(1/5)i", "1/5"],
+      "explanation": "Rearrange to 5x² − 4x + 2 = 0. The discriminant is 16 − 40 = −24, so x = [4 ± 2i√6]/10 = 2/5 ± (√6/5)i. The real coefficient b multiplying i is √6/5, not √6 i/5.",
+      "imageAlt": "The equation is twice the quantity two x minus one equals five x squared; choices distinguish b from b times i."
+    },
+    "21": {
+      "prompt": "To the nearest tenth, what is the smallest solution of 3sin(x/2) − 1 = x³ − 2x + 1?",
+      "choices": ["−3.6", "−2.1", "−1.8", "1.4"],
+      "explanation": "Graph y = 3sin(x/2) − 1 and y = x³ − 2x + 1, or solve their difference numerically. Their leftmost intersection is near x = −2.1, which is the smallest listed solution to the nearest tenth.",
+      "imageAlt": "The first function is three times sine of one-half x minus one. The second is x cubed minus two x plus one."
+    },
+    "22": {
+      "prompt": "Simplify (7 − 3i) + (x − 2i)² − (4i + 2x²) to a + bi form.",
+      "choices": ["(3 − x²) − (4x + 7)i", "(3 + 3x²) − (4x + 7)i", "(3 − x²) − 7i", "(3 + 3x²) − 7i"],
+      "explanation": "Expand (x − 2i)² = x² − 4xi − 4. Combining real terms gives 7 + x² − 4 − 2x² = 3 − x². Imaginary terms give −3i − 4xi − 4i = −(4x + 7)i.",
+      "imageAlt": "The expression combines seven minus three i, a squared complex binomial x minus two i, and subtraction of four i plus two x squared."
+    },
+    "23": {
+      "prompt": "In simplest form, what is (x³ − 9x)/(9 − x²), given x ≠ ±3?",
+      "choices": ["−x", "x", "−x(x + 3)/(3 + x)", "x(x − 3)/(3 − x)"],
+      "explanation": "Factor numerator x(x − 3)(x + 3) and denominator (3 − x)(3 + x) = −(x − 3)(x + 3). Cancel the factors to obtain −x. Choices 3 and 4 are also algebraically equivalent for the allowed x, but neither is in simplest form.",
+      "imageAlt": "The fraction is x cubed minus nine x over nine minus x squared; the domain excludes x equal to positive or negative three."
+    },
+    "24": {
+      "prompt": "If 45% of people have type O blood and random values run from 000 through 999, which inclusive range should represent type O?",
+      "choices": ["000–045", "000–444", "000–449", "000–450"],
+      "explanation": "There are 1,000 equally likely three-digit values. Forty-five percent of 1,000 is 450 values. Counting inclusively from 000, the 450th value is 449, so use 000 through 449.",
+      "imageAlt": "The generator's three-digit outcomes include all integers from zero-zero-zero to nine-nine-nine, so the sample space contains exactly one thousand values."
+    }
+  }
+}

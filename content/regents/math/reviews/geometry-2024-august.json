@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "024b481ebf2a421f95792b633f757895aa09c50e1ff721ad9d2260becda58785",
+  "questions": {
+    "1": {
+      "prompt": "Right triangle LMN has LN = 8, MN = 15, LM = 17, and a right angle at N. It is translated to triangle XYZ. Which statement must hold?",
+      "choices": ["XY = 15", "YZ = 17", "angle Z = 90°", "angle X = 90°"],
+      "explanation": "A translation preserves angles, and the vertex order maps L to X, M to Y, and N to Z. Since angle N is 90°, corresponding angle Z is 90°.",
+      "imageAlt": "Right triangle LMN has vertical leg LN labeled 8, horizontal leg NM labeled 15, hypotenuse LM labeled 17, and a right-angle mark at N."
+    },
+    "2": {
+      "prompt": "Directed segment KC has endpoints K(−4, −2) and C(1, 8). E divides KC so KE:EC = 3:2. What are E's coordinates?",
+      "choices": ["(−1, 4)", "(−2, 2)", "(−3, 0)", "(0, 6)"],
+      "explanation": "A 3:2 split puts E three fifths of the way from K to C. The displacement is (5, 10); three fifths is (3, 6). Add to K(−4, −2) to get E(−1, 4).",
+      "imageAlt": "Printed directed-segment question. Both signed endpoint coordinates and the 3:2 ratio are in accessible text."
+    },
+    "3": {
+      "prompt": "In right triangle DAN, angle A is 90°. Which trigonometric identity must always hold?",
+      "choices": ["cos D = cos N", "cos D = sin N", "sin A = cos N", "cos A = tan N"],
+      "explanation": "Acute angles D and N in a right triangle are complementary. Cosine of one acute angle equals sine of its complement, so cos D = sin N.",
+      "imageAlt": "Printed right-triangle identity question. Accessible text identifies the right angle and all four function equations."
+    },
+    "4": {
+      "prompt": "In parallelogram RSTV, diagonals SV and RT meet at E. Which statement is always true?",
+      "choices": ["SR ≅ RV", "RT ≅ SV", "SE ≅ RE", "RE ≅ TE"],
+      "explanation": "Diagonals of every parallelogram bisect each other. E is the midpoint of RT, so RE and TE are congruent. The two diagonals need not be equal to each other.",
+      "imageAlt": "Parallelogram RSTV has R lower left, S upper left, T upper right, V lower right. Diagonals RT and SV cross at E."
+    },
+    "5": {
+      "prompt": "In triangle SNA, UE is parallel to NA, with U on SN and E on SA. If SU = 3, SN = 11, and EA = 13, find SE to the nearest tenth.",
+      "choices": ["2.5", "3.5", "4.9", "17.9"],
+      "explanation": "Parallel UE and NA make triangles SUE and SNA similar. Therefore SE/SA = SU/SN = 3/11. Since SA = SE + 13, solve SE/(SE + 13) = 3/11 to get 8SE = 39 and SE = 4.875 ≈ 4.9.",
+      "imageAlt": "Triangle SNA has S at top, N lower left, A lower right. U is on SN and E on SA; horizontal segment UE crosses the triangle parallel to base NA."
+    },
+    "6": {
+      "prompt": "A sloped roof is 5.5 meters long along its slant and rises 2.5 meters vertically. What is its angle of elevation to the nearest degree?",
+      "choices": ["24°", "25°", "27°", "28°"],
+      "explanation": "The vertical rise is opposite the angle of elevation, and the sloped roof is the hypotenuse. Thus sin θ = 2.5/5.5, giving θ ≈ 27°.",
+      "imageAlt": "Right-triangle roof model has vertical rise 2.5 m at left, horizontal run along the bottom, and sloping hypotenuse labeled 5.5 m. The angle of elevation is at the lower-right end."
+    },
+    "7": {
+      "prompt": "Parallel lines CT and AR are shown, with A, C, E collinear and AC ≅ RC. If angle ECT = 75°, what is angle ACR?",
+      "choices": ["30°", "60°", "75°", "105°"],
+      "explanation": "Parallel lines give base angle CAR = angle ECT = 75°. Because AC ≅ RC, triangle ACR is isosceles, so its other base angle at R is also 75°. Its angle at C is 180° − 75° − 75° = 30°.",
+      "imageAlt": "Two horizontal parallel lines have C and T on top and A and R below. A-C-E is a straight slanted line rising through C; segment CR descends to R, making triangle ACR. Angle ECT is between upward CE and rightward CT."
+    },
+    "8": {
+      "prompt": "Triangle ABC's medians AX, BY, CZ meet at centroid P. If AB = 26, AC = 28, and PC = 16, what is the perimeter of triangle CZA?",
+      "choices": ["57", "65", "70", "73"],
+      "explanation": "Z is the midpoint of AB, so ZA = 13. The centroid divides median CZ with CP = 2/3 CZ, giving CZ = (3/2)(16) = 24. Add CZ + ZA + AC = 24 + 13 + 28 = 65.",
+      "imageAlt": "Triangle ABC has A lower left, B top, C lower right. Z is midpoint of AB, X midpoint of BC, and Y midpoint of AC. Medians CZ, AX, BY meet at interior point P."
+    },
+    "9": {
+      "prompt": "Right triangle ABC has angle C = 90°, AC = 12, angle A = 25°, opposite leg BC = a, and hypotenuse BA = c. Which equation is correct?",
+      "choices": ["a = 12/tan 25°", "a = 12 tan 25°", "c = 12/tan 25°", "c = 12 tan 25°"],
+      "explanation": "Relative to angle A, a is opposite and the side of length 12 is adjacent. Thus tan 25° = a/12, so a = 12 tan 25°.",
+      "imageAlt": "Right triangle has C lower left, A lower right, B above C. AC is horizontal and labeled 12; BC is vertical and labeled a; BA is sloping hypotenuse labeled c. Angle A is 25 degrees."
+    },
+    "10": {
+      "prompt": "In triangle HUS, G lies on US and segment HG is drawn. Which extra information is enough to prove triangles HUG and HSG congruent by SAS?",
+      "choices": ["HG bisects US", "HG is an altitude", "HG bisects angle UHS", "HG is the perpendicular bisector of US"],
+      "explanation": "If HG is the perpendicular bisector of US, then UG = GS and both included angles at G are right angles. The triangles also share HG, giving side-angle-side congruence.",
+      "imageAlt": "Triangle HUS has H at left and vertical side US at right, with U above S. Point G is to be placed on US, and segment HG joins it to H."
+    },
+    "11": {
+      "prompt": "A cone has base area 9π square inches and volume 36π cubic inches. Find its height in inches.",
+      "choices": ["12", "8", "3", "4"],
+      "explanation": "Cone volume is one third of base area times height: 36π = (1/3)(9π)h = 3πh. Therefore h = 12 inches.",
+      "imageAlt": "Printed cone-volume question. Base area, volume, units, and choices are fully available in accessible text."
+    },
+    "12": {
+      "prompt": "Segments AB, CD, EF, GH, and IJ are graphed. Which is the image of AB under dilation by factor 2 centered at (−2, −1)?",
+      "choices": ["CD", "EF", "GH", "IJ"],
+      "explanation": "A dilation doubles each point's displacement from (−2, −1). On the graph, doing this to both endpoints of AB places them at E and F, so the image segment is EF.",
+      "imageAlt": "Coordinate grid shows five short descending segments. AB lies near the center, with A above-left of B. CD is above-left of AB, EF farther above and longer, GH below and longer, and IJ at the top and longest. The dilation center is (−2, −1)."
+    },
+    "13": {
+      "prompt": "A graphed trapezoid has point A at (−7, 3). Which transformation maps A to A'(3, −7)?",
+      "choices": ["reflect over y = x", "reflect over the y-axis", "rotate 180° about the origin", "rotate 90° counterclockwise about the origin"],
+      "explanation": "Reflection over y = x swaps coordinates: (x, y) becomes (y, x). Thus (−7, 3) maps to (3, −7).",
+      "imageAlt": "Coordinate grid shows trapezoid ABCD above-left of the origin. Point A is its lower-left vertex at (−7, 3); B and C form the shorter top base and D the lower-right vertex."
+    },
+    "14": {
+      "prompt": "A storage building consists of a cylinder topped by a hemisphere. Both have diameter 12 feet, and total height is 30 feet. Find total volume to the nearest cubic foot.",
+      "choices": ["942", "2488", "3167", "3845"],
+      "explanation": "The common radius is 6 ft, so the hemisphere's height is 6 and the cylinder's height is 30 − 6 = 24. The volumes are π(6²)(24) = 864π and (2/3)π(6³) = 144π. Total 1008π ≈ 3167 cubic feet.",
+      "imageAlt": "Building diagram has a vertical cylinder capped by a hemisphere. Overall height is labeled 30 ft and base diameter 12 ft."
+    },
+    "15": {
+      "prompt": "Which regular polygon maps onto itself after a 135° rotation about its center?",
+      "choices": ["triangle", "pentagon", "hexagon", "octagon"],
+      "explanation": "A regular octagon maps onto itself every 360°/8 = 45°. A 135° turn is three 45° steps, so the octagon is unchanged.",
+      "imageAlt": "Printed rotational-symmetry question. The rotation angle and four polygons are available in accessible text."
+    },
+    "16": {
+      "prompt": "What is the radius of the circle x² + y² − 2x + 4y − 5 = 0?",
+      "choices": ["√5", "√10", "5", "10"],
+      "explanation": "Complete squares: (x − 1)² − 1 + (y + 2)² − 4 − 5 = 0. Hence (x − 1)² + (y + 2)² = 10 and the radius is √10.",
+      "imageAlt": "Printed circle equation; accessible text preserves the signed terms, exponents, and radical choices."
+    },
+    "17": {
+      "prompt": "Line y = 4x + 15 is dilated by factor 2 about the origin. Which equation represents its image?",
+      "choices": ["y = 4x + 15", "y = 4x + 30", "y = 8x + 15", "y = 8x + 30"],
+      "explanation": "A dilation centered at the origin leaves the line's slope 4 unchanged while doubling its y-intercept from 15 to 30. The image is y = 4x + 30.",
+      "imageAlt": "Printed line-dilation question. The equation, factor, center, and four image equations are accessible as text."
+    },
+    "18": {
+      "prompt": "Segment RH has R(−4, 4) and H(2, −4). Which line is perpendicular to RH and passes through (3, −1)?",
+      "choices": ["y + 1 = (3/4)(x − 3)", "y + 1 = −(3/4)(x − 3)", "y + 1 = (4/3)(x − 3)", "y + 1 = −(4/3)(x − 3)"],
+      "explanation": "The slope of RH is (−4 − 4)/(2 − (−4)) = −8/6 = −4/3. A perpendicular slope is its negative reciprocal, 3/4. Through (3, −1), point-slope form is y + 1 = (3/4)(x − 3).",
+      "imageAlt": "Printed perpendicular-line question; accessible text preserves both signed endpoints, given point, and fractional-slope options."
+    },
+    "19": {
+      "prompt": "Right triangle SNO has altitude NW to hypotenuse SO. Which statement is not always true?",
+      "choices": ["SO/SN = SN/SW", "SW/NS = NS/OW", "SO/ON = ON/OW", "OW/NW = NW/SW"],
+      "explanation": "Right-triangle projection identities give SN² = SO × SW and ON² = SO × OW, while the altitude gives NW² = SW × OW. These make choices 1, 3, and 4 true. Choice 2 would require SN² = SW × OW = NW², which is not generally true.",
+      "imageAlt": "Right triangle SNO has right angle at N, S above N, O to the right, and hypotenuse SO slanting down-right. W lies on SO; altitude NW rises from N to W perpendicular to SO."
+    },
+    "20": {
+      "prompt": "A 3-by-4 rectangle is dilated by factor 1.8. What is the image area to the nearest tenth?",
+      "choices": ["3.7", "6.7", "21.6", "38.9"],
+      "explanation": "Original area is 3 × 4 = 12. Areas scale by the square of the linear factor, so image area is 12(1.8²) = 38.88, which rounds to 38.9.",
+      "imageAlt": "Printed rectangle-dilation question. Both dimensions, scale factor, and choices are provided as accessible text."
+    },
+    "21": {
+      "prompt": "In circle P, diameter MD and chord AL intersect at Q. Angle AQD is 46° and minor arc LD is 124°. What is minor arc AD?",
+      "choices": ["36°", "46°", "51°", "92°"],
+      "explanation": "The lower semicircle from M to D is 180°, so arc ML = 180° − 124° = 56°. For intersecting chords, angle AQD is half the sum of arcs AD and ML. Thus 46° = (AD + 56°)/2, giving arc AD = 36°.",
+      "imageAlt": "Circle P has horizontal diameter MD, M at left and D at right. Chord AL runs from upper-right A to lower-left L and crosses the diameter at Q. Angle AQD is marked 46 degrees and lower-right arc LD is labeled 124 degrees."
+    },
+    "22": {
+      "prompt": "A right triangular prism is cut by a plane perpendicular to its triangular bases. What is the cross-section shape?",
+      "choices": ["triangle", "rhombus", "pentagon", "rectangle"],
+      "explanation": "The cut is parallel to the prism's vertical lateral edges. Its intersection has two vertical sides and matching parallel segments in the triangular top and bottom bases, making a rectangle.",
+      "imageAlt": "Right triangular prism diagram shows congruent triangular top and bottom faces joined by three parallel vertical edges. The stated cutting plane is perpendicular to those triangular bases."
+    },
+    "23": {
+      "prompt": "A 24-in by 12-in by 16-in fish tank weighs 25 pounds empty. It contains water 14 inches deep; 27.7 cubic inches of water weigh 1 pound. What is the approximate combined weight?",
+      "choices": ["146", "166", "171", "191"],
+      "explanation": "Water volume is 24 × 12 × 14 = 4032 cubic inches. That water weighs 4032/27.7 ≈ 145.6 pounds. Add the empty tank's 25 pounds to get about 170.6, or 171 pounds.",
+      "imageAlt": "Rectangular open-top tank diagram labels length 24 inches, width 12 inches, and total height 16 inches. The 14-inch water depth is supplied in accessible text."
+    },
+    "24": {
+      "prompt": "A circle has radius 4.5. An arc has length 6.2. What is its central angle to the nearest degree?",
+      "choices": ["35°", "42°", "64°", "79°"],
+      "explanation": "Arc length satisfies s = rθ for θ in radians. Thus θ = 6.2/4.5 ≈ 1.378 radians, or 1.378 × 180/π ≈ 79°.",
+      "imageAlt": "Printed central-angle question; radius, arc length, and four angle choices are accessible as text."
+    }
+  }
+}

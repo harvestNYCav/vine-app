@@ -1,0 +1,57 @@
+{
+  "sections": [{
+    "slug": "passage-b", "title": "Reading Comprehension · Passage B",
+    "intro": "Read “The Sound of Snow” and answer questions 11–14. Vocabulary notes follow the poem.",
+    "questionIds": ["english-2024-january-q11", "english-2024-january-q12", "english-2024-january-q13", "english-2024-january-q14"],
+    "passage": {
+      "title": "The Sound of Snow",
+      "credit": "—Hayden Carruth · “The Sound of Snow” · from Collected Shorter Poems 1946–1991 (1992), Copper Canyon Press",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "Snow falls in the dusk of Connecticut. The stranger"},
+        {"number": 2, "text": "Looks up to the glutenous sky, and it is remembrance"},
+        {"number": 3, "text": "That tickles the end of his nose like the fingertips"},
+        {"number": 4, "text": "Of a child and remembrance that touches the end of his"},
+        {"number": 5, "text": "Tongue with the antique purity and coolness of the snow,"},
+        {"number": 6, "text": "As if this were almost the beginning, the first snowstorm"},
+        {"number": 7, "text": "Fluttering between his house and the serious hemlocks.¹"},
+        {"number": null, "text": ""},
+        {"number": 8, "text": "And best of all is the sound of snow in the stillness,"},
+        {"number": 9, "text": "A susurration,² the minute percussion of settling flakes;"},
+        {"number": 10, "text": "And the stranger listens, intent to the whispering snow"},
+        {"number": 11, "text": "In the fir boughs, earth’s most intimate confiding,"},
+        {"number": 12, "text": "And he thinks that this is the time of sweet cognizance³"},
+        {"number": 13, "text": "As it was once when the house, graying in old dusk,"},
+        {"number": 14, "text": "Knew him and sang to him, before the house forgot."},
+        {"number": null, "text": ""},
+        {"number": 15, "text": "In the last moments of day the earth and the sky"},
+        {"number": 16, "text": "Close in the veils of snow that flutter around him,"},
+        {"number": 17, "text": "Shutting him in the sphere of the storm, where he stands"},
+        {"number": 18, "text": "In his elephantine galoshes,⁴ peering this way and that"},
+        {"number": 19, "text": "At the trees in their aloofness and the nameless house"},
+        {"number": 20, "text": "Vanishing into the dark; and he stamps his feet urgently,"},
+        {"number": 21, "text": "Turning as if in anger away from an evil companion."},
+        {"number": null, "text": ""},
+        {"number": 22, "text": "Yet when, like a warning just at the fall of darkness,"},
+        {"number": 23, "text": "Yellow light cries from the window above in the house,"},
+        {"number": 24, "text": "From the boy’s room, from the old sixteen-paned window,"},
+        {"number": 25, "text": "The stranger remembers the boy who sits in the light"},
+        {"number": 26, "text": "And turns the glass sphere, watching to see the snowstorm"},
+        {"number": 27, "text": "Whirling inside. And the stranger shivers and listens"},
+        {"number": 28, "text": "To the tranquil and lucid⁵ whispering of the snow."},
+        {"number": null, "text": ""},
+        {"number": null, "text": "¹ hemlocks — evergreen trees"},
+        {"number": null, "text": "² susurration — murmuring"},
+        {"number": null, "text": "³ cognizance — awareness"},
+        {"number": null, "text": "⁴ galoshes — rubber boots"},
+        {"number": null, "text": "⁵ lucid — clear"}
+      ]
+    }
+  }],
+  "questions": [
+    {"id": "english-2024-january-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "In the first stanza, the stranger is vividly reminded of the", "choices": [{"label": "1", "text": "power he felt during snowstorms in Connecticut"}, {"label": "2", "text": "enjoyment he found playing in fresh snow as a child"}, {"label": "3", "text": "relief he found in the winter snow in Connecticut"}, {"label": "4", "text": "sensations he experienced during snowfall as a child"}], "correct": "4", "explanation": "The snow makes the stranger remember how it tickled his nose and touched his tongue, calling up the physical sensations of an earlier snowfall rather than an account of playing or finding relief.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2024-january-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "In the context of the poem, the personification in lines 13 and 14 serves to", "choices": [{"label": "1", "text": "establish the stranger’s connection with the house"}, {"label": "2", "text": "transform the stranger’s feelings about the house"}, {"label": "3", "text": "illustrate the stranger’s dim memory of the house"}, {"label": "4", "text": "reveal the stranger’s obscured view of the house"}], "correct": "1", "explanation": "The house is said to have known and sung to the stranger. Giving it these human actions emphasizes how close and familiar it once felt to him, even though that connection is now lost.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2024-january-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The references to “the sphere of the storm” (line 17) and “the glass sphere” (line 26) create a link between the stranger’s", "choices": [{"label": "1", "text": "health and illness"}, {"label": "2", "text": "acceptance and rejection"}, {"label": "3", "text": "present and past"}, {"label": "4", "text": "insight and confusion"}], "correct": "3", "explanation": "In the present the stranger stands inside the sphere of a real storm. That image recalls the glass snow globe turned by the boy in the house, linking the current scene to a remembered moment from childhood.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2024-january-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "Lines 15 through 21 signal the stranger’s", "choices": [{"label": "1", "text": "changing attitude towards the storm"}, {"label": "2", "text": "increasing confidence about finding his way"}, {"label": "3", "text": "developing sense of control over the storm"}, {"label": "4", "text": "growing disinterest in continuing his journey"}], "correct": "1", "explanation": "The snow had first invited pleasant remembrance, but now it closes around him, hides the house, and makes him stamp his feet and turn away as if angry. His response to the storm has changed.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

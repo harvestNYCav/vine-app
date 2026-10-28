@@ -1,0 +1,59 @@
+{
+  "sections": [{
+    "slug": "passage-b",
+    "title": "Reading Comprehension · Passage B",
+    "intro": "Read “View with a Grain of Sand” and answer questions 10–14.",
+    "questionIds": ["english-2016-january-q10", "english-2016-january-q11", "english-2016-january-q12", "english-2016-january-q13", "english-2016-january-q14"],
+    "passage": {
+      "title": "View with a Grain of Sand",
+      "credit": "—Wislawa Szymborska · Polish Poetry of the Last Two Decades of Communist Rule, 1991 · translated by Stanislaw Barańczak and Clare Cavanagh · Northwestern University Press",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number":1,"text":"We call it a grain of sand"},
+        {"number":2,"text":"but it calls itself neither grain nor sand."},
+        {"number":3,"text":"It does just fine without a name,"},
+        {"number":4,"text":"whether general, particular,"},
+        {"number":5,"text":"permanent, passing,"},
+        {"number":6,"text":"incorrect or apt."},
+        {"number":7,"text":"Our glance, our touch mean nothing to it."},
+        {"number":8,"text":"It doesn’t feel itself seen and touched."},
+        {"number":9,"text":"And that it fell on the windowsill"},
+        {"number":10,"text":"is only our experience, not its."},
+        {"number":11,"text":"For it it’s no different than falling on anything else"},
+        {"number":12,"text":"with no assurance that it’s finished falling"},
+        {"number":13,"text":"or that it’s falling still."},
+        {"number":14,"text":"The window has a wonderful view of a lake"},
+        {"number":15,"text":"but the view doesn’t view itself."},
+        {"number":16,"text":"It exists in this world"},
+        {"number":17,"text":"colorless, shapeless,"},
+        {"number":18,"text":"soundless, odorless, and painless."},
+        {"number":19,"text":"The lake’s floor exists floorlessly"},
+        {"number":20,"text":"and its shore exists shorelessly."},
+        {"number":21,"text":"Its water feels itself neither wet nor dry"},
+        {"number":22,"text":"and its waves to themselves are neither singular nor plural."},
+        {"number":23,"text":"They splash deaf to their own noise"},
+        {"number":24,"text":"on pebbles neither large nor small."},
+        {"number":25,"text":"And all this beneath a sky by nature skyless"},
+        {"number":26,"text":"in which the sun sets without setting at all"},
+        {"number":27,"text":"and hides without hiding behind an unminding cloud."},
+        {"number":28,"text":"The wind ruffles it, its only reason being"},
+        {"number":29,"text":"that it blows."},
+        {"number":30,"text":"A second passes."},
+        {"number":31,"text":"A second second."},
+        {"number":32,"text":"A third."},
+        {"number":33,"text":"But they’re three seconds only for us."},
+        {"number":34,"text":"Time has passed like a courier with urgent news."},
+        {"number":35,"text":"But that’s just our simile."},
+        {"number":36,"text":"The character’s invented, his haste is make-believe,"},
+        {"number":37,"text":"his news inhuman."}
+      ]
+    }
+  }],
+  "questions": [
+    {"id":"english-2016-january-q10","number":10,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The statement “Our glance, our touch mean nothing to it” (line 7) helps to establish the concept of","choices":[{"label":"1","text":"human resentment of the natural order"},{"label":"2","text":"nature’s superiority"},{"label":"3","text":"human control over the environment"},{"label":"4","text":"nature’s indifference"}],"correct":"4","explanation":"The grain of sand does not experience being seen or touched by people (lines 7–8). Its existence is unaffected by our attention, which illustrates nature’s indifference to human perception.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-january-q11","number":11,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The purpose of lines 14 through 18 is to present","choices":[{"label":"1","text":"a contrast with human reliance on the senses"},{"label":"2","text":"a focus on the complexity of natural events"},{"label":"3","text":"an emphasis on human need for physical beauty"},{"label":"4","text":"an appreciation for the role of nature in everyday life"}],"correct":"1","explanation":"The window has a view that people might admire, but the view does not see itself and is described as colorless, shapeless, soundless, odorless, and painless. This contrasts nature’s existence with the sensory categories people rely on.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-january-q12","number":12,"sectionSlug":"passage-b","sourcePage":6,"prompt":"Lines 30 through 33 contribute to the poem’s meaning by","choices":[{"label":"1","text":"questioning the finality of death"},{"label":"2","text":"commenting on human perception"},{"label":"3","text":"revealing the power of anticipation"},{"label":"4","text":"describing an unusual phenomenon"}],"correct":"2","explanation":"The speaker counts one second, another, and a third, then notes that they are “three seconds only for us.” Time’s units are a way humans perceive and label events, not an intrinsic experience of nature.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-january-q13","number":13,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The inclusion of the figurative language in the final stanza serves to","choices":[{"label":"1","text":"modify an argument"},{"label":"2","text":"stress a value"},{"label":"3","text":"reinforce a central idea"},{"label":"4","text":"resolve a conflict"}],"correct":"3","explanation":"The last stanza compares time to a courier, then immediately calls the courier an invented character and the comparison “just our simile.” It reinforces the poem’s central idea that human descriptions do not belong to nature itself.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2016-january-q14","number":14,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The poem is developed primarily through the use of","choices":[{"label":"1","text":"examples"},{"label":"2","text":"exaggerations"},{"label":"3","text":"cause and effect"},{"label":"4","text":"question and answer"}],"correct":"1","explanation":"The speaker considers a grain of sand, a window and lake, the sky and wind, and passing seconds. These successive examples show how nature exists apart from the names and experiences people assign to it.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

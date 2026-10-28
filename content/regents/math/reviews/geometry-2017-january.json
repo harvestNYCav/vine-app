@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "461e1a34e77fca9336e39f6beaa4a7b1481e3b73902f9c03ac93694e0b8de600",
+  "questions": {
+    "1": {
+      "prompt": "Which line passes through (−2,2) and is parallel to y = (1/2)x+8?",
+      "choices": ["y = (1/2)x", "y = −2x−3", "y = (1/2)x+3", "y = −2x+3"],
+      "explanation": "A parallel line has slope 1/2. Write y = (1/2)x+b and substitute (−2,2): 2 = −1+b, so b = 3.",
+      "imageAlt": "Printed parallel-line problem; point and all equations are in accessible text."
+    },
+    "2": {
+      "prompt": "Triangle ADE is the image of ABC after reflecting across AC and dilating about A by factor AE/AC. Which statement must hold?",
+      "choices": ["angle BAC = angle AED", "angle ABC = angle ADE", "angle DAE = (1/2)angle BAC", "angle ACB = (1/2)angle DAB"],
+      "explanation": "Reflection and dilation preserve angle measures. The vertex mapping is A→A, B→D, C→E, so the angle at B equals its corresponding angle at D: angle ABC = angle ADE.",
+      "imageAlt": "A is at top with vertical segment A-E-C. Original triangle A-B-C extends left of that line, with B upper-left and C at bottom. Reflected and smaller triangle A-D-E extends right, with D upper-right and E between A and C."
+    },
+    "3": {
+      "prompt": "Given triangle ABC ≅ triangle DEF in that order, which statement is not always true?",
+      "choices": ["BC ≅ DF", "angle A = angle D", "their areas are equal", "their perimeters are equal"],
+      "explanation": "The congruence order gives A↔D, B↔E, C↔F. Side BC corresponds to EF, not DF, so BC need not equal DF. Corresponding angles, area, and perimeter do match.",
+      "imageAlt": "Printed triangle-congruence question; vertex order and all choices are in accessible text."
+    },
+    "4": {
+      "prompt": "Segments DE, DF, and EF are midsegments of triangle ABC. What is the perimeter of quadrilateral ADEF?",
+      "choices": ["AB+BC+AC", "(1/2)AB+(1/2)AC", "2AB+2AC", "AB+AC"],
+      "explanation": "AD and EF each equal AB/2, while AF and DE each equal AC/2. Adding the four sides of ADEF gives AB+AC.",
+      "imageAlt": "Triangle ABC has A lower left, B at top, C lower right. D and E are midpoints of AB and BC, and F is midpoint of AC. Segments DE, DF, EF divide it into four smaller triangles; quadrilateral A-D-E-F uses left and middle sides."
+    },
+    "5": {
+      "prompt": "Triangles ABE and CDF are congruent, and A, E, F, C lie on one straight line as shown. What can be proved about quadrilateral ABCD?",
+      "choices": ["square", "rhombus", "rectangle", "parallelogram"],
+      "explanation": "Congruence gives AB = CD and angle BAE = DCF. Because AE and CF lie on the same straight line, those equal angles show AB ∥ CD. A quadrilateral with one pair of opposite sides both congruent and parallel is a parallelogram; no right angles or four equal sides are established.",
+      "imageAlt": "Outer quadrilateral A-B-C-D has A lower left, B upper left, C upper right, D lower right. The straight segment from A to C passes through interior points E then F. Segment B-E-D and segment D-F form the small triangles ABE and CDF."
+    },
+    "6": {
+      "prompt": "Which transformation would make image triangle A′B′C′ not congruent to ABC?",
+      "choices": ["reflection over y-axis", "90° clockwise rotation about origin", "translation 3 right and 2 down", "dilation by factor 2 about origin"],
+      "explanation": "Reflections, rotations, and translations are rigid motions and preserve lengths. A factor-2 dilation doubles every side, so the image is similar but not congruent to the original triangle.",
+      "imageAlt": "Printed transformation question; all motions and distances are in accessible text."
+    },
+    "7": {
+      "prompt": "Two right triangles are similar. In the first, tan θ = 3/7; in the second, the side opposite the corresponding θ is 2.4 and the adjacent side is x. Find x to the nearest tenth.",
+      "choices": ["1.2", "5.6", "7.6", "8.8"],
+      "explanation": "For the corresponding angle in the second triangle, tan θ = opposite/adjacent = 2.4/x. Set 2.4/x = 3/7 to get x = 2.4(7/3) = 5.6.",
+      "imageAlt": "Left right triangle is rotated, with θ at its left base and a right angle at its upper-right vertex. Its other acute angle is marked at lower right. The right triangle at right has a right angle lower left, marked acute angle lower right, horizontal base 2.4, and vertical leg x; θ corresponds to its top angle."
+    },
+    "8": {
+      "prompt": "A farmer has 64 feet of fence for a rectangular garden. Which dimensions maximize its area?",
+      "choices": ["length and width equal", "length 2 more than width", "length 4 more than width", "length 6 more than width"],
+      "explanation": "For a fixed perimeter, a rectangle has maximum area when it is a square. Here equal sides are 64/4 = 16 feet, giving the largest area, 256 square feet.",
+      "imageAlt": "Printed perimeter-and-area question; fence length and proposed dimension relationships are in accessible text."
+    },
+    "9": {
+      "prompt": "Rectangle ABCD has diagonal BD = 12 making a 30° angle with horizontal side BC at B. What is its perimeter to the nearest tenth?",
+      "choices": ["28.4", "32.8", "48.0", "62.4"],
+      "explanation": "The rectangle width is BC = 12cos30° ≈ 10.392 and height CD = 12sin30° = 6. Perimeter = 2(10.392+6) ≈ 32.8.",
+      "imageAlt": "Rectangle has A upper left, D upper right, B lower left, C lower right. Diagonal B-D is labeled 12 and forms a 30° angle above bottom side B-C at B."
+    },
+    "10": {
+      "prompt": "An upright pentagon ABCDE maps to a congruent upside-down pentagon A″B″C″D″E″. Which transformation sequence could do it?",
+      "choices": ["dilation then rotation", "translation then rotation", "line reflection then translation", "line reflection then line reflection"],
+      "explanation": "The final pentagon has the same size but reversed vertical orientation, with left and right vertex order unchanged. A reflection over a horizontal line flips it, and a translation places it at the shown location. Two reflections preserve orientation, while a dilation need not preserve size.",
+      "imageAlt": "Original house-shaped pentagon has A lower left, B mid-left, C top, D mid-right, E lower right. Image to the right is upside down with A″ upper left, B″ mid-left, C″ bottom, D″ mid-right, E″ upper right."
+    },
+    "11": {
+      "prompt": "A 4-by-6-by-4-inch solid rectangular prism has a radius-1-inch cylindrical hole drilled through its full 6-inch length. What is remaining volume, approximately?",
+      "choices": ["19", "77", "93", "96"],
+      "explanation": "Prism volume is 4·6·4 = 96 cubic inches. Hole volume is π(1²)(6) = 6π ≈ 18.85. Remaining volume 96−6π ≈ 77.15, or 77.",
+      "imageAlt": "Rectangular block shows 4-inch square front face and 6-inch depth. Circular hole of radius 1 inch enters front face and runs through the full depth."
+    },
+    "12": {
+      "prompt": "A right triangle has a 14-foot leg adjacent to a 40° angle and hypotenuse x. Find x to the nearest foot.",
+      "choices": ["11", "17", "18", "22"],
+      "explanation": "Cosine relates adjacent side to hypotenuse: cos40° = 14/x. Thus x = 14/cos40° ≈ 18.3 feet, rounding to 18.",
+      "imageAlt": "Right triangle has horizontal bottom leg labeled 14 ft, vertical left leg, hypotenuse x sloping down-right, and a 40° angle at lower-right end of the base."
+    },
+    "13": {
+      "prompt": "A(3,4), B(4,3), and C(2,1) are graphed. Segment BC is dilated by factor 2 centered at A. What are B′ and C′?",
+      "choices": ["B′(5,2), C′(1,−2)", "B′(6,1), C′(0,−1)", "B′(5,0), C′(1,−2)", "B′(5,2), C′(3,0)"],
+      "explanation": "Relative to center A, B−A = (1,−1) and C−A = (−1,−3). Doubling gives B′ = A+(2,−2) = (5,2) and C′ = A+(−2,−6) = (1,−2).",
+      "imageAlt": "Grid shows A at (3,4) above segment BC, B at (4,3) and C at (2,1). Each original coordinate is in the prompt; the dilation center is A."
+    },
+    "14": {
+      "prompt": "In right triangle ADE, B lies on AD and C on AE, with BC ∥ DE. Which ratio equals sin angle A?",
+      "choices": ["AD/DE", "AE/AD", "BC/AB", "AB/AC"],
+      "explanation": "In smaller right triangle ABC, BC is opposite angle A and AB is its hypotenuse. Therefore sin A = BC/AB.",
+      "imageAlt": "Large right triangle A-D-E has A left, E lower right with right angle, D directly above E. C lies between A and E on horizontal base, B lies on sloping AD, and vertical BC parallels DE."
+    },
+    "15": {
+      "prompt": "From external point A, secants A-D-B and A-E-C cross circle O. AD = 8, AE = 6, and EC is 12 more than BD. Find BD.",
+      "choices": ["6", "22", "36", "48"],
+      "explanation": "Let BD = x, so whole secant AB = 8+x, EC = x+12, and whole secant AC = 6+x+12 = x+18. The secant theorem gives 8(8+x) = 6(x+18). Solving yields x = 22.",
+      "imageAlt": "Printed two-secant circle problem; external segments, interior segments, and their relationship are in accessible text."
+    },
+    "16": {
+      "prompt": "A parallelogram is always a rectangle under which condition?",
+      "choices": ["diagonals congruent", "diagonals bisect each other", "diagonals meet at right angles", "opposite angles congruent"],
+      "explanation": "Congruent diagonals in a parallelogram force its angles to be right angles, making it a rectangle. Bisection and opposite-angle congruence already hold for all parallelograms; perpendicular diagonals indicate a rhombus.",
+      "imageAlt": "Printed parallelogram-classification question; all proposed properties are in accessible text."
+    },
+    "17": {
+      "prompt": "Which rotation about its center maps a regular decagon onto itself?",
+      "choices": ["54°", "162°", "198°", "252°"],
+      "explanation": "A regular decagon repeats every 360°/10 = 36°. Since 252° = 7·36°, only that listed rotation works.",
+      "imageAlt": "Printed regular-decagon rotation question; all angle choices are in accessible text."
+    },
+    "18": {
+      "prompt": "Circle x²+y²−6y+1 = 0 has what center and radius?",
+      "choices": ["center (0,3), radius 2√2", "center (0,−3), radius 2√2", "center (0,6), radius √35", "center (0,−6), radius √35"],
+      "explanation": "Complete the square: x²+(y−3)² = 8. The center is (0,3) and the radius is √8 = 2√2.",
+      "imageAlt": "Printed circle-equation problem; equation, signs, and radical radii are in accessible text."
+    },
+    "19": {
+      "prompt": "Parallelogram ABCD has A(0,7) and opposite vertex C(2,1). Which statement would prove it is a rhombus?",
+      "choices": ["midpoint of AC is (1,4)", "length of BD is √40", "slope of BD is 1/3", "slope of AB is 1/3"],
+      "explanation": "Slope of diagonal AC is (1−7)/(2−0) = −3. A rhombus has perpendicular diagonals, so BD must have the negative reciprocal slope 1/3. The other facts do not establish a rhombus.",
+      "imageAlt": "Printed coordinate-parallelogram problem; opposite vertices and all candidate midpoint, length, and slope properties are in accessible text."
+    },
+    "20": {
+      "prompt": "Q divides MN with MQ:QN = 2:3. If M(3,5) and N(8,−5), what are Q's coordinates?",
+      "choices": ["(5,1)", "(5,0)", "(6,−1)", "(6,0)"],
+      "explanation": "Q is 2/5 of the way from M to N. N−M = (5,−10), so Q = (3,5)+(2/5)(5,−10) = (5,1).",
+      "imageAlt": "Printed segment-partition question; endpoints and ratio are in accessible text."
+    },
+    "21": {
+      "prompt": "Circle O has radius OG = 8 and minor central angle GOJ = 60°. What is the area of the shaded major sector?",
+      "choices": ["4π/3", "20π/3", "32π/3", "160π/3"],
+      "explanation": "The unshaded minor sector is 60°, so the shaded sector is 300°. Area = (300/360)π(8²) = 160π/3.",
+      "imageAlt": "Circle centered O has radii OG toward upper right and OJ toward right, enclosing an unshaded 60° wedge. The remaining five-sixths of the circle is shaded gray."
+    },
+    "22": {
+      "prompt": "A circle centered at the origin passes through (−5,12). Which other point lies on it?",
+      "choices": ["(10,3)", "(−12,13)", "(11,2√12)", "(−8,5√21)"],
+      "explanation": "The radius squared is (−5)²+12² = 169. For (11,2√12), x²+y² = 121+(2√12)² = 121+48 = 169, so it lies on the circle.",
+      "imageAlt": "Printed coordinate-circle question; all point coordinates and radical components are in accessible text."
+    },
+    "23": {
+      "prompt": "A plane cuts a hexagonal prism perpendicular to its base. Which cross section results?",
+      "choices": ["triangle", "trapezoid", "hexagon", "rectangle"],
+      "explanation": "A plane perpendicular to the base of a right prism makes vertical sides and parallel top and bottom edges, yielding a rectangle.",
+      "imageAlt": "Printed prism-cross-section question; plane orientation and all shape choices are in accessible text."
+    },
+    "24": {
+      "prompt": "A conical cup is 4 inches high with maximum diameter 3 inches. What is the water volume when filled to half its height, to the nearest tenth of a cubic inch?",
+      "choices": ["1.2", "3.5", "4.7", "14.1"],
+      "explanation": "Water height is 2 inches. By similar cones its radius is half of the full 1.5-inch radius, or 0.75 inch. Volume = (1/3)π(0.75²)(2) = 0.375π ≈ 1.2 cubic inches.",
+      "imageAlt": "Printed conical-cup problem; full height, full diameter, and half-height fill level are in accessible text."
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "slug": "passage-b",
+      "title": "Reading Comprehension · Passage B",
+      "intro": "Read “Sea Drift” and answer questions 10–14.",
+      "questionIds": ["english-2025-january-q10", "english-2025-january-q11", "english-2025-january-q12", "english-2025-january-q13", "english-2025-january-q14"],
+      "passage": {
+        "title": "Sea Drift",
+        "credit": "—Eileen Berry · “Sea Drift” · from Bye Bye Blackbird: Worlds Past and Worlds Away (2010), Plain View Press",
+        "transcriptReviewStatus": "reviewed",
+        "lines": [
+          {"number": 1, "text": "They would sit, two or three of them as a rule, on the cast-iron seat"},
+          {"number": 2, "text": "they called a form, that stood at the end of the road to the sea"},
+          {"number": 3, "text": "where it petered out in a dirt track through salt marsh,"},
+          {"number": 4, "text": "disappeared in sand."},
+          {"number": 5, "text": "Old men now: dark clothes and rough workboots worn from habit, faces"},
+          {"number": 6, "text": "scarred by wind and sun from days on the boats."},
+          {"number": 7, "text": "Stranded somehow in this place as if, like seaweed, they had washed"},
+          {"number": 8, "text": "up on shore at high tide."},
+          {"number": 9, "text": "Survivors from a world once theirs."},
+          {"number": null, "text": ""},
+          {"number": 10, "text": "Somewhere in nearby stone cottages, with modern extensions at the back"},
+          {"number": 11, "text": "and sides to accommodate indoor plumbing, were daughters or daughters-"},
+          {"number": 12, "text": "in-law, keeping house, cooking meals, expecting the men home,"},
+          {"number": 13, "text": "at appointed times."},
+          {"number": 14, "text": "This was the daily routine now."},
+          {"number": null, "text": ""},
+          {"number": 15, "text": "Out of doors they were free, to rejoice in weather and tides, smell sea"},
+          {"number": 16, "text": "air that was the smell of life: salt, seaweed, sour mud, dead fish,"},
+          {"number": 17, "text": "churned-up sand; to feel the whip of wind on their skin."},
+          {"number": 18, "text": "Gulls circling and swooping in the wide skies, diving, as they once did"},
+          {"number": 19, "text": "above the shrimp boats as heavy nets were cast into the sea."},
+          {"number": 20, "text": "The slow pace of nature’s change gave them some kind of peace."}
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {"id": "english-2025-january-q10", "number": 10, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The term “petered out” in line 3 most nearly means", "choices": [{"label": "1", "text": "carried on"}, {"label": "2", "text": "branched off"}, {"label": "3", "text": "dwindled away"}, {"label": "4", "text": "dipped slightly"}], "correct": "3", "explanation": "The road becomes a dirt track through the salt marsh and then disappears in sand. “Petered out” therefore means it gradually dwindled away.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-january-q11", "number": 11, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The figurative language in lines 7 and 8 conveys the men’s", "choices": [{"label": "1", "text": "lack of purpose"}, {"label": "2", "text": "feeling of obligation"}, {"label": "3", "text": "sense of control"}, {"label": "4", "text": "loss of companionship"}], "correct": "1", "explanation": "Comparing the men to seaweed washed ashore makes them seem stranded and no longer active at sea. This figurative image conveys a loss of former purpose.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-january-q12", "number": 12, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The men are most likely called “survivors” (line 9) because they have", "choices": [{"label": "1", "text": "dominated new competition"}, {"label": "2", "text": "endured past adversity"}, {"label": "3", "text": "settled in new locations"}, {"label": "4", "text": "found safer employment"}], "correct": "2", "explanation": "Their faces were scarred by wind and sun during years of work on boats, and they have outlived a world that was once theirs. “Survivors” suggests they endured that hard past and its changes.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-january-q13", "number": 13, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "The repetition of the word “once” in lines 9 and 18 supports a central idea about", "choices": [{"label": "1", "text": "forgiveness"}, {"label": "2", "text": "regret"}, {"label": "3", "text": "aging"}, {"label": "4", "text": "confusion"}], "correct": "3", "explanation": "“Once” marks what belonged to the men's earlier lives: a working world that was theirs and gulls diving above their boats. The contrast with their present routine centers on aging and change.", "explanationSource": "vine-authored", "readiness": "reviewed"},
+    {"id": "english-2025-january-q14", "number": 14, "sectionSlug": "passage-b", "sourcePage": 7, "prompt": "Which phrase supports a central idea?", "choices": [{"label": "1", "text": "“the cast-iron seat / they called a form” (lines 1 and 2)"}, {"label": "2", "text": "“faces / scarred by wind and sun” (lines 5 and 6)"}, {"label": "3", "text": "“Somewhere in nearby stone cottages” (line 10)"}, {"label": "4", "text": "“Gulls circling and swooping” (line 18)"}], "correct": "2", "explanation": "The weathered faces are visible evidence of the men's years of strenuous work at sea. That image supports the poem's central contrast between an arduous working past and an aging, quieter present.", "explanationSource": "vine-authored", "readiness": "reviewed"}
+  ]
+}

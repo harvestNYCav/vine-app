@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "b660dfadc0d66e6f8f5dfbead13f1e6f7fc6d303a9929c72c5c7c5d4245e2c7d",
+  "questions": {
+    "1": {
+      "prompt": "Which expression equals (x + 3)² + 4(x + 3) − 5?",
+      "choices": ["(x + 5)(x − 1)", "(x + 8)(x + 2)", "(x − 2)(x + 4)", "x² + 4x + 16"],
+      "explanation": "Let u = x + 3. Then u² + 4u − 5 = (u + 5)(u − 1). Replacing u with x + 3 gives (x + 8)(x + 2).",
+      "imageAlt": "The quadratic contains the entire quantity x plus three squared and again multiplied by four, followed by minus five."
+    },
+    "2": {
+      "prompt": "If f(x) = 5/(x − 3) and g(x) = 2(1.3)^x, which listed value is a solution to f(x) = g(x) to the nearest tenth?",
+      "choices": ["3.2", "3.9", "4.0", "5.6"],
+      "explanation": "Solve 5/(x − 3) = 2(1.3)^x numerically on x > 3. The intersection is x ≈ 3.8989, which rounds to 3.9 to the nearest tenth.",
+      "imageAlt": "The first function is five divided by x minus three; the second is two times 1.3 raised to x. The choices are decimal approximations."
+    },
+    "3": {
+      "prompt": "A sinusoidal graph begins at (0, 5), falls to about (1.5, 2), rises to about (4.5, 8), and repeats every 6 units. Which equation matches?",
+      "choices": ["y = −3sin((π/3)x) + 5", "y = −3cos((π/3)x) + 5", "y = −5sin((π/3)x) + 3", "y = −5cos((π/3)x) + 3"],
+      "explanation": "The graph ranges from 2 to 8, giving amplitude 3 and midline 5. Its period is 6, so the coefficient on x is 2π/6 = π/3. At x = 0 it is on the midline and initially decreases, matching negative sine: y = −3sin((π/3)x) + 5.",
+      "imageAlt": "The graphed wave has x-axis from 0 to 12, midline y equals five, lows near x 1.5 and 7.5 at y two, and highs near x 4.5 and 10.5 at y eight."
+    },
+    "4": {
+      "prompt": "Which point is in Quadrant III and solves y = x² − 24 and y = x − 12?",
+      "choices": ["(4, −8)", "(−3, −15)", "(−4, −16)", "(−3, −33)"],
+      "explanation": "At x = −3, the line gives y = −15 and the parabola gives y = 9 − 24 = −15. Both coordinates are negative, so (−3, −15) is in Quadrant III and satisfies both equations.",
+      "imageAlt": "The system includes an upward parabola y equals x squared minus twenty-four and a line y equals x minus twelve. The choices are four ordered pairs."
+    },
+    "5": {
+      "prompt": "For which equations does s = 4 make an identity? I: (2x − 3)² = 4x² − 3sx + 9. II: (x − 2)³ = (x − 2)(x² + sx + s).",
+      "choices": ["I only", "II only", "I and II", "neither I nor II"],
+      "explanation": "Expanding I's left side gives 4x² − 12x + 9; setting s = 4 makes its right side match. For II, (x − 2)³ = (x − 2)(x² − 4x + 4), whereas s = 4 gives x² + 4x + 4 inside the right product. Thus only I is an identity.",
+      "imageAlt": "Two proposed polynomial identities are labeled I and II, both containing parameter s. Their complete equations are transcribed in the accessible prompt."
+    },
+    "6": {
+      "prompt": "A bacteria table has hours since observation 0, 1, 2, 3.5, 4 and counts 40, 48, 57, 75, 82. An exponential model is appropriate. About how many bacteria will there be at hour 8?",
+      "choices": ["123", "127", "168", "180"],
+      "explanation": "The count approximately doubles from 40 at hour 0 to 82 at hour 4. Continuing a similar four-hour growth factor gives about 82·(82/40) ≈ 168 at hour 8; exponential regression also predicts about 168.",
+      "imageAlt": "The table pairs times 0, 1, 2, 3.5, 4 hours with counts 40, 48, 57, 75, 82 bacteria, respectively."
+    },
+    "7": {
+      "prompt": "Factor completely x⁴ + 4x³ − 9x² − 36x.",
+      "choices": ["x(x + 9)(x − 9)(x + 4)", "x(x + 3)(x − 3)(x + 4)", "(x³ − 9x)(x + 4)", "x(x² − 9)(x + 4)(x + 4)"],
+      "explanation": "Factor out x, then group: x[x²(x + 4) − 9(x + 4)] = x(x + 4)(x² − 9). The difference of squares x² − 9 = (x + 3)(x − 3) gives the complete product.",
+      "imageAlt": "The polynomial is x to the fourth plus four x cubed minus nine x squared minus thirty-six x."
+    },
+    "8": {
+      "prompt": "What is the solution set of x + 1 = √(4x + 25)?",
+      "choices": ["{}", "{6}", "{6, −4}", "{−4}"],
+      "explanation": "Squaring both sides gives (x + 1)² = 4x + 25, or x² − 2x − 24 = 0 = (x − 6)(x + 4). Check in the original: x = 6 gives 7 = √49, but x = −4 gives −3 = √9, which is false. Only 6 remains.",
+      "imageAlt": "The left side is x plus one; the square-root bar on the right covers four x plus twenty-five."
+    },
+    "9": {
+      "prompt": "An upward-opening parabola has its minimum below the x-axis at about y = −4. Which translation gives it no real x-intercepts?",
+      "choices": ["f(x + 5)", "f(x − 5)", "f(x) + 5", "f(x) − 5"],
+      "explanation": "Horizontal shifts f(x + 5) and f(x − 5) do not change the parabola's minimum height, so it still crosses the x-axis. Shifting the minimum up by 5 moves it above zero, so f(x) + 5 has no real zeros and its quadratic roots are nonreal.",
+      "imageAlt": "The original parabola opens upward, crosses the x-axis twice, and has a vertex about four units below the x-axis. The four choices shift it horizontally or vertically by five units."
+    },
+    "10": {
+      "prompt": "Solve 3x² − 4x + 2 = 2x − 3.",
+      "choices": ["2/3 ± (√2/3)i", "1 ± (√6/3)i", "1 ± √12/3", "1 ± 2√6 i"],
+      "explanation": "Rearrange to 3x² − 6x + 5 = 0. The discriminant is (−6)² − 4(3)(5) = −24. The quadratic formula gives x = [6 ± √(−24)]/6 = 1 ± (√6/3)i.",
+      "imageAlt": "A quadratic equation has three x squared minus four x plus two on the left and two x minus three on the right. The choices offer real or complex pairs."
+    },
+    "11": {
+      "prompt": "A culture begins with 1,000 bacteria and triples every 10 hours. Which expression models its count after t hours?",
+      "choices": ["1000e^(3t)", "1000(3)^t", "1000(3)^(10t)", "1000(3)^(t/10)"],
+      "explanation": "The exponent must count the number of ten-hour periods elapsed, which is t/10. Starting at 1,000 and multiplying by 3 for each such period gives 1000·3^(t/10).",
+      "imageAlt": "The initial count is one thousand, and a factor of three applies once per ten hours. The choices have different bases and exponents."
+    },
+    "12": {
+      "prompt": "An initial $5,000 investment earns 3.5% annual interest. Which recursive model gives its value after n years?",
+      "choices": ["A = 5000(0.035)^n", "a₀ = 5000; aₙ = 0.035aₙ₋₁", "A = 5000(1.035)^n", "a₀ = 5000; aₙ = 1.035aₙ₋₁"],
+      "explanation": "An annual increase of 3.5% multiplies the previous balance by 1 + 0.035 = 1.035. A recursive model starts with a₀ = 5000 and uses aₙ = 1.035aₙ₋₁ each year. Choice 3 is an explicit, not recursive, model.",
+      "imageAlt": "The problem asks for a recursive interest model; two choices are explicit powers and two give an initial value plus recurrence."
+    },
+    "13": {
+      "prompt": "Simplify 2xy²∛(x²y).",
+      "choices": ["2x^(5/3)y^(7/3)", "2xy", "2x^(2/3)y^(2/3)", "2x⁷y⁴"],
+      "explanation": "The cube root contributes x^(2/3)y^(1/3). Multiplying by 2xy² adds exponents: x^(1 + 2/3)y^(2 + 1/3) = x^(5/3)y^(7/3), with coefficient 2.",
+      "imageAlt": "Two x y squared is multiplied by the cube root of the entire product x squared y."
+    },
+    "14": {
+      "prompt": "For k(x) = −2x³ − 11x² − 12x + 9, assess I: x − 3 is a factor; II: k(0) = 9; III: division by x + 2 has remainder 5. Which statements are true?",
+      "choices": ["II only", "I and II", "II and III", "I, II, and III"],
+      "explanation": "k(0) = 9, so II is true. By the remainder theorem, k(−2) = 16 − 44 + 24 + 9 = 5, so III is true. But k(3) = −180, not zero, so x − 3 is not a factor and I is false.",
+      "imageAlt": "The cubic polynomial and all three claims about its factors, value at zero, and remainder are transcribed in the prompt."
+    },
+    "15": {
+      "prompt": "Kole plans to spend A(t) = 150(1.02)^t minutes at the gym t weeks from now. Which equivalent model uses a daily growth factor?",
+      "choices": ["A(t) = 150(1.14869)^(t/7)", "A(t) = 150(1.14869)^(7t)", "A(t) = 150(1.00283)^(t/7)", "A(t) = 150(1.00283)^(7t)"],
+      "explanation": "The daily factor is the seventh root of the weekly factor: 1.02^(1/7) ≈ 1.00283. In t weeks there are 7t days, so A(t) ≈ 150(1.00283)^(7t).",
+      "imageAlt": "The original model is 150 times 1.02 to the t power, with t measured in weeks. The alternatives use daily factors 1.14869 or 1.00283 and exponents t over seven or seven t."
+    },
+    "16": {
+      "prompt": "On a test, 49% of Mr. Zachary's students both used Betamath and passed, and 68% used Betamath. Approximately what percent passed given that they used Betamath?",
+      "choices": ["19%", "32%", "33%", "72%"],
+      "explanation": "Conditional probability divides the joint percentage by the conditioning percentage: P(passed | used) = 0.49/0.68 ≈ 0.7206, or approximately 72%.",
+      "imageAlt": "The joint used-and-passed percentage is forty-nine percent, and the overall used-Betamath percentage is sixty-eight percent."
+    },
+    "17": {
+      "prompt": "Given sin θ = 7/25 and θ terminates in Quadrant II, what is tan θ?",
+      "choices": ["−7/24", "−24/7", "7/24", "24/7"],
+      "explanation": "With opposite side 7 and hypotenuse 25, the adjacent magnitude is √(25² − 7²) = 24. In Quadrant II the adjacent x-coordinate is negative, so tan θ = opposite/adjacent = −7/24.",
+      "imageAlt": "Sine is positive seven over twenty-five, and the angle lies in the second quadrant. The choices are positive or negative ratios of seven and twenty-four."
+    },
+    "18": {
+      "prompt": "A store has 49 workers whose ages are approximately normal with mean 36 years and standard deviation 6.2 years. About how many workers are younger than 30-year-old Ryan?",
+      "choices": ["17", "7", "41", "8"],
+      "explanation": "Ryan's age has z-score (30 − 36)/6.2 ≈ −0.968. The standard-normal proportion below this is about 0.167. Multiplying by 49 workers gives about 8.2, so approximately 8 workers are younger.",
+      "imageAlt": "A normal-age problem gives forty-nine workers, mean age thirty-six, standard deviation 6.2, and comparison age thirty."
+    },
+    "19": {
+      "prompt": "For d(x) = ∛(x + 2), what is d⁻¹(x)?",
+      "choices": ["∛(x + 2)", "x³ + 2", "−∛(x + 2)", "x³ − 2"],
+      "explanation": "Set y = ∛(x + 2), swap x and y, and cube: x³ = y + 2. Therefore y = x³ − 2 is the inverse.",
+      "imageAlt": "The cube-root bar covers the entire quantity x plus two. The question asks for the inverse function."
+    },
+    "20": {
+      "prompt": "Given f(x) = x⁴ + x³ − 3x² + 9x − 108 and f(3) = 0, which values satisfy f(x) = 0?",
+      "choices": ["−4 and 3 only", "−3 and 4 only", "±3i, −4, and 3", "±3i, −3, and 4"],
+      "explanation": "The polynomial factors as (x + 4)(x − 3)(x² + 9): multiplying the first two gives x² + x − 12, and then multiplying by x² + 9 reproduces f(x). Its roots are −4, 3, and x² = −9, giving ±3i.",
+      "imageAlt": "A fourth-degree polynomial has leading terms x to the fourth plus x cubed, followed by minus three x squared plus nine x minus one hundred eight. The value at x equals three is zero."
+    },
+    "21": {
+      "prompt": "Profit equals revenue minus cost. If p(x) = −15x² + 600x + 60 and r(x) = −0.4x² + 130x + 1200, what is c(x)?",
+      "choices": ["c(x) = −14.6x² + 470x − 1140", "c(x) = −14.6x² + 730x − 1260", "c(x) = 14.6x² − 470x + 1140", "c(x) = 14.6x² + 730x − 1260"],
+      "explanation": "Since p = r − c, rearrange to c = r − p. Subtract coefficients: (−0.4 + 15)x² + (130 − 600)x + (1200 − 60) = 14.6x² − 470x + 1140.",
+      "imageAlt": "The revenue and profit functions are quadratic polynomials with different leading coefficients, linear coefficients, and constants."
+    },
+    "22": {
+      "prompt": "What is the remainder when 4x³ − 3x + 3 is divided by x − 2?",
+      "choices": ["−23", "−7", "13", "29"],
+      "explanation": "By the remainder theorem, the remainder on division by x − 2 is f(2) = 4(2³) − 3(2) + 3 = 32 − 6 + 3 = 29.",
+      "imageAlt": "The cubic dividend is four x cubed minus three x plus three; the divisor is x minus two."
+    },
+    "23": {
+      "prompt": "Which statement is true for the parabola (x − 4)² = 12(y + 1)?",
+      "choices": ["Its vertex is (4, 2).", "Its focus is (4, −1).", "Its directrix is y = −4.", "The focus and vertex are four units apart."],
+      "explanation": "Compare with (x − h)² = 4p(y − k): the vertex is (4, −1), and 4p = 12 gives p = 3. The focus is (4, 2), three units from the vertex, and the directrix is y = −1 − 3 = −4.",
+      "imageAlt": "The parabola equation has x minus four squared equal to twelve times y plus one. The choices describe vertex, focus, directrix, or their separation."
+    },
+    "24": {
+      "prompt": "Jay rode 10 miles in the first week of a 15-week bike-training plan and increases his weekly distance by 9% each week. Approximately how many miles will he ride in total through week 15?",
+      "choices": ["10.989", "33.417", "163.5", "293.609"],
+      "explanation": "Weekly distances form a geometric sequence with first term 10, common ratio 1.09, and 15 terms. The total is 10[(1.09)^15 − 1]/0.09 ≈ 293.609 miles.",
+      "imageAlt": "The first week's distance is ten miles, each subsequent week's distance is nine percent greater, and the total spans fifteen weeks."
+    }
+  }
+}

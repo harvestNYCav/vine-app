@@ -1,0 +1,52 @@
+{
+  "sections": [{
+    "slug": "passage-b",
+    "title": "Reading Comprehension · Passage B",
+    "intro": "Read “Monologue for an Onion” and answer questions 10–14.",
+    "questionIds": ["english-2015-august-q10", "english-2015-august-q11", "english-2015-august-q12", "english-2015-august-q13", "english-2015-august-q14"],
+    "passage": {
+      "title": "Monologue for an Onion",
+      "credit": "—Suji Kwock Kim · Notes from the Divided Country, 2003 · Louisiana State University Press",
+      "transcriptReviewStatus": "reviewed",
+      "lines": [
+        {"number": 1, "text": "I don’t mean to make you cry."},
+        {"number": 2, "text": "I mean nothing, but this has not kept you"},
+        {"number": 3, "text": "From peeling away my body, layer by layer,"},
+        {"number": 4, "text": "The tears clouding your eyes as the table fills"},
+        {"number": 5, "text": "With husks, cut flesh, all the debris of pursuit."},
+        {"number": 6, "text": "Poor deluded human: you seek my heart."},
+        {"number": 7, "text": "Hunt all you want. Beneath each skin of mine"},
+        {"number": 8, "text": "Lies another skin: I am pure onion—pure union"},
+        {"number": 9, "text": "Of outside and in, surface and secret core."},
+        {"number": 10, "text": "Look at you, chopping and weeping. Idiot."},
+        {"number": 11, "text": "Is this the way you go through life, your mind"},
+        {"number": 12, "text": "A stopless knife, driven by your fantasy of truth,"},
+        {"number": 13, "text": "Of lasting union—slashing away skin after skin"},
+        {"number": 14, "text": "From things, ruin and tears your only signs"},
+        {"number": 15, "text": "Of progress? Enough is enough."},
+        {"number": 16, "text": "You must not grieve that the world is glimpsed"},
+        {"number": 17, "text": "Through veils. How else can it be seen?"},
+        {"number": 18, "text": "How will you rip away the veil of the eye, the veil"},
+        {"number": 19, "text": "That you are, you who want to grasp the heart"},
+        {"number": 20, "text": "Of things, hungry to know where meaning"},
+        {"number": 21, "text": "Lies. Taste what you hold in your hands: onion-juice,"},
+        {"number": 22, "text": "Yellow peels, my stinging shreds. You are the one"},
+        {"number": 23, "text": "In pieces. Whatever you meant to love, in meaning to"},
+        {"number": 24, "text": "You changed yourself: you are not who you are,"},
+        {"number": 25, "text": "Your soul cut moment to moment by a blade"},
+        {"number": 26, "text": "Of fresh desire, the ground sown with abandoned skins."},
+        {"number": 27, "text": "And at your inmost circle, what? A core that is"},
+        {"number": 28, "text": "Not one. Poor fool, you are divided at the heart,"},
+        {"number": 29, "text": "Lost in its maze of chambers, blood, and love,"},
+        {"number": 30, "text": "A heart that will one day beat you to death."}
+      ]
+    }
+  }],
+  "questions": [
+    {"id":"english-2015-august-q10","number":10,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The phrase “poor deluded human” (line 6) conveys a sense of","choices":[{"label":"1","text":"compassion"},{"label":"2","text":"fear"},{"label":"3","text":"loneliness"},{"label":"4","text":"shyness"}],"correct":"1","explanation":"The onion pities the human who thinks peeling away layers will uncover a hidden heart. Calling that person “poor” conveys compassion for the misguided search, even as the poem later becomes sharper.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-august-q11","number":11,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The search suggested in lines 6 and 7 can best be described as","choices":[{"label":"1","text":"boring"},{"label":"2","text":"simple"},{"label":"3","text":"futile"},{"label":"4","text":"brief"}],"correct":"3","explanation":"The human seeks the onion’s “heart,” but the onion says that beneath each skin lies another skin (lines 6–9). The search for a separate hidden core is futile.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-august-q12","number":12,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The shift in line 10 indicates a transition in tone that can best be described as","choices":[{"label":"1","text":"sympathetic to critical"},{"label":"2","text":"humorous to angry"},{"label":"3","text":"hopeful to cruel"},{"label":"4","text":"admiring to fearful"}],"correct":"1","explanation":"The opening addresses the human as “poor deluded,” suggesting pity. At line 10, “Look at you, chopping and weeping. Idiot” turns to direct criticism of the human’s behavior.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-august-q13","number":13,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The narrator’s references to veils (lines 17 and 18) remind the reader of the need for","choices":[{"label":"1","text":"caution"},{"label":"2","text":"secrecy"},{"label":"3","text":"clarity"},{"label":"4","text":"investigation"}],"correct":"3","explanation":"The onion asks how the world could be seen without veils and even calls the eye itself a veil. The image urges clarity about the limits of perception rather than endlessly tearing away layers.","explanationSource":"vine-authored","readiness":"reviewed"},
+    {"id":"english-2015-august-q14","number":14,"sectionSlug":"passage-b","sourcePage":6,"prompt":"The phrase “onion-juice” (line 21) contributes to the narrator’s purpose by","choices":[{"label":"1","text":"demonstrating that self-reflection is satisfying"},{"label":"2","text":"implying that the search for identity is noble"},{"label":"3","text":"observing that experimentation is often dangerous"},{"label":"4","text":"suggesting that the quest for truth is harsh"}],"correct":"4","explanation":"The person seeking a core has only stinging onion juice, peels, and shreds in hand (lines 21–23). Those harsh physical results mirror the pain of an obsessive quest for ultimate truth.","explanationSource":"vine-authored","readiness":"reviewed"}
+  ]
+}

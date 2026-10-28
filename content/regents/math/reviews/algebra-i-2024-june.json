@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "91ad1edc27d7e53aa9b073e0a0bac55c207b9fcc65abdfed06fa3a0f20198a47",
+  "questions": {
+    "1": {
+      "prompt": "A ball's height above the ground at times 0, 1, 2, 3, and 4 seconds was 11, 59, 75, 59, and 11 feet, respectively. Which conclusion is valid?",
+      "choices": ["The ball lands on the ground at 4 seconds.", "The ball reaches a maximum height of 11 feet.", "The ball was launched from a height of 0 feet.", "The ball reaches its maximum height at 2 seconds."],
+      "explanation": "The greatest recorded height is 75 feet, and it occurs at t = 2 seconds. The heights at t = 0 and 4 are 11 feet, so the other statements are contradicted by the table.",
+      "imageAlt": "Time-height table pairs (0,11),(1,59),(2,75),(3,59),(4,11) and all four conclusions are transcribed."
+    },
+    "2": {
+      "prompt": "A tour bus seats at most 48 passengers. Adult tickets cost $18 and child tickets $12. The company must collect at least $650 to make a profit. With a adults and c children, which system models this?",
+      "choices": ["a + c < 48; 18a + 12c > 650", "a + c ≤ 48; 18a + 12c ≥ 650", "a + c < 48; 18a + 12c < 650", "a + c ≤ 48; 18a + 12c ≤ 650"],
+      "explanation": "'At most 48' includes 48, so a + c ≤ 48. Revenue is 18a + 12c, and 'at least $650' includes 650, giving 18a + 12c ≥ 650.",
+      "imageAlt": "Passenger and revenue inequalities for all four systems are transcribed with strict or inclusive inequality signs."
+    },
+    "3": {
+      "prompt": "Which equation is always true?",
+      "choices": ["x² · x³ = x⁵", "3^x · 3² = 9^(2x)", "−z² = z²", "7^a · 7^b = 7^(ab)"],
+      "explanation": "For powers with the same base, multiplying adds the exponents: x² · x³ = x^(2+3) = x⁵. The other equations do not follow exponent rules for every value of their variables.",
+      "imageAlt": "Four candidate algebraic identities are transcribed with exponents, multiplication dots, and negative sign placement."
+    },
+    "4": {
+      "prompt": "The expression −2(x² − 2x + 1) + (3x² + 3x − 5) is equivalent to",
+      "choices": ["x² + x − 4", "x² − x − 7", "x² + 7x − 4", "x² + 7x − 7"],
+      "explanation": "Distribute −2 to get −2x² + 4x − 2, then add 3x² + 3x − 5. Combining like terms gives x² + 7x − 7.",
+      "imageAlt": "Full parenthesized polynomial expression and four signed trinomials are transcribed."
+    },
+    "5": {
+      "prompt": "Which sum is irrational?",
+      "choices": ["−2√12 + √100", "−√4 + (1/3)√900", "(1/2)√25 + √64", "√49 + 3√121"],
+      "explanation": "−2√12 + √100 = −4√3 + 10, which remains irrational because √3 is irrational. In the other sums, every radical simplifies to an integer, so their sums are rational.",
+      "imageAlt": "Four radical sums are fully transcribed with coefficients, fractional one-third and one-half factors, and radicands."
+    },
+    "6": {
+      "prompt": "The solution to 4(x − 5)/3 + 2 = 14 is",
+      "choices": ["15", "14", "6", "4"],
+      "explanation": "Subtract 2 to get 4(x − 5)/3 = 12. Multiply by 3/4: x − 5 = 9, so x = 14.",
+      "imageAlt": "Equation has numerator four times (x minus 5) over denominator 3, then plus 2 equals 14; all four choices are transcribed."
+    },
+    "7": {
+      "prompt": "On an island, a rare breed of rabbit doubled its population each month for two years. Which type of function best models the increase?",
+      "choices": ["linear growth", "linear decay", "exponential growth", "exponential decay"],
+      "explanation": "Doubling multiplies the population by 2 each month. Repeated multiplication by a factor above 1 is exponential growth.",
+      "imageAlt": "Monthly population doubling and all four growth-or-decay function types are transcribed."
+    },
+    "8": {
+      "prompt": "What is the degree of 2x − x² + 4x³?",
+      "choices": ["1", "2", "3", "4"],
+      "explanation": "The degree is the greatest exponent appearing in the polynomial. The term 4x³ has exponent 3, so the degree is 3.",
+      "imageAlt": "Three polynomial terms with exponents one, two, and three, plus all numeric choices, are transcribed."
+    },
+    "9": {
+      "prompt": "The zeros of f(x) = x(x − 5)(3x + 6) are",
+      "choices": ["0, −5, and 2", "0, 5, and −2", "−5 and 2, only", "5 and −2, only"],
+      "explanation": "Set each factor equal to zero: x = 0, x − 5 = 0 gives x = 5, and 3x + 6 = 0 gives x = −2. All three are zeros.",
+      "imageAlt": "Factored polynomial and each signed zero set, including whether zero is included, are transcribed."
+    },
+    "10": {
+      "prompt": "What is the y-intercept of the line through (−1, 5) and (2, −1)?",
+      "choices": ["−1", "−2", "3", "5"],
+      "explanation": "Slope m = (−1 − 5)/(2 − (−1)) = −6/3 = −2. In y = −2x + b, point (−1,5) gives 5 = 2 + b, so b = 3.",
+      "imageAlt": "Both signed ordered pairs and four intercept values are transcribed."
+    },
+    "11": {
+      "prompt": "Nancy compares four annual salary plans, in thousands of dollars, for her eighth year after being hired: a(t)=2^t+25; b(t)=10t+75; c(t)=√(400t)+80; d(t)=2(t+1)²−10t+50. Which plan gives the highest salary in year eight?",
+      "choices": ["a(t)", "b(t)", "c(t)", "d(t)"],
+      "explanation": "At t = 8, a(8)=2⁸+25=281 thousand dollars; b(8)=155; c(8)=√3200+80≈136.6; and d(8)=2(9)²−80+50=132. Plan a is highest.",
+      "imageAlt": "All four salary formulas are transcribed in the prompt, preserving the exponent on 2, the radical over 400t, and the squared (t+1) term."
+    },
+    "12": {
+      "prompt": "The third term of a sequence is 25 and the fifth is 625. Which number could be its common ratio?",
+      "choices": ["1/5", "5", "1/25", "25"],
+      "explanation": "Two ratio steps take term 3 to term 5, so 25r² = 625. Thus r² = 25, and r could be 5 (or −5, which is not listed).",
+      "imageAlt": "Third term 25, fifth term 625, and all four fractional or whole-number ratios are transcribed."
+    },
+    "13": {
+      "prompt": "A box plot summarizes snowfall amounts in inches for 12 western New York locations during winter 2021. What is the interquartile range?",
+      "choices": ["30", "50", "80", "110"],
+      "explanation": "The box begins at Q1 = 60 inches and ends at Q3 = 110 inches. The interquartile range is Q3 − Q1 = 110 − 60 = 50 inches.",
+      "imageAlt": "Snowfall box plot on 0-to-140-inch axis: minimum 50, first quartile 60, median 80, third quartile 110, maximum 120 inches."
+    },
+    "14": {
+      "prompt": "Four quadratic functions are represented by a formula, graph, formula, and table. Which has the smallest minimum value?",
+      "choices": ["I: a(x) = (x − 3)² − 7", "II: graph of b(x), an upward parabola with vertex (1, −4)", "III: c(x) = x² + 6x + 3", "IV: table d(x) with pairs (−4,−1), (−3,−4), (−2,−5), (−1,−4), (0,−1)"],
+      "explanation": "Function I has vertex-form minimum −7. Function II's graph has minimum −4. Completing the square for III gives (x+3)²−6, minimum −6. The IV table has minimum −5. The smallest is −7 from I.",
+      "imageAlt": "All four representations are transcribed in the choices, including b's graph vertex and every d-table pair."
+    },
+    "15": {
+      "prompt": "Which equation represents the sequence −2, −5, −8, −11, −14, ...?",
+      "choices": ["aₙ = −3 + (−2)(n − 1)", "aₙ = −2 + (−3)(n − 1)", "aₙ = 3 + (−2)(n − 1)", "aₙ = −2 + 3(n − 1)"],
+      "explanation": "The sequence begins at −2 and decreases by 3 each term, so its arithmetic formula is aₙ = a₁ + d(n−1) = −2 + (−3)(n−1).",
+      "imageAlt": "Five signed sequence terms and four nth-term formulas are transcribed with n-minus-one grouping."
+    },
+    "16": {
+      "prompt": "A dot plot shows the goals Jessica scored per lacrosse game. Which statement about the data is correct?",
+      "choices": ["mean > mode", "mean = median", "mode = median", "median > mean"],
+      "explanation": "The dot counts for 0 through 6 goals are 3, 3, 4, 5, 2, 2, 1, totaling 20 games. Their sum is 50 goals, so the mean is 50/20 = 2.5. The 10th value is 2 and the 11th is 3, so the median is also 2.5; the mode is 3.",
+      "imageAlt": "Dot plot counts at goals 0,1,2,3,4,5,6 are 3,3,4,5,2,2,1 respectively; all comparison statements are transcribed."
+    },
+    "17": {
+      "prompt": "Students compare g(x)=2(x−3)² with f(x)=x². Which description is correct?",
+      "choices": ["Ashley: g is wider and shifted left 3 units.", "Beth: g is narrower and shifted left 3 units.", "Carl: g is wider and shifted right 3 units.", "Don: g is narrower and shifted right 3 units."],
+      "explanation": "Replacing x with x−3 shifts the parabola right 3 units. Multiplying by 2 vertically stretches it, making it narrower than y=x². Don describes both changes correctly.",
+      "imageAlt": "Both quadratic formulas and the four student statements are transcribed, including left/right and wider/narrower distinctions."
+    },
+    "18": {
+      "prompt": "A graph models Dave's bike ride in miles traveled versus hours. What was his average rate of change over the entire trip, in miles per hour?",
+      "choices": ["10", "11", "11.6", "14.5"],
+      "explanation": "The trip begins at (0 hours, 0 miles) and ends at about (5.5 hours, 55 miles). Average rate of change uses those endpoints: (55−0)/(5.5−0) = 10 miles per hour.",
+      "imageAlt": "Distance-time graph begins at (0,0), passes approximately through (0.5,5),(1,20),(2.5,35),(3,35), and ends at (5.5,55). It has a flat segment from 2.5 to 3 hours."
+    },
+    "19": {
+      "prompt": "Which expression is equivalent to (x − 5)(2x + 7) − (x + 5)?",
+      "choices": ["2x² − 2x − 30", "2x² − 2x − 40", "2x² − 4x − 30", "2x² − 4x − 40"],
+      "explanation": "Expand the product: (x−5)(2x+7)=2x²−3x−35. Subtract x+5 to obtain 2x²−4x−40.",
+      "imageAlt": "Parenthesized product and subtraction, plus all four quadratic result choices, are transcribed."
+    },
+    "20": {
+      "prompt": "Functions f(x) and g(x) are graphed. What are the solutions to f(x)=g(x)?",
+      "choices": ["1 and 5", "−5 and 0", "−3 and 5", "0 and 4"],
+      "explanation": "The solutions are the x-coordinates where the upward parabola and rising line intersect. Reading the two intersection points from the graph gives x = 1 and x = 5.",
+      "imageAlt": "An upward-opening parabola and an increasing straight line cross twice, at x=1 (below the x-axis) and x=5 (above it)."
+    },
+    "21": {
+      "prompt": "Nicole charges for babysitting using C(h)=6h+5, with an hourly rate and an additional gas charge. What does the constant term represent?",
+      "choices": ["the additional charge for gas", "the hourly rate Nicole charges", "the number of hours Nicole babysits", "the total Nicole earns from babysitting"],
+      "explanation": "The constant term 5 is charged even when h=0, so it is the fixed additional gas charge. The coefficient 6 is the hourly rate.",
+      "imageAlt": "Cost function C(h)=6h+5 and all four interpretations are transcribed."
+    },
+    "22": {
+      "prompt": "Solve 3x − 7 = ax + 5 for x in terms of a.",
+      "choices": ["12/(3a)", "12/(3−a)", "3a/12", "(3−a)/12"],
+      "explanation": "Collect x terms on one side: (3−a)x = 12. For a≠3, divide by 3−a to obtain x=12/(3−a).",
+      "imageAlt": "Equation 3x minus 7 equals ax plus 5 and all four algebraic fraction choices are transcribed with denominator grouping."
+    },
+    "23": {
+      "prompt": "Wayde van Niekerk ran 400 meters in 43.03 seconds. Which calculation gives his average speed in miles per hour, using 0.62 miles per 1000 meters?",
+      "choices": ["(400 m/43.03 sec)·(1000 m/0.62 mi)·(1 hr/3600 sec)", "(400 m/43.03 sec)·(0.62 mi/1000 m)·(1 hr/3600 sec)", "(400 m/43.03 sec)·(0.62 mi/1000 m)·(3600 sec/1 hr)", "(400 m/43.03 sec)·(1000 m/0.62 mi)·(3600 sec/1 hr)"],
+      "explanation": "Start with 400 m per 43.03 sec. Multiply by 0.62 mi/1000 m to cancel meters, then 3600 sec/1 hr to cancel seconds. The remaining units are miles per hour.",
+      "imageAlt": "All four conversion products are transcribed with 400-meter distance, 43.03-second time, 0.62-mile-per-1000-meter conversion, and 3600-second hour."
+    },
+    "24": {
+      "prompt": "Which function has domain all real numbers and range y≥3?",
+      "choices": ["f(x)=−x+3", "g(x)=x²+3", "h(x)=3^x", "m(x)=|x+3|"],
+      "explanation": "The square x² is nonnegative for every real x, so x²+3 is at least 3 and equals 3 at x=0. The line has all-real range, 3^x has positive values below 3, and |x+3| can be 0.",
+      "imageAlt": "Four function formulas are transcribed, including the negative linear coefficient, squared term, exponent x, and absolute-value bars."
+    }
+  }
+}
