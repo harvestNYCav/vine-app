@@ -3,10 +3,22 @@
 import unittest
 from types import SimpleNamespace
 
-from scripts.regents_math_import import QuestionMarker, image_crop_box
+from scripts.regents_math_import import ImportFailure, QuestionMarker, image_crop_box, validate_image_alt
 
 
 class CropBoxTests(unittest.TestCase):
+    def test_descriptions_reject_answer_judgments_but_allow_neutral_choices(self):
+        for text in (
+            "Choice four introduces an unjustified negative sign.",
+            "The first choice incorrectly names y equals zero as its asymptote.",
+            "Only choice four has a negative time exponent.",
+            "The correct answer is choice two.",
+        ):
+            with self.subTest(text=text), self.assertRaises(ImportFailure):
+                validate_image_alt(text)
+        validate_image_alt("Choice 1 is a square; choice 2 is a triangle. Both are drawn without measurements.")
+        validate_image_alt("The image-only choices show four different solid shapes.")
+
     def test_roman_numeral_statement_does_not_end_question(self):
         page = SimpleNamespace(
             height=800,

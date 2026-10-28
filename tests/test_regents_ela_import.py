@@ -6,6 +6,8 @@ import copy
 import importlib.util
 import json
 import unittest
+import tempfile
+from unittest.mock import patch
 from pathlib import Path
 
 
@@ -177,6 +179,27 @@ class RegentsElaImportTests(unittest.TestCase):
         answers[10] = "2"
         with self.assertRaisesRegex(regents_ela_import.ImportErrorWithContext, "official key"):
             regents_ela_import._apply_review(exam, answers)
+
+    def test_catalog_matches_reviewed_overlays_including_paragraph_breaks(self) -> None:
+        for source in self.sources:
+            exam = next(exam for exam in self.catalog if exam["id"] == "english-" + source["slug"])
+            answers = {q["number"]: q["correct"] for q in exam["questions"]}
+            rebuilt = regents_ela_import._apply_review(regents_ela_import._pending_exam(source, answers), answers)
+            self.assertEqual(rebuilt, exam, source["slug"])
+
+    def test_paragraph_questions_cannot_publish_a_flattened_passage(self) -> None:
+        source = next(source for source in self.sources if source["slug"] == "2025-june")
+        exam = next(exam for exam in self.catalog if exam["id"] == "english-2025-june")
+        answers = {q["number"]: q["correct"] for q in exam["questions"]}
+        review = json.loads((regents_ela_import.REVIEWS_DIR / "fragments/2025-june-a.json").read_text())
+        passage = review["sections"][0]["passage"]
+        passage["lines"] = [line for line in passage["lines"] if line["text"].strip()]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "2025-june.json").write_text(json.dumps(review))
+            with patch.object(regents_ela_import, "REVIEWS_DIR", root):
+                with self.assertRaisesRegex(regents_ela_import.ImportErrorWithContext, "paragraph boundaries"):
+                    regents_ela_import._apply_review(regents_ela_import._pending_exam(source, answers), answers)
 
 
 if __name__ == "__main__":

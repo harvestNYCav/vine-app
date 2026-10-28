@@ -77,7 +77,7 @@
       "prompt": "A parabola has directrix y = 3 and vertex (2, 1). Which point is its focus?",
       "choices": ["(2, −1)", "(2, 0)", "(2, 2)", "(2, 5)"],
       "explanation": "The vertex is two units below the horizontal directrix. The focus must be two units on the opposite side of the vertex along x = 2, at (2, −1).",
-      "imageAlt": "The horizontal directrix is at y equals three, while the vertex is two comma one, so the parabola opens downward."
+      "imageAlt": "The directrix is the horizontal line y = 3, and the vertex is (2, 1). Four proposed focus coordinates are transcribed below."
     },
     "14": {
       "prompt": "Heights of 3,300 students are approximately normal with mean 65.5 inches and standard deviation 2.9 inches. About how many are between 64 and 68 inches?",
@@ -101,7 +101,7 @@
       "prompt": "What is the inverse of f(x) = −6x + 1/2?",
       "choices": ["f⁻¹(x) = 6x − 1/2", "f⁻¹(x) = 1/(−6x + 1/2)", "f⁻¹(x) = −x/6 + 1/12", "f⁻¹(x) = −x/6 + 2"],
       "explanation": "From y = −6x + 1/2, solve x = (1/2 − y)/6 = 1/12 − y/6. Swap variable names to get f⁻¹(x) = −x/6 + 1/12.",
-      "imageAlt": "The function is linear with slope negative six and y-intercept one-half. One distractor takes a reciprocal instead of finding the inverse."
+      "imageAlt": "The function is f(x) = −6x + 1/2. All four proposed inverse expressions are transcribed below."
     },
     "18": {
       "prompt": "Which expression equals (x² + 12)/(x² + 3)?",

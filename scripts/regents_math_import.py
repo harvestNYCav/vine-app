@@ -435,6 +435,17 @@ def render_question_images(
     return result
 
 
+def validate_image_alt(image_alt: str) -> None:
+    # Catch explicit answer judgments, not ordinary diagram/choice descriptions.
+    # This is a backstop, not a substitute for reviewing derived-value hints.
+    if re.search(
+        r"\b(?:incorrect(?:ly)?|unjustified)\b|(?<![\w-])only choices?\b|"
+        r"\b(?:keyed|correct) (?:answer|choice)\b",
+        image_alt, re.I,
+    ):
+        raise ImportFailure("Image description reveals answer reasoning")
+
+
 def apply_review_overlay(exam: dict, *, reviews_root: Path) -> None:
     path = reviews_root / f"{exam['slug']}.json"
     if not path.is_file():
@@ -464,6 +475,7 @@ def apply_review_overlay(exam: dict, *, reviews_root: Path) -> None:
         ):
             raise ImportFailure(f"Incomplete review for question {raw_number} in {path}")
         question = by_number[int(raw_number)]
+        validate_image_alt(image_alt)
         question["prompt"] = prompt.strip()
         question["choices"] = [
             {"label": str(index), "text": choice.strip()}

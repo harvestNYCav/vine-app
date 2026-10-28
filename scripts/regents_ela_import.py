@@ -262,6 +262,16 @@ def _apply_review(exam: dict[str, Any], answers: dict[int, str]) -> dict[str, An
         numbered = [line["number"] for line in passage["lines"] if line["number"] is not None]
         if numbered != list(range(1, len(numbered) + 1)):
             raise ImportErrorWithContext(f"Reviewed passage line numbers not sequential: {path}")
+        refers_to_paragraphs = any(
+            question["sectionSlug"] == section["slug"]
+            and re.search(r"\bparagraphs?\b", question["prompt"], re.I)
+            for question in questions
+        )
+        if refers_to_paragraphs:
+            numbered_positions = [i for i, line in enumerate(passage["lines"]) if line["number"] is not None]
+            body = passage["lines"][numbered_positions[0]:numbered_positions[-1] + 1] if numbered_positions else []
+            if not any(not line["text"].strip() for line in body):
+                raise ImportErrorWithContext(f"Reviewed passage missing paragraph boundaries: {path}")
     section_by_id = {section["slug"]: set(section["questionIds"]) for section in sections}
     if any(question["id"] not in section_by_id.get(question["sectionSlug"], set()) for question in questions):
         raise ImportErrorWithContext(f"Question section slug disagrees with its assignment: {path}")

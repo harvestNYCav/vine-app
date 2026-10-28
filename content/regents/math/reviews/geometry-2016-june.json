@@ -17,7 +17,7 @@
       "prompt": "Kevin starts with x²+4x = −(y²−20). His steps are: 1, x²+4x = −y²+20; 2, x²+4x+4 = −y²+20−4; 3, (x+2)² = −y²+20−4; 4, (x+2)²+y² = 16. In which step did he first make an error?",
       "choices": ["Step 1", "Step 2", "Step 3", "Step 4"],
       "explanation": "Step 1 correctly distributes the negative sign. To complete the square, adding 4 on the left requires adding 4 on the right, but Step 2 subtracts 4. The correct equation after that step would have −y²+24 on the right.",
-      "imageAlt": "The printed worked solution is fully transcribed in the prompt, including the incorrect subtraction of 4 in Step 2."
+      "imageAlt": "The four printed steps are transcribed in full, including every sign on both sides of each equation. The question asks where the first error occurs."
     },
     "4": {
       "prompt": "Which transformation maps segment OA to an image parallel to OA?",
@@ -137,7 +137,7 @@
       "prompt": "Chord AB of circle O has A(3,3), B(3,−7), and its midpoint is 2 units from the circle's center. Which could be the circle's equation?",
       "choices": ["(x−1)²+(y+2)² = 29", "(x+5)²+(y−2)² = 29", "(x−1)²+(y−2)² = 25", "(x−5)²+(y+2)² = 25"],
       "explanation": "AB is vertical with midpoint (3,−2), so the center lies horizontally 2 units away at (1,−2) or (5,−2). Half the chord is 5, giving radius² = 5²+2² = 29. Choice 1 has center (1,−2) and radius² 29.",
-      "imageAlt": "Coordinate graph shows vertical chord AB at x = 3, from A(3,3) to B(3,−7). Its midpoint is (3,−2), and the circle's center must be 2 units horizontally from that midpoint. All equation options are transcribed in accessible text."
+      "imageAlt": "The coordinate graph shows vertical chord AB at x = 3, from A(3, 3) to B(3, −7). All given measurements and candidate equations are transcribed in the accessible prompt and choices."
     },
     "24": {
       "prompt": "What is the area of a circle sector with radius 8 inches and central angle 60°?",

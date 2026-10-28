@@ -23,7 +23,7 @@
       "prompt": "Susan invests $2,000 at 3.2% annual interest compounded monthly. Which expression best represents its value after t years?",
       "choices": ["2000(1.003)^(12t)", "2000(1.032)^(t/12)", "2064^(t/12)", "2000(1.032)^t/12"],
       "explanation": "Monthly compounding uses a monthly factor 1 + 0.032/12 ≈ 1.002667, approximated by 1.003 in the choices. There are 12t monthly periods, giving 2000(1.003)^(12t).",
-      "imageAlt": "The annual interest is three point two percent and compounding is monthly, so the number of compounding periods is twelve times the years."
+      "imageAlt": "The initial investment is $2,000, the annual interest rate is 3.2%, and interest is compounded monthly. Time t is in years."
     },
     "5": {
       "prompt": "Which choice has end behavior f(x) → ∞ as x → −∞ and f(x) → −∞ as x → ∞?",
@@ -143,7 +143,7 @@
       "prompt": "If 45% of people have type O blood and random values run from 000 through 999, which inclusive range should represent type O?",
       "choices": ["000–045", "000–444", "000–449", "000–450"],
       "explanation": "There are 1,000 equally likely three-digit values. Forty-five percent of 1,000 is 450 values. Counting inclusively from 000, the 450th value is 449, so use 000 through 449.",
-      "imageAlt": "The generator's three-digit outcomes include all integers from zero-zero-zero to nine-nine-nine, so the sample space contains exactly one thousand values."
+      "imageAlt": "The random generator produces three-digit values from 000 through 999. Type O blood occurs in 45% of the population; candidate inclusive ranges are transcribed below."
     }
   }
 }

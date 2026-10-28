@@ -77,7 +77,7 @@
       "prompt": "A 10-by-6 rectangle rotates around a straight line and forms a solid with volume 150π. Which rotation axis could produce it?",
       "choices": ["one long side", "one short side", "vertical line of symmetry", "horizontal line of symmetry"],
       "explanation": "The vertical symmetry line runs through the midpoint of the 10-unit length. Rotation about it makes a cylinder of radius 5 and height 6, with volume π(5²)(6) = 150π.",
-      "imageAlt": "Horizontal rectangle is labeled 10 along its bottom and 6 along its left side. The vertical symmetry line would pass through the midpoint of the long horizontal dimension; the horizontal symmetry line through mid-height."
+      "imageAlt": "A horizontal rectangle is labeled 10 along its bottom and 6 along its left side. The question and four proposed rotation axes are transcribed below."
     },
     "14": {
       "prompt": "If ABCD is a parallelogram, which fact would prove it is a rhombus?",
