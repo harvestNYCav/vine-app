@@ -253,7 +253,9 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">{info.subjectLabel} exam · {info.year}</p>
-                      <p className="font-semibold text-gray-800">{info.emoji} {info.title}</p>
+                      <Link href={info.tutorHref} className="font-semibold text-amber-800 hover:underline">
+                        {info.emoji} {info.title}
+                      </Link>
                     </div>
                     {result && (
                       <span className="flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700">✓ Finished · {result.percentage}%</span>
@@ -263,13 +265,16 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                     <p className="text-xs text-gray-500">
                       {result ? `${result.latestPoints}/${result.latestPossible} points` : 'Not finished yet'}
                     </p>
-                    <ExamAssignButton
-                      studentId={studentId}
-                      subject={assignment.subject}
-                      examId={assignment.examId}
-                      sectionSlug={assignment.sectionSlug}
-                      assigned
-                    />
+                    <div className="flex items-center gap-3">
+                      <Link href={info.tutorHref} className="text-xs font-semibold text-amber-700 hover:underline">Preview</Link>
+                      <ExamAssignButton
+                        studentId={studentId}
+                        subject={assignment.subject}
+                        examId={assignment.examId}
+                        sectionSlug={assignment.sectionSlug}
+                        assigned
+                      />
+                    </div>
                   </div>
                 </div>
               ))}
@@ -380,7 +385,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                 <div key={`${exam.id}:${section.slug}`} className="rounded-xl border border-gray-100 bg-white p-3">
                   <div className="flex items-center gap-2">
                     <span>{section.emoji}</span>
-                    <span className="flex-1 text-xs font-medium text-gray-700">{exam.year} · {section.title}</span>
+                    <Link href={`/tutor/exams/ela/${exam.slug}/${section.slug}`} className="flex-1 text-xs font-medium text-amber-800 hover:underline">
+                      {exam.year} · {section.title}
+                      <span className="mt-1 block font-semibold">Preview →</span>
+                    </Link>
                     <span className={`text-xs font-bold ${percentage ? 'text-purple-700' : 'text-gray-300'}`}>{percentage}%</span>
                     <ExamAssignButton
                       studentId={studentId}
@@ -427,7 +435,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                   <div key={`${exam.id}:${section.slug}`} className="rounded-xl border border-gray-100 bg-white p-3">
                     <div className="flex items-center gap-2">
                       <span>{section.emoji}</span>
-                      <span className="flex-1 text-xs font-medium text-gray-700">{exam.year} · {section.title.en}</span>
+                      <Link href={`/tutor/exams/math/${exam.slug}/${section.slug}`} className="flex-1 text-xs font-medium text-amber-800 hover:underline">
+                        {exam.year} · {section.title.en}
+                        <span className="mt-1 block font-semibold">Preview →</span>
+                      </Link>
                       <span className={`text-xs font-bold ${percentage ? 'text-blue-700' : 'text-gray-300'}`}>{percentage}%</span>
                       <ExamAssignButton
                         studentId={studentId}

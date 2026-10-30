@@ -87,6 +87,12 @@ Rebuild the ELA catalog and crops with `scripts/import_nysed_ela_mc.py`. The imp
 - `app/(tutor)/tutor/check-in` writes both through `lib/check-ins.ts`; `app/(admin)/admin/check-ins` reads the same day for any date. A person nobody has marked is `present: null`, which is not the same as absent.
 - `lib/tutor-pairings.ts` summarizes `sessions` into each student's most frequent tutors so admins can repeat a working pairing when assigning the week.
 
+## Tutor Exam Previews
+
+- `/tutor/exams` browses the Grade 3–8 ELA and Math catalogs by subject, grade, and year; the tutor Lesson Library links to each subject.
+- `/tutor/exams/[subject]/[examSlug]/[sectionSlug]` checks the tutor role on the server and renders lesson material, passages, questions, and expandable answers/explanations. Math previews support official Spanish editions where available.
+- Student detail pages link to these previews from exam progress and scheduled assignment cards. Previewing does not create attempts or change student progress; student practice routes and answer APIs retain their existing role and grade restrictions.
+
 ## Maintenance Notes
 - Keep generated output, editor metadata, virtual environments, local credentials, and machine-specific assistant settings out of Git.
 - Prefer adding focused tests around stable entry points before changing application behavior.

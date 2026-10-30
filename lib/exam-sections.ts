@@ -13,6 +13,7 @@ export interface ExamSectionInfo extends ExamSectionRef {
   supportsSpanish: boolean
   subjectLabel: string
   href: string
+  tutorHref: string
 }
 
 // Looks up an assigned section in the exam catalogs. Returns null for a section that no longer
@@ -32,6 +33,7 @@ export function describeExamSection(ref: ExamSectionRef): ExamSectionInfo | null
       supportsSpanish: exam.supportedLanguages.includes('es'),
       subjectLabel: 'Math',
       href: `/math/exams/${exam.slug}/${section.slug}`,
+      tutorHref: `/tutor/exams/math/${exam.slug}/${section.slug}`,
     }
   }
   const exam = getElaExamById(ref.examId)
@@ -46,6 +48,7 @@ export function describeExamSection(ref: ExamSectionRef): ExamSectionInfo | null
     supportsSpanish: false,
     subjectLabel: 'ELA',
     href: `/ela/exams/${exam.slug}/${section.slug}`,
+    tutorHref: `/tutor/exams/ela/${exam.slug}/${section.slug}`,
   }
 }
 
