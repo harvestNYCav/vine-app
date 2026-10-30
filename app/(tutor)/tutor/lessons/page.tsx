@@ -27,6 +27,21 @@ export default function LessonsLibraryPage() {
       </div>
       <p className="text-sm text-gray-500 mb-6">Browse and preview any lesson before assigning it to a session.</p>
 
+      <section className="mb-8 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+        <h2 className="font-bold text-gray-800">Grade 3–8 exam lessons</h2>
+        <p className="mt-1 text-sm leading-relaxed text-gray-600">
+          Preview released questions, reading passages, and answer explanations by grade and year.
+        </p>
+        <div className="mt-4 grid grid-cols-2 gap-3">
+          <Link href="/tutor/exams?subject=ela" className="rounded-xl border border-purple-100 bg-white px-3 py-3 text-center text-sm font-semibold text-purple-800 hover:bg-purple-50">
+            ELA questions →
+          </Link>
+          <Link href="/tutor/exams?subject=math" className="rounded-xl border border-blue-100 bg-white px-3 py-3 text-center text-sm font-semibold text-blue-800 hover:bg-blue-50">
+            Math questions →
+          </Link>
+        </div>
+      </section>
+
       {groups.map(group => (
         <div key={group.label} className="mb-6">
           <h2 className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-3">{group.label}</h2>
