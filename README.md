@@ -32,5 +32,5 @@ This project deploys to [Railway](https://railway.app) — see `railway.toml` an
 ## Maintenance
 
 - `docs/MAINTENANCE_AUDIT.md` records the current audit status, verification commands, and backlog.
-- `docs/ARCHITECTURE.md` maps the maintainer-facing project structure when present.
+- `ARCHITECTURE.md` (repo root) maps the codebase: moving parts, data model, key flows and invariants.
 - `docs/DEPENDENCIES.md` records dependency update guidance when present.
