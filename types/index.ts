@@ -153,28 +153,11 @@ export interface ModuleProgress {
   homeworkScore: number | null
 }
 
-export interface TeachingSession {
-  id: string
-  userId: string
-  moduleSlug: string
-  startedAt: number
-  endedAt: number | null
-  messageCount: number
-  phrasesTaught: string[]
-  encouragement: string
-  transcript: ChatMessage[]
-}
-
 export interface ActivityLog {
   userId: string
   date: string
   activityType: 'practice' | 'module' | 'teach'
   count: number
-}
-
-export interface ChatMessage {
-  role: 'user' | 'assistant'
-  content: string
 }
 
 export interface Session {

@@ -27,10 +27,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This project deploys to [Railway](https://railway.app) — see `railway.toml` and `nixpacks.toml`.
+This project deploys to Vercel (production on push to `main`, previews on other branches) with a Turso database — see "Deployment and environments" in `ARCHITECTURE.md`.
 
 ## Maintenance
 
 - `docs/MAINTENANCE_AUDIT.md` records the current audit status, verification commands, and backlog.
-- `docs/ARCHITECTURE.md` maps the maintainer-facing project structure when present.
+- `ARCHITECTURE.md` (repo root) maps the codebase: moving parts, data model, key flows and invariants.
 - `docs/DEPENDENCIES.md` records dependency update guidance when present.

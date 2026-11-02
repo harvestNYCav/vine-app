@@ -127,18 +127,6 @@ async function initSchema(db: Client): Promise<void> {
       PRIMARY KEY (user_id, module_slug)
     );
 
-    CREATE TABLE IF NOT EXISTS teaching_sessions (
-      id TEXT PRIMARY KEY,
-      user_id TEXT NOT NULL,
-      module_slug TEXT NOT NULL,
-      started_at INTEGER NOT NULL,
-      ended_at INTEGER,
-      message_count INTEGER NOT NULL DEFAULT 0,
-      phrases_taught TEXT NOT NULL DEFAULT '[]',
-      encouragement TEXT NOT NULL DEFAULT '',
-      transcript TEXT NOT NULL DEFAULT '[]'
-    );
-
     CREATE TABLE IF NOT EXISTS activity_log (
       user_id TEXT NOT NULL,
       date TEXT NOT NULL,
