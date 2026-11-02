@@ -18,7 +18,6 @@ const USER_ID_TABLES = [
   'student_regents_courses',
   'vocab_progress',
   'module_progress',
-  'teaching_sessions',
   'activity_log',
   'math_progress',
   'math_sessions',
@@ -277,36 +276,6 @@ export async function seedDemoData(
         ],
       })
     }
-
-    statements.push({
-      sql: `
-        INSERT INTO teaching_sessions (
-          id,
-          user_id,
-          module_slug,
-          started_at,
-          ended_at,
-          message_count,
-          phrases_taught,
-          encouragement,
-          transcript
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-      `,
-      args: [
-        randomUUID(),
-        mariaId,
-        'buying-groceries',
-        now - 4 * DAY_MS,
-        now - 4 * DAY_MS + 600_000,
-        12,
-        JSON.stringify(['How much does this cost?', 'Where is the...?', 'cash or credit card', 'on sale']),
-        'You are a natural teacher! Carlos learned so much from your clear explanations.',
-        JSON.stringify([
-          { role: 'user', content: 'Hello Carlos! Today I will teach you about buying groceries.' },
-          { role: 'assistant', content: 'Oh hello! I need very much help with this. I go store but I not know how to say things.' },
-        ]),
-      ],
-    })
 
     const scheduledLessons = [
       { studentId: mariaId, daysAgo: 9, moduleSlug: 'introducing-yourself', homeworkAssigned: 1 },

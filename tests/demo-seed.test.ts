@@ -14,7 +14,6 @@ const USER_ID_TABLES = [
   'student_regents_courses',
   'vocab_progress',
   'module_progress',
-  'teaching_sessions',
   'activity_log',
   'math_progress',
   'math_sessions',
@@ -94,7 +93,6 @@ test('demo seed matches the current schema and safely replaces its own prior rec
     assert.equal(await count(db, 'attendance'), 4)
     assert.equal(await count(db, 'module_progress'), 4)
     assert.equal(await count(db, 'vocab_progress'), 5)
-    assert.equal(await count(db, 'teaching_sessions'), 1)
     assert.equal(await count(db, 'activity_log'), 11)
 
     const tracks = await db.execute({

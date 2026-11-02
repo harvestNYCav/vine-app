@@ -103,6 +103,9 @@ them testable without Next. Look here first for any rule.
   `reviewed`.
 - `content/nysed-*.json`: review/repair ledgers consumed by the importers.
 
+Curriculum changes are owned jointly. Content is updated periodically, with no fixed schedule for
+refreshing the exam catalogs.
+
 ### `scripts/`, `public/nysed/`, `evals/`
 
 - `scripts/import_nysed_{math,ela}_mc.py`, `scripts/regents_*_import.py` and their helpers
@@ -157,6 +160,8 @@ Things that are not obvious from the table names:
   and the math courses write to `math_exam_*`.
 - **One `users` table for all roles.** Admins are identified by `email`, which is required for
   them. Pending tutors are not in `users` at all; they wait in `tutor_signup_requests`.
+- **Legacy tables can linger.** Older databases may still contain an unused `teaching_sessions`
+  table. The code no longer creates or reads it, and it was left in place rather than dropped.
 - **Presence is three-valued.** In `attendance` and `tutor_check_ins`, nobody marked means
   `present: null`, which is not the same as absent.
 
@@ -324,8 +329,3 @@ These could not be confirmed from the code:
   fallback on a persistent volume? If it's the fallback, how is it backed up?
 - **Release process.** CI runs tests on pull requests, but nothing in the repo deploys. Is
   deployment triggered by pushes to `main`, and is it gated on CI?
-- **`teaching_sessions`.** The table (with a chat `transcript` column) and the `TeachingSession` /
-  `ChatMessage` types are read and deleted but never written. Is this left over from a removed
-  feature, and can it be dropped?
-- **Ownership.** Who owns curriculum changes and the NYSED/Regents content reviews, and how often
-  are the catalogs refreshed?
