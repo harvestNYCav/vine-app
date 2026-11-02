@@ -292,19 +292,32 @@ Things that are deliberately **not** done:
 
 ## Deployment and environments
 
+**Hosting is Vercel.** The project's deployments are at
+https://vercel.com/harvestnycavs-projects/vine-app/deployments. Vercel's GitHub integration deploys
+automatically (all deployments recorded on GitHub are `vercel[bot]`):
+
+- **Production** is deployed on every push to `main`. That includes PR merges, and also commits
+  pushed straight to `main`.
+- **Preview** is deployed on every push to any other branch, whether or not a PR is open yet. The PR
+  shows the preview link as the `Vercel` check.
+
+**The production database is Turso**, at https://app.turso.tech/harvestnycav/databases/vine-app.
+The app connects through `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN`. The schema migrates itself on
+the first request that touches the database in each new server instance (see *Invariants*), so a
+deploy that changes the schema also migrates production Turso.
+
 Here is what each piece of configuration in the repo covers:
 
 | File | Covers |
 | --- | --- |
 | `package.json` | `dev`, `build` (`next build`) and `start` (`next start -p ${PORT:-3000}`); the `test` and `typecheck` scripts. |
 | `next.config.ts` | `basePath: '/vine-app'`. Client-side `fetch` calls and NYSED asset URLs include this prefix (for example `TrackedTutorDeck`). |
-| `railway.toml` | Railway build with nixpacks (`npm install && npm run build`), start with `npm start`, healthcheck `/`, restart on failure. |
-| `nixpacks.toml` | Node.js 20 for the Railway build. |
-| `.github/workflows/maintenance-smoke.yml` | CI on every pull request: Node 22 + Python 3.12, `npm ci`, the NYSED Python requirements, `npm test`. It does not deploy. |
-| `lib/db.ts` | The database: libSQL at `TURSO_DATABASE_URL` (with `TURSO_AUTH_TOKEN`), falling back to a local file `data/vine.db`, which is gitignored. |
+| `.github/workflows/maintenance-smoke.yml` | CI (`smoke`) on every pull request: Node 22 + Python 3.12, `npm ci`, the NYSED Python requirements, `npm test`. It does not deploy. |
+| `lib/db.ts` | The database: libSQL at `TURSO_DATABASE_URL`, falling back to a local file `data/vine.db` (gitignored). The fallback is for local development only; Vercel's filesystem is read-only. |
+| `railway.toml`, `nixpacks.toml` | A Railway build (nixpacks, Node.js 20, `npm start`, healthcheck `/`). Production deploys through Vercel, not Railway. |
 
-There is no `vercel.json` or other Vercel config. Vercel shows up only in a comment in `lib/db.ts`
-and in error text in `app/api/auth/admin-email/route.ts`.
+The repo has no `vercel.json`. Vercel's settings, including environment variables, live in the
+Vercel dashboard.
 
 Environment variables read by the code:
 
@@ -316,16 +329,6 @@ Environment variables read by the code:
 - `NODE_ENV`: cookies are marked `secure` in `production`.
 
 Local development: `npm install`, `npm run dev`, then optionally `npx tsx scripts/seed.ts` for demo
-accounts. Before a PR, run `npm run typecheck`, `npm test` and `npm run build`. `docs/` has more
+accounts. Without the Turso variables, local runs use `data/vine.db`, so they never touch
+production. Before a PR, run `npm run typecheck`, `npm test` and `npm run build`. `docs/` has more
 notes on environment variables, dependencies and release.
-
-## Open questions
-
-These could not be confirmed from the code:
-
-- **Hosting.** Is production on Railway, Vercel, or both, and if both, how is the work split? The
-  repo has Railway config only, but some code comments and error messages assume Vercel.
-- **Production database.** Does production use Turso (`TURSO_DATABASE_URL`), or the local SQLite
-  fallback on a persistent volume? If it's the fallback, how is it backed up?
-- **Release process.** CI runs tests on pull requests, but nothing in the repo deploys. Is
-  deployment triggered by pushes to `main`, and is it gated on CI?

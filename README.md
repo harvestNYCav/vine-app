@@ -27,7 +27,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This project deploys to [Railway](https://railway.app) — see `railway.toml` and `nixpacks.toml`.
+This project deploys to Vercel (production on push to `main`, previews on other branches) with a Turso database — see "Deployment and environments" in `ARCHITECTURE.md`.
 
 ## Maintenance
 
