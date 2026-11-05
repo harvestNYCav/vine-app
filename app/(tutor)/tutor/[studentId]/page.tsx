@@ -28,6 +28,8 @@ import {
 import { describeExamSection } from '@/lib/exam-sections'
 import AnswerReview from '@/components/AnswerReview'
 import { parseAnswerResults } from '@/lib/lesson-answers'
+import { getLatestEslPlacement, type EslPlacement } from '@/lib/esl-placement'
+import { ESL_LEVELS, ESL_PLACEMENT_STAGES, getEslLevel } from '@/content/esl-placement'
 
 type ModProgressRow = { module_slug: string; vocab_viewed_at: number | null; practice_completed_at: number | null; homework_completed_at: number | null; homework_score: number | null; practice_answers: string | null; homework_answers: string | null }
 
@@ -80,6 +82,65 @@ function completedStepCount(progress: ModProgressRow | undefined) {
   return [progress?.vocab_viewed_at, progress?.practice_completed_at, progress?.homework_completed_at].filter(Boolean).length
 }
 
+// The student's ESL level from the placement test, or a prompt to give the test on a first visit.
+function EslPlacementCard({ studentId, placement }: { studentId: string; placement: EslPlacement | null }) {
+  if (!placement) {
+    return (
+      <div className="rounded-2xl border-2 border-dashed border-amber-300 bg-white p-4 mb-6">
+        <p className="font-bold text-amber-800">🧭 New to ESL?</p>
+        <p className="mt-1 text-sm text-gray-600">
+          Give the 10–15 minute placement test in the first session to find which lesson to start with.
+        </p>
+        <Link
+          href={`/tutor/${studentId}/placement`}
+          className="mt-3 inline-block rounded-xl bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700"
+        >
+          Start placement test →
+        </Link>
+      </div>
+    )
+  }
+  const level = getEslLevel(placement.level) ?? ESL_LEVELS[0]
+  const startLesson = getModule(level.startModuleSlug)
+  const levelNumber = ESL_LEVELS.findIndex(option => option.id === level.id) + 1
+  return (
+    <div className="rounded-2xl border border-amber-100 bg-white p-4 shadow-sm mb-6">
+      <div className="flex items-start justify-between gap-2">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">ESL level</p>
+          <p className="font-bold text-gray-800">
+            {level.label} <span className="text-sm font-normal text-gray-400">({levelNumber} of {ESL_LEVELS.length})</span>
+          </p>
+          {placement.readsCards === false && (
+            <span className="mt-1 inline-block rounded-full bg-orange-100 px-2 py-0.5 text-xs font-semibold text-orange-700">Not reading yet</span>
+          )}
+        </div>
+        <Link href={`/tutor/${studentId}/placement`} className="text-xs text-amber-700 hover:text-amber-800">Re-test</Link>
+      </div>
+      {startLesson && (
+        <p className="mt-1 text-sm text-gray-600">
+          Start with{' '}
+          <Link href={`/tutor/lessons/${startLesson.slug}`} className="font-medium text-amber-700 hover:underline">
+            {startLesson.titleEn}
+          </Link>
+        </p>
+      )}
+      <p className="mt-1 text-xs text-gray-400">
+        Placed {placement.date}{placement.tutorName ? ` by ${placement.tutorName}` : ''}
+        {placement.stages.map(stage => {
+          const title = ESL_PLACEMENT_STAGES.find(option => option.id === stage.stageId)?.title.split(' · ')[1] ?? stage.stageId
+          const total = stage.tiebreakCorrect === null
+            ? `${stage.coreCorrect}/${stage.coreTotal}`
+            : `${stage.coreCorrect + stage.tiebreakCorrect}/${stage.coreTotal + stage.tiebreakTotal} with tiebreakers`
+          return ` · ${title} ${total}`
+        })}
+        {placement.level !== placement.suggestedLevel && ` · tutor chose this over ${getEslLevel(placement.suggestedLevel)?.label ?? placement.suggestedLevel}`}
+      </p>
+      {placement.note && <p className="mt-1 text-sm italic text-gray-500">{placement.note}</p>}
+    </div>
+  )
+}
+
 function mathMasteryColor(v: number) {
   if (v >= 0.75) return 'bg-green-500'
   if (v >= 0.4) return 'bg-yellow-400'
@@ -115,9 +176,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     db.execute({ sql: 'SELECT * FROM math_exam_section_progress WHERE user_id = ?', args: [studentId] }),
     db.execute({ sql: 'SELECT * FROM ela_exam_section_progress WHERE user_id = ?', args: [studentId] }),
   ])
-  const [todayExamAssignments, examSectionResults] = await Promise.all([
+  const [todayExamAssignments, examSectionResults, eslPlacement] = await Promise.all([
     listExamAssignmentsForDate(db, studentId, today),
     getExamSectionResults(db, studentId),
+    tracks.includes('esl') ? getLatestEslPlacement(db, studentId) : null,
   ])
   const todayExamSections = todayExamAssignments.flatMap(assignment => {
     const info = describeExamSection(assignment)
@@ -191,6 +253,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
           </p>
         </div>
       </div>
+
+      {tracks.includes('esl') && <EslPlacementCard studentId={studentId} placement={eslPlacement} />}
 
       {/* Scheduled Lessons */}
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-amber-100 mb-6 space-y-4">

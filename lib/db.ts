@@ -4,6 +4,7 @@ import { EXAM_ASSIGNMENTS_TABLE_SQL } from './exam-assignments'
 import { STUDENT_REGENTS_COURSES_TABLE_SQL } from './regents-courses'
 import { TUTOR_SIGNUP_REQUESTS_TABLE_SQL } from './tutor-approvals'
 import { LESSON_DECK_PROGRESS_TABLE_SQL, SESSION_WRAP_UPS_TABLE_SQL } from './session-metrics'
+import { ESL_PLACEMENTS_INDEX_SQL, ESL_PLACEMENTS_TABLE_SQL } from './esl-placement'
 
 let client: Client | null = null
 let initialized = false
@@ -265,7 +266,11 @@ async function initSchema(db: Client): Promise<void> {
   await db.execute(TUTOR_SIGNUP_REQUESTS_TABLE_SQL)
   await db.execute(LESSON_DECK_PROGRESS_TABLE_SQL)
   await db.execute(SESSION_WRAP_UPS_TABLE_SQL)
+  await db.execute(ESL_PLACEMENTS_TABLE_SQL)
+  await db.execute(ESL_PLACEMENTS_INDEX_SQL)
   await ensureColumn(db, 'users', 'email', 'TEXT')
+  // Added after esl_placements was first created on some local databases.
+  await ensureColumn(db, 'esl_placements', 'reads_cards', 'INTEGER')
   await ensureColumn(db, 'module_progress', 'homework_completed_at', 'INTEGER')
   await ensureColumn(db, 'module_progress', 'homework_score', 'INTEGER')
   // JSON arrays of graded answers from the latest Quick Check / Homework (see lib/lesson-answers.ts).

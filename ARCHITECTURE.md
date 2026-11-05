@@ -54,6 +54,7 @@ layouts and the API handlers are the access checks.
 - `app/(tutor)/tutor/`: the tutor dashboard.
   - `[studentId]`: one student's dashboard. Assign lessons, homework and exam sections; write a
     prep note; file the session wrap-up.
+  - `[studentId]/placement`: the tutor-led ESL placement test for a student's first session.
   - `lessons`, `lessons/[slug]`: the lesson library and the in-class slide deck.
   - `cohort`, `check-in`: student attendance and the tutor's own check-in.
   - `exams/…`: read-only previews of exam content.
@@ -78,7 +79,8 @@ them testable without Next. Look here first for any rule.
 - Who a page is about: `student-view.ts` (`resolveStudentViewResult`, `StudentView`).
 - Tutoring: `tutor-lesson-assignment.ts`, `exam-assignments.ts`, `session-metrics.ts`,
   `check-ins.ts`, `tutor-roster*.ts`, `tutor-pairings.ts`, `lesson-agenda.ts`,
-  `tutor-exam-library.ts`, `tutor-exam-preview.ts`.
+  `tutor-exam-library.ts`, `tutor-exam-preview.ts`, `esl-placement.ts` (+ the client-safe
+  `esl-placement-score.ts`).
 - Lesson and practice grading: `lesson-answers.ts`, `lesson-progress.ts`, `spaced-repetition.ts`,
   `study.ts`, `worksheet.ts`, `resumable-work.ts`.
 - Math practice engine: `math.ts` (skills ladder, problem generation, mastery updates, mistake
@@ -92,6 +94,8 @@ them testable without Next. Look here first for any rule.
   `index.ts` exports `ALL_MODULES` (the teaching order) and `getModule(slug)`. A module's `track`
   is `esl` or `ela`; math has no modules.
 - `content/math-skills.ts`: skill metadata for the math practice track.
+- `content/esl-placement.ts`: the ESL placement test (two tutor-led stages) and the three levels,
+  each mapped to the ESL lesson a student at that level starts with.
 - `content/math-exams/`, `content/ela-exams/`: NYSED Grade 3–8 released multiple-choice catalogs.
   - `generated/catalog.json` is importer output.
   - `catalog-runtime.ts` holds answer-bearing records and is marked `server-only`.
@@ -129,7 +133,7 @@ refreshing the exam catalogs.
 
 The full schema, including in-place migrations, is in `lib/db.ts`. A few tables are defined next
 to their owning module and imported by it: `lib/exam-assignments.ts`, `lib/regents-courses.ts`,
-`lib/tutor-approvals.ts` and `lib/session-metrics.ts`. The core entities and how they relate:
+`lib/tutor-approvals.ts`, `lib/session-metrics.ts` and `lib/esl-placement.ts`. The core entities and how they relate:
 
 ```
 users (role: student | tutor | parent | admin)
@@ -144,6 +148,7 @@ users (role: student | tutor | parent | admin)
  │    exam_assignments (student × date × exam section, tutor_id)
  │    attendance (student × date)      tutor_check_ins (tutor × date)
  │    lesson_deck_progress (tutor × date × module_slug)   tutor_notes
+ │    esl_placements (student × test, tutor_id; latest row is the student's ESL level)
  │
  └─ learner progress
       module_progress (student × module), vocab_progress (student × word), activity_log (daily counts)
