@@ -30,7 +30,7 @@ export default function AdminDangerZoneControls() {
       <div className="flex flex-col gap-1 mb-4">
         <p className="text-sm font-semibold text-red-700">Danger zone</p>
         <h2 className="text-lg font-bold text-slate-900">Reset data</h2>
-        <p className="text-sm text-slate-500">Clear the entire database. To remove one person, use Delete an account above.</p>
+        <p className="text-sm text-slate-500">Clear the entire database. To remove one person, use Accounts above.</p>
       </div>
 
       <div className="rounded-lg border border-red-200 p-3">

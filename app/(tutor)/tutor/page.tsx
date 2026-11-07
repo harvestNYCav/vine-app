@@ -7,6 +7,7 @@ import { getTutorRosterScope } from '@/lib/tutor-roster-server'
 import { getStudentTracks } from '@/lib/tracks'
 import { summarizeLessonProgressForTracks } from '@/lib/lesson-progress'
 import { formatWordCount } from '@/lib/study'
+import TutorStudentList from './TutorStudentList'
 
 const LB_TYPES = [
   { key: 'practice_5', label: '5 min', isTimed: true },
@@ -116,80 +117,82 @@ export default async function TutorDashboardPage() {
         </div>
       )}
 
-      {/* Math Leaderboard */}
-      {leaderboards.length > 0 && (
-        <div className="mb-8">
-          <h2 className="font-bold text-gray-700 mb-3">➕ Math Leaderboard</h2>
-          <div className="space-y-4">
-            {leaderboards.map(lb => (
-              <div key={lb.key} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-                <p className="text-sm font-semibold text-gray-600 mb-3">{lb.label}</p>
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr>
-                      <th className="text-left text-xs text-gray-400 font-semibold pb-1.5 w-6">#</th>
-                      <th className="text-left text-xs text-gray-400 font-semibold pb-1.5">Student</th>
-                      <th className="text-right text-xs text-gray-400 font-semibold pb-1.5">
-                        {lb.isTimed ? 'Score' : 'Time'}
-                      </th>
-                      <th className="text-right text-xs text-gray-400 font-semibold pb-1.5">Acc.</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-50">
-                    {lb.rows.map((row, i) => (
-                      <tr key={i}>
-                        <td className="py-1.5 text-gray-400 font-bold text-xs">{i + 1}</td>
-                        <td className="py-1.5 text-gray-700">{row.name as string}</td>
-                        <td className="py-1.5 text-right font-semibold text-gray-700">
-                          {lb.isTimed ? String(row.correct) : fmtTime(Number(row.duration_ms))}
-                        </td>
-                        <td className="py-1.5 text-right text-gray-500 text-xs">{Number(row.accuracy)}%</td>
+      <TutorStudentList
+        leaderboard={leaderboards.length > 0 ? (
+          <div className="mb-8">
+            <h2 className="font-bold text-gray-700 mb-3">➕ Math Leaderboard</h2>
+            <div className="space-y-4">
+              {leaderboards.map(lb => (
+                <div key={lb.key} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                  <p className="text-sm font-semibold text-gray-600 mb-3">{lb.label}</p>
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr>
+                        <th className="text-left text-xs text-gray-400 font-semibold pb-1.5 w-6">#</th>
+                        <th className="text-left text-xs text-gray-400 font-semibold pb-1.5">Student</th>
+                        <th className="text-right text-xs text-gray-400 font-semibold pb-1.5">
+                          {lb.isTimed ? 'Score' : 'Time'}
+                        </th>
+                        <th className="text-right text-xs text-gray-400 font-semibold pb-1.5">Acc.</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <div className="space-y-3">
-        {studentData.map(student => (
-          <Link key={student.id} href={`/tutor/${student.id}`}>
-            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-xl font-bold text-amber-700">
-                  {student.name.charAt(0).toUpperCase()}
+                    </thead>
+                    <tbody className="divide-y divide-gray-50">
+                      {lb.rows.map((row, i) => (
+                        <tr key={i}>
+                          <td className="py-1.5 text-gray-400 font-bold text-xs">{i + 1}</td>
+                          <td className="py-1.5 text-gray-700">{row.name as string}</td>
+                          <td className="py-1.5 text-right font-semibold text-gray-700">
+                            {lb.isTimed ? String(row.correct) : fmtTime(Number(row.duration_ms))}
+                          </td>
+                          <td className="py-1.5 text-right text-gray-500 text-xs">{Number(row.accuracy)}%</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-gray-800">{student.name}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    {student.daysSince === null ? 'No activity yet' :
-                     student.daysSince === 0 ? 'Active today' :
-                     student.daysSince === 1 ? 'Active yesterday' :
-                     `${student.daysSince} days ago`}
-                  </p>
-                </div>
-                <div className="text-right flex-shrink-0">
-                  <p className="text-sm font-medium text-green-700">{student.completedModules}/{student.totalModules}</p>
-                  <p className="text-xs text-gray-400">English lessons</p>
-                </div>
-              </div>
-              <div className="flex gap-3 mt-3 pt-3 border-t border-gray-50">
-                <div className="flex items-center gap-1">
-                  <span className="text-xs text-blue-500">📚</span>
-                  <span className="text-xs text-gray-500">{formatWordCount(student.vocabMastered)}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <span className="text-xs text-purple-500">📖</span>
-                  <span className="text-xs text-gray-500">{student.reviewedModules} reviewed</span>
-                </div>
-              </div>
+              ))}
             </div>
-          </Link>
-        ))}
-      </div>
+          </div>
+        ) : null}
+        students={studentData.map(student => ({
+          id: student.id,
+          name: student.name,
+          card: (
+            <Link href={`/tutor/${student.id}`}>
+              <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-xl font-bold text-amber-700">
+                    {student.name.charAt(0).toUpperCase()}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-gray-800">{student.name}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">
+                      {student.daysSince === null ? 'No activity yet' :
+                       student.daysSince === 0 ? 'Active today' :
+                       student.daysSince === 1 ? 'Active yesterday' :
+                       `${student.daysSince} days ago`}
+                    </p>
+                  </div>
+                  <div className="text-right flex-shrink-0">
+                    <p className="text-sm font-medium text-green-700">{student.completedModules}/{student.totalModules}</p>
+                    <p className="text-xs text-gray-400">English lessons</p>
+                  </div>
+                </div>
+                <div className="flex gap-3 mt-3 pt-3 border-t border-gray-50">
+                  <div className="flex items-center gap-1">
+                    <span className="text-xs text-blue-500">📚</span>
+                    <span className="text-xs text-gray-500">{formatWordCount(student.vocabMastered)}</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-xs text-purple-500">📖</span>
+                    <span className="text-xs text-gray-500">{student.reviewedModules} reviewed</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ),
+        }))}
+      />
     </div>
   )
 }

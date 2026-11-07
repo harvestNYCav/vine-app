@@ -10,12 +10,12 @@ import { loadTutorPairingRecords, summarizeTutorPairings } from '@/lib/tutor-pai
 import { listTutorSignupRequests } from '@/lib/tutor-approvals'
 import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
+import AdminStudentList from './AdminStudentList'
+import AdminAccountControls from './AdminAccountControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
-import AdminDeleteAccountControls from './AdminDeleteAccountControls'
 import AdminCreateStudentForm from './AdminCreateStudentForm'
 import AdminParentControls from './AdminParentControls'
-import AdminPinResetControls from './AdminPinResetControls'
 import AdminTutorApprovalControls from './AdminTutorApprovalControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
@@ -57,7 +57,7 @@ export default async function AdminPage() {
   }))
   const tutorNameById = new Map(tutors.map(tutor => [tutor.id, tutor.name]))
   const pairingsByStudent = summarizeTutorPairings(pairingRecords, tutorNameById)
-  const resettableProfiles = [
+  const accountProfiles = [
     ...students.map(student => ({ id: student.id, name: student.name, role: 'student' as const })),
     ...tutors.map(tutor => ({ id: tutor.id, name: tutor.name, role: 'tutor' as const })),
     ...parents.map(parent => ({ id: parent.id, name: parent.name, role: 'parent' as const })),
@@ -163,8 +163,7 @@ export default async function AdminPage() {
         students={students.map(student => ({ id: student.id, name: student.name }))}
       />
       <AdminAllowlistControls initialEmails={adminAllowlist} />
-      <AdminPinResetControls profiles={resettableProfiles} />
-      <AdminDeleteAccountControls profiles={resettableProfiles} />
+      <AdminAccountControls profiles={accountProfiles} />
       <AdminDangerZoneControls />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
@@ -187,68 +186,65 @@ export default async function AdminPage() {
         </div>
       </div>
 
-      <div className="space-y-4">
-        {studentData.length === 0 && (
-          <div className="bg-white border border-slate-200 rounded-lg p-6 text-slate-500">
-            No students yet.
-          </div>
-        )}
-
-        {studentData.map(student => (
-          <section key={student.id} className="bg-white border border-slate-200 rounded-lg p-4">
+      <AdminStudentList
+        students={studentData.map(student => ({
+          id: student.id,
+          name: student.name,
+          needsTracks: student.tracks.length === 0,
+          needsTutor: student.tutorIds.length === 0,
+          summary: (
+            <span className="flex flex-wrap items-start justify-between gap-3">
+              <span className="block min-w-0">
+                <span className="block text-lg font-bold text-slate-900">{student.name}</span>
+                <span className="block text-sm text-slate-500">
+                  {formatLastActive(Number(student.last_active))} · Tutors: {
+                    student.tutorIds.length > 0
+                      ? student.tutorIds.map(id => tutorNameById.get(id) ?? 'Unknown').join(', ')
+                      : 'Unassigned'
+                  }
+                </span>
+                <span className="mt-1 block text-xs font-semibold text-slate-600">
+                  Grade level: {studentSchoolGradeLevel(student.settings)
+                    ? `Grade ${studentSchoolGradeLevel(student.settings)}`
+                    : 'Not assigned'}
+                </span>
+                {student.regentsCourses.length > 0 && (
+                  <span className="mt-1 block text-xs text-slate-600">
+                    Regents courses: {student.regentsCourses.map(course =>
+                      REGENTS_COURSE_OPTIONS.find(option => option.id === course)?.label ?? course,
+                    ).join(', ')}
+                  </span>
+                )}
+              </span>
+              <span className="flex gap-1">
+                {student.tracks.length === 0 ? (
+                  <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">Needs tracks</span>
+                ) : student.tracks.map(track => (
+                  <span key={track} className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-semibold">{track.toUpperCase()}</span>
+                ))}
+              </span>
+            </span>
+          ),
+          details: (
             <div className="grid lg:grid-cols-[1fr_280px] gap-5">
-              <div>
-                <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
-                  <div>
-                    <h2 className="text-lg font-bold text-slate-900">{student.name}</h2>
-                    <p className="text-sm text-slate-500">
-                      {formatLastActive(Number(student.last_active))} · Tutors: {
-                        student.tutorIds.length > 0
-                          ? student.tutorIds.map(id => tutorNameById.get(id) ?? 'Unknown').join(', ')
-                          : 'Unassigned'
-                      }
-                    </p>
-                    <p className="mt-1 text-xs font-semibold text-slate-600">
-                      Grade level: {studentSchoolGradeLevel(student.settings)
-                        ? `Grade ${studentSchoolGradeLevel(student.settings)}`
-                        : 'Not assigned'}
-                    </p>
-                    {student.regentsCourses.length > 0 && (
-                      <p className="mt-1 text-xs text-slate-600">
-                        Regents courses: {student.regentsCourses.map(course =>
-                          REGENTS_COURSE_OPTIONS.find(option => option.id === course)?.label ?? course,
-                        ).join(', ')}
-                      </p>
-                    )}
-                  </div>
-                  <div className="flex gap-1">
-                    {student.tracks.length === 0 ? (
-                      <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">Needs tracks</span>
-                    ) : student.tracks.map(track => (
-                      <span key={track} className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-semibold">{track.toUpperCase()}</span>
-                    ))}
-                  </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 content-start">
+                <div className="bg-slate-50 rounded-lg p-3">
+                  <p className="text-xl font-bold text-green-700">{student.completedLessons}/{student.totalLessons}</p>
+                  <p className="text-xs text-slate-500">English lessons</p>
                 </div>
-
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-green-700">{student.completedLessons}/{student.totalLessons}</p>
-                    <p className="text-xs text-slate-500">English lessons</p>
-                  </div>
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-blue-700">{student.vocabMastered}</p>
-                    <p className="text-xs text-slate-500">Words mastered</p>
-                  </div>
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-purple-700">{student.reviewedModules}</p>
-                    <p className="text-xs text-slate-500">Lessons reviewed</p>
-                  </div>
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-amber-700">{student.mathProblems}</p>
-                    <p className="text-xs text-slate-500">Math problems · {student.mathAccuracy}%</p>
-                    <p className="mt-0.5 text-xs text-blue-600">{student.examSectionsCompleted} Math exam sections</p>
-                    <p className="mt-0.5 text-xs text-purple-600">{student.elaExamSectionsCompleted} ELA exam sections</p>
-                  </div>
+                <div className="bg-slate-50 rounded-lg p-3">
+                  <p className="text-xl font-bold text-blue-700">{student.vocabMastered}</p>
+                  <p className="text-xs text-slate-500">Words mastered</p>
+                </div>
+                <div className="bg-slate-50 rounded-lg p-3">
+                  <p className="text-xl font-bold text-purple-700">{student.reviewedModules}</p>
+                  <p className="text-xs text-slate-500">Lessons reviewed</p>
+                </div>
+                <div className="bg-slate-50 rounded-lg p-3">
+                  <p className="text-xl font-bold text-amber-700">{student.mathProblems}</p>
+                  <p className="text-xs text-slate-500">Math problems · {student.mathAccuracy}%</p>
+                  <p className="mt-0.5 text-xs text-blue-600">{student.examSectionsCompleted} Math exam sections</p>
+                  <p className="mt-0.5 text-xs text-purple-600">{student.elaExamSectionsCompleted} ELA exam sections</p>
                 </div>
               </div>
 
@@ -263,9 +259,9 @@ export default async function AdminPage() {
                 pairings={pairingsByStudent.get(student.id) ?? []}
               />
             </div>
-          </section>
-        ))}
-      </div>
+          ),
+        }))}
+      />
     </main>
   )
 }

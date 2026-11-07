@@ -4,10 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { Track } from '@/types'
 import type { TutorRosterScope } from '@/lib/tutor-roster'
-import { matchesSearch } from '@/lib/search'
-
-// A short roster fits on screen; past this, the list gets a search box.
-const SEARCHABLE_ROSTER_SIZE = 8
+import { matchesSearch, SEARCHABLE_LIST_SIZE } from '@/lib/search'
 
 interface Student {
   id: string
@@ -76,7 +73,7 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
   const [pendingAssignment, setPendingAssignment] = useState<PendingAssignment | null>(null)
 
   const trackLabel = moduleTrack.toUpperCase()
-  const searchable = students.length > SEARCHABLE_ROSTER_SIZE
+  const searchable = students.length > SEARCHABLE_LIST_SIZE
   // Students ticked before the search changed stay ticked (and get assigned) even while hidden.
   const visibleStudents = searchable ? students.filter(student => matchesSearch(query, student.name)) : students
 
