@@ -52,8 +52,8 @@ layouts and the API handlers are the access checks.
   - `regents/[course]/…`: Regents course pages and practice runners.
 - `app/(parent)/family/**`: a read-only mirror of the learner pages (see *Parent view* below).
 - `app/(tutor)/tutor/`: the tutor dashboard.
-  - `[studentId]`: one student's dashboard. Assign lessons, homework and exam sections; write a
-    prep note; file the session wrap-up.
+  - `[studentId]`: one student's dashboard. Assign lessons, homework and exam sections (Grade 3–8,
+    or Regents for high school students); write a prep note; file the session wrap-up.
   - `[studentId]/placement`: the tutor-led ESL placement test for a student's first session.
   - `lessons`, `lessons/[slug]`: the lesson library and the in-class slide deck.
   - `cohort`, `check-in`: student attendance and the tutor's own check-in.
@@ -197,7 +197,9 @@ Things that are not obvious from the table names:
    (`lib/tutor-lesson-assignment.ts`), which writes `sessions` rows. If a student isn't enrolled in
    the module's track, or already has lessons today, it returns `confirmation_required` (HTTP 409)
    and asks the tutor before enrolling the student or replacing those lessons. Exam sections are
-   assigned the same way, through `/api/tutor/exam-assignment` into `exam_assignments`.
+   assigned the same way, through `/api/tutor/exam-assignment` into `exam_assignments`: a Grade 3–8
+   section for the student's grade, or a ready Regents section in one of their courses
+   (`examSectionIsAvailable` in `lib/exam-sections.ts`). Regents rows use the course's subject.
 2. **Teach.** `/tutor/lessons/[slug]` renders `TrackedTutorDeck`, which wraps `ModuleSlideDeck`.
    While the deck is visible it posts the furthest slide reached and the active on-screen time to
    `/api/tutor/deck-progress` (using `sendBeacon` when the tab is hidden). `recordDeckProgress`

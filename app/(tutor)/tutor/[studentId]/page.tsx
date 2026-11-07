@@ -9,7 +9,6 @@ import Link from 'next/link'
 import PrepNoteButton from './PrepNoteButton'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
-import RegentsProgressCards from '@/components/regents/RegentsProgressCards'
 import { getStudentRegentsCourses } from '@/lib/regents-courses'
 import { assignedRegentsSectionKeys } from '@/lib/regents-progress'
 import { getStudentSettings } from '@/lib/student-settings'
@@ -18,6 +17,7 @@ import SessionWrapUpForm from './SessionWrapUpForm'
 import { getDeckProgressForDate, getSessionWrapUps, type DeckProgress } from '@/lib/session-metrics'
 import { getLessonAgenda } from '@/lib/lesson-agenda'
 import ExamAssignButton from './ExamAssignButton'
+import RegentsSectionList from './RegentsSectionList'
 import AssignLessonsPicker from './AssignLessonsPicker'
 import {
   assignmentResult,
@@ -316,10 +316,14 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">{info.subjectLabel} exam · {info.year}</p>
-                      <Link href={info.tutorHref} className="font-semibold text-amber-800 hover:underline">
-                        {info.emoji} {info.title}
-                      </Link>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">{info.subjectLabel} exam · {info.yearLabel}</p>
+                      {info.tutorHref ? (
+                        <Link href={info.tutorHref} className="font-semibold text-amber-800 hover:underline">
+                          {info.emoji} {info.title}
+                        </Link>
+                      ) : (
+                        <p className="font-semibold text-amber-800">{info.emoji} {info.title}</p>
+                      )}
                     </div>
                     {result && (
                       <span className="flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700">✓ Finished · {result.percentage}%</span>
@@ -330,7 +334,9 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                       {result ? `${result.latestPoints}/${result.latestPossible} points` : 'Not finished yet'}
                     </p>
                     <div className="flex items-center gap-3">
-                      <Link href={info.tutorHref} className="text-xs font-semibold text-amber-700 hover:underline">Preview</Link>
+                      {info.tutorHref && (
+                        <Link href={info.tutorHref} className="text-xs font-semibold text-amber-700 hover:underline">Preview</Link>
+                      )}
                       <ExamAssignButton
                         studentId={studentId}
                         subject={assignment.subject}
@@ -361,7 +367,7 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         <Link href="/tutor/lessons" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">
           📚 Browse Lessons to Assign →
         </Link>
-        {(tracks.includes('math') || tracks.includes('ela')) && settings.gradeLevel && (
+        {(tracks.includes('math') || tracks.includes('ela')) && (settings.gradeLevel || settings.highSchoolGradeLevel) && (
           <a href="#exam-sections" className="block text-center text-sm text-amber-700 font-medium hover:text-amber-800">
             📝 Assign an Exam Section ↓
           </a>
@@ -431,7 +437,16 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
 
       <div id="exam-sections" className="scroll-mt-4" />
       {tracks.includes('ela') && settings.highSchoolGradeLevel && (
-        <RegentsProgressCards courses={regentsCourses} subject="ela" progress={regentsElaProgress} readOnly />
+        <div className="mb-6">
+          <h3 className="mb-3 font-bold text-gray-700">📖 ELA Exam Progress</h3>
+          <RegentsSectionList
+            studentId={studentId}
+            courses={regentsCourses}
+            subject="ela"
+            progress={regentsElaProgress}
+            assignedTodayKeys={assignedTodayKeys}
+          />
+        </div>
       )}
       {tracks.includes('ela') && !settings.highSchoolGradeLevel && (
         <div className="mb-6">
@@ -481,7 +496,13 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
       <div className="mb-6">
         <h3 className="font-bold text-gray-700 mb-3">➕ Math Progress</h3>
         {tracks.includes('math') && settings.highSchoolGradeLevel && (
-          <RegentsProgressCards courses={regentsCourses} subject="math" progress={regentsMathProgress} readOnly />
+          <RegentsSectionList
+            studentId={studentId}
+            courses={regentsCourses}
+            subject="math"
+            progress={regentsMathProgress}
+            assignedTodayKeys={assignedTodayKeys}
+          />
         )}
         {tracks.includes('math') && !settings.highSchoolGradeLevel && (
           <div className="mb-4">

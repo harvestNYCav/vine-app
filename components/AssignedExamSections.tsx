@@ -1,13 +1,12 @@
 import type { Client } from '@libsql/client'
 import Link from 'next/link'
-import type { GradeLevel } from '@/lib/grade-levels'
 import {
   getExamSectionResults,
   listExamAssignmentsSince,
   pendingExamAssignments,
   type ExamSubject,
 } from '@/lib/exam-assignments'
-import { describeExamSection, examSectionIsForGrade } from '@/lib/exam-sections'
+import { describeExamSection, examSectionIsAvailable, type ExamSectionAccess } from '@/lib/exam-sections'
 import { todayString } from '@/lib/scheduling'
 
 // Assignments older than this drop off the student's list even if never finished.
@@ -19,14 +18,14 @@ export default async function AssignedExamSections({
   db,
   studentId,
   subject,
-  gradeLevel,
+  access,
   readOnly,
   isSpanish = false,
 }: {
   db: Client
   studentId: string
   subject: ExamSubject
-  gradeLevel: GradeLevel | null
+  access: ExamSectionAccess
   readOnly: boolean
   isSpanish?: boolean
 }) {
@@ -36,7 +35,7 @@ export default async function AssignedExamSections({
     getExamSectionResults(db, studentId),
   ])
   const pending = pendingExamAssignments(assignments.filter(item => item.subject === subject), results)
-    .filter(assignment => examSectionIsForGrade(assignment, gradeLevel))
+    .filter(assignment => examSectionIsAvailable(assignment, access))
     .flatMap(assignment => {
       const info = describeExamSection(assignment)
       return info ? [info] : []
@@ -56,7 +55,7 @@ export default async function AssignedExamSections({
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-white text-2xl">{info.emoji}</div>
               <div className="min-w-0 flex-1">
                 <p className="font-semibold text-gray-800">{useSpanish && info.titleEs ? info.titleEs : info.title}</p>
-                <p className="mt-0.5 text-xs text-gray-500">{info.year} · {info.subjectLabel}</p>
+                <p className="mt-0.5 text-xs text-gray-500">{info.yearLabel} · {info.subjectLabel}</p>
               </div>
               <span className="rounded-full bg-amber-200 px-2 py-1 text-[11px] font-bold text-amber-800">
                 {isSpanish ? 'Asignado' : 'Assigned'}

@@ -112,18 +112,18 @@ export default async function ModulesPage({
           </div>
         )}
 
-        {settings.highSchoolGradeLevel && (
-          <RegentsCourseCards courses={regentsCourses} subject="math" readOnly={readOnly} />
-        )}
-
-        {!settings.highSchoolGradeLevel && <AssignedExamSections
+        <AssignedExamSections
           db={db}
           studentId={view.studentId}
           subject="math"
-          gradeLevel={settings.gradeLevel}
+          access={{ tracks, gradeLevel: settings.gradeLevel, regentsCourses }}
           readOnly={readOnly}
           isSpanish={isSpanish}
-        />}
+        />
+
+        {settings.highSchoolGradeLevel && (
+          <RegentsCourseCards courses={regentsCourses} subject="math" readOnly={readOnly} />
+        )}
 
         {!settings.highSchoolGradeLevel && <section className="mb-8">
           <div className="mb-3 flex items-end justify-between">
@@ -275,18 +275,18 @@ export default async function ModulesPage({
       </div>
       <p className="text-gray-500 text-sm mb-6">{currentMode === 'ela' ? 'ELA' : 'ESL'}</p>
 
-      {currentMode === 'ela' && settings.highSchoolGradeLevel && (
-        <RegentsCourseCards courses={regentsCourses} subject="ela" readOnly={readOnly} />
-      )}
-
-      {currentMode === 'ela' && !settings.highSchoolGradeLevel && (
+      {currentMode === 'ela' && (
         <AssignedExamSections
           db={db}
           studentId={view.studentId}
           subject="ela"
-          gradeLevel={settings.gradeLevel}
+          access={{ tracks, gradeLevel: settings.gradeLevel, regentsCourses }}
           readOnly={readOnly}
         />
+      )}
+
+      {currentMode === 'ela' && settings.highSchoolGradeLevel && (
+        <RegentsCourseCards courses={regentsCourses} subject="ela" readOnly={readOnly} />
       )}
 
       {currentMode === 'ela' && !settings.highSchoolGradeLevel && (
