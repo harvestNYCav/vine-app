@@ -42,6 +42,9 @@ redirects any user whose role doesn't belong there. There is no `middleware.ts`/
 layouts and the API handlers are the access checks.
 
 - `app/page.tsx`: landing page. Picks a role and sends signed-in users to their home.
+- `app/manifest.ts`, `app/icon.svg`, `app/apple-icon.png`, `app/favicon.ico`: the leaf icon and
+  web app manifest used when someone adds Vine to a phone's home screen. The PNGs under
+  `public/icons/` and the `.ico` are rendered from the SVGs by `scripts/build-icons.sh`.
 - `app/(auth)/login`: PIN pad (plus the email-code step for admins).
 - `app/(student)/`: the learner app.
   - `home`, `progress`, `skills/[tag]`, `tracks` (students choose their own tracks).
@@ -116,6 +119,7 @@ refreshing the exam catalogs.
   rebuild the generated catalogs and the WebP question crops under `public/nysed/`. They need
   Python with `scripts/requirements-nysed.txt` (and Tesseract for scanned editions).
 - `scripts/seed.ts` loads demo users through `lib/demo-seed.ts`.
+- `scripts/build-icons.sh` renders the app icons (needs `rsvg-convert` and ImageMagick).
 - `evals/`: offline quality evaluations of the ESL lessons (`summary.md`, a `lesson_NN.json` per
   lesson, and `postcheck.py`). They are not used at runtime.
 
