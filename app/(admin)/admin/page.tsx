@@ -12,6 +12,7 @@ import type { Track } from '@/types'
 import AdminStudentControls from './AdminStudentControls'
 import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
+import AdminDeleteAccountControls from './AdminDeleteAccountControls'
 import AdminCreateStudentForm from './AdminCreateStudentForm'
 import AdminParentControls from './AdminParentControls'
 import AdminPinResetControls from './AdminPinResetControls'
@@ -163,7 +164,8 @@ export default async function AdminPage() {
       />
       <AdminAllowlistControls initialEmails={adminAllowlist} />
       <AdminPinResetControls profiles={resettableProfiles} />
-      <AdminDangerZoneControls profiles={resettableProfiles} />
+      <AdminDeleteAccountControls profiles={resettableProfiles} />
+      <AdminDangerZoneControls />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         <div className="bg-white border border-slate-200 rounded-lg p-4">

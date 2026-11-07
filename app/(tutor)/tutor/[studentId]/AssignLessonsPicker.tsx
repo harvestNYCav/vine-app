@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { matchesSearch } from '@/lib/search'
 
 interface LessonOption {
   slug: string
@@ -21,9 +22,24 @@ export default function AssignLessonsPicker({ studentId, groups, scheduledSlugs 
   const router = useRouter()
   const [open, setOpen] = useState(false)
   const [checked, setChecked] = useState<Set<string>>(new Set())
+  const [query, setQuery] = useState('')
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
   const scheduled = new Set(scheduledSlugs)
+  // Lessons ticked before the search changed stay ticked (and get assigned) even while hidden.
+  const visibleGroups = groups
+    .map(group => ({
+      ...group,
+      lessons: group.lessons.filter(lesson => matchesSearch(query, lesson.title, lesson.subtitle, group.label)),
+    }))
+    .filter(group => group.lessons.length > 0)
+
+  function close() {
+    setOpen(false)
+    setChecked(new Set())
+    setQuery('')
+    setError('')
+  }
 
   function toggle(slug: string) {
     setChecked(prev => {
@@ -50,8 +66,7 @@ export default function AssignLessonsPicker({ studentId, groups, scheduledSlugs 
       })
       const data = await response.json().catch(() => ({}))
       if (!response.ok) throw new Error(typeof data.error === 'string' ? data.error : 'Could not assign. Try again.')
-      setChecked(new Set())
-      setOpen(false)
+      close()
       router.refresh()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not assign. Try again.')
@@ -78,14 +93,27 @@ export default function AssignLessonsPicker({ studentId, groups, scheduledSlugs 
         <p className="text-sm font-semibold text-gray-700">Pick lessons for today</p>
         <button
           type="button"
-          onClick={() => { setOpen(false); setChecked(new Set()); setError('') }}
+          onClick={close}
           className="text-xs font-medium text-gray-500 underline hover:text-gray-700"
         >
           Cancel
         </button>
       </div>
+      <input
+        type="search"
+        value={query}
+        onChange={event => setQuery(event.target.value)}
+        autoFocus
+        autoComplete="off"
+        aria-label="Search lessons"
+        placeholder="Search lessons"
+        className="mb-2 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm outline-none focus:border-amber-500"
+      />
       <div className="max-h-80 space-y-3 overflow-y-auto">
-        {groups.map(group => (
+        {visibleGroups.length === 0 && (
+          <p className="px-1 py-2 text-sm text-gray-400">No lessons match &ldquo;{query.trim()}&rdquo;.</p>
+        )}
+        {visibleGroups.map(group => (
           <div key={group.label}>
             {groups.length > 1 && (
               <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-amber-600">{group.label}</p>

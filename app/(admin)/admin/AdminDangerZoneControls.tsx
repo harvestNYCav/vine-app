@@ -1,43 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 
-interface ProfileOption {
-  id: string
-  name: string
-  role: 'student' | 'tutor' | 'parent'
-}
-
-export default function AdminDangerZoneControls({ profiles }: { profiles: ProfileOption[] }) {
-  const router = useRouter()
-  const [selectedId, setSelectedId] = useState('')
-  const [pendingProfile, setPendingProfile] = useState<ProfileOption | null>(null)
+export default function AdminDangerZoneControls() {
   const [resetOpen, setResetOpen] = useState(false)
   const [resetText, setResetText] = useState('')
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
-
-  const deleteProfile = async () => {
-    if (!pendingProfile) return
-    setBusy(true)
-    setMessage('')
-    const res = await fetch('/vine-app/api/admin/reset', {
-      method: 'DELETE',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId: pendingProfile.id }),
-    })
-    const data = await res.json().catch(() => ({}))
-    setBusy(false)
-    if (!res.ok) {
-      setMessage(data.error || 'Could not delete profile.')
-      return
-    }
-    setMessage(`${pendingProfile.name} was deleted.`)
-    setPendingProfile(null)
-    setSelectedId('')
-    router.refresh()
-  }
 
   const resetAll = async () => {
     setBusy(true)
@@ -61,92 +30,23 @@ export default function AdminDangerZoneControls({ profiles }: { profiles: Profil
       <div className="flex flex-col gap-1 mb-4">
         <p className="text-sm font-semibold text-red-700">Danger zone</p>
         <h2 className="text-lg font-bold text-slate-900">Reset data</h2>
-        <p className="text-sm text-slate-500">Delete test profiles or clear the entire database.</p>
+        <p className="text-sm text-slate-500">Clear the entire database. To remove one person, use Delete an account above.</p>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
-        <div className="rounded-lg border border-slate-200 p-3">
-          <p className="text-sm font-semibold text-slate-800 mb-2">Delete one profile</p>
-          {profiles.length === 0 ? (
-            <p className="text-sm text-slate-400">No student, tutor or parent profiles to delete.</p>
-          ) : (
-            <div className="flex flex-wrap items-end gap-2">
-              <label className="block min-w-0 flex-1 text-xs font-semibold text-slate-600">
-                <span className="mb-1 block">Profile</span>
-                <select
-                  value={selectedId}
-                  onChange={event => {
-                    setSelectedId(event.target.value)
-                    setPendingProfile(null)
-                    setMessage('')
-                  }}
-                  className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 outline-none focus:border-slate-500"
-                >
-                  <option value="">Choose a profile</option>
-                  {profiles.map(profile => (
-                    <option key={profile.id} value={profile.id}>
-                      {profile.name} · {profile.role}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <button
-                type="button"
-                disabled={!selectedId}
-                onClick={() => {
-                  const profile = profiles.find(candidate => candidate.id === selectedId)
-                  if (!profile) return
-                  setPendingProfile(profile)
-                  setMessage('')
-                }}
-                className="rounded-lg border border-red-200 bg-white px-4 py-2 text-sm font-semibold text-red-600 hover:bg-red-50 disabled:opacity-50"
-              >
-                Delete
-              </button>
-            </div>
-          )}
-        </div>
-
-        <div className="rounded-lg border border-red-200 p-3">
-          <p className="text-sm font-semibold text-slate-800">Full database reset</p>
-          <p className="mt-1 text-xs text-slate-500">Deletes every user and all progress, then restores the default admin email allowlist and test accounts.</p>
-          <button
-            type="button"
-            onClick={() => {
-              setResetOpen(true)
-              setPendingProfile(null)
-              setMessage('')
-            }}
-            className="mt-3 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700"
-          >
-            Reset entire database
-          </button>
-        </div>
+      <div className="rounded-lg border border-red-200 p-3">
+        <p className="text-sm font-semibold text-slate-800">Full database reset</p>
+        <p className="mt-1 text-xs text-slate-500">Deletes every user and all progress, then restores the default admin email allowlist and test accounts.</p>
+        <button
+          type="button"
+          onClick={() => {
+            setResetOpen(true)
+            setMessage('')
+          }}
+          className="mt-3 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700"
+        >
+          Reset entire database
+        </button>
       </div>
-
-      {pendingProfile && (
-        <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-4">
-          <p className="font-semibold text-red-800">Delete {pendingProfile.name}?</p>
-          <p className="mt-1 text-sm text-red-700">This permanently removes this {pendingProfile.role} profile and related progress or assignments.</p>
-          <div className="mt-3 flex gap-2">
-            <button
-              type="button"
-              onClick={deleteProfile}
-              disabled={busy}
-              className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-60"
-            >
-              {busy ? 'Deleting...' : 'Yes, delete profile'}
-            </button>
-            <button
-              type="button"
-              onClick={() => setPendingProfile(null)}
-              className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-600 border border-slate-200"
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      )}
 
       {resetOpen && (
         <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-4">

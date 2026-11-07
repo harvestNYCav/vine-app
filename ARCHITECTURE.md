@@ -59,8 +59,8 @@ layouts and the API handlers are the access checks.
   - `cohort`, `check-in`: student attendance and the tutor's own check-in.
   - `exams/…`: read-only previews of exam content.
 - `app/(admin)/admin/`: one admin page. Its forms (`Admin*Controls.tsx`) cover students, parents,
-  PIN resets, the admin email allowlist, tutor approvals and a danger zone. `check-ins/` shows
-  attendance for any date.
+  PIN resets, account deletion, the admin email allowlist, tutor approvals and a danger zone (full
+  database reset). `check-ins/` shows attendance for any date.
 - `app/api/`: JSON endpoints, grouped as `auth/`, `admin/`, `tutor/`, `parent/`, `student/`,
   `progress`, `practice`, `math/`, `ela/`, `regents/`. Each handler checks the session role itself.
 
