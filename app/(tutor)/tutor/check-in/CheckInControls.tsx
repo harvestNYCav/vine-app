@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { matchesSearch, SEARCHABLE_LIST_SIZE } from '@/lib/search'
 
 interface StudentRow {
   id: string
@@ -60,8 +61,11 @@ export default function CheckInControls({
 }) {
   const [selfPresent, setSelfPresent] = useState(initialSelfPresent)
   const [students, setStudents] = useState(initialStudents)
+  const [query, setQuery] = useState('')
   const [pending, setPending] = useState<string | null>(null)
   const [error, setError] = useState('')
+  const searchable = students.length > SEARCHABLE_LIST_SIZE
+  const visibleStudents = searchable ? students.filter(student => matchesSearch(query, student.name)) : students
 
   async function send(body: Record<string, unknown>, key: string, revert: () => void) {
     setPending(key)
@@ -135,26 +139,42 @@ export default function CheckInControls({
             No students on your roster. Switch to All students above for substitute coverage.
           </p>
         ) : (
-          <div className="mt-3 divide-y divide-gray-100">
-            {students.map(student => (
-              <div key={student.id} className="flex items-center justify-between gap-3 py-2.5">
-                <div className="min-w-0">
-                  <p className="truncate text-sm font-medium text-gray-700">{student.name}</p>
-                  <p className="text-xs text-gray-400">
-                    {student.present === null
-                      ? 'Not marked yet'
-                      : student.recordedByName ? `Marked by ${student.recordedByName}` : 'Marked'}
-                  </p>
+          <>
+            {searchable && (
+              <input
+                type="search"
+                value={query}
+                onChange={event => setQuery(event.target.value)}
+                autoComplete="off"
+                aria-label="Search students"
+                placeholder="Search students"
+                className="mt-3 w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-amber-500"
+              />
+            )}
+            <div className="mt-3 divide-y divide-gray-100">
+              {visibleStudents.length === 0 && (
+                <p className="py-2.5 text-sm text-gray-400">No students match &ldquo;{query.trim()}&rdquo;.</p>
+              )}
+              {visibleStudents.map(student => (
+                <div key={student.id} className="flex items-center justify-between gap-3 py-2.5">
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-medium text-gray-700">{student.name}</p>
+                    <p className="text-xs text-gray-400">
+                      {student.present === null
+                        ? 'Not marked yet'
+                        : student.recordedByName ? `Marked by ${student.recordedByName}` : 'Marked'}
+                    </p>
+                  </div>
+                  <PresenceToggle
+                    present={student.present}
+                    onChange={next => checkInStudent(student.id, next)}
+                    disabled={pending === student.id}
+                    label={`Check-in for ${student.name}`}
+                  />
                 </div>
-                <PresenceToggle
-                  present={student.present}
-                  onChange={next => checkInStudent(student.id, next)}
-                  disabled={pending === student.id}
-                  label={`Check-in for ${student.name}`}
-                />
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </>
         )}
       </section>
 

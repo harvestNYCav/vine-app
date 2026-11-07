@@ -75,8 +75,12 @@ export async function deleteUserProfile(
   if (role === 'student') {
     statements.push(
       { sql: 'DELETE FROM student_tutors WHERE student_id = ?', args: [userId] },
+      { sql: 'DELETE FROM session_wrap_ups WHERE session_id IN (SELECT id FROM sessions WHERE student_id = ?)', args: [userId] },
+      { sql: 'DELETE FROM sessions WHERE student_id = ?', args: [userId] },
       { sql: 'DELETE FROM exam_assignments WHERE student_id = ?', args: [userId] },
       { sql: 'DELETE FROM attendance WHERE student_id = ?', args: [userId] },
+      { sql: 'DELETE FROM tutor_notes WHERE student_id = ?', args: [userId] },
+      { sql: 'DELETE FROM esl_placements WHERE student_id = ?', args: [userId] },
       { sql: 'DELETE FROM parent_students WHERE student_id = ?', args: [userId] },
     )
   } else if (role === 'tutor') {
@@ -87,6 +91,7 @@ export async function deleteUserProfile(
       { sql: 'DELETE FROM lesson_deck_progress WHERE tutor_id = ?', args: [userId] },
       { sql: 'DELETE FROM exam_assignments WHERE tutor_id = ?', args: [userId] },
       { sql: 'DELETE FROM tutor_check_ins WHERE tutor_id = ?', args: [userId] },
+      { sql: 'DELETE FROM tutor_notes WHERE tutor_id = ?', args: [userId] },
     )
   } else {
     statements.push(
@@ -107,6 +112,8 @@ export async function resetDatabase(db: Client): Promise<void> {
     { sql: 'DELETE FROM lesson_deck_progress', args: [] },
     { sql: 'DELETE FROM sessions', args: [] },
     { sql: 'DELETE FROM exam_assignments', args: [] },
+    { sql: 'DELETE FROM tutor_notes', args: [] },
+    { sql: 'DELETE FROM esl_placements', args: [] },
     { sql: 'DELETE FROM math_sessions', args: [] },
     { sql: 'DELETE FROM math_attempts', args: [] },
     { sql: 'DELETE FROM math_exam_attempts', args: [] },
