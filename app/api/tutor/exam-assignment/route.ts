@@ -4,8 +4,9 @@ import getDb from '@/lib/db'
 import { todayString } from '@/lib/scheduling'
 import { getStudentTracks } from '@/lib/tracks'
 import { getStudentSettings } from '@/lib/student-settings'
+import { getStudentRegentsCourses } from '@/lib/regents-courses'
 import { assignExamSection, isExamSubject, unassignExamSection, type ExamSectionRef } from '@/lib/exam-assignments'
-import { examSectionIsForGrade } from '@/lib/exam-sections'
+import { examSectionIsAvailable } from '@/lib/exam-sections'
 
 type Parsed = { ok: true; studentId: string; ref: ExamSectionRef } | { ok: false; response: NextResponse }
 
@@ -18,8 +19,9 @@ async function parseRequest(req: NextRequest): Promise<Parsed> {
   return { ok: true, studentId, ref: { subject, examId, sectionSlug } }
 }
 
-// Tutors assign one released-exam section for today's session. It doesn't unlock anything (every
-// section for the student's grade is already open); it puts the section on both schedules.
+// Tutors assign one released-exam section for today's session: a Grade 3–8 section for the student's
+// grade, or a Regents section in one of their courses. It doesn't unlock anything (those sections are
+// already open to the student); it puts the section on both schedules.
 export async function POST(req: NextRequest) {
   const session = await getSession()
   if (!session || session.role !== 'tutor') {
@@ -33,12 +35,13 @@ export async function POST(req: NextRequest) {
   if (student.rows.length === 0) {
     return NextResponse.json({ error: 'Student not found' }, { status: 404 })
   }
-  const [tracks, settings] = await Promise.all([
+  const [tracks, settings, regentsCourses] = await Promise.all([
     getStudentTracks(db, parsed.studentId),
     getStudentSettings(db, parsed.studentId),
+    getStudentRegentsCourses(db, parsed.studentId),
   ])
-  if (!tracks.includes(parsed.ref.subject) || !examSectionIsForGrade(parsed.ref, settings.gradeLevel)) {
-    return NextResponse.json({ error: "That section isn't available for this student's track and grade" }, { status: 400 })
+  if (!examSectionIsAvailable(parsed.ref, { tracks, gradeLevel: settings.gradeLevel, regentsCourses })) {
+    return NextResponse.json({ error: "That section isn't available for this student's track, grade or Regents courses" }, { status: 400 })
   }
 
   await assignExamSection(db, { ...parsed.ref, studentId: parsed.studentId, tutorId: session.userId, date: todayString() })
