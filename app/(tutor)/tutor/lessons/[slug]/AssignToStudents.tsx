@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { Track } from '@/types'
 import type { TutorRosterScope } from '@/lib/tutor-roster'
+import { matchesSearch, SEARCHABLE_LIST_SIZE } from '@/lib/search'
 
 interface Student {
   id: string
@@ -66,11 +67,15 @@ function parseCollisions(value: unknown): AssignmentCollision[] {
 export default function AssignToStudents({ moduleSlug, moduleTrack, today, students, rosterScope }: Props) {
   const router = useRouter()
   const [checked, setChecked] = useState<Set<string>>(new Set())
+  const [query, setQuery] = useState('')
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
   const [pendingAssignment, setPendingAssignment] = useState<PendingAssignment | null>(null)
 
   const trackLabel = moduleTrack.toUpperCase()
+  const searchable = students.length > SEARCHABLE_LIST_SIZE
+  // Students ticked before the search changed stay ticked (and get assigned) even while hidden.
+  const visibleStudents = searchable ? students.filter(student => matchesSearch(query, student.name)) : students
 
   function toggle(id: string) {
     setChecked(prev => {
@@ -149,9 +154,23 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
 
   return (
     <div className="space-y-3">
-      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Assign to students</p>
+      <div className="flex items-baseline justify-between gap-2">
+        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Assign to students</p>
+        {checked.size > 0 && <p className="text-xs font-medium text-amber-700">{checked.size} selected</p>}
+      </div>
+      {searchable && (
+        <input
+          type="search"
+          value={query}
+          onChange={event => setQuery(event.target.value)}
+          autoComplete="off"
+          aria-label="Search students"
+          placeholder="Search students"
+          className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-amber-500"
+        />
+      )}
       <div className="bg-white rounded-2xl border border-gray-100 divide-y divide-gray-50">
-        {students.map(s => (
+        {visibleStudents.map(s => (
           <label key={s.id} className="flex items-center gap-3 px-4 py-2.5 cursor-pointer">
             <input
               type="checkbox"
@@ -168,6 +187,9 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
               ? 'No students are assigned to you. Use All students above for substitute coverage.'
               : 'No students yet.'}
           </p>
+        )}
+        {students.length > 0 && visibleStudents.length === 0 && (
+          <p className="px-4 py-3 text-sm text-gray-400">No students match &ldquo;{query.trim()}&rdquo;.</p>
         )}
       </div>
 

@@ -7,6 +7,7 @@ import { GRADE_LEVELS, HIGH_SCHOOL_GRADE_LEVELS, isHighSchoolGradeLevel, type St
 import { REGENTS_COURSE_OPTIONS, regentsCourseSubject, type RegentsCourse } from '@/lib/regents-courses'
 import type { TutorPairing } from '@/lib/tutor-pairings'
 import type { Track } from '@/types'
+import AdminPeoplePicker from './AdminPeoplePicker'
 
 interface TutorOption {
   id: string
@@ -131,30 +132,21 @@ export default function AdminStudentControls({
         )}
       </div>
 
-      <div>
-        <p className="text-xs font-medium text-gray-500 mb-1">Tutors</p>
-        {tutors.length === 0 ? (
+      {tutors.length === 0 ? (
+        <div>
+          <p className="text-xs font-medium text-gray-500 mb-1">Tutors</p>
           <p className="text-xs text-gray-400">No tutors yet</p>
-        ) : (
-          <div className="flex flex-wrap gap-2">
-            {tutors.map(tutor => {
-              const active = tutorIds.includes(tutor.id)
-              return (
-                <button
-                  key={tutor.id}
-                  type="button"
-                  onClick={() => toggleTutor(tutor.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
-                    active ? 'bg-slate-800 border-slate-800 text-white' : 'bg-white border-gray-200 text-gray-500'
-                  }`}
-                >
-                  {tutor.name}
-                </button>
-              )
-            })}
-          </div>
-        )}
-      </div>
+        </div>
+      ) : (
+        <AdminPeoplePicker
+          label="Tutors"
+          people={tutors}
+          selectedIds={tutorIds}
+          onToggle={toggleTutor}
+          noneSelectedLabel="No tutor assigned"
+          searchPlaceholder="Add a tutor by name"
+        />
+      )}
 
       <div>
         <p className="text-xs font-medium text-gray-500 mb-1">Tracks</p>

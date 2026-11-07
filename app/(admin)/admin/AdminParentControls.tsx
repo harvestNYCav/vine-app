@@ -3,6 +3,7 @@
 import { FormEvent, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { AdminParentRow } from '@/lib/parents'
+import AdminPeoplePicker from './AdminPeoplePicker'
 
 interface StudentOption {
   id: string
@@ -59,27 +60,20 @@ function ParentRow({ parent, students }: { parent: AdminParentRow; students: Stu
         </p>
       </div>
 
-      <p className="mb-1 text-xs font-medium text-slate-500">Students this parent can see</p>
       {students.length === 0 ? (
-        <p className="text-xs text-slate-400">No students yet</p>
+        <>
+          <p className="mb-1 text-xs font-medium text-slate-500">Students this parent can see</p>
+          <p className="text-xs text-slate-400">No students yet</p>
+        </>
       ) : (
-        <div className="flex flex-wrap gap-2">
-          {students.map(student => {
-            const active = studentIds.includes(student.id)
-            return (
-              <button
-                key={student.id}
-                type="button"
-                onClick={() => toggleStudent(student.id)}
-                className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${
-                  active ? 'border-slate-800 bg-slate-800 text-white' : 'border-gray-200 bg-white text-gray-500'
-                }`}
-              >
-                {student.name}
-              </button>
-            )
-          })}
-        </div>
+        <AdminPeoplePicker
+          label="Students this parent can see"
+          people={students}
+          selectedIds={studentIds}
+          onToggle={toggleStudent}
+          noneSelectedLabel="No student linked yet"
+          searchPlaceholder="Add a student by name"
+        />
       )}
 
       <label className="mt-3 flex items-center gap-2 text-xs font-medium text-gray-600">
