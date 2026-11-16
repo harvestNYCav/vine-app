@@ -4,6 +4,7 @@ This document tracks local configuration, credentials, and environment variables
 
 ## Environment Variables
 - `ADMIN_EMAIL_FROM` - document whether this is required, optional, or only used in local development.
+- `ADMIN_EMAILS` - optional, comma-separated emails approved for admin signup. Seeds `admin_email_allowlist` when that table is empty and after an admin reset. Set it in Vercel (Production and Preview), not in the repo: these are personal addresses.
 - `JWT_SECRET` - document whether this is required, optional, or only used in local development.
 - `NODE_ENV` - document whether this is required, optional, or only used in local development.
 - `PROGRAM_TIME_ZONE` - optional IANA time zone for program calendar dates; defaults to `America/New_York`.

@@ -190,6 +190,10 @@ Things that are not obvious from the table names:
      An admin approves the request (`app/api/admin/tutor-requests`) before a `users` row exists.
    - The first admin can sign up freely. After that, a new admin's email must be on
      `admin_email_allowlist`, and new admins store their email as their display name.
+     Signing up removes the email from the allowlist; existing admins sign in without it.
+     The table is seeded from the `ADMIN_EMAILS` environment variable when it is empty and
+     after an admin reset (`lib/admin-allowlist.ts`). Admins add or remove emails at `/admin`.
+     Admin emails are never written into the repo.
 4. On success the handler sets the `vine_session` cookie: a signed JWT holding `{ userId, name,
    role }`, created by `createSession` in `lib/auth.ts` and read back by `getSession()`. A student
    with no tracks is sent to `/tracks`.
@@ -336,6 +340,9 @@ Environment variables read by the code:
   local SQLite file.
 - `JWT_SECRET`: signs session cookies. Set it in every deployed environment.
 - `RESEND_API_KEY`, `ADMIN_EMAIL_FROM`: admin email verification codes.
+- `ADMIN_EMAILS`: comma-separated emails approved for admin signup. Seeds
+  `admin_email_allowlist` on a new or reset database. Optional; without it, only the first admin
+  can sign up until an admin approves more emails at `/admin`.
 - `PROGRAM_TIME_ZONE`: optional, IANA zone, default `America/New_York`.
 - `NODE_ENV`: cookies are marked `secure` in `production`.
 

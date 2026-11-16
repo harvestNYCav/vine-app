@@ -1,19 +1,21 @@
 import type { Client } from '@libsql/client'
-import { normalizeEmail } from './email-verification'
+import { isValidEmail, normalizeEmail } from './email-verification'
 
-export const DEFAULT_ADMIN_EMAIL_ALLOWLIST = [
-  'julianahhong@gmail.com',
-  'richaguir@gmail.com',
-  'harvestinthecitynyc@gmail.com',
-  'shichengrao@gmail.com',
-  'VineAdmin@harvest-nyc.com',
-  'aldowiloto@gmail.com',
-  'rguen97@gmail.com'
-]
+// Admin emails are personal addresses, so they are not written into this public
+// repo. ADMIN_EMAILS (comma-separated, set in the deployment's environment) seeds
+// admin_email_allowlist on a new or reset database. After that, admins manage the
+// table from /admin.
+export function configuredAdminEmails(value = process.env.ADMIN_EMAILS): string[] {
+  if (!value) return []
+  const emails = value.split(/[\s,;]+/).map(normalizeEmail).filter(isValidEmail)
+  return [...new Set(emails)]
+}
 
 export async function seedDefaultAdminAllowlist(db: Client, createdBy = 'system'): Promise<void> {
+  const emails = configuredAdminEmails()
+  if (emails.length === 0) return
   const now = Date.now()
-  await db.batch(DEFAULT_ADMIN_EMAIL_ALLOWLIST.map(email => ({
+  await db.batch(emails.map(email => ({
     sql: `
       INSERT INTO admin_email_allowlist (email, created_by, created_at)
       VALUES (?, ?, ?)
@@ -21,7 +23,7 @@ export async function seedDefaultAdminAllowlist(db: Client, createdBy = 'system'
         created_by = excluded.created_by,
         created_at = excluded.created_at
     `,
-    args: [normalizeEmail(email), createdBy, now],
+    args: [email, createdBy, now],
   })))
 }
 
