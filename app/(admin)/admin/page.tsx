@@ -147,6 +147,12 @@ export default async function AdminPage() {
             Download session data (CSV)
           </a>
           <Link
+            href="/admin/metrics"
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+          >
+            Impact →
+          </Link>
+          <Link
             href="/admin/check-ins"
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
           >
