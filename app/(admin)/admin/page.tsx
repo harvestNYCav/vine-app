@@ -9,7 +9,7 @@ import { listParentsForAdmin } from '@/lib/parents'
 import { loadTutorPairingRecords, summarizeTutorPairings } from '@/lib/tutor-pairings'
 import { listTutorSignupRequests } from '@/lib/tutor-approvals'
 import type { Track } from '@/types'
-import AdminStudentControls from './AdminStudentControls'
+import AdminStudentDirectory, { type AdminStudentSummary } from './AdminStudentDirectory'
 import AdminAllowlistControls from './AdminAllowlistControls'
 import AdminDangerZoneControls from './AdminDangerZoneControls'
 import AdminCreateStudentForm from './AdminCreateStudentForm'
@@ -132,6 +132,31 @@ export default async function AdminPage() {
     return acc
   }, { ela: 0, esl: 0, math: 0 })
 
+  // Plain, serializable rows for the client-side search and filters.
+  const directoryStudents: AdminStudentSummary[] = studentData.map(student => ({
+    id: student.id,
+    name: student.name,
+    lastActiveLabel: formatLastActive(student.last_active),
+    tracks: student.tracks,
+    tutorIds: student.tutorIds,
+    tutorNames: student.tutorIds.map(id => tutorNameById.get(id) ?? 'Unknown'),
+    gradeLevel: studentSchoolGradeLevel(student.settings),
+    regentsCourses: student.regentsCourses,
+    regentsCourseLabels: student.regentsCourses.map(course =>
+      REGENTS_COURSE_OPTIONS.find(option => option.id === course)?.label ?? course,
+    ),
+    mathSpanishEnabled: student.settings.mathSpanishEnabled,
+    completedLessons: student.completedLessons,
+    totalLessons: student.totalLessons,
+    vocabMastered: student.vocabMastered,
+    reviewedModules: student.reviewedModules,
+    mathProblems: student.mathProblems,
+    mathAccuracy: student.mathAccuracy,
+    examSectionsCompleted: student.examSectionsCompleted,
+    elaExamSectionsCompleted: student.elaExamSectionsCompleted,
+    pairings: pairingsByStudent.get(student.id) ?? [],
+  }))
+
   return (
     <main className="max-w-5xl mx-auto px-4 py-6">
       <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
@@ -191,85 +216,7 @@ export default async function AdminPage() {
         </div>
       </div>
 
-      <div className="space-y-4">
-        {studentData.length === 0 && (
-          <div className="bg-white border border-slate-200 rounded-lg p-6 text-slate-500">
-            No students yet.
-          </div>
-        )}
-
-        {studentData.map(student => (
-          <section key={student.id} className="bg-white border border-slate-200 rounded-lg p-4">
-            <div className="grid lg:grid-cols-[1fr_280px] gap-5">
-              <div>
-                <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
-                  <div>
-                    <h2 className="text-lg font-bold text-slate-900">{student.name}</h2>
-                    <p className="text-sm text-slate-500">
-                      {formatLastActive(Number(student.last_active))} · Tutors: {
-                        student.tutorIds.length > 0
-                          ? student.tutorIds.map(id => tutorNameById.get(id) ?? 'Unknown').join(', ')
-                          : 'Unassigned'
-                      }
-                    </p>
-                    <p className="mt-1 text-xs font-semibold text-slate-600">
-                      Grade level: {studentSchoolGradeLevel(student.settings)
-                        ? `Grade ${studentSchoolGradeLevel(student.settings)}`
-                        : 'Not assigned'}
-                    </p>
-                    {student.regentsCourses.length > 0 && (
-                      <p className="mt-1 text-xs text-slate-600">
-                        Regents courses: {student.regentsCourses.map(course =>
-                          REGENTS_COURSE_OPTIONS.find(option => option.id === course)?.label ?? course,
-                        ).join(', ')}
-                      </p>
-                    )}
-                  </div>
-                  <div className="flex gap-1">
-                    {student.tracks.length === 0 ? (
-                      <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">Needs tracks</span>
-                    ) : student.tracks.map(track => (
-                      <span key={track} className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded-full font-semibold">{track.toUpperCase()}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-green-700">{student.completedLessons}/{student.totalLessons}</p>
-                    <p className="text-xs text-slate-500">English lessons</p>
-                  </div>
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-blue-700">{student.vocabMastered}</p>
-                    <p className="text-xs text-slate-500">Words mastered</p>
-                  </div>
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-purple-700">{student.reviewedModules}</p>
-                    <p className="text-xs text-slate-500">Lessons reviewed</p>
-                  </div>
-                  <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-xl font-bold text-amber-700">{student.mathProblems}</p>
-                    <p className="text-xs text-slate-500">Math problems · {student.mathAccuracy}%</p>
-                    <p className="mt-0.5 text-xs text-blue-600">{student.examSectionsCompleted} Math exam sections</p>
-                    <p className="mt-0.5 text-xs text-purple-600">{student.elaExamSectionsCompleted} ELA exam sections</p>
-                  </div>
-                </div>
-              </div>
-
-              <AdminStudentControls
-                studentId={student.id}
-                initialTutorIds={student.tutorIds}
-                initialTracks={student.tracks}
-                initialMathSpanishEnabled={student.settings.mathSpanishEnabled}
-                initialGradeLevel={studentSchoolGradeLevel(student.settings)}
-                initialRegentsCourses={student.regentsCourses}
-                tutors={tutors}
-                pairings={pairingsByStudent.get(student.id) ?? []}
-              />
-            </div>
-          </section>
-        ))}
-      </div>
+      <AdminStudentDirectory students={directoryStudents} tutors={tutors} />
     </main>
   )
 }
