@@ -7,6 +7,7 @@ import { getTutorRosterScope } from '@/lib/tutor-roster-server'
 import { getStudentTracks } from '@/lib/tracks'
 import { summarizeLessonProgressForTracks } from '@/lib/lesson-progress'
 import { formatWordCount } from '@/lib/study'
+import { getMathLeaderboard } from '@/lib/math-leaderboard'
 
 const LB_TYPES = [
   { key: 'practice_5', label: '5 min', isTimed: true },
@@ -64,33 +65,13 @@ export default async function TutorDashboardPage() {
     }
   }))
 
+  // One row per student: their best run of each type.
   const leaderboards = (await Promise.all(LB_TYPES.map(async ({ key, label, isTimed }) => {
-    const assignedOnlySql = rosterScope === 'assigned'
-      ? `AND EXISTS (
-          SELECT 1 FROM student_tutors st
-          WHERE st.student_id = ms.user_id AND st.tutor_id = ?
-        )`
-      : ''
-    const args = rosterScope === 'assigned' ? [key, session!.userId] : [key]
-    const result = isTimed
-      ? await db.execute({
-          sql: `SELECT ms.user_id, u.name, ms.correct, ms.accuracy, ms.total_problems
-                FROM math_sessions ms JOIN users u ON u.id = ms.user_id
-                WHERE ms.session_type = ?
-                ${assignedOnlySql}
-                ORDER BY ms.correct DESC, ms.accuracy DESC LIMIT 5`,
-          args,
-        })
-      : await db.execute({
-          sql: `SELECT ms.user_id, u.name, ms.correct, ms.total_problems, ms.accuracy,
-                       (ms.ended_at - ms.started_at) as duration_ms
-                FROM math_sessions ms JOIN users u ON u.id = ms.user_id
-                WHERE ms.session_type = ? AND ms.ended_at > ms.started_at
-                ${assignedOnlySql}
-                ORDER BY ms.correct DESC, (ms.ended_at - ms.started_at) ASC LIMIT 5`,
-          args,
-        })
-    return { key, label, isTimed, rows: result.rows }
+    const rows = await getMathLeaderboard(db, key, {
+      limit: 5,
+      tutorId: rosterScope === 'assigned' ? session!.userId : undefined,
+    })
+    return { key, label, isTimed, rows }
   }))).filter(lb => lb.rows.length > 0)
 
   return (
