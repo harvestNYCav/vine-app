@@ -216,6 +216,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
   const regentsMathProgress = examProgress.filter(row => regentsMathKeys.has(`${row.exam_id}:${row.section_slug}`))
   const regentsElaProgress = elaExamProgress.filter(row => regentsElaKeys.has(`${row.exam_id}:${row.section_slug}`))
   const visibleModules = filterModulesByTracks(ALL_MODULES, tracks)
+  // Only ESL lessons are assigned from the picker; ELA work is assigned as exam sections below.
+  const eslModules = visibleModules.filter(mod => mod.track === 'esl')
   const visibleModuleSlugs = new Set(visibleModules.map(mod => mod.slug))
 
   const mathMastery: Record<string, number> = mathRow ? JSON.parse(mathRow.skill_mastery as string) : {}
@@ -351,16 +353,10 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
             </div>
           )}
         </div>
-        {visibleModules.length > 0 && (
+        {eslModules.length > 0 && (
           <AssignLessonsPicker
             studentId={studentId}
-            groups={(['esl', 'ela'] as const).flatMap(track => {
-              const lessons = visibleModules.filter(mod => mod.track === track)
-              return lessons.length > 0 ? [{
-                label: track.toUpperCase(),
-                lessons: lessons.map(mod => ({ slug: mod.slug, title: mod.titleEn, subtitle: track === 'esl' ? mod.titleEs : undefined })),
-              }] : []
-            })}
+            lessons={eslModules.map((mod, i) => ({ slug: mod.slug, number: i + 1, title: mod.titleEn, subtitle: mod.titleEs }))}
             scheduledSlugs={todayLessons.map(lesson => lesson.module.slug)}
           />
         )}

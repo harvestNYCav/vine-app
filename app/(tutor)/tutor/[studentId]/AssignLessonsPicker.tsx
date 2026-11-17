@@ -1,29 +1,45 @@
 'use client'
 
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { matchesSearch } from '@/lib/search'
 
 interface LessonOption {
   slug: string
+  number: number
   title: string
   subtitle?: string
 }
 
 interface Props {
   studentId: string
-  groups: Array<{ label: string; lessons: LessonOption[] }>
+  lessons: LessonOption[]
   scheduledSlugs: string[]
 }
 
 // Lets a tutor tick several lessons for this student and add them all to today's session at once,
 // instead of assigning them one by one from the Lesson Library.
-export default function AssignLessonsPicker({ studentId, groups, scheduledSlugs }: Props) {
+export default function AssignLessonsPicker({ studentId, lessons, scheduledSlugs }: Props) {
   const router = useRouter()
   const [open, setOpen] = useState(false)
+  const [query, setQuery] = useState('')
   const [checked, setChecked] = useState<Set<string>>(new Set())
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
   const scheduled = new Set(scheduledSlugs)
+
+  // Every search word must match the number, English title or Spanish title.
+  const filtered = useMemo(
+    () => lessons.filter(lesson => matchesSearch(query, [lesson.number, lesson.title, lesson.subtitle])),
+    [lessons, query],
+  )
+
+  function close() {
+    setOpen(false)
+    setChecked(new Set())
+    setQuery('')
+    setError('')
+  }
 
   function toggle(slug: string) {
     setChecked(prev => {
@@ -45,13 +61,12 @@ export default function AssignLessonsPicker({ studentId, groups, scheduledSlugs 
         // Send in list order (not click order) so the schedule reads the same as the picker.
         body: JSON.stringify({
           studentId,
-          moduleSlugs: groups.flatMap(group => group.lessons.map(lesson => lesson.slug)).filter(slug => checked.has(slug)),
+          moduleSlugs: lessons.map(lesson => lesson.slug).filter(slug => checked.has(slug)),
         }),
       })
       const data = await response.json().catch(() => ({}))
       if (!response.ok) throw new Error(typeof data.error === 'string' ? data.error : 'Could not assign. Try again.')
-      setChecked(new Set())
-      setOpen(false)
+      close()
       router.refresh()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not assign. Try again.')
@@ -75,47 +90,74 @@ export default function AssignLessonsPicker({ studentId, groups, scheduledSlugs 
   return (
     <div className="rounded-xl border border-amber-200 bg-amber-50/40 p-3">
       <div className="mb-2 flex items-center justify-between">
-        <p className="text-sm font-semibold text-gray-700">Pick lessons for today</p>
+        <p className="text-sm font-semibold text-gray-700">Pick ESL lessons for today</p>
         <button
           type="button"
-          onClick={() => { setOpen(false); setChecked(new Set()); setError('') }}
+          onClick={close}
           className="text-xs font-medium text-gray-500 underline hover:text-gray-700"
         >
           Cancel
         </button>
       </div>
-      <div className="max-h-80 space-y-3 overflow-y-auto">
-        {groups.map(group => (
-          <div key={group.label}>
-            {groups.length > 1 && (
-              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-amber-600">{group.label}</p>
-            )}
-            <div className="divide-y divide-gray-50 rounded-xl border border-gray-100 bg-white">
-              {group.lessons.map(lesson => {
-                const alreadyScheduled = scheduled.has(lesson.slug)
-                return (
-                  <label
-                    key={lesson.slug}
-                    className={`flex items-center gap-3 px-3 py-2 ${alreadyScheduled ? 'cursor-default opacity-60' : 'cursor-pointer'}`}
-                  >
-                    <input
-                      type="checkbox"
-                      checked={alreadyScheduled || checked.has(lesson.slug)}
-                      disabled={alreadyScheduled}
-                      onChange={() => toggle(lesson.slug)}
-                      className="h-4 w-4 accent-amber-600"
-                    />
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-sm text-gray-800">{lesson.title}</span>
-                      {lesson.subtitle && <span className="block text-xs text-gray-400">{lesson.subtitle}</span>}
-                    </span>
-                    {alreadyScheduled && <span className="text-xs font-medium text-green-700">Scheduled</span>}
-                  </label>
-                )
-              })}
-            </div>
+      <div className="relative mb-3">
+        <span aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-gray-400">🔍</span>
+        <input
+          type="search"
+          value={query}
+          onChange={event => setQuery(event.target.value)}
+          placeholder="Search lessons (English or Spanish)"
+          aria-label="Search lessons"
+          className="w-full rounded-xl border border-gray-200 bg-white py-2.5 pl-9 pr-3 text-sm text-gray-800 placeholder:text-gray-400 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-200"
+        />
+      </div>
+      <div className="max-h-96 overflow-y-auto">
+        {filtered.length === 0 ? (
+          <p className="py-6 text-center text-sm text-gray-500">No lessons match “{query.trim()}”.</p>
+        ) : (
+          <div className="grid grid-cols-2 gap-2">
+            {filtered.map(lesson => {
+              const alreadyScheduled = scheduled.has(lesson.slug)
+              const selected = checked.has(lesson.slug)
+              return (
+                <label
+                  key={lesson.slug}
+                  className={`relative flex min-h-[4.5rem] flex-col rounded-xl border-2 p-2.5 transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-amber-300 ${
+                    alreadyScheduled
+                      ? 'cursor-default border-green-200 bg-green-50/60'
+                      : selected
+                        ? 'cursor-pointer border-amber-500 bg-amber-50'
+                        : 'cursor-pointer border-gray-100 bg-white hover:border-amber-200'
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    checked={alreadyScheduled || selected}
+                    disabled={alreadyScheduled}
+                    onChange={() => toggle(lesson.slug)}
+                    className="sr-only"
+                  />
+                  <span className="flex items-start justify-between gap-1">
+                    <span className="text-[11px] font-semibold text-amber-600">Lesson {lesson.number}</span>
+                    {alreadyScheduled ? (
+                      <span className="text-[11px] font-medium text-green-700">Scheduled</span>
+                    ) : (
+                      <span
+                        aria-hidden
+                        className={`flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full border text-[10px] leading-none ${
+                          selected ? 'border-amber-600 bg-amber-600 text-white' : 'border-gray-300 bg-white'
+                        }`}
+                      >
+                        {selected ? '✓' : ''}
+                      </span>
+                    )}
+                  </span>
+                  <span className="mt-1 block text-sm font-medium leading-snug text-gray-800">{lesson.title}</span>
+                  {lesson.subtitle && <span className="mt-0.5 block text-xs leading-snug text-gray-400">{lesson.subtitle}</span>}
+                </label>
+              )
+            })}
           </div>
-        ))}
+        )}
       </div>
       <button
         type="button"
