@@ -8,6 +8,11 @@ import { localDateKey } from './dates'
 // it, students practice between sessions, and students learn. Everything here is derived from
 // tables that already exist; nothing new is recorded. Weeks run Monday–Sunday in the program time
 // zone, keyed by their Monday as a `YYYY-MM-DD` string.
+//
+// Only session weeks count: weeks in which an in-person session was actually held. A week the
+// program skipped (a holiday, a retreat) would otherwise show as a dip in every measure, so it is
+// left out of the trends, the week-over-week comparison and the period totals alike, and the window
+// reaches further back to make up the number of weeks asked for.
 
 export const TREND_WEEK_OPTIONS = [4, 8, 12] as const
 export type TrendWeeks = (typeof TREND_WEEK_OPTIONS)[number]
@@ -46,10 +51,26 @@ export function weekStartOf(key: string): string {
   return addDays(key, -mondayOffset)
 }
 
-// The Mondays of the last `weeks` weeks, oldest first, ending with the week containing `today`.
-export function trendWeekStarts(today: string, weeks: number): string[] {
+// The weeks to report on, oldest first: the most recent `weeks - 1` past weeks in which a session
+// was held (`heldDates`), then the current week, which is always shown as "so far". Also returns the
+// skipped weeks between the first reported week and now, so the page can say what was left out.
+export function sessionWeekStarts(
+  today: string,
+  weeks: number,
+  heldDates: Iterable<string>,
+): { weekStarts: string[]; skipped: string[] } {
   const current = weekStartOf(today)
-  return Array.from({ length: weeks }, (_, index) => addDays(current, (index - weeks + 1) * 7))
+  const held = new Set<string>()
+  for (const date of heldDates) {
+    if (date <= today) held.add(weekStartOf(date))
+  }
+  const past = [...held].filter(week => week < current).sort().slice(-(weeks - 1))
+  const weekStarts = [...past, current]
+  const skipped: string[] = []
+  for (let week = weekStarts[0]; week < current; week = addDays(week, 7)) {
+    if (!held.has(week)) skipped.push(week)
+  }
+  return { weekStarts, skipped }
 }
 
 const ratio = (part: number, whole: number) => whole > 0 ? part / whole : null
@@ -186,7 +207,10 @@ export interface TrackingSince {
 export interface ProgramImpact {
   today: string
   trackingSince: TrackingSince
+  // Session weeks only (see the note at the top); the last is the current week.
   weeks: WeeklyMetrics[]
+  // Past weeks inside the reported span with no in-person session, which are left out.
+  skippedWeeks: string[]
   period: PeriodMetrics
   students: StudentProgress[]
   tutors: TutorUsage[]
@@ -255,14 +279,25 @@ export async function getProgramImpact(
   const { today, weeks: weekCount } = options
   const now = options.now ?? Date.now()
   const toKey = (ms: number) => localDateKey(ms, options.timeZone)
-  const weekStarts = trendWeekStarts(today, weekCount)
+  // A session was held on a day a tutor checked in, a student was marked present, a lesson's slides
+  // were opened or a wrap-up was filed.
+  const held = await db.execute({
+    sql: `SELECT session_date AS date FROM tutor_check_ins WHERE present = 1
+          UNION SELECT session_date FROM attendance WHERE present = 1
+          UNION SELECT date FROM lesson_deck_progress
+          UNION SELECT s.date FROM session_wrap_ups w JOIN sessions s ON s.id = w.session_id`,
+    args: [],
+  })
+  const { weekStarts, skipped: skippedWeeks } = sessionWeekStarts(today, weekCount, held.rows.map(row => String(row.date)))
+  const reportedWeeks = new Set(weekStarts)
   const firstDay = weekStarts[0]
   const lastDay = addDays(weekStarts[weekStarts.length - 1], 6)
   // Timestamps are bucketed by their program-local date, so fetch a day of slack on either side of
   // the UTC range and let the date-key check decide.
   const sinceMs = now - (daysBetween(firstDay, today) + 2) * DAY_MS
   const quietSince = addDays(today, -QUIET_AFTER_DAYS)
-  const inRange = (date: string) => date >= firstDay && date <= lastDay
+  // Inside the reported span and in a session week; days in skipped weeks count for nothing.
+  const inRange = (date: string) => date >= firstDay && date <= lastDay && reportedWeeks.has(weekStartOf(date))
 
   const [
     studentRows, trackRows, tutorRows, activity, sessions, attendance, checkIns, wrapUps, deck,
@@ -414,6 +449,7 @@ export async function getProgramImpact(
   }
   for (const row of checkIns.rows) {
     const date = String(row.date)
+    if (!inRange(date)) continue
     for (const bucket of bucketsFor(date)) bucket.tutors.add(String(row.tutor_id))
     tutorTally(String(row.tutor_id)).days.add(date)
   }
@@ -423,6 +459,7 @@ export async function getProgramImpact(
   for (const row of deck.rows) {
     const slug = String(row.module_slug)
     deckOpened.add(`${row.date}:${slug}`)
+    if (!inRange(String(row.date))) continue
     const minutes = Number(row.active_ms) / 60_000
     const slideCount = Number(row.slide_count)
     tutorTally(String(row.tutor_id)).deckMinutes.add(minutes)
@@ -445,7 +482,7 @@ export async function getProgramImpact(
     const studentId = String(row.student_id)
     const slug = String(row.module_slug)
     sessionDays.add(`${studentId}:${date}`)
-    if (date > today || marks.get(`${studentId}:${date}`) === false) continue
+    if (!inRange(date) || date > today || marks.get(`${studentId}:${date}`) === false) continue
 
     const deckTracked = tracked(trackingSince.deck, date)
     const wrapTracked = tracked(trackingSince.wrapUps, date)
@@ -500,7 +537,7 @@ export async function getProgramImpact(
       bucket.active.add(id)
       if (atHome) bucket.homePractice.add(id)
     }
-    if (atHome) studentTally(id).homeDays.add(date)
+    if (atHome && inRange(date)) studentTally(id).homeDays.add(date)
   }
 
   for (const row of progress.rows) {
@@ -650,6 +687,7 @@ export async function getProgramImpact(
   return {
     today,
     trackingSince,
+    skippedWeeks,
     weeks: weekStarts.map(weekStart => ({
       weekStart,
       partial: weekStart === current,

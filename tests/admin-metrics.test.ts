@@ -7,7 +7,7 @@ import { createClient, type Client } from '@libsql/client'
 import {
   getProgramImpact,
   parseTrendWeeks,
-  trendWeekStarts,
+  sessionWeekStarts,
   weekStartOf,
 } from '../lib/admin-metrics'
 import { LESSON_DECK_PROGRESS_TABLE_SQL, SESSION_WRAP_UPS_TABLE_SQL } from '../lib/session-metrics'
@@ -57,7 +57,18 @@ test('weeks start on Monday and end with the current week', () => {
   assert.equal(weekStartOf('2026-11-17'), '2026-11-16')
   assert.equal(weekStartOf('2026-11-16'), '2026-11-16')
   assert.equal(weekStartOf('2026-11-15'), '2026-11-09')
-  assert.deepEqual(trendWeekStarts(TODAY, 3), ['2026-11-02', '2026-11-09', '2026-11-16'])
+})
+
+test('trend weeks are the weeks a session was held, then the current week', () => {
+  // Saturdays Oct 24 and Nov 14 were held; Oct 31 and Nov 7 were skipped.
+  const held = ['2026-10-17', '2026-10-24', '2026-11-14', '2026-11-21']
+  assert.deepEqual(sessionWeekStarts(TODAY, 3, held), {
+    weekStarts: ['2026-10-19', '2026-11-09', '2026-11-16'],
+    skipped: ['2026-10-26', '2026-11-02'],
+  })
+  // Fewer held weeks than asked for: show what there is.
+  assert.deepEqual(sessionWeekStarts(TODAY, 8, ['2026-11-14']), { weekStarts: ['2026-11-09', '2026-11-16'], skipped: [] })
+  assert.deepEqual(sessionWeekStarts(TODAY, 4, []), { weekStarts: ['2026-11-16'], skipped: [] })
 })
 
 test('parseTrendWeeks falls back to the default for unknown values', () => {
@@ -144,6 +155,25 @@ test('weekly learning and tutor-use measures', async () => {
     assert.equal(impact.period.deckUseRate, 1)
     assert.deepEqual(impact.trackingSince, { deck: '2026-11-14', wrapUps: '2026-11-07', placements: '2026-10-01' })
     assert.equal(impact.period.homeworkCompletionRate, 0.5)
+  })
+})
+
+test('a skipped week is left out of the trends and the totals', async () => {
+  await withFixture(async db => {
+    await seedProgram(db)
+    // No session on Saturday Oct 31 (a retreat), but a student practiced at home that week.
+    await db.executeMultiple(`
+      INSERT INTO tutor_check_ins VALUES ('2026-10-24', 't1', 1, 0);
+      INSERT INTO attendance VALUES ('2026-10-24', 'ana', 1);
+      INSERT INTO activity_log VALUES ('ana', '2026-10-28', 'practice', 1), ('ana', '2026-10-21', 'practice', 1);
+    `)
+    const impact = await getProgramImpact(db, { today: TODAY, weeks: 4, now: NOW, timeZone: TZ })
+    assert.deepEqual(impact.weeks.map(week => week.weekStart), ['2026-10-19', '2026-11-02', '2026-11-09', '2026-11-16'])
+    assert.deepEqual(impact.skippedWeeks, ['2026-10-26'])
+    assert.equal(impact.weeks[0].homePracticeStudents, 1)
+    assert.equal(impact.period.homePracticeStudents, 2)
+    const ana = impact.students.find(student => student.id === 'ana')!
+    assert.equal(ana.homePracticeDays, 3, 'Oct 21, Nov 11 and Nov 17; Oct 28 falls in the skipped week')
   })
 })
 

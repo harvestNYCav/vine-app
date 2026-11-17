@@ -86,7 +86,7 @@ function WeekTile({ metric, current, previous }: {
     <Tile
       label={metric.title}
       value={maybe(now, metric.format)}
-      note={delta === null ? 'No data the week before' : delta === 0 ? 'Same as the week before' : `${delta > 0 ? '▲' : '▼'} ${amount} vs the week before`}
+      note={delta === null ? 'No data the session week before' : delta === 0 ? 'Same as the session week before' : `${delta > 0 ? '▲' : '▼'} ${amount} vs the session week before`}
       noteTone={delta === null || delta === 0 ? 'muted' : delta > 0 ? 'up' : 'down'}
     />
   )
@@ -138,11 +138,13 @@ export default async function AdminImpactPage({
   const weekCount = parseTrendWeeks(requestedWeeks)
   const db = await getDb()
   const impact = await getProgramImpact(db, { today: todayString(), weeks: weekCount })
-  const { weeks, period, eslLevels } = impact
-  // Week-over-week tiles compare the last full week with the one before; the current week is partial.
-  const lastFullWeek = weeks[weeks.length - 2]
-  const weekBefore = weeks[weeks.length - 3]
-  const periodLabel = `last ${weekCount} weeks`
+  const { weeks, period, eslLevels, skippedWeeks } = impact
+  // Week-over-week tiles compare the last full session week with the session week before it; the
+  // current week is partial. Skipped weeks are already left out of `weeks`.
+  const fullWeeks = weeks.filter(week => !week.partial)
+  const lastFullWeek = fullWeeks[fullWeeks.length - 1]
+  const weekBefore = fullWeeks[fullWeeks.length - 2]
+  const periodLabel = `last ${fullWeeks.length} session ${fullWeeks.length === 1 ? 'week' : 'weeks'} and this week`
   const firstDay = weeks[0]?.weekStart ?? ''
   const { trackingSince } = impact
   // Slide and wrap-up tracking were added after launch; say so when the period reaches back before them.
@@ -200,6 +202,13 @@ export default async function AdminImpactPage({
           </a>
         ))}
       </nav>
+
+      <p className="mb-6 max-w-3xl text-sm text-slate-500">
+        Only weeks with an in-person session count.
+        {skippedWeeks.length > 0
+          ? ` Left out, with no session held: ${skippedWeeks.map(week => `week of ${formatWeek(week)}`).join(', ')}.`
+          : ' No weeks were skipped in this period.'}
+      </p>
 
       {lastFullWeek && (
         <section className="mb-10">
