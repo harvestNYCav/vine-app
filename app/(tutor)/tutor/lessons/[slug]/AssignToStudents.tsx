@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { matchesSearch } from '@/lib/search'
 import type { Track } from '@/types'
 import type { TutorRosterScope } from '@/lib/tutor-roster'
 
@@ -70,7 +71,20 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
   const [message, setMessage] = useState<string | null>(null)
   const [pendingAssignment, setPendingAssignment] = useState<PendingAssignment | null>(null)
 
+  const [query, setQuery] = useState('')
+
   const trackLabel = moduleTrack.toUpperCase()
+  const filteredStudents = useMemo(
+    () => students.filter(student => matchesSearch(query, [student.name])),
+    [students, query],
+  )
+  const selectedStudents = students.filter(student => checked.has(student.id))
+
+  function clearSelection() {
+    setChecked(new Set())
+    setPendingAssignment(null)
+    setMessage(null)
+  }
 
   function toggle(id: string) {
     setChecked(prev => {
@@ -88,7 +102,6 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
       return
     }
 
-    const selectedStudents = students.filter(student => checked.has(student.id))
     void saveAssignment({
       date: today,
       studentIds: selectedStudents.map(student => student.id),
@@ -149,9 +162,53 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
 
   return (
     <div className="space-y-3">
-      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Assign to students</p>
-      <div className="bg-white rounded-2xl border border-gray-100 divide-y divide-gray-50">
-        {students.map(s => (
+      <div className="flex items-baseline justify-between gap-2">
+        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Assign to students</p>
+        {checked.size > 0 && (
+          <button
+            type="button"
+            onClick={clearSelection}
+            className="text-xs font-semibold text-amber-700 hover:text-amber-800"
+          >
+            Clear ({checked.size})
+          </button>
+        )}
+      </div>
+
+      {students.length > 0 && (
+        <label className="relative block">
+          <span className="sr-only">Search students by name</span>
+          <span aria-hidden className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
+          <input
+            type="search"
+            value={query}
+            onChange={event => setQuery(event.target.value)}
+            onKeyDown={event => { if (event.key === 'Escape') setQuery('') }}
+            placeholder="Search students…"
+            className="w-full rounded-xl border border-gray-200 bg-white py-2.5 pl-9 pr-3 text-sm text-gray-800 placeholder:text-gray-400 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-100"
+          />
+        </label>
+      )}
+
+      {selectedStudents.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {selectedStudents.map(s => (
+            <button
+              key={s.id}
+              type="button"
+              onClick={() => toggle(s.id)}
+              aria-label={`Remove ${s.name}`}
+              className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-900 hover:bg-amber-200"
+            >
+              {s.name}
+              <span aria-hidden className="text-amber-700">×</span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      <div className="bg-white rounded-2xl border border-gray-100 divide-y divide-gray-50 max-h-80 overflow-y-auto">
+        {filteredStudents.map(s => (
           <label key={s.id} className="flex items-center gap-3 px-4 py-2.5 cursor-pointer">
             <input
               type="checkbox"
@@ -162,6 +219,9 @@ export default function AssignToStudents({ moduleSlug, moduleTrack, today, stude
             <span className="text-sm text-gray-800">{s.name}</span>
           </label>
         ))}
+        {students.length > 0 && filteredStudents.length === 0 && (
+          <p className="px-4 py-3 text-sm text-gray-400">No students match “{query.trim()}”.</p>
+        )}
         {students.length === 0 && (
           <p className="px-4 py-3 text-sm text-gray-400">
             {rosterScope === 'assigned'
