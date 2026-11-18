@@ -6,8 +6,8 @@ import { filterTutorRosterStudents, getTutorStudentIds } from '@/lib/tutor-roste
 import { getTutorRosterScope } from '@/lib/tutor-roster-server'
 import { getStudentTracks } from '@/lib/tracks'
 import { summarizeLessonProgressForTracks } from '@/lib/lesson-progress'
-import { formatWordCount } from '@/lib/study'
 import { getMathLeaderboard } from '@/lib/math-leaderboard'
+import StudentList from './StudentList'
 
 const LB_TYPES = [
   { key: 'practice_5', label: '5 min', isTimed: true },
@@ -135,42 +135,17 @@ export default async function TutorDashboardPage() {
         </div>
       )}
 
-      <div className="space-y-3">
-        {studentData.map(student => (
-          <Link key={student.id} href={`/tutor/${student.id}`}>
-            <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-xl font-bold text-amber-700">
-                  {student.name.charAt(0).toUpperCase()}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-gray-800">{student.name}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    {student.daysSince === null ? 'No activity yet' :
-                     student.daysSince === 0 ? 'Active today' :
-                     student.daysSince === 1 ? 'Active yesterday' :
-                     `${student.daysSince} days ago`}
-                  </p>
-                </div>
-                <div className="text-right flex-shrink-0">
-                  <p className="text-sm font-medium text-green-700">{student.completedModules}/{student.totalModules}</p>
-                  <p className="text-xs text-gray-400">English lessons</p>
-                </div>
-              </div>
-              <div className="flex gap-3 mt-3 pt-3 border-t border-gray-50">
-                <div className="flex items-center gap-1">
-                  <span className="text-xs text-blue-500">📚</span>
-                  <span className="text-xs text-gray-500">{formatWordCount(student.vocabMastered)}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <span className="text-xs text-purple-500">📖</span>
-                  <span className="text-xs text-gray-500">{student.reviewedModules} reviewed</span>
-                </div>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <StudentList
+        students={studentData.map(student => ({
+          id: student.id,
+          name: student.name,
+          daysSince: student.daysSince,
+          completedModules: student.completedModules,
+          totalModules: student.totalModules,
+          vocabMastered: student.vocabMastered,
+          reviewedModules: student.reviewedModules,
+        }))}
+      />
     </div>
   )
 }
