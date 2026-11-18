@@ -6,8 +6,9 @@ import { join } from 'node:path'
 import { createClient, type Client } from '@libsql/client'
 import {
   getProgramImpact,
-  parseTrendWeeks,
-  sessionWeekStarts,
+  isTestAccount,
+  resolveFocus,
+  sessionWeeks,
   weekStartOf,
 } from '../lib/admin-metrics'
 import { LESSON_DECK_PROGRESS_TABLE_SQL, SESSION_WRAP_UPS_TABLE_SQL } from '../lib/session-metrics'
@@ -39,8 +40,9 @@ async function withFixture(run: (db: Client) => Promise<void>) {
         user_id TEXT, module_slug TEXT, practice_completed_at INTEGER, practice_score INTEGER,
         homework_completed_at INTEGER, homework_score INTEGER, PRIMARY KEY (user_id, module_slug)
       );
-      CREATE TABLE math_exam_attempts (id TEXT PRIMARY KEY, user_id TEXT, finished_at INTEGER, points_earned INTEGER, points_possible INTEGER);
-      CREATE TABLE ela_exam_attempts (id TEXT PRIMARY KEY, user_id TEXT, finished_at INTEGER, points_earned INTEGER, points_possible INTEGER);
+      CREATE TABLE math_exam_attempts (id TEXT PRIMARY KEY, user_id TEXT, exam_id TEXT, section_slug TEXT, finished_at INTEGER, points_earned INTEGER, points_possible INTEGER);
+      CREATE TABLE ela_exam_attempts (id TEXT PRIMARY KEY, user_id TEXT, exam_id TEXT, section_slug TEXT, finished_at INTEGER, points_earned INTEGER, points_possible INTEGER);
+      CREATE TABLE student_tutors (student_id TEXT, tutor_id TEXT, created_at INTEGER, PRIMARY KEY (student_id, tutor_id));
       CREATE TABLE vocab_progress (id TEXT PRIMARY KEY, user_id TEXT, word_id TEXT, correct_count INTEGER);
     `)
     await db.execute(LESSON_DECK_PROGRESS_TABLE_SQL)
@@ -59,24 +61,38 @@ test('weeks start on Monday and end with the current week', () => {
   assert.equal(weekStartOf('2026-11-15'), '2026-11-09')
 })
 
-test('trend weeks are the weeks a session was held, then the current week', () => {
-  // Saturdays Oct 24 and Nov 14 were held; Oct 31 and Nov 7 were skipped.
-  const held = ['2026-10-17', '2026-10-24', '2026-11-14', '2026-11-21']
-  assert.deepEqual(sessionWeekStarts(TODAY, 3, held), {
-    weekStarts: ['2026-10-19', '2026-11-09', '2026-11-16'],
+test('session weeks are the weeks holding a Vine session, up to the current week', () => {
+  // Saturdays Oct 24, Nov 14 and Nov 21 (this week) are sessions; Oct 31 and Nov 7 were skipped.
+  const dates = ['2026-11-14', '2026-10-24', '2026-11-21', '2026-12-05']
+  assert.deepEqual(sessionWeeks(TODAY, dates), {
+    weeks: [
+      { weekStart: '2026-10-19', sessionDate: '2026-10-24' },
+      { weekStart: '2026-11-09', sessionDate: '2026-11-14' },
+      { weekStart: '2026-11-16', sessionDate: '2026-11-21' },
+    ],
     skipped: ['2026-10-26', '2026-11-02'],
+    upcoming: ['2026-12-05'],
   })
-  // Fewer held weeks than asked for: show what there is.
-  assert.deepEqual(sessionWeekStarts(TODAY, 8, ['2026-11-14']), { weekStarts: ['2026-11-09', '2026-11-16'], skipped: [] })
-  assert.deepEqual(sessionWeekStarts(TODAY, 4, []), { weekStarts: ['2026-11-16'], skipped: [] })
+  assert.deepEqual(sessionWeeks(TODAY, []), { weeks: [], skipped: [], upcoming: [] })
 })
 
-test('parseTrendWeeks falls back to the default for unknown values', () => {
-  assert.equal(parseTrendWeeks('4'), 4)
-  assert.equal(parseTrendWeeks('12'), 12)
-  assert.equal(parseTrendWeeks('7'), 8)
-  assert.equal(parseTrendWeeks(undefined), 8)
+test('the focus defaults to the most recent session held', () => {
+  const { weeks } = sessionWeeks(TODAY, ['2026-11-07', '2026-11-14', '2026-11-21'])
+  assert.equal(resolveFocus(undefined, weeks, TODAY)?.sessionDate, '2026-11-14')
+  assert.equal(resolveFocus('2026-11-07', weeks, TODAY)?.sessionDate, '2026-11-07')
+  assert.equal(resolveFocus('2026-11-21', weeks, TODAY)?.sessionDate, '2026-11-21', 'this week, so far')
+  assert.equal(resolveFocus('nonsense', weeks, TODAY)?.sessionDate, '2026-11-14')
+  assert.equal(resolveFocus('all', weeks, TODAY), null)
 })
+
+test('test accounts are recognised by name', () => {
+  assert.equal(isTestAccount('TestStudentESL'), true)
+  assert.equal(isTestAccount(' testtutor'), true)
+  assert.equal(isTestAccount('Teresaa'), false)
+})
+
+const SESSIONS = ['2026-11-07', '2026-11-14', '2026-11-21']
+const ALL = { today: TODAY, focus: 'all', sessionDates: SESSIONS, now: NOW, timeZone: TZ }
 
 async function seedProgram(db: Client) {
   const placement = (id: string, student: string, date: string, level: string) =>
@@ -110,7 +126,8 @@ async function seedProgram(db: Client) {
       ('ana', '2026-11-14', 'module', 1), ('ana', '2026-11-11', 'practice', 1),
       ('ben', '2026-11-12', 'practice', 1), ('ben', '2026-11-14', 'module', 1),
       ('ana', '2026-11-17', 'practice', 1), ('t1', '2026-11-12', 'teach', 1);
-    INSERT INTO math_exam_attempts VALUES ('e1', 'ben', ${at('2026-11-12')}, 3, 4);
+    INSERT INTO math_exam_attempts VALUES ('e1', 'ben', 'g5-2023', 'book-1', ${at('2026-11-12')}, 3, 4);
+    INSERT INTO student_tutors VALUES ('ana', 't1', 0), ('cy', 't2', 0);
     INSERT INTO vocab_progress VALUES ('v1', 'ana', 'w1', 3), ('v2', 'ana', 'w2', 5), ('v3', 'ana', 'w3', 1);
     INSERT INTO esl_placements VALUES
       ${placement('p1', 'ana', '2026-10-01', 'beginner')},
@@ -123,7 +140,7 @@ async function seedProgram(db: Client) {
 test('weekly learning and tutor-use measures', async () => {
   await withFixture(async db => {
     await seedProgram(db)
-    const impact = await getProgramImpact(db, { today: TODAY, weeks: 3, now: NOW, timeZone: TZ })
+    const impact = await getProgramImpact(db, ALL)
     assert.deepEqual(impact.weeks.map(week => week.partial), [false, false, true])
     const [first, middle, current] = impact.weeks
 
@@ -158,7 +175,7 @@ test('weekly learning and tutor-use measures', async () => {
   })
 })
 
-test('a skipped week is left out of the trends and the totals', async () => {
+test('a week without a Vine session is left out of the trends and the totals', async () => {
   await withFixture(async db => {
     await seedProgram(db)
     // No session on Saturday Oct 31 (a retreat), but a student practiced at home that week.
@@ -167,7 +184,7 @@ test('a skipped week is left out of the trends and the totals', async () => {
       INSERT INTO attendance VALUES ('2026-10-24', 'ana', 1);
       INSERT INTO activity_log VALUES ('ana', '2026-10-28', 'practice', 1), ('ana', '2026-10-21', 'practice', 1);
     `)
-    const impact = await getProgramImpact(db, { today: TODAY, weeks: 4, now: NOW, timeZone: TZ })
+    const impact = await getProgramImpact(db, { ...ALL, sessionDates: ['2026-10-24', ...SESSIONS] })
     assert.deepEqual(impact.weeks.map(week => week.weekStart), ['2026-10-19', '2026-11-02', '2026-11-09', '2026-11-16'])
     assert.deepEqual(impact.skippedWeeks, ['2026-10-26'])
     assert.equal(impact.weeks[0].homePracticeStudents, 1)
@@ -180,7 +197,7 @@ test('a skipped week is left out of the trends and the totals', async () => {
 test('student progress, ESL level changes and quiet students', async () => {
   await withFixture(async db => {
     await seedProgram(db)
-    const impact = await getProgramImpact(db, { today: TODAY, weeks: 3, now: NOW, timeZone: TZ })
+    const impact = await getProgramImpact(db, ALL)
     const ana = impact.students.find(student => student.id === 'ana')!
     assert.equal(ana.firstLevel, 'Beginner')
     assert.equal(ana.currentLevel, 'Low-intermediate')
@@ -199,14 +216,15 @@ test('student progress, ESL level changes and quiet students', async () => {
     assert.equal(impact.students.find(student => student.id === 'cy')!.placementDue, true)
 
     assert.deepEqual(impact.eslLevels, { eslStudents: 3, placed: 2, retested: 1, movedUp: 1 })
-    assert.deepEqual(impact.quietStudents.map(student => [student.name, student.lastSeen]), [['Cy', null]])
+    assert.deepEqual(impact.checkIn.map(student => [student.name, student.group, student.tutorNames]), [['Cy', 'never', ['Tom']]])
+    assert.deepEqual(ana.tutorNames, ['Tess'])
   })
 })
 
 test('tutor usage and lesson fit', async () => {
   await withFixture(async db => {
     await seedProgram(db)
-    const impact = await getProgramImpact(db, { today: TODAY, weeks: 3, now: NOW, timeZone: TZ })
+    const impact = await getProgramImpact(db, ALL)
 
     const [tess, tom] = impact.tutors
     assert.equal(tess.name, 'Tess')
@@ -237,5 +255,70 @@ test('tutor usage and lesson fit', async () => {
     const verbToBe = impact.lessons.find(lesson => lesson.slug === 'verb-to-be')!
     assert.equal(verbToBe.finishedRate, 1)
     assert.equal(impact.lessons.find(lesson => lesson.slug === 'verb-to-have')!.classesTaught, 0)
+  })
+})
+
+test('focusing on one session week narrows the totals and lists what is behind them', async () => {
+  await withFixture(async db => {
+    await seedProgram(db)
+    // Default focus: the Nov 14 session, the latest one held.
+    const impact = await getProgramImpact(db, { ...ALL, focus: undefined })
+    assert.equal(impact.focus?.sessionDate, '2026-11-14')
+    assert.equal(impact.weeks.length, 3, 'trends still cover every session week')
+    assert.equal(impact.period.lessonsTaught, 2)
+    assert.equal(impact.period.activeStudents, 2)
+
+    // Every taught lesson is listed, so the rates can be checked line by line.
+    assert.deepEqual(impact.taughtLessons.map(lesson => [lesson.studentName, lesson.deck, lesson.wrapUp, lesson.homeworkAssigned, lesson.homeworkDoneOn]), [
+      ['Ana', 'used', 'filed', true, '2026-11-15'],
+      ['Ben', 'used', 'filed', false, null],
+    ])
+    assert.deepEqual(impact.taughtLessons[0].deckOpenedBy, ['Tess'])
+    assert.equal(impact.taughtLessons[0].deckMinutes, 45)
+    assert.deepEqual(impact.quizScores.map(record => [record.studentName, record.score]), [['Ana', 0.8], ['Ben', 0.4]])
+    assert.deepEqual(impact.examScores.map(record => [record.studentName, record.examId, record.score]), [['Ben', 'g5-2023', 0.75]])
+    assert.deepEqual(impact.deckSessions.map(deck => [deck.tutorName, deck.slug, deck.scheduled]), [['Tess', 'introducing-yourself', true]])
+
+    const ana = impact.students.find(student => student.id === 'ana')!
+    assert.equal(ana.lessonsAttended, 1)
+    assert.equal(ana.activeDays, 2)
+    assert.equal(ana.homePracticeDays, 1)
+    assert.equal(ana.daysPresent, 1)
+    assert.deepEqual(impact.tutors[0].studentNames, ['Ana', 'Ben'])
+    assert.equal(impact.tutors[0].placementsGiven, 2, 'Ana and Ben were placed on Nov 14')
+
+    const nov7 = await getProgramImpact(db, { ...ALL, focus: '2026-11-07' })
+    assert.equal(nov7.period.lessonsTaught, 1)
+    assert.deepEqual(nov7.taughtLessons.map(lesson => [lesson.studentName, lesson.title, lesson.deck]), [['Ana', 'The Verb "To Be"', 'untracked']])
+  })
+})
+
+test('test accounts are left out, and students who stopped coming are listed first', async () => {
+  await withFixture(async db => {
+    await seedProgram(db)
+    await db.executeMultiple(`
+      INSERT INTO users VALUES ('tst', 'TestStudentESL', 'student', 0), ('tt', 'TestTutor', 'tutor', 0), ('dee', 'Dee', 'student', 0);
+      INSERT INTO sessions VALUES ('s7', 'tst', '2026-11-14', 'introducing-yourself', 'tt', 1, 0);
+      INSERT INTO lesson_deck_progress VALUES ('tt', '2026-11-14', 'likes-and-dislikes', 3, '', 20, 60000, 0, 0);
+      INSERT INTO activity_log VALUES ('tst', '2026-11-14', 'module', 1), ('dee', '2026-11-07', 'module', 1);
+      INSERT INTO sessions VALUES ('s8', 'dee', '2026-11-07', 'verb-to-be', 't1', 0, 0);
+    `)
+    // Sessions Oct 31, Nov 7 and Nov 14: Dee came on Nov 7 and hasn't been seen since.
+    const impact = await getProgramImpact(db, { ...ALL, sessionDates: ['2026-10-31', ...SESSIONS] })
+    assert.equal(impact.testAccounts, 2)
+    assert.equal(impact.students.some(student => student.name.startsWith('Test')), false)
+    assert.equal(impact.tutors.some(tutor => tutor.name.startsWith('Test')), false)
+    assert.equal(impact.deckSessions.some(deck => deck.slug === 'likes-and-dislikes'), false)
+    assert.equal(impact.totalStudents, 4)
+    assert.equal(impact.period.lessonsTaught, 4, "the test student's lesson is not counted")
+
+    // Dee missed only Nov 14, one session: not yet worth a call.
+    assert.deepEqual(impact.checkIn.map(student => student.name), ['Cy'])
+    const later = await getProgramImpact(db, { ...ALL, today: '2026-11-22', now: NOW + 5 * 86_400_000, sessionDates: ['2026-10-31', ...SESSIONS] })
+    const dee = later.checkIn.find(student => student.name === 'Dee')!
+    assert.equal(dee.group, 'stopped')
+    assert.equal(dee.sessionsMissed, 2)
+    assert.equal(dee.vineLessons, 1)
+    assert.deepEqual(later.checkIn.map(student => student.name), ['Dee', 'Cy'], 'most recently seen first, never seen last')
   })
 })

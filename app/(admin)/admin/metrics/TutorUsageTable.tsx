@@ -38,12 +38,22 @@ export default function TutorUsageTable({ tutors }: { tutors: TutorUsage[] }) {
           </thead>
           <tbody>
             {teaching.map(tutor => (
-              <tr key={tutor.id} className="border-b border-slate-100 last:border-0">
+              <tr key={tutor.id} className="border-b border-slate-100 align-top last:border-0">
                 <td className="py-2 pr-3 font-medium text-slate-800">{tutor.name}</td>
                 <td className="px-2 py-2 text-right tabular-nums text-slate-700">{count(tutor.sessionDays)}</td>
                 <td className="px-2 py-2 text-right tabular-nums text-slate-700">
-                  {count(tutor.lessonsTaught)}
-                  <span className="text-xs text-slate-400"> · {tutor.studentsTaught} {tutor.studentsTaught === 1 ? 'student' : 'students'}</span>
+                  {tutor.studentsTaught === 0 ? count(tutor.lessonsTaught) : (
+                    // The students are a click away rather than a long cell in every row.
+                    <details className="group inline-block text-right">
+                      <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        {count(tutor.lessonsTaught)}
+                        <span className="text-xs text-blue-700 group-hover:underline">
+                          {' '}· {tutor.studentsTaught} {tutor.studentsTaught === 1 ? 'student' : 'students'} ▾
+                        </span>
+                      </summary>
+                      <p className="mt-1 max-w-[14rem] text-left text-xs leading-relaxed text-slate-600">{tutor.studentNames.join(', ')}</p>
+                    </details>
+                  )}
                 </td>
                 <RateCell value={tutor.deckUseRate} />
                 <td className="px-2 py-2 text-right tabular-nums text-slate-700">{maybe(tutor.averageDeckMinutes, minutes)}</td>
@@ -59,7 +69,7 @@ export default function TutorUsageTable({ tutors }: { tutors: TutorUsage[] }) {
       </div>
       {idle.length > 0 && (
         <p className="mt-3 text-xs text-slate-500">
-          No lessons or check-ins in this period: {idle.map(tutor => tutor.name).join(', ')}
+          No lessons or check-ins:{idle.map(tutor => tutor.name).join(', ')}
         </p>
       )}
     </div>

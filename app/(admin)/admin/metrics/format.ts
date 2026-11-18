@@ -22,3 +22,13 @@ export function flagClass(tone: 'warn' | 'good' | 'muted'): string {
     muted: 'bg-slate-100 text-slate-600',
   }[tone]
 }
+
+// "Sat, Nov 14"
+export function formatDayLong(key: string): string {
+  const [year, month, day] = key.split('-').map(Number)
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString('en-US', {
+    weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC',
+  })
+}
+
+export const plural = (n: number, one: string, many = `${one}s`) => `${count(n)} ${n === 1 ? one : many}`

@@ -64,7 +64,8 @@ layouts and the API handlers are the access checks.
 - `app/(admin)/admin/`: one admin page. Its forms (`Admin*Controls.tsx`) cover students, parents,
   PIN resets, the admin email allowlist, tutor approvals and a danger zone. `check-ins/` shows
   attendance for any date. `metrics/` (Impact) reports learning outcomes, tutor use of the app
-  and lesson fit from existing tables (`lib/admin-metrics.ts`).
+  and lesson fit from existing tables (`lib/admin-metrics.ts`), one Vine session week at a time.
+  The term's session dates are the `VINE_SESSION_DATES` list there; add next term's dates to it.
 - `app/api/`: JSON endpoints, grouped as `auth/`, `admin/`, `tutor/`, `parent/`, `student/`,
   `progress`, `practice`, `math/`, `ela/`, `regents/`. Each handler checks the session role itself.
 

@@ -1,10 +1,13 @@
-// A small single-series weekly column chart, rendered on the server as SVG. Each chart has its own
-// y-scale; the Trends page shows them as small multiples rather than sharing one axis.
+// A small single-series column chart with one column per Vine session week, rendered on the server
+// as SVG. Each chart has its own y-scale; the Impact page shows them as small multiples. Each column
+// links to that session, and the session in focus is drawn solid with its value labelled.
 
 export interface WeeklyPoint {
   weekStart: string
+  sessionDate: string
   value: number | null
   partial: boolean
+  href: string
 }
 
 const WIDTH = 320
@@ -43,6 +46,7 @@ export default function WeeklyColumnChart({
   points,
   format,
   maxValue,
+  selected,
 }: {
   title: string
   description: string
@@ -50,16 +54,21 @@ export default function WeeklyColumnChart({
   format: (value: number) => string
   // A fixed top for bounded measures (100% or a 5-point rating); otherwise the largest value.
   maxValue?: number
+  // The week in focus, or null when looking at every session.
+  selected: string | null
 }) {
   const largest = Math.max(0, ...points.map(point => point.value ?? 0))
   const top = maxValue ?? (largest > 0 ? largest : 1)
   const slot = (PLOT_RIGHT - PLOT_LEFT) / Math.max(points.length, 1)
   const barWidth = Math.min(MAX_BAR, slot * 0.62)
   const y = (value: number) => PLOT_BOTTOM - (value / top) * (PLOT_BOTTOM - PLOT_TOP)
-  // Label the most recent complete week, matching the headline tiles; the current week is partial.
-  const latest = [...points].reverse().find(point => point.value !== null && !point.partial)
+  // Label the week in focus; with no focus, the most recent complete week.
+  const labelled = selected
+    ? points.find(point => point.weekStart === selected)
+    : [...points].reverse().find(point => point.value !== null && !point.partial)
   const empty = points.every(point => !point.value)
-  const labelIndexes = new Set([0, Math.floor((points.length - 1) / 2), points.length - 1])
+  // Every date fits up to 8 columns; past that, label every other one.
+  const labelEvery = Math.ceil(points.length / 8)
 
   return (
     <figure className="rounded-lg border border-slate-200 bg-white p-4">
@@ -87,20 +96,24 @@ export default function WeeklyColumnChart({
           const slotX = PLOT_LEFT + index * slot
           const barX = slotX + (slot - barWidth) / 2
           const valueLabel = point.value === null ? 'No data' : format(point.value)
-          const isLatest = point === latest
+          const isLabelled = point === labelled
+          const dimmed = selected !== null && point.weekStart !== selected
           return (
-            <g key={point.weekStart}>
-              <title>{`Week of ${formatWeek(point.weekStart)}${point.partial ? ' (so far)' : ''}: ${valueLabel}`}</title>
+            <a key={point.weekStart} href={point.href} aria-label={`${formatWeek(point.sessionDate)} session: ${valueLabel}`}>
+              <title>{`${formatWeek(point.sessionDate)} session${point.partial ? ' (so far)' : ''}: ${valueLabel}. Click to focus on it.`}</title>
               {/* Full-height hit target so hovering anywhere in the week's slot shows the tooltip. */}
-              <rect x={slotX} y={PLOT_TOP - 14} width={slot} height={PLOT_BOTTOM - PLOT_TOP + 14} fill="transparent" />
+              <rect
+                x={slotX} y={PLOT_TOP - 14} width={slot} height={PLOT_BOTTOM - PLOT_TOP + 28}
+                className={point.weekStart === selected ? 'fill-slate-100' : 'fill-transparent hover:fill-slate-50'}
+              />
               {point.value !== null && point.value > 0 && (
                 <path
                   d={columnPath(barX, barWidth, y(Math.min(point.value, top)), PLOT_BOTTOM)}
                   fill="#2a78d6"
-                  fillOpacity={point.partial ? 0.4 : 1}
+                  fillOpacity={dimmed ? 0.35 : point.partial ? 0.5 : 1}
                 />
               )}
-              {isLatest && !empty && point.value !== null && (
+              {isLabelled && !empty && point.value !== null && (
                 <text
                   x={barX + barWidth / 2}
                   y={y(Math.min(point.value, top)) - 4}
@@ -112,19 +125,19 @@ export default function WeeklyColumnChart({
                   {format(point.value)}
                 </text>
               )}
-              {labelIndexes.has(index) && (
+              {(index % labelEvery === 0 || index === points.length - 1) && (
                 <text
                   x={slotX + slot / 2}
                   y={PLOT_BOTTOM + 14}
-                  textAnchor={index === 0 ? 'start' : index === points.length - 1 ? 'end' : 'middle'}
-                  dx={index === 0 ? -(slot / 2 - barWidth / 2) : index === points.length - 1 ? slot / 2 - barWidth / 2 : 0}
+                  textAnchor="middle"
                   fontSize={10}
-                  className="fill-slate-500"
+                  fontWeight={point.weekStart === selected ? 700 : 400}
+                  className={point.weekStart === selected ? 'fill-slate-900' : 'fill-slate-500'}
                 >
-                  {point.partial ? 'This week' : formatWeek(point.weekStart)}
+                  {formatWeek(point.sessionDate)}
                 </text>
               )}
-            </g>
+            </a>
           )
         })}
       </svg>
