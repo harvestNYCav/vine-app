@@ -22,7 +22,9 @@ async function withFixture(run: (db: Client) => Promise<void>) {
   const db = createClient({ url: `file:${join(directory, 'fixture.db')}` })
   try {
     await db.executeMultiple(`
-      CREATE TABLE users (id TEXT PRIMARY KEY, name TEXT NOT NULL, role TEXT NOT NULL);
+      CREATE TABLE users (
+        id TEXT PRIMARY KEY, name TEXT NOT NULL, role TEXT NOT NULL, is_test INTEGER NOT NULL DEFAULT 0
+      );
       CREATE TABLE sessions (
         id TEXT PRIMARY KEY, student_id TEXT NOT NULL, date TEXT NOT NULL, module_slug TEXT NOT NULL,
         tutor_id TEXT NOT NULL, homework_assigned INTEGER NOT NULL DEFAULT 0, created_at INTEGER NOT NULL,
@@ -36,7 +38,7 @@ async function withFixture(run: (db: Client) => Promise<void>) {
         user_id TEXT NOT NULL, module_slug TEXT NOT NULL, homework_completed_at INTEGER, homework_score INTEGER,
         PRIMARY KEY (user_id, module_slug)
       );
-      INSERT INTO users VALUES ('maria', 'Maria', 'student'), ('sarah', 'Sarah', 'tutor');
+      INSERT INTO users (id, name, role) VALUES ('maria', 'Maria', 'student'), ('sarah', 'Sarah', 'tutor');
       INSERT INTO sessions VALUES ('s1', 'maria', '2026-10-10', 'verb-to-be', 'sarah', 1, 1);
       INSERT INTO attendance VALUES ('2026-10-10', 'maria', 1);
       INSERT INTO module_progress VALUES ('maria', 'verb-to-be', 5, 80);
@@ -114,7 +116,8 @@ test('the CSV export joins attendance, homework, deck progress, and the wrap-up'
 test('the CSV export leaves out lessons with a test student or test tutor', async () => {
   await withFixture(async db => {
     await db.executeMultiple(`
-      INSERT INTO users VALUES ('tst', 'TestStudentESL', 'student'), ('tt', 'TestTutorESL', 'tutor');
+      -- The flag decides, not the name.
+      INSERT INTO users (id, name, role, is_test) VALUES ('tst', 'TestStudentESL', 'student', 1), ('tt', 'Tina', 'tutor', 1);
       INSERT INTO sessions VALUES ('s2', 'tst', '2026-10-10', 'verb-to-be', 'sarah', 0, 2);
       INSERT INTO sessions VALUES ('s3', 'maria', '2026-10-17', 'verb-to-be', 'tt', 0, 3);
     `)

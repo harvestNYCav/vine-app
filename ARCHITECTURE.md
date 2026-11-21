@@ -82,7 +82,8 @@ them testable without Next. Look here first for any rule.
   `dates.ts` / `scheduling.ts` (program-local calendar dates; `todayString()` keys every daily
   record).
 - Accounts and roles: `student-accounts.ts`, `parents.ts`, `tutor-approvals.ts`, `pin-reset.ts`,
-  `admin-allowlist.ts`, `email-verification.ts`, `admin-reset.ts`, `pin-entry.ts`, `auth-copy.ts`.
+  `admin-allowlist.ts`, `email-verification.ts`, `admin-reset.ts`, `pin-entry.ts`, `auth-copy.ts`,
+  and `account-visibility.ts` (test accounts and paused students).
 - Placement: `tracks.ts`, `student-settings.ts`, `grade-levels.ts`, `regents-courses.ts`,
   `tutors.ts`.
 - Who a page is about: `student-view.ts` (`resolveStudentViewResult`, `StudentView`).
@@ -178,6 +179,12 @@ Things that are not obvious from the table names:
   them. Pending tutors are not in `users` at all; they wait in `tutor_signup_requests`.
 - **Legacy tables can linger.** Older databases may still contain an unused `teaching_sessions`
   table. The code no longer creates or reads it, and it was left in place rather than dropped.
+- **Test accounts and paused students stay in `users`.** `is_test` marks a login made to try the
+  app out; it never counts, and admin pages list it only when "Show test accounts" is on. A student
+  with `paused_on` set is away; they leave the admin list and its counts, and both Impact pages
+  (admin and tutor) list them only for sessions they took part in and never as a to-do, until
+  `paused_until`, or until they sign in or a tutor marks them present. The tutor dashboard and
+  check-in page still list everyone. See `lib/account-visibility.ts`.
 - **Presence is three-valued.** In `attendance` and `tutor_check_ins`, nobody marked means
   `present: null`, which is not the same as absent.
 

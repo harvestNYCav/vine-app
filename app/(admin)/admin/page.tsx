@@ -19,7 +19,11 @@ import AdminTutorApprovalControls from './AdminTutorApprovalControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import { assignedRegentsSectionKeys } from '@/lib/regents-progress'
-import { isTestAccount } from '@/lib/admin-metrics'
+import { isPaused, pauseStateFromRow, type FlaggableRole } from '@/lib/account-visibility'
+import { getShowTestAccounts } from '@/lib/account-visibility-server'
+import { todayString } from '@/lib/scheduling'
+import AdminTestAccountControls from './AdminTestAccountControls'
+import ShowTestAccountsToggle from './ShowTestAccountsToggle'
 
 function formatLastActive(value: number) {
   if (!value) return 'No activity yet'
@@ -31,31 +35,47 @@ function formatLastActive(value: number) {
 
 export default async function AdminPage() {
   const db = await getDb()
-  const [studentsResult, tutorsResult, adminAllowlistResult, parents, pairingRecords, tutorSignupRequests] = await Promise.all([
-    db.execute({ sql: "SELECT id, name, last_active FROM users WHERE role = 'student' ORDER BY name", args: [] }),
-    db.execute({ sql: "SELECT id, name FROM users WHERE role = 'tutor' ORDER BY name", args: [] }),
+  const today = todayString()
+  const [accountsResult, adminAllowlistResult, allParents, pairingRecords, tutorSignupRequests, showTestAccounts] = await Promise.all([
+    db.execute({
+      sql: `SELECT id, name, role, last_active, is_test, paused_on, paused_until FROM users
+            WHERE role IN ('student', 'tutor', 'parent') ORDER BY name`,
+      args: [],
+    }),
     db.execute({ sql: 'SELECT email, created_at FROM admin_email_allowlist ORDER BY created_at DESC', args: [] }),
     listParentsForAdmin(db),
     loadTutorPairingRecords(db),
     listTutorSignupRequests(db),
+    getShowTestAccounts(),
   ])
 
-  type StudentRow = { id: string; name: string; last_active: number }
-  type TutorRow = { id: string; name: string }
-  const students: StudentRow[] = studentsResult.rows.map(row => ({
-    id: String(row.id),
-    name: String(row.name),
-    last_active: Number(row.last_active),
-  }))
-  const tutors: TutorRow[] = tutorsResult.rows.map(row => ({
-    id: String(row.id),
-    name: String(row.name),
-  }))
+  // Every student, tutor and parent. Test accounts are listed only when "Show test accounts" is on,
+  // and never counted; paused students are listed (the directory folds them away) but not counted.
+  const accounts = accountsResult.rows.map(row => {
+    const pause = pauseStateFromRow(row)
+    return {
+      id: String(row.id),
+      name: String(row.name),
+      role: String(row.role) as FlaggableRole,
+      last_active: Number(row.last_active),
+      isTest: Number(row.is_test) === 1,
+      paused: row.role === 'student' && isPaused(pause, today),
+      pausedOn: pause.pausedOn,
+      pausedUntil: pause.pausedUntil,
+    }
+  })
+  const listed = accounts.filter(account => showTestAccounts || !account.isTest)
+  const listedIds = new Set(listed.map(account => account.id))
+  const students = listed.filter(account => account.role === 'student')
+  const tutors = listed.filter(account => account.role === 'tutor').map(({ id, name }) => ({ id, name }))
+  const parents = allParents.filter(parent => listedIds.has(parent.id))
+  const testAccountCount = accounts.filter(account => account.isTest).length
   const adminAllowlist = adminAllowlistResult.rows.map(row => ({
     email: String(row.email),
     createdAt: Number(row.created_at),
   }))
-  const tutorNameById = new Map(tutors.map(tutor => [tutor.id, tutor.name]))
+  // Names of every tutor, test or not, so a student paired with a hidden one still says who.
+  const tutorNameById = new Map(accounts.filter(account => account.role === 'tutor').map(tutor => [tutor.id, tutor.name]))
   const pairingsByStudent = summarizeTutorPairings(pairingRecords, tutorNameById)
   const resettableProfiles = [
     ...students.map(student => ({ id: student.id, name: student.name, role: 'student' as const })),
@@ -128,10 +148,11 @@ export default async function AdminPage() {
     }
   }))
 
-  // The stat tiles leave out test accounts ("TestStudentESL", "TestTutor"), like the Impact page.
-  const realStudentData = studentData.filter(student => !isTestAccount(student.name))
-  const realTutorCount = tutors.filter(tutor => !isTestAccount(tutor.name)).length
-  const trackCounts = realStudentData.reduce<Record<Track, number>>((acc, student) => {
+  // The tiles count real, active students and real tutors only.
+  const countedStudents = studentData.filter(student => !student.isTest && !student.paused)
+  const countedTutorCount = accounts.filter(account => account.role === 'tutor' && !account.isTest).length
+  const pausedCount = accounts.filter(account => account.role === 'student' && !account.isTest && account.paused).length
+  const trackCounts = countedStudents.reduce<Record<Track, number>>((acc, student) => {
     student.tracks.forEach(track => { acc[track]++ })
     return acc
   }, { ela: 0, esl: 0, math: 0 })
@@ -159,6 +180,10 @@ export default async function AdminPage() {
     examSectionsCompleted: student.examSectionsCompleted,
     elaExamSectionsCompleted: student.elaExamSectionsCompleted,
     pairings: pairingsByStudent.get(student.id) ?? [],
+    isTest: student.isTest,
+    paused: student.paused,
+    pausedOn: student.pausedOn,
+    pausedUntil: student.pausedUntil,
   }))
 
   return (
@@ -169,6 +194,7 @@ export default async function AdminPage() {
           <h1 className="text-2xl font-bold text-slate-900">Students</h1>
         </div>
         <div className="flex flex-wrap gap-2">
+          <ShowTestAccountsToggle show={showTestAccounts} count={testAccountCount} />
           <a
             href="/vine-app/api/admin/session-metrics"
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
@@ -198,15 +224,20 @@ export default async function AdminPage() {
       />
       <AdminAllowlistControls initialEmails={adminAllowlist} />
       <AdminPinResetControls profiles={resettableProfiles} />
+      <AdminTestAccountControls
+        accounts={accounts.map(({ id, name, role, isTest }) => ({ id, name, role, isTest }))}
+      />
       <AdminDangerZoneControls profiles={resettableProfiles} />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         <div className="bg-white border border-slate-200 rounded-lg p-4">
-          <p className="text-3xl font-bold text-slate-900">{realStudentData.length}</p>
-          <p className="text-sm text-slate-500">Students</p>
+          <p className="text-3xl font-bold text-slate-900">{countedStudents.length}</p>
+          <p className="text-sm text-slate-500">
+            Students{pausedCount > 0 ? ` · ${pausedCount} paused` : ''}
+          </p>
         </div>
         <div className="bg-white border border-slate-200 rounded-lg p-4">
-          <p className="text-3xl font-bold text-slate-900">{realTutorCount}</p>
+          <p className="text-3xl font-bold text-slate-900">{countedTutorCount}</p>
           <p className="text-sm text-slate-500">Tutors</p>
         </div>
         <div className="bg-white border border-slate-200 rounded-lg p-4">
@@ -215,12 +246,12 @@ export default async function AdminPage() {
           <p className="text-sm font-semibold text-slate-900">Math {trackCounts.math}</p>
         </div>
         <div className="bg-white border border-slate-200 rounded-lg p-4">
-          <p className="text-3xl font-bold text-slate-900">{realStudentData.filter(s => s.tutorIds.length > 0).length}</p>
+          <p className="text-3xl font-bold text-slate-900">{countedStudents.filter(s => s.tutorIds.length > 0).length}</p>
           <p className="text-sm text-slate-500">Assigned</p>
         </div>
       </div>
 
-      <AdminStudentDirectory students={directoryStudents} tutors={tutors} />
+      <AdminStudentDirectory students={directoryStudents} tutors={tutors} today={today} />
     </main>
   )
 }

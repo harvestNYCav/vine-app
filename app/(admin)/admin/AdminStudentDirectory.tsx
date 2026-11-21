@@ -6,7 +6,9 @@ import type { RegentsCourse } from '@/lib/regents-courses'
 import type { TutorPairing } from '@/lib/tutor-pairings'
 import type { Track } from '@/types'
 import { normalizeSearchText } from '@/lib/search'
+import { formatDayKey } from '@/lib/account-visibility'
 import AdminStudentControls from './AdminStudentControls'
+import AdminStudentStatusControls from './AdminStudentStatusControls'
 
 export interface AdminStudentSummary {
   id: string
@@ -28,6 +30,11 @@ export interface AdminStudentSummary {
   examSectionsCompleted: number
   elaExamSectionsCompleted: number
   pairings: TutorPairing[]
+  isTest: boolean
+  // Paused as of today (lib/account-visibility.ts). pausedOn/pausedUntil describe that pause.
+  paused: boolean
+  pausedOn: string | null
+  pausedUntil: string | null
 }
 
 type TrackFilter = 'all' | Track | 'none'
@@ -45,13 +52,16 @@ const UNASSIGNED = '__unassigned__'
 export default function AdminStudentDirectory({
   students,
   tutors,
+  today,
 }: {
   students: AdminStudentSummary[]
   tutors: Array<{ id: string; name: string }>
+  today: string
 }) {
   const [query, setQuery] = useState('')
   const [trackFilter, setTrackFilter] = useState<TrackFilter>('all')
   const [tutorFilter, setTutorFilter] = useState('')
+  const [showPaused, setShowPaused] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
 
   // "/" jumps to the search box from anywhere on the page, unless the admin is already typing.
@@ -67,7 +77,11 @@ export default function AdminStudentDirectory({
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [])
 
-  const filtered = useMemo(() => {
+  const pausedCount = students.filter(student => student.paused).length
+  const listed = showPaused ? students.length : students.length - pausedCount
+
+  // Students matching the search and filters, paused or not; paused ones are dropped below unless shown.
+  const matches = useMemo(() => {
     const terms = normalizeSearchText(query).split(/\s+/).filter(Boolean)
     return students.filter(student => {
       if (trackFilter === 'none' && student.tracks.length > 0) return false
@@ -79,6 +93,8 @@ export default function AdminStudentDirectory({
       return terms.every(term => name.includes(term))
     })
   }, [students, query, trackFilter, tutorFilter])
+  const filtered = showPaused ? matches : matches.filter(student => !student.paused)
+  const pausedMatches = matches.length - filtered.length
 
   const filtersActive = query.trim() !== '' || trackFilter !== 'all' || tutorFilter !== ''
   const clearFilters = () => {
@@ -145,8 +161,21 @@ export default function AdminStudentDirectory({
             )
           })}
           <span className="ml-auto text-xs text-slate-500" aria-live="polite">
-            Showing {filtered.length} of {students.length}
+            Showing {filtered.length} of {listed}
           </span>
+          {pausedCount > 0 && (
+            <button
+              type="button"
+              aria-pressed={showPaused}
+              onClick={() => setShowPaused(value => !value)}
+              title="Students paused while they are away. They are left out of the counts above."
+              className={`rounded-full border px-3 py-1 text-xs font-semibold transition-colors ${
+                showPaused ? 'border-sky-700 bg-sky-700 text-white' : 'border-sky-200 bg-sky-50 text-sky-800 hover:bg-sky-100'
+              }`}
+            >
+              {showPaused ? 'Hide' : 'Show'} paused ({pausedCount})
+            </button>
+          )}
           {filtersActive && (
             <button type="button" onClick={clearFilters} className="text-xs font-semibold text-slate-600 underline hover:text-slate-900">
               Clear
@@ -157,18 +186,37 @@ export default function AdminStudentDirectory({
 
       {filtered.length === 0 ? (
         <div className="bg-white border border-slate-200 rounded-lg p-6 text-center text-sm text-slate-500">
-          No students match{query.trim() ? ` “${query.trim()}”` : ' these filters'}.{' '}
-          <button type="button" onClick={clearFilters} className="font-semibold text-slate-700 underline">Clear filters</button>
+          No {pausedMatches > 0 ? 'active ' : ''}students match{query.trim() ? ` “${query.trim()}”` : ' these filters'}.{' '}
+          {pausedMatches > 0 ? (
+            <button type="button" onClick={() => setShowPaused(true)} className="font-semibold text-slate-700 underline">
+              Show {pausedMatches} paused
+            </button>
+          ) : (
+            <button type="button" onClick={clearFilters} className="font-semibold text-slate-700 underline">Clear filters</button>
+          )}
         </div>
       ) : (
         <div className="space-y-4">
           {filtered.map(student => (
-            <section key={student.id} className="bg-white border border-slate-200 rounded-lg p-4">
+            <section
+              key={student.id}
+              className={`rounded-lg border p-4 ${student.paused ? 'border-sky-200 bg-sky-50/40' : 'border-slate-200 bg-white'}`}
+            >
               <div className="grid lg:grid-cols-[1fr_280px] gap-5">
                 <div>
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
-                      <h2 className="text-lg font-bold text-slate-900">{student.name}</h2>
+                      <h2 className="flex flex-wrap items-center gap-2 text-lg font-bold text-slate-900">
+                        {student.name}
+                        {student.paused && (
+                          <span className="rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800">
+                            Paused{student.pausedUntil ? ` · back ${formatDayKey(student.pausedUntil, today)}` : ''}
+                          </span>
+                        )}
+                        {student.isTest && (
+                          <span className="rounded-full bg-violet-100 px-2 py-0.5 text-xs font-semibold text-violet-800">Test</span>
+                        )}
+                      </h2>
                       <p className="text-sm text-slate-500">
                         {student.lastActiveLabel} · Tutors: {
                           student.tutorNames.length > 0 ? student.tutorNames.join(', ') : 'Unassigned'
@@ -214,16 +262,28 @@ export default function AdminStudentDirectory({
                   </div>
                 </div>
 
-                <AdminStudentControls
-                  studentId={student.id}
-                  initialTutorIds={student.tutorIds}
-                  initialTracks={student.tracks}
-                  initialMathSpanishEnabled={student.mathSpanishEnabled}
-                  initialGradeLevel={student.gradeLevel}
-                  initialRegentsCourses={student.regentsCourses}
-                  tutors={tutors}
-                  pairings={student.pairings}
-                />
+                <div className="space-y-3">
+                  <AdminStudentControls
+                    studentId={student.id}
+                    initialTutorIds={student.tutorIds}
+                    initialTracks={student.tracks}
+                    initialMathSpanishEnabled={student.mathSpanishEnabled}
+                    initialGradeLevel={student.gradeLevel}
+                    initialRegentsCourses={student.regentsCourses}
+                    tutors={tutors}
+                    pairings={student.pairings}
+                  />
+                  <AdminStudentStatusControls
+                    key={`${student.paused}:${student.pausedUntil}`}
+                    studentId={student.id}
+                    studentName={student.name}
+                    isTest={student.isTest}
+                    paused={student.paused}
+                    pausedOn={student.pausedOn}
+                    pausedUntil={student.pausedUntil}
+                    today={today}
+                  />
+                </div>
               </div>
             </section>
           ))}

@@ -1,4 +1,5 @@
 import type { Client } from '@libsql/client'
+import { isPaused, pauseStateFromRow, resumeStudentOnReturn } from './account-visibility'
 
 export interface TutorCheckIn {
   tutorId: string
@@ -76,16 +77,31 @@ export async function setStudentCheckIn(
     `,
     args: [date, studentId, present ? 1 : 0, recordedBy, Date.now()],
   })
+  // A paused student marked present is back, so they count again.
+  if (present) await resumeStudentOnReturn(db, studentId, date)
 }
 
 /**
  * Everything an admin needs for one session date: every tutor with their own
  * check-in, and every student with whichever tutor marked them.
+ *
+ * The admin page can leave out test accounts, and students paused as of a given
+ * day unless somebody marked them anyway. Tutors see everyone, so they can mark
+ * a paused student who comes back.
  */
-export async function getCheckInDay(db: Client, date: string): Promise<CheckInDay> {
+export async function getCheckInDay(
+  db: Client,
+  date: string,
+  { hideTestAccounts = false, hidePausedAsOf = null }: { hideTestAccounts?: boolean; hidePausedAsOf?: string | null } = {},
+): Promise<CheckInDay> {
+  const testFilter = hideTestAccounts ? ' AND is_test = 0' : ''
   const [tutorsResult, studentsResult, tutorCheckInsResult, attendanceResult] = await Promise.all([
-    db.execute({ sql: "SELECT id, name FROM users WHERE role = 'tutor' ORDER BY name", args: [] }),
-    db.execute({ sql: "SELECT id, name FROM users WHERE role = 'student' ORDER BY name", args: [] }),
+    // Every tutor, so a student marked by a test tutor still shows who marked them.
+    db.execute({ sql: "SELECT id, name, is_test FROM users WHERE role = 'tutor' ORDER BY name", args: [] }),
+    db.execute({
+      sql: `SELECT id, name, paused_on, paused_until FROM users WHERE role = 'student'${testFilter} ORDER BY name`,
+      args: [],
+    }),
     db.execute({
       sql: 'SELECT tutor_id, present, recorded_at FROM tutor_check_ins WHERE session_date = ?',
       args: [date],
@@ -112,7 +128,7 @@ export async function getCheckInDay(db: Client, date: string): Promise<CheckInDa
 
   return {
     date,
-    tutors: tutorsResult.rows.map(row => {
+    tutors: tutorsResult.rows.filter(row => !hideTestAccounts || Number(row.is_test) !== 1).map(row => {
       const tutorId = String(row.id)
       const checkIn = tutorCheckInById.get(tutorId)
       return {
@@ -122,9 +138,10 @@ export async function getCheckInDay(db: Client, date: string): Promise<CheckInDa
         recordedAt: checkIn?.recordedAt ?? null,
       }
     }),
-    students: studentsResult.rows.map(row => {
+    students: studentsResult.rows.flatMap(row => {
       const studentId = String(row.id)
       const attendance = attendanceByStudent.get(studentId)
+      if (!attendance && hidePausedAsOf !== null && isPaused(pauseStateFromRow(row), hidePausedAsOf)) return []
       return {
         studentId,
         studentName: String(row.name),

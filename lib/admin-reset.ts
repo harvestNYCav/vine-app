@@ -10,6 +10,7 @@ const TEST_STUDENTS = [
   { name: 'TestStudentMath', track: 'math' },
 ]
 
+// Flagged as test accounts (lib/account-visibility.ts), so they never count.
 async function seedTestAccounts(db: Client): Promise<void> {
   const now = Date.now()
   const pinHash = await bcrypt.hash(TEST_ACCOUNT_PIN, 10)
@@ -19,15 +20,15 @@ async function seedTestAccounts(db: Client): Promise<void> {
 
   await db.batch([
     {
-      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active, is_test) VALUES (?, ?, NULL, ?, ?, ?, ?, 1)',
       args: [tutorId, 'TestTutor', pinHash, 'tutor', now, now],
     },
     {
-      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active, is_test) VALUES (?, ?, NULL, ?, ?, ?, ?, 1)',
       args: [parentId, 'TestParent', pinHash, 'parent', now, now],
     },
     ...studentRows.map(student => ({
-      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active) VALUES (?, ?, NULL, ?, ?, ?, ?)',
+      sql: 'INSERT INTO users (id, name, email, pin_hash, role, created_at, last_active, is_test) VALUES (?, ?, NULL, ?, ?, ?, ?, 1)',
       args: [student.id, student.name, pinHash, 'student', now, now],
     })),
     ...studentRows.map(student => ({

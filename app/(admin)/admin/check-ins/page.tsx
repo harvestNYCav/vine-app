@@ -2,7 +2,9 @@ import Link from 'next/link'
 import getDb from '@/lib/db'
 import { getCheckInDay, isCheckInDate, summarizeCheckInCounts } from '@/lib/check-ins'
 import { todayString } from '@/lib/scheduling'
+import { getShowTestAccounts } from '@/lib/account-visibility-server'
 import CheckInDatePicker from './CheckInDatePicker'
+import ShowTestAccountsToggle from '../ShowTestAccountsToggle'
 
 function formatTime(value: number | null): string {
   if (!value) return ''
@@ -15,21 +17,31 @@ export default async function AdminCheckInsPage({
   searchParams: Promise<{ date?: string }>
 }) {
   const { date: requestedDate } = await searchParams
-  const date = isCheckInDate(requestedDate) ? requestedDate : todayString()
-  const db = await getDb()
-  const day = await getCheckInDay(db, date)
+  const today = todayString()
+  const date = isCheckInDate(requestedDate) ? requestedDate : today
+  const [db, showTestAccounts] = await Promise.all([getDb(), getShowTestAccounts()])
+  const [day, testCountResult] = await Promise.all([
+    // Students paused now are left out unless somebody marked them that day.
+    getCheckInDay(db, date, { hideTestAccounts: !showTestAccounts, hidePausedAsOf: today }),
+    db.execute({ sql: "SELECT COUNT(*) AS count FROM users WHERE is_test = 1 AND role IN ('student', 'tutor')", args: [] }),
+  ])
+  const testAccountCount = Number(testCountResult.rows[0]?.count ?? 0)
 
   const tutorCounts = summarizeCheckInCounts(day.tutors)
   const studentCounts = summarizeCheckInCounts(day.students)
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-6">
-      <div className="mb-6">
-        <Link href="/admin" className="text-sm text-slate-500 hover:text-slate-700">← Students</Link>
-        <h1 className="mt-1 text-2xl font-bold text-slate-900">Check-ins</h1>
-        <p className="text-sm text-slate-500">
-          Who tutors marked as here on a session day — themselves and their students.
-        </p>
+      <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <Link href="/admin" className="text-sm text-slate-500 hover:text-slate-700">← Students</Link>
+          <h1 className="mt-1 text-2xl font-bold text-slate-900">Check-ins</h1>
+          <p className="text-sm text-slate-500">
+            Who tutors marked as here on a session day — themselves and their students. Paused students
+            are left out unless someone marked them.
+          </p>
+        </div>
+        <ShowTestAccountsToggle show={showTestAccounts} count={testAccountCount} />
       </div>
 
       <CheckInDatePicker date={date} />

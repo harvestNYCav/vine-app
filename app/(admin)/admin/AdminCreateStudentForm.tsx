@@ -2,11 +2,15 @@
 
 import { FormEvent, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { looksLikeTestAccountName } from '@/lib/account-visibility'
 
 export default function AdminCreateStudentForm() {
   const router = useRouter()
   const [name, setName] = useState('')
   const [pin, setPin] = useState('')
+  // Follows the name ("Test…" names suggest a test account) until the admin sets it themselves.
+  const [isTestChoice, setIsTestChoice] = useState<boolean | null>(null)
+  const isTest = isTestChoice ?? looksLikeTestAccountName(name)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState('')
   const [isError, setIsError] = useState(false)
@@ -21,7 +25,7 @@ export default function AdminCreateStudentForm() {
       const response = await fetch('/vine-app/api/admin/students', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, pin }),
+        body: JSON.stringify({ name, pin, isTest }),
       })
       const data = await response.json().catch(() => ({}))
       if (!response.ok) {
@@ -33,7 +37,10 @@ export default function AdminCreateStudentForm() {
       const createdName = String(data.student?.name ?? name.trim())
       setName('')
       setPin('')
-      setMessage(`${createdName} can now sign in with the PIN you set.`)
+      setIsTestChoice(null)
+      setMessage(isTest
+        ? `${createdName} can now sign in with the PIN you set. It is a test account, so it won't be counted or listed unless “Show test accounts” is on.`
+        : `${createdName} can now sign in with the PIN you set.`)
       router.refresh()
     } catch {
       setIsError(true)
@@ -98,6 +105,16 @@ export default function AdminCreateStudentForm() {
         >
           {saving ? 'Creating...' : 'Create student'}
         </button>
+
+        <label className="flex items-center gap-2 text-xs font-medium text-slate-600 md:col-span-3">
+          <input
+            type="checkbox"
+            checked={isTest}
+            onChange={event => setIsTestChoice(event.target.checked)}
+            className="h-4 w-4 accent-violet-600"
+          />
+          Test account (for trying the student view; never counted)
+        </label>
       </form>
 
       <p

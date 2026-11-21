@@ -3,6 +3,7 @@ import { ALL_MODULES } from '@/content/modules'
 import { ESL_LEVELS } from '@/content/esl-placement'
 import type { Track } from '@/types'
 import { localDateKey } from './dates'
+import { isPaused, pauseStateFromRow } from './account-visibility'
 
 // The admin Impact page: is Vine doing what it was built for? Tutors teach in-person lessons from
 // it, students practice between sessions, and students learn. Everything here is derived from
@@ -29,11 +30,6 @@ export const MISSED_SESSIONS_TO_CHECK_IN = 2
 export const SESSION_MINUTES = 120
 
 const DAY_MS = 86_400_000
-
-// Accounts made to try the app out ("TestStudentESL", "TestTutor") are left out of every figure.
-export function isTestAccount(name: string): boolean {
-  return /^test/i.test(name.trim())
-}
 
 function dateFromKey(key: string): Date {
   const [year, month, day] = key.split('-').map(Number)
@@ -161,6 +157,7 @@ export interface StudentProgress {
   placements: number
   movedUp: boolean
   // An ESL student whose first lesson came after the placement test existed, with no placement yet.
+  // Never a paused student: they can't be tested until they are back.
   placementDue: boolean
   // The rest are for the focus, except words mastered and last seen, which are all-time.
   lessonsAttended: number
@@ -174,6 +171,9 @@ export interface StudentProgress {
   homePracticeDays: number
   wordsMastered: number
   lastSeen: string | null
+  // Paused today (lib/account-visibility.ts). A paused student is listed only when they took part
+  // in the focus, so the lists match the tile numbers, and never as one to check in on.
+  paused: boolean
 }
 
 export interface TutorUsage {
@@ -343,8 +343,10 @@ export interface ProgramImpact {
   // All-time, newest first.
   placementRecords: PlacementRecord[]
   eslLevels: EslLevelSummary
+  // Real students who are not paused.
   totalStudents: number
   testAccounts: number
+  pausedStudents: number
   checkIn: CheckInStudent[]
 }
 
@@ -446,7 +448,10 @@ export async function getProgramImpact(
     userRows, trackRows, pairingRows, activity, sessions, attendance, checkIns, wrapUps, handoffs, deck,
     progress, mathExams, elaExams, placements, vocab, lastActivity, lastAttendance, firstLessons, vineLessons, since,
   ] = await Promise.all([
-    db.execute({ sql: "SELECT id, name, role FROM users WHERE role IN ('student', 'tutor') ORDER BY name", args: [] }),
+    db.execute({
+      sql: "SELECT id, name, role, is_test, paused_on, paused_until FROM users WHERE role IN ('student', 'tutor') ORDER BY name",
+      args: [],
+    }),
     db.execute({ sql: 'SELECT user_id, track FROM user_tracks', args: [] }),
     db.execute({ sql: 'SELECT student_id, tutor_id FROM student_tutors', args: [] }),
     db.execute({
@@ -541,20 +546,26 @@ export async function getProgramImpact(
   }
   const tracked = (since: string | null, date: string) => since !== null && date >= since
 
-  // Test accounts are dropped here, so nothing below ever counts them.
+  // Test accounts (lib/account-visibility.ts) are dropped here, so nothing below ever counts them.
+  // Students paused today are kept: what they did before the pause still counts. They are only left
+  // off the student lists when they did nothing in the focus (see `students` below).
   const names = new Map<string, string>()
-  const studentRows: Array<{ id: string; name: string }> = []
+  const studentRows: Array<{ id: string; name: string; paused: boolean }> = []
   const tutorRows: Array<{ id: string; name: string }> = []
+  const studentIds = new Set<string>()
   const testIds = new Set<string>()
+  let pausedStudents = 0
   for (const row of userRows.rows) {
     const name = String(row.name)
     const id = String(row.id)
-    if (isTestAccount(name)) { testIds.add(id); continue }
+    if (Number(row.is_test) === 1) { testIds.add(id); continue }
     names.set(id, name)
-    if (row.role === 'student') studentRows.push({ id, name })
-    else tutorRows.push({ id, name })
+    if (row.role !== 'student') { tutorRows.push({ id, name }); continue }
+    studentIds.add(id)
+    const paused = isPaused(pauseStateFromRow(row), today)
+    if (paused) pausedStudents++
+    studentRows.push({ id, name, paused })
   }
-  const studentIds = new Set(studentRows.map(row => row.id))
   const tutorIds = new Set(tutorRows.map(row => row.id))
   const nameOf = (id: string) => names.get(id) ?? 'Unknown'
   const lessonTitle = new Map(ALL_MODULES.map(module => [module.slug, module.titleEn]))
@@ -864,7 +875,9 @@ export async function getProgramImpact(
     if (date > (lastSeenById.get(id) ?? '')) lastSeenById.set(id, date)
   }
 
-  const students: StudentProgress[] = studentRows.map(({ id, name }) => {
+  // A student tally exists only for students who took part in the focus (a lesson, a mark, practice
+  // or a quiz), the same facts the tile numbers count.
+  const students: StudentProgress[] = studentRows.filter(({ id, paused }) => !paused || student.has(id)).map(({ id, name, paused }) => {
     const history = placementHistory.get(id) ?? []
     const first = history[0] ?? null
     const latest = history[history.length - 1] ?? null
@@ -880,7 +893,7 @@ export async function getProgramImpact(
       currentLevel: latest ? levelLabel.get(latest) ?? latest : null,
       placements: history.length,
       movedUp: first !== null && latest !== null && (levelRank.get(latest) ?? 0) > (levelRank.get(first) ?? 0),
-      placementDue: tracks.includes('esl') && history.length === 0 && firstLesson !== undefined
+      placementDue: !paused && tracks.includes('esl') && history.length === 0 && firstLesson !== undefined
         && tracked(trackingSince.placements, firstLesson),
       lessonsAttended: tally?.lessons ?? 0,
       daysPresent: tally?.present ?? 0,
@@ -892,6 +905,7 @@ export async function getProgramImpact(
       homePracticeDays: tally?.homeDays.size ?? 0,
       wordsMastered: wordsById.get(id) ?? 0,
       lastSeen: lastSeenById.get(id) ?? null,
+      paused,
     }
   })
 
@@ -962,6 +976,8 @@ export async function getProgramImpact(
   }
   const firstSession = pastSessions[0]
   const checkIn: CheckInStudent[] = students
+    // A paused student is away on purpose; nobody needs to call them.
+    .filter(s => !s.paused)
     .map(s => {
       const sessionsMissed = pastSessions.filter(date => s.lastSeen === null || date > s.lastSeen).length
       const group: CheckInStudent['group'] = s.lastSeen === null ? 'never'
@@ -1003,8 +1019,9 @@ export async function getProgramImpact(
     deckSessions: deckSessions.sort(byLessonOrder),
     placementRecords,
     eslLevels,
-    totalStudents: studentIds.size,
+    totalStudents: studentRows.filter(row => !row.paused).length,
     testAccounts: testIds.size,
+    pausedStudents,
     checkIn,
   }
 }

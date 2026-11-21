@@ -125,7 +125,8 @@ export default async function AdminImpactPage({
           Pick a Vine session to see its week (Monday–Sunday, so practice in the days around the session counts), or all
           sessions together. Trends always show every session; click a column to jump to it. Weeks with no Vine session
           {impact.skippedWeeks.length > 0 && ` (${impact.skippedWeeks.map(week => `week of ${formatWeek(week)}`).join(', ')})`} are left out.
-          {impact.testAccounts > 0 && ` ${plural(impact.testAccounts, 'test account')} (names starting with “Test”) are left out.`}
+          {impact.testAccounts > 0 && ` ${plural(impact.testAccounts, 'test account')} ${impact.testAccounts === 1 ? 'is' : 'are'} left out.`}
+          {impact.pausedStudents > 0 && ` ${plural(impact.pausedStudents, 'paused student')} ${impact.pausedStudents === 1 ? 'is' : 'are'} listed only for sessions they took part in, and never under students to check in on.`}
         </p>
       </div>
 

@@ -6,7 +6,6 @@ import { join } from 'node:path'
 import { createClient, type Client } from '@libsql/client'
 import {
   getProgramImpact,
-  isTestAccount,
   resolveFocus,
   sessionWeeks,
   weekStartOf,
@@ -31,7 +30,10 @@ async function withFixture(run: (db: Client) => Promise<void>) {
   const db = createClient({ url: `file:${join(directory, 'fixture.db')}` })
   try {
     await db.executeMultiple(`
-      CREATE TABLE users (id TEXT PRIMARY KEY, name TEXT NOT NULL, role TEXT NOT NULL, created_at INTEGER NOT NULL);
+      CREATE TABLE users (
+        id TEXT PRIMARY KEY, name TEXT NOT NULL, role TEXT NOT NULL, created_at INTEGER NOT NULL,
+        is_test INTEGER NOT NULL DEFAULT 0, paused_on TEXT, paused_until TEXT
+      );
       CREATE TABLE user_tracks (user_id TEXT, track TEXT, created_at INTEGER, PRIMARY KEY (user_id, track));
       CREATE TABLE activity_log (user_id TEXT, date TEXT, activity_type TEXT, count INTEGER, PRIMARY KEY (user_id, date, activity_type));
       CREATE TABLE sessions (id TEXT PRIMARY KEY, student_id TEXT, date TEXT, module_slug TEXT, tutor_id TEXT, homework_assigned INTEGER DEFAULT 0, created_at INTEGER);
@@ -87,13 +89,6 @@ test('the focus defaults to the most recent session held', () => {
   assert.equal(resolveFocus('all', weeks, TODAY), null)
 })
 
-test('test accounts are recognised by name', () => {
-  assert.equal(isTestAccount('TestStudentESL'), true)
-  assert.equal(isTestAccount(' testtutor'), true)
-  assert.equal(isTestAccount('TestTutorESL'), true)
-  assert.equal(isTestAccount('Teresaa'), false)
-})
-
 const SESSIONS = ['2026-11-07', '2026-11-14', '2026-11-21']
 const ALL = { today: TODAY, focus: 'all', sessionDates: SESSIONS, now: NOW, timeZone: TZ }
 
@@ -101,7 +96,7 @@ async function seedProgram(db: Client) {
   const placement = (id: string, student: string, date: string, level: string) =>
     `('${id}', '${student}', 't1', '${date}', 'v1', '{}', 0, NULL, '${level}', '${level}', '', NULL, ${at(date)})`
   await db.executeMultiple(`
-    INSERT INTO users VALUES
+    INSERT INTO users (id, name, role, created_at) VALUES
       ('ana', 'Ana', 'student', 0), ('ben', 'Ben', 'student', 0), ('cy', 'Cy', 'student', 0),
       ('t1', 'Tess', 'tutor', 0), ('t2', 'Tom', 'tutor', 0);
     INSERT INTO user_tracks VALUES ('ana', 'esl', 0), ('ben', 'esl', 0), ('cy', 'esl', 0);
@@ -300,7 +295,9 @@ test('test accounts are left out, and students who stopped coming are listed fir
   await withFixture(async db => {
     await seedProgram(db)
     await db.executeMultiple(`
-      INSERT INTO users VALUES ('tst', 'TestStudentESL', 'student', 0), ('tt', 'TestTutor', 'tutor', 0), ('dee', 'Dee', 'student', 0);
+      INSERT INTO users (id, name, role, created_at, is_test) VALUES
+        ('tst', 'TestStudentESL', 'student', 0, 1), ('tt', 'TestTutor', 'tutor', 0, 1), ('dee', 'Dee', 'student', 0, 0),
+        ('testa', 'Testa', 'student', 0, 0);
       INSERT INTO sessions VALUES ('s7', 'tst', '2026-11-14', 'introducing-yourself', 'tt', 1, 0);
       INSERT INTO lesson_deck_progress VALUES ('tt', '2026-11-14', 'likes-and-dislikes', 3, '', 20, 60000, 0, 0);
       INSERT INTO activity_log VALUES ('tst', '2026-11-14', 'module', 1), ('dee', '2026-11-07', 'module', 1);
@@ -309,14 +306,15 @@ test('test accounts are left out, and students who stopped coming are listed fir
     // Sessions Oct 31, Nov 7 and Nov 14: Dee came on Nov 7 and hasn't been seen since.
     const impact = await getProgramImpact(db, { ...ALL, sessionDates: ['2026-10-31', ...SESSIONS] })
     assert.equal(impact.testAccounts, 2)
-    assert.equal(impact.students.some(student => student.name.startsWith('Test')), false)
+    assert.equal(impact.students.some(student => student.id === 'tst'), false)
     assert.equal(impact.tutors.some(tutor => tutor.name.startsWith('Test')), false)
     assert.equal(impact.deckSessions.some(deck => deck.slug === 'likes-and-dislikes'), false)
-    assert.equal(impact.totalStudents, 4)
+    assert.equal(impact.totalStudents, 5, 'a real student whose name starts with "Test" still counts')
     assert.equal(impact.period.lessonsTaught, 4, "the test student's lesson is not counted")
 
     // Dee missed only Nov 14, one session: not yet worth a call.
-    assert.deepEqual(impact.checkIn.map(student => student.name), ['Cy'])
+    assert.deepEqual(impact.checkIn.map(student => student.name), ['Cy', 'Testa'])
+    await db.execute("DELETE FROM users WHERE id = 'testa'")
     const later = await getProgramImpact(db, { ...ALL, today: '2026-11-22', now: NOW + 5 * 86_400_000, sessionDates: ['2026-10-31', ...SESSIONS] })
     const dee = later.checkIn.find(student => student.name === 'Dee')!
     assert.equal(dee.group, 'stopped')
@@ -344,5 +342,44 @@ test('hand-off notes are counted from the first one, and listed with the lesson'
     assert.equal(lesson.handoff, 'left')
     assert.equal(lesson.handoffNote, 'Start with vocab review')
     assert.ok(impact.taughtLessons.filter(l => l !== lesson).every(l => l.handoff === 'none'))
+  })
+})
+
+test('a paused student is listed only for sessions they took part in, and never to check in on', async () => {
+  await withFixture(async db => {
+    await seedProgram(db)
+    const before = await getProgramImpact(db, ALL)
+    assert.ok(before.checkIn.some(student => student.id === 'cy'))
+
+    // Ben and Cy only took part in the Nov 14 session (Cy was marked absent), then went away.
+    await db.execute("UPDATE users SET paused_on = '2026-11-15' WHERE id IN ('ben', 'cy')")
+    const byFocus = await Promise.all(['all', ...SESSIONS].map(focus => getProgramImpact(db, { ...ALL, focus })))
+    const [all, nov7, nov14] = byFocus
+    assert.equal(all.pausedStudents, 2)
+    assert.equal(all.totalStudents, before.totalStudents - 2)
+    assert.equal(all.checkIn.some(student => student.id === 'cy'), false, 'nobody needs to call a paused student')
+    assert.equal(before.students.find(student => student.id === 'cy')?.placementDue, true)
+    assert.equal(all.students.find(student => student.id === 'cy')?.placementDue, false, 'or test one')
+    assert.equal(all.period.lessonsTaught, before.period.lessonsTaught, 'what they did before the pause still counts')
+    assert.deepEqual(all.weeks.map(week => week.activeStudents), before.weeks.map(week => week.activeStudents))
+
+    assert.deepEqual(nov14.students.filter(student => student.paused).map(student => student.id).sort(), ['ben', 'cy'])
+    assert.deepEqual(nov7.students.map(student => student.id), ['ana'], 'left off a week they had no part in')
+
+    // Whatever the focus, the name lists behind a tile add up to the tile.
+    for (const impact of byFocus) {
+      const sum = (pick: (student: (typeof impact.students)[number]) => number) =>
+        impact.students.reduce((total, student) => total + pick(student), 0)
+      assert.equal(impact.students.filter(student => student.activeDays > 0).length, impact.period.activeStudents)
+      assert.equal(sum(student => student.daysMarked), impact.period.attendanceMarked)
+      assert.equal(sum(student => student.daysPresent), impact.period.attendancePresent)
+      assert.equal(sum(student => student.lessonsAttended), impact.period.lessonsTaught)
+    }
+
+    // On the back-on date Ben is a regular student again, listed whether or not he took part.
+    await db.execute({ sql: "UPDATE users SET paused_until = ? WHERE id = 'ben'", args: [TODAY] })
+    const back = await getProgramImpact(db, { ...ALL, focus: '2026-11-07' })
+    assert.equal(back.pausedStudents, 1)
+    assert.equal(back.students.find(student => student.id === 'ben')?.paused, false)
   })
 })
