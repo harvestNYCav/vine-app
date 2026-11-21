@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSession } from '@/lib/auth'
 import getDb from '@/lib/db'
+import { parseHandoffNote, saveSessionHandoffNote } from '@/lib/tutor-handoff'
 import { InvalidWrapUpError, parseSessionWrapUp, saveSessionWrapUp } from '@/lib/session-metrics'
 
 export async function POST(req: NextRequest) {
@@ -10,8 +11,11 @@ export async function POST(req: NextRequest) {
   }
 
   let wrapUp
+  let handoffNote
   try {
-    wrapUp = parseSessionWrapUp(await req.json())
+    const body = await req.json()
+    wrapUp = parseSessionWrapUp(body)
+    handoffNote = parseHandoffNote(body?.handoffNote)
   } catch (error) {
     if (error instanceof InvalidWrapUpError) {
       return NextResponse.json({ error: error.message }, { status: 400 })
@@ -24,5 +28,6 @@ export async function POST(req: NextRequest) {
   if (!saved) {
     return NextResponse.json({ error: 'Session not found' }, { status: 404 })
   }
+  await saveSessionHandoffNote(db, session.userId, wrapUp.sessionId, handoffNote)
   return NextResponse.json({ ok: true })
 }

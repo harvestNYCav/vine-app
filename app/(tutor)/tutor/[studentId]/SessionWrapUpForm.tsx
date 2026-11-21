@@ -10,6 +10,9 @@ interface Props {
   // Where the slide deck got to today, if the tutor presented it.
   deckSummary: string | null
   initialWrapUp: SessionWrapUp | null
+  // The note this session left for the student's next tutor, if any.
+  initialHandoffNote: string
+  studentName: string
 }
 
 const RATING_LABELS = ['', 'Rough', 'Meh', 'Okay', 'Good', 'Great']
@@ -20,8 +23,12 @@ function parseCount(value: string): number | null {
   return Number.isFinite(number) ? number : null
 }
 
-export default function SessionWrapUpForm({ sessionId, sections, defaultQuizTotal, deckSummary, initialWrapUp }: Props) {
+export default function SessionWrapUpForm({
+  sessionId, sections, defaultQuizTotal, deckSummary, initialWrapUp, initialHandoffNote, studentName,
+}: Props) {
   const [saved, setSaved] = useState<SessionWrapUp | null>(initialWrapUp)
+  const [savedHandoffNote, setSavedHandoffNote] = useState(initialHandoffNote)
+  const [handoffNote, setHandoffNote] = useState(initialHandoffNote)
   const [editing, setEditing] = useState(false)
   const [finishedLesson, setFinishedLesson] = useState<boolean | null>(initialWrapUp?.finishedLesson ?? null)
   const [stoppedAt, setStoppedAt] = useState(initialWrapUp?.stoppedAt ?? '')
@@ -53,7 +60,7 @@ export default function SessionWrapUpForm({ sessionId, sections, defaultQuizTota
     const response = await fetch('/vine-app/api/tutor/session/wrap-up', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(wrapUp),
+      body: JSON.stringify({ ...wrapUp, handoffNote }),
     })
     setSaving(false)
     if (!response.ok) {
@@ -62,6 +69,7 @@ export default function SessionWrapUpForm({ sessionId, sections, defaultQuizTota
       return
     }
     setSaved({ ...wrapUp, quizTotal: wrapUp.quizScore === null ? null : wrapUp.quizTotal, updatedAt: Date.now() })
+    setSavedHandoffNote(handoffNote.trim())
     setEditing(false)
   }
 
@@ -78,6 +86,9 @@ export default function SessionWrapUpForm({ sessionId, sections, defaultQuizTota
           {` · ${RATING_LABELS[saved.rating]}`}
         </p>
         {saved.note && <p className="mt-1 text-gray-500 italic">{saved.note}</p>}
+        {savedHandoffNote && (
+          <p className="mt-1 whitespace-pre-wrap text-amber-800"><span className="font-medium">For next time:</span> {savedHandoffNote}</p>
+        )}
       </div>
     )
   }
@@ -168,6 +179,21 @@ export default function SessionWrapUpForm({ sessionId, sections, defaultQuizTota
           maxLength={2000}
           placeholder="What worked, what didn't, what the student struggled with"
           className="w-full rounded-lg border border-gray-200 px-2 py-1.5"
+        />
+      </label>
+
+      <label className="block rounded-lg bg-amber-50 p-2">
+        <span className="mb-1 block font-medium text-amber-800">
+          What should {studentName}&apos;s next tutor know? <span className="font-normal text-amber-600/70">(optional)</span>
+        </span>
+        <span className="mb-1 block text-xs text-amber-700/80">Shown at the top of this page next session.</span>
+        <textarea
+          value={handoffNote}
+          onChange={event => setHandoffNote(event.target.value)}
+          rows={2}
+          maxLength={2000}
+          placeholder="e.g. Review past tense first; loves soccer readings"
+          className="w-full rounded-lg border border-amber-200 bg-white px-2 py-1.5"
         />
       </label>
 

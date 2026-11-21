@@ -5,6 +5,7 @@ import { STUDENT_REGENTS_COURSES_TABLE_SQL } from './regents-courses'
 import { TUTOR_SIGNUP_REQUESTS_TABLE_SQL } from './tutor-approvals'
 import { LESSON_DECK_PROGRESS_TABLE_SQL, SESSION_WRAP_UPS_TABLE_SQL } from './session-metrics'
 import { ESL_PLACEMENTS_INDEX_SQL, ESL_PLACEMENTS_TABLE_SQL } from './esl-placement'
+import { TUTOR_NOTES_TABLE_SQL } from './tutor-handoff'
 
 let client: Client | null = null
 let initialized = false
@@ -252,20 +253,13 @@ async function initSchema(db: Client): Promise<void> {
       updated_at INTEGER NOT NULL,
       PRIMARY KEY (user_id, exam_id, section_slug)
     );
-
-    CREATE TABLE IF NOT EXISTS tutor_notes (
-      id TEXT PRIMARY KEY,
-      student_id TEXT NOT NULL,
-      tutor_id TEXT NOT NULL,
-      body TEXT NOT NULL,
-      created_at INTEGER NOT NULL
-    );
   `)
   await db.execute(EXAM_ASSIGNMENTS_TABLE_SQL)
   await db.execute(STUDENT_REGENTS_COURSES_TABLE_SQL)
   await db.execute(TUTOR_SIGNUP_REQUESTS_TABLE_SQL)
   await db.execute(LESSON_DECK_PROGRESS_TABLE_SQL)
   await db.execute(SESSION_WRAP_UPS_TABLE_SQL)
+  await db.execute(TUTOR_NOTES_TABLE_SQL)
   await db.execute(ESL_PLACEMENTS_TABLE_SQL)
   await db.execute(ESL_PLACEMENTS_INDEX_SQL)
   await ensureColumn(db, 'users', 'email', 'TEXT')
@@ -290,6 +284,7 @@ async function initSchema(db: Client): Promise<void> {
   )
   await ensureColumn(db, 'attendance', 'recorded_by', 'TEXT')
   await ensureColumn(db, 'attendance', 'recorded_at', 'INTEGER')
+  await ensureColumn(db, 'tutor_notes', 'session_id', 'TEXT')
   await backfillExistingMathStudentGradeLevels(db)
   await ensureUsersTableSupportsRole(db, 'admin')
   await ensureUsersTableSupportsRole(db, 'parent')

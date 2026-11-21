@@ -12,6 +12,7 @@ import {
   weekStartOf,
 } from '../lib/admin-metrics'
 import { LESSON_DECK_PROGRESS_TABLE_SQL, SESSION_WRAP_UPS_TABLE_SQL } from '../lib/session-metrics'
+import { saveSessionHandoffNote, TUTOR_NOTES_TABLE_SQL } from '../lib/tutor-handoff'
 import { ESL_PLACEMENTS_TABLE_SQL } from '../lib/esl-placement'
 
 const TZ = 'America/New_York'
@@ -47,6 +48,7 @@ async function withFixture(run: (db: Client) => Promise<void>) {
     `)
     await db.execute(LESSON_DECK_PROGRESS_TABLE_SQL)
     await db.execute(SESSION_WRAP_UPS_TABLE_SQL)
+    await db.execute(TUTOR_NOTES_TABLE_SQL)
     await db.execute(ESL_PLACEMENTS_TABLE_SQL)
     await run(db)
   } finally {
@@ -170,7 +172,7 @@ test('weekly learning and tutor-use measures', async () => {
     assert.equal(impact.period.lessonsTaught, 3, 'the deleted student is not counted')
     assert.equal(impact.period.deckTrackedLessons, 2)
     assert.equal(impact.period.deckUseRate, 1)
-    assert.deepEqual(impact.trackingSince, { deck: '2026-11-14', wrapUps: '2026-11-07', placements: '2026-10-01' })
+    assert.deepEqual(impact.trackingSince, { deck: '2026-11-14', wrapUps: '2026-11-07', handoffs: null, placements: '2026-10-01' })
     assert.equal(impact.period.homeworkCompletionRate, 0.5)
   })
 })
@@ -320,5 +322,26 @@ test('test accounts are left out, and students who stopped coming are listed fir
     assert.equal(dee.sessionsMissed, 2)
     assert.equal(dee.vineLessons, 1)
     assert.deepEqual(later.checkIn.map(student => student.name), ['Dee', 'Cy'], 'most recently seen first, never seen last')
+  })
+})
+
+test('hand-off notes are counted from the first one, and listed with the lesson', async () => {
+  await withFixture(async db => {
+    await seedProgram(db)
+    const before = await getProgramImpact(db, { ...ALL, focus: undefined })
+    assert.equal(before.period.handoffRate, null, 'no rate before any hand-off is written')
+    assert.ok(before.taughtLessons.every(lesson => lesson.handoff === 'untracked'))
+
+    const [first] = before.taughtLessons
+    await saveSessionHandoffNote(db, first.tutorId, first.sessionId, 'Start with vocab review')
+    const impact = await getProgramImpact(db, { ...ALL, focus: undefined })
+    assert.equal(impact.trackingSince.handoffs, first.date)
+    assert.equal(impact.period.handoffLessons, 1)
+    assert.equal(impact.period.handoffTrackedLessons, impact.taughtLessons.length)
+    assert.equal(impact.period.handoffRate, 1 / impact.taughtLessons.length)
+    const lesson = impact.taughtLessons.find(l => l.sessionId === first.sessionId)!
+    assert.equal(lesson.handoff, 'left')
+    assert.equal(lesson.handoffNote, 'Start with vocab review')
+    assert.ok(impact.taughtLessons.filter(l => l !== lesson).every(l => l.handoff === 'none'))
   })
 })

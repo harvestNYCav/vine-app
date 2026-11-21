@@ -17,6 +17,7 @@ import SessionWrapUpForm from './SessionWrapUpForm'
 import { getDeckProgressForDate, getSessionWrapUps, type DeckProgress } from '@/lib/session-metrics'
 import { getLessonAgenda } from '@/lib/lesson-agenda'
 import ExamAssignButton from './ExamAssignButton'
+import { getSessionHandoffNotes, getStudentHandoff, type StudentHandoff } from '@/lib/tutor-handoff'
 import RegentsSectionList from './RegentsSectionList'
 import AssignLessonsPicker from './AssignLessonsPicker'
 import {
@@ -76,6 +77,47 @@ function describeDeckProgress(progress: DeckProgress | undefined): string | null
   if (!progress) return null
   const minutes = Math.round(progress.activeMs / 60_000)
   return `reached ${progress.furthestSection} (slide ${progress.furthestSlide + 1} of ${progress.slideCount}), about ${minutes} min on screen`
+}
+
+function formatSessionDate(date: string): string {
+  return new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })
+}
+
+// What the previous session left for today's tutor: where each lesson stopped, the wrap-up notes,
+// and the latest note written for the next tutor.
+function LastTimeCard({ handoff }: { handoff: StudentHandoff }) {
+  const { note, lastSession } = handoff
+  if (!note && !lastSession) return null
+  return (
+    <div className="mb-6 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4">
+      <p className="mb-2 font-bold text-amber-800">📋 Last time</p>
+      {note && (
+        <div className="mb-2 rounded-xl border border-amber-100 bg-white px-3 py-2.5">
+          <p className="whitespace-pre-wrap text-sm leading-relaxed text-amber-900">{note.body}</p>
+          <p className="mt-1 text-xs text-gray-400">
+            {note.tutorName} · {new Date(note.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+          </p>
+        </div>
+      )}
+      {lastSession && (
+        <div className="space-y-1 text-sm text-gray-600">
+          <p className="text-xs text-gray-400">
+            {formatSessionDate(lastSession.date)}{lastSession.tutorName ? ` with ${lastSession.tutorName}` : ''}
+          </p>
+          {lastSession.lessons.map(lesson => (
+            <div key={lesson.moduleSlug}>
+              <p>
+                <span className="font-medium text-gray-700">{getModule(lesson.moduleSlug)?.titleEn ?? lesson.moduleSlug}</span>
+                {' · '}
+                {lesson.finishedLesson ? 'Finished' : `Stopped at ${lesson.stoppedAt ?? 'an unknown point'}`}
+              </p>
+              {lesson.note && <p className="italic text-gray-500">{lesson.note}</p>}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
 }
 
 function completedStepCount(progress: ModProgressRow | undefined) {
@@ -193,9 +235,12 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
     return module ? [{ sessionId: row.id, module, homeworkAssigned: Number(row.homework_assigned) === 1 }] : []
   })
 
-  const [wrapUps, deckProgress] = await Promise.all([
-    getSessionWrapUps(db, todayLessons.map(lesson => lesson.sessionId)),
+  const todaySessionIds = todayLessons.map(lesson => lesson.sessionId)
+  const [wrapUps, deckProgress, handoffNotes, handoff] = await Promise.all([
+    getSessionWrapUps(db, todaySessionIds),
     getDeckProgressForDate(db, today, todayLessons.map(lesson => lesson.module.slug)),
+    getSessionHandoffNotes(db, todaySessionIds),
+    getStudentHandoff(db, studentId, today),
   ])
 
   type VocabProgressRow = { word_id: string; module_slug: string; correct_count: number; incorrect_count: number }
@@ -256,6 +301,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
+      <LastTimeCard handoff={handoff} />
+
       {tracks.includes('esl') && <EslPlacementCard studentId={studentId} placement={eslPlacement} />}
 
       {/* Scheduled Lessons */}
@@ -301,6 +348,8 @@ export default async function StudentDetailPage({ params }: { params: Promise<{ 
                       defaultQuizTotal={lesson.module.inPersonQuiz?.length || null}
                       deckSummary={describeDeckProgress(deckProgress.get(lesson.module.slug))}
                       initialWrapUp={wrapUps.get(lesson.sessionId) ?? null}
+                      initialHandoffNote={handoffNotes.get(lesson.sessionId) ?? ''}
+                      studentName={student.name}
                     />
                   </div>
                 )

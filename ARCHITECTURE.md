@@ -139,7 +139,7 @@ refreshing the exam catalogs.
 
 The full schema, including in-place migrations, is in `lib/db.ts`. A few tables are defined next
 to their owning module and imported by it: `lib/exam-assignments.ts`, `lib/regents-courses.ts`,
-`lib/tutor-approvals.ts`, `lib/session-metrics.ts` and `lib/esl-placement.ts`. The core entities and how they relate:
+`lib/tutor-approvals.ts`, `lib/session-metrics.ts`, `lib/esl-placement.ts` and `lib/tutor-handoff.ts`. The core entities and how they relate:
 
 ```
 users (role: student | tutor | parent | admin)
@@ -214,7 +214,11 @@ Things that are not obvious from the table names:
 3. **Record.** The tutor marks attendance (`/api/tutor/attendance`, through `lib/check-ins.ts`),
    checks themself in, can mark homework (`/api/tutor/session/homework`), and files a short
    wrap-up (finished?, where they stopped, quiz score, 1–5 rating, note). The wrap-up is saved
-   through `/api/tutor/session/wrap-up` into `session_wrap_ups`. Admins read the aggregates via
+   through `/api/tutor/session/wrap-up` into `session_wrap_ups`. The form's optional "what should
+   the next tutor know?" field is saved by the same request into `tutor_notes` with the session's
+   id, so editing the wrap-up replaces the note (`lib/tutor-handoff.ts`). The next time any tutor
+   opens the student, a "Last time" card at the top shows the latest note and the previous
+   session's wrap-ups. Admins read the aggregates via
    `/api/admin/session-metrics`.
 
 ### A student's lesson work is saved

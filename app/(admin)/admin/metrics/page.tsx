@@ -45,6 +45,7 @@ const LEARNING: TrendMetric[] = [
 const TUTORING: TrendMetric[] = [
   { key: 'deckUseRate', title: 'Taught with the slides', description: 'Lessons where the slide deck was opened', format: percent, maxValue: 1 },
   { key: 'wrapUpRate', title: 'Wrap-up filed', description: 'Lessons with a tutor debrief', format: percent, maxValue: 1 },
+  { key: 'handoffRate', title: 'Hand-off left', description: 'Lessons with a note for the next tutor', format: percent, maxValue: 1 },
   { key: 'homeworkAssignedRate', title: 'Homework assigned', description: 'Lessons where the tutor gave homework', format: percent, maxValue: 1 },
 ]
 
@@ -198,6 +199,7 @@ export default async function AdminImpactPage({
   const trackingNote = [
     trackingSince.deck && trackingSince.deck > firstDay ? `Slide tracking began ${formatDay(trackingSince.deck)}` : null,
     trackingSince.wrapUps && trackingSince.wrapUps > firstDay ? `wrap-ups began ${formatDay(trackingSince.wrapUps)}` : null,
+    trackingSince.handoffs && trackingSince.handoffs > firstDay ? `hand-off notes began ${formatDay(trackingSince.handoffs)}` : null,
   ].filter(Boolean).join('; ').replace(/^./, letter => letter.toUpperCase())
 
   const taught = impact.taughtLessons
@@ -459,6 +461,17 @@ export default async function AdminImpactPage({
               note: `of ${plural(period.wrapTrackedLessons, 'lesson')}`,
               detailTitle: `Was a wrap-up filed? ${scopeShort}`,
               detail: <LessonLog lessons={taught} check="wrap" />,
+            },
+            {
+              id: 'handoff',
+              label: 'Hand-off left',
+              value: maybe(period.handoffRate, percent),
+              note: period.handoffTrackedLessons
+                ? `${period.handoffLessons} of ${plural(period.handoffTrackedLessons, 'lesson')}`
+                : 'No hand-off notes yet',
+              noteTone: period.handoffTrackedLessons ? undefined : 'muted',
+              detailTitle: `Did the tutor leave a note for the next tutor? ${scopeShort}`,
+              detail: <LessonLog lessons={taught} check="handoff" />,
             },
             {
               id: 'homework',

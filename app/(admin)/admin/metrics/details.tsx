@@ -74,7 +74,7 @@ export function ClassList({ lessons }: { lessons: TaughtLesson[] }) {
   )
 }
 
-export type LessonCheck = 'deck' | 'wrap' | 'homework' | 'done'
+export type LessonCheck = 'deck' | 'wrap' | 'handoff' | 'homework' | 'done'
 
 function deckCell(lesson: TaughtLesson) {
   if (lesson.deck === 'untracked') return <span className="text-slate-400">Before tracking</span>
@@ -97,6 +97,7 @@ function wrapCell(lesson: TaughtLesson) {
       <span className="text-green-700">✓ {lesson.finished ? 'Finished' : `Stopped at ${lesson.stoppedAt ?? '?'}`}</span>
       <span className="text-xs text-slate-500"> · {lesson.rating}/5</span>
       {lesson.note && <span className="block text-xs text-slate-500">“{lesson.note}”</span>}
+      {lesson.handoffNote && <span className="block text-xs text-amber-800">For next time: “{lesson.handoffNote}”</span>}
     </span>
   )
 }
@@ -110,6 +111,7 @@ function homeworkCell(lesson: TaughtLesson) {
 const CHECKS: Record<LessonCheck, { applies: (l: TaughtLesson) => boolean; ok: (l: TaughtLesson) => boolean; okLabel: string; missLabel: string }> = {
   deck: { applies: l => l.deck !== 'untracked', ok: l => l.deck === 'used', okLabel: 'had the slides opened', missLabel: 'Slides not opened' },
   wrap: { applies: l => l.wrapUp !== 'untracked', ok: l => l.wrapUp === 'filed', okLabel: 'had a wrap-up filed', missLabel: 'No wrap-up' },
+  handoff: { applies: l => l.handoff !== 'untracked', ok: l => l.handoff === 'left', okLabel: 'left a note for the next tutor', missLabel: 'No hand-off' },
   homework: { applies: () => true, ok: l => l.homeworkAssigned, okLabel: 'had homework assigned', missLabel: 'No homework assigned' },
   done: { applies: l => l.homeworkAssigned, ok: l => l.homeworkDoneOn !== null, okLabel: 'had the homework finished', missLabel: 'Homework not done' },
 }

@@ -125,6 +125,10 @@ export interface PeriodMetrics {
   deckUseRate: number | null
   // ... the share with a tutor wrap-up filed.
   wrapUpRate: number | null
+  // Lessons after hand-off notes began, how many left a note for the student's next tutor, and the share.
+  handoffTrackedLessons: number
+  handoffLessons: number
+  handoffRate: number | null
   // ... the share where the tutor assigned the lesson's homework.
   homeworkAssignedRate: number | null
   // Of the lessons with homework assigned, the share whose homework the student finished after the
@@ -232,6 +236,9 @@ export interface TaughtLesson {
   deckOpenedBy: string[]
   deckMinutes: number | null
   wrapUp: 'filed' | 'missing' | 'untracked'
+  // Whether the wrap-up left a note for the student's next tutor.
+  handoff: 'left' | 'none' | 'untracked'
+  handoffNote: string | null
   finished: boolean | null
   stoppedAt: string | null
   rating: number | null
@@ -310,6 +317,7 @@ export interface EslLevelSummary {
 export interface TrackingSince {
   deck: string | null
   wrapUps: string | null
+  handoffs: string | null
   placements: string | null
 }
 
@@ -353,6 +361,8 @@ class Bucket {
   deckUsed = 0
   wrapTracked = 0
   wrapUps = 0
+  handoffTracked = 0
+  handoffs = 0
   homeworkAssigned = 0
   homeworkDone = 0
   quiz = new Mean()
@@ -372,6 +382,9 @@ class Bucket {
       wrapTrackedLessons: this.wrapTracked,
       deckUseRate: ratio(this.deckUsed, this.deckTracked),
       wrapUpRate: ratio(this.wrapUps, this.wrapTracked),
+      handoffTrackedLessons: this.handoffTracked,
+      handoffLessons: this.handoffs,
+      handoffRate: ratio(this.handoffs, this.handoffTracked),
       homeworkAssignedRate: ratio(this.homeworkAssigned, this.lessonsTaught),
       homeworkCompletionRate: ratio(this.homeworkDone, this.homeworkAssigned),
       quizAverage: this.quiz.value,
@@ -430,7 +443,7 @@ export async function getProgramImpact(
   const inFocus = (date: string) => inRange(date) && (focus === null || weekStartOf(date) === focus.weekStart)
 
   const [
-    userRows, trackRows, pairingRows, activity, sessions, attendance, checkIns, wrapUps, deck,
+    userRows, trackRows, pairingRows, activity, sessions, attendance, checkIns, wrapUps, handoffs, deck,
     progress, mathExams, elaExams, placements, vocab, lastActivity, lastAttendance, firstLessons, vineLessons, since,
   ] = await Promise.all([
     db.execute({ sql: "SELECT id, name, role FROM users WHERE role IN ('student', 'tutor') ORDER BY name", args: [] }),
@@ -459,6 +472,11 @@ export async function getProgramImpact(
     db.execute({
       sql: `SELECT w.session_id, w.tutor_id, w.rating, w.finished_lesson, w.stopped_at, w.note FROM session_wrap_ups w
             JOIN sessions s ON s.id = w.session_id WHERE s.date BETWEEN ? AND ?`,
+      args: [firstDay, lastDay],
+    }),
+    db.execute({
+      sql: `SELECT n.session_id, n.body FROM tutor_notes n
+            JOIN sessions s ON s.id = n.session_id WHERE s.date BETWEEN ? AND ?`,
       args: [firstDay, lastDay],
     }),
     db.execute({
@@ -507,6 +525,7 @@ export async function getProgramImpact(
       sql: `SELECT
               (SELECT MIN(date) FROM lesson_deck_progress) AS deck,
               (SELECT MIN(s.date) FROM session_wrap_ups w JOIN sessions s ON s.id = w.session_id) AS wrap_ups,
+              (SELECT MIN(s.date) FROM tutor_notes n JOIN sessions s ON s.id = n.session_id) AS handoffs,
               (SELECT MIN(date) FROM esl_placements) AS placements`,
       args: [],
     }),
@@ -517,6 +536,7 @@ export async function getProgramImpact(
   const trackingSince: TrackingSince = {
     deck: sinceValue(sinceRow?.deck),
     wrapUps: sinceValue(sinceRow?.wrap_ups),
+    handoffs: sinceValue(sinceRow?.handoffs),
     placements: sinceValue(sinceRow?.placements),
   }
   const tracked = (since: string | null, date: string) => since !== null && date >= since
@@ -651,6 +671,7 @@ export async function getProgramImpact(
   }
 
   const wrapUpBySession = new Map(wrapUps.rows.map(row => [String(row.session_id), row]))
+  const handoffBySession = new Map(handoffs.rows.map(row => [String(row.session_id), String(row.body)]))
   const homeworkDoneAt = new Map<string, string>()
   for (const row of progress.rows) {
     if (row.homework_completed_at !== null) {
@@ -674,6 +695,9 @@ export async function getProgramImpact(
     const openings = deckOpened.get(`${date}:${slug}`) ?? []
     const deckUsed = openings.length > 0
     const wrapUp = wrapUpBySession.get(String(row.id))
+    // Hand-offs are written in the wrap-up, so only lessons after both began can have one.
+    const handoffTracked = wrapTracked && tracked(trackingSince.handoffs, date)
+    const handoffNote = handoffBySession.get(String(row.id)) ?? null
     const homeworkAssigned = Number(row.homework_assigned) === 1
     const doneOn = homeworkDoneAt.get(`${studentId}:${slug}`)
     const homeworkDone = homeworkAssigned && doneOn !== undefined && doneOn >= date
@@ -683,6 +707,8 @@ export async function getProgramImpact(
       if (deckUsed) bucket.deckUsed++
       if (wrapTracked) bucket.wrapTracked++
       if (wrapUp) bucket.wrapUps++
+      if (handoffTracked) bucket.handoffTracked++
+      if (handoffTracked && handoffNote) bucket.handoffs++
       if (homeworkAssigned) bucket.homeworkAssigned++
       if (homeworkDone) bucket.homeworkDone++
     }
@@ -706,6 +732,8 @@ export async function getProgramImpact(
       stoppedAt: wrapUp?.stopped_at ? String(wrapUp.stopped_at) : null,
       rating: wrapUp ? Number(wrapUp.rating) : null,
       note: wrapUp?.note ? String(wrapUp.note) : null,
+      handoff: handoffNote ? 'left' : handoffTracked ? 'none' : 'untracked',
+      handoffNote,
       homeworkAssigned,
       homeworkDoneOn: homeworkDone ? doneOn! : null,
     })
