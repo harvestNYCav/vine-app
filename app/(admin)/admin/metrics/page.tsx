@@ -7,152 +7,23 @@ import {
   MISSED_SESSIONS_TO_CHECK_IN,
   SESSION_MINUTES,
   type CheckInStudent,
-  type PeriodMetrics,
-  type ProgramImpact,
-  type WeeklyMetrics,
 } from '@/lib/admin-metrics'
-import WeeklyColumnChart, { formatWeek } from './WeeklyColumnChart'
-import StudentProgressTable from './StudentProgressTable'
-import TutorUsageTable from './TutorUsageTable'
-import LessonFitTable from './LessonFitTable'
-import DrillTiles, { type DrillTile } from './DrillTiles'
-import { lessonFlags } from './flags'
+import { formatWeek } from '@/components/impact/WeeklyColumnChart'
+import StudentProgressTable from '@/components/impact/StudentProgressTable'
+import TutorUsageTable from '@/components/impact/TutorUsageTable'
+import LessonFitTable from '@/components/impact/LessonFitTable'
+import DrillTiles, { type DrillTile } from '@/components/impact/DrillTiles'
+import { lessonFlags } from '@/components/impact/flags'
 import {
   ClassList, DeckTable, DetailBlock, Empty, ExamTable, LessonLog, NameChips, Pill, ScoreTable, Summary,
-} from './details'
-import { count, formatDay, maybe, minutes, percent, plural } from './format'
+} from '@/components/impact/details'
+import { count, formatDay, maybe, minutes, percent, plural } from '@/components/impact/format'
+import {
+  ACTIVE, ATTENDANCE, Card, Charts, deltaNote, HOME, LEARNING, Section, SessionPicker, TABLE_METRICS, TAUGHT, TUTORING, value,
+  type TrendMetric,
+} from '@/components/impact/shared'
 
-interface TrendMetric {
-  key: keyof PeriodMetrics
-  title: string
-  description: string
-  format: (value: number) => string
-  maxValue?: number
-}
-
-const ACTIVE: TrendMetric = { key: 'activeStudents', title: 'Active students', description: 'Did any practice in Vine', format: count }
-const HOME: TrendMetric = { key: 'homePracticeStudents', title: 'Practiced at home', description: 'Used Vine on a day with no session', format: count }
-const ATTENDANCE: TrendMetric = { key: 'attendanceRate', title: 'Attendance rate', description: 'Present ÷ students marked', format: percent, maxValue: 1 }
-const TAUGHT: TrendMetric = { key: 'lessonsTaught', title: 'Lessons taught', description: 'Scheduled lessons, student not absent', format: count }
-
-const LEARNING: TrendMetric[] = [
-  { key: 'quizAverage', title: 'Lesson quiz average', description: 'ESL and ELA lesson quizzes', format: percent, maxValue: 1 },
-  { key: 'homeworkCompletionRate', title: 'Homework completed', description: 'Assigned homework finished; recent weeks fill in as students catch up', format: percent, maxValue: 1 },
-  HOME,
-  { key: 'examAverageScore', title: 'Exam practice score', description: 'Grade 3–8 and Regents sections', format: percent, maxValue: 1 },
-]
-
-const TUTORING: TrendMetric[] = [
-  { key: 'deckUseRate', title: 'Taught with the slides', description: 'Lessons where the slide deck was opened', format: percent, maxValue: 1 },
-  { key: 'wrapUpRate', title: 'Wrap-up filed', description: 'Lessons with a tutor debrief', format: percent, maxValue: 1 },
-  { key: 'handoffRate', title: 'Hand-off left', description: 'Lessons with a note for the next tutor', format: percent, maxValue: 1 },
-  { key: 'homeworkAssignedRate', title: 'Homework assigned', description: 'Lessons where the tutor gave homework', format: percent, maxValue: 1 },
-]
-
-const TABLE_METRICS = [ACTIVE, HOME, ATTENDANCE, TAUGHT, ...LEARNING.filter(m => m !== HOME), ...TUTORING]
-
-const sessionHref = (session: string) => `/admin/metrics?session=${session}`
-
-function value(source: PeriodMetrics | undefined, key: keyof PeriodMetrics): number | null {
-  const raw = source?.[key]
-  return typeof raw === 'number' ? raw : null
-}
-
-// The change from the session week before, for a tile's note.
-function deltaNote(metric: TrendMetric, current: PeriodMetrics, previous: WeeklyMetrics | undefined): Pick<DrillTile, 'note' | 'noteTone'> {
-  const now = value(current, metric.key)
-  const before = value(previous, metric.key)
-  if (!previous) return { note: 'First session of the term', noteTone: 'muted' }
-  if (now === null || before === null) return { note: `No data for ${formatWeek(previous.sessionDate)}`, noteTone: 'muted' }
-  const delta = now - before
-  const vs = `vs ${formatWeek(previous.sessionDate)}`
-  if (delta === 0) return { note: `Same as ${formatWeek(previous.sessionDate)}`, noteTone: 'muted' }
-  const amount = metric.format === percent
-    // A change in a rate is in percentage points, not a percent of the old rate.
-    ? `${Math.round(Math.abs(delta) * 100)} ${Math.round(Math.abs(delta) * 100) === 1 ? 'pt' : 'pts'}`
-    : metric.format(Math.abs(delta))
-  return { note: `${delta > 0 ? '▲' : '▼'} ${amount} ${vs} (${metric.format(before)})`, noteTone: delta > 0 ? 'up' : 'down' }
-}
-
-function Charts({ metrics, weeks, selected, anchor }: { metrics: TrendMetric[]; weeks: WeeklyMetrics[]; selected: string | null; anchor: string }) {
-  return (
-    <div className={`mb-4 grid gap-3 sm:grid-cols-2 ${metrics.length % 3 === 0 ? 'lg:grid-cols-3' : 'lg:grid-cols-4'}`}>
-      {metrics.map(metric => (
-        <WeeklyColumnChart
-          key={metric.key}
-          title={metric.title}
-          description={metric.description}
-          format={metric.format}
-          maxValue={metric.maxValue}
-          selected={selected}
-          points={weeks.map(week => ({
-            weekStart: week.weekStart,
-            sessionDate: week.sessionDate,
-            partial: week.partial,
-            value: value(week, metric.key),
-            href: `${sessionHref(week.sessionDate)}#${anchor}`,
-          }))}
-        />
-      ))}
-    </div>
-  )
-}
-
-function Section({ id, question, intro, children }: { id: string; question: string; intro: string; children: React.ReactNode }) {
-  return (
-    <section id={id} className="mb-10 scroll-mt-36">
-      <h2 className="text-xl font-bold text-slate-900">{question}</h2>
-      <p className="mb-4 max-w-3xl text-sm text-slate-500">{intro}</p>
-      {children}
-    </section>
-  )
-}
-
-function Card({ title, note, children }: { title: string; note?: string; children: React.ReactNode }) {
-  return (
-    <div className="rounded-lg border border-slate-200 bg-white p-4">
-      <h3 className="text-base font-bold text-slate-900">{title}</h3>
-      {note && <p className="mb-3 text-xs text-slate-500">{note}</p>}
-      {children}
-    </div>
-  )
-}
-
-function SessionPicker({ impact }: { impact: ProgramImpact }) {
-  const { weeks, focus, upcomingSessions, today } = impact
-  const chip = 'whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-semibold'
-  return (
-    <nav className="flex flex-wrap gap-1 rounded-lg border border-slate-300 bg-white p-1" aria-label="Vine session">
-      <Link
-        href={sessionHref('all')}
-        aria-current={focus === null ? 'page' : undefined}
-        className={`${chip} ${focus === null ? 'bg-slate-800 text-white' : 'text-slate-600 hover:bg-slate-100'}`}
-      >
-        All sessions
-      </Link>
-      <span className="mx-1 my-1 w-px bg-slate-200" aria-hidden />
-      {weeks.map(week => {
-        const selected = focus?.weekStart === week.weekStart
-        return (
-          <Link
-            key={week.weekStart}
-            href={sessionHref(week.sessionDate)}
-            aria-current={selected ? 'page' : undefined}
-            className={`${chip} ${selected ? 'bg-slate-800 text-white' : 'text-slate-700 hover:bg-slate-100'}`}
-          >
-            {formatWeek(week.sessionDate)}
-            {week.sessionDate > today && <span className="ml-1 text-xs font-normal opacity-75">upcoming</span>}
-          </Link>
-        )
-      })}
-      {upcomingSessions.map(date => (
-        <span key={date} className={`${chip} cursor-default font-normal text-slate-300`} title="Upcoming session">
-          {formatWeek(date)}
-        </span>
-      ))}
-    </nav>
-  )
-}
+const BASE_PATH = '/admin/metrics'
 
 function CheckInCard({ student }: { student: CheckInStudent }) {
   return (
@@ -248,8 +119,8 @@ export default async function AdminImpactPage({
         </p>
       </div>
 
-      <div className="sticky top-0 z-10 -mx-4 mb-6 border-b border-slate-200 bg-slate-50/95 px-4 py-3 backdrop-blur">
-        <SessionPicker impact={impact} />
+      <div className="sticky top-0 z-10 -mx-4 mb-6 border-b border-slate-200 bg-white/95 px-4 py-3 backdrop-blur">
+        <SessionPicker impact={impact} basePath={BASE_PATH} />
         <p className="mt-2 max-w-3xl text-xs text-slate-500">
           Pick a Vine session to see its week (Monday–Sunday, so practice in the days around the session counts), or all
           sessions together. Trends always show every session; click a column to jump to it. Weeks with no Vine session
@@ -428,7 +299,7 @@ export default async function AdminImpactPage({
             },
           ]}
         />
-        <Charts metrics={LEARNING} weeks={weeks} selected={focus?.weekStart ?? null} anchor="learning" />
+        <Charts metrics={LEARNING} weeks={weeks} selected={focus?.weekStart ?? null} anchor="learning" basePath={BASE_PATH} />
         <Card
           title="Student progress"
           note={`Lessons, scores, homework and home practice are for ${scope}. Words mastered, ESL level and last seen are all-time. Quiz scores are each student's latest attempt.`}
@@ -511,7 +382,7 @@ export default async function AdminImpactPage({
             },
           ]}
         />
-        <Charts metrics={TUTORING} weeks={weeks} selected={focus?.weekStart ?? null} anchor="tutors" />
+        <Charts metrics={TUTORING} weeks={weeks} selected={focus?.weekStart ?? null} anchor="tutors" basePath={BASE_PATH} />
         <Card
           title="By tutor"
           note={`For ${scope}. Rates under 50% are marked Low. Slide time is the average minutes a deck was on screen per class. Click a student count to see who.`}

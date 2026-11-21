@@ -84,7 +84,10 @@ export default async function TutorDashboardPage() {
           ? `${students.length} assigned to you · ${allStudents.length} in program`
           : `${allStudents.length} in program`}
       </p>
-      <Link href="/tutor/cohort" className="text-amber-700 text-sm underline block mb-6">View cohort overview →</Link>
+      <div className="mb-6 flex flex-wrap gap-x-4 gap-y-1">
+        <Link href="/tutor/cohort" className="text-amber-700 text-sm underline">View cohort overview →</Link>
+        <Link href="/tutor/impact" className="text-amber-700 text-sm underline">See how your students are doing →</Link>
+      </div>
 
       {students.length === 0 && (
         <div className="text-center py-12 text-gray-400">

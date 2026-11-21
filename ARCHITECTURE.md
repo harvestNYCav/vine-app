@@ -61,11 +61,15 @@ layouts and the API handlers are the access checks.
   - `lessons`, `lessons/[slug]`: the lesson library and the in-class slide deck.
   - `cohort`, `check-in`: student attendance and the tutor's own check-in.
   - `exams/…`: read-only previews of exam content.
+  - `impact`: the tutor's Impact view. The same figures as the admin page, framed to encourage:
+    the tutor's own students (following the My/All roster toggle) with wins and check-ins, their
+    own teaching with a to-do list, and team-wide totals. It never shows other tutors' rates.
 - `app/(admin)/admin/`: one admin page. Its forms (`Admin*Controls.tsx`) cover students, parents,
   PIN resets, the admin email allowlist, tutor approvals and a danger zone. `check-ins/` shows
   attendance for any date. `metrics/` (Impact) reports learning outcomes, tutor use of the app
   and lesson fit from existing tables (`lib/admin-metrics.ts`), one Vine session week at a time.
   The term's session dates are the `VINE_SESSION_DATES` list there; add next term's dates to it.
+  Its components live in `components/impact/` (shared with the tutor view at `/tutor/impact`).
 - `app/api/`: JSON endpoints, grouped as `auth/`, `admin/`, `tutor/`, `parent/`, `student/`,
   `progress`, `practice`, `math/`, `ela/`, `regents/`. Each handler checks the session role itself.
 
@@ -127,7 +131,8 @@ refreshing the exam catalogs.
 
 ### `components/`, `types/`, `tests/`
 
-- `components/`: shared UI. `ModuleSlideDeck` and `TrackedTutorDeck` are the lesson deck;
+- `components/`: shared UI. `components/impact/` holds the Impact page's tiles, charts, tables
+  and session picker, used by both `/admin/metrics` and `/tutor/impact`. `ModuleSlideDeck` and `TrackedTutorDeck` are the lesson deck;
   `components/regents/` holds Regents passage, attribution and progress cards.
 - `types/index.ts`: `Role`, `Track`, `Module` and the lesson content types.
 - `tests/`: `node:test` suites (`*.test.ts`) for the `lib/` modules and content catalogs, plus
@@ -277,6 +282,9 @@ student's setting.
   `/api/regents/*`) require `role === 'student'`. Parents never write a child's data; their view is
   read-only by construction. Exam access is re-checked at each of `start`, `check` and `finish`,
   not only when the page loads.
+- **Statistics are readable by tutors; writes are not.** Tutors see Impact figures at
+  `/tutor/impact`, but the per-tutor comparison, the CSV export and every account or placement
+  write stay admin-only, under `app/(admin)` and `app/api/admin/*`.
 - **Grade and course placement belong to admins.** Students choose their own tracks
   (`/api/student/tracks`). `grade_level`, `high_school_grade_level`, Regents courses, Spanish access
   and tutor links are set only via `app/api/admin/*`.

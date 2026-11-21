@@ -27,6 +27,7 @@ export default async function TutorLayout({ children }: { children: React.ReactN
           <Link href="/tutor/check-in" className="text-amber-200 text-xs hover:text-white">Check-in</Link>
           <Link href="/tutor/lessons" className="text-amber-200 text-xs hover:text-white">Lessons</Link>
           <Link href="/tutor/cohort" className="text-amber-200 text-xs hover:text-white">Cohort</Link>
+          <Link href="/tutor/impact" className="text-amber-200 text-xs hover:text-white">Impact</Link>
           <TutorLogoutButton />
         </nav>
       </header>
