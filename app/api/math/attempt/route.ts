@@ -5,12 +5,10 @@ import { getSession } from '@/lib/auth'
 import { localDateKey } from '@/lib/dates'
 import { mathAttemptTtlMs } from '@/lib/resumable-work'
 import {
+  advanceCurrentSkill,
   classifyMistake,
   generateProblem,
-  getNextSkill,
-  getSkillByTag,
-  MASTERY_THRESHOLD,
-  MIN_ATTEMPTS,
+  reviewSkillTags,
   selectNextProblem,
   SKILLS,
   updateMastery,
@@ -68,7 +66,7 @@ function countFor(type: SessionType, customCount: unknown): number {
   return Math.min(MAX_CUSTOM_QUESTIONS, Math.max(1, Math.floor(Number(customCount) || 10)))
 }
 
-function makeProblems(body: Record<string, unknown>, type: SessionType): StoredProblem[] {
+function makeProblems(body: Record<string, unknown>, type: SessionType, progress: MathProgress): StoredProblem[] {
   if (type === 'diagnostic') {
     return SKILLS.flatMap(skill =>
       Array.from({ length: DIAGNOSTIC_TIER_TOTAL }, () => generateProblem(skill))
@@ -76,24 +74,17 @@ function makeProblems(body: Record<string, unknown>, type: SessionType): StoredP
   }
 
   const count = countFor(type, body.customCount)
-  const mastery = sanitizeMastery(body.skillMastery)
-  const counts = sanitizeCounts(body.skillAttemptCounts)
   const selectedTags = selectedSkillTags(body.selectedSkills)
   const pinnedTags = type === 'custom' && selectedTags.length > 0 ? selectedTags : null
-  let currentSkill = typeof body.currentSkill === 'string' && VALID_SKILL_TAGS.has(body.currentSkill)
-    ? body.currentSkill
-    : SKILLS[0].tag
-
-  if (type !== 'custom') {
-    const currentCount = counts[currentSkill] || 0
-    if ((mastery[currentSkill] ?? 0) >= MASTERY_THRESHOLD && currentCount >= MIN_ATTEMPTS) {
-      currentSkill = getNextSkill(currentSkill)?.tag ?? currentSkill
-    }
-  }
+  // The level comes from the saved progress, not from the browser. `finish` already saves each
+  // move up; advancing here as well covers progress saved before it did.
+  const { skillMastery, skillAttemptCounts } = progress
+  const currentSkill = advanceCurrentSkill(progress.currentSkill ?? SKILLS[0].tag, skillMastery, skillAttemptCounts)
+  const reviewTags = reviewSkillTags(currentSkill, skillMastery, skillAttemptCounts)
 
   const recentOperands: string[] = []
   return Array.from({ length: count }, () => {
-    const problem = selectNextProblem(currentSkill, mastery, [], recentOperands, pinnedTags)
+    const problem = selectNextProblem(currentSkill, reviewTags, recentOperands, pinnedTags)
     recentOperands.push(`${problem.operands[0]},${problem.operands[1]}`)
     if (recentOperands.length > 20) recentOperands.shift()
     return problem
@@ -135,6 +126,8 @@ async function loadProgress(userId: string) {
     skillAttemptCounts: {} as Record<string, number>,
   }
 }
+
+type MathProgress = Awaited<ReturnType<typeof loadProgress>>
 
 function nextDiagnosticSkill(problems: StoredProblem[], answers: SubmittedAnswer[]): string {
   const byId = new Map(problems.map(problem => [problem.id, problem]))
@@ -180,7 +173,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid sessionType' }, { status: 400 })
     }
 
-    const problems = makeProblems(body, type as SessionType)
+    const problems = makeProblems(body, type as SessionType, await loadProgress(session.userId))
     const now = Date.now()
     const id = randomUUID()
     const db = await getDb()
@@ -280,6 +273,11 @@ export async function POST(req: NextRequest) {
     progress.currentSkill = uniqueAnswers[uniqueAnswers.length - 1]
       ? problemById.get(uniqueAnswers[uniqueAnswers.length - 1].problemId)?.skill_tag ?? SKILLS[0].tag
       : SKILLS[0].tag
+  }
+  // Save the move past every skill this session finished mastering, so the next session, the
+  // results screen and the tutor page all start from the student's real level.
+  if (progress.currentSkill) {
+    progress.currentSkill = advanceCurrentSkill(progress.currentSkill, progress.skillMastery, progress.skillAttemptCounts)
   }
 
   const endedAt = Date.now()

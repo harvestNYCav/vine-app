@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from 'react'
 import {
   SKILLS, MathProblem, MistakeType, OP_SYM,
   classifyMistake, updateMastery,
-  getSkillByTag, getNextSkill,
-  formatDiagnosticSkillPosition, getSkillLabel, MASTERY_THRESHOLD, MIN_ATTEMPTS,
+  getSkillByTag,
+  formatDiagnosticSkillPosition, getSkillLabel,
 } from '@/lib/math'
 import {
   clearDraft,
@@ -414,9 +414,6 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
         body: JSON.stringify({
           action: 'start',
           sessionType: type,
-          currentSkill: currentSkillRef.current,
-          skillMastery: masteryRef.current,
-          skillAttemptCounts: skillCountsRef.current,
           selectedSkills: pinnedTagsRef.current,
           customCount: customQCountRef.current,
         }),
@@ -782,22 +779,8 @@ export default function MathClient({ initialProgress, initialHistory, initialSki
     mistakeQueueRef.current = []
     if (type !== 'custom') pinnedTagsRef.current = null
 
-    // Selected-skills sessions drill whatever the student picked, so they must
-    // not move the adaptive placement the way a normal session does.
-    const tag = type === 'custom' ? null : currentSkillRef.current
-    if (tag) {
-      const count = skillCountsRef.current[tag] || 0
-      if ((masteryRef.current[tag] ?? 0) >= MASTERY_THRESHOLD && count >= MIN_ATTEMPTS) {
-        const next = getNextSkill(tag)
-        if (next) {
-          currentSkillRef.current = next.tag
-          if (!masteryRef.current[next.tag]) {
-            masteryRef.current = { ...masteryRef.current, [next.tag]: 0.1 }
-          }
-        }
-      }
-    }
-
+    // The server decides the level from saved progress and returns any move up when the
+    // session finishes.
     const started = await beginMathAttempt(type)
     if (!started) return
     setTimerWidth(type === 'diagnostic' || isCountMode(type) ? 0 : 100)

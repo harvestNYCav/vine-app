@@ -60,6 +60,11 @@ export const MASTERY_PENALTY = 0.12
 export const MASTERY_THRESHOLD = 0.85
 export const MIN_ATTEMPTS = 8
 
+// How an adaptive session's problems are split: review of earlier skills, a preview of the next
+// skill, and the current skill for the rest.
+export const REVIEW_SHARE = 0.10
+export const NEXT_SKILL_SHARE = 0.20
+
 export function getSkillByTag(tag: string): Skill | undefined {
   return SKILLS.find(s => s.tag === tag)
 }
@@ -71,6 +76,45 @@ export function getSkillIndex(tag: string): number {
 export function getNextSkill(tag: string): Skill | null {
   const i = getSkillIndex(tag)
   return i >= 0 && i < SKILLS.length - 1 ? SKILLS[i + 1] : null
+}
+
+export function isSkillMastered(
+  tag: string,
+  skillMastery: Record<string, number>,
+  skillAttemptCounts: Record<string, number>,
+): boolean {
+  return (skillMastery[tag] ?? 0) >= MASTERY_THRESHOLD && (skillAttemptCounts[tag] ?? 0) >= MIN_ATTEMPTS
+}
+
+// A student's level is the first skill, from their saved one upward, that they haven't mastered.
+export function advanceCurrentSkill(
+  tag: string,
+  skillMastery: Record<string, number>,
+  skillAttemptCounts: Record<string, number>,
+): string {
+  let current = getSkillByTag(tag) ?? SKILLS[0]
+  let next = getNextSkill(current.tag)
+  while (next && isSkillMastered(current.tag, skillMastery, skillAttemptCounts)) {
+    current = next
+    next = getNextSkill(current.tag)
+  }
+  return current.tag
+}
+
+// Earlier skills to mix back in: ones the student mastered and has since slipped on, or else the
+// skill just below the current one. Skills the diagnostic passed them through have too few
+// attempts to count as slipped.
+export function reviewSkillTags(
+  currentTag: string,
+  skillMastery: Record<string, number>,
+  skillAttemptCounts: Record<string, number>,
+): string[] {
+  const index = getSkillIndex(currentTag)
+  if (index <= 0) return []
+  const slipped = SKILLS.slice(0, index).filter(s =>
+    (skillAttemptCounts[s.tag] ?? 0) >= MIN_ATTEMPTS && !isSkillMastered(s.tag, skillMastery, skillAttemptCounts)
+  )
+  return slipped.length > 0 ? slipped.map(s => s.tag) : [SKILLS[index - 1].tag]
 }
 
 function rand(min: number, max: number): number {
@@ -210,8 +254,7 @@ export function updateMastery(
 
 export function selectNextProblem(
   currentSkillTag: string,
-  skillMastery: Record<string, number>,
-  mistakeQueue: Array<{ skill_tag: string }>,
+  reviewTags: string[],
   recentOperands: string[],
   pinnedTags: string[] | null,
 ): MathProblem {
@@ -219,16 +262,16 @@ export function selectNextProblem(
     const tag = pinnedTags[Math.floor(Math.random() * pinnedTags.length)]
     return generateProblem(getSkillByTag(tag) || SKILLS[0], recentOperands)
   }
+  const current = getSkillByTag(currentSkillTag) || SKILLS[0]
   const r = Math.random()
-  let skill: Skill
-  if (r < 0.20) {
-    const n = getNextSkill(currentSkillTag)
-    skill = n || getSkillByTag(currentSkillTag) || SKILLS[0]
-  } else if (r < 0.40 && mistakeQueue.length > 0) {
-    const item = mistakeQueue[Math.floor(Math.random() * mistakeQueue.length)]
-    skill = getSkillByTag(item.skill_tag) || getSkillByTag(currentSkillTag) || SKILLS[0]
-  } else {
-    skill = getSkillByTag(currentSkillTag) || SKILLS[0]
+  let skill = current
+  if (r < REVIEW_SHARE) {
+    // At the bottom of the ladder there is nothing to review, so these go to the current skill.
+    if (reviewTags.length > 0) {
+      skill = getSkillByTag(reviewTags[Math.floor(Math.random() * reviewTags.length)]) || current
+    }
+  } else if (r < REVIEW_SHARE + NEXT_SKILL_SHARE) {
+    skill = getNextSkill(current.tag) || current
   }
   return generateProblem(skill, recentOperands)
 }
