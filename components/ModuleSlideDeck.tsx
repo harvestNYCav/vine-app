@@ -7,6 +7,7 @@ import type {
 } from '@/types'
 import { shuffle } from '@/lib/study'
 import { getLessonAgenda, slideSection, totalAgendaMinutes } from '@/lib/lesson-agenda'
+import MatchingPractice, { matchingLetter } from './MatchingPractice'
 
 function WordBank({ items, showEs }: { items: WordBankItem[]; showEs: boolean }) {
   return (
@@ -62,10 +63,6 @@ const QUIZ_KIND_LABELS: Record<InPersonQuizItem['kind'], string> = {
   translate: 'Translate',
   dictation: 'Dictation',
   'short-answer': 'Answer the question',
-}
-
-function matchingLetter(index: number): string {
-  return String.fromCharCode(65 + index)
 }
 
 function chunk<T>(items: T[], size: number): T[][] {
@@ -142,6 +139,8 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
   const slides = useMemo(() => buildSlides(mod), [mod])
   const [index, setIndex] = useState(() => Math.min(Math.max(0, initialIndex), slides.length - 1))
   const firedFinish = useRef(false)
+  // Kept here so matching progress survives moving off the slide and back.
+  const [matchedIds, setMatchedIds] = useState<Set<string>>(() => new Set())
   const slide = slides[index]
   const isLast = index === slides.length - 1
 
@@ -254,31 +253,19 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
         )}
 
         {slide.type === 'matching' && (
-          <div className="w-full max-w-3xl">
-            <p className="text-amber-300 text-lg mb-2">Matching Practice</p>
-            <p className="text-gray-400 mb-6">
-              Student: match each English word to its Spanish translation. Write the number and letter in your notebook (for example, 1-C).
-            </p>
-            <div className="grid grid-cols-2 gap-x-8">
-              <ol className="space-y-3 text-left">
-                {slide.enItems.map((item, i) => (
-                  <li key={item.id} className="text-xl md:text-2xl font-semibold">{i + 1}. {item.en}</li>
-                ))}
-              </ol>
-              <ol className="space-y-3 text-left">
-                {slide.esItems.map((item, i) => (
-                  <li key={item.id} className="text-xl md:text-2xl text-amber-300">{matchingLetter(i)}. {item.es}</li>
-                ))}
-              </ol>
-            </div>
-            {variant === 'tutor' && (
+          <MatchingPractice
+            enItems={slide.enItems}
+            esItems={slide.esItems}
+            matchedIds={matchedIds}
+            onMatchedChange={setMatchedIds}
+            answerKey={variant === 'tutor' ? (
               <AnswerKey
                 answers={slide.enItems.map(item =>
                   matchingLetter(slide.esItems.findIndex(esItem => esItem.id === item.id))
                 )}
               />
-            )}
-          </div>
+            ) : undefined}
+          />
         )}
 
         {slide.type === 'transcription' && (
