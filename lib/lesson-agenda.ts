@@ -8,10 +8,11 @@ export interface AgendaItem {
 // Suggested pacing for the 2-hour Saturday session. Sections a module lacks are left out.
 export function getLessonAgenda(mod: Module): AgendaItem[] {
   const items: AgendaItem[] = []
-  if (mod.vocab.length > 0) items.push({ label: 'Vocabulary', minutes: 15 })
+  // ESL students copy each word into their notebook as it's introduced, so the section runs longer.
+  if (mod.vocab.length > 0) items.push({ label: 'Vocabulary', minutes: mod.track === 'esl' ? 20 : 15 })
   if (mod.grammar?.length) items.push({ label: 'Grammar focus', minutes: 10 })
   if (mod.track === 'esl' && mod.vocab.length > 0) {
-    items.push({ label: 'Pronunciation, matching & copying', minutes: 10 })
+    items.push({ label: 'Pronunciation & matching', minutes: 5 })
   }
   if (mod.classWorksheet?.length) items.push({ label: 'In-class worksheet', minutes: 15 })
   if (mod.teachingScenarios.length > 0) items.push({ label: 'Role-play', minutes: 25 })
@@ -28,9 +29,8 @@ const SLIDE_SECTIONS: Record<string, string> = {
   agenda: 'Start',
   vocab: 'Vocabulary',
   grammar: 'Grammar focus',
-  pronunciation: 'Pronunciation, matching & copying',
-  matching: 'Pronunciation, matching & copying',
-  transcription: 'Pronunciation, matching & copying',
+  pronunciation: 'Pronunciation & matching',
+  matching: 'Pronunciation & matching',
   classWorksheet: 'In-class worksheet',
   scenario: 'Role-play',
   listening: 'Listening & writing',

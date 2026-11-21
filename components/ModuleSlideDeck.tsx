@@ -78,7 +78,6 @@ type Slide =
   | { type: 'grammar'; point: GrammarPoint; index: number; total: number }
   | { type: 'pronunciation'; items: VocabItem[] }
   | { type: 'matching'; enItems: VocabItem[]; esItems: VocabItem[] }
-  | { type: 'transcription'; items: VocabItem[] }
   | { type: 'scenario'; scenario: TeachingScenario; index: number; total: number }
   | { type: 'practice'; activity: PracticeActivity; index: number; total: number }
   | { type: 'classWorksheet'; items: FillInBlankItem[]; start: number; part: number; total: number }
@@ -100,7 +99,6 @@ function buildSlides(mod: Module): Slide[] {
   if (mod.track === 'esl') {
     slides.push({ type: 'pronunciation', items: mod.vocab })
     slides.push({ type: 'matching', enItems: mod.vocab, esItems: shuffle(mod.vocab) })
-    slides.push({ type: 'transcription', items: mod.vocab })
   }
   const worksheetChunks = chunk(mod.classWorksheet ?? [], 8)
   worksheetChunks.forEach((items, i) =>
@@ -200,7 +198,12 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
 
         {slide.type === 'vocab' && (
           <div className="w-full max-w-3xl">
-            <p className="text-amber-300 text-lg mb-6">Vocabulary {slide.part}/{slide.total}</p>
+            <p className={`text-amber-300 text-lg ${mod.track === 'esl' ? 'mb-2' : 'mb-6'}`}>Vocabulary {slide.part}/{slide.total}</p>
+            {mod.track === 'esl' && (
+              <p className="text-gray-400 mb-6">
+                Student: copy each English word, its Spanish meaning, and the English example sentence into your notebook.
+              </p>
+            )}
             <div className="space-y-6">
               {slide.items.map(item => (
                 <div key={item.id} className="border-b border-gray-700 pb-4">
@@ -211,6 +214,9 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
                 </div>
               ))}
             </div>
+            {mod.track === 'esl' && (
+              <p className="text-gray-400 italic mt-6">Finished early? Write your own sentence with one of these words.</p>
+            )}
           </div>
         )}
 
@@ -266,23 +272,6 @@ export default function ModuleSlideDeck({ mod, variant, onFinish, initialIndex =
               />
             ) : undefined}
           />
-        )}
-
-        {slide.type === 'transcription' && (
-          <div className="w-full max-w-3xl">
-            <p className="text-amber-300 text-lg mb-2">Transcription Practice</p>
-            <p className="text-gray-400 mb-6">Student: copy each word and example sentence into your notebook, then read it aloud.</p>
-            <div className="space-y-6 text-left">
-              {slide.items.map(item => (
-                <div key={item.id} className="border-b border-gray-700 pb-4">
-                  <p className="text-2xl md:text-3xl font-bold">{item.en}</p>
-                  <p className="text-lg text-amber-300">{item.es}</p>
-                  <p className="text-base text-gray-400 mt-2 italic">{item.exampleEn}</p>
-                  <p className="text-base text-gray-500 italic">{item.exampleEs}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         )}
 
         {slide.type === 'scenario' && (
