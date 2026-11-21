@@ -110,3 +110,17 @@ test('the CSV export joins attendance, homework, deck progress, and the wrap-up'
     )
   })
 })
+
+test('the CSV export leaves out lessons with a test student or test tutor', async () => {
+  await withFixture(async db => {
+    await db.executeMultiple(`
+      INSERT INTO users VALUES ('tst', 'TestStudentESL', 'student'), ('tt', 'TestTutorESL', 'tutor');
+      INSERT INTO sessions VALUES ('s2', 'tst', '2026-10-10', 'verb-to-be', 'sarah', 0, 2);
+      INSERT INTO sessions VALUES ('s3', 'maria', '2026-10-17', 'verb-to-be', 'tt', 0, 3);
+    `)
+
+    const rows = (await buildSessionMetricsCsv(db)).trim().split('\n').slice(1)
+    assert.equal(rows.length, 1)
+    assert.match(rows[0], /^2026-10-10,Maria,Sarah,/)
+  })
+})

@@ -87,8 +87,8 @@ function LoginForm() {
       setError(copy.codeInvalid)
       return
     }
-    setError('')
-    setStep('pin')
+    // The emailed code is the admin's whole sign-in; there is no PIN step after it.
+    handleLogin()
   }
 
   const handlePinDigit = (digit: string) => {
@@ -145,7 +145,7 @@ function LoginForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(
           role === 'admin'
-            ? { pin, role, email: email.trim(), emailCode }
+            ? { role, email: email.trim(), emailCode }
             : { name: name.trim(), pin, role },
         ),
       })
@@ -289,9 +289,10 @@ function LoginForm() {
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
             <button
               onClick={handleCodeSubmit}
-              className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform"
+              disabled={loading}
+              className="w-full bg-green-700 text-white text-lg font-semibold py-4 rounded-xl shadow hover:bg-green-800 active:scale-95 transition-transform disabled:opacity-60"
             >
-              {copy.continueButton}
+              {loading ? '...' : copy.continueButton}
             </button>
             <button
               onClick={requestAdminCode}
@@ -311,11 +312,9 @@ function LoginForm() {
             aria-labelledby="pin-entry-heading"
             tabIndex={-1}
           >
-            {role !== 'admin' && (
-              <p className="text-center text-gray-700 font-medium">
-                {copy.pinGreeting(name)}
-              </p>
-            )}
+            <p className="text-center text-gray-700 font-medium">
+              {copy.pinGreeting(name)}
+            </p>
             <p id="pin-entry-heading" className="text-center text-gray-500 text-sm">
               {copy.pinPrompt}
             </p>
@@ -323,13 +322,11 @@ function LoginForm() {
               {copy.pinHint}
             </p>
             <p className="text-center text-xs text-gray-400">
-              {role === 'admin'
-                ? copy.emailVerified(email)
-                : role === 'student'
-                  ? copy.adminCreatesStudents
-                  : role === 'parent'
-                    ? copy.adminCreatesParents
-                    : copy.tutorSignupNeedsApproval}
+              {role === 'student'
+                ? copy.adminCreatesStudents
+                : role === 'parent'
+                  ? copy.adminCreatesParents
+                  : copy.tutorSignupNeedsApproval}
             </p>
 
             {/* PIN Dots */}
@@ -385,14 +382,14 @@ function LoginForm() {
 
             <button
               onClick={() => {
-                setStep(role === 'admin' ? 'code' : 'name')
+                setStep('name')
                 setPin('')
                 setError('')
                 setNotice('')
               }}
               className="w-full text-gray-500 text-sm py-2"
             >
-              {role === 'admin' ? copy.changeCode : copy.changeName}
+              {copy.changeName}
             </button>
           </div>
         )}

@@ -1,4 +1,5 @@
 import type { Client } from '@libsql/client'
+import { isTestAccount } from './admin-metrics'
 
 // How far a tutor got through a lesson's slide deck on a given day, and roughly how long the deck
 // was on screen. Keyed by tutor + date + lesson so it lines up with that day's `sessions` rows.
@@ -275,7 +276,10 @@ export async function buildSessionMetricsCsv(db: Client): Promise<string> {
     args: [],
   })
   const yesNo = (value: unknown) => value === null || value === undefined ? '' : Number(value) === 1 ? 'yes' : 'no'
-  const lines = result.rows.map(row => [
+  // Test accounts ("TestStudentESL", "TestTutor") are left out, as on the Impact page.
+  const rows = result.rows.filter(row =>
+    !isTestAccount(String(row.student ?? '')) && !isTestAccount(String(row.tutor ?? '')))
+  const lines = rows.map(row => [
     row.date,
     row.student,
     row.tutor,

@@ -16,9 +16,11 @@ export async function POST(req: NextRequest) {
   try {
     const { name, pin, role, email, emailCode } = await req.json()
 
-    // Admins sign in with their verified email, so they never supply a name.
+    // Admins sign in with their verified email alone: the emailed code is their proof, so they
+    // supply neither a name nor a PIN.
     const namelessRole = role === 'admin'
-    if ((!namelessRole && !name) || !pin || pin.length !== 4 || !/^\d{4}$/.test(pin) || !ROLES.has(role)) {
+    const pinValid = typeof pin === 'string' && /^\d{4}$/.test(pin)
+    if (!ROLES.has(role) || (!namelessRole && (!name || !pinValid))) {
       return NextResponse.json({ error: 'Invalid request', code: 'invalid_request' }, { status: 400 })
     }
 
@@ -109,7 +111,8 @@ export async function POST(req: NextRequest) {
           }
         }
       }
-      const pinHash = await bcrypt.hash(pin, 10)
+      // users.pin_hash is required; an admin never signs in with a PIN, so theirs is unguessable.
+      const pinHash = await bcrypt.hash(role === 'admin' ? randomUUID() : pin, 10)
       const id = randomUUID()
       const now = Date.now()
       // users.name is required, and an admin has no separate one to give, so the
@@ -132,7 +135,7 @@ export async function POST(req: NextRequest) {
         created_at: rawUser.created_at as number,
         last_active: rawUser.last_active as number,
       }
-      const valid = await bcrypt.compare(pin, user.pin_hash)
+      const valid = role === 'admin' || await bcrypt.compare(pin, user.pin_hash)
       if (!valid) {
         return NextResponse.json({ error: 'Wrong PIN', code: 'wrong_pin' }, { status: 401 })
       }

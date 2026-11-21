@@ -19,6 +19,7 @@ import AdminTutorApprovalControls from './AdminTutorApprovalControls'
 import { getMathExamsForGrade } from '@/content/math-exams'
 import { getElaExamsForGrade } from '@/content/ela-exams'
 import { assignedRegentsSectionKeys } from '@/lib/regents-progress'
+import { isTestAccount } from '@/lib/admin-metrics'
 
 function formatLastActive(value: number) {
   if (!value) return 'No activity yet'
@@ -127,7 +128,10 @@ export default async function AdminPage() {
     }
   }))
 
-  const trackCounts = studentData.reduce<Record<Track, number>>((acc, student) => {
+  // The stat tiles leave out test accounts ("TestStudentESL", "TestTutor"), like the Impact page.
+  const realStudentData = studentData.filter(student => !isTestAccount(student.name))
+  const realTutorCount = tutors.filter(tutor => !isTestAccount(tutor.name)).length
+  const trackCounts = realStudentData.reduce<Record<Track, number>>((acc, student) => {
     student.tracks.forEach(track => { acc[track]++ })
     return acc
   }, { ela: 0, esl: 0, math: 0 })
@@ -198,11 +202,11 @@ export default async function AdminPage() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
         <div className="bg-white border border-slate-200 rounded-lg p-4">
-          <p className="text-3xl font-bold text-slate-900">{students.length}</p>
+          <p className="text-3xl font-bold text-slate-900">{realStudentData.length}</p>
           <p className="text-sm text-slate-500">Students</p>
         </div>
         <div className="bg-white border border-slate-200 rounded-lg p-4">
-          <p className="text-3xl font-bold text-slate-900">{tutors.length}</p>
+          <p className="text-3xl font-bold text-slate-900">{realTutorCount}</p>
           <p className="text-sm text-slate-500">Tutors</p>
         </div>
         <div className="bg-white border border-slate-200 rounded-lg p-4">
@@ -211,7 +215,7 @@ export default async function AdminPage() {
           <p className="text-sm font-semibold text-slate-900">Math {trackCounts.math}</p>
         </div>
         <div className="bg-white border border-slate-200 rounded-lg p-4">
-          <p className="text-3xl font-bold text-slate-900">{studentData.filter(s => s.tutorIds.length > 0).length}</p>
+          <p className="text-3xl font-bold text-slate-900">{realStudentData.filter(s => s.tutorIds.length > 0).length}</p>
           <p className="text-sm text-slate-500">Assigned</p>
         </div>
       </div>

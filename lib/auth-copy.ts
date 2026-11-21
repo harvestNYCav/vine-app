@@ -68,11 +68,9 @@ interface LoginCopy {
   codeInvalid: string
   devCode: string
   sendNewCode: string
-  changeCode: string
   pinGreeting: (name: string) => string
   pinPrompt: string
   pinHint: string
-  emailVerified: (email: string) => string
   adminCreatesStudents: string
   adminCreatesParents: string
   tutorSignupNeedsApproval: string
@@ -108,11 +106,9 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
     codeInvalid: 'Enter the 6-digit verification code',
     devCode: 'Dev code',
     sendNewCode: 'Send a new code',
-    changeCode: '← Change verification code',
     pinGreeting: name => `Hello, ${name}! 👋`,
     pinPrompt: 'Enter your 4-digit PIN',
     pinHint: 'Use the number keys or keypad',
-    emailVerified: email => `Email verified: ${email}`,
     adminCreatesStudents: 'Your program admin creates student accounts',
     adminCreatesParents: 'Your program admin creates parent accounts',
     tutorSignupNeedsApproval: '(New? An admin approves your account before you can sign in)',
@@ -146,11 +142,9 @@ export const LOGIN_COPY: Record<AuthLang, LoginCopy> = {
     codeInvalid: 'Escribe el código de verificación de 6 dígitos',
     devCode: 'Código de prueba',
     sendNewCode: 'Enviar un código nuevo',
-    changeCode: '← Cambiar el código de verificación',
     pinGreeting: name => `¡Hola, ${name}! 👋`,
     pinPrompt: 'Escribe tu PIN de 4 dígitos',
     pinHint: 'Usa el teclado numérico',
-    emailVerified: email => `Correo verificado: ${email}`,
     adminCreatesStudents: 'El administrador del programa crea las cuentas de estudiante',
     adminCreatesParents: 'El administrador del programa crea las cuentas de familia',
     tutorSignupNeedsApproval: '(¿Eres nuevo? Un administrador aprueba tu cuenta antes de que puedas entrar)',

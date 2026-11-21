@@ -90,6 +90,7 @@ test('the focus defaults to the most recent session held', () => {
 test('test accounts are recognised by name', () => {
   assert.equal(isTestAccount('TestStudentESL'), true)
   assert.equal(isTestAccount(' testtutor'), true)
+  assert.equal(isTestAccount('TestTutorESL'), true)
   assert.equal(isTestAccount('Teresaa'), false)
 })
 

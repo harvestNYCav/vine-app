@@ -45,11 +45,10 @@ after(() => {
   rmSync(directory, { recursive: true, force: true })
 })
 
-test('the first admin signs in with a verified email and PIN, never a name', async () => {
+test('the first admin signs in with a verified email alone, with no name or PIN', async () => {
   const { login, requestCode, db } = await routes()
 
   const created = await login(post('http://localhost/vine-app/api/auth/login', {
-    pin: '4321',
     role: 'admin',
     email: ADMIN_EMAIL,
     emailCode: await sendCode(requestCode, ADMIN_EMAIL),
@@ -68,7 +67,6 @@ test('signing in again finds the same account instead of creating a second one',
   const { login, requestCode, db } = await routes()
 
   const again = await login(post('http://localhost/vine-app/api/auth/login', {
-    pin: '4321',
     role: 'admin',
     email: ADMIN_EMAIL,
     emailCode: await sendCode(requestCode, ADMIN_EMAIL),
@@ -79,17 +77,26 @@ test('signing in again finds the same account instead of creating a second one',
   assert.equal(Number(count.rows[0].count), 1)
 })
 
-test('a wrong PIN is still refused once the email is verified', async () => {
+test('a wrong verification code is still refused', async () => {
   const { login, requestCode } = await routes()
 
-  const wrongPin = await login(post('http://localhost/vine-app/api/auth/login', {
-    pin: '0000',
+  const code = await sendCode(requestCode, ADMIN_EMAIL)
+  const wrongCode = await login(post('http://localhost/vine-app/api/auth/login', {
     role: 'admin',
     email: ADMIN_EMAIL,
-    emailCode: await sendCode(requestCode, ADMIN_EMAIL),
+    emailCode: code === '000000' ? '111111' : '000000',
   }))
-  assert.equal(wrongPin.status, 401)
-  assert.equal((await wrongPin.json()).code, 'wrong_pin')
+  assert.equal(wrongCode.status, 401)
+})
+
+test('an admin cannot sign in without a verification code', async () => {
+  const { login } = await routes()
+
+  const noCode = await login(post('http://localhost/vine-app/api/auth/login', {
+    role: 'admin',
+    email: ADMIN_EMAIL,
+  }))
+  assert.equal(noCode.status, 400)
 })
 
 test('a second admin still has to be approved by email before signing up', async () => {
@@ -112,7 +119,6 @@ test('an approved second admin can then sign up, still without a name', async ()
   })
 
   const created = await login(post('http://localhost/vine-app/api/auth/login', {
-    pin: '8765',
     role: 'admin',
     email: second,
     emailCode: await sendCode(requestCode, second),
