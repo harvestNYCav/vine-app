@@ -1,18 +1,85 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import { ESL_LEVELS } from '@/content/esl-placement'
 import type { StudentProgress } from '@/lib/admin-metrics'
 import { matchesSearch } from '@/lib/search'
 import { count, flagClass, formatDay, maybe, percent } from './format'
 import { studentFlags } from './flags'
 
 type View = 'flagged' | 'active' | 'all'
+type Row = { student: StudentProgress; flags: string[] }
+type SortKey = 'name' | 'level' | 'lessons' | 'quiz' | 'homework' | 'practice' | 'words' | 'lastSeen' | 'flags'
+type Direction = 'asc' | 'desc'
+type Sort = { key: SortKey; direction: Direction }
 
 // Students with a lesson or any practice in the focus.
 const isActive = (student: StudentProgress) => student.lessonsAttended > 0 || student.activeDays > 0
 
+// The levels arrive as labels; sort them by their place in the placement scale, not alphabetically.
+const levelRank = new Map(ESL_LEVELS.map((level, index) => [level.label, index]))
+
+interface Column {
+  key: SortKey
+  label: string
+  className: string
+  numeric?: boolean
+  // What a row sorts on. Null (no level, no quiz, no homework assigned) sorts last either way.
+  value: (row: Row) => number | string | null
+}
+
+const COLUMNS: Column[] = [
+  { key: 'name', label: 'Student', className: 'py-2 pr-3', value: row => row.student.name },
+  {
+    key: 'level',
+    label: 'ESL level',
+    className: 'px-2 py-2',
+    value: row => (row.student.currentLevel === null ? null : levelRank.get(row.student.currentLevel) ?? null),
+  },
+  { key: 'lessons', label: 'Lessons', className: 'px-2 py-2', numeric: true, value: row => row.student.lessonsAttended },
+  { key: 'quiz', label: 'Quiz avg', className: 'px-2 py-2', numeric: true, value: row => row.student.quizAverage },
+  {
+    key: 'homework',
+    label: 'Homework',
+    className: 'px-2 py-2',
+    numeric: true,
+    value: row => (row.student.homeworkAssigned ? row.student.homeworkDone / row.student.homeworkAssigned : null),
+  },
+  { key: 'practice', label: 'Home practice', className: 'px-2 py-2', numeric: true, value: row => row.student.homePracticeDays },
+  { key: 'words', label: 'Words', className: 'px-2 py-2', numeric: true, value: row => row.student.wordsMastered },
+  // "Never" sorts as the longest ago, so oldest-first starts with the students never seen.
+  { key: 'lastSeen', label: 'Last seen', className: 'px-2 py-2', value: row => row.student.lastSeen ?? '' },
+  { key: 'flags', label: 'Worth a look', className: 'py-2 pl-2', value: row => row.flags.length },
+]
+
+// Flagged first, then the busiest, then by name. The table opens in this order, and it breaks ties
+// in whichever column is sorted.
+const defaultOrder = (a: Row, b: Row) => b.flags.length - a.flags.length
+  || b.student.lessonsAttended - a.student.lessonsAttended
+  || b.student.activeDays - a.student.activeDays
+  || a.student.name.localeCompare(b.student.name)
+
+const DEFAULT_SORT: Sort = { key: 'flags', direction: 'desc' }
+
+function sortRows(rows: Row[], sort: Sort): Row[] {
+  const column = COLUMNS.find(c => c.key === sort.key) ?? COLUMNS[0]
+  const sign = sort.direction === 'asc' ? 1 : -1
+  return [...rows].sort((a, b) => {
+    const x = column.value(a)
+    const y = column.value(b)
+    if (x === null || y === null) {
+      if (x !== y) return x === null ? 1 : -1
+    } else {
+      const diff = typeof x === 'string' && typeof y === 'string' ? x.localeCompare(y) : Number(x) - Number(y)
+      if (diff !== 0) return sign * diff
+    }
+    return defaultOrder(a, b)
+  })
+}
+
 // Starts on the students who matter for the session in focus; the full list and a search are a
-// click away. Typing in the search looks through every student, whatever view is picked.
+// click away. Typing in the search looks through every student, whatever view is picked. Any column
+// header sorts the table by that column; clicking it again reverses the order.
 export default function StudentProgressTable({ students, singleWeek, scopeLabel }: {
   students: StudentProgress[]
   singleWeek: boolean
@@ -23,16 +90,19 @@ export default function StudentProgressTable({ students, singleWeek, scopeLabel 
   const flagged = rows.filter(row => row.flags.length > 0)
   const [view, setView] = useState<View>(active.length ? 'active' : 'all')
   const [query, setQuery] = useState('')
+  const [sort, setSort] = useState<Sort>(DEFAULT_SORT)
 
   const searching = query.trim().length > 0
   const base = searching ? rows : view === 'flagged' ? flagged : view === 'active' ? active : rows
-  const shown = base
-    .filter(row => matchesSearch(query, [row.student.name, ...row.student.tutorNames, ...row.student.tracks]))
-    // Flagged first, then the busiest, then by name.
-    .sort((a, b) => b.flags.length - a.flags.length
-      || b.student.lessonsAttended - a.student.lessonsAttended
-      || b.student.activeDays - a.student.activeDays
-      || a.student.name.localeCompare(b.student.name))
+  const shown = sortRows(
+    base.filter(row => matchesSearch(query, [row.student.name, ...row.student.tutorNames, ...row.student.tracks])),
+    sort,
+  )
+
+  // A new column starts A–Z for names and highest first for everything else.
+  const sortBy = (key: SortKey) => setSort(current => current.key === key
+    ? { key, direction: current.direction === 'asc' ? 'desc' : 'asc' }
+    : { key, direction: key === 'name' ? 'asc' : 'desc' })
 
   const views: Array<{ id: View; label: string; n: number }> = [
     { id: 'active', label: `Active ${scopeLabel}`, n: active.length },
@@ -79,15 +149,34 @@ export default function StudentProgressTable({ students, singleWeek, scopeLabel 
           <table className="w-full min-w-[820px] text-left text-sm">
             <thead>
               <tr className="border-b border-slate-200 text-xs text-slate-500">
-                <th className="py-2 pr-3 font-semibold">Student</th>
-                <th className="px-2 py-2 font-semibold">ESL level</th>
-                <th className="px-2 py-2 text-right font-semibold">Lessons</th>
-                <th className="px-2 py-2 text-right font-semibold">Quiz avg</th>
-                <th className="px-2 py-2 text-right font-semibold">Homework</th>
-                <th className="px-2 py-2 text-right font-semibold">Home practice</th>
-                <th className="px-2 py-2 text-right font-semibold">Words</th>
-                <th className="px-2 py-2 font-semibold">Last seen</th>
-                <th className="py-2 pl-2 font-semibold">Worth a look</th>
+                {COLUMNS.map(column => {
+                  const sorted = sort.key === column.key
+                  // Shows the current order, or on hover the order a click would give.
+                  const arrowUp = sorted ? sort.direction === 'asc' : column.key === 'name'
+                  const arrow = (
+                    <span aria-hidden="true" className={sorted ? 'text-slate-700' : 'opacity-0 group-hover:opacity-50'}>
+                      {arrowUp ? '▲' : '▼'}
+                    </span>
+                  )
+                  return (
+                    <th
+                      key={column.key}
+                      scope="col"
+                      aria-sort={sorted ? (sort.direction === 'asc' ? 'ascending' : 'descending') : undefined}
+                      className={`${column.className} font-semibold ${column.numeric ? 'text-right' : ''}`}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => sortBy(column.key)}
+                        className={`group inline-flex items-center gap-1 font-semibold hover:text-slate-800 ${sorted ? 'text-slate-800' : ''}`}
+                      >
+                        {column.numeric && arrow}
+                        {column.label}
+                        {!column.numeric && arrow}
+                      </button>
+                    </th>
+                  )
+                })}
               </tr>
             </thead>
             <tbody>
