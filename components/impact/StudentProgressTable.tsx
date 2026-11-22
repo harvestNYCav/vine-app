@@ -94,7 +94,14 @@ export default function StudentProgressTable({ students, singleWeek, scopeLabel 
               {shown.map(({ student, flags }) => (
                 <tr key={student.id} className="border-b border-slate-100 align-top last:border-0">
                   <td className="py-2 pr-3">
-                    <p className="font-medium text-slate-800">{student.name}</p>
+                    <p className="font-medium text-slate-800">
+                      {student.name}
+                      {student.paused && (
+                        <span className="ml-2 rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800" title="Paused now; listed because they took part in this period">
+                          Paused
+                        </span>
+                      )}
+                    </p>
                     <p className="text-xs text-slate-400">
                       {student.tracks.length ? student.tracks.map(track => track.toUpperCase()).join(' · ') : 'No tracks'}
                       {student.tutorNames.length > 0 && ` · ${student.tutorNames.join(', ')}`}

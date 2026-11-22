@@ -7,6 +7,8 @@ import { getStudentTracks } from '@/lib/tracks'
 import { isValidEmail, normalizeEmail } from '@/lib/email-verification'
 import { loginCanCreateMissingAccount, normalizeStudentName } from '@/lib/student-accounts'
 import { requestTutorSignup } from '@/lib/tutor-approvals'
+import { resumeStudentOnReturn } from '@/lib/account-visibility'
+import { todayString } from '@/lib/scheduling'
 import type { Role } from '@/types'
 
 const ROLES = new Set<Role>(['student', 'tutor', 'admin', 'parent'])
@@ -141,6 +143,8 @@ export async function POST(req: NextRequest) {
       }
       phase = 'updating the account'
       await db.execute({ sql: 'UPDATE users SET last_active = ? WHERE id = ?', args: [Date.now(), user.id] })
+      // A paused student who signs in is back, so they count again.
+      if (user.role === 'student') await resumeStudentOnReturn(db, user.id, todayString())
     }
 
     if (role === 'admin') {

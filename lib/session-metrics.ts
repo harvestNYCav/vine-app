@@ -1,5 +1,4 @@
 import type { Client } from '@libsql/client'
-import { isTestAccount } from './admin-metrics'
 
 // How far a tutor got through a lesson's slide deck on a given day, and roughly how long the deck
 // was on screen. Keyed by tutor + date + lesson so it lines up with that day's `sessions` rows.
@@ -271,15 +270,14 @@ export async function buildSessionMetricsCsv(db: Client): Promise<string> {
       LEFT JOIN lesson_deck_progress dp
         ON dp.tutor_id = s.tutor_id AND dp.date = s.date AND dp.module_slug = s.module_slug
       LEFT JOIN session_wrap_ups w ON w.session_id = s.id
+      -- Lessons with a test student or test tutor are left out, as on the Impact page.
+      WHERE COALESCE(student.is_test, 0) = 0 AND COALESCE(tutor.is_test, 0) = 0
       ORDER BY s.date, student.name, s.created_at
     `,
     args: [],
   })
   const yesNo = (value: unknown) => value === null || value === undefined ? '' : Number(value) === 1 ? 'yes' : 'no'
-  // Test accounts ("TestStudentESL", "TestTutor") are left out, as on the Impact page.
-  const rows = result.rows.filter(row =>
-    !isTestAccount(String(row.student ?? '')) && !isTestAccount(String(row.tutor ?? '')))
-  const lines = rows.map(row => [
+  const lines = result.rows.map(row => [
     row.date,
     row.student,
     row.tutor,

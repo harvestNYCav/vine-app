@@ -20,7 +20,10 @@ async function withFixture(run: (db: Client) => Promise<void>) {
       CREATE TABLE users (
         id TEXT PRIMARY KEY,
         name TEXT NOT NULL,
-        role TEXT NOT NULL
+        role TEXT NOT NULL,
+        is_test INTEGER NOT NULL DEFAULT 0,
+        paused_on TEXT,
+        paused_until TEXT
       );
       CREATE TABLE attendance (
         session_date TEXT NOT NULL,
@@ -109,5 +112,43 @@ test('check-ins are scoped to their own session date', async () => {
 
     const otherDay = await getCheckInDay(db, '2026-08-20')
     assert.deepEqual(otherDay.students.map(student => student.present), [null, null])
+  })
+})
+
+test('the admin view can leave out test accounts and students paused that day', async () => {
+  await withFixture(async db => {
+    await db.executeMultiple(`
+      INSERT INTO users (id, name, role, is_test) VALUES ('test-tutor', 'TestTutor', 'tutor', 1);
+      INSERT INTO users (id, name, role, is_test) VALUES ('test-student', 'TestStudentESL', 'student', 1);
+      UPDATE users SET paused_on = '2026-08-01' WHERE id = 'student-2';
+    `)
+    await setStudentCheckIn(db, { date: '2026-08-13', studentId: 'student-1', present: true, recordedBy: 'test-tutor' })
+
+    const everyone = await getCheckInDay(db, '2026-08-13')
+    assert.deepEqual(everyone.tutors.map(tutor => tutor.tutorName), ['Sarah', 'TestTutor'])
+    assert.deepEqual(everyone.students.map(student => student.studentName), ['Amina', 'Diego', 'TestStudentESL'])
+
+    const admin = await getCheckInDay(db, '2026-08-13', { hideTestAccounts: true, hidePausedAsOf: '2026-08-13' })
+    assert.deepEqual(admin.tutors.map(tutor => tutor.tutorName), ['Sarah'])
+    assert.deepEqual(admin.students.map(student => student.studentName), ['Amina'], 'Diego is paused and unmarked')
+    assert.equal(admin.students[0].recordedByName, 'TestTutor', 'a hidden test tutor still shows as who marked them')
+  })
+})
+
+test('marking a paused student present brings them back', async () => {
+  await withFixture(async db => {
+    await db.execute("UPDATE users SET paused_on = '2026-08-10', paused_until = '2027-01-25' WHERE id = 'student-1'")
+
+    // An older session, from before the pause, leaves it alone.
+    await setStudentCheckIn(db, { date: '2026-08-06', studentId: 'student-1', present: true, recordedBy: 'tutor-1' })
+    // Marked absent leaves it alone too.
+    await setStudentCheckIn(db, { date: '2026-08-13', studentId: 'student-1', present: false, recordedBy: 'tutor-1' })
+    let row = (await db.execute("SELECT paused_on FROM users WHERE id = 'student-1'")).rows[0]
+    assert.equal(row.paused_on, '2026-08-10')
+
+    await setStudentCheckIn(db, { date: '2026-08-20', studentId: 'student-1', present: true, recordedBy: 'tutor-1' })
+    row = (await db.execute("SELECT paused_on, paused_until FROM users WHERE id = 'student-1'")).rows[0]
+    assert.equal(row.paused_on, null)
+    assert.equal(row.paused_until, null)
   })
 })

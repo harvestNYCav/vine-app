@@ -1,4 +1,5 @@
 import { createClient, type Client } from '@libsql/client'
+import { flagTestAccountsByNameOnce } from './account-visibility'
 import { seedDefaultAdminAllowlistIfEmpty } from './admin-allowlist'
 import { EXAM_ASSIGNMENTS_TABLE_SQL } from './exam-assignments'
 import { STUDENT_REGENTS_COURSES_TABLE_SQL } from './regents-courses'
@@ -288,6 +289,12 @@ async function initSchema(db: Client): Promise<void> {
   await backfillExistingMathStudentGradeLevels(db)
   await ensureUsersTableSupportsRole(db, 'admin')
   await ensureUsersTableSupportsRole(db, 'parent')
+  // Test accounts and paused students (lib/account-visibility.ts). Added after the role migrations
+  // above, which rebuild `users` with a fixed column list on very old databases.
+  await ensureColumn(db, 'users', 'is_test', 'INTEGER NOT NULL DEFAULT 0')
+  await ensureColumn(db, 'users', 'paused_on', 'TEXT')
+  await ensureColumn(db, 'users', 'paused_until', 'TEXT')
+  await flagTestAccountsByNameOnce(db)
   await ensureSessionsTableSupportsStudentId(db)
   await ensureSessionsTableSupportsMultipleLessons(db)
   await seedDefaultAdminAllowlistIfEmpty(db)

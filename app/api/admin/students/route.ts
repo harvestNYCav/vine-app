@@ -6,6 +6,7 @@ import { normalizeTracks } from '@/lib/tracks'
 import { normalizeGradeLevel, normalizeHighSchoolGradeLevel, normalizeStudentSchoolGradeLevel } from '@/lib/grade-levels'
 import { normalizeRegentsCourses, regentsCourseAssignmentStatements, regentsCoursesMatchPlacement } from '@/lib/regents-courses'
 import { createStudentAccount } from '@/lib/student-accounts'
+import { setTestAccount } from '@/lib/account-visibility'
 
 export async function POST(req: NextRequest) {
   const session = await getSession()
@@ -28,8 +29,10 @@ export async function POST(req: NextRequest) {
       { status: result.reason === 'conflict' ? 409 : 400 },
     )
   }
+  const isTest = Boolean(rawBody && typeof rawBody === 'object' && (rawBody as Record<string, unknown>).isTest === true)
+  if (isTest) await setTestAccount(db, result.student.id, true)
 
-  return NextResponse.json({ ok: true, student: result.student }, { status: 201 })
+  return NextResponse.json({ ok: true, student: { ...result.student, isTest } }, { status: 201 })
 }
 
 export async function PATCH(req: NextRequest) {
